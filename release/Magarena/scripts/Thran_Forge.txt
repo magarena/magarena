@@ -1,5 +1,5 @@
 name=Thran Forge
-image=http://api.mtgdb.info/content/hi_res_card_images/4442.jpg
+image=http://magiccards.info/scans/en/wl/159.jpg
 value=3.333
 rarity=U
 type=Artifact

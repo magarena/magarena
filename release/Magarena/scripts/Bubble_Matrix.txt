@@ -1,5 +1,5 @@
 name=Bubble Matrix
-image=http://api.mtgdb.info/content/hi_res_card_images/4430.jpg
+image=http://magiccards.info/scans/en/wl/147.jpg
 value=4.297
 rarity=R
 type=Artifact

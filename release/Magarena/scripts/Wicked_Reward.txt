@@ -1,5 +1,5 @@
 name=Wicked Reward
-image=http://api.mtgdb.info/content/hi_res_card_images/3632.jpg
+image=http://magiccards.info/scans/en/vi/25.jpg
 value=3.035
 rarity=C
 type=Instant

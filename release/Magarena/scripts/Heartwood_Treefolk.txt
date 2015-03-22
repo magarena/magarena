@@ -1,5 +1,5 @@
 name=Heartwood Treefolk
-image=http://api.mtgdb.info/content/hi_res_card_images/4767.jpg
+image=http://magiccards.info/scans/en/tp/127.jpg
 value=2.804
 rarity=U
 type=Creature

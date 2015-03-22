@@ -1,5 +1,5 @@
 name=Zuran Enchanter
-image=http://api.mtgdb.info/content/hi_res_card_images/2547.jpg
+image=http://magiccards.info/scans/en/ia/110.jpg
 value=2.581
 rarity=C
 type=Creature

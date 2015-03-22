@@ -1,5 +1,5 @@
 name=Constant Mists
-image=http://api.mtgdb.info/content/hi_res_card_images/5123.jpg
+image=http://magiccards.info/scans/en/sh/54.jpg
 value=4.281
 rarity=U
 type=Instant

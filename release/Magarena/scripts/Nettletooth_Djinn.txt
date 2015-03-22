@@ -1,5 +1,5 @@
 name=Nettletooth Djinn
-image=http://api.mtgdb.info/content/hi_res_card_images/3401.jpg
+image=http://magiccards.info/scans/en/mr/130.jpg
 value=2.381
 rarity=U
 type=Creature

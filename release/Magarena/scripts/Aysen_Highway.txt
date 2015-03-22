@@ -1,5 +1,5 @@
 name=Aysen Highway
-image=http://api.mtgdb.info/content/hi_res_card_images/3016.jpg
+image=http://magiccards.info/scans/en/hl/107.jpg
 value=1.197
 rarity=R
 type=Enchantment

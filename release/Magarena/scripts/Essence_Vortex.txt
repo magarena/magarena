@@ -1,5 +1,5 @@
 name=Essence Vortex
-image=http://api.mtgdb.info/content/hi_res_card_images/2723.jpg
+image=http://magiccards.info/scans/en/ia/365.jpg
 value=3.361
 rarity=U
 type=Instant

@@ -1,5 +1,5 @@
 name=Metallic Sliver
-image=http://api.mtgdb.info/content/hi_res_card_images/4617.jpg
+image=http://magiccards.info/scans/en/tp/287.jpg
 value=2.500
 rarity=C
 type=Artifact,Creature

@@ -1,5 +1,5 @@
 name=Gorilla Pack
-image=http://api.mtgdb.info/content/hi_res_card_images/2571.jpg
+image=http://magiccards.info/scans/en/ia/135.jpg
 value=1.875
 rarity=C
 type=Creature

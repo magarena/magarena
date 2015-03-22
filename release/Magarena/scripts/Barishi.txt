@@ -1,5 +1,5 @@
 name=Barishi
-image=http://api.mtgdb.info/content/hi_res_card_images/4507.jpg
+image=http://magiccards.info/scans/en/wl/61.jpg
 value=3.878
 rarity=U
 type=Creature

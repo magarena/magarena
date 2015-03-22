@@ -1,5 +1,5 @@
 name=Omen of Fire
-image=http://api.mtgdb.info/content/hi_res_card_images/3177.jpg
+image=http://magiccards.info/scans/en/ai/112.jpg
 value=3.612
 rarity=R
 type=Instant

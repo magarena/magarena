@@ -1,5 +1,5 @@
 name=Desert Drake
-image=http://api.mtgdb.info/content/hi_res_card_images/4333.jpg
+image=http://magiccards.info/scans/en/po/127.jpg
 value=2.129
 rarity=U
 type=Creature

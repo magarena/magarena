@@ -1,5 +1,5 @@
 name=Spectral Guardian
-image=http://api.mtgdb.info/content/hi_res_card_images/3516.jpg
+image=http://magiccards.info/scans/en/mr/245.jpg
 value=3.842
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Curse of Marit Lage
-image=http://api.mtgdb.info/content/hi_res_card_images/2617.jpg
+image=http://magiccards.info/scans/en/ia/181.jpg
 value=3.605
 rarity=R
 type=Enchantment

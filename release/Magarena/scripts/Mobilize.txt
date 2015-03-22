@@ -1,5 +1,5 @@
 name=Mobilize
-image=http://api.mtgdb.info/content/hi_res_card_images/4303.jpg
+image=http://magiccards.info/scans/en/po/97.jpg
 value=3.259
 rarity=C
 type=Sorcery

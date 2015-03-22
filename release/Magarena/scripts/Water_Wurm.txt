@@ -1,5 +1,5 @@
 name=Water Wurm
-image=http://api.mtgdb.info/content/hi_res_card_images/1764.jpg
+image=http://magiccards.info/scans/en/dk/37.jpg
 value=2.027
 rarity=C
 type=Creature

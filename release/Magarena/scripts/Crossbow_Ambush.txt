@@ -1,5 +1,5 @@
 name=Crossbow Ambush
-image=http://api.mtgdb.info/content/hi_res_card_images/5131.jpg
+image=http://magiccards.info/scans/en/sh/55.jpg
 value=3.147
 rarity=C
 type=Instant

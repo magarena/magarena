@@ -1,5 +1,5 @@
 name=Telethopter
-image=http://api.mtgdb.info/content/hi_res_card_images/4631.jpg
+image=http://magiccards.info/scans/en/tp/301.jpg
 value=1.539
 rarity=U
 type=Artifact,Creature

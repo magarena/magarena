@@ -1,5 +1,5 @@
 name=Talas Warrior
-image=http://api.mtgdb.info/content/hi_res_card_images/6545.jpg
+image=http://magiccards.info/scans/en/po2/53.jpg
 value=3.976
 rarity=R
 type=Creature

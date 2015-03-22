@@ -1,5 +1,5 @@
 name=Phyrexian Walker
-image=http://api.mtgdb.info/content/hi_res_card_images/3600.jpg
+image=http://magiccards.info/scans/en/vi/152.jpg
 value=2.500
 rarity=C
 type=Artifact,Creature

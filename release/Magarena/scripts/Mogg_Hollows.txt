@@ -1,5 +1,5 @@
 name=Mogg Hollows
-image=http://api.mtgdb.info/content/hi_res_card_images/21117.jpg
+image=http://magiccards.info/scans/en/br/45.jpg
 value=2.419
 rarity=U
 type=Land

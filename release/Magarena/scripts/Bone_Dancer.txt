@@ -1,5 +1,5 @@
 name=Bone Dancer
-image=http://api.mtgdb.info/content/hi_res_card_images/4450.jpg
+image=http://magiccards.info/scans/en/wl/4.jpg
 value=4.282
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Djinn of the Lamp
-image=http://api.mtgdb.info/content/hi_res_card_images/4260.jpg
+image=http://magiccards.info/scans/en/po/54.jpg
 value=2.143
 rarity=R
 type=Creature

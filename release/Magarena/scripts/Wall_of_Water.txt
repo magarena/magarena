@@ -1,5 +1,5 @@
 name=Wall of Water
-image=http://api.mtgdb.info/content/hi_res_card_images/2197.jpg
+image=http://magiccards.info/scans/en/4e/114.jpg
 value=3.074
 rarity=U
 type=Creature

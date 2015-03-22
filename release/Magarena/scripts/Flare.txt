@@ -1,5 +1,5 @@
 name=Flare
-image=http://api.mtgdb.info/content/hi_res_card_images/4051.jpg
+image=http://magiccards.info/scans/en/5e/230.jpg
 value=1.520
 rarity=C
 type=Instant

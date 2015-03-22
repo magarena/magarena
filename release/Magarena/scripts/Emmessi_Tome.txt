@@ -1,5 +1,5 @@
 name=Emmessi Tome
-image=http://api.mtgdb.info/content/hi_res_card_images/4604.jpg
+image=http://magiccards.info/scans/en/tp/274.jpg
 value=1.595
 rarity=R
 type=Artifact

@@ -1,5 +1,5 @@
 name=Dauthi Horror
-image=http://api.mtgdb.info/content/hi_res_card_images/4650.jpg
+image=http://magiccards.info/scans/en/tp/16.jpg
 value=4.083
 rarity=C
 type=Creature

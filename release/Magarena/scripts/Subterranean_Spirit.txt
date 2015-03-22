@@ -1,5 +1,5 @@
 name=Subterranean Spirit
-image=http://api.mtgdb.info/content/hi_res_card_images/3466.jpg
+image=http://magiccards.info/scans/en/mr/195.jpg
 value=3.403
 rarity=R
 type=Creature

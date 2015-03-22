@@ -1,5 +1,5 @@
 name=Rally
-image=http://api.mtgdb.info/content/hi_res_card_images/2708.jpg
+image=http://magiccards.info/scans/en/ia/272.jpg
 value=2.047
 rarity=C
 type=Instant

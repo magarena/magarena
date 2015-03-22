@@ -1,5 +1,5 @@
 name=Mold Demon
-image=http://api.mtgdb.info/content/hi_res_card_images/1452.jpg
+image=http://magiccards.info/scans/en/lg/26.jpg
 value=1.088
 rarity=R
 type=Creature

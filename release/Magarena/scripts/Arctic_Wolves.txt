@@ -1,5 +1,5 @@
 name=Arctic Wolves
-image=http://api.mtgdb.info/content/hi_res_card_images/4506.jpg
+image=http://magiccards.info/scans/en/wl/60.jpg
 value=2.088
 rarity=U
 type=Creature

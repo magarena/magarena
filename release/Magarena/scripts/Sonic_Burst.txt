@@ -1,5 +1,5 @@
 name=Sonic Burst
-image=http://api.mtgdb.info/content/hi_res_card_images/26639.jpg
+image=http://magiccards.info/scans/en/bd/46.jpg
 value=2.533
 rarity=C
 type=Instant

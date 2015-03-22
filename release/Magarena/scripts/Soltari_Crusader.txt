@@ -1,5 +1,5 @@
 name=Soltari Crusader
-image=http://api.mtgdb.info/content/hi_res_card_images/4899.jpg
+image=http://magiccards.info/scans/en/tp/253.jpg
 value=3.500
 rarity=U
 type=Creature

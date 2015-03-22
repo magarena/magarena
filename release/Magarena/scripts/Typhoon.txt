@@ -1,5 +1,5 @@
 name=Typhoon
-image=http://api.mtgdb.info/content/hi_res_card_images/1549.jpg
+image=http://magiccards.info/scans/en/lg/123.jpg
 value=2.828
 rarity=R
 type=Sorcery

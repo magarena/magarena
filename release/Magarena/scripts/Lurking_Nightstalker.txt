@@ -1,5 +1,5 @@
 name=Lurking Nightstalker
-image=http://api.mtgdb.info/content/hi_res_card_images/6557.jpg
+image=http://magiccards.info/scans/en/po2/17.jpg
 value=3.500
 rarity=C
 type=Creature

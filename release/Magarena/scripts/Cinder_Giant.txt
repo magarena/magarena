@@ -1,5 +1,5 @@
 name=Cinder Giant
-image=http://api.mtgdb.info/content/hi_res_card_images/4539.jpg
+image=http://magiccards.info/scans/en/wl/93.jpg
 value=3.214
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Holy Armor
-image=http://api.mtgdb.info/content/hi_res_card_images/2344.jpg
+image=http://magiccards.info/scans/en/4e/279.jpg
 value=2.282
 rarity=C
 type=Enchantment

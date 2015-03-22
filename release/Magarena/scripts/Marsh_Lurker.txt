@@ -1,5 +1,5 @@
 name=Marsh Lurker
-image=http://api.mtgdb.info/content/hi_res_card_images/4673.jpg
+image=http://magiccards.info/scans/en/tp/38.jpg
 value=1.449
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Ranger en-Vec
-image=http://api.mtgdb.info/content/hi_res_card_images/4914.jpg
+image=http://magiccards.info/scans/en/tp/343.jpg
 value=4.031
 rarity=U
 type=Creature

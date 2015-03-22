@@ -1,5 +1,5 @@
 name=Moon Sprite
-image=http://api.mtgdb.info/content/hi_res_card_images/25485.jpg
+image=http://magiccards.info/scans/en/st2k/11.jpg
 value=1.889
 rarity=U
 type=Creature

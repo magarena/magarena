@@ -1,5 +1,5 @@
 name=Wall of Pine Needles
-image=http://api.mtgdb.info/content/hi_res_card_images/2598.jpg
+image=http://magiccards.info/scans/en/ia/162.jpg
 value=3.100
 rarity=U
 type=Creature

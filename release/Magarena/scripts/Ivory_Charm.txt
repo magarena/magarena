@@ -1,5 +1,5 @@
 name=Ivory Charm
-image=http://api.mtgdb.info/content/hi_res_card_images/3498.jpg
+image=http://magiccards.info/scans/en/mr/227.jpg
 value=3.217
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Serra Inquisitors
-image=http://api.mtgdb.info/content/hi_res_card_images/3029.jpg
+image=http://magiccards.info/scans/en/hl/120.jpg
 value=1.632
 rarity=U
 type=Creature

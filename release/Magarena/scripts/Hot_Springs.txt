@@ -1,5 +1,5 @@
 name=Hot Springs
-image=http://api.mtgdb.info/content/hi_res_card_images/2572.jpg
+image=http://magiccards.info/scans/en/ia/136.jpg
 value=1.564
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Fool's Tome
-image=http://api.mtgdb.info/content/hi_res_card_images/4609.jpg
+image=http://magiccards.info/scans/en/tp/279.jpg
 value=2.632
 rarity=R
 type=Artifact

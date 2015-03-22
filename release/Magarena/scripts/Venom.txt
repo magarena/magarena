@@ -1,5 +1,5 @@
 name=Venom
-image=http://api.mtgdb.info/content/hi_res_card_images/4019.jpg
+image=http://magiccards.info/scans/en/5e/198.jpg
 value=3.786
 rarity=C
 type=Enchantment

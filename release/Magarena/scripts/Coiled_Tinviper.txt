@@ -1,5 +1,5 @@
 name=Coiled Tinviper
-image=http://api.mtgdb.info/content/hi_res_card_images/4599.jpg
+image=http://magiccards.info/scans/en/tp/269.jpg
 value=2.432
 rarity=C
 type=Artifact,Creature

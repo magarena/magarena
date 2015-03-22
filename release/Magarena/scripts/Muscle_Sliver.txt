@@ -1,5 +1,5 @@
 name=Muscle Sliver
-image=http://api.mtgdb.info/content/hi_res_card_images/4772.jpg
+image=http://magiccards.info/scans/en/tp/132.jpg
 value=4.421
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Scarwood Hag
-image=http://api.mtgdb.info/content/hi_res_card_images/1776.jpg
+image=http://magiccards.info/scans/en/dk/49.jpg
 value=1.551
 rarity=U
 type=Creature

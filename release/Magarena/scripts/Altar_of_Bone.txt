@@ -1,5 +1,5 @@
 name=Altar of Bone
-image=http://api.mtgdb.info/content/hi_res_card_images/2717.jpg
+image=http://magiccards.info/scans/en/ia/359.jpg
 value=2.700
 rarity=R
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Serpent Assassin
-image=http://api.mtgdb.info/content/hi_res_card_images/4237.jpg
+image=http://magiccards.info/scans/en/po/31.jpg
 value=2.643
 rarity=R
 type=Creature

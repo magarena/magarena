@@ -1,5 +1,5 @@
 name=Talruum Champion
-image=http://api.mtgdb.info/content/hi_res_card_images/3704.jpg
+image=http://magiccards.info/scans/en/vi/97.jpg
 value=3.367
 rarity=C
 type=Creature

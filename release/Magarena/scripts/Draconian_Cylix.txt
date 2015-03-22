@@ -1,5 +1,5 @@
 name=Draconian Cylix
-image=http://api.mtgdb.info/content/hi_res_card_images/1832.jpg
+image=http://magiccards.info/scans/en/fe/171.jpg
 value=2.013
 rarity=R
 type=Artifact

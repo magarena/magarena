@@ -1,5 +1,5 @@
 name=Thalakos Sentry
-image=http://api.mtgdb.info/content/hi_res_card_images/4735.jpg
+image=http://magiccards.info/scans/en/tp/95.jpg
 value=2.514
 rarity=C
 type=Creature

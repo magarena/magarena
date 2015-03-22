@@ -1,5 +1,5 @@
 name=Lowland Basilisk
-image=http://api.mtgdb.info/content/hi_res_card_images/5181.jpg
+image=http://magiccards.info/scans/en/sh/59.jpg
 value=3.145
 rarity=C
 type=Creature

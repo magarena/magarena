@@ -1,5 +1,5 @@
 name=Treetop Defense
-image=http://api.mtgdb.info/content/hi_res_card_images/4322.jpg
+image=http://magiccards.info/scans/en/po/116.jpg
 value=2.000
 rarity=R
 type=Instant

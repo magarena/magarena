@@ -1,5 +1,5 @@
 name=Sewer Rats
-image=http://api.mtgdb.info/content/hi_res_card_images/21161.jpg
+image=http://magiccards.info/scans/en/br/70.jpg
 value=2.556
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Phyrexian Gremlins
-image=http://api.mtgdb.info/content/hi_res_card_images/1042.jpg
+image=http://magiccards.info/scans/en/aq/48.jpg
 value=3.542
 rarity=C
 type=Creature

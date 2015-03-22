@@ -1,5 +1,5 @@
 name=Cave People
-image=http://api.mtgdb.info/content/hi_res_card_images/4036.jpg
+image=http://magiccards.info/scans/en/5e/215.jpg
 value=2.926
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Flood
-image=http://api.mtgdb.info/content/hi_res_card_images/21139.jpg
+image=http://magiccards.info/scans/en/br/28.jpg
 value=3.857
 rarity=C
 type=Enchantment

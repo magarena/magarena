@@ -1,5 +1,5 @@
 name=Scarwood Goblins
-image=http://api.mtgdb.info/content/hi_res_card_images/1822.jpg
+image=http://magiccards.info/scans/en/dk/119.jpg
 value=2.500
 rarity=C
 type=Creature

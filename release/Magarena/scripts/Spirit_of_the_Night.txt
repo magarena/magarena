@@ -1,5 +1,5 @@
 name=Spirit of the Night
-image=http://api.mtgdb.info/content/hi_res_card_images/3315.jpg
+image=http://magiccards.info/scans/en/mr/44.jpg
 value=4.105
 rarity=R
 type=Legendary,Creature

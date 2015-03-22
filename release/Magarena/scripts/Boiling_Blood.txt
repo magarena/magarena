@@ -1,5 +1,5 @@
 name=Boiling Blood
-image=http://api.mtgdb.info/content/hi_res_card_images/4538.jpg
+image=http://magiccards.info/scans/en/wl/92.jpg
 value=2.379
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Serra Paladin
-image=http://api.mtgdb.info/content/hi_res_card_images/4158.jpg
+image=http://magiccards.info/scans/en/5e/337.jpg
 value=2.314
 rarity=U
 type=Creature

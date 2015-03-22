@@ -1,5 +1,5 @@
 name=Capricious Sorcerer
-image=http://api.mtgdb.info/content/hi_res_card_images/4250.jpg
+image=http://magiccards.info/scans/en/po/44.jpg
 value=1.750
 rarity=R
 type=Creature

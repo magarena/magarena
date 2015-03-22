@@ -1,5 +1,5 @@
 name=Fanatical Fever
-image=http://api.mtgdb.info/content/hi_res_card_images/2558.jpg
+image=http://magiccards.info/scans/en/ia/122.jpg
 value=1.300
 rarity=U
 type=Instant

@@ -1,5 +1,5 @@
 name=Grave Robbers
-image=http://api.mtgdb.info/content/hi_res_card_images/1735.jpg
+image=http://magiccards.info/scans/en/dk/8.jpg
 value=2.206
 rarity=R
 type=Creature

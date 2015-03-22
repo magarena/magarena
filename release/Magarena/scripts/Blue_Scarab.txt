@@ -1,5 +1,5 @@
 name=Blue Scarab
-image=http://api.mtgdb.info/content/hi_res_card_images/2669.jpg
+image=http://magiccards.info/scans/en/ia/233.jpg
 value=2.435
 rarity=U
 type=Enchantment

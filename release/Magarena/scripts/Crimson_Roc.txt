@@ -1,5 +1,5 @@
 name=Crimson Roc
-image=http://api.mtgdb.info/content/hi_res_card_images/3439.jpg
+image=http://magiccards.info/scans/en/mr/168.jpg
 value=2.375
 rarity=U
 type=Creature

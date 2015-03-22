@@ -1,5 +1,5 @@
 name=Mire Shade
-image=http://api.mtgdb.info/content/hi_res_card_images/3300.jpg
+image=http://magiccards.info/scans/en/mr/29.jpg
 value=1.896
 rarity=U
 type=Creature

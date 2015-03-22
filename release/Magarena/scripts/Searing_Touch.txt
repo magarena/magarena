@@ -1,5 +1,5 @@
 name=Searing Touch
-image=http://api.mtgdb.info/content/hi_res_card_images/4843.jpg
+image=http://magiccards.info/scans/en/tp/201.jpg
 value=2.703
 removal=1
 rarity=U

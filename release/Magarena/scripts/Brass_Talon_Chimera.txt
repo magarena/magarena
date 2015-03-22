@@ -1,5 +1,5 @@
 name=Brass-Talon Chimera
-image=http://api.mtgdb.info/content/hi_res_card_images/3590.jpg
+image=http://magiccards.info/scans/en/vi/142.jpg
 value=3.471
 rarity=U
 type=Artifact,Creature

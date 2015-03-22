@@ -1,5 +1,5 @@
 name=Land Cap
-image=http://api.mtgdb.info/content/hi_res_card_images/2756.jpg
+image=http://magiccards.info/scans/en/ia/338.jpg
 value=1.912
 rarity=R
 type=Land

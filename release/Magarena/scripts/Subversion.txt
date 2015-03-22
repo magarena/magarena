@@ -1,5 +1,5 @@
 name=Subversion
-image=http://api.mtgdb.info/content/hi_res_card_images/21148.jpg
+image=http://magiccards.info/scans/en/br/82.jpg
 value=4.045
 rarity=R
 type=Enchantment

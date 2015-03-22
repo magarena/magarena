@@ -1,5 +1,5 @@
 name=Brutal Nightstalker
-image=http://api.mtgdb.info/content/hi_res_card_images/6566.jpg
+image=http://magiccards.info/scans/en/po2/4.jpg
 value=1.780
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Broken Fall
-image=http://api.mtgdb.info/content/hi_res_card_images/21099.jpg
+image=http://magiccards.info/scans/en/br/10.jpg
 value=3.372
 rarity=C
 type=Enchantment

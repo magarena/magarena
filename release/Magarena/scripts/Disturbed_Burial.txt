@@ -1,5 +1,5 @@
 name=Disturbed Burial
-image=http://api.mtgdb.info/content/hi_res_card_images/4657.jpg
+image=http://magiccards.info/scans/en/tp/23.jpg
 value=3.405
 rarity=C
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Krakilin
-image=http://api.mtgdb.info/content/hi_res_card_images/4769.jpg
+image=http://magiccards.info/scans/en/tp/129.jpg
 value=4.015
 rarity=U
 type=Creature

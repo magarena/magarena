@@ -1,5 +1,5 @@
 name=Shadow Rift
-image=http://api.mtgdb.info/content/hi_res_card_images/4725.jpg
+image=http://magiccards.info/scans/en/tp/86.jpg
 value=4.458
 rarity=C
 type=Instant

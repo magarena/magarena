@@ -1,5 +1,5 @@
 name=Arrogant Vampire
-image=http://api.mtgdb.info/content/hi_res_card_images/4207.jpg
+image=http://magiccards.info/scans/en/po/1.jpg
 value=2.221
 ability=flying
 rarity=U

@@ -1,5 +1,5 @@
 name=Wall of Tears
-image=http://api.mtgdb.info/content/hi_res_card_images/5270.jpg
+image=http://magiccards.info/scans/en/sh/50.jpg
 value=4.408
 rarity=U
 type=Creature

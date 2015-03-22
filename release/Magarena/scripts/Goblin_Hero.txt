@@ -1,5 +1,5 @@
 name=Goblin Hero
-image=http://api.mtgdb.info/content/hi_res_card_images/25486.jpg
+image=http://magiccards.info/scans/en/6e/184.jpg
 value=2.500
 rarity=C
 type=Creature

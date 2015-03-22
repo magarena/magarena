@@ -1,5 +1,5 @@
 name=Elder Spawn
-image=http://api.mtgdb.info/content/hi_res_card_images/1478.jpg
+image=http://magiccards.info/scans/en/lg/52.jpg
 value=1.370
 rarity=R
 type=Creature

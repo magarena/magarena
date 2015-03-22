@@ -1,5 +1,5 @@
 name=Keen-Eyed Archers
-image=http://api.mtgdb.info/content/hi_res_card_images/4387.jpg
+image=http://magiccards.info/scans/en/po/181.jpg
 value=3.048
 rarity=C
 type=Creature

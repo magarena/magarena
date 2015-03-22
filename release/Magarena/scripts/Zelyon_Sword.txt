@@ -1,5 +1,5 @@
 name=Zelyon Sword
-image=http://api.mtgdb.info/content/hi_res_card_images/1837.jpg
+image=http://magiccards.info/scans/en/fe/176.jpg
 value=1.971
 rarity=R
 type=Artifact

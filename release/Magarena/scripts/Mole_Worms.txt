@@ -1,5 +1,5 @@
 name=Mole Worms
-image=http://api.mtgdb.info/content/hi_res_card_images/3862.jpg
+image=http://magiccards.info/scans/en/5e/41.jpg
 value=2.528
 rarity=U
 type=Creature

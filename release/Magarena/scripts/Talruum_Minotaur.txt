@@ -1,5 +1,5 @@
 name=Talruum Minotaur
-image=http://api.mtgdb.info/content/hi_res_card_images/26646.jpg
+image=http://magiccards.info/scans/en/bd/47.jpg
 value=3.688
 rarity=C
 type=Creature

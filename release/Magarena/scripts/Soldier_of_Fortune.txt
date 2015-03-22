@@ -1,5 +1,5 @@
 name=Soldier of Fortune
-image=http://api.mtgdb.info/content/hi_res_card_images/3182.jpg
+image=http://magiccards.info/scans/en/ai/117.jpg
 value=3.758
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Heat of Battle
-image=http://api.mtgdb.info/content/hi_res_card_images/5165.jpg
+image=http://magiccards.info/scans/en/sh/88.jpg
 value=3.210
 rarity=U
 type=Enchantment

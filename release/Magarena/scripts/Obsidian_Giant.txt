@@ -1,5 +1,5 @@
 name=Obsidian Giant
-image=http://api.mtgdb.info/content/hi_res_card_images/6599.jpg
+image=http://magiccards.info/scans/en/po2/109.jpg
 value=2.500
 rarity=U
 type=Creature

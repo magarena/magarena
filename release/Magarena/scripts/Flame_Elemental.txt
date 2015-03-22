@@ -1,5 +1,5 @@
 name=Flame Elemental
-image=http://api.mtgdb.info/content/hi_res_card_images/3446.jpg
+image=http://magiccards.info/scans/en/mr/175.jpg
 value=2.569
 rarity=U
 type=Creature

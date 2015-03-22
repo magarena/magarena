@@ -1,5 +1,5 @@
 name=The Brute
-image=http://api.mtgdb.info/content/hi_res_card_images/4093.jpg
+image=http://magiccards.info/scans/en/5e/272.jpg
 value=1.712
 rarity=C
 type=Enchantment

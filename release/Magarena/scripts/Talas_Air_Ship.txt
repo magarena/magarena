@@ -1,5 +1,5 @@
 name=Talas Air Ship
-image=http://api.mtgdb.info/content/hi_res_card_images/6524.jpg
+image=http://magiccards.info/scans/en/po2/48.jpg
 value=2.976
 rarity=C
 type=Creature

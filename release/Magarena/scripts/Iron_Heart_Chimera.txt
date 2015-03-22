@@ -1,5 +1,5 @@
 name=Iron-Heart Chimera
-image=http://api.mtgdb.info/content/hi_res_card_images/3594.jpg
+image=http://magiccards.info/scans/en/vi/146.jpg
 value=3.391
 rarity=U
 type=Artifact,Creature

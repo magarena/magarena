@@ -1,5 +1,5 @@
 name=Marsh Viper
-image=http://api.mtgdb.info/content/hi_res_card_images/3998.jpg
+image=http://magiccards.info/scans/en/5e/177.jpg
 value=3.902
 rarity=C
 type=Creature

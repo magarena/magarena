@@ -1,5 +1,5 @@
 name=Kiss of Death
-image=http://api.mtgdb.info/content/hi_res_card_images/6572.jpg
+image=http://magiccards.info/scans/en/po2/16.jpg
 value=2.024
 rarity=U
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Agility
-image=http://api.mtgdb.info/content/hi_res_card_images/3425.jpg
+image=http://magiccards.info/scans/en/mr/154.jpg
 value=3.586
 rarity=C
 type=Enchantment

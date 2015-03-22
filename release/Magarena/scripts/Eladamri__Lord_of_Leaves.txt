@@ -1,5 +1,5 @@
 name=Eladamri, Lord of Leaves
-image=http://api.mtgdb.info/content/hi_res_card_images/4757.jpg
+image=http://magiccards.info/scans/en/tp/117.jpg
 value=4.247
 rarity=R
 type=Legendary,Creature

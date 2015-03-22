@@ -1,5 +1,5 @@
 name=Timberline Ridge
-image=http://api.mtgdb.info/content/hi_res_card_images/2760.jpg
+image=http://magiccards.info/scans/en/ia/356.jpg
 value=2.140
 rarity=R
 type=Land

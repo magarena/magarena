@@ -1,5 +1,5 @@
 name=Skittering Skirge
-image=http://api.mtgdb.info/content/hi_res_card_images/27261.jpg
+image=http://magiccards.info/scans/en/bd/31.jpg
 value=3.892
 rarity=C
 type=Creature

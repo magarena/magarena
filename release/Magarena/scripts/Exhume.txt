@@ -1,5 +1,5 @@
 name=Exhume
-image=http://api.mtgdb.info/content/hi_res_card_images/21153.jpg
+image=http://magiccards.info/scans/en/br/24.jpg
 value=4.500
 rarity=C
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Flowstone Wyvern
-image=http://api.mtgdb.info/content/hi_res_card_images/4818.jpg
+image=http://magiccards.info/scans/en/tp/176.jpg
 value=2.529
 rarity=R
 type=Creature

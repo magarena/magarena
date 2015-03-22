@@ -1,5 +1,5 @@
 name=Tunnel
-image=http://api.mtgdb.info/content/hi_res_card_images/2310.jpg
+image=http://magiccards.info/scans/en/4e/245.jpg
 value=1.987
 rarity=U
 type=Instant

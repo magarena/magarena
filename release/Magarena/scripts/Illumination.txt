@@ -1,5 +1,5 @@
 name=Illumination
-image=http://api.mtgdb.info/content/hi_res_card_images/3496.jpg
+image=http://magiccards.info/scans/en/mr/225.jpg
 value=2.444
 rarity=U
 type=Instant

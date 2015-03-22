@@ -1,5 +1,5 @@
 name=Hyperion Blacksmith
-image=http://api.mtgdb.info/content/hi_res_card_images/1578.jpg
+image=http://magiccards.info/scans/en/lg/150.jpg
 value=2.783
 rarity=U
 type=Creature

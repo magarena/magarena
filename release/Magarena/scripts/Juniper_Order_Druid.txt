@@ -1,5 +1,5 @@
 name=Juniper Order Druid
-image=http://api.mtgdb.info/content/hi_res_card_images/2575.jpg
+image=http://magiccards.info/scans/en/ia/139.jpg
 value=3.161
 rarity=C
 type=Creature

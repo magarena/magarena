@@ -1,5 +1,5 @@
 name=People of the Woods
-image=http://api.mtgdb.info/content/hi_res_card_images/1773.jpg
+image=http://magiccards.info/scans/en/dk/46.jpg
 value=3.311
 rarity=U
 type=Creature

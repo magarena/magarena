@@ -1,5 +1,5 @@
 name=Royal Falcon
-image=http://api.mtgdb.info/content/hi_res_card_images/25459.jpg
+image=http://magiccards.info/scans/en/st2k/14.jpg
 value=1.417
 rarity=C
 type=Creature

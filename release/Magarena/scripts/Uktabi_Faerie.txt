@@ -1,5 +1,5 @@
 name=Uktabi Faerie
-image=http://api.mtgdb.info/content/hi_res_card_images/3416.jpg
+image=http://magiccards.info/scans/en/mr/145.jpg
 value=2.439
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Quirion Ranger
-image=http://api.mtgdb.info/content/hi_res_card_images/3674.jpg
+image=http://magiccards.info/scans/en/vi/67.jpg
 value=4.507
 rarity=C
 type=Creature

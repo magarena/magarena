@@ -1,5 +1,5 @@
 name=Dungeon Shade
-image=http://api.mtgdb.info/content/hi_res_card_images/5142.jpg
+image=http://magiccards.info/scans/en/sh/8.jpg
 value=3.534
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Starlit Angel
-image=http://api.mtgdb.info/content/hi_res_card_images/4398.jpg
+image=http://magiccards.info/scans/en/po/192.jpg
 value=2.300
 rarity=U
 type=Creature

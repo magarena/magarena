@@ -1,5 +1,5 @@
 name=Green Scarab
-image=http://api.mtgdb.info/content/hi_res_card_images/2688.jpg
+image=http://magiccards.info/scans/en/ia/252.jpg
 value=2.190
 rarity=U
 type=Enchantment

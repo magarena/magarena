@@ -1,5 +1,5 @@
 name=Remove
-image=http://api.mtgdb.info/content/hi_res_card_images/6541.jpg
+image=http://magiccards.info/scans/en/po2/43.jpg
 value=2.375
 rarity=U
 type=Instant

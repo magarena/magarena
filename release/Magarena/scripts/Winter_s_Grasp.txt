@@ -1,5 +1,5 @@
 name=Winter's Grasp
-image=http://api.mtgdb.info/content/hi_res_card_images/4799.jpg
+image=http://magiccards.info/scans/en/tp/159.jpg
 value=3.639
 removal=3
 rarity=U

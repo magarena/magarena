@@ -1,5 +1,5 @@
 name=Rootwater Depths
-image=http://api.mtgdb.info/content/hi_res_card_images/4937.jpg
+image=http://magiccards.info/scans/en/tp/329.jpg
 value=2.946
 rarity=U
 type=Land

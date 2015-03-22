@@ -1,5 +1,5 @@
 name=Soulshriek
-image=http://api.mtgdb.info/content/hi_res_card_images/3314.jpg
+image=http://magiccards.info/scans/en/mr/43.jpg
 value=3.977
 rarity=C
 type=Instant

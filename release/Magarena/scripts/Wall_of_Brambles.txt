@@ -1,5 +1,5 @@
 name=Wall of Brambles
-image=http://api.mtgdb.info/content/hi_res_card_images/4021.jpg
+image=http://magiccards.info/scans/en/5e/200.jpg
 value=3.062
 rarity=U
 type=Creature

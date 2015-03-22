@@ -1,5 +1,5 @@
 name=Quirion Druid
-image=http://api.mtgdb.info/content/hi_res_card_images/3673.jpg
+image=http://magiccards.info/scans/en/vi/66.jpg
 value=3.161
 rarity=R
 type=Creature

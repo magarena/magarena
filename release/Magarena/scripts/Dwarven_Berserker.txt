@@ -1,5 +1,5 @@
 name=Dwarven Berserker
-image=http://api.mtgdb.info/content/hi_res_card_images/4543.jpg
+image=http://magiccards.info/scans/en/wl/97.jpg
 value=3.620
 rarity=C
 type=Creature
