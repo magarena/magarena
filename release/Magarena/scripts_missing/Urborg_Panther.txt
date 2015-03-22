@@ -1,5 +1,5 @@
 name=Urborg Panther
-image=http://api.mtgdb.info/content/hi_res_card_images/3319.jpg
+image=http://magiccards.info/scans/en/mr/48.jpg
 value=2.500
 rarity=C
 type=Creature

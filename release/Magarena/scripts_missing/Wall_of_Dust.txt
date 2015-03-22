@@ -1,5 +1,5 @@
 name=Wall of Dust
-image=http://api.mtgdb.info/content/hi_res_card_images/2312.jpg
+image=http://magiccards.info/scans/en/4e/247.jpg
 value=2.500
 rarity=U
 type=Creature

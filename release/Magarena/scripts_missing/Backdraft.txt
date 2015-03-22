@@ -1,5 +1,5 @@
 name=Backdraft
-image=http://api.mtgdb.info/content/hi_res_card_images/1558.jpg
+image=http://magiccards.info/scans/en/lg/132.jpg
 value=2.500
 rarity=U
 type=Instant

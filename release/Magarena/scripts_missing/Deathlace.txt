@@ -1,5 +1,5 @@
 name=Deathlace
-image=http://api.mtgdb.info/content/hi_res_card_images/2098.jpg
+image=http://magiccards.info/scans/en/4e/15.jpg
 value=2.500
 rarity=R
 type=Instant

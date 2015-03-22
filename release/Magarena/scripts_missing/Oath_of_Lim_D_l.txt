@@ -1,5 +1,5 @@
 name=Oath of Lim-Dûl
-image=http://api.mtgdb.info/content/hi_res_card_images/2480.jpg
+image=http://magiccards.info/scans/en/ia/44.jpg
 value=2.500
 rarity=R
 type=Enchantment

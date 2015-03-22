@@ -1,5 +1,5 @@
 name=Quickening Licid
-image=http://api.mtgdb.info/content/hi_res_card_images/4894.jpg
+image=http://magiccards.info/scans/en/tp/248.jpg
 value=2.500
 rarity=U
 type=Creature

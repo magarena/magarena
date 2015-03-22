@@ -1,5 +1,5 @@
 name=Deep Water
-image=http://api.mtgdb.info/content/hi_res_card_images/1749.jpg
+image=http://magiccards.info/scans/en/dk/22.jpg
 value=2.500
 rarity=C
 type=Enchantment

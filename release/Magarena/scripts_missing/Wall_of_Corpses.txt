@@ -1,5 +1,5 @@
 name=Wall of Corpses
-image=http://api.mtgdb.info/content/hi_res_card_images/3320.jpg
+image=http://magiccards.info/scans/en/mr/49.jpg
 value=2.500
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Ekundu Cyclops
-image=http://api.mtgdb.info/content/hi_res_card_images/3442.jpg
+image=http://magiccards.info/scans/en/mr/171.jpg
 value=2.500
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Joven's Tools
-image=http://api.mtgdb.info/content/hi_res_card_images/3798.jpg
+image=http://magiccards.info/scans/en/5e/386.jpg
 value=2.500
 rarity=U
 type=Artifact

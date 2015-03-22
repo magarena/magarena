@@ -1,5 +1,5 @@
 name=Knight of Valor
-image=http://api.mtgdb.info/content/hi_res_card_images/3718.jpg
+image=http://magiccards.info/scans/en/vi/111.jpg
 value=2.500
 rarity=C
 type=Creature

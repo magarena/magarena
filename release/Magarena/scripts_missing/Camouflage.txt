@@ -1,5 +1,5 @@
 name=Camouflage
-image=http://api.mtgdb.info/content/hi_res_card_images/740.jpg
+image=http://magiccards.info/scans/en/un/96.jpg
 value=2.500
 rarity=U
 type=Instant

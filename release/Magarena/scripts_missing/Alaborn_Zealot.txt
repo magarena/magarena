@@ -1,5 +1,5 @@
 name=Alaborn Zealot
-image=http://api.mtgdb.info/content/hi_res_card_images/6492.jpg
+image=http://magiccards.info/scans/en/po2/126.jpg
 value=2.500
 rarity=U
 type=Creature

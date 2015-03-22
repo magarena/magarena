@@ -1,5 +1,5 @@
 name=Rootwater Shaman
-image=http://api.mtgdb.info/content/hi_res_card_images/4723.jpg
+image=http://magiccards.info/scans/en/tp/84.jpg
 value=2.500
 rarity=R
 type=Creature

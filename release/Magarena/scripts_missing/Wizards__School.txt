@@ -1,5 +1,5 @@
 name=Wizards' School
-image=http://api.mtgdb.info/content/hi_res_card_images/3039.jpg
+image=http://magiccards.info/scans/en/hl/140.jpg
 value=2.500
 rarity=U
 type=Land

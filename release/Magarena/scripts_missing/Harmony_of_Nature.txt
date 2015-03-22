@@ -1,5 +1,5 @@
 name=Harmony of Nature
-image=http://api.mtgdb.info/content/hi_res_card_images/6632.jpg
+image=http://magiccards.info/scans/en/po2/68.jpg
 value=2.500
 rarity=U
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Whim of Volrath
-image=http://api.mtgdb.info/content/hi_res_card_images/4742.jpg
+image=http://magiccards.info/scans/en/tp/102.jpg
 value=2.500
 rarity=R
 type=Instant

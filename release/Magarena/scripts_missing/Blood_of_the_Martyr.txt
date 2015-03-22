@@ -1,5 +1,5 @@
 name=Blood of the Martyr
-image=http://api.mtgdb.info/content/hi_res_card_images/2855.jpg
+image=http://magiccards.info/scans/en/ch/60.jpg
 value=2.500
 rarity=U
 type=Instant

@@ -1,5 +1,5 @@
 name=Gibbering Hyenas
-image=http://api.mtgdb.info/content/hi_res_card_images/3388.jpg
+image=http://magiccards.info/scans/en/mr/117.jpg
 value=2.500
 rarity=C
 type=Creature

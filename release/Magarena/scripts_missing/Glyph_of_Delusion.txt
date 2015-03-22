@@ -1,5 +1,5 @@
 name=Glyph of Delusion
-image=http://api.mtgdb.info/content/hi_res_card_images/1486.jpg
+image=http://magiccards.info/scans/en/lg/60.jpg
 value=2.500
 rarity=C
 type=Instant

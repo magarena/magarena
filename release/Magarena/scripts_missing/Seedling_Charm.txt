@@ -1,5 +1,5 @@
 name=Seedling Charm
-image=http://api.mtgdb.info/content/hi_res_card_images/3409.jpg
+image=http://magiccards.info/scans/en/mr/138.jpg
 value=2.500
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Fungus Elemental
-image=http://api.mtgdb.info/content/hi_res_card_images/4516.jpg
+image=http://magiccards.info/scans/en/wl/70.jpg
 value=2.500
 rarity=R
 type=Creature

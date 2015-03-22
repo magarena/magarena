@@ -1,5 +1,5 @@
 name=Chromatic Armor
-image=http://api.mtgdb.info/content/hi_res_card_images/2719.jpg
+image=http://magiccards.info/scans/en/ia/361.jpg
 value=2.500
 rarity=R
 type=Enchantment

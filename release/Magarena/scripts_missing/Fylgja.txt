@@ -1,5 +1,5 @@
 name=Fylgja
-image=http://api.mtgdb.info/content/hi_res_card_images/2686.jpg
+image=http://magiccards.info/scans/en/ia/250.jpg
 value=2.500
 rarity=C
 type=Enchantment

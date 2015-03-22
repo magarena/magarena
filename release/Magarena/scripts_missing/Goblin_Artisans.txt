@@ -1,5 +1,5 @@
 name=Goblin Artisans
-image=http://api.mtgdb.info/content/hi_res_card_images/2844.jpg
+image=http://magiccards.info/scans/en/ch/48.jpg
 value=2.500
 rarity=U
 type=Creature

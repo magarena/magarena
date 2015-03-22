@@ -1,5 +1,5 @@
 name=Kaervek's Spite
-image=http://api.mtgdb.info/content/hi_res_card_images/3620.jpg
+image=http://magiccards.info/scans/en/vi/13.jpg
 value=2.500
 rarity=R
 type=Instant

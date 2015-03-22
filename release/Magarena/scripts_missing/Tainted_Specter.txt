@@ -1,5 +1,5 @@
 name=Tainted Specter
-image=http://api.mtgdb.info/content/hi_res_card_images/3317.jpg
+image=http://magiccards.info/scans/en/mr/46.jpg
 value=2.500
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Pestilence Rats
-image=http://api.mtgdb.info/content/hi_res_card_images/2481.jpg
+image=http://magiccards.info/scans/en/ia/45.jpg
 value=2.500
 rarity=C
 type=Creature

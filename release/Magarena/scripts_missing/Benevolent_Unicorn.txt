@@ -1,5 +1,5 @@
 name=Benevolent Unicorn
-image=http://api.mtgdb.info/content/hi_res_card_images/3479.jpg
+image=http://magiccards.info/scans/en/mr/208.jpg
 value=2.500
 rarity=C
 type=Creature

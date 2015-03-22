@@ -1,5 +1,5 @@
 name=Scarab of the Unseen
-image=http://api.mtgdb.info/content/hi_res_card_images/3055.jpg
+image=http://magiccards.info/scans/en/ai/171.jpg
 value=2.500
 rarity=U
 type=Artifact

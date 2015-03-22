@@ -1,5 +1,5 @@
 name=Wave of Terror
-image=http://api.mtgdb.info/content/hi_res_card_images/4474.jpg
+image=http://magiccards.info/scans/en/wl/28.jpg
 value=2.500
 rarity=R
 type=Enchantment

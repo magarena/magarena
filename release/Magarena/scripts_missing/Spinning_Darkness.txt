@@ -1,5 +1,5 @@
 name=Spinning Darkness
-image=http://api.mtgdb.info/content/hi_res_card_images/4469.jpg
+image=http://magiccards.info/scans/en/wl/23.jpg
 value=2.500
 rarity=C
 type=Instant

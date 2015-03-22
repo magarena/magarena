@@ -1,5 +1,5 @@
 name=Searing Spear Askari
-image=http://api.mtgdb.info/content/hi_res_card_images/3462.jpg
+image=http://magiccards.info/scans/en/mr/191.jpg
 value=2.500
 rarity=C
 type=Creature

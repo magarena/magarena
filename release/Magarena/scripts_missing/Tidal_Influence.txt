@@ -1,5 +1,5 @@
 name=Tidal Influence
-image=http://api.mtgdb.info/content/hi_res_card_images/1894.jpg
+image=http://magiccards.info/scans/en/fe/57.jpg
 value=2.500
 rarity=U
 type=Enchantment

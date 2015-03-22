@@ -1,5 +1,5 @@
 name=Tangle Kelp
-image=http://api.mtgdb.info/content/hi_res_card_images/1763.jpg
+image=http://magiccards.info/scans/en/dk/36.jpg
 value=2.500
 rarity=U
 type=Enchantment

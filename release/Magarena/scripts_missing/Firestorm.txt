@@ -1,5 +1,5 @@
 name=Firestorm
-image=http://api.mtgdb.info/content/hi_res_card_images/4547.jpg
+image=http://magiccards.info/scans/en/wl/101.jpg
 value=2.500
 rarity=R
 type=Instant

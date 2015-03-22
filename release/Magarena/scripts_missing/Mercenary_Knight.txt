@@ -1,5 +1,5 @@
 name=Mercenary Knight
-image=http://api.mtgdb.info/content/hi_res_card_images/4228.jpg
+image=http://magiccards.info/scans/en/po/22.jpg
 value=2.500
 rarity=R
 type=Creature

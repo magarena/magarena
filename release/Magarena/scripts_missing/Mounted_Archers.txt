@@ -1,5 +1,5 @@
 name=Mounted Archers
-image=http://api.mtgdb.info/content/hi_res_card_images/4888.jpg
+image=http://magiccards.info/scans/en/tp/242.jpg
 value=2.500
 rarity=C
 type=Creature

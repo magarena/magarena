@@ -1,5 +1,5 @@
 name=Ironclaw Curse
-image=http://api.mtgdb.info/content/hi_res_card_images/4065.jpg
+image=http://magiccards.info/scans/en/5e/244.jpg
 value=2.500
 rarity=R
 type=Enchantment

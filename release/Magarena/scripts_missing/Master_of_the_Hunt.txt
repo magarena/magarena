@@ -1,5 +1,5 @@
 name=Master of the Hunt
-image=http://api.mtgdb.info/content/hi_res_card_images/1534.jpg
+image=http://magiccards.info/scans/en/lg/108.jpg
 value=2.500
 rarity=R
 type=Creature

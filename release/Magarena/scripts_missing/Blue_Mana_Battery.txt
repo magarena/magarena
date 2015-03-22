@@ -1,5 +1,5 @@
 name=Blue Mana Battery
-image=http://api.mtgdb.info/content/hi_res_card_images/2023.jpg
+image=http://magiccards.info/scans/en/4e/318.jpg
 value=2.500
 rarity=R
 type=Artifact

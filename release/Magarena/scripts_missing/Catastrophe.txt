@@ -1,5 +1,5 @@
 name=Catastrophe
-image=http://api.mtgdb.info/content/hi_res_card_images/21143.jpg
+image=http://magiccards.info/scans/en/br/12.jpg
 value=2.500
 rarity=R
 type=Sorcery

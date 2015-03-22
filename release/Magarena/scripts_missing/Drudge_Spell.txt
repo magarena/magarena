@@ -1,5 +1,5 @@
 name=Drudge Spell
-image=http://api.mtgdb.info/content/hi_res_card_images/2915.jpg
+image=http://magiccards.info/scans/en/hl/6.jpg
 value=2.500
 rarity=U
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Heaven's Gate
-image=http://api.mtgdb.info/content/hi_res_card_images/1617.jpg
+image=http://magiccards.info/scans/en/lg/188.jpg
 value=2.500
 rarity=U
 type=Instant

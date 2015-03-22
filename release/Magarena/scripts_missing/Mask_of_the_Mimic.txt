@@ -1,5 +1,5 @@
 name=Mask of the Mimic
-image=http://api.mtgdb.info/content/hi_res_card_images/5183.jpg
+image=http://magiccards.info/scans/en/sh/37.jpg
 value=2.500
 rarity=U
 type=Instant

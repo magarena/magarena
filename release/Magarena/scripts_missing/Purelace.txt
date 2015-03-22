@@ -1,5 +1,5 @@
 name=Purelace
-image=http://api.mtgdb.info/content/hi_res_card_images/2358.jpg
+image=http://magiccards.info/scans/en/4e/293.jpg
 value=2.500
 rarity=R
 type=Instant

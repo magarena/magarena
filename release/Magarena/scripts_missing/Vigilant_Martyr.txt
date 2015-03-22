@@ -1,5 +1,5 @@
 name=Vigilant Martyr
-image=http://api.mtgdb.info/content/hi_res_card_images/3520.jpg
+image=http://magiccards.info/scans/en/mr/249.jpg
 value=2.500
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Argothian Elder
-image=http://api.mtgdb.info/content/hi_res_card_images/21182.jpg
+image=http://magiccards.info/scans/en/br/6.jpg
 value=2.500
 rarity=U
 type=Creature

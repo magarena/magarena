@@ -1,5 +1,5 @@
 name=Nomads en-Kor
-image=http://api.mtgdb.info/content/hi_res_card_images/5196.jpg
+image=http://magiccards.info/scans/en/sh/109.jpg
 value=2.500
 rarity=C
 type=Creature
