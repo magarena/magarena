@@ -1,7 +1,10 @@
 package magic.ui.duel;
 
 import java.awt.Color;
+import java.util.ArrayList;
+import java.util.List;
 import javax.swing.BorderFactory;
+import javax.swing.JComponent;
 import javax.swing.JPanel;
 import magic.data.GeneralConfig;
 import magic.model.MagicPlayerZone;
@@ -23,6 +26,13 @@ import net.miginfocom.swing.MigLayout;
 @SuppressWarnings("serial")
 public class DuelSideBarPanel extends JPanel implements IPlayerZoneListener {
 
+    private enum ComponentSlot {
+        PLAYER1,
+        PLAYER2,
+        LOGSTACK,
+        TURNINFO;
+    }
+
     private static final GeneralConfig CONFIG = GeneralConfig.getInstance();
     private static final int TOTAL_PLAYERS = 2;
 
@@ -31,6 +41,7 @@ public class DuelSideBarPanel extends JPanel implements IPlayerZoneListener {
     private final LogBookViewer logBookViewer;
     private final GameStatusPanel gameStatusPanel;
     private final SwingGameController controller;
+    private final List<LayoutSlot> layoutSlots = new ArrayList<>();
 
     DuelSideBarPanel(final SwingGameController controller, final StackViewer imageStackViewer) {
 
@@ -48,6 +59,7 @@ public class DuelSideBarPanel extends JPanel implements IPlayerZoneListener {
         controller.addPlayerZoneListener(this);
 
         createPlayerPanels();
+        setLayoutSlots();
 
         setOpaque(false);
     }
@@ -66,20 +78,6 @@ public class DuelSideBarPanel extends JPanel implements IPlayerZoneListener {
             new GamePlayerPanel(controller, controller.getViewerInfo().getPlayerInfo(true))
         );
 
-//        for (int i = 0; i < gameInfo.getPlayerInfo().length; i++) {
-//            final PlayerViewerInfo playerInfo = gameInfo.getPlayerInfo(i);
-//            if (playerInfo.isAi || MagicSystem.isAiVersusAi()) {
-//                playerCompositePanels[i] = new PlayerCompositePanel(
-//                        new GamePlayerPanel(controller, playerInfo)
-//                );
-//            } else {
-//                playerCompositePanels[i] = new PlayerCompositePanel(
-//                        new GamePlayerPanel(controller, playerInfo),
-//                        new UserActionPanel(controller)
-//                );
-//            }
-//        }
-
     }
 
     GameStatusPanel getGameStatusPanel() {
@@ -95,15 +93,19 @@ public class DuelSideBarPanel extends JPanel implements IPlayerZoneListener {
         final int insets = 6;
         final int maxWidth = DefaultResolutionProfile.getPanelWidthLHS() - (insets * 2);
 
+        final MigLayout layout = new MigLayout("insets " + insets + ", gap 0 6, flowy");
+        layout.setColumnConstraints(
+                "[" + maxWidth + "!, fill]"
+        );
+        setLayout(layout);
+
         removeAll();
-        setLayout(new MigLayout("insets " + insets + ", gap 0 6, flowy"));
+        for (LayoutSlot slot : layoutSlots) {
+            add(slot.getComponent(), slot.getLayoutConstraints());
+        }
 
-        add(playerCompositePanels[1], "w " + maxWidth + "!");
-        add(logStackViewer, "w " + maxWidth + "!, h 100%");
-        add(gameStatusPanel, "w " + maxWidth + "!");
-        add(playerCompositePanels[0],   "w " + maxWidth + "!");
-
-        logStackViewer.setLogStackLayout();
+        // IMPORTANT! Ensures you do not "see" it laying out components (when running duel directly).
+        revalidate();
 
     }
 
@@ -120,6 +122,48 @@ public class DuelSideBarPanel extends JPanel implements IPlayerZoneListener {
         } else {
             playerCompositePanels[0].getPlayerPanel().setActiveZone(zone);
         }
+    }
+
+    private void setLayoutSlots() {
+        for (String s : GeneralConfig.getInstance().getDuelSidebarLayout().split(",")) {
+            final ComponentSlot slot = ComponentSlot.valueOf(s.trim());
+            layoutSlots.add(getComponentSlot(slot));
+        }
+    }
+
+    private LayoutSlot getComponentSlot(final ComponentSlot slot) {
+        switch (slot) {
+            case PLAYER1: return new LayoutSlot(playerCompositePanels[0]);
+            case PLAYER2: return new LayoutSlot(playerCompositePanels[1]);
+            case LOGSTACK: return new LayoutSlot(logStackViewer, "h 100%");
+            case TURNINFO: return new LayoutSlot(gameStatusPanel);
+            default:
+                throw new AssertionError(slot.name());
+        }
+    }
+
+    private class LayoutSlot {
+
+        private JComponent component;
+        private String constraints;
+
+        public LayoutSlot(final JComponent component, final String constraints) {
+            this.component = component;
+             this.constraints = constraints;
+        }
+
+        public LayoutSlot(final JComponent component) {
+            this(component, "");
+        }
+
+        public JComponent getComponent() {
+            return component;
+        }
+
+        public String getLayoutConstraints() {
+            return constraints;
+        }
+
     }
 
     private class PlayerCompositePanel extends TexturedPanel {
