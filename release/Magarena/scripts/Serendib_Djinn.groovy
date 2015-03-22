@@ -3,7 +3,7 @@ def SAC_ACTION = {
     event.processTargetPermanent(game, {
         game.doAction(new MagicSacrificeAction(it));
         if (it.hasSubType(MagicSubType.Island)) { 
-            game.doAction(new MagicDealDamageAction(event.getPermanent(),event.getPlayer(),3));
+            game.doAction(new MagicDealDamageAction(event.getSource(),event.getPlayer(),3));
         }
     })
 }
@@ -23,17 +23,13 @@ def EFFECT = MagicRuleEventAction.create("Sacrifice SN.");
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicPermanent SN = event.getPermanent();
-            final MagicPlayer PN = event.getPlayer();
-            final MagicEvent sac = new MagicEvent(
-                SN,
-                PN,
+            final MagicEvent sac = new MagicSacrificePermanentEvent(
+                event.getSource(),
+                event.getPlayer(),
                 MagicTargetChoice.SACRIFICE_LAND,
-                MagicSacrificeTargetPicker.create(),
-                SAC_ACTION,
-                "Choose a land to sacrifice\$."
+                SAC_ACTION
             );
-            if (PN.controlsPermanent(MagicType.Land)) {
+            if (sac.isSatisfied()) {
                 game.addEvent(sac);
             }
         }
