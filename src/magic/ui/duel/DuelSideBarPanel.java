@@ -27,8 +27,6 @@ public class DuelSideBarPanel extends JPanel implements IPlayerZoneListener {
     private static final int TOTAL_PLAYERS = 2;
 
     private final PlayerCompositePanel[] playerCompositePanels = new PlayerCompositePanel[TOTAL_PLAYERS];
-    private final GamePlayerPanel opponentViewer;
-    private final GamePlayerPanel playerViewer;
     private final LogStackViewer logStackViewer;
     private final LogBookViewer logBookViewer;
     private final GameStatusPanel gameStatusPanel;
@@ -37,10 +35,6 @@ public class DuelSideBarPanel extends JPanel implements IPlayerZoneListener {
     DuelSideBarPanel(final SwingGameController controller, final StackViewer imageStackViewer) {
 
         this.controller = controller;
-
-        PlayerZoneButtonsPanel.clearButtonGroup();
-        opponentViewer = new GamePlayerPanel(controller, controller.getViewerInfo().getPlayerInfo(true));
-        playerViewer = new GamePlayerPanel(controller, controller.getViewerInfo().getPlayerInfo(false));
 
         logBookViewer = new LogBookViewer(controller.getGame().getLogBook());
         logBookViewer.setVisible(!CONFIG.isLogViewerDisabled());
@@ -53,10 +47,39 @@ public class DuelSideBarPanel extends JPanel implements IPlayerZoneListener {
 
         controller.addPlayerZoneListener(this);
 
-        playerCompositePanels[0] = new PlayerCompositePanel(playerViewer, gameStatusPanel.getUserActionPanel());
-        playerCompositePanels[1] = new PlayerCompositePanel(opponentViewer);
+        createPlayerPanels();
 
         setOpaque(false);
+    }
+
+    private void createPlayerPanels() {
+
+        PlayerZoneButtonsPanel.clearButtonGroup();
+
+        // playerViewer
+        playerCompositePanels[0] = new PlayerCompositePanel(
+                new GamePlayerPanel(controller, controller.getViewerInfo().getPlayerInfo(false)),
+                gameStatusPanel.getUserActionPanel()
+        );
+        // opponentViewer
+        playerCompositePanels[1] = new PlayerCompositePanel(
+            new GamePlayerPanel(controller, controller.getViewerInfo().getPlayerInfo(true))
+        );
+
+//        for (int i = 0; i < gameInfo.getPlayerInfo().length; i++) {
+//            final PlayerViewerInfo playerInfo = gameInfo.getPlayerInfo(i);
+//            if (playerInfo.isAi || MagicSystem.isAiVersusAi()) {
+//                playerCompositePanels[i] = new PlayerCompositePanel(
+//                        new GamePlayerPanel(controller, playerInfo)
+//                );
+//            } else {
+//                playerCompositePanels[i] = new PlayerCompositePanel(
+//                        new GamePlayerPanel(controller, playerInfo),
+//                        new UserActionPanel(controller)
+//                );
+//            }
+//        }
+
     }
 
     GameStatusPanel getGameStatusPanel() {
@@ -85,17 +108,17 @@ public class DuelSideBarPanel extends JPanel implements IPlayerZoneListener {
     }
 
     void doUpdate() {
-        opponentViewer.updateDisplay(controller.getViewerInfo().getPlayerInfo(true));
-        playerViewer.updateDisplay(controller.getViewerInfo().getPlayerInfo(false));
+        playerCompositePanels[0].getPlayerPanel().updateDisplay(controller.getViewerInfo().getPlayerInfo(false));
+        playerCompositePanels[1].getPlayerPanel().updateDisplay(controller.getViewerInfo().getPlayerInfo(true));
         gameStatusPanel.update();
     }
 
     @Override
     public void setActivePlayerZone(PlayerViewerInfo playerInfo, MagicPlayerZone zone) {
         if (playerInfo == controller.getViewerInfo().getPlayerInfo(true)) {
-            opponentViewer.setActiveZone(zone);
+            playerCompositePanels[1].getPlayerPanel().setActiveZone(zone);
         } else {
-            playerViewer.setActiveZone(zone);
+            playerCompositePanels[0].getPlayerPanel().setActiveZone(zone);
         }
     }
 
@@ -127,7 +150,7 @@ public class DuelSideBarPanel extends JPanel implements IPlayerZoneListener {
             this(playerPanel, null);
         }
 
-        GamePlayerPanel getGamePlayerPanel() {
+        GamePlayerPanel getPlayerPanel() {
             return playerPanel;
         }
 
