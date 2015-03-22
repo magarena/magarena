@@ -1,0 +1,9 @@
+name=Bathe in Light
+image=http://magiccards.info/scans/en/cmd/9.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={1}{W}
+timing=pump
+requires_groovy_code
+oracle=Radiance — Choose a color. Target creature and each other creature that shares a color with it gain protection from the chosen color until end of turn.
