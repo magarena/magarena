@@ -1,0 +1,11 @@
+name=Kami of the Painted Road
+image=http://magiccards.info/scans/en/chk/23.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Spirit
+cost={4}{W}
+pt=3/3
+timing=main
+requires_groovy_code
+oracle=Whenever you cast a Spirit or Arcane spell, Kami of the Painted Road gains protection from the color of your choice until end of turn.
