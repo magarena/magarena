@@ -19,8 +19,8 @@ def action = {
                     MagicTargetChoice.TARGET_PERMANENT_YOU_CONTROL
                 ),
                 this,
-                "Choose one\$ - target permanent\$ you control gains protection from artifacts until end of turn; " +
-                "or target permanent\$ you control gains protection from the color of your choice until end of turn.\$" 
+                "Choose one\$ - target permanent you control gains protection from artifacts until end of turn; " +
+                "or target permanent you control gains protection from the color of your choice until end of turn.\$" 
             );
         }
         @Override
