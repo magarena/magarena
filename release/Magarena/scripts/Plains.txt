@@ -1,5 +1,5 @@
 name=Plains
-image=http://magiccards.info/scans/en/dtk/250.jpg
+image=http://magiccards.info/scans/en/zen/230.jpg
 value=3.500
 rarity=B
 type=Basic,Land
