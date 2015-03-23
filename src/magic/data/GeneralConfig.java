@@ -552,7 +552,7 @@ public class GeneralConfig {
     public String getDuelSidebarLayout() {
         return duelSidebarLayout;
     }
-	
+
     public Date getImageDownloaderRunDate() {
         try {
             final SimpleDateFormat df = new SimpleDateFormat(CardProperty.IMAGE_UPDATED_FORMAT);
