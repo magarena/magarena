@@ -1,0 +1,9 @@
+name=Tectonic Instability
+image=http://magiccards.info/scans/en/in/173.jpg
+value=2.500
+rarity=R
+type=Enchantment
+cost={2}{R}
+timing=enchantment
+requires_groovy_code
+oracle=Whenever a land enters the battlefield, tap all lands its controller controls.
