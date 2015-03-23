@@ -4,8 +4,8 @@
         MagicTargetFilterFactory.CREATURE
     ) {
         @Override
-        public void modAbilityFlags(final MagicPermanent source, final MagicPermanent permanent, final Set<MagicAbility> flags) {
-            permanent.addAbility(MagicAbility.ProtectionFromBlack, flags);
+        public void modAbilityFlags(final MagicPermanent source, final MagicPermanent target, final Set<MagicAbility> flags) {
+            target.addAbility(MagicAbility.ProtectionFromBlack, flags);
         }
         @Override
         public boolean condition(final MagicGame game, final MagicPermanent source, final MagicPermanent target) {
@@ -17,8 +17,8 @@
         MagicTargetFilterFactory.CREATURE
     ) {
         @Override
-        public void modAbilityFlags(final MagicPermanent source, final MagicPermanent permanent, final Set<MagicAbility> flags) {
-            permanent.addAbility(MagicAbility.ProtectionFromBlue, flags);
+        public void modAbilityFlags(final MagicPermanent source, final MagicPermanent target, final Set<MagicAbility> flags) {
+            target.addAbility(MagicAbility.ProtectionFromBlue, flags);
         }
         @Override
         public boolean condition(final MagicGame game, final MagicPermanent source, final MagicPermanent target) {
@@ -30,8 +30,8 @@
         MagicTargetFilterFactory.CREATURE
     ) {
         @Override
-        public void modAbilityFlags(final MagicPermanent source, final MagicPermanent permanent, final Set<MagicAbility> flags) {
-            permanent.addAbility(MagicAbility.ProtectionFromGreen, flags);
+        public void modAbilityFlags(final MagicPermanent source, final MagicPermanent target, final Set<MagicAbility> flags) {
+            target.addAbility(MagicAbility.ProtectionFromGreen, flags);
         }
         @Override
         public boolean condition(final MagicGame game, final MagicPermanent source, final MagicPermanent target) {
@@ -43,8 +43,8 @@
         MagicTargetFilterFactory.CREATURE
     ) {
         @Override
-        public void modAbilityFlags(final MagicPermanent source, final MagicPermanent permanent, final Set<MagicAbility> flags) {
-            permanent.addAbility(MagicAbility.ProtectionFromRed, flags);
+        public void modAbilityFlags(final MagicPermanent source, final MagicPermanent target, final Set<MagicAbility> flags) {
+            target.addAbility(MagicAbility.ProtectionFromRed, flags);
         }
         @Override
         public boolean condition(final MagicGame game, final MagicPermanent source, final MagicPermanent target) {
@@ -56,8 +56,8 @@
         MagicTargetFilterFactory.CREATURE
     ) {
         @Override
-        public void modAbilityFlags(final MagicPermanent source, final MagicPermanent permanent, final Set<MagicAbility> flags) {
-            permanent.addAbility(MagicAbility.ProtectionFromWhite, flags);
+        public void modAbilityFlags(final MagicPermanent source, final MagicPermanent target, final Set<MagicAbility> flags) {
+            target.addAbility(MagicAbility.ProtectionFromWhite, flags);
         }
         @Override
         public boolean condition(final MagicGame game, final MagicPermanent source, final MagicPermanent target) {
