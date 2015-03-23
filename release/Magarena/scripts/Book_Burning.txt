@@ -1,0 +1,9 @@
+name=Book Burning
+image=http://magiccards.info/scans/en/ju/80.jpg
+value=2.500
+rarity=C
+type=Sorcery
+cost={1}{R}
+timing=main
+requires_groovy_code
+oracle=Any player may have Book Burning deal 6 damage to him or her. If no one does, target player puts the top six cards of his or her library into his or her graveyard.
