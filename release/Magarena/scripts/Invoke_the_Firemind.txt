@@ -1,0 +1,9 @@
+name=Invoke the Firemind
+image=http://magiccards.info/scans/en/ddj/31.jpg
+value=2.500
+rarity=R
+type=Sorcery
+cost={X}{U}{U}{R}
+timing=main
+requires_groovy_code
+oracle=Choose one — • Draw X cards. • Invoke the Firemind deals X damage to target creature or player.
