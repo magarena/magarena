@@ -2107,6 +2107,12 @@ public class MagicTargetFilterFactory {
         3
     );
     
+    public static final MagicPermanentFilterImpl CREATURE_POWER_2_OR_MORE = new MagicPTTargetFilter(
+        MagicTargetFilterFactory.CREATURE,
+        Operator.GREATER_THAN_OR_EQUAL,
+        2
+    );
+    
     public static final MagicPermanentFilterImpl CREATURE_POWER_3_OR_MORE = new MagicPTTargetFilter(
         MagicTargetFilterFactory.CREATURE,
         Operator.GREATER_THAN_OR_EQUAL,
@@ -2330,6 +2336,7 @@ public class MagicTargetFilterFactory {
         single.put("creature with power 1 or less", CREATURE_POWER_1_OR_LESS);
         single.put("creature with power 2 or less", CREATURE_POWER_2_OR_LESS);
         single.put("creature with power 3 or less", CREATURE_POWER_3_OR_LESS);
+        single.put("creature with power 2 or greater", CREATURE_POWER_2_OR_MORE);
         single.put("creature with power 3 or greater", CREATURE_POWER_3_OR_MORE);
         single.put("creature with power 4 or greater", CREATURE_POWER_4_OR_MORE);
         single.put("creature with power 5 or greater", CREATURE_POWER_5_OR_MORE);
