@@ -40,6 +40,7 @@ public enum MagicTriggerType {
     WhenClash,              // MagicPlayer
     Protection,             // MagicPermanent
     CannotBeBlocked,        // MagicPermanent
+    CantBlock,              // MagicPermanent
     ;
 
     public boolean usesStack() {

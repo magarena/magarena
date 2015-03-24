@@ -1041,6 +1041,13 @@ public enum MagicAbility {
             ));
         }
     },
+    CantBlockPermanent("(SN )?can't block " + ARG.WORDRUN + "(\\.)?", 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            card.add(MagicCantBlockTrigger.create(
+                MagicTargetFilterFactory.multiple(ARG.wordrun(arg))
+            ));
+        }
+    },
     LordPumpGain("(?<other>other )?" + ARG.WORDRUN + " get(s)? " + ARG.PT + " and (have|has) " + ARG.ANY + "(\\.)?", 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final String[] pt = ARG.pt(arg).replace("+","").split("/");

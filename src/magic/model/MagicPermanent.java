@@ -956,12 +956,24 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
             !hasAbility(MagicAbility.Horsemanship)) {
             return false;
         }
-        
+       
+        //cannot be blocked by ...
         for (MagicTrigger<?> trigger: attacker.getTriggers()) {
             if (trigger.getType() == MagicTriggerType.CannotBeBlocked) {
                 @SuppressWarnings("unchecked")
                 final MagicTrigger<MagicPermanent> cannotBeBlocked = (MagicTrigger<MagicPermanent>)trigger;
                 if (cannotBeBlocked.accept(attacker, this)) {
+                    return false;
+                }
+            }
+        }
+        
+        //can't block ...
+        for (MagicTrigger<?> trigger: getTriggers()) {
+            if (trigger.getType() == MagicTriggerType.CantBlock) {
+                @SuppressWarnings("unchecked")
+                final MagicTrigger<MagicPermanent> cantBlock = (MagicTrigger<MagicPermanent>)trigger;
+                if (cantBlock.accept(this, attacker)) {
                     return false;
                 }
             }
