@@ -59,6 +59,8 @@ public class CardDefinitions {
     private static final List<MagicCardDefinition> landCards = new ArrayList<>();
     private static final List<MagicCardDefinition> spellCards = new ArrayList<>();
 
+    private static int totalScriptFiles = 0;
+
 
     // groovy shell for evaluating groovy card scripts with autmatic imports
     private static final GroovyShell shell = new GroovyShell(
@@ -92,24 +94,28 @@ public class CardDefinitions {
     private static void addDefinition(final MagicCardDefinition cardDefinition) {
         assert cardDefinition != null : "CardDefinitions.addDefinition passed null";
         assert cardDefinition.getIndex() == -1 : "cardDefinition has been assigned index";
-            
-        final String key = getASCII(cardDefinition.getFullName());
-        allPlayableCardDefs.put(key, cardDefinition);
-        
-        cardDefinition.setIndex(allPlayableCardDefs.size());
-        
-        if (cardDefinition.isToken()) {
-            TokenCardDefinitions.add(cardDefinition);
-        } else if (cardDefinition.isHidden() == false) {
-            cardDefinition.add(new MagicCardActivation(cardDefinition));
-            
-            defaultPlayableCardDefs.add(cardDefinition);
-            CubeDefinitions.getCubeDefinition("all").add(cardDefinition.getName());
 
-            if (cardDefinition.isLand() == false) {
-                spellCards.add(cardDefinition);
-            } else if (cardDefinition.isBasic() == false) {
-                landCards.add(cardDefinition);
+        final String key = getASCII(cardDefinition.getFullName());
+
+        if (!allPlayableCardDefs.containsKey(key)) {
+
+            allPlayableCardDefs.put(key, cardDefinition);
+
+            cardDefinition.setIndex(allPlayableCardDefs.size());
+
+            if (cardDefinition.isToken()) {
+                TokenCardDefinitions.add(cardDefinition);
+            } else if (cardDefinition.isHidden() == false) {
+                cardDefinition.add(new MagicCardActivation(cardDefinition));
+
+                defaultPlayableCardDefs.add(cardDefinition);
+                CubeDefinitions.getCubeDefinition("all").add(cardDefinition.getName());
+
+                if (cardDefinition.isLand() == false) {
+                    spellCards.add(cardDefinition);
+                } else if (cardDefinition.isBasic() == false) {
+                    landCards.add(cardDefinition);
+                }
             }
         }
     }
@@ -187,9 +193,10 @@ public class CardDefinitions {
 
         reporter.setMessage("Sorting card script files...");
         final File[] scriptFiles = MagicFileSystem.getSortedScriptFiles(SCRIPTS_DIRECTORY);
+        totalScriptFiles = scriptFiles.length;
 
         reporter.setMessage("Loading cards...0%");
-        final double totalFiles = (double)scriptFiles.length;
+        final double totalFiles = (double)totalScriptFiles;
         int fileCount = 0;
         for (final File file : scriptFiles) {
             loadCardDefinition(file);
@@ -289,6 +296,9 @@ public class CardDefinitions {
     }
 
     public static List<MagicCardDefinition> getSpellCards() {
+        if (spellCards.isEmpty()) {
+            MagicSystem.initializeEngine(new ProgressReporter());
+        }
         return spellCards;
     }
 
@@ -468,6 +478,12 @@ public class CardDefinitions {
             }
         } catch (FileNotFoundException ex) {
             System.err.println("Failed to save " + LOG_FILE + " - " + ex);
+        }
+    }
+
+    public static void doLoadRemainingScripts() {
+        if (totalScriptFiles == 0) {
+            MagicSystem.initializeEngine(new ProgressReporter());
         }
     }
 }

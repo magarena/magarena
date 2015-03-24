@@ -4,6 +4,7 @@ import java.awt.Dimension;
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 import javax.swing.JPanel;
+import magic.data.CardDefinitions;
 import magic.data.GeneralConfig;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
@@ -27,6 +28,9 @@ public class DeckEditorPanel extends JPanel {
     private final DeckEditorTabbedPanel tabbedPanel; // RHS
 
     public DeckEditorPanel(final MagicDeck deck) {
+        
+        CardDefinitions.doLoadRemainingScripts();
+
         // lhs
         sideBarPanel = new DeckEditorSideBarPanel();
         // rhs

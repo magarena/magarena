@@ -76,10 +76,6 @@ final public class MagicSystem {
     }
 
     public static void initializeEngine(final ProgressReporter reporter) {
-        // setup the game log
-        reporter.setMessage("Initializing log...");
-        MagicGameLog.initialize();
-
         if (Boolean.getBoolean("parseMissing")) {
             UnimplementedParser.parseScriptsMissing(reporter);
             reporter.setMessage("Parsing card abilities...");
@@ -90,15 +86,10 @@ final public class MagicSystem {
             reporter.setMessage("Loading card abilities...");
             CardDefinitions.loadCardAbilities();
         }
-        reporter.setMessage("Loading cube definitions...");
-        CubeDefinitions.loadCubeDefinitions();
-        reporter.setMessage("Loading keyword definitions...");
-        KeywordDefinitions.getInstance().loadKeywordDefinitions();
-        reporter.setMessage("Loading deck generators...");
-        DeckGenerators.getInstance().loadDeckGenerators();
     }
 
     public static void initialize(final ProgressReporter reporter) {
+
         // must load config here otherwise annotated card image theme-specifc
         // icons are not loaded before the AbilityIcon class is initialized
         // and you end up with the default icons instead.
@@ -115,6 +106,26 @@ final public class MagicSystem {
         }
 
         DeckUtils.createDeckFolder();
-        initializeEngine(reporter);
+
+        // setup the game log
+        reporter.setMessage("Initializing log...");
+        MagicGameLog.initialize();
+        
+        // if parse scripts missing or pre-load abilities then load everything.
+        if (Boolean.getBoolean("parseMissing") || Boolean.getBoolean("debug") || MagicSystem.isAiVersusAi()) {
+            initializeEngine(reporter);
+        }
+
+        if (!MagicSystem.isTestGame()) {
+            reporter.setMessage("Loading cube definitions...");
+            CubeDefinitions.loadCubeDefinitions();
+            reporter.setMessage("Loading deck generators...");
+            DeckGenerators.getInstance().loadDeckGenerators();
+        }
+
+        reporter.setMessage("Loading keyword definitions...");
+        KeywordDefinitions.getInstance().loadKeywordDefinitions();
+        
     }
+    
 }

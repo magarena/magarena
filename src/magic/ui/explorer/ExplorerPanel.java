@@ -35,6 +35,7 @@ import java.text.DecimalFormat;
 import java.text.NumberFormat;
 import java.util.List;
 import javax.swing.SwingUtilities;
+import magic.data.CardDefinitions;
 import magic.ui.GraphicsUtilities;
 import magic.ui.ScreenController;
 import magic.ui.cardtable.CardTable;
@@ -71,6 +72,8 @@ public class ExplorerPanel extends ExplorerDeckEditorPanel implements ICardSelec
     }
 
     private void setupExplorerPanel(final MagicDeck deck0) {
+
+        CardDefinitions.doLoadRemainingScripts();
 
         this.deck = new MagicDeck();
         this.originalDeck = deck0;
