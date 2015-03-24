@@ -1,9 +1,0 @@
-name=Grip of Amnesia
-image=http://magiccards.info/scans/en/ju/41.jpg
-value=2.500
-rarity=C
-type=Instant
-cost={1}{U}
-effect=Counter target spell unless its controller exiles all cards from his or her graveyard.~Draw a card.
-timing=removal
-oracle=Counter target spell unless its controller exiles all cards from his or her graveyard. Draw a card.

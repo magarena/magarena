@@ -1,9 +1,0 @@
-name=Browbeat
-image=http://magiccards.info/scans/en/ddk/66.jpg
-value=2.500
-rarity=U
-type=Sorcery
-cost={2}{R}
-effect=Any player may have SN deal 5 damage to him or her. If no one does, target player draws three cards.
-timing=main
-oracle=Any player may have Browbeat deal 5 damage to him or her. If no one does, target player draws three cards.
