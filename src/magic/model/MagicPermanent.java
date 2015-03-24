@@ -87,14 +87,21 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
         firstController = aController;
 
         counters = new EnumMap<MagicCounterType, Integer>(MagicCounterType.class);
-        equipmentPermanents=new MagicPermanentSet();
-        auraPermanents=new MagicPermanentSet();
-        blockingCreatures=new MagicPermanentList();
+        equipmentPermanents = new MagicPermanentSet();
+        auraPermanents = new MagicPermanentSet();
+        blockingCreatures = new MagicPermanentList();
         exiledCards = new MagicCardList();
+        
+        cachedController = firstController;
+        cachedTypeFlags = getCardDefinition().getTypeFlags();
+        cachedSubTypeFlags = getCardDefinition().genSubTypeFlags();
+        cachedColorFlags = getCardDefinition().getColorFlags();
+        cachedAbilityFlags = getCardDefinition().genAbilityFlags();
+        cachedPowerToughness = getCardDefinition().genPowerToughness();
         cachedActivations = new LinkedList<MagicActivation<MagicPermanent>>();
         cachedManaActivations = new LinkedList<MagicManaActivation>();
-        cachedTriggers    = new LinkedList<MagicTrigger<?>>();
-        etbTriggers       = new LinkedList<MagicWhenComesIntoPlayTrigger>();
+        cachedTriggers = new LinkedList<MagicTrigger<?>>();
+        etbTriggers = new LinkedList<MagicWhenComesIntoPlayTrigger>();
     }
 
     private MagicPermanent(final MagicCopyMap copyMap, final MagicPermanent sourcePermanent) {
