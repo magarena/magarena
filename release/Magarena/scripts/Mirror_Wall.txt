@@ -6,7 +6,7 @@ type=Creature
 subtype=Wall
 cost={3}{U}
 pt=3/4
-ability=Defender;\
-{W}: SN loses defender until end of turn.
+ability=Defender
 timing=main
+requires_groovy_code
 oracle=Defender. {W}: Mirror Wall can attack this turn as though it didn't have defender.
