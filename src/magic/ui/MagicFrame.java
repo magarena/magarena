@@ -1,5 +1,7 @@
 package magic.ui;
 
+import magic.utility.MagicSystem;
+
 import java.awt.Dimension;
 import java.awt.Frame;
 import java.awt.Toolkit;
@@ -98,7 +100,7 @@ public class MagicFrame extends JFrame implements IImageDragDropListener {
     public void showDuel() throws InvalidDeckException {
         if (duel!=null) {
             ScreenController.showDuelDecksScreen(duel);
-            if (Boolean.getBoolean("selfMode")) {
+            if (MagicSystem.isAiVersusAi()) {
                 if (!duel.isFinished()) {
                     nextGame();
                 } else {

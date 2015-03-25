@@ -1,5 +1,7 @@
 package magic.model;
 
+import magic.utility.MagicSystem;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -16,7 +18,7 @@ public class MagicLogBook extends ArrayList<MagicMessage> {
         notifyMessageLogged(msg);
         final String player = msg.getPlayer().getIndex() == 0 ? "P" : "C";
         MagicGameLog.log("LOG (" + player + "): " + msg.getText());
-        if (Boolean.getBoolean("debug")) {
+        if (MagicSystem.isDebugMode()) {
             System.err.println("LOG: " + msg.getText());
         }
         return super.add(msg);

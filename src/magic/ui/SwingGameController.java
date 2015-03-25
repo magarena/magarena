@@ -74,7 +74,7 @@ public class SwingGameController implements IUIGameController, ILogBookListener 
 
     private final DuelPanel gamePanel;
     private final MagicGame game;
-    private final boolean selfMode = Boolean.getBoolean("selfMode");
+    private final boolean selfMode = MagicSystem.isAiVersusAi();
     private final AtomicBoolean running = new AtomicBoolean(false);
     private final AtomicBoolean isPaused =  new AtomicBoolean(false);
     private final AtomicBoolean gameConceded = new AtomicBoolean(false);

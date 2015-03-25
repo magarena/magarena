@@ -17,8 +17,7 @@ import magic.ui.duel.DuelPanel;
 import magic.ui.screen.interfaces.IOptionsMenu;
 import magic.ui.screen.widget.MenuPanel;
 import magic.ui.widget.ZoneBackgroundLabel;
-
-
+import magic.utility.MagicSystem;
 
 @SuppressWarnings("serial")
 public class DuelGameScreen extends AbstractScreen implements IOptionsMenu {
@@ -42,7 +41,7 @@ public class DuelGameScreen extends AbstractScreen implements IOptionsMenu {
             protected void done() {
                 try {
                     setContent(getScreenContent(get()));
-                    if (!config.showMulliganScreen() || Boolean.getBoolean("selfMode")) {
+                    if (!config.showMulliganScreen() || MagicSystem.isAiVersusAi()) {
                         gamePane.setVisible(true);
                         quickFixSpaceKeyShortcut();
                     }

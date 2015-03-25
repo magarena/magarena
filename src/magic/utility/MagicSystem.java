@@ -76,13 +76,13 @@ final public class MagicSystem {
     }
 
     public static void initializeEngine(final ProgressReporter reporter) {
-        if (Boolean.getBoolean("parseMissing")) {
+        if (isParseMissing()) {
             UnimplementedParser.parseScriptsMissing(reporter);
             reporter.setMessage("Parsing card abilities...");
             UnimplementedParser.parseCardAbilities();
         }
         CardDefinitions.loadCardDefinitions(reporter);
-        if (Boolean.getBoolean("debug")) {
+        if (isDebugMode()) {
             reporter.setMessage("Loading card abilities...");
             CardDefinitions.loadCardAbilities();
         }
@@ -112,20 +112,15 @@ final public class MagicSystem {
         MagicGameLog.initialize();
         
         // if parse scripts missing or pre-load abilities then load everything.
-        if (Boolean.getBoolean("parseMissing") || Boolean.getBoolean("debug") || MagicSystem.isAiVersusAi()) {
+        if (isParseMissing() || isDebugMode()) {
             initializeEngine(reporter);
         }
 
-        if (!MagicSystem.isTestGame()) {
-            reporter.setMessage("Loading cube definitions...");
-            CubeDefinitions.loadCubeDefinitions();
-            reporter.setMessage("Loading deck generators...");
-            DeckGenerators.getInstance().loadDeckGenerators();
-        }
-
+        reporter.setMessage("Loading cube definitions...");
+        CubeDefinitions.loadCubeDefinitions();
+        reporter.setMessage("Loading deck generators...");
+        DeckGenerators.getInstance().loadDeckGenerators();
         reporter.setMessage("Loading keyword definitions...");
         KeywordDefinitions.getInstance().loadKeywordDefinitions();
-        
     }
-    
 }
