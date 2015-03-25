@@ -22,26 +22,27 @@ public class DeckGenerators {
 
     private static final String FILENAME = "deckgenerators.txt";
 
+    private final Map<String, Class<? extends RandomDeckGenerator>> generatorsClass;
     private final Map<String, RandomDeckGenerator> generatorsMap;
 
     private DeckGenerators() {
+        generatorsClass = new TreeMap<String, Class<? extends RandomDeckGenerator>>();
         generatorsMap = new TreeMap<String, RandomDeckGenerator>();
     }
 
     public Set<String> getGeneratorNames() {
-        return generatorsMap.keySet();
+        return generatorsClass.keySet();
     }
 
     private void addDeckGenerator(final String name) {
         // find class
         final String cname = name.replaceAll("[^A-Za-z0-9]", "_");
         try {
-            generatorsMap.put(
-                    name,
-                    Class.forName("magic.generator." + cname + "_DeckGenerator")
-                    .asSubclass(RandomDeckGenerator.class)
-                    .newInstance()
-                    );
+            generatorsClass.put(
+                name,
+                Class.forName("magic.generator." + cname + "_DeckGenerator")
+                .asSubclass(RandomDeckGenerator.class)
+            );
             if (MagicSystem.showStartupStats()) {
                 System.err.println("added deck generator " + name);
             }
@@ -50,14 +51,19 @@ public class DeckGenerators {
             System.err.println("WARNING. Unable to find deck generator class for " + name);
         } catch (final ClassCastException ex) {
             throw new RuntimeException(ex);
-        } catch (final InstantiationException ex) {
-            throw new RuntimeException(ex);
-        } catch (final IllegalAccessException ex) {
-            throw new RuntimeException(ex);
         }
     }
 
     public RandomDeckGenerator getDeckGenerator(final String name) {
+        if (generatorsClass.containsKey(name) && generatorsMap.containsKey(name) == false) {
+            try {
+                generatorsMap.put(name, generatorsClass.get(name).newInstance());
+            } catch (final InstantiationException ex) {
+                throw new RuntimeException(ex);
+            } catch (final IllegalAccessException ex) {
+                throw new RuntimeException(ex);
+            }
+        }
         return generatorsMap.get(name);
     }
 
@@ -93,7 +99,7 @@ public class DeckGenerators {
     }
 
     public int getNrGenerators() {
-        return generatorsMap.size();
+        return generatorsClass.size();
     }
 
     public static DeckGenerators getInstance() {
