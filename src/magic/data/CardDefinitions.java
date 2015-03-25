@@ -21,6 +21,8 @@ import java.util.Scanner;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
+import java.util.concurrent.ConcurrentMap;
+import java.util.concurrent.ConcurrentHashMap;
 import magic.utility.ProgressReporter;
 import magic.utility.MagicSystem;
 import magic.model.MagicCardDefinition;
@@ -48,7 +50,7 @@ public class CardDefinitions {
     // of that card that can be played.
 
     // Contains reference to all playable MagicCardDefinitions indexed by card name.
-    private static final Map<String, MagicCardDefinition> allPlayableCardDefs = new HashMap<>();
+    private static final ConcurrentMap<String, MagicCardDefinition> allPlayableCardDefs = new ConcurrentHashMap<>();
 
     // Only contains reference to the main MagicCardDefinition aspect of a card. This is
     // required for functions like the Deck Editor where you should not be able to select
@@ -95,25 +97,27 @@ public class CardDefinitions {
 
         final String key = getASCII(cardDefinition.getFullName());
 
-        if (!allPlayableCardDefs.containsKey(key)) {
+        final MagicCardDefinition prev = allPlayableCardDefs.putIfAbsent(key, cardDefinition);
+        if (prev != null) {
+            // card definition already added, early exit
+            return;
+        }
 
-            allPlayableCardDefs.put(key, cardDefinition);
+        //TODO size is no longer unique to do multiple threads calling addDefinition
+        cardDefinition.setIndex(allPlayableCardDefs.size());
 
-            cardDefinition.setIndex(allPlayableCardDefs.size());
+        if (cardDefinition.isToken()) {
+            TokenCardDefinitions.add(cardDefinition);
+        } else if (cardDefinition.isHidden() == false) {
+            cardDefinition.add(new MagicCardActivation(cardDefinition));
 
-            if (cardDefinition.isToken()) {
-                TokenCardDefinitions.add(cardDefinition);
-            } else if (cardDefinition.isHidden() == false) {
-                cardDefinition.add(new MagicCardActivation(cardDefinition));
+            defaultPlayableCardDefs.add(cardDefinition);
+            CubeDefinitions.getCubeDefinition("all").add(cardDefinition.getName());
 
-                defaultPlayableCardDefs.add(cardDefinition);
-                CubeDefinitions.getCubeDefinition("all").add(cardDefinition.getName());
-
-                if (cardDefinition.isLand() == false) {
-                    spellCards.add(cardDefinition);
-                } else if (cardDefinition.isBasic() == false) {
-                    landCards.add(cardDefinition);
-                }
+            if (cardDefinition.isLand() == false) {
+                spellCards.add(cardDefinition);
+            } else if (cardDefinition.isBasic() == false) {
+                landCards.add(cardDefinition);
             }
         }
     }
