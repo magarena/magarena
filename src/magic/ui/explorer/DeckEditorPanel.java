@@ -30,7 +30,7 @@ public class DeckEditorPanel extends JPanel {
 
     public DeckEditorPanel(final MagicDeck deck) {
         
-        MagicSystem.initializeEngine();
+        MagicSystem.waitForAllCards();
 
         // lhs
         sideBarPanel = new DeckEditorSideBarPanel();

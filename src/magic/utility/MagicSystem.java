@@ -10,6 +10,9 @@ import magic.data.GeneralConfig;
 import magic.model.MagicGameLog;
 import magic.utility.MagicFileSystem.DataPath;
 
+import java.util.concurrent.Executors;
+import java.util.concurrent.FutureTask;
+import java.util.concurrent.ExecutionException;
 import java.lang.management.ManagementFactory;
 import java.lang.management.RuntimeMXBean;
 import java.util.List;
@@ -19,7 +22,12 @@ final public class MagicSystem {
     private MagicSystem() {}
 
     public static final boolean IS_WINDOWS_OS = System.getProperty("os.name").toLowerCase().startsWith("windows");
-    private static boolean cardsLoaded = false;
+    private static final ProgressReporter reporter = new ProgressReporter();
+    private static final FutureTask<Void> loadCards = new FutureTask<>(new Runnable() {
+         public void run() {
+              initializeEngine(reporter);
+         }
+    }, null);
 
     public static boolean isTestGame() {
         return (System.getProperty("testGame") != null);
@@ -75,21 +83,29 @@ final public class MagicSystem {
         }
         return params;
     }
-    
-    public static synchronized void initializeEngine() {
-        if (cardsLoaded) {
-            return;
-        }
 
-        cardsLoaded = true;
-        initializeEngine(new ProgressReporter());
+    public static String getLoadingProgress() {
+        return reporter.getMessage();
     }
 
+    public static void waitForAllCards() {
+        if (loadCards.isDone()) {
+            return;
+        } else {
+            try {
+                loadCards.get();
+            } catch (final InterruptedException|ExecutionException ex) {
+                throw new RuntimeException(ex);
+            }
+        }
+    }
+    
     private static void initializeEngine(final ProgressReporter reporter) {
         if (isParseMissing()) {
             UnimplementedParser.parseScriptsMissing(reporter);
             reporter.setMessage("Parsing card abilities...");
             UnimplementedParser.parseCardAbilities();
+
         }
         CardDefinitions.loadCardDefinitions(reporter);
         if (isDebugMode()) {
@@ -120,10 +136,13 @@ final public class MagicSystem {
         // setup the game log
         reporter.setMessage("Initializing log...");
         MagicGameLog.initialize();
-        
-        // if parse scripts missing or pre-load abilities then load everything.
+       
+        // start a separate thread to load cards
+        Executors.newSingleThreadExecutor().execute(loadCards);
+
+        // if parse scripts missing or pre-load abilities then load cards synchronously
         if (isParseMissing() || isDebugMode()) {
-            initializeEngine(reporter);
+            waitForAllCards();
         }
 
         reporter.setMessage("Loading cube definitions...");

@@ -209,7 +209,13 @@ public class CardDefinitions {
         }
         reporter.setMessage("Loading cards...100%");
         printStatistics();
-        updateNewCardsLog(loadCardsSnapshotFile());
+       
+        /*
+        updateNewCardsLog calls getPlayableNonTokenCardNames which causes a deadlock,
+        commenting it out for now
+        
+        updateNewCardsLog(CardDefinitions.loadCardsSnapshotFile());
+        */
     }
     
     private static boolean isZero(double value, double delta){
@@ -271,7 +277,7 @@ public class CardDefinitions {
      * Returns a list of all playable MagicCardDefinitions EXCEPT those classed as hidden.
      */
     public static List<MagicCardDefinition> getDefaultPlayableCardDefs() {
-        MagicSystem.initializeEngine();
+        MagicSystem.waitForAllCards();
         return defaultPlayableCardDefs;
     }
 
@@ -279,7 +285,7 @@ public class CardDefinitions {
      * Returns a list all playable MagicCardDefinitions INCLUDING those classed as hidden.
      */
     public static Collection<MagicCardDefinition> getAllPlayableCardDefs() {
-        MagicSystem.initializeEngine();
+        MagicSystem.waitForAllCards();
         return allPlayableCardDefs.values();
     }
 
@@ -291,12 +297,12 @@ public class CardDefinitions {
     }
 
     public static List<MagicCardDefinition> getLandCards() {
-        MagicSystem.initializeEngine();
+        MagicSystem.waitForAllCards();
         return landCards;
     }
 
     public static List<MagicCardDefinition> getSpellCards() {
-        MagicSystem.initializeEngine();
+        MagicSystem.waitForAllCards();
         return spellCards;
     }
 

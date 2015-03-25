@@ -74,7 +74,7 @@ public class ExplorerPanel extends ExplorerDeckEditorPanel implements ICardSelec
 
     private void setupExplorerPanel(final MagicDeck deck0) {
 
-        MagicSystem.initializeEngine();
+        MagicSystem.waitForAllCards();
 
         this.deck = new MagicDeck();
         this.originalDeck = deck0;
