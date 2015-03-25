@@ -19,6 +19,7 @@ final public class MagicSystem {
     private MagicSystem() {}
 
     public static final boolean IS_WINDOWS_OS = System.getProperty("os.name").toLowerCase().startsWith("windows");
+    private static boolean cardsLoaded = false;
 
     public static boolean isTestGame() {
         return (System.getProperty("testGame") != null);
@@ -74,8 +75,17 @@ final public class MagicSystem {
         }
         return params;
     }
+    
+    public static synchronized void initializeEngine() {
+        if (cardsLoaded) {
+            return;
+        }
 
-    public static void initializeEngine(final ProgressReporter reporter) {
+        cardsLoaded = true;
+        initializeEngine(new ProgressReporter());
+    }
+
+    private static void initializeEngine(final ProgressReporter reporter) {
         if (isParseMissing()) {
             UnimplementedParser.parseScriptsMissing(reporter);
             reporter.setMessage("Parsing card abilities...");

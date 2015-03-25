@@ -59,8 +59,6 @@ public class CardDefinitions {
     private static final List<MagicCardDefinition> landCards = new ArrayList<>();
     private static final List<MagicCardDefinition> spellCards = new ArrayList<>();
 
-    private static int totalScriptFiles = 0;
-
 
     // groovy shell for evaluating groovy card scripts with autmatic imports
     private static final GroovyShell shell = new GroovyShell(
@@ -193,10 +191,9 @@ public class CardDefinitions {
 
         reporter.setMessage("Sorting card script files...");
         final File[] scriptFiles = MagicFileSystem.getSortedScriptFiles(SCRIPTS_DIRECTORY);
-        totalScriptFiles = scriptFiles.length;
 
         reporter.setMessage("Loading cards...0%");
-        final double totalFiles = (double)totalScriptFiles;
+        final double totalFiles = (double)scriptFiles.length;
         int fileCount = 0;
         for (final File file : scriptFiles) {
             loadCardDefinition(file);
@@ -274,6 +271,7 @@ public class CardDefinitions {
      * Returns a list of all playable MagicCardDefinitions EXCEPT those classed as hidden.
      */
     public static List<MagicCardDefinition> getDefaultPlayableCardDefs() {
+        MagicSystem.initializeEngine();
         return defaultPlayableCardDefs;
     }
 
@@ -281,6 +279,7 @@ public class CardDefinitions {
      * Returns a list all playable MagicCardDefinitions INCLUDING those classed as hidden.
      */
     public static Collection<MagicCardDefinition> getAllPlayableCardDefs() {
+        MagicSystem.initializeEngine();
         return allPlayableCardDefs.values();
     }
 
@@ -292,13 +291,12 @@ public class CardDefinitions {
     }
 
     public static List<MagicCardDefinition> getLandCards() {
+        MagicSystem.initializeEngine();
         return landCards;
     }
 
     public static List<MagicCardDefinition> getSpellCards() {
-        if (spellCards.isEmpty()) {
-            MagicSystem.initializeEngine(new ProgressReporter());
-        }
+        MagicSystem.initializeEngine();
         return spellCards;
     }
 
@@ -478,12 +476,6 @@ public class CardDefinitions {
             }
         } catch (FileNotFoundException ex) {
             System.err.println("Failed to save " + LOG_FILE + " - " + ex);
-        }
-    }
-
-    public static void doLoadRemainingScripts() {
-        if (totalScriptFiles == 0) {
-            MagicSystem.initializeEngine(new ProgressReporter());
         }
     }
 }

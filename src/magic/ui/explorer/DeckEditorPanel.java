@@ -4,13 +4,14 @@ import java.awt.Dimension;
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 import javax.swing.JPanel;
-import magic.data.CardDefinitions;
 import magic.data.GeneralConfig;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
 import magic.model.MagicDeckConstructionRule;
 import magic.ui.GraphicsUtilities;
 import magic.ui.ScreenController;
+import magic.utility.MagicSystem;
+
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
@@ -29,7 +30,7 @@ public class DeckEditorPanel extends JPanel {
 
     public DeckEditorPanel(final MagicDeck deck) {
         
-        CardDefinitions.doLoadRemainingScripts();
+        MagicSystem.initializeEngine();
 
         // lhs
         sideBarPanel = new DeckEditorSideBarPanel();
