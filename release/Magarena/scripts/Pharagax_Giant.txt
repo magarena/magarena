@@ -6,7 +6,6 @@ type=Creature
 subtype=Giant
 cost={4}{R}
 pt=3/3
-ability=Tribute 2;\
-        When SN enters the battlefield, if tribute wasn't paid, SN deals 5 damage to each opponent.
+ability=Tribute 2 effect SN deals 5 damage to each opponent.
 timing=main
 oracle=Tribute 2. When Pharagax Giant enters the battlefield, if tribute wasn't paid, Pharagax Giant deals 5 damage to each opponent.
