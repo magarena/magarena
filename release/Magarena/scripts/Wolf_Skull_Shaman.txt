@@ -1,0 +1,11 @@
+name=Wolf-Skull Shaman
+image=http://magiccards.info/scans/en/mt/140.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Elf,Shaman
+cost={1}{G}
+pt=2/2
+timing=main
+requires_groovy_code
+oracle=Kinship — At the beginning of your upkeep, you may look at the top card of your library. If it shares a creature type with Wolf-Skull Shaman, you may reveal it. If you do, put a 2/2 green Wolf creature token onto the battlefield.
