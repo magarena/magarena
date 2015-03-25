@@ -13,6 +13,10 @@ import magic.data.MagicIcon;
 
 public abstract class AbstractTheme implements Theme {
 
+    // Prevents horizontal scroll-bar appearing in the user action panel
+    // for custom themes with a VALUE_SPACING less than 5.
+    private static final int MIN_VALUE_SPACING = 5;
+
     private final String name;
     private final Map<String,Object> themeMap;
 
@@ -53,7 +57,7 @@ public abstract class AbstractTheme implements Theme {
         addToTheme(COLOR_VIEWER_BACKGROUND,Color.WHITE);
         addToTheme(COLOR_SEPARATOR_BACKGROUND,Color.LIGHT_GRAY);
 
-        addToTheme(VALUE_SPACING,0);
+        addToTheme(VALUE_SPACING, MIN_VALUE_SPACING);
         addToTheme(VALUE_BACKGROUND_STRETCH,0);
         addToTheme(VALUE_GAME_LAYOUT,1);
         addToTheme(VALUE_GAME_STRETCH,0);
@@ -62,7 +66,11 @@ public abstract class AbstractTheme implements Theme {
     }
 
     final void addToTheme(final String aName, final Object value) {
-        themeMap.put(aName,value);
+        if (VALUE_SPACING.equals(aName) && (int) value < MIN_VALUE_SPACING) {
+            themeMap.put(aName, MIN_VALUE_SPACING);
+        } else {
+            themeMap.put(aName,value);
+        }
     }
 
     @Override
