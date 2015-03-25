@@ -1,0 +1,11 @@
+name=Squeaking Pie Grubfellows
+image=http://magiccards.info/scans/en/mt/78.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Goblin,Shaman
+cost={3}{B}
+pt=3/2
+timing=main
+requires_groovy_code
+oracle=Kinship — At the beginning of your upkeep, you may look at the top card of your library. If it shares a creature type with Squeaking Pie Grubfellows, you may reveal it. If you do, each opponent discards a card.
