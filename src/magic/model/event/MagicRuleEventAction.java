@@ -1321,8 +1321,8 @@ public enum MagicRuleEventAction {
             };
         }
     },
-    GainSelfCant(
-        "sn (?<ability>can't .+) this turn\\."
+    GainSelfCan(
+        "sn (?<ability>can('t)? .+) this turn\\."
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
@@ -1557,8 +1557,8 @@ public enum MagicRuleEventAction {
         }
 
     },
-    GainGroupCant(
-        "(?<group>[^\\.]*) (?<ability>can't .+) this turn\\."
+    GainGroupCan(
+        "(?<group>[^\\.]*) (?<ability>can('t)? .+) this turn\\."
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {

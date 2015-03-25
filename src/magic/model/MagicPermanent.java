@@ -878,7 +878,7 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
             hasAbility(MagicAbility.CannotAttackOrBlock) ||
             hasState(MagicPermanentState.ExcludeFromCombat) ||
             hasState(MagicPermanentState.CannotAttack) ||
-            (hasAbility(MagicAbility.Defender) && !hasState(MagicPermanentState.CanAttackWithDefender))) {
+            (hasAbility(MagicAbility.Defender) && !hasAbility(MagicAbility.CanAttackWithDefender))) {
             return false;
         }
         return isCreature() && canTap();

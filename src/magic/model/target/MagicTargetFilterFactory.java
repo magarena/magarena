@@ -2265,6 +2265,7 @@ public class MagicTargetFilterFactory {
         single.put("werewolf or wolf creature you control", WEREWOLF_OR_WOLF_CREATURE_YOU_CONTROL);
         single.put("Eldrazi Spawn creature you control", ELDRAZI_SPAWN_CREATURE_YOU_CONTROL);
         single.put("face-down creature you control", FACE_DOWN_CREATURE_YOU_CONTROL);
+        single.put("creature you control with defender", CREATURE_WITH_DEFENDER_YOU_CONTROL);
         single.put("creature with defender you control", CREATURE_WITH_DEFENDER_YOU_CONTROL);
         single.put("face-up nontoken creature you control", FACEUP_NONTOKEN_CREATURE_YOU_CONTROL);
         
