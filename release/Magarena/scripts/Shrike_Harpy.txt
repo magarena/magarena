@@ -7,7 +7,6 @@ subtype=Harpy
 cost={3}{B}{B}
 pt=2/2
 ability=Flying;\
-        Tribute 2;\
-        When SN enters the battlefield, if tribute wasn't paid, target opponent sacrifices a creature.
+        Tribute 2 effect target opponent sacrifices a creature.
 timing=main
 oracle=Flying. Tribute 2. When Shrike Harpy enters the battlefield, if tribute wasn't paid, target opponent sacrifices a creature.
