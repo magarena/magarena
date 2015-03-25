@@ -1,0 +1,12 @@
+name=Nightshade Schemers
+image=http://magiccards.info/scans/en/mt/69.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Faerie,Wizard
+cost={4}{B}
+pt=3/2
+ability=Flying
+timing=main
+requires_groovy_code
+oracle=Flying. Kinship — At the beginning of your upkeep, you may look at the top card of your library. If it shares a creature type with Nightshade Schemers, you may reveal it. If you do, each opponent loses 2 life.
