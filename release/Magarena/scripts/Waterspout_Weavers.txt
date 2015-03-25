@@ -1,0 +1,11 @@
+name=Waterspout Weavers
+image=http://magiccards.info/scans/en/mt/56.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Merfolk,Wizard
+cost={3}{U}{U}
+pt=3/3
+timing=main
+requires_groovy_code
+oracle=Kinship — At the beginning of your upkeep, you may look at the top card of your library. If it shares a creature type with Waterspout Weavers, you may reveal it. If you do, each creature you control gains flying until end of turn.
