@@ -122,6 +122,11 @@ public enum MagicConditionParser {
             return MagicCondition.IS_ENCHANTED;
         }
     },
+    IsEnchantment("(SN is|it's) an enchantment") {
+        public MagicCondition toCondition(final Matcher arg) {
+            return MagicCondition.IS_ENCHANTMENT;
+        }
+    },
     IsUntapped("(SN is|it's) untapped") {
         public MagicCondition toCondition(final Matcher arg) {
             return MagicCondition.UNTAPPED_CONDITION;
