@@ -1,9 +1,0 @@
-name=Fascination
-image=http://magiccards.info/scans/en/frf/34.jpg
-value=2.500
-rarity=U
-type=Sorcery
-cost={X}{U}{U}
-effect=Choose one — • Each player draws X cards. • Each player puts the top X cards of his or her library into his or her graveyard.
-timing=main
-oracle=Choose one — • Each player draws X cards. • Each player puts the top X cards of his or her library into his or her graveyard.

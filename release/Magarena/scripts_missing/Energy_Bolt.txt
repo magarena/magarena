@@ -1,9 +1,0 @@
-name=Energy Bolt
-image=http://magiccards.info/scans/en/mr/323.jpg
-value=2.500
-rarity=R
-type=Sorcery
-cost={X}{R}{W}
-effect=Choose one — • SN deals X damage to target player. • Target player gains X life.
-timing=main
-oracle=Choose one — • Energy Bolt deals X damage to target player. • Target player gains X life.
