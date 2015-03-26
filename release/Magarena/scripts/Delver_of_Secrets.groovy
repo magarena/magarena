@@ -16,7 +16,7 @@ def ACTION = {
             return new MagicEvent(
                 permanent,
                 this,
-                "Look at the top card of PN's library. You may reveal that card. If an instant or sorcery card is revealed this way, transform SN."
+                "PN looks at the top card of his or her library. PN may reveal that card. If an instant or sorcery card is revealed this way, transform SN."
             );
         }
         @Override
