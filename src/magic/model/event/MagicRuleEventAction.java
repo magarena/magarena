@@ -3005,7 +3005,7 @@ public enum MagicRuleEventAction {
     },
     BecomesType(
         "sn becomes a(n)? (?<type>.*)\\.",
-        MagicTiming.Animate,
+        MagicTiming.None,
         "Animate"
     ) {
         @Override
