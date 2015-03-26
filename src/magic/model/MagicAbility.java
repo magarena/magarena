@@ -1238,7 +1238,7 @@ public enum MagicAbility {
             card.add(MagicCardActivation.affinity(cardDef, MagicTargetFilterFactory.multiple(ARG.wordrun(arg))));
         }
     },
-    Kinship("Kinship — At the beginning of your upkeep, you may look at the top card of your library. If it shares a creature type with SN, you may reveal it. If you do, " + ARG.EFFECT, 0) {
+    Kinship("kinship " + ARG.EFFECT, 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final String effect = ARG.effect(arg);
             card.add(MagicAtYourUpkeepTrigger.kinship(effect));
