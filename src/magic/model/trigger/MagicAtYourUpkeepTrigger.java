@@ -35,15 +35,18 @@ public abstract class MagicAtYourUpkeepTrigger extends MagicAtUpkeepTrigger {
     }
     
     public static MagicAtYourUpkeepTrigger kinship(final String effect) {
+        return kinship(effect, MagicRuleEventAction.create(effect).getAction());
+    }
+    
+    public static MagicAtYourUpkeepTrigger kinship(final String effect, final MagicEventAction action) {
         return new MagicAtYourUpkeepTrigger() {
-            final MagicSourceEvent EFFECT = MagicRuleEventAction.create(effect);
             final MagicEventAction ACTION = new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
                     if (event.isYes()) {
                         final MagicCard card = event.getRefCard();
                         game.doAction(new MagicRevealAction(event.getRefCard()));
-                        event.executeAllEvents(game, EFFECT);
+                        action.executeEvent(game, event);
                     }
                 }
             };

@@ -36,4 +36,8 @@ public abstract class MagicSourceEvent {
     public boolean isIndependent() {
         return rule.isIndependent();
     }
+
+    public MagicEventAction getAction() {
+        return rule.getAction(matcher);
+    }
 }
