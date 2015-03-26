@@ -21,6 +21,7 @@ import magic.ui.duel.viewer.StackViewer;
 import magic.ui.duel.viewer.UserActionPanel;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TexturedPanel;
+import magic.utility.MagicSystem;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
@@ -67,13 +68,20 @@ public class DuelSideBarPanel extends JPanel implements IPlayerZoneListener {
     private void createPlayerPanels() {
 
         PlayerZoneButtonsPanel.clearButtonGroup();
+        
+        final PlayerViewerInfo playerInfo = controller.getViewerInfo().getPlayerInfo(false);
 
-        // playerViewer
-        playerCompositePanels[0] = new PlayerCompositePanel(
-                new GamePlayerPanel(controller, controller.getViewerInfo().getPlayerInfo(false)),
-                gameStatusPanel.getUserActionPanel()
-        );
-        // opponentViewer
+        if (playerInfo.isAi || MagicSystem.isAiVersusAi()) {
+            playerCompositePanels[0] = new PlayerCompositePanel(
+                    new GamePlayerPanel(controller, playerInfo)
+            );
+        } else {
+            playerCompositePanels[0] = new PlayerCompositePanel(
+                    new GamePlayerPanel(controller, playerInfo),
+                    gameStatusPanel.getUserActionPanel()
+            );
+        }
+
         playerCompositePanels[1] = new PlayerCompositePanel(
             new GamePlayerPanel(controller, controller.getViewerInfo().getPlayerInfo(true))
         );
