@@ -8,7 +8,6 @@ import magic.model.MagicCard;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSourceEvent;
 import magic.model.event.MagicEventAction;
-import magic.model.event.MagicRuleEventAction;
 import magic.model.action.MagicRevealAction;
 import magic.model.action.MagicLookAction;
 import magic.model.choice.MagicMayChoice;
@@ -32,10 +31,6 @@ public abstract class MagicAtYourUpkeepTrigger extends MagicAtUpkeepTrigger {
                 return sourceEvent.getEvent(permanent);
             }
         };
-    }
-    
-    public static MagicAtYourUpkeepTrigger kinship(final String effect) {
-        return kinship(effect, MagicRuleEventAction.create(effect).getAction());
     }
     
     public static MagicAtYourUpkeepTrigger kinship(final String effect, final MagicEventAction action) {

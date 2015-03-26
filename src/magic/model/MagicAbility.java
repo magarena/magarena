@@ -1241,9 +1241,9 @@ public enum MagicAbility {
     Kinship("kinship " + ARG.EFFECT, 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final String effect = ARG.effect(arg);
-            card.add(MagicAtYourUpkeepTrigger.kinship(effect));
+            card.add(MagicAtYourUpkeepTrigger.kinship(effect, MagicRuleEventAction.create(effect).getAction()));
         }
-    }
+    },
     ;
 
     public static final Set<MagicAbility> PROTECTION_FLAGS = EnumSet.range(ProtectionFromBlack, ProtectionFromEverything);
