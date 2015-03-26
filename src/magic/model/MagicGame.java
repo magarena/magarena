@@ -814,6 +814,9 @@ public class MagicGame {
         return players[1-player.getIndex()];
     }
 
+    /**
+     * Player whose hand is shown by default.
+     */
     public MagicPlayer getVisiblePlayer() {
         return visiblePlayer;
     }
