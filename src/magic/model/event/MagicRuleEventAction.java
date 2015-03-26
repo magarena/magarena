@@ -14,9 +14,12 @@ import magic.model.MagicManaCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicPermanentState;
 import magic.model.MagicPlayer;
+import magic.model.MagicPowerToughness;
 import magic.model.MagicSource;
 import magic.model.MagicCopyable;
 import magic.model.ARG;
+import magic.model.MagicSubType;
+import magic.model.MagicType;
 import magic.model.choice.MagicChoice;
 import magic.model.choice.MagicFromCardFilterChoice;
 import magic.model.choice.MagicMayChoice;
@@ -27,6 +30,7 @@ import magic.model.condition.MagicCondition;
 import magic.model.condition.MagicConditionParser;
 import magic.model.condition.MagicArtificialCondition;
 import magic.model.condition.MagicConditionFactory;
+import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicStatic;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.stack.MagicItemOnStack;
@@ -39,6 +43,7 @@ import magic.model.action.*;
 import magic.model.target.*;
 
 import java.util.Collection;
+import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -2963,6 +2968,63 @@ public enum MagicRuleEventAction {
             return EVENT_ACTION;
         }
     },
+    BecomesCreature(
+            "sn becomes a(n)? (?<pt>[0-9]+/[0-9]+) (?<subtype>.*) creature\\.",
+            MagicTiming.Animate,
+            "Animate"
+        ) {
+            @Override
+            public MagicEventAction getAction(final Matcher matcher) {
+                final String[] pt = matcher.group("pt").split("/");
+                final int power = Integer.parseInt(pt[0]);
+                final int toughness = Integer.parseInt(pt[1]);
+                final String subtype = matcher.group("subtype");
+                final MagicStatic PT = new MagicStatic(MagicLayer.SetPT, MagicStatic.Forever) {
+                    @Override
+                    public void modPowerToughness(final MagicPermanent source, final MagicPermanent permanent, final MagicPowerToughness pt) {
+                        pt.set(power, toughness);
+                    }
+                };
+                final MagicStatic ST = new MagicStatic(MagicLayer.Type, MagicStatic.Forever) {
+                    @Override
+                    public void modSubTypeFlags(final MagicPermanent permanent, final Set<MagicSubType> flags) {
+                        flags.add(MagicSubType.getSubType(subtype));
+                    }
+                    @Override
+                    public int getTypeFlags(final MagicPermanent permanent, final int flags) {
+                        return MagicType.Creature.getMask();
+                    }
+                };
+                return new MagicEventAction() {
+                    @Override
+                    public void executeEvent(final MagicGame game, final MagicEvent event) {
+                        game.doAction(new MagicBecomesCreatureAction(event.getPermanent(),PT,ST));
+                    }
+                };
+            }
+        },
+        BecomesType(
+                "sn becomes a(n)? (?<type>.*)\\.",
+                MagicTiming.Animate,
+                "Animate"
+            ) {
+                @Override
+                public MagicEventAction getAction(final Matcher matcher) {;
+                    final String type = matcher.group("type");
+                    final MagicStatic ST = new MagicStatic(MagicLayer.Type, MagicStatic.Forever) {
+                        @Override
+                        public int getTypeFlags(final MagicPermanent permanent, final int flags) {
+                            return MagicType.getType(type).getMask();
+                        }
+                    };
+                    return new MagicEventAction() {
+                        @Override
+                        public void executeEvent(final MagicGame game, final MagicEvent event) {
+                            game.doAction(new MagicBecomesCreatureAction(event.getPermanent(),ST));
+                        }
+                    };
+                }
+            },
     ;
 
     private final Pattern pattern;
