@@ -101,7 +101,7 @@ public class TurnTitlePanel extends JPanel {
         scoreLabel.setToolTipText(String.format("First player to %d wins the duel.",
                 game.getDuel().getConfiguration().getGamesRequiredToWinDuel())
         );
-        gameLabel.setText(String.format("Game %d, Turn %d : %s",
+        gameLabel.setText(String.format("Game %d  •  Turn %d  •  %s",
                 game.getDuel().getGameNr(),
                 game.getTurn(),
                 game.getTurnPlayer().getName())
