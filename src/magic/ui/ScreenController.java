@@ -4,6 +4,7 @@ import java.util.Stack;
 import javax.swing.JComponent;
 import javax.swing.JOptionPane;
 import magic.data.GeneralConfig;
+import magic.model.IUIGameController;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicCardList;
 import magic.model.MagicDeck;
@@ -12,6 +13,7 @@ import magic.model.MagicGame;
 import magic.model.player.IPlayerProfileListener;
 import magic.model.player.PlayerProfile;
 import magic.ui.dialog.AboutDialog;
+import magic.ui.dialog.DuelSidebarLayoutDialog;
 import magic.ui.dialog.ImportDialog;
 import magic.ui.dialog.PreferencesDialog;
 import magic.ui.duel.choice.MulliganChoicePanel;
@@ -224,6 +226,11 @@ public final class ScreenController {
 
     public static void showWarningMessage(final String message) {
         JOptionPane.showMessageDialog(getMainFrame(), message, "Warning", JOptionPane.WARNING_MESSAGE);
+    }
+
+    public static void showDuelSidebarDialog(final IUIGameController controller) {
+        final DuelSidebarLayoutDialog dialog = new DuelSidebarLayoutDialog(getMainFrame(), controller);
+        dialog.setVisible(true);
     }
 
 }

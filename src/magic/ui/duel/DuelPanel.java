@@ -320,4 +320,8 @@ public final class DuelPanel extends JPanel {
         return dialogPanel;
     }
 
+    public void refreshSidebarLayout() {
+        sidebarPanel.refreshLayout();
+    }
+
 }

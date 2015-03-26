@@ -552,6 +552,9 @@ public class GeneralConfig {
     public String getDuelSidebarLayout() {
         return duelSidebarLayout;
     }
+    public void setDuelSidebarLayout(final String layout) {
+        duelSidebarLayout = layout;
+    }
 
     public Date getImageDownloaderRunDate() {
         try {

@@ -125,6 +125,7 @@ public class DuelSideBarPanel extends JPanel implements IPlayerZoneListener {
     }
 
     private void setLayoutSlots() {
+        layoutSlots.clear();
         for (String s : GeneralConfig.getInstance().getDuelSidebarLayout().split(",")) {
             final ComponentSlot slot = ComponentSlot.valueOf(s.trim());
             layoutSlots.add(getComponentSlot(slot));
@@ -140,6 +141,11 @@ public class DuelSideBarPanel extends JPanel implements IPlayerZoneListener {
             default:
                 throw new AssertionError(slot.name());
         }
+    }
+
+    void refreshLayout() {
+        setLayoutSlots();
+        doSetLayout();
     }
 
     private class LayoutSlot {

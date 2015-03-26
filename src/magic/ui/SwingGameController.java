@@ -950,4 +950,9 @@ public class SwingGameController implements IUIGameController, ILogBookListener 
             listener.setActivePlayerZone(playerInfo, zone);
         }
     }
+
+    @Override
+    public void refreshSidebarLayout() {
+        gamePanel.refreshSidebarLayout();
+    }
 }

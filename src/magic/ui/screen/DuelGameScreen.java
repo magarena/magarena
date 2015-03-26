@@ -28,7 +28,7 @@ public class DuelGameScreen extends AbstractScreen implements IOptionsMenu {
     private DuelLayeredPane gamePane;
 
     public DuelGameScreen(final MagicDuel duel) {
-
+        
         final SwingWorker<MagicGame, Void> worker = new SwingWorker<MagicGame, Void> () {
             @Override
             protected MagicGame doInBackground() throws Exception {
@@ -159,6 +159,13 @@ public class DuelGameScreen extends AbstractScreen implements IOptionsMenu {
                 @Override
                 public void actionPerformed(final ActionEvent e) {
                     ScreenController.showGameLogScreen();
+                }
+            });
+            menu.addMenuItem("Sidebar Layout", new AbstractAction() {
+                @Override
+                public void actionPerformed(final ActionEvent e) {
+                    hideOverlay();
+                    ScreenController.showDuelSidebarDialog(gamePanel.getController());
                 }
             });
             menu.addBlankItem();
