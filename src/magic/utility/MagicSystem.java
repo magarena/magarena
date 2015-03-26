@@ -108,10 +108,6 @@ final public class MagicSystem {
 
         }
         CardDefinitions.loadCardDefinitions(reporter);
-        if (isDebugMode()) {
-            reporter.setMessage("Loading card abilities...");
-            CardDefinitions.loadCardAbilities();
-        }
     }
 
     public static void initialize(final ProgressReporter reporter) {
@@ -143,6 +139,11 @@ final public class MagicSystem {
         // if parse scripts missing or pre-load abilities then load cards synchronously
         if (isParseMissing() || isDebugMode()) {
             waitForAllCards();
+        }
+        
+        if (isDebugMode()) {
+            reporter.setMessage("Loading card abilities...");
+            CardDefinitions.loadCardAbilities();
         }
 
         reporter.setMessage("Loading cube definitions...");
