@@ -814,10 +814,6 @@ public class MagicGame {
         return players[1-player.getIndex()];
     }
 
-    public void setVisiblePlayer(final MagicPlayer aVisiblePlayer) {
-        visiblePlayer = aVisiblePlayer;
-    }
-
     public MagicPlayer getVisiblePlayer() {
         return visiblePlayer;
     }
