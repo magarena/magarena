@@ -1,0 +1,9 @@
+name=Infernal Contract
+image=http://magiccards.info/scans/en/7e/143.jpg
+value=2.500
+rarity=R
+type=Sorcery
+cost={B}{B}{B}
+timing=main
+requires_groovy_code
+oracle=Draw four cards. You lose half your life, rounded up.
