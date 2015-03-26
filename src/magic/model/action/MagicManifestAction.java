@@ -1,14 +1,10 @@
 package magic.model.action;
 
-import magic.ai.ArtificialScoringSystem;
 import magic.model.MagicCard;
 import magic.model.MagicCardList;
 import magic.model.MagicGame;
 import magic.model.MagicLocationType;
 import magic.model.MagicPlayer;
-import magic.model.action.MagicPlayMod;
-
-import java.util.List;
 
 public class MagicManifestAction extends MagicAction {
 

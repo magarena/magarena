@@ -3,15 +3,10 @@ package magic.model.action;
 
 import magic.model.MagicCard;
 import magic.model.MagicGame;
-import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.MagicPayedCost;
 import magic.model.event.MagicPlayCardEvent;
 import magic.model.stack.MagicCardOnStack;
-
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
 
 public class MagicManifestCardAction extends MagicPlayCardAction {
 
