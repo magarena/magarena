@@ -26,14 +26,12 @@
     new MagicWhenSelfTargetedTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicItemOnStack target) {
-            return permanent.isEnemy(target) ?
-                new MagicEvent(
-                    permanent,
-                    target.getController(),
-                    this,
-                    "PN loses 5 life."
-                ):
-                MagicEvent.NONE;
+            new MagicEvent(
+                permanent,
+                target.getController(),
+                this,
+                "PN loses 5 life."
+            );
         }
 
         @Override
