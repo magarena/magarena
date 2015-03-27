@@ -46,6 +46,9 @@ public class SoundEffects {
             clip.start();
         } catch (Exception ex) {
             System.err.println("WARNING. Unable to play clip " + name + ", " + ex.getMessage());
+            // switch off sound for current session but restore on restart.
+            GeneralConfig.getInstance().setIsUiSound(false);
+            GeneralConfig.getInstance().setSound(false);
         }
     }
 
