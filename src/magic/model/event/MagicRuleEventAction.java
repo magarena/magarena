@@ -2969,7 +2969,7 @@ public enum MagicRuleEventAction {
         }
     },
     BecomesCreature(
-        "sn becomes a(n)? (?<pt>[0-9]+/[0-9]+) (?<subtype>.*) creature(with (?<ability>.+))?\\.",
+        "sn becomes a(n)? (?<pt>[0-9]+/[0-9]+) (?<subtype>.*) creature( with (?<ability>.+))?\\.",
         MagicTiming.Animate,
         "Animate"
     ) {
