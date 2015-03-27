@@ -1,0 +1,9 @@
+name=Distortion Strike
+image=http://magiccards.info/scans/en/roe/60.jpg
+value=2.500
+rarity=C
+type=Sorcery
+cost={U}
+timing=main
+requires_groovy_code
+oracle=Target creature gets +1/+0 until end of turn and can't be blocked this turn. Rebound
