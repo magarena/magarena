@@ -15,7 +15,8 @@ def action = {
                 cardOnStack,
                 MagicTargetChoice.POS_TARGET_PLAYER,
                 this,
-                "Your opponent may have SN deal 5 damage to him or her. If he or she doesn't, target player\$ draws three cards."
+                "PN's opponent may have SN deal 5 damage to him or her. " +
+                "If he or she doesn't, target player\$ draws three cards."
             );
         }
         @Override
@@ -24,10 +25,10 @@ def action = {
                 game.addEvent(new MagicEvent(
                     event.getSource(),
                     event.getPlayer().getOpponent(),
-                    new MagicMayChoice("have SN deal 5 damage to you?"),
+                    new MagicMayChoice("Have SN deal 5 damage to you?"),
                     it,
                     action,
-                    "PN may\$ have SN deal 5 damage to you. If you don't, your opponent draws 3 cards."
+                    "PN may\$ have SN deal 5 damage to him or her. If he or she doesn't, RN draws 3 cards."
                 ));
             });
         }
