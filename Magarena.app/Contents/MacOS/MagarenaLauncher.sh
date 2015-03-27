@@ -25,6 +25,9 @@ fi
 
 # get the bundle's MacOS directory full path
 base="${0%/*}"
- 
+
+# explicity set LC_CTYPE to UTF-8 to workaround http://bugs.java.com/bugdatabase/view_bug.do?bug_id=8003228
+export LC_CTYPE=UTF-8
+
 # run app
 cd "$base/../Java" && java -Dapple.laf.useScreenMenuBar=true -Xms256M -Xmx512M -noverify -jar Magarena.exe
