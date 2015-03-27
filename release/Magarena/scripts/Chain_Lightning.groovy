@@ -19,9 +19,10 @@ def action = {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTarget(game, {
+                game.doAction(new MagicDealDamageAction(event.getSource(),it,3));
                 game.addEvent(new MagicEvent(
                     event.getSource(),
-                    event.getPlayer().getOpponent(),
+                    it.getController(),
                     new MagicMayChoice(
                         "Pay {R}{R}?",
                         new MagicPayManaCostChoice(MagicManaCost.create("{R}{R}"))
@@ -30,7 +31,6 @@ def action = {
                     action,
                     "PN may\$ pay {R}{R}\$. If you do, copy this spell and may choose a new target for that copy."
                 ));
-                game.doAction(new MagicDealDamageAction(event.getSource(),it,3));
             });
         }
     }
