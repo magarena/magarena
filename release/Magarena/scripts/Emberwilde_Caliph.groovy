@@ -7,7 +7,7 @@
                     permanent,
                     damage.getDealtAmount(),
                     this,
-                    "Whenever SN deals damage, you lose that much life."
+                    "PN loses RN life."
                 ):
                 MagicEvent.NONE;
         }
