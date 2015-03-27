@@ -4,6 +4,6 @@ value=4.398
 rarity=R
 type=Enchantment
 cost={G}
+ability=When an opponent casts an instant spell, if SN is an enchantment, SN becomes a 4/4 Ape creature.
 timing=main
-requires_groovy_code
 oracle=When an opponent casts an instant spell, if Hidden Gibbons is an enchantment, Hidden Gibbons becomes a 4/4 Ape creature.
