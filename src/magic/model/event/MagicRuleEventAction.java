@@ -2969,7 +2969,7 @@ public enum MagicRuleEventAction {
         }
     },
     BecomesCreature(
-        "sn becomes a(n)? (?<pt>[0-9]+/[0-9]+) (?<subtype>.*) creature\\.",
+        "sn becomes a(n)? (?<pt>[0-9]+/[0-9]+) (?<subtype>.*) creature(with (?<ability>.+))?\\.",
         MagicTiming.Animate,
         "Animate"
     ) {
@@ -2979,6 +2979,7 @@ public enum MagicRuleEventAction {
             final int power = Integer.parseInt(pt[0]);
             final int toughness = Integer.parseInt(pt[1]);
             final String subtype = matcher.group("subtype");
+            final MagicAbilityList abilityList = matcher.group("ability") != null ? MagicAbility.getAbilityList(matcher.group("ability")) : null;
             final MagicStatic PT = new MagicStatic(MagicLayer.SetPT, MagicStatic.Forever) {
                 @Override
                 public void modPowerToughness(final MagicPermanent source, final MagicPermanent permanent, final MagicPowerToughness pt) {
@@ -2998,7 +2999,11 @@ public enum MagicRuleEventAction {
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    game.doAction(new MagicBecomesCreatureAction(event.getPermanent(),PT,ST));
+                    game.doAction(new MagicAddStaticAction(event.getPermanent(), PT));
+                    game.doAction(new MagicAddStaticAction(event.getPermanent(), ST));
+                    if (abilityList != null) {
+                        game.doAction(new MagicGainAbilityAction(event.getPermanent(), abilityList, MagicStatic.Forever));
+                    }
                 }
             };
         }
