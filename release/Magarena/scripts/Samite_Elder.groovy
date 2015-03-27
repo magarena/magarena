@@ -19,11 +19,11 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
+                final Collection<MagicPermanent> creatures = event.getPlayer().filterPermanents(MagicTargetFilterFactory.CREATURE_YOU_CONTROL);
                 for (final MagicColor color : MagicColor.values()) {
-                if (it.hasColor(color)) {
-                    final Collection<MagicPermanent> creatures = event.getPlayer().filterPermanents(MagicTargetFilterFactory.CREATURE);
-                    for (final MagicPermanent creature : creatures) {
-                        game.doAction(new MagicGainAbilityAction(creature,color.getProtectionAbility()));
+                    if (it.hasColor(color)) {
+                        for (final MagicPermanent creature : creatures) {
+                            game.doAction(new MagicGainAbilityAction(creature,color.getProtectionAbility()));
                         }
                     }
                 }
