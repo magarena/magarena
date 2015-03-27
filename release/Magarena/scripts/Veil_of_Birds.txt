@@ -4,6 +4,6 @@ value=2.783
 rarity=C
 type=Enchantment
 cost={U}
+ability=When an opponent casts a spell, if SN is an enchantment, SN becomes a 1/1 Bird creature with flying.
 timing=main
-requires_groovy_code
 oracle=When an opponent casts a spell, if Veil of Birds is an enchantment, Veil of Birds becomes a 1/1 Bird creature with flying.
