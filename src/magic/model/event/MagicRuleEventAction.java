@@ -2978,7 +2978,7 @@ public enum MagicRuleEventAction {
             final String[] pt = matcher.group("pt").split("/");
             final int power = Integer.parseInt(pt[0]);
             final int toughness = Integer.parseInt(pt[1]);
-            final String subtype = matcher.group("subtype");
+            final MagicSubType subtype = MagicSubType.getSubType(matcher.group("subtype"));
             final MagicAbilityList abilityList = matcher.group("ability") != null ? MagicAbility.getAbilityList(matcher.group("ability")) : null;
             final MagicStatic PT = new MagicStatic(MagicLayer.SetPT, MagicStatic.Forever) {
                 @Override
@@ -2989,7 +2989,7 @@ public enum MagicRuleEventAction {
             final MagicStatic ST = new MagicStatic(MagicLayer.Type, MagicStatic.Forever) {
                 @Override
                 public void modSubTypeFlags(final MagicPermanent permanent, final Set<MagicSubType> flags) {
-                    flags.add(MagicSubType.getSubType(subtype));
+                    flags.add(subtype);
                 }
                 @Override
                 public int getTypeFlags(final MagicPermanent permanent, final int flags) {
@@ -3015,17 +3015,17 @@ public enum MagicRuleEventAction {
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
-            final String type = matcher.group("type");
+            final MagicType type = MagicType.getType(matcher.group("type"));
             final MagicStatic ST = new MagicStatic(MagicLayer.Type, MagicStatic.Forever) {
                 @Override
                 public int getTypeFlags(final MagicPermanent permanent, final int flags) {
-                    return MagicType.getType(type).getMask();
+                    return type.getMask();
                 }
             };
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    game.doAction(new MagicBecomesCreatureAction(event.getPermanent(),ST));
+                    game.doAction(new MagicAddStaticAction(event.getPermanent(), ST));
                 }
             };
         }
