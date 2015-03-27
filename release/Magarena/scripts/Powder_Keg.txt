@@ -1,0 +1,10 @@
+name=Powder Keg
+image=http://magiccards.info/scans/en/ud/136.jpg
+value=2.500
+rarity=R
+type=Artifact
+cost={2}
+ability=At the beginning of your upkeep, you may put a fuse counter on SN.
+timing=artifact
+requires_groovy_code
+oracle=At the beginning of your upkeep, you may put a fuse counter on Powder Keg. {T}, Sacrifice Powder Keg: Destroy each artifact and creature with converted mana cost equal to the number of fuse counters on Powder Keg.
