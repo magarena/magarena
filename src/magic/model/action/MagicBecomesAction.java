@@ -29,10 +29,6 @@ public class MagicBecomesAction extends MagicAction {
     public MagicBecomesAction(final MagicPermanent aPermanent, final MagicType[] aType, final Boolean aDuration) {
         this(aPermanent, null, null, null, aType, aDuration, false);
     }
-    
-    public MagicBecomesAction(final MagicPermanent aPermanent, final String[] aPt, final MagicSubType[] aSubType, final MagicType[] aType) {
-        this(aPermanent, aPt, null, aSubType, aType, false, false);
-    }
 
     public MagicBecomesAction(final MagicPermanent aPermanent, final String[] aPt, final MagicColor[] aColor, final MagicSubType[] aSubType, final MagicType[] aType, final Boolean aDuration, final Boolean aAdditionTo) {
         permanent = aPermanent;
@@ -42,6 +38,10 @@ public class MagicBecomesAction extends MagicAction {
         type=aType;
         duration=aDuration;
         additionTo=aAdditionTo;
+    }
+
+    public MagicBecomesAction(final MagicPermanent aPermanent, final String[] aPt, final MagicSubType[] aSubType, final MagicType[] aType) {
+        this(aPermanent, aPt, null, aSubType, aType, false, false);
     }
 
     public MagicBecomesAction(final MagicPermanent aPermanent, final String[] aPt, final MagicSubType[] aSubType, final MagicType[] aType, final Boolean aDuration) {
@@ -80,18 +80,26 @@ public class MagicBecomesAction extends MagicAction {
             final MagicStatic ST = new MagicStatic(MagicLayer.Type, duration) {
                 @Override
                 public int getTypeFlags(final MagicPermanent permanent,final int flags) {
+                    boolean creature = false;
+                    boolean artifact = false;
                     if (type !=null) {
                         int mask = 0;
                         for (final MagicType element : type) {
                             mask += element.getMask();
+                            if (element==MagicType.Creature) {
+                                creature=true;
+                            }
+                            if (element==MagicType.Artifact) {
+                                artifact=true;
+                            }
                         }
-                        if (additionTo) {
+                        if (additionTo|(creature && artifact)) { // Turning into an artifact creature retains previous types
                             return flags|mask;
                         } else {
                             return mask;
                         }
                     } else {
-                        return flags;
+                        return flags; // Return original types if type not changed
                     }
                 }
                 @Override
@@ -109,9 +117,8 @@ public class MagicBecomesAction extends MagicAction {
             staticCollect.add(ST);
         }
 
-        final MagicStatic[] mstatics = (MagicStatic[]) staticCollect.toArray();
         // final collected statics returned
-        for (final MagicStatic mstatic : mstatics) {
+        for (final MagicStatic mstatic : staticCollect) {
             game.doAction(new MagicAddStaticAction(permanent, mstatic));
         }
         game.setStateCheckRequired();
