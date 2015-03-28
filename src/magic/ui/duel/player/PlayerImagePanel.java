@@ -1,6 +1,5 @@
 package magic.ui.duel.player;
 
-import java.awt.BasicStroke;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics;
@@ -13,8 +12,11 @@ import javax.swing.JPanel;
 import magic.model.MagicGame;
 import magic.ui.GraphicsUtilities;
 import magic.ui.IconImages;
+import magic.ui.MagicStyle;
 import magic.ui.duel.CounterOverlay;
 import magic.ui.duel.viewer.PlayerViewerInfo;
+import org.pushingpixels.trident.Timeline;
+import org.pushingpixels.trident.ease.Spline;
 
 @SuppressWarnings("serial")
 public class PlayerImagePanel extends JPanel {
@@ -27,6 +29,9 @@ public class PlayerImagePanel extends JPanel {
     private final BufferedImage activeImage;
     private final BufferedImage inactiveImage;
     private PlayerViewerInfo playerInfo;
+    private int life = 0;
+    private int damageColorOpacity = 0;
+    private int healColorOpacity = 0;
 
     public PlayerImagePanel(final PlayerViewerInfo player, final MagicGame game) {
         this.playerInfo = player;
@@ -50,23 +55,35 @@ public class PlayerImagePanel extends JPanel {
 
         if (playerInfo.player == game.getTurnPlayer()) {
             g2d.drawImage(activeImage, 0, 0, this);
-//            drawPlayerHighlight(g2d);
         } else {
             g2d.drawImage(inactiveImage, 0, 0, this);
         }
-                
+
         // counters
         drawPoisonCountersOverlay(g2d);
         drawShieldDamageOverlay(g2d);
         // health
         g2d.setRenderingHint(RenderingHints.KEY_TEXT_ANTIALIASING, RenderingHints.VALUE_TEXT_ANTIALIAS_ON);
         drawHealthValueOverlay(g2d, 0, 0, activeImage);
+
+        // Animations
+        drawDamageAlert(g2d);
+        drawHealAlert(g2d);
+
     }
 
-    private void drawPlayerHighlight(final Graphics2D g2d) {
-        g2d.setStroke(new BasicStroke(6.0f));
-        g2d.setColor(new Color(255, 255, 0, 220));
-        g2d.drawRect(0, 0, getWidth(), getHeight());
+    private void drawDamageAlert(Graphics2D g2d) {
+        if (damageColorOpacity > 0) {
+            g2d.setColor(MagicStyle.getTranslucentColor(Color.RED, damageColorOpacity));
+            g2d.fillRect(0, 0, getWidth(), getHeight());
+        }
+    }
+
+    private void drawHealAlert(Graphics2D g2d) {
+        if (healColorOpacity > 0) {
+            g2d.setColor(MagicStyle.getTranslucentColor(Color.GREEN, healColorOpacity));
+            g2d.fillRect(0, 0, getWidth(), getHeight());
+        }
     }
 
     private void drawHealthValueOverlay(final Graphics2D g2d, final int x, final int y, final Image image) {
@@ -79,7 +96,16 @@ public class PlayerImagePanel extends JPanel {
 
     public void updateDisplay(final PlayerViewerInfo playerInfo) {
         this.playerInfo = playerInfo;
-        repaint();
+        final boolean isDamage = life > playerInfo.life;
+        final boolean isHeal = life < playerInfo.life && life > 0;
+        life = playerInfo.life;
+        if (isDamage) {
+            doDamageAnimation();
+        } else if (isHeal) {
+            doHealAnimation();
+        } else {
+            repaint();
+        }
     }
 
     private void drawPoisonCountersOverlay(final Graphics2D g2d) {
@@ -107,15 +133,39 @@ public class PlayerImagePanel extends JPanel {
 
     }
 
-//    private void drawHealthGauge(final Graphics2D g2d) {
-//        g2d.setStroke(new BasicStroke(1));
-//        g2d.setColor(Color.BLACK);
-//        final int w = 10;
-//        g2d.drawRect(avatarX-w, avatarY, w, avatarImage.getHeight(null) - 1);
-//        final Paint borderColor = new GradientPaint(avatarX-w, avatarY, Color.GREEN, avatarX-w, avatarY + avatarImage.getHeight(null), Color.RED, false);
-//        g2d.setPaint(borderColor);
-//        g2d.fillRect(avatarX-w+1, avatarY+1, w-1, avatarImage.getHeight(null) - 2);
-//    }
+    public int getDamageColorOpacity() {
+        return damageColorOpacity;
+    }
 
+    public void setDamageColorOpacity(int opacity) {
+        this.damageColorOpacity = opacity;
+        repaint();
+    }
+
+    private void doDamageAnimation() {
+        final Timeline timeline = new Timeline();
+        timeline.setDuration(100);
+        timeline.addPropertyToInterpolate(
+                Timeline.property("damageColorOpacity").on(this).from(0).to(120));
+        timeline.playLoop(6, Timeline.RepeatBehavior.REVERSE);
+    }
+
+    public int getHealColorOpacity() {
+        return healColorOpacity;
+    }
+
+    public void setHealColorOpacity(int opacity) {
+        this.healColorOpacity = opacity;
+        repaint();
+    }
+
+    private void doHealAnimation() {
+        final Timeline timeline = new Timeline();
+        timeline.setDuration(1000);
+        timeline.setEase(new Spline(0.8f));
+        timeline.addPropertyToInterpolate(
+                Timeline.property("healColorOpacity").on(this).from(100).to(0));
+        timeline.play();
+    }
 
 }
