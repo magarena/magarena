@@ -1053,8 +1053,8 @@ public enum MagicRuleEventAction {
             return GainChosen.getName(matcher);
         }
     },
-    PumpGainCantSelf(
-        "sn get(s)? (?<pt>[+-][0-9]+/[+-][0-9]+) (until end of turn and|and) (?<ability>can't .+) this turn\\.", 
+    PumpGainCanSelf(
+        "sn get(s)? (?<pt>[+-][0-9]+/[+-][0-9]+) (until end of turn and|and) (?<ability>can('t)? .+) this turn\\.", 
         MagicTiming.Pump
     ) {
         @Override
@@ -1076,7 +1076,7 @@ public enum MagicRuleEventAction {
         }
     },
     PumpGainChosen(
-        "(?<choice>target [^\\.]*) get(s)? (?<pt>[0-9+]+/[0-9+]+) and (gain(s)?|is) (?<ability>.+) until end of turn\\.", 
+        "(?<choice>target [^\\.]*) get(s)? (?<pt>[0-9+]+/[0-9+]+) and (gain(s)?|is) (?<ability>.+) until end of turn\\.",
         MagicTargetHint.Positive
     ) {
         @Override
@@ -1096,6 +1096,27 @@ public enum MagicRuleEventAction {
                     });
                 }
             };
+        }
+        @Override
+        public MagicTiming getTiming(final Matcher matcher) {
+            return GainChosen.getTiming(matcher);
+        }
+        @Override
+        public MagicTargetPicker<?> getPicker(final Matcher matcher) {
+            return GainChosen.getPicker(matcher);
+        }
+        @Override
+        public String getName(final Matcher matcher) {
+            return GainChosen.getName(matcher);
+        }
+    },
+    PumpGainChosenCan(
+        "(?<choice>target [^\\.]*) get(s)? (?<pt>[0-9+]+/[0-9+]+) (until end of turn and|and) (?<ability>can('t)? .+) this turn\\.",
+        MagicTargetHint.Positive
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            return PumpGainChosen.getAction(matcher);
         }
         @Override
         public MagicTiming getTiming(final Matcher matcher) {
@@ -1456,8 +1477,8 @@ public enum MagicRuleEventAction {
             return GainChosen.getName(matcher);
         }
     },
-    GainChosenCant(
-        "(?<choice>target [^\\.]*) (?<ability>can't .+) this turn\\." 
+    GainChosenCan(
+        "(?<choice>target [^\\.]*) (?<ability>can('t)? .+) this turn\\." 
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
@@ -1571,11 +1592,11 @@ public enum MagicRuleEventAction {
         }
         @Override
         public MagicTiming getTiming(final Matcher matcher) {
-            return GainChosenCant.getTiming(matcher);
+            return GainChosenCan.getTiming(matcher);
         }
         @Override
         public String getName(final Matcher matcher) {
-            return GainChosenCant.getName(matcher);
+            return GainChosenCan.getName(matcher);
         }
     },
     LoseSelf(
