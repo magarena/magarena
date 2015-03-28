@@ -962,4 +962,9 @@ public class SwingGameController implements IUIGameController, ILogBookListener 
         return gamePanel.getPlayerZoneButtonRectangle(player, zone, canvas);
     }
 
+    @Override
+    public Rectangle getStackViewerRectangle(Component canvas) {
+        return gamePanel.getStackViewerRectangle(canvas);
+    }
+
 }

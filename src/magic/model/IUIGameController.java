@@ -25,6 +25,7 @@ public interface IUIGameController extends IGameController {
     void waitForInput() throws UndoClickedException;
     void refreshSidebarLayout();
     Rectangle getPlayerZoneButtonRectangle(MagicPlayer player, MagicPlayerZone zone, Component canvas);
+    Rectangle getStackViewerRectangle(Component canvas);
     
     // Choices
     MagicSubType getLandSubTypeChoice(final MagicSource source) throws UndoClickedException;

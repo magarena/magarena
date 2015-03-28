@@ -1,5 +1,6 @@
 package magic.ui.duel;
 
+import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.Image;
 import magic.ui.duel.animation.PlayCardAnimation;
@@ -125,7 +126,8 @@ public class ImageModeBattlefieldPanel extends BattlefieldPanel {
         animationEvent = new PlayCardAnimation(player, card, gamePanel);
         setAnimationStartPoint(player, card);
         if (card.usesStack()) {
-            animationEvent.setEndPoint(new Point(150, imageStackViewer.getLocation().y));
+            final Dimension stackViewerSize = controller.getStackViewerRectangle(gamePanel).getSize();
+            animationEvent.setEndSize(new Dimension(stackViewerSize.height*2, stackViewerSize.height));
         } else {
             if (player.getIndex() == 0) {
                 animationEvent.setEndPoint(getLocationOnDuelPanel(imagePlayerPermanentViewer));

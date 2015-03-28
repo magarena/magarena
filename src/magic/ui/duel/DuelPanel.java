@@ -330,4 +330,8 @@ public final class DuelPanel extends JPanel {
         return sidebarPanel.getPlayerZoneButtonRectangle(player, zone, canvas);
     }
 
+    public Rectangle getStackViewerRectangle(Component canvas) {
+        return sidebarPanel.getStackViewerRectangle(canvas);
+    }
+
 }

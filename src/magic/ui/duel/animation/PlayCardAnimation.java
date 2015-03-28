@@ -12,8 +12,8 @@ import magic.ui.duel.DuelPanel;
 
 public class PlayCardAnimation {
 
-    private Dimension startSize = new Dimension(30, 40); // approx size of hand icon.
-    private final Dimension endSize = new Dimension(startSize.width * 2, startSize.height * 2);
+    private Dimension startSize = new Dimension();
+    private Dimension endSize = new Dimension();
     private Point startPoint = null;
     private Point endPoint = null;
     private final MagicPlayer player;
@@ -51,8 +51,8 @@ public class PlayCardAnimation {
 
     public Point getEndPoint() {
         if (endPoint == null) {
-            final int y = player.getIndex() == 1 ? 40 : gamePanel.getHeight() - startSize.height;
-            endPoint = new Point((gamePanel.getWidth() / 2) - endSize.width, y);
+            final Rectangle rect = controller.getStackViewerRectangle(gamePanel);
+            endPoint = rect.getLocation();
         }
         return endPoint;
     }
@@ -71,6 +71,10 @@ public class PlayCardAnimation {
 
     public void setEndPoint(Point endPoint) {
         this.endPoint = endPoint;
+    }
+
+    public void setEndSize(Dimension size) {
+        this.endSize = size;
     }
 
 }

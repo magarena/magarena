@@ -1,5 +1,7 @@
 package magic.ui.duel.viewer;
 
+import java.awt.Component;
+import java.awt.Rectangle;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TexturedPanel;
 import net.miginfocom.swing.MigLayout;
@@ -51,6 +53,10 @@ public class LogStackViewer extends TexturedPanel implements IStackViewerListene
             add(stackViewer, "w 100%, h 100%");
         }
 
+    }
+
+    public Rectangle getStackViewerRectangle(Component canvas) {
+        return stackViewer.getStackViewerRectangle(canvas);
     }
 
 }

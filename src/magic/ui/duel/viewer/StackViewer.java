@@ -17,12 +17,15 @@ import javax.swing.Scrollable;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
+import java.awt.Component;
 import java.awt.Dimension;
+import java.awt.Point;
 import java.awt.Rectangle;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 import java.util.Set;
+import javax.swing.SwingUtilities;
 
 public class StackViewer extends JPanel implements ChoiceViewer {
 
@@ -114,6 +117,11 @@ public class StackViewer extends JPanel implements ChoiceViewer {
 
             button.showValidChoices(validChoices);
         }
+    }
+
+    Rectangle getStackViewerRectangle(Component canvas) {
+        final Point pointOnCanvas = SwingUtilities.convertPoint(this, stackTitleBar.getLocation(), canvas);
+        return new Rectangle(pointOnCanvas.x, pointOnCanvas.y, stackTitleBar.getWidth(), stackTitleBar.getHeight());
     }
 
     private final class StackButton extends PanelButton implements ChoiceViewer {

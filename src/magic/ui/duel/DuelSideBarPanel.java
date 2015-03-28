@@ -159,6 +159,10 @@ public class DuelSideBarPanel extends JPanel implements IPlayerZoneListener {
         doSetLayout();
     }
 
+    Rectangle getStackViewerRectangle(Component canvas) {
+        return logStackViewer.getStackViewerRectangle(canvas);
+    }
+
     Rectangle getPlayerZoneButtonRectangle(MagicPlayer player, MagicPlayerZone zone, Component canvas) {
         return getPlayerPanel(player).getZoneButtonRectangle(zone, canvas);
     }
