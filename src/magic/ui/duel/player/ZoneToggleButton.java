@@ -19,11 +19,10 @@ import magic.ui.GraphicsUtilities;
 import magic.ui.IconImages;
 import magic.ui.MagicStyle;
 import org.pushingpixels.trident.Timeline;
-import org.pushingpixels.trident.callback.TimelineCallback;
 
 
 @SuppressWarnings("serial")
-public class ZoneToggleButton extends JToggleButton implements TimelineCallback {
+public class ZoneToggleButton extends JToggleButton {
 
     enum ValueStyle {
         NORMAL,
@@ -166,22 +165,10 @@ public class ZoneToggleButton extends JToggleButton implements TimelineCallback 
 
     public void doAlertAnimation() {
         timeline1 = new Timeline();
-        timeline1.addCallback(this);
         timeline1.setDuration(200);
-//        timeline1.setEase(new Spline(0.8f));
         timeline1.addPropertyToInterpolate(
                 Timeline.property("imageOffset").on(this).from(0).to(4));
         timeline1.playLoop(2, Timeline.RepeatBehavior.REVERSE);
-    }
-
-    @Override
-    public void onTimelineStateChanged(Timeline.TimelineState oldState, Timeline.TimelineState newState, float durationFraction, float timelinePosition) {
-        // do nothing.
-    }
-
-    @Override
-    public void onTimelinePulse(float durationFraction, float timelinePosition) {
-        // do nothing.
     }
 
     public boolean isActive() {
