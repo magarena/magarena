@@ -13,6 +13,7 @@ import magic.model.mstatic.MagicStatic;
 
 public class MagicBecomesAction extends MagicAction {
 
+    private final Set<MagicStatic> staticCollect = null;
     private final MagicPermanent permanent;
     private final String[] pt;
     private final MagicColor[] color;
@@ -20,6 +21,18 @@ public class MagicBecomesAction extends MagicAction {
     private final MagicType[] type;
     private final Boolean duration;
     private final Boolean additionTo;
+
+    public MagicBecomesAction(final MagicPermanent aPermanent, final MagicColor[] aColor, final Boolean aDuration, final Boolean aAdditionTo) {
+        this(aPermanent, null, aColor, null, null, aDuration, aAdditionTo);
+    }
+
+    public MagicBecomesAction(final MagicPermanent aPermanent, final MagicType[] aType, final Boolean aDuration) {
+        this(aPermanent, null, null, null, aType, aDuration, false);
+    }
+    
+    public MagicBecomesAction(final MagicPermanent aPermanent, final String[] aPt, final MagicSubType[] aSubType, final MagicType[] aType) {
+        this(aPermanent, aPt, null, aSubType, aType, false, false);
+    }
 
     public MagicBecomesAction(final MagicPermanent aPermanent, final String[] aPt, final MagicColor[] aColor, final MagicSubType[] aSubType, final MagicType[] aType, final Boolean aDuration, final Boolean aAdditionTo) {
         permanent = aPermanent;
@@ -30,68 +43,73 @@ public class MagicBecomesAction extends MagicAction {
         duration=aDuration;
         additionTo=aAdditionTo;
     }
-    
+
     public MagicBecomesAction(final MagicPermanent aPermanent, final String[] aPt, final MagicSubType[] aSubType, final MagicType[] aType, final Boolean aDuration) {
         this(aPermanent,aPt,null,aSubType,aType,aDuration,false);
-    }
-    
-    public MagicBecomesAction(final MagicPermanent aPermanent, final MagicColor[] aColor, final Boolean aDuration, final Boolean aAdditionTo) {
-        this(aPermanent, null, aColor, null, null, aDuration, aAdditionTo);
-    }
-    
-    public MagicBecomesAction(final MagicPermanent aPermanent, final MagicType[] aType, final Boolean aDuration) {
-        this(aPermanent, null, null, null, aType, aDuration, false);
     }
 
     @Override
     public void doAction(final MagicGame game) {
-        final MagicStatic PT = new MagicStatic(MagicLayer.SetPT, duration) {
-            @Override
-            public void modPowerToughness(final MagicPermanent source, final MagicPermanent permanent, final MagicPowerToughness bPt) {
-                bPt.set(Integer.parseInt(pt[0]), Integer.parseInt(pt[1]));
-            }
-        };
-        // Would need cleaner method!
-        final MagicStatic C = new MagicStatic(MagicLayer.Color, duration) {
-            @Override
-            public int getColorFlags(final MagicPermanent permanent,final int flags) {
-                int mask = 0;
-                for (final MagicColor element : color) {
-                    mask += element.getMask();
+        if (pt != null) {
+            final MagicStatic PT = new MagicStatic(MagicLayer.SetPT, duration) {
+                @Override
+                public void modPowerToughness(final MagicPermanent source, final MagicPermanent permanent, final MagicPowerToughness bPt) {
+                    bPt.set(Integer.parseInt(pt[0]), Integer.parseInt(pt[1]));
                 }
-                if (additionTo) {
-                    return flags|mask;
-                } else {
-                    return mask;
+            };
+            staticCollect.add(PT);
+        }
+        if (color !=null) {
+            final MagicStatic C = new MagicStatic(MagicLayer.Color, duration) {
+                @Override
+                public int getColorFlags(final MagicPermanent permanent,final int flags) {
+                    int mask = 0;
+                    for (final MagicColor element : color) {
+                        mask += element.getMask();
+                    }
+                    if (additionTo) {
+                        return flags|mask;
+                    } else {
+                        return mask;
+                    }
                 }
-            }
-        };
-        // Same issue as with returning color
-        final MagicStatic ST = new MagicStatic(MagicLayer.Type, duration) {
-            @Override
-            public int getTypeFlags(final MagicPermanent permanent,final int flags) {
-                int mask = 0;
-                for (final MagicType element : type) {
-                    mask += element.getMask();
+            };
+            staticCollect.add(C);
+        }
+        if (type!=null|subType!=null) {
+            final MagicStatic ST = new MagicStatic(MagicLayer.Type, duration) {
+                @Override
+                public int getTypeFlags(final MagicPermanent permanent,final int flags) {
+                    if (type !=null) {
+                        int mask = 0;
+                        for (final MagicType element : type) {
+                            mask += element.getMask();
+                        }
+                        if (additionTo) {
+                            return flags|mask;
+                        } else {
+                            return mask;
+                        }
+                    } else {
+                        return flags;
+                    }
                 }
-                if (additionTo) {
-                    return flags|mask;
-                } else {
-                    return mask;
+                @Override
+                public void modSubTypeFlags(final MagicPermanent permanent, final Set<MagicSubType> flags) {
+                    if (subType !=null) {
+                        if (!additionTo) {
+                            flags.clear();
+                        }
+                        for (final MagicSubType element : subType) {
+                            flags.add(element);
+                        }
+                    }
                 }
-            }
-            @Override
-            public void modSubTypeFlags(final MagicPermanent permanent, final Set<MagicSubType> flags) {
-                if (!additionTo) {
-                    flags.clear();
-                }
-                for (final MagicSubType element : subType) {
-                    flags.add(element);
-                }
-            }
-        };
+            };
+            staticCollect.add(ST);
+        }
 
-        final MagicStatic[] mstatics = {PT,C,ST};
+        final MagicStatic[] mstatics = (MagicStatic[]) staticCollect.toArray();
         // final collected statics returned
         for (final MagicStatic mstatic : mstatics) {
             game.doAction(new MagicAddStaticAction(permanent, mstatic));
