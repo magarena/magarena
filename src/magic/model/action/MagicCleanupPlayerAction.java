@@ -36,11 +36,7 @@ public class MagicCleanupPlayerAction extends MagicAction {
         
 
         for (final MagicPermanent permanent : player.getPermanents()) {
-            if (permanent.isCreature()) {
-                game.doAction(new MagicCleanupCreatureAction(permanent));
-            } else {
-                game.doAction(new MagicCleanupPermanentAction(permanent));
-            }
+            game.doAction(new MagicCleanupPermanentAction(permanent));
         }
 
         game.setStateCheckRequired();
