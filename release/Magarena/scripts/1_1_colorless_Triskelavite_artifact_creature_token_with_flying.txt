@@ -1,5 +1,5 @@
 name=1/1 colorless Triskelavite artifact creature token with flying
-image=https://cdn.staticneo.com/w/mtg/a/a7/Triskelavite.jpg
+image=http://cdn.staticneo.com/w/mtg/a/a7/Triskelavite.jpg
 token=Triskelavite
 type=Artifact,Creature
 subtype=Triskelavite
