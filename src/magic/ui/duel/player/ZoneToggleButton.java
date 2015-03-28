@@ -92,10 +92,6 @@ public class ZoneToggleButton extends JToggleButton implements TimelineCallback 
         final Image image = getZoneIconAsImage();
         final int x = getWidth() / 2 - image.getWidth(null) / 2;
 
-        if (isSelected()) {
-            drawSelectedFill(g);
-        }
-
         if (animateOnChange) {
             g.drawImage(image, x, 4, x+32, 4+32, 0+imageOffset, 0+imageOffset, 32-imageOffset, 32-imageOffset, null);
         } else {
@@ -127,7 +123,7 @@ public class ZoneToggleButton extends JToggleButton implements TimelineCallback 
         final Graphics2D g2d = (Graphics2D) g;
         g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
         g2d.setStroke(new BasicStroke(3.0f));
-        g2d.setColor(MagicStyle.HIGHLIGHT_COLOR);
+        g2d.setColor(new Color(0, 0, 0, 100));
         g2d.drawRoundRect(1, 1, getWidth()-3, getHeight()-3, 16, 16);
     }
 

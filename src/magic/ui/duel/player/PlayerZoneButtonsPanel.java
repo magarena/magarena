@@ -94,7 +94,6 @@ public class PlayerZoneButtonsPanel extends JPanel {
     void setActiveZone(MagicPlayerZone zone) {
         final ZoneToggleButton btn = zoneButtons.get(zone);
         btn.setSelected(true);
-        btn.doAlertAnimation();
     }
 
 }
