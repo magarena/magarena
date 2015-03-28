@@ -1,12 +1,16 @@
 package magic.ui.duel.player;
 
+import java.awt.Component;
 import java.awt.Cursor;
+import java.awt.Point;
+import java.awt.Rectangle;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import javax.swing.ButtonGroup;
 import javax.swing.JPanel;
+import javax.swing.SwingUtilities;
 import magic.model.MagicPlayerZone;
 import magic.ui.SwingGameController;
 import magic.ui.duel.viewer.PlayerViewerInfo;
@@ -97,6 +101,12 @@ public class PlayerZoneButtonsPanel extends JPanel {
         if (zone == MagicPlayerZone.LIBRARY) {
             btn.doAlertAnimation();
         }
+    }
+
+    Rectangle getZoneButtonRectangle(MagicPlayerZone zone, Component canvas) {
+        final ZoneToggleButton btn = zoneButtons.get(zone);
+        final Point pointOnCanvas = SwingUtilities.convertPoint(this, btn.getLocation(), canvas);
+        return new Rectangle(pointOnCanvas.x, pointOnCanvas.y, btn.getWidth(), btn.getHeight());
     }
 
 }

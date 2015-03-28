@@ -1,8 +1,10 @@
 package magic.ui.duel.player;
 
 import java.awt.Color;
+import java.awt.Component;
 import java.awt.Dimension;
 import java.awt.Font;
+import java.awt.Rectangle;
 import java.util.Set;
 import javax.swing.JLabel;
 import magic.model.MagicPlayerZone;
@@ -82,6 +84,14 @@ public class GamePlayerPanel extends TexturedPanel implements ChoiceViewer {
 
     public void setActiveZone(MagicPlayerZone zone) {
         zoneButtonsPanel.setActiveZone(zone);
+    }
+
+    public PlayerViewerInfo getPlayerInfo() {
+        return playerInfo;
+    }
+
+    public Rectangle getZoneButtonRectangle(MagicPlayerZone zone, Component canvas) {
+        return zoneButtonsPanel.getZoneButtonRectangle(zone, canvas);
     }
 
 }

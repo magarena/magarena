@@ -1,12 +1,15 @@
 package magic.ui.duel;
 
 import java.awt.Color;
+import java.awt.Component;
+import java.awt.Rectangle;
 import java.util.ArrayList;
 import java.util.List;
 import javax.swing.BorderFactory;
 import javax.swing.JComponent;
 import javax.swing.JPanel;
 import magic.data.GeneralConfig;
+import magic.model.MagicPlayer;
 import magic.model.MagicPlayerZone;
 import magic.ui.IPlayerZoneListener;
 import magic.ui.SwingGameController;
@@ -154,6 +157,19 @@ public class DuelSideBarPanel extends JPanel implements IPlayerZoneListener {
     void refreshLayout() {
         setLayoutSlots();
         doSetLayout();
+    }
+
+    Rectangle getPlayerZoneButtonRectangle(MagicPlayer player, MagicPlayerZone zone, Component canvas) {
+        return getPlayerPanel(player).getZoneButtonRectangle(zone, canvas);
+    }
+
+    private GamePlayerPanel getPlayerPanel(final MagicPlayer player) {
+        for (PlayerCompositePanel panel : playerCompositePanels) {
+            if (panel.getPlayerPanel().getPlayerInfo().player == player) {
+                return panel.getPlayerPanel();
+            }
+        }
+        throw new RuntimeException("Missing GamePlayerPanel for " + player.getName());
     }
 
     private class LayoutSlot {

@@ -1,5 +1,6 @@
 package magic.ui.duel;
 
+import java.awt.Component;
 import magic.ui.duel.dialog.DuelDialogPanel;
 import magic.ui.duel.animation.PlayCardAnimation;
 import java.awt.Dimension;
@@ -17,6 +18,7 @@ import magic.data.GeneralConfig;
 import magic.exception.InvalidDeckException;
 import magic.model.MagicCardList;
 import magic.model.MagicGame;
+import magic.model.MagicPlayer;
 import magic.model.MagicPlayerZone;
 import magic.model.event.MagicEvent;
 import magic.ui.SwingGameController;
@@ -322,6 +324,10 @@ public final class DuelPanel extends JPanel {
 
     public void refreshSidebarLayout() {
         sidebarPanel.refreshLayout();
+    }
+
+    public Rectangle getPlayerZoneButtonRectangle(MagicPlayer player, MagicPlayerZone zone, Component canvas) {
+        return sidebarPanel.getPlayerZoneButtonRectangle(player, zone, canvas);
     }
 
 }

@@ -1,5 +1,6 @@
 package magic.ui;
 
+import java.awt.Component;
 import java.awt.Dimension;
 import java.awt.KeyEventDispatcher;
 import java.awt.KeyboardFocusManager;
@@ -955,4 +956,10 @@ public class SwingGameController implements IUIGameController, ILogBookListener 
     public void refreshSidebarLayout() {
         gamePanel.refreshSidebarLayout();
     }
+
+    @Override
+    public Rectangle getPlayerZoneButtonRectangle(MagicPlayer player, MagicPlayerZone zone, Component canvas) {
+        return gamePanel.getPlayerZoneButtonRectangle(player, zone, canvas);
+    }
+
 }

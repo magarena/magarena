@@ -1,5 +1,7 @@
 package magic.model;
 
+import java.awt.Component;
+import java.awt.Rectangle;
 import java.util.List;
 import java.util.Set;
 import magic.exception.UndoClickedException;
@@ -22,6 +24,7 @@ public interface IUIGameController extends IGameController {
     void updateGameView();
     void waitForInput() throws UndoClickedException;
     void refreshSidebarLayout();
+    Rectangle getPlayerZoneButtonRectangle(MagicPlayer player, MagicPlayerZone zone, Component canvas);
     
     // Choices
     MagicSubType getLandSubTypeChoice(final MagicSource source) throws UndoClickedException;
