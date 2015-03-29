@@ -6,16 +6,14 @@
                 permanent,
                 damage.getTargetPlayer(),
                 this,
-                "SN deals 1 damage to each creature RN controls."
+                "SN deals 1 damage to each creature PN controls."
             );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final Collection<MagicPermanent> creatures =
-            game.filterPermanents(event.getRefPlayer(),MagicTargetFilterFactory.CREATURE_YOU_CONTROL);
+            final Collection<MagicPermanent> creatures = event.getPlayer().filterPermanents(MagicTargetFilterFactory.CREATURE_YOU_CONTROL);
             for (final MagicPermanent creature : creatures) {
-                final MagicDamage damage = new MagicDamage(event.getSource(),creature,1);
-                game.doAction(new MagicDealDamageAction(damage));
+                game.doAction(new MagicDealDamageAction(event.getSource(),creature,1));
             }
         }
     }
