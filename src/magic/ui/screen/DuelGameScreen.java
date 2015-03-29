@@ -8,7 +8,6 @@ import javax.swing.SwingWorker;
 import magic.data.GeneralConfig;
 import magic.model.MagicDuel;
 import magic.model.MagicGame;
-import magic.model.MagicGameLog;
 import magic.ui.MagicFrame;
 import magic.ui.ScreenController;
 import magic.ui.ScreenOptionsOverlay;
@@ -32,7 +31,6 @@ public class DuelGameScreen extends AbstractScreen implements IOptionsMenu {
         final SwingWorker<MagicGame, Void> worker = new SwingWorker<MagicGame, Void> () {
             @Override
             protected MagicGame doInBackground() throws Exception {
-                MagicGameLog.initialize();
                 config.setTextView(false);
                 duel.updateDifficulty();
                 return duel.nextGame();
