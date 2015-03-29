@@ -74,7 +74,7 @@ public class DeckChooserDialog extends JDialog {
         saveButton.addActionListener(new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                if (getDeckValue().trim() != "") {
+                if (getDeckValue().trim().length() > 0) {
                     dispose();
                 }
             }

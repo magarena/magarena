@@ -319,7 +319,7 @@ public class FiremindClient {
         } catch (UnknownHostException e1) {
             env = "production";
         }
-        if (env == "production") {
+        if (env.equals("production")) {
             FiremindClient.setFiremindHost("https://www.firemind.ch");
         } else {
             FiremindClient.setFiremindHost("http://192.168.50.10");
