@@ -178,7 +178,9 @@ public class SwingGameController implements IUIGameController, ILogBookListener 
     /** Returns true when undo was clicked. */
     private boolean waitForInputOrUndo() {
         try {
-            return input.take();
+            final boolean isUndo = input.take();
+            clearUserActionPrompt();
+            return isUndo;
         } catch (final InterruptedException ex) {
             throw new RuntimeException(ex);
         }
@@ -521,13 +523,50 @@ public class SwingGameController implements IUIGameController, ILogBookListener 
     }
 
     @Override
-    public void showMessage(final MagicSource source,final String message) {
+    public void showMessage(final MagicSource source, final String message) {
         SwingUtilities.invokeLater(new Runnable() {
             @Override
             public void run() {
-                userActionPanel.showMessage(getMessageWithSource(source,message));
+                if (isUserActionPromptHidden(message) && MagicSystem.isDevMode()) {
+                    clearUserActionPrompt();
+                } else {
+                    userActionPanel.showMessage(getMessageWithSource(source, message));
+                }
             }
         });
+    }
+
+    private boolean isUserActionPromptHidden(final String message) {
+
+        final boolean isAiPlayer = game.getPriorityPlayer().getPlayerDefinition().isArtificial();
+        final boolean isAiDefending = game.getDefendingPlayer().getPlayerDefinition().isArtificial();
+        final boolean isDeclareBlockers = game.getPhase().getType() == MagicPhaseType.DeclareBlockers;
+        final boolean isCleanUp = game.getPhase().getType() == MagicPhaseType.Cleanup;
+        final boolean isDeclareBlockerMessage = message.contains("declare as blocker");
+        final boolean isContinueMessage = message.equals("Press {f} to continue.");
+        final boolean isGameOver = game.isFinished();
+
+//        System.out.printf(
+//                "\nPhase=%s, Player=%s, Msg=%s\n" +
+//                "isAiPlayer=%b, isAiDefending=%b, isDeclareBlockers=%b, isCleanUp=%b, isDeclarBlockerMessage=%b, isContinueMessage=%b\n",
+//                game.getPhase().getType(),
+//                game.getPriorityPlayer().getName(),
+//                message,
+//                isAiPlayer,
+//                isAiDefending,
+//                isDeclareBlockers,
+//                isCleanUp,
+//                isDeclareBlockerMessage,
+//                isContinueMessage
+//        );
+
+        return isAiPlayer
+                && !isGameOver
+                && !isCleanUp
+                && (!isDeclareBlockers
+                    || (isDeclareBlockers && !isDeclareBlockerMessage && !isContinueMessage)
+                    || (isDeclareBlockers && isAiDefending));
+        
     }
 
     private <E extends JComponent> E waitForInput(final Callable<E> func) throws UndoClickedException {
@@ -965,6 +1004,17 @@ public class SwingGameController implements IUIGameController, ILogBookListener 
 
     public void doFlashPlayerHandZoneButton() {
         gamePanel.doFlashPlayerHandZoneButton();
+    }
+
+    private void clearUserActionPrompt() {
+        if (game.getPhase().getType() != MagicPhaseType.DeclareAttackers) {
+            SwingUtilities.invokeLater(new Runnable() {
+                @Override
+                public void run() {
+                    userActionPanel.showMessage("");
+                }
+            });
+        }
     }
 
 }
