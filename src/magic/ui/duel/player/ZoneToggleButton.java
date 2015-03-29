@@ -13,6 +13,7 @@ import java.awt.Transparency;
 import java.awt.font.FontRenderContext;
 import java.awt.image.BufferedImage;
 import javax.swing.JToggleButton;
+import magic.data.GeneralConfig;
 import magic.data.MagicIcon;
 import magic.model.MagicPlayerZone;
 import magic.ui.GraphicsUtilities;
@@ -164,11 +165,13 @@ public class ZoneToggleButton extends JToggleButton {
     }
 
     public void doAlertAnimation() {
-        timeline1 = new Timeline();
-        timeline1.setDuration(200);
-        timeline1.addPropertyToInterpolate(
-                Timeline.property("imageOffset").on(this).from(0).to(4));
-        timeline1.playLoop(4, Timeline.RepeatBehavior.REVERSE);
+        if (GeneralConfig.getInstance().isAnimateGameplay()) {
+            timeline1 = new Timeline();
+            timeline1.setDuration(200);
+            timeline1.addPropertyToInterpolate(
+                    Timeline.property("imageOffset").on(this).from(0).to(4));
+            timeline1.playLoop(4, Timeline.RepeatBehavior.REVERSE);
+        }
     }
 
     public boolean isActive() {

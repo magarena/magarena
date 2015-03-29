@@ -9,6 +9,7 @@ import java.awt.RenderingHints;
 import java.awt.image.BufferedImage;
 import javax.swing.ImageIcon;
 import javax.swing.JPanel;
+import magic.data.GeneralConfig;
 import magic.model.MagicGame;
 import magic.ui.GraphicsUtilities;
 import magic.ui.IconImages;
@@ -143,11 +144,13 @@ public class PlayerImagePanel extends JPanel {
     }
 
     private void doDamageAnimation() {
-        final Timeline timeline = new Timeline();
-        timeline.setDuration(100);
-        timeline.addPropertyToInterpolate(
-                Timeline.property("damageColorOpacity").on(this).from(0).to(120));
-        timeline.playLoop(6, Timeline.RepeatBehavior.REVERSE);
+        if (GeneralConfig.getInstance().isAnimateGameplay()) {
+            final Timeline timeline = new Timeline();
+            timeline.setDuration(100);
+            timeline.addPropertyToInterpolate(
+                    Timeline.property("damageColorOpacity").on(this).from(0).to(120));
+            timeline.playLoop(6, Timeline.RepeatBehavior.REVERSE);
+        }
     }
 
     public int getHealColorOpacity() {
@@ -160,12 +163,14 @@ public class PlayerImagePanel extends JPanel {
     }
 
     private void doHealAnimation() {
-        final Timeline timeline = new Timeline();
-        timeline.setDuration(1000);
-        timeline.setEase(new Spline(0.8f));
-        timeline.addPropertyToInterpolate(
-                Timeline.property("healColorOpacity").on(this).from(100).to(0));
-        timeline.play();
+        if (GeneralConfig.getInstance().isAnimateGameplay()) {
+            final Timeline timeline = new Timeline();
+            timeline.setDuration(1000);
+            timeline.setEase(new Spline(0.8f));
+            timeline.addPropertyToInterpolate(
+                    Timeline.property("healColorOpacity").on(this).from(100).to(0));
+            timeline.play();
+        }
     }
 
 }
