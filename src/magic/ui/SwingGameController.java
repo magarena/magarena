@@ -186,13 +186,9 @@ public class SwingGameController implements IUIGameController, ILogBookListener 
 
     @Override
     public void waitForInput() throws UndoClickedException {
-        try {
-            final boolean undoClicked = input.take();
-            if (undoClicked) {
-                throw new UndoClickedException();
-            }
-        } catch (final InterruptedException ex) {
-            throw new RuntimeException(ex);
+        final boolean undoClicked = waitForInputOrUndo();
+        if (undoClicked) {
+            throw new UndoClickedException();
         }
     }
 
