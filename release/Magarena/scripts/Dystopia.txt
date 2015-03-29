@@ -1,6 +1,6 @@
 name=Dystopia
 image=http://magiccards.info/scans/en/me2/88.jpg
-value=2.500
+value=4.391
 rarity=R
 type=Enchantment
 cost={1}{B}{B}

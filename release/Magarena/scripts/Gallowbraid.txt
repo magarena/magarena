@@ -1,6 +1,6 @@
 name=Gallowbraid
 image=http://magiccards.info/scans/en/wl/12.jpg
-value=2.500
+value=2.337
 rarity=R
 type=Legendary,Creature
 subtype=Horror

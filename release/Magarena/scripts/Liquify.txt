@@ -1,6 +1,6 @@
 name=Liquify
 image=http://magiccards.info/scans/en/tr/41.jpg
-value=2.500
+value=2.864
 rarity=C
 type=Instant
 cost={2}{U}

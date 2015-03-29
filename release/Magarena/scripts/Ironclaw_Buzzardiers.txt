@@ -1,6 +1,6 @@
 name=Ironclaw Buzzardiers
 image=http://magiccards.info/scans/en/ts/165.jpg
-value=2.500
+value=2.274
 rarity=C
 type=Creature
 subtype=Orc,Scout

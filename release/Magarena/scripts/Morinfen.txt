@@ -1,6 +1,6 @@
 name=Morinfen
 image=http://magiccards.info/scans/en/wl/17.jpg
-value=2.500
+value=2.571
 rarity=R
 type=Legendary,Creature
 subtype=Horror

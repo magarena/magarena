@@ -1,6 +1,6 @@
 name=Sunweb
 image=http://magiccards.info/scans/en/8e/52.jpg
-value=2.500
+value=3.140
 rarity=R
 type=Creature
 subtype=Wall

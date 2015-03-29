@@ -1,6 +1,6 @@
 name=One Dozen Eyes
 image=http://magiccards.info/scans/en/c13/159.jpg
-value=2.500
+value=3.214
 rarity=U
 type=Sorcery
 cost={5}{G}

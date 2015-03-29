@@ -1,6 +1,6 @@
 name=Waterspout Weavers
 image=http://magiccards.info/scans/en/mt/56.jpg
-value=2.500
+value=2.093
 rarity=U
 type=Creature
 subtype=Merfolk,Wizard

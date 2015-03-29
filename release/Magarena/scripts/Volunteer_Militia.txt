@@ -1,6 +1,6 @@
 name=Volunteer Militia
 image=http://magiccards.info/scans/en/p3k/30.jpg
-value=2.500
+value=3.093
 rarity=C
 type=Creature
 subtype=Human,Soldier

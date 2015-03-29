@@ -1,6 +1,6 @@
 name=Emberwilde Djinn
 image=http://magiccards.info/scans/en/mr/172.jpg
-value=2.500
+value=2.804
 rarity=R
 type=Creature
 subtype=Djinn

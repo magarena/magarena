@@ -1,6 +1,6 @@
 name=Colfenor's Urn
 image=http://magiccards.info/scans/en/lw/254.jpg
-value=2.500
+value=3.081
 rarity=R
 type=Artifact
 cost={3}

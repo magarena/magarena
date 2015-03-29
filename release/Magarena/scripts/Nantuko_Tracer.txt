@@ -1,6 +1,6 @@
 name=Nantuko Tracer
 image=http://magiccards.info/scans/en/ju/125.jpg
-value=2.500
+value=2.812
 rarity=C
 type=Creature
 subtype=Insect,Druid

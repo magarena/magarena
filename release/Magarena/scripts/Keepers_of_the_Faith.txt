@@ -1,6 +1,6 @@
 name=Keepers of the Faith
 image=http://magiccards.info/scans/en/ch/65.jpg
-value=2.500
+value=1.795
 rarity=C
 type=Creature
 subtype=Human,Cleric

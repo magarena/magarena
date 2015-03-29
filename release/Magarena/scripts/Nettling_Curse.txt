@@ -1,6 +1,6 @@
 name=Nettling Curse
 image=http://magiccards.info/scans/en/di/48.jpg
-value=2.500
+value=3.141
 rarity=C
 type=Enchantment
 subtype=Aura

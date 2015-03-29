@@ -1,6 +1,6 @@
 name=Thraben Purebloods
 image=http://magiccards.info/scans/en/isd/37.jpg
-value=2.500
+value=1.971
 rarity=C
 type=Creature
 subtype=Hound

@@ -1,6 +1,6 @@
 name=Hydroblast
 image=http://magiccards.info/scans/en/med/37.jpg
-value=2.500
+value=4.236
 rarity=C
 type=Instant
 cost={U}

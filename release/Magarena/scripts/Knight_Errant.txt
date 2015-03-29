@@ -1,6 +1,6 @@
 name=Knight Errant
 image=http://magiccards.info/scans/en/7e/24.jpg
-value=2.500
+value=2.819
 rarity=C
 type=Creature
 subtype=Human,Knight

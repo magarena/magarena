@@ -1,6 +1,6 @@
 name=Raging Bull
 image=http://magiccards.info/scans/en/lg/160.jpg
-value=2.500
+value=1.510
 rarity=C
 type=Creature
 subtype=Ox

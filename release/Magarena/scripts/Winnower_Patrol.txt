@@ -1,6 +1,6 @@
 name=Winnower Patrol
 image=http://magiccards.info/scans/en/mt/139.jpg
-value=2.500
+value=3.522
 rarity=C
 type=Creature
 subtype=Elf,Warrior

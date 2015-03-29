@@ -1,6 +1,6 @@
 name=Skeletal Crocodile
 image=http://magiccards.info/scans/en/po/33.jpg
-value=2.500
+value=2.488
 rarity=C
 type=Creature
 subtype=Crocodile,Skeleton

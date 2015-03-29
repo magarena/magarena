@@ -1,6 +1,6 @@
 name=Staggershock
 image=http://magiccards.info/scans/en/roe/166.jpg
-value=2.500
+value=4.227
 rarity=C
 type=Instant
 cost={2}{R}

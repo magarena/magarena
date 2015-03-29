@@ -1,6 +1,6 @@
 name=Chromescale Drake
 image=http://magiccards.info/scans/en/ds/20.jpg
-value=2.500
+value=3.265
 rarity=R
 type=Creature
 subtype=Drake

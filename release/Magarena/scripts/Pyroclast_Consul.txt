@@ -1,6 +1,6 @@
 name=Pyroclast Consul
 image=http://magiccards.info/scans/en/mt/96.jpg
-value=2.500
+value=2.519
 rarity=U
 type=Creature
 subtype=Elemental,Shaman

@@ -1,6 +1,6 @@
 name=Jovial Evil
 image=http://magiccards.info/scans/en/lg/23.jpg
-value=2.500
+value=3.295
 rarity=R
 type=Sorcery
 cost={2}{B}

@@ -1,6 +1,6 @@
 name=Cold Storage
 image=http://magiccards.info/scans/en/tp/270.jpg
-value=2.500
+value=3.618
 rarity=R
 type=Artifact
 cost={4}

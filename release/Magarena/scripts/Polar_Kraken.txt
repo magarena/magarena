@@ -1,6 +1,6 @@
 name=Polar Kraken
 image=http://magiccards.info/scans/en/med/44.jpg
-value=2.500
+value=3.136
 rarity=R
 type=Creature
 subtype=Kraken

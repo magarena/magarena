@@ -1,6 +1,6 @@
 name=Shu Foot Soldiers
 image=http://magiccards.info/scans/en/p3k/24.jpg
-value=2.500
+value=2.304
 rarity=C
 type=Creature
 subtype=Human,Soldier

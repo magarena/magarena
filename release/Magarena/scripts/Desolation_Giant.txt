@@ -1,6 +1,6 @@
 name=Desolation Giant
 image=http://magiccards.info/scans/en/tsts/57.jpg
-value=2.500
+value=3.703
 rarity=R
 type=Creature
 subtype=Giant

@@ -1,6 +1,6 @@
 name=Isamaru, Hound of Konda
 image=http://magiccards.info/scans/en/chk/19.jpg
-value=2.500
+value=4.226
 rarity=R
 type=Legendary,Creature
 subtype=Hound

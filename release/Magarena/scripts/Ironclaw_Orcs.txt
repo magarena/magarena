@@ -1,6 +1,6 @@
 name=Ironclaw Orcs
 image=http://magiccards.info/scans/en/me2/132.jpg
-value=2.500
+value=2.558
 rarity=C
 type=Creature
 subtype=Orc

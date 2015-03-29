@@ -1,6 +1,6 @@
 name=Safe Haven
 image=http://magiccards.info/scans/en/tsts/121.jpg
-value=2.500
+value=3.500
 rarity=R
 type=Land
 timing=land

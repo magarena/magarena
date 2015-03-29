@@ -1,6 +1,6 @@
 name=Goblin Diplomats
 image=http://magiccards.info/scans/en/m14/141.jpg
-value=2.500
+value=3.636
 rarity=R
 type=Creature
 subtype=Goblin

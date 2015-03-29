@@ -1,6 +1,6 @@
 name=Giant Cockroach
 image=http://magiccards.info/scans/en/9e/133.jpg
-value=2.500
+value=1.737
 rarity=C
 type=Creature
 subtype=Insect

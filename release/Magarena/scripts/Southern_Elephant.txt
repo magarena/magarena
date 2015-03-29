@@ -1,6 +1,6 @@
 name=Southern Elephant
 image=http://magiccards.info/scans/en/me4/167.jpg
-value=2.500
+value=2.688
 rarity=C
 type=Creature
 subtype=Elephant

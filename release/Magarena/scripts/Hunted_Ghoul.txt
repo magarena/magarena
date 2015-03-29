@@ -1,6 +1,6 @@
 name=Hunted Ghoul
 image=http://magiccards.info/scans/en/avr/110.jpg
-value=2.500
+value=2.535
 rarity=C
 type=Creature
 subtype=Zombie

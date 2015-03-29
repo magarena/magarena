@@ -1,6 +1,6 @@
 name=Vodalian Soldiers
 image=http://magiccards.info/scans/en/6e/104.jpg
-value=2.500
+value=1.750
 rarity=C
 type=Creature
 subtype=Merfolk,Soldier

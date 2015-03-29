@@ -1,6 +1,6 @@
 name=Sejiri Steppe
 image=http://magiccards.info/scans/en/ddg/36.jpg
-value=2.500
+value=3.676
 rarity=C
 type=Land
 ability=SN enters the battlefield tapped.;\

@@ -1,6 +1,6 @@
 name=Scale of Chiss-Goria
 image=http://magiccards.info/scans/en/mi/236.jpg
-value=2.500
+value=2.250
 rarity=C
 type=Artifact
 cost={3}

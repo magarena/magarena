@@ -1,6 +1,6 @@
 name=Plated Wurm
 image=http://magiccards.info/scans/en/po2/81.jpg
-value=2.500
+value=2.981
 rarity=C
 type=Creature
 subtype=Wurm

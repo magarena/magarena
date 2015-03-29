@@ -1,6 +1,6 @@
 name=Rakdos the Defiler
 image=http://magiccards.info/scans/en/di/129.jpg
-value=2.500
+value=3.799
 rarity=R
 type=Legendary,Creature
 subtype=Demon

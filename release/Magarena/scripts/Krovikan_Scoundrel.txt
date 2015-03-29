@@ -1,6 +1,6 @@
 name=Krovikan Scoundrel
 image=http://magiccards.info/scans/en/cs/64.jpg
-value=2.500
+value=1.531
 rarity=C
 type=Creature
 subtype=Human,Rogue

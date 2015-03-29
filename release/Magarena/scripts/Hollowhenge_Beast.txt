@@ -1,6 +1,6 @@
 name=Hollowhenge Beast
 image=http://magiccards.info/scans/en/dka/118.jpg
-value=2.500
+value=2.694
 rarity=C
 type=Creature
 subtype=Beast

@@ -1,6 +1,6 @@
 name=Minotaur Abomination
 image=http://magiccards.info/scans/en/m14/107.jpg
-value=2.500
+value=2.175
 rarity=C
 type=Creature
 subtype=Zombie,Minotaur

@@ -1,6 +1,6 @@
 name=Goblin Piker
 image=http://magiccards.info/scans/en/m12/141.jpg
-value=2.500
+value=1.526
 rarity=C
 type=Creature
 subtype=Goblin,Warrior

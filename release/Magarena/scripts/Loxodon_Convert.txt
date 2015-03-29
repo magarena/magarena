@@ -1,6 +1,6 @@
 name=Loxodon Convert
 image=http://magiccards.info/scans/en/nph/14.jpg
-value=2.500
+value=2.015
 rarity=C
 type=Creature
 subtype=Elephant,Soldier

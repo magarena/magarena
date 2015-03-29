@@ -1,6 +1,6 @@
 name=Dwarven Scorcher
 image=http://magiccards.info/scans/en/ju/86.jpg
-value=2.500
+value=2.828
 rarity=C
 type=Creature
 subtype=Dwarf

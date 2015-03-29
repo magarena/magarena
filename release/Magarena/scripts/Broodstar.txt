@@ -1,6 +1,6 @@
 name=Broodstar
 image=http://magiccards.info/scans/en/pch/8.jpg
-value=2.500
+value=4.347
 rarity=R
 type=Creature
 subtype=Beast

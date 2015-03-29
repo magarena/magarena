@@ -1,6 +1,6 @@
 name=Obsianus Golem
 image=http://magiccards.info/scans/en/me4/218.jpg
-value=2.500
+value=2.694
 rarity=U
 type=Artifact,Creature
 subtype=Golem

@@ -1,6 +1,6 @@
 name=Leatherback Baloth
 image=http://magiccards.info/scans/en/wwk/107.jpg
-value=2.500
+value=4.319
 rarity=U
 type=Creature
 subtype=Beast

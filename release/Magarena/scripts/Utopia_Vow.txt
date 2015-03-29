@@ -1,6 +1,6 @@
 name=Utopia Vow
 image=http://magiccards.info/scans/en/pc/142.jpg
-value=3.346
+value=3.333
 rarity=C
 type=Enchantment
 subtype=Aura

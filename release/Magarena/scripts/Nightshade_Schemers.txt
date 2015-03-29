@@ -1,6 +1,6 @@
 name=Nightshade Schemers
 image=http://magiccards.info/scans/en/mt/69.jpg
-value=2.500
+value=2.466
 rarity=U
 type=Creature
 subtype=Faerie,Wizard

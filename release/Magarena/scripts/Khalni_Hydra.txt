@@ -1,6 +1,6 @@
 name=Khalni Hydra
 image=http://magiccards.info/scans/en/roe/192.jpg
-value=2.500
+value=4.252
 rarity=M
 type=Creature
 subtype=Hydra

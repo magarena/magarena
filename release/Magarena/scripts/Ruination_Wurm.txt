@@ -1,6 +1,6 @@
 name=Ruination Wurm
 image=http://magiccards.info/scans/en/gtc/192.jpg
-value=2.500
+value=2.976
 rarity=C
 type=Creature
 subtype=Wurm

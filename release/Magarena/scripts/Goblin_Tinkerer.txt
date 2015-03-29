@@ -1,6 +1,6 @@
 name=Goblin Tinkerer
 image=http://magiccards.info/scans/en/mr/180.jpg
-value=2.500
+value=3.682
 rarity=C
 type=Creature
 subtype=Goblin,Artificer

@@ -1,6 +1,6 @@
 name=Solar Tide
 image=http://magiccards.info/scans/en/mi/24.jpg
-value=2.500
+value=3.440
 rarity=R
 type=Sorcery
 cost={4}{W}{W}

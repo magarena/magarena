@@ -1,6 +1,6 @@
 name=Serendib Djinn
 image=http://magiccards.info/scans/en/me4/61.jpg
-value=2.500
+value=3.318
 rarity=R
 type=Creature
 subtype=Djinn

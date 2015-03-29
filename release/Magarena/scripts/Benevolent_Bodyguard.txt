@@ -1,6 +1,6 @@
 name=Benevolent Bodyguard
 image=http://magiccards.info/scans/en/vma/17.jpg
-value=2.500
+value=3.000
 rarity=C
 type=Creature
 subtype=Human,Cleric

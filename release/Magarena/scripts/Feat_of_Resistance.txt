@@ -1,6 +1,6 @@
 name=Feat of Resistance
 image=http://magiccards.info/scans/en/ktk/10.jpg
-value=2.500
+value=4.000
 rarity=C
 type=Instant
 cost={1}{W}

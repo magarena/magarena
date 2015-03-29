@@ -1,6 +1,6 @@
 name=Reap and Sow
 image=http://magiccards.info/scans/en/ds/81.jpg
-value=2.500
+value=3.671
 rarity=C
 type=Sorcery
 cost={3}{G}

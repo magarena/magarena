@@ -1,6 +1,6 @@
 name=Tarox Bladewing
 image=http://magiccards.info/scans/en/fut/123.jpg
-value=2.500
+value=3.877
 rarity=R
 type=Legendary,Creature
 subtype=Dragon

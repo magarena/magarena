@@ -1,6 +1,6 @@
 name=Python
 image=http://magiccards.info/scans/en/po/28.jpg
-value=2.500
+value=2.438
 rarity=C
 type=Creature
 subtype=Snake

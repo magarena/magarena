@@ -1,6 +1,6 @@
 name=Gibbering Hyenas
 image=http://magiccards.info/scans/en/mr/117.jpg
-value=2.500
+value=2.382
 rarity=C
 type=Creature
 subtype=Hyena

@@ -1,6 +1,6 @@
 name=Fugitive Wizard
 image=http://magiccards.info/scans/en/m15/56.jpg
-value=2.500
+value=0.591
 rarity=C
 type=Creature
 subtype=Human,Wizard

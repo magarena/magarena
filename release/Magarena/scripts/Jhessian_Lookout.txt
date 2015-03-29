@@ -1,6 +1,6 @@
 name=Jhessian Lookout
 image=http://magiccards.info/scans/en/ala/46.jpg
-value=2.500
+value=1.581
 rarity=C
 type=Creature
 subtype=Human,Scout

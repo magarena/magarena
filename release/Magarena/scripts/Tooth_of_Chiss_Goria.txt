@@ -1,6 +1,6 @@
 name=Tooth of Chiss-Goria
 image=http://magiccards.info/scans/en/mi/264.jpg
-value=2.500
+value=3.203
 rarity=C
 type=Artifact
 cost={3}

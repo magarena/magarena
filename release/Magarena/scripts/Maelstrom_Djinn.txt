@@ -1,6 +1,6 @@
 name=Maelstrom Djinn
 image=http://magiccards.info/scans/en/fut/39.jpg
-value=2.500
+value=2.783
 rarity=R
 type=Creature
 subtype=Djinn

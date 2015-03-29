@@ -1,6 +1,6 @@
 name=Jace, the Mind Sculptor
 image=http://magiccards.info/scans/en/vma/74.jpg
-value=2.500
+value=3.444
 rarity=M
 type=Planeswalker
 subtype=Jace

@@ -1,6 +1,6 @@
 name=Barbarian Bully
 image=http://magiccards.info/scans/en/ju/79.jpg
-value=2.500
+value=2.629
 rarity=C
 type=Creature
 subtype=Human,Barbarian

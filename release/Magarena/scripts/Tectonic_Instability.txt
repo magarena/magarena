@@ -1,6 +1,6 @@
 name=Tectonic Instability
 image=http://magiccards.info/scans/en/in/173.jpg
-value=2.500
+value=3.024
 rarity=R
 type=Enchantment
 cost={2}{R}

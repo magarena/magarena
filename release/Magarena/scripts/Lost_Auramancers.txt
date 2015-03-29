@@ -1,6 +1,6 @@
 name=Lost Auramancers
 image=http://magiccards.info/scans/en/fut/11.jpg
-value=2.500
+value=3.561
 rarity=U
 type=Creature
 subtype=Human,Wizard

@@ -1,6 +1,6 @@
 name=Distortion Strike
 image=http://magiccards.info/scans/en/roe/60.jpg
-value=2.500
+value=4.225
 rarity=C
 type=Sorcery
 cost={U}

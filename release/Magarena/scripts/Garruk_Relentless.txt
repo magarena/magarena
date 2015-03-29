@@ -1,6 +1,6 @@
 name=Garruk Relentless
 image=http://magiccards.info/scans/en/isd/181a.jpg
-value=2.500
+value=3.468
 rarity=M
 type=Planeswalker
 subtype=Garruk

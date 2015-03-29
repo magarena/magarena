@@ -1,6 +1,6 @@
 name=Pillarfield Ox
 image=http://magiccards.info/scans/en/cns/76.jpg
-value=2.500
+value=2.750
 rarity=C
 type=Creature
 subtype=Ox

@@ -1,6 +1,6 @@
 name=Hidden Horror
 image=http://magiccards.info/scans/en/10e/149.jpg
-value=2.500
+value=3.948
 rarity=U
 type=Creature
 subtype=Horror

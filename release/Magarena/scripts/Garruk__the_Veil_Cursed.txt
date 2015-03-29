@@ -1,6 +1,6 @@
 name=Garruk, the Veil-Cursed
 image=http://magiccards.info/scans/en/isd/181b.jpg
-value=2.500
+value=3.468
 rarity=M
 type=Planeswalker
 subtype=Garruk

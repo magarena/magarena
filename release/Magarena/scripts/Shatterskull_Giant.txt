@@ -1,6 +1,6 @@
 name=Shatterskull Giant
 image=http://magiccards.info/scans/en/zen/148.jpg
-value=2.500
+value=2.811
 rarity=C
 type=Creature
 subtype=Giant,Warrior

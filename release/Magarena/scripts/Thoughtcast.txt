@@ -1,6 +1,6 @@
 name=Thoughtcast
 image=http://magiccards.info/scans/en/ddf/71.jpg
-value=2.500
+value=4.483
 rarity=C
 type=Sorcery
 cost={4}{U}

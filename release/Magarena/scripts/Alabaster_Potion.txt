@@ -1,6 +1,6 @@
 name=Alabaster Potion
 image=http://magiccards.info/scans/en/me3/2.jpg
-value=2.500
+value=2.793
 rarity=U
 type=Instant
 cost={X}{W}{W}

@@ -1,6 +1,6 @@
 name=Water Elemental
 image=http://magiccards.info/scans/en/me4/70.jpg
-value=2.500
+value=2.885
 rarity=U
 type=Creature
 subtype=Elemental

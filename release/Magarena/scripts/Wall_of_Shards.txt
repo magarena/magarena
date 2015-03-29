@@ -1,6 +1,6 @@
 name=Wall of Shards
 image=http://magiccards.info/scans/en/cs/23.jpg
-value=2.500
+value=3.500
 rarity=U
 type=Snow,Creature
 subtype=Wall

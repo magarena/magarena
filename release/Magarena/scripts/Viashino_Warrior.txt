@@ -1,6 +1,6 @@
 name=Viashino Warrior
 image=http://magiccards.info/scans/en/bd/50.jpg
-value=2.500
+value=2.436
 rarity=C
 type=Creature
 subtype=Viashino,Warrior

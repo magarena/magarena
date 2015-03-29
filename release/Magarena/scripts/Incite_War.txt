@@ -1,6 +1,6 @@
 name=Incite War
 image=http://magiccards.info/scans/en/mi/96.jpg
-value=2.500
+value=3.740
 rarity=C
 type=Instant
 cost={2}{R}

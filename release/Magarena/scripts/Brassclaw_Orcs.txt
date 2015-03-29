@@ -1,6 +1,6 @@
 name=Brassclaw Orcs
 image=http://magiccards.info/scans/en/me2/119.jpg
-value=2.500
+value=2.414
 rarity=C
 type=Creature
 subtype=Orc

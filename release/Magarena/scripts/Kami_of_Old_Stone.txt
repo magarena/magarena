@@ -1,6 +1,6 @@
 name=Kami of Old Stone
 image=http://magiccards.info/scans/en/9e/24.jpg
-value=2.500
+value=2.273
 rarity=U
 type=Creature
 subtype=Spirit

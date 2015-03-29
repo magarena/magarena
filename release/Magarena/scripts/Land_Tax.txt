@@ -1,6 +1,6 @@
 name=Land Tax
 image=http://magiccards.info/scans/en/me3/17.jpg
-value=2.500
+value=4.588
 rarity=U
 type=Enchantment
 cost={W}

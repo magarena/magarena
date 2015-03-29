@@ -1,6 +1,6 @@
 name=Kindercatch
 image=http://magiccards.info/scans/en/isd/190.jpg
-value=2.500
+value=2.674
 rarity=C
 type=Creature
 subtype=Spirit

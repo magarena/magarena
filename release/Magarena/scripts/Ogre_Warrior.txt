@@ -1,6 +1,6 @@
 name=Ogre Warrior
 image=http://magiccards.info/scans/en/st2k/12.jpg
-value=2.500
+value=1.774
 rarity=C
 type=Creature
 subtype=Ogre,Warrior

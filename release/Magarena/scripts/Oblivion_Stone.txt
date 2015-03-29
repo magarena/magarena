@@ -1,6 +1,6 @@
 name=Oblivion Stone
 image=http://magiccards.info/scans/en/cmd/254.jpg
-value=2.500
+value=4.183
 rarity=R
 type=Artifact
 cost={3}

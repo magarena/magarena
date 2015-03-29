@@ -1,6 +1,6 @@
 name=Quilled Slagwurm
 image=http://magiccards.info/scans/en/mbs/89.jpg
-value=2.500
+value=2.427
 rarity=U
 type=Creature
 subtype=Wurm

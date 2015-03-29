@@ -1,6 +1,6 @@
 name=Walking Corpse
 image=http://magiccards.info/scans/en/m15/278.jpg
-value=2.500
+value=2.000
 rarity=C
 type=Creature
 subtype=Zombie

@@ -1,6 +1,6 @@
 name=Goblin Cavaliers
 image=http://magiccards.info/scans/en/me4/118.jpg
-value=2.500
+value=3.269
 rarity=C
 type=Creature
 subtype=Goblin

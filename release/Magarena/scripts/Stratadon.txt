@@ -1,6 +1,6 @@
 name=Stratadon
 image=http://magiccards.info/scans/en/ps/135.jpg
-value=2.500
+value=3.250
 rarity=U
 type=Artifact,Creature
 subtype=Beast

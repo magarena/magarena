@@ -1,6 +1,6 @@
 name=Blessing of the Nephilim
 image=http://magiccards.info/scans/en/di/4.jpg
-value=2.500
+value=3.307
 rarity=U
 type=Enchantment
 subtype=Aura

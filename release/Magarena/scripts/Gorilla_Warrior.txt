@@ -1,6 +1,6 @@
 name=Gorilla Warrior
 image=http://magiccards.info/scans/en/br/30.jpg
-value=2.500
+value=2.700
 rarity=C
 type=Creature
 subtype=Ape,Warrior

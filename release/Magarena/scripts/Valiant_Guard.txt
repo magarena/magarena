@@ -1,6 +1,6 @@
 name=Valiant Guard
 image=http://magiccards.info/scans/en/cfx/19.jpg
-value=2.500
+value=2.386
 rarity=C
 type=Creature
 subtype=Human,Soldier

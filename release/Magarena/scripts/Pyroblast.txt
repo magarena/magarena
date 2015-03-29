@@ -1,6 +1,6 @@
 name=Pyroblast
 image=http://magiccards.info/scans/en/med/107.jpg
-value=2.500
+value=4.530
 rarity=C
 type=Instant
 cost={R}

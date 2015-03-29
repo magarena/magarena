@@ -1,6 +1,6 @@
 name=Varchild's War-Riders
 image=http://magiccards.info/scans/en/med/110.jpg
-value=2.500
+value=4.125
 rarity=R
 type=Creature
 subtype=Human,Warrior

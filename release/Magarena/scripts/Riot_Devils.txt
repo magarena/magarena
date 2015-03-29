@@ -1,6 +1,6 @@
 name=Riot Devils
 image=http://magiccards.info/scans/en/isd/160.jpg
-value=2.500
+value=2.158
 rarity=C
 type=Creature
 subtype=Devil

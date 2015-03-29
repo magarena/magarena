@@ -1,6 +1,6 @@
 name=Prey's Vengeance
 image=http://magiccards.info/scans/en/roe/205.jpg
-value=2.500
+value=3.694
 rarity=U
 type=Instant
 cost={G}

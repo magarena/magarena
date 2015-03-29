@@ -1,6 +1,6 @@
 name=Kithkin Zephyrnaut
 image=http://magiccards.info/scans/en/mt/16.jpg
-value=2.500
+value=2.875
 rarity=C
 type=Creature
 subtype=Kithkin,Soldier

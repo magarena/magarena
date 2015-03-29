@@ -1,6 +1,6 @@
 name=Aven Liberator
 image=http://magiccards.info/scans/en/sc/4.jpg
-value=2.500
+value=2.674
 rarity=C
 type=Creature
 subtype=Bird,Soldier

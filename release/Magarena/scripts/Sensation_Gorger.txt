@@ -1,6 +1,6 @@
 name=Sensation Gorger
 image=http://magiccards.info/scans/en/mt/102.jpg
-value=2.500
+value=3.570
 rarity=R
 type=Creature
 subtype=Goblin,Shaman

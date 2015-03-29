@@ -1,6 +1,6 @@
 name=Somber Hoverguard
 image=http://magiccards.info/scans/en/mi/51.jpg
-value=2.500
+value=3.694
 rarity=C
 type=Creature
 subtype=Drone

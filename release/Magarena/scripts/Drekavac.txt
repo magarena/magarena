@@ -1,6 +1,6 @@
 name=Drekavac
 image=http://magiccards.info/scans/en/di/43.jpg
-value=2.500
+value=2.625
 rarity=U
 type=Creature
 subtype=Beast
