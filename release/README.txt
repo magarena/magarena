@@ -68,8 +68,155 @@ Thank you for your support and have fun!
 
 
 
-Release 1.60 (March 29, 2015)
+Release 1.60 (March 30, 2015)
 ============
+Guest
+lodici
+melvin
+Mike
+PalladiaMors
+ShawnieBoy
+
+- new customizable DuelSideBarPanel
+
+- Player health, poison and damage prevention are displayed as overlays on the
+  player image. The non-turn player image is greyscaled.
+
+- add visual indication when player receives damage or gains health
+
+- mtgimage to magiccards.info
+
+- download errors should show error to user instead of asking user to check the console.
+
+- improve robustness of Firemind worker
+
+- background loading of cards
+
+- support Dragons of Tarkir in Card Explorer
+
+- added the following to the card script:
+  * cost: Exile [amount] [cards]
+  * condition: creatures you control have total power 8 or greater
+  * condition: SN is an Enchantment
+  * ability: SN can't block <creatures>
+  * ability: megamorph <cost>
+  * ability: exploit
+  * ability: kinship <effect>
+  * ability: can attack as as though it didn't have defender
+  * ability: affinity for <permanents>
+  * ability: entwine <cost>
+  * ability: When SN exploits a creature, <effect>
+  * ability: Whenever a <creature> attacks, <effect>.
+  * effect: Counter [spell]. If that spell is countered this way, exile it instead of putting it into its owner's graveyard.
+  * effect: Whenever SN blocks a <creature>, <effect>.
+  * effect: Rebound
+  * effect: Regenerate each <permanent>.
+  * effect: <permanent> gain protection from the color of your choice until end of turn.
+  * effect: Put <card> on the bottom of its owner's library.
+  * effect: SN becomes a <pt> <subtype> creature with <abilities>.
+
+- fixed the following bugs:
+  * remove MagicCleanupCreatureAction, include damage/prevent damage cleanup for permanents to cater for those that can change to creatures
+  * If any exception is thrown when playing a sound log error to stderr. Fixes 112.
+  * set LC_CTYPE to UTF-8 when launching on Mac so that filenames with non ascii characters can be created
+  * ensure cached* members are never null, fix crash when attempting to update UI with pt of card with CDA
+  * Fixes #120 : Always present Horizontal scrollbar issue in user action panel.
+  * Dash should be a card activation not a card ability so it counts as casting a spell. Fixes issue #97
+  * fix issue #44 : Mulligan screen closes prematurely if re-deal on two card types.
+  * fix toughness filter checking for power
+  * fix *Chimera cards, ability gained should be last forever, not until EOT
+  * 'Cast SN with' must be the first ability as it removes all card activations, fixes issue #81 phyrexian metamorph (alt), sakashima's student (ninjutsu)
+  * create MagicManifestCardAction that always uses MagicPlayCardEvent.create() for the card event, fixed issue #107, unable to manifest spells, casting them instead
+  * fix unable to pay life to cast Moltensteel Dragon and Pith Driller (missing alt cost for phyrexian mana)
+  * include modifications from original card on stack, when creating new card on stack for clone. fixes issue #108 
+    (reanimate clone with puppeteer clique, did not inherit modification exile)
+  * fix targeted modal effects, was not working due to MagicOrChoice not overriding getTargetChoice
+
+- added the following cards:
+Aboroth, Abuna's Chant, Abzan Advantage, Abzan Kin-Guard, Abzan Runemark,
+Aerie Bowmasters, Ainok Artillerist, Ainok Survivalist, Alabaster Potion,
+Alesha, Who Smiles at Death, Ambush Krotiq, Anafenza, Kin-Tree Spirit,
+Ancestral Statue, Ancestral Vengeance, Ancient Carp, Apostle's Blessing,
+Armored Guardian, Artful Maneuver, Assert Authority, Atarka Beastbreaker,
+Atarka Efreet, Atarka, World Render, Aven Liberator, Aven Sunstriker,
+Aven Tactician, Barbarian Bully, Baru, Fist of Krosa, Bathe in Light,
+Battle Brawler, Benevolent Bodyguard, Berserkers' Onslaught,
+Blasphemous Act, Blessing of the Nephilim, Blinkmoth Infusion,
+Bogardan Phoenix, Boltwing Marauder, Book Burning, Bottled Cloister,
+Bower Passage, Brassclaw Orcs, Break Through the Line,
+Broodstar, Browbeat, Bullwhip, Butcher of the Horde, Center Soul,
+Chain Lightning, Champion of Arashin, Chaosphere, Chromescale Drake,
+Coat with Venom, Cold Storage, Colfenor's Urn, Collateral Damage,
+Colossodon Yearling, Conifer Strider, Contradict, Cunning Breezedancer,
+Custodian of the Trove, Cyclopean Mummy, Cyclops Tyrant, Dark Deal,
+Defeat, Dense Canopy, Desolation Angel, Desolation Giant, Dirgur Nemesis,
+Distortion Strike, Draco, Dragonloft Idol, Dragon-Scarred Bear,
+Dragon's Eye Sentry, Drekavac, Dromoka Captain, Dromoka Dunecaster,
+Dromoka's Gift, Dromoka, the Eternal, Dromoka Warrior, Dross Golem,
+Dwarven Scorcher, Dystopia, Earnest Fellowship, Echoes of the Kin Tree,
+Elite Scaleguard, Elusive Spellfist, Emberwilde Caliph, Emberwilde Djinn,
+Emerge Unscathed, Empty-Shrine Kannushi, Energy Bolt, Fascination,
+Fate Forgotten, Feat of Resistance, Feldon's Cane, Flatten,
+Fleet-Footed Monk, Fleshwrither, Foil, Foresight, Forsaken Wastes,
+Frogmite, Frontier Mastodon, Fruit of the First Tree, Gallowbraid,
+Garruk Relentless, Garruk, the Veil-Cursed, Ghoultree, Gibbering Hyenas,
+Glacial Chasm, Glint, Goblin Boom Keg, Goblin Diplomats, Goblin Mutant,
+Goblin Tinkerer, Gods Willing, Grave Strength, Grazing Kelpie,
+Great Teacher's Decree, Grip of Amnesia, Gudul Lurker, Hand of Silumgar,
+Harsh Sustenance, Herald of Dromoka, Hero's Blade, Hidden Horror,
+Humble Defector, Hunted Ghoul, Hydroblast, Impact Tremors,
+Incite War, Infernal Contract, Ink Dissolver, Inner Sanctum,
+Into Thin Air, Invoke the Firemind, Ironclaw Buzzardiers,
+Ironclaw Orcs, Jace, the Mind Sculptor, Jeskai Barricade,
+Jeskai Runemark, Jolrael, Empress of Beasts, Jovial Evil,
+Kami of the Painted Road, Khalni Hydra, Kithkin Zephyrnaut,
+Kolaghan Forerunners, Kolaghan Skirmisher, Kolaghan Stormsinger,
+Kolaghan, the Storm's Fury, Kookus, Korlash, Heir to Blackblade,
+Land Equilibrium, Land Tax, Leaf-Crowned Elder, Lightning Berserker,
+Lightwalker, Liquify, Lost Auramancers, Lyzolda, the Blood Witch,
+Maelstrom Djinn, Magmatic Chasm, Marang River Skeleton,
+Mardu Runemark, Marsh Hulk, Marshmist Titan, Midvast Protector,
+Might of the Nephilim, Mindscour Dragon, Minister of Pain,
+Misthoof Kirin, Momir Vig, Simic Visionary, Monastery Loremaster,
+Moonlit Strider, Morinfen, Mother of Runes, Mudbutton Clanger,
+Myr Enforcer, Nantuko Tracer, Natural Affinity, Nature's Wrath,
+Nettling Curse, Nightcreep, Nightshade Schemers, Oblivion Stone,
+Ogre Jailbreaker, Ojutai Interceptor, Ojutai's Breath,
+Ojutai, Soul of Winter, One Dozen Eyes, Orgg, Oxidda Golem,
+Palace Familiar, Pale Wayfarer, Pharagax Giant, Phyrexian Soulgorger,
+Pilgrim of the Fires, Pitiless Horde, Polar Kraken, Powder Keg,
+Prey's Vengeance, Profound Journey, Promise of Power, Psychic Vortex,
+Pyroblast, Pyroclast Consul, Qarsi Sadist, Quicksilver Behemoth,
+Qumulox, Rakdos Charm, Rakdos the Defiler, Rakshasa Gravecaller,
+Rakshasa's Disdain, Razor Barrier, Razor Golem, Reap and Sow,
+Reckless Imp, Resupply, Roar of the Kha, Roast, Rude Awakening,
+Safe Haven, Salt Road Quartermasters, Samite Elder, Sandcrafter Mage,
+Sandsteppe Scavenger, Sandstorm Charger, Sarkhan's Triumph,
+Scale of Chiss-Goria, Scion of Ugin, Screamreach Brawler,
+Segmented Krotiq, Seismic Rupture, Sejiri Steppe, Sensation Gorger,
+Serendib Djinn, Shaman of the Great Hunt, Shambling Goblin,
+Shape the Sands, Shelter, Shipwreck Singer, Shockmaw Dragon, Shrike Harpy,
+Sibsig Icebreakers, Sidisi's Faithful, Sidisi, Undead Vizier,
+Silumgar Butcher, Silumgar Sorcerer, Silumgar Spell-Eater,
+Silumgar, the Drifting Death, Skaab Goliath, Skullscorch,
+Smoldering Efreet, Sneaky Homunculus, Solar Tide, Somber Hoverguard,
+Spire Golem, Spiritual Asylum, Spiritual Sanctuary, Sprinting Warbrute,
+Squeaking Pie Grubfellows, Staggershock, Stalwart Shield-Bearers,
+Stampeding Elk Herd, Stave Off, Stoic Rebuttal, Stone Idol Trap,
+Stormcrag Elemental, Stormscape Master, Stratadon, Stratus Dancer,
+Strongarm Monk, Student of Ojutai, Sultai Runemark, Sunweb,
+Sygg, River Guide, Synod Sanctum, Taigam's Strike, Tangle Golem,
+Tangle Wire, Tarox Bladewing, Tectonic Instability, Temporal Cascade,
+Temur Runemark, Temur Sabertooth, Territorial Roc, Thawing Glaciers,
+Thornscape Master, Thoughtcast, Thought Lash, Tooth and Nail,
+Tooth of Chiss-Goria, Tread Upon, Ukud Cobra, Undergrowth,
+Updraft Elemental, Varchild's Crusader, Varchild's War-Riders,
+Vexing Sphinx, Vial of Dragonfire, Virulent Plague, Virulent Swipe,
+Void Squall, Volcanic Rush, Vulturous Aven, Wail of the Nim,
+Wakestone Gargoyle, Wall of Shards, Wandering Graybeard,
+Wandering Tombshell, War Flare, Waterspout Weavers, Winnower Patrol,
+Wolf-Skull Shaman, Worldgorger Dragon, Wormfang Behemoth,
+Youthful Scholar, Zephyr Scribe, Zurgo Bellstriker
 
 Release 1.59 (February 28, 2015)
 ============
