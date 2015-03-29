@@ -25,9 +25,9 @@ final public class MagicSystem {
     public static final boolean IS_WINDOWS_OS = System.getProperty("os.name").toLowerCase().startsWith("windows");
     private static final ProgressReporter reporter = new ProgressReporter();
     private static final FutureTask<Void> loadCards = new FutureTask<>(new Runnable() {
-         public void run() {
-              initializeEngine(reporter);
-         }
+        public void run() {
+            initializeEngine(reporter);
+        }
     }, null);
 
     public static boolean isTestGame() {
