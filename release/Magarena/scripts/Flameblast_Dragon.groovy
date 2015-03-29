@@ -13,8 +13,7 @@
                         permanent.getController().getMaximumX(game,MagicManaCost.create("{X}{R}"))
                     ),
                     this,
-                    "You may pay\$ {X}{R}\$. If you do, SN " +
-                    "deals X damage to target creature or player\$."
+                    "PN may\$ pay {X}{R}\$. If PN does, SN deals X damage to target creature or player\$."
                 ):
                 MagicEvent.NONE;
         }
