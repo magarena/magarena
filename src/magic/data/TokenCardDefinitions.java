@@ -2,13 +2,13 @@ package magic.data;
 
 import magic.model.MagicCardDefinition;
 
+import java.util.concurrent.ConcurrentMap;
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.Collection;
-import java.util.HashMap;
-import java.util.Map;
 
 public class TokenCardDefinitions {
 
-    private static final Map<String,MagicCardDefinition> tokensMap = new HashMap<>();
+    private static final ConcurrentMap<String,MagicCardDefinition> tokensMap = new ConcurrentHashMap<>();
 
     public static Collection<MagicCardDefinition> getAll() {
         return tokensMap.values();
@@ -28,6 +28,6 @@ public class TokenCardDefinitions {
     }
 
     public static void add(final MagicCardDefinition token) {
-        tokensMap.put(token.getFullName().toLowerCase(), token);
+        tokensMap.putIfAbsent(token.getFullName().toLowerCase(), token);
     }
 }
