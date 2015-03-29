@@ -131,6 +131,8 @@ ShawnieBoy
   * include modifications from original card on stack, when creating new card on stack for clone. fixes issue #108 
     (reanimate clone with puppeteer clique, did not inherit modification exile)
   * fix targeted modal effects, was not working due to MagicOrChoice not overriding getTargetChoice
+  * fix timing for Snapcaster Mage
+  * fix issue #131 : All permanents get damage marker cleared at end of turn
 
 - added the following cards:
 Aboroth, Abuna's Chant, Abzan Advantage, Abzan Kin-Guard, Abzan Runemark,
