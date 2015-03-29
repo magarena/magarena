@@ -23,6 +23,7 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.ConcurrentMap;
 import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.atomic.AtomicInteger;
 import magic.utility.ProgressReporter;
 import magic.utility.MagicSystem;
 import magic.model.MagicCardDefinition;
@@ -61,6 +62,7 @@ public class CardDefinitions {
     private static final List<MagicCardDefinition> landCards = new ArrayList<>();
     private static final List<MagicCardDefinition> spellCards = new ArrayList<>();
 
+    private static final AtomicInteger cdefIndex = new AtomicInteger(1);
 
     // groovy shell for evaluating groovy card scripts with autmatic imports
     private static final GroovyShell shell = new GroovyShell(
@@ -103,22 +105,14 @@ public class CardDefinitions {
             return;
         }
 
-        //TODO size is no longer unique to do multiple threads calling addDefinition
-        cardDefinition.setIndex(allPlayableCardDefs.size());
-
+        cardDefinition.setIndex(cdefIndex.getAndIncrement());
+        
         if (cardDefinition.isToken()) {
             TokenCardDefinitions.add(cardDefinition);
-        } else if (cardDefinition.isHidden() == false) {
+        }
+        
+        if (cardDefinition.isToken() == false && cardDefinition.isHidden() == false) {
             cardDefinition.add(new MagicCardActivation(cardDefinition));
-
-            defaultPlayableCardDefs.add(cardDefinition);
-            CubeDefinitions.getCubeDefinition("all").add(cardDefinition.getName());
-
-            if (cardDefinition.isLand() == false) {
-                spellCards.add(cardDefinition);
-            } else if (cardDefinition.isBasic() == false) {
-                landCards.add(cardDefinition);
-            }
         }
     }
 
@@ -212,6 +206,20 @@ public class CardDefinitions {
             }
         }
         reporter.setMessage("Loading cards...100%");
+        
+        // update card lists
+        for (final MagicCardDefinition cardDefinition : allPlayableCardDefs.values()) {
+            if (cardDefinition.isToken() == false && cardDefinition.isHidden() == false) {
+                defaultPlayableCardDefs.add(cardDefinition);
+                CubeDefinitions.getCubeDefinition("all").add(cardDefinition.getName());
+
+                if (cardDefinition.isLand() == false) {
+                    spellCards.add(cardDefinition);
+                } else if (cardDefinition.isBasic() == false) {
+                    landCards.add(cardDefinition);
+                }
+            }
+        }
     }
 
     public static void postCardDefinitions() {
