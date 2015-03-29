@@ -967,4 +967,8 @@ public class SwingGameController implements IUIGameController, ILogBookListener 
         return gamePanel.getStackViewerRectangle(canvas);
     }
 
+    public void doFlashPlayerHandZoneButton() {
+        gamePanel.doFlashPlayerHandZoneButton();
+    }
+
 }

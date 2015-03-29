@@ -266,6 +266,9 @@ public final class DuelPanel extends JPanel {
         assert !SwingUtilities.isEventDispatchThread();
         final PlayCardAnimation animationEvent = battlefieldPanel.getPlayCardFromHandAnimation();
         if (animationEvent != null && CONFIG.isAnimateGameplay()) {
+            if (animationEvent.getPlayer() != controller.getGame().getVisiblePlayer()) {
+                controller.doFlashPlayerHandZoneButton();
+            }
             animator.runAnimation(animationEvent);
         }
         battlefieldPanel.setPlayCardFromHandAnimation(null);
@@ -332,6 +335,10 @@ public final class DuelPanel extends JPanel {
 
     public Rectangle getStackViewerRectangle(Component canvas) {
         return sidebarPanel.getStackViewerRectangle(canvas);
+    }
+
+    public void doFlashPlayerHandZoneButton() {
+        sidebarPanel.doFlashPlayerHandZoneButton();
     }
 
 }

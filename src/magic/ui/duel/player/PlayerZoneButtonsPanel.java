@@ -109,4 +109,8 @@ public class PlayerZoneButtonsPanel extends JPanel {
         return new Rectangle(pointOnCanvas.x, pointOnCanvas.y, btn.getWidth(), btn.getHeight());
     }
 
+    void doFlashPlayerHandZoneButton() {
+        zoneButtons.get(MagicPlayerZone.HAND).doAlertAnimation();
+    }
+
 }

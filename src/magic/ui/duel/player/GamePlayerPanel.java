@@ -94,4 +94,8 @@ public class GamePlayerPanel extends TexturedPanel implements ChoiceViewer {
         return zoneButtonsPanel.getZoneButtonRectangle(zone, canvas);
     }
 
+    public void doFlashPlayerHandZoneButton() {
+        zoneButtonsPanel.doFlashPlayerHandZoneButton();
+    }
+
 }

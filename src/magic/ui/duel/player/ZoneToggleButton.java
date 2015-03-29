@@ -168,7 +168,7 @@ public class ZoneToggleButton extends JToggleButton {
         timeline1.setDuration(200);
         timeline1.addPropertyToInterpolate(
                 Timeline.property("imageOffset").on(this).from(0).to(4));
-        timeline1.playLoop(2, Timeline.RepeatBehavior.REVERSE);
+        timeline1.playLoop(4, Timeline.RepeatBehavior.REVERSE);
     }
 
     public boolean isActive() {
