@@ -10,6 +10,7 @@ import magic.data.GeneralConfig;
 import magic.model.MagicGameLog;
 import magic.utility.MagicFileSystem.DataPath;
 
+import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.FutureTask;
 import java.util.concurrent.ExecutionException;
@@ -134,7 +135,14 @@ final public class MagicSystem {
         MagicGameLog.initialize();
        
         // start a separate thread to load cards
-        Executors.newSingleThreadExecutor().execute(loadCards);
+        final ExecutorService background = Executors.newSingleThreadExecutor();
+        background.execute(loadCards);
+        background.execute(new Runnable() {
+            public void run() {
+                CardDefinitions.postCardDefinitions();
+            }
+        });
+        background.shutdown();
 
         // if parse scripts missing or pre-load abilities then load cards synchronously
         if (isParseMissing() || isDebugMode()) {

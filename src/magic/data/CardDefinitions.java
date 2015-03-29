@@ -212,14 +212,11 @@ public class CardDefinitions {
             }
         }
         reporter.setMessage("Loading cards...100%");
+    }
+
+    public static void postCardDefinitions() {
         printStatistics();
-       
-        /*
-        updateNewCardsLog calls getPlayableNonTokenCardNames which causes a deadlock,
-        commenting it out for now
-        
         updateNewCardsLog(CardDefinitions.loadCardsSnapshotFile());
-        */
     }
     
     private static boolean isZero(double value, double delta){
