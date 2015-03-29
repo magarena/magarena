@@ -97,6 +97,7 @@ public class PreferencesDialog
     private SliderPanel popupScaleSlider;
     private JCheckBox uiSoundCheckBox;
     private JCheckBox pauseGamePopupCheckBox;
+    private JCheckBox hideAIPromptCheckBox;
 
     private final JLabel hintLabel = new JLabel();
     private boolean isProxyUpdated = false;
@@ -209,6 +210,11 @@ public class PreferencesDialog
 
     private JPanel getGameplaySettingsPanel1() {
 
+        hideAIPromptCheckBox = new JCheckBox("[Experimental] Suppress AI action prompts", config.getHideAiActionPrompt());
+        hideAIPromptCheckBox.setToolTipText("If enabled, hides AI prompts in the user action panel. Only prompts that require you to make a decision will be shown.");
+        hideAIPromptCheckBox.setFocusable(false);
+        hideAIPromptCheckBox.addMouseListener(this);
+
         mulliganScreenCheckbox = new JCheckBox("Use Mulligan screen", config.getMulliganScreenActive());
         mulliganScreenCheckbox.setFocusable(false);
         mulliganScreenCheckbox.addMouseListener(this);
@@ -247,6 +253,7 @@ public class PreferencesDialog
 
         // layout components
         final JPanel mainPanel = new JPanel(new MigLayout("flowy, insets 16, gapy 10"));
+        mainPanel.add(hideAIPromptCheckBox);
         mainPanel.add(mulliganScreenCheckbox);
         mainPanel.add(gameLogCheckBox);
         mainPanel.add(soundCheckBox);
@@ -330,6 +337,7 @@ public class PreferencesDialog
                 config.setCardPopupScale(popupScaleSlider.getValue() / 100d);
                 config.setIsUiSound(uiSoundCheckBox.isSelected());
                 config.setIsGamePausedOnPopup(pauseGamePopupCheckBox.isSelected());
+                config.setHideAiActionPrompt(hideAIPromptCheckBox.isSelected());
                 config.save();
                 CachedImagesProvider.getInstance().clearCache();
                 frame.refreshUI();

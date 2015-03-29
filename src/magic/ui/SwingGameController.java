@@ -527,7 +527,7 @@ public class SwingGameController implements IUIGameController, ILogBookListener 
         SwingUtilities.invokeLater(new Runnable() {
             @Override
             public void run() {
-                if (isUserActionPromptHidden(message) && MagicSystem.isDevMode()) {
+                if (CONFIG.getHideAiActionPrompt() && isUserActionPromptHidden(message)) {
                     clearUserActionPrompt();
                 } else {
                     userActionPanel.showMessage(getMessageWithSource(source, message));
