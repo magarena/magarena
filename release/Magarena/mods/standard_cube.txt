@@ -1,21 +1,27 @@
 Abhorrent Overlord
 Abomination of Gudul
+Abzan Advantage
 Abzan Ascendancy
 Abzan Banner
 Abzan Battle Priest
 Abzan Falconer
 Abzan Guide
+Abzan Kin-Guard
+Abzan Runemark
 Abzan Skycaptain
 Accursed Spirit
 Act of Treason
 Aegis Angel
 Aegis of the Gods
+Aerie Bowmasters
 Aerie Worshippers
 Aeronaut Tinkerer
 Agent of Horizons
 Agent of the Fates
+Ainok Artillerist
 Ainok Bond-Kin
 Ainok Guide
+Ainok Survivalist
 Ainok Tracker
 Ajani's Pridemate
 Akroan Crusader
@@ -26,11 +32,17 @@ Akroan Phalanx
 Akroan Skyguard
 Alabaster Kirin
 Alesha's Vanguard
+Alesha, Who Smiles at Death
 Alpine Grizzly
 Altac Bloodseeker
 Altar of the Brood
+Ambush Krotiq
 Amphin Pathmage
+Anafenza, Kin-Tree Spirit
 Anax and Cymede
+Ancestral Statue
+Ancestral Vengeance
+Ancient Carp
 Ancient Silverback
 Anger of the Gods
 Ankle Shanker
@@ -43,26 +55,34 @@ Archers of Qarsi
 Archers' Parapet
 Arena Athlete
 Armory of Iroas
+Artful Maneuver
 Ashen Rider
 Ashiok's Adept
 Aspect of Gorgon
 Aspect of Hydra
 Asphodel Wanderer
 Asphyxiate
+Atarka Beastbreaker
+Atarka Efreet
+Atarka, World Render
 Aven Skirmisher
+Aven Sunstriker
 Aven Surveyor
+Aven Tactician
 Awaken the Bear
 Back to Nature
 Baleful Eidolon
 Banishing Light
 Bassara Tower Archer
 Bathe in Dragonfire
+Battle Brawler
 Battlefield Forge
 Battle Mastery
 Battlewise Hoplite
 Battlewise Valor
 Bear's Companion
 Benthic Giant
+Berserkers' Onslaught
 Bident of Thassa
 Bile Blight
 Black Cat
@@ -77,6 +97,7 @@ Bloodstained Mire
 Blood-Toll Harpy
 Blossoming Sands
 Bolt of Keranos
+Boltwing Marauder
 Boon of Erebos
 Boon Satyr
 Borderland Marauder
@@ -84,10 +105,12 @@ Borderland Minotaur
 Bow of Nylea
 Brawler's Plate
 Breaching Hippocamp
+Break Through the Line
 Briber's Purse
 Brimaz, King of Oreskos
 Bronze Sable
 Burnished Hart
+Butcher of the Horde
 Cached Defenses
 Cancel
 Canyon Lurkers
@@ -101,7 +124,9 @@ Caves of Koilos
 Celestial Archon
 Centaur Battlemaster
 Centaur Courser
+Center Soul
 Chained to the Rocks
+Champion of Arashin
 Charging Badger
 Chariot of Victory
 Chief of the Edge
@@ -115,7 +140,12 @@ Circle of Flame
 Claim of Erebos
 Clear a Path
 Cloaked Siren
+Coat with Venom
+Collateral Damage
+Colossodon Yearling
 Congregate
+Conifer Strider
+Contradict
 Coral Barrier
 Countermand
 Crackling Triton
@@ -123,17 +153,22 @@ Crippling Blight
 Crippling Chill
 Crucible of Fire
 Crux of Fate
+Cunning Breezedancer
+Custodian of the Trove
 Cyclops of Eternal Fury
 Cyclops of One-Eyed Pass
 Dark Betrayal
+Dark Deal
 Darksteel Citadel
 Dauntless River Marshal
 Dawnbringer Charioteers
 Dazzling Ramparts
 Deathbellow Raider
+Death Wind
 Debilitating Injury
 Decorated Griffin
 Deepwater Hypnotist
+Defeat
 Defiant Ogre
 Defiant Strike
 Demolish
@@ -146,6 +181,7 @@ Dictate of Heliod
 Dictate of Kruphix
 Dictate of the Twin Gods
 Diffusion Sliver
+Dirgur Nemesis
 Disdainful Stroke
 Dismal Backwater
 Disowned Ancestor
@@ -157,18 +193,30 @@ Divine Verdict
 Doomwake Giant
 Douse in Gloom
 Dragon Bell Monk
+Dragon Fodder
+Dragonloft Idol
 Dragon Mantle
 Dragonscale Boon
+Dragon-Scarred Bear
+Dragon's Eye Sentry
 Dragon-Style Twins
 Dreadbringer Lampads
+Dromoka Captain
+Dromoka Dunecaster
+Dromoka's Gift
+Dromoka, the Eternal
+Dromoka Warrior
 Drown in Sorrow
 Eagle of the Watch
 Eater of Hope
+Echoes of the Kin Tree
 Eidolon of Blossoms
 Eidolon of Countless Battles
 Eidolon of the Great Revel
+Elite Scaleguard
 Elite Skirmisher
 Elspeth, Sun's Champion
+Elusive Spellfist
 Elvish Mystic
 Ember Swallower
 Embodiment of Spring
@@ -189,15 +237,19 @@ Evanescent Intellect
 Evangel of Heliod
 Evolving Wilds
 Excoriate
+Explosive Vegetation
 Extinguish All Hope
 Eye Gouge
 Fabled Hero
 Fade into Antiquity
 Fanatic of Mogis
 Fanatic of Xenagos
+Fascination
 Fate Foretold
+Fate Forgotten
 Fate Unraveler
 Feast of Dreams
+Feat of Resistance
 Felhide Brawler
 Felhide Minotaur
 Felhide Petrifier
@@ -207,6 +259,7 @@ Festergloom
 Firedrinker Satyr
 Firehoof Cavalry
 Flamecast Wheel
+Flatten
 Fleecemane Lion
 Fleetfeather Cockatrice
 Fleetfeather Sandals
@@ -228,8 +281,10 @@ Forsaken Drifters
 Foundry Street Denizen
 Frenzied Goblin
 Frontier Bivouac
+Frontier Mastodon
 Frost Lynx
 Frost Walker
+Fruit of the First Tree
 Fugitive Wizard
 Furnace Whelp
 Gainsay
@@ -241,21 +296,26 @@ Gild
 Glacial Crasher
 Glacial Stalker
 Glare of Heresy
+Glint
 Gluttonous Cyclops
+Goblin Boom Keg
 Goblin Heelcutter
 Goblin Rabblemaster
 Goblin Roughrider
 Goblinslide
 God-Favored General
 Godhunter Octopus
+Gods Willing
 Golden Hind
 Gold-Forged Sentinel
 Gore Swine
 Gorgon's Head
 Gravedigger
+Grave Strength
 Gray Merchant of Asphodel
 Great Hart
 Great-Horn Krushok
+Great Teacher's Decree
 Griffin Dreamfinder
 Grim Guardian
 Grim Haruspex
@@ -263,17 +323,22 @@ Grindclock
 Griptide
 Grisly Transformation
 Guardians of Meletis
+Gudul Lurker
 Gurmag Swiftwing
 Hammerhand
 Hammer of Purphoros
+Hand of Silumgar
+Harsh Sustenance
 Harvestguard Alseids
 Heat Ray
 Heir of the Wilds
 Heliod, God of the Sun
 Heliod's Emissary
 Heliod's Pilgrim
+Herald of Dromoka
 Herald of Torment
 Heroes' Bane
+Hero's Blade
 Hero's Downfall
 Highland Game
 Highspire Mantis
@@ -285,11 +350,13 @@ Horizon Chimera
 Hornet Nest
 Hornet Queen
 Hubris
+Humble Defector
 Humbler of Mortals
 Hydra Broodmaster
 Hydrosurge
 Hythonia the Cruel
 Ill-Tempered Cyclops
+Impact Tremors
 Impetuous Sunchaser
 Inferno Fist
 Insatiable Harpy
@@ -298,8 +365,10 @@ Invisibility
 Island
 Jace's Ingenuity
 Jeskai Banner
+Jeskai Barricade
 Jeskai Charm
 Jeskai Elder
+Jeskai Runemark
 Jeskai Sage
 Jeskai Student
 Jeskai Windscout
@@ -311,9 +380,14 @@ Karametra, God of Harvests
 Karametra's Favor
 Keepsake Gorgon
 Kill Shot
+Kindled Fury
 Kinsbaile Skirmisher
 Kin-Tree Warden
 Kird Chieftain
+Kolaghan Forerunners
+Kolaghan Skirmisher
+Kolaghan Stormsinger
+Kolaghan, the Storm's Fury
 Kragma Butcher
 Kragma Warcaller
 Krenko's Enforcer
@@ -329,9 +403,11 @@ Leaping Master
 Leeching Sliver
 Leonin Iconoclast
 Leonin Snarecaster
+Lightning Berserker
 Lightning Diadem
 Lightning Strike
 Lightning Volley
+Lightwalker
 Liliana Vess
 Llanowar Wastes
 Longshot Squad
@@ -339,20 +415,25 @@ Lost in a Labyrinth
 Lotus-Eye Mystics
 Lotus Path Djinn
 Magma Spray
+Magmatic Chasm
 Mahamoti Djinn
 Mana Confluence
 Mantis Rider
+Marang River Skeleton
 Mardu Banner
 Mardu Blazebringer
 Mardu Hateblade
 Mardu Heart-Piercer
 Mardu Hordechief
 Mardu Roughrider
+Mardu Runemark
 Mardu Scout
 Mardu Shadowspear
 Mardu Skullhunter
 Mardu Strike Leader
 Marked by Honor
+Marsh Hulk
+Marshmist Titan
 Mass Calcify
 Master of Pearls
 Master of the Feast
@@ -363,17 +444,21 @@ Messenger's Speed
 Meteorite
 Midnight Guard
 Mind Rot
+Mindscour Dragon
 Mind Sculpt
 Miner's Bane
+Minister of Pain
 Minotaur Skullcleaver
 Mistcutter Hydra
 Mistfire Adept
 Mistfire Weaver
+Misthoof Kirin
 Mnemonic Wall
 Mogis, God of Slaughter
 Mogis's Warhound
 Molting Snakeskin
 Monastery Flock
+Monastery Loremaster
 Monastery Mentor
 Monastery Swiftspear
 Mortal's Ardor
@@ -415,6 +500,9 @@ Nyx Weaver
 Oakheart Dryads
 Observant Alseid
 Odunos River Trawler
+Ojutai Interceptor
+Ojutai's Breath
+Ojutai, Soul of Winter
 Opaline Unicorn
 Opulent Palace
 Oracle's Insight
@@ -423,11 +511,14 @@ Oreskos Sun Guide
 Oreskos Swiftclaw
 Ornitharch
 Ornithopter
+Pacifism
+Palace Familiar
 Peak Eruption
 Pearl Lake Ancient
 Pensive Minotaur
 Perilous Vault
 Phalanx Leader
+Pharagax Giant
 Pharika's Chosen
 Pharika's Cure
 Pharika's Mender
@@ -437,8 +528,10 @@ Pheres-Band Raiders
 Pheres-Band Thunderhoof
 Pheres-Band Tromper
 Pheres-Band Warchief
+Pilgrim of the Fires
 Pillar of Light
 Pin to the Earth
+Pitiless Horde
 Plains
 Plea for Guidance
 Plummet
@@ -450,9 +543,11 @@ Prescient Chimera
 Pressure Point
 Priest of Iroas
 Profane Memento
+Profound Journey
 Prowler's Helm
 Purphoros, God of the Forge
 Qarsi High Priest
+Qarsi Sadist
 Radiant Fountain
 Rageblood Shaman
 Rage of Purphoros
@@ -460,18 +555,22 @@ Raiders' Spoils
 Raised by Wolves
 Raise the Alarm
 Rakshasa Deathdealer
+Rakshasa Gravecaller
+Rakshasa's Disdain
 Rakshasa's Secret
 Ranger's Guile
 Ravenous Leucrocota
 Ray of Dissolution
 Razorfoot Griffin
 Reaper of the Wilds
+Reckless Imp
 Reckless Reveler
 Reclamation Sage
 Refocus
 Renowned Weaver
 Reprisal
 Research Assistant
+Resupply
 Retraction Helix
 Returned Centaur
 Returned Phalanx
@@ -483,6 +582,7 @@ Rise of Eagles
 Rise to the Challenge
 Riverwheel Aerialists
 Roaring Primadox
+Roast
 Rogue's Gloves
 Rollick of Abandon
 Rotted Hulk
@@ -497,12 +597,17 @@ Sage of the Inward Eye
 Sagu Archer
 Sagu Mauler
 Salt Road Patrol
+Salt Road Quartermasters
 Sanctified Charge
 Sandblast
+Sandcrafter Mage
 Sandsteppe Citadel
 Sandsteppe Mastodon
 Sandsteppe Outcast
+Sandsteppe Scavenger
+Sandstorm Charger
 Sanguimancy
+Sarkhan's Triumph
 Satyr Firedancer
 Satyr Grovedancer
 Satyr Hoplite
@@ -512,14 +617,18 @@ Savage Knuckleblade
 Savage Surge
 Scaldkin
 Scion of Glaciers
+Scion of Ugin
 Scoured Barrens
 Scourgemark
 Scouring Sands
 Scrapyard Mongrel
+Screamreach Brawler
 Scuttling Doom Engine
 Sedge Scorpion
 Seeker of the Way
 Seek the Horizon
+Segmented Krotiq
+Seismic Rupture
 Seismic Strike
 Selfless Cathar
 Sentry of the Underworld
@@ -530,13 +639,22 @@ Setessan Oathsworn
 Setessan Starbreaker
 Shadowcloak Vampire
 Shaman of Spring
+Shaman of the Great Hunt
+Shambling Goblin
+Shape the Sands
 Shatter
+Shipwreck Singer
 Shivan Dragon
 Shivan Reef
+Shockmaw Dragon
 Shrapnel Blast
 Shredding Winds
+Shrike Harpy
 Shu Yun, the Silent Tempest
+Sibsig Icebreakers
+Sidisi's Faithful
 Sidisi's Pet
+Sidisi, Undead Vizier
 Siegecraft
 Siege Rhino
 Sigiled Skink
@@ -544,6 +662,10 @@ Sigiled Starfish
 Sign in Blood
 Silent Artisan
 Silent Sentinel
+Silumgar Butcher
+Silumgar Sorcerer
+Silumgar Spell-Eater
+Silumgar, the Drifting Death
 Sip of Hemlock
 Siren of the Fanged Coast
 Siren of the Silent Song
@@ -552,6 +674,7 @@ Skyreaping
 Skyspear Cavalry
 Sliver Hivelord
 Smite the Monstrous
+Smoldering Efreet
 Snake of the Golden Grove
 Snowhorn Rider
 Solemn Offering
@@ -561,7 +684,9 @@ Spark Jolt
 Spearpoint Oread
 Spellheart Chimera
 Sphinx's Disciple
+Spidersilk Net
 Spirit Bonds
+Sprinting Warbrute
 Squelching Leeches
 Stab Wound
 Staff of the Death Magus
@@ -569,16 +694,22 @@ Staff of the Flame Magus
 Staff of the Mind Magus
 Staff of the Sun Magus
 Staff of the Wild Magus
+Stampeding Elk Herd
 Staunch-Hearted Warrior
 Stoneshock Giant
 Stormbreath Dragon
 Stormcaller of Keranos
+Stormcrag Elemental
 Stormtide Leviathan
+Stratus Dancer
 Stratus Walk
+Strongarm Monk
+Student of Ojutai
 Stymied Hopes
 Sultai Banner
 Sultai Charm
 Sultai Emissary
+Sultai Runemark
 Sultai Skullkeeper
 Summit Prowler
 Sunblade Elf
@@ -590,6 +721,7 @@ Swarm of Bloodflies
 Swiftwater Cliffs
 Swordwise Centaur
 Sylvan Caryatid
+Taigam's Strike
 Take Up Arms
 Temple of Abandon
 Temple of Deceit
@@ -603,7 +735,10 @@ Temple of Silence
 Temple of Triumph
 Temur Ascendancy
 Temur Banner
+Temur Runemark
+Temur Sabertooth
 Terra Stomper
+Territorial Roc
 Tethmos High Priest
 Thassa, God of the Sea
 Thassa's Bounty
@@ -629,6 +764,7 @@ Tormod's Crypt
 Tranquil Cove
 Traveler's Amulet
 Traveling Philosopher
+Tread Upon
 Triton Cavalry
 Triton Fortune Hunter
 Triton Shorestalker
@@ -640,11 +776,14 @@ Tuskguard Captain
 Two-Headed Cerberus
 Typhoid Rats
 Tyrant's Machine
+Ukud Cobra
 Ulcerate
+Ultimate Price
 Undergrowth Scavenger
 Underworld Coinsmith
 Unravel the Æther
 Unyielding Krumar
+Updraft Elemental
 Urborg, Tomb of Yawgmoth
 Utter End
 Valley Dasher
@@ -654,20 +793,27 @@ Vanquish the Foul
 Vaporkin
 Venerable Lammasu
 Venom Sliver
+Vial of Dragonfire
 Viper's Kiss
+Virulent Plague
 Void Snare
+Void Squall
+Volcanic Rush
 Voyage's End
 Voyaging Satyr
 Vulpine Goliath
+Vulturous Aven
 Walking Corpse
 Wall of Essence
 Wall of Fire
 Wall of Frost
 Wall of Limbs
 Wall of Mulch
+Wandering Tombshell
 War Behemoth
 Warchanter of Mogis
 Warden of the Eye
+War Flare
 War-Wing Siren
 Wavecrash Triton
 Weave Fate
@@ -695,4 +841,7 @@ Xathrid Slyblade
 Xenagos, God of Revels
 Yavimaya Coast
 Yoked Ox
+Youthful Scholar
+Zephyr Scribe
 Zof Shade
+Zurgo Bellstriker
