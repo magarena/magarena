@@ -8,7 +8,7 @@
                     new MagicPayManaCostChoice(MagicManaCost.create("{2}")),
                 ),
                 this,
-                "PN may pay\$ {2}\$. If PN doesn't, SN deals 3 damage to PN."
+                "PN may pay\$ {2}\$. If not paid, SN deals 3 damage to PN."
             );
         }
 
