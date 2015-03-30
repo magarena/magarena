@@ -1,15 +1,15 @@
 [
-    new MagicStatic(
-        MagicLayer.Ability,
-        MagicTargetFilterFactory.CREATURE
-    ) {
+    new MagicStatic(MagicLayer.Game) {
         @Override
-        public void modAbilityFlags(final MagicPermanent source, final MagicPermanent permanent, final Set<MagicAbility> flags) {
-            permanent.addAbility(MagicAbility.CannotAttack, flags);
-        }
-        @Override
-        public boolean condition(final MagicGame game, final MagicPermanent source, final MagicPermanent target) {
-            return target.getPower() > source.getController().getHandSize();
+        public void modGame(final MagicPermanent source, final MagicGame game) {
+            final MagicTargetFilter<MagicPermanent> filter = new MagicPTTargetFilter(
+                MagicTargetFilterFactory.CREATURE,
+                Operator.GREATER_THAN,
+                source.getController().getHandSize()
+            );
+            game.filterPermanents(filter).each {
+                it.addAbility(MagicAbility.CannotAttack);
+            }
         }
     }
 ]
