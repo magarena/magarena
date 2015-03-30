@@ -178,9 +178,7 @@ public class SwingGameController implements IUIGameController, ILogBookListener 
     /** Returns true when undo was clicked. */
     private boolean waitForInputOrUndo() {
         try {
-            final boolean isUndo = input.take();
-            clearUserActionPrompt();
-            return isUndo;
+            return input.take();
         } catch (final InterruptedException ex) {
             throw new RuntimeException(ex);
         }
@@ -557,7 +555,9 @@ public class SwingGameController implements IUIGameController, ILogBookListener 
 
     private Object[] getArtificialNextEventChoiceResults(final MagicEvent event) {
         disableActionButton(true);
-        if (CONFIG.getHideAiActionPrompt() == false) {
+        if (CONFIG.getHideAiActionPrompt()) {
+            showMessage(MagicEvent.NO_SOURCE, "");
+        } else {
             showMessage(event.getSource(),event.getChoiceDescription());
         }
         SwingGameController.invokeAndWait(new Runnable() {
@@ -970,16 +970,4 @@ public class SwingGameController implements IUIGameController, ILogBookListener 
     public void doFlashPlayerHandZoneButton() {
         gamePanel.doFlashPlayerHandZoneButton();
     }
-
-    private void clearUserActionPrompt() {
-        if (game.getPhase().getType() != MagicPhaseType.DeclareAttackers) {
-            SwingUtilities.invokeLater(new Runnable() {
-                @Override
-                public void run() {
-                    userActionPanel.showMessage("");
-                }
-            });
-        }
-    }
-
 }
