@@ -461,6 +461,7 @@ public class SwingGameController implements IUIGameController, ILogBookListener 
         validChoices=Collections.emptySet();
         combatChoice=false;
         showValidChoices();
+        showMessage(MagicEvent.NO_SOURCE, "");
     }
 
     @Override
