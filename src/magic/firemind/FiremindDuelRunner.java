@@ -104,7 +104,7 @@ public class FiremindDuelRunner {
         // Set difficulty.
         final MagicDuel testDuel = new MagicDuel(config);
 
-        testDuel.initialize();
+        //testDuel.initialize();
         testDuel.setDifficulty(0, str1);
         testDuel.setDifficulty(1, str2);
         final MagicDeckProfile profile = new MagicDeckProfile("bgruw");
