@@ -527,46 +527,9 @@ public class SwingGameController implements IUIGameController, ILogBookListener 
         SwingUtilities.invokeLater(new Runnable() {
             @Override
             public void run() {
-                if (CONFIG.getHideAiActionPrompt() && isUserActionPromptHidden(message)) {
-                    clearUserActionPrompt();
-                } else {
-                    userActionPanel.showMessage(getMessageWithSource(source, message));
-                }
+                userActionPanel.showMessage(getMessageWithSource(source, message));
             }
         });
-    }
-
-    private boolean isUserActionPromptHidden(final String message) {
-
-        final boolean isAiPlayer = game.getPriorityPlayer().getPlayerDefinition().isArtificial();
-        final boolean isAiDefending = game.getDefendingPlayer().getPlayerDefinition().isArtificial();
-        final boolean isDeclareBlockers = game.getPhase().getType() == MagicPhaseType.DeclareBlockers;
-        final boolean isCleanUp = game.getPhase().getType() == MagicPhaseType.Cleanup;
-        final boolean isDeclareBlockerMessage = message.contains("declare as blocker");
-        final boolean isContinueMessage = message.equals("Press {f} to continue.");
-        final boolean isGameOver = game.isFinished();
-
-//        System.out.printf(
-//                "\nPhase=%s, Player=%s, Msg=%s\n" +
-//                "isAiPlayer=%b, isAiDefending=%b, isDeclareBlockers=%b, isCleanUp=%b, isDeclarBlockerMessage=%b, isContinueMessage=%b\n",
-//                game.getPhase().getType(),
-//                game.getPriorityPlayer().getName(),
-//                message,
-//                isAiPlayer,
-//                isAiDefending,
-//                isDeclareBlockers,
-//                isCleanUp,
-//                isDeclareBlockerMessage,
-//                isContinueMessage
-//        );
-
-        return isAiPlayer
-                && !isGameOver
-                && !isCleanUp
-                && (!isDeclareBlockers
-                    || (isDeclareBlockers && !isDeclareBlockerMessage && !isContinueMessage)
-                    || (isDeclareBlockers && isAiDefending));
-        
     }
 
     private <E extends JComponent> E waitForInput(final Callable<E> func) throws UndoClickedException {
@@ -594,7 +557,9 @@ public class SwingGameController implements IUIGameController, ILogBookListener 
 
     private Object[] getArtificialNextEventChoiceResults(final MagicEvent event) {
         disableActionButton(true);
-        showMessage(event.getSource(),event.getChoiceDescription());
+        if (CONFIG.getHideAiActionPrompt() == false) {
+            showMessage(event.getSource(),event.getChoiceDescription());
+        }
         SwingGameController.invokeAndWait(new Runnable() {
             @Override
             public void run() {
