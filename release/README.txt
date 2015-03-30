@@ -77,20 +77,21 @@ Mike
 PalladiaMors
 ShawnieBoy
 
-- new customizable DuelSideBarPanel
+- improve display of duel sidebar, move AI player panel from top of sidebar to
+  above Human player panel
 
-- Player health, poison and damage prevention are displayed as overlays on the
-  player image. The non-turn player image is greyscaled.
+- improve player panel, display health, poison, and damage prevention as
+  overlays on the player image
 
 - add visual indication when player receives damage or gains health
 
-- mtgimage to magiccards.info
+- download errors are shown to user in the UI instead of asking user to check the console
 
-- download errors should show error to user instead of asking user to check the console.
+- switch from mtgimage.com to magiccards.info for card images
 
 - improve robustness of Firemind worker
 
-- background loading of cards
+- background loading of cards to reduce startup time
 
 - support Dragons of Tarkir in Card Explorer
 
@@ -98,41 +99,39 @@ ShawnieBoy
   * cost: Exile [amount] [cards]
   * condition: creatures you control have total power 8 or greater
   * condition: SN is an Enchantment
-  * ability: SN can't block <creatures>
-  * ability: megamorph <cost>
   * ability: exploit
+  * ability: megamorph <cost>
   * ability: kinship <effect>
-  * ability: can attack as as though it didn't have defender
   * ability: affinity for <permanents>
   * ability: entwine <cost>
+  * ability: SN can't block <creatures>
+  * ability: SN can attack as as though it didn't have defender
   * ability: When SN exploits a creature, <effect>
-  * ability: Whenever a <creature> attacks, <effect>.
-  * effect: Counter [spell]. If that spell is countered this way, exile it instead of putting it into its owner's graveyard.
-  * effect: Whenever SN blocks a <creature>, <effect>.
-  * effect: Rebound
+  * ability: Whenever SN blocks a <creature>, <effect>
+  * ability: Whenever a <creature> attacks, <effect>
+  * effect: Rebound.
   * effect: Regenerate each <permanent>.
-  * effect: <permanent> gain protection from the color of your choice until end of turn.
   * effect: Put <card> on the bottom of its owner's library.
   * effect: SN becomes a <pt> <subtype> creature with <abilities>.
+  * effect: <permanent> gain protection from the color of your choice until end of turn.
+  * effect: Counter [spell]. If that spell is countered this way, exile it instead of putting it into its owner's graveyard.
 
 - fixed the following bugs:
-  * remove MagicCleanupCreatureAction, include damage/prevent damage cleanup for permanents to cater for those that can change to creatures
-  * If any exception is thrown when playing a sound log error to stderr. Fixes 112.
-  * set LC_CTYPE to UTF-8 when launching on Mac so that filenames with non ascii characters can be created
-  * ensure cached* members are never null, fix crash when attempting to update UI with pt of card with CDA
-  * Fixes #120 : Always present Horizontal scrollbar issue in user action panel.
-  * Dash should be a card activation not a card ability so it counts as casting a spell. Fixes issue #97
-  * fix issue #44 : Mulligan screen closes prematurely if re-deal on two card types.
-  * fix toughness filter checking for power
-  * fix *Chimera cards, ability gained should be last forever, not until EOT
-  * 'Cast SN with' must be the first ability as it removes all card activations, fixes issue #81 phyrexian metamorph (alt), sakashima's student (ninjutsu)
-  * create MagicManifestCardAction that always uses MagicPlayCardEvent.create() for the card event, fixed issue #107, unable to manifest spells, casting them instead
-  * fix unable to pay life to cast Moltensteel Dragon and Pith Driller (missing alt cost for phyrexian mana)
-  * include modifications from original card on stack, when creating new card on stack for clone. fixes issue #108 
-    (reanimate clone with puppeteer clique, did not inherit modification exile)
-  * fix targeted modal effects, was not working due to MagicOrChoice not overriding getTargetChoice
-  * fix timing for Snapcaster Mage
-  * fix issue #131 : All permanents get damage marker cleared at end of turn
+  * errors when playing sound causes program to crash (issue #112)
+  * horizontal scrollbar always present in user action panel (issue #120)
+  * mulligan screen closes prematurely if re-deal on two cards types (issue #44)
+  * images of cards with non ascii characters could not be saved on Mac OS
+  * crash when cards with characteristic-defining ability is in hand
+  * modal effects with a targeted mode could not select target
+  * casting a card with dash did not count as casting a spell (issue #97)
+  * cards that specify creatures with a certain toughness were checking for power instead
+  * instant and sorceries when manifested are cast instead of becoming face-down creatures (issue #107)
+  * effects that modify how a card entered the battlefield did not affect cards that clone permanents when they come into play (issue #108)
+  * creatures that receive damage and stop being creatures did not have damage cleared at end of turn (issue #131)
+  * Sakashima's Student and Phyrexian Metamorph's card abilities were overriden by AI casting hint (issue #81)
+  * *Chimera's ability should last forever instead of until end of turn 
+  * Snapcaster Mage can only be cast by AI during the main phase
+  * Moltensteel Dragon and Pith Driller could not be cast by paying life
 
 - added the following cards:
 Aboroth, Abuna's Chant, Abzan Advantage, Abzan Kin-Guard, Abzan Runemark,
