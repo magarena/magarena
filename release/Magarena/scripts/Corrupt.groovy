@@ -13,11 +13,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final int amount = event.getPlayer().getNrOfPermanents(MagicSubType.Swamp);
             event.processTarget(game, {
-                final MagicDamage damage = new MagicDamage(
-                    event.getSource(),
-                    it,
-                    amount
-                );
+                final MagicDamage damage = new MagicDamage(event.getSource(),it,amount);
                 game.doAction(new MagicDealDamageAction(damage));
                 game.doAction(new MagicChangeLifeAction(event.getPlayer(),damage.getDealtAmount()));
             });

@@ -13,11 +13,8 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-           final MagicSource source=event.getSource();
             for (final MagicPlayer player : game.getAPNAP()) {
-                final int amount = event.getRefInt();
-                final MagicDamage damage=new MagicDamage(source,player,amount);
-                game.doAction(new MagicDealDamageAction(damage));
+                game.doAction(new MagicDealDamageAction(event.getSource(),player,event.getRefInt()));
             }
         }
     }

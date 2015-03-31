@@ -14,8 +14,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
-                final MagicDamage damage = new MagicDamage(event.getSource(),it,4);
-                game.doAction(new MagicDealDamageAction(damage));
+                game.doAction(new MagicDealDamageAction(event.getSource(),it,4));
                 if (MagicCondition.METALCRAFT_CONDITION.accept(event.getSource())) {
                     final Collection<MagicPermanent> targets =
                             game.filterPermanents(it,MagicTargetFilterFactory.CREATURE_YOU_CONTROL);

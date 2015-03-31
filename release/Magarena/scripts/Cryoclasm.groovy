@@ -16,8 +16,7 @@ def choice = MagicTargetChoice.Negative("target Plains or Island");
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
                 game.doAction(new MagicDestroyAction(it));
-                final MagicDamage damage=new MagicDamage(event.getSource(),it.getController(),3);
-                game.doAction(new MagicDealDamageAction(damage));
+                game.doAction(new MagicDealDamageAction(event.getSource(),it.getController(),3));
             });
         }
     }

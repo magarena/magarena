@@ -15,8 +15,7 @@
                 game.filterPermanents(event.getPlayer(),MagicTargetFilterFactory.CREATURE);
             for (final MagicPermanent creature : creatures) {
                 if (permanent != creature) {
-                    final MagicDamage damage=new MagicDamage(permanent,creature,4);
-                    game.doAction(new MagicDealDamageAction(damage));
+                    game.doAction(new MagicDealDamageAction(permanent,creature,4));
                 }
             }
         }

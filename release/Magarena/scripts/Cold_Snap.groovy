@@ -14,9 +14,8 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
             final int amount = player.getNrOfPermanents(MagicTargetFilterFactory.SNOW_LAND_YOU_CONTROL);
-            final MagicDamage damage = new MagicDamage(event.getSource(),player,amount);
             game.logAppendMessage(event.getPlayer(),"("+amount+")");
-            game.doAction(new MagicDealDamageAction(damage));
+            game.doAction(new MagicDealDamageAction(event.getSource(),player,amount));
         }
     }
 ]

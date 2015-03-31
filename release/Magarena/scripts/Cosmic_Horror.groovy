@@ -19,8 +19,7 @@
                 final MagicDestroyAction act = new MagicDestroyAction(event.getPermanent());
                 game.doAction(act);
                 if (act.isDestroyed()) {
-                    final MagicDamage damage = new MagicDamage(event.getSource(),event.getPlayer(),7)
-                    game.doAction(new MagicDealDamageAction(damage));
+                    game.doAction(new MagicDealDamageAction(event.getSource(),event.getPlayer(),7));
                 }
             }
         }

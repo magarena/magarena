@@ -20,8 +20,7 @@
                 )
             );
             for (final MagicPermanent target : targets) {
-                final MagicDamage damage = new MagicDamage(creature,target,2);
-                game.doAction(new MagicDealDamageAction(damage));
+                game.doAction(new MagicDealDamageAction(creature,target,2));
             }
         }
     }

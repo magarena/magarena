@@ -14,13 +14,8 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final int toughness = event.getRefPermanent().getToughness();
-            final MagicDamage damage = new MagicDamage(
-                event.getSource(),
-                event.getRefPermanent().getController(),
-                toughness
-            );
-            game.doAction(new MagicDealDamageAction(damage));
+            final MagicPermanent permanent=event.getRefPermanent();
+            game.doAction(new MagicDealDamageAction(event.getSource(),permanent.getController(),permanent.getToughness()));
         }
     }
 ]
