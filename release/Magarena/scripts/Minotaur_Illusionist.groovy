@@ -26,8 +26,9 @@
         @Override
          public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTarget(game, {
-                final MagicDamage damage=new MagicDamage(event.getSource(),it,event.getPermanent().getPower());
-                game.doAction(new MagicDealDamageAction(damage));
+                final int amount = event.getPermanent().getPower();
+                game.logAppendMessage(event.getPlayer(),"("+amount+")");
+                game.doAction(new MagicDealDamageAction(event.getSource(),it,amount));
             });
         }
     }
