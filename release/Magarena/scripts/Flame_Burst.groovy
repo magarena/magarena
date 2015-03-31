@@ -19,8 +19,7 @@
             ).size()+2;
             event.processTarget(game, {
                 game.logAppendMessage(event.getPlayer()," (X="+amount+")");
-                final MagicDamage damage = new MagicDamage(event.getSource(),it,amount);
-                game.doAction(new MagicDealDamageAction(damage));
+                game.doAction(new MagicDealDamageAction(event.getSource(),it,amount));
             });
         }
     }

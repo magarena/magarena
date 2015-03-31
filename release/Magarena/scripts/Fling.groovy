@@ -17,8 +17,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTarget(game, {
                 final MagicPermanent sacrificed = event.getRefPermanent();
-                final MagicDamage damage=new MagicDamage(event.getSource(),it,sacrificed.getPower());
-                game.doAction(new MagicDealDamageAction(damage));
+                game.doAction(new MagicDealDamageAction(event.getSource(),it,sacrificed.getPower()));
             });
         }
     }

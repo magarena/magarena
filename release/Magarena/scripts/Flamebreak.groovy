@@ -19,8 +19,7 @@
                 game.doAction(new MagicDealDamageAction(damage));
             }
             for (final MagicPlayer player : game.getAPNAP()) {
-                final MagicDamage damage=new MagicDamage(source,player,3);
-                game.doAction(new MagicDealDamageAction(damage));
+                game.doAction(new MagicDealDamageAction(source,player,3));
             }
         }
     }
