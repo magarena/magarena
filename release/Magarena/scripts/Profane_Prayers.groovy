@@ -14,10 +14,10 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTarget(game, {
-                final int X = game.getNrOfPermanents(MagicSubType.Cleric);
-                final MagicDamage damage=new MagicDamage(event.getSource(),it,X);
-                game.doAction(new MagicDealDamageAction(damage));
-                game.doAction(new MagicChangeLifeAction(event.getPlayer(),X));
+                final int amount = game.getNrOfPermanents(MagicSubType.Cleric);
+                game.logAppendMessage(event.getPlayer()," (X="+amount+")");
+                game.doAction(new MagicDealDamageAction(event.getSource(),it,amount));
+                game.doAction(new MagicChangeLifeAction(event.getPlayer(),amount));
             });
         }
     }

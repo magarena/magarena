@@ -23,12 +23,8 @@ def PsionicDamage = new MagicPermanentActivation(
     public void executeEvent(final MagicGame game, final MagicEvent event) {
         final MagicPermanent source=event.getPermanent();
         event.processTarget(game, {
-            game.doAction(new MagicDealDamageAction(
-                new MagicDamage(source,it,2)
-            ));
-            game.doAction(new MagicDealDamageAction(
-                new MagicDamage(source,source,3)
-            ));
+            game.doAction(new MagicDealDamageAction(source,it,2));
+            game.doAction(new MagicDealDamageAction(source,source,3));
         });
     }
 };

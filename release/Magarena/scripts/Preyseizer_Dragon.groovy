@@ -17,8 +17,7 @@
             event.processTarget(game, {
                 final MagicPermanent permanent = event.getPermanent()
                 final int amount = permanent.getCounters(MagicCounterType.PlusOne);
-                final MagicDamage damage = new MagicDamage(permanent,it,amount);
-                game.doAction(new MagicDealDamageAction(damage));
+                game.doAction(new MagicDealDamageAction(permanent,it,amount));
                 game.logAppendMessage(event.getPlayer()," ("+amount+")");
             });
         }
