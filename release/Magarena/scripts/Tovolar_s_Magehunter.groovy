@@ -13,11 +13,7 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicDealDamageAction(new MagicDamage(
-                event.getPermanent(),
-                event.getPlayer(),
-                2
-            )));
+            game.doAction(new MagicDealDamageAction(event.getPermanent(),event.getPlayer(),2));
         }
     }
 ]

@@ -23,18 +23,12 @@
                 event.processTargetPermanent(game, {
                     game.doAction(new MagicDestroyAction(it));
                     final MagicCard card = it.getCard();
-                    final MagicPlayer player = event.getPlayer();
                     // only deal damage when the target is destroyed
                     if (card.isInGraveyard() 
                         ||
                         (card.isToken() && !card.getOwner().getPermanents().contains(it))) {
-                        final int amount = player.getNrOfPermanents(MagicSubType.Ally);
-                        final MagicDamage damage = new MagicDamage(
-                            event.getPermanent(),
-                            card.getOwner(),
-                            amount
-                        );
-                        game.doAction(new MagicDealDamageAction(damage));
+                        final int amount = event.getPlayer().getNrOfPermanents(MagicSubType.Ally);
+                        game.doAction(new MagicDealDamageAction(event.getPermanent(),card.getOwner(),amount));
                     }
                 });
             }

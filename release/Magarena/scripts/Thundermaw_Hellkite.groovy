@@ -14,9 +14,9 @@
                 event.getPlayer(),
                 MagicTargetFilterFactory.CREATURE_WITH_FLYING_YOUR_OPPONENT_CONTROLS
             );
+            final MagicPermanent permanent = event.getPermanent();
             for (final MagicPermanent creature : creatures) {
-                final MagicDamage damage=new MagicDamage(event.getPermanent(),creature,1);
-                game.doAction(new MagicDealDamageAction(damage));
+                game.doAction(new MagicDealDamageAction(permanent,creature,1));
                 game.doAction(new MagicTapAction(creature));
             }
         }

@@ -11,15 +11,14 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicSource source = event.getSource();
-            final int X = game.getNrOfPermanents(MagicSubType.Beast);
+            final int amount = game.getNrOfPermanents(MagicSubType.Beast);
             final Collection<MagicPermanent> targets = game.filterPermanents(MagicTargetFilterFactory.CREATURE_WITHOUT_FLYING);
+            game.logAppendMessage(event.getPlayer()," (X="+amount+")");
             for (final MagicPermanent target : targets) {
-                final MagicDamage damage = new MagicDamage(source,target,X);
-                game.doAction(new MagicDealDamageAction(damage));
+                game.doAction(new MagicDealDamageAction(source,target,amount));
             }
             for (final MagicPlayer player : game.getAPNAP()) {
-                final MagicDamage damage = new MagicDamage(source,player,X);
-                game.doAction(new MagicDealDamageAction(damage)); 
+                game.doAction(new MagicDealDamageAction(source,player,amount)); 
             }
         }
     }

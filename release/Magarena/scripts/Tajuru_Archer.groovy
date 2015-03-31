@@ -24,14 +24,8 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
                 event.processTargetPermanent(game, {
-                    final MagicPlayer player = event.getPlayer();
-                    final int amount = player.getNrOfPermanents(MagicSubType.Ally);
-                    final MagicDamage damage = new MagicDamage(
-                        event.getPermanent(),
-                        it,
-                        amount
-                    );
-                    game.doAction(new MagicDealDamageAction(damage));
+                    final int amount = event.getPlayer().getNrOfPermanents(MagicSubType.Ally);
+                    game.doAction(new MagicDealDamageAction(event.getPermanent(),it,amount));
                 });
             }
         }

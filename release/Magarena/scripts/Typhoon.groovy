@@ -10,11 +10,9 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicSource source=event.getSource();
             final MagicPlayer opponent=event.getPlayer().getOpponent();
-                final int amount = opponent.getNrOfPermanents(MagicSubType.Island);
-                final MagicDamage damage=new MagicDamage(source,opponent,amount);
-                game.doAction(new MagicDealDamageAction(damage));
+            final int amount=opponent.getNrOfPermanents(MagicSubType.Island);
+            game.doAction(new MagicDealDamageAction(event.getSource(),opponent,amount));
         }
     }
 ]
