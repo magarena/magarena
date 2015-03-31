@@ -14,9 +14,8 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTarget(game, {
-                final int amt = event.getPlayer().getNrOfPermanents(MagicSubType.Shrine);
-                final MagicDamage damage=new MagicDamage(event.getSource(),it,amt);
-                game.doAction(new MagicDealDamageAction(damage));
+                final int amount = event.getPlayer().getNrOfPermanents(MagicSubType.Shrine);
+                game.doAction(new MagicDealDamageAction(event.getSource(),it,amount));
             });
         }
     }
