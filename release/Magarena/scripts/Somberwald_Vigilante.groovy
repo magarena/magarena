@@ -13,9 +13,9 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPermanentList plist = event.getRefPermanentList();
+            final MagicSource source = event.getSource();
             for (final MagicPermanent blocker : plist) {
-                final MagicDamage damage = new MagicDamage(event.getSource(),blocker,1);
-                game.doAction(new MagicDealDamageAction(damage));
+                game.doAction(new MagicDealDamageAction(source,blocker,1));
             }
         }
     }

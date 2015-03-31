@@ -16,13 +16,9 @@
                 final Collection<MagicPermanent> targets = game.filterPermanents(
                         it,
                         MagicTargetFilterFactory.CREATURE_YOU_CONTROL);
+                final MagicSource source = event.getSource();
                 for (final MagicPermanent target : targets) {
-                    final MagicDamage damage = new MagicDamage(
-                        event.getSource(),
-                        target,
-                        1
-                    );
-                    game.doAction(new MagicDealDamageAction(damage));
+                    game.doAction(new MagicDealDamageAction(source,target,1));
                 }
             });
         }

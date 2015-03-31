@@ -28,10 +28,9 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game,{
                 final int X = game.getNrOfPermanents(MagicSubType.Goblin);
-                final MagicDamage damage=new MagicDamage(event.getSource(),it,X);
-                game.doAction(new MagicDealDamageAction(damage));
-                final MagicDamage damage2=new MagicDamage(event.getSource(),event.getPlayer(),X);
-                game.doAction(new MagicDealDamageAction(damage2));
+                final MagicSource source = event.getSource();
+                game.doAction(new MagicDealDamageAction(source,it,X));
+                game.doAction(new MagicDealDamageAction(source,event.getPlayer(),X));
             });
         }
     }

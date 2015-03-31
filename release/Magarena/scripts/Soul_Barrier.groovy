@@ -3,8 +3,7 @@ def action = {
     if (event.isYes()) {
         event.payManaCost(game);
     } else {
-        final MagicDamage damage = new MagicDamage(event.getSource(),event.getPlayer(),2);
-        game.doAction(new MagicDealDamageAction(damage));
+        game.doAction(new MagicDealDamageAction(event.getSource(),event.getPlayer(),2));
     }
 }
 

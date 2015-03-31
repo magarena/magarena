@@ -28,8 +28,7 @@
             event.processTarget(game, {
                 final MagicPermanent source=event.getPermanent();
                 final int amount=source.getCounters(MagicCounterType.Charge);
-                final MagicDamage damage=new MagicDamage(source,it,amount);
-                game.doAction(new MagicDealDamageAction(damage));
+                game.doAction(new MagicDealDamageAction(source,it,amount));
             });
         }
     }

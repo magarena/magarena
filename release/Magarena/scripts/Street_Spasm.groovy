@@ -15,8 +15,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTarget(game, {
-                final MagicDamage damage=new MagicDamage(event.getSource(),it,event.getRefInt());
-                game.doAction(new MagicDealDamageAction(damage));
+                game.doAction(new MagicDealDamageAction(event.getSource(),it,event.getRefInt()));
             });
         }
     },
@@ -41,9 +40,10 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final Collection<MagicPermanent> targets=
                 game.filterPermanents(event.getPlayer(),MagicTargetFilterFactory.CREATURE_WITHOUT_FLYING_YOUR_OPPONENT_CONTROLS);
+            final MagicSource source = event.getSource();
+            final int amount = event.getRefInt();
             for (final MagicPermanent target : targets) {
-                final MagicDamage damage=new MagicDamage(event.getSource(),target,event.getRefInt());
-                game.doAction(new MagicDealDamageAction(damage));
+                game.doAction(new MagicDealDamageAction(source,target,amount));
             }
         }
     }

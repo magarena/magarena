@@ -12,11 +12,11 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final int amount=event.getCardOnStack().getX();
+            final MagicSource source=event.getSource();
             final Collection<MagicPermanent> targets=
                 game.filterPermanents(event.getPlayer(),MagicTargetFilterFactory.CREATURE);
             for (final MagicPermanent target : targets) {
-                final MagicDamage damage=new MagicDamage(event.getSource(),target,amount);
-                game.doAction(new MagicDealDamageAction(damage));
+                game.doAction(new MagicDealDamageAction(source,target,amount));
             }
         }
     }

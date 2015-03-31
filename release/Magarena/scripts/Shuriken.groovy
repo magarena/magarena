@@ -18,10 +18,9 @@ def public MagicPermanentActivation ThrowIt(final MagicPermanent source) {
         public void executeEvent(final MagicGame game, final MagicEvent event){
             game.doAction(new MagicAttachAction(source, MagicPermanent.NONE));
             event.processTarget(game,{
-                final MagicDamage damage = new MagicDamage(source, it, 2);
-                game.doAction(new MagicDealDamageAction(damage));
+                game.doAction(new MagicDealDamageAction(source,it,2));
                 if (!event.getPermanent().hasSubType(MagicSubType.Ninja)) {
-                    game.doAction(new MagicGainControlAction(it.getController(), source, MagicStatic.Forever));
+                    game.doAction(new MagicGainControlAction(it.getController(),source,MagicStatic.Forever));
                 }
             });
         }   
@@ -35,7 +34,7 @@ def public MagicPermanentActivation ThrowIt(final MagicPermanent source) {
         }
         @Override
         public boolean accept(final MagicGame game,final MagicPermanent source,final MagicPermanent target) { 
-            return MagicStatic.acceptLinked(game, source, target);
+            return MagicStatic.acceptLinked(game,source,target);
         }
     }
 ]

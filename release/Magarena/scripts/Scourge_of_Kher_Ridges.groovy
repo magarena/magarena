@@ -25,8 +25,7 @@
                 game.filterPermanents(MagicTargetFilterFactory.CREATURE_WITH_FLYING);
             for (final MagicPermanent creature : creatures) {
                 if (permanent != creature) {
-                    final MagicDamage damage = new MagicDamage(permanent,creature,6);
-                    game.doAction(new MagicDealDamageAction(damage));
+                    game.doAction(new MagicDealDamageAction(permanent,creature,6));
                 }
             }
         }
