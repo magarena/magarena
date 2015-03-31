@@ -18,7 +18,7 @@
                 MagicTargetChoice.NEG_TARGET_CREATURE,
                 new MagicDamageTargetPicker(source.getPower()),
                 this,
-                "SN deals damage equal to its power to target creature. " +
+                "SN deals damage equal to its power to target creature. ("+source.getPower()+")"+
                 "That creature deals damage equal to its power to SN."
             );
         }
@@ -26,21 +26,11 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final MagicPermanent SN = event.getPermanent();
-                game.doAction(new MagicDealDamageAction(
-                    new MagicDamage(
-                        SN,
-                        it,
-                        SN.getPower()
-                    )
-                ));
-                game.doAction(new MagicDealDamageAction(
-                    new MagicDamage(
-                        it,
-                        SN,
-                        it.getPower()
-                    )
-                ));
+                final MagicPermanent permanent = event.getPermanent();
+                final int amount = it.getPower();
+                game.logAppendMessage(event.getPlayer()," ("+amount+")");
+                game.doAction(new MagicDealDamageAction(permanent,it,permanent.getPower()));
+                game.doAction(new MagicDealDamageAction(it,permanent,amount));
             });
         }
     }
