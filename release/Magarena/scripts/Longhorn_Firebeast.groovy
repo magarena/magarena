@@ -13,8 +13,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
-                final MagicDamage damage=new MagicDamage(event.getSource(),event.getPlayer(),5);
-                game.doAction(new MagicDealDamageAction(damage));
+                game.doAction(new MagicDealDamageAction(event.getSource(),event.getPlayer(),5));
                 game.doAction(new MagicSacrificeAction(event.getPermanent()));
             } 
         }

@@ -2,12 +2,13 @@
     new MagicWhenSelfBecomesBlockedTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
+            final int power = permanent.getPower(); //May change, but gives a value for log
             return new MagicEvent(
                 permanent,
                 new MagicMayChoice(MagicTargetChoice.NEG_TARGET_CREATURE),
-                new MagicDamageTargetPicker(permanent.getPower()),
+                new MagicDamageTargetPicker(power),
                 this,
-                "PN may\$ have SN deal damage equal to its power to target creature\$. " +
+                "PN may\$ have SN deal damage equal to its power ("+power+") to target creature\$. " +
                 "If you do, SN assigns no combat damage this turn."
             );
         }
@@ -17,16 +18,8 @@
             if (event.isYes()) {
                 event.processTargetPermanent(game, {
                     final MagicPermanent permanent = event.getPermanent();
-                    final MagicDamage damage = new MagicDamage(
-                        permanent,
-                        it,
-                        permanent.getPower()
-                    );
-                    game.doAction(new MagicDealDamageAction(damage));
-                    game.doAction(MagicChangeStateAction.Set(
-                        permanent,
-                        MagicPermanentState.NoCombatDamage
-                    ));
+                    game.doAction(new MagicDealDamageAction(permanent,it,permanent.getPower()));
+                    game.doAction(MagicChangeStateAction.Set(permanent,MagicPermanentState.NoCombatDamage));
                 });
             }
         }

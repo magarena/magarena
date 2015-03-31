@@ -14,12 +14,11 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTarget(game, {
                 if (MagicCondition.THRESHOLD_CONDITION.accept(event.getSource())) {
-                    final MagicDamage damage6 = new MagicDamage(event.getSource(),it,6);
-                    damage6.setUnpreventable();
-                    game.doAction(new MagicDealDamageAction(damage6));
+                    final MagicDamage damage = new MagicDamage(event.getSource(),it,6);
+                    damage.setUnpreventable();
+                    game.doAction(new MagicDealDamageAction(damage));
                 } else {
-                    final MagicDamage damage4 = new MagicDamage(event.getSource(),it,4);
-                    game.doAction(new MagicDealDamageAction(damage4));
+                    game.doAction(new MagicDealDamageAction(event.getSource(),it,4));
                 }
             });
         }
