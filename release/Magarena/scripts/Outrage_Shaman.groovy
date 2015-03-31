@@ -15,8 +15,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTarget(game, {
                 final int amount = event.getPlayer().getDevotion(MagicColor.Red);
-                final MagicDamage damage=new MagicDamage(event.getSource(),it,amount);
-                game.doAction(new MagicDealDamageAction(damage));
+                game.doAction(new MagicDealDamageAction(event.getSource(),it,amount));
             });
         }
     }]

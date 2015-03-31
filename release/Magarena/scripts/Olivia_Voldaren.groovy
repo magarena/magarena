@@ -6,9 +6,7 @@
 
         @Override
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
-            return [
-                new MagicPayManaCostEvent(source, "{1}{R}")
-            ];
+            return [new MagicPayManaCostEvent(source, "{1}{R}")];
         }
 
         @Override
@@ -27,12 +25,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final MagicDamage damage = new MagicDamage(
-                    event.getSource(),
-                    it,
-                    1
-                );
-                game.doAction(new MagicDealDamageAction(damage));
+                game.doAction(new MagicDealDamageAction(event.getSource(),it,1));
                 game.doAction(new MagicAddStaticAction(it, MagicStatic.Vampire));
                 game.doAction(new MagicChangeCountersAction(event.getPermanent(),MagicCounterType.PlusOne,1));
             });
@@ -45,9 +38,7 @@
 
         @Override
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
-            return [
-                new MagicPayManaCostEvent(source, "{3}{B}{B}")
-            ];
+            return [new MagicPayManaCostEvent(source, "{3}{B}{B}")];
         }
 
         @Override
@@ -66,10 +57,7 @@
             event.processTargetPermanent(game, {
                 game.doAction(new MagicAddStaticAction(
                     event.getPermanent(), 
-                    MagicStatic.ControlAsLongAsYouControlSource(
-                        event.getPlayer(),
-                        it
-                    )
+                    MagicStatic.ControlAsLongAsYouControlSource(event.getPlayer(),it)
                 ));
             });
         }

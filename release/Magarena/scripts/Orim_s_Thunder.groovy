@@ -1,8 +1,9 @@
 def action = {
     final MagicGame game, final MagicEvent event ->
     event.processTarget(game, {
-        final MagicDamage damage = new MagicDamage(event.getSource(),it,event.getRefInt());
-        game.doAction(new MagicDealDamageAction(damage));
+        final int manaCost = event.getRefInt();
+        game.logAppendMessage(event.getPlayer()," ("+manaCost+")");
+        game.doAction(new MagicDealDamageAction(event.getSource(),it,manaCost));
     });
 }
 
