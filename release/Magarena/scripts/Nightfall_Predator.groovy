@@ -27,10 +27,8 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
                 final MagicPermanent permanent=event.getPermanent();
-                final MagicDamage damage1 = new MagicDamage(permanent,it,permanent.getPower());
-                game.doAction(new MagicDealDamageAction(damage1));
-                final MagicDamage damage2 = new MagicDamage(it,permanent,it.getPower());
-                game.doAction(new MagicDealDamageAction(damage2));
+                game.doAction(new MagicDealDamageAction(permanent,it,permanent.getPower()));
+                game.doAction(new MagicDealDamageAction(it,permanent,it.getPower()));
             });
         }
     }

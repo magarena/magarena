@@ -52,8 +52,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
-                final MagicDamage damage = new MagicDamage(event.getSource(), it, 7);
-                game.doAction(new MagicDealDamageAction(damage));
+                game.doAction(new MagicDealDamageAction(event.getSource(), it, 7));
                 game.addEvent(new MagicDiscardEvent(event.getSource(), it, 7));
                 for (int i=7;i>0;i--) {
                     game.addEvent(new MagicSacrificePermanentEvent(

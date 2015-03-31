@@ -29,9 +29,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
                 final int amount = event.getRefInt();
-                game.doAction(new MagicDealDamageAction(
-                    new MagicDamage(event.getSource(),it,amount)
-                ));
+                game.doAction(new MagicDealDamageAction(event.getSource(),it,amount));
                 game.doAction(new MagicDrawAction(it.getController(),amount));
             });
         }
