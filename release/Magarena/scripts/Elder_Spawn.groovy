@@ -19,8 +19,7 @@ def choice = new MagicTargetChoice("an Island to sacrifice");
                 game.addEvent(sac);
             } else {
                 game.doAction(new MagicSacrificeAction(event.getPermanent()));
-                final MagicDamage damage = new MagicDamage(event.getSource(),event.getPlayer(),6);
-                game.doAction(new MagicDealDamageAction(damage));
+                game.doAction(new MagicDealDamageAction(event.getSource(),event.getPlayer(),6));
             }
         }
     }
