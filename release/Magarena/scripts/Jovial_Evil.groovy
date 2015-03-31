@@ -13,7 +13,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
                 final int amount = it.getNrOfPermanents(MagicTargetFilterFactory.WHITE_CREATURE) * 2;
-                game.logAppendMessage(event.getPlayer(),"(X="+amount+")");
+                game.logAppendMessage(event.getPlayer()," (X="+amount+")");
                 if (amount>0) {
                     game.doAction(new MagicDealDamageAction(event.getSource(),it,amount));
                 }
