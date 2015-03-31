@@ -44,19 +44,22 @@ BNG
 JOU
 M15
 KTK
+FRF
+DTK
 
 # banned: prefix with !
 !Ancestral Vision
 !Ancient Den
+!Birthing Pod
 !Blazing Shoal
 !Bloodbraid Elf
 !Chrome Mox
 !Cloudpost
 !Dark Depths
 !Deathrite Shaman
+!Dig Through Time
 !Dread Return
 !Glimpse of Nature
-!Golgari Grave-Troll
 !Great Furnace
 !Green Sun's Zenith
 !Hypergenesis
@@ -73,6 +76,7 @@ KTK
 !Stoneforge Mystic
 !Skullclamp
 !Sword of the Meek
+!Treasure Cruise
 !Tree of Tales
 !Umezawa's Jitte
 !Vault of Whispers
