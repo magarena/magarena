@@ -15,7 +15,7 @@
                 permanent,
                 upkeepPlayer,
                 this,
-                "PN loses 2 life."
+                "SN deals 2 damage to PN."
             );
         }
         @Override
