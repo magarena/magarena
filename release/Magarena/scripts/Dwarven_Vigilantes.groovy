@@ -19,16 +19,8 @@
             if (event.isYes()) {
                 event.processTargetPermanent(game, {
                     final MagicPermanent permanent = event.getPermanent();
-                    final MagicDamage damage = new MagicDamage(
-                        permanent,
-                        it,
-                        permanent.getPower()
-                    );
-                    game.doAction(new MagicDealDamageAction(damage));
-                    game.doAction(MagicChangeStateAction.Set(
-                        permanent,
-                        MagicPermanentState.NoCombatDamage
-                    ));
+                    game.doAction(new MagicDealDamageAction(permanent,it,permanent.getPower()));
+                    game.doAction(MagicChangeStateAction.Set(permanent,MagicPermanentState.NoCombatDamage));
                 });
             }
         }
