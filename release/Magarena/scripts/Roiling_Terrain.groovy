@@ -16,9 +16,8 @@
             event.processTargetPermanent(game, {
                 game.doAction(new MagicDestroyAction(it));
                 final int amount = game.filterCards(it.getController(),MagicTargetFilterFactory.LAND_CARD_FROM_YOUR_GRAVEYARD).size();
-                final MagicDamage damage=new MagicDamage(event.getSource(),it.getController(),amount);
-                game.doAction(new MagicDealDamageAction(damage));
-                game.logAppendMessage(event.getPlayer(),"("+amount+")");
+                game.doAction(new MagicDealDamageAction(event.getSource(),it.getController(),amount));
+                game.logAppendMessage(event.getPlayer()," ("+amount+")");
             });
         }
     }
