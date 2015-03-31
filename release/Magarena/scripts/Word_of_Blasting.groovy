@@ -16,11 +16,11 @@ def choice = MagicTargetChoice.Negative("target Wall");
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
+                final int amount = it.getConvertedCost();
                 game.doAction(MagicChangeStateAction.Set(it,MagicPermanentState.CannotBeRegenerated));
                 game.doAction(new MagicDestroyAction(it));
-                final MagicDamage damage=new MagicDamage(event.getSource(),it.getController(),it.getConvertedCost());
-                game.doAction(new MagicDealDamageAction(damage));
-                game.logAppendMessage(event.getPlayer(),"("+it.getConvertedCost()+")");
+                game.doAction(new MagicDealDamageAction(event.getSource(),it.getController(),amount));
+                game.logAppendMessage(event.getPlayer()," ("+amount+")");
             });
         }
     }

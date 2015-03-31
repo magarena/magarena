@@ -12,12 +12,9 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final MagicDamage damage = new MagicDamage(
-                    it,
-                    it,
-                    it.getPower()
-                );
-                game.doAction(new MagicDealDamageAction(damage));
+                final int amount = it.getPower();
+                game.logAppendMessage(event.getPlayer()," ("+amount+")");
+                game.doAction(new MagicDealDamageAction(it,it,amount));
             });
         }
     }
