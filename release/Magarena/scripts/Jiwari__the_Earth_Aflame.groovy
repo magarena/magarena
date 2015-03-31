@@ -28,8 +28,7 @@ def choice = MagicTargetChoice.Negative("target creature without flying");
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final Collection<MagicPermanent> creatures = game.filterPermanents(MagicTargetFilterFactory.CREATURE_WITHOUT_FLYING);
             for (final MagicPermanent creature : creatures) {
-                final MagicDamage damage = new MagicDamage(event.getSource(),creature,event.getRefInt());
-                game.doAction(new MagicDealDamageAction(damage));
+                game.doAction(new MagicDealDamageAction(event.getSource(),creature,event.getRefInt()));
             }
         }
     },
@@ -61,8 +60,7 @@ def choice = MagicTargetChoice.Negative("target creature without flying");
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final MagicDamage damage = new MagicDamage(event.getSource(),it,event.getRefInt());
-                game.doAction(new MagicDealDamageAction(damage));
+                game.doAction(new MagicDealDamageAction(event.getSource(),it,event.getRefInt()));
             });
         }
     }

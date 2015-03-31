@@ -12,9 +12,11 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
-                final int X = it.getNrOfPermanents(MagicTargetFilterFactory.WHITE_CREATURE) * 2;
-                final MagicDamage damage=new MagicDamage(event.getSource(),it,X);
-                game.doAction(new MagicDealDamageAction(damage));
+                final int amount = it.getNrOfPermanents(MagicTargetFilterFactory.WHITE_CREATURE) * 2;
+                game.logAppendMessage(event.getPlayer(),"(X="+amount+")");
+                if (amount>0) {
+                    game.doAction(new MagicDealDamageAction(event.getSource(),it,amount));
+                }
             });
         }
     }
