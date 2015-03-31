@@ -7,7 +7,7 @@
                     permanent,
                     upkeepPlayer,
                     this,
-                    "SN deals 2 damage to PN unless PN has exactly three or exactly four cards in hand."
+                    "SN deals 2 damage to PN unless he or she has exactly three or exactly four cards in hand."
                 ):
                 MagicEvent.NONE;
         }
