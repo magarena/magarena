@@ -13,8 +13,7 @@
             final MagicSource source=event.getSource();
             for (final MagicPlayer player : game.getAPNAP()) {
                 final int amount = player.getNrOfPermanents(MagicType.Land);
-                final MagicDamage damage=new MagicDamage(source,player,amount);
-                game.doAction(new MagicDealDamageAction(damage));
+                game.doAction(new MagicDealDamageAction(source,player,amount));
             }
         }
     }

@@ -15,12 +15,7 @@
             final MagicPlayer player = event.getPlayer();
             final int amount = player.getNrOfPermanents(MagicSubType.Equipment);
             event.processTargetPermanent(game, {
-                final MagicDamage damage = new MagicDamage(
-                    event.getSource(),
-                    it,
-                    amount
-                );
-                game.doAction(new MagicDealDamageAction(damage));
+                game.doAction(new MagicDealDamageAction(event.getSource(),it,amount));
             });
         }
     }

@@ -22,20 +22,10 @@
                     MagicTargetFilterFactory.CREATURE_YOU_CONTROL
                 );
                 for (final MagicPermanent creature : creatures) {
-                    final MagicDamage damage = new MagicDamage(
-                        it,
-                        creature,
-                        it.getPower()
-                    );
-                    game.doAction(new MagicDealDamageAction(damage));
+                    game.doAction(new MagicDealDamageAction(it,creature,it.getPower()));
                 }
                 for (final MagicPermanent creature : creatures) {
-                    final MagicDamage damage = new MagicDamage(
-                        creature,
-                        it,
-                        creature.getPower()
-                    );
-                    game.doAction(new MagicDealDamageAction(damage));
+                    game.doAction(new MagicDealDamageAction(creature,it,creature.getPower()));
                 }
             });
         }
