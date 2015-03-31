@@ -15,12 +15,10 @@
             final Collection<MagicPermanent> targets=
                 game.filterPermanents(event.getPlayer(),MagicTargetFilterFactory.CREATURE_WITH_HORSEMANSHIP);
             for (final MagicPermanent target : targets) {
-                final MagicDamage damage=new MagicDamage(source,target,amount);
-                game.doAction(new MagicDealDamageAction(damage));
+                game.doAction(new MagicDealDamageAction(source,target,amount));
             }
             for (final MagicPlayer player : game.getAPNAP()) {
-                final MagicDamage damage=new MagicDamage(source,player,amount);
-                game.doAction(new MagicDealDamageAction(damage));
+                game.doAction(new MagicDealDamageAction(source,player,amount));
             }
         }
     }

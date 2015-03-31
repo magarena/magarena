@@ -14,8 +14,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
                 game.doAction(new MagicChangeTurnPTAction(it,2,0));
-                final MagicDamage damage = new MagicDamage(event.getSource(),it,2)
-                game.doAction(new MagicDealDamageAction(damage));
+                game.doAction(new MagicDealDamageAction(event.getSource(),it,2));
             });
         }
     }

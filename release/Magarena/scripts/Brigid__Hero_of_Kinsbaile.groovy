@@ -26,8 +26,7 @@
                 final Collection<MagicPermanent> targets=
                     game.filterPermanents(it,MagicTargetFilterFactory.ATTACKING_OR_BLOCKING_CREATURE_YOU_CONTROL);
                 for (final MagicPermanent target : targets) {
-                    final MagicDamage damage=new MagicDamage(source,target,2);
-                    game.doAction(new MagicDealDamageAction(damage));
+                    game.doAction(new MagicDealDamageAction(source,target,2));
                 }
             });
         }

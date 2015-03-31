@@ -13,8 +13,8 @@
             final Collection<MagicPermanent> creatures = game.filterPermanents(MagicTargetFilterFactory.CREATURE);
             for (final MagicPermanent creature : creatures) {
                 if (creature.isEnchanted()) {
-                    final MagicDamage damage = new MagicDamage(event.getSource(),creature,creature.getAuraPermanents().size()*2);
-                    game.doAction(new MagicDealDamageAction(damage));
+                    final int amount = creature.getAuraPermanents().size()*2
+                    game.doAction(new MagicDealDamageAction(event.getSource(),creature,amount));
                 }
             }
         }
