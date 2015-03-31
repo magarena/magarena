@@ -27,7 +27,7 @@
             event.processTargetPermanent(game, {
                 game.doAction(new MagicTapAction(it));
                 game.doAction(new MagicDealDamageAction(event.getSource(),it,event.getPermanent().getPower()));
-                game.logAppendMessage(event.getPlayer(),"("+event.getPermanent().getPower()+")");
+                game.logAppendMessage(event.getPlayer()," ("+event.getPermanent().getPower()+")");
             });
         }
     }
