@@ -68,24 +68,26 @@ public class MMAB implements MagicAI {
             final ArtificialChoiceResults achoice=new ArtificialChoiceResults(choice);
             achoices.add(achoice);
             
-            final MagicGame workerGame=new MagicGame(sourceGame,scorePlayer);
-            if (!CHEAT) {
-                workerGame.hideHiddenCards();
-            }
-            if (DECKSTR) {
-                workerGame.setMainPhases(artificialLevel);
-            }
-            workerGame.setFastChoices(true);
-            final MMABWorker worker=new MMABWorker(
-                Thread.currentThread().getId(),
-                workerGame,
-                scoreBoard,
-                CHEAT
-            );
-            
             executor.execute(new Runnable() {
                 @Override
                 public void run() {
+                    final MagicGame workerGame=new MagicGame(sourceGame,scorePlayer);
+                    if (!CHEAT) {
+                        workerGame.hideHiddenCards();
+                    }
+                    if (DECKSTR) {
+                        workerGame.setMainPhases(artificialLevel);
+                    }
+                    workerGame.setFastMana(true);
+                    workerGame.setFastTarget(true);
+                    workerGame.setFastBlocker(true);
+                    final MMABWorker worker=new MMABWorker(
+                        Thread.currentThread().getId(),
+                        workerGame,
+                        scoreBoard,
+                        CHEAT
+                    );
+            
                     worker.evaluateGame(achoice, scoreRef.get(), System.nanoTime() + slice);
                     scoreRef.update(achoice.aiScore.getScore());
                 }
