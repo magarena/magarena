@@ -1,0 +1,11 @@
+name=Great Whale
+image=http://magiccards.info/scans/en/us/77.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Whale
+cost={5}{U}{U}
+pt=5/5
+timing=main
+requires_groovy_code
+oracle=When Great Whale enters the battlefield, untap up to seven lands.
