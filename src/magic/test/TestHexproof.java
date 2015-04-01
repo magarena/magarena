@@ -8,11 +8,6 @@ import magic.model.MagicPlayerDefinition;
 import magic.model.phase.MagicMainPhase;
 
 class TestHexproof extends TestGameBuilder {
-    /**
-     * Raging Ravine changed into 3/3 RG creature cannot block Guardian of the
-     * Guildpack which has protection from monocolored
-     * Fixed by making the protection check use getColorFlags in addition to getColoredTypeg
-     */
     public MagicGame getGame() {
         final MagicDuel duel=new MagicDuel();
         duel.setDifficulty(6);
@@ -30,7 +25,7 @@ class TestHexproof extends TestGameBuilder {
 
         player.setLife(1);
         addToLibrary(player,"Plains",10);
-        createPermanent(game,player,"Rupture Spire",false,8);
+        createPermanent(game,player,"Mountain",false,8);
         createPermanent(game,player,"Thrun, the Last Troll",false,1);
         createPermanent(game,player,"Silhana Ledgewalker",false,1);
         createPermanent(game,player,"Troll Ascetic",false,1);
@@ -39,7 +34,7 @@ class TestHexproof extends TestGameBuilder {
 
         opponent.setLife(1);
         addToLibrary(opponent,"Island",10);
-        createPermanent(game,opponent,"Rupture Spire",false,8);
+        createPermanent(game,opponent,"Mountain",false,8);
         addToHand(opponent,"Lightning Bolt",3);
 
         return game;
