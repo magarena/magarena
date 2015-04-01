@@ -16,6 +16,7 @@ import magic.ui.IconImages;
 import magic.ui.MagicStyle;
 import magic.ui.duel.CounterOverlay;
 import magic.ui.duel.viewer.PlayerViewerInfo;
+import magic.ui.theme.ThemeFactory;
 import org.pushingpixels.trident.Timeline;
 import org.pushingpixels.trident.ease.Spline;
 
@@ -33,6 +34,7 @@ public class PlayerImagePanel extends JPanel {
     private int life = 0;
     private int damageColorOpacity = 0;
     private int healColorOpacity = 0;
+    private boolean isValidChoiceVisible = false;
 
     public PlayerImagePanel(final PlayerViewerInfo player, final MagicGame game) {
         this.playerInfo = player;
@@ -67,10 +69,19 @@ public class PlayerImagePanel extends JPanel {
         g2d.setRenderingHint(RenderingHints.KEY_TEXT_ANTIALIASING, RenderingHints.VALUE_TEXT_ANTIALIAS_ON);
         drawHealthValueOverlay(g2d, 0, 0, activeImage);
 
+        drawValidChoiceIndicator(g2d);
+
         // Animations
         drawDamageAlert(g2d);
         drawHealAlert(g2d);
 
+    }
+
+    private void drawValidChoiceIndicator(Graphics2D g2d) {
+        if (isValidChoiceVisible) {
+            g2d.setColor(ThemeFactory.getInstance().getCurrentTheme().getChoiceColor());
+            g2d.fillRect(0, 0, getWidth(), getHeight());
+        }
     }
 
     private void drawDamageAlert(Graphics2D g2d) {
@@ -171,6 +182,11 @@ public class PlayerImagePanel extends JPanel {
                     Timeline.property("healColorOpacity").on(this).from(100).to(0));
             timeline.play();
         }
+    }
+
+    void showValidChoiceIndicator(boolean b) {
+        this.isValidChoiceVisible = b;
+        repaint();
     }
 
 }

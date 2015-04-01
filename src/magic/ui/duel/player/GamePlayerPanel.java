@@ -73,7 +73,7 @@ public class GamePlayerPanel extends TexturedPanel implements ChoiceViewer {
 
     @Override
     public void showValidChoices(Set<?> validChoices) {
-        avatarButton.setValid(!validChoices.isEmpty() ? validChoices.contains(playerInfo.player) : false);
+        avatarPanel.showValidChoiceIndicator(!validChoices.isEmpty() ? validChoices.contains(playerInfo.player) : false);
     }
 
     public void updateDisplay(final PlayerViewerInfo playerInfo) {
