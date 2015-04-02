@@ -6,7 +6,7 @@ type=Creature
 subtype=Sphinx
 cost={4}{U}{U}
 pt=4/6
-ability=flying
+ability=Flying.;\
+        Whenever an opponent draws a card, you may draw two cards.
 timing=main
-requires_groovy_code
 oracle=Flying. Whenever an opponent draws a card, you may draw two cards.

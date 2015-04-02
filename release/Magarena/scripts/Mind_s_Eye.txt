@@ -4,6 +4,6 @@ value=4.109
 rarity=R
 type=Artifact
 cost={5}
+ability=Whenever an opponent draws a card, you may pay {1}. If you do, draw a card.
 timing=artifact
-requires_groovy_code
 oracle=Whenever an opponent draws a card, you may pay {1}. If you do, draw a card.
