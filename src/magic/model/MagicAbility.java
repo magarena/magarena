@@ -1049,6 +1049,20 @@ public enum MagicAbility {
             ));
         }
     },
+    WhenOppDrawCard("Whenever an opponent draws a card, " + ARG.EFFECT, 0) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            card.add(MagicWhenOtherDrawnTrigger.createOpp(
+                MagicRuleEventAction.create(ARG.effect(arg))
+            ));
+        }
+    },
+    WhenPlayerDrawCard("Whenever a player draws a card, " + ARG.EFFECT, 0) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            card.add(MagicWhenOtherDrawnTrigger.create(
+                MagicRuleEventAction.create(ARG.effect(arg))
+            ));
+        }
+    },
     CantBlockPermanent("(SN )?can't block " + ARG.WORDRUN + "(\\.)?", 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicCantBlockTrigger.create(
