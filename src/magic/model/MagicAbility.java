@@ -952,16 +952,16 @@ public enum MagicAbility {
             ));
         }
     },
-    EachOtherDrawStepEffect("At the beginning of each other player's draw step, " + ARG.EFFECT, 10) {
+    YourDrawStepEffect("At the beginning of your draw step, " + ARG.EFFECT, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(MagicAtDrawTrigger.createOpp(
+            card.add(MagicAtDrawTrigger.createYour(
                 MagicRuleEventAction.create(ARG.effect(arg))
             ));
         }
     },
-    YourDrawStepEffect("At the beginning of your draw step, " + ARG.EFFECT, 10) {
+    OppDrawStepEffect("At the beginning of each (other player|opponent)'s draw step, " + ARG.EFFECT, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(MagicAtDrawTrigger.createYour(
+            card.add(MagicAtDrawTrigger.createOpp(
                 MagicRuleEventAction.create(ARG.effect(arg))
             ));
         }
