@@ -6,5 +6,5 @@ type=Sorcery
 cost={R}
 effect=Target creature without flying can't block this turn.
 ability=storm
-timing=main
+timing=fmain
 oracle=Target creature without flying can't block this turn. Storm
