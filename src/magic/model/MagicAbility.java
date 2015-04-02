@@ -931,7 +931,7 @@ public enum MagicAbility {
             ));
         }
     },
-    EachUpkeepEffect("At the beginning of each upkeep, " + ARG.EFFECT, 10) {
+    EachUpkeepEffect("At the beginning of each (player's )?upkeep, " + ARG.EFFECT, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicAtUpkeepTrigger.create(
                 MagicRuleEventAction.create(ARG.effect(arg))
