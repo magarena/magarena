@@ -6,7 +6,7 @@ type=Creature
 subtype=Spirit,Avatar
 cost={G/U}{G/U}{G/U}{G/U}{G/U}
 pt=*/*
-ability=SN's power and toughness are each equal to the number of cards in your hand.
+ability=SN's power and toughness are each equal to the number of cards in your hand.;\
+        At the beginning of your draw step, draw a card.
 timing=main
-requires_groovy_code
 oracle=Overbeing of Myth's power and toughness are each equal to the number of cards in your hand. At the beginning of your draw step, draw an additional card.

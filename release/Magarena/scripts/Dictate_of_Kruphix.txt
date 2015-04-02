@@ -4,7 +4,7 @@ value=3.788
 rarity=R
 type=Enchantment
 cost={1}{U}{U}
-ability=Flash
+ability=Flash;\
+        At the beginning of each player's draw step, RN draws a card.
 timing=flash
-requires_groovy_code
 oracle=Flash. At the beginning of each player's draw step, that player draws an additional card.

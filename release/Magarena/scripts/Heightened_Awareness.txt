@@ -4,7 +4,7 @@ value=3.636
 rarity=R
 type=Enchantment
 cost={3}{U}{U}
-ability=When SN enters the battlefield, discard your hand.
+ability=When SN enters the battlefield, discard your hand.;\
+        At the beginning of your draw step, draw a card.
 timing=enchantment
-requires_groovy_code
 oracle=As Heightened Awareness enters the battlefield, discard your hand. At the beginning of your draw step, draw an additional card.
