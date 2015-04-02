@@ -737,8 +737,8 @@ public enum MagicRuleEventAction {
             };
         }
     },
-    DrawDiscardSelf(
-        "draw(s)? (?<amount1>[a-z]+) card(s)?, then discard(s)? (?<amount2>[a-z]+) card(s)?\\.", 
+    DrawDiscardPlayer(
+        ARG.YOU + "( )?draw(s)? (?<amount1>[a-z]+) card(s)?, then discard(s)? (?<amount2>[a-z]+) card(s)?\\.", 
         MagicTiming.Draw, 
         "Draw"
     ) {
@@ -749,8 +749,8 @@ public enum MagicRuleEventAction {
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    game.doAction(new MagicDrawAction(event.getPlayer(), amount1));
-                    game.addEvent(new MagicDiscardEvent(event.getSource(), event.getPlayer(), amount2));
+                    game.doAction(new MagicDrawAction(event.getPlayer(matcher), amount1));
+                    game.addEvent(new MagicDiscardEvent(event.getSource(), event.getPlayer(matcher), amount2));
                 }
             };
         }
