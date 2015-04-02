@@ -7,6 +7,6 @@ subtype=Human,Wizard
 cost={2}{B}
 pt=2/2
 ability={U},{T}: Draw a card, then discard a card.;\
-        {R},{T}: Target creature gains "SN can't block." until end of turn.
+        {R},{T}: Target creature can't block this turn.
 timing=main
 oracle={U}, {T}: Draw a card, then discard a card. {R}, {T}: Target creature can't block this turn.
