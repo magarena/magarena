@@ -31,7 +31,7 @@ public abstract class MagicAtDrawTrigger extends MagicTrigger<MagicPlayer> {
         return new MagicAtDrawTrigger() {
             @Override
             public boolean accept(final MagicPermanent permanent, final MagicPlayer drawPlayer) {
-                return permanent.isController(drawPlayer) ?
+                return permanent.isController(drawPlayer);
             }
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer drawPlayer) {
