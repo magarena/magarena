@@ -15,7 +15,7 @@ def A_CARD_NAMED_ORISS = new MagicTargetChoice(
 
 [
     new MagicPermanentActivation(
-        new MagicActivationHints(MagicTiming.Tapping),
+        new MagicActivationHints(MagicTiming.FirstMain),
         "Grandeur"
     ) {
         @Override
@@ -34,13 +34,10 @@ def A_CARD_NAMED_ORISS = new MagicTargetChoice(
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
-                game.doAction(new MagicChangePlayerStateAction(
-                    it,
-                    MagicPlayerState.CantCastSpells
-                ));
-            final Collection<MagicPermanent> creatures = it.filterPermanents(MagicTargetFilterFactory.CREATURE_YOU_CONTROL);
-            for (final MagicPermanent creature : creatures) {
-                game.doAction(new MagicGainAbilityAction(creature, MagicAbility.CannotAttack));
+                game.doAction(new MagicChangePlayerStateAction(it, MagicPlayerState.CantCastSpells));
+                final Collection<MagicPermanent> creatures = it.filterPermanents(MagicTargetFilterFactory.CREATURE_YOU_CONTROL);
+                for (final MagicPermanent creature : creatures) {
+                    game.doAction(new MagicGainAbilityAction(creature, MagicAbility.CannotAttack));
                 }
             });
         }
