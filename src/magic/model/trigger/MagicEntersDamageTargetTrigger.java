@@ -49,12 +49,7 @@ public class MagicEntersDamageTargetTrigger extends MagicWhenComesIntoPlayTrigge
     public void executeEvent(final MagicGame game, final MagicEvent event) {
         event.processTarget(game,new MagicTargetAction() {
             public void doAction(final MagicTarget target) {
-                final MagicDamage damage = new MagicDamage(
-                    event.getSource(),
-                    target,
-                    n
-                );
-                game.doAction(new MagicDealDamageAction(damage));
+                game.doAction(new MagicDealDamageAction(event.getSource(), target, n));
             }
         });
     }

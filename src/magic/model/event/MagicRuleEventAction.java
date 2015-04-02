@@ -387,16 +387,14 @@ public enum MagicRuleEventAction {
                         filter1
                     );
                     for (final MagicTarget target : targets1) {
-                        final MagicDamage damage=new MagicDamage(event.getSource(),target,amount);
-                        game.doAction(new MagicDealDamageAction(damage));
+                        game.doAction(new MagicDealDamageAction(event.getSource(),target,amount));
                     }
                     final Collection<MagicTarget> targets2 = game.filterTargets(
                         event.getPlayer(),
                         filter2
                     );
                     for (final MagicTarget target : targets2) {
-                        final MagicDamage damage=new MagicDamage(event.getSource(),target,amount);
-                        game.doAction(new MagicDealDamageAction(damage));
+                        game.doAction(new MagicDealDamageAction(event.getSource(),target,amount));
                     }
                 }
             };
@@ -436,8 +434,7 @@ public enum MagicRuleEventAction {
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    final MagicDamage damage=new MagicDamage(event.getSource(),event.getPlayer(),amount);
-                    game.doAction(new MagicDealDamageAction(damage));
+                    game.doAction(new MagicDealDamageAction(event.getSource(),event.getPlayer(),amount));
                 }
             };
         }
@@ -457,12 +454,8 @@ public enum MagicRuleEventAction {
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
                     event.processTarget(game,new MagicTargetAction() {
                         public void doAction(final MagicTarget target) {
-                            game.doAction(new MagicDealDamageAction(
-                                new MagicDamage(event.getSource(),target,amount)
-                            ));
-                            game.doAction(new MagicDealDamageAction(
-                                new MagicDamage(event.getSource(),event.getPlayer(),amount2)
-                            ));
+                            game.doAction(new MagicDealDamageAction(event.getSource(),target,amount));
+                            game.doAction(new MagicDealDamageAction(event.getSource(),event.getPlayer(),amount2));
                         }
                     });
                 }
@@ -488,8 +481,7 @@ public enum MagicRuleEventAction {
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
                     event.processTarget(game,new MagicTargetAction() {
                         public void doAction(final MagicTarget target) {
-                            final MagicDamage damage=new MagicDamage(event.getSource(matcher),target,amount);
-                            game.doAction(new MagicDealDamageAction(damage));
+                            game.doAction(new MagicDealDamageAction(event.getSource(matcher),target,amount));
                         }
                     });
                 }
