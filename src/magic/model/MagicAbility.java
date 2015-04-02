@@ -592,7 +592,7 @@ public enum MagicAbility {
             ));
         }
     },
-    SelfDiesEffect("When SN (dies|is put into a graveyard from the battlefield), " + ARG.EFFECT, 10) {
+    SelfDiesEffect("When (SN|this creature) (dies|is put into a graveyard from the battlefield), " + ARG.EFFECT, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicWhenDiesTrigger.create(
                 MagicRuleEventAction.create(ARG.effect(arg))

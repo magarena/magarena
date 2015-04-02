@@ -62,10 +62,14 @@ public class MagicMessage {
     }
 
     public static String replaceName(final String sourceText,final Object source, final Object player, final Object ref) {
+        final String evenQuotes = "(?=([^\"]*'[^\"]*')*[^\"]*$)";
         return sourceText
             .replaceAll("PN", player.toString())
             .replaceAll("SN", source.toString())
-            .replaceAll("RN", ref.toString());
+            .replaceAll("RN", ref.toString())
+            .replaceAll("(T|t)his permanent" + evenQuotes, source.toString())
+            .replaceAll("(T|t)his creature" + evenQuotes, source.toString())
+            .replaceAll(" it " + evenQuotes, " " + source.toString() + " ");
     }
 
     public static String replaceChoices(final String sourceText,final Object[] choices) {

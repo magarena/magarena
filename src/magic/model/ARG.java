@@ -65,7 +65,7 @@ public class ARG {
         return m.group("pt");
     }
     
-    public static final String IT = "(?<it>(sn|rn))";
+    public static final String IT = "(?<it>(rn|sn|it|this permanent|this creature))";
     public static String it(final Matcher m) {
         return m.group("it");
     }

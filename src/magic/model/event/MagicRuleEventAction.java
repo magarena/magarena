@@ -403,7 +403,7 @@ public enum MagicRuleEventAction {
         }
     },
     DamageGroup(
-        "sn deal(s)? (?<amount>[0-9]+) damage to each (?<group>[^\\.]*)\\.",
+        ARG.IT + " deal(s)? (?<amount>[0-9]+) damage to each (?<group>[^\\.]*)\\.",
         MagicTiming.Removal,
         "Damage"
     ) {
@@ -419,8 +419,7 @@ public enum MagicRuleEventAction {
                         filter
                     );
                     for (final MagicTarget target : targets) {
-                        final MagicDamage damage=new MagicDamage(event.getSource(),target,amount);
-                        game.doAction(new MagicDealDamageAction(damage));
+                        game.doAction(new MagicDealDamageAction(event.getSource(matcher),target,amount));
                     }
                 }
             };
@@ -2322,7 +2321,7 @@ public enum MagicRuleEventAction {
         }
     ),
     UntapSelf(
-        "untap sn\\.", 
+        "untap " + ARG.IT + "\\.", 
         MagicTiming.Tapping, 
         "Untap"
     ) {
@@ -2331,7 +2330,7 @@ public enum MagicRuleEventAction {
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    game.doAction(new MagicUntapAction(event.getPermanent()));
+                    game.doAction(new MagicUntapAction(event.getPermanent(matcher)));
                 }
             };
         }
@@ -2635,7 +2634,7 @@ public enum MagicRuleEventAction {
     },
     */
     RegenerateSelf(
-        "regenerate sn\\.", 
+        "regenerate " +  ARG.IT + "\\.", 
         MagicTiming.Pump, 
         "Regen"
     ) {
@@ -2644,7 +2643,7 @@ public enum MagicRuleEventAction {
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    game.doAction(new MagicRegenerateAction(event.getPermanent()));
+                    game.doAction(new MagicRegenerateAction(event.getPermanent(matcher)));
                 }
             };
         }
