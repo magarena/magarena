@@ -6,6 +6,6 @@ type=Enchantment,Creature
 subtype=Hag
 cost={3}{B}
 pt=3/4
+ability=Whenever an opponent draws a card, SN deals 1 damage to RN.
 timing=main
-requires_groovy_code=Underworld Dreams
 oracle=Whenever an opponent draws a card, Fate Unraveler deals 1 damage to that player.
