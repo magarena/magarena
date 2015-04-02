@@ -1,5 +1,4 @@
 [
-    MagicAtDrawTrigger.EachPlayerDraw,
     new MagicWhenOtherDrawnTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCard card) {
