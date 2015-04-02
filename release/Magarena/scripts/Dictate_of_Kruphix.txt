@@ -5,6 +5,6 @@ rarity=R
 type=Enchantment
 cost={1}{U}{U}
 ability=Flash;\
-        At the beginning of each player's draw step, RN draws a card.
+        At the beginning of each player's draw step, RN draws an additional card.
 timing=flash
 oracle=Flash. At the beginning of each player's draw step, that player draws an additional card.

@@ -4,7 +4,7 @@ value=3.680
 rarity=R
 type=Enchantment
 cost={2}{G}
-ability=At the beginning of each player's draw step, RN draws a card.
+ability=At the beginning of each player's draw step, RN draws an additional card.
 timing=enchantment
 requires_groovy_code
 oracle=At the beginning of each player's draw step, that player draws an additional card. Each player may play an additional land on each of his or her turns.
