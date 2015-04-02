@@ -39,4 +39,17 @@ public abstract class MagicAtDrawTrigger extends MagicTrigger<MagicPlayer> {
             }
         };
     }
+    
+    public static MagicAtDrawTrigger createOpp(final MagicSourceEvent sourceEvent) {
+        return new MagicAtDrawTrigger() {
+            @Override
+            public boolean accept(final MagicPermanent permanent, final MagicPlayer drawPlayer) {
+                return permanent.isOpponent(drawPlayer);
+            }
+            @Override
+            public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer drawPlayer) {
+                return sourceEvent.getEvent(permanent, drawPlayer);
+            }
+        };
+    }
 }
