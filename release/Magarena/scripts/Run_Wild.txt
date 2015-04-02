@@ -4,6 +4,6 @@ value=3.000
 rarity=U
 type=Instant
 cost={G}
-effect=Until end of turn, target creature gains trample and "{G}: Regenerate SN."
+effect=Until end of turn, target creature gains trample and "{G}: Regenerate this creature."
 timing=pump
 oracle=Until end of turn, target creature gains trample and "{G}: Regenerate this creature."

@@ -7,6 +7,6 @@ subtype=Elemental
 cost={3}{G}{G}
 pt=4/4
 ability=At the beginning of your end step, manifest the top card of your library.;\
-        Sacrifice SN: Until end of turn, face-up nontoken creatures you control gain "When SN dies, manifest the top card of your library."
+        Sacrifice SN: Until end of turn, face-up nontoken creatures you control gain "When this creature dies, manifest the top card of your library."
 timing=main
 oracle=At the beginning of your end step, manifest the top card of your library. Sacrifice Whisperwood Elemental: Until end of turn, face-up nontoken creatures you control gain "When this creature dies, manifest the top card of your library."

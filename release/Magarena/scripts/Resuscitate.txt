@@ -4,6 +4,6 @@ value=2.562
 rarity=U
 type=Instant
 cost={1}{G}
-effect=Until end of turn, creatures you control gain "{1}: Regenerate SN."
+effect=Until end of turn, creatures you control gain "{1}: Regenerate this creature."
 timing=pump
 oracle=Until end of turn, creatures you control gain "{1}: Regenerate this creature."
