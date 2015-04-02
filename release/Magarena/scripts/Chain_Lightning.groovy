@@ -2,7 +2,7 @@ def action = {
     final MagicGame game, final MagicEvent event ->
     if (event.isYes()) {
         event.payManaCost(game);
-        game.doAction(new MagicCopyCardOnStackAction(event.getPlayer(),event.getRefCardOnStack()));
+        game.doAction(new MagicCopyCardOnStackAction(event.getPlayer(),event.getCardOnStack()));
     }
 }
 
@@ -28,7 +28,6 @@ def action = {
                         "Pay {R}{R}?",
                         new MagicPayManaCostChoice(MagicManaCost.create("{R}{R}"))
                     ),
-                    event.getCardOnStack(),
                     action,
                     "PN may\$ pay {R}{R}\$. If that player does, he or she may copy this spell and may choose a new target for that copy."
                 ));
