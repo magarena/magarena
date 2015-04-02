@@ -938,6 +938,13 @@ public enum MagicAbility {
             ));
         }
     },
+    YourUpkeepEffect("At the beginning of your upkeep, " + ARG.EFFECT, 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            card.add(MagicAtYourUpkeepTrigger.create(
+                MagicRuleEventAction.create(ARG.effect(arg))
+            ));
+        }
+    },
     EachDrawStepEffect("At the beginning of each player's draw step, " + ARG.EFFECT, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicAtDrawTrigger.create(
@@ -945,9 +952,9 @@ public enum MagicAbility {
             ));
         }
     },
-    YourUpkeepEffect("At the beginning of your upkeep, " + ARG.EFFECT, 10) {
+    YourDrawStepEffect("At the beginning of your draw step, " + ARG.EFFECT, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(MagicAtYourUpkeepTrigger.create(
+            card.add(MagicAtDrawTrigger.createYour(
                 MagicRuleEventAction.create(ARG.effect(arg))
             ));
         }
