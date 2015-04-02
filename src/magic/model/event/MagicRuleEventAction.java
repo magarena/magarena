@@ -618,7 +618,7 @@ public enum MagicRuleEventAction {
         }
     },
     DrawSelf(
-        ARG.YOU + "( )?draw(s)? (?<amount>[a-z]+) card(s)?\\.", 
+        ARG.YOU + "( )?draw(s)? (?<amount>[a-z]+) (additional )?card(s)?\\.", 
         MagicTiming.Draw, 
         "Draw"
     ) {
