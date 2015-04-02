@@ -13,17 +13,14 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
-                game.doAction(new MagicChangePlayerStateAction(
-                    it,
-                    MagicPlayerState.CantCastSpells
-                ));
-            });
-            if (event.isKicked()) {
-            final Collection<MagicPermanent> creatures = game.filterPermanents(MagicTargetFilterFactory.CREATURE);
-            for (final MagicPermanent creature : creatures) {
-                game.doAction(new MagicGainAbilityAction(creature, MagicAbility.CannotAttack));
+                game.doAction(new MagicChangePlayerStateAction(it, MagicPlayerState.CantCastSpells));
+                if (event.isKicked()) {
+                    final Collection<MagicPermanent> creatures = game.filterPermanents(MagicTargetFilterFactory.CREATURE);
+                    for (final MagicPermanent creature : creatures) {
+                        game.doAction(new MagicGainAbilityAction(creature, MagicAbility.CannotAttack));
+                    }
                 }
-            }
+            });
         }
     }
 ]
