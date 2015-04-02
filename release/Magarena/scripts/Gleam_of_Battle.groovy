@@ -14,7 +14,6 @@
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicDamage damage=new MagicDamage(event.getSource(),event.getRefPermanent(),4);
             game.doAction(new MagicChangeCountersAction(event.getRefPermanent(),MagicCounterType.PlusOne,1));
         }
     }
