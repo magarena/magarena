@@ -618,7 +618,7 @@ public enum MagicRuleEventAction {
         }
     },
     DrawSelf(
-        "(pn |you )?draw(s)? (?<amount>[a-z]+) card(s)?\\.", 
+        ARG.YOU + "( )?draw(s)? (?<amount>[a-z]+) card(s)?\\.", 
         MagicTiming.Draw, 
         "Draw"
     ) {
@@ -628,7 +628,7 @@ public enum MagicRuleEventAction {
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    game.doAction(new MagicDrawAction(event.getPlayer(), amount));
+                    game.doAction(new MagicDrawAction(event.getPlayer(matcher), amount));
                 }
             };
         }

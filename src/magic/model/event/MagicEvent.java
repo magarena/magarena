@@ -339,6 +339,19 @@ public class MagicEvent implements MagicCopyable {
         return (MagicCardList)ref;
     }
 
+    public final MagicPlayer getPlayer(final Matcher m) {
+        final String name = ARG.you(m);
+        if (name.equalsIgnoreCase("rn")) {
+            return getRefPlayer();
+        } else {
+            return getPlayer();
+        }
+    }
+
+    public final MagicPlayer getPlayer() {
+        return player;
+    }
+
     public final MagicPlayer getRefPlayer() {
         return (MagicPlayer)ref;
     }
@@ -373,10 +386,6 @@ public class MagicEvent implements MagicCopyable {
 
     public final MagicCardOnStack getCardOnStack() {
         return (MagicCardOnStack)source;
-    }
-
-    public final MagicPlayer getPlayer() {
-        return player;
     }
 
     public final boolean hasChoice() {

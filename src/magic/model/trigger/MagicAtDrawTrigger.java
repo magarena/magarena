@@ -5,6 +5,7 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.action.MagicDrawAction;
 import magic.model.event.MagicEvent;
+import magic.model.event.MagicSourceEvent;
 
 public abstract class MagicAtDrawTrigger extends MagicTrigger<MagicPlayer> {
     public MagicAtDrawTrigger(final int priority) {
@@ -16,13 +17,22 @@ public abstract class MagicAtDrawTrigger extends MagicTrigger<MagicPlayer> {
     public MagicTriggerType getType() {
         return MagicTriggerType.AtDraw;
     }
+    
+    public static MagicAtDrawTrigger create(final MagicSourceEvent sourceEvent) {
+        return new MagicAtDrawTrigger() {
+            @Override
+            public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer drawPlayer) {
+                return sourceEvent.getEvent(permanent, drawPlayer);
+            }
+        };
+    }
 
     public static final MagicAtDrawTrigger EachPlayerDraw = new MagicAtDrawTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer drawPlayer) {
             return new MagicEvent(
                 permanent,
-                upkeepPlayer,
+                drawPlayer,
                 this,
                 "PN draws a card."
             );

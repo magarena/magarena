@@ -70,5 +70,10 @@ public class ARG {
         return m.group("it");
     }
     
+    public static final String YOU = "(?<you>(rn|pn|you||))";
+    public static String you(final Matcher m) {
+        return m.group("you");
+    }
+    
     public static final String COLON = "\\s*:\\s*";
 } 

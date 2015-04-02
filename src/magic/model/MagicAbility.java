@@ -938,6 +938,13 @@ public enum MagicAbility {
             ));
         }
     },
+    EachDrawStepEffect("At the beginning of each player's draw step, " + ARG.EFFECT, 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            card.add(MagicAtDrawTrigger.create(
+                MagicRuleEventAction.create(ARG.effect(arg))
+            ));
+        }
+    },
     YourUpkeepEffect("At the beginning of your upkeep, " + ARG.EFFECT, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicAtYourUpkeepTrigger.create(
