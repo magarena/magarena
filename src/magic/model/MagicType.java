@@ -1,5 +1,6 @@
 package magic.model;
 
+import java.util.ArrayList;
 import java.util.EnumSet;
 import java.util.Set;
 
@@ -56,6 +57,20 @@ public enum MagicType {
             }
         }
         throw new RuntimeException("No corresponding MagicType for " + name);
+    }
+    
+    //Takes array of strings and only returns valid MagicTypes   
+    public static ArrayList<MagicType> convertTypes(final String[] typeNames) {
+        final ArrayList<MagicType> types = new ArrayList<MagicType>();
+        for (final String name:typeNames) {
+            for (final MagicType type : values()) {
+                if (type.toString().equalsIgnoreCase(name)) {
+                    types.add(MagicType.getType(name));
+                    System.out.println("Type: "+name);
+                }
+            }
+        }
+       return types;
     }
 
     public static int getTypes(final String[] typeNames) {
