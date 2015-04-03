@@ -59,28 +59,29 @@ public class MagicBecomesAction extends MagicAction {
                 @Override
                 public void modPowerToughness(final MagicPermanent source, final MagicPermanent permanent, final MagicPowerToughness bPt) {
                     bPt.set(Integer.parseInt(pt[0]), Integer.parseInt(pt[1]));
-                    System.out.println("Power="+Integer.parseInt(pt[0])+" Toughness="+Integer.parseInt(pt[1]));
                 }
             };
             staticCollect.add(PT);
         }
-        if (color !=null) {
             final MagicStatic C = new MagicStatic(MagicLayer.Color, duration) {
                 @Override
                 public int getColorFlags(final MagicPermanent permanent,final int flags) {
-                    int mask = 0;
-                    for (final MagicColor element : color) {
-                        mask += element.getMask();
-                    }
-                    if (additionTo) {
-                        return flags|mask;
+                    if (color !=null) {
+                        int mask = 0;
+                        for (final MagicColor element : color) {
+                            mask += element.getMask();
+                        }
+                        if (additionTo) {
+                            return flags|mask; //If color change is in addition to original colors, return all
+                        } else {
+                            return mask; //If color change replaces original color, return changes
+                        }
                     } else {
-                        return mask;
+                        return flags; //If no color change, return orignal
                     }
                 }
             };
             staticCollect.add(C);
-        }
         if (type!=null|subType!=null) {
             final MagicStatic ST = new MagicStatic(MagicLayer.Type, duration) {
                 @Override
