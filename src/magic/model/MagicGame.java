@@ -84,9 +84,6 @@ public class MagicGame {
     private MagicPhaseType skipTurnTill = MagicPhaseType.Mulligan;
     private boolean stateCheckRequired;
     private boolean artificial;
-    private boolean fastMana;
-    private boolean fastTarget;
-    private boolean fastBlocker;
     private boolean immediate;
     private boolean disableLog;
     private final MagicPlayer visiblePlayer;
@@ -104,6 +101,14 @@ public class MagicGame {
     private long time = 1000000;
     private boolean isConceded = false;
 
+    // affects options available to AI for each choice
+    private boolean fastMana = false;
+    private boolean fastTarget = false;
+    private boolean fastBlocker = false;
+    private boolean hintTiming = true;
+    private boolean hintPriority = true;
+    private boolean hintMaximum = true;
+    private boolean hintTarget = true;
 
     public static MagicGame getInstance() {
         return INSTANCE;
@@ -206,6 +211,10 @@ public class MagicGame {
         //fastTarget
         //fastBlocker
         //immediate
+        //hintTiming
+        //hintPriority
+        //hintMaximum
+        //hintTarget
         //skipTurnTill
         //mainPhaseCount
 
@@ -364,12 +373,24 @@ public class MagicGame {
         return fastMana;
     }
     
+    public void setFastMana(final boolean v) {
+        fastMana = v;
+    }
+    
     public boolean getFastTarget() {
         return fastTarget;
     }
     
+    public void setFastTarget(final boolean v) {
+        fastTarget = v;
+    }
+    
     public boolean getFastBlocker() {
         return fastBlocker;
+    }
+    
+    public void setFastBlocker(final boolean v) {
+        fastBlocker = v;
     }
 
     public void setFastChoices(final boolean v) {
@@ -378,18 +399,37 @@ public class MagicGame {
         fastBlocker = v;
     }
 
-    public void setFastMana(final boolean v) {
-        fastMana = v;
+    public boolean getHintTiming() {
+        return hintTiming;
     }
 
-    public void setFastTarget(final boolean v) {
-        fastTarget = v;
+    public void setHintTiming(final boolean v) {
+        hintTiming = v;
+    }
+    
+    public boolean getHintPriority() {
+        return hintPriority;
     }
 
-    public void setFastBlocker(final boolean v) {
-        fastBlocker = v;
+    public void setHintPriority(final boolean v) {
+        hintPriority = v;
+    }
+    
+    public boolean getHintMaximum() {
+        return hintMaximum;
     }
 
+    public void setHintMaximum(final boolean v) {
+        hintMaximum = v;
+    }
+    
+    public boolean getHintTarget() {
+        return hintTarget;
+    }
+
+    public void setHintTarget(final boolean v) {
+        hintTarget = v;
+    }
 
     public void setTurn(final int aTurn) {
         turn = aTurn;

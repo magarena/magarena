@@ -63,17 +63,17 @@ public abstract class MagicActivation<T extends MagicSource> implements MagicEve
         player.getOpponent().getActivationPriority().clear();
     }
 
-    public boolean canPlay(final MagicGame game, final MagicPlayer player, final T source, final boolean useHints) {
+    public boolean canPlay(final MagicGame game, final MagicPlayer player, final T source, final boolean isAI) {
 
-        if (useHints && !checkActivationPriority(source)) {
+        if (isAI && game.getHintPriority() && !checkActivationPriority(source)) {
             return false;
         }
 
-        if (useHints && !hints.getTiming().canPlay(game, source)) {
+        if (isAI && game.getHintTiming() && !hints.getTiming().canPlay(game, source)) {
             return false;
         }
 
-        if (useHints && hints.isMaximum(source)) {
+        if (isAI && game.getHintMaximum() && hints.isMaximum(source)) {
             return false;
         }
 
@@ -113,7 +113,7 @@ public abstract class MagicActivation<T extends MagicSource> implements MagicEve
         }
 
         // Check for options for choice
-        final boolean useTargetHints = useHints || GeneralConfig.getInstance().getSmartTarget();
+        final boolean useTargetHints = (isAI && game.getHintTarget()) || GeneralConfig.getInstance().getSmartTarget();
         final MagicChoice choice = getChoice(source);
         return choice.hasOptions(game, player, source, useTargetHints);
     }
