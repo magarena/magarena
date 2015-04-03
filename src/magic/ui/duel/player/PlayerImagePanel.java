@@ -8,7 +8,6 @@ import java.awt.Image;
 import java.awt.RenderingHints;
 import java.awt.image.BufferedImage;
 import javax.swing.ImageIcon;
-import javax.swing.JPanel;
 import magic.data.GeneralConfig;
 import magic.model.MagicGame;
 import magic.ui.GraphicsUtilities;
@@ -21,7 +20,7 @@ import org.pushingpixels.trident.Timeline;
 import org.pushingpixels.trident.ease.Spline;
 
 @SuppressWarnings("serial")
-public class PlayerImagePanel extends JPanel {
+public class PlayerImagePanel extends AnimationPanel {
 
     private static final Font HEALTH_FONT = new Font("Dialog", Font.BOLD, 20);
 
@@ -78,6 +77,14 @@ public class PlayerImagePanel extends JPanel {
     }
 
     private void drawValidChoiceIndicator(Graphics2D g2d) {
+        if (GeneralConfig.getInstance().isAnimateGameplay()) {
+            drawPulsingBorder(g2d);
+        } else {
+            drawValidChoiceOverlay(g2d);
+        }        
+    }
+
+    private void drawValidChoiceOverlay(Graphics2D g2d) {
         if (isValidChoiceVisible) {
             g2d.setColor(ThemeFactory.getInstance().getCurrentTheme().getChoiceColor());
             g2d.fillRect(0, 0, getWidth(), getHeight());

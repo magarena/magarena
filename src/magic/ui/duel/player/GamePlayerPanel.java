@@ -7,6 +7,7 @@ import java.awt.Font;
 import java.awt.Rectangle;
 import java.util.Set;
 import javax.swing.JLabel;
+import magic.data.GeneralConfig;
 import magic.model.MagicPlayerZone;
 import magic.model.player.AiPlayer;
 import magic.ui.SwingGameController;
@@ -71,9 +72,17 @@ public class GamePlayerPanel extends TexturedPanel implements ChoiceViewer {
         return lbl;
     }
 
+    private boolean isThisPlayerValidChoice(Set<?> validChoices) {
+        return !validChoices.isEmpty() && validChoices.contains(playerInfo.player);
+    }
+
     @Override
     public void showValidChoices(Set<?> validChoices) {
-        avatarPanel.showValidChoiceIndicator(!validChoices.isEmpty() ? validChoices.contains(playerInfo.player) : false);
+        if (GeneralConfig.getInstance().isAnimateGameplay()) {
+            avatarPanel.doPulsingBorderAnimation(isThisPlayerValidChoice(validChoices));
+        } else {
+            avatarPanel.showValidChoiceIndicator(isThisPlayerValidChoice(validChoices));
+        }
     }
 
     public void updateDisplay(final PlayerViewerInfo playerInfo) {
