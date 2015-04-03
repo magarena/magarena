@@ -1,5 +1,6 @@
 package magic.model;
 
+import java.util.ArrayList;
 import java.util.EnumSet;
 import java.util.Set;
 
@@ -134,6 +135,20 @@ public enum MagicSubType {
             givenSubTypeFlags.add(getSubType(subTypeName));
         }
         return givenSubTypeFlags;
+    }
+    
+    //Takes array of strings and only returns valid MagicSubTypes
+    public static ArrayList<MagicSubType> convertSubTypes(final String[] subTypeNames) {
+        final ArrayList<MagicSubType> subTypes = new ArrayList<MagicSubType>();
+        for (final String name:subTypeNames){
+            for (final MagicSubType type : values()) {
+                if (type.toString().equalsIgnoreCase(name)) {
+                    subTypes.add(MagicSubType.getSubType(name));
+                    System.out.println("Subtype: "+name);
+                }
+            }
+        }
+        return subTypes;
     }
     
     @SuppressWarnings("incomplete-switch")
