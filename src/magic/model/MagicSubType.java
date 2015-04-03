@@ -144,7 +144,6 @@ public enum MagicSubType {
             for (final MagicSubType type : values()) {
                 if (type.toString().equalsIgnoreCase(name)) {
                     subTypes.add(MagicSubType.getSubType(name));
-                    System.out.println("Subtype: "+name);
                 }
             }
         }

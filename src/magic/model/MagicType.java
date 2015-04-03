@@ -66,7 +66,6 @@ public enum MagicType {
             for (final MagicType type : values()) {
                 if (type.toString().equalsIgnoreCase(name)) {
                     types.add(MagicType.getType(name));
-                    System.out.println("Type: "+name);
                 }
             }
         }
