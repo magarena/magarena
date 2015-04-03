@@ -6,15 +6,14 @@ import magic.model.MagicAbility;
 import magic.model.MagicAbilityList;
 import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
+import magic.model.MagicColor;
 import magic.model.MagicCounterType;
-import magic.model.MagicDamage;
 import magic.model.MagicGame;
 import magic.model.MagicLocationType;
 import magic.model.MagicManaCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicPermanentState;
 import magic.model.MagicPlayer;
-import magic.model.MagicPowerToughness;
 import magic.model.MagicSource;
 import magic.model.MagicCopyable;
 import magic.model.ARG;
@@ -30,7 +29,6 @@ import magic.model.condition.MagicCondition;
 import magic.model.condition.MagicConditionParser;
 import magic.model.condition.MagicArtificialCondition;
 import magic.model.condition.MagicConditionFactory;
-import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicStatic;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.stack.MagicItemOnStack;
@@ -42,8 +40,8 @@ import magic.model.trigger.MagicReboundTrigger;
 import magic.model.action.*;
 import magic.model.target.*;
 
+import java.util.ArrayList;
 import java.util.Collection;
-import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -2980,66 +2978,27 @@ public enum MagicRuleEventAction {
             return EVENT_ACTION;
         }
     },
-    BecomesCreature(
-        "sn becomes a(n)? (?<pt>[0-9]+/[0-9]+) (?<subtype>.*) creature( with (?<ability>.+))?\\.",
+    SelfBecomes(
+        "sn becomes a(n)? (?<pt>[0-9]+/[0-9]+)? (?<all>.*?)( with (?<ability>.*?))?(?<duration> until end of turn)?(?<additionTo>(\\. It is| that's) still.*)?\\.",
         MagicTiming.Animate,
         "Animate"
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
             final String[] pt = matcher.group("pt").split("/");
-            final int power = Integer.parseInt(pt[0]);
-            final int toughness = Integer.parseInt(pt[1]);
-            final MagicSubType subtype = MagicSubType.getSubType(matcher.group("subtype"));
-            final MagicAbilityList abilityList = matcher.group("ability") != null ? MagicAbility.getAbilityList(matcher.group("ability")) : null;
-            final MagicStatic PT = new MagicStatic(MagicLayer.SetPT, MagicStatic.Forever) {
-                @Override
-                public void modPowerToughness(final MagicPermanent source, final MagicPermanent permanent, final MagicPowerToughness pt) {
-                    pt.set(power, toughness);
-                }
-            };
-            final MagicStatic ST = new MagicStatic(MagicLayer.Type, MagicStatic.Forever) {
-                @Override
-                public void modSubTypeFlags(final MagicPermanent permanent, final Set<MagicSubType> flags) {
-                    flags.add(subtype);
-                }
-                @Override
-                public int getTypeFlags(final MagicPermanent permanent, final int flags) {
-                    return MagicType.Creature.getMask();
-                }
-            };
+            final String[] all = matcher.group("all").split(", | and | ");
+            final ArrayList<MagicColor> colors = MagicColor.getColors(all);
+            final ArrayList<MagicSubType> subTypes = MagicSubType.convertSubTypes(all);
+            final ArrayList<MagicType> types = MagicType.convertTypes(all);
+            final MagicAbilityList abilityList = matcher.group("ability")!= null ?MagicAbility.getAbilityList(matcher.group("ability").split(", | and ")):null;
+            final Boolean duration = matcher.group("duration")!=null ? true : false;
+            final Boolean additionTo = matcher.group("additionTo")!=null ? true : false;
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    game.doAction(new MagicAddStaticAction(event.getPermanent(), PT));
-                    game.doAction(new MagicAddStaticAction(event.getPermanent(), ST));
-                    if (abilityList != null) {
-                        game.doAction(new MagicGainAbilityAction(event.getPermanent(), abilityList, MagicStatic.Forever));
-                    }
+                    game.doAction(new MagicBecomesAction(event.getPermanent(),pt,colors,subTypes,types,abilityList,duration,additionTo));
                 }
-            };
-        }
-    },
-    BecomesType(
-        "sn becomes a(n)? (?<type>.*)\\.",
-        MagicTiming.None,
-        "Animate"
-    ) {
-        @Override
-        public MagicEventAction getAction(final Matcher matcher) {
-            final MagicType type = MagicType.getType(matcher.group("type"));
-            final MagicStatic ST = new MagicStatic(MagicLayer.Type, MagicStatic.Forever) {
-                @Override
-                public int getTypeFlags(final MagicPermanent permanent, final int flags) {
-                    return type.getMask();
-                }
-            };
-            return new MagicEventAction() {
-                @Override
-                public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    game.doAction(new MagicAddStaticAction(event.getPermanent(), ST));
-                }
-            };
+            };   
         }
     },
     ;
