@@ -274,7 +274,7 @@ public class PreferencesDialog
         mouseWheelPopupCheckBox.setToolTipText("Manually display the card image popup by moving the mouse wheel forwards. Overrides the Auto-Popup delay.");
         mouseWheelPopupCheckBox.addMouseListener(this);
 
-        popupDelaySlider=new SliderPanel("Popup Delay", null, 0, 500, 50, config.getPopupDelay());
+        popupDelaySlider=new SliderPanel("Popup Delay", null, 0, 2000, 50, config.getPopupDelay());
         popupDelaySlider.setToolTipText("Automatically displays the card popup image after the specified number of milliseconds that the mouse cursor hovers over a card.");
         popupDelaySlider.addMouseListener(this);
 
