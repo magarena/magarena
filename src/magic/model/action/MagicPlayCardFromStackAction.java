@@ -55,6 +55,16 @@ public class MagicPlayCardFromStackAction extends MagicAction {
     public void doAction(final MagicGame game) {
         permanent=createPermanent(game);
         permanent.getFirstController().addPermanent(permanent);
+
+        //comes into play with/as, such as manifest
+        for (final MagicPermanentAction action : cardOnStack.getModifications()) {
+            action.doAction(permanent);
+        }
+        //comes into play with/as, such as bestowed
+        for (final MagicPermanentAction action : modifications) {
+            action.doAction(permanent);
+        }
+
         game.update();
 
         final int score=ArtificialScoringSystem.getTurnScore(game)-permanent.getStaticScore();
@@ -70,14 +80,6 @@ public class MagicPlayCardFromStackAction extends MagicAction {
             if (trigger.getPriority() == MagicTrigger.REPLACEMENT) {
                 game.executeTrigger(trigger,permanent,permanent,payedCost);
             }
-        }
-
-        //comes into play with
-        for (final MagicPermanentAction action : modifications) {
-            action.doAction(permanent);
-        }
-        for (final MagicPermanentAction action : cardOnStack.getModifications()) {
-            action.doAction(permanent);
         }
 
         game.addStatics(permanent);
