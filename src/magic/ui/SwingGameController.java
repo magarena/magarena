@@ -12,6 +12,7 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 import java.util.concurrent.BlockingQueue;
@@ -80,7 +81,7 @@ public class SwingGameController implements IUIGameController, ILogBookListener 
     private final AtomicBoolean isPaused =  new AtomicBoolean(false);
     private final AtomicBoolean gameConceded = new AtomicBoolean(false);
     private final Collection<ChoiceViewer> choiceViewers = new ArrayList<>();
-    private Set<?> validChoices;
+    private Set<?> validChoices = Collections.emptySet();
     private AnnotatedCardPanel cardPopup;
     private UserActionPanel userActionPanel;
     private boolean actionClicked;
@@ -442,14 +443,10 @@ public class SwingGameController implements IUIGameController, ILogBookListener 
     }
 
     private void showValidChoices() {
-        SwingUtilities.invokeLater(new Runnable() {
-            @Override
-            public void run() {
-                for (final ChoiceViewer choiceViewer : choiceViewers) {
-                    choiceViewer.showValidChoices(validChoices);
-                }
-            }
-        });
+        assert SwingUtilities.isEventDispatchThread();
+        for (final ChoiceViewer choiceViewer : choiceViewers) {
+            choiceViewer.showValidChoices(validChoices);
+        }
     }
 
     public boolean isCombatChoice() {
@@ -458,17 +455,37 @@ public class SwingGameController implements IUIGameController, ILogBookListener 
 
     @Override
     public void clearValidChoices() {
-        validChoices=Collections.emptySet();
-        combatChoice=false;
-        showValidChoices();
-        showMessage(MagicEvent.NO_SOURCE, "");
+        // called from both edt and application threads.
+        SwingUtilities.invokeLater(new Runnable() {
+            @Override
+            public void run() {
+                clearDisplayedValidChoices();
+            }
+        });
+    }
+    
+    private void clearDisplayedValidChoices() {
+        assert SwingUtilities.isEventDispatchThread();
+        if (!validChoices.isEmpty()) {
+            validChoices.clear();
+            combatChoice=false;
+            showValidChoices();
+            showMessage(MagicEvent.NO_SOURCE, "");
+        }
     }
 
     @Override
-    public void setValidChoices(final Set<?> aValidChoices,final boolean aCombatChoice) {
-        this.validChoices=aValidChoices;
-        this.combatChoice=aCombatChoice;
-        showValidChoices();
+    public void setValidChoices(final Set<?> aValidChoices, final boolean aCombatChoice) {
+        assert !SwingUtilities.isEventDispatchThread();
+        SwingUtilities.invokeLater(new Runnable() {
+            @Override
+            public void run() {
+                clearDisplayedValidChoices();
+                validChoices = new HashSet<>(aValidChoices);
+                combatChoice = aCombatChoice;
+                showValidChoices();
+            }
+        });
     }
 
     public Set<?> getValidChoices() {
