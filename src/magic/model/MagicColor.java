@@ -99,6 +99,18 @@ public enum MagicColor {
         throw new RuntimeException("No corresponding MagicColor for " + symbol);
     }
 
+    public static ArrayList<MagicColor> getColors(final String[] names) {
+        ArrayList<MagicColor> colors = new ArrayList<MagicColor>();
+        for (final String name:names) {
+            for (final MagicColor color : values()) {
+                if (color.name==name.toLowerCase()) {
+                    colors.add(color);
+                }
+            }
+        }
+        return colors;
+    }
+    
     public static String getRandomColors(final int count) {
         final List<MagicColor> colors = new ArrayList<MagicColor>(Arrays.asList(values()));
         final StringBuilder colorText=new StringBuilder();
