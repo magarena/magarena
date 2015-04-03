@@ -6,7 +6,7 @@ type=Land
 mana=w3
 timing=land
 ability=SN enters the battlefield tapped.;\
-        {T}: Add {W} to your mana pool.
+        {T}: Add {W} to your mana pool.;\
+        {1}{W}: SN becomes a 1/5 white Soldier creature until end of turn. It's still a land.
 mana_or_combat
-requires_groovy_code
 oracle=Forbidding Watchtower enters the battlefield tapped. {T}: Add {W} to your mana pool. {1}{W}: Forbidding Watchtower becomes a 1/5 white Soldier creature until end of turn. It's still a land.
