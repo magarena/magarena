@@ -1,7 +1,9 @@
 package magic.model.action;
 
+import java.util.ArrayList;
 import java.util.Set;
 
+import magic.model.MagicAbilityList;
 import magic.model.MagicColor;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
@@ -13,48 +15,51 @@ import magic.model.mstatic.MagicStatic;
 
 public class MagicBecomesAction extends MagicAction {
 
-    private final Set<MagicStatic> staticCollect = null;
     private final MagicPermanent permanent;
     private final String[] pt;
-    private final MagicColor[] color;
-    private final MagicSubType[] subType;
-    private final MagicType[] type;
+    private final ArrayList<MagicColor> color;
+    private final ArrayList<MagicSubType> subType;
+    private final ArrayList<MagicType> type;
+    private final MagicAbilityList ability;
     private final Boolean duration;
     private final Boolean additionTo;
 
-    public MagicBecomesAction(final MagicPermanent aPermanent, final MagicColor[] aColor, final Boolean aDuration, final Boolean aAdditionTo) {
-        this(aPermanent, null, aColor, null, null, aDuration, aAdditionTo);
+    public MagicBecomesAction(final MagicPermanent aPermanent, final ArrayList<MagicColor> aColor, final Boolean aDuration, final Boolean aAdditionTo) {
+        this(aPermanent, null, aColor, null, null, null, aDuration, aAdditionTo);
     }
 
-    public MagicBecomesAction(final MagicPermanent aPermanent, final MagicType[] aType, final Boolean aDuration) {
-        this(aPermanent, null, null, null, aType, aDuration, false);
+    public MagicBecomesAction(final MagicPermanent aPermanent, final ArrayList<MagicType> aType, final Boolean aDuration) {
+        this(aPermanent, null, null, null, aType, null, aDuration, false);
     }
 
-    public MagicBecomesAction(final MagicPermanent aPermanent, final String[] aPt, final MagicColor[] aColor, final MagicSubType[] aSubType, final MagicType[] aType, final Boolean aDuration, final Boolean aAdditionTo) {
+    public MagicBecomesAction(final MagicPermanent aPermanent, final String[] aPt, final ArrayList<MagicColor> aColor, final ArrayList<MagicSubType> aSubType, final ArrayList<MagicType> aType, final MagicAbilityList aAbility, final Boolean aDuration, final Boolean aAdditionTo) {
         permanent = aPermanent;
         pt=aPt;
         color=aColor;
         subType=aSubType;
         type=aType;
+        ability=aAbility;
         duration=aDuration;
         additionTo=aAdditionTo;
     }
 
-    public MagicBecomesAction(final MagicPermanent aPermanent, final String[] aPt, final MagicSubType[] aSubType, final MagicType[] aType) {
-        this(aPermanent, aPt, null, aSubType, aType, false, false);
+    public MagicBecomesAction(final MagicPermanent aPermanent, final String[] aPt, ArrayList<MagicSubType> aSubType, final ArrayList<MagicType> aType) {
+        this(aPermanent, aPt, null, aSubType, aType, null, false, false);
     }
 
-    public MagicBecomesAction(final MagicPermanent aPermanent, final String[] aPt, final MagicSubType[] aSubType, final MagicType[] aType, final Boolean aDuration) {
-        this(aPermanent,aPt,null,aSubType,aType,aDuration,false);
+    public MagicBecomesAction(final MagicPermanent aPermanent, final String[] aPt, ArrayList<MagicSubType> aSubType, final ArrayList<MagicType> aType, final Boolean aDuration) {
+        this(aPermanent,aPt,null,aSubType,aType,null,aDuration,false);
     }
 
     @Override
     public void doAction(final MagicGame game) {
+        final ArrayList<MagicStatic> staticCollect = new ArrayList<MagicStatic>();
         if (pt != null) {
             final MagicStatic PT = new MagicStatic(MagicLayer.SetPT, duration) {
                 @Override
                 public void modPowerToughness(final MagicPermanent source, final MagicPermanent permanent, final MagicPowerToughness bPt) {
                     bPt.set(Integer.parseInt(pt[0]), Integer.parseInt(pt[1]));
+                    System.out.println("Power="+Integer.parseInt(pt[0])+" Toughness="+Integer.parseInt(pt[1]));
                 }
             };
             staticCollect.add(PT);
@@ -120,6 +125,9 @@ public class MagicBecomesAction extends MagicAction {
         // final collected statics returned
         for (final MagicStatic mstatic : staticCollect) {
             game.doAction(new MagicAddStaticAction(permanent, mstatic));
+            if (ability!=null){
+                game.doAction(new MagicGainAbilityAction(permanent, ability, duration));
+            }
         }
         game.setStateCheckRequired();
     }
