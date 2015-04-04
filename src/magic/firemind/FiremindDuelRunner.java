@@ -24,6 +24,7 @@ import magic.model.MagicGame;
 import magic.model.MagicGameLog;
 import magic.model.MagicPlayerDefinition;
 import magic.model.MagicRandom;
+import magic.model.player.AiPlayer;
 
 public class FiremindDuelRunner {
     private static int games;
@@ -104,16 +105,20 @@ public class FiremindDuelRunner {
         // Set difficulty.
         final MagicDuel testDuel = new MagicDuel(config);
 
-        //testDuel.initialize();
-        testDuel.setDifficulty(0, str1);
-        testDuel.setDifficulty(1, str2);
+        final AiPlayer pp1 = new AiPlayer();
+        pp1.setPlayerName("Player1");
+        pp1.setAiType(ai1);
+        pp1.setAiLevel(str1);
+        
+        final AiPlayer pp2 = new AiPlayer();
+        pp2.setPlayerName("Player2");
+        pp2.setAiType(ai2);
+        pp2.setAiLevel(str2);
+        
         final MagicDeckProfile profile = new MagicDeckProfile("bgruw");
-        final MagicPlayerDefinition player1 = new MagicPlayerDefinition("Player1", true, profile);
-        final MagicPlayerDefinition player2 = new MagicPlayerDefinition("Player2", true, profile);
+        final MagicPlayerDefinition player1 = new MagicPlayerDefinition(pp1, profile);
+        final MagicPlayerDefinition player2 = new MagicPlayerDefinition(pp2, profile);
         testDuel.setPlayers(new MagicPlayerDefinition[] { player1, player2 });
-
-        // Set the AI
-        testDuel.setAIs(new MagicAI[] { ai1.getAI(), ai2.getAI() });
 
         // Set the deck.
         if (deck1.length() > 0) {
