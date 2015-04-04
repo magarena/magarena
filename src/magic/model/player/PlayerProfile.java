@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.Properties;
+import java.util.UUID;
 import magic.data.FileIO;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicFileSystem.DataPath;
@@ -84,24 +85,7 @@ public abstract class PlayerProfile {
     }
 
     public static String getNewPlayerProfileId() {
-        String id = Long.toHexString(System.currentTimeMillis()).toUpperCase();
-        while (id.equals(lastId)) {
-            // wait a bit in order to generate a unique id based on current time.
-            // required because currentTimeMillis() granularity dependent on OS.
-            sleep(100);
-            id = Long.toHexString(System.currentTimeMillis()).toUpperCase();
-        }
-        lastId = id;
-        return id;
-    }
-
-    private static void sleep(final long milliseconds) {
-        try {
-            Thread.sleep(milliseconds);
-        } catch (InterruptedException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }
+        return UUID.randomUUID().toString();
     }
 
     public static PlayerProfile getHumanPlayer(final String playerId) {
