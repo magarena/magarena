@@ -69,12 +69,15 @@ public class AiPlayer extends PlayerProfile {
         aiLevel = Integer.parseInt(properties.getProperty(KEY_AI_LEVEL, Integer.toString(DEFAULT_AI_LEVEL)));
         aiType = MagicAIImpl.valueOf(properties.getProperty(KEY_AI_TYPE, DEFAULT_AI_TYPE.name()));
     }
-    /* (non-Javadoc)
-     * @see magic.model.player.PlayerProfile#getPlayerType()
-     */
+    
     @Override
     protected String getPlayerType() {
         return PLAYER_TYPE;
+    }
+
+    @Override
+    public Map<String, PlayerProfile> getSimilarPlayerProfiles() {
+        return PlayerProfiles.getAiPlayerProfiles();
     }
     
     @Override
@@ -88,12 +91,12 @@ public class AiPlayer extends PlayerProfile {
     }
     
     @Override
-    public Map<String, PlayerProfile> getPlayerProfiles() {
-        return PlayerProfiles.getAiPlayerProfiles();
+    public boolean isArtificial() {
+        return true;
     }
     
     @Override
-    public boolean isArtificial() {
-        return true;
+    public String getPlayerLabel() {
+        return getPlayerName() + ", level " + getAiLevel() + " AI (" + getAiType().name() + ")";
     }
 }

@@ -35,7 +35,7 @@ public class HumanPlayer extends PlayerProfile {
     }
     
     @Override
-    public Map<String, PlayerProfile> getPlayerProfiles() {
+    public Map<String, PlayerProfile> getSimilarPlayerProfiles() {
         return PlayerProfiles.getHumanPlayerProfiles();
     }
     

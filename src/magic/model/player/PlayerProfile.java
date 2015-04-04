@@ -23,7 +23,7 @@ public abstract class PlayerProfile {
     abstract protected void loadProperties();
     abstract public void save();
     abstract protected String getPlayerType();
-    abstract public Map<String, PlayerProfile> getPlayerProfiles();
+    abstract public Map<String, PlayerProfile> getSimilarPlayerProfiles();
     abstract public boolean isArtificial();
     
     public boolean isHuman() {
@@ -147,5 +147,9 @@ public abstract class PlayerProfile {
     
     public String getPlayerAttributeLabel() {
         return "";
+    }
+
+    public String getPlayerLabel() {
+        return playerName;
     }
 }

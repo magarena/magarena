@@ -62,12 +62,7 @@ public class GamePlayerPanel extends TexturedPanel implements ChoiceViewer {
     }
 
     private JLabel getPlayerLabel() {
-        final StringBuffer sb = new StringBuffer(playerInfo.name);
-        if (playerInfo.player.isAiPlayerProfile()) {
-            final AiPlayer aiPlayer = (AiPlayer)playerInfo.player.getPlayerDefinition().getPlayerProfile();
-            sb.append(", level ").append(aiPlayer.getAiLevel()).append(" AI (").append(aiPlayer.getAiType().name()).append(")");
-        }
-        final JLabel lbl = new JLabel(sb.toString());
+        final JLabel lbl = new JLabel(playerInfo.player.getPlayerDefinition().getPlayerProfile().getPlayerLabel());
         lbl.setFont(new Font("dialog", Font.PLAIN, 9));
         return lbl;
     }
