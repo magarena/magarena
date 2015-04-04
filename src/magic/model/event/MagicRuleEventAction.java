@@ -2985,7 +2985,7 @@ public enum MagicRuleEventAction {
             }
 
             final MagicAbilityList abilityList = matcher.group("ability") == null ? null :
-                MagicAbility.getAbilityList(matcher.group("ability").split(", | and "));
+                MagicAbility.getAbilityList(matcher.group("ability"));
 
             final boolean duration = matcher.group("duration") != null;
             final boolean additionTo = matcher.group("additionTo") != null;
@@ -3005,7 +3005,7 @@ public enum MagicRuleEventAction {
         }
     },
     SelfBecomesAlt(
-        "(?<duration>until end of turn, )sn becomes a(n)? (?<pt>[0-9]+/[0-9]+)? (?<all>.*?)( with (?<ability>.*?))?(?<additionTo>(\\. It's| that's) still.*)?\\.",
+        "(?<duration>until end of turn, )sn becomes a(n)? (?<pt>[0-9]+/[0-9]+)? (?<all>.*?)( with (?<ability>.*?))?(?<additionTo>((\\.)? It's| that's) still.*)?\\.",
         MagicTiming.Animate,
         "Animate"
     ) {
