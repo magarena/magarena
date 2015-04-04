@@ -51,7 +51,7 @@ public class VegasAI implements MagicAI {
         // Multiple choices
         final ExecutorService executor = Executors.newFixedThreadPool(THREADS);
         final List<VegasScore> scores=new ArrayList<VegasScore>();
-        final int artificialLevel = sourceGame.getArtificialLevel(scorePlayer.getIndex());
+        final int artificialLevel = scorePlayer.getPlayerDefinition().getPlayerProfile().getAiLevel();
         final int rounds = (size + THREADS - 1) / THREADS;
         final long slice = artificialLevel * SEC_TO_NANO / rounds;
         for (final Object[] choiceResults : choiceResultsList) {
