@@ -17,7 +17,7 @@ import magic.model.mstatic.MagicStatic;
 public class MagicBecomesAction extends MagicAction {
 
     private final MagicPermanent permanent;
-    private final String[] pt;
+    private final int[] pt;
     private final Set<MagicColor> color;
     private final Set<MagicSubType> subType;
     private final Set<MagicType> type;
@@ -27,7 +27,7 @@ public class MagicBecomesAction extends MagicAction {
 
     public MagicBecomesAction(
         final MagicPermanent aPermanent, 
-        final String[] aPt, 
+        final int[] aPt, 
         final Set<MagicColor> aColor, 
         final Set<MagicSubType> aSubType, 
         final Set<MagicType> aType, 
@@ -52,11 +52,11 @@ public class MagicBecomesAction extends MagicAction {
         this(aPermanent, null, Collections.<MagicColor>emptySet(), Collections.<MagicSubType>emptySet(), aType, null, aDuration, false);
     }
 
-    public MagicBecomesAction(final MagicPermanent aPermanent, final String[] aPt, final Set<MagicSubType> aSubType, final Set<MagicType> aType) {
+    public MagicBecomesAction(final MagicPermanent aPermanent, final int[] aPt, final Set<MagicSubType> aSubType, final Set<MagicType> aType) {
         this(aPermanent, aPt, Collections.<MagicColor>emptySet() , aSubType, aType, null, MagicStatic.UntilEOT, false);
     }
 
-    public MagicBecomesAction(final MagicPermanent aPermanent, final String[] aPt, final Set<MagicSubType> aSubType, final Set<MagicType> aType, final boolean aDuration) {
+    public MagicBecomesAction(final MagicPermanent aPermanent, final int[] aPt, final Set<MagicSubType> aSubType, final Set<MagicType> aType, final boolean aDuration) {
         this(aPermanent, aPt, Collections.<MagicColor>emptySet(), aSubType, aType, null, aDuration, false);
     }
 
@@ -66,7 +66,7 @@ public class MagicBecomesAction extends MagicAction {
             final MagicStatic PT = new MagicStatic(MagicLayer.SetPT, duration) {
                 @Override
                 public void modPowerToughness(final MagicPermanent source, final MagicPermanent permanent, final MagicPowerToughness bPt) {
-                    bPt.set(Integer.parseInt(pt[0]), Integer.parseInt(pt[1]));
+                    bPt.set(pt[0], pt[1]);
                 }
             };
             game.doAction(new MagicAddStaticAction(permanent, PT));

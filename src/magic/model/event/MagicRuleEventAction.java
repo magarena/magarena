@@ -2970,8 +2970,10 @@ public enum MagicRuleEventAction {
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
-            final String[] pt = matcher.group("pt") == null ? null : 
+            final String[] ptStr = matcher.group("pt") == null ? null : 
                 matcher.group("pt").split("/");
+            final int[] pt = ptStr == null ? null :
+                new int[]{Integer.parseInt(ptStr[0]), Integer.parseInt(ptStr[1])};
 
             final List<String> tokens = new LinkedList<>(Arrays.asList(matcher.group("all").split(", | and | ")));
             final Set<MagicColor> colors = MagicColor.prefixColors(tokens);
