@@ -32,7 +32,6 @@ public class DuelGameScreen extends AbstractScreen implements IOptionsMenu {
             @Override
             protected MagicGame doInBackground() throws Exception {
                 config.setTextView(false);
-                duel.updateDifficulty();
                 return duel.nextGame();
             }
             @Override
