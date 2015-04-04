@@ -114,10 +114,13 @@ public class MagicBecomesAction extends MagicAction {
             final MagicStatic ST = new MagicStatic(MagicLayer.Type, duration) {
                 @Override
                 public void modSubTypeFlags(final MagicPermanent permanent, final Set<MagicSubType> flags) {
-                    if (additionTo == false) {
+                    // turning into an artifact creature retains previous subtypes
+                    if (additionTo || (type.contains(MagicType.Creature) && type.contains(MagicType.Artifact))) { 
+                        flags.addAll(subType);
+                    } else {
                         flags.clear();
+                        flags.addAll(subType);
                     }
-                    flags.addAll(subType);
                 }
             };
             game.doAction(new MagicAddStaticAction(permanent, ST));
