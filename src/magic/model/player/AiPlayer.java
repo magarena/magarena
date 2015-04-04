@@ -25,8 +25,10 @@ public class AiPlayer extends PlayerProfile {
         super(profileId);
         loadProperties();
     }
+
     public AiPlayer() {
-        this(null);
+        super();
+        loadProperties();
     }
 
     @Override

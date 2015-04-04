@@ -13,7 +13,8 @@ public class HumanPlayer extends PlayerProfile {
     }
 
     public HumanPlayer() {
-        this(null);
+        super();
+        loadProperties();
     }
 
     @Override

@@ -42,8 +42,13 @@ public abstract class PlayerProfile {
         return MagicAIImpl.MMAB;
     }
 
+    protected PlayerProfile() {
+        setProfilePath(PlayerProfile.getNewPlayerProfileId());
+        loadStats();
+    }
+
     protected PlayerProfile(final String profileId) {
-        setProfilePath(profileId == null ? PlayerProfile.getNewPlayerProfileId() : profileId);
+        setProfilePath(profileId);
         loadStats();
     }
 
