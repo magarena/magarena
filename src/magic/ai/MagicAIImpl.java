@@ -14,6 +14,7 @@ public enum MagicAIImpl {
     ;
 
     public static final MagicAIImpl[] SUPPORTED_AIS = {MMAB, MMABC, MCTS, MCTSC, VEGAS, VEGASC};
+    public static final MagicAIImpl[] DECKSTR_AIS = {MMABFast, MMABFast};
 
     private final String name;
     private final MagicAI ai;
