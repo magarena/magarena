@@ -414,6 +414,20 @@ public interface MagicCondition {
         }
     };
     
+    MagicCondition IS_SPIRIT = new MagicCondition() {
+        public boolean accept(final MagicSource source) {
+            final MagicPermanent permanent = (MagicPermanent)source;
+            return permanent.hasSubType(MagicSubType.Spirit);
+        }
+    };
+    
+    MagicCondition IS_WARRIOR = new MagicCondition() {
+        public boolean accept(final MagicSource source) {
+            final MagicPermanent permanent = (MagicPermanent)source;
+            return permanent.hasSubType(MagicSubType.Warrior);
+        }
+    };
+    
     MagicCondition NO_UNTAPPED_LANDS_CONDITION = new MagicCondition() {
         public boolean accept(final MagicSource source) {
             return source.getController().getNrOfPermanents(MagicTargetFilterFactory.UNTAPPED_LAND_YOU_CONTROL) == 0;

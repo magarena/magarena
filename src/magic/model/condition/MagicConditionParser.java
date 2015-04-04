@@ -127,6 +127,16 @@ public enum MagicConditionParser {
             return MagicCondition.IS_ENCHANTMENT;
         }
     },
+    IsSpirit("(SN is|it's) a Spirit") {
+        public MagicCondition toCondition(final Matcher arg) {
+            return MagicCondition.IS_SPIRIT;
+        }
+    },
+    IsWarrior("(SN is|it's) a Warrior") {
+        public MagicCondition toCondition(final Matcher arg) {
+            return MagicCondition.IS_WARRIOR;
+        }
+    },
     IsUntapped("(SN is|it's) untapped") {
         public MagicCondition toCondition(final Matcher arg) {
             return MagicCondition.UNTAPPED_CONDITION;
