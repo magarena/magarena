@@ -2997,6 +2997,12 @@ public enum MagicRuleEventAction {
                 }
             };   
         }
+        @Override
+        public MagicCondition[] getConditions(final Matcher matcher) {
+            return new MagicCondition[]{
+                MagicCondition.NOT_EXCLUDE_COMBAT_CONDITION
+            };
+        }
     },
     SelfBecomesAlt(
         "(?<duration>until end of turn, )sn becomes a(n)? (?<pt>[0-9]+/[0-9]+)? (?<all>.*?)( with (?<ability>.*?))?(?<additionTo>(\\. It's| that's) still.*)?\\.",
@@ -3006,6 +3012,10 @@ public enum MagicRuleEventAction {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
             return SelfBecomes.getAction(matcher);
+        }
+        @Override
+        public MagicCondition[] getConditions(final Matcher matcher) {
+            return SelfBecomes.getConditions(matcher);
         }
     },
     ;

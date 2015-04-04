@@ -79,6 +79,13 @@ public interface MagicCondition {
             return permanent.hasState(MagicPermanentState.Monstrous) == false;
         }
     };
+    
+    MagicCondition NOT_EXCLUDE_COMBAT_CONDITION=new MagicCondition() {
+        public boolean accept(final MagicSource source) {
+            final MagicPermanent permanent=(MagicPermanent)source;
+            return permanent.hasState(MagicPermanentState.ExcludeFromCombat) == false;
+        }
+    };
 
     MagicCondition SORCERY_CONDITION=new MagicCondition() {
         public boolean accept(final MagicSource source) {
