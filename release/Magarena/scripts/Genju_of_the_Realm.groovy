@@ -25,11 +25,6 @@ def AB = new MagicStatic(MagicLayer.Ability, MagicStatic.UntilEOT) {
 
 [
     new MagicPermanentActivation(
-        [
-            new MagicArtificialCondition(
-                MagicConditionFactory.ManaCost("{2}")
-            )
-        ],
         new MagicActivationHints(MagicTiming.Animate),
         "Animate"
     ) {

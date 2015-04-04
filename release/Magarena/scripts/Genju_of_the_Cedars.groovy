@@ -22,11 +22,6 @@ def ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
 };
 [
     new MagicPermanentActivation(
-        [
-            new MagicArtificialCondition(
-                MagicConditionFactory.ManaCost("{3}")
-            )
-        ],
         new MagicActivationHints(MagicTiming.Animate),
         "Animate"
     ) {
