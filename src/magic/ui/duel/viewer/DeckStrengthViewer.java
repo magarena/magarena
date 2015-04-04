@@ -8,6 +8,8 @@ import magic.ui.IconImages;
 import magic.model.MagicDuel;
 import magic.model.MagicGame;
 import magic.model.IGameController;
+import magic.model.player.AiPlayer;
+import magic.model.MagicPlayerDefinition;
 import magic.headless.HeadlessGameController;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.FontsAndBorders;
@@ -48,8 +50,6 @@ public class DeckStrengthViewer extends JPanel implements ActionListener {
     private static final Color HIGH_COLOR=new Color(0x23,0x8E,0x23);
     private static final Color MEDIUM_COLOR=new Color(0xFF,0x7F,0x00);
     private static final Color LOW_COLOR=new Color(0xEE,0x2C,0x2C);
-
-    private static final MagicAI[] DEFAULT_AIS = {MagicAIImpl.MMABFast.getAI(),MagicAIImpl.MMABFast.getAI()};
 
     private final MagicDuel duel;
     private final JProgressBar progressBar;
@@ -205,8 +205,18 @@ public class DeckStrengthViewer extends JPanel implements ActionListener {
             final DuelConfig config=new DuelConfig(DuelConfig.getInstance());
             config.setNrOfGames(generalConfig.getStrengthGames());
             final MagicDuel testDuel=new MagicDuel(config,duel);
-            testDuel.setDifficulty(generalConfig.getStrengthDifficulty());
-            testDuel.setAIs(DEFAULT_AIS);
+
+            final MagicPlayerDefinition[] players = new MagicPlayerDefinition[2];
+            for (int i = 0; i < 2; i++) {
+                final AiPlayer pp = new AiPlayer();
+                pp.setPlayerName(MagicAIImpl.DECKSTR_AIS[i].toString());
+                pp.setAiType(MagicAIImpl.DECKSTR_AIS[i]);
+                pp.setAiLevel(generalConfig.getStrengthDifficulty());
+           
+                players[i] = new MagicPlayerDefinition(pp, config.getPlayerDeckProfile(i));
+            }
+            testDuel.setPlayers(players);
+
             progressBar.setMaximum(testDuel.getGamesTotal());
             progressBar.setValue(0);
             setStrength(0);
