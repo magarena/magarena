@@ -43,11 +43,11 @@ public class MagicBecomesAction extends MagicAction {
         this(aPermanent, null, null, null, aType, null, aDuration, false);
     }
 
-    public MagicBecomesAction(final MagicPermanent aPermanent, final String[] aPt, ArrayList<MagicSubType> aSubType, final ArrayList<MagicType> aType) {
+    public MagicBecomesAction(final MagicPermanent aPermanent, final String[] aPt, final ArrayList<MagicSubType> aSubType, final ArrayList<MagicType> aType) {
         this(aPermanent, aPt, null, aSubType, aType, null, false, false);
     }
 
-    public MagicBecomesAction(final MagicPermanent aPermanent, final String[] aPt, ArrayList<MagicSubType> aSubType, final ArrayList<MagicType> aType, final Boolean aDuration) {
+    public MagicBecomesAction(final MagicPermanent aPermanent, final String[] aPt, final ArrayList<MagicSubType> aSubType, final ArrayList<MagicType> aType, final Boolean aDuration) {
         this(aPermanent,aPt,null,aSubType,aType,null,aDuration,false);
     }
 
@@ -63,65 +63,61 @@ public class MagicBecomesAction extends MagicAction {
             };
             staticCollect.add(PT);
         }
-            final MagicStatic C = new MagicStatic(MagicLayer.Color, duration) {
-                @Override
-                public int getColorFlags(final MagicPermanent permanent,final int flags) {
-                    if (color !=null) {
-                        int mask = 0;
-                        for (final MagicColor element : color) {
-                            mask += element.getMask();
-                        }
-                        if (additionTo) {
-                            return flags|mask; //If color change is in addition to original colors, return all
-                        } else {
-                            return mask; //If color change replaces original color, return changes
-                        }
+        if (color !=null) {
+        final MagicStatic C = new MagicStatic(MagicLayer.Color, duration) {
+            @Override
+            public int getColorFlags(final MagicPermanent permanent,final int flags) {
+                    int mask = 0;
+                    for (final MagicColor element : color) {
+                        mask += element.getMask();
+                    }
+                    if (additionTo) {
+                        return flags|mask; //If color change is in addition to original colors, return all
                     } else {
-                        return flags; //If no color change, return orignal
+                        return mask; //If color change replaces original color, return changes
                     }
                 }
             };
             staticCollect.add(C);
-        if (type!=null|subType!=null) {
-            final MagicStatic ST = new MagicStatic(MagicLayer.Type, duration) {
-                @Override
-                public int getTypeFlags(final MagicPermanent permanent,final int flags) {
-                    boolean creature = false;
-                    boolean artifact = false;
-                    if (type !=null) {
-                        int mask = 0;
-                        for (final MagicType element : type) {
-                            mask += element.getMask();
-                            if (element==MagicType.Creature) {
-                                creature=true;
-                            }
-                            if (element==MagicType.Artifact) {
-                                artifact=true;
-                            }
-                        }
-                        if (additionTo|(creature && artifact)) { // Turning into an artifact creature retains previous types
-                            return flags|mask;
-                        } else {
-                            return mask;
-                        }
-                    } else {
-                        return flags; // Return original types if type not changed
-                    }
-                }
-                @Override
-                public void modSubTypeFlags(final MagicPermanent permanent, final Set<MagicSubType> flags) {
-                    if (subType !=null) {
-                        if (!additionTo) {
-                            flags.clear();
-                        }
-                        for (final MagicSubType element : subType) {
-                            flags.add(element);
-                        }
-                    }
-                }
-            };
-            staticCollect.add(ST);
         }
+        final MagicStatic ST = new MagicStatic(MagicLayer.Type, duration) {
+            @Override
+            public int getTypeFlags(final MagicPermanent permanent,final int flags) {
+                boolean creature = false;
+                boolean artifact = false;
+                if (type !=null) {
+                    int mask = 0;
+                    for (final MagicType element : type) {
+                        mask += element.getMask();
+                        if (element==MagicType.Creature) {
+                            creature=true;
+                        }
+                        if (element==MagicType.Artifact) {
+                            artifact=true;
+                        }
+                    }
+                    if (additionTo|(creature && artifact)) { // Turning into an artifact creature retains previous types
+                        return flags|mask;
+                    } else {
+                        return mask;
+                    }
+                } else {
+                    return flags; // Return original types if type not changed
+                }
+            }
+            @Override
+            public void modSubTypeFlags(final MagicPermanent permanent, final Set<MagicSubType> flags) {
+                if (subType !=null) {
+                    if (!additionTo) {
+                        flags.clear();
+                    }
+                    for (final MagicSubType element : subType) {
+                        flags.add(element);
+                    }
+                }
+            }
+        };
+        staticCollect.add(ST);
 
         // final collected statics returned
         for (final MagicStatic mstatic : staticCollect) {
