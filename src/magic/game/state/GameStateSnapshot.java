@@ -20,7 +20,7 @@ public final class GameStateSnapshot {
 
         final GameState gameState = new GameState();
 
-        gameState.setDifficulty(game.getDuel().getDifficulty());
+        gameState.setDifficulty(game.getPlayer(1).getPlayerDefinition().getPlayerProfile().getAiLevel());
         // will always be 0 since it is not possible to save when AI has priority.
         gameState.setStartPlayerIndex(game.getPriorityPlayer().getIndex());
 
@@ -32,17 +32,6 @@ public final class GameStateSnapshot {
         return gameState;
     }
 
-    private static String getAiType(final MagicAI ai) {
-        if (ai != null) {
-            for (MagicAIImpl aiType : MagicAIImpl.SUPPORTED_AIS) {
-                if (aiType.getAI() == ai) {
-                    return aiType.name();
-                }
-            }
-        }
-        return "";
-    }
-
     private static void saveGamePlayerState(final int playerIndex, final GameState gameState, final MagicGame game) {
         final MagicDuel duel = game.getDuel();
         final MagicPlayerDefinition playerDef = duel.getPlayer(playerIndex);
@@ -51,7 +40,7 @@ public final class GameStateSnapshot {
 //        gamePlayerState.setFace(playerDef.getAvatar().getFace());
         gamePlayerState.setDeckProfileColors(playerDef.getDeckProfile().getColorText());
         if (playerDef.isArtificial()) {
-            gamePlayerState.setAiType(getAiType(duel.getAIs()[playerIndex]));
+            gamePlayerState.setAiType(playerDef.getPlayerProfile().getAiType().toString());
         }
         final MagicPlayer player = game.getPlayer(playerIndex);
         gamePlayerState.setLife(player.getLife());
