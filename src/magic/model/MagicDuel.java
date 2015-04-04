@@ -130,7 +130,7 @@ public class MagicDuel {
         final MagicPlayer opponent = new MagicPlayer(duelConfig.getStartLife(),playerDefinitions[opponentIndex],1);
 
         //give the AI player extra life
-        opponent.setLife(opponent.getLife() + opponent.getPlayerDefinition().getPlayerProfile().getExtraLife());
+        opponent.setLife(opponent.getLife() + opponent.getAiProfile().getExtraLife());
 
         //determine who starts first
         final MagicPlayer start    = startPlayer == 0 ? player : opponent;

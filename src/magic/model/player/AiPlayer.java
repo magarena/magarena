@@ -31,7 +31,6 @@ public class AiPlayer extends PlayerProfile {
         loadProperties();
     }
 
-    @Override
     public int getExtraLife() {
         return extraLife;
     }
@@ -39,7 +38,6 @@ public class AiPlayer extends PlayerProfile {
         extraLife = value;
     }
 
-    @Override
     public int getAiLevel() {
         return aiLevel;
     }
@@ -47,7 +45,6 @@ public class AiPlayer extends PlayerProfile {
         aiLevel = value;
     }
 
-    @Override
     public MagicAIImpl getAiType() {
         return aiType;
     }

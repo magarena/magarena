@@ -20,7 +20,7 @@ public final class GameStateSnapshot {
 
         final GameState gameState = new GameState();
 
-        gameState.setDifficulty(game.getPlayer(1).getPlayerDefinition().getPlayerProfile().getAiLevel());
+        gameState.setDifficulty(game.getPlayer(1).getAiProfile().getAiLevel());
         // will always be 0 since it is not possible to save when AI has priority.
         gameState.setStartPlayerIndex(game.getPriorityPlayer().getIndex());
 
@@ -36,13 +36,13 @@ public final class GameStateSnapshot {
         final MagicDuel duel = game.getDuel();
         final MagicPlayerDefinition playerDef = duel.getPlayer(playerIndex);
         final GamePlayerState gamePlayerState = gameState.getPlayer(playerIndex);
+        final MagicPlayer player = game.getPlayer(playerIndex);
         gamePlayerState.setName(playerDef.getName());
 //        gamePlayerState.setFace(playerDef.getAvatar().getFace());
         gamePlayerState.setDeckProfileColors(playerDef.getDeckProfile().getColorText());
         if (playerDef.isArtificial()) {
-            gamePlayerState.setAiType(playerDef.getPlayerProfile().getAiType().toString());
+            gamePlayerState.setAiType(player.getAiProfile().getAiType().toString());
         }
-        final MagicPlayer player = game.getPlayer(playerIndex);
         gamePlayerState.setLife(player.getLife());
         savePlayerLibraryState(player, gamePlayerState);
         savePlayerHandState(player, gamePlayerState);

@@ -30,18 +30,6 @@ public abstract class PlayerProfile {
         return isArtificial() == false;
     }
 
-    public int getAiLevel() {
-        return 6;
-    }
-
-    public int getExtraLife() {
-        return 0;
-    }
-    
-    public MagicAIImpl getAiType() {
-        return MagicAIImpl.MMAB;
-    }
-
     protected PlayerProfile() {
         setProfilePath(PlayerProfile.getNewPlayerProfileId());
         loadStats();

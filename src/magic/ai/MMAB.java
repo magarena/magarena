@@ -60,7 +60,7 @@ public class MMAB implements MagicAI {
         final ArtificialScoreBoard scoreBoard = new ArtificialScoreBoard();
         final ExecutorService executor = Executors.newFixedThreadPool(THREADS);
         final List<ArtificialChoiceResults> achoices=new ArrayList<ArtificialChoiceResults>();
-        final int artificialLevel = scorePlayer.getPlayerDefinition().getPlayerProfile().getAiLevel();
+        final int artificialLevel = scorePlayer.getAiProfile().getAiLevel();
         final int rounds = (size + THREADS - 1) / THREADS;
         final long slice = artificialLevel * SEC_TO_NANO / rounds;
         

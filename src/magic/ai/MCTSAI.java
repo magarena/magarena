@@ -132,7 +132,7 @@ public class MCTSAI implements MagicAI {
         }
 
         //normal: max time is 1000 * level
-        final int artificialLevel = scorePlayer.getPlayerDefinition().getPlayerProfile().getAiLevel();
+        final int artificialLevel = scorePlayer.getAiProfile().getAiLevel();
         final int MAX_TIME = 1000 * artificialLevel;
 
         final long START_TIME = System.currentTimeMillis();

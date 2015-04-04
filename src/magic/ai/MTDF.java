@@ -27,7 +27,7 @@ public class MTDF implements MagicAI {
     }
 
     public Object[] findNextEventChoiceResults(final MagicGame sourceGame, final MagicPlayer scorePlayer) {
-        final int artificialLevel = scorePlayer.getPlayerDefinition().getPlayerProfile().getAiLevel();
+        final int artificialLevel = scorePlayer.getAiProfile().getAiLevel();
         final long startTime = System.currentTimeMillis();
         
         END = startTime + artificialLevel * 1000;
