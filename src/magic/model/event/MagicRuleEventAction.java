@@ -2979,7 +2979,7 @@ public enum MagicRuleEventAction {
         }
     },
     SelfBecomes(
-        "sn becomes a(n)? (?<pt>[0-9]+/[0-9]+)? (?<all>.*?)( with (?<ability>.*?))?(?<duration> until end of turn)?(?<additionTo>(\\. It is|\\. It's| that's) still.*)?\\.",
+        "sn becomes a(n)? (?<pt>[0-9]+/[0-9]+)? (?<all>.*?)( with (?<ability>.*?))?(?<duration> until end of turn)?(?<additionTo>(\\. It's| that's) still.*)?\\.",
         MagicTiming.Animate,
         "Animate"
     ) {
