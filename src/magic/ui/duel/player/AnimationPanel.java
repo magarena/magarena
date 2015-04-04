@@ -53,10 +53,9 @@ public class AnimationPanel extends JPanel {
         }
     }
 
-    protected void drawPulsingBorder(Graphics2D g) {
+    protected void drawPulsingBorder(Graphics2D g2d) {
         if (pulsingBorderOpacity > 0) {
-            final int offset = (int)(PULSE_BORDER_WIDTH / 2);
-            final Graphics2D g2d = (Graphics2D) g;
+            final int offset = PULSE_BORDER_WIDTH / 2;
             g2d.setStroke(new BasicStroke(PULSE_BORDER_WIDTH));
             g2d.setColor(MagicStyle.getTranslucentColor(ThemeFactory.getInstance().getCurrentTheme().getColor(Theme.COLOR_CHOICE_BORDER), getPulsingBorderOpacity()));
             g2d.drawRect(
