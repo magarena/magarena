@@ -5,7 +5,7 @@ rarity=U
 type=Land
 timing=land
 ability={T}: Add {1} to your mana pool.;\
+        {1}: SN becomes a 2/2 Assembly-Worker artifact creature until end of turn.;\
         {T}: Target Assembly-Worker creature gets +1/+1 until end of turn.
 mana_or_combat
-requires_groovy_code
 oracle={T}: Add {1} to your mana pool. {1}: Mishra's Factory becomes a 2/2 Assembly-Worker artifact creature until end of turn. It's still a land. {T}: Target Assembly-Worker creature gets +1/+1 until end of turn.
