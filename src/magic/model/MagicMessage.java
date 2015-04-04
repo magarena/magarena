@@ -67,9 +67,9 @@ public class MagicMessage {
             .replaceAll("PN", player.toString())
             .replaceAll("SN", source.toString())
             .replaceAll("RN", ref.toString())
-            .replaceAll("(T|t)his permanent" + evenQuotes, source.toString())
-            .replaceAll("(T|t)his creature" + evenQuotes, source.toString())
-            .replaceAll(" it " + evenQuotes, " " + source.toString() + " ");
+            .replaceAll("\\b(T|t)his permanent\\b" + evenQuotes, source.toString())
+            .replaceAll("\\b(T|t)his creature\\b" + evenQuotes, source.toString())
+            .replaceAll("\\bit\\b" + evenQuotes, source.toString());
     }
 
     public static String replaceChoices(final String sourceText,final Object[] choices) {
