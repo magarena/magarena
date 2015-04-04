@@ -2998,6 +2998,16 @@ public enum MagicRuleEventAction {
             };   
         }
     },
+    SelfBecomesAlt(
+        "(?<duration>until end of turn, )sn becomes a(n)? (?<pt>[0-9]+/[0-9]+)? (?<all>.*?)( with (?<ability>.*?))?(?<additionTo>(\\. It's| that's) still.*)?\\.",
+        MagicTiming.Animate,
+        "Animate"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            return SelfBecomes.getAction(matcher);
+        }
+    },
     ;
 
     private final Pattern pattern;
