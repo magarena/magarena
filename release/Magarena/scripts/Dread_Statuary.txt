@@ -3,8 +3,8 @@ image=http://magiccards.info/scans/en/ddm/35.jpg
 value=3.722
 rarity=U
 type=Land
-ability={T}: Add {1} to your mana pool.
+ability={T}: Add {1} to your mana pool.;\
+        {4}: SN becomes a 4/2 Golem artifact creature until end of turn. It's still a land.
 timing=land
 mana_or_combat
-requires_groovy_code
 oracle={T}: Add {1} to your mana pool. {4}: Dread Statuary becomes a 4/2 Golem artifact creature until end of turn. It's still a land.
