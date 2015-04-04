@@ -5,7 +5,9 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.Properties;
+import java.util.Map;
 import java.util.UUID;
+import magic.ai.MagicAIImpl;
 import magic.data.FileIO;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicFileSystem.DataPath;
@@ -21,6 +23,24 @@ public abstract class PlayerProfile {
     abstract protected void loadProperties();
     abstract public void save();
     abstract protected String getPlayerType();
+    abstract public Map<String, PlayerProfile> getPlayerProfiles();
+    abstract public boolean isArtificial();
+    
+    public boolean isHuman() {
+        return isArtificial() == false;
+    }
+
+    public int getAiLevel() {
+        return 6;
+    }
+
+    public int getExtraLife() {
+        return 0;
+    }
+    
+    public MagicAIImpl getAiType() {
+        return MagicAIImpl.MMAB;
+    }
 
     protected PlayerProfile(final String profileId) {
         setProfilePath(profileId == null ? PlayerProfile.getNewPlayerProfileId() : profileId);
@@ -120,8 +140,12 @@ public abstract class PlayerProfile {
     public int hashCode() {
         return this.getId().hashCode();
     }
-
-    public static boolean isAiPlayer(final PlayerProfile player) {
-        return player instanceof AiPlayer;
+    
+    public String getPlayerTypeLabel() {
+        return "";
+    }
+    
+    public String getPlayerAttributeLabel() {
+        return "";
     }
 }

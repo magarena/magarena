@@ -40,7 +40,7 @@ public class MagicPlayerDefinition {
 
     // CTR
     public MagicPlayerDefinition(final PlayerProfile playerProfile, final MagicDeckProfile deckProfile) {
-        this(playerProfile.getPlayerName(), (playerProfile instanceof AiPlayer), deckProfile);
+        this(playerProfile.getPlayerName(), playerProfile.isArtificial(), deckProfile);
         this.playerProfile = playerProfile;
     }
 

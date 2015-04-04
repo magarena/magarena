@@ -1,6 +1,7 @@
 package magic.model.player;
 
 import java.util.Properties;
+import java.util.Map;
 
 public class HumanPlayer extends PlayerProfile {
 
@@ -10,6 +11,7 @@ public class HumanPlayer extends PlayerProfile {
         super(profileId);
         loadProperties();
     }
+
     public HumanPlayer() {
         this(null);
     }
@@ -31,6 +33,14 @@ public class HumanPlayer extends PlayerProfile {
     protected String getPlayerType() {
         return PLAYER_TYPE;
     }
-
-
+    
+    @Override
+    public Map<String, PlayerProfile> getPlayerProfiles() {
+        return PlayerProfiles.getHumanPlayerProfiles();
+    }
+    
+    @Override
+    public boolean isArtificial() {
+        return false;
+    }
 }

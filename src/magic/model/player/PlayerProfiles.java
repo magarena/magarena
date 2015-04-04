@@ -142,7 +142,7 @@ public final class PlayerProfiles {
         final Iterator<PlayerProfile> itr = profilesMap.values().iterator();
         while (itr.hasNext()) {
             final PlayerProfile profile = itr.next();
-            if (profile instanceof HumanPlayer) {
+            if (profile.isHuman()) {
                 filteredProfiles.put(profile.getId(), profile);
             }
         }
@@ -154,7 +154,7 @@ public final class PlayerProfiles {
         final Iterator<PlayerProfile> itr = profilesMap.values().iterator();
         while (itr.hasNext()) {
             final PlayerProfile profile = itr.next();
-            if (profile instanceof AiPlayer) {
+            if (profile.isArtificial()) {
                 filteredProfiles.put(profile.getId(), profile);
             }
         }

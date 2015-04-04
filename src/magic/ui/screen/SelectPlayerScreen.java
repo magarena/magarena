@@ -165,12 +165,7 @@ public abstract class SelectPlayerScreen
         }
 
         private boolean isDeletePlayerValid(final PlayerProfile playerProfile) {
-            boolean isDeletePlayerValid = true;
-            if (playerProfile instanceof HumanPlayer) {
-                isDeletePlayerValid = (PlayerProfiles.getHumanPlayerProfiles().size() > 1);
-            } else if (playerProfile instanceof AiPlayer) {
-                isDeletePlayerValid = (PlayerProfiles.getAiPlayerProfiles().size() > 1);
-            }
+            boolean isDeletePlayerValid = playerProfile.getPlayerProfiles().size() > 1;
             if (!isDeletePlayerValid) {
                 ScreenController.showWarningMessage("There must be at least one player defined.");
             }

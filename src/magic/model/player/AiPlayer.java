@@ -3,6 +3,7 @@ package magic.model.player;
 import magic.ai.MagicAIImpl;
 
 import java.util.Properties;
+import java.util.Map;
 
 public class AiPlayer extends PlayerProfile {
 
@@ -28,6 +29,7 @@ public class AiPlayer extends PlayerProfile {
         this(null);
     }
 
+    @Override
     public int getExtraLife() {
         return extraLife;
     }
@@ -35,6 +37,7 @@ public class AiPlayer extends PlayerProfile {
         extraLife = value;
     }
 
+    @Override
     public int getAiLevel() {
         return aiLevel;
     }
@@ -42,6 +45,7 @@ public class AiPlayer extends PlayerProfile {
         aiLevel = value;
     }
 
+    @Override
     public MagicAIImpl getAiType() {
         return aiType;
     }
@@ -72,5 +76,24 @@ public class AiPlayer extends PlayerProfile {
     protected String getPlayerType() {
         return PLAYER_TYPE;
     }
-
+    
+    @Override
+    public String getPlayerTypeLabel() {
+        return "AI : " + getAiType();
+    }
+    
+    @Override
+    public String getPlayerAttributeLabel() {
+        return "Level: " + getAiLevel() + "  Extra Life: " + getExtraLife();
+    }
+    
+    @Override
+    public Map<String, PlayerProfile> getPlayerProfiles() {
+        return PlayerProfiles.getAiPlayerProfiles();
+    }
+    
+    @Override
+    public boolean isArtificial() {
+        return true;
+    }
 }

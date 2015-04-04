@@ -110,13 +110,7 @@ public class DuelConfig {
     }
 
     public MagicAI[] getPlayerAIs() {
-        final MagicAI playerAI;
-        if (players[1] instanceof AiPlayer) {
-            final AiPlayer aiPlayer = (AiPlayer)players[1];
-            playerAI = aiPlayer.getAiType().getAI();
-        } else {
-            playerAI = MagicAIImpl.MMAB.getAI();
-        }
+        final MagicAI playerAI = players[1].getAiType().getAI();
         return new MagicAI[]{playerAI, playerAI};
     }
 
@@ -181,21 +175,11 @@ public class DuelConfig {
      * Currently, this a user-adjustable setting from 1 to 8 seconds.
      */
     public int getAiDifficulty() {
-        if (players[1] instanceof AiPlayer) {
-            final AiPlayer player = (AiPlayer)players[1];
-            return player.getAiLevel();
-        } else {
-            return 6;
-        }
+        return players[1].getAiLevel();
     }
 
     public int getAiExtraLife() {
-        if (players[1] instanceof AiPlayer) {
-            final AiPlayer aiPlayer = (AiPlayer)players[1];
-            return aiPlayer.getExtraLife();
-        } else {
-            return 0;
-        }
+        return players[1].getExtraLife();
     }
 
     public int getGamesRequiredToWinDuel() {
