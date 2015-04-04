@@ -20,11 +20,7 @@ def ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
 
 [
     new MagicPermanentActivation(
-        [
-            new MagicArtificialCondition(
-                MagicConditionFactory.ManaCost("{2}")
-            )
-        ],
+        [MagicCondition.NOT_EXCLUDE_COMBAT_CONDITION],
         new MagicActivationHints(MagicTiming.Animate),
         "Animate"
     ) {

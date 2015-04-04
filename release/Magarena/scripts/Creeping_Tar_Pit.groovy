@@ -28,9 +28,7 @@ def C = new MagicStatic(MagicLayer.Color, MagicStatic.UntilEOT) {
 };
 [
     new MagicPermanentActivation(
-        [new MagicArtificialCondition(
-            MagicConditionFactory.ManaCost("{U}{U}{B}{B}")
-        )],
+        [MagicCondition.NOT_EXCLUDE_COMBAT_CONDITION],
         new MagicActivationHints(MagicTiming.Animate),
         "Animate"
     ) {
