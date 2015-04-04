@@ -5,8 +5,8 @@ rarity=U
 type=Artifact
 cost={2}
 ability=SN enters the battlefield tapped.;\
-        {T}: Add {1} to your mana pool.
+        {T}: Add {1} to your mana pool.;\
+        {2}: SN becomes a 2/2 Golem artifact creature until end of turn.
 timing=artifact
 mana_or_combat
-requires_groovy_code
 oracle=Guardian Idol enters the battlefield tapped. {T}: Add {1} to your mana pool. {2}: Guardian Idol becomes a 2/2 Golem artifact creature until end of turn.
