@@ -47,7 +47,7 @@ import java.util.regex.Pattern;
 
 public enum MagicRuleEventAction {
     DestroyGroup(
-        "destroy all (?<group>[^\\.]*)\\.", 
+        "destroy all (?<group>[^\\.]*)\\.(?<noregen> They can't be regenerated\\.)?", 
         MagicTiming.Removal,
         "Destroy"
     ) {
@@ -58,66 +58,47 @@ public enum MagicRuleEventAction {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
                     final Collection<MagicPermanent> targets = game.filterPermanents(event.getPlayer(),filter);
+                    if (matcher.group("noregen") != null) {
+                        for (final MagicPermanent it : targets) {
+                            game.doAction(MagicChangeStateAction.Set(it, MagicPermanentState.CannotBeRegenerated));
+                        }
+                    }
                     game.doAction(new MagicDestroyAction(targets));
                 }
             };
         }
     },
     DestroyChosen(
-        "destroy (?<choice>[^\\.]*)\\.", 
+        "destroy (?<choice>[^\\.]*)\\.(?<noregen> it can't be regenerated\\.)?", 
         MagicTargetHint.Negative,
-        MagicDestroyTargetPicker.Destroy,
-        MagicTiming.Removal,
-        "Destroy",
-        new MagicEventAction() {
-            @Override
-            public void executeEvent(final MagicGame game, final MagicEvent event) {
-                event.processTargetPermanent(game,new MagicPermanentAction() {
-                    public void doAction(final MagicPermanent creature) {
-                        game.doAction(new MagicDestroyAction(creature));
-                    }
-                });
-            }
-        }
-    ),
-    DestroyNoRegenGroup(
-        "destroy all (?<group>[^\\.]*)\\. They can't be regenerated\\.", 
         MagicTiming.Removal,
         "Destroy"
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
-            final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.multiple(matcher.group("group"));
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    final Collection<MagicPermanent> targets = game.filterPermanents(event.getPlayer(),filter);
-                    for (final MagicPermanent target : targets) {
-                        game.doAction(MagicChangeStateAction.Set(target,MagicPermanentState.CannotBeRegenerated));
-                    }
-                    game.doAction(new MagicDestroyAction(targets));
+                    event.processTargetPermanent(game,new MagicPermanentAction() {
+                        public void doAction(final MagicPermanent it) {
+                            if (matcher.group("noregen") != null) {
+                                game.doAction(MagicChangeStateAction.Set(it, MagicPermanentState.CannotBeRegenerated));
+                            }
+                            game.doAction(new MagicDestroyAction(it));
+                        }
+                    });
                 }
             };
         }
-    },
-    DestroyNoRegenChosen(
-        "destroy (?<choice>[^\\.]*)\\. it can't be regenerated\\.", 
-        MagicTargetHint.Negative, 
-        MagicDestroyTargetPicker.DestroyNoRegen,
-        MagicTiming.Removal,
-        "Destroy",
-        new MagicEventAction() {
-            @Override
-            public void executeEvent(final MagicGame game, final MagicEvent event) {
-                event.processTargetPermanent(game,new MagicPermanentAction() {
-                    public void doAction(final MagicPermanent creature) {
-                        game.doAction(MagicChangeStateAction.Set(creature,MagicPermanentState.CannotBeRegenerated));
-                        game.doAction(new MagicDestroyAction(creature));
-                    }
-                });
+        @Override
+        public MagicTargetPicker<?> getPicker(final Matcher matcher) {
+            if (matcher.group("noregen") != null) {
+                return MagicDestroyTargetPicker.DestroyNoRegen;
+            } else {
+                return MagicDestroyTargetPicker.Destroy;
             }
         }
-    ),
+    },
     CounterUnless(
         "counter (?<choice>[^\\.]*) unless its controller pays (?<cost>[^\\.]*)\\.", 
         MagicTargetHint.Negative, 
