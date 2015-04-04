@@ -5,6 +5,7 @@ import magic.data.DeckGenerators;
 import magic.generator.RandomDeckGenerator;
 import magic.model.player.AiPlayer;
 import magic.model.player.PlayerProfile;
+import magic.model.player.PlayerProfiles;
 
 import java.util.Properties;
 
@@ -25,22 +26,28 @@ public class MagicPlayerDefinition {
     private MagicDeckProfile deckProfile;
     private final MagicDeck deck = new MagicDeck();
     private int avatarIndex;
-    private PlayerProfile playerProfile = null;
+    private final PlayerProfile playerProfile;
 
     // CTR
-    MagicPlayerDefinition() { }
-
-    // CTR
-    public MagicPlayerDefinition(final String name, final boolean artificial, final MagicDeckProfile profile) {
-        playerName = name;
-        isAi = artificial;
-        deckProfile = profile;
-        avatarIndex = getNextAvatarIndex();
+    MagicPlayerDefinition() { 
+        playerProfile = null;
     }
 
     // CTR
-    public MagicPlayerDefinition(final PlayerProfile aPlayerProfile, final MagicDeckProfile deckProfile) {
-        this(aPlayerProfile.getPlayerName(), aPlayerProfile.isArtificial(), deckProfile);
+    public MagicPlayerDefinition(final String name, final boolean artificial, final MagicDeckProfile aDeckProfile) {
+        playerName = name;
+        isAi = artificial;
+        deckProfile = aDeckProfile;
+        avatarIndex = getNextAvatarIndex();
+        playerProfile = artificial ? PlayerProfiles.getDefaultAiPlayer() : PlayerProfiles.getDefaultHumanPlayer();
+    }
+
+    // CTR
+    public MagicPlayerDefinition(final PlayerProfile aPlayerProfile, final MagicDeckProfile aDeckProfile) {
+        playerName = aPlayerProfile.getPlayerName();
+        isAi = aPlayerProfile.isArtificial();
+        deckProfile = aDeckProfile;
+        avatarIndex = getNextAvatarIndex();
         playerProfile = aPlayerProfile;
     }
 
