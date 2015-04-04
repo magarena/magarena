@@ -108,7 +108,7 @@ public abstract class MagicWhenOtherComesIntoPlayTrigger extends MagicTrigger<Ma
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            if (event.isYes() && event.getPermanent().getCounters(MagicCounterType.PlusOne)>0) {
+            if (event.isYes() && event.getPermanent().hasCounters(MagicCounterType.PlusOne)) {
                 game.doAction(new MagicChangeCountersAction(
                     event.getPermanent(),
                     MagicCounterType.PlusOne,
