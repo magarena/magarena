@@ -32,16 +32,16 @@ public class MagicPlayerDefinition {
 
     // CTR
     public MagicPlayerDefinition(final String name, final boolean artificial, final MagicDeckProfile profile) {
-        this.playerName = name;
-        this.isAi = artificial;
-        this.deckProfile = profile;
-        this.avatarIndex = getNextAvatarIndex();
+        playerName = name;
+        isAi = artificial;
+        deckProfile = profile;
+        avatarIndex = getNextAvatarIndex();
     }
 
     // CTR
-    public MagicPlayerDefinition(final PlayerProfile playerProfile, final MagicDeckProfile deckProfile) {
-        this(playerProfile.getPlayerName(), playerProfile.isArtificial(), deckProfile);
-        this.playerProfile = playerProfile;
+    public MagicPlayerDefinition(final PlayerProfile aPlayerProfile, final MagicDeckProfile deckProfile) {
+        this(aPlayerProfile.getPlayerName(), aPlayerProfile.isArtificial(), deckProfile);
+        playerProfile = aPlayerProfile;
     }
 
     private static int getNextAvatarIndex() {
