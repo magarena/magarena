@@ -16,7 +16,6 @@ class TestTwincastEndlessLoop extends TestGameBuilder {
 
     public MagicGame getGame() {
         final MagicDuel duel=new MagicDuel();
-        duel.setDifficulty(6);
 
         final MagicDeckProfile profile=new MagicDeckProfile("bgruw");
         final MagicPlayerDefinition player1=new MagicPlayerDefinition("Player",false,profile);

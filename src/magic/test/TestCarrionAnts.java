@@ -10,7 +10,6 @@ import magic.model.phase.MagicMainPhase;
 class TestCarrionAnts extends TestGameBuilder {
     public MagicGame getGame() {
         final MagicDuel duel=new MagicDuel();
-        duel.setDifficulty(6);
 
 
         final MagicDeckProfile profile=new MagicDeckProfile("bgruw");

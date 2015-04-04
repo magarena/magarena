@@ -10,7 +10,6 @@ import magic.model.phase.MagicMainPhase;
 class TestAILandSkip extends TestGameBuilder {
     public MagicGame getGame() {
     final MagicDuel duel = new MagicDuel();
-    duel.setDifficulty(8);
 
     final MagicDeckProfile profile1 = new MagicDeckProfile("bu");
     final MagicDeckProfile profile2 = new MagicDeckProfile("br");
