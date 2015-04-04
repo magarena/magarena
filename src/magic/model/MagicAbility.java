@@ -206,7 +206,7 @@ public enum MagicAbility {
             card.add(new MagicRampageTrigger(n));
         }
     },
-    AttacksEffect("When(ever)? SN attacks, " + ARG.EFFECT, 10) {
+    AttacksEffect("When(ever)? (SN|this creature) attacks, " + ARG.EFFECT, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicWhenSelfAttacksTrigger.create(
                 MagicRuleEventAction.create(ARG.effect(arg))
