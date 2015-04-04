@@ -46,7 +46,7 @@ public class HeadlessGameController implements IGameController {
     private Object[] getAIChoiceResults(final MagicEvent event) {
         //dynamically get the AI based on the player's index
         final MagicPlayer player = event.getPlayer();
-        final MagicAI ai = game.getDuel().getAIs()[player.getIndex()];
+        final MagicAI ai = player.getPlayerDefinition().getPlayerProfile().getAiType().getAI();
         return ai.findNextEventChoiceResults(game, player);
     }
 }
