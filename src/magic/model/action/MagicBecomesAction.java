@@ -17,14 +17,14 @@ public class MagicBecomesAction extends MagicAction {
 
     private final MagicPermanent permanent;
     private final String[] pt;
-    private final ArrayList<MagicColor> color;
-    private final ArrayList<MagicSubType> subType;
-    private final ArrayList<MagicType> type;
+    private final Set<MagicColor> color;
+    private final Set<MagicSubType> subType;
+    private final Set<MagicType> type;
     private final MagicAbilityList ability;
-    private final Boolean duration;
-    private final Boolean additionTo;
+    private final boolean duration;
+    private final boolean additionTo;
 
-    public MagicBecomesAction(final MagicPermanent aPermanent, final String[] aPt, final ArrayList<MagicColor> aColor, final ArrayList<MagicSubType> aSubType, final ArrayList<MagicType> aType, final MagicAbilityList aAbility, final Boolean aDuration, final Boolean aAdditionTo) {
+    public MagicBecomesAction(final MagicPermanent aPermanent, final String[] aPt, final Set<MagicColor> aColor, final Set<MagicSubType> aSubType, final Set<MagicType> aType, final MagicAbilityList aAbility, final boolean aDuration, final boolean aAdditionTo) {
         permanent = aPermanent;
         pt=aPt;
         color=aColor;
@@ -35,19 +35,19 @@ public class MagicBecomesAction extends MagicAction {
         additionTo=aAdditionTo;
     }
     
-    public MagicBecomesAction(final MagicPermanent aPermanent, final ArrayList<MagicColor> aColor, final Boolean aDuration, final Boolean aAdditionTo) {
+    public MagicBecomesAction(final MagicPermanent aPermanent, final Set<MagicColor> aColor, final boolean aDuration, final boolean aAdditionTo) {
         this(aPermanent, null, aColor, null, null, null, aDuration, aAdditionTo);
     }
 
-    public MagicBecomesAction(final MagicPermanent aPermanent, final ArrayList<MagicType> aType, final Boolean aDuration) {
+    public MagicBecomesAction(final MagicPermanent aPermanent, final Set<MagicType> aType, final boolean aDuration) {
         this(aPermanent, null, null, null, aType, null, aDuration, false);
     }
 
-    public MagicBecomesAction(final MagicPermanent aPermanent, final String[] aPt, final ArrayList<MagicSubType> aSubType, final ArrayList<MagicType> aType) {
+    public MagicBecomesAction(final MagicPermanent aPermanent, final String[] aPt, final Set<MagicSubType> aSubType, final Set<MagicType> aType) {
         this(aPermanent, aPt, null, aSubType, aType, null, false, false);
     }
 
-    public MagicBecomesAction(final MagicPermanent aPermanent, final String[] aPt, final ArrayList<MagicSubType> aSubType, final ArrayList<MagicType> aType, final Boolean aDuration) {
+    public MagicBecomesAction(final MagicPermanent aPermanent, final String[] aPt, final Set<MagicSubType> aSubType, final Set<MagicType> aType, final boolean aDuration) {
         this(aPermanent,aPt,null,aSubType,aType,null,aDuration,false);
     }
 

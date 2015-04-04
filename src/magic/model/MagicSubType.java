@@ -1,8 +1,10 @@
 package magic.model;
 
+import java.util.Iterator;
+import java.util.List;
+import java.util.Set;
 import java.util.ArrayList;
 import java.util.EnumSet;
-import java.util.Set;
 
 public enum MagicSubType {
     //basic land subtypes
@@ -137,14 +139,19 @@ public enum MagicSubType {
         return givenSubTypeFlags;
     }
     
-    //Takes array of strings and only returns valid MagicSubTypes
-    public static ArrayList<MagicSubType> convertSubTypes(final String[] subTypeNames) {
-        final ArrayList<MagicSubType> subTypes = new ArrayList<MagicSubType>();
-        for (final String name:subTypeNames){
+    public static EnumSet<MagicSubType> prefixSubTypes(final List<String> tokens) {
+        final EnumSet<MagicSubType> subTypes = EnumSet.noneOf(MagicSubType.class);
+        boolean matched = true;
+        for (Iterator<String> iterator = tokens.iterator(); iterator.hasNext() && matched;) {
+            final String name = iterator.next();
+            matched = false;
             for (final MagicSubType type : values()) {
                 if (type.toString().equalsIgnoreCase(name)) {
-                    subTypes.add(MagicSubType.getSubType(name));
-                }
+                    matched = true;
+                    subTypes.add(type);
+                    iterator.remove();
+                    break;
+                } 
             }
         }
         return subTypes;

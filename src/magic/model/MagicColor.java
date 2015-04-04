@@ -1,8 +1,10 @@
 package magic.model;
 
+import java.util.Iterator;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.EnumSet;
 
 public enum MagicColor {
 
@@ -99,12 +101,18 @@ public enum MagicColor {
         throw new RuntimeException("No corresponding MagicColor for " + symbol);
     }
 
-    public static ArrayList<MagicColor> getColors(final String[] names) {
-        ArrayList<MagicColor> colors = new ArrayList<MagicColor>();
-        for (final String name:names) {
+    public static EnumSet<MagicColor> prefixColors(final List<String> tokens) {
+        final EnumSet<MagicColor> colors = EnumSet.noneOf(MagicColor.class);
+        boolean matched = true;
+        for (Iterator<String> iterator = tokens.iterator(); iterator.hasNext() && matched;) {
+            final String name = iterator.next();
+            matched = false;
             for (final MagicColor color : values()) {
-                if (color.name==name.toLowerCase()) {
+                if (color.name.equalsIgnoreCase(name)) {
+                    matched = true;
                     colors.add(color);
+                    iterator.remove();
+                    break;
                 }
             }
         }

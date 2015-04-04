@@ -40,7 +40,11 @@ import magic.model.trigger.MagicReboundTrigger;
 import magic.model.action.*;
 import magic.model.target.*;
 
+import java.util.Arrays;
+import java.util.List;
+import java.util.Set;
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.Collection;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -2966,14 +2970,24 @@ public enum MagicRuleEventAction {
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
-            final String[] pt = matcher.group("pt").split("/");
-            final String[] all = matcher.group("all").split(", | and | ");
-            final ArrayList<MagicColor> colors = MagicColor.getColors(all);
-            final ArrayList<MagicSubType> subTypes = MagicSubType.convertSubTypes(all);
-            final ArrayList<MagicType> types = MagicType.convertTypes(all);
-            final MagicAbilityList abilityList = matcher.group("ability")!= null ?MagicAbility.getAbilityList(matcher.group("ability").split(", | and ")):null;
-            final Boolean duration = matcher.group("duration")!=null ? true : false;
-            final Boolean additionTo = matcher.group("additionTo")!=null ? true : false;
+            final String[] pt = matcher.group("pt") == null ? null : 
+                matcher.group("pt").split("/");
+
+            final List<String> tokens = new LinkedList<>(Arrays.asList(matcher.group("all").split(", | and | ")));
+            final Set<MagicColor> colors = MagicColor.prefixColors(tokens);
+            final Set<MagicSubType> subTypes = MagicSubType.prefixSubTypes(tokens);
+            final Set<MagicType> types = MagicType.prefixTypes(tokens);
+
+            if (tokens.isEmpty() == false) {
+                throw new RuntimeException("unmatched becomes specification " + tokens);
+            }
+
+            final MagicAbilityList abilityList = matcher.group("ability") == null ? null :
+                MagicAbility.getAbilityList(matcher.group("ability").split(", | and "));
+
+            final boolean duration = matcher.group("duration") != null;
+            final boolean additionTo = matcher.group("additionTo") != null;
+
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {

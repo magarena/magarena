@@ -1,8 +1,10 @@
 package magic.model;
 
+import java.util.Iterator;
+import java.util.List;
+import java.util.Set;
 import java.util.ArrayList;
 import java.util.EnumSet;
-import java.util.Set;
 
 public enum MagicType {
 
@@ -59,17 +61,22 @@ public enum MagicType {
         throw new RuntimeException("No corresponding MagicType for " + name);
     }
     
-    //Takes array of strings and only returns valid MagicTypes   
-    public static ArrayList<MagicType> convertTypes(final String[] typeNames) {
-        final ArrayList<MagicType> types = new ArrayList<MagicType>();
-        for (final String name:typeNames) {
+    public static EnumSet<MagicType> prefixTypes(final List<String> tokens) {
+        final EnumSet<MagicType> types = EnumSet.noneOf(MagicType.class);
+        boolean matched = true;
+        for (Iterator<String> iterator = tokens.iterator(); iterator.hasNext() && matched;) {
+            final String name = iterator.next();
+            matched = false;
             for (final MagicType type : values()) {
                 if (type.toString().equalsIgnoreCase(name)) {
-                    types.add(MagicType.getType(name));
+                    matched = true;
+                    types.add(type);
+                    iterator.remove();
+                    break;
                 }
             }
         }
-       return types;
+        return types;
     }
 
     public static int getTypes(final String[] typeNames) {
