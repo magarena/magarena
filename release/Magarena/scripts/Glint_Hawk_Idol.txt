@@ -4,6 +4,7 @@ value=3.713
 rarity=C
 type=Artifact
 cost={2}
+ability=Whenever another artifact enters the battlefield under your control, you may have SN become a 2/2 Bird artifact creature with flying until end of turn.;\
+        {W}: SN becomes a 2/2 Bird artifact creature with flying until end of turn.
 timing=artifact
-requires_groovy_code
 oracle=Whenever another artifact enters the battlefield under your control, you may have Glint Hawk Idol become a 2/2 Bird artifact creature with flying until end of turn. {W}: Glint Hawk Idol becomes a 2/2 Bird artifact creature with flying until end of turn.
