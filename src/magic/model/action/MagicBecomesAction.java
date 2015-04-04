@@ -1,6 +1,7 @@
 package magic.model.action;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Set;
 
 import magic.model.MagicAbilityList;
@@ -24,7 +25,15 @@ public class MagicBecomesAction extends MagicAction {
     private final boolean duration;
     private final boolean additionTo;
 
-    public MagicBecomesAction(final MagicPermanent aPermanent, final String[] aPt, final Set<MagicColor> aColor, final Set<MagicSubType> aSubType, final Set<MagicType> aType, final MagicAbilityList aAbility, final boolean aDuration, final boolean aAdditionTo) {
+    public MagicBecomesAction(
+        final MagicPermanent aPermanent, 
+        final String[] aPt, 
+        final Set<MagicColor> aColor, 
+        final Set<MagicSubType> aSubType, 
+        final Set<MagicType> aType, 
+        final MagicAbilityList aAbility, 
+        final boolean aDuration, 
+        final boolean aAdditionTo) {
         permanent = aPermanent;
         pt=aPt;
         color=aColor;
@@ -36,24 +45,23 @@ public class MagicBecomesAction extends MagicAction {
     }
     
     public MagicBecomesAction(final MagicPermanent aPermanent, final Set<MagicColor> aColor, final boolean aDuration, final boolean aAdditionTo) {
-        this(aPermanent, null, aColor, null, null, null, aDuration, aAdditionTo);
+        this(aPermanent, null, aColor, Collections.<MagicSubType>emptySet(), Collections.<MagicType>emptySet(), null, aDuration, aAdditionTo);
     }
 
     public MagicBecomesAction(final MagicPermanent aPermanent, final Set<MagicType> aType, final boolean aDuration) {
-        this(aPermanent, null, null, null, aType, null, aDuration, false);
+        this(aPermanent, null, Collections.<MagicColor>emptySet(), Collections.<MagicSubType>emptySet(), aType, null, aDuration, false);
     }
 
     public MagicBecomesAction(final MagicPermanent aPermanent, final String[] aPt, final Set<MagicSubType> aSubType, final Set<MagicType> aType) {
-        this(aPermanent, aPt, null, aSubType, aType, null, false, false);
+        this(aPermanent, aPt, Collections.<MagicColor>emptySet() , aSubType, aType, null, MagicStatic.UntilEOT, false);
     }
 
     public MagicBecomesAction(final MagicPermanent aPermanent, final String[] aPt, final Set<MagicSubType> aSubType, final Set<MagicType> aType, final boolean aDuration) {
-        this(aPermanent,aPt,null,aSubType,aType,null,aDuration,false);
+        this(aPermanent, aPt, Collections.<MagicColor>emptySet(), aSubType, aType, null, aDuration, false);
     }
 
     @Override
     public void doAction(final MagicGame game) {
-        final ArrayList<MagicStatic> staticCollect = new ArrayList<MagicStatic>();
         if (pt != null) {
             final MagicStatic PT = new MagicStatic(MagicLayer.SetPT, duration) {
                 @Override
@@ -61,72 +69,62 @@ public class MagicBecomesAction extends MagicAction {
                     bPt.set(Integer.parseInt(pt[0]), Integer.parseInt(pt[1]));
                 }
             };
-            staticCollect.add(PT);
+            game.doAction(new MagicAddStaticAction(permanent, PT));
         }
-        if (color !=null) {
-        final MagicStatic C = new MagicStatic(MagicLayer.Color, duration) {
-            @Override
-            public int getColorFlags(final MagicPermanent permanent,final int flags) {
-                    int mask = 0;
-                    for (final MagicColor element : color) {
-                        mask += element.getMask();
-                    }
+        if (color.isEmpty() == false) {
+            int _mask = 0;
+            for (final MagicColor element : color) {
+                _mask |= element.getMask();
+            }
+            final int mask = _mask;
+            final MagicStatic C = new MagicStatic(MagicLayer.Color, duration) {
+                @Override
+                public int getColorFlags(final MagicPermanent permanent,final int flags) {
+                    // if color change is in addition to original colors, return all
                     if (additionTo) {
-                        return flags|mask; //If color change is in addition to original colors, return all
+                        return flags | mask;
+                    // if color change replaces original color, return changes
                     } else {
-                        return mask; //If color change replaces original color, return changes
+                        return mask; 
                     }
                 }
             };
-            staticCollect.add(C);
+            game.doAction(new MagicAddStaticAction(permanent, C));
         }
-        final MagicStatic ST = new MagicStatic(MagicLayer.Type, duration) {
-            @Override
-            public int getTypeFlags(final MagicPermanent permanent,final int flags) {
-                boolean creature = false;
-                boolean artifact = false;
-                if (type !=null) {
-                    int mask = 0;
-                    for (final MagicType element : type) {
-                        mask += element.getMask();
-                        if (element==MagicType.Creature) {
-                            creature=true;
-                        }
-                        if (element==MagicType.Artifact) {
-                            artifact=true;
-                        }
-                    }
-                    if (additionTo|(creature && artifact)) { // Turning into an artifact creature retains previous types
-                        return flags|mask;
+        if (type.isEmpty() == false) {
+            int _mask = 0;
+            for (final MagicType element : type) {
+                _mask |= element.getMask();
+            }
+            final int mask = _mask;
+            final MagicStatic T = new MagicStatic(MagicLayer.Type, duration) {
+                @Override
+                public int getTypeFlags(final MagicPermanent permanent,final int flags) {
+                    // turning into an artifact creature retains previous types
+                    if (additionTo || (type.contains(MagicType.Creature) && type.contains(MagicType.Artifact))) { 
+                        return flags | mask;
                     } else {
                         return mask;
                     }
-                } else {
-                    return flags; // Return original types if type not changed
                 }
-            }
-            @Override
-            public void modSubTypeFlags(final MagicPermanent permanent, final Set<MagicSubType> flags) {
-                if (subType !=null) {
-                    if (!additionTo) {
+            };
+            game.doAction(new MagicAddStaticAction(permanent, T));
+        }
+        if (subType.isEmpty() == false) {
+            final MagicStatic ST = new MagicStatic(MagicLayer.Type, duration) {
+                @Override
+                public void modSubTypeFlags(final MagicPermanent permanent, final Set<MagicSubType> flags) {
+                    if (additionTo == false) {
                         flags.clear();
                     }
-                    for (final MagicSubType element : subType) {
-                        flags.add(element);
-                    }
+                    flags.addAll(subType);
                 }
-            }
-        };
-        staticCollect.add(ST);
-
-        // final collected statics returned
-        for (final MagicStatic mstatic : staticCollect) {
-            game.doAction(new MagicAddStaticAction(permanent, mstatic));
-            if (ability!=null){
-                game.doAction(new MagicGainAbilityAction(permanent, ability, duration));
-            }
+            };
+            game.doAction(new MagicAddStaticAction(permanent, ST));
         }
-        game.setStateCheckRequired();
+        if (ability != null) {
+            game.doAction(new MagicGainAbilityAction(permanent, ability, duration));
+        }
     }
 
     @Override
