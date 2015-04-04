@@ -4,6 +4,6 @@ value=3.096
 rarity=U
 type=Artifact
 cost={3}
+ability=Whenever a creature enters the battlefield under your control, you may have SN become a 3/3 white Angel artifact creature with flying until end of turn.
 timing=artifact
-requires_groovy_code
 oracle=Whenever a creature enters the battlefield under your control, you may have Angel's Tomb become a 3/3 white Angel artifact creature with flying until end of turn.
