@@ -29,17 +29,14 @@ public class MagicDuel {
 
     private final DuelConfig duelConfig;
     private MagicPlayerDefinition[] playerDefinitions;
-    private MagicAI[] ais;
     private int opponentIndex;
     private int gameNr;
     private int gamesPlayed;
     private int gamesWon;
     private int startPlayer;
-    private final int[] difficulty = new int[2];
 
     public MagicDuel(final DuelConfig configuration) {
         this.duelConfig=configuration;
-        ais=configuration.getPlayerAIs();
         restart();
     }
 
@@ -78,37 +75,6 @@ public class MagicDuel {
 
     public void setStartPlayer(final int startPlayer) {
         this.startPlayer=startPlayer;
-    }
-
-    public void setAIs(final MagicAI[] aAIs) {
-        this.ais = aAIs;
-    }
-
-    public MagicAI[] getAIs() {
-        return ais;
-    }
-
-    public void setDifficulty(final int diff) {
-        setDifficulty(0,diff);
-        setDifficulty(1,diff);
-    }
-
-    public void setDifficulty(final int idx, final int diff) {
-        difficulty[idx] = diff;
-    }
-
-    public int getDifficulty() {
-        return getDifficulty(0);
-    }
-
-    int getDifficulty(final int idx) {
-        return difficulty[idx];
-    }
-
-    public void updateDifficulty() {
-        final int aiDifficulty = duelConfig.getAiDifficulty();
-        difficulty[0] = aiDifficulty;
-        difficulty[1] = aiDifficulty;
     }
 
     public boolean isEditable() {
@@ -164,7 +130,7 @@ public class MagicDuel {
         final MagicPlayer opponent = new MagicPlayer(duelConfig.getStartLife(),playerDefinitions[opponentIndex],1);
 
         //give the AI player extra life
-        opponent.setLife(opponent.getLife() + duelConfig.getAiExtraLife());
+        opponent.setLife(opponent.getLife() + opponent.getPlayerDefinition().getPlayerProfile().getExtraLife());
 
         //determine who starts first
         final MagicPlayer start    = startPlayer == 0 ? player : opponent;

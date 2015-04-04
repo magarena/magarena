@@ -349,14 +349,6 @@ public class MagicGame {
         return false;
     }
 
-    private int getArtificialLevel() {
-        return duel.getDifficulty();
-    }
-
-    public int getArtificialLevel(final int idx) {
-        return duel.getDifficulty(idx);
-    }
-
     public boolean isArtificial() {
         return artificial;
     }

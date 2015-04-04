@@ -109,11 +109,6 @@ public class DuelConfig {
         playerDeckProfiles[playerIndex] = MagicDeckProfile.getDeckProfile(deckType, deckValue);
     }
 
-    public MagicAI[] getPlayerAIs() {
-        final MagicAI playerAI = players[1].getAiType().getAI();
-        return new MagicAI[]{playerAI, playerAI};
-    }
-
     public void load(final Properties properties) {
         startLife=Integer.parseInt(properties.getProperty(START_LIFE,Integer.toString(startLife)));
         handSize=Integer.parseInt(properties.getProperty(HAND_SIZE,Integer.toString(handSize)));
@@ -167,23 +162,7 @@ public class DuelConfig {
         return INSTANCE;
     }
 
-
-    /**
-     * Dependent on AI type, but approximately the maximum number of
-     * seconds the AI has to to make a decision.
-     * <p>
-     * Currently, this a user-adjustable setting from 1 to 8 seconds.
-     */
-    public int getAiDifficulty() {
-        return players[1].getAiLevel();
-    }
-
-    public int getAiExtraLife() {
-        return players[1].getExtraLife();
-    }
-
     public int getGamesRequiredToWinDuel() {
         return (int)Math.ceil(getNrOfGames()/2.0);
     }
-    
 }
