@@ -4,6 +4,6 @@ value=2.804
 rarity=U
 type=Enchantment
 cost={1}{G}{G}
+ability={G}{G}: SN becomes a 4/3 Centaur creature until end of turn. It's still an enchantment.
 timing=main
-requires_groovy_code
 oracle={G}{G}: Still Life becomes a 4/3 Centaur creature until end of turn. It's still an enchantment.
