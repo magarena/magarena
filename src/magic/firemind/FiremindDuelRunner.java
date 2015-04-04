@@ -108,16 +108,12 @@ public class FiremindDuelRunner {
         testDuel.setDifficulty(0, str1);
         testDuel.setDifficulty(1, str2);
         final MagicDeckProfile profile = new MagicDeckProfile("bgruw");
-        final MagicPlayerDefinition player1 = new MagicPlayerDefinition(
-                "Player1", true, profile);
-        final MagicPlayerDefinition player2 = new MagicPlayerDefinition(
-                "Player2", true, profile);
+        final MagicPlayerDefinition player1 = new MagicPlayerDefinition("Player1", true, profile);
+        final MagicPlayerDefinition player2 = new MagicPlayerDefinition("Player2", true, profile);
         testDuel.setPlayers(new MagicPlayerDefinition[] { player1, player2 });
 
         // Set the AI
         testDuel.setAIs(new MagicAI[] { ai1.getAI(), ai2.getAI() });
-        testDuel.getPlayer(0).setArtificial(true);
-        testDuel.getPlayer(1).setArtificial(true);
 
         // Set the deck.
         if (deck1.length() > 0) {

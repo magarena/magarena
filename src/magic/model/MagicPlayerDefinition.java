@@ -53,10 +53,6 @@ public class MagicPlayerDefinition {
         return playerName;
     }
 
-    public void setArtificial(final boolean art) {
-        this.isAi=art;
-    }
-
     public boolean isArtificial() {
         return isAi;
     }
