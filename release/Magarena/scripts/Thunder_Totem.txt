@@ -4,7 +4,8 @@ value=3.021
 rarity=U
 type=Artifact
 cost={3}
-ability={T}: Add {W} to your mana pool.
+ability={T}: Add {W} to your mana pool.;\
+        {1}{W}{W}: SN becomes a 2/2 white Spirit artifact creature with flying and first strike until end of turn.
 timing=main
-requires_groovy_code
+mana_or_combat
 oracle={T}: Add {W} to your mana pool. {1}{W}{W}: Thunder Totem becomes a 2/2 white Spirit artifact creature with flying and first strike until end of turn.

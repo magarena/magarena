@@ -3,7 +3,8 @@ image=http://magiccards.info/scans/en/ddf/75.jpg
 value=3.500
 rarity=U
 type=Land
-ability={T}: Add {1} to your mana pool.
+ability={T}: Add {1} to your mana pool.;\
+        {6}: SN becomes a 3/3 Elemental artifact creature that's still a land.
 timing=main
-requires_groovy_code
+mana_or_combat
 oracle={T}: Add {1} to your mana pool. {6}: Stalking Stones becomes a 3/3 Elemental artifact creature that's still a land.

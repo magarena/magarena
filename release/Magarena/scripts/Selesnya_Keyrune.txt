@@ -4,8 +4,8 @@ value=3.348
 rarity=U
 type=Artifact
 cost={3}
-ability={T}: Add {G} or {W} to your mana pool.
+ability={T}: Add {G} or {W} to your mana pool.;\
+        {G}{W}: SN becomes a 3/3 green and white Wolf artifact creature until end of turn.
 timing=artifact
 mana_or_combat
-requires_groovy_code
 oracle={T}: Add {G} or {W} to your mana pool. {G}{W}: Selesnya Keyrune becomes a 3/3 green and white Wolf artifact creature until end of turn.
