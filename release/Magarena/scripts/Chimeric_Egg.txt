@@ -4,7 +4,7 @@ value=3.105
 rarity=U
 type=Artifact
 cost={3}
-ability=Whenever an opponent casts a nonartifact spell, put a charge counter on SN.
+ability=Whenever an opponent casts a nonartifact spell, put a charge counter on SN.;\
+        Remove three charge counters from SN: SN becomes a 6/6 Construct artifact creature with trample until end of turn.
 timing=artifact
-requires_groovy_code
 oracle=Whenever an opponent casts a nonartifact spell, put a charge counter on Chimeric Egg. Remove three charge counters from Chimeric Egg: Chimeric Egg becomes a 6/6 Construct artifact creature with trample until end of turn.
