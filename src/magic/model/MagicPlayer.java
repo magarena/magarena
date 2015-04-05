@@ -20,7 +20,7 @@ import magic.model.target.MagicTargetType;
 
 public class MagicPlayer extends MagicObjectImpl implements MagicTarget, MagicMappable<MagicPlayer> {
 
-    public static final MagicPlayer NONE = new MagicPlayer(-1, new MagicPlayerDefinition(), -1) {
+    public static final MagicPlayer NONE = new MagicPlayer(-1, null, -1) {
         @Override
         public String toString() {
             return "";
@@ -801,6 +801,10 @@ public class MagicPlayer extends MagicObjectImpl implements MagicTarget, MagicMa
 
     public boolean isHuman() {
         return playerDefinition.getPlayerProfile().isHuman();
+    }
+    
+    public boolean isArtificial() {
+        return playerDefinition.getPlayerProfile().isArtificial();
     }
 
     public AiPlayer getAiProfile() {
