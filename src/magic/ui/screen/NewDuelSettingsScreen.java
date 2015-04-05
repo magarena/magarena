@@ -273,11 +273,7 @@ public class NewDuelSettingsScreen
         }
 
         private void saveSelectedPlayerProfile(final PlayerProfile player) {
-            if (player.isHuman()) {
-                DuelConfig.getInstance().setPlayerProfile(0, player);
-            } else {
-                DuelConfig.getInstance().setPlayerProfile(1, player);
-            }
+            DuelConfig.getInstance().setPlayerProfile(player.isHuman() ? 0 : 1, player);
             DuelConfig.getInstance().save();
         }
 
