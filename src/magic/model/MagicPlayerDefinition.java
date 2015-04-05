@@ -29,11 +29,6 @@ public class MagicPlayerDefinition {
     private final PlayerProfile playerProfile;
 
     // CTR
-    MagicPlayerDefinition() { 
-        playerProfile = null;
-    }
-
-    // CTR
     public MagicPlayerDefinition(final PlayerProfile aPlayerProfile, final MagicDeckProfile aDeckProfile) {
         playerName = aPlayerProfile.getPlayerName();
         isAi = aPlayerProfile.isArtificial();
