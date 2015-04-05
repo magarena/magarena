@@ -24,8 +24,7 @@ public abstract class PlayerProfile {
 
     /**
      * Creates a new player profile with a unique ID.
-     * <p>
-     * Needs to be saved using subclass {@code save()} method to make permanent.
+     * Use subclass {@code save()} method to make permanent.
      */
     protected PlayerProfile() {
         setProfilePath(PlayerProfile.getNewPlayerProfileId());
