@@ -169,13 +169,7 @@ public final class IconImages {
     }
 
     private static ImageIcon getSizedAvatarImageIcon(final MagicPlayerDefinition playerDef, final int size) {
-        final PlayerProfile profile = playerDef.getPlayerProfile();
-        if (profile != null) {
-            return getPlayerAvatar(profile).getIcon(size);
-        } else {
-            // temporary player (eg. TestGame) so let system decide avatar image.
-            return new PlayerAvatar(playerDef.getAvatarIndex()).getIcon(size);
-        }
+        return getPlayerAvatar(playerDef.getPlayerProfile()).getIcon(size);
     }
 
     private static BufferedImage getAvatarImage(final PlayerProfile profile) {
