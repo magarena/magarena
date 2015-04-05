@@ -12,7 +12,6 @@ public class MagicPlayerDefinition {
     private static int nextAvatarIndex = 1;
     private static int MAX_AVATAR_INDEX = 10;
 
-    private static final int DECK_SIZE=40;
     private static final int MIN_SOURCE=16;
 
     private static final String NAME="name";
@@ -78,12 +77,12 @@ public class MagicPlayerDefinition {
         final RandomDeckGenerator customGenerator =  getDeckGenerator();
 
         if (customGenerator == null) {
-            defaultGenerator.generateDeck(DECK_SIZE, deckProfile, deck);
+            defaultGenerator.generateDeck(MagicDeck.DEFAULT_SIZE, deckProfile, deck);
         } else {
-            customGenerator.generateDeck(DECK_SIZE, deckProfile, deck);
+            customGenerator.generateDeck(MagicDeck.DEFAULT_SIZE, deckProfile, deck);
         }
 
-        DeckGenerator.addBasicLandsToDeck(deck, deckProfile, DECK_SIZE);
+        DeckGenerator.addBasicLandsToDeck(deck, deckProfile, MagicDeck.DEFAULT_SIZE);
     }
 
     private static String getDeckPrefix(final String prefix,final int index) {

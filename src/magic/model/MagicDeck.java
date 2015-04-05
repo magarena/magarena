@@ -1,12 +1,12 @@
 package magic.model;
 
+import java.util.ArrayList;
 import magic.data.DeckUtils;
 
-import java.util.ArrayList;
-
+@SuppressWarnings("serial")
 public class MagicDeck extends ArrayList<MagicCardDefinition> {
 
-    private static final long serialVersionUID = 1L;
+    public static final int DEFAULT_SIZE = 40;
 
     private String filename="Unsaved Deck";
     private String description;
