@@ -2,6 +2,7 @@ package magic.model;
 
 import java.util.Properties;
 import magic.data.CardDefinitions;
+import magic.data.DeckGenerator;
 import magic.data.DeckGenerators;
 import magic.generator.RandomDeckGenerator;
 import magic.model.player.PlayerProfile;
@@ -54,56 +55,6 @@ public class MagicPlayerDefinition {
         return deckProfile;
     }
 
-    private void addBasicLandsToDeck() {
-        // Calculate statistics per color.
-        final int[] colorCount=new int[MagicColor.NR_COLORS];
-        final int[] colorSource=new int[MagicColor.NR_COLORS];
-        for (final MagicCardDefinition cardDefinition : deck) {
-            if (cardDefinition.isLand()) {
-                for (final MagicColor color : MagicColor.values()) {
-                    colorSource[color.ordinal()] += cardDefinition.getManaSource(color);
-                }
-            } else {
-                final int colorFlags=cardDefinition.getColorFlags();
-                for (final MagicColor color : deckProfile.getColors()) {
-                    if (color.hasColor(colorFlags)) {
-                        colorCount[color.ordinal()]++;
-                    }
-                }
-            }
-        }
-
-        // Add optimal basic lands to deck.
-        while (deck.size()<DECK_SIZE) {
-            MagicColor bestColor=null;
-            int lowestRatio=Integer.MAX_VALUE;
-            for (final MagicColor color : MagicColor.values()) {
-                final int index=color.ordinal();
-                final int count=colorCount[index];
-                if (count>0) {
-                    final int source=colorSource[index];
-                    final int ratio;
-                    if (source<MIN_SOURCE) {
-                        ratio=source-count;
-                    } else {
-                        ratio=source*100/count;
-                    }
-                    if (ratio<lowestRatio) {
-                        lowestRatio=ratio;
-                        bestColor=color;
-                    }
-                }
-            }
-            // fix for issue 446 (http://code.google.com/p/magarena/issues/detail?id=446).
-            if (bestColor == null) {
-                bestColor = MagicColor.getColor(MagicColor.getRandomColors(1).charAt(0));
-            }
-            final MagicCardDefinition landCard = CardDefinitions.getBasicLand(bestColor);
-            colorSource[bestColor.ordinal()] += landCard.getManaSource(bestColor);
-            deck.add(landCard);
-        }
-    }
-
     public MagicDeck getDeck() {
         return deck;
     }
@@ -123,6 +74,7 @@ public class MagicPlayerDefinition {
     }
 
     public void generateDeck(final RandomDeckGenerator defaultGenerator) {
+        
         final RandomDeckGenerator customGenerator =  getDeckGenerator();
 
         if (customGenerator == null) {
@@ -131,7 +83,7 @@ public class MagicPlayerDefinition {
             customGenerator.generateDeck(DECK_SIZE, deckProfile, deck);
         }
 
-        addBasicLandsToDeck();
+        DeckGenerator.addBasicLandsToDeck(deck, deckProfile, DECK_SIZE);
     }
 
     private static String getDeckPrefix(final String prefix,final int index) {

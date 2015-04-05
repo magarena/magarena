@@ -69,10 +69,7 @@ public class DeckGenerator {
         }
     }
 
-    /**
-     * Copied from MagicPlayerDefinition
-     */
-    private void addBasicLandsToDeck(final MagicDeck newDeck, final MagicDeckProfile deckProfile, final int deckSize) {
+    public static void addBasicLandsToDeck(final MagicDeck newDeck, final MagicDeckProfile deckProfile, final int deckSize) {
 
         final int MIN_SOURCE = 16;
         // Calculate statistics per color.
