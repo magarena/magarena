@@ -1,14 +1,12 @@
 [
-    new MagicWhenAttacksTrigger() {
+    new MagicWhenSelfAttacksTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
-            return (permanent==creature) ?
-                new MagicEvent(
-                    permanent,
-                    this,
-                    "Double the number of +1/+1 counters on each creature PN controls."
-                ):
-                MagicEvent.NONE;
+            return new MagicEvent(
+                permanent,
+                this,
+                "Double the number of +1/+1 counters on each creature PN controls."
+            );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
