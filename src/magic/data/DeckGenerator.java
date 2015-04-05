@@ -10,7 +10,7 @@ import magic.model.MagicDeckProfile;
 
 public class DeckGenerator {
 
-    public int deckSize = 60;
+    public int deckSize = MagicDeck.DEFAULT_SIZE;
     // percentage of deck size allocated to non-land cards.
     public int spellsPercent = 60;
     // maximum percentage of spells allocated to creature cards.
