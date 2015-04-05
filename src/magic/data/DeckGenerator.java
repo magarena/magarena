@@ -72,7 +72,7 @@ public class DeckGenerator {
     /**
      * Copied from MagicPlayerDefinition
      */
-    private void addBasicLandsToDeck(final MagicDeck newDeck, final MagicDeckProfile deckProfile, final int DECK_SIZE) {
+    private void addBasicLandsToDeck(final MagicDeck newDeck, final MagicDeckProfile deckProfile, final int deckSize) {
 
         final int MIN_SOURCE = 16;
         // Calculate statistics per color.
@@ -93,7 +93,7 @@ public class DeckGenerator {
             }
         }
         // Add optimal basic lands to deck.
-        while (newDeck.size() < DECK_SIZE) {
+        while (newDeck.size() < deckSize) {
             MagicColor bestColor = null;
             int lowestRatio = Integer.MAX_VALUE;
             for (final MagicColor color : MagicColor.values()) {
