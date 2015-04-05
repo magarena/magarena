@@ -76,7 +76,6 @@ public class SwingGameController implements IUIGameController, ILogBookListener 
 
     private final DuelPanel gamePanel;
     private final MagicGame game;
-    private final boolean selfMode = MagicSystem.isAiVersusAi();
     private final AtomicBoolean running = new AtomicBoolean(false);
     private final AtomicBoolean isPaused =  new AtomicBoolean(false);
     private final AtomicBoolean gameConceded = new AtomicBoolean(false);
@@ -606,7 +605,7 @@ public class SwingGameController implements IUIGameController, ILogBookListener 
 
     private void executeNextEventWithChoices(final MagicEvent event) {
         final Object[] choiceResults;
-        if (selfMode || event.getPlayer().isArtificial()) {
+        if (event.getPlayer().isArtificial()) {
             choiceResults = getArtificialNextEventChoiceResults(event);
         } else {
             try {
@@ -687,7 +686,7 @@ public class SwingGameController implements IUIGameController, ILogBookListener 
         showEndGameMessage();
         playEndGameSoundEffect();
         enableForwardButton();
-        if (!selfMode && waitForInputOrUndo()) {
+        if (MagicSystem.isAiVersusAi() == false && waitForInputOrUndo()) {
             performUndo();
             updateGameView();
         } else {

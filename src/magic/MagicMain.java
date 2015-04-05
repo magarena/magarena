@@ -19,6 +19,7 @@ import magic.ui.UiExceptionHandler;
 import magic.utility.MagicSystem;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicFileSystem.DataPath;
+import magic.model.player.PlayerProfiles;
 
 public class MagicMain {
 
@@ -111,6 +112,11 @@ public class MagicMain {
         if (MagicSystem.isAiVersusAi()) {
             final DuelConfig config = DuelConfig.getInstance();
             config.load();
+            
+            // set both player profile to AI for AI vs AI mode
+            config.setPlayerProfile(0, PlayerProfiles.getDefaultAiPlayer());
+            config.setPlayerProfile(1, PlayerProfiles.getDefaultAiPlayer());
+
             try {
                 ScreenController.getMainFrame().newDuel(config);
             } catch (InvalidDeckException ex) {
