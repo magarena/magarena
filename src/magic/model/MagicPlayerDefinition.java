@@ -12,8 +12,6 @@ public class MagicPlayerDefinition {
     private static int nextAvatarIndex = 1;
     private static int MAX_AVATAR_INDEX = 10;
 
-    private static final int MIN_SOURCE=16;
-
     private static final String NAME="name";
     private static final String ARTIFICIAL="artificial";
     private static final String COLORS="colors";
