@@ -16,10 +16,7 @@
                 MagicTargetFilterFactory.CREATURE_YOU_CONTROL,
                 permanent
             );
-            final Collection targets = game.filterPermanents(
-                event.getPlayer(),
-                filter
-            );
+            final Collection targets = game.filterPermanents(event.getPlayer(),filter);
             for (final MagicPermanent target : targets) {
                 game.doAction(new MagicChangeTurnPTAction(target,X,X));
             }
