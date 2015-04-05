@@ -6,6 +6,6 @@ type=Creature
 subtype=Goblin,Warrior
 cost={R}
 pt=1/1
-ability=Kinship SN gets +1/+1 until end of turn.
+ability=At the beginning of your upkeep, you may look at the top card of your library. If it shares a creature type with SN, you may reveal it. If you do, SN gets +1/+1 until end of turn.
 timing=main
 oracle=Kinship — At the beginning of your upkeep, you may look at the top card of your library. If it shares a creature type with Mudbutton Clanger, you may reveal it. If you do, Mudbutton Clanger gets +1/+1 until end of turn.

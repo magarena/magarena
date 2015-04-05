@@ -6,6 +6,6 @@ type=Creature
 subtype=Giant,Wizard
 cost={3}{W}{W}
 pt=4/4
-ability=Kinship you gain 4 life.
+ability=At the beginning of your upkeep, you may look at the top card of your library. If it shares a creature type with SN, you may reveal it. If you do, you gain 4 life.
 timing=main
 oracle=Kinship — At the beginning of your upkeep, you may look at the top card of your library. If it shares a creature type with Wandering Graybeard, you may reveal it. If you do, you gain 4 life.

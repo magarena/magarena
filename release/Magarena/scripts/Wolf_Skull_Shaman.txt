@@ -6,6 +6,6 @@ type=Creature
 subtype=Elf,Shaman
 cost={1}{G}
 pt=2/2
-ability=Kinship put a 2/2 green Wolf creature token onto the battlefield.
+ability=At the beginning of your upkeep, you may look at the top card of your library. If it shares a creature type with SN, you may reveal it. If you do, put a 2/2 green Wolf creature token onto the battlefield.
 timing=main
 oracle=Kinship — At the beginning of your upkeep, you may look at the top card of your library. If it shares a creature type with Wolf-Skull Shaman, you may reveal it. If you do, put a 2/2 green Wolf creature token onto the battlefield.

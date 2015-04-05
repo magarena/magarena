@@ -6,6 +6,6 @@ type=Creature
 subtype=Elf,Warrior
 cost={2}{G}
 pt=3/2
-ability=Kinship put a +1/+1 counter on SN.
+ability=At the beginning of your upkeep, you may look at the top card of your library. If it shares a creature type with SN, you may reveal it. If you do, put a +1/+1 counter on SN.
 timing=main
 oracle=Kinship — At the beginning of your upkeep, you may look at the top card of your library. If it shares a creature type with Winnower Patrol, you may reveal it. If you do, put a +1/+1 counter on Winnower Patrol.

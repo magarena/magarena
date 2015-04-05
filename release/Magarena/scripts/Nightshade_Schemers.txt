@@ -7,6 +7,6 @@ subtype=Faerie,Wizard
 cost={4}{B}
 pt=3/2
 ability=Flying;\
-        Kinship each opponent loses 2 life.
+        At the beginning of your upkeep, you may look at the top card of your library. If it shares a creature type with SN, you may reveal it. If you do, each opponent loses 2 life.
 timing=main
 oracle=Flying. Kinship — At the beginning of your upkeep, you may look at the top card of your library. If it shares a creature type with Nightshade Schemers, you may reveal it. If you do, each opponent loses 2 life.
