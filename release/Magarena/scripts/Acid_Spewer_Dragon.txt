@@ -7,7 +7,7 @@ subtype=Dragon
 cost={5}{B}
 pt=3/3
 ability=Flying, deathtouch;\
-        Megamorph {5}{B}{B};\
-        When SN is turned face up, put a +1/+1 counter on each other Dragon creature you control.
+        Megamorph {5}{B}{B}
 timing=main
+requires_groovy_code
 oracle=Flying, deathtouch. Megamorph {5}{B}{B}. When Acid-Spewer Dragon is turned face up, put a +1/+1 counter on each other Dragon creature you control.
