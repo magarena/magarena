@@ -117,10 +117,7 @@ public class PlayerStatistics {
         }
     }
 
-    public void update(
-            final boolean isPlayerWinner,
-            final MagicPlayer player,
-            final MagicGame game) {
+    public void update(final boolean isPlayerWinner, final MagicPlayer player, final MagicGame game) {
 
         gamesPlayed++;
 
@@ -128,10 +125,8 @@ public class PlayerStatistics {
             gamesWon++;
         }
 
-        if (player.isHuman()) {
-            if (game.isConceded()) {
-                gamesConceded++;
-            }
+        if (player.isHuman() && game.isConceded()) {
+            gamesConceded++;
         }
 
         turnsPlayed += game.getTurn();
