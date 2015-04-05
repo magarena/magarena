@@ -2963,7 +2963,7 @@ public enum MagicRuleEventAction {
         }
     },
     SelfBecomes(
-        "sn become(s)? a(n)? (?<pt>[0-9]+/[0-9]+)? (?<all>.*?)( with (?<ability>.*?))?(?<duration> until end of turn)?(?<additionTo>(\\. It's| that's) still.*)?\\.",
+        "sn become(s)? a(n)?( )?(?<pt>[0-9]+/[0-9]+)? (?<all>.*?)( with (?<ability>.*?))?(?<duration> until end of turn)?(?<additionTo>(\\. It's| that's) still.*)?\\.",
         MagicTiming.Animate,
         "Animate"
     ) {
@@ -3004,7 +3004,7 @@ public enum MagicRuleEventAction {
         }
     },
     SelfBecomesAlt(
-        "(?<duration>until end of turn, )sn becomes a(n)? (?<pt>[0-9]+/[0-9]+)? (?<all>.*?)( with (?<ability>.*?))?(?<additionTo>((\\.)? It's| that's) still.*)?\\.",
+        "(?<duration>until end of turn, )sn becomes a(n)?( )?(?<pt>[0-9]+/[0-9]+)? (?<all>.*?)( with (?<ability>.*?))?(?<additionTo>((\\.)? It's| that's) still.*)?\\.",
         MagicTiming.Animate,
         "Animate"
     ) {
