@@ -265,11 +265,9 @@ public class DuelDecksPanel extends TexturedPanel {
         }
 
         private int getScore(final PlayerProfile profile) {
-            if (profile.isHuman()) {
-                return duel.getGamesWon();
-            } else {
-                return duel.getGamesPlayed() - duel.getGamesWon();
-            }
+            return profile.isHuman()
+                    ? duel.getGamesWon()
+                    : duel.getGamesPlayed() - duel.getGamesWon();
         }
 
         private JLabel getScoreLabel(final int score) {
