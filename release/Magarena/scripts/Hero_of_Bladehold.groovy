@@ -1,15 +1,13 @@
 [
-    new MagicWhenAttacksTrigger() {
+    new MagicWhenSelfAttacksTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
-            return (permanent==creature) ?
-                new MagicEvent(
-                    permanent,
-                    this,
-                    "PN puts two 1/1 white Soldier creature tokens " +
-                    "onto the battlefield tapped and attacking."
-                ) :
-                MagicEvent.NONE;
+            return new MagicEvent(
+                permanent,
+                this,
+                "PN puts two 1/1 white Soldier creature tokens " +
+                "onto the battlefield tapped and attacking."
+            );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
