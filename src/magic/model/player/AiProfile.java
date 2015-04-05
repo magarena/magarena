@@ -20,13 +20,10 @@ public class AiProfile extends PlayerProfile {
     private int aiLevel = DEFAULT_AI_LEVEL;
     private MagicAIImpl aiType = DEFAULT_AI_TYPE;
 
+    public AiProfile() { }
+
     public AiProfile(final String profileId) {
         super(profileId);
-        loadProperties();
-    }
-
-    public AiProfile() {
-        loadProperties();
     }
 
     public int getExtraLife() {
