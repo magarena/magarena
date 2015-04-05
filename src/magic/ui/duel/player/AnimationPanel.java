@@ -16,6 +16,7 @@ import org.pushingpixels.trident.ease.Spline;
 public class AnimationPanel extends JPanel {
 
     private static final int PULSE_BORDER_WIDTH = 5;
+    private static final int PULSE_BORDER_OFFSET = PULSE_BORDER_WIDTH / 2;
     private static final Stroke PULSE_BORDER_STROKE = new BasicStroke(PULSE_BORDER_WIDTH);
     private static final Color PULSE_BORDER_COLOR = ThemeFactory.getInstance().getCurrentTheme().getColor(Theme.COLOR_CHOICE_BORDER);
     
@@ -59,12 +60,11 @@ public class AnimationPanel extends JPanel {
 
     protected void drawPulsingBorder(Graphics2D g2d) {
         if (pulsingBorderOpacity > 0) {
-            final int offset = PULSE_BORDER_WIDTH / 2;
             g2d.setStroke(PULSE_BORDER_STROKE);
             g2d.setColor(MagicStyle.getTranslucentColor(PULSE_BORDER_COLOR, getPulsingBorderOpacity()));
             g2d.drawRect(
-                    0 + offset,
-                    0 + offset,
+                    PULSE_BORDER_OFFSET,
+                    PULSE_BORDER_OFFSET,
                     getWidth() - PULSE_BORDER_WIDTH - 1,
                     getHeight() - PULSE_BORDER_WIDTH - 1);
         }
