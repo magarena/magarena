@@ -606,7 +606,7 @@ public class SwingGameController implements IUIGameController, ILogBookListener 
 
     private void executeNextEventWithChoices(final MagicEvent event) {
         final Object[] choiceResults;
-        if (selfMode || event.getPlayer().getPlayerDefinition().isArtificial()) {
+        if (selfMode || event.getPlayer().isArtificial()) {
             choiceResults = getArtificialNextEventChoiceResults(event);
         } else {
             try {
@@ -711,7 +711,7 @@ public class SwingGameController implements IUIGameController, ILogBookListener 
      * playing a new card from their library.
      */
     private void setAnimationEvent(final MagicEvent event) {
-        if (event.getPlayer().getPlayerDefinition().isArtificial() || MagicSystem.isAiVersusAi()) {
+        if (event.getPlayer().isArtificial() || MagicSystem.isAiVersusAi()) {
             final MagicEventAction action = event.getMagicEventAction();
             // action appears to be an instance of an anonymous inner class so "instanceof" does not work.
             // (see http://stackoverflow.com/questions/17048900/reflection-class-forname-finds-classes-classname1-and-classname2-what-a)
