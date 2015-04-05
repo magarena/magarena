@@ -10,7 +10,7 @@ import magic.model.MagicPlayer;
 import magic.model.MagicPlayerDefinition;
 import magic.model.phase.MagicMainPhase;
 import magic.model.player.AiProfile;
-import magic.model.player.HumanPlayer;
+import magic.model.player.HumanProfile;
 import magic.model.player.PlayerProfile;
 import magic.test.TestGameBuilder;
 
@@ -44,7 +44,7 @@ public final class GameLoader {
             ap.setAiLevel(gameState.getDifficulty());
             pp1 = ap;
         } else {
-            final HumanPlayer hp = new HumanPlayer();
+            final HumanProfile hp = new HumanProfile();
             hp.setPlayerName(gameState.getPlayer(0).getName());
             pp1 = hp;
         }
@@ -61,7 +61,7 @@ public final class GameLoader {
             ap.setAiLevel(gameState.getDifficulty());
             pp2 = ap;
         } else {
-            final HumanPlayer hp = new HumanPlayer();
+            final HumanProfile hp = new HumanProfile();
             hp.setPlayerName(gameState.getPlayer(1).getName());
             pp2 = hp;
         }

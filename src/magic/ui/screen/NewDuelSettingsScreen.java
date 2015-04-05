@@ -12,7 +12,7 @@ import magic.data.DeckUtils;
 import magic.data.DuelConfig;
 import magic.exception.InvalidDeckException;
 import magic.model.MagicDeck;
-import magic.model.player.HumanPlayer;
+import magic.model.player.HumanProfile;
 import magic.model.player.IPlayerProfileListener;
 import magic.model.player.PlayerProfile;
 import magic.model.player.PlayerProfiles;
@@ -197,7 +197,7 @@ public class NewDuelSettingsScreen
         }
 
         private void selectNewProfile(final PlayerProfile playerProfile) {
-            if (playerProfile instanceof HumanPlayer) {
+            if (playerProfile instanceof HumanProfile) {
                 ScreenController.showSelectHumanPlayerScreen(this, playerProfile);
             } else {
                 ScreenController.showSelectAiProfileScreen(this, playerProfile);
@@ -232,7 +232,7 @@ public class NewDuelSettingsScreen
         }
 
         private DuelPlayerPanel getDuelPlayerPanel(final PlayerProfile player) {
-            if (player instanceof HumanPlayer) {
+            if (player instanceof HumanProfile) {
                 return playerPanels[0];
             } else {
                 return playerPanels[1];
@@ -252,7 +252,7 @@ public class NewDuelSettingsScreen
          */
         @Override
         public void PlayerProfileDeleted(PlayerProfile deletedPlayer) {
-            if (deletedPlayer instanceof HumanPlayer) {
+            if (deletedPlayer instanceof HumanProfile) {
                 final PlayerProfile playerProfile = PlayerProfiles.getDefaultHumanPlayer();
                 DuelConfig.getInstance().setPlayerProfile(0, playerProfile);
                 getDuelPlayerPanel(playerProfile).setPlayer(playerProfile);
@@ -274,7 +274,7 @@ public class NewDuelSettingsScreen
         }
 
         private void saveSelectedPlayerProfile(final PlayerProfile player) {
-            if (player instanceof HumanPlayer) {
+            if (player instanceof HumanProfile) {
                 DuelConfig.getInstance().setPlayerProfile(0, player);
             } else {
                 DuelConfig.getInstance().setPlayerProfile(1, player);

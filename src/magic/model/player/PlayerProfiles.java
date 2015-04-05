@@ -35,7 +35,7 @@ public final class PlayerProfiles {
         // Humans
         for (Path path : getProfilePaths("human")) {
             final String profileId = path.getFileName().toString();
-            final HumanPlayer player = new HumanPlayer(profileId);
+            final HumanProfile player = new HumanProfile(profileId);
             profilesMap.put(profileId, player);
         }
         // AIs
@@ -85,7 +85,7 @@ public final class PlayerProfiles {
     }
 
     private static void createDefaultHumanPlayerProfiles() throws IOException {
-        final HumanPlayer profile = new HumanPlayer();
+        final HumanProfile profile = new HumanProfile();
         profile.setPlayerName(getDefaultPlayerProfileName());
         profile.save();
     }

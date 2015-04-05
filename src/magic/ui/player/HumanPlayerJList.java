@@ -1,6 +1,6 @@
 package magic.ui.player;
 
-import magic.model.player.HumanPlayer;
+import magic.model.player.HumanProfile;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.MagicStyle;
 import net.miginfocom.swing.MigLayout;
@@ -19,17 +19,17 @@ import magic.ui.IconImages;
 
 @SuppressWarnings("serial")
 public class HumanPlayerJList
-    extends JList<HumanPlayer> {
+    extends JList<HumanProfile> {
 
     public HumanPlayerJList() {
         setOpaque(false);
         setCellRenderer(new HumanPlayerListRenderer());
     }
 
-    private class HumanPlayerListRenderer extends JPanel implements ListCellRenderer<HumanPlayer> {
+    private class HumanPlayerListRenderer extends JPanel implements ListCellRenderer<HumanProfile> {
 
         private Color foreColor;
-        private HumanPlayer profile;
+        private HumanProfile profile;
 
         public HumanPlayerListRenderer() {
             setOpaque(false);
@@ -37,8 +37,8 @@ public class HumanPlayerJList
 
         @Override
         public Component getListCellRendererComponent(
-                JList<? extends HumanPlayer> list,
-                HumanPlayer profile,
+                JList<? extends HumanProfile> list,
+                HumanProfile profile,
                 int index,
                 boolean isSelected,
                 boolean cellHasFocus) {

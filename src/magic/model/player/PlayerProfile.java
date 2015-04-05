@@ -27,7 +27,7 @@ public abstract class PlayerProfile {
     }
     
     public boolean isHuman() {
-        return this instanceof HumanPlayer;
+        return this instanceof HumanProfile;
     }
 
     protected PlayerProfile() {
@@ -103,7 +103,7 @@ public abstract class PlayerProfile {
 
     public static PlayerProfile getHumanPlayer(final String playerId) {
         if (playerId != null && PlayerProfiles.getPlayerProfile(playerId) != null) {
-            return new HumanPlayer(playerId);
+            return new HumanProfile(playerId);
         } else {
             return PlayerProfiles.getDefaultHumanPlayer();
         }

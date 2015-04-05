@@ -13,7 +13,7 @@ import magic.model.MagicPayedCost;
 import magic.model.MagicDuel;
 import magic.model.MagicDeckProfile;
 import magic.model.player.AiProfile;
-import magic.model.player.HumanPlayer;
+import magic.model.player.HumanProfile;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.action.MagicPlayTokenAction;
 import magic.model.action.MagicPlayCardFromStackAction;
@@ -112,7 +112,7 @@ public abstract class TestGameBuilder {
  
         final MagicDeckProfile profile=new MagicDeckProfile("bgruw");
 
-        final HumanPlayer hp = new HumanPlayer();
+        final HumanProfile hp = new HumanProfile();
         hp.setPlayerName("Player");
         final MagicPlayerDefinition player1=new MagicPlayerDefinition(hp,profile);
 

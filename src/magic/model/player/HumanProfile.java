@@ -3,16 +3,16 @@ package magic.model.player;
 import java.util.Properties;
 import java.util.Map;
 
-public class HumanPlayer extends PlayerProfile {
+public class HumanProfile extends PlayerProfile {
 
     private static final String PLAYER_TYPE = "human";
 
-    public HumanPlayer(final String profileId) {
+    public HumanProfile(final String profileId) {
         super(profileId);
         loadProperties();
     }
 
-    public HumanPlayer() {
+    public HumanProfile() {
         super();
         loadProperties();
     }
