@@ -24,11 +24,13 @@ public class PlayerViewerInfo {
     public final MagicCardList library;
     public final List<PermanentViewerInfo> permanents;
     public final boolean isAi;
+    public final String playerLabel;
 
     public PlayerViewerInfo(final MagicGame game,final MagicPlayer player) {
         this.player=player;
         turn=player==game.getTurnPlayer();
         name=player.getName();
+        playerLabel=player.getPlayerDefinition().getPlayerProfile().getPlayerLabel();
         life=player.getLife();
         poison=player.getPoison();
         preventDamage=player.getPreventDamage();

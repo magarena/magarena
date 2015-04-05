@@ -9,7 +9,6 @@ import java.util.Set;
 import javax.swing.JLabel;
 import magic.data.GeneralConfig;
 import magic.model.MagicPlayerZone;
-import magic.model.player.AiProfile;
 import magic.ui.SwingGameController;
 import magic.ui.duel.viewer.ChoiceViewer;
 import magic.ui.duel.viewer.PlayerViewerInfo;
@@ -62,7 +61,7 @@ public class GamePlayerPanel extends TexturedPanel implements ChoiceViewer {
     }
 
     private JLabel getPlayerLabel() {
-        final JLabel lbl = new JLabel(playerInfo.player.getPlayerDefinition().getPlayerProfile().getPlayerLabel());
+        final JLabel lbl = new JLabel(playerInfo.playerLabel);
         lbl.setFont(new Font("dialog", Font.PLAIN, 9));
         return lbl;
     }
