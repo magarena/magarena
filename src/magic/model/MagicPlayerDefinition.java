@@ -1,13 +1,10 @@
 package magic.model;
 
+import java.util.Properties;
 import magic.data.CardDefinitions;
 import magic.data.DeckGenerators;
 import magic.generator.RandomDeckGenerator;
-import magic.model.player.AiPlayer;
 import magic.model.player.PlayerProfile;
-import magic.model.player.PlayerProfiles;
-
-import java.util.Properties;
 
 public class MagicPlayerDefinition {
 
