@@ -137,28 +137,24 @@ public final class PlayerProfiles {
         return getAiPlayerProfiles().values().iterator().next();
     }
 
-    public static HashMap<String, PlayerProfile> getHumanPlayerProfiles() {
+    private static HashMap<String, PlayerProfile> getPlayerProfiles(final Class<? extends PlayerProfile> profileClass) {
         final HashMap<String, PlayerProfile> filteredProfiles = new HashMap<>();
         final Iterator<PlayerProfile> itr = profilesMap.values().iterator();
         while (itr.hasNext()) {
             final PlayerProfile profile = itr.next();
-            if (profile.isHuman()) {
+            if (profile.getClass().equals(profileClass)) {
                 filteredProfiles.put(profile.getId(), profile);
             }
         }
         return filteredProfiles;
     }
 
+    public static HashMap<String, PlayerProfile> getHumanPlayerProfiles() {
+        return getPlayerProfiles(HumanProfile.class);
+    }
+
     public static HashMap<String, PlayerProfile> getAiPlayerProfiles() {
-        final HashMap<String, PlayerProfile> filteredProfiles = new HashMap<>();
-        final Iterator<PlayerProfile> itr = profilesMap.values().iterator();
-        while (itr.hasNext()) {
-            final PlayerProfile profile = itr.next();
-            if (profile.isArtificial()) {
-                filteredProfiles.put(profile.getId(), profile);
-            }
-        }
-        return filteredProfiles;
+        return getPlayerProfiles(AiProfile.class);
     }
 
     /**
@@ -183,9 +179,7 @@ public final class PlayerProfiles {
     }
 
     public static boolean canDeleteProfile(final PlayerProfile playerProfile) {
-        return playerProfile.isHuman()
-                ? getHumanPlayerProfiles().size() > 1
-                : getAiPlayerProfiles().size() > 1;
+        return getPlayerProfiles(playerProfile.getClass()).size() > 1;
     }
 
 }
