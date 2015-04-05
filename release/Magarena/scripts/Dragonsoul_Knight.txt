@@ -6,7 +6,7 @@ type=Creature
 subtype=Human,Knight
 cost={2}{R}
 pt=2/2
-ability=First strike
+ability=First strike;\
+        {W}{U}{B}{R}{G}: Until end of turn, SN becomes a Dragon.~SN gets +5/+3 and gains flying and trample until end of turn.
 timing=main
-requires_groovy_code
 oracle=First strike. {W}{U}{B}{R}{G}: Until end of turn, Dragonsoul Knight becomes a Dragon, gets +5/+3, and gains flying and trample.
