@@ -128,7 +128,7 @@ public class PlayerStatistics {
             gamesWon++;
         }
 
-        if (!player.getPlayerDefinition().isArtificial()) {
+        if (player.isHuman()) {
             if (game.isConceded()) {
                 gamesConceded++;
             }

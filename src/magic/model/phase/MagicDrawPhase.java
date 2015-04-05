@@ -38,7 +38,7 @@ public class MagicDrawPhase extends MagicPhase {
 
         // Determines what the purpose is for permanents that can attack,
         // block or produce mana. Do this after draw, could be a land card.
-        if (player.getPlayerDefinition().isArtificial()) {
+        if (player.isArtificial()) {
             game.addEvent(new MagicExcludeEvent(player));
         }
     }

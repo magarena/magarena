@@ -37,7 +37,7 @@ public class PlayerViewerInfo {
         graveyard=new MagicCardList(player.getGraveyard());
         exile=new MagicCardList(player.getExile());
         library=new MagicCardList(player.getLibrary());
-        isAi = player.getPlayerDefinition().isArtificial();
+        isAi = player.isArtificial();
         permanents=new ArrayList<PermanentViewerInfo>();
         for (final MagicPermanent permanent : player.getPermanents()) {
             permanents.add(new PermanentViewerInfo(game,permanent));
