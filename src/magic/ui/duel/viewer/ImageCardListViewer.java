@@ -243,7 +243,7 @@ public class ImageCardListViewer extends JPanel implements ChoiceViewer {
             //draw the overlay icons
             if (showInfo) {
                 if (cardDefinition.isLand()) {
-                    ImageDrawingUtils.drawManaInfo(g,this,cardDefinition,x1+1,y2-17);
+                    ImageDrawingUtils.drawManaInfo(g,this,cardDefinition.getManaActivations(),x1+1,y2-17);
                 } else {
                     ImageDrawingUtils.drawCostInfo(g,this,card.getCost(),x1,x2-1,y1+2);
                 }

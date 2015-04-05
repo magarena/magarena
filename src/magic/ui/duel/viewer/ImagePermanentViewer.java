@@ -296,8 +296,8 @@ public class ImagePermanentViewer extends JPanel {
                 }
 
                 // Mana symbols
-                if (linkedInfo.cardDefinition.getManaActivations().size() > 0) {
-                    ax = ImageDrawingUtils.drawManaInfo(g, this, linkedInfo.cardDefinition, ax, ay);
+                if (linkedInfo.permanent.getManaActivations().size() > 0) {
+                    ax = ImageDrawingUtils.drawManaInfo(g, this, linkedInfo.permanent.getManaActivations(), ax, ay);
                 }
 
                 // Power, toughness, damage

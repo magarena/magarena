@@ -2,7 +2,6 @@ package magic.ui.duel.viewer;
 
 import magic.ui.IconImages;
 import magic.model.MagicAbility;
-import magic.model.MagicCardDefinition;
 import magic.model.MagicColor;
 import magic.model.MagicCounterType;
 import magic.model.MagicManaCost;
@@ -19,6 +18,7 @@ import java.awt.Graphics;
 import java.awt.image.ImageObserver;
 import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.Collection;
 import java.util.List;
 import java.util.Set;
 import magic.data.MagicIcon;
@@ -44,11 +44,11 @@ public class ImageDrawingUtils {
     public static int drawManaInfo(
             final Graphics g,
             final ImageObserver observer,
-            final MagicCardDefinition cardDefinition,
+            final Collection<MagicManaActivation> acts,
             int ax,
             final int ay) {
         final Set<MagicManaType> types = new HashSet<MagicManaType>();
-        for (final MagicManaActivation manaAct : cardDefinition.getManaActivations()) {
+        for (final MagicManaActivation manaAct : acts) {
             for (final MagicManaType manaType : manaAct.getManaTypes()) {
                 if (manaType != MagicManaType.Colorless) {
                     types.add(manaType);
@@ -58,7 +58,7 @@ public class ImageDrawingUtils {
         final List<ImageIcon> icons = new ArrayList<ImageIcon>();
         if (types.size()==MagicColor.NR_COLORS) {
             icons.add(IconImages.getIcon(MagicIcon.MANA_ANY));
-        } else if (types.isEmpty() && !cardDefinition.getManaActivations().isEmpty()) {
+        } else if (types.isEmpty() && !acts.isEmpty()) {
             icons.add(IconImages.getIcon(MagicIcon.MANA_1));
         } else {
             for (final MagicColor color : MagicColor.values()) {
