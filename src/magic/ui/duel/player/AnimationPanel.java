@@ -10,6 +10,7 @@ import magic.ui.MagicStyle;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
 import org.pushingpixels.trident.Timeline;
+import org.pushingpixels.trident.Timeline.TimelineState;
 import org.pushingpixels.trident.ease.Spline;
 
 @SuppressWarnings("serial")
@@ -52,13 +53,13 @@ public class AnimationPanel extends JPanel {
     }
 
     private void stopPulsingBorderAnimation() {
-        if (pulseBorderTimeline != null && pulseBorderTimeline.getState() != Timeline.TimelineState.IDLE) {
+        if (pulseBorderTimeline != null && pulseBorderTimeline.getState() != TimelineState.IDLE) {
             pulseBorderTimeline.abort();
             setPulsingBorderOpacity(0);
         }
     }
 
-    protected void drawPulsingBorder(Graphics2D g2d) {
+    protected void drawPulsingBorder(final Graphics2D g2d) {
         if (pulsingBorderOpacity > 0) {
             g2d.setStroke(PULSE_BORDER_STROKE);
             g2d.setColor(MagicStyle.getTranslucentColor(PULSE_BORDER_COLOR, getPulsingBorderOpacity()));
