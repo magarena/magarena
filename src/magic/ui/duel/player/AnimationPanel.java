@@ -1,6 +1,7 @@
 package magic.ui.duel.player;
 
 import java.awt.BasicStroke;
+import java.awt.Color;
 import java.awt.Graphics2D;
 import java.awt.Stroke;
 import javax.swing.JPanel;
@@ -16,6 +17,7 @@ public class AnimationPanel extends JPanel {
 
     private static final int PULSE_BORDER_WIDTH = 5;
     private static final Stroke PULSE_BORDER_STROKE = new BasicStroke(PULSE_BORDER_WIDTH);
+    private static final Color PULSE_BORDER_COLOR = ThemeFactory.getInstance().getCurrentTheme().getColor(Theme.COLOR_CHOICE_BORDER);
     
     private int pulsingBorderOpacity = 0;
     private final Timeline pulseBorderTimeline = new Timeline();
@@ -59,7 +61,7 @@ public class AnimationPanel extends JPanel {
         if (pulsingBorderOpacity > 0) {
             final int offset = PULSE_BORDER_WIDTH / 2;
             g2d.setStroke(PULSE_BORDER_STROKE);
-            g2d.setColor(MagicStyle.getTranslucentColor(ThemeFactory.getInstance().getCurrentTheme().getColor(Theme.COLOR_CHOICE_BORDER), getPulsingBorderOpacity()));
+            g2d.setColor(MagicStyle.getTranslucentColor(PULSE_BORDER_COLOR, getPulsingBorderOpacity()));
             g2d.drawRect(
                     0 + offset,
                     0 + offset,
