@@ -1,10 +1,7 @@
 [
     new MagicWhenComesIntoPlayTrigger() {
         @Override
-        public MagicEvent executeTrigger(
-                final MagicGame game,
-                final MagicPermanent permanent,
-                final MagicPayedCost payedCost) {
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 permanent,
                 this,
@@ -15,8 +12,11 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
-            final int x = player.controlsPermanent(event.getPermanent()) ? 1 : 0;
-            final int amount = player.getNrOfPermanents(MagicType.Creature) - x;
+            final MagicTargetFilter<MagicPermanent> filter = new MagicOtherPermanentTargetFilter(
+                MagicTargetFilterFactory.CREATURE_YOU_CONTROL,
+                event.getPermanent()
+            );
+            final int amount = game.filterPermanents(player,filter).size();
             game.doAction(new MagicChangeLifeAction(player,amount * 2));
         }
     }
