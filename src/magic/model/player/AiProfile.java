@@ -26,7 +26,6 @@ public class AiProfile extends PlayerProfile {
     }
 
     public AiProfile() {
-        super();
         loadProperties();
     }
 

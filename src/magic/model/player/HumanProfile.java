@@ -13,7 +13,6 @@ public class HumanProfile extends PlayerProfile {
     }
 
     public HumanProfile() {
-        super();
         loadProperties();
     }
 
