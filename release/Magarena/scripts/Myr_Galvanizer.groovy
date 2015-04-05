@@ -17,14 +17,13 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicPermanent permanent = event.getPermanent();
-            final Collection<MagicPermanent> targets = game.filterPermanents(
-                    event.getPlayer(),
-                    MagicTargetFilterFactory.MYR_YOU_CONTROL);
+            final MagicTargetFilter<MagicPermanent> filter = new MagicOtherPermanentTargetFilter(
+                MagicTargetFilterFactory.MYR_YOU_CONTROL,
+                event.getPermanent()
+            );
+            final Collection<MagicPermanent> targets = game.filterPermanents(event.getPlayer(),filter);
             for (final MagicPermanent target : targets) {
-                if (target != permanent) {
-                    game.doAction(new MagicUntapAction(target));
-                }
+                game.doAction(new MagicUntapAction(target));
             }
         }
     }
