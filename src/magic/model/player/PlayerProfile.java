@@ -13,8 +13,6 @@ import magic.utility.MagicFileSystem.DataPath;
 
 public abstract class PlayerProfile {
 
-    private static String lastId = "";
-
     private Path profilePath = null;
     private String playerName = "";
     private PlayerStatistics stats;
