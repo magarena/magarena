@@ -12,7 +12,6 @@ import magic.data.DeckUtils;
 import magic.data.DuelConfig;
 import magic.exception.InvalidDeckException;
 import magic.model.MagicDeck;
-import magic.model.player.HumanProfile;
 import magic.model.player.IPlayerProfileListener;
 import magic.model.player.PlayerProfile;
 import magic.model.player.PlayerProfiles;
@@ -197,7 +196,7 @@ public class NewDuelSettingsScreen
         }
 
         private void selectNewProfile(final PlayerProfile playerProfile) {
-            if (playerProfile instanceof HumanProfile) {
+            if (playerProfile.isHuman()) {
                 ScreenController.showSelectHumanPlayerScreen(this, playerProfile);
             } else {
                 ScreenController.showSelectAiProfileScreen(this, playerProfile);
@@ -232,7 +231,7 @@ public class NewDuelSettingsScreen
         }
 
         private DuelPlayerPanel getDuelPlayerPanel(final PlayerProfile player) {
-            if (player instanceof HumanProfile) {
+            if (player.isHuman()) {
                 return playerPanels[0];
             } else {
                 return playerPanels[1];
@@ -252,7 +251,7 @@ public class NewDuelSettingsScreen
          */
         @Override
         public void PlayerProfileDeleted(PlayerProfile deletedPlayer) {
-            if (deletedPlayer instanceof HumanProfile) {
+            if (deletedPlayer.isHuman()) {
                 final PlayerProfile playerProfile = PlayerProfiles.getDefaultHumanPlayer();
                 DuelConfig.getInstance().setPlayerProfile(0, playerProfile);
                 getDuelPlayerPanel(playerProfile).setPlayer(playerProfile);
@@ -274,7 +273,7 @@ public class NewDuelSettingsScreen
         }
 
         private void saveSelectedPlayerProfile(final PlayerProfile player) {
-            if (player instanceof HumanProfile) {
+            if (player.isHuman()) {
                 DuelConfig.getInstance().setPlayerProfile(0, player);
             } else {
                 DuelConfig.getInstance().setPlayerProfile(1, player);

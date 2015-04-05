@@ -202,7 +202,7 @@ public class PlayerStatistics {
         sb.append(f.getStatLine("\nDuels won / lost:\t", duelsWon, " / ", duelsLost, " (", duelsWinPercentage, "%)"));
         sb.append(f.getStatLine("\nGames played:\t", gamesPlayed));
         sb.append(f.getStatLine("\nGames won / lost\t", gamesWon, " / ", gamesLost, " (", gamesWinPercentage, "%)"));
-        sb.append(f.getStatLine("\nGames conceded:\t", playerProfile instanceof HumanProfile ? gamesConceded : StatsFormatter.NO_VALUE));
+        sb.append(f.getStatLine("\nGames conceded:\t", playerProfile.isHuman() ? gamesConceded : StatsFormatter.NO_VALUE));
         sb.append(f.getStatLine("\nTurns played:\t", turnsPlayed));
         sb.append(f.getStatLine("\nAverage turns per game:\t", averageTurns));
         sb.append(f.getStatLine("\nMost used color:\t", mostColor.getName()));

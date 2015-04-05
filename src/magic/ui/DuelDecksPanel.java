@@ -6,7 +6,6 @@ import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
 import magic.model.MagicDuel;
 import magic.model.MagicPlayerDefinition;
-import magic.model.player.HumanProfile;
 import magic.model.player.PlayerProfile;
 import magic.ui.duel.viewer.CardViewer;
 import magic.ui.duel.viewer.DeckDescriptionViewer;
@@ -266,7 +265,7 @@ public class DuelDecksPanel extends TexturedPanel {
         }
 
         private int getScore(final PlayerProfile profile) {
-            if (profile instanceof HumanProfile) {
+            if (profile.isHuman()) {
                 return duel.getGamesWon();
             } else {
                 return duel.getGamesPlayed() - duel.getGamesWon();
