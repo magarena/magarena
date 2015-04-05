@@ -7,7 +7,6 @@ import magic.model.MagicPowerToughness;
 import magic.model.target.MagicTargetFilterFactory;
 import magic.model.MagicSubType;
 import magic.model.MagicAbility;
-import magic.model.MagicManaType;
 import magic.model.event.*;
 
 import java.util.Set;

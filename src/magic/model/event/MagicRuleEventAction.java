@@ -43,7 +43,6 @@ import magic.model.target.*;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Set;
-import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Collection;
 import java.util.regex.Matcher;
