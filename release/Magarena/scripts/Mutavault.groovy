@@ -7,9 +7,7 @@ def PT = new MagicStatic(MagicLayer.SetPT, MagicStatic.UntilEOT) {
 
 def ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
     @Override
-    public void modSubTypeFlags(
-            final MagicPermanent permanent,
-            final Set<MagicSubType> flags) {
+    public void modSubTypeFlags(final MagicPermanent permanent, final Set<MagicSubType> flags) {
         flags.addAll(MagicSubType.ALL_CREATURES);
     }
     @Override
