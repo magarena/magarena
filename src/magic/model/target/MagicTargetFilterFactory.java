@@ -6,7 +6,6 @@ import magic.model.MagicCardDefinition;
 import magic.model.MagicColor;
 import magic.model.MagicCounterType;
 import magic.model.MagicGame;
-import magic.model.MagicLocationType;
 import magic.model.MagicPermanent;
 import magic.model.MagicPermanentState;
 import magic.model.MagicPlayer;
@@ -1207,6 +1206,13 @@ public class MagicTargetFilterFactory {
         }
     };
     
+    public static final MagicPermanentFilterImpl CREATURE_BEEN_DAMAGED = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+            return target.isCreature() && 
+                   target.hasState(MagicPermanentState.WasDealtDamage);
+        }
+    };
+    
     public static final MagicCardFilterImpl CREATURE_WITH_DEATHTOUCH_HEXPROOF_REACH_OR_TRAMPLE_FROM_LIBRARY = new MagicCardFilterImpl() {
         public boolean accept(MagicGame game, MagicPlayer player, MagicCard target) {
             return target.hasType(MagicType.Creature) && (
@@ -2373,6 +2379,7 @@ public class MagicTargetFilterFactory {
         single.put("multicolored creature", MULTICOLORED_CREATURE);
         single.put("unblocked creature", UNBLOCKED_CREATURE);
         single.put("Cleric or Wizard creature", CLERIC_OR_WIZARD_CREATURE);
+        single.put("creature that was dealt damage this turn", CREATURE_BEEN_DAMAGED);
 
         // <color|type|subtype> you control
         single.put("basic land you control", BASIC_LAND_YOU_CONTROL);
