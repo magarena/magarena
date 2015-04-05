@@ -744,6 +744,8 @@ public class MagicTargetFilterFactory {
 
     public static final MagicPermanentFilterImpl DRAGON_YOU_CONTROL = MagicTargetFilterFactory.permanent(MagicSubType.Dragon, Control.You);
     
+    public static final MagicPermanentFilterImpl DRAGON_CREATURE_YOU_CONTROL = MagicTargetFilterFactory.creature(MagicSubType.Dragon, Control.You);
+    
     public static final MagicPermanentFilterImpl SOLDIER_OR_WARRIOR_YOU_CONTROL = MagicTargetFilterFactory.permanentOr(MagicSubType.Soldier, MagicSubType.Warrior, Control.You);
     
     public static final MagicPermanentFilterImpl FOREST_OR_TREEFOLK_YOU_CONTROL = MagicTargetFilterFactory.permanentOr(MagicSubType.Forest, MagicSubType.Treefolk, Control.You);
