@@ -1,21 +1,19 @@
 [
-    new MagicWhenAttacksTrigger() {
+    new MagicWhenSelfAttacksTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
-            return (permanent==creature) ?
-                new MagicEvent(
-                    permanent,
-                    new MagicMayChoice(
-                        new MagicPayManaCostChoice(MagicManaCost.create("{X}{R}")),
-                        MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER
-                    ),
-                    new MagicDamageTargetPicker(
-                        permanent.getController().getMaximumX(game,MagicManaCost.create("{X}{R}"))
-                    ),
-                    this,
-                    "PN may\$ pay {X}{R}\$. If paid, SN deals X damage to target creature or player\$."
-                ):
-                MagicEvent.NONE;
+            return new MagicEvent(
+                permanent,
+                new MagicMayChoice(
+                    new MagicPayManaCostChoice(MagicManaCost.create("{X}{R}")),
+                    MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER
+                ),
+                new MagicDamageTargetPicker(
+                    permanent.getController().getMaximumX(game,MagicManaCost.create("{X}{R}"))
+                ),
+                this,
+                "PN may\$ pay {X}{R}\$. If paid, SN deals X damage to target creature or player\$."
+            );
         }
 
         @Override
