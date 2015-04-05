@@ -9,15 +9,8 @@ import magic.model.phase.MagicMainPhase;
 
 class TestExileToken extends TestGameBuilder {
     public MagicGame getGame() {
-        final MagicDuel tournament=new MagicDuel();
-
-        final MagicDeckProfile profile=new MagicDeckProfile("bgruw");
-        final MagicPlayerDefinition player1=new MagicPlayerDefinition("Player",false,profile);
-        final MagicPlayerDefinition player2=new MagicPlayerDefinition("Computer",true,profile);
-        tournament.setPlayers(new MagicPlayerDefinition[]{player1,player2});
-        tournament.setStartPlayer(0);
-
-        final MagicGame game=tournament.nextGame();
+        final MagicDuel duel=createDuel();
+        final MagicGame game=duel.nextGame();
         game.setPhase(MagicMainPhase.getFirstInstance());
         final MagicPlayer player=game.getPlayer(0);
         final MagicPlayer opponent=game.getPlayer(1);

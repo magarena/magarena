@@ -14,14 +14,7 @@ class TestExplore extends TestGameBuilder {
      * Fixed by making the protection check use getColorFlags in addition to getColoredTypeg
      */
     public MagicGame getGame() {
-        final MagicDuel duel=new MagicDuel();
-
-        final MagicDeckProfile profile=new MagicDeckProfile("bgruw");
-        final MagicPlayerDefinition player1=new MagicPlayerDefinition("Player",false,profile);
-        final MagicPlayerDefinition player2=new MagicPlayerDefinition("Computer",true,profile);
-        duel.setPlayers(new MagicPlayerDefinition[]{player1,player2});
-        duel.setStartPlayer(0);
-
+        final MagicDuel duel=createDuel();
         final MagicGame game=duel.nextGame();
         game.setPhase(MagicMainPhase.getFirstInstance());
         final MagicPlayer player=game.getPlayer(0);

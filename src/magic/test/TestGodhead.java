@@ -9,14 +9,7 @@ import magic.model.phase.MagicMainPhase;
 
 class TestGodhead extends TestGameBuilder {
     public MagicGame getGame() {
-        final MagicDuel duel=new MagicDuel();
-
-        final MagicDeckProfile profile=new MagicDeckProfile("bgruw");
-        final MagicPlayerDefinition player1=new MagicPlayerDefinition("Player",false,profile);
-        final MagicPlayerDefinition player2=new MagicPlayerDefinition("Computer",true,profile);
-        duel.setPlayers(new MagicPlayerDefinition[]{player1,player2});
-        duel.setStartPlayer(0);
-
+        final MagicDuel duel=createDuel();
         final MagicGame game=duel.nextGame();
         game.setPhase(MagicMainPhase.getFirstInstance());
         final MagicPlayer player=game.getPlayer(0);

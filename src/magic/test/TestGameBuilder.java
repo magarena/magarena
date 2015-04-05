@@ -8,10 +8,16 @@ import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPermanentState;
 import magic.model.MagicPlayer;
+import magic.model.MagicPlayerDefinition;
 import magic.model.MagicPayedCost;
+import magic.model.MagicDuel;
+import magic.model.MagicDeckProfile;
+import magic.model.player.AiPlayer;
+import magic.model.player.HumanPlayer;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.action.MagicPlayTokenAction;
 import magic.model.action.MagicPlayCardFromStackAction;
+import magic.ai.MagicAIImpl;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
@@ -99,5 +105,26 @@ public abstract class TestGameBuilder {
             throw new RuntimeException(ex);
         }
         return game;
+    }
+
+    public static MagicDuel createDuel() {
+        final MagicDuel duel=new MagicDuel();
+ 
+        final MagicDeckProfile profile=new MagicDeckProfile("bgruw");
+
+        final HumanPlayer hp = new HumanPlayer();
+        hp.setPlayerName("Player");
+        final MagicPlayerDefinition player1=new MagicPlayerDefinition(hp,profile);
+
+        final AiPlayer ap = new AiPlayer();
+        ap.setPlayerName("Mini Max");
+        ap.setAiType(MagicAIImpl.MMABFast);
+        ap.setAiLevel(6);
+
+        final MagicPlayerDefinition player2=new MagicPlayerDefinition(ap,profile);
+
+        duel.setPlayers(new MagicPlayerDefinition[]{player1,player2});
+        duel.setStartPlayer(0);
+        return duel;
     }
 }

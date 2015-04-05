@@ -34,15 +34,6 @@ public class MagicPlayerDefinition {
     }
 
     // CTR
-    public MagicPlayerDefinition(final String name, final boolean artificial, final MagicDeckProfile aDeckProfile) {
-        playerName = name;
-        isAi = artificial;
-        deckProfile = aDeckProfile;
-        avatarIndex = getNextAvatarIndex();
-        playerProfile = artificial ? PlayerProfiles.getDefaultAiPlayer() : PlayerProfiles.getDefaultHumanPlayer();
-    }
-
-    // CTR
     public MagicPlayerDefinition(final PlayerProfile aPlayerProfile, final MagicDeckProfile aDeckProfile) {
         playerName = aPlayerProfile.getPlayerName();
         isAi = aPlayerProfile.isArtificial();

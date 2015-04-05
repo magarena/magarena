@@ -9,15 +9,7 @@ import magic.model.phase.MagicMainPhase;
 
 class TestAILandSkip extends TestGameBuilder {
     public MagicGame getGame() {
-    final MagicDuel duel = new MagicDuel();
-
-    final MagicDeckProfile profile1 = new MagicDeckProfile("bu");
-    final MagicDeckProfile profile2 = new MagicDeckProfile("br");
-    final MagicPlayerDefinition player1 = new MagicPlayerDefinition("Tyreal", false, profile1);
-    final MagicPlayerDefinition player2 = new MagicPlayerDefinition("Computer", true, profile2);
-    duel.setPlayers(new MagicPlayerDefinition[] { player1, player2 });
-    duel.setStartPlayer(2);
-
+    final MagicDuel duel = createDuel();
     final MagicGame game = duel.nextGame();
     game.setPhase(MagicMainPhase.getFirstInstance());
     final MagicPlayer player = game.getPlayer(0);
