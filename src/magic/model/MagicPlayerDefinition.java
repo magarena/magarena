@@ -12,11 +12,9 @@ public class MagicPlayerDefinition {
     private static int nextAvatarIndex = 1;
     private static int MAX_AVATAR_INDEX = 10;
 
-    private static final String NAME="name";
     private static final String ARTIFICIAL="artificial";
     private static final String COLORS="colors";
 
-    private String playerName;
     private boolean isAi;
     private MagicDeckProfile deckProfile;
     private final MagicDeck deck = new MagicDeck();
@@ -25,7 +23,6 @@ public class MagicPlayerDefinition {
 
     // CTR
     public MagicPlayerDefinition(final PlayerProfile aPlayerProfile, final MagicDeckProfile aDeckProfile) {
-        playerName = aPlayerProfile.getPlayerName();
         isAi = aPlayerProfile.isArtificial();
         deckProfile = aDeckProfile;
         avatarIndex = getNextAvatarIndex();
@@ -38,7 +35,7 @@ public class MagicPlayerDefinition {
     }
     
     public String getName() {
-        return playerName;
+        return playerProfile.getPlayerName();
     }
 
     public boolean isArtificial() {
@@ -88,8 +85,9 @@ public class MagicPlayerDefinition {
     }
 
     void load(final Properties properties,final String prefix) {
-        playerName=properties.getProperty(prefix+NAME,"");
+
         isAi=Boolean.parseBoolean(properties.getProperty(prefix+ARTIFICIAL,"true"));
+
         final String colors=properties.getProperty(prefix+COLORS,"");
         deckProfile=new MagicDeckProfile(colors);
         deck.clear();
@@ -106,9 +104,7 @@ public class MagicPlayerDefinition {
     }
 
     void save(final Properties properties,final String prefix) {
-        properties.setProperty(prefix+NAME,playerName);
         properties.setProperty(prefix+ARTIFICIAL,Boolean.toString(isAi));
-
         int index=1;
         for (final MagicCardDefinition cardDefinition : deck) {
             properties.setProperty(getDeckPrefix(prefix,index++),cardDefinition.getFullName());
