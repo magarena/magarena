@@ -1,14 +1,12 @@
 [
-    new MagicWhenAttacksTrigger() {
+    new MagicWhenSelfAttacksTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
-            return (permanent==creature) ?
-                new MagicEvent(
-                    permanent,
-                    this,
-                    "Destroy all creatures other than SN."
-                ) :
-                MagicEvent.NONE;
+            return new MagicEvent(
+                permanent,
+                this,
+                "Destroy all creatures other than SN."
+            );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
