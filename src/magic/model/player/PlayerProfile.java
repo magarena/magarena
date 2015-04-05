@@ -105,7 +105,7 @@ public abstract class PlayerProfile {
         stats = new PlayerStatistics(this);
     }
 
-    public static String getNewPlayerProfileId() {
+    private static String getNewPlayerProfileId() {
         return UUID.randomUUID().toString();
     }
 
