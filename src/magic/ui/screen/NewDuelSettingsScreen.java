@@ -231,11 +231,7 @@ public class NewDuelSettingsScreen
         }
 
         private DuelPlayerPanel getDuelPlayerPanel(final PlayerProfile player) {
-            if (player.isHuman()) {
-                return playerPanels[0];
-            } else {
-                return playerPanels[1];
-            }
+            return playerPanels[player.isHuman() ? 0 : 1];
         }
 
         /* (non-Javadoc)
