@@ -7,7 +7,6 @@ import java.nio.file.Path;
 import java.util.Properties;
 import java.util.Map;
 import java.util.UUID;
-import magic.ai.MagicAIImpl;
 import magic.data.FileIO;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicFileSystem.DataPath;
@@ -24,10 +23,13 @@ public abstract class PlayerProfile {
     abstract public void save();
     abstract protected String getPlayerType();
     abstract public Map<String, PlayerProfile> getSimilarPlayerProfiles();
-    abstract public boolean isArtificial();
+    
+    public boolean isArtificial() {
+        return this instanceof AiPlayer;
+    }
     
     public boolean isHuman() {
-        return isArtificial() == false;
+        return this instanceof HumanPlayer;
     }
 
     protected PlayerProfile() {

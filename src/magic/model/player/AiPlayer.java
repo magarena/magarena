@@ -90,11 +90,6 @@ public class AiPlayer extends PlayerProfile {
     }
     
     @Override
-    public boolean isArtificial() {
-        return true;
-    }
-    
-    @Override
     public String getPlayerLabel() {
         return getPlayerName() + ", level " + getAiLevel() + " AI (" + getAiType().name() + ")";
     }

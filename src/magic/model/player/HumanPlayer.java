@@ -40,8 +40,4 @@ public class HumanPlayer extends PlayerProfile {
         return PlayerProfiles.getHumanPlayerProfiles();
     }
     
-    @Override
-    public boolean isArtificial() {
-        return false;
-    }
 }
