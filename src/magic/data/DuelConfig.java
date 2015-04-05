@@ -6,7 +6,7 @@ import java.util.Properties;
 import magic.ai.MagicAI;
 import magic.ai.MagicAIImpl;
 import magic.model.MagicDeckProfile;
-import magic.model.player.AiPlayer;
+import magic.model.player.AiProfile;
 import magic.model.player.PlayerProfile;
 import magic.model.player.PlayerProfiles;
 import magic.utility.MagicFileSystem;

@@ -9,7 +9,7 @@ import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.model.MagicPlayerDefinition;
 import magic.model.phase.MagicMainPhase;
-import magic.model.player.AiPlayer;
+import magic.model.player.AiProfile;
 import magic.model.player.HumanPlayer;
 import magic.model.player.PlayerProfile;
 import magic.test.TestGameBuilder;
@@ -38,7 +38,7 @@ public final class GameLoader {
         PlayerProfile pp1;
         if (gameState.getPlayer(0).isAi()) {
             final MagicAIImpl ai = MagicAIImpl.valueOf(gameState.getPlayer(0).getAiType());
-            final AiPlayer ap = new AiPlayer();
+            final AiProfile ap = new AiProfile();
             ap.setPlayerName(gameState.getPlayer(0).getName());
             ap.setAiType(ai);
             ap.setAiLevel(gameState.getDifficulty());
@@ -55,7 +55,7 @@ public final class GameLoader {
         PlayerProfile pp2;
         if (gameState.getPlayer(1).isAi()) {
             final MagicAIImpl ai = MagicAIImpl.valueOf(gameState.getPlayer(1).getAiType());
-            final AiPlayer ap = new AiPlayer();
+            final AiProfile ap = new AiProfile();
             ap.setPlayerName(gameState.getPlayer(1).getName());
             ap.setAiType(ai);
             ap.setAiLevel(gameState.getDifficulty());

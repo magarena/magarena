@@ -13,7 +13,7 @@ import magic.model.event.MagicSourceManaActivation;
 import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicPermanentStatic;
 import magic.model.mstatic.MagicStatic;
-import magic.model.player.AiPlayer;
+import magic.model.player.AiProfile;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 import magic.model.target.MagicTargetType;
@@ -807,7 +807,7 @@ public class MagicPlayer extends MagicObjectImpl implements MagicTarget, MagicMa
         return playerDefinition.getPlayerProfile().isArtificial();
     }
 
-    public AiPlayer getAiProfile() {
-        return (AiPlayer)playerDefinition.getPlayerProfile();
+    public AiProfile getAiProfile() {
+        return (AiProfile)playerDefinition.getPlayerProfile();
     }
 }

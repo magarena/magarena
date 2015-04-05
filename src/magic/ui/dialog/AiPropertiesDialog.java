@@ -1,7 +1,7 @@
 package magic.ui.dialog;
 
 import magic.ai.MagicAIImpl;
-import magic.model.player.AiPlayer;
+import magic.model.player.AiProfile;
 import magic.model.player.PlayerProfile;
 import magic.ui.MagicFrame;
 import magic.ui.widget.SliderPanel;
@@ -25,14 +25,14 @@ import java.awt.event.ActionEvent;
 @SuppressWarnings("serial")
 public class AiPropertiesDialog extends JDialog {
 
-    private AiPlayer playerProfile;
+    private AiProfile playerProfile;
     private final JTextField playerNameTextField;
     private final SliderPanel aiLevelSliderPanel;
     private final SliderPanel lifeSliderPanel;
     private final JComboBox<MagicAIImpl> aiComboBox;
 
  // CTR : edit an existing profile.
-    public AiPropertiesDialog(final MagicFrame frame, final AiPlayer profile) {
+    public AiPropertiesDialog(final MagicFrame frame, final AiProfile profile) {
 
         super(frame, true);
         this.setTitle("AI Profile");
@@ -41,7 +41,7 @@ public class AiPropertiesDialog extends JDialog {
         this.setResizable(false);
         this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 
-        this.playerProfile = profile == null ? new AiPlayer() : profile;
+        this.playerProfile = profile == null ? new AiProfile() : profile;
         playerNameTextField = new JTextField(playerProfile.getPlayerName());
         lifeSliderPanel = new SliderPanel("Extra Life", null, 0, 10, 1, playerProfile.getExtraLife());
         aiLevelSliderPanel = new SliderPanel("AI Level", null, 1, 8, 1, playerProfile.getAiLevel());

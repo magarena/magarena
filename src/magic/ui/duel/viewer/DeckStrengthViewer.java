@@ -8,7 +8,7 @@ import magic.ui.IconImages;
 import magic.model.MagicDuel;
 import magic.model.MagicGame;
 import magic.model.IGameController;
-import magic.model.player.AiPlayer;
+import magic.model.player.AiProfile;
 import magic.model.MagicPlayerDefinition;
 import magic.headless.HeadlessGameController;
 import magic.ui.theme.ThemeFactory;
@@ -208,7 +208,7 @@ public class DeckStrengthViewer extends JPanel implements ActionListener {
 
             final MagicPlayerDefinition[] players = new MagicPlayerDefinition[2];
             for (int i = 0; i < 2; i++) {
-                final AiPlayer pp = new AiPlayer();
+                final AiProfile pp = new AiProfile();
                 pp.setPlayerName(MagicAIImpl.DECKSTR_AIS[i].toString());
                 pp.setAiType(MagicAIImpl.DECKSTR_AIS[i]);
                 pp.setAiLevel(generalConfig.getStrengthDifficulty());

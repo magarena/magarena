@@ -9,7 +9,7 @@ import java.util.Set;
 import javax.swing.JLabel;
 import magic.data.GeneralConfig;
 import magic.model.MagicPlayerZone;
-import magic.model.player.AiPlayer;
+import magic.model.player.AiProfile;
 import magic.ui.SwingGameController;
 import magic.ui.duel.viewer.ChoiceViewer;
 import magic.ui.duel.viewer.PlayerViewerInfo;

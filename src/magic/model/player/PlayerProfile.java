@@ -23,7 +23,7 @@ public abstract class PlayerProfile {
     abstract public Map<String, PlayerProfile> getSimilarPlayerProfiles();
     
     public boolean isArtificial() {
-        return this instanceof AiPlayer;
+        return this instanceof AiProfile;
     }
     
     public boolean isHuman() {
@@ -111,7 +111,7 @@ public abstract class PlayerProfile {
 
     public static PlayerProfile getAiPlayer(final String playerId) {
         if (playerId != null && PlayerProfiles.getPlayerProfile(playerId) != null) {
-            return new AiPlayer(playerId);
+            return new AiProfile(playerId);
         } else {
             return PlayerProfiles.getDefaultAiPlayer();
         }

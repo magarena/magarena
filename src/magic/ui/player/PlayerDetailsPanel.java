@@ -1,6 +1,6 @@
 package magic.ui.player;
 
-import magic.model.player.AiPlayer;
+import magic.model.player.AiProfile;
 import magic.model.player.PlayerProfile;
 import magic.ui.widget.FontsAndBorders;
 import net.miginfocom.swing.MigLayout;

@@ -12,7 +12,7 @@ import magic.model.MagicGame;
 import magic.model.MagicRandom;
 import magic.model.MagicDeckProfile;
 import magic.model.MagicPlayerDefinition;
-import magic.model.player.AiPlayer;
+import magic.model.player.AiProfile;
 import magic.data.DeckGenerators;
 import magic.exception.InvalidDeckException;
 import magic.exception.handler.ConsoleExceptionHandler;
@@ -138,7 +138,7 @@ public class DeckStrCal {
         // Create players 
         final MagicPlayerDefinition[] players = new MagicPlayerDefinition[2];
         for (int i = 0; i < 2; i++) {
-            final AiPlayer pp = new AiPlayer();
+            final AiProfile pp = new AiProfile();
             pp.setPlayerName(ai[i].toString());
             pp.setAiType(ai[i]);
             pp.setAiLevel(str[i]);

@@ -1,11 +1,10 @@
 package magic.model.player;
 
+import java.util.Map;
+import java.util.Properties;
 import magic.ai.MagicAIImpl;
 
-import java.util.Properties;
-import java.util.Map;
-
-public class AiPlayer extends PlayerProfile {
+public class AiProfile extends PlayerProfile {
 
     private static final String PLAYER_TYPE = "ai";
 
@@ -21,12 +20,12 @@ public class AiPlayer extends PlayerProfile {
     private int aiLevel = DEFAULT_AI_LEVEL;
     private MagicAIImpl aiType = DEFAULT_AI_TYPE;
 
-    public AiPlayer(final String profileId) {
+    public AiProfile(final String profileId) {
         super(profileId);
         loadProperties();
     }
 
-    public AiPlayer() {
+    public AiProfile() {
         super();
         loadProperties();
     }

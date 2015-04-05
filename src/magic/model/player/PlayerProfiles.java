@@ -41,7 +41,7 @@ public final class PlayerProfiles {
         // AIs
         for (Path path : getProfilePaths("ai")) {
             final String profileId = path.getFileName().toString();
-            final AiPlayer player = new AiPlayer(profileId);
+            final AiProfile player = new AiProfile(profileId);
             profilesMap.put(profileId, player);
         }
     }
@@ -98,21 +98,21 @@ public final class PlayerProfiles {
 
     private static void createDefaultAiPlayerProfiles() throws IOException {
         // Les Vegas
-        AiPlayer profile = new AiPlayer();
+        AiProfile profile = new AiProfile();
         profile.setPlayerName("Les Vegas");
         profile.setAiType(MagicAIImpl.VEGAS);
         profile.setAiLevel(6);
         profile.save();
         setPlayerAvatar(profile, PlayerProfiles.AVATAR_LesVegas);
         // Mini Max
-        profile = new AiPlayer();
+        profile = new AiProfile();
         profile.setPlayerName("Mini Max");
         profile.setAiType(MagicAIImpl.MMAB);
         profile.setAiLevel(6);
         profile.save();
         setPlayerAvatar(profile, PlayerProfiles.AVATAR_MiniMax);
         // Monty Carlo
-        profile = new AiPlayer();
+        profile = new AiProfile();
         profile.setPlayerName("Monty Carlo");
         profile.setAiType(MagicAIImpl.MCTS);
         profile.setAiLevel(6);

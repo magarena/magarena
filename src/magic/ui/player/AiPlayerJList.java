@@ -1,6 +1,6 @@
 package magic.ui.player;
 
-import magic.model.player.AiPlayer;
+import magic.model.player.AiProfile;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.MagicStyle;
 import net.miginfocom.swing.MigLayout;
@@ -19,17 +19,17 @@ import magic.ui.IconImages;
 
 @SuppressWarnings("serial")
 public class AiPlayerJList
-    extends JList<AiPlayer> {
+    extends JList<AiProfile> {
 
     public AiPlayerJList() {
         setOpaque(false);
         setCellRenderer(new AiPlayerListRenderer());
     }
 
-    private class AiPlayerListRenderer extends JLabel implements ListCellRenderer<AiPlayer> {
+    private class AiPlayerListRenderer extends JLabel implements ListCellRenderer<AiProfile> {
 
         private Color foreColor;
-        private AiPlayer profile;
+        private AiProfile profile;
 
         public AiPlayerListRenderer() {
             setOpaque(false);
@@ -37,8 +37,8 @@ public class AiPlayerJList
 
         @Override
         public Component getListCellRendererComponent(
-                JList<? extends AiPlayer> list,
-                AiPlayer profile,
+                JList<? extends AiProfile> list,
+                AiProfile profile,
                 int index,
                 boolean isSelected,
                 boolean cellHasFocus) {

@@ -12,7 +12,7 @@ import magic.model.MagicPlayerDefinition;
 import magic.model.MagicPayedCost;
 import magic.model.MagicDuel;
 import magic.model.MagicDeckProfile;
-import magic.model.player.AiPlayer;
+import magic.model.player.AiProfile;
 import magic.model.player.HumanPlayer;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.action.MagicPlayTokenAction;
@@ -116,7 +116,7 @@ public abstract class TestGameBuilder {
         hp.setPlayerName("Player");
         final MagicPlayerDefinition player1=new MagicPlayerDefinition(hp,profile);
 
-        final AiPlayer ap = new AiPlayer();
+        final AiProfile ap = new AiProfile();
         ap.setPlayerName("Mini Max");
         ap.setAiType(MagicAIImpl.MMABFast);
         ap.setAiLevel(6);

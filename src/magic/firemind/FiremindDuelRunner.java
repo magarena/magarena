@@ -24,7 +24,7 @@ import magic.model.MagicGame;
 import magic.model.MagicGameLog;
 import magic.model.MagicPlayerDefinition;
 import magic.model.MagicRandom;
-import magic.model.player.AiPlayer;
+import magic.model.player.AiProfile;
 
 public class FiremindDuelRunner {
     private static int games;
@@ -105,12 +105,12 @@ public class FiremindDuelRunner {
         // Set difficulty.
         final MagicDuel testDuel = new MagicDuel(config);
 
-        final AiPlayer pp1 = new AiPlayer();
+        final AiProfile pp1 = new AiProfile();
         pp1.setPlayerName("Player1");
         pp1.setAiType(ai1);
         pp1.setAiLevel(str1);
         
-        final AiPlayer pp2 = new AiPlayer();
+        final AiProfile pp2 = new AiProfile();
         pp2.setPlayerName("Player2");
         pp2.setAiType(ai2);
         pp2.setAiLevel(str2);

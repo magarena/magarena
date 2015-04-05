@@ -1,7 +1,7 @@
 package magic.ui.screen;
 
 import magic.ai.MagicAIImpl;
-import magic.model.player.AiPlayer;
+import magic.model.player.AiProfile;
 import magic.model.player.IPlayerProfileListener;
 import magic.model.player.PlayerProfile;
 import magic.model.player.PlayerProfiles;
@@ -33,9 +33,9 @@ public class SelectAiPlayerScreen
         refreshProfilesJList(playerProfile);
     }
 
-    private AiPlayer[] getPlayerProfilesArray() {
+    private AiProfile[] getPlayerProfilesArray() {
         final List<PlayerProfile> sortedPlayersList = getSortedPlayersList();
-        return sortedPlayersList.toArray(new AiPlayer[sortedPlayersList.size()]);
+        return sortedPlayersList.toArray(new AiProfile[sortedPlayersList.size()]);
     }
 
     /* (non-Javadoc)
@@ -44,19 +44,19 @@ public class SelectAiPlayerScreen
     @Override
     protected void createDefaultPlayerProfiles() throws IOException {
         // Les Vegas
-        AiPlayer profile = new AiPlayer();
+        AiProfile profile = new AiProfile();
         profile.setPlayerName("Les Vegas");
         profile.setAiType(MagicAIImpl.VEGAS);
         profile.setAiLevel(6);
         profile.save();
         // Mini Max
-        profile = new AiPlayer();
+        profile = new AiProfile();
         profile.setPlayerName("Mini Max");
         profile.setAiType(MagicAIImpl.MMAB);
         profile.setAiLevel(6);
         profile.save();
         // Monty Carlo
-        profile = new AiPlayer();
+        profile = new AiProfile();
         profile.setPlayerName("Monty Carlo");
         profile.setAiType(MagicAIImpl.MCTS);
         profile.setAiLevel(6);
@@ -116,7 +116,7 @@ public class SelectAiPlayerScreen
     private class EditPlayerAction extends AbstractAction {
         @Override
         public void actionPerformed(ActionEvent e) {
-            final AiPlayer profile = (AiPlayer)getSelectedPlayer();
+            final AiProfile profile = (AiProfile)getSelectedPlayer();
             new AiPropertiesDialog(getFrame(), profile);
             getJList().repaint();
             notifyPlayerUpdated(profile);
