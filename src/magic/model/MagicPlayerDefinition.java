@@ -9,28 +9,18 @@ import magic.model.player.PlayerProfile;
 
 public class MagicPlayerDefinition {
 
-    private static int nextAvatarIndex = 1;
-    private static int MAX_AVATAR_INDEX = 10;
-
     private static final String COLORS="colors";
 
     private MagicDeckProfile deckProfile;
     private final MagicDeck deck = new MagicDeck();
-    private int avatarIndex;
     private final PlayerProfile playerProfile;
 
     // CTR
     public MagicPlayerDefinition(final PlayerProfile aPlayerProfile, final MagicDeckProfile aDeckProfile) {
         playerProfile = aPlayerProfile;
         deckProfile = aDeckProfile;
-        avatarIndex = getNextAvatarIndex();
     }
 
-    private static int getNextAvatarIndex() {
-        nextAvatarIndex =  nextAvatarIndex > MAX_AVATAR_INDEX ? 1 : nextAvatarIndex + 1;
-        return nextAvatarIndex;
-    }
-    
     public String getName() {
         return playerProfile.getPlayerName();
     }
@@ -107,10 +97,6 @@ public class MagicPlayerDefinition {
 
     public PlayerProfile getPlayerProfile() {
         return playerProfile;
-    }
-
-    public int getAvatarIndex() {
-        return avatarIndex;
     }
 
 }
