@@ -21,23 +21,31 @@ public abstract class PlayerProfile {
     abstract public void save();
     abstract protected String getPlayerType();
     abstract public Map<String, PlayerProfile> getSimilarPlayerProfiles();
-    
-    public boolean isArtificial() {
-        return this instanceof AiProfile;
-    }
-    
-    public boolean isHuman() {
-        return this instanceof HumanProfile;
-    }
 
+    /**
+     * Creates a new player profile with a unique ID.
+     * <p>
+     * Needs to be saved using subclass {@code save()} method to make permanent.
+     */
     protected PlayerProfile() {
         setProfilePath(PlayerProfile.getNewPlayerProfileId());
         loadStats();
     }
 
+    /**
+     * Loads an existing saved player profile.
+     */
     protected PlayerProfile(final String profileId) {
         setProfilePath(profileId);
         loadStats();
+    }
+
+    public boolean isArtificial() {
+        return this instanceof AiProfile;
+    }
+
+    public boolean isHuman() {
+        return this instanceof HumanProfile;
     }
 
     public String getId() {
