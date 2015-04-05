@@ -182,6 +182,10 @@ public final class PlayerProfiles {
         return profilesPath.resolve(playerProfile.getPlayerType()).resolve(playerProfile.getId());
     }
 
-
+    public static boolean canDeleteProfile(final PlayerProfile playerProfile) {
+        return playerProfile.isHuman()
+                ? getHumanPlayerProfiles().size() > 1
+                : getAiPlayerProfiles().size() > 1;
+    }
 
 }

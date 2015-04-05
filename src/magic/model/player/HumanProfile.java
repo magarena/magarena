@@ -1,7 +1,6 @@
 package magic.model.player;
 
 import java.util.Properties;
-import java.util.Map;
 
 public class HumanProfile extends PlayerProfile {
 
@@ -30,10 +29,5 @@ public class HumanProfile extends PlayerProfile {
     protected String getPlayerType() {
         return PLAYER_TYPE;
     }
-    
-    @Override
-    public Map<String, PlayerProfile> getSimilarPlayerProfiles() {
-        return PlayerProfiles.getHumanPlayerProfiles();
-    }
-    
+        
 }

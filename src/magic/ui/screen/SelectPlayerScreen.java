@@ -23,8 +23,6 @@ import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.KeyStroke;
 import javax.swing.SwingUtilities;
-import magic.model.player.AiProfile;
-import magic.model.player.HumanProfile;
 import magic.model.player.IPlayerProfileListener;
 import magic.model.player.PlayerProfile;
 import magic.model.player.PlayerProfiles;
@@ -155,21 +153,15 @@ public abstract class SelectPlayerScreen
 
         private void deleteSelectedPlayer() {
             final PlayerProfile condemnedPlayer = getSelectedPlayer();
-            if (isDeletePlayerValid(condemnedPlayer)) {
+            if (PlayerProfiles.canDeleteProfile(condemnedPlayer)) {
                 if (isDeletePlayerConfirmedByUser(condemnedPlayer)) {
                     PlayerProfiles.deletePlayer(condemnedPlayer);
                     refreshProfilesJList();
                     notifyPlayerDeleted(condemnedPlayer);
                 }
-            }
-        }
-
-        private boolean isDeletePlayerValid(final PlayerProfile playerProfile) {
-            boolean isDeletePlayerValid = playerProfile.getSimilarPlayerProfiles().size() > 1;
-            if (!isDeletePlayerValid) {
+            } else {
                 ScreenController.showWarningMessage("There must be at least one player defined.");
             }
-            return isDeletePlayerValid;
         }
 
         private boolean isDeletePlayerConfirmedByUser(final PlayerProfile profile) {

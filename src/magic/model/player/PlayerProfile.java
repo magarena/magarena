@@ -5,7 +5,6 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.Properties;
-import java.util.Map;
 import java.util.UUID;
 import magic.data.FileIO;
 import magic.utility.MagicFileSystem;
@@ -20,7 +19,6 @@ public abstract class PlayerProfile {
     abstract protected void loadProperties();
     abstract public void save();
     abstract protected String getPlayerType();
-    abstract public Map<String, PlayerProfile> getSimilarPlayerProfiles();
 
     /**
      * Loads an existing saved player profile.

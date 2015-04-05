@@ -1,6 +1,5 @@
 package magic.model.player;
 
-import java.util.Map;
 import java.util.Properties;
 import magic.ai.MagicAIImpl;
 
@@ -69,11 +68,6 @@ public class AiProfile extends PlayerProfile {
         return PLAYER_TYPE;
     }
 
-    @Override
-    public Map<String, PlayerProfile> getSimilarPlayerProfiles() {
-        return PlayerProfiles.getAiPlayerProfiles();
-    }
-    
     @Override
     public String getPlayerTypeLabel() {
         return "AI : " + getAiType();
