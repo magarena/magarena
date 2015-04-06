@@ -5,8 +5,8 @@
             boolean pump = false;
             final MagicPermanent target = permanent == blocker ? blocker : blocker.getBlockedCreature() ;
             final MagicPermanentList plist = target.getBlockingCreatures();
-            for (final MagicPermanent blocker : plist) {
-                if (blocker.hasSubType(MagicSubType.Orc)) {
+            for (final MagicPermanent creature : plist) {
+                if (creature.hasSubType(MagicSubType.Orc)) {
                     pump = true;
                 }
             }
