@@ -71,8 +71,8 @@ public enum MagicRuleEventAction {
             };
         }
     },
-    DestroyThat(
-        "destroy rn\\.(?<noregen> it can't be regenerated\\.)?", 
+    DestroyIt(
+        "destroy " + ARG.IT + "\\.(?<noregen> it can't be regenerated\\.)?", 
         MagicTiming.Removal,
         "Destroy"
     ) {
@@ -81,7 +81,7 @@ public enum MagicRuleEventAction {
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    final MagicPermanent it = event.getRefPermanent();
+                    final MagicPermanent it = event.getPermanent(matcher);
                     if (matcher.group("noregen") != null) {
                         game.doAction(MagicChangeStateAction.Set(it, MagicPermanentState.CannotBeRegenerated));
                     }
@@ -90,8 +90,8 @@ public enum MagicRuleEventAction {
             };
         }
     },
-    DestroyThatEndOfCombat(
-        "destroy rn at end of combat\\.", 
+    DestroyItEndOfCombat(
+        "destroy " + ARG.IT + " at end of combat\\.", 
         MagicTiming.Removal,
         "Destroy"
     ) { 
@@ -100,14 +100,13 @@ public enum MagicRuleEventAction {
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    event.processRefPermanent(game, new MagicPermanentAction() {
-                        public void doAction(final MagicPermanent it) {
-                            game.doAction(new MagicAddTurnTriggerAction(
-                                it,
-                                MagicAtEndOfCombatTrigger.Destroy
-                            ));
-                        }
-                    });
+                    final MagicPermanent it = event.getPermanent(matcher);
+                    if (it.isValid()) {
+                        game.doAction(new MagicAddTurnTriggerAction(
+                            it,
+                            MagicAtEndOfCombatTrigger.Destroy
+                        ));
+                    }
                 }
             };
         }
