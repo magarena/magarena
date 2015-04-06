@@ -243,9 +243,17 @@ public enum MagicAbility {
             card.add(MagicWhenSelfBlocksTrigger.create(sourceEvent));
         }
     },
-    BecomesBlockedEffect("Whenever SN becomes blocked( by a creature)?, " + ARG.EFFECT, 10) {
+    BecomesBlockedEffect("Whenever SN becomes blocked, " + ARG.EFFECT, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicWhenSelfBecomesBlockedTrigger.create(
+                MagicRuleEventAction.create(ARG.effect(arg))
+            ));
+        }
+    },
+    BecomesBlockedByEffect("Whenever SN becomes blocked by (a|an) " + ARG.WORDRUN + ", " + ARG.EFFECT, 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            card.add(MagicWhenSelfBecomesBlockedByTrigger.create(
+                MagicTargetFilterFactory.singlePermanent(ARG.wordrun(arg)),
                 MagicRuleEventAction.create(ARG.effect(arg))
             ));
         }
