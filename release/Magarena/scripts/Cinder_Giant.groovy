@@ -12,15 +12,9 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPermanent creature = event.getPermanent();
-            final Collection<MagicPermanent> targets = game.filterPermanents(
-                event.getPlayer(),
-                new MagicOtherPermanentTargetFilter(
-                    MagicTargetFilterFactory.CREATURE_YOU_CONTROL,
-                    creature
-                )
-            );
-            for (final MagicPermanent target : targets) {
-                game.doAction(new MagicDealDamageAction(creature,target,2));
+            final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.CREATURE_YOU_CONTROL.except(creature);
+            game.filterPermanents(event.getPlayer(),filter) each {
+                game.doAction(new MagicDealDamageAction(creature,it,2));
             }
         }
     }
