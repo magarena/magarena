@@ -748,6 +748,8 @@ public class MagicTargetFilterFactory {
     
     public static final MagicPermanentFilterImpl SOLDIER_OR_WARRIOR_YOU_CONTROL = MagicTargetFilterFactory.permanentOr(MagicSubType.Soldier, MagicSubType.Warrior, Control.You);
     
+    public static final MagicPermanentFilterImpl GIANT_YOU_CONTROL = MagicTargetFilterFactory.permanent(MagicSubType.Giant, Control.You);
+    
     public static final MagicPermanentFilterImpl FOREST_OR_TREEFOLK_YOU_CONTROL = MagicTargetFilterFactory.permanentOr(MagicSubType.Forest, MagicSubType.Treefolk, Control.You);
     
     public static final MagicPermanentFilterImpl GOBLIN_PERMANENT = MagicTargetFilterFactory.permanent(MagicSubType.Goblin, Control.Any);
@@ -2410,6 +2412,7 @@ public class MagicTargetFilterFactory {
         single.put("legendary snakes you control", LEGENDARY_SNAKE_YOU_CONTROL);
         single.put("untapped land you control", UNTAPPED_LAND_YOU_CONTROL);
         single.put("red or green enchantment you control", RED_OR_GREEN_ENCHANTMENT_YOU_CONTROL);
+        single.put("giant you control", GIANT_YOU_CONTROL);
         
         // <color|type|subtype> an opponent controls
         single.put("permanent an opponent controls", PERMANENT_AN_OPPONENT_CONTROLS);
