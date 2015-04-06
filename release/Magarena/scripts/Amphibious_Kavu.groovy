@@ -29,7 +29,7 @@
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent blocker) {
             final MagicPermanent blocked = permanent.getBlockedCreature();
             return (blocked.hasColor(MagicColor.Blue) ||
-                     blocked.hasColor(MagicColor.Black))) ?
+                     blocked.hasColor(MagicColor.Black)) ?
                 new MagicEvent(
                     permanent,
                     this,
