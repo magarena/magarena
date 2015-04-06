@@ -142,7 +142,7 @@ public class DuelDecksPanel extends TexturedPanel {
             rightPanel.add(deckDescriptionViewers[i]);
             rightPanel.add(Box.createVerticalStrut(SPACING));
 
-            if (!player.isArtificial()) {
+            if (!player.getProfile().isArtificial()) {
                 rightPanel.add(strengthViewer);
                 rightPanel.add(Box.createVerticalStrut(SPACING));
 

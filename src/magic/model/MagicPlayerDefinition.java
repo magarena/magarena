@@ -25,10 +25,6 @@ public class MagicPlayerDefinition {
         return playerProfile.getPlayerName();
     }
 
-    public boolean isArtificial() {
-        return playerProfile.isArtificial();
-    }
-
     public void setDeckProfile(final MagicDeckProfile profile) {
         this.deckProfile=profile;
     }

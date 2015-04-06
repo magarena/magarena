@@ -3,8 +3,6 @@ package magic.game.state;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import magic.ai.MagicAI;
-import magic.ai.MagicAIImpl;
 import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDuel;
@@ -40,7 +38,7 @@ public final class GameStateSnapshot {
         gamePlayerState.setName(playerDef.getName());
 //        gamePlayerState.setFace(playerDef.getAvatar().getFace());
         gamePlayerState.setDeckProfileColors(playerDef.getDeckProfile().getColorText());
-        if (playerDef.isArtificial()) {
+        if (playerDef.getProfile().isArtificial()) {
             gamePlayerState.setAiType(player.getAiProfile().getAiType().toString());
         }
         gamePlayerState.setLife(player.getLife());
