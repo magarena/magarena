@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Warrior
 cost={R}
 pt=1/1
+ability=Whenever SN becomes blocked by a creature, SN deals 1 damage to RN.
 timing=main
-requires_groovy_code
 oracle=Whenever Somberwald Vigilante becomes blocked by a creature, Somberwald Vigilante deals 1 damage to that creature.
