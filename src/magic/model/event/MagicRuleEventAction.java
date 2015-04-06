@@ -71,6 +71,47 @@ public enum MagicRuleEventAction {
             };
         }
     },
+    DestroyThat(
+        "destroy rn\\.(?<noregen> it can't be regenerated\\.)?", 
+        MagicTiming.Removal,
+        "Destroy"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    final MagicPermanent it = event.getRefPermanent();
+                    if (matcher.group("noregen") != null) {
+                        game.doAction(MagicChangeStateAction.Set(it, MagicPermanentState.CannotBeRegenerated));
+                    }
+                    game.doAction(new MagicDestroyAction(it));
+                }
+            };
+        }
+    },
+    DestroyThatEndOfCombat(
+        "destroy rn at end of combat\\.", 
+        MagicTiming.Removal,
+        "Destroy"
+    ) { 
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    event.processRefPermanent(game, new MagicPermanentAction() {
+                        public void doAction(final MagicPermanent it) {
+                            game.doAction(new MagicAddTurnTriggerAction(
+                                it,
+                                MagicAtEndOfCombatTrigger.Destroy
+                            ));
+                        }
+                    });
+                }
+            };
+        }
+    },
     DestroyChosen(
         "destroy (?<choice>[^\\.]*)\\.(?<noregen> it can't be regenerated\\.)?", 
         MagicTargetHint.Negative,
