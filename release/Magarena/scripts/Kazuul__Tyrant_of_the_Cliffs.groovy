@@ -15,7 +15,7 @@ def action = {
                 new MagicEvent(
                     permanent,
                     this,
-                    "Put a 3/3 red Ogre creature token onto the battlefield unless your opponent pays {3}."
+                    "PN puts a 3/3 red Ogre creature token onto the battlefield unless their opponent pays {3}."
                 ):
                 MagicEvent.NONE;
         }
