@@ -1,14 +1,12 @@
 [
-    new MagicWhenAttacksTrigger() {
+    new MagicWhenSelfAttacksTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent attacker) {
-            return permanent == attacker ?
-                new MagicEvent(
-                    permanent,
-                    this,
-                    "PN puts a 1/1 white Cat Soldier creature token with vigilance onto the battlefield attacking."
-                ) :
-                MagicEvent.NONE;
+            return new MagicEvent(
+                permanent,
+                this,
+                "PN puts a 1/1 white Cat Soldier creature token with vigilance onto the battlefield attacking."
+            );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
@@ -23,18 +21,16 @@
             ));
         }
     },
-    new MagicWhenBlocksTrigger() {
+    new MagicWhenSelfBlocksTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent blocker) {
             final MagicPermanent blocked = permanent.getBlockedCreature();
-            return (permanent == blocker && blocked.isValid()) ?
-                new MagicEvent(
-                    permanent,
-                    blocked,
-                    this,
-                    "PN puts a 1/1 white Cat Soldier creature token with vigilance onto the battlefield blocking RN."
-                ):
-                MagicEvent.NONE;
+            return new MagicEvent(
+                permanent,
+                blocked,
+                this,
+                "PN puts a 1/1 white Cat Soldier creature token with vigilance onto the battlefield blocking RN."
+            );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
