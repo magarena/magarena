@@ -169,7 +169,7 @@ public final class IconImages {
     }
 
     private static ImageIcon getSizedAvatarImageIcon(final MagicPlayerDefinition playerDef, final int size) {
-        return getPlayerAvatar(playerDef.getPlayerProfile()).getIcon(size);
+        return getPlayerAvatar(playerDef.getProfile()).getIcon(size);
     }
 
     private static BufferedImage getAvatarImage(final PlayerProfile profile) {

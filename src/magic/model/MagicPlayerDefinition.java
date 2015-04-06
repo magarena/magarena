@@ -95,7 +95,7 @@ public class MagicPlayerDefinition {
         }
     }
 
-    public PlayerProfile getPlayerProfile() {
+    public PlayerProfile getProfile() {
         return playerProfile;
     }
 

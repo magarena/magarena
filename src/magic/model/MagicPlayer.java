@@ -800,14 +800,14 @@ public class MagicPlayer extends MagicObjectImpl implements MagicTarget, MagicMa
     }
 
     public boolean isHuman() {
-        return playerDefinition.getPlayerProfile().isHuman();
+        return playerDefinition.getProfile().isHuman();
     }
     
     public boolean isArtificial() {
-        return playerDefinition.getPlayerProfile().isArtificial();
+        return playerDefinition.getProfile().isArtificial();
     }
 
     public AiProfile getAiProfile() {
-        return (AiProfile)playerDefinition.getPlayerProfile();
+        return (AiProfile)playerDefinition.getProfile();
     }
 }

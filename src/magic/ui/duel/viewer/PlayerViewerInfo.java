@@ -29,7 +29,7 @@ public class PlayerViewerInfo {
         this.player = player;
         turn = player == game.getTurnPlayer();
         name = player.getName();
-        playerLabel = player.getPlayerDefinition().getPlayerProfile().getPlayerLabel();
+        playerLabel = player.getPlayerDefinition().getProfile().getPlayerLabel();
         life = player.getLife();
         poison = player.getPoison();
         preventDamage = player.getPreventDamage();
