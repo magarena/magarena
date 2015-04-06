@@ -23,9 +23,8 @@
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final Collection<MagicPermanent> creatures = game.filterPermanents(MagicTargetFilterFactory.CREATURE_WITH_FLYING);
-            for (final MagicPermanent creature : creatures) {
-                game.doAction(new MagicDealDamageAction(event.getSource(),creature,event.getRefInt()));
+            game.filterPermanents(MagicTargetFilterFactory.CREATURE_WITH_FLYING) each {
+                game.doAction(new MagicDealDamageAction(event.getSource(), it, event.getRefInt()));
             }
         }
     },

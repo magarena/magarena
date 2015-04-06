@@ -11,13 +11,12 @@
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final Collection<MagicPermanent> attackers = game.filterPermanents(MagicTargetFilterFactory.ATTACKING_CREATURE);
-            for (final MagicPermanent creature : attackers) {
-                if (creature.hasColor(MagicColor.Red)) {
-                    game.doAction(new MagicChangeTurnPTAction(creature,2,0));
+            game.filterPermanents(MagicTargetFilterFactory.ATTACKING_CREATURE) each {
+                if (it.hasColor(MagicColor.Red)) {
+                    game.doAction(new MagicChangeTurnPTAction(it,2,0));
                 }
-                if (creature.hasColor(MagicColor.White)) {
-                    game.doAction(new MagicChangeTurnPTAction(creature,0,2));
+                if (it.hasColor(MagicColor.White)) {
+                    game.doAction(new MagicChangeTurnPTAction(it,0,2));
                 }
             }
         }

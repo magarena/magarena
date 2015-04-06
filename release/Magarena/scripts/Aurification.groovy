@@ -1,32 +1,21 @@
 def AB = new MagicStatic(MagicLayer.Ability) {
     @Override
-    public void modAbilityFlags(
-            final MagicPermanent source,
-            final MagicPermanent permanent,
-            final Set<MagicAbility> flags) {
+    public void modAbilityFlags(final MagicPermanent source, final MagicPermanent permanent, final Set<MagicAbility> flags) {
         permanent.addAbility(MagicAbility.Defender, flags);
     }
     @Override
-    public boolean condition(
-            final MagicGame game,
-            final MagicPermanent source,
-            final MagicPermanent target) {
+    public boolean condition(final MagicGame game, final MagicPermanent source, final MagicPermanent target) {
         return target.getCounters(MagicCounterType.Gold) > 0;
     }
 };
 
 def ST = new MagicStatic(MagicLayer.Type) {
     @Override
-    public void modSubTypeFlags(
-            final MagicPermanent permanent,
-            final Set<MagicSubType> flags) {
+    public void modSubTypeFlags(final MagicPermanent permanent, final Set<MagicSubType> flags) {
         flags.add(MagicSubType.Wall);
     }
     @Override
-    public boolean condition(
-            final MagicGame game,
-            final MagicPermanent source,
-            final MagicPermanent target) {
+    public boolean condition(final MagicGame game, final MagicPermanent source, final MagicPermanent target) {
         return target.getCounters(MagicCounterType.Gold) > 0;
     }
 };
@@ -35,8 +24,7 @@ def ST = new MagicStatic(MagicLayer.Type) {
     new MagicWhenDamageIsDealtTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
-            return (permanent.isController(damage.getTarget()) &&
-                    damage.getSource().isCreature()) ?
+            return (permanent.isController(damage.getTarget()) && damage.getSource().isCreature()) ?
                 new MagicEvent(
                     permanent,
                     damage.getSource(),
@@ -66,13 +54,8 @@ def ST = new MagicStatic(MagicLayer.Type) {
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final Collection<MagicPermanent> targets = game.filterPermanents(MagicTargetFilterFactory.CREATURE);
-            for (final MagicPermanent permanent : targets) {
-                game.doAction(new MagicChangeCountersAction(
-                    permanent,
-                    MagicCounterType.Gold,
-                    -permanent.getCounters(MagicCounterType.Gold)
-                ));
+            game.filterPermanents(MagicTargetFilterFactory.CREATURE) each {
+                game.doAction(new MagicChangeCountersAction(it, MagicCounterType.Gold, -it.getCounters(MagicCounterType.Gold)));
             }
         }
     }

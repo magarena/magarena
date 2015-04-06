@@ -17,8 +17,8 @@ def COLORED_PERMANENT = new MagicPermanentFilterImpl() {
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            for (final MagicPermanent target : game.filterPermanents(COLORED_PERMANENT)) {
-                game.doAction(new MagicSacrificeAction(target));
+            game.filterPermanents(COLORED_PERMANENT) each {
+                game.doAction(new MagicSacrificeAction(it));
             }    
         }
     }

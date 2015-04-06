@@ -24,15 +24,9 @@
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final List<MagicCard> cards = game.filterCards(
-                    event.getPlayer(),
-                    MagicTargetFilterFactory.CARD_FROM_GRAVEYARD);
-            for (final MagicCard card : cards) {
-                if (card.getName().equals("Deathpact Angel")) {
-                    game.doAction(new MagicReanimateAction(
-                        card,
-                        event.getPlayer()
-                    ));
+            game.filterCards(event.getPlayer(), MagicTargetFilterFactory.CARD_FROM_GRAVEYARD) each {
+                if (it.getName().equals("Deathpact Angel")) {
+                    game.doAction(new MagicReanimateAction(it, event.getPlayer()));
                     break;
                 }
             }

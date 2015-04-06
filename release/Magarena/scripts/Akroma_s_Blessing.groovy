@@ -12,12 +12,9 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicColor color = event.getChosenColor();
-            final MagicAbility protection = color.getProtectionAbility();
-            final Collection<MagicPermanent> targets =
-                game.filterPermanents(event.getPlayer(),MagicTargetFilterFactory.CREATURE_YOU_CONTROL);
-            for (final MagicPermanent target : targets) {
-                game.doAction(new MagicGainAbilityAction(target, protection));
+            final MagicAbility protection = event.getChosenColor().getProtectionAbility();
+            game.filterPermanents(event.getPlayer(),MagicTargetFilterFactory.CREATURE_YOU_CONTROL) each {
+                game.doAction(new MagicGainAbilityAction(it, protection));
             }
         }
     }

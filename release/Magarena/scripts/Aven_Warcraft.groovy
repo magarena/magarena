@@ -14,11 +14,11 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicAbility protection = event.getChosenColor().getProtectionAbility();
-            final Collection<MagicPermanent> targets = event.getPlayer().filterPermanents(MagicTargetFilterFactory.CREATURE_YOU_CONTROL);
-            for (final MagicPermanent target : targets) {
-                game.doAction(new MagicChangeTurnPTAction(target, 0, 2));
-                if (MagicCondition.THRESHOLD_CONDITION.accept(event.getSource())) {
-                    game.doAction(new MagicGainAbilityAction(target, protection));
+            final Boolean threshold = MagicCondition.THRESHOLD_CONDITION.accept(event.getSource());
+            event.getPlayer().filterPermanents(MagicTargetFilterFactory.CREATURE_YOU_CONTROL) each {
+                game.doAction(new MagicChangeTurnPTAction(it, 0, 2));
+                if (threshold) {
+                    game.doAction(new MagicGainAbilityAction(it, protection));
                 }
             }
         }
