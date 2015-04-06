@@ -6,10 +6,13 @@ public class HumanProfile extends PlayerProfile {
 
     private static final String PLAYER_TYPE = "human";
 
-    public HumanProfile() { }
-    
     public HumanProfile(final String profileId) {
         super(profileId);
+        loadProperties();
+    }
+
+    public HumanProfile() {
+        loadProperties();
     }
 
     @Override

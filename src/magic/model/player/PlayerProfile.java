@@ -26,7 +26,6 @@ public abstract class PlayerProfile {
     protected PlayerProfile(final String profileId) {
         setProfilePath(profileId);
         loadStats();
-        loadProperties();
     }
 
     /**
@@ -36,6 +35,7 @@ public abstract class PlayerProfile {
     protected PlayerProfile() {
         this(PlayerProfile.getNewPlayerProfileId());
     }
+
 
     public boolean isArtificial() {
         return this instanceof AiProfile;
