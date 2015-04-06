@@ -405,7 +405,7 @@ public enum MagicRuleEventAction {
             };
         }
     },
-    DamagePlayer(
+    DamageRefOrPlayer(
         "sn deal(s)? (?<amount>[0-9]+) damage to " + ARG.YOU + "\\.",
         MagicTiming.Removal,
         "Damage"
@@ -416,7 +416,7 @@ public enum MagicRuleEventAction {
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    game.doAction(new MagicDealDamageAction(event.getSource(),event.getPlayer(matcher),amount));
+                    game.doAction(new MagicDealDamageAction(event.getSource(),event.getRefOrPlayer(matcher),amount));
                 }
             };
         }

@@ -301,6 +301,15 @@ public class MagicEvent implements MagicCopyable {
         return true;
     }
     
+    public final MagicTarget getRefOrPlayer(final Matcher m) {
+        final String name = ARG.you(m);
+        if (name.equalsIgnoreCase("rn")) {
+            return (MagicTarget)ref;
+        } else {
+            return getPlayer();
+        }
+    }
+    
     public final MagicSource getSource(final Matcher m) {
         final String name = ARG.it(m);
         if (name.equalsIgnoreCase("rn")) {
