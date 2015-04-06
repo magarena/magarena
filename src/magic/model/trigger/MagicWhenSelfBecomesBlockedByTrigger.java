@@ -21,7 +21,7 @@ public abstract class MagicWhenSelfBecomesBlockedByTrigger extends MagicWhenBloc
             }
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPermanent blocker) {
-                return sourceEvent.getEvent(permanent, permanent.getBlockedCreature());
+                return sourceEvent.getEvent(permanent, blocker);
             }
         };
     }
