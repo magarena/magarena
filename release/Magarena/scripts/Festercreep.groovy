@@ -20,13 +20,9 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicTargetFilter<MagicPermanent> filter = new MagicOtherPermanentTargetFilter(
-                MagicTargetFilterFactory.CREATURE,
-                event.getPermanent()
-            );
-            final Collection<MagicPermanent> targets = game.filterPermanents(filter);
-            for (final MagicPermanent creature : targets) {         
-                game.doAction(new MagicChangeTurnPTAction(creature, -1, -1));
+            final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.CREATURE.except(event.getPermanent());
+            game.filterPermanents(filter) each {
+                game.doAction(new MagicChangeTurnPTAction(it, -1, -1));
             }
         }
     }
