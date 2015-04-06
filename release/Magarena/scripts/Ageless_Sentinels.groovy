@@ -1,8 +1,6 @@
 def ST = new MagicStatic(MagicLayer.Type) {
     @Override
-    public void modSubTypeFlags(
-            final MagicPermanent permanent,
-            final Set<MagicSubType> flags) {
+    public void modSubTypeFlags(final MagicPermanent permanent, final Set<MagicSubType> flags) {
         flags.remove(MagicSubType.Wall);
         flags.add(MagicSubType.Bird);
         flags.add(MagicSubType.Giant);
@@ -11,10 +9,7 @@ def ST = new MagicStatic(MagicLayer.Type) {
 
 def AB = new MagicStatic(MagicLayer.Ability) {
     @Override
-    public void modAbilityFlags(
-            final MagicPermanent source,
-            final MagicPermanent permanent,
-            final Set<MagicAbility> flags) {
+    public void modAbilityFlags(final MagicPermanent source, final MagicPermanent permanent, final Set<MagicAbility> flags) {
         flags.remove(MagicAbility.Defender);
     }
 };
@@ -22,10 +17,7 @@ def AB = new MagicStatic(MagicLayer.Ability) {
 [
    new MagicWhenBlocksTrigger() {
        @Override
-       public MagicEvent executeTrigger(
-               final MagicGame game,
-               final MagicPermanent permanent,
-               final MagicPermanent blocker) {
+       public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPermanent blocker) {
            return (permanent == blocker) ?
                new MagicEvent(
                    permanent,
