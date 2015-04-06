@@ -6,6 +6,6 @@ type=Creature
 subtype=Illusion,Hound
 cost={1}{U}
 pt=2/2
+ability=When SN attacks or blocks, return SN to its owner's hand at end of combat.
 timing=main
-requires_groovy_code=Windscouter
 oracle=When Phantom Whelp attacks or blocks, return it to its owner's hand at end of combat.
