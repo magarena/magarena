@@ -2,10 +2,8 @@
     new MagicWhenComesIntoPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPayedCost payedCost) {
-            final MagicTargetFilter<MagicPermanent> targetFilter = new MagicOtherPermanentTargetFilter(
-                    MagicTargetFilterFactory.ZOMBIE_YOU_CONTROL,permanent);
             final MagicPlayer player = permanent.getController();
-            final int amount = game.filterPermanents(player,targetFilter).size() +
+            final int amount = game.filterPermanents(player,MagicTargetFilterFactory.ZOMBIE_YOU_CONTROL.except(permanent)).size() +
                                game.filterCards(player,MagicTargetFilterFactory.ZOMBIE_CARD_FROM_GRAVEYARD).size();
             game.doAction(new MagicChangeCountersAction(permanent,MagicCounterType.PlusOne,amount));
             return MagicEvent.NONE;
