@@ -11,6 +11,7 @@ import java.util.Scanner;
 import java.util.Set;
 import java.util.TreeMap;
 import magic.exception.InvalidDeckException;
+import magic.model.MagicDeck;
 import magic.model.MagicDeckProfile;
 import magic.utility.MagicSystem;
 
@@ -113,9 +114,17 @@ public class DeckGenerators {
      * This also includes the various random theme decks (like "Fairy Horde", "Token Madness", etc).
      */
     private static void setRandomColorDeck(final MagicPlayerDefinition player) {
+        final MagicDeckProfile deckProfile = player.getDeckProfile();
+        final MagicDeck deck = player.getDeck();
         final MagicCubeDefinition cubeDefinition = CubeDefinitions.getCubeDefinition(DuelConfig.getInstance().getCube());
-        final RandomDeckGenerator generator = new RandomDeckGenerator(cubeDefinition);
-        player.generateDeck(generator);
+        final RandomDeckGenerator defaultGenerator = new RandomDeckGenerator(cubeDefinition);
+        final RandomDeckGenerator customGenerator = DeckGenerators.getDeckGenerator(player.getDeckProfile());
+        if (customGenerator == null) {
+            defaultGenerator.generateDeck(MagicDeck.DEFAULT_SIZE, deckProfile, deck);
+        } else {
+            customGenerator.generateDeck(MagicDeck.DEFAULT_SIZE, deckProfile, deck);
+        }
+        DeckGenerator.addBasicLandsToDeck(deck, deckProfile, MagicDeck.DEFAULT_SIZE);
     }
 
     /**

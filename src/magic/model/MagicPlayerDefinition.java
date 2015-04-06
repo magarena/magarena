@@ -2,9 +2,6 @@ package magic.model;
 
 import java.util.Properties;
 import magic.data.CardDefinitions;
-import magic.data.DeckGenerator;
-import magic.data.DeckGenerators;
-import magic.generator.RandomDeckGenerator;
 import magic.model.player.PlayerProfile;
 
 public class MagicPlayerDefinition {
@@ -38,19 +35,6 @@ public class MagicPlayerDefinition {
 
     public void setDeck(final MagicDeck aDeck) {
         deck.setContent(aDeck);
-    }
-
-    public void generateDeck(final RandomDeckGenerator defaultGenerator) {
-        
-        final RandomDeckGenerator customGenerator = DeckGenerators.getDeckGenerator(deckProfile);
-
-        if (customGenerator == null) {
-            defaultGenerator.generateDeck(MagicDeck.DEFAULT_SIZE, deckProfile, deck);
-        } else {
-            customGenerator.generateDeck(MagicDeck.DEFAULT_SIZE, deckProfile, deck);
-        }
-
-        DeckGenerator.addBasicLandsToDeck(deck, deckProfile, MagicDeck.DEFAULT_SIZE);
     }
 
     private static String getDeckPrefix(final String prefix,final int index) {
