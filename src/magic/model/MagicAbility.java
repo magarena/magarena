@@ -265,6 +265,14 @@ public enum MagicAbility {
             card.add(MagicWhenSelfBecomesBlockedTrigger.create(sourceEvent));
         }
     },
+    BlocksOrBlockedByEffect("Whenever SN blocks or becomes blocked by (a|an) " + ARG.WORDRUN + ", " + ARG.EFFECT, 20) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            final MagicSourceEvent sourceEvent = MagicRuleEventAction.create(ARG.effect(arg));
+            final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.singlePermanent(ARG.wordrun(arg));
+            card.add(MagicWhenSelfBlocksTrigger.create(filter, sourceEvent));
+            card.add(MagicWhenSelfBecomesBlockedByTrigger.create(filter, sourceEvent));
+        }
+    },
     UntappedEffect("Whenever SN becomes untapped, " + ARG.EFFECT, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicWhenSelfBecomesUntappedTrigger.create(
