@@ -12,10 +12,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final Collection<MagicPermanent> attackers = game.filterPermanents(
-                new MagicOtherPermanentTargetFilter(
-                    MagicTargetFilterFactory.ATTACKING_CREATURE,
-                    event.getPermanent()
-                )
+                MagicTargetFilterFactory.ATTACKING_CREATURE.except(event.getPermanent())
             );
             for (final MagicPermanent creature:attackers) {
                 game.doAction(new MagicChangeTurnPTAction(creature,1,1));
