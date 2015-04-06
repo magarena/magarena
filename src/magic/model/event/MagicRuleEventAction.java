@@ -2215,20 +2215,24 @@ public enum MagicRuleEventAction {
             }
         }
     ),
-    ParalyzeSelf(
-        "sn doesn't untap during (your|its controller's) next untap step\\.",
+    ParalyzeIt(
+        ARG.IT + " doesn't untap during (your|its controller's) next untap step\\.",
         MagicTiming.Tapping,
-        "Paralyze",
-        new MagicEventAction() {
-            @Override
-            public void executeEvent(final MagicGame game, final MagicEvent event) {
-                game.doAction(MagicChangeStateAction.Set(
-                    event.getPermanent(),
-                    MagicPermanentState.DoesNotUntapDuringNext
-                ));
-            }
+        "Paralyze"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    game.doAction(MagicChangeStateAction.Set(
+                        event.getPermanent(matcher),
+                        MagicPermanentState.DoesNotUntapDuringNext
+                    ));
+                }
+            };
         }
-    ),
+    },
     ParalyzeChosen(
         "(?<choice>[^\\.]*) doesn't untap during its controller's next untap step\\.",
         MagicTargetHint.Negative,
