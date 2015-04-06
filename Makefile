@@ -652,9 +652,9 @@ exp/zermelo.tsv: $(wildcard exp/136*.log)
 	awk -f exp/extract_games.awk $^ | ./exp/whr.rb | tac > $@
 
 bytes_per_card.%:
-	echo `hg cat -r $* release/Magarena/scripts/ | sed 's/^[[:space:]]*//' | wc -c` \
+	echo `git show $*:release/Magarena/scripts | tail -n+3 | sed 's/^/$*:release\/Magarena\/scripts\//' | git cat-file --batch | grep -v " blob " | sed 's/^[[:space:]]*//;/^$$/d' | wc -c` \
 	/ \
-	`hg manifest -r $* | grep 'release/Magarena/scripts/.*.txt' | wc -l` \
+	`git show $*:release/Magarena/scripts | grep '\.txt' | wc -l` \
 	| bc -l
 
 reminder.txt: cards/cards.xml
