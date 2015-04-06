@@ -1,9 +1,6 @@
 def Action = {
     final MagicGame game, final MagicEvent event ->
-    final MagicTargetFilter<MagicPermanent> filter = new MagicOtherPermanentTargetFilter(
-        MagicTargetFilterFactory.HUMAN_CREATURE_YOU_CONTROL,
-        event.getPermanent()
-    );
+    final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.HUMAN_CREATURE_YOU_CONTROL.except(event.getPermanent());
     final Collection<MagicPermanent> targets = game.filterPermanents(event.getPlayer(),filter);
     for (final MagicPermanent creature : targets) {
         game.doAction(new MagicChangeTurnPTAction(creature,1,1));
