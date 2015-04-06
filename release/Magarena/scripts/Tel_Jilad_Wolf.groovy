@@ -1,30 +1,19 @@
 [
-    new MagicWhenSelfBecomesBlockedTrigger() {
+    new MagicWhenBlocksTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent attacker) {
-            int amount = 0;
-            for (final MagicPermanent blocker : permanent.getBlockingCreatures()) {
-                if (blocker.isArtifact() && blocker.isCreature()) {
-                    amount += 3;
-                }
-            }
-            return amount > 0 ?
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent blocker) {
+            return permanent == blocker.getBlockedCreature() && blocker.isArtifact() && blocker.isCreature() ?
                 new MagicEvent(
                     permanent,
-                    amount,
                     this,
-                    "SN gets +RN/+RN until end of turn."
+                    "SN gets +3/+3 until end of turn."
                 ):
                 MagicEvent.NONE;
         }
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicChangeTurnPTAction(
-                event.getPermanent(),
-                event.getRefInt(),
-                event.getRefInt()
-            ));
+            game.doAction(new MagicChangeTurnPTAction(event.getPermanent(), 3, 3));
         }
     }
 ]
