@@ -22,7 +22,12 @@ public abstract class MagicPermanentFilterImpl implements MagicTargetFilter<Magi
         }
         return targets;
     }
+    
     public boolean acceptType(final MagicTargetType targetType) {
         return targetType==MagicTargetType.Permanent;
+    }
+
+    public MagicPermanentFilterImpl except(final MagicPermanent invalid) {
+        return new MagicOtherPermanentTargetFilter(this, invalid);
     }
 }
