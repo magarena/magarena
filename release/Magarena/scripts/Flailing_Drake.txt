@@ -6,7 +6,7 @@ type=Creature
 subtype=Drake
 cost={3}{G}
 pt=2/3
-ability=flying
+ability=Flying;\
+        Whenever SN blocks or becomes blocked by a creature, RN gets +1/+1 until end of turn.
 timing=main
-requires_groovy_code
 oracle=Flying. Whenever Flailing Drake blocks or becomes blocked by a creature, that creature gets +1/+1 until end of turn.

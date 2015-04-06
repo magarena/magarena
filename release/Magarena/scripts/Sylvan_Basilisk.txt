@@ -6,6 +6,6 @@ type=Creature
 subtype=Basilisk
 cost={3}{G}{G}
 pt=2/4
+ability=Whenever SN becomes blocked by a creature, destroy RN.
 timing=main
-requires_groovy_code
 oracle=Whenever Sylvan Basilisk becomes blocked by a creature, destroy that creature.

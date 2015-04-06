@@ -6,7 +6,7 @@ type=Creature
 subtype=Eye
 cost={4}{B}
 pt=6/3
-ability=Non-Eye creatures you control can't attack.
-requires_groovy_code
+ability=Non-Eye creatures you control can't attack.;\
+        Whenever SN becomes blocked by a creature, destroy RN.
 timing=main
 oracle=Non-Eye creatures you control can't attack. Whenever Evil Eye of Urborg becomes blocked by a creature, destroy that creature.

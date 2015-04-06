@@ -6,6 +6,7 @@ type=Creature
 subtype=Gorgon
 cost={3}{B}{B}
 pt=2/4
+ability=Whenever SN blocks a creature, destroy RN at end of combat.;\
+        Whenever SN becomes blocked by a non-Wall creature, destroy RN at end of combat.
 timing=main
-requires_groovy_code
 oracle=Whenever Infernal Medusa blocks a creature, destroy that creature at end of combat. Whenever Infernal Medusa becomes blocked by a non-Wall creature, destroy that creature at end of combat.

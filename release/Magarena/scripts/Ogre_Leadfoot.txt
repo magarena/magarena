@@ -6,6 +6,6 @@ type=Creature
 subtype=Ogre
 cost={4}{R}
 pt=3/3
+ability=Whenever SN becomes blocked by an artifact creature, destroy RN.
 timing=main
-requires_groovy_code
 oracle=Whenever Ogre Leadfoot becomes blocked by an artifact creature, destroy that creature.
