@@ -2270,17 +2270,21 @@ public enum MagicRuleEventAction {
             }
         }
     ),
-    TapSelf(
-        "tap sn\\.",
+    TapIt(
+        "tap " + ARG.IT + "\\.",
         MagicTiming.Tapping,
-        "Tap",
-        new MagicEventAction() {
-            @Override
-            public void executeEvent(final MagicGame game, final MagicEvent event) {
-                game.doAction(new MagicTapAction(event.getPermanent()));
-            }
+        "Tap"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    game.doAction(new MagicTapAction(event.getPermanent(matcher)));
+                }
+            };
         }
-    ),
+    },
     TapGroup(
         "tap all (?<group>[^\\.]*)\\.",
         MagicTiming.Tapping,
