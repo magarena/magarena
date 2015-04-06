@@ -1945,6 +1945,23 @@ public enum MagicRuleEventAction {
             }
         }
     ),
+    BounceRef(
+        "return rn to its owner's hand at end of combat\\.",
+        MagicTiming.Removal,
+        "Bounce",
+        new MagicEventAction() {
+            @Override
+            public void executeEvent(final MagicGame game, final MagicEvent event) {
+                final MagicPermanent it = event.getRefPermanent();
+                if (it.isValid()) {
+                    game.doAction(new MagicAddTriggerAction(
+                        it,
+                        MagicAtEndOfCombatTrigger.Return
+                    ));
+                }
+            }
+        }
+    ),
     BounceChosen(
         "return (?<choice>[^\\.]*) to (its owner's|your) hand\\.",
         MagicTargetHint.None,
