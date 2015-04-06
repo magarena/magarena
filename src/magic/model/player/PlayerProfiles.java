@@ -8,7 +8,6 @@ import java.nio.file.Path;
 import java.nio.file.StandardCopyOption;
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.List;
 import magic.ai.MagicAIImpl;
 import magic.utility.MagicFileSystem;
@@ -139,9 +138,7 @@ public final class PlayerProfiles {
 
     private static HashMap<String, PlayerProfile> getPlayerProfiles(final Class<? extends PlayerProfile> profileClass) {
         final HashMap<String, PlayerProfile> filteredProfiles = new HashMap<>();
-        final Iterator<PlayerProfile> itr = profilesMap.values().iterator();
-        while (itr.hasNext()) {
-            final PlayerProfile profile = itr.next();
+        for (PlayerProfile profile : profilesMap.values()) {
             if (profile.getClass().equals(profileClass)) {
                 filteredProfiles.put(profile.getId(), profile);
             }
