@@ -1,7 +1,7 @@
 [
     new MagicAtYourUpkeepTrigger() {
         public boolean ifCondition(final MagicPermanent permanent, final MagicPlayer you) {
-            final MagicTargetFilter<MagicPermanent> other = new MagicOtherPermanentTargetFilter(MagicTargetFilterFactory.PERMANENT_YOU_CONTROL, permanent);
+            final MagicTargetFilter<MagicPermanent> other = MagicTargetFilterFactory.PERMANENT_YOU_CONTROL.except(permanent);
             return you.controlsPermanent(other) == false && you.getHandSize() == 0;
         }
         @Override
