@@ -17,13 +17,7 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicTargetFilter<MagicPermanent> filter = new MagicOtherPermanentTargetFilter(
-                MagicTargetFilterFactory.ENCHANTMENT,
-                event.getPermanent()
-            );
-            game.doAction(new MagicDestroyAction(
-                game.filterPermanents(filter)
-            ));
+            game.doAction(new MagicDestroyAction(game.filterPermanents(MagicTargetFilterFactory.ENCHANTMENT.except(event.getPermanent()))));
         }
     }
 ]
