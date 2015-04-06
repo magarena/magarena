@@ -11,11 +11,10 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPermanent permanent=event.getPermanent();
-            final MagicTargetFilter<MagicPermanent> targetFilter =
-                    new MagicOtherPermanentTargetFilter(
-                    MagicTargetFilterFactory.CREATURE,permanent);
-            final Collection<MagicPermanent> targets=
-                game.filterPermanents(permanent.getController(),targetFilter);
+            final Collection<MagicPermanent> targets= game.filterPermanents(
+                permanent.getController(),
+                MagicTargetFilterFactory.CREATURE.except(permanent)
+            );
             game.doAction(new MagicDestroyAction(targets));
         }
     }
