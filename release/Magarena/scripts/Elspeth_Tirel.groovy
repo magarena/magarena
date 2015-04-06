@@ -46,11 +46,10 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicTargetFilter<MagicPermanent> AllOtherPermanent = new MagicOtherPermanentTargetFilter(
-                MagicTargetFilterFactory.NONLAND_NONTOKEN_PERMANENT,
-                event.getPermanent()
+            final Collection<MagicPermanent> targets = game.filterPermanents(
+                event.getPlayer(),
+                MagicTargetFilterFactory.NONLAND_NONTOKEN_PERMANENT.except(event.getPermanent())
             );
-            final Collection<MagicPermanent> targets = game.filterPermanents(event.getPlayer(), AllOtherPermanent);
             game.doAction(new MagicDestroyAction(targets));
         }
     }
