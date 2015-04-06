@@ -13,10 +13,7 @@ def drawCards = {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPayedCost payedCost) {
             final MagicTargetChoice targetChoice=new MagicTargetChoice(
-                new MagicOtherPermanentTargetFilter(
-                    MagicTargetFilterFactory.CREATURE_YOU_CONTROL,
-                    permanent
-                ),
+                MagicTargetFilterFactory.CREATURE_YOU_CONTROL.except(permanent),
                 MagicTargetHint.None,
                 "a creature other than "+permanent+" to sacrifice"
             );
