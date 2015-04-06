@@ -40,19 +40,9 @@ public class MagicPlayerDefinition {
         deck.setContent(aDeck);
     }
 
-    public RandomDeckGenerator getDeckGenerator() {
-        final String name = getDeckProfile().getDeckGeneratorName();
-
-        if (name == null) {
-            return null;
-        }
-
-        return DeckGenerators.getInstance().getDeckGenerator(name);
-    }
-
     public void generateDeck(final RandomDeckGenerator defaultGenerator) {
         
-        final RandomDeckGenerator customGenerator =  getDeckGenerator();
+        final RandomDeckGenerator customGenerator = DeckGenerators.getDeckGenerator(deckProfile);
 
         if (customGenerator == null) {
             defaultGenerator.generateDeck(MagicDeck.DEFAULT_SIZE, deckProfile, deck);
