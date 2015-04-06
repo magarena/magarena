@@ -4,10 +4,7 @@
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicItemOnStack itemOnStack) {
             final Collection<MagicPermanent> targets = game.filterPermanents(
                 permanent.getController(),
-                new MagicOtherPermanentTargetFilter(
-                    MagicTargetFilterFactory.PERMANENT_YOU_CONTROL,
-                    permanent
-                )
+                MagicTargetFilterFactory.PERMANENT_YOU_CONTROL.except(permanent)
             );
             for (final MagicPermanent perm : targets) {
                 if (itemOnStack.containsInChoiceResults(perm)) {
