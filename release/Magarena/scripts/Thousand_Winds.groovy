@@ -11,11 +11,10 @@
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final Collection<MagicPermanent> tapped=
-                game.filterPermanents(
-                    event.getPlayer(),
-                    new MagicOtherPermanentTargetFilter(MagicTargetFilterFactory.TAPPED_CREATURE,event.getPermanent())
-                );
+            final Collection<MagicPermanent> tapped = game.filterPermanents(
+                event.getPlayer(),
+                MagicTargetFilterFactory.TAPPED_CREATURE.except(event.getPermanent())
+            );
             for (final MagicPermanent creature : tapped) {
                 game.doAction(new MagicRemoveFromPlayAction(creature,MagicLocationType.OwnersHand));
             }
