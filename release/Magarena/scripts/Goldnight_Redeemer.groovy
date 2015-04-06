@@ -12,10 +12,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
-            final MagicTargetFilter<MagicPermanent> filter = new MagicOtherPermanentTargetFilter(
-                MagicTargetFilterFactory.CREATURE_YOU_CONTROL,
-                event.getPermanent()
-            );
+            final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.CREATURE_YOU_CONTROL.except(event.getPermanent());
             final int amount = game.filterPermanents(player,filter).size();
             game.doAction(new MagicChangeLifeAction(player,amount * 2));
         }
