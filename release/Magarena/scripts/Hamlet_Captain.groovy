@@ -1,11 +1,12 @@
 def Action = {
     final MagicGame game, final MagicEvent event ->
-    final Collection<MagicPermanent> targets =
-        game.filterPermanents(event.getPlayer(),MagicTargetFilterFactory.HUMAN_CREATURE_YOU_CONTROL);
+    final MagicTargetFilter<MagicPermanent> filter = new MagicOtherPermanentTargetFilter(
+        MagicTargetFilterFactory.HUMAN_CREATURE_YOU_CONTROL,
+        event.getPermanent()
+    );
+    final Collection<MagicPermanent> targets = game.filterPermanents(event.getPlayer(),filter);
     for (final MagicPermanent creature : targets) {
-        if (creature != event.getPermanent()) {
-            game.doAction(new MagicChangeTurnPTAction(creature,1,1));
-        }
+        game.doAction(new MagicChangeTurnPTAction(creature,1,1));
     }
 }
 
@@ -25,10 +26,10 @@ def Event = {
             return Event(permanent);
         }
     },
-    new MagicWhenBlocksTrigger() {
+    new MagicWhenSelfBlocksTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
-            return (permanent == creature) ? Event(permanent) : MagicEvent.NONE;
+            return Event(permanent);
         }
     }
 ]
