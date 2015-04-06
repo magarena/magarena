@@ -1,3 +1,12 @@
+def action = {
+    final MagicGame game, final MagicEvent event ->
+    if (event.isYes()) {
+        event.payManaCost(game);
+    } else {
+        game.doAction(new MagicPlayTokenAction(event.getRefPlayer(),TokenCardDefinitions.get("3/3 red Ogre creature token")));
+    }
+}
+
 [
     new MagicWhenAttacksTrigger() {
         @Override
@@ -13,11 +22,15 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player=event.getPlayer();
-            game.addEvent(new MagicPlayOgreUnlessEvent(
+            game.addEvent(new MagicEvent(
                 event.getPermanent(),
                 player.getOpponent(),
+                new MagicMayChoice(
+                    new MagicPayManaCostChoice(MagicManaCost.create("{3}"))
+                ),
                 player,
-                MagicManaCost.create("{3}")
+                action,
+                "PN may\$ pay {3}."
             ));
         }
     }
