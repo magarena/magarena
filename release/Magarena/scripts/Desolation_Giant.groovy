@@ -14,20 +14,13 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.getRefInt() == 1) {
-            final MagicTargetFilter<MagicPermanent> targetFilterkicked =
-                new MagicOtherPermanentTargetFilter(
-                MagicTargetFilterFactory.CREATURE,event.getPermanent());
-            final Collection<MagicPermanent> targetskicked=
-                game.filterPermanents(targetFilterkicked);
-                    game.doAction(new MagicDestroyAction(targetskicked));
-         
+                final MagicTargetFilter<MagicPermanent> targetFilterkicked = MagicTargetFilterFactory.CREATURE.except(event.getPermanent());
+                final Collection<MagicPermanent> targetsKicked = game.filterPermanents(targetFilterkicked);
+                game.doAction(new MagicDestroyAction(targetsKicked));
             } else {
-            final MagicTargetFilter<MagicPermanent> targetFilternotkicked =
-                new MagicOtherPermanentTargetFilter(
-                MagicTargetFilterFactory.CREATURE_YOU_CONTROL,event.getPermanent());
-            final Collection<MagicPermanent> targetsnotkicked=
-                game.filterPermanents(event.getPlayer(),targetFilternotkicked);
-                    game.doAction(new MagicDestroyAction(targetsnotkicked));
+                final MagicTargetFilter<MagicPermanent> targetFilterNotkicked = MagicTargetFilterFactory.CREATURE_YOU_CONTROL.except(event.getPermanent());
+                final Collection<MagicPermanent> targetsNotKicked = game.filterPermanents(event.getPlayer(),targetFilterNotkicked);
+                game.doAction(new MagicDestroyAction(targetsNotKicked));
             }
         }
     }
