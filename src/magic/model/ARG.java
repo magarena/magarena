@@ -88,7 +88,7 @@ public class ARG {
         }
     }
     
-    public static final String YOU = "((?<rn>(rn|that [a-z]+))|(?<pn>(pn||you)))";
+    public static final String YOU = "((?<rn>(rn|that [a-z]+|him or her))|(?<pn>(pn||you)))";
     public static String you(final Matcher m) {
         return m.group("you");
     }
