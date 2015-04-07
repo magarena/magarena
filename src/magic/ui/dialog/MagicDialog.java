@@ -27,9 +27,9 @@ public abstract class MagicDialog extends JDialog {
     private final JPanel contentPanel = new JPanel();
 
     public MagicDialog(Frame owner, String title, Dimension size) {
+        super(owner);
 
-        // modal dialog.
-        super(owner, true);
+        setModalityType(ModalityType.APPLICATION_MODAL);
         setSize(size);
         setTitle(title);
         setEscapeKeyAction();
