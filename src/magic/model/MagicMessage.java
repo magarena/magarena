@@ -64,12 +64,12 @@ public class MagicMessage {
     public static String replaceName(final String sourceText,final Object source, final Object player, final Object ref) {
         final String evenQuotes = "(?=([^\"]*'[^\"]*')*[^\"]*$)";
         return sourceText
-            .replaceAll("PN", player.toString())
             .replaceAll("SN", source.toString())
+            .replaceAll("\\b(T|t)his [a-z]+\\b" + evenQuotes, source.toString())
+            .replaceAll("\\bit\\b" + evenQuotes, source.toString())
             .replaceAll("RN", ref.toString())
-            .replaceAll("\\b(T|t)his permanent\\b" + evenQuotes, source.toString())
-            .replaceAll("\\b(T|t)his creature\\b" + evenQuotes, source.toString())
-            .replaceAll("\\bit\\b" + evenQuotes, source.toString());
+            .replaceAll("\\b(T|t)hat [a-z]+\\b" + evenQuotes, ref.toString())
+            .replaceAll("PN", player.toString());
     }
 
     public static String replaceChoices(final String sourceText,final Object[] choices) {

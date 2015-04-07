@@ -69,7 +69,7 @@ public class ARG {
         return m.group("pt");
     }
     
-    public static final String IT = "((?<rn>(rn))|(?<sn>(sn|it|this permanent|this creature)))";
+    public static final String IT = "((?<rn>(rn|that [a-z]+))|(?<sn>(sn|it|this [a-z]+)))";
     public static String it(final Matcher m) {
         return m.group("it");
     }
@@ -88,7 +88,7 @@ public class ARG {
         }
     }
     
-    public static final String YOU = "((?<rn>(rn))|(?<pn>(pn||you)))";
+    public static final String YOU = "((?<rn>(rn|that [a-z]+))|(?<pn>(pn||you)))";
     public static String you(final Matcher m) {
         return m.group("you");
     }
