@@ -6,7 +6,7 @@ type=Creature
 subtype=Avatar
 cost={G}{G}
 pt=3/2
-ability=Reach, trample;\
-        SN enters the battlefield with a +1/+1 counter on it for each other creature you control with a +1/+1 counter on it.
+ability=Reach, trample
 timing=main
+requires_groovy_code
 oracle=Reach, trample. Avatar of the Resolute enters the battlefield with a +1/+1 counter on it for each other creature you control with a +1/+1 counter on it.
