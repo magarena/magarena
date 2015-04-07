@@ -4,6 +4,6 @@ value=4.225
 rarity=R
 type=Enchantment
 cost={2}{R}{W}
+ability=Whenever a creature attacks or blocks, SN deals 2 damage to it.
 timing=enchantment
-requires_groovy_code
 oracle=Whenever a creature attacks or blocks, Powerstone Minefield deals 2 damage to it.
