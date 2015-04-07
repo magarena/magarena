@@ -800,6 +800,28 @@ public enum MagicRuleEventAction {
             };
         }
     },
+    DiscardYou(
+        ARG.YOU + "( )?discard(s)? (?<amount>[a-z]+) card(s)?(?<random> at random)?\\.", 
+        MagicTiming.Draw, 
+        "Discard"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            final int amount = EnglishToInt.convert(matcher.group("amount"));
+            final boolean isRandom = matcher.group("random") != null;
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    final MagicPlayer player = ARG.youPlayer(event, matcher);
+                    if (isRandom) {
+                        game.addEvent(MagicDiscardEvent.Random(event.getSource(), player, amount));
+                    } else {
+                        game.addEvent(new MagicDiscardEvent(event.getSource(), player, amount));
+                    }
+                }
+            };
+        }
+    },
     DiscardChosen(
         "(?<choice>[^\\.]*) discard(s)? (?<amount>[a-z]+) card(s)?(?<random> at random)?\\.", 
         MagicTargetHint.Negative, 
@@ -822,27 +844,6 @@ public enum MagicRuleEventAction {
                             }
                         }
                     });
-                }
-            };
-        }
-    },
-    DiscardSelf(
-        "((Y|y)ou)?( )?discard(s)? (?<amount>[a-z]+) card(s)?(?<random> at random)?\\.", 
-        MagicTiming.Draw, 
-        "Discard"
-    ) {
-        @Override
-        public MagicEventAction getAction(final Matcher matcher) {
-            final int amount = EnglishToInt.convert(matcher.group("amount"));
-            final boolean isRandom = matcher.group("random") != null;
-            return new MagicEventAction() {
-                @Override
-                public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    if (isRandom) {
-                        game.addEvent(MagicDiscardEvent.Random(event.getSource(), event.getPlayer(), amount));
-                    } else {
-                        game.addEvent(new MagicDiscardEvent(event.getSource(), event.getPlayer(), amount));
-                    }
                 }
             };
         }
