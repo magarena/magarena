@@ -38,7 +38,7 @@ public final class GameStateSnapshot {
         gamePlayerState.setName(playerDef.getName());
 //        gamePlayerState.setFace(playerDef.getAvatar().getFace());
         gamePlayerState.setDeckProfileColors(playerDef.getDeckProfile().getColorText());
-        if (playerDef.getProfile().isArtificial()) {
+        if (player.isArtificial()) {
             gamePlayerState.setAiType(player.getAiProfile().getAiType().toString());
         }
         gamePlayerState.setLife(player.getLife());
