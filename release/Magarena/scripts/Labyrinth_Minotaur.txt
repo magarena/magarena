@@ -6,6 +6,6 @@ type=Creature
 subtype=Minotaur
 cost={3}{U}
 pt=1/4
-ability=Whenever SN blocks a creature, RN doesn't untap during its controller's next untap step.
+ability=Whenever SN blocks a creature, that creature doesn't untap during its controller's next untap step.
 timing=main
 oracle=Whenever Labyrinth Minotaur blocks a creature, that creature doesn't untap during its controller's next untap step.

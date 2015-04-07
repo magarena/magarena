@@ -6,6 +6,6 @@ type=Creature
 subtype=Horror
 cost={3}{B}{B}
 pt=2/6
-ability=Whenever SN blocks or becomes blocked by a green or white creature, destroy RN at end of combat.
+ability=Whenever SN blocks or becomes blocked by a green or white creature, destroy that creature at end of combat.
 timing=main
 oracle=Whenever Abomination blocks or becomes blocked by a green or white creature, destroy that creature at end of combat.

@@ -4,7 +4,7 @@ value=3.938
 rarity=R
 type=Artifact
 cost={2}
-ability=At the beginning of each player's draw step, RN draws a card, then discards a card.
+ability=At the beginning of each player's draw step, that player draws a card, then discards a card.
 timing=main
 requires_groovy_code
 oracle=Players have no maximum hand size. At the beginning of each player's draw step, that player draws an additional card, then discards a card.

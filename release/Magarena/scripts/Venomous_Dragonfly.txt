@@ -7,6 +7,6 @@ subtype=Insect
 cost={3}{G}
 pt=1/1
 ability=Flying.;\
-        Whenever SN blocks or becomes blocked by a creature, destroy RN at end of combat.
+        Whenever SN blocks or becomes blocked by a creature, destroy that creature at end of combat.
 timing=main
 oracle=Flying. Whenever Venomous Dragonfly blocks or becomes blocked by a creature, destroy that creature at end of combat.

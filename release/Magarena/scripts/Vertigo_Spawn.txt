@@ -7,6 +7,6 @@ subtype=Illusion
 cost={1}{U}
 pt=0/3
 ability=Defender.;\
-        Whenever SN blocks a creature, tap RN.~RN doesn't untap during its controller's next untap step.
+        Whenever SN blocks a creature, tap that creature.~That creature doesn't untap during its controller's next untap step.
 timing=main
 oracle=Defender. Whenever Vertigo Spawn blocks a creature, tap that creature. That creature doesn't untap during its controller's next untap step.

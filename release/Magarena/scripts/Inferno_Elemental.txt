@@ -6,6 +6,6 @@ type=Creature
 subtype=Elemental
 cost={4}{R}{R}
 pt=4/4
-ability=Whenever SN blocks or becomes blocked by a creature, SN deals 3 damage to RN.
+ability=Whenever SN blocks or becomes blocked by a creature, SN deals 3 damage to that creature.
 timing=main
 oracle=Whenever Inferno Elemental blocks or becomes blocked by a creature, Inferno Elemental deals 3 damage to that creature.

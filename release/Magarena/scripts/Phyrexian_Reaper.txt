@@ -6,6 +6,6 @@ type=Creature
 subtype=Zombie
 cost={4}{B}
 pt=3/3
-ability=Whenever SN becomes blocked by a green creature, destroy RN. It can't be regenerated.
+ability=Whenever SN becomes blocked by a green creature, destroy that creature. It can't be regenerated.
 timing=main
 oracle=Whenever Phyrexian Reaper becomes blocked by a green creature, destroy that creature. It can't be regenerated.

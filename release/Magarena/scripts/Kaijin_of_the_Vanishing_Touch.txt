@@ -7,6 +7,6 @@ subtype=Spirit
 cost={1}{U}
 pt=0/3
 ability=Defender.;\
-        Whenever SN blocks a creature, return RN to its owner's hand at end of combat.
+        Whenever SN blocks a creature, return that creature to its owner's hand at end of combat.
 timing=smain
 oracle=Defender. Whenever Kaijin of the Vanishing Touch blocks a creature, return that creature to its owner's hand at end of combat.

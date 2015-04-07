@@ -7,6 +7,6 @@ subtype=Wall
 cost={1}{U}{U}
 pt=0/7
 ability=Defender.;\
-        Whenever SN blocks a creature, RN doesn't untap during its controller's next untap step.
+        Whenever SN blocks a creature, that creature doesn't untap during its controller's next untap step.
 timing=smain
 oracle=Defender. Whenever Wall of Frost blocks a creature, that creature doesn't untap during its controller's next untap step.

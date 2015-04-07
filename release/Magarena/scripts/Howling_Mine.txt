@@ -4,6 +4,6 @@ value=4.292
 rarity=R
 type=Artifact
 cost={2}
-ability=At the beginning of each player's draw step, if SN is untapped, RN draws an additional card.
+ability=At the beginning of each player's draw step, if SN is untapped, that player draws an additional card.
 timing=main
 oracle=At the beginning of each player's draw step, if Howling Mine is untapped, that player draws an additional card.

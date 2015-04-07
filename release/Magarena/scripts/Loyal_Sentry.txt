@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Soldier
 cost={W}
 pt=1/1
-ability=When SN blocks a creature, destroy RN.~Destroy SN.
+ability=When SN blocks a creature, destroy that creature.~Destroy SN.
 timing=main
 oracle=When Loyal Sentry blocks a creature, destroy that creature and Loyal Sentry.

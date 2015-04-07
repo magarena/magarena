@@ -6,6 +6,6 @@ type=Creature
 subtype=Lizard
 cost={3}{B}
 pt=2/2
-ability=Whenever SN blocks or becomes blocked by a nonblack creature, destroy RN at end of combat.
+ability=Whenever SN blocks or becomes blocked by a nonblack creature, destroy that creature at end of combat.
 timing=main
 oracle=Whenever Deathgazer blocks or becomes blocked by a nonblack creature, destroy that creature at end of combat.

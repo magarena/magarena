@@ -6,6 +6,6 @@ type=Creature
 subtype=Elemental,Hound
 cost={1}{R}
 pt=2/1
-ability=Whenever SN blocks or becomes blocked by a creature, SN deals 1 damage to RN.
+ability=Whenever SN blocks or becomes blocked by a creature, SN deals 1 damage to that creature.
 timing=main
 oracle=Whenever Ashmouth Hound blocks or becomes blocked by a creature, Ashmouth Hound deals 1 damage to that creature.
