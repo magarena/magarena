@@ -43,6 +43,8 @@ public class DeckChooserDialog extends MagicDialog {
 
         refreshLayout();
 
+        setVisible(true);
+
     }
 
     private void refreshLayout() {

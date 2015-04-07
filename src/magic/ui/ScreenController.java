@@ -229,8 +229,7 @@ public final class ScreenController {
     }
 
     public static void showDuelSidebarDialog(final IUIGameController controller) {
-        final DuelSidebarLayoutDialog dialog = new DuelSidebarLayoutDialog(getMainFrame(), controller);
-        dialog.setVisible(true);
+        new DuelSidebarLayoutDialog(getMainFrame(), controller);
     }
 
 }

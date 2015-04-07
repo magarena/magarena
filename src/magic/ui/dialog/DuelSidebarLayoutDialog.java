@@ -37,6 +37,7 @@ public class DuelSidebarLayoutDialog extends MagicDialog {
         setLookAndFeel();
         refreshLayout();
         refreshContent();
+        setVisible(true);
     }
 
     private void setLookAndFeel() {
