@@ -398,14 +398,18 @@ public enum MagicAbility {
             card.add(MagicManaActivation.create(ARG.cost(arg) + ", " + ARG.effect(arg), manatype));
         }
     },
-    DamageCreatureGrow("Whenever SN deals damage to a creature, put a \\+1/\\+1 counter on SN\\.",10) {
+    DamageCreature("Whenever SN deals damage to a creature, " + ARG.EFFECT, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(new MagicDamageGrowTrigger(false, false));
+            card.add(MagicWhenDamageIsDealtTrigger.DamageToCreature(
+                MagicRuleEventAction.create(ARG.effect(arg))
+            ));
         }
     },
-    CombatDamageCreatureGrow("Whenever SN deals combat damage to a creature, put a \\+1/\\+1 counter on SN\\.",10) {
+    CombatDamageCreature("Whenever SN deals combat damage to a creature, " + ARG.EFFECT, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(new MagicDamageGrowTrigger(true, false));
+            card.add(MagicWhenDamageIsDealtTrigger.CombatDamageToCreature(
+                MagicRuleEventAction.create(ARG.effect(arg))
+            ));
         }
     },
     DamageToOpponent("When(ever)? SN deals damage to an opponent, " + ARG.EFFECT, 10) {

@@ -24,6 +24,32 @@ public abstract class MagicWhenDamageIsDealtTrigger extends MagicTrigger<MagicDa
     public MagicTriggerType getType() {
         return MagicTriggerType.WhenDamageIsDealt;
     }
+    
+    public static MagicWhenDamageIsDealtTrigger DamageToCreature(final MagicSourceEvent sourceEvent) {
+        return new MagicWhenDamageIsDealtTrigger() {
+            @Override
+            public boolean accept(final MagicPermanent permanent, final MagicDamage damage) {
+                return super.accept(permanent, damage) && damage.isSource(permanent) && damage.isTargetCreature();
+            }
+            @Override
+            public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
+                return sourceEvent.getEvent(permanent, damage.getTargetPermanent());
+            }
+        };
+    }
+    
+    public static MagicWhenDamageIsDealtTrigger CombatDamageToCreature(final MagicSourceEvent sourceEvent) {
+        return new MagicWhenDamageIsDealtTrigger() {
+            @Override
+            public boolean accept(final MagicPermanent permanent, final MagicDamage damage) {
+                return super.accept(permanent, damage) && damage.isSource(permanent) && damage.isCombat() && damage.isTargetCreature();
+            }
+            @Override
+            public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
+                return sourceEvent.getEvent(permanent, damage.getTargetPermanent());
+            }
+        };
+    }
 
     public static MagicWhenDamageIsDealtTrigger DamageToPlayer(final MagicSourceEvent sourceEvent) {
         return new MagicWhenDamageIsDealtTrigger() {
