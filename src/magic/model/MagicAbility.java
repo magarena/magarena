@@ -10,8 +10,6 @@ import magic.model.trigger.*;
 import magic.model.condition.MagicCondition;
 import magic.model.condition.MagicConditionFactory;
 import magic.model.condition.MagicConditionParser;
-import magic.model.trigger.MagicThiefTrigger.Player;
-import magic.model.trigger.MagicThiefTrigger.Type;
 import magic.exception.ScriptParseException;
 
 import java.util.EnumSet;
