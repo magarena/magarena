@@ -267,6 +267,14 @@ public class ExplorerPanel extends ExplorerDeckEditorPanel implements ICardSelec
         });
     }
 
+    public MagicCardDefinition getSelectedCard() {
+        if (cardPoolTable.getSelectedCards().size() == 1) {
+            return cardPoolTable.getSelectedCards().get(0);
+        } else {
+            return null;
+        }
+    }
+
     //protected abstract void closeScreen();
 
     private class CardPoolMouseListener extends MouseAdapter {

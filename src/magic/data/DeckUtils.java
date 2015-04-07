@@ -1,9 +1,12 @@
 package magic.data;
 
+import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
@@ -280,7 +283,6 @@ public class DeckUtils {
     private static void retrieveDeckFiles(final File folder,final List<File> deckFiles) {
         final File[] files=folder.listFiles();
         for (final File file : files) {
-
             if (file.isDirectory()) {
                 retrieveDeckFiles(file,deckFiles);
             } else if (file.getName().endsWith(DECK_EXTENSION)) {
@@ -343,4 +345,32 @@ public class DeckUtils {
             return cardDefinition;
         }
     }
+
+    public static List<File> getDecksContainingCard(final MagicCardDefinition cardDef) {
+        final List<File> matchingDeckFiles = new ArrayList<>();
+        if (cardDef != null) {
+
+            final List<File> allDeckFiles = new ArrayList<>();
+            retrieveDeckFiles(new File(getDeckFolder()), allDeckFiles);
+
+            for (File deckFile : allDeckFiles) {
+                try (final BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream(deckFile), "UTF-8"))) {
+                    String line;
+                    while ((line = br.readLine()) != null) {
+                        if (!line.startsWith("#")) {
+                            if (line.contains(cardDef.getName())) {
+                                matchingDeckFiles.add(deckFile);
+                                break;
+                            }
+                        }
+                    }
+                } catch (IOException ex) {
+                    throw new RuntimeException(ex);
+                }
+            }
+
+        }
+        return matchingDeckFiles;
+    };
+
 }

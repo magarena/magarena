@@ -2,6 +2,7 @@ package magic.ui.screen;
 
 import java.awt.Desktop;
 import java.awt.event.ActionEvent;
+import java.io.File;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.nio.file.Path;
@@ -12,9 +13,11 @@ import javax.swing.AbstractAction;
 import javax.swing.JPanel;
 import magic.utility.MagicSystem;
 import magic.data.CardDefinitions;
+import magic.data.DeckUtils;
 import magic.data.MagicIcon;
 import magic.ui.IconImages;
 import magic.data.MagicSetDefinitions;
+import magic.model.MagicCardDefinition;
 import magic.ui.explorer.ExplorerPanel;
 import magic.ui.MagicFrame;
 import magic.ui.ScreenOptionsOverlay;
@@ -86,7 +89,7 @@ public class CardExplorerScreen
             buttons.add(
                     new ActionBarButton(
                             IconImages.getIcon(MagicIcon.SAVE_ICON),
-                            "Save Missing Cards", "Creates CardsMissingInMagarena.txt which can be used by the Scripts Builder.",
+                            "Save Missing Cards [DevMode Only]", "Creates CardsMissingInMagarena.txt which can be used by the Scripts Builder.",
                             new AbstractAction() {
                                 @Override
                                 public void actionPerformed(final ActionEvent e) {
@@ -94,6 +97,26 @@ public class CardExplorerScreen
                                         saveMissingCardsList();
                                     } catch (IOException e1) {
                                         throw new RuntimeException(e1);
+                                    }
+                                }
+                            })
+            );
+            buttons.add(
+                    new ActionBarButton(
+                            IconImages.getIcon(MagicIcon.PICTURE),
+                            "Search decks [DevMode Only]", "Searches for decks containing selected card and displays list in stdout.",
+                            new AbstractAction() {
+                                @Override
+                                public void actionPerformed(final ActionEvent e) {
+                                    final MagicCardDefinition cardDef = content.getSelectedCard();
+                                    if (cardDef != null) {
+                                        System.out.printf("==== DECKS CONTAINING %s ====\n", cardDef.getName());
+                                        final List<File> deckFiles =
+                                                DeckUtils.getDecksContainingCard(cardDef);
+                                        for (File deckFile : deckFiles) {
+                                            System.out.println(deckFile);
+                                        }
+                                        System.out.println("Found=" + deckFiles.size());
                                     }
                                 }
                             })
