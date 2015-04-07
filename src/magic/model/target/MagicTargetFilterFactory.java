@@ -2084,7 +2084,6 @@ public class MagicTargetFilterFactory {
         single.put("basic land card from your library", BASIC_LAND_CARD_FROM_LIBRARY);
         single.put("snow land card from your library", SNOW_LAND_CARD_FROM_LIBRARY);
         single.put("basic land card or a Gate card from your library", BASIC_LAND_CARD_OR_GATE_CARD_FROM_LIBRARY);
-        single.put("Forest card from your library", FOREST_CARD_FROM_LIBRARY);
         single.put("Plains, Island, Swamp, Mountain or Forest card from your library", LAND_CARD_WITH_BASIC_LAND_TYPE_FROM_LIBRARY);
         single.put("Plains or Island card from your library", card(MagicSubType.Plains).or(MagicSubType.Island).from(MagicTargetType.Library));
         single.put("Plains or Swamp card from your library", card(MagicSubType.Plains).or(MagicSubType.Swamp).from(MagicTargetType.Library));
@@ -2303,7 +2302,6 @@ public class MagicTargetFilterFactory {
         single.put("legendary snakes you control", LEGENDARY_SNAKE_YOU_CONTROL);
         single.put("untapped land you control", UNTAPPED_LAND_YOU_CONTROL);
         single.put("red or green enchantment you control", RED_OR_GREEN_ENCHANTMENT_YOU_CONTROL);
-        single.put("giant you control", GIANT_YOU_CONTROL);
         
         // <color|type|subtype> an opponent controls
         single.put("permanent an opponent controls", PERMANENT_AN_OPPONENT_CONTROLS);
@@ -2337,7 +2335,6 @@ public class MagicTargetFilterFactory {
         single.put("nonwhite permanent", NONWHITE_PERMANENT);
         single.put("enchanted permanent", ENCHANTED_PERMANENT);
         single.put("enchantment or enchanted permanent", ENCHANTMENT_OR_ENCHANTED_PERMANENT);
-        single.put("legendary permanent", LEGENDARY_PERMANENT);
         single.put("nonartifact permanent", NONARTIFACT_PERMANENT);
         
         // <color|type|subtype>
