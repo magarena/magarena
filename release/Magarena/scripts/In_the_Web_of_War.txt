@@ -4,6 +4,6 @@ value=3.806
 rarity=R
 type=Enchantment
 cost={3}{R}{R}
-ability=Whenever a creature enters the battlefield under your control, RN gets +2/+0 and gains haste until end of turn.
+ability=Whenever a creature enters the battlefield under your control, it gets +2/+0 and gains haste until end of turn.
 timing=main
 oracle=Whenever a creature enters the battlefield under your control, it gets +2/+0 and gains haste until end of turn.

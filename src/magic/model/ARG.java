@@ -69,19 +69,20 @@ public class ARG {
         return m.group("pt");
     }
     
-    public static final String IT = "((?<rn>(rn|that [a-z]+))|(?<sn>(sn|it|this [a-z]+)))";
-    public static String it(final Matcher m) {
-        return m.group("it");
-    }
+    public static final String IT = "((?<rn>(rn|that [a-z]+))|(?<sn>(sn|this [a-z]+))|(?<it>it))";
     public static MagicPermanent itPermanent(final MagicEvent event, final Matcher m) {
-        if (m.group("rn") != null) {
+        if (m.group("it") != null) {
+            return event.hasRef() ? event.getRefPermanent() : event.getPermanent();
+        } else if (m.group("rn") != null) {
             return event.getRefPermanent();
         } else {
             return event.getPermanent();
         }
     }
     public static MagicSource itSource(final MagicEvent event, final Matcher m) {
-        if (m.group("rn") != null) {
+        if (m.group("it") != null) {
+            return event.hasRef() ? event.getRefSource() : event.getSource();
+        } else if (m.group("rn") != null) {
             return event.getRefSource();
         } else {
             return event.getSource();
@@ -89,9 +90,6 @@ public class ARG {
     }
     
     public static final String YOU = "((?<rn>(rn|that [a-z]+|him or her))|(?<pn>(pn||you)))";
-    public static String you(final Matcher m) {
-        return m.group("you");
-    }
     public static MagicTarget youTarget(final MagicEvent event, final Matcher m) {
         if (m.group("rn") != null) {
             return event.getRefTarget();

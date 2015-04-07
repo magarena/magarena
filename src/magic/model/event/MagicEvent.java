@@ -303,6 +303,14 @@ public class MagicEvent implements MagicCopyable {
     public final MagicSource getSource() {
         return source;
     }
+
+    public final MagicPlayer getPlayer() {
+        return player;
+    }
+
+    public final boolean hasRef() {
+        return ref != NO_REF;
+    }
     
     public final MagicPermanent getPermanent() {
         return (MagicPermanent)source;
@@ -318,10 +326,6 @@ public class MagicEvent implements MagicCopyable {
     
     public final MagicCardList getRefCardList() {
         return (MagicCardList)ref;
-    }
-
-    public final MagicPlayer getPlayer() {
-        return player;
     }
 
     public final MagicPlayer getRefPlayer() {

@@ -1,6 +1,7 @@
 package magic.model;
 
 import magic.model.phase.MagicPhaseType;
+import magic.model.event.MagicEvent;
 
 import java.util.Collection;
 import java.util.Iterator;
@@ -66,10 +67,10 @@ public class MagicMessage {
         return sourceText
             .replaceAll("SN", source.toString())
             .replaceAll("\\b(T|t)his [a-z]+\\b" + evenQuotes, source.toString())
-            .replaceAll("\\bit\\b" + evenQuotes, source.toString())
             .replaceAll("RN", ref.toString())
             .replaceAll("\\b(T|t)hat [a-z]+\\b" + evenQuotes, ref.toString())
-            .replaceAll("PN", player.toString());
+            .replaceAll("PN", player.toString())
+            .replaceAll("\\bit\\b" + evenQuotes, ref != MagicEvent.NO_REF ? ref.toString() : source.toString());
     }
 
     public static String replaceChoices(final String sourceText,final Object[] choices) {
