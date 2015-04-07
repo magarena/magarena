@@ -14,11 +14,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicCardList hand = new MagicCardList(event.getPlayer().getHand());
             for (final MagicCard card : hand) {
-                game.doAction(new MagicExileLinkAction(
-                    event.getPermanent(),
-                    card,
-                    MagicLocationType.OwnersHand
-                ));
+                game.doAction(new MagicExileLinkAction(event.getPermanent(), card, MagicLocationType.OwnersHand));
             }
         }
     },
@@ -33,11 +29,8 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicReturnLinkedExileAction(
-                event.getPermanent(),
-                MagicLocationType.OwnersHand
-            ));
-            game.doAction(new MagicDrawAction(event.getPlayer(),1));
+            game.doAction(new MagicReturnLinkedExileAction(event.getPermanent(), MagicLocationType.OwnersHand));
+            game.doAction(new MagicDrawAction(event.getPlayer(), 1));
         }
     }
 ]

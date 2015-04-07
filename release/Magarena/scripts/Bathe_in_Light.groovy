@@ -1,12 +1,8 @@
 def action = {
     final MagicGame game, final MagicEvent event ->
-    final Collection<MagicPermanent> creatures = game.filterPermanents(MagicTargetFilterFactory.CREATURE);
-    for (final MagicPermanent creature : creatures) {
-        if (creature.getColorFlags() & event.getRefPermanent().getColorFlags()) {
-            game.doAction(new MagicGainAbilityAction(
-                creature,
-                event.getChosenColor().getProtectionAbility()
-            ));
+    game.filterPermanents(MagicTargetFilterFactory.CREATURE) each {
+        if (it.getColorFlags() & event.getRefPermanent().getColorFlags()) {
+            game.doAction(new MagicGainAbilityAction(it, event.getChosenColor().getProtectionAbility()));
         }
     }
 }

@@ -13,10 +13,8 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final int amount = event.getCardOnStack().getX();
-            final Collection<MagicPermanent> targets =
-                game.filterPermanents(event.getPlayer(),MagicTargetFilterFactory.CREATURE);
-            for (final MagicPermanent target : targets) {
-                game.doAction(new MagicChangeCountersAction(target,MagicCounterType.MinusOne,amount));
+            game.filterPermanents(event.getPlayer(), MagicTargetFilterFactory.CREATURE) each {
+                game.doAction(new MagicChangeCountersAction(it, MagicCounterType.MinusOne, amount));
             }
             game.doAction(new MagicChangeCardDestinationAction(event.getCardOnStack(),MagicLocationType.OwnersLibrary));
         }

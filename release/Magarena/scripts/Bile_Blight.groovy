@@ -14,10 +14,10 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final MagicTargetFilter<MagicPermanent> targetFilter =
-                    new MagicNameTargetFilter(it.getName());
-                final Collection<MagicPermanent> targets =
-                    game.filterPermanents(event.getPlayer(),targetFilter);
+                final Collection<MagicPermanent> targets = game.filterPermanents(
+                    event.getPlayer(),
+                    new MagicNameTargetFilter(it.getName())
+                );
                 for (final MagicPermanent permanent : targets) {
                     if (permanent.isCreature()) {
                         game.doAction(new MagicChangeTurnPTAction(permanent,-3,-3));

@@ -12,13 +12,12 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final int amount = event.isKicked() ? 4 : 1;
-            final Collection<MagicPermanent> targets=
-                game.filterPermanents(event.getPlayer(),MagicTargetFilterFactory.CREATURE_WITHOUT_FLYING);
-            for (final MagicPermanent target : targets) {
-                game.doAction(new MagicDealDamageAction(event.getSource(),target,amount));
+            final MagicSource source = event.getSource();
+            game.filterPermanents(event.getPlayer(), MagicTargetFilterFactory.CREATURE_WITHOUT_FLYING) each {
+                game.doAction(new MagicDealDamageAction(source, it, amount));
             }
             for (final MagicPlayer player : game.getAPNAP()) {
-                game.doAction(new MagicDealDamageAction(event.getSource(),player,amount));
+                game.doAction(new MagicDealDamageAction(source, player, amount));
             }
         }
     }
