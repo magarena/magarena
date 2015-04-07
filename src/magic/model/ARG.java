@@ -1,5 +1,9 @@
 package magic.model;
 
+import magic.model.MagicSource;
+import magic.model.MagicPlayer;
+import magic.model.target.MagicTarget;
+import magic.model.event.MagicEvent;
 import magic.data.EnglishToInt;
 
 import java.util.regex.Matcher;
@@ -65,14 +69,42 @@ public class ARG {
         return m.group("pt");
     }
     
-    public static final String IT = "(?<it>(rn|sn|it|this permanent|this creature))";
+    public static final String IT = "((?<rn>(rn))|(?<sn>(sn|it|this permanent|this creature)))";
     public static String it(final Matcher m) {
         return m.group("it");
     }
+    public static MagicPermanent itPermanent(final MagicEvent event, final Matcher m) {
+        if (m.group("rn") != null) {
+            return event.getRefPermanent();
+        } else {
+            return event.getPermanent();
+        }
+    }
+    public static MagicSource itSource(final MagicEvent event, final Matcher m) {
+        if (m.group("rn") != null) {
+            return event.getRefSource();
+        } else {
+            return event.getSource();
+        }
+    }
     
-    public static final String YOU = "(?<you>(rn|pn|you||))";
+    public static final String YOU = "((?<rn>(rn))|(?<pn>(pn||you)))";
     public static String you(final Matcher m) {
         return m.group("you");
+    }
+    public static MagicTarget youTarget(final MagicEvent event, final Matcher m) {
+        if (m.group("rn") != null) {
+            return event.getRefTarget();
+        } else {
+            return event.getPlayer();
+        }
+    }
+    public static MagicPlayer youPlayer(final MagicEvent event, final Matcher m) {
+        if (m.group("rn") != null) {
+            return event.getRefPlayer();
+        } else {
+            return event.getPlayer();
+        }
     }
     
     public static final String COLON = "\\s*:\\s*";

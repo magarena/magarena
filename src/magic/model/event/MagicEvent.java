@@ -39,7 +39,6 @@ import magic.model.target.MagicTargetNone;
 import magic.model.target.MagicTargetPicker;
 
 import java.util.List;
-import java.util.regex.Matcher;
 
 public class MagicEvent implements MagicCopyable {
 
@@ -301,37 +300,10 @@ public class MagicEvent implements MagicCopyable {
         return true;
     }
     
-    public final MagicTarget getRefOrPlayer(final Matcher m) {
-        final String name = ARG.you(m);
-        if (name.equalsIgnoreCase("rn")) {
-            return (MagicTarget)ref;
-        } else {
-            return getPlayer();
-        }
-    }
-    
-    public final MagicSource getSource(final Matcher m) {
-        final String name = ARG.it(m);
-        if (name.equalsIgnoreCase("rn")) {
-            return (MagicSource)ref;
-        } else {
-            return getSource();
-        }
-    }
-
     public final MagicSource getSource() {
         return source;
     }
     
-    public final MagicPermanent getPermanent(final Matcher m) {
-        final String name = ARG.it(m);
-        if (name.equalsIgnoreCase("rn")) {
-            return getRefPermanent();
-        } else {
-            return getPermanent();
-        }
-    }
-
     public final MagicPermanent getPermanent() {
         return (MagicPermanent)source;
     }
@@ -346,15 +318,6 @@ public class MagicEvent implements MagicCopyable {
     
     public final MagicCardList getRefCardList() {
         return (MagicCardList)ref;
-    }
-
-    public final MagicPlayer getPlayer(final Matcher m) {
-        final String name = ARG.you(m);
-        if (name.equalsIgnoreCase("rn")) {
-            return getRefPlayer();
-        } else {
-            return getPlayer();
-        }
     }
 
     public final MagicPlayer getPlayer() {
@@ -375,6 +338,14 @@ public class MagicEvent implements MagicCopyable {
 
     public final MagicCard getRefCard() {
         return (MagicCard)ref;
+    }
+    
+    public final MagicSource getRefSource() {
+        return (MagicSource)ref;
+    }
+    
+    public final MagicTarget getRefTarget() {
+        return (MagicTarget)ref;
     }
 
     public final MagicPermanentActivation getRefPermanentActivation() {

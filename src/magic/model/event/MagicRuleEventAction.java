@@ -81,7 +81,7 @@ public enum MagicRuleEventAction {
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    final MagicPermanent it = event.getPermanent(matcher);
+                    final MagicPermanent it = ARG.itPermanent(event, matcher);
                     if (matcher.group("noregen") != null) {
                         game.doAction(MagicChangeStateAction.Set(it, MagicPermanentState.CannotBeRegenerated));
                     }
@@ -100,7 +100,7 @@ public enum MagicRuleEventAction {
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    final MagicPermanent it = event.getPermanent(matcher);
+                    final MagicPermanent it = ARG.itPermanent(event, matcher);
                     if (it.isValid()) {
                         game.doAction(new MagicAddTurnTriggerAction(
                             it,
@@ -439,13 +439,13 @@ public enum MagicRuleEventAction {
                         filter
                     );
                     for (final MagicTarget target : targets) {
-                        game.doAction(new MagicDealDamageAction(event.getSource(matcher),target,amount));
+                        game.doAction(new MagicDealDamageAction(ARG.itSource(event, matcher),target,amount));
                     }
                 }
             };
         }
     },
-    DamageRefOrPlayer(
+    DamageTarget(
         "sn deal(s)? (?<amount>[0-9]+) damage to " + ARG.YOU + "\\.",
         MagicTiming.Removal,
         "Damage"
@@ -456,7 +456,7 @@ public enum MagicRuleEventAction {
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    game.doAction(new MagicDealDamageAction(event.getSource(),event.getRefOrPlayer(matcher),amount));
+                    game.doAction(new MagicDealDamageAction(event.getSource(),ARG.youTarget(event, matcher),amount));
                 }
             };
         }
@@ -503,7 +503,7 @@ public enum MagicRuleEventAction {
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
                     event.processTarget(game,new MagicTargetAction() {
                         public void doAction(final MagicTarget target) {
-                            game.doAction(new MagicDealDamageAction(event.getSource(matcher),target,amount));
+                            game.doAction(new MagicDealDamageAction(ARG.itSource(event, matcher),target,amount));
                         }
                     });
                 }
@@ -650,7 +650,7 @@ public enum MagicRuleEventAction {
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    game.doAction(new MagicDrawAction(event.getPlayer(matcher), amount));
+                    game.doAction(new MagicDrawAction(ARG.youPlayer(event, matcher), amount));
                 }
             };
         }
@@ -771,8 +771,8 @@ public enum MagicRuleEventAction {
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    game.doAction(new MagicDrawAction(event.getPlayer(matcher), amount1));
-                    game.addEvent(new MagicDiscardEvent(event.getSource(), event.getPlayer(matcher), amount2));
+                    game.doAction(new MagicDrawAction(ARG.youPlayer(event, matcher), amount1));
+                    game.addEvent(new MagicDiscardEvent(event.getSource(), ARG.youPlayer(event, matcher), amount2));
                 }
             };
         }
@@ -990,7 +990,7 @@ public enum MagicRuleEventAction {
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    game.doAction(new MagicChangeTurnPTAction(event.getPermanent(matcher),power,toughness));
+                    game.doAction(new MagicChangeTurnPTAction(ARG.itPermanent(event, matcher),power,toughness));
                 }
             };
         }
@@ -1057,8 +1057,8 @@ public enum MagicRuleEventAction {
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    game.doAction(new MagicChangeTurnPTAction(event.getPermanent(matcher),power,toughness));
-                    game.doAction(new MagicGainAbilityAction(event.getPermanent(matcher),abilityList));
+                    game.doAction(new MagicChangeTurnPTAction(ARG.itPermanent(event, matcher),power,toughness));
+                    game.doAction(new MagicGainAbilityAction(ARG.itPermanent(event, matcher),abilityList));
                 }
             };
         }
@@ -1340,7 +1340,7 @@ public enum MagicRuleEventAction {
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    game.doAction(new MagicGainAbilityAction(event.getPermanent(matcher),abilityList));
+                    game.doAction(new MagicGainAbilityAction(ARG.itPermanent(event, matcher),abilityList));
                 }
             };
         }
@@ -1685,7 +1685,7 @@ public enum MagicRuleEventAction {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
                     game.doAction(new MagicChangeCountersAction(
-                        event.getPermanent(matcher),
+                        ARG.itPermanent(event, matcher),
                         counterType,
                         amount
                     ));
@@ -1955,7 +1955,7 @@ public enum MagicRuleEventAction {
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    final MagicPermanent it = event.getPermanent(matcher);
+                    final MagicPermanent it = ARG.itPermanent(event, matcher);
                     if (it.isValid()) {
                         game.doAction(new MagicAddTriggerAction(
                             it,
@@ -2247,7 +2247,7 @@ public enum MagicRuleEventAction {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
                     game.doAction(MagicChangeStateAction.Set(
-                        event.getPermanent(matcher),
+                        ARG.itPermanent(event, matcher),
                         MagicPermanentState.DoesNotUntapDuringNext
                     ));
                 }
@@ -2301,7 +2301,7 @@ public enum MagicRuleEventAction {
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    game.doAction(new MagicTapAction(event.getPermanent(matcher)));
+                    game.doAction(new MagicTapAction(ARG.itPermanent(event, matcher)));
                 }
             };
         }
@@ -2373,7 +2373,7 @@ public enum MagicRuleEventAction {
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    game.doAction(new MagicUntapAction(event.getPermanent(matcher)));
+                    game.doAction(new MagicUntapAction(ARG.itPermanent(event, matcher)));
                 }
             };
         }
@@ -2686,7 +2686,7 @@ public enum MagicRuleEventAction {
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    game.doAction(new MagicRegenerateAction(event.getPermanent(matcher)));
+                    game.doAction(new MagicRegenerateAction(ARG.itPermanent(event, matcher)));
                 }
             };
         }
