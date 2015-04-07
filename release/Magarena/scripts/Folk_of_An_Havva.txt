@@ -6,6 +6,6 @@ type=Creature
 subtype=Human
 cost={G}
 pt=1/1
-ability=Whenever SN blocks, SN gets +2/+0 until end of turn.
+ability=Whenever SN blocks, it gets +2/+0 until end of turn.
 timing=main
 oracle=Whenever Folk of An-Havva blocks, it gets +2/+0 until end of turn.

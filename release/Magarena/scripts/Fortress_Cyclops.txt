@@ -6,7 +6,7 @@ type=Creature
 subtype=Cyclops,Soldier
 cost={3}{R}{W}
 pt=3/3
-ability=Whenever SN attacks, SN gets +3/+0 until end of turn.;\
-        Whenever SN blocks, SN gets +0/+3 until end of turn.
+ability=Whenever SN attacks, it gets +3/+0 until end of turn.;\
+        Whenever SN blocks, it gets +0/+3 until end of turn.
 timing=main
 oracle=Whenever Fortress Cyclops attacks, it gets +3/+0 until end of turn. Whenever Fortress Cyclops blocks, it gets +0/+3 until end of turn.
