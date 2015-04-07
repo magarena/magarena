@@ -1,5 +1,6 @@
 package magic.ui.dialog;
 
+import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
@@ -7,12 +8,7 @@ import javax.swing.AbstractAction;
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.JButton;
 import javax.swing.JComboBox;
-import javax.swing.JComponent;
-import javax.swing.JDialog;
-import javax.swing.JFrame;
 import javax.swing.JPanel;
-import javax.swing.JRootPane;
-import javax.swing.KeyStroke;
 import javax.swing.SwingUtilities;
 import magic.data.DeckType;
 import magic.firemind.FiremindJsonReader;
@@ -25,7 +21,7 @@ import magic.ui.widget.deck.RandomDecksComboBox;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-public class DeckChooserDialog extends JDialog {
+public class DeckChooserDialog extends MagicDialog {
 
     private final JComboBox<DeckType> deckTypeCombo;
     private JComboBox<String> deckNameCombo;
@@ -35,30 +31,26 @@ public class DeckChooserDialog extends JDialog {
 
     public DeckChooserDialog(final DeckType aDeckType, final String aDeckName) {
 
-        // modal dialog
-        super(ScreenController.getMainFrame(), true);
+        super(ScreenController.getMainFrame(), "Select Deck", new Dimension(300, 180));
         
-        this.setTitle("Select Deck");
-        this.setSize(300, 180);
-        this.setLocationRelativeTo(ScreenController.getMainFrame());
-        this.setResizable(false);
-        this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-
         deckTypeCombo = getDeckTypeComboBox();
         deckTypeCombo.setSelectedItem(aDeckType);
 
         decksPanel = new DecksPanel(aDeckName);
         decksPanel.setDeckType(aDeckType);
 
-        getContentPane().setLayout(new MigLayout("flowy"));
-        getContentPane().add(deckTypeCombo);
-        getContentPane().add(decksPanel, "w 100%");
-        getContentPane().add(getButtonPanel(), "w 100%, h 40!, pushy, aligny bottom");
-
-        setEscapeKeyAction();
         setSaveButtonAction();
 
-        setVisible(true);
+        refreshLayout();
+
+    }
+
+    private void refreshLayout() {
+        final JPanel panel = getDialogContentPanel();
+        panel.setLayout(new MigLayout("flowy, gap 0"));
+        panel.add(deckTypeCombo);
+        panel.add(decksPanel, "w 100%");
+        panel.add(getButtonPanel(), "w 100%, h 40!, pushy, aligny bottom");
     }
 
     private JComboBox<DeckType> getDeckTypeComboBox() {
@@ -97,17 +89,6 @@ public class DeckChooserDialog extends JDialog {
         });
     }
 
-    private void setEscapeKeyAction() {
-        JRootPane root = getRootPane();
-        root.getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW).put(KeyStroke.getKeyStroke("ESCAPE"), "closeDialog");
-        root.getActionMap().put("closeDialog", new AbstractAction() {
-            @Override
-            public void actionPerformed(final ActionEvent e) {
-                dispose();
-            }
-        });
-    }
-
     private JPanel getButtonPanel() {
         final JPanel buttonPanel = new JPanel(new MigLayout("alignx right"));
         buttonPanel.add(saveButton, "w 80!");
@@ -117,18 +98,23 @@ public class DeckChooserDialog extends JDialog {
 
     private JButton getCancelButton() {
         final JButton btn = new JButton("Cancel");
-        btn.addActionListener(new AbstractAction() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                isCancelled = true;
-                dispose();
-            }
-        });
+        btn.addActionListener(getCancelAction());
         return btn;
     }
 
     public boolean isCancelled() {
         return isCancelled;
+    }
+
+    @Override
+    protected AbstractAction getCancelAction() {
+        return new AbstractAction() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                isCancelled = true;
+                dispose();
+            }
+        };
     }
 
     private class DecksPanel extends JPanel {

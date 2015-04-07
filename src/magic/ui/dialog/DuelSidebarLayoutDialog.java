@@ -5,10 +5,8 @@ import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import java.util.Enumeration;
 import javax.swing.AbstractAction;
-import javax.swing.BorderFactory;
 import javax.swing.DefaultListModel;
 import javax.swing.JButton;
-import javax.swing.JComponent;
 import javax.swing.JList;
 import javax.swing.JPanel;
 import javax.swing.ListSelectionModel;
@@ -25,7 +23,6 @@ public class DuelSidebarLayoutDialog extends MagicDialog {
     private static final Color HIGHLIGHT_BACK = MagicStyle.getTheme().getColor(Theme.COLOR_TITLE_BACKGROUND);
     private static final Color HIGHLIGHT_FORE = MagicStyle.getTheme().getColor(Theme.COLOR_TITLE_FOREGROUND);
     
-    private final MigLayout migLayout = new MigLayout();
     private boolean isCancelled = false;
     private final JList<String> jlist = new JList<>();
     private DefaultListModel<String> listModel;
@@ -42,19 +39,7 @@ public class DuelSidebarLayoutDialog extends MagicDialog {
         refreshContent();
     }
 
-    @Override
-    protected void setLookAndFeel() {
-        super.setLookAndFeel();
-
-        migLayout.setLayoutConstraints("flowy, insets 0");
-        final JComponent content = (JComponent)getContentPane();
-        content.setLayout(migLayout);
-
-        content.setBorder(BorderFactory.createCompoundBorder(
-                BorderFactory.createLineBorder(Color.DARK_GRAY),
-                BorderFactory.createMatteBorder(0, 8, 8, 8, MagicStyle.getTheme().getColor(Theme.COLOR_TITLE_BACKGROUND)))
-        );
-        
+    private void setLookAndFeel() {
         jlist.setOpaque(true);
         jlist.setBackground(Color.WHITE);
         jlist.setForeground(Color.BLACK);
@@ -74,20 +59,13 @@ public class DuelSidebarLayoutDialog extends MagicDialog {
     }
 
     private void refreshLayout() {
-        final JComponent content = (JComponent)getContentPane();
-        content.removeAll();
-        content.add(getDialogCaptionLabel(), "w 100%, h 26!");
-        content.add(getContentPanel(), "w 100%, h 100%");
-    }
-    
-    private JPanel getContentPanel() {
-        final JPanel panel = new JPanel(new MigLayout("flowy, gap 0"));
+        final JPanel panel = getDialogContentPanel();
+        panel.setLayout(new MigLayout("flowy, gap 0"));
         panel.add(getListButtonPanel(), "w 100%, h 30!");
         panel.add(jlist, "w 100%, h 100%, aligny top");
         panel.add(getDialogButtonPanel(), "w 100%, h 40!, pushy, aligny bottom, spanx");
-        return panel;
     }
-
+    
     private JPanel getListButtonPanel() {
         final JPanel buttonPanel = new JPanel(new MigLayout("insets 0, gap 0"));
         buttonPanel.add(getMoveDownButton(), "w 50%");
