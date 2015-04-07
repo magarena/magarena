@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Rogue
 cost={4}{B}
 pt=3/3
-ability=Whenever SN attacks, SN gets +2/+0 until end of turn.
+ability=Whenever SN attacks, it gets +2/+0 until end of turn.
 timing=main
 oracle=Whenever Charging Bandits attacks, it gets +2/+0 until end of turn.
