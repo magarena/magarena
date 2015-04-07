@@ -1,13 +1,8 @@
 package magic.ui.dialog;
 
-import magic.data.DeckType;
-import magic.ui.MagicFrame;
-import magic.ui.widget.FontsAndBorders;
-import magic.ui.widget.deck.CustomDecksComboxBox;
-import magic.ui.widget.deck.PrebuiltDecksComboxBox;
-import magic.ui.widget.deck.RandomDecksComboBox;
-import net.miginfocom.swing.MigLayout;
-
+import java.awt.event.ActionEvent;
+import java.awt.event.ItemEvent;
+import java.awt.event.ItemListener;
 import javax.swing.AbstractAction;
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.JButton;
@@ -19,66 +14,41 @@ import javax.swing.JPanel;
 import javax.swing.JRootPane;
 import javax.swing.KeyStroke;
 import javax.swing.SwingUtilities;
-
-import java.awt.event.ActionEvent;
-import java.awt.event.ItemEvent;
-import java.awt.event.ItemListener;
-import magic.ui.widget.deck.FiremindDecksComboxBox;
+import magic.data.DeckType;
 import magic.firemind.FiremindJsonReader;
+import magic.ui.ScreenController;
+import magic.ui.widget.FontsAndBorders;
+import magic.ui.widget.deck.CustomDecksComboxBox;
+import magic.ui.widget.deck.FiremindDecksComboxBox;
+import magic.ui.widget.deck.PrebuiltDecksComboxBox;
+import magic.ui.widget.deck.RandomDecksComboBox;
+import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
 public class DeckChooserDialog extends JDialog {
 
     private final JComboBox<DeckType> deckTypeCombo;
-    private DeckType selectedDeckType = DeckType.Random;
-    private JComboBox<String> deckValueCombo;
+    private JComboBox<String> deckNameCombo;
     private final DecksPanel decksPanel;
     private boolean isCancelled = false;
     private final JButton saveButton = new JButton("Save");
 
-    // CTR : edit an existing profile.
-    public DeckChooserDialog(final MagicFrame frame) {
+    public DeckChooserDialog(final DeckType aDeckType, final String aDeckName) {
 
-        super(frame, true);
+        // modal dialog
+        super(ScreenController.getMainFrame(), true);
+        
         this.setTitle("Select Deck");
         this.setSize(300, 180);
-        this.setLocationRelativeTo(frame);
+        this.setLocationRelativeTo(ScreenController.getMainFrame());
         this.setResizable(false);
         this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 
-        decksPanel = new DecksPanel();
+        deckTypeCombo = getDeckTypeComboBox();
+        deckTypeCombo.setSelectedItem(aDeckType);
 
-        deckTypeCombo = new JComboBox<>();
-        deckTypeCombo.setModel(new DefaultComboBoxModel<>(DeckType.values()));
-        deckTypeCombo.addItemListener(new ItemListener() {
-            @Override
-            public void itemStateChanged(final ItemEvent e) {
-                if (e.getStateChange() == ItemEvent.SELECTED) {
-                    SwingUtilities.invokeLater(new Runnable() {
-                        @Override
-                        public void run() {
-                            selectedDeckType = (DeckType)e.getItem();
-                            decksPanel.setDeckType(selectedDeckType);
-                        }
-                    });
-                }
-            }
-        });
-        deckTypeCombo.setLightWeightPopupEnabled(false);
-        deckTypeCombo.setFocusable(false);
-        deckTypeCombo.setFont(FontsAndBorders.FONT2);
-        deckTypeCombo.setSelectedIndex(0);
-
-        decksPanel.setDeckType((DeckType)deckTypeCombo.getSelectedItem());
-
-        saveButton.addActionListener(new AbstractAction() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                if (getDeckValue().trim().length() > 0) {
-                    dispose();
-                }
-            }
-        });
+        decksPanel = new DecksPanel(aDeckName);
+        decksPanel.setDeckType(aDeckType);
 
         getContentPane().setLayout(new MigLayout("flowy"));
         getContentPane().add(deckTypeCombo);
@@ -86,8 +56,45 @@ public class DeckChooserDialog extends JDialog {
         getContentPane().add(getButtonPanel(), "w 100%, h 40!, pushy, aligny bottom");
 
         setEscapeKeyAction();
+        setSaveButtonAction();
 
         setVisible(true);
+    }
+
+    private JComboBox<DeckType> getDeckTypeComboBox() {
+
+        final JComboBox<DeckType> cbo = new JComboBox<>();
+        cbo.setModel(new DefaultComboBoxModel<>(DeckType.values()));
+        cbo.setLightWeightPopupEnabled(false);
+        cbo.setFocusable(false);
+        cbo.setFont(FontsAndBorders.FONT2);
+
+        cbo.addItemListener(new ItemListener() {
+            @Override
+            public void itemStateChanged(final ItemEvent e) {
+                if (e.getStateChange() == ItemEvent.SELECTED) {
+                    SwingUtilities.invokeLater(new Runnable() {
+                        @Override
+                        public void run() {
+                            decksPanel.setDeckType((DeckType)e.getItem());
+                        }
+                    });
+                }
+            }
+        });
+
+        return cbo;
+    }
+
+    private void setSaveButtonAction() {
+        saveButton.addActionListener(new AbstractAction() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if (getDeckName().trim().length() > 0) {
+                    dispose();
+                }
+            }
+        });
     }
 
     private void setEscapeKeyAction() {
@@ -126,7 +133,10 @@ public class DeckChooserDialog extends JDialog {
 
     private class DecksPanel extends JPanel {
 
-        public DecksPanel() {
+        private String defaultDeckName;
+
+        public DecksPanel(final String aDefaultDeckName) {
+            this.defaultDeckName = aDefaultDeckName;
             setLayout(new MigLayout("insets 0"));
         }
 
@@ -140,31 +150,33 @@ public class DeckChooserDialog extends JDialog {
         private JComboBox<String> getDecksCombo(final DeckType deckType) {
             switch (deckType) {
             case Random:
-                deckValueCombo = new RandomDecksComboBox("");
+                deckNameCombo = new RandomDecksComboBox("");
                 break;
             case Preconstructed:
-                deckValueCombo = new PrebuiltDecksComboxBox();
+                deckNameCombo = new PrebuiltDecksComboxBox();
                 break;
             case Custom:
-                deckValueCombo = new CustomDecksComboxBox();
+                deckNameCombo = new CustomDecksComboxBox();
                 break;
             case Firemind:
                 FiremindJsonReader.refreshTopDecks();
-                deckValueCombo = new FiremindDecksComboxBox();
+                deckNameCombo = new FiremindDecksComboxBox();
                 break;
             }
-            saveButton.setEnabled(deckValueCombo.getItemCount() > 0);
-            return deckValueCombo;
+            deckNameCombo.setSelectedItem(defaultDeckName);
+            defaultDeckName = "";
+            saveButton.setEnabled(deckNameCombo.getItemCount() > 0);
+            return deckNameCombo;
         }
 
     }
 
     public DeckType getDeckType() {
-        return selectedDeckType;
+        return deckTypeCombo.getItemAt(deckTypeCombo.getSelectedIndex());
     }
 
-    public String getDeckValue() {
-        return (String)deckValueCombo.getSelectedItem();
+    public String getDeckName() {
+        return (String)deckNameCombo.getSelectedItem();
     }
 
 }

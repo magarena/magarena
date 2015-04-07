@@ -135,10 +135,10 @@ public class DuelPlayerDeckPanel extends TexturedPanel implements IThemeStyle {
     }
 
     public void setDeckProfile() {
-        final DeckChooserDialog dialog = new DeckChooserDialog(frame);
+        final DeckChooserDialog dialog = new DeckChooserDialog(deckType, deckValue);
         if (!dialog.isCancelled()) {
             setDeckType(dialog.getDeckType());
-            setDeckValue(dialog.getDeckValue());
+            setDeckValue(dialog.getDeckName());
             refreshLayout();
         }
     }
