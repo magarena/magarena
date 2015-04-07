@@ -398,36 +398,6 @@ public enum MagicAbility {
             card.add(MagicManaActivation.create(ARG.cost(arg) + ", " + ARG.effect(arg), manatype));
         }
     },
-    DamageDiscardCard("Whenever SN deals damage to a player, that player discards " + ARG.AMOUNT + " card(s)?\\.",10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            final int n = ARG.amount(arg);
-            card.add(new MagicSpecterTrigger(Type.Any, Player.Any, n));
-        }
-    },
-    DamageOpponentDiscardCard("Whenever SN deals damage to an opponent, that (opponent|player) discards " + ARG.AMOUNT + " card(s)?\\.",10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            final int n = ARG.amount(arg);
-            card.add(new MagicSpecterTrigger(Type.Any, Player.Opponent, n));
-        }
-    },
-    CombatDamageDiscardCard("Whenever SN deals combat damage to a player, that player discards " + ARG.AMOUNT + " card(s)?\\.",10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            final int n = ARG.amount(arg);
-            card.add(new MagicSpecterTrigger(Type.Combat, Player.Any, n));
-        }
-    },
-    CombatDamageDiscardRandomCard("Whenever SN deals combat damage to a player, that player discards " + ARG.AMOUNT + " card(s)? at random\\.",10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            final int n = ARG.amount(arg);
-            card.add(MagicSpecterTrigger.Random(Type.Combat, Player.Any, n));
-        }
-    },
-    DamageOpponentDiscardRandomCard("Whenever SN deals damage to an opponent, that (opponent|player) discards " + ARG.AMOUNT + " card(s)? at random\\.",10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            final int n = ARG.amount(arg);
-            card.add(MagicSpecterTrigger.Random(Type.Any, Player.Opponent, n));
-        }
-    },
     DamageCreatureGrow("Whenever SN deals damage to a creature, put a \\+1/\\+1 counter on SN\\.",10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(new MagicDamageGrowTrigger(false, false));
