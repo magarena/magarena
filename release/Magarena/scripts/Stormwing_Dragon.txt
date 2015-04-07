@@ -7,7 +7,7 @@ subtype=Dragon
 cost={5}{R}
 pt=3/3
 ability=Flying, first strike;\
-        Megamorph {5}{R}{R};\
-        When SN is turned face up, put a +1/+1 counter on each other Dragon creature you control.
+        Megamorph {5}{R}{R}
 timing=main
+requires_groovy_code=Acid-Spewer Dragon
 oracle=Flying, first strike. Megamorph {5}{R}{R}. When Stormwing Dragon is turned face up, put a +1/+1 counter on each other Dragon creature you control.
