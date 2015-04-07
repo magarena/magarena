@@ -68,9 +68,6 @@ public class MagicTargetChoice extends MagicChoice {
     public static final MagicTargetChoice NEG_TARGET_PLAYER = 
         MagicTargetChoice.Negative("target player");
     
-    public static final MagicTargetChoice NEG_TARGET_PLAYER_THAT_LOST_LIFE = 
-        MagicTargetChoice.Negative("target player who lost life this turn");
-    
     public static final MagicTargetChoice NEG_TARGET_SPELL_OR_PERMANENT = 
         MagicTargetChoice.Negative("target spell or permanent");
     
@@ -82,9 +79,6 @@ public class MagicTargetChoice extends MagicChoice {
 
     public static final MagicTargetChoice TARGET_PERMANENT_YOU_CONTROL = 
         new MagicTargetChoice("target permanent you control");
-    
-    public static final MagicTargetChoice TARGET_PERMANENT_AN_OPPONENT_CONTROLS = 
-        new MagicTargetChoice("target permanent an opponent controls");
     
     public static final MagicTargetChoice TARGET_PERMANENT_YOU_OWN = 
         new MagicTargetChoice("target permanent you own");
@@ -158,9 +152,6 @@ public class MagicTargetChoice extends MagicChoice {
     public static final MagicTargetChoice NEG_TARGET_ARTIFACT_OR_CREATURE = 
         MagicTargetChoice.Negative("target artifact or creature");
 
-    public static final MagicTargetChoice NEG_TARGET_ARTIFACT_OR_CREATURE_OR_LAND = 
-        MagicTargetChoice.Negative("target artifact, creature, or land");
-    
     public static final MagicTargetChoice TARGET_ARTIFACT_OR_ENCHANTMENT_YOUR_OPPONENT_CONTROLS = 
         new MagicTargetChoice("target artifact or enchantment an opponent controls");
     
@@ -251,9 +242,6 @@ public class MagicTargetChoice extends MagicChoice {
     public static final MagicTargetChoice TARGET_NON_LEGENDARY_CREATURE_YOU_CONTROL = 
         new MagicTargetChoice("target nonlegendary creature you control");
 
-    public static final MagicTargetChoice TARGET_NON_DEMON = 
-        new MagicTargetChoice("target non-Demon creature");
-    
     public static final MagicTargetChoice TARGET_CREATURE_OR_PLAYER = 
         new MagicTargetChoice("target creature or player");
    
@@ -266,17 +254,11 @@ public class MagicTargetChoice extends MagicChoice {
     public static final MagicTargetChoice NEG_TARGET_VAMPIRE = 
         MagicTargetChoice.Negative("target Vampire");
 
-    public static final MagicTargetChoice TARGET_NON_ANGEL_CREATURE_YOU_CONTROL = 
-        new MagicTargetChoice("target non-Angel creature you control");
-
     public static final MagicTargetChoice SACRIFICE_PERMANENT = 
         new MagicTargetChoice("a permanent to sacrifice");
 
     public static final MagicTargetChoice SACRIFICE_CREATURE = 
         new MagicTargetChoice("a creature to sacrifice");
-    
-    public static final MagicTargetChoice SACRIFICE_BLACK_CREATURE =
-        new MagicTargetChoice("a black creature to sacrifice");
     
     public static final MagicTargetChoice SACRIFICE_ARTIFACT = 
         new MagicTargetChoice("an artifact to sacrifice");
