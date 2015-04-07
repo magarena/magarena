@@ -89,7 +89,7 @@ public class ARG {
         }
     }
     
-    public static final String YOU = "((?<rn>(rn|that [a-z]+|him or her))|(?<pn>(pn||you)))";
+    public static final String YOU = "((?<rn>(rn|that [a-z]+|him or her|it))|(?<pn>(pn||you)))";
     public static MagicTarget youTarget(final MagicEvent event, final Matcher m) {
         if (m.group("rn") != null) {
             return event.getRefTarget();
