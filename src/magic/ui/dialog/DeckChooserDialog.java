@@ -35,6 +35,7 @@ public class DeckChooserDialog extends MagicDialog {
         
         deckTypeCombo = getDeckTypeComboBox();
         deckTypeCombo.setSelectedItem(aDeckType);
+        addDeckTypeComboBoxListener();
 
         decksPanel = new DecksPanel(aDeckName);
         decksPanel.setDeckType(aDeckType);
@@ -56,28 +57,28 @@ public class DeckChooserDialog extends MagicDialog {
     }
 
     private JComboBox<DeckType> getDeckTypeComboBox() {
-
         final JComboBox<DeckType> cbo = new JComboBox<>();
         cbo.setModel(new DefaultComboBoxModel<>(DeckType.values()));
         cbo.setLightWeightPopupEnabled(false);
         cbo.setFocusable(false);
         cbo.setFont(FontsAndBorders.FONT2);
+        return cbo;
+    }
 
-        cbo.addItemListener(new ItemListener() {
+    private void addDeckTypeComboBoxListener() {
+        deckTypeCombo.addItemListener(new ItemListener() {
             @Override
             public void itemStateChanged(final ItemEvent e) {
                 if (e.getStateChange() == ItemEvent.SELECTED) {
                     SwingUtilities.invokeLater(new Runnable() {
                         @Override
                         public void run() {
-                            decksPanel.setDeckType((DeckType)e.getItem());
+                            decksPanel.setDeckType((DeckType) e.getItem());
                         }
                     });
                 }
             }
         });
-
-        return cbo;
     }
 
     private void setSaveButtonAction() {
