@@ -243,6 +243,14 @@ public enum MagicAbility {
             card.add(MagicWhenSelfBlocksTrigger.create(sourceEvent));
         }
     },
+    CreatureAttacksOrBlocksEffect("When(ever)? (a|an) " + ARG.WORDRUN + " attacks or blocks, " + ARG.EFFECT, 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            final MagicSourceEvent sourceEvent = MagicRuleEventAction.create(ARG.effect(arg));
+            final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.singlePermanent(ARG.wordrun(arg));
+            card.add(MagicWhenAttacksTrigger.create(filter, sourceEvent));
+            card.add(MagicWhenBlocksTrigger.create(filter, sourceEvent));
+        }
+    },
     BecomesBlockedEffect("Whenever SN becomes blocked, " + ARG.EFFECT, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicWhenSelfBecomesBlockedTrigger.create(
