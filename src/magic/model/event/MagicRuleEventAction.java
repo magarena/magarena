@@ -392,7 +392,7 @@ public enum MagicRuleEventAction {
         }
     ),
     DamageTwoGroup(
-        "sn deal(s)? (?<amount>[0-9]+) damage to each (?<group1>[^\\.]*) and each (?<group2>[^\\.]*)\\.",
+        ARG.IT + " deal(s)? (?<amount>[0-9]+) damage to each (?<group1>[^\\.]*) and each (?<group2>[^\\.]*)\\.",
         MagicTiming.Removal,
         "Damage"
     ) {
@@ -404,19 +404,20 @@ public enum MagicRuleEventAction {
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    final MagicSource source = ARG.itSource(event, matcher);
                     final Collection<MagicTarget> targets1 = game.filterTargets(
                         event.getPlayer(),
                         filter1
                     );
                     for (final MagicTarget target : targets1) {
-                        game.doAction(new MagicDealDamageAction(event.getSource(),target,amount));
+                        game.doAction(new MagicDealDamageAction(source,target,amount));
                     }
                     final Collection<MagicTarget> targets2 = game.filterTargets(
                         event.getPlayer(),
                         filter2
                     );
                     for (final MagicTarget target : targets2) {
-                        game.doAction(new MagicDealDamageAction(event.getSource(),target,amount));
+                        game.doAction(new MagicDealDamageAction(source,target,amount));
                     }
                 }
             };
