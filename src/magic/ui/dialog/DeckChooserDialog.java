@@ -1,5 +1,6 @@
 package magic.ui.dialog;
 
+import java.awt.Cursor;
 import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import java.awt.event.ItemEvent;
@@ -44,6 +45,8 @@ public class DeckChooserDialog extends MagicDialog {
 
         refreshLayout();
 
+        setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
+
         setVisible(true);
 
     }
@@ -73,7 +76,9 @@ public class DeckChooserDialog extends MagicDialog {
                     SwingUtilities.invokeLater(new Runnable() {
                         @Override
                         public void run() {
+                            setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
                             decksPanel.setDeckType((DeckType) e.getItem());
+                            setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
                         }
                     });
                 }

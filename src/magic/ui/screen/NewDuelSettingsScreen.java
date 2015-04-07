@@ -145,8 +145,8 @@ public class NewDuelSettingsScreen
             this.duelSettingsPanel = new DuelSettingsPanel(frame, config);
             this.playerPanels[0] = getNewDuelPlayerPanel(config.getPlayerProfile(0));
             this.playerPanels[1] = getNewDuelPlayerPanel(config.getPlayerProfile(1));
-            this.newPlayerDeckPanels[0] = new DuelPlayerDeckPanel(frame, config.getPlayerDeckProfile(0));
-            this.newPlayerDeckPanels[1] = new DuelPlayerDeckPanel(frame, config.getPlayerDeckProfile(1));
+            this.newPlayerDeckPanels[0] = new DuelPlayerDeckPanel(config.getPlayerDeckProfile(0));
+            this.newPlayerDeckPanels[1] = new DuelPlayerDeckPanel(config.getPlayerDeckProfile(1));
             setLookAndFeel();
             refreshLayout();
         }
