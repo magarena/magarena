@@ -6,7 +6,7 @@ type=Legendary,Creature
 subtype=Human,Soldier,Warrior
 cost={3}{W}{W}
 pt=3/3
-ability=horsemanship;\
-        Whenever SN blocks, SN gets +1/+1 until end of turn.
+ability=Horsemanship.;\
+        Whenever SN blocks, it gets +1/+1 until end of turn.
 timing=main
 oracle=Horsemanship. Whenever Zhao Zilong, Tiger General blocks, it gets +1/+1 until end of turn.

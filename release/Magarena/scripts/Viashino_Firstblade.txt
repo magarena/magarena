@@ -6,7 +6,7 @@ type=Creature
 subtype=Viashino,Soldier
 cost={1}{R}{W}
 pt=2/2
-ability=haste;\
-        When SN enters the battlefield, SN gets +2/+2 until end of turn.
+ability=Haste.;\
+        When SN enters the battlefield, it gets +2/+2 until end of turn.
 timing=main
 oracle=Haste. When Viashino Firstblade enters the battlefield, it gets +2/+2 until end of turn.

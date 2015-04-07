@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Rebel
 cost={2}{W}
 pt=1/3
-ability=Whenever SN becomes the target of a spell or ability, SN gets +0/+3 until end of turn.
+ability=Whenever SN becomes the target of a spell or ability, it gets +0/+3 until end of turn.
 timing=main
 oracle=Whenever Task Force becomes the target of a spell or ability, it gets +0/+3 until end of turn.

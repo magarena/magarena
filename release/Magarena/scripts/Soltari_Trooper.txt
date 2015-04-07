@@ -7,6 +7,6 @@ subtype=Soltari,Soldier
 cost={1}{W}
 pt=1/1
 ability=shadow;\
-        Whenever SN attacks, SN gets +1/+1 until end of turn.
+        Whenever SN attacks, it gets +1/+1 until end of turn.
 timing=main
 oracle=Shadow. Whenever Soltari Trooper attacks, it gets +1/+1 until end of turn.

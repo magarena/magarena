@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Soldier
 cost={2}{W}
 pt=2/2
-ability=Whenever SN blocks, SN gets +0/+2 until end of turn.
+ability=Whenever SN blocks, it gets +0/+2 until end of turn.
 timing=main
 oracle=Whenever Shu Defender blocks, it gets +0/+2 until end of turn.

@@ -6,6 +6,6 @@ type=Creature
 subtype=Ape
 cost={2}{R}
 pt=2/3
-ability=Whenever SN blocks or becomes blocked, SN gets +2/-2 until end of turn.
+ability=Whenever SN blocks or becomes blocked, it gets +2/-2 until end of turn.
 timing=main
 oracle=Whenever Raging Gorilla blocks or becomes blocked, it gets +2/-2 until end of turn.

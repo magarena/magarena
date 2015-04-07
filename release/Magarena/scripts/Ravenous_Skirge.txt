@@ -7,6 +7,6 @@ subtype=Imp
 cost={2}{B}
 pt=1/1
 ability=flying;\
-        Whenever SN attacks, SN gets +2/+0 until end of turn.
+        Whenever SN attacks, it gets +2/+0 until end of turn.
 timing=main
 oracle=Flying. Whenever Ravenous Skirge attacks, it gets +2/+0 until end of turn.

@@ -6,6 +6,7 @@ type=Creature
 subtype=Giant,Rogue
 cost={2}{R}{R}
 pt=4/4
-ability=wither;Whenever SN blocks or becomes blocked, SN gets -3/-0 until end of turn.
+ability=Wither.;\
+        Whenever SN blocks or becomes blocked, it gets -3/-0 until end of turn.
 timing=main
 oracle=Wither. Whenever Slinking Giant blocks or becomes blocked, it gets -3/-0 until end of turn.

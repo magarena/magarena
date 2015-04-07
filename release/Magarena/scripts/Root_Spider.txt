@@ -6,6 +6,6 @@ type=Creature
 subtype=Spider
 cost={3}{G}
 pt=2/2
-ability=Whenever SN blocks, SN gets +1/+0 and gains first strike until end of turn.
+ability=Whenever SN blocks, it gets +1/+0 and gains first strike until end of turn.
 timing=main
 oracle=Whenever Root Spider blocks, it gets +1/+0 and gains first strike until end of turn.
