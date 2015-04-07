@@ -7,7 +7,7 @@ subtype=Dragon
 cost={5}{U}
 pt=3/3
 ability=Flying, hexproof;\
-        Megamorph {5}{U}{U};\
-        When SN is turned face up, put a +1/+1 counter on each other Dragon creature you control.
+        Megamorph {5}{U}{U}
 timing=main
+requires_groovy_code=Acid-Spewer Dragon
 oracle=Flying, hexproof. Megamorph {5}{U}{U}. When Belltoll Dragon is turned face up, put a +1/+1 counter on each other Dragon creature you control.
