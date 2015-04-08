@@ -5,5 +5,5 @@ rarity=U
 type=Enchantment
 cost={1}{G}{G}
 ability=Whenever a creature attacks you, it gets -1/-0 until end of turn.
-timing=main
+timing=enchantment
 oracle=Whenever a creature attacks you, it gets -1/-0 until end of turn.
