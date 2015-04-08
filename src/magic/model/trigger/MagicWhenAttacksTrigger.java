@@ -28,4 +28,16 @@ public abstract class MagicWhenAttacksTrigger extends MagicTrigger<MagicPermanen
             }
         };
     }
+    
+    public static MagicWhenAttacksTrigger createYou(final MagicTargetFilter<MagicPermanent> filter, final MagicSourceEvent sourceEvent) {
+        return new MagicWhenAttacksTrigger() {
+            public boolean accept(final MagicPermanent permanent, final MagicPermanent attacker) {
+                return filter.accept(permanent.getGame(), permanent.getController(), attacker) && permanent.isEnemy(attacker);
+            }
+            @Override
+            public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPermanent attacker) {
+                return sourceEvent.getEvent(permanent, attacker);
+            }
+        };
+    }
 }

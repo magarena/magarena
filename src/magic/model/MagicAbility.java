@@ -204,16 +204,24 @@ public enum MagicAbility {
             card.add(new MagicRampageTrigger(n));
         }
     },
-    AttacksEffect("When(ever)? (SN|this creature) attacks, " + ARG.EFFECT, 10) {
+    ThisAttacksEffect("When(ever)? (SN|this creature) attacks, " + ARG.EFFECT, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicWhenSelfAttacksTrigger.create(
                 MagicRuleEventAction.create(ARG.effect(arg))
             ));
         }
     },
-    AttacksAnyEffect("When(ever)? (a|an) " + ARG.WORDRUN + " attacks, " + ARG.EFFECT, 10) {
+    AnyAttacksEffect("When(ever)? (a|an) " + ARG.WORDRUN + " attacks, " + ARG.EFFECT, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicWhenAttacksTrigger.create(
+                MagicTargetFilterFactory.singlePermanent(ARG.wordrun(arg)),
+                MagicRuleEventAction.create(ARG.effect(arg))
+            ));
+        }
+    },
+    AnyAttacksYouEffect("When(ever)? (a|an) " + ARG.WORDRUN + " attacks you( or a planeswalker you control)?, " + ARG.EFFECT, 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            card.add(MagicWhenAttacksTrigger.createYou(
                 MagicTargetFilterFactory.singlePermanent(ARG.wordrun(arg)),
                 MagicRuleEventAction.create(ARG.effect(arg))
             ));
