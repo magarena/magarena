@@ -2,7 +2,6 @@ def choice = new MagicTargetChoice("a Treefolk card from your graveyard");
 
 [
     new MagicPermanentActivation(
-        [MagicConditionFactory.YouHaveAtLeast(choice.getCardFilter(), 1)],
         new MagicActivationHints(MagicTiming.Draw),
         "Search"
     ) {
