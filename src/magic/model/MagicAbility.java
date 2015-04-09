@@ -896,6 +896,12 @@ public enum MagicAbility {
             card.add(MagicCardAbilityActivation.create(arg.group()));
         }
     },
+    RecoverSelf("(?<cost>[^\"]+): Return SN from your graveyard to your hand\\.", 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            final List<MagicMatchedCostEvent> matchedCostEvents = MagicRegularCostEvent.build(ARG.cost(arg));
+            card.add(new MagicRecoverSelfActivation(matchedCostEvents));
+        }
+    },
     ActivatedAbility("[^\"]+:(?! Add)" + ARG.ANY, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicPermanentActivation.create(arg.group()));
