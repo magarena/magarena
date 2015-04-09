@@ -976,6 +976,13 @@ public class MagicTargetFilterFactory {
         }
     };
     
+    public static final MagicPermanentFilterImpl NONBLUE_CREATURE=new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+            return target.isCreature() &&
+                   !target.hasColor(MagicColor.Blue);
+        }
+    };
+    
     public static final MagicPermanentFilterImpl NONBLACK_ATTACKING_CREATURE=new MagicPermanentFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
             return target.isCreature() &&
@@ -2185,6 +2192,7 @@ public class MagicTargetFilterFactory {
 
         // <color|type|subtype> creature
         single.put("1/1 creature", new MagicPTTargetFilter(CREATURE, Operator.EQUAL, 1, Operator.EQUAL, 1));
+        single.put("nonblue creature", NONBLUE_CREATURE);
         single.put("nonblack creature", NONBLACK_CREATURE);
         single.put("nonblack attacking creature", NONBLACK_ATTACKING_CREATURE);
         single.put("nonwhite creature", NONWHITE_CREATURE);
