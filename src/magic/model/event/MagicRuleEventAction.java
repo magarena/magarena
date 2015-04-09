@@ -1998,6 +1998,25 @@ public enum MagicRuleEventAction {
             };
         }
     },
+    BounceGroup(
+        "return all (?<group>[^\\.]*) to their (owner's hand|owners' hands)\\.",
+        MagicTiming.Removal,
+        "Bounce"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.multiple(matcher.group("group"));
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    final Collection<MagicPermanent> targets = game.filterPermanents(event.getPlayer(),filter);
+                    for (final MagicPermanent it : targets) {
+                        game.doAction(new MagicRemoveFromPlayAction(it, MagicLocationType.OwnersHand));
+                    }
+                }
+            };
+        }
+    },
     BounceChosen(
         "return (?<choice>[^\\.]*) to (its owner's|your) hand\\.",
         MagicTargetHint.None,
