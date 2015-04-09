@@ -22,7 +22,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             CREATURE_WITH_FLYING
             .except(event.getPermanent())
-            .filter(game, event.getPlayer()) each {
+            .filter(game) each {
                 game.doAction(new MagicDealDamageAction(event.getPermanent(),it,6));
             }
         }

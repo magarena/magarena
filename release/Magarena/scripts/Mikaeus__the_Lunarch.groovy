@@ -22,7 +22,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             CREATURE_YOU_CONTROL
             .except(event.getPermanent())
-            .filter(game, event.getPlayer()) each {
+            .filter(event.getPlayer()) each {
                 game.doAction(new MagicChangeCountersAction(it,MagicCounterType.PlusOne,1));
             }
         }

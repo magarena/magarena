@@ -19,7 +19,7 @@
                     NONLAND_PERMANENT,
                     it.getName()
                 );
-                targetFilter.filter(game, event.getPlayer()) each {
+                targetFilter.filter(game) each {
                     final MagicPermanent target ->
                     game.doAction(new MagicRemoveFromPlayAction(target, MagicLocationType.OwnersHand));
                 }

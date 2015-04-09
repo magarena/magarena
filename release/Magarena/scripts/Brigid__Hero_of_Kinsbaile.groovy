@@ -22,8 +22,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
-                ATTACKING_OR_BLOCKING_CREATURE_YOU_CONTROL
-                .filter(game, it) each {
+                ATTACKING_OR_BLOCKING_CREATURE_YOU_CONTROL.filter(it) each {
                     final MagicPermanent target ->
                     game.doAction(new MagicDealDamageAction(event.getSource(),target,2));
                 }

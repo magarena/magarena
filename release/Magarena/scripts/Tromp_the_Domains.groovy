@@ -14,8 +14,7 @@
             final MagicPlayer player = event.getPlayer();
             final int domain = player.getDomain();
             game.logAppendMessage(player," ("+domain+")");
-            CREATURE_YOU_CONTROL
-            .filter(game, player) each {
+            CREATURE_YOU_CONTROL.filter(player) each {
                 game.doAction(new MagicChangeTurnPTAction(it,domain,domain));
                 game.doAction(new MagicGainAbilityAction(it,MagicAbility.Trample));
             }

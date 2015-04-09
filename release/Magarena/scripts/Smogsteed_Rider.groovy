@@ -12,7 +12,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             ATTACKING_CREATURE
             .except(event.getPermanent())
-            .filter(game, event.getPlayer()) each {
+            .filter(game) each {
                 game.doAction(new MagicGainAbilityAction(it,MagicAbility.Fear));
             }
         }

@@ -10,8 +10,7 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            ENCHANTMENT
-            .filter(game, event.getPlayer()) each {
+            ENCHANTMENT.filter(game) each {
                 game.doAction(new MagicRemoveFromPlayAction(it,MagicLocationType.TopOfOwnersLibrary));
             }
         }

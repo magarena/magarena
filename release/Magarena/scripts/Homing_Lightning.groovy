@@ -18,7 +18,7 @@
                     CREATURE,
                     it.getName()
                 );
-                targetFilter.filter(game, event.getPlayer()) each {
+                targetFilter.filter(game) each {
                     final MagicPermanent creature ->
                     game.doAction(new MagicDealDamageAction(event.getSource(),creature,4));
                 }
