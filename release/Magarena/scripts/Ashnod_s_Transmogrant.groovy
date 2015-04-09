@@ -5,7 +5,7 @@ def type = new MagicStatic(MagicLayer.Type) {
     }
 };
                 
-def choice = MagicTargetChoice.Positive("target nonartifact creature");
+def choice = Positive("target nonartifact creature");
 
 [
     new MagicPermanentActivation(

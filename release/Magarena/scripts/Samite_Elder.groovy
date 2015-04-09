@@ -11,7 +11,7 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.TARGET_PERMANENT_YOU_CONTROL,
+                TARGET_PERMANENT_YOU_CONTROL,
                 this,
                 "Creatures you control gain protection from the colors of target permanent\$ you control until end of turn."
             );
@@ -19,7 +19,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final Collection<MagicPermanent> creatures = event.getPlayer().filterPermanents(MagicTargetFilterFactory.CREATURE_YOU_CONTROL);
+                final Collection<MagicPermanent> creatures = event.getPlayer().filterPermanents(CREATURE_YOU_CONTROL);
                 for (final MagicColor color : MagicColor.values()) {
                     if (it.hasColor(color)) {
                         for (final MagicPermanent creature : creatures) {

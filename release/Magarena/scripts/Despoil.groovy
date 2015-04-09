@@ -4,7 +4,7 @@
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.NEG_TARGET_LAND,
+                NEG_TARGET_LAND,
                 MagicDestroyTargetPicker.Destroy,
                 this,
                 "Destroy target land\$. Its controller loses 2 life."

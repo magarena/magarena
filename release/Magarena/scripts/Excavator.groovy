@@ -18,7 +18,7 @@ def choice = new MagicTargetChoice("a basic land to sacrifice");
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.POS_TARGET_CREATURE,
+                POS_TARGET_CREATURE,
                 MagicUnblockableTargetPicker.create(),
                 payedCost.getTarget(),
                 this,

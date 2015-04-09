@@ -4,7 +4,7 @@
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.NEG_TARGET_PLAYER,
+                NEG_TARGET_PLAYER,
                 new MagicDamageTargetPicker(4),
                 this,
                 "SN deals 4 damage to target player\$. " +
@@ -17,7 +17,7 @@
                 game.doAction(new MagicDealDamageAction(event.getSource(),it,4));
                 if (MagicCondition.METALCRAFT_CONDITION.accept(event.getSource())) {
                     final Collection<MagicPermanent> targets =
-                            game.filterPermanents(it,MagicTargetFilterFactory.CREATURE_YOU_CONTROL);
+                            game.filterPermanents(it,CREATURE_YOU_CONTROL);
                     for (final MagicPermanent target : targets) {
                         game.doAction(new MagicGainAbilityAction(
                             target,

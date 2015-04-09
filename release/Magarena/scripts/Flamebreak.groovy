@@ -11,7 +11,7 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final Collection<MagicPermanent> targets = game.filterPermanents(MagicTargetFilterFactory.CREATURE_WITHOUT_FLYING);
+            final Collection<MagicPermanent> targets = game.filterPermanents(CREATURE_WITHOUT_FLYING);
             final MagicSource source = event.getSource();
             for (final MagicPermanent target : targets) {
                 final MagicDamage damage=new MagicDamage(source,target,3);

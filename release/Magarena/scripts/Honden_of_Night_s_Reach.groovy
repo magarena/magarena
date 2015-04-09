@@ -4,7 +4,7 @@
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer upkeepPlayer) {
             return new MagicEvent(
                 permanent,
-                MagicTargetChoice.TARGET_OPPONENT,
+                TARGET_OPPONENT,
                 this,
                 "Target opponent\$ discards a card for each Shrine PN controls."
             );

@@ -5,7 +5,7 @@
             final int X = game.getNrOfPermanents(MagicSubType.Goblin);
             return new MagicEvent(
                 card,
-                new MagicMayChoice(MagicTargetChoice.NEG_TARGET_CREATURE),
+                new MagicMayChoice(NEG_TARGET_CREATURE),
                 new MagicDamageTargetPicker(X),
                 this,
                 "PN may\$ have SN deal X damage to target creature\$, "+

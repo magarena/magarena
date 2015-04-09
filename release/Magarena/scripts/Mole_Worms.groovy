@@ -18,7 +18,7 @@ def tappedAbility = {
     };
 }
 
-def choice = MagicTargetChoice.Negative("target land");
+def choice = Negative("target land");
 
 [
     new MagicPermanentActivation(

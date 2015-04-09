@@ -4,7 +4,7 @@
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
             return new MagicEvent(
                 permanent,
-                new MagicMayChoice(MagicTargetChoice.TARGET_CREATURE),
+                new MagicMayChoice(TARGET_CREATURE),
                 MagicExileTargetPicker.create(),
                 this,
                 "PN may\$ untap target creature\$ and gain control of it until end of turn. " + 

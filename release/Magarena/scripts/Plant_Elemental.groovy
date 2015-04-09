@@ -13,7 +13,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPermanent perm = event.getPermanent();
             if (event.getPlayer().controlsPermanent(MagicSubType.Forest) && event.isYes()) {
-                game.addEvent(new MagicSacrificePermanentEvent(perm,event.getPlayer(),MagicTargetChoice.SACRIFICE_FOREST));
+                game.addEvent(new MagicSacrificePermanentEvent(perm,event.getPlayer(),SACRIFICE_FOREST));
             } else {
                 game.doAction(new MagicSacrificeAction(perm));
             }

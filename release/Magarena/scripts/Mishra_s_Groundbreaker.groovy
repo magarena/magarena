@@ -28,7 +28,7 @@ def ST = new MagicStatic(MagicLayer.Type) {
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.POS_TARGET_LAND,
+                POS_TARGET_LAND,
                 this,
                 "Target land\$ becomes a 3/3 creature that's still a land."
             );

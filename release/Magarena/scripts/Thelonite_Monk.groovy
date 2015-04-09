@@ -33,7 +33,7 @@ def SACRIFICE_GREEN_CREATURE = new MagicTargetChoice("a green creature to sacrif
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.TARGET_LAND,
+                TARGET_LAND,
                 this,
                 "Target land\$ becomes a Forest."
             );

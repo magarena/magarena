@@ -11,7 +11,7 @@ def ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
     }
 };
 
-def choice = MagicTargetChoice.Positive("target snow land");
+def choice = Positive("target snow land");
 
 [
     new MagicPermanentActivation(

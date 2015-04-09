@@ -31,7 +31,7 @@
             final MagicEvent sac = new MagicSacrificePermanentEvent(
                 event.getSource(),
                 event.getPlayer(),
-                MagicTargetChoice.SACRIFICE_CREATURE
+                SACRIFICE_CREATURE
             );
             if (event.isYes() && sac.isSatisfied()) {
                 game.addEvent(sac);

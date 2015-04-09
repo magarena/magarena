@@ -14,7 +14,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final String name = event.getRefCardOnStack().getCard().getName();
             final int amount = game.filterCards(
-                MagicTargetFilterFactory.cardName(name)
+                cardName(name)
                 .from(MagicTargetType.Graveyard)
                 .from(MagicTargetType.OpponentsGraveyard)
             ).size();

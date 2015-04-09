@@ -1,7 +1,7 @@
 [
     new MagicStatic(
         MagicLayer.SetPT,
-        MagicTargetFilterFactory.SWAMP
+        SWAMP
     ) {
         @Override
         public void modPowerToughness(final MagicPermanent source,final MagicPermanent permanent,final MagicPowerToughness pt) {
@@ -10,7 +10,7 @@
     },
     new MagicStatic(
         MagicLayer.Color,
-        MagicTargetFilterFactory.SWAMP
+        SWAMP
     ) {
         @Override
         public int getColorFlags(final MagicPermanent permanent, final int flags) {
@@ -19,7 +19,7 @@
     },
     new MagicStatic(
         MagicLayer.Type,
-        MagicTargetFilterFactory.SWAMP
+        SWAMP
     ) {
         @Override
         public int getTypeFlags(final MagicPermanent permanent,final int flags) {

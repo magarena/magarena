@@ -18,7 +18,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final int amt = event.isYes() ? 1 : 3;
-            final Collection<MagicPermanent> targets = event.getRefPlayer().filterPermanents(MagicTargetFilterFactory.CREATURE_YOU_CONTROL);
+            final Collection<MagicPermanent> targets = event.getRefPlayer().filterPermanents(CREATURE_YOU_CONTROL);
             for (final MagicPermanent target : targets) {
                 game.doAction(new MagicChangeTurnPTAction(target, 0, amt));
             }

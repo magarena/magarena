@@ -25,7 +25,7 @@ def action = {
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.TARGET_CREATURE,
+                TARGET_CREATURE,
                 MagicBounceTargetPicker.create(),
                 this,
                 "Return target creature\$ to its owner's hand unless its controller pays {1}."

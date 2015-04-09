@@ -22,7 +22,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             for (final MagicPlayer player : game.getAPNAP()) {
-                game.filterCards(player,MagicTargetFilterFactory.BLACK_OR_RED_CREATURE_CARD_FROM_GRAVEYARD) each {
+                game.filterCards(player,BLACK_OR_RED_CREATURE_CARD_FROM_GRAVEYARD) each {
                     game.doAction(new MagicReanimateAction(it, player));
                 }
             }

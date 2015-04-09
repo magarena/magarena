@@ -30,7 +30,7 @@ def control = {
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 permanent,
-                MagicTargetChoice.TARGET_CREATURE_YOUR_OPPONENT_CONTROLS,
+                TARGET_CREATURE_YOUR_OPPONENT_CONTROLS,
                 this,
                 "Tap target creature opponent controls\$. " +
                 "It doesn't untap during its controller's untap step as long as PN controls SN."

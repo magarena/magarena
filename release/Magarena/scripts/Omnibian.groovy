@@ -28,7 +28,7 @@ def ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.TARGET_CREATURE,
+                TARGET_CREATURE,
                 new MagicBecomeTargetPicker(3,3,false),
                 this,
                 "Target creature\$ becomes a 3/3 Frog until end of turn."

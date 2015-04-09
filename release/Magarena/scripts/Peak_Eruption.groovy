@@ -1,4 +1,4 @@
-def choice = MagicTargetChoice.Negative("target Mountain");
+def choice = Negative("target Mountain");
 
 [
     new MagicSpellCardEvent() {

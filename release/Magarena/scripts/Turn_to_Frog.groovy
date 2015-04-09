@@ -29,7 +29,7 @@ def C = new MagicStatic(MagicLayer.Color, MagicStatic.UntilEOT) {
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.TARGET_CREATURE,
+                TARGET_CREATURE,
                 new MagicBecomeTargetPicker(1,1,false),
                 this,
                 "Target creature\$ loses all abilities " +

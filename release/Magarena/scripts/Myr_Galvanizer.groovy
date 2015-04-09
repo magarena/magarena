@@ -19,7 +19,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final Collection<MagicPermanent> targets = game.filterPermanents(
                 event.getPlayer(),
-                MagicTargetFilterFactory.MYR_YOU_CONTROL.except(event.getPermanent())
+                MYR_YOU_CONTROL.except(event.getPermanent())
             );
             for (final MagicPermanent target : targets) {
                 game.doAction(new MagicUntapAction(target));

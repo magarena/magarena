@@ -4,7 +4,7 @@
         public MagicEvent getEvent(final MagicPermanent permanent) {
             return new MagicEvent(
                 permanent,
-                MagicTargetChoice.NEG_TARGET_CREATURE,
+                NEG_TARGET_CREATURE,
                 MagicExileTargetPicker.create(),
                 this,
                 "PN gains control of target creature\$."

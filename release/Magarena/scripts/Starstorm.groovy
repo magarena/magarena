@@ -14,7 +14,7 @@
             final MagicSource source=event.getSource();
             final int amount=event.getCardOnStack().getX();
             final Collection<MagicPermanent> targets=
-                game.filterPermanents(event.getPlayer(),MagicTargetFilterFactory.CREATURE);
+                game.filterPermanents(event.getPlayer(),CREATURE);
             for (final MagicPermanent target : targets) {
                 game.doAction(new MagicDealDamageAction(source,target,amount));
             }

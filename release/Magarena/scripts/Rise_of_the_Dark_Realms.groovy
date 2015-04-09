@@ -13,7 +13,7 @@
             final MagicPlayer player = event.getPlayer();
             final Collection<MagicCard> targets = game.filterCards(
                 player,
-                MagicTargetFilterFactory.CREATURE_CARD_FROM_ALL_GRAVEYARDS
+                CREATURE_CARD_FROM_ALL_GRAVEYARDS
             );
             for (final MagicCard card : targets) {
                 game.doAction(new MagicReanimateAction(card,player));

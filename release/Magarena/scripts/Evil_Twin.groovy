@@ -12,7 +12,7 @@ def DestroyTwin = new MagicPermanentActivation(
     @Override
     public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
         final MagicTargetChoice targetChoice = new MagicTargetChoice(
-            new MagicNameTargetFilter(MagicTargetFilterFactory.CREATURE, source.getName()),
+            new MagicNameTargetFilter(CREATURE, source.getName()),
             MagicTargetHint.Negative,
             "target creature"
         );
@@ -45,7 +45,7 @@ def GainAct = new MagicStatic(MagicLayer.Ability) {
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                new MagicMayChoice(MagicTargetChoice.CREATURE),
+                new MagicMayChoice(A_CREATURE),
                 MagicCopyPermanentPicker.create(),
                 this,
                 "Put SN onto the battlefield. You may\$ have SN enter the battlefield as a copy of any creature\$ on the battlefield, " + 

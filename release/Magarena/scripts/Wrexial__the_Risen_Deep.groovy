@@ -5,7 +5,7 @@
             return new MagicEvent(
                 permanent,
                 new MagicMayChoice(
-                    MagicTargetChoice.TARGET_INSTANT_OR_SORCERY_CARD_FROM_OPPONENTS_GRAVEYARD
+                    TARGET_INSTANT_OR_SORCERY_CARD_FROM_OPPONENTS_GRAVEYARD
                 ),
                 MagicGraveyardTargetPicker.PutOntoBattlefield,
                 this,

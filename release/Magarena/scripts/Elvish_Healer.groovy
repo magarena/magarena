@@ -13,7 +13,7 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.POS_TARGET_CREATURE_OR_PLAYER,
+                POS_TARGET_CREATURE_OR_PLAYER,
                 MagicPreventTargetPicker.create(),
                 this,
                 "Prevent the next 1 damage that would be dealt to target creature or player\$ this turn. " +

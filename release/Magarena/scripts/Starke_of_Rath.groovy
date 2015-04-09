@@ -13,7 +13,7 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.NEG_TARGET_ARTIFACT_OR_CREATURE,
+                NEG_TARGET_ARTIFACT_OR_CREATURE,
                 MagicDestroyTargetPicker.Destroy,
                 this,
                 "Destroy target artifact or creature.\$ That permanent's controller gains control of SN."

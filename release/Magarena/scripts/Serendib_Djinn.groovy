@@ -26,7 +26,7 @@ def EFFECT = MagicRuleEventAction.create("Sacrifice SN.");
             final MagicEvent sac = new MagicSacrificePermanentEvent(
                 event.getSource(),
                 event.getPlayer(),
-                MagicTargetChoice.SACRIFICE_LAND,
+                SACRIFICE_LAND,
                 SAC_ACTION
             );
             if (sac.isSatisfied()) {

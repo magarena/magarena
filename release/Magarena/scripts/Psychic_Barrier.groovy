@@ -4,7 +4,7 @@
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.NEG_TARGET_CREATURE_SPELL,
+                NEG_TARGET_CREATURE_SPELL,
                 this,
                 "Counter target creature spell\$. Its controller loses 1 life."
             );

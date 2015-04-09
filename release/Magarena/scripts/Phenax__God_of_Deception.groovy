@@ -7,7 +7,7 @@ def millX = new MagicPermanentActivation(new MagicActivationHints(MagicTiming.Ma
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.TARGET_PLAYER,
+                TARGET_PLAYER,
                 this,
                 "Target Player puts the top X cards of his or her library into his or her graveyard, where X is SN's toughness."
             );
@@ -35,7 +35,7 @@ def millX = new MagicPermanentActivation(new MagicActivationHints(MagicTiming.Ma
             return source.getController().getDevotion(MagicColor.Black, MagicColor.Blue) < 7;
         }
     },
-    new MagicStatic(MagicLayer.Ability,MagicTargetFilterFactory.CREATURE_YOU_CONTROL) {
+    new MagicStatic(MagicLayer.Ability,CREATURE_YOU_CONTROL) {
         @Override
         public void modAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final Set<MagicAbility> flags) {
             permanent.addAbility(millX);

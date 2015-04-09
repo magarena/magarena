@@ -5,7 +5,7 @@
             return (damage.getTarget() == permanent) ?
                 new MagicEvent(
                     permanent,
-                    MagicTargetChoice.TARGET_OPPONENT,
+                    TARGET_OPPONENT,
                     damage.getDealtAmount(),
                     this,
                     "SN deals RN damage to target opponent\$."

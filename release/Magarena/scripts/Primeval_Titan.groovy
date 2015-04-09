@@ -3,7 +3,7 @@ def EventAction = {
     game.addEvent(new MagicSearchOntoBattlefieldEvent(
         event,
         new MagicFromCardFilterChoice(
-            MagicTargetFilterFactory.LAND_CARD_FROM_LIBRARY,
+            LAND_CARD_FROM_LIBRARY,
             2, 
             true, 
             "to put onto the battlefield tapped"

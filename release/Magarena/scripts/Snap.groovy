@@ -4,7 +4,7 @@
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.TARGET_CREATURE,
+                TARGET_CREATURE,
                 this,
                 "Return target creature\$ to its owner's hand. Untap up to two lands."
             );
@@ -16,7 +16,7 @@
             });
             game.addEvent(new MagicRepeatedPermanentsEvent(
                 event.getSource(),
-                MagicTargetChoice.TARGET_LAND,
+                TARGET_LAND,
                 2,
                 MagicChainEventFactory.Untap
             ));

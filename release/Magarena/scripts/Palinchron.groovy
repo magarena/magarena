@@ -12,7 +12,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.addEvent(new MagicRepeatedPermanentsEvent(
                 event.getSource(),
-                MagicTargetChoice.TARGET_LAND,
+                TARGET_LAND,
                 7,
                 MagicChainEventFactory.Untap
             ));

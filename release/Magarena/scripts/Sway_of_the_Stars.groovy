@@ -11,7 +11,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             for (final MagicPlayer player : game.getAPNAP()) {
-                final Collection<MagicPermanent> permanents = player.filterPermanents(MagicTargetFilterFactory.PERMANENT_YOU_OWN);
+                final Collection<MagicPermanent> permanents = player.filterPermanents(PERMANENT_YOU_OWN);
                 final MagicCardList hand = new MagicCardList(player.getHand());
                 final MagicCardList graveyard = new MagicCardList(player.getGraveyard());
                 for (final MagicPermanent permanent : permanents) {

@@ -11,7 +11,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final Collection<MagicPermanent> targets=
-                game.filterPermanents(event.getPlayer(),MagicTargetFilterFactory.ARTIFACT_OR_ENCHANTMENT);
+                game.filterPermanents(event.getPlayer(),ARTIFACT_OR_ENCHANTMENT);
             for (final MagicPermanent target : targets) {
                 game.doAction(new MagicRemoveFromPlayAction(target,MagicLocationType.OwnersHand));
             }

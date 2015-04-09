@@ -14,7 +14,7 @@
             game.addEvent(new MagicSacrificePermanentEvent(
                 event.getSource(),
                 event.getPlayer(),
-                MagicTargetChoice.CREATURE_YOU_CONTROL
+                A_CREATURE_YOU_CONTROL
             ));
         }
     }

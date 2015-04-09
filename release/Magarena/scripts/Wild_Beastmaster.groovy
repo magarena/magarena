@@ -14,7 +14,7 @@
             final int X = permanent.getPower();
             final Collection<MagicPermanent> targets = game.filterPermanents(
                 event.getPlayer(),
-                MagicTargetFilterFactory.CREATURE_YOU_CONTROL.except(permanent)
+                CREATURE_YOU_CONTROL.except(permanent)
             );
             for (final MagicPermanent target : targets) {
                 game.doAction(new MagicChangeTurnPTAction(target,X,X));

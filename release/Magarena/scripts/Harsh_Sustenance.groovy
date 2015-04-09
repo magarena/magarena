@@ -5,7 +5,7 @@
             final int X = cardOnStack.getController().getNrOfPermanents(MagicType.Creature);
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
+                NEG_TARGET_CREATURE_OR_PLAYER,
                 new MagicDamageTargetPicker(X),
                 this,
                 "SN deals X damage to target creature or player\$ and PN gains X life, where X is the number of creatures PN controls."

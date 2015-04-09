@@ -16,7 +16,7 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.TARGET_CREATURE_YOU_CONTROL,
+                TARGET_CREATURE_YOU_CONTROL,
                 MagicPreventTargetPicker.create(),
                 this,
                 "Prevent the next 4 damage that would be dealt this turn to target creature you control\$."+

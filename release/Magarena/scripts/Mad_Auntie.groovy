@@ -15,7 +15,7 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.PosOther("target Goblin", source),
+                PosOther("target Goblin", source),
                 MagicRegenerateTargetPicker.create(),
                 this,
                 "Regenerate another target Goblin\$."

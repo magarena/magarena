@@ -15,7 +15,7 @@
             game.doAction(new MagicPlayTokensAction(
                 player,
                 TokenCardDefinitions.get("1/1 green Elf Warrior creature token"),
-                player.getNrOfPermanents(MagicTargetFilterFactory.ELF)
+                player.getNrOfPermanents(ELF)
             ));
         }
     }

@@ -1,4 +1,4 @@
-def choice = MagicTargetChoice.Negative("target attacking creature without flying your opponent controls");
+def choice = Negative("target attacking creature without flying your opponent controls");
 
 [
     new MagicPermanentActivation(

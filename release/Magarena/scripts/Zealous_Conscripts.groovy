@@ -4,7 +4,7 @@
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 permanent,
-                MagicTargetChoice.NEG_TARGET_PERMANENT,
+                NEG_TARGET_PERMANENT,
                 MagicExileTargetPicker.create(),
                 this,
                 "Gain control of target permanent\$ until end of turn. " +

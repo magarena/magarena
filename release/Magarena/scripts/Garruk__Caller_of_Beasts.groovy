@@ -42,7 +42,7 @@
                 event,
                 new MagicMayChoice(
                     "Put a green creature card onto the battlefield?",
-                    MagicTargetChoice.A_GREEN_CREATURE_CARD_FROM_HAND
+                    A_GREEN_CREATURE_CARD_FROM_HAND
                 )
             ));
         }
@@ -77,7 +77,7 @@
                         if (event.isYes()) {
                             game.addEvent(new MagicSearchOntoBattlefieldEvent(
                                 event,
-                                MagicTargetChoice.CREATURE_CARD_FROM_LIBRARY
+                                A_CREATURE_CARD_FROM_LIBRARY
                             ));
                         }
                     }

@@ -1,7 +1,7 @@
 [
     new MagicStatic(
         MagicLayer.Ability,
-        MagicTargetFilterFactory.CREATURE) {
+        CREATURE) {
         @Override
         public void modAbilityFlags(
                 final MagicPermanent source,

@@ -16,7 +16,7 @@
             final int amount = payedCost.getX();
             return new MagicEvent(
                 source,
-                MagicTargetChoice.NEG_TARGET_PLAYER,
+                NEG_TARGET_PLAYER,
                 amount,
                 this,
                 "Target player\$ puts the top X cards of his or her library into his or her graveyard. (X="+amount+")"

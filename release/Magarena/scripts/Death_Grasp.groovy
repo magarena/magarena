@@ -5,7 +5,7 @@
             final int amount=payedCost.getX();
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
+                NEG_TARGET_CREATURE_OR_PLAYER,
                 new MagicDamageTargetPicker(amount),
                 this,
                 "SN deals " + amount + " damage to target creature or player\$. " +

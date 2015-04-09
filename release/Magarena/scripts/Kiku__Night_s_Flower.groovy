@@ -16,7 +16,7 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.NEG_TARGET_CREATURE,
+                NEG_TARGET_CREATURE,
                 MagicPowerTargetPicker.create(),
                 this,
                 "Target creature\$ deals damage to itself equal to its power."

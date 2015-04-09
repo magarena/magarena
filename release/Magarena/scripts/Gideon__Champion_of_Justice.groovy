@@ -38,7 +38,7 @@ def PreventAllDamage = new MagicIfDamageWouldBeDealtTrigger(MagicTrigger.PREVENT
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.TARGET_OPPONENT,
+                TARGET_OPPONENT,
                 this,
                 "Put a loyalty counter on SN for each creature target opponent\$ controls."
             );
@@ -87,7 +87,7 @@ def PreventAllDamage = new MagicIfDamageWouldBeDealtTrigger(MagicTrigger.PREVENT
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final Collection<MagicPermanent> targets = game.filterPermanents(
                 event.getPlayer(),
-                MagicTargetFilterFactory.PERMANENT.except(event.getPermanent())
+                PERMANENT.except(event.getPermanent())
             );
             for (final MagicPermanent target : targets) {
                 game.doAction(new MagicRemoveFromPlayAction(target, MagicLocationType.Exile));

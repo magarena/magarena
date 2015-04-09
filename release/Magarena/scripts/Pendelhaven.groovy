@@ -11,7 +11,7 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.POS_TARGET_1_1_CREATURE,
+                POS_TARGET_1_1_CREATURE,
                 MagicPumpTargetPicker.create(),
                 this,
                 "Target 1/1 creature\$ gets +1/+2 until end of turn."

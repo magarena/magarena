@@ -4,7 +4,7 @@
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.NEG_TARGET_LAND,
+                NEG_TARGET_LAND,
                 MagicDestroyTargetPicker.Destroy,
                 this,
                 "Destroy target land\$. " +
@@ -18,7 +18,7 @@
                 game.doAction(new MagicDestroyAction(it));
                 final Collection<MagicPermanent> targets = game.filterPermanents(
                         event.getPlayer(),
-                        MagicTargetFilterFactory.HUMAN_CREATURE);
+                        HUMAN_CREATURE);
                 final MagicSource source = event.getSource();
                 for (final MagicPermanent target : targets) {
                     game.doAction(new MagicDealDamageAction(source,target,1));

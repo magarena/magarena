@@ -15,7 +15,7 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.NEG_TARGET_PERMANENT,
+                NEG_TARGET_PERMANENT,
                 MagicExileTargetPicker.create(),
                 this,
                 "Target permanent\$ becomes an artifact in addition to its other types."
@@ -45,7 +45,7 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.NEG_TARGET_ARTIFACT,
+                NEG_TARGET_ARTIFACT,
                 MagicExileTargetPicker.create(),
                 this,
                 "Gain control of target artifact\$."

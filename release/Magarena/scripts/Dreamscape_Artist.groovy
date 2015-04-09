@@ -10,7 +10,7 @@
                 new MagicTapEvent(source),
                 new MagicPayManaCostEvent(source, "{2}{U}"),
                 new MagicDiscardEvent(source),
-                new MagicSacrificePermanentEvent(source, MagicTargetChoice.SACRIFICE_LAND)
+                new MagicSacrificePermanentEvent(source, SACRIFICE_LAND)
             ];
         }
 
@@ -29,7 +29,7 @@
             game.addEvent(new MagicSearchOntoBattlefieldEvent(
                 event,
                 new MagicFromCardFilterChoice(
-                    MagicTargetFilterFactory.BASIC_LAND_CARD_FROM_LIBRARY,
+                    BASIC_LAND_CARD_FROM_LIBRARY,
                     2, 
                     true, 
                     "to put onto the battlefield"

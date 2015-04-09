@@ -4,7 +4,7 @@
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack spell) {
             return new MagicEvent(
                 permanent,
-                new MagicMayChoice(MagicTargetChoice.NEG_TARGET_PLAYER),
+                new MagicMayChoice(NEG_TARGET_PLAYER),
                 spell.getConvertedCost(),
                 this,
                 "PN may\$ have target player\$ put the top RN cards of his or her library into his or her graveyard."

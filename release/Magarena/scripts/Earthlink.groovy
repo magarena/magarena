@@ -13,7 +13,7 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.addEvent(new MagicSacrificePermanentEvent(event.getSource(),event.getPlayer(),MagicTargetChoice.SACRIFICE_LAND));
+            game.addEvent(new MagicSacrificePermanentEvent(event.getSource(),event.getPlayer(),SACRIFICE_LAND));
         }
     }
 ]

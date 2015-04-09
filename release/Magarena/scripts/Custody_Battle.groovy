@@ -16,7 +16,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.getPlayer().controlsPermanent(MagicType.Land) && event.isYes()) {
-                game.addEvent(new MagicSacrificePermanentEvent(event.getPermanent(),event.getPlayer(),MagicTargetChoice.SACRIFICE_LAND));
+                game.addEvent(new MagicSacrificePermanentEvent(event.getPermanent(),event.getPlayer(),SACRIFICE_LAND));
             } else {
                 game.doAction(new MagicGainControlAction(
                     event.getPlayer().getOpponent(),

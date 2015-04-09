@@ -5,7 +5,7 @@
             return (creature == permanent) ?
                 new MagicEvent(
                     permanent,
-                    new MagicMayChoice(MagicTargetChoice.NEG_TARGET_CREATURE),
+                    new MagicMayChoice(NEG_TARGET_CREATURE),
                     new MagicDamageTargetPicker(3),
                     this,
                     "PN may\$ have SN deal 3 damage to target creature\$. " +

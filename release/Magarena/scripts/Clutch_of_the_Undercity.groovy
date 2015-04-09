@@ -4,7 +4,7 @@
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.TARGET_PERMANENT,
+                TARGET_PERMANENT,
                 MagicBounceTargetPicker.create(),
                 this,
                 "Return target permanent\$ to its owner's hand. Its controller loses 3 life."

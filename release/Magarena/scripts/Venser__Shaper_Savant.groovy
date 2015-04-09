@@ -4,7 +4,7 @@
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 permanent,
-                MagicTargetChoice.NEG_TARGET_SPELL_OR_PERMANENT,
+                NEG_TARGET_SPELL_OR_PERMANENT,
                 MagicBounceTargetPicker.create(),
                 this,
                 "Return target spell or permanent\$ to its owner's hand."

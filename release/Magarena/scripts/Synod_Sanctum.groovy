@@ -16,7 +16,7 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.TARGET_PERMANENT_YOU_CONTROL,
+                TARGET_PERMANENT_YOU_CONTROL,
                 this,
                 "Exile target permanent you control."
             );

@@ -26,7 +26,7 @@ def A_CARD_NAMED_ORISS = new MagicTargetChoice(
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.NEG_TARGET_PLAYER,
+                NEG_TARGET_PLAYER,
                 this,
                 "Target player\$ can't cast spells this turn, and creatures that player controls can't attack this turn."
             );
@@ -35,7 +35,7 @@ def A_CARD_NAMED_ORISS = new MagicTargetChoice(
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
                 game.doAction(new MagicChangePlayerStateAction(it, MagicPlayerState.CantCastSpells));
-                final Collection<MagicPermanent> creatures = it.filterPermanents(MagicTargetFilterFactory.CREATURE_YOU_CONTROL);
+                final Collection<MagicPermanent> creatures = it.filterPermanents(CREATURE_YOU_CONTROL);
                 for (final MagicPermanent creature : creatures) {
                     game.doAction(new MagicGainAbilityAction(creature, MagicAbility.CannotAttack));
                 }

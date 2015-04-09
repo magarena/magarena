@@ -5,7 +5,7 @@
             final int amount=payedCost.getX();
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.TARGET_PLAYER,
+                TARGET_PLAYER,
                 this,
                 "Target player\$ draws "+amount+" cards."
             );

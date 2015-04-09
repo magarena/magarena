@@ -17,7 +17,7 @@
             final int X = source.getController().getNrOfPermanents(MagicSubType.Merfolk);
             return new MagicEvent(
                 source,
-                MagicTargetChoice.NEG_TARGET_ATTACKING_OR_BLOCKING_CREATURE,
+                NEG_TARGET_ATTACKING_OR_BLOCKING_CREATURE,
                 new MagicDamageTargetPicker(X),
                 this,
                 "SN deals X damage to target attacking or blocking creature\$, "+

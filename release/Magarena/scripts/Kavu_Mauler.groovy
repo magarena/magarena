@@ -12,7 +12,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPermanent permanent = event.getPermanent()
-            final int amount = game.filterPermanents(MagicTargetFilterFactory.ATTACKING_KAVU.except(permanent)).size();
+            final int amount = game.filterPermanents(ATTACKING_KAVU.except(permanent)).size();
             game.doAction(new MagicChangeTurnPTAction(permanent,amount,amount));
         }
     }

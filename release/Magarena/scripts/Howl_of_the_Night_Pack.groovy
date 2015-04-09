@@ -14,7 +14,7 @@
             game.doAction(new MagicPlayTokensAction(
                 player,
                 TokenCardDefinitions.get("2/2 green Wolf creature token"),
-                player.getNrOfPermanents(MagicTargetFilterFactory.FOREST)
+                player.getNrOfPermanents(FOREST)
             ));
         }
     }

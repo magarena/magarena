@@ -4,7 +4,7 @@
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.NEG_TARGET_NONLAND_PERMANENT,
+                NEG_TARGET_NONLAND_PERMANENT,
                 MagicDestroyTargetPicker.Destroy,
                 this,
                 "Destroy target nonland permanent\$ and all other permanents with the same name as that permanent."

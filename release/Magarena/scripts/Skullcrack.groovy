@@ -22,7 +22,7 @@ def cantBePrevented = new MagicIfDamageWouldBeDealtTrigger() {
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.NEG_TARGET_PLAYER,
+                NEG_TARGET_PLAYER,
                 this,
                 "Players can't gain life this turn. Damage can't be prevented this turn. " +
                 "SN deals 3 damage to target player\$."

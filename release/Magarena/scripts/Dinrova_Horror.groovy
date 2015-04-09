@@ -4,7 +4,7 @@
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 permanent,
-                MagicTargetChoice.TARGET_PERMANENT,
+                TARGET_PERMANENT,
                 MagicBounceTargetPicker.create(),
                 this,
                 "Return target permanent\$ to its owner's hand. Then that player discards a card."

@@ -4,7 +4,7 @@
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.TARGET_NONLAND_PERMANENT,
+                TARGET_NONLAND_PERMANENT,
                 MagicBounceTargetPicker.create(),
                 this,
                 "Return target nonland permanent\$ to its owner's hand. If SN was kicked, draw a card."

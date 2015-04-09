@@ -16,7 +16,7 @@
             final MagicPlayer player = event.getPlayer();
             final Collection<MagicPermanent> targets = game.filterPermanents(
                 player,
-                MagicTargetFilterFactory.CREATURE
+                CREATURE
             );
             int highestPower = 0;
             boolean controlHighest = false;

@@ -11,7 +11,7 @@
 
         @Override
         public Iterable<MagicEvent> getCostEvent(final MagicCard source) {
-            final int n = source.getGame().getNrOfPermanents(MagicTargetFilterFactory.ATTACKING_CREATURE);
+            final int n = source.getGame().getNrOfPermanents(ATTACKING_CREATURE);
             return [
                 new MagicPayManaCostEvent(
                     source,

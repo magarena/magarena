@@ -20,7 +20,7 @@
             if (event.isYes()) {
                 final MagicPlayer opponent = event.getPlayer().getOpponent();
                 final List<MagicCard> targets =
-                        game.filterCards(opponent,MagicTargetFilterFactory.CREATURE_CARD_FROM_GRAVEYARD);
+                        game.filterCards(opponent,CREATURE_CARD_FROM_GRAVEYARD);
                 if (targets.size() > 0) {
                     final MagicCard card = targets.get(targets.size()-1);
                     game.doAction(new MagicReanimateAction(

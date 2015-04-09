@@ -5,7 +5,7 @@
             final int X = cardOnStack.getController().getHandSize();
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.NEG_TARGET_CREATURE,
+                NEG_TARGET_CREATURE,
                 new MagicWeakenTargetPicker(-X, -X),
                 this,
                 "Target creature\$ gets -X/-X until end of turn, where X is the number of cards in PN's hand."

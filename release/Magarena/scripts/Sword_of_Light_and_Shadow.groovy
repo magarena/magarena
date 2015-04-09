@@ -8,7 +8,7 @@
                 new MagicEvent(
                     permanent,
                     new MagicMayChoice(
-                        MagicTargetChoice.TARGET_CREATURE_CARD_FROM_GRAVEYARD
+                        TARGET_CREATURE_CARD_FROM_GRAVEYARD
                     ),
                     MagicGraveyardTargetPicker.ReturnToHand,
                     this,

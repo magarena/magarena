@@ -13,7 +13,7 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.NEG_TARGET_NONLAND_PERMANENT,
+                NEG_TARGET_NONLAND_PERMANENT,
                 MagicDefaultTargetPicker.create(),
                 this,
                 "PN exchanges control of SN and target nonland permanent\$."

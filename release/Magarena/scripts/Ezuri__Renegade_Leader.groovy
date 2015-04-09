@@ -13,7 +13,7 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.PosOther("target Elf", source),
+                PosOther("target Elf", source),
                 MagicRegenerateTargetPicker.create(),
                 this,
                 "Regenerate another target Elf\$."
@@ -49,7 +49,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final Collection<MagicPermanent> targets =
-                    game.filterPermanents(event.getPlayer(),MagicTargetFilterFactory.ELF_YOU_CONTROL);
+                    game.filterPermanents(event.getPlayer(),ELF_YOU_CONTROL);
             for (final MagicPermanent creature : targets) {
                 game.doAction(new MagicChangeTurnPTAction(creature,3,3));
                 game.doAction(new MagicGainAbilityAction(creature,MagicAbility.Trample));

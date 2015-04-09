@@ -1,4 +1,4 @@
-def choice = MagicTargetChoice.Negative("target Wall");
+def choice = Negative("target Wall");
 
 [
     new MagicSpellCardEvent() {

@@ -14,7 +14,7 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.CREATURE_CARD_FROM_HAND,
+                A_CREATURE_CARD_FROM_HAND,
                 MagicGraveyardTargetPicker.PutOntoBattlefield,
                 this,
                 "PN may put a creature card\$ from PN's hand onto the battlefield. "+

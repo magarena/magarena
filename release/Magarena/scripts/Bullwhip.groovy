@@ -16,7 +16,7 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.NEG_TARGET_CREATURE,
+                NEG_TARGET_CREATURE,
                 MagicMustAttackTargetPicker.create(),
                 this,
                 "SN deals 1 damage to target creature\$. That creature attacks this turn if able."

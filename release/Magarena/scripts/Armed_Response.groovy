@@ -4,7 +4,7 @@
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.NEG_TARGET_ATTACKING_CREATURE,
+                NEG_TARGET_ATTACKING_CREATURE,
                 this,
                 "SN deals damage to target attacking creature\$ equal to the" +
                 "number of Equipment PN controls."

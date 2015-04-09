@@ -4,7 +4,7 @@
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.NEG_TARGET_UNTAPPED_CREATURE,
+                NEG_TARGET_UNTAPPED_CREATURE,
                 MagicTapTargetPicker.Tap,
                 this,
                 "Tap target untapped creature\$. That creature deals damage equal to its power to its controller."

@@ -18,7 +18,7 @@ def tappedAbility = {
     };
 }
 
-def choice = MagicTargetChoice.Negative("target artifact, creature, or land");
+def choice = Negative("target artifact, creature, or land");
 
 [
     new MagicPermanentActivation(

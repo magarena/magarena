@@ -28,7 +28,7 @@ def EVENT_ACTION = new MagicEventAction() {
                 game.addEvent(new MagicEvent(
                     event.getSource(),
                     player,
-                    MagicTargetChoice.TARGET_CREATURE_CARD_FROM_GRAVEYARD,
+                    TARGET_CREATURE_CARD_FROM_GRAVEYARD,
                     MagicGraveyardTargetPicker.PutOntoBattlefield,
                     EVENT_ACTION,
                     "PN puts a creature card from his or her graveyard onto the battlefield."

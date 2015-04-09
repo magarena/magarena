@@ -1,4 +1,4 @@
-def choice = MagicTargetChoice.Positive("target Sliver creature");
+def choice = Positive("target Sliver creature");
 
 def MagmaPump = new MagicPermanentActivation(
     new MagicActivationHints(MagicTiming.Pump),
@@ -34,7 +34,7 @@ def MagmaPump = new MagicPermanentActivation(
 [
     new MagicStatic(
         MagicLayer.Ability,
-        MagicTargetFilterFactory.SLIVER
+        SLIVER
     ) {
         @Override
         public void modAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final Set<MagicAbility> flags) {

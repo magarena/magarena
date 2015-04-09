@@ -20,7 +20,7 @@ def action = {
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.TARGET_PLAYER,
+                TARGET_PLAYER,
                 this,
                 "Target player\$ sacrifices a creature. " +
                 "If a Goblin is sacrificed this way, that player puts two 1/1 black Goblin Rogue creature tokens onto the battlefield, " + 
@@ -33,7 +33,7 @@ def action = {
                 game.addEvent(new MagicEvent(
                     event.getSource(),
                     it,
-                    MagicTargetChoice.SACRIFICE_CREATURE,
+                    SACRIFICE_CREATURE,
                     MagicSacrificeTargetPicker.create(),
                     action,
                     "Choose a creature to sacrifice\$."

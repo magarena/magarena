@@ -12,7 +12,7 @@
        @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
-            game.filterPermanents(player, MagicTargetFilterFactory.ENCHANTMENT) each {
+            game.filterPermanents(player, ENCHANTMENT) each {
                 game.doAction(new MagicGainControlAction(player, it));
             }
         }

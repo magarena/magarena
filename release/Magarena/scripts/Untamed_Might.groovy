@@ -5,7 +5,7 @@
             final int amount = payedCost.getX();
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.POS_TARGET_CREATURE,
+                POS_TARGET_CREATURE,
                 MagicPumpTargetPicker.create(),
                 this,
                 "Target creature\$ gets +" + amount + "/+" + amount + " until end of turn."

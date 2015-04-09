@@ -14,7 +14,7 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.NEG_TARGET_CREATURE_WITH_FLYING,
+                NEG_TARGET_CREATURE_WITH_FLYING,
                 new MagicDamageTargetPicker(2),
                 this,
                 "SN deals 2 damage to target creature with flying\$ and that creature loses flying until end of turn."

@@ -1,7 +1,7 @@
 [
     new MagicStatic(
          MagicLayer.Color,
-         MagicTargetFilterFactory.SLIVER
+         SLIVER
     ) {
          @Override
          public int getColorFlags(final MagicPermanent permanent, final int flags) {

@@ -9,7 +9,7 @@
                 new MagicPayManaCostEvent(source,"{1}"),
                 new MagicSacrificePermanentEvent(
                     source,
-                    MagicTargetChoice.SACRIFICE_CREATURE
+                    SACRIFICE_CREATURE
                 )
             ];
         }

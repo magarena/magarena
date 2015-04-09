@@ -13,7 +13,7 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.NEG_TARGET_CARD_FROM_ALL_GRAVEYARDS,
+                NEG_TARGET_CARD_FROM_ALL_GRAVEYARDS,
                 MagicGraveyardTargetPicker.ExileOpp,
                 this,
                 "Exile target card\$ from a graveyard. " +

@@ -18,7 +18,7 @@
                 final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.NEG_TARGET_PLAYER,
+                NEG_TARGET_PLAYER,
                 new MagicDamageTargetPicker(source.getPower()),
                 this,
                 "SN deals damage equal to its power to target player\$."

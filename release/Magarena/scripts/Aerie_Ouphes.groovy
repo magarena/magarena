@@ -13,7 +13,7 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.NEG_TARGET_CREATURE_WITH_FLYING,
+                NEG_TARGET_CREATURE_WITH_FLYING,
                 new MagicDamageTargetPicker(source.getPower()),
                 this,
                 "SN deals damage equal to SN's power to target creature with flying.\$"

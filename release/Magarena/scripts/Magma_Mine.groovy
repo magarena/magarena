@@ -19,7 +19,7 @@
             final int amount = source.getCounters(MagicCounterType.Pressure);
             return new MagicEvent(
                 source,
-                MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
+                NEG_TARGET_CREATURE_OR_PLAYER,
                 new MagicDamageTargetPicker(amount),
                 amount,
                 this,

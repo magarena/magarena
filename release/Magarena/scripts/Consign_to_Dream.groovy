@@ -4,7 +4,7 @@
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.NEG_TARGET_PERMANENT,
+                NEG_TARGET_PERMANENT,
                 MagicBounceTargetPicker.create(),
                 this,
                 "Return target permanent\$ to its owner's hand. If that permanent is red or green, "+

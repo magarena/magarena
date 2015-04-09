@@ -38,7 +38,7 @@ def choice = new MagicTargetChoice("a basic land you control");
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.NEG_TARGET_CREATURE,
+                NEG_TARGET_CREATURE,
                 MagicDestroyTargetPicker.DestroyNoRegen,
                 this,
                 "Destroy target creature\$. It can't be regenerated. "+

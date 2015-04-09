@@ -10,7 +10,7 @@ def WHITE = new MagicStatic(MagicLayer.Color, MagicStatic.UntilEOT) {
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.NEG_TARGET_CREATURE,
+                NEG_TARGET_CREATURE,
                 MagicTapTargetPicker.Tap,
                 this,
                 "Target creature\$ becomes white until end of turn. Tap it. PN draws a card."

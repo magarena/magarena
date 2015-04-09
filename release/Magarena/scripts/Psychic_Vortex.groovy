@@ -37,7 +37,7 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.addEvent(new MagicSacrificePermanentEvent(event.getPermanent(), MagicTargetChoice.LAND_YOU_CONTROL));
+            game.addEvent(new MagicSacrificePermanentEvent(event.getPermanent(), A_LAND_YOU_CONTROL));
             game.addEvent(new MagicDiscardHandEvent(event.getPermanent()));
         }
     }

@@ -29,7 +29,7 @@ def action = {
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.TARGET_OPPONENT,
+                TARGET_OPPONENT,
                 this,
                 "Target opponent\$ exiles a card from his or her hand."
             );
@@ -41,7 +41,7 @@ def action = {
                 game.addEvent(new MagicEvent(
                     event.getSource(),
                     it,
-                    MagicTargetChoice.A_CARD_FROM_HAND,
+                    A_CARD_FROM_HAND,
                     action,
                     "PN exiles a card from his or her hand."
                 ));

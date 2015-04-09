@@ -13,12 +13,12 @@
             for (final MagicPlayer player : game.getAPNAP()) {
                 game.addEvent(new MagicRepeatedPermanentsEvent(
                     event.getSource(), 
-                    MagicTargetChoice.SACRIFICE_LAND, 
+                    SACRIFICE_LAND, 
                     4, 
                     MagicChainEventFactory.Sac
                 ));
             }
-            final Collection<MagicPermanent> targets = game.filterPermanents(MagicTargetFilterFactory.CREATURE);
+            final Collection<MagicPermanent> targets = game.filterPermanents(CREATURE);
             for (final MagicPermanent target : targets) {
                 game.doAction(new MagicDealDamageAction(event.getSource(), target, 4));
             }

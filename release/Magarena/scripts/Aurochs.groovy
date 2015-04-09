@@ -11,7 +11,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPermanent creature = event.getPermanent();
-            final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.ATTACKING_AUROCHS.except(creature);
+            final MagicTargetFilter<MagicPermanent> filter = ATTACKING_AUROCHS.except(creature);
             final int power = event.getPlayer().getNrOfPermanents(filter);
             game.doAction(new MagicChangeTurnPTAction(creature,power,0));
         }

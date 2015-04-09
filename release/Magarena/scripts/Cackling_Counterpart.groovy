@@ -4,7 +4,7 @@
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.TARGET_CREATURE_YOU_CONTROL,
+                TARGET_CREATURE_YOU_CONTROL,
                 MagicCopyPermanentPicker.create(),
                 this,
                 "PN puts a token onto the battlefield that's a copy of target creature\$ he or she controls."

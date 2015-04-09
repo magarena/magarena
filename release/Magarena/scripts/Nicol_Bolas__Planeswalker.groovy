@@ -4,7 +4,7 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.NEG_TARGET_NONCREATURE,
+                NEG_TARGET_NONCREATURE,
                 MagicDestroyTargetPicker.Destroy,
                 this,
                 "Destroy target noncreature permanent\$."
@@ -22,7 +22,7 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
              return new MagicEvent(
                 source,
-                MagicTargetChoice.NEG_TARGET_CREATURE,
+                NEG_TARGET_CREATURE,
                 MagicExileTargetPicker.create(),
                 this,
                 "Gain control of target creature\$."
@@ -43,7 +43,7 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.NEG_TARGET_PLAYER,
+                NEG_TARGET_PLAYER,
                 new MagicDamageTargetPicker(7),
                 this,
                 "SN deals 7 damage to target player\$. That player discards 7 cards, then sacrifices 7 permanents."
@@ -58,7 +58,7 @@
                     game.addEvent(new MagicSacrificePermanentEvent(
                         event.getSource(), 
                         it, 
-                        MagicTargetChoice.SACRIFICE_PERMANENT
+                        SACRIFICE_PERMANENT
                     ));
                 }
             });

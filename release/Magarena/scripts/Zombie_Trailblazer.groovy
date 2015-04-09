@@ -40,7 +40,7 @@ def AN_UNTAPPED_ZOMBIE_YOU_CONTROL = new MagicTargetChoice(UNTAPPED_ZOMBIE_YOU_C
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.TARGET_LAND,
+                TARGET_LAND,
                 this,
                 "Target land\$ becomes a Swamp until end of turn."
             );

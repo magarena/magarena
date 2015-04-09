@@ -5,7 +5,7 @@
             final int amount = cardOnStack.getController().getDomain();
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.NEG_TARGET_CREATURE,
+                NEG_TARGET_CREATURE,
                 new MagicWeakenTargetPicker(amount,amount),
                 this,
                 "Target creature\$ gets -1/-1 until end of turn for each basic land type among lands PN controls."

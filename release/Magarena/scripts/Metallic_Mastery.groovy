@@ -4,7 +4,7 @@
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.TARGET_ARTIFACT,
+                TARGET_ARTIFACT,
                 MagicExileTargetPicker.create(),
                 this,
                 "Gain control of target artifact\$ until end of turn. " +

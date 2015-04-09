@@ -3,7 +3,7 @@
         @Override
         public void modPowerToughness(final MagicPermanent source, final MagicPermanent permanent, final MagicPowerToughness pt) {
             final MagicGame game = source.getGame();
-            final int amt = game.getNrOfPermanents(MagicTargetFilterFactory.ENCHANTMENT.except(source));
+            final int amt = game.getNrOfPermanents(ENCHANTMENT.except(source));
             pt.add(amt*2, amt*2);
         }
         @Override

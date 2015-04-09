@@ -8,7 +8,7 @@
             final int amount = permanent.getController().getNrOfPermanents(MagicSubType.Human);
             return new MagicEvent(
                 permanent,
-                MagicTargetChoice.NEG_TARGET_PLAYER,
+                NEG_TARGET_PLAYER,
                 new MagicDamageTargetPicker(amount),
                 this,
                 "SN deals damage to target player\$ " +

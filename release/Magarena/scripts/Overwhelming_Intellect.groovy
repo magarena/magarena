@@ -4,7 +4,7 @@
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.NEG_TARGET_CREATURE_SPELL,
+                NEG_TARGET_CREATURE_SPELL,
                 this,
                 "Counter target creature spell\$. PN draws cards equal to that spell's converted mana cost."
             );

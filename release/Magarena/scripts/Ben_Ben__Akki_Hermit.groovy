@@ -13,7 +13,7 @@ def choice = new MagicTargetChoice("target attacking creature");
 
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
-            final int amount = source.getController().getNrOfPermanents(MagicTargetFilterFactory.UNTAPPED_MOUNTAIN_YOU_CONTROL);
+            final int amount = source.getController().getNrOfPermanents(UNTAPPED_MOUNTAIN_YOU_CONTROL);
             return new MagicEvent(
                 source,
                 choice,
@@ -26,7 +26,7 @@ def choice = new MagicTargetChoice("target attacking creature");
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final int amount = event.getPlayer().getNrOfPermanents(MagicTargetFilterFactory.UNTAPPED_MOUNTAIN_YOU_CONTROL)
+                final int amount = event.getPlayer().getNrOfPermanents(UNTAPPED_MOUNTAIN_YOU_CONTROL)
                 game.doAction(new MagicDealDamageAction(event.getSource(),it,amount));
                 game.logAppendMessage(event.getPlayer()," ("+amount+")");
             });

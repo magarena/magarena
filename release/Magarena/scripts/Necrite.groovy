@@ -5,7 +5,7 @@
             return (creature == permanent) ?
                 new MagicEvent(
                     permanent,
-                    new MagicMayChoice(MagicTargetChoice.NEG_TARGET_CREATURE),
+                    new MagicMayChoice(NEG_TARGET_CREATURE),
                     MagicDestroyTargetPicker.DestroyNoRegen,
                     this,
                     "PN may\$ sacrifice SN. " +

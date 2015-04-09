@@ -16,7 +16,7 @@
             final int amount = payedCost.getX();
             return new MagicEvent(
                 source,
-                MagicTargetChoice.NEG_TARGET_ATTACKING_OR_BLOCKING_CREATURE,
+                NEG_TARGET_ATTACKING_OR_BLOCKING_CREATURE,
                 new MagicDamageTargetPicker(amount),
                 amount,
                 this,

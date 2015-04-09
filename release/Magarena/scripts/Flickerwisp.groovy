@@ -4,7 +4,7 @@
          public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 permanent,
-                MagicTargetChoice.Other("target permanent", permanent),
+                Other("target permanent", permanent),
                 MagicExileTargetPicker.create(),
                 this,
                 "Exile another target permanent\$. Return that card to the " +

@@ -5,7 +5,7 @@
             final int amount = permanent.getController().getNrOfPermanents(MagicSubType.Dragon);
             return new MagicEvent(
                 permanent,
-                MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
+                NEG_TARGET_CREATURE_OR_PLAYER,
                 new MagicDamageTargetPicker(amount),
                 this,
                 "SN deals damage to target creature or player\$ equal to the number of Dragons PN controls."
@@ -27,7 +27,7 @@
             return (otherPermanent.hasSubType(MagicSubType.Dragon) && permanent != otherPermanent && otherPermanent.isFriend(permanent)) ? 
                 new MagicEvent(
                     permanent,
-                    MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
+                    NEG_TARGET_CREATURE_OR_PLAYER,
                     new MagicDamageTargetPicker(amount),
                     otherPermanent,
                     this,

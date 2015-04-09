@@ -20,7 +20,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final Collection<MagicPermanent> creatures = game.filterPermanents(
                 event.getPlayer(),
-                MagicTargetFilterFactory.CREATURE_YOUR_OPPONENT_CONTROLS
+                CREATURE_YOUR_OPPONENT_CONTROLS
             );
             for (final MagicPermanent creature : creatures) {
                 game.doAction(new MagicChangeTurnPTAction(creature,-1,-1));

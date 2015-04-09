@@ -11,7 +11,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPermanent permanent=event.getPermanent();
-            final int amount=game.filterPermanents(MagicTargetFilterFactory.ATTACKING_GOBLIN.except(permanent)).size()*2;
+            final int amount=game.filterPermanents(ATTACKING_GOBLIN.except(permanent)).size()*2;
             game.doAction(new MagicChangeTurnPTAction(permanent,amount,0));
         }
     }

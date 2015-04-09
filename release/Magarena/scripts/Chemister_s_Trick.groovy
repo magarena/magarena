@@ -4,7 +4,7 @@
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.TARGET_CREATURE_YOU_DONT_CONTROL,
+                TARGET_CREATURE_YOU_DONT_CONTROL,
                 MagicTapTargetPicker.Tap,
                 this,
                 "Target creature\$ you don't control gets -2/-0 until end of turn and attacks this turn if able."
@@ -36,7 +36,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final Collection<MagicPermanent> targets=
-                game.filterPermanents(event.getPlayer(),MagicTargetFilterFactory.CREATURE_YOUR_OPPONENT_CONTROLS);
+                game.filterPermanents(event.getPlayer(),CREATURE_YOUR_OPPONENT_CONTROLS);
             for (final MagicPermanent creature : targets) {
                 game.doAction(new MagicChangeTurnPTAction(creature, -2, 0));
                 game.doAction(new MagicGainAbilityAction(creature, MagicAbility.AttacksEachTurnIfAble));

@@ -5,7 +5,7 @@
             final int amount = damage.getDealtAmount();
             return new MagicEvent(
                 permanent,
-                new MagicMayChoice(MagicTargetChoice.TARGET_CREATURE_YOUR_OPPONENT_CONTROLS),
+                new MagicMayChoice(TARGET_CREATURE_YOUR_OPPONENT_CONTROLS),
                 new MagicDamageTargetPicker(amount),
                 amount,
                 this,

@@ -13,7 +13,7 @@
             final MagicCard card = event.getPermanent().getCard();
             game.doAction(new MagicRemoveCardAction(card, MagicLocationType.Graveyard));
             game.doAction(new MagicMoveCardAction(card, MagicLocationType.Graveyard, MagicLocationType.Exile));
-            game.filterCards(event.getPlayer(),MagicTargetFilterFactory.CREATURE_CARD_FROM_GRAVEYARD) each {
+            game.filterCards(event.getPlayer(),CREATURE_CARD_FROM_GRAVEYARD) each {
                 game.doAction(new MagicRemoveCardAction(it, MagicLocationType.Graveyard));
                 game.doAction(new MagicMoveCardAction(it, MagicLocationType.Graveyard, MagicLocationType.OwnersLibrary));
             }

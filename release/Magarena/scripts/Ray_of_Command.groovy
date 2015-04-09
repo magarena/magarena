@@ -26,7 +26,7 @@ def LoseControlTap = {
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.TARGET_CREATURE_YOUR_OPPONENT_CONTROLS,
+                TARGET_CREATURE_YOUR_OPPONENT_CONTROLS,
                 MagicExileTargetPicker.create(),
                 this,
                 "Untap target creature\$ an opponent controls and gain control of it until end of turn. " + 

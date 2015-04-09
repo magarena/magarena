@@ -6,7 +6,7 @@
             return (damage.getTarget() == permanent) ?
                 new MagicEvent(
                     permanent,
-                    MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
+                    NEG_TARGET_CREATURE_OR_PLAYER,
                     new MagicDamageTargetPicker(amount),
                     amount,
                     this,

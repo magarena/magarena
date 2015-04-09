@@ -4,7 +4,7 @@
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                new MagicMayChoice(MagicTargetChoice.CREATURE),
+                new MagicMayChoice(A_CREATURE),
                 MagicCopyPermanentPicker.create(),
                 this,
                 "You may\$ have SN enter the battlefield as a copy of any creature\$ on the battlefield."

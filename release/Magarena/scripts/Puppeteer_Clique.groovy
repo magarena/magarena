@@ -4,7 +4,7 @@
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 permanent,
-                MagicTargetChoice.TARGET_CREATURE_CARD_FROM_OPPONENTS_GRAVEYARD,
+                TARGET_CREATURE_CARD_FROM_OPPONENTS_GRAVEYARD,
                 MagicGraveyardTargetPicker.PutOntoBattlefield,
                 this,
                 "Put target creature card in an opponent's graveyard\$ onto the battlefield under PN's control. "+

@@ -32,7 +32,7 @@
                 game.filterPermanents(
                     source.getController(),
                     new MagicCMCPermanentFilter(
-                        MagicTargetFilterFactory.ARTIFACT_OR_CREATURE_OR_ENCHANTMENT,
+                        ARTIFACT_OR_CREATURE_OR_ENCHANTMENT,
                         Operator.LESS_THAN_OR_EQUAL,
                         amount
                     )

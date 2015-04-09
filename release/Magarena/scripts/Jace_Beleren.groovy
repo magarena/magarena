@@ -20,7 +20,7 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.POS_TARGET_PLAYER,
+                POS_TARGET_PLAYER,
                 this,
                 "Target player\$ draws a card."
             );
@@ -37,7 +37,7 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.NEG_TARGET_PLAYER,
+                NEG_TARGET_PLAYER,
                 this,
                 "Target player\$ puts the top twenty cards of his or her library into his or her graveyard."
             );

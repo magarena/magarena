@@ -4,7 +4,7 @@
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.TARGET_CREATURE,
+                TARGET_CREATURE,
                 MagicPumpTargetPicker.create(),
                 this,
                 "If target creature\$ has toughness 5 or greater, it gets +4/-4 until end of turn. "+

@@ -5,7 +5,7 @@
             return new MagicEvent(
                 permanent,
                 upkeepPlayer,
-                MagicTargetChoice.LAND_YOU_CONTROL,
+                A_LAND_YOU_CONTROL,
                 MagicTapTargetPicker.Untap,
                 this,
                 "PN untaps a land PN controls\$."

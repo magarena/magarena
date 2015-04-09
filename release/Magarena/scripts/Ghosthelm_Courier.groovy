@@ -38,7 +38,7 @@ def tappedAbility = {
     };
 }
 
-def choice = MagicTargetChoice.Positive("target wizard creature");
+def choice = Positive("target wizard creature");
 
 [
     new MagicPermanentActivation(

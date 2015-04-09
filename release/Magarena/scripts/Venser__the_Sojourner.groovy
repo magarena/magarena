@@ -5,7 +5,7 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.TARGET_PERMANENT_YOU_OWN,
+                TARGET_PERMANENT_YOU_OWN,
                 this,
                 "Exile target permanent you own. Return it to the battlefield under your control at the beginning of the next end step."
             );
@@ -31,7 +31,7 @@
             outerGame.doAction(new MagicAddStaticAction(
                 new MagicStatic(
                     MagicLayer.Ability,
-                    MagicTargetFilterFactory.CREATURE,
+                    CREATURE,
                     MagicStatic.UntilEOT) {
                     @Override
                     public void modAbilityFlags(final MagicPermanent source, final MagicPermanent permanent, final Set<MagicAbility> flags) {
@@ -60,7 +60,7 @@
                         return cardOnStack.getController().getId() == you.getId() ?
                             new MagicEvent(
                                 cardOnStack,
-                                MagicTargetChoice.NEG_TARGET_PERMANENT,
+                                NEG_TARGET_PERMANENT,
                                 MagicExileTargetPicker.create(),
                                 this,
                                 "Exile target permanent\$."

@@ -11,7 +11,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final Collection<MagicPermanent> permanents =
-                game.filterPermanents(MagicTargetFilterFactory.PERMANENT);
+                game.filterPermanents(PERMANENT);
             for (final MagicPermanent permanent : permanents) {
                 game.doAction(new MagicRemoveFromPlayAction(permanent,MagicLocationType.Exile));
             }

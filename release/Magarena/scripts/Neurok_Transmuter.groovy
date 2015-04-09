@@ -34,7 +34,7 @@ def artifact = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.NEG_TARGET_CREATURE,
+                NEG_TARGET_CREATURE,
                 MagicExileTargetPicker.create(),
                 this,
                 "Target creature\$ becomes an artifact in addition to its other types until end of turn."
@@ -64,7 +64,7 @@ def artifact = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.POS_TARGET_ARTIFACT_CREATURE,
+                POS_TARGET_ARTIFACT_CREATURE,
                 MagicExileTargetPicker.create(),
                 this,
                 "Until end of turn, target artifact creature\$ becomes blue and isn't an artifact."

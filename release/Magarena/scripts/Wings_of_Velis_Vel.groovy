@@ -17,7 +17,7 @@ def AB = new MagicStatic(MagicLayer.Ability, MagicStatic.UntilEOT) {
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.POS_TARGET_CREATURE,
+                POS_TARGET_CREATURE,
                 MagicSacrificeTargetPicker.create(),
                 this,
                 "Target creature\$ becomes 4/4, gains all creature types, and gains flying until end of turn."

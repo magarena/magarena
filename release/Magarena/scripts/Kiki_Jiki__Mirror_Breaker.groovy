@@ -13,7 +13,7 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.TARGET_NON_LEGENDARY_CREATURE_YOU_CONTROL,
+                TARGET_NON_LEGENDARY_CREATURE_YOU_CONTROL,
                 MagicCopyPermanentPicker.create(),
                 this,
                 "Put a token that's a copy of target nonlegendary creature\$ you control onto the battlefield. "+

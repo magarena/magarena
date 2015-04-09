@@ -13,7 +13,7 @@
             final MagicPermanent permanent=event.getPermanent();
             final Collection<MagicPermanent> targets= game.filterPermanents(
                 permanent.getController(),
-                MagicTargetFilterFactory.CREATURE.except(permanent)
+                CREATURE.except(permanent)
             );
             game.doAction(new MagicDestroyAction(targets));
         }

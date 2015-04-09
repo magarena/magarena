@@ -24,7 +24,7 @@ def ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.LAND_YOU_CONTROL,
+                A_LAND_YOU_CONTROL,
                 this,
                 "Target land PN controls\$ becomes an X/X Elemental creature until end of turn, where X is the number of Allies PN controls. It's still a land."
             );

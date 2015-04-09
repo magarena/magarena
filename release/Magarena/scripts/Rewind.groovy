@@ -4,7 +4,7 @@
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.NEG_TARGET_SPELL,
+                NEG_TARGET_SPELL,
                 this,
                 "Counter target spell\$. Untap up to four lands."
             );
@@ -16,7 +16,7 @@
             });
             game.addEvent(new MagicRepeatedPermanentsEvent(
                 event.getSource(),
-                MagicTargetChoice.TARGET_LAND,
+                TARGET_LAND,
                 4,
                 MagicChainEventFactory.Untap
             ));

@@ -4,7 +4,7 @@
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.POS_TARGET_PLAYER,
+                POS_TARGET_PLAYER,
                 this,
                 "Double target player's\$ life total. "+
                 "Shuffle SN into its owner's library."

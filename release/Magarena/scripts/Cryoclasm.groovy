@@ -1,4 +1,4 @@
-def choice = MagicTargetChoice.Negative("target Plains or Island");
+def choice = Negative("target Plains or Island");
 
 [
     new MagicSpellCardEvent() {

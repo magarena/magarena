@@ -43,7 +43,7 @@ def ST4 = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.TARGET_LAND,
+                TARGET_LAND,
                 this,
                 "Target land\$ becomes a Plains until end of turn."
             );
@@ -68,7 +68,7 @@ def ST4 = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.TARGET_LAND,
+                TARGET_LAND,
                 this,
                 "Target land\$ becomes an Island until end of turn."
             );

@@ -4,7 +4,7 @@
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.NEG_TARGET_CREATURE,
+                NEG_TARGET_CREATURE,
                 this,
                 "SN deals 4 damage to target creature\$. " +
                 "If seven or more cards are in PN's graveyard, instead SN deals 4 damage to that creature and 4 damage to that creature's controller."

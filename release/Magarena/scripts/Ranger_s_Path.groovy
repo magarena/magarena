@@ -14,7 +14,7 @@
             game.addEvent(new MagicSearchOntoBattlefieldEvent(
                 event,
                 new MagicFromCardFilterChoice(
-                    MagicTargetFilterFactory.FOREST_CARD_FROM_LIBRARY,
+                    FOREST_CARD_FROM_LIBRARY,
                     2, 
                     true, 
                     "to put onto the battlefield tapped"

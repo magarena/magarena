@@ -7,7 +7,7 @@
                     other.hasSubType(MagicSubType.Ally)) ?
                 new MagicEvent(
                     permanent,
-                    new MagicMayChoice(MagicTargetChoice.NEG_TARGET_CREATURE),
+                    new MagicMayChoice(NEG_TARGET_CREATURE),
                     // estimated. Amount of damage can be different on resolution
                     new MagicDamageTargetPicker(numAllies),
                     this,

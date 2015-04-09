@@ -4,7 +4,7 @@
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 permanent,
-                new MagicMayChoice(MagicTargetChoice.PosOther("target creature you control", permanent)),
+                new MagicMayChoice(PosOther("target creature you control", permanent)),
                 this,
                 "PN may\$ return another target creature\$ you control to its owner's hand."
             );

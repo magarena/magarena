@@ -27,7 +27,7 @@ def AB = new MagicStatic(MagicLayer.Ability, MagicStatic.Forever) {
     }
 };
 
-def choice = MagicTargetChoice.Positive("target snow land");
+def choice = Positive("target snow land");
 
 [
     new MagicPermanentActivation(

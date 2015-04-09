@@ -5,7 +5,7 @@
             return permanent.isController(eotPlayer) ?
                 new MagicEvent(
                     permanent,
-                    MagicTargetChoice.TARGET_CREATURE_YOU_CONTROL,
+                    TARGET_CREATURE_YOU_CONTROL,
                     MagicPowerTargetPicker.create(),
                     this,
                     "PN gains life equal to the power of target creature\$ he or she controls."

@@ -4,7 +4,7 @@
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
             return new MagicEvent(
                 permanent,
-                MagicTargetChoice.NegOther(
+                NegOther(
                     "target creature", 
                     permanent
                 ),

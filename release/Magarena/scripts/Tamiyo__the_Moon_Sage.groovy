@@ -4,7 +4,7 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.NEG_TARGET_PERMANENT,
+                NEG_TARGET_PERMANENT,
                 MagicTapTargetPicker.Tap,
                 this,
                 "Tap target permanent\$. It doesn't untap during its controller's next untap step."
@@ -26,7 +26,7 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.TARGET_PLAYER,
+                TARGET_PLAYER,
                 this,
                 "Draw a card for each tapped creature target player\$ controls."
             );
@@ -34,7 +34,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
-                final int amt = game.filterPermanents(it, MagicTargetFilterFactory.TAPPED_CREATURE_YOU_CONTROL).size();
+                final int amt = game.filterPermanents(it, TAPPED_CREATURE_YOU_CONTROL).size();
                 game.doAction(new MagicDrawAction(event.getPlayer(),amt));
             });
         }

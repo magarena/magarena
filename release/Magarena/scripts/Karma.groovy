@@ -12,7 +12,7 @@
         @Override
         public void executeEvent(final MagicGame game,final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
-            final int amount = player.getNrOfPermanents(MagicTargetFilterFactory.SWAMP_YOU_CONTROL);
+            final int amount = player.getNrOfPermanents(SWAMP_YOU_CONTROL);
             game.doAction(new MagicDealDamageAction(event.getSource(),player,amount));
             game.logAppendMessage(player," ("+amount+")");
         }

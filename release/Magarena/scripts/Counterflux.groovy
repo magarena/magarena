@@ -17,7 +17,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final Collection<MagicItemOnStack> targets=
-                game.filterItemOnStack(event.getPlayer(),MagicTargetFilterFactory.SPELL_YOU_DONT_CONTROL);
+                game.filterItemOnStack(event.getPlayer(),SPELL_YOU_DONT_CONTROL);
             for (final MagicItemOnStack targetSpell : targets) {
                 game.doAction(new MagicCounterItemOnStackAction(targetSpell));
             }

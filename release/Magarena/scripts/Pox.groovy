@@ -37,23 +37,23 @@
             }
             for (final MagicPlayer player : game.getAPNAP()) {
                 final int numCreatures =
-                    game.filterPermanents(player,MagicTargetFilterFactory.CREATURE_YOU_CONTROL).size();
+                    game.filterPermanents(player,CREATURE_YOU_CONTROL).size();
                 for (int i = 0; i < oneThird(numCreatures); ++i) {
                     game.addEvent(new MagicSacrificePermanentEvent(
                         event.getSource(),
                         player,
-                        MagicTargetChoice.SACRIFICE_CREATURE
+                        SACRIFICE_CREATURE
                     ));
                 }
             }
             for (final MagicPlayer player : game.getAPNAP()) {
                 final int numLands =
-                    game.filterPermanents(player,MagicTargetFilterFactory.LAND_YOU_CONTROL).size();
+                    game.filterPermanents(player,LAND_YOU_CONTROL).size();
                 for (int i = 0; i < oneThird(numLands); ++i) {
                     game.addEvent(new MagicSacrificePermanentEvent(
                         event.getSource(),
                         player,
-                        MagicTargetChoice.SACRIFICE_LAND
+                        SACRIFICE_LAND
                     ));
                 }
             }

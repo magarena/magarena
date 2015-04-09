@@ -12,7 +12,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final int amount = game.filterCards(
-                MagicTargetFilterFactory.cardName("Accumulated Knowledge")
+                cardName("Accumulated Knowledge")
                 .from(MagicTargetType.Graveyard)
                 .from(MagicTargetType.OpponentsGraveyard)
             ).size();

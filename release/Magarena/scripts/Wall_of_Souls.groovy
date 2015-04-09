@@ -7,7 +7,7 @@
                     damage.isCombat()) ?
                 new MagicEvent(
                     permanent,
-                    MagicTargetChoice.TARGET_OPPONENT,
+                    TARGET_OPPONENT,
                     new MagicDamageTargetPicker(amount),
                     amount,
                     this,

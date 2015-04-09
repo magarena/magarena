@@ -38,7 +38,7 @@ def tappedAbility = {
     };
 }
 
-def choice = MagicTargetChoice.Positive("target goblin creature");
+def choice = Positive("target goblin creature");
 
 [
     new MagicPermanentActivation(

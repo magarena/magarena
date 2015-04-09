@@ -4,7 +4,7 @@
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.NEG_TARGET_NONBLACK_CREATURE,
+                NEG_TARGET_NONBLACK_CREATURE,
                 this,
                 "Target nonblack creature\$ gets -1/-1 until end of turn. " +
                 "If seven or more cards are in your graveyard, instead destroy that creature. It can't be regenerated."

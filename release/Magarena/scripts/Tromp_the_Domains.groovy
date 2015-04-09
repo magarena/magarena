@@ -14,10 +14,10 @@
             final MagicPlayer player = event.getPlayer();
             final int domain = player.getDomain();
             game.logAppendMessage(player," ("+domain+")");
-            final Collection<MagicPermanent> creatures = game.filterPermanents(player,MagicTargetFilterFactory.CREATURE_YOU_CONTROL);
-            for (final MagicPermanent creature : creatures) {
-                game.doAction(new MagicChangeTurnPTAction(creature,domain,domain));
-                game.doAction(new MagicGainAbilityAction(creature,MagicAbility.Trample));
+            CREATURE_YOU_CONTROL
+            .filter(game, player) each {
+                game.doAction(new MagicChangeTurnPTAction(it,domain,domain));
+                game.doAction(new MagicGainAbilityAction(it,MagicAbility.Trample));
             }
         }
     }

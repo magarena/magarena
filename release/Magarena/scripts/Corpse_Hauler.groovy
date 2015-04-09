@@ -13,7 +13,7 @@
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             final MagicTargetChoice TARGET_OTHER_CREATURE_CARD_FROM_GRAVEYARD=new MagicTargetChoice(
-                MagicTargetFilterFactory.CREATURE_CARD_FROM_GRAVEYARD.except(source.getCard()),
+                CREATURE_CARD_FROM_GRAVEYARD.except(source.getCard()),
                 MagicTargetHint.None,
                 "a creature other than " + source + " to return to hand"
             );

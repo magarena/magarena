@@ -14,7 +14,7 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.Other("target creature", source),
+                Other("target creature", source),
                 MagicExileTargetPicker.create(),
                 this,
                 "Exile another target creature\$. Return that card to the battlefield under its owner's control at the beginning of the next end step."

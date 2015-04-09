@@ -22,7 +22,7 @@
     },   
     new MagicStatic(
         MagicLayer.ModPT,
-        MagicTargetFilterFactory.multiple("Bird creatures")
+        multiple("Bird creatures")
     ) {
         @Override
         public void modPowerToughness(final MagicPermanent source, final MagicPermanent permanent, final MagicPowerToughness pt) {

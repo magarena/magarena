@@ -12,7 +12,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPermanentList permanents = new MagicPermanentList(
-                game.filterPermanents(MagicTargetFilterFactory.NONLAND_PERMANENT)
+                game.filterPermanents(NONLAND_PERMANENT)
             );
             final MagicRandom rng = new MagicRandom(permanents.getStateId());
             for(final MagicPermanent permanent : permanents) {

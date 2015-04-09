@@ -10,7 +10,7 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final Collection<MagicPermanent> permanents = game.filterPermanents(MagicTargetFilterFactory.GREEN_PERMANENT);
+            final Collection<MagicPermanent> permanents = game.filterPermanents(GREEN_PERMANENT);
             for (final MagicPermanent permanent : permanents) {
                 game.doAction(new MagicRemoveFromPlayAction(permanent,MagicLocationType.OwnersHand));
             }

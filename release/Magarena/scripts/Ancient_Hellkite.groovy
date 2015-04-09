@@ -14,7 +14,7 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.TARGET_CREATURE_YOUR_OPPONENT_CONTROLS,
+                TARGET_CREATURE_YOUR_OPPONENT_CONTROLS,
                 new MagicDamageTargetPicker(1),
                 this,
                 "SN deals 1 damage to target creature\$ your opponent controls."

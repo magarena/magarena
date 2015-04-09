@@ -1,7 +1,7 @@
 [
     new MagicStatic(
         MagicLayer.Ability,
-        MagicTargetFilterFactory.NONBASIC_LAND
+        NONBASIC_LAND
     )  {
         @Override
         public void modAbilityFlags(final MagicPermanent source, final MagicPermanent permanent, final Set<MagicAbility> flags) {
@@ -11,7 +11,7 @@
     },
     new MagicStatic(
         MagicLayer.Type,
-        MagicTargetFilterFactory.NONBASIC_LAND
+        NONBASIC_LAND
     )  {
         @Override
         public void modSubTypeFlags(final MagicPermanent permanent, final Set<MagicSubType> flags) {

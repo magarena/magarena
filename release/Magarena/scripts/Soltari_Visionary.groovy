@@ -5,8 +5,8 @@
             return new MagicEvent(
                 permanent,
                 permanent.isController(damage.getTarget()) ?
-                    MagicTargetChoice.TARGET_ENCHANTMENT_YOU_CONTROL :
-                    MagicTargetChoice.TARGET_ENCHANTMENT_YOUR_OPPONENT_CONTROLS,
+                    TARGET_ENCHANTMENT_YOU_CONTROL :
+                    TARGET_ENCHANTMENT_YOUR_OPPONENT_CONTROLS,
                 MagicDestroyTargetPicker.Destroy,
                 this,
                 "Destroy target enchantment\$."

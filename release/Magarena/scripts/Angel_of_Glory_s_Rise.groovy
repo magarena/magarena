@@ -11,10 +11,10 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
-            game.filterPermanents(player, MagicTargetFilterFactory.ZOMBIE) each {
+            game.filterPermanents(player, ZOMBIE) each {
                 game.doAction(new MagicRemoveFromPlayAction(it, MagicLocationType.Exile));
             }
-            game.filterCards(player, MagicTargetFilterFactory.HUMAN_CREATURE_CARD_FROM_GRAVEYARD) each {
+            game.filterCards(player, HUMAN_CREATURE_CARD_FROM_GRAVEYARD) each {
                 game.doAction(new MagicReanimateAction(it, player));
             }
         }

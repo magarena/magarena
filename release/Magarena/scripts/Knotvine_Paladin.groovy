@@ -11,7 +11,7 @@
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final int amount = event.getPlayer().getNrOfPermanents(MagicTargetFilterFactory.UNTAPPED_CREATURE_YOU_CONTROL);
+            final int amount = event.getPlayer().getNrOfPermanents(UNTAPPED_CREATURE_YOU_CONTROL);
             game.doAction(new MagicChangeTurnPTAction(event.getPermanent(),amount,amount));
         }
     }

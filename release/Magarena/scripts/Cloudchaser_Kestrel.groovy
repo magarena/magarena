@@ -21,7 +21,7 @@ def white = new MagicStatic(MagicLayer.Color, MagicStatic.UntilEOT) {
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.TARGET_PERMANENT,
+                TARGET_PERMANENT,
                 this,
                 "Target permanent\$ becomes white until end of turn."
             );

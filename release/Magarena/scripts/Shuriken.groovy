@@ -8,7 +8,7 @@ def public MagicPermanentActivation ThrowIt(final MagicPermanent source) {
         public MagicEvent getPermanentEvent(final MagicPermanent permanent,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 permanent,
-                new MagicTargetChoice(MagicTargetFilterFactory.CREATURE,"target creature."),
+                new MagicTargetChoice(CREATURE,"target creature."),
                 source,
                 this,
                 "Unattach RN from SN, RN deals 2 damage to target creature\$."

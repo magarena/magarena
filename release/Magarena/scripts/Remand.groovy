@@ -4,7 +4,7 @@
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.NEG_TARGET_SPELL,
+                NEG_TARGET_SPELL,
                 this,
                 "Counter target spell\$. If you do, return that spell card to its owner's hand. Draw a card."
             );

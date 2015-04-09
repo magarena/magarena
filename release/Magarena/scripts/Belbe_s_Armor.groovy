@@ -16,7 +16,7 @@
             final int amount = payedCost.getX();
             return new MagicEvent(
                 source,
-                MagicTargetChoice.TARGET_CREATURE,
+                TARGET_CREATURE,
                 amount,
                 this,
                 "Target creature\$ gets -X/+X until end of turn. (X="+amount+")"

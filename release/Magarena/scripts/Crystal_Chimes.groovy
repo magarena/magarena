@@ -26,7 +26,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final List<MagicCard> targets = game.filterCards(
                     event.getPlayer(),
-                    MagicTargetFilterFactory.ENCHANTMENT_CARD_FROM_GRAVEYARD);
+                    ENCHANTMENT_CARD_FROM_GRAVEYARD);
             for (final MagicCard card : targets) {
                 game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard));
                 game.doAction(new MagicMoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.OwnersHand));

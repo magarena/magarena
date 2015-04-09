@@ -23,7 +23,7 @@ def action = {
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.NEG_TARGET_CREATURE,
+                NEG_TARGET_CREATURE,
                 this,
                 "SN deals 1 damage to target creature\$ unless that creature's controller has SN deal 2 damage to him or her."
             );

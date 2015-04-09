@@ -5,7 +5,7 @@
             return new MagicEvent(
                 permanent,
                 new MagicMayChoice(
-                    MagicTargetChoice.NEG_TARGET_CREATURE
+                    NEG_TARGET_CREATURE
                 ),
                 this,
                 "PN may\$ gain control of target creature\$ for as long as PN controls SN."

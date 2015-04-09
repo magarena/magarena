@@ -14,7 +14,7 @@
             final MagicPlayer you = event.getPlayer();
             Collection<MagicPermanent> creatures = game.filterPermanents(
                 you,
-                MagicTargetFilterFactory.CREATURE
+                CREATURE
             )
             final int amt = event.getCardOnStack().getX();
             for (final MagicPermanent creature : creatures) {

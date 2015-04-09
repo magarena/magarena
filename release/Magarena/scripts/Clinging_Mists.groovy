@@ -18,7 +18,7 @@
             final MagicPlayer player = event.getPlayer();
             if (MagicCondition.FATEFUL_HOUR.accept(event.getSource())) {
                 final Collection<MagicPermanent> targets =
-                    game.filterPermanents(player,MagicTargetFilterFactory.ATTACKING_CREATURE);
+                    game.filterPermanents(player,ATTACKING_CREATURE);
                 for (final MagicPermanent perm : targets) {
                     game.doAction(new MagicTapAction(perm));
                     game.doAction(MagicChangeStateAction.Set(

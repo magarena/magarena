@@ -24,7 +24,7 @@ def A_PLAINS_OR_WHITE_PERMANENT = new MagicTargetChoice(
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final Collection<MagicPermanent> targets=
-                game.filterPermanents(event.getPlayer(),MagicTargetFilterFactory.ISLAND);
+                game.filterPermanents(event.getPlayer(),ISLAND);
             for (final MagicPermanent target : targets) {
                 game.doAction(new MagicRemoveFromPlayAction(target,MagicLocationType.OwnersHand));
             }

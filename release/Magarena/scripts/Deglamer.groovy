@@ -4,7 +4,7 @@
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.NEG_TARGET_ARTIFACT_OR_ENCHANTMENT,
+                NEG_TARGET_ARTIFACT_OR_ENCHANTMENT,
                 MagicExileTargetPicker.create(),
                 this,
                 "PN chooses target artifact or enchantment\$. " + 

@@ -4,7 +4,7 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.NEG_TARGET_PLAYER,
+                NEG_TARGET_PLAYER,
                 this,
                 "Target player\$ discards a card."
             );
@@ -29,7 +29,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.addEvent(new MagicSearchToLocationEvent(
                 event,
-                MagicTargetChoice.CARD_FROM_LIBRARY,
+                A_CARD_FROM_LIBRARY,
                 MagicLocationType.TopOfOwnersLibrary
             ));
         }
@@ -48,7 +48,7 @@
             final MagicPlayer player = event.getPlayer();
             final Collection<MagicCard> targets = game.filterCards(
                 player,
-                MagicTargetFilterFactory.CREATURE_CARD_FROM_ALL_GRAVEYARDS
+                CREATURE_CARD_FROM_ALL_GRAVEYARDS
             );
             for (final MagicCard card : targets) {
                 game.doAction(new MagicReanimateAction(

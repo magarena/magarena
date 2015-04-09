@@ -1,4 +1,4 @@
-def choice = MagicTargetChoice.Negative("target nonartifact, nonblack creature");
+def choice = Negative("target nonartifact, nonblack creature");
 
 [
     new MagicSpellCardEvent() {  

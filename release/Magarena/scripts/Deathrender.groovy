@@ -6,7 +6,7 @@
                 new MagicEvent(
                     permanent,
                     new MagicMayChoice(
-                        MagicTargetChoice.CREATURE_CARD_FROM_HAND
+                        A_CREATURE_CARD_FROM_HAND
                     ),
                     MagicGraveyardTargetPicker.PutOntoBattlefield,
                     this,

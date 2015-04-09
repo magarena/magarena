@@ -20,7 +20,7 @@
             game.addEvent(new MagicSacrificePermanentEvent(
                 event.getSource(),
                 event.getPlayer(),
-                MagicTargetChoice.SACRIFICE_LAND
+                SACRIFICE_LAND
             ));
         }
     }

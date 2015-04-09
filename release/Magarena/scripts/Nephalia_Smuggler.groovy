@@ -14,7 +14,7 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.Other("target creature you control", source),
+                Other("target creature you control", source),
                 MagicBounceTargetPicker.create(),
                 this,
                 "Exile another target creature you control\$, then " +

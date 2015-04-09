@@ -23,7 +23,7 @@ def EFFECT3 = MagicRuleEventAction.create("SN deals 3 damage to each creature wi
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isMode(2)) {
                 final MagicPlayer player = event.getPlayer();
-                final List<MagicPermanent> permanents = player.filterPermanents(MagicTargetFilterFactory.PERMANENT_YOU_OWN);
+                final List<MagicPermanent> permanents = player.filterPermanents(PERMANENT_YOU_OWN);
                 for (final MagicPermanent permanent : permanents) {
                     game.doAction(new MagicGainControlAction(player, permanent));
                 }

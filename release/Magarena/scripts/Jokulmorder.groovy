@@ -13,7 +13,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicEvent costEvent = new MagicRepeatedPermanentsEvent(
                 event.getSource(),
-                MagicTargetChoice.SACRIFICE_LAND,
+                SACRIFICE_LAND,
                 5,
                 MagicChainEventFactory.Sac
                 );  

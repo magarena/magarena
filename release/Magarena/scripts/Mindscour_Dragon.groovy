@@ -7,7 +7,7 @@
                     damage.isCombat()) ?
                 new MagicEvent(
                     permanent,
-                    MagicTargetChoice.TARGET_PLAYER,
+                    TARGET_PLAYER,
                     this,
                     "Target player\$ puts the top four cards of his or her library into his or her graveyard."
                 ):

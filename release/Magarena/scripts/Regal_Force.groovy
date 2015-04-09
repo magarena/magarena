@@ -13,7 +13,7 @@
             final MagicPlayer player = event.getPlayer();
             game.doAction(new MagicDrawAction(
                 player,
-                player.getNrOfPermanents(MagicTargetFilterFactory.GREEN_CREATURE)
+                player.getNrOfPermanents(GREEN_CREATURE)
             ));
         }
     }

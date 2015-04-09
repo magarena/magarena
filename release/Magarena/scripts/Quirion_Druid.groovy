@@ -34,7 +34,7 @@ def C = new MagicStatic(MagicLayer.Color) {
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.POS_TARGET_LAND,
+                POS_TARGET_LAND,
                 this,
                 "Target land\$ becomes a 2/2 green creature that's still a land."
             );

@@ -10,7 +10,7 @@ def color = new MagicStatic(MagicLayer.Color, MagicStatic.UntilEOT) {
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.POS_TARGET_CREATURE,
+                POS_TARGET_CREATURE,
                 MagicUnblockableTargetPicker.create(),
                 this,
                 "Target creature\$ gets +1/+0, becomes black, and gains shadow until end of turn."

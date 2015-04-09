@@ -4,7 +4,7 @@
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.POS_TARGET_PLAYER,
+                POS_TARGET_PLAYER,
                 this,
                 "Target player\$ draws a card for each basic land type among lands he or she controls."
             );

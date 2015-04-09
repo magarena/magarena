@@ -5,7 +5,7 @@
             final int amount = cardOnStack.getController().getDomain();
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.NEG_TARGET_PLAYER,
+                NEG_TARGET_PLAYER,
                 this,
                 "Target player\$ loses X life and PN gains X life, where X is the number of basic land types among lands PN controls."
             );

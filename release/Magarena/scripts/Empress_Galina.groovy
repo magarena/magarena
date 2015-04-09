@@ -1,4 +1,4 @@
-def choice = MagicTargetChoice.Negative("target legendary permanent");
+def choice = Negative("target legendary permanent");
 
 [
     new MagicPermanentActivation(

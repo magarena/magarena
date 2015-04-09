@@ -7,7 +7,7 @@
                 final MagicPayedCost payedCost) {
             return new MagicEvent(
                 permanent,
-                MagicTargetChoice.TARGET_ARTIFACT,
+                TARGET_ARTIFACT,
                 MagicExileTargetPicker.create(),
                 this,
                 "Gain control of target artifact\$ for as long as PN controls SN."

@@ -25,14 +25,14 @@
                 game.addEvent(new MagicSacrificePermanentEvent(
                     event.getSource(),
                     player,
-                    MagicTargetChoice.SACRIFICE_CREATURE
+                    SACRIFICE_CREATURE
                 ));
             }
             for (final MagicPlayer player : game.getAPNAP()) {
                 game.addEvent(new MagicSacrificePermanentEvent(
                     event.getSource(),
                     player,
-                    MagicTargetChoice.SACRIFICE_LAND
+                    SACRIFICE_LAND
                 ));
             }
         }

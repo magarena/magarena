@@ -3,7 +3,7 @@
         @Override
         public void modPowerToughness(final MagicPermanent source, final MagicPermanent permanent, final MagicPowerToughness pt) {
             final MagicTargetFilter<MagicPermanent> targetFilter = new MagicNameTargetFilter(
-                MagicTargetFilterFactory.CREATURE_YOU_CONTROL,
+                CREATURE_YOU_CONTROL,
                 source.getName()
             );
             final int size = source.getGame().filterPermanents(

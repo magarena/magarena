@@ -6,7 +6,7 @@
             // before resolution but we need to make a choice here
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.TARGET_CREATURE_CARD_FROM_GRAVEYARD,
+                TARGET_CREATURE_CARD_FROM_GRAVEYARD,
                 MagicCondition.THRESHOLD_CONDITION.accept(cardOnStack) ?
                     MagicGraveyardTargetPicker.PutOntoBattlefield :
                     MagicGraveyardTargetPicker.ReturnToHand,

@@ -5,7 +5,7 @@
             return new MagicEvent(
                 permanent,
                 new MagicMayChoice(
-                    MagicTargetChoice.Other("target creature you control", permanent)
+                    Other("target creature you control", permanent)
                 ),
                 MagicBounceTargetPicker.create(),
                 this,

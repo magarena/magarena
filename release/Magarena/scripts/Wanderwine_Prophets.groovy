@@ -5,7 +5,7 @@
             return new MagicEvent(
                 permanent,
                 new MagicMayChoice(
-                    MagicTargetChoice.SACRIFICE_MERFOLK
+                    SACRIFICE_MERFOLK
                 ),
                 MagicSacrificeTargetPicker.create(),
                 this,

@@ -13,7 +13,7 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.NegOther("target creature", source),
+                NegOther("target creature", source),
                 new MagicDamageTargetPicker(1),
                 this,
                 "SN deals 1 damage to another target creature\$. " +
@@ -45,7 +45,7 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.NEG_TARGET_VAMPIRE,
+                NEG_TARGET_VAMPIRE,
                 MagicExileTargetPicker.create(),
                 this,
                 "Gain control of target Vampire\$ for as long as PN controls SN."

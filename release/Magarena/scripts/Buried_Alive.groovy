@@ -10,7 +10,7 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final List<MagicCard> choiceList = event.getPlayer().filterCards(MagicTargetFilterFactory.CREATURE_CARD_FROM_LIBRARY);
+            final List<MagicCard> choiceList = event.getPlayer().filterCards(CREATURE_CARD_FROM_LIBRARY);
             game.addEvent(new MagicSearchToLocationEvent(
                 event,
                 new MagicFromCardListChoice(choiceList, 3, true),

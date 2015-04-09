@@ -1,4 +1,4 @@
-def choice = MagicTargetChoice.Positive("target creature with power 2 or less");
+def choice = Positive("target creature with power 2 or less");
 
 [
     new MagicPermanentActivation(

@@ -7,7 +7,7 @@
                 final MagicCardOnStack spell) {
             return new MagicEvent(
                 spell,
-                MagicTargetChoice.NEG_TARGET_PERMANENT,
+                NEG_TARGET_PERMANENT,
                 MagicDestroyTargetPicker.Destroy,
                 this,
                 "Destroy target permanent\$."

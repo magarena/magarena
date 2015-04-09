@@ -13,7 +13,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final int amount = game.filterCards(
                 event.getPlayer(),
-                MagicTargetFilterFactory.LAND_CARD_FROM_YOUR_GRAVEYARD
+                LAND_CARD_FROM_YOUR_GRAVEYARD
             ).size();
             game.doAction(new MagicPlayTokensAction(
                 event.getPlayer(),

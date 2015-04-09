@@ -5,7 +5,7 @@
             final int amount = MagicCondition.METALCRAFT_CONDITION.accept(cardOnStack) ? 4 : 2;
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
+                NEG_TARGET_CREATURE_OR_PLAYER,
                 new MagicDamageTargetPicker(amount),
                 this,
                 "SN deals 2 damage to target creature or player\$. "+

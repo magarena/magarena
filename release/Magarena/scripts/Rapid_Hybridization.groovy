@@ -4,7 +4,7 @@
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.TARGET_CREATURE,
+                TARGET_CREATURE,
                 MagicDestroyTargetPicker.DestroyNoRegen,
                 this,
                 "Destroy target creature.\$ It can't be regenerated. That creature's controller "+

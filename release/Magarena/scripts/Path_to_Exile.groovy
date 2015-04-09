@@ -4,7 +4,7 @@
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.NEG_TARGET_CREATURE,
+                NEG_TARGET_CREATURE,
                 MagicExileTargetPicker.create(),
                 this,
                 "Exile target creature\$. " + 
@@ -20,7 +20,7 @@
                     it.getController(),
                     new MagicMayChoice(
                         "Search for a basic land card?",
-                        MagicTargetChoice.BASIC_LAND_CARD_FROM_LIBRARY
+                        A_BASIC_LAND_CARD_FROM_LIBRARY
                     ),
                     MagicPlayMod.TAPPED
                 ));

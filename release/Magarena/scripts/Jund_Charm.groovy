@@ -9,9 +9,9 @@ def EFFECT3 = MagicRuleEventAction.create("Put two +1/+1 counters on target crea
             return new MagicEvent(
                 cardOnStack,
                 new MagicOrChoice(
-                    MagicTargetChoice.NEG_TARGET_PLAYER,
+                    NEG_TARGET_PLAYER,
                     MagicChoice.NONE,
-                    MagicTargetChoice.POS_TARGET_CREATURE
+                    POS_TARGET_CREATURE
                 ),
                 this,
                 "Choose one\$ - exile all cards from target player's graveyard; " +

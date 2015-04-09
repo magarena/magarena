@@ -8,7 +8,7 @@
          return [
                 new MagicPayManaCostEvent(source,"{W}"),
                 new MagicTapEvent(source),
-                new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_CLERIC)
+                new MagicSacrificePermanentEvent(source,SACRIFICE_CLERIC)
             ];         
         }
         @Override
@@ -37,14 +37,14 @@
          return [
                 new MagicPayManaCostEvent(source,"{B}"),
                 new MagicTapEvent(source),
-                new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_CLERIC)
+                new MagicSacrificePermanentEvent(source,SACRIFICE_CLERIC)
             ];         
         }
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.NEG_TARGET_PLAYER,
+                NEG_TARGET_PLAYER,
                 payedCost.getTarget(),
                 this,
                 "Target player\$ loses life equal to RN's power."

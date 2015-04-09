@@ -16,7 +16,7 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.NEG_TARGET_ARTIFACT,
+                NEG_TARGET_ARTIFACT,
                 this,
                 "Destroy target artifact\$. That artifact deals damage equal to its converted mana cost to SN."
             );

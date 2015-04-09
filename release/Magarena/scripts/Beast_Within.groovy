@@ -4,7 +4,7 @@
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.TARGET_PERMANENT,
+                TARGET_PERMANENT,
                 MagicDestroyTargetPicker.Destroy,
                 this,
                 "Destroy target permanent\$. Its controller puts a 3/3 green Beast creature token onto the battlefield."

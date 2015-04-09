@@ -11,7 +11,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.addEvent(new MagicDrawEvent(event.getSource(),event.getPlayer(),2));
-            game.addEvent(new MagicSacrificePermanentEvent(event.getSource(),MagicTargetChoice.SACRIFICE_PERMANENT));
+            game.addEvent(new MagicSacrificePermanentEvent(event.getSource(),SACRIFICE_PERMANENT));
         }
     }
 ]

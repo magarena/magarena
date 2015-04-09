@@ -16,7 +16,7 @@ def event = {
 [
     new MagicStatic(
         MagicLayer.Ability,
-        MagicTargetFilterFactory.CREATURE_YOUR_OPPONENT_CONTROLS
+        CREATURE_YOUR_OPPONENT_CONTROLS
     ) {
         @Override
         public void modAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final Set<MagicAbility> flags) {

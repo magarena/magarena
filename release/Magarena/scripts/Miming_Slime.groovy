@@ -12,7 +12,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final Collection<MagicPermanent> targets = game.filterPermanents(
                 event.getPlayer(),
-                MagicTargetFilterFactory.CREATURE_YOU_CONTROL
+                CREATURE_YOU_CONTROL
             );
             int x = 0;
             for (final MagicPermanent creature : targets) {

@@ -5,7 +5,7 @@
             final int amount = cardOnStack.getController().getDomain();
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
+                NEG_TARGET_CREATURE_OR_PLAYER,
                 new MagicDamageTargetPicker(amount),
                 this,
                 "SN deals X damage to target creature or player\$, where X is the number of basic land types among lands PN controls."

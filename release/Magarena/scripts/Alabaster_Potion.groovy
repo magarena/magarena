@@ -5,8 +5,8 @@
             return new MagicEvent(
                 cardOnStack,
                 new MagicOrChoice(
-                    MagicTargetChoice.POS_TARGET_PLAYER,
-                    MagicTargetChoice.POS_TARGET_CREATURE_OR_PLAYER
+                    POS_TARGET_PLAYER,
+                    POS_TARGET_CREATURE_OR_PLAYER
                 ),
                 payedCost.getX(),
                 this,

@@ -13,7 +13,7 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.NEG_TARGET_CREATURE,
+                NEG_TARGET_CREATURE,
                 new MagicDamageTargetPicker(source.getCounters(MagicCounterType.PlusOne)),
                 this,
                 "SN deals damage to target creature\$ equals to the number of +1/+1 counters on SN."

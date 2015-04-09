@@ -4,7 +4,7 @@
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.NEG_TARGET_PLAYER,
+                NEG_TARGET_PLAYER,
                 this,
                 "SN deals 1 damage to each creature target player\$ " +
                 "controls."
@@ -15,7 +15,7 @@
             event.processTargetPlayer(game, {
                 final Collection<MagicPermanent> targets = game.filterPermanents(
                         it,
-                        MagicTargetFilterFactory.CREATURE_YOU_CONTROL);
+                        CREATURE_YOU_CONTROL);
                 final MagicSource source = event.getSource();
                 for (final MagicPermanent target : targets) {
                     game.doAction(new MagicDealDamageAction(source,target,1));

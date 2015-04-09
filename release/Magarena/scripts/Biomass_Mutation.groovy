@@ -20,7 +20,7 @@
                     pt.set(X,X);
                 }
             };
-            game.filterPermanents(event.getPlayer(), MagicTargetFilterFactory.CREATURE_YOU_CONTROL) each {
+            game.filterPermanents(event.getPlayer(), CREATURE_YOU_CONTROL) each {
                 game.doAction(new MagicBecomesCreatureAction(it, PT));
             }
         }

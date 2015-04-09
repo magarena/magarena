@@ -24,7 +24,7 @@
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.filterCards(event.getPlayer(), MagicTargetFilterFactory.CARD_FROM_GRAVEYARD) each {
+            game.filterCards(event.getPlayer(), CARD_FROM_GRAVEYARD) each {
                 if (it.getName().equals("Deathpact Angel")) {
                     game.doAction(new MagicReanimateAction(it, event.getPlayer()));
                     break;

@@ -5,7 +5,7 @@
             return (otherPermanent.isCreature() && otherPermanent.isFriend(permanent)) ?
                 new MagicEvent(
                     permanent,
-                    MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
+                    NEG_TARGET_CREATURE_OR_PLAYER,
                     new MagicDamageTargetPicker(otherPermanent.getPower()),
                     otherPermanent,
                     this,

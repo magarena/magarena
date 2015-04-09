@@ -32,7 +32,7 @@ def GainTrig = new MagicStatic(MagicLayer.Ability) {
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                new MagicMayChoice(MagicTargetChoice.CREATURE),
+                new MagicMayChoice(A_CREATURE),
                 MagicCopyPermanentPicker.create(),
                 this,
                 "Put SN onto the battlefield. You may\$ have SN enter the battlefield as a copy of any creature\$ on the battlefield, " + 

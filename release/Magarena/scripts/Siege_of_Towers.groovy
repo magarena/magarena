@@ -12,7 +12,7 @@ def ST = new MagicStatic(MagicLayer.Type) {
     }
 };
 
-def choice = MagicTargetChoice.Positive("target Mountain");
+def choice = Positive("target Mountain");
 
 [
     new MagicSpellCardEvent() {

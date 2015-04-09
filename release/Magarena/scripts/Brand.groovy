@@ -11,7 +11,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
-            game.filterPermanents(player, MagicTargetFilterFactory.PERMANENT_YOU_OWN) each {
+            game.filterPermanents(player, PERMANENT_YOU_OWN) each {
                 game.doAction(new MagicGainControlAction(player, it));
             }
         }

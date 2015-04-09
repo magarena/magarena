@@ -21,7 +21,7 @@ def ConsumptionUpkeep = new MagicAtYourUpkeepTrigger() {
 [
     new MagicStatic(
         MagicLayer.Ability,
-        MagicTargetFilterFactory.CREATURE
+        CREATURE
     ) {
         @Override
         public void modAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final Set<MagicAbility> flags) {

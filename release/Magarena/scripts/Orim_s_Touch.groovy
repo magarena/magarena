@@ -4,7 +4,7 @@
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.POS_TARGET_CREATURE_OR_PLAYER,
+                POS_TARGET_CREATURE_OR_PLAYER,
                 MagicPreventTargetPicker.create(),
                 this,
                 "Prevent the next 2 damage that would be dealt to target creature or player\$ this turn. "+

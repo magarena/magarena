@@ -11,7 +11,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPermanent permanent = event.getPermanent();
-            game.addEvent(new MagicSacrificePermanentEvent(permanent,MagicTargetChoice.LAND_YOU_CONTROL));
+            game.addEvent(new MagicSacrificePermanentEvent(permanent,A_LAND_YOU_CONTROL));
             game.doAction(new MagicDealDamageAction(permanent,permanent.getController(),1));
         }
     }

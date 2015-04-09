@@ -8,7 +8,7 @@
             final MagicGame game = source.getGame();
             final int size = game.filterPermanents(
                     permanent.getController(),
-                    MagicTargetFilterFactory.SQUIRREL_CREATURE).size() - 1;
+                    SQUIRREL_CREATURE).size() - 1;
             pt.add(size,size);
         }
     }

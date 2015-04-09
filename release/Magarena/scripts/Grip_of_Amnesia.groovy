@@ -16,7 +16,7 @@ def action = {
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.NEG_TARGET_SPELL,
+                NEG_TARGET_SPELL,
                 this,
                 "Counter target spell\$ unless its controller exiles all cards from his or her graveyard. Draw a card."
             );

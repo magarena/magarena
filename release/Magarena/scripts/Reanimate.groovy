@@ -4,7 +4,7 @@
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.TARGET_CREATURE_CARD_FROM_ALL_GRAVEYARDS,
+                TARGET_CREATURE_CARD_FROM_ALL_GRAVEYARDS,
                 MagicGraveyardTargetPicker.ReturnToHand,
                 this,
                 "Put target creature card from a graveyard\$ onto the battlefield under PN's control. " +

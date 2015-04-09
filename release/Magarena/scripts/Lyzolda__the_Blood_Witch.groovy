@@ -7,7 +7,7 @@
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
                 new MagicPayManaCostEvent(source,"{2}"),
-                new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_CREATURE)
+                new MagicSacrificePermanentEvent(source,SACRIFICE_CREATURE)
             ];
         }
 
@@ -15,7 +15,7 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
+                NEG_TARGET_CREATURE_OR_PLAYER,
                 payedCost.getTarget(),
                 this,
                 "SN deals 2 damage to target creature or player if RN was red. Draw a card if RN was black."

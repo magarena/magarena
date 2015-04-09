@@ -30,7 +30,7 @@
             final int amount = source.getCounters(MagicCounterType.Level) >= 4 ? -4:-2;
             return new MagicEvent(
                 source,
-                MagicTargetChoice.NEG_TARGET_CREATURE,
+                NEG_TARGET_CREATURE,
                 new MagicWeakenTargetPicker(amount,amount),
                 amount,
                 this,

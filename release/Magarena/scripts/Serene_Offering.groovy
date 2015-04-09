@@ -4,7 +4,7 @@
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.NEG_TARGET_ENCHANTMENT,
+                NEG_TARGET_ENCHANTMENT,
                 MagicDestroyTargetPicker.Destroy,
                 this,
                 "Destroy target enchantment\$. PN gains life equal to its converted mana cost."

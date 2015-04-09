@@ -1,4 +1,4 @@
-def choice = MagicTargetChoice.Positive("target creature you control");
+def choice = Positive("target creature you control");
 
 [
     new MagicWhenOtherDiesTrigger() {

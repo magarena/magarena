@@ -4,7 +4,7 @@
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.NEG_TARGET_NONCREATURE,
+                NEG_TARGET_NONCREATURE,
                 MagicDestroyTargetPicker.Destroy,
                 this,
                 "Destroy target noncreature permanent\$. " +

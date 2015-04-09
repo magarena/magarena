@@ -15,7 +15,7 @@ def FATESEAL = {
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.TARGET_PLAYER,
+                TARGET_PLAYER,
                 this,
                 "Look at the top card of target player\$'s library. You may put that card on the bottom of that player's library."
             );
@@ -58,7 +58,7 @@ def FATESEAL = {
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.TARGET_CREATURE,
+                TARGET_CREATURE,
                 this,
                 "Return target creature\$ to its owner's hand."
             );
@@ -75,7 +75,7 @@ def FATESEAL = {
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.NEG_TARGET_PLAYER,
+                NEG_TARGET_PLAYER,
                 this,
                 "Exile all cards from target player\$'s library, " +
                 "then that player shuffles his or her hand into his or her library."

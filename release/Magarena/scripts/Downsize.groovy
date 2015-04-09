@@ -17,7 +17,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final Collection<MagicPermanent> targets=
-                game.filterPermanents(event.getPlayer(),MagicTargetFilterFactory.CREATURE_YOUR_OPPONENT_CONTROLS);
+                game.filterPermanents(event.getPlayer(),CREATURE_YOUR_OPPONENT_CONTROLS);
             for (final MagicPermanent creature : targets) {
                 game.doAction(new MagicChangeTurnPTAction(creature, -4, 0));
             }

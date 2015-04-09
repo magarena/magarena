@@ -1,4 +1,4 @@
-MagicTargetFilter<MagicPermanent> SLIVER_CREATURE_YOU_CONTROL = MagicTargetFilterFactory.singlePermanent("Sliver creature you control");
+MagicTargetFilter<MagicPermanent> SLIVER_CREATURE_YOU_CONTROL = singlePermanent("Sliver creature you control");
 
 [
     new MagicWhenTargetedTrigger() {

@@ -24,11 +24,11 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             Collection<MagicPermanent> targets =
-                    game.filterPermanents(game.getPlayer(0),MagicTargetFilterFactory.CREATURE_WITH_SHADOW);
+                    game.filterPermanents(game.getPlayer(0),CREATURE_WITH_SHADOW);
             for (final MagicPermanent target : targets) {
                 game.doAction(new MagicChangeTurnPTAction(target,1,0));
             }
-            targets = game.filterPermanents(game.getPlayer(0),MagicTargetFilterFactory.CREATURE_WITHOUT_SHADOW);
+            targets = game.filterPermanents(game.getPlayer(0),CREATURE_WITHOUT_SHADOW);
             for (final MagicPermanent target : targets) {
                 game.doAction(new MagicChangeTurnPTAction(target,-1,0));
             }

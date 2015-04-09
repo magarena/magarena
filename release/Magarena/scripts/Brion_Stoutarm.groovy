@@ -7,7 +7,7 @@
         @Override
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
             final MagicTargetChoice targetChoice=new MagicTargetChoice(
-                MagicTargetFilterFactory.CREATURE_YOU_CONTROL.except(source),
+                CREATURE_YOU_CONTROL.except(source),
                 MagicTargetHint.None,
                 "a creature other than " + source + " to sacrifice"
             );
@@ -22,7 +22,7 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.NEG_TARGET_PLAYER,
+                NEG_TARGET_PLAYER,
                 payedCost.getTarget(),
                 this,
                 "SN deals damage equal to the power of RN to target player\$."

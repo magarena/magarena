@@ -60,7 +60,7 @@ def DelayedTrigger = {
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.TARGET_PLAYER,
+                TARGET_PLAYER,
                 this,
                 "Target player\$ puts the top two cards of his or her library " +
                 "into his or her graveyard."

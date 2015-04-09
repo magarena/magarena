@@ -4,7 +4,7 @@ def action = {
         game.addEvent(new MagicSacrificePermanentEvent(
             event.getSource(),
             it,
-            MagicTargetChoice.SACRIFICE_CREATURE
+            SACRIFICE_CREATURE
         ));
     });
 }
@@ -15,7 +15,7 @@ def action = {
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.TARGET_CREATURE_CARD_FROM_GRAVEYARD,
+                TARGET_CREATURE_CARD_FROM_GRAVEYARD,
                 MagicGraveyardTargetPicker.ReturnToHand,
                 this,
                 "Return target creature card\$ from your graveyard to your hand."
@@ -36,7 +36,7 @@ def action = {
             });
             game.doAction(new MagicPutItemOnStackAction(new MagicTriggerOnStack(new MagicEvent(
                 event.getSource(),
-                MagicTargetChoice.NEG_TARGET_PLAYER,
+                NEG_TARGET_PLAYER,
                 action,
                 "Target player\$ sacrifices a creature."
             ))));

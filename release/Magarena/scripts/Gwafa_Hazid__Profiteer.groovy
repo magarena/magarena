@@ -1,7 +1,7 @@
 [
     new MagicStatic(
         MagicLayer.Ability,
-        MagicTargetFilterFactory.CREATURE
+        CREATURE
     ) {
         @Override
         public void modAbilityFlags(
@@ -34,7 +34,7 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.TARGET_CREATURE_YOUR_OPPONENT_CONTROLS,
+                TARGET_CREATURE_YOUR_OPPONENT_CONTROLS,
                 new MagicNoCombatTargetPicker(true,true,true),
                 this,
                 "PN puts a bribery counter on target creature\$. " +

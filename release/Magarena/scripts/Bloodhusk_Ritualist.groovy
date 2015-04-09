@@ -5,7 +5,7 @@
             return payedCost.isKicked() ?
                 new MagicEvent(
                     permanent,
-                    MagicTargetChoice.TARGET_OPPONENT,
+                    TARGET_OPPONENT,
                     payedCost.getKicker(),
                     this,
                     "Target opponent\$ discards a card for each time SN was kicked. (RN)"

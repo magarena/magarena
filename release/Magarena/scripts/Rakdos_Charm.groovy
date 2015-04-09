@@ -7,8 +7,8 @@ def EFFECT2 = MagicRuleEventAction.create("Destroy target artifact.");
             return new MagicEvent(
                 cardOnStack,
                 new MagicOrChoice(
-                    MagicTargetChoice.NEG_TARGET_PLAYER,
-                    MagicTargetChoice.NEG_TARGET_ARTIFACT,
+                    NEG_TARGET_PLAYER,
+                    NEG_TARGET_ARTIFACT,
                     MagicChoice.NONE
                 ),
                 this,
@@ -27,7 +27,7 @@ def EFFECT2 = MagicRuleEventAction.create("Destroy target artifact.");
                     }
                 });
             } else if (event.isMode(3)) {
-                final Collection<MagicPermanent> creatures = game.filterPermanents(MagicTargetFilterFactory.CREATURE);
+                final Collection<MagicPermanent> creatures = game.filterPermanents(CREATURE);
                 for (final MagicPermanent creature : creatures) {
                     game.doAction(new MagicDealDamageAction(creature,creature.getController(),1));
                 }

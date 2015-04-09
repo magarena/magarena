@@ -5,7 +5,7 @@
             final int amount=payedCost.getX();
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.NEG_TARGET_PLAYER,  
+                NEG_TARGET_PLAYER,  
                 amount,
                 this,
                 "Target player puts the top RN cards of his or her library into his or her graveyard and PN gains RN life."

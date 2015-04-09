@@ -13,7 +13,7 @@ def action = {
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.TARGET_PLAYER,
+                TARGET_PLAYER,
                 this,
                 "Unless opponent has SN deal 6 damage to him or her, " +
                 "target player\$ puts the top six cards of his or her library into his or her graveyard."

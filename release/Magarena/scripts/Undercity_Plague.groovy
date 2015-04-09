@@ -4,7 +4,7 @@
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.TARGET_OPPONENT,
+                TARGET_OPPONENT,
                 this,
                 "Target opponent\$ loses 1 life, discards a card, then sacrifices a permanent. Cipher."
             );
@@ -17,7 +17,7 @@
                 game.addEvent(new MagicSacrificePermanentEvent(
                     event.getSource(),
                     it,
-                    MagicTargetChoice.SACRIFICE_PERMANENT
+                    SACRIFICE_PERMANENT
                 ));
                 game.doAction(new MagicCipherAction(event.getCardOnStack(),event.getPlayer()));
             });

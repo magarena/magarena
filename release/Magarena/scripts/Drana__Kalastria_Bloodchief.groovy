@@ -14,7 +14,7 @@
             final int amount = payedCost.getX();
             return new MagicEvent(
                 source,
-                MagicTargetChoice.TARGET_CREATURE,
+                TARGET_CREATURE,
                 new MagicWeakenTargetPicker(0,amount),
                 amount,
                 this,

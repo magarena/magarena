@@ -11,7 +11,7 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.TARGET_ARTIFACT,
+                TARGET_ARTIFACT,
                 MagicDestroyTargetPicker.Destroy,
                 this,
                 "Destroy target artifact\$. SN gets +X/+0 " +

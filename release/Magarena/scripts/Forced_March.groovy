@@ -16,7 +16,7 @@
             final Collection<MagicPermanent> targets =
                 game.filterPermanents(
                     new MagicCMCPermanentFilter(
-                        MagicTargetFilterFactory.CREATURE,
+                        CREATURE,
                         Operator.LESS_THAN_OR_EQUAL,
                         event.getRefInt()
                     )

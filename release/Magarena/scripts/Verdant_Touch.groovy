@@ -17,7 +17,7 @@ def ST = new MagicStatic(MagicLayer.Type) {
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.POS_TARGET_LAND,
+                POS_TARGET_LAND,
                 this,
                 "Target land\$ becomes a 2/2 creature that's still a land. " +
                 "If the buyback cost was payed, return SN to its owner's hand as it resolves."

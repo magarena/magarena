@@ -6,7 +6,7 @@
                 new MagicEvent(
                     permanent,
                     new MagicMayChoice(
-                        MagicTargetChoice.TARGET_ARTIFACT_YOUR_OPPONENT_CONTROLS
+                        TARGET_ARTIFACT_YOUR_OPPONENT_CONTROLS
                     ),
                     MagicDestroyTargetPicker.Destroy,
                     this,

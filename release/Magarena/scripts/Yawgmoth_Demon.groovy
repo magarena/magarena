@@ -16,7 +16,7 @@
             final MagicEvent sac = new MagicSacrificePermanentEvent(
                 event.getPermanent(),
                 player,
-                MagicTargetChoice.SACRIFICE_ARTIFACT
+                SACRIFICE_ARTIFACT
             );
             if (event.isYes() && sac.isSatisfied()) {
                 game.addEvent(sac);

@@ -22,7 +22,7 @@ def action = {
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.POS_TARGET_CREATURE,
+                POS_TARGET_CREATURE,
                 this,
                 "Target creature\$ gains protection from the color of its controller's choice until end of turn."
             );

@@ -11,7 +11,7 @@
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.DRAGON_CREATURE_YOU_CONTROL.except(event.getPermanent())
+            final MagicTargetFilter<MagicPermanent> filter = DRAGON_CREATURE_YOU_CONTROL.except(event.getPermanent())
             game.filterPermanents(event.getPlayer(),filter) each {
                 game.doAction(new MagicChangeCountersAction(it,MagicCounterType.PlusOne,1));
             };

@@ -7,7 +7,7 @@
                 new MagicEvent(
                     permanent,
                     new MagicMayChoice(
-                        MagicTargetChoice.NEG_TARGET_PLAYER
+                        NEG_TARGET_PLAYER
                     ),
                     this,
                     "PN may\$ have target player\$ lose life " +

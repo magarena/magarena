@@ -5,7 +5,7 @@
             final int power = permanent.getPower(); //May change, but gives a value for log
             return new MagicEvent(
                 permanent,
-                new MagicMayChoice(MagicTargetChoice.NEG_TARGET_CREATURE),
+                new MagicMayChoice(NEG_TARGET_CREATURE),
                 new MagicDamageTargetPicker(power),
                 this,
                 "PN may\$ have SN deal damage equal to its power ("+power+") to target creature\$. " +

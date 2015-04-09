@@ -10,9 +10,9 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final Collection<MagicPermanent> permanents = game.filterPermanents(MagicTargetFilterFactory.ENCHANTMENT);
-            for (final MagicPermanent permanent : permanents) {
-                game.doAction(new MagicRemoveFromPlayAction(permanent,MagicLocationType.TopOfOwnersLibrary));
+            ENCHANTMENT
+            .filter(game, event.getPlayer()) each {
+                game.doAction(new MagicRemoveFromPlayAction(it,MagicLocationType.TopOfOwnersLibrary));
             }
         }
     }

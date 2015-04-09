@@ -1,4 +1,4 @@
-def choice = MagicTargetChoice.Negative("target creature with power 2 or less");
+def choice = Negative("target creature with power 2 or less");
 
 [
     new MagicSpellCardEvent() {

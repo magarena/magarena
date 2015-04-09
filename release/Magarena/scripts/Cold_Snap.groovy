@@ -13,7 +13,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
-            final int amount = player.getNrOfPermanents(MagicTargetFilterFactory.SNOW_LAND_YOU_CONTROL);
+            final int amount = player.getNrOfPermanents(SNOW_LAND_YOU_CONTROL);
             game.logAppendMessage(event.getPlayer(),"("+amount+")");
             game.doAction(new MagicDealDamageAction(event.getSource(),player,amount));
         }

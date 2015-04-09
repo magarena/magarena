@@ -1,4 +1,4 @@
-def choice = MagicTargetChoice.Negative("target creature with Flying");
+def choice = Negative("target creature with Flying");
 
 [
     new MagicSpellCardEvent() {

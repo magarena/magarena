@@ -11,9 +11,9 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final Collection<MagicPermanent> battlefield=
-                game.filterPermanents(event.getPlayer(),MagicTargetFilterFactory.CREATURE);
+                game.filterPermanents(event.getPlayer(),CREATURE);
             final List<MagicCard> graveyard=
-                game.filterCards(event.getPlayer(),MagicTargetFilterFactory.CREATURE_CARD_FROM_ALL_GRAVEYARDS);
+                game.filterCards(event.getPlayer(),CREATURE_CARD_FROM_ALL_GRAVEYARDS);
             for (final MagicPermanent target : battlefield) {
                 game.doAction(new MagicRemoveFromPlayAction(target,MagicLocationType.OwnersHand));
             }

@@ -7,7 +7,7 @@
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
                 new MagicTapEvent(source), new MagicPayManaCostEvent(source, "{2}{U}"),
-                new MagicExileCardEvent(source, MagicTargetChoice.TARGET_CREATURE_CARD_FROM_GRAVEYARD)
+                new MagicExileCardEvent(source, TARGET_CREATURE_CARD_FROM_GRAVEYARD)
             ];
         }
         @Override
@@ -28,7 +28,7 @@
             ));
             final Collection<MagicPermanent> targets = game.filterPermanents(
                     player,
-                    MagicTargetFilterFactory.ZOMBIE_YOU_CONTROL);
+                    ZOMBIE_YOU_CONTROL);
             for (final MagicPermanent target : targets) {
                 game.doAction(new MagicChangeCountersAction(target,MagicCounterType.PlusOne,1));
             }

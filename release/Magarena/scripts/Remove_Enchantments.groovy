@@ -15,11 +15,11 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
-            final List<MagicPermanent> enchantments = game.filterPermanents(player, MagicTargetFilterFactory.ENCHANTMENT_YOU_OWN_AND_CONTROL);
+            final List<MagicPermanent> enchantments = game.filterPermanents(player, ENCHANTMENT_YOU_OWN_AND_CONTROL);
             for (final MagicPermanent permanent : enchantments) {
                 game.doAction(new MagicRemoveFromPlayAction(permanent, MagicLocationType.OwnersHand));
             }
-            final List<MagicPermanent> auras = game.filterPermanents(player, MagicTargetFilterFactory.AURA_YOU_OWN);
+            final List<MagicPermanent> auras = game.filterPermanents(player, AURA_YOU_OWN);
             for (final MagicPermanent permanent : auras) {
                 final MagicPermanent enchantedPermanent = permanent.getEnchantedPermanent();
                 final MagicPlayer enchantedController = enchantedPermanent.getController();
@@ -31,9 +31,9 @@
                     game.doAction(new MagicRemoveFromPlayAction(permanent, MagicLocationType.OwnersHand));
                 }
             }
-            final List<MagicPermanent> destroyEnchantment = game.filterPermanents(player, MagicTargetFilterFactory.ENCHANTMENT_YOU_CONTROL);
+            final List<MagicPermanent> destroyEnchantment = game.filterPermanents(player, ENCHANTMENT_YOU_CONTROL);
             game.doAction(new MagicDestroyAction(destroyEnchantment));
-            final List<MagicPermanent> destroyAura = game.filterPermanents(player, MagicTargetFilterFactory.AURA);
+            final List<MagicPermanent> destroyAura = game.filterPermanents(player, AURA);
             for (final MagicPermanent permanent : destroyAura) {
                 final MagicPermanent enchantedPermanent = permanent.getEnchantedPermanent();
                 final MagicPlayer enchantedController = enchantedPermanent.getController();

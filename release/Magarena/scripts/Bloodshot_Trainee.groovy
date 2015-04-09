@@ -21,7 +21,7 @@ def POWER_4_OR_GREATER_CONDITION = new MagicCondition() {
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.NEG_TARGET_CREATURE,
+                NEG_TARGET_CREATURE,
                 new MagicDamageTargetPicker(4),
                 this,
                 "SN deals 4 damage to target creature\$."

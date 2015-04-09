@@ -11,7 +11,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPermanent permanent = event.getPermanent();
-            final int power = event.getPlayer().getNrOfPermanents(MagicTargetFilterFactory.ATTACKING_BEAST.except(permanent));
+            final int power = event.getPlayer().getNrOfPermanents(ATTACKING_BEAST.except(permanent));
             game.doAction(new MagicChangeTurnPTAction(permanent,power*3,0));
         }
     }

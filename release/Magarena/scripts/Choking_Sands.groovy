@@ -1,4 +1,4 @@
-def choice = MagicTargetChoice.Negative("target non-Swamp land");
+def choice = Negative("target non-Swamp land");
 
 [
     new MagicSpellCardEvent() {

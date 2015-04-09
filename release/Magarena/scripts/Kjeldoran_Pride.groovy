@@ -14,7 +14,7 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.PosOther("target creature", source.getEnchantedPermanent()),
+                PosOther("target creature", source.getEnchantedPermanent()),
                 this,
                 "Attach SN to target creature\$."
             );

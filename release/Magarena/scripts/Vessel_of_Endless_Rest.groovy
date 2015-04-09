@@ -7,7 +7,7 @@
                 final MagicPayedCost payedCost) {
             return new MagicEvent(
                 permanent,
-                MagicTargetChoice.NEG_TARGET_CARD_FROM_ALL_GRAVEYARDS,
+                NEG_TARGET_CARD_FROM_ALL_GRAVEYARDS,
                 MagicGraveyardTargetPicker.ExileOpp,
                 this,
                 "Put target card\$ from a graveyard " +

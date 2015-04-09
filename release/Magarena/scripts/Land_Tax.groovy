@@ -16,7 +16,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
-            final List<MagicCard> choiceList = event.getPlayer().filterCards(MagicTargetFilterFactory.BASIC_LAND_CARD_FROM_LIBRARY);
+            final List<MagicCard> choiceList = event.getPlayer().filterCards(BASIC_LAND_CARD_FROM_LIBRARY);
                 game.addEvent(new MagicSearchToLocationEvent(
                     event,
                     new MagicFromCardListChoice(choiceList, 3, true),

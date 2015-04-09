@@ -8,7 +8,7 @@
                 new MagicEvent(
                     permanent,
                     new MagicMayChoice(
-                        MagicTargetChoice.TARGET_CREATURE_CARD_FROM_GRAVEYARD
+                        TARGET_CREATURE_CARD_FROM_GRAVEYARD
                     ),
                     this,
                     "PN may\$ return target creature card\$ from his or her graveyard to his or her hand."

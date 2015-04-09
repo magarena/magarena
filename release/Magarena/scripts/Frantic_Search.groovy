@@ -14,7 +14,7 @@
             game.addEvent(new MagicDiscardEvent(event.getSource(), event.getPlayer(), 2));
             game.addEvent(new MagicRepeatedPermanentsEvent(
                 event.getSource(),
-                MagicTargetChoice.TARGET_LAND,
+                TARGET_LAND,
                 3,
                 MagicChainEventFactory.Untap
             ));

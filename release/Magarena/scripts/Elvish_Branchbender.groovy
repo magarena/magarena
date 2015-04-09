@@ -9,7 +9,7 @@ def ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
     }
 };
 
-def choice = MagicTargetChoice.Positive("target Forest");
+def choice = Positive("target Forest");
 
 [
     new MagicPermanentActivation(

@@ -25,7 +25,7 @@ def choice = new MagicTargetChoice("a creature card from your hand");
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isKicked() || event.isMode(1)) {
-                final List<MagicCard> choiceList = event.getPlayer().filterCards(MagicTargetFilterFactory.CREATURE_CARD_FROM_LIBRARY);
+                final List<MagicCard> choiceList = event.getPlayer().filterCards(CREATURE_CARD_FROM_LIBRARY);
                 game.addEvent(new MagicSearchToLocationEvent(
                     event,
                     new MagicFromCardListChoice(choiceList, 2, true),

@@ -19,7 +19,7 @@
                 game.addEvent(new MagicBounceChosenPermanentEvent(
                     event.getSource(), 
                     event.getPlayer(), 
-                    MagicTargetChoice.PERMANENT_YOU_CONTROL
+                    A_PERMANENT_YOU_CONTROL
                 ));
             }
         }

@@ -34,14 +34,14 @@
             final MagicCardOnStack spell = event.getRefCardOnStack();
             final String name = spell.getCard().getName();
             final int graveyard = game.filterCards(
-                MagicTargetFilterFactory.cardName(name)
+                cardName(name)
                 .from(MagicTargetType.Graveyard)
                 .from(MagicTargetType.OpponentsGraveyard)
             ).size();
             final int battlefield = game.filterPermanents(
-                MagicTargetFilterFactory.nonTokenPermanentName(
+                nonTokenPermanentName(
                     name, 
-                    MagicTargetFilterFactory.Control.Any
+                    Control.Any
                 )
             ).size();
             final int amount = graveyard + battlefield;

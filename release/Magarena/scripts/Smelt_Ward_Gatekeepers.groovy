@@ -5,7 +5,7 @@
             return permanent.getController().getNrOfPermanents(MagicSubType.Gate) >= 2 ?
                 new MagicEvent(
                     permanent,
-                    MagicTargetChoice.TARGET_CREATURE_YOUR_OPPONENT_CONTROLS,
+                    TARGET_CREATURE_YOUR_OPPONENT_CONTROLS,
                     MagicExileTargetPicker.create(),
                     this,
                     "If PN controls two or more Gates, PN gains control of target creature an opponent controls\$ until end of turn. " +

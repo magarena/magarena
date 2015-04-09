@@ -5,7 +5,7 @@
             return permanent.isController(lifeChange.player) ?
                 new MagicEvent(
                     permanent,
-                    MagicTargetChoice.TARGET_OPPONENT,
+                    TARGET_OPPONENT,
                     lifeChange.amount,
                     this,
                     "Target opponent\$ loses RN life."

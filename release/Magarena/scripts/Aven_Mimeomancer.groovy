@@ -39,7 +39,7 @@ def AB = new MagicStatic(MagicLayer.Ability) {
             return new MagicEvent(
                 permanent,
                 new MagicMayChoice(
-                    MagicTargetChoice.TARGET_CREATURE
+                    TARGET_CREATURE
                 ),
                 new MagicBecomeTargetPicker(3,1,true),
                 this,

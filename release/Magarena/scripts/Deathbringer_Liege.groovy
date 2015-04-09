@@ -7,7 +7,7 @@
                 new MagicEvent(
                     permanent,
                     new MagicMayChoice(
-                        MagicTargetChoice.NEG_TARGET_CREATURE
+                        NEG_TARGET_CREATURE
                     ),
                     MagicDestroyTargetPicker.Destroy,
                     this,
@@ -35,7 +35,7 @@
                 new MagicEvent(
                     permanent,
                     new MagicMayChoice(
-                        MagicTargetChoice.NEG_TARGET_CREATURE
+                        NEG_TARGET_CREATURE
                     ),
                     MagicTapTargetPicker.Tap,
                     this,

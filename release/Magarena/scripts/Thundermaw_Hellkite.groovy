@@ -12,7 +12,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final Collection<MagicPermanent> creatures = game.filterPermanents(
                 event.getPlayer(),
-                MagicTargetFilterFactory.CREATURE_WITH_FLYING_YOUR_OPPONENT_CONTROLS
+                CREATURE_WITH_FLYING_YOUR_OPPONENT_CONTROLS
             );
             final MagicPermanent permanent = event.getPermanent();
             for (final MagicPermanent creature : creatures) {

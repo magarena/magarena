@@ -13,7 +13,7 @@
             new MagicBounceChosenPermanentEvent(
                 event.getSource(), 
                 event.getPlayer(),
-                MagicTargetChoice.PosOther("target creature you control", event.getPermanent())
+                PosOther("target creature you control", event.getPermanent())
             );
         }
     }

@@ -8,7 +8,7 @@
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
                 new MagicPayManaCostEvent(source,"{3}{R}"),
-                new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_ARTIFACT)
+                new MagicSacrificePermanentEvent(source,SACRIFICE_ARTIFACT)
             ];
         }
 
@@ -16,7 +16,7 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
+                NEG_TARGET_CREATURE_OR_PLAYER,
                 payedCost.getTarget(),
                 this,
                 "SN deals damage equal to the sacrificed artifact's converted mana cost to target creature or player\$."

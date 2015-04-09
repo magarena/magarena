@@ -5,7 +5,7 @@
             final int amount = permanent.getController().getDevotion(MagicColor.Red);
             new MagicEvent(
                 permanent,
-                MagicTargetChoice.NEG_TARGET_CREATURE,
+                NEG_TARGET_CREATURE,
                 new MagicDamageTargetPicker(amount),
                 this,
                 "SN deals damage to target creature\$ equal the number of red mana symbols in the mana costs of permanents PN controls."

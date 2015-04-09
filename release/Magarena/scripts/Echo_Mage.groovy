@@ -31,7 +31,7 @@
                     "Copy target instant or sorcery spell\$. You may choose new targets for the copy.";
             return new MagicEvent(
                 source,
-                MagicTargetChoice.TARGET_INSTANT_OR_SORCERY_SPELL,
+                TARGET_INSTANT_OR_SORCERY_SPELL,
                 amount,
                 this,
                 description

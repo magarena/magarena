@@ -28,7 +28,7 @@ def ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.POS_TARGET_LAND,
+                POS_TARGET_LAND,
                 this,
                 "Until end of turn, target land\$ becomes a 3/3 creature that's still a land."
             );

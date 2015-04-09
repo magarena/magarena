@@ -14,7 +14,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer()
             final int attackers = player.getNrOfPermanents(
-                MagicTargetFilterFactory.ATTACKING_CREATURE_YOU_CONTROL
+                ATTACKING_CREATURE_YOU_CONTROL
             );
             game.doAction(new MagicChangeCountersAction(event.getPermanent(),MagicCounterType.PlusOne,attackers));
             game.logAppendMessage(player," ("+attackers+")");

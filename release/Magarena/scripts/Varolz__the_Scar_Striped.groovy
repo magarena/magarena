@@ -11,7 +11,7 @@
             return [
                 new MagicExileCardPayManaCostEvent(
                     source, 
-                    MagicTargetChoice.A_PAYABLE_CREATURE_CARD_FROM_YOUR_GRAVEYARD
+                    A_PAYABLE_CREATURE_CARD_FROM_YOUR_GRAVEYARD
                 )
             ];
         }
@@ -19,7 +19,7 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.POS_TARGET_CREATURE,
+                POS_TARGET_CREATURE,
                 payedCost.getTarget(),
                 this,
                 "Put a number of +1/+1 counters equal to that RN's power on target creature\$."

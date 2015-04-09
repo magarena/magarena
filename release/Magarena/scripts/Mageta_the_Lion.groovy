@@ -25,7 +25,7 @@
             final MagicPermanent permanent = event.getPermanent();
             final Collection<MagicPermanent> targets = game.filterPermanents(
                 permanent.getController(),
-                MagicTargetFilterFactory.CREATURE.except(permanent)
+                CREATURE.except(permanent)
             );
             for (final MagicPermanent target : targets) {
                 game.doAction(MagicChangeStateAction.Set(target,MagicPermanentState.CannotBeRegenerated));

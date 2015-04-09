@@ -20,7 +20,7 @@ def ST = new MagicStatic(MagicLayer.Color, MagicStatic.UntilEOT) {
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.TARGET_PERMANENT,
+                TARGET_PERMANENT,
                 this,
                 "Target permanent\$ becomes blue in addition to its other colors until end of turn."
             );

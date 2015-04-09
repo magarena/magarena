@@ -12,7 +12,7 @@
          public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.NEG_TARGET_CREATURE,
+                NEG_TARGET_CREATURE,
                 new MagicDamageTargetPicker(1),
                 this,
                 "SN deals 1 damage to target creature\$ "+
@@ -23,7 +23,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
                 final MagicTargetFilter<MagicPermanent> targetFilter = new MagicNameTargetFilter(
-                    MagicTargetFilterFactory.CREATURE,
+                    CREATURE,
                     it.getName()
                 );
                 final Collection<MagicPermanent> targets = game.filterPermanents(event.getPlayer(),targetFilter);

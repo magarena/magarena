@@ -4,7 +4,7 @@
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.NEG_TARGET_CREATURE,
+                NEG_TARGET_CREATURE,
                 this,
                 "Destroy target creature\$ if it's white. A creature destroyed this way can't be regenerated. " +
                 "PN draws a card at the beginning of the next turn's upkeep."

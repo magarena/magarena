@@ -6,7 +6,7 @@
             return payedCost.getTarget().isPermanent() ?
                 new MagicEvent(
                     cardOnStack,
-                    MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
+                    NEG_TARGET_CREATURE_OR_PLAYER,
                     payedCost.getTarget(),
                     this,
                     "SN deals damage equal to RN's power to target creature or player\$."

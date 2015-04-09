@@ -10,7 +10,7 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final Collection<MagicPermanent> targets = game.filterPermanents(MagicTargetFilterFactory.CREATURE.except(event.getPermanent()));
+            final Collection<MagicPermanent> targets = game.filterPermanents(CREATURE.except(event.getPermanent()));
             for (final MagicPermanent creature : targets) {
                 game.doAction(new MagicTapAction(creature));
             }

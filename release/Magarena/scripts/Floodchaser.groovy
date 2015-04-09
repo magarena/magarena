@@ -30,7 +30,7 @@ def ST2 = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.NEG_TARGET_LAND,
+                NEG_TARGET_LAND,
                 MagicExileTargetPicker.create(),
                 this,
                 "Target land\$ becomes an Island until end of turn."

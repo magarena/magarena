@@ -9,7 +9,7 @@
                 new MagicTapEvent(source), 
                 new MagicRepeatedPermanentsEvent(
                     source, 
-                    MagicTargetChoice.SACRIFICE_ARTIFACT, 
+                    SACRIFICE_ARTIFACT, 
                     5, 
                     MagicChainEventFactory.Sac
                 )

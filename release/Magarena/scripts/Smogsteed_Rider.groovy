@@ -10,12 +10,10 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final Collection<MagicPermanent> targets = game.filterPermanents(
-                event.getPlayer(),
-                MagicTargetFilterFactory.ATTACKING_CREATURE.except(event.getPermanent())
-            );
-            for (final MagicPermanent target : targets) {
-                game.doAction(new MagicGainAbilityAction(target,MagicAbility.Fear));
+            ATTACKING_CREATURE
+            .except(event.getPermanent())
+            .filter(game, event.getPlayer()) each {
+                game.doAction(new MagicGainAbilityAction(it,MagicAbility.Fear));
             }
         }
     }

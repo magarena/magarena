@@ -29,7 +29,7 @@ def SAC_ACTION = {
             final MagicEvent sac = new MagicEvent(
                 SN,
                 PN,
-                MagicTargetChoice.SACRIFICE_FOREST,
+                SACRIFICE_FOREST,
                 MagicSacrificeTargetPicker.create(),
                 SAC_ACTION,
                 "Choose a Forest to sacrifice\$."
@@ -58,7 +58,7 @@ def SAC_ACTION = {
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.NegOther("target creature", source),
+                NegOther("target creature", source),
                 new MagicDamageTargetPicker(source.getPower()),
                 this,
                 "SN deals damage equal to its power to another target creature. " +

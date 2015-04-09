@@ -4,7 +4,7 @@
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.NEG_TARGET_ENCHANTMENT,
+                NEG_TARGET_ENCHANTMENT,
                 MagicDestroyTargetPicker.DestroyNoRegen,
                 this,
                 "Destroy target enchantment\$. " +

@@ -4,7 +4,7 @@
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPayedCost payedCost) {      
             return new MagicEvent(
                 permanent,
-                MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
+                NEG_TARGET_CREATURE_OR_PLAYER,
                 this,
                 "When SN enters the battlefield, it deals damage to target creature or player\$ "+
                 "equal to the number of creatures you control."

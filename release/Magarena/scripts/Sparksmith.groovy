@@ -16,7 +16,7 @@
             final int X = source.getGame().getNrOfPermanents(MagicSubType.Goblin);
             return new MagicEvent(
                 source,
-                MagicTargetChoice.NEG_TARGET_CREATURE,
+                NEG_TARGET_CREATURE,
                 new MagicDamageTargetPicker(X),
                 this,
                 "SN deals X damage to target creature\$ and X damage to PN, "+

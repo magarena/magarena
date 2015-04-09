@@ -14,7 +14,7 @@
             final int amount = permanent.getCounters(MagicCounterType.Charge)
             return new MagicEvent(
                 permanent,
-                MagicTargetChoice.TARGET_PLAYER,
+                TARGET_PLAYER,
                 amount,
                 this,
                 "Target player\$ puts the top X cards of his or her library into his or her graveyard, where X is the number of charge counters on SN (X="+amount+")."

@@ -7,7 +7,7 @@
                     permanent,
                     new MagicMayChoice(
                         new MagicPayManaCostChoice(MagicManaCost.create("{1}{W}")),
-                        MagicTargetChoice.POS_TARGET_CREATURE
+                        POS_TARGET_CREATURE
                     ),
                     MagicPumpTargetPicker.create(),
                     lifeChange.amount,

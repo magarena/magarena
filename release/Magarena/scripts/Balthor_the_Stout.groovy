@@ -13,7 +13,7 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.PosOther("target Barbarian creature", source),
+                PosOther("target Barbarian creature", source),
                 MagicPumpTargetPicker.create(),
                 this,
                 "Another target Barbarian creature\$ gets +1/+0 until end of turn."

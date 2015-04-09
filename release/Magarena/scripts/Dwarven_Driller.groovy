@@ -22,7 +22,7 @@ def action = {
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.NEG_TARGET_LAND,
+                NEG_TARGET_LAND,
                 MagicDestroyTargetPicker.Destroy,
                 this,
                 "Destroy target land\$ unless its controller has " +

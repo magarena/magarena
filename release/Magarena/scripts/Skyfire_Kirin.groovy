@@ -5,7 +5,7 @@
             final int cmc = spell.getConvertedCost();
             final MagicTargetChoice choice = new MagicTargetChoice(
                 new MagicCMCPermanentFilter(
-                    MagicTargetFilterFactory.CREATURE,
+                    CREATURE,
                     Operator.EQUAL,
                     cmc
                 ),
@@ -14,7 +14,7 @@
             );
             return new MagicEvent(
                 permanent,
-                new MagicMayChoice(MagicTargetChoice.NEG_TARGET_CREATURE),
+                new MagicMayChoice(NEG_TARGET_CREATURE),
                 MagicExileTargetPicker.create(),
                 cmc,
                 this,

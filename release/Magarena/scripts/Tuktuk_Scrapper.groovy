@@ -7,7 +7,7 @@
                 new MagicEvent(
                     permanent,
                     new MagicMayChoice(
-                        MagicTargetChoice.NEG_TARGET_ARTIFACT
+                        NEG_TARGET_ARTIFACT
                     ),
                     MagicDestroyTargetPicker.Destroy,
                     this,

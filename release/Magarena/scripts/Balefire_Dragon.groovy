@@ -12,7 +12,7 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.filterPermanents(event.getPlayer(),MagicTargetFilterFactory.CREATURE_YOU_CONTROL) each {
+            game.filterPermanents(event.getPlayer(),CREATURE_YOU_CONTROL) each {
                 game.doAction(new MagicDealDamageAction(event.getSource(),it,event.getRefInt()));
             }
         }

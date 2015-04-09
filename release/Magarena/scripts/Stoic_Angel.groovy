@@ -5,7 +5,7 @@
             return new MagicEvent(
                 permanent,
                 upkeepPlayer,
-                MagicTargetChoice.CREATURE_YOU_CONTROL,
+                A_CREATURE_YOU_CONTROL,
                 MagicTapTargetPicker.Untap,
                 this,
                 "PN untaps a creature PN controls\$."

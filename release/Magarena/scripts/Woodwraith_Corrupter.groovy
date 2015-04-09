@@ -22,7 +22,7 @@ def C = new MagicStatic(MagicLayer.Color) {
     }
 };
                 
-def choice = MagicTargetChoice.Positive("target Forest");
+def choice = Positive("target Forest");
 
 [
     new MagicPermanentActivation(

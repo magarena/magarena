@@ -8,7 +8,7 @@
             return new MagicEvent(
                 spell,
                 new MagicMayChoice(
-                    MagicTargetChoice.TARGET_CREATURE_CARD_FROM_GRAVEYARD
+                    TARGET_CREATURE_CARD_FROM_GRAVEYARD
                 ),
                 MagicGraveyardTargetPicker.PutOntoBattlefield,
                 this,

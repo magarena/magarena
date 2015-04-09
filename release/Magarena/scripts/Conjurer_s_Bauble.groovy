@@ -14,7 +14,7 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.TARGET_CARD_FROM_GRAVEYARD,
+                TARGET_CARD_FROM_GRAVEYARD,
                 MagicGraveyardTargetPicker.ExileOpp,
                 this,
                 "Put target card\$ from your graveyard on the bottom of your library"

@@ -10,7 +10,7 @@ def ARTIFACT_YOU_OWN = new MagicPermanentFilterImpl() {
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.TARGET_PLAYER,
+                TARGET_PLAYER,
                 this,
                 "Return all artifacts target player\$ owns to his or her hand."
             );

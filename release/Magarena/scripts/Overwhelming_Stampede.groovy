@@ -12,7 +12,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final Collection<MagicPermanent> targets=
-                game.filterPermanents(event.getPlayer(),MagicTargetFilterFactory.CREATURE_YOU_CONTROL);
+                game.filterPermanents(event.getPlayer(),CREATURE_YOU_CONTROL);
             int power=0;
             for (final MagicPermanent creature : targets) {
                 power=Math.max(power,creature.getPowerToughness().power());

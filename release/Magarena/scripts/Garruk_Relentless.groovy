@@ -20,7 +20,7 @@ def ABILITY2 = MagicRuleEventAction.create("Put a 2/2 green Wolf creature token 
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.NEG_TARGET_CREATURE,
+                NEG_TARGET_CREATURE,
                 this,
                 "SN deals 3 damage to target creature. That creature deals damage equal to its power to him."
             );

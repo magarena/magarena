@@ -13,7 +13,7 @@
             game.doAction(new MagicChangeLifeAction(event.getPlayer(),-2));
             game.addEvent(new MagicSearchToLocationEvent(
                 event,
-                MagicTargetChoice.CARD_FROM_LIBRARY,
+                A_CARD_FROM_LIBRARY,
                 MagicLocationType.TopOfOwnersLibrary
             ));
         }

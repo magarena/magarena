@@ -13,10 +13,10 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPermanent perm = event.getPermanent();
             if (event.isYes() && event.getPlayer().getNrOfPermanents(MagicType.Creature) >=4) {
-                game.addEvent(new MagicSacrificePermanentEvent(perm,event.getPlayer(),MagicTargetChoice.SACRIFICE_CREATURE));
-                game.addEvent(new MagicSacrificePermanentEvent(perm,event.getPlayer(),MagicTargetChoice.SACRIFICE_CREATURE));
-                game.addEvent(new MagicSacrificePermanentEvent(perm,event.getPlayer(),MagicTargetChoice.SACRIFICE_CREATURE));
-                game.addEvent(new MagicSacrificePermanentEvent(perm,event.getPlayer(),MagicTargetChoice.SACRIFICE_CREATURE));
+                game.addEvent(new MagicSacrificePermanentEvent(perm,event.getPlayer(),SACRIFICE_CREATURE));
+                game.addEvent(new MagicSacrificePermanentEvent(perm,event.getPlayer(),SACRIFICE_CREATURE));
+                game.addEvent(new MagicSacrificePermanentEvent(perm,event.getPlayer(),SACRIFICE_CREATURE));
+                game.addEvent(new MagicSacrificePermanentEvent(perm,event.getPlayer(),SACRIFICE_CREATURE));
             } else {
                 game.doAction(new MagicSacrificeAction(perm));
             }

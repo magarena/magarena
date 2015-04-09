@@ -23,7 +23,7 @@
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.filterPermanents(MagicTargetFilterFactory.CREATURE_WITH_FLYING) each {
+            game.filterPermanents(CREATURE_WITH_FLYING) each {
                 game.doAction(new MagicDealDamageAction(event.getSource(), it, event.getRefInt()));
             }
         }
@@ -46,7 +46,7 @@
             final int amount = payedCost.getX();
             return new MagicEvent(
                 source,
-                MagicTargetChoice.TARGET_CREATURE_WITH_FLYING,
+                TARGET_CREATURE_WITH_FLYING,
                 new MagicDamageTargetPicker(amount),
                 amount,
                 this,

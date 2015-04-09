@@ -4,7 +4,7 @@
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.NEG_TARGET_LAND,
+                NEG_TARGET_LAND,
                 MagicDestroyTargetPicker.Destroy,
                 this,
                 "Destroy target land\$. " +
@@ -17,7 +17,7 @@
                 game.doAction(new MagicDestroyAction(it));
                 game.addEvent(new MagicSearchOntoBattlefieldEvent(
                     event,
-                    MagicTargetChoice.BASIC_LAND_CARD_FROM_LIBRARY,
+                    A_BASIC_LAND_CARD_FROM_LIBRARY,
                     MagicPlayMod.TAPPED
                 ));
             });

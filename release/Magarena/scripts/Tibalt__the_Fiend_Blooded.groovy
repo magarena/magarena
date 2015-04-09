@@ -19,7 +19,7 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.NEG_TARGET_PLAYER,
+                NEG_TARGET_PLAYER,
                 this,
                 "SN deals damage equal to the number of cards in target player's\$ hand to that player."
             );
@@ -45,7 +45,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final Collection<MagicPermanent> targets=
-                game.filterPermanents(event.getPlayer(),MagicTargetFilterFactory.CREATURE);
+                game.filterPermanents(event.getPlayer(),CREATURE);
             for (final MagicPermanent perm : targets) {
                 game.doAction(new MagicGainControlAction(event.getPlayer(),perm,MagicStatic.UntilEOT));
                 game.doAction(new MagicUntapAction(perm));

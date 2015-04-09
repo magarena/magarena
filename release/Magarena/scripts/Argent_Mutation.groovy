@@ -11,7 +11,7 @@ def ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.TARGET_PERMANENT,
+                TARGET_PERMANENT,
                 this,
                 "Target permanent\$ becomes an artifact in addition to its other types until end of turn. " +
                 "PN draws a card."

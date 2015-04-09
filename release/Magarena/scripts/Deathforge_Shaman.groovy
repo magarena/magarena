@@ -5,7 +5,7 @@
             return payedCost.isKicked() ?
                 new MagicEvent(
                     permanent,
-                    MagicTargetChoice.NEG_TARGET_PLAYER,
+                    NEG_TARGET_PLAYER,
                     payedCost.getKicker(),
                     this,
                     "SN deals damage to target player\$ equal to twice the number of times it was kicked. (RN)"

@@ -6,8 +6,8 @@
                 player.getNrOfPermanents(MagicSubType.Zombie) +
                 player.getOpponent().getNrOfPermanents(MagicSubType.Zombie);
             final int graveyard =
-                game.filterCards(player,MagicTargetFilterFactory.ZOMBIE_CARD_FROM_GRAVEYARD).size() +
-                game.filterCards(player.getOpponent(),MagicTargetFilterFactory.ZOMBIE_CARD_FROM_GRAVEYARD).size();
+                game.filterCards(player,ZOMBIE_CARD_FROM_GRAVEYARD).size() +
+                game.filterCards(player.getOpponent(),ZOMBIE_CARD_FROM_GRAVEYARD).size();
             final int amount = battlefield + graveyard;
             pt.set(amount,amount);
         }

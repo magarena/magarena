@@ -5,7 +5,7 @@
             return (creature == permanent) ?
                 new MagicEvent(
                     permanent,
-                    new MagicMayChoice(MagicTargetChoice.TARGET_ARTIFACT_YOUR_OPPONENT_CONTROLS),
+                    new MagicMayChoice(TARGET_ARTIFACT_YOUR_OPPONENT_CONTROLS),
                     MagicExileTargetPicker.create(),
                     this,
                     "PN may\$ gain control of target artifact\$ controlled by opponent. " +

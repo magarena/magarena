@@ -11,7 +11,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final Collection<MagicPermanent> targets =
-                game.filterPermanents(event.getPlayer(),MagicTargetFilterFactory.ARTIFACT);
+                game.filterPermanents(event.getPlayer(),ARTIFACT);
             for (final MagicPermanent target : targets) {
                 game.doAction(MagicChangeStateAction.Set(target,MagicPermanentState.CannotBeRegenerated));
                 game.doAction(new MagicChangeLifeAction(target.getController(),target.getConvertedCost()));

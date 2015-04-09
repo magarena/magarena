@@ -5,7 +5,7 @@
             return new MagicEvent(
                 permanent,
                 new MagicMayChoice(
-                    MagicTargetChoice.NEG_TARGET_ARTIFACT_OR_ENCHANTMENT
+                    NEG_TARGET_ARTIFACT_OR_ENCHANTMENT
                 ),
                 MagicExileTargetPicker.create(),
                 this,

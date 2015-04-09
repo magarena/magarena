@@ -7,7 +7,7 @@
                     permanent.isOpponent(damage.getTarget())) ?
                 new MagicEvent(
                     permanent,
-                    MagicTargetChoice.TARGET_CREATURE_YOUR_OPPONENT_CONTROLS,
+                    TARGET_CREATURE_YOUR_OPPONENT_CONTROLS,
                     damage.getDealtAmount(),
                     this,
                     "SN deals RN damage to target creature\$ your opponent controls."

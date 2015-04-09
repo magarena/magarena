@@ -5,7 +5,7 @@
             final int X = cardOnStack.getGame().getNrOfPermanents(MagicSubType.Zombie);
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.NEG_TARGET_CREATURE,
+                NEG_TARGET_CREATURE,
                 new MagicWeakenTargetPicker(-X, -X),
                 this,
                 "Target creature\$ gets -X/-X until end of turn, where X is the number of Zombies on the battlefield."

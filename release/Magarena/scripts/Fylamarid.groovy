@@ -19,7 +19,7 @@ def BLUE = new MagicStatic(MagicLayer.Color,MagicStatic.UntilEOT) {
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.TARGET_CREATURE,
+                TARGET_CREATURE,
                 MagicExileTargetPicker.create(),
                 this,
                 "Target creature\$ becomes blue until end of turn."

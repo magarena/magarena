@@ -1,4 +1,4 @@
-def choice = MagicTargetChoice.Negative("target creature with Defender");
+def choice = Negative("target creature with Defender");
 
 [
     new MagicPermanentActivation(

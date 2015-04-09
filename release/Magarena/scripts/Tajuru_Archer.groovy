@@ -8,7 +8,7 @@
                 new MagicEvent(
                     permanent,
                     new MagicMayChoice(
-                        MagicTargetChoice.NEG_TARGET_CREATURE_WITH_FLYING
+                        NEG_TARGET_CREATURE_WITH_FLYING
                     ),
                     // estimated. Amount of damage can be different on resolution
                     new MagicDamageTargetPicker(numAllies),

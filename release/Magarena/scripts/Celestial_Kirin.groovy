@@ -15,7 +15,7 @@
                 game.filterPermanents(
                     event.getPlayer(),
                     new MagicCMCPermanentFilter(
-                        MagicTargetFilterFactory.PERMANENT,
+                        PERMANENT,
                         Operator.EQUAL,
                         event.getRefInt()
                     )

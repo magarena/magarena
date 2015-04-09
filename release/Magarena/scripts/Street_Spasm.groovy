@@ -5,7 +5,7 @@
             final int x = payedCost.getX();
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.TARGET_CREATURE_WITHOUT_FLYING_YOU_DONT_CONTROL,
+                TARGET_CREATURE_WITHOUT_FLYING_YOU_DONT_CONTROL,
                 new MagicDamageTargetPicker(x),
                 x,
                 this,
@@ -39,7 +39,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final Collection<MagicPermanent> targets=
-                game.filterPermanents(event.getPlayer(),MagicTargetFilterFactory.CREATURE_WITHOUT_FLYING_YOUR_OPPONENT_CONTROLS);
+                game.filterPermanents(event.getPlayer(),CREATURE_WITHOUT_FLYING_YOUR_OPPONENT_CONTROLS);
             final MagicSource source = event.getSource();
             final int amount = event.getRefInt();
             for (final MagicPermanent target : targets) {

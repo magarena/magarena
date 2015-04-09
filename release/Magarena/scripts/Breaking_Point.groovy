@@ -16,7 +16,7 @@
             if (event.isYes()) {
                 game.doAction(new MagicDealDamageAction(event.getSource(), event.getPlayer(), 6));
             } else {
-                final Collection<MagicPermanent> targets = game.filterPermanents(MagicTargetFilterFactory.CREATURE);
+                final Collection<MagicPermanent> targets = game.filterPermanents(CREATURE);
                 for (final MagicPermanent target : targets) {
                     game.doAction(MagicChangeStateAction.Set(target,MagicPermanentState.CannotBeRegenerated));
                 }

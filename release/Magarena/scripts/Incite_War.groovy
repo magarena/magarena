@@ -5,9 +5,9 @@
             return new MagicEvent(
                 cardOnStack,
                 payedCost.isKicked() ? 
-                    MagicTargetChoice.NEG_TARGET_PLAYER :
+                    NEG_TARGET_PLAYER :
                     new MagicOrChoice(
-                        MagicTargetChoice.NEG_TARGET_PLAYER,
+                        NEG_TARGET_PLAYER,
                         MagicChoice.NONE
                     ),
                 this,
@@ -24,7 +24,7 @@
                 event.processTargetPlayer(game, {
                     final Collection<MagicPermanent> targets = game.filterPermanents(
                         it,
-                        MagicTargetFilterFactory.CREATURE_YOU_CONTROL
+                        CREATURE_YOU_CONTROL
                     );
                     for (final MagicPermanent creature : targets) {
                         game.doAction(new MagicGainAbilityAction(creature,MagicAbility.AttacksEachTurnIfAble));
@@ -34,7 +34,7 @@
             if (event.isKicked() || event.isMode(2)) {
                 final Collection<MagicPermanent> targets = game.filterPermanents(
                     event.getPlayer(),
-                    MagicTargetFilterFactory.CREATURE_YOU_CONTROL
+                    CREATURE_YOU_CONTROL
                 );
                 for (final MagicPermanent creature : targets) {
                     game.doAction(new MagicGainAbilityAction(creature,MagicAbility.FirstStrike));

@@ -4,7 +4,7 @@
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.NEG_TARGET_PLAYER,
+                NEG_TARGET_PLAYER,
                 this,
                 "Target player\$ loses X life and you gain X life, where " +
                 "X is the greatest power among creatures PN controls."
@@ -15,7 +15,7 @@
             event.processTargetPlayer(game, {
                 final Collection<MagicPermanent> targets = game.filterPermanents(
                         event.getPlayer(),
-                        MagicTargetFilterFactory.CREATURE_YOU_CONTROL);
+                        CREATURE_YOU_CONTROL);
                 int power = 0;
                 for (final MagicPermanent creature : targets) {
                     power = Math.max(power,creature.getPower());

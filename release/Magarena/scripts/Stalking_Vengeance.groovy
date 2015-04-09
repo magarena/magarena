@@ -5,7 +5,7 @@
             return died != permanent && died.isCreature() && died.isFriend(permanent) ?
                 new MagicEvent(
                     permanent,
-                    MagicTargetChoice.NEG_TARGET_PLAYER,
+                    NEG_TARGET_PLAYER,
                     new MagicDamageTargetPicker(died.getPower()),
                     died,
                     this,

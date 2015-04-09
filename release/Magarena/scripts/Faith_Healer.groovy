@@ -6,7 +6,7 @@
         @Override
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
-                new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_ENCHANTMENT)
+                new MagicSacrificePermanentEvent(source,SACRIFICE_ENCHANTMENT)
             ];
         }
         @Override

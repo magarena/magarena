@@ -6,8 +6,8 @@
             return new MagicEvent(
                 permanent,
                 new MagicMayChoice(permanent.isController(target) ?
-                    MagicTargetChoice.TARGET_CREATURE_CARD_FROM_GRAVEYARD :
-                    MagicTargetChoice.TARGET_CREATURE_CARD_FROM_OPPONENTS_GRAVEYARD),
+                    TARGET_CREATURE_CARD_FROM_GRAVEYARD :
+                    TARGET_CREATURE_CARD_FROM_OPPONENTS_GRAVEYARD),
                 MagicGraveyardTargetPicker.PutOntoBattlefield,
                 this,
                 "PN may\$ put target creature card from ${target.toString()}'s graveyard\$ onto the battlefield under PN's control."

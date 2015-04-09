@@ -5,7 +5,7 @@
             return permanent.getEquippedCreature() == attacker ?
                 new MagicEvent(
                     permanent,
-                    MagicTargetChoice.TARGET_PERMANENT,
+                    TARGET_PERMANENT,
                     MagicDestroyTargetPicker.Destroy,
                     this,
                     "Destroy target permanent\$."

@@ -4,7 +4,7 @@
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.NEG_TARGET_ARTIFACT,
+                NEG_TARGET_ARTIFACT,
                 MagicDestroyTargetPicker.Destroy,
                 this,
                 "Destroy target artifact\$. It can't be regenerated. Its controller gains life equal to its converted mana cost."

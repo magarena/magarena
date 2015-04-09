@@ -3,7 +3,7 @@
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPermanent creature) {
             final MagicTargetChoice targetChoice = new MagicTargetChoice(
-                MagicTargetFilterFactory.CREATURE_YOU_CONTROL.except(permanent),
+                CREATURE_YOU_CONTROL.except(permanent),
                 MagicTargetHint.None,
                 "another creature to return"
             );

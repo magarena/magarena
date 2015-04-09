@@ -13,9 +13,9 @@
             final MagicPlayer player = event.getPlayer();
             final MagicSource source = event.getSource();
             final Collection<MagicPermanent> targetsAttacking =
-                game.filterPermanents(player,MagicTargetFilterFactory.ATTACKING_CREATURE);
+                game.filterPermanents(player,ATTACKING_CREATURE);
             final Collection<MagicPermanent> targetsCreatures =
-                game.filterPermanents(player,MagicTargetFilterFactory.CREATURE_YOU_CONTROL);
+                game.filterPermanents(player,CREATURE_YOU_CONTROL);
             for (final MagicPermanent target : targetsAttacking) {
                 game.doAction(new MagicDealDamageAction(source,target,2));
             }

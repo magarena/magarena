@@ -36,7 +36,7 @@ def EFFECT = MagicRuleEventAction.create("Sacrifice SN.");
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicCard card) {
             return new MagicEvent(
                 card,
-                new MagicMayChoice(MagicTargetChoice.NEG_TARGET_SPELL),
+                new MagicMayChoice(NEG_TARGET_SPELL),
                 this,
                 "PN may\$ counter target spell\$."
             );

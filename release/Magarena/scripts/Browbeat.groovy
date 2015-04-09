@@ -13,7 +13,7 @@ def action = {
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.POS_TARGET_PLAYER,
+                POS_TARGET_PLAYER,
                 this,
                 "PN's opponent may have SN deal 5 damage to him or her. " +
                 "If he or she doesn't, target player\$ draws three cards."

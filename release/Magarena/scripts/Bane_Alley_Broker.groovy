@@ -43,7 +43,7 @@ def ExileCard = {
            game.doAction(new MagicDrawAction(event.getPlayer(),1));
            game.addEvent(new MagicEvent(
                 event.getSource(),
-                MagicTargetChoice.A_CARD_FROM_HAND,
+                A_CARD_FROM_HAND,
                 MagicGraveyardTargetPicker.ExileOwn,
                 ExileCard,
                 "PN exiles a card\$ from his or her hand."

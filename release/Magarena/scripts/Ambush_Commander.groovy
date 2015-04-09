@@ -1,7 +1,7 @@
 [
     new MagicStatic(
         MagicLayer.SetPT,
-        MagicTargetFilterFactory.FOREST_YOU_CONTROL
+        FOREST_YOU_CONTROL
     ) {
         @Override
         public void modPowerToughness(final MagicPermanent source,final MagicPermanent permanent,final MagicPowerToughness pt) {
@@ -10,7 +10,7 @@
     },
     new MagicStatic(
         MagicLayer.Color,
-        MagicTargetFilterFactory.FOREST_YOU_CONTROL
+        FOREST_YOU_CONTROL
     ) {
         @Override
         public int getColorFlags(final MagicPermanent permanent, final int flags) {
@@ -19,7 +19,7 @@
     },
     new MagicStatic(
         MagicLayer.Type,
-        MagicTargetFilterFactory.FOREST_YOU_CONTROL
+        FOREST_YOU_CONTROL
     ) {
         @Override
         public void modSubTypeFlags(final MagicPermanent permanent, final Set<MagicSubType> flags) {

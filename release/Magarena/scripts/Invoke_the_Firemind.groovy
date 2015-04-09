@@ -6,7 +6,7 @@
                 cardOnStack,
                 new MagicOrChoice(
                     MagicChoice.NONE,
-                    MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER
+                    NEG_TARGET_CREATURE_OR_PLAYER
                 ),
                 payedCost.getX(),
                 this,

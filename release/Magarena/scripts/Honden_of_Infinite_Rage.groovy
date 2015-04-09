@@ -5,7 +5,7 @@
             final int amt = upkeepPlayer.getNrOfPermanents(MagicSubType.Shrine);
             return new MagicEvent(
                 permanent,
-                MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
+                NEG_TARGET_CREATURE_OR_PLAYER,
                 new MagicDamageTargetPicker(amt),
                 this,
                 "SN deals damage to target creature or player\$ equal to the number of Shrines PN controls."

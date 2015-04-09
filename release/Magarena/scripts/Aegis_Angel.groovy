@@ -24,7 +24,7 @@ def control = {
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 permanent,
-                MagicTargetChoice.PosOther("target permanent",permanent),
+                PosOther("target permanent",permanent),
                 MagicIndestructibleTargetPicker.create(),
                 this,
                 "Another target permanent\$ gains indestructible for as long as PN controls SN."

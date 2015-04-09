@@ -5,7 +5,7 @@
             final int amount = payedCost.getX();
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.POS_TARGET_ATTACKING_CREATURE,
+                POS_TARGET_ATTACKING_CREATURE,
                 MagicPumpTargetPicker.create(),
                 amount,
                 this,

@@ -4,7 +4,7 @@
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
             return new MagicEvent(
                 permanent,
-                new MagicMayChoice(MagicTargetChoice.TARGET_CREATURE_PLUSONE_COUNTER),
+                new MagicMayChoice(TARGET_CREATURE_PLUSONE_COUNTER),
                 this,
                 "PN may\$ move a +1/+1 counter from " +
                 "target creature\$ onto SN."

@@ -1,4 +1,4 @@
-def choice = MagicTargetChoice.Positive("target creature");
+def choice = Positive("target creature");
 
 [
     new MagicPermanentActivation(

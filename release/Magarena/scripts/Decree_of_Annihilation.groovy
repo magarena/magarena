@@ -10,15 +10,15 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final Collection<MagicPermanent> artifacts = game.filterPermanents(MagicTargetFilterFactory.ARTIFACT);
+            final Collection<MagicPermanent> artifacts = game.filterPermanents(ARTIFACT);
             for (final MagicPermanent artifact : artifacts) {
                 game.doAction(new MagicRemoveFromPlayAction(artifact,MagicLocationType.Exile));
             }
-            final Collection<MagicPermanent> creatures = game.filterPermanents(MagicTargetFilterFactory.CREATURE);
+            final Collection<MagicPermanent> creatures = game.filterPermanents(CREATURE);
             for (final MagicPermanent creature : creatures) {
                 game.doAction(new MagicRemoveFromPlayAction(creature,MagicLocationType.Exile));
             }
-            final Collection<MagicPermanent> lands = game.filterPermanents(MagicTargetFilterFactory.LAND);
+            final Collection<MagicPermanent> lands = game.filterPermanents(LAND);
             for (final MagicPermanent land : lands) {
                 game.doAction(new MagicRemoveFromPlayAction(land,MagicLocationType.Exile));
             }

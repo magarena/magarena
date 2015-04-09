@@ -5,7 +5,7 @@
             final int amount = permanent.getCounters(MagicCounterType.PlusOne)
             return new MagicEvent(
                 permanent,
-                MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
+                NEG_TARGET_CREATURE_OR_PLAYER,
                 new MagicDamageTargetPicker(amount),
                 this,
                 "SN deals damage to target creature or player\$ equal to the number of +1/+1 counters on SN."

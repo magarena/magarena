@@ -4,7 +4,7 @@
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPermanent died) {
             return new MagicEvent(
                 permanent,
-                MagicTargetChoice.TARGET_CREATURE_YOU_CONTROL,
+                TARGET_CREATURE_YOU_CONTROL,
                 MagicPumpTargetPicker.create(),
                 this,
                 "PN puts a +1/+1 counter on target creature\$ he or she controls. " +

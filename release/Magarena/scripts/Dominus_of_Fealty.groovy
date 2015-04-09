@@ -4,7 +4,7 @@
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
             return new MagicEvent(
                 permanent,
-                new MagicMayChoice(MagicTargetChoice.NEG_TARGET_PERMANENT),
+                new MagicMayChoice(NEG_TARGET_PERMANENT),
                 MagicExileTargetPicker.create(),
                 this,
                 "PN may\$ gain control of target permanent\$ until end of turn. " + 

@@ -4,7 +4,7 @@
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 permanent,
-                MagicTargetChoice.Other("target creature you control", permanent),
+                Other("target creature you control", permanent),
                 MagicTapTargetPicker.Untap,
                 this,
                 "Untap another target creature you control\$."

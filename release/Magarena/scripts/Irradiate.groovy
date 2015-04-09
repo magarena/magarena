@@ -5,7 +5,7 @@
             final int X = cardOnStack.getController().getNrOfPermanents(MagicType.Artifact);
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.NEG_TARGET_CREATURE,
+                NEG_TARGET_CREATURE,
                 new MagicWeakenTargetPicker(-X, -X),
                 this,
                 "Target creature\$ gets -1/-1 until end of turn for each artifact you control."

@@ -15,8 +15,8 @@ def action = {
             return new MagicEvent(
                 cardOnStack,
                 new MagicOrChoice(
-                    MagicTargetChoice.TARGET_PERMANENT_YOU_CONTROL,
-                    MagicTargetChoice.TARGET_PERMANENT_YOU_CONTROL
+                    TARGET_PERMANENT_YOU_CONTROL,
+                    TARGET_PERMANENT_YOU_CONTROL
                 ),
                 this,
                 "Choose one\$ - target permanent you control gains protection from artifacts until end of turn; " +

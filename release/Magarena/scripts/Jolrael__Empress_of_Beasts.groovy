@@ -28,7 +28,7 @@ def ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.TARGET_PLAYER,
+                TARGET_PLAYER,
                 this,
                 "All lands target player\$ controls become 3/3 creatures until end of turn. They're still lands."
             );
@@ -37,7 +37,7 @@ def ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
-            final Collection<MagicPermanent> targets = game.filterPermanents(it,MagicTargetFilterFactory.LAND_YOU_CONTROL);
+            final Collection<MagicPermanent> targets = game.filterPermanents(it,LAND_YOU_CONTROL);
             for (final MagicPermanent target : targets) {
                 game.doAction(new MagicBecomesCreatureAction(target,PT,ST));
                 }

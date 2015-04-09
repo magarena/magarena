@@ -30,7 +30,7 @@ def action = {
             game.addEvent(new MagicEvent(
                 event.getSource(),
                 player,
-                MagicTargetChoice.SACRIFICE_CREATURE,
+                SACRIFICE_CREATURE,
                 MagicSacrificeTargetPicker.create(),
                 action,
                 "Choose a creature to sacrifice\$."

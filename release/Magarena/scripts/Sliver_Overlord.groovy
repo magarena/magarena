@@ -1,4 +1,4 @@
-def choice = MagicTargetChoice.Negative("target Sliver");
+def choice = Negative("target Sliver");
 
 [
     new MagicPermanentActivation(

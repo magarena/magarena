@@ -1,7 +1,7 @@
 [
     new MagicStatic(
         MagicLayer.ModPT,
-        MagicTargetFilterFactory.CREATURE_YOU_CONTROL
+        CREATURE_YOU_CONTROL
     ) {
         @Override
         public void modPowerToughness(final MagicPermanent source,final MagicPermanent permanent,final MagicPowerToughness pt) {
@@ -20,7 +20,7 @@
                     cardOnStack.hasAbility(MagicAbility.Infect)) ?
                 new MagicEvent(
                     permanent,
-                    MagicTargetChoice.NEG_TARGET_PLAYER,
+                    NEG_TARGET_PLAYER,
                     this,
                     "Target player\$ gets a poison counter."
                 ):

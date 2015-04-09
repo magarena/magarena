@@ -4,7 +4,7 @@
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.POS_TARGET_NONATTACKING_CREATURE,
+                POS_TARGET_NONATTACKING_CREATURE,
                 MagicTapTargetPicker.Untap,
                 this,
                 "Untap target nonattacking creature\$. It gets +1/+3 until end of turn."

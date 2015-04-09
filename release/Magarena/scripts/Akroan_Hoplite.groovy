@@ -11,7 +11,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPermanent creature = event.getPermanent();
-            final int power = event.getPlayer().getNrOfPermanents(MagicTargetFilterFactory.ATTACKING_CREATURE)
+            final int power = event.getPlayer().getNrOfPermanents(ATTACKING_CREATURE)
             game.doAction(new MagicChangeTurnPTAction(creature,power,0));
         }
     }

@@ -37,7 +37,7 @@ def TP = new MagicTargetPicker<MagicPermanent>() {
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.POS_TARGET_NONCREATURE_ARTIFACT,
+                POS_TARGET_NONCREATURE_ARTIFACT,
                 TP,
                 this,
                 "Target noncreature artifact\$ becomes an artifact creature with " +

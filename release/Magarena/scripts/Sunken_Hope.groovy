@@ -5,7 +5,7 @@
             return new MagicEvent(
                 permanent,
                 upkeepPlayer,
-                MagicTargetChoice.CREATURE_YOU_CONTROL,
+                A_CREATURE_YOU_CONTROL,
                 MagicBounceTargetPicker.create(),
                 this,
                 "PN returns a creature PN controls\$ to its owner's hand."

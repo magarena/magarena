@@ -6,7 +6,7 @@ def choice = new MagicTargetChoice("a Forest card from your library");
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(    
                 cardOnStack,
-                MagicTargetChoice.NEG_TARGET_LAND,
+                NEG_TARGET_LAND,
                 MagicDestroyTargetPicker.Destroy,
                 this,
                 "Destroy target land\$. PN searches his or her library for a Forest card and puts that card onto the battlefield tapped. "+

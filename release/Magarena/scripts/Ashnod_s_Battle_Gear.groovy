@@ -34,7 +34,7 @@ def tapped = {
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.TARGET_CREATURE_YOU_CONTROL,
+                TARGET_CREATURE_YOU_CONTROL,
                 MagicPumpTargetPicker.create(),
                 this,
                 "Target creature PN controls\$ gets +2/-2 for as long as SN remains tapped."

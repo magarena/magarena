@@ -1,4 +1,4 @@
-def choice = MagicTargetChoice.Positive("target Chimera creature");
+def choice = Positive("target Chimera creature");
 
 [
     new MagicPermanentActivation(

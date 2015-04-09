@@ -15,7 +15,7 @@
             game.doAction(new MagicPlayTokensAction(
                 player,
                 TokenCardDefinitions.get("1/1 green Insect creature token"),
-                player.getNrOfPermanents(MagicTargetFilterFactory.FOREST)
+                player.getNrOfPermanents(FOREST)
             ));
             game.doAction(new MagicChangeCardDestinationAction(event.getCardOnStack(),MagicLocationType.OwnersLibrary));
         }

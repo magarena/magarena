@@ -14,7 +14,7 @@
                 game.doAction(new MagicDealDamageAction(
                     event.getSource(), 
                     player, 
-                    player.getNrOfPermanents(MagicTargetFilterFactory.NONBASIC_LAND) * 2
+                    player.getNrOfPermanents(NONBASIC_LAND) * 2
                 ));
             }
         }

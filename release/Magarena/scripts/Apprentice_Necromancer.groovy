@@ -17,7 +17,7 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.TARGET_CREATURE_CARD_FROM_GRAVEYARD,
+                TARGET_CREATURE_CARD_FROM_GRAVEYARD,
                 MagicGraveyardTargetPicker.PutOntoBattlefield,
                 this,
                 "Return target creature card from your graveyard\$ to the battlefield. "+

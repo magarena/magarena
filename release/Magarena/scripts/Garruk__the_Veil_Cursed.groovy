@@ -18,12 +18,12 @@ def AB1 = MagicRuleEventAction.create("Put a 1/1 black Wolf creature token with 
        }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicEvent sac = new MagicSacrificePermanentEvent(event.getSource(),event.getPlayer(),MagicTargetChoice.SACRIFICE_CREATURE);
+            final MagicEvent sac = new MagicSacrificePermanentEvent(event.getSource(),event.getPlayer(),SACRIFICE_CREATURE);
             if (sac.isSatisfied()) {
                 game.addEvent(sac);
                 game.addEvent(new MagicSearchToLocationEvent(
                     event,
-                    MagicTargetChoice.CREATURE_CARD_FROM_LIBRARY,
+                    A_CREATURE_CARD_FROM_LIBRARY,
                     MagicLocationType.OwnersHand
                 ));
             }
@@ -40,8 +40,8 @@ def AB1 = MagicRuleEventAction.create("Put a 1/1 black Wolf creature token with 
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final int X = event.getPlayer().filterCards(MagicTargetFilterFactory.CREATURE_CARD_FROM_GRAVEYARD).size();
-            final Collection<MagicPermanent> targets = event.getPlayer().filterPermanents(MagicTargetFilterFactory.CREATURE_YOU_CONTROL);
+            final int X = event.getPlayer().filterCards(CREATURE_CARD_FROM_GRAVEYARD).size();
+            final Collection<MagicPermanent> targets = event.getPlayer().filterPermanents(CREATURE_YOU_CONTROL);
             for (final MagicPermanent target : targets) {
                 game.doAction(new MagicGainAbilityAction(target, MagicAbility.Trample));
                 game.doAction(new MagicChangeTurnPTAction(target, X, X));

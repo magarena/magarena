@@ -13,7 +13,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final int amount = event.getPlayer().getHandSize();
-            final Collection<MagicPermanent> targets = event.getPlayer().filterPermanents(MagicTargetFilterFactory.CREATURE_YOU_CONTROL);
+            final Collection<MagicPermanent> targets = event.getPlayer().filterPermanents(CREATURE_YOU_CONTROL);
             for (final MagicPermanent target : targets) {
                 if (target.getPower() > amount){
                     game.doAction(new MagicRemoveFromPlayAction(target,MagicLocationType.OwnersHand));

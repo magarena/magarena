@@ -7,7 +7,7 @@
                 final MagicPayedCost payedCost) {
             return new MagicEvent(
                 permanent,
-                MagicTargetChoice.TARGET_ATTACKING_OR_BLOCKING_CREATURE,
+                TARGET_ATTACKING_OR_BLOCKING_CREATURE,
                 this,
                 "Remove target attacking or blocking creature\$ from combat."
             );

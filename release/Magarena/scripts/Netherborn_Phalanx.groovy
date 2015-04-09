@@ -14,7 +14,7 @@
             final MagicPlayer player = event.getPlayer();
             final Collection<MagicPermanent> targets = game.filterPermanents(
                     event.getPlayer(),
-                    MagicTargetFilterFactory.CREATURE_YOU_CONTROL);
+                    CREATURE_YOU_CONTROL);
             final int amount = - targets.size();
             game.doAction(new MagicChangeLifeAction(player,amount));
         }

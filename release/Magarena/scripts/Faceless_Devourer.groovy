@@ -4,7 +4,7 @@
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 permanent,
-                MagicTargetChoice.NegOther("target creature with shadow", permanent),
+                NegOther("target creature with shadow", permanent),
                 MagicExileTargetPicker.create(),
                 this,
                 "Exile another target creature with shadow\$."

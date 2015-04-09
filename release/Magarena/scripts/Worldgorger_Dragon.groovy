@@ -13,7 +13,7 @@
             final MagicPermanent permanent = event.getPermanent();
             final Collection<MagicPermanent> targets = game.filterPermanents(
                 event.getPlayer(),
-                MagicTargetFilterFactory.PERMANENT_YOU_CONTROL.except(permanent)
+                PERMANENT_YOU_CONTROL.except(permanent)
             );
             for (final MagicPermanent target : targets) {
                 game.doAction(new MagicExileLinkAction(permanent, target));

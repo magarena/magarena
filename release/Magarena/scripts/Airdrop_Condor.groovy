@@ -7,7 +7,7 @@
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
                 new MagicPayManaCostEvent(source,"{1}{R}"),
-                new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_GOBLIN)
+                new MagicSacrificePermanentEvent(source,SACRIFICE_GOBLIN)
             ];
         }
 
@@ -15,7 +15,7 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
+                NEG_TARGET_CREATURE_OR_PLAYER,
                 payedCost.getTarget(),
                 this,
                 "SN deals damage equal to the power of RN to target creature or player\$."

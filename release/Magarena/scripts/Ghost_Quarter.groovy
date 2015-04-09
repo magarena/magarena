@@ -14,7 +14,7 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.TARGET_LAND,
+                TARGET_LAND,
                 MagicDestroyTargetPicker.Destroy,
                 this,
                 "Destroy target land\$. Its controller may search his or her library for a basic land card, put it onto the battlefield, then shuffle his or her library."
@@ -29,7 +29,7 @@
                     it.getController(),
                     new MagicMayChoice(
                         "Search for a basic land card?",
-                        MagicTargetChoice.BASIC_LAND_CARD_FROM_LIBRARY
+                        A_BASIC_LAND_CARD_FROM_LIBRARY
                     )
                 ));
             });

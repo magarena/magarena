@@ -5,7 +5,7 @@
             return new MagicEvent(
                 permanent,
                 new MagicMayChoice(
-                    MagicTargetChoice.TARGET_CREATURE_YOUR_OPPONENT_CONTROLS
+                    TARGET_CREATURE_YOUR_OPPONENT_CONTROLS
                 ),
                 MagicBounceTargetPicker.create(),
                 this,

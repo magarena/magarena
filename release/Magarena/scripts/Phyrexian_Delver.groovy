@@ -4,7 +4,7 @@
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 permanent,
-                MagicTargetChoice.TARGET_CREATURE_CARD_FROM_GRAVEYARD,
+                TARGET_CREATURE_CARD_FROM_GRAVEYARD,
                 MagicGraveyardTargetPicker.PutOntoBattlefield,
                 this,
                 "PN returns target creature card\$ from his or her graveyard to the battlefield. "+

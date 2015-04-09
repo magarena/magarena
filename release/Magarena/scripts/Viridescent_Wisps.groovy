@@ -10,7 +10,7 @@ def color = new MagicStatic(MagicLayer.Color, MagicStatic.UntilEOT) {
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.POS_TARGET_CREATURE,
+                POS_TARGET_CREATURE,
                 MagicUnblockableTargetPicker.create(),
                 this,
                 "Target creature\$ becomes green and gets +1/+0 until end of turn. PN draws a card."

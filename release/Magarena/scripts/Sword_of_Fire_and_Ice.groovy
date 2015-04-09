@@ -7,7 +7,7 @@
                     damage.isCombat()) ?
                 new MagicEvent(
                     permanent,
-                    MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
+                    NEG_TARGET_CREATURE_OR_PLAYER,
                     new MagicDamageTargetPicker(2),
                     this,
                     "SN deals 2 damage to target creature or player\$ and PN draws a card."

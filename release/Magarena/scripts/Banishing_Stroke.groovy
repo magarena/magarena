@@ -1,4 +1,4 @@
-def choice = MagicTargetChoice.Negative("target artifact, creature, or enchantment");
+def choice = Negative("target artifact, creature, or enchantment");
 
 [
     new MagicSpellCardEvent() {

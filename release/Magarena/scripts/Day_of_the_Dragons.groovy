@@ -12,7 +12,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final Collection<MagicPermanent> targets =
-                    game.filterPermanents(event.getPlayer(),MagicTargetFilterFactory.CREATURE_YOU_CONTROL);
+                    game.filterPermanents(event.getPlayer(),CREATURE_YOU_CONTROL);
             for (final MagicPermanent target : targets) {
                 game.doAction(new MagicExileLinkAction(
                     event.getPermanent(),
@@ -37,7 +37,7 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final Collection<MagicPermanent> targets = event.getPlayer().filterPermanents(MagicTargetFilterFactory.DRAGON_YOU_CONTROL);
+            final Collection<MagicPermanent> targets = event.getPlayer().filterPermanents(DRAGON_YOU_CONTROL);
             for (final MagicPermanent target : targets) {
                 game.doAction(new MagicSacrificeAction(target));
             }

@@ -5,7 +5,7 @@
             return new MagicEvent(
                 permanent,
                 new MagicMayChoice(
-                    MagicTargetChoice.NegOther(
+                    NegOther(
                         "target nontoken creature",
                         permanent
                     )

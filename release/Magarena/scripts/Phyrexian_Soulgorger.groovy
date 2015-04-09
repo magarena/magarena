@@ -20,7 +20,7 @@
             if (event.isYes()) {
                 game.addEvent(new MagicRepeatedPermanentsEvent(
                     event.getSource(),
-                    MagicTargetChoice.SACRIFICE_CREATURE,
+                    SACRIFICE_CREATURE,
                     event.getPermanent().getCounters(MagicCounterType.Age),
                     MagicChainEventFactory.Sac
                 ));

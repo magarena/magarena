@@ -21,7 +21,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final int X = event.getPlayer().getHandSize();
-            final Collection<MagicPermanent> creatures = game.filterPermanents(MagicTargetFilterFactory.CREATURE)
+            final Collection<MagicPermanent> creatures = game.filterPermanents(CREATURE)
             for (final MagicPermanent it : creatures) {
                 game.doAction(new MagicChangeTurnPTAction(it, -X, -X));
             }

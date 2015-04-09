@@ -1,4 +1,4 @@
-def choice = MagicTargetChoice.Negative("target Spirit creature");
+def choice = Negative("target Spirit creature");
 
 [
     new MagicPermanentActivation(

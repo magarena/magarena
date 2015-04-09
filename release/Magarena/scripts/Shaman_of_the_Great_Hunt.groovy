@@ -42,7 +42,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new MagicDrawAction(
                 event.getPlayer(),
-                event.getPlayer().getNrOfPermanents(MagicTargetFilterFactory.CREATURE_POWER_4_OR_MORE)
+                event.getPlayer().getNrOfPermanents(CREATURE_POWER_4_OR_MORE)
             ));
         }
     }

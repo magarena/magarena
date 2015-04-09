@@ -14,7 +14,7 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.PosOther("target Minotaur creature", source),
+                PosOther("target Minotaur creature", source),
                 MagicPumpTargetPicker.create(),
                 this,
                 "Another target Minotaur creature\$ gets +1/+1 until end of turn."

@@ -13,7 +13,7 @@
         public MagicEvent getPermanentEvent(final MagicPermanent permanent,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 permanent,
-                MagicTargetChoice.TARGET_PERMANENT_YOU_OWN,
+                TARGET_PERMANENT_YOU_OWN,
                 this,
                 "PN puts target permanent he or she owns\$ on the bottom of his or her library."
             );

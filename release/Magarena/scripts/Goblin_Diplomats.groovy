@@ -22,7 +22,7 @@
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final Collection<MagicPermanent> targets = game.filterPermanents(MagicTargetFilterFactory.CREATURE);
+            final Collection<MagicPermanent> targets = game.filterPermanents(CREATURE);
             for (final MagicPermanent target : targets) {
                 game.doAction(new MagicGainAbilityAction(target,MagicAbility.AttacksEachTurnIfAble));
             }

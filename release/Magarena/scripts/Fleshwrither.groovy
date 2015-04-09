@@ -1,5 +1,5 @@
 def choice = new MagicTargetChoice(
-    new MagicCMCCardFilter(MagicTargetFilterFactory.CREATURE_CARD_FROM_LIBRARY,Operator.EQUAL,4),
+    new MagicCMCCardFilter(CREATURE_CARD_FROM_LIBRARY,Operator.EQUAL,4),
     "a creature card with converted mana cost 4 from your library"
 );
 

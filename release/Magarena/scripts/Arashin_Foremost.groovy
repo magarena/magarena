@@ -9,7 +9,7 @@ def Event = {
     final MagicPermanent permanent ->
     return new MagicEvent(
         permanent,
-        MagicTargetChoice.PosOther("target Warrior creature you control", permanent),
+        PosOther("target Warrior creature you control", permanent),
         MagicFirstStrikeTargetPicker.create(),
         EventAction,
         "Another target Warrior creature PN controls\$ gains double strike until end of turn."

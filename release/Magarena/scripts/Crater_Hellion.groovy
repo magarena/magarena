@@ -12,7 +12,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPermanent permanent = event.getPermanent();
             final Collection<MagicPermanent> creatures = game.filterPermanents(
-                MagicTargetFilterFactory.CREATURE.except(permanent)
+                CREATURE.except(permanent)
             );
             for (final MagicPermanent creature : creatures) {
                 game.doAction(new MagicDealDamageAction(permanent,creature,4));
