@@ -6,6 +6,6 @@ type=Creature
 subtype=Merfolk,Warrior
 cost={U}
 pt=1/1
+ability={T}: Target land becomes an Island until end of turn.
 timing=main
-requires_groovy_code
 oracle={T}: Target land becomes an Island until end of turn.

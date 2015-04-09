@@ -7,7 +7,7 @@ subtype=Squid,Beast
 cost={1}{U}{U}
 pt=1/3
 ability=Flying;\
-        SN can't be blocked by blue creatures.
+        SN can't be blocked by blue creatures.;\
+        {U}: Target creature becomes blue until end of turn.
 timing=main
-requires_groovy_code
 oracle=Flying. Fylamarid can't be blocked by blue creatures. {U}: Target creature becomes blue until end of turn.

@@ -6,7 +6,7 @@ type=Creature
 subtype=Griffin
 cost={3}{W}
 pt=2/2
-ability=Flying
+ability=Flying.;\
+        {W}: Target permanent becomes white until end of turn.
 timing=main
-requires_groovy_code
 oracle=Flying. {W}: Target permanent becomes white until end of turn.

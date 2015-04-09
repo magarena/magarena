@@ -6,6 +6,6 @@ type=Creature
 subtype=Kavu
 cost={2}{R}
 pt=2/2
+ability={T}: Target land becomes a Swamp until end of turn.
 timing=main
-requires_groovy_code
 oracle={T}: Target land becomes a Swamp until end of turn.

@@ -6,7 +6,7 @@ type=Creature
 subtype=Serpent
 cost={3}{U}
 pt=4/3
-ability=SN can't attack unless defending player controls an Island.
+ability=SN can't attack unless defending player controls an Island.;\
+        {U}, Sacrifice an Island: Target land becomes an Island until end of turn.
 timing=main
-requires_groovy_code
 oracle=Dreamwinder can't attack unless defending player controls an Island. {U}, Sacrifice an Island: Target land becomes an Island until end of turn.

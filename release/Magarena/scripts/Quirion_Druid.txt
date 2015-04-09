@@ -6,6 +6,6 @@ type=Creature
 subtype=Elf,Druid
 cost={2}{G}
 pt=1/2
+ability={G}, {T}: Target land becomes a 2/2 green creature that's still a land.
 timing=main
-requires_groovy_code
 oracle={G}, {T}: Target land becomes a 2/2 green creature that's still a land.

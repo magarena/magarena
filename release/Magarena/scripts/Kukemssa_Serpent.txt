@@ -6,7 +6,8 @@ type=Creature
 subtype=Serpent
 cost={3}{U}
 pt=4/3
-ability=SN can't attack unless defending player controls an Island.
+ability=SN can't attack unless defending player controls an Island.;\
+        {U}, Sacrifice an Island: Target land an opponent controls becomes an Island until end of turn.
 timing=main
-requires_groovy_code=Kukemssa Serpent;Sea Serpent
+requires_groovy_code=Sea Serpent
 oracle=Kukemssa Serpent can't attack unless defending player controls an Island. {U}, Sacrifice an Island: Target land an opponent controls becomes an Island until end of turn. When you control no Islands, sacrifice Kukemssa Serpent.

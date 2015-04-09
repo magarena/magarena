@@ -4,6 +4,6 @@ value=2.592
 rarity=C
 type=Instant
 cost={G}{U}
+effect=Target land becomes a 3/3 Elemental creature with flying until end of turn. It's still a land.
 timing=animate
-requires_groovy_code
 oracle=Target land becomes a 3/3 Elemental creature with flying until end of turn. It's still a land.

@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Wizard
 cost={1}{U}
 pt=0/2
+ability={T}: Target snow land becomes a 2/2 creature until end of turn. It's still a land.
 timing=main
-requires_groovy_code
 oracle={T}: Target snow land becomes a 2/2 creature until end of turn. It's still a land.
