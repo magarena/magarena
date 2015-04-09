@@ -284,6 +284,11 @@ public enum MagicConditionParser {
             return MagicCondition.DECLARE_ATTACKERS;
         }
     },
+    DuringEndOfCombat("during the end of combat step") {
+        public MagicCondition toCondition(final Matcher arg) {
+            return MagicCondition.END_OF_COMBAT_CONDITION;
+        }
+    },
     YourTurn("during your turn") {
         public MagicCondition toCondition(final Matcher arg) {
             return MagicCondition.YOUR_TURN_CONDITION;
