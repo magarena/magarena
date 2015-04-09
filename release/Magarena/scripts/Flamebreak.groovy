@@ -11,15 +11,14 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final Collection<MagicPermanent> targets = game.filterPermanents(CREATURE_WITHOUT_FLYING);
             final MagicSource source = event.getSource();
-            for (final MagicPermanent target : targets) {
-                final MagicDamage damage=new MagicDamage(source,target,3);
+            CREATURE_WITHOUT_FLYING.filter(game) each {
+                final MagicDamage damage=new MagicDamage(source,it,3);
                 damage.setNoRegeneration();
                 game.doAction(new MagicDealDamageAction(damage));
             }
-            for (final MagicPlayer player : game.getAPNAP()) {
-                game.doAction(new MagicDealDamageAction(source,player,3));
+            game.getAPNAP() each {
+                game.doAction(new MagicDealDamageAction(source,it,3));
             }
         }
     }

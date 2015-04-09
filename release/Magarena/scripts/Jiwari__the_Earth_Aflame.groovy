@@ -26,9 +26,8 @@ def choice = Negative("target creature without flying");
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final Collection<MagicPermanent> creatures = game.filterPermanents(CREATURE_WITHOUT_FLYING);
-            for (final MagicPermanent creature : creatures) {
-                game.doAction(new MagicDealDamageAction(event.getSource(),creature,event.getRefInt()));
+            CREATURE_WITHOUT_FLYING.filter(game) each {
+                game.doAction(new MagicDealDamageAction(event.getSource(),it,event.getRefInt()));
             }
         }
     },

@@ -37,15 +37,13 @@ def TEXT2 = "Until end of turn, lands you control become 2/2 creatures that are 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isKicked() || event.isMode(1)) {
-                final Collection<MagicPermanent> targets = event.getPlayer().filterPermanents(LAND_YOU_CONTROL); 
-                for (final MagicPermanent target : targets) {
-                    game.doAction(new MagicUntapAction(target));
+                LAND_YOU_CONTROL.filter(event.getPlayer()) each {
+                    game.doAction(new MagicUntapAction(it));
                 }         
             } 
             if (event.isKicked() || event.isMode(2)) {
-                final Collection<MagicPermanent> targets = event.getPlayer().filterPermanents(LAND_YOU_CONTROL); 
-                for (final MagicPermanent target : targets) {
-                    game.doAction(new MagicBecomesCreatureAction(target,PT,ST));
+                LAND_YOU_CONTROL.filter(event.getPlayer()) each {
+                    game.doAction(new MagicBecomesCreatureAction(it,PT,ST));
                 }         
             }
         }

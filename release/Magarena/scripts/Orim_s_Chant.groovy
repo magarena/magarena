@@ -15,9 +15,8 @@
             event.processTargetPlayer(game, {
                 game.doAction(new MagicChangePlayerStateAction(it, MagicPlayerState.CantCastSpells));
                 if (event.isKicked()) {
-                    final Collection<MagicPermanent> creatures = game.filterPermanents(CREATURE);
-                    for (final MagicPermanent creature : creatures) {
-                        game.doAction(new MagicGainAbilityAction(creature, MagicAbility.CannotAttack));
+                    CREATURE.filter(game) each {
+                        game.doAction(new MagicGainAbilityAction(it, MagicAbility.CannotAttack));
                     }
                 }
             });

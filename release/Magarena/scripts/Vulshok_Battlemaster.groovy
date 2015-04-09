@@ -10,9 +10,8 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final Collection<MagicPermanent> targets = game.filterPermanents(EQUIPMENT);
-            for (final MagicPermanent target : targets) {
-                game.doAction(new MagicAttachAction(target,event.getPermanent()));
+            EQUIPMENT.filter(game) each {
+                game.doAction(new MagicAttachAction(it,event.getPermanent()));
             }
         }
     }

@@ -44,12 +44,10 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final Collection<MagicPermanent> targets=
-                game.filterPermanents(event.getPlayer(),CREATURE);
-            for (final MagicPermanent perm : targets) {
-                game.doAction(new MagicGainControlAction(event.getPlayer(),perm,MagicStatic.UntilEOT));
-                game.doAction(new MagicUntapAction(perm));
-                game.doAction(new MagicGainAbilityAction(perm,MagicAbility.Haste));
+            CREATURE.filter(game) each {
+                game.doAction(new MagicGainControlAction(event.getPlayer(),it,MagicStatic.UntilEOT));
+                game.doAction(new MagicUntapAction(it));
+                game.doAction(new MagicGainAbilityAction(it,MagicAbility.Haste));
             }
         }
     }

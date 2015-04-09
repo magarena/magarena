@@ -10,16 +10,12 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final Collection<MagicPermanent> battlefield=
-                game.filterPermanents(event.getPlayer(),CREATURE);
-            final List<MagicCard> graveyard=
-                game.filterCards(event.getPlayer(),CREATURE_CARD_FROM_ALL_GRAVEYARDS);
-            for (final MagicPermanent target : battlefield) {
-                game.doAction(new MagicRemoveFromPlayAction(target,MagicLocationType.OwnersHand));
+            CREATURE.filter(game) each {
+                game.doAction(new MagicRemoveFromPlayAction(it,MagicLocationType.OwnersHand));
             }
-            for (final MagicCard card : graveyard) {
-                game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard));
-                game.doAction(new MagicMoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.OwnersHand));
+            CREATURE_CARD_FROM_ALL_GRAVEYARDS.filter(game) each {
+                game.doAction(new MagicRemoveCardAction(it,MagicLocationType.Graveyard));
+                game.doAction(new MagicMoveCardAction(it,MagicLocationType.Graveyard,MagicLocationType.OwnersHand));
             }
         }
     }

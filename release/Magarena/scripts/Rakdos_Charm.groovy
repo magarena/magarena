@@ -27,9 +27,8 @@ def EFFECT2 = MagicRuleEventAction.create("Destroy target artifact.");
                     }
                 });
             } else if (event.isMode(3)) {
-                final Collection<MagicPermanent> creatures = game.filterPermanents(CREATURE);
-                for (final MagicPermanent creature : creatures) {
-                    game.doAction(new MagicDealDamageAction(creature,creature.getController(),1));
+                CREATURE.filter(game) each {
+                    game.doAction(new MagicDealDamageAction(it,it.getController(),1));
                 }
             } else {
                 event.executeModalEvent(game, EFFECT2, EFFECT2, EFFECT2);

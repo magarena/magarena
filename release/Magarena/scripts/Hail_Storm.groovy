@@ -12,16 +12,12 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
             final MagicSource source = event.getSource();
-            final Collection<MagicPermanent> targetsAttacking =
-                game.filterPermanents(player,ATTACKING_CREATURE);
-            final Collection<MagicPermanent> targetsCreatures =
-                game.filterPermanents(player,CREATURE_YOU_CONTROL);
-            for (final MagicPermanent target : targetsAttacking) {
-                game.doAction(new MagicDealDamageAction(source,target,2));
+            ATTACKING_CREATURE.filter(game) each {
+                game.doAction(new MagicDealDamageAction(source,it,2));
             }
             game.doAction(new MagicDealDamageAction(source,player,1));
-            for (final MagicPermanent target : targetsCreatures) {
-                game.doAction(new MagicDealDamageAction(source,target,1));
+            CREATURE_YOU_CONTROL.filter(player) each {
+                game.doAction(new MagicDealDamageAction(source,it,1));
             }
         }
     }
