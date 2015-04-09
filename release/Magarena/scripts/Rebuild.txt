@@ -5,6 +5,6 @@ rarity=U
 type=Instant
 cost={2}{U}
 ability=cycling {2}
+effect=Return all artifacts to their owners' hands.
 timing=removal
-requires_groovy_code
 oracle=Return all artifacts to their owners' hands. Cycling {2}

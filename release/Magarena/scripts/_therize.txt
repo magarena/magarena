@@ -4,6 +4,6 @@ value=3.752
 rarity=U
 type=Instant
 cost={3}{U}
+effect=Return all attacking creatures to their owner's hand.
 timing=removal
-requires_groovy_code
 oracle=Return all attacking creatures to their owner's hand.

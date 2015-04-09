@@ -5,6 +5,6 @@ removal=1
 rarity=R
 type=Instant
 cost={3}{U}{U}
+effect=Return all creatures to their owners' hands.
 timing=removal
-requires_groovy_code
 oracle=Return all creatures to their owners' hands.

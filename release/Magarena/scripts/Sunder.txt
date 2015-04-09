@@ -4,6 +4,6 @@ value=4.272
 rarity=R
 type=Instant
 cost={3}{U}{U}
+effect=Return all lands to their owners' hands.
 timing=removal
-requires_groovy_code
 oracle=Return all lands to their owners' hands.

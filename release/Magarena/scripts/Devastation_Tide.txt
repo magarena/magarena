@@ -5,7 +5,7 @@ removal=2
 rarity=R
 type=Sorcery
 cost={3}{U}{U}
-timing=removal
 ability=miracle {1}{U}
-requires_groovy_code
+effect=Return all nonland permanents to their owners' hands.
+timing=removal
 oracle=Return all nonland permanents to their owners' hands. Miracle {1}{U}

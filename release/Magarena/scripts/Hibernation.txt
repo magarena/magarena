@@ -4,6 +4,6 @@ value=3.786
 rarity=U
 type=Instant
 cost={2}{U}
+effect=Return all green permanents to their owners' hands.
 timing=removal
-requires_groovy_code
 oracle=Return all green permanents to their owners' hands.

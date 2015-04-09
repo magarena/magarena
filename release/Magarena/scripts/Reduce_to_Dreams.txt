@@ -4,6 +4,6 @@ value=3.317
 rarity=R
 type=Sorcery
 cost={3}{U}{U}
+effect=Return all artifacts and enchantments to their owners' hands.
 timing=main
-requires_groovy_code
 oracle=Return all artifacts and enchantments to their owners' hands.
