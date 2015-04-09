@@ -3089,30 +3089,21 @@ public enum MagicRuleEventAction {
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
-            final String[] ptStr = matcher.group("pt") == null ? null : 
-                matcher.group("pt").split("/");
-            final int[] pt = ptStr == null ? null :
-                new int[]{Integer.parseInt(ptStr[0]), Integer.parseInt(ptStr[1])};
-
-            final List<String> tokens = new LinkedList<>(Arrays.asList(matcher.group("all").split(", | and | ")));
-            final Set<MagicColor> colors = MagicColor.prefixColors(tokens);
-            final Set<MagicSubType> subTypes = MagicSubType.prefixSubTypes(tokens);
-            final Set<MagicType> types = MagicType.prefixTypes(tokens);
-
-            if (tokens.isEmpty() == false) {
-                throw new RuntimeException("unmatched becomes specification " + tokens);
-            }
-
-            final MagicAbilityList abilityList = matcher.group("ability") == null ? null :
-                MagicAbility.getAbilityList(matcher.group("ability"));
-
-            final boolean duration = matcher.group("duration") != null;
-            final boolean additionTo = matcher.group("additionTo") != null;
+            final PermanentSpecParser spec = new PermanentSpecParser(matcher);
 
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    game.doAction(new MagicBecomesAction(event.getPermanent(),pt,colors,subTypes,types,abilityList,duration,additionTo));
+                    game.doAction(new MagicBecomesAction(
+                        event.getPermanent(),
+                        spec.pt,
+                        spec.colors,
+                        spec.subTypes,
+                        spec.types,
+                        spec.abilities,
+                        spec.duration,
+                        spec.additionTo
+                    ));
                 }
             };   
         }
@@ -3135,6 +3126,47 @@ public enum MagicRuleEventAction {
         @Override
         public MagicCondition[] getConditions(final Matcher matcher) {
             return SelfBecomes.getConditions(matcher);
+        }
+    },
+    ChosenBecomesAlt(
+        "(?<duration>until end of turn, )(?<choice>[^\\.]*) becomes( a| an)?( )?(?<pt>[0-9]+/[0-9]+)? (?<all>.*?)( with (?<ability>.*?))?(?<additionTo>((\\.)? It's| that's) still.*)?\\.",
+        MagicTiming.Animate,
+        "Animate"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            return ChosenBecomes.getAction(matcher);
+        }
+    },
+    ChosenBecomes(
+        "(?<choice>[^\\.]*) become(s)?( a| an)?( )?(?<pt>[0-9]+/[0-9]+)? (?<all>.*?)( with (?<ability>.*?))?(?<duration> until end of turn)?(?<additionTo>(\\. It's| that's) still.*)?\\.",
+        MagicTiming.Animate,
+        "Animate"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            final PermanentSpecParser spec = new PermanentSpecParser(matcher);
+            
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    event.processTargetPermanent(game,new MagicPermanentAction() {
+                        public void doAction(final MagicPermanent it) {
+                            game.doAction(new MagicBecomesAction(
+                                it,
+                                spec.pt,
+                                spec.colors,
+                                spec.subTypes,
+                                spec.types,
+                                spec.abilities,
+                                spec.duration,
+                                spec.additionTo
+                            ));
+                        }
+                    });
+                }
+            };   
+
         }
     },
     ;
