@@ -5,6 +5,6 @@ rarity=R
 type=Instant
 cost={3}{U}{U}
 timing=counter
-ability=alt cost Pay 1 life, Exile a blue card from your hand named Exile
+ability=You may pay 1 life and exile a blue card from your hand rather than pay SN's mana cost.
 effect=Counter target spell.
 oracle=You may pay 1 life and exile a blue card from your hand rather than pay Force of Will's mana cost. Counter target spell.

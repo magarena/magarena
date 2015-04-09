@@ -6,7 +6,7 @@ type=Creature
 subtype=Elf,Warrior
 cost={5}{G}{G}
 pt=1+*/1+*
-ability=alt cost Exile two green cards from your hand named Alt;\
+ability=You may exile two green cards from your hand rather than pay SN's mana cost.;\
         SN's power and toughness are each equal to 1 plus the number of lands you control.
 timing=main
 oracle=You may exile two green cards from your hand rather than pay Allosaurus Rider's mana cost. Allosaurus Rider's power and toughness are each equal to 1 plus the number of lands you control.

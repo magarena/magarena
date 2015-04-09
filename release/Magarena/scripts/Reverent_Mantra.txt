@@ -4,7 +4,7 @@ value=3.750
 rarity=R
 type=Instant
 cost={3}{W}
-ability=alt cost Exile a white card from your hand named Exile
+ability=You may exile a white card from your hand rather than pay SN's mana cost.
 timing=pump
 requires_groovy_code
 oracle=You may exile a white card from your hand rather than pay Reverent Mantra's mana cost. Choose a color. All creatures gain protection from the chosen color until end of turn.
