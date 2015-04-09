@@ -786,5 +786,5 @@ parse_new.txt:
 images.url: missing_images
 	cat $^ | parallel -k -q curl -G http://magiccards.info/query --data-urlencode 'q=!{}' | grep -o "http.*.jpg" > $@
 
-%_usage:
-	for i in `grep "class [A-Za-z]*" -r src/magic/model/$* -ho | sed 's/class //'`; do echo -en "$$i\t"; grep $$i -lr src release/Magarena/scripts | wc -l; done > $@
+model_usage:
+	for i in `grep "class [A-Za-z]*" -hro src/magic/model | sed 's/class //'`; do echo -en "$$i\t"; grep $$i -lr src release/Magarena/scripts | wc -l; done > $@
