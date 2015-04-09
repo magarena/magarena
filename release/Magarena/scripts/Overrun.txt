@@ -4,6 +4,6 @@ value=4.171
 rarity=U
 type=Sorcery
 cost={2}{G}{G}{G}
+effect=Creatures you control get +3/+3 and gain trample until end of turn.
 timing=pump
-requires_groovy_code
 oracle=Creatures you control get +3/+3 and gain trample until end of turn.
