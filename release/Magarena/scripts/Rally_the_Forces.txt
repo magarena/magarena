@@ -4,6 +4,6 @@ value=2.846
 rarity=C
 type=Instant
 cost={2}{R}
+effect=Attacking creatures get +1/+0 and gain first strike until end of turn.
 timing=attack
-requires_groovy_code
 oracle=Attacking creatures get +1/+0 and gain first strike until end of turn.
