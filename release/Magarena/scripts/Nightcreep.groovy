@@ -33,17 +33,12 @@ def ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final Collection<MagicPermanent> creatures = game.filterPermanents(CREATURE);
-            for (final MagicPermanent creature : creatures) {
-                game.doAction(new MagicBecomesCreatureAction(
-                    creature,
-                    Color
-                ));
+            CREATURE.filter(game) each {
+                game.doAction(new MagicAddStaticAction(it, Color));
             }
-            final Collection<MagicPermanent> lands = game.filterPermanents(LAND);
-            for (final MagicPermanent land : lands) {
-                game.doAction(new MagicAddStaticAction(land, AB));
-                game.doAction(new MagicAddStaticAction(land, ST));
+            LAND.filter(game) each {
+                game.doAction(new MagicAddStaticAction(it, AB));
+                game.doAction(new MagicAddStaticAction(it, ST));
             }
         }
     }

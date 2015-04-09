@@ -16,9 +16,8 @@
             event.processTargetPlayer(game, {
                 game.doAction(new MagicDealDamageAction(event.getSource(),it,4));
                 if (MagicCondition.METALCRAFT_CONDITION.accept(event.getSource())) {
-                    final Collection<MagicPermanent> targets =
-                            game.filterPermanents(it,CREATURE_YOU_CONTROL);
-                    for (final MagicPermanent target : targets) {
+                    CREATURE_YOU_CONTROL.filter(it) each {
+                        final MagicPermanent target ->
                         game.doAction(new MagicGainAbilityAction(
                             target,
                             MagicAbility.CannotBlock
