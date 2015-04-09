@@ -1,9 +1,7 @@
 def choice = new MagicTargetChoice("a Fungus card from a graveyard");
 
 [
-    new MagicStatic(
-        MagicLayer.ModPT,
-        CREATURE) {
+    new MagicStatic(MagicLayer.ModPT, CREATURE) {
         @Override
         public void modPowerToughness(final MagicPermanent source,final MagicPermanent permanent,final MagicPowerToughness pt) {
             final int amount = permanent.getCounters(MagicCounterType.Spore);
@@ -39,9 +37,8 @@ def choice = new MagicTargetChoice("a Fungus card from a graveyard");
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final Collection<MagicPermanent> fungi = game.filterPermanents(FUNGUS);
-            for (final MagicPermanent fungus:fungi) {
-                game.doAction(new MagicChangeCountersAction(fungus,MagicCounterType.Spore,1));
+            FUNGUS.filter(game) each {
+                game.doAction(new MagicChangeCountersAction(it,MagicCounterType.Spore,1));
             }
         }
     }
