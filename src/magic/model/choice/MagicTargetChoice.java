@@ -323,18 +323,6 @@ public class MagicTargetChoice extends MagicChoice {
     public static final MagicTargetChoice A_GREEN_CREATURE_CARD_FROM_HAND = 
         new MagicTargetChoice("a green creature card from your hand");
     
-    public static final MagicTargetChoice A_BLUE_OR_RED_CREATURE_CARD_FROM_HAND = 
-        new MagicTargetChoice("a blue or red creature card from your hand");
-
-    public static final MagicTargetChoice A_MULTICOLORED_CREATURE_CARD_FROM_HAND = 
-        new MagicTargetChoice("a multicolored creature card from your hand");
-
-    public static final MagicTargetChoice A_BASIC_LAND_CARD_FROM_HAND = 
-        new MagicTargetChoice("a basic land card from your hand");
-    
-    public static final MagicTargetChoice A_LAND_CARD_FROM_LIBRARY = 
-        new MagicTargetChoice("a land card from your library");
-    
     public static final MagicTargetChoice A_CARD_FROM_LIBRARY = 
         new MagicTargetChoice("a card from your library");
     

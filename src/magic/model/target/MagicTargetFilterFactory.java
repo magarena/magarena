@@ -761,8 +761,6 @@ public class MagicTargetFilterFactory {
     
     public static final MagicPermanentFilterImpl LEGENDARY_SNAKE_YOU_CONTROL = MagicTargetFilterFactory.creatureAnd(MagicType.Legendary, MagicSubType.Snake, Control.You);
     
-    public static final MagicPermanentFilterImpl LEGENDARY_PERMANENT = MagicTargetFilterFactory.permanent(MagicType.Legendary, Control.Any);
-
     public static final MagicPermanentFilterImpl INSECT_RAT_SPIDER_OR_SQUIRREL = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
             return target.hasSubType(MagicSubType.Insect) ||
@@ -1589,8 +1587,6 @@ public class MagicTargetFilterFactory {
         }
     };
 
-    public static final MagicCardFilterImpl BLUE_CARD_FROM_HAND = card(MagicColor.Blue).from(MagicTargetType.Hand);
-
     public static final MagicCardFilterImpl CREATURE_CARD_FROM_HAND = card(MagicType.Creature).from(MagicTargetType.Hand);
 
     public static final MagicCardFilterImpl BLUE_OR_RED_CREATURE_CARD_FROM_HAND = card(MagicColor.Blue).or(MagicColor.Red).and(MagicType.Creature).from(MagicTargetType.Hand);
@@ -1739,12 +1735,8 @@ public class MagicTargetFilterFactory {
     };
 
     public static final MagicPermanentFilterImpl LEGENDARY_LAND = MagicTargetFilterFactory.permanentAnd(MagicType.Legendary, MagicType.Land, Control.Any);
-
-    public static final MagicCardFilterImpl WHITE_CARD_FROM_HAND = card(MagicColor.White).from(MagicTargetType.Hand);
     
     public static final MagicCardFilterImpl GREEN_CARD_FROM_HAND = card(MagicColor.Green).from(MagicTargetType.Hand);
-    
-    public static final MagicCardFilterImpl RED_CARD_FROM_HAND = card(MagicColor.Red).from(MagicTargetType.Hand);
     
     public static final MagicCardFilterImpl permanentCardMaxCMC(final MagicSubType subtype, final MagicTargetType from, final int cmc) {
         return new MagicCardFilterImpl() {
