@@ -44,6 +44,7 @@ import magic.model.trigger.MagicTriggerType;
 import magic.model.trigger.MagicWhenOtherComesIntoPlayTrigger;
 import magic.exception.GameException;
 
+import java.util.Arrays;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
@@ -834,8 +835,8 @@ public class MagicGame {
      * <p>
      * @see <a href="http://www.slightlymagic.net/forum/viewtopic.php?f=115&p=155684">APNAP forum topic</a>
      */
-    public MagicPlayer[] getAPNAP() {
-        return new MagicPlayer[]{turnPlayer, turnPlayer.getOpponent()};
+    public List<MagicPlayer> getAPNAP() {
+        return Arrays.asList(turnPlayer, turnPlayer.getOpponent());
     }
 
     public MagicPlayer getPlayer(final int index) {
