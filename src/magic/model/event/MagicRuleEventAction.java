@@ -2089,31 +2089,31 @@ public enum MagicRuleEventAction {
         }
     },
     SearchMultiLibraryToHand(
-            "search your library for up to (?<amount>[a-z]+) (?<card>[^\\.]*), reveal (them|those cards), (and )?put them into your hand(.|,) (If you do, |(t|T)hen )shuffle your library\\.",
-            MagicTiming.Draw,
-            "Search"
-        ) {
-            @Override
-            public MagicEventAction getAction(final Matcher matcher) {
-                final MagicTargetFilter<MagicCard> filter = MagicTargetFilterFactory.multipleCards(matcher.group("card") + " from your library");
-                final int amount = EnglishToInt.convert(matcher.group("amount"));
-                return new MagicEventAction () {
-                    @Override
-                    public void executeEvent(final MagicGame game, final MagicEvent event) {
-                        game.addEvent(new MagicSearchToLocationEvent(
-                            event,
-                            new MagicFromCardFilterChoice(
-                                filter,
-                                amount, 
-                                true, 
-                                "to put into your hand"
-                            ),
-                            MagicLocationType.OwnersHand
-                        ));      
-                    }
-                };
-            }
-        },
+        "search your library for up to (?<amount>[a-z]+) (?<card>[^\\.]*), reveal (them|those cards), (and )?put them into your hand(.|,) (If you do, |(t|T)hen )shuffle your library\\.",
+        MagicTiming.Draw,
+        "Search"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            final MagicTargetFilter<MagicCard> filter = MagicTargetFilterFactory.multipleCards(matcher.group("card") + " from your library");
+            final int amount = EnglishToInt.convert(matcher.group("amount"));
+            return new MagicEventAction () {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    game.addEvent(new MagicSearchToLocationEvent(
+                        event,
+                        new MagicFromCardFilterChoice(
+                            filter,
+                            amount, 
+                            true, 
+                            "to put into your hand"
+                        ),
+                        MagicLocationType.OwnersHand
+                    ));      
+                }
+            };
+        }
+    },
     SearchLibraryToTopLibrary(
         "search your library for (?<card>[^\\.]*)(,| and) reveal (it(,|.)|that card.)( then)? (S|s)huffle your library(, then| and) put (that|the) card on top of it\\.",
         MagicTiming.Draw,
