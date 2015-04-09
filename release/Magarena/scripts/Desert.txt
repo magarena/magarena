@@ -4,7 +4,7 @@ value=3.943
 rarity=C
 type=Land
 subtype=Desert
-ability={T}: Add {1} to your mana pool.
+ability={T}: Add {1} to your mana pool.;\
+        {T}: SN deals 1 damage to target attacking creature. Activate this ability only during the end of combat step.
 timing=land
-requires_groovy_code
 oracle={T}: Add {1} to your mana pool. {T}: Desert deals 1 damage to target attacking creature. Activate this ability only during the end of combat step.

@@ -7,7 +7,7 @@ subtype=Dryad
 cost={3}{G}
 pt=1/3
 ability=Flash;\
-        Forestwalk
+        Forestwalk;\
+        alt cost Exile a green card from your hand named Exile
 timing=flash
-requires_groovy_code
 oracle=Flash. Forestwalk. You may exile a green card from your hand rather than pay Vine Dryad's mana cost.
