@@ -8,7 +8,7 @@
             );
             final int size = source.getGame().filterPermanents(
                 source.getController(),
-                new MagicOtherPermanentTargetFilter(targetFilter,source)
+                targetFilter.except(source)
             ).size();
             pt.add(size,size);
         }

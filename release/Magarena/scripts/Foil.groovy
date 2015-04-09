@@ -24,10 +24,7 @@ def AN_ISLAND_CARD_FROM_HAND = new MagicTargetChoice(
         @Override
         public Iterable<MagicEvent> getCostEvent(final MagicCard source) {
             final MagicTargetChoice ANOTHER_CARD_FROM_HAND = new MagicTargetChoice(
-                new MagicOtherCardTargetFilter(
-                    MagicTargetFilterFactory.CARD_FROM_HAND, 
-                    source
-                ),
+                MagicTargetFilterFactory.CARD_FROM_HAND.except(source), 
                 MagicTargetHint.None,
                 "another card from your hand"
             );

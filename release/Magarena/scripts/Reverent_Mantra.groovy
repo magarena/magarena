@@ -7,10 +7,7 @@
         @Override
         public Iterable<MagicEvent> getCostEvent(final MagicCard source) {
             final MagicTargetChoice targetChoice = new MagicTargetChoice(
-                new MagicOtherCardTargetFilter(
-                    MagicTargetFilterFactory.WHITE_CARD_FROM_HAND, 
-                    source
-                ),
+                MagicTargetFilterFactory.WHITE_CARD_FROM_HAND.except(source),
                 MagicTargetHint.None,
                 "a white card from your hand"
             );

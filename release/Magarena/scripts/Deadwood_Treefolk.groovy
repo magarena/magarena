@@ -9,10 +9,7 @@ def action = {
 def event = {
     final MagicPermanent permanent ->
     final MagicTargetChoice choice = new MagicTargetChoice(
-        new MagicOtherCardTargetFilter(
-            MagicTargetFilterFactory.CREATURE_CARD_FROM_GRAVEYARD,
-            permanent.getCard()
-        ),
+        MagicTargetFilterFactory.CREATURE_CARD_FROM_GRAVEYARD.except(permanent.getCard()),
         MagicTargetHint.None,
         "another target creature card from your graveyard"
     );
