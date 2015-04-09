@@ -21,9 +21,10 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicSource permanent = event.getPermanent();
-            final Collection<MagicPermanent> creatures = game.filterPermanents(CREATURE_WITHOUT_FLYING.except(permanent));
-            for (final MagicPermanent creature : creatures) {
-                    game.doAction(new MagicDealDamageAction(permanent, creature, 1));
+            CREATURE_WITHOUT_FLYING
+            .except(permanent)
+            .filter(game) each {
+                game.doAction(new MagicDealDamageAction(permanent, it, 1));
             }
         }
     }

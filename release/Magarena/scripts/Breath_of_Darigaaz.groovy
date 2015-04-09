@@ -13,11 +13,11 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final int amount = event.isKicked() ? 4 : 1;
             final MagicSource source = event.getSource();
-            game.filterPermanents(event.getPlayer(), CREATURE_WITHOUT_FLYING) each {
+            CREATURE_WITHOUT_FLYING.filter(game) each {
                 game.doAction(new MagicDealDamageAction(source, it, amount));
             }
-            for (final MagicPlayer player : game.getAPNAP()) {
-                game.doAction(new MagicDealDamageAction(source, player, amount));
+            game.getAPNAP() each {
+                game.doAction(new MagicDealDamageAction(source, it, amount));
             }
         }
     }

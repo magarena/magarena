@@ -10,12 +10,10 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final Collection<MagicPermanent> targets = game.filterPermanents(
-                event.getPlayer(),
-                CREATURE_YOU_CONTROL.except(event.getPermanent())
-            );
-            for (final MagicPermanent target : targets) {
-                game.doAction(new MagicUntapAction(target));
+            CREATURE_YOU_CONTROL
+            .except(event.getPermanent())
+            .filter(event.getPlayer()) each {
+                game.doAction(new MagicUntapAction(it));
             }
         }
     }

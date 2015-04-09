@@ -15,14 +15,11 @@
             game.doAction(new MagicAddTurnTriggerAction(
                 MagicIfDamageWouldBeDealtTrigger.PreventCombatDamage
             ));
-            final MagicPlayer player = event.getPlayer();
             if (MagicCondition.FATEFUL_HOUR.accept(event.getSource())) {
-                final Collection<MagicPermanent> targets =
-                    game.filterPermanents(player,ATTACKING_CREATURE);
-                for (final MagicPermanent perm : targets) {
-                    game.doAction(new MagicTapAction(perm));
+                ATTACKING_CREATURE.filter(game) each {
+                    game.doAction(new MagicTapAction(it));
                     game.doAction(MagicChangeStateAction.Set(
-                        perm,
+                        it,
                         MagicPermanentState.DoesNotUntapDuringNext
                     ));
                 }
