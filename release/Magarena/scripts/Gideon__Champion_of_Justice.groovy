@@ -85,12 +85,8 @@ def PreventAllDamage = new MagicIfDamageWouldBeDealtTrigger(MagicTrigger.PREVENT
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final Collection<MagicPermanent> targets = game.filterPermanents(
-                event.getPlayer(),
-                PERMANENT.except(event.getPermanent())
-            );
-            for (final MagicPermanent target : targets) {
-                game.doAction(new MagicRemoveFromPlayAction(target, MagicLocationType.Exile));
+            PERMANENT.except(event.getPermanent()).filter(game) each {
+                game.doAction(new MagicRemoveFromPlayAction(it, MagicLocationType.Exile));
             }
         }
     }

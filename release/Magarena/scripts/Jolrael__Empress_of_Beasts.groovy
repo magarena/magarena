@@ -37,9 +37,9 @@ def ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
-            final Collection<MagicPermanent> targets = game.filterPermanents(it,LAND_YOU_CONTROL);
-            for (final MagicPermanent target : targets) {
-                game.doAction(new MagicBecomesCreatureAction(target,PT,ST));
+                LAND_YOU_CONTROL.filter(it) each {
+                    final MagicPermanent target ->
+                    game.doAction(new MagicBecomesCreatureAction(target,PT,ST));
                 }
             });
         }

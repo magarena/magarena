@@ -35,8 +35,8 @@ def A_CARD_NAMED_ORISS = new MagicTargetChoice(
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
                 game.doAction(new MagicChangePlayerStateAction(it, MagicPlayerState.CantCastSpells));
-                final Collection<MagicPermanent> creatures = it.filterPermanents(CREATURE_YOU_CONTROL);
-                for (final MagicPermanent creature : creatures) {
+                CREATURE_YOU_CONTROL.filter(it) each {
+                    final MagicPermanent creature ->
                     game.doAction(new MagicGainAbilityAction(creature, MagicAbility.CannotAttack));
                 }
             });

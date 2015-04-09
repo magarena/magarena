@@ -34,10 +34,8 @@ def TY = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final Collection<MagicPermanent> forests=
-                game.filterPermanents(event.getPlayer(),FOREST_YOU_CONTROL);
-            for (final MagicPermanent forest : forests) {
-                game.doAction(new MagicBecomesCreatureAction(forest,PT,TY));
+            FOREST_YOU_CONTROL.filter(event.getPlayer()) each {
+                game.doAction(new MagicBecomesCreatureAction(it,PT,TY));
             }
         }
     }
