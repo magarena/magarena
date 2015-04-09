@@ -1874,6 +1874,22 @@ public enum MagicRuleEventAction {
             }
         }
     ),
+    RecoverSelf2(
+        "return sn from your graveyard to your hand\\.",
+        MagicTiming.Draw,
+        "Return",
+        new MagicEventAction() {
+            @Override
+            public void executeEvent(final MagicGame game, final MagicEvent event) {
+                final MagicCard card = event.getCard();
+                final MagicRemoveCardAction remove = new MagicRemoveCardAction(card,MagicLocationType.Graveyard);
+                game.doAction(remove);
+                if (remove.isValid()) {
+                    game.doAction(new MagicMoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.OwnersHand));
+                }
+            }
+        }
+    ),
     RecoverChosen(
         "return (?<choice>[^\\.]*from (your|a) graveyard) to (your|its owner's) hand\\.",
         MagicTargetHint.Positive,

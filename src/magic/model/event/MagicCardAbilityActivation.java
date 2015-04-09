@@ -4,6 +4,8 @@ import magic.model.MagicCard;
 import magic.model.MagicGame;
 import magic.model.MagicPayedCost;
 import magic.model.MagicSource;
+import magic.model.MagicCardDefinition;
+import magic.model.MagicLocationType;
 import magic.model.ARG;
 import magic.model.action.MagicPutItemOnStackAction;
 import magic.model.choice.MagicChoice;
@@ -55,7 +57,7 @@ public abstract class MagicCardAbilityActivation extends MagicCardActivation {
         return getCardEvent(source, MagicPayedCost.NO_COST).getChoice();
     }
     
-    public static final MagicCardAbilityActivation create(final String act) {
+    public static final MagicCardAbilityActivation create(final String act, final MagicLocationType loc) {
         final String[] token = act.split(ARG.COLON, 2);
         
         // build the actual costs
@@ -98,6 +100,17 @@ public abstract class MagicCardAbilityActivation extends MagicCardActivation {
             @Override
             public MagicEvent getCardEvent(final MagicCard source, final MagicPayedCost payedCost) {
                 return sourceEvent.getEvent(source);
+            }
+            
+            @Override
+            public void change(final MagicCardDefinition cdef) {
+                if (loc == MagicLocationType.OwnersHand) {
+                    cdef.addCardAct(this);
+                } else if (loc == MagicLocationType.Graveyard) {
+                    cdef.addGraveyardAct(this);
+                } else {
+                    throw new RuntimeException("unknown location: \"" + loc + "\"");
+                }
             }
         };
     }

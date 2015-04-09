@@ -893,13 +893,12 @@ public enum MagicAbility {
     },
     CardAbility(".*Discard SN:.*", 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(MagicCardAbilityActivation.create(arg.group()));
+            card.add(MagicCardAbilityActivation.create(arg.group(), MagicLocationType.OwnersHand));
         }
     },
-    RecoverSelf("(?<cost>[^\"]+): Return SN from your graveyard to your hand\\.", 10) {
+    RecoverSelf(".*: Return SN from your graveyard .*", 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            final List<MagicMatchedCostEvent> matchedCostEvents = MagicRegularCostEvent.build(ARG.cost(arg));
-            card.add(new MagicRecoverSelfActivation(matchedCostEvents));
+            card.add(MagicCardAbilityActivation.create(arg.group(), MagicLocationType.Graveyard));
         }
     },
     ActivatedAbility("[^\"]+:(?! Add)" + ARG.ANY, 10) {
