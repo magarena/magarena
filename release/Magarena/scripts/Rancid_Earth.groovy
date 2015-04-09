@@ -15,12 +15,11 @@
             event.processTargetPermanent(game, {
                 game.doAction(new MagicDestroyAction(it));
                 if (MagicCondition.THRESHOLD_CONDITION.accept(event.getSource())) {
-                    final Collection<MagicPermanent> targets = game.filterPermanents(CREATURE);
-                    for (final MagicPermanent target : targets) {
-                        game.doAction(new MagicDealDamageAction(event.getSource(),target,1));
+                    CREATURE.filter(game) each {
+                        game.doAction(new MagicDealDamageAction(event.getSource(),it,1));
                     }
-                    for (final MagicPlayer player : game.getAPNAP()) {
-                        game.doAction(new MagicDealDamageAction(event.getSource(),player,1));
+                    game.getAPNAP() each {
+                        game.doAction(new MagicDealDamageAction(event.getSource(),it,1));
                     }
                 }
             });

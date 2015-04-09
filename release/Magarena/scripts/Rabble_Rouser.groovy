@@ -21,15 +21,8 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPermanent permanent = event.getPermanent();
-            final Collection<MagicPermanent> targets = game.filterPermanents(
-                    permanent.getController(),
-                    ATTACKING_CREATURE);
-            for (final MagicPermanent target : targets) {
-                game.doAction(new MagicChangeTurnPTAction(
-                    target,
-                    permanent.getPower(),
-                    0
-                ));
+            ATTACKING_CREATURE.filter(game) each {
+                game.doAction(new MagicChangeTurnPTAction(it, permanent.getPower(), 0));
             }
         }
     }

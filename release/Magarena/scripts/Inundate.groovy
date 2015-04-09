@@ -15,10 +15,8 @@ def NONBLUE_CREATURE=new MagicPermanentFilterImpl() {
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final Collection<MagicPermanent> targets=
-                game.filterPermanents(event.getPlayer(),NONBLUE_CREATURE);
-            for (final MagicPermanent target : targets) {
-                game.doAction(new MagicRemoveFromPlayAction(target,MagicLocationType.OwnersHand));
+            NONBLUE_CREATURE.filter(game) each {
+                game.doAction(new MagicRemoveFromPlayAction(it,MagicLocationType.OwnersHand));
             }
         }
     }

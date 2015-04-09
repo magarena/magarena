@@ -19,14 +19,14 @@ def NONRED_CREATURES = new MagicPermanentFilterImpl() {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isKicked()) {
-            final Collection<MagicPermanent> targets = game.filterPermanents(NONRED_CREATURES);
-            for (final MagicPermanent target : targets) {
-                game.doAction(new MagicAddTurnTriggerAction(
-                    MagicIfDamageWouldBeDealtTrigger.PreventCombatDamage
-                ));
-            }
-        } else {
-            game.doAction(new MagicAddTurnTriggerAction(MagicIfDamageWouldBeDealtTrigger.PreventCombatDamage));
+                NONRED_CREATURES.filter(game) each { 
+                    game.doAction(new MagicAddTurnTriggerAction(
+                        it,
+                        MagicIfDamageWouldBeDealtTrigger.PreventCombatDamageDealtBy
+                    ));
+                }
+            } else {
+                game.doAction(new MagicAddTurnTriggerAction(MagicIfDamageWouldBeDealtTrigger.PreventCombatDamage));
             } 
         }
     }

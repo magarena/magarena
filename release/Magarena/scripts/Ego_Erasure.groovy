@@ -19,8 +19,8 @@ def ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
-                final Collection<MagicPermanent> targets = game.filterPermanents(it, CREATURE_YOU_CONTROL);
-                for (final MagicPermanent creature : targets) {
+                CREATURE_YOU_CONTROL.filter(it) each {
+                    final MagicPermanent creature ->
                     game.doAction(new MagicChangeTurnPTAction(creature,-2,0));
                     game.doAction(new MagicBecomesCreatureAction(creature,ST));
                 }

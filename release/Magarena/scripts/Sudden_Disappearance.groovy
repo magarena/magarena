@@ -12,12 +12,9 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
-                final Collection<MagicPermanent> targets =
-                        game.filterPermanents(it,PERMANENT_YOU_CONTROL);
-                for (final MagicPermanent permanent : targets) {
-                    if (!permanent.isLand()) {
-                        game.doAction(new MagicExileUntilEndOfTurnAction(permanent));
-                    }
+                NONLAND_PERMANENT_YOU_CONTROL.filter(it) each {
+                    final MagicPermanent nonland ->
+                    game.doAction(new MagicExileUntilEndOfTurnAction(nonland));
                 }
             });
         }
