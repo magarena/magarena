@@ -82,7 +82,8 @@ public class CardDefinitions {
                 "magic.model.trigger",
                 "magic.card"
             ).addStaticStars(
-                "magic.model.target.MagicTargetFilterFactory"
+                "magic.model.target.MagicTargetFilterFactory",
+                "magic.model.choice.MagicTargetChoice"
             ),
             new ASTTransformationCustomizer(groovy.transform.CompileStatic.class)
         )
