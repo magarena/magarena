@@ -389,6 +389,11 @@ public enum MagicConditionParser {
             return MagicConditionFactory.OpponentLoseLifeOrMore(amount);
         }
     },
+    OpponentWasDealtDamage("an opponent was dealt damage this turn") {
+        public MagicCondition toCondition(final Matcher arg) {
+            return MagicCondition.OPPONENT_WAS_DEALT_DAMAGE;
+        }
+    },
     YouAttackedWithCreature("you attacked with a creature this turn") {
         public MagicCondition toCondition(final Matcher arg) {
             return MagicCondition.YOU_ATTACKED_WITH_CREATURE;

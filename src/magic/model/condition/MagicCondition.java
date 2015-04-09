@@ -9,6 +9,7 @@ import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPermanentState;
 import magic.model.MagicPlayer;
+import magic.model.MagicPlayerState;
 import magic.model.MagicSource;
 import magic.model.MagicSubType;
 import magic.model.MagicType;
@@ -518,6 +519,12 @@ public interface MagicCondition {
     MagicCondition OPPONENT_TEN_OR_LESS_LIFE = new MagicCondition() {
         public boolean accept(MagicSource source) {
             return source.getOpponent().getLife() <= 10;
+        }
+    };
+    
+    MagicCondition OPPONENT_WAS_DEALT_DAMAGE = new MagicCondition() {
+        public boolean accept(MagicSource source) {
+            return source.getOpponent().hasState(MagicPlayerState.WasDealtDamage);
         }
     };
     
