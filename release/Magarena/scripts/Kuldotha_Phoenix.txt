@@ -7,6 +7,6 @@ subtype=Phoenix
 cost={2}{R}{R}{R}
 pt=4/4
 ability=Flying, haste;\
-        Metalcraft — {4}: Return SN from your graveyard to the battlefield. Activate this ability only during your upkeep and only if you control three or more artifacts.
+        {4}: Return SN from your graveyard to the battlefield. Activate this ability only during your upkeep and only if you control three or more artifacts.
 timing=main
 oracle=Flying, haste. Metalcraft — {4}: Return Kuldotha Phoenix from your graveyard to the battlefield. Activate this ability only during your upkeep and only if you control three or more artifacts.
