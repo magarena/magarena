@@ -5,6 +5,7 @@ import magic.model.MagicManaCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicCard;
 import magic.model.MagicSource;
+import magic.model.MagicLocationType;
 import magic.model.ARG;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.target.MagicOtherPermanentTargetFilter;
@@ -100,6 +101,11 @@ public enum MagicCostEvent {
         @Override
         public boolean isIndependent() {
             return false;
+        }
+    },
+    ExileCardSelf("Exile SN from your graveyard") {
+        public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
+            return new MagicExileSelfEvent((MagicCard)source, MagicLocationType.Graveyard);
         }
     },
     ExileTopNCardsLibrary("Exile the top( " + ARG.AMOUNT + ")? card(s)? of your library") {

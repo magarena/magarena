@@ -901,6 +901,11 @@ public enum MagicAbility {
             card.add(MagicCardAbilityActivation.create(arg.group(), MagicLocationType.Graveyard));
         }
     },
+    ExileCardSelf(".*Exile SN from your graveyard:.*", 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            card.add(MagicCardAbilityActivation.create(arg.group(), MagicLocationType.Graveyard));
+        }
+    },
     ActivatedAbility("[^\"]+:(?! Add)" + ARG.ANY, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicPermanentActivation.create(arg.group()));
