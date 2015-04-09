@@ -4,6 +4,6 @@ value=3.239
 rarity=U
 type=Instant
 cost={1}{G}{G}
+effect=Attacking creatures get +1/+0 and gain trample until end of turn.
 timing=pump
-requires_groovy_code
 oracle=Attacking creatures get +1/+0 and gain trample until end of turn.

@@ -4,6 +4,6 @@ value=3.159
 rarity=U
 type=Enchantment
 cost={G}{G}
+ability=Whenever an Island an opponent controls becomes tapped, you may gain 1 life.
 timing=main
-requires_groovy_code
 oracle=Whenever an Island an opponent controls becomes tapped, you may gain 1 life.

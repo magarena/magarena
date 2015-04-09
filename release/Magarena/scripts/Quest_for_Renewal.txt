@@ -4,6 +4,7 @@ value=3.792
 rarity=U
 type=Enchantment
 cost={1}{G}
+ability=Whenever a creature you control becomes tapped, you may put a quest counter on SN.
 timing=enchantment
 requires_groovy_code
 oracle=Whenever a creature you control becomes tapped, you may put a quest counter on Quest for Renewal. As long as there are four or more quest counters on Quest for Renewal, untap all creatures you control during each other player's untap step.
