@@ -14,6 +14,10 @@ import java.util.List;
 import java.util.Set;
 
 public abstract class MagicCardFilterImpl implements MagicTargetFilter<MagicCard> {
+    public List<MagicCard> filter(final MagicGame game, final MagicPlayer player) {
+        return filter(game, player, MagicTargetHint.None);
+    }
+
     public List<MagicCard> filter(final MagicGame game, final MagicPlayer player, final MagicTargetHint targetHint) {
         final List<MagicCard> targets = new ArrayList<MagicCard>();
 

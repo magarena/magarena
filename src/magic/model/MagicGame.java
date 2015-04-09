@@ -1109,35 +1109,35 @@ public class MagicGame {
     // ***** TARGETTING *****
     
     public List<MagicTarget> filterTargets(final MagicPlayer player,final MagicTargetFilter<MagicTarget> targetFilter) {
-        return targetFilter.filter(this, player, MagicTargetHint.None);
+        return targetFilter.filter(this, player);
     }
     
     public List<MagicPlayer> filterPlayers(final MagicPlayer player,final MagicTargetFilter<MagicPlayer> targetFilter) {
-        return targetFilter.filter(this, player, MagicTargetHint.None);
+        return targetFilter.filter(this, player);
     }
 
     public List<MagicPermanent> filterPermanents(final MagicPlayer player,final MagicTargetFilter<MagicPermanent> targetFilter) {
-        return targetFilter.filter(this, player, MagicTargetHint.None);
+        return targetFilter.filter(this, player);
     }
     
     public List<MagicPermanent> filterPermanents(final MagicTargetFilter<MagicPermanent> targetFilter) {
-        return targetFilter.filter(this, turnPlayer, MagicTargetHint.None);
+        return targetFilter.filter(this, turnPlayer);
     }
 
     public List<MagicCard> filterCards(final MagicPlayer player,final MagicTargetFilter<MagicCard> targetFilter) {
-        return targetFilter.filter(this, player, MagicTargetHint.None);
+        return targetFilter.filter(this, player);
     }
     
     public List<MagicCard> filterCards(final MagicTargetFilter<MagicCard> targetFilter) {
-        return targetFilter.filter(this, turnPlayer, MagicTargetHint.None);
+        return targetFilter.filter(this, turnPlayer);
     }
 
     public List<MagicItemOnStack> filterItemOnStack(final MagicPlayer player,final MagicTargetFilter<MagicItemOnStack> targetFilter) {
-        return targetFilter.filter(this, player, MagicTargetHint.None);
+        return targetFilter.filter(this, player);
     }
     
     public List<MagicItemOnStack> filterItemOnStack(final MagicTargetFilter<MagicItemOnStack> targetFilter) {
-        return targetFilter.filter(this, turnPlayer, MagicTargetHint.None);
+        return targetFilter.filter(this, turnPlayer);
     }
 
     public boolean hasLegalTargets(

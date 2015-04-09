@@ -8,6 +8,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public abstract class MagicPermanentFilterImpl implements MagicTargetFilter<MagicPermanent> {
+    public List<MagicPermanent> filter(final MagicGame game, final MagicPlayer player) {
+        return filter(game, player, MagicTargetHint.None);
+    }
+
     public List<MagicPermanent> filter(final MagicGame game, final MagicPlayer player, final MagicTargetHint targetHint) {
         final List<MagicPermanent> targets=new ArrayList<MagicPermanent>();
         if (acceptType(MagicTargetType.Permanent)) {

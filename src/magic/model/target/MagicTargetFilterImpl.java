@@ -10,6 +10,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public abstract class MagicTargetFilterImpl implements MagicTargetFilter<MagicTarget> {
+    public List<MagicTarget> filter(final MagicGame game, final MagicPlayer player) {
+        return filter(game, player, MagicTargetHint.None);
+    }
+
     public List<MagicTarget> filter(final MagicGame game, final MagicPlayer player, final MagicTargetHint targetHint) {
         final List<MagicTarget> targets=new ArrayList<MagicTarget>();
 
