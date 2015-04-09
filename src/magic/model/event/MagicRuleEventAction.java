@@ -1858,14 +1858,14 @@ public enum MagicRuleEventAction {
             };
         }
     },
-    RecoverSelf(
-        "return sn from the graveyard to its owner's hand\\.",
+    RecoverCardSelf(
+        "return sn from your graveyard to your hand\\.",
         MagicTiming.Draw,
         "Return",
         new MagicEventAction() {
             @Override
             public void executeEvent(final MagicGame game, final MagicEvent event) {
-                final MagicCard card = event.getPermanent().getCard();
+                final MagicCard card = event.getCard();
                 final MagicRemoveCardAction remove = new MagicRemoveCardAction(card,MagicLocationType.Graveyard);
                 game.doAction(remove);
                 if (remove.isValid()) {
@@ -1874,14 +1874,28 @@ public enum MagicRuleEventAction {
             }
         }
     ),
-    RecoverSelf2(
-        "return sn from your graveyard to your hand\\.",
+    ReanimateCardSelf(
+        "return sn from your graveyard to the battlefield\\.",
+        MagicTiming.Pump,
+        "Reanimate",
+        new MagicEventAction() {
+            @Override
+            public void executeEvent(final MagicGame game, final MagicEvent event) {
+                game.doAction(new MagicReanimateAction(
+                    event.getCard(),
+                    event.getPlayer()
+                ));
+            }
+        }
+    ),
+    RecoverSelf(
+        "return sn from the graveyard to its owner's hand\\.",
         MagicTiming.Draw,
         "Return",
         new MagicEventAction() {
             @Override
             public void executeEvent(final MagicGame game, final MagicEvent event) {
-                final MagicCard card = event.getCard();
+                final MagicCard card = event.getPermanent().getCard();
                 final MagicRemoveCardAction remove = new MagicRemoveCardAction(card,MagicLocationType.Graveyard);
                 game.doAction(remove);
                 if (remove.isValid()) {
