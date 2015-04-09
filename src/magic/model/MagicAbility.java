@@ -301,9 +301,17 @@ public enum MagicAbility {
             ));
         }
     },
-    TappedEffect("Whenever SN becomes tapped, " + ARG.EFFECT, 10) {
+    SelfTappedEffect("Whenever SN becomes tapped, " + ARG.EFFECT, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicWhenSelfBecomesTappedTrigger.create(
+                MagicRuleEventAction.create(ARG.effect(arg))
+            ));
+        }
+    },
+    AnyTappedEffect("Whenever (a|an) " + ARG.WORDRUN + " becomes tapped, " + ARG.EFFECT, 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            card.add(MagicWhenBecomesTappedTrigger.create(
+                MagicTargetFilterFactory.singlePermanent(ARG.wordrun(arg)),
                 MagicRuleEventAction.create(ARG.effect(arg))
             ));
         }
