@@ -1716,6 +1716,14 @@ public class MagicTargetFilterFactory {
                    target.isController(player);
         }
     };
+    
+    public static final MagicPermanentFilterImpl ELDRAZI_SPAWN_YOU_CONTROL = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicGame game, final MagicPlayer player, final MagicPermanent target) {
+            return target.hasSubType(MagicSubType.Eldrazi) && 
+                   target.hasSubType(MagicSubType.Spawn) &&
+                   target.isController(player);
+        }
+    };
 
     public static final MagicPermanentFilterImpl ARTIFACT_LAND = MagicTargetFilterFactory.permanentAnd(MagicType.Artifact, MagicType.Land, Control.Any);
 
@@ -2164,6 +2172,7 @@ public class MagicTargetFilterFactory {
         single.put("green or white creature you control", GREEN_OR_WHITE_CREATURE_YOU_CONTROL);
         single.put("werewolf or wolf creature you control", WEREWOLF_OR_WOLF_CREATURE_YOU_CONTROL);
         single.put("Eldrazi Spawn creature you control", ELDRAZI_SPAWN_CREATURE_YOU_CONTROL);
+        single.put("Eldrazi Spawn you control", ELDRAZI_SPAWN_YOU_CONTROL);
         single.put("face-down creature you control", FACE_DOWN_CREATURE_YOU_CONTROL);
         single.put("creature you control with defender", CREATURE_WITH_DEFENDER_YOU_CONTROL);
         single.put("creature with defender you control", CREATURE_WITH_DEFENDER_YOU_CONTROL);
