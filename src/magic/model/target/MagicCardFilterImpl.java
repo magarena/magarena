@@ -183,4 +183,8 @@ public abstract class MagicCardFilterImpl implements MagicTargetFilter<MagicCard
             }
         };
     }
+    
+    public MagicCardFilterImpl except(final MagicCard invalid) {
+        return new MagicOtherCardTargetFilter(this, invalid);
+    }
 }
