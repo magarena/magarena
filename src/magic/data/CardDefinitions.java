@@ -67,7 +67,8 @@ public class CardDefinitions {
     // groovy shell for evaluating groovy card scripts with autmatic imports
     private static final GroovyShell shell = new GroovyShell(
         new CompilerConfiguration().addCompilationCustomizers(
-            new ImportCustomizer().addStarImports(
+            new ImportCustomizer()
+            .addStarImports(
                 "java.util",
                 "magic.data",
                 "magic.model",
@@ -80,6 +81,8 @@ public class CardDefinitions {
                 "magic.model.target",
                 "magic.model.trigger",
                 "magic.card"
+            ).addStaticStars(
+                "magic.model.target.MagicTargetFilterFactory"
             ),
             new ASTTransformationCustomizer(groovy.transform.CompileStatic.class)
         )
