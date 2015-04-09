@@ -16,12 +16,9 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
                 game.doAction(new MagicDestroyAction(it));
-                final Collection<MagicPermanent> targets = game.filterPermanents(
-                        event.getPlayer(),
-                        HUMAN_CREATURE);
-                final MagicSource source = event.getSource();
-                for (final MagicPermanent target : targets) {
-                    game.doAction(new MagicDealDamageAction(source,target,1));
+                HUMAN_CREATURE.filter(game) each {
+                    final MagicPermanent target ->
+                    game.doAction(new MagicDealDamageAction(event.getSource(),target,1));
                 }
             });
         }

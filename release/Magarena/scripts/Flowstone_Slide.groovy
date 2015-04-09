@@ -11,18 +11,9 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicPlayer you = event.getPlayer();
-            Collection<MagicPermanent> creatures = game.filterPermanents(
-                you,
-                CREATURE
-            )
             final int amt = event.getCardOnStack().getX();
-            for (final MagicPermanent creature : creatures) {
-                game.doAction(new MagicChangeTurnPTAction(
-                    creature,
-                    amt,
-                    -amt
-                ));
+            CREATURE.filter(game) each {
+                game.doAction(new MagicChangeTurnPTAction(it, amt, -amt));
             }
         }
     }

@@ -10,13 +10,11 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final Collection<MagicPermanent> targets = game.filterPermanents(
-                event.getPlayer(),
-                CREATURE_YOU_CONTROL.except(event.getPermanent())
-            );
-            for (final MagicPermanent target : targets) {
-                game.doAction(new MagicChangeTurnPTAction(target, 1, 1));
-                game.doAction(new MagicGainAbilityAction(target, MagicAbility.Trample));
+            CREATURE_YOU_CONTROL
+            .except(event.getPermanent())
+            .filter(event.getPlayer()) each {
+                game.doAction(new MagicChangeTurnPTAction(it, 1, 1));
+                game.doAction(new MagicGainAbilityAction(it, MagicAbility.Trample));
             }
         }
     }
