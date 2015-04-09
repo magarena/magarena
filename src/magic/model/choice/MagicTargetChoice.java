@@ -74,7 +74,7 @@ public class MagicTargetChoice extends MagicChoice {
     public static final MagicTargetChoice TARGET_PERMANENT = 
         new MagicTargetChoice("target permanent");
     
-    public static final MagicTargetChoice PERMANENT_YOU_CONTROL = 
+    public static final MagicTargetChoice A_PERMANENT_YOU_CONTROL = 
         new MagicTargetChoice("a permanent you control");
 
     public static final MagicTargetChoice TARGET_PERMANENT_YOU_CONTROL = 
@@ -101,7 +101,7 @@ public class MagicTargetChoice extends MagicChoice {
     public static final MagicTargetChoice POS_TARGET_LAND = 
         MagicTargetChoice.Positive("target land");
     
-    public static final MagicTargetChoice LAND_YOU_CONTROL =
+    public static final MagicTargetChoice A_LAND_YOU_CONTROL =
         new MagicTargetChoice("a land you control");
     
     public static final MagicTargetChoice FOREST_YOU_CONTROL =
@@ -119,7 +119,7 @@ public class MagicTargetChoice extends MagicChoice {
     public static final MagicTargetChoice NEG_TARGET_NONLAND_PERMANENT = 
         MagicTargetChoice.Negative("target nonland permanent");
     
-    public static final MagicTargetChoice ARTIFACT_YOU_CONTROL = 
+    public static final MagicTargetChoice AN_ARTIFACT_YOU_CONTROL = 
         new MagicTargetChoice("an artifact you control");
 
     public static final MagicTargetChoice TARGET_ARTIFACT =
@@ -143,7 +143,7 @@ public class MagicTargetChoice extends MagicChoice {
     public static final MagicTargetChoice NEG_TARGET_ARTIFACT_OR_ENCHANTMENT = 
         MagicTargetChoice.Negative("target artifact or enchantment");
     
-    public static final MagicTargetChoice ARTIFACT_OR_CREATURE = 
+    public static final MagicTargetChoice AN_ARTIFACT_OR_CREATURE = 
         new MagicTargetChoice("an artifact or creature");
 
     public static final MagicTargetChoice TARGET_ARTIFACT_OR_CREATURE = 
@@ -194,10 +194,10 @@ public class MagicTargetChoice extends MagicChoice {
     public static final MagicTargetChoice NEG_TARGET_UNTAPPED_CREATURE = 
         MagicTargetChoice.Negative("target untapped creature");
     
-    public static final MagicTargetChoice CREATURE_YOU_CONTROL = 
+    public static final MagicTargetChoice A_CREATURE_YOU_CONTROL = 
         new MagicTargetChoice("a creature you control");
     
-    public static final MagicTargetChoice CREATURE = 
+    public static final MagicTargetChoice A_CREATURE = 
         new MagicTargetChoice("a creature");
     
     public static final MagicTargetChoice POS_CREATURE = 
@@ -317,31 +317,31 @@ public class MagicTargetChoice extends MagicChoice {
     public static final MagicTargetChoice A_CARD_FROM_HAND = 
         new MagicTargetChoice("a card from your hand");
     
-    public static final MagicTargetChoice CREATURE_CARD_FROM_HAND = 
+    public static final MagicTargetChoice A_CREATURE_CARD_FROM_HAND = 
         new MagicTargetChoice("a creature card from your hand");
 
     public static final MagicTargetChoice A_GREEN_CREATURE_CARD_FROM_HAND = 
         new MagicTargetChoice("a green creature card from your hand");
     
-    public static final MagicTargetChoice BLUE_OR_RED_CREATURE_CARD_FROM_HAND = 
+    public static final MagicTargetChoice A_BLUE_OR_RED_CREATURE_CARD_FROM_HAND = 
         new MagicTargetChoice("a blue or red creature card from your hand");
 
-    public static final MagicTargetChoice MULTICOLORED_CREATURE_CARD_FROM_HAND = 
+    public static final MagicTargetChoice A_MULTICOLORED_CREATURE_CARD_FROM_HAND = 
         new MagicTargetChoice("a multicolored creature card from your hand");
 
-    public static final MagicTargetChoice BASIC_LAND_CARD_FROM_HAND = 
+    public static final MagicTargetChoice A_BASIC_LAND_CARD_FROM_HAND = 
         new MagicTargetChoice("a basic land card from your hand");
     
-    public static final MagicTargetChoice LAND_CARD_FROM_LIBRARY = 
+    public static final MagicTargetChoice A_LAND_CARD_FROM_LIBRARY = 
         new MagicTargetChoice("a land card from your library");
     
-    public static final MagicTargetChoice CARD_FROM_LIBRARY = 
+    public static final MagicTargetChoice A_CARD_FROM_LIBRARY = 
         new MagicTargetChoice("a card from your library");
     
-    public static final MagicTargetChoice BASIC_LAND_CARD_FROM_LIBRARY = 
+    public static final MagicTargetChoice A_BASIC_LAND_CARD_FROM_LIBRARY = 
         new MagicTargetChoice("a basic land card from your library");
     
-    public static final MagicTargetChoice CREATURE_CARD_FROM_LIBRARY = 
+    public static final MagicTargetChoice A_CREATURE_CARD_FROM_LIBRARY = 
         new MagicTargetChoice("a creature card from your library");
     
     public static final MagicTargetChoice SWAMP_OR_MOUNTAIN_CARD_FROM_LIBRARY = 

@@ -21,7 +21,7 @@ public class MagicCipherEvent extends MagicEvent {
             player,
             new MagicMayChoice(
                 "Exile " + source + " encoded on a creature you control?",
-                MagicTargetChoice.CREATURE_YOU_CONTROL
+                MagicTargetChoice.A_CREATURE_YOU_CONTROL
             ),
             EVENT_ACTION,
             "PN may$ exile SN encoded on a creature$ you control."

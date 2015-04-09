@@ -17,7 +17,7 @@ public class MagicAddCounterChosenEvent extends MagicEvent {
     public MagicAddCounterChosenEvent(final MagicSource source, final MagicCounterType counterType) {
         super(
             source,
-            MagicTargetChoice.CREATURE_YOU_CONTROL,
+            MagicTargetChoice.A_CREATURE_YOU_CONTROL,
             new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {

@@ -108,7 +108,7 @@ public abstract class MagicWhenComesIntoPlayTrigger extends MagicTrigger<MagicPa
             final MagicEvent sac = new MagicSacrificePermanentEvent(
                 event.getSource(),
                 event.getPlayer(),
-                MagicTargetChoice.CREATURE_YOU_CONTROL,
+                MagicTargetChoice.A_CREATURE_YOU_CONTROL,
                 EVENT_ACTION
             );
             if (event.isYes() && sac.isSatisfied()) {
