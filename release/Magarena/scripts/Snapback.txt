@@ -4,7 +4,7 @@ value=3.924
 rarity=C
 type=Instant
 cost={1}{U}
+ability=You may exile a blue card from your hand rather than pay SN's mana cost.
 effect=Return target creature to its owner's hand.
 timing=removal
-requires_groovy_code
 oracle=You may exile a blue card from your hand rather than pay Snapback's mana cost. Return target creature to its owner's hand.
