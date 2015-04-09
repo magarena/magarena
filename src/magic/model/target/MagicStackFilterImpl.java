@@ -8,8 +8,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 public abstract class MagicStackFilterImpl implements MagicTargetFilter<MagicItemOnStack> {
-    public List<MagicItemOnStack> filter(final MagicGame game, final MagicPlayer player) {
-        return filter(game, player, MagicTargetHint.None);
+    public List<MagicItemOnStack> filter(final MagicGame game) {
+        return filter(game, game.getTurnPlayer(), MagicTargetHint.None);
+    }
+    
+    public List<MagicItemOnStack> filter(final MagicPlayer player) {
+        return filter(player.getGame(), player, MagicTargetHint.None);
     }
 
     public List<MagicItemOnStack> filter(final MagicGame game, final MagicPlayer player, final MagicTargetHint targetHint) {
