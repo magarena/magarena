@@ -7,8 +7,8 @@ subtype=Human,Shaman
 cost={1}{G}
 pt=1/1
 ability={G}: Choose one — \
-             • Until end of turn, SN becomes a 4/4 Rhino with trample. \
-             • Until end of turn, SN becomes a 2/2 Bird with flying. \
+             • Until end of turn, SN becomes a 4/4 Rhino and gains trample. \
+             • Until end of turn, SN becomes a 2/2 Bird and gains flying. \
              • Until end of turn, SN becomes a 0/8 Plant. \
              Activate this ability only once each turn.
 timing=main
