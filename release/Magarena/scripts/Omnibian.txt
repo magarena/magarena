@@ -6,6 +6,6 @@ type=Creature
 subtype=Frog
 cost={1}{G}{G}{U}
 pt=3/3
-timing=smain
-requires_groovy_code
+ability={T}: Target creature becomes a 3/3 Frog until end of turn.
+timing=main
 oracle={T}: Target creature becomes a 3/3 Frog until end of turn.

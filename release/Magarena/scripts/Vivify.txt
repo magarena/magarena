@@ -4,6 +4,6 @@ value=2.275
 rarity=U
 type=Instant
 cost={2}{G}
+effect=Target land becomes a 3/3 creature until end of turn. It's still a land.~Draw a card.
 timing=animate
-requires_groovy_code
 oracle=Target land becomes a 3/3 creature until end of turn. It's still a land. Draw a card.
