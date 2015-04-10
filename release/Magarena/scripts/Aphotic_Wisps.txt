@@ -4,6 +4,6 @@ value=3.298
 rarity=C
 type=Instant
 cost={B}
+effect=Target creature becomes black and gains fear until end of turn.~Draw a card.
 timing=pump
-requires_groovy_code
 oracle=Target creature becomes black and gains fear until end of turn. Draw a card.
