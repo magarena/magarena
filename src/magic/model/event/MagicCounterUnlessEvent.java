@@ -27,9 +27,7 @@ public class MagicCounterUnlessEvent extends MagicEvent {
             new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    if (event.isYes()) {
-                        event.payManaCost(game);
-                    } else {
+                    if (event.isNo()) {
                         game.doAction(new MagicCounterItemOnStackAction(
                             event.getRefItemOnStack(),
                             toLocation

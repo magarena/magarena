@@ -1,8 +1,6 @@
 def action = {
     final MagicGame game, final MagicEvent event ->
-    if (event.isYes()) {
-        event.payManaCost(game);
-    } else {
+    if (event.isNo()) {
         game.doAction(new MagicPlayTokenAction(event.getRefPlayer(),TokenCardDefinitions.get("3/3 red Ogre creature token")));
     }
 }

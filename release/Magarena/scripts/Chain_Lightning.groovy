@@ -1,7 +1,6 @@
 def action = {
     final MagicGame game, final MagicEvent event ->
     if (event.isYes()) {
-        event.payManaCost(game);
         game.doAction(new MagicCopyCardOnStackAction(event.getPlayer(),event.getCardOnStack()));
     }
 }

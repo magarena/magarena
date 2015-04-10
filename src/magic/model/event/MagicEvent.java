@@ -633,7 +633,7 @@ public class MagicEvent implements MagicCopyable {
         game.changeScore(ArtificialScoringSystem.getManaScore(result.getConverted()));
     }
 
-    final void payManaCost(final MagicGame game) {
+    public final void payManaCost(final MagicGame game) {
         final int manaIndex=getManaChoiceResultIndex();
         assert manaIndex < chosen.length :
             this + "\n" +
