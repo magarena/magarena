@@ -3,10 +3,7 @@ package magic.data;
 import java.io.File;
 import java.io.IOException;
 import java.util.Properties;
-import magic.ai.MagicAI;
-import magic.ai.MagicAIImpl;
 import magic.model.MagicDeckProfile;
-import magic.model.player.AiProfile;
 import magic.model.player.PlayerProfile;
 import magic.model.player.PlayerProfiles;
 import magic.utility.MagicFileSystem;
@@ -148,7 +145,6 @@ public class DuelConfig {
         save(properties);
         try {
             FileIO.toFile(getConfigFile(), properties, "Duel configuration");
-            System.err.println("Saved duel config");
         } catch (final IOException ex) {
             System.err.println("ERROR! Unable to save duel config");
         }
