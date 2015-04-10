@@ -2786,6 +2786,16 @@ public enum MagicRuleEventAction {
             return SelfBecomes.getConditions(matcher);
         }
     },
+    ChosenBecomesAddition(
+        "(?<choice>[^\\.]*) become(s)?( a| an)?( )?(?<pt>[0-9]+/[0-9]+)? (?<all>.*?)( (with|and gains) (?<ability>.*?))?(?<additionTo> in addition to its other [a-z]*)(?<duration> until end of turn)?\\.",
+        MagicTiming.Animate,
+        "Animate"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            return ChosenBecomes.getAction(matcher);
+        }
+    },
     ChosenBecomesAlt(
         "(?<duration>until end of turn, )(?<choice>[^\\.]*) becomes( a| an)?( )?(?<pt>[0-9]+/[0-9]+)? (?<all>.*?)( (with|and gains) (?<ability>.*?))?(?<additionTo>((\\.)? It's| that's) still.*)?\\.",
         MagicTiming.Animate,
