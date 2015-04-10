@@ -46,8 +46,8 @@ public class AiPropertiesDialog extends JDialog {
         lifeSliderPanel = new SliderPanel("Extra Life", null, 0, 10, 1, playerProfile.getExtraLife());
         aiLevelSliderPanel = new SliderPanel("AI Level", null, 1, 8, 1, playerProfile.getAiLevel());
 
-        aiComboBox = new JComboBox<MagicAIImpl>();
-        aiComboBox.setModel(new DefaultComboBoxModel<MagicAIImpl>(MagicAIImpl.SUPPORTED_AIS));
+        aiComboBox = new JComboBox<>();
+        aiComboBox.setModel(new DefaultComboBoxModel<>(MagicAIImpl.SUPPORTED_AIS));
         aiComboBox.setLightWeightPopupEnabled(false);
         aiComboBox.setFocusable(false);
         aiComboBox.setSelectedItem(playerProfile.getAiType());
