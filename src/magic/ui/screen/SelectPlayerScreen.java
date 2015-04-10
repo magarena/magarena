@@ -293,15 +293,15 @@ public abstract class SelectPlayerScreen
         final List<MenuButton> buttons = new ArrayList<>();
         buttons.add(
                 new ActionBarButton(
+                        "Settings", "Update player profile settings.",
+                        getEditPlayerAction()));
+        buttons.add(
+                new ActionBarButton(
                         "New", "Create a new player profile.",
                         getNewPlayerAction()));
         buttons.add(
                 new ActionBarButton(
-                        "Edit", "Update selected player's name.",
-                        getEditPlayerAction()));
-        buttons.add(
-                new ActionBarButton(
-                        "Delete", "Delete selected player profile.",
+                        "Delete", "Delete selected player profile (confirmation required).",
                         new DeletePlayerAction()));
         buttons.add(
                 new SelectAvatarActionButton());
