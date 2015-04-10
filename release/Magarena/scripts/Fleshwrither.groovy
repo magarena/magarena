@@ -12,7 +12,8 @@ def choice = new MagicTargetChoice(
         @Override
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
-                new MagicPayManaCostSacrificeEvent(source, "{1}{B}{B}")
+                new MagicPayManaCostEvent(source, "{1}{B}{B}"),
+                new MagicSacrificeEvent(source),
             ];
         }
         @Override
