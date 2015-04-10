@@ -745,7 +745,6 @@ public class MagicGame {
 
         // Payed cost
         if (event.getManaChoiceResultIndex() >= 0) {
-            event.payManaCost(this);
             payedCost.set(choiceResults[event.getManaChoiceResultIndex()]);
         }
         

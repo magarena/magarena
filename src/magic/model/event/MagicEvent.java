@@ -649,6 +649,7 @@ public class MagicEvent implements MagicCopyable {
 
     public final void executeEvent(final MagicGame game,final Object[] choiceResults) {
         chosen = choiceResults;
+        payManaCost(game);
         action.executeEvent(game,this);
         chosen = null;
     }
