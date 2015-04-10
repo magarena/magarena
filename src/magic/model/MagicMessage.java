@@ -63,14 +63,10 @@ public class MagicMessage {
     }
 
     public static String replaceName(final String sourceText,final Object source, final Object player, final Object ref) {
-        final String evenQuotes = "(?=([^\"]*'[^\"]*')*[^\"]*$)";
         return sourceText
-            .replaceAll("SN", source.toString())
-            .replaceAll("\\b(T|t)his [a-z]+\\b" + evenQuotes, source.toString())
-            .replaceAll("RN", ref.toString())
-            .replaceAll("\\b(T|t)hat [a-z]+\\b" + evenQuotes, ref.toString())
             .replaceAll("PN", player.toString())
-            .replaceAll("\\bit\\b" + evenQuotes, ref != MagicEvent.NO_REF ? ref.toString() : source.toString());
+            .replaceAll("SN", source.toString())
+            .replaceAll("RN", ref.toString());
     }
 
     public static String replaceChoices(final String sourceText,final Object[] choices) {

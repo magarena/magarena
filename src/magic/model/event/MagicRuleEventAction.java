@@ -3365,11 +3365,20 @@ public enum MagicRuleEventAction {
             .replaceAll("(P|p)ut ","PN puts ")
             .replaceAll("Choose one ","Choose one\\$ ");
     }
+
+    public static String renameThisThat(final String text) {
+        final String thing = "(permanent|creature|artifact|land|player|opponent)";
+        final String evenQuotes = "(?=([^\"]*'[^\"]*')*[^\"]*$)";
+        return text
+            .replaceAll("\\b(T|t)his " + thing + "\\b" + evenQuotes, "SN")
+            .replaceAll("\\b(T|t)hat " + thing + "\\b" + evenQuotes, "RN");
+    }
     
     static final Pattern INTERVENING_IF = Pattern.compile("if " + ARG.WORDRUN + ", " + ARG.ANY, Pattern.CASE_INSENSITIVE);
     static final Pattern MAY_PAY = Pattern.compile("you may pay " + ARG.MANACOST + "\\. if you do, .+", Pattern.CASE_INSENSITIVE);
     
-    public static MagicSourceEvent create(final String text) {
+    public static MagicSourceEvent create(final String raw) {
+        final String text = renameThisThat(raw);
         final String[] part = text.split("~");
         final String rule = part[0];
 

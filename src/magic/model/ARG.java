@@ -69,7 +69,7 @@ public class ARG {
         return m.group("pt");
     }
     
-    public static final String IT = "((?<rn>(rn|that [a-z]+))|(?<sn>(sn|this [a-z]+))|(?<it>it))";
+    public static final String IT = "((?<rn>rn)|(?<sn>sn)|(?<it>it))";
     public static MagicPermanent itPermanent(final MagicEvent event, final Matcher m) {
         if (m.group("it") != null) {
             return event.hasRef() ? event.getRefPermanent() : event.getPermanent();
@@ -89,7 +89,7 @@ public class ARG {
         }
     }
     
-    public static final String YOU = "((?<rn>(rn|that [a-z]+|him or her|it))|(?<pn>(pn||you)))";
+    public static final String YOU = "((?<rn>(rn|it))|(?<pn>(pn||you)))";
     public static MagicTarget youTarget(final MagicEvent event, final Matcher m) {
         if (m.group("rn") != null) {
             return event.getRefTarget();
