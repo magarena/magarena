@@ -4,6 +4,6 @@ value=1.765
 rarity=U
 type=Instant
 cost={2}{U}
+effect=Target permanent becomes an artifact in addition to its other types until end of turn.~Draw a card.
 timing=pump
-requires_groovy_code
 oracle=Target permanent becomes an artifact in addition to its other types until end of turn. Draw a card.

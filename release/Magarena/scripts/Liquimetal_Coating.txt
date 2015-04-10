@@ -4,6 +4,6 @@ value=4.154
 rarity=U
 type=Artifact
 cost={2}
-timing=main
-requires_groovy_code
+ability={T}: Target permanent becomes an artifact in addition to its other types until end of turn.
+timing=artifact
 oracle={T}: Target permanent becomes an artifact in addition to its other types until end of turn.

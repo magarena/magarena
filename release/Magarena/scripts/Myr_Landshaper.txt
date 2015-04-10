@@ -6,6 +6,6 @@ type=Artifact,Creature
 subtype=Myr
 cost={3}
 pt=1/1
+ability={T}: Target land becomes an artifact in addition to its other types until end of turn.
 timing=main
-requires_groovy_code
 oracle={T}: Target land becomes an artifact in addition to its other types until end of turn.

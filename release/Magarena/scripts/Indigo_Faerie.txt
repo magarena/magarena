@@ -6,7 +6,7 @@ type=Creature
 subtype=Faerie,Wizard
 cost={1}{U}
 pt=1/1
-ability=Flying
+ability=Flying.;\
+        {U}: Target permanent becomes blue in addition to its other colors until end of turn.
 timing=main
-requires_groovy_code
 oracle=Flying. {U}: Target permanent becomes blue in addition to its other colors until end of turn.
