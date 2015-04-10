@@ -17,12 +17,16 @@ public class MagicCyclingActivation extends MagicCardAbilityActivation {
 
     final MagicManaCost cost;
 
-    public MagicCyclingActivation(final MagicManaCost aCost) {
+    protected MagicCyclingActivation(final MagicManaCost aCost, final String name) {
         super(
             new MagicActivationHints(MagicTiming.Main,true),
-            "Cycle"
+            name
         );
         cost = aCost;
+    }
+    
+    public MagicCyclingActivation(final MagicManaCost aCost) {
+        this(aCost, "Cycle");
     }
 
     @Override

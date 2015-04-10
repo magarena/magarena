@@ -15,28 +15,15 @@ import magic.model.trigger.MagicTriggerType;
 
 import java.util.Arrays;
 
-public class MagicTypeCyclingActivation extends MagicCardAbilityActivation {
+public class MagicTypeCyclingActivation extends MagicCyclingActivation {
 
-    final MagicManaCost cost;
     final String type;
 
     public MagicTypeCyclingActivation(final MagicManaCost aCost, final String aType) {
-        super(
-            new MagicActivationHints(MagicTiming.Main,true),
-            aType + "cycle"
-        );
-        cost = aCost;
+        super(aCost, aType + "cycle");
         type = aType;
     }
 
-    @Override
-    public Iterable<? extends MagicEvent> getCostEvent(final MagicCard source) {
-        return Arrays.asList(
-            new MagicPayManaCostEvent(source, cost),
-            new MagicDiscardSelfEvent(source)
-        );
-    }
-    
     @Override
     public MagicEvent getCardEvent(final MagicCard card, final MagicPayedCost payedCost) {
         return new MagicEvent(
@@ -55,33 +42,4 @@ public class MagicTypeCyclingActivation extends MagicCardAbilityActivation {
             MagicLocationType.OwnersHand
         ));
     }
-    
-    @Override
-    public MagicEvent getEvent(final MagicSource source) {
-        return new MagicEvent(
-            source,
-            new MagicEventAction() {
-                @Override
-                public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    final MagicCard card = event.getCard();
-                    final MagicAbilityOnStack abilityOnStack = new MagicAbilityOnStack(
-                        MagicTypeCyclingActivation.this,
-                        getCardEvent(card, game.getPayedCost())
-                    );
-                    game.doAction(new MagicPutItemOnStackAction(abilityOnStack));
-                    game.executeTrigger(MagicTriggerType.WhenOtherCycle, card);
-                    for (final MagicTrigger<MagicCard> trigger : card.getCardDefinition().getCycleTriggers()) {
-                        game.executeTrigger(
-                            trigger,
-                            MagicPermanent.NONE,
-                            card,
-                            card
-                        );
-                    }
-                }
-            },
-            name + " SN."
-        );
-    }
-    
 }
