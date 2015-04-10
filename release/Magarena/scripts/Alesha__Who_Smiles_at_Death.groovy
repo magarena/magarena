@@ -1,14 +1,14 @@
 def CREATURE_WITH_POWER_2_OR_OR_LESS_FROM_GRAVEYARD = new MagicCardFilterImpl() {
-    public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
-        return target.hasType(MagicType.Creature) &&
-               target.getPower() <= 2;
+    public boolean accept(final MagicGame game, final MagicPlayer player, final MagicCard target) {
+        return target.hasType(MagicType.Creature) && target.getPower() <= 2;
     }
     public boolean acceptType(final MagicTargetType targetType) {
         return targetType == MagicTargetType.Graveyard;
     }
-}; 
+};
+
 def A_CREATURE_WITH_POWER_2_OR_OR_LESS_FROM_GRAVEYARD = new MagicTargetChoice(
-    CREATURE_WITH_POWER_2_OR_OR_LESS_FROM_GRAVEYARD ,  
+    CREATURE_WITH_POWER_2_OR_OR_LESS_FROM_GRAVEYARD,
     MagicTargetHint.None,
     "a creature with power 2 or less from your graveyard"
 );
@@ -20,8 +20,10 @@ def A_CREATURE_WITH_POWER_2_OR_OR_LESS_FROM_GRAVEYARD = new MagicTargetChoice(
             return new MagicEvent(
                 permanent,
                 new MagicMayChoice(
-                    new MagicPayManaCostChoice(MagicManaCost.create("{W/B}{W/B}"))
+                    new MagicPayManaCostChoice(MagicManaCost.create("{W/B}{W/B}")),
+                    A_CREATURE_WITH_POWER_2_OR_OR_LESS_FROM_GRAVEYARD
                 ),
+                MagicGraveyardTargetPicker.PutOntoBattlefield,
                 this,
                 "PN may\$ pay {W/B}{W/B}. If you do, return target creature card with power 2 or less from your graveyard to the battlefield tapped and attacking."
             );
@@ -30,11 +32,14 @@ def A_CREATURE_WITH_POWER_2_OR_OR_LESS_FROM_GRAVEYARD = new MagicTargetChoice(
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
-                game.addEvent(new MagicPutOntoBattlefieldEvent(
-                    event,                    A_CREATURE_WITH_POWER_2_OR_OR_LESS_FROM_GRAVEYARD,
-                    [MagicPlayMod.TAPPED,MagicPlayMod.ATTACKING]
-                )); 
-            }    
+                event.processTargetCard(game, {
+                    game.doAction(new MagicReanimateAction(
+                        it,
+                        event.getPlayer(),
+                        [MagicPlayMod.TAPPED, MagicPlayMod.ATTACKING]
+                    ));
+                });
+            }
         }
     }
 ]
