@@ -25,7 +25,7 @@ def A_CREATURE_WITH_POWER_2_OR_OR_LESS_FROM_GRAVEYARD = new MagicTargetChoice(
                 ),
                 MagicGraveyardTargetPicker.PutOntoBattlefield,
                 this,
-                "PN may\$ pay {W/B}{W/B}. If you do, return target creature card with power 2 or less from your graveyard to the battlefield tapped and attacking."
+                "PN may\$ pay {W/B}{W/B}\$. If you do, return target creature card\$ with power 2 or less from your graveyard to the battlefield tapped and attacking."
             );
         }
 
