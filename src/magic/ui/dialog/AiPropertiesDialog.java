@@ -1,12 +1,6 @@
 package magic.ui.dialog;
 
-import magic.ai.MagicAIImpl;
-import magic.model.player.AiProfile;
-import magic.model.player.PlayerProfile;
-import magic.ui.MagicFrame;
-import magic.ui.widget.SliderPanel;
-import net.miginfocom.swing.MigLayout;
-
+import java.awt.event.ActionEvent;
 import javax.swing.AbstractAction;
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.JButton;
@@ -19,8 +13,12 @@ import javax.swing.JPanel;
 import javax.swing.JRootPane;
 import javax.swing.JTextField;
 import javax.swing.KeyStroke;
-
-import java.awt.event.ActionEvent;
+import magic.ai.MagicAIImpl;
+import magic.model.player.AiProfile;
+import magic.model.player.PlayerProfile;
+import magic.ui.MagicFrame;
+import magic.ui.widget.SliderPanel;
+import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
 public class AiPropertiesDialog extends JDialog {
