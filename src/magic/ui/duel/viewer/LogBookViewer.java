@@ -129,10 +129,6 @@ public class LogBookViewer extends JPanel {
         tb.setText("Log " + (isHidden ? " OFF" : "") + (showHelpHints ? "   [ LMB: On/Off   RMB: Full Log File ]" : ""));
     }
 
-    public MagicLogBook getLogBook() {
-        return logBook;
-    }
-
     public void update() {
         messagePanel.removeAll();
         synchronized (logBook) {
@@ -151,7 +147,6 @@ public class LogBookViewer extends JPanel {
                 validate();
                 scrollPane.getVerticalScrollBar().setValue(0);
             }
-
         }
     }
 

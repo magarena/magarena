@@ -4,32 +4,45 @@ import magic.utility.MagicSystem;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Iterator;
+import java.util.ListIterator;
 
-public class MagicLogBook extends ArrayList<MagicMessage> {
+public class MagicLogBook implements Iterable<MagicMessage> {
 
-    private static final long serialVersionUID = 1L;
-
+    private List<MagicMessage> messages = new ArrayList<>();
     private List<ILogBookListener> _listeners = new ArrayList<>();
 
     MagicLogBook() {}
 
-    @Override
-    public boolean add(final MagicMessage msg) {
+    public synchronized boolean add(final MagicMessage msg) {
         notifyMessageLogged(msg);
         final String player = msg.getPlayer().getIndex() == 0 ? "P" : "C";
         MagicGameLog.log("LOG (" + player + "): " + msg.getText());
         if (MagicSystem.isDebugMode()) {
             System.err.println("LOG: " + msg.getText());
         }
-        return super.add(msg);
+        return messages.add(msg);
     }
 
     /** Removes all messages from end to given index, inclusive. */
     public synchronized void removeTo(final int toIndex) {
         for (int index=size()-1;index>=toIndex;index--) {
-            remove(index);
+            messages.remove(index);
         }
         notifyMessageLogged(null);
+    }
+
+    public int size() {
+        return messages.size();
+    }
+
+    @Override
+    public Iterator<MagicMessage> iterator() {
+        return messages.iterator();
+    }
+
+    public ListIterator<MagicMessage> listIterator(int idx) {
+        return messages.listIterator(idx);
     }
 
     public synchronized void addListener(ILogBookListener obj) {
