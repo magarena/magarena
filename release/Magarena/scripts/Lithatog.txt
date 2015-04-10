@@ -6,7 +6,6 @@ type=Creature
 subtype=Atog
 cost={1}{R}{G}
 pt=1/2
-ability=Sacrifice an artifact: SN gets +1/+1 until end of turn.;\
-        Sacrifice a land: SN gets +1/+1 until end of turn.
+ability=Sacrifice an artifact:SN gets +1/+1 until end of turn.;Sacrifice a land:SN gets +1/+1 until end of turn.
 timing=main
 oracle=Sacrifice an artifact: Lithatog gets +1/+1 until end of turn. Sacrifice a land: Lithatog gets +1/+1 until end of turn.

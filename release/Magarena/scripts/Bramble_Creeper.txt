@@ -6,6 +6,6 @@ type=Creature
 subtype=Elemental
 cost={4}{G}
 pt=0/3
-ability=Whenever SN attacks, it gets +5/+0 until end of turn.
+ability=Whenever SN attacks, SN gets +5/+0 until end of turn.
 timing=main
 oracle=Whenever Bramble Creeper attacks, it gets +5/+0 until end of turn.

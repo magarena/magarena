@@ -6,6 +6,6 @@ type=Creature
 subtype=Wolverine
 cost={G}
 pt=1/1
-ability=Whenever SN becomes blocked, it gets +2/+0 until end of turn.
+ability=Whenever SN becomes blocked, SN gets +2/+0 until end of turn.
 timing=main
 oracle=Whenever Deepwood Wolverine becomes blocked, it gets +2/+0 until end of turn.

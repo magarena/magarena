@@ -6,6 +6,6 @@ type=Creature
 subtype=Beast
 cost={2}{R}{W}
 pt=2/5
-ability=Whenever SN attacks, it gets +3/-3 until end of turn.
+ability=Whenever SN attacks, SN gets +3/-3 until end of turn.
 timing=main
 oracle=Whenever Flowstone Charger attacks, it gets +3/-3 until end of turn.

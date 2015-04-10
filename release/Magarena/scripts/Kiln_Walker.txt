@@ -6,6 +6,6 @@ type=Artifact,Creature
 subtype=Construct
 cost={3}
 pt=0/3
-ability=Whenever SN attacks, it gets +3/+0 until end of turn.
+ability=Whenever SN attacks, SN gets +3/+0 until end of turn.
 timing=main
 oracle=Whenever Kiln Walker attacks, it gets +3/+0 until end of turn.

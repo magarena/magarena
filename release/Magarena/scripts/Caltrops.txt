@@ -4,6 +4,6 @@ value=3.869
 rarity=U
 type=Artifact
 cost={3}
-ability=Whenever a creature attacks, SN deals 1 damage to it.
+ability=Whenever a creature attacks, SN deals 1 damage to RN.
 timing=artifact
 oracle=Whenever a creature attacks, Caltrops deals 1 damage to it.

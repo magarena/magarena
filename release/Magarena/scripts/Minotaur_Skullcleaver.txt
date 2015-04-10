@@ -7,6 +7,6 @@ subtype=Minotaur,Berserker
 cost={2}{R}
 pt=2/2
 ability=haste;\
-        When SN enters the battlefield, it gets +2/+0 until end of turn.
+        When SN enters the battlefield, SN gets +2/+0 until end of turn.
 timing=fmain
 oracle=Haste. When Minotaur Skullcleaver enters the battlefield, it gets +2/+0 until end of turn.

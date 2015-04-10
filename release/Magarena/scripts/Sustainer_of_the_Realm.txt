@@ -7,6 +7,6 @@ subtype=Angel
 cost={2}{W}{W}
 pt=2/3
 ability=flying;\
-        Whenever SN blocks, it gets +0/+2 until end of turn.
+        Whenever SN blocks, SN gets +0/+2 until end of turn.
 timing=main
 oracle=Flying. Whenever Sustainer of the Realm blocks, it gets +0/+2 until end of turn.

@@ -4,6 +4,6 @@ value=2.500
 rarity=U
 type=Enchantment
 cost={1}{G}{G}
-ability=Whenever a creature attacks you, it gets -1/-0 until end of turn.
+ability=Whenever a creature attacks you, RN gets -1/-0 until end of turn.
 timing=enchantment
 oracle=Whenever a creature attacks you, it gets -1/-0 until end of turn.

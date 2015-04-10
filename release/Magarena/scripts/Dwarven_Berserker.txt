@@ -6,6 +6,6 @@ type=Creature
 subtype=Dwarf,Berserker
 cost={1}{R}
 pt=1/1
-ability=Whenever SN becomes blocked, it gets +3/+0 and gains trample until end of turn.
+ability=Whenever SN becomes blocked, SN gets +3/+0 and gains trample until end of turn.
 timing=main
 oracle=Whenever Dwarven Berserker becomes blocked, it gets +3/+0 and gains trample until end of turn.

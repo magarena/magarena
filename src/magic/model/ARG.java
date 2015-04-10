@@ -69,27 +69,23 @@ public class ARG {
         return m.group("pt");
     }
     
-    public static final String IT = "((?<rn>rn)|(?<sn>sn)|(?<it>it))";
+    public static final String IT = "((?<rn>rn)|(?<sn>sn))";
     public static MagicPermanent itPermanent(final MagicEvent event, final Matcher m) {
-        if (m.group("it") != null) {
-            return event.hasRef() ? event.getRefPermanent() : event.getPermanent();
-        } else if (m.group("rn") != null) {
+        if (m.group("rn") != null) {
             return event.getRefPermanent();
         } else {
             return event.getPermanent();
         }
     }
     public static MagicSource itSource(final MagicEvent event, final Matcher m) {
-        if (m.group("it") != null) {
-            return event.hasRef() ? event.getRefSource() : event.getSource();
-        } else if (m.group("rn") != null) {
+        if (m.group("rn") != null) {
             return event.getRefSource();
         } else {
             return event.getSource();
         }
     }
     
-    public static final String YOU = "((?<rn>(rn|it))|(?<pn>(pn||you)))";
+    public static final String YOU = "((?<rn>(rn))|(?<pn>(pn||you)))";
     public static MagicTarget youTarget(final MagicEvent event, final Matcher m) {
         if (m.group("rn") != null) {
             return event.getRefTarget();

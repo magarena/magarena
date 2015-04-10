@@ -6,7 +6,7 @@ type=Legendary,Artifact,Creature
 subtype=Golem
 cost={5}
 pt=4/4
-ability=Whenever SN blocks or becomes blocked, it gets -4/+4 until end of turn.
+ability=Whenever SN blocks or becomes blocked, SN gets -4/+4 until end of turn.
 timing=fmain
 requires_groovy_code
 oracle=Whenever Karn, Silver Golem blocks or becomes blocked, it gets -4/+4 until end of turn. {1}: Target noncreature artifact becomes an artifact creature with power and toughness each equal to its converted mana cost until end of turn.

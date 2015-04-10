@@ -6,6 +6,6 @@ type=Creature
 subtype=Kavu
 cost={1}{B}{R}
 pt=2/2
-ability=Whenever SN attacks, it gets +2/+0 until end of turn.
+ability=Whenever SN attacks, SN gets +2/+0 until end of turn.
 timing=main
 oracle=Whenever Vicious Kavu attacks, it gets +2/+0 until end of turn.

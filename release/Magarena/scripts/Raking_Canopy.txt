@@ -4,6 +4,6 @@ value=3.640
 rarity=U
 type=Enchantment
 cost={1}{G}{G}
-ability=Whenever a creature with flying attacks you, SN deals 4 damage to it.
+ability=Whenever a creature with flying attacks you, SN deals 4 damage to RN.
 timing=enchantment
 oracle=Whenever a creature with flying attacks you, Raking Canopy deals 4 damage to it.

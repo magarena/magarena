@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Soldier
 cost={1}{B}
 pt=1/1
-ability=Whenever SN attacks, it gets +2/+0 until end of turn.
+ability=Whenever SN attacks, SN gets +2/+0 until end of turn.
 timing=main
 oracle=Whenever Wei Ambush Force attacks, it gets +2/+0 until end of turn.

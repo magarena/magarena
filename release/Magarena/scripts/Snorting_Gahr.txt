@@ -6,6 +6,6 @@ type=Creature
 subtype=Rhino,Beast
 cost={2}{G}{G}
 pt=3/3
-ability=Whenever SN becomes blocked, it gets +2/+2 until end of turn.
+ability=Whenever SN becomes blocked, SN gets +2/+2 until end of turn.
 timing=main
 oracle=Whenever Snorting Gahr becomes blocked, it gets +2/+2 until end of turn.

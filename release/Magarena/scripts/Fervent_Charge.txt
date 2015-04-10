@@ -4,6 +4,6 @@ value=4.000
 rarity=R
 type=Enchantment
 cost={1}{W}{B}{R}
-ability=Whenever a creature you control attacks, it gets +2/+2 until end of turn.
+ability=Whenever a creature you control attacks, RN gets +2/+2 until end of turn.
 timing=enchantment
 oracle=Whenever a creature you control attacks, it gets +2/+2 until end of turn.

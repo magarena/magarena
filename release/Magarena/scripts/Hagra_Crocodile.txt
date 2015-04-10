@@ -6,7 +6,6 @@ type=Creature
 subtype=Crocodile
 cost={3}{B}
 pt=3/1
-ability=SN can't block.;\
-        Whenever a land enters the battlefield under your control, SN gets +2/+2 until end of turn.
+ability=SN can't block.;Whenever a land enters the battlefield under your control, SN gets +2/+2 until end of turn.
 timing=main
 oracle=Hagra Crocodile can't block. Landfall — Whenever a land enters the battlefield under your control, Hagra Crocodile gets +2/+2 until end of turn.

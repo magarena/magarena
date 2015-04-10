@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Soldier
 cost={2}{R}
 pt=3/4
-ability=When SN attacks or blocks, destroy it at end of combat.
+ability=When SN attacks or blocks, destroy SN at end of combat.
 timing=main
 oracle=When Ceremonial Guard attacks or blocks, destroy it at end of combat.
