@@ -2743,7 +2743,7 @@ public enum MagicRuleEventAction {
     SelfBecomes(
         "sn become(s)? a(n)?( )?(?<pt>[0-9]+/[0-9]+)? (?<all>.*?)( (with|and gains) (?<ability>.*?))?(?<duration> until end of turn)?(?<additionTo>(\\. It's| that's) still.*)?\\.",
         MagicTiming.Animate,
-        "Animate"
+        "Becomes"
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
@@ -2775,7 +2775,7 @@ public enum MagicRuleEventAction {
     SelfBecomesAlt(
         "(?<duration>until end of turn, )sn becomes a(n)?( )?(?<pt>[0-9]+/[0-9]+)? (?<all>.*?)( (with|and gains) (?<ability>.*?))?(?<additionTo>((\\.)? It's| that's) still.*)?\\.",
         MagicTiming.Animate,
-        "Animate"
+        "Becomes"
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
@@ -2789,7 +2789,7 @@ public enum MagicRuleEventAction {
     ChosenBecomesAddition(
         "(?<choice>[^\\.]*) become(s)?( a| an)?( )?(?<pt>[0-9]+/[0-9]+)? (?<all>.*?)( (with|and gains) (?<ability>.*?))?(?<additionTo> in addition to its other [a-z]*)(?<duration> until end of turn)?\\.",
         MagicTiming.Animate,
-        "Animate"
+        "Becomes"
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
@@ -2799,7 +2799,7 @@ public enum MagicRuleEventAction {
     ChosenBecomesAlt(
         "(?<duration>until end of turn, )(?<choice>[^\\.]*) becomes( a| an)?( )?(?<pt>[0-9]+/[0-9]+)? (?<all>.*?)( (with|and gains) (?<ability>.*?))?(?<additionTo>((\\.)? It's| that's) still.*)?\\.",
         MagicTiming.Animate,
-        "Animate"
+        "Becomes"
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
@@ -2809,7 +2809,7 @@ public enum MagicRuleEventAction {
     ChosenBecomes(
         "(?<choice>[^\\.]*) become(s)?( a| an)?( )?(?<pt>[0-9]+/[0-9]+)? (?<all>.*?)( (with|and gains) (?<ability>.*?))?(?<duration> until end of turn)?(?<additionTo>(\\. It's| that's) still.*)?\\.",
         MagicTiming.Animate,
-        "Animate"
+        "Becomes"
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
