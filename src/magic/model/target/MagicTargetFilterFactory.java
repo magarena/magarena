@@ -1406,6 +1406,15 @@ public class MagicTargetFilterFactory {
             return targetType==MagicTargetType.Graveyard;
         }
     };
+    
+    public static final MagicCardFilterImpl CREATURE_CARD_POWER_LEQ_2_FROM_GRAVEYARD=new MagicCardFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
+            return target.getPower() <= 2 && target.hasType(MagicType.Creature);
+        }
+        public boolean acceptType(final MagicTargetType targetType) {
+            return targetType==MagicTargetType.Graveyard;
+        }
+    };
 
     public static final MagicPermanentFilterImpl NONLAND_PERMANENT_CMC_LEQ_3 = new MagicCMCPermanentFilter(
         MagicTargetFilterFactory.NONLAND_PERMANENT,
@@ -2067,6 +2076,7 @@ public class MagicTargetFilterFactory {
         // <color|type|subtype> creature card from your graveyard
         single.put("creature card with converted mana cost 3 or less from your graveyard", CREATURE_CARD_CMC_LEQ_3_FROM_GRAVEYARD);
         single.put("creature card with converted mana cost 2 or less from your graveyard", CREATURE_CARD_CMC_LEQ_2_FROM_GRAVEYARD); 
+        single.put("creature card with power 2 or less from your graveyard", CREATURE_CARD_POWER_LEQ_2_FROM_GRAVEYARD); 
         single.put("creature card with infect from your graveyard", CREATURE_CARD_WITH_INFECT_FROM_GRAVEYARD);
         single.put("creature card with scavenge from your graveyard", MagicTargetFilterFactory.PAYABLE_CREATURE_CARD_FROM_GRAVEYARD);
         
