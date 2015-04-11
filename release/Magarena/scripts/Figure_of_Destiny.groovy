@@ -58,7 +58,10 @@ def AB3 = new MagicStatic(MagicLayer.Ability) {
 
 [
     new MagicPermanentActivation(
-        [MagicConditionFactory.NotSubType(MagicSubType.Spirit)],
+        [
+            MagicCondition.NOT_EXCLUDE_COMBAT_CONDITION,
+            MagicConditionFactory.NotSubType(MagicSubType.Spirit)
+        ],
         new MagicActivationHints(MagicTiming.Animate),
         "Spirit"
     ) {
@@ -85,6 +88,7 @@ def AB3 = new MagicStatic(MagicLayer.Ability) {
     },
     new MagicPermanentActivation(
         [
+            MagicCondition.NOT_EXCLUDE_COMBAT_CONDITION,
             MagicConditionFactory.HasSubType(MagicSubType.Spirit),
             MagicConditionFactory.NotSubType(MagicSubType.Warrior)
         ],
@@ -117,6 +121,7 @@ def AB3 = new MagicStatic(MagicLayer.Ability) {
     },
     new MagicPermanentActivation(
         [
+            MagicCondition.NOT_EXCLUDE_COMBAT_CONDITION,
             MagicConditionFactory.HasSubType(MagicSubType.Warrior),
             MagicConditionFactory.NotSubType(MagicSubType.Avatar)
         ],

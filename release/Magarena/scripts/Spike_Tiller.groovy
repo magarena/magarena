@@ -14,7 +14,7 @@ def ST = new MagicStatic(MagicLayer.Type) {
 [
     new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Animate),
-        "Animate"
+        "Becomes"
     ) {
 
         @Override

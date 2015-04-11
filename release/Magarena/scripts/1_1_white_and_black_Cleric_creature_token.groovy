@@ -1,7 +1,7 @@
 [
     new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Removal),
-        "Animate"
+        "Reanimate"
     ) {
 
         @Override

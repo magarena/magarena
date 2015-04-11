@@ -25,8 +25,9 @@ def AB = new MagicStatic(MagicLayer.Ability, MagicStatic.UntilEOT) {
 
 [
     new MagicPermanentActivation(
+        [MagicCondition.NOT_EXCLUDE_COMBAT_CONDITION],
         new MagicActivationHints(MagicTiming.Animate),
-        "3/2"
+        "Becomes"
     ) {
         @Override
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {

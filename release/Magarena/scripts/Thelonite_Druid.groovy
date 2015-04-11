@@ -14,7 +14,7 @@ def TY = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
 [
     new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Animate),
-        "Animate"
+        "Becomes"
     ) {
         @Override
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {

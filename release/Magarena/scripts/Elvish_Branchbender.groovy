@@ -14,7 +14,7 @@ def choice = Positive("target Forest");
 [
     new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Animate),
-        "Animate"
+        "Becomes"
     ) {
 
         @Override

@@ -23,7 +23,7 @@ def ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
 [
     new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Animate),
-        "Animate"
+        "Becomes"
     ) {
 
         @Override

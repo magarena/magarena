@@ -20,7 +20,7 @@ def ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
     new MagicPermanentActivation(
         [MagicCondition.NOT_EXCLUDE_COMBAT_CONDITION],
         new MagicActivationHints(MagicTiming.Animate),
-        "Animate"
+        "Becomes"
     ) {
         @Override
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {

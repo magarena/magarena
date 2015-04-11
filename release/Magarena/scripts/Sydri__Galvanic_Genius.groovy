@@ -25,7 +25,7 @@ def TP = new MagicTargetPicker<MagicPermanent>() {
 [
     new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Animate),
-        "Animate"
+        "Becomes"
     ) {
 
         @Override

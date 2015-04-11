@@ -2,8 +2,9 @@ def EFFECT = MagicRuleEventAction.create("SN becomes a 4/4 Horror creature with 
 
 [
    new MagicPermanentActivation(
+        [MagicCondition.NOT_EXCLUDE_COMBAT_CONDITION],
         new MagicActivationHints(MagicTiming.Animate),
-        "Animate"
+        "Becomes"
     ) {
 
        @Override

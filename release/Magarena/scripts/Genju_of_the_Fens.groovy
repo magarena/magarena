@@ -32,7 +32,7 @@ def AB = new MagicStatic(MagicLayer.Ability, MagicStatic.UntilEOT) {
 [
     new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Animate),
-        "Animate"
+        "Becomes"
     ) {
 
         @Override

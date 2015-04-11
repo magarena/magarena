@@ -1,6 +1,6 @@
 [
     new MagicPermanentActivation(
-        new MagicActivationHints(MagicTiming.Animate),
+        new MagicActivationHints(MagicTiming.Pump),
         "Reanimate"
     ) {
 
