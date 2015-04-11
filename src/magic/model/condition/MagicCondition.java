@@ -669,6 +669,15 @@ public interface MagicCondition {
         }
     };
     
+    MagicCondition OPP_MORE_LANDS = new MagicCondition() {
+        @Override
+        public boolean accept(final MagicSource source) {
+            final MagicGame game = source.getGame();
+            return source.getOpponent().getNrOfPermanents(MagicType.Land) >
+                   source.getController().getNrOfPermanents(MagicType.Land);
+        }
+    };
+    
     MagicCondition FOUR_OR_MORE_SNOW_PERMANENTS = new MagicCondition() {
         @Override
         public boolean accept(final MagicSource source) {

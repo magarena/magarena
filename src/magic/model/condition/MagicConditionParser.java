@@ -362,6 +362,11 @@ public enum MagicConditionParser {
             return MagicCondition.MORE_LANDS_THAN_ATTACKING;
         }
     },
+    OpponentMoreLands("an opponent controls more lands than you") {
+        public MagicCondition toCondition(final Matcher arg) {
+            return MagicCondition.OPP_MORE_LANDS;
+        }
+    },
     Morbid("a creature died this turn") {
         public MagicCondition toCondition(final Matcher arg) {
             return MagicCondition.CREATURE_DIED_THIS_TURN;
