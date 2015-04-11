@@ -4,6 +4,6 @@ value=4.149
 rarity=C
 type=Sorcery
 cost={2}{G}{G}
+effect=Destroy target land.~Search your library for a Forest card and put that card onto the battlefield tapped. Then shuffle your library.
 timing=main
-requires_groovy_code
 oracle=Destroy target land. Search your library for a Forest card and put that card onto the battlefield tapped. Then shuffle your library.

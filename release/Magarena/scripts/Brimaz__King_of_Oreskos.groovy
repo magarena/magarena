@@ -1,26 +1,4 @@
 [
-    new MagicWhenSelfAttacksTrigger() {
-        @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent attacker) {
-            return new MagicEvent(
-                permanent,
-                this,
-                "PN puts a 1/1 white Cat Soldier creature token with vigilance onto the battlefield attacking."
-            );
-        }
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicPlayer player=event.getPlayer();
-            game.doAction(new MagicPlayCardAction(
-                MagicCard.createTokenCard(
-                    TokenCardDefinitions.get("1/1 white Cat Soldier creature token with vigilance"),
-                    player
-                ),
-                player,
-                [MagicPlayMod.ATTACKING]
-            ));
-        }
-    },
     new MagicWhenSelfBlocksTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent blocker) {
