@@ -175,7 +175,7 @@ public enum MagicPlayMod implements MagicPermanentAction {
     }
     
     public static List<MagicPlayMod> build(final String text) {
-        final String[] tokens = text != null ? text.split("\\. |, | and ") : new String[0];
+        final String[] tokens = text != null ? text.split("\\. | and ") : new String[0];
         final List<MagicPlayMod> mods = new LinkedList<>();
         for (final String name : tokens) {
             mods.add(MagicPlayMod.getPlayMod(name));
