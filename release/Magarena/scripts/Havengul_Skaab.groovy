@@ -12,10 +12,9 @@
                 targetChoice,
                 MagicBounceTargetPicker.create(),
                 this,
-                "Return another creature PN controls\$ to its owner's hand."
+                "PN returns another creature PN controls\$ to its owner's hand."
             );
         }
-
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
