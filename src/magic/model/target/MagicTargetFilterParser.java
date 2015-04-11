@@ -14,6 +14,11 @@ public enum MagicTargetFilterParser {
             return MagicTargetFilterFactory.cardName(ARG.any(arg)).from(MagicTargetType.Library);
         }
     },
+    CardNamedFromYourHand("card named " + ARG.ANY + " from your hand") {
+        public MagicTargetFilter<?> toTargetFilter(final Matcher arg) {
+            return MagicTargetFilterFactory.cardName(ARG.any(arg)).from(MagicTargetType.Hand);
+        }
+    },
     CardNamedFromYourGraveyard("card named " + ARG.ANY + " from your graveyard") {
         public MagicTargetFilter<?> toTargetFilter(final Matcher arg) {
             return MagicTargetFilterFactory.cardName(ARG.any(arg)).from(MagicTargetType.Graveyard);
