@@ -6,6 +6,6 @@ type=Creature
 subtype=Treefolk,Shaman
 cost={4}{G}
 pt=3/5
+ability={T}, Exile a Treefolk card from your graveyard: Search your library for up to two Forest cards and put them onto the battlefield tapped. Then shuffle your library.
 timing=main
-requires_groovy_code
 oracle={T}, Exile a Treefolk card from your graveyard: Search your library for up to two Forest cards and put them onto the battlefield tapped. Then shuffle your library.

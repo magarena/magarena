@@ -4,6 +4,6 @@ value=2.882
 rarity=C
 type=Sorcery
 cost={3}{G}
+effect=Search your library for up to two Forest cards and put them onto the battlefield tapped. Then shuffle your library.
 timing=main
-requires_groovy_code
 oracle=Search your library for up to two Forest cards and put them onto the battlefield tapped. Then shuffle your library.

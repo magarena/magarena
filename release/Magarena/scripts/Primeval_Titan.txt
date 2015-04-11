@@ -6,7 +6,8 @@ type=Creature
 subtype=Giant
 cost={4}{G}{G}
 pt=6/6
-ability=trample
+ability=Trample.;\
+        Whenever SN enters the battlefield, you may search your library for up to two land cards, put them onto the battlefield tapped, then shuffle your library.;\
+        Whenever SN attacks, you may search your library for up to two land cards, put them onto the battlefield tapped, then shuffle your library.
 timing=main
-requires_groovy_code
 oracle=Trample. Whenever Primeval Titan enters the battlefield or attacks, you may search your library for up to two land cards, put them onto the battlefield tapped, then shuffle your library.

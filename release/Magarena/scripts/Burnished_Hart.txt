@@ -6,6 +6,6 @@ type=Artifact,Creature
 subtype=Elk
 cost={3}
 pt=2/2
+ability={3}, Sacrifice SN: Search your library for up to two basic land cards, put them onto the battlefield tapped, then shuffle your library.
 timing=main
-requires_groovy_code
 oracle={3}, Sacrifice Burnished Hart: Search your library for up to two basic land cards, put them onto the battlefield tapped, then shuffle your library.
