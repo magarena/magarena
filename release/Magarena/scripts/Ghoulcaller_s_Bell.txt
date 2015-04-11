@@ -5,5 +5,5 @@ rarity=C
 type=Artifact
 cost={1}
 ability={T}: Each player puts the top card of his or her library into his or her graveyard.
-timing=main
+timing=artifact
 oracle={T}: Each player puts the top card of his or her library into his or her graveyard.
