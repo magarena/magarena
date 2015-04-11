@@ -40,16 +40,17 @@ def AB = new MagicStatic(MagicLayer.Ability, MagicStatic.UntilEOT) {
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
+                source,
                 source.getEnchantedPermanent(),
                 this,
-                "SN becomes a 3/2 blue Spirit creature with flying until end of turn." +
+                "RN becomes a 3/2 blue Spirit creature with flying until end of turn." +
                 "It's still a land."
             );
         }
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicBecomesCreatureAction(event.getPermanent(),PT,AB,ST,LC));
+            game.doAction(new MagicBecomesCreatureAction(event.getRefPermanent(),PT,AB,ST,LC));
         }
     },
     new MagicWhenOtherDiesTrigger() {

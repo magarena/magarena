@@ -37,16 +37,17 @@ def AB = new MagicStatic(MagicLayer.Ability, MagicStatic.UntilEOT) {
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
+                source,
                 source.getEnchantedPermanent(),
                 this,
-                "SN becomes a legendary 8/12 Spirit creature with trample until end of turn." +
+                "RN becomes a legendary 8/12 Spirit creature with trample until end of turn." +
                 "It's still a land."
             );
         }
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicBecomesCreatureAction(event.getPermanent(),PT,AB,ST));
+            game.doAction(new MagicBecomesCreatureAction(event.getRefPermanent(),PT,AB,ST));
         }
     },
     new MagicWhenOtherDiesTrigger() {
