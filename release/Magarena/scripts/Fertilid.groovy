@@ -24,14 +24,14 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
                 game.addEvent(new MagicSearchOntoBattlefieldEvent(
-                event,
-                new MagicFromCardFilterChoice(
-                    BASIC_LAND_CARD_FROM_LIBRARY,
-                    1, 
-                    true, 
-                    "to put onto the battlefield tapped"
-                ),
-                MagicPlayMod.TAPPED
+                    event,
+                    new MagicFromCardFilterChoice(
+                        BASIC_LAND_CARD_FROM_LIBRARY,
+                        1, 
+                        true, 
+                        "to put onto the battlefield tapped"
+                    ),
+                    MagicPlayMod.TAPPED
                 ));
             });
         }
