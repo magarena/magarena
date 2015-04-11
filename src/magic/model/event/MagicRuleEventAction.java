@@ -1888,6 +1888,33 @@ public enum MagicRuleEventAction {
             };
         }
     },
+    SearchMultiLibraryToBattlefield(
+        "search your library for up to (?<amount>[a-z]+) (?<card>[^\\.]*)(,| and) put (them|those cards) onto the battlefield( )?(?<mods>.+)?(.|,) ((T|t)hen|If you do,) shuffle your library\\.",
+        MagicTiming.Token,
+        "Search"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            final int amount = EnglishToInt.convert(matcher.group("amount"));
+            final MagicTargetFilter<MagicCard> filter = MagicTargetFilterFactory.multipleCards(matcher.group("card") + " from your library");
+            final List<MagicPlayMod> mods = MagicPlayMod.build(matcher.group("mods"));
+            return new MagicEventAction () {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    game.addEvent(new MagicSearchOntoBattlefieldEvent(
+                        event,
+                        new MagicFromCardFilterChoice(
+                            filter,
+                            amount,
+                            true,
+                            "to put onto the battlefield"
+                        ),
+                        mods
+                    ));
+                }
+            };
+        }
+    },
     FromHandToBattlefield(
         "put (?<card>[^\\.]*hand) onto the battlefield( )?(?<mods>.+)?\\.",
         MagicTiming.Token,
