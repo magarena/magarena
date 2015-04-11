@@ -1863,7 +1863,7 @@ public enum MagicRuleEventAction {
     },
     SearchLibraryToBattlefield(
         "search your library for (?<card>[^\\.]*)(,| and) put (it|that card) onto the battlefield(?<tapped> tapped)?(.|,) ((T|t)hen|If you do,) shuffle your library\\.",
-        MagicTiming.Pump,
+        MagicTiming.Token,
         "Search"
     ) {
         @Override
@@ -1885,7 +1885,7 @@ public enum MagicRuleEventAction {
     },
     FromHandToBattlefield(
         "put (?<card>[^\\.]*hand) onto the battlefield(?<tapped> tapped)?\\.",
-        MagicTiming.Pump,
+        MagicTiming.Token,
         "Put"
     ) {
         @Override
@@ -2210,7 +2210,7 @@ public enum MagicRuleEventAction {
     },
     Manifest(
         "manifest the top (?<amount>[a-z]+)?( )?card(s)? of your library\\.",
-        MagicTiming.Pump,
+        MagicTiming.Token,
         "Manifest"
     ) {
         @Override
