@@ -143,10 +143,28 @@ public enum MagicPlayMod implements MagicPermanentAction {
         }
     },
     ;
-    
+
     public void doAction(final MagicPermanent perm) {
         doAction(perm.getGame(), perm);
     }
 
     abstract protected void doAction(final MagicGame game, final MagicPermanent perm);
+    
+    public static MagicPlayMod getPlayMod(final String name) {
+        for (final MagicPlayMod mod : values()) {
+            if (mod.toString().equalsIgnoreCase(name)) {
+                return mod;
+            }
+        }
+        throw new RuntimeException("unknown play mod \"" + name + "\"");
+    }
+    
+    public static List<MagicPlayMod> build(final String text) {
+        final String[] tokens = text != null ? text.split(", | and | ") : new String[0];
+        final List<MagicPlayMod> mods = new LinkedList<>();
+        for (final String name : tokens) {
+            mods.add(MagicPlayMod.getPlayMod(name));
+        }
+        return mods;
+    }
 }

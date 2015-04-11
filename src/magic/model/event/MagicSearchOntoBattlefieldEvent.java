@@ -11,17 +11,28 @@ import magic.model.action.MagicPlayMod;
 import magic.model.action.MagicRemoveCardAction;
 import magic.model.action.MagicShuffleLibraryAction;
 import magic.model.action.MagicAIRevealAction;
+import magic.model.action.MagicPermanentAction;
 import magic.model.choice.MagicChoice;
 import magic.model.choice.MagicCardChoiceResult;
 import magic.model.target.MagicGraveyardTargetPicker;
 
+import java.util.Arrays;
+import java.util.List;
+
 public class MagicSearchOntoBattlefieldEvent extends MagicEvent {
+    public MagicSearchOntoBattlefieldEvent(final MagicEvent event, final MagicChoice choice, final MagicPermanentAction... mods) {
+        this(event.getSource(), event.getPlayer(), choice, Arrays.asList(mods));
+    }
     
-    public MagicSearchOntoBattlefieldEvent(final MagicEvent event, final MagicChoice choice, final MagicPlayMod... mods) {
+    public MagicSearchOntoBattlefieldEvent(final MagicEvent event, final MagicChoice choice, final List<? extends MagicPermanentAction> mods) {
         this(event.getSource(), event.getPlayer(), choice, mods);
     }
+    
+    public MagicSearchOntoBattlefieldEvent(final MagicSource source, final MagicPlayer player, final MagicChoice choice, final MagicPermanentAction... mods) {
+        this(source, player, choice, Arrays.asList(mods));
+    }
 
-    public MagicSearchOntoBattlefieldEvent(final MagicSource source, final MagicPlayer player, final MagicChoice choice, final MagicPlayMod... mods) {
+    public MagicSearchOntoBattlefieldEvent(final MagicSource source, final MagicPlayer player, final MagicChoice choice, final List<? extends MagicPermanentAction> mods) {
         super(
             source,
             player,
@@ -37,7 +48,7 @@ public class MagicSearchOntoBattlefieldEvent extends MagicEvent {
         game.doAction(new MagicAIRevealAction(getPlayer().getLibrary()));
     }
 
-    private static final MagicEventAction EventAction(final MagicPlayMod... mods) {
+    private static final MagicEventAction EventAction(final List<? extends MagicPermanentAction> mods) {
         return new MagicEventAction() {
             @Override
             public void executeEvent(final MagicGame game, final MagicEvent event) {

@@ -1862,44 +1862,42 @@ public enum MagicRuleEventAction {
         }
     },
     SearchLibraryToBattlefield(
-        "search your library for (?<card>[^\\.]*)(,| and) put (it|that card) onto the battlefield(?<tapped> tapped)?(.|,) ((T|t)hen|If you do,) shuffle your library\\.",
+        "search your library for (?<card>[^\\.]*)(,| and) put (it|that card) onto the battlefield( )?(?<mods>.+)?(.|,) ((T|t)hen|If you do,) shuffle your library\\.",
         MagicTiming.Token,
         "Search"
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
             final MagicTargetChoice choice = new MagicTargetChoice(getHint(matcher), matcher.group("card")+" from your library");
+            final List<MagicPlayMod> mods = MagicPlayMod.build(matcher.group("mods"));
             return new MagicEventAction () {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
                     game.addEvent(new MagicSearchOntoBattlefieldEvent(
                         event,
                         choice,
-                        matcher.group("tapped") != null ? 
-                            MagicPlayMod.TAPPED : 
-                            MagicPlayMod.NONE
+                        mods
                     ));
                 }
             };
         }
     },
     FromHandToBattlefield(
-        "put (?<card>[^\\.]*hand) onto the battlefield(?<tapped> tapped)?\\.",
+        "put (?<card>[^\\.]*hand) onto the battlefield( )?(?<mods>.+)?\\.",
         MagicTiming.Token,
         "Put"
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
             final MagicTargetChoice choice = new MagicTargetChoice(getHint(matcher), matcher.group("card"));
+            final List<MagicPlayMod> mods = MagicPlayMod.build(matcher.group("mods"));
             return new MagicEventAction () {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
                     game.addEvent(new MagicPutOntoBattlefieldEvent(
                         event,
                         choice,
-                        matcher.group("tapped") != null ? 
-                            MagicPlayMod.TAPPED : 
-                            MagicPlayMod.NONE
+                        mods
                     ));
                 }
             };
@@ -2129,29 +2127,28 @@ public enum MagicRuleEventAction {
         }
     ),
     TokenSingle(
-        "put (a|an) (?<name>[^\\.]*) onto the battlefield(?<tapped> tapped)?\\.",
+        "put (a|an) (?<name>[^\\.]*) onto the battlefield( )?(?<mods>.+)?\\.",
         MagicTiming.Token,
         "Token"
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
             final MagicCardDefinition tokenDef = TokenCardDefinitions.get(matcher.group("name"));
+            final List<MagicPlayMod> mods = MagicPlayMod.build(matcher.group("mods"));
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
                     game.doAction(new MagicPlayTokenAction(
                         event.getPlayer(),
                         tokenDef,
-                        matcher.group("tapped") != null ? 
-                            MagicPlayMod.TAPPED : 
-                            MagicPlayMod.NONE
+                        mods
                     ));
                 }
             };
         }
     },
     TokenMany(
-        "put(s)? (?<amount>[a-z]+) (?<name>[^\\.]*tokens[^\\.]*) onto the battlefield\\.",
+        "put(s)? (?<amount>[a-z]+) (?<name>[^\\.]*tokens[^\\.]*) onto the battlefield( )?(?<mods>.+)?\\.",
         MagicTiming.Token,
         "Token"
     ) {
@@ -2160,14 +2157,17 @@ public enum MagicRuleEventAction {
             final int amount = EnglishToInt.convert(matcher.group("amount"));
             final String tokenName = matcher.group("name").replace("tokens", "token");
             final MagicCardDefinition tokenDef = TokenCardDefinitions.get(tokenName);
+            final List<MagicPlayMod> mods = MagicPlayMod.build(matcher.group("mods"));
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    game.doAction(new MagicPlayTokensAction(
-                        event.getPlayer(),
-                        tokenDef,
-                        amount
-                    ));
+                    for (int i = 0; i < amount; i++) {
+                        game.doAction(new MagicPlayTokenAction(
+                            event.getPlayer(),
+                            tokenDef,
+                            mods
+                        ));
+                    }
                 }
             };
         }
