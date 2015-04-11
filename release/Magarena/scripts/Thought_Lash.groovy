@@ -12,29 +12,29 @@
                 new MagicMayChoice("Pay cumulative upkeep?"),
                 this,
                 "PN may\$ exile one card from the top of his or her library for each Age counter on SN. " +
-                " If he or she doesn't, sacrifice SN and exile all cards from PN's library."
+                "If he or she doesn't, sacrifice SN and exile all cards from PN's library."
             );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {  
                 final MagicCardList topN = event.getPlayer().getLibrary().getCardsFromTop(event.getPermanent().getCounters(MagicCounterType.Age));
-            for (final MagicCard card : topN) {
-                game.doAction(new MagicRemoveCardAction(
-                    card,
-                    MagicLocationType.OwnersLibrary
-                ));
-                game.doAction(new MagicMoveCardAction(
-                    card,
-                    MagicLocationType.OwnersLibrary,
-                    MagicLocationType.Exile
-                ));
-            }
-        } else {
-            game.doAction(new MagicSacrificeAction(event.getPermanent()));
-            for (final MagicCard card : new MagicCardList(event.getPlayer().getLibrary())) {
-                game.doAction(new MagicRemoveCardAction(card, MagicLocationType.OwnersLibrary));
-                game.doAction(new MagicMoveCardAction(card, MagicLocationType.OwnersLibrary, MagicLocationType.Exile));
+                for (final MagicCard card : topN) {
+                    game.doAction(new MagicRemoveCardAction(
+                        card,
+                        MagicLocationType.OwnersLibrary
+                    ));
+                    game.doAction(new MagicMoveCardAction(
+                        card,
+                        MagicLocationType.OwnersLibrary,
+                        MagicLocationType.Exile
+                    ));
+                }
+            } else {
+                game.doAction(new MagicSacrificeAction(event.getPermanent()));
+                for (final MagicCard card : new MagicCardList(event.getPlayer().getLibrary())) {
+                    game.doAction(new MagicRemoveCardAction(card, MagicLocationType.OwnersLibrary));
+                    game.doAction(new MagicMoveCardAction(card, MagicLocationType.OwnersLibrary, MagicLocationType.Exile));
                 }
             }
         }

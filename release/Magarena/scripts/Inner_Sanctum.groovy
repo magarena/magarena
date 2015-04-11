@@ -12,7 +12,7 @@
                 new MagicMayChoice("Pay cumulative upkeep?"),
                 this,
                 "PN may\$ lose 2 life for each Age counter on SN. " +
-                " If he or she doesn't, sacrifice SN."
+                "If he or she doesn't, sacrifice SN."
             );
         }
         @Override
@@ -27,12 +27,8 @@
     new MagicIfDamageWouldBeDealtTrigger(MagicTrigger.PREVENT_DAMAGE) {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
-            if (damage.isTargetCreature()) {
-                final MagicPermanent creature = damage.getTargetPermanent();
-                if (creature.isFriend(permanent)) {
-                    // Prevention effect.
-                    damage.prevent();
-                }
+            if (damage.isTargetCreature() && permanent.isFriend(damage.getTarget())) {
+                damage.prevent();
             }
             return MagicEvent.NONE;
         }

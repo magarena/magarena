@@ -11,7 +11,7 @@
                 permanent,
                 new MagicMayChoice("Pay cumulative upkeep?"),
                 this,
-                "PN may\$ have opponent gain 1 life for each Age counter on SN. " +
+                "PN may\$ have an opponent gain 1 life for each Age counter on SN. " +
                 "If he or she doesn't, sacrifice SN."
             );
         }

@@ -25,7 +25,7 @@ def A_GREEN_OR_WHITE_PERMANENT_YOU_CONTROL = new MagicTargetChoice(
                 new MagicMayChoice("Pay cumulative upkeep?"),
                 this,
                 "PN may\$ lose 1 life for each Age counter on SN." +
-                " If he or she doesn't, sacrifice SN."
+                "If he or she doesn't, sacrifice SN."
             );
         }
         @Override
