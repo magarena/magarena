@@ -1,12 +1,18 @@
 package magic.model.event;
 
+import java.util.Collection;
+import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 import magic.data.EnglishToInt;
 import magic.data.TokenCardDefinitions;
+import magic.model.ARG;
 import magic.model.MagicAbility;
 import magic.model.MagicAbilityList;
 import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
-import magic.model.MagicColor;
+import magic.model.MagicCopyable;
 import magic.model.MagicCounterType;
 import magic.model.MagicGame;
 import magic.model.MagicLocationType;
@@ -15,38 +21,26 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPermanentState;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
-import magic.model.MagicCopyable;
-import magic.model.ARG;
-import magic.model.MagicSubType;
-import magic.model.MagicType;
+import magic.model.action.*;
 import magic.model.choice.MagicChoice;
 import magic.model.choice.MagicFromCardFilterChoice;
 import magic.model.choice.MagicMayChoice;
-import magic.model.choice.MagicPayManaCostChoice;
 import magic.model.choice.MagicOrChoice;
+import magic.model.choice.MagicPayManaCostChoice;
 import magic.model.choice.MagicTargetChoice;
-import magic.model.condition.MagicCondition;
-import magic.model.condition.MagicConditionParser;
 import magic.model.condition.MagicArtificialCondition;
+import magic.model.condition.MagicCondition;
 import magic.model.condition.MagicConditionFactory;
+import magic.model.condition.MagicConditionParser;
 import magic.model.mstatic.MagicStatic;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.stack.MagicItemOnStack;
+import magic.model.target.*;
 import magic.model.trigger.MagicAtEndOfCombatTrigger;
 import magic.model.trigger.MagicAtEndOfTurnTrigger;
 import magic.model.trigger.MagicAtUpkeepTrigger;
 import magic.model.trigger.MagicIfDamageWouldBeDealtTrigger;
 import magic.model.trigger.MagicReboundTrigger;
-import magic.model.action.*;
-import magic.model.target.*;
-
-import java.util.Arrays;
-import java.util.List;
-import java.util.Set;
-import java.util.LinkedList;
-import java.util.Collection;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 public enum MagicRuleEventAction {
     DestroyGroup(
