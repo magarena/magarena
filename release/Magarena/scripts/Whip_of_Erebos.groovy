@@ -1,7 +1,7 @@
 [
     new MagicPermanentActivation(
         [MagicCondition.SORCERY_CONDITION],
-        new MagicActivationHints(MagicTiming.Pump),
+        new MagicActivationHints(MagicTiming.Token),
         "Reanimate"
     ){
         @Override

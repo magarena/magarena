@@ -1534,7 +1534,7 @@ public enum MagicRuleEventAction {
     ),
     ReanimateCardSelf(
         "return sn from your graveyard to the battlefield\\.",
-        MagicTiming.Pump,
+        MagicTiming.Token,
         "Reanimate",
         new MagicEventAction() {
             @Override
@@ -1909,7 +1909,7 @@ public enum MagicRuleEventAction {
         "return (?<choice>[^\\.]*graveyard) to the battlefield\\.",
         MagicTargetHint.None,
         MagicGraveyardTargetPicker.PutOntoBattlefield,
-        MagicTiming.Pump,
+        MagicTiming.Token,
         "Return",
         new MagicEventAction() {
             @Override
@@ -1929,7 +1929,7 @@ public enum MagicRuleEventAction {
         "put (?<choice>[^\\.]*graveyard) onto the battlefield under your control\\.",
         MagicTargetHint.None,
         MagicGraveyardTargetPicker.PutOntoBattlefield,
-        MagicTiming.Pump,
+        MagicTiming.Token,
         "Return",
         new MagicEventAction() {
             @Override
