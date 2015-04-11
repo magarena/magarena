@@ -10,11 +10,11 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            new MagicBounceChosenPermanentEvent(
+            game.addEvent(new MagicBounceChosenPermanentEvent(
                 event.getSource(), 
                 event.getPlayer(),
                 PosOther("target creature you control", event.getPermanent())
-            );
+            ));
         }
     }
 ]
