@@ -22,7 +22,7 @@ import magic.model.event.MagicMatchedCostEvent;
 import magic.model.event.MagicPayManaCostEvent;
 
 public enum MagicPlayMod implements MagicPermanentAction {
-    EXILE_AT_END_OF_COMBAT() {
+    EXILE_AT_END_OF_COMBAT("Exile that token at end of combat") {
         protected void doAction(final MagicGame game, final MagicPermanent perm) {
             game.doAction(new MagicAddTriggerAction(perm, MagicAtEndOfCombatTrigger.Exile));
         }
@@ -53,12 +53,12 @@ public enum MagicPlayMod implements MagicPermanentAction {
             game.doAction(new MagicAddTriggerAction(perm, MagicAtEndOfTurnTrigger.Return));
         }
     },
-    ATTACKING() {
+    ATTACKING("attacking") {
         protected void doAction(final MagicGame game, final MagicPermanent perm) {
             perm.setState(MagicPermanentState.Attacking);
         }
     },
-    TAPPED() {
+    TAPPED("tapped") {
         protected void doAction(final MagicGame game, final MagicPermanent perm) {
             perm.setState(MagicPermanentState.Tapped);
         }
@@ -144,6 +144,21 @@ public enum MagicPlayMod implements MagicPermanentAction {
     },
     ;
 
+    final String text;
+
+    private MagicPlayMod(final String name) {
+        text = name;
+    }
+
+    private MagicPlayMod() {
+        this("");
+    }
+
+    @Override
+    public String toString() {
+        return text;
+    }
+
     public void doAction(final MagicPermanent perm) {
         doAction(perm.getGame(), perm);
     }
@@ -160,7 +175,7 @@ public enum MagicPlayMod implements MagicPermanentAction {
     }
     
     public static List<MagicPlayMod> build(final String text) {
-        final String[] tokens = text != null ? text.split(", | and | ") : new String[0];
+        final String[] tokens = text != null ? text.split("\\. |, | and ") : new String[0];
         final List<MagicPlayMod> mods = new LinkedList<>();
         for (final String name : tokens) {
             mods.add(MagicPlayMod.getPlayMod(name));
