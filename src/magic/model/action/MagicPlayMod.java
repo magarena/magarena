@@ -27,7 +27,7 @@ public enum MagicPlayMod implements MagicPermanentAction {
             game.doAction(new MagicAddTriggerAction(perm, MagicAtEndOfCombatTrigger.Exile));
         }
     },
-    EXILE_AT_END_OF_TURN() {
+    EXILE_AT_END_OF_TURN("Exile it at the beginning of the next end step") {
         protected void doAction(final MagicGame game, final MagicPermanent perm) {
             game.doAction(new MagicAddTriggerAction(perm, MagicAtEndOfTurnTrigger.ExileAtEnd));
         }
@@ -38,12 +38,12 @@ public enum MagicPlayMod implements MagicPermanentAction {
             game.doAction(new MagicAddTriggerAction(perm, MagicAtEndOfTurnTrigger.ExileAtYourEnd(controller)));
         }
     },
-    EXILE_WHEN_LEAVES() {
+    EXILE_WHEN_LEAVES("If it would leave the battlefield, exile it instead of putting it anywhere else") {
         protected void doAction(final MagicGame game, final MagicPermanent perm) {
             game.doAction(new MagicAddTriggerAction(perm, MagicWhenLeavesPlayTrigger.Exile));
         }
     },
-    SACRIFICE_AT_END_OF_TURN() {
+    SACRIFICE_AT_END_OF_TURN("Sacrifice it at the beginning of the next end step") {
         protected void doAction(final MagicGame game, final MagicPermanent perm) {
             game.doAction(new MagicAddTriggerAction(perm, MagicAtEndOfTurnTrigger.Sacrifice));
         }
@@ -63,12 +63,12 @@ public enum MagicPlayMod implements MagicPermanentAction {
             perm.setState(MagicPermanentState.Tapped);
         }
     },
-    HASTE_UEOT() {
+    HASTE_UEOT("it gains haste until end of turn") {
         protected void doAction(final MagicGame game, final MagicPermanent perm) {
             game.doAction(new MagicGainAbilityAction(perm, MagicAbility.Haste));
         }
     },
-    HASTE() {
+    HASTE("it gains haste") {
         protected void doAction(final MagicGame game, final MagicPermanent perm) {
             game.doAction(new MagicGainAbilityAction(perm, MagicAbility.Haste, MagicStatic.Forever));
         }
