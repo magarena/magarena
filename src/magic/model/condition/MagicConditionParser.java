@@ -46,6 +46,14 @@ public enum MagicConditionParser {
             );
         }
     },
+    OppControlAtLeast("an opponent controls " + ARG.AMOUNT + " or more " + ARG.WORDRUN) {
+        public MagicCondition toCondition(final Matcher arg) {
+            return MagicConditionFactory.OppControlAtLeast(
+                MagicTargetFilterFactory.multiple(ARG.wordrun(arg)),
+                ARG.amount(arg)
+            );
+        }
+    },
     ControlNone("you control no " + ARG.WORDRUN) {
         public MagicCondition toCondition(final Matcher arg) {
             return MagicConditionFactory.YouControlNone(

@@ -184,6 +184,15 @@ public class MagicConditionFactory {
         };
     }
     
+    public static MagicCondition OppControlAtLeast(final MagicTargetFilter<MagicPermanent> filter, final int amt) {
+        return new MagicCondition() {
+            @Override
+            public boolean accept(final MagicSource source) {
+                return source.getOpponent().getNrOfPermanents(filter) >= amt;
+            }
+        };
+    }
+    
     public static MagicCondition YouControlNone(final MagicTargetFilter<MagicPermanent> filter) {
         return new MagicCondition() {
             @Override
