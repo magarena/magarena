@@ -1106,7 +1106,8 @@ public class MagicTargetFilterFactory {
     public static final MagicPermanentFilterImpl CREATURE_WITHOUT_FLYING_OR_ISLANDWALK = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
             return target.isCreature() &&
-                   (!target.hasAbility(MagicAbility.Flying) || !target.hasAbility(MagicAbility.Islandwalk));
+                   target.hasAbility(MagicAbility.Flying) == false && 
+                   target.hasAbility(MagicAbility.Islandwalk) == false;
         }
     };
     
