@@ -3440,7 +3440,7 @@ public enum MagicRuleEventAction {
         return res.toString();
     }
     
-    static final Pattern INTERVENING_IF = Pattern.compile("if " + ARG.WORDRUN + ", " + ARG.ANY, Pattern.CASE_INSENSITIVE);
+    static final Pattern INTERVENING_IF = Pattern.compile("if " + ARG.COND + ", " + ARG.ANY, Pattern.CASE_INSENSITIVE);
     static final Pattern MAY_PAY = Pattern.compile("you may pay " + ARG.MANACOST + "\\. if you do, .+", Pattern.CASE_INSENSITIVE);
     
     public static MagicSourceEvent create(final String raw) {
@@ -3451,7 +3451,7 @@ public enum MagicRuleEventAction {
         // handle intervening if clause
         final Matcher ifMatcher = INTERVENING_IF.matcher(rule);
         final boolean ifMatched = ifMatcher.matches();
-        final MagicCondition ifCond = ifMatched ? MagicConditionParser.build(ARG.wordrun(ifMatcher)) : MagicCondition.NONE;
+        final MagicCondition ifCond = ifMatched ? MagicConditionParser.build(ARG.cond(ifMatcher)) : MagicCondition.NONE;
         final String ruleWithoutIf = ifMatched ? ARG.any(ifMatcher) : rule; 
 
         // handle you pay 

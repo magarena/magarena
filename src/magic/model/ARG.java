@@ -64,6 +64,11 @@ public class ARG {
         return m.group("wordrun2");
     }
     
+    public static final String COND = "(?<cond>[^,\\.\"]+)";
+    public static String cond(final Matcher m) {
+        return m.group("cond");
+    }
+    
     public static final String PT = "(?<pt>[+-][0-9]+/[+-][0-9]+)";
     public static String pt(final Matcher m) {
         return m.group("pt");
