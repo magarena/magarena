@@ -1533,19 +1533,25 @@ public enum MagicRuleEventAction {
         }
     ),
     ReanimateCardSelf(
-        "return sn from your graveyard to the battlefield\\.",
+        "return sn from your graveyard to the battlefield( )?(?<mods>.+)?\\.",
         MagicTiming.Token,
-        "Reanimate",
-        new MagicEventAction() {
-            @Override
-            public void executeEvent(final MagicGame game, final MagicEvent event) {
-                game.doAction(new MagicReanimateAction(
-                    event.getCard(),
-                    event.getPlayer()
-                ));
-            }
+        "Reanimate"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            final List<MagicPlayMod> mods = MagicPlayMod.build(matcher.group("mods"));
+            return new MagicEventAction () {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    game.doAction(new MagicReanimateAction(
+                        event.getCard(),
+                        event.getPlayer(),
+                        mods
+                    ));
+                }
+            };
         }
-    ),
+    },
     RecoverSelf(
         "return sn from the graveyard to its owner's hand\\.",
         MagicTiming.Draw,
@@ -1904,25 +1910,31 @@ public enum MagicRuleEventAction {
         }
     },
     Reanimate(
-        "return (?<choice>[^\\.]*graveyard) to the battlefield\\.",
+        "return (?<choice>[^\\.]*graveyard) to the battlefield( )?(?<mods>.+)?\\.",
         MagicTargetHint.None,
         MagicGraveyardTargetPicker.PutOntoBattlefield,
         MagicTiming.Token,
-        "Return",
-        new MagicEventAction() {
-            @Override
-            public void executeEvent(final MagicGame game, final MagicEvent event) {
-                event.processTargetCard(game,new MagicCardAction() {
-                    public void doAction(final MagicCard card) {
-                        game.doAction(new MagicReanimateAction(
-                            card,
-                            event.getPlayer()
-                        ));
-                    }
-                });
-            }
+        "Return"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            final List<MagicPlayMod> mods = MagicPlayMod.build(matcher.group("mods"));
+            return new MagicEventAction () {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    event.processTargetCard(game,new MagicCardAction() {
+                        public void doAction(final MagicCard card) {
+                            game.doAction(new MagicReanimateAction(
+                                card,
+                                event.getPlayer(),
+                                mods
+                            ));
+                        }
+                    });
+                }
+            };
         }
-    ),
+    },
     Reanimate2(
         "put (?<choice>[^\\.]*graveyard) onto the battlefield under your control\\.",
         MagicTargetHint.None,
