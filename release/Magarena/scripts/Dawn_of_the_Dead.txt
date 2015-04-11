@@ -4,7 +4,7 @@ value=4.000
 rarity=R
 type=Enchantment
 cost={2}{B}{B}{B}
-ability=At the beginning of your upkeep, you lose 1 life.
+ability=At the beginning of your upkeep, you lose 1 life.;\
+        At the beginning of your upkeep, you may return target creature card from your graveyard to the battlefield. It gains haste until end of turn. Exile it at the beginning of the next end step.
 timing=enchantment
-requires_groovy_code
 oracle=At the beginning of your upkeep, you lose 1 life. At the beginning of your upkeep, you may return target creature card from your graveyard to the battlefield. That creature gains haste until end of turn. Exile it at the beginning of the next end step.

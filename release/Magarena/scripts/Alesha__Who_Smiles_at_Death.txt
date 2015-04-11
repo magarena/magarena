@@ -6,7 +6,7 @@ type=Legendary,Creature
 subtype=Human,Warrior
 cost={2}{R}
 pt=3/2
-ability=First strike
+ability=First strike;\
+        Whenever SN attacks, you may pay {W/B}{W/B}. If you do, return target creature card with power 2 or less from your graveyard to the battlefield tapped and attacking.
 timing=main
-requires_groovy_code
 oracle=First strike. Whenever Alesha, Who Smiles at Death attacks, you may pay {W/B}{W/B}. If you do, return target creature card with power 2 or less from your graveyard to the battlefield tapped and attacking.

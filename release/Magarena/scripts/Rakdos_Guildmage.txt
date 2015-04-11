@@ -6,7 +6,7 @@ type=Creature
 subtype=Zombie,Shaman
 cost={B/R}{B/R}
 pt=2/2
-ability={3}{B}, Discard a card: Target creature gets -2/-2 until end of turn.
+ability={3}{B}, Discard a card: Target creature gets -2/-2 until end of turn.;\
+        {3}{R}: Put a 2/1 red Goblin creature token with haste onto the battlefield. Exile it at the beginning of the next end step.
 timing=main
-requires_groovy_code
 oracle={3}{B}, Discard a card: Target creature gets -2/-2 until end of turn. {3}{R}: Put a 2/1 red Goblin creature token with haste onto the battlefield. Exile it at the beginning of the next end step.
