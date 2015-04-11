@@ -2200,6 +2200,25 @@ public enum MagicRuleEventAction {
             };
         }
     },
+    MillEach(
+        "Each (?<group>[^\\.]*) put(s)? the top (?<amount>[a-z]+)?( )?card(s)? of his or her library into his or her graveyard\\.", 
+        MagicTiming.Draw,
+        "Mill"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            final int amount = EnglishToInt.convert(matcher.group("amount"));
+            final MagicTargetFilter<MagicPlayer> filter = MagicTargetFilterFactory.singlePlayer(matcher.group("group"));
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    for (final MagicPlayer player : game.filterPlayers(event.getPlayer(), filter)) {
+                        game.doAction(new MagicMillLibraryAction(player, amount));
+                    }
+                }
+            };
+        }
+    },
     MillChosen(
         "(?<choice>[^\\.]*) put(s)? the top (?<amount>[a-z]+)?( )?card(s)? of his or her library into his or her graveyard\\.", 
         MagicTiming.Draw, 
