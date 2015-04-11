@@ -3397,12 +3397,20 @@ public enum MagicRuleEventAction {
             .replaceAll("Choose one ","Choose one\\$ ");
     }
 
-    public static String renameThisThat(final String text) {
+    private static String renameThisThat(final String text) {
         final String thing = "(permanent|creature|artifact|land|player|opponent)";
         final String evenQuotes = "(?=([^\"]*'[^\"]*')*[^\"]*$)";
         return text
             .replaceAll("\\b(T|t)his " + thing + "\\b" + evenQuotes, "SN")
             .replaceAll("\\b(T|t)hat " + thing + "\\b" + evenQuotes, "RN");
+    }
+
+    private static String concat(final String part0, final String[] parts) {
+        final StringBuilder res = new StringBuilder(part0);
+        for (int i = 1; i < parts.length; i++) {
+            res.append(' ').append(parts[i]);
+        }
+        return res.toString();
     }
     
     static final Pattern INTERVENING_IF = Pattern.compile("if " + ARG.WORDRUN + ", " + ARG.ANY, Pattern.CASE_INSENSITIVE);
@@ -3440,7 +3448,7 @@ public enum MagicRuleEventAction {
         final MagicChoice choice = ruleAction.getChoice(matcher);
         final String pnMayChoice = capitalize(ruleWithoutMay).replaceFirst("\\.", "?");
 
-        final String contextRule = ruleWithoutMay.replace("your ","PN's ").replace("you ","PN ").replace("you.", "PN.");
+        final String contextRule = concat(ruleWithoutMay, part).replace("your ","PN's ").replace("you ","PN ").replace("you.", "PN.");
         final String playerRule = personalize(text);
 
         if (mayCost != MagicManaCost.ZERO) {
