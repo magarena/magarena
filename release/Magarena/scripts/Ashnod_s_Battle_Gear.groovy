@@ -1,23 +1,3 @@
-def tapped = {
-    final MagicTargetFilter<MagicPermanent> filter ->
-    new MagicStatic(MagicLayer.ModPT, filter) {
-        @Override
-        public void modPowerToughness(final MagicPermanent source, final MagicPermanent permanent, final MagicPowerToughness pt) {
-            pt.add(2, -2);
-        }
-        @Override
-        public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
-            if (source.isUntapped()) {
-                //remove this static after the update
-                game.addDelayedAction(new MagicRemoveStaticAction(source, this));
-                return false;
-            } else {
-                return true;
-            }
-        }
-    };
-}
-
 [
     new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Pump),
@@ -44,9 +24,10 @@ def tapped = {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final MagicPermanent source = event.getPermanent();
-                final MagicTargetFilter<MagicPermanent> filter = new MagicPermanentTargetFilter(it);
-                game.doAction(new MagicAddStaticAction(source, tapped(filter)));
+                game.doAction(new MagicAddStaticAction(
+                    event.getPermanent(),
+                    MagicStatic.AsLongAsCond(it, 2, -2, MagicCondition.TAPPED_CONDITION)
+                ));
             });
         }
     }
