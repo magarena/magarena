@@ -166,6 +166,16 @@ public class MagicConditionFactory {
         };
     }
     
+    public static MagicCondition PlayerControlsSource(final MagicPlayer player) {
+        final long id = player.getId();
+        return new MagicCondition() {
+            @Override
+            public boolean accept(final MagicSource source) {
+                return source.getController().getId() == id;
+            }
+        };
+    }
+    
     public static MagicCondition YouHaveAtLeast(final MagicTargetFilter<MagicCard> filter, final int amt) {
         return new MagicCondition() {
             @Override
