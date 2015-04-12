@@ -402,7 +402,7 @@ cards/current-magic-excel.txt:
 	wget http://www.magictraders.com/pricelists/current-magic-excel.txt -O $@
 
 code_clones:
-	java -jar ~/App/simian/bin/simian-2.3.33.jar release/Magarena/scripts/*.groovy > $@
+	java -jar ~/App/simian/bin/simian.jar release/Magarena/scripts/*.groovy > $@
 
 cards/mtg-data:
 	curl https://dl.dropbox.com/u/2771470/index.html | grep -o 'href="mtg.*.zip' | head -1 | sed 's/href="//' | xargs -I'{}' wget https://dl.dropbox.com/u/2771470/'{}'
