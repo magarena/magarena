@@ -8,6 +8,7 @@ import java.util.regex.Pattern;
 import magic.data.EnglishToInt;
 import magic.data.TokenCardDefinitions;
 import magic.model.ARG;
+import magic.model.MagicRandom;
 import magic.model.MagicAbility;
 import magic.model.MagicAbilityList;
 import magic.model.MagicCard;
@@ -3272,6 +3273,61 @@ public enum MagicRuleEventAction {
                 }
             };
         }
+    },
+    FlipCoin(
+        "Flip a coin\\.( If you win the flip, (?<win>.*))?( If you lose the flip, (?<lose>.*))?"
+    ) {
+        @Override
+        public MagicChoice getChoice(final Matcher matcher) {
+            final MagicSourceEvent e = matcher.group("win") != null ?
+                MagicRuleEventAction.create(matcher.group("win")):
+                MagicRuleEventAction.create(matcher.group("lose"));
+            return e.getEvent(MagicEvent.NO_SOURCE).getChoice();
+        }
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            final MagicSourceEvent win = matcher.group("win") != null ? MagicRuleEventAction.create(matcher.group("win")) : null;
+            final MagicSourceEvent lose = matcher.group("lose") != null ? MagicRuleEventAction.create(matcher.group("lose")) : null;
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    final MagicRandom rng = new MagicRandom(event.getSource().getStateId());
+                    if (rng.nextInt(2) == 0) {
+                        game.logAppendMessage(event.getPlayer(), "PN wins the flip.");
+                        if (win != null) {
+                            win.getEvent(event.getSource()).executeEvent(game, event.getChosen());
+                        }
+                    } else {
+                        game.logAppendMessage(event.getPlayer(), "PN loses the flip.");
+                        if (lose != null) {
+                            lose.getEvent(event.getSource()).executeEvent(game, event.getChosen());
+                        }
+                    }
+                }
+            };
+        }
+        @Override
+        public MagicTiming getTiming(final Matcher matcher) {
+            final MagicSourceEvent e = matcher.group("win") != null ? 
+                MagicRuleEventAction.create(matcher.group("win")):
+                MagicRuleEventAction.create(matcher.group("lose"));
+            return e.getTiming();
+        }
+        @Override
+        public MagicTargetPicker<?> getPicker(final Matcher matcher) {
+            final MagicSourceEvent e = matcher.group("win") != null ?
+                MagicRuleEventAction.create(matcher.group("win")):
+                MagicRuleEventAction.create(matcher.group("lose"));
+            return e.getEvent(MagicEvent.NO_SOURCE).getTargetPicker();
+        }
+        @Override
+        public String getName(final Matcher matcher) {
+            final MagicSourceEvent e = matcher.group("win") != null ?
+                MagicRuleEventAction.create(matcher.group("win")):
+                MagicRuleEventAction.create(matcher.group("lose"));
+            return e.getName();
+        }
+
     },
     ;
 
