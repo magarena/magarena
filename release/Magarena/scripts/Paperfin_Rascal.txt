@@ -6,6 +6,6 @@ type=Creature
 subtype=Merfolk,Rogue
 cost={2}{U}
 pt=2/2
+ability=When SN enters the battlefield, clash with an opponent. If you win, put a +1/+1 counter on SN.
 timing=main
-requires_groovy_code=Adder-Staff Boggart
 oracle=When Paperfin Rascal enters the battlefield, clash with an opponent. If you win, put a +1/+1 counter on Paperfin Rascal.
