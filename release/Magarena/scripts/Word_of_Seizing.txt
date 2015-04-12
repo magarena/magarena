@@ -1,0 +1,10 @@
+name=Word of Seizing
+image=http://magiccards.info/scans/en/c14/185.jpg
+value=2.500
+rarity=R
+type=Instant
+cost={3}{R}{R}
+ability=Split second.
+timing=removal
+requires_groovy_code
+oracle=Split second. Untap target permanent and gain control of it until end of turn. It gains haste until end of turn.
