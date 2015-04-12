@@ -19,6 +19,7 @@
                 event.processTargetCard(game, {
                     game.doAction(new MagicRemoveCardAction(it,MagicLocationType.Graveyard));
                     final MagicCardOnStack cardOnStack=new MagicCardOnStack(it,event.getPlayer(),MagicPayedCost.NO_COST);
+                    cardOnStack.setFromLocation(MagicLocationType.Graveyard);
                     cardOnStack.setMoveLocation(MagicLocationType.Exile);
                     game.doAction(new MagicPutItemOnStackAction(cardOnStack));
                 });

@@ -7,6 +7,7 @@ def EVENT_ACTION = {
     final MagicGame game, final MagicEvent event ->
     game.doAction(new MagicRemoveCardAction(event.getCard(),MagicLocationType.Graveyard));
     final MagicCardOnStack cardOnStack=new MagicCardOnStack(event.getCard(),event.getPlayer(),game.getPayedCost());
+    cardOnStack.setFromLocation(MagicLocationType.Graveyard);
     cardOnStack.setMoveLocation(MagicLocationType.Exile);
     game.doAction(new MagicPutItemOnStackAction(cardOnStack));
 };
