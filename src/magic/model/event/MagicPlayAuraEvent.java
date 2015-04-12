@@ -32,9 +32,7 @@ public class MagicPlayAuraEvent extends MagicSpellCardEvent {
 
     @Override
     public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-        final MagicTargetChoice targetChoice = payedCost == MagicPayedCost.NOT_SPELL ?
-            targetChoiceOther:
-            targetChoiceCast;
+        final MagicTargetChoice targetChoice = cardOnStack.isCast() ? targetChoiceCast : targetChoiceOther;
         return new MagicEvent(
             cardOnStack,
             targetChoice,

@@ -166,6 +166,10 @@ public class MagicCardOnStack extends MagicItemOnStack implements MagicSource {
         return true;
     }
 
+    public boolean isCast() {
+        return payedCost != MagicPayedCost.NOT_SPELL;
+    }
+
     public boolean isRepresentedByACard() {
         return getCard().isToken() == false;
     }

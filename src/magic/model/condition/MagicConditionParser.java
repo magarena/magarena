@@ -422,6 +422,11 @@ public enum MagicConditionParser {
             return MagicCondition.FORMIDABLE;
         }
     },
+    CastItFromHand("you cast it from your hand") {
+        public MagicCondition toCondition(final Matcher arg) {
+            return MagicCondition.CAST_FROM_HAND;
+        }
+    },
     ;
 
     private final Pattern pattern;

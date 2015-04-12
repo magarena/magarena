@@ -718,4 +718,11 @@ public interface MagicCondition {
             return totalPower >= 8;
         }
     };
+
+    MagicCondition CAST_FROM_HAND = new MagicCondition() {
+        public boolean accept(final MagicSource source) {
+            final MagicPermanent permanent=(MagicPermanent)source;
+            return permanent.hasState(MagicPermanentState.CastFromHand);
+        }
+    };
 }
