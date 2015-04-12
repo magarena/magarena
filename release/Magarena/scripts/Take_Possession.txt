@@ -6,7 +6,7 @@ type=Enchantment
 subtype=Aura
 cost={5}{U}{U}
 ability=Split second.;\
-You control enchanted permanent.
+        You control enchanted permanent.
 timing=aura
 enchant=gain control,neg permanent
 oracle=Split second. Enchant permanent. You control enchanted permanent.
