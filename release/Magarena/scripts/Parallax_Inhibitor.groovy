@@ -7,7 +7,7 @@ def PERMANENT_WITH_FADING_YOU_CONTROL = new MagicPermanentFilterImpl() {
 [
     new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Pump),
-        "Counter"
+        "+Counter"
     ) {
         @Override
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
@@ -23,15 +23,14 @@ def PERMANENT_WITH_FADING_YOU_CONTROL = new MagicPermanentFilterImpl() {
             return new MagicEvent(
                 source,
                 this,
-                "Put a fade counter on each permanent with fading you control."
+                "PN puts a fade counter on each permanent with fading PN controls."
             );
         }
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final Collection<MagicPermanent> targets = game.filterPermanents(PERMANENT_WITH_FADING_YOU_CONTROL);
-            for (final MagicPermanent target : targets) {
-                game.doAction(new MagicChangeCountersAction(target, MagicCounterType.Fade, 1));
+            PERMANENT_WITH_FADING_YOU_CONTROL.filter(event.getPlayer()) each {
+                game.doAction(new MagicChangeCountersAction(it, MagicCounterType.Fade, 1));
             }
         }
     }
