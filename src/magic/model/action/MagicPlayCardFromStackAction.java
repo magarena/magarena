@@ -7,6 +7,7 @@ import magic.model.MagicGame;
 import magic.model.MagicLocationType;
 import magic.model.MagicObject;
 import magic.model.MagicPermanent;
+import magic.model.MagicPermanentState;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicTriggerType;
@@ -55,6 +56,10 @@ public class MagicPlayCardFromStackAction extends MagicAction {
     public void doAction(final MagicGame game) {
         permanent=createPermanent(game);
         permanent.getFirstController().addPermanent(permanent);
+
+        if (cardOnStack.getFromLocation() == MagicLocationType.OwnersHand) {
+            game.doAction(MagicChangeStateAction.Set(permanent, MagicPermanentState.CastFromHand));
+        }
 
         //comes into play with/as, such as manifest
         for (final MagicPermanentAction action : cardOnStack.getModifications()) {
