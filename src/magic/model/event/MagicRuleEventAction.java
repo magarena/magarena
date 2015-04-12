@@ -1976,44 +1976,6 @@ public enum MagicRuleEventAction {
             }
         }
     ),
-    ParalyzeIt(
-        ARG.IT + " doesn't untap during (your|its controller's) next untap step\\.",
-        MagicTiming.Tapping,
-        "Paralyze"
-    ) {
-        @Override
-        public MagicEventAction getAction(final Matcher matcher) {
-            return new MagicEventAction() {
-                @Override
-                public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    game.doAction(MagicChangeStateAction.Set(
-                        ARG.itPermanent(event, matcher),
-                        MagicPermanentState.DoesNotUntapDuringNext
-                    ));
-                }
-            };
-        }
-    },
-    ParalyzeChosen(
-        "(?<choice>[^\\.]*) doesn't untap during its controller's next untap step\\.",
-        MagicTargetHint.Negative,
-        new MagicNoCombatTargetPicker(true,true,false),
-        MagicTiming.Tapping,
-        "Paralyze",
-        new MagicEventAction() {
-            @Override
-            public void executeEvent(final MagicGame game, final MagicEvent event) {
-                event.processTargetPermanent(game,new MagicPermanentAction() {
-                    public void doAction(final MagicPermanent perm) {
-                        game.doAction(MagicChangeStateAction.Set(
-                            perm,
-                            MagicPermanentState.DoesNotUntapDuringNext
-                        ));
-                    }
-                });
-            }
-        }
-    ),
     TapOrUntapChosen(
         "tap or untap (?<choice>[^\\.]*)\\.",
         MagicTargetHint.None,
@@ -2026,6 +1988,47 @@ public enum MagicRuleEventAction {
                 event.processTargetPermanent(game,new MagicPermanentAction() {
                     public void doAction(final MagicPermanent perm) {
                         game.addEvent(new MagicTapOrUntapEvent(event.getSource(), perm));
+                    }
+                });
+            }
+        }
+    ),
+    TapParalyzeIt(
+        "tap " + ARG.IT + "( and it|. RN) doesn't untap during its controller's next untap step\\.",
+        MagicTiming.Tapping,
+        "Tap"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    final MagicPermanent it = ARG.itPermanent(event, matcher);
+                    game.doAction(new MagicTapAction(it));
+                    game.doAction(MagicChangeStateAction.Set(
+                        it,
+                        MagicPermanentState.DoesNotUntapDuringNext
+                    ));
+                }
+            };
+        }
+    },
+    TapParalyzeChosen(
+        "tap (?<choice>[^\\.]*)\\. it doesn't untap during its controller's next untap step\\.",
+        MagicTargetHint.Negative,
+        MagicTapTargetPicker.Tap,
+        MagicTiming.Tapping,
+        "Tap",
+        new MagicEventAction() {
+            @Override
+            public void executeEvent(final MagicGame game, final MagicEvent event) {
+                event.processTargetPermanent(game,new MagicPermanentAction() {
+                    public void doAction(final MagicPermanent creature) {
+                        game.doAction(new MagicTapAction(creature));
+                        game.doAction(MagicChangeStateAction.Set(
+                            creature,
+                            MagicPermanentState.DoesNotUntapDuringNext
+                        ));
                     }
                 });
             }
@@ -2082,40 +2085,37 @@ public enum MagicRuleEventAction {
             }
         }
     ),
-    TapParalyzeIt(
-        "tap " + ARG.IT + "( and it|. RN) doesn't untap during its controller's next untap step\\.",
+    ParalyzeIt(
+        ARG.IT + " doesn't untap during (your|its controller's) next untap step\\.",
         MagicTiming.Tapping,
-        "Tap"
+        "Paralyze"
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    final MagicPermanent it = ARG.itPermanent(event, matcher);
-                    game.doAction(new MagicTapAction(it));
                     game.doAction(MagicChangeStateAction.Set(
-                        it,
+                        ARG.itPermanent(event, matcher),
                         MagicPermanentState.DoesNotUntapDuringNext
                     ));
                 }
             };
         }
     },
-    TapParalyzeChosen(
-        "tap (?<choice>[^\\.]*)\\. it doesn't untap during its controller's next untap step\\.",
+    ParalyzeChosen(
+        "(?<choice>[^\\.]*) doesn't untap during its controller's next untap step\\.",
         MagicTargetHint.Negative,
-        MagicTapTargetPicker.Tap,
+        new MagicNoCombatTargetPicker(true,true,false),
         MagicTiming.Tapping,
-        "Tap",
+        "Paralyze",
         new MagicEventAction() {
             @Override
             public void executeEvent(final MagicGame game, final MagicEvent event) {
                 event.processTargetPermanent(game,new MagicPermanentAction() {
-                    public void doAction(final MagicPermanent creature) {
-                        game.doAction(new MagicTapAction(creature));
+                    public void doAction(final MagicPermanent perm) {
                         game.doAction(MagicChangeStateAction.Set(
-                            creature,
+                            perm,
                             MagicPermanentState.DoesNotUntapDuringNext
                         ));
                     }
