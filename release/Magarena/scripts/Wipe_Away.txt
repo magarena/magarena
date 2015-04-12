@@ -1,0 +1,10 @@
+name=Wipe Away
+image=http://magiccards.info/scans/en/ts/94.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={1}{U}{U}
+ability=Split second.
+effect=Return target permanent to its owner's hand.
+timing=removal
+oracle=Split second. Return target permanent to its owner's hand.
