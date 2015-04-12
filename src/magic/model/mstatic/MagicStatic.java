@@ -508,4 +508,52 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
             flags.add(MagicSubType.Nightmare);
         }
     };
+    
+    public static MagicStatic AsLongAsCond(final MagicPermanent chosen, final int P, final int T, final MagicCondition cond) {
+        final long id = chosen.getId();
+        return new MagicStatic(MagicLayer.ModPT) {
+            @Override
+            public boolean accept(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
+                return target.getId() == id && condition(game, source, target);
+            }
+            @Override
+            public void modPowerToughness(final MagicPermanent source, final MagicPermanent permanent, final MagicPowerToughness pt) {
+                pt.add(P,T);
+            }
+            @Override
+            public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
+                if (cond.accept(source)) {
+                    return true;
+                } else {
+                    //remove this static after the update
+                    game.addDelayedAction(new MagicRemoveStaticAction(source, this));
+                    return false;
+                }
+            }
+        };
+    }
+    
+    public static MagicStatic AsLongAsCond(final MagicPermanent chosen, final MagicAbility ability, final MagicCondition cond) {
+        final long id = chosen.getId();
+        return new MagicStatic(MagicLayer.Ability) {
+            @Override
+            public boolean accept(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
+                return target.getId() == id && condition(game, source, target);
+            }
+            @Override
+            public void modAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final Set<MagicAbility> flags) {
+                permanent.addAbility(ability, flags);
+            }
+            @Override
+            public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
+                if (cond.accept(source)) {
+                    return true;
+                } else {
+                    //remove this static after the update
+                    game.addDelayedAction(new MagicRemoveStaticAction(source, this));
+                    return false;
+                }
+            }
+        };
+    }
 }
