@@ -6,7 +6,7 @@ type=Creature
 subtype=Snake,Warrior
 cost={3}{G}
 pt=3/2
-ability={1}{G}: Regenerate SN.
+ability=Whenever SN deals combat damage to a creature, tap that creature and it doesn't untap during its controller's next untap step.;\
+        {1}{G}: Regenerate SN.
 timing=main
-requires_groovy_code=Orochi Ranger
 oracle=Whenever Kashi-Tribe Reaver deals combat damage to a creature, tap that creature and it doesn't untap during its controller's next untap step. {1}{G}: Regenerate Kashi-Tribe Reaver.

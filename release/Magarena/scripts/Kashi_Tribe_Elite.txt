@@ -6,7 +6,7 @@ type=Creature
 subtype=Snake,Warrior
 cost={1}{G}{G}
 pt=2/3
-ability=Legendary Snakes you control have shroud.
+ability=Legendary Snakes you control have shroud.;\
+        Whenever SN deals combat damage to a creature, tap that creature and it doesn't untap during its controller's next untap step.
 timing=main
-requires_groovy_code=Orochi Ranger
 oracle=Legendary Snakes you control have shroud. Whenever Kashi-Tribe Elite deals combat damage to a creature, tap that creature and it doesn't untap during its controller's next untap step.

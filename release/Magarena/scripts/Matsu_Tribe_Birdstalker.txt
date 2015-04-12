@@ -6,7 +6,7 @@ type=Creature
 subtype=Snake,Warrior,Archer
 cost={2}{G}{G}
 pt=2/2
-ability={G}: SN gains reach until end of turn.
+ability=Whenever SN deals combat damage to a creature, tap that creature and it doesn't untap during its controller's next untap step.;\
+        {G}: SN gains reach until end of turn.
 timing=main
-requires_groovy_code=Orochi Ranger
 oracle=Whenever Matsu-Tribe Birdstalker deals combat damage to a creature, tap that creature and it doesn't untap during its controller's next untap step. {G}: Matsu-Tribe Birdstalker gains reach until end of turn.
