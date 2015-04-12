@@ -8,5 +8,5 @@ cost={3}{B}{B}
 pt=5/4
 ability=Flying
 timing=main
-requires_groovy_code
+requires_groovy_code=Gallowbraid
 oracle=Flying. Cumulative upkeep—Pay 1 life.
