@@ -3275,7 +3275,7 @@ public enum MagicRuleEventAction {
         }
     },
     FlipCoin(
-        "Flip a coin\\.( If you win the flip, (?<win>.*))?( If you lose the flip, (?<lose>.*))?"
+        "Flip a coin\\.( If you win the flip, (?<win>.*?))?( If you lose the flip, (?<lose>.*))?"
     ) {
         @Override
         public MagicChoice getChoice(final Matcher matcher) {
