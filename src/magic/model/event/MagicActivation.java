@@ -7,6 +7,7 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.MagicPlayerState;
 import magic.model.MagicSource;
+import magic.model.stack.MagicItemOnStack;
 import magic.model.choice.MagicChoice;
 import magic.model.condition.MagicCondition;
 
@@ -87,6 +88,13 @@ public abstract class MagicActivation<T extends MagicSource> implements MagicEve
 
         if (source.isSpell() && player.hasState(MagicPlayerState.CantCastSpells)) {
             return false;
+        }
+
+        // Handling of split second
+        for (final MagicItemOnStack item : game.getStack()) {
+            if (item.hasAbility(MagicAbility.SplitSecond)) {
+                return false;
+            }
         }
 
         // Check conditions for activation
