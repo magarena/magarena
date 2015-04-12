@@ -10,8 +10,6 @@ import magic.model.trigger.MagicTriggerType;
 
 public class MagicClashEvent extends MagicEvent {
     
-    private static MagicEventAction clashAction;
-    
     public MagicClashEvent(final MagicEvent event, final MagicEventAction aClashAction) {
         this(event.getSource(), event.getPlayer(), aClashAction);
     }
@@ -20,22 +18,23 @@ public class MagicClashEvent extends MagicEvent {
         super(
             source,
             player,
-            EventAction,
+            EventAction(aClashAction),
             "Clash with an opponent."
         );
-        clashAction = aClashAction;
     }
     
-    private static final MagicEventAction EventAction = new MagicEventAction() {
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicPlayer winner = executeClash(game, event);
-            if (winner == event.getPlayer()) {
-                clashAction.executeEvent(game, event);
-            };
-            game.executeTrigger(MagicTriggerType.WhenClash, winner);
-        }
-    };
+    public static final MagicEventAction EventAction(final MagicEventAction clashAction) {
+        return  new MagicEventAction() {
+            @Override
+            public void executeEvent(final MagicGame game, final MagicEvent event) {
+                final MagicPlayer winner = executeClash(game, event);
+                if (winner == event.getPlayer()) {
+                    clashAction.executeEvent(game, event);
+                };
+                game.executeTrigger(MagicTriggerType.WhenClash, winner);
+            }
+        };
+    }
     
     public static MagicPlayer executeClash(final MagicGame game, final MagicEvent event) {
         final MagicPlayer player = event.getPlayer();
