@@ -41,6 +41,8 @@ public class MagicEnterAsCopyAction extends MagicAction {
             cardOnStack.getPayedCost(),
             modifications
         );
+        replacement.setFromLocation(cardOnStack.getFromLocation());
+        
         game.doAction(new MagicPutItemOnStackAction(replacement));
     }
 

@@ -86,6 +86,7 @@ public class MagicCardActivation extends MagicActivation<MagicCard> implements M
                         MagicCardActivation.this,
                         game.getPayedCost()
                     );
+                    cardOnStack.setFromLocation(fromLocation);
                     game.doAction(new MagicPutItemOnStackAction(cardOnStack));
                 } else {
                     game.doAction(new MagicPlayCardAction(card,card.getController()));

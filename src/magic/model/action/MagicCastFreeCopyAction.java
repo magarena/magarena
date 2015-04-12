@@ -6,6 +6,7 @@ import magic.model.MagicGame;
 import magic.model.MagicObject;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPlayer;
+import magic.model.MagicLocationType;
 import magic.model.stack.MagicCardOnStack;
 
 public class MagicCastFreeCopyAction extends MagicAction {
@@ -24,13 +25,13 @@ public class MagicCastFreeCopyAction extends MagicAction {
 
     @Override
     public void doAction(final MagicGame game) {
-        game.doAction(new MagicPutItemOnStackAction(
-            new MagicCardOnStack(
-                MagicCard.createTokenCard(cdef,player),
-                player,
-                MagicPayedCost.NO_COST
-            )
-        ));
+        final MagicCardOnStack cardOnStack = new MagicCardOnStack(
+            MagicCard.createTokenCard(cdef,player),
+            player,
+            MagicPayedCost.NO_COST
+        );
+        cardOnStack.setFromLocation(MagicLocationType.Exile);
+        game.doAction(new MagicPutItemOnStackAction(cardOnStack));
     }
 
     @Override

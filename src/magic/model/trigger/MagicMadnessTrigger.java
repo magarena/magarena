@@ -47,6 +47,7 @@ public class MagicMadnessTrigger extends MagicWhenPutIntoGraveyardTrigger {
         game.doAction(new MagicRemoveCardAction(event.getCard(),MagicLocationType.Exile));
         if (event.isYes()) {
             final MagicCardOnStack cardOnStack=new MagicCardOnStack(event.getCard(),event.getPlayer(),MagicPayedCost.NO_COST);
+            cardOnStack.setFromLocation(MagicLocationType.Exile);
             game.doAction(new MagicPutItemOnStackAction(cardOnStack));
         } else {
             game.doAction(new MagicMoveCardAction(event.getCard(),MagicLocationType.Exile,MagicLocationType.Graveyard));

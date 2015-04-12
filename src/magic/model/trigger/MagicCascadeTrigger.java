@@ -90,6 +90,7 @@ public class MagicCascadeTrigger extends MagicWhenSpellIsCastTrigger {
                     card,
                     MagicPayedCost.NO_COST
                 );
+                cardOnStack.setFromLocation(MagicLocationType.Exile);
                 game.doAction(new MagicPutItemOnStackAction(cardOnStack));
             }
         }

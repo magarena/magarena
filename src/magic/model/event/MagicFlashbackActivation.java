@@ -53,6 +53,7 @@ public class MagicFlashbackActivation extends MagicGraveyardActivation {
             MagicFlashbackActivation.this,
             game.getPayedCost()
         );
+        cardOnStack.setFromLocation(MagicLocationType.Graveyard);
         cardOnStack.setMoveLocation(MagicLocationType.Exile);
         game.doAction(new MagicPutItemOnStackAction(cardOnStack));
     }
