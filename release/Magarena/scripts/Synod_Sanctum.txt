@@ -4,6 +4,7 @@ value=3.920
 rarity=U
 type=Artifact
 cost={1}
+ability={2}, {T}: Exile target permanent you control. 
 timing=artifact
 requires_groovy_code
 oracle={2}, {T}: Exile target permanent you control. {2}, Sacrifice Synod Sanctum: Return all cards exiled with Synod Sanctum to the battlefield under your control.

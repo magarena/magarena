@@ -6,6 +6,6 @@ type=Creature
 subtype=Snake,Warrior
 cost={1}{G}
 pt=2/1
+ability=Whenever SN deals combat damage to a creature, tap that creature.~RN doesn't untap during its controller's next untap step.
 timing=main
-requires_groovy_code
 oracle=Whenever Orochi Ranger deals combat damage to a creature, tap that creature and it doesn't untap during its controller's next untap step.
