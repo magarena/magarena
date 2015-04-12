@@ -3251,6 +3251,28 @@ public enum MagicRuleEventAction {
             return LoseSelf.getName(matcher);
         }
     },
+    Clash(
+        "clash with an opponent. If you win, (?<effect>.*)",
+        MagicTiming.None,
+        "Clash"
+    ) {
+        @Override
+        public MagicChoice getChoice(final Matcher matcher) {
+            final MagicSourceEvent e = MagicRuleEventAction.create(matcher.group("effect"));
+            return e.getEvent(MagicEvent.NO_SOURCE).getChoice();
+        }
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            final MagicSourceEvent e = MagicRuleEventAction.create(matcher.group("effect"));
+            final MagicEventAction act = e.getAction();
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    (new MagicClashEvent(event, act)).executeEvent(game, event.getChosen());
+                }
+            };
+        }
+    },
     ;
 
     private final Pattern pattern;
