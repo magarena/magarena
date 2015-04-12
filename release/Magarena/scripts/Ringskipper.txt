@@ -7,6 +7,6 @@ subtype=Faerie,Wizard
 cost={1}{U}
 pt=1/1
 ability=Flying;\
-        When SN dies, clash with an opponent. If you win, return SN to its owner's hand.
+        When SN dies, clash with an opponent. If you win, return SN from the graveyard to its owner's hand.
 timing=main
 oracle=Flying. When Ringskipper dies, clash with an opponent. If you win, return Ringskipper to its owner's hand.
