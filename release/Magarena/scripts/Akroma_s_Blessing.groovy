@@ -7,7 +7,7 @@
                 MagicColorChoice.ALL_INSTANCE,
                 this,
                 "Choose a color\$. " +
-                "Creatures PN controls have protection from the chosen color until end of turn."
+                "Creatures PN controls gain protection from the chosen color until end of turn."
             );
         }
         @Override
