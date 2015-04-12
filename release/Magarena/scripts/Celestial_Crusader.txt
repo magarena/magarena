@@ -1,0 +1,14 @@
+name=Celestial Crusader
+image=http://magiccards.info/scans/en/c14/68.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Spirit
+cost={2}{W}{W}
+pt=2/2
+ability=Flash;\
+Split second.;\
+Flying;\
+Other white creatures get +1/+1.
+timing=flash
+oracle=Flash. Split second. Flying. Other white creatures get +1/+1.
