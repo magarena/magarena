@@ -15,7 +15,6 @@ public class Ability_Mono_DeckGenerator extends RandomDeckGenerator {
 
     private static final int MIN_NUM_CARDS_WITH_SUBTYPE = 30;
 
-    private static final MagicRandom randGen = new MagicRandom();
     // all possible tribes - calculated once
     private static final ArrayList<MagicAbility> possibleAbilities = new ArrayList<MagicAbility>();
     private static final ArrayList<ArrayList<String>> possibleColors = new ArrayList<ArrayList<String>>();
@@ -32,9 +31,9 @@ public class Ability_Mono_DeckGenerator extends RandomDeckGenerator {
         }
 
         if (hasChoice()) {
-            final int i = randGen.nextInt(possibleAbilities.size());
+            final int i = MagicRandom.nextRNGInt(possibleAbilities.size());
             ability = possibleAbilities.get(i);
-            colorText = possibleColors.get(i).get(randGen.nextInt(possibleColors.get(i).size()));
+            colorText = possibleColors.get(i).get(MagicRandom.nextRNGInt(possibleColors.get(i).size()));
         } else {
             ability = null;
             colorText = "";
