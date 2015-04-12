@@ -585,6 +585,12 @@ public class MagicTargetFilterFactory {
             return target.isOwner(player) || target.isController(player);
         }
     };
+    
+    public static final MagicPermanentFilterImpl PERMANENT_FADING_YOU_CONTROL=new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+            return target.isController(player) && target.hasAbility(MagicAbility.Fading);
+        }
+    };
 
     public static final MagicPermanentFilterImpl LAND_YOU_CONTROL = MagicTargetFilterFactory.permanent(MagicType.Land, Control.You);
 
@@ -2308,6 +2314,7 @@ public class MagicTargetFilterFactory {
         single.put("creature token you control", CREATURE_TOKEN_YOU_CONTROL);
         single.put("Caribou token you control", CARIBOU_TOKEN_YOU_CONTROL);
         single.put("permanent you control", PERMANENT_YOU_CONTROL);
+        single.put("permanent with fading you control", PERMANENT_FADING_YOU_CONTROL);
         single.put("multicolored permanent you control", MULTICOLORED_PERMANENT_YOU_CONTROL);
         single.put("nonland permanent you control", NONLAND_PERMANENT_YOU_CONTROL);
         single.put("nontoken permanent you control", NONTOKEN_PERMANENT_YOU_CONTROL);
