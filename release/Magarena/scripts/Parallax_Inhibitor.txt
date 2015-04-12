@@ -1,0 +1,9 @@
+name=Parallax Inhibitor
+image=http://magiccards.info/scans/en/ne/134.jpg
+value=2.500
+rarity=R
+type=Artifact
+cost={2}
+timing=artifact
+requires_groovy_code
+oracle={1}, {T}, Sacrifice Parallax Inhibitor: Put a fade counter on each permanent with fading you control.
