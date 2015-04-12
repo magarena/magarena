@@ -3269,7 +3269,7 @@ public enum MagicRuleEventAction {
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    (new MagicClashEvent(event, act)).executeEvent(game, event.getChosen());
+                    MagicClashEvent.EventAction(act).executeEvent(game, event);
                 }
             };
         }
@@ -3295,12 +3295,12 @@ public enum MagicRuleEventAction {
                     if (rng.nextInt(2) == 0) {
                         game.logAppendMessage(event.getPlayer(), "PN wins the flip.");
                         if (win != null) {
-                            win.getEvent(event.getSource()).executeEvent(game, event.getChosen());
+                            win.getAction().executeEvent(game, event);
                         }
                     } else {
                         game.logAppendMessage(event.getPlayer(), "PN loses the flip.");
                         if (lose != null) {
-                            lose.getEvent(event.getSource()).executeEvent(game, event.getChosen());
+                            lose.getAction().executeEvent(game, event);
                         }
                     }
                 }
