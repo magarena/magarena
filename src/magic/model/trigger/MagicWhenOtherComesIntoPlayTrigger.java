@@ -6,7 +6,7 @@ import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.MagicType;
-import magic.model.action.MagicChangeCountersAction;
+import magic.model.action.ChangeCountersAction;
 import magic.model.choice.MagicMayChoice;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSoulbondEvent;
@@ -82,7 +82,7 @@ public abstract class MagicWhenOtherComesIntoPlayTrigger extends MagicTrigger<Ma
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.getRefPermanent().getPowerValue() > event.getPermanent().getPowerValue() ||
                 event.getRefPermanent().getToughnessValue() > event.getPermanent().getToughnessValue()) {
-                    game.doAction(new MagicChangeCountersAction(
+                    game.doAction(new ChangeCountersAction(
                         event.getPermanent(),
                         MagicCounterType.PlusOne,
                         1
@@ -109,12 +109,12 @@ public abstract class MagicWhenOtherComesIntoPlayTrigger extends MagicTrigger<Ma
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes() && event.getPermanent().hasCounters(MagicCounterType.PlusOne)) {
-                game.doAction(new MagicChangeCountersAction(
+                game.doAction(new ChangeCountersAction(
                     event.getPermanent(),
                     MagicCounterType.PlusOne,
                     -1
                 ));
-                game.doAction(new MagicChangeCountersAction(
+                game.doAction(new ChangeCountersAction(
                     event.getRefPermanent(),
                     MagicCounterType.PlusOne,
                     1

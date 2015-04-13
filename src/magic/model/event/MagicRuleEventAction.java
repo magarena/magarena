@@ -1339,7 +1339,7 @@ public enum MagicRuleEventAction {
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    game.doAction(new MagicChangeCountersAction(
+                    game.doAction(new ChangeCountersAction(
                         ARG.itPermanent(event, matcher),
                         counterType,
                         amount
@@ -1370,7 +1370,7 @@ public enum MagicRuleEventAction {
                         filter
                     );
                     for (final MagicPermanent target : targets) {
-                        game.doAction(new MagicChangeCountersAction(
+                        game.doAction(new ChangeCountersAction(
                             target,
                             counterType,
                             amount
@@ -1406,7 +1406,7 @@ public enum MagicRuleEventAction {
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    game.doAction(new MagicChangeCountersAction(
+                    game.doAction(new ChangeCountersAction(
                         event.getPermanent(),
                         counterType,
                         -amount
@@ -1438,7 +1438,7 @@ public enum MagicRuleEventAction {
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
                     event.processTargetPermanent(game,new MagicPermanentAction() {
                         public void doAction(final MagicPermanent permanent) {
-                            game.doAction(new MagicChangeCountersAction(
+                            game.doAction(new ChangeCountersAction(
                                 permanent,
                                 counterType,
                                 amount
@@ -2711,7 +2711,7 @@ public enum MagicRuleEventAction {
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    game.doAction(new MagicChangeCountersAction(event.getPermanent(),MagicCounterType.PlusOne, amount));
+                    game.doAction(new ChangeCountersAction(event.getPermanent(),MagicCounterType.PlusOne, amount));
                     game.doAction(MagicChangeStateAction.Set(event.getPermanent(),MagicPermanentState.Monstrous));
                 }
             };

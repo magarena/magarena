@@ -110,7 +110,7 @@ public class MagicDealDamageAction extends MagicAction {
 
         if (target.isPlaneswalker()) {
             final MagicPermanent targetPermanent=(MagicPermanent)target;
-            game.doAction(new MagicChangeCountersAction(targetPermanent,MagicCounterType.Loyalty,-dealtAmount));
+            game.doAction(new ChangeCountersAction(targetPermanent,MagicCounterType.Loyalty,-dealtAmount));
         }
 
         if (target.isCreature()) {
@@ -119,7 +119,7 @@ public class MagicDealDamageAction extends MagicAction {
                 game.doAction(MagicChangeStateAction.Set(targetPermanent,MagicPermanentState.CannotBeRegenerated));
             }
             if (source.hasAbility(MagicAbility.Wither)||source.hasAbility(MagicAbility.Infect)) {
-                game.doAction(new MagicChangeCountersAction(targetPermanent,MagicCounterType.MinusOne,dealtAmount));
+                game.doAction(new ChangeCountersAction(targetPermanent,MagicCounterType.MinusOne,dealtAmount));
             } else {
                 oldDamage=targetPermanent.getDamage();
                 targetPermanent.setDamage(oldDamage+dealtAmount);

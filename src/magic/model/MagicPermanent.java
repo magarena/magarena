@@ -3,7 +3,7 @@ package magic.model;
 import magic.ai.ArtificialScoringSystem;
 import magic.model.action.AttachAction;
 import magic.model.action.ChangeControlAction;
-import magic.model.action.MagicChangeCountersAction;
+import magic.model.action.ChangeCountersAction;
 import magic.model.action.MagicChangeStateAction;
 import magic.model.action.MagicDestroyAction;
 import magic.model.action.MagicRemoveFromPlayAction;
@@ -822,8 +822,8 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
             final int minusCounters=getCounters(MagicCounterType.MinusOne);
             if (minusCounters>0) {
                 final int amount=-Math.min(plusCounters,minusCounters);
-                game.addDelayedAction(MagicChangeCountersAction.Enters(this,MagicCounterType.PlusOne,amount));
-                game.addDelayedAction(MagicChangeCountersAction.Enters(this,MagicCounterType.MinusOne,amount));
+                game.addDelayedAction(ChangeCountersAction.Enters(this,MagicCounterType.PlusOne,amount));
+                game.addDelayedAction(ChangeCountersAction.Enters(this,MagicCounterType.MinusOne,amount));
             }
         }
     }

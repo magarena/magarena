@@ -5,7 +5,7 @@ import magic.model.MagicGame;
 import magic.model.MagicManaCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
-import magic.model.action.MagicChangeCountersAction;
+import magic.model.action.ChangeCountersAction;
 import magic.model.action.MagicSacrificeAction;
 import magic.model.choice.MagicMayChoice;
 import magic.model.choice.MagicPayManaCostChoice;
@@ -27,7 +27,7 @@ public class MagicCumulativeUpkeepTrigger extends MagicAtYourUpkeepTrigger {
 
     @Override
     public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPlayer upkeepPlayer) {
-        game.doAction(new MagicChangeCountersAction(
+        game.doAction(new ChangeCountersAction(
             permanent,
             MagicCounterType.Age,
             1

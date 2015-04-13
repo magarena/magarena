@@ -7,7 +7,7 @@ import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.MagicPlayerDefinition;
-import magic.model.action.MagicChangeCountersAction;
+import magic.model.action.ChangeCountersAction;
 import magic.model.phase.MagicMainPhase;
 
 // When a creature with soulbond enters the battlefield, you may pair it with
@@ -49,7 +49,7 @@ class TestSoulbond extends TestGameBuilder {
         createPermanent(game,P,"Assault Griffin",false,1);
         createPermanent(game,P,"Hagra Diabolist",false,1);
         final MagicPermanent la = createPermanent(game, P, "Legacy's Allure", false, 1);
-        game.doAction(new MagicChangeCountersAction(la, MagicCounterType.Charge, 3));
+        game.doAction(new ChangeCountersAction(la, MagicCounterType.Charge, 3));
         addToHand(P,"Wingcrafter",1);
         addToHand(P,"Eager Cadet",1);
 

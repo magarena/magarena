@@ -9,7 +9,7 @@ import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.MagicPlayerDefinition;
-import magic.model.action.MagicChangeCountersAction;
+import magic.model.action.ChangeCountersAction;
 import magic.model.phase.MagicMainPhase;
 
 class TestTyreal extends TestGameBuilder {
@@ -44,7 +44,7 @@ class TestTyreal extends TestGameBuilder {
     createPermanent(game, P, "Rupture Spire", false, 10);
     createPermanent(game, P, "Mad Auntie", false, 1);
     final MagicPermanent la = createPermanent(game, P, "Legacy's Allure", false, 1);
-    game.doAction(new MagicChangeCountersAction(la, MagicCounterType.Charge, 1));
+    game.doAction(new ChangeCountersAction(la, MagicCounterType.Charge, 1));
     //game.doAction(new MagicChangeCountersAction(la, MagicCounterType.Charge, 1));
     //createPermanent(game, P, "Mad Auntie", false, 1);
     // createPermanent(game,P,"Jayemdae Tome",false,1);

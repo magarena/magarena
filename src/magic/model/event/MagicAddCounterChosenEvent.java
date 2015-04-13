@@ -4,7 +4,7 @@ import magic.model.MagicCounterType;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicSource;
-import magic.model.action.MagicChangeCountersAction;
+import magic.model.action.ChangeCountersAction;
 import magic.model.action.MagicPermanentAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
@@ -23,7 +23,7 @@ public class MagicAddCounterChosenEvent extends MagicEvent {
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
                     event.processTargetPermanent(game, new MagicPermanentAction() {
                         public void doAction(final MagicPermanent perm) {
-                            game.doAction(new MagicChangeCountersAction(
+                            game.doAction(new ChangeCountersAction(
                                 perm,
                                 counterType,
                                 1

@@ -4,7 +4,7 @@ import magic.model.MagicCounterType;
 import magic.model.MagicGame;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
-import magic.model.action.MagicChangeCountersAction;
+import magic.model.action.ChangeCountersAction;
 import magic.model.choice.MagicMayChoice;
 import magic.model.event.MagicEvent;
 
@@ -33,7 +33,7 @@ public class MagicUnleashTrigger extends MagicWhenComesIntoPlayTrigger {
     @Override
     public void executeEvent(final MagicGame game, final MagicEvent event) {
         if (event.isYes()) {
-            game.doAction(MagicChangeCountersAction.Enters(
+            game.doAction(ChangeCountersAction.Enters(
                 event.getPermanent(),
                 MagicCounterType.PlusOne,
                 1

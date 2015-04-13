@@ -4,7 +4,7 @@ import magic.model.MagicCounterType;
 import magic.model.MagicGame;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
-import magic.model.action.MagicChangeCountersAction;
+import magic.model.action.ChangeCountersAction;
 import magic.model.action.MagicPermanentAction;
 import magic.model.action.MagicSacrificeAction;
 import magic.model.choice.MagicMayChoice;
@@ -47,7 +47,7 @@ public class MagicDevourTrigger extends MagicWhenComesIntoPlayTrigger {
                 public void doAction(final MagicPermanent creature) {
                     final MagicPermanent permanent = event.getPermanent();
                     game.doAction(new MagicSacrificeAction(creature));
-                    game.doAction(new MagicChangeCountersAction(
+                    game.doAction(new ChangeCountersAction(
                         permanent,
                         MagicCounterType.PlusOne,
                         amount

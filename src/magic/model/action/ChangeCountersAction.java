@@ -4,14 +4,14 @@ import magic.model.MagicCounterType;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 
-public class MagicChangeCountersAction extends MagicAction {
+public class ChangeCountersAction extends MagicAction {
 
     private final MagicPermanent permanent;
     private final MagicCounterType counterType;
     private final int amount;
     private final boolean hasScore;
 
-    private MagicChangeCountersAction(
+    private ChangeCountersAction(
             final MagicPermanent permanent,
             final MagicCounterType counterType,
             final int amount,
@@ -26,14 +26,14 @@ public class MagicChangeCountersAction extends MagicAction {
         this.hasScore=hasScore;
     }
     
-    public static MagicChangeCountersAction Enters(
+    public static ChangeCountersAction Enters(
             final MagicPermanent permanent,
             final MagicCounterType counterType,
             final int amount) {
-        return new MagicChangeCountersAction(permanent, counterType, amount, false);
+        return new ChangeCountersAction(permanent, counterType, amount, false);
     }
     
-    public MagicChangeCountersAction(
+    public ChangeCountersAction(
             final MagicPermanent permanent,
             final MagicCounterType counterType,
             final int amount) {

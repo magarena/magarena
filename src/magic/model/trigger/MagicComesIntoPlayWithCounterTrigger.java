@@ -4,7 +4,7 @@ import magic.model.MagicCounterType;
 import magic.model.MagicGame;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
-import magic.model.action.MagicChangeCountersAction;
+import magic.model.action.ChangeCountersAction;
 import magic.model.event.MagicEvent;
 
 public class MagicComesIntoPlayWithCounterTrigger extends MagicWhenComesIntoPlayTrigger {
@@ -26,7 +26,7 @@ public class MagicComesIntoPlayWithCounterTrigger extends MagicWhenComesIntoPlay
     
     @Override
     public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPayedCost payedCost) {
-        game.doAction(MagicChangeCountersAction.Enters(
+        game.doAction(ChangeCountersAction.Enters(
             permanent,
             counterType,
             amount
@@ -38,7 +38,7 @@ public class MagicComesIntoPlayWithCounterTrigger extends MagicWhenComesIntoPlay
         return new MagicComesIntoPlayWithCounterTrigger() {
             @Override
             public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPayedCost payedCost) {
-                game.doAction(MagicChangeCountersAction.Enters(
+                game.doAction(ChangeCountersAction.Enters(
                     permanent,
                     counterType,
                     payedCost.getX()
@@ -52,7 +52,7 @@ public class MagicComesIntoPlayWithCounterTrigger extends MagicWhenComesIntoPlay
         return new MagicComesIntoPlayWithCounterTrigger() {
             @Override
             public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPayedCost payedCost) {
-                game.doAction(MagicChangeCountersAction.Enters(
+                game.doAction(ChangeCountersAction.Enters(
                     permanent,
                     counterType,
                     payedCost.getKicker()

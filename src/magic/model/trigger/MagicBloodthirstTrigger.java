@@ -5,7 +5,7 @@ import magic.model.MagicGame;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayerState;
-import magic.model.action.MagicChangeCountersAction;
+import magic.model.action.ChangeCountersAction;
 import magic.model.event.MagicEvent;
 
 public class MagicBloodthirstTrigger extends MagicWhenComesIntoPlayTrigger {
@@ -33,7 +33,7 @@ public class MagicBloodthirstTrigger extends MagicWhenComesIntoPlayTrigger {
     }
     @Override
     public void executeEvent(final MagicGame game, final MagicEvent event) {
-        game.doAction(MagicChangeCountersAction.Enters(
+        game.doAction(ChangeCountersAction.Enters(
             event.getPermanent(),
             MagicCounterType.PlusOne,
             amount

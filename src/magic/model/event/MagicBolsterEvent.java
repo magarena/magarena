@@ -5,7 +5,7 @@ import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicSource;
 import magic.model.MagicPlayer;
-import magic.model.action.MagicChangeCountersAction;
+import magic.model.action.ChangeCountersAction;
 import magic.model.action.MagicPermanentAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.target.MagicPTTargetFilter;
@@ -19,7 +19,7 @@ public class MagicBolsterEvent extends MagicEvent {
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
-                    game.doAction(new MagicChangeCountersAction(
+                    game.doAction(new ChangeCountersAction(
                         creature,
                         MagicCounterType.PlusOne,
                         event.getRefInt()
