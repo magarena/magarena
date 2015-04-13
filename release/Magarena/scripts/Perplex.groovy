@@ -3,7 +3,7 @@ def action = {
     if (event.isYes()) {
         game.addEvent(new MagicDiscardEvent(event.getSource(),event.getPlayer(),event.getPlayer().getHandSize()));
     } else {
-        game.doAction(new MagicCounterItemOnStackAction(
+        game.doAction(new CounterItemOnStackAction(
             event.getRefItemOnStack(),
             MagicLocationType.Graveyard
         ));

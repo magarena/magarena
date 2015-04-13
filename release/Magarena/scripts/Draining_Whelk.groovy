@@ -13,7 +13,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetCardOnStack(game, {
-                game.doAction(new MagicCounterItemOnStackAction(it));
+                game.doAction(new CounterItemOnStackAction(it));
                 game.doAction(new ChangeCountersAction(event.getPermanent(),MagicCounterType.PlusOne,it.getConvertedCost()));
             });
         }

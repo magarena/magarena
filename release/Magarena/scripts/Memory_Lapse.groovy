@@ -12,7 +12,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetCardOnStack(game, {
-                game.doAction(new MagicCounterItemOnStackAction(it,MagicLocationType.TopOfOwnersLibrary));
+                game.doAction(new CounterItemOnStackAction(it,MagicLocationType.TopOfOwnersLibrary));
             });
         }
     }

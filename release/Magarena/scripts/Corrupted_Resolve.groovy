@@ -13,7 +13,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetCardOnStack(game, {
                 if (it.getController().getPoison() > 0) {
-                    game.doAction(new MagicCounterItemOnStackAction(it));
+                    game.doAction(new CounterItemOnStackAction(it));
                 }
             });
         }

@@ -6,7 +6,7 @@ def action = {
             game.doAction(new MagicMoveCardAction(card, MagicLocationType.Graveyard, MagicLocationType.Exile));
         }
     } else {
-        game.doAction(new MagicCounterItemOnStackAction(event.getRefCardOnStack()));
+        game.doAction(new CounterItemOnStackAction(event.getRefCardOnStack()));
     }
 }
 

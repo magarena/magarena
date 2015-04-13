@@ -47,7 +47,7 @@
             final int amount = graveyard + battlefield;
             if (amount > 0) {
                 game.logAppendMessage(event.getPlayer(), "("+name+") is countered.")
-                game.doAction(new MagicCounterItemOnStackAction(spell));
+                game.doAction(new CounterItemOnStackAction(spell));
             }
         }
     }

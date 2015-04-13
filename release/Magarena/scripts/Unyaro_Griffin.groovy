@@ -32,7 +32,7 @@ def TARGET_RED_INSTANT_OR_SORCERY = new MagicTargetChoice(
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
              event.processTargetCardOnStack(game, {
-                 game.doAction(new MagicCounterItemOnStackAction(it));
+                 game.doAction(new CounterItemOnStackAction(it));
             });
         }
     }

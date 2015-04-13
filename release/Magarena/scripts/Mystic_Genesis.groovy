@@ -13,7 +13,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetCardOnStack(game, {
                 final MagicCardOnStack card ->
-                game.doAction(new MagicCounterItemOnStackAction(card));
+                game.doAction(new CounterItemOnStackAction(card));
                     
                 final int x = card.getConvertedCost();
                 game.doAction(new MagicPlayTokenAction(event.getPlayer(), MagicCardDefinition.create({

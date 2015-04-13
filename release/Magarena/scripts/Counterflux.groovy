@@ -19,7 +19,7 @@
             final Collection<MagicItemOnStack> targets=
                 game.filterItemOnStack(event.getPlayer(),SPELL_YOU_DONT_CONTROL);
             for (final MagicItemOnStack targetSpell : targets) {
-                game.doAction(new MagicCounterItemOnStackAction(targetSpell));
+                game.doAction(new CounterItemOnStackAction(targetSpell));
             }
         }
     }

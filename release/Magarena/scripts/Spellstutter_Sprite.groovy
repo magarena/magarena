@@ -31,7 +31,7 @@ def TARGET_SPELL_WITH_CONVERTED_COST_X_OR_LESS = {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetCardOnStack(game, {
-                game.doAction(new MagicCounterItemOnStackAction(it));
+                game.doAction(new CounterItemOnStackAction(it));
             });
         }
     }

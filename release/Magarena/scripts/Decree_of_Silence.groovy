@@ -15,7 +15,7 @@ def EFFECT = MagicRuleEventAction.create("Sacrifice SN.");
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicCounterItemOnStackAction(event.getRefCardOnStack()));
+            game.doAction(new CounterItemOnStackAction(event.getRefCardOnStack()));
             game.doAction(new ChangeCountersAction(event.getPermanent(),MagicCounterType.Depletion,1));
         }
     },
@@ -46,7 +46,7 @@ def EFFECT = MagicRuleEventAction.create("Sacrifice SN.");
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
                 event.processTargetCardOnStack(game, {
-                    game.doAction(new MagicCounterItemOnStackAction(it));
+                    game.doAction(new CounterItemOnStackAction(it));
                 });
             }
         }
