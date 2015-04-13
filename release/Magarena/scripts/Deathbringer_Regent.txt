@@ -1,0 +1,12 @@
+name=Deathbringer Regent
+image=http://magiccards.info/scans/en/dtk/96.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Dragon
+cost={5}{B}{B}
+pt=5/6
+ability=Flying
+timing=main
+requires_groovy_code
+oracle=Flying. When Deathbringer Regent enters the battlefield, if you cast it from your hand and there are five or more other creatures on the battlefield, destroy all other creatures.
