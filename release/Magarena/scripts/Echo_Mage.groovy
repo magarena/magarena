@@ -44,7 +44,7 @@
                 final MagicPlayer player = event.getPlayer();
                 final int amount=event.getRefInt();
                 for (int count=amount;count>0;count--) {
-                    game.doAction(new MagicCopyCardOnStackAction(player,it));
+                    game.doAction(new CopyCardOnStackAction(player,it));
                 }
             });
         }
