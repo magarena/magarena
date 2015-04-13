@@ -1,0 +1,12 @@
+name=Hypnox
+image=http://magiccards.info/scans/en/tr/64.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Nightmare,Horror
+cost={8}{B}{B}{B}
+pt=8/8
+ability=Flying
+timing=main
+requires_groovy_code
+oracle=Flying. When Hypnox enters the battlefield, if you cast it from your hand, exile all cards from target opponent's hand. When Hypnox leaves the battlefield, return the exiled cards to their owner's hand.
