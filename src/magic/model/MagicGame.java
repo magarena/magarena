@@ -3,7 +3,7 @@ package magic.model;
 import magic.data.GeneralConfig;
 import magic.model.action.MagicAction;
 import magic.model.action.MagicActionList;
-import magic.model.action.MagicAddEventAction;
+import magic.model.action.AddEventAction;
 import magic.model.action.MagicAddFirstEventAction;
 import magic.model.action.MagicExecuteFirstEventAction;
 import magic.model.action.MagicLogMarkerAction;
@@ -803,7 +803,7 @@ public class MagicGame {
     }
 
     public void addEvent(final MagicEvent event) {
-        doAction(new MagicAddEventAction(event));
+        doAction(new AddEventAction(event));
     }
     
     public void addFirstEvent(final MagicEvent event) {
