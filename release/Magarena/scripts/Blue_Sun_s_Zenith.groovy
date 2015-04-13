@@ -17,7 +17,7 @@
             event.processTargetPlayer(game, {
                 game.doAction(new MagicDrawAction(it,amount));
             });
-            game.doAction(new MagicChangeCardDestinationAction(event.getCardOnStack(),MagicLocationType.OwnersLibrary));
+            game.doAction(new ChangeCardDestinationAction(event.getCardOnStack(),MagicLocationType.OwnersLibrary));
         }
     }
 ]

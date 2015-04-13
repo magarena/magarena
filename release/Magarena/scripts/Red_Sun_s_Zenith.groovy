@@ -22,7 +22,7 @@
                 final MagicDamage damage=new MagicDamage(event.getSource(),it,amount);
                 game.doAction(new MagicDealDamageAction(damage));
                 dealtDamage = damage.getDealtAmount();
-                game.doAction(new MagicChangeCardDestinationAction(event.getCardOnStack(),MagicLocationType.OwnersLibrary));
+                game.doAction(new ChangeCardDestinationAction(event.getCardOnStack(),MagicLocationType.OwnersLibrary));
             });
             event.processTargetPermanent(game, {
                 if (dealtDamage > 0) {

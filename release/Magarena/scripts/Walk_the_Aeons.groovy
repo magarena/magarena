@@ -15,7 +15,7 @@
             event.processTargetPlayer(game, {
                 game.doAction(new MagicChangeExtraTurnsAction(it,1));
                 if (event.isBuyback()) {
-                    game.doAction(new MagicChangeCardDestinationAction(event.getCardOnStack(), MagicLocationType.OwnersHand));
+                    game.doAction(new ChangeCardDestinationAction(event.getCardOnStack(), MagicLocationType.OwnersHand));
                 }
             });
         }

@@ -16,7 +16,7 @@
             final boolean more = player.getOpponent().getNrOfPermanents(MagicType.Creature) >
                                  player.getNrOfPermanents(MagicType.Creature);
             if (more) {
-                game.doAction(new MagicChangeCardDestinationAction(event.getCardOnStack(), MagicLocationType.OwnersHand));
+                game.doAction(new ChangeCardDestinationAction(event.getCardOnStack(), MagicLocationType.OwnersHand));
             }
         }
     }

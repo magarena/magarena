@@ -19,7 +19,7 @@
             event.processTarget(game, {
                 game.doAction(new MagicDealDamageAction(event.getSource(),it,event.getRefInt()));
                 if (event.isBuyback()) {
-                    game.doAction(new MagicChangeCardDestinationAction(event.getCardOnStack(), MagicLocationType.OwnersHand));
+                    game.doAction(new ChangeCardDestinationAction(event.getCardOnStack(), MagicLocationType.OwnersHand));
                 }
             });
         }

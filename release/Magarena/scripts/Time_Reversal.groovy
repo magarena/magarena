@@ -26,7 +26,7 @@
             for (final MagicPlayer player : game.getAPNAP()) {
                 game.doAction(new MagicDrawAction(player,7));
             }
-            game.doAction(new MagicChangeCardDestinationAction(event.getCardOnStack(),MagicLocationType.Exile));
+            game.doAction(new ChangeCardDestinationAction(event.getCardOnStack(),MagicLocationType.Exile));
         }
     }
 ]

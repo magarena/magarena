@@ -16,7 +16,7 @@
             game.filterPermanents(event.getPlayer(), CREATURE) each {
                 game.doAction(new MagicChangeCountersAction(it, MagicCounterType.MinusOne, amount));
             }
-            game.doAction(new MagicChangeCardDestinationAction(event.getCardOnStack(),MagicLocationType.OwnersLibrary));
+            game.doAction(new ChangeCardDestinationAction(event.getCardOnStack(),MagicLocationType.OwnersLibrary));
         }
     }
 ]

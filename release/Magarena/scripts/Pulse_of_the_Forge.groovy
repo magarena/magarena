@@ -18,7 +18,7 @@
                 game.doAction(new MagicDealDamageAction(event.getSource(),it,4));
                 final boolean more = it.getLife() > event.getPlayer().getLife();
                 if (more) {
-                    game.doAction(new MagicChangeCardDestinationAction(event.getCardOnStack(),MagicLocationType.OwnersHand));
+                    game.doAction(new ChangeCardDestinationAction(event.getCardOnStack(),MagicLocationType.OwnersHand));
                 }
             });
         }

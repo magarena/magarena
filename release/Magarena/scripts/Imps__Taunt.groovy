@@ -17,7 +17,7 @@
             event.processTargetPermanent(game, {
                 game.doAction(new MagicGainAbilityAction(it,MagicAbility.AttacksEachTurnIfAble));
                 if (event.isBuyback()) {
-                    game.doAction(new MagicChangeCardDestinationAction(event.getCardOnStack(), MagicLocationType.OwnersHand));
+                    game.doAction(new ChangeCardDestinationAction(event.getCardOnStack(), MagicLocationType.OwnersHand));
                 }
             });
         }

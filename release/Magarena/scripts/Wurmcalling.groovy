@@ -24,7 +24,7 @@
                 it.setValue(x);
             })));
             if (event.isBuyback()) {
-                game.doAction(new MagicChangeCardDestinationAction(event.getCardOnStack(), MagicLocationType.OwnersHand));
+                game.doAction(new ChangeCardDestinationAction(event.getCardOnStack(), MagicLocationType.OwnersHand));
             }
         }
     }

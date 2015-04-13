@@ -17,7 +17,7 @@
                 TokenCardDefinitions.get("2/2 white Cat creature token"),
                 spell.getX()
             ));
-            game.doAction(new MagicChangeCardDestinationAction(spell,MagicLocationType.OwnersLibrary));
+            game.doAction(new ChangeCardDestinationAction(spell,MagicLocationType.OwnersLibrary));
         }
     }
 ]

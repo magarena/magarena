@@ -15,7 +15,7 @@
             game.doAction(new MagicChangeLifeAction(player,4));
             final boolean more = player.getOpponent().getLife() > player.getLife();
             if (more) {
-                game.doAction(new MagicChangeCardDestinationAction(event.getCardOnStack(),MagicLocationType.OwnersHand));
+                game.doAction(new ChangeCardDestinationAction(event.getCardOnStack(),MagicLocationType.OwnersHand));
             }
         }
     }
