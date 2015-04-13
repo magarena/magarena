@@ -3,11 +3,11 @@ package magic.model.action;
 import magic.model.MagicGame;
 import magic.model.event.MagicEvent;
 
-public class MagicAddFirstEventAction extends MagicAction {
+public class AddFirstEventAction extends MagicAction {
 
     private final MagicEvent event;
 
-    public MagicAddFirstEventAction(final MagicEvent aEvent) {
+    public AddFirstEventAction(final MagicEvent aEvent) {
         event = aEvent;
     }
 
