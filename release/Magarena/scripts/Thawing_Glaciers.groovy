@@ -34,7 +34,7 @@
                 ),
                 MagicPlayMod.TAPPED
             ));
-            game.doAction(new MagicAddTriggerAction(event.getPermanent(),MagicAtEndOfTurnTrigger.Return))
+            game.doAction(new AddTriggerAction(event.getPermanent(),MagicAtEndOfTurnTrigger.Return))
         }
     }
 ]

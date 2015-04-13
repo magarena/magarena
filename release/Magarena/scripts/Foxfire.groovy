@@ -21,7 +21,7 @@
                     it,
                     MagicIfDamageWouldBeDealtTrigger.PreventCombatDamageDealtToDealtBy
                 ));
-                game.doAction(new MagicAddTriggerAction(
+                game.doAction(new AddTriggerAction(
                     MagicAtUpkeepTrigger.YouDraw(
                         event.getSource(), 
                         event.getPlayer()

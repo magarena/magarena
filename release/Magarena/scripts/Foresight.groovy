@@ -17,7 +17,7 @@
                 new MagicFromCardListChoice(choiceList, 3, true),
                 MagicLocationType.Exile
             ));
-            game.doAction(new MagicAddTriggerAction(
+            game.doAction(new AddTriggerAction(
                 MagicAtUpkeepTrigger.YouDraw(
                     event.getSource(), 
                     event.getPlayer()

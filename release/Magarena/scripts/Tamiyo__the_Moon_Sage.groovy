@@ -63,7 +63,7 @@
                     }
                 }
             ));
-            outerGame.doAction(new MagicAddTriggerAction(
+            outerGame.doAction(new AddTriggerAction(
                 new MagicWhenOtherPutIntoGraveyardTrigger() {
                     @Override
                     public MagicEvent executeTrigger(

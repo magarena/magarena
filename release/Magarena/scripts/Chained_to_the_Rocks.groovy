@@ -15,7 +15,7 @@
             event.processTargetPermanent(game, {
                 if (event.getPermanent().isValid()) {
                     game.doAction(new MagicExileLinkAction(event.getPermanent(), it));
-                    game.doAction(new MagicAddTriggerAction(event.getPermanent(), MagicWhenSelfLeavesPlayTrigger.ExileUntilLeaves));
+                    game.doAction(new AddTriggerAction(event.getPermanent(), MagicWhenSelfLeavesPlayTrigger.ExileUntilLeaves));
                 }
             });
         }

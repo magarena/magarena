@@ -30,7 +30,7 @@ def DISCARD_THREE_CARDS = {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new MagicDrawAction(event.getPlayer(),3));
-            game.doAction(new MagicAddTriggerAction(DISCARD_THREE_CARDS(event.getSource(), event.getPlayer())));
+            game.doAction(new AddTriggerAction(DISCARD_THREE_CARDS(event.getSource(), event.getPlayer())));
         }
     }
 ]

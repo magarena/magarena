@@ -45,7 +45,7 @@ def Spirit = new MagicStatic(MagicLayer.Type) {
                         {
                             final MagicPermanent perm ->
                             game.doAction(new AddStaticAction(perm, Spirit));
-                            game.doAction(new MagicAddTriggerAction(perm, MagicAtEndOfTurnTrigger.ExileAtEnd));
+                            game.doAction(new AddTriggerAction(perm, MagicAtEndOfTurnTrigger.ExileAtEnd));
                         }
                     ));
                 });

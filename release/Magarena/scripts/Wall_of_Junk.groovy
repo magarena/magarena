@@ -10,7 +10,7 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicAddTriggerAction(
+            game.doAction(new AddTriggerAction(
                 event.getPermanent(),
                 MagicAtEndOfCombatTrigger.Return
             ))

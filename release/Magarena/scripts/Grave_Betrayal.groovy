@@ -44,7 +44,7 @@ def DelayedTrigger = {
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicAddTriggerAction(DelayedTrigger(
+            game.doAction(new AddTriggerAction(DelayedTrigger(
                 event.getPermanent(),
                 event.getPlayer(),
                 event.getRefCard()

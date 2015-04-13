@@ -19,7 +19,7 @@
             final int amount = event.getRefInt();
             event.processTargetPermanent(game, {
                 game.doAction(new MagicChangeTurnPTAction(it,amount,0));
-                game.doAction(new MagicAddTriggerAction(
+                game.doAction(new AddTriggerAction(
                     MagicAtUpkeepTrigger.YouDraw(
                         event.getSource(), 
                         event.getPlayer()

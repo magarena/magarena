@@ -16,7 +16,7 @@
                 if (it.hasColor(MagicColor.Blue)) {
                     game.addEvent(new MagicCounterUnlessEvent(event.getSource(),it,MagicManaCost.create("{1}")));
                 }
-                game.doAction(new MagicAddTriggerAction(
+                game.doAction(new AddTriggerAction(
                     MagicAtUpkeepTrigger.YouDraw(
                         event.getSource(), 
                         event.getPlayer()

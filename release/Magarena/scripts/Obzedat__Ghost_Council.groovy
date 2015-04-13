@@ -57,7 +57,7 @@ def DelayedTrigger = {
                     event.getPermanent(),
                     MagicLocationType.Exile
                 ));
-                game.doAction(new MagicAddTriggerAction(DelayedTrigger(
+                game.doAction(new AddTriggerAction(DelayedTrigger(
                     event.getPermanent().getCard(),
                     event.getPlayer()
                 )));

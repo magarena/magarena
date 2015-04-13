@@ -53,7 +53,7 @@
         @Override
         public void executeEvent(final MagicGame outerGame, final MagicEvent outerEvent) {
             final MagicPlayer you = outerEvent.getPlayer();
-            outerGame.doAction(new MagicAddTriggerAction(
+            outerGame.doAction(new AddTriggerAction(
                 new MagicWhenOtherSpellIsCastTrigger() {
                     @Override
                     public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack cardOnStack) {
