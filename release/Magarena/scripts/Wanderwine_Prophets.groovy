@@ -19,7 +19,7 @@
             if (event.isYes()) {
                 event.processTargetPermanent(game, {
                     game.doAction(new MagicSacrificeAction(it));
-                    game.doAction(new MagicChangeExtraTurnsAction(event.getPlayer(),1));
+                    game.doAction(new ChangeExtraTurnsAction(event.getPlayer(),1));
                 });
             }
         }

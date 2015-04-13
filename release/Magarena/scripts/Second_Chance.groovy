@@ -15,7 +15,7 @@
             final MagicPlayer player = event.getPlayer();
             if (player.getLife() <= 5) {
                 game.doAction(new MagicSacrificeAction(event.getPermanent()));
-                game.doAction(new MagicChangeExtraTurnsAction(player,1));
+                game.doAction(new ChangeExtraTurnsAction(player,1));
             }
         }
     }
