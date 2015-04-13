@@ -661,7 +661,7 @@ public enum MagicRuleEventAction {
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    game.doAction(new MagicAddTriggerAction(
+                    game.doAction(new AddTriggerAction(
                         MagicAtUpkeepTrigger.YouDraw(
                             event.getSource(), 
                             event.getPlayer()
@@ -724,7 +724,7 @@ public enum MagicRuleEventAction {
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    game.doAction(new MagicAddTriggerAction(
+                    game.doAction(new AddTriggerAction(
                         MagicAtUpkeepTrigger.YouDraw(
                             event.getSource(), 
                             event.getPlayer()
@@ -1648,7 +1648,7 @@ public enum MagicRuleEventAction {
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
                     final MagicPermanent it = ARG.itPermanent(event, matcher);
                     if (it.isValid()) {
-                        game.doAction(new MagicAddTriggerAction(
+                        game.doAction(new AddTriggerAction(
                             it,
                             MagicAtEndOfCombatTrigger.Return
                         ));
@@ -2334,7 +2334,7 @@ public enum MagicRuleEventAction {
         new MagicEventAction() {
             @Override
             public void executeEvent(final MagicGame game, final MagicEvent event) {
-                game.doAction(new MagicAddTriggerAction(event.getPermanent(), MagicAtEndOfTurnTrigger.Sacrifice));
+                game.doAction(new AddTriggerAction(event.getPermanent(), MagicAtEndOfTurnTrigger.Sacrifice));
             }
         }
     ),
@@ -2345,7 +2345,7 @@ public enum MagicRuleEventAction {
         new MagicEventAction() {
             @Override
             public void executeEvent(final MagicGame game, final MagicEvent event) {
-                game.doAction(new MagicAddTriggerAction(event.getPermanent(), MagicAtEndOfCombatTrigger.Sacrifice));
+                game.doAction(new AddTriggerAction(event.getPermanent(), MagicAtEndOfCombatTrigger.Sacrifice));
             }
         }
     ),
@@ -2787,7 +2787,7 @@ public enum MagicRuleEventAction {
                 final MagicCardOnStack spell = event.getCardOnStack();
                 if (spell.getFromLocation() == MagicLocationType.OwnersHand) {
                     game.doAction(new MagicChangeCardDestinationAction(spell, MagicLocationType.Exile));
-                    game.doAction(new MagicAddTriggerAction(new MagicReboundTrigger(spell.getCard())));
+                    game.doAction(new AddTriggerAction(new MagicReboundTrigger(spell.getCard())));
                 }
             }
         };

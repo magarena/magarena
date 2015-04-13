@@ -5,7 +5,7 @@ import magic.model.MagicLocationType;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
-import magic.model.action.MagicAddTriggerAction;
+import magic.model.action.AddTriggerAction;
 import magic.model.action.MagicChangeCardDestinationAction;
 import magic.model.action.MagicMoveCardAction;
 import magic.model.action.MagicPermanentAction;
@@ -35,7 +35,7 @@ public class MagicCipherEvent extends MagicEvent {
                 game.doAction(new MagicChangeCardDestinationAction(event.getCardOnStack(), MagicLocationType.Exile));
                 event.processTargetPermanent(game, new MagicPermanentAction() {
                     public void doAction(final MagicPermanent creatureToEncode) {
-                        game.doAction(new MagicAddTriggerAction(
+                        game.doAction(new AddTriggerAction(
                             creatureToEncode,
                             MagicWhenDamageIsDealtTrigger.Cipher(event.getCardOnStack().getCardDefinition())
                         ));

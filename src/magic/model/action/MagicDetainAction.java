@@ -43,7 +43,7 @@ public class MagicDetainAction extends MagicAction {
     @Override
     public void doAction(final MagicGame game) {
         game.doAction(new AddStaticAction(targetPermanent, Detain));
-        game.doAction(new MagicAddTriggerAction(targetPermanent, Cleanup));
+        game.doAction(new AddTriggerAction(targetPermanent, Cleanup));
     }
 
     @Override

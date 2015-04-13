@@ -47,7 +47,7 @@ public class MagicChangePlayerStateAction extends MagicAction {
                     return MagicEvent.NONE;
                 }
             };
-            game.doAction(new MagicAddTriggerAction(cleanup));
+            game.doAction(new AddTriggerAction(cleanup));
         } else {
             // until end of turn
             game.doAction(new AddStaticAction(new MagicStatic(MagicLayer.Player, MagicStatic.UntilEOT) {
