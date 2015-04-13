@@ -14,7 +14,7 @@
             final MagicPlayer player = event.getPlayer();
             final int amount = game.getNrOfPermanents(MagicType.Creature);
             game.doAction(new MagicChangeLifeAction(player,amount));
-            game.doAction(new MagicAddTurnTriggerAction(
+            game.doAction(new AddTurnTriggerAction(
                 MagicIfDamageWouldBeDealtTrigger.PreventCombatDamage
             ));
         }

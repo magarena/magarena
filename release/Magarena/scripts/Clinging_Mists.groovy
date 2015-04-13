@@ -12,7 +12,7 @@
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicAddTurnTriggerAction(
+            game.doAction(new AddTurnTriggerAction(
                 MagicIfDamageWouldBeDealtTrigger.PreventCombatDamage
             ));
             if (MagicCondition.FATEFUL_HOUR.accept(event.getSource())) {

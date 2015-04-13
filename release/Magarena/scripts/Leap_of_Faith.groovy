@@ -16,7 +16,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
                 game.doAction(new MagicGainAbilityAction(it,MagicAbility.Flying));
-                game.doAction(new MagicAddTurnTriggerAction(
+                game.doAction(new AddTurnTriggerAction(
                     it,
                     MagicIfDamageWouldBeDealtTrigger.PreventDamageDealtTo
                 ));

@@ -26,7 +26,7 @@
             });
             event.processTargetPermanent(game, {
                 if (dealtDamage > 0) {
-                    game.doAction(new MagicAddTurnTriggerAction(
+                    game.doAction(new AddTurnTriggerAction(
                         it,
                         MagicWhenSelfLeavesPlayTrigger.IfDieExileInstead
                     ));

@@ -28,7 +28,7 @@ def choice = new MagicTargetChoice("target attacking creature with shadow");
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
                 game.doAction(new MagicUntapAction(it));
-                game.doAction(new MagicAddTurnTriggerAction(
+                game.doAction(new AddTurnTriggerAction(
                     it,
                     MagicIfDamageWouldBeDealtTrigger.PreventCombatDamageDealtToDealtBy
                 ));

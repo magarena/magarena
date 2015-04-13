@@ -18,7 +18,7 @@ def cantBePrevented = new MagicIfDamageWouldBeDealtTrigger() {
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicAddTurnTriggerAction(cantBePrevented));
+            game.doAction(new AddTurnTriggerAction(cantBePrevented));
         }
     }
 ]

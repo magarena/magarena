@@ -71,7 +71,7 @@ def PreventAllDamage = new MagicIfDamageWouldBeDealtTrigger(MagicTrigger.PREVENT
             };
 
             game.doAction(new MagicBecomesCreatureAction(event.getPermanent(),PT,AB,ST));
-            game.doAction(new MagicAddTurnTriggerAction(event.getPermanent(), PreventAllDamage));
+            game.doAction(new AddTurnTriggerAction(event.getPermanent(), PreventAllDamage));
         }
     },
     new MagicPlaneswalkerActivation(-15) {

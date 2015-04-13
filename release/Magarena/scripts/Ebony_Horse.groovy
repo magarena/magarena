@@ -38,7 +38,7 @@ def TARGET_ATTACKING_CREATURE_YOU_CONTROL = new MagicTargetChoice(
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
                 game.doAction(new MagicUntapAction(it));
-                game.doAction(new MagicAddTurnTriggerAction(
+                game.doAction(new AddTurnTriggerAction(
                     it,
                     MagicIfDamageWouldBeDealtTrigger.PreventCombatDamageDealtToDealtBy
                 ));
