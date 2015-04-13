@@ -14,7 +14,7 @@ import magic.model.MagicType;
 import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicStatic;
 
-public class MagicBecomesAction extends MagicAction {
+public class BecomesAction extends MagicAction {
 
     private final MagicPermanent permanent;
     private final int[] pt;
@@ -25,7 +25,7 @@ public class MagicBecomesAction extends MagicAction {
     private final boolean duration;
     private final boolean additionTo;
 
-    public MagicBecomesAction(
+    public BecomesAction(
         final MagicPermanent aPermanent, 
         final int[] aPt, 
         final Set<MagicColor> aColor, 
@@ -44,19 +44,19 @@ public class MagicBecomesAction extends MagicAction {
         additionTo=aAdditionTo;
     }
     
-    public MagicBecomesAction(final MagicPermanent aPermanent, final Set<MagicColor> aColor, final boolean aDuration, final boolean aAdditionTo) {
+    public BecomesAction(final MagicPermanent aPermanent, final Set<MagicColor> aColor, final boolean aDuration, final boolean aAdditionTo) {
         this(aPermanent, null, aColor, Collections.<MagicSubType>emptySet(), Collections.<MagicType>emptySet(), null, aDuration, aAdditionTo);
     }
 
-    public MagicBecomesAction(final MagicPermanent aPermanent, final Set<MagicType> aType, final boolean aDuration) {
+    public BecomesAction(final MagicPermanent aPermanent, final Set<MagicType> aType, final boolean aDuration) {
         this(aPermanent, null, Collections.<MagicColor>emptySet(), Collections.<MagicSubType>emptySet(), aType, null, aDuration, false);
     }
 
-    public MagicBecomesAction(final MagicPermanent aPermanent, final int[] aPt, final Set<MagicSubType> aSubType, final Set<MagicType> aType) {
+    public BecomesAction(final MagicPermanent aPermanent, final int[] aPt, final Set<MagicSubType> aSubType, final Set<MagicType> aType) {
         this(aPermanent, aPt, Collections.<MagicColor>emptySet() , aSubType, aType, null, MagicStatic.UntilEOT, false);
     }
 
-    public MagicBecomesAction(final MagicPermanent aPermanent, final int[] aPt, final Set<MagicSubType> aSubType, final Set<MagicType> aType, final boolean aDuration) {
+    public BecomesAction(final MagicPermanent aPermanent, final int[] aPt, final Set<MagicSubType> aSubType, final Set<MagicType> aType, final boolean aDuration) {
         this(aPermanent, aPt, Collections.<MagicColor>emptySet(), aSubType, aType, null, aDuration, false);
     }
 

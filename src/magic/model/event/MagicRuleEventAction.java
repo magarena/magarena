@@ -2825,7 +2825,7 @@ public enum MagicRuleEventAction {
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    game.doAction(new MagicBecomesAction(
+                    game.doAction(new BecomesAction(
                         event.getPermanent(),
                         spec.pt,
                         spec.colors,
@@ -2893,7 +2893,7 @@ public enum MagicRuleEventAction {
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
                     event.processTargetPermanent(game,new MagicPermanentAction() {
                         public void doAction(final MagicPermanent it) {
-                            game.doAction(new MagicBecomesAction(
+                            game.doAction(new BecomesAction(
                                 it,
                                 spec.pt,
                                 spec.colors,
