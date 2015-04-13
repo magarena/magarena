@@ -5,7 +5,7 @@ import magic.model.mstatic.MagicPermanentStatic;
 
 import java.util.Collection;
 
-public class MagicCleanupTurnStaticsAction extends MagicAction {
+public class CleanupTurnStaticsAction extends MagicAction {
 
     private Collection<MagicPermanentStatic> removedStatics;
 

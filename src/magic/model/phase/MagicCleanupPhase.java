@@ -5,7 +5,7 @@ import magic.model.MagicPlayer;
 import magic.model.phase.MagicPhaseType;
 import magic.model.action.ChangeExtraTurnsAction;
 import magic.model.action.CleanupPlayerAction;
-import magic.model.action.MagicCleanupTurnStaticsAction;
+import magic.model.action.CleanupTurnStaticsAction;
 import magic.model.action.MagicCleanupTurnTriggersAction;
 import magic.model.action.MagicPayDelayedCostsAction;
 import magic.model.event.MagicDiscardEvent;
@@ -35,7 +35,7 @@ public class MagicCleanupPhase extends MagicPhase {
         for (final MagicPlayer player : game.getPlayers()) {
             game.doAction(new CleanupPlayerAction(player));
         }
-        game.doAction(new MagicCleanupTurnStaticsAction());
+        game.doAction(new CleanupTurnStaticsAction());
         game.checkState();
     }
 
