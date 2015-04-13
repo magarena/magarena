@@ -4,7 +4,7 @@ import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPermanentState;
 
-public class MagicCleanupPermanentAction extends MagicAction {
+public class CleanupPermanentAction extends MagicAction {
 
     private final MagicPermanent permanent;
     private int oldAbilityPlayedThisTurn;
@@ -12,7 +12,7 @@ public class MagicCleanupPermanentAction extends MagicAction {
     private int oldPreventDamage;
     private int oldStateFlags;
 
-    public MagicCleanupPermanentAction(final MagicPermanent aPermanent) {
+    public CleanupPermanentAction(final MagicPermanent aPermanent) {
         permanent = aPermanent;
     }
 
