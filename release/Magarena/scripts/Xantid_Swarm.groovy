@@ -12,7 +12,7 @@
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new ChangePlayerAction(
+            game.doAction(new ChangePlayerStateAction(
                 event.getPlayer(),
                 MagicPlayerState.CantCastSpells
             ));

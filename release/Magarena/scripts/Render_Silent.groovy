@@ -13,7 +13,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetCardOnStack(game, {
                 game.doAction(new MagicCounterItemOnStackAction(it));
-                game.doAction(new ChangePlayerAction(
+                game.doAction(new ChangePlayerStateAction(
                     it.getController(),
                     MagicPlayerState.CantCastSpells
                 ));
