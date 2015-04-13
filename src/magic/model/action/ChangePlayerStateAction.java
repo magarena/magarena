@@ -9,12 +9,12 @@ import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicStatic;
 import magic.model.trigger.MagicAtUpkeepTrigger;
 
-public class MagicChangePlayerStateAction extends MagicAction {
+public class ChangePlayerStateAction extends MagicAction {
 
     private final MagicPlayer player;
     private final MagicPlayerState state;
 
-    public MagicChangePlayerStateAction(final MagicPlayer aPlayer,final MagicPlayerState aState) {
+    public ChangePlayerStateAction(final MagicPlayer aPlayer,final MagicPlayerState aState) {
         player = aPlayer;
         state = aState;
     }
