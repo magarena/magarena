@@ -4,7 +4,7 @@ import magic.data.TokenCardDefinitions;
 import magic.model.MagicGame;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
-import magic.model.action.MagicAttachAction;
+import magic.model.action.AttachAction;
 import magic.model.action.MagicPlayTokenAction;
 import magic.model.action.MagicPermanentAction;
 import magic.model.event.MagicEvent;
@@ -41,7 +41,7 @@ public class MagicLivingWeaponTrigger extends MagicWhenComesIntoPlayTrigger {
                 @Override
                 public void doAction(final MagicPermanent perm) {
                     final MagicGame G = perm.getGame();
-                    G.doAction(new MagicAttachAction(
+                    G.doAction(new AttachAction(
                         sn.map(G),
                         perm
                     ));

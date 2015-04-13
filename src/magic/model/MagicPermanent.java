@@ -1,7 +1,7 @@
 package magic.model;
 
 import magic.ai.ArtificialScoringSystem;
-import magic.model.action.MagicAttachAction;
+import magic.model.action.AttachAction;
 import magic.model.action.MagicChangeControlAction;
 import magic.model.action.MagicChangeCountersAction;
 import magic.model.action.MagicChangeStateAction;
@@ -795,7 +795,7 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
                 // This is an exception to rule 704.5n.
                 if (hasAbility(MagicAbility.Bestow)) {
                     game.logAppendMessage(getController(),getName()+" becomes unattached.");
-                    game.addDelayedAction(new MagicAttachAction(this, MagicPermanent.NONE));
+                    game.addDelayedAction(new AttachAction(this, MagicPermanent.NONE));
                 } else {
                 // 704.5n
                     game.logAppendMessage(getController(),getName()+" is put into its owner's graveyard.");
@@ -806,7 +806,7 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
 
         if (isEquipment() && equippedCreature.isValid()) {
             if (isCreature() || !equippedCreature.isCreature() || equippedCreature.hasProtectionFrom(this)) {
-                game.addDelayedAction(new MagicAttachAction(this,MagicPermanent.NONE));
+                game.addDelayedAction(new AttachAction(this,MagicPermanent.NONE));
             }
         }
 

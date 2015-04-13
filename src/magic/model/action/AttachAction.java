@@ -13,7 +13,7 @@ import java.util.Collections;
  * Unattaches attachable from currently attached creature.
  * Attaches attachable to new creature when not MagicPermanent.NONE.
  */
-public class MagicAttachAction extends MagicAction {
+public class AttachAction extends MagicAction {
 
     private final MagicPermanent attachable;
     private final MagicPermanent creature;
@@ -22,7 +22,7 @@ public class MagicAttachAction extends MagicAction {
     private boolean validAttachable;
     private boolean validCreature;
 
-    public MagicAttachAction(final MagicPermanent aAttachable,final MagicPermanent aCreature) {
+    public AttachAction(final MagicPermanent aAttachable,final MagicPermanent aCreature) {
         attachable = aAttachable;
         creature = aCreature;
     }

@@ -4,7 +4,7 @@ import magic.model.MagicGame;
 import magic.model.MagicManaCost;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
-import magic.model.action.MagicAttachAction;
+import magic.model.action.AttachAction;
 import magic.model.action.MagicPermanentAction;
 import magic.model.action.MagicPlayAbilityAction;
 import magic.model.choice.MagicTargetChoice;
@@ -65,7 +65,7 @@ public class MagicEquipActivation extends MagicPermanentActivation {
         event.processTargetPermanent(game,new MagicPermanentAction() {
             public void doAction(final MagicPermanent creature) {
                 game.doAction(new MagicPlayAbilityAction(event.getPermanent()));
-                game.doAction(new MagicAttachAction(event.getPermanent(),creature));
+                game.doAction(new AttachAction(event.getPermanent(),creature));
             }
         });
     }
