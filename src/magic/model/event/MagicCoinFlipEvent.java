@@ -8,10 +8,6 @@ import magic.model.action.MagicAction;
 
 public class MagicCoinFlipEvent extends MagicEvent {
 
-    
-    private MagicAction winAction;
-    private MagicAction loseAction;
-    
     public MagicCoinFlipEvent(final MagicSource source, final boolean aheads, final MagicPlayer player,final MagicAction aWinAction, final MagicAction aLoseAction) {
         super(
             source,
