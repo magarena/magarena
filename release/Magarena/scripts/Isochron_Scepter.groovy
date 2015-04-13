@@ -62,7 +62,7 @@ def INSTANT_LEQ_CMC_2_FROM_HAND = new MagicCardFilterImpl() {
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicCastFreeCopyAction(
+            game.doAction(new CastFreeCopyAction(
                 event.getPlayer(), 
                 event.getRefCard()
             ));

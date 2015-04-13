@@ -56,7 +56,7 @@ def INSTANT_FROM_HAND = new MagicCardFilterImpl() {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
-                game.doAction(new MagicCastFreeCopyAction(
+                game.doAction(new CastFreeCopyAction(
                     event.getPlayer(), 
                     event.getRefCard()
                 ));
