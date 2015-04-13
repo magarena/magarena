@@ -39,7 +39,7 @@ public class MagicDestroyAction extends MagicAction {
                 game.doAction(new MagicTapAction(permanent));
                 game.doAction(new MagicRemoveAllDamageAction(permanent));
                 game.doAction(new MagicRemoveFromCombatAction(permanent));
-                game.doAction(MagicChangeStateAction.Clear(permanent,MagicPermanentState.Regenerated));
+                game.doAction(ChangeStateAction.Clear(permanent,MagicPermanentState.Regenerated));
                 destroy = false;
             }
 

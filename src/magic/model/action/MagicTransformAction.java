@@ -24,9 +24,9 @@ public class MagicTransformAction extends MagicAction {
             oldStatics = permanent.getStatics();
             
             if (permanent.isTransformed()) {
-                game.doAction(MagicChangeStateAction.Clear(permanent, MagicPermanentState.Transformed));
+                game.doAction(ChangeStateAction.Clear(permanent, MagicPermanentState.Transformed));
             } else {
-                game.doAction(MagicChangeStateAction.Set(permanent, MagicPermanentState.Transformed));
+                game.doAction(ChangeStateAction.Set(permanent, MagicPermanentState.Transformed));
             }
             
             newStatics = permanent.getStatics();

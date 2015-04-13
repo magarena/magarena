@@ -58,7 +58,7 @@ public enum MagicRuleEventAction {
                     final Collection<MagicPermanent> targets = game.filterPermanents(event.getPlayer(),filter);
                     if (matcher.group("noregen") != null) {
                         for (final MagicPermanent it : targets) {
-                            game.doAction(MagicChangeStateAction.Set(it, MagicPermanentState.CannotBeRegenerated));
+                            game.doAction(ChangeStateAction.Set(it, MagicPermanentState.CannotBeRegenerated));
                         }
                     }
                     game.doAction(new MagicDestroyAction(targets));
@@ -78,7 +78,7 @@ public enum MagicRuleEventAction {
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
                     final MagicPermanent it = ARG.itPermanent(event, matcher);
                     if (matcher.group("noregen") != null) {
-                        game.doAction(MagicChangeStateAction.Set(it, MagicPermanentState.CannotBeRegenerated));
+                        game.doAction(ChangeStateAction.Set(it, MagicPermanentState.CannotBeRegenerated));
                     }
                     game.doAction(new MagicDestroyAction(it));
                 }
@@ -120,7 +120,7 @@ public enum MagicRuleEventAction {
                     event.processTargetPermanent(game,new MagicPermanentAction() {
                         public void doAction(final MagicPermanent it) {
                             if (matcher.group("noregen") != null) {
-                                game.doAction(MagicChangeStateAction.Set(it, MagicPermanentState.CannotBeRegenerated));
+                                game.doAction(ChangeStateAction.Set(it, MagicPermanentState.CannotBeRegenerated));
                             }
                             game.doAction(new MagicDestroyAction(it));
                         }
@@ -2006,7 +2006,7 @@ public enum MagicRuleEventAction {
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
                     final MagicPermanent it = ARG.itPermanent(event, matcher);
                     game.doAction(new MagicTapAction(it));
-                    game.doAction(MagicChangeStateAction.Set(
+                    game.doAction(ChangeStateAction.Set(
                         it,
                         MagicPermanentState.DoesNotUntapDuringNext
                     ));
@@ -2026,7 +2026,7 @@ public enum MagicRuleEventAction {
                 event.processTargetPermanent(game,new MagicPermanentAction() {
                     public void doAction(final MagicPermanent creature) {
                         game.doAction(new MagicTapAction(creature));
-                        game.doAction(MagicChangeStateAction.Set(
+                        game.doAction(ChangeStateAction.Set(
                             creature,
                             MagicPermanentState.DoesNotUntapDuringNext
                         ));
@@ -2096,7 +2096,7 @@ public enum MagicRuleEventAction {
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    game.doAction(MagicChangeStateAction.Set(
+                    game.doAction(ChangeStateAction.Set(
                         ARG.itPermanent(event, matcher),
                         MagicPermanentState.DoesNotUntapDuringNext
                     ));
@@ -2115,7 +2115,7 @@ public enum MagicRuleEventAction {
             public void executeEvent(final MagicGame game, final MagicEvent event) {
                 event.processTargetPermanent(game,new MagicPermanentAction() {
                     public void doAction(final MagicPermanent perm) {
-                        game.doAction(MagicChangeStateAction.Set(
+                        game.doAction(ChangeStateAction.Set(
                             perm,
                             MagicPermanentState.DoesNotUntapDuringNext
                         ));
@@ -2712,7 +2712,7 @@ public enum MagicRuleEventAction {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
                     game.doAction(new ChangeCountersAction(event.getPermanent(),MagicCounterType.PlusOne, amount));
-                    game.doAction(MagicChangeStateAction.Set(event.getPermanent(),MagicPermanentState.Monstrous));
+                    game.doAction(ChangeStateAction.Set(event.getPermanent(),MagicPermanentState.Monstrous));
                 }
             };
         }

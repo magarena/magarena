@@ -5,7 +5,7 @@ import magic.model.MagicManaCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicPermanentState;
 import magic.model.MagicPlayer;
-import magic.model.action.MagicChangeStateAction;
+import magic.model.action.ChangeStateAction;
 import magic.model.action.MagicSacrificeAction;
 import magic.model.choice.MagicMayChoice;
 import magic.model.choice.MagicPayManaCostChoice;
@@ -41,7 +41,7 @@ public class MagicEchoTrigger extends MagicAtUpkeepTrigger {
     public void executeEvent(final MagicGame game, final MagicEvent event) {
         final MagicPermanent permanent = event.getPermanent();
         if (event.isYes()) {
-            game.doAction(MagicChangeStateAction.Clear(
+            game.doAction(ChangeStateAction.Clear(
                 permanent,
                 MagicPermanentState.MustPayEchoCost
             ));

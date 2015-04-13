@@ -6,7 +6,7 @@ import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicPermanentState;
 import magic.model.action.MagicSacrificeAction;
-import magic.model.action.MagicChangeStateAction;
+import magic.model.action.ChangeStateAction;
 import magic.model.action.MagicPermanentAction;
 import magic.model.event.MagicEventAction;
 import magic.model.event.MagicEvent;
@@ -87,7 +87,7 @@ public abstract class MagicWhenComesIntoPlayTrigger extends MagicTrigger<MagicPa
                 event.processTargetPermanent(game,new MagicPermanentAction() {
                     public void doAction(final MagicPermanent permanent) {
                         game.doAction(new MagicSacrificeAction(permanent));
-                        game.doAction(MagicChangeStateAction.Set(event.getPermanent(), MagicPermanentState.Exploit));
+                        game.doAction(ChangeStateAction.Set(event.getPermanent(), MagicPermanentState.Exploit));
                     }
                 });
             }

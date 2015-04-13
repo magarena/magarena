@@ -23,7 +23,7 @@ public class MagicTurnFaceDownAction extends MagicAction {
         if (permanent.isFaceDown() == false && permanent.isDoubleFaced() == false) {
             oldStatics = permanent.getStatics();
             
-            game.doAction(MagicChangeStateAction.Set(permanent, MagicPermanentState.FaceDown));
+            game.doAction(ChangeStateAction.Set(permanent, MagicPermanentState.FaceDown));
             
             newStatics = permanent.getStatics();
             game.removeStatics(permanent, oldStatics);

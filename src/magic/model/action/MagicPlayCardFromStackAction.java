@@ -58,7 +58,7 @@ public class MagicPlayCardFromStackAction extends MagicAction {
         permanent.getFirstController().addPermanent(permanent);
 
         if (cardOnStack.isCast() && cardOnStack.getFromLocation() == MagicLocationType.OwnersHand) {
-            game.doAction(MagicChangeStateAction.Set(permanent, MagicPermanentState.CastFromHand));
+            game.doAction(ChangeStateAction.Set(permanent, MagicPermanentState.CastFromHand));
         }
 
         //comes into play with/as, such as manifest

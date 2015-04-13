@@ -4,7 +4,7 @@ import magic.ai.ArtificialScoringSystem;
 import magic.model.action.AttachAction;
 import magic.model.action.ChangeControlAction;
 import magic.model.action.ChangeCountersAction;
-import magic.model.action.MagicChangeStateAction;
+import magic.model.action.ChangeStateAction;
 import magic.model.action.MagicDestroyAction;
 import magic.model.action.MagicRemoveFromPlayAction;
 import magic.model.action.MagicSoulbondAction;
@@ -771,7 +771,7 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
                 game.logAppendMessage(getController(),getName()+" is put into its owner's graveyard.");
                 game.addDelayedAction(new MagicRemoveFromPlayAction(this,MagicLocationType.Graveyard));
             } else if (hasState(MagicPermanentState.Destroyed)) {
-                game.addDelayedAction(MagicChangeStateAction.Clear(this,MagicPermanentState.Destroyed));
+                game.addDelayedAction(ChangeStateAction.Clear(this,MagicPermanentState.Destroyed));
                 game.addDelayedAction(new MagicDestroyAction(this));
             } else if (toughness-damage<=0) {
                 game.addDelayedAction(new MagicDestroyAction(this));
