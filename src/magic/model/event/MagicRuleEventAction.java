@@ -3291,7 +3291,7 @@ public enum MagicRuleEventAction {
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    final MagicRandom rng = new MagicRandom(event.getSource().getStateId());
+                    final MagicRandom rng = new MagicRandom(event.getStateId());
                     if (rng.nextInt(2) == 0) {
                         game.logAppendMessage(event.getPlayer(), "PN wins the flip.");
                         if (win != null) {
