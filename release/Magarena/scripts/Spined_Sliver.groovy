@@ -16,7 +16,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPermanent blocked = event.getRefPermanent();
             final int amount = blocked.getBlockingCreatures().size();
-            game.doAction(new MagicChangeTurnPTAction(
+            game.doAction(new ChangeTurnPTAction(
                 blocked,
                 amount,
                 amount

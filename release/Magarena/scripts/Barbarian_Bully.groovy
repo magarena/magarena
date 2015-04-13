@@ -3,7 +3,7 @@ def action = {
     if (event.isYes()) {
         game.doAction(new MagicDealDamageAction(event.getSource(),event.getPlayer(),4));
     } else {
-        game.doAction(new MagicChangeTurnPTAction(event.getPermanent(),2,2));
+        game.doAction(new ChangeTurnPTAction(event.getPermanent(),2,2));
     }
 }
 

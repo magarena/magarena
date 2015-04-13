@@ -22,7 +22,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final int X = event.getPlayer().getHandSize();
-            game.doAction(new MagicChangeTurnPTAction(event.getPermanent(),0,X));
+            game.doAction(new ChangeTurnPTAction(event.getPermanent(),0,X));
         }
     }
 ]

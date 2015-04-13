@@ -28,7 +28,7 @@
                 game.doAction(act);
                 for (final MagicCard card : act.getMilledCards()) {
                     final int amount = card.getConvertedCost();
-                    game.doAction(new MagicChangeTurnPTAction(event.getPermanent(),amount,amount));
+                    game.doAction(new ChangeTurnPTAction(event.getPermanent(),amount,amount));
                 }
             });
         }

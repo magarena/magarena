@@ -13,7 +13,7 @@
             final MagicPermanent creature = event.getPermanent();
             final MagicTargetFilter<MagicPermanent> filter = ATTACKING_AUROCHS.except(creature);
             final int power = event.getPlayer().getNrOfPermanents(filter);
-            game.doAction(new MagicChangeTurnPTAction(creature,power,0));
+            game.doAction(new ChangeTurnPTAction(creature,power,0));
         }
     }
 ]

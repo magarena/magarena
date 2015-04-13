@@ -14,7 +14,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
                 final int X = event.getPlayer().filterCards(CREATURE_CARD_FROM_GRAVEYARD).size();
-                game.doAction(new MagicChangeTurnPTAction(it, X, 0));
+                game.doAction(new ChangeTurnPTAction(it, X, 0));
                 game.doAction(new AddTriggerAction(it, MagicAtEndOfTurnTrigger.Sacrifice));            
             });
         }

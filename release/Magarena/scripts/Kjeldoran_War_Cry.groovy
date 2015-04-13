@@ -21,7 +21,7 @@
                 CREATURE_YOU_CONTROL
             );
             for (final MagicPermanent creature : targets) {
-                game.doAction(new MagicChangeTurnPTAction(creature,amount,amount));
+                game.doAction(new ChangeTurnPTAction(creature,amount,amount));
             }
         }
     }

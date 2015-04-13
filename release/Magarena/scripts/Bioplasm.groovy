@@ -17,7 +17,7 @@
                 if (card.hasType(MagicType.Creature)) {
                     final int X = card.getPower();
                     final int Y = card.getToughness();
-                    game.doAction(new MagicChangeTurnPTAction(event.getPermanent(), +X, +Y));
+                    game.doAction(new ChangeTurnPTAction(event.getPermanent(), +X, +Y));
                 }
             }
         }

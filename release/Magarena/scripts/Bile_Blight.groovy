@@ -17,7 +17,7 @@
                 final MagicTargetFilter<MagicPermanent> targetFilter = new MagicNameTargetFilter(CREATURE, it.getName());
                 targetFilter.filter(game) each {
                     final MagicPermanent creature ->
-                    game.doAction(new MagicChangeTurnPTAction(creature,-3,-3));
+                    game.doAction(new ChangeTurnPTAction(creature,-3,-3));
                 }
             });
         }

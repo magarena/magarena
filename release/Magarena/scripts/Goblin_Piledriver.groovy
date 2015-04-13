@@ -12,7 +12,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPermanent permanent=event.getPermanent();
             final int amount=game.filterPermanents(ATTACKING_GOBLIN.except(permanent)).size()*2;
-            game.doAction(new MagicChangeTurnPTAction(permanent,amount,0));
+            game.doAction(new ChangeTurnPTAction(permanent,amount,0));
         }
     }
 ]

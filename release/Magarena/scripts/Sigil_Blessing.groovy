@@ -17,9 +17,9 @@
                     event.getPlayer(),
                     CREATURE_YOU_CONTROL.except(it)
                 );
-                game.doAction(new MagicChangeTurnPTAction(it,3,3));
+                game.doAction(new ChangeTurnPTAction(it,3,3));
                 for (final MagicPermanent permanent : targets) {
-                    game.doAction(new MagicChangeTurnPTAction(permanent,1,1));
+                    game.doAction(new ChangeTurnPTAction(permanent,1,1));
                 }
             });
         }

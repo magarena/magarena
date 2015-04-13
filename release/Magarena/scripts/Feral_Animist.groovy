@@ -22,7 +22,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
                 final MagicPermanent permanent = event.getPermanent()
-                game.doAction(new MagicChangeTurnPTAction(permanent, permanent.getPower(), 0));
+                game.doAction(new ChangeTurnPTAction(permanent, permanent.getPower(), 0));
         }
     }
 ]

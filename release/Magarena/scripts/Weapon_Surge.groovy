@@ -13,7 +13,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                game.doAction(new MagicChangeTurnPTAction(it, 1, 0));
+                game.doAction(new ChangeTurnPTAction(it, 1, 0));
                 game.doAction(new MagicGainAbilityAction(it, MagicAbility.FirstStrike));
             });
         }
@@ -40,7 +40,7 @@
                 CREATURE_YOU_CONTROL
             );
             for (final MagicPermanent creature : targets) {
-                game.doAction(new MagicChangeTurnPTAction(creature, 1, 0));
+                game.doAction(new ChangeTurnPTAction(creature, 1, 0));
                 game.doAction(new MagicGainAbilityAction(creature, MagicAbility.FirstStrike));
             }
         }

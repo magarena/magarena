@@ -3,7 +3,7 @@ def Action = {
     final MagicTargetFilter<MagicPermanent> filter = HUMAN_CREATURE_YOU_CONTROL.except(event.getPermanent());
     final Collection<MagicPermanent> targets = game.filterPermanents(event.getPlayer(),filter);
     for (final MagicPermanent creature : targets) {
-        game.doAction(new MagicChangeTurnPTAction(creature,1,1));
+        game.doAction(new ChangeTurnPTAction(creature,1,1));
     }
 }
 

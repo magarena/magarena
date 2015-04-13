@@ -22,7 +22,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPermanent permanent = event.getPermanent();
             ATTACKING_CREATURE.filter(game) each {
-                game.doAction(new MagicChangeTurnPTAction(it, permanent.getPower(), 0));
+                game.doAction(new ChangeTurnPTAction(it, permanent.getPower(), 0));
             }
         }
     }

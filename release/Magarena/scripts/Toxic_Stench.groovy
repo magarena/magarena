@@ -20,7 +20,7 @@
                     ));
                     game.doAction(new MagicDestroyAction(it));
                 } else {
-                    game.doAction(new MagicChangeTurnPTAction(it,-1,-1));
+                    game.doAction(new ChangeTurnPTAction(it,-1,-1));
                 }
             });
         }

@@ -16,7 +16,7 @@
             event.processTargetPermanent(game, {
                 final MagicTargetFilter<MagicPermanent> targetFilter = new MagicNameTargetFilter(CREATURE, it.getName());
                 targetFilter.filter(game) each {
-                    game.doAction(new MagicChangeTurnPTAction(it,-2,-2));
+                    game.doAction(new ChangeTurnPTAction(it,-2,-2));
                 }
             });
         }

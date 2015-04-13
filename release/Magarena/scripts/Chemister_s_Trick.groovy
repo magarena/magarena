@@ -13,7 +13,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                game.doAction(new MagicChangeTurnPTAction(it, -2, 0));
+                game.doAction(new ChangeTurnPTAction(it, -2, 0));
                 game.doAction(new MagicGainAbilityAction(it, MagicAbility.AttacksEachTurnIfAble));
             });
         }
@@ -36,7 +36,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             CREATURE_YOUR_OPPONENT_CONTROLS.filter(event.getPlayer()) each {
-                game.doAction(new MagicChangeTurnPTAction(it, -2, 0));
+                game.doAction(new ChangeTurnPTAction(it, -2, 0));
                 game.doAction(new MagicGainAbilityAction(it, MagicAbility.AttacksEachTurnIfAble));
             }
         }

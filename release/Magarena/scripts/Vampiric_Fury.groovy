@@ -15,7 +15,7 @@
                     event.getPlayer(),
                     VAMPIRE_CREATURE_YOU_CONTROL);
             for (final MagicPermanent creature : targets) {
-                game.doAction(new MagicChangeTurnPTAction(creature,2,0));
+                game.doAction(new ChangeTurnPTAction(creature,2,0));
                 game.doAction(new MagicGainAbilityAction(creature,MagicAbility.FirstStrike));
             }
         }

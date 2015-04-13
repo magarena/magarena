@@ -13,7 +13,7 @@
             CREATURE_YOU_CONTROL
             .except(event.getPermanent())
             .filter(event.getPlayer()) each {
-                game.doAction(new MagicChangeTurnPTAction(it,1,0));
+                game.doAction(new ChangeTurnPTAction(it,1,0));
             }
         }
     }

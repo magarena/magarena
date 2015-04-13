@@ -24,10 +24,10 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             CREATURE_WITH_SHADOW.filter(game) each {
-                game.doAction(new MagicChangeTurnPTAction(it,1,0));
+                game.doAction(new ChangeTurnPTAction(it,1,0));
             }
             CREATURE_WITHOUT_SHADOW.filter(game) each {
-                game.doAction(new MagicChangeTurnPTAction(it,-1,0));
+                game.doAction(new ChangeTurnPTAction(it,-1,0));
             }
         }
     }

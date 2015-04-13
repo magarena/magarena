@@ -12,7 +12,7 @@ def FrenzyPump = new MagicWhenAttacksUnblockedTrigger() {
     }
     @Override
     public void executeEvent(final MagicGame game, final MagicEvent event) {
-        game.doAction(new MagicChangeTurnPTAction(
+        game.doAction(new ChangeTurnPTAction(
             event.getPermanent(), 
             1, 0
         ));

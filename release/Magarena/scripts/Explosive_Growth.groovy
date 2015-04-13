@@ -14,7 +14,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
                 int amount = event.isKicked() ? 5 : 2;
-                game.doAction(new MagicChangeTurnPTAction(it, amount, amount));
+                game.doAction(new ChangeTurnPTAction(it, amount, amount));
             });
         }
     }

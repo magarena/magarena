@@ -12,7 +12,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final int amount = event.getPlayer().getNrOfPermanents(UNTAPPED_CREATURE_YOU_CONTROL);
-            game.doAction(new MagicChangeTurnPTAction(event.getPermanent(),amount,amount));
+            game.doAction(new ChangeTurnPTAction(event.getPermanent(),amount,amount));
         }
     }
 ]

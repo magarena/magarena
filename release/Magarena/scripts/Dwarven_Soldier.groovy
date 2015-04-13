@@ -20,7 +20,7 @@
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicChangeTurnPTAction(
+            game.doAction(new ChangeTurnPTAction(
                 event.getPermanent(),
                 0,
                 2
@@ -43,7 +43,7 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicChangeTurnPTAction(
+            game.doAction(new ChangeTurnPTAction(
                 event.getPermanent(),
                 0,
                 2

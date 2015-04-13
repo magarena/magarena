@@ -21,7 +21,7 @@
             final int amount = targets.size();
             for (final MagicPermanent creature : targets) {
                 game.doAction(new MagicGainAbilityAction(creature,MagicAbility.Trample));
-                game.doAction(new MagicChangeTurnPTAction(creature,amount,amount));
+                game.doAction(new ChangeTurnPTAction(creature,amount,amount));
             }
         }
     }

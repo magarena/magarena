@@ -17,7 +17,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             CREATURE_YOUR_OPPONENT_CONTROLS.filter(event.getPlayer()) each {
-                game.doAction(new MagicChangeTurnPTAction(it, -4, 0));
+                game.doAction(new ChangeTurnPTAction(it, -4, 0));
             }
         }
     }

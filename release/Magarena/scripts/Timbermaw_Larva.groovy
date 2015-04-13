@@ -15,7 +15,7 @@
             final int amount = event.getPlayer().getNrOfPermanents(
                 FOREST_YOU_CONTROL
             );
-            game.doAction(new MagicChangeTurnPTAction(event.getPermanent(),amount,amount));
+            game.doAction(new ChangeTurnPTAction(event.getPermanent(),amount,amount));
         }
     }
 ]

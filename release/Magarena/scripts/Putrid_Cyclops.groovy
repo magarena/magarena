@@ -15,7 +15,7 @@
             for (final MagicCard card : event.getPlayer().getLibrary().getCardsFromTop(1)) {
                 game.doAction(new MagicRevealAction(card));
                 final int X = card.getConvertedCost();
-                game.doAction(new MagicChangeTurnPTAction(event.getPermanent(),-X,-X));
+                game.doAction(new ChangeTurnPTAction(event.getPermanent(),-X,-X));
             }
         }
     }

@@ -14,7 +14,7 @@
             final Collection<MagicPermanent> attackers = game.filterPermanents(ATTACKING_CREATURE.except(event.getPermanent()));
             final int amount = attackers.size()
             for (final MagicPermanent creature:attackers) {
-                game.doAction(new MagicChangeTurnPTAction(creature,amount,amount));
+                game.doAction(new ChangeTurnPTAction(creature,amount,amount));
             }
         }
     },
@@ -34,7 +34,7 @@
             final Collection<MagicPermanent> blockers = game.filterPermanents(BLOCKING_CREATURE.except(event.getPermanent()));
             final int amount = blockers.size()
             for (final MagicPermanent creature:blockers) {
-                game.doAction(new MagicChangeTurnPTAction(creature,amount,amount));
+                game.doAction(new ChangeTurnPTAction(creature,amount,amount));
             }
         }
     }

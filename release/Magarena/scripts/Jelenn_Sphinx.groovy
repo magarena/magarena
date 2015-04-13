@@ -15,7 +15,7 @@
                 ATTACKING_CREATURE.except(event.getPermanent())
             );
             for (final MagicPermanent creature:attackers) {
-                game.doAction(new MagicChangeTurnPTAction(creature,1,1));
+                game.doAction(new ChangeTurnPTAction(creature,1,1));
             }
         }
     }

@@ -15,9 +15,9 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                game.doAction(new MagicChangeTurnPTAction(it,2,2));
+                game.doAction(new ChangeTurnPTAction(it,2,2));
                 if (it.isPaired()) {
-                    game.doAction(new MagicChangeTurnPTAction(
+                    game.doAction(new ChangeTurnPTAction(
                         it.getPairedCreature(),
                         2,
                         2

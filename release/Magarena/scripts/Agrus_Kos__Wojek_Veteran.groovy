@@ -13,10 +13,10 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.filterPermanents(ATTACKING_CREATURE) each {
                 if (it.hasColor(MagicColor.Red)) {
-                    game.doAction(new MagicChangeTurnPTAction(it,2,0));
+                    game.doAction(new ChangeTurnPTAction(it,2,0));
                 }
                 if (it.hasColor(MagicColor.White)) {
-                    game.doAction(new MagicChangeTurnPTAction(it,0,2));
+                    game.doAction(new ChangeTurnPTAction(it,0,2));
                 }
             }
         }

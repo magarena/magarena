@@ -13,7 +13,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final int amt = event.getCardOnStack().getX();
             CREATURE.filter(game) each {
-                game.doAction(new MagicChangeTurnPTAction(it, amt, -amt));
+                game.doAction(new ChangeTurnPTAction(it, amt, -amt));
             }
         }
     }

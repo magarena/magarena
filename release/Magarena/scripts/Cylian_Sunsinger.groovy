@@ -27,7 +27,7 @@
             final Collection<MagicPermanent> targets =
                 game.filterPermanents(event.getPlayer(), targetFilter);
             for (final MagicPermanent permanent : targets) {
-                game.doAction(new MagicChangeTurnPTAction(permanent,3,3));
+                game.doAction(new ChangeTurnPTAction(permanent,3,3));
             }
         }
     }

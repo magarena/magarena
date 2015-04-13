@@ -21,7 +21,7 @@
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicChangeTurnPTAction(event.getPermanent(),3,3));
+            game.doAction(new ChangeTurnPTAction(event.getPermanent(),3,3));
         }
     },
     new MagicWhenSelfBlocksTrigger() {
@@ -39,7 +39,7 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicChangeTurnPTAction(event.getPermanent(),3,3));
+            game.doAction(new ChangeTurnPTAction(event.getPermanent(),3,3));
         }
     }
 ]

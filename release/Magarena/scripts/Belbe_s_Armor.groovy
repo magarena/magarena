@@ -27,7 +27,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final int amount=event.getRefInt();
             event.processTargetPermanent(game, {
-                game.doAction(new MagicChangeTurnPTAction(it,-amount,+amount));
+                game.doAction(new ChangeTurnPTAction(it,-amount,+amount));
             });
         }
     }

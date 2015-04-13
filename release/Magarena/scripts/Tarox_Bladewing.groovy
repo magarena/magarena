@@ -33,7 +33,7 @@ def A_CARD_NAMED_TAROX_BLADEWING = new MagicTargetChoice(
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPermanent permanent=event.getPermanent();
             final int power=permanent.getPower();
-            game.doAction(new MagicChangeTurnPTAction(permanent,power,power));
+            game.doAction(new ChangeTurnPTAction(permanent,power,power));
         }
     }
 ]

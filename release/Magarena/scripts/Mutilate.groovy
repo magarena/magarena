@@ -17,7 +17,7 @@
             )
             final int amt = you.getNrOfPermanents(MagicSubType.Swamp);
             for (final MagicPermanent creature : creatures) {
-                game.doAction(new MagicChangeTurnPTAction(
+                game.doAction(new ChangeTurnPTAction(
                     creature,
                     -amt,
                     -amt

@@ -19,7 +19,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final int amt = event.isYes() ? 1 : 3;
             CREATURE_YOU_CONTROL.filter(event.getRefPlayer()) each {
-                game.doAction(new MagicChangeTurnPTAction(it, 0, amt));
+                game.doAction(new ChangeTurnPTAction(it, 0, amt));
             }
         }
     }

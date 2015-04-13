@@ -21,7 +21,7 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicChangeTurnPTAction(event.getPermanent(), 1, 1));
+            game.doAction(new ChangeTurnPTAction(event.getPermanent(), 1, 1));
             event.processTargetPlayer(game, {
                 game.doAction(new MagicPlayTokensAction(
                     it,

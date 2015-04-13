@@ -14,7 +14,7 @@
             final MagicPlayer you = event.getPlayer();
             final Collection<MagicPermanent> creatures = you.filterPermanents(CREATURE_YOU_CONTROL);
             for (final MagicPermanent creature : creatures) {
-                game.doAction(new MagicChangeTurnPTAction(creature,1,1));
+                game.doAction(new ChangeTurnPTAction(creature,1,1));
             }
             if (you.controlsPermanent(MagicSubType.Kithkin)) {
                 game.doAction(new MagicDrawAction(you));

@@ -15,7 +15,7 @@
             final int domain = player.getDomain();
             game.logAppendMessage(player," ("+domain+")");
             CREATURE.filter(game) each {
-                game.doAction(new MagicChangeTurnPTAction(it,-domain,-domain));
+                game.doAction(new ChangeTurnPTAction(it,-domain,-domain));
             }
         }
     }

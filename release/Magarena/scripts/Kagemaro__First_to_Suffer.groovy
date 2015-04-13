@@ -22,7 +22,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final int X = event.getPlayer().getHandSize();
             CREATURE.filter(game) each {
-                game.doAction(new MagicChangeTurnPTAction(it, -X, -X));
+                game.doAction(new ChangeTurnPTAction(it, -X, -X));
             }
         }
     }

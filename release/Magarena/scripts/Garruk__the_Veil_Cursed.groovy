@@ -43,7 +43,7 @@ def AB1 = MagicRuleEventAction.create("Put a 1/1 black Wolf creature token with 
             final int X = event.getPlayer().filterCards(CREATURE_CARD_FROM_GRAVEYARD).size();
             CREATURE_YOU_CONTROL.filter(event.getPlayer()) each {
                 game.doAction(new MagicGainAbilityAction(it, MagicAbility.Trample));
-                game.doAction(new MagicChangeTurnPTAction(it, X, X));
+                game.doAction(new ChangeTurnPTAction(it, X, X));
             }
         }
     }

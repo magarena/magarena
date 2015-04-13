@@ -14,7 +14,7 @@
             event.processTargetPermanent(game, {
                 final MagicPlayer player = event.getPlayer();
                 final int amount = player.getHandSize();
-                game.doAction(new MagicChangeTurnPTAction(it,+amount,-amount));
+                game.doAction(new ChangeTurnPTAction(it,+amount,-amount));
             });
         }
     }

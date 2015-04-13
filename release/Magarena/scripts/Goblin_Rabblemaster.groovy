@@ -22,7 +22,7 @@ def EFFECT = MagicRuleEventAction.create("Put a 1/1 red Goblin creature token wi
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPermanent permanent = event.getPermanent();
             final int amount = game.filterPermanents(ATTACKING_GOBLIN.except(permanent)).size();
-            game.doAction(new MagicChangeTurnPTAction(permanent,amount,0));
+            game.doAction(new ChangeTurnPTAction(permanent,amount,0));
         }
     }
 ]

@@ -30,7 +30,7 @@
                         Control.You
                     )
                 );
-                game.doAction(new MagicChangeTurnPTAction(it,-amount,0));
+                game.doAction(new ChangeTurnPTAction(it,-amount,0));
             });
         }
     }

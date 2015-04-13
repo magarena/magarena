@@ -15,7 +15,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPermanent creature=event.getRefPermanent();
             final int power = event.getPlayer().getDevotion(MagicColor.Red);
-            game.doAction(new MagicChangeTurnPTAction(creature,power,0));
+            game.doAction(new ChangeTurnPTAction(creature,power,0));
         }
     }
 ]

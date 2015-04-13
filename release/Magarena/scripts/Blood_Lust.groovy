@@ -17,9 +17,9 @@
             event.processTargetPermanent(game, {
                 final int toughness = it.getToughness();
                 if (toughness >= 5) {
-                    game.doAction(new MagicChangeTurnPTAction(it,4,-4));
+                    game.doAction(new ChangeTurnPTAction(it,4,-4));
                 } else {
-                    game.doAction(new MagicChangeTurnPTAction(it,4,-(toughness-1)));
+                    game.doAction(new ChangeTurnPTAction(it,4,-(toughness-1)));
                 }
             });
         }

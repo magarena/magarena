@@ -20,7 +20,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                game.doAction(new MagicChangeTurnPTAction(it,1,2));
+                game.doAction(new ChangeTurnPTAction(it,1,2));
             });
         }
     }

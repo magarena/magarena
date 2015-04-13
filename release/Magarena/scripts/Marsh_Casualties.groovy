@@ -17,7 +17,7 @@
                 final Collection<MagicPermanent> targets=
                     game.filterPermanents(it,CREATURE_YOU_CONTROL);
                 for (final MagicPermanent target : targets) {
-                    game.doAction(new MagicChangeTurnPTAction(target,amount,amount));
+                    game.doAction(new ChangeTurnPTAction(target,amount,amount));
                 }
             });
         }

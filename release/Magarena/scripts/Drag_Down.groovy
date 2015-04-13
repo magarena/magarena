@@ -17,7 +17,7 @@
             event.processTargetPermanent(game, {
                 final int amount = event.getPlayer().getDomain();
                 game.logAppendMessage(event.getPlayer()," ("+amount+")");
-                game.doAction(new MagicChangeTurnPTAction(it,-amount,-amount));
+                game.doAction(new ChangeTurnPTAction(it,-amount,-amount));
             });
         }
     }

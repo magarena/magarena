@@ -14,7 +14,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                game.doAction(new MagicChangeTurnPTAction(it,-5,-5));
+                game.doAction(new ChangeTurnPTAction(it,-5,-5));
                 game.doAction(new MagicDealDamageAction(event.getSource(),it.getController(),5)); 
             });
         }

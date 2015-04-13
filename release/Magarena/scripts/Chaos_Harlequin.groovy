@@ -31,7 +31,7 @@
                     MagicLocationType.OwnersLibrary,
                     MagicLocationType.Exile
                 ));
-                game.doAction(new MagicChangeTurnPTAction(
+                game.doAction(new ChangeTurnPTAction(
                     event.getPermanent(),
                     card.hasType(MagicType.Land) ? -4 : +2,
                     0

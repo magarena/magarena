@@ -19,7 +19,7 @@
                     MagicAbility.CannotBeTheTarget(event.getPlayer().getOpponent())
                 ));
                 if (event.isKicked()) {
-                    game.doAction(new MagicChangeTurnPTAction(it,4,4));
+                    game.doAction(new ChangeTurnPTAction(it,4,4));
                 }
             });
         }

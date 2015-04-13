@@ -17,7 +17,7 @@
                 CREATURE_YOU_CONTROL.except(permanent)
             );
             for (final MagicPermanent target : targets) {
-                game.doAction(new MagicChangeTurnPTAction(target,X,X));
+                game.doAction(new ChangeTurnPTAction(target,X,X));
             }
         }
     }

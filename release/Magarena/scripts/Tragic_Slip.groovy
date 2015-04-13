@@ -15,7 +15,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
                 final int amount = game.getCreatureDiedThisTurn() ? -13 : -1;
-                game.doAction(new MagicChangeTurnPTAction(it,amount,amount));
+                game.doAction(new ChangeTurnPTAction(it,amount,amount));
             });
         }
     }

@@ -19,7 +19,7 @@
             ).size()+3;
             event.processTargetPermanent(game, {
                 game.logAppendMessage(event.getPlayer()," (X="+amount+")");
-                game.doAction(new MagicChangeTurnPTAction(it,amount,amount));
+                game.doAction(new ChangeTurnPTAction(it,amount,amount));
             });
         }
     }

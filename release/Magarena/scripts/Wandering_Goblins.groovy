@@ -26,7 +26,7 @@
             final MagicPlayer player = event.getPlayer()
             final int amount = player.getDomain();
             game.logAppendMessage(player," ("+amount+")");
-            game.doAction(new MagicChangeTurnPTAction(creature,amount,0));
+            game.doAction(new ChangeTurnPTAction(creature,amount,0));
         }
     }
 ]

@@ -14,7 +14,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
                 final int amount = event.getPlayer().getNrOfPermanents(MagicSubType.Forest);
-                game.doAction(new MagicChangeTurnPTAction(it, +amount, +amount));
+                game.doAction(new ChangeTurnPTAction(it, +amount, +amount));
             });
         }
     }
