@@ -4,7 +4,7 @@
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPayedCost payedCost) {
             final int amount = permanent.getController().filterCards(CREATURE_CARD_FROM_GRAVEYARD).size();
             if (amount>0) {
-                game.doAction(new MagicChangeCountersAction(permanent, MagicCounterType.PlusOne, amount));
+                game.doAction(new ChangeCountersAction(permanent, MagicCounterType.PlusOne, amount));
             } 
             return MagicEvent.NONE;
         }

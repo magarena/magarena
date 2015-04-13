@@ -20,7 +20,7 @@
                     final MagicPermanent perm ->
                     final MagicGame G = perm.getGame();
                     if (perm.hasSubType(MagicSubType.Angel)) {
-                        G.doAction(new MagicChangeCountersAction(perm,MagicCounterType.PlusOne,2));
+                        G.doAction(new ChangeCountersAction(perm,MagicCounterType.PlusOne,2));
                     }
                 }));
             });

@@ -6,7 +6,7 @@
                 otherPermanent.isCreature() &&
                 otherPermanent.isFriend(permanent) &&
                 otherPermanent.hasSubType(MagicSubType.Wizard)) {
-                game.doAction(MagicChangeCountersAction.Enters(otherPermanent,MagicCounterType.PlusOne,1));
+                game.doAction(ChangeCountersAction.Enters(otherPermanent,MagicCounterType.PlusOne,1));
             }
             return MagicEvent.NONE;
         }

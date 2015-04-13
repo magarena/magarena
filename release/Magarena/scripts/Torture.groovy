@@ -20,7 +20,7 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicChangeCountersAction(event.getRefPermanent(),MagicCounterType.MinusOne,1));
+            game.doAction(new ChangeCountersAction(event.getRefPermanent(),MagicCounterType.MinusOne,1));
         }
     }
 ]

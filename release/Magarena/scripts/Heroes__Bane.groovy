@@ -22,7 +22,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPermanent creature = event.getPermanent();
             final int amount = creature.getPower();
-            game.doAction(new MagicChangeCountersAction(creature,MagicCounterType.PlusOne,amount));
+            game.doAction(new ChangeCountersAction(creature,MagicCounterType.PlusOne,amount));
             game.logAppendMessage(event.getPlayer(),"(X="+amount+")");
         }
     }

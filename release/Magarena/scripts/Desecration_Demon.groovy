@@ -17,7 +17,7 @@
             if (event.isYes() && sac.isSatisfied()) {
                 game.addEvent(sac);
                 game.doAction(new MagicTapAction(perm));
-                game.doAction(new MagicChangeCountersAction(perm,MagicCounterType.PlusOne,1));
+                game.doAction(new ChangeCountersAction(perm,MagicCounterType.PlusOne,1));
             }
         }
     }

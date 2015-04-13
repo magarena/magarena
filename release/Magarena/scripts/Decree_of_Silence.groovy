@@ -16,7 +16,7 @@ def EFFECT = MagicRuleEventAction.create("Sacrifice SN.");
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new MagicCounterItemOnStackAction(event.getRefCardOnStack()));
-            game.doAction(new MagicChangeCountersAction(event.getPermanent(),MagicCounterType.Depletion,1));
+            game.doAction(new ChangeCountersAction(event.getPermanent(),MagicCounterType.Depletion,1));
         }
     },
     new MagicStatic(MagicLayer.Game) {

@@ -25,8 +25,8 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
                 if (event.getPermanent().hasCounters(MagicCounterType.PlusOne)) {
-                    game.doAction(new MagicChangeCountersAction(event.getPermanent(),MagicCounterType.PlusOne,-1));
-                    game.doAction(new MagicChangeCountersAction(it,MagicCounterType.PlusOne,1));
+                    game.doAction(new ChangeCountersAction(event.getPermanent(),MagicCounterType.PlusOne,-1));
+                    game.doAction(new ChangeCountersAction(it,MagicCounterType.PlusOne,1));
                 }
             });
         }

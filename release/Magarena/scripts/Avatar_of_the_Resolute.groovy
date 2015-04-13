@@ -6,7 +6,7 @@
                 CREATURE_PLUSONE_COUNTER_YOU_CONTROL.except(permanent)
             );
             if (amount>0) {
-                game.doAction(new MagicChangeCountersAction(permanent, MagicCounterType.PlusOne, amount));
+                game.doAction(new ChangeCountersAction(permanent, MagicCounterType.PlusOne, amount));
             } 
             return MagicEvent.NONE;
         }

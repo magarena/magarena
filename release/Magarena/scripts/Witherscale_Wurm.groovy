@@ -16,7 +16,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPermanent permanent = event.getPermanent();
             final int amount = permanent.getCounters(MagicCounterType.MinusOne);
-            game.doAction(new MagicChangeCountersAction(permanent,MagicCounterType.MinusOne,-amount));
+            game.doAction(new ChangeCountersAction(permanent,MagicCounterType.MinusOne,-amount));
         }
     }
 ]

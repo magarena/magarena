@@ -27,7 +27,7 @@
             event.processTargetPermanent(game, {
                 game.doAction(new MagicDealDamageAction(event.getSource(),it,1));
                 game.doAction(new AddStaticAction(it, MagicStatic.Vampire));
-                game.doAction(new MagicChangeCountersAction(event.getPermanent(),MagicCounterType.PlusOne,1));
+                game.doAction(new ChangeCountersAction(event.getPermanent(),MagicCounterType.PlusOne,1));
             });
         }
     },

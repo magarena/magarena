@@ -10,7 +10,7 @@
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPayedCost payedCost) {
             final int amount = game.filterPermanents(permanent.getController(),ISLAND_YOU_CONTROL).size();
-            game.doAction(new MagicChangeCountersAction(permanent,MagicCounterType.Time,amount));
+            game.doAction(new ChangeCountersAction(permanent,MagicCounterType.Time,amount));
             return MagicEvent.NONE;
         }
     }

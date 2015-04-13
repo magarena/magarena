@@ -35,7 +35,7 @@ def NONLAND_PERMANENT_WITHOUT_FATE_COUNTER = new MagicPermanentFilterImpl() {
                 game.doAction(new MagicDestroyAction(targets));
                 final List<MagicPermanent> permanents = game.filterPermanents(PERMANENT);
                 for (final MagicPermanent permanent : permanents) {   
-                    game.doAction(new MagicChangeCountersAction(
+                    game.doAction(new ChangeCountersAction(
                         permanent,
                         MagicCounterType.Fate,
                         -permanent.getCounters(MagicCounterType.Fate)

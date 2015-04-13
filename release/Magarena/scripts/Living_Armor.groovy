@@ -24,7 +24,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                game.doAction(new MagicChangeCountersAction(
+                game.doAction(new ChangeCountersAction(
                     it,
                     MagicCounterType.PlusZeroPlusOne,
                     it.getConvertedCost()

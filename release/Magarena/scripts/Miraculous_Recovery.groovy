@@ -18,7 +18,7 @@
                 game.doAction(new MagicPlayCardAction(it,event.getPlayer(),{
                     final MagicPermanent perm ->
                     final MagicGame G = perm.getGame();
-                    G.doAction(new MagicChangeCountersAction(perm,MagicCounterType.PlusOne,1));
+                    G.doAction(new ChangeCountersAction(perm,MagicCounterType.PlusOne,1));
                 }));
             });
         }

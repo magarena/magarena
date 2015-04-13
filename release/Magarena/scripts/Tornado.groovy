@@ -26,7 +26,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
                 game.doAction(new MagicDestroyAction(it));
-                game.doAction(new MagicChangeCountersAction(event.getPermanent(),MagicCounterType.Velocity,1));
+                game.doAction(new ChangeCountersAction(event.getPermanent(),MagicCounterType.Velocity,1));
             });
         }
     }

@@ -12,7 +12,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final Collection<MagicPermanent> shamans = game.filterPermanents(SHAMAN_CREATURE_YOU_CONTROL.except(event.getPermanent()));
             for (final MagicPermanent creature : shamans) {
-                game.doAction(new MagicChangeCountersAction(creature,MagicCounterType.PlusOne,1));
+                game.doAction(new ChangeCountersAction(creature,MagicCounterType.PlusOne,1));
             }
         }
     }

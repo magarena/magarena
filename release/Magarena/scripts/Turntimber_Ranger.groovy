@@ -26,7 +26,7 @@
                     event.getPlayer(),
                     TokenCardDefinitions.get("2/2 green Wolf creature token")
                 ));
-                game.doAction(new MagicChangeCountersAction(event.getPermanent(),MagicCounterType.PlusOne,1));
+                game.doAction(new ChangeCountersAction(event.getPermanent(),MagicCounterType.PlusOne,1));
             }
         }
     }

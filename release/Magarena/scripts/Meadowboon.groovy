@@ -15,7 +15,7 @@
             event.processTargetPlayer(game, {
                 final Collection<MagicPermanent> targets = it.filterPermanents(CREATURE_YOU_CONTROL);
                 for (final MagicPermanent target : targets) {
-                    game.doAction(new MagicChangeCountersAction(target,MagicCounterType.PlusOne,1));
+                    game.doAction(new ChangeCountersAction(target,MagicCounterType.PlusOne,1));
                 }
             });
         }

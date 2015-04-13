@@ -15,7 +15,7 @@
                     CREATURE_YOU_CONTROL
                 );
             for (final MagicPermanent creature : targets) {
-                game.doAction(new MagicChangeCountersAction(creature,MagicCounterType.PlusOne,creature.getCounters(MagicCounterType.PlusOne)));
+                game.doAction(new ChangeCountersAction(creature,MagicCounterType.PlusOne,creature.getCounters(MagicCounterType.PlusOne)));
             }
         }
     }

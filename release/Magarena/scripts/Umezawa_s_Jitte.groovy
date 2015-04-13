@@ -38,7 +38,7 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicChangeCountersAction(event.getPermanent(),MagicCounterType.Charge,2));
+            game.doAction(new ChangeCountersAction(event.getPermanent(),MagicCounterType.Charge,2));
         }
     }
 ]

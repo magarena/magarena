@@ -25,7 +25,7 @@
                 CREATURE.except(event.getPermanent())
             );
             for (final MagicPermanent target : targets) {
-                game.doAction(new MagicChangeCountersAction(target,MagicCounterType.MinusOne,1));
+                game.doAction(new ChangeCountersAction(target,MagicCounterType.MinusOne,1));
             }
         }
     }

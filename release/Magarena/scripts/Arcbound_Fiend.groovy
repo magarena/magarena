@@ -15,8 +15,8 @@
             if (event.isYes()) {
                 event.processTargetPermanent(game, {
                     if (it.getCounters(MagicCounterType.PlusOne) > 0) {
-                        game.doAction(new MagicChangeCountersAction(event.getPermanent(),MagicCounterType.PlusOne,1));
-                        game.doAction(new MagicChangeCountersAction(it,MagicCounterType.PlusOne,-1));
+                        game.doAction(new ChangeCountersAction(event.getPermanent(),MagicCounterType.PlusOne,1));
+                        game.doAction(new ChangeCountersAction(it,MagicCounterType.PlusOne,-1));
                     }
                 });
             }

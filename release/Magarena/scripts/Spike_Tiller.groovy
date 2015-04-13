@@ -39,7 +39,7 @@ def ST = new MagicStatic(MagicLayer.Type) {
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
                 game.doAction(new BecomesCreatureAction(it,PT,ST));
-                game.doAction(new MagicChangeCountersAction(it,MagicCounterType.PlusOne,1));
+                game.doAction(new ChangeCountersAction(it,MagicCounterType.PlusOne,1));
             });
         }
     }

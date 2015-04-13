@@ -16,7 +16,7 @@
             final MagicCard card = event.getPermanent().getCard();
             if (card.isInGraveyard()) {
                 game.doAction(new MagicReanimateAction(card,event.getPlayer()));
-                game.doAction(new MagicChangeCountersAction(event.getPermanent(),MagicCounterType.Death,1));
+                game.doAction(new ChangeCountersAction(event.getPermanent(),MagicCounterType.Death,1));
             }    
         }
     },

@@ -11,7 +11,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPermanent perm = event.getPermanent()
-            game.doAction(new MagicChangeCountersAction(perm,MagicCounterType.Muster,1));
+            game.doAction(new ChangeCountersAction(perm,MagicCounterType.Muster,1));
             game.doAction(new MagicPlayTokensAction(
                 event.getPlayer(),
                 TokenCardDefinitions.get("1/1 red and white Soldier creature token with haste"), 

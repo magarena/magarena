@@ -30,7 +30,7 @@
                     player,
                     ZOMBIE_YOU_CONTROL);
             for (final MagicPermanent target : targets) {
-                game.doAction(new MagicChangeCountersAction(target,MagicCounterType.PlusOne,1));
+                game.doAction(new ChangeCountersAction(target,MagicCounterType.PlusOne,1));
             }
         }
     }

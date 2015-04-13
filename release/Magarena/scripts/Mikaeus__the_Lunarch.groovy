@@ -23,7 +23,7 @@
             CREATURE_YOU_CONTROL
             .except(event.getPermanent())
             .filter(event.getPlayer()) each {
-                game.doAction(new MagicChangeCountersAction(it,MagicCounterType.PlusOne,1));
+                game.doAction(new ChangeCountersAction(it,MagicCounterType.PlusOne,1));
             }
         }
     }

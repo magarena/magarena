@@ -15,7 +15,7 @@
             game.doAction(new MagicMillLibraryAction(event.getPlayer(),3));
                 event.processTargetPermanent(game, {
                 final int amount = game.filterCards(event.getPlayer(), CREATURE_CARD_FROM_GRAVEYARD).size();
-                    game.doAction(new MagicChangeCountersAction(it,MagicCounterType.PlusOne,amount))
+                    game.doAction(new ChangeCountersAction(it,MagicCounterType.PlusOne,amount))
             });
         }
     }

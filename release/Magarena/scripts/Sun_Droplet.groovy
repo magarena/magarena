@@ -13,7 +13,7 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicChangeCountersAction(event.getPermanent(),MagicCounterType.Charge,event.getRefInt()));
+            game.doAction(new ChangeCountersAction(event.getPermanent(),MagicCounterType.Charge,event.getRefInt()));
         }
     },
     new MagicAtUpkeepTrigger() {
@@ -35,7 +35,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.getPermanent().getCounters(MagicCounterType.Charge)>=1 && event.isYes()) {
-                game.doAction(new MagicChangeCountersAction(event.getPermanent(),MagicCounterType.Charge,-1));
+                game.doAction(new ChangeCountersAction(event.getPermanent(),MagicCounterType.Charge,-1));
                 game.doAction(new MagicChangeLifeAction(event.getPlayer(),1));
             }
         }

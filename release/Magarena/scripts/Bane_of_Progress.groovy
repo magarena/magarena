@@ -17,7 +17,7 @@
             targets.addAll(game.filterPermanents(player,ARTIFACT));
             final MagicDestroyAction destroy = new MagicDestroyAction(targets);
             game.doAction(destroy);
-            game.doAction(new MagicChangeCountersAction(event.getPermanent(),MagicCounterType.PlusOne,destroy.getNumDestroyed()));
+            game.doAction(new ChangeCountersAction(event.getPermanent(),MagicCounterType.PlusOne,destroy.getNumDestroyed()));
         }
     }
 ]

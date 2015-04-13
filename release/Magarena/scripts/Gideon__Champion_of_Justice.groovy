@@ -46,7 +46,7 @@ def PreventAllDamage = new MagicIfDamageWouldBeDealtTrigger(MagicTrigger.PREVENT
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final int amt = event.getPlayer().getOpponent().getNrOfPermanents(MagicType.Creature);
-            game.doAction(new MagicChangeCountersAction(event.getPermanent(),MagicCounterType.Loyalty,amt));
+            game.doAction(new ChangeCountersAction(event.getPermanent(),MagicCounterType.Loyalty,amt));
         }
     },
     new MagicPlaneswalkerActivation(0) {
