@@ -5,17 +5,17 @@ import magic.model.MagicLocationType;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.stack.MagicItemOnStack;
 
-public class MagicCounterItemOnStackAction extends MagicAction {
+public class CounterItemOnStackAction extends MagicAction {
 
     private final MagicItemOnStack itemOnStack;
     private final MagicLocationType toLocation;
 
-    public MagicCounterItemOnStackAction(final MagicItemOnStack aItemOnStack,final MagicLocationType aToLocation) {
+    public CounterItemOnStackAction(final MagicItemOnStack aItemOnStack,final MagicLocationType aToLocation) {
         itemOnStack = aItemOnStack;
         toLocation = aToLocation;
     }
 
-    public MagicCounterItemOnStackAction(final MagicItemOnStack itemOnStack) {
+    public CounterItemOnStackAction(final MagicItemOnStack itemOnStack) {
         this(itemOnStack, MagicLocationType.Stack);
     }
 

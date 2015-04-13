@@ -173,7 +173,7 @@ public enum MagicRuleEventAction {
             public void executeEvent(final MagicGame game, final MagicEvent event) {
                 event.processTargetItemOnStack(game,new MagicItemOnStackAction() {
                     public void doAction(final MagicItemOnStack item) {
-                        game.doAction(new MagicCounterItemOnStackAction(item, MagicLocationType.Exile));
+                        game.doAction(new CounterItemOnStackAction(item, MagicLocationType.Exile));
                     }
                 });
             }
@@ -190,7 +190,7 @@ public enum MagicRuleEventAction {
             public void executeEvent(final MagicGame game, final MagicEvent event) {
                 event.processTargetItemOnStack(game,new MagicItemOnStackAction() {
                     public void doAction(final MagicItemOnStack item) {
-                        game.doAction(new MagicCounterItemOnStackAction(item));
+                        game.doAction(new CounterItemOnStackAction(item));
                     }
                 });
             }
