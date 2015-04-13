@@ -5,7 +5,7 @@ import magic.model.trigger.MagicPermanentTrigger;
 
 import java.util.List;
 
-public class MagicCleanupTurnTriggersAction extends MagicAction {
+public class CleanupTurnTriggersAction extends MagicAction {
 
     private List<MagicPermanentTrigger> removedTriggers;
 
