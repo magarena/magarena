@@ -2,7 +2,7 @@
     new MagicWhenSelfAttacksTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPermanent creature) {
-            game.doAction(MagicChangeStateAction.Set(
+            game.doAction(ChangeStateAction.Set(
                 permanent,
                 MagicPermanentState.DoesNotUntapDuringNext
             ));

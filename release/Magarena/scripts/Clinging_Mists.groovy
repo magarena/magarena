@@ -18,7 +18,7 @@
             if (MagicCondition.FATEFUL_HOUR.accept(event.getSource())) {
                 ATTACKING_CREATURE.filter(game) each {
                     game.doAction(new MagicTapAction(it));
-                    game.doAction(MagicChangeStateAction.Set(
+                    game.doAction(ChangeStateAction.Set(
                         it,
                         MagicPermanentState.DoesNotUntapDuringNext
                     ));

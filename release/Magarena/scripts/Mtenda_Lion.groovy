@@ -16,7 +16,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
-                game.doAction(MagicChangeStateAction.Set(
+                game.doAction(ChangeStateAction.Set(
                     event.getPermanent(),
                     MagicPermanentState.NoCombatDamage
                 ));

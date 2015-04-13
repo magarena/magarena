@@ -19,7 +19,7 @@
             if (event.isYes()) {
                 event.processTargetPermanent(game, {
                     game.doAction(new MagicGainControlAction(event.getPlayer(),it));
-                    game.doAction(MagicChangeStateAction.Set(
+                    game.doAction(ChangeStateAction.Set(
                         event.getPermanent(),
                         MagicPermanentState.NoCombatDamage
                     ));

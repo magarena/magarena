@@ -18,7 +18,7 @@
             } else {
                 final Collection<MagicPermanent> targets = game.filterPermanents(CREATURE);
                 for (final MagicPermanent target : targets) {
-                    game.doAction(MagicChangeStateAction.Set(target,MagicPermanentState.CannotBeRegenerated));
+                    game.doAction(ChangeStateAction.Set(target,MagicPermanentState.CannotBeRegenerated));
                 }
                 game.doAction(new MagicDestroyAction(targets));
             }

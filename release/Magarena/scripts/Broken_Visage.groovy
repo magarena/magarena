@@ -21,7 +21,7 @@ def choice = new MagicTargetChoice("target nonartifact attacking creature");
                 final MagicPermanent creature ->
                 final int power = creature.getPower();
                 final int toughness = creature.getToughness();
-                game.doAction(MagicChangeStateAction.Set(creature,MagicPermanentState.CannotBeRegenerated));
+                game.doAction(ChangeStateAction.Set(creature,MagicPermanentState.CannotBeRegenerated));
                 game.doAction(new MagicDestroyAction(creature));
                 game.doAction(new MagicPlayTokenAction(
                     event.getPlayer(),

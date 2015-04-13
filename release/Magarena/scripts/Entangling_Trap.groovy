@@ -16,7 +16,7 @@
             event.processTargetPermanent(game, {
                 game.doAction(new MagicTapAction(it));
                 if (event.getRefPlayer() == event.getPlayer()) {
-                    game.doAction(MagicChangeStateAction.Set(
+                    game.doAction(ChangeStateAction.Set(
                         it,
                         MagicPermanentState.DoesNotUntapDuringNext
                     ));

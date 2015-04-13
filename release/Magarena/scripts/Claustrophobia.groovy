@@ -18,7 +18,7 @@
             final MagicPermanent enchantedCreature = permanent.getEnchantedPermanent();
             if (enchantedCreature.isValid()) {
                 game.doAction(new MagicTapAction(enchantedCreature));
-                game.doAction(MagicChangeStateAction.Set(
+                game.doAction(ChangeStateAction.Set(
                     enchantedCreature,
                     MagicPermanentState.DoesNotUntapDuringNext
                 ));

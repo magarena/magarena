@@ -20,7 +20,7 @@
                     permanent.getPower()
                 );
                 game.doAction(new MagicDealDamageAction(damage));
-                game.doAction(MagicChangeStateAction.Set(
+                game.doAction(ChangeStateAction.Set(
                     permanent,
                     MagicPermanentState.NoCombatDamage
                 ));

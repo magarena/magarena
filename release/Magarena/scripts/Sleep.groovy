@@ -15,7 +15,7 @@
                 final Collection<MagicPermanent> targets = game.filterPermanents(it,CREATURE_YOU_CONTROL);
                 for (final MagicPermanent creature : targets) {
                     game.doAction(new MagicTapAction(creature));
-                    game.doAction(MagicChangeStateAction.Set(
+                    game.doAction(ChangeStateAction.Set(
                         creature,
                         MagicPermanentState.DoesNotUntapDuringNext
                     ));

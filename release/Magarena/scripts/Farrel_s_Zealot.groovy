@@ -20,7 +20,7 @@
                 event.processTargetPermanent(game, {
                     final MagicPermanent permanent = event.getPermanent();
                     game.doAction(new MagicDealDamageAction(permanent,it,3));
-                    game.doAction(MagicChangeStateAction.Set(
+                    game.doAction(ChangeStateAction.Set(
                         permanent,
                         MagicPermanentState.NoCombatDamage
                     ));

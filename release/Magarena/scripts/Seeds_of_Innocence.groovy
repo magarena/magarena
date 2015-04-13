@@ -11,7 +11,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             ARTIFACT.filter(game) each {
-                game.doAction(MagicChangeStateAction.Set(it,MagicPermanentState.CannotBeRegenerated));
+                game.doAction(ChangeStateAction.Set(it,MagicPermanentState.CannotBeRegenerated));
                 final MagicDestroyAction act = new MagicDestroyAction(it)
                 game.doAction(act);
                 if (act.isDestroyed()) {

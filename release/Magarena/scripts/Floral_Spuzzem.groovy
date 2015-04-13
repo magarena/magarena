@@ -21,7 +21,7 @@
                 event.processTargetPermanent(game, {
                     game.doAction(new MagicDestroyAction(it));
                 });
-                game.doAction(MagicChangeStateAction.Set(
+                game.doAction(ChangeStateAction.Set(
                     event.getPermanent(),
                     MagicPermanentState.NoCombatDamage
                 ));

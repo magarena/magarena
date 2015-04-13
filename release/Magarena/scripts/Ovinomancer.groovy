@@ -49,7 +49,7 @@ def choice = new MagicTargetChoice("a basic land you control");
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                game.doAction(MagicChangeStateAction.Set(it,MagicPermanentState.CannotBeRegenerated));
+                game.doAction(ChangeStateAction.Set(it,MagicPermanentState.CannotBeRegenerated));
                 game.doAction(new MagicDestroyAction(it));
                 game.doAction(new MagicPlayTokenAction(
                     it.getController(),

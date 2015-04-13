@@ -29,7 +29,7 @@
             event.processTargetPermanent(game,{
                 game.doAction(new MagicPreventDamageAction(it,4));
                 game.doAction(new MagicTapAction(it));
-                game.doAction(MagicChangeStateAction.Set(
+                game.doAction(ChangeStateAction.Set(
                     it,
                     MagicPermanentState.DoesNotUntapDuringNext
                 ));

@@ -28,7 +28,7 @@
                         event.getPlayer()
                      ));
                 }
-                game.doAction(MagicChangeStateAction.Set(
+                game.doAction(ChangeStateAction.Set(
                     event.getPermanent(),
                     MagicPermanentState.NoCombatDamage
                 ));

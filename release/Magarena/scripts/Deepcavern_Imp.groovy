@@ -20,7 +20,7 @@
                     permanent,
                     event.getPlayer()
                 ));
-                game.doAction(MagicChangeStateAction.Clear(
+                game.doAction(ChangeStateAction.Clear(
                     permanent,
                     MagicPermanentState.MustPayEchoCost
                 ));

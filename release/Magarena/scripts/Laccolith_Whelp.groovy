@@ -19,7 +19,7 @@
                 event.processTargetPermanent(game, {
                     final MagicPermanent permanent = event.getPermanent();
                     game.doAction(new MagicDealDamageAction(permanent,it,permanent.getPower()));
-                    game.doAction(MagicChangeStateAction.Set(permanent,MagicPermanentState.NoCombatDamage));
+                    game.doAction(ChangeStateAction.Set(permanent,MagicPermanentState.NoCombatDamage));
                 });
             }
         }

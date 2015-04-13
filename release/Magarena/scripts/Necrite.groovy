@@ -19,7 +19,7 @@
             if (event.isYes()) {
                 game.doAction(new MagicSacrificeAction(event.getPermanent()));
                 event.processTargetPermanent(game, {
-                    game.doAction(MagicChangeStateAction.Set(it,MagicPermanentState.CannotBeRegenerated));
+                    game.doAction(ChangeStateAction.Set(it,MagicPermanentState.CannotBeRegenerated));
                     game.doAction(new MagicDestroyAction(it));
                 });
             }

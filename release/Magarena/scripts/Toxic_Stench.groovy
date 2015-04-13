@@ -14,7 +14,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
                 if (MagicCondition.THRESHOLD_CONDITION.accept(event.getSource())) {
-                    game.doAction(MagicChangeStateAction.Set(
+                    game.doAction(ChangeStateAction.Set(
                         it,
                         MagicPermanentState.CannotBeRegenerated
                     ));
