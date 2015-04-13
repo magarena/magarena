@@ -15,7 +15,7 @@
             event.processTargetPermanent(game, {
                 final MagicPlayer controller=it.getController();
                 game.doAction(new MagicDestroyAction(it));
-                game.doAction(new MagicChangeLifeAction(controller,-2));
+                game.doAction(new ChangeLifeAction(controller,-2));
             });
         }
     }

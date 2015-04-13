@@ -34,7 +34,7 @@
                 ));
                 if (it.hasType(MagicType.Creature)) {
                     game.doAction(new ChangeCountersAction(event.getPermanent(),MagicCounterType.PlusOne,1));
-                    game.doAction(new MagicChangeLifeAction(event.getPlayer(),1));
+                    game.doAction(new ChangeLifeAction(event.getPlayer(),1));
                 }
             });
         }

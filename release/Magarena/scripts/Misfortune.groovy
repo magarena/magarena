@@ -22,7 +22,7 @@
                 for (final MagicPermanent creature : targets) {         
                     game.doAction(new ChangeCountersAction(creature, MagicCounterType.PlusOne, 1));
                 }
-                game.doAction(new MagicChangeLifeAction(event.getRefPlayer(), 4));
+                game.doAction(new ChangeLifeAction(event.getRefPlayer(), 4));
             } else if (event.isMode(2)) {
                 final Collection<MagicPermanent> targets = event.getPlayer().filterPermanents(CREATURE);
                 for (final MagicPermanent creature : targets) {         

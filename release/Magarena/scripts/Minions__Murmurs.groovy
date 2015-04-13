@@ -13,7 +13,7 @@
             final int amount = event.getPlayer().getNrOfPermanents(MagicType.Creature);
             final MagicPlayer player = event.getPlayer();
             game.doAction(new MagicDrawAction(player,amount));
-            game.doAction(new MagicChangeLifeAction(player,-amount));
+            game.doAction(new ChangeLifeAction(player,-amount));
             game.logAppendMessage(player," (X="+amount+")");
         }
     }

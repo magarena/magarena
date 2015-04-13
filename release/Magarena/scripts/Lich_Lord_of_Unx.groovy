@@ -24,7 +24,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
                 final int amount = event.getPlayer().getNrOfPermanents(MagicSubType.Zombie);
-                game.doAction(new MagicChangeLifeAction(it,-amount));
+                game.doAction(new ChangeLifeAction(it,-amount));
                 game.doAction(new MagicMillLibraryAction(it,amount));
             });
         }

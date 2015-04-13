@@ -13,7 +13,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer()
-            game.doAction(new MagicChangeLifeAction(player,player.getDomain()));
+            game.doAction(new ChangeLifeAction(player,player.getDomain()));
             game.doAction(new MagicDealDamageAction(event.getSource(),player,3));
         }
     }

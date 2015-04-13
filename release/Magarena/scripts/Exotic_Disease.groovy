@@ -17,8 +17,8 @@
                 final MagicPlayer castingPlayer = event.getPlayer()
                 final int amount = castingPlayer.getDomain();
                 game.logAppendMessage(castingPlayer," (X="+amount+")");
-                game.doAction(new MagicChangeLifeAction(it,-amount));
-                game.doAction(new MagicChangeLifeAction(castingPlayer,amount));
+                game.doAction(new ChangeLifeAction(it,-amount));
+                game.doAction(new ChangeLifeAction(castingPlayer,amount));
             });
         }
     }

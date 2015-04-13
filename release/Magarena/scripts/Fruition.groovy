@@ -12,7 +12,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
             final int amount = game.filterPermanents(player,FOREST).size();
-            game.doAction(new MagicChangeLifeAction(player,amount));
+            game.doAction(new ChangeLifeAction(player,amount));
         }
     }
 ]

@@ -16,11 +16,11 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPermanent enchantedPermanent = event.getRefPermanent();
-            game.doAction(new MagicChangeLifeAction(
+            game.doAction(new ChangeLifeAction(
                 enchantedPermanent.getController(), 
                 -enchantedPermanent.getPower()
             )); 
-            game.doAction(new MagicChangeLifeAction(
+            game.doAction(new ChangeLifeAction(
                 event.getPlayer(),
                 enchantedPermanent.getToughness()
             ));

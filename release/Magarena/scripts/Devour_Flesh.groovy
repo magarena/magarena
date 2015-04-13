@@ -2,7 +2,7 @@ def action = {
     final MagicGame game, final MagicEvent event ->
     event.processTargetPermanent(game, {
         game.doAction(new MagicSacrificeAction(it));
-        game.doAction(new MagicChangeLifeAction(event.getPlayer(), it.getToughness()));
+        game.doAction(new ChangeLifeAction(event.getPlayer(), it.getToughness()));
     });
 }
 

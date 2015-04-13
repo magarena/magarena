@@ -12,7 +12,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
-                game.doAction(new MagicChangeLifeAction(it,-1));
+                game.doAction(new ChangeLifeAction(it,-1));
                 game.addEvent(new MagicDiscardEvent(event.getSource(),it));
                 game.addEvent(new MagicSacrificePermanentEvent(
                     event.getSource(),

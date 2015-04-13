@@ -18,9 +18,9 @@
                 .from(MagicTargetType.OpponentsGraveyard)
             ).size()*4;
             event.processTargetPlayer(game, {
-                game.doAction(new MagicChangeLifeAction(it,4));
+                game.doAction(new ChangeLifeAction(it,4));
                 game.logAppendMessage(event.getPlayer()," (X="+amount+")");
-                game.doAction(new MagicChangeLifeAction(it,4*amount));
+                game.doAction(new ChangeLifeAction(it,4*amount));
             });
         }
     }

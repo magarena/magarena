@@ -16,7 +16,7 @@
                     game.filterPermanents(it,CREATURE_YOU_CONTROL);
                 final MagicDestroyAction destroy = new MagicDestroyAction(targets);
                 game.doAction(destroy);
-                game.doAction(new MagicChangeLifeAction(event.getPlayer(),-(destroy.getNumDestroyed()*2)));
+                game.doAction(new ChangeLifeAction(event.getPlayer(),-(destroy.getNumDestroyed()*2)));
             });
         }
     }

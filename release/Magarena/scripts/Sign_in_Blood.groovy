@@ -13,7 +13,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
                 game.doAction(new MagicDrawAction(it,2));
-                game.doAction(new MagicChangeLifeAction(it,-2));
+                game.doAction(new ChangeLifeAction(it,-2));
             });
         }
     }

@@ -31,7 +31,7 @@ def ELF_FROM_GRAVEYARD = new MagicCardFilterImpl() {
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
             final int amount = game.filterCards(player, ELF_FROM_GRAVEYARD).size();
-            game.doAction(new MagicChangeLifeAction(player,amount));
+            game.doAction(new ChangeLifeAction(player,amount));
         }
     }
 ]

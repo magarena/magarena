@@ -29,7 +29,7 @@
             }
             for (final MagicPlayer player : game.getAPNAP()) {
                 final int changeLife = 1 - player.getLife();
-                game.doAction(new MagicChangeLifeAction(player,changeLife));
+                game.doAction(new ChangeLifeAction(player,changeLife));
             }
         }
     }

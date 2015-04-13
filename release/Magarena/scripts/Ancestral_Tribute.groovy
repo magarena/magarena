@@ -12,7 +12,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
             final int amount = player.getGraveyard().size();
-            game.doAction(new MagicChangeLifeAction(player,2 * amount));
+            game.doAction(new ChangeLifeAction(player,2 * amount));
         }
     }
 ]

@@ -29,7 +29,7 @@
                     it
                 ));
                 if (it.controlsPermanent(MagicSubType.Demon)) {
-                    game.doAction(new MagicChangeLifeAction(it,-3));
+                    game.doAction(new ChangeLifeAction(it,-3));
                 }
             });
         }

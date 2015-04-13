@@ -12,7 +12,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final int amount = event.getCardOnStack().getX();
-            game.doAction(new MagicChangeLifeAction(event.getPlayer(), amount));
+            game.doAction(new ChangeLifeAction(event.getPlayer(), amount));
             game.doAction(new MagicDrawAction(event.getPlayer(), amount));
         }
     }

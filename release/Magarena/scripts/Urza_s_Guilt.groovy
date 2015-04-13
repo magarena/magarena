@@ -17,7 +17,7 @@
                 game.addEvent(new MagicDiscardEvent(event.getSource(),player,3));
             }
             for (final MagicPlayer player : game.getAPNAP()) {
-                game.doAction(new MagicChangeLifeAction(player,-4));
+                game.doAction(new ChangeLifeAction(player,-4));
             }
         }
     }

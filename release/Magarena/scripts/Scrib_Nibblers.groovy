@@ -28,7 +28,7 @@
                     game.doAction(new MagicRemoveCardAction(card,MagicLocationType.OwnersLibrary));
                     game.doAction(new MagicMoveCardAction(card,MagicLocationType.OwnersLibrary,MagicLocationType.Exile));
                     if (card.hasType(MagicType.Land)) {
-                        game.doAction(new MagicChangeLifeAction(event.getPlayer(),1));
+                        game.doAction(new ChangeLifeAction(event.getPlayer(),1));
                     }
                 }
             });

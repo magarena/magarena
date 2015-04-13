@@ -55,7 +55,7 @@
             game.doAction(new MagicGainAbilityAction(event.getPermanent(),MagicAbility.ProtectionFromBlack));
             game.doAction(new MagicGainAbilityAction(event.getPermanent(),MagicAbility.ProtectionFromRed));
             event.processTargetPlayer(game, {
-                game.doAction(new MagicChangeLifeAction(it,2));
+                game.doAction(new ChangeLifeAction(it,2));
             });
         }
     },

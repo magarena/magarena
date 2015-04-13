@@ -17,7 +17,7 @@
                     it,
                     2
                 ));
-                game.doAction(new MagicChangeLifeAction(it,-2));
+                game.doAction(new ChangeLifeAction(it,-2));
             });
         }
     }

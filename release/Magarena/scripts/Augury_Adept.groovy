@@ -15,7 +15,7 @@
                 game.doAction(new MagicRevealAction(it));
                 game.doAction(new MagicRemoveCardAction(it, MagicLocationType.OwnersLibrary));
                 game.doAction(new MagicMoveCardAction(it, MagicLocationType.OwnersLibrary, MagicLocationType.OwnersHand));
-                game.doAction(new MagicChangeLifeAction(player, it.getConvertedCost()));
+                game.doAction(new ChangeLifeAction(player, it.getConvertedCost()));
             }
         }
     }

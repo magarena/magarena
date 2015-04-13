@@ -17,7 +17,7 @@
             final MagicPlayer targetPlayer=event.getRefPlayer();
             game.doAction(new MagicDealDamageAction(event.getSource(),targetPlayer,targetPlayer.getHandSize()));
             final MagicPlayer player=event.getPlayer();
-            game.doAction(new MagicChangeLifeAction(player,player.getHandSize()));
+            game.doAction(new ChangeLifeAction(player,player.getHandSize()));
         }
     }
 ]

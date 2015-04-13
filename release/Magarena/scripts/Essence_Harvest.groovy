@@ -20,8 +20,8 @@
                 for (final MagicPermanent creature : targets) {
                     power = Math.max(power,creature.getPower());
                 }
-                game.doAction(new MagicChangeLifeAction(it,-power));
-                game.doAction(new MagicChangeLifeAction(event.getPlayer(),power));
+                game.doAction(new ChangeLifeAction(it,-power));
+                game.doAction(new ChangeLifeAction(event.getPlayer(),power));
             });
         }
     }

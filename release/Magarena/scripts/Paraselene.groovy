@@ -16,7 +16,7 @@
                 game.filterPermanents(player,ENCHANTMENT);
             final MagicDestroyAction destroy = new MagicDestroyAction(targets);
             game.doAction(destroy);
-            game.doAction(new MagicChangeLifeAction(player,destroy.getNumDestroyed()));
+            game.doAction(new ChangeLifeAction(player,destroy.getNumDestroyed()));
         }
     }
 ]

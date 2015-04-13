@@ -10,7 +10,7 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicChangeLifeAction(event.getPlayer(),-2));
+            game.doAction(new ChangeLifeAction(event.getPlayer(),-2));
             game.addEvent(new MagicSearchToLocationEvent(
                 event,
                 A_CARD_FROM_LIBRARY,

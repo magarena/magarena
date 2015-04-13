@@ -15,7 +15,7 @@
                 final MagicDestroyAction act = new MagicDestroyAction(it)
                 game.doAction(act);
                 if (act.isDestroyed()) {
-                    game.doAction(new MagicChangeLifeAction(it.getController(),it.getConvertedCost()));
+                    game.doAction(new ChangeLifeAction(it.getController(),it.getConvertedCost()));
                 }
             }
         }

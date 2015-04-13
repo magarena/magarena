@@ -16,7 +16,7 @@
             event.processTargetCard(game, {
                 final MagicPlayer player = event.getPlayer()
                 game.doAction(new MagicReanimateAction(it,player));
-                game.doAction(new MagicChangeLifeAction(player,-it.getConvertedCost()));
+                game.doAction(new ChangeLifeAction(player,-it.getConvertedCost()));
             });
         }
     }

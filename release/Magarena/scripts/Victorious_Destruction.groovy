@@ -17,7 +17,7 @@ def choice = Negative("target artifact or land");
             event.processTargetPermanent(game, {
                 final MagicPlayer controller=it.getController();
                 game.doAction(new MagicDestroyAction(it));
-                game.doAction(new MagicChangeLifeAction(controller,-1));
+                game.doAction(new ChangeLifeAction(controller,-1));
             });
         }
     }

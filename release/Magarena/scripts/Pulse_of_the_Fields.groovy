@@ -12,7 +12,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
-            game.doAction(new MagicChangeLifeAction(player,4));
+            game.doAction(new ChangeLifeAction(player,4));
             final boolean more = player.getOpponent().getLife() > player.getLife();
             if (more) {
                 game.doAction(new ChangeCardDestinationAction(event.getCardOnStack(),MagicLocationType.OwnersHand));

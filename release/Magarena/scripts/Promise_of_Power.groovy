@@ -25,7 +25,7 @@ def TEXT2 = "Put an X/X black Demon creature token with flying onto the battlefi
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isKicked() || event.isMode(1)) {
                 game.doAction(new MagicDrawAction(event.getPlayer(),5));
-                game.doAction(new MagicChangeLifeAction(event.getPlayer(),-5));
+                game.doAction(new ChangeLifeAction(event.getPlayer(),-5));
             }
             if (event.isKicked() || event.isMode(2)) {
                 final int x = event.getPlayer().getHandSize();

@@ -15,7 +15,7 @@
             ));
             final MagicPlayer player = event.getPlayer();
             final int amount = player.getOpponent().getNrOfAttackers() + player.getNrOfAttackers();
-            game.doAction(new MagicChangeLifeAction(player,amount));
+            game.doAction(new ChangeLifeAction(player,amount));
         }
     }
 ]

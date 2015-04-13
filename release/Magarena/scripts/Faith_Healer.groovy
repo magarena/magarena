@@ -20,7 +20,7 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicChangeLifeAction(event.getPlayer(),event.getRefPermanent().getConvertedCost()));
+            game.doAction(new ChangeLifeAction(event.getPlayer(),event.getRefPermanent().getConvertedCost()));
         }
     }
 ]

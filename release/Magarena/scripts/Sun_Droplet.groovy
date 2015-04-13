@@ -36,7 +36,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.getPermanent().getCounters(MagicCounterType.Charge)>=1 && event.isYes()) {
                 game.doAction(new ChangeCountersAction(event.getPermanent(),MagicCounterType.Charge,-1));
-                game.doAction(new MagicChangeLifeAction(event.getPlayer(),1));
+                game.doAction(new ChangeLifeAction(event.getPlayer(),1));
             }
         }
     }

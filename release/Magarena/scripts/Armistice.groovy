@@ -25,7 +25,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
                 game.doAction(new MagicDrawAction(event.getPlayer()));
-                game.doAction(new MagicChangeLifeAction(it,3));
+                game.doAction(new ChangeLifeAction(it,3));
             });
         }
     }

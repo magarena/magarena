@@ -13,7 +13,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
                 final int amount = game.getNrOfPermanents(MagicType.Creature);
-                game.doAction(new MagicChangeLifeAction(it,amount*2));
+                game.doAction(new ChangeLifeAction(it,amount*2));
             });
         }
     }

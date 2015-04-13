@@ -15,7 +15,7 @@
             if (event.isYes()) {
                 event.processTargetPlayer(game, {
                     final int X = game.getNrOfPermanents(MagicSubType.Zombie);
-                    game.doAction(new MagicChangeLifeAction(it,-X));
+                    game.doAction(new ChangeLifeAction(it,-X));
                 });
             }
         }

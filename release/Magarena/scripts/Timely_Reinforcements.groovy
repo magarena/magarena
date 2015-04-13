@@ -14,7 +14,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
             if (player.getLife() < player.getOpponent().getLife()) {
-                game.doAction(new MagicChangeLifeAction(player,6));
+                game.doAction(new ChangeLifeAction(player,6));
             }
             if (player.getNrOfPermanents(MagicType.Creature) <
                 player.getOpponent().getNrOfPermanents(MagicType.Creature)) {

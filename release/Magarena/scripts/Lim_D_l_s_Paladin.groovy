@@ -39,7 +39,7 @@
                 event.getPermanent(),
                 MagicPermanentState.NoCombatDamage
             ));
-            game.doAction(new MagicChangeLifeAction(game.getDefendingPlayer(), -4));
+            game.doAction(new ChangeLifeAction(game.getDefendingPlayer(), -4));
         }
     }
 ]

@@ -28,7 +28,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final int amount = -2 * event.getPermanent().getCounters(MagicCounterType.Age);
-            game.doAction(new MagicChangeLifeAction(event.getPlayer(),amount));
+            game.doAction(new ChangeLifeAction(event.getPlayer(),amount));
         }
     }
 ]

@@ -11,7 +11,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final int amt = 2 * event.getPlayer().getNrOfPermanents(MagicSubType.Shrine);
-            game.doAction(new MagicChangeLifeAction(event.getPlayer(),amt));
+            game.doAction(new ChangeLifeAction(event.getPlayer(),amt));
         }
     }
 ]

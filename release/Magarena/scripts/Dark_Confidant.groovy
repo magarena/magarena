@@ -21,7 +21,7 @@
                     MagicLocationType.OwnersLibrary,
                     MagicLocationType.OwnersHand
                 ));
-                game.doAction(new MagicChangeLifeAction(
+                game.doAction(new ChangeLifeAction(
                     event.getPlayer(), 
                     -card.getConvertedCost()
                 ));

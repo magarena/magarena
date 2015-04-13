@@ -28,7 +28,7 @@
                 event.getSource(),
                 heads,
                 player,
-                new MagicChangeLifeAction(player,6),
+                new ChangeLifeAction(player,6),
                 null
             ));
         }

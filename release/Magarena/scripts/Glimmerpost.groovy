@@ -10,7 +10,7 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicChangeLifeAction(event.getPlayer(),game.getNrOfPermanents(MagicSubType.Locus)));
+            game.doAction(new ChangeLifeAction(event.getPlayer(),game.getNrOfPermanents(MagicSubType.Locus)));
         }
     }
 ]

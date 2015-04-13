@@ -15,7 +15,7 @@ def choice = Negative("target artifact or enchantment spell");
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetCardOnStack(game, {
                 game.doAction(new MagicCounterItemOnStackAction(it));
-                game.doAction(new MagicChangeLifeAction(it.getController(),it.getConvertedCost()));
+                game.doAction(new ChangeLifeAction(it.getController(),it.getConvertedCost()));
                 game.logAppendMessage(event.getPlayer(),"("+it.getConvertedCost()+")");
             });
         }

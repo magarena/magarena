@@ -20,7 +20,7 @@
                     it,
                     player
                 ));
-                game.doAction(new MagicChangeLifeAction(player,-it.getConvertedCost()));
+                game.doAction(new ChangeLifeAction(player,-it.getConvertedCost()));
             });
         }
     }

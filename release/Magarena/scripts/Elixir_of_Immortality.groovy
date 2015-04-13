@@ -24,7 +24,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
-            game.doAction(new MagicChangeLifeAction(player, 5));
+            game.doAction(new ChangeLifeAction(player, 5));
 
             game.doAction(new MagicRemoveFromPlayAction(event.getPermanent(), MagicLocationType.OwnersLibrary));
             

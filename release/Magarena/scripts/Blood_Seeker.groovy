@@ -21,7 +21,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
-                game.doAction(new MagicChangeLifeAction(event.getRefPlayer(),-1));
+                game.doAction(new ChangeLifeAction(event.getRefPlayer(),-1));
             }
         }
     }

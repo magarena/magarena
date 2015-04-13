@@ -23,7 +23,7 @@
                 });
             } else if (event.isMode(2)) {
                 event.processTargetPlayer(game, {
-                    game.doAction(new MagicChangeLifeAction(it,X));
+                    game.doAction(new ChangeLifeAction(it,X));
                 });
             }
         }

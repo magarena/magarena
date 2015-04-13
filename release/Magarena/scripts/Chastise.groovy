@@ -16,7 +16,7 @@
             event.processTargetPermanent(game, {
                 final int power=it.getPower();
                 game.doAction(new MagicDestroyAction(it));
-                game.doAction(new MagicChangeLifeAction(event.getPlayer(),power));
+                game.doAction(new ChangeLifeAction(event.getPlayer(),power));
             });
         }
     }

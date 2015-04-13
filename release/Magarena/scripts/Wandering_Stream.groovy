@@ -14,7 +14,7 @@
             final MagicPlayer player = event.getPlayer()
             final int amount = player.getDomain();
             game.logAppendMessage(player," ("+amount+")");
-            game.doAction(new MagicChangeLifeAction(player,amount*2));
+            game.doAction(new ChangeLifeAction(player,amount*2));
         }
     }
 ]

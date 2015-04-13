@@ -34,7 +34,7 @@ def LifeGainAbility = new MagicWhenDamageIsDealtTrigger() {
     }
     @Override
     public void executeEvent(final MagicGame game, final MagicEvent event) {
-        game.doAction(new MagicChangeLifeAction(event.getPlayer(), event.getRefInt()));
+        game.doAction(new ChangeLifeAction(event.getPlayer(), event.getRefInt()));
     }
 }
 def AB = new MagicStatic(MagicLayer.Ability, MagicStatic.UntilEOT) {

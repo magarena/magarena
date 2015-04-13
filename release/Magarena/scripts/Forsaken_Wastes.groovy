@@ -1,7 +1,7 @@
 [
     new MagicIfLifeWouldChangeTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicChangeLifeAction act) {
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final ChangeLifeAction act) {
             if (act.getLifeChange() > 0) {
                 act.setLifeChange(0);
             }
@@ -20,7 +20,7 @@
         }
         @Override
         public void executeEvent(final MagicGame game,final MagicEvent event) {
-            game.doAction(new MagicChangeLifeAction(event.getPlayer(),-1));
+            game.doAction(new ChangeLifeAction(event.getPlayer(),-1));
         }
     },
     new MagicWhenSelfTargetedTrigger() {
@@ -36,7 +36,7 @@
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicChangeLifeAction(event.getPlayer(),-5));
+            game.doAction(new ChangeLifeAction(event.getPlayer(),-5));
         }
     }
 ]

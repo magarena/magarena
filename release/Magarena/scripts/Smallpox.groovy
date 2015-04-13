@@ -13,7 +13,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             for (final MagicPlayer player : game.getAPNAP()) {
-                game.doAction(new MagicChangeLifeAction(player,-1));
+                game.doAction(new ChangeLifeAction(player,-1));
             }
             for (final MagicPlayer player : game.getAPNAP()) {
                 game.addEvent(new MagicDiscardEvent(

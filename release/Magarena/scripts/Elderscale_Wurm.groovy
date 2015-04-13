@@ -27,7 +27,7 @@ def trigger = new MagicWhenDamageIsDealtTrigger() {
             final MagicPlayer player = event.getPlayer();
             final int life = player.getLife();
             if (life < 7) {
-                game.doAction(new MagicChangeLifeAction(player, 7 - life)) 
+                game.doAction(new ChangeLifeAction(player, 7 - life)) 
             }
         }
     },

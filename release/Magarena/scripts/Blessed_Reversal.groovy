@@ -12,7 +12,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final int amount = 3*event.getPlayer().getNrOfPermanents(ATTACKING_CREATURE_YOUR_OPPONENT_CONTROLS);
-            game.doAction(new MagicChangeLifeAction(event.getPlayer(),amount));
+            game.doAction(new ChangeLifeAction(event.getPlayer(),amount));
         }
     }
 ]

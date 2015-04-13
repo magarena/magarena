@@ -15,7 +15,7 @@
             event.processTargetPermanent(game, {
                 game.doAction(MagicChangeStateAction.Set(it,MagicPermanentState.CannotBeRegenerated));
                 game.doAction(new MagicDestroyAction(it));
-                game.doAction(new MagicChangeLifeAction(it.getController(),it.getConvertedCost()));
+                game.doAction(new ChangeLifeAction(it.getController(),it.getConvertedCost()));
             });
         }
     }

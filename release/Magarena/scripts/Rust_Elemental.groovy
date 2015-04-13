@@ -19,7 +19,7 @@
                 game.addEvent(sac);
             } else {
                 game.doAction(new MagicTapAction(permanent));
-                game.doAction(new MagicChangeLifeAction(player,-4));        
+                game.doAction(new ChangeLifeAction(player,-4));        
             }
         }
     }

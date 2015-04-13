@@ -15,7 +15,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
-                game.doAction(new MagicChangeLifeAction(
+                game.doAction(new ChangeLifeAction(
                     it,
                     -event.getRefInt()
                 ));

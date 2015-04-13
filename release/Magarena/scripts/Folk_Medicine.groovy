@@ -15,7 +15,7 @@
                     event.getPlayer(),
                     CREATURE_YOU_CONTROL);
             final int amount = targets.size();
-            game.doAction(new MagicChangeLifeAction(player,amount));
+            game.doAction(new ChangeLifeAction(player,amount));
         }
     }
 ]

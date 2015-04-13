@@ -15,7 +15,7 @@
             event.processTarget(game, {
                 final MagicDamage damage = new MagicDamage(event.getSource(),it,amount);
                 game.doAction(new MagicDealDamageAction(damage));
-                game.doAction(new MagicChangeLifeAction(event.getPlayer(),damage.getDealtAmount()));
+                game.doAction(new ChangeLifeAction(event.getPlayer(),damage.getDealtAmount()));
             });
         }
     }

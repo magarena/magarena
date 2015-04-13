@@ -18,7 +18,7 @@
                     it, 
                     MagicManaCost.create("{" + event.getRefInt() + "}")
                 ));
-                game.doAction(new MagicChangeLifeAction(event.getPlayer(),event.getRefInt()));
+                game.doAction(new ChangeLifeAction(event.getPlayer(),event.getRefInt()));
             });
         }
     }

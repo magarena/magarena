@@ -15,7 +15,7 @@
             event.processTargetPermanent(game, {
                 game.doAction(new MagicChangeTurnPTAction(it, 2, 0));
                 game.doAction(new MagicRegenerateAction(it));
-                game.doAction(new MagicChangeLifeAction(event.getPlayer(),-2));
+                game.doAction(new ChangeLifeAction(event.getPlayer(),-2));
             });
         }
     }

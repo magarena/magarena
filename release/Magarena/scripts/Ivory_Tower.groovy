@@ -14,7 +14,7 @@
             final MagicPlayer player = event.getPlayer();
             final int amount = Math.max(0,player.getHandSize() - 4);
             game.logAppendMessage(player,"(X="+amount+")");
-            game.doAction(new MagicChangeLifeAction(player,amount));
+            game.doAction(new ChangeLifeAction(player,amount));
         }
     }
 ]

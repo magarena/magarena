@@ -15,7 +15,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
                 game.doAction(new MagicMillLibraryAction(it,event.getRefInt()));
-                game.doAction(new MagicChangeLifeAction(event.getPlayer(), event.getRefInt()));
+                game.doAction(new ChangeLifeAction(event.getPlayer(), event.getRefInt()));
             });
         }
     }

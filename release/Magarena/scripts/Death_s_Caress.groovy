@@ -16,7 +16,7 @@
             event.processTargetPermanent(game, {
                 game.doAction(new MagicDestroyAction(it));
                 if (it.hasSubType(MagicSubType.Human)) {
-                    game.doAction(new MagicChangeLifeAction(
+                    game.doAction(new ChangeLifeAction(
                         event.getPlayer(),
                         it.getToughness()
                     ));

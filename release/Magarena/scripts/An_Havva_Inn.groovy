@@ -11,7 +11,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final int X = game.getNrOfPermanents(GREEN_CREATURE);
-            game.doAction(new MagicChangeLifeAction(event.getPlayer(), X + 1));
+            game.doAction(new ChangeLifeAction(event.getPlayer(), X + 1));
         }
     }
 ]

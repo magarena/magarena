@@ -19,7 +19,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
             final int lifeChange = 20 - player.getLife();
-            game.doAction(new MagicChangeLifeAction(player, lifeChange));
+            game.doAction(new ChangeLifeAction(player, lifeChange));
             final MagicCardList hand = new MagicCardList(player.getHand());
             final MagicCardList graveyard = new MagicCardList(player.getGraveyard());
             final List<MagicPermanent> battlefield = player.filterPermanents(PERMANENT_YOU_OWN);

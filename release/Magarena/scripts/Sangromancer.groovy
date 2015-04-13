@@ -19,7 +19,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
-                game.doAction(new MagicChangeLifeAction(event.getPlayer(),3));
+                game.doAction(new ChangeLifeAction(event.getPlayer(),3));
             }
         }
     }

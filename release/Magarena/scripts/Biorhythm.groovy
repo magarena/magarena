@@ -13,7 +13,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             for (final MagicPlayer player : game.getAPNAP()) {
                 final int creatures = player.getNrOfPermanents(MagicType.Creature);
-                game.doAction(new MagicChangeLifeAction(player,creatures-player.getLife()));
+                game.doAction(new ChangeLifeAction(player,creatures-player.getLife()));
             }
         }
     }

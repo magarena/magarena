@@ -14,7 +14,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
                 final int artifacts = it.getNrOfPermanents(TAPPED_ARTIFACT_YOU_CONTROL);
-                game.doAction(new MagicChangeLifeAction(it,artifacts));
+                game.doAction(new ChangeLifeAction(it,artifacts));
             });
         }
     }

@@ -17,7 +17,7 @@
             event.processTargetPermanent(game, {
                 final int toughness=it.getToughness();
                 game.doAction(new MagicSacrificeAction(it));
-                game.doAction(new MagicChangeLifeAction(event.getPlayer(),toughness));
+                game.doAction(new ChangeLifeAction(event.getPlayer(),toughness));
             });
         }
     }

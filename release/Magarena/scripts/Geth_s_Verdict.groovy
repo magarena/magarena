@@ -17,7 +17,7 @@
                     it,
                     SACRIFICE_CREATURE
                 ));
-                game.doAction(new MagicChangeLifeAction(it,-1));
+                game.doAction(new ChangeLifeAction(it,-1));
             });
         }
     }

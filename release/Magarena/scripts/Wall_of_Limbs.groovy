@@ -25,7 +25,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
                 final int amount=event.getPermanent().getPower();
-                game.doAction(new MagicChangeLifeAction(it, -amount));
+                game.doAction(new ChangeLifeAction(it, -amount));
             });
         }
     }

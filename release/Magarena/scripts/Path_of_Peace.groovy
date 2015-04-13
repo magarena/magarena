@@ -14,7 +14,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
                 game.doAction(new MagicDestroyAction(it));
-                game.doAction(new MagicChangeLifeAction(it.getOwner(),4));
+                game.doAction(new ChangeLifeAction(it.getOwner(),4));
             });
         }
     }

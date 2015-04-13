@@ -1,7 +1,7 @@
 def action = {
     final MagicGame game, final MagicEvent event ->
     if (event.getPlayer().controlsPermanent(MagicSubType.Demon) == false) {
-        game.doAction(new MagicChangeLifeAction(event.getPlayer(),-3));
+        game.doAction(new ChangeLifeAction(event.getPlayer(),-3));
     }
 }
 

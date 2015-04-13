@@ -11,7 +11,7 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicChangeLifeAction(event.getPlayer(),3 + 3 * event.getRefInt()));
+            game.doAction(new ChangeLifeAction(event.getPlayer(),3 + 3 * event.getRefInt()));
         }
     }
 ]

@@ -16,7 +16,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final int toughness = event.getRefPermanent().getToughness();
-            game.doAction(new MagicChangeLifeAction(event.getPlayer(),-toughness));
+            game.doAction(new ChangeLifeAction(event.getPlayer(),-toughness));
         }
     }
 ]

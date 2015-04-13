@@ -24,7 +24,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final int X = game.getNrOfPermanents(MagicSubType.Zombie);
             for (final MagicPlayer player : game.getAPNAP()) {
-                game.doAction(new MagicChangeLifeAction(player,-X));
+                game.doAction(new ChangeLifeAction(player,-X));
             }
         }
     }

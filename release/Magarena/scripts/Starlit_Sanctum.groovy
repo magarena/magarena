@@ -22,7 +22,7 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicChangeLifeAction(
+            game.doAction(new ChangeLifeAction(
                 event.getPlayer(),
                 event.getRefPermanent().getToughness()
             ));
@@ -53,7 +53,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
-                game.doAction(new MagicChangeLifeAction(
+                game.doAction(new ChangeLifeAction(
                     it,
                     -event.getRefPermanent().getPower()
                 ));

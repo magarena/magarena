@@ -15,7 +15,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
                 game.doAction(new MagicRemoveFromPlayAction(it,MagicLocationType.OwnersHand));
-                game.doAction(new MagicChangeLifeAction(it.getController(),-3));
+                game.doAction(new ChangeLifeAction(it.getController(),-3));
             });
         }
     }

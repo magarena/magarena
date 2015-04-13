@@ -17,7 +17,7 @@
                 final MagicPlayer player = event.getPlayer();
                 final int X = player.getNrOfPermanents(MagicType.Creature);
                 game.doAction(new MagicDealDamageAction(event.getSource(),it,X));
-                game.doAction(new MagicChangeLifeAction(player,X));
+                game.doAction(new ChangeLifeAction(player,X));
             });
         }
     }
