@@ -16,13 +16,13 @@ import java.util.Collection;
  * - the first blocker gets all remaining damage when the attacker does not have trample.
  * - when the attacker has deathtouch, lethal damage for each blocker is 1.
  */
-public class MagicCombatDamageAction extends MagicAction {
+public class CombatDamageAction extends MagicAction {
 
     private final MagicPlayer attackingPlayer;
     private final MagicPlayer defendingPlayer;
     private final boolean first;
 
-    public MagicCombatDamageAction(
+    public CombatDamageAction(
             final MagicPlayer attackingPlayer,
             final MagicPlayer defendingPlayer,
             final boolean first) {
