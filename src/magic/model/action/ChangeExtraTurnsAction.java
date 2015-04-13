@@ -3,12 +3,12 @@ package magic.model.action;
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 
-public class MagicChangeExtraTurnsAction extends MagicAction {
+public class ChangeExtraTurnsAction extends MagicAction {
 
     private final MagicPlayer player;
     private final int amount;
 
-    public MagicChangeExtraTurnsAction(final MagicPlayer player,final int amount) {
+    public ChangeExtraTurnsAction(final MagicPlayer player,final int amount) {
 
         this.player=player;
         this.amount=amount;

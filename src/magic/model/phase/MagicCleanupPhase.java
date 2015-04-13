@@ -3,7 +3,7 @@ package magic.model.phase;
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.model.phase.MagicPhaseType;
-import magic.model.action.MagicChangeExtraTurnsAction;
+import magic.model.action.ChangeExtraTurnsAction;
 import magic.model.action.MagicCleanupPlayerAction;
 import magic.model.action.MagicCleanupTurnStaticsAction;
 import magic.model.action.MagicCleanupTurnTriggersAction;
@@ -46,7 +46,7 @@ public class MagicCleanupPhase extends MagicPhase {
             game.doAction(new MagicPayDelayedCostsAction(turnPlayer));
         }
         if (turnPlayer.getExtraTurns()>0) {
-            game.doAction(new MagicChangeExtraTurnsAction(turnPlayer,-1));
+            game.doAction(new ChangeExtraTurnsAction(turnPlayer,-1));
             final String playerName = turnPlayer.getName();
             game.logMessage(turnPlayer,playerName + " takes an extra turn.");
         } else {
