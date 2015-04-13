@@ -135,14 +135,14 @@ public class MagicDealDamageAction extends MagicAction {
             if (source.hasAbility(MagicAbility.Infect)) {
                 game.doAction(new MagicChangePoisonAction(targetPlayer,dealtAmount));
             } else {
-                game.doAction(new MagicChangeLifeAction(targetPlayer,-dealtAmount));
+                game.doAction(new ChangeLifeAction(targetPlayer,-dealtAmount));
             }
             game.doAction(new MagicChangePlayerStateAction(targetPlayer,MagicPlayerState.WasDealtDamage));
         }
 
         damage.setDealtAmount(dealtAmount);
         if (source.hasAbility(MagicAbility.Lifelink)) {
-            game.doAction(new MagicChangeLifeAction(source.getController(),dealtAmount));
+            game.doAction(new ChangeLifeAction(source.getController(),dealtAmount));
         }
         game.executeTrigger(MagicTriggerType.WhenDamageIsDealt,damage);
 

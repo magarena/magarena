@@ -1,8 +1,8 @@
 package magic.model.trigger;
 
-import magic.model.action.MagicChangeLifeAction;
+import magic.model.action.ChangeLifeAction;
 
-public abstract class MagicIfLifeWouldChangeTrigger extends MagicTrigger<MagicChangeLifeAction> {
+public abstract class MagicIfLifeWouldChangeTrigger extends MagicTrigger<ChangeLifeAction> {
     public MagicIfLifeWouldChangeTrigger(final int priority) {
         super(priority);
     }

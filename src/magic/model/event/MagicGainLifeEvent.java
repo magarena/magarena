@@ -3,7 +3,7 @@ package magic.model.event;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
-import magic.model.action.MagicChangeLifeAction;
+import magic.model.action.ChangeLifeAction;
 
 public class MagicGainLifeEvent extends MagicEvent {
     public MagicGainLifeEvent(final MagicPermanent permanent, final MagicPlayer player, final int amt) {
@@ -23,7 +23,7 @@ public class MagicGainLifeEvent extends MagicEvent {
     private static final MagicEventAction EVENT_ACTION=new MagicEventAction() {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicChangeLifeAction(
+            game.doAction(new ChangeLifeAction(
                 event.getPlayer(),
                 event.getRefInt()
             ));

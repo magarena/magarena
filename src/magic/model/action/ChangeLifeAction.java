@@ -8,12 +8,12 @@ import magic.model.trigger.MagicLifeChangeTriggerData;
 import magic.model.trigger.MagicTriggerType;
 
 /** Keeping the player life is done in the marker action. */
-public class MagicChangeLifeAction extends MagicAction {
+public class ChangeLifeAction extends MagicAction {
 
     private final MagicPlayer player;
     private int lifeChange;
 
-    public MagicChangeLifeAction(final MagicPlayer aPlayer,final int aLifeChange) {
+    public ChangeLifeAction(final MagicPlayer aPlayer,final int aLifeChange) {
         player = aPlayer;
         lifeChange = aLifeChange;
     }

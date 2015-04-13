@@ -3,7 +3,7 @@ package magic.model.event;
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
-import magic.model.action.MagicChangeLifeAction;
+import magic.model.action.ChangeLifeAction;
 import magic.model.condition.MagicCondition;
 import magic.model.condition.MagicConditionFactory;
 
@@ -22,7 +22,7 @@ public class MagicPayLifeEvent extends MagicEvent {
             new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    game.doAction(new MagicChangeLifeAction(event.getPlayer(),-amount));
+                    game.doAction(new ChangeLifeAction(event.getPlayer(),-amount));
                 }
             },
             "Pay "+amount+" life."
