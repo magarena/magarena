@@ -6,13 +6,13 @@ import magic.model.stack.MagicItemOnStack;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetNone;
 
-public class MagicChangeTargetAction extends MagicAction {
+public class ChangeTargetAction extends MagicAction {
 
     private final MagicItemOnStack item;
     private final MagicTarget target;
     private Object oldTarget = MagicTargetNone.getInstance();
 
-    public MagicChangeTargetAction(final MagicItemOnStack aItem,final MagicTarget aTarget) {
+    public ChangeTargetAction(final MagicItemOnStack aItem,final MagicTarget aTarget) {
         item = aItem;
         target = aTarget;
     }

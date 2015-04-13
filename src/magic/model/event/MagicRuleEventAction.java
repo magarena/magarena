@@ -2664,7 +2664,7 @@ public enum MagicRuleEventAction {
         new MagicEventAction() {
             @Override
             public void executeEvent(final MagicGame game, final MagicEvent event) {
-                game.doAction(new MagicCipherAction(event.getCardOnStack(),event.getPlayer()));
+                game.doAction(new CipherAction(event.getCardOnStack(),event.getPlayer()));
             }
         }
     ),

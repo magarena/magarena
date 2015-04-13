@@ -17,7 +17,7 @@
                 game.addEvent(new MagicDiscardEvent(event.getSource(),player,player.getHandSize()));
                 game.addEvent(new MagicDrawEvent(event.getSource(),player,drawAmount));
             }
-            game.doAction(new MagicCipherAction(event.getCardOnStack(), cardPlayer));
+            game.doAction(new CipherAction(event.getCardOnStack(), cardPlayer));
         }
     }
 ]

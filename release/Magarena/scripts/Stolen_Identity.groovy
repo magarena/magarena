@@ -19,7 +19,7 @@
                     MagicCard.createTokenCard(it, player),
                     player
                 ));
-                game.doAction(new MagicCipherAction(
+                game.doAction(new CipherAction(
                     event.getCardOnStack(), 
                     event.getPlayer()
                 ));

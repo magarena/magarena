@@ -19,7 +19,7 @@
                     it,
                     SACRIFICE_PERMANENT
                 ));
-                game.doAction(new MagicCipherAction(event.getCardOnStack(),event.getPlayer()));
+                game.doAction(new CipherAction(event.getCardOnStack(),event.getPlayer()));
             });
         }
     }

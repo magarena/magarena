@@ -6,12 +6,12 @@ import magic.model.MagicPlayer;
 import magic.model.event.MagicCipherEvent;
 import magic.model.stack.MagicCardOnStack;
 
-public class MagicCipherAction extends MagicAction {
+public class CipherAction extends MagicAction {
 
     private final MagicCardOnStack cardOnStack;
     private final MagicPlayer controller;
 
-    public MagicCipherAction(final MagicCardOnStack aCardOnStack, final MagicPlayer aController) {
+    public CipherAction(final MagicCardOnStack aCardOnStack, final MagicPlayer aController) {
         cardOnStack = aCardOnStack;
         controller = aController;
     }
