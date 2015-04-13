@@ -5,18 +5,18 @@ import magic.model.MagicPermanent;
 import magic.model.trigger.MagicPermanentTrigger;
 import magic.model.trigger.MagicTrigger;
 
-public class MagicAddTurnTriggerAction extends MagicAction {
+public class AddTurnTriggerAction extends MagicAction {
 
     private final MagicPermanent permanent;
     private final MagicTrigger<?> trigger;
     private MagicPermanentTrigger permanentTrigger;
 
-    public MagicAddTurnTriggerAction(final MagicPermanent permanent,final MagicTrigger<?> trigger) {
+    public AddTurnTriggerAction(final MagicPermanent permanent,final MagicTrigger<?> trigger) {
         this.permanent=permanent;
         this.trigger=trigger;
     }
     
-    public MagicAddTurnTriggerAction(final MagicTrigger<?> trigger) {
+    public AddTurnTriggerAction(final MagicTrigger<?> trigger) {
         this(MagicPermanent.NONE, trigger);
     }
 

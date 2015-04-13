@@ -97,7 +97,7 @@ public enum MagicRuleEventAction {
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
                     final MagicPermanent it = ARG.itPermanent(event, matcher);
                     if (it.isValid()) {
-                        game.doAction(new MagicAddTurnTriggerAction(
+                        game.doAction(new AddTurnTriggerAction(
                             it,
                             MagicAtEndOfCombatTrigger.Destroy
                         ));
@@ -571,7 +571,7 @@ public enum MagicRuleEventAction {
         new MagicEventAction() {
             @Override
             public void executeEvent(final MagicGame game, final MagicEvent event) {
-                game.doAction(new MagicAddTurnTriggerAction(
+                game.doAction(new AddTurnTriggerAction(
                     MagicIfDamageWouldBeDealtTrigger.PreventCombatDamage
                 ));
             }
@@ -588,7 +588,7 @@ public enum MagicRuleEventAction {
             public void executeEvent(final MagicGame game, final MagicEvent event) {
                 event.processTargetPermanent(game,new MagicPermanentAction() {
                     public void doAction(final MagicPermanent creature) {
-                        game.doAction(new MagicAddTurnTriggerAction(
+                        game.doAction(new AddTurnTriggerAction(
                             creature,
                             MagicIfDamageWouldBeDealtTrigger.PreventCombatDamageDealtBy
                         ));
@@ -608,7 +608,7 @@ public enum MagicRuleEventAction {
             public void executeEvent(final MagicGame game, final MagicEvent event) {
                 event.processTargetPermanent(game,new MagicPermanentAction() {
                     public void doAction(final MagicPermanent creature) {
-                        game.doAction(new MagicAddTurnTriggerAction(
+                        game.doAction(new AddTurnTriggerAction(
                             creature,
                             MagicIfDamageWouldBeDealtTrigger.PreventDamageDealtTo
                         ));
@@ -1391,7 +1391,7 @@ public enum MagicRuleEventAction {
         new MagicEventAction() {
             @Override
             public void executeEvent(final MagicGame game,final MagicEvent event) {
-                game.doAction(new MagicAddTurnTriggerAction(event.getPermanent(), MagicAtEndOfCombatTrigger.Clockwork));
+                game.doAction(new AddTurnTriggerAction(event.getPermanent(), MagicAtEndOfCombatTrigger.Clockwork));
             }
         }
     ),
