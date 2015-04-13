@@ -4,7 +4,7 @@ import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.model.phase.MagicPhaseType;
 import magic.model.action.ChangeExtraTurnsAction;
-import magic.model.action.MagicCleanupPlayerAction;
+import magic.model.action.CleanupPlayerAction;
 import magic.model.action.MagicCleanupTurnStaticsAction;
 import magic.model.action.MagicCleanupTurnTriggersAction;
 import magic.model.action.MagicPayDelayedCostsAction;
@@ -33,7 +33,7 @@ public class MagicCleanupPhase extends MagicPhase {
         // remove until EOT triggers/static, clean up player and permanents
         game.doAction(new MagicCleanupTurnTriggersAction());
         for (final MagicPlayer player : game.getPlayers()) {
-            game.doAction(new MagicCleanupPlayerAction(player));
+            game.doAction(new CleanupPlayerAction(player));
         }
         game.doAction(new MagicCleanupTurnStaticsAction());
         game.checkState();

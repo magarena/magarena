@@ -4,7 +4,7 @@ import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 
-public class MagicCleanupPlayerAction extends MagicAction {
+public class CleanupPlayerAction extends MagicAction {
 
     private final MagicPlayer player;
     private int oldPreventDamage;
@@ -13,7 +13,7 @@ public class MagicCleanupPlayerAction extends MagicAction {
     private int oldLifeGained;
     private int oldCreaturesAttacked;
 
-    public MagicCleanupPlayerAction(final MagicPlayer player) {
+    public CleanupPlayerAction(final MagicPlayer player) {
         this.player=player;
     }
 
