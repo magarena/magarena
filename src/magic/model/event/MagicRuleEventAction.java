@@ -987,7 +987,7 @@ public enum MagicRuleEventAction {
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    game.doAction(new MagicChangeTurnPTAction(ARG.itPermanent(event, matcher),power,toughness));
+                    game.doAction(new ChangeTurnPTAction(ARG.itPermanent(event, matcher),power,toughness));
                 }
             };
         }
@@ -1009,7 +1009,7 @@ public enum MagicRuleEventAction {
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
                     event.processTargetPermanent(game,new MagicPermanentAction() {
                         public void doAction(final MagicPermanent creature) {
-                            game.doAction(new MagicChangeTurnPTAction(creature,power,toughness));
+                            game.doAction(new ChangeTurnPTAction(creature,power,toughness));
                         }
                     });
                 }
@@ -1035,7 +1035,7 @@ public enum MagicRuleEventAction {
                         filter
                     );
                     for (final MagicPermanent creature : targets) {
-                        game.doAction(new MagicChangeTurnPTAction(creature,power,toughness));
+                        game.doAction(new ChangeTurnPTAction(creature,power,toughness));
                     }
                 }
             };
@@ -1054,7 +1054,7 @@ public enum MagicRuleEventAction {
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    game.doAction(new MagicChangeTurnPTAction(ARG.itPermanent(event, matcher),power,toughness));
+                    game.doAction(new ChangeTurnPTAction(ARG.itPermanent(event, matcher),power,toughness));
                     game.doAction(new MagicGainAbilityAction(ARG.itPermanent(event, matcher),abilityList));
                 }
             };
@@ -1076,7 +1076,7 @@ public enum MagicRuleEventAction {
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    game.doAction(new MagicChangeTurnPTAction(event.getPermanent(),power,toughness));
+                    game.doAction(new ChangeTurnPTAction(event.getPermanent(),power,toughness));
                     game.doAction(new MagicGainAbilityAction(event.getPermanent(),abilityList));
                 }
             };
@@ -1100,7 +1100,7 @@ public enum MagicRuleEventAction {
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
                     event.processTargetPermanent(game,new MagicPermanentAction() {
                         public void doAction(final MagicPermanent creature) {
-                            game.doAction(new MagicChangeTurnPTAction(creature,power,toughness));
+                            game.doAction(new ChangeTurnPTAction(creature,power,toughness));
                             game.doAction(new MagicGainAbilityAction(creature,abilityList));
                         }
                     });
@@ -1182,7 +1182,7 @@ public enum MagicRuleEventAction {
                         filter
                     );
                     for (final MagicPermanent creature : targets) {
-                        game.doAction(new MagicChangeTurnPTAction(creature,power,toughness));
+                        game.doAction(new ChangeTurnPTAction(creature,power,toughness));
                         game.doAction(new MagicGainAbilityAction(creature,abilityList));
                     }
                 }
@@ -1215,7 +1215,7 @@ public enum MagicRuleEventAction {
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
                     event.processTargetPermanent(game,new MagicPermanentAction() {
                         public void doAction(final MagicPermanent creature) {
-                            game.doAction(new MagicChangeTurnPTAction(creature,power,toughness));
+                            game.doAction(new ChangeTurnPTAction(creature,power,toughness));
                         }
                     });
                 }
@@ -1248,7 +1248,7 @@ public enum MagicRuleEventAction {
                         filter
                     );
                     for (final MagicPermanent creature : targets) {
-                        game.doAction(new MagicChangeTurnPTAction(creature,power,toughness));
+                        game.doAction(new ChangeTurnPTAction(creature,power,toughness));
                     }
                 }
             };
@@ -1269,7 +1269,7 @@ public enum MagicRuleEventAction {
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
                     event.processTargetPermanent(game,new MagicPermanentAction() {
                         public void doAction(final MagicPermanent creature) {
-                            game.doAction(new MagicChangeTurnPTAction(creature,power,toughness));
+                            game.doAction(new ChangeTurnPTAction(creature,power,toughness));
                         }
                     });
                 }
@@ -1291,7 +1291,7 @@ public enum MagicRuleEventAction {
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
                     event.processTargetPermanent(game,new MagicPermanentAction() {
                         public void doAction(final MagicPermanent creature) {
-                            game.doAction(new MagicChangeTurnPTAction(creature,power,toughness));
+                            game.doAction(new ChangeTurnPTAction(creature,power,toughness));
                             game.doAction(new MagicGainAbilityAction(creature,abilityList));
                         }
                     });
@@ -1322,7 +1322,7 @@ public enum MagicRuleEventAction {
                         filter
                     );
                     for (final MagicPermanent creature : targets) {
-                        game.doAction(new MagicChangeTurnPTAction(creature,power,toughness));
+                        game.doAction(new ChangeTurnPTAction(creature,power,toughness));
                     }
                 }
             };

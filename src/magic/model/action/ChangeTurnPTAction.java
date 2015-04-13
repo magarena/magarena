@@ -6,13 +6,13 @@ import magic.model.MagicPowerToughness;
 import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicStatic;
 
-public class MagicChangeTurnPTAction extends MagicAction {
+public class ChangeTurnPTAction extends MagicAction {
 
     private final MagicPermanent permanent;
     private final int power;
     private final int toughness;
 
-    public MagicChangeTurnPTAction(final MagicPermanent permanent,final int power,final int toughness) {
+    public ChangeTurnPTAction(final MagicPermanent permanent,final int power,final int toughness) {
         this.permanent=permanent;
         this.power=power;
         this.toughness=toughness;

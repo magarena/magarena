@@ -2,7 +2,7 @@ package magic.model.trigger;
 
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
-import magic.model.action.MagicChangeTurnPTAction;
+import magic.model.action.ChangeTurnPTAction;
 import magic.model.event.MagicEvent;
 import magic.model.target.MagicTargetFilterFactory;
 
@@ -42,7 +42,7 @@ public class MagicBattleCryTrigger extends MagicWhenAttacksTrigger {
                 MagicTargetFilterFactory.ATTACKING_CREATURE);
         for (final MagicPermanent creature : targets) {
             if (creature != permanent && creature.isAttacking()) {
-                game.doAction(new MagicChangeTurnPTAction(creature,1,0));
+                game.doAction(new ChangeTurnPTAction(creature,1,0));
             }
         }
     }

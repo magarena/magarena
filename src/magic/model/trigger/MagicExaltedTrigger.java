@@ -2,7 +2,7 @@ package magic.model.trigger;
 
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
-import magic.model.action.MagicChangeTurnPTAction;
+import magic.model.action.ChangeTurnPTAction;
 import magic.model.event.MagicEvent;
 
 public class MagicExaltedTrigger extends MagicWhenAttacksTrigger {
@@ -30,6 +30,6 @@ public class MagicExaltedTrigger extends MagicWhenAttacksTrigger {
 
     @Override
     public void executeEvent(final MagicGame game, final MagicEvent event) {
-        game.doAction(new MagicChangeTurnPTAction(event.getRefPermanent(),1,1));
+        game.doAction(new ChangeTurnPTAction(event.getRefPermanent(),1,1));
     }
 }

@@ -3,7 +3,7 @@ package magic.model.trigger;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicType;
-import magic.model.action.MagicChangeTurnPTAction;
+import magic.model.action.ChangeTurnPTAction;
 import magic.model.event.MagicEvent;
 import magic.model.stack.MagicCardOnStack;
 
@@ -33,7 +33,7 @@ public class MagicProwessTrigger extends MagicWhenOtherSpellIsCastTrigger {
 
     @Override
     public void executeEvent(final MagicGame game, final MagicEvent event) {
-        game.doAction(new MagicChangeTurnPTAction(event.getPermanent(),1,1));
+        game.doAction(new ChangeTurnPTAction(event.getPermanent(),1,1));
     }
 
 }
