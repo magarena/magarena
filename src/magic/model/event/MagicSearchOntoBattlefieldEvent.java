@@ -10,7 +10,7 @@ import magic.model.action.MagicPlayCardAction;
 import magic.model.action.MagicPlayMod;
 import magic.model.action.MagicRemoveCardAction;
 import magic.model.action.MagicShuffleLibraryAction;
-import magic.model.action.MagicAIRevealAction;
+import magic.model.action.AIRevealAction;
 import magic.model.action.MagicPermanentAction;
 import magic.model.choice.MagicChoice;
 import magic.model.choice.MagicCardChoiceResult;
@@ -45,7 +45,7 @@ public class MagicSearchOntoBattlefieldEvent extends MagicEvent {
     
     @Override
     public void onAddEvent(final MagicGame game) {
-        game.doAction(new MagicAIRevealAction(getPlayer().getLibrary()));
+        game.doAction(new AIRevealAction(getPlayer().getLibrary()));
     }
 
     private static final MagicEventAction EventAction(final List<? extends MagicPermanentAction> mods) {
@@ -54,7 +54,7 @@ public class MagicSearchOntoBattlefieldEvent extends MagicEvent {
             public void executeEvent(final MagicGame game, final MagicEvent event) {
                 // choice could be MagicMayChoice or MagicTargetChoice or MagicFromCardListChoice
                 if (event.isNo()) {
-                    game.doAction(MagicAIRevealAction.Hide(event.getPlayer().getLibrary()));
+                    game.doAction(AIRevealAction.Hide(event.getPlayer().getLibrary()));
                 } else if (event.getChosen()[0] instanceof MagicCardChoiceResult) {
                     event.processChosenCards(game, new MagicCardAction() {
                         public void doAction(final MagicCard card) {

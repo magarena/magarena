@@ -26,7 +26,7 @@ public class MagicRevealAction extends MagicAction {
         if (cards.isEmpty()) {
             return;
         }
-        game.doAction(new MagicAIRevealAction(cards));
+        game.doAction(new AIRevealAction(cards));
         final MagicPlayer you = cards.get(0).getController();
         final String message = you + " reveals " + cardNames(cards);
         game.logAppendMessage(you, message);

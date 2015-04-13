@@ -8,7 +8,7 @@ import magic.model.choice.MagicMayChoice;
 import magic.model.choice.MagicPayManaCostChoice;
 import magic.model.event.MagicActivation;
 import magic.model.event.MagicEvent;
-import magic.model.action.MagicAIRevealAction;
+import magic.model.action.AIRevealAction;
 
 public class MagicMiracleTrigger extends MagicWhenDrawnTrigger {
 
@@ -36,7 +36,7 @@ public class MagicMiracleTrigger extends MagicWhenDrawnTrigger {
     public void executeEvent(final MagicGame game, final MagicEvent event) {
         if (event.isYes()) {
             final MagicCard card = event.getCard();
-            game.doAction(new MagicAIRevealAction(card));
+            game.doAction(new AIRevealAction(card));
             final MagicActivation<MagicCard> act = card.getCardDefinition().getCastActivation();
             game.addEvent(act.getEvent(card));
         }

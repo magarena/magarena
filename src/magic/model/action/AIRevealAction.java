@@ -7,25 +7,25 @@ import java.util.Collection;
 import java.util.List;
 import java.util.Arrays;
 
-public class MagicAIRevealAction extends MagicAction {
+public class AIRevealAction extends MagicAction {
     
     private final List<MagicCard> cards = new ArrayList<MagicCard>();
     private final List<Boolean> known = new ArrayList<Boolean>();
     private boolean newValue;
     
-    public MagicAIRevealAction(final MagicCard... aCards) {
+    public AIRevealAction(final MagicCard... aCards) {
         this(Arrays.asList(aCards), true);
     }
     
-    public MagicAIRevealAction(final Collection<MagicCard> aCards) {
+    public AIRevealAction(final Collection<MagicCard> aCards) {
         this(aCards, true);
     }
 
-    public static MagicAIRevealAction Hide(final Collection<MagicCard> aCards) {
-        return new MagicAIRevealAction(aCards, false);
+    public static AIRevealAction Hide(final Collection<MagicCard> aCards) {
+        return new AIRevealAction(aCards, false);
     }
 
-    private MagicAIRevealAction(final Collection<MagicCard> aCards, final boolean aNewValue) {
+    private AIRevealAction(final Collection<MagicCard> aCards, final boolean aNewValue) {
         cards.addAll(aCards);
         newValue = aNewValue;
     }
