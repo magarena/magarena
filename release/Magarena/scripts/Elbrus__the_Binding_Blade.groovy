@@ -12,7 +12,7 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicAttachAction(event.getPermanent(), MagicPermanent.NONE));
+            game.doAction(new AttachAction(event.getPermanent(), MagicPermanent.NONE));
             game.doAction(new MagicTransformAction(event.getPermanent()));
         }
     }

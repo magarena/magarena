@@ -29,7 +29,7 @@
                             {
                                 final MagicGame G2, final MagicEvent E ->
                                 if (E.isYes()) {
-                                    G2.doAction(new MagicAttachAction(
+                                    G2.doAction(new AttachAction(
                                         E.getPermanent(), 
                                         E.getRefPermanent()
                                     ));

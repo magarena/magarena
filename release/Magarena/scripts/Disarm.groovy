@@ -16,7 +16,7 @@
                 final Collection<MagicPermanent> equipmentList = game.filterPermanents(it.getController(),EQUIPMENT_YOU_CONTROL);
                 for (final MagicPermanent equipment : equipmentList) {
                     if (equipment.getEquippedCreature() == it) {
-                        game.doAction(new MagicAttachAction(equipment,MagicPermanent.NONE));
+                        game.doAction(new AttachAction(equipment,MagicPermanent.NONE));
                     }
                 }
             });

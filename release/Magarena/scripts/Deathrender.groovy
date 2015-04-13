@@ -24,7 +24,7 @@
                     game.doAction(new MagicPlayCardAction(it,event.getPlayer(), {
                         final MagicPermanent perm ->
                         final MagicGame G = perm.getGame();
-                        G.doAction(new MagicAttachAction(sn.map(G), perm));
+                        G.doAction(new AttachAction(sn.map(G), perm));
                     }));
                 });
             }

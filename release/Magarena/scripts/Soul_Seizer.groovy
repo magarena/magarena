@@ -15,7 +15,7 @@
             if (event.isYes()) {
                 event.processTargetPermanent(game, {
                     game.doAction(new MagicTransformAction(event.getPermanent()));
-                    game.doAction(new MagicAttachAction(event.getPermanent(), it));
+                    game.doAction(new AttachAction(event.getPermanent(), it));
                 });
             }
         }

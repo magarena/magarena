@@ -44,7 +44,7 @@ def evt = {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
-                game.doAction(new MagicAttachAction(
+                game.doAction(new AttachAction(
                     event.getPermanent(),
                     event.getRefPermanent()
                 ));

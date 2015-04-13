@@ -11,7 +11,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             EQUIPMENT.filter(game) each {
-                game.doAction(new MagicAttachAction(it,event.getPermanent()));
+                game.doAction(new AttachAction(it,event.getPermanent()));
             }
         }
     }

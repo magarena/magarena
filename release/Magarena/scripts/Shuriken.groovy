@@ -16,7 +16,7 @@ def public MagicPermanentActivation ThrowIt(final MagicPermanent source) {
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event){
-            game.doAction(new MagicAttachAction(source, MagicPermanent.NONE));
+            game.doAction(new AttachAction(source, MagicPermanent.NONE));
             event.processTarget(game,{
                 game.doAction(new MagicDealDamageAction(source,it,2));
                 if (!event.getPermanent().hasSubType(MagicSubType.Ninja)) {

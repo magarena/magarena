@@ -38,7 +38,7 @@ def HAS_ALL_KALDRA_EQUIPMENT = new MagicCondition() {
                     final MagicPermanent perm ->
                     final MagicGame G = perm.getGame();
                     for (final MagicPermanent equip : G.filterPermanents(G.getPlayer(pIdx), KALDRA_EQUIPMENT)) {
-                        G.doAction(new MagicAttachAction(equip, perm));
+                        G.doAction(new AttachAction(equip, perm));
                     }
                 }
             ));
