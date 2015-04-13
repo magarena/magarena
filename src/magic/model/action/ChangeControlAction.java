@@ -6,13 +6,13 @@ import magic.model.MagicPermanentState;
 import magic.model.MagicPlayer;
 import magic.model.trigger.MagicTriggerType;
 
-public class MagicChangeControlAction extends MagicAction {
+public class ChangeControlAction extends MagicAction {
 
     private final MagicPlayer curr;
     private final MagicPermanent perm;
     private final int score;
 
-    public MagicChangeControlAction(
+    public ChangeControlAction(
             final MagicPlayer curr,
             final MagicPermanent perm,
             final int score) {

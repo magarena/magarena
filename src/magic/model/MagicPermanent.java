@@ -2,7 +2,7 @@ package magic.model;
 
 import magic.ai.ArtificialScoringSystem;
 import magic.model.action.AttachAction;
-import magic.model.action.MagicChangeControlAction;
+import magic.model.action.ChangeControlAction;
 import magic.model.action.MagicChangeCountersAction;
 import magic.model.action.MagicChangeStateAction;
 import magic.model.action.MagicDestroyAction;
@@ -412,7 +412,7 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
         for (final MagicPermanent perm : player.getPermanents()) {
             final MagicPlayer curr = perm.getController();
             if (curr != player) {
-                game.addDelayedAction(new MagicChangeControlAction(curr, perm, perm.getScore()));
+                game.addDelayedAction(new ChangeControlAction(curr, perm, perm.getScore()));
             }
             perm.updateScore();
         }}
