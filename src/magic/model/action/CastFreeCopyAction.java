@@ -9,16 +9,16 @@ import magic.model.MagicPlayer;
 import magic.model.MagicLocationType;
 import magic.model.stack.MagicCardOnStack;
 
-public class MagicCastFreeCopyAction extends MagicAction {
+public class CastFreeCopyAction extends MagicAction {
 
     private final MagicPlayer player;
     private final MagicCardDefinition cdef;
 
-    public MagicCastFreeCopyAction(final MagicPlayer aPlayer,final MagicObject obj) {
+    public CastFreeCopyAction(final MagicPlayer aPlayer,final MagicObject obj) {
         this(aPlayer, obj.getCardDefinition());
     }
     
-    public MagicCastFreeCopyAction(final MagicPlayer aPlayer,final MagicCardDefinition aCdef) {
+    public CastFreeCopyAction(final MagicPlayer aPlayer,final MagicCardDefinition aCdef) {
         player = aPlayer;
         cdef = aCdef;
     }

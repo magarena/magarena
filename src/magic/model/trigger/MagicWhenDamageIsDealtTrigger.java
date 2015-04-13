@@ -4,7 +4,7 @@ import magic.model.MagicCardDefinition;
 import magic.model.MagicDamage;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
-import magic.model.action.MagicCastFreeCopyAction;
+import magic.model.action.CastFreeCopyAction;
 import magic.model.action.MagicChangePoisonAction;
 import magic.model.choice.MagicMayChoice;
 import magic.model.event.MagicEvent;
@@ -121,7 +121,7 @@ public abstract class MagicWhenDamageIsDealtTrigger extends MagicTrigger<MagicDa
             @Override
             public void executeEvent(final MagicGame game, final MagicEvent event) {
                 if (event.isYes()) {
-                    game.doAction(new MagicCastFreeCopyAction(event.getPlayer(), cardDef));
+                    game.doAction(new CastFreeCopyAction(event.getPlayer(), cardDef));
                 }
             }
         };
