@@ -44,7 +44,7 @@ def ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicBecomesCreatureAction(event.getRefPermanent(),PT,ST,LC));
+            game.doAction(new BecomesCreatureAction(event.getRefPermanent(),PT,ST,LC));
         }
     },
     new MagicWhenOtherDiesTrigger() {

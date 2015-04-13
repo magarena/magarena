@@ -70,7 +70,7 @@ def PreventAllDamage = new MagicIfDamageWouldBeDealtTrigger(MagicTrigger.PREVENT
                 }
             };
 
-            game.doAction(new MagicBecomesCreatureAction(event.getPermanent(),PT,AB,ST));
+            game.doAction(new BecomesCreatureAction(event.getPermanent(),PT,AB,ST));
             game.doAction(new AddTurnTriggerAction(event.getPermanent(), PreventAllDamage));
         }
     },

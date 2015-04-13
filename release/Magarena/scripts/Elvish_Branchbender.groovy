@@ -43,7 +43,7 @@ def choice = Positive("target Forest");
                         pt.set(amount,amount);
                     }
                 };
-                game.doAction(new MagicBecomesCreatureAction(it,PT,ST));
+                game.doAction(new BecomesCreatureAction(it,PT,ST));
             });
         }
     }

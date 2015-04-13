@@ -21,7 +21,7 @@
                 }
             };
             game.filterPermanents(event.getPlayer(), CREATURE_YOU_CONTROL) each {
-                game.doAction(new MagicBecomesCreatureAction(it, PT));
+                game.doAction(new BecomesCreatureAction(it, PT));
             }
         }
     }

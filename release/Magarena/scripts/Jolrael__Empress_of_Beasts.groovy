@@ -39,7 +39,7 @@ def ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
             event.processTargetPlayer(game, {
                 LAND_YOU_CONTROL.filter(it) each {
                     final MagicPermanent target ->
-                    game.doAction(new MagicBecomesCreatureAction(target,PT,ST));
+                    game.doAction(new BecomesCreatureAction(target,PT,ST));
                 }
             });
         }

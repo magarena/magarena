@@ -43,7 +43,7 @@ def TEXT2 = "Until end of turn, lands you control become 2/2 creatures that are 
             } 
             if (event.isKicked() || event.isMode(2)) {
                 LAND_YOU_CONTROL.filter(event.getPlayer()) each {
-                    game.doAction(new MagicBecomesCreatureAction(it,PT,ST));
+                    game.doAction(new BecomesCreatureAction(it,PT,ST));
                 }         
             }
         }

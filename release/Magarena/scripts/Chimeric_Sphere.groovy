@@ -43,7 +43,7 @@ def AB = new MagicStatic(MagicLayer.Ability, MagicStatic.UntilEOT) {
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicBecomesCreatureAction(event.getPermanent(),PT,AB,ST));
+            game.doAction(new BecomesCreatureAction(event.getPermanent(),PT,AB,ST));
         }
     }
 ]

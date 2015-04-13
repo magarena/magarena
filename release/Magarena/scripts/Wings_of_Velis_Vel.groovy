@@ -26,7 +26,7 @@ def AB = new MagicStatic(MagicLayer.Ability, MagicStatic.UntilEOT) {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                game.doAction(new MagicBecomesCreatureAction(
+                game.doAction(new BecomesCreatureAction(
                     it,
                     PT,
                     MagicStatic.AllCreatureTypesUntilEOT,

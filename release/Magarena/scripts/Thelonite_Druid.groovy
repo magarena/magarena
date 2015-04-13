@@ -35,7 +35,7 @@ def TY = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             FOREST_YOU_CONTROL.filter(event.getPlayer()) each {
-                game.doAction(new MagicBecomesCreatureAction(it,PT,TY));
+                game.doAction(new BecomesCreatureAction(it,PT,TY));
             }
         }
     }

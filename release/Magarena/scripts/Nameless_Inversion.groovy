@@ -19,7 +19,7 @@ def TP = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                game.doAction(new MagicBecomesCreatureAction(it,TP));
+                game.doAction(new BecomesCreatureAction(it,TP));
                 game.doAction(new MagicChangeTurnPTAction(it,3,-3));
             });
         }

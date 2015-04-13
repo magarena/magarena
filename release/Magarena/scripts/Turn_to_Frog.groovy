@@ -39,7 +39,7 @@ def C = new MagicStatic(MagicLayer.Color, MagicStatic.UntilEOT) {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                game.doAction(new MagicBecomesCreatureAction(it,PT,AB,ST,C));
+                game.doAction(new BecomesCreatureAction(it,PT,AB,ST,C));
             });
         }
     }
