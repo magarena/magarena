@@ -5,12 +5,12 @@ import magic.model.MagicPlayer;
 import magic.model.event.MagicStackChangeTargetsEvent;
 import magic.model.stack.MagicCardOnStack;
 
-public class MagicCopyCardOnStackAction extends MagicAction {
+public class CopyCardOnStackAction extends MagicAction {
 
     private final MagicPlayer player;
     private final MagicCardOnStack cardOnStack;
 
-    public MagicCopyCardOnStackAction(final MagicPlayer player,final MagicCardOnStack cardOnStack) {
+    public CopyCardOnStackAction(final MagicPlayer player,final MagicCardOnStack cardOnStack) {
         this.player=player;
         this.cardOnStack=cardOnStack;
     }

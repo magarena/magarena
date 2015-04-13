@@ -2694,7 +2694,7 @@ public enum MagicRuleEventAction {
             public void executeEvent(final MagicGame game, final MagicEvent event) {
                 event.processTargetCardOnStack(game,new MagicCardOnStackAction() {
                     public void doAction(final MagicCardOnStack item) {
-                        game.doAction(new MagicCopyCardOnStackAction(event.getPlayer(),item));
+                        game.doAction(new CopyCardOnStackAction(event.getPlayer(),item));
                     }
                 });
             }

@@ -2,7 +2,7 @@ package magic.model.trigger;
 
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
-import magic.model.action.MagicCopyCardOnStackAction;
+import magic.model.action.CopyCardOnStackAction;
 import magic.model.event.MagicEvent;
 import magic.model.stack.MagicCardOnStack;
 
@@ -37,7 +37,7 @@ public class MagicStormTrigger extends MagicWhenSpellIsCastTrigger {
     public void executeEvent(final MagicGame game, final MagicEvent event) {
         final int count = event.getRefInt();
         for (int i = 0; i < count; i++) {
-            game.doAction(new MagicCopyCardOnStackAction(
+            game.doAction(new CopyCardOnStackAction(
                 event.getPlayer(),
                 event.getCardOnStack()
             ));
