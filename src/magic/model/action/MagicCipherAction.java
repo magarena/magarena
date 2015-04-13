@@ -20,7 +20,7 @@ public class MagicCipherAction extends MagicAction {
     public void doAction(final MagicGame game) {
         if (cardOnStack.isRepresentedByACard()) {
             // prevent auto move to graveyard
-            game.doAction(new MagicChangeCardDestinationAction(cardOnStack, MagicLocationType.Play));
+            game.doAction(new ChangeCardDestinationAction(cardOnStack, MagicLocationType.Play));
             game.addEvent(new MagicCipherEvent(cardOnStack, controller));
         }
     }

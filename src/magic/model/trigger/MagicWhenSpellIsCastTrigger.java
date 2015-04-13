@@ -6,7 +6,7 @@ import magic.model.MagicCardDefinition;
 import magic.model.MagicLocationType;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.event.MagicEvent;
-import magic.model.action.MagicChangeCardDestinationAction;
+import magic.model.action.ChangeCardDestinationAction;
 import magic.model.action.AddTriggerAction;
 
 public abstract class MagicWhenSpellIsCastTrigger extends MagicTrigger<MagicCardOnStack> {

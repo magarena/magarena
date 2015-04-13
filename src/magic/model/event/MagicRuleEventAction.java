@@ -2786,7 +2786,7 @@ public enum MagicRuleEventAction {
             public void executeEvent(final MagicGame game, final MagicEvent event) {
                 final MagicCardOnStack spell = event.getCardOnStack();
                 if (spell.getFromLocation() == MagicLocationType.OwnersHand) {
-                    game.doAction(new MagicChangeCardDestinationAction(spell, MagicLocationType.Exile));
+                    game.doAction(new ChangeCardDestinationAction(spell, MagicLocationType.Exile));
                     game.doAction(new AddTriggerAction(new MagicReboundTrigger(spell.getCard())));
                 }
             }
@@ -2804,7 +2804,7 @@ public enum MagicRuleEventAction {
             public void executeEvent(final MagicGame game, final MagicEvent event) {
                 final MagicCardOnStack spell = event.getCardOnStack();
                 if (spell.isKicked()) {
-                    game.doAction(new MagicChangeCardDestinationAction(spell, MagicLocationType.OwnersHand));
+                    game.doAction(new ChangeCardDestinationAction(spell, MagicLocationType.OwnersHand));
                 }
             }
         };

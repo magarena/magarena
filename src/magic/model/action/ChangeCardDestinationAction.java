@@ -4,13 +4,13 @@ import magic.model.MagicGame;
 import magic.model.MagicLocationType;
 import magic.model.stack.MagicCardOnStack;
 
-public class MagicChangeCardDestinationAction extends MagicAction {
+public class ChangeCardDestinationAction extends MagicAction {
 
     private final MagicCardOnStack cardOnStack;
     private final MagicLocationType newLocation;
     private MagicLocationType oldLocation;
 
-    public MagicChangeCardDestinationAction(final MagicCardOnStack aCardOnStack, final MagicLocationType dest) {
+    public ChangeCardDestinationAction(final MagicCardOnStack aCardOnStack, final MagicLocationType dest) {
         cardOnStack = aCardOnStack;
         newLocation = dest;
     }

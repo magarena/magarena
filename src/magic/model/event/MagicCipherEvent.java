@@ -6,7 +6,7 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.action.AddTriggerAction;
-import magic.model.action.MagicChangeCardDestinationAction;
+import magic.model.action.ChangeCardDestinationAction;
 import magic.model.action.MagicMoveCardAction;
 import magic.model.action.MagicPermanentAction;
 import magic.model.choice.MagicMayChoice;
@@ -32,7 +32,7 @@ public class MagicCipherEvent extends MagicEvent {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
-                game.doAction(new MagicChangeCardDestinationAction(event.getCardOnStack(), MagicLocationType.Exile));
+                game.doAction(new ChangeCardDestinationAction(event.getCardOnStack(), MagicLocationType.Exile));
                 event.processTargetPermanent(game, new MagicPermanentAction() {
                     public void doAction(final MagicPermanent creatureToEncode) {
                         game.doAction(new AddTriggerAction(
@@ -42,7 +42,7 @@ public class MagicCipherEvent extends MagicEvent {
                     }
                 });
             } else {
-                game.doAction(new MagicChangeCardDestinationAction(event.getCardOnStack(), MagicLocationType.Graveyard));
+                game.doAction(new ChangeCardDestinationAction(event.getCardOnStack(), MagicLocationType.Graveyard));
             }
             game.doAction(new MagicMoveCardAction(event.getCardOnStack()));
         }
