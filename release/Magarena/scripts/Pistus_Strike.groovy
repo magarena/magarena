@@ -16,7 +16,7 @@ def choice = Negative("target creature with Flying");
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
                 game.doAction(new MagicDestroyAction(it));
-                game.doAction(new MagicChangePoisonAction(it.getController(),1));
+                game.doAction(new ChangePoisonAction(it.getController(),1));
             });
         }
     }
