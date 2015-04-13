@@ -11,7 +11,7 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.ARG;
-import magic.model.action.MagicAddStaticAction;
+import magic.model.action.AddStaticAction;
 import magic.model.action.MagicPutItemOnStackAction;
 import magic.model.choice.MagicChoice;
 import magic.model.condition.MagicCondition;
@@ -179,7 +179,7 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
             }
             @Override
             public void executeEvent(final MagicGame game, final MagicEvent event) {
-                game.doAction(new MagicAddStaticAction(event.getPermanent(), MagicStatic.SwitchPT));
+                game.doAction(new AddStaticAction(event.getPermanent(), MagicStatic.SwitchPT));
             }
         };
     }

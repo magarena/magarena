@@ -69,7 +69,7 @@ public class MagicBecomesAction extends MagicAction {
                     bPt.set(pt[0], pt[1]);
                 }
             };
-            game.doAction(new MagicAddStaticAction(permanent, PT));
+            game.doAction(new AddStaticAction(permanent, PT));
         }
         if (color.isEmpty() == false) {
             int _mask = 0;
@@ -89,7 +89,7 @@ public class MagicBecomesAction extends MagicAction {
                     }
                 }
             };
-            game.doAction(new MagicAddStaticAction(permanent, C));
+            game.doAction(new AddStaticAction(permanent, C));
         }
         if (type.isEmpty() == false) {
             int _mask = 0;
@@ -108,7 +108,7 @@ public class MagicBecomesAction extends MagicAction {
                     }
                 }
             };
-            game.doAction(new MagicAddStaticAction(permanent, T));
+            game.doAction(new AddStaticAction(permanent, T));
         }
         if (subType.isEmpty() == false) {
             final MagicStatic ST = new MagicStatic(MagicLayer.Type, duration) {
@@ -123,7 +123,7 @@ public class MagicBecomesAction extends MagicAction {
                     }
                 }
             };
-            game.doAction(new MagicAddStaticAction(permanent, ST));
+            game.doAction(new AddStaticAction(permanent, ST));
         }
         if (ability != null) {
             game.doAction(new MagicGainAbilityAction(permanent, ability, duration));

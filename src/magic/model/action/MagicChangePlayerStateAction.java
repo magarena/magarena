@@ -35,7 +35,7 @@ public class MagicChangePlayerStateAction extends MagicAction {
                     }
                 }
             };
-            game.doAction(new MagicAddStaticAction(exhausted));
+            game.doAction(new AddStaticAction(exhausted));
 
             MagicAtUpkeepTrigger cleanup = new MagicAtUpkeepTrigger() {
                 @Override
@@ -50,7 +50,7 @@ public class MagicChangePlayerStateAction extends MagicAction {
             game.doAction(new MagicAddTriggerAction(cleanup));
         } else {
             // until end of turn
-            game.doAction(new MagicAddStaticAction(new MagicStatic(MagicLayer.Player, MagicStatic.UntilEOT) {
+            game.doAction(new AddStaticAction(new MagicStatic(MagicLayer.Player, MagicStatic.UntilEOT) {
                 @Override
                 public void modPlayer(
                         final MagicPermanent source,

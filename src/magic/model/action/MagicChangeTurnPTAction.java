@@ -20,7 +20,7 @@ public class MagicChangeTurnPTAction extends MagicAction {
 
     @Override
     public void doAction(final MagicGame game) {
-        game.doAction(new MagicAddStaticAction(permanent, new MagicStatic(
+        game.doAction(new AddStaticAction(permanent, new MagicStatic(
                 MagicLayer.ModPT,
                 MagicStatic.UntilEOT) {
             @Override

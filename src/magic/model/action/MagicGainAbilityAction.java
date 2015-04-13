@@ -50,7 +50,7 @@ public class MagicGainAbilityAction extends MagicAction {
 
     @Override
     public void doAction(final MagicGame game) {
-        game.doAction(new MagicAddStaticAction(permanent, new MagicStatic(MagicLayer.Ability, duration) {
+        game.doAction(new AddStaticAction(permanent, new MagicStatic(MagicLayer.Ability, duration) {
             @Override
             public void modAbilityFlags(
                     final MagicPermanent source,

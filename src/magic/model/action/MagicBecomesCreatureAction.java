@@ -17,7 +17,7 @@ public class MagicBecomesCreatureAction extends MagicAction {
     @Override
     public void doAction(final MagicGame game) {
         for (final MagicStatic mstatic : mstatics) {
-            game.doAction(new MagicAddStaticAction(permanent, mstatic));
+            game.doAction(new AddStaticAction(permanent, mstatic));
         }
         game.setStateCheckRequired();
     }

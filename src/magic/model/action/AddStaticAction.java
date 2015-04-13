@@ -4,17 +4,17 @@ import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.mstatic.MagicStatic;
 
-public class MagicAddStaticAction extends MagicAction {
+public class AddStaticAction extends MagicAction {
 
     private final MagicPermanent permanent;
     private final MagicStatic mstatic;
 
-    public MagicAddStaticAction(final MagicPermanent aPermanent, final MagicStatic aStatic) {
+    public AddStaticAction(final MagicPermanent aPermanent, final MagicStatic aStatic) {
         permanent = aPermanent;
         mstatic = aStatic;
     }
 
-    public MagicAddStaticAction(final MagicStatic aStatic) {
+    public AddStaticAction(final MagicStatic aStatic) {
         this(MagicPermanent.NONE, aStatic);
     }
 
