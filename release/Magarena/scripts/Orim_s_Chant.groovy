@@ -13,7 +13,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
-                game.doAction(new MagicChangePlayerStateAction(it, MagicPlayerState.CantCastSpells));
+                game.doAction(new ChangePlayerAction(it, MagicPlayerState.CantCastSpells));
                 if (event.isKicked()) {
                     CREATURE.filter(game) each {
                         game.doAction(new MagicGainAbilityAction(it, MagicAbility.CannotAttack));
