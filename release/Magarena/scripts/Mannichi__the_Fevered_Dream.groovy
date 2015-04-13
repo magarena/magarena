@@ -23,7 +23,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             CREATURE.filter(game) each {
-                game.doAction(new MagicAddStaticAction(it,MagicStatic.SwitchPT));
+                game.doAction(new AddStaticAction(it,MagicStatic.SwitchPT));
             }
         }
     }

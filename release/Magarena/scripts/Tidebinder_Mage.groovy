@@ -18,7 +18,7 @@ def choice = new MagicTargetChoice("target red or green creature an opponent con
             event.processTargetPermanent(game, {
                 final MagicPermanent source = event.getPermanent();
                 game.doAction(new MagicTapAction(it));
-                game.doAction(new MagicAddStaticAction(
+                game.doAction(new AddStaticAction(
                     source, 
                     MagicStatic.AsLongAsCond(
                         it, 

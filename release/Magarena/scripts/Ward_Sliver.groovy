@@ -14,7 +14,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicColor color = event.getChosenColor();
             final MagicAbility protection = color.getProtectionAbility();
-            game.doAction(new MagicAddStaticAction(event.getPermanent(), new MagicStatic(
+            game.doAction(new AddStaticAction(event.getPermanent(), new MagicStatic(
                 MagicLayer.Ability,
                 SLIVER) {
                     @Override

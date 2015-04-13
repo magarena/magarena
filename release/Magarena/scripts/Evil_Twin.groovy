@@ -60,7 +60,7 @@ def GainAct = new MagicStatic(MagicLayer.Ability) {
                     game.doAction(new MagicEnterAsCopyAction(event.getCardOnStack(), it, {
                         final MagicPermanent perm ->
                         final MagicGame G = perm.getGame();
-                        G.doAction(new MagicAddStaticAction(
+                        G.doAction(new AddStaticAction(
                             perm,
                             GainAct
                         ));

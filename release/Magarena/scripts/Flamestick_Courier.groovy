@@ -27,11 +27,11 @@ def choice = Positive("target goblin creature");
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
                 final MagicPermanent source = event.getPermanent();
-                game.doAction(new MagicAddStaticAction(
+                game.doAction(new AddStaticAction(
                     source, 
                     MagicStatic.AsLongAsCond(it, 2, 2, MagicCondition.TAPPED_CONDITION)
                 ));
-                game.doAction(new MagicAddStaticAction(
+                game.doAction(new AddStaticAction(
                     source, 
                     MagicStatic.AsLongAsCond(it, MagicAbility.Haste, MagicCondition.TAPPED_CONDITION)
                 ));

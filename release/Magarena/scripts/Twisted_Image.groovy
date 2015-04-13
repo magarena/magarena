@@ -13,7 +13,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                game.doAction(new MagicAddStaticAction(it,MagicStatic.SwitchPT));
+                game.doAction(new AddStaticAction(it,MagicStatic.SwitchPT));
                 game.doAction(new MagicDrawAction(event.getPlayer()));
             });
         }

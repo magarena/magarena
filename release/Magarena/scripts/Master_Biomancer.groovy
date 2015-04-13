@@ -14,7 +14,7 @@ def MUTANT = new MagicStatic(MagicLayer.Type) {
 
                 final int amount = permanent.getPower();
                 game.doAction(new MagicChangeCountersAction(otherPermanent,MagicCounterType.PlusOne,amount));
-                game.doAction(new MagicAddStaticAction(otherPermanent,MUTANT));
+                game.doAction(new AddStaticAction(otherPermanent,MUTANT));
                 game.logAppendMessage(
                     permanent.getController(),
                     "${otherPermanent.getName()} enters the battlefield with an additional ${amount} +1/+1 counters on it, " + 

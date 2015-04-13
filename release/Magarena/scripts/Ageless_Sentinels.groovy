@@ -29,8 +29,8 @@ def AB = new MagicStatic(MagicLayer.Ability) {
        @Override
        public void executeEvent(final MagicGame game, final MagicEvent event) {
            final MagicPermanent permanent = event.getPermanent();
-           game.doAction(new MagicAddStaticAction(permanent, ST));
-           game.doAction(new MagicAddStaticAction(permanent, AB));
+           game.doAction(new AddStaticAction(permanent, ST));
+           game.doAction(new AddStaticAction(permanent, AB));
        }
    }
 ]

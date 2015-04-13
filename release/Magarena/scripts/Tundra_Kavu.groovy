@@ -51,8 +51,8 @@ def ST4 = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                game.doAction(new MagicAddStaticAction(it, ST1));
-                game.doAction(new MagicAddStaticAction(it, ST2));
+                game.doAction(new AddStaticAction(it, ST1));
+                game.doAction(new AddStaticAction(it, ST2));
             });
         }
     },
@@ -76,8 +76,8 @@ def ST4 = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                game.doAction(new MagicAddStaticAction(it, ST3));
-                game.doAction(new MagicAddStaticAction(it, ST4));
+                game.doAction(new AddStaticAction(it, ST3));
+                game.doAction(new AddStaticAction(it, ST4));
             });
         }
     }

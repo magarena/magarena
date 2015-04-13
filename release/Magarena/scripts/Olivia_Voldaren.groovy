@@ -26,7 +26,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
                 game.doAction(new MagicDealDamageAction(event.getSource(),it,1));
-                game.doAction(new MagicAddStaticAction(it, MagicStatic.Vampire));
+                game.doAction(new AddStaticAction(it, MagicStatic.Vampire));
                 game.doAction(new MagicChangeCountersAction(event.getPermanent(),MagicCounterType.PlusOne,1));
             });
         }
@@ -55,7 +55,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                game.doAction(new MagicAddStaticAction(
+                game.doAction(new AddStaticAction(
                     event.getPermanent(), 
                     MagicStatic.ControlAsLongAsYouControlSource(event.getPlayer(),it)
                 ));

@@ -38,8 +38,8 @@ def nonartifact = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                game.doAction(new MagicAddStaticAction(it,blue));
-                game.doAction(new MagicAddStaticAction(it,nonartifact));
+                game.doAction(new AddStaticAction(it,blue));
+                game.doAction(new AddStaticAction(it,nonartifact));
             });
         }
     }

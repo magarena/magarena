@@ -44,7 +44,7 @@
         }
         @Override
         public void executeEvent(final MagicGame outerGame, final MagicEvent event) {
-            outerGame.doAction(new MagicAddStaticAction(
+            outerGame.doAction(new AddStaticAction(
                 new MagicStatic(
                     MagicLayer.ModPT,
                     ANY
@@ -59,7 +59,7 @@
                     }
                 }
             ));
-            outerGame.doAction(new MagicAddStaticAction(
+            outerGame.doAction(new AddStaticAction(
                 new MagicStatic(
                     MagicLayer.Ability,
                     ANY

@@ -14,7 +14,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                game.doAction(new MagicAddStaticAction(
+                game.doAction(new AddStaticAction(
                     event.getPermanent(),
                     MagicStatic.AsLongAsCond(
                         it, 

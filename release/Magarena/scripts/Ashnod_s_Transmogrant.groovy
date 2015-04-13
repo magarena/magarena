@@ -32,7 +32,7 @@ def choice = Positive("target nonartifact creature");
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                game.doAction(new MagicAddStaticAction(it,type));
+                game.doAction(new AddStaticAction(it,type));
                 game.doAction(new MagicChangeCountersAction(it,MagicCounterType.PlusOne,1));
             });
         }

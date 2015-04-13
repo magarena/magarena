@@ -53,7 +53,7 @@
         @Override
         public void executeEvent(final MagicGame outerGame, final MagicEvent outerEvent) {
             final MagicPlayer you = outerEvent.getPlayer();
-            outerGame.doAction(new MagicAddStaticAction(
+            outerGame.doAction(new AddStaticAction(
                 new MagicStatic(MagicLayer.Player) {
                     @Override
                     public void modPlayer(final MagicPermanent source, final MagicPlayer player) {

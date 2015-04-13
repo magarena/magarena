@@ -52,8 +52,8 @@ def AB = new MagicStatic(MagicLayer.Ability) {
             if (event.isYes()) {
                 event.processTargetPermanent(game, {
                     game.doAction(new MagicChangeCountersAction(it,MagicCounterType.Feather,1));
-                    game.doAction(new MagicAddStaticAction(it, PT));
-                    game.doAction(new MagicAddStaticAction(it, AB));
+                    game.doAction(new AddStaticAction(it, PT));
+                    game.doAction(new AddStaticAction(it, AB));
                 });
             }
         }

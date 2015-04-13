@@ -25,7 +25,7 @@ def type = new MagicStatic(MagicLayer.Type) {
                     game.doAction(new MagicEnterAsCopyAction(event.getCardOnStack(), it, {
                         final MagicPermanent perm ->
                         final MagicGame G = perm.getGame();
-                        G.doAction(new MagicAddStaticAction(perm, type));
+                        G.doAction(new AddStaticAction(perm, type));
                     }));
                 });
             } else {

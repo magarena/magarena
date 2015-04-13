@@ -34,11 +34,11 @@ def ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             CREATURE.filter(game) each {
-                game.doAction(new MagicAddStaticAction(it, Color));
+                game.doAction(new AddStaticAction(it, Color));
             }
             LAND.filter(game) each {
-                game.doAction(new MagicAddStaticAction(it, AB));
-                game.doAction(new MagicAddStaticAction(it, ST));
+                game.doAction(new AddStaticAction(it, AB));
+                game.doAction(new AddStaticAction(it, ST));
             }
         }
     }

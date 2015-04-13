@@ -38,8 +38,8 @@ def ST = new MagicStatic(MagicLayer.Type) {
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processRefPermanent(game, {
                 game.doAction(new MagicChangeCountersAction(it,MagicCounterType.Gold,1));
-                game.doAction(new MagicAddStaticAction(it, AB));
-                game.doAction(new MagicAddStaticAction(it, ST));
+                game.doAction(new AddStaticAction(it, AB));
+                game.doAction(new AddStaticAction(it, ST));
             });
         }
     },
