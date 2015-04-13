@@ -4,12 +4,12 @@ import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.mstatic.MagicStatic;
 
-public class MagicBecomesCreatureAction extends MagicAction {
+public class BecomesCreatureAction extends MagicAction {
 
     private final MagicPermanent permanent;
     private final MagicStatic[] mstatics;
 
-    public MagicBecomesCreatureAction(final MagicPermanent aPermanent,final MagicStatic... aMstatics) {
+    public BecomesCreatureAction(final MagicPermanent aPermanent,final MagicStatic... aMstatics) {
         permanent = aPermanent;
         mstatics = aMstatics;
     }
