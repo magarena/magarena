@@ -29,7 +29,7 @@
                 final MagicPlayer player = event.getPlayer()
                 final int amount = player.getDomain();
                 game.logAppendMessage(player," (X="+amount+")");
-                game.doAction(new MagicPreventDamageAction(it,amount));
+                game.doAction(new PreventDamageAction(it,amount));
             });
         }
     }

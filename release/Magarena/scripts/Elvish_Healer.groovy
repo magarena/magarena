@@ -25,7 +25,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTarget(game, {
                 final int amount = (it.isCreature() && it.hasColor(MagicColor.Green)) ? 2 : 1;
-                game.doAction(new MagicPreventDamageAction(it,amount));
+                game.doAction(new PreventDamageAction(it,amount));
             });
         }
     }

@@ -23,7 +23,7 @@
                 });
             } else if (event.isMode(2)) {
                 event.processTarget(game, {
-                game.doAction(new MagicPreventDamageAction(it,X));
+                game.doAction(new PreventDamageAction(it,X));
                 });
             }
         }

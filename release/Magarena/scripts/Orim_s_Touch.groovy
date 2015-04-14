@@ -15,7 +15,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTarget(game, {
                 final int amount = event.isKicked() ? 4 : 2;
-                game.doAction(new MagicPreventDamageAction(it,amount));
+                game.doAction(new PreventDamageAction(it,amount));
             });
         }
     }

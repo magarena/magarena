@@ -23,7 +23,7 @@
             final Collection<MagicPermanent> targets=
                 game.filterPermanents(event.getPlayer(),CREATURE_YOU_CONTROL);
             for (final MagicPermanent creature : targets) {
-                game.doAction(new MagicPreventDamageAction(creature,1));
+                game.doAction(new PreventDamageAction(creature,1));
             }
         }
     }
