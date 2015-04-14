@@ -770,11 +770,16 @@ public enum MagicAbility {
             ));
         }
     },
-    EachPump("SN gets " + ARG.PT + " for each " + ARG.WORDRUN + "\\.", 0) {
+    EachPump("SN gets " + ARG.PT + " for each (?<other>other )?" + ARG.WORDRUN + "\\.", 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final MagicPowerToughness pt = ARG.mpt(arg);
-            final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.singlePermanent(ARG.wordrun(arg));
-            card.add(MagicStatic.genSelfPTStatic(filter, pt));
+            final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.multiple(ARG.wordrun(arg));
+            final boolean other = arg.group("other") != null; 
+            if (other) {
+                card.add(MagicStatic.genSelfPTStaticOther(filter, pt));
+            } else {
+                card.add(MagicStatic.genSelfPTStatic(filter, pt));
+            }
         }
     },
     ConditionPumpGainUnless("SN (gets " + ARG.PT + " )?(and )?(" + ARG.ANY + " )?unless " + ARG.WORDRUN + "\\.", 0) {
