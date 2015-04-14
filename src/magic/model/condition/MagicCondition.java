@@ -725,4 +725,13 @@ public interface MagicCondition {
             return permanent.hasState(MagicPermanentState.CastFromHand);
         }
     };
+    
+    MagicCondition WAS_NONCREATURE_ARTIFACT = new MagicCondition() {
+        public boolean accept(final MagicSource source) {
+            final MagicPermanent permanent=(MagicPermanent)source;
+            return permanent.getCardDefinition().hasType(MagicType.Artifact) && 
+                    permanent.getCardDefinition().hasType(MagicType.Creature)==false; 
+        }
+    };
+    
 }
