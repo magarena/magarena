@@ -9,7 +9,7 @@ import magic.model.action.MagicCardAction;
 import magic.model.action.PlayCardAction;
 import magic.model.action.MagicPlayMod;
 import magic.model.action.RemoveCardAction;
-import magic.model.action.MagicShuffleLibraryAction;
+import magic.model.action.ShuffleLibraryAction;
 import magic.model.action.AIRevealAction;
 import magic.model.action.MagicPermanentAction;
 import magic.model.choice.MagicChoice;
@@ -63,7 +63,7 @@ public class MagicSearchOntoBattlefieldEvent extends MagicEvent {
                             game.doAction(new PlayCardAction(card,event.getPlayer(),mods));
                         }
                     });
-                    game.doAction(new MagicShuffleLibraryAction(event.getPlayer()));
+                    game.doAction(new ShuffleLibraryAction(event.getPlayer()));
                 } else {
                     event.processTargetCard(game, new MagicCardAction() {
                         public void doAction(final MagicCard card) {
@@ -72,7 +72,7 @@ public class MagicSearchOntoBattlefieldEvent extends MagicEvent {
                             game.doAction(new PlayCardAction(card,event.getPlayer(),mods));
                         }
                     });
-                    game.doAction(new MagicShuffleLibraryAction(event.getPlayer()));
+                    game.doAction(new ShuffleLibraryAction(event.getPlayer()));
                 }
             }
         };

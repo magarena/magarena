@@ -8,7 +8,7 @@ import magic.model.MagicSource;
 import magic.model.action.MagicCardAction;
 import magic.model.action.MoveCardAction;
 import magic.model.action.RemoveCardAction;
-import magic.model.action.MagicShuffleLibraryAction;
+import magic.model.action.ShuffleLibraryAction;
 import magic.model.action.AIRevealAction;
 import magic.model.choice.MagicChoice;
 import magic.model.choice.MagicCardChoiceResult;
@@ -44,7 +44,7 @@ public class MagicSearchToLocationEvent extends MagicEvent {
             if (event.isNo()) {
                 game.doAction(AIRevealAction.Hide(event.getPlayer().getLibrary()));
             } else if (event.getChosen()[0] instanceof MagicCardChoiceResult) {
-                game.doAction(new MagicShuffleLibraryAction(event.getPlayer()));
+                game.doAction(new ShuffleLibraryAction(event.getPlayer()));
                 event.processChosenCards(game, new MagicCardAction() {
                     public void doAction(final MagicCard card) {
                         game.logAppendMessage(event.getPlayer(), "Found (" + card + ").");
@@ -54,7 +54,7 @@ public class MagicSearchToLocationEvent extends MagicEvent {
                     }
                 });
             } else {
-                game.doAction(new MagicShuffleLibraryAction(event.getPlayer()));
+                game.doAction(new ShuffleLibraryAction(event.getPlayer()));
                 event.processTargetCard(game, new MagicCardAction() {
                     public void doAction(final MagicCard card) {
                         game.logAppendMessage(event.getPlayer(), "Found (" + card + ").");
