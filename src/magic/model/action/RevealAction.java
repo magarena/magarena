@@ -11,15 +11,15 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
-public class MagicRevealAction extends MagicAction {
+public class RevealAction extends MagicAction {
     
     private final List<MagicCard> cards = new ArrayList<MagicCard>();
 
-    public MagicRevealAction(final MagicCard aCard) {
+    public RevealAction(final MagicCard aCard) {
         cards.add(aCard);
     }
 
-    public MagicRevealAction(final Collection<MagicCard> aCards) {
+    public RevealAction(final Collection<MagicCard> aCards) {
         cards.addAll(aCards);
     }
 

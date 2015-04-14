@@ -10,7 +10,7 @@ import magic.model.MagicPlayer;
 import magic.model.action.MoveCardAction;
 import magic.model.action.PlayCardAction;
 import magic.model.action.RemoveCardAction;
-import magic.model.action.MagicRevealAction;
+import magic.model.action.RevealAction;
 import magic.model.event.MagicEvent;
 
 public abstract class MagicWhenPutIntoGraveyardTrigger extends MagicTrigger<MoveCardAction> {
@@ -38,7 +38,7 @@ public abstract class MagicWhenPutIntoGraveyardTrigger extends MagicTrigger<Move
     public static final MagicWhenPutIntoGraveyardTrigger LibraryInsteadOfGraveyard = new MagicWhenPutIntoGraveyardTrigger(MagicTrigger.REPLACEMENT) {
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MoveCardAction act) {
-            game.doAction(new MagicRevealAction(act.getCard()));
+            game.doAction(new RevealAction(act.getCard()));
             act.setToLocation(MagicLocationType.OwnersLibrary);
             return MagicEvent.NONE;
         }

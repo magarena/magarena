@@ -8,7 +8,7 @@ import magic.model.MagicCard;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSourceEvent;
 import magic.model.event.MagicEventAction;
-import magic.model.action.MagicRevealAction;
+import magic.model.action.RevealAction;
 import magic.model.action.LookAction;
 import magic.model.choice.MagicMayChoice;
 
@@ -40,7 +40,7 @@ public abstract class MagicAtYourUpkeepTrigger extends MagicAtUpkeepTrigger {
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
                     if (event.isYes()) {
                         final MagicCard card = event.getRefCard();
-                        game.doAction(new MagicRevealAction(event.getRefCard()));
+                        game.doAction(new RevealAction(event.getRefCard()));
                         action.executeEvent(game, event);
                     }
                 }
