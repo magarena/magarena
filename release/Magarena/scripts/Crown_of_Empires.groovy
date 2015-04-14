@@ -32,7 +32,7 @@
             final MagicPlayer player = source.getController();
             if (player.controlsPermanent(throne) && player.controlsPermanent(scepter)){
                 event.processTargetPermanent(game, {
-                    game.doAction(new MagicGainControlAction(
+                    game.doAction(new GainControlAction(
                         player,
                         it
                     ));

@@ -18,7 +18,7 @@
             if (event.isYes()) {
                 event.processTargetPermanent(game, {
                     game.addEvent(new MagicExileEvent(it));
-                    game.doAction(new MagicGainControlAction(it.getController(),event.getPermanent()));
+                    game.doAction(new GainControlAction(it.getController(),event.getPermanent()));
                 });
             }
         }

@@ -24,7 +24,7 @@
                 final MagicPlayer player ->
                 CREATURE_YOU_OWN.filter(player) each {
                     final MagicPermanent permanent ->
-                    game.doAction(new MagicGainControlAction(player, permanent));
+                    game.doAction(new GainControlAction(player, permanent));
                 }
             }
         }

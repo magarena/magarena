@@ -18,7 +18,7 @@
         @Override
         public void executeEvent(final MagicGame game,final MagicEvent event) {
             if (event.isYes()) {
-                game.doAction(new MagicGainControlAction(event.getPlayer(),event.getPermanent()));
+                game.doAction(new GainControlAction(event.getPlayer(),event.getPermanent()));
             }
         }
     }

@@ -25,7 +25,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
                 event.processTargetPermanent(game, {
-                    game.doAction(new MagicGainControlAction(
+                    game.doAction(new GainControlAction(
                         event.getPlayer(),
                         it,
                         MagicStatic.UntilEOT

@@ -27,7 +27,7 @@ def choice = Negative("target Sliver");
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                game.doAction(new MagicGainControlAction(
+                game.doAction(new GainControlAction(
                     event.getPlayer(),
                     it
                 ));

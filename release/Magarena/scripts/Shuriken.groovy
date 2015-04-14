@@ -20,7 +20,7 @@ def public MagicPermanentActivation ThrowIt(final MagicPermanent source) {
             event.processTarget(game,{
                 game.doAction(new DealDamageAction(source,it,2));
                 if (!event.getPermanent().hasSubType(MagicSubType.Ninja)) {
-                    game.doAction(new MagicGainControlAction(it.getController(),source,MagicStatic.Forever));
+                    game.doAction(new GainControlAction(it.getController(),source,MagicStatic.Forever));
                 }
             });
         }   

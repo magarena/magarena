@@ -18,7 +18,7 @@
             if (event.getPlayer().controlsPermanent(MagicType.Land) && event.isYes()) {
                 game.addEvent(new MagicSacrificePermanentEvent(event.getPermanent(),event.getPlayer(),SACRIFICE_LAND));
             } else {
-                game.doAction(new MagicGainControlAction(
+                game.doAction(new GainControlAction(
                     event.getPlayer().getOpponent(),
                     event.getPermanent()
                 ));

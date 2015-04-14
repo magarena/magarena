@@ -22,8 +22,8 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                game.doAction(new MagicGainControlAction(event.getPlayer(),it));
-                game.doAction(new MagicGainControlAction(it.getController(),event.getPermanent()));
+                game.doAction(new GainControlAction(event.getPlayer(),it));
+                game.doAction(new GainControlAction(it.getController(),event.getPermanent()));
             });
         }
     }

@@ -59,7 +59,7 @@ def AN_UNTAPPED_DRUID_YOU_CONTROL = new MagicTargetChoice(UNTAPPED_DRUID_YOU_CON
             event.processTargetPlayer(game, {
                 LAND_YOU_CONTROL.filter(it) each {
                     final MagicPermanent land ->
-                    game.doAction(new MagicGainControlAction(event.getPlayer(),land));
+                    game.doAction(new GainControlAction(event.getPlayer(),land));
                 }
             });
         }

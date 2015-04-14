@@ -13,7 +13,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.getPlayer().getOpponent().getLife() > event.getPlayer().getLife()) {
-                game.doAction(new MagicGainControlAction(event.getPlayer().getOpponent(), event.getPermanent()));
+                game.doAction(new GainControlAction(event.getPlayer().getOpponent(), event.getPermanent()));
             }
         }
     }

@@ -25,7 +25,7 @@ def choice = Negative("target legendary permanent");
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                game.doAction(new MagicGainControlAction(event.getPlayer(),it));
+                game.doAction(new GainControlAction(event.getPlayer(),it));
             });
         }
     }
