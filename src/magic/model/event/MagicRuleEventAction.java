@@ -2237,7 +2237,7 @@ public enum MagicRuleEventAction {
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    game.doAction(new MagicMillLibraryAction(event.getPlayer(), amount));
+                    game.doAction(new MillLibraryAction(event.getPlayer(), amount));
                 }
             };
         }
@@ -2255,7 +2255,7 @@ public enum MagicRuleEventAction {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
                     for (final MagicPlayer player : game.filterPlayers(event.getPlayer(), filter)) {
-                        game.doAction(new MagicMillLibraryAction(player, amount));
+                        game.doAction(new MillLibraryAction(player, amount));
                     }
                 }
             };
@@ -2274,7 +2274,7 @@ public enum MagicRuleEventAction {
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
                     event.processTargetPlayer(game,new MagicPlayerAction() {
                         public void doAction(final MagicPlayer player) {
-                            game.doAction(new MagicMillLibraryAction(player,amount));
+                            game.doAction(new MillLibraryAction(player,amount));
                         }
                     });
                 }

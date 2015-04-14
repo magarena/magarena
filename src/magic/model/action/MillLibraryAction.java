@@ -9,13 +9,13 @@ import magic.model.MagicPlayer;
 
 import java.util.List;
 
-public class MagicMillLibraryAction extends MagicAction {
+public class MillLibraryAction extends MagicAction {
 
     private final MagicPlayer player;
     private final int amount;
     private final MagicCardList milledCards = new MagicCardList();
 
-    public MagicMillLibraryAction(final MagicPlayer aPlayer,final int aAmount) {
+    public MillLibraryAction(final MagicPlayer aPlayer,final int aAmount) {
         player = aPlayer;
         amount = aAmount;
     }
