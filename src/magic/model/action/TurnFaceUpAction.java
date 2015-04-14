@@ -9,13 +9,13 @@ import magic.model.trigger.MagicTriggerType;
 import java.util.Collections;
 import java.util.Collection;
 
-public class MagicTurnFaceUpAction extends MagicAction {
+public class TurnFaceUpAction extends MagicAction {
 
     public final MagicPermanent permanent;
     private Collection<MagicStatic> oldStatics = Collections.emptyList();
     private Collection<MagicStatic> newStatics = Collections.emptyList();
 
-    public MagicTurnFaceUpAction(final MagicPermanent aPermanent) {
+    public TurnFaceUpAction(final MagicPermanent aPermanent) {
         permanent = aPermanent;
     }
 
