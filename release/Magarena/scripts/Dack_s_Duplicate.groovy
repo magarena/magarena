@@ -15,7 +15,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
                 event.processTargetPermanent(game, {
-                    game.doAction(new MagicEnterAsCopyAction(event.getCardOnStack(), it, {
+                    game.doAction(new EnterAsCopyAction(event.getCardOnStack(), it, {
                         final MagicPermanent perm ->
                         final MagicGame G = perm.getGame();
                         G.doAction(new MagicGainAbilityAction(perm,MagicAbility.Haste, MagicStatic.Forever));
