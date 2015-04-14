@@ -9,7 +9,7 @@ import magic.model.event.MagicEvent;
 import magic.model.event.MagicSourceEvent;
 import magic.model.event.MagicEventAction;
 import magic.model.action.MagicRevealAction;
-import magic.model.action.MagicLookAction;
+import magic.model.action.LookAction;
 import magic.model.choice.MagicMayChoice;
 
 public abstract class MagicAtYourUpkeepTrigger extends MagicAtUpkeepTrigger {
@@ -58,7 +58,7 @@ public abstract class MagicAtYourUpkeepTrigger extends MagicAtUpkeepTrigger {
             @Override
             public void executeEvent(final MagicGame game, final MagicEvent event) {
                 for (final MagicCard card : event.getPlayer().getLibrary().getCardsFromTop(1)) {
-                    game.doAction(new MagicLookAction(card, event.getPlayer(), "top card of your library"));
+                    game.doAction(new LookAction(card, event.getPlayer(), "top card of your library"));
                     for (final MagicSubType st : MagicSubType.ALL_CREATURES) {
                         if (card.hasSubType(st) && event.getPermanent().hasSubType(st)) {
                             game.addEvent(new MagicEvent(

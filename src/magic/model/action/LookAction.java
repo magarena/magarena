@@ -11,19 +11,19 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
-public class MagicLookAction extends MagicAction {
+public class LookAction extends MagicAction {
     
     private final List<MagicCard> cards = new ArrayList<MagicCard>();
     private final MagicPlayer player;
     private final String desc;
 
-    public MagicLookAction(final MagicCard aCard, final MagicPlayer aPlayer, final String aDesc) {
+    public LookAction(final MagicCard aCard, final MagicPlayer aPlayer, final String aDesc) {
         cards.add(aCard);
         player = aPlayer;
         desc = aDesc;
     }
 
-    public MagicLookAction(final Collection<MagicCard> aCards, final MagicPlayer aPlayer, final String aDesc) {
+    public LookAction(final Collection<MagicCard> aCards, final MagicPlayer aPlayer, final String aDesc) {
         cards.addAll(aCards);
         player = aPlayer;
         desc = aDesc;
