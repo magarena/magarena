@@ -21,7 +21,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
                 event.processTargetCard(game, {
-                    game.doAction(new MagicReanimateAction(
+                    game.doAction(new ReanimateAction(
                         it,
                         event.getPlayer()
                     ));

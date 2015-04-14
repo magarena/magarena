@@ -24,7 +24,7 @@
             event.processTargetPlayer(game, {
                 final MagicCardList cards = new MagicCardList(game.filterCards(it,CREATURE_CARD_FROM_GRAVEYARD));
                 for (final MagicCard card : cards.getRandomCards(1)) {
-                    game.doAction(new MagicReanimateAction(
+                    game.doAction(new ReanimateAction(
                         card,
                         event.getPlayer()
                     ));

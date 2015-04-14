@@ -19,7 +19,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
-                game.doAction(new MagicReanimateAction(event.getRefCard(), event.getPlayer(), [MagicPlayMod.ZOMBIE]));
+                game.doAction(new ReanimateAction(event.getRefCard(), event.getPlayer(), [MagicPlayMod.ZOMBIE]));
             }
         }
     }

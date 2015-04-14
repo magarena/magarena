@@ -14,7 +14,7 @@
                     event.getPlayer(),
                     ENCHANTMENT_CARD_FROM_GRAVEYARD);
             for (final MagicCard card : targets) {
-                game.doAction(new MagicReanimateAction(card,event.getPlayer()));
+                game.doAction(new ReanimateAction(card,event.getPlayer()));
             }
         }
     }

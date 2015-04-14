@@ -19,7 +19,7 @@
                     CARD_FROM_GRAVEYARD);
             for (final MagicCard card : cards) {
                 if (card.getName().equals(event.getSource().getName())) {
-                    game.doAction(new MagicReanimateAction(
+                    game.doAction(new ReanimateAction(
                         card,
                         event.getPlayer()
                     ));

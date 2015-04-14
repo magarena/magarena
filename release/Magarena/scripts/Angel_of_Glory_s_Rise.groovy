@@ -15,7 +15,7 @@
                 game.doAction(new MagicRemoveFromPlayAction(it, MagicLocationType.Exile));
             }
             game.filterCards(player, HUMAN_CREATURE_CARD_FROM_GRAVEYARD) each {
-                game.doAction(new MagicReanimateAction(it, player));
+                game.doAction(new ReanimateAction(it, player));
             }
         }
     }

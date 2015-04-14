@@ -19,7 +19,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicCard card = event.getRefCard();
             if (card.isInGraveyard()) {
-                game.doAction(new MagicReanimateAction(
+                game.doAction(new ReanimateAction(
                     card,
                     event.getPlayer()
                 ));

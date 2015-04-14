@@ -13,7 +13,7 @@
             final List<MagicCard> graveyard=
                 game.filterCards(event.getPlayer(),BASIC_LAND_CARD_FROM_ALL_GRAVEYARDS);
             for (final MagicCard card : graveyard) {
-                game.doAction(new MagicReanimateAction(card,card.getOwner(),[MagicPlayMod.TAPPED]));
+                game.doAction(new ReanimateAction(card,card.getOwner(),[MagicPlayMod.TAPPED]));
             }
         }
     }

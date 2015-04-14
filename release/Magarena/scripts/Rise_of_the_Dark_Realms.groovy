@@ -16,7 +16,7 @@
                 CREATURE_CARD_FROM_ALL_GRAVEYARDS
             );
             for (final MagicCard card : targets) {
-                game.doAction(new MagicReanimateAction(card,player));
+                game.doAction(new ReanimateAction(card,player));
             }
         }
     }

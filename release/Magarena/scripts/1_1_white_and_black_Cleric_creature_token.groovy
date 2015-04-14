@@ -26,7 +26,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.filterCards(event.getPlayer(), CARD_FROM_GRAVEYARD) each {
                 if (it.getName().equals("Deathpact Angel")) {
-                    game.doAction(new MagicReanimateAction(it, event.getPlayer()));
+                    game.doAction(new ReanimateAction(it, event.getPlayer()));
                     break;
                 }
             }

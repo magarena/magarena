@@ -29,7 +29,7 @@
                 CREATURE_CARD_FROM_ALL_GRAVEYARDS
             );
             for (final MagicCard card : targets) {
-                game.doAction(new MagicReanimateAction(
+                game.doAction(new ReanimateAction(
                     card, 
                     player, 
                     [MagicPlayMod.BLACK, MagicPlayMod.ZOMBIE]

@@ -21,7 +21,7 @@
             );
             for (final MagicCard card : targets) {
                 if (card.getConvertedCost() == amount){
-                    game.doAction(new MagicReanimateAction(
+                    game.doAction(new ReanimateAction(
                         card, 
                         player
                     ));

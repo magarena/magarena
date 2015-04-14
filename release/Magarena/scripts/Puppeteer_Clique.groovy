@@ -15,7 +15,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetCard(game, {
-                game.doAction(new MagicReanimateAction(
+                game.doAction(new ReanimateAction(
                     it,
                     event.getPlayer(),
                     [MagicPlayMod.HASTE, MagicPlayMod.EXILE_AT_END_OF_YOUR_TURN]

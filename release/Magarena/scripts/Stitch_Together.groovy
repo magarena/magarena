@@ -21,7 +21,7 @@
             final MagicPlayer player = event.getPlayer();
             event.processTargetCard(game, {
                 if (MagicCondition.THRESHOLD_CONDITION.accept(event.getSource())) {
-                    game.doAction(new MagicReanimateAction(
+                    game.doAction(new ReanimateAction(
                         it,
                         player
                     ));

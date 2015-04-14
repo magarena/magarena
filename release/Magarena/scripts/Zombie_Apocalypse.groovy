@@ -16,7 +16,7 @@
             final List<MagicCard> zombies =
                     game.filterCards(player,ZOMBIE_CREATURE_CARD_FROM_GRAVEYARD);
             for (final MagicCard target : zombies) {
-                game.doAction(new MagicReanimateAction(
+                game.doAction(new ReanimateAction(
                     target,
                     player,
                     [MagicPlayMod.TAPPED]

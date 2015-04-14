@@ -16,7 +16,7 @@
             final MagicPlayer player = event.getPlayer();
             for (final MagicCard card : player.getGraveyard().getRandomCards(1)) {
                 if (card.hasType(MagicType.Creature)) {
-                    game.doAction(new MagicReanimateAction(
+                    game.doAction(new ReanimateAction(
                         card,
                         player
                     ));

@@ -32,7 +32,7 @@
                     card.hasType(MagicType.Creature) &&
                     (card.getPower() <= event.getPermanent().getPower())
                 ) {
-                    game.doAction(new MagicReanimateAction(card,event.getPlayer()));
+                    game.doAction(new ReanimateAction(card,event.getPlayer()));
                     game.logAppendMessage(event.getPlayer()," put onto the Battlefield.")
                 }
             }

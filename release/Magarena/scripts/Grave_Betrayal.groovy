@@ -19,7 +19,7 @@ def DelayedTrigger = {
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicReanimateAction(
+            game.doAction(new ReanimateAction(
                 event.getRefCard(),
                 event.getPlayer(),
                 [MagicPlayMod.UNDYING, MagicPlayMod.BLACK, MagicPlayMod.ZOMBIE]
