@@ -5,7 +5,7 @@ import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.model.trigger.MagicTriggerType;
 
-public class MagicLoseGameAction extends MagicAction {
+public class LoseGameAction extends MagicAction {
 
     public static final String LIFE_REASON = " lost the game.";
     public static final String POISON_REASON = " lost the game because of poisoning.";
@@ -15,12 +15,12 @@ public class MagicLoseGameAction extends MagicAction {
     private MagicPlayer player;
     private MagicPlayer oldLosingPlayer = MagicPlayer.NONE;
 
-    public MagicLoseGameAction(final MagicPlayer aPlayer,final String aReason) {
+    public LoseGameAction(final MagicPlayer aPlayer,final String aReason) {
         player = aPlayer;
         reason = aReason;
     }
     
-    public MagicLoseGameAction(final MagicPlayer aPlayer) {
+    public LoseGameAction(final MagicPlayer aPlayer) {
         this(aPlayer, LIFE_REASON);
     }
     

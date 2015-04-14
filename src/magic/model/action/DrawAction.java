@@ -35,7 +35,7 @@ public class DrawAction extends MagicAction {
         for (int count=amount;count>0;count--) {
             if (library.isEmpty()) {
                 if (MagicGame.LOSE_DRAW_EMPTY_LIBRARY) {
-                    game.doAction(new MagicLoseGameAction(player,MagicLoseGameAction.DRAW_REASON));
+                    game.doAction(new LoseGameAction(player,LoseGameAction.DRAW_REASON));
                 }
                 break;
             }

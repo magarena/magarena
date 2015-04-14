@@ -1,8 +1,8 @@
 package magic.model.trigger;
 
-import magic.model.action.MagicLoseGameAction;
+import magic.model.action.LoseGameAction;
 
-public abstract class MagicIfPlayerWouldLoseTrigger extends MagicTrigger<MagicLoseGameAction> {
+public abstract class MagicIfPlayerWouldLoseTrigger extends MagicTrigger<LoseGameAction> {
     public MagicIfPlayerWouldLoseTrigger(final int priority) {
         super(priority);
     }

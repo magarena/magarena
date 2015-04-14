@@ -5,7 +5,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Set;
 import java.util.TreeSet;
-import magic.model.action.MagicLoseGameAction;
+import magic.model.action.LoseGameAction;
 import magic.model.choice.MagicBuilderManaCost;
 import magic.model.event.MagicActivationPriority;
 import magic.model.event.MagicSourceActivation;
@@ -749,10 +749,10 @@ public class MagicPlayer extends MagicObjectImpl implements MagicTarget, MagicMa
 
     public void generateStateBasedActions() {
         if (getLife() <= 0) {
-            currGame.addDelayedAction(new MagicLoseGameAction(this,MagicLoseGameAction.LIFE_REASON));
+            currGame.addDelayedAction(new LoseGameAction(this,LoseGameAction.LIFE_REASON));
         }
         if (getPoison() >= LOSING_POISON) {
-            currGame.addDelayedAction(new MagicLoseGameAction(this,MagicLoseGameAction.POISON_REASON));
+            currGame.addDelayedAction(new LoseGameAction(this,LoseGameAction.POISON_REASON));
         }
     }
 
