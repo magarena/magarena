@@ -10,7 +10,7 @@ def ABILITY2 = MagicRuleEventAction.create("Put a 2/2 green Wolf creature token 
         }
         @Override
         public void modGame(final MagicPermanent source, final MagicGame game) {
-            game.doAction(new MagicPutStateTriggerOnStackAction(
+            game.doAction(new PutStateTriggerOnStackAction(
                  EFFECT.getEvent(source)
             ));               
         }

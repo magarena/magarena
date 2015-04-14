@@ -8,7 +8,7 @@ def EFFECT = MagicRuleEventAction.create("Sacrifice SN.");
         }
         @Override
         public void modGame(final MagicPermanent source, final MagicGame game) {
-            game.doAction(new MagicPutStateTriggerOnStackAction(
+            game.doAction(new PutStateTriggerOnStackAction(
                 EFFECT.getEvent(source)
             ));
         }

@@ -15,7 +15,7 @@ def action = {
         }
         @Override
         public void modGame(final MagicPermanent source, final MagicGame game) {
-            game.doAction(new MagicPutStateTriggerOnStackAction(new MagicEvent(
+            game.doAction(new PutStateTriggerOnStackAction(new MagicEvent(
                 source,
                 action,
                 "Sacrifice SN and put a legendary 20/20 black Avatar creature token with flying and indestructible named Marit Lage onto the battlefield."
