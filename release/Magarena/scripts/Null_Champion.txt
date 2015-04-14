@@ -6,7 +6,8 @@ type=Creature
 subtype=Zombie,Warrior
 cost={1}{B}
 pt=1/1
-ability=level up {3} 4
+ability=level up {3} 4;\
+        {B}: Regenerate SN. Activate this ability only if SN has four or more level counters on it.
 timing=main
 requires_groovy_code
 oracle=Level up {3}. LEVEL 1-3. 4/2. LEVEL 4+. 7/3. {B}: Regenerate Null Champion.
