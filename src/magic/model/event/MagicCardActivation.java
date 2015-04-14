@@ -11,7 +11,7 @@ import magic.model.MagicPermanent;
 import magic.model.MagicManaCost;
 import magic.model.MagicCostManaType;
 import magic.model.action.PlayCardAction;
-import magic.model.action.MagicPutItemOnStackAction;
+import magic.model.action.PutItemOnStackAction;
 import magic.model.action.MagicRemoveCardAction;
 import magic.model.choice.MagicChoice;
 import magic.model.condition.MagicCondition;
@@ -87,7 +87,7 @@ public class MagicCardActivation extends MagicActivation<MagicCard> implements M
                         game.getPayedCost()
                     );
                     cardOnStack.setFromLocation(fromLocation);
-                    game.doAction(new MagicPutItemOnStackAction(cardOnStack));
+                    game.doAction(new PutItemOnStackAction(cardOnStack));
                 } else {
                     game.doAction(new PlayCardAction(card,card.getController()));
                 }

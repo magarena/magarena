@@ -7,7 +7,7 @@ import magic.model.MagicPayedCost;
 import magic.model.MagicSource;
 import magic.model.action.MagicPlayMod;
 import magic.model.action.MagicReanimateAction;
-import magic.model.action.MagicPutItemOnStackAction;
+import magic.model.action.PutItemOnStackAction;
 import magic.model.choice.MagicChoice;
 import magic.model.condition.MagicCondition;
 import magic.model.stack.MagicAbilityOnStack;
@@ -45,7 +45,7 @@ public class MagicUnearthActivation extends MagicGraveyardActivation {
                         MagicUnearthActivation.this,
                         getCardEvent(event.getCard(), game.getPayedCost())
                     );
-                    game.doAction(new MagicPutItemOnStackAction(abilityOnStack));
+                    game.doAction(new PutItemOnStackAction(abilityOnStack));
                 }
             },
             "Unearth SN."

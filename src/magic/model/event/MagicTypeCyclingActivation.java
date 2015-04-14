@@ -7,7 +7,7 @@ import magic.model.MagicPayedCost;
 import magic.model.MagicLocationType;
 import magic.model.MagicPermanent;
 import magic.model.MagicSource;
-import magic.model.action.MagicPutItemOnStackAction;
+import magic.model.action.PutItemOnStackAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.stack.MagicAbilityOnStack;
 import magic.model.trigger.MagicTrigger;

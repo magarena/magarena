@@ -6,7 +6,7 @@ import magic.model.MagicManaCost;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.action.MoveCardAction;
-import magic.model.action.MagicPutItemOnStackAction;
+import magic.model.action.PutItemOnStackAction;
 import magic.model.action.MagicRemoveCardAction;
 import magic.model.choice.MagicMayChoice;
 import magic.model.choice.MagicPayManaCostChoice;
@@ -48,7 +48,7 @@ public class MagicMadnessTrigger extends MagicWhenPutIntoGraveyardTrigger {
         if (event.isYes()) {
             final MagicCardOnStack cardOnStack=new MagicCardOnStack(event.getCard(),event.getPlayer(),MagicPayedCost.NO_COST);
             cardOnStack.setFromLocation(MagicLocationType.Exile);
-            game.doAction(new MagicPutItemOnStackAction(cardOnStack));
+            game.doAction(new PutItemOnStackAction(cardOnStack));
         } else {
             game.doAction(new MoveCardAction(event.getCard(),MagicLocationType.Exile,MagicLocationType.Graveyard));
         }

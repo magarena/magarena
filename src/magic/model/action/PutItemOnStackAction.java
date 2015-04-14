@@ -6,11 +6,11 @@ import magic.model.event.MagicSpellCastEvent;
 import magic.model.event.MagicStackGetChoicesEvent;
 import magic.model.stack.MagicItemOnStack;
 
-public class MagicPutItemOnStackAction extends MagicAction {
+public class PutItemOnStackAction extends MagicAction {
 
     private final MagicItemOnStack itemOnStack;
 
-    public MagicPutItemOnStackAction(final MagicItemOnStack itemOnStack) {
+    public PutItemOnStackAction(final MagicItemOnStack itemOnStack) {
         this.itemOnStack=itemOnStack;
     }
 

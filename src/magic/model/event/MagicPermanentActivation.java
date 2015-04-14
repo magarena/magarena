@@ -12,7 +12,7 @@ import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.ARG;
 import magic.model.action.AddStaticAction;
-import magic.model.action.MagicPutItemOnStackAction;
+import magic.model.action.PutItemOnStackAction;
 import magic.model.choice.MagicChoice;
 import magic.model.condition.MagicCondition;
 import magic.model.mstatic.MagicStatic;
@@ -90,7 +90,7 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
                 permanent,
                 game.getPayedCost()
             );
-            game.doAction(new MagicPutItemOnStackAction(abilityOnStack));
+            game.doAction(new PutItemOnStackAction(abilityOnStack));
         }
     };
 

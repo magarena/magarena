@@ -8,7 +8,7 @@ import magic.model.action.AddFirstEventAction;
 import magic.model.action.ExecuteFirstEventAction;
 import magic.model.action.LogMarkerAction;
 import magic.model.action.MarkerAction;
-import magic.model.action.MagicPutItemOnStackAction;
+import magic.model.action.PutItemOnStackAction;
 import magic.model.action.MagicRemoveFromPlayAction;
 import magic.model.choice.MagicCombatCreature;
 import magic.model.choice.MagicDeclareAttackersResult;
@@ -1362,12 +1362,12 @@ public class MagicGame {
             if (event.hasChoice()) {
                 // ignore
             } else if (trigger.usesStack()) {
-                doAction(new MagicPutItemOnStackAction(new MagicTriggerOnStack(event)));
+                doAction(new PutItemOnStackAction(new MagicTriggerOnStack(event)));
             } else {
                 executeEvent(event, MagicEvent.NO_CHOICE_RESULTS);
             }
         } else if (trigger.usesStack()) {
-            doAction(new MagicPutItemOnStackAction(new MagicTriggerOnStack(event)));
+            doAction(new PutItemOnStackAction(new MagicTriggerOnStack(event)));
         } else {
             addEvent(event);
         }

@@ -10,7 +10,7 @@ import magic.model.MagicSubType;
 import magic.model.MagicType;
 import magic.model.action.MagicPermanentAction;
 import magic.model.action.PlayCardFromStackAction;
-import magic.model.action.MagicPutItemOnStackAction;
+import magic.model.action.PutItemOnStackAction;
 import magic.model.action.MagicRemoveCardAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
@@ -100,7 +100,7 @@ public class MagicBestowActivation extends MagicCardActivation {
                 }
             };
 
-            game.doAction(new MagicPutItemOnStackAction(cardOnStack));
+            game.doAction(new PutItemOnStackAction(cardOnStack));
         }
     };
 }

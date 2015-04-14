@@ -31,7 +31,7 @@ public class CastFreeCopyAction extends MagicAction {
             MagicPayedCost.NO_COST
         );
         cardOnStack.setFromLocation(MagicLocationType.Exile);
-        game.doAction(new MagicPutItemOnStackAction(cardOnStack));
+        game.doAction(new PutItemOnStackAction(cardOnStack));
     }
 
     @Override

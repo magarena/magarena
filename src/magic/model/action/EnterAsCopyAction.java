@@ -43,7 +43,7 @@ public class EnterAsCopyAction extends MagicAction {
         );
         replacement.setFromLocation(cardOnStack.getFromLocation());
         
-        game.doAction(new MagicPutItemOnStackAction(replacement));
+        game.doAction(new PutItemOnStackAction(replacement));
     }
 
     @Override

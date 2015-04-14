@@ -17,7 +17,7 @@ import magic.model.MagicPayedCost;
 import magic.model.condition.MagicCondition;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.action.MagicPlayMod;
-import magic.model.action.MagicPutItemOnStackAction;
+import magic.model.action.PutItemOnStackAction;
 import magic.model.action.MagicRemoveCardAction;
 import magic.model.action.PlayCardFromStackAction;
 
@@ -92,7 +92,7 @@ public class MagicMorphCastActivation extends MagicCardActivation {
                 }
             };
 
-            game.doAction(new MagicPutItemOnStackAction(cardOnStack));
+            game.doAction(new PutItemOnStackAction(cardOnStack));
         }
     };
     

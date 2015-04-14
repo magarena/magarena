@@ -5,7 +5,7 @@ import magic.model.MagicGame;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.action.ChangeCountersAction;
-import magic.model.action.MagicPutItemOnStackAction;
+import magic.model.action.PutItemOnStackAction;
 import magic.model.choice.MagicMayChoice;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicEventAction;
@@ -27,7 +27,7 @@ public abstract class MagicTributeTrigger extends MagicWhenComesIntoPlayTrigger 
                     event.getRefInt()
                 ));
             } else {
-                game.doAction(new MagicPutItemOnStackAction(new MagicTriggerOnStack(getEvent(permanent))));
+                game.doAction(new PutItemOnStackAction(new MagicTriggerOnStack(getEvent(permanent))));
             }
         }
     };

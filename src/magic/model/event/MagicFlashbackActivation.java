@@ -5,7 +5,7 @@ import magic.model.MagicCardDefinition;
 import magic.model.MagicGame;
 import magic.model.MagicLocationType;
 import magic.model.MagicSource;
-import magic.model.action.MagicPutItemOnStackAction;
+import magic.model.action.PutItemOnStackAction;
 import magic.model.action.MagicRemoveCardAction;
 import magic.model.stack.MagicCardOnStack;
 
@@ -55,6 +55,6 @@ public class MagicFlashbackActivation extends MagicGraveyardActivation {
         );
         cardOnStack.setFromLocation(MagicLocationType.Graveyard);
         cardOnStack.setMoveLocation(MagicLocationType.Exile);
-        game.doAction(new MagicPutItemOnStackAction(cardOnStack));
+        game.doAction(new PutItemOnStackAction(cardOnStack));
     }
 }

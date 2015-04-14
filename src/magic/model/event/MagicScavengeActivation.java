@@ -11,7 +11,7 @@ import magic.model.MagicPermanent;
 import magic.model.MagicSource;
 import magic.model.action.ChangeCountersAction;
 import magic.model.action.MagicPermanentAction;
-import magic.model.action.MagicPutItemOnStackAction;
+import magic.model.action.PutItemOnStackAction;
 import magic.model.choice.MagicChoice;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
@@ -55,7 +55,7 @@ public class MagicScavengeActivation extends MagicGraveyardActivation {
                         MagicScavengeActivation.this,
                         getCardEvent(event.getCard(), game.getPayedCost())
                     );
-                    game.doAction(new MagicPutItemOnStackAction(abilityOnStack));
+                    game.doAction(new PutItemOnStackAction(abilityOnStack));
                 }
             },
             "Scavenge SN."

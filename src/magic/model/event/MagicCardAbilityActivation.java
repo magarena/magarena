@@ -7,7 +7,7 @@ import magic.model.MagicSource;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicLocationType;
 import magic.model.ARG;
-import magic.model.action.MagicPutItemOnStackAction;
+import magic.model.action.PutItemOnStackAction;
 import magic.model.choice.MagicChoice;
 import magic.model.condition.MagicCondition;
 import magic.model.stack.MagicAbilityOnStack;
@@ -45,7 +45,7 @@ public abstract class MagicCardAbilityActivation extends MagicCardActivation {
                         MagicCardAbilityActivation.this,
                         getCardEvent(event.getCard(), game.getPayedCost())
                     );
-                    game.doAction(new MagicPutItemOnStackAction(abilityOnStack));
+                    game.doAction(new PutItemOnStackAction(abilityOnStack));
                 }
             },
             name + " SN."

@@ -9,7 +9,7 @@ import magic.model.MagicPayedCost;
 import magic.model.stack.MagicAbilityOnStack;
 import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicTriggerType;
-import magic.model.action.MagicPutItemOnStackAction;
+import magic.model.action.PutItemOnStackAction;
 
 import java.util.Arrays;
 
@@ -54,7 +54,7 @@ public class MagicCyclingActivation extends MagicCardAbilityActivation {
                         MagicCyclingActivation.this,
                         getCardEvent(card, game.getPayedCost())
                     );
-                    game.doAction(new MagicPutItemOnStackAction(abilityOnStack));
+                    game.doAction(new PutItemOnStackAction(abilityOnStack));
                     game.executeTrigger(MagicTriggerType.WhenOtherCycle, card);
                     for (final MagicTrigger<MagicCard> trigger : card.getCardDefinition().getCycleTriggers()) {
                         game.executeTrigger(
