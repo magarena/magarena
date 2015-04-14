@@ -18,7 +18,7 @@
                         it,
                         MagicPermanentState.CannotBeRegenerated
                     ));
-                    game.doAction(new MagicDestroyAction(it));
+                    game.doAction(new DestroyAction(it));
                 } else {
                     game.doAction(new ChangeTurnPTAction(it,-1,-1));
                 }

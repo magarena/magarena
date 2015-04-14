@@ -17,7 +17,7 @@
             for (final MagicPermanent target : targets) {
                 game.doAction(ChangeStateAction.Set(target,MagicPermanentState.CannotBeRegenerated));
             }
-            game.doAction(new MagicDestroyAction(targets));
+            game.doAction(new DestroyAction(targets));
             if (MagicCondition.THRESHOLD_CONDITION.accept(event.getSource())) {
                 game.doAction(new MagicPlayTokensAction(
                     event.getPlayer(),

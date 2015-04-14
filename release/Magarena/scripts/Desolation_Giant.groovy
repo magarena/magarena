@@ -16,11 +16,11 @@
             if (event.getRefInt() == 1) {
                 final MagicTargetFilter<MagicPermanent> targetFilterkicked = CREATURE.except(event.getPermanent());
                 final Collection<MagicPermanent> targetsKicked = game.filterPermanents(targetFilterkicked);
-                game.doAction(new MagicDestroyAction(targetsKicked));
+                game.doAction(new DestroyAction(targetsKicked));
             } else {
                 final MagicTargetFilter<MagicPermanent> targetFilterNotkicked = CREATURE_YOU_CONTROL.except(event.getPermanent());
                 final Collection<MagicPermanent> targetsNotKicked = game.filterPermanents(event.getPlayer(),targetFilterNotkicked);
-                game.doAction(new MagicDestroyAction(targetsNotKicked));
+                game.doAction(new DestroyAction(targetsNotKicked));
             }
         }
     }

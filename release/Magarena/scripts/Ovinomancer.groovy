@@ -50,7 +50,7 @@ def choice = new MagicTargetChoice("a basic land you control");
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
                 game.doAction(ChangeStateAction.Set(it,MagicPermanentState.CannotBeRegenerated));
-                game.doAction(new MagicDestroyAction(it));
+                game.doAction(new DestroyAction(it));
                 game.doAction(new MagicPlayTokenAction(
                     it.getController(),
                     TokenCardDefinitions.get("0/1 green Sheep creature token")

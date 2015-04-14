@@ -18,7 +18,7 @@
                 final Collection<MagicPermanent> targets =
                     game.filterPermanents(event.getPlayer(),targetFilter);
                 for (final MagicPermanent target : targets) {
-                    game.doAction(new MagicDestroyAction(target));
+                    game.doAction(new DestroyAction(target));
                 }
             });
         }

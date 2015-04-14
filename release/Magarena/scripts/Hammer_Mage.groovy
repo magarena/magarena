@@ -31,7 +31,7 @@
                     event.getRefInt()
                 )
             );
-            game.doAction(new MagicDestroyAction(targets));
+            game.doAction(new DestroyAction(targets));
         }
     }
 ]

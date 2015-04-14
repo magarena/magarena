@@ -20,7 +20,7 @@
                 event.getRefPermanent(),
                 MagicPermanentState.CannotBeRegenerated
             ));
-            game.doAction(new MagicDestroyAction(event.getRefPermanent()));
+            game.doAction(new DestroyAction(event.getRefPermanent()));
         }
     }
 ]

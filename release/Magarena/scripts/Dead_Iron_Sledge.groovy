@@ -18,8 +18,8 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPermanent creature = event.getRefPermanent();
-            game.doAction(new MagicDestroyAction(creature));
-            game.doAction(new MagicDestroyAction(event.getPermanent().getEquippedCreature()));
+            game.doAction(new DestroyAction(creature));
+            game.doAction(new DestroyAction(event.getPermanent().getEquippedCreature()));
         }
     }
 ]

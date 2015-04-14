@@ -14,7 +14,7 @@
             event.processTargetPlayer(game, {
                 final Collection<MagicPermanent> targets=
                     game.filterPermanents(it,CREATURE_YOU_CONTROL);
-                final MagicDestroyAction destroy = new MagicDestroyAction(targets);
+                final DestroyAction destroy = new DestroyAction(targets);
                 game.doAction(destroy);
                 game.doAction(new MagicDrawAction(event.getPlayer(),destroy.getNumDestroyed()));
             });

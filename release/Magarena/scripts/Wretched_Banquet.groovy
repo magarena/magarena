@@ -24,7 +24,7 @@
                     }
                 }
                 if (least) {
-                    game.doAction(new MagicDestroyAction(it));
+                    game.doAction(new DestroyAction(it));
                 }
             });
         }

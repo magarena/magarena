@@ -32,7 +32,7 @@ def makeFilter = {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final int fuse = event.getPermanent().getCounters(MagicCounterType.Fuse);
-            game.doAction(new MagicDestroyAction(game.filterPermanents(makeFilter(fuse))));
+            game.doAction(new DestroyAction(game.filterPermanents(makeFilter(fuse))));
         }
     }
 ]

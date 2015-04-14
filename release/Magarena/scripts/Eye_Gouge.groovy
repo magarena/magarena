@@ -15,7 +15,7 @@
             event.processTargetPermanent(game, {
                 game.doAction(new ChangeTurnPTAction(it,-1,-1));
                 if (it.hasSubType(MagicSubType.Cyclops)) {
-                    game.doAction(new MagicDestroyAction(it));
+                    game.doAction(new DestroyAction(it));
                 }
             });
         }

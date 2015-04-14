@@ -5,7 +5,7 @@ def action = {
         game.addEvent(new MagicPayLifeEvent(event.getSource(), event.getPlayer(), toughness));
     } else {
         game.doAction(ChangeStateAction.Set(event.getRefPermanent(), MagicPermanentState.CannotBeRegenerated));
-        game.doAction(new MagicDestroyAction(event.getRefPermanent()));
+        game.doAction(new DestroyAction(event.getRefPermanent()));
     }
 }
 

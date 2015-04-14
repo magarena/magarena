@@ -31,7 +31,7 @@ def OPP_FOUR_LANDS_CONDITION=new MagicCondition() {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                game.doAction(new MagicDestroyAction(it));
+                game.doAction(new DestroyAction(it));
             });
         }
     }

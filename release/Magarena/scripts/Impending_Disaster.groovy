@@ -16,7 +16,7 @@
                 game.doAction(new MagicSacrificeAction(event.getPermanent()));
                 final Collection<MagicPermanent> lands = game.filterPermanents(LAND);
                 for (final MagicPermanent land : lands) {
-                    game.doAction(new MagicDestroyAction(land));
+                    game.doAction(new DestroyAction(land));
                 }
             }
         }

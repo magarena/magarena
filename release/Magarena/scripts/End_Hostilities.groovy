@@ -17,7 +17,7 @@
                 perms.addAll(creature.getEquipmentPermanents());
                 perms.addAll(creature.getAuraPermanents());
             }
-            game.doAction(new MagicDestroyAction(perms));
+            game.doAction(new DestroyAction(perms));
         }
     }
 ]

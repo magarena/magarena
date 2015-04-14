@@ -26,7 +26,7 @@ def TARGET_NONARTIFACT_CREATURE_YOU_CONTROL = new MagicTargetChoice(
         public void executeEvent(final MagicGame game, final MagicEvent event) {
              event.processTargetPermanent(game, {
                 game.doAction(ChangeStateAction.Set(it,MagicPermanentState.CannotBeRegenerated));
-                game.doAction(new MagicDestroyAction(it));
+                game.doAction(new DestroyAction(it));
             });
         }
     }

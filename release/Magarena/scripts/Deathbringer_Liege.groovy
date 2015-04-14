@@ -21,7 +21,7 @@
             if (event.isYes()) {
                 event.processTargetPermanent(game, {
                     if (it.isTapped()) {
-                        game.doAction(new MagicDestroyAction(it));
+                        game.doAction(new DestroyAction(it));
                     }
                 });
             }

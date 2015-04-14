@@ -17,7 +17,7 @@
             if (x >= 5) {
                 final Collection<MagicPermanent> targets = game.filterPermanents(player,CREATURE);
                 for (final MagicPermanent target : targets) {
-                    game.doAction(new MagicDestroyAction(target));
+                    game.doAction(new DestroyAction(target));
                 }
             }
             game.doAction(new MagicPlayTokensAction(

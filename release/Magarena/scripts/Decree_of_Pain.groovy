@@ -14,7 +14,7 @@
             for (final MagicPermanent target : targets) {
                 game.doAction(ChangeStateAction.Set(target,MagicPermanentState.CannotBeRegenerated));
             }
-            final MagicDestroyAction destroy = new MagicDestroyAction(targets);         
+            final DestroyAction destroy = new DestroyAction(targets);         
             game.doAction(destroy); 
             game.doAction(new MagicDrawAction(event.getPlayer(),destroy.getNumDestroyed()));
         }

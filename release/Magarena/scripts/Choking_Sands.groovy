@@ -15,7 +15,7 @@ def choice = Negative("target non-Swamp land");
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                game.doAction(new MagicDestroyAction(it));
+                game.doAction(new DestroyAction(it));
                 if (it.isBasic() == false) {
                     game.doAction(new DealDamageAction(
                         event.getSource(),

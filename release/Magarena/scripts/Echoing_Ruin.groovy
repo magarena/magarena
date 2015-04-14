@@ -20,7 +20,7 @@
                 );
                 targetFilter.filter(game) each {
                     final MagicPermanent permanent ->
-                    game.doAction(new MagicDestroyAction(permanent));
+                    game.doAction(new DestroyAction(permanent));
                 }
             });
         }

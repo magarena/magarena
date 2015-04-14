@@ -20,7 +20,7 @@
                     it,
                     MagicPermanentState.CannotBeRegenerated
                 ));
-                game.doAction(new MagicDestroyAction(it));
+                game.doAction(new DestroyAction(it));
                 game.doAction(new MagicPlayTokenAction(
                     controller,
                     TokenCardDefinitions.get("1/1 white Spirit creature token with flying")

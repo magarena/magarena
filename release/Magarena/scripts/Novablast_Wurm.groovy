@@ -15,7 +15,7 @@
                 permanent.getController(),
                 CREATURE.except(permanent)
             );
-            game.doAction(new MagicDestroyAction(targets));
+            game.doAction(new DestroyAction(targets));
         }
     }
 ]

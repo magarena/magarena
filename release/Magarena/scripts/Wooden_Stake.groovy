@@ -19,7 +19,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPermanent creature = event.getRefPermanent();
             game.doAction(ChangeStateAction.Set(creature,MagicPermanentState.CannotBeRegenerated));
-            game.doAction(new MagicDestroyAction(creature));
+            game.doAction(new DestroyAction(creature));
         }
     }
 ]

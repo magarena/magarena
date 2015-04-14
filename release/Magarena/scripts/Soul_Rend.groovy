@@ -18,7 +18,7 @@
                         it,
                         MagicPermanentState.CannotBeRegenerated
                     ));
-                    game.doAction(new MagicDestroyAction(it));
+                    game.doAction(new DestroyAction(it));
                 };
                 game.doAction(new AddTriggerAction(
                     MagicAtUpkeepTrigger.YouDraw(

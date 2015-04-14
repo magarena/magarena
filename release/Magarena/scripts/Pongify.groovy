@@ -20,7 +20,7 @@
                     it,
                     MagicPermanentState.CannotBeRegenerated
                 ));
-                game.doAction(new MagicDestroyAction(it));
+                game.doAction(new DestroyAction(it));
                 game.doAction(new MagicPlayTokenAction(
                     controller,
                     TokenCardDefinitions.get("3/3 green Ape creature token")

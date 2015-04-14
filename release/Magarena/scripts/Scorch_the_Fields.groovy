@@ -15,7 +15,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                game.doAction(new MagicDestroyAction(it));
+                game.doAction(new DestroyAction(it));
                 HUMAN_CREATURE.filter(game) each {
                     final MagicPermanent target ->
                     game.doAction(new DealDamageAction(event.getSource(),target,1));

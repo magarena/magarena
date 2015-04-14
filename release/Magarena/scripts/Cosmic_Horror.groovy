@@ -16,7 +16,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isNo()) {
-                final MagicDestroyAction act = new MagicDestroyAction(event.getPermanent());
+                final DestroyAction act = new DestroyAction(event.getPermanent());
                 game.doAction(act);
                 if (act.isDestroyed()) {
                     game.doAction(new DealDamageAction(event.getSource(),event.getPlayer(),7));

@@ -18,7 +18,7 @@
             final MagicSacrificeAction sac = new MagicSacrificeAction(event.getPermanent());
             game.doAction(sac);
             if (sac.isValid()) {
-                game.doAction(new MagicDestroyAction(event.getRefPermanent()));
+                game.doAction(new DestroyAction(event.getRefPermanent()));
             }
         }
     }

@@ -50,7 +50,7 @@
                 event.getPlayer(),
                 NONLAND_NONTOKEN_PERMANENT.except(event.getPermanent())
             );
-            game.doAction(new MagicDestroyAction(targets));
+            game.doAction(new DestroyAction(targets));
         }
     }
 ]

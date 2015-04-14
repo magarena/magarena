@@ -32,7 +32,7 @@
                 }
             }
             final List<MagicPermanent> destroyEnchantment = game.filterPermanents(player, ENCHANTMENT_YOU_CONTROL);
-            game.doAction(new MagicDestroyAction(destroyEnchantment));
+            game.doAction(new DestroyAction(destroyEnchantment));
             final List<MagicPermanent> destroyAura = game.filterPermanents(player, AURA);
             for (final MagicPermanent permanent : destroyAura) {
                 final MagicPermanent enchantedPermanent = permanent.getEnchantedPermanent();
@@ -42,7 +42,7 @@
                             (enchantedPermanent.isCreature() && enchantedPermanent.isAttacking())
                         )
                     ) {
-                    game.doAction(new MagicDestroyAction(permanent));
+                    game.doAction(new DestroyAction(permanent));
                 }
             }
         }

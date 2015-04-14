@@ -15,7 +15,7 @@ def choice = Negative("target Plains or Island");
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                game.doAction(new MagicDestroyAction(it));
+                game.doAction(new DestroyAction(it));
                 game.doAction(new DealDamageAction(event.getSource(),it.getController(),3));
             });
         }

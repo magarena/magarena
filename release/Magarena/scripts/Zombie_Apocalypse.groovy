@@ -24,7 +24,7 @@
             }
             final List<MagicPermanent> humans =
                     game.filterPermanents(player,HUMAN);
-            game.doAction(new MagicDestroyAction(humans));
+            game.doAction(new DestroyAction(humans));
         }
     }
 ]

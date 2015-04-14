@@ -28,7 +28,7 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicDestroyAction(
+            game.doAction(new DestroyAction(
                 game.filterPermanents(CREATURE_POWER_4_OR_MORE)
             ));
         }

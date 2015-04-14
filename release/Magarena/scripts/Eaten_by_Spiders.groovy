@@ -17,7 +17,7 @@
                 final MagicPermanentList perms = new MagicPermanentList();
                 perms.add(it);
                 perms.addAll(it.getEquipmentPermanents());
-                game.doAction(new MagicDestroyAction(perms));
+                game.doAction(new DestroyAction(perms));
             });
         }
     }

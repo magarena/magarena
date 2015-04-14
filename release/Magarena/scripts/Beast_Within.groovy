@@ -13,7 +13,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                game.doAction(new MagicDestroyAction(it));
+                game.doAction(new DestroyAction(it));
                 game.doAction(new MagicPlayTokenAction(
                     it.getController(),
                     TokenCardDefinitions.get("3/3 green Beast creature token")

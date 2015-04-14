@@ -32,7 +32,7 @@ def NONLAND_PERMANENT_WITHOUT_FATE_COUNTER = new MagicPermanentFilterImpl() {
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final Collection<MagicPermanent> targets = 
             game.filterPermanents(NONLAND_PERMANENT_WITHOUT_FATE_COUNTER);
-                game.doAction(new MagicDestroyAction(targets));
+                game.doAction(new DestroyAction(targets));
                 final List<MagicPermanent> permanents = game.filterPermanents(PERMANENT);
                 for (final MagicPermanent permanent : permanents) {   
                     game.doAction(new ChangeCountersAction(
