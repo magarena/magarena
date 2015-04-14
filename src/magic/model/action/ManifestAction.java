@@ -6,12 +6,12 @@ import magic.model.MagicGame;
 import magic.model.MagicLocationType;
 import magic.model.MagicPlayer;
 
-public class MagicManifestAction extends MagicAction {
+public class ManifestAction extends MagicAction {
 
     private final MagicPlayer player;
     private final int amount;
 
-    public MagicManifestAction(final MagicPlayer aPlayer,final int aAmount) {
+    public ManifestAction(final MagicPlayer aPlayer,final int aAmount) {
         player = aPlayer;
         amount = aAmount;
     }
