@@ -5,7 +5,7 @@ import magic.model.action.MagicAction;
 import magic.model.action.MagicActionList;
 import magic.model.action.AddEventAction;
 import magic.model.action.AddFirstEventAction;
-import magic.model.action.MagicExecuteFirstEventAction;
+import magic.model.action.ExecuteFirstEventAction;
 import magic.model.action.MagicLogMarkerAction;
 import magic.model.action.MagicMarkerAction;
 import magic.model.action.MagicPutItemOnStackAction;
@@ -811,11 +811,11 @@ public class MagicGame {
     }
 
     public void executeNextEvent(final Object[] choiceResults) {
-        doAction(new MagicExecuteFirstEventAction(choiceResults));
+        doAction(new ExecuteFirstEventAction(choiceResults));
     }
 
     public void executeNextEvent() {
-        doAction(new MagicExecuteFirstEventAction(MagicEvent.NO_CHOICE_RESULTS));
+        doAction(new ExecuteFirstEventAction(MagicEvent.NO_CHOICE_RESULTS));
     }
 
     public MagicDuel getDuel() {

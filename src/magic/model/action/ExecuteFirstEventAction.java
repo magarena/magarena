@@ -3,12 +3,12 @@ package magic.model.action;
 import magic.model.MagicGame;
 import magic.model.event.MagicEvent;
 
-public class MagicExecuteFirstEventAction extends MagicAction {
+public class ExecuteFirstEventAction extends MagicAction {
 
     private final Object[] choiceResults;
     private MagicEvent firstEvent;
 
-    public MagicExecuteFirstEventAction(final Object[] aChoiceResults) {
+    public ExecuteFirstEventAction(final Object[] aChoiceResults) {
         choiceResults = aChoiceResults;
     }
 
