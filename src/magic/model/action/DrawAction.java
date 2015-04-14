@@ -12,17 +12,17 @@ import magic.model.trigger.MagicTriggerType;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MagicDrawAction extends MagicAction {
+public class DrawAction extends MagicAction {
 
     private final MagicPlayer player;
     private final int amount;
     private List<MagicCard> drawnCards;
 
-    public MagicDrawAction(final MagicPlayer player) {
+    public DrawAction(final MagicPlayer player) {
         this(player, 1);
     }
 
-    public MagicDrawAction(final MagicPlayer player,final int amount) {
+    public DrawAction(final MagicPlayer player,final int amount) {
         this.player=player;
         this.amount=amount;
     }

@@ -629,7 +629,7 @@ public enum MagicRuleEventAction {
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    game.doAction(new MagicDrawAction(event.getPlayer(), amount));
+                    game.doAction(new DrawAction(event.getPlayer(), amount));
                     game.doAction(new ChangeLifeAction(event.getPlayer(), -amount2));
                 }
             };
@@ -646,7 +646,7 @@ public enum MagicRuleEventAction {
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    game.doAction(new MagicDrawAction(ARG.youPlayer(event, matcher), amount));
+                    game.doAction(new DrawAction(ARG.youPlayer(event, matcher), amount));
                 }
             };
         }
@@ -684,7 +684,7 @@ public enum MagicRuleEventAction {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
                     for (final MagicPlayer player : game.filterPlayers(event.getPlayer(), filter)) {
-                        game.doAction(new MagicDrawAction(player, amount));
+                        game.doAction(new DrawAction(player, amount));
                     }
                 }
             };
@@ -748,7 +748,7 @@ public enum MagicRuleEventAction {
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
                     event.processTargetPlayer(game,new MagicPlayerAction() {
                         public void doAction(final MagicPlayer player) {
-                            game.doAction(new MagicDrawAction(player,amount));
+                            game.doAction(new DrawAction(player,amount));
                         }
                     });
                 }
@@ -767,7 +767,7 @@ public enum MagicRuleEventAction {
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    game.doAction(new MagicDrawAction(ARG.youPlayer(event, matcher), amount1));
+                    game.doAction(new DrawAction(ARG.youPlayer(event, matcher), amount1));
                     game.addEvent(new MagicDiscardEvent(event.getSource(), ARG.youPlayer(event, matcher), amount2));
                 }
             };
@@ -787,7 +787,7 @@ public enum MagicRuleEventAction {
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
                     event.processTargetPlayer(game,new MagicPlayerAction() {
                         public void doAction(final MagicPlayer player) {
-                            game.doAction(new MagicDrawAction(player, amount1));
+                            game.doAction(new DrawAction(player, amount1));
                             game.addEvent(new MagicDiscardEvent(event.getSource(), player, amount2));
                         }
                     });

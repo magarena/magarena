@@ -3,7 +3,7 @@ package magic.model.trigger;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
-import magic.model.action.MagicDrawAction;
+import magic.model.action.DrawAction;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSourceEvent;
 

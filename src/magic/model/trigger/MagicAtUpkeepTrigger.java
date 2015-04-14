@@ -4,7 +4,7 @@ import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
-import magic.model.action.MagicDrawAction;
+import magic.model.action.DrawAction;
 import magic.model.action.MagicRemoveTriggerAction;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSourceEvent;
@@ -42,7 +42,7 @@ public abstract class MagicAtUpkeepTrigger extends MagicTrigger<MagicPlayer> {
             }
             @Override
             public void executeEvent(final MagicGame game, final MagicEvent event) {
-                game.doAction(new MagicDrawAction(event.getPlayer()));
+                game.doAction(new DrawAction(event.getPlayer()));
             }
         }; 
     }

@@ -2,7 +2,7 @@ package magic.model.phase;
 
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
-import magic.model.action.MagicDrawAction;
+import magic.model.action.DrawAction;
 import magic.model.event.MagicExcludeEvent;
 import magic.model.trigger.MagicTriggerType;
 
@@ -27,7 +27,7 @@ public class MagicDrawPhase extends MagicPhase {
         }
 
         final MagicPlayer player=game.getTurnPlayer();
-        game.doAction(new MagicDrawAction(player));
+        game.doAction(new DrawAction(player));
 
         game.executeTrigger(MagicTriggerType.AtDraw,game.getTurnPlayer());
 
