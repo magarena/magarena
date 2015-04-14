@@ -20,7 +20,7 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicRegenerateAction(event.getRefPermanent()));
+            game.doAction(new RegenerateAction(event.getRefPermanent()));
         }
     }
 ]

@@ -19,7 +19,7 @@
                     it,
                     MagicAbility.Deathtouch
                 ));
-                game.doAction(new MagicRegenerateAction(it));
+                game.doAction(new RegenerateAction(it));
             });
         }
     }

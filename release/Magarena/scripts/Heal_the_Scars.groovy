@@ -13,7 +13,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                game.doAction(new MagicRegenerateAction(it));
+                game.doAction(new RegenerateAction(it));
                 game.doAction(new ChangeLifeAction(event.getPlayer(),it.getToughness()));
             });
         }
