@@ -16,7 +16,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isNo()) {
-                game.doAction(new MagicSacrificeAction(event.getPermanent()));
+                game.doAction(new SacrificeAction(event.getPermanent()));
             } else {
                 event.processTargetPermanent(game, {
                     game.doAction(new RemoveFromPlayAction(it,MagicLocationType.OwnersHand));

@@ -20,7 +20,7 @@
             if (event.isYes()) {
                 game.doAction(new ChangeLifeAction(event.getPlayer(),-2 * event.getPermanent().getCounters(MagicCounterType.Age)));
             } else {
-                game.doAction(new MagicSacrificeAction(event.getPermanent()));
+                game.doAction(new SacrificeAction(event.getPermanent()));
             }
         }
     },

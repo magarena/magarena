@@ -1,7 +1,7 @@
 def action = {
     final MagicGame game, final MagicEvent event ->
     event.processTargetPermanent(game, {
-        game.doAction(new MagicSacrificeAction(it));
+        game.doAction(new SacrificeAction(it));
         if (it.hasSubType(MagicSubType.Goblin)){
             for (int i = 0; i < 2; i++) {
                 game.doAction(new PlayTokenAction(

@@ -15,7 +15,7 @@
             if (event.getPlayer().controlsPermanent(MagicType.Artifact) && event.isYes()) {
                 game.addEvent(new MagicSacrificePermanentEvent(perm,event.getPlayer(),SACRIFICE_ARTIFACT));
             } else {
-                game.doAction(new MagicSacrificeAction(perm));
+                game.doAction(new SacrificeAction(perm));
             }
         }
     }

@@ -31,7 +31,7 @@
                     ));
                 }
             } else {
-                game.doAction(new MagicSacrificeAction(event.getPermanent()));
+                game.doAction(new SacrificeAction(event.getPermanent()));
                 for (final MagicCard card : new MagicCardList(event.getPlayer().getLibrary())) {
                     game.doAction(new RemoveCardAction(card, MagicLocationType.OwnersLibrary));
                     game.doAction(new MoveCardAction(card, MagicLocationType.OwnersLibrary, MagicLocationType.Exile));

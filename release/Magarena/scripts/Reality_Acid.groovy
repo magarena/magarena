@@ -14,7 +14,7 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicSacrificeAction(event.getRefPermanent()));
+            game.doAction(new SacrificeAction(event.getRefPermanent()));
         }
     }
 ]

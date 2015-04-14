@@ -16,7 +16,7 @@
                 game.addEvent(new MagicSacrificePermanentEvent(perm,event.getPlayer(),SACRIFICE_MOUNTAIN));
                 game.addEvent(new MagicSacrificePermanentEvent(perm,event.getPlayer(),SACRIFICE_MOUNTAIN));
             } else {
-                game.doAction(new MagicSacrificeAction(perm));
+                game.doAction(new SacrificeAction(perm));
             }
         }
     }

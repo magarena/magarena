@@ -16,7 +16,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
                 final int toughness=it.getToughness();
-                game.doAction(new MagicSacrificeAction(it));
+                game.doAction(new SacrificeAction(it));
                 game.doAction(new ChangeLifeAction(event.getPlayer(),toughness));
             });
         }

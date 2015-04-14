@@ -20,7 +20,7 @@
             if (event.isYes() && costEvent.isSatisfied()) {
                 game.addEvent(costEvent);
             } else {
-                game.doAction(new MagicSacrificeAction(event.getPermanent()));
+                game.doAction(new SacrificeAction(event.getPermanent()));
             }
         }
     },

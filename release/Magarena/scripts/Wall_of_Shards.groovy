@@ -23,7 +23,7 @@
                     event.getPermanent().getCounters(MagicCounterType.Age)
                 ));
             } else {
-                game.doAction(new MagicSacrificeAction(event.getPermanent()));
+                game.doAction(new SacrificeAction(event.getPermanent()));
             }
         }
     }

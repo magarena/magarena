@@ -18,7 +18,7 @@
                 game.addEvent(new MagicSacrificePermanentEvent(perm,event.getPlayer(),SACRIFICE_CREATURE));
                 game.addEvent(new MagicSacrificePermanentEvent(perm,event.getPlayer(),SACRIFICE_CREATURE));
             } else {
-                game.doAction(new MagicSacrificeAction(perm));
+                game.doAction(new SacrificeAction(perm));
             }
         }
     }

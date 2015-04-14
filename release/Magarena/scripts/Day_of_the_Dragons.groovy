@@ -39,7 +39,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final Collection<MagicPermanent> targets = event.getPlayer().filterPermanents(DRAGON_YOU_CONTROL);
             for (final MagicPermanent target : targets) {
-                game.doAction(new MagicSacrificeAction(target));
+                game.doAction(new SacrificeAction(target));
             }
             game.doAction(new ReturnLinkedExileAction(
                 event.getPermanent(),

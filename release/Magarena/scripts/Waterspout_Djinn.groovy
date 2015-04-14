@@ -27,7 +27,7 @@ def AN_UNTAPPED_ISLAND_YOU_CONTROL = new MagicTargetChoice(
             if (event.isYes() && cost.isSatisfied()) {
                 game.addEvent(cost);
             } else {
-                game.doAction(new MagicSacrificeAction(event.getPermanent()));
+                game.doAction(new SacrificeAction(event.getPermanent()));
             }
         }
     }

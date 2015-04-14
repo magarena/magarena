@@ -15,7 +15,7 @@
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicSacrificeAction sac = new MagicSacrificeAction(event.getPermanent());
+            final SacrificeAction sac = new SacrificeAction(event.getPermanent());
             game.doAction(sac);
             if (sac.isValid()) {
                 game.doAction(new DestroyAction(event.getRefPermanent()));

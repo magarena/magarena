@@ -16,7 +16,7 @@
             if (event.isYes() && discard.isSatisfied()) {
                 game.addEvent(discard);
             } else {
-                game.doAction(new MagicSacrificeAction(event.getPermanent()));
+                game.doAction(new SacrificeAction(event.getPermanent()));
                 game.doAction(new DrawAction(event.getPlayer()));
             }
         }

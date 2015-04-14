@@ -26,7 +26,7 @@ def A_NONLAIR_LAND_YOU_CONTROL = new MagicTargetChoice(
             if (event.isYes() && bounce.isSatisfied()) {
                 game.addEvent(bounce);
             } else {
-                game.doAction(new MagicSacrificeAction(event.getPermanent()));
+                game.doAction(new SacrificeAction(event.getPermanent()));
             }
         }
     }

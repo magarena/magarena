@@ -25,7 +25,7 @@
                     MagicPermanentState.MustPayEchoCost
                 ));
             } else {
-                game.doAction(new MagicSacrificeAction(permanent));
+                game.doAction(new SacrificeAction(permanent));
             }
         }
     }

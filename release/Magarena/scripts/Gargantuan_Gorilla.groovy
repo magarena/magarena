@@ -1,7 +1,7 @@
 def SAC_ACTION = {
     final MagicGame game, final MagicEvent event ->
     event.processTargetPermanent(game, {
-        game.doAction(new MagicSacrificeAction(it));
+        game.doAction(new SacrificeAction(it));
         if (it.hasType(MagicType.Snow)) { 
             game.doAction(new GainAbilityAction(event.getPermanent(),MagicAbility.Trample));
         }
@@ -37,7 +37,7 @@ def SAC_ACTION = {
             if (event.isYes() && PN.controlsPermanent(MagicSubType.Forest)) {
                 game.addEvent(sac);
             } else {
-                game.doAction(new MagicSacrificeAction(SN));
+                game.doAction(new SacrificeAction(SN));
                 game.doAction(new DealDamageAction(SN, PN, 7));
             }
         }

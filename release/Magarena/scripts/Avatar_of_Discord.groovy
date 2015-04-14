@@ -18,7 +18,7 @@ def EFFECT = MagicRuleEventAction.create("Sacrifice SN.");
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isNo()) {
-                game.doAction(new MagicSacrificeAction(event.getPermanent()));
+                game.doAction(new SacrificeAction(event.getPermanent()));
             } else {
                 game.addEvent(new MagicDiscardEvent(event.getPermanent(), event.getPlayer(), 2));
             }

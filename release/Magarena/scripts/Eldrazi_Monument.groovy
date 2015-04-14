@@ -17,7 +17,7 @@
             if (sac.isSatisfied()) {
                 game.addEvent(sac);
             } else {
-                game.doAction(new MagicSacrificeAction(permanent));
+                game.doAction(new SacrificeAction(permanent));
             }
         }
     }

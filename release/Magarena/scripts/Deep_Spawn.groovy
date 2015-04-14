@@ -15,7 +15,7 @@
             if (event.isYes() && event.getPlayer().getLibrary().size() >= 2) {
                 game.doAction(new MillLibraryAction(event.getPlayer(),2));
             } else {
-                game.doAction(new MagicSacrificeAction(event.getPermanent()));
+                game.doAction(new SacrificeAction(event.getPermanent()));
             }
         }
     }

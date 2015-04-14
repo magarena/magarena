@@ -1,6 +1,6 @@
 def action = {
     final MagicGame game, final MagicEvent event ->
-    game.doAction(new MagicSacrificeAction(event.getPermanent()));
+    game.doAction(new SacrificeAction(event.getPermanent()));
     game.doAction(new PlayTokenAction(
         event.getPlayer(), 
         TokenCardDefinitions.get("legendary 20/20 black Avatar creature token with flying and indestructible named Marit Lage")

@@ -20,7 +20,7 @@ def EFFECT = MagicRuleEventAction.create("SN deals 4 damage to target creature o
             if (event.isYes() && discard.isSatisfied()) {
                 game.addEvent(discard);
             } else {
-                game.doAction(new MagicSacrificeAction(event.getPermanent()));
+                game.doAction(new SacrificeAction(event.getPermanent()));
             }
         }
     }

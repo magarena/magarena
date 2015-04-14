@@ -18,7 +18,7 @@
                 game.addEvent(costEvent);
             } else {
                 final int amt = event.getPermanent().getCounters(MagicCounterType.PlusOne)
-                game.doAction(new MagicSacrificeAction(event.getPermanent()));
+                game.doAction(new SacrificeAction(event.getPermanent()));
                 for (final MagicPermanent target : game.filterPermanents(CREATURE_WITHOUT_FLYING)) {
                     game.doAction(new DealDamageAction(
                         event.getSource(),

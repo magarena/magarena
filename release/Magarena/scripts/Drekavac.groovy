@@ -30,7 +30,7 @@ def A_NONCREATURE_CARD_FROM_HAND = new MagicTargetChoice(
             if (event.isYes() && discard.isSatisfied()) {
                 game.addEvent(discard);
             } else {
-                game.doAction(new MagicSacrificeAction(event.getPermanent()));
+                game.doAction(new SacrificeAction(event.getPermanent()));
             }
         }
     }

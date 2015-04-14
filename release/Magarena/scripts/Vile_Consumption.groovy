@@ -13,7 +13,7 @@ def ConsumptionUpkeep = new MagicAtYourUpkeepTrigger() {
         if (event.isYes()) {
             game.addEvent(new MagicPayLifeEvent(event.getSource(), event.getPlayer(), 1));
         } else {
-            game.doAction(new MagicSacrificeAction(event.getPermanent()));
+            game.doAction(new SacrificeAction(event.getPermanent()));
         }
     }
 };
