@@ -6,13 +6,13 @@ import magic.model.MagicGame;
 import magic.model.MagicLocationType;
 import magic.model.MagicPlayer;
 
-public class MagicRemoveCardAction extends MagicAction {
+public class RemoveCardAction extends MagicAction {
 
     private final MagicCard card;
     private final MagicLocationType locationType;
     private int index;
 
-    public MagicRemoveCardAction(final MagicCard card,final MagicLocationType locationType) {
+    public RemoveCardAction(final MagicCard card,final MagicLocationType locationType) {
         this.card=card;
         this.locationType=locationType;
     }

@@ -18,7 +18,7 @@ import magic.model.condition.MagicCondition;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.action.MagicPlayMod;
 import magic.model.action.PutItemOnStackAction;
-import magic.model.action.MagicRemoveCardAction;
+import magic.model.action.RemoveCardAction;
 import magic.model.action.PlayCardFromStackAction;
 
 public class MagicMorphCastActivation extends MagicCardActivation {
@@ -59,7 +59,7 @@ public class MagicMorphCastActivation extends MagicCardActivation {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicCard card = event.getCard();
-            game.doAction(new MagicRemoveCardAction(card,MagicLocationType.OwnersHand));
+            game.doAction(new RemoveCardAction(card,MagicLocationType.OwnersHand));
                 
             final MagicCardOnStack cardOnStack=new MagicCardOnStack(
                 card,

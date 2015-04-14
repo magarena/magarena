@@ -12,7 +12,7 @@ import magic.model.MagicManaCost;
 import magic.model.MagicCostManaType;
 import magic.model.action.PlayCardAction;
 import magic.model.action.PutItemOnStackAction;
-import magic.model.action.MagicRemoveCardAction;
+import magic.model.action.RemoveCardAction;
 import magic.model.choice.MagicChoice;
 import magic.model.condition.MagicCondition;
 import magic.model.stack.MagicCardOnStack;
@@ -78,7 +78,7 @@ public class MagicCardActivation extends MagicActivation<MagicCard> implements M
                     game.incLandsPlayed();
                 }
                 
-                game.doAction(new MagicRemoveCardAction(card, fromLocation)); 
+                game.doAction(new RemoveCardAction(card, fromLocation)); 
                 
                 if (usesStack) {
                     final MagicCardOnStack cardOnStack=new MagicCardOnStack(

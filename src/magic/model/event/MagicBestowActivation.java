@@ -11,7 +11,7 @@ import magic.model.MagicType;
 import magic.model.action.MagicPermanentAction;
 import magic.model.action.PlayCardFromStackAction;
 import magic.model.action.PutItemOnStackAction;
-import magic.model.action.MagicRemoveCardAction;
+import magic.model.action.RemoveCardAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
 import magic.model.action.MagicPlayMod;
@@ -72,7 +72,7 @@ public class MagicBestowActivation extends MagicCardActivation {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicCard card = event.getCard();
-            game.doAction(new MagicRemoveCardAction(card,MagicLocationType.OwnersHand));
+            game.doAction(new RemoveCardAction(card,MagicLocationType.OwnersHand));
                 
             final MagicCardOnStack cardOnStack=new MagicCardOnStack(
                 card,

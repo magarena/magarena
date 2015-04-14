@@ -9,7 +9,7 @@ import magic.model.MagicPayedCost;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.choice.MagicMayChoice;
 import magic.model.event.MagicEvent;
-import magic.model.action.MagicRemoveCardAction;
+import magic.model.action.RemoveCardAction;
 import magic.model.action.MagicRemoveTriggerAction;
 import magic.model.action.PutItemOnStackAction;
 
@@ -44,7 +44,7 @@ public class MagicReboundTrigger extends MagicAtUpkeepTrigger {
     public void executeEvent(final MagicGame game, final MagicEvent event) {
         if (event.isYes() && event.getCard().isInExile()) {
             final MagicCard card = event.getCard();
-            game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Exile));
+            game.doAction(new RemoveCardAction(card,MagicLocationType.Exile));
             final MagicCardOnStack cardOnStack=new MagicCardOnStack(card, event.getPlayer(), MagicPayedCost.NO_COST);
             cardOnStack.setFromLocation(MagicLocationType.Exile);
             game.doAction(new PutItemOnStackAction(cardOnStack));

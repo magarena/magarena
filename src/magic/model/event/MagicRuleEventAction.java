@@ -208,7 +208,7 @@ public enum MagicRuleEventAction {
                     it,
                     MagicLocationType.Exile
                 ));
-                final MagicRemoveCardAction removeCard = new MagicRemoveCardAction(it.getCard(), MagicLocationType.Exile);
+                final RemoveCardAction removeCard = new RemoveCardAction(it.getCard(), MagicLocationType.Exile);
                 game.doAction(removeCard);
                 if (removeCard.isValid()) {
                     game.doAction(new PlayCardAction(
@@ -234,7 +234,7 @@ public enum MagicRuleEventAction {
                             it,
                             MagicLocationType.Exile
                         ));
-                        final MagicRemoveCardAction removeCard = new MagicRemoveCardAction(it.getCard(), MagicLocationType.Exile);
+                        final RemoveCardAction removeCard = new RemoveCardAction(it.getCard(), MagicLocationType.Exile);
                         game.doAction(removeCard);
                         if (removeCard.isValid()) {
                             game.doAction(new PlayCardAction(
@@ -259,7 +259,7 @@ public enum MagicRuleEventAction {
                     it,
                     MagicLocationType.Exile
                 ));
-                final MagicRemoveCardAction removeCard = new MagicRemoveCardAction(it.getCard(), MagicLocationType.Exile);
+                final RemoveCardAction removeCard = new RemoveCardAction(it.getCard(), MagicLocationType.Exile);
                 game.doAction(removeCard);
                 if (removeCard.isValid()) {
                     game.doAction(new PlayCardAction(
@@ -285,7 +285,7 @@ public enum MagicRuleEventAction {
                             it,
                             MagicLocationType.Exile
                         ));
-                        final MagicRemoveCardAction removeCard = new MagicRemoveCardAction(it.getCard(), MagicLocationType.Exile);
+                        final RemoveCardAction removeCard = new RemoveCardAction(it.getCard(), MagicLocationType.Exile);
                         game.doAction(removeCard);
                         if (removeCard.isValid()) {
                             game.doAction(new PlayCardAction(
@@ -319,7 +319,7 @@ public enum MagicRuleEventAction {
             public void executeEvent(final MagicGame game, final MagicEvent event) {
                 event.processTargetCard(game,new MagicCardAction() {
                     public void doAction(final MagicCard card) {
-                        game.doAction(new MagicRemoveCardAction(
+                        game.doAction(new RemoveCardAction(
                             card,
                             MagicLocationType.Graveyard
                         ));
@@ -1519,7 +1519,7 @@ public enum MagicRuleEventAction {
             @Override
             public void executeEvent(final MagicGame game, final MagicEvent event) {
                 final MagicCard card = event.getCard();
-                final MagicRemoveCardAction remove = new MagicRemoveCardAction(card,MagicLocationType.Graveyard);
+                final RemoveCardAction remove = new RemoveCardAction(card,MagicLocationType.Graveyard);
                 game.doAction(remove);
                 if (remove.isValid()) {
                     game.doAction(new MoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.OwnersHand));
@@ -1555,7 +1555,7 @@ public enum MagicRuleEventAction {
             @Override
             public void executeEvent(final MagicGame game, final MagicEvent event) {
                 final MagicCard card = event.getPermanent().getCard();
-                final MagicRemoveCardAction remove = new MagicRemoveCardAction(card,MagicLocationType.Graveyard);
+                final RemoveCardAction remove = new RemoveCardAction(card,MagicLocationType.Graveyard);
                 game.doAction(remove);
                 if (remove.isValid()) {
                     game.doAction(new MoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.OwnersHand));
@@ -1574,7 +1574,7 @@ public enum MagicRuleEventAction {
             public void executeEvent(final MagicGame game, final MagicEvent event) {
                 event.processTargetCard(game,new MagicCardAction() {
                     public void doAction(final MagicCard card) {
-                        game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard));
+                        game.doAction(new RemoveCardAction(card,MagicLocationType.Graveyard));
                         game.doAction(new MoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.OwnersHand));
                     }
                 });
@@ -1592,7 +1592,7 @@ public enum MagicRuleEventAction {
             public void executeEvent(final MagicGame game, final MagicEvent event) {
                 event.processTargetCard(game, new MagicCardAction() {
                     public void doAction(final MagicCard targetCard) {
-                        game.doAction(new MagicRemoveCardAction(targetCard,MagicLocationType.Graveyard));
+                        game.doAction(new RemoveCardAction(targetCard,MagicLocationType.Graveyard));
                         game.doAction(new MoveCardAction(
                             targetCard,
                             MagicLocationType.Graveyard,
@@ -1614,7 +1614,7 @@ public enum MagicRuleEventAction {
             public void executeEvent(final MagicGame game, final MagicEvent event) {
                 event.processTargetCard(game, new MagicCardAction() {
                     public void doAction(final MagicCard targetCard) {
-                        game.doAction(new MagicRemoveCardAction(targetCard,MagicLocationType.Graveyard));
+                        game.doAction(new RemoveCardAction(targetCard,MagicLocationType.Graveyard));
                         game.doAction(new MoveCardAction(
                             targetCard,
                             MagicLocationType.Graveyard,

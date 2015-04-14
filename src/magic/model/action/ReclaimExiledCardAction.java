@@ -15,7 +15,7 @@ public class ReclaimExiledCardAction extends MagicAction {
     }
     
     public void doAction(final MagicGame game) {
-        game.doAction(new MagicRemoveCardAction(card, MagicLocationType.Exile));
+        game.doAction(new RemoveCardAction(card, MagicLocationType.Exile));
         game.doAction(new MoveCardAction(card, MagicLocationType.Exile, MagicLocationType.OwnersHand));
         source.removeExiledCard(card);
     }

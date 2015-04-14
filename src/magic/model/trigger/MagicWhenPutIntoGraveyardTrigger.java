@@ -9,7 +9,7 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.action.MoveCardAction;
 import magic.model.action.PlayCardAction;
-import magic.model.action.MagicRemoveCardAction;
+import magic.model.action.RemoveCardAction;
 import magic.model.action.MagicRevealAction;
 import magic.model.event.MagicEvent;
 
@@ -76,7 +76,7 @@ public abstract class MagicWhenPutIntoGraveyardTrigger extends MagicTrigger<Move
             final MagicPlayer player = event.getPlayer();
             final MagicCardList graveyard = new MagicCardList(player.getGraveyard());
             for (final MagicCard card : graveyard) {
-                game.doAction(new MagicRemoveCardAction(
+                game.doAction(new RemoveCardAction(
                     card,
                     MagicLocationType.Graveyard
                 ));

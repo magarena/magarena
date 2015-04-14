@@ -8,7 +8,7 @@ import magic.model.MagicLocationType;
 import magic.model.MagicPlayer;
 import magic.model.action.DrawAction;
 import magic.model.action.MoveCardAction;
-import magic.model.action.MagicRemoveCardAction;
+import magic.model.action.RemoveCardAction;
 import magic.model.choice.MagicMulliganChoice;
 
 public class MagicMulliganEvent extends MagicEvent {
@@ -35,7 +35,7 @@ public class MagicMulliganEvent extends MagicEvent {
                         MagicLocationType.OwnersHand,
                         MagicLocationType.OwnersLibrary
                     ));
-                    game.doAction(new MagicRemoveCardAction(
+                    game.doAction(new RemoveCardAction(
                         card,
                         MagicLocationType.OwnersHand
                     ));

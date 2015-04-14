@@ -7,7 +7,7 @@ import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.action.MagicCardAction;
 import magic.model.action.MoveCardAction;
-import magic.model.action.MagicRemoveCardAction;
+import magic.model.action.RemoveCardAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
 import magic.model.condition.MagicConditionFactory;
@@ -36,7 +36,7 @@ public class MagicExileCardPayManaCostEvent extends MagicEvent {
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetCard(game,new MagicCardAction() {
                 public void doAction(final MagicCard card) {
-                    game.doAction(new MagicRemoveCardAction(
+                    game.doAction(new RemoveCardAction(
                         card,
                         MagicLocationType.Graveyard
                     ));

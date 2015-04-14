@@ -6,7 +6,7 @@ import magic.model.MagicGame;
 import magic.model.MagicLocationType;
 import magic.model.MagicSource;
 import magic.model.action.PutItemOnStackAction;
-import magic.model.action.MagicRemoveCardAction;
+import magic.model.action.RemoveCardAction;
 import magic.model.stack.MagicCardOnStack;
 
 import java.util.LinkedList;
@@ -46,7 +46,7 @@ public class MagicFlashbackActivation extends MagicGraveyardActivation {
     @Override
     public void executeEvent(final MagicGame game, final MagicEvent event) {
         final MagicCard card = event.getCard();
-        game.doAction(new MagicRemoveCardAction(card, MagicLocationType.Graveyard)); 
+        game.doAction(new RemoveCardAction(card, MagicLocationType.Graveyard)); 
         
         final MagicCardOnStack cardOnStack=new MagicCardOnStack(
             card,

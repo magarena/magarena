@@ -9,7 +9,7 @@ import magic.model.MagicPermanent;
 import magic.model.MagicType;
 import magic.model.action.MoveCardAction;
 import magic.model.action.PutItemOnStackAction;
-import magic.model.action.MagicRemoveCardAction;
+import magic.model.action.RemoveCardAction;
 import magic.model.choice.MagicMayChoice;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicEventAction;
@@ -44,7 +44,7 @@ public class MagicCascadeTrigger extends MagicWhenSpellIsCastTrigger {
         // whose converted mana cost is less than this spell's converted mana cost. 
         while (nonland == MagicCard.NONE && library.isEmpty() == false) {
             final MagicCard top = library.getCardAtTop();
-            game.doAction(new MagicRemoveCardAction(
+            game.doAction(new RemoveCardAction(
                 top,
                 MagicLocationType.OwnersLibrary
             ));
@@ -85,7 +85,7 @@ public class MagicCascadeTrigger extends MagicWhenSpellIsCastTrigger {
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
                 final MagicCard card = event.getRefCard();
-                game.doAction(new MagicRemoveCardAction(card, MagicLocationType.Exile));
+                game.doAction(new RemoveCardAction(card, MagicLocationType.Exile));
                 final MagicCardOnStack cardOnStack=new MagicCardOnStack(
                     card,
                     MagicPayedCost.NO_COST
@@ -103,7 +103,7 @@ public class MagicCascadeTrigger extends MagicWhenSpellIsCastTrigger {
             cards.shuffle();
             for (final MagicCard card : cards) {
                 if (card.isInExile()) {
-                    game.doAction(new MagicRemoveCardAction(
+                    game.doAction(new RemoveCardAction(
                         card,
                         MagicLocationType.Exile
                     ));

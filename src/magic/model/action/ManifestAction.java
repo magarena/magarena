@@ -20,7 +20,7 @@ public class ManifestAction extends MagicAction {
     public void doAction(final MagicGame game) {
         final MagicCardList topN = player.getLibrary().getCardsFromTop(amount);
         for (final MagicCard card : topN) {
-            game.doAction(new MagicRemoveCardAction(
+            game.doAction(new RemoveCardAction(
                 card,
                 MagicLocationType.OwnersLibrary
             ));
