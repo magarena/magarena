@@ -31,7 +31,7 @@ def A_NONLAND_CARD_FROM_HAND = new MagicTargetChoice(
                 event.processTargetCard(game, {
                     game.doAction(new MagicRemoveCardAction(it,MagicLocationType.OwnersHand));
                     final MagicCardOnStack cardOnStack=new MagicCardOnStack(it,event.getPlayer(), MagicPayedCost.NO_COST);
-                    game.doAction(new MagicPutItemOnStackAction(cardOnStack));
+                    game.doAction(new PutItemOnStackAction(cardOnStack));
                 });
             }
         }

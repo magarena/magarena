@@ -34,7 +34,7 @@ def action = {
                     MagicLocationType.OwnersHand
                 ));
             });
-            game.doAction(new MagicPutItemOnStackAction(new MagicTriggerOnStack(new MagicEvent(
+            game.doAction(new PutItemOnStackAction(new MagicTriggerOnStack(new MagicEvent(
                 event.getSource(),
                 NEG_TARGET_PLAYER,
                 action,
