@@ -45,12 +45,15 @@ public abstract class MagicItemOnStack extends MagicObjectImpl implements MagicT
     }
 
     MagicItemOnStack(final MagicCopyMap copyMap, final MagicItemOnStack sourceItem) {
+        id = sourceItem.id;
+        activation = sourceItem.activation;
+        
+        copyMap.put(sourceItem, this);
+
         source = copyMap.copy(sourceItem.source);
         controller = copyMap.copy(sourceItem.controller);
-        activation = sourceItem.activation;
         event = copyMap.copy(sourceItem.event);
         choiceResults = copyMap.copyObjects(sourceItem.choiceResults,Object.class);
-        id=sourceItem.id;
     }
 
     @Override
