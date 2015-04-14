@@ -19,7 +19,7 @@ import magic.model.stack.MagicCardOnStack;
 import magic.model.action.MagicPlayMod;
 import magic.model.action.MagicPutItemOnStackAction;
 import magic.model.action.MagicRemoveCardAction;
-import magic.model.action.MagicPlayCardFromStackAction;
+import magic.model.action.PlayCardFromStackAction;
 
 public class MagicMorphCastActivation extends MagicCardActivation {
 
@@ -107,6 +107,6 @@ public class MagicMorphCastActivation extends MagicCardActivation {
     
     @Override
     public void executeEvent(final MagicGame game, final MagicEvent event) {
-        game.doAction(new MagicPlayCardFromStackAction(event.getCardOnStack(), MagicPlayMod.MORPH));
+        game.doAction(new PlayCardFromStackAction(event.getCardOnStack(), MagicPlayMod.MORPH));
     }
 }

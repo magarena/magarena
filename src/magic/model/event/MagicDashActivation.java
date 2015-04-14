@@ -7,7 +7,7 @@ import magic.model.MagicManaCost;
 import magic.model.MagicPayedCost;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.action.MagicPlayMod;
-import magic.model.action.MagicPlayCardFromStackAction;
+import magic.model.action.PlayCardFromStackAction;
 import magic.model.condition.MagicCondition;
 
 import java.util.Arrays;
@@ -48,7 +48,7 @@ public class MagicDashActivation extends MagicCardActivation {
 
     @Override
     public void executeEvent(final MagicGame game, final MagicEvent event) {
-        game.doAction(new MagicPlayCardFromStackAction(
+        game.doAction(new PlayCardFromStackAction(
             event.getCardOnStack(),
             MagicPlayMod.HASTE, MagicPlayMod.RETURN_AT_END_OF_TURN
         ));

@@ -3,7 +3,7 @@ package magic.model.event;
 import magic.model.MagicGame;
 import magic.model.MagicPayedCost;
 import magic.model.stack.MagicCardOnStack;
-import magic.model.action.MagicPlayCardFromStackAction;
+import magic.model.action.PlayCardFromStackAction;
 
 public class MagicPlayCardEvent {
     private MagicPlayCardEvent() {}
@@ -24,7 +24,7 @@ public class MagicPlayCardEvent {
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicPlayCardFromStackAction(
+            game.doAction(new PlayCardFromStackAction(
                 event.getCardOnStack()
             ));
         }

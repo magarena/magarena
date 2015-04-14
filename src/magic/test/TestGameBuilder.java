@@ -16,7 +16,7 @@ import magic.model.player.AiProfile;
 import magic.model.player.HumanProfile;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.action.MagicPlayTokenAction;
-import magic.model.action.MagicPlayCardFromStackAction;
+import magic.model.action.PlayCardFromStackAction;
 import magic.ai.MagicAIImpl;
 
 import java.util.concurrent.atomic.AtomicInteger;
@@ -70,7 +70,7 @@ public abstract class TestGameBuilder {
             final MagicPermanent permanent=new MagicPermanent(currentId.getAndIncrement(),card,player);
             lastPermanent=permanent;
 
-            game.doAction(new MagicPlayCardFromStackAction(cardOnStack) {
+            game.doAction(new PlayCardFromStackAction(cardOnStack) {
                 @Override
                 protected MagicPermanent createPermanent(final MagicGame game) {
                     return permanent;

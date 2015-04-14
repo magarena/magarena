@@ -16,7 +16,7 @@ import java.util.Collections;
 import java.util.Arrays;
 import java.util.List;
 
-public class MagicPlayCardFromStackAction extends MagicAction {
+public class PlayCardFromStackAction extends MagicAction {
 
     private final MagicCardOnStack cardOnStack;
     private final MagicCardDefinition cardDef;
@@ -27,22 +27,22 @@ public class MagicPlayCardFromStackAction extends MagicAction {
     private boolean validEnchanted = false;
     private List<? extends MagicPermanentAction> modifications = Collections.<MagicPermanentAction>emptyList();
     
-    public MagicPlayCardFromStackAction(final MagicCardOnStack aCardOnStack, final MagicCardDefinition aCardDef, final List<? extends MagicPermanentAction> aModifications) {
+    public PlayCardFromStackAction(final MagicCardOnStack aCardOnStack, final MagicCardDefinition aCardDef, final List<? extends MagicPermanentAction> aModifications) {
         cardOnStack = aCardOnStack;
         cardDef = aCardDef;
         payedCost = aCardOnStack.getPayedCost();
         modifications = aModifications;
     }
 
-    public MagicPlayCardFromStackAction(final MagicCardOnStack aCardOnStack, final MagicCardDefinition aCardDef, final MagicPermanentAction... aModifications) {
+    public PlayCardFromStackAction(final MagicCardOnStack aCardOnStack, final MagicCardDefinition aCardDef, final MagicPermanentAction... aModifications) {
         this(aCardOnStack, aCardDef, Arrays.asList(aModifications));
     }
     
-    public MagicPlayCardFromStackAction(final MagicCardOnStack aCardOnStack, final MagicPermanentAction... aModifications) {
+    public PlayCardFromStackAction(final MagicCardOnStack aCardOnStack, final MagicPermanentAction... aModifications) {
         this(aCardOnStack, aCardOnStack.getCardDefinition(), aModifications);
     }
     
-    public MagicPlayCardFromStackAction(final MagicCardOnStack cardOnStack, final MagicPermanent aEnchantedPermanent, final MagicPermanentAction... aModifications) {
+    public PlayCardFromStackAction(final MagicCardOnStack cardOnStack, final MagicPermanent aEnchantedPermanent, final MagicPermanentAction... aModifications) {
         this(cardOnStack, aModifications);
         enchantedPermanent = aEnchantedPermanent;
     }

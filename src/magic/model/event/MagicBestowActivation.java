@@ -9,7 +9,7 @@ import magic.model.MagicSource;
 import magic.model.MagicSubType;
 import magic.model.MagicType;
 import magic.model.action.MagicPermanentAction;
-import magic.model.action.MagicPlayCardFromStackAction;
+import magic.model.action.PlayCardFromStackAction;
 import magic.model.action.MagicPutItemOnStackAction;
 import magic.model.action.MagicRemoveCardAction;
 import magic.model.choice.MagicTargetChoice;
@@ -32,7 +32,7 @@ public class MagicBestowActivation extends MagicCardActivation {
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final boolean valid = event.processTargetPermanent(game,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
-                    game.doAction(new MagicPlayCardFromStackAction(
+                    game.doAction(new PlayCardFromStackAction(
                         event.getCardOnStack(),
                         creature,
                         MagicPlayMod.BESTOWED
@@ -40,7 +40,7 @@ public class MagicBestowActivation extends MagicCardActivation {
                 }
             });
             if (!valid) {
-                game.doAction(new MagicPlayCardFromStackAction(event.getCardOnStack()));
+                game.doAction(new PlayCardFromStackAction(event.getCardOnStack()));
             }
         }
     };
