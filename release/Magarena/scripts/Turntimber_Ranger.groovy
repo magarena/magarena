@@ -22,7 +22,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
-                game.doAction(new MagicPlayTokenAction(
+                game.doAction(new PlayTokenAction(
                     event.getPlayer(),
                     TokenCardDefinitions.get("2/2 green Wolf creature token")
                 ));

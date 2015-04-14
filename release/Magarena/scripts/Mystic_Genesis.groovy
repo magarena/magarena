@@ -16,7 +16,7 @@
                 game.doAction(new CounterItemOnStackAction(card));
                     
                 final int x = card.getConvertedCost();
-                game.doAction(new MagicPlayTokenAction(event.getPlayer(), MagicCardDefinition.create({
+                game.doAction(new PlayTokenAction(event.getPlayer(), MagicCardDefinition.create({
                     it.setName("Ooze");
                     it.setFullName("green Ooze creature token");
                     it.setPowerToughness(x, x);

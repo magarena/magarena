@@ -14,7 +14,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
                 game.doAction(new DestroyAction(it));
-                game.doAction(new MagicPlayTokenAction(
+                game.doAction(new PlayTokenAction(
                     it.getController(),
                     TokenCardDefinitions.get("3/3 green Beast creature token")
                 ));

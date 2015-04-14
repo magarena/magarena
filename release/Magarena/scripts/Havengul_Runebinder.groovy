@@ -22,7 +22,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
-            game.doAction(new MagicPlayTokenAction(
+            game.doAction(new PlayTokenAction(
                 player,
                 TokenCardDefinitions.get("2/2 black Zombie creature token")
             ));

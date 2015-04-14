@@ -19,7 +19,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
-            game.doAction(new MagicPlayTokenAction(
+            game.doAction(new PlayTokenAction(
                 player,
                 TokenCardDefinitions.get("1/1 white Spirit creature token with flying")
             ));

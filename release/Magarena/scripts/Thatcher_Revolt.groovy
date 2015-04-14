@@ -15,7 +15,7 @@
             final MagicPlayer player = event.getPlayer();
             final MagicCardDefinition token = TokenCardDefinitions.get("1/1 red Human creature tokens with haste");
             for (int x=3;x>0;x--) {
-                game.doAction(new MagicPlayTokenAction(
+                game.doAction(new PlayTokenAction(
                     player, 
                     token,
                     MagicPlayMod.SACRIFICE_AT_END_OF_TURN

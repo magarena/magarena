@@ -15,7 +15,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
-                game.doAction(new MagicPlayTokenAction(
+                game.doAction(new PlayTokenAction(
                     event.getPlayer(),
                     TokenCardDefinitions.get("3/1 red Elemental Shaman creature token"),
                     (event.getRefPlayer() == event.getPlayer()) ? [MagicPlayMod.HASTE_UEOT] : [MagicPlayMod.NONE]

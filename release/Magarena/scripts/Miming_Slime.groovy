@@ -18,7 +18,7 @@
             for (final MagicPermanent creature : targets) {
                 x = Math.max(x,creature.getPower());
             }
-            game.doAction(new MagicPlayTokenAction(event.getPlayer(), MagicCardDefinition.create({
+            game.doAction(new PlayTokenAction(event.getPlayer(), MagicCardDefinition.create({
                 it.setName("Ooze");
                 it.setFullName("green Ooze creature token");
                 it.setPowerToughness(x, x);

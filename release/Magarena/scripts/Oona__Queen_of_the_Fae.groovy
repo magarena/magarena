@@ -37,7 +37,7 @@
                             game.doAction(new MagicRemoveCardAction(card,MagicLocationType.OwnersLibrary));
                             game.doAction(new MoveCardAction(card,MagicLocationType.OwnersLibrary,MagicLocationType.Exile));
                             if (card.hasColor(color)) {
-                                game.doAction(new MagicPlayTokenAction(
+                                game.doAction(new PlayTokenAction(
                                     event.getPlayer(),
                                     TokenCardDefinitions.get("1/1 black Faerie Rogue creature token with flying")
                                 ));

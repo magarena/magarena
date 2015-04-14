@@ -32,7 +32,7 @@ def A_CARD_NAMED_BARU = new MagicTargetChoice(
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final int x = event.getPlayer().getNrOfPermanents(MagicType.Land);
-            game.doAction(new MagicPlayTokenAction(event.getPlayer(), MagicCardDefinition.create({
+            game.doAction(new PlayTokenAction(event.getPlayer(), MagicCardDefinition.create({
                 it.setName("Wurm");
                 it.setFullName("green Wurm creature token");
                 it.setPowerToughness(x, x);

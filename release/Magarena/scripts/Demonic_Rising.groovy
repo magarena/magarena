@@ -18,7 +18,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.getPlayer().getNrOfPermanents(MagicType.Creature) == 1) {
-                game.doAction(new MagicPlayTokenAction(
+                game.doAction(new PlayTokenAction(
                     event.getPlayer(),
                     TokenCardDefinitions.get("5/5 black Demon creature token with flying")
                 ));

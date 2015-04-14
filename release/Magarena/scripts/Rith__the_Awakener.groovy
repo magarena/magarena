@@ -22,7 +22,7 @@
                     game.filterPermanents(player,PERMANENT);
                 for (final MagicPermanent permanent : targets) {
                     if (permanent.hasColor(color)) {
-                        game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.get("1/1 green Saproling creature token")));
+                        game.doAction(new PlayTokenAction(player,TokenCardDefinitions.get("1/1 green Saproling creature token")));
                     }
                 }
             }

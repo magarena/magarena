@@ -23,7 +23,7 @@ def choice = new MagicTargetChoice("target nonartifact attacking creature");
                 final int toughness = creature.getToughness();
                 game.doAction(ChangeStateAction.Set(creature,MagicPermanentState.CannotBeRegenerated));
                 game.doAction(new DestroyAction(creature));
-                game.doAction(new MagicPlayTokenAction(
+                game.doAction(new PlayTokenAction(
                     event.getPlayer(),
                     MagicCardDefinition.create({
                         it.setName("Spirit");

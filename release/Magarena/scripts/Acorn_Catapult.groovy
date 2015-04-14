@@ -28,7 +28,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTarget(game, {
                 game.doAction(new DealDamageAction(event.getSource(),it,1));
-                game.doAction(new MagicPlayTokenAction(
+                game.doAction(new PlayTokenAction(
                     it.getController(),
                     TokenCardDefinitions.get("1/1 green Squirrel creature token")
                 ));

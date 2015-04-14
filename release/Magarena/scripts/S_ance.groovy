@@ -39,7 +39,7 @@ def Spirit = new MagicStatic(MagicLayer.Type) {
                         MagicLocationType.Graveyard,
                         MagicLocationType.Exile
                     ));
-                    game.doAction(new MagicPlayTokenAction(
+                    game.doAction(new PlayTokenAction(
                         player,
                         it,
                         {

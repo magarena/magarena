@@ -13,7 +13,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final rn = event.getRefPermanent();
-            game.doAction(new MagicPlayTokenAction(
+            game.doAction(new PlayTokenAction(
                 event.getPlayer(),
                 TokenCardDefinitions.get("1/1 white Cat Soldier creature token with vigilance"),
                 {

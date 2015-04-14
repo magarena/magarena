@@ -18,7 +18,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new DestroyAction(event.getRefPermanent()));
-            game.doAction(new MagicPlayTokenAction(
+            game.doAction(new PlayTokenAction(
                 event.getPlayer(),
                 TokenCardDefinitions.get("1/1 white and black Spirit creature token with flying")
             ));

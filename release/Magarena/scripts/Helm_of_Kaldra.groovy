@@ -31,7 +31,7 @@ def HAS_ALL_KALDRA_EQUIPMENT = new MagicCondition() {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final int pIdx = event.getPlayer().getIndex();
-            game.doAction(new MagicPlayTokenAction(
+            game.doAction(new PlayTokenAction(
                 event.getPlayer(), 
                 TokenCardDefinitions.get("legendary 4/4 colorless Avatar creature token named Kaldra"),
                 {

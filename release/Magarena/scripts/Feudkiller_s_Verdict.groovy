@@ -14,7 +14,7 @@
             final MagicPlayer player = event.getPlayer();
             game.doAction(new ChangeLifeAction(player,10));
             if (player.getLife() > player.getOpponent().getLife()) {
-                game.doAction(new MagicPlayTokenAction(
+                game.doAction(new PlayTokenAction(
                     player,
                     TokenCardDefinitions.get("5/5 white Giant Warrior creature token")
                 ));

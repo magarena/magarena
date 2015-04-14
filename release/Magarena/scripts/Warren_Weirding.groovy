@@ -4,7 +4,7 @@ def action = {
         game.doAction(new MagicSacrificeAction(it));
         if (it.hasSubType(MagicSubType.Goblin)){
             for (int i = 0; i < 2; i++) {
-                game.doAction(new MagicPlayTokenAction(
+                game.doAction(new PlayTokenAction(
                     event.getPlayer(),
                     TokenCardDefinitions.get("1/1 black Goblin Rogue creature token"),
                     MagicPlayMod.HASTE_UEOT
