@@ -74,7 +74,7 @@ def ExileCard = {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processChosenCards(game, {
-                game.doAction(new MagicReclaimExiledCardAction(event.getPermanent(),it));
+                game.doAction(new ReclaimExiledCardAction(event.getPermanent(),it));
             });
         }
     }
