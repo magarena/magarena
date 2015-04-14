@@ -7,6 +7,7 @@ import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.model.MagicType;
 import magic.model.MagicSubType;
+import magic.model.MagicSource;
 
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -20,6 +21,14 @@ public abstract class MagicCardFilterImpl implements MagicTargetFilter<MagicCard
     
     public List<MagicCard> filter(final MagicPlayer player) {
         return filter(player.getGame(), player, MagicTargetHint.None);
+    }
+    
+    public boolean accept(final MagicGame game, final MagicSource source, final MagicCard target) {
+        return accept(game, source.getController(), target);
+    }
+    
+    public List<MagicCard> filter(final MagicGame game, final MagicSource source, final MagicTargetHint targetHint) {
+        return filter(game, source.getController(), targetHint); 
     }
 
     public List<MagicCard> filter(final MagicGame game, final MagicPlayer player, final MagicTargetHint targetHint) {

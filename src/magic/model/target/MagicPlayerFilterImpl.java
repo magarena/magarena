@@ -2,6 +2,7 @@ package magic.model.target;
 
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
+import magic.model.MagicSource;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,6 +14,14 @@ public abstract class MagicPlayerFilterImpl implements MagicTargetFilter<MagicPl
     
     public List<MagicPlayer> filter(final MagicPlayer player) {
         return filter(player.getGame(), player, MagicTargetHint.None);
+    }
+    
+    public boolean accept(final MagicGame game, final MagicSource source, final MagicPlayer target) {
+        return accept(game, source.getController(), target);
+    }
+
+    public List<MagicPlayer> filter(final MagicGame game, final MagicSource source, final MagicTargetHint targetHint) {
+        return filter(game, source.getController(), targetHint); 
     }
     
     public List<MagicPlayer> filter(final MagicGame game, final MagicPlayer player, final MagicTargetHint targetHint) {
