@@ -6,6 +6,6 @@ type=Creature
 subtype=Elemental
 cost={5}{R}
 pt=4/4
-timing=smain
-requires_groovy_code
+ability=SN gets +0/+1 for each Mountain you control.
+timing=main
 oracle=Earth Servant gets +0/+1 for each Mountain you control.

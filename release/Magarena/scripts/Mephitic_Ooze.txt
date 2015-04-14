@@ -6,7 +6,7 @@ type=Creature
 subtype=Ooze
 cost={4}{B}
 pt=0/5
-ability=Whenever SN deals combat damage to a creature, destroy that creature. It can't be regenerated.
+ability=SN gets +1/+0 for each artifact you control.;\
+        Whenever SN deals combat damage to a creature, destroy that creature. It can't be regenerated.
 timing=main
-requires_groovy_code
 oracle=Mephitic Ooze gets +1/+0 for each artifact you control. Whenever Mephitic Ooze deals combat damage to a creature, destroy that creature. The creature can't be regenerated.

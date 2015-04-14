@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Druid
 cost={2}{G}
 pt=2/2
-timing=fmain
-requires_groovy_code
+ability=SN gets +1/+1 for each enchantment on the battlefield.
+timing=main
 oracle=Yavimaya Enchantress gets +1/+1 for each enchantment on the battlefield.

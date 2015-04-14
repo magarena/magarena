@@ -6,7 +6,7 @@ type=Creature
 subtype=Zombie
 cost={3}{B}
 pt=0/1
-ability=flying
+ability=Flying.;\
+        SN gets +1/+0 for each artifact you control.
 timing=main
-requires_groovy_code=Nim Grotesque
 oracle=Flying. Nim Shrieker gets +1/+0 for each artifact you control.

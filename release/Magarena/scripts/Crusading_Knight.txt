@@ -6,7 +6,7 @@ type=Creature
 subtype=Human,Knight
 cost={2}{W}{W}
 pt=2/2
-ability=Protection from black
+ability=Protection from black;\
+        SN gets +1/+1 for each Swamp your opponents control.
 timing=main
-requires_groovy_code
 oracle=Protection from black. Crusading Knight gets +1/+1 for each Swamp your opponents control.

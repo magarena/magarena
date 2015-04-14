@@ -6,7 +6,7 @@ type=Creature
 subtype=Zombie
 cost={2}{B}{B}
 pt=2/1
-ability=Sacrifice a creature: Regenerate SN.
+ability=SN gets +1/+0 for each artifact you control.;\
+        Sacrifice a creature: Regenerate SN.
 timing=main
-requires_groovy_code=Nim Grotesque
 oracle=Nim Shambler gets +1/+0 for each artifact you control. Sacrifice a creature: Regenerate Nim Shambler.
