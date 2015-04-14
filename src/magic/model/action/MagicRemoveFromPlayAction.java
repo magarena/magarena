@@ -80,7 +80,7 @@ public class MagicRemoveFromPlayAction extends MagicAction {
             game.doAction(new MagicSoulbondAction(permanent,permanent.getPairedCreature(),false));
         }
 
-        game.doAction(new MagicRemoveFromCombatAction(permanent));
+        game.doAction(new RemoveFromCombatAction(permanent));
 
         controller.removePermanent(permanent);
 

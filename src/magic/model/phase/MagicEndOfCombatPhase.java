@@ -3,7 +3,7 @@ package magic.model.phase;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
-import magic.model.action.MagicRemoveFromCombatAction;
+import magic.model.action.RemoveFromCombatAction;
 import magic.model.trigger.MagicTriggerType;
 
 public class MagicEndOfCombatPhase extends MagicPhase {
@@ -32,7 +32,7 @@ public class MagicEndOfCombatPhase extends MagicPhase {
         for (final MagicPlayer player : game.getPlayers()) {
             for (final MagicPermanent permanent : player.getPermanents()) {
                 if (permanent.isAttacking()||permanent.isBlocking()) {
-                    game.doAction(new MagicRemoveFromCombatAction(permanent));
+                    game.doAction(new RemoveFromCombatAction(permanent));
                 }
             }
         }

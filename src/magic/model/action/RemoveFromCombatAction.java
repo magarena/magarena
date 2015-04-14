@@ -5,7 +5,7 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPermanentList;
 import magic.model.MagicPermanentState;
 
-public class MagicRemoveFromCombatAction extends MagicAction {
+public class RemoveFromCombatAction extends MagicAction {
 
     private final MagicPermanent permanent;
     private boolean attacking;
@@ -13,7 +13,7 @@ public class MagicRemoveFromCombatAction extends MagicAction {
     private MagicPermanentList blockingCreatures;
     private MagicPermanent blockedCreature = MagicPermanent.NONE;
 
-    public MagicRemoveFromCombatAction(final MagicPermanent permanent) {
+    public RemoveFromCombatAction(final MagicPermanent permanent) {
         this.permanent=permanent;
     }
 
