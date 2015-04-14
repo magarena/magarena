@@ -14,7 +14,7 @@ import magic.model.event.MagicRedirectDamageEvent;
 import magic.model.target.MagicTarget;
 import magic.model.trigger.MagicTriggerType;
 
-public class MagicDealDamageAction extends MagicAction {
+public class DealDamageAction extends MagicAction {
 
     private static final int UNINIT = Integer.MIN_VALUE;
 
@@ -23,19 +23,19 @@ public class MagicDealDamageAction extends MagicAction {
     private int oldDamage = UNINIT;
     private int oldPrevent = UNINIT;
     
-    public MagicDealDamageAction(final MagicSource source, MagicTarget target, final int amt) {
+    public DealDamageAction(final MagicSource source, MagicTarget target, final int amt) {
         this(new MagicDamage(source, target, amt), null);
     }
 
-    public MagicDealDamageAction(final MagicDamage damage) {
+    public DealDamageAction(final MagicDamage damage) {
         this(damage, null);
     }
 
-    public static final MagicDealDamageAction NoRedirect(final MagicDamage damage) {
-        return new MagicDealDamageAction(damage, damage.getTarget());
+    public static final DealDamageAction NoRedirect(final MagicDamage damage) {
+        return new DealDamageAction(damage, damage.getTarget());
     }
 
-    private MagicDealDamageAction(final MagicDamage aDamage, final MagicTarget aTarget) {
+    private DealDamageAction(final MagicDamage aDamage, final MagicTarget aTarget) {
         damage = aDamage;
         target = aTarget;
     }

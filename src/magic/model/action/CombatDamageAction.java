@@ -117,7 +117,7 @@ public class CombatDamageAction extends MagicAction {
         // Deal combat damage.
         if (!combatDamage.isEmpty()) {
             for (final MagicDamage damage: combatDamage) {
-                game.doAction(new MagicDealDamageAction(damage));
+                game.doAction(new DealDamageAction(damage));
             }
             game.setStateCheckRequired();
         }
