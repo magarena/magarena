@@ -2,7 +2,7 @@ package magic.model.event;
 
 import magic.model.MagicGame;
 import magic.model.MagicSource;
-import magic.model.action.MagicSetKickerAction;
+import magic.model.action.SetKickerAction;
 
 public class MagicEvokeEvent extends MagicEvent {
 
@@ -17,7 +17,7 @@ public class MagicEvokeEvent extends MagicEvent {
     private static final MagicEventAction EVENT_ACTION=new MagicEventAction() {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicSetKickerAction(1));
+            game.doAction(new SetKickerAction(1));
         }
     };
 }

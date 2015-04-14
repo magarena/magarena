@@ -3,12 +3,12 @@ package magic.model.action;
 import magic.model.MagicGame;
 import magic.model.MagicPayedCost;
 
-public class MagicSetKickerAction extends MagicAction {
+public class SetKickerAction extends MagicAction {
 
     private final int newKicker;
     private int oldKicker;
 
-    public MagicSetKickerAction(final int aKicker) {
+    public SetKickerAction(final int aKicker) {
         newKicker = aKicker;
     }
 
