@@ -12,7 +12,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             CREATURE_YOU_CONTROL.filter(event.getPlayer()) each {
-                game.doAction(new MagicExileUntilEndOfTurnAction(it));
+                game.doAction(new ExileUntilEndOfTurnAction(it));
             }
         }
     }

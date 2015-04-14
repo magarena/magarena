@@ -24,7 +24,7 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicExileUntilEndOfTurnAction(event.getPermanent()));
+            game.doAction(new ExileUntilEndOfTurnAction(event.getPermanent()));
         }
     }
 ]

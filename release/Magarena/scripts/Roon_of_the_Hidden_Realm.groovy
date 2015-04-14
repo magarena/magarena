@@ -23,7 +23,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                game.doAction(new MagicExileUntilEndOfTurnAction(it));
+                game.doAction(new ExileUntilEndOfTurnAction(it));
             });
         }
     }

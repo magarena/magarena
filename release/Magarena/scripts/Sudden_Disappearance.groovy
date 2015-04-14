@@ -14,7 +14,7 @@
             event.processTargetPlayer(game, {
                 NONLAND_PERMANENT_YOU_CONTROL.filter(it) each {
                     final MagicPermanent nonland ->
-                    game.doAction(new MagicExileUntilEndOfTurnAction(nonland));
+                    game.doAction(new ExileUntilEndOfTurnAction(nonland));
                 }
             });
         }
