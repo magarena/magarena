@@ -14,8 +14,9 @@ import magic.model.MagicSubType;
 import magic.model.MagicType;
 import magic.model.condition.MagicCondition;
 import magic.model.action.MagicRemoveStaticAction;
+import magic.model.target.MagicTarget;
 import magic.model.target.MagicPermanentTargetFilter;
-import magic.model.target.MagicOtherPermanentTargetFilter;
+import magic.model.target.MagicOtherTargetFilter;
 import magic.model.target.MagicTargetFilter;
 import magic.model.target.MagicTargetFilterFactory;
 
@@ -88,7 +89,7 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
         }
     }
     
-    public static MagicStatic genSelfPTStatic(final MagicTargetFilter<MagicPermanent> filter, final MagicPowerToughness given) {
+    public static MagicStatic genSelfPTStatic(final MagicTargetFilter<MagicTarget> filter, final MagicPowerToughness given) {
         return new MagicStatic(MagicLayer.ModPT) {
             @Override
             public void modPowerToughness(final MagicPermanent source, final MagicPermanent permanent, final MagicPowerToughness pt) {
@@ -98,11 +99,11 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
         };
     }
     
-    public static MagicStatic genSelfPTStaticOther(final MagicTargetFilter<MagicPermanent> filter, final MagicPowerToughness given) {
+    public static MagicStatic genSelfPTStaticOther(final MagicTargetFilter<MagicTarget> filter, final MagicPowerToughness given) {
         return new MagicStatic(MagicLayer.ModPT) {
             @Override
             public void modPowerToughness(final MagicPermanent source, final MagicPermanent permanent, final MagicPowerToughness pt) {
-                final MagicTargetFilter other = new MagicOtherPermanentTargetFilter(filter, permanent);
+                final MagicTargetFilter other = new MagicOtherTargetFilter(filter, permanent);
                 final int amt = other.filter(permanent.getController()).size();
                 pt.add(given.power() * amt, given.toughness() * amt);
             }

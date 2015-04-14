@@ -7,6 +7,7 @@ import magic.model.mstatic.MagicStatic;
 import magic.model.target.MagicTargetFilter;
 import magic.model.target.MagicTargetFilterFactory;
 import magic.model.trigger.*;
+import magic.model.target.MagicTarget;
 import magic.model.condition.MagicCondition;
 import magic.model.condition.MagicConditionFactory;
 import magic.model.condition.MagicConditionParser;
@@ -773,7 +774,7 @@ public enum MagicAbility {
     EachPump("SN gets " + ARG.PT + " for each (?<other>other )?" + ARG.WORDRUN + "\\.", 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final MagicPowerToughness pt = ARG.mpt(arg);
-            final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.multiple(ARG.wordrun(arg));
+            final MagicTargetFilter<MagicTarget> filter = MagicTargetFilterFactory.multipleTargets(ARG.wordrun(arg));
             final boolean other = arg.group("other") != null; 
             if (other) {
                 card.add(MagicStatic.genSelfPTStaticOther(filter, pt));
