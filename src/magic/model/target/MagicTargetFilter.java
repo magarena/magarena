@@ -12,12 +12,10 @@ public interface MagicTargetFilter<T extends MagicTarget> {
 
     boolean accept(final MagicGame game,final MagicPlayer player,final T target);
     
-    boolean accept(final MagicGame game,final MagicSource source,final T target);
+    boolean accept(final MagicSource source,final MagicPlayer player,final T target);
     
-    List<T> filter(final MagicGame game, final MagicSource source, final MagicTargetHint targetHint);
+    List<T> filter(final MagicSource source, final MagicPlayer player, final MagicTargetHint targetHint);
 
-    List<T> filter(final MagicGame game, final MagicPlayer player, final MagicTargetHint targetHint);
-    
     List<T> filter(final MagicGame game);
     
     List<T> filter(final MagicPlayer player);

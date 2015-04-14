@@ -10,28 +10,25 @@ import java.util.List;
 
 public abstract class MagicStackFilterImpl implements MagicTargetFilter<MagicItemOnStack> {
     public List<MagicItemOnStack> filter(final MagicGame game) {
-        return filter(game, game.getTurnPlayer(), MagicTargetHint.None);
+        return filter(MagicSource.NONE, game.getTurnPlayer(), MagicTargetHint.None);
     }
     
     public List<MagicItemOnStack> filter(final MagicPlayer player) {
-        return filter(player.getGame(), player, MagicTargetHint.None);
+        return filter(MagicSource.NONE, player, MagicTargetHint.None);
     }
     
-    public boolean accept(final MagicGame game, final MagicSource source, final MagicItemOnStack target) {
-        return accept(game, source.getController(), target);
+    public boolean accept(final MagicSource source, final MagicPlayer player, final MagicItemOnStack target) {
+        return accept(player.getGame(), player, target);
     }
     
-    public List<MagicItemOnStack> filter(final MagicGame game, final MagicSource source, final MagicTargetHint targetHint) {
-        return filter(game, source.getController(), targetHint); 
-    }
-
-    public List<MagicItemOnStack> filter(final MagicGame game, final MagicPlayer player, final MagicTargetHint targetHint) {
+    public List<MagicItemOnStack> filter(final MagicSource source, final MagicPlayer player, final MagicTargetHint targetHint) {
+        final MagicGame game = player.getGame();
         final List<MagicItemOnStack> targets=new ArrayList<MagicItemOnStack>();
 
         // Items on stack
         if (acceptType(MagicTargetType.Stack)) {
             for (final MagicItemOnStack targetItemOnStack : game.getStack()) {
-                if (accept(game,player,targetItemOnStack) &&
+                if (accept(source,player,targetItemOnStack) &&
                     targetHint.accept(player,targetItemOnStack)) {
                     targets.add(targetItemOnStack);
                 }

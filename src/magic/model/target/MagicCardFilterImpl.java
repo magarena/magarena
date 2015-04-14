@@ -16,52 +16,48 @@ import java.util.Set;
 
 public abstract class MagicCardFilterImpl implements MagicTargetFilter<MagicCard> {
     public List<MagicCard> filter(final MagicGame game) {
-        return filter(game, game.getTurnPlayer(), MagicTargetHint.None);
+        return filter(MagicSource.NONE, game.getTurnPlayer(), MagicTargetHint.None);
     }
     
     public List<MagicCard> filter(final MagicPlayer player) {
-        return filter(player.getGame(), player, MagicTargetHint.None);
+        return filter(MagicSource.NONE, player, MagicTargetHint.None);
     }
     
-    public boolean accept(final MagicGame game, final MagicSource source, final MagicCard target) {
-        return accept(game, source.getController(), target);
+    public boolean accept(final MagicSource source, final MagicPlayer player, final MagicCard target) {
+        return accept(player.getGame(), player, target);
     }
     
-    public List<MagicCard> filter(final MagicGame game, final MagicSource source, final MagicTargetHint targetHint) {
-        return filter(game, source.getController(), targetHint); 
-    }
-
-    public List<MagicCard> filter(final MagicGame game, final MagicPlayer player, final MagicTargetHint targetHint) {
+    public List<MagicCard> filter(final MagicSource source, final MagicPlayer player, final MagicTargetHint targetHint) {
         final List<MagicCard> targets = new ArrayList<MagicCard>();
 
         // Cards in graveyard
         if (acceptType(MagicTargetType.Graveyard)) {
-            add(game, player, player.getGraveyard(), targets, false);
+            add(source, player, player.getGraveyard(), targets, false);
         }
 
         // Cards in opponent's graveyard
         if (acceptType(MagicTargetType.OpponentsGraveyard)) {
-            add(game, player, player.getOpponent().getGraveyard(), targets, false);
+            add(source, player, player.getOpponent().getGraveyard(), targets, false);
         }
 
         // Cards in hand
         if (acceptType(MagicTargetType.Hand)) {
-            add(game, player, player.getHand(), targets, false);
+            add(source, player, player.getHand(), targets, false);
         }
         
         // Cards in library
         if (acceptType(MagicTargetType.Library)) {
             // only consider unique cards, possible as cards in library will not be counted
-            add(game, player, player.getLibrary(), targets, true);
+            add(source, player, player.getLibrary(), targets, true);
         }
 
         return targets;
     }
 
-    private void add(final MagicGame game, final MagicPlayer player, final List<MagicCard> cards, final List<MagicCard> targets, final boolean unique) {
+    private void add(final MagicSource source, final MagicPlayer player, final List<MagicCard> cards, final List<MagicCard> targets, final boolean unique) {
         final Set<Long> added = new HashSet<Long>();
         for (final MagicCard card : cards) {
-            if (accept(game,player,card) && (unique == false || added.contains(card.getStateId()) == false)) {
+            if (accept(source,player,card) && (unique == false || added.contains(card.getStateId()) == false)) {
                 targets.add(card);
                 added.add(card.getStateId());
             }

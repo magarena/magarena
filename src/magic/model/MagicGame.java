@@ -1152,7 +1152,7 @@ public class MagicGame {
         }
 
         final Collection<? extends MagicTarget> targets = targetChoice.getTargetFilter().filter(
-            this,
+            source,
             player,
             targetChoice.getTargetHint(hints)
         );
@@ -1177,7 +1177,7 @@ public class MagicGame {
             final MagicTargetHint targetHint) {
 
         final Collection<? extends MagicTarget> targets = targetChoice.getTargetFilter().filter(
-            this,
+            source,
             player,
             targetHint
         );
@@ -1217,7 +1217,7 @@ public class MagicGame {
 
         if (target==null ||
             target==MagicTargetNone.getInstance() ||
-            !targetFilter.accept(this,player,target)) {
+            !targetFilter.accept(source,player,target)) {
             return false;
         }
 

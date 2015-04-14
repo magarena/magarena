@@ -9,28 +9,25 @@ import java.util.List;
 
 public abstract class MagicPlayerFilterImpl implements MagicTargetFilter<MagicPlayer> {
     public List<MagicPlayer> filter(final MagicGame game) {
-        return filter(game, game.getTurnPlayer(), MagicTargetHint.None);
+        return filter(MagicSource.NONE, game.getTurnPlayer(), MagicTargetHint.None);
     }
     
     public List<MagicPlayer> filter(final MagicPlayer player) {
-        return filter(player.getGame(), player, MagicTargetHint.None);
+        return filter(MagicSource.NONE, player, MagicTargetHint.None);
     }
     
-    public boolean accept(final MagicGame game, final MagicSource source, final MagicPlayer target) {
-        return accept(game, source.getController(), target);
+    public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPlayer target) {
+        return accept(player.getGame(), player, target);
     }
 
-    public List<MagicPlayer> filter(final MagicGame game, final MagicSource source, final MagicTargetHint targetHint) {
-        return filter(game, source.getController(), targetHint); 
-    }
-    
-    public List<MagicPlayer> filter(final MagicGame game, final MagicPlayer player, final MagicTargetHint targetHint) {
+    public List<MagicPlayer> filter(final MagicSource source, final MagicPlayer player, final MagicTargetHint targetHint) {
+        final MagicGame game = player.getGame();
         final List<MagicPlayer> targets=new ArrayList<MagicPlayer>();
 
         // Players
         if (acceptType(MagicTargetType.Player)) {
             for (final MagicPlayer targetPlayer : game.getPlayers()) {
-                if (accept(game,player,targetPlayer) &&
+                if (accept(source,player,targetPlayer) &&
                     targetHint.accept(player,targetPlayer)) {
                     targets.add(targetPlayer);
                 }
