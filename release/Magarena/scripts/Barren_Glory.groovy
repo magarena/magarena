@@ -18,7 +18,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (ifCondition(event.getPermanent(), event.getPlayer())) {
-                game.doAction(new MagicLoseGameAction(event.getPlayer().getOpponent()));
+                game.doAction(new LoseGameAction(event.getPlayer().getOpponent()));
             }
         }
     }

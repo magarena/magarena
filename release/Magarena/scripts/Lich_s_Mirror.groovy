@@ -1,7 +1,7 @@
 [
     new MagicIfPlayerWouldLoseTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicLoseGameAction loseAct) {
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final LoseGameAction loseAct) {
             final MagicPlayer losePlayer = loseAct.getPlayer();
             if (permanent.isController(losePlayer)) {
                 loseAct.setPlayer(MagicPlayer.NONE);

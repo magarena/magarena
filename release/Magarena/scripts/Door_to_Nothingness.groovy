@@ -26,7 +26,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
-                game.doAction(new MagicLoseGameAction(it));
+                game.doAction(new LoseGameAction(it));
             });
         }
     }
