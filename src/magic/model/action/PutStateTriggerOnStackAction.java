@@ -4,11 +4,11 @@ import magic.model.MagicGame;
 import magic.model.event.MagicEvent;
 import magic.model.stack.MagicTriggerOnStack;
 
-public class MagicPutStateTriggerOnStackAction extends MagicAction {
+public class PutStateTriggerOnStackAction extends MagicAction {
 
     private final MagicEvent event;
 
-    public MagicPutStateTriggerOnStackAction(final MagicEvent aEvent) {
+    public PutStateTriggerOnStackAction(final MagicEvent aEvent) {
         event = aEvent;
     }
 
