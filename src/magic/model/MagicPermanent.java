@@ -7,7 +7,7 @@ import magic.model.action.ChangeCountersAction;
 import magic.model.action.ChangeStateAction;
 import magic.model.action.DestroyAction;
 import magic.model.action.RemoveFromPlayAction;
-import magic.model.action.MagicSoulbondAction;
+import magic.model.action.SoulbondAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicActivation;
 import magic.model.event.MagicBestowActivation;
@@ -780,7 +780,7 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
             // Soulbond
             if (pairedCreature.isValid() &&
                 !pairedCreature.isCreature()) {
-                game.doAction(new MagicSoulbondAction(this,pairedCreature,false));
+                game.doAction(new SoulbondAction(this,pairedCreature,false));
             }
         }
 

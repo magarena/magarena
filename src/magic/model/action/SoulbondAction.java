@@ -3,14 +3,14 @@ package magic.model.action;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 
-public class MagicSoulbondAction extends MagicAction {
+public class SoulbondAction extends MagicAction {
 
     private final MagicPermanent permanent;
     private final MagicPermanent pairedCreature;
     private final boolean set;
     private boolean valid;
 
-    public MagicSoulbondAction(final MagicPermanent permanent,final MagicPermanent pairedCreature,final boolean set) {
+    public SoulbondAction(final MagicPermanent permanent,final MagicPermanent pairedCreature,final boolean set) {
         this.permanent = permanent;
         this.pairedCreature = pairedCreature;
         this.set = set;

@@ -77,7 +77,7 @@ public class RemoveFromPlayAction extends MagicAction {
 
         // Soulbond
         if (permanent.getPairedCreature().isValid()) {
-            game.doAction(new MagicSoulbondAction(permanent,permanent.getPairedCreature(),false));
+            game.doAction(new SoulbondAction(permanent,permanent.getPairedCreature(),false));
         }
 
         game.doAction(new RemoveFromCombatAction(permanent));
