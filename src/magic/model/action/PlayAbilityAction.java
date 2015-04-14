@@ -3,11 +3,11 @@ package magic.model.action;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 
-public class MagicPlayAbilityAction extends MagicAction {
+public class PlayAbilityAction extends MagicAction {
 
     private final MagicPermanent permanent;
 
-    public MagicPlayAbilityAction(final MagicPermanent permanent) {
+    public PlayAbilityAction(final MagicPermanent permanent) {
         this.permanent=permanent;
     }
 
