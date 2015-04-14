@@ -6,7 +6,7 @@ import magic.model.MagicGame;
 import magic.model.MagicLocationType;
 import magic.model.MagicPlayer;
 
-public class MagicReturnExiledAction extends MagicAction {
+public class ReturnExiledAction extends MagicAction {
 
     private MagicCardList exiledUntilEndOfTurn;
 
