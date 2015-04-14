@@ -72,7 +72,7 @@ public class MagicPriorityEvent extends MagicEvent {
 
     public MagicPriorityEvent(final MagicPlayer player) {
         super(
-            MagicEvent.NO_SOURCE,
+            MagicSource.NONE,
             player,
             MagicPlayChoice.getInstance(),
             EVENT_ACTION,

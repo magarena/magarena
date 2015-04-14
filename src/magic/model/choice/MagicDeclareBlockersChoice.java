@@ -112,7 +112,7 @@ public class MagicDeclareBlockersChoice extends MagicChoice {
                     controller.showMessage(blocker,ATTACKER_MESSAGE);
                     controller.disableActionButton(false);
                     controller.waitForInput();
-                    controller.setSourceCardDefinition(MagicEvent.NO_SOURCE);
+                    controller.setSourceCardDefinition(MagicSource.NONE);
                     controller.clearValidChoices();
                     final MagicPermanent attacker = controller.getChoiceClicked();
                     attacker.addBlockingCreature(blocker);

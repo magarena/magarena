@@ -232,7 +232,7 @@ public class SwingGameController implements IUIGameController, ILogBookListener 
         if (game.hasUndoPoints()) {
             actionClicked = false;
             choiceClicked = MagicTargetNone.getInstance();
-            setSourceCardDefinition(MagicEvent.NO_SOURCE);
+            setSourceCardDefinition(MagicSource.NONE);
             clearValidChoices();
             resume(true);
         }
@@ -469,7 +469,7 @@ public class SwingGameController implements IUIGameController, ILogBookListener 
             validChoices.clear();
             combatChoice=false;
             showValidChoices();
-            showMessage(MagicEvent.NO_SOURCE, "");
+            showMessage(MagicSource.NONE, "");
         }
     }
 
@@ -530,7 +530,7 @@ public class SwingGameController implements IUIGameController, ILogBookListener 
         if (source == null) {
             throw new RuntimeException("source is null");
         }
-        if (source == MagicEvent.NO_SOURCE) {
+        if (source == MagicSource.NONE) {
             return message;
         } else {
             return "("+source+")|"+message;
@@ -573,7 +573,7 @@ public class SwingGameController implements IUIGameController, ILogBookListener 
     private Object[] getArtificialNextEventChoiceResults(final MagicEvent event) {
         disableActionButton(true);
         if (CONFIG.getHideAiActionPrompt()) {
-            showMessage(MagicEvent.NO_SOURCE, "");
+            showMessage(MagicSource.NONE, "");
         } else {
             showMessage(event.getSource(),event.getChoiceDescription());
         }
@@ -598,7 +598,7 @@ public class SwingGameController implements IUIGameController, ILogBookListener 
             choiceResults = event.getChoice().getPlayerChoiceResults(this,game,event.getPlayer(),source);
         } finally {
             clearValidChoices();
-            setSourceCardDefinition(MagicEvent.NO_SOURCE);
+            setSourceCardDefinition(MagicSource.NONE);
         }
         return choiceResults;
     }
@@ -751,7 +751,7 @@ public class SwingGameController implements IUIGameController, ILogBookListener 
                 }
             });
         }
-        showMessage(MagicEvent.NO_SOURCE,
+        showMessage(MagicSource.NONE,
                 "{L} " +
                 game.getLosingPlayer() + " " +
                 (gameConceded.get() ? "conceded" : "lost" ) +

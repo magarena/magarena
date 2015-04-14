@@ -2,6 +2,7 @@ package magic.model.phase;
 
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
+import magic.model.MagicSource;
 import magic.model.phase.MagicPhaseType;
 import magic.model.action.ChangeExtraTurnsAction;
 import magic.model.action.CleanupPlayerAction;
@@ -28,7 +29,7 @@ public class MagicCleanupPhase extends MagicPhase {
         // discard excess cards
         if (turnPlayer.getNumExcessCards() > 0) {
             final int amount = turnPlayer.getNumExcessCards();
-            game.addEvent(new MagicDiscardEvent(MagicEvent.NO_SOURCE,turnPlayer,amount));
+            game.addEvent(new MagicDiscardEvent(MagicSource.NONE,turnPlayer,amount));
         }
         // remove until EOT triggers/static, clean up player and permanents
         game.doAction(new CleanupTurnTriggersAction());

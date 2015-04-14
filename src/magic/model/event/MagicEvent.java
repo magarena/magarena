@@ -43,7 +43,6 @@ import java.util.List;
 public class MagicEvent implements MagicCopyable {
 
     public static final Object[] NO_CHOICE_RESULTS = new Object[0];
-    public static final MagicSource NO_SOURCE = MagicCard.NONE;
     public static final MagicEvent[] NO_EVENTS = new MagicEvent[0];
     public static final MagicCopyable NO_REF = new MagicInteger(-1);
     public static final MagicEventAction NO_ACTION = new MagicEventAction() {
@@ -75,7 +74,7 @@ public class MagicEvent implements MagicCopyable {
         }
     }
 
-    public static final MagicEvent NONE = new MagicEvent(NO_SOURCE, MagicPlayer.NONE, NO_REF, NO_ACTION, "") {
+    public static final MagicEvent NONE = new MagicEvent(MagicSource.NONE, MagicPlayer.NONE, NO_REF, NO_ACTION, "") {
         @Override
         public boolean isValid() {
             return false;

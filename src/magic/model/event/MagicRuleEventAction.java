@@ -2733,11 +2733,7 @@ public enum MagicRuleEventAction {
             final MagicSourceEvent e1 = MagicRuleEventAction.create(matcher.group("effect1"));
             final MagicSourceEvent e2 = MagicRuleEventAction.create(matcher.group("effect2"));
             final MagicSourceEvent e3 = MagicRuleEventAction.create(matcher.group("effect3"));
-            return new MagicOrChoice(
-                e1.getEvent(MagicEvent.NO_SOURCE).getChoice(),
-                e2.getEvent(MagicEvent.NO_SOURCE).getChoice(),
-                e3.getEvent(MagicEvent.NO_SOURCE).getChoice()
-            );
+            return new MagicOrChoice(e1.getChoice(), e2.getChoice(), e3.getChoice());
         }
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
@@ -2761,10 +2757,7 @@ public enum MagicRuleEventAction {
         public MagicChoice getChoice(final Matcher matcher) {
             final MagicSourceEvent e1 = MagicRuleEventAction.create(matcher.group("effect1"));
             final MagicSourceEvent e2 = MagicRuleEventAction.create(matcher.group("effect2"));
-            return new MagicOrChoice(
-                e1.getEvent(MagicEvent.NO_SOURCE).getChoice(),
-                e2.getEvent(MagicEvent.NO_SOURCE).getChoice()
-            );
+            return new MagicOrChoice(e1.getChoice(), e2.getChoice());
         }
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
@@ -3260,7 +3253,7 @@ public enum MagicRuleEventAction {
         @Override
         public MagicChoice getChoice(final Matcher matcher) {
             final MagicSourceEvent e = MagicRuleEventAction.create(matcher.group("effect"));
-            return e.getEvent(MagicEvent.NO_SOURCE).getChoice();
+            return e.getChoice();
         }
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
@@ -3282,7 +3275,7 @@ public enum MagicRuleEventAction {
             final MagicSourceEvent e = matcher.group("win") != null ?
                 MagicRuleEventAction.create(matcher.group("win")):
                 MagicRuleEventAction.create(matcher.group("lose"));
-            return e.getEvent(MagicEvent.NO_SOURCE).getChoice();
+            return e.getChoice();
         }
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
@@ -3318,7 +3311,7 @@ public enum MagicRuleEventAction {
             final MagicSourceEvent e = matcher.group("win") != null ?
                 MagicRuleEventAction.create(matcher.group("win")):
                 MagicRuleEventAction.create(matcher.group("lose"));
-            return e.getEvent(MagicEvent.NO_SOURCE).getTargetPicker();
+            return e.getPicker();
         }
         @Override
         public String getName(final Matcher matcher) {

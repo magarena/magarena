@@ -2,6 +2,7 @@ package magic.model.action;
 
 import magic.model.MagicCard;
 import magic.model.MagicGame;
+import magic.model.MagicSource;
 import magic.model.MagicPlayer;
 import magic.model.choice.MagicFromCardListChoice;
 import magic.model.event.MagicEvent;
@@ -33,7 +34,7 @@ public class MagicLookAction extends MagicAction {
             return;
         }
         game.addEvent(new MagicEvent(
-            MagicEvent.NO_SOURCE,
+            MagicSource.NONE,
             player,
             new MagicFromCardListChoice(cards, "Look at the " + desc + "."),
             MagicEvent.NO_ACTION,

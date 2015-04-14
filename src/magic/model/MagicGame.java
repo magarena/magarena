@@ -96,7 +96,7 @@ public class MagicGame {
     private MagicActionList undoPoints;
     private MagicLogBook logBook;
     private MagicLogMessageBuilder logMessageBuilder;
-    private MagicSource activeSource = MagicEvent.NO_SOURCE;
+    private MagicSource activeSource = MagicSource.NONE;
     private long[] keys;
     private long stateId;
     private long time = 1000000;

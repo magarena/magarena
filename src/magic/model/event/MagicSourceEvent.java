@@ -3,6 +3,8 @@ package magic.model.event;
 import magic.model.MagicSource;
 import magic.model.MagicCopyable;
 import magic.model.condition.MagicCondition;
+import magic.model.choice.MagicChoice;
+import magic.model.target.MagicTargetPicker;
 
 import java.util.regex.Matcher;
 
@@ -39,5 +41,13 @@ public abstract class MagicSourceEvent {
 
     public MagicEventAction getAction() {
         return rule.getAction(matcher);
+    }
+
+    public MagicChoice getChoice() {
+        return rule.getChoice(matcher);
+    }
+    
+    public MagicTargetPicker<?> getPicker() {
+        return rule.getPicker(matcher);
     }
 }

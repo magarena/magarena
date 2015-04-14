@@ -2,6 +2,7 @@ package magic.model.action;
 
 import magic.model.MagicCard;
 import magic.model.MagicGame;
+import magic.model.MagicSource;
 import magic.model.MagicPlayer;
 import magic.model.choice.MagicFromCardListChoice;
 import magic.model.event.MagicEvent;
@@ -31,7 +32,7 @@ public class MagicRevealAction extends MagicAction {
         final String message = you + " reveals " + cardNames(cards);
         game.logAppendMessage(you, message);
         game.addEvent(new MagicEvent(
-            MagicEvent.NO_SOURCE,
+            MagicSource.NONE,
             you.getOpponent(),
             new MagicFromCardListChoice(cards, message),
             MagicEvent.NO_ACTION,

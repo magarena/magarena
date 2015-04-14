@@ -47,8 +47,8 @@ public abstract class MagicSpellCardEvent implements MagicCardEvent,MagicEventAc
         final String text2 = matcher.group("effect2");
         final MagicSourceEvent effect1 = MagicRuleEventAction.create(text1);
         final MagicSourceEvent effect2 = MagicRuleEventAction.create(text2);
-        final MagicChoice choice1 = effect1.getEvent(MagicEvent.NO_SOURCE).getChoice();
-        final MagicChoice choice2 = effect2.getEvent(MagicEvent.NO_SOURCE).getChoice();
+        final MagicChoice choice1 = effect1.getChoice();
+        final MagicChoice choice2 = effect2.getChoice();
         if (choice1.isValid() && choice2.isValid()) {
             throw new RuntimeException("effect cannot have two valid choices: \"" + rule + "\"");
         }
