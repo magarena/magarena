@@ -8,13 +8,13 @@ import magic.model.mstatic.MagicStatic;
 import java.util.Collections;
 import java.util.Collection;
 
-public class MagicTransformAction extends MagicAction {
+public class TransformAction extends MagicAction {
 
     public final MagicPermanent permanent;
     private Collection<MagicStatic> oldStatics = Collections.emptyList();
     private Collection<MagicStatic> newStatics = Collections.emptyList();
 
-    public MagicTransformAction(final MagicPermanent aPermanent) {
+    public TransformAction(final MagicPermanent aPermanent) {
         permanent = aPermanent;
     }
 

@@ -2642,7 +2642,7 @@ public enum MagicRuleEventAction {
         new MagicEventAction() {
             @Override
             public void executeEvent(final MagicGame game, final MagicEvent event) {
-                game.doAction(new MagicTransformAction(event.getPermanent()));
+                game.doAction(new TransformAction(event.getPermanent()));
             }
         }
     ),
