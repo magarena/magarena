@@ -70,8 +70,13 @@ public class ARG {
     }
     
     public static final String PT = "(?<pt>[+-][0-9]+/[+-][0-9]+)";
-    public static String pt(final Matcher m) {
-        return m.group("pt");
+    public static int[] pt(final Matcher m) {
+        final String[] pt = m.group("pt").replace("+","").split("/");
+        return new int[]{Integer.parseInt(pt[0]), Integer.parseInt(pt[1])};
+    }
+    public static MagicPowerToughness mpt(final Matcher m) {
+        final String[] pt = m.group("pt").replace("+","").split("/");
+        return new MagicPowerToughness(Integer.parseInt(pt[0]), Integer.parseInt(pt[1]));
     }
     
     public static final String IT = "((?<rn>rn)|(?<sn>sn))";

@@ -87,6 +87,16 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
         }
     }
     
+    public static MagicStatic genSelfPTStatic(final MagicTargetFilter<MagicPermanent> filter, final MagicPowerToughness given) {
+        return new MagicStatic(MagicLayer.ModPT) {
+            @Override
+            public void modPowerToughness(final MagicPermanent source, final MagicPermanent permanent, final MagicPowerToughness pt) {
+                final int amt = filter.filter(permanent.getController()).size();
+                pt.add(given.power() * amt, given.toughness() * amt);
+            }
+        };
+    }
+    
     public static MagicStatic genPTStatic(final MagicTargetFilter<MagicPermanent> filter, final int givenPower, final int givenToughness) {
         return new MagicStatic(
             MagicLayer.ModPT,
