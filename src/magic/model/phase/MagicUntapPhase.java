@@ -7,7 +7,7 @@ import magic.model.MagicPermanentState;
 import magic.model.MagicPlayer;
 import magic.model.MagicPlayerState;
 import magic.model.action.ChangeStateAction;
-import magic.model.action.MagicUntapAction;
+import magic.model.action.UntapAction;
 import magic.model.trigger.MagicTriggerType;
 
 public class MagicUntapPhase extends MagicPhase {
@@ -35,7 +35,7 @@ public class MagicUntapPhase extends MagicPhase {
                 game.doAction(ChangeStateAction.Clear(permanent,MagicPermanentState.DoesNotUntapDuringNext));
             } else if (permanent.isTapped() && !permanent.hasAbility(MagicAbility.DoesNotUntap) &&
                       (!exhausted || !(permanent.isLand() || permanent.isCreature()))) {
-                game.doAction(new MagicUntapAction(permanent));
+                game.doAction(new UntapAction(permanent));
             }
         }
     }

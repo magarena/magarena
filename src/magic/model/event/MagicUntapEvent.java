@@ -2,7 +2,7 @@ package magic.model.event;
 
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
-import magic.model.action.MagicUntapAction;
+import magic.model.action.UntapAction;
 import magic.model.condition.MagicCondition;
 
 public class MagicUntapEvent extends MagicEvent {
@@ -20,7 +20,7 @@ public class MagicUntapEvent extends MagicEvent {
     private static final MagicEventAction EVENT_ACTION=new MagicEventAction() {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicUntapAction(event.getPermanent()));
+            game.doAction(new UntapAction(event.getPermanent()));
         }
     };
 

@@ -2134,7 +2134,7 @@ public enum MagicRuleEventAction {
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    game.doAction(new MagicUntapAction(ARG.itPermanent(event, matcher)));
+                    game.doAction(new UntapAction(ARG.itPermanent(event, matcher)));
                 }
             };
         }
@@ -2157,7 +2157,7 @@ public enum MagicRuleEventAction {
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
                     final Collection<MagicPermanent> targets = game.filterPermanents(event.getPlayer(),filter);
                     for (final MagicPermanent perm : targets) {
-                        game.doAction(new MagicUntapAction(perm));
+                        game.doAction(new UntapAction(perm));
                     }
                 }
             };
@@ -2174,7 +2174,7 @@ public enum MagicRuleEventAction {
             public void executeEvent(final MagicGame game, final MagicEvent event) {
                 event.processTargetPermanent(game,new MagicPermanentAction() {
                     public void doAction(final MagicPermanent perm) {
-                        game.doAction(new MagicUntapAction(perm));
+                        game.doAction(new UntapAction(perm));
                     }
                 });
             }

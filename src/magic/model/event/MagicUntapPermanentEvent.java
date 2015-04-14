@@ -5,7 +5,7 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.action.MagicPermanentAction;
-import magic.model.action.MagicUntapAction;
+import magic.model.action.UntapAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
 import magic.model.condition.MagicConditionFactory;
@@ -41,7 +41,7 @@ public class MagicUntapPermanentEvent extends MagicEvent {
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent permanent) {
-                    game.doAction(new MagicUntapAction(permanent));
+                    game.doAction(new UntapAction(permanent));
                 }
             });
         }
