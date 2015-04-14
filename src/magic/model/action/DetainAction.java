@@ -11,7 +11,7 @@ import magic.model.trigger.MagicAtUpkeepTrigger;
 
 import java.util.Set;
 
-public class MagicDetainAction extends MagicAction {
+public class DetainAction extends MagicAction {
 
     private final MagicPermanent targetPermanent;
     private final MagicPlayer sourceController;
@@ -35,7 +35,7 @@ public class MagicDetainAction extends MagicAction {
         }
     };
 
-    public MagicDetainAction(final MagicPlayer aSourceController, final MagicPermanent aTargetPermanent) {
+    public DetainAction(final MagicPlayer aSourceController, final MagicPermanent aTargetPermanent) {
         sourceController = aSourceController;
         targetPermanent = aTargetPermanent;
     }
