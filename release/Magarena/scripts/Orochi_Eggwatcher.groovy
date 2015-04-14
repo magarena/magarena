@@ -26,7 +26,7 @@
                 TokenCardDefinitions.get("1/1 green Snake creature token")
             ));
             if (event.getPlayer().getNrOfPermanents(MagicType.Creature) >= 10) {
-                game.doAction(new MagicFlipAction(event.getPermanent()));
+                game.doAction(new FlipAction(event.getPermanent()));
             }
         }
     }

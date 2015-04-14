@@ -33,7 +33,7 @@
                     MagicLocationType.Exile
                 ));
                 if (it.getOwner().getGraveyard().isEmpty()) {
-                    game.doAction(new MagicFlipAction(event.getPermanent()));
+                    game.doAction(new FlipAction(event.getPermanent()));
                 }
             });
         }

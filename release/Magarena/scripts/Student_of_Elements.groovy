@@ -1,6 +1,6 @@
 def action = {
     final MagicGame game, final MagicEvent event ->
-    game.doAction(new MagicFlipAction(event.getPermanent()));
+    game.doAction(new FlipAction(event.getPermanent()));
 }
 
 [
