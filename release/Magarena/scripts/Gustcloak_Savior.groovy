@@ -17,7 +17,7 @@
             if (event.isYes()) {
                 final MagicPermanent permanent = event.getRefPermanent();
                 game.doAction(new MagicUntapAction(permanent));
-                game.doAction(new MagicRemoveFromCombatAction(permanent));
+                game.doAction(new RemoveFromCombatAction(permanent));
             }
         }
     }
