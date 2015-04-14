@@ -29,7 +29,7 @@ public abstract class MagicWhenOtherComesIntoPlayTrigger extends MagicTrigger<Ma
         return new MagicWhenOtherComesIntoPlayTrigger() {
             @Override
             public boolean accept(final MagicPermanent permanent, final MagicPermanent played) {
-                return permanent == played || filter.accept(permanent.getGame(), permanent.getController(), played);
+                return permanent == played || filter.accept(permanent, permanent.getController(), played);
             }
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPermanent played) {
@@ -41,7 +41,7 @@ public abstract class MagicWhenOtherComesIntoPlayTrigger extends MagicTrigger<Ma
         return new MagicWhenOtherComesIntoPlayTrigger() {
             @Override
             public boolean accept(final MagicPermanent permanent, final MagicPermanent played) {
-                return permanent != played && filter.accept(permanent.getGame(), permanent.getController(), played);
+                return permanent != played && filter.accept(permanent, permanent.getController(), played);
             }
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPermanent played) {
@@ -54,7 +54,7 @@ public abstract class MagicWhenOtherComesIntoPlayTrigger extends MagicTrigger<Ma
         return new MagicWhenOtherComesIntoPlayTrigger() {
             @Override
             public boolean accept(final MagicPermanent permanent, final MagicPermanent played) {
-                return filter.accept(permanent.getGame(), permanent.getController(), played);
+                return filter.accept(permanent, permanent.getController(), played);
             }
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPermanent played) {

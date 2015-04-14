@@ -17,10 +17,6 @@ public abstract class MagicStackFilterImpl implements MagicTargetFilter<MagicIte
         return filter(MagicSource.NONE, player, MagicTargetHint.None);
     }
     
-    public boolean accept(final MagicSource source, final MagicPlayer player, final MagicItemOnStack target) {
-        return accept(player.getGame(), player, target);
-    }
-    
     public List<MagicItemOnStack> filter(final MagicSource source, final MagicPlayer player, final MagicTargetHint targetHint) {
         final MagicGame game = player.getGame();
         final List<MagicItemOnStack> targets=new ArrayList<MagicItemOnStack>();

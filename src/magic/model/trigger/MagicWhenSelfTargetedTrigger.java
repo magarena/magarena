@@ -18,7 +18,7 @@ public abstract class MagicWhenSelfTargetedTrigger extends MagicWhenTargetedTrig
         return new MagicWhenSelfTargetedTrigger() {
             @Override
             public boolean accept(final MagicPermanent permanent, final MagicItemOnStack itemOnStack) {
-                return super.accept(permanent, itemOnStack) && filter.accept(permanent.getGame(), permanent.getController(), itemOnStack);
+                return super.accept(permanent, itemOnStack) && filter.accept(permanent, permanent.getController(), itemOnStack);
             }
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicItemOnStack itemOnStack) {

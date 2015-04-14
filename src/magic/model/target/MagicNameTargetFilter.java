@@ -1,6 +1,6 @@
 package magic.model.target;
 
-import magic.model.MagicGame;
+import magic.model.MagicSource;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 
@@ -19,7 +19,7 @@ public class MagicNameTargetFilter extends MagicPermanentFilterImpl {
     }
 
     @Override
-    public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
-        return name.equals(target.getName()) && targetFilter.accept(game, player, target);
+    public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+        return name.equals(target.getName()) && targetFilter.accept(source, player, target);
     }
 }

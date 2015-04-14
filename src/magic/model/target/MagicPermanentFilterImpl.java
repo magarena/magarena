@@ -16,10 +16,6 @@ public abstract class MagicPermanentFilterImpl implements MagicTargetFilter<Magi
     public List<MagicPermanent> filter(final MagicPlayer player) {
         return filter(MagicSource.NONE, player, MagicTargetHint.None);
     }
-
-    public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
-        return accept(player.getGame(), player, target);
-    }
     
     public List<MagicPermanent> filter(final MagicSource source, MagicPlayer player, final MagicTargetHint targetHint) {
         final MagicGame game = player.getGame();

@@ -26,7 +26,7 @@ public abstract class MagicWhenSelfBlocksTrigger extends MagicWhenBlocksTrigger 
             @Override
             public boolean accept(final MagicPermanent permanent, final MagicPermanent blocker) {
                 return super.accept(permanent, blocker) &&
-                       filter.accept(permanent.getGame(), permanent.getController(), permanent.getBlockedCreature());
+                       filter.accept(permanent, permanent.getController(), permanent.getBlockedCreature());
             }
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPermanent blocker) {

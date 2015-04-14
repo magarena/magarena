@@ -20,7 +20,7 @@ public abstract class MagicCannotBeBlockedTrigger extends MagicTrigger<MagicPerm
         return new MagicCannotBeBlockedTrigger() {
             @Override
             public boolean accept(final MagicPermanent permanent, final MagicPermanent other) {
-                return filter.accept(permanent.getGame(), permanent.getController(), other);
+                return filter.accept(permanent, permanent.getController(), other);
             }
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPermanent other) {
@@ -33,7 +33,7 @@ public abstract class MagicCannotBeBlockedTrigger extends MagicTrigger<MagicPerm
         return new MagicCannotBeBlockedTrigger() {
             @Override
             public boolean accept(final MagicPermanent permanent, final MagicPermanent other) {
-                return filter.accept(permanent.getGame(), permanent.getController(), other) == false;
+                return filter.accept(permanent, permanent.getController(), other) == false;
             }
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPermanent other) {

@@ -1,6 +1,6 @@
 package magic.model.target;
 
-import magic.model.MagicGame;
+import magic.model.MagicSource;
 import magic.model.MagicPlayer;
 import magic.model.target.MagicTarget;
 
@@ -15,8 +15,8 @@ public class MagicOtherTargetFilter extends MagicTargetFilterImpl {
         id = invalid.getId();
     }
     @Override
-    public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
-        return targetFilter.accept(game,player,target) &&
+    public boolean accept(final MagicSource source,final MagicPlayer player,final MagicTarget target) {
+        return targetFilter.accept(source,player,target) &&
                target.getId() != id;
     }
     @Override

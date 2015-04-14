@@ -1,6 +1,6 @@
 package magic.model.target;
 
-import magic.model.MagicGame;
+import magic.model.MagicSource;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 
@@ -13,7 +13,7 @@ public class MagicPermanentTargetFilter extends MagicPermanentFilterImpl {
         id = validPermanent.getId();
     }
     @Override
-    public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+    public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
         return target.isPermanent() &&
                target.getId() == id;
     }

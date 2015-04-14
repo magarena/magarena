@@ -20,7 +20,7 @@ public abstract class MagicWhenBlocksTrigger extends MagicTrigger<MagicPermanent
     public static MagicWhenBlocksTrigger create(final MagicTargetFilter<MagicPermanent> filter, final MagicSourceEvent sourceEvent) {
         return new MagicWhenBlocksTrigger() {
             public boolean accept(final MagicPermanent permanent, final MagicPermanent blocker) {
-                return filter.accept(permanent.getGame(), permanent.getController(), blocker);
+                return filter.accept(permanent, permanent.getController(), blocker);
             }
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPermanent blocker) {

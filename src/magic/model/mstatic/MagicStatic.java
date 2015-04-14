@@ -70,7 +70,7 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
         if (filter == MagicTargetFilterFactory.NONE) {
             return source == target && condition(game, source, target);
         } else {
-            return filter.accept(game, source.getController(), target) && condition(game, source, target);
+            return filter.accept(source, source.getController(), target) && condition(game, source, target);
         }
     }
 

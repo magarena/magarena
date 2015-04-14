@@ -1,6 +1,7 @@
 package magic.model.trigger;
 
 import magic.model.MagicGame;
+import magic.model.MagicSource;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
@@ -41,7 +42,7 @@ public class MagicChampionTrigger extends MagicWhenComesIntoPlayTrigger {
         final MagicTargetFilter<MagicPermanent> targetFilter = subtypes.length == 0 ?
             MagicTargetFilterFactory.CREATURE_YOU_CONTROL :
             new MagicPermanentFilterImpl() {
-                public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent tribal) {
+                public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent tribal) {
                     boolean hasSubType = false;
                     for (final MagicSubType subtype : subtypes) {
                         hasSubType |= tribal.hasSubType(subtype);

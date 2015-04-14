@@ -23,7 +23,7 @@ public abstract class MagicWhenOtherSpellIsCastTrigger extends MagicTrigger<Magi
         return new MagicWhenOtherSpellIsCastTrigger() {
             @Override
             public boolean accept(final MagicPermanent permanent, final MagicCardOnStack spell) {
-                return filter.accept(permanent.getGame(), permanent.getController(), spell);
+                return filter.accept(permanent, permanent.getController(), spell);
             }
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicCardOnStack spell) {
@@ -36,7 +36,7 @@ public abstract class MagicWhenOtherSpellIsCastTrigger extends MagicTrigger<Magi
         return new MagicWhenOtherSpellIsCastTrigger() {
             @Override
             public boolean accept(final MagicPermanent permanent, final MagicCardOnStack spell) {
-                return permanent.isFriend(spell) && filter.accept(permanent.getGame(), permanent.getController(), spell);
+                return permanent.isFriend(spell) && filter.accept(permanent, permanent.getController(), spell);
             }
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicCardOnStack spell) {
@@ -49,7 +49,7 @@ public abstract class MagicWhenOtherSpellIsCastTrigger extends MagicTrigger<Magi
         return new MagicWhenOtherSpellIsCastTrigger() {
             @Override
             public boolean accept(final MagicPermanent permanent, final MagicCardOnStack spell) {
-                return permanent.isEnemy(spell) && filter.accept(permanent.getGame(), permanent.getController(), spell);
+                return permanent.isEnemy(spell) && filter.accept(permanent, permanent.getController(), spell);
             }
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicCardOnStack spell) {

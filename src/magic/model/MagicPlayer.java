@@ -435,7 +435,7 @@ public class MagicPlayer extends MagicObjectImpl implements MagicTarget, MagicMa
             
     private void addCards(final List<MagicCard> targets, final MagicCardList list, final MagicTargetFilter<MagicCard> filter) {
         for (final MagicCard card : list) {
-            if (filter.accept(currGame, this, card)) {
+            if (filter.accept(MagicSource.NONE, this, card)) {
                 targets.add(card);
             }
         }
@@ -560,7 +560,7 @@ public class MagicPlayer extends MagicObjectImpl implements MagicTarget, MagicMa
     public int getNrOfPermanents(final MagicTargetFilter<MagicPermanent> filter) {
         int count = 0;
         for (final MagicPermanent permanent : permanents) {
-            if (filter.accept(currGame, this, permanent)) {
+            if (filter.accept(MagicSource.NONE, this, permanent)) {
                 count++;
             }
         }
@@ -569,7 +569,7 @@ public class MagicPlayer extends MagicObjectImpl implements MagicTarget, MagicMa
 
     public boolean controlsPermanent(final MagicTargetFilter<MagicPermanent> filter) {
         for (final MagicPermanent permanent : permanents) {
-            if (filter.accept(currGame, this, permanent)) {
+            if (filter.accept(MagicSource.NONE, this, permanent)) {
                 return true;
             }
         }

@@ -1,6 +1,6 @@
 package magic.model.target;
 
-import magic.model.MagicGame;
+import magic.model.MagicSource;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.MagicSubType;
@@ -22,7 +22,7 @@ public class MagicPlaneswalkerCopiesFilter extends MagicPermanentFilterImpl {
     }
 
     @Override
-    public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+    public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
         if (target.hasType(MagicType.Planeswalker) == false) {
             return false;
         }

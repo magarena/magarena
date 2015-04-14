@@ -33,7 +33,7 @@ public abstract class MagicWhenLeavesPlayTrigger extends MagicTrigger<MagicRemov
         return new MagicWhenLeavesPlayTrigger() {
             @Override
             public boolean accept(final MagicPermanent permanent, final MagicRemoveFromPlayAction act) {
-                return filter.accept(permanent.getGame(), permanent.getController(), act.getPermanent());
+                return filter.accept(permanent, permanent.getController(), act.getPermanent());
             }
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicRemoveFromPlayAction act) {
@@ -46,7 +46,7 @@ public abstract class MagicWhenLeavesPlayTrigger extends MagicTrigger<MagicRemov
         return new MagicWhenLeavesPlayTrigger() {
             @Override
             public boolean accept(final MagicPermanent permanent, final MagicRemoveFromPlayAction act) {
-                return permanent == act.getPermanent() || filter.accept(permanent.getGame(), permanent.getController(), act.getPermanent());
+                return permanent == act.getPermanent() || filter.accept(permanent, permanent.getController(), act.getPermanent());
             }
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicRemoveFromPlayAction act) {
@@ -59,7 +59,7 @@ public abstract class MagicWhenLeavesPlayTrigger extends MagicTrigger<MagicRemov
         return new MagicWhenLeavesPlayTrigger() {
             @Override
             public boolean accept(final MagicPermanent permanent, final MagicRemoveFromPlayAction act) {
-                return permanent != act.getPermanent() && filter.accept(permanent.getGame(), permanent.getController(), act.getPermanent());
+                return permanent != act.getPermanent() && filter.accept(permanent, permanent.getController(), act.getPermanent());
             }
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicRemoveFromPlayAction act) {

@@ -22,7 +22,7 @@ public abstract class MagicWhenBecomesTappedTrigger extends MagicTrigger<MagicPe
         return new MagicWhenSelfBecomesTappedTrigger() {
             @Override
             public boolean accept(final MagicPermanent permanent, final MagicPermanent tapped) {
-                return filter.accept(permanent.getGame(), permanent.getController(), tapped);
+                return filter.accept(permanent, permanent.getController(), tapped);
             }
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPermanent tapped) {
