@@ -7,13 +7,13 @@ import magic.model.trigger.MagicPermanentTrigger;
 
 import java.util.Collection;
 
-public class MagicRemoveTriggersStaticsAction extends MagicAction {
+public class RemoveTriggersStaticsAction extends MagicAction {
 
     private final MagicPermanent permanent;
     private Collection<MagicPermanentTrigger> removedTriggers;
     private Collection<MagicPermanentStatic> removedStatics;
 
-    public MagicRemoveTriggersStaticsAction(final MagicPermanent permanent) {
+    public RemoveTriggersStaticsAction(final MagicPermanent permanent) {
         this.permanent=permanent;
     }
 
