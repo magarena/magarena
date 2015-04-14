@@ -30,7 +30,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
             event.processTargetCard(game, {
-                game.doAction(new MagicRemoveCardAction(it,MagicLocationType.Graveyard));
+                game.doAction(new RemoveCardAction(it,MagicLocationType.Graveyard));
                 game.doAction(new MoveCardAction(it,MagicLocationType.Graveyard,MagicLocationType.OwnersHand));
             });
         }

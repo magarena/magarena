@@ -13,7 +13,7 @@
             final MagicCardList top5 = event.getPlayer().getLibrary().getCardsFromTop(5);
             for (final MagicCard top : top5) {
                 game.doAction(new MagicRevealAction(top5));
-                game.doAction(new MagicRemoveCardAction(
+                game.doAction(new RemoveCardAction(
                     top,
                     MagicLocationType.OwnersLibrary
                 ));

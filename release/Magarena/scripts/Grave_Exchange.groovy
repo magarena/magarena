@@ -24,7 +24,7 @@ def action = {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetCard(game, {
-                game.doAction(new MagicRemoveCardAction(
+                game.doAction(new RemoveCardAction(
                     it,
                     MagicLocationType.Graveyard
                 ));

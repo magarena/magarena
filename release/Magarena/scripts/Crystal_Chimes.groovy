@@ -28,7 +28,7 @@
                     event.getPlayer(),
                     ENCHANTMENT_CARD_FROM_GRAVEYARD);
             for (final MagicCard card : targets) {
-                game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard));
+                game.doAction(new RemoveCardAction(card,MagicLocationType.Graveyard));
                 game.doAction(new MoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.OwnersHand));
             }
         }

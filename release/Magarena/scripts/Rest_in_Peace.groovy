@@ -12,7 +12,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             for (final MagicPlayer player : game.getAPNAP()) {
                 for (final MagicCard card : new MagicCardList(player.getGraveyard())) {
-                    game.doAction(new MagicRemoveCardAction(card, MagicLocationType.Graveyard));
+                    game.doAction(new RemoveCardAction(card, MagicLocationType.Graveyard));
                     game.doAction(new MoveCardAction(card, MagicLocationType.Graveyard, MagicLocationType.Exile));
                 }
             }

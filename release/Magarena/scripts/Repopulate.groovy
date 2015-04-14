@@ -14,7 +14,7 @@
             event.processTargetPlayer(game, {
                 final List<MagicCard> graveyard = game.filterCards(it,CREATURE_CARD_FROM_GRAVEYARD);
                 for (final MagicCard card : graveyard) {
-                    game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard));
+                    game.doAction(new RemoveCardAction(card,MagicLocationType.Graveyard));
                     game.doAction(new MoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.OwnersLibrary));
                 }
             });

@@ -13,7 +13,7 @@
             final MagicPlayer player = event.getPlayer();
             player.getLibrary().getCardsFromTop(1) each {
                 game.doAction(new MagicRevealAction(it));
-                game.doAction(new MagicRemoveCardAction(it, MagicLocationType.OwnersLibrary));
+                game.doAction(new RemoveCardAction(it, MagicLocationType.OwnersLibrary));
                 game.doAction(new MoveCardAction(it, MagicLocationType.OwnersLibrary, MagicLocationType.OwnersHand));
                 game.doAction(new ChangeLifeAction(player, it.getConvertedCost()));
             }

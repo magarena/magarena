@@ -23,7 +23,7 @@ def DelayedTrigger = {
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicCard card = event.getCard();
             if (card.isInExile()) {
-                game.doAction(new MagicRemoveCardAction(
+                game.doAction(new RemoveCardAction(
                     card,
                     MagicLocationType.Exile
                 ));

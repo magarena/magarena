@@ -20,7 +20,7 @@
             if (event.isYes()) {
                 event.processTargetCard(game, {
                     final MagicPermanent sn = event.getPermanent();
-                    game.doAction(new MagicRemoveCardAction(it,MagicLocationType.OwnersHand));
+                    game.doAction(new RemoveCardAction(it,MagicLocationType.OwnersHand));
                     game.doAction(new PlayCardAction(it,event.getPlayer(), {
                         final MagicPermanent perm ->
                         final MagicGame G = perm.getGame();

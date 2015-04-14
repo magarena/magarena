@@ -14,7 +14,7 @@
                 game.doAction(new MagicRemoveFromPlayAction(it,MagicLocationType.OwnersHand));
             }
             CREATURE_CARD_FROM_ALL_GRAVEYARDS.filter(game) each {
-                game.doAction(new MagicRemoveCardAction(it,MagicLocationType.Graveyard));
+                game.doAction(new RemoveCardAction(it,MagicLocationType.Graveyard));
                 game.doAction(new MoveCardAction(it,MagicLocationType.Graveyard,MagicLocationType.OwnersHand));
             }
         }

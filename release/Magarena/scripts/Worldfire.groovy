@@ -19,11 +19,11 @@
                 final MagicCardList hand = new MagicCardList(player.getHand());
                 final MagicCardList graveyard = new MagicCardList(player.getGraveyard());
                 for (final MagicCard cardHand : hand) {
-                    game.doAction(new MagicRemoveCardAction(cardHand,MagicLocationType.OwnersHand));
+                    game.doAction(new RemoveCardAction(cardHand,MagicLocationType.OwnersHand));
                     game.doAction(new MoveCardAction(cardHand,MagicLocationType.OwnersHand,MagicLocationType.Exile));
                 }
                 for (final MagicCard cardGraveyard : graveyard) {
-                    game.doAction(new MagicRemoveCardAction(cardGraveyard,MagicLocationType.Graveyard));
+                    game.doAction(new RemoveCardAction(cardGraveyard,MagicLocationType.Graveyard));
                     game.doAction(new MoveCardAction(cardGraveyard,MagicLocationType.Graveyard,MagicLocationType.Exile));
                 }
             }

@@ -22,7 +22,7 @@ def EFFECT2 = MagicRuleEventAction.create("Destroy target artifact.");
             if (event.isMode(1)) {
                 event.processTargetPlayer(game, {
                     for (final MagicCard card : new MagicCardList(it.getGraveyard())) {
-                        game.doAction(new MagicRemoveCardAction(card, MagicLocationType.Graveyard));
+                        game.doAction(new RemoveCardAction(card, MagicLocationType.Graveyard));
                         game.doAction(new MoveCardAction(card, MagicLocationType.Graveyard, MagicLocationType.Exile));
                     }
                 });

@@ -25,7 +25,7 @@ def EFFECT3 = MagicRuleEventAction.create("Put two +1/+1 counters on target crea
                 event.processTargetPlayer(game, {
                     final MagicCardList graveyard = new MagicCardList(it.getGraveyard());
                     for (final MagicCard cardGraveyard : graveyard) {
-                        game.doAction(new MagicRemoveCardAction(cardGraveyard,MagicLocationType.Graveyard));
+                        game.doAction(new RemoveCardAction(cardGraveyard,MagicLocationType.Graveyard));
                         game.doAction(new MoveCardAction(cardGraveyard,MagicLocationType.Graveyard,MagicLocationType.Exile));
                     }
                 });

@@ -24,7 +24,7 @@
             final MagicCardList graveyard = new MagicCardList(player.getGraveyard());
             final List<MagicPermanent> battlefield = player.filterPermanents(PERMANENT_YOU_OWN);
             for (final MagicCard card : hand) {
-                game.doAction(new MagicRemoveCardAction(
+                game.doAction(new RemoveCardAction(
                     card,
                     MagicLocationType.OwnersHand
                 ));
@@ -35,7 +35,7 @@
                 ));
             };
             for (final MagicCard card : graveyard) {
-                game.doAction(new MagicRemoveCardAction(
+                game.doAction(new RemoveCardAction(
                     card,
                     MagicLocationType.Graveyard
                 ));

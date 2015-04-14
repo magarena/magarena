@@ -22,7 +22,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicCardList top1 = event.getPlayer().getGraveyard().getCardsFromTop(1) ;
             for (final MagicCard top : top1) {
-                game.doAction(new MagicRemoveCardAction(
+                game.doAction(new RemoveCardAction(
                     top,
                     MagicLocationType.Graveyard
                 ));

@@ -21,7 +21,7 @@
             final MagicPlayer player = event.getPlayer();
             final MagicCardList topN = player.getLibrary().getCardsFromTop(amount);
             for (final MagicCard card : topN) {
-                game.doAction(new MagicRemoveCardAction(
+                game.doAction(new RemoveCardAction(
                     card,
                     MagicLocationType.OwnersLibrary
                 ));

@@ -11,7 +11,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPermanent permanent = event.getPermanent();
-            game.doAction(new MagicRemoveCardAction(permanent.getCard(),MagicLocationType.Graveyard));
+            game.doAction(new RemoveCardAction(permanent.getCard(),MagicLocationType.Graveyard));
             game.doAction(new MoveCardAction(permanent.getCard(),MagicLocationType.Graveyard,MagicLocationType.Exile));
 
             final MagicPlayer player = event.getPlayer();

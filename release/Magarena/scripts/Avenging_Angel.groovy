@@ -15,7 +15,7 @@
             if (event.isYes()){
                 final MagicCard card = event.getPermanent().getCard();
                 if (card.isInGraveyard()) {
-                    game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard));
+                    game.doAction(new RemoveCardAction(card,MagicLocationType.Graveyard));
                     game.doAction(new MoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.TopOfOwnersLibrary));
                 }
             }

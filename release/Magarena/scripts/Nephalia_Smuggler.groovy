@@ -25,7 +25,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
                 game.doAction(new MagicRemoveFromPlayAction(it,MagicLocationType.Exile));
-                game.doAction(new MagicRemoveCardAction(it.getCard(),MagicLocationType.Exile));
+                game.doAction(new RemoveCardAction(it.getCard(),MagicLocationType.Exile));
                 game.doAction(new PlayCardAction(it.getCard(),event.getPlayer()));
             });
         }

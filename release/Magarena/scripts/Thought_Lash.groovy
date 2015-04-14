@@ -20,7 +20,7 @@
             if (event.isYes()) {  
                 final MagicCardList topN = event.getPlayer().getLibrary().getCardsFromTop(event.getPermanent().getCounters(MagicCounterType.Age));
                 for (final MagicCard card : topN) {
-                    game.doAction(new MagicRemoveCardAction(
+                    game.doAction(new RemoveCardAction(
                         card,
                         MagicLocationType.OwnersLibrary
                     ));
@@ -33,7 +33,7 @@
             } else {
                 game.doAction(new MagicSacrificeAction(event.getPermanent()));
                 for (final MagicCard card : new MagicCardList(event.getPlayer().getLibrary())) {
-                    game.doAction(new MagicRemoveCardAction(card, MagicLocationType.OwnersLibrary));
+                    game.doAction(new RemoveCardAction(card, MagicLocationType.OwnersLibrary));
                     game.doAction(new MoveCardAction(card, MagicLocationType.OwnersLibrary, MagicLocationType.Exile));
                 }
             }

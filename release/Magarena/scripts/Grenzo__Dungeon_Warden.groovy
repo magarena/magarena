@@ -25,7 +25,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.getPlayer().getLibrary().size() > 0) {
                 final MagicCard card = event.getPlayer().getLibrary().getCardAtBottom();
-                game.doAction(new MagicRemoveCardAction(card,MagicLocationType.OwnersLibrary));
+                game.doAction(new RemoveCardAction(card,MagicLocationType.OwnersLibrary));
                 game.doAction(new MoveCardAction(card,MagicLocationType.BottomOfOwnersLibrary,MagicLocationType.Graveyard));
                 game.logAppendMessage(event.getPlayer()," ("+card.getName()+") ");
                 if (

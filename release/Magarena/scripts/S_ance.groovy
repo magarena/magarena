@@ -30,7 +30,7 @@ def Spirit = new MagicStatic(MagicLayer.Type) {
             if (event.isYes()) {
                 event.processTargetCard(game,{
                     final MagicPlayer player=event.getPlayer();
-                    game.doAction(new MagicRemoveCardAction(
+                    game.doAction(new RemoveCardAction(
                         it,
                         MagicLocationType.Graveyard
                     ));
