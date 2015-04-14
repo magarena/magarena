@@ -521,7 +521,7 @@ public enum MagicRuleEventAction {
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    game.doAction(new MagicPreventDamageAction(event.getPermanent(),amount));
+                    game.doAction(new PreventDamageAction(event.getPermanent(),amount));
                 }
             };
         }
@@ -537,7 +537,7 @@ public enum MagicRuleEventAction {
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    game.doAction(new MagicPreventDamageAction(event.getPlayer(),amount));
+                    game.doAction(new PreventDamageAction(event.getPlayer(),amount));
                 }
             };
         }
@@ -557,7 +557,7 @@ public enum MagicRuleEventAction {
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
                     event.processTarget(game,new MagicTargetAction() {
                         public void doAction(final MagicTarget target) {
-                            game.doAction(new MagicPreventDamageAction(target,amount));
+                            game.doAction(new PreventDamageAction(target,amount));
                         }
                     });
                 }
