@@ -29,7 +29,7 @@ public class MagicDeclareAttackersAction extends MagicAction {
         // 508.1j Each chosen creature still controlled by the active player becomes an attacking creature.
         for (final MagicPermanent attacker : attackers) {
             if (attacker.getController() == active) {
-                game.doAction(new MagicDeclareAttackerAction(attacker));
+                game.doAction(new DeclareAttackerAction(attacker));
             }
         }
         // 508.2. Any abilities that triggered on attackers being declared go on the stack.

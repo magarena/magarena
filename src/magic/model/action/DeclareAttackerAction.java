@@ -4,11 +4,11 @@ import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPermanentState;
 
-public class MagicDeclareAttackerAction extends MagicAction {
+public class DeclareAttackerAction extends MagicAction {
 
     private final MagicPermanent attacker;
 
-    MagicDeclareAttackerAction(final MagicPermanent attacker) {
+    DeclareAttackerAction(final MagicPermanent attacker) {
         this.attacker=attacker;
     }
 
