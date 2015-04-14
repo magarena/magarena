@@ -15,7 +15,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
                 final MagicPlayer player = event.getPlayer();
-                game.doAction(new MagicPlayCardAction(
+                game.doAction(new PlayCardAction(
                     MagicCard.createTokenCard(it, player),
                     player
                 ));

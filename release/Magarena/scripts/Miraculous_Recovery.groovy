@@ -15,7 +15,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetCard(game, {
                 game.doAction(new MagicRemoveCardAction(it,MagicLocationType.Graveyard));
-                game.doAction(new MagicPlayCardAction(it,event.getPlayer(),{
+                game.doAction(new PlayCardAction(it,event.getPlayer(),{
                     final MagicPermanent perm ->
                     final MagicGame G = perm.getGame();
                     G.doAction(new ChangeCountersAction(perm,MagicCounterType.PlusOne,1));

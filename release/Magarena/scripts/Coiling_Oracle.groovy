@@ -18,7 +18,7 @@
                     MagicLocationType.OwnersLibrary
                 ));
                 if (card.hasType(MagicType.Land)) {
-                    game.doAction(new MagicPlayCardAction(
+                    game.doAction(new PlayCardAction(
                         card,
                         event.getPlayer()
                     ));

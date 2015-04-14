@@ -16,7 +16,7 @@
             final int amount = game.filterCards(player,CREATURE_CARD_FROM_GRAVEYARD).size();
             for (int count=amount;count>0;count--) {
                 final MagicCard card = MagicCard.createTokenCard(TokenCardDefinitions.get("2/2 green Wolf creature token"),player);
-                game.doAction(new MagicPlayCardAction(
+                game.doAction(new PlayCardAction(
                     card,
                     player,
                     [MagicPlayMod.TAPPED, MagicPlayMod.ATTACKING]

@@ -29,7 +29,7 @@
                     MagicLocationType.OwnersLibrary
                 ));
                 if (card.hasType(MagicType.Creature)) {
-                    game.doAction(new MagicPlayCardAction(
+                    game.doAction(new PlayCardAction(
                         card,
                         event.getPlayer()
                     ));

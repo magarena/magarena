@@ -12,7 +12,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
             final MagicCard card = MagicCard.createTokenCard(event.getPermanent(),player);
-            game.doAction(new MagicPlayCardAction(card,player));
+            game.doAction(new PlayCardAction(card,player));
         }
     }
 ]

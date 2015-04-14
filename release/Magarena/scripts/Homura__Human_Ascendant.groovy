@@ -14,7 +14,7 @@
             final MagicCard card = event.getRefCard();
             if (card.isInGraveyard()) {
                 game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard));
-                game.doAction(new MagicPlayCardAction(card,event.getPlayer(),MagicPlayMod.FLIPPED));
+                game.doAction(new PlayCardAction(card,event.getPlayer(),MagicPlayMod.FLIPPED));
             }
         }
     }

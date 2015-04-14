@@ -21,7 +21,7 @@
                 event.processTargetCard(game, {
                     final MagicPermanent sn = event.getPermanent();
                     game.doAction(new MagicRemoveCardAction(it,MagicLocationType.OwnersHand));
-                    game.doAction(new MagicPlayCardAction(it,event.getPlayer(), {
+                    game.doAction(new PlayCardAction(it,event.getPlayer(), {
                         final MagicPermanent perm ->
                         final MagicGame G = perm.getGame();
                         G.doAction(new AttachAction(sn.map(G), perm));

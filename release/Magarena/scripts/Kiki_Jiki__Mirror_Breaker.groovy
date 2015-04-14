@@ -26,7 +26,7 @@
             event.processTargetPermanent(game, {
                 final MagicPlayer player=event.getPlayer();
                 final MagicCard card=MagicCard.createTokenCard(it,player);
-                game.doAction(new MagicPlayCardAction(
+                game.doAction(new PlayCardAction(
                     card,
                     player,
                     [MagicPlayMod.HASTE, MagicPlayMod.SACRIFICE_AT_END_OF_TURN]

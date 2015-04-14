@@ -27,7 +27,7 @@ def DelayedTrigger = {
                     card,
                     MagicLocationType.Exile
                 ));
-                game.doAction(new MagicPlayCardAction(
+                game.doAction(new PlayCardAction(
                     card,
                     [MagicPlayMod.HASTE]
                 ));
