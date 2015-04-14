@@ -1,5 +1,5 @@
 def ARTIFACT_YOU_OWN = new MagicPermanentFilterImpl() {
-    public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+    public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
         return target.isOwner(player) && target.isArtifact();
     }
 };

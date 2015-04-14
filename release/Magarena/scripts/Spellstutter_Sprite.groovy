@@ -1,7 +1,7 @@
 def SPELL_WITH_CONVERTED_COST_X_OR_LESS = {
     final int X ->
     return new MagicStackFilterImpl() {
-        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicItemOnStack target) {
+        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicItemOnStack target) {
             return target.isSpell() && target.getConvertedCost() <= X;
         } 
     };

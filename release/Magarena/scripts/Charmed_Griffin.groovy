@@ -1,5 +1,5 @@
 def ARTIFACT_OR_ENCHANTMENT_FROM_HAND = new MagicCardFilterImpl() {
-    public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
+    public boolean accept(final MagicSource source,final MagicPlayer player,final MagicCard target) {
         return target.hasType(MagicType.Artifact) || target.hasType(MagicType.Enchantment);
     }
     public boolean acceptType(final MagicTargetType targetType) {

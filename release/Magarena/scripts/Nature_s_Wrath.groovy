@@ -1,5 +1,5 @@
 def SWAMP_OR_BLACK_PERMANENT_YOU_CONTROL = new MagicPermanentFilterImpl() {
-    public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+    public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
         return target.isController(player) &&
                (target.hasSubType(MagicSubType.Swamp) ||
                 target.hasColor(MagicColor.Black));
@@ -12,7 +12,7 @@ def A_SWAMP_OR_BLACK_PERMANENT_YOU_CONTROL = new MagicTargetChoice(
 );
 
 def ISLAND_OR_BLUE_PERMANENT_YOU_CONTROL = new MagicPermanentFilterImpl() {
-    public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+    public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
         return target.isController(player) &&
                (target.hasSubType(MagicSubType.Island) ||
                 target.hasColor(MagicColor.Blue));

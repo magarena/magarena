@@ -1,5 +1,5 @@
 def UNTAPPED_CREATURE_WITH_POWER_3_OR_GREATER = new MagicPermanentFilterImpl() {
-    public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+    public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
         return target.isCreature() && target.isUntapped() && target.getPower() >= 3;
     } 
 };

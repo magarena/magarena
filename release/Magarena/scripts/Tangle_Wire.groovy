@@ -1,5 +1,5 @@
 def UNTAPPED_ARTIFACT_CREATURE_OR_LAND_YOU_CONTROL = new MagicPermanentFilterImpl() {
-    public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+    public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
         return target.isUntapped() && target.isController(player) &&
               (target.isArtifact() || target.isCreature() || target.isLand());
     } 

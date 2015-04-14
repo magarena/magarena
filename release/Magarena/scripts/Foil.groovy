@@ -1,5 +1,5 @@
 def ISLAND_CARD_FROM_HAND = new MagicCardFilterImpl() {
-    public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
+    public boolean accept(final MagicSource source,final MagicPlayer player,final MagicCard target) {
         return target.hasSubType(MagicSubType.Island);
     }
     public boolean acceptType(final MagicTargetType targetType) {

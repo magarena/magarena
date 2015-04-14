@@ -1,5 +1,5 @@
 def UNTAPPED_DRUID_YOU_CONTROL=new MagicPermanentFilterImpl(){
-    public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+    public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
         return target.hasSubType(MagicSubType.Druid) && 
                target.isUntapped() && 
                target.isController(player);

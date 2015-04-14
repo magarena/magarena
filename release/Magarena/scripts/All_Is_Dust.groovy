@@ -1,5 +1,5 @@
 def COLORED_PERMANENT = new MagicPermanentFilterImpl() {
-    public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+    public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
         return MagicColor.isColorless(target) == false;
     }
 };

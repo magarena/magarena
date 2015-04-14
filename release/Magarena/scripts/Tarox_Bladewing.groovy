@@ -1,5 +1,5 @@
 def CARD_NAMED_TAROX_BLADEWING = new MagicCardFilterImpl() {
-    public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
+    public boolean accept(final MagicSource source,final MagicPlayer player,final MagicCard target) {
         return target.getName().equals("Tarox Bladewing");
     }
     public boolean acceptType(final MagicTargetType targetType) {

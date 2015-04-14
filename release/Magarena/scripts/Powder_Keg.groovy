@@ -1,7 +1,7 @@
 def makeFilter = {
     final int fuse ->
     return new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
             return target.getConvertedCost() == fuse && (target.isArtifact() || target.isCreature())
         }
     };

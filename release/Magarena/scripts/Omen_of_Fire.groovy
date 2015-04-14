@@ -1,5 +1,5 @@
 def PLAINS_OR_WHITE_PERMANENT = new MagicPermanentFilterImpl() {
-    public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+    public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
         return target.hasSubType(MagicSubType.Plains) || target.hasColor(MagicColor.White) &&
                target.isController(player);
     } 

@@ -1,5 +1,5 @@
 def ANGEL_OR_DEMON_OR_DRAGON_CARD_FROM_HAND = new MagicCardFilterImpl() {
-    public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
+    public boolean accept(final MagicSource source,final MagicPlayer player,final MagicCard target) {
         return target.hasType(MagicType.Creature) &&
                (target.hasSubType(MagicSubType.Angel) ||
                target.hasSubType(MagicSubType.Demon) ||

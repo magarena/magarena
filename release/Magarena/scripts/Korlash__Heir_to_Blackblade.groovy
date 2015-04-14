@@ -1,5 +1,5 @@
 def CARD_NAMED_KORLASH = new MagicCardFilterImpl() {
-    public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
+    public boolean accept(final MagicSource source,final MagicPlayer player,final MagicCard target) {
         return target.getName().equals("Korlash, Heir to Blackblade");
     }
     public boolean acceptType(final MagicTargetType targetType) {
@@ -13,7 +13,7 @@ def A_CARD_NAMED_KORLASH = new MagicTargetChoice(
 );
 
 def SWAMP_CARD_FROM_LIBRARY = new MagicCardFilterImpl() {
-    public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
+    public boolean accept(final MagicSource source,final MagicPlayer player,final MagicCard target) {
         return target.hasSubType(MagicSubType.Swamp);
     }
     public boolean acceptType(final MagicTargetType targetType) {
