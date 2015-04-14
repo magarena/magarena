@@ -3,8 +3,8 @@ package magic.model.action;
 import magic.model.MagicLocationType;
 import magic.model.MagicPermanent;
 
-public class MagicSacrificeAction extends RemoveFromPlayAction {
-    public MagicSacrificeAction(final MagicPermanent permanent) {
+public class SacrificeAction extends RemoveFromPlayAction {
+    public SacrificeAction(final MagicPermanent permanent) {
         super(permanent,MagicLocationType.Graveyard);
     }
 }

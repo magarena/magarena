@@ -6,7 +6,7 @@ import magic.model.MagicManaCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.action.ChangeCountersAction;
-import magic.model.action.MagicSacrificeAction;
+import magic.model.action.SacrificeAction;
 import magic.model.choice.MagicMayChoice;
 import magic.model.choice.MagicPayManaCostChoice;
 import magic.model.event.MagicEvent;
@@ -53,7 +53,7 @@ public class MagicCumulativeUpkeepTrigger extends MagicAtYourUpkeepTrigger {
     @Override
     public void executeEvent(final MagicGame game, final MagicEvent event) {
         if (event.isNo()) {
-            game.doAction(new MagicSacrificeAction(event.getPermanent()));
+            game.doAction(new SacrificeAction(event.getPermanent()));
         }
     }
 }

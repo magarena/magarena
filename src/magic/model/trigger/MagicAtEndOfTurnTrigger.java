@@ -5,7 +5,7 @@ import magic.model.MagicLocationType;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.action.RemoveFromPlayAction;
-import magic.model.action.MagicSacrificeAction;
+import magic.model.action.SacrificeAction;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSourceEvent;
 
@@ -53,7 +53,7 @@ public abstract class MagicAtEndOfTurnTrigger extends MagicTrigger<MagicPlayer> 
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicSacrificeAction(event.getPermanent()));
+            game.doAction(new SacrificeAction(event.getPermanent()));
         }
     };
     

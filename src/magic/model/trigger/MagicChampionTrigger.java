@@ -8,7 +8,7 @@ import magic.model.MagicPlayer;
 import magic.model.MagicSubType;
 import magic.model.action.ExileLinkAction;
 import magic.model.action.MagicPermanentAction;
-import magic.model.action.MagicSacrificeAction;
+import magic.model.action.SacrificeAction;
 import magic.model.choice.MagicMayChoice;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
@@ -80,7 +80,7 @@ public class MagicChampionTrigger extends MagicWhenComesIntoPlayTrigger {
                 }
             });
         } else {
-            game.doAction(new MagicSacrificeAction(permanent));
+            game.doAction(new SacrificeAction(permanent));
         }
     }
 }

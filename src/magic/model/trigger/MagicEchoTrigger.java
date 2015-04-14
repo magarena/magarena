@@ -6,7 +6,7 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPermanentState;
 import magic.model.MagicPlayer;
 import magic.model.action.ChangeStateAction;
-import magic.model.action.MagicSacrificeAction;
+import magic.model.action.SacrificeAction;
 import magic.model.choice.MagicMayChoice;
 import magic.model.choice.MagicPayManaCostChoice;
 import magic.model.event.MagicEvent;
@@ -46,7 +46,7 @@ public class MagicEchoTrigger extends MagicAtUpkeepTrigger {
                 MagicPermanentState.MustPayEchoCost
             ));
         } else {
-            game.doAction(new MagicSacrificeAction(permanent));
+            game.doAction(new SacrificeAction(permanent));
         }
     }
 }
