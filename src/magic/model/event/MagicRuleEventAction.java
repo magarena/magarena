@@ -356,7 +356,7 @@ public enum MagicRuleEventAction {
                     final Collection<MagicPermanent> targets = game.filterPermanents(event.getPlayer(),filter);
                     for (final MagicPermanent perm : targets) {
                         if (event.getSource().isPermanent()) {
-                            game.doAction(new MagicExileLinkAction(event.getPermanent(), perm));
+                            game.doAction(new ExileLinkAction(event.getPermanent(), perm));
                         } else {
                             game.doAction(new MagicRemoveFromPlayAction(perm,MagicLocationType.Exile));
                         }
@@ -377,7 +377,7 @@ public enum MagicRuleEventAction {
                 event.processTargetPermanent(game,new MagicPermanentAction() {
                     public void doAction(final MagicPermanent perm) {
                         if (event.getSource().isPermanent()) {
-                            game.doAction(new MagicExileLinkAction(event.getPermanent(), perm));
+                            game.doAction(new ExileLinkAction(event.getPermanent(), perm));
                         } else {
                             game.doAction(new MagicRemoveFromPlayAction(perm,MagicLocationType.Exile));
                         }

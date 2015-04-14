@@ -5,21 +5,21 @@ import magic.model.MagicGame;
 import magic.model.MagicLocationType;
 import magic.model.MagicPermanent;
 
-public class MagicExileLinkAction extends MagicAction {
+public class ExileLinkAction extends MagicAction {
 
     public final MagicPermanent source;
     public final MagicPermanent permanent;
     private final MagicCard card;
     private final MagicLocationType location;
 
-    public MagicExileLinkAction(final MagicPermanent source,final MagicCard card,final MagicLocationType location) {
+    public ExileLinkAction(final MagicPermanent source,final MagicCard card,final MagicLocationType location) {
         this.source = source;
         this.permanent = MagicPermanent.NONE;
         this.card = card;
         this.location = location;
     }
 
-    public MagicExileLinkAction(final MagicPermanent source,final MagicPermanent permanent) {
+    public ExileLinkAction(final MagicPermanent source,final MagicPermanent permanent) {
         this.source = source;
         this.permanent = permanent;
         this.card = permanent.getCard();
