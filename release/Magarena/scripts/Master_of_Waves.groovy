@@ -11,7 +11,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final int amount = event.getPlayer().getDevotion(MagicColor.Blue);
-            game.doAction(new MagicPlayTokensAction(
+            game.doAction(new PlayTokensAction(
                 event.getPlayer(),
                 TokenCardDefinitions.get("1/0 blue Elemental creature token"),
                 amount

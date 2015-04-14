@@ -14,7 +14,7 @@
             final MagicPlayer player = event.getPlayer();
             final int zombies = player.getNrOfPermanents(MagicSubType.Zombie)
             def amount = zombies.intdiv(2);
-            game.doAction(new MagicPlayTokensAction(
+            game.doAction(new PlayTokensAction(
                 player,
                 TokenCardDefinitions.get("2/2 black Zombie creature token"),
                 amount

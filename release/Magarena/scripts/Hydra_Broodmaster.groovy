@@ -21,7 +21,7 @@ def PutHydra = new MagicTrigger<Integer>() {
             it.setToken();
             it.setValue(x);
         });
-        game.doAction(new MagicPlayTokensAction(event.getPlayer(), tokenDef, x));
+        game.doAction(new PlayTokensAction(event.getPlayer(), tokenDef, x));
     }
     @Override
     public MagicTriggerType getType() {

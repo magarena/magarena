@@ -13,7 +13,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player=event.getPlayer();
             int x = event.getCardOnStack().getX();
-            game.doAction(new MagicPlayTokensAction(
+            game.doAction(new PlayTokensAction(
                 player,
                 TokenCardDefinitions.get("1/1 red Goblin creature token"),
                 x

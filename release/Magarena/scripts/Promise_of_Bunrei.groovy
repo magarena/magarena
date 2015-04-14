@@ -20,7 +20,7 @@
             final MagicPlayer player=event.getPlayer();
             if (player.controlsPermanent(permanent)) {
                 game.doAction(new MagicSacrificeAction(permanent));
-                game.doAction(new MagicPlayTokensAction(
+                game.doAction(new PlayTokensAction(
                     player,
                     TokenCardDefinitions.get("1/1 colorless Spirit creature token"),
                     4

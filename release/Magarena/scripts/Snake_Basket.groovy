@@ -22,7 +22,7 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicPlayTokensAction(
+            game.doAction(new PlayTokensAction(
                 event.getPlayer(),
                 TokenCardDefinitions.get("1/1 green Snake creature token"),
                 event.getRefInt()

@@ -30,7 +30,7 @@
             final MagicSource source = event.getSource();
             final MagicPlayer player = source.getController();
             final int amount = (player.controlsPermanent(crown) && player.controlsPermanent(scepter))? 5 : 1;
-            game.doAction(new MagicPlayTokensAction(event.getPlayer(), TokenCardDefinitions.get("1/1 white Soldier creature token"),amount));
+            game.doAction(new PlayTokensAction(event.getPlayer(), TokenCardDefinitions.get("1/1 white Soldier creature token"),amount));
             
         }
     }

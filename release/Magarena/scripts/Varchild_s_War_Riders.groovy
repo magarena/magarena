@@ -18,7 +18,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
-                game.doAction(new MagicPlayTokensAction(
+                game.doAction(new PlayTokensAction(
                     event.getPlayer().getOpponent(),
                     TokenCardDefinitions.get("1/1 red Survivor creature token"),
                     event.getPermanent().getCounters(MagicCounterType.Age)

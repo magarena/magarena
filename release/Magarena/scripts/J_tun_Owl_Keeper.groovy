@@ -11,7 +11,7 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicPlayTokensAction(
+            game.doAction(new PlayTokensAction(
                 event.getPlayer(),
                 TokenCardDefinitions.get("1/1 white Bird creature token with flying"),
                 event.getRefInt()

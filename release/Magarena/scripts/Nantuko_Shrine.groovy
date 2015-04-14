@@ -19,7 +19,7 @@
                 .from(MagicTargetType.OpponentsGraveyard)
             ).size();
             game.logAppendMessage(event.getPlayer(),"(X="+amount+")")
-            game.doAction(new MagicPlayTokensAction(
+            game.doAction(new PlayTokensAction(
                 event.getPlayer(),
                 TokenCardDefinitions.get("1/1 green Squirrel creature token"),
                 amount

@@ -19,7 +19,7 @@
             }
             game.doAction(new DestroyAction(targets));
             if (MagicCondition.THRESHOLD_CONDITION.accept(event.getSource())) {
-                game.doAction(new MagicPlayTokensAction(
+                game.doAction(new PlayTokensAction(
                     event.getPlayer(),
                     TokenCardDefinitions.get("1/1 white Spirit creature token with flying"),
                     2

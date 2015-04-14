@@ -16,7 +16,7 @@
             event.processTargetPermanent(game, {
                 final MagicPlayer player = event.getPlayer();
                 int count = event.isKicked() ? 5 : 1;
-                game.doAction(new MagicPlayTokensAction(
+                game.doAction(new PlayTokensAction(
                     player,
                     it,
                     count

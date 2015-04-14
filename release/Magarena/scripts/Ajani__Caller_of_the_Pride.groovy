@@ -51,7 +51,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final int amt = event.getPlayer().getLife();
-            game.doAction(new MagicPlayTokensAction(event.getPlayer(), TokenCardDefinitions.get("2/2 white Cat creature token"), amt));
+            game.doAction(new PlayTokensAction(event.getPlayer(), TokenCardDefinitions.get("2/2 white Cat creature token"), amt));
         }
     }
 ]

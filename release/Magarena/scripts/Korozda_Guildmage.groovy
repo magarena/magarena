@@ -26,7 +26,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPermanent sacrificed = event.getRefPermanent();
-            game.doAction(new MagicPlayTokensAction(event.getPlayer(), TokenCardDefinitions.get("1/1 green Saproling creature token"), sacrificed.getToughness()));
+            game.doAction(new PlayTokensAction(event.getPlayer(), TokenCardDefinitions.get("1/1 green Saproling creature token"), sacrificed.getToughness()));
         }
     }
 ]

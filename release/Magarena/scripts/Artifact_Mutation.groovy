@@ -19,7 +19,7 @@
                     MagicPermanentState.CannotBeRegenerated
                 ));
                 game.doAction(new DestroyAction(it));
-                game.doAction(new MagicPlayTokensAction(
+                game.doAction(new PlayTokensAction(
                     event.getPlayer(),
                     TokenCardDefinitions.get("1/1 green Saproling creature token"),
                     it.getConvertedCost()

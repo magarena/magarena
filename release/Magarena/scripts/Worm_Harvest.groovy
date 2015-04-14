@@ -15,7 +15,7 @@
                 event.getPlayer(),
                 LAND_CARD_FROM_YOUR_GRAVEYARD
             ).size();
-            game.doAction(new MagicPlayTokensAction(
+            game.doAction(new PlayTokensAction(
                 event.getPlayer(),
                 TokenCardDefinitions.get("1/1 black and green Worm creature token"),
                 amount

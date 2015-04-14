@@ -20,7 +20,7 @@
                     game.doAction(new DestroyAction(target));
                 }
             }
-            game.doAction(new MagicPlayTokensAction(
+            game.doAction(new PlayTokensAction(
                 player,
                 TokenCardDefinitions.get("1/1 white Soldier creature token"),
                 x

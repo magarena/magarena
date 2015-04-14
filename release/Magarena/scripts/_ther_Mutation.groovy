@@ -15,7 +15,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
                 game.doAction(new MagicRemoveFromPlayAction(it,MagicLocationType.OwnersHand));
-                game.doAction(new MagicPlayTokensAction(
+                game.doAction(new PlayTokensAction(
                     event.getPlayer(),
                     TokenCardDefinitions.get("1/1 green Saproling creature token"),
                     it.getConvertedCost()

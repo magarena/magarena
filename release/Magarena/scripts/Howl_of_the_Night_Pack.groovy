@@ -11,7 +11,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
-            game.doAction(new MagicPlayTokensAction(
+            game.doAction(new PlayTokensAction(
                 player,
                 TokenCardDefinitions.get("2/2 green Wolf creature token"),
                 player.getNrOfPermanents(FOREST)

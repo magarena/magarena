@@ -13,7 +13,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
-                game.doAction(new MagicPlayTokensAction(
+                game.doAction(new PlayTokensAction(
                     it,
                     TokenCardDefinitions.get("1/1 red Goblin creature token"),
                     5

@@ -16,7 +16,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
             int amount = player.getNrOfPermanents(MagicType.Land);
-            game.doAction(new MagicPlayTokensAction(
+            game.doAction(new PlayTokensAction(
                 player,
                 TokenCardDefinitions.get("0/1 green Plant creature token"),
                 amount
