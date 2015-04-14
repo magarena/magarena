@@ -4,12 +4,12 @@ import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.model.choice.MagicBuilderManaCost;
 
-public class MagicPayDelayedCostsAction extends MagicAction {
+public class PayDelayedCostsAction extends MagicAction {
 
     private final MagicPlayer player;
     private MagicBuilderManaCost oldBuilderCost;
 
-    public MagicPayDelayedCostsAction(final MagicPlayer player) {
+    public PayDelayedCostsAction(final MagicPlayer player) {
 
         this.player=player;
     }

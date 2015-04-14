@@ -8,7 +8,7 @@ import magic.model.action.ChangeExtraTurnsAction;
 import magic.model.action.CleanupPlayerAction;
 import magic.model.action.CleanupTurnStaticsAction;
 import magic.model.action.CleanupTurnTriggersAction;
-import magic.model.action.MagicPayDelayedCostsAction;
+import magic.model.action.PayDelayedCostsAction;
 import magic.model.event.MagicDiscardEvent;
 import magic.model.event.MagicEvent;
 
@@ -44,7 +44,7 @@ public class MagicCleanupPhase extends MagicPhase {
         final MagicPlayer turnPlayer=game.getTurnPlayer();
         final MagicPlayer opponentPlayer=game.getTurnPlayer().getOpponent();
         if (!turnPlayer.getBuilderCost().isEmpty()) {
-            game.doAction(new MagicPayDelayedCostsAction(turnPlayer));
+            game.doAction(new PayDelayedCostsAction(turnPlayer));
         }
         if (turnPlayer.getExtraTurns()>0) {
             game.doAction(new ChangeExtraTurnsAction(turnPlayer,-1));
