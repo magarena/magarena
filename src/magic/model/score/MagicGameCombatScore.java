@@ -3,7 +3,7 @@ package magic.model.score;
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.model.action.CombatDamageAction;
-import magic.model.action.MagicDeclareBlockersAction;
+import magic.model.action.DeclareBlockersAction;
 import magic.model.action.MagicStackResolveAction;
 import magic.model.choice.MagicDeclareBlockersResult;
 
@@ -22,7 +22,7 @@ public class MagicGameCombatScore implements MagicCombatScore {
     @Override
     public int getScore(final MagicDeclareBlockersResult result) {
         game.snapshot();
-        game.doAction(new MagicDeclareBlockersAction(defendingPlayer,result));
+        game.doAction(new DeclareBlockersAction(defendingPlayer,result));
         game.doAction(new CombatDamageAction(attackingPlayer,defendingPlayer,true));
         game.doAction(new CombatDamageAction(attackingPlayer,defendingPlayer,false));
         // resolve triggers

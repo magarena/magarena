@@ -7,12 +7,12 @@ import magic.model.choice.MagicCombatCreature;
 import magic.model.choice.MagicDeclareBlockersResult;
 import magic.model.trigger.MagicTriggerType;
 
-public class MagicDeclareBlockersAction extends MagicAction {
+public class DeclareBlockersAction extends MagicAction {
 
     private final MagicPlayer player;
     private final MagicDeclareBlockersResult result;
 
-    public MagicDeclareBlockersAction(final MagicPlayer player, final MagicDeclareBlockersResult result) {
+    public DeclareBlockersAction(final MagicPlayer player, final MagicDeclareBlockersResult result) {
         this.player = player;
         this.result = result;
     }
@@ -23,7 +23,7 @@ public class MagicDeclareBlockersAction extends MagicAction {
             if (creatures.length>1) {
                 final MagicPermanent attacker=creatures[0].permanent;
                 for (int index=1;index<creatures.length;index++) {
-                    game.doAction(new MagicDeclareBlockerAction(attacker,creatures[index].permanent));
+                    game.doAction(new DeclareBlockerAction(attacker,creatures[index].permanent));
                 }
 
                 if (attacker.isBlocked()) {
