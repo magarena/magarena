@@ -19,7 +19,7 @@
                 {
                     final MagicPermanent perm ->
                     final MagicGame G = perm.getGame();
-                    G.doAction(new MagicSetBlockerAction(rn.map(G), perm));
+                    G.doAction(new SetBlockerAction(rn.map(G), perm));
                 }
             ));
         }
