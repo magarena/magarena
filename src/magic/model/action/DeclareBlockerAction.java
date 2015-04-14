@@ -4,12 +4,12 @@ import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.trigger.MagicTriggerType;
 
-public class MagicDeclareBlockerAction extends MagicAction {
+public class DeclareBlockerAction extends MagicAction {
 
     private final MagicPermanent attacker;
     private final MagicPermanent blocker;
 
-    MagicDeclareBlockerAction(final MagicPermanent attacker,final MagicPermanent blocker) {
+    DeclareBlockerAction(final MagicPermanent attacker,final MagicPermanent blocker) {
         this.attacker=attacker;
         this.blocker=blocker;
     }
