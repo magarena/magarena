@@ -2522,7 +2522,7 @@ public class MagicTargetFilterFactory {
             .replaceAll("\\bin all graveyards\\b", "from a graveyard")
             .replaceAll("\\byour opponents control\\b", "an opponent controls")
             .replaceAll("QUOTE", "")
-            .replaceAll(" on the battlefield$", "")
+            .replaceAll(" on the battlefield\\b", "")
             .replaceAll("^all ", "")
             .replaceAll("^each ", "");
     }

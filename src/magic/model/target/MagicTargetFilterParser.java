@@ -44,6 +44,11 @@ public enum MagicTargetFilterParser {
             return MagicTargetFilterFactory.creatureName(ARG.any(arg), Control.You);
         }
     },
+    CreatureYouControlNamed("creature you control named " + ARG.ANY) {
+        public MagicTargetFilter<?> toTargetFilter(final Matcher arg) {
+            return MagicTargetFilterFactory.creatureName(ARG.any(arg), Control.You);
+        }
+    },
     CreatureNamed("creature named " + ARG.ANY) {
         public MagicTargetFilter<?> toTargetFilter(final Matcher arg) {
             return MagicTargetFilterFactory.creatureName(ARG.any(arg), Control.Any);
