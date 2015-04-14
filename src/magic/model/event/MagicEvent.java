@@ -43,7 +43,6 @@ import java.util.List;
 public class MagicEvent implements MagicCopyable {
 
     public static final Object[] NO_CHOICE_RESULTS = new Object[0];
-    public static final MagicEvent[] NO_EVENTS = new MagicEvent[0];
     public static final MagicCopyable NO_REF = new MagicInteger(-1);
     public static final MagicEventAction NO_ACTION = new MagicEventAction() {
         public void executeEvent(final MagicGame game, final MagicEvent event) {
