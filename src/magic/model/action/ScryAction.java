@@ -5,12 +5,12 @@ import magic.model.MagicCard;
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 
-public class MagicScryAction extends MagicAction {
+public class ScryAction extends MagicAction {
 
     private final MagicPlayer player;
     private MagicCard card;
 
-    public MagicScryAction(final MagicPlayer aPlayer) {
+    public ScryAction(final MagicPlayer aPlayer) {
         player = aPlayer;
     }
 
