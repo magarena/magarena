@@ -7,7 +7,7 @@ import magic.model.event.MagicActivationPriority;
 import magic.model.phase.MagicPhase;
 import magic.model.phase.MagicStep;
 
-public class MagicMarkerAction extends MagicAction {
+public class MarkerAction extends MagicAction {
 
     private MagicPlayer oldTurnPlayer;
     private MagicPhase oldPhase;

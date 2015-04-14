@@ -7,7 +7,7 @@ import magic.model.action.AddEventAction;
 import magic.model.action.AddFirstEventAction;
 import magic.model.action.ExecuteFirstEventAction;
 import magic.model.action.LogMarkerAction;
-import magic.model.action.MagicMarkerAction;
+import magic.model.action.MarkerAction;
 import magic.model.action.MagicPutItemOnStackAction;
 import magic.model.action.MagicRemoveFromPlayAction;
 import magic.model.choice.MagicCombatCreature;
@@ -625,7 +625,7 @@ public class MagicGame {
     }
     
     public void snapshot() {
-        final MagicAction markerAction=new MagicMarkerAction();
+        final MagicAction markerAction=new MarkerAction();
         doAction(markerAction);
         if (artificial == false) {
             doAction(new LogMarkerAction());
@@ -648,7 +648,7 @@ public class MagicGame {
                 actions.addLast(action);
                 throw new GameException(ex, this);
             }
-        } while (!(action instanceof MagicMarkerAction));
+        } while (!(action instanceof MarkerAction));
     }
 
     public void undoAllActions() {
