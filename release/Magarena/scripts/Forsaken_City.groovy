@@ -15,7 +15,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
                 game.addEvent(new MagicExileCardEvent(event.getSource(), event.getPlayer(), A_CARD_FROM_HAND));
-                game.doAction(new MagicUntapAction(event.getPermanent()));
+                game.doAction(new UntapAction(event.getPermanent()));
             }
         }
     }

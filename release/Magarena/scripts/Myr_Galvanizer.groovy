@@ -22,7 +22,7 @@
                 MYR_YOU_CONTROL.except(event.getPermanent())
             );
             for (final MagicPermanent target : targets) {
-                game.doAction(new MagicUntapAction(target));
+                game.doAction(new UntapAction(target));
             }
         }
     }

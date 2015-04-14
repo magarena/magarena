@@ -17,7 +17,7 @@ def choice = new MagicTargetChoice("target nonlegendary creature an opponent con
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
                 game.doAction(new GainControlAction(event.getPlayer(),it,MagicStatic.UntilEOT));
-                game.doAction(new MagicUntapAction(it));
+                game.doAction(new UntapAction(it));
                 game.doAction(new GainAbilityAction(it,MagicAbility.Haste));
             });
         }

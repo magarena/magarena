@@ -18,7 +18,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.addEvent(new MagicDiscardEvent(event.getPermanent(),event.getRefPlayer()));
             LAND_YOU_CONTROL.filter(event.getPlayer()) each {
-                game.doAction(new MagicUntapAction(it));
+                game.doAction(new UntapAction(it));
             }
         }
     }

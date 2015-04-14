@@ -16,7 +16,7 @@
             event.processTargetPermanent(game, {
                 game.doAction(new GainControlAction(event.getPlayer(),it,MagicStatic.UntilEOT));
                 game.doAction(new ChangeCountersAction(it,MagicCounterType.PlusOne,1));
-                game.doAction(new MagicUntapAction(it));
+                game.doAction(new UntapAction(it));
                 game.doAction(new GainAbilityAction(it,MagicAbility.Haste));
             });
         }

@@ -17,7 +17,7 @@ def choice = new MagicTargetChoice("an Island to sacrifice");
             if (event.isYes() && event.getPlayer().getNrOfPermanents(MagicSubType.Island) >= 2) {
                 game.addEvent(new MagicSacrificePermanentEvent(event.getPermanent(),event.getPlayer(),choice));
                 game.addEvent(new MagicSacrificePermanentEvent(event.getPermanent(),event.getPlayer(),choice));
-                game.doAction(new MagicUntapAction(event.getPermanent()));
+                game.doAction(new UntapAction(event.getPermanent()));
             }
         }
     },

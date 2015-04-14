@@ -46,7 +46,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             CREATURE.filter(game) each {
                 game.doAction(new GainControlAction(event.getPlayer(),it,MagicStatic.UntilEOT));
-                game.doAction(new MagicUntapAction(it));
+                game.doAction(new UntapAction(it));
                 game.doAction(new GainAbilityAction(it,MagicAbility.Haste));
             }
         }

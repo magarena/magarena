@@ -24,7 +24,7 @@ def choice = new MagicTargetChoice("target Griffin");
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                game.doAction(new MagicUntapAction(it));
+                game.doAction(new UntapAction(it));
                 if (it.isCreature()) {
                     game.doAction(new ChangeTurnPTAction(it, 1, 1)); 
                 }

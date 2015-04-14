@@ -6,7 +6,7 @@
                 final Collection<MagicPermanent> targets = game.filterPermanents(permanent.getController(),CREATURE_YOU_CONTROL);
                 for (final MagicPermanent creature : targets) {
                     if (creature.isTapped() && (creature.hasColor(MagicColor.Blue) || creature.hasColor(MagicColor.Green))) {
-                        game.doAction(new MagicUntapAction(creature));
+                        game.doAction(new UntapAction(creature));
                     }
                 }
             }

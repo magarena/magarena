@@ -5,7 +5,7 @@
             if (permanent.isOpponent(upkeepPlayer)) {
                 final Collection<MagicPermanent> targets = game.filterPermanents(permanent.getController(),ARTIFACT_YOU_CONTROL);
                 for (final MagicPermanent artifact : targets) {
-                    game.doAction(new MagicUntapAction(artifact));
+                    game.doAction(new UntapAction(artifact));
                 }
             }
             return MagicEvent.NONE;

@@ -16,7 +16,7 @@
             final Collection<MagicPermanent> targets =
                 game.filterPermanents(player,PERMANENT_YOU_CONTROL);
             for (final MagicPermanent target : targets) {
-                game.doAction(new MagicUntapAction(target));
+                game.doAction(new UntapAction(target));
             }
         }
     }

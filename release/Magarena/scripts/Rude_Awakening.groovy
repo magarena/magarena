@@ -38,7 +38,7 @@ def TEXT2 = "Until end of turn, lands you control become 2/2 creatures that are 
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isKicked() || event.isMode(1)) {
                 LAND_YOU_CONTROL.filter(event.getPlayer()) each {
-                    game.doAction(new MagicUntapAction(it));
+                    game.doAction(new UntapAction(it));
                 }         
             } 
             if (event.isKicked() || event.isMode(2)) {
