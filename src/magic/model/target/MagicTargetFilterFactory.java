@@ -1438,9 +1438,6 @@ public class MagicTargetFilterFactory {
     public static final MagicCardFilterImpl CARD_FROM_OPPONENTS_GRAVEYARD = 
         card().from(MagicTargetType.OpponentsGraveyard);
 
-    public static final MagicCardFilterImpl CREATURE_CARD_FROM_OPPONENTS_GRAVEYARD = 
-        card(MagicType.Creature).from(MagicTargetType.OpponentsGraveyard);
-    
     public static final MagicCardFilterImpl INSTANT_OR_SORCERY_CARD_FROM_GRAVEYARD = 
         card(MagicType.Instant).or(MagicType.Sorcery).from(MagicTargetType.Graveyard);
     
@@ -1472,6 +1469,9 @@ public class MagicTargetFilterFactory {
     
     public static final MagicCardFilterImpl INSTANT_OR_SORCERY_CARD_FROM_OPPONENTS_GRAVEYARD = 
         card(MagicType.Instant).or(MagicType.Sorcery).from(MagicTargetType.OpponentsGraveyard);
+    
+    public static final MagicCardFilterImpl CREATURE_CARD_FROM_OPPONENTS_GRAVEYARD = 
+        card(MagicType.Creature).from(MagicTargetType.OpponentsGraveyard);
     
     public static final MagicCardFilterImpl ARTIFACT_CARD_FROM_GRAVEYARD = 
         card(MagicType.Artifact).from(MagicTargetType.Graveyard);
@@ -2096,6 +2096,7 @@ public class MagicTargetFilterFactory {
         // <color|type|subtype> card from an opponent's graveyard
         single.put("instant or sorcery card from an opponent's graveyard", INSTANT_OR_SORCERY_CARD_FROM_OPPONENTS_GRAVEYARD);
         single.put("card from an opponent's graveyard", CARD_FROM_OPPONENTS_GRAVEYARD);
+        single.put("creature card in an opponent's graveyard", CREATURE_CARD_FROM_OPPONENTS_GRAVEYARD);
         
         // <color|type|subtype> card from your hand
         single.put("card from your hand", CARD_FROM_HAND);
@@ -2521,6 +2522,7 @@ public class MagicTargetFilterFactory {
             .replaceAll("\\bin your graveyard\\b", "from your graveyard")
             .replaceAll("\\bin all graveyards\\b", "from a graveyard")
             .replaceAll("\\byour opponents control\\b", "an opponent controls")
+            .replaceAll("\\byour opponents' graveyards\\b", "an opponent's graveyard")
             .replaceAll("QUOTE", "")
             .replaceAll(" on the battlefield\\b", "")
             .replaceAll("^all ", "")
