@@ -1538,7 +1538,7 @@ public enum MagicRuleEventAction {
             return new MagicEventAction () {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    game.doAction(new MagicReanimateAction(
+                    game.doAction(new ReanimateAction(
                         event.getCard(),
                         event.getPlayer(),
                         mods
@@ -1946,7 +1946,7 @@ public enum MagicRuleEventAction {
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
                     event.processTargetCard(game,new MagicCardAction() {
                         public void doAction(final MagicCard card) {
-                            game.doAction(new MagicReanimateAction(
+                            game.doAction(new ReanimateAction(
                                 card,
                                 event.getPlayer(),
                                 mods
@@ -1968,7 +1968,7 @@ public enum MagicRuleEventAction {
             public void executeEvent(final MagicGame game, final MagicEvent event) {
                 event.processTargetCard(game,new MagicCardAction() {
                     public void doAction(final MagicCard card) {
-                        game.doAction(new MagicReanimateAction(
+                        game.doAction(new ReanimateAction(
                             card,
                             event.getPlayer()
                         ));

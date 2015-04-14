@@ -6,7 +6,7 @@ import magic.model.MagicManaCost;
 import magic.model.MagicPayedCost;
 import magic.model.MagicSource;
 import magic.model.action.MagicPlayMod;
-import magic.model.action.MagicReanimateAction;
+import magic.model.action.ReanimateAction;
 import magic.model.action.PutItemOnStackAction;
 import magic.model.choice.MagicChoice;
 import magic.model.condition.MagicCondition;
@@ -62,7 +62,7 @@ public class MagicUnearthActivation extends MagicGraveyardActivation {
     
     @Override
     public void executeEvent(final MagicGame game, final MagicEvent event) {
-        game.doAction(new MagicReanimateAction(
+        game.doAction(new ReanimateAction(
             event.getCard(),
             event.getPlayer(),
             MagicPlayMod.HASTE,

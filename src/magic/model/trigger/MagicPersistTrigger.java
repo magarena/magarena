@@ -5,7 +5,7 @@ import magic.model.MagicCounterType;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.action.MagicPlayMod;
-import magic.model.action.MagicReanimateAction;
+import magic.model.action.ReanimateAction;
 import magic.model.event.MagicEvent;
 
 public class MagicPersistTrigger extends MagicWhenDiesTrigger {
@@ -32,7 +32,7 @@ public class MagicPersistTrigger extends MagicWhenDiesTrigger {
     @Override
     public void executeEvent(final MagicGame game, final MagicEvent event) {
         final MagicCard card = event.getPermanent().getCard();
-        game.doAction(new MagicReanimateAction(
+        game.doAction(new ReanimateAction(
             card,
             card.getOwner(),
             MagicPlayMod.PERSIST
