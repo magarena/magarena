@@ -26,7 +26,7 @@
             event.processTargetPlayer(game, {
                 game.doAction(new ChangeLifeAction(it, -2));
                 game.doAction(new ChangePoisonAction(it, 1));
-                game.doAction(new MagicMillLibraryAction(it, 6));
+                game.doAction(new MillLibraryAction(it, 6));
             });
         }
     }

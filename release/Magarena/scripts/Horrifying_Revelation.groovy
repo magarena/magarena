@@ -13,7 +13,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
                 game.addEvent(new MagicDiscardEvent(event.getSource(),it));
-                game.doAction(new MagicMillLibraryAction(it,1));
+                game.doAction(new MillLibraryAction(it,1));
             });
         }
     }

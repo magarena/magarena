@@ -14,7 +14,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetCardOnStack(game, {
                 game.doAction(new CounterItemOnStackAction(it));
-                game.doAction(new MagicMillLibraryAction(it.getCard().getController(),4));
+                game.doAction(new MillLibraryAction(it.getCard().getController(),4));
             });
         }
     }

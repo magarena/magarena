@@ -1,6 +1,6 @@
 def action = {
     final MagicGame game, final MagicEvent event ->
-    game.doAction(new MagicMillLibraryAction(event.getPlayer().getOpponent(),3));
+    game.doAction(new MillLibraryAction(event.getPlayer().getOpponent(),3));
 }
 
 [

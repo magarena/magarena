@@ -21,7 +21,7 @@
                             MagicCounterType.PlusOne,
                             amount
                         ));
-                        G.doAction(new MagicMillLibraryAction(
+                        G.doAction(new MillLibraryAction(
                             E.getRefPlayer(),
                             amount
                         ));

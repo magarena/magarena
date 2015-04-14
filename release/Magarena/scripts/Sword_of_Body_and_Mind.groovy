@@ -15,7 +15,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new MagicPlayTokenAction(event.getPlayer(),TokenCardDefinitions.get("2/2 green Wolf creature token")));
-            game.doAction(new MagicMillLibraryAction(event.getRefPlayer(),10));
+            game.doAction(new MillLibraryAction(event.getRefPlayer(),10));
         }
     }
 ]

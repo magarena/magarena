@@ -15,7 +15,7 @@
             event.processTargetPlayer(game, {
                 final MagicPlayer player = event.getPlayer();
                 final int amount = player.getNrOfPermanents(MagicType.Land);
-                game.doAction(new MagicMillLibraryAction(it,amount));
+                game.doAction(new MillLibraryAction(it,amount));
             });
         }
     }

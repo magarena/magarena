@@ -23,7 +23,7 @@
                 }    
             } else if (event.isMode(2)) {
                 for (final MagicPlayer player : game.getAPNAP()) {
-                    game.doAction(new MagicMillLibraryAction(player,X));
+                    game.doAction(new MillLibraryAction(player,X));
                 }
             }
         }

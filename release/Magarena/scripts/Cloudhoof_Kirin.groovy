@@ -14,7 +14,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
                 event.processTargetPlayer(game, {
-                    game.doAction(new MagicMillLibraryAction(it, event.getRefInt()));
+                    game.doAction(new MillLibraryAction(it, event.getRefInt()));
                 });
             }
         }

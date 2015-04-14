@@ -16,7 +16,7 @@
                 MagicCounterType.Shred,
                 1
             ));
-            game.doAction(new MagicMillLibraryAction(
+            game.doAction(new MillLibraryAction(
                 event.getPlayer(),
                 event.getPermanent().getCounters(MagicCounterType.Shred)
             ));

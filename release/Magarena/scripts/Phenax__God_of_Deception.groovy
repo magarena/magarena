@@ -15,7 +15,7 @@ def millX = new MagicPermanentActivation(new MagicActivationHints(MagicTiming.Ma
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
-                game.doAction(new MagicMillLibraryAction(it,event.getPermanent().getToughness()));
+                game.doAction(new MillLibraryAction(it,event.getPermanent().getToughness()));
             });
         }
     };

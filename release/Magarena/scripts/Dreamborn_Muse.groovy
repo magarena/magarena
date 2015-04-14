@@ -15,7 +15,7 @@
             final MagicPlayer player = event.getPlayer();
             final int amount = player.getHandSize()
             game.logAppendMessage(player," (X="+amount+")");
-            game.doAction(new MagicMillLibraryAction(player,amount));
+            game.doAction(new MillLibraryAction(player,amount));
         }
     }
 ]

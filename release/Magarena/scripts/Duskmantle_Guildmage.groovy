@@ -70,7 +70,7 @@ def DelayedTrigger = {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
-                game.doAction(new MagicMillLibraryAction(it,2));
+                game.doAction(new MillLibraryAction(it,2));
             });
         }
     }

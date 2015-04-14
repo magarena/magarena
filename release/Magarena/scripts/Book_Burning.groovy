@@ -3,7 +3,7 @@ def action = {
     if (event.isYes()) {
         game.doAction(new DealDamageAction(event.getSource(),event.getPlayer(),6));
     } else {
-        game.doAction(new MagicMillLibraryAction(event.getRefPlayer(),6));
+        game.doAction(new MillLibraryAction(event.getRefPlayer(),6));
     }
 }
 

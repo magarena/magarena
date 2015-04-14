@@ -20,7 +20,7 @@
             event.processTargetPlayer(game, {
                 final MagicPlayer player = event.getPlayer();
                 final int amount = player.getNrOfPermanents(MagicSubType.Ally);
-                game.doAction(new MagicMillLibraryAction(it,amount));
+                game.doAction(new MillLibraryAction(it,amount));
             });
         }
     }

@@ -12,7 +12,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
-                final MagicMillLibraryAction millAct = new MagicMillLibraryAction(it, 4);
+                final MillLibraryAction millAct = new MillLibraryAction(it, 4);
                 game.doAction(millAct);
                 int amount = 0;
                 for (final MagicCard card : millAct.getMilledCards()) {

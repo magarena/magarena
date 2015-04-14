@@ -24,7 +24,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
-                final MagicMillLibraryAction act = new MagicMillLibraryAction(it, 1);
+                final MillLibraryAction act = new MillLibraryAction(it, 1);
                 game.doAction(act);
                 for (final MagicCard card : act.getMilledCards()) {
                     final int amount = card.getConvertedCost();

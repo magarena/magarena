@@ -19,7 +19,7 @@
                         game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard));
                         game.doAction(new MagicMoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.OwnersLibrary));
                     }
-                    game.doAction(new MagicMillLibraryAction(it,graveyard.size()));
+                    game.doAction(new MillLibraryAction(it,graveyard.size()));
                 }
             });
         }

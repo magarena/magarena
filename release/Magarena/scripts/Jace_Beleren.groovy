@@ -45,7 +45,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
-                game.doAction(new MagicMillLibraryAction(it, 20));
+                game.doAction(new MillLibraryAction(it, 20));
             });
         }
     }
