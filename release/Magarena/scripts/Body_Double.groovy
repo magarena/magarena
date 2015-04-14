@@ -18,7 +18,7 @@
                     game.doAction(new EnterAsCopyAction(event.getCardOnStack(), it))
                 });
             } else {
-                game.doAction(new MagicPlayCardFromStackAction(
+                game.doAction(new PlayCardFromStackAction(
                     event.getCardOnStack()
                 ));
             }

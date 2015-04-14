@@ -21,7 +21,7 @@ def choice = new MagicTargetChoice("an Ally creature");
                 });
             } else {
                 game.logAppendMessage(event.getPlayer(), "Put ${event.getCardOnStack()} onto the battlefield.");
-                game.doAction(new MagicPlayCardFromStackAction(
+                game.doAction(new PlayCardFromStackAction(
                     event.getCardOnStack()
                 ));
             }

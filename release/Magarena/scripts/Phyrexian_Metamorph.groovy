@@ -29,7 +29,7 @@ def type = new MagicStatic(MagicLayer.Type) {
                     }));
                 });
             } else {
-                game.doAction(new MagicPlayCardFromStackAction(
+                game.doAction(new PlayCardFromStackAction(
                     event.getCardOnStack()
                 ));
             }

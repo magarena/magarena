@@ -31,7 +31,7 @@ def choice = new MagicTargetChoice("an artifact");
                     }));
                 });
             } else {
-                game.doAction(new MagicPlayCardFromStackAction(
+                game.doAction(new PlayCardFromStackAction(
                     event.getCardOnStack()
                 ));
             }

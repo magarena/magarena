@@ -51,7 +51,7 @@ def GainTrig = new MagicStatic(MagicLayer.Ability) {
                     }));
                 });
             } else {
-                game.doAction(new MagicPlayCardFromStackAction(
+                game.doAction(new PlayCardFromStackAction(
                     event.getCardOnStack()
                 ));
             }

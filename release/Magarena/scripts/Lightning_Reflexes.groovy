@@ -25,7 +25,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                game.doAction(new MagicPlayCardFromStackAction(
+                game.doAction(new PlayCardFromStackAction(
                     event.getCardOnStack(),
                     it,
                     MagicPlayMod.SACRIFICE_AT_END_OF_TURN
