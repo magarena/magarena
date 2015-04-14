@@ -23,7 +23,7 @@
             if (event.isYes()) {
                 event.processTargetCard(game, {
                     game.doAction(new MagicRemoveCardAction(it,MagicLocationType.Graveyard));
-                    game.doAction(new MagicMoveCardAction(it,MagicLocationType.Graveyard,MagicLocationType.OwnersHand));
+                    game.doAction(new MoveCardAction(it,MagicLocationType.Graveyard,MagicLocationType.OwnersHand));
                 });
             }
         }

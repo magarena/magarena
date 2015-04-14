@@ -15,7 +15,7 @@
  
             if (card.isInGraveyard()) {
                 game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard));
-                game.doAction(new MagicMoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.Exile));
+                game.doAction(new MoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.Exile));
             }    
         }
     }

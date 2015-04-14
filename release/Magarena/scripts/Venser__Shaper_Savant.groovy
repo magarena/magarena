@@ -14,7 +14,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetCardOnStack(game, {
                 game.doAction(new MagicRemoveItemFromStackAction(it));
-                game.doAction(new MagicMoveCardAction(
+                game.doAction(new MoveCardAction(
                     it.getCard(),
                     MagicLocationType.Stack,
                     MagicLocationType.OwnersHand

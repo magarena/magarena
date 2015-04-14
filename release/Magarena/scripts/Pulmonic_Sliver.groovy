@@ -1,6 +1,6 @@
 def PulmonicTrigger = new MagicWouldBeMovedTrigger() {
     @Override
-    public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicMoveCardAction act) {
+    public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MoveCardAction act) {
         if (permanent == act.permanent && act.getToLocation() == MagicLocationType.Graveyard) {
             //disable the current move action
             act.setToLocation(MagicLocationType.Play);
@@ -12,10 +12,10 @@ def PulmonicTrigger = new MagicWouldBeMovedTrigger() {
                 {
                     final MagicGame G, final MagicEvent E ->
                     if (E.isYes()) {
-                        G.doAction(new MagicMoveCardAction(E.getRefCard(), act.fromLocation, MagicLocationType.TopOfOwnersLibrary));
+                        G.doAction(new MoveCardAction(E.getRefCard(), act.fromLocation, MagicLocationType.TopOfOwnersLibrary));
                     } else {
                         //needs to be delayed so it occurs after trigger is remove
-                        G.addDelayedAction(new MagicMoveCardAction(E.getRefCard(), act.fromLocation, MagicLocationType.Graveyard));
+                        G.addDelayedAction(new MoveCardAction(E.getRefCard(), act.fromLocation, MagicLocationType.Graveyard));
                     }
                 },
                 "PN may\$ put SN on top of its owner's library."

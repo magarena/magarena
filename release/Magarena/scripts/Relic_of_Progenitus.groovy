@@ -2,7 +2,7 @@ def action = {
     final MagicGame game, final MagicEvent event ->
     event.processTargetCard(game, {
         game.doAction(new MagicRemoveCardAction(it,MagicLocationType.Graveyard));
-        game.doAction(new MagicMoveCardAction(it,MagicLocationType.Graveyard,MagicLocationType.Exile));
+        game.doAction(new MoveCardAction(it,MagicLocationType.Graveyard,MagicLocationType.Exile));
     });
 }
 
@@ -64,7 +64,7 @@ def choice = new MagicTargetChoice("a card from your graveyard");
             for (final MagicPlayer player : game.getAPNAP()) {
                 for (final MagicCard card : new MagicCardList(player.getGraveyard())) {
                     game.doAction(new MagicRemoveCardAction(card, MagicLocationType.Graveyard));
-                    game.doAction(new MagicMoveCardAction(card, MagicLocationType.Graveyard, MagicLocationType.Exile));
+                    game.doAction(new MoveCardAction(card, MagicLocationType.Graveyard, MagicLocationType.Exile));
                 }
             }
             game.doAction(new DrawAction(event.getPlayer()));

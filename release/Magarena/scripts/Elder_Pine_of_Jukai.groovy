@@ -18,7 +18,7 @@
                     top,
                     MagicLocationType.OwnersLibrary
                 ));
-                game.doAction(new MagicMoveCardAction(
+                game.doAction(new MoveCardAction(
                     top,
                     MagicLocationType.OwnersLibrary,
                     top.hasType(MagicType.Land) ?

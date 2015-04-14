@@ -14,11 +14,11 @@
             event.processTargetPlayer(game, {
                 for (final MagicCard card : new MagicCardList(it.getHand())) {
                     game.doAction(new MagicRemoveCardAction(card, MagicLocationType.OwnersHand));
-                    game.doAction(new MagicMoveCardAction(card, MagicLocationType.OwnersHand, MagicLocationType.Exile));
+                    game.doAction(new MoveCardAction(card, MagicLocationType.OwnersHand, MagicLocationType.Exile));
                 }
                 for (final MagicCard card : new MagicCardList(it.getGraveyard())) {
                     game.doAction(new MagicRemoveCardAction(card, MagicLocationType.Graveyard));
-                    game.doAction(new MagicMoveCardAction(card, MagicLocationType.Graveyard, MagicLocationType.Exile));
+                    game.doAction(new MoveCardAction(card, MagicLocationType.Graveyard, MagicLocationType.Exile));
                 }
             });
         }

@@ -17,7 +17,7 @@
                 if (graveyard.size > 0) {
                     for (final MagicCard card : graveyard) {
                         game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard));
-                        game.doAction(new MagicMoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.OwnersLibrary));
+                        game.doAction(new MoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.OwnersLibrary));
                     }
                     game.doAction(new MillLibraryAction(it,graveyard.size()));
                 }

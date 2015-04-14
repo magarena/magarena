@@ -29,7 +29,7 @@
                     card,
                     MagicLocationType.Graveyard
                 ));
-                game.doAction(new MagicMoveCardAction(
+                game.doAction(new MoveCardAction(
                     card,
                     MagicLocationType.Graveyard,
                     MagicLocationType.OwnersLibrary

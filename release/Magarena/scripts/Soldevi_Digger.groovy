@@ -26,7 +26,7 @@
                     top,
                     MagicLocationType.Graveyard
                 ));
-                game.doAction(new MagicMoveCardAction(
+                game.doAction(new MoveCardAction(
                     top,
                     MagicLocationType.Graveyard,
                     MagicLocationType.BottomOfOwnersLibrary

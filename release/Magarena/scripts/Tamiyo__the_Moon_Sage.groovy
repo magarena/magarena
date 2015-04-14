@@ -69,7 +69,7 @@
                     public MagicEvent executeTrigger(
                             final MagicGame game,
                             final MagicPermanent permanent,
-                            final MagicMoveCardAction act) {
+                            final MoveCardAction act) {
                         return act.card.getOwner().getId() == you.getId() ?
                             // HACK: As emblem is not represented, source of event is the card
                             new MagicEvent(
@@ -85,7 +85,7 @@
                     public void executeEvent(final MagicGame game, final MagicEvent event) {
                         if (event.isYes() && event.getCard().isInGraveyard()) {
                             game.doAction(new MagicRemoveCardAction(event.getCard(),MagicLocationType.Graveyard));
-                            game.doAction(new MagicMoveCardAction(event.getCard(),MagicLocationType.Graveyard,MagicLocationType.OwnersHand));
+                            game.doAction(new MoveCardAction(event.getCard(),MagicLocationType.Graveyard,MagicLocationType.OwnersHand));
                         }
                     }
                 }

@@ -24,7 +24,7 @@
                         card,
                         MagicLocationType.OwnersLibrary
                     ));
-                    game.doAction(new MagicMoveCardAction(
+                    game.doAction(new MoveCardAction(
                         card,
                         MagicLocationType.OwnersLibrary,
                         MagicLocationType.Exile
@@ -34,7 +34,7 @@
                 game.doAction(new MagicSacrificeAction(event.getPermanent()));
                 for (final MagicCard card : new MagicCardList(event.getPlayer().getLibrary())) {
                     game.doAction(new MagicRemoveCardAction(card, MagicLocationType.OwnersLibrary));
-                    game.doAction(new MagicMoveCardAction(card, MagicLocationType.OwnersLibrary, MagicLocationType.Exile));
+                    game.doAction(new MoveCardAction(card, MagicLocationType.OwnersLibrary, MagicLocationType.Exile));
                 }
             }
         }

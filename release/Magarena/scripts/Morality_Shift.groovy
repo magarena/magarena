@@ -14,11 +14,11 @@
             final MagicCardList library = new MagicCardList(event.getPlayer().getLibrary());
             for (final MagicCard card : library) {
                 game.doAction(new MagicRemoveCardAction(card,MagicLocationType.OwnersLibrary));
-                game.doAction(new MagicMoveCardAction(card,MagicLocationType.OwnersLibrary,MagicLocationType.Graveyard));
+                game.doAction(new MoveCardAction(card,MagicLocationType.OwnersLibrary,MagicLocationType.Graveyard));
             }
             for (final MagicCard card : graveyard) {
                 game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard));
-                game.doAction(new MagicMoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.OwnersLibrary));
+                game.doAction(new MoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.OwnersLibrary));
             }
         }
     }

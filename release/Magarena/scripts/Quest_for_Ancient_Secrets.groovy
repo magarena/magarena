@@ -1,7 +1,7 @@
 [
     new MagicWhenOtherPutIntoGraveyardTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicMoveCardAction act) {
+        public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MoveCardAction act) {
             final MagicCard card = act.card;
             return (card.isFriend(permanent)) ?
                 new MagicEvent(
@@ -52,7 +52,7 @@
                 final MagicCardList graveyard = new MagicCardList(it.getGraveyard());
                 for (final MagicCard card : graveyard) {
                     game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard));
-                    game.doAction(new MagicMoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.OwnersLibrary));
+                    game.doAction(new MoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.OwnersLibrary));
                 }
             });
         }

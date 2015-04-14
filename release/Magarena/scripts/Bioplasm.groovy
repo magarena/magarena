@@ -13,7 +13,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             for (final MagicCard card : event.getPlayer().getLibrary().getCardsFromTop(1)) {
                 game.doAction(new MagicRemoveCardAction(card, MagicLocationType.OwnersLibrary));
-                game.doAction(new MagicMoveCardAction(card, MagicLocationType.OwnersLibrary, MagicLocationType.Exile));
+                game.doAction(new MoveCardAction(card, MagicLocationType.OwnersLibrary, MagicLocationType.Exile));
                 if (card.hasType(MagicType.Creature)) {
                     final int X = card.getPower();
                     final int Y = card.getToughness();

@@ -15,7 +15,7 @@
                 if (hand.size() > 0) {
                     for (final MagicCard card : hand) {
                         game.doAction(new MagicRemoveCardAction(card,MagicLocationType.OwnersHand));
-                        game.doAction(new MagicMoveCardAction(card,MagicLocationType.OwnersHand,MagicLocationType.OwnersLibrary));
+                        game.doAction(new MoveCardAction(card,MagicLocationType.OwnersHand,MagicLocationType.OwnersLibrary));
                     }
                     game.doAction(new DrawAction(player,hand.size()));
                 }

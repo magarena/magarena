@@ -14,7 +14,7 @@
                 game.filterCards(event.getPlayer(),ZOMBIE_CARD_FROM_ALL_GRAVEYARDS);
             for (final MagicCard card : graveyard) {
                 game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard));
-                game.doAction(new MagicMoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.OwnersHand));
+                game.doAction(new MoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.OwnersHand));
             }
         }
     }

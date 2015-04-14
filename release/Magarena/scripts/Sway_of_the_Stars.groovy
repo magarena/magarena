@@ -19,11 +19,11 @@
                 }
                 for (final MagicCard cardHand : hand) {
                     game.doAction(new MagicRemoveCardAction(cardHand,MagicLocationType.OwnersHand));
-                    game.doAction(new MagicMoveCardAction(cardHand,MagicLocationType.OwnersHand,MagicLocationType.OwnersLibrary));
+                    game.doAction(new MoveCardAction(cardHand,MagicLocationType.OwnersHand,MagicLocationType.OwnersLibrary));
                 }
                 for (final MagicCard cardGraveyard : graveyard) {
                     game.doAction(new MagicRemoveCardAction(cardGraveyard,MagicLocationType.Graveyard));
-                    game.doAction(new MagicMoveCardAction(cardGraveyard,MagicLocationType.Graveyard,MagicLocationType.OwnersLibrary));
+                    game.doAction(new MoveCardAction(cardGraveyard,MagicLocationType.Graveyard,MagicLocationType.OwnersLibrary));
                 }
             }
             for (final MagicPlayer player : game.getAPNAP()) {

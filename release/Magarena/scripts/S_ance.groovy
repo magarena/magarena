@@ -34,7 +34,7 @@ def Spirit = new MagicStatic(MagicLayer.Type) {
                         it,
                         MagicLocationType.Graveyard
                     ));
-                    game.doAction(new MagicMoveCardAction(
+                    game.doAction(new MoveCardAction(
                         it,
                         MagicLocationType.Graveyard,
                         MagicLocationType.Exile

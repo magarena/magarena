@@ -23,7 +23,7 @@
             final MagicPlayer player = event.getPlayer();
             game.filterCards(player, CREATURE_CARD_FROM_GRAVEYARD) each {
                 game.doAction(new MagicRemoveCardAction(it, MagicLocationType.Graveyard));
-                game.doAction(new MagicMoveCardAction(it, MagicLocationType.Graveyard, MagicLocationType.Exile));
+                game.doAction(new MoveCardAction(it, MagicLocationType.Graveyard, MagicLocationType.Exile));
             }
         }
     }

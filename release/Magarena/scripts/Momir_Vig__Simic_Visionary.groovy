@@ -46,7 +46,7 @@
                     card,
                     MagicLocationType.OwnersLibrary
                 ));
-                game.doAction(new MagicMoveCardAction(
+                game.doAction(new MoveCardAction(
                     card,
                     MagicLocationType.OwnersLibrary,
                     card.hasType(MagicType.Creature) ?

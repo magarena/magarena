@@ -14,7 +14,7 @@
                 final MagicCardList graveyard = new MagicCardList(player.getGraveyard());
                 for (final MagicCard cardGraveyard : graveyard) {
                     game.doAction(new MagicRemoveCardAction(cardGraveyard,MagicLocationType.Graveyard));
-                    game.doAction(new MagicMoveCardAction(cardGraveyard,MagicLocationType.Graveyard,MagicLocationType.Exile));
+                    game.doAction(new MoveCardAction(cardGraveyard,MagicLocationType.Graveyard,MagicLocationType.Exile));
                 }
             }
         }

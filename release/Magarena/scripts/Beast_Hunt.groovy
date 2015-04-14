@@ -15,7 +15,7 @@
             game.doAction(new MagicRevealAction(top3));
             for (final MagicCard top : top3) {
                 game.doAction(new MagicRemoveCardAction(top, MagicLocationType.OwnersLibrary));
-                game.doAction(new MagicMoveCardAction(top, MagicLocationType.OwnersLibrary,
+                game.doAction(new MoveCardAction(top, MagicLocationType.OwnersLibrary,
                     top.hasType(MagicType.Creature) ?
                       MagicLocationType.OwnersHand :
                       MagicLocationType.Graveyard

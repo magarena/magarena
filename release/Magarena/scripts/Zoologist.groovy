@@ -34,7 +34,7 @@
                         event.getPlayer()
                     ));
                 } else {
-                    game.doAction(new MagicMoveCardAction(
+                    game.doAction(new MoveCardAction(
                         card,
                         MagicLocationType.OwnersLibrary,
                         MagicLocationType.Graveyard

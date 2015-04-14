@@ -14,7 +14,7 @@
             final MagicCardList cards = new MagicCardList(game.filterCards(player,ZOMBIE_CARD_FROM_GRAVEYARD));
             for (final MagicCard card : cards.getRandomCards(1)) {
                 game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard));
-                game.doAction(new MagicMoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.OwnersHand));
+                game.doAction(new MoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.OwnersHand));
             }
         }
     }

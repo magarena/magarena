@@ -13,7 +13,7 @@
             final MagicPlayer player = event.getPlayer();
             for (final MagicCard card : player.getGraveyard().getRandomCards(2)) {
                 game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard));
-                game.doAction(new MagicMoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.OwnersHand));
+                game.doAction(new MoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.OwnersHand));
             }
         }
     }

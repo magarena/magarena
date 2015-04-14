@@ -35,7 +35,7 @@
                         final int x = outerEvent.getRefInt();
                         for (final MagicCard card : player.getLibrary().getCardsFromTop(x)) {
                             game.doAction(new MagicRemoveCardAction(card,MagicLocationType.OwnersLibrary));
-                            game.doAction(new MagicMoveCardAction(card,MagicLocationType.OwnersLibrary,MagicLocationType.Exile));
+                            game.doAction(new MoveCardAction(card,MagicLocationType.OwnersLibrary,MagicLocationType.Exile));
                             if (card.hasColor(color)) {
                                 game.doAction(new MagicPlayTokenAction(
                                     event.getPlayer(),
