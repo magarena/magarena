@@ -2192,7 +2192,7 @@ public enum MagicRuleEventAction {
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    game.doAction(new MagicPlayTokenAction(
+                    game.doAction(new PlayTokenAction(
                         event.getPlayer(),
                         tokenDef,
                         mods
@@ -2216,7 +2216,7 @@ public enum MagicRuleEventAction {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
                     for (int i = 0; i < amount; i++) {
-                        game.doAction(new MagicPlayTokenAction(
+                        game.doAction(new PlayTokenAction(
                             event.getPlayer(),
                             tokenDef,
                             mods

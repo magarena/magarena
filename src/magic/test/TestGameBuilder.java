@@ -15,7 +15,7 @@ import magic.model.MagicDeckProfile;
 import magic.model.player.AiProfile;
 import magic.model.player.HumanProfile;
 import magic.model.stack.MagicCardOnStack;
-import magic.model.action.MagicPlayTokenAction;
+import magic.model.action.PlayTokenAction;
 import magic.model.action.PlayCardFromStackAction;
 import magic.ai.MagicAIImpl;
 
@@ -55,7 +55,7 @@ public abstract class TestGameBuilder {
 
     static void createAllTokens(final MagicGame game, final MagicPlayer player) {
         for (final MagicCardDefinition cardDefinition : TokenCardDefinitions.getAll()) {
-            game.doAction(new MagicPlayTokenAction(player,cardDefinition));
+            game.doAction(new PlayTokenAction(player,cardDefinition));
         }
     }
 

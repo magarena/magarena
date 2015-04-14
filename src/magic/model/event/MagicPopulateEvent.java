@@ -4,7 +4,7 @@ import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicSource;
 import magic.model.action.MagicPermanentAction;
-import magic.model.action.MagicPlayTokenAction;
+import magic.model.action.PlayTokenAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.target.MagicCopyPermanentPicker;
 
@@ -25,7 +25,7 @@ public class MagicPopulateEvent extends MagicEvent {
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
-                    game.doAction(new MagicPlayTokenAction(event.getPlayer(), creature.getCardDefinition()));
+                    game.doAction(new PlayTokenAction(event.getPlayer(), creature.getCardDefinition()));
                 }
             });
         }

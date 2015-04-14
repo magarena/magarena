@@ -23,7 +23,7 @@ public class MagicPlayTokensAction extends MagicAction {
     @Override
     public void doAction(final MagicGame game) {
         for (int i = 0; i < count; i++) {
-            game.doAction(new MagicPlayTokenAction(card));
+            game.doAction(new PlayTokenAction(card));
         }
     }
 

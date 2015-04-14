@@ -13,38 +13,38 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-public class MagicPlayTokenAction extends MagicAction {
+public class PlayTokenAction extends MagicAction {
 
     private final MagicCard card;
     private final List<? extends MagicPermanentAction> modifications;
     
-    public MagicPlayTokenAction(final MagicPlayer player,final MagicCardDefinition cardDefinition, final List<? extends MagicPermanentAction> aModifications) {
+    public PlayTokenAction(final MagicPlayer player,final MagicCardDefinition cardDefinition, final List<? extends MagicPermanentAction> aModifications) {
         card = MagicCard.createTokenCard(cardDefinition,player);
         modifications = aModifications;
     }
 
-    public MagicPlayTokenAction(final MagicCard aCard) {
+    public PlayTokenAction(final MagicCard aCard) {
         card = aCard;
         modifications = Collections.<MagicPermanentAction>emptyList();
     }
     
-    public MagicPlayTokenAction(final MagicPlayer player,final MagicCardDefinition cardDefinition) {
+    public PlayTokenAction(final MagicPlayer player,final MagicCardDefinition cardDefinition) {
         this(player, cardDefinition, Collections.<MagicPermanentAction>emptyList());
     }
     
-    public MagicPlayTokenAction(final MagicPlayer player,final MagicCardDefinition cardDefinition,final MagicPermanentAction... aModifications) {
+    public PlayTokenAction(final MagicPlayer player,final MagicCardDefinition cardDefinition,final MagicPermanentAction... aModifications) {
         this(player, cardDefinition, Arrays.asList(aModifications));
     }
     
-    public MagicPlayTokenAction(final MagicPlayer player,final MagicObject obj) {
+    public PlayTokenAction(final MagicPlayer player,final MagicObject obj) {
         this(player, obj.getCardDefinition(), Collections.<MagicPermanentAction>emptyList());
     }
     
-    public MagicPlayTokenAction(final MagicPlayer player,final MagicObject obj, final List<? extends MagicPermanentAction> aModifications) {
+    public PlayTokenAction(final MagicPlayer player,final MagicObject obj, final List<? extends MagicPermanentAction> aModifications) {
         this(player, obj.getCardDefinition(), aModifications);
     }
     
-    public MagicPlayTokenAction(final MagicPlayer player,final MagicObject obj, final MagicPermanentAction... aModifications) {
+    public PlayTokenAction(final MagicPlayer player,final MagicObject obj, final MagicPermanentAction... aModifications) {
         this(player, obj.getCardDefinition(), Arrays.asList(aModifications));
     }
 
