@@ -567,6 +567,12 @@ public class MagicTargetFilterFactory {
             return target.isOpponent(player);
         }
     };
+    
+    public static final MagicPermanentFilterImpl UNTAPPED_PERMANENT_AN_OPPONENT_CONTROLS=new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+            return target.isUntapped() && target.isOpponent(player);
+        }
+    };
 
     public static final MagicPermanentFilterImpl PERMANENT_YOU_OWN=new MagicPermanentFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
@@ -2332,6 +2338,7 @@ public class MagicTargetFilterFactory {
         
         // <color|type|subtype> an opponent controls
         single.put("permanent an opponent controls", PERMANENT_AN_OPPONENT_CONTROLS);
+        single.put("untapped permanent an opponent controls", UNTAPPED_PERMANENT_AN_OPPONENT_CONTROLS);
         single.put("artifact or enchantment an opponent controls", ARTIFACT_OR_ENCHANTMENT_YOUR_OPPONENT_CONTROLS);
         single.put("nonland permanent an opponent controls", NONLAND_PERMANENT_YOUR_OPPONENT_CONTROLS);
         single.put("Island or Swamp an opponent controls", ISLAND_OR_SWAMP_AN_OPPONENT_CONTROLS);
