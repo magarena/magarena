@@ -13,7 +13,7 @@ import magic.model.MagicPowerToughness;
 import magic.model.MagicSubType;
 import magic.model.MagicType;
 import magic.model.condition.MagicCondition;
-import magic.model.action.MagicRemoveStaticAction;
+import magic.model.action.RemoveStaticAction;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicPermanentTargetFilter;
 import magic.model.target.MagicOtherTargetFilter;
@@ -442,7 +442,7 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
                 final MagicPermanent target) {
                 if (you.getIndex() != source.getController().getIndex()) {
                     //remove this static after the update
-                    game.addDelayedAction(new MagicRemoveStaticAction(source, this));
+                    game.addDelayedAction(new RemoveStaticAction(source, this));
                     return false;
                 } else {
                     return true;
@@ -549,7 +549,7 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
                     return true;
                 } else {
                     //remove this static after the update
-                    game.addDelayedAction(new MagicRemoveStaticAction(source, this));
+                    game.addDelayedAction(new RemoveStaticAction(source, this));
                     return false;
                 }
             }
@@ -573,7 +573,7 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
                     return true;
                 } else {
                     //remove this static after the update
-                    game.addDelayedAction(new MagicRemoveStaticAction(source, this));
+                    game.addDelayedAction(new RemoveStaticAction(source, this));
                     return false;
                 }
             }

@@ -41,7 +41,7 @@ public class ChangePlayerStateAction extends MagicAction {
                 @Override
                 public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
                     if (player.getId() == upkeepPlayer.getId()) {
-                        game.addDelayedAction(new MagicRemoveStaticAction(exhausted));
+                        game.addDelayedAction(new RemoveStaticAction(exhausted));
                         game.addDelayedAction(new MagicRemoveTriggerAction(this));
                     }
                     return MagicEvent.NONE;
