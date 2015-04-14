@@ -1,7 +1,7 @@
 [
     new MagicWhenSelfLeavesPlayTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicRemoveFromPlayAction act) {
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final RemoveFromPlayAction act) {
             return permanent.getOpponent().getHandSize() >
                    permanent.getController().getHandSize() ?
                 new MagicEvent(

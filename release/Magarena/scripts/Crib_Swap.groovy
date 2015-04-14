@@ -14,7 +14,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                game.doAction(new MagicRemoveFromPlayAction(it,MagicLocationType.Exile));
+                game.doAction(new RemoveFromPlayAction(it,MagicLocationType.Exile));
                 game.doAction(new PlayTokenAction(
                     it.getController(),
                     TokenCardDefinitions.get("1/1 colorless Shapeshifter creature token with changeling")

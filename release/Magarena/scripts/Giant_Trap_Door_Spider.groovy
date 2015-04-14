@@ -26,8 +26,8 @@ def choice = Negative("target attacking creature without flying your opponent co
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                game.doAction(new MagicRemoveFromPlayAction(event.getPermanent(),MagicLocationType.Exile));
-                game.doAction(new MagicRemoveFromPlayAction(it,MagicLocationType.Exile));
+                game.doAction(new RemoveFromPlayAction(event.getPermanent(),MagicLocationType.Exile));
+                game.doAction(new RemoveFromPlayAction(it,MagicLocationType.Exile));
             });
         }
     }

@@ -16,7 +16,7 @@
                 TAPPED_CREATURE.except(event.getPermanent())
             );
             for (final MagicPermanent creature : tapped) {
-                game.doAction(new MagicRemoveFromPlayAction(creature,MagicLocationType.OwnersHand));
+                game.doAction(new RemoveFromPlayAction(creature,MagicLocationType.OwnersHand));
             }
         }
     }

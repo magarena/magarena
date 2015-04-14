@@ -12,7 +12,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
             game.filterPermanents(player, ZOMBIE) each {
-                game.doAction(new MagicRemoveFromPlayAction(it, MagicLocationType.Exile));
+                game.doAction(new RemoveFromPlayAction(it, MagicLocationType.Exile));
             }
             game.filterCards(player, HUMAN_CREATURE_CARD_FROM_GRAVEYARD) each {
                 game.doAction(new ReanimateAction(it, player));

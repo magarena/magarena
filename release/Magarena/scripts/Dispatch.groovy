@@ -16,7 +16,7 @@
             event.processTargetPermanent(game, {
                 game.doAction(new MagicTapAction(it));
                 if (MagicCondition.METALCRAFT_CONDITION.accept(event.getSource())) {
-                    game.doAction(new MagicRemoveFromPlayAction(it,MagicLocationType.Exile));
+                    game.doAction(new RemoveFromPlayAction(it,MagicLocationType.Exile));
                 }
             });
         }

@@ -16,7 +16,7 @@
                     !target.hasSubType(MagicSubType.Leviathan) &&
                     !target.hasSubType(MagicSubType.Octopus) &&
                     !target.hasSubType(MagicSubType.Serpent)) {
-                    game.doAction(new MagicRemoveFromPlayAction(target,MagicLocationType.OwnersHand));
+                    game.doAction(new RemoveFromPlayAction(target,MagicLocationType.OwnersHand));
                 }
             }
         }

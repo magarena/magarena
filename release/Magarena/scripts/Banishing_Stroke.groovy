@@ -15,7 +15,7 @@ def choice = Negative("target artifact, creature, or enchantment");
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                game.doAction(new MagicRemoveFromPlayAction(it,MagicLocationType.BottomOfOwnersLibrary));
+                game.doAction(new RemoveFromPlayAction(it,MagicLocationType.BottomOfOwnersLibrary));
             });
         }
     }

@@ -46,7 +46,7 @@
                 ));
             };
             for (final MagicPermanent permanent : battlefield) {
-                game.doAction(new MagicRemoveFromPlayAction(
+                game.doAction(new RemoveFromPlayAction(
                     permanent,
                     MagicLocationType.OwnersLibrary
                 ));

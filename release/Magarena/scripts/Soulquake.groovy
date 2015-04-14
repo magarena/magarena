@@ -11,7 +11,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             CREATURE.filter(game) each {
-                game.doAction(new MagicRemoveFromPlayAction(it,MagicLocationType.OwnersHand));
+                game.doAction(new RemoveFromPlayAction(it,MagicLocationType.OwnersHand));
             }
             CREATURE_CARD_FROM_ALL_GRAVEYARDS.filter(game) each {
                 game.doAction(new RemoveCardAction(it,MagicLocationType.Graveyard));

@@ -19,7 +19,7 @@
                 game.doAction(new MagicSacrificeAction(event.getPermanent()));
             } else {
                 event.processTargetPermanent(game, {
-                    game.doAction(new MagicRemoveFromPlayAction(it,MagicLocationType.OwnersHand));
+                    game.doAction(new RemoveFromPlayAction(it,MagicLocationType.OwnersHand));
                 });
             }
         }

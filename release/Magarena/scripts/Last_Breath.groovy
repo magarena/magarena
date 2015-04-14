@@ -15,7 +15,7 @@ def choice = Negative("target creature with power 2 or less");
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                game.doAction(new MagicRemoveFromPlayAction(it,MagicLocationType.Exile));
+                game.doAction(new RemoveFromPlayAction(it,MagicLocationType.Exile));
                 game.doAction(new ChangeLifeAction(it.getController(),4));
             });
         }

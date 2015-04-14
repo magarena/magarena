@@ -1,7 +1,7 @@
 [
     new MagicWhenLeavesPlayTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicRemoveFromPlayAction act) {
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final RemoveFromPlayAction act) {
             if (act.getPermanent().getOwner() == permanent.getController() &&
                 act.getToLocation() == MagicLocationType.OwnersHand) {
                 return new MagicEvent(

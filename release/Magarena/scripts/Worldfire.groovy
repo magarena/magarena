@@ -13,7 +13,7 @@
             final Collection<MagicPermanent> permanents =
                 game.filterPermanents(PERMANENT);
             for (final MagicPermanent permanent : permanents) {
-                game.doAction(new MagicRemoveFromPlayAction(permanent,MagicLocationType.Exile));
+                game.doAction(new RemoveFromPlayAction(permanent,MagicLocationType.Exile));
             }
             for (final MagicPlayer player : game.getAPNAP()) {
                 final MagicCardList hand = new MagicCardList(player.getHand());

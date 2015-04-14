@@ -21,7 +21,7 @@
                 final Collection<MagicPermanent> targets=game.filterPermanents(event.getPlayer(),CREATURE);
                 for (final MagicPermanent creature : targets) {
                     if (creature.hasColor(color)) {
-                        game.doAction(new MagicRemoveFromPlayAction(creature,MagicLocationType.OwnersHand));
+                        game.doAction(new RemoveFromPlayAction(creature,MagicLocationType.OwnersHand));
                     }
                 }
             }

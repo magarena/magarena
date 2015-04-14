@@ -15,7 +15,7 @@
             final int amount = event.getPlayer().getHandSize();
             CREATURE_YOU_CONTROL.filter(event.getPlayer()) each {
                 if (it.getPower() > amount){
-                    game.doAction(new MagicRemoveFromPlayAction(it,MagicLocationType.OwnersHand));
+                    game.doAction(new RemoveFromPlayAction(it,MagicLocationType.OwnersHand));
                 }
             }
         }

@@ -15,7 +15,7 @@
             final MagicPermanent perm = event.getPermanent();
             if (event.getPlayer().controlsPermanent(MagicType.Land) && event.isYes()) {
                 game.addEvent(new MagicSacrificePermanentEvent(perm,event.getPlayer(),SACRIFICE_LAND));
-                game.doAction(new MagicRemoveFromPlayAction(
+                game.doAction(new RemoveFromPlayAction(
                     perm,
                     MagicLocationType.TopOfOwnersLibrary
                 ));

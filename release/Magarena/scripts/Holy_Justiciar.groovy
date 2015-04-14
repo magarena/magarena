@@ -28,7 +28,7 @@
             event.processTargetPermanent(game, {
                 game.doAction(new MagicTapAction(it));
                 if (it.hasSubType(MagicSubType.Zombie)) {
-                    game.doAction(new MagicRemoveFromPlayAction(
+                    game.doAction(new RemoveFromPlayAction(
                         it,
                         MagicLocationType.Exile
                     ));

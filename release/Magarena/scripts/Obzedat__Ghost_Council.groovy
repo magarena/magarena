@@ -53,7 +53,7 @@ def DelayedTrigger = {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
-                game.doAction(new MagicRemoveFromPlayAction(
+                game.doAction(new RemoveFromPlayAction(
                     event.getPermanent(),
                     MagicLocationType.Exile
                 ));

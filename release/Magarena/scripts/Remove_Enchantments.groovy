@@ -17,7 +17,7 @@
             final MagicPlayer player = event.getPlayer();
             final List<MagicPermanent> enchantments = game.filterPermanents(player, ENCHANTMENT_YOU_OWN_AND_CONTROL);
             for (final MagicPermanent permanent : enchantments) {
-                game.doAction(new MagicRemoveFromPlayAction(permanent, MagicLocationType.OwnersHand));
+                game.doAction(new RemoveFromPlayAction(permanent, MagicLocationType.OwnersHand));
             }
             final List<MagicPermanent> auras = game.filterPermanents(player, AURA_YOU_OWN);
             for (final MagicPermanent permanent : auras) {
@@ -28,7 +28,7 @@
                             (enchantedPermanent.isCreature() && enchantedPermanent.isAttacking())
                         )
                     ) {
-                    game.doAction(new MagicRemoveFromPlayAction(permanent, MagicLocationType.OwnersHand));
+                    game.doAction(new RemoveFromPlayAction(permanent, MagicLocationType.OwnersHand));
                 }
             }
             final List<MagicPermanent> destroyEnchantment = game.filterPermanents(player, ENCHANTMENT_YOU_CONTROL);

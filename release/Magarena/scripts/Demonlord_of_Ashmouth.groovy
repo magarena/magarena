@@ -18,7 +18,7 @@
             if (event.isYes() && sac.isSatisfied()) {
                 game.addEvent(sac);
             } else {
-                game.doAction(new MagicRemoveFromPlayAction(permanent,MagicLocationType.Exile));
+                game.doAction(new RemoveFromPlayAction(permanent,MagicLocationType.Exile));
             }
         }
     }

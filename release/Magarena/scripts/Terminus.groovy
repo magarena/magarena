@@ -11,7 +11,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             CREATURE.filter(game) each {
-                game.doAction(new MagicRemoveFromPlayAction(it,MagicLocationType.BottomOfOwnersLibrary));
+                game.doAction(new RemoveFromPlayAction(it,MagicLocationType.BottomOfOwnersLibrary));
             }
         }
     }

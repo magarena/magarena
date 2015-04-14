@@ -25,7 +25,7 @@ def event = {
     },    
     new MagicWhenLeavesPlayTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicRemoveFromPlayAction act) {
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final RemoveFromPlayAction act) {
             return permanent.getController().controlsPermanent(MagicSubType.Demon) == false ?
                 event(permanent):
                 MagicEvent.NONE;

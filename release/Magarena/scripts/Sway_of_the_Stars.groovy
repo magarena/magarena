@@ -15,7 +15,7 @@
                 final MagicCardList hand = new MagicCardList(player.getHand());
                 final MagicCardList graveyard = new MagicCardList(player.getGraveyard());
                 for (final MagicPermanent permanent : permanents) {
-                    game.doAction(new MagicRemoveFromPlayAction(permanent,MagicLocationType.OwnersLibrary));
+                    game.doAction(new RemoveFromPlayAction(permanent,MagicLocationType.OwnersLibrary));
                 }
                 for (final MagicCard cardHand : hand) {
                     game.doAction(new RemoveCardAction(cardHand,MagicLocationType.OwnersHand));

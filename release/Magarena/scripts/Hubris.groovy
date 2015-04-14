@@ -17,10 +17,10 @@
                     final MagicPermanentList auras = new MagicPermanentList();
                     auras.addAll(it.getAuraPermanents())
                     for (final MagicPermanent aura : auras) {
-                        game.doAction(new MagicRemoveFromPlayAction(aura,MagicLocationType.OwnersHand));
+                        game.doAction(new RemoveFromPlayAction(aura,MagicLocationType.OwnersHand));
                     }
                 }
-                game.doAction(new MagicRemoveFromPlayAction(it,MagicLocationType.OwnersHand));
+                game.doAction(new RemoveFromPlayAction(it,MagicLocationType.OwnersHand));
             })
         }
     }

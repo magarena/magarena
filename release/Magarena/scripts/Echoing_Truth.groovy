@@ -21,7 +21,7 @@
                 );
                 targetFilter.filter(game) each {
                     final MagicPermanent target ->
-                    game.doAction(new MagicRemoveFromPlayAction(target, MagicLocationType.OwnersHand));
+                    game.doAction(new RemoveFromPlayAction(target, MagicLocationType.OwnersHand));
                 }
             });
         }

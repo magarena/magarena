@@ -48,7 +48,7 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicRemoveFromPlayAction(event.getPermanent(),MagicLocationType.OwnersHand));
+            game.doAction(new RemoveFromPlayAction(event.getPermanent(),MagicLocationType.OwnersHand));
             if (event.isYes()) {
                 game.doAction(new DrawAction(event.getPlayer(),1));
             }

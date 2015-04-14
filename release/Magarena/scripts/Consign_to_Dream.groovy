@@ -16,12 +16,12 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
                 if (it.hasColor(MagicColor.Red) || it.hasColor(MagicColor.Green)) {
-                    game.doAction(new MagicRemoveFromPlayAction(
+                    game.doAction(new RemoveFromPlayAction(
                         it,
                         MagicLocationType.TopOfOwnersLibrary
                     ));
                 } else {
-                    game.doAction(new MagicRemoveFromPlayAction(
+                    game.doAction(new RemoveFromPlayAction(
                         it,
                         MagicLocationType.OwnersHand
                     ));

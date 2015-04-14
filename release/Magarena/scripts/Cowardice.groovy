@@ -21,7 +21,7 @@
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicRemoveFromPlayAction(event.getRefPermanent(),MagicLocationType.OwnersHand));
+            game.doAction(new RemoveFromPlayAction(event.getRefPermanent(),MagicLocationType.OwnersHand));
         }
     }
 ]
