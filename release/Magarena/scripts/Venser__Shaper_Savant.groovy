@@ -13,7 +13,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetCardOnStack(game, {
-                game.doAction(new MagicRemoveItemFromStackAction(it));
+                game.doAction(new RemoveItemFromStackAction(it));
                 game.doAction(new MoveCardAction(
                     it.getCard(),
                     MagicLocationType.Stack,
