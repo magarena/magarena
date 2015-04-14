@@ -5,7 +5,7 @@ import magic.model.action.AttachAction;
 import magic.model.action.ChangeControlAction;
 import magic.model.action.ChangeCountersAction;
 import magic.model.action.ChangeStateAction;
-import magic.model.action.MagicDestroyAction;
+import magic.model.action.DestroyAction;
 import magic.model.action.MagicRemoveFromPlayAction;
 import magic.model.action.MagicSoulbondAction;
 import magic.model.choice.MagicTargetChoice;
@@ -772,9 +772,9 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
                 game.addDelayedAction(new MagicRemoveFromPlayAction(this,MagicLocationType.Graveyard));
             } else if (hasState(MagicPermanentState.Destroyed)) {
                 game.addDelayedAction(ChangeStateAction.Clear(this,MagicPermanentState.Destroyed));
-                game.addDelayedAction(new MagicDestroyAction(this));
+                game.addDelayedAction(new DestroyAction(this));
             } else if (toughness-damage<=0) {
-                game.addDelayedAction(new MagicDestroyAction(this));
+                game.addDelayedAction(new DestroyAction(this));
             }
 
             // Soulbond

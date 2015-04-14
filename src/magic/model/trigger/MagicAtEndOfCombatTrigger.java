@@ -6,7 +6,7 @@ import magic.model.MagicLocationType;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.action.ChangeCountersAction;
-import magic.model.action.MagicDestroyAction;
+import magic.model.action.DestroyAction;
 import magic.model.action.MagicRemoveFromPlayAction;
 import magic.model.action.MagicSacrificeAction;
 import magic.model.event.MagicEvent;
@@ -66,7 +66,7 @@ public abstract class MagicAtEndOfCombatTrigger extends MagicTrigger<MagicPlayer
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicDestroyAction(event.getPermanent()));
+            game.doAction(new DestroyAction(event.getPermanent()));
         }
     };
     

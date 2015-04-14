@@ -61,7 +61,7 @@ public enum MagicRuleEventAction {
                             game.doAction(ChangeStateAction.Set(it, MagicPermanentState.CannotBeRegenerated));
                         }
                     }
-                    game.doAction(new MagicDestroyAction(targets));
+                    game.doAction(new DestroyAction(targets));
                 }
             };
         }
@@ -80,7 +80,7 @@ public enum MagicRuleEventAction {
                     if (matcher.group("noregen") != null) {
                         game.doAction(ChangeStateAction.Set(it, MagicPermanentState.CannotBeRegenerated));
                     }
-                    game.doAction(new MagicDestroyAction(it));
+                    game.doAction(new DestroyAction(it));
                 }
             };
         }
@@ -122,7 +122,7 @@ public enum MagicRuleEventAction {
                             if (matcher.group("noregen") != null) {
                                 game.doAction(ChangeStateAction.Set(it, MagicPermanentState.CannotBeRegenerated));
                             }
-                            game.doAction(new MagicDestroyAction(it));
+                            game.doAction(new DestroyAction(it));
                         }
                     });
                 }

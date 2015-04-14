@@ -9,16 +9,16 @@ import magic.model.MagicPermanentState;
 import java.util.ArrayList;
 import java.util.Collection;
 
-public class MagicDestroyAction extends MagicAction {
+public class DestroyAction extends MagicAction {
 
     private final Collection<MagicPermanent> targets = new ArrayList<MagicPermanent>();
     private int numDestroyed = 0;
 
-    public MagicDestroyAction(final MagicPermanent permanent) {
+    public DestroyAction(final MagicPermanent permanent) {
         this.targets.add(permanent);
     }
 
-    public MagicDestroyAction(final Collection<MagicPermanent> targets) {
+    public DestroyAction(final Collection<MagicPermanent> targets) {
         this.targets.addAll(targets);
     }
 
