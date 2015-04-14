@@ -32,7 +32,7 @@ public class ExileLinkAction extends MagicAction {
             game.doAction(new MagicRemoveFromPlayAction(permanent,location));
         } else {
             game.doAction(new MagicRemoveCardAction(card,location));
-            game.doAction(new MagicMoveCardAction(card,location,MagicLocationType.Exile));
+            game.doAction(new MoveCardAction(card,location,MagicLocationType.Exile));
         }
 
         source.addExiledCard(card);

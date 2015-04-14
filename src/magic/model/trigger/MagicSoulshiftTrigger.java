@@ -5,7 +5,7 @@ import magic.model.MagicGame;
 import magic.model.MagicLocationType;
 import magic.model.MagicPermanent;
 import magic.model.action.MagicCardAction;
-import magic.model.action.MagicMoveCardAction;
+import magic.model.action.MoveCardAction;
 import magic.model.action.MagicRemoveCardAction;
 import magic.model.choice.MagicMayChoice;
 import magic.model.choice.MagicTargetChoice;
@@ -58,7 +58,7 @@ public class MagicSoulshiftTrigger extends MagicWhenDiesTrigger {
                         card,
                         MagicLocationType.Graveyard
                     ));
-                    game.doAction(new MagicMoveCardAction(
+                    game.doAction(new MoveCardAction(
                         card,
                         MagicLocationType.Graveyard,
                         MagicLocationType.OwnersHand

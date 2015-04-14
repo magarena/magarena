@@ -1,8 +1,8 @@
 package magic.model.trigger;
 
-import magic.model.action.MagicMoveCardAction;
+import magic.model.action.MoveCardAction;
 
-public abstract class MagicWouldBeMovedTrigger extends MagicTrigger<MagicMoveCardAction> {
+public abstract class MagicWouldBeMovedTrigger extends MagicTrigger<MoveCardAction> {
     public MagicWouldBeMovedTrigger(final int priority) {
         super(priority);
     }

@@ -4,7 +4,7 @@ import magic.model.MagicCard;
 import magic.model.MagicGame;
 import magic.model.MagicLocationType;
 import magic.model.MagicPermanent;
-import magic.model.action.MagicMoveCardAction;
+import magic.model.action.MoveCardAction;
 import magic.model.action.MagicRemoveCardAction;
 import magic.model.event.MagicEvent;
 
@@ -19,7 +19,7 @@ public class MagicFromGraveyardToLibraryTrigger extends MagicWhenPutIntoGraveyar
     }
 
     @Override
-    public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicMoveCardAction act) {
+    public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MoveCardAction act) {
         final MagicCard card = act.card;
         return card.isToken() == false ?
             new MagicEvent(
@@ -35,7 +35,7 @@ public class MagicFromGraveyardToLibraryTrigger extends MagicWhenPutIntoGraveyar
         final MagicCard card = event.getCard();
         if (card.isInGraveyard()) {
             game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard));
-            game.doAction(new MagicMoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.OwnersLibrary));
+            game.doAction(new MoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.OwnersLibrary));
         }
     }
 }

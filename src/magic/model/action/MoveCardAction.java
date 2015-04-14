@@ -11,14 +11,14 @@ import magic.model.stack.MagicCardOnStack;
 import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicTriggerType;
 
-public class MagicMoveCardAction extends MagicAction {
+public class MoveCardAction extends MagicAction {
 
     public final MagicCard card;
     public final MagicPermanent permanent;
     public final MagicLocationType fromLocation;
     private MagicLocationType toLocation;
 
-    private MagicMoveCardAction(
+    private MoveCardAction(
             final MagicCard card,
             final MagicPermanent permanent,
             final MagicLocationType fromLocation,
@@ -29,15 +29,15 @@ public class MagicMoveCardAction extends MagicAction {
         this.toLocation=toLocation;
     }
 
-    public MagicMoveCardAction(final MagicCard card,final MagicLocationType fromLocation,final MagicLocationType toLocation) {
+    public MoveCardAction(final MagicCard card,final MagicLocationType fromLocation,final MagicLocationType toLocation) {
         this(card,MagicPermanent.NONE,fromLocation,toLocation);
     }
 
-    public MagicMoveCardAction(final MagicPermanent permanent,final MagicLocationType toLocation) {
+    public MoveCardAction(final MagicPermanent permanent,final MagicLocationType toLocation) {
         this(permanent.getCard(),permanent,MagicLocationType.Play,toLocation);
     }
 
-    public MagicMoveCardAction(final MagicCardOnStack cardOnStack) {
+    public MoveCardAction(final MagicCardOnStack cardOnStack) {
         this(cardOnStack.getCard(),MagicPermanent.NONE,MagicLocationType.Stack,cardOnStack.getMoveLocation());
     }
 
@@ -68,7 +68,7 @@ public class MagicMoveCardAction extends MagicAction {
         final MagicSource triggerSource = permanent.isValid() ? permanent : card;
         
         // Execute replacement triggers
-        for (final MagicTrigger<MagicMoveCardAction> trigger : card.getCardDefinition().getPutIntoGraveyardTriggers()) {
+        for (final MagicTrigger<MoveCardAction> trigger : card.getCardDefinition().getPutIntoGraveyardTriggers()) {
             if (toLocation == MagicLocationType.Graveyard && trigger.getPriority() == MagicTrigger.REPLACEMENT) {
                 game.executeTrigger(trigger, permanent, triggerSource, this);
             }
@@ -101,7 +101,7 @@ public class MagicMoveCardAction extends MagicAction {
         }
 
         // Execute triggers
-        for (final MagicTrigger<MagicMoveCardAction> trigger : card.getCardDefinition().getPutIntoGraveyardTriggers()) {
+        for (final MagicTrigger<MoveCardAction> trigger : card.getCardDefinition().getPutIntoGraveyardTriggers()) {
             if (toLocation == MagicLocationType.Graveyard && trigger.getPriority() > MagicTrigger.REPLACEMENT) {
                 game.executeTrigger(trigger, permanent, triggerSource, this);
             }

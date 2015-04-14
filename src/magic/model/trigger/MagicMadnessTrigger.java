@@ -5,7 +5,7 @@ import magic.model.MagicLocationType;
 import magic.model.MagicManaCost;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
-import magic.model.action.MagicMoveCardAction;
+import magic.model.action.MoveCardAction;
 import magic.model.action.MagicPutItemOnStackAction;
 import magic.model.action.MagicRemoveCardAction;
 import magic.model.choice.MagicMayChoice;
@@ -23,12 +23,12 @@ public class MagicMadnessTrigger extends MagicWhenPutIntoGraveyardTrigger {
     }
     
     @Override
-    public boolean accept(final MagicPermanent permanent, final MagicMoveCardAction act) {
+    public boolean accept(final MagicPermanent permanent, final MoveCardAction act) {
         return super.accept(permanent, act) && act.from(MagicLocationType.OwnersHand);
     }
     
     @Override
-    public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicMoveCardAction act) {
+    public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MoveCardAction act) {
         game.executeTrigger(MagicTriggerType.WhenOtherPutIntoGraveyard, act); //Activate discard triggers
         act.setToLocation(MagicLocationType.Exile); //Change discard location
         return new MagicEvent(
@@ -50,7 +50,7 @@ public class MagicMadnessTrigger extends MagicWhenPutIntoGraveyardTrigger {
             cardOnStack.setFromLocation(MagicLocationType.Exile);
             game.doAction(new MagicPutItemOnStackAction(cardOnStack));
         } else {
-            game.doAction(new MagicMoveCardAction(event.getCard(),MagicLocationType.Exile,MagicLocationType.Graveyard));
+            game.doAction(new MoveCardAction(event.getCard(),MagicLocationType.Exile,MagicLocationType.Graveyard));
         }
     }
 }

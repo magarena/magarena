@@ -4,7 +4,7 @@ import magic.model.MagicCard;
 import magic.model.MagicGame;
 import magic.model.MagicLocationType;
 import magic.model.MagicPermanent;
-import magic.model.action.MagicMoveCardAction;
+import magic.model.action.MoveCardAction;
 import magic.model.event.MagicEvent;
 
 public abstract class MagicWhenDiscardedTrigger extends MagicWhenOtherPutIntoGraveyardTrigger {
@@ -15,7 +15,7 @@ public abstract class MagicWhenDiscardedTrigger extends MagicWhenOtherPutIntoGra
     public MagicWhenDiscardedTrigger() {}
 
     @Override
-    public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicMoveCardAction act) {
+    public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MoveCardAction act) {
         return (act.fromLocation == MagicLocationType.OwnersHand) ?
             getEvent(permanent, act.card) : MagicEvent.NONE;
     }

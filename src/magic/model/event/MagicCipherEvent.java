@@ -7,7 +7,7 @@ import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.action.AddTriggerAction;
 import magic.model.action.ChangeCardDestinationAction;
-import magic.model.action.MagicMoveCardAction;
+import magic.model.action.MoveCardAction;
 import magic.model.action.MagicPermanentAction;
 import magic.model.choice.MagicMayChoice;
 import magic.model.choice.MagicTargetChoice;
@@ -44,7 +44,7 @@ public class MagicCipherEvent extends MagicEvent {
             } else {
                 game.doAction(new ChangeCardDestinationAction(event.getCardOnStack(), MagicLocationType.Graveyard));
             }
-            game.doAction(new MagicMoveCardAction(event.getCardOnStack()));
+            game.doAction(new MoveCardAction(event.getCardOnStack()));
         }
     };
 }

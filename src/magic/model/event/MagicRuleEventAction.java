@@ -323,7 +323,7 @@ public enum MagicRuleEventAction {
                             card,
                             MagicLocationType.Graveyard
                         ));
-                        game.doAction(new MagicMoveCardAction(
+                        game.doAction(new MoveCardAction(
                             card,
                             MagicLocationType.Graveyard,
                             MagicLocationType.Exile
@@ -1522,7 +1522,7 @@ public enum MagicRuleEventAction {
                 final MagicRemoveCardAction remove = new MagicRemoveCardAction(card,MagicLocationType.Graveyard);
                 game.doAction(remove);
                 if (remove.isValid()) {
-                    game.doAction(new MagicMoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.OwnersHand));
+                    game.doAction(new MoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.OwnersHand));
                 }
             }
         }
@@ -1558,7 +1558,7 @@ public enum MagicRuleEventAction {
                 final MagicRemoveCardAction remove = new MagicRemoveCardAction(card,MagicLocationType.Graveyard);
                 game.doAction(remove);
                 if (remove.isValid()) {
-                    game.doAction(new MagicMoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.OwnersHand));
+                    game.doAction(new MoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.OwnersHand));
                 }
             }
         }
@@ -1575,7 +1575,7 @@ public enum MagicRuleEventAction {
                 event.processTargetCard(game,new MagicCardAction() {
                     public void doAction(final MagicCard card) {
                         game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard));
-                        game.doAction(new MagicMoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.OwnersHand));
+                        game.doAction(new MoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.OwnersHand));
                     }
                 });
             }
@@ -1593,7 +1593,7 @@ public enum MagicRuleEventAction {
                 event.processTargetCard(game, new MagicCardAction() {
                     public void doAction(final MagicCard targetCard) {
                         game.doAction(new MagicRemoveCardAction(targetCard,MagicLocationType.Graveyard));
-                        game.doAction(new MagicMoveCardAction(
+                        game.doAction(new MoveCardAction(
                             targetCard,
                             MagicLocationType.Graveyard,
                             MagicLocationType.TopOfOwnersLibrary
@@ -1615,7 +1615,7 @@ public enum MagicRuleEventAction {
                 event.processTargetCard(game, new MagicCardAction() {
                     public void doAction(final MagicCard targetCard) {
                         game.doAction(new MagicRemoveCardAction(targetCard,MagicLocationType.Graveyard));
-                        game.doAction(new MagicMoveCardAction(
+                        game.doAction(new MoveCardAction(
                             targetCard,
                             MagicLocationType.Graveyard,
                             MagicLocationType.BottomOfOwnersLibrary

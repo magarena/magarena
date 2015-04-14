@@ -29,7 +29,7 @@ public class CounterItemOnStackAction extends MagicAction {
                     cardOnStack.getMoveLocation() :
                     toLocation;
                 
-                game.doAction(new MagicMoveCardAction(
+                game.doAction(new MoveCardAction(
                     cardOnStack.getCard(),
                     MagicLocationType.Stack,
                     destination

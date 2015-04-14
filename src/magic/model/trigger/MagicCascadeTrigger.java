@@ -7,7 +7,7 @@ import magic.model.MagicLocationType;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicType;
-import magic.model.action.MagicMoveCardAction;
+import magic.model.action.MoveCardAction;
 import magic.model.action.MagicPutItemOnStackAction;
 import magic.model.action.MagicRemoveCardAction;
 import magic.model.choice.MagicMayChoice;
@@ -48,7 +48,7 @@ public class MagicCascadeTrigger extends MagicWhenSpellIsCastTrigger {
                 top,
                 MagicLocationType.OwnersLibrary
             ));
-            game.doAction(new MagicMoveCardAction(
+            game.doAction(new MoveCardAction(
                 top,
                 MagicLocationType.OwnersLibrary,
                 MagicLocationType.Exile
@@ -107,7 +107,7 @@ public class MagicCascadeTrigger extends MagicWhenSpellIsCastTrigger {
                         card,
                         MagicLocationType.Exile
                     ));
-                    game.doAction(new MagicMoveCardAction(
+                    game.doAction(new MoveCardAction(
                         card,
                         MagicLocationType.Exile,
                         MagicLocationType.BottomOfOwnersLibrary

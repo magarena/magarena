@@ -7,13 +7,13 @@ import magic.model.MagicGame;
 import magic.model.MagicLocationType;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
-import magic.model.action.MagicMoveCardAction;
+import magic.model.action.MoveCardAction;
 import magic.model.action.MagicPlayCardAction;
 import magic.model.action.MagicRemoveCardAction;
 import magic.model.action.MagicRevealAction;
 import magic.model.event.MagicEvent;
 
-public abstract class MagicWhenPutIntoGraveyardTrigger extends MagicTrigger<MagicMoveCardAction> {
+public abstract class MagicWhenPutIntoGraveyardTrigger extends MagicTrigger<MoveCardAction> {
     public MagicWhenPutIntoGraveyardTrigger(final int priority) {
         super(priority);
     }
@@ -26,7 +26,7 @@ public abstract class MagicWhenPutIntoGraveyardTrigger extends MagicTrigger<Magi
     }
     
     @Override
-    public boolean accept(final MagicPermanent permanent, final MagicMoveCardAction act) {
+    public boolean accept(final MagicPermanent permanent, final MoveCardAction act) {
         return act.getToLocation() == MagicLocationType.Graveyard;
     }
     
@@ -37,7 +37,7 @@ public abstract class MagicWhenPutIntoGraveyardTrigger extends MagicTrigger<Magi
     
     public static final MagicWhenPutIntoGraveyardTrigger LibraryInsteadOfGraveyard = new MagicWhenPutIntoGraveyardTrigger(MagicTrigger.REPLACEMENT) {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicMoveCardAction act) {
+        public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MoveCardAction act) {
             game.doAction(new MagicRevealAction(act.getCard()));
             act.setToLocation(MagicLocationType.OwnersLibrary);
             return MagicEvent.NONE;
@@ -46,7 +46,7 @@ public abstract class MagicWhenPutIntoGraveyardTrigger extends MagicTrigger<Magi
     
     public static final MagicWhenPutIntoGraveyardTrigger OpponentDiscardOntoBattlefield = new MagicWhenPutIntoGraveyardTrigger(MagicTrigger.REPLACEMENT) {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicMoveCardAction act) {
+        public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MoveCardAction act) {
             final MagicCard card = act.card;
             if (card.isEnemy(game.getActiveSource()) && 
                 act.from(MagicLocationType.OwnersHand) &&
@@ -60,7 +60,7 @@ public abstract class MagicWhenPutIntoGraveyardTrigger extends MagicTrigger<Magi
 
     public static final MagicWhenPutIntoGraveyardTrigger RecoverGraveyard = new MagicWhenPutIntoGraveyardTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicMoveCardAction act) {
+        public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MoveCardAction act) {
             final MagicPlayer owner = act.card.getOwner();
             return new MagicEvent(
                 //source may be permanent if on battlefield or card (exile, hand)
@@ -80,7 +80,7 @@ public abstract class MagicWhenPutIntoGraveyardTrigger extends MagicTrigger<Magi
                     card,
                     MagicLocationType.Graveyard
                 ));
-                game.doAction(new MagicMoveCardAction(
+                game.doAction(new MoveCardAction(
                     card,
                     MagicLocationType.Graveyard,
                     MagicLocationType.OwnersLibrary

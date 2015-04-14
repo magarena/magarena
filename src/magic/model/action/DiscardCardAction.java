@@ -28,7 +28,7 @@ public class DiscardCardAction extends MagicAction {
         index = player.removeCardFromHand(card);
         if (index >= 0) {
             setScore(player,-ArtificialScoringSystem.getCardScore(card));
-            game.doAction(new MagicMoveCardAction(card,MagicLocationType.OwnersHand,toLocation));
+            game.doAction(new MoveCardAction(card,MagicLocationType.OwnersHand,toLocation));
             game.setStateCheckRequired();
         }
     }

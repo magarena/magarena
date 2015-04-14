@@ -2,9 +2,9 @@ package magic.model.trigger;
 
 import magic.model.MagicLocationType;
 import magic.model.MagicPermanent;
-import magic.model.action.MagicMoveCardAction;
+import magic.model.action.MoveCardAction;
 
-public abstract class MagicWhenOtherPutIntoGraveyardTrigger extends MagicTrigger<MagicMoveCardAction> {
+public abstract class MagicWhenOtherPutIntoGraveyardTrigger extends MagicTrigger<MoveCardAction> {
     public MagicWhenOtherPutIntoGraveyardTrigger(final int priority) {
         super(priority);
     }
@@ -16,7 +16,7 @@ public abstract class MagicWhenOtherPutIntoGraveyardTrigger extends MagicTrigger
     }
     
     @Override
-    public boolean accept(final MagicPermanent permanent, final MagicMoveCardAction act) {
+    public boolean accept(final MagicPermanent permanent, final MoveCardAction act) {
         return act.getToLocation() == MagicLocationType.Graveyard;
     }
 }

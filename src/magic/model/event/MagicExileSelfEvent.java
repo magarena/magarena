@@ -3,7 +3,7 @@ package magic.model.event;
 import magic.model.MagicCard;
 import magic.model.MagicGame;
 import magic.model.MagicLocationType;
-import magic.model.action.MagicMoveCardAction;
+import magic.model.action.MoveCardAction;
 import magic.model.action.MagicRemoveCardAction;
 
 public class MagicExileSelfEvent extends MagicEvent {
@@ -26,7 +26,7 @@ public class MagicExileSelfEvent extends MagicEvent {
                 card,
                 fromLocation
             ));
-            game.doAction(new MagicMoveCardAction(
+            game.doAction(new MoveCardAction(
                 card,
                 fromLocation,
                 MagicLocationType.Exile

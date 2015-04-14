@@ -54,7 +54,7 @@ public class MagicReturnLinkedExileAction extends MagicAction {
                         modifications
                     ));
                 } else {
-                    game.doAction(new MagicMoveCardAction(card,MagicLocationType.Exile,location));
+                    game.doAction(new MoveCardAction(card,MagicLocationType.Exile,location));
                 }
             }
         }

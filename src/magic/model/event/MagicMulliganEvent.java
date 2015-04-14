@@ -7,7 +7,7 @@ import magic.model.MagicSource;
 import magic.model.MagicLocationType;
 import magic.model.MagicPlayer;
 import magic.model.action.DrawAction;
-import magic.model.action.MagicMoveCardAction;
+import magic.model.action.MoveCardAction;
 import magic.model.action.MagicRemoveCardAction;
 import magic.model.choice.MagicMulliganChoice;
 
@@ -30,7 +30,7 @@ public class MagicMulliganEvent extends MagicEvent {
                 final MagicCardList hand = new MagicCardList(player.getHand());
                 final int size = hand.size();
                 for (final MagicCard card : hand) {
-                    game.doAction(new MagicMoveCardAction(
+                    game.doAction(new MoveCardAction(
                         card,
                         MagicLocationType.OwnersHand,
                         MagicLocationType.OwnersLibrary

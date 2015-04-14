@@ -6,7 +6,7 @@ import magic.model.MagicLocationType;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.action.MagicCardAction;
-import magic.model.action.MagicMoveCardAction;
+import magic.model.action.MoveCardAction;
 import magic.model.action.MagicRemoveCardAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
@@ -40,7 +40,7 @@ public class MagicExileCardPayManaCostEvent extends MagicEvent {
                         card,
                         MagicLocationType.Graveyard
                     ));
-                    game.doAction(new MagicMoveCardAction(
+                    game.doAction(new MoveCardAction(
                         card,
                         MagicLocationType.Graveyard,
                         MagicLocationType.Exile
