@@ -14,7 +14,7 @@
             event.processTargetPlayer(game, {
                 final Collection<MagicPermanent> targets = game.filterPermanents(it,LAND_YOU_CONTROL);
                 for (final MagicPermanent land : targets) {
-                    game.doAction(MagicChangeStateAction.Set(
+                    game.doAction(ChangeStateAction.Set(
                         land,
                         MagicPermanentState.DoesNotUntapDuringNext
                     ));
