@@ -1745,7 +1745,7 @@ public enum MagicRuleEventAction {
         new MagicEventAction() {
             @Override
             public void executeEvent(final MagicGame game, final MagicEvent event) {
-                game.doAction(new MagicExileUntilEndOfTurnAction(event.getPermanent()));
+                game.doAction(new ExileUntilEndOfTurnAction(event.getPermanent()));
             }
         }
     ),
@@ -1760,7 +1760,7 @@ public enum MagicRuleEventAction {
             public void executeEvent(final MagicGame game, final MagicEvent event) {
                 event.processTargetPermanent(game, new MagicPermanentAction() {
                     public void doAction(final MagicPermanent it) {
-                        game.doAction(new MagicExileUntilEndOfTurnAction(it));
+                        game.doAction(new ExileUntilEndOfTurnAction(it));
                     }
                 });
             }

@@ -4,11 +4,11 @@ import magic.model.MagicGame;
 import magic.model.MagicLocationType;
 import magic.model.MagicPermanent;
 
-public class MagicExileUntilEndOfTurnAction extends MagicAction {
+public class ExileUntilEndOfTurnAction extends MagicAction {
 
     private final MagicPermanent permanent;
 
-    public MagicExileUntilEndOfTurnAction(final MagicPermanent permanent) {
+    public ExileUntilEndOfTurnAction(final MagicPermanent permanent) {
         this.permanent=permanent;
     }
 
