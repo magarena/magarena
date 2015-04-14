@@ -41,7 +41,7 @@
             for (final MagicPermanent target : targets) {
                 game.doAction(new MagicSacrificeAction(target));
             }
-            game.doAction(new MagicReturnLinkedExileAction(
+            game.doAction(new ReturnLinkedExileAction(
                 event.getPermanent(),
                 MagicLocationType.Play,
                 event.getPlayer()

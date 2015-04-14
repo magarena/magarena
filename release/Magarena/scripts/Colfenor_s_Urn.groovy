@@ -40,7 +40,7 @@
             final MagicEvent sac = new MagicSacrificeEvent(event.getPermanent());
             if (sac.isSatisfied()) {
                 game.addEvent(sac);
-                game.doAction(new MagicReturnLinkedExileAction(event.getPermanent(),MagicLocationType.Play));
+                game.doAction(new ReturnLinkedExileAction(event.getPermanent(),MagicLocationType.Play));
             }
         }
     }
