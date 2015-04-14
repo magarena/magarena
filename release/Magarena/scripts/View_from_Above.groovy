@@ -15,7 +15,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                game.doAction(new MagicGainAbilityAction(it,MagicAbility.Flying));
+                game.doAction(new GainAbilityAction(it,MagicAbility.Flying));
                 if (event.getPlayer().controlsPermanent(MagicColor.White)) {
                     game.doAction(new ChangeCardDestinationAction(event.getCardOnStack(), MagicLocationType.OwnersHand));
                 }

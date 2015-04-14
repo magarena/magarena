@@ -17,7 +17,7 @@
                 game.doAction(new MagicGainControlAction(event.getPlayer(),it,MagicStatic.UntilEOT));
                 game.doAction(new ChangeCountersAction(it,MagicCounterType.PlusOne,1));
                 game.doAction(new MagicUntapAction(it));
-                game.doAction(new MagicGainAbilityAction(it,MagicAbility.Haste));
+                game.doAction(new GainAbilityAction(it,MagicAbility.Haste));
             });
         }
     }

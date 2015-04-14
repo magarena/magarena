@@ -16,7 +16,7 @@
                 game.doAction(new ChangePlayerStateAction(it, MagicPlayerState.CantCastSpells));
                 if (event.isKicked()) {
                     CREATURE.filter(game) each {
-                        game.doAction(new MagicGainAbilityAction(it, MagicAbility.CannotAttack));
+                        game.doAction(new GainAbilityAction(it, MagicAbility.CannotAttack));
                     }
                 }
             });

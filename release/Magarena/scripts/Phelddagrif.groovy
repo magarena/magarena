@@ -20,7 +20,7 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicGainAbilityAction(event.getPermanent(),MagicAbility.Flying));
+            game.doAction(new GainAbilityAction(event.getPermanent(),MagicAbility.Flying));
             event.processTargetPlayer(game, {
                 game.doAction(new ChangeLifeAction(it,2));
             });
@@ -76,7 +76,7 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicGainAbilityAction(event.getPermanent(),MagicAbility.Trample));
+            game.doAction(new GainAbilityAction(event.getPermanent(),MagicAbility.Trample));
            event.processTargetPlayer(game, {
                game.doAction(new MagicPlayTokensAction(
                    it,

@@ -20,7 +20,7 @@ def KEEPER_OF_KOOKUS = new MagicPermanentFilterImpl() {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new DealDamageAction(event.getPermanent(),event.getPlayer(),3));
-            game.doAction(new MagicGainAbilityAction(event.getPermanent(),MagicAbility.AttacksEachTurnIfAble));
+            game.doAction(new GainAbilityAction(event.getPermanent(),MagicAbility.AttacksEachTurnIfAble));
         }
     }
 ]

@@ -24,7 +24,7 @@
             );
             for (final MagicPermanent creature : creatures) {
                 game.doAction(new ChangeTurnPTAction(creature,-1,-1));
-                game.doAction(new MagicGainAbilityAction(creature,MagicAbility.AttacksEachTurnIfAble));
+                game.doAction(new GainAbilityAction(creature,MagicAbility.AttacksEachTurnIfAble));
             }
         }
     }

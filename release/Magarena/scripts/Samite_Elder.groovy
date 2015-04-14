@@ -23,7 +23,7 @@
                 for (final MagicColor color : MagicColor.values()) {
                     if (it.hasColor(color)) {
                         for (final MagicPermanent creature : creatures) {
-                            game.doAction(new MagicGainAbilityAction(creature,color.getProtectionAbility()));
+                            game.doAction(new GainAbilityAction(creature,color.getProtectionAbility()));
                         }
                     }
                 }

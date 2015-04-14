@@ -30,7 +30,7 @@
             final int amount = event.getRefInt();
             event.processTargetPermanent(game, {
                 game.doAction(new ChangeTurnPTAction(it,amount,0));
-                game.doAction(new MagicGainAbilityAction(it,MagicAbility.Trample));
+                game.doAction(new GainAbilityAction(it,MagicAbility.Trample));
             });
         }
     }

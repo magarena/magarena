@@ -2,7 +2,7 @@ def ProtectionFromArtifacts = MagicAbility.getAbilityList("protection from artif
 
 def action = {
     final MagicGame game, final MagicEvent event ->
-    game.doAction(new MagicGainAbilityAction(
+    game.doAction(new GainAbilityAction(
         event.getRefPermanent(),
         event.getChosenColor().getProtectionAbility()
     ));
@@ -27,7 +27,7 @@ def action = {
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isMode(1)) {
                 event.processTargetPermanent(game, {
-                    game.doAction(new MagicGainAbilityAction(it,ProtectionFromArtifacts))
+                    game.doAction(new GainAbilityAction(it,ProtectionFromArtifacts))
                 });
             }
             if (event.isMode(2)) {

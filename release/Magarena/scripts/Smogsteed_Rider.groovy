@@ -13,7 +13,7 @@
             ATTACKING_CREATURE
             .except(event.getPermanent())
             .filter(game) each {
-                game.doAction(new MagicGainAbilityAction(it,MagicAbility.Fear));
+                game.doAction(new GainAbilityAction(it,MagicAbility.Fear));
             }
         }
     }

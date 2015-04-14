@@ -40,7 +40,7 @@ def choice = new MagicTargetChoice("an Island to sacrifice");
                 game.addEvent(new MagicSacrificePermanentEvent(event.getPermanent(),event.getPlayer(),choice));
                 game.addEvent(new MagicSacrificePermanentEvent(event.getPermanent(),event.getPlayer(),choice));
             } else {
-                game.doAction(new MagicGainAbilityAction(event.getPermanent(), MagicAbility.CannotAttack));
+                game.doAction(new GainAbilityAction(event.getPermanent(), MagicAbility.CannotAttack));
             }
         }
     }

@@ -18,7 +18,7 @@
                 if (MagicCondition.METALCRAFT_CONDITION.accept(event.getSource())) {
                     CREATURE_YOU_CONTROL.filter(it) each {
                         final MagicPermanent target ->
-                        game.doAction(new MagicGainAbilityAction(
+                        game.doAction(new GainAbilityAction(
                             target,
                             MagicAbility.CannotBlock
                         ));

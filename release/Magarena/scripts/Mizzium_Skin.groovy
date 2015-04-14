@@ -20,7 +20,7 @@
                 game.filterPermanents(event.getPlayer(),CREATURE_YOU_CONTROL);
             for (final MagicPermanent creature : targets) {
                 game.doAction(new ChangeTurnPTAction(creature, 0, 1));
-                game.doAction(new MagicGainAbilityAction(creature, MagicAbility.Hexproof));
+                game.doAction(new GainAbilityAction(creature, MagicAbility.Hexproof));
             }
         }
     }

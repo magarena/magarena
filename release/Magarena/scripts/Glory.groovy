@@ -30,7 +30,7 @@
         public void executeEvent(final MagicGame game,final MagicEvent event) {
             final MagicAbility protection = event.getChosenColor().getProtectionAbility();
             CREATURE_YOU_CONTROL.filter(event.getPlayer()) each {
-                game.doAction(new MagicGainAbilityAction(it, protection));
+                game.doAction(new GainAbilityAction(it, protection));
             }
         }
     }

@@ -16,7 +16,7 @@
             event.processTargetPermanent(game, {
                 game.doAction(new MagicUntapAction(it));
                 game.doAction(new ChangeTurnPTAction(it,2,4));
-                game.doAction(new MagicGainAbilityAction(it,MagicAbility.Reach));
+                game.doAction(new GainAbilityAction(it,MagicAbility.Reach));
             });
         }
     }

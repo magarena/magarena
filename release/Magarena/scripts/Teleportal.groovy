@@ -18,7 +18,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             CREATURE_YOU_CONTROL.filter(event.getPlayer()) each {
                 game.doAction(new ChangeTurnPTAction(it, 1, 0));
-                game.doAction(new MagicGainAbilityAction(it, MagicAbility.Unblockable));
+                game.doAction(new GainAbilityAction(it, MagicAbility.Unblockable));
             }
         }
     }

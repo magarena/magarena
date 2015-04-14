@@ -21,7 +21,7 @@ def Unblockable = MagicAbility.getAbilityList("SN can't be blocked except by Wal
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicGainAbilityAction(event.getPermanent(),Unblockable));
+            game.doAction(new GainAbilityAction(event.getPermanent(),Unblockable));
             game.doAction(new AddTriggerAction(event.getPermanent(), MagicAtEndOfTurnTrigger.Sacrifice));
         }
     }

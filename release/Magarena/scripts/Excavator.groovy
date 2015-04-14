@@ -32,7 +32,7 @@ def choice = new MagicTargetChoice("a basic land to sacrifice");
                 final MagicPermanent sacLand = event.getRefPermanent();
                 for (final MagicSubType subType : MagicSubType.ALL_BASIC_LANDS) {
                     if (sacLand.hasSubType(subType)) {
-                        game.doAction(new MagicGainAbilityAction(it,subType.getLandwalkAbility()));
+                        game.doAction(new GainAbilityAction(it,subType.getLandwalkAbility()));
                     }
                 }
             });

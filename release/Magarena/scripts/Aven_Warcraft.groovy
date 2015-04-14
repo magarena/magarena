@@ -18,7 +18,7 @@
             event.getPlayer().filterPermanents(CREATURE_YOU_CONTROL) each {
                 game.doAction(new ChangeTurnPTAction(it, 0, 2));
                 if (threshold) {
-                    game.doAction(new MagicGainAbilityAction(it, protection));
+                    game.doAction(new GainAbilityAction(it, protection));
                 }
             }
         }

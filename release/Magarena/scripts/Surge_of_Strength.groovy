@@ -14,7 +14,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
                 final int amount = it.getConvertedCost();
-                game.doAction(new MagicGainAbilityAction(it, MagicAbility.Trample));
+                game.doAction(new GainAbilityAction(it, MagicAbility.Trample));
                 game.doAction(new ChangeTurnPTAction(
                     it,
                     amount,

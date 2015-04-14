@@ -19,7 +19,7 @@
             }
             for (final MagicPermanent creature : targets) {
                 game.doAction(new ChangeTurnPTAction(creature,power,power));
-                game.doAction(new MagicGainAbilityAction(creature,MagicAbility.Trample));
+                game.doAction(new GainAbilityAction(creature,MagicAbility.Trample));
             }
         }
     }

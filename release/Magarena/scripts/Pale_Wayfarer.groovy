@@ -1,6 +1,6 @@
 def action = {
     final MagicGame game, final MagicEvent event ->
-    game.doAction(new MagicGainAbilityAction(
+    game.doAction(new GainAbilityAction(
         event.getRefPermanent(),
         event.getChosenColor().getProtectionAbility()
     ));

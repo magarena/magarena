@@ -3,7 +3,7 @@ def SAC_ACTION = {
     event.processTargetPermanent(game, {
         game.doAction(new MagicSacrificeAction(it));
         if (it.hasType(MagicType.Snow)) { 
-            game.doAction(new MagicGainAbilityAction(event.getPermanent(),MagicAbility.Trample));
+            game.doAction(new GainAbilityAction(event.getPermanent(),MagicAbility.Trample));
         }
     })
 }

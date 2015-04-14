@@ -16,7 +16,7 @@
             final MagicAbility protection = color.getProtectionAbility();
             final Collection<MagicPermanent> targets = game.filterPermanents(CREATURE);
             for (final MagicPermanent target : targets) {
-                game.doAction(new MagicGainAbilityAction(target, protection));
+                game.doAction(new GainAbilityAction(target, protection));
             }
         }
     }

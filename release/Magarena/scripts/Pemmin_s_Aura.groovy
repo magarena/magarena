@@ -44,7 +44,7 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicGainAbilityAction(event.getRefPermanent(),MagicAbility.Flying));
+            game.doAction(new GainAbilityAction(event.getRefPermanent(),MagicAbility.Flying));
         }
     },
     new MagicPermanentActivation(
@@ -68,7 +68,7 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicGainAbilityAction(event.getRefPermanent(),MagicAbility.Shroud));
+            game.doAction(new GainAbilityAction(event.getRefPermanent(),MagicAbility.Shroud));
         }
     },
     new MagicPermanentActivation(

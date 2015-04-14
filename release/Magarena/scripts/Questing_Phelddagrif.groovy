@@ -52,8 +52,8 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicGainAbilityAction(event.getPermanent(),MagicAbility.ProtectionFromBlack));
-            game.doAction(new MagicGainAbilityAction(event.getPermanent(),MagicAbility.ProtectionFromRed));
+            game.doAction(new GainAbilityAction(event.getPermanent(),MagicAbility.ProtectionFromBlack));
+            game.doAction(new GainAbilityAction(event.getPermanent(),MagicAbility.ProtectionFromRed));
             event.processTargetPlayer(game, {
                 game.doAction(new ChangeLifeAction(it,2));
             });
@@ -81,7 +81,7 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicGainAbilityAction(event.getPermanent(),MagicAbility.Flying));
+            game.doAction(new GainAbilityAction(event.getPermanent(),MagicAbility.Flying));
             if (event.isYes()) {
                 game.doAction(new DrawAction(event.getPlayer(),1));
             }

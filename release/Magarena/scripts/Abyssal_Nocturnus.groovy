@@ -13,7 +13,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new ChangeTurnPTAction(event.getPermanent(),2,2));
-            game.doAction(new MagicGainAbilityAction(event.getPermanent(),MagicAbility.Fear));
+            game.doAction(new GainAbilityAction(event.getPermanent(),MagicAbility.Fear));
         }
     }
 ]

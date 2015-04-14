@@ -14,7 +14,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                game.doAction(new MagicGainAbilityAction(it,MagicAbility.Unblockable));
+                game.doAction(new GainAbilityAction(it,MagicAbility.Unblockable));
                 game.doAction(new DrawAction(event.getPlayer()));
             });
         }

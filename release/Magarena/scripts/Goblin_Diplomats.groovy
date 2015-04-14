@@ -24,7 +24,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final Collection<MagicPermanent> targets = game.filterPermanents(CREATURE);
             for (final MagicPermanent target : targets) {
-                game.doAction(new MagicGainAbilityAction(target,MagicAbility.AttacksEachTurnIfAble));
+                game.doAction(new GainAbilityAction(target,MagicAbility.AttacksEachTurnIfAble));
             }
         }
     }

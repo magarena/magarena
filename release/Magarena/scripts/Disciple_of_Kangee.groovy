@@ -30,7 +30,7 @@ def BLUE = new MagicStatic(MagicLayer.Color,MagicStatic.UntilEOT) {
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
                 game.doAction(new AddStaticAction(it,BLUE));
-                game.doAction(new MagicGainAbilityAction(it,MagicAbility.Flying));
+                game.doAction(new GainAbilityAction(it,MagicAbility.Flying));
             });
         }
     }

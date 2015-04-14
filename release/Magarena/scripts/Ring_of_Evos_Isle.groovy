@@ -21,7 +21,7 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicGainAbilityAction(event.getRefPermanent(),MagicAbility.Hexproof));
+            game.doAction(new GainAbilityAction(event.getRefPermanent(),MagicAbility.Hexproof));
         }
     },
     new MagicAtYourUpkeepTrigger() {

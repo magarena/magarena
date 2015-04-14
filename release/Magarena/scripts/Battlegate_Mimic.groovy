@@ -24,7 +24,7 @@ def PT = new MagicStatic(MagicLayer.SetPT, MagicStatic.UntilEOT) {
             game.doAction(new AddStaticAction(
                 event.getPermanent(), PT
             ));
-            game.doAction(new MagicGainAbilityAction(
+            game.doAction(new GainAbilityAction(
                 event.getPermanent(), 
                 MagicAbility.FirstStrike
             ));

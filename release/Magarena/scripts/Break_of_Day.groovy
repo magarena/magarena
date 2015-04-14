@@ -15,7 +15,7 @@
             game.filterPermanents(event.getPlayer(), CREATURE_YOU_CONTROL) each {
                 game.doAction(new ChangeTurnPTAction(it, 1, 1));
                 if (fatefulHour) {
-                    game.doAction(new MagicGainAbilityAction(it, MagicAbility.Indestructible));
+                    game.doAction(new GainAbilityAction(it, MagicAbility.Indestructible));
                 }
             }
         }

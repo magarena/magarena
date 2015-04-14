@@ -29,7 +29,7 @@
             );
             if (event.isYes() && bounce.isSatisfied()) {
                 game.addEvent(bounce);
-                game.doAction(new MagicGainAbilityAction(event.getPermanent(),MagicAbility.Indestructible));
+                game.doAction(new GainAbilityAction(event.getPermanent(),MagicAbility.Indestructible));
             }
         }
     }

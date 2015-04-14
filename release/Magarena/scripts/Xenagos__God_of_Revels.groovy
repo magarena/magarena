@@ -29,7 +29,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                game.doAction(new MagicGainAbilityAction(it, MagicAbility.Haste));
+                game.doAction(new GainAbilityAction(it, MagicAbility.Haste));
                 game.doAction(new ChangeTurnPTAction(it, it.getPower(), it.getPower()));
             });
         }

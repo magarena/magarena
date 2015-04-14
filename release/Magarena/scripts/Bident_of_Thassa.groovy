@@ -22,7 +22,7 @@
             final MagicPlayer player=event.getPlayer();
             game.filterPermanents(player, CREATURE) each {
                 if (!it.isController(player)) {
-                    game.doAction(new MagicGainAbilityAction(it, MagicAbility.AttacksEachTurnIfAble));
+                    game.doAction(new GainAbilityAction(it, MagicAbility.AttacksEachTurnIfAble));
                 } 
             }
         }

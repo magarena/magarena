@@ -18,8 +18,8 @@
                     game.doAction(new EnterAsCopyAction(event.getCardOnStack(), it, {
                         final MagicPermanent perm ->
                         final MagicGame G = perm.getGame();
-                        G.doAction(new MagicGainAbilityAction(perm,MagicAbility.Haste, MagicStatic.Forever));
-                        G.doAction(new MagicGainAbilityAction(perm,MagicAbility.Dethrone, MagicStatic.Forever));
+                        G.doAction(new GainAbilityAction(perm,MagicAbility.Haste, MagicStatic.Forever));
+                        G.doAction(new GainAbilityAction(perm,MagicAbility.Dethrone, MagicStatic.Forever));
                     }));
                 });
             } else {

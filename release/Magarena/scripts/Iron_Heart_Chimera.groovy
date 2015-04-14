@@ -26,7 +26,7 @@ def choice = Positive("target Chimera creature");
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
                 game.doAction(new ChangeCountersAction(it,MagicCounterType.PlusTwo,1));
-                game.doAction(new MagicGainAbilityAction(it, MagicAbility.Vigilance, MagicStatic.Forever));
+                game.doAction(new GainAbilityAction(it, MagicAbility.Vigilance, MagicStatic.Forever));
             });
         }
     }

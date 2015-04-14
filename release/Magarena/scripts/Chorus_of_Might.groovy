@@ -15,7 +15,7 @@
             event.processTargetPermanent(game, {
                 final int amount = event.getPlayer().getNrOfPermanents(MagicType.Creature);
                 game.doAction(new ChangeTurnPTAction(it, amount, amount));
-                game.doAction(new MagicGainAbilityAction(it,MagicAbility.Trample));
+                game.doAction(new GainAbilityAction(it,MagicAbility.Trample));
             });
         }
     }

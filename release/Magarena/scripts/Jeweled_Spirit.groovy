@@ -27,7 +27,7 @@ def ProtectionFromArtifacts = MagicAbility.getAbilityList("protection from artif
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicGainAbilityAction(
+            game.doAction(new GainAbilityAction(
                 event.getPermanent(),
                 event.getChosenColor().getProtectionAbility()
             ));
@@ -58,7 +58,7 @@ def ProtectionFromArtifacts = MagicAbility.getAbilityList("protection from artif
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicGainAbilityAction(event.getPermanent(),ProtectionFromArtifacts))
+            game.doAction(new GainAbilityAction(event.getPermanent(),ProtectionFromArtifacts))
         }
     }
 ]

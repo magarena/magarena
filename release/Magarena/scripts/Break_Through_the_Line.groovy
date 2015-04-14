@@ -24,8 +24,8 @@ def choice = Positive("target creature with power 2 or less");
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                game.doAction(new MagicGainAbilityAction(it,MagicAbility.Haste));
-                game.doAction(new MagicGainAbilityAction(it, MagicAbility.Unblockable));
+                game.doAction(new GainAbilityAction(it,MagicAbility.Haste));
+                game.doAction(new GainAbilityAction(it, MagicAbility.Unblockable));
             });
         }
     }

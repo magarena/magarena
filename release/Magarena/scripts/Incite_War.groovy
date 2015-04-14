@@ -27,7 +27,7 @@
                         CREATURE_YOU_CONTROL
                     );
                     for (final MagicPermanent creature : targets) {
-                        game.doAction(new MagicGainAbilityAction(creature,MagicAbility.AttacksEachTurnIfAble));
+                        game.doAction(new GainAbilityAction(creature,MagicAbility.AttacksEachTurnIfAble));
                     }
                 });
             }
@@ -37,7 +37,7 @@
                     CREATURE_YOU_CONTROL
                 );
                 for (final MagicPermanent creature : targets) {
-                    game.doAction(new MagicGainAbilityAction(creature,MagicAbility.FirstStrike));
+                    game.doAction(new GainAbilityAction(creature,MagicAbility.FirstStrike));
                 }
             }
         }
