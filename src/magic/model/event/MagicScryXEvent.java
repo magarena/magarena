@@ -7,7 +7,7 @@ import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.action.MagicCardAction;
-import magic.model.action.MagicScryComplAction;
+import magic.model.action.ScryComplAction;
 import magic.model.choice.MagicFromCardListChoice;
 
 public class MagicScryXEvent extends MagicEvent {
@@ -45,7 +45,7 @@ public class MagicScryXEvent extends MagicEvent {
             event.processChosenCards(game, new MagicCardAction() {
                 public void doAction(final MagicCard card) {
                     processedCards.add(card);  
-                    game.doAction(new MagicScryComplAction(event.getPlayer(), card, true));
+                    game.doAction(new ScryComplAction(event.getPlayer(), card, true));
                     game.logAppendMessage(event.getPlayer(), event.getPlayer() + " moves a card from top of his or her library to the bottom.");
                 }
             });
@@ -68,7 +68,7 @@ public class MagicScryXEvent extends MagicEvent {
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processChosenCards(game, new MagicCardAction() {
                 public void doAction(final MagicCard card) {
-                    game.doAction(new MagicScryComplAction(event.getPlayer(), card, false));
+                    game.doAction(new ScryComplAction(event.getPlayer(), card, false));
                     game.logAppendMessage(event.getPlayer(), event.getPlayer() + " puts back a card to the top of his or her library.");
                 }
             });

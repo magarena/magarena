@@ -5,14 +5,14 @@ import magic.model.MagicCard;
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 
-public class MagicScryComplAction extends MagicAction {
+public class ScryComplAction extends MagicAction {
 
     private final MagicPlayer player;
     private final MagicCard card;
     private int index;
     private final boolean down;
 
-    public MagicScryComplAction(final MagicPlayer aPlayer, final MagicCard aCard, final boolean aDown) {
+    public ScryComplAction(final MagicPlayer aPlayer, final MagicCard aCard, final boolean aDown) {
         player = aPlayer;
         card = aCard;
         down = aDown; 
