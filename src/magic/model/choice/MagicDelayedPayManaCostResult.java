@@ -4,7 +4,7 @@ import magic.model.MagicGame;
 import magic.model.MagicManaCost;
 import magic.model.MagicPlayer;
 import magic.model.MagicCopyMap;
-import magic.model.action.MagicPayDelayedCostAction;
+import magic.model.action.PayDelayedCostAction;
 
 /**
  * Delayed mana costs can give wrong scores when a mana source:
@@ -41,7 +41,7 @@ public class MagicDelayedPayManaCostResult implements MagicPayManaCostResult {
 
     @Override
     public void doAction(final MagicGame game,final MagicPlayer player) {
-        game.doAction(new MagicPayDelayedCostAction(player,this));
+        game.doAction(new PayDelayedCostAction(player,this));
     }
     
     @Override
