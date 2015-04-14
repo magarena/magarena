@@ -10,21 +10,21 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.LinkedList;
 
-public class MagicEnterAsCopyAction extends MagicAction {
+public class EnterAsCopyAction extends MagicAction {
 
     private final MagicCardOnStack cardOnStack;
     private final MagicObject obj;
     private MagicLocationType oldLocation;
     private List<MagicPermanentAction> modifications;
 
-    public MagicEnterAsCopyAction(final MagicCardOnStack aCardOnStack, final MagicObject aObj, final List<? extends MagicPermanentAction> aModifications) {
+    public EnterAsCopyAction(final MagicCardOnStack aCardOnStack, final MagicObject aObj, final List<? extends MagicPermanentAction> aModifications) {
         cardOnStack = aCardOnStack;
         obj = aObj;
         modifications = new LinkedList<>(aModifications);
         modifications.addAll(cardOnStack.getModifications());
     }
     
-    public MagicEnterAsCopyAction(final MagicCardOnStack aCardOnStack, final MagicObject aObj, final MagicPermanentAction... aModifications) {
+    public EnterAsCopyAction(final MagicCardOnStack aCardOnStack, final MagicObject aObj, final MagicPermanentAction... aModifications) {
         this(aCardOnStack, aObj, Arrays.asList(aModifications));
     }
     
