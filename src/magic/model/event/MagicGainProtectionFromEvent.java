@@ -4,7 +4,7 @@ import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
-import magic.model.action.MagicGainAbilityAction;
+import magic.model.action.GainAbilityAction;
 import magic.model.choice.MagicColorChoice;
 
 public class MagicGainProtectionFromEvent extends MagicEvent {
@@ -23,7 +23,7 @@ public class MagicGainProtectionFromEvent extends MagicEvent {
     private static final MagicEventAction EVENT_ACTION=new MagicEventAction() {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicGainAbilityAction(
+            game.doAction(new GainAbilityAction(
                 event.getRefPermanent(),
                 event.getChosenColor().getProtectionAbility()
             ));

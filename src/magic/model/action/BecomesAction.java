@@ -126,7 +126,7 @@ public class BecomesAction extends MagicAction {
             game.doAction(new AddStaticAction(permanent, ST));
         }
         if (ability != null) {
-            game.doAction(new MagicGainAbilityAction(permanent, ability, duration));
+            game.doAction(new GainAbilityAction(permanent, ability, duration));
         }
     }
 

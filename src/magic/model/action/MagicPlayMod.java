@@ -65,12 +65,12 @@ public enum MagicPlayMod implements MagicPermanentAction {
     },
     HASTE_UEOT("it gains haste until end of turn") {
         protected void doAction(final MagicGame game, final MagicPermanent perm) {
-            game.doAction(new MagicGainAbilityAction(perm, MagicAbility.Haste));
+            game.doAction(new GainAbilityAction(perm, MagicAbility.Haste));
         }
     },
     HASTE("it gains haste") {
         protected void doAction(final MagicGame game, final MagicPermanent perm) {
-            game.doAction(new MagicGainAbilityAction(perm, MagicAbility.Haste, MagicStatic.Forever));
+            game.doAction(new GainAbilityAction(perm, MagicAbility.Haste, MagicStatic.Forever));
         }
     },
     PERSIST() {
@@ -118,7 +118,7 @@ public enum MagicPlayMod implements MagicPermanentAction {
                     }
                 });
                 morphAct.add(new MagicMorphActivation(cost));
-                game.doAction(new MagicGainAbilityAction(perm, morphAct, MagicStatic.Forever));
+                game.doAction(new GainAbilityAction(perm, morphAct, MagicStatic.Forever));
             }
             perm.setState(MagicPermanentState.FaceDown);
         }

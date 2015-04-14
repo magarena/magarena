@@ -12,39 +12,39 @@ import java.util.List;
 import java.util.Set;
 
 // Set an ability until end of turn.
-public class MagicGainAbilityAction extends MagicAction {
+public class GainAbilityAction extends MagicAction {
 
     private final MagicPermanent permanent;
     private final MagicAbilityList abilityList;
     private final boolean duration;
     
-    public MagicGainAbilityAction(final MagicPermanent permanent,final MagicAbilityList abilityList, final boolean duration) {
+    public GainAbilityAction(final MagicPermanent permanent,final MagicAbilityList abilityList, final boolean duration) {
         this.permanent=permanent;
         this.abilityList=abilityList;
         this.duration=duration;
     }
 
-    public MagicGainAbilityAction(final MagicPermanent permanent,final Set<MagicAbility> abilities, final boolean duration) {
+    public GainAbilityAction(final MagicPermanent permanent,final Set<MagicAbility> abilities, final boolean duration) {
         this(permanent,MagicAbility.getAbilityList(abilities), duration);
     }
     
-    public MagicGainAbilityAction(final MagicPermanent permanent,final MagicAbilityList abilityList) {
+    public GainAbilityAction(final MagicPermanent permanent,final MagicAbilityList abilityList) {
         this(permanent,abilityList,MagicStatic.UntilEOT);
     }
 
-    public MagicGainAbilityAction(final MagicPermanent permanent,final List<MagicAbility> abilities) {
+    public GainAbilityAction(final MagicPermanent permanent,final List<MagicAbility> abilities) {
         this(permanent,EnumSet.copyOf(abilities),MagicStatic.UntilEOT);
     }
 
-    public MagicGainAbilityAction(final MagicPermanent permanent,final MagicAbility first, final MagicAbility ... rest) {
+    public GainAbilityAction(final MagicPermanent permanent,final MagicAbility first, final MagicAbility ... rest) {
         this(permanent,MagicAbility.of(first,rest),MagicStatic.UntilEOT);
     }
 
-    public MagicGainAbilityAction(final MagicPermanent permanent,final MagicAbility ability,final boolean duration) {
+    public GainAbilityAction(final MagicPermanent permanent,final MagicAbility ability,final boolean duration) {
         this(permanent,MagicAbility.of(ability),duration);
     }
 
-    public MagicGainAbilityAction(final MagicPermanent permanent,final MagicAbility ability) {
+    public GainAbilityAction(final MagicPermanent permanent,final MagicAbility ability) {
         this(permanent,MagicAbility.of(ability),MagicStatic.UntilEOT);
     }
 
