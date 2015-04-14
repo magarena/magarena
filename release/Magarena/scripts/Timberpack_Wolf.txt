@@ -6,6 +6,6 @@ type=Creature
 subtype=Wolf
 cost={1}{G}
 pt=2/2
+ability=SN gets +1/+1 for each other creature you control named Timberpack Wolf.
 timing=main
-requires_groovy_code
 oracle=Timberpack Wolf gets +1/+1 for each other creature you control named Timberpack Wolf.

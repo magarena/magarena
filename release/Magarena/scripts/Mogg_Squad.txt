@@ -6,6 +6,6 @@ type=Creature
 subtype=Goblin
 cost={1}{R}
 pt=3/3
+ability=SN gets -1/-1 for each other creature on the battlefield.
 timing=main
-requires_groovy_code
 oracle=Mogg Squad gets -1/-1 for each other creature on the battlefield.
