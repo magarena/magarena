@@ -2590,7 +2590,7 @@ public enum MagicRuleEventAction {
         new MagicEventAction() {
             @Override
             public void executeEvent(final MagicGame game, final MagicEvent event) {
-                game.doAction(new MagicTurnFaceDownAction(event.getPermanent()));
+                game.doAction(new TurnFaceDownAction(event.getPermanent()));
             }
         }
     ),
@@ -2603,7 +2603,7 @@ public enum MagicRuleEventAction {
             public void executeEvent(final MagicGame game, final MagicEvent event) {
                 event.processTargetPermanent(game,new MagicPermanentAction() {
                     public void doAction(final MagicPermanent creature) {
-                        game.doAction(new MagicTurnFaceDownAction(creature));
+                        game.doAction(new TurnFaceDownAction(creature));
                     }
                 });
             }

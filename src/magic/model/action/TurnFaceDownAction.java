@@ -8,13 +8,13 @@ import magic.model.mstatic.MagicStatic;
 import java.util.Collections;
 import java.util.Collection;
 
-public class MagicTurnFaceDownAction extends MagicAction {
+public class TurnFaceDownAction extends MagicAction {
 
     public final MagicPermanent permanent;
     private Collection<MagicStatic> oldStatics = Collections.emptyList();
     private Collection<MagicStatic> newStatics = Collections.emptyList();
 
-    public MagicTurnFaceDownAction(final MagicPermanent aPermanent) {
+    public TurnFaceDownAction(final MagicPermanent aPermanent) {
         permanent = aPermanent;
     }
 
