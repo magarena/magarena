@@ -28,7 +28,7 @@
             final int counters = permanent.getCounters(MagicCounterType.Hatchling);
             if (counters >= 5) {
                 game.doAction(new ChangeCountersAction(permanent,MagicCounterType.Hatchling,-counters));
-                game.doAction(new MagicTransformAction(permanent));
+                game.doAction(new TransformAction(permanent));
             }
         }
     }

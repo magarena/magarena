@@ -14,7 +14,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
                 event.processTargetPermanent(game, {
-                    game.doAction(new MagicTransformAction(event.getPermanent()));
+                    game.doAction(new TransformAction(event.getPermanent()));
                     game.doAction(new AttachAction(event.getPermanent(), it));
                 });
             }

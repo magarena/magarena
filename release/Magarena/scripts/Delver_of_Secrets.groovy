@@ -4,7 +4,7 @@ def ACTION = {
         final MagicCard card = event.getRefCard();
         game.doAction(new RevealAction(card));
         if (card.hasType(MagicType.Instant) || card.hasType(MagicType.Sorcery)) {
-            game.doAction(new MagicTransformAction(event.getPermanent()));
+            game.doAction(new TransformAction(event.getPermanent()));
         }
     }
 }
