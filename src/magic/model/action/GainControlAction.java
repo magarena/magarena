@@ -6,17 +6,17 @@ import magic.model.MagicPlayer;
 import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicStatic;
 
-public class MagicGainControlAction extends MagicAction {
+public class GainControlAction extends MagicAction {
 
     private final MagicPlayer player;
     private final MagicPermanent permanent;
     private final boolean duration;
 
-    public MagicGainControlAction(final MagicPlayer player,final MagicPermanent permanent) {
+    public GainControlAction(final MagicPlayer player,final MagicPermanent permanent) {
         this(player,permanent,MagicStatic.Forever);
     }
 
-    public MagicGainControlAction(final MagicPlayer player,final MagicPermanent permanent,final boolean duration) {
+    public GainControlAction(final MagicPlayer player,final MagicPermanent permanent,final boolean duration) {
         this.player = player;
         this.permanent = permanent;
         this.duration = duration;
