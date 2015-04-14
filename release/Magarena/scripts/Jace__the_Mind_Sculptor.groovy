@@ -3,7 +3,7 @@ def FATESEAL = {
     final MagicPlayer PN = event.getPlayer();
     if (event.isYes()) {
         game.logAppendMessage(PN, "${PN} move the card to the bottom.");
-        game.doAction(new MagicScryAction(event.getRefPlayer()));
+        game.doAction(new ScryAction(event.getRefPlayer()));
     } else {
         game.logAppendMessage(PN, "${PN} puts the card back on top.");
     }
