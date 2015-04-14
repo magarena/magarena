@@ -25,7 +25,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
                 game.doAction(new DealDamageAction(event.getSource(),it,2));
-                game.doAction(new MagicLoseAbilityAction(it,MagicAbility.Flying));
+                game.doAction(new LoseAbilityAction(it,MagicAbility.Flying));
             });
         }
     }

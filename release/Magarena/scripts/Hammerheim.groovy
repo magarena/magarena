@@ -32,7 +32,7 @@ def List<MagicAbility> landwalkAbilities = [
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                game.doAction(new MagicLoseAbilityAction(it,landwalkAbilities));
+                game.doAction(new LoseAbilityAction(it,landwalkAbilities));
             });
         }
     }
