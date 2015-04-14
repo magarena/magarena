@@ -4,7 +4,7 @@ import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.model.action.CombatDamageAction;
 import magic.model.action.DeclareBlockersAction;
-import magic.model.action.MagicStackResolveAction;
+import magic.model.action.StackResolveAction;
 import magic.model.choice.MagicDeclareBlockersResult;
 
 public class MagicGameCombatScore implements MagicCombatScore {
@@ -27,7 +27,7 @@ public class MagicGameCombatScore implements MagicCombatScore {
         game.doAction(new CombatDamageAction(attackingPlayer,defendingPlayer,false));
         // resolve triggers
         while (game.getStack().size() > 0 && !game.isFinished()) {
-            game.doAction(new MagicStackResolveAction());
+            game.doAction(new StackResolveAction());
             game.checkState();
         }
         // Give extra points for extra blocked creatures.

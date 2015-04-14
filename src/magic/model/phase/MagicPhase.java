@@ -2,7 +2,7 @@ package magic.model.phase;
 
 import magic.data.SoundEffects;
 import magic.model.MagicGame;
-import magic.model.action.MagicStackResolveAction;
+import magic.model.action.StackResolveAction;
 import magic.model.event.MagicPriorityEvent;
 
 public abstract class MagicPhase {
@@ -40,7 +40,7 @@ public abstract class MagicPhase {
             case Resolve:
                 // Stack can be empty at this point, for instance by a counter unless event.
                 if (!game.getStack().isEmpty()) {
-                    game.doAction(new MagicStackResolveAction());
+                    game.doAction(new StackResolveAction());
                     SoundEffects.playGameSound(game,SoundEffects.RESOLVE_SOUND);
                 }
 

@@ -3,7 +3,7 @@ package magic.model.action;
 import magic.model.MagicGame;
 import magic.model.stack.MagicItemOnStack;
 
-public class MagicStackResolveAction extends MagicAction {
+public class StackResolveAction extends MagicAction {
 
     private MagicItemOnStack itemOnStack;
 
