@@ -15,7 +15,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetCardOnStack(game, {
                 game.addEvent(new MagicCounterUnlessEvent(event.getSource(),it,MagicManaCost.create("{2}")));
-                game.doAction(new MagicDrawAction(event.getPlayer(),event.getRefInt()));
+                game.doAction(new DrawAction(event.getPlayer(),event.getRefInt()));
             });
         }
     }

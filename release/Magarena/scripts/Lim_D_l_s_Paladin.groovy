@@ -17,7 +17,7 @@
                 game.addEvent(discard);
             } else {
                 game.doAction(new MagicSacrificeAction(event.getPermanent()));
-                game.doAction(new MagicDrawAction(event.getPlayer()));
+                game.doAction(new DrawAction(event.getPlayer()));
             }
         }
     },

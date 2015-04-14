@@ -22,7 +22,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
                 final MagicPlayer player = event.getPlayer();
-                game.doAction(new MagicDrawAction(player, 2));
+                game.doAction(new DrawAction(player, 2));
                 game.addEvent(new MagicDiscardEvent(
                     event.getSource(),
                     player

@@ -24,7 +24,7 @@
                 }
             }
             if (highest.isController(player)) {
-                game.doAction(new MagicDrawAction(player));
+                game.doAction(new DrawAction(player));
             }
         }
     }

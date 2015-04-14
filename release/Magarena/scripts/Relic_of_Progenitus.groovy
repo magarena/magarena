@@ -67,7 +67,7 @@ def choice = new MagicTargetChoice("a card from your graveyard");
                     game.doAction(new MagicMoveCardAction(card, MagicLocationType.Graveyard, MagicLocationType.Exile));
                 }
             }
-            game.doAction(new MagicDrawAction(event.getPlayer()));
+            game.doAction(new DrawAction(event.getPlayer()));
         }
     }
 ]

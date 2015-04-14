@@ -17,7 +17,7 @@
                 game.doAction(new ChangeTurnPTAction(creature,1,1));
             }
             if (you.controlsPermanent(MagicSubType.Kithkin)) {
-                game.doAction(new MagicDrawAction(you));
+                game.doAction(new DrawAction(you));
             }
         }
     }

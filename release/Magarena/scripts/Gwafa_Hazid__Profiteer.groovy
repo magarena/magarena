@@ -46,7 +46,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
                 game.doAction(new ChangeCountersAction(it,MagicCounterType.Bribery,1));
-                game.doAction(new MagicDrawAction(it.getController()));
+                game.doAction(new DrawAction(it.getController()));
             });
         }
     }

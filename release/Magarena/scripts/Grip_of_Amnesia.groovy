@@ -33,7 +33,7 @@ def action = {
                     "PN may\$ exile his or her graveyard. If PN doesn't, RN is countered."
                 ));
             });
-        game.doAction(new MagicDrawAction(event.getSource().getController(),1));
+        game.doAction(new DrawAction(event.getSource().getController(),1));
         }
     }
 ]

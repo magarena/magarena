@@ -40,7 +40,7 @@
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicDrawAction(
+            game.doAction(new DrawAction(
                 event.getPlayer(),
                 event.getPlayer().getNrOfPermanents(CREATURE_POWER_4_OR_MORE)
             ));

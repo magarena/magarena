@@ -18,7 +18,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
-                game.doAction(new MagicDrawAction(event.getPlayer(),event.getPermanent().getCounters(MagicCounterType.Age)));
+                game.doAction(new DrawAction(event.getPlayer(),event.getPermanent().getCounters(MagicCounterType.Age)));
             } else {
                 game.doAction(new MagicSacrificeAction(event.getPermanent()));
             }

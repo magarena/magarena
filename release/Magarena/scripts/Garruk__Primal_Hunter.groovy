@@ -34,7 +34,7 @@
             for (final MagicPermanent creature : targets) {
                 power = Math.max(power,creature.getPower());
             }
-            game.doAction(new MagicDrawAction(
+            game.doAction(new DrawAction(
                 event.getPlayer(),
                 power
             ));

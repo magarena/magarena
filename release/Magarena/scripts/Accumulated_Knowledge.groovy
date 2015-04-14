@@ -16,9 +16,9 @@
                 .from(MagicTargetType.Graveyard)
                 .from(MagicTargetType.OpponentsGraveyard)
             ).size();
-            game.doAction(new MagicDrawAction(event.getPlayer()));
+            game.doAction(new DrawAction(event.getPlayer()));
             game.logAppendMessage(event.getPlayer()," (X="+amount+")");
-            game.doAction(new MagicDrawAction(event.getPlayer(),amount));
+            game.doAction(new DrawAction(event.getPlayer(),amount));
         }
     }
 ]

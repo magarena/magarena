@@ -30,7 +30,7 @@
                     game.doAction(new DealDamageAction(event.getSource(),it,2));
                 }
                 if (sacrificed.hasColor(MagicColor.Black)) { 
-                    game.doAction(new MagicDrawAction(event.getPlayer(),1));
+                    game.doAction(new DrawAction(event.getPlayer(),1));
                 }
             });
         }

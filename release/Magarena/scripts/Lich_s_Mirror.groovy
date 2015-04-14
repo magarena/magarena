@@ -51,7 +51,7 @@
                     MagicLocationType.OwnersLibrary
                 ));
             };
-            game.doAction(new MagicDrawAction(player,7));
+            game.doAction(new DrawAction(player,7));
         }
     }
 ]

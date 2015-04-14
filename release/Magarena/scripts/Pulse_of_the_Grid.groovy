@@ -12,7 +12,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
-            game.doAction(new MagicDrawAction(player,2));
+            game.doAction(new DrawAction(player,2));
             game.addEvent(new MagicDiscardEvent(event.getSource()));
             if (player.getOpponent().getHandSize() > player.getHandSize()) {
                 game.doAction(new ChangeCardDestinationAction(event.getCardOnStack(),MagicLocationType.OwnersHand));

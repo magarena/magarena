@@ -21,7 +21,7 @@ def color = new MagicStatic(MagicLayer.Color, MagicStatic.UntilEOT) {
             event.processTargetPermanent(game, {
                 game.doAction(new MagicUntapAction(it));
                 game.doAction(new AddStaticAction(it,color));
-                game.doAction(new MagicDrawAction(event.getPlayer()));
+                game.doAction(new DrawAction(event.getPlayer()));
             });
         }
     }

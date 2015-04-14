@@ -30,7 +30,7 @@
             event.processTargetPermanent(game, {
                 final int amount = event.getRefInt();
                 game.doAction(new DealDamageAction(event.getSource(),it,amount));
-                game.doAction(new MagicDrawAction(it.getController(),amount));
+                game.doAction(new DrawAction(it.getController(),amount));
             });
         }
     }

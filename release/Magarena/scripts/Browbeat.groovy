@@ -3,7 +3,7 @@ def action = {
     if (event.isYes()) {
         game.doAction(new DealDamageAction(event.getSource(),event.getPlayer(),5));
     } else {
-        game.doAction(new MagicDrawAction(event.getRefPlayer(),3));
+        game.doAction(new DrawAction(event.getRefPlayer(),3));
     }
 }
 

@@ -16,7 +16,7 @@
             }
             final DestroyAction destroy = new DestroyAction(targets);         
             game.doAction(destroy); 
-            game.doAction(new MagicDrawAction(event.getPlayer(),destroy.getNumDestroyed()));
+            game.doAction(new DrawAction(event.getPlayer(),destroy.getNumDestroyed()));
         }
     }
 ]

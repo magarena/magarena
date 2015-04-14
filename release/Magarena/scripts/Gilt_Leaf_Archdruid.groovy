@@ -24,7 +24,7 @@ def AN_UNTAPPED_DRUID_YOU_CONTROL = new MagicTargetChoice(UNTAPPED_DRUID_YOU_CON
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
-                game.doAction(new MagicDrawAction(event.getPlayer(),1));
+                game.doAction(new DrawAction(event.getPlayer(),1));
             }
         }
     },

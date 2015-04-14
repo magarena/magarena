@@ -11,7 +11,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             for (final MagicPlayer player : game.getAPNAP()) {
-                game.doAction(new MagicDrawAction(player,2));
+                game.doAction(new DrawAction(player,2));
             }
             for (final MagicPlayer player : game.getAPNAP()) {
                 game.addEvent(new MagicDiscardEvent(event.getSource(),player,3));

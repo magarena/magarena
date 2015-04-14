@@ -16,7 +16,7 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicDrawAction(
+            game.doAction(new DrawAction(
                 event.getPlayer(),
                 event.getRefInt()
             ));

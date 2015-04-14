@@ -17,7 +17,7 @@
                 game.doAction(new ChangeTurnPTAction(it, -1, -1));
                 final MagicPlayer you = event.getPlayer();
                 if (you.controlsPermanent(MagicSubType.Faerie)) {
-                    game.doAction(new MagicDrawAction(you));
+                    game.doAction(new DrawAction(you));
                 }
             });
         }

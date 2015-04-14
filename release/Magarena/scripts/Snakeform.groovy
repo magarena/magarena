@@ -41,7 +41,7 @@ def C = new MagicStatic(MagicLayer.Color, MagicStatic.UntilEOT) {
             event.processTargetPermanent(game, {
                 //Does not lose static
                 game.doAction(new BecomesCreatureAction(it,PT,AB,ST,C));
-                game.doAction(new MagicDrawAction(event.getPlayer()));
+                game.doAction(new DrawAction(event.getPlayer()));
             });
         }
     }

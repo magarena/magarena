@@ -10,7 +10,7 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicDrawAction(event.getPlayer()));
+            game.doAction(new DrawAction(event.getPlayer()));
             game.addEvent(MagicDiscardEvent.Random(event.getSource(), event.getPlayer()));
         }
     },

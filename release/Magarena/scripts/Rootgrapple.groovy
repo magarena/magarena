@@ -17,7 +17,7 @@
                 game.doAction(new DestroyAction(it));
                 final MagicPlayer you = event.getPlayer();
                 if (you.controlsPermanent(MagicSubType.Treefolk)){
-                    game.doAction(new MagicDrawAction(you));
+                    game.doAction(new DrawAction(you));
                 }
             });
         }

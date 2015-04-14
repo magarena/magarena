@@ -16,7 +16,7 @@
             event.processTargetPermanent(game, {
                 game.doAction(new DestroyAction(it));
                 if (event.isKicked()) {
-                    game.doAction(new MagicDrawAction(event.getPlayer(),2));
+                    game.doAction(new DrawAction(event.getPlayer(),2));
                 }
             });
         }

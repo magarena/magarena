@@ -10,7 +10,7 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicDrawAction(event.getPlayer(),4));
+            game.doAction(new DrawAction(event.getPlayer(),4));
             game.doAction(new ChangeLifeAction(
                 event.getPlayer(),
                 -(int)Math.ceil(event.getPlayer().getLife()/2)

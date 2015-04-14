@@ -19,7 +19,7 @@
             final int X = event.getRefInt();
             if (event.isMode(1)) {
                 for (final MagicPlayer player : game.getAPNAP()) {
-                    game.doAction(new MagicDrawAction(player,X));
+                    game.doAction(new DrawAction(player,X));
                 }    
             } else if (event.isMode(2)) {
                 for (final MagicPlayer player : game.getAPNAP()) {

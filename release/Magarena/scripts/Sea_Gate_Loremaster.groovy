@@ -19,7 +19,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
             final int amount =  player.getNrOfPermanents(MagicSubType.Ally);
-            game.doAction(new MagicDrawAction(player,amount));
+            game.doAction(new DrawAction(player,amount));
         }
     }
 ]

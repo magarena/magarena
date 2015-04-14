@@ -13,7 +13,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
                 final int amt = game.filterPermanents(it, TAPPED_CREATURE_YOU_CONTROL).size();
-                game.doAction(new MagicDrawAction(event.getPlayer(),amt));
+                game.doAction(new DrawAction(event.getPlayer(),amt));
             });
         }
     } 

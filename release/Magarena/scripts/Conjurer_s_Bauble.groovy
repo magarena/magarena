@@ -29,7 +29,7 @@
                     MagicLocationType.Graveyard,
                     MagicLocationType.BottomOfOwnersLibrary
                 ));
-                game.doAction(new MagicDrawAction(event.getPlayer()));
+                game.doAction(new DrawAction(event.getPlayer()));
             });
         }
     }

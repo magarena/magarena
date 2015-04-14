@@ -17,7 +17,7 @@
                 game.doAction(new ChangeTurnPTAction(it, -4, 0));
                 final MagicPlayer you = event.getPlayer();
                 if (you.controlsPermanent(MagicSubType.Wizard)){
-                    game.doAction(new MagicDrawAction(you));
+                    game.doAction(new DrawAction(you));
                 }
             });
         }

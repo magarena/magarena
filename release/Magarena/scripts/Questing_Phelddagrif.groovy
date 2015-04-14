@@ -83,7 +83,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new MagicGainAbilityAction(event.getPermanent(),MagicAbility.Flying));
             if (event.isYes()) {
-                game.doAction(new MagicDrawAction(event.getPlayer(),1));
+                game.doAction(new DrawAction(event.getPlayer(),1));
             }
         }
     }

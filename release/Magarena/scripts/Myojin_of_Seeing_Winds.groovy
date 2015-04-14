@@ -36,7 +36,7 @@ def PERMANENT_YOU_CONTROL = new MagicPermanentFilterImpl() {
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicDrawAction(
+            game.doAction(new DrawAction(
                 event.getPlayer(),
                 event.getPlayer().getNrOfPermanents(PERMANENT_YOU_CONTROL)
             ));

@@ -14,7 +14,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
                 game.doAction(new MagicRemoveFromPlayAction(it,MagicLocationType.OwnersLibrary));
-                game.doAction(new MagicDrawAction(it.getController(),2));
+                game.doAction(new DrawAction(it.getController(),2));
             });
         }
     }

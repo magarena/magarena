@@ -40,7 +40,7 @@ def ExileCard = {
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-           game.doAction(new MagicDrawAction(event.getPlayer(),1));
+           game.doAction(new DrawAction(event.getPlayer(),1));
            game.addEvent(new MagicEvent(
                 event.getSource(),
                 A_CARD_FROM_HAND,

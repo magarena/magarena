@@ -11,7 +11,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final int amt = event.getPlayer().getNrOfPermanents(MagicSubType.Shrine);
-            game.doAction(new MagicDrawAction(event.getPlayer(),amt));
+            game.doAction(new DrawAction(event.getPlayer(),amt));
         }
     }
 ]

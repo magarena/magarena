@@ -38,7 +38,7 @@ def TEXT2 = "Each player draws seven cards."
             }
             if (event.isKicked() || event.isMode(2)) {
                 for (final MagicPlayer player : game.getAPNAP()) { 
-                    game.doAction(new MagicDrawAction(player,7));
+                    game.doAction(new DrawAction(player,7));
                 } 
             }
         }

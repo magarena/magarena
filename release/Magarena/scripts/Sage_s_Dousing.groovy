@@ -16,7 +16,7 @@
                 game.addEvent(new MagicCounterUnlessEvent(event.getSource(),it,MagicManaCost.create("{3}")));
                 final MagicPlayer you = event.getPlayer();
                 if (you.controlsPermanent(MagicSubType.Wizard)) {
-                    game.doAction(new MagicDrawAction(you));
+                    game.doAction(new DrawAction(you));
                 }
             });
         }

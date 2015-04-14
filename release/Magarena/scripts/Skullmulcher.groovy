@@ -1,7 +1,7 @@
 def drawCards = {
     final MagicGame game,final MagicPermanent permanent ->
     if (permanent.hasCounters()) {
-        game.doAction(new MagicDrawAction(
+        game.doAction(new DrawAction(
             permanent.getController(),
             permanent.getCounters(MagicCounterType.PlusOne)
         ));

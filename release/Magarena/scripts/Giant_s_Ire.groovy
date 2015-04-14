@@ -17,7 +17,7 @@
                 game.doAction(new DealDamageAction(event.getSource(),it,4));
                 final MagicPlayer you = event.getPlayer();
                 if (you.controlsPermanent(MagicSubType.Giant)) {
-                    game.doAction(new MagicDrawAction(you));
+                    game.doAction(new DrawAction(you));
                 }
             });
         }

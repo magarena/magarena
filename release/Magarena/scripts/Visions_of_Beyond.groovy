@@ -15,7 +15,7 @@
                 game.getPlayer(0).getGraveyard().size() >= 20 ||
                 game.getPlayer(1).getGraveyard().size() >= 20
             ) ? 3 : 1;
-            game.doAction(new MagicDrawAction(event.getPlayer(),amount));
+            game.doAction(new DrawAction(event.getPlayer(),amount));
         }
     }
 ]

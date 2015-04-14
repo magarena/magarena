@@ -15,7 +15,7 @@
             event.processTargetPermanent(game, {
                 game.doAction(new MagicRemoveFromPlayAction(it,MagicLocationType.OwnersHand));
                 if (event.isKicked()) {
-                    game.doAction(new MagicDrawAction(event.getPlayer()));
+                    game.doAction(new DrawAction(event.getPlayer()));
                 }
             });
         }

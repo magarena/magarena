@@ -21,7 +21,7 @@
                     event.getSource(),
                     SACRIFICE_CREATURE
                 ));
-                game.doAction(new MagicDrawAction(it,2));
+                game.doAction(new DrawAction(it,2));
             })
         }
     }
