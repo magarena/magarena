@@ -8,12 +8,12 @@ import magic.model.MagicPlayer;
 import magic.model.choice.MagicDeclareAttackersResult;
 import magic.model.trigger.MagicTriggerType;
 
-public class MagicDeclareAttackersAction extends MagicAction {
+public class DeclareAttackersAction extends MagicAction {
 
     private final MagicDeclareAttackersResult attackers;
     private final MagicPlayer active;
 
-    public MagicDeclareAttackersAction(final MagicPlayer player, final MagicDeclareAttackersResult result) {
+    public DeclareAttackersAction(final MagicPlayer player, final MagicDeclareAttackersResult result) {
         active = player;
         attackers = result;
     }
