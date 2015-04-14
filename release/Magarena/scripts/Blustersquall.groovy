@@ -17,7 +17,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.filterPermanents(event.getPlayer(), CREATURE_YOUR_OPPONENT_CONTROLS) each {
-                game.doAction(new MagicTapAction(it));
+                game.doAction(new TapAction(it));
             }
         }
     }

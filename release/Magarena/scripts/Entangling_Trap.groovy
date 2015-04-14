@@ -14,7 +14,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                game.doAction(new MagicTapAction(it));
+                game.doAction(new TapAction(it));
                 if (event.getRefPlayer() == event.getPlayer()) {
                     game.doAction(ChangeStateAction.Set(
                         it,

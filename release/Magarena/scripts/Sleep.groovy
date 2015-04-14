@@ -14,7 +14,7 @@
             event.processTargetPlayer(game, {
                 final Collection<MagicPermanent> targets = game.filterPermanents(it,CREATURE_YOU_CONTROL);
                 for (final MagicPermanent creature : targets) {
-                    game.doAction(new MagicTapAction(creature));
+                    game.doAction(new TapAction(creature));
                     game.doAction(ChangeStateAction.Set(
                         creature,
                         MagicPermanentState.DoesNotUntapDuringNext

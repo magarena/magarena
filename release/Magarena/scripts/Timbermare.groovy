@@ -12,7 +12,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final Collection<MagicPermanent> targets = game.filterPermanents(CREATURE.except(event.getPermanent()));
             for (final MagicPermanent creature : targets) {
-                game.doAction(new MagicTapAction(creature));
+                game.doAction(new TapAction(creature));
             }
         }
     }

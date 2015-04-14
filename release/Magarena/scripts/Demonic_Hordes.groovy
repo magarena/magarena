@@ -18,7 +18,7 @@ def choice = new MagicTargetChoice("a land an opponent controls");
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isNo()) {
-                game.doAction(new MagicTapAction(event.getPermanent()));
+                game.doAction(new TapAction(event.getPermanent()));
                 game.addEvent(new MagicSacrificePermanentEvent(
                     event.getSource(),
                     event.getPlayer().getOpponent(),

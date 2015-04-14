@@ -26,7 +26,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                game.doAction(new MagicTapAction(it));
+                game.doAction(new TapAction(it));
                 if (it.hasSubType(MagicSubType.Zombie)) {
                     game.doAction(new RemoveFromPlayAction(
                         it,

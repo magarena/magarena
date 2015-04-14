@@ -15,7 +15,7 @@
              event.processTargetPlayer(game, {
                 LAND_YOU_CONTROL.filter(it) each {
                     final MagicPermanent land ->
-                    game.doAction(new MagicTapAction(land));
+                    game.doAction(new TapAction(land));
                 }
              });
         }

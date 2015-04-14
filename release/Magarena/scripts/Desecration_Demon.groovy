@@ -16,7 +16,7 @@
             final MagicEvent sac = new MagicSacrificePermanentEvent(perm,event.getPlayer(),SACRIFICE_CREATURE)
             if (event.isYes() && sac.isSatisfied()) {
                 game.addEvent(sac);
-                game.doAction(new MagicTapAction(perm));
+                game.doAction(new TapAction(perm));
                 game.doAction(new ChangeCountersAction(perm,MagicCounterType.PlusOne,1));
             }
         }

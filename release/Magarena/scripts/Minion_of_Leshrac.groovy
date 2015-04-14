@@ -21,7 +21,7 @@
                 final MagicDamage damage = new MagicDamage(permanent, player, 5);
                 game.doAction(new DealDamageAction(damage));
                 if (damage.getDealtAmount() > 0) {
-                    game.doAction(new MagicTapAction(permanent));
+                    game.doAction(new TapAction(permanent));
                 }
             }
         }

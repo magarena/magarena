@@ -15,7 +15,7 @@ def LoseControlTap = {
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicTapAction(event.getPermanent()));
+            game.doAction(new TapAction(event.getPermanent()));
         }
     };
 }

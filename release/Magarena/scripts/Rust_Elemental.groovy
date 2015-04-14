@@ -18,7 +18,7 @@
             if (sac.isSatisfied()) {
                 game.addEvent(sac);
             } else {
-                game.doAction(new MagicTapAction(permanent));
+                game.doAction(new TapAction(permanent));
                 game.doAction(new ChangeLifeAction(player,-4));        
             }
         }

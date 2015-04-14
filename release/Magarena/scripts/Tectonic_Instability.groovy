@@ -17,7 +17,7 @@
             final MagicPlayer player = event.getRefPermanent().getController()
             final Collection<MagicPermanent> lands = player.filterPermanents(LAND);
                 for (final MagicPermanent land : lands) {
-                    game.doAction(new MagicTapAction(land))
+                    game.doAction(new TapAction(land))
             }
         }
     }

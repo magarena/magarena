@@ -20,7 +20,7 @@ def WHITE = new MagicStatic(MagicLayer.Color, MagicStatic.UntilEOT) {
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
                 game.doAction(new AddStaticAction(it,WHITE));
-                game.doAction(new MagicTapAction(it));
+                game.doAction(new TapAction(it));
                 game.doAction(new DrawAction(event.getPlayer()));
             });
         }

@@ -18,7 +18,7 @@
                 event.getPlayer(),
                 CREATURE_YOU_CONTROL.except(event.getPermanent())
                 );
-                for (final MagicPermanent creature : targets2) {                    game.doAction(new MagicTapAction(creature));
+                for (final MagicPermanent creature : targets2) {                    game.doAction(new TapAction(creature));
             } 
         }
     }

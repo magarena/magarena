@@ -21,7 +21,7 @@
             if (event.isYes() && sac.isSatisfied()) {
                 game.addEvent(sac);
             } else {
-                game.doAction(new MagicTapAction(event.getPermanent()));
+                game.doAction(new TapAction(event.getPermanent()));
                 game.doAction(new DealDamageAction(event.getSource(),player,2));
             }
         }

@@ -16,7 +16,7 @@
             final MagicPermanent permanent=event.getPermanent();
             final MagicPermanent enchantedCreature=permanent.getEnchantedPermanent();
             if (enchantedCreature.isValid()) {
-                game.doAction(new MagicTapAction(enchantedCreature));
+                game.doAction(new TapAction(enchantedCreature));
             }
         }
     }
