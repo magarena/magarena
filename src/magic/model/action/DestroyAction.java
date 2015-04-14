@@ -37,7 +37,7 @@ public class DestroyAction extends MagicAction {
             if (destroy && permanent.isRegenerated()) {
                 game.logAppendMessage(permanent.getController(),permanent.getName()+" is regenerated.");
                 game.doAction(new MagicTapAction(permanent));
-                game.doAction(new MagicRemoveAllDamageAction(permanent));
+                game.doAction(new RemoveAllDamageAction(permanent));
                 game.doAction(new MagicRemoveFromCombatAction(permanent));
                 game.doAction(ChangeStateAction.Clear(permanent,MagicPermanentState.Regenerated));
                 destroy = false;
@@ -48,7 +48,7 @@ public class DestroyAction extends MagicAction {
                 for (final MagicPermanent aura : permanent.getAuraPermanents()) {
                     if (aura.hasAbility(MagicAbility.TotemArmor)) {
                         game.logAppendMessage(permanent.getController(),"Remove all damage from "+permanent.getName()+'.');
-                        game.doAction(new MagicRemoveAllDamageAction(permanent));
+                        game.doAction(new RemoveAllDamageAction(permanent));
                         toBeDestroyed.add(aura);
                         destroy = false;
                         //Only the first aura with totem armor will be

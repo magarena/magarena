@@ -3,12 +3,12 @@ package magic.model.action;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 
-public class MagicRemoveAllDamageAction extends MagicAction {
+public class RemoveAllDamageAction extends MagicAction {
 
     private final MagicPermanent permanent;
     private int oldDamage;
 
-    MagicRemoveAllDamageAction(final MagicPermanent permanent) {
+    RemoveAllDamageAction(final MagicPermanent permanent) {
 
         this.permanent=permanent;
     }
