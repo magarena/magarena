@@ -3,7 +3,7 @@ def DISCARD_THREE_CARDS = {
     new MagicAtEndOfTurnTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer eotPlayer) {
-            game.addDelayedAction(new MagicRemoveTriggerAction(this));
+            game.addDelayedAction(new RemoveTriggerAction(this));
             return new MagicEvent(
                 game.createDelayedSource(staleSource, stalePlayer),
                 this,

@@ -4,7 +4,7 @@ def LoseControlTap = {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPermanent target) {
             if (permanent == target && target.getController().getId() != you.getId()) {
-                game.addDelayedAction(new MagicRemoveTriggerAction(permanent, this));
+                game.addDelayedAction(new RemoveTriggerAction(permanent, this));
                 return new MagicEvent(
                     permanent,
                     this,

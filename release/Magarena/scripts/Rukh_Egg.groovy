@@ -19,7 +19,7 @@
                         game.getPlayer(event.getPlayer().getIndex()),
                         TokenCardDefinitions.get("4/4 red Bird creature token with flying")
                     ));
-                    game.addDelayedAction(new MagicRemoveTriggerAction(this));
+                    game.addDelayedAction(new RemoveTriggerAction(this));
                     return MagicEvent.NONE;
                 }
             }));

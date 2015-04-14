@@ -38,8 +38,8 @@ def T = new MagicWhenDamageIsDealtTrigger() {
                 @Override
                 public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
                     if (upkeepPlayer.getId() == outerEvent.getPlayer().getId()) {
-                        game.addDelayedAction(new MagicRemoveTriggerAction(permanent, trigger));
-                        game.addDelayedAction(new MagicRemoveTriggerAction(permanent, this));
+                        game.addDelayedAction(new RemoveTriggerAction(permanent, trigger));
+                        game.addDelayedAction(new RemoveTriggerAction(permanent, this));
                     }
                     return MagicEvent.NONE;
                 }
