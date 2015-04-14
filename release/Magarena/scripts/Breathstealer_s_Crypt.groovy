@@ -17,7 +17,7 @@
             if (event.isYes()) {
                 game.doAction(new ChangeLifeAction(event.getPlayer(), -3));
             } else {
-                game.doAction(new MagicDiscardCardAction(event.getPlayer(), event.getCard()));
+                game.doAction(new DiscardCardAction(event.getPlayer(), event.getCard()));
             }
         }
 
