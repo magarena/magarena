@@ -24,7 +24,7 @@ def FATESEAL = {
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
                 for (final MagicCard card : it.getLibrary().getCardsFromTop(1)) {
-                    game.doAction(new MagicLookAction(card, event.getPlayer(), "top card of ${it}'s library"));
+                    game.doAction(new LookAction(card, event.getPlayer(), "top card of ${it}'s library"));
                     game.addEvent(new MagicEvent(
                         event.getSource(),
                         event.getPlayer(),
