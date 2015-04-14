@@ -6,17 +6,17 @@ import magic.model.MagicGame;
 import magic.model.MagicObject;
 import magic.model.MagicPlayer;
 
-public class MagicPlayTokensAction extends MagicAction {
+public class PlayTokensAction extends MagicAction {
 
     private final MagicCard card;
     private final int count;
 
-    public MagicPlayTokensAction(final MagicPlayer player, final MagicCardDefinition cardDefinition, final int aCount) {
+    public PlayTokensAction(final MagicPlayer player, final MagicCardDefinition cardDefinition, final int aCount) {
         card  = MagicCard.createTokenCard(cardDefinition,player);
         count = aCount;
     }
     
-    public MagicPlayTokensAction(final MagicPlayer player, final MagicObject obj, final int aCount) {
+    public PlayTokensAction(final MagicPlayer player, final MagicObject obj, final int aCount) {
         this(player, obj.getCardDefinition(), aCount);
     }
 
