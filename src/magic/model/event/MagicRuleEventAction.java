@@ -3193,7 +3193,7 @@ public enum MagicRuleEventAction {
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    game.doAction(new MagicLoseAbilityAction(event.getPermanent(),abilityList));
+                    game.doAction(new LoseAbilityAction(event.getPermanent(),abilityList));
                 }
             };
         }
@@ -3225,7 +3225,7 @@ public enum MagicRuleEventAction {
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
                     event.processTargetPermanent(game,new MagicPermanentAction() {
                         public void doAction(final MagicPermanent creature) {
-                            game.doAction(new MagicLoseAbilityAction(creature,abilityList));
+                            game.doAction(new LoseAbilityAction(creature,abilityList));
                         }
                     });
                 }

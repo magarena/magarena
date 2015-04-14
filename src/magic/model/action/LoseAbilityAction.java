@@ -12,39 +12,39 @@ import java.util.List;
 import java.util.Set;
 
 // Set an ability until end of turn.
-public class MagicLoseAbilityAction extends MagicAction {
+public class LoseAbilityAction extends MagicAction {
 
     private final MagicPermanent permanent;
     private final MagicAbilityList abilityList;
     private final boolean duration;
     
-    public MagicLoseAbilityAction(final MagicPermanent permanent,final MagicAbilityList abilityList, final boolean duration) {
+    public LoseAbilityAction(final MagicPermanent permanent,final MagicAbilityList abilityList, final boolean duration) {
         this.permanent=permanent;
         this.abilityList=abilityList;
         this.duration=duration;
     }
 
-    public MagicLoseAbilityAction(final MagicPermanent permanent,final Set<MagicAbility> abilities, final boolean duration) {
+    public LoseAbilityAction(final MagicPermanent permanent,final Set<MagicAbility> abilities, final boolean duration) {
         this(permanent,MagicAbility.getAbilityList(abilities), duration);
     }
     
-    public MagicLoseAbilityAction(final MagicPermanent permanent,final MagicAbilityList abilityList) {
+    public LoseAbilityAction(final MagicPermanent permanent,final MagicAbilityList abilityList) {
         this(permanent,abilityList,MagicStatic.UntilEOT);
     }
 
-    public MagicLoseAbilityAction(final MagicPermanent permanent,final List<MagicAbility> abilities) {
+    public LoseAbilityAction(final MagicPermanent permanent,final List<MagicAbility> abilities) {
         this(permanent,EnumSet.copyOf(abilities),MagicStatic.UntilEOT);
     }
 
-    public MagicLoseAbilityAction(final MagicPermanent permanent,final MagicAbility first, final MagicAbility ... rest) {
+    public LoseAbilityAction(final MagicPermanent permanent,final MagicAbility first, final MagicAbility ... rest) {
         this(permanent,MagicAbility.of(first,rest),MagicStatic.UntilEOT);
     }
 
-    public MagicLoseAbilityAction(final MagicPermanent permanent,final MagicAbility ability,final boolean duration) {
+    public LoseAbilityAction(final MagicPermanent permanent,final MagicAbility ability,final boolean duration) {
         this(permanent,MagicAbility.of(ability),duration);
     }
 
-    public MagicLoseAbilityAction(final MagicPermanent permanent,final MagicAbility ability) {
+    public LoseAbilityAction(final MagicPermanent permanent,final MagicAbility ability) {
         this(permanent,MagicAbility.of(ability),MagicStatic.UntilEOT);
     }
 
