@@ -22,7 +22,7 @@ public class CounterItemOnStackAction extends MagicAction {
     @Override
     public void doAction(final MagicGame game) {
         if (game.getStack().contains(itemOnStack) && itemOnStack.canBeCountered()) {
-            game.doAction(new MagicRemoveItemFromStackAction(itemOnStack));
+            game.doAction(new RemoveItemFromStackAction(itemOnStack));
             if (itemOnStack.isSpell()) {
                 final MagicCardOnStack cardOnStack = (MagicCardOnStack)itemOnStack;
                 final MagicLocationType destination = (toLocation == MagicLocationType.Stack) ? 
