@@ -24,7 +24,7 @@ public class ManifestAction extends MagicAction {
                 card,
                 MagicLocationType.OwnersLibrary
             ));
-            game.doAction(new MagicManifestCardAction(card, player));
+            game.doAction(new ManifestCardAction(card, player));
         }
     }
 
