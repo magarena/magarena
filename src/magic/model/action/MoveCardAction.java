@@ -85,7 +85,7 @@ public class MoveCardAction extends MagicAction {
                     owner.getLibrary().addToBottom(card);
                     break;
                 case OwnersLibrary:
-                    game.doAction(new MagicShuffleIntoLibraryAction(card));
+                    game.doAction(new ShuffleIntoLibraryAction(card));
                     break;
                 case OwnersHand:
                     owner.addCardToHand(card);

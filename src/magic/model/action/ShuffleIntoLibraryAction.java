@@ -4,12 +4,12 @@ import magic.model.MagicCard;
 import magic.model.MagicCardList;
 import magic.model.MagicGame;
 
-public class MagicShuffleIntoLibraryAction extends MagicAction {
+public class ShuffleIntoLibraryAction extends MagicAction {
 
     private final MagicCard card;
     private MagicCardList oldLibrary;
 
-    public MagicShuffleIntoLibraryAction(final MagicCard card) {
+    public ShuffleIntoLibraryAction(final MagicCard card) {
         this.card=card;
     }
 
