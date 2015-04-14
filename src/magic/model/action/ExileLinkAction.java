@@ -29,7 +29,7 @@ public class ExileLinkAction extends MagicAction {
     @Override
     public void doAction(final MagicGame game) {
         if (permanent != MagicPermanent.NONE) {
-            game.doAction(new MagicRemoveFromPlayAction(permanent,location));
+            game.doAction(new RemoveFromPlayAction(permanent,location));
         } else {
             game.doAction(new RemoveCardAction(card,location));
             game.doAction(new MoveCardAction(card,location,MagicLocationType.Exile));

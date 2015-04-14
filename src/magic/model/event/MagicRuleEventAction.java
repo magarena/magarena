@@ -204,7 +204,7 @@ public enum MagicRuleEventAction {
             @Override
             public void executeEvent(final MagicGame game, final MagicEvent event) {
                 final MagicPermanent it = event.getPermanent();
-                game.doAction(new MagicRemoveFromPlayAction(
+                game.doAction(new RemoveFromPlayAction(
                     it,
                     MagicLocationType.Exile
                 ));
@@ -230,7 +230,7 @@ public enum MagicRuleEventAction {
             public void executeEvent(final MagicGame game, final MagicEvent event) {
                 event.processTargetPermanent(game, new MagicPermanentAction() {
                     public void doAction(final MagicPermanent it) {
-                        game.doAction(new MagicRemoveFromPlayAction(
+                        game.doAction(new RemoveFromPlayAction(
                             it,
                             MagicLocationType.Exile
                         ));
@@ -255,7 +255,7 @@ public enum MagicRuleEventAction {
             @Override
             public void executeEvent(final MagicGame game, final MagicEvent event) {
                 final MagicPermanent it = event.getPermanent();
-                game.doAction(new MagicRemoveFromPlayAction(
+                game.doAction(new RemoveFromPlayAction(
                     it,
                     MagicLocationType.Exile
                 ));
@@ -281,7 +281,7 @@ public enum MagicRuleEventAction {
             public void executeEvent(final MagicGame game, final MagicEvent event) {
                 event.processTargetPermanent(game, new MagicPermanentAction() {
                     public void doAction(final MagicPermanent it) {
-                        game.doAction(new MagicRemoveFromPlayAction(
+                        game.doAction(new RemoveFromPlayAction(
                             it,
                             MagicLocationType.Exile
                         ));
@@ -305,7 +305,7 @@ public enum MagicRuleEventAction {
         new MagicEventAction() {
             @Override
             public void executeEvent(final MagicGame game, final MagicEvent event) {
-                game.doAction(new MagicRemoveFromPlayAction(event.getPermanent(),MagicLocationType.Exile));
+                game.doAction(new RemoveFromPlayAction(event.getPermanent(),MagicLocationType.Exile));
             }
         }
     ),
@@ -358,7 +358,7 @@ public enum MagicRuleEventAction {
                         if (event.getSource().isPermanent()) {
                             game.doAction(new ExileLinkAction(event.getPermanent(), perm));
                         } else {
-                            game.doAction(new MagicRemoveFromPlayAction(perm,MagicLocationType.Exile));
+                            game.doAction(new RemoveFromPlayAction(perm,MagicLocationType.Exile));
                         }
                     }
                 }
@@ -379,7 +379,7 @@ public enum MagicRuleEventAction {
                         if (event.getSource().isPermanent()) {
                             game.doAction(new ExileLinkAction(event.getPermanent(), perm));
                         } else {
-                            game.doAction(new MagicRemoveFromPlayAction(perm,MagicLocationType.Exile));
+                            game.doAction(new RemoveFromPlayAction(perm,MagicLocationType.Exile));
                         }
                     }
                 });
@@ -1632,7 +1632,7 @@ public enum MagicRuleEventAction {
         new MagicEventAction() {
             @Override
             public void executeEvent(final MagicGame game, final MagicEvent event) {
-                game.doAction(new MagicRemoveFromPlayAction(event.getPermanent(),MagicLocationType.OwnersHand));
+                game.doAction(new RemoveFromPlayAction(event.getPermanent(),MagicLocationType.OwnersHand));
             }
         }
     ),
@@ -1670,7 +1670,7 @@ public enum MagicRuleEventAction {
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
                     final Collection<MagicPermanent> targets = game.filterPermanents(event.getPlayer(),filter);
                     for (final MagicPermanent it : targets) {
-                        game.doAction(new MagicRemoveFromPlayAction(it, MagicLocationType.OwnersHand));
+                        game.doAction(new RemoveFromPlayAction(it, MagicLocationType.OwnersHand));
                     }
                 }
             };
@@ -1687,7 +1687,7 @@ public enum MagicRuleEventAction {
             public void executeEvent(final MagicGame game, final MagicEvent event) {
                 event.processTargetPermanent(game,new MagicPermanentAction() {
                     public void doAction(final MagicPermanent permanent) {
-                        game.doAction(new MagicRemoveFromPlayAction(permanent,MagicLocationType.OwnersHand));
+                        game.doAction(new RemoveFromPlayAction(permanent,MagicLocationType.OwnersHand));
                     }
                 });
             }
@@ -1700,7 +1700,7 @@ public enum MagicRuleEventAction {
         new MagicEventAction() {
             @Override
             public void executeEvent(final MagicGame game, final MagicEvent event) {
-                game.doAction(new MagicRemoveFromPlayAction(event.getPermanent(),MagicLocationType.TopOfOwnersLibrary));
+                game.doAction(new RemoveFromPlayAction(event.getPermanent(),MagicLocationType.TopOfOwnersLibrary));
             }
         }
     ),
@@ -1715,7 +1715,7 @@ public enum MagicRuleEventAction {
             public void executeEvent(final MagicGame game, final MagicEvent event) {
                 event.processTargetPermanent(game,new MagicPermanentAction() {
                     public void doAction(final MagicPermanent permanent) {
-                        game.doAction(new MagicRemoveFromPlayAction(permanent,MagicLocationType.TopOfOwnersLibrary));
+                        game.doAction(new RemoveFromPlayAction(permanent,MagicLocationType.TopOfOwnersLibrary));
                     }
                 });
             }
@@ -1732,7 +1732,7 @@ public enum MagicRuleEventAction {
             public void executeEvent(final MagicGame game, final MagicEvent event) {
                 event.processTargetPermanent(game,new MagicPermanentAction() {
                     public void doAction(final MagicPermanent permanent) {
-                        game.doAction(new MagicRemoveFromPlayAction(permanent,MagicLocationType.BottomOfOwnersLibrary));
+                        game.doAction(new RemoveFromPlayAction(permanent,MagicLocationType.BottomOfOwnersLibrary));
                     }
                 });
             }
@@ -2562,7 +2562,7 @@ public enum MagicRuleEventAction {
         new MagicEventAction() {
             @Override
             public void executeEvent(final MagicGame game, final MagicEvent event) {
-                game.doAction(new MagicRemoveFromPlayAction(event.getPermanent(),MagicLocationType.OwnersLibrary));
+                game.doAction(new RemoveFromPlayAction(event.getPermanent(),MagicLocationType.OwnersLibrary));
             }
         }
     ),

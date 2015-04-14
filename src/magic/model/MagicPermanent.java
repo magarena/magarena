@@ -6,7 +6,7 @@ import magic.model.action.ChangeControlAction;
 import magic.model.action.ChangeCountersAction;
 import magic.model.action.ChangeStateAction;
 import magic.model.action.DestroyAction;
-import magic.model.action.MagicRemoveFromPlayAction;
+import magic.model.action.RemoveFromPlayAction;
 import magic.model.action.MagicSoulbondAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicActivation;
@@ -769,7 +769,7 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
             final int toughness=getToughness();
             if (toughness<=0) {
                 game.logAppendMessage(getController(),getName()+" is put into its owner's graveyard.");
-                game.addDelayedAction(new MagicRemoveFromPlayAction(this,MagicLocationType.Graveyard));
+                game.addDelayedAction(new RemoveFromPlayAction(this,MagicLocationType.Graveyard));
             } else if (hasState(MagicPermanentState.Destroyed)) {
                 game.addDelayedAction(ChangeStateAction.Clear(this,MagicPermanentState.Destroyed));
                 game.addDelayedAction(new DestroyAction(this));
@@ -799,7 +799,7 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
                 } else {
                 // 704.5n
                     game.logAppendMessage(getController(),getName()+" is put into its owner's graveyard.");
-                    game.addDelayedAction(new MagicRemoveFromPlayAction(this,MagicLocationType.Graveyard));
+                    game.addDelayedAction(new RemoveFromPlayAction(this,MagicLocationType.Graveyard));
                 }
             }
         }
@@ -813,7 +813,7 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
         // rule 704.5i If a planeswalker has loyalty 0, it's put into its owner's graveyard.
         if (isPlaneswalker() && getCounters(MagicCounterType.Loyalty) == 0) {
             game.logAppendMessage(getController(),getName()+" is put into its owner's graveyard.");
-            game.addDelayedAction(new MagicRemoveFromPlayAction(this,MagicLocationType.Graveyard));
+            game.addDelayedAction(new RemoveFromPlayAction(this,MagicLocationType.Graveyard));
         }
 
         // +1/+1 and -1/-1 counters cancel each other out.

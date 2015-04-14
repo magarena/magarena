@@ -70,7 +70,7 @@ public class DestroyAction extends MagicAction {
         for (final MagicPermanent permanent : toBeDestroyed) {
             // Destroyed
             game.logAppendMessage(permanent.getController(),permanent.getName()+" is destroyed.");
-            game.doAction(new MagicRemoveFromPlayAction(permanent,MagicLocationType.Graveyard));
+            game.doAction(new RemoveFromPlayAction(permanent,MagicLocationType.Graveyard));
         }
     }
 

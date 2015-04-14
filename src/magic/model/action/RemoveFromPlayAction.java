@@ -6,13 +6,13 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.trigger.MagicTriggerType;
 
-public class MagicRemoveFromPlayAction extends MagicAction {
+public class RemoveFromPlayAction extends MagicAction {
 
     private final MagicPermanent permanent;
     private MagicLocationType toLocation;
     private boolean valid;
 
-    public MagicRemoveFromPlayAction(final MagicPermanent aPermanent,final MagicLocationType aToLocation) {
+    public RemoveFromPlayAction(final MagicPermanent aPermanent,final MagicLocationType aToLocation) {
         permanent  = aPermanent;
         toLocation = aToLocation;
     }

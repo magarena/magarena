@@ -9,7 +9,7 @@ import magic.model.action.ExecuteFirstEventAction;
 import magic.model.action.LogMarkerAction;
 import magic.model.action.MarkerAction;
 import magic.model.action.PutItemOnStackAction;
-import magic.model.action.MagicRemoveFromPlayAction;
+import magic.model.action.RemoveFromPlayAction;
 import magic.model.choice.MagicCombatCreature;
 import magic.model.choice.MagicDeclareAttackersResult;
 import magic.model.choice.MagicDeclareBlockersResult;
@@ -1080,7 +1080,7 @@ public class MagicGame {
                     world.getController(),
                     world.getName() + " is put into its owner's graveyard."
                 );
-                doAction(new MagicRemoveFromPlayAction(
+                doAction(new RemoveFromPlayAction(
                     world, 
                     MagicLocationType.Graveyard
                 ));

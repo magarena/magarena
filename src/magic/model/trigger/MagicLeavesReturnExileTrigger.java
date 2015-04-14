@@ -4,7 +4,7 @@ import magic.model.MagicCardList;
 import magic.model.MagicGame;
 import magic.model.MagicLocationType;
 import magic.model.MagicPermanent;
-import magic.model.action.MagicRemoveFromPlayAction;
+import magic.model.action.RemoveFromPlayAction;
 import magic.model.action.MagicReturnLinkedExileAction;
 import magic.model.event.MagicEvent;
 
@@ -19,7 +19,7 @@ public class MagicLeavesReturnExileTrigger extends MagicWhenLeavesPlayTrigger {
     }
 
     @Override
-    public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicRemoveFromPlayAction act) {
+    public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final RemoveFromPlayAction act) {
         if (act.isPermanent(permanent) &&
             !permanent.getExiledCards().isEmpty()) {
             final MagicCardList clist = new MagicCardList(permanent.getExiledCards());

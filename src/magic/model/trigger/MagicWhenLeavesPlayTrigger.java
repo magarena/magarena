@@ -6,9 +6,9 @@ import magic.model.MagicLocationType;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSourceEvent;
 import magic.model.target.MagicTargetFilter;
-import magic.model.action.MagicRemoveFromPlayAction;
+import magic.model.action.RemoveFromPlayAction;
 
-public abstract class MagicWhenLeavesPlayTrigger extends MagicTrigger<MagicRemoveFromPlayAction> {
+public abstract class MagicWhenLeavesPlayTrigger extends MagicTrigger<RemoveFromPlayAction> {
     public MagicWhenLeavesPlayTrigger(final int priority) {
         super(priority);
     }
@@ -21,7 +21,7 @@ public abstract class MagicWhenLeavesPlayTrigger extends MagicTrigger<MagicRemov
     
     public static final MagicWhenLeavesPlayTrigger Exile = new MagicWhenLeavesPlayTrigger(MagicTrigger.REPLACEMENT) {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicRemoveFromPlayAction act) {
+        public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final RemoveFromPlayAction act) {
             if (permanent == act.getPermanent()) {
                 act.setToLocation(MagicLocationType.Exile);
             }
@@ -32,11 +32,11 @@ public abstract class MagicWhenLeavesPlayTrigger extends MagicTrigger<MagicRemov
     public static final MagicWhenLeavesPlayTrigger create(final MagicTargetFilter<MagicPermanent> filter, final MagicSourceEvent sourceEvent) {
         return new MagicWhenLeavesPlayTrigger() {
             @Override
-            public boolean accept(final MagicPermanent permanent, final MagicRemoveFromPlayAction act) {
+            public boolean accept(final MagicPermanent permanent, final RemoveFromPlayAction act) {
                 return filter.accept(permanent, permanent.getController(), act.getPermanent());
             }
             @Override
-            public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicRemoveFromPlayAction act) {
+            public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final RemoveFromPlayAction act) {
                 return sourceEvent.getEvent(permanent);
             }
         };
@@ -45,11 +45,11 @@ public abstract class MagicWhenLeavesPlayTrigger extends MagicTrigger<MagicRemov
     public static final MagicWhenLeavesPlayTrigger createSelfOrAnother(final MagicTargetFilter<MagicPermanent> filter, final MagicSourceEvent sourceEvent) {
         return new MagicWhenLeavesPlayTrigger() {
             @Override
-            public boolean accept(final MagicPermanent permanent, final MagicRemoveFromPlayAction act) {
+            public boolean accept(final MagicPermanent permanent, final RemoveFromPlayAction act) {
                 return permanent == act.getPermanent() || filter.accept(permanent, permanent.getController(), act.getPermanent());
             }
             @Override
-            public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicRemoveFromPlayAction act) {
+            public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final RemoveFromPlayAction act) {
                 return sourceEvent.getEvent(permanent);
             }
         };
@@ -58,11 +58,11 @@ public abstract class MagicWhenLeavesPlayTrigger extends MagicTrigger<MagicRemov
     public static final MagicWhenLeavesPlayTrigger createAnother(final MagicTargetFilter<MagicPermanent> filter, final MagicSourceEvent sourceEvent) {
         return new MagicWhenLeavesPlayTrigger() {
             @Override
-            public boolean accept(final MagicPermanent permanent, final MagicRemoveFromPlayAction act) {
+            public boolean accept(final MagicPermanent permanent, final RemoveFromPlayAction act) {
                 return permanent != act.getPermanent() && filter.accept(permanent, permanent.getController(), act.getPermanent());
             }
             @Override
-            public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicRemoveFromPlayAction act) {
+            public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final RemoveFromPlayAction act) {
                 return sourceEvent.getEvent(permanent);
             }
         };

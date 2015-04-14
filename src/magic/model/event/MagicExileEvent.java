@@ -3,7 +3,7 @@ package magic.model.event;
 import magic.model.MagicGame;
 import magic.model.MagicLocationType;
 import magic.model.MagicPermanent;
-import magic.model.action.MagicRemoveFromPlayAction;
+import magic.model.action.RemoveFromPlayAction;
 
 public class MagicExileEvent extends MagicEvent {
 
@@ -18,7 +18,7 @@ public class MagicExileEvent extends MagicEvent {
     private static final MagicEventAction EVENT_ACTION=new MagicEventAction() {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicRemoveFromPlayAction(event.getPermanent(),MagicLocationType.Exile));
+            game.doAction(new RemoveFromPlayAction(event.getPermanent(),MagicLocationType.Exile));
         }
     };
 }

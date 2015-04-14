@@ -6,7 +6,7 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.action.MagicPermanentAction;
-import magic.model.action.MagicRemoveFromPlayAction;
+import magic.model.action.RemoveFromPlayAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
 import magic.model.condition.MagicConditionFactory;
@@ -42,7 +42,7 @@ public class MagicBounceChosenPermanentEvent extends MagicEvent {
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent permanent) {
-                    game.doAction(new MagicRemoveFromPlayAction(
+                    game.doAction(new RemoveFromPlayAction(
                         permanent,
                         MagicLocationType.OwnersHand
                     ));

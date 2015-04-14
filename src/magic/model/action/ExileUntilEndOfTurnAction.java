@@ -14,7 +14,7 @@ public class ExileUntilEndOfTurnAction extends MagicAction {
 
     @Override
     public void doAction(final MagicGame game) {
-        game.doAction(new MagicRemoveFromPlayAction(permanent,MagicLocationType.Exile));
+        game.doAction(new RemoveFromPlayAction(permanent,MagicLocationType.Exile));
         game.getExiledUntilEndOfTurn().add(permanent.getCard());
     }
 
