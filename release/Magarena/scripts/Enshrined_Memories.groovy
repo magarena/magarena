@@ -13,7 +13,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicCardList topX = event.getPlayer().getLibrary().getCardsFromTop(event.getRefInt()) ;
-            game.doAction(new MagicRevealAction(topX));
+            game.doAction(new RevealAction(topX));
             for (final MagicCard top : topX) {
                 game.doAction(new RemoveCardAction(
                     top,

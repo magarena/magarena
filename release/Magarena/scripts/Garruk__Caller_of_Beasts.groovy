@@ -12,7 +12,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicCardList top5 = event.getPlayer().getLibrary().getCardsFromTop(5);
             for (final MagicCard top : top5) {
-                game.doAction(new MagicRevealAction(top5));
+                game.doAction(new RevealAction(top5));
                 game.doAction(new RemoveCardAction(
                     top,
                     MagicLocationType.OwnersLibrary

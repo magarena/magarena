@@ -2,7 +2,7 @@ def ACTION = {
     final MagicGame game, final MagicEvent event ->
     if (event.isYes()) {
         final MagicCard card = event.getRefCard();
-        game.doAction(new MagicRevealAction(card));
+        game.doAction(new RevealAction(card));
         if (card.hasType(MagicType.Instant) || card.hasType(MagicType.Sorcery)) {
             game.doAction(new MagicTransformAction(event.getPermanent()));
         }
