@@ -3,7 +3,7 @@
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPayedCost payedCost) {
             return (permanent.hasState(MagicPermanentState.CastFromHand) &&
-                   game.getNrOfPermanents(MagicType.Creature) >=5) ? 
+                   game.getNrOfPermanents(CREATURE.except(permanent)) >=5) ? 
                 new MagicEvent(
                     permanent,
                     this,
@@ -13,11 +13,10 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final Collection<MagicPermanent> targets= game.filterPermanents(
-                event.getPermanent().getController(),
-                CREATURE.except(event.getPermanent())
-            );
-            game.doAction(new DestroyAction(targets));
+            final Collection<MagicPermanent> targets = CREATURE.except(event.getPermanent()).filter(game);
+            if (targets.size() >= 5) {
+                game.doAction(new DestroyAction(targets));
+            }
         }
     }
 ]
