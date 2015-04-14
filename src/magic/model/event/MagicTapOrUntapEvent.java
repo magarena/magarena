@@ -4,7 +4,7 @@ import magic.model.MagicGame;
 import magic.model.MagicSource;
 import magic.model.MagicPermanent;
 import magic.model.choice.MagicMayChoice;
-import magic.model.action.MagicTapAction;
+import magic.model.action.TapAction;
 import magic.model.action.MagicUntapAction;
 
 public class MagicTapOrUntapEvent extends MagicEvent {
@@ -27,7 +27,7 @@ public class MagicTapOrUntapEvent extends MagicEvent {
                 if (permanent.isTapped()) {
                     game.doAction(new MagicUntapAction(permanent));
                 } else {
-                    game.doAction(new MagicTapAction(permanent));
+                    game.doAction(new TapAction(permanent));
                 }
             }
         }

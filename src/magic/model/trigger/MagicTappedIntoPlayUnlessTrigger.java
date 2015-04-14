@@ -5,7 +5,7 @@ import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.MagicSubType;
-import magic.model.action.MagicTapAction;
+import magic.model.action.TapAction;
 import magic.model.event.MagicEvent;
 
 public class MagicTappedIntoPlayUnlessTrigger extends MagicWhenComesIntoPlayTrigger {
@@ -33,7 +33,7 @@ public class MagicTappedIntoPlayUnlessTrigger extends MagicWhenComesIntoPlayTrig
 
     @Override
     public void executeEvent(final MagicGame game, final MagicEvent event) {
-        game.doAction(MagicTapAction.Enters(event.getPermanent()));
+        game.doAction(TapAction.Enters(event.getPermanent()));
     }
 
     @Override

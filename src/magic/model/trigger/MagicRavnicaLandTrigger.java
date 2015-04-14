@@ -4,7 +4,7 @@ import magic.model.MagicGame;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.action.ChangeLifeAction;
-import magic.model.action.MagicTapAction;
+import magic.model.action.TapAction;
 import magic.model.choice.MagicMayChoice;
 import magic.model.event.MagicEvent;
 
@@ -21,7 +21,7 @@ public class MagicRavnicaLandTrigger extends MagicWhenComesIntoPlayTrigger {
     @Override
     public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPayedCost payedCost) {
         if (permanent.getController().getLife() < 2) {
-            game.doAction(MagicTapAction.Enters(permanent));
+            game.doAction(TapAction.Enters(permanent));
             return MagicEvent.NONE;
         } else {
             return new MagicEvent(
@@ -38,7 +38,7 @@ public class MagicRavnicaLandTrigger extends MagicWhenComesIntoPlayTrigger {
         if (event.isYes()) {
             game.doAction(new ChangeLifeAction(event.getPlayer(),-2));
         } else {
-            game.doAction(MagicTapAction.Enters(event.getPermanent()));
+            game.doAction(TapAction.Enters(event.getPermanent()));
         }
     }
 

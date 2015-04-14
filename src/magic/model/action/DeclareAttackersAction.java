@@ -23,7 +23,7 @@ public class DeclareAttackersAction extends MagicAction {
         // 508.1f The active player taps the chosen creatures.
         for (final MagicPermanent attacker : attackers) {
             if (!attacker.hasAbility(MagicAbility.Vigilance)) {
-                game.doAction(new MagicTapAction(attacker));
+                game.doAction(new TapAction(attacker));
             }
         }
         // 508.1j Each chosen creature still controlled by the active player becomes an attacking creature.

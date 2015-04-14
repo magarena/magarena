@@ -7,21 +7,21 @@ import magic.model.MagicPermanentState;
 import magic.model.trigger.MagicTriggerType;
 
 // Must check if creature is untapped.
-public class MagicTapAction extends MagicAction {
+public class TapAction extends MagicAction {
 
     private final MagicPermanent permanent;
     private boolean isUntapped;
     private final boolean hasScore;
     
-    public MagicTapAction(final MagicPermanent permanent) {
+    public TapAction(final MagicPermanent permanent) {
         this(permanent, true);
     }
 
-    public static MagicTapAction Enters(final MagicPermanent permanent) {
-        return new MagicTapAction(permanent, false);
+    public static TapAction Enters(final MagicPermanent permanent) {
+        return new TapAction(permanent, false);
     }
 
-    private MagicTapAction(final MagicPermanent aPermanent,final boolean aHasScore) {
+    private TapAction(final MagicPermanent aPermanent,final boolean aHasScore) {
         permanent = aPermanent;
         hasScore = aHasScore;
     }

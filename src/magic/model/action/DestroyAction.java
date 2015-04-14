@@ -36,7 +36,7 @@ public class DestroyAction extends MagicAction {
             // Regeneration
             if (destroy && permanent.isRegenerated()) {
                 game.logAppendMessage(permanent.getController(),permanent.getName()+" is regenerated.");
-                game.doAction(new MagicTapAction(permanent));
+                game.doAction(new TapAction(permanent));
                 game.doAction(new RemoveAllDamageAction(permanent));
                 game.doAction(new RemoveFromCombatAction(permanent));
                 game.doAction(ChangeStateAction.Clear(permanent,MagicPermanentState.Regenerated));
