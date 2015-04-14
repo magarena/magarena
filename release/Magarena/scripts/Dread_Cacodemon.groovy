@@ -13,12 +13,14 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final Collection<MagicPermanent> targets = game.filterPermanents(event.getPlayer().getOpponent(),CREATURE_YOU_CONTROL);
-                game.doAction(new DestroyAction(targets));
+            game.doAction(new DestroyAction(targets));
+
             final Collection<MagicPermanent> targets2 = game.filterPermanents(
                 event.getPlayer(),
                 CREATURE_YOU_CONTROL.except(event.getPermanent())
-                );
-                for (final MagicPermanent creature : targets2) {                    game.doAction(new TapAction(creature));
+            );
+            for (final MagicPermanent creature : targets2) {
+                game.doAction(new TapAction(creature));
             } 
         }
     }
