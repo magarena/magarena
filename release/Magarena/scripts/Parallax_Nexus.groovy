@@ -1,7 +1,7 @@
 def action = {
     final MagicGame game, final MagicEvent event ->
     event.processTargetCard(game, {
-        game.doAction(new MagicExileLinkAction(
+        game.doAction(new ExileLinkAction(
             event.getPermanent(),
             it,
             MagicLocationType.OwnersHand

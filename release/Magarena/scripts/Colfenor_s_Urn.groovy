@@ -17,7 +17,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
-                game.doAction(new MagicExileLinkAction(
+                game.doAction(new ExileLinkAction(
                     event.getPermanent(),
                     event.getRefPermanent()
                 ));

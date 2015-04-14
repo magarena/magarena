@@ -8,7 +8,7 @@ def HAS_EXILED_BEFORE_CONDITION = new MagicCondition() {
 def ExileCard = {
     final MagicGame game, final MagicEvent event ->
     event.processTargetCard(game, {
-        game.doAction(new MagicExileLinkAction(
+        game.doAction(new ExileLinkAction(
             event.getPermanent(),
             it,
             MagicLocationType.OwnersHand

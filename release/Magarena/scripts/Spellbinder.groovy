@@ -28,7 +28,7 @@ def INSTANT_FROM_HAND = new MagicCardFilterImpl() {
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
                 event.processTargetCard(game, {
-                    game.doAction(new MagicExileLinkAction(
+                    game.doAction(new ExileLinkAction(
                         event.getPermanent(), 
                         it, 
                         MagicLocationType.OwnersHand

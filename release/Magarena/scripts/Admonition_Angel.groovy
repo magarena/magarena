@@ -20,7 +20,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
                 event.processTargetPermanent(game, {
-                    game.doAction(new MagicExileLinkAction(event.getPermanent(),it));
+                    game.doAction(new ExileLinkAction(event.getPermanent(),it));
                 });
             }
         }

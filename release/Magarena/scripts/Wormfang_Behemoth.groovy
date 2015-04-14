@@ -12,7 +12,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicCardList hand = new MagicCardList(event.getPlayer().getHand());
             for (final MagicCard card : hand) {
-                game.doAction(new MagicExileLinkAction(
+                game.doAction(new ExileLinkAction(
                     event.getPermanent(),
                     card,
                     MagicLocationType.OwnersHand

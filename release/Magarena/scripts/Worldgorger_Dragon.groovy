@@ -16,7 +16,7 @@
                 PERMANENT_YOU_CONTROL.except(permanent)
             );
             for (final MagicPermanent target : targets) {
-                game.doAction(new MagicExileLinkAction(permanent, target));
+                game.doAction(new ExileLinkAction(permanent, target));
             }
         }
     },

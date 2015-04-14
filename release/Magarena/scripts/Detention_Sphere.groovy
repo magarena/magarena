@@ -26,7 +26,7 @@ def choice = new MagicTargetChoice(filter, "target nonland permanent not named D
                     new MagicNameTargetFilter(it.getName())
                 );
                 for (final MagicPermanent target : targets) {
-                    game.doAction(new MagicExileLinkAction(
+                    game.doAction(new ExileLinkAction(
                         event.getPermanent(),
                         target
                     ));

@@ -16,7 +16,7 @@
             event.processTargetPlayer(game, {
                 final MagicCardList hand = new MagicCardList(it.getHand());
                 for (final MagicCard card : hand) {
-                    game.doAction(new MagicExileLinkAction(
+                    game.doAction(new ExileLinkAction(
                         event.getPermanent(),
                         card,
                         MagicLocationType.OwnersHand

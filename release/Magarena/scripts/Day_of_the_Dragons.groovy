@@ -14,7 +14,7 @@
             final Collection<MagicPermanent> targets =
                     game.filterPermanents(event.getPlayer(),CREATURE_YOU_CONTROL);
             for (final MagicPermanent target : targets) {
-                game.doAction(new MagicExileLinkAction(
+                game.doAction(new ExileLinkAction(
                     event.getPermanent(),
                     target
                 ));

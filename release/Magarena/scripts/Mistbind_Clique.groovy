@@ -1,12 +1,12 @@
 [
-    new MagicTrigger<MagicExileLinkAction>() {
+    new MagicTrigger<ExileLinkAction>() {
         @Override
         public MagicTriggerType getType() {
             return MagicTriggerType.WhenChampioned;
         }
          
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicExileLinkAction action) {
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final ExileLinkAction action) {
             return action.source == permanent && action.permanent.hasSubType(MagicSubType.Faerie) ?
                 new MagicEvent(
                     permanent,
