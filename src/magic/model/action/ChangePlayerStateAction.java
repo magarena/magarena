@@ -42,7 +42,7 @@ public class ChangePlayerStateAction extends MagicAction {
                 public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
                     if (player.getId() == upkeepPlayer.getId()) {
                         game.addDelayedAction(new RemoveStaticAction(exhausted));
-                        game.addDelayedAction(new MagicRemoveTriggerAction(this));
+                        game.addDelayedAction(new RemoveTriggerAction(this));
                     }
                     return MagicEvent.NONE;
                 }

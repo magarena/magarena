@@ -29,7 +29,7 @@ public class DetainAction extends MagicAction {
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
             if (upkeepPlayer.getId() == sourceController.getId()) {
                 game.addDelayedAction(new RemoveStaticAction(permanent, Detain));
-                game.addDelayedAction(new MagicRemoveTriggerAction(permanent, this));
+                game.addDelayedAction(new RemoveTriggerAction(permanent, this));
             }
             return MagicEvent.NONE;
         }

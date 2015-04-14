@@ -10,7 +10,7 @@ import magic.model.stack.MagicCardOnStack;
 import magic.model.choice.MagicMayChoice;
 import magic.model.event.MagicEvent;
 import magic.model.action.RemoveCardAction;
-import magic.model.action.MagicRemoveTriggerAction;
+import magic.model.action.RemoveTriggerAction;
 import magic.model.action.PutItemOnStackAction;
 
 public class MagicReboundTrigger extends MagicAtUpkeepTrigger {
@@ -28,7 +28,7 @@ public class MagicReboundTrigger extends MagicAtUpkeepTrigger {
 
     @Override
     public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent none,final MagicPlayer upkeepPlayer) {
-        game.addDelayedAction(new MagicRemoveTriggerAction(this));
+        game.addDelayedAction(new RemoveTriggerAction(this));
         final MagicCard mappedCard = upkeepPlayer.getExile().getCard(staleCard.getId());
         return mappedCard.isInExile() ?
             new MagicEvent(
