@@ -6,7 +6,7 @@ import magic.model.action.MagicActionList;
 import magic.model.action.AddEventAction;
 import magic.model.action.AddFirstEventAction;
 import magic.model.action.ExecuteFirstEventAction;
-import magic.model.action.MagicLogMarkerAction;
+import magic.model.action.LogMarkerAction;
 import magic.model.action.MagicMarkerAction;
 import magic.model.action.MagicPutItemOnStackAction;
 import magic.model.action.MagicRemoveFromPlayAction;
@@ -628,7 +628,7 @@ public class MagicGame {
         final MagicAction markerAction=new MagicMarkerAction();
         doAction(markerAction);
         if (artificial == false) {
-            doAction(new MagicLogMarkerAction());
+            doAction(new LogMarkerAction());
             undoPoints.addLast(markerAction);
         }
     }

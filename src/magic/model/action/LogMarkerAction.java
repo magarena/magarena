@@ -2,7 +2,7 @@ package magic.model.action;
 
 import magic.model.MagicGame;
 
-public class MagicLogMarkerAction extends MagicAction {
+public class LogMarkerAction extends MagicAction {
 
     private int oldSize;
 
