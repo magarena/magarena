@@ -4,13 +4,13 @@ import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPermanentState;
 
-public class MagicSetBlockerAction extends MagicAction {
+public class SetBlockerAction extends MagicAction {
 
     private final MagicPermanent attacker;
     private final MagicPermanent blocker;
     private boolean unblocked;
 
-    public MagicSetBlockerAction(final MagicPermanent attacker,final MagicPermanent blocker) {
+    public SetBlockerAction(final MagicPermanent attacker,final MagicPermanent blocker) {
         this.attacker=attacker;
         this.blocker=blocker;
     }

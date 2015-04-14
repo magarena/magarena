@@ -16,7 +16,7 @@ public class DeclareBlockerAction extends MagicAction {
 
     @Override
     public void doAction(final MagicGame game) {
-        game.doAction(new MagicSetBlockerAction(attacker, blocker));
+        game.doAction(new SetBlockerAction(attacker, blocker));
         game.executeTrigger(MagicTriggerType.WhenBlocks,blocker);
     }
 
