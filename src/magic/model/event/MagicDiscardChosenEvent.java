@@ -5,7 +5,7 @@ import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.action.MagicCardAction;
-import magic.model.action.MagicDiscardCardAction;
+import magic.model.action.DiscardCardAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
 import magic.model.condition.MagicConditionFactory;
@@ -36,7 +36,7 @@ public class MagicDiscardChosenEvent extends MagicEvent {
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetCard(game,new MagicCardAction() {
                 public void doAction(final MagicCard card) {
-                    game.doAction(new MagicDiscardCardAction(
+                    game.doAction(new DiscardCardAction(
                         event.getPlayer(),
                         card
                     ));

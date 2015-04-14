@@ -6,18 +6,18 @@ import magic.model.MagicGame;
 import magic.model.MagicLocationType;
 import magic.model.MagicPlayer;
 
-public class MagicDiscardCardAction extends MagicAction {
+public class DiscardCardAction extends MagicAction {
 
     private final MagicPlayer player;
     private final MagicCard card;
     private final MagicLocationType toLocation;
     private int index;
     
-    public MagicDiscardCardAction(final MagicPlayer aPlayer,final MagicCard aCard) {
+    public DiscardCardAction(final MagicPlayer aPlayer,final MagicCard aCard) {
         this(aPlayer, aCard, MagicLocationType.Graveyard);
     }
 
-    public MagicDiscardCardAction(final MagicPlayer aPlayer,final MagicCard aCard, final MagicLocationType aToLocation) {
+    public DiscardCardAction(final MagicPlayer aPlayer,final MagicCard aCard, final MagicLocationType aToLocation) {
         player = aPlayer;
         card = aCard;
         toLocation = aToLocation;
