@@ -4,7 +4,7 @@ import magic.model.MagicGame;
 import magic.model.MagicLocationType;
 import magic.model.MagicPermanent;
 import magic.model.action.RemoveFromPlayAction;
-import magic.model.action.MagicReturnLinkedExileAction;
+import magic.model.action.ReturnLinkedExileAction;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSourceEvent;
 
@@ -43,7 +43,7 @@ public abstract class MagicWhenSelfLeavesPlayTrigger extends MagicWhenLeavesPlay
     public static final MagicWhenSelfLeavesPlayTrigger ExileUntilLeaves = new MagicWhenSelfLeavesPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final RemoveFromPlayAction act) {
-            game.doAction(new MagicReturnLinkedExileAction(act.getPermanent(),MagicLocationType.Play));
+            game.doAction(new ReturnLinkedExileAction(act.getPermanent(),MagicLocationType.Play));
             return MagicEvent.NONE;
         }
     };

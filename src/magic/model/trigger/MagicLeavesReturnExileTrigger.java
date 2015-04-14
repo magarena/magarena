@@ -5,7 +5,7 @@ import magic.model.MagicGame;
 import magic.model.MagicLocationType;
 import magic.model.MagicPermanent;
 import magic.model.action.RemoveFromPlayAction;
-import magic.model.action.MagicReturnLinkedExileAction;
+import magic.model.action.ReturnLinkedExileAction;
 import magic.model.event.MagicEvent;
 
 public class MagicLeavesReturnExileTrigger extends MagicWhenLeavesPlayTrigger {
@@ -35,6 +35,6 @@ public class MagicLeavesReturnExileTrigger extends MagicWhenLeavesPlayTrigger {
     }
     @Override
     public void executeEvent(final MagicGame game, final MagicEvent event) {
-        game.doAction(new MagicReturnLinkedExileAction(event.getPermanent(),MagicLocationType.Play));
+        game.doAction(new ReturnLinkedExileAction(event.getPermanent(),MagicLocationType.Play));
     }
 }

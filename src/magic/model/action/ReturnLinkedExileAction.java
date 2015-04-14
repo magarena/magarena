@@ -1,18 +1,16 @@
 package magic.model.action;
 
+import java.util.LinkedList;
+import java.util.List;
+
 import magic.model.MagicCard;
 import magic.model.MagicCardList;
 import magic.model.MagicGame;
 import magic.model.MagicLocationType;
-import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
-import magic.model.stack.MagicCardOnStack;
 
-import java.util.LinkedList;
-import java.util.List;
-
-public class MagicReturnLinkedExileAction extends MagicAction {
+public class ReturnLinkedExileAction extends MagicAction {
 
     private final MagicPermanent source;
     private final MagicLocationType location;
@@ -20,22 +18,22 @@ public class MagicReturnLinkedExileAction extends MagicAction {
     private final List<MagicPermanentAction> modifications = new LinkedList<MagicPermanentAction>();;
     private MagicCardList exiledList;
     
-    public MagicReturnLinkedExileAction(final MagicPermanent aSource, final MagicLocationType aLocation, final MagicPlayer aController) {
+    public ReturnLinkedExileAction(final MagicPermanent aSource, final MagicLocationType aLocation, final MagicPlayer aController) {
         source = aSource;
         location = aLocation;
         controller = aController;
     }
     
-    public MagicReturnLinkedExileAction(final MagicPermanent source, final MagicLocationType location) {
+    public ReturnLinkedExileAction(final MagicPermanent source, final MagicLocationType location) {
         this(source, location, MagicPlayer.NONE);
     }
 
-    public MagicReturnLinkedExileAction(final MagicPermanent aSource, final MagicLocationType aLocation, final MagicPlayer aController, final MagicPermanentAction aModification) {
+    public ReturnLinkedExileAction(final MagicPermanent aSource, final MagicLocationType aLocation, final MagicPlayer aController, final MagicPermanentAction aModification) {
         this(aSource, aLocation, aController);
         modifications.add(aModification);
     }
     
-    public MagicReturnLinkedExileAction(final MagicPermanent source, final MagicLocationType location, final MagicPermanentAction aModification) {
+    public ReturnLinkedExileAction(final MagicPermanent source, final MagicLocationType location, final MagicPermanentAction aModification) {
         this(source, location);
         modifications.add(aModification);
     }
