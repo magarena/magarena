@@ -6,7 +6,7 @@ type=Creature
 subtype=Horror
 cost={3}{B}{R}
 pt=9/9
-ability=Trample
+ability=Trample.;\
+        SN gets -4/-4 for each card in your hand.
 timing=main
-requires_groovy_code
 oracle=Trample. Dread Slag gets -4/-4 for each card in your hand.

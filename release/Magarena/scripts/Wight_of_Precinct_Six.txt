@@ -6,6 +6,6 @@ type=Creature
 subtype=Zombie
 cost={1}{B}
 pt=1/1
-timing=fmain
-requires_groovy_code
+ability=SN gets +1/+1 for each creature card in your opponents' graveyards.
+timing=main
 oracle=Wight of Precinct Six gets +1/+1 for each creature card in your opponents' graveyards.

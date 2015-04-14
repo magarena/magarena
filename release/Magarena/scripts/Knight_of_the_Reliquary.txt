@@ -6,7 +6,7 @@ type=Creature
 subtype=Human,Knight
 cost={1}{G}{W}
 pt=2/2
-ability={T}, Sacrifice a Forest or Plains: Search your library for a land card and put it onto the battlefield. Then shuffle your library.
+ability=SN gets +1/+1 for each land card in your graveyard.;\
+        {T}, Sacrifice a Forest or Plains: Search your library for a land card and put it onto the battlefield. Then shuffle your library.
 timing=main
-requires_groovy_code
 oracle=Knight of the Reliquary gets +1/+1 for each land card in your graveyard. {T}, Sacrifice a Forest or Plains: Search your library for a land card, put it onto the battlefield, then shuffle your library.
