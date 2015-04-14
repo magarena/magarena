@@ -28,7 +28,7 @@
             event.processTarget(game, {
                 final int amount = event.getPermanent().getPower();
                 game.logAppendMessage(event.getPlayer(),"("+amount+")");
-                game.doAction(new MagicDealDamageAction(event.getSource(),it,amount));
+                game.doAction(new DealDamageAction(event.getSource(),it,amount));
             });
         }
     }

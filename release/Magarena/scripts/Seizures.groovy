@@ -19,7 +19,7 @@
         @Override
         public void executeEvent(final MagicGame game,final MagicEvent event) {
             if (event.isNo()) {
-                game.doAction(new MagicDealDamageAction(event.getSource(),event.getPlayer(),3));
+                game.doAction(new DealDamageAction(event.getSource(),event.getPlayer(),3));
             }
         }
     }

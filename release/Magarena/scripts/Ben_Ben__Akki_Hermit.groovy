@@ -27,7 +27,7 @@ def choice = new MagicTargetChoice("target attacking creature");
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
                 final int amount = event.getPlayer().getNrOfPermanents(UNTAPPED_MOUNTAIN_YOU_CONTROL)
-                game.doAction(new MagicDealDamageAction(event.getSource(),it,amount));
+                game.doAction(new DealDamageAction(event.getSource(),it,amount));
                 game.logAppendMessage(event.getPlayer()," ("+amount+")");
             });
         }

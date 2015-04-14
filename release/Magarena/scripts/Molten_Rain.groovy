@@ -17,7 +17,7 @@
             event.processTargetPermanent(game, {
                 game.doAction(new MagicDestroyAction(it));
                 if (!it.isBasic()) {
-                    game.doAction(new MagicDealDamageAction(event.getSource(),it.getController(),2));
+                    game.doAction(new DealDamageAction(event.getSource(),it.getController(),2));
                 }
             });
         }

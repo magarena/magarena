@@ -17,7 +17,7 @@
                 game.doAction(ChangeStateAction.Set(it,MagicPermanentState.CannotBeRegenerated));
                 game.doAction(new MagicDestroyAction(it));
                 if (event.isKicked()) {
-                    game.doAction(new MagicDealDamageAction(event.getSource(),it.getController(),it.getPower()));
+                    game.doAction(new DealDamageAction(event.getSource(),it.getController(),it.getPower()));
                     game.logAppendMessage(event.getPlayer(),"("+it.getPower()+")");
                 }
             });

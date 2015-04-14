@@ -14,7 +14,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
                 final int amount = it.getNrOfPermanents(NONBASIC_LAND_YOU_CONTROL)
-                game.doAction(new MagicDealDamageAction(event.getSource(),it,amount));
+                game.doAction(new DealDamageAction(event.getSource(),it,amount));
                 game.logAppendMessage(event.getPlayer(),"("+amount+")");
             });
         }

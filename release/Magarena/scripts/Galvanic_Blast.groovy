@@ -16,7 +16,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTarget(game, {
                 final int amount = MagicCondition.METALCRAFT_CONDITION.accept(event.getSource()) ? 4 : 2;
-                game.doAction(new MagicDealDamageAction(event.getSource(),it,amount));
+                game.doAction(new DealDamageAction(event.getSource(),it,amount));
             });
         }
     }

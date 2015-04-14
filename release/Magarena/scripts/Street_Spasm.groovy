@@ -15,7 +15,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTarget(game, {
-                game.doAction(new MagicDealDamageAction(event.getSource(),it,event.getRefInt()));
+                game.doAction(new DealDamageAction(event.getSource(),it,event.getRefInt()));
             });
         }
     },
@@ -43,7 +43,7 @@
             final MagicSource source = event.getSource();
             final int amount = event.getRefInt();
             for (final MagicPermanent target : targets) {
-                game.doAction(new MagicDealDamageAction(source,target,amount));
+                game.doAction(new DealDamageAction(source,target,amount));
             }
         }
     }

@@ -29,8 +29,8 @@
             event.processTargetPermanent(game,{
                 final int X = game.getNrOfPermanents(MagicSubType.Goblin);
                 final MagicSource source = event.getSource();
-                game.doAction(new MagicDealDamageAction(source,it,X));
-                game.doAction(new MagicDealDamageAction(source,event.getPlayer(),X));
+                game.doAction(new DealDamageAction(source,it,X));
+                game.doAction(new DealDamageAction(source,event.getPlayer(),X));
             });
         }
     }

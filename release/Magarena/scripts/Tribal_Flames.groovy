@@ -18,7 +18,7 @@
                 final MagicPlayer castingPlayer = event.getPlayer()
                 final int amount = castingPlayer.getDomain();
                 game.logAppendMessage(castingPlayer," (X="+amount+")");
-                game.doAction(new MagicDealDamageAction(event.getSource(),it,amount));
+                game.doAction(new DealDamageAction(event.getSource(),it,amount));
             });
         }
     }

@@ -14,10 +14,10 @@
             final int amount = event.isKicked() ? 4 : 1;
             final Collection<MagicPermanent> targets= game.filterPermanents(CREATURE_WITH_FLYING);
             for (final MagicPermanent target : targets) {
-                game.doAction(new MagicDealDamageAction(event.getSource(),target,amount));
+                game.doAction(new DealDamageAction(event.getSource(),target,amount));
             }
             for (final MagicPlayer player : game.getAPNAP()) {
-                game.doAction(new MagicDealDamageAction(event.getSource(),player,amount));
+                game.doAction(new DealDamageAction(event.getSource(),player,amount));
             }
         }
     }

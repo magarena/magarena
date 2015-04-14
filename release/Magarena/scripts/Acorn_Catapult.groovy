@@ -27,7 +27,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTarget(game, {
-                game.doAction(new MagicDealDamageAction(event.getSource(),it,1));
+                game.doAction(new DealDamageAction(event.getSource(),it,1));
                 game.doAction(new MagicPlayTokenAction(
                     it.getController(),
                     TokenCardDefinitions.get("1/1 green Squirrel creature token")

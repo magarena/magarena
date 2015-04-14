@@ -12,7 +12,7 @@
         @Override
         public void executeEvent(final MagicGame game,final MagicEvent event) {
             final int amount = event.getPlayer().getNrOfPermanents(UNTAPPED_LAND_YOU_CONTROL);
-            game.doAction(new MagicDealDamageAction(
+            game.doAction(new DealDamageAction(
                 event.getSource(),
                 event.getPlayer(),
                 amount

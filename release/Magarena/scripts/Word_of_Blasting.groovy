@@ -19,7 +19,7 @@ def choice = Negative("target Wall");
                 final int amount = it.getConvertedCost();
                 game.doAction(ChangeStateAction.Set(it,MagicPermanentState.CannotBeRegenerated));
                 game.doAction(new MagicDestroyAction(it));
-                game.doAction(new MagicDealDamageAction(event.getSource(),it.getController(),amount));
+                game.doAction(new DealDamageAction(event.getSource(),it.getController(),amount));
                 game.logAppendMessage(event.getPlayer()," ("+amount+")");
             });
         }

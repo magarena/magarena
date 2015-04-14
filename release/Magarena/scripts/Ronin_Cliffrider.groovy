@@ -18,7 +18,7 @@
                 final Collection<MagicPermanent> creatures =
                         game.filterPermanents(event.getPlayer().getOpponent(),CREATURE_YOU_CONTROL);
                 for (final MagicPermanent creature : creatures) {
-                    game.doAction(new MagicDealDamageAction(source,creature,1));
+                    game.doAction(new DealDamageAction(source,creature,1));
                 }
             }
         }

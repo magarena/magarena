@@ -14,10 +14,10 @@
             final int amount = event.isKicked() ? 4 : 1;
             final MagicSource source = event.getSource();
             CREATURE_WITHOUT_FLYING.filter(game) each {
-                game.doAction(new MagicDealDamageAction(source, it, amount));
+                game.doAction(new DealDamageAction(source, it, amount));
             }
             game.getAPNAP() each {
-                game.doAction(new MagicDealDamageAction(source, it, amount));
+                game.doAction(new DealDamageAction(source, it, amount));
             }
         }
     }

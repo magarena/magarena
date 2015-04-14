@@ -18,7 +18,7 @@
                     final int damageAmount = (int)Math.floor(event.getCardOnStack().getX()/creatures.size())
                     if (damageAmount > 0) {
                         for (final MagicPermanent creature : creatures) {
-                            game.doAction(new MagicDealDamageAction(event.getSource(),creature,damageAmount));
+                            game.doAction(new DealDamageAction(event.getSource(),creature,damageAmount));
                         }
                     }
                 }

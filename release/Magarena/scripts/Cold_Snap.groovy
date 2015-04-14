@@ -15,7 +15,7 @@
             final MagicPlayer player = event.getPlayer();
             final int amount = player.getNrOfPermanents(SNOW_LAND_YOU_CONTROL);
             game.logAppendMessage(event.getPlayer(),"("+amount+")");
-            game.doAction(new MagicDealDamageAction(event.getSource(),player,amount));
+            game.doAction(new DealDamageAction(event.getSource(),player,amount));
         }
     }
 ]

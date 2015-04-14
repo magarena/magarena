@@ -13,7 +13,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final Collection<MagicPermanent> creatures = event.getPlayer().filterPermanents(CREATURE_YOU_CONTROL);
             for (final MagicPermanent creature : creatures) {
-                game.doAction(new MagicDealDamageAction(event.getSource(),creature,1));
+                game.doAction(new DealDamageAction(event.getSource(),creature,1));
             }
         }
     }

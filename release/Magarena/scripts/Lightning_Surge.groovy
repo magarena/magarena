@@ -16,9 +16,9 @@
                 if (MagicCondition.THRESHOLD_CONDITION.accept(event.getSource())) {
                     final MagicDamage damage = new MagicDamage(event.getSource(),it,6);
                     damage.setUnpreventable();
-                    game.doAction(new MagicDealDamageAction(damage));
+                    game.doAction(new DealDamageAction(damage));
                 } else {
-                    game.doAction(new MagicDealDamageAction(event.getSource(),it,4));
+                    game.doAction(new DealDamageAction(event.getSource(),it,4));
                 }
             });
         }

@@ -36,7 +36,7 @@
             if (event.isYes() && sac.isSatisfied()) {
                 game.addEvent(sac);
             } else {
-                game.doAction(new MagicDealDamageAction(
+                game.doAction(new DealDamageAction(
                     event.getSource(),
                     event.getPlayer(),
                     2

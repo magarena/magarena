@@ -13,7 +13,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTarget(game, {
-                game.doAction(new MagicDealDamageAction(
+                game.doAction(new DealDamageAction(
                     event.getSource(),
                     it,
                     event.getPlayer().getNrOfPermanents(MagicType.Creature)

@@ -18,7 +18,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPermanent permanent=event.getPermanent();
-            game.doAction(new MagicDealDamageAction(permanent,permanent,1));
+            game.doAction(new DealDamageAction(permanent,permanent,1));
         }
     },
     new MagicWhenDamageIsDealtTrigger() {
@@ -36,7 +36,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPermanent permanent = event.getPermanent();
-            game.doAction(new MagicDealDamageAction(permanent,permanent.getChosenPlayer(),event.getRefInt()));
+            game.doAction(new DealDamageAction(permanent,permanent.getChosenPlayer(),event.getRefInt()));
         }
     }
 ]

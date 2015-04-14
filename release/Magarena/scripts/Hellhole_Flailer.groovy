@@ -29,7 +29,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTarget(game, {
                 final MagicPermanent source=event.getPermanent();
-                game.doAction(new MagicDealDamageAction(source,it,source.getPower()));
+                game.doAction(new DealDamageAction(source,it,source.getPower()));
             });
         }
     }

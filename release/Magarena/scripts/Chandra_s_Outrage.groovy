@@ -14,8 +14,8 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTarget(game, {
-                game.doAction(new MagicDealDamageAction(event.getSource(),it,4));
-                game.doAction(new MagicDealDamageAction(event.getSource(),it.getController(),2));
+                game.doAction(new DealDamageAction(event.getSource(),it,4));
+                game.doAction(new DealDamageAction(event.getSource(),it.getController(),2));
             });
         }
     }

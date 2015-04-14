@@ -17,7 +17,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             CREATURE_YOUR_OPPONENT_CONTROLS.filter(event.getPlayer()) each {
-                game.doAction(new MagicDealDamageAction(event.getSource(),it,4));
+                game.doAction(new DealDamageAction(event.getSource(),it,4));
             }
         }
     }

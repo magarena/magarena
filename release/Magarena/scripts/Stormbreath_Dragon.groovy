@@ -14,7 +14,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer opponent = event.getPlayer().getOpponent();
-            game.doAction(new MagicDealDamageAction(
+            game.doAction(new DealDamageAction(
                 event.getSource(),
                 opponent,
                 opponent.getHandSize()

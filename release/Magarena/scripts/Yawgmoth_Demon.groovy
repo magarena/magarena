@@ -22,7 +22,7 @@
                 game.addEvent(sac);
             } else {
                 game.doAction(new MagicTapAction(event.getPermanent()));
-                game.doAction(new MagicDealDamageAction(event.getSource(),player,2));
+                game.doAction(new DealDamageAction(event.getSource(),player,2));
             }
         }
     }

@@ -15,7 +15,7 @@
             event.processTargetPermanent(game, {
                 game.doAction(new MagicDestroyAction(it));
                 if (it.hasType(MagicType.Snow)) {
-                    game.doAction(new MagicDealDamageAction(event.getSource(),it.getController(),1));
+                    game.doAction(new DealDamageAction(event.getSource(),it.getController(),1));
                 }
             });
         }

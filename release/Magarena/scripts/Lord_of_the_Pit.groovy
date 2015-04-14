@@ -18,7 +18,7 @@
             if (sac.isSatisfied()) {
                 game.addEvent(sac);
             } else {
-                game.doAction(new MagicDealDamageAction(permanent,player,7));
+                game.doAction(new DealDamageAction(permanent,player,7));
             }
         }
     }

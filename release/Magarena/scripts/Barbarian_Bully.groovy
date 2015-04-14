@@ -1,7 +1,7 @@
 def action = {
     final MagicGame game, final MagicEvent event ->
     if (event.isYes()) {
-        game.doAction(new MagicDealDamageAction(event.getSource(),event.getPlayer(),4));
+        game.doAction(new DealDamageAction(event.getSource(),event.getPlayer(),4));
     } else {
         game.doAction(new ChangeTurnPTAction(event.getPermanent(),2,2));
     }

@@ -24,7 +24,7 @@
             event.processTargetPlayer(game, {
                 ATTACKING_OR_BLOCKING_CREATURE_YOU_CONTROL.filter(it) each {
                     final MagicPermanent target ->
-                    game.doAction(new MagicDealDamageAction(event.getSource(),target,2));
+                    game.doAction(new DealDamageAction(event.getSource(),target,2));
                 }
             });
         }

@@ -16,7 +16,7 @@
             event.processTargetPermanent(game, {
                 final MagicDamage damage = new MagicDamage(event.getSource(),it,5);
                 damage.setUnpreventable();
-                game.doAction(new MagicDealDamageAction(damage));
+                game.doAction(new DealDamageAction(damage));
             });
         }
     }

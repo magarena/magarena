@@ -16,7 +16,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTarget(game, {
                 final int amount = event.getPlayer().getNrOfPermanents(MagicSubType.Dragon);
-                game.doAction(new MagicDealDamageAction(event.getSource(),it,amount));
+                game.doAction(new DealDamageAction(event.getSource(),it,amount));
             });
         }
     },
@@ -40,7 +40,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTarget(game, {
                 final int amount = event.getPlayer().getNrOfPermanents(MagicSubType.Dragon);
-                game.doAction(new MagicDealDamageAction(event.getRefPermanent(),it,amount));
+                game.doAction(new DealDamageAction(event.getRefPermanent(),it,amount));
             });
         }
     }

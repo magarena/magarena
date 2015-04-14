@@ -16,10 +16,10 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
                 final int amount = event.getCardOnStack().getX();
-                game.doAction(new MagicDealDamageAction(event.getSource(), it, amount));
+                game.doAction(new DealDamageAction(event.getSource(), it, amount));
                 final Collection<MagicPermanent> targets = game.filterPermanents(it, CREATURE_YOU_CONTROL);
                 for (final MagicPermanent target : targets) {
-                    game.doAction(new MagicDealDamageAction(event.getSource(), target, amount));
+                    game.doAction(new DealDamageAction(event.getSource(), target, amount));
                 }
             });
         }

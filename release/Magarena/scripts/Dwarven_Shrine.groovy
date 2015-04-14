@@ -19,7 +19,7 @@
                 .from(MagicTargetType.OpponentsGraveyard)
             ).size();
             game.logAppendMessage(event.getPlayer(),"(X="+amount+")")
-            game.doAction(new MagicDealDamageAction(event.getSource(),event.getPlayer(),amount));
+            game.doAction(new DealDamageAction(event.getSource(),event.getPlayer(),amount));
         }
     }
 ]

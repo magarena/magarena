@@ -13,10 +13,10 @@
             final MagicSource source = event.getSource();
             final int amount = event.getCardOnStack().getX();
             game.filterPermanents(event.getPlayer(), CREATURE_WITH_HORSEMANSHIP) each {
-                game.doAction(new MagicDealDamageAction(source, it, amount));
+                game.doAction(new DealDamageAction(source, it, amount));
             }
             for (final MagicPlayer player : game.getAPNAP()) {
-                game.doAction(new MagicDealDamageAction(source, player, amount));
+                game.doAction(new DealDamageAction(source, player, amount));
             }
         }
     }

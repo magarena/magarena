@@ -19,7 +19,7 @@
             ).size()+2;
             event.processTarget(game, {
                 game.logAppendMessage(event.getPlayer()," (X="+amount+")");
-                game.doAction(new MagicDealDamageAction(event.getSource(),it,amount));
+                game.doAction(new DealDamageAction(event.getSource(),it,amount));
             });
         }
     }

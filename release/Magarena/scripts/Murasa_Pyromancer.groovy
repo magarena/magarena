@@ -23,7 +23,7 @@
             if (event.isYes()) {
                 event.processTargetPermanent(game, {
                     final int amount = event.getPlayer().getNrOfPermanents(MagicSubType.Ally);
-                    game.doAction(new MagicDealDamageAction(event.getPermanent(),it,amount));
+                    game.doAction(new DealDamageAction(event.getPermanent(),it,amount));
                 });
             }
         }

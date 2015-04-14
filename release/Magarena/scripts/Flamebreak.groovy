@@ -15,10 +15,10 @@
             CREATURE_WITHOUT_FLYING.filter(game) each {
                 final MagicDamage damage=new MagicDamage(source,it,3);
                 damage.setNoRegeneration();
-                game.doAction(new MagicDealDamageAction(damage));
+                game.doAction(new DealDamageAction(damage));
             }
             game.getAPNAP() each {
-                game.doAction(new MagicDealDamageAction(source,it,3));
+                game.doAction(new DealDamageAction(source,it,3));
             }
         }
     }

@@ -20,7 +20,7 @@
             if (event.isYes()) {
                 event.processTarget(game, {
                     final MagicPermanent source = event.getRefPermanent();
-                    game.doAction(new MagicDealDamageAction(source, it, source.getPower()));
+                    game.doAction(new DealDamageAction(source, it, source.getPower()));
                 });
             }
         }

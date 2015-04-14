@@ -12,7 +12,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (MagicCondition.THRESHOLD_CONDITION.accept(event.getSource())) {
                 CREATURE_WITHOUT_FLYING.filter(game) each {
-                    game.doAction(new MagicDealDamageAction(event.getSource(),it,5));
+                    game.doAction(new DealDamageAction(event.getSource(),it,5));
                 }
             }
         }

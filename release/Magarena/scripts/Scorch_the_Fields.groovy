@@ -18,7 +18,7 @@
                 game.doAction(new MagicDestroyAction(it));
                 HUMAN_CREATURE.filter(game) each {
                     final MagicPermanent target ->
-                    game.doAction(new MagicDealDamageAction(event.getSource(),target,1));
+                    game.doAction(new DealDamageAction(event.getSource(),target,1));
                 }
             });
         }

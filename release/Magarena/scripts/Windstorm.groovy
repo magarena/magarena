@@ -14,7 +14,7 @@
             final MagicSource source = event.getSource();
             final int amount = event.getCardOnStack().getX();
             CREATURE_WITH_FLYING.filter(game) each {
-                game.doAction(new MagicDealDamageAction(source,it,amount));
+                game.doAction(new DealDamageAction(source,it,amount));
             }
         }
     }

@@ -29,10 +29,10 @@
                 game.filterPermanents(event.getPlayer(),CREATURE);
             game.logAppendMessage(event.getPlayer()," ("+amount+")");
             for (final MagicPermanent creature : creatures) {
-                game.doAction(new MagicDealDamageAction(source,creature,amount));
+                game.doAction(new DealDamageAction(source,creature,amount));
             }
             for (final MagicPlayer player : game.getAPNAP()) {
-                game.doAction(new MagicDealDamageAction(source,player,amount));
+                game.doAction(new DealDamageAction(source,player,amount));
             }
         }
     }

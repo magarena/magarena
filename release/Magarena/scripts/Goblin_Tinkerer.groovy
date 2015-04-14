@@ -26,7 +26,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
                 game.doAction(new MagicDestroyAction(it));
-                game.doAction(new MagicDealDamageAction(it,event.getPermanent(),it.getConvertedCost()));
+                game.doAction(new DealDamageAction(it,event.getPermanent(),it.getConvertedCost()));
             });
         }
     }

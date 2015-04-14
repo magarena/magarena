@@ -18,7 +18,7 @@
             if (event.isYes()) {
                 event.processTargetPermanent(game, {
                     final int X = game.getNrOfPermanents(MagicSubType.Goblin);
-                    game.doAction(new MagicDealDamageAction(event.getSource(),it,X));
+                    game.doAction(new DealDamageAction(event.getSource(),it,X));
                 });
             }
         }

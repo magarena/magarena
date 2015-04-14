@@ -28,7 +28,7 @@
                         ||
                         (card.isToken() && !card.getOwner().getPermanents().contains(it))) {
                         final int amount = event.getPlayer().getNrOfPermanents(MagicSubType.Ally);
-                        game.doAction(new MagicDealDamageAction(event.getPermanent(),card.getOwner(),amount));
+                        game.doAction(new DealDamageAction(event.getPermanent(),card.getOwner(),amount));
                     }
                 });
             }

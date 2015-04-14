@@ -12,7 +12,7 @@
         @Override
         public void executeEvent(final MagicGame game,final MagicEvent event) {
             final int amount = event.getPlayer().getNrOfPermanents(ARTIFACT_YOU_CONTROL);
-            game.doAction(new MagicDealDamageAction(event.getSource(),event.getPlayer(),amount));
+            game.doAction(new DealDamageAction(event.getSource(),event.getPlayer(),amount));
             game.logAppendMessage(event.getPlayer(),"("+amount+")");
         }
     }

@@ -18,7 +18,7 @@
                         CREATURE_YOU_CONTROL);
                 final MagicSource source = event.getSource();
                 for (final MagicPermanent target : targets) {
-                    game.doAction(new MagicDealDamageAction(source,target,1));
+                    game.doAction(new DealDamageAction(source,target,1));
                 }
             });
         }

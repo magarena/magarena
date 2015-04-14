@@ -13,9 +13,9 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                game.doAction(new MagicDealDamageAction(event.getSource(),it,4));
+                game.doAction(new DealDamageAction(event.getSource(),it,4));
                 if (MagicCondition.THRESHOLD_CONDITION.accept(event.getSource())) {
-                    game.doAction(new MagicDealDamageAction(event.getSource(),it.getController(),4));
+                    game.doAction(new DealDamageAction(event.getSource(),it.getController(),4));
                 }
             });
         }

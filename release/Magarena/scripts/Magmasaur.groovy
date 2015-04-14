@@ -20,14 +20,14 @@
                 final int amt = event.getPermanent().getCounters(MagicCounterType.PlusOne)
                 game.doAction(new MagicSacrificeAction(event.getPermanent()));
                 for (final MagicPermanent target : game.filterPermanents(CREATURE_WITHOUT_FLYING)) {
-                    game.doAction(new MagicDealDamageAction(
+                    game.doAction(new DealDamageAction(
                         event.getSource(),
                         target,
                         amt
                     ));
                 }
                 for (final MagicPlayer player : game.getAPNAP()) {
-                    game.doAction(new MagicDealDamageAction(
+                    game.doAction(new DealDamageAction(
                         event.getSource(),
                         player,
                         amt

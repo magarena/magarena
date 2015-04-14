@@ -13,7 +13,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
                 final int amount = event.getPlayer().getHandSize() - it.getHandSize();
-                game.doAction(new MagicDealDamageAction(event.getPermanent(),it,amount));
+                game.doAction(new DealDamageAction(event.getPermanent(),it,amount));
             });
         }
     }

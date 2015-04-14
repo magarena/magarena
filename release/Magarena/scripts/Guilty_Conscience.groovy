@@ -10,7 +10,7 @@
                     enchantedCreature,
                     {
                         final MagicGame G, final MagicEvent E ->
-                        G.doAction(new MagicDealDamageAction(E.getSource(),E.getRefPermanent(),amount));
+                        G.doAction(new DealDamageAction(E.getSource(),E.getRefPermanent(),amount));
                     },
                     "SN deals ${amount} damage to RN."
                 ):

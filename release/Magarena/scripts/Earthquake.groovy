@@ -12,10 +12,10 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             CREATURE_WITHOUT_FLYING.filter(game) each {
-                game.doAction(new MagicDealDamageAction(event.getSource(),it,event.getRefInt()));
+                game.doAction(new DealDamageAction(event.getSource(),it,event.getRefInt()));
             }
             game.getAPNAP() each {
-                game.doAction(new MagicDealDamageAction(event.getSource(),it,event.getRefInt()));
+                game.doAction(new DealDamageAction(event.getSource(),it,event.getRefInt()));
             }
         }
     }

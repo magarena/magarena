@@ -29,8 +29,8 @@
                 final MagicPermanent permanent = event.getPermanent();
                 final int amount = it.getPower();
                 game.logAppendMessage(event.getPlayer()," ("+amount+")");
-                game.doAction(new MagicDealDamageAction(permanent,it,permanent.getPower()));
-                game.doAction(new MagicDealDamageAction(it,permanent,amount));
+                game.doAction(new DealDamageAction(permanent,it,permanent.getPower()));
+                game.doAction(new DealDamageAction(it,permanent,amount));
             });
         }
     }

@@ -23,7 +23,7 @@
             game.doAction(sac);
             if (sac.isValid()) {
                 for (final MagicPermanent blocker : blockingCreatures) {
-                    game.doAction(new MagicDealDamageAction(goblin, blocker, 4));
+                    game.doAction(new DealDamageAction(goblin, blocker, 4));
                 }
             }
         }

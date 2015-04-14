@@ -14,7 +14,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
-                game.doAction(new MagicDealDamageAction(event.getSource(), event.getPlayer(), 6));
+                game.doAction(new DealDamageAction(event.getSource(), event.getPlayer(), 6));
             } else {
                 final Collection<MagicPermanent> targets = game.filterPermanents(CREATURE);
                 for (final MagicPermanent target : targets) {

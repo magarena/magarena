@@ -14,7 +14,7 @@
             final Collection<MagicPermanent> targets = game.filterPermanents(NONBLACK_CREATURE);
             final MagicDestroyAction destroy = new MagicDestroyAction(targets);
             game.doAction(destroy);
-            game.doAction(new MagicDealDamageAction(event.getSource(),event.getPlayer(),destroy.getNumDestroyed() + 3));
+            game.doAction(new DealDamageAction(event.getSource(),event.getPlayer(),destroy.getNumDestroyed() + 3));
         }
     }
 ]

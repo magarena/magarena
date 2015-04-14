@@ -24,7 +24,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.filterPermanents(CREATURE_WITH_FLYING) each {
-                game.doAction(new MagicDealDamageAction(event.getSource(), it, event.getRefInt()));
+                game.doAction(new DealDamageAction(event.getSource(), it, event.getRefInt()));
             }
         }
     },
@@ -57,7 +57,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                game.doAction(new MagicDealDamageAction(event.getSource(),it,event.getRefInt()));
+                game.doAction(new DealDamageAction(event.getSource(),it,event.getRefInt()));
             });
         }
     }

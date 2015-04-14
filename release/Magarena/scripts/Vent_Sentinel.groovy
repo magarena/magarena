@@ -26,7 +26,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
                 final int amount = event.getPlayer().getNrOfPermanents(CREATURE_WITH_DEFENDER_YOU_CONTROL);
-                game.doAction(new MagicDealDamageAction(event.getSource(),it,amount));
+                game.doAction(new DealDamageAction(event.getSource(),it,amount));
                 game.logAppendMessage(event.getPlayer(),"("+amount+")");
             });
         }

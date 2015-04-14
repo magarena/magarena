@@ -16,7 +16,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final int amount = event.getCardOnStack().getX();
             event.processTarget(game, {
-                game.doAction(new MagicDealDamageAction(event.getSource(),it,amount));
+                game.doAction(new DealDamageAction(event.getSource(),it,amount));
                 game.doAction(new ChangeLifeAction(event.getPlayer(),amount));
             });
         }

@@ -14,7 +14,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final int amount = event.getPlayer().getNrOfPermanents(ATTACKING_CREATURE);
             event.processTargetPermanent(game, {
-                game.doAction(new MagicDealDamageAction(event.getSource(),it,amount));
+                game.doAction(new DealDamageAction(event.getSource(),it,amount));
             });
         }
     }

@@ -27,7 +27,7 @@
             event.processTarget(game, {
                 final MagicPermanent sacrificed=event.getRefPermanent();
                 if (sacrificed.hasColor(MagicColor.Red)) {
-                    game.doAction(new MagicDealDamageAction(event.getSource(),it,2));
+                    game.doAction(new DealDamageAction(event.getSource(),it,2));
                 }
                 if (sacrificed.hasColor(MagicColor.Black)) { 
                     game.doAction(new MagicDrawAction(event.getPlayer(),1));

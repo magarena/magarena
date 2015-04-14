@@ -21,7 +21,7 @@
                 game.doAction(new MagicDrawAction(event.getPlayer(),X));
             } else if (event.isMode(2)) {
                 event.processTarget(game, {
-                    game.doAction(new MagicDealDamageAction(event.getSource(),it,X));
+                    game.doAction(new DealDamageAction(event.getSource(),it,X));
                 });
             }
         }

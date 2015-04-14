@@ -15,7 +15,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTarget(game, {
                 final int amount = event.getPlayer().getNrOfPermanents(MagicSubType.Shrine);
-                game.doAction(new MagicDealDamageAction(event.getSource(),it,amount));
+                game.doAction(new DealDamageAction(event.getSource(),it,amount));
             });
         }
     }

@@ -17,7 +17,7 @@ def choice = Negative("target non-Swamp land");
             event.processTargetPermanent(game, {
                 game.doAction(new MagicDestroyAction(it));
                 if (it.isBasic() == false) {
-                    game.doAction(new MagicDealDamageAction(
+                    game.doAction(new DealDamageAction(
                         event.getSource(),
                         it.getController(),
                         2

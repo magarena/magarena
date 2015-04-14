@@ -19,7 +19,7 @@
             final int X = event.getRefInt();
             if (event.isMode(1)) {
                 event.processTargetPlayer(game, {
-                    game.doAction(new MagicDealDamageAction(event.getSource(),it,X));
+                    game.doAction(new DealDamageAction(event.getSource(),it,X));
                 });
             } else if (event.isMode(2)) {
                 event.processTargetPlayer(game, {

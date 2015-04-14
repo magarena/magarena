@@ -16,7 +16,7 @@
             event.processTarget(game, {
                 final int amount = game.getNrOfPermanents(MagicSubType.Cleric);
                 game.logAppendMessage(event.getPlayer()," (X="+amount+")");
-                game.doAction(new MagicDealDamageAction(event.getSource(),it,amount));
+                game.doAction(new DealDamageAction(event.getSource(),it,amount));
                 game.doAction(new ChangeLifeAction(event.getPlayer(),amount));
             });
         }

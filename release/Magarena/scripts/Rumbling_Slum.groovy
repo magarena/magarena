@@ -12,7 +12,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicSource source=event.getSource();
             for (final MagicPlayer player : game.getAPNAP()) {
-                game.doAction(new MagicDealDamageAction(source,player,1));
+                game.doAction(new DealDamageAction(source,player,1));
             }
         }
     }

@@ -17,7 +17,7 @@
             event.processTarget(game, {
                 final MagicDamage damage=new MagicDamage(event.getSource(),it,4);
                 damage.setNoRegeneration();
-                game.doAction(new MagicDealDamageAction(damage));
+                game.doAction(new DealDamageAction(damage));
                 game.addEvent(new MagicScryEvent(event));
             });
         }

@@ -14,7 +14,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTarget(game, {
-                game.doAction(new MagicDealDamageAction(event.getSource(),it,3));
+                game.doAction(new DealDamageAction(event.getSource(),it,3));
             });
             event.processTargetPermanent(game, {
                 game.doAction(ChangeStateAction.Set(it,MagicPermanentState.CannotBeRegenerated));

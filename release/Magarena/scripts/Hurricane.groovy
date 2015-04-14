@@ -16,10 +16,10 @@
             final Collection<MagicPermanent> targets=
                 game.filterPermanents(event.getPlayer(),CREATURE_WITH_FLYING);
             for (final MagicPermanent target : targets) {
-                game.doAction(new MagicDealDamageAction(source,target,amount));
+                game.doAction(new DealDamageAction(source,target,amount));
             }
             for (final MagicPlayer player : game.getAPNAP()) {
-                game.doAction(new MagicDealDamageAction(source,player,amount));
+                game.doAction(new DealDamageAction(source,player,amount));
             }
         }
     }

@@ -14,7 +14,7 @@
             final MagicPlayer player = event.getPlayer();
             final int amount = player.getNrOfPermanents(MagicSubType.Goblin);
             event.processTarget(game, {
-                game.doAction(new MagicDealDamageAction(event.getSource(),it,amount));
+                game.doAction(new DealDamageAction(event.getSource(),it,amount));
             });
         }
     }

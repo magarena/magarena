@@ -29,7 +29,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game,{
                 final int X = event.getPlayer().getNrOfPermanents(MagicSubType.Merfolk);
-                game.doAction(new MagicDealDamageAction(event.getSource(),it,X));
+                game.doAction(new DealDamageAction(event.getSource(),it,X));
             });
         }
     }

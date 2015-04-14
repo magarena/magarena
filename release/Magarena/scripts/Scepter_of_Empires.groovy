@@ -30,7 +30,7 @@
             final MagicPlayer player = source.getController();
             final int amount = (player.controlsPermanent(crown) && player.controlsPermanent(throne))? 3 : 1;
             event.processTarget(game, {
-                game.doAction(new MagicDealDamageAction(source,it,amount));
+                game.doAction(new DealDamageAction(source,it,amount));
             });
         }
     }

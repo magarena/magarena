@@ -24,7 +24,7 @@
             CREATURE_WITHOUT_FLYING
             .except(permanent)
             .filter(game) each {
-                game.doAction(new MagicDealDamageAction(permanent, it, 1));
+                game.doAction(new DealDamageAction(permanent, it, 1));
             }
         }
     }

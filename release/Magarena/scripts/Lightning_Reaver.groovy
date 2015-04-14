@@ -17,7 +17,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPermanent permanent=event.getPermanent();
             final int amount=permanent.getCounters(MagicCounterType.Charge);
-            game.doAction(new MagicDealDamageAction(permanent,event.getPlayer(),amount));
+            game.doAction(new DealDamageAction(permanent,event.getPlayer(),amount));
         }
     }
 ]

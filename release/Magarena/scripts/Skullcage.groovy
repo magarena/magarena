@@ -16,7 +16,7 @@
             final MagicPlayer opponent=event.getPlayer();
             final int amount=opponent.getHandSize();
             if (amount < 3 || amount > 4) {
-                game.doAction(new MagicDealDamageAction(event.getSource(),opponent,2));
+                game.doAction(new DealDamageAction(event.getSource(),opponent,2));
             }
         }
     }

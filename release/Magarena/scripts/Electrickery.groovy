@@ -19,7 +19,7 @@
             final Collection<MagicPermanent> targets=
                 game.filterPermanents(event.getPlayer(),CREATURE_YOUR_OPPONENT_CONTROLS);
             for (final MagicPermanent target : targets) {
-                game.doAction(new MagicDealDamageAction(event.getSource(),target,1));
+                game.doAction(new DealDamageAction(event.getSource(),target,1));
             }
         }
     }

@@ -15,7 +15,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer targetPlayer=event.getRefPlayer();
-            game.doAction(new MagicDealDamageAction(event.getSource(),targetPlayer,targetPlayer.getHandSize()));
+            game.doAction(new DealDamageAction(event.getSource(),targetPlayer,targetPlayer.getHandSize()));
             final MagicPlayer player=event.getPlayer();
             game.doAction(new ChangeLifeAction(player,player.getHandSize()));
         }

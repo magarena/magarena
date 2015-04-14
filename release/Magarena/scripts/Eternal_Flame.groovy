@@ -15,8 +15,8 @@
             final int amount = player.getNrOfPermanents(MagicSubType.Mountain);
             final int halfAmount = (int)Math.ceil(amount/2);
             event.processTarget(game, {
-                game.doAction(new MagicDealDamageAction(event.getSource(),it,amount));
-                game.doAction(new MagicDealDamageAction(event.getSource(),event.getPlayer(),halfAmount));
+                game.doAction(new DealDamageAction(event.getSource(),it,amount));
+                game.doAction(new DealDamageAction(event.getSource(),event.getPlayer(),halfAmount));
             });
         }
     }

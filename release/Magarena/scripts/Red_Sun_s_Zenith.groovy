@@ -20,7 +20,7 @@
             int dealtDamage = 0;
             event.processTarget(game, {
                 final MagicDamage damage=new MagicDamage(event.getSource(),it,amount);
-                game.doAction(new MagicDealDamageAction(damage));
+                game.doAction(new DealDamageAction(damage));
                 dealtDamage = damage.getDealtAmount();
                 game.doAction(new ChangeCardDestinationAction(event.getCardOnStack(),MagicLocationType.OwnersLibrary));
             });

@@ -16,7 +16,7 @@
             int dealtDamage = 0;
             event.processTarget(game, {
                 final MagicDamage damage = new MagicDamage(event.getSource(),it,2);
-                game.doAction(new MagicDealDamageAction(damage));
+                game.doAction(new DealDamageAction(damage));
                 dealtDamage = damage.getDealtAmount();
             });
             event.processTargetPermanent(game, {

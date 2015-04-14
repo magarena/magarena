@@ -15,7 +15,7 @@
                 final int amount = it.getNrOfPermanents(WHITE_CREATURE) * 2;
                 game.logAppendMessage(event.getPlayer()," (X="+amount+")");
                 if (amount>0) {
-                    game.doAction(new MagicDealDamageAction(event.getSource(),it,amount));
+                    game.doAction(new DealDamageAction(event.getSource(),it,amount));
                 }
             });
         }

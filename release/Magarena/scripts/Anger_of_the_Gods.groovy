@@ -13,7 +13,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.filterPermanents(event.getPlayer(), CREATURE) each {
                 final MagicDamage damage=new MagicDamage(event.getSource(), it, 3);
-                game.doAction(new MagicDealDamageAction(damage));
+                game.doAction(new DealDamageAction(damage));
                 if (damage.getDealtAmount() > 0) {
                     game.doAction(new AddTurnTriggerAction(it, MagicWhenSelfLeavesPlayTrigger.IfDieExileInstead));
                 }

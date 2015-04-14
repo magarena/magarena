@@ -38,7 +38,7 @@ def SAC_ACTION = {
                 game.addEvent(sac);
             } else {
                 game.doAction(new MagicSacrificeAction(SN));
-                game.doAction(new MagicDealDamageAction(SN, PN, 7));
+                game.doAction(new DealDamageAction(SN, PN, 7));
             }
         }
     },
@@ -69,12 +69,12 @@ def SAC_ACTION = {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                game.doAction(new MagicDealDamageAction(
+                game.doAction(new DealDamageAction(
                     event.getPermanent(),
                     it,
                     event.getPermanent().getPower()
                 ));
-                game.doAction(new MagicDealDamageAction(
+                game.doAction(new DealDamageAction(
                     it,
                     event.getPermanent(),
                     it.getPower()

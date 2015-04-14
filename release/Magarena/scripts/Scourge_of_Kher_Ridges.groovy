@@ -23,7 +23,7 @@
             CREATURE_WITH_FLYING
             .except(event.getPermanent())
             .filter(game) each {
-                game.doAction(new MagicDealDamageAction(event.getPermanent(),it,6));
+                game.doAction(new DealDamageAction(event.getPermanent(),it,6));
             }
         }
     }

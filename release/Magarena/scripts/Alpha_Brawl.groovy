@@ -19,10 +19,10 @@
                 final MagicTargetFilter<MagicPermanent> filter = CREATURE_YOU_CONTROL.except(it);
                 final Collection<MagicPermanent> creatures = game.filterPermanents(it.getController(),filter);
                 for (final MagicPermanent creature : creatures) {
-                    game.doAction(new MagicDealDamageAction(it,creature,it.getPower()));
+                    game.doAction(new DealDamageAction(it,creature,it.getPower()));
                 }
                 for (final MagicPermanent creature : creatures) {
-                    game.doAction(new MagicDealDamageAction(creature,it,creature.getPower()));
+                    game.doAction(new DealDamageAction(creature,it,creature.getPower()));
                 }
             });
         }

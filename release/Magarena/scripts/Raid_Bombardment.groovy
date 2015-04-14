@@ -13,7 +13,7 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicDealDamageAction(
+            game.doAction(new DealDamageAction(
                 event.getSource(),
                 event.getPlayer(),
                 1

@@ -3,7 +3,7 @@ def action = {
     event.processTarget(game, {
         final int manaCost = event.getRefInt();
         game.logAppendMessage(event.getPlayer()," ("+manaCost+")");
-        game.doAction(new MagicDealDamageAction(event.getSource(),it,manaCost));
+        game.doAction(new DealDamageAction(event.getSource(),it,manaCost));
     });
 }
 

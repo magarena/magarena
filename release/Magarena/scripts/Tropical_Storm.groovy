@@ -18,10 +18,10 @@
             final Collection<MagicPermanent> blueTargets=
                 game.filterPermanents(event.getPlayer(),BLUE_CREATURE);
             for (final MagicPermanent target : targets) {
-                game.doAction(new MagicDealDamageAction(source,target,amount));
+                game.doAction(new DealDamageAction(source,target,amount));
             }
             for (final MagicPermanent target : blueTargets) {
-                game.doAction(new MagicDealDamageAction(source,target,1));
+                game.doAction(new DealDamageAction(source,target,1));
             }
         }
     }

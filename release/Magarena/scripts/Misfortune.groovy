@@ -28,7 +28,7 @@
                 for (final MagicPermanent creature : targets) {         
                     game.doAction(new ChangeCountersAction(creature, MagicCounterType.MinusOne, 1));
                 }
-                game.doAction(new MagicDealDamageAction(event.getSource(), event.getPlayer(), 4));
+                game.doAction(new DealDamageAction(event.getSource(), event.getPlayer(), 4));
             }
         }
     }

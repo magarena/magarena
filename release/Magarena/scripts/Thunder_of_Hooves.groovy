@@ -14,10 +14,10 @@
             final int amount = game.getNrOfPermanents(MagicSubType.Beast);
             game.logAppendMessage(event.getPlayer()," (X="+amount+")");
             CREATURE_WITHOUT_FLYING.filter(game) each {
-                game.doAction(new MagicDealDamageAction(source,it,amount));
+                game.doAction(new DealDamageAction(source,it,amount));
             }
             game.getAPNAP() each {
-                game.doAction(new MagicDealDamageAction(source,it,amount)); 
+                game.doAction(new DealDamageAction(source,it,amount)); 
             }
         }
     }

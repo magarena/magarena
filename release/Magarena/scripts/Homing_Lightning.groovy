@@ -20,7 +20,7 @@
                 );
                 targetFilter.filter(game) each {
                     final MagicPermanent creature ->
-                    game.doAction(new MagicDealDamageAction(event.getSource(),creature,4));
+                    game.doAction(new DealDamageAction(event.getSource(),creature,4));
                 }
             });
         }

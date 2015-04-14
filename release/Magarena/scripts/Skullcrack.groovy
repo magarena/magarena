@@ -33,7 +33,7 @@ def cantBePrevented = new MagicIfDamageWouldBeDealtTrigger() {
             event.processTargetPlayer(game, {
                 game.doAction(new AddTurnTriggerAction(cantGainLife));
                 game.doAction(new AddTurnTriggerAction(cantBePrevented));
-                game.doAction(new MagicDealDamageAction(event.getSource(),it,3));
+                game.doAction(new DealDamageAction(event.getSource(),it,3));
             });
         }
     }

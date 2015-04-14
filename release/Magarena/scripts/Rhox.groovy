@@ -19,7 +19,7 @@
                     game.getDefendingPlayer(),
                     permanent.getPower()
                 );
-                game.doAction(new MagicDealDamageAction(damage));
+                game.doAction(new DealDamageAction(damage));
                 game.doAction(ChangeStateAction.Set(
                     permanent,
                     MagicPermanentState.NoCombatDamage

@@ -21,7 +21,7 @@
             if (event.isYes()) {
                 event.processTarget(game, {
                     final MagicPayManaCostResult payedManaCost = event.getPaidMana();
-                    game.doAction(new MagicDealDamageAction(event.getPermanent(),it,payedManaCost.getX()));
+                    game.doAction(new DealDamageAction(event.getPermanent(),it,payedManaCost.getX()));
                 });
             }
         }

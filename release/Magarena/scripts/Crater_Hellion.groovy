@@ -12,7 +12,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPermanent permanent = event.getPermanent();
             CREATURE.except(permanent).filter(game) each {
-                game.doAction(new MagicDealDamageAction(permanent,it,4));
+                game.doAction(new DealDamageAction(permanent,it,4));
             }
         }
     }

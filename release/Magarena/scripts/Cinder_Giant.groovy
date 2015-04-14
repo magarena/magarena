@@ -14,7 +14,7 @@
             final MagicPermanent creature = event.getPermanent();
             final MagicTargetFilter<MagicPermanent> filter = CREATURE_YOU_CONTROL.except(creature);
             game.filterPermanents(event.getPlayer(),filter) each {
-                game.doAction(new MagicDealDamageAction(creature,it,2));
+                game.doAction(new DealDamageAction(creature,it,2));
             }
         }
     }

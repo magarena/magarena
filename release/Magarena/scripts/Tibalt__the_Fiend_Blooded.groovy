@@ -29,7 +29,7 @@
             event.processTargetPlayer(game, {
                 final int amount=it.getHandSize();
                 game.logAppendMessage(event.getPlayer()," ("+amount+")");
-                game.doAction(new MagicDealDamageAction(event.getSource(),it,amount));
+                game.doAction(new DealDamageAction(event.getSource(),it,amount));
             });
         }
     },

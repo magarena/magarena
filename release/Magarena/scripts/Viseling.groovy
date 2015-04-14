@@ -15,7 +15,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
             final int amount = player.getHandSize() - 4;
-            game.doAction(new MagicDealDamageAction( event.getSource(),player,amount));
+            game.doAction(new DealDamageAction( event.getSource(),player,amount));
         }
     }
 ]

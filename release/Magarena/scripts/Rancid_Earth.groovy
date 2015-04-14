@@ -16,10 +16,10 @@
                 game.doAction(new MagicDestroyAction(it));
                 if (MagicCondition.THRESHOLD_CONDITION.accept(event.getSource())) {
                     CREATURE.filter(game) each {
-                        game.doAction(new MagicDealDamageAction(event.getSource(),it,1));
+                        game.doAction(new DealDamageAction(event.getSource(),it,1));
                     }
                     game.getAPNAP() each {
-                        game.doAction(new MagicDealDamageAction(event.getSource(),it,1));
+                        game.doAction(new DealDamageAction(event.getSource(),it,1));
                     }
                 }
             });
