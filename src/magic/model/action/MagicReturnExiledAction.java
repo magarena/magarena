@@ -19,7 +19,7 @@ public class MagicReturnExiledAction extends MagicAction {
                 final MagicPlayer owner=card.getOwner();
                 if (owner.getExile().contains(card)) {
                     game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Exile));
-                    game.doAction(new MagicPlayCardAction(card,owner));
+                    game.doAction(new PlayCardAction(card,owner));
                     game.logMessage(
                             owner,
                             "Return "+card.getName()+" to the battlefield under its owner's control (end of turn).");

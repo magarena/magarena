@@ -211,7 +211,7 @@ public enum MagicRuleEventAction {
                 final MagicRemoveCardAction removeCard = new MagicRemoveCardAction(it.getCard(), MagicLocationType.Exile);
                 game.doAction(removeCard);
                 if (removeCard.isValid()) {
-                    game.doAction(new MagicPlayCardAction(
+                    game.doAction(new PlayCardAction(
                         it.getCard(),
                         event.getPlayer()
                     ));
@@ -237,7 +237,7 @@ public enum MagicRuleEventAction {
                         final MagicRemoveCardAction removeCard = new MagicRemoveCardAction(it.getCard(), MagicLocationType.Exile);
                         game.doAction(removeCard);
                         if (removeCard.isValid()) {
-                            game.doAction(new MagicPlayCardAction(
+                            game.doAction(new PlayCardAction(
                                 it.getCard(),
                                 event.getPlayer()
                             ));
@@ -262,7 +262,7 @@ public enum MagicRuleEventAction {
                 final MagicRemoveCardAction removeCard = new MagicRemoveCardAction(it.getCard(), MagicLocationType.Exile);
                 game.doAction(removeCard);
                 if (removeCard.isValid()) {
-                    game.doAction(new MagicPlayCardAction(
+                    game.doAction(new PlayCardAction(
                         it.getCard(),
                         it.getOwner()
                     ));
@@ -288,7 +288,7 @@ public enum MagicRuleEventAction {
                         final MagicRemoveCardAction removeCard = new MagicRemoveCardAction(it.getCard(), MagicLocationType.Exile);
                         game.doAction(removeCard);
                         if (removeCard.isValid()) {
-                            game.doAction(new MagicPlayCardAction(
+                            game.doAction(new PlayCardAction(
                                 it.getCard(),
                                 it.getOwner()
                             ));

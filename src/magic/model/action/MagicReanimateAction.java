@@ -30,7 +30,7 @@ public class MagicReanimateAction extends MagicAction {
     public void doAction(final MagicGame game) {
         if (card.isInGraveyard()) {
             game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard));
-            game.doAction(new MagicPlayCardAction(card,controller,modifications));
+            game.doAction(new PlayCardAction(card,controller,modifications));
         }
     }
     

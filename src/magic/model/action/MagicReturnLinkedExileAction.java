@@ -48,7 +48,7 @@ public class MagicReturnLinkedExileAction extends MagicAction {
             if (card.isInExile()) {
                 game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Exile));
                 if (location == MagicLocationType.Play) {
-                    game.doAction(new MagicPlayCardAction(
+                    game.doAction(new PlayCardAction(
                         card,
                         controller.isValid() ? controller : card.getOwner(),
                         modifications

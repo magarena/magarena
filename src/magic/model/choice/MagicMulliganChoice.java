@@ -10,7 +10,7 @@ import magic.model.MagicSource;
 import magic.model.MagicType;
 import magic.model.condition.MagicCondition;
 import magic.model.MagicPayedCost;
-import magic.model.action.MagicPlayCardAction;
+import magic.model.action.PlayCardAction;
 import magic.model.event.MagicEvent;
 import magic.model.phase.MagicMainPhase;
 import magic.exception.UndoClickedException;
@@ -83,7 +83,7 @@ public class MagicMulliganChoice extends MagicChoice {
         for (final MagicCard card : assumedPlayer.getHand()) {
             if (card.hasType(MagicType.Land)) {
                 numLands++;
-                assumedGame.doAction(new MagicPlayCardAction(card, assumedPlayer));
+                assumedGame.doAction(new PlayCardAction(card, assumedPlayer));
             }
         }
 

@@ -11,31 +11,31 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-public class MagicPlayCardAction extends MagicAction {
+public class PlayCardAction extends MagicAction {
 
     protected final MagicCard card;
     protected final MagicPlayer controller;
     protected final List<? extends MagicPermanentAction> modifications;
 
-    public MagicPlayCardAction(final MagicCard aCard, final MagicPlayer aController,final List<? extends MagicPermanentAction> aModifications) {
+    public PlayCardAction(final MagicCard aCard, final MagicPlayer aController,final List<? extends MagicPermanentAction> aModifications) {
         card = aCard;
         controller = aController;
         modifications = aModifications;
     }
     
-    public MagicPlayCardAction(final MagicCard aCard, final MagicPlayer aController,final MagicPermanentAction... aModifications) {
+    public PlayCardAction(final MagicCard aCard, final MagicPlayer aController,final MagicPermanentAction... aModifications) {
         this(aCard, aController, Arrays.asList(aModifications));
     }
     
-    public MagicPlayCardAction(final MagicCard card, final MagicPlayer player) {
+    public PlayCardAction(final MagicCard card, final MagicPlayer player) {
         this(card, player, Collections.<MagicPermanentAction>emptyList());
     }
     
-    public MagicPlayCardAction(final MagicCard card, final List<? extends MagicPermanentAction> modifications) {
+    public PlayCardAction(final MagicCard card, final List<? extends MagicPermanentAction> modifications) {
         this(card, card.getController(), modifications);
     }
     
-    public MagicPlayCardAction(final MagicCard card) {
+    public PlayCardAction(final MagicCard card) {
         this(card, card.getController(), Collections.<MagicPermanentAction>emptyList());
     }
 

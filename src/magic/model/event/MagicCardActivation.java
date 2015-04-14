@@ -10,7 +10,7 @@ import magic.model.MagicSource;
 import magic.model.MagicPermanent;
 import magic.model.MagicManaCost;
 import magic.model.MagicCostManaType;
-import magic.model.action.MagicPlayCardAction;
+import magic.model.action.PlayCardAction;
 import magic.model.action.MagicPutItemOnStackAction;
 import magic.model.action.MagicRemoveCardAction;
 import magic.model.choice.MagicChoice;
@@ -89,7 +89,7 @@ public class MagicCardActivation extends MagicActivation<MagicCard> implements M
                     cardOnStack.setFromLocation(fromLocation);
                     game.doAction(new MagicPutItemOnStackAction(cardOnStack));
                 } else {
-                    game.doAction(new MagicPlayCardAction(card,card.getController()));
+                    game.doAction(new PlayCardAction(card,card.getController()));
                 }
             }
         };

@@ -8,7 +8,7 @@ import magic.model.MagicPayedCost;
 import magic.model.event.MagicPlayCardEvent;
 import magic.model.stack.MagicCardOnStack;
 
-public class ManifestCardAction extends MagicPlayCardAction {
+public class ManifestCardAction extends PlayCardAction {
 
     public ManifestCardAction(final MagicCard card, final MagicPlayer player) {
         super(card, player, MagicPlayMod.MANIFEST);

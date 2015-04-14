@@ -8,7 +8,7 @@ import magic.model.MagicLocationType;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.action.MoveCardAction;
-import magic.model.action.MagicPlayCardAction;
+import magic.model.action.PlayCardAction;
 import magic.model.action.MagicRemoveCardAction;
 import magic.model.action.MagicRevealAction;
 import magic.model.event.MagicEvent;
@@ -52,7 +52,7 @@ public abstract class MagicWhenPutIntoGraveyardTrigger extends MagicTrigger<Move
                 act.from(MagicLocationType.OwnersHand) &&
                 act.to(MagicLocationType.Graveyard)) {
                 act.setToLocation(MagicLocationType.Play);
-                game.doAction(new MagicPlayCardAction(card));
+                game.doAction(new PlayCardAction(card));
             }
             return MagicEvent.NONE;
         }

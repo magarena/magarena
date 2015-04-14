@@ -6,7 +6,7 @@ import magic.model.MagicLocationType;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.action.MagicCardAction;
-import magic.model.action.MagicPlayCardAction;
+import magic.model.action.PlayCardAction;
 import magic.model.action.MagicPlayMod;
 import magic.model.action.MagicRemoveCardAction;
 import magic.model.action.MagicShuffleLibraryAction;
@@ -60,7 +60,7 @@ public class MagicSearchOntoBattlefieldEvent extends MagicEvent {
                         public void doAction(final MagicCard card) {
                             game.logAppendMessage(event.getPlayer(), "Found (" + card + ").");
                             game.doAction(new MagicRemoveCardAction(card,MagicLocationType.OwnersLibrary));
-                            game.doAction(new MagicPlayCardAction(card,event.getPlayer(),mods));
+                            game.doAction(new PlayCardAction(card,event.getPlayer(),mods));
                         }
                     });
                     game.doAction(new MagicShuffleLibraryAction(event.getPlayer()));
@@ -69,7 +69,7 @@ public class MagicSearchOntoBattlefieldEvent extends MagicEvent {
                         public void doAction(final MagicCard card) {
                             game.logAppendMessage(event.getPlayer(), "Found (" + card + ").");
                             game.doAction(new MagicRemoveCardAction(card,MagicLocationType.OwnersLibrary));
-                            game.doAction(new MagicPlayCardAction(card,event.getPlayer(),mods));
+                            game.doAction(new PlayCardAction(card,event.getPlayer(),mods));
                         }
                     });
                     game.doAction(new MagicShuffleLibraryAction(event.getPlayer()));
