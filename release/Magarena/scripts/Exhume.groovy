@@ -1,14 +1,12 @@
-def EVENT_ACTION = new MagicEventAction() {
-    @Override
-    public void executeEvent(final MagicGame game, final MagicEvent event) {
-        event.processTargetCard(game, {
-            game.doAction(new ReanimateAction(
-                it,
-                event.getPlayer()
-            ));
-        });
-    }
-};
+def EVENT_ACTION = {
+    final MagicGame game, final MagicEvent event ->
+    event.processTargetCard(game, {
+        game.doAction(new ReanimateAction(
+            it,
+            event.getPlayer()
+        ));
+    });
+}
 
 [
     new MagicSpellCardEvent() {
