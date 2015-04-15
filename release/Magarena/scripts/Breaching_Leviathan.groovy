@@ -13,8 +13,8 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             NONBLUE_CREATURE.filter(game) each {
-                game.doAction(new MagicTapAction(it));
-                game.doAction(MagicChangeStateAction.Set(
+                game.doAction(new TapAction(it));
+                game.doAction(ChangeStateAction.Set(
                     it,
                     MagicPermanentState.DoesNotUntapDuringNext
                 ));     
