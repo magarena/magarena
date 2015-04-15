@@ -4,6 +4,7 @@ value=4.500
 rarity=C
 type=Sorcery
 cost={1}{B}
+ability=Cast SN with AI only if there is a creature card in a graveyard.
 timing=main
 requires_groovy_code
 oracle=Each player puts a creature card from his or her graveyard onto the battlefield.
