@@ -31,6 +31,7 @@
                     MagicLocationType.Graveyard,
                     MagicLocationType.BottomOfOwnersLibrary
                 ));
+                game.logAppendMessage(event.getPlayer()," ("+top.getName()+")");
             }
         }
     }
