@@ -24,7 +24,7 @@ public class MayChoicePanel extends JPanel implements ActionListener {
 
     private static final long serialVersionUID = 1L;
 
-    private static final Dimension BUTTON_DIMENSION=new Dimension(100,35);
+    private static final Dimension BUTTON_DIMENSION=new Dimension(90,35);
 
     private final SwingGameController controller;
     private final JButton yesButton;
