@@ -86,6 +86,14 @@ public abstract class TestGameBuilder {
         }
         return lastPermanent;
     }
+    
+    public static MagicPermanent createPermanent(final MagicGame game,final MagicPlayer player,final String name,final int amount){
+        return createPermanent(game,player,name,false,amount);
+    }
+    
+    public static MagicPermanent createPermanent(final MagicGame game,final MagicPlayer player,final String name){
+        return createPermanent(game,player,name,false,1);
+    }
 
     protected abstract MagicGame getGame();
 
