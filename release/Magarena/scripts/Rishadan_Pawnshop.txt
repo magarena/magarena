@@ -4,6 +4,6 @@ value=2.500
 rarity=R
 type=Artifact
 cost={2}
-ability={2}, {T}: Shuffle target nontoken permanent you control into its owner's library.
-timing=main
+timing=artifact
+requires_groovy_code
 oracle={2}, {T}: Shuffle target nontoken permanent you control into its owner's library.
