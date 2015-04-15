@@ -461,6 +461,7 @@ public class SwingGameController implements IUIGameController, ILogBookListener 
                 clearDisplayedValidChoices();
             }
         });
+        showMessage(MagicSource.NONE, "");
     }
     
     private void clearDisplayedValidChoices() {
@@ -469,7 +470,6 @@ public class SwingGameController implements IUIGameController, ILogBookListener 
             validChoices.clear();
             combatChoice=false;
             showValidChoices();
-            showMessage(MagicSource.NONE, "");
         }
     }
 
