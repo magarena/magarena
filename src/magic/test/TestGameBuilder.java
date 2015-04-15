@@ -107,9 +107,9 @@ public abstract class TestGameBuilder {
         return game;
     }
 
-    public static MagicDuel createDuel() {
+    public static MagicDuel createDuel(final MagicAIImpl aAiType, final int aAiLevel) {
         final MagicDuel duel=new MagicDuel();
- 
+
         final MagicDeckProfile profile=new MagicDeckProfile("bgruw");
 
         final HumanProfile hp = new HumanProfile();
@@ -117,14 +117,18 @@ public abstract class TestGameBuilder {
         final MagicPlayerDefinition player1=new MagicPlayerDefinition(hp,profile);
 
         final AiProfile ap = new AiProfile();
-        ap.setPlayerName("Mini Max");
-        ap.setAiType(MagicAIImpl.MMABFast);
-        ap.setAiLevel(6);
+        ap.setPlayerName(aAiType.toString());
+        ap.setAiType(aAiType);
+        ap.setAiLevel(aAiLevel);
 
         final MagicPlayerDefinition player2=new MagicPlayerDefinition(ap,profile);
 
         duel.setPlayers(new MagicPlayerDefinition[]{player1,player2});
         duel.setStartPlayer(0);
         return duel;
+    }
+
+    public static MagicDuel createDuel() {
+        return createDuel(MagicAIImpl.MMABFast, 6);
     }
 }
