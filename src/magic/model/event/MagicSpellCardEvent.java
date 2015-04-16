@@ -38,7 +38,7 @@ public abstract class MagicSpellCardEvent implements MagicCardEvent,MagicEventAc
     }
     
     public static MagicSpellCardEvent Entwine(final String rule) {
-        final Pattern pattern = Pattern.compile("choose one — • (?<effect1>.*) • (?<effect2>.*)", Pattern.CASE_INSENSITIVE);
+        final Pattern pattern = Pattern.compile("choose one — \\(1\\) (?<effect1>.*) \\(2\\) (?<effect2>.*)", Pattern.CASE_INSENSITIVE);
         final Matcher matcher = pattern.matcher(rule);
         if (!matcher.matches()) {
             throw new RuntimeException("unknown effect: \"" + rule + "\"");
