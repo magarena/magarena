@@ -4,6 +4,6 @@ value=4.012
 rarity=U
 type=Instant
 cost={W}{U}
-effect=Choose one — • Creatures you control gain lifelink until end of turn. • Draw a card. • Put target attacking or blocking creature on top of its owner's library.
+effect=Choose one — (1) Creatures you control gain lifelink until end of turn. (2) Draw a card. (3) Put target attacking or blocking creature on top of its owner's library.
 timing=removal
 oracle=Choose one — • Creatures you control gain lifelink until end of turn. • Draw a card. • Put target attacking or blocking creature on top of its owner's library.

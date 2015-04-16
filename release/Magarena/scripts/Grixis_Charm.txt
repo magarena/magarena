@@ -4,6 +4,6 @@ value=3.909
 rarity=U
 type=Instant
 cost={U}{B}{R}
-effect=Choose one — • Return target permanent to its owner's hand. • Target creature gets -4/-4 until end of turn. • Creatures you control get +2/+0 until end of turn.
+effect=Choose one — (1) Return target permanent to its owner's hand. (2) Target creature gets -4/-4 until end of turn. (3) Creatures you control get +2/+0 until end of turn.
 timing=removal
 oracle=Choose one — • Return target permanent to its owner's hand. • Target creature gets -4/-4 until end of turn. • Creatures you control get +2/+0 until end of turn.

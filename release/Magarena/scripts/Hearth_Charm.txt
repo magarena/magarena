@@ -4,6 +4,6 @@ value=4.214
 rarity=C
 type=Instant
 cost={R}
-effect=Choose one — • Destroy target artifact creature. • Attacking creatures get +1/+0 until end of turn. • Target creature with power 2 or less can't be blocked this turn.
+effect=Choose one — (1) Destroy target artifact creature. (2) Attacking creatures get +1/+0 until end of turn. (3) Target creature with power 2 or less can't be blocked this turn.
 timing=pump
 oracle=Choose one — • Destroy target artifact creature. • Attacking creatures get +1/+0 until end of turn. • Target creature with power 2 or less can't be blocked this turn.

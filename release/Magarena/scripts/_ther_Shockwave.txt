@@ -4,6 +4,6 @@ value=2.645
 rarity=U
 type=Instant
 cost={3}{W}
-effect=Choose one — • Tap all Spirits. • Tap all non-Spirit creatures.
+effect=Choose one — (1) Tap all Spirits. (2) Tap all non-Spirit creatures.
 timing=tapping
 oracle=Choose one — • Tap all Spirits. • Tap all non-Spirit creatures.

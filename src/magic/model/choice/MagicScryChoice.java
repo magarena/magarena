@@ -12,7 +12,7 @@ import magic.model.IUIGameController;
 
 public class MagicScryChoice extends MagicMayChoice {
     public MagicScryChoice() {
-        super("Move this card from the top of your library to the bottom?");
+        super("Move this card from the top of the library to the bottom?");
     }
     
     @Override

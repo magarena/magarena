@@ -4,6 +4,6 @@ value=4.087
 rarity=C
 type=Instant
 cost={U}
-effect=Choose one — • Target creature gains islandwalk until end of turn. • Target creature gets +2/-1 until end of turn. • Target player discards a card.
+effect=Choose one — (1) Target creature gains islandwalk until end of turn. (2) Target creature gets +2/-1 until end of turn. (3) Target player discards a card.
 timing=removal
 oracle=Choose one — • Target creature gains islandwalk until end of turn. • Target creature gets +2/-1 until end of turn. • Target player discards a card.

@@ -1,9 +1,9 @@
 name=Flash Flood
 image=http://magiccards.info/scans/en/me3/35.jpg
 value=3.259
-rarity=C
+rarity=U
 type=Instant
 cost={U}
-effect=Choose one — • Destroy target red permanent. • Return target Mountain to its owner's hand.
+effect=Choose one — (1) Destroy target red permanent. (2) Return target Mountain to its owner's hand.
 timing=removal
 oracle=Choose one — • Destroy target red permanent. • Return target Mountain to its owner's hand.

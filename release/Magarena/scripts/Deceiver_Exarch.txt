@@ -7,6 +7,8 @@ subtype=Cleric
 cost={2}{U}
 pt=1/4
 ability=Flash;\
-        When SN enters the battlefield, choose one — • Untap target permanent you control. • Tap target permanent an opponent controls.
+        When SN enters the battlefield, choose one — \
+        (1) Untap target permanent you control. \
+        (2) Tap target permanent an opponent controls.
 timing=main
 oracle=Flash. When Deceiver Exarch enters the battlefield, choose one — • Untap target permanent you control. • Tap target permanent an opponent controls.

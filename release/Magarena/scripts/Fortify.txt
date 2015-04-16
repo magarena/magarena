@@ -4,6 +4,6 @@ value=3.185
 rarity=C
 type=Instant
 cost={2}{W}
-effect=Choose one — • Creatures you control get +2/+0 until end of turn. • Creatures you control get +0/+2 until end of turn.
+effect=Choose one — (1) Creatures you control get +2/+0 until end of turn. (2) Creatures you control get +0/+2 until end of turn.
 timing=pump
 oracle=Choose one — • Creatures you control get +2/+0 until end of turn. • Creatures you control get +0/+2 until end of turn.

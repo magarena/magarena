@@ -4,6 +4,6 @@ value=2.609
 rarity=U
 type=Sorcery
 cost={4}{B}
-effect=Choose one — • All creatures get +2/+0 until end of turn. • All creatures get -0/-2 until end of turn.
+effect=Choose one — (1) All creatures get +2/+0 until end of turn. (2) All creatures get -0/-2 until end of turn.
 timing=removal
 oracle=Choose one — • All creatures get +2/+0 until end of turn. • All creatures get -0/-2 until end of turn.

@@ -6,6 +6,8 @@ type=Creature
 subtype=Hound,Scout
 cost={1}{G}
 pt=1/1
-ability=When SN enters the battlefield, choose one — • Put a +1/+1 counter on SN. • Search your library for a basic land card, reveal it, then shuffle your library and put that card on top of it.
+ability=When SN enters the battlefield, choose one — \
+        (1) Put a +1/+1 counter on SN. \
+        (2) Search your library for a basic land card, reveal it, then shuffle your library and put that card on top of it.
 timing=main
 oracle=When Ainok Guide enters the battlefield, choose one — • Put a +1/+1 counter on Ainok Guide. • Search your library for a basic land card, reveal it, then shuffle your library and put that card on top of it.

@@ -6,7 +6,9 @@ type=Legendary,Creature
 subtype=Hellion,Hydra
 cost={2}{R}{G}
 pt=0/0
-ability={1}, Remove a +1/+1 counter from SN: Choose one — • SN deals 1 damage to target creature. • Put a 1/1 green Saproling creature token onto the battlefield.
+ability={1}, Remove a +1/+1 counter from SN: Choose one — \
+        (1) SN deals 1 damage to target creature. \
+        (2) Put a 1/1 green Saproling creature token onto the battlefield.
 timing=main
 requires_groovy_code
 oracle=Ulasht, the Hate Seed enters the battlefield with a +1/+1 counter on it for each other red creature you control and a +1/+1 counter on it for each other green creature you control. {1}, Remove a +1/+1 counter from Ulasht: Choose one — • Ulasht deals 1 damage to target creature. • Put a 1/1 green Saproling creature token onto the battlefield.

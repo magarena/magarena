@@ -4,6 +4,6 @@ value=3.979
 rarity=U
 type=Instant
 cost={R}{W}
-effect=Choose one — • SN deals 4 damage to target player. • Permanents you control gain indestructible until end of turn. • Target creature gains double strike until end of turn.
+effect=Choose one — (1) SN deals 4 damage to target player. (2) Permanents you control gain indestructible until end of turn. (3) Target creature gains double strike until end of turn.
 timing=pump
 oracle=Choose one — • Boros Charm deals 4 damage to target player. • Permanents you control gain indestructible until end of turn. • Target creature gains double strike until end of turn.

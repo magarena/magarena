@@ -4,6 +4,6 @@ value=3.412
 rarity=C
 type=Instant
 cost={B}
-effect=Choose one — • Destroy target Cleric. • Return target Cleric card from your graveyard to your hand. • Target player loses 2 life.
+effect=Choose one — (1) Destroy target Cleric. (2) Return target Cleric card from your graveyard to your hand. (3) Target player loses 2 life.
 timing=removal
 oracle=Choose one — • Destroy target Cleric. • Return target Cleric card from your graveyard to your hand. • Target player loses 2 life.

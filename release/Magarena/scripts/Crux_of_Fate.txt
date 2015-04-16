@@ -4,6 +4,6 @@ value=2.500
 rarity=R
 type=Sorcery
 cost={3}{B}{B}
-effect=Choose one — • Destroy all Dragon creatures. • Destroy all non-Dragon creatures.
+effect=Choose one — (1) Destroy all Dragon creatures. (2) Destroy all non-Dragon creatures.
 timing=main
 oracle=Choose one — • Destroy all Dragon creatures. • Destroy all non-Dragon creatures.

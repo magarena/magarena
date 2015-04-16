@@ -5,7 +5,7 @@ rarity=U
 type=Artifact
 cost={2}
 ability=At the beginning of your upkeep, choose one — \
-        • Put a +1/+1 counter on target artifact creature. \
-        • Put a charge counter on target noncreature artifact.
+        (1) Put a +1/+1 counter on target artifact creature. \
+        (2) Put a charge counter on target noncreature artifact.
 timing=main
 oracle=At the beginning of your upkeep, choose one — • Put a +1/+1 counter on target artifact creature. • Put a charge counter on target noncreature artifact.

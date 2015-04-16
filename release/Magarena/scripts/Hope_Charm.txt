@@ -4,6 +4,6 @@ value=3.070
 rarity=C
 type=Instant
 cost={W}
-effect=Choose one — • Target creature gains first strike until end of turn. • Target player gains 2 life. • Destroy target Aura.
+effect=Choose one — (1) Target creature gains first strike until end of turn. (2) Target player gains 2 life. (3) Destroy target Aura.
 timing=pump
 oracle=Choose one — • Target creature gains first strike until end of turn. • Target player gains 2 life. • Destroy target Aura.

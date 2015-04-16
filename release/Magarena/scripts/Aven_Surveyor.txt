@@ -7,6 +7,8 @@ subtype=Bird,Scout
 cost={3}{U}{U}
 pt=2/2
 ability=Flying;\
-        When SN enters the battlefield, choose one — • Put a +1/+1 counter on SN. • Return target creature to its owner's hand.
+        When SN enters the battlefield, choose one — \
+        (1) Put a +1/+1 counter on SN. \
+        (2) Return target creature to its owner's hand.
 timing=main
 oracle=Flying. When Aven Surveyor enters the battlefield, choose one — • Put a +1/+1 counter on Aven Surveyor. • Return target creature to its owner's hand.

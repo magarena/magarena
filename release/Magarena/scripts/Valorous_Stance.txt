@@ -4,6 +4,6 @@ value=5.000
 rarity=U
 type=Instant
 cost={1}{W}
-effect=Choose one — • Target creature gains indestructible until end of turn. • Destroy target creature with toughness 4 or greater.
+effect=Choose one — (1) Target creature gains indestructible until end of turn. (2) Destroy target creature with toughness 4 or greater.
 timing=removal
 oracle=Choose one — • Target creature gains indestructible until end of turn. • Destroy target creature with toughness 4 or greater.

@@ -4,6 +4,6 @@ value=3.516
 rarity=C
 type=Instant
 cost={2}{G}
-effect=Choose one — • Destroy target creature with flying. • Destroy target artifact.
+effect=Choose one — (1) Destroy target creature with flying. (2) Destroy target artifact.
 timing=removal
 oracle=Choose one — • Destroy target creature with flying. • Destroy target artifact.

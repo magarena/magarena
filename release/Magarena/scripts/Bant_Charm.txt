@@ -4,6 +4,6 @@ value=3.775
 rarity=U
 type=Instant
 cost={G}{W}{U}
-effect=Choose one — • Destroy target artifact. • Put target creature on the bottom of its owner's library. • Counter target instant spell.
+effect=Choose one — (1) Destroy target artifact. (2) Put target creature on the bottom of its owner's library. (3) Counter target instant spell.
 timing=removal
 oracle=Choose one — • Destroy target artifact. • Put target creature on the bottom of its owner's library. • Counter target instant spell.

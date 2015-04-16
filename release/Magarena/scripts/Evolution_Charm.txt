@@ -4,9 +4,6 @@ value=4.145
 rarity=C
 type=Instant
 cost={1}{G}
-effect=Choose one — \
-       • Search your library for a basic land card, reveal it, put it into your hand, then shuffle your library. \
-       • Return target creature card from your graveyard to your hand. \
-       • Target creature gains flying until end of turn.
+effect=Choose one — (1) Search your library for a basic land card, reveal it, put it into your hand, then shuffle your library. (2) Return target creature card from your graveyard to your hand. (3) Target creature gains flying until end of turn.
 timing=draw
 oracle=Choose one — • Search your library for a basic land card, reveal it, put it into your hand, then shuffle your library. • Return target creature card from your graveyard to your hand. • Target creature gains flying until end of turn.

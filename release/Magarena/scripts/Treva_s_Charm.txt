@@ -4,6 +4,6 @@ value=3.543
 rarity=U
 type=Instant
 cost={G}{W}{U}
-effect=Choose one — • Destroy target enchantment. • Exile target attacking creature. • Draw a card, then discard a card.
+effect=Choose one — (1) Destroy target enchantment. (2) Exile target attacking creature. (3) Draw a card, then discard a card.
 timing=removal
 oracle=Choose one — • Destroy target enchantment. • Exile target attacking creature. • Draw a card, then discard a card.
