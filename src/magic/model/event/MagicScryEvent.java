@@ -5,6 +5,7 @@ import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.action.ScryAction;
 import magic.model.choice.MagicScryChoice;
+import magic.model.trigger.MagicTriggerType;
 
 public class MagicScryEvent extends MagicEvent {
     
@@ -32,6 +33,8 @@ public class MagicScryEvent extends MagicEvent {
             } else {
                 game.logAppendMessage(p, p + " looks at the card on the top of his or her library and puts it back on top.");
             }
+            //Scry triggers even if the card is not moved. Only once regardless of amount of cards scryed
+            game.executeTrigger(MagicTriggerType.WhenScry,p);
         }
     };
 }
