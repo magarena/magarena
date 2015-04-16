@@ -2420,6 +2420,21 @@ public enum MagicRuleEventAction {
             };
         }
     },
+    FalseScry(
+            "Look at the top card of your library. You may put that card on the bottom of your library.\\.",
+            MagicTiming.Draw,
+            "Scry"
+        ) {
+            @Override
+            public MagicEventAction getAction(final Matcher matcher) {
+                return new MagicEventAction() {
+                    @Override
+                    public void executeEvent(final MagicGame game, final MagicEvent event) {
+                        game.addEvent(new MagicScryEvent(event,false));
+                    }
+                };
+            }
+        },
     /*
     Scry(
         "(pn )?scry (?<amount>[0-9]+)\\.",
