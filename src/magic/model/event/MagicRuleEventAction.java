@@ -163,7 +163,7 @@ public enum MagicRuleEventAction {
         }
     },
     CounterSpellToExile(
-        "counter (?<choice>[^\\.]*)\\. if that spell is countered this way, exile it instead of putting it into its owner's graveyard.", 
+        "counter (?<choice>[^\\.]*)\\. if that spell is countered this way, exile it instead of putting it into its owner's graveyard\\.", 
         MagicTargetHint.Negative, 
         MagicDefaultTargetPicker.create(), 
         MagicTiming.Counter,
@@ -1823,7 +1823,7 @@ public enum MagicRuleEventAction {
         }
     },
     SearchLibraryToTopLibrary(
-        "search your library for (?<card>[^\\.]*)(,| and) reveal (it(,|.)|that card.)( then)? (S|s)huffle your library(, then| and) put (that|the) card on top of it\\.",
+        "search your library for (?<card>[^\\.]*)(,| and) reveal (it(,|\\.)|that card\\.)( then)? (S|s)huffle your library(, then| and) put (that|the) card on top of it\\.",
         MagicTiming.Draw,
         "Search"
     ) {
@@ -1843,7 +1843,7 @@ public enum MagicRuleEventAction {
         }
     },
     SearchLibraryToGraveyard(
-        "search your library for (?<card>[^\\.]*) and put (that card|it) into your graveyard. (If you do,|Then) shuffle your library\\.",
+        "search your library for (?<card>[^\\.]*) and put (that card|it) into your graveyard\\. (If you do,|Then) shuffle your library\\.",
         MagicTiming.Draw,
         "Search"
     ) {
@@ -2421,7 +2421,7 @@ public enum MagicRuleEventAction {
         }
     },
     FalseScry(
-       "Look at the top card of your library. You may put that card on the bottom of your library\\.",
+       "Look at the top card of your library\\. You may put that card on the bottom of your library\\.",
        MagicTiming.Draw,
        "Scry"
     ) {
