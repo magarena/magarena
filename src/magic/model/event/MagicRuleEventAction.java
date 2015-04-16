@@ -2430,7 +2430,7 @@ public enum MagicRuleEventAction {
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    game.addEvent(new MagicScryEvent(event,false));
+                    game.addEvent(MagicScryEvent.Pseudo(event));
                 }
             };
         }

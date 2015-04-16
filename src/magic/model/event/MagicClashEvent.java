@@ -63,8 +63,8 @@ public class MagicClashEvent extends MagicEvent {
             game.logAppendMessage(player, player + " lost the clash.");
         }
             
-        game.addFirstEvent(new MagicScryEvent(event.getSource(), opponent));
-        game.addFirstEvent(new MagicScryEvent(event.getSource(), player));
+        game.addFirstEvent(MagicScryEvent.Pseudo(event.getSource(), opponent));
+        game.addFirstEvent(MagicScryEvent.Pseudo(event.getSource(), player));
                 
         return winner;
     }

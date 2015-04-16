@@ -11,7 +11,7 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.addEvent(new MagicScryEvent(event,false));
+            game.addEvent(MagicScryEvent.Pseudo(event));
             game.addEvent(new MagicDrawEvent(event.getSource(),event.getPlayer(),1));
         }
     }
