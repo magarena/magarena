@@ -1,10 +1,8 @@
 package magic.test;
 
-import magic.model.MagicDeckProfile;
 import magic.model.MagicDuel;
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
-import magic.model.MagicPlayerDefinition;
 import magic.model.phase.MagicMainPhase;
 
 class TestScry extends TestGameBuilder {
@@ -22,9 +20,13 @@ class TestScry extends TestGameBuilder {
         addToLibrary(P, "Island", 2);
         addToLibrary(P, "Entreat the Angels", 1);
         addToLibrary(P, "Sliver Overlord", 1);
-        createPermanent(game,P, "Rupture Spire", false, 10);
+        createPermanent(game,P, "Island", false, 10);
+        createPermanent(game,P,"Chromatic Lantern");
+        createPermanent(game,P,"Flamespeaker Adept");
+        createPermanent(game,P,"Knowledge and Power");
         addToHand(P, "Spark Jolt", 1);
         addToHand(P, "Temple of Silence", 1);
+        addToHand(P,"Opt",1);
 
         P = opponent;
 
@@ -32,6 +34,7 @@ class TestScry extends TestGameBuilder {
         addToLibrary(P, "Temple of Silence", 20);
         createPermanent(game,P,"Rupture Spire",false,1);
         createPermanent(game,P, "Grizzly Bears", false, 1);
+        createPermanent(game,P,"Flamespeaker Adept");
         addToHand(P, "Spark Jolt", 1);
         addToHand(P, "Temple of Silence", 1);
 
