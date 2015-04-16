@@ -4,7 +4,7 @@ value=3.726
 rarity=C
 type=Artifact
 cost={2}
-ability=Indestructible;\
-        {1}, {T}: Scry 1.
+ability=Indestructible.;\
+        {1}, {T}: Look at the top card of your library. You may put that card on the bottom of your library.
 timing=artifact
 oracle=Indestructible. {1}, {T}: Look at the top card of your library. You may put that card on the bottom of your library.
