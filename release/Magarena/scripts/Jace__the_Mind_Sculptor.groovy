@@ -2,10 +2,10 @@ def FATESEAL = {
     final MagicGame game, final MagicEvent event ->
     final MagicPlayer PN = event.getPlayer();
     if (event.isYes()) {
-        game.logAppendMessage(PN, "${PN} move the card to the bottom.");
+        game.logAppendMessage(PN, "${PN} moved the card to the bottom.");
         game.doAction(new ScryAction(event.getRefPlayer()));
     } else {
-        game.logAppendMessage(PN, "${PN} puts the card back on top.");
+        game.logAppendMessage(PN, "${PN} put the card back on top.");
     }
 }
 
@@ -28,7 +28,7 @@ def FATESEAL = {
                     game.addEvent(new MagicEvent(
                         event.getSource(),
                         event.getPlayer(),
-                        new MagicMayChoice("Put the card on the bottom of ${it}'s library?"),
+                        new MagicMayChoice("Put ("+card.getName()+") on the bottom of ${it}'s library?"),
                         it,
                         FATESEAL,
                         ""
