@@ -1,0 +1,9 @@
+name=Balance
+image=http://magiccards.info/scans/en/vma/14.jpg
+value=5.000
+rarity=M
+type=Sorcery
+cost={1}{W}
+timing=main
+requires_groovy_code
+oracle=Each player chooses a number of lands he or she controls equal to the number of lands controlled by the player who controls the fewest, then sacrifices the rest. Players discard cards and sacrifice creatures the same way.
