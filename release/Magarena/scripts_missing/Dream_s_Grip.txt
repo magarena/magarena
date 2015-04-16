@@ -4,6 +4,6 @@ value=2.500
 rarity=C
 type=Instant
 cost={U}
-effect=Choose one — • Tap target permanent. • Untap target permanent.~Entwine {1}
+effect=Choose one — (1) Tap target permanent. (2) Untap target permanent.~Entwine {1}
 timing=removal
 oracle=Choose one — • Tap target permanent. • Untap target permanent. Entwine {1}

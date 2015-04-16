@@ -4,8 +4,8 @@ value=2.500
 rarity=R
 type=Enchantment
 cost={3}{B}{B}
-ability=As SN enters the battlefield, choose Khans or Dragons.;\
-        • Khans — At the beginning of your upkeep, return target creature card from your graveyard to your hand.;\
-        • Dragons — At the beginning of your upkeep, each opponent loses 2 life and you gain 2 life.
+ability=As SN enters the battlefield, choose Khans or Dragons. \
+        (1) Khans — At the beginning of your upkeep, return target creature card from your graveyard to your hand. \
+        (2) Dragons — At the beginning of your upkeep, each opponent loses 2 life and you gain 2 life.
 timing=main
 oracle=As Palace Siege enters the battlefield, choose Khans or Dragons. • Khans — At the beginning of your upkeep, return target creature card from your graveyard to your hand. • Dragons — At the beginning of your upkeep, each opponent loses 2 life and you gain 2 life.

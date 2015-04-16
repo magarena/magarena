@@ -4,6 +4,6 @@ value=2.500
 rarity=U
 type=Instant
 cost={U}{B}
-effect=Choose one — • Counter target sorcery spell. • Destroy target creature with power 2 or less. • Look at the top three cards of target player's library, then put one back and the rest into that player's graveyard.
+effect=Choose one — (1) Counter target sorcery spell. (2) Destroy target creature with power 2 or less. (3) Look at the top three cards of target player's library, then put one back and the rest into that player's graveyard.
 timing=removal
 oracle=Choose one — • Counter target sorcery spell. • Destroy target creature with power 2 or less. • Look at the top three cards of target player's library, then put one back and the rest into that player's graveyard.

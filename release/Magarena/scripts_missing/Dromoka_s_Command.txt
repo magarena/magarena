@@ -4,6 +4,6 @@ value=2.500
 rarity=R
 type=Instant
 cost={G}{W}
-effect=Choose two — • Prevent all damage target instant or sorcery spell would deal this turn. • Target player sacrifices an enchantment. • Put a +1/+1 counter on target creature. • Target creature you control fights target creature you don't control.
+effect=Choose two — (1) Prevent all damage target instant or sorcery spell would deal this turn. (2) Target player sacrifices an enchantment. (3) Put a +1/+1 counter on target creature. (4) Target creature you control fights target creature you don't control.
 timing=removal
 oracle=Choose two — • Prevent all damage target instant or sorcery spell would deal this turn. • Target player sacrifices an enchantment. • Put a +1/+1 counter on target creature. • Target creature you control fights target creature you don't control.

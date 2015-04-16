@@ -4,6 +4,6 @@ value=2.500
 rarity=R
 type=Sorcery
 cost={2}{B}{B}
-effect=An opponent chooses one — • You draw three cards. • You destroy up to two target creatures that player controls. They can't be regenerated. That player draws up to three cards.
+effect=An opponent chooses one — (1) You draw three cards. (2) You destroy up to two target creatures that player controls. They can't be regenerated. That player draws up to three cards.
 timing=main
 oracle=An opponent chooses one — • You draw three cards. • You destroy up to two target creatures that player controls. They can't be regenerated. That player draws up to three cards.

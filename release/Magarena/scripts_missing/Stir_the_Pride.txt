@@ -4,6 +4,6 @@ value=2.500
 rarity=U
 type=Instant
 cost={4}{W}
-effect=Choose one — • Creatures you control get +2/+2 until end of turn. • Until end of turn, creatures you control gain "Whenever this creature deals damage, you gain that much life."~Entwine {1}{W}
+effect=Choose one — (1) Creatures you control get +2/+2 until end of turn. (2) Until end of turn, creatures you control gain "Whenever this creature deals damage, you gain that much life."~Entwine {1}{W}
 timing=removal
 oracle=Choose one — • Creatures you control get +2/+2 until end of turn. • Until end of turn, creatures you control gain "Whenever this creature deals damage, you gain that much life.". Entwine {1}{W}

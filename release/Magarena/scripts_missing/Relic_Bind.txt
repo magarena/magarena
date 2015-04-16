@@ -6,8 +6,8 @@ type=Enchantment
 subtype=Aura
 cost={2}{U}
 ability=Enchant artifact an opponent controls;\
-        Whenever enchanted artifact becomes tapped, choose one —;\
-        • SN deals 1 damage to target player.;\
-        • Target player gains 1 life.
+        Whenever enchanted artifact becomes tapped, choose one — \
+        (1) SN deals 1 damage to target player. \
+        (2) Target player gains 1 life.
 timing=main
 oracle=Enchant artifact an opponent controls. Whenever enchanted artifact becomes tapped, choose one — • Relic Bind deals 1 damage to target player. • Target player gains 1 life.

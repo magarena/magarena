@@ -4,6 +4,6 @@ value=2.500
 rarity=U
 type=Sorcery
 cost={2}{W}{W}
-effect=Choose one or both — • Return target enchantment card from your graveyard to your hand. • Destroy target enchantment.
+effect=Choose one or both — (1) Return target enchantment card from your graveyard to your hand. (2) Destroy target enchantment.
 timing=main
 oracle=Choose one or both — • Return target enchantment card from your graveyard to your hand. • Destroy target enchantment.

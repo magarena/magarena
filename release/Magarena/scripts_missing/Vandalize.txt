@@ -4,6 +4,6 @@ value=2.500
 rarity=C
 type=Sorcery
 cost={4}{R}
-effect=Choose one or both — • Destroy target artifact. • Destroy target land.
+effect=Choose one or both — (1) Destroy target artifact. (2) Destroy target land.
 timing=main
 oracle=Choose one or both — • Destroy target artifact. • Destroy target land.

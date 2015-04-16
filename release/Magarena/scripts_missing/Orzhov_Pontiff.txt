@@ -7,8 +7,8 @@ subtype=Human,Cleric
 cost={1}{W}{B}
 pt=1/1
 ability=Haunt;\
-        When SN enters the battlefield or the creature it haunts dies, choose one —;\
-        • Creatures you control get +1/+1 until end of turn.;\
-        • Creatures you don't control get -1/-1 until end of turn.
+        When SN enters the battlefield or the creature it haunts dies, choose one — \
+        (1) Creatures you control get +1/+1 until end of turn. \
+        (2) Creatures you don't control get -1/-1 until end of turn.
 timing=main
 oracle=Haunt. When Orzhov Pontiff enters the battlefield or the creature it haunts dies, choose one — • Creatures you control get +1/+1 until end of turn. • Creatures you don't control get -1/-1 until end of turn.

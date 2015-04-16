@@ -7,8 +7,8 @@ subtype=Human,Wizard
 cost={U}
 pt=1/1
 ability=Morph {U};\
-        When SN is turned face up, choose one —;\
-        • Remove two time counters from target permanent or suspended card.;\
-        • Put two time counters on target permanent with a time counter on it or suspended card.
+        When SN is turned face up, choose one — \
+        (1) Remove two time counters from target permanent or suspended card. \
+        (2) Put two time counters on target permanent with a time counter on it or suspended card.
 timing=main
 oracle=Morph {U}. When Timebender is turned face up, choose one — • Remove two time counters from target permanent or suspended card. • Put two time counters on target permanent with a time counter on it or suspended card.

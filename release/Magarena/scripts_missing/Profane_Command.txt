@@ -4,6 +4,6 @@ value=2.500
 rarity=R
 type=Sorcery
 cost={X}{B}{B}
-effect= • Target player loses X life.  • Return target creature card with converted mana cost X or less from your graveyard to the battlefield. • Target creature gets -X/-X until end of turn. • Up to X target creatures gain fear until end of turn.
+effect= (1) Target player loses X life.  (2) Return target creature card with converted mana cost X or less from your graveyard to the battlefield. (3) Target creature gets -X/-X until end of turn. (4) Up to X target creatures gain fear until end of turn.
 timing=main
 oracle=Choose two — . • Target player loses X life. • Return target creature card with converted mana cost X or less from your graveyard to the battlefield. • Target creature gets -X/-X until end of turn. • Up to X target creatures gain fear until end of turn.

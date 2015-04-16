@@ -4,6 +4,6 @@ value=2.500
 rarity=R
 type=Sorcery
 cost={4}{W}{B}
-effect=Choose one — • Exile all artifacts. • Exile all creatures. • Exile all enchantments. • Exile all planeswalkers.
+effect=Choose one — (1) Exile all artifacts. (2) Exile all creatures. (3) Exile all enchantments. (4) Exile all planeswalkers.
 timing=main
 oracle=Choose one — • Exile all artifacts. • Exile all creatures. • Exile all enchantments. • Exile all planeswalkers.

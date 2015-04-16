@@ -4,6 +4,6 @@ value=2.500
 rarity=C
 type=Sorcery
 cost={B}
-effect=Choose one — • Return target creature card from your graveyard to your hand. • Return two target Zombie cards from your graveyard to your hand.
+effect=Choose one — (1) Return target creature card from your graveyard to your hand. (2) Return two target Zombie cards from your graveyard to your hand.
 timing=main
 oracle=Choose one — • Return target creature card from your graveyard to your hand. • Return two target Zombie cards from your graveyard to your hand.

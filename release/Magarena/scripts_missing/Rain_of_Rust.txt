@@ -4,6 +4,6 @@ value=2.500
 rarity=C
 type=Instant
 cost={3}{R}{R}
-effect=Choose one — • Destroy target artifact. • Destroy target land.~Entwine {3}{R}
+effect=Choose one — (1) Destroy target artifact. (2) Destroy target land.~Entwine {3}{R}
 timing=removal
 oracle=Choose one — • Destroy target artifact. • Destroy target land. Entwine {3}{R}

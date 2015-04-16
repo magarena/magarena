@@ -4,6 +4,6 @@ value=2.500
 rarity=C
 type=Instant
 cost={1}{W}
-effect=Choose one — • Prevent all combat damage that would be dealt this turn. • Regenerate target creature. • Counter target spell that targets you.
+effect=Choose one — (1) Prevent all combat damage that would be dealt this turn. (2) Regenerate target creature. (3) Counter target spell that targets you.
 timing=removal
 oracle=Choose one — • Prevent all combat damage that would be dealt this turn. • Regenerate target creature. • Counter target spell that targets you.

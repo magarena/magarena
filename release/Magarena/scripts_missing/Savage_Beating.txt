@@ -4,6 +4,6 @@ value=2.500
 rarity=R
 type=Instant
 cost={3}{R}{R}
-effect=Cast SN only during your turn and only during combat.~Choose one — • Creatures you control gain double strike until end of turn. • Untap all creatures you control. After this phase, there is an additional combat phase.~Entwine {1}{R}
+effect=Cast SN only during your turn and only during combat.~Choose one — (1) Creatures you control gain double strike until end of turn. (2) Untap all creatures you control. After this phase, there is an additional combat phase.~Entwine {1}{R}
 timing=removal
 oracle=Cast Savage Beating only during your turn and only during combat. Choose one — • Creatures you control gain double strike until end of turn. • Untap all creatures you control. After this phase, there is an additional combat phase. Entwine {1}{R}

@@ -4,6 +4,6 @@ value=2.500
 rarity=U
 type=Instant
 cost={R}{G}{W}
-effect=Choose one — • SN deals 3 damage to target creature. • Return target card from a graveyard to its owner's hand. • Tap all creatures target player controls.
+effect=Choose one — (1) SN deals 3 damage to target creature. (2) Return target card from a graveyard to its owner's hand. (3) Tap all creatures target player controls.
 timing=removal
 oracle=Choose one — • Naya Charm deals 3 damage to target creature. • Return target card from a graveyard to its owner's hand. • Tap all creatures target player controls.

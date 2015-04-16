@@ -6,9 +6,9 @@ type=Creature
 subtype=Human,Monk
 cost={2}{W}{W}
 pt=4/4
-ability=Whenever you cast a noncreature spell, choose one —;\
-        • Tap target creature.;\
-        • SN gains first strike and lifelink until end of turn.;\
-        • Exile SN, then return it to the battlefield tapped under its owner's control.
+ability=Whenever you cast a noncreature spell, choose one — \
+        (1) Tap target creature. \
+        (2) SN gains first strike and lifelink until end of turn. \
+        (3) Exile SN, then return it to the battlefield tapped under its owner's control.
 timing=main
 oracle=Whenever you cast a noncreature spell, choose one — • Tap target creature. • Ojutai Exemplars gains first strike and lifelink until end of turn. • Exile Ojutai Exemplars, then return it to the battlefield tapped under its owner's control.

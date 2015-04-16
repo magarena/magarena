@@ -4,8 +4,8 @@ value=2.500
 rarity=R
 type=Enchantment
 cost={2}{U}
-ability=As SN enters the battlefield, choose Khans or Dragons.;\
-        • Khans — At the beginning of your draw step, draw an additional card, then discard a card.;\
-        • Dragons — Spells your opponents cast that target you or a permanent you control cost {2} more to cast.
+ability=As SN enters the battlefield, choose Khans or Dragons. \
+        (1) Khans — At the beginning of your draw step, draw an additional card, then discard a card. \
+        (2) Dragons — Spells your opponents cast that target you or a permanent you control cost {2} more to cast.
 timing=main
 oracle=As Monastery Siege enters the battlefield, choose Khans or Dragons. • Khans — At the beginning of your draw step, draw an additional card, then discard a card. • Dragons — Spells your opponents cast that target you or a permanent you control cost {2} more to cast.

@@ -4,6 +4,6 @@ value=2.500
 rarity=C
 type=Instant
 cost={1}{R}{G}
-effect=Choose one or both — • SN deals 3 damage to target creature with flying. • SN deals 3 damage to target creature without flying.
+effect=Choose one or both — (1) SN deals 3 damage to target creature with flying. (2) SN deals 3 damage to target creature without flying.
 timing=removal
 oracle=Choose one or both — • Branching Bolt deals 3 damage to target creature with flying. • Branching Bolt deals 3 damage to target creature without flying.

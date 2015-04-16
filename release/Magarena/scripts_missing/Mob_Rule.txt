@@ -4,6 +4,6 @@ value=2.500
 rarity=R
 type=Sorcery
 cost={4}{R}{R}
-effect=Choose one — • Gain control of all creatures with power 4 or greater until end of turn. Untap those creatures. They gain haste until end of turn. • Gain control of all creatures with power 3 or less until end of turn. Untap those creatures. They gain haste until end of turn.
+effect=Choose one — (1) Gain control of all creatures with power 4 or greater until end of turn. Untap those creatures. They gain haste until end of turn. (2) Gain control of all creatures with power 3 or less until end of turn. Untap those creatures. They gain haste until end of turn.
 timing=main
 oracle=Choose one — • Gain control of all creatures with power 4 or greater until end of turn. Untap those creatures. They gain haste until end of turn. • Gain control of all creatures with power 3 or less until end of turn. Untap those creatures. They gain haste until end of turn.

@@ -4,8 +4,8 @@ value=2.500
 rarity=U
 type=Artifact
 cost={2}
-ability={T}, Remove a counter from a permanent you control: Choose one —;\
-        • Put a charge counter on target artifact.;\
-        • Put a +1/+1 counter on target creature.
+ability={T}, Remove a counter from a permanent you control: Choose one — \
+        (1) Put a charge counter on target artifact. \
+        (2) Put a +1/+1 counter on target creature.
 timing=main
 oracle={T}, Remove a counter from a permanent you control: Choose one — • Put a charge counter on target artifact. • Put a +1/+1 counter on target creature.

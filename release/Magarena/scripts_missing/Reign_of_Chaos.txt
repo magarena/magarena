@@ -4,6 +4,6 @@ value=2.500
 rarity=U
 type=Sorcery
 cost={2}{R}{R}
-effect=Choose one — • Destroy target Plains and target white creature. • Destroy target Island and target blue creature.
+effect=Choose one — (1) Destroy target Plains and target white creature. (2) Destroy target Island and target blue creature.
 timing=main
 oracle=Choose one — • Destroy target Plains and target white creature. • Destroy target Island and target blue creature.

@@ -4,6 +4,6 @@ value=2.500
 rarity=U
 type=Instant
 cost={2}{W}
-effect=Choose one — • Remove two time counters from each permanent and each suspended card. • Put two time counters on each permanent with a time counter on it and each suspended card.
+effect=Choose one — (1) Remove two time counters from each permanent and each suspended card. (2) Put two time counters on each permanent with a time counter on it and each suspended card.
 timing=removal
 oracle=Choose one — • Remove two time counters from each permanent and each suspended card. • Put two time counters on each permanent with a time counter on it and each suspended card.
