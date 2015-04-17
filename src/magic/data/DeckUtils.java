@@ -296,11 +296,9 @@ public class DeckUtils {
      *  (includes both custom & prebuilt decks).
      */
     public static void loadRandomDeckFile(final MagicPlayerDefinition player) throws InvalidDeckException {
-        final File deckFile = new File(getDeckFolder());
         final List<File> deckFiles = new ArrayList<>();
-        retrieveDeckFiles(deckFile, deckFiles);
-        final int size = deckFiles.size();
-        if (size == 0) {
+        retrieveDeckFiles(MagicFileSystem.getDataPath(DataPath.DECKS).toFile(), deckFiles);
+        if (deckFiles.isEmpty()) {
             // Creates a simple default deck.
             final MagicDeck deck = player.getDeck();
             deck.setFilename("Default.dec");
@@ -314,7 +312,7 @@ public class DeckUtils {
             }
             player.setDeckProfile(new MagicDeckProfile("w"));
         } else {
-            loadAndSetPlayerDeck(deckFiles.get(MagicRandom.nextRNGInt(size)).toString(), player);
+            loadAndSetPlayerDeck(deckFiles.get(MagicRandom.nextRNGInt(deckFiles.size())).toString(), player);
         }
     }
 
