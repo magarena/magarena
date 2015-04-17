@@ -31,8 +31,7 @@ public class PlayerStatistics {
 
     private long millisecTimestamp;
     private final Path statsFilePath;
-    private final PlayerProfile playerProfile;
-
+    private final boolean isHuman;
     public int gamesPlayed;
     public int gamesWon;
     public int gamesConceded;
@@ -45,9 +44,9 @@ public class PlayerStatistics {
     public int colorRed;
     public int colorWhite;
 
-    public PlayerStatistics(final PlayerProfile playerProfile) {
-        this.playerProfile = playerProfile;
-        statsFilePath = playerProfile.getProfilePath().resolve("player.stats");
+    public PlayerStatistics(final PlayerProfile aPlayerProfile) {
+        isHuman = aPlayerProfile.isHuman();
+        statsFilePath = aPlayerProfile.getProfilePath().resolve("player.stats");
         loadStats();
     }
 
@@ -202,7 +201,7 @@ public class PlayerStatistics {
         sb.append(f.getStatLine("\nDuels won / lost:\t", duelsWon, " / ", duelsLost, " (", duelsWinPercentage, "%)"));
         sb.append(f.getStatLine("\nGames played:\t", gamesPlayed));
         sb.append(f.getStatLine("\nGames won / lost\t", gamesWon, " / ", gamesLost, " (", gamesWinPercentage, "%)"));
-        sb.append(f.getStatLine("\nGames conceded:\t", playerProfile.isHuman() ? gamesConceded : StatsFormatter.NO_VALUE));
+        sb.append(f.getStatLine("\nGames conceded:\t", isHuman ? gamesConceded : StatsFormatter.NO_VALUE));
         sb.append(f.getStatLine("\nTurns played:\t", turnsPlayed));
         sb.append(f.getStatLine("\nAverage turns per game:\t", averageTurns));
         sb.append(f.getStatLine("\nMost used color:\t", mostColor.getName()));
