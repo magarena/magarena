@@ -56,7 +56,7 @@ public class NewDuelSettingsScreen
      */
     @Override
     public MenuButton getLeftAction() {
-        return MenuButton.getCloseScreenButton("Main Menu");
+        return MenuButton.getCloseScreenButton("Cancel");
     }
 
     /* (non-Javadoc)
@@ -255,7 +255,6 @@ public class NewDuelSettingsScreen
                 DuelConfig.getInstance().setPlayerProfile(1,  playerProfile);
                 getDuelPlayerPanel(playerProfile).setPlayer(playerProfile);
             }
-            DuelConfig.getInstance().save();
         }
 
         /* (non-Javadoc)
@@ -269,7 +268,6 @@ public class NewDuelSettingsScreen
 
         private void saveSelectedPlayerProfile(final PlayerProfile player) {
             DuelConfig.getInstance().setPlayerProfile(player.isHuman() ? 0 : 1, player);
-            DuelConfig.getInstance().save();
         }
 
         private boolean isDeckValid(int i) {

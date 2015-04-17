@@ -1,7 +1,6 @@
 package magic.data;
 
 import java.io.File;
-import java.io.IOException;
 import java.util.Properties;
 import magic.model.MagicDeckProfile;
 import magic.model.MagicDuel;
@@ -156,16 +155,6 @@ public class DuelConfig {
 
     private static String getPlayerPrefix(final int index) {
         return "p"+(index+1)+".";
-    }
-
-    public void save() {
-        final Properties properties=new Properties();
-        save(properties);
-        try {
-            FileIO.toFile(getConfigFile(), properties, "Duel configuration");
-        } catch (final IOException ex) {
-            System.err.println("ERROR! Unable to save duel config");
-        }
     }
 
     private static File getConfigFile() {

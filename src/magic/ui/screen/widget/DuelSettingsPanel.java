@@ -129,7 +129,6 @@ public class DuelSettingsPanel extends TexturedPanel implements IThemeStyle {
         config.setHandSize(handSize);
         config.setNrOfGames(maxGames);
         config.setCube(cube);
-        config.save();
     }
 
     public String getCube() {
