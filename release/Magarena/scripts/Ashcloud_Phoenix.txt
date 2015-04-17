@@ -7,8 +7,8 @@ subtype=Phoenix
 cost={2}{R}{R}
 pt=4/1
 ability=Flying;\
-        When SN dies, return it to the battlefield face down under your control.;\
         Morph {4}{R}{R};\
-        When SN is turned face up, it deals 2 damage to each player.
+        When SN is turned face up, SN deals 2 damage to each player.
 timing=main
+requires_groovy_code
 oracle=Flying. When Ashcloud Phoenix dies, return it to the battlefield face down under your control. Morph {4}{R}{R}. When Ashcloud Phoenix is turned face up, it deals 2 damage to each player.
