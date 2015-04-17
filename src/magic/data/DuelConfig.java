@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.util.Properties;
 import magic.model.MagicDeckProfile;
 import magic.model.MagicDuel;
+import magic.model.MagicPlayerDefinition;
 import magic.model.player.PlayerProfile;
 import magic.model.player.PlayerProfiles;
 import magic.utility.MagicFileSystem;
@@ -42,27 +43,32 @@ public class DuelConfig {
     private int handSize = 7;
     private int games = 7;
     private String cube = CubeDefinitions.getCubeNames()[0];
-    private final PlayerProfile[] players = new PlayerProfile[MAX_PLAYERS];
-    private final MagicDeckProfile[] playerDeckProfiles = new MagicDeckProfile[MAX_PLAYERS];
+    private final MagicPlayerDefinition[] playerDefs = new MagicPlayerDefinition[MAX_PLAYERS];
 
     // CTR
     public DuelConfig() {
+        
         // Ensure DuelConfig has valid PlayerProfile references.
         // If missing then creates default profiles.
         PlayerProfiles.refreshMap();
-        players[0] = PlayerProfiles.getDefaultHumanPlayer();
-        players[1] = PlayerProfiles.getDefaultAiPlayer();
-        playerDeckProfiles[0] = MagicDeckProfile.getDeckProfile(MagicDeckProfile.ANY_THREE);
-        playerDeckProfiles[1] = MagicDeckProfile.getDeckProfile(MagicDeckProfile.ANY_THREE);
+
+        playerDefs[0] = new MagicPlayerDefinition(
+                PlayerProfiles.getDefaultHumanPlayer(),
+                MagicDeckProfile.getDeckProfile(MagicDeckProfile.ANY_THREE)
+        );
+        playerDefs[1] = new MagicPlayerDefinition(
+                PlayerProfiles.getDefaultAiPlayer(),
+                MagicDeckProfile.getDeckProfile(MagicDeckProfile.ANY_THREE)
+        );
     }
 
     // CTR: copy constructor - a common way of creating a copy of an existing object.
     public DuelConfig(final DuelConfig duelConfig) {
-        startLife=duelConfig.startLife;
-        handSize=duelConfig.handSize;
-        games=duelConfig.games;
-        playerDeckProfiles[0] = duelConfig.getPlayerDeckProfile(0);
-        playerDeckProfiles[1] = duelConfig.getPlayerDeckProfile(1);
+        startLife = duelConfig.startLife;
+        handSize = duelConfig.handSize;
+        games = duelConfig.games;
+        playerDefs[0] = duelConfig.getPlayerDefinition(0);
+        playerDefs[1] = duelConfig.getPlayerDefinition(1);
     }
 
     public int getStartLife() {
@@ -94,17 +100,18 @@ public class DuelConfig {
     }
 
     public PlayerProfile getPlayerProfile(final int playerIndex) {
-        return players[playerIndex];
+        return playerDefs[playerIndex].getProfile();
     }
     public void setPlayerProfile(final int playerIndex, final PlayerProfile playerProfile) {
-        players[playerIndex] = playerProfile;
+        playerDefs[playerIndex].setProfile(playerProfile);
     }
 
     public MagicDeckProfile getPlayerDeckProfile(final int playerIndex) {
-        return playerDeckProfiles[playerIndex];
+        return playerDefs[playerIndex].getDeckProfile();
     }
+
     public void setPlayerDeckProfile(final int playerIndex, final DeckType deckType, final String deckValue) {
-        playerDeckProfiles[playerIndex] = MagicDeckProfile.getDeckProfile(deckType, deckValue);
+        playerDefs[playerIndex].setDeckProfile(MagicDeckProfile.getDeckProfile(deckType, deckValue));
     }
 
     public void load(final Properties properties) {
@@ -131,13 +138,13 @@ public class DuelConfig {
     }
 
     public void save(final Properties properties) {
-        properties.setProperty(PLAYER_ONE, players[0].getId());
-        properties.setProperty(PLAYER_TWO, players[1].getId());
+        properties.setProperty(PLAYER_ONE, playerDefs[0].getProfile().getId());
+        properties.setProperty(PLAYER_TWO, playerDefs[1].getProfile().getId());
         properties.setProperty(START_LIFE, Integer.toString(startLife));
         properties.setProperty(HAND_SIZE, Integer.toString(handSize));
         properties.setProperty(GAMES, Integer.toString(games));
-        properties.setProperty(PLAYER_ONE_DECK, playerDeckProfiles[0].getDeckType().name() + ";" + playerDeckProfiles[0].getDeckValue());
-        properties.setProperty(PLAYER_TWO_DECK, playerDeckProfiles[1].getDeckType().name() + ";" + playerDeckProfiles[1].getDeckValue());
+        properties.setProperty(PLAYER_ONE_DECK, playerDefs[0].getDeckProfile().getDeckType().name() + ";" + playerDefs[0].getDeckProfile().getDeckValue());
+        properties.setProperty(PLAYER_TWO_DECK, playerDefs[1].getDeckProfile().getDeckType().name() + ";" + playerDefs[1].getDeckProfile().getDeckValue());
         properties.setProperty(CUBE, cube);
     }
 
@@ -161,5 +168,9 @@ public class DuelConfig {
 
     public int getGamesRequiredToWinDuel() {
         return (int)Math.ceil(getNrOfGames()/2.0);
+    }
+
+    private MagicPlayerDefinition getPlayerDefinition(final int index) {
+        return playerDefs[index];
     }
 }

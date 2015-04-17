@@ -10,7 +10,7 @@ public class MagicPlayerDefinition {
 
     private MagicDeckProfile deckProfile;
     private final MagicDeck deck = new MagicDeck();
-    private final PlayerProfile playerProfile;
+    private PlayerProfile playerProfile;
 
     // CTR
     public MagicPlayerDefinition(final PlayerProfile aPlayerProfile, final MagicDeckProfile aDeckProfile) {
@@ -67,6 +67,11 @@ public class MagicPlayerDefinition {
 
     public PlayerProfile getProfile() {
         return playerProfile;
+    }
+
+
+    public void setProfile(PlayerProfile aPlayerProfile) {
+        playerProfile = aPlayerProfile;
     }
 
 }
