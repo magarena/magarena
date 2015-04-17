@@ -296,25 +296,25 @@ public class DeckUtils {
      *  (includes both custom & prebuilt decks).
      */
     public static void loadRandomDeckFile(final MagicPlayerDefinition player) throws InvalidDeckException {
-        final File deckFile=new File(getDeckFolder());
-        final List<File> deckFiles=new ArrayList<>();
-        retrieveDeckFiles(deckFile,deckFiles);
-        final int size=deckFiles.size();
-        if (size==0) {
+        final File deckFile = new File(getDeckFolder());
+        final List<File> deckFiles = new ArrayList<>();
+        retrieveDeckFiles(deckFile, deckFiles);
+        final int size = deckFiles.size();
+        if (size == 0) {
             // Creates a simple default deck.
             final MagicDeck deck = player.getDeck();
             deck.setFilename("Default.dec");
-            final MagicCardDefinition creature=CardDefinitions.getCard("Elite Vanguard");
-            final MagicCardDefinition land=CardDefinitions.getCard("Plains");
-            for (int count=24;count>0;count--) {
+            final MagicCardDefinition creature = CardDefinitions.getCard("Elite Vanguard");
+            final MagicCardDefinition land = CardDefinitions.getCard("Plains");
+            for (int count = 24; count > 0; count--) {
                 deck.add(creature);
             }
-            for (int count=16;count>0;count--) {
+            for (int count = 16; count > 0; count--) {
                 deck.add(land);
             }
             player.setDeckProfile(new MagicDeckProfile("w"));
         } else {
-            loadAndSetPlayerDeck(deckFiles.get(MagicRandom.nextRNGInt(size)).toString(),player);
+            loadAndSetPlayerDeck(deckFiles.get(MagicRandom.nextRNGInt(size)).toString(), player);
         }
     }
 
