@@ -68,7 +68,7 @@ public class NewDuelSettingsScreen
             @Override
             public void actionPerformed(ActionEvent e) {
                 if (isEachPlayerDeckValid(true)) {
-                    saveDuelConfig();
+                    updateDuelConfig();
                     ScreenController.closeActiveScreen(false);
                     try {
                         getFrame().newDuel(duelConfig);
@@ -98,7 +98,7 @@ public class NewDuelSettingsScreen
         return isEachDeckValid;
     }
 
-    private void saveDuelConfig() {
+    private void updateDuelConfig() {
         duelConfig.setStartLife(content.getStartLife());
         duelConfig.setHandSize(content.getHandSize());
         duelConfig.setNrOfGames(content.getNrOfGames());
@@ -107,7 +107,6 @@ public class NewDuelSettingsScreen
         duelConfig.setPlayerProfile(1, content.getPlayerProfile(1));
         duelConfig.setPlayerDeckProfile(0, content.getDeckType(0), content.getDeckValue(0));
         duelConfig.setPlayerDeckProfile(1, content.getDeckType(1), content.getDeckValue(1));
-        duelConfig.save();
     }
 
     /* (non-Javadoc)
@@ -124,7 +123,7 @@ public class NewDuelSettingsScreen
     @Override
     public boolean isScreenReadyToClose(final AbstractScreen nextScreen) {
         if (isEachPlayerDeckValid(false)) {
-            saveDuelConfig();
+            updateDuelConfig();
         }
         return true;
     }

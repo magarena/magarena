@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.Properties;
 import magic.model.MagicDeckProfile;
+import magic.model.MagicDuel;
 import magic.model.player.PlayerProfile;
 import magic.model.player.PlayerProfiles;
 import magic.utility.MagicFileSystem;
@@ -12,7 +13,7 @@ import magic.utility.MagicFileSystem.DataPath;
 /**
  * Represents the default settings when starting a new duel.
  * <p>
- * The settings are saved to "newduel.cfg" and are loaded
+ * The settings are saved to CONFIG_FILENAME and are loaded
  * whenever the user starts a new duel.
  * <p>
  * Note that references to decks are specifically to deck
@@ -23,7 +24,7 @@ public class DuelConfig {
     private static final DuelConfig INSTANCE=new DuelConfig();
 
     // Properties file.
-    private static final String CONFIG_FILENAME     = "newduel.cfg";
+    private static final String CONFIG_FILENAME     = MagicDuel.getDuelFile().getName();
     // Properties file keys.
     private static final String START_LIFE          = "life";
     private static final String HAND_SIZE           = "hand";
