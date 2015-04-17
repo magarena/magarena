@@ -19,6 +19,7 @@ import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.util.Vector;
 import magic.data.MagicIcon;
+import magic.model.MagicDeckProfile;
 
 @SuppressWarnings("serial")
 public class RandomDecksComboBox extends JComboBox<String> implements ListCellRenderer<String> {
@@ -42,7 +43,7 @@ public class RandomDecksComboBox extends JComboBox<String> implements ListCellRe
         items.add("ugr");
         items.add("urw");
         items.add("grw");
-        items.add("***");
+        items.add(MagicDeckProfile.ANY_THREE);
         items.add("bu");
         items.add("bg");
         items.add("br");
@@ -53,14 +54,14 @@ public class RandomDecksComboBox extends JComboBox<String> implements ListCellRe
         items.add("gr");
         items.add("gw");
         items.add("rw");
-        items.add("**");
+        items.add(MagicDeckProfile.ANY_TWO);
         items.add("b");
         items.add("u");
         items.add("g");
         items.add("r");
         items.add("w");
-        items.add("*");
-        items.add("@");
+        items.add(MagicDeckProfile.ANY_ONE);
+        items.add(MagicDeckProfile.ANY_DECK);
 
         if (DeckGenerators.getInstance().getNrGenerators() > 0) {
             items.add(SEPARATOR);

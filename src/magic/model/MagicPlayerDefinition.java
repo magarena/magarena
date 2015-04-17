@@ -6,8 +6,6 @@ import magic.model.player.PlayerProfile;
 
 public class MagicPlayerDefinition {
 
-    private static final String COLORS="colors";
-
     private MagicDeckProfile deckProfile;
     private final MagicDeck deck = new MagicDeck();
     private PlayerProfile playerProfile;
@@ -41,10 +39,7 @@ public class MagicPlayerDefinition {
         return prefix+"deck"+index;
     }
 
-    void load(final Properties properties,final String prefix) {
-
-        final String colors=properties.getProperty(prefix+COLORS,"");
-        deckProfile=new MagicDeckProfile(colors);
+    public void load(final Properties properties,final String prefix) {
         deck.clear();
         for (int index=1;index<=properties.size();index++) {
             final String deckPrefix = getDeckPrefix(prefix,index);
@@ -58,7 +53,7 @@ public class MagicPlayerDefinition {
         }
     }
 
-    void save(final Properties properties,final String prefix) {
+    public void save(final Properties properties,final String prefix) {
         int index=1;
         for (final MagicCardDefinition cardDefinition : deck) {
             properties.setProperty(getDeckPrefix(prefix,index++),cardDefinition.getFullName());

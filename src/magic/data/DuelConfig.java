@@ -43,7 +43,7 @@ public class DuelConfig {
     private int handSize = 7;
     private int games = 7;
     private String cube = CubeDefinitions.getCubeNames()[0];
-    private final MagicPlayerDefinition[] playerDefs = new MagicPlayerDefinition[MAX_PLAYERS];
+    private MagicPlayerDefinition[] playerDefs = new MagicPlayerDefinition[MAX_PLAYERS];
 
     // CTR
     public DuelConfig() {
@@ -123,6 +123,9 @@ public class DuelConfig {
         setPlayerProfile(1, PlayerProfile.getAiPlayer(properties.getProperty(PLAYER_TWO)));
         setPlayerDeckProfile(0, properties.getProperty(PLAYER_ONE_DECK, DeckType.Random + ";" + MagicDeckProfile.ANY_THREE));
         setPlayerDeckProfile(1, properties.getProperty(PLAYER_TWO_DECK, DeckType.Random + ";" + MagicDeckProfile.ANY_THREE));
+        for (int index = 0; index < getPlayerDefinitions().length; index++) {
+            getPlayerDefinition(index).load(properties, getPlayerPrefix(index));
+        }
     }
 
     private void setPlayerDeckProfile(final int playerIndex, final String deckPropertyValue) {
@@ -146,6 +149,13 @@ public class DuelConfig {
         properties.setProperty(PLAYER_ONE_DECK, playerDefs[0].getDeckProfile().getDeckType().name() + ";" + playerDefs[0].getDeckProfile().getDeckValue());
         properties.setProperty(PLAYER_TWO_DECK, playerDefs[1].getDeckProfile().getDeckType().name() + ";" + playerDefs[1].getDeckProfile().getDeckValue());
         properties.setProperty(CUBE, cube);
+        for (int index = 0; index < getPlayerDefinitions().length; index++) {
+            getPlayerDefinition(index).save(properties, getPlayerPrefix(index));
+        }
+    }
+
+    private static String getPlayerPrefix(final int index) {
+        return "p"+(index+1)+".";
     }
 
     public void save() {
@@ -170,7 +180,15 @@ public class DuelConfig {
         return (int)Math.ceil(getNrOfGames()/2.0);
     }
 
-    private MagicPlayerDefinition getPlayerDefinition(final int index) {
+    public MagicPlayerDefinition getPlayerDefinition(final int index) {
         return playerDefs[index];
+    }
+
+    public MagicPlayerDefinition[] getPlayerDefinitions() {
+        return playerDefs;
+    }
+
+    public void setPlayerDefinitions(MagicPlayerDefinition[] aPlayerDefinitions) {
+        playerDefs = aPlayerDefinitions;
     }
 }

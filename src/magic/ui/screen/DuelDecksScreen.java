@@ -88,6 +88,14 @@ public class DuelDecksScreen
                 @Override
                 public void actionPerformed(final ActionEvent e) {
                     final MagicPlayerDefinition[] players = screenContent.getDuel().getPlayers();
+
+                    System.out.printf("p0=%s;%s\np1=%s;%s\n",
+                            players[0].getDeckProfile().getDeckType().name(),
+                            players[0].getDeckProfile().getDeckValue(),
+                            players[1].getDeckProfile().getDeckType().name(),
+                            players[1].getDeckProfile().getDeckValue()
+                    );
+
                     if (isLegalDeckAndShowErrors(players[0].getDeck(), players[0].getName()) &&
                        isLegalDeckAndShowErrors(players[1].getDeck(), players[1].getName())) {
                         saveDuel(false);

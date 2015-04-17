@@ -19,7 +19,7 @@ public class MagicDeckProfile {
     private String deckValue = ANY_THREE;
 
     public MagicDeckProfile(final String colorText) {
-        this(colorText, null);
+        this(colorText, ANY_DECK);
     }
 
     public MagicDeckProfile(final String colorText, final String deckGeneratorName) {

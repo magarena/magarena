@@ -9,7 +9,6 @@ import java.util.Enumeration;
 import java.util.Properties;
 import java.util.TreeSet;
 import magic.utility.MagicSystem;
-import magic.ai.MagicAI;
 import magic.data.DeckGenerators;
 import magic.data.DeckUtils;
 import magic.data.DuelConfig;
@@ -28,7 +27,6 @@ public class MagicDuel {
     private static final String START="start";
 
     private final DuelConfig duelConfig;
-    private MagicPlayerDefinition[] playerDefinitions;
     private int opponentIndex;
     private int gameNr;
     private int gamesPlayed;
@@ -46,7 +44,6 @@ public class MagicDuel {
 
     public MagicDuel(final DuelConfig configuration,final MagicDuel duel) {
         this(configuration);
-        playerDefinitions=duel.playerDefinitions;
     }
 
     public DuelConfig getConfiguration() {
@@ -62,7 +59,7 @@ public class MagicDuel {
     }
 
     public int getGamesTotal() {
-        return (playerDefinitions.length-1)*duelConfig.getNrOfGames();
+        return (duelConfig.getPlayerDefinitions().length-1)*duelConfig.getNrOfGames();
     }
 
     public int getGamesWon() {
@@ -126,8 +123,8 @@ public class MagicDuel {
 
     public MagicGame nextGame() {
         //create players
-        final MagicPlayer player   = new MagicPlayer(duelConfig.getStartLife(),playerDefinitions[0],0);
-        final MagicPlayer opponent = new MagicPlayer(duelConfig.getStartLife(),playerDefinitions[opponentIndex],1);
+        final MagicPlayer player   = new MagicPlayer(duelConfig.getStartLife(), duelConfig.getPlayerDefinition(0), 0);
+        final MagicPlayer opponent = new MagicPlayer(duelConfig.getStartLife(), duelConfig.getPlayerDefinition(opponentIndex), 1);
 
         //give the AI player extra life
         opponent.setLife(opponent.getLife() + opponent.getAiProfile().getExtraLife());
@@ -150,20 +147,20 @@ public class MagicDuel {
     }
 
     public int getNrOfPlayers() {
-        return playerDefinitions.length;
+        return duelConfig.getPlayerDefinitions().length;
     }
 
     public MagicPlayerDefinition getPlayer(final int index) {
-        return playerDefinitions[index];
+        return duelConfig.getPlayerDefinition(index);
     }
 
     public MagicPlayerDefinition[] getPlayers() {
-        return playerDefinitions;
+        return duelConfig.getPlayerDefinitions();
     }
 
     // only used by magic.test classes.
     public void setPlayers(final MagicPlayerDefinition[] aPlayerDefinitions) {
-        this.playerDefinitions=aPlayerDefinitions;
+        duelConfig.setPlayerDefinitions(aPlayerDefinitions);
     }
 
     // Used by the "Generate Deck" button in DuelPanel.
@@ -172,7 +169,7 @@ public class MagicDuel {
     }
 
     private void buildDecks() throws InvalidDeckException {
-        for (final MagicPlayerDefinition player : playerDefinitions) {
+        for (final MagicPlayerDefinition player : duelConfig.getPlayerDefinitions()) {
             switch (player.getDeckProfile().getDeckType()) {
             case Random:
                 DeckGenerators.setRandomDeck(player);
@@ -202,7 +199,7 @@ public class MagicDuel {
     }
 
     public void initialize() throws InvalidDeckException {
-        playerDefinitions=createPlayers();
+        duelConfig.setPlayerDefinitions(createPlayers());
         buildDecks();
     }
 
@@ -216,16 +213,11 @@ public class MagicDuel {
 
     private void save(final Properties properties) {
         duelConfig.save(properties);
-
         properties.setProperty(OPPONENT,Integer.toString(opponentIndex));
         properties.setProperty(GAME,Integer.toString(gameNr));
         properties.setProperty(PLAYED,Integer.toString(gamesPlayed));
         properties.setProperty(WON,Integer.toString(gamesWon));
         properties.setProperty(START,Integer.toString(startPlayer));
-
-        for (int index=0;index<playerDefinitions.length;index++) {
-            playerDefinitions[index].save(properties,getPlayerPrefix(index));
-        }
     }
 
     public void save(final File file) {
@@ -250,20 +242,11 @@ public class MagicDuel {
 
     private void load(final Properties properties) {
         duelConfig.load(properties);
-
         opponentIndex=Integer.parseInt(properties.getProperty(OPPONENT,"1"));
         gameNr=Integer.parseInt(properties.getProperty(GAME,"1"));
         gamesPlayed=Integer.parseInt(properties.getProperty(PLAYED,"0"));
         gamesWon=Integer.parseInt(properties.getProperty(WON,"0"));
         startPlayer=Integer.parseInt(properties.getProperty(START,"0"));
-
-        playerDefinitions=new MagicPlayerDefinition[2];
-        for (int index=0;index<playerDefinitions.length;index++) {
-            playerDefinitions[index] = new MagicPlayerDefinition(
-                    duelConfig.getPlayerProfile(index),
-                    duelConfig.getPlayerDeckProfile(index));
-            playerDefinitions[index].load(properties,getPlayerPrefix(index));
-        }
     }
 
     public void load(final File file) {
