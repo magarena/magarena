@@ -19,7 +19,7 @@ def loseAct = {
                 cardOnStack,
                 this,
                 "PN puts two 1/1 red Elemental creature tokens onto the battlefield. "+
-                "Then PN flips a coin.\$ If PN wins the flip, return SN to its owner's hand."
+                "Then PN flips a coin. If PN wins the flip, return SN to its owner's hand."
             );
         }
 
