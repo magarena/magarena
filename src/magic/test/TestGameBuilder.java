@@ -125,7 +125,7 @@ public abstract class TestGameBuilder {
         final MagicPlayerDefinition player1=new MagicPlayerDefinition(hp,profile);
 
         final AiProfile ap = new AiProfile();
-        ap.setPlayerName(aAiType.toString());
+        ap.setPlayerName(aAiType.name());
         ap.setAiType(aAiType);
         ap.setAiLevel(aAiLevel);
 
