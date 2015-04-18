@@ -48,10 +48,7 @@ public class MagicDeclareBlockersResultBuilder {
         this.attackingPlayer=defendingPlayer.getOpponent();
         this.fast=fast;
 
-        // Caching for better speed and immediate mode for triggers.
-        game.setImmediate(true);
         build();
-        game.setImmediate(false);
     }
 
     Collection<Object> getResults() {
