@@ -1,15 +1,15 @@
 package magic.model;
 
+import java.util.EnumSet;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
-import java.util.ArrayList;
-import java.util.EnumSet;
 
 public enum MagicType {
 
     // these are supertypes
     Basic,
+    Elite,
     Legendary,
     Ongoing,
     Snow,
@@ -30,6 +30,7 @@ public enum MagicType {
     ;
 
     public static final Set<MagicType> ALL_CARD_TYPES = EnumSet.range(Artifact, Vanguard);
+    public static final Set<MagicType> SUPERTYPES = EnumSet.range(Basic, World);
     public static final Set<MagicType> FILTER_TYPES = EnumSet.of(
         Legendary,
         Artifact,
