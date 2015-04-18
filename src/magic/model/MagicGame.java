@@ -1373,6 +1373,8 @@ public class MagicGame {
         if (immediate) {
             if (event.hasChoice()) {
                 // ignore
+            } else if (trigger.usesStack()) {
+                addPendingTrigger(event);
             } else {
                 executeEvent(event, MagicEvent.NO_CHOICE_RESULTS);
             }

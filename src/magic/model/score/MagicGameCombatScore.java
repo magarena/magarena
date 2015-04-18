@@ -24,15 +24,17 @@ public class MagicGameCombatScore implements MagicCombatScore {
         // immediate mode for triggers
         game.setImmediate(true);
         game.snapshot();
-
         game.doAction(new DeclareBlockersAction(defendingPlayer,result));
         game.doAction(new CombatDamageAction(attackingPlayer,defendingPlayer,true));
         game.doAction(new CombatDamageAction(attackingPlayer,defendingPlayer,false));
+        // resolve triggers
         game.checkStatePutTriggers();
-        
+        while (game.getStack().size() > 0 && game.getStack().size() < 100 && game.isFinished() == false) {
+            game.doAction(new StackResolveAction());
+            game.checkStatePutTriggers();
+        }
         // Give extra points for extra blocked creatures.
         final int score=game.getScore()+result.size();
-        
         game.restore();
         game.setImmediate(false);
         return score;
