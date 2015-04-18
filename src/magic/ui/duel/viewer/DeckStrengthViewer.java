@@ -31,9 +31,14 @@ import java.awt.Dimension;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.List;
+import java.util.concurrent.CancellationException;
+import java.util.concurrent.ExecutionException;
 import java.util.concurrent.atomic.AtomicBoolean;
+import javax.swing.SwingWorker;
 import magic.data.MagicIcon;
 import magic.exception.InvalidDeckException;
+import magic.ui.ScreenController;
 
 public class DeckStrengthViewer extends JPanel implements ActionListener {
 
@@ -60,7 +65,7 @@ public class DeckStrengthViewer extends JPanel implements ActionListener {
     private final JComboBox<Integer> difficultyComboBox;
     private final JButton startButton;
     private final Color textColor;
-    private static CalculateThread calculateThread;
+    private SwingWorker<Void, Integer> sw;
 
     public DeckStrengthViewer(final MagicDuel duel) {
 
@@ -149,15 +154,15 @@ public class DeckStrengthViewer extends JPanel implements ActionListener {
     }
 
     public void halt() {
-        if (calculateThread!=null) {
-            calculateThread.halt();
-            calculateThread=null;
+        if (sw != null) {
+            sw.cancel(true);
+            sw = null;
         }
     }
 
     @Override
     public void actionPerformed(final ActionEvent event) {
-        if (calculateThread!=null) {
+        if (sw != null) {
             startButton.setEnabled(false);
             startButton.repaint();
             halt();
@@ -177,19 +182,10 @@ public class DeckStrengthViewer extends JPanel implements ActionListener {
             startButton.setIcon(IconImages.getIcon(MagicIcon.STOP));
             startButton.repaint();
 
-            final Thread.UncaughtExceptionHandler h = new Thread.UncaughtExceptionHandler() {
-                @Override
-                public void uncaughtException(Thread th, Throwable ex) {
-                    if (ex instanceof InvalidDeckException) {
-                        System.err.println("InvalidDeckException");
-                    } else {
-                        System.err.println(ex);
-                    }
-                }
-            };
-            calculateThread = new CalculateThread();
-            calculateThread.setUncaughtExceptionHandler(h);
-            calculateThread.start();
+            // SwingWorker
+            progressBar.setMaximum(generalConfig.getStrengthGames());
+            sw = new StrengthCalcWorker();
+            sw.execute();
         }
     }
 
@@ -208,58 +204,78 @@ public class DeckStrengthViewer extends JPanel implements ActionListener {
         strengthLabel.repaint();
     }
 
-    private class CalculateThread extends Thread {
+    private class StrengthCalcWorker extends SwingWorker<Void, Integer> {
 
-        private final AtomicBoolean running=new AtomicBoolean(true);
+        private final AtomicBoolean running = new AtomicBoolean(true);
         private IGameController controller;
 
         @Override
-        public void run() {
-            final GeneralConfig generalConfig=GeneralConfig.getInstance();
-            final DuelConfig config=new DuelConfig(DuelConfig.getInstance());
+        protected Void doInBackground() throws Exception {
+
+            final GeneralConfig generalConfig = GeneralConfig.getInstance();
+            final DuelConfig config = new DuelConfig(DuelConfig.getInstance());
             config.setNrOfGames(generalConfig.getStrengthGames());
-            final MagicDuel testDuel=new MagicDuel(config,duel);
+            final MagicDuel testDuel = new MagicDuel(config, duel);
 
             final MagicPlayerDefinition[] players = new MagicPlayerDefinition[2];
             for (int i = 0; i < 2; i++) {
                 final AiProfile pp = new AiProfile();
-                pp.setPlayerName(MagicAIImpl.DECKSTR_AIS[i].toString());
+                pp.setPlayerName(MagicAIImpl.DECKSTR_AIS[i].name());
                 pp.setAiType(MagicAIImpl.DECKSTR_AIS[i]);
                 pp.setAiLevel(generalConfig.getStrengthDifficulty());
-           
                 players[i] = new MagicPlayerDefinition(pp, config.getPlayerDeckProfile(i));
-
             }
+
             testDuel.setPlayers(players);
+            testDuel.buildDecks();
 
-            try {
-                testDuel.buildDecks();
-            } catch (InvalidDeckException ex) {
-                throw new RuntimeException(ex);
-            }
-
-            progressBar.setMaximum(testDuel.getGamesTotal());
-            progressBar.setValue(0);
+            publish(new Integer(0));
             setStrength(0);
 
             while (running.get() && !isDeckStrengthTestFinished(testDuel)) {
-                gameLabel.setText("Game "+(testDuel.getGamesPlayed()+1));
-                final MagicGame game=testDuel.nextGame();
+                final MagicGame game = testDuel.nextGame();
                 game.setArtificial(true);
-                controller=new HeadlessGameController(game, 10000);
+                controller = new HeadlessGameController(game, 10000);
                 controller.runGame();
-                progressBar.setValue(testDuel.getGamesPlayed());
-                if (testDuel.getGamesPlayed()>0) {
-                    final int percentage=(testDuel.getGamesWon()*100)/testDuel.getGamesPlayed();
+                publish(new Integer(testDuel.getGamesPlayed()));
+                if (testDuel.getGamesPlayed() > 0) {
+                    final int percentage = (testDuel.getGamesWon() * 100) / testDuel.getGamesPlayed();
                     setStrength(percentage);
                 }
             }
 
+            return null;
+
+        }
+
+        @Override
+        protected void done() {
+            try {
+                get();
+            } catch (InterruptedException | ExecutionException ex) {
+                if (ex.getCause() instanceof InvalidDeckException) {
+                    System.err.println(ex);
+                    ScreenController.showWarningMessage("<html><b>Cancelled</b> : Invalid deck.</html>");
+                } else {
+                    throw new RuntimeException(ex);
+                }
+            } catch (CancellationException ex) {
+                System.err.println("User cancelled.");
+            }
+
+            progressBar.setValue(0);
             startButton.setIcon(IconImages.getIcon(MagicIcon.START));
             startButton.setEnabled(true);
             startButton.repaint();
-            calculateThread=null;
+        }
 
+        @Override
+        protected void process(List<Integer> chunks) {
+            final int countInteger = chunks.get(chunks.size() - 1);
+            if (!isCancelled()) {
+                progressBar.setValue(countInteger);
+                gameLabel.setText(String.format("Game %d", countInteger));
+            }
         }
 
         private boolean isDeckStrengthTestFinished(final MagicDuel testDuel) {
@@ -268,9 +284,11 @@ public class DeckStrengthViewer extends JPanel implements ActionListener {
 
         public void halt() {
             running.set(false);
-            if (controller!=null) {
+            if (controller != null) {
                 controller.haltGame();
             }
         }
+
     }
+
 }

@@ -9,7 +9,7 @@ public class MagicDeck extends ArrayList<MagicCardDefinition> {
     public static final int DEFAULT_SIZE = 40;
 
     private String filename="Unsaved Deck";
-    private String description;
+    private String description = "";
     private boolean isDeckValid = true;
     public MagicDeck() {}
 
