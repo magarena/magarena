@@ -279,6 +279,7 @@ public class MagicGame {
             (stateCheckRequired ? 1L : -1L),
             payedCost.getStateId(),
             stack.getStateId(),
+            pendingStack.getStateId(),
             events.getStateId(),
             players[0].getStateId(),
             players[1].getStateId(),
