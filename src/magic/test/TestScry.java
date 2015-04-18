@@ -24,7 +24,7 @@ class TestScry extends TestGameBuilder {
         createPermanent(game,P,"Chromatic Lantern");
         createPermanent(game,P,"Flamespeaker Adept");
         createPermanent(game,P,"Knowledge and Power");
-        addToHand(P, "Spark Jolt", 1);
+        addToHand(P, "Spark Jolt", 2);
         addToHand(P, "Temple of Silence", 1);
         addToHand(P,"Opt",1);
 
