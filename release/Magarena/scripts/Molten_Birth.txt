@@ -4,6 +4,6 @@ value=2.500
 rarity=U
 type=Sorcery
 cost={1}{R}{R}
-effect=Put two 1/1 red Elemental creature tokens onto the battlefield.~Flip a coin. If you win the flip, return SN to its owner's hand.
 timing=main
+requires_groovy_code
 oracle=Put two 1/1 red Elemental creature tokens onto the battlefield. Then flip a coin. If you win the flip, return Molten Birth to its owner's hand.
