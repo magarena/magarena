@@ -28,8 +28,11 @@ class TestCoinFlip extends TestGameBuilder {
 
         P.setLife(20);
         addToLibrary(P, "Plains", 10);
-        createPermanent(game,P,"Rupture Spire",false,8);
+        createPermanent(game,P,"Mountain",false,20);
+        createPermanent(game,P,"Tavern Swindler",false,1);
         createPermanent(game,P,"Creepy Doll",false,1);
+        addToHand(P,"Scoria Wurm",1);
+        addToHand(P, "Wild Wurm", 3);
 
         return game;
     }
