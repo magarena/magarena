@@ -24,7 +24,7 @@ public class MagicPayManaCostEvent extends MagicEvent {
             source,
             player,
             new MagicPayManaCostChoice(cost),
-            MagicEvent.NO_ACTION,
+            MagicEventAction.NONE,
             "Pay "+cost.getText()+"$."
         );
         conds = new MagicCondition[]{cost.getCondition()};

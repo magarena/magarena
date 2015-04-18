@@ -44,11 +44,6 @@ public class MagicEvent implements MagicCopyable {
 
     public static final Object[] NO_CHOICE_RESULTS = new Object[0];
     public static final MagicCopyable NO_REF = new MagicInteger(-1);
-    public static final MagicEventAction NO_ACTION = new MagicEventAction() {
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            //do nothing
-        }
-    };
 
     static class MagicInteger implements MagicCopyable {
         public final int value;
@@ -73,7 +68,7 @@ public class MagicEvent implements MagicCopyable {
         }
     }
 
-    public static final MagicEvent NONE = new MagicEvent(MagicSource.NONE, MagicPlayer.NONE, NO_REF, NO_ACTION, "") {
+    public static final MagicEvent NONE = new MagicEvent(MagicSource.NONE, MagicPlayer.NONE, NO_REF, MagicEventAction.NONE, "") {
         @Override
         public boolean isValid() {
             return false;

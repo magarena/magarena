@@ -6,6 +6,7 @@ import magic.model.MagicSource;
 import magic.model.MagicPlayer;
 import magic.model.choice.MagicFromCardListChoice;
 import magic.model.event.MagicEvent;
+import magic.model.event.MagicEventAction;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -35,7 +36,7 @@ public class RevealAction extends MagicAction {
             MagicSource.NONE,
             you.getOpponent(),
             new MagicFromCardListChoice(cards, message),
-            MagicEvent.NO_ACTION,
+            MagicEventAction.NONE,
             ""
         ));
     }

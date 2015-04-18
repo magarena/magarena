@@ -6,6 +6,7 @@ import magic.model.MagicSource;
 import magic.model.MagicPlayer;
 import magic.model.choice.MagicFromCardListChoice;
 import magic.model.event.MagicEvent;
+import magic.model.event.MagicEventAction;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -37,7 +38,7 @@ public class LookAction extends MagicAction {
             MagicSource.NONE,
             player,
             new MagicFromCardListChoice(cards, "Look at the " + desc + "."),
-            MagicEvent.NO_ACTION,
+            MagicEventAction.NONE,
             ""
         ));
     }

@@ -3294,23 +3294,18 @@ public enum MagicRuleEventAction {
         }
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
-            final MagicSourceEvent win = matcher.group("win") != null ? MagicRuleEventAction.create(matcher.group("win")) : null;
-            final MagicSourceEvent lose = matcher.group("lose") != null ? MagicRuleEventAction.create(matcher.group("lose")) : null;
+            final MagicEventAction winAction = matcher.group("win") != null ? 
+                MagicRuleEventAction.create(matcher.group("win")).getAction() : 
+                MagicEventAction.NONE;
+            
+            final MagicEventAction loseAction = matcher.group("lose") != null ? 
+                MagicRuleEventAction.create(matcher.group("lose")).getAction() : 
+                MagicEventAction.NONE;
+            
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    final MagicRandom rng = new MagicRandom(event.getStateId());
-                    if (rng.nextInt(2) == 0) {
-                        game.logAppendMessage(event.getPlayer(), "PN wins the flip.");
-                        if (win != null) {
-                            win.getAction().executeEvent(game, event);
-                        }
-                    } else {
-                        game.logAppendMessage(event.getPlayer(), "PN loses the flip.");
-                        if (lose != null) {
-                            lose.getAction().executeEvent(game, event);
-                        }
-                    }
+                    MagicCoinFlipEvent.EventAction(winAction, loseAction).executeEvent(game, event);
                 }
             };
         }
@@ -3335,7 +3330,6 @@ public enum MagicRuleEventAction {
                 MagicRuleEventAction.create(matcher.group("lose"));
             return e.getName();
         }
-
     },
     ;
 
@@ -3347,22 +3341,22 @@ public enum MagicRuleEventAction {
     private final String name;
     
     private MagicRuleEventAction(final String aPattern) {
-        this(aPattern, MagicTargetHint.None, MagicDefaultTargetPicker.create(), MagicTiming.None, "", MagicEvent.NO_ACTION);
+        this(aPattern, MagicTargetHint.None, MagicDefaultTargetPicker.create(), MagicTiming.None, "", MagicEventAction.NONE);
     }
     
     private MagicRuleEventAction(final String aPattern, final MagicTargetHint aHint) {
-        this(aPattern, aHint, MagicDefaultTargetPicker.create(), MagicTiming.None, "", MagicEvent.NO_ACTION);
+        this(aPattern, aHint, MagicDefaultTargetPicker.create(), MagicTiming.None, "", MagicEventAction.NONE);
     }
     
     private MagicRuleEventAction(final String aPattern, final MagicTiming timing) {
-        this(aPattern, MagicTargetHint.None, MagicDefaultTargetPicker.create(), timing, "", MagicEvent.NO_ACTION);
+        this(aPattern, MagicTargetHint.None, MagicDefaultTargetPicker.create(), timing, "", MagicEventAction.NONE);
     }
     
     private MagicRuleEventAction(
             final String aPattern, 
             final MagicTiming aTiming, 
             final String aName) {
-        this(aPattern, MagicTargetHint.None, MagicDefaultTargetPicker.create(), aTiming, aName, MagicEvent.NO_ACTION);
+        this(aPattern, MagicTargetHint.None, MagicDefaultTargetPicker.create(), aTiming, aName, MagicEventAction.NONE);
     }
     
     private MagicRuleEventAction(
@@ -3379,7 +3373,7 @@ public enum MagicRuleEventAction {
             final MagicTargetPicker<?> aPicker, 
             final MagicTiming aTiming, 
             final String aName) {
-        this(aPattern, aHint, aPicker, aTiming, aName, MagicEvent.NO_ACTION);
+        this(aPattern, aHint, aPicker, aTiming, aName, MagicEventAction.NONE);
     }
     
     private MagicRuleEventAction(
@@ -3387,7 +3381,7 @@ public enum MagicRuleEventAction {
             final MagicTargetHint aHint, 
             final MagicTiming aTiming, 
             final String aName) {
-        this(aPattern, aHint, MagicDefaultTargetPicker.create(), aTiming, aName, MagicEvent.NO_ACTION);
+        this(aPattern, aHint, MagicDefaultTargetPicker.create(), aTiming, aName, MagicEventAction.NONE);
     }
     
     private MagicRuleEventAction(
@@ -3427,7 +3421,7 @@ public enum MagicRuleEventAction {
     }
     
     public MagicEventAction getNoAction(final Matcher matcher) {
-        return MagicEvent.NO_ACTION;
+        return MagicEventAction.NONE;
     }
     
     public MagicTiming getTiming(final Matcher matcher) {

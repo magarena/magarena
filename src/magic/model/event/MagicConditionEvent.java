@@ -10,7 +10,7 @@ public class MagicConditionEvent extends MagicEvent {
     public MagicConditionEvent(final MagicSource source, final MagicCondition condition) {
         super(
             source,
-            MagicEvent.NO_ACTION,
+            MagicEventAction.NONE,
             ""
         );
         conds = new MagicCondition[]{
