@@ -78,6 +78,7 @@ public abstract class TestGameBuilder {
             });
 
             game.getEvents().clear();
+            game.checkState();
             game.getStack().removeAllItems();
             permanent.clearState(MagicPermanentState.Summoned);
             if (tapped) {
