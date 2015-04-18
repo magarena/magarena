@@ -3301,11 +3301,11 @@ public enum MagicRuleEventAction {
             final MagicEventAction loseAction = matcher.group("lose") != null ? 
                 MagicRuleEventAction.create(matcher.group("lose")).getAction() : 
                 MagicEventAction.NONE;
-            
+           
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    MagicCoinFlipEvent.EventAction(winAction, loseAction).executeEvent(game, event);
+                    game.addEvent(new MagicCoinFlipEvent(event, winAction, loseAction));
                 }
             };
         }
