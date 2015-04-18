@@ -22,6 +22,7 @@ class TestCoinFlip extends TestGameBuilder {
         createPermanent(game,P,"Tavern Swindler",false,1);
         addToHand(P,"Scoria Wurm",1);
         addToHand(P, "Wild Wurm", 3);
+        addToHand(P, "Molten Birth", 1);
 
 
         P = opponent;
