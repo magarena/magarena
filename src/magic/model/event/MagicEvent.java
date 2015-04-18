@@ -309,6 +309,10 @@ public class MagicEvent implements MagicCopyable {
         return (MagicPermanent)source;
     }
 
+    public final MagicCopyable getRef() {
+        return ref;
+    }
+
     public final MagicPermanent getRefPermanent() {
         return (MagicPermanent)ref;
     }

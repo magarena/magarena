@@ -3305,7 +3305,7 @@ public enum MagicRuleEventAction {
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    game.addEvent(new MagicCoinFlipEvent(event, winAction, loseAction));
+                    game.addEvent(new MagicCoinFlipEvent(event, event.getRef(), winAction, loseAction));
                 }
             };
         }
