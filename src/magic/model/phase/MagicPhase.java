@@ -30,11 +30,11 @@ public abstract class MagicPhase {
                 game.update();
                 break;
             case ActivePlayer:
-                game.checkState();
+                game.checkStatePutTriggers();
                 game.addEvent(new MagicPriorityEvent(game.getTurnPlayer()));
                 break;
             case OtherPlayer:
-                game.checkState();
+                game.checkStatePutTriggers();
                 game.addEvent(new MagicPriorityEvent(game.getTurnPlayer().getOpponent()));
                 break;
             case Resolve:
@@ -59,7 +59,7 @@ public abstract class MagicPhase {
 
                 // If next step is not ActivePlayer, check state first
                 if (game.getStep() != MagicStep.ActivePlayer) {
-                    game.checkState();
+                    game.checkStatePutTriggers();
                 }
 
                 break;

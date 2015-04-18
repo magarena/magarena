@@ -37,7 +37,7 @@ public class MagicCleanupPhase extends MagicPhase {
             game.doAction(new CleanupPlayerAction(player));
         }
         game.doAction(new CleanupTurnStaticsAction());
-        game.checkState();
+        game.checkStatePutTriggers();
     }
 
     private static void nextTurn(final MagicGame game) {

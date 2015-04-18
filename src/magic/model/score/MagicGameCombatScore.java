@@ -28,7 +28,7 @@ public class MagicGameCombatScore implements MagicCombatScore {
         // resolve triggers
         while (game.getStack().size() > 0 && !game.isFinished()) {
             game.doAction(new StackResolveAction());
-            game.checkState();
+            game.checkStatePutTriggers();
         }
         // Give extra points for extra blocked creatures.
         final int score=game.getScore()+result.size();

@@ -1034,7 +1034,7 @@ public class MagicGame {
         return stateCheckRequired;
     }
 
-    public void checkState() {
+    public void checkStatePutTriggers() {
         while (stateCheckRequired) {
             stateCheckRequired = false;
 
