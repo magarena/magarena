@@ -14,6 +14,17 @@ public class MagicCoinFlipEvent extends MagicEvent {
         this(event, event.getRef(), winAction, loseAction);
     }
     
+    public MagicCoinFlipEvent(final MagicEvent event, final int ref, final MagicEventAction winAction, final MagicEventAction loseAction) {
+        super(
+            event.getSource(),
+            event.getPlayer(),
+            MagicCoinFlipChoice.create(),
+            ref,
+            EventAction(winAction, loseAction),
+            "PN flips a coin$."
+        );
+    }
+    
     public MagicCoinFlipEvent(final MagicEvent event, final MagicCopyable ref, final MagicEventAction winAction, final MagicEventAction loseAction) {
         super(
             event.getSource(),
