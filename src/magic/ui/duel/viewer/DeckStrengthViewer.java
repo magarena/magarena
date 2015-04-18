@@ -34,7 +34,6 @@ import java.awt.event.ActionListener;
 import java.util.List;
 import java.util.concurrent.CancellationException;
 import java.util.concurrent.ExecutionException;
-import java.util.concurrent.atomic.AtomicBoolean;
 import javax.swing.SwingWorker;
 import magic.data.MagicIcon;
 import magic.exception.InvalidDeckException;
@@ -205,10 +204,7 @@ public class DeckStrengthViewer extends JPanel implements ActionListener {
     }
 
     private class StrengthCalcWorker extends SwingWorker<Void, Integer> {
-
-        private final AtomicBoolean running = new AtomicBoolean(true);
-        private IGameController controller;
-
+       
         @Override
         protected Void doInBackground() throws Exception {
 
@@ -232,10 +228,10 @@ public class DeckStrengthViewer extends JPanel implements ActionListener {
             publish(new Integer(0));
             setStrength(0);
 
-            while (running.get() && !isDeckStrengthTestFinished(testDuel)) {
+            while (!isCancelled() && !isDeckStrengthTestFinished(testDuel)) {
                 final MagicGame game = testDuel.nextGame();
                 game.setArtificial(true);
-                controller = new HeadlessGameController(game, 10000);
+                final IGameController controller = new HeadlessGameController(game, 10000);
                 controller.runGame();
                 publish(new Integer(testDuel.getGamesPlayed()));
                 if (testDuel.getGamesPlayed() > 0) {
@@ -280,13 +276,6 @@ public class DeckStrengthViewer extends JPanel implements ActionListener {
 
         private boolean isDeckStrengthTestFinished(final MagicDuel testDuel) {
             return testDuel.getGamesPlayed() >= testDuel.getGamesTotal();
-        }
-
-        public void halt() {
-            running.set(false);
-            if (controller != null) {
-                controller.haltGame();
-            }
         }
 
     }
