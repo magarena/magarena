@@ -33,6 +33,7 @@ import java.awt.Dimension;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import magic.data.DeckType;
 import magic.data.GeneralConfig;
 import magic.exception.InvalidDeckException;
 
@@ -118,7 +119,7 @@ public class DuelDecksPanel extends TexturedPanel {
             // generate deck button
             generateButtons[i] = new JButton(GENERATE_BUTTON_TEXT);
             generateButtons[i].setFont(FontsAndBorders.FONT2);
-            generateButtons[i].setEnabled(duel.getGamesPlayed() == 0);
+            generateButtons[i].setEnabled(duel.getGamesPlayed() == 0 && player.getDeckProfile().getDeckType() == DeckType.Random);
             generateButtons[i].addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(final ActionEvent event) {
