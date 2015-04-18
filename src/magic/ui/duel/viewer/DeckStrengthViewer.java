@@ -162,7 +162,7 @@ public class DeckStrengthViewer extends JPanel implements ActionListener {
 
     @Override
     public void actionPerformed(final ActionEvent event) {
-        if (sw != null) {
+        if (sw != null && !sw.isDone()) {
             startButton.setEnabled(false);
             startButton.repaint();
             halt();
