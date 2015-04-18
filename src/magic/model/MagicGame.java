@@ -69,6 +69,7 @@ public class MagicGame {
     private final MagicCardList exiledUntilEndOfTurn;
     private final MagicEventQueue events;
     private final MagicStack stack;
+    private final MagicStack pendingStack;
     private final MagicPlayer scorePlayer;
     private final MagicGameplay gameplay;
     private final MagicActionList actions;
@@ -150,6 +151,7 @@ public class MagicGame {
         exiledUntilEndOfTurn=new MagicCardList();
         events=new MagicEventQueue();
         stack=new MagicStack();
+        pendingStack=new MagicStack();
         visiblePlayer=players[0];
         scorePlayer=visiblePlayer;
         turnPlayer=startPlayer;
@@ -199,6 +201,7 @@ public class MagicGame {
         //construct a new object using copyMap to copy internals
         events=new MagicEventQueue(copyMap, game.events);
         stack=new MagicStack(copyMap, game.stack);
+        pendingStack=new MagicStack(copyMap, game.pendingStack);
         triggers=new MagicPermanentTriggerMap(copyMap, game.triggers);
         additionalTriggers=new MagicPermanentTriggerMap(copyMap, game.additionalTriggers);
         statics=new MagicPermanentStaticMap(copyMap, game.statics);
@@ -228,7 +231,7 @@ public class MagicGame {
         //there should be no pending actions
         assert game.delayedActions.isEmpty() : "delayedActions: " + game.delayedActions;
         delayedActions=new MagicActionList();
-
+        
         //no logging
         disableLog = true;
         undoPoints=null;
@@ -553,6 +556,10 @@ public class MagicGame {
 
     public void addDelayedAction(final MagicAction action) {
         delayedActions.add(action);
+    }
+    
+    public void addPendingTrigger(final MagicEvent event) {
+        pendingStack.add(new MagicTriggerOnStack(event));
     }
 
     public void doAction(final MagicAction action) {
@@ -1045,6 +1052,10 @@ public class MagicGame {
             update();
             // some action may set stateCheckRequired to true, if so loop again
         }
+        // put pending triggers on stack
+        while (pendingStack.isEmpty() == false) {
+            doAction(new PutItemOnStackAction(pendingStack.removeFirst()));
+        }
     }
 
     public void checkUniquenessRule(final MagicPermanent permanent) {
@@ -1362,12 +1373,12 @@ public class MagicGame {
             if (event.hasChoice()) {
                 // ignore
             } else if (trigger.usesStack()) {
-                doAction(new PutItemOnStackAction(new MagicTriggerOnStack(event)));
+                addPendingTrigger(event);
             } else {
                 executeEvent(event, MagicEvent.NO_CHOICE_RESULTS);
             }
         } else if (trigger.usesStack()) {
-            doAction(new PutItemOnStackAction(new MagicTriggerOnStack(event)));
+            addPendingTrigger(event);
         } else {
             addEvent(event);
         }
