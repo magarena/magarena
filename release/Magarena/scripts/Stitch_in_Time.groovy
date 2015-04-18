@@ -16,8 +16,6 @@ def act = {
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicPlayer player = event.getPlayer();
-            final Boolean heads = event.isMode(1) 
             game.addEvent(new MagicCoinFlipEvent(
                 event,
                 act,
