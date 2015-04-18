@@ -1,25 +1,30 @@
+def youLoseAct = {
+    final MagicGame game, final MagicEvent event ->
+    game.doAction(new SacrificeAction(event.getPermanent()));
+}
+
+def playerLoseAct = {
+    final MagicGame game, final MagicEvent event ->
+    game.doAction(new CounterItemOnStackAction(event.getRefCardOnStack()));
+}
+
 [
     new MagicAtYourUpkeepTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
             return new MagicEvent(
                 permanent,
-                new MagicCoinFlipChoice(),
                 this,
-                "PN flips a coin.\$ If PN loses the flip, sacrifice SN."
+                "PN flips a coin. If PN loses the flip, sacrifice SN."
             );
         }
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicPlayer player = event.getPlayer();
-            final Boolean heads = event.isMode(1) 
             game.addEvent(new MagicCoinFlipEvent(
-                event.getSource(),
-                heads,
-                player,
-                null,
-                new SacrificeAction(event.getPermanent())
+                event,
+                MagicEventAction.NONE,
+                youLoseAct
             ));
         }
     },
@@ -29,23 +34,19 @@
             return new MagicEvent(
                 permanent,
                 cardOnStack.getController(),
-                new MagicCoinFlipChoice(),
                 cardOnStack,
                 this,
-                "PN flips a coin.\$ If PN loses the flip, counter RN."
+                "PN flips a coin. If PN loses the flip, counter RN."
             );
         }
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicPlayer player = event.getPlayer();
-            final Boolean heads = event.isMode(1) 
             game.addEvent(new MagicCoinFlipEvent(
-                event.getSource(),
-                heads,
-                player,
-                null,
-                new CounterItemOnStackAction(event.getRefCardOnStack())
+                event,
+                event.getRefCardOnStack(),
+                MagicEventAction.NONE,
+                playerLoseAct
             ));
         }
     }
