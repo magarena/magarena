@@ -5,7 +5,7 @@
             return new MagicEvent(
                 cardOnStack,
                 this,
-                "Look at the top card of your library. You may put that card on the bottom of your library." +
+                "Look at the top card of your library. You may put that card on the bottom of your library. " +
                 "Draw a card."
             );
         }
