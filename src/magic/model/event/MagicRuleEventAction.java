@@ -2420,7 +2420,7 @@ public enum MagicRuleEventAction {
             };
         }
     },
-    FalseScry(
+    PseudoScry(
        "Look at the top card of your library\\. You may put that card on the bottom of your library\\.",
        MagicTiming.Draw,
        "Scry"
