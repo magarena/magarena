@@ -168,7 +168,7 @@ public class MagicDuel {
         DeckGenerators.setRandomDeck(player);
     }
 
-    private void buildDecks() throws InvalidDeckException {
+    public void buildDecks() throws InvalidDeckException {
         for (final MagicPlayerDefinition player : duelConfig.getPlayerDefinitions()) {
             switch (player.getDeckProfile().getDeckType()) {
             case Random:

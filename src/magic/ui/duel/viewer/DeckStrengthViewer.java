@@ -33,6 +33,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.concurrent.atomic.AtomicBoolean;
 import magic.data.MagicIcon;
+import magic.exception.InvalidDeckException;
 
 public class DeckStrengthViewer extends JPanel implements ActionListener {
 
@@ -175,7 +176,19 @@ public class DeckStrengthViewer extends JPanel implements ActionListener {
             }
             startButton.setIcon(IconImages.getIcon(MagicIcon.STOP));
             startButton.repaint();
-            calculateThread=new CalculateThread();
+
+            final Thread.UncaughtExceptionHandler h = new Thread.UncaughtExceptionHandler() {
+                @Override
+                public void uncaughtException(Thread th, Throwable ex) {
+                    if (ex instanceof InvalidDeckException) {
+                        System.err.println("InvalidDeckException");
+                    } else {
+                        System.err.println(ex);
+                    }
+                }
+            };
+            calculateThread = new CalculateThread();
+            calculateThread.setUncaughtExceptionHandler(h);
             calculateThread.start();
         }
     }
@@ -200,6 +213,7 @@ public class DeckStrengthViewer extends JPanel implements ActionListener {
         private final AtomicBoolean running=new AtomicBoolean(true);
         private IGameController controller;
 
+        @Override
         public void run() {
             final GeneralConfig generalConfig=GeneralConfig.getInstance();
             final DuelConfig config=new DuelConfig(DuelConfig.getInstance());
@@ -214,8 +228,15 @@ public class DeckStrengthViewer extends JPanel implements ActionListener {
                 pp.setAiLevel(generalConfig.getStrengthDifficulty());
            
                 players[i] = new MagicPlayerDefinition(pp, config.getPlayerDeckProfile(i));
+
             }
             testDuel.setPlayers(players);
+
+            try {
+                testDuel.buildDecks();
+            } catch (InvalidDeckException ex) {
+                throw new RuntimeException(ex);
+            }
 
             progressBar.setMaximum(testDuel.getGamesTotal());
             progressBar.setValue(0);
@@ -238,6 +259,7 @@ public class DeckStrengthViewer extends JPanel implements ActionListener {
             startButton.setEnabled(true);
             startButton.repaint();
             calculateThread=null;
+
         }
 
         private boolean isDeckStrengthTestFinished(final MagicDuel testDuel) {
