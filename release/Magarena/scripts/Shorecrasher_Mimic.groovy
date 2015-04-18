@@ -10,8 +10,8 @@ def PT = new MagicStatic(MagicLayer.SetPT, MagicStatic.UntilEOT) {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack cardOnStack) {  
             return (permanent.isFriend(cardOnStack) &&
-                    cardOnStack.hasColor(MagicColor.Red) && 
-                    cardOnStack.hasColor(MagicColor.White)) ?
+                    cardOnStack.hasColor(MagicColor.Blue) && 
+                    cardOnStack.hasColor(MagicColor.Green)) ?
                 new MagicEvent(
                     permanent,
                     this,
