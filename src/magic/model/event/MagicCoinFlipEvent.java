@@ -11,7 +11,7 @@ import magic.model.choice.MagicCoinFlipChoice;
 public class MagicCoinFlipEvent extends MagicEvent {
     
     public MagicCoinFlipEvent(final MagicEvent event, final MagicEventAction winAction, final MagicEventAction loseAction) {
-        this(event, MagicEvent.NO_REF, winAction, loseAction);
+        this(event, event.getRef(), winAction, loseAction);
     }
     
     public MagicCoinFlipEvent(final MagicEvent event, final MagicCopyable ref, final MagicEventAction winAction, final MagicEventAction loseAction) {
