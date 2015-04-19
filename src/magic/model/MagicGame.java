@@ -1053,7 +1053,8 @@ public class MagicGame {
             update();
             // some action may set stateCheckRequired to true, if so loop again
         }
-    
+   
+        // update log with messages from state-based actions
         logMessages();
 
         // put pending triggers on stack
