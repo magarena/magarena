@@ -1053,6 +1053,9 @@ public class MagicGame {
             update();
             // some action may set stateCheckRequired to true, if so loop again
         }
+    
+        logMessages();
+
         // put pending triggers on stack
         while (pendingStack.isEmpty() == false) {
             doAction(new PutItemOnStackAction(pendingStack.removeFirst()));
