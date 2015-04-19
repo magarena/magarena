@@ -168,7 +168,7 @@ public class DuelConfig {
         return players;
     }
 
-    public void setPlayerDefinitions(DuelPlayerConfig[] aPlayerDefinitions) {
-        players = aPlayerDefinitions;
+    public void setPlayerConfigs(DuelPlayerConfig[] aConfigs) {
+        players = aConfigs;
     }
 }

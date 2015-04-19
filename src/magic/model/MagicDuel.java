@@ -160,7 +160,7 @@ public class MagicDuel {
 
     // only used by magic.test classes.
     public void setPlayers(final DuelPlayerConfig[] aPlayerDefinitions) {
-        duelConfig.setPlayerDefinitions(aPlayerDefinitions);
+        duelConfig.setPlayerConfigs(aPlayerDefinitions);
     }
 
     // Used by the "Generate Deck" button in DuelPanel.
@@ -199,7 +199,7 @@ public class MagicDuel {
     }
 
     public void initialize() throws InvalidDeckException {
-        duelConfig.setPlayerDefinitions(createPlayers());
+        duelConfig.setPlayerConfigs(createPlayers());
         buildDecks();
     }
 
