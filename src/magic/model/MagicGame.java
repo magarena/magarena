@@ -10,6 +10,8 @@ import magic.model.action.LogMarkerAction;
 import magic.model.action.MarkerAction;
 import magic.model.action.PutItemOnStackAction;
 import magic.model.action.RemoveFromPlayAction;
+import magic.model.action.EnqueueTriggerAction;
+import magic.model.action.DequeueTriggerAction;
 import magic.model.choice.MagicCombatCreature;
 import magic.model.choice.MagicDeclareAttackersResult;
 import magic.model.choice.MagicDeclareBlockersResult;
@@ -559,10 +561,6 @@ public class MagicGame {
         delayedActions.add(action);
     }
     
-    public void addPendingTrigger(final MagicEvent event) {
-        pendingStack.add(new MagicTriggerOnStack(event));
-    }
-
     public void doAction(final MagicAction action) {
         actions.add(action);
         try {
@@ -987,6 +985,10 @@ public class MagicGame {
         return stack;
     }
 
+    public MagicStack getPendingTriggers() {
+        return pendingStack;
+    }
+
     public void setPriorityPassed(final boolean passed) {
         priorityPassed=passed;
     }
@@ -1059,7 +1061,8 @@ public class MagicGame {
 
         // put pending triggers on stack
         while (pendingStack.isEmpty() == false) {
-            doAction(new PutItemOnStackAction(pendingStack.removeFirst()));
+            doAction(new PutItemOnStackAction(pendingStack.peek()));
+            doAction(new DequeueTriggerAction());
         }
     }
 
@@ -1378,12 +1381,12 @@ public class MagicGame {
             if (event.hasChoice()) {
                 // ignore
             } else if (trigger.usesStack()) {
-                addPendingTrigger(event);
+                doAction(new EnqueueTriggerAction(event));
             } else {
                 executeEvent(event, MagicEvent.NO_CHOICE_RESULTS);
             }
         } else if (trigger.usesStack()) {
-            addPendingTrigger(event);
+            doAction(new EnqueueTriggerAction(event));
         } else {
             addEvent(event);
         }
