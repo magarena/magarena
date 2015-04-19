@@ -1,26 +1,24 @@
 package magic.test;
 
+import java.util.concurrent.atomic.AtomicInteger;
+import magic.ai.MagicAIImpl;
 import magic.data.CardDefinitions;
 import magic.data.TokenCardDefinitions;
 import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
+import magic.model.MagicDeckProfile;
+import magic.model.MagicDuel;
 import magic.model.MagicGame;
+import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicPermanentState;
 import magic.model.MagicPlayer;
-
-import magic.model.MagicPayedCost;
-import magic.model.MagicDuel;
-import magic.model.MagicDeckProfile;
+import magic.model.MagicPlayerDefinition;
+import magic.model.action.PlayCardFromStackAction;
+import magic.model.action.PlayTokenAction;
 import magic.model.player.AiProfile;
 import magic.model.player.HumanProfile;
 import magic.model.stack.MagicCardOnStack;
-import magic.model.action.PlayTokenAction;
-import magic.model.action.PlayCardFromStackAction;
-import magic.ai.MagicAIImpl;
-
-import java.util.concurrent.atomic.AtomicInteger;
-import magic.model.MagicPlayerDefinition;
 
 public abstract class TestGameBuilder {
 

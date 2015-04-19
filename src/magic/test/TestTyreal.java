@@ -5,7 +5,6 @@ import magic.model.MagicDuel;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
-
 import magic.model.action.ChangeCountersAction;
 import magic.model.phase.MagicMainPhase;
 
