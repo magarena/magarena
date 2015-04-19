@@ -104,13 +104,13 @@ public class DuelConfig {
         setPlayerProfile(0, PlayerProfile.getHumanPlayer(properties.getProperty(PLAYER_ONE)));
         setPlayerProfile(1, PlayerProfile.getAiPlayer(properties.getProperty(PLAYER_TWO)));
 
-        for (int index = 0; index < getPlayerConfigs().length; index++) {
-            setPlayerDeckProfile(index,
+        for (int i = 0; i < getPlayerConfigs().length; i++) {
+            setPlayerDeckProfile(i,
                     properties.getProperty(
-                            getPlayerPrefix(index) + PLAYER_DECK,
+                            getPlayerPrefix(i) + PLAYER_DECK,
                             DeckType.Random + ";" + MagicDeckProfile.ANY_THREE)
             );
-            getPlayerConfig(index).load(properties, getPlayerPrefix(index));
+            getPlayerConfig(i).load(properties, getPlayerPrefix(i));
         }
     }
 
@@ -128,12 +128,12 @@ public class DuelConfig {
         properties.setProperty(PLAYER_ONE, players[0].getProfile().getId());
         properties.setProperty(PLAYER_TWO, players[1].getProfile().getId());
 
-        for (int index = 0; index < getPlayerConfigs().length; index++) {
-            properties.setProperty(getPlayerPrefix(index) + PLAYER_DECK,
-                    players[index].getDeckProfile().getDeckType().name() + ";"
-                    + players[index].getDeckProfile().getDeckValue()
+        for (int i = 0; i < getPlayerConfigs().length; i++) {
+            properties.setProperty(getPlayerPrefix(i) + PLAYER_DECK,
+                    players[i].getDeckProfile().getDeckType().name() + ";"
+                    + players[i].getDeckProfile().getDeckValue()
             );
-            getPlayerConfig(index).save(properties, getPlayerPrefix(index));
+            getPlayerConfig(i).save(properties, getPlayerPrefix(i));
         }
     }
 
