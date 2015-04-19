@@ -6,6 +6,8 @@ import magic.model.player.PlayerProfile;
 
 public class DuelPlayerConfig {
 
+    private static final String PLAYER_DECK         = "deckProfile";
+
     private MagicDeckProfile deckProfile;
     private final MagicDeck deck = new MagicDeck();
     private PlayerProfile playerProfile;
@@ -53,10 +55,15 @@ public class DuelPlayerConfig {
         }
     }
 
-    public void save(final Properties properties,final String prefix) {
-        int index=1;
+    public void save(final Properties properties, final String prefix) {
+
+        properties.setProperty(prefix + PLAYER_DECK,
+                deckProfile.getDeckType().name() + ";" + deckProfile.getDeckValue()
+        );
+
+        int index = 1;
         for (final MagicCardDefinition cardDefinition : deck) {
-            properties.setProperty(getDeckPrefix(prefix,index++),cardDefinition.getFullName());
+            properties.setProperty(getDeckPrefix(prefix, index++), cardDefinition.getFullName());
         }
     }
 

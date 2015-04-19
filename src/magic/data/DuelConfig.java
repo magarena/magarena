@@ -129,10 +129,6 @@ public class DuelConfig {
         properties.setProperty(PLAYER_TWO, players[1].getProfile().getId());
 
         for (int i = 0; i < getPlayerConfigs().length; i++) {
-            properties.setProperty(getPlayerPrefix(i) + PLAYER_DECK,
-                    players[i].getDeckProfile().getDeckType().name() + ";"
-                    + players[i].getDeckProfile().getDeckValue()
-            );
             getPlayerConfig(i).save(properties, getPlayerPrefix(i));
         }
     }
