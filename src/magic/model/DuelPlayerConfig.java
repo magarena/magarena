@@ -7,7 +7,7 @@ import magic.model.player.PlayerProfile;
 
 public class DuelPlayerConfig {
 
-    private static final String PLAYER_DECK         = "deckProfile";
+    private static final String PLAYER_DECK = "deckProfile";
 
     private MagicDeckProfile deckProfile;
     private final MagicDeck deck = new MagicDeck();
@@ -24,8 +24,9 @@ public class DuelPlayerConfig {
     }
 
     public void setDeckProfile(final MagicDeckProfile profile) {
-        this.deckProfile=profile;
+        this.deckProfile = profile;
     }
+
     public MagicDeckProfile getDeckProfile() {
         return deckProfile;
     }
@@ -38,17 +39,17 @@ public class DuelPlayerConfig {
         deck.setContent(aDeck);
     }
 
-    private static String getDeckPrefix(final String prefix,final int index) {
-        return prefix+"deck"+index;
+    private static String getDeckPrefix(final String prefix, final int index) {
+        return prefix + "deck" + index;
     }
-    
+
     private void setPlayerDeckProfile(final String deckPropertyValue) {
         final DeckType deckType = DeckType.valueOf(deckPropertyValue.split(";", 0)[0]);
         final String deckValue = deckPropertyValue.split(";", 0)[1];
         setDeckProfile(MagicDeckProfile.getDeckProfile(deckType, deckValue));
     }
 
-    public void load(final Properties properties,final String prefix) {
+    public void load(final Properties properties, final String prefix) {
 
         setPlayerDeckProfile(
                 properties.getProperty(
@@ -57,12 +58,12 @@ public class DuelPlayerConfig {
         );
 
         deck.clear();
-        for (int index=1;index<=properties.size();index++) {
-            final String deckPrefix = getDeckPrefix(prefix,index);
+        for (int index = 1; index <= properties.size(); index++) {
+            final String deckPrefix = getDeckPrefix(prefix, index);
             if (properties.containsKey(deckPrefix)) {
                 final String tName = properties.getProperty(deckPrefix);
                 final MagicCardDefinition cdef = CardDefinitions.getCard(tName);
-                if (cdef.isValid()){
+                if (cdef.isValid()) {
                     deck.add(cdef);
                 }
             }
@@ -84,7 +85,6 @@ public class DuelPlayerConfig {
     public PlayerProfile getProfile() {
         return playerProfile;
     }
-
 
     public void setProfile(PlayerProfile aPlayerProfile) {
         playerProfile = aPlayerProfile;
