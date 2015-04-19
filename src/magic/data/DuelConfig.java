@@ -61,15 +61,6 @@ public class DuelConfig {
         );
     }
 
-    // CTR: copy constructor - a common way of creating a copy of an existing object.
-    public DuelConfig(final DuelConfig duelConfig) {
-        startLife = duelConfig.startLife;
-        handSize = duelConfig.handSize;
-        games = duelConfig.games;
-        playerDefs[0] = duelConfig.getPlayerDefinition(0);
-        playerDefs[1] = duelConfig.getPlayerDefinition(1);
-    }
-
     public int getStartLife() {
         return startLife;
     }
