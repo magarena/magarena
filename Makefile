@@ -9,7 +9,7 @@ LIBS=.:lib/annotations.jar:lib/jsr305.jar:release/lib/groovy-all-*.jar
 RUN=$(JAVA) -Dcom.sun.management.jmxremote -cp $(LIBS):$(MAG)
 SHELL=/bin/bash
 BUILD=build
-SRC=$(shell find src -iname *.java)
+SRC=$(shell find src -iname "*.java")
 NO_OUTPUT:=awk 'BEGIN{RS="\a"}{print; exit 1}'
 
 all: tags $(MAG) $(EXE)
