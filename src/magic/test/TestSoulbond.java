@@ -1,7 +1,6 @@
 package magic.test;
 
 import magic.model.MagicCounterType;
-import magic.model.MagicDeckProfile;
 import magic.model.MagicDuel;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;

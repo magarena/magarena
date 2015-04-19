@@ -2,9 +2,6 @@
 
 package magic.test;
 
-import magic.ai.MagicAI;
-import magic.ai.MagicAIImpl;
-import magic.model.MagicDeckProfile;
 import magic.model.MagicDuel;
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
