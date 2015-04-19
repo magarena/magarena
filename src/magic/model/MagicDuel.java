@@ -20,11 +20,11 @@ import magic.utility.MagicSystem;
 
 public class MagicDuel {
 
-    private static final String OPPONENT="opponent";
-    private static final String GAME="game";
-    private static final String PLAYED="played";
-    private static final String WON="won";
-    private static final String START="start";
+    private static final String OPPONENT = "duel.opponent";
+    private static final String GAME = "duel.game";
+    private static final String PLAYED = "duel.played";
+    private static final String WON = "duel.won";
+    private static final String START = "duel.start";
 
     private final DuelConfig duelConfig;
     private int opponentIndex;
