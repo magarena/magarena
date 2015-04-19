@@ -104,6 +104,12 @@ public class DuelConfig {
         players[playerIndex].setDeckProfile(MagicDeckProfile.getDeckProfile(deckType, deckValue));
     }
 
+    private void setPlayerDeckProfile(final int playerIndex, final String deckPropertyValue) {
+        final DeckType deckType = DeckType.valueOf(deckPropertyValue.split(";", 0)[0]);
+        final String deckValue = deckPropertyValue.split(";", 0)[1];
+        setPlayerDeckProfile(playerIndex, deckType, deckValue);
+    }
+
     public void load(final Properties properties) {
         startLife=Integer.parseInt(properties.getProperty(START_LIFE,Integer.toString(startLife)));
         handSize=Integer.parseInt(properties.getProperty(HAND_SIZE,Integer.toString(handSize)));
@@ -118,12 +124,6 @@ public class DuelConfig {
         }
     }
 
-    private void setPlayerDeckProfile(final int playerIndex, final String deckPropertyValue) {
-        final DeckType deckType = DeckType.valueOf(deckPropertyValue.split(";", 0)[0]);
-        final String deckValue = deckPropertyValue.split(";", 0)[1];
-        setPlayerDeckProfile(playerIndex, deckType, deckValue);
-    }
-
     public void load() {
         final File configFile = getConfigFile();
         final Properties properties = configFile.exists() ? FileIO.toProp(configFile) : new Properties();
@@ -131,14 +131,14 @@ public class DuelConfig {
     }
 
     public void save(final Properties properties) {
-        properties.setProperty(PLAYER_ONE, players[0].getProfile().getId());
-        properties.setProperty(PLAYER_TWO, players[1].getProfile().getId());
         properties.setProperty(START_LIFE, Integer.toString(startLife));
         properties.setProperty(HAND_SIZE, Integer.toString(handSize));
         properties.setProperty(GAMES, Integer.toString(games));
+        properties.setProperty(CUBE, cube);
+        properties.setProperty(PLAYER_ONE, players[0].getProfile().getId());
+        properties.setProperty(PLAYER_TWO, players[1].getProfile().getId());
         properties.setProperty(PLAYER_ONE_DECK, players[0].getDeckProfile().getDeckType().name() + ";" + players[0].getDeckProfile().getDeckValue());
         properties.setProperty(PLAYER_TWO_DECK, players[1].getDeckProfile().getDeckType().name() + ";" + players[1].getDeckProfile().getDeckValue());
-        properties.setProperty(CUBE, cube);
         for (int index = 0; index < getPlayerConfigs().length; index++) {
             getPlayerConfig(index).save(properties, getPlayerPrefix(index));
         }
@@ -171,4 +171,5 @@ public class DuelConfig {
     public void setPlayerConfigs(DuelPlayerConfig[] aConfigs) {
         players = aConfigs;
     }
+
 }
