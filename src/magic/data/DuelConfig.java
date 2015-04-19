@@ -19,8 +19,7 @@ public class DuelConfig {
     private static final String CUBE                = "config.cube";
     private static final String PLAYER_ONE          = "p1.profile";
     private static final String PLAYER_TWO          = "p2.profile";
-    private static final String PLAYER_ONE_DECK     = "p1.deckProfile";
-    private static final String PLAYER_TWO_DECK     = "p2.deckProfile";
+    private static final String PLAYER_DECK         = "deckProfile";
 
     public static final int MAX_PLAYERS = 2;
 
@@ -104,9 +103,13 @@ public class DuelConfig {
         cube=properties.getProperty(CUBE,cube);
         setPlayerProfile(0, PlayerProfile.getHumanPlayer(properties.getProperty(PLAYER_ONE)));
         setPlayerProfile(1, PlayerProfile.getAiPlayer(properties.getProperty(PLAYER_TWO)));
-        setPlayerDeckProfile(0, properties.getProperty(PLAYER_ONE_DECK, DeckType.Random + ";" + MagicDeckProfile.ANY_THREE));
-        setPlayerDeckProfile(1, properties.getProperty(PLAYER_TWO_DECK, DeckType.Random + ";" + MagicDeckProfile.ANY_THREE));
+
         for (int index = 0; index < getPlayerConfigs().length; index++) {
+            setPlayerDeckProfile(index,
+                    properties.getProperty(
+                            getPlayerPrefix(index) + PLAYER_DECK,
+                            DeckType.Random + ";" + MagicDeckProfile.ANY_THREE)
+            );
             getPlayerConfig(index).load(properties, getPlayerPrefix(index));
         }
     }
@@ -124,15 +127,18 @@ public class DuelConfig {
         properties.setProperty(CUBE, cube);
         properties.setProperty(PLAYER_ONE, players[0].getProfile().getId());
         properties.setProperty(PLAYER_TWO, players[1].getProfile().getId());
-        properties.setProperty(PLAYER_ONE_DECK, players[0].getDeckProfile().getDeckType().name() + ";" + players[0].getDeckProfile().getDeckValue());
-        properties.setProperty(PLAYER_TWO_DECK, players[1].getDeckProfile().getDeckType().name() + ";" + players[1].getDeckProfile().getDeckValue());
+
         for (int index = 0; index < getPlayerConfigs().length; index++) {
+            properties.setProperty(getPlayerPrefix(index) + PLAYER_DECK,
+                    players[index].getDeckProfile().getDeckType().name() + ";"
+                    + players[index].getDeckProfile().getDeckValue()
+            );
             getPlayerConfig(index).save(properties, getPlayerPrefix(index));
         }
     }
 
     private static String getPlayerPrefix(final int index) {
-        return "p"+(index+1)+".";
+        return "p" + (index + 1) + ".";
     }
 
     public static DuelConfig getInstance() {
