@@ -113,7 +113,7 @@ public class DuelConfig {
         setPlayerProfile(1, PlayerProfile.getAiPlayer(properties.getProperty(PLAYER_TWO)));
         setPlayerDeckProfile(0, properties.getProperty(PLAYER_ONE_DECK, DeckType.Random + ";" + MagicDeckProfile.ANY_THREE));
         setPlayerDeckProfile(1, properties.getProperty(PLAYER_TWO_DECK, DeckType.Random + ";" + MagicDeckProfile.ANY_THREE));
-        for (int index = 0; index < getPlayerDefinitions().length; index++) {
+        for (int index = 0; index < getPlayerConfigs().length; index++) {
             getPlayerConfig(index).load(properties, getPlayerPrefix(index));
         }
     }
@@ -139,7 +139,7 @@ public class DuelConfig {
         properties.setProperty(PLAYER_ONE_DECK, players[0].getDeckProfile().getDeckType().name() + ";" + players[0].getDeckProfile().getDeckValue());
         properties.setProperty(PLAYER_TWO_DECK, players[1].getDeckProfile().getDeckType().name() + ";" + players[1].getDeckProfile().getDeckValue());
         properties.setProperty(CUBE, cube);
-        for (int index = 0; index < getPlayerDefinitions().length; index++) {
+        for (int index = 0; index < getPlayerConfigs().length; index++) {
             getPlayerConfig(index).save(properties, getPlayerPrefix(index));
         }
     }
@@ -164,7 +164,7 @@ public class DuelConfig {
         return players[index];
     }
 
-    public DuelPlayerConfig[] getPlayerDefinitions() {
+    public DuelPlayerConfig[] getPlayerConfigs() {
         return players;
     }
 

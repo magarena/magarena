@@ -59,7 +59,7 @@ public class MagicDuel {
     }
 
     public int getGamesTotal() {
-        return (duelConfig.getPlayerDefinitions().length-1)*duelConfig.getNrOfGames();
+        return (duelConfig.getPlayerConfigs().length-1)*duelConfig.getNrOfGames();
     }
 
     public int getGamesWon() {
@@ -147,7 +147,7 @@ public class MagicDuel {
     }
 
     public int getNrOfPlayers() {
-        return duelConfig.getPlayerDefinitions().length;
+        return duelConfig.getPlayerConfigs().length;
     }
 
     public DuelPlayerConfig getPlayer(final int index) {
@@ -155,7 +155,7 @@ public class MagicDuel {
     }
 
     public DuelPlayerConfig[] getPlayers() {
-        return duelConfig.getPlayerDefinitions();
+        return duelConfig.getPlayerConfigs();
     }
 
     // only used by magic.test classes.
@@ -169,7 +169,7 @@ public class MagicDuel {
     }
 
     public void buildDecks() throws InvalidDeckException {
-        for (final DuelPlayerConfig player : duelConfig.getPlayerDefinitions()) {
+        for (final DuelPlayerConfig player : duelConfig.getPlayerConfigs()) {
             switch (player.getDeckProfile().getDeckType()) {
             case Random:
                 DeckGenerators.setRandomDeck(player);
