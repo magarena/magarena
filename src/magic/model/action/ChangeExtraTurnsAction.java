@@ -8,21 +8,18 @@ public class ChangeExtraTurnsAction extends MagicAction {
     private final MagicPlayer player;
     private final int amount;
 
-    public ChangeExtraTurnsAction(final MagicPlayer player,final int amount) {
-
-        this.player=player;
-        this.amount=amount;
+    public ChangeExtraTurnsAction(final MagicPlayer aPlayer,final int aAmount) {
+        player = aPlayer;
+        amount = aAmount;
     }
 
     @Override
     public void doAction(final MagicGame game) {
-
         player.changeExtraTurns(amount);
     }
 
     @Override
     public void undoAction(final MagicGame game) {
-
         player.changeExtraTurns(-amount);
     }
 }
