@@ -43,24 +43,7 @@ public class SelectAiPlayerScreen
      */
     @Override
     protected void createDefaultPlayerProfiles() throws IOException {
-        // Les Vegas
-        AiProfile profile = new AiProfile();
-        profile.setPlayerName("Les Vegas");
-        profile.setAiType(MagicAIImpl.VEGAS);
-        profile.setAiLevel(6);
-        profile.save();
-        // Mini Max
-        profile = new AiProfile();
-        profile.setPlayerName("Mini Max");
-        profile.setAiType(MagicAIImpl.MMAB);
-        profile.setAiLevel(6);
-        profile.save();
-        // Monty Carlo
-        profile = new AiProfile();
-        profile.setPlayerName("Monty Carlo");
-        profile.setAiType(MagicAIImpl.MCTS);
-        profile.setAiLevel(6);
-        profile.save();
+        PlayerProfiles.createDefaultAiPlayerProfiles();
     }
 
     /* (non-Javadoc)

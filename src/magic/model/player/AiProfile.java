@@ -18,14 +18,26 @@ public class AiProfile extends PlayerProfile {
     private int extraLife = DEFAULT_EXTRA_LIFE;
     private int aiLevel = DEFAULT_AI_LEVEL;
     private MagicAIImpl aiType = DEFAULT_AI_TYPE;
-
+    
     public AiProfile(final String profileId) {
         super(profileId);
         loadProperties();
     }
-
+    
     public AiProfile() {
         loadProperties();
+    }
+    
+    public static AiProfile create(final MagicAIImpl aiImpl, final int level) {
+        return create(aiImpl.name(), aiImpl, level);
+    }
+    
+    public static AiProfile create(final String name, final MagicAIImpl aiImpl, final int level) {
+        final AiProfile ap = new AiProfile();
+        ap.setPlayerName(name);
+        ap.setAiType(aiImpl);
+        ap.setAiLevel(level);
+        return ap;
     }
 
     public int getExtraLife() {

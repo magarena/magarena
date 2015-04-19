@@ -105,19 +105,18 @@ public class FiremindDuelRunner {
         // Set difficulty.
         final MagicDuel testDuel = new MagicDuel(config);
 
-        final AiProfile pp1 = new AiProfile();
-        pp1.setPlayerName("Player1");
-        pp1.setAiType(ai1);
-        pp1.setAiLevel(str1);
-        
-        final AiProfile pp2 = new AiProfile();
-        pp2.setPlayerName("Player2");
-        pp2.setAiType(ai2);
-        pp2.setAiLevel(str2);
-        
         final MagicDeckProfile profile = new MagicDeckProfile("bgruw");
-        final MagicPlayerDefinition player1 = new MagicPlayerDefinition(pp1, profile);
-        final MagicPlayerDefinition player2 = new MagicPlayerDefinition(pp2, profile);
+        
+        final MagicPlayerDefinition player1 = new MagicPlayerDefinition(
+            AiProfile.create("Player1", ai1, str1), 
+            profile
+        );
+        
+        final MagicPlayerDefinition player2 = new MagicPlayerDefinition(
+            AiProfile.create("Player2", ai2, str2),
+            profile
+        );
+        
         testDuel.setPlayers(new MagicPlayerDefinition[] { player1, player2 });
 
         // Set the deck.

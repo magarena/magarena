@@ -138,11 +138,10 @@ public class DeckStrCal {
         // Create players 
         final MagicPlayerDefinition[] players = new MagicPlayerDefinition[2];
         for (int i = 0; i < 2; i++) {
-            final AiProfile pp = new AiProfile();
-            pp.setPlayerName(ai[i].toString());
-            pp.setAiType(ai[i]);
-            pp.setAiLevel(str[i]);
-            players[i] = new MagicPlayerDefinition(pp,MagicDeckProfile.getDeckProfile(profile));
+            players[i] = new MagicPlayerDefinition(
+                AiProfile.create(ai[i], str[i]),
+                MagicDeckProfile.getDeckProfile(profile)
+            );
         }
         testDuel.setPlayers(players);
 

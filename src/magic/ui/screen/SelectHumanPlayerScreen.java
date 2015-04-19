@@ -38,9 +38,7 @@ public class SelectHumanPlayerScreen
      */
     @Override
     protected void createDefaultPlayerProfiles() throws IOException {
-        final HumanProfile profile = new HumanProfile();
-        profile.setPlayerName(getDefaultPlayerProfileName());
-        profile.save();
+        PlayerProfiles.createDefaultHumanPlayerProfiles();
     }
 
     private String getDefaultPlayerProfileName() {
@@ -95,8 +93,7 @@ public class SelectHumanPlayerScreen
                     JOptionPane.PLAIN_MESSAGE,
                     null, null, null);
             if (newName != null && !newName.trim().isEmpty()) {
-                final PlayerProfile newProfile = new HumanProfile();
-                newProfile.setPlayerName(newName);
+                final PlayerProfile newProfile = HumanProfile.create(newName);
                 newProfile.save();
                 PlayerProfiles.getPlayerProfiles().put(newProfile.getId(), newProfile);
                 refreshProfilesJList(newProfile);

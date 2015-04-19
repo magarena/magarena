@@ -120,17 +120,8 @@ public abstract class TestGameBuilder {
         final MagicDuel duel=new MagicDuel();
 
         final MagicDeckProfile profile=new MagicDeckProfile("bgruw");
-
-        final HumanProfile hp = new HumanProfile();
-        hp.setPlayerName("Player");
-        final MagicPlayerDefinition player1=new MagicPlayerDefinition(hp,profile);
-
-        final AiProfile ap = new AiProfile();
-        ap.setPlayerName(aAiType.name());
-        ap.setAiType(aAiType);
-        ap.setAiLevel(aAiLevel);
-
-        final MagicPlayerDefinition player2=new MagicPlayerDefinition(ap,profile);
+        final MagicPlayerDefinition player1=new MagicPlayerDefinition(HumanProfile.create("Player"),profile);
+        final MagicPlayerDefinition player2=new MagicPlayerDefinition(AiProfile.create(aAiType, aAiLevel),profile);
 
         duel.setPlayers(new MagicPlayerDefinition[]{player1,player2});
         duel.setStartPlayer(0);

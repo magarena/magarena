@@ -83,9 +83,8 @@ public final class PlayerProfiles {
         }
     }
 
-    private static void createDefaultHumanPlayerProfiles() throws IOException {
-        final HumanProfile profile = new HumanProfile();
-        profile.setPlayerName(getDefaultPlayerProfileName());
+    public static void createDefaultHumanPlayerProfiles() throws IOException {
+        final HumanProfile profile = HumanProfile.create(getDefaultPlayerProfileName());
         profile.save();
     }
 
@@ -95,26 +94,17 @@ public final class PlayerProfiles {
 
     }
 
-    private static void createDefaultAiPlayerProfiles() throws IOException {
-        // Les Vegas
-        AiProfile profile = new AiProfile();
-        profile.setPlayerName("Les Vegas");
-        profile.setAiType(MagicAIImpl.VEGAS);
-        profile.setAiLevel(6);
+    public static void createDefaultAiPlayerProfiles() throws IOException {
+        AiProfile profile;
+        profile = AiProfile.create("Les Vegas", MagicAIImpl.VEGAS, 6);
         profile.save();
         setPlayerAvatar(profile, PlayerProfiles.AVATAR_LesVegas);
-        // Mini Max
-        profile = new AiProfile();
-        profile.setPlayerName("Mini Max");
-        profile.setAiType(MagicAIImpl.MMAB);
-        profile.setAiLevel(6);
+        
+        profile = AiProfile.create("Mini Max", MagicAIImpl.MMAB, 6);
         profile.save();
         setPlayerAvatar(profile, PlayerProfiles.AVATAR_MiniMax);
-        // Monty Carlo
-        profile = new AiProfile();
-        profile.setPlayerName("Monty Carlo");
-        profile.setAiType(MagicAIImpl.MCTS);
-        profile.setAiLevel(6);
+        
+        profile = AiProfile.create("Monty Carlo", MagicAIImpl.MCTS, 6);
         profile.save();
         setPlayerAvatar(profile, PlayerProfiles.AVATAR_MontyCarlo);
     }

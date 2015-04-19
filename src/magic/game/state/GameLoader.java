@@ -34,42 +34,23 @@ public final class GameLoader {
 
     private static MagicDuel getDuelState(final GameState gameState) {
         final MagicDuel duel = new MagicDuel();
+        final MagicPlayerDefinition[] playerDefs = new MagicPlayerDefinition[2];
 
-        PlayerProfile pp1;
-        if (gameState.getPlayer(0).isAi()) {
-            final MagicAIImpl ai = MagicAIImpl.valueOf(gameState.getPlayer(0).getAiType());
-            final AiProfile ap = new AiProfile();
-            ap.setPlayerName(gameState.getPlayer(0).getName());
-            ap.setAiType(ai);
-            ap.setAiLevel(gameState.getDifficulty());
-            pp1 = ap;
-        } else {
-            final HumanProfile hp = new HumanProfile();
-            hp.setPlayerName(gameState.getPlayer(0).getName());
-            pp1 = hp;
+        for (int i = 0; i < playerDefs.length; i++) {
+            final PlayerProfile pp = gameState.getPlayer(i).isAi() ?
+                AiProfile.create(
+                    gameState.getPlayer(i).getName(), 
+                    MagicAIImpl.valueOf(gameState.getPlayer(i).getAiType()),
+                    gameState.getDifficulty()
+                ) :
+                HumanProfile.create(
+                    gameState.getPlayer(i).getName()
+                );
+            final MagicDeckProfile deckProfile = new MagicDeckProfile(gameState.getPlayer(i).getDeckProfileColors());
+            playerDefs[i] = new MagicPlayerDefinition(pp, deckProfile);
         }
         
-        final MagicDeckProfile deckProfile1 = new MagicDeckProfile(gameState.getPlayer(0).getDeckProfileColors());
-        final MagicPlayerDefinition playerDef1 = new MagicPlayerDefinition(pp1, deckProfile1);
-        
-        PlayerProfile pp2;
-        if (gameState.getPlayer(1).isAi()) {
-            final MagicAIImpl ai = MagicAIImpl.valueOf(gameState.getPlayer(1).getAiType());
-            final AiProfile ap = new AiProfile();
-            ap.setPlayerName(gameState.getPlayer(1).getName());
-            ap.setAiType(ai);
-            ap.setAiLevel(gameState.getDifficulty());
-            pp2 = ap;
-        } else {
-            final HumanProfile hp = new HumanProfile();
-            hp.setPlayerName(gameState.getPlayer(1).getName());
-            pp2 = hp;
-        }
-
-        final MagicDeckProfile deckProfile2 = new MagicDeckProfile(gameState.getPlayer(1).getDeckProfileColors());
-        final MagicPlayerDefinition playerDef2 = new MagicPlayerDefinition(pp2, deckProfile2);
-        
-        duel.setPlayers(new MagicPlayerDefinition[]{playerDef1, playerDef2});
+        duel.setPlayers(playerDefs);
         duel.setStartPlayer(gameState.getStartPlayerIndex());
         return duel;
     }

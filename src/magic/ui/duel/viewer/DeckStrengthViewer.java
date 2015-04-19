@@ -215,10 +215,7 @@ public class DeckStrengthViewer extends JPanel implements ActionListener {
 
             final MagicPlayerDefinition[] players = new MagicPlayerDefinition[2];
             for (int i = 0; i < 2; i++) {
-                final AiProfile pp = new AiProfile();
-                pp.setPlayerName(MagicAIImpl.DECKSTR_AIS[i].name());
-                pp.setAiType(MagicAIImpl.DECKSTR_AIS[i]);
-                pp.setAiLevel(generalConfig.getStrengthDifficulty());
+                final AiProfile pp = AiProfile.create(MagicAIImpl.DECKSTR_AIS[i], generalConfig.getStrengthDifficulty());
                 players[i] = new MagicPlayerDefinition(pp, config.getPlayerDeckProfile(i));
             }
 
