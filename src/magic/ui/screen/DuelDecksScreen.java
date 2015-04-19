@@ -215,7 +215,6 @@ public class DuelDecksScreen
      */
     @Override
     public boolean isScreenReadyToClose(final AbstractScreen nextScreen) {
-        screenContent.haltStrengthViewer();
         return true;
     }
 

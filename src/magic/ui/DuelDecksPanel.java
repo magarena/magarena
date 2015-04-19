@@ -10,7 +10,6 @@ import magic.model.player.PlayerProfile;
 import magic.ui.duel.viewer.CardViewer;
 import magic.ui.duel.viewer.DeckDescriptionViewer;
 import magic.ui.duel.viewer.DeckStatisticsViewer;
-import magic.ui.duel.viewer.DeckStrengthViewer;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TexturedPanel;
 import magic.ui.player.PlayerDetailsPanel;
@@ -48,7 +47,6 @@ public class DuelDecksPanel extends TexturedPanel {
     private final MigLayout migLayout = new MigLayout();
     private final MagicDuel duel;
     private final JTabbedPane tabbedPane;
-    private final DeckStrengthViewer strengthViewer;
     private final DeckDescriptionViewer[] deckDescriptionViewers;
     private final CardViewer cardViewer;
     private final CardTable[] cardTables;
@@ -97,10 +95,6 @@ public class DuelDecksPanel extends TexturedPanel {
         statsViewers = new DeckStatisticsViewer[players.length];
         generateButtons = new JButton[players.length];
 
-        // deck strength tester
-        strengthViewer=new DeckStrengthViewer(duel);
-        strengthViewer.setAlignmentX(Component.LEFT_ALIGNMENT);
-
         for (int i = 0; i < players.length; i++) {
 
             final MagicPlayerDefinition player = players[i];
@@ -144,9 +138,6 @@ public class DuelDecksPanel extends TexturedPanel {
             rightPanel.add(Box.createVerticalStrut(SPACING));
 
             if (player.getProfile().isHuman()) {
-                rightPanel.add(strengthViewer);
-                rightPanel.add(Box.createVerticalStrut(SPACING));
-
                 // show card
                 cardViewer.setCard(player.getDeck().get(0));
             }
@@ -247,10 +238,6 @@ public class DuelDecksPanel extends TexturedPanel {
             statsViewers[i].setDeck(deck);
             deckDescriptionViewers[i].setPlayer(player);
         }
-    }
-
-    public void haltStrengthViewer() {
-        strengthViewer.halt();
     }
 
     @SuppressWarnings("serial")
