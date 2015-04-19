@@ -805,16 +805,8 @@ public class SwingGameController implements IUIGameController, ILogBookListener 
         final boolean isHumanTurn = game.getTurnPlayer().isHuman();
         final boolean isHumanPriority = game.getPriorityPlayer().isHuman();
         final boolean isStackEmpty = game.getStack().isEmpty();
-        return isHumanTurn && isHumanPriority && isFirstMainPhase() && isStackEmpty;
-    }
-
-    private boolean isFirstMainPhase() {
-        if (game.getPhase() instanceof MagicMainPhase) {
-            final MagicMainPhase phase = (MagicMainPhase)game.getPhase();
-            return phase == MagicMainPhase.getFirstInstance();
-        } else {
-            return false;
-        }
+        final boolean isFirstMain = game.isPhase(MagicPhaseType.FirstMain); 
+        return isHumanTurn && isHumanPriority && isFirstMain && isStackEmpty;
     }
 
     public void setGamePaused(final boolean isPaused) {
