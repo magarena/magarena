@@ -7,7 +7,7 @@ import magic.model.MagicDeckProfile;
 import magic.model.MagicDuel;
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
-import magic.model.MagicPlayerDefinition;
+import magic.model.DuelPlayerConfig;
 import magic.model.phase.MagicMainPhase;
 import magic.model.player.AiProfile;
 import magic.model.player.HumanProfile;
@@ -34,7 +34,7 @@ public final class GameLoader {
 
     private static MagicDuel getDuelState(final GameState gameState) {
         final MagicDuel duel = new MagicDuel();
-        final MagicPlayerDefinition[] playerDefs = new MagicPlayerDefinition[2];
+        final DuelPlayerConfig[] playerDefs = new DuelPlayerConfig[2];
 
         for (int i = 0; i < playerDefs.length; i++) {
             final PlayerProfile pp = gameState.getPlayer(i).isAi() ?
@@ -47,7 +47,7 @@ public final class GameLoader {
                     gameState.getPlayer(i).getName()
                 );
             final MagicDeckProfile deckProfile = new MagicDeckProfile(gameState.getPlayer(i).getDeckProfileColors());
-            playerDefs[i] = new MagicPlayerDefinition(pp, deckProfile);
+            playerDefs[i] = new DuelPlayerConfig(pp, deckProfile);
         }
         
         duel.setPlayers(playerDefs);

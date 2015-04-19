@@ -50,7 +50,7 @@ public class MagicPlayer extends MagicObjectImpl implements MagicTarget, MagicMa
     private static final int LOSING_POISON=10;
     private static final long ID_FACTOR=31;
 
-    private final MagicPlayerDefinition playerDefinition;
+    private final DuelPlayerConfig playerDefinition;
     private final int index;
 
     private int life;
@@ -77,7 +77,7 @@ public class MagicPlayer extends MagicObjectImpl implements MagicTarget, MagicMa
 
     private long[] keys;
 
-    MagicPlayer(final int aLife,final MagicPlayerDefinition aPlayerDefinition,final int aIndex) {
+    MagicPlayer(final int aLife,final DuelPlayerConfig aPlayerDefinition,final int aIndex) {
         playerDefinition = aPlayerDefinition;
         index = aIndex;
         life = aLife;
@@ -204,7 +204,7 @@ public class MagicPlayer extends MagicObjectImpl implements MagicTarget, MagicMa
         return set;
     }
 
-    public MagicPlayerDefinition getPlayerDefinition() {
+    public DuelPlayerConfig getPlayerDefinition() {
         return playerDefinition;
     }
 

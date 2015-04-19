@@ -5,7 +5,7 @@ import magic.data.DuelConfig;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
 import magic.model.MagicDuel;
-import magic.model.MagicPlayerDefinition;
+import magic.model.DuelPlayerConfig;
 import magic.model.player.PlayerProfile;
 import magic.ui.duel.viewer.CardViewer;
 import magic.ui.duel.viewer.DeckDescriptionViewer;
@@ -89,7 +89,7 @@ public class DuelDecksPanel extends TexturedPanel {
         // create tabs for each player
         tabbedPane = new JTabbedPane(JTabbedPane.TOP);
 
-        final MagicPlayerDefinition[] players = duel.getPlayers();
+        final DuelPlayerConfig[] players = duel.getPlayers();
         cardTables = new CardTable[players.length];
         deckDescriptionViewers = new DeckDescriptionViewer[players.length];
         statsViewers = new DeckStatisticsViewer[players.length];
@@ -97,7 +97,7 @@ public class DuelDecksPanel extends TexturedPanel {
 
         for (int i = 0; i < players.length; i++) {
 
-            final MagicPlayerDefinition player = players[i];
+            final DuelPlayerConfig player = players[i];
 
             // deck description
             deckDescriptionViewers[i] = new DeckDescriptionViewer();
@@ -221,7 +221,7 @@ public class DuelDecksPanel extends TexturedPanel {
         return duel;
     }
 
-    public MagicPlayerDefinition getSelectedPlayer() {
+    public DuelPlayerConfig getSelectedPlayer() {
         return duel.getPlayers()[tabbedPane.getSelectedIndex()];
     }
 
@@ -231,7 +231,7 @@ public class DuelDecksPanel extends TexturedPanel {
 
     public void updateDecksAfterEdit() {
         for (int i = 0; i < statsViewers.length; i++) {
-            final MagicPlayerDefinition player = duel.getPlayers()[i];
+            final DuelPlayerConfig player = duel.getPlayers()[i];
             final MagicDeck deck = player.getDeck();
             cardTables[i].setCards(deck);
             cardTables[i].setTitle(generateTitle(deck));

@@ -22,7 +22,7 @@ import magic.model.MagicDeckProfile;
 import magic.model.MagicDuel;
 import magic.model.MagicGame;
 import magic.model.MagicGameLog;
-import magic.model.MagicPlayerDefinition;
+import magic.model.DuelPlayerConfig;
 import magic.model.MagicRandom;
 import magic.model.player.AiProfile;
 
@@ -107,17 +107,17 @@ public class FiremindDuelRunner {
 
         final MagicDeckProfile profile = new MagicDeckProfile("bgruw");
         
-        final MagicPlayerDefinition player1 = new MagicPlayerDefinition(
+        final DuelPlayerConfig player1 = new DuelPlayerConfig(
             AiProfile.create("Player1", ai1, str1), 
             profile
         );
         
-        final MagicPlayerDefinition player2 = new MagicPlayerDefinition(
+        final DuelPlayerConfig player2 = new DuelPlayerConfig(
             AiProfile.create("Player2", ai2, str2),
             profile
         );
         
-        testDuel.setPlayers(new MagicPlayerDefinition[] { player1, player2 });
+        testDuel.setPlayers(new DuelPlayerConfig[] { player1, player2 });
 
         // Set the deck.
         if (deck1.length() > 0) {

@@ -13,7 +13,7 @@ import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicPermanentState;
 import magic.model.MagicPlayer;
-import magic.model.MagicPlayerDefinition;
+import magic.model.DuelPlayerConfig;
 import magic.model.action.PlayCardFromStackAction;
 import magic.model.action.PlayTokenAction;
 import magic.model.player.AiProfile;
@@ -119,10 +119,10 @@ public abstract class TestGameBuilder {
         final MagicDuel duel=new MagicDuel();
 
         final MagicDeckProfile profile=new MagicDeckProfile("bgruw");
-        final MagicPlayerDefinition player1=new MagicPlayerDefinition(HumanProfile.create("Player"),profile);
-        final MagicPlayerDefinition player2=new MagicPlayerDefinition(AiProfile.create(aAiType, aAiLevel),profile);
+        final DuelPlayerConfig player1=new DuelPlayerConfig(HumanProfile.create("Player"),profile);
+        final DuelPlayerConfig player2=new DuelPlayerConfig(AiProfile.create(aAiType, aAiLevel),profile);
 
-        duel.setPlayers(new MagicPlayerDefinition[]{player1,player2});
+        duel.setPlayers(new DuelPlayerConfig[]{player1,player2});
         duel.setStartPlayer(0);
         return duel;
     }

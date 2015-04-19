@@ -9,7 +9,7 @@ import magic.model.MagicDuel;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
-import magic.model.MagicPlayerDefinition;
+import magic.model.DuelPlayerConfig;
 
 public final class GameStateSnapshot {
     private GameStateSnapshot() {}
@@ -32,7 +32,7 @@ public final class GameStateSnapshot {
 
     private static void saveGamePlayerState(final int playerIndex, final GameState gameState, final MagicGame game) {
         final MagicDuel duel = game.getDuel();
-        final MagicPlayerDefinition playerDef = duel.getPlayer(playerIndex);
+        final DuelPlayerConfig playerDef = duel.getPlayer(playerIndex);
         final GamePlayerState gamePlayerState = gameState.getPlayer(playerIndex);
         final MagicPlayer player = game.getPlayer(playerIndex);
         gamePlayerState.setName(playerDef.getName());

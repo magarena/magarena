@@ -11,7 +11,7 @@ import magic.model.MagicDuel;
 import magic.model.MagicGame;
 import magic.model.MagicRandom;
 import magic.model.MagicDeckProfile;
-import magic.model.MagicPlayerDefinition;
+import magic.model.DuelPlayerConfig;
 import magic.model.player.AiProfile;
 import magic.data.DeckGenerators;
 import magic.exception.InvalidDeckException;
@@ -136,9 +136,9 @@ public class DeckStrCal {
         testDuel.initialize();
         
         // Create players 
-        final MagicPlayerDefinition[] players = new MagicPlayerDefinition[2];
+        final DuelPlayerConfig[] players = new DuelPlayerConfig[2];
         for (int i = 0; i < 2; i++) {
-            players[i] = new MagicPlayerDefinition(
+            players[i] = new DuelPlayerConfig(
                 AiProfile.create(ai[i], str[i]),
                 MagicDeckProfile.getDeckProfile(profile)
             );

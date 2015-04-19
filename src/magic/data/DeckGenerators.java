@@ -2,8 +2,8 @@ package magic.data;
 
 import magic.generator.RandomDeckGenerator;
 import magic.model.MagicCubeDefinition;
-import magic.model.MagicPlayerDefinition;
 
+import magic.model.DuelPlayerConfig;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Map;
@@ -113,7 +113,7 @@ public class DeckGenerators {
      * <p>
      * This also includes the various random theme decks (like "Fairy Horde", "Token Madness", etc).
      */
-    private static void setRandomColorDeck(final MagicPlayerDefinition player) {
+    private static void setRandomColorDeck(final DuelPlayerConfig player) {
         final MagicDeckProfile deckProfile = player.getDeckProfile();
         final MagicDeck deck = player.getDeck();
         final MagicCubeDefinition cubeDefinition = CubeDefinitions.getCubeDefinition(DuelConfig.getInstance().getCube());
@@ -132,7 +132,7 @@ public class DeckGenerators {
      * <p>
      * This can be generated from scratch or an existing deck file.
      */
-    public static void setRandomDeck(final MagicPlayerDefinition player) throws InvalidDeckException {
+    public static void setRandomDeck(final DuelPlayerConfig player) throws InvalidDeckException {
         final boolean isUnspecifiedGenerator = (getDeckGenerator(player.getDeckProfile()) == null) && (player.getDeckProfile().getNrOfColors() == 0);
         final boolean loadRandomDeckFile = player.getDeckProfile().isPreConstructed() || isUnspecifiedGenerator;
         if (loadRandomDeckFile) {

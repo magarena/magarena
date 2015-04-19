@@ -4,7 +4,7 @@ import magic.data.CardStatistics;
 import magic.ui.IconImages;
 import magic.model.MagicColor;
 import magic.model.MagicDeck;
-import magic.model.MagicPlayerDefinition;
+import magic.model.DuelPlayerConfig;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TexturedPanel;
@@ -167,6 +167,6 @@ public class DeckStatisticsViewer extends TexturedPanel implements ChangeListene
 
     @Override
     public void stateChanged(final ChangeEvent event) {
-        setDeck(((MagicPlayerDefinition)event.getSource()).getDeck());
+        setDeck(((DuelPlayerConfig)event.getSource()).getDeck());
     }
 }

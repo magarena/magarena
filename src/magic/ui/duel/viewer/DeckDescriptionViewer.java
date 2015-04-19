@@ -10,7 +10,7 @@ import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import magic.model.MagicDeck;
-import magic.model.MagicPlayerDefinition;
+import magic.model.DuelPlayerConfig;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TexturedPanel;
@@ -22,7 +22,7 @@ public class DeckDescriptionViewer extends JPanel implements FocusListener {
 
     private static final Dimension PREFERRED_SIZE = new Dimension(270, 110);
     private final JTextArea textArea;
-    private MagicPlayerDefinition player;
+    private DuelPlayerConfig player;
     private final JScrollPane scrollPane = new JScrollPane();
 
     public DeckDescriptionViewer() {
@@ -79,7 +79,7 @@ public class DeckDescriptionViewer extends JPanel implements FocusListener {
         revalidate();
     }
 
-    public void setPlayer(final MagicPlayerDefinition playerDef) {
+    public void setPlayer(final DuelPlayerConfig playerDef) {
         this.player = playerDef;
         setDeckDescription(playerDef.getDeck().getDescription());
     }

@@ -4,14 +4,14 @@ import java.util.Properties;
 import magic.data.CardDefinitions;
 import magic.model.player.PlayerProfile;
 
-public class MagicPlayerDefinition {
+public class DuelPlayerConfig {
 
     private MagicDeckProfile deckProfile;
     private final MagicDeck deck = new MagicDeck();
     private PlayerProfile playerProfile;
 
     // CTR
-    public MagicPlayerDefinition(final PlayerProfile aPlayerProfile, final MagicDeckProfile aDeckProfile) {
+    public DuelPlayerConfig(final PlayerProfile aPlayerProfile, final MagicDeckProfile aDeckProfile) {
         playerProfile = aPlayerProfile;
         deckProfile = aDeckProfile;
     }

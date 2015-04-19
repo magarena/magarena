@@ -10,7 +10,7 @@ import magic.model.MagicColor;
 import magic.model.MagicManaType;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicPermanent;
-import magic.model.MagicPlayerDefinition;
+import magic.model.DuelPlayerConfig;
 import magic.model.player.PlayerProfile;
 import magic.ui.theme.PlayerAvatar;
 import magic.utility.MagicResources;
@@ -152,23 +152,23 @@ public final class IconImages {
         throw new RuntimeException("No icon available for MagicManaType " + mtype);
     }
 
-    public static ImageIcon getIconSize1(final MagicPlayerDefinition playerDef) {
+    public static ImageIcon getIconSize1(final DuelPlayerConfig playerDef) {
         return getSizedAvatarImageIcon(playerDef, 1);
     }    
 
-    public static ImageIcon getIconSize2(final MagicPlayerDefinition playerDef) {
+    public static ImageIcon getIconSize2(final DuelPlayerConfig playerDef) {
         return getSizedAvatarImageIcon(playerDef, 2);
     }
 
-    public static ImageIcon getIconSize3(final MagicPlayerDefinition playerDef) {
+    public static ImageIcon getIconSize3(final DuelPlayerConfig playerDef) {
         return getSizedAvatarImageIcon(playerDef, 3);
     }
 
-    public static ImageIcon getIconSize4(final MagicPlayerDefinition playerDef) {
+    public static ImageIcon getIconSize4(final DuelPlayerConfig playerDef) {
         return getSizedAvatarImageIcon(playerDef, 4);
     }
 
-    private static ImageIcon getSizedAvatarImageIcon(final MagicPlayerDefinition playerDef, final int size) {
+    private static ImageIcon getSizedAvatarImageIcon(final DuelPlayerConfig playerDef, final int size) {
         return getPlayerAvatar(playerDef.getProfile()).getIcon(size);
     }
 

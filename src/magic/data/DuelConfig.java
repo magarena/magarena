@@ -4,7 +4,7 @@ import java.io.File;
 import java.util.Properties;
 import magic.model.MagicDeckProfile;
 import magic.model.MagicDuel;
-import magic.model.MagicPlayerDefinition;
+import magic.model.DuelPlayerConfig;
 import magic.model.player.PlayerProfile;
 import magic.model.player.PlayerProfiles;
 import magic.utility.MagicFileSystem;
@@ -42,7 +42,7 @@ public class DuelConfig {
     private int handSize = 7;
     private int games = 7;
     private String cube = CubeDefinitions.getCubeNames()[0];
-    private MagicPlayerDefinition[] playerDefs = new MagicPlayerDefinition[MAX_PLAYERS];
+    private DuelPlayerConfig[] playerDefs = new DuelPlayerConfig[MAX_PLAYERS];
 
     // CTR
     public DuelConfig() {
@@ -51,11 +51,11 @@ public class DuelConfig {
         // If missing then creates default profiles.
         PlayerProfiles.refreshMap();
 
-        playerDefs[0] = new MagicPlayerDefinition(
+        playerDefs[0] = new DuelPlayerConfig(
                 PlayerProfiles.getDefaultHumanPlayer(),
                 MagicDeckProfile.getDeckProfile(MagicDeckProfile.ANY_THREE)
         );
-        playerDefs[1] = new MagicPlayerDefinition(
+        playerDefs[1] = new DuelPlayerConfig(
                 PlayerProfiles.getDefaultAiPlayer(),
                 MagicDeckProfile.getDeckProfile(MagicDeckProfile.ANY_THREE)
         );
@@ -160,15 +160,15 @@ public class DuelConfig {
         return (int)Math.ceil(getNrOfGames()/2.0);
     }
 
-    public MagicPlayerDefinition getPlayerDefinition(final int index) {
+    public DuelPlayerConfig getPlayerDefinition(final int index) {
         return playerDefs[index];
     }
 
-    public MagicPlayerDefinition[] getPlayerDefinitions() {
+    public DuelPlayerConfig[] getPlayerDefinitions() {
         return playerDefs;
     }
 
-    public void setPlayerDefinitions(MagicPlayerDefinition[] aPlayerDefinitions) {
+    public void setPlayerDefinitions(DuelPlayerConfig[] aPlayerDefinitions) {
         playerDefs = aPlayerDefinitions;
     }
 }

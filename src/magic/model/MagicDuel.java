@@ -108,14 +108,14 @@ public class MagicDuel {
         }
     }
 
-    private MagicPlayerDefinition[] createPlayers() {
-        final MagicPlayerDefinition[] players = new MagicPlayerDefinition[DuelConfig.MAX_PLAYERS];
+    private DuelPlayerConfig[] createPlayers() {
+        final DuelPlayerConfig[] players = new DuelPlayerConfig[DuelConfig.MAX_PLAYERS];
         players[0] =
-                new MagicPlayerDefinition(
+                new DuelPlayerConfig(
                         duelConfig.getPlayerProfile(0),
                         duelConfig.getPlayerDeckProfile(0));
         players[1] =
-                new MagicPlayerDefinition(
+                new DuelPlayerConfig(
                         duelConfig.getPlayerProfile(1),
                         duelConfig.getPlayerDeckProfile(1));
         return players;
@@ -150,26 +150,26 @@ public class MagicDuel {
         return duelConfig.getPlayerDefinitions().length;
     }
 
-    public MagicPlayerDefinition getPlayer(final int index) {
+    public DuelPlayerConfig getPlayer(final int index) {
         return duelConfig.getPlayerDefinition(index);
     }
 
-    public MagicPlayerDefinition[] getPlayers() {
+    public DuelPlayerConfig[] getPlayers() {
         return duelConfig.getPlayerDefinitions();
     }
 
     // only used by magic.test classes.
-    public void setPlayers(final MagicPlayerDefinition[] aPlayerDefinitions) {
+    public void setPlayers(final DuelPlayerConfig[] aPlayerDefinitions) {
         duelConfig.setPlayerDefinitions(aPlayerDefinitions);
     }
 
     // Used by the "Generate Deck" button in DuelPanel.
-    public void buildDeck(final MagicPlayerDefinition player) throws InvalidDeckException {
+    public void buildDeck(final DuelPlayerConfig player) throws InvalidDeckException {
         DeckGenerators.setRandomDeck(player);
     }
 
     public void buildDecks() throws InvalidDeckException {
-        for (final MagicPlayerDefinition player : duelConfig.getPlayerDefinitions()) {
+        for (final DuelPlayerConfig player : duelConfig.getPlayerDefinitions()) {
             switch (player.getDeckProfile().getDeckType()) {
             case Random:
                 DeckGenerators.setRandomDeck(player);
@@ -189,7 +189,7 @@ public class MagicDuel {
         }
     }
 
-    private void setDeckFromFile(final MagicPlayerDefinition player, final Path deckFolder) throws InvalidDeckException {
+    private void setDeckFromFile(final DuelPlayerConfig player, final Path deckFolder) throws InvalidDeckException {
         final String deckFilename = player.getDeckProfile().getDeckValue() + DeckUtils.DECK_EXTENSION;
         player.setDeck(loadDeck(deckFolder.resolve(deckFilename)));
     }

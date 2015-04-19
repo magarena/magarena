@@ -19,7 +19,7 @@ import magic.model.MagicCardDefinition;
 import magic.model.MagicColor;
 import magic.model.MagicDeck;
 import magic.model.MagicDeckProfile;
-import magic.model.MagicPlayerDefinition;
+import magic.model.DuelPlayerConfig;
 import magic.model.MagicRandom;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicFileSystem.DataPath;
@@ -224,7 +224,7 @@ public class DeckUtils {
         return deck;
     }
 
-    public static void loadAndSetPlayerDeck(final String filename, final MagicPlayerDefinition player) throws InvalidDeckException {
+    public static void loadAndSetPlayerDeck(final String filename, final DuelPlayerConfig player) throws InvalidDeckException {
 
         final MagicDeck deck = loadDeckFromFile(Paths.get(filename));
         
@@ -295,7 +295,7 @@ public class DeckUtils {
      *  Load a deck randomly chosen from the "decks" directory.
      *  (includes both custom & prebuilt decks).
      */
-    public static void loadRandomDeckFile(final MagicPlayerDefinition player) throws InvalidDeckException {
+    public static void loadRandomDeckFile(final DuelPlayerConfig player) throws InvalidDeckException {
         final List<File> deckFiles = new ArrayList<>();
         retrieveDeckFiles(MagicFileSystem.getDataPath(DataPath.DECKS).toFile(), deckFiles);
         if (deckFiles.isEmpty()) {
