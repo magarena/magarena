@@ -8,15 +8,15 @@ import java.util.Collections;
 import java.util.Enumeration;
 import java.util.Properties;
 import java.util.TreeSet;
-import magic.utility.MagicSystem;
 import magic.data.DeckGenerators;
 import magic.data.DeckUtils;
 import magic.data.DuelConfig;
 import magic.exception.InvalidDeckException;
 import magic.model.phase.MagicDefaultGameplay;
 import magic.model.player.PlayerProfile;
-import magic.utility.MagicFileSystem;
 import magic.utility.MagicFileSystem.DataPath;
+import magic.utility.MagicFileSystem;
+import magic.utility.MagicSystem;
 
 public class MagicDuel {
 
