@@ -123,8 +123,8 @@ public class MagicDuel {
 
     public MagicGame nextGame() {
         //create players
-        final MagicPlayer player   = new MagicPlayer(duelConfig.getStartLife(), duelConfig.getPlayerDefinition(0), 0);
-        final MagicPlayer opponent = new MagicPlayer(duelConfig.getStartLife(), duelConfig.getPlayerDefinition(opponentIndex), 1);
+        final MagicPlayer player   = new MagicPlayer(duelConfig.getStartLife(), duelConfig.getPlayerConfig(0), 0);
+        final MagicPlayer opponent = new MagicPlayer(duelConfig.getStartLife(), duelConfig.getPlayerConfig(opponentIndex), 1);
 
         //give the AI player extra life
         opponent.setLife(opponent.getLife() + opponent.getAiProfile().getExtraLife());
@@ -151,7 +151,7 @@ public class MagicDuel {
     }
 
     public DuelPlayerConfig getPlayer(final int index) {
-        return duelConfig.getPlayerDefinition(index);
+        return duelConfig.getPlayerConfig(index);
     }
 
     public DuelPlayerConfig[] getPlayers() {
