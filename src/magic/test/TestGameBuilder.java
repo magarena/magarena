@@ -8,7 +8,7 @@ import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPermanentState;
 import magic.model.MagicPlayer;
-import magic.model.MagicPlayerDefinition;
+
 import magic.model.MagicPayedCost;
 import magic.model.MagicDuel;
 import magic.model.MagicDeckProfile;
@@ -20,6 +20,7 @@ import magic.model.action.PlayCardFromStackAction;
 import magic.ai.MagicAIImpl;
 
 import java.util.concurrent.atomic.AtomicInteger;
+import magic.model.MagicPlayerDefinition;
 
 public abstract class TestGameBuilder {
 

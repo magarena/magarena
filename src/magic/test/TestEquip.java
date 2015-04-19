@@ -4,7 +4,7 @@ import magic.model.MagicDeckProfile;
 import magic.model.MagicDuel;
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
-import magic.model.MagicPlayerDefinition;
+
 import magic.model.phase.MagicMainPhase;
 
 // demonstrates MiniMax AI also moves equipment between creatures until all mana is spend.
