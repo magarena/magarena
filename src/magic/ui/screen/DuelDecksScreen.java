@@ -223,7 +223,7 @@ public class DuelDecksScreen
     }
 
     public void saveDuel(final boolean confirmSave) {
-        screenContent.getDuel().save(MagicDuel.getDuelFile());
+        screenContent.getDuel().save(MagicDuel.getLatestDuelFile());
         if (confirmSave) {
             ScreenController.showInfoMessage("<html><b>Duel saved.</b><br><br>Please use Resume Duel option in Main Menu to restore.");
         }

@@ -203,8 +203,8 @@ public class MagicDuel {
         buildDecks();
     }
 
-    public static final File getDuelFile() {
-        return MagicFileSystem.getDataPath(DataPath.DUELS).resolve("saved.duel").toFile();
+    public static final File getLatestDuelFile() {
+        return MagicFileSystem.getDataPath(DataPath.DUELS).resolve("latest.duel").toFile();
     }
 
     private void save(final Properties properties) {

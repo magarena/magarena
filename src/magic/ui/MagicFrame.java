@@ -117,7 +117,7 @@ public class MagicFrame extends JFrame implements IImageDragDropListener {
     }
 
     public void loadDuel() throws InvalidDeckException {
-        final File duelFile=MagicDuel.getDuelFile();
+        final File duelFile=MagicDuel.getLatestDuelFile();
         if (duelFile.exists()) {
             duel=new MagicDuel();
             duel.load(duelFile);

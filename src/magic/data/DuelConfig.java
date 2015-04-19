@@ -24,7 +24,7 @@ public class DuelConfig {
     private static final DuelConfig INSTANCE=new DuelConfig();
 
     // Properties file.
-    private static final String CONFIG_FILENAME     = MagicDuel.getDuelFile().getName();
+    private static final String CONFIG_FILENAME     = MagicDuel.getLatestDuelFile().getName();
     // Properties file keys.
     private static final String START_LIFE          = "life";
     private static final String HAND_SIZE           = "hand";
