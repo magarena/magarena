@@ -207,10 +207,6 @@ public class MagicDuel {
         return MagicFileSystem.getDataPath(DataPath.DUELS).resolve("saved.duel").toFile();
     }
 
-    private static String getPlayerPrefix(final int index) {
-        return "p"+(index+1)+".";
-    }
-
     private void save(final Properties properties) {
         duelConfig.save(properties);
         properties.setProperty(OPPONENT,Integer.toString(opponentIndex));
