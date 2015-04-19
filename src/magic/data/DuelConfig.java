@@ -19,7 +19,6 @@ public class DuelConfig {
     private static final String CUBE                = "config.cube";
     private static final String PLAYER_ONE          = "p1.profile";
     private static final String PLAYER_TWO          = "p2.profile";
-    private static final String PLAYER_DECK         = "deckProfile";
 
     public static final int MAX_PLAYERS = 2;
 
