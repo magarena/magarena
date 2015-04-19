@@ -17,10 +17,10 @@ public class DuelConfig {
     private static final String HAND_SIZE           = "config.hand";
     private static final String GAMES               = "config.games";
     private static final String CUBE                = "config.cube";
-    private static final String PLAYER_ONE          = "p0.profile";
-    private static final String PLAYER_TWO          = "p1.profile";
-    private static final String PLAYER_ONE_DECK     = "p0.deckProfile";
-    private static final String PLAYER_TWO_DECK     = "p1.deckProfile";
+    private static final String PLAYER_ONE          = "p1.profile";
+    private static final String PLAYER_TWO          = "p2.profile";
+    private static final String PLAYER_ONE_DECK     = "p1.deckProfile";
+    private static final String PLAYER_TWO_DECK     = "p2.deckProfile";
 
     public static final int MAX_PLAYERS = 2;
 
