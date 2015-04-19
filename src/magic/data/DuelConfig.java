@@ -7,24 +7,11 @@ import magic.model.MagicDuel;
 import magic.model.DuelPlayerConfig;
 import magic.model.player.PlayerProfile;
 import magic.model.player.PlayerProfiles;
-import magic.utility.MagicFileSystem;
-import magic.utility.MagicFileSystem.DataPath;
 
-/**
- * Represents the default settings when starting a new duel.
- * <p>
- * The settings are saved to CONFIG_FILENAME and are loaded
- * whenever the user starts a new duel.
- * <p>
- * Note that references to decks are specifically to deck
- * profiles and not actual decks (which are generated later).
- */
 public class DuelConfig {
 
     private static final DuelConfig INSTANCE=new DuelConfig();
 
-    // Properties file.
-    private static final String CONFIG_FILENAME     = MagicDuel.getLatestDuelFile().getName();
     // Properties file keys.
     private static final String START_LIFE          = "life";
     private static final String HAND_SIZE           = "hand";
@@ -125,7 +112,7 @@ public class DuelConfig {
     }
 
     public void load() {
-        final File configFile = getConfigFile();
+        final File configFile = MagicDuel.getLatestDuelFile();
         final Properties properties = configFile.exists() ? FileIO.toProp(configFile) : new Properties();
         load(properties);
     }
@@ -146,10 +133,6 @@ public class DuelConfig {
 
     private static String getPlayerPrefix(final int index) {
         return "p"+(index+1)+".";
-    }
-
-    private static File getConfigFile() {
-        return MagicFileSystem.getDataPath(DataPath.DUELS).resolve(CONFIG_FILENAME).toFile();
     }
 
     public static DuelConfig getInstance() {
