@@ -13,10 +13,10 @@ public class DuelConfig {
     private static final DuelConfig INSTANCE=new DuelConfig();
 
     // Properties file keys.
-    private static final String START_LIFE          = "life";
-    private static final String HAND_SIZE           = "hand";
-    private static final String GAMES               = "games";
-    private static final String CUBE                = "cube";
+    private static final String START_LIFE          = "config.life";
+    private static final String HAND_SIZE           = "config.hand";
+    private static final String GAMES               = "config.games";
+    private static final String CUBE                = "config.cube";
     private static final String PLAYER_ONE          = "playerOne";
     private static final String PLAYER_TWO          = "playerTwo";
     private static final String PLAYER_ONE_DECK     = "playerOneDeck";
