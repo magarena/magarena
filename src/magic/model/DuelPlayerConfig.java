@@ -2,6 +2,7 @@ package magic.model;
 
 import java.util.Properties;
 import magic.data.CardDefinitions;
+import magic.data.DeckType;
 import magic.model.player.PlayerProfile;
 
 public class DuelPlayerConfig {
@@ -40,8 +41,21 @@ public class DuelPlayerConfig {
     private static String getDeckPrefix(final String prefix,final int index) {
         return prefix+"deck"+index;
     }
+    
+    private void setPlayerDeckProfile(final String deckPropertyValue) {
+        final DeckType deckType = DeckType.valueOf(deckPropertyValue.split(";", 0)[0]);
+        final String deckValue = deckPropertyValue.split(";", 0)[1];
+        setDeckProfile(MagicDeckProfile.getDeckProfile(deckType, deckValue));
+    }
 
     public void load(final Properties properties,final String prefix) {
+
+        setPlayerDeckProfile(
+                properties.getProperty(
+                        prefix + PLAYER_DECK,
+                        DeckType.Random + ";" + MagicDeckProfile.ANY_THREE)
+        );
+
         deck.clear();
         for (int index=1;index<=properties.size();index++) {
             final String deckPrefix = getDeckPrefix(prefix,index);

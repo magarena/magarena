@@ -90,12 +90,6 @@ public class DuelConfig {
         players[playerIndex].setDeckProfile(MagicDeckProfile.getDeckProfile(deckType, deckValue));
     }
 
-    private void setPlayerDeckProfile(final int playerIndex, final String deckPropertyValue) {
-        final DeckType deckType = DeckType.valueOf(deckPropertyValue.split(";", 0)[0]);
-        final String deckValue = deckPropertyValue.split(";", 0)[1];
-        setPlayerDeckProfile(playerIndex, deckType, deckValue);
-    }
-
     public void load(final Properties properties) {
         startLife=Integer.parseInt(properties.getProperty(START_LIFE,Integer.toString(startLife)));
         handSize=Integer.parseInt(properties.getProperty(HAND_SIZE,Integer.toString(handSize)));
@@ -105,11 +99,6 @@ public class DuelConfig {
         setPlayerProfile(1, PlayerProfile.getAiPlayer(properties.getProperty(PLAYER_TWO)));
 
         for (int i = 0; i < getPlayerConfigs().length; i++) {
-            setPlayerDeckProfile(i,
-                    properties.getProperty(
-                            getPlayerPrefix(i) + PLAYER_DECK,
-                            DeckType.Random + ";" + MagicDeckProfile.ANY_THREE)
-            );
             getPlayerConfig(i).load(properties, getPlayerPrefix(i));
         }
     }
