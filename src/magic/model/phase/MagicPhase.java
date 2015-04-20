@@ -43,25 +43,7 @@ public abstract class MagicPhase {
                     game.doAction(new StackResolveAction());
                     SoundEffects.playGameSound(game,SoundEffects.RESOLVE_SOUND);
                 }
-
-                // Determine next step
-                if (game.isReal()) {
-                    game.setStep(MagicStep.ActivePlayer);
-                } else if (game.getStack().size() > 0) {
-                    // Continue to resolve if stack if not empty
-                    game.setStep(MagicStep.Resolve);
-                } else if (game.getPriorityPassedCount()<MAX_PRIORITY_PASSED_COUNT) {
-                    // Check for maximum number of passes in a phase.
-                    game.setStep(MagicStep.ActivePlayer);
-                } else {
-                    game.setStep(MagicStep.NextPhase);
-                }
-
-                // If next step is not ActivePlayer, check state first
-                if (game.getStep() != MagicStep.ActivePlayer) {
-                    game.checkStatePutTriggers();
-                }
-
+                game.setStep(MagicStep.ActivePlayer);
                 break;
             case NextPhase:
                 executeEndOfPhase(game);
