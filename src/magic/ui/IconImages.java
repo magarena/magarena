@@ -80,11 +80,11 @@ public final class IconImages {
         return manaIcons.get(key);
     }
 
-    private static ImageIcon getSmallManaIcon(final MagicIcon manaIcon) {
+    public static ImageIcon getSmallManaIcon(final MagicIcon manaIcon) {
         return getManaIcon(manaIcon, false);
     }
 
-    private static ImageIcon getBigManaIcon(final MagicIcon manaIcon) {
+    public static ImageIcon getBigManaIcon(final MagicIcon manaIcon) {
         return getManaIcon(manaIcon, true);
     }
 
