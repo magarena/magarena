@@ -132,8 +132,18 @@ public class CardDefinitions {
                 if (isMissing) {
                     cardDefinition.setIsValid(false);
                 } else {
-                    throw new RuntimeException(e);
+                    throw e;
                 }
+            }
+        }
+            
+        try {
+            cardDefinition.validate();
+        } catch (Exception e) {
+            if (isMissing) {
+                cardDefinition.setIsValid(false);
+            } else {
+                throw e;
             }
         }
 
@@ -170,7 +180,6 @@ public class CardDefinitions {
     private static void loadCardDefinition(final File file) {
         try {
             final MagicCardDefinition cdef = prop2carddef(file, false);
-            cdef.validate();
             addDefinition(cdef);
         } catch (final Throwable cause) {
             //System.out.println("ERROR file: " + file + " cause: " + cause.getMessage());

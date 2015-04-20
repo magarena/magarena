@@ -136,6 +136,7 @@ public class MagicCardDefinition implements MagicAbilityStore {
     public static MagicCardDefinition create(final MagicCardDefinitionInit init) {
         final MagicCardDefinition cdef = new MagicCardDefinition();
         init.initialize(cdef);
+        cdef.validate();
         return cdef;
     }
 
