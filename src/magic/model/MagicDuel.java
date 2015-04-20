@@ -108,19 +108,6 @@ public class MagicDuel {
         }
     }
 
-    private DuelPlayerConfig[] createPlayers() {
-        final DuelPlayerConfig[] players = new DuelPlayerConfig[DuelConfig.MAX_PLAYERS];
-        players[0] =
-                new DuelPlayerConfig(
-                        duelConfig.getPlayerProfile(0),
-                        duelConfig.getPlayerDeckProfile(0));
-        players[1] =
-                new DuelPlayerConfig(
-                        duelConfig.getPlayerProfile(1),
-                        duelConfig.getPlayerDeckProfile(1));
-        return players;
-    }
-
     public MagicGame nextGame() {
         //create players
         final MagicPlayer player   = new MagicPlayer(duelConfig.getStartLife(), duelConfig.getPlayerConfig(0), 0);
@@ -199,7 +186,6 @@ public class MagicDuel {
     }
 
     public void initialize() throws InvalidDeckException {
-        duelConfig.setPlayerConfigs(createPlayers());
         buildDecks();
     }
 
