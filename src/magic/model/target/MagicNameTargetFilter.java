@@ -20,6 +20,6 @@ public class MagicNameTargetFilter extends MagicPermanentFilterImpl {
 
     @Override
     public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
-        return name.equals(target.getName()) && name.length() > 0  && targetFilter.accept(source, player, target);
+        return name.equals(target.getName()) && targetFilter.accept(source, player, target);
     }
 }
