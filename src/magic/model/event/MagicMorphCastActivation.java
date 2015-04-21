@@ -88,7 +88,7 @@ public class MagicMorphCastActivation extends MagicCardActivation {
                 }
                 @Override
                 public String getName() {
-                    return "Face down creature spell #" + (getId() % 1000);
+                    return "Face-down creature spell #" + (getId() % 1000);
                 }
             };
 
