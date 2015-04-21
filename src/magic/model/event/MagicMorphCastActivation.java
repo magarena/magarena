@@ -84,11 +84,11 @@ public class MagicMorphCastActivation extends MagicCardActivation {
                 }
                 @Override
                 public boolean canBeCountered() {
-                    return MagicCardDefinition.MORPH.hasAbility(MagicAbility.CannotBeCountered) == false;
+                    return hasAbility(MagicAbility.CannotBeCountered) == false;
                 }
                 @Override
                 public String getName() {
-                    return MagicCardDefinition.MORPH.getName();
+                    return "Face down creature spell #" + (getId() % 1000);
                 }
             };
 
