@@ -1098,8 +1098,6 @@ public class MagicTargetFilterFactory {
     
     public static final MagicPermanentFilterImpl CREATURE_WITH_HORSEMANSHIP = MagicTargetFilterFactory.creature(MagicAbility.Horsemanship, Control.Any);
     
-    public static final MagicPermanentFilterImpl CREATURE_WITH_MORPH = MagicTargetFilterFactory.creature(MagicAbility.Morph, Control.Any);
-    
     public static final MagicPermanentFilterImpl CREATURE_WITH_ISLANDWALK = MagicTargetFilterFactory.creature(MagicAbility.Islandwalk, Control.Any);
     
     public static final MagicPermanentFilterImpl CREATURE_WITH_SHADOW = MagicTargetFilterFactory.creature(MagicAbility.Shadow, Control.Any);
@@ -1117,6 +1115,14 @@ public class MagicTargetFilterFactory {
                    (target.hasAbility(MagicAbility.Flying) || target.hasAbility(MagicAbility.Reach));
         }
     };
+    
+    public static final MagicPermanentFilterImpl CREATURE_WITH_MORPH_ABILITY = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+            return target.isCreature() &&
+                   (target.hasAbility(MagicAbility.Morph) || target.hasAbility(MagicAbility.Megamorph));
+        }
+    };
+    
     
     public static final MagicPermanentFilterImpl CREATURE_WITHOUT_FLYING_OR_ISLANDWALK = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
@@ -2269,7 +2275,7 @@ public class MagicTargetFilterFactory {
         single.put("blue or black creature with flying", BLUE_OR_BLACK_CREATURE_WITH_FLYING);
         single.put("creature without flying", CREATURE_WITHOUT_FLYING);
         single.put("creature with defender",  CREATURE_WITH_DEFENDER);
-        single.put("creature with morph", CREATURE_WITH_MORPH);
+        single.put("creature with a morph ability", CREATURE_WITH_MORPH_ABILITY);
         single.put("creature with horsemanship", CREATURE_WITH_HORSEMANSHIP);
         single.put("creature with islandwalk", CREATURE_WITH_ISLANDWALK);
         single.put("creature with power 1 or less", CREATURE_POWER_1_OR_LESS);
