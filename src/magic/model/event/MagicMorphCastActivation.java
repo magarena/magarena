@@ -87,6 +87,10 @@ public class MagicMorphCastActivation extends MagicCardActivation {
                     return hasAbility(MagicAbility.CannotBeCountered) == false;
                 }
                 @Override
+                public int getConvertedCost() {
+                    return 0;
+                }
+                @Override
                 public String getName() {
                     return "Face-down creature spell #" + (getId() % 1000);
                 }
