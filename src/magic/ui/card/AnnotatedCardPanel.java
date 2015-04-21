@@ -243,7 +243,9 @@ public class AnnotatedCardPanel extends JPanel {
     private BufferedImage getCardImage(final MagicObject magicObject) {
         if (magicObject instanceof MagicPermanent) {
             final MagicPermanent perm = (MagicPermanent)magicObject;
-            return getCardImage(perm.getRealCardDefinition());
+            return perm.getController().isHuman() ?
+                getCardImage(perm.getRealCardDefinition()) :
+                getCardImage(perm.getCardDefinition()); 
         } else {
             return getCardImage(magicObject.getCardDefinition());
         }
