@@ -88,6 +88,11 @@ public class RemoveFromPlayAction extends MagicAction {
 
         game.doAction(new MoveCardAction(permanent,toLocation));
         game.addDelayedAction(new RemoveTriggersStaticsAction(permanent));
+
+        if (permanent.isFaceDown()) {
+            game.doAction(new RevealAction(permanent.getCard()));
+        }
+
         game.setStateCheckRequired();
     }
 
