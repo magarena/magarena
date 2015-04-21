@@ -135,6 +135,11 @@ public enum MagicConditionParser {
             return MagicCondition.IS_ENCHANTMENT;
         }
     },
+    IsNotEnchantment("(SN is|it's) not an enchantment") {
+        public MagicCondition toCondition(final Matcher arg) {
+            return MagicCondition.IS_NOT_ENCHANTMENT;
+        }
+    },
     IsSpirit("(SN is|it's) a Spirit") {
         public MagicCondition toCondition(final Matcher arg) {
             return MagicCondition.IS_SPIRIT;
@@ -442,10 +447,17 @@ public enum MagicConditionParser {
     public abstract MagicCondition toCondition(final Matcher arg);
     
     public static final MagicCondition build(final String cost) {
+        final boolean aiOnly = cost.startsWith("with AI ");
+        final String processed = cost
+            .replaceFirst("^with AI ", "")
+            .replaceFirst("^only ", "")
+            .replaceFirst("^if ", "")
+            .replaceFirst("\\.$", "");
         for (final MagicConditionParser rule : values()) {
-            final Matcher matcher = rule.matcher(cost);
+            final Matcher matcher = rule.matcher(processed);
             if (matcher.matches()) {
-                return rule.toCondition(matcher);
+                final MagicCondition cond = rule.toCondition(matcher);
+                return aiOnly ? new MagicArtificialCondition(cond) : cond;
             }
         }
         throw new RuntimeException("unknown condition \"" + cost + "\"");
@@ -456,14 +468,7 @@ public enum MagicConditionParser {
         final MagicCondition[] conds = new MagicCondition[splitCosts.length + 1];
         conds[0] = MagicCondition.CARD_CONDITION;
         for (int i = 0; i < splitCosts.length; i++) {
-            final boolean aiOnly = splitCosts[i].startsWith("with AI ");
-            final String processed = splitCosts[i]
-                .replaceFirst("^with AI ", "")
-                .replaceFirst("^only ", "")
-                .replaceFirst("^if ", "")
-                .replaceFirst("\\.$", "");
-            final MagicCondition cond = build(processed);
-            conds[i + 1] = aiOnly ? new MagicArtificialCondition(cond) : cond;
+            conds[i + 1] = build(splitCosts[i]);
         }
         return conds;
     }

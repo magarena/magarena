@@ -13,11 +13,7 @@ public class MagicConditionCostEvent implements MagicMatchedCostEvent {
     private final MagicCondition condition;
 
     public MagicConditionCostEvent(final String text) {
-        final String processed = text
-            .replaceFirst("^only ", "")
-            .replaceFirst("^if ", "")
-            .replaceFirst("\\.$", "");
-        condition = MagicConditionParser.build(processed); 
+        condition = MagicConditionParser.build(text); 
     }
 
     @Override

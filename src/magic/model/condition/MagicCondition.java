@@ -422,6 +422,13 @@ public interface MagicCondition {
         }
     };
     
+    MagicCondition IS_NOT_ENCHANTMENT = new MagicCondition() {
+        public boolean accept(final MagicSource source) {
+            final MagicPermanent permanent = (MagicPermanent)source;
+            return permanent.isEnchantment() == false;
+        }
+    };
+    
     MagicCondition IS_SPIRIT = new MagicCondition() {
         public boolean accept(final MagicSource source) {
             final MagicPermanent permanent = (MagicPermanent)source;
