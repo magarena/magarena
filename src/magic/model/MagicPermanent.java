@@ -364,7 +364,7 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
 
     public String getName() {
         if (isFaceDown()) {
-            return "face down creature #" + (id % 1000);
+            return "Face down creature #" + (id % 1000);
         } else {
             return getCardDefinition().getName();
         }
