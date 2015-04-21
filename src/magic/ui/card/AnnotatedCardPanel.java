@@ -39,6 +39,7 @@ import magic.model.MagicPermanent;
 import magic.ui.SwingGameController;
 import magic.ui.theme.AbilityIcon;
 import magic.ui.GraphicsUtilities;
+import magic.utility.MagicSystem;
 import org.pushingpixels.trident.Timeline;
 import org.pushingpixels.trident.ease.Spline;
 
@@ -243,12 +244,20 @@ public class AnnotatedCardPanel extends JPanel {
     private BufferedImage getCardImage(final MagicObject magicObject) {
         if (magicObject instanceof MagicPermanent) {
             final MagicPermanent perm = (MagicPermanent)magicObject;
-            return perm.getController().isHuman() ?
+            return canRevealTrueFace(perm) ?
                 getCardImage(perm.getRealCardDefinition()) :
                 getCardImage(perm.getCardDefinition()); 
         } else {
             return getCardImage(magicObject.getCardDefinition());
         }
+    }
+    
+    /**
+     * primarily used to determine whether a face-down card will
+     * show its hidden face when displaying mouse-over popup.
+     */
+    private boolean canRevealTrueFace(final MagicPermanent perm) {
+        return perm.getController().isHuman() || MagicSystem.isAiVersusAi();
     }
 
     private String getModifiedPT(final MagicObject magicObject) {
