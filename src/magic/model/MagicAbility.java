@@ -1119,79 +1119,45 @@ public enum MagicAbility {
             ));
         }
     },
-    LordPumpGain("(?<other>other )?" + ARG.WORDRUN + " get(s)? " + ARG.PT + " and (have|has) " + ARG.ANY + "(\\.)?", 0) {
+    LordPumpGain(ARG.WORDRUN + " get(s)? " + ARG.PT + " and (have|has) " + ARG.ANY + "(\\.)?", 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final int[] pt = ARG.pt(arg);
-            final boolean other = arg.group("other") != null; 
             final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.multiple(ARG.wordrun(arg));
-            if (other) {
-                card.add(MagicStatic.genPTStaticOther(filter, pt[0], pt[1]));
-                card.add(MagicStatic.genABStaticOther(
-                    filter,
-                    MagicAbility.getAbilityList(
-                        ARG.any(arg)
-                    )
-                ));
-            } else {
-                card.add(MagicStatic.genPTStatic(filter, pt[0], pt[1]));
-                card.add(MagicStatic.genABStatic(
-                    filter,
-                    MagicAbility.getAbilityList(
-                        ARG.any(arg)
-                    )
-                ));
-            }
+            card.add(MagicStatic.genPTStatic(filter, pt[0], pt[1]));
+            card.add(MagicStatic.genABStatic(
+                filter,
+                MagicAbility.getAbilityList(
+                    ARG.any(arg)
+                )
+            ));
         }
     },
-    LordPump("(?<other>other )?" + ARG.WORDRUN + " get(s)? " + ARG.PT + "(\\.)?", 0) {
+    LordPump(ARG.WORDRUN + " get(s)? " + ARG.PT + "(\\.)?", 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final int[] pt = ARG.pt(arg);
-            final boolean other = arg.group("other") != null; 
             final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.multiple(ARG.wordrun(arg));
-            if (other) {
-                card.add(MagicStatic.genPTStaticOther(filter, pt[0], pt[1]));
-            } else {
-                card.add(MagicStatic.genPTStatic(filter, pt[0], pt[1]));
-            }
+            card.add(MagicStatic.genPTStatic(filter, pt[0], pt[1]));
         }
     },
-    LordGainCan("(?<other>other )?" + ARG.WORDRUN + " (?<any>can('t)? .+)(\\.)?", 0) {
+    LordGainCan(ARG.WORDRUN + " (?<any>can('t)? .+)(\\.)?", 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            final boolean other = arg.group("other") != null;
             final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.multiple(ARG.wordrun(arg));
             final MagicAbilityList abilityList = MagicAbility.getAbilityList(ARG.any(arg));
-            if (other) {
-                card.add(MagicStatic.genABGameStaticOther(
-                    filter,
-                    abilityList
-                ));
-            } else {
-                card.add(MagicStatic.genABGameStatic(
-                    filter,
-                    abilityList
-                ));
-            }
+            card.add(MagicStatic.genABGameStatic(
+                filter,
+                abilityList
+            ));
         }
     },
-    LordGain("(?<other>other )?" + ARG.WORDRUN + " (have|has) " + ARG.ANY + "(\\.)?", 0) {
+    LordGain(ARG.WORDRUN + " (have|has) " + ARG.ANY + "(\\.)?", 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            final boolean other = arg.group("other") != null;
             final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.multiple(ARG.wordrun(arg));
-            if (other) {
-                card.add(MagicStatic.genABStaticOther(
-                    filter,
-                    MagicAbility.getAbilityList(
-                        ARG.any(arg)
-                    )
-                ));
-            } else {
-                card.add(MagicStatic.genABStatic(
-                    filter,
-                    MagicAbility.getAbilityList(
-                        ARG.any(arg)
-                    )
-                ));
-            }
+            card.add(MagicStatic.genABStatic(
+                filter,
+                MagicAbility.getAbilityList(
+                    ARG.any(arg)
+                )
+            ));
         }
     },
     ChooseNotUntap("You may choose not to untap SN during your untap step\\.",0) {

@@ -2474,7 +2474,11 @@ public class MagicTargetFilterFactory {
     }
 
     public static MagicTargetFilter<MagicPermanent> multiple(final String arg) {
-        return singlePermanent(toSingular(arg));
+        if (arg.matches("(O|o)ther .*")) {
+            return new MagicOtherPermanentTargetFilter(singlePermanent(toSingular(arg.replaceFirst("(O|o)ther ", ""))));
+        } else {
+            return singlePermanent(toSingular(arg));
+        }
     }
     
     public static MagicTargetFilter<MagicTarget> multipleTargets(final String arg) {
