@@ -6,7 +6,7 @@ type=Creature
 subtype=Human,Wizard
 cost={W}{U}
 pt=2/2
-ability=Flash
+ability=Flash;\
+        When SN enters the battlefield, you may return another target creature you control to its owner's hand.
 timing=pumpFlash
-requires_groovy_code
 oracle=Flash. When Deputy of Acquittals enters the battlefield, you may return another target creature you control to its owner's hand.

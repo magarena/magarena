@@ -6,8 +6,8 @@ type=Creature
 subtype=Goblin,Shaman
 cost={2}{B}
 pt=2/2
-ability=other goblin creatures you control get +1/+1
+ability=Other Goblin creatures you control get +1/+1.;\
+        {T}: Regenerate another target Goblin.
 static=player
 timing=main
-requires_groovy_code
 oracle=Other Goblin creatures you control get +1/+1. {T}: Regenerate another target Goblin.

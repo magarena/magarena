@@ -5,8 +5,8 @@ removal=2
 rarity=C
 type=Enchantment
 cost={2}{W}
-ability=When SN leaves the battlefield, return the exiled card to the battlefield under its owner's control.;\
+ability=When SN enters the battlefield, exile another target nonland permanent.;\
+        When SN leaves the battlefield, return the exiled card to the battlefield under its owner's control.;\
         Cast SN with AI only if an opponent controls a nonland permanent.
 timing=removal
-requires_groovy_code
 oracle=When Oblivion Ring enters the battlefield, exile another target nonland permanent. When Oblivion Ring leaves the battlefield, return the exiled card to the battlefield under its owner's control.
