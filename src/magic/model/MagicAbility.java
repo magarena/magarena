@@ -775,12 +775,7 @@ public enum MagicAbility {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final MagicPowerToughness pt = ARG.mpt(arg);
             final MagicTargetFilter<MagicTarget> filter = MagicTargetFilterFactory.multipleTargets(ARG.wordrun(arg));
-            final boolean other = arg.group("other") != null; 
-            if (other) {
-                card.add(MagicStatic.genSelfPTStaticOther(filter, pt));
-            } else {
-                card.add(MagicStatic.genSelfPTStatic(filter, pt));
-            }
+            card.add(MagicStatic.genSelfPTStatic(filter, pt));
         }
     },
     ConditionPumpGainUnless("SN (gets " + ARG.PT + " )?(and )?(" + ARG.ANY + " )?unless " + ARG.WORDRUN + "\\.", 0) {

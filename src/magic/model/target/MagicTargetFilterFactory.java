@@ -2475,14 +2475,18 @@ public class MagicTargetFilterFactory {
 
     public static MagicTargetFilter<MagicPermanent> multiple(final String arg) {
         if (arg.matches("(O|o)ther .*")) {
-            return new MagicOtherPermanentTargetFilter(singlePermanent(toSingular(arg.replaceFirst("(O|o)ther ", ""))));
+            return new MagicOtherPermanentTargetFilter(singlePermanent(toSingular(arg)));
         } else {
             return singlePermanent(toSingular(arg));
         }
     }
     
     public static MagicTargetFilter<MagicTarget> multipleTargets(final String arg) {
-        return singleTarget(toSingular(arg));
+        if (arg.matches("(O|o)ther .*")) {
+            return new MagicOtherTargetFilter(singleTarget(toSingular(arg)));
+        } else {
+            return singleTarget(toSingular(arg));
+        }
     }
     
     public static MagicTargetFilter<MagicCard> multipleCards(final String arg) {
@@ -2541,7 +2545,8 @@ public class MagicTargetFilterFactory {
             .replaceAll("QUOTE", "")
             .replaceAll(" on the battlefield\\b", "")
             .replaceAll("^all ", "")
-            .replaceAll("^each ", "");
+            .replaceAll("^each ", "")
+            .replaceAll("^other ", "");
     }
     
     @SuppressWarnings("unchecked")
