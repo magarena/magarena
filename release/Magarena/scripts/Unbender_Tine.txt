@@ -5,5 +5,5 @@ rarity=U
 type=Artifact
 cost={2}{W}{U}
 ability={T}: Untap another target permanent.
-timing=main
+timing=artifact
 oracle={T}: Untap another target permanent.
