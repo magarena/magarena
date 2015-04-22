@@ -6,7 +6,7 @@ type=Creature
 subtype=Horse,Fish
 cost={3}{U}
 pt=3/2
-ability=flash
+ability=flash;\
+        When SN enters the battlefield, untap another target creature you control.
 timing=flash
-requires_groovy_code
 oracle=Flash. When Breaching Hippocamp enters the battlefield, untap another target creature you control.

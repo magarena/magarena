@@ -6,7 +6,7 @@ type=Legendary,Creature
 subtype=Rhino,Soldier
 cost={2}{G}{W}{U}
 pt=4/4
-ability=Vigilance; trample
+ability=Vigilance; trample;\
+        {2}, {T}: Exile another target creature. Return that card to the battlefield under its owner's control at the beginning of the next end step.
 timing=main
-requires_groovy_code
 oracle=Vigilance, trample. {2}, {T}: Exile another target creature. Return that card to the battlefield under its owner's control at the beginning of the next end step.
