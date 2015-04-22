@@ -408,17 +408,14 @@ public class MagicTargetChoice extends MagicChoice {
         targetHint        = aTargetHint;
         targetDescription = aTargetDescription;
 
-        if (targetDescription.startsWith("Target ")) {
-            targetFilter = MagicTargetFilterFactory.single(targetDescription.replaceFirst("Target ", ""));
+        if (targetDescription.matches("(T|t)arget .*")) {
+            targetFilter = MagicTargetFilterFactory.single(targetDescription.replaceFirst("(T|t)arget ", ""));
             targeted     = true;
-        } else if (targetDescription.startsWith("target ")) {
-            targetFilter = MagicTargetFilterFactory.single(targetDescription.replaceFirst("target ", ""));
+        } else if (targetDescription.matches("(A|a)nother target .*")) {
+            targetFilter = new MagicOtherPermanentTargetFilter(MagicTargetFilterFactory.singlePermanent(targetDescription.replaceFirst("(A|a)nother target ", "")));
             targeted     = true;
-        } else if (targetDescription.startsWith("a ")) {
-            targetFilter = MagicTargetFilterFactory.single(targetDescription.replaceFirst("a ", ""));
-            targeted     = false;
-        } else if (targetDescription.startsWith("an ")) {
-            targetFilter = MagicTargetFilterFactory.single(targetDescription.replaceFirst("an ", ""));
+        } else if (targetDescription.matches("a(n)? .*")) {
+            targetFilter = MagicTargetFilterFactory.single(targetDescription.replaceFirst("a(n)? ", ""));
             targeted     = false;
         } else {
             throw new RuntimeException("unknown target choice: \"" + aTargetDescription + "\"");
