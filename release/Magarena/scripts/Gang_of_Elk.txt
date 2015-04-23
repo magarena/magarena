@@ -6,6 +6,6 @@ type=Creature
 subtype=Elk,Beast
 cost={5}{G}
 pt=5/4
-ability=Whenever SN becomes blocked, it gets +2/+2 until end of turn for each creature blocking it.
+ability=Whenever SN becomes blocked, SN gets +2/+2 until end of turn for each creature blocking it.
 timing=main
 oracle=Whenever Gang of Elk becomes blocked, it gets +2/+2 until end of turn for each creature blocking it.

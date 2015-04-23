@@ -6,6 +6,6 @@ type=Artifact,Creature
 subtype=Golem
 cost={3}
 pt=2/2
-ability=Whenever SN becomes blocked, it gets +1/+1 until end of turn for each creature blocking it.
+ability=Whenever SN becomes blocked, SN gets +1/+1 until end of turn for each creature blocking it.
 timing=main
 oracle=Whenever Sparring Golem becomes blocked, it gets +1/+1 until end of turn for each creature blocking it.

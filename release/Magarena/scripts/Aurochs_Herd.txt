@@ -7,7 +7,7 @@ subtype=Aurochs
 cost={5}{G}
 pt=4/4
 ability=Trample.;\
-        When SN enters the battlefield, You may search your library for an Aurochs card, reveal it, and put it into your hand. Then shuffle your library.
+        When SN enters the battlefield, You may search your library for an Aurochs card, reveal it, and put it into your hand. Then shuffle your library.;\
+        Whenever SN attacks, SN gets +1/+0 until end of turn for each other attacking Aurochs.
 timing=main
-requires_groovy_code=Aurochs
 oracle=Trample. When Aurochs Herd enters the battlefield, you may search your library for an Aurochs card, reveal it, and put it into your hand. If you do, shuffle your library. Whenever Aurochs Herd attacks, it gets +1/+0 until end of turn for each other attacking Aurochs.

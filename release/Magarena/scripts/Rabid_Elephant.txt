@@ -6,6 +6,6 @@ type=Creature
 subtype=Elephant
 cost={4}{G}
 pt=3/4
-ability=Whenever SN becomes blocked, it gets +2/+2 until end of turn for each creature blocking it.
+ability=Whenever SN becomes blocked, SN gets +2/+2 until end of turn for each creature blocking it.
 timing=main
 oracle=Whenever Rabid Elephant becomes blocked, it gets +2/+2 until end of turn for each creature blocking it.

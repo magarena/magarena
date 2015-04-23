@@ -8,21 +8,5 @@ def EFFECT = MagicRuleEventAction.create("Put a 1/1 red Goblin creature token wi
                 EFFECT.getEvent(permanent) :
                 MagicEvent.NONE;
         }
-    },
-    new MagicWhenSelfAttacksTrigger() {
-        @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent attacker) {
-            return new MagicEvent(
-                permanent,
-                this,
-                "SN gets +1/+0 until end of turn for each other attacking Goblin."
-            );
-        }
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicPermanent permanent = event.getPermanent();
-            final int amount = game.filterPermanents(ATTACKING_GOBLIN.except(permanent)).size();
-            game.doAction(new ChangeTurnPTAction(permanent,amount,0));
-        }
     }
 ]
