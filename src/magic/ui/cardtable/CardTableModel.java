@@ -250,7 +250,7 @@ public class CardTableModel implements TableModel {
             case 5:        return card.getLongTypeString();
             case 6:        return card.getSubTypeString();
             case 7:        return card.getRarityString();
-            case 8:        return card.getText();
+            case 8:        return card.getFlattenedText();
         }
 
         return "";

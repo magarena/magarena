@@ -690,6 +690,10 @@ public class MagicCardDefinition implements MagicAbilityStore {
     public String getText() {
         return this.text;
     }
+    
+    public String getFlattenedText() {
+        return this.text.replace("\n", " ");
+    }
 
     public void setStaticType(final MagicStaticType staticType) {
         this.staticType=staticType;
