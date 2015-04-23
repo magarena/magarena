@@ -4,6 +4,6 @@ value=1.929
 rarity=C
 type=Sorcery
 cost={2}{G}{G}
-effect=Destroy target enchanted permanent.
+effect=Destroy target permanent that is enchanted.
 timing=main
 oracle=Destroy target enchanted permanent.

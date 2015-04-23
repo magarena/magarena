@@ -237,7 +237,7 @@ public class MagicTargetChoice extends MagicChoice {
         new MagicTargetChoice("target creature you control");
     
     public static final MagicTargetChoice NEG_TARGET_EQUIPPED_CREATURE =
-        MagicTargetChoice.Negative("target equipped creature");
+        MagicTargetChoice.Negative("target creature that is equipped");
 
     public static final MagicTargetChoice TARGET_NON_LEGENDARY_CREATURE_YOU_CONTROL = 
         new MagicTargetChoice("target nonlegendary creature you control");

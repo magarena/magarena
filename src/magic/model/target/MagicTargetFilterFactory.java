@@ -2322,8 +2322,8 @@ public class MagicTargetFilterFactory {
         single.put("creature token", CREATURE_TOKEN);
         single.put("serf token", SERF_TOKEN);
         single.put("nonsnow creature", NONSNOW_CREATURE);
-        single.put("enchanted creature", ENCHANTED_CREATURE);
-        single.put("equipped creature", EQUIPPED_CREATURE);
+        single.put("creature that is enchanted", ENCHANTED_CREATURE);
+        single.put("creature that is equipped", EQUIPPED_CREATURE);
         single.put("nonenchantment creature", NONENCHANTMENT_CREATURE);
         single.put("creature that's a Barbarian, a Warrior, or a Berserker", BARBARIAN_WARRIOR_BERSERKER_CREATURE);
         single.put("multicolored creature", MULTICOLORED_CREATURE);
@@ -2391,7 +2391,7 @@ public class MagicTargetFilterFactory {
         single.put("red or white permanent", RED_OR_WHITE_PERMANENT);
         single.put("multicolored permanent", MULTICOLORED_PERMANENT);
         single.put("nonwhite permanent", NONWHITE_PERMANENT);
-        single.put("enchanted permanent", ENCHANTED_PERMANENT);
+        single.put("permanent that is enchanted", ENCHANTED_PERMANENT);
         single.put("enchantment or enchanted permanent", ENCHANTMENT_OR_ENCHANTED_PERMANENT);
         single.put("nonartifact permanent", NONARTIFACT_PERMANENT);
         

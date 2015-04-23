@@ -6,6 +6,6 @@ type=Legendary,Creature
 subtype=Human,Assassin
 cost={2}{U}{U}{B}{B}
 pt=4/3
-ability={T}: Destroy target enchanted creature.
+ability={T}: Destroy target creature that is enchanted.
 timing=main
 oracle={T}: Destroy target enchanted creature.
