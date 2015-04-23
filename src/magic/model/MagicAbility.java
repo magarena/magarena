@@ -771,7 +771,7 @@ public enum MagicAbility {
             ));
         }
     },
-    EachPump("SN gets " + ARG.PT + " for each (?<other>other )?" + ARG.WORDRUN + "\\.", 0) {
+    EachPump("SN gets " + ARG.PT + " for each " + ARG.WORDRUN + "\\.", 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final MagicPowerToughness pt = ARG.mpt(arg);
             final MagicTargetFilter<MagicTarget> filter = MagicTargetFilterFactory.multipleTargets(ARG.wordrun(arg));
