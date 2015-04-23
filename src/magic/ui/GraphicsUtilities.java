@@ -181,7 +181,11 @@ final public class GraphicsUtilities {
      * (http://www.jhlabs.com/ip/managed_images.html)
      */
     public static BufferedImage getOptimizedImage(final BufferedImage source) {
-        final BufferedImage buffImage = getCompatibleBufferedImage(source.getWidth(), source.getHeight());
+        final BufferedImage buffImage = getCompatibleBufferedImage(
+                source.getWidth(),
+                source.getHeight(),
+                source.getTransparency()
+        );
         buffImage.getGraphics().drawImage(source, 0, 0, null);
         return buffImage;
     }
