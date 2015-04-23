@@ -120,6 +120,11 @@ public enum MagicConditionParser {
             return MagicConditionFactory.CounterEqual(counterType, 0);
         }
     },
+    HasEquipped("SN is being equipped") {
+        public MagicCondition toCondition(final Matcher arg) {
+            return MagicCondition.HAS_EQUIPPED_CREATURE;
+        }
+    },
     IsEquipped("(SN is|it's) equipped") {
         public MagicCondition toCondition(final Matcher arg) {
             return MagicCondition.IS_EQUIPPED;
