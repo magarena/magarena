@@ -6,6 +6,6 @@ type=Creature
 subtype=Goblin,Berserker
 cost={2}{R}
 pt=2/2
-ability=creatures you control have haste, SN attacks each turn if able.
+ability=Creatures you control have haste and attack each combat if able.
 timing=main
 oracle=Creatures you control have haste and attack each combat if able.
