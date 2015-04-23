@@ -6,7 +6,7 @@ type=Creature
 subtype=Soltari,Soldier
 cost={2}{W}
 pt=2/2
-ability=shadow
+ability=shadow;\
+        Whenever SN attacks, all other creatures you control get +1/+1 until end of turn.
 timing=main
-requires_groovy_code
 oracle=Shadow. Whenever Soltari Champion attacks, all other creatures you control get +1/+1 until end of turn.

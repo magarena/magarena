@@ -6,7 +6,7 @@ type=Creature
 subtype=Insect
 cost={5}{G}
 pt=5/5
-ability=Trample
+ability=Trample;\
+        When SN enters the battlefield, return another creature you control to its owner's hand.
 timing=main
-requires_groovy_code
 oracle=Trample. When Ambush Krotiq enters the battlefield, return another creature you control to its owner's hand.

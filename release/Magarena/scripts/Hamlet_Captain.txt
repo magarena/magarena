@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Warrior
 cost={1}{G}
 pt=2/2
+ability=Whenever SN attacks or blocks, other Human creatures you control get +1/+1 until end of turn.
 timing=main
-requires_groovy_code
 oracle=Whenever Hamlet Captain attacks or blocks, other Human creatures you control get +1/+1 until end of turn.

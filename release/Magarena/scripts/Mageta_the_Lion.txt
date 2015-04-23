@@ -6,6 +6,6 @@ type=Legendary,Creature
 subtype=Human,Spellshaper
 cost={3}{W}{W}
 pt=3/3
+ability={2}{W}{W}, {T}, Discard two cards: Destroy all other creatures. They can't be regenerated.
 timing=main
-requires_groovy_code
 oracle={2}{W}{W}, {T}, Discard two cards: Destroy all creatures except for Mageta the Lion. Those creatures can't be regenerated.

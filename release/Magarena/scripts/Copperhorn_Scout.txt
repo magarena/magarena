@@ -6,6 +6,6 @@ type=Creature
 subtype=Elf,Scout
 cost={G}
 pt=1/1
+ability=Whenever SN attacks, untap each other creature you control.
 timing=main
-requires_groovy_code
 oracle=Whenever Copperhorn Scout attacks, untap each other creature you control.

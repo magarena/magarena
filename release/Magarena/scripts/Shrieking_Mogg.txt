@@ -6,7 +6,7 @@ type=Creature
 subtype=Goblin
 cost={1}{R}
 pt=1/1
-ability=haste
+ability=haste;\
+        When SN enters the battlefield, tap all other creatures.
 timing=fmain
-requires_groovy_code=Timbermare
 oracle=Haste. When Shrieking Mogg enters the battlefield, tap all other creatures.

@@ -4,6 +4,6 @@ value=4.250
 rarity=R
 type=Enchantment
 cost={1}{G}
+ability={1}{G}{G}: Destroy all other enchantments.
 timing=main
-requires_groovy_code
 oracle={1}{G}{G}: Destroy all other enchantments.

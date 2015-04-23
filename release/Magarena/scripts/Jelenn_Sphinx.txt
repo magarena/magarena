@@ -6,7 +6,7 @@ type=Creature
 subtype=Sphinx
 cost={3}{W}{U}
 pt=1/5
-ability=Flying;vigilance
+ability=Flying;vigilance;\
+        Whenever SN attacks, other attacking creatures get +1/+1 until end of turn.
 timing=main
-requires_groovy_code
 oracle=Flying, vigilance. Whenever Jelenn Sphinx attacks, other attacking creatures get +1/+1 until end of turn.

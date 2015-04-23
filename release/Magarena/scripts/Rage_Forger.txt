@@ -6,7 +6,7 @@ type=Creature
 subtype=Elemental,Shaman
 cost={2}{R}
 pt=2/2
-ability=Whenever a creature you control with a +1/+1 counter on it attacks, you may have that creature deal 1 damage to target player.
+ability=When SN enters the battlefield, put a +1/+1 counter on each other Shaman creature you control.;\
+        Whenever a creature you control with a +1/+1 counter on it attacks, you may have that creature deal 1 damage to target player.
 timing=main
-requires_groovy_code
 oracle=When Rage Forger enters the battlefield, put a +1/+1 counter on each other Shaman creature you control. Whenever a creature you control with a +1/+1 counter on it attacks, you may have that creature deal 1 damage to target player.

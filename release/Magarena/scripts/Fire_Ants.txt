@@ -6,6 +6,6 @@ type=Creature
 subtype=Insect
 cost={2}{R}
 pt=2/1
+ability={T}: SN deals 1 damage to each other creature without flying.
 timing=main
-requires_groovy_code
 oracle={T}: Fire Ants deals 1 damage to each other creature without flying.

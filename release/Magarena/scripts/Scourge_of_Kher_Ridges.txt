@@ -7,7 +7,7 @@ subtype=Dragon
 cost={6}{R}{R}
 pt=6/6
 ability=Flying;\
-        {1}{R}: SN deals 2 damage to each creature without flying.
+        {1}{R}: SN deals 2 damage to each creature without flying.;\
+        {5}{R}: SN deals 6 damage to each other creature with flying.
 timing=main
-requires_groovy_code
 oracle=Flying. {1}{R}: Scourge of Kher Ridges deals 2 damage to each creature without flying. {5}{R}: Scourge of Kher Ridges deals 6 damage to each other creature with flying.
