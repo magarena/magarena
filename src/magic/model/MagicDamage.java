@@ -63,6 +63,10 @@ public class MagicDamage {
         return (MagicPermanent)target;
     }
 
+    public MagicPermanent getSourcePermanent() {
+        return (MagicPermanent)source;
+    }
+
     public void setAmount(final int amt) {
         amount = amt;
     }

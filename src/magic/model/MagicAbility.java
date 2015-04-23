@@ -269,9 +269,10 @@ public enum MagicAbility {
             ));
         }
     },
-    UntappedEffect("Whenever SN becomes untapped, " + ARG.EFFECT, 10) {
+    UntappedEffect("Whenever " + ARG.WORDRUN + " becomes untapped, " + ARG.EFFECT, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(MagicWhenSelfBecomesUntappedTrigger.create(
+            card.add(MagicWhenBecomesUntappedTrigger.create(
+                MagicTargetFilterFactory.singlePermanent(ARG.wordrun(arg)),
                 MagicRuleEventAction.create(ARG.effect(arg))
             ));
         }
@@ -375,44 +376,50 @@ public enum MagicAbility {
             card.add(MagicManaActivation.create(ARG.cost(arg) + ", " + ARG.effect(arg), manatype));
         }
     },
-    DamageCreature("Whenever SN deals damage to a creature, " + ARG.EFFECT, 10) {
+    DamageCreature("Whenever " + ARG.WORDRUN + " deals damage to a creature, " + ARG.EFFECT, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicWhenDamageIsDealtTrigger.DamageToCreature(
+                MagicTargetFilterFactory.singlePermanent(ARG.wordrun(arg)),
                 MagicRuleEventAction.create(ARG.effect(arg))
             ));
         }
     },
-    CombatDamageCreature("Whenever SN deals combat damage to a creature, " + ARG.EFFECT, 10) {
+    CombatDamageCreature("Whenever " + ARG.WORDRUN + " deals combat damage to a creature, " + ARG.EFFECT, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicWhenDamageIsDealtTrigger.CombatDamageToCreature(
+                MagicTargetFilterFactory.singlePermanent(ARG.wordrun(arg)),
                 MagicRuleEventAction.create(ARG.effect(arg))
             ));
         }
     },
-    DamageToOpponent("When(ever)? SN deals damage to an opponent, " + ARG.EFFECT, 10) {
+    DamageToOpponent("When(ever)? " + ARG.WORDRUN + " deals damage to an opponent, " + ARG.EFFECT, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicWhenDamageIsDealtTrigger.DamageToOpponent(
+                MagicTargetFilterFactory.singlePermanent(ARG.wordrun(arg)),
                 MagicRuleEventAction.create(ARG.effect(arg))
             ));
         }
     },
-    DamageToPlayer("When(ever)? SN deals damage to a player, " + ARG.EFFECT, 10) {
+    DamageToPlayer("When(ever)? " + ARG.WORDRUN + " deals damage to a player, " + ARG.EFFECT, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicWhenDamageIsDealtTrigger.DamageToPlayer(
+                MagicTargetFilterFactory.singlePermanent(ARG.wordrun(arg)),
                 MagicRuleEventAction.create(ARG.effect(arg))
             ));
         }
     },
-    CombatDamageToPlayer("When(ever)? SN deals combat damage to a player, " + ARG.EFFECT, 10) {
+    CombatDamageToPlayer("When(ever)? " + ARG.WORDRUN + " deals combat damage to a player, " + ARG.EFFECT, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicWhenDamageIsDealtTrigger.CombatDamageToPlayer(
+                MagicTargetFilterFactory.singlePermanent(ARG.wordrun(arg)),
                 MagicRuleEventAction.create(ARG.effect(arg))
             ));
         }
     },
-    CombatDamageToAny("When(ever)? SN deals combat damage, " + ARG.EFFECT, 10) {
+    CombatDamageToAny("When(ever)? " + ARG.WORDRUN + " deals combat damage, " + ARG.EFFECT, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicWhenDamageIsDealtTrigger.CombatDamageToAny(
+                MagicTargetFilterFactory.singlePermanent(ARG.wordrun(arg)),
                 MagicRuleEventAction.create(ARG.effect(arg))
             ));
         }
