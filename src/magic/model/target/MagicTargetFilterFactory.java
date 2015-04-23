@@ -41,6 +41,12 @@ public class MagicTargetFilterFactory {
         }
     };
     
+    public static final MagicPermanentFilterImpl SN = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+            return source == target;
+        }
+    };
+
     public static final MagicStackFilterImpl SPELL_OR_ABILITY_THAT_TARGETS_PERMANENTS =new MagicStackFilterImpl() {
         public boolean accept(final MagicSource source,final MagicPlayer player,final MagicItemOnStack target) {
             final MagicTargetChoice tchoice = target.getEvent().getTargetChoice();
@@ -2526,6 +2532,8 @@ public class MagicTargetFilterFactory {
 
         // using source
         single.put("creature blocking it", CREATURE_BLOCKING_SN);
+        single.put("SN", SN);
+        single.put("this creature", SN);
     }
 
     public static String toSingular(final String arg) {
@@ -2595,7 +2603,7 @@ public class MagicTargetFilterFactory {
         return singleCard(toSingular(arg));
     }
 
-    private static final Pattern OTHER = Pattern.compile("^(O|o)ther ");
+    private static final Pattern OTHER = Pattern.compile("^(an)?other ", Pattern.CASE_INSENSITIVE);
     
     @SuppressWarnings("unchecked")
     public static MagicTargetFilter<MagicTarget> singleTarget(final String arg) {
