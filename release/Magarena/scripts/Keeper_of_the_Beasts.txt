@@ -1,0 +1,11 @@
+name=Keeper of the Beasts
+image=http://magiccards.info/scans/en/ex/112.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Wizard
+cost={G}{G}
+pt=1/2
+timing=main
+requires_groovy_code
+oracle={G}, {T}: Choose target opponent who controlled more creatures than you did as you activated this ability. Put a 2/2 green Beast creature token onto the battlefield.
