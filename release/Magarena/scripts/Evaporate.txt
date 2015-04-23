@@ -4,6 +4,6 @@ value=1.822
 rarity=U
 type=Sorcery
 cost={2}{R}
-effect=SN deals 1 damage to each white and/or blue creature.
+effect=SN deals 1 damage to each white or blue creature.
 timing=main
 oracle=Evaporate deals 1 damage to each white and/or blue creature.

@@ -5,7 +5,7 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={1}{G}
+ability=At the beginning of your upkeep, choose one — (1) Destroy enchanted permanent. (2) You gain 2 life.
 timing=aura
 enchant=destroy,neg artifact or enchantment
-requires_groovy_code
 oracle=Enchant artifact or enchantment. At the beginning of your upkeep, choose one — • Destroy enchanted permanent. • You gain 2 life.

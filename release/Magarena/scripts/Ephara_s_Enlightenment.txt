@@ -5,9 +5,9 @@ rarity=U
 type=Enchantment
 subtype=Aura
 cost={1}{W}{U}
-ability=Enchanted creature has flying.;\
+ability=When SN enters the battlefield, put a +1/+1 counter on enchanted creature.;\
+        Enchanted creature has flying.;\
         Whenever a creature enters the battlefield under your control, you may return SN to its owner's hand.
 timing=main
 enchant=flying,pos creature
-requires_groovy_code
 oracle=Enchant creature. When Ephara's Enlightenment enters the battlefield, put a +1/+1 counter on enchanted creature. Enchanted creature has flying. Whenever a creature enters the battlefield under your control, you may return Ephara's Enlightenment to its owner's hand.

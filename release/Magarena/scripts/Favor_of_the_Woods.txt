@@ -5,7 +5,7 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={2}{G}
+ability=Whenever enchanted creature blocks, you gain 3 life.
 timing=aura
 enchant=pump,pos creature
-requires_groovy_code
 oracle=Enchant creature. Whenever enchanted creature blocks, you gain 3 life.

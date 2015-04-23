@@ -5,7 +5,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={2}{R}
+ability=When SN enters the battlefield, SN deals 2 damage to enchanted creature.;\
+        At the beginning of your upkeep, SN deals 4 damage to enchanted creature.
 timing=aura
 enchant=destroy,neg creature
-requires_groovy_code
 oracle=Enchant creature. When Fatal Attraction enters the battlefield, it deals 2 damage to enchanted creature. At the beginning of your upkeep, Fatal Attraction deals 4 damage to enchanted creature.
