@@ -5,7 +5,7 @@ rarity=U
 type=Enchantment
 subtype=Aura
 cost={2}{W}
+ability=Whenever enchanted creature attacks or blocks, you gain 4 life.
 timing=aura
 enchant=can't attack or block,creature
-requires_groovy_code
 oracle=Enchant creature. Whenever enchanted creature attacks or blocks, you gain 4 life.
