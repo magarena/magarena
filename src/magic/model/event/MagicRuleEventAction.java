@@ -55,7 +55,7 @@ public enum MagicRuleEventAction {
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    final Collection<MagicPermanent> targets = game.filterPermanents(event.getPlayer(),filter);
+                    final Collection<MagicPermanent> targets = filter.filter(event);
                     if (matcher.group("noregen") != null) {
                         for (final MagicPermanent it : targets) {
                             game.doAction(ChangeStateAction.Set(it, MagicPermanentState.CannotBeRegenerated));
@@ -353,7 +353,7 @@ public enum MagicRuleEventAction {
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    final Collection<MagicPermanent> targets = game.filterPermanents(event.getPlayer(),filter);
+                    final Collection<MagicPermanent> targets = filter.filter(event);
                     for (final MagicPermanent perm : targets) {
                         if (event.getSource().isPermanent()) {
                             game.doAction(new ExileLinkAction(event.getPermanent(), perm));
@@ -400,17 +400,11 @@ public enum MagicRuleEventAction {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
                     final MagicSource source = ARG.itSource(event, matcher);
-                    final Collection<MagicTarget> targets1 = game.filterTargets(
-                        event.getPlayer(),
-                        filter1
-                    );
+                    final Collection<MagicTarget> targets1 = filter1.filter(event);
                     for (final MagicTarget target : targets1) {
                         game.doAction(new DealDamageAction(source,target,amount));
                     }
-                    final Collection<MagicTarget> targets2 = game.filterTargets(
-                        event.getPlayer(),
-                        filter2
-                    );
+                    final Collection<MagicTarget> targets2 = filter2.filter(event);
                     for (final MagicTarget target : targets2) {
                         game.doAction(new DealDamageAction(source,target,amount));
                     }
@@ -430,10 +424,7 @@ public enum MagicRuleEventAction {
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    final Collection<MagicTarget> targets = game.filterTargets(
-                        event.getPlayer(),
-                        filter
-                    );
+                    final Collection<MagicTarget> targets = filter.filter(event);
                     for (final MagicTarget target : targets) {
                         game.doAction(new DealDamageAction(ARG.itSource(event, matcher),target,amount));
                     }
@@ -683,7 +674,7 @@ public enum MagicRuleEventAction {
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    for (final MagicPlayer player : game.filterPlayers(event.getPlayer(), filter)) {
+                    for (final MagicPlayer player : filter.filter(event)) {
                         game.doAction(new DrawAction(player, amount));
                     }
                 }
@@ -703,7 +694,7 @@ public enum MagicRuleEventAction {
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    for (final MagicPlayer player : game.filterPlayers(event.getPlayer(), filter)) {
+                    for (final MagicPlayer player : filter.filter(event)) {
                         if (isRandom) {
                             game.addEvent(MagicDiscardEvent.Random(event.getSource(), player, amount));   
                         } else {
@@ -946,7 +937,7 @@ public enum MagicRuleEventAction {
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    for (final MagicPlayer player : game.filterPlayers(event.getPlayer(), filter)) {
+                    for (final MagicPlayer player : filter.filter(event)) {
                         game.doAction(new ChangeLifeAction(player, -amount));
                     }
                 }
@@ -1030,10 +1021,7 @@ public enum MagicRuleEventAction {
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    final Collection<MagicPermanent> targets = game.filterPermanents(
-                        event.getPlayer(),
-                        filter
-                    );
+                    final Collection<MagicPermanent> targets = filter.filter(event);
                     for (final MagicPermanent creature : targets) {
                         game.doAction(new ChangeTurnPTAction(creature,power,toughness));
                     }
@@ -1177,10 +1165,7 @@ public enum MagicRuleEventAction {
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    final Collection<MagicPermanent> targets = game.filterPermanents(
-                        event.getPlayer(),
-                        filter
-                    );
+                    final Collection<MagicPermanent> targets = filter.filter(event);
                     for (final MagicPermanent creature : targets) {
                         game.doAction(new ChangeTurnPTAction(creature,power,toughness));
                         game.doAction(new GainAbilityAction(creature,abilityList));
@@ -1243,10 +1228,7 @@ public enum MagicRuleEventAction {
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    final Collection<MagicPermanent> targets = game.filterPermanents(
-                        event.getPlayer(),
-                        filter
-                    );
+                    final Collection<MagicPermanent> targets = filter.filter(event);
                     for (final MagicPermanent creature : targets) {
                         game.doAction(new ChangeTurnPTAction(creature,power,toughness));
                     }
@@ -1317,10 +1299,7 @@ public enum MagicRuleEventAction {
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    final Collection<MagicPermanent> targets = game.filterPermanents(
-                        event.getPlayer(),
-                        filter
-                    );
+                    final Collection<MagicPermanent> targets = filter.filter(event);
                     for (final MagicPermanent creature : targets) {
                         game.doAction(new ChangeTurnPTAction(creature,power,toughness));
                     }
@@ -1365,10 +1344,7 @@ public enum MagicRuleEventAction {
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    final Collection<MagicPermanent> targets = game.filterPermanents(
-                        event.getPlayer(),
-                        filter
-                    );
+                    final Collection<MagicPermanent> targets = filter.filter(event);
                     for (final MagicPermanent target : targets) {
                         game.doAction(new ChangeCountersAction(
                             target,
@@ -1668,7 +1644,7 @@ public enum MagicRuleEventAction {
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    final Collection<MagicPermanent> targets = game.filterPermanents(event.getPlayer(),filter);
+                    final Collection<MagicPermanent> targets = filter.filter(event);
                     for (final MagicPermanent it : targets) {
                         game.doAction(new RemoveFromPlayAction(it, MagicLocationType.OwnersHand));
                     }
@@ -2061,7 +2037,7 @@ public enum MagicRuleEventAction {
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    final Collection<MagicPermanent> targets = game.filterPermanents(event.getPlayer(),filter);
+                    final Collection<MagicPermanent> targets = filter.filter(event);
                     for (final MagicPermanent perm : targets) {
                         game.doAction(new TapAction(perm));
                     }
@@ -2155,7 +2131,7 @@ public enum MagicRuleEventAction {
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    final Collection<MagicPermanent> targets = game.filterPermanents(event.getPlayer(),filter);
+                    final Collection<MagicPermanent> targets = filter.filter(event);
                     for (final MagicPermanent perm : targets) {
                         game.doAction(new UntapAction(perm));
                     }
@@ -2254,7 +2230,7 @@ public enum MagicRuleEventAction {
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    for (final MagicPlayer player : game.filterPlayers(event.getPlayer(), filter)) {
+                    for (final MagicPlayer player : filter.filter(event)) {
                         game.doAction(new MillLibraryAction(player, amount));
                     }
                 }
@@ -2377,7 +2353,7 @@ public enum MagicRuleEventAction {
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    for (final MagicPlayer player : game.filterPlayers(event.getPlayer(), filter)) {
+                    for (final MagicPlayer player : filter.filter(event)) {
                         game.addEvent(new MagicSacrificePermanentEvent(event.getSource(), player, choice));
                     }
                 }
@@ -2505,7 +2481,7 @@ public enum MagicRuleEventAction {
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    final Collection<MagicPermanent> targets = game.filterPermanents(event.getPlayer(),filter);
+                    final Collection<MagicPermanent> targets = filter.filter(event);
                     for (final MagicPermanent perm : targets) {
                         game.doAction(new RegenerateAction(perm));
                     }
@@ -3147,10 +3123,7 @@ public enum MagicRuleEventAction {
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    final Collection<MagicPermanent> targets = game.filterPermanents(
-                        event.getPlayer(),
-                        filter
-                    );
+                    final Collection<MagicPermanent> targets = filter.filter(event);
                     for (final MagicPermanent creature : targets) {
                         game.doAction(new GainAbilityAction(creature,abilityList));
                     }

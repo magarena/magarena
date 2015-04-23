@@ -16,6 +16,8 @@ import magic.model.choice.MagicTargetChoice;
 import magic.model.stack.MagicItemOnStack;
 import magic.model.stack.MagicAbilityOnStack;
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 import java.util.Map;
 import java.util.TreeMap;
 
@@ -2473,26 +2475,6 @@ public class MagicTargetFilterFactory {
         single.put("Fungus card from a graveyard", FUNGUS_CARD_FROM_ALL_GRAVEYARDS);
     }
 
-    public static MagicTargetFilter<MagicPermanent> multiple(final String arg) {
-        if (arg.matches("(O|o)ther .*")) {
-            return new MagicOtherPermanentTargetFilter(singlePermanent(toSingular(arg)));
-        } else {
-            return singlePermanent(toSingular(arg));
-        }
-    }
-    
-    public static MagicTargetFilter<MagicTarget> multipleTargets(final String arg) {
-        if (arg.matches("(O|o)ther .*")) {
-            return new MagicOtherTargetFilter(singleTarget(toSingular(arg)));
-        } else {
-            return singleTarget(toSingular(arg));
-        }
-    }
-    
-    public static MagicTargetFilter<MagicCard> multipleCards(final String arg) {
-        return singleCard(toSingular(arg));
-    }
-
     public static String toSingular(final String arg) {
         return arg.toLowerCase()
             .replaceAll("\"", "QUOTE")
@@ -2545,13 +2527,39 @@ public class MagicTargetFilterFactory {
             .replaceAll("QUOTE", "")
             .replaceAll(" on the battlefield\\b", "")
             .replaceAll("^all ", "")
-            .replaceAll("^each ", "")
-            .replaceAll("^other ", "");
+            .replaceAll("^each ", "");
     }
+
+    public static MagicTargetFilter<MagicPermanent> multiple(final String arg) {
+        return singlePermanent(toSingular(arg));
+    }
+    
+    public static MagicTargetFilter<MagicTarget> multipleTargets(final String arg) {
+        return singleTarget(toSingular(arg));
+    }
+    
+    public static MagicTargetFilter<MagicCard> multipleCards(final String arg) {
+        return singleCard(toSingular(arg));
+    }
+
+    private static final Pattern OTHER = Pattern.compile("^(O|o)ther ");
     
     @SuppressWarnings("unchecked")
     public static MagicTargetFilter<MagicTarget> singleTarget(final String arg) {
-        return (MagicTargetFilter<MagicTarget>)single(arg);
+        final Matcher matcher = OTHER.matcher(arg);
+        final boolean other = matcher.find();
+        final String processed = matcher.replaceFirst("");
+        final MagicTargetFilter<MagicTarget> filter = (MagicTargetFilter<MagicTarget>)single(processed);
+        return other ? new MagicOtherTargetFilter(filter) : filter;
+    }
+    
+    @SuppressWarnings("unchecked")
+    public static MagicTargetFilter<MagicPermanent> singlePermanent(final String arg) {
+        final Matcher matcher = OTHER.matcher(arg);
+        final boolean other = matcher.find();
+        final String processed = matcher.replaceFirst("");
+        final MagicTargetFilter<MagicPermanent> filter = (MagicTargetFilter<MagicPermanent>)single(processed);
+        return other ? new MagicOtherPermanentTargetFilter(filter) : filter;
     }
     
     @SuppressWarnings("unchecked")
@@ -2562,11 +2570,6 @@ public class MagicTargetFilterFactory {
     @SuppressWarnings("unchecked")
     public static MagicTargetFilter<MagicPlayer> singlePlayer(final String arg) {
         return (MagicTargetFilter<MagicPlayer>)single(arg);
-    }
-    
-    @SuppressWarnings("unchecked")
-    public static MagicTargetFilter<MagicPermanent> singlePermanent(final String arg) {
-        return (MagicTargetFilter<MagicPermanent>)single(arg);
     }
     
     @SuppressWarnings("unchecked")

@@ -3,6 +3,7 @@ package magic.model.target;
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
+import magic.model.event.MagicEvent;
 
 import java.util.List;
 
@@ -17,4 +18,6 @@ public interface MagicTargetFilter<T extends MagicTarget> {
     List<T> filter(final MagicGame game);
     
     List<T> filter(final MagicPlayer player);
+    
+    List<T> filter(final MagicEvent event);
 }

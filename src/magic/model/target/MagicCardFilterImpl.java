@@ -8,6 +8,7 @@ import magic.model.MagicPlayer;
 import magic.model.MagicType;
 import magic.model.MagicSubType;
 import magic.model.MagicSource;
+import magic.model.event.MagicEvent;
 
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -21,6 +22,10 @@ public abstract class MagicCardFilterImpl implements MagicTargetFilter<MagicCard
     
     public List<MagicCard> filter(final MagicPlayer player) {
         return filter(MagicSource.NONE, player, MagicTargetHint.None);
+    }
+    
+    public List<MagicCard> filter(final MagicEvent event) {
+        return filter(event.getSource(), event.getPlayer(), MagicTargetHint.None);
     }
     
     public List<MagicCard> filter(final MagicSource source, final MagicPlayer player, final MagicTargetHint targetHint) {

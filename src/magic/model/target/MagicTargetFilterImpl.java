@@ -6,6 +6,7 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.stack.MagicItemOnStack;
+import magic.model.event.MagicEvent;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,6 +18,10 @@ public abstract class MagicTargetFilterImpl implements MagicTargetFilter<MagicTa
     
     public List<MagicTarget> filter(final MagicPlayer player) {
         return filter(MagicSource.NONE, player, MagicTargetHint.None);
+    }
+    
+    public List<MagicTarget> filter(final MagicEvent event) {
+        return filter(event.getSource(), event.getPlayer(), MagicTargetHint.None);
     }
     
     public List<MagicTarget> filter(final MagicSource source, final MagicPlayer player, final MagicTargetHint targetHint) {

@@ -4,6 +4,7 @@ import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
+import magic.model.event.MagicEvent;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,6 +16,10 @@ public abstract class MagicPermanentFilterImpl implements MagicTargetFilter<Magi
     
     public List<MagicPermanent> filter(final MagicPlayer player) {
         return filter(MagicSource.NONE, player, MagicTargetHint.None);
+    }
+
+    public List<MagicPermanent> filter(final MagicEvent event) {
+        return filter(event.getSource(), event.getPlayer(), MagicTargetHint.None);
     }
     
     public List<MagicPermanent> filter(final MagicSource source, MagicPlayer player, final MagicTargetHint targetHint) {
