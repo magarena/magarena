@@ -112,4 +112,6 @@ public class ARG {
     }
     
     public static final String COLON = "\\s*:\\s*";
+
+    public static final String CHOICE = "(?<choice>(another )?target [^\\.]*)";
 } 

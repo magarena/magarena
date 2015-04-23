@@ -2319,7 +2319,6 @@ public class MagicTargetFilterFactory {
         single.put("green or blue creature", GREEN_OR_BLUE_CREATURE);
         single.put("green creature or white creature", GREEN_OR_WHITE_CREATURE);
         single.put("white or blue creature", WHITE_OR_BLUE_CREATURE);
-        single.put("white and/or blue creature", WHITE_OR_BLUE_CREATURE);
         single.put("white or black creature", WHITE_OR_BLACK_CREATURE);
         single.put("creature with converted mana cost 3 or less", CREATURE_CONVERTED_3_OR_LESS);
         single.put("creature with converted mana cost 2 or less", CREATURE_CONVERTED_2_OR_LESS);

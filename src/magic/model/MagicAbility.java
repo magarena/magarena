@@ -269,7 +269,7 @@ public enum MagicAbility {
             ));
         }
     },
-    UntappedEffect("Whenever " + ARG.WORDRUN + " becomes untapped, " + ARG.EFFECT, 10) {
+    UntappedEffect("When(ever)? " + ARG.WORDRUN + " becomes untapped, " + ARG.EFFECT, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicWhenBecomesUntappedTrigger.create(
                 MagicTargetFilterFactory.singlePermanent(ARG.wordrun(arg)),
@@ -277,7 +277,7 @@ public enum MagicAbility {
             ));
         }
     },
-    AnyTappedEffect("Whenever " + ARG.WORDRUN + " becomes tapped, " + ARG.EFFECT, 10) {
+    AnyTappedEffect("When(ever)? " + ARG.WORDRUN + " becomes tapped, " + ARG.EFFECT, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicWhenBecomesTappedTrigger.create(
                 MagicTargetFilterFactory.singlePermanent(ARG.wordrun(arg)),
