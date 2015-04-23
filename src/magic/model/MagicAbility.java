@@ -142,7 +142,7 @@ public enum MagicAbility {
     Bushido("bushido " + ARG.NUMBER,20) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final int n = ARG.number(arg);
-            card.add(new MagicBecomesBlockedPumpTrigger(n,n,false));
+            card.add(new MagicBecomesBlockedPumpTrigger(n,n));
             card.add(new MagicWhenBlocksPumpTrigger(n,n));
         }
     },
@@ -179,12 +179,6 @@ public enum MagicAbility {
             final MagicManaCost cost = MagicManaCost.create(ARG.manacost(arg));
             final int maxLevel = ARG.number(arg);
             card.add(new MagicLevelUpActivation(cost, maxLevel));
-        }
-    },
-    BlockedByPump("Whenever SN becomes blocked, it gets " + ARG.PT + " until end of turn for each creature blocking it\\.", 20) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            final int[] pt = ARG.pt(arg);
-            card.add(new MagicBecomesBlockedPumpTrigger(pt[0],pt[1],true));
         }
     },
     ShockLand("As SN enters the battlefield, you may pay 2 life\\. If you don't, SN enters the battlefield tapped\\.", -10) {

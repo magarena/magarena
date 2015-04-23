@@ -1235,6 +1235,12 @@ public class MagicTargetFilterFactory {
 
     public static final MagicPermanentFilterImpl ATTACKING_CREATURE_YOUR_OPPONENT_CONTROLS = MagicTargetFilterFactory.creature(MagicPermanentState.Attacking, Control.Opp);
     
+    public static final MagicPermanentFilterImpl CREATURE_BLOCKING_SN = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+            return target.isCreature() && target.getBlockedCreature() == source; 
+        }
+    };
+    
     public static final MagicPermanentFilterImpl NONATTACKING_CREATURE=new MagicPermanentFilterImpl() {
         public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
             return target.isCreature() &&
@@ -2477,6 +2483,9 @@ public class MagicTargetFilterFactory {
         single.put("creature card from a graveyard", CREATURE_CARD_FROM_ALL_GRAVEYARDS);
         single.put("land card from a graveyard", LAND_CARD_FROM_ALL_GRAVEYARDS);
         single.put("Fungus card from a graveyard", FUNGUS_CARD_FROM_ALL_GRAVEYARDS);
+
+        // using source
+        single.put("creature blocking it", CREATURE_BLOCKING_SN);
     }
 
     public static String toSingular(final String arg) {
