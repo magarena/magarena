@@ -318,7 +318,7 @@ public class MagicCardDefinition implements MagicAbilityStore {
     }
 
     public String getRarityString() {
-        return (isMissing || rarity == null ? "" : rarity.getName());
+        return (rarity == null ? "" : rarity.getName());
     }
 
     public void setToken() {
@@ -539,7 +539,7 @@ public class MagicCardDefinition implements MagicAbilityStore {
     }
 
     public boolean hasColor(final MagicColor color) {
-        return (colorFlags&color.getMask())!=0 && !isMissing;
+        return (colorFlags&color.getMask())!=0;
     }
 
     public boolean isColorless() {
