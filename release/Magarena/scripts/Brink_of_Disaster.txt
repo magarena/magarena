@@ -6,7 +6,7 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={2}{B}{B}
+ability=When enchanted permanent becomes tapped, destroy RN.
 timing=removal
 enchant=destroy,neg creature or land
-requires_groovy_code
 oracle=Enchant creature or land. When enchanted permanent becomes tapped, destroy it.

@@ -5,7 +5,7 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={G}
+ability=When enchanted creature dies, you draw two cards.
 enchant=pump,creature
 timing=enchantment
-requires_groovy_code
 oracle=Enchant creature. When enchanted creature dies, you draw two cards.

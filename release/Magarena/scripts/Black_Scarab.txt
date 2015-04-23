@@ -5,8 +5,8 @@ rarity=U
 type=Enchantment
 subtype=Aura
 cost={W}
-ability=Enchanted creature can't be blocked by black creatures.
+ability=Enchanted creature can't be blocked by black creatures.;\
+        Enchanted creature gets +2/+2 as long as an opponent controls a black permanent.
 enchant=pump,pos creature
 timing=aura
-requires_groovy_code
 oracle=Enchant creature. Enchanted creature can't be blocked by black creatures. Enchanted creature gets +2/+2 as long as an opponent controls a black permanent.

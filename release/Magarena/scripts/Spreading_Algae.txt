@@ -6,7 +6,7 @@ type=Enchantment
 subtype=Aura
 cost={G}
 timing=aura
-ability=When SN is put into a graveyard from the battlefield, return SN from the graveyard to its owner's hand.
+ability=When enchanted land becomes tapped, destroy RN.;\
+        When SN is put into a graveyard from the battlefield, return SN from the graveyard to its owner's hand.
 enchant=destroy,neg swamp
-requires_groovy_code=Brink of Disaster
 oracle=Enchant Swamp. When enchanted land becomes tapped, destroy it. When Spreading Algae is put into a graveyard from the battlefield, return Spreading Algae to its owner's hand.

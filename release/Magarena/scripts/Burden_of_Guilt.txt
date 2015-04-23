@@ -6,7 +6,7 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={W}
+ability={1}: Tap enchanted creature.
 timing=tapping
 enchant=tap,neg creature
-requires_groovy_code
 oracle=Enchant creature. {1}: Tap enchanted creature.

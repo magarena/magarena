@@ -4,6 +4,6 @@ value=2.036
 rarity=U
 type=Enchantment
 cost={3}{B}{B}
-ability=Sacrifice a Swamp:Regenerate target black creature.
+ability=Sacrifice a Swamp: Regenerate target black creature.
 timing=enchantment
 oracle=Sacrifice a Swamp: Regenerate target black creature.

@@ -5,7 +5,7 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={U}
+ability=Whenever enchanted creature becomes tapped, you draw a card.
 timing=aura
 enchant=tap,creature an opponent controls
-requires_groovy_code
 oracle=Enchant creature an opponent controls. Whenever enchanted creature becomes tapped, you draw a card.

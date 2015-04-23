@@ -5,7 +5,7 @@ rarity=U
 type=Enchantment
 subtype=Aura
 cost={W}{W}
+ability={W}: Enchanted creature gets +1/+1 until end of turn.
 enchant=pump,pos creature
 timing=aura
-requires_groovy_code
 oracle=Enchant creature. {W}: Enchanted creature gets +1/+1 until end of turn.

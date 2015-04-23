@@ -6,8 +6,8 @@ type=Enchantment
 subtype=Aura
 cost={2}{B}
 ability=flash;\
-        At the beginning of your upkeep, you lose 1 life.
+        At the beginning of your upkeep, you lose 1 life.;\
+        {0}: Regenerate enchanted creature.
 enchant=pump,pos creature
 timing=pumpFlash
-requires_groovy_code
 oracle=Flash. Enchant creature. At the beginning of your upkeep, you lose 1 life. {0}: Regenerate enchanted creature.
