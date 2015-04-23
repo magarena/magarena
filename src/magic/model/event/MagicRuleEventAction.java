@@ -1008,7 +1008,7 @@ public enum MagicRuleEventAction {
         }
     },
     PumpGroup(
-        "(?<group>[^\\.]*) get (?<pt>[0-9+]+/[0-9+]+) until end of turn\\.", 
+        "(?<group>[^\\.]*) get(s)? (?<pt>[0-9+]+/[0-9+]+) until end of turn\\.", 
         MagicTiming.Pump, 
         "Pump"
     ) {
@@ -1151,7 +1151,7 @@ public enum MagicRuleEventAction {
         }
     },
     PumpGainGroup(
-        "(?<group>[^\\.]*) get (?<pt>[0-9+]+/[0-9+]+) and gain (?<ability>.+) until end of turn\\.", 
+        "(?<group>[^\\.]*) get(s)? (?<pt>[0-9+]+/[0-9+]+) and gain(s)? (?<ability>.+) until end of turn\\.", 
         MagicTiming.Pump, 
         "Pump"
     ) {
@@ -2122,7 +2122,7 @@ public enum MagicRuleEventAction {
         }
     },
     UntapGroup(
-        "untap all (?<group>[^\\.]*)\\.",
+        "untap (all|each) (?<group>[^\\.]*)\\.",
         MagicTiming.Tapping,
         "Untap"
     ) {
