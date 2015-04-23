@@ -983,6 +983,30 @@ public enum MagicRuleEventAction {
             };
         }
     },
+    PumpSelfForEach(
+        ARG.IT + " get(s)? (?<pt>[+-][0-9]+/[+-][0-9]+) until end of turn for each " + ARG.WORDRUN + "\\.", 
+        MagicTiming.Pump, 
+        "Pump"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            final String[] pt = matcher.group("pt").replace("+","").split("/");
+            final int power = Integer.parseInt(pt[0]);
+            final int toughness = Integer.parseInt(pt[1]);
+            final MagicTargetFilter<MagicTarget> filter = MagicTargetFilterFactory.singleTarget(ARG.wordrun(matcher));
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    final int amt = filter.filter(event).size();
+                    game.doAction(new ChangeTurnPTAction(
+                        ARG.itPermanent(event, matcher),
+                        power * amt,
+                        toughness * amt
+                    ));
+                }
+            };
+        }
+    },
     PumpChosen(
         "(?<choice>(another )?target [^\\.]*) get(s)? (?<pt>[0-9+]+/[0-9+]+) until end of turn\\.", 
         MagicTargetHint.Positive, 

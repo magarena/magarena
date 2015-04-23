@@ -2252,6 +2252,10 @@ public class MagicTargetFilterFactory {
         single.put("artifact or creature", ARTIFACT_OR_CREATURE);
         single.put("unpaired Soulbond creature", UNPAIRED_SOULBOND_CREATURE);
         single.put("monocolored creature", MONOCOLORED_CREATURE);
+        single.put("attacking Aurochs", ATTACKING_AUROCHS);
+        single.put("attacking Goblin", ATTACKING_GOBLIN);
+        single.put("attacking Kavu", ATTACKING_KAVU);
+        single.put("attacking Beast", ATTACKING_BEAST);
         single.put("attacking creature", ATTACKING_CREATURE);
         single.put("attacking creature with shadow", ATTACKING_CREATURE_WITH_SHADOW);
         single.put("attacking creature with power 3 or less", ATTACKING_CREATURE_POWER_3_OR_LESS);
