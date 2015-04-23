@@ -414,6 +414,9 @@ public class MagicTargetChoice extends MagicChoice {
         } else if (targetDescription.matches("(A|a)nother target .*")) {
             targetFilter = new MagicOtherPermanentTargetFilter(MagicTargetFilterFactory.singlePermanent(targetDescription.replaceFirst("(A|a)nother target ", "")));
             targeted     = true;
+        } else if (targetDescription.matches("(A|a)nother .*")) {
+            targetFilter = new MagicOtherPermanentTargetFilter(MagicTargetFilterFactory.singlePermanent(targetDescription.replaceFirst("(A|a)nother ", "")));
+            targeted     = false;
         } else if (targetDescription.matches("a(n)? .*")) {
             targetFilter = MagicTargetFilterFactory.single(targetDescription.replaceFirst("a(n)? ", ""));
             targeted     = false;
