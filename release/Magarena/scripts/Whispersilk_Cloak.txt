@@ -5,7 +5,7 @@ rarity=C
 type=Artifact
 subtype=Equipment
 cost={3}
-ability=Equipped creature can't be blocked and has shroud.;\
+ability=Equipped creature has shroud and can't be blocked.;\
         Equip {2}
 timing=equipment
 oracle=Equipped creature can't be blocked and has shroud. Equip {2}
