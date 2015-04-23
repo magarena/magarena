@@ -837,22 +837,57 @@ public class MagicTargetFilterFactory {
         }
     };
     
-    public static final MagicPermanentFilterImpl ENCHANTED_PERMANENT = new MagicPermanentFilterImpl() {
+    public static final MagicPermanentFilterImpl PERMANENT_ENCHANTED = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
             return target.isEnchanted(); 
         }
     };
     
-    public static final MagicPermanentFilterImpl ENCHANTED_CREATURE = new MagicPermanentFilterImpl() {
+    public static final MagicPermanentFilterImpl CREATURE_ENCHANTED = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
             return target.isCreature() &&
                    target.isEnchanted(); 
         }
     };
     
-    public static final MagicPermanentFilterImpl EQUIPPED_CREATURE = new MagicPermanentFilterImpl() {
+    public static final MagicPermanentFilterImpl CREATURE_EQUIPPED = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.isEquipped() && target.isCreature();
+        }
+    };
+    
+    public static final MagicPermanentFilterImpl ENCHANTED_PERMANENT = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+            final MagicPermanent perm = (MagicPermanent)source;
+            return perm.getEnchantedPermanent() == target;
+        }
+    };
+    
+    public static final MagicPermanentFilterImpl ENCHANTED_ARTIFACT = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+            final MagicPermanent perm = (MagicPermanent)source;
+            return perm.getEnchantedPermanent() == target && target.isArtifact();
+        }
+    };
+    
+    public static final MagicPermanentFilterImpl ENCHANTED_CREATURE = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+            final MagicPermanent perm = (MagicPermanent)source;
+            return perm.getEnchantedPermanent() == target && target.isCreature();
+        }
+    };
+    
+    public static final MagicPermanentFilterImpl ENCHANTED_LAND = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+            final MagicPermanent perm = (MagicPermanent)source;
+            return perm.getEnchantedPermanent() == target && target.isLand();
+        }
+    };
+    
+    public static final MagicPermanentFilterImpl EQUIPPED_CREATURE = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
+            final MagicPermanent perm = (MagicPermanent)source;
+            return perm.getEquippedCreature() == target && target.isCreature();
         }
     };
     
@@ -2322,14 +2357,19 @@ public class MagicTargetFilterFactory {
         single.put("creature token", CREATURE_TOKEN);
         single.put("serf token", SERF_TOKEN);
         single.put("nonsnow creature", NONSNOW_CREATURE);
-        single.put("creature that is enchanted", ENCHANTED_CREATURE);
-        single.put("creature that is equipped", EQUIPPED_CREATURE);
+        single.put("creature that is enchanted", CREATURE_ENCHANTED);
+        single.put("creature that is equipped", CREATURE_EQUIPPED);
         single.put("nonenchantment creature", NONENCHANTMENT_CREATURE);
         single.put("creature that's a Barbarian, a Warrior, or a Berserker", BARBARIAN_WARRIOR_BERSERKER_CREATURE);
         single.put("multicolored creature", MULTICOLORED_CREATURE);
         single.put("unblocked creature", UNBLOCKED_CREATURE);
         single.put("Cleric or Wizard creature", CLERIC_OR_WIZARD_CREATURE);
         single.put("creature that was dealt damage this turn", CREATURE_BEEN_DAMAGED);
+        single.put("enchanted creature", ENCHANTED_CREATURE);
+        single.put("enchanted land", ENCHANTED_LAND);
+        single.put("enchanted permanent", ENCHANTED_PERMANENT);
+        single.put("enchanted artifact", ENCHANTED_ARTIFACT);
+        single.put("equipped creature", EQUIPPED_CREATURE);
 
         // <color|type|subtype> you control
         single.put("basic land you control", BASIC_LAND_YOU_CONTROL);
@@ -2391,7 +2431,7 @@ public class MagicTargetFilterFactory {
         single.put("red or white permanent", RED_OR_WHITE_PERMANENT);
         single.put("multicolored permanent", MULTICOLORED_PERMANENT);
         single.put("nonwhite permanent", NONWHITE_PERMANENT);
-        single.put("permanent that is enchanted", ENCHANTED_PERMANENT);
+        single.put("permanent that is enchanted", PERMANENT_ENCHANTED);
         single.put("enchantment or enchanted permanent", ENCHANTMENT_OR_ENCHANTED_PERMANENT);
         single.put("nonartifact permanent", NONARTIFACT_PERMANENT);
         

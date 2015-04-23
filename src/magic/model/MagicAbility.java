@@ -21,7 +21,7 @@ import java.util.regex.Pattern;
 
 public enum MagicAbility {
   
-    AttacksEachTurnIfAble("(SN )?attacks each (turn|combat) if able(\\.)?",-10),
+    AttacksEachTurnIfAble("(SN )?attack(s)? each (turn|combat) if able(\\.)?",-10),
     CannotBlock("(SN )?can't block(\\.)?",-50),
     CannotAttack("(SN )?can't attack(\\.)?",-50),
     CannotAttackOrBlock("(SN )?can't attack or block(\\.)?",-200),
@@ -714,42 +714,6 @@ public enum MagicAbility {
             card.add(MagicCascadeTrigger.create());
         }
     },
-    AttachedPumpGain("(Equipped|Enchanted) creature gets " + ARG.PT + "((,)? and (has )?|, has )" + ARG.ANY + "(\\.)?", 0) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            final int[] pt = ARG.pt(arg);
-            card.add(MagicStatic.genPTStatic(pt[0], pt[1]));
-            card.add(MagicStatic.linkedABStatic(
-                MagicAbility.getAbilityList(
-                    ARG.any(arg)
-                )
-            ));
-        }
-    },
-    AttachedPump("(Equipped|Enchanted) creature gets " + ARG.PT + "(\\.)?", 0) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            final int[] pt = ARG.pt(arg);
-            card.add(MagicStatic.genPTStatic(pt[0], pt[1]));
-        }
-    },
-    AttachedCreatureGainConditional("(Equipped|Enchanted) (creature|artifact|land|permanent) " + ARG.ANY + " as long as " + ARG.WORDRUN + "(\\.)?", 0) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(MagicStatic.linkedABStatic(
-                MagicConditionParser.build(ARG.wordrun(arg)),
-                MagicAbility.getAbilityList(
-                    ARG.any(arg)
-                )
-            ));
-        }
-    },
-    AttachedCreatureGain("(Equipped|Enchanted) (creature|artifact|land|permanent) " + ARG.ANY + "(\\.)?", 0) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(MagicStatic.linkedABStatic(
-                MagicAbility.getAbilityList(
-                    ARG.any(arg)
-                )
-            ));
-        }
-    },
     PairedPump("As long as SN is paired with another creature, each of those creatures gets " + ARG.PT + "(\\.)?", 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final int[] pt = ARG.pt(arg);
@@ -809,37 +773,6 @@ public enum MagicAbility {
     ConditionPumpGainAlt("As long as (?<wordrun>[^\\,]*), (SN|it) (gets " + ARG.PT + "(.| ))?(and )?(" + ARG.ANY + ")?(\\.)?", 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             ConditionPumpGain.addAbilityImpl(card, arg);
-        }
-    },
-    ConditionPumpGroup("As long as " + ARG.WORDRUN + ", " + ARG.WORDRUN2 + " get " + ARG.PT + "(\\.)?", 0) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            final MagicCondition condition = MagicConditionParser.build(ARG.wordrun(arg));
-            final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.multiple(ARG.wordrun2(arg));
-            final int[] pt = ARG.pt(arg);
-            card.add(MagicStatic.genPTStatic(condition, filter, pt[0], pt[1]));
-        }
-    },
-    ConditionPumpGroupAlt(ARG.WORDRUN2 + " get(s)? " + ARG.PT + " as long as " + ARG.WORDRUN + "(\\.)?", 0){
-        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            ConditionPumpGroup.addAbilityImpl(card, arg);
-        }
-    },
-    ConditionGainGroup("As long as " + ARG.WORDRUN + ", " + ARG.WORDRUN2 + " have " + ARG.ANY + "(\\.)?", 0) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            final MagicCondition condition = MagicConditionParser.build(ARG.wordrun(arg));
-            final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.multiple(ARG.wordrun2(arg));
-            card.add(MagicStatic.genABStatic(
-                condition,
-                filter,
-                MagicAbility.getAbilityList(
-                    ARG.any(arg)
-                )
-            ));
-        }
-    },
-    ConditionGainGroupAlt(ARG.WORDRUN2 + " have " + ARG.ANY + " as long as " + ARG.WORDRUN + "(\\.)?", 0) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            ConditionGainGroup.addAbilityImpl(card, arg);
         }
     },
     Equip("Equip " + ARG.MANACOST, 0) {
@@ -1108,47 +1041,6 @@ public enum MagicAbility {
             ));
         }
     },
-    LordPumpGain(ARG.WORDRUN + " get(s)? " + ARG.PT + " and (have|has) " + ARG.ANY + "(\\.)?", 0) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            final int[] pt = ARG.pt(arg);
-            final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.multiple(ARG.wordrun(arg));
-            card.add(MagicStatic.genPTStatic(filter, pt[0], pt[1]));
-            card.add(MagicStatic.genABStatic(
-                filter,
-                MagicAbility.getAbilityList(
-                    ARG.any(arg)
-                )
-            ));
-        }
-    },
-    LordPump(ARG.WORDRUN + " get(s)? " + ARG.PT + "(\\.)?", 0) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            final int[] pt = ARG.pt(arg);
-            final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.multiple(ARG.wordrun(arg));
-            card.add(MagicStatic.genPTStatic(filter, pt[0], pt[1]));
-        }
-    },
-    LordGainCan(ARG.WORDRUN + " (?<any>can('t)? .+)(\\.)?", 0) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.multiple(ARG.wordrun(arg));
-            final MagicAbilityList abilityList = MagicAbility.getAbilityList(ARG.any(arg));
-            card.add(MagicStatic.genABGameStatic(
-                filter,
-                abilityList
-            ));
-        }
-    },
-    LordGain(ARG.WORDRUN + " (have|has) " + ARG.ANY + "(\\.)?", 0) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.multiple(ARG.wordrun(arg));
-            card.add(MagicStatic.genABStatic(
-                filter,
-                MagicAbility.getAbilityList(
-                    ARG.any(arg)
-                )
-            ));
-        }
-    },
     ChooseNotUntap("You may choose not to untap SN during your untap step\\.",0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.addAbility(DoesNotUntap);
@@ -1266,6 +1158,78 @@ public enum MagicAbility {
             ));
         }
     },
+    ConditionPumpGroup("As long as " + ARG.WORDRUN + ", " + ARG.WORDRUN2 + " get " + ARG.PT + "(\\.)?", 0) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            final MagicCondition condition = MagicConditionParser.build(ARG.wordrun(arg));
+            final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.multiple(ARG.wordrun2(arg));
+            final int[] pt = ARG.pt(arg);
+            card.add(MagicStatic.genPTStatic(condition, filter, pt[0], pt[1]));
+        }
+    },
+    ConditionPumpGroupAlt(ARG.WORDRUN2 + " get(s)? " + ARG.PT + " as long as " + ARG.WORDRUN + "(\\.)?", 0){
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            ConditionPumpGroup.addAbilityImpl(card, arg);
+        }
+    },
+    ConditionGainGroup("As long as " + ARG.WORDRUN + ", " + ARG.WORDRUN2 + " have " + ARG.ANY + "(\\.)?", 0) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            final MagicCondition condition = MagicConditionParser.build(ARG.wordrun(arg));
+            final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.multiple(ARG.wordrun2(arg));
+            card.add(MagicStatic.genABStatic(
+                condition,
+                filter,
+                MagicAbility.getAbilityList(
+                    ARG.any(arg)
+                )
+            ));
+        }
+    },
+    ConditionGainGroupAlt(ARG.WORDRUN2 + " (has|have) " + ARG.ANY + " as long as " + ARG.WORDRUN + "(\\.)?", 0) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            ConditionGainGroup.addAbilityImpl(card, arg);
+        }
+    },
+    LordPumpGain(ARG.WORDRUN + " get(s)? " + ARG.PT + "(,)? (and|has) " + ARG.ANY + "(\\.)?", 0) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            final int[] pt = ARG.pt(arg);
+            final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.multiple(ARG.wordrun(arg));
+            card.add(MagicStatic.genPTStatic(filter, pt[0], pt[1]));
+            card.add(MagicStatic.genABStatic(
+                filter,
+                MagicAbility.getAbilityList(
+                    ARG.any(arg)
+                )
+            ));
+        }
+    },
+    LordPump(ARG.WORDRUN + " get(s)? " + ARG.PT + "(\\.)?", 0) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            final int[] pt = ARG.pt(arg);
+            final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.multiple(ARG.wordrun(arg));
+            card.add(MagicStatic.genPTStatic(filter, pt[0], pt[1]));
+        }
+    },
+    LordGain(ARG.WORDRUN + " (have|has) " + ARG.ANY + "(\\.)?", 0) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.multiple(ARG.wordrun(arg));
+            card.add(MagicStatic.genABStatic(
+                filter,
+                MagicAbility.getAbilityList(
+                    ARG.any(arg)
+                )
+            ));
+        }
+    },
+    LordGainCan(ARG.WORDRUN + " (?<any>(can|can't|doesn't|attack(s)?) .+)(\\.)?", 0) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.multiple(ARG.wordrun(arg));
+            final MagicAbilityList abilityList = MagicAbility.getAbilityList(ARG.any(arg));
+            card.add(MagicStatic.genABGameStatic(
+                filter,
+                abilityList
+            ));
+        }
+    },
     ;
 
     public static final Set<MagicAbility> PROTECTION_FLAGS = EnumSet.range(ProtectionFromBlack, ProtectionFromEverything);
@@ -1356,9 +1320,9 @@ public enum MagicAbility {
     }
 
     private static final Pattern SUB_ABILITY_LIST = Pattern.compile(
-        "(?:has )?\"([^\"]+)\"(?:, and | and )?|" + 
-        "(?:has )?([A-Za-z][^,]+)(?:, and | and )|" + 
-        "(?:has )?([A-Za-z][^,]+)"
+        "(?:has |have )?\"([^\"]+)\"(?:, and | and )?|" + 
+        "(?:has |have )?([A-Za-z][^,]+)(?:, and | and )|" + 
+        "(?:has |have )?([A-Za-z][^,]+)"
     );
     
     public static MagicAbilityList getAbilityList(final String names) {

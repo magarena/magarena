@@ -54,7 +54,7 @@ public class ARG {
         return m.group("word2");
     }
     
-    public static final String WORDRUN = "(?<wordrun>[^\\.\"]+)";
+    public static final String WORDRUN = "(?<wordrun>[^\\.\"]+?)";
     public static String wordrun(final Matcher m) {
         return m.group("wordrun");
     }
