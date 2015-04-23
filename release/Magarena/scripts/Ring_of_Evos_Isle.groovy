@@ -1,30 +1,5 @@
 [
-    new MagicPermanentActivation(
-        [MagicCondition.HAS_EQUIPPED_CREATURE],
-        new MagicActivationHints(MagicTiming.Pump),
-        "Hexproof"
-    ){
-        @Override
-        public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
-            return [
-                new MagicPayManaCostEvent(source,"{2}")
-            ];
-        }
-        @Override
-        public MagicEvent getPermanentEvent(final MagicPermanent permanent,final MagicPayedCost payedCost) {
-            return new MagicEvent(
-                permanent,
-                permanent.getEquippedCreature(),
-                this,
-                "RN gains hexproof until end of turn."
-            );
-        }
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new GainAbilityAction(event.getRefPermanent(),MagicAbility.Hexproof));
-        }
-    },
-    new MagicAtYourUpkeepTrigger() {
+   new MagicAtYourUpkeepTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
             final MagicPermanent equipped = permanent.getEquippedCreature();

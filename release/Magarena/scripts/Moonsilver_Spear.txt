@@ -6,7 +6,7 @@ type=Artifact
 subtype=Equipment
 cost={4}
 ability=Equipped creature has first strike.;\
+        Whenever equipped creature attacks, put a 4/4 white Angel creature token with flying onto the battlefield.;\
         Equip {4}
 timing=equipment
-requires_groovy_code
 oracle=Equipped creature has first strike. Whenever equipped creature attacks, put a 4/4 white Angel creature token with flying onto the battlefield. Equip {4}

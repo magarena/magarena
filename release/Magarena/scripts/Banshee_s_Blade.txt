@@ -5,7 +5,8 @@ rarity=U
 type=Artifact
 subtype=Equipment
 cost={2}
-ability=Equip {2}
+ability=Whenever equipped creature deals combat damage, put a charge counter on SN.;\
+        Equip {2}
 timing=equipment
 requires_groovy_code
 oracle=Equipped creature gets +1/+1 for each charge counter on Banshee's Blade. Whenever equipped creature deals combat damage, put a charge counter on Banshee's Blade. Equip {2}

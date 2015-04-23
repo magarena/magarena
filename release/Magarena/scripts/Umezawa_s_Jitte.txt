@@ -5,9 +5,11 @@ rarity=R
 type=Legendary,Artifact
 subtype=Equipment
 cost={2}
-ability=Remove a charge counter from SN: Target creature gets -1/-1 until end of turn.;\
-        Remove a charge counter from SN: You gain 2 life.;\
+ability=Whenever equipped creature deals combat damage, put two charge counters on SN.;\
+        Remove a charge counter from SN: Choose one — \
+        (1) Equipped creature gets +2/+2 until end of turn. \
+        (2) Target creature gets -1/-1 until end of turn. \
+        (3) You gain 2 life.;\
         Equip {2}
-requires_groovy_code
 timing=main
 oracle=Whenever equipped creature deals combat damage, put two charge counters on Umezawa's Jitte. Remove a charge counter from Umezawa's Jitte: Choose one — • Equipped creature gets +2/+2 until end of turn. • Target creature gets -1/-1 until end of turn. • You gain 2 life. Equip {2}

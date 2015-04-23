@@ -6,7 +6,7 @@ type=Artifact
 subtype=Equipment
 cost={U}{B}
 ability=Equipped creature has fear.;\
+        Whenever equipped creature deals combat damage to a player, you may draw a card.;\
         Equip {2}
 timing=equipment
-requires_groovy_code
 oracle=Equipped creature has fear. Whenever equipped creature deals combat damage to a player, you may draw a card. Equip {2}

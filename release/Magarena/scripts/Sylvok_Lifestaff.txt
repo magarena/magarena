@@ -6,7 +6,7 @@ type=Artifact
 subtype=Equipment
 cost={1}
 ability=Equipped creature gets +1/+0.;\
+        Whenever equipped creature dies, you gain 3 life.;\
         Equip {1}
 timing=equipment
-requires_groovy_code
 oracle=Equipped creature gets +1/+0. Whenever equipped creature dies, you gain 3 life. Equip {1}

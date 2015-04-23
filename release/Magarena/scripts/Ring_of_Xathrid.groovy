@@ -1,29 +1,4 @@
 [
-    new MagicPermanentActivation(
-        [MagicCondition.HAS_EQUIPPED_CREATURE],
-        new MagicActivationHints(MagicTiming.Pump),
-        "Regen"
-    ) {
-        @Override
-        public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
-            return [
-                new MagicPayManaCostEvent(source,"{2}")
-            ];
-        }
-        @Override
-        public MagicEvent getPermanentEvent(final MagicPermanent permanent, final MagicPayedCost payedCost) {
-            return new MagicEvent(
-                permanent,
-                permanent.getEquippedCreature(),
-                this,
-                "Regenerate RN."
-            );
-        }
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new RegenerateAction(event.getRefPermanent()));
-        }
-    },
     new MagicAtYourUpkeepTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
