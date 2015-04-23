@@ -1087,6 +1087,16 @@ public enum MagicAbility {
             ));
         }
     },
+    ConditionPumpGainGroup("As long as " + ARG.WORDRUN + ", " + ARG.WORDRUN2 + " get " + ARG.PT + " and " + ARG.ANY + "\\.", 0) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            final int[] pt = ARG.pt(arg);
+            final MagicCondition condition = MagicConditionParser.build(ARG.wordrun(arg));
+            final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.multiple(ARG.wordrun2(arg));
+            final MagicAbilityList abList = MagicAbility.getAbilityList(ARG.any(arg));
+            card.add(MagicStatic.genPTStatic(condition, filter, pt[0], pt[1]));
+            card.add(MagicStatic.genABStatic(condition, filter, abList));
+        }
+    },
     ConditionPumpGroup("As long as " + ARG.WORDRUN + ", " + ARG.WORDRUN2 + " get " + ARG.PT + "(\\.)?", 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final MagicCondition condition = MagicConditionParser.build(ARG.wordrun(arg));
@@ -1104,13 +1114,8 @@ public enum MagicAbility {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final MagicCondition condition = MagicConditionParser.build(ARG.wordrun(arg));
             final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.multiple(ARG.wordrun2(arg));
-            card.add(MagicStatic.genABStatic(
-                condition,
-                filter,
-                MagicAbility.getAbilityList(
-                    ARG.any(arg)
-                )
-            ));
+            final MagicAbilityList abList = MagicAbility.getAbilityList(ARG.any(arg));
+            card.add(MagicStatic.genABStatic(condition, filter, abList));
         }
     },
     ConditionGainGroupAlt(ARG.WORDRUN2 + " (has|have) " + ARG.ANY + " as long as " + ARG.WORDRUN + "(\\.)?", 0) {
@@ -1122,13 +1127,9 @@ public enum MagicAbility {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final int[] pt = ARG.pt(arg);
             final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.multiple(ARG.wordrun(arg));
+            final MagicAbilityList abList = MagicAbility.getAbilityList(ARG.any(arg));
             card.add(MagicStatic.genPTStatic(filter, pt[0], pt[1]));
-            card.add(MagicStatic.genABStatic(
-                filter,
-                MagicAbility.getAbilityList(
-                    ARG.any(arg)
-                )
-            ));
+            card.add(MagicStatic.genABStatic(filter, abList));
         }
     },
     LordPump(ARG.WORDRUN + " get(s)? " + ARG.PT + "(\\.)?", 0) {
@@ -1141,22 +1142,15 @@ public enum MagicAbility {
     LordGain(ARG.WORDRUN + " (have|has) " + ARG.ANY + "(\\.)?", 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.multiple(ARG.wordrun(arg));
-            card.add(MagicStatic.genABStatic(
-                filter,
-                MagicAbility.getAbilityList(
-                    ARG.any(arg)
-                )
-            ));
+            final MagicAbilityList abList = MagicAbility.getAbilityList(ARG.any(arg));
+            card.add(MagicStatic.genABStatic(filter, abList));
         }
     },
     LordGainCan(ARG.WORDRUN + " (?<any>(can|can't|doesn't|attack(s)?) .+)(\\.)?", 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.multiple(ARG.wordrun(arg));
-            final MagicAbilityList abilityList = MagicAbility.getAbilityList(ARG.any(arg));
-            card.add(MagicStatic.genABGameStatic(
-                filter,
-                abilityList
-            ));
+            final MagicAbilityList abList = MagicAbility.getAbilityList(ARG.any(arg));
+            card.add(MagicStatic.genABGameStatic(filter, abList));
         }
     },
     ;
