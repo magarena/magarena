@@ -1,0 +1,9 @@
+name=Frantic Search
+image=http://magiccards.info/scans/en/vma/70.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={2}{U}
+effect=Draw two cards, then discard two cards. Untap up to three lands.
+timing=removal
+oracle=Draw two cards, then discard two cards. Untap up to three lands.

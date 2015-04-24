@@ -1,0 +1,12 @@
+name=Treachery
+image=http://magiccards.info/scans/en/ud/50.jpg
+value=2.500
+rarity=R
+type=Enchantment
+subtype=Aura
+cost={3}{U}{U}
+ability=Enchant creature;\
+        When SN enters the battlefield, untap up to five lands.;\
+        You control enchanted creature.
+timing=main
+oracle=Enchant creature\nWhen Treachery enters the battlefield, untap up to five lands.\nYou control enchanted creature.
