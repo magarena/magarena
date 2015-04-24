@@ -21,28 +21,6 @@ def ST = new MagicStatic(MagicLayer.Type) {
 };
 
 [
-    new MagicWhenDamageIsDealtTrigger() {
-        @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
-            return (permanent.isController(damage.getTarget()) && damage.getSource().isCreature()) ?
-                new MagicEvent(
-                    permanent,
-                    damage.getSource(),
-                    this,
-                    "PN puts a gold counter on RN."
-                ) :
-                MagicEvent.NONE;
-        }
-
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.processRefPermanent(game, {
-                game.doAction(new ChangeCountersAction(it,MagicCounterType.Gold,1));
-                game.doAction(new AddStaticAction(it, AB));
-                game.doAction(new AddStaticAction(it, ST));
-            });
-        }
-    },
     new MagicWhenSelfLeavesPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final RemoveFromPlayAction act) {

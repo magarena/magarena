@@ -4,6 +4,7 @@ value=4.491
 rarity=U
 type=Artifact
 cost={2}
+ability=When SN enters the battlefield, you may exile an instant card with converted mana cost 2 or less from your hand.
 timing=artifact
 requires_groovy_code
 oracle=Imprint — When Isochron Scepter enters the battlefield, you may exile an instant card with converted mana cost 2 or less from your hand. {2}, {T}: You may copy the exiled card. If you do, you may cast the copy without paying its mana cost.
