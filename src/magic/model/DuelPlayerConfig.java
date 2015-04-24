@@ -69,7 +69,8 @@ public class DuelPlayerConfig {
                         prefix + PLAYER_DECK,
                         DeckType.Random + ";" + MagicDeckProfile.ANY_THREE)
         );
-        loadDeck(properties, prefix);    }
+        loadDeck(properties, prefix);
+    }
 
     public void save(final Properties properties, final String prefix) {
 
