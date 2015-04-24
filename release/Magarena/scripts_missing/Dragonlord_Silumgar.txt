@@ -9,4 +9,4 @@ pt=3/5
 ability=Flying, deathtouch;\
         When SN enters the battlefield, gain control of target creature or planeswalker for as long as you control SN.
 timing=main
-oracle=Flying, deathtouch. When Dragonlord Silumgar enters the battlefield, gain control of target creature or planeswalker for as long as you control Dragonlord Silumgar.
+oracle=Flying, deathtouch\nWhen Dragonlord Silumgar enters the battlefield, gain control of target creature or planeswalker for as long as you control Dragonlord Silumgar.

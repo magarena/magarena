@@ -6,4 +6,4 @@ type=Instant
 cost={2}{U}
 effect=Change the text of target spell or permanent by replacing all instances of one color word with another or one basic land type with another until end of turn.~Draw a card.
 timing=removal
-oracle=Change the text of target spell or permanent by replacing all instances of one color word with another or one basic land type with another until end of turn. Draw a card.
+oracle=Change the text of target spell or permanent by replacing all instances of one color word with another or one basic land type with another until end of turn.\nDraw a card.

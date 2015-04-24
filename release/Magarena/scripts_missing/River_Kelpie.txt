@@ -10,4 +10,4 @@ ability=Whenever SN or another permanent enters the battlefield from a graveyard
         Whenever a player casts a spell from a graveyard, draw a card.;\
         Persist
 timing=main
-oracle=Whenever River Kelpie or another permanent enters the battlefield from a graveyard, draw a card. Whenever a player casts a spell from a graveyard, draw a card. Persist
+oracle=Whenever River Kelpie or another permanent enters the battlefield from a graveyard, draw a card.\nWhenever a player casts a spell from a graveyard, draw a card.\nPersist

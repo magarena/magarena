@@ -9,4 +9,4 @@ pt=2/2
 ability=Flying;\
         Cast SN only if you've cast another spell this turn.
 timing=main
-oracle=Flying. Cast Skyshroud Condor only if you've cast another spell this turn.
+oracle=Flying\nCast Skyshroud Condor only if you've cast another spell this turn.

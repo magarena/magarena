@@ -9,4 +9,4 @@ ability=+1: Draw a card. Target player puts the top card of his or her library i
         0: Target player puts the top ten cards of his or her library into his or her graveyard.;\
         −7: Any number of target players each draw twenty cards.
 timing=main
-oracle=+1: Draw a card. Target player puts the top card of his or her library into his or her graveyard. 0: Target player puts the top ten cards of his or her library into his or her graveyard. −7: Any number of target players each draw twenty cards.
+oracle=+1: Draw a card. Target player puts the top card of his or her library into his or her graveyard.\n0: Target player puts the top ten cards of his or her library into his or her graveyard.\n−7: Any number of target players each draw twenty cards.

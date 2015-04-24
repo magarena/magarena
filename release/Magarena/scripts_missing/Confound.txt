@@ -6,4 +6,4 @@ type=Instant
 cost={1}{U}
 effect=Counter target spell that targets one or more creatures.~Draw a card.
 timing=removal
-oracle=Counter target spell that targets one or more creatures. Draw a card.
+oracle=Counter target spell that targets one or more creatures.\nDraw a card.

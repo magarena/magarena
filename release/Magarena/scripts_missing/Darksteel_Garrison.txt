@@ -9,4 +9,4 @@ ability=Fortified land has indestructible.;\
         Whenever fortified land becomes tapped, target creature gets +1/+1 until end of turn.;\
         Fortify {3}
 timing=main
-oracle=Fortified land has indestructible. Whenever fortified land becomes tapped, target creature gets +1/+1 until end of turn. Fortify {3}
+oracle=Fortified land has indestructible.\nWhenever fortified land becomes tapped, target creature gets +1/+1 until end of turn.\nFortify {3}

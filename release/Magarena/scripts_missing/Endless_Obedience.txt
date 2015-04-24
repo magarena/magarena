@@ -6,4 +6,4 @@ type=Sorcery
 cost={4}{B}{B}
 effect=Convoke~Put target creature card from a graveyard onto the battlefield under your control.
 timing=main
-oracle=Convoke. Put target creature card from a graveyard onto the battlefield under your control.
+oracle=Convoke\nPut target creature card from a graveyard onto the battlefield under your control.

@@ -9,4 +9,4 @@ pt=4/4
 ability=Trample;\
         SN can block an additional creature.
 timing=main
-oracle=Trample. Two-Headed Giant of Foriys can block an additional creature.
+oracle=Trample\nTwo-Headed Giant of Foriys can block an additional creature.

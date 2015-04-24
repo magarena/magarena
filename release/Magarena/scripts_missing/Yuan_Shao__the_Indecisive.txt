@@ -9,4 +9,4 @@ pt=2/3
 ability=Horsemanship;\
         Each creature you control can't be blocked by more than one creature.
 timing=main
-oracle=Horsemanship. Each creature you control can't be blocked by more than one creature.
+oracle=Horsemanship\nEach creature you control can't be blocked by more than one creature.

@@ -9,4 +9,4 @@ pt=4/4
 ability=Flying;\
         Phasing
 timing=main
-oracle=Flying. Phasing
+oracle=Flying\nPhasing

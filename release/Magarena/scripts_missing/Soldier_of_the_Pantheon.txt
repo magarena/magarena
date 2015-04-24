@@ -9,4 +9,4 @@ pt=2/1
 ability=Protection from multicolored;\
         Whenever an opponent casts a multicolored spell, you gain 1 life.
 timing=main
-oracle=Protection from multicolored. Whenever an opponent casts a multicolored spell, you gain 1 life.
+oracle=Protection from multicolored\nWhenever an opponent casts a multicolored spell, you gain 1 life.

@@ -7,4 +7,4 @@ cost={U}{U}{U}
 ability=Cumulative upkeep {1}{U}{U};\
         If tapped for mana, Plains produce {R}, Swamps produce {G}, Mountains produce {W}, and Forests produce {B} instead of any other type.
 timing=main
-oracle=Cumulative upkeep {1}{U}{U}. If tapped for mana, Plains produce {R}, Swamps produce {G}, Mountains produce {W}, and Forests produce {B} instead of any other type.
+oracle=Cumulative upkeep {1}{U}{U}\nIf tapped for mana, Plains produce {R}, Swamps produce {G}, Mountains produce {W}, and Forests produce {B} instead of any other type.

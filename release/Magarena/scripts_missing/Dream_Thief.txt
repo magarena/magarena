@@ -9,4 +9,4 @@ pt=2/1
 ability=Flying;\
         When SN enters the battlefield, draw a card if you've cast another blue spell this turn.
 timing=main
-oracle=Flying. When Dream Thief enters the battlefield, draw a card if you've cast another blue spell this turn.
+oracle=Flying\nWhen Dream Thief enters the battlefield, draw a card if you've cast another blue spell this turn.

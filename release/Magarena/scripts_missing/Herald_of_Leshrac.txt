@@ -11,4 +11,4 @@ ability=Flying;\
         SN gets +1/+1 for each land you control but don't own.;\
         When SN leaves the battlefield, each player gains control of each land he or she owns that you control.
 timing=main
-oracle=Flying. Cumulative upkeep—Gain control of a land you don't control. Herald of Leshrac gets +1/+1 for each land you control but don't own. When Herald of Leshrac leaves the battlefield, each player gains control of each land he or she owns that you control.
+oracle=Flying\nCumulative upkeep—Gain control of a land you don't control.\nHerald of Leshrac gets +1/+1 for each land you control but don't own.\nWhen Herald of Leshrac leaves the battlefield, each player gains control of each land he or she owns that you control.

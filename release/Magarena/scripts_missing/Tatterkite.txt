@@ -9,4 +9,4 @@ pt=2/1
 ability=Flying;\
         SN can't have counters placed on it.
 timing=main
-oracle=Flying. Tatterkite can't have counters placed on it.
+oracle=Flying\nTatterkite can't have counters placed on it.

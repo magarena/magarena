@@ -9,4 +9,4 @@ pt=2/3
 ability=When SN enters the battlefield, return all blue creatures your opponents control to their owners' hands.;\
         Your opponents can't cast blue creature spells.
 timing=main
-oracle=When Llawan, Cephalid Empress enters the battlefield, return all blue creatures your opponents control to their owners' hands. Your opponents can't cast blue creature spells.
+oracle=When Llawan, Cephalid Empress enters the battlefield, return all blue creatures your opponents control to their owners' hands.\nYour opponents can't cast blue creature spells.

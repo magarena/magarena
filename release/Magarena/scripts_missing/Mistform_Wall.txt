@@ -9,4 +9,4 @@ pt=1/4
 ability=SN has defender as long as it's a Wall.;\
         {1}: SN becomes the creature type of your choice until end of turn.
 timing=main
-oracle=Mistform Wall has defender as long as it's a Wall. {1}: Mistform Wall becomes the creature type of your choice until end of turn.
+oracle=Mistform Wall has defender as long as it's a Wall.\n{1}: Mistform Wall becomes the creature type of your choice until end of turn.

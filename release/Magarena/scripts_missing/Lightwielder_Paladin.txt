@@ -9,4 +9,4 @@ pt=4/4
 ability=First strike;\
         Whenever SN deals combat damage to a player, you may exile target black or red permanent that player controls.
 timing=main
-oracle=First strike. Whenever Lightwielder Paladin deals combat damage to a player, you may exile target black or red permanent that player controls.
+oracle=First strike\nWhenever Lightwielder Paladin deals combat damage to a player, you may exile target black or red permanent that player controls.

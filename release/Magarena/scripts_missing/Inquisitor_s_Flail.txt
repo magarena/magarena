@@ -9,4 +9,4 @@ ability=If equipped creature would deal combat damage, it deals double that dama
         If another creature would deal combat damage to equipped creature, it deals double that damage to equipped creature instead.;\
         Equip {2}
 timing=main
-oracle=If equipped creature would deal combat damage, it deals double that damage instead. If another creature would deal combat damage to equipped creature, it deals double that damage to equipped creature instead. Equip {2}
+oracle=If equipped creature would deal combat damage, it deals double that damage instead.\nIf another creature would deal combat damage to equipped creature, it deals double that damage to equipped creature instead.\nEquip {2}

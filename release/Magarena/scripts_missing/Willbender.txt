@@ -9,4 +9,4 @@ pt=1/2
 ability=Morph {1}{U};\
         When SN is turned face up, change the target of target spell or ability with a single target.
 timing=main
-oracle=Morph {1}{U}. When Willbender is turned face up, change the target of target spell or ability with a single target.
+oracle=Morph {1}{U}\nWhen Willbender is turned face up, change the target of target spell or ability with a single target.

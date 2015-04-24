@@ -6,4 +6,4 @@ type=Sorcery
 cost={X}{R}{R}
 effect=Put X 1/1 red Elemental Cat creature tokens with haste onto the battlefield. Exile them at the beginning of the next end step.~Flashback—{R}{R}, Sacrifice X Mountains.
 timing=main
-oracle=Put X 1/1 red Elemental Cat creature tokens with haste onto the battlefield. Exile them at the beginning of the next end step. Flashback—{R}{R}, Sacrifice X Mountains.
+oracle=Put X 1/1 red Elemental Cat creature tokens with haste onto the battlefield. Exile them at the beginning of the next end step.\nFlashback—{R}{R}, Sacrifice X Mountains.

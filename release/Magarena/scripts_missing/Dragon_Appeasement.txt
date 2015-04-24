@@ -7,4 +7,4 @@ cost={3}{B}{R}{G}
 ability=Skip your draw step.;\
         Whenever you sacrifice a creature, you may draw a card.
 timing=main
-oracle=Skip your draw step. Whenever you sacrifice a creature, you may draw a card.
+oracle=Skip your draw step.\nWhenever you sacrifice a creature, you may draw a card.

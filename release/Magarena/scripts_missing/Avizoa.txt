@@ -9,4 +9,4 @@ pt=2/2
 ability=Flying;\
         {0}: SN gets +2/+2 until end of turn. You skip your next untap step. Activate this ability only once each turn.
 timing=main
-oracle=Flying. {0}: Avizoa gets +2/+2 until end of turn. You skip your next untap step. Activate this ability only once each turn.
+oracle=Flying\n{0}: Avizoa gets +2/+2 until end of turn. You skip your next untap step. Activate this ability only once each turn.

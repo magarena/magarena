@@ -9,4 +9,4 @@ pt=1/1
 ability=Elemental spells and Warrior spells you cast cost {1} less to cast.;\
         Reinforce 1—{1}{R}
 timing=main
-oracle=Elemental spells and Warrior spells you cast cost {1} less to cast. Reinforce 1—{1}{R}
+oracle=Elemental spells and Warrior spells you cast cost {1} less to cast.\nReinforce 1—{1}{R}

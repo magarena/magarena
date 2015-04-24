@@ -7,4 +7,4 @@ cost={5}
 ability={X}, {T}: You may exile an instant or sorcery card with converted mana cost X from your hand.;\
         At the beginning of your upkeep, you may copy a card exiled with SN. If you do, you may cast the copy without paying its mana cost.
 timing=main
-oracle=Imprint — {X}, {T}: You may exile an instant or sorcery card with converted mana cost X from your hand. At the beginning of your upkeep, you may copy a card exiled with Panoptic Mirror. If you do, you may cast the copy without paying its mana cost.
+oracle=Imprint — {X}, {T}: You may exile an instant or sorcery card with converted mana cost X from your hand.\nAt the beginning of your upkeep, you may copy a card exiled with Panoptic Mirror. If you do, you may cast the copy without paying its mana cost.

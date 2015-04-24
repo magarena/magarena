@@ -6,4 +6,4 @@ type=Instant
 cost={5}{G}
 effect=Delve~Target creature gets +6/+6 until end of turn.
 timing=removal
-oracle=Delve. Target creature gets +6/+6 until end of turn.
+oracle=Delve\nTarget creature gets +6/+6 until end of turn.

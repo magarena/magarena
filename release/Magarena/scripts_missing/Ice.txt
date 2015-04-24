@@ -6,4 +6,4 @@ type=Instant
 cost={1}{U}
 effect=Tap target permanent.~Draw a card.
 timing=removal
-oracle=Tap target permanent. Draw a card.
+oracle=Tap target permanent.\nDraw a card.

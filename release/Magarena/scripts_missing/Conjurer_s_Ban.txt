@@ -6,4 +6,4 @@ type=Sorcery
 cost={W}{B}
 effect=Name a card. Until your next turn, the named card can't be played.~Draw a card.
 timing=main
-oracle=Name a card. Until your next turn, the named card can't be played. Draw a card.
+oracle=Name a card. Until your next turn, the named card can't be played.\nDraw a card.

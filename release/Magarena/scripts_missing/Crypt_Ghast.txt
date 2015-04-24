@@ -9,4 +9,4 @@ pt=2/2
 ability=Extort;\
         Whenever you tap a Swamp for mana, add {B} to your mana pool.
 timing=main
-oracle=Extort. Whenever you tap a Swamp for mana, add {B} to your mana pool.
+oracle=Extort\nWhenever you tap a Swamp for mana, add {B} to your mana pool.

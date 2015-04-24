@@ -8,4 +8,4 @@ cost={W}
 ability=Enchant Wall;\
         Enchanted Wall can attack as though it didn't have defender.
 timing=main
-oracle=Enchant Wall. Enchanted Wall can attack as though it didn't have defender.
+oracle=Enchant Wall\nEnchanted Wall can attack as though it didn't have defender.

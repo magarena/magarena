@@ -9,4 +9,4 @@ pt=2/2
 ability=Madness {1}{B};\
         When SN enters the battlefield, if its madness cost was paid, you may return target creature card from a graveyard to its owner's hand.
 timing=main
-oracle=Madness {1}{B}. When Grave Scrabbler enters the battlefield, if its madness cost was paid, you may return target creature card from a graveyard to its owner's hand.
+oracle=Madness {1}{B}\nWhen Grave Scrabbler enters the battlefield, if its madness cost was paid, you may return target creature card from a graveyard to its owner's hand.

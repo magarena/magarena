@@ -6,4 +6,4 @@ type=Land
 ability={T}: Add {1} to your mana pool.;\
         {1}, {T}: Until end of turn, creatures your opponents control lose hexproof and shroud and can't have hexproof or shroud.
 timing=main
-oracle={T}: Add {1} to your mana pool. {1}, {T}: Until end of turn, creatures your opponents control lose hexproof and shroud and can't have hexproof or shroud.
+oracle={T}: Add {1} to your mana pool.\n{1}, {T}: Until end of turn, creatures your opponents control lose hexproof and shroud and can't have hexproof or shroud.

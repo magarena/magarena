@@ -6,4 +6,4 @@ type=Instant
 cost={G}
 effect=Choose one — (1) Return target Aura attached to a creature to its owner's hand. (2) Regenerate target green creature. (3) Target creature gains trample until end of turn.
 timing=removal
-oracle=Choose one — • Return target Aura attached to a creature to its owner's hand. • Regenerate target green creature. • Target creature gains trample until end of turn.
+oracle=Choose one —\n• Return target Aura attached to a creature to its owner's hand.\n• Regenerate target green creature.\n• Target creature gains trample until end of turn.

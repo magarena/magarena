@@ -7,4 +7,4 @@ ability=Hideaway;\
         {T}: Add {W} to your mana pool.;\
         {W}, {T}: You may play the exiled card without paying its mana cost if you attacked with three or more creatures this turn.
 timing=main
-oracle=Hideaway. {T}: Add {W} to your mana pool. {W}, {T}: You may play the exiled card without paying its mana cost if you attacked with three or more creatures this turn.
+oracle=Hideaway\n{T}: Add {W} to your mana pool.\n{W}, {T}: You may play the exiled card without paying its mana cost if you attacked with three or more creatures this turn.

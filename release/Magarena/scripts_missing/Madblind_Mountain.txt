@@ -7,4 +7,4 @@ subtype=Mountain
 ability=SN enters the battlefield tapped.;\
         {R}, {T}: Shuffle your library. Activate this ability only if you control two or more red permanents.
 timing=main
-oracle=Madblind Mountain enters the battlefield tapped. {R}, {T}: Shuffle your library. Activate this ability only if you control two or more red permanents.
+oracle=Madblind Mountain enters the battlefield tapped.\n{R}, {T}: Shuffle your library. Activate this ability only if you control two or more red permanents.

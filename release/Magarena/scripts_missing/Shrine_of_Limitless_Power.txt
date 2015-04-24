@@ -7,4 +7,4 @@ cost={3}
 ability=At the beginning of your upkeep or whenever you cast a black spell, put a charge counter on SN.;\
         {4}, {T}, Sacrifice SN: Target player discards a card for each charge counter on SN.
 timing=main
-oracle=At the beginning of your upkeep or whenever you cast a black spell, put a charge counter on Shrine of Limitless Power. {4}, {T}, Sacrifice Shrine of Limitless Power: Target player discards a card for each charge counter on Shrine of Limitless Power.
+oracle=At the beginning of your upkeep or whenever you cast a black spell, put a charge counter on Shrine of Limitless Power.\n{4}, {T}, Sacrifice Shrine of Limitless Power: Target player discards a card for each charge counter on Shrine of Limitless Power.

@@ -9,4 +9,4 @@ pt=4/2
 ability=Creatures with power less than SN's power can't block it.;\
         Undying
 timing=main
-oracle=Creatures with power less than Howlgeist's power can't block it. Undying
+oracle=Creatures with power less than Howlgeist's power can't block it.\nUndying

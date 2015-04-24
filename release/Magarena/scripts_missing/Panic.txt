@@ -6,4 +6,4 @@ type=Instant
 cost={R}
 effect=Cast SN only during combat before blockers are declared.~Target creature can't block this turn.~Draw a card at the beginning of the next turn's upkeep.
 timing=removal
-oracle=Cast Panic only during combat before blockers are declared. Target creature can't block this turn. Draw a card at the beginning of the next turn's upkeep.
+oracle=Cast Panic only during combat before blockers are declared.\nTarget creature can't block this turn.\nDraw a card at the beginning of the next turn's upkeep.

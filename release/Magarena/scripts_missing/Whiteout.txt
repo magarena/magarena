@@ -6,4 +6,4 @@ type=Instant
 cost={1}{G}
 effect=All creatures lose flying until end of turn.~Sacrifice a snow land: Return SN from your graveyard to your hand.
 timing=removal
-oracle=All creatures lose flying until end of turn. Sacrifice a snow land: Return Whiteout from your graveyard to your hand.
+oracle=All creatures lose flying until end of turn.\nSacrifice a snow land: Return Whiteout from your graveyard to your hand.

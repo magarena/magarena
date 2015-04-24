@@ -7,4 +7,4 @@ cost={2}{R}{R}
 ability=When SN enters the battlefield, it becomes an Aura with enchant creature. Manifest the top card of your library and attach SN to it.;\
         Enchanted creature has double strike.
 timing=main
-oracle=When Rageform enters the battlefield, it becomes an Aura with enchant creature. Manifest the top card of your library and attach Rageform to it. Enchanted creature has double strike.
+oracle=When Rageform enters the battlefield, it becomes an Aura with enchant creature. Manifest the top card of your library and attach Rageform to it.\nEnchanted creature has double strike.

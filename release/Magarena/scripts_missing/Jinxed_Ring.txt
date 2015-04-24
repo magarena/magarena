@@ -7,4 +7,4 @@ cost={2}
 ability=Whenever a nontoken permanent is put into your graveyard from the battlefield, SN deals 1 damage to you.;\
         Sacrifice a creature: Target opponent gains control of SN.
 timing=main
-oracle=Whenever a nontoken permanent is put into your graveyard from the battlefield, Jinxed Ring deals 1 damage to you. Sacrifice a creature: Target opponent gains control of Jinxed Ring.
+oracle=Whenever a nontoken permanent is put into your graveyard from the battlefield, Jinxed Ring deals 1 damage to you.\nSacrifice a creature: Target opponent gains control of Jinxed Ring.

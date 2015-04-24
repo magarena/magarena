@@ -9,4 +9,4 @@ pt=2/3
 ability=Haste;\
         If SN is in a graveyard, effects from spells named Flame Burst count it as a card named Flame Burst.
 timing=main
-oracle=Haste. If Pardic Firecat is in a graveyard, effects from spells named Flame Burst count it as a card named Flame Burst.
+oracle=Haste\nIf Pardic Firecat is in a graveyard, effects from spells named Flame Burst count it as a card named Flame Burst.

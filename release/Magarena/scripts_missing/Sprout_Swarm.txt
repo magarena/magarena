@@ -6,4 +6,4 @@ type=Instant
 cost={1}{G}
 effect=Convoke~Buyback {3}~Put a 1/1 green Saproling creature token onto the battlefield.
 timing=removal
-oracle=Convoke. Buyback {3}. Put a 1/1 green Saproling creature token onto the battlefield.
+oracle=Convoke\nBuyback {3}\nPut a 1/1 green Saproling creature token onto the battlefield.

@@ -6,4 +6,4 @@ type=Sorcery
 cost={1}{R}
 effect=As an additional cost to cast SN, you may pay {1}{R} and/or {1}{G} any number of times.~Destroy target artifact. For each additional {1}{R} you paid, destroy another target artifact. For each additional {1}{G} you paid, destroy another target artifact, and you gain 1 life.
 timing=main
-oracle=As an additional cost to cast Primitive Justice, you may pay {1}{R} and/or {1}{G} any number of times. Destroy target artifact. For each additional {1}{R} you paid, destroy another target artifact. For each additional {1}{G} you paid, destroy another target artifact, and you gain 1 life.
+oracle=As an additional cost to cast Primitive Justice, you may pay {1}{R} and/or {1}{G} any number of times.\nDestroy target artifact. For each additional {1}{R} you paid, destroy another target artifact. For each additional {1}{G} you paid, destroy another target artifact, and you gain 1 life.

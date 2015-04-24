@@ -6,4 +6,4 @@ type=Instant
 cost={X}{G}{G}
 effect=Multikicker {1}~Choose target creature, then choose another target creature for each time SN was kicked. Put X +1/+1 counters on each of them.
 timing=removal
-oracle=Multikicker {1}. Choose target creature, then choose another target creature for each time Strength of the Tajuru was kicked. Put X +1/+1 counters on each of them.
+oracle=Multikicker {1}\nChoose target creature, then choose another target creature for each time Strength of the Tajuru was kicked. Put X +1/+1 counters on each of them.

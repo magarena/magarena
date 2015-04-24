@@ -9,4 +9,4 @@ pt=4/2
 ability=Whenever SN attacks, you may discard a card. If you do, draw a card.;\
         Dash {2}{R}
 timing=main
-oracle=Whenever Vaultbreaker attacks, you may discard a card. If you do, draw a card. Dash {2}{R}
+oracle=Whenever Vaultbreaker attacks, you may discard a card. If you do, draw a card.\nDash {2}{R}

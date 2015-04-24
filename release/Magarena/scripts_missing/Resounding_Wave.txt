@@ -6,4 +6,4 @@ type=Instant
 cost={2}{U}
 effect=Return target permanent to its owner's hand.~Cycling {5}{W}{U}{B}~When you cycle SN, return two target permanents to their owners' hands.
 timing=removal
-oracle=Return target permanent to its owner's hand. Cycling {5}{W}{U}{B}. When you cycle Resounding Wave, return two target permanents to their owners' hands.
+oracle=Return target permanent to its owner's hand.\nCycling {5}{W}{U}{B}\nWhen you cycle Resounding Wave, return two target permanents to their owners' hands.

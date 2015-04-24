@@ -6,4 +6,4 @@ type=Sorcery
 cost={8}{G}
 effect=Convoke~Put three 3/3 green Beast creature tokens onto the battlefield.
 timing=main
-oracle=Convoke. Put three 3/3 green Beast creature tokens onto the battlefield.
+oracle=Convoke\nPut three 3/3 green Beast creature tokens onto the battlefield.

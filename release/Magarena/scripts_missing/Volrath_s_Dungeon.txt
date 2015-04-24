@@ -7,4 +7,4 @@ cost={2}{B}{B}
 ability=Pay 5 life: Destroy SN. Any player may activate this ability but only during his or her turn.;\
         Discard a card: Target player puts a card from his or her hand on top of his or her library. Activate this ability only any time you could cast a sorcery.
 timing=main
-oracle=Pay 5 life: Destroy Volrath's Dungeon. Any player may activate this ability but only during his or her turn. Discard a card: Target player puts a card from his or her hand on top of his or her library. Activate this ability only any time you could cast a sorcery.
+oracle=Pay 5 life: Destroy Volrath's Dungeon. Any player may activate this ability but only during his or her turn.\nDiscard a card: Target player puts a card from his or her hand on top of his or her library. Activate this ability only any time you could cast a sorcery.

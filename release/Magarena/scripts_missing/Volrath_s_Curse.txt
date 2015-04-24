@@ -9,4 +9,4 @@ ability=Enchant creature;\
         Enchanted creature can't attack or block, and its activated abilities can't be activated. That creature's controller may sacrifice a permanent for that player to ignore this effect until end of turn.;\
         {1}{U}: Return SN to its owner's hand.
 timing=main
-oracle=Enchant creature. Enchanted creature can't attack or block, and its activated abilities can't be activated. That creature's controller may sacrifice a permanent for that player to ignore this effect until end of turn. {1}{U}: Return Volrath's Curse to its owner's hand.
+oracle=Enchant creature\nEnchanted creature can't attack or block, and its activated abilities can't be activated. That creature's controller may sacrifice a permanent for that player to ignore this effect until end of turn.\n{1}{U}: Return Volrath's Curse to its owner's hand.

@@ -9,4 +9,4 @@ pt=1/3
 ability=Whenever SN becomes untapped, each opponent loses 1 life. You gain life equal to the life lost this way.;\
         {2}{B}: Regenerate SN.
 timing=main
-oracle=Inspired — Whenever Servant of Tymaret becomes untapped, each opponent loses 1 life. You gain life equal to the life lost this way. {2}{B}: Regenerate Servant of Tymaret.
+oracle=Inspired — Whenever Servant of Tymaret becomes untapped, each opponent loses 1 life. You gain life equal to the life lost this way.\n{2}{B}: Regenerate Servant of Tymaret.

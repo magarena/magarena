@@ -9,4 +9,4 @@ pt=2/2
 ability=Amplify 1;\
         {T}: Target creature gets +1/+1 until end of turn for each +1/+1 counter on SN.
 timing=main
-oracle=Amplify 1. {T}: Target creature gets +1/+1 until end of turn for each +1/+1 counter on Canopy Crawler.
+oracle=Amplify 1\n{T}: Target creature gets +1/+1 until end of turn for each +1/+1 counter on Canopy Crawler.

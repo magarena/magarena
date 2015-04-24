@@ -9,4 +9,4 @@ pt=0/0
 ability=Sunburst;\
         Flying
 timing=main
-oracle=Sunburst. Flying
+oracle=Sunburst\nFlying

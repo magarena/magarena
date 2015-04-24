@@ -9,4 +9,4 @@ pt=4/5
 ability=Whenever a creature deals damage to SN, SN deals that much damage to that creature.;\
         Whenever a spell deals damage to SN, SN deals that much damage to that spell's controller.
 timing=main
-oracle=Whenever a creature deals damage to Tephraderm, Tephraderm deals that much damage to that creature. Whenever a spell deals damage to Tephraderm, Tephraderm deals that much damage to that spell's controller.
+oracle=Whenever a creature deals damage to Tephraderm, Tephraderm deals that much damage to that creature.\nWhenever a spell deals damage to Tephraderm, Tephraderm deals that much damage to that spell's controller.

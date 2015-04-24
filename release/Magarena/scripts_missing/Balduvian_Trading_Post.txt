@@ -7,4 +7,4 @@ ability=If SN would enter the battlefield, sacrifice an untapped Mountain instea
         {T}: Add {1}{R} to your mana pool.;\
         {1}, {T}: SN deals 1 damage to target attacking creature.
 timing=main
-oracle=If Balduvian Trading Post would enter the battlefield, sacrifice an untapped Mountain instead. If you do, put Balduvian Trading Post onto the battlefield. If you don't, put it into its owner's graveyard. {T}: Add {1}{R} to your mana pool. {1}, {T}: Balduvian Trading Post deals 1 damage to target attacking creature.
+oracle=If Balduvian Trading Post would enter the battlefield, sacrifice an untapped Mountain instead. If you do, put Balduvian Trading Post onto the battlefield. If you don't, put it into its owner's graveyard.\n{T}: Add {1}{R} to your mana pool.\n{1}, {T}: Balduvian Trading Post deals 1 damage to target attacking creature.

@@ -10,4 +10,4 @@ ability=Enchant artifact an opponent controls;\
         (1) SN deals 1 damage to target player. \
         (2) Target player gains 1 life.
 timing=main
-oracle=Enchant artifact an opponent controls. Whenever enchanted artifact becomes tapped, choose one — • Relic Bind deals 1 damage to target player. • Target player gains 1 life.
+oracle=Enchant artifact an opponent controls\nWhenever enchanted artifact becomes tapped, choose one —\n• Relic Bind deals 1 damage to target player.\n• Target player gains 1 life.

@@ -9,4 +9,4 @@ pt=5/5
 ability=Flying;\
         Whenever SN deals combat damage to a player, each player discards his or her hand, then draws seven cards.
 timing=main
-oracle=Flying. Whenever Dragon Mage deals combat damage to a player, each player discards his or her hand, then draws seven cards.
+oracle=Flying\nWhenever Dragon Mage deals combat damage to a player, each player discards his or her hand, then draws seven cards.

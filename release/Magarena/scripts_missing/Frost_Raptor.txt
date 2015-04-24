@@ -9,4 +9,4 @@ pt=2/2
 ability=Flying;\
         {S}{S}: SN gains shroud until end of turn.
 timing=main
-oracle=Flying. {S}{S}: Frost Raptor gains shroud until end of turn.
+oracle=Flying\n{S}{S}: Frost Raptor gains shroud until end of turn.

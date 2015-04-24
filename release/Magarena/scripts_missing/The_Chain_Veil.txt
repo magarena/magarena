@@ -7,4 +7,4 @@ cost={4}
 ability=At the beginning of your end step, if you didn't activate a loyalty ability of a planeswalker this turn, you lose 2 life.;\
         {4}, {T}: For each planeswalker you control, you may activate one of its loyalty abilities once this turn as though none of its loyalty abilities have been activated this turn.
 timing=main
-oracle=At the beginning of your end step, if you didn't activate a loyalty ability of a planeswalker this turn, you lose 2 life. {4}, {T}: For each planeswalker you control, you may activate one of its loyalty abilities once this turn as though none of its loyalty abilities have been activated this turn.
+oracle=At the beginning of your end step, if you didn't activate a loyalty ability of a planeswalker this turn, you lose 2 life.\n{4}, {T}: For each planeswalker you control, you may activate one of its loyalty abilities once this turn as though none of its loyalty abilities have been activated this turn.

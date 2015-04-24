@@ -6,4 +6,4 @@ type=Instant
 cost={5}{B}
 effect=Delve~Destroy target nongreen creature. It can't be regenerated.
 timing=removal
-oracle=Delve. Destroy target nongreen creature. It can't be regenerated.
+oracle=Delve\nDestroy target nongreen creature. It can't be regenerated.

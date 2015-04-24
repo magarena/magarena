@@ -7,4 +7,4 @@ cost={X}{X}{X}
 ability=SN enters the battlefield with X charge counters on it.;\
         {T}: Choose a color. Add one mana of that color to your mana pool for each charge counter on SN.
 timing=main
-oracle=Astral Cornucopia enters the battlefield with X charge counters on it. {T}: Choose a color. Add one mana of that color to your mana pool for each charge counter on Astral Cornucopia.
+oracle=Astral Cornucopia enters the battlefield with X charge counters on it.\n{T}: Choose a color. Add one mana of that color to your mana pool for each charge counter on Astral Cornucopia.

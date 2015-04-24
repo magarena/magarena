@@ -10,4 +10,4 @@ ability=Flash;\
         Flying;\
         When SN enters the battlefield, sacrifice it unless you return another creature you control to its owner's hand.
 timing=main
-oracle=Flash. Flying. When Quickling enters the battlefield, sacrifice it unless you return another creature you control to its owner's hand.
+oracle=Flash\nFlying\nWhen Quickling enters the battlefield, sacrifice it unless you return another creature you control to its owner's hand.

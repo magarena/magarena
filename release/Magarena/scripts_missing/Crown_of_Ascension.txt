@@ -9,4 +9,4 @@ ability=Enchant creature;\
         Enchanted creature has flying.;\
         Sacrifice SN: Enchanted creature and other creatures that share a creature type with it gain flying until end of turn.
 timing=main
-oracle=Enchant creature. Enchanted creature has flying. Sacrifice Crown of Ascension: Enchanted creature and other creatures that share a creature type with it gain flying until end of turn.
+oracle=Enchant creature\nEnchanted creature has flying.\nSacrifice Crown of Ascension: Enchanted creature and other creatures that share a creature type with it gain flying until end of turn.

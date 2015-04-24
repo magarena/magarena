@@ -9,4 +9,4 @@ pt=2/1
 ability=Flying;\
         Whenever SN deals combat damage to a player, that player loses 1 life for each artifact he or she controls.
 timing=main
-oracle=Flying. Whenever Emissary of Despair deals combat damage to a player, that player loses 1 life for each artifact he or she controls.
+oracle=Flying\nWhenever Emissary of Despair deals combat damage to a player, that player loses 1 life for each artifact he or she controls.

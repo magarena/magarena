@@ -6,4 +6,4 @@ type=Instant
 cost={2}{B}
 effect=Destroy target creature with power 2 or less.~Recover {1}{B}{B}
 timing=removal
-oracle=Destroy target creature with power 2 or less. Recover {1}{B}{B}
+oracle=Destroy target creature with power 2 or less.\nRecover {1}{B}{B}

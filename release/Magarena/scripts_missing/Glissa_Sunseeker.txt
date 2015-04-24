@@ -9,4 +9,4 @@ pt=3/2
 ability=First strike;\
         {T}: Destroy target artifact if its converted mana cost is equal to the amount of mana in your mana pool.
 timing=main
-oracle=First strike. {T}: Destroy target artifact if its converted mana cost is equal to the amount of mana in your mana pool.
+oracle=First strike\n{T}: Destroy target artifact if its converted mana cost is equal to the amount of mana in your mana pool.

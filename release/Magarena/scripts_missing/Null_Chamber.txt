@@ -7,4 +7,4 @@ cost={3}{W}
 ability=As SN enters the battlefield, you and an opponent each name a card other than a basic land card.;\
         The named cards can't be played.
 timing=main
-oracle=As Null Chamber enters the battlefield, you and an opponent each name a card other than a basic land card. The named cards can't be played.
+oracle=As Null Chamber enters the battlefield, you and an opponent each name a card other than a basic land card.\nThe named cards can't be played.

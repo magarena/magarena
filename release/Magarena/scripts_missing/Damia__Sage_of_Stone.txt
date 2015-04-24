@@ -10,4 +10,4 @@ ability=Deathtouch;\
         Skip your draw step.;\
         At the beginning of your upkeep, if you have fewer than seven cards in hand, draw cards equal to the difference.
 timing=main
-oracle=Deathtouch. Skip your draw step. At the beginning of your upkeep, if you have fewer than seven cards in hand, draw cards equal to the difference.
+oracle=Deathtouch\nSkip your draw step.\nAt the beginning of your upkeep, if you have fewer than seven cards in hand, draw cards equal to the difference.

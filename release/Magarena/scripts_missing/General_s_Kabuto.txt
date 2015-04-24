@@ -9,4 +9,4 @@ ability=Equipped creature has shroud.;\
         Prevent all combat damage that would be dealt to equipped creature.;\
         Equip {2}
 timing=main
-oracle=Equipped creature has shroud. Prevent all combat damage that would be dealt to equipped creature. Equip {2}
+oracle=Equipped creature has shroud.\nPrevent all combat damage that would be dealt to equipped creature.\nEquip {2}

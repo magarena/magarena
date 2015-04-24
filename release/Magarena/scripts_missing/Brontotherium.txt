@@ -9,4 +9,4 @@ pt=5/3
 ability=Trample;\
         Provoke
 timing=main
-oracle=Trample. Provoke
+oracle=Trample\nProvoke

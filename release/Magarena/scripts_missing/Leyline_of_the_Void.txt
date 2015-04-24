@@ -7,4 +7,4 @@ cost={2}{B}{B}
 ability=If SN is in your opening hand, you may begin the game with it on the battlefield.;\
         If a card would be put into an opponent's graveyard from anywhere, exile it instead.
 timing=main
-oracle=If Leyline of the Void is in your opening hand, you may begin the game with it on the battlefield. If a card would be put into an opponent's graveyard from anywhere, exile it instead.
+oracle=If Leyline of the Void is in your opening hand, you may begin the game with it on the battlefield.\nIf a card would be put into an opponent's graveyard from anywhere, exile it instead.

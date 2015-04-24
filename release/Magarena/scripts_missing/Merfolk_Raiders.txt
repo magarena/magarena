@@ -9,4 +9,4 @@ pt=2/3
 ability=Islandwalk;\
         Phasing
 timing=main
-oracle=Islandwalk. Phasing
+oracle=Islandwalk\nPhasing

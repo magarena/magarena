@@ -6,4 +6,4 @@ type=Instant
 cost={1}{U}
 effect=Return target creature to its owner's hand.~Fuse
 timing=removal
-oracle=Return target creature to its owner's hand. Fuse
+oracle=Return target creature to its owner's hand.\nFuse

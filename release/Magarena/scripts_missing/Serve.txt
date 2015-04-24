@@ -6,4 +6,4 @@ type=Instant
 cost={1}{U}
 effect=Target creature gets -6/-0 until end of turn.~Fuse
 timing=removal
-oracle=Target creature gets -6/-0 until end of turn. Fuse
+oracle=Target creature gets -6/-0 until end of turn.\nFuse

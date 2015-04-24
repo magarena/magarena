@@ -9,4 +9,4 @@ pt=2/2
 ability=Each Goblin you control can't be blocked except by two or more creatures.;\
         Each Elemental you control can't be blocked except by two or more creatures.
 timing=main
-oracle=Each Goblin you control can't be blocked except by two or more creatures. Each Elemental you control can't be blocked except by two or more creatures.
+oracle=Each Goblin you control can't be blocked except by two or more creatures.\nEach Elemental you control can't be blocked except by two or more creatures.

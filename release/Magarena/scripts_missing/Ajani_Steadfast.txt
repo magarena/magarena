@@ -9,4 +9,4 @@ ability=+1: Until end of turn, up to one target creature gets +1/+1 and gains fi
         −2: Put a +1/+1 counter on each creature you control and a loyalty counter on each other planeswalker you control.;\
         −7: You get an emblem with "If a source would deal damage to you or a planeswalker you control, prevent all but 1 of that damage."
 timing=main
-oracle=+1: Until end of turn, up to one target creature gets +1/+1 and gains first strike, vigilance, and lifelink. −2: Put a +1/+1 counter on each creature you control and a loyalty counter on each other planeswalker you control. −7: You get an emblem with "If a source would deal damage to you or a planeswalker you control, prevent all but 1 of that damage."
+oracle=+1: Until end of turn, up to one target creature gets +1/+1 and gains first strike, vigilance, and lifelink.\n−2: Put a +1/+1 counter on each creature you control and a loyalty counter on each other planeswalker you control.\n−7: You get an emblem with "If a source would deal damage to you or a planeswalker you control, prevent all but 1 of that damage."

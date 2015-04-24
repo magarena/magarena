@@ -7,4 +7,4 @@ cost={3}{R}{R}
 ability=At the beginning of your upkeep, you may put a verse counter on SN.;\
         {R}, Sacrifice SN: Destroy up to X target lands, where X is the number of verse counters on SN.
 timing=main
-oracle=At the beginning of your upkeep, you may put a verse counter on Rumbling Crescendo. {R}, Sacrifice Rumbling Crescendo: Destroy up to X target lands, where X is the number of verse counters on Rumbling Crescendo.
+oracle=At the beginning of your upkeep, you may put a verse counter on Rumbling Crescendo.\n{R}, Sacrifice Rumbling Crescendo: Destroy up to X target lands, where X is the number of verse counters on Rumbling Crescendo.

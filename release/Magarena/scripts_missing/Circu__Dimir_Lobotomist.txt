@@ -10,4 +10,4 @@ ability=Whenever you cast a blue spell, exile the top card of target library.;\
         Whenever you cast a black spell, exile the top card of target library.;\
         Your opponents can't cast nonland cards with the same name as a card exiled with SN.
 timing=main
-oracle=Whenever you cast a blue spell, exile the top card of target library. Whenever you cast a black spell, exile the top card of target library. Your opponents can't cast nonland cards with the same name as a card exiled with Circu, Dimir Lobotomist.
+oracle=Whenever you cast a blue spell, exile the top card of target library.\nWhenever you cast a black spell, exile the top card of target library.\nYour opponents can't cast nonland cards with the same name as a card exiled with Circu, Dimir Lobotomist.

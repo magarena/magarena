@@ -9,4 +9,4 @@ pt=1/1
 ability=SN can't block creatures with power greater than SN's power.;\
         {R}: SN gets +1/+0 until end of turn.
 timing=main
-oracle=Spitfire Handler can't block creatures with power greater than Spitfire Handler's power. {R}: Spitfire Handler gets +1/+0 until end of turn.
+oracle=Spitfire Handler can't block creatures with power greater than Spitfire Handler's power.\n{R}: Spitfire Handler gets +1/+0 until end of turn.

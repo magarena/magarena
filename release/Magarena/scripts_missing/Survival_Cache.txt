@@ -6,4 +6,4 @@ type=Sorcery
 cost={2}{W}
 effect=You gain 2 life. Then if you have more life than an opponent, draw a card.~Rebound
 timing=main
-oracle=You gain 2 life. Then if you have more life than an opponent, draw a card. Rebound
+oracle=You gain 2 life. Then if you have more life than an opponent, draw a card.\nRebound

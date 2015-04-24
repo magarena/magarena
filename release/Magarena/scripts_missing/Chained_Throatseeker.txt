@@ -9,4 +9,4 @@ pt=5/5
 ability=Infect;\
         SN can't attack unless defending player is poisoned.
 timing=main
-oracle=Infect. Chained Throatseeker can't attack unless defending player is poisoned.
+oracle=Infect\nChained Throatseeker can't attack unless defending player is poisoned.

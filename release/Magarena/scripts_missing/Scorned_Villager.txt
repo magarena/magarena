@@ -9,4 +9,4 @@ pt=1/1
 ability={T}: Add {G} to your mana pool.;\
         At the beginning of each upkeep, if no spells were cast last turn, transform SN.
 timing=main
-oracle={T}: Add {G} to your mana pool. At the beginning of each upkeep, if no spells were cast last turn, transform Scorned Villager.
+oracle={T}: Add {G} to your mana pool.\nAt the beginning of each upkeep, if no spells were cast last turn, transform Scorned Villager.

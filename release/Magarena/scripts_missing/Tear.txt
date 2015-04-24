@@ -6,4 +6,4 @@ type=Instant
 cost={W}
 effect=Destroy target enchantment.~Fuse
 timing=removal
-oracle=Destroy target enchantment. Fuse
+oracle=Destroy target enchantment.\nFuse

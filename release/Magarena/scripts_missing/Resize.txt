@@ -6,4 +6,4 @@ type=Instant
 cost={1}{G}
 effect=Target creature gets +3/+3 until end of turn.~Recover {1}{G}
 timing=removal
-oracle=Target creature gets +3/+3 until end of turn. Recover {1}{G}
+oracle=Target creature gets +3/+3 until end of turn.\nRecover {1}{G}

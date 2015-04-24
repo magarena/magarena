@@ -10,4 +10,4 @@ ability=Equipped creature gets +3/+1.;\
         When SN is put into a graveyard from the battlefield, exile equipped creature.;\
         Equip {2}
 timing=main
-oracle=Equipped creature gets +3/+1. Whenever equipped creature dies, return that card to the battlefield under your control if it's a Samurai card. When Oathkeeper, Takeno's Daisho is put into a graveyard from the battlefield, exile equipped creature. Equip {2}
+oracle=Equipped creature gets +3/+1.\nWhenever equipped creature dies, return that card to the battlefield under your control if it's a Samurai card.\nWhen Oathkeeper, Takeno's Daisho is put into a graveyard from the battlefield, exile equipped creature.\nEquip {2}

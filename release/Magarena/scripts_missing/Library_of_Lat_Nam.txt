@@ -6,4 +6,4 @@ type=Sorcery
 cost={4}{U}
 effect=An opponent chooses one — (1) You draw three cards at the beginning of the next turn's upkeep. (2) You search your library for a card, put that card into your hand, then shuffle your library.
 timing=main
-oracle=An opponent chooses one — • You draw three cards at the beginning of the next turn's upkeep. • You search your library for a card, put that card into your hand, then shuffle your library.
+oracle=An opponent chooses one —\n• You draw three cards at the beginning of the next turn's upkeep.\n• You search your library for a card, put that card into your hand, then shuffle your library.

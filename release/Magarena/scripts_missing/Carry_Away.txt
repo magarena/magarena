@@ -9,4 +9,4 @@ ability=Enchant Equipment;\
         When SN enters the battlefield, unattach enchanted Equipment.;\
         You control enchanted Equipment.
 timing=main
-oracle=Enchant Equipment. When Carry Away enters the battlefield, unattach enchanted Equipment. You control enchanted Equipment.
+oracle=Enchant Equipment\nWhen Carry Away enters the battlefield, unattach enchanted Equipment.\nYou control enchanted Equipment.

@@ -7,4 +7,4 @@ cost={3}
 ability=When SN enters the battlefield, you may exile two target sorcery cards from a single graveyard.;\
         Whenever a player casts a card, if it has the same name as one of the cards exiled with SN, you may copy the other. If you do, you may cast the copy without paying its mana cost.
 timing=main
-oracle=Imprint — When Spellweaver Helix enters the battlefield, you may exile two target sorcery cards from a single graveyard. Whenever a player casts a card, if it has the same name as one of the cards exiled with Spellweaver Helix, you may copy the other. If you do, you may cast the copy without paying its mana cost.
+oracle=Imprint — When Spellweaver Helix enters the battlefield, you may exile two target sorcery cards from a single graveyard.\nWhenever a player casts a card, if it has the same name as one of the cards exiled with Spellweaver Helix, you may copy the other. If you do, you may cast the copy without paying its mana cost.

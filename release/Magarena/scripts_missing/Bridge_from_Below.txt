@@ -7,4 +7,4 @@ cost={B}{B}{B}
 ability=Whenever a nontoken creature is put into your graveyard from the battlefield, if SN is in your graveyard, put a 2/2 black Zombie creature token onto the battlefield.;\
         When a creature is put into an opponent's graveyard from the battlefield, if SN is in your graveyard, exile SN.
 timing=main
-oracle=Whenever a nontoken creature is put into your graveyard from the battlefield, if Bridge from Below is in your graveyard, put a 2/2 black Zombie creature token onto the battlefield. When a creature is put into an opponent's graveyard from the battlefield, if Bridge from Below is in your graveyard, exile Bridge from Below.
+oracle=Whenever a nontoken creature is put into your graveyard from the battlefield, if Bridge from Below is in your graveyard, put a 2/2 black Zombie creature token onto the battlefield.\nWhen a creature is put into an opponent's graveyard from the battlefield, if Bridge from Below is in your graveyard, exile Bridge from Below.

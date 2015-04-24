@@ -10,4 +10,4 @@ ability=Defender, indestructible;\
         {10}: Monstrosity 10.;\
         As long as SN is monstrous, it has trample and can attack as though it didn't have defender.
 timing=main
-oracle=Defender, indestructible. {10}: Monstrosity 10. As long as Colossus of Akros is monstrous, it has trample and can attack as though it didn't have defender.
+oracle=Defender, indestructible\n{10}: Monstrosity 10.\nAs long as Colossus of Akros is monstrous, it has trample and can attack as though it didn't have defender.

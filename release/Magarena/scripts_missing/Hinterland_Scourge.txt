@@ -9,4 +9,4 @@ pt=3/2
 ability=SN must be blocked if able.;\
         At the beginning of each upkeep, if a player cast two or more spells last turn, transform SN.
 timing=main
-oracle=Hinterland Scourge must be blocked if able. At the beginning of each upkeep, if a player cast two or more spells last turn, transform Hinterland Scourge.
+oracle=Hinterland Scourge must be blocked if able.\nAt the beginning of each upkeep, if a player cast two or more spells last turn, transform Hinterland Scourge.

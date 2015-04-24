@@ -6,4 +6,4 @@ type=Sorcery
 cost={2}{U}{U}
 effect=You may cast SN as though it had flash if you pay {2} more to cast it.~Simultaneously untap all tapped creatures and tap all untapped creatures.
 timing=main
-oracle=You may cast Breaking Wave as though it had flash if you pay {2} more to cast it. Simultaneously untap all tapped creatures and tap all untapped creatures.
+oracle=You may cast Breaking Wave as though it had flash if you pay {2} more to cast it.\nSimultaneously untap all tapped creatures and tap all untapped creatures.

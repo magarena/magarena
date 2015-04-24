@@ -9,4 +9,4 @@ pt=4/4
 ability=Flying;\
         Whenever you sacrifice a creature, target opponent sacrifices a creature.
 timing=main
-oracle=Flying. Whenever you sacrifice a creature, target opponent sacrifices a creature.
+oracle=Flying\nWhenever you sacrifice a creature, target opponent sacrifices a creature.

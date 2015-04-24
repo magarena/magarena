@@ -8,4 +8,4 @@ ability=When SN enters the battlefield, return target creature card from your gr
         When the creature put onto the battlefield with SN dies, exile it and return SN to its owner's hand.;\
         When SN leaves the battlefield, exile the creature put onto the battlefield with SN.
 timing=main
-oracle=When Diabolic Servitude enters the battlefield, return target creature card from your graveyard to the battlefield. When the creature put onto the battlefield with Diabolic Servitude dies, exile it and return Diabolic Servitude to its owner's hand. When Diabolic Servitude leaves the battlefield, exile the creature put onto the battlefield with Diabolic Servitude.
+oracle=When Diabolic Servitude enters the battlefield, return target creature card from your graveyard to the battlefield.\nWhen the creature put onto the battlefield with Diabolic Servitude dies, exile it and return Diabolic Servitude to its owner's hand.\nWhen Diabolic Servitude leaves the battlefield, exile the creature put onto the battlefield with Diabolic Servitude.

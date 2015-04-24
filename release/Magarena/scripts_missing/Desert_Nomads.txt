@@ -9,4 +9,4 @@ pt=2/2
 ability=Desertwalk;\
         Prevent all damage that would be dealt to SN by Deserts.
 timing=main
-oracle=Desertwalk. Prevent all damage that would be dealt to Desert Nomads by Deserts.
+oracle=Desertwalk\nPrevent all damage that would be dealt to Desert Nomads by Deserts.

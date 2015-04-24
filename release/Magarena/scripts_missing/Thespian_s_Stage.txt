@@ -6,4 +6,4 @@ type=Land
 ability={T}: Add {1} to your mana pool.;\
         {2}, {T}: SN becomes a copy of target land and gains this ability.
 timing=main
-oracle={T}: Add {1} to your mana pool. {2}, {T}: Thespian's Stage becomes a copy of target land and gains this ability.
+oracle={T}: Add {1} to your mana pool.\n{2}, {T}: Thespian's Stage becomes a copy of target land and gains this ability.

@@ -9,4 +9,4 @@ pt=2/3
 ability={U}, {T}: Draw two cards.;\
         {R}, {T}, Discard a card: SN deals damage to target creature equal to the discarded card's converted mana cost.
 timing=main
-oracle={U}, {T}: Draw two cards. {R}, {T}, Discard a card: Mercurial Chemister deals damage to target creature equal to the discarded card's converted mana cost.
+oracle={U}, {T}: Draw two cards.\n{R}, {T}, Discard a card: Mercurial Chemister deals damage to target creature equal to the discarded card's converted mana cost.

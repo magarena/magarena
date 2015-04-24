@@ -9,4 +9,4 @@ pt=6/6
 ability=Flying;\
         When SN enters the battlefield, discard your hand. Each opponent sacrifices a creature for each card discarded this way.
 timing=main
-oracle=Flying. When Malfegor enters the battlefield, discard your hand. Each opponent sacrifices a creature for each card discarded this way.
+oracle=Flying\nWhen Malfegor enters the battlefield, discard your hand. Each opponent sacrifices a creature for each card discarded this way.

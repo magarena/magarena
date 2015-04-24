@@ -8,4 +8,4 @@ ability=SN enters the battlefield with X ice counters on it.;\
         {3}: Put an ice counter on SN.;\
         Remove an ice counter from SN: Add {1} to your mana pool.
 timing=main
-oracle=Iceberg enters the battlefield with X ice counters on it. {3}: Put an ice counter on Iceberg. Remove an ice counter from Iceberg: Add {1} to your mana pool.
+oracle=Iceberg enters the battlefield with X ice counters on it.\n{3}: Put an ice counter on Iceberg.\nRemove an ice counter from Iceberg: Add {1} to your mana pool.

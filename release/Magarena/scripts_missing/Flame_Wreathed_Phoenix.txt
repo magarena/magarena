@@ -10,4 +10,4 @@ ability=Flying;\
         Tribute 2;\
         When SN enters the battlefield, if tribute wasn't paid, it gains haste and "When this creature dies, return it to its owner's hand."
 timing=main
-oracle=Flying. Tribute 2. When Flame-Wreathed Phoenix enters the battlefield, if tribute wasn't paid, it gains haste and "When this creature dies, return it to its owner's hand."
+oracle=Flying\nTribute 2\nWhen Flame-Wreathed Phoenix enters the battlefield, if tribute wasn't paid, it gains haste and "When this creature dies, return it to its owner's hand."

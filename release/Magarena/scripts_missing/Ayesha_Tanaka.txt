@@ -9,4 +9,4 @@ pt=2/2
 ability=Banding;\
         {T}: Counter target activated ability from an artifact source unless that ability's controller pays {W}.
 timing=main
-oracle=Banding. {T}: Counter target activated ability from an artifact source unless that ability's controller pays {W}.
+oracle=Banding\n{T}: Counter target activated ability from an artifact source unless that ability's controller pays {W}.

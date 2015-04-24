@@ -9,4 +9,4 @@ pt=2/2
 ability=Vigilance;\
         When SN dies, return it to the battlefield transformed under your control at the beginning of the next end step.
 timing=main
-oracle=Vigilance. When Loyal Cathar dies, return it to the battlefield transformed under your control at the beginning of the next end step.
+oracle=Vigilance\nWhen Loyal Cathar dies, return it to the battlefield transformed under your control at the beginning of the next end step.

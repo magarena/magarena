@@ -10,4 +10,4 @@ ability=First strike;\
         When SN enters the battlefield, you may reveal X black cards in your hand. If you do, target creature gets -X/-X until end of turn.;\
         Madness {1}{B}
 timing=main
-oracle=First strike. When Nightshade Assassin enters the battlefield, you may reveal X black cards in your hand. If you do, target creature gets -X/-X until end of turn. Madness {1}{B}
+oracle=First strike\nWhen Nightshade Assassin enters the battlefield, you may reveal X black cards in your hand. If you do, target creature gets -X/-X until end of turn.\nMadness {1}{B}

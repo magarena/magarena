@@ -10,4 +10,4 @@ ability=Sunburst;\
         {4}, {T}, Remove a +1/+1 counter from SN: Destroy target creature.;\
         {2}, Remove a +1/+1 counter from SN: Return SN to its owner's hand.
 timing=main
-oracle=Sunburst. {4}, {T}, Remove a +1/+1 counter from Suncrusher: Destroy target creature. {2}, Remove a +1/+1 counter from Suncrusher: Return Suncrusher to its owner's hand.
+oracle=Sunburst\n{4}, {T}, Remove a +1/+1 counter from Suncrusher: Destroy target creature.\n{2}, Remove a +1/+1 counter from Suncrusher: Return Suncrusher to its owner's hand.

@@ -9,4 +9,4 @@ pt=3/3
 ability=Convoke;\
         Tap two untapped creatures you control: SN gets +2/+2 until end of turn.
 timing=main
-oracle=Convoke. Tap two untapped creatures you control: Root-Kin Ally gets +2/+2 until end of turn.
+oracle=Convoke\nTap two untapped creatures you control: Root-Kin Ally gets +2/+2 until end of turn.

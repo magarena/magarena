@@ -6,4 +6,4 @@ type=Sorcery
 cost={4}{R}
 effect=Destroy target artifact or land.~Suspend 4—{1}{R}
 timing=main
-oracle=Destroy target artifact or land. Suspend 4—{1}{R}
+oracle=Destroy target artifact or land.\nSuspend 4—{1}{R}

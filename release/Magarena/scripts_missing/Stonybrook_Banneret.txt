@@ -9,4 +9,4 @@ pt=1/1
 ability=Islandwalk;\
         Merfolk spells and Wizard spells you cast cost {1} less to cast.
 timing=main
-oracle=Islandwalk. Merfolk spells and Wizard spells you cast cost {1} less to cast.
+oracle=Islandwalk\nMerfolk spells and Wizard spells you cast cost {1} less to cast.

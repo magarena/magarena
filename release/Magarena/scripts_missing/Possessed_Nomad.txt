@@ -9,4 +9,4 @@ pt=3/3
 ability=Vigilance;\
         Threshold — As long as seven or more cards are in your graveyard, SN gets +1/+1, is black, and has "{2}{B}, {T}: Destroy target white creature."
 timing=main
-oracle=Vigilance. Threshold — As long as seven or more cards are in your graveyard, Possessed Nomad gets +1/+1, is black, and has "{2}{B}, {T}: Destroy target white creature."
+oracle=Vigilance\nThreshold — As long as seven or more cards are in your graveyard, Possessed Nomad gets +1/+1, is black, and has "{2}{B}, {T}: Destroy target white creature."

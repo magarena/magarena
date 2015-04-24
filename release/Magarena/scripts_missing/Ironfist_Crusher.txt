@@ -9,4 +9,4 @@ pt=2/4
 ability=SN can block any number of creatures.;\
         Morph {3}{W}
 timing=main
-oracle=Ironfist Crusher can block any number of creatures. Morph {3}{W}
+oracle=Ironfist Crusher can block any number of creatures.\nMorph {3}{W}

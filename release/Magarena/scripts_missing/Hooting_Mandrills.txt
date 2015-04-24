@@ -9,4 +9,4 @@ pt=4/4
 ability=Delve;\
         Trample
 timing=main
-oracle=Delve. Trample
+oracle=Delve\nTrample

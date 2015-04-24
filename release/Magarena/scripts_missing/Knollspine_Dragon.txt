@@ -9,4 +9,4 @@ pt=7/5
 ability=Flying;\
         When SN enters the battlefield, you may discard your hand and draw cards equal to the damage dealt to target opponent this turn.
 timing=main
-oracle=Flying. When Knollspine Dragon enters the battlefield, you may discard your hand and draw cards equal to the damage dealt to target opponent this turn.
+oracle=Flying\nWhen Knollspine Dragon enters the battlefield, you may discard your hand and draw cards equal to the damage dealt to target opponent this turn.

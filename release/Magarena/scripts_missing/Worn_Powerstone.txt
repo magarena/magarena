@@ -7,4 +7,4 @@ cost={3}
 ability=SN enters the battlefield tapped.;\
         {T}: Add {2} to your mana pool.
 timing=main
-oracle=Worn Powerstone enters the battlefield tapped. {T}: Add {2} to your mana pool.
+oracle=Worn Powerstone enters the battlefield tapped.\n{T}: Add {2} to your mana pool.

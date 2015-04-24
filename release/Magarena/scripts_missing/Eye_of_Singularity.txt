@@ -7,4 +7,4 @@ cost={3}{W}
 ability=When SN enters the battlefield, destroy each permanent with the same name as another permanent, except for basic lands. They can't be regenerated.;\
         Whenever a permanent other than a basic land enters the battlefield, destroy all other permanents with that name. They can't be regenerated.
 timing=main
-oracle=When Eye of Singularity enters the battlefield, destroy each permanent with the same name as another permanent, except for basic lands. They can't be regenerated. Whenever a permanent other than a basic land enters the battlefield, destroy all other permanents with that name. They can't be regenerated.
+oracle=When Eye of Singularity enters the battlefield, destroy each permanent with the same name as another permanent, except for basic lands. They can't be regenerated.\nWhenever a permanent other than a basic land enters the battlefield, destroy all other permanents with that name. They can't be regenerated.

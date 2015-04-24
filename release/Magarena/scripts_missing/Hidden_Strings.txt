@@ -6,4 +6,4 @@ type=Sorcery
 cost={1}{U}
 effect=You may tap or untap target permanent, then you may tap or untap another target permanent.~Cipher
 timing=main
-oracle=You may tap or untap target permanent, then you may tap or untap another target permanent. Cipher
+oracle=You may tap or untap target permanent, then you may tap or untap another target permanent.\nCipher

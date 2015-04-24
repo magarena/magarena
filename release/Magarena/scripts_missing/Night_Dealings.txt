@@ -7,4 +7,4 @@ cost={2}{B}{B}
 ability=Whenever a source you control deals damage to another player, put that many theft counters on SN.;\
         {2}{B}{B}, Remove X theft counters from SN: Search your library for a nonland card with converted mana cost X, reveal it, and put it into your hand. Then shuffle your library.
 timing=main
-oracle=Whenever a source you control deals damage to another player, put that many theft counters on Night Dealings. {2}{B}{B}, Remove X theft counters from Night Dealings: Search your library for a nonland card with converted mana cost X, reveal it, and put it into your hand. Then shuffle your library.
+oracle=Whenever a source you control deals damage to another player, put that many theft counters on Night Dealings.\n{2}{B}{B}, Remove X theft counters from Night Dealings: Search your library for a nonland card with converted mana cost X, reveal it, and put it into your hand. Then shuffle your library.

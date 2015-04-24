@@ -10,4 +10,4 @@ ability=Flying;\
         Haunt;\
         When SN enters the battlefield or the creature it haunts dies, target player loses 2 life and you gain 2 life.
 timing=main
-oracle=Flying. Haunt. When Blind Hunter enters the battlefield or the creature it haunts dies, target player loses 2 life and you gain 2 life.
+oracle=Flying\nHaunt\nWhen Blind Hunter enters the battlefield or the creature it haunts dies, target player loses 2 life and you gain 2 life.

@@ -9,4 +9,4 @@ pt=0/4
 ability=Defender;\
         Banding
 timing=main
-oracle=Defender. Banding
+oracle=Defender\nBanding

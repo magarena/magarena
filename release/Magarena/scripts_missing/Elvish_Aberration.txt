@@ -9,4 +9,4 @@ pt=4/5
 ability={T}: Add {G}{G}{G} to your mana pool.;\
         Forestcycling {2}
 timing=main
-oracle={T}: Add {G}{G}{G} to your mana pool. Forestcycling {2}
+oracle={T}: Add {G}{G}{G} to your mana pool.\nForestcycling {2}

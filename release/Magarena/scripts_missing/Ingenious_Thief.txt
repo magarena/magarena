@@ -9,4 +9,4 @@ pt=1/1
 ability=Flying;\
         When SN enters the battlefield, look at target player's hand.
 timing=main
-oracle=Flying. When Ingenious Thief enters the battlefield, look at target player's hand.
+oracle=Flying\nWhen Ingenious Thief enters the battlefield, look at target player's hand.

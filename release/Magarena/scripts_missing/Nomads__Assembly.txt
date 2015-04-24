@@ -6,4 +6,4 @@ type=Sorcery
 cost={4}{W}{W}
 effect=Put a 1/1 white Kor Soldier creature token onto the battlefield for each creature you control.~Rebound
 timing=main
-oracle=Put a 1/1 white Kor Soldier creature token onto the battlefield for each creature you control. Rebound
+oracle=Put a 1/1 white Kor Soldier creature token onto the battlefield for each creature you control.\nRebound

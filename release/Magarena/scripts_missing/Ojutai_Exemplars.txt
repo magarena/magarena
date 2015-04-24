@@ -11,4 +11,4 @@ ability=Whenever you cast a noncreature spell, choose one — \
         (2) SN gains first strike and lifelink until end of turn. \
         (3) Exile SN, then return it to the battlefield tapped under its owner's control.
 timing=main
-oracle=Whenever you cast a noncreature spell, choose one — • Tap target creature. • Ojutai Exemplars gains first strike and lifelink until end of turn. • Exile Ojutai Exemplars, then return it to the battlefield tapped under its owner's control.
+oracle=Whenever you cast a noncreature spell, choose one —\n• Tap target creature.\n• Ojutai Exemplars gains first strike and lifelink until end of turn.\n• Exile Ojutai Exemplars, then return it to the battlefield tapped under its owner's control.

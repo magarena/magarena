@@ -6,4 +6,4 @@ type=Instant
 cost={X}{B}
 effect=As an additional cost to cast SN, exile X cards from your graveyard.~You draw X cards and you lose X life.
 timing=removal
-oracle=As an additional cost to cast Skeletal Scrying, exile X cards from your graveyard. You draw X cards and you lose X life.
+oracle=As an additional cost to cast Skeletal Scrying, exile X cards from your graveyard.\nYou draw X cards and you lose X life.

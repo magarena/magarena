@@ -9,4 +9,4 @@ pt=3/3
 ability=Convoke;\
         Flying
 timing=main
-oracle=Convoke. Flying
+oracle=Convoke\nFlying

@@ -9,4 +9,4 @@ pt=2/3
 ability=Snow landwalk;\
         {S}: Regenerate SN.
 timing=main
-oracle=Snow landwalk. {S}: Regenerate Zombie Musher.
+oracle=Snow landwalk\n{S}: Regenerate Zombie Musher.

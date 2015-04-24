@@ -7,4 +7,4 @@ cost={3}
 ability=SN enters the battlefield tapped.;\
         {X}, {T}, Sacrifice SN: X target creatures with power 2 or less can't be blocked this turn.
 timing=main
-oracle=Runed Arch enters the battlefield tapped. {X}, {T}, Sacrifice Runed Arch: X target creatures with power 2 or less can't be blocked this turn.
+oracle=Runed Arch enters the battlefield tapped.\n{X}, {T}, Sacrifice Runed Arch: X target creatures with power 2 or less can't be blocked this turn.

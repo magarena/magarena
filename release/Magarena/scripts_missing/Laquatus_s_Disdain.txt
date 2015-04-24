@@ -6,4 +6,4 @@ type=Instant
 cost={1}{U}
 effect=Counter target spell cast from a graveyard.~Draw a card.
 timing=removal
-oracle=Counter target spell cast from a graveyard. Draw a card.
+oracle=Counter target spell cast from a graveyard.\nDraw a card.

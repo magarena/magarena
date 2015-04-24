@@ -10,4 +10,4 @@ ability=Haste;\
         Tribute 2;\
         When SN enters the battlefield, if tribute wasn't paid, you may cast an instant or sorcery card from your hand without paying its mana cost.
 timing=main
-oracle=Haste. Tribute 2. When Oracle of Bones enters the battlefield, if tribute wasn't paid, you may cast an instant or sorcery card from your hand without paying its mana cost.
+oracle=Haste\nTribute 2\nWhen Oracle of Bones enters the battlefield, if tribute wasn't paid, you may cast an instant or sorcery card from your hand without paying its mana cost.

@@ -7,4 +7,4 @@ cost={R}{W}
 ability=When SN enters the battlefield, destroy all Djinns and Efreets. They can't be regenerated.;\
         Whenever a Djinn or Efreet enters the battlefield, destroy it. It can't be regenerated.
 timing=main
-oracle=When Suleiman's Legacy enters the battlefield, destroy all Djinns and Efreets. They can't be regenerated. Whenever a Djinn or Efreet enters the battlefield, destroy it. It can't be regenerated.
+oracle=When Suleiman's Legacy enters the battlefield, destroy all Djinns and Efreets. They can't be regenerated.\nWhenever a Djinn or Efreet enters the battlefield, destroy it. It can't be regenerated.

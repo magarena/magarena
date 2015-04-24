@@ -10,4 +10,4 @@ ability=First strike, vigilance;\
         Champion a Kithkin;\
         SN can block any number of creatures.
 timing=main
-oracle=First strike, vigilance. Champion a Kithkin. Thoughtweft Trio can block any number of creatures.
+oracle=First strike, vigilance\nChampion a Kithkin\nThoughtweft Trio can block any number of creatures.

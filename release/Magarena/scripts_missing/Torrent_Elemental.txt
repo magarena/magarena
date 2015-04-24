@@ -10,4 +10,4 @@ ability=Flying;\
         Whenever SN attacks, tap all creatures defending player controls.;\
         {3}{B/G}{B/G}: Put SN from exile onto the battlefield tapped. Activate this ability only any time you could cast a sorcery.
 timing=main
-oracle=Flying. Whenever Torrent Elemental attacks, tap all creatures defending player controls. {3}{B/G}{B/G}: Put Torrent Elemental from exile onto the battlefield tapped. Activate this ability only any time you could cast a sorcery.
+oracle=Flying\nWhenever Torrent Elemental attacks, tap all creatures defending player controls.\n{3}{B/G}{B/G}: Put Torrent Elemental from exile onto the battlefield tapped. Activate this ability only any time you could cast a sorcery.

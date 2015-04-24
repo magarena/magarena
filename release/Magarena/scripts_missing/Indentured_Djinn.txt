@@ -9,4 +9,4 @@ pt=4/4
 ability=Flying;\
         When SN enters the battlefield, each other player may draw up to three cards.
 timing=main
-oracle=Flying. When Indentured Djinn enters the battlefield, each other player may draw up to three cards.
+oracle=Flying\nWhen Indentured Djinn enters the battlefield, each other player may draw up to three cards.

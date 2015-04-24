@@ -6,4 +6,4 @@ type=Instant
 cost={W}{U}
 effect=Counter target spell that targets you or a permanent you control.~Draw a card.
 timing=removal
-oracle=Counter target spell that targets you or a permanent you control. Draw a card.
+oracle=Counter target spell that targets you or a permanent you control.\nDraw a card.

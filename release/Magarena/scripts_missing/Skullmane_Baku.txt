@@ -9,4 +9,4 @@ pt=2/1
 ability=Whenever you cast a Spirit or Arcane spell, you may put a ki counter on SN.;\
         {1}, {T}, Remove X ki counters from SN: Target creature gets -X/-X until end of turn.
 timing=main
-oracle=Whenever you cast a Spirit or Arcane spell, you may put a ki counter on Skullmane Baku. {1}, {T}, Remove X ki counters from Skullmane Baku: Target creature gets -X/-X until end of turn.
+oracle=Whenever you cast a Spirit or Arcane spell, you may put a ki counter on Skullmane Baku.\n{1}, {T}, Remove X ki counters from Skullmane Baku: Target creature gets -X/-X until end of turn.

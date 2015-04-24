@@ -9,4 +9,4 @@ pt=4/7
 ability=Convoke;\
         Vigilance
 timing=main
-oracle=Convoke. Vigilance
+oracle=Convoke\nVigilance

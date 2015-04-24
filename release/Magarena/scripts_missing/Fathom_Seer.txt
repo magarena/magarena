@@ -9,4 +9,4 @@ pt=1/3
 ability=Morph—Return two Islands you control to their owner's hand.;\
         When SN is turned face up, draw two cards.
 timing=main
-oracle=Morph—Return two Islands you control to their owner's hand. When Fathom Seer is turned face up, draw two cards.
+oracle=Morph—Return two Islands you control to their owner's hand.\nWhen Fathom Seer is turned face up, draw two cards.

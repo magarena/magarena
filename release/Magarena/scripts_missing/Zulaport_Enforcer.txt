@@ -13,4 +13,4 @@ ability=Level up {4};\
         5/5;\
         SN can't be blocked except by black creatures.
 timing=main
-oracle=Level up {4}. LEVEL 1-2. 3/3. LEVEL 3+. 5/5. Zulaport Enforcer can't be blocked except by black creatures.
+oracle=Level up {4}\nLEVEL 1-2\n3/3\nLEVEL 3+\n5/5\nZulaport Enforcer can't be blocked except by black creatures.

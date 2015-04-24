@@ -7,4 +7,4 @@ cost={3}{R}
 ability=Whenever an opponent taps a land for mana, tap all lands that player controls.;\
         If a creature an opponent controls attacks, all creatures that opponent controls attack if able.
 timing=main
-oracle=Whenever an opponent taps a land for mana, tap all lands that player controls. If a creature an opponent controls attacks, all creatures that opponent controls attack if able.
+oracle=Whenever an opponent taps a land for mana, tap all lands that player controls.\nIf a creature an opponent controls attacks, all creatures that opponent controls attack if able.

@@ -8,4 +8,4 @@ cost={1}{U}
 ability=Enchant artifact or creature;\
         Enchanted permanent has phasing.
 timing=main
-oracle=Enchant artifact or creature. Enchanted permanent has phasing.
+oracle=Enchant artifact or creature\nEnchanted permanent has phasing.

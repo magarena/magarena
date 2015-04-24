@@ -10,4 +10,4 @@ ability=First strike;\
         When SN enters the battlefield or is turned face up, another target creature you control gets +3/+0 until end of turn.;\
         Morph {2}{U}{R}{W}
 timing=main
-oracle=First strike. When Efreet Weaponmaster enters the battlefield or is turned face up, another target creature you control gets +3/+0 until end of turn. Morph {2}{U}{R}{W}
+oracle=First strike\nWhen Efreet Weaponmaster enters the battlefield or is turned face up, another target creature you control gets +3/+0 until end of turn.\nMorph {2}{U}{R}{W}

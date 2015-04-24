@@ -10,4 +10,4 @@ ability=SN gets +1/+1 for each creature card in your graveyard.;\
         {1}{B}{G}, Sacrifice another creature: Each opponent loses life equal to the sacrificed creature's power.;\
         Sacrifice a Swamp and a Forest: Return Jarad from your graveyard to your hand.
 timing=main
-oracle=Jarad, Golgari Lich Lord gets +1/+1 for each creature card in your graveyard. {1}{B}{G}, Sacrifice another creature: Each opponent loses life equal to the sacrificed creature's power. Sacrifice a Swamp and a Forest: Return Jarad from your graveyard to your hand.
+oracle=Jarad, Golgari Lich Lord gets +1/+1 for each creature card in your graveyard.\n{1}{B}{G}, Sacrifice another creature: Each opponent loses life equal to the sacrificed creature's power.\nSacrifice a Swamp and a Forest: Return Jarad from your graveyard to your hand.

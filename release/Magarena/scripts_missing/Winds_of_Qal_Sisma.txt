@@ -6,4 +6,4 @@ type=Instant
 cost={1}{G}
 effect=Prevent all combat damage that would be dealt this turn.~If you control a creature with power 4 or greater, instead prevent all combat damage that would be dealt this turn by creatures your opponents control.
 timing=removal
-oracle=Prevent all combat damage that would be dealt this turn. Ferocious — If you control a creature with power 4 or greater, instead prevent all combat damage that would be dealt this turn by creatures your opponents control.
+oracle=Prevent all combat damage that would be dealt this turn.\nFerocious — If you control a creature with power 4 or greater, instead prevent all combat damage that would be dealt this turn by creatures your opponents control.

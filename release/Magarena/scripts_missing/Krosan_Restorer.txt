@@ -9,4 +9,4 @@ pt=1/2
 ability={T}: Untap target land.;\
         Threshold — {T}: Untap up to three target lands. Activate this ability only if seven or more cards are in your graveyard.
 timing=main
-oracle={T}: Untap target land. Threshold — {T}: Untap up to three target lands. Activate this ability only if seven or more cards are in your graveyard.
+oracle={T}: Untap target land.\nThreshold — {T}: Untap up to three target lands. Activate this ability only if seven or more cards are in your graveyard.

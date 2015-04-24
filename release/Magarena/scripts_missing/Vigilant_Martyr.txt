@@ -9,4 +9,4 @@ pt=1/1
 ability=Sacrifice SN: Regenerate target creature.;\
         {W}{W}, {T}, Sacrifice SN: Counter target spell that targets an enchantment.
 timing=main
-oracle=Sacrifice Vigilant Martyr: Regenerate target creature. {W}{W}, {T}, Sacrifice Vigilant Martyr: Counter target spell that targets an enchantment.
+oracle=Sacrifice Vigilant Martyr: Regenerate target creature.\n{W}{W}, {T}, Sacrifice Vigilant Martyr: Counter target spell that targets an enchantment.

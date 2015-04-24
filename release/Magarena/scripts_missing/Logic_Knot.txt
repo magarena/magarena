@@ -6,4 +6,4 @@ type=Instant
 cost={X}{U}{U}
 effect=Delve~Counter target spell unless its controller pays {X}.
 timing=removal
-oracle=Delve. Counter target spell unless its controller pays {X}.
+oracle=Delve\nCounter target spell unless its controller pays {X}.

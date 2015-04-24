@@ -9,4 +9,4 @@ pt=1/2
 ability=Flying;\
         {1}, {T}: Add one mana of any color to your mana pool.
 timing=main
-oracle=Flying. {1}, {T}: Add one mana of any color to your mana pool.
+oracle=Flying\n{1}, {T}: Add one mana of any color to your mana pool.

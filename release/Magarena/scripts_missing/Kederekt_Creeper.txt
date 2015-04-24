@@ -9,4 +9,4 @@ pt=2/3
 ability=Deathtouch;\
         SN can't be blocked except by two or more creatures.
 timing=main
-oracle=Deathtouch. Kederekt Creeper can't be blocked except by two or more creatures.
+oracle=Deathtouch\nKederekt Creeper can't be blocked except by two or more creatures.

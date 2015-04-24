@@ -10,4 +10,4 @@ ability=SN can't be blocked.;\
         Suspend 9—{2}{U};\
         Whenever an opponent casts a spell, if SN is suspended, remove a time counter from it.
 timing=main
-oracle=Deep-Sea Kraken can't be blocked. Suspend 9—{2}{U}. Whenever an opponent casts a spell, if Deep-Sea Kraken is suspended, remove a time counter from it.
+oracle=Deep-Sea Kraken can't be blocked.\nSuspend 9—{2}{U}\nWhenever an opponent casts a spell, if Deep-Sea Kraken is suspended, remove a time counter from it.

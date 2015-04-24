@@ -6,4 +6,4 @@ type=Sorcery
 cost={2}{U}
 effect=Draw two cards, then discard a card.~Conspire
 timing=main
-oracle=Draw two cards, then discard a card. Conspire
+oracle=Draw two cards, then discard a card.\nConspire

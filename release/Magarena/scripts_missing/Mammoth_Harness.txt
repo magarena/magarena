@@ -9,4 +9,4 @@ ability=Enchant creature;\
         Enchanted creature loses flying.;\
         Whenever enchanted creature blocks or becomes blocked by a creature, the other creature gains first strike until end of turn.
 timing=main
-oracle=Enchant creature. Enchanted creature loses flying. Whenever enchanted creature blocks or becomes blocked by a creature, the other creature gains first strike until end of turn.
+oracle=Enchant creature\nEnchanted creature loses flying.\nWhenever enchanted creature blocks or becomes blocked by a creature, the other creature gains first strike until end of turn.

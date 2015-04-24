@@ -9,4 +9,4 @@ pt=1/1
 ability=Soldier spells you cast cost {1} less to cast.;\
         Soldier creatures you control get +1/+2.
 timing=main
-oracle=Soldier spells you cast cost {1} less to cast. Soldier creatures you control get +1/+2.
+oracle=Soldier spells you cast cost {1} less to cast.\nSoldier creatures you control get +1/+2.

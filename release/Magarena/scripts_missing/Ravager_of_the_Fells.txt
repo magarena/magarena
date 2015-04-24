@@ -10,4 +10,4 @@ ability=Trample;\
         Whenever this creature transforms into SN, it deals 2 damage to target opponent and 2 damage to up to one target creature that player controls.;\
         At the beginning of each upkeep, if a player cast two or more spells last turn, transform SN.
 timing=main
-oracle=Trample. Whenever this creature transforms into Ravager of the Fells, it deals 2 damage to target opponent and 2 damage to up to one target creature that player controls. At the beginning of each upkeep, if a player cast two or more spells last turn, transform Ravager of the Fells.
+oracle=Trample\nWhenever this creature transforms into Ravager of the Fells, it deals 2 damage to target opponent and 2 damage to up to one target creature that player controls.\nAt the beginning of each upkeep, if a player cast two or more spells last turn, transform Ravager of the Fells.

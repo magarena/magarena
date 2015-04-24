@@ -8,4 +8,4 @@ ability=Flash;\
         Sunburst;\
         Remove a charge counter from SN: Target creature gets +1/+1 until end of turn.
 timing=main
-oracle=Flash. Sunburst. Remove a charge counter from Baton of Courage: Target creature gets +1/+1 until end of turn.
+oracle=Flash\nSunburst\nRemove a charge counter from Baton of Courage: Target creature gets +1/+1 until end of turn.

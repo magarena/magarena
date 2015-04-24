@@ -10,4 +10,4 @@ ability=SN can't be blocked except by three or more creatures.;\
         Cards in graveyards can't be the targets of spells or abilities.;\
         When SN dies, exile it and each player returns all creature cards from his or her graveyard to his or her hand.
 timing=main
-oracle=Underworld Cerberus can't be blocked except by three or more creatures. Cards in graveyards can't be the targets of spells or abilities. When Underworld Cerberus dies, exile it and each player returns all creature cards from his or her graveyard to his or her hand.
+oracle=Underworld Cerberus can't be blocked except by three or more creatures.\nCards in graveyards can't be the targets of spells or abilities.\nWhen Underworld Cerberus dies, exile it and each player returns all creature cards from his or her graveyard to his or her hand.

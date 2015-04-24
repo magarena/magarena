@@ -10,4 +10,4 @@ ability=Enchant creature;\
         You control enchanted creature.;\
         When enchanted creature dies, return that card to the battlefield under its owner's control.
 timing=main
-oracle=Enchant creature. When Abduction enters the battlefield, untap enchanted creature. You control enchanted creature. When enchanted creature dies, return that card to the battlefield under its owner's control.
+oracle=Enchant creature\nWhen Abduction enters the battlefield, untap enchanted creature.\nYou control enchanted creature.\nWhen enchanted creature dies, return that card to the battlefield under its owner's control.

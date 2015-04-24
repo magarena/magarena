@@ -7,4 +7,4 @@ cost={4}{G}
 ability=Cumulative upkeep {1};\
         Whenever you pay SN's cumulative upkeep, you may search your library for a creature card with converted mana cost equal to the number of age counters on SN and put it onto the battlefield. If you do, shuffle your library.
 timing=main
-oracle=Cumulative upkeep {1}. Whenever you pay Hibernation's End's cumulative upkeep, you may search your library for a creature card with converted mana cost equal to the number of age counters on Hibernation's End and put it onto the battlefield. If you do, shuffle your library.
+oracle=Cumulative upkeep {1}\nWhenever you pay Hibernation's End's cumulative upkeep, you may search your library for a creature card with converted mana cost equal to the number of age counters on Hibernation's End and put it onto the battlefield. If you do, shuffle your library.

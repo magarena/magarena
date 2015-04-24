@@ -9,4 +9,4 @@ ability=Enchant creature;\
         Cumulative upkeep {S};\
         Enchanted creature gets +3/+3 for each age counter on SN.
 timing=main
-oracle=Enchant creature. Cumulative upkeep {S}. Enchanted creature gets +3/+3 for each age counter on Glacial Plating.
+oracle=Enchant creature\nCumulative upkeep {S}\nEnchanted creature gets +3/+3 for each age counter on Glacial Plating.

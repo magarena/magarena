@@ -8,4 +8,4 @@ ability=Red creatures you control get +1/+0.;\
         White creatures you control get +0/+1.;\
         {R}{W}, Exile SN: Exile all creatures you control. At the beginning of the next combat, return those cards to the battlefield under their owner's control and those creatures gain haste until end of turn.
 timing=main
-oracle=Red creatures you control get +1/+0. White creatures you control get +0/+1. {R}{W}, Exile Legion's Initiative: Exile all creatures you control. At the beginning of the next combat, return those cards to the battlefield under their owner's control and those creatures gain haste until end of turn.
+oracle=Red creatures you control get +1/+0.\nWhite creatures you control get +0/+1.\n{R}{W}, Exile Legion's Initiative: Exile all creatures you control. At the beginning of the next combat, return those cards to the battlefield under their owner's control and those creatures gain haste until end of turn.

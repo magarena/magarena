@@ -10,4 +10,4 @@ ability=Flying;\
         Infect;\
         {3}{U}: Proliferate.
 timing=main
-oracle=Flying. Infect. {3}{U}: Proliferate.
+oracle=Flying\nInfect\n{3}{U}: Proliferate.

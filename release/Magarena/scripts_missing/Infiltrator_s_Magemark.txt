@@ -8,4 +8,4 @@ cost={2}{U}
 ability=Enchant creature;\
         Creatures you control that are enchanted get +1/+1 and can't be blocked except by creatures with defender.
 timing=main
-oracle=Enchant creature. Creatures you control that are enchanted get +1/+1 and can't be blocked except by creatures with defender.
+oracle=Enchant creature\nCreatures you control that are enchanted get +1/+1 and can't be blocked except by creatures with defender.

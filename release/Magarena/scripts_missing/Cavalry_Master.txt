@@ -9,4 +9,4 @@ pt=3/3
 ability=Flanking;\
         Other creatures you control with flanking have flanking.
 timing=main
-oracle=Flanking. Other creatures you control with flanking have flanking.
+oracle=Flanking\nOther creatures you control with flanking have flanking.

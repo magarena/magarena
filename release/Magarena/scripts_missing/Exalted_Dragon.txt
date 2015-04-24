@@ -9,4 +9,4 @@ pt=5/5
 ability=Flying;\
         SN can't attack unless you sacrifice a land.
 timing=main
-oracle=Flying. Exalted Dragon can't attack unless you sacrifice a land.
+oracle=Flying\nExalted Dragon can't attack unless you sacrifice a land.

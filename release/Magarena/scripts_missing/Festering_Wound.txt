@@ -9,4 +9,4 @@ ability=Enchant creature;\
         At the beginning of your upkeep, you may put an infection counter on SN.;\
         At the beginning of the upkeep of enchanted creature's controller, SN deals X damage to that player, where X is the number of infection counters on SN.
 timing=main
-oracle=Enchant creature. At the beginning of your upkeep, you may put an infection counter on Festering Wound. At the beginning of the upkeep of enchanted creature's controller, Festering Wound deals X damage to that player, where X is the number of infection counters on Festering Wound.
+oracle=Enchant creature\nAt the beginning of your upkeep, you may put an infection counter on Festering Wound.\nAt the beginning of the upkeep of enchanted creature's controller, Festering Wound deals X damage to that player, where X is the number of infection counters on Festering Wound.

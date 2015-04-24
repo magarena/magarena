@@ -9,4 +9,4 @@ pt=2/3
 ability=Flying;\
         {T}: Attach target Equipment you control to target creature you control.
 timing=main
-oracle=Flying. {T}: Attach target Equipment you control to target creature you control.
+oracle=Flying\n{T}: Attach target Equipment you control to target creature you control.

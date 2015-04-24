@@ -7,4 +7,4 @@ ability=SN enters the battlefield tapped.;\
         When SN enters the battlefield, sacrifice it unless you return an untapped Swamp you control to its owner's hand.;\
         {T}: Add {1}{B} to your mana pool.
 timing=main
-oracle=Everglades enters the battlefield tapped. When Everglades enters the battlefield, sacrifice it unless you return an untapped Swamp you control to its owner's hand. {T}: Add {1}{B} to your mana pool.
+oracle=Everglades enters the battlefield tapped.\nWhen Everglades enters the battlefield, sacrifice it unless you return an untapped Swamp you control to its owner's hand.\n{T}: Add {1}{B} to your mana pool.

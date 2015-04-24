@@ -7,4 +7,4 @@ cost={3}{W}{U}
 ability=As SN enters the battlefield, choose a color.;\
         Creatures of the chosen color without flying can't attack you.
 timing=main
-oracle=As Teferi's Moat enters the battlefield, choose a color. Creatures of the chosen color without flying can't attack you.
+oracle=As Teferi's Moat enters the battlefield, choose a color.\nCreatures of the chosen color without flying can't attack you.

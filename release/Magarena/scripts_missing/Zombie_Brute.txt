@@ -9,4 +9,4 @@ pt=5/4
 ability=Amplify 1;\
         Trample
 timing=main
-oracle=Amplify 1. Trample
+oracle=Amplify 1\nTrample

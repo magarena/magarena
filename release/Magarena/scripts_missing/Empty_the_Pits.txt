@@ -6,4 +6,4 @@ type=Instant
 cost={X}{X}{B}{B}{B}{B}
 effect=Delve~Put X 2/2 black Zombie creature tokens onto the battlefield tapped.
 timing=removal
-oracle=Delve. Put X 2/2 black Zombie creature tokens onto the battlefield tapped.
+oracle=Delve\nPut X 2/2 black Zombie creature tokens onto the battlefield tapped.

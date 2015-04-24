@@ -6,4 +6,4 @@ type=Instant
 cost={1}{U}
 effect=Target player shuffles up to three target cards from his or her graveyard into his or her library.~Flashback {G}
 timing=removal
-oracle=Target player shuffles up to three target cards from his or her graveyard into his or her library. Flashback {G}
+oracle=Target player shuffles up to three target cards from his or her graveyard into his or her library.\nFlashback {G}

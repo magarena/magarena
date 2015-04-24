@@ -10,4 +10,4 @@ ability=Flash;\
         At the beginning of your end step, draw seven cards.;\
         Each opponent's maximum hand size is reduced by seven.
 timing=main
-oracle=Flash. At the beginning of your end step, draw seven cards. Each opponent's maximum hand size is reduced by seven.
+oracle=Flash\nAt the beginning of your end step, draw seven cards.\nEach opponent's maximum hand size is reduced by seven.

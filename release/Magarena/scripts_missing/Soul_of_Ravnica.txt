@@ -10,4 +10,4 @@ ability=Flying;\
         {5}{U}{U}: Draw a card for each color among permanents you control.;\
         {5}{U}{U}, Exile SN from your graveyard: Draw a card for each color among permanents you control.
 timing=main
-oracle=Flying. {5}{U}{U}: Draw a card for each color among permanents you control. {5}{U}{U}, Exile Soul of Ravnica from your graveyard: Draw a card for each color among permanents you control.
+oracle=Flying\n{5}{U}{U}: Draw a card for each color among permanents you control.\n{5}{U}{U}, Exile Soul of Ravnica from your graveyard: Draw a card for each color among permanents you control.

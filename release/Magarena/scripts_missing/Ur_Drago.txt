@@ -9,4 +9,4 @@ pt=4/4
 ability=First strike;\
         Creatures with swampwalk can be blocked as though they didn't have swampwalk.
 timing=main
-oracle=First strike. Creatures with swampwalk can be blocked as though they didn't have swampwalk.
+oracle=First strike\nCreatures with swampwalk can be blocked as though they didn't have swampwalk.

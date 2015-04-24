@@ -10,4 +10,4 @@ ability=Flying;\
         {1}: SN becomes the creature type of your choice until end of turn.;\
         Morph {3}{U}{U}
 timing=main
-oracle=Flying. {1}: Mistform Shrieker becomes the creature type of your choice until end of turn. Morph {3}{U}{U}
+oracle=Flying\n{1}: Mistform Shrieker becomes the creature type of your choice until end of turn.\nMorph {3}{U}{U}

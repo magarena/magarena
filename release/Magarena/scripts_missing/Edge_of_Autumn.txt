@@ -6,4 +6,4 @@ type=Sorcery
 cost={1}{G}
 effect=If you control four or fewer lands, search your library for a basic land card, put it onto the battlefield tapped, then shuffle your library.~Cycling—Sacrifice a land.
 timing=main
-oracle=If you control four or fewer lands, search your library for a basic land card, put it onto the battlefield tapped, then shuffle your library. Cycling—Sacrifice a land.
+oracle=If you control four or fewer lands, search your library for a basic land card, put it onto the battlefield tapped, then shuffle your library.\nCycling—Sacrifice a land.

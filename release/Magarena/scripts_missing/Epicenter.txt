@@ -6,4 +6,4 @@ type=Sorcery
 cost={4}{R}
 effect=Target player sacrifices a land.~Each player sacrifices all lands he or she controls instead if seven or more cards are in your graveyard.
 timing=main
-oracle=Target player sacrifices a land. Threshold — Each player sacrifices all lands he or she controls instead if seven or more cards are in your graveyard.
+oracle=Target player sacrifices a land.\nThreshold — Each player sacrifices all lands he or she controls instead if seven or more cards are in your graveyard.

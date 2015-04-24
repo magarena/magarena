@@ -10,4 +10,4 @@ ability=Trample;\
         SN enters the battlefield with X +1/+1 counters on it.;\
         When SN dies, you gain life and draw cards equal to its power.
 timing=main
-oracle=Trample. Lifeblood Hydra enters the battlefield with X +1/+1 counters on it. When Lifeblood Hydra dies, you gain life and draw cards equal to its power.
+oracle=Trample\nLifeblood Hydra enters the battlefield with X +1/+1 counters on it.\nWhen Lifeblood Hydra dies, you gain life and draw cards equal to its power.

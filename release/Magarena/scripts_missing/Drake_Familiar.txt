@@ -9,4 +9,4 @@ pt=2/1
 ability=Flying;\
         When SN enters the battlefield, sacrifice it unless you return an enchantment to its owner's hand.
 timing=main
-oracle=Flying. When Drake Familiar enters the battlefield, sacrifice it unless you return an enchantment to its owner's hand.
+oracle=Flying\nWhen Drake Familiar enters the battlefield, sacrifice it unless you return an enchantment to its owner's hand.

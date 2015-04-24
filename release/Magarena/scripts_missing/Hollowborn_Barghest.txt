@@ -9,4 +9,4 @@ pt=7/6
 ability=At the beginning of your upkeep, if you have no cards in hand, each opponent loses 2 life.;\
         At the beginning of each opponent's upkeep, if that player has no cards in hand, he or she loses 2 life.
 timing=main
-oracle=At the beginning of your upkeep, if you have no cards in hand, each opponent loses 2 life. At the beginning of each opponent's upkeep, if that player has no cards in hand, he or she loses 2 life.
+oracle=At the beginning of your upkeep, if you have no cards in hand, each opponent loses 2 life.\nAt the beginning of each opponent's upkeep, if that player has no cards in hand, he or she loses 2 life.

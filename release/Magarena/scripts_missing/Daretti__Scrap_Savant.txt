@@ -10,4 +10,4 @@ ability=+2: Discard up to two cards, then draw that many cards.;\
         −10: You get an emblem with "Whenever an artifact is put into your graveyard from the battlefield, return that card to the battlefield at the beginning of the next end step.";\
         SN can be your commander.
 timing=main
-oracle=+2: Discard up to two cards, then draw that many cards. −2: Sacrifice an artifact. If you do, return target artifact card from your graveyard to the battlefield. −10: You get an emblem with "Whenever an artifact is put into your graveyard from the battlefield, return that card to the battlefield at the beginning of the next end step.". Daretti, Scrap Savant can be your commander.
+oracle=+2: Discard up to two cards, then draw that many cards.\n−2: Sacrifice an artifact. If you do, return target artifact card from your graveyard to the battlefield.\n−10: You get an emblem with "Whenever an artifact is put into your graveyard from the battlefield, return that card to the battlefield at the beginning of the next end step."\nDaretti, Scrap Savant can be your commander.

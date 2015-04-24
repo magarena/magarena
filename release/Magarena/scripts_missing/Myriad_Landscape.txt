@@ -7,4 +7,4 @@ ability=SN enters the battlefield tapped.;\
         {T}: Add {1} to your mana pool.;\
         {2}, {T}, Sacrifice SN: Search your library for up to two basic land cards that share a land type, put them onto the battlefield tapped, then shuffle your library.
 timing=main
-oracle=Myriad Landscape enters the battlefield tapped. {T}: Add {1} to your mana pool. {2}, {T}, Sacrifice Myriad Landscape: Search your library for up to two basic land cards that share a land type, put them onto the battlefield tapped, then shuffle your library.
+oracle=Myriad Landscape enters the battlefield tapped.\n{T}: Add {1} to your mana pool.\n{2}, {T}, Sacrifice Myriad Landscape: Search your library for up to two basic land cards that share a land type, put them onto the battlefield tapped, then shuffle your library.

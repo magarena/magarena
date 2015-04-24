@@ -6,4 +6,4 @@ type=Sorcery
 cost={3}{R}{R}
 effect=Choose one or both — (1) Destroy target artifact. (2) Destroy target nonbasic land.
 timing=main
-oracle=Choose one or both — • Destroy target artifact. • Destroy target nonbasic land.
+oracle=Choose one or both —\n• Destroy target artifact.\n• Destroy target nonbasic land.

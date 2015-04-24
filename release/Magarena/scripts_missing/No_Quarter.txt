@@ -7,4 +7,4 @@ cost={3}{R}
 ability=Whenever a creature becomes blocked by a creature with lesser power, destroy the blocking creature.;\
         Whenever a creature blocks a creature with lesser power, destroy the attacking creature.
 timing=main
-oracle=Whenever a creature becomes blocked by a creature with lesser power, destroy the blocking creature. Whenever a creature blocks a creature with lesser power, destroy the attacking creature.
+oracle=Whenever a creature becomes blocked by a creature with lesser power, destroy the blocking creature.\nWhenever a creature blocks a creature with lesser power, destroy the attacking creature.

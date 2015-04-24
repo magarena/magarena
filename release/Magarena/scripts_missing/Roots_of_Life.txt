@@ -7,4 +7,4 @@ cost={1}{G}{G}
 ability=As SN enters the battlefield, choose Island or Swamp.;\
         Whenever a land of the chosen type an opponent controls becomes tapped, you gain 1 life.
 timing=main
-oracle=As Roots of Life enters the battlefield, choose Island or Swamp. Whenever a land of the chosen type an opponent controls becomes tapped, you gain 1 life.
+oracle=As Roots of Life enters the battlefield, choose Island or Swamp.\nWhenever a land of the chosen type an opponent controls becomes tapped, you gain 1 life.

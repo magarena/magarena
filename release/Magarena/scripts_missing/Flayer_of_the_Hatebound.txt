@@ -9,4 +9,4 @@ pt=4/2
 ability=Undying;\
         Whenever SN or another creature enters the battlefield from your graveyard, that creature deals damage equal to its power to target creature or player.
 timing=main
-oracle=Undying. Whenever Flayer of the Hatebound or another creature enters the battlefield from your graveyard, that creature deals damage equal to its power to target creature or player.
+oracle=Undying\nWhenever Flayer of the Hatebound or another creature enters the battlefield from your graveyard, that creature deals damage equal to its power to target creature or player.

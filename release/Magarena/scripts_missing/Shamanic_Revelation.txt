@@ -6,4 +6,4 @@ type=Sorcery
 cost={3}{G}{G}
 effect=Draw a card for each creature you control.~You gain 4 life for each creature you control with power 4 or greater.
 timing=main
-oracle=Draw a card for each creature you control. Ferocious — You gain 4 life for each creature you control with power 4 or greater.
+oracle=Draw a card for each creature you control.\nFerocious — You gain 4 life for each creature you control with power 4 or greater.

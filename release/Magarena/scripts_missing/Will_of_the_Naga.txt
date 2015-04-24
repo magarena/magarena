@@ -6,4 +6,4 @@ type=Instant
 cost={4}{U}{U}
 effect=Delve~Tap up to two target creatures. Those creatures don't untap during their controller's next untap step.
 timing=removal
-oracle=Delve. Tap up to two target creatures. Those creatures don't untap during their controller's next untap step.
+oracle=Delve\nTap up to two target creatures. Those creatures don't untap during their controller's next untap step.

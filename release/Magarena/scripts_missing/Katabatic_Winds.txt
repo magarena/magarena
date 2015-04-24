@@ -7,4 +7,4 @@ cost={2}{G}
 ability=Phasing;\
         Creatures with flying can't attack or block, and their activated abilities with {T} in their costs can't be activated.
 timing=main
-oracle=Phasing. Creatures with flying can't attack or block, and their activated abilities with {T} in their costs can't be activated.
+oracle=Phasing\nCreatures with flying can't attack or block, and their activated abilities with {T} in their costs can't be activated.

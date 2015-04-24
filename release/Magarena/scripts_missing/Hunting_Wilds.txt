@@ -6,4 +6,4 @@ type=Sorcery
 cost={3}{G}
 effect=Kicker {3}{G}~Search your library for up to two Forest cards and put them onto the battlefield tapped. Then shuffle your library.~If SN was kicked, untap all Forests put onto the battlefield this way. They become 3/3 green creatures with haste that are still lands.
 timing=main
-oracle=Kicker {3}{G}. Search your library for up to two Forest cards and put them onto the battlefield tapped. Then shuffle your library. If Hunting Wilds was kicked, untap all Forests put onto the battlefield this way. They become 3/3 green creatures with haste that are still lands.
+oracle=Kicker {3}{G}\nSearch your library for up to two Forest cards and put them onto the battlefield tapped. Then shuffle your library.\nIf Hunting Wilds was kicked, untap all Forests put onto the battlefield this way. They become 3/3 green creatures with haste that are still lands.

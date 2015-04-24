@@ -9,4 +9,4 @@ pt=3/4
 ability=Swampwalk;\
         Cycling—Pay 2 life.
 timing=main
-oracle=Swampwalk. Cycling—Pay 2 life.
+oracle=Swampwalk\nCycling—Pay 2 life.

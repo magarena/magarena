@@ -10,4 +10,4 @@ ability=Flying;\
         At the beginning of your upkeep, put the top card of your library into your graveyard.;\
         Threshold — As long as seven or more cards are in your graveyard, SN gets +1/+1 and has "At the beginning of your end step, exile two cards from your graveyard."
 timing=main
-oracle=Flying. At the beginning of your upkeep, put the top card of your library into your graveyard. Threshold — As long as seven or more cards are in your graveyard, Bloodcurdler gets +1/+1 and has "At the beginning of your end step, exile two cards from your graveyard."
+oracle=Flying\nAt the beginning of your upkeep, put the top card of your library into your graveyard.\nThreshold — As long as seven or more cards are in your graveyard, Bloodcurdler gets +1/+1 and has "At the beginning of your end step, exile two cards from your graveyard."

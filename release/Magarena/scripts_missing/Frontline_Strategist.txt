@@ -9,4 +9,4 @@ pt=1/1
 ability=Morph {W};\
         When SN is turned face up, prevent all combat damage non-Soldier creatures would deal this turn.
 timing=main
-oracle=Morph {W}. When Frontline Strategist is turned face up, prevent all combat damage non-Soldier creatures would deal this turn.
+oracle=Morph {W}\nWhen Frontline Strategist is turned face up, prevent all combat damage non-Soldier creatures would deal this turn.

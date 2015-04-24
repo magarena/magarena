@@ -9,4 +9,4 @@ pt=2/3
 ability=Flying;\
         At the beginning of your upkeep, if a player controls more Wizards than each other player, the player who controls the most Wizards gains control of SN.
 timing=main
-oracle=Flying. At the beginning of your upkeep, if a player controls more Wizards than each other player, the player who controls the most Wizards gains control of Thoughtbound Primoc.
+oracle=Flying\nAt the beginning of your upkeep, if a player controls more Wizards than each other player, the player who controls the most Wizards gains control of Thoughtbound Primoc.

@@ -9,4 +9,4 @@ pt=1/1
 ability={1}: SN becomes the creature type of your choice until end of turn.;\
         {2}{U}{U}: SN gets +2/+2 and gains flying until end of turn.
 timing=main
-oracle={1}: Mistform Stalker becomes the creature type of your choice until end of turn. {2}{U}{U}: Mistform Stalker gets +2/+2 and gains flying until end of turn.
+oracle={1}: Mistform Stalker becomes the creature type of your choice until end of turn.\n{2}{U}{U}: Mistform Stalker gets +2/+2 and gains flying until end of turn.

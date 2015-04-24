@@ -8,4 +8,4 @@ ability=Cumulative upkeep {1};\
         When you play a card, sacrifice SN.;\
         {2}: You gain 1 life.
 timing=main
-oracle=Cumulative upkeep {1}. When you play a card, sacrifice Juju Bubble. {2}: You gain 1 life.
+oracle=Cumulative upkeep {1}\nWhen you play a card, sacrifice Juju Bubble.\n{2}: You gain 1 life.

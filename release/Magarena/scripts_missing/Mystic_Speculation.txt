@@ -6,4 +6,4 @@ type=Sorcery
 cost={U}
 effect=Buyback {2}~Scry 3.
 timing=main
-oracle=Buyback {2}. Scry 3.
+oracle=Buyback {2}\nScry 3.

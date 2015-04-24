@@ -6,4 +6,4 @@ type=Instant
 cost={3}{W}
 effect=Exile target attacking creature.~Cycling {5}{G}{W}{U}~When you cycle SN, exile up to two target attacking creatures.
 timing=removal
-oracle=Exile target attacking creature. Cycling {5}{G}{W}{U}. When you cycle Resounding Silence, exile up to two target attacking creatures.
+oracle=Exile target attacking creature.\nCycling {5}{G}{W}{U}\nWhen you cycle Resounding Silence, exile up to two target attacking creatures.

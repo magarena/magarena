@@ -9,4 +9,4 @@ pt=1/5
 ability=Flying;\
         {1}{W}: SN can block an additional creature this turn.
 timing=main
-oracle=Flying. {1}{W}: Coastline Chimera can block an additional creature this turn.
+oracle=Flying\n{1}{W}: Coastline Chimera can block an additional creature this turn.

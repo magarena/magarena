@@ -8,4 +8,4 @@ ability=SN enters the battlefield with three +1/+1 counters on it.;\
         At the beginning of your upkeep, move a +1/+1 counter from SN onto target creature.;\
         When SN has no +1/+1 counters on it, sacrifice it.
 timing=main
-oracle=Afiya Grove enters the battlefield with three +1/+1 counters on it. At the beginning of your upkeep, move a +1/+1 counter from Afiya Grove onto target creature. When Afiya Grove has no +1/+1 counters on it, sacrifice it.
+oracle=Afiya Grove enters the battlefield with three +1/+1 counters on it.\nAt the beginning of your upkeep, move a +1/+1 counter from Afiya Grove onto target creature.\nWhen Afiya Grove has no +1/+1 counters on it, sacrifice it.

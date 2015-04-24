@@ -6,4 +6,4 @@ type=Sorcery
 cost={X}{W}{W}
 effect=Convoke~Return X target creature cards with converted mana cost 2 or less from your graveyard to the battlefield.
 timing=main
-oracle=Convoke. Return X target creature cards with converted mana cost 2 or less from your graveyard to the battlefield.
+oracle=Convoke\nReturn X target creature cards with converted mana cost 2 or less from your graveyard to the battlefield.

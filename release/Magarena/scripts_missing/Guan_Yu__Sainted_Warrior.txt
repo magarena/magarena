@@ -9,4 +9,4 @@ pt=3/5
 ability=Horsemanship;\
         When SN is put into your graveyard from the battlefield, you may shuffle Guan Yu into your library.
 timing=main
-oracle=Horsemanship. When Guan Yu, Sainted Warrior is put into your graveyard from the battlefield, you may shuffle Guan Yu into your library.
+oracle=Horsemanship\nWhen Guan Yu, Sainted Warrior is put into your graveyard from the battlefield, you may shuffle Guan Yu into your library.

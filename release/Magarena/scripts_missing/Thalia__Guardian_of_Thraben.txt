@@ -9,4 +9,4 @@ pt=2/1
 ability=First strike;\
         Noncreature spells cost {1} more to cast.
 timing=main
-oracle=First strike. Noncreature spells cost {1} more to cast.
+oracle=First strike\nNoncreature spells cost {1} more to cast.

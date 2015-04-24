@@ -6,4 +6,4 @@ type=Sorcery
 cost={3}{G}{G}
 effect=Target creature gets +3/+3 until end of turn. Exile SN with three time counters on it.~Suspend 3—{2}{G}
 timing=main
-oracle=Target creature gets +3/+3 until end of turn. Exile Cyclical Evolution with three time counters on it. Suspend 3—{2}{G}
+oracle=Target creature gets +3/+3 until end of turn. Exile Cyclical Evolution with three time counters on it.\nSuspend 3—{2}{G}

@@ -7,4 +7,4 @@ cost={2}{G}
 ability=Skip your draw step.;\
         {1}, Tap two untapped creatures you control: Draw a card.
 timing=main
-oracle=Skip your draw step. {1}, Tap two untapped creatures you control: Draw a card.
+oracle=Skip your draw step.\n{1}, Tap two untapped creatures you control: Draw a card.

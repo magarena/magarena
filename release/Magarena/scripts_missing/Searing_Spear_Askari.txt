@@ -9,4 +9,4 @@ pt=2/2
 ability=Flanking;\
         {1}{R}: SN can't be blocked except by two or more creatures this turn.
 timing=main
-oracle=Flanking. {1}{R}: Searing Spear Askari can't be blocked except by two or more creatures this turn.
+oracle=Flanking\n{1}{R}: Searing Spear Askari can't be blocked except by two or more creatures this turn.

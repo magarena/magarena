@@ -9,4 +9,4 @@ pt=1/4
 ability=Flying;\
         {1}{U}, {Q}: Target opponent exiles the top card of his or her library. Until end of turn, you may play that card.
 timing=main
-oracle=Flying. {1}{U}, {Q}: Target opponent exiles the top card of his or her library. Until end of turn, you may play that card.
+oracle=Flying\n{1}{U}, {Q}: Target opponent exiles the top card of his or her library. Until end of turn, you may play that card.

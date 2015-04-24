@@ -9,4 +9,4 @@ pt=2/2
 ability={T}: Target creature can't block this turn.;\
         {S}: SN gains haste until end of turn.
 timing=main
-oracle={T}: Target creature can't block this turn. {S}: Goblin Rimerunner gains haste until end of turn.
+oracle={T}: Target creature can't block this turn.\n{S}: Goblin Rimerunner gains haste until end of turn.

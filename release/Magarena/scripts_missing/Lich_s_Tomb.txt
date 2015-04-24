@@ -7,4 +7,4 @@ cost={4}
 ability=You don't lose the game for having 0 or less life.;\
         Whenever you lose life, sacrifice a permanent for each 1 life you lost.
 timing=main
-oracle=You don't lose the game for having 0 or less life. Whenever you lose life, sacrifice a permanent for each 1 life you lost.
+oracle=You don't lose the game for having 0 or less life.\nWhenever you lose life, sacrifice a permanent for each 1 life you lost.

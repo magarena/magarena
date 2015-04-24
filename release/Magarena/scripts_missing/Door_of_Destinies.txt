@@ -8,4 +8,4 @@ ability=As SN enters the battlefield, choose a creature type.;\
         Whenever you cast a spell of the chosen type, put a charge counter on SN.;\
         Creatures you control of the chosen type get +1/+1 for each charge counter on SN.
 timing=main
-oracle=As Door of Destinies enters the battlefield, choose a creature type. Whenever you cast a spell of the chosen type, put a charge counter on Door of Destinies. Creatures you control of the chosen type get +1/+1 for each charge counter on Door of Destinies.
+oracle=As Door of Destinies enters the battlefield, choose a creature type.\nWhenever you cast a spell of the chosen type, put a charge counter on Door of Destinies.\nCreatures you control of the chosen type get +1/+1 for each charge counter on Door of Destinies.

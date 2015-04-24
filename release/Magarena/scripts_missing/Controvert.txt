@@ -6,4 +6,4 @@ type=Instant
 cost={2}{U}{U}
 effect=Counter target spell.~Recover {2}{U}{U}
 timing=removal
-oracle=Counter target spell. Recover {2}{U}{U}
+oracle=Counter target spell.\nRecover {2}{U}{U}

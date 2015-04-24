@@ -6,4 +6,4 @@ type=Instant
 cost={2}{B}
 effect=Target player sacrifices a creature.~Fuse
 timing=removal
-oracle=Target player sacrifices a creature. Fuse
+oracle=Target player sacrifices a creature.\nFuse

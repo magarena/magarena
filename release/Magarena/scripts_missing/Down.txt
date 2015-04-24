@@ -6,4 +6,4 @@ type=Sorcery
 cost={3}{B}
 effect=Target player discards two cards.~Fuse
 timing=main
-oracle=Target player discards two cards. Fuse
+oracle=Target player discards two cards.\nFuse

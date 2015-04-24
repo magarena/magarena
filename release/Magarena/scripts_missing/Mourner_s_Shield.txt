@@ -7,4 +7,4 @@ cost={4}
 ability=When SN enters the battlefield, you may exile target card from a graveyard.;\
         {2}, {T}: Prevent all damage that would be dealt this turn by a source of your choice that shares a color with the exiled card.
 timing=main
-oracle=Imprint — When Mourner's Shield enters the battlefield, you may exile target card from a graveyard. {2}, {T}: Prevent all damage that would be dealt this turn by a source of your choice that shares a color with the exiled card.
+oracle=Imprint — When Mourner's Shield enters the battlefield, you may exile target card from a graveyard.\n{2}, {T}: Prevent all damage that would be dealt this turn by a source of your choice that shares a color with the exiled card.

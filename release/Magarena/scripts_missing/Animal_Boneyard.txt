@@ -8,4 +8,4 @@ cost={2}{W}
 ability=Enchant land;\
         Enchanted land has "{T}, Sacrifice a creature: You gain life equal to the sacrificed creature's toughness."
 timing=main
-oracle=Enchant land. Enchanted land has "{T}, Sacrifice a creature: You gain life equal to the sacrificed creature's toughness."
+oracle=Enchant land\nEnchanted land has "{T}, Sacrifice a creature: You gain life equal to the sacrificed creature's toughness."

@@ -10,4 +10,4 @@ ability=Flash;\
         Flying; fear;\
         When SN enters the battlefield, return three creatures you control to their owner's hand.
 timing=main
-oracle=Flash. Flying; fear. When Dust Elemental enters the battlefield, return three creatures you control to their owner's hand.
+oracle=Flash\nFlying; fear\nWhen Dust Elemental enters the battlefield, return three creatures you control to their owner's hand.

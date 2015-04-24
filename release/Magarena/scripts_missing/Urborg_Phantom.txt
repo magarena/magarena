@@ -9,4 +9,4 @@ pt=3/1
 ability=SN can't block.;\
         {U}: Prevent all combat damage that would be dealt to and dealt by SN this turn.
 timing=main
-oracle=Urborg Phantom can't block. {U}: Prevent all combat damage that would be dealt to and dealt by Urborg Phantom this turn.
+oracle=Urborg Phantom can't block.\n{U}: Prevent all combat damage that would be dealt to and dealt by Urborg Phantom this turn.

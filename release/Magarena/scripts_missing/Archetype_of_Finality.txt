@@ -9,4 +9,4 @@ pt=2/3
 ability=Creatures you control have deathtouch.;\
         Creatures your opponents control lose deathtouch and can't have or gain deathtouch.
 timing=main
-oracle=Creatures you control have deathtouch. Creatures your opponents control lose deathtouch and can't have or gain deathtouch.
+oracle=Creatures you control have deathtouch.\nCreatures your opponents control lose deathtouch and can't have or gain deathtouch.

@@ -9,4 +9,4 @@ pt=2/2
 ability=SN can't be countered.;\
         {R/G}: Target spell can't be countered by spells or abilities.
 timing=main
-oracle=Vexing Shusher can't be countered. {R/G}: Target spell can't be countered by spells or abilities.
+oracle=Vexing Shusher can't be countered.\n{R/G}: Target spell can't be countered by spells or abilities.

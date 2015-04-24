@@ -6,4 +6,4 @@ type=Sorcery
 cost={1}{G}
 effect=Target creature you control fights target creature you don't control.~The creature you control gets +2/+2 until end of turn before it fights if you control a creature with power 4 or greater.
 timing=main
-oracle=Target creature you control fights target creature you don't control. Ferocious — The creature you control gets +2/+2 until end of turn before it fights if you control a creature with power 4 or greater.
+oracle=Target creature you control fights target creature you don't control.\nFerocious — The creature you control gets +2/+2 until end of turn before it fights if you control a creature with power 4 or greater.

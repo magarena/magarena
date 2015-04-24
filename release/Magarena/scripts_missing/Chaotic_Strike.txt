@@ -6,4 +6,4 @@ type=Instant
 cost={1}{R}
 effect=Cast SN only during combat after blockers are declared.~Flip a coin. If you win the flip, target creature gets +1/+1 until end of turn.~Draw a card.
 timing=removal
-oracle=Cast Chaotic Strike only during combat after blockers are declared. Flip a coin. If you win the flip, target creature gets +1/+1 until end of turn. Draw a card.
+oracle=Cast Chaotic Strike only during combat after blockers are declared.\nFlip a coin. If you win the flip, target creature gets +1/+1 until end of turn.\nDraw a card.

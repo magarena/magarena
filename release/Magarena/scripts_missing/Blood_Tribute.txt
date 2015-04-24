@@ -6,4 +6,4 @@ type=Sorcery
 cost={4}{B}{B}
 effect=Kicker—Tap an untapped Vampire you control.~Target opponent loses half his or her life, rounded up. If SN was kicked, you gain life equal to the life lost this way.
 timing=main
-oracle=Kicker—Tap an untapped Vampire you control. Target opponent loses half his or her life, rounded up. If Blood Tribute was kicked, you gain life equal to the life lost this way.
+oracle=Kicker—Tap an untapped Vampire you control.\nTarget opponent loses half his or her life, rounded up. If Blood Tribute was kicked, you gain life equal to the life lost this way.

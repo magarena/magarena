@@ -6,4 +6,4 @@ type=Instant
 cost={U}
 effect=Buyback {3}~Choose a counter on target permanent or suspended card. Remove that counter from that permanent or card or put another of those counters on it.
 timing=removal
-oracle=Buyback {3}. Choose a counter on target permanent or suspended card. Remove that counter from that permanent or card or put another of those counters on it.
+oracle=Buyback {3}\nChoose a counter on target permanent or suspended card. Remove that counter from that permanent or card or put another of those counters on it.

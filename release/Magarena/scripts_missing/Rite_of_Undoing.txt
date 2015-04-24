@@ -6,4 +6,4 @@ type=Instant
 cost={4}{U}
 effect=Delve~Return target nonland permanent you control and target nonland permanent you don't control to their owners' hands.
 timing=removal
-oracle=Delve. Return target nonland permanent you control and target nonland permanent you don't control to their owners' hands.
+oracle=Delve\nReturn target nonland permanent you control and target nonland permanent you don't control to their owners' hands.

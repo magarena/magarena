@@ -9,4 +9,4 @@ pt=2/3
 ability=Flying;\
         Creatures can't attack you unless their controller pays {2} for each creature he or she controls that's attacking you.
 timing=main
-oracle=Flying. Creatures can't attack you unless their controller pays {2} for each creature he or she controls that's attacking you.
+oracle=Flying\nCreatures can't attack you unless their controller pays {2} for each creature he or she controls that's attacking you.

@@ -6,4 +6,4 @@ type=Sorcery
 cost={4}{W}{W}{W}
 effect=Convoke~Destroy all nontoken creatures.
 timing=main
-oracle=Convoke. Destroy all nontoken creatures.
+oracle=Convoke\nDestroy all nontoken creatures.

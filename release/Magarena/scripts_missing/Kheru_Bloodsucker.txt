@@ -9,4 +9,4 @@ pt=2/2
 ability=Whenever a creature you control with toughness 4 or greater dies, each opponent loses 2 life and you gain 2 life.;\
         {2}{B}, Sacrifice another creature: Put a +1/+1 counter on SN.
 timing=main
-oracle=Whenever a creature you control with toughness 4 or greater dies, each opponent loses 2 life and you gain 2 life. {2}{B}, Sacrifice another creature: Put a +1/+1 counter on Kheru Bloodsucker.
+oracle=Whenever a creature you control with toughness 4 or greater dies, each opponent loses 2 life and you gain 2 life.\n{2}{B}, Sacrifice another creature: Put a +1/+1 counter on Kheru Bloodsucker.

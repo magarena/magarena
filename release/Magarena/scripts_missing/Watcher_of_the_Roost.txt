@@ -10,4 +10,4 @@ ability=Flying;\
         Morph—Reveal a white card in your hand.;\
         When SN is turned face up, you gain 2 life.
 timing=main
-oracle=Flying. Morph—Reveal a white card in your hand. When Watcher of the Roost is turned face up, you gain 2 life.
+oracle=Flying\nMorph—Reveal a white card in your hand.\nWhen Watcher of the Roost is turned face up, you gain 2 life.

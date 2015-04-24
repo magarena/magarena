@@ -8,4 +8,4 @@ cost={4}
 ability=Equipped creature gets +X/+X, where X is its converted mana cost.;\
         Equip {4}
 timing=main
-oracle=Equipped creature gets +X/+X, where X is its converted mana cost. Equip {4}
+oracle=Equipped creature gets +X/+X, where X is its converted mana cost.\nEquip {4}

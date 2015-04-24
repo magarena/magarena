@@ -9,4 +9,4 @@ pt=2/1
 ability=Flying;\
         {1}: SN becomes the creature type of your choice until end of turn.
 timing=main
-oracle=Flying. {1}: Mistform Dreamer becomes the creature type of your choice until end of turn.
+oracle=Flying\n{1}: Mistform Dreamer becomes the creature type of your choice until end of turn.

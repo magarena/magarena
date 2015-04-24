@@ -9,4 +9,4 @@ ability=Enchant creature;\
         Whenever enchanted creature attacks, if its power is 2 or less, it can't be blocked this turn.;\
         Forecast — {1}{U}, Reveal SN from your hand: Target creature with power 2 or less can't be blocked this turn.
 timing=main
-oracle=Enchant creature. Whenever enchanted creature attacks, if its power is 2 or less, it can't be blocked this turn. Forecast — {1}{U}, Reveal Writ of Passage from your hand: Target creature with power 2 or less can't be blocked this turn.
+oracle=Enchant creature\nWhenever enchanted creature attacks, if its power is 2 or less, it can't be blocked this turn.\nForecast — {1}{U}, Reveal Writ of Passage from your hand: Target creature with power 2 or less can't be blocked this turn.

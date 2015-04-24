@@ -6,4 +6,4 @@ type=Instant
 cost={4}{B}
 effect=Delve~Destroy target creature.
 timing=removal
-oracle=Delve. Destroy target creature.
+oracle=Delve\nDestroy target creature.

@@ -7,4 +7,4 @@ ability=SN enters the battlefield tapped.;\
         {T}: Put a storage counter on SN.;\
         {T}, Remove any number of storage counters from SN: Add {R} to your mana pool for each storage counter removed this way.
 timing=main
-oracle=Mercadian Bazaar enters the battlefield tapped. {T}: Put a storage counter on Mercadian Bazaar. {T}, Remove any number of storage counters from Mercadian Bazaar: Add {R} to your mana pool for each storage counter removed this way.
+oracle=Mercadian Bazaar enters the battlefield tapped.\n{T}: Put a storage counter on Mercadian Bazaar.\n{T}, Remove any number of storage counters from Mercadian Bazaar: Add {R} to your mana pool for each storage counter removed this way.

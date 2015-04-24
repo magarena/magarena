@@ -7,4 +7,4 @@ cost={1}{G}
 ability=When SN enters the battlefield, draw a card.;\
         Cards in graveyards can't be the targets of spells or abilities.
 timing=main
-oracle=When Ground Seal enters the battlefield, draw a card. Cards in graveyards can't be the targets of spells or abilities.
+oracle=When Ground Seal enters the battlefield, draw a card.\nCards in graveyards can't be the targets of spells or abilities.

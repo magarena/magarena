@@ -9,4 +9,4 @@ pt=2/2
 ability=Sunburst;\
         Remove a +1/+1 counter from SN: SN gains your choice of flying, first strike, or haste until end of turn.
 timing=main
-oracle=Sunburst. Remove a +1/+1 counter from Lunar Avenger: Lunar Avenger gains your choice of flying, first strike, or haste until end of turn.
+oracle=Sunburst\nRemove a +1/+1 counter from Lunar Avenger: Lunar Avenger gains your choice of flying, first strike, or haste until end of turn.

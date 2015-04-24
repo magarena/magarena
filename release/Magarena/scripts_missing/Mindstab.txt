@@ -6,4 +6,4 @@ type=Sorcery
 cost={5}{B}
 effect=Target player discards three cards.~Suspend 4—{B}
 timing=main
-oracle=Target player discards three cards. Suspend 4—{B}
+oracle=Target player discards three cards.\nSuspend 4—{B}

@@ -6,4 +6,4 @@ type=Instant
 cost={2}{G}
 effect=Convoke~Destroy target artifact or enchantment.
 timing=removal
-oracle=Convoke. Destroy target artifact or enchantment.
+oracle=Convoke\nDestroy target artifact or enchantment.

@@ -9,4 +9,4 @@ pt=4/4
 ability=Flying;\
         Cast SN only if you've cast another spell this turn.
 timing=main
-oracle=Flying. Cast Illusory Angel only if you've cast another spell this turn.
+oracle=Flying\nCast Illusory Angel only if you've cast another spell this turn.

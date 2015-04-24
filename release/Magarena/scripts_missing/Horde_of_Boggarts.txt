@@ -9,4 +9,4 @@ pt=*/*
 ability=SN's power and toughness are each equal to the number of red permanents you control.;\
         SN can't be blocked except by two or more creatures.
 timing=main
-oracle=Horde of Boggarts's power and toughness are each equal to the number of red permanents you control. Horde of Boggarts can't be blocked except by two or more creatures.
+oracle=Horde of Boggarts's power and toughness are each equal to the number of red permanents you control.\nHorde of Boggarts can't be blocked except by two or more creatures.

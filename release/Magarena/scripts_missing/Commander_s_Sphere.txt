@@ -7,4 +7,4 @@ cost={3}
 ability={T}: Add to your mana pool one mana of any color in your commander's color identity.;\
         Sacrifice SN: Draw a card.
 timing=main
-oracle={T}: Add to your mana pool one mana of any color in your commander's color identity. Sacrifice Commander's Sphere: Draw a card.
+oracle={T}: Add to your mana pool one mana of any color in your commander's color identity.\nSacrifice Commander's Sphere: Draw a card.

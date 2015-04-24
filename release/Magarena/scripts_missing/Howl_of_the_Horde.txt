@@ -6,4 +6,4 @@ type=Sorcery
 cost={2}{R}
 effect=When you cast your next instant or sorcery spell this turn, copy that spell. You may choose new targets for the copy.~If you attacked with a creature this turn, when you cast your next instant or sorcery spell this turn, copy that spell an additional time. You may choose new targets for the copy.
 timing=main
-oracle=When you cast your next instant or sorcery spell this turn, copy that spell. You may choose new targets for the copy. Raid — If you attacked with a creature this turn, when you cast your next instant or sorcery spell this turn, copy that spell an additional time. You may choose new targets for the copy.
+oracle=When you cast your next instant or sorcery spell this turn, copy that spell. You may choose new targets for the copy.\nRaid — If you attacked with a creature this turn, when you cast your next instant or sorcery spell this turn, copy that spell an additional time. You may choose new targets for the copy.

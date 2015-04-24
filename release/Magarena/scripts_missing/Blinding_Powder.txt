@@ -8,4 +8,4 @@ cost={1}
 ability=Equipped creature has "Unattach SN: Prevent all combat damage that would be dealt to this creature this turn.";\
         Equip {2}
 timing=main
-oracle=Equipped creature has "Unattach Blinding Powder: Prevent all combat damage that would be dealt to this creature this turn.". Equip {2}
+oracle=Equipped creature has "Unattach Blinding Powder: Prevent all combat damage that would be dealt to this creature this turn."\nEquip {2}

@@ -9,4 +9,4 @@ pt=2/4
 ability=Flying;\
         Whenever SN deals combat damage to a player, exile any number of target nonland permanents you control, then return those cards to the battlefield under their owner's control.
 timing=main
-oracle=Flying. Whenever Brago, King Eternal deals combat damage to a player, exile any number of target nonland permanents you control, then return those cards to the battlefield under their owner's control.
+oracle=Flying\nWhenever Brago, King Eternal deals combat damage to a player, exile any number of target nonland permanents you control, then return those cards to the battlefield under their owner's control.

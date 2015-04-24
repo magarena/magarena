@@ -7,4 +7,4 @@ cost={3}
 ability=As SN enters the battlefield, choose a creature type.;\
         Creature spells of the chosen type cost {2} less to cast.
 timing=main
-oracle=As Urza's Incubator enters the battlefield, choose a creature type. Creature spells of the chosen type cost {2} less to cast.
+oracle=As Urza's Incubator enters the battlefield, choose a creature type.\nCreature spells of the chosen type cost {2} less to cast.

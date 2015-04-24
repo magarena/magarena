@@ -9,4 +9,4 @@ pt=3/4
 ability=You may choose not to untap SN during your untap step.;\
         {T}: Gain control of target Dragon for as long as you control Hivis and Hivis remains tapped.
 timing=main
-oracle=You may choose not to untap Hivis of the Scale during your untap step. {T}: Gain control of target Dragon for as long as you control Hivis and Hivis remains tapped.
+oracle=You may choose not to untap Hivis of the Scale during your untap step.\n{T}: Gain control of target Dragon for as long as you control Hivis and Hivis remains tapped.

@@ -9,4 +9,4 @@ pt=2/2
 ability=Morph {0};\
         When SN is turned face up, it becomes the creature type of your choice.
 timing=main
-oracle=Morph {0}. When Proteus Machine is turned face up, it becomes the creature type of your choice.
+oracle=Morph {0}\nWhen Proteus Machine is turned face up, it becomes the creature type of your choice.

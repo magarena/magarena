@@ -9,4 +9,4 @@ pt=2/3
 ability=Haunt;\
         When SN enters the battlefield or the creature it haunts dies, destroy target enchantment.
 timing=main
-oracle=Haunt. When Absolver Thrull enters the battlefield or the creature it haunts dies, destroy target enchantment.
+oracle=Haunt\nWhen Absolver Thrull enters the battlefield or the creature it haunts dies, destroy target enchantment.

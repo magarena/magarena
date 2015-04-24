@@ -9,4 +9,4 @@ ability=Enchant creature;\
         When SN enters the battlefield, draw a card.;\
         Enchanted creature has "{2}{U}: Target creature becomes the color of your choice until end of turn."
 timing=main
-oracle=Enchant creature. When Sisay's Ingenuity enters the battlefield, draw a card. Enchanted creature has "{2}{U}: Target creature becomes the color of your choice until end of turn."
+oracle=Enchant creature\nWhen Sisay's Ingenuity enters the battlefield, draw a card.\nEnchanted creature has "{2}{U}: Target creature becomes the color of your choice until end of turn."

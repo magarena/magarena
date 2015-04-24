@@ -6,4 +6,4 @@ type=Instant
 cost={2}{W}
 effect=Choose one — (1) Tap two target creatures. (2) Creatures don't untap during target player's next untap step.~Entwine {1}
 timing=removal
-oracle=Choose one — • Tap two target creatures. • Creatures don't untap during target player's next untap step. Entwine {1}
+oracle=Choose one —\n• Tap two target creatures.\n• Creatures don't untap during target player's next untap step.\nEntwine {1}

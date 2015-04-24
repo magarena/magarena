@@ -6,4 +6,4 @@ type=Sorcery
 cost={3}{G}
 effect=As an additional cost to cast SN, sacrifice five lands.~Search your library for a land card of each basic land type and put them onto the battlefield. Then shuffle your library.
 timing=main
-oracle=As an additional cost to cast Gaea's Balance, sacrifice five lands. Search your library for a land card of each basic land type and put them onto the battlefield. Then shuffle your library.
+oracle=As an additional cost to cast Gaea's Balance, sacrifice five lands.\nSearch your library for a land card of each basic land type and put them onto the battlefield. Then shuffle your library.

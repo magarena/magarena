@@ -10,4 +10,4 @@ ability=Trample;\
         {3}: SN gains banding until end of turn.;\
         {3}: Attacking creatures banded with SN gain trample until end of turn.
 timing=main
-oracle=Trample. {3}: Urza's Engine gains banding until end of turn. {3}: Attacking creatures banded with Urza's Engine gain trample until end of turn.
+oracle=Trample\n{3}: Urza's Engine gains banding until end of turn.\n{3}: Attacking creatures banded with Urza's Engine gain trample until end of turn.

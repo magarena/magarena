@@ -6,4 +6,4 @@ type=Sorcery
 cost={9}{B}
 effect=Delve~Target player sacrifices two creatures.
 timing=main
-oracle=Delve. Target player sacrifices two creatures.
+oracle=Delve\nTarget player sacrifices two creatures.

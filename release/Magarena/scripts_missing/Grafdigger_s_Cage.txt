@@ -7,4 +7,4 @@ cost={1}
 ability=Creature cards can't enter the battlefield from graveyards or libraries.;\
         Players can't cast cards in graveyards or libraries.
 timing=main
-oracle=Creature cards can't enter the battlefield from graveyards or libraries. Players can't cast cards in graveyards or libraries.
+oracle=Creature cards can't enter the battlefield from graveyards or libraries.\nPlayers can't cast cards in graveyards or libraries.

@@ -9,4 +9,4 @@ pt=2/1
 ability=Ninjutsu {B};\
         Whenever SN deals combat damage to a player, exile up to two target cards from that player's graveyard.
 timing=main
-oracle=Ninjutsu {B}. Whenever Skullsnatcher deals combat damage to a player, exile up to two target cards from that player's graveyard.
+oracle=Ninjutsu {B}\nWhenever Skullsnatcher deals combat damage to a player, exile up to two target cards from that player's graveyard.

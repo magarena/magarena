@@ -9,4 +9,4 @@ pt=3/2
 ability=Flying;\
         Discard a card: Add {B} to your mana pool.
 timing=main
-oracle=Flying. Discard a card: Add {B} to your mana pool.
+oracle=Flying\nDiscard a card: Add {B} to your mana pool.

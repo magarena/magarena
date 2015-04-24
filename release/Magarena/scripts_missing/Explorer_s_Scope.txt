@@ -8,4 +8,4 @@ cost={1}
 ability=Whenever equipped creature attacks, look at the top card of your library. If it's a land card, you may put it onto the battlefield tapped.;\
         Equip {1}
 timing=main
-oracle=Whenever equipped creature attacks, look at the top card of your library. If it's a land card, you may put it onto the battlefield tapped. Equip {1}
+oracle=Whenever equipped creature attacks, look at the top card of your library. If it's a land card, you may put it onto the battlefield tapped.\nEquip {1}

@@ -10,4 +10,4 @@ ability=Flying;\
         Whenever SN deals combat damage to a player, that player exiles the top card of his or her library.;\
         You may play cards exiled with SN.
 timing=main
-oracle=Flying. Whenever Nightveil Specter deals combat damage to a player, that player exiles the top card of his or her library. You may play cards exiled with Nightveil Specter.
+oracle=Flying\nWhenever Nightveil Specter deals combat damage to a player, that player exiles the top card of his or her library.\nYou may play cards exiled with Nightveil Specter.

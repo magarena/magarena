@@ -10,4 +10,4 @@ ability=Flying;\
         When SN enters the battlefield, untap all creatures you control.;\
         Forecast — Tap two untapped white and/or blue creatures you control, Reveal SN from your hand: Draw a card.
 timing=main
-oracle=Flying. When Sky Hussar enters the battlefield, untap all creatures you control. Forecast — Tap two untapped white and/or blue creatures you control, Reveal Sky Hussar from your hand: Draw a card.
+oracle=Flying\nWhen Sky Hussar enters the battlefield, untap all creatures you control.\nForecast — Tap two untapped white and/or blue creatures you control, Reveal Sky Hussar from your hand: Draw a card.

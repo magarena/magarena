@@ -9,4 +9,4 @@ pt=4/4
 ability=SN can't attack unless a creature with greater power also attacks.;\
         SN can't block unless a creature with greater power also blocks.
 timing=main
-oracle=Okk can't attack unless a creature with greater power also attacks. Okk can't block unless a creature with greater power also blocks.
+oracle=Okk can't attack unless a creature with greater power also attacks.\nOkk can't block unless a creature with greater power also blocks.

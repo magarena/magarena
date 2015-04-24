@@ -9,4 +9,4 @@ pt=1/3
 ability=Protection from red;\
         {W}, Sacrifice SN: The next time a red source of your choice would deal damage this turn, prevent that damage.
 timing=main
-oracle=Protection from red. {W}, Sacrifice Pilgrim of Justice: The next time a red source of your choice would deal damage this turn, prevent that damage.
+oracle=Protection from red\n{W}, Sacrifice Pilgrim of Justice: The next time a red source of your choice would deal damage this turn, prevent that damage.

@@ -8,4 +8,4 @@ ability=SN enters the battlefield with two intervention counters on it.;\
         At the beginning of your upkeep, remove an intervention counter from SN.;\
         When you remove the last intervention counter from SN, the game is a draw.
 timing=main
-oracle=Divine Intervention enters the battlefield with two intervention counters on it. At the beginning of your upkeep, remove an intervention counter from Divine Intervention. When you remove the last intervention counter from Divine Intervention, the game is a draw.
+oracle=Divine Intervention enters the battlefield with two intervention counters on it.\nAt the beginning of your upkeep, remove an intervention counter from Divine Intervention.\nWhen you remove the last intervention counter from Divine Intervention, the game is a draw.

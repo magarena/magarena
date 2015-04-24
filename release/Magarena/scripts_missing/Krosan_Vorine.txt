@@ -9,4 +9,4 @@ pt=3/2
 ability=Provoke;\
         SN can't be blocked by more than one creature.
 timing=main
-oracle=Provoke. Krosan Vorine can't be blocked by more than one creature.
+oracle=Provoke\nKrosan Vorine can't be blocked by more than one creature.

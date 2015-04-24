@@ -10,4 +10,4 @@ ability=Trample, lifelink;\
         Spells you cast that target SN cost {2} less to cast.;\
         Spells your opponents cast that target SN cost {2} more to cast.
 timing=main
-oracle=Trample, lifelink. Spells you cast that target Elderwood Scion cost {2} less to cast. Spells your opponents cast that target Elderwood Scion cost {2} more to cast.
+oracle=Trample, lifelink\nSpells you cast that target Elderwood Scion cost {2} less to cast.\nSpells your opponents cast that target Elderwood Scion cost {2} more to cast.

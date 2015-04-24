@@ -7,4 +7,4 @@ cost={3}{B}{B}
 ability=As SN enters the battlefield, choose a creature type.;\
         Creature cards you own that aren't on the battlefield, creature spells you control, and creatures you control are the chosen type.
 timing=main
-oracle=As Conspiracy enters the battlefield, choose a creature type. Creature cards you own that aren't on the battlefield, creature spells you control, and creatures you control are the chosen type.
+oracle=As Conspiracy enters the battlefield, choose a creature type.\nCreature cards you own that aren't on the battlefield, creature spells you control, and creatures you control are the chosen type.

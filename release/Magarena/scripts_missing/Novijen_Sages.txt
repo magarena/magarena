@@ -9,4 +9,4 @@ pt=0/0
 ability=Graft 4;\
         {1}, Remove two +1/+1 counters from among creatures you control: Draw a card.
 timing=main
-oracle=Graft 4. {1}, Remove two +1/+1 counters from among creatures you control: Draw a card.
+oracle=Graft 4\n{1}, Remove two +1/+1 counters from among creatures you control: Draw a card.

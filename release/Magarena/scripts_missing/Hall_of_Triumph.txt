@@ -7,4 +7,4 @@ cost={3}
 ability=As SN enters the battlefield, choose a color.;\
         Creatures you control of the chosen color get +1/+1.
 timing=main
-oracle=As Hall of Triumph enters the battlefield, choose a color. Creatures you control of the chosen color get +1/+1.
+oracle=As Hall of Triumph enters the battlefield, choose a color.\nCreatures you control of the chosen color get +1/+1.

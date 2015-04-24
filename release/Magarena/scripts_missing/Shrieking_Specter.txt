@@ -9,4 +9,4 @@ pt=2/2
 ability=Flying;\
         Whenever SN attacks, defending player discards a card.
 timing=main
-oracle=Flying. Whenever Shrieking Specter attacks, defending player discards a card.
+oracle=Flying\nWhenever Shrieking Specter attacks, defending player discards a card.

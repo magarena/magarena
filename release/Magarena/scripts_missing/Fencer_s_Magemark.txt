@@ -8,4 +8,4 @@ cost={2}{R}
 ability=Enchant creature;\
         Creatures you control that are enchanted get +1/+1 and have first strike.
 timing=main
-oracle=Enchant creature. Creatures you control that are enchanted get +1/+1 and have first strike.
+oracle=Enchant creature\nCreatures you control that are enchanted get +1/+1 and have first strike.

@@ -9,4 +9,4 @@ pt=2/2
 ability=Forestwalk;\
         {2}{G}, {T}: Unless an opponent pays {2}, gain control of target artifact for as long as SN remains on the battlefield.
 timing=main
-oracle=Forestwalk. {2}{G}, {T}: Unless an opponent pays {2}, gain control of target artifact for as long as Scarwood Bandits remains on the battlefield.
+oracle=Forestwalk\n{2}{G}, {T}: Unless an opponent pays {2}, gain control of target artifact for as long as Scarwood Bandits remains on the battlefield.

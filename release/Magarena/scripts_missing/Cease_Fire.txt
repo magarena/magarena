@@ -6,4 +6,4 @@ type=Instant
 cost={2}{W}
 effect=Target player can't cast creature spells this turn.~Draw a card.
 timing=removal
-oracle=Target player can't cast creature spells this turn. Draw a card.
+oracle=Target player can't cast creature spells this turn.\nDraw a card.

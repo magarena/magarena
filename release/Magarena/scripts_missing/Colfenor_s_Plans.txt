@@ -9,4 +9,4 @@ ability=When SN enters the battlefield, exile the top seven cards of your librar
         Skip your draw step.;\
         You can't cast more than one spell each turn.
 timing=main
-oracle=When Colfenor's Plans enters the battlefield, exile the top seven cards of your library face down. You may look at and play cards exiled with Colfenor's Plans. Skip your draw step. You can't cast more than one spell each turn.
+oracle=When Colfenor's Plans enters the battlefield, exile the top seven cards of your library face down.\nYou may look at and play cards exiled with Colfenor's Plans.\nSkip your draw step.\nYou can't cast more than one spell each turn.

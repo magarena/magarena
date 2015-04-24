@@ -6,4 +6,4 @@ type=Legendary,Land
 ability=SN enters the battlefield tapped.;\
         {T}, Pay 3 life: Add {1} to your mana pool. If that mana is spent on a creature spell, it gains haste.
 timing=main
-oracle=Hall of the Bandit Lord enters the battlefield tapped. {T}, Pay 3 life: Add {1} to your mana pool. If that mana is spent on a creature spell, it gains haste.
+oracle=Hall of the Bandit Lord enters the battlefield tapped.\n{T}, Pay 3 life: Add {1} to your mana pool. If that mana is spent on a creature spell, it gains haste.

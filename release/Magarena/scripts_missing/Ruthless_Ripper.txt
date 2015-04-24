@@ -10,4 +10,4 @@ ability=Deathtouch;\
         Morph—Reveal a black card in your hand.;\
         When SN is turned face up, target player loses 2 life.
 timing=main
-oracle=Deathtouch. Morph—Reveal a black card in your hand. When Ruthless Ripper is turned face up, target player loses 2 life.
+oracle=Deathtouch\nMorph—Reveal a black card in your hand.\nWhen Ruthless Ripper is turned face up, target player loses 2 life.

@@ -9,4 +9,4 @@ pt=5/5
 ability=Goblin offering;\
         Whenever SN attacks, creatures you control get +2/+0 until end of turn.
 timing=main
-oracle=Goblin offering. Whenever Patron of the Akki attacks, creatures you control get +2/+0 until end of turn.
+oracle=Goblin offering\nWhenever Patron of the Akki attacks, creatures you control get +2/+0 until end of turn.

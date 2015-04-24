@@ -9,4 +9,4 @@ ability=+1: Look at the top card of your library. If it's a noncreature, nonland
         −2: When you cast your next instant or sorcery spell from your hand this turn, it gains rebound.;\
         −9: You get an emblem with "Your opponents can't cast noncreature spells."
 timing=main
-oracle=+1: Look at the top card of your library. If it's a noncreature, nonland card, you may reveal it and put it into your hand. −2: When you cast your next instant or sorcery spell from your hand this turn, it gains rebound. −9: You get an emblem with "Your opponents can't cast noncreature spells."
+oracle=+1: Look at the top card of your library. If it's a noncreature, nonland card, you may reveal it and put it into your hand.\n−2: When you cast your next instant or sorcery spell from your hand this turn, it gains rebound.\n−9: You get an emblem with "Your opponents can't cast noncreature spells."

@@ -9,4 +9,4 @@ pt=2/2
 ability=Whenever SN attacks, it gets +2/+0 until end of turn.;\
         When SN dies, target player loses life equal to its power.
 timing=main
-oracle=Whenever Mortis Dogs attacks, it gets +2/+0 until end of turn. When Mortis Dogs dies, target player loses life equal to its power.
+oracle=Whenever Mortis Dogs attacks, it gets +2/+0 until end of turn.\nWhen Mortis Dogs dies, target player loses life equal to its power.

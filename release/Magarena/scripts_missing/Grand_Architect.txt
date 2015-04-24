@@ -10,4 +10,4 @@ ability=Other blue creatures you control get +1/+1.;\
         {U}: Target artifact creature becomes blue until end of turn.;\
         Tap an untapped blue creature you control: Add {2} to your mana pool. Spend this mana only to cast artifact spells or activate abilities of artifacts.
 timing=main
-oracle=Other blue creatures you control get +1/+1. {U}: Target artifact creature becomes blue until end of turn. Tap an untapped blue creature you control: Add {2} to your mana pool. Spend this mana only to cast artifact spells or activate abilities of artifacts.
+oracle=Other blue creatures you control get +1/+1.\n{U}: Target artifact creature becomes blue until end of turn.\nTap an untapped blue creature you control: Add {2} to your mana pool. Spend this mana only to cast artifact spells or activate abilities of artifacts.

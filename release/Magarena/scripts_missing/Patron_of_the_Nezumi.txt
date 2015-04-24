@@ -9,4 +9,4 @@ pt=6/6
 ability=Rat offering;\
         Whenever a permanent is put into an opponent's graveyard, that player loses 1 life.
 timing=main
-oracle=Rat offering. Whenever a permanent is put into an opponent's graveyard, that player loses 1 life.
+oracle=Rat offering\nWhenever a permanent is put into an opponent's graveyard, that player loses 1 life.

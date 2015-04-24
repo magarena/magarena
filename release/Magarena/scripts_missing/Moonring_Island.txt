@@ -7,4 +7,4 @@ subtype=Island
 ability=SN enters the battlefield tapped.;\
         {U}, {T}: Look at the top card of target player's library. Activate this ability only if you control two or more blue permanents.
 timing=main
-oracle=Moonring Island enters the battlefield tapped. {U}, {T}: Look at the top card of target player's library. Activate this ability only if you control two or more blue permanents.
+oracle=Moonring Island enters the battlefield tapped.\n{U}, {T}: Look at the top card of target player's library. Activate this ability only if you control two or more blue permanents.

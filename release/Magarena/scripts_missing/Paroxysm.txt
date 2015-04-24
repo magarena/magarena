@@ -8,4 +8,4 @@ cost={1}{R}
 ability=Enchant creature;\
         At the beginning of the upkeep of enchanted creature's controller, that player reveals the top card of his or her library. If that card is a land card, destroy that creature. Otherwise, it gets +3/+3 until end of turn.
 timing=main
-oracle=Enchant creature. At the beginning of the upkeep of enchanted creature's controller, that player reveals the top card of his or her library. If that card is a land card, destroy that creature. Otherwise, it gets +3/+3 until end of turn.
+oracle=Enchant creature\nAt the beginning of the upkeep of enchanted creature's controller, that player reveals the top card of his or her library. If that card is a land card, destroy that creature. Otherwise, it gets +3/+3 until end of turn.

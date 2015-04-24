@@ -7,4 +7,4 @@ cost={1}{W}{W}
 ability=As SN enters the battlefield, choose a color.;\
         {W}: The next time a source of your choice of the chosen color would deal damage to you this turn, prevent that damage.
 timing=main
-oracle=As Story Circle enters the battlefield, choose a color. {W}: The next time a source of your choice of the chosen color would deal damage to you this turn, prevent that damage.
+oracle=As Story Circle enters the battlefield, choose a color.\n{W}: The next time a source of your choice of the chosen color would deal damage to you this turn, prevent that damage.

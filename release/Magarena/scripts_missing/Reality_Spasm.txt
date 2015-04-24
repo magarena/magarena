@@ -6,4 +6,4 @@ type=Instant
 cost={X}{U}{U}
 effect=Choose one — (1) Tap X target permanents. (2) Untap X target permanents.
 timing=removal
-oracle=Choose one — • Tap X target permanents. • Untap X target permanents.
+oracle=Choose one —\n• Tap X target permanents.\n• Untap X target permanents.

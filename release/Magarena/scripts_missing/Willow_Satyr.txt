@@ -9,4 +9,4 @@ pt=1/1
 ability=You may choose not to untap SN during your untap step.;\
         {T}: Gain control of target legendary creature for as long as you control SN and SN remains tapped.
 timing=main
-oracle=You may choose not to untap Willow Satyr during your untap step. {T}: Gain control of target legendary creature for as long as you control Willow Satyr and Willow Satyr remains tapped.
+oracle=You may choose not to untap Willow Satyr during your untap step.\n{T}: Gain control of target legendary creature for as long as you control Willow Satyr and Willow Satyr remains tapped.

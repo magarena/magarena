@@ -7,4 +7,4 @@ cost={5}
 ability=Sunburst;\
         {2}, Sacrifice SN: SN deals damage equal to the number of charge counters on it to target creature or player.
 timing=main
-oracle=Sunburst. {2}, Sacrifice Heliophial: Heliophial deals damage equal to the number of charge counters on it to target creature or player.
+oracle=Sunburst\n{2}, Sacrifice Heliophial: Heliophial deals damage equal to the number of charge counters on it to target creature or player.

@@ -9,4 +9,4 @@ pt=2/2
 ability=Flash;\
         You may cast artifact cards as though they had flash.
 timing=main
-oracle=Flash. You may cast artifact cards as though they had flash.
+oracle=Flash\nYou may cast artifact cards as though they had flash.

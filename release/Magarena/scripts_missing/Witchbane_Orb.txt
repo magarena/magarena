@@ -7,4 +7,4 @@ cost={4}
 ability=When SN enters the battlefield, destroy all Curses attached to you.;\
         You have hexproof.
 timing=main
-oracle=When Witchbane Orb enters the battlefield, destroy all Curses attached to you. You have hexproof.
+oracle=When Witchbane Orb enters the battlefield, destroy all Curses attached to you.\nYou have hexproof.

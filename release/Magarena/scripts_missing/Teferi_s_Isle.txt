@@ -7,4 +7,4 @@ ability=Phasing;\
         SN enters the battlefield tapped.;\
         {T}: Add {U}{U} to your mana pool.
 timing=main
-oracle=Phasing. Teferi's Isle enters the battlefield tapped. {T}: Add {U}{U} to your mana pool.
+oracle=Phasing\nTeferi's Isle enters the battlefield tapped.\n{T}: Add {U}{U} to your mana pool.

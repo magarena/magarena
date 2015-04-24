@@ -9,4 +9,4 @@ pt=*/*
 ability=As SN enters the battlefield, turn all other nontoken creatures face down.;\
         SN's power and toughness are each equal to the number of face-down creatures on the battlefield.
 timing=main
-oracle=As Ixidron enters the battlefield, turn all other nontoken creatures face down. Ixidron's power and toughness are each equal to the number of face-down creatures on the battlefield.
+oracle=As Ixidron enters the battlefield, turn all other nontoken creatures face down.\nIxidron's power and toughness are each equal to the number of face-down creatures on the battlefield.

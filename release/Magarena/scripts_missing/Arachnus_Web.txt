@@ -9,4 +9,4 @@ ability=Enchant creature;\
         Enchanted creature can't attack or block, and its activated abilities can't be activated.;\
         At the beginning of the end step, if enchanted creature's power is 4 or greater, destroy SN.
 timing=main
-oracle=Enchant creature. Enchanted creature can't attack or block, and its activated abilities can't be activated. At the beginning of the end step, if enchanted creature's power is 4 or greater, destroy Arachnus Web.
+oracle=Enchant creature\nEnchanted creature can't attack or block, and its activated abilities can't be activated.\nAt the beginning of the end step, if enchanted creature's power is 4 or greater, destroy Arachnus Web.

@@ -7,4 +7,4 @@ cost={4}
 ability=As SN enters the battlefield, choose an opponent.;\
         The chosen player's maximum hand size is four.
 timing=main
-oracle=As Cursed Rack enters the battlefield, choose an opponent. The chosen player's maximum hand size is four.
+oracle=As Cursed Rack enters the battlefield, choose an opponent.\nThe chosen player's maximum hand size is four.

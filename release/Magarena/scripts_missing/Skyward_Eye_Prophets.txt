@@ -9,4 +9,4 @@ pt=3/3
 ability=Vigilance;\
         {T}: Reveal the top card of your library. If it's a land card, put it onto the battlefield. Otherwise, put it into your hand.
 timing=main
-oracle=Vigilance. {T}: Reveal the top card of your library. If it's a land card, put it onto the battlefield. Otherwise, put it into your hand.
+oracle=Vigilance\n{T}: Reveal the top card of your library. If it's a land card, put it onto the battlefield. Otherwise, put it into your hand.

@@ -6,4 +6,4 @@ type=Sorcery
 cost={X}{1}{B}
 effect=As an additional cost to cast SN, discard X cards.~Look at target opponent's hand and choose X cards from it. That player discards those cards.
 timing=main
-oracle=As an additional cost to cast Abandon Hope, discard X cards. Look at target opponent's hand and choose X cards from it. That player discards those cards.
+oracle=As an additional cost to cast Abandon Hope, discard X cards.\nLook at target opponent's hand and choose X cards from it. That player discards those cards.

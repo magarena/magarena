@@ -6,4 +6,4 @@ type=Instant
 cost={1}{R}{R}{R}
 effect=SN deals 4 damage divided as you choose among any number of target creatures and/or players.~Madness {1}{R}{R}
 timing=removal
-oracle=Violent Eruption deals 4 damage divided as you choose among any number of target creatures and/or players. Madness {1}{R}{R}
+oracle=Violent Eruption deals 4 damage divided as you choose among any number of target creatures and/or players.\nMadness {1}{R}{R}

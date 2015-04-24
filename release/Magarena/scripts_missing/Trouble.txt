@@ -6,4 +6,4 @@ type=Sorcery
 cost={2}{R}
 effect=SN deals damage to target player equal to the number of cards in that player's hand.~Fuse
 timing=main
-oracle=Trouble deals damage to target player equal to the number of cards in that player's hand. Fuse
+oracle=Trouble deals damage to target player equal to the number of cards in that player's hand.\nFuse

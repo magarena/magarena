@@ -6,4 +6,4 @@ type=Sorcery
 cost={U/B}
 effect=Target player puts the top four cards of his or her library into his or her graveyard.~Conspire
 timing=main
-oracle=Target player puts the top four cards of his or her library into his or her graveyard. Conspire
+oracle=Target player puts the top four cards of his or her library into his or her graveyard.\nConspire

@@ -9,4 +9,4 @@ pt=1/1
 ability=Fear;\
         {2}{U}{B}: Each unblocked creature has base power and toughness 4/1 until end of turn.
 timing=main
-oracle=Fear. {2}{U}{B}: Each unblocked creature has base power and toughness 4/1 until end of turn.
+oracle=Fear\n{2}{U}{B}: Each unblocked creature has base power and toughness 4/1 until end of turn.

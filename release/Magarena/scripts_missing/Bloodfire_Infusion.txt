@@ -8,4 +8,4 @@ cost={2}{R}
 ability=Enchant creature you control;\
         {R}, Sacrifice enchanted creature: SN deals damage equal to the sacrificed creature's power to each creature.
 timing=main
-oracle=Enchant creature you control. {R}, Sacrifice enchanted creature: Bloodfire Infusion deals damage equal to the sacrificed creature's power to each creature.
+oracle=Enchant creature you control\n{R}, Sacrifice enchanted creature: Bloodfire Infusion deals damage equal to the sacrificed creature's power to each creature.

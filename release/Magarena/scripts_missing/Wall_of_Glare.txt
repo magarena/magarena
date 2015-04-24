@@ -9,4 +9,4 @@ pt=0/5
 ability=Defender;\
         SN can block any number of creatures.
 timing=main
-oracle=Defender. Wall of Glare can block any number of creatures.
+oracle=Defender\nWall of Glare can block any number of creatures.

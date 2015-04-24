@@ -6,4 +6,4 @@ type=Sorcery
 cost={3}{R}
 effect=SN deals 3 damage to target creature or player.~Conspire
 timing=main
-oracle=Burn Trail deals 3 damage to target creature or player. Conspire
+oracle=Burn Trail deals 3 damage to target creature or player.\nConspire

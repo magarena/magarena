@@ -9,4 +9,4 @@ pt=2/2
 ability=Whenever you sacrifice a black creature, you may pay 2 life. If you do, each other player sacrifices a creature.;\
         Whenever you sacrifice a green creature, you may gain 2 life.
 timing=main
-oracle=Whenever you sacrifice a black creature, you may pay 2 life. If you do, each other player sacrifices a creature. Whenever you sacrifice a green creature, you may gain 2 life.
+oracle=Whenever you sacrifice a black creature, you may pay 2 life. If you do, each other player sacrifices a creature.\nWhenever you sacrifice a green creature, you may gain 2 life.

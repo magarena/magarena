@@ -9,4 +9,4 @@ pt=2/5
 ability=Reach;\
         SN can block an additional creature.
 timing=main
-oracle=Reach. Selesnya Sagittars can block an additional creature.
+oracle=Reach\nSelesnya Sagittars can block an additional creature.

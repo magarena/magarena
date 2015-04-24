@@ -9,4 +9,4 @@ pt=1/1
 ability=Flying;\
         When SN enters the battlefield, look at the top four cards of your library, then put them back in any order.
 timing=main
-oracle=Flying. When Spire Owl enters the battlefield, look at the top four cards of your library, then put them back in any order.
+oracle=Flying\nWhen Spire Owl enters the battlefield, look at the top four cards of your library, then put them back in any order.

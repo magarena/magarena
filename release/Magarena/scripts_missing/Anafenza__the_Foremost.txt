@@ -9,4 +9,4 @@ pt=4/4
 ability=Whenever SN attacks, put a +1/+1 counter on another target tapped creature you control.;\
         If a creature card would be put into an opponent's graveyard from anywhere, exile it instead.
 timing=main
-oracle=Whenever Anafenza, the Foremost attacks, put a +1/+1 counter on another target tapped creature you control. If a creature card would be put into an opponent's graveyard from anywhere, exile it instead.
+oracle=Whenever Anafenza, the Foremost attacks, put a +1/+1 counter on another target tapped creature you control.\nIf a creature card would be put into an opponent's graveyard from anywhere, exile it instead.

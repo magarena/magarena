@@ -9,4 +9,4 @@ pt=1/1
 ability=Protection from black;\
         At the beginning of each end step, if SN dealt damage to an opponent this turn, put a +1/+1 counter on it.
 timing=main
-oracle=Protection from black. At the beginning of each end step, if Whirling Dervish dealt damage to an opponent this turn, put a +1/+1 counter on it.
+oracle=Protection from black\nAt the beginning of each end step, if Whirling Dervish dealt damage to an opponent this turn, put a +1/+1 counter on it.

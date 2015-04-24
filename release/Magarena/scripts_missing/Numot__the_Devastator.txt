@@ -9,4 +9,4 @@ pt=6/6
 ability=Flying;\
         Whenever SN deals combat damage to a player, you may pay {2}{R}. If you do, destroy up to two target lands.
 timing=main
-oracle=Flying. Whenever Numot, the Devastator deals combat damage to a player, you may pay {2}{R}. If you do, destroy up to two target lands.
+oracle=Flying\nWhenever Numot, the Devastator deals combat damage to a player, you may pay {2}{R}. If you do, destroy up to two target lands.

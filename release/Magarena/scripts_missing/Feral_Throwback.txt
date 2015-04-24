@@ -9,4 +9,4 @@ pt=3/3
 ability=Amplify 2;\
         Provoke
 timing=main
-oracle=Amplify 2. Provoke
+oracle=Amplify 2\nProvoke

@@ -8,4 +8,4 @@ cost={3}
 ability=Equipped creature gets +1/+1 for each creature you control.;\
         Equip {4}
 timing=main
-oracle=Equipped creature gets +1/+1 for each creature you control. Equip {4}
+oracle=Equipped creature gets +1/+1 for each creature you control.\nEquip {4}

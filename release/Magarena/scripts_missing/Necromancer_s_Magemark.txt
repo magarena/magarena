@@ -9,4 +9,4 @@ ability=Enchant creature;\
         Creatures you control that are enchanted get +1/+1.;\
         If a creature you control that's enchanted would die, return it to its owner's hand instead.
 timing=main
-oracle=Enchant creature. Creatures you control that are enchanted get +1/+1. If a creature you control that's enchanted would die, return it to its owner's hand instead.
+oracle=Enchant creature\nCreatures you control that are enchanted get +1/+1.\nIf a creature you control that's enchanted would die, return it to its owner's hand instead.

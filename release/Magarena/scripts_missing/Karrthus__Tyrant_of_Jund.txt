@@ -10,4 +10,4 @@ ability=Flying, haste;\
         When SN enters the battlefield, gain control of all Dragons, then untap all Dragons.;\
         Other Dragon creatures you control have haste.
 timing=main
-oracle=Flying, haste. When Karrthus, Tyrant of Jund enters the battlefield, gain control of all Dragons, then untap all Dragons. Other Dragon creatures you control have haste.
+oracle=Flying, haste\nWhen Karrthus, Tyrant of Jund enters the battlefield, gain control of all Dragons, then untap all Dragons.\nOther Dragon creatures you control have haste.

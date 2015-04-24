@@ -6,4 +6,4 @@ type=Instant
 cost={3}{U}
 effect=Any number of target opponents each discards his or her hand, then draws seven cards.~Draw a card.
 timing=removal
-oracle=Any number of target opponents each discards his or her hand, then draws seven cards. Draw a card.
+oracle=Any number of target opponents each discards his or her hand, then draws seven cards.\nDraw a card.

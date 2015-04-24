@@ -8,4 +8,4 @@ ability=If SN is in your opening hand, you may begin the game with it on the bat
         Players can't gain life.;\
         Damage can't be prevented.
 timing=main
-oracle=If Leyline of Punishment is in your opening hand, you may begin the game with it on the battlefield. Players can't gain life. Damage can't be prevented.
+oracle=If Leyline of Punishment is in your opening hand, you may begin the game with it on the battlefield.\nPlayers can't gain life.\nDamage can't be prevented.

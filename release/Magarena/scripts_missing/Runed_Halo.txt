@@ -7,4 +7,4 @@ cost={W}{W}
 ability=As SN enters the battlefield, name a card.;\
         You have protection from the chosen name.
 timing=main
-oracle=As Runed Halo enters the battlefield, name a card. You have protection from the chosen name.
+oracle=As Runed Halo enters the battlefield, name a card.\nYou have protection from the chosen name.

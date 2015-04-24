@@ -10,4 +10,4 @@ ability=First strike;\
         Creatures with plainswalk can be blocked as though they didn't have plainswalk.;\
         Creatures with forestwalk can be blocked as though they didn't have forestwalk.
 timing=main
-oracle=First strike. Creatures with plainswalk can be blocked as though they didn't have plainswalk. Creatures with forestwalk can be blocked as though they didn't have forestwalk.
+oracle=First strike\nCreatures with plainswalk can be blocked as though they didn't have plainswalk.\nCreatures with forestwalk can be blocked as though they didn't have forestwalk.

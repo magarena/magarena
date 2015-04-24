@@ -7,4 +7,4 @@ cost={2}{B}{B}
 ability=As SN enters the battlefield, choose a color.;\
         Whenever a player casts a spell of the chosen color, that player loses 1 life.
 timing=main
-oracle=As Curse of Wizardry enters the battlefield, choose a color. Whenever a player casts a spell of the chosen color, that player loses 1 life.
+oracle=As Curse of Wizardry enters the battlefield, choose a color.\nWhenever a player casts a spell of the chosen color, that player loses 1 life.

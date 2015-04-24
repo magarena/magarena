@@ -9,4 +9,4 @@ pt=2/2
 ability=Black spells you cast cost {B} more to cast.;\
         {B}: SN gets +1/+1 until end of turn.
 timing=main
-oracle=Black spells you cast cost {B} more to cast. {B}: Andradite Leech gets +1/+1 until end of turn.
+oracle=Black spells you cast cost {B} more to cast.\n{B}: Andradite Leech gets +1/+1 until end of turn.

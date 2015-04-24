@@ -9,4 +9,4 @@ pt=2/1
 ability=Flying;\
         {8}: Tap all creatures target player controls.
 timing=main
-oracle=Flying. {8}: Tap all creatures target player controls.
+oracle=Flying\n{8}: Tap all creatures target player controls.

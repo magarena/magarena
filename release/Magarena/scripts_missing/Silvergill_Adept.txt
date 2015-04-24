@@ -9,4 +9,4 @@ pt=2/1
 ability=As an additional cost to cast SN, reveal a Merfolk card from your hand or pay {3}.;\
         When SN enters the battlefield, draw a card.
 timing=main
-oracle=As an additional cost to cast Silvergill Adept, reveal a Merfolk card from your hand or pay {3}. When Silvergill Adept enters the battlefield, draw a card.
+oracle=As an additional cost to cast Silvergill Adept, reveal a Merfolk card from your hand or pay {3}.\nWhen Silvergill Adept enters the battlefield, draw a card.

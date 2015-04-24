@@ -7,4 +7,4 @@ cost={G}
 ability=Face-down creature spells you cast cost {1} less to cast.;\
         {1}{G}: Turn SN face down.
 timing=main
-oracle=Face-down creature spells you cast cost {1} less to cast. {1}{G}: Turn Obscuring Æther face down.
+oracle=Face-down creature spells you cast cost {1} less to cast.\n{1}{G}: Turn Obscuring Æther face down.

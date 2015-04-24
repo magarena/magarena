@@ -9,4 +9,4 @@ pt=3/3
 ability=Defender;\
         Formidable — {G}: SN can attack this turn as though it didn't have defender. Activate this ability only if creatures you control have total power 8 or greater.
 timing=main
-oracle=Defender. Formidable — {G}: Glade Watcher can attack this turn as though it didn't have defender. Activate this ability only if creatures you control have total power 8 or greater.
+oracle=Defender\nFormidable — {G}: Glade Watcher can attack this turn as though it didn't have defender. Activate this ability only if creatures you control have total power 8 or greater.

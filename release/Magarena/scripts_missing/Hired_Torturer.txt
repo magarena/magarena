@@ -9,4 +9,4 @@ pt=2/3
 ability=Defender;\
         {3}{B}, {T}: Target opponent loses 2 life, then reveals a card at random from his or her hand.
 timing=main
-oracle=Defender. {3}{B}, {T}: Target opponent loses 2 life, then reveals a card at random from his or her hand.
+oracle=Defender\n{3}{B}, {T}: Target opponent loses 2 life, then reveals a card at random from his or her hand.

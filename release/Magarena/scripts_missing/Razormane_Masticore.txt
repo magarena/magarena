@@ -10,4 +10,4 @@ ability=First strike;\
         At the beginning of your upkeep, sacrifice SN unless you discard a card.;\
         At the beginning of your draw step, you may have SN deal 3 damage to target creature.
 timing=main
-oracle=First strike. At the beginning of your upkeep, sacrifice Razormane Masticore unless you discard a card. At the beginning of your draw step, you may have Razormane Masticore deal 3 damage to target creature.
+oracle=First strike\nAt the beginning of your upkeep, sacrifice Razormane Masticore unless you discard a card.\nAt the beginning of your draw step, you may have Razormane Masticore deal 3 damage to target creature.

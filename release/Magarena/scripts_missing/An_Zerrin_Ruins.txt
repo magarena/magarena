@@ -7,4 +7,4 @@ cost={2}{R}{R}
 ability=As SN enters the battlefield, choose a creature type.;\
         Creatures of the chosen type don't untap during their controllers' untap steps.
 timing=main
-oracle=As An-Zerrin Ruins enters the battlefield, choose a creature type. Creatures of the chosen type don't untap during their controllers' untap steps.
+oracle=As An-Zerrin Ruins enters the battlefield, choose a creature type.\nCreatures of the chosen type don't untap during their controllers' untap steps.

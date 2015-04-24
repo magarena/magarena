@@ -9,4 +9,4 @@ pt=5/5
 ability=At the beginning of your upkeep, you may pay {R}{R}{R}. If you don't, tap SN and all creatures named Kobolds of Kher Keep, then an opponent gains control of them.;\
         Creatures you control named Kobolds of Kher Keep get +2/+2.
 timing=main
-oracle=At the beginning of your upkeep, you may pay {R}{R}{R}. If you don't, tap Rohgahh of Kher Keep and all creatures named Kobolds of Kher Keep, then an opponent gains control of them. Creatures you control named Kobolds of Kher Keep get +2/+2.
+oracle=At the beginning of your upkeep, you may pay {R}{R}{R}. If you don't, tap Rohgahh of Kher Keep and all creatures named Kobolds of Kher Keep, then an opponent gains control of them.\nCreatures you control named Kobolds of Kher Keep get +2/+2.

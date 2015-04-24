@@ -6,4 +6,4 @@ type=Sorcery
 cost={X}{R}
 effect=You may cast SN as though it had flash if you pay {2} more to cast it.~SN deals X damage to target creature or player.
 timing=main
-oracle=You may cast Ghitu Fire as though it had flash if you pay {2} more to cast it. Ghitu Fire deals X damage to target creature or player.
+oracle=You may cast Ghitu Fire as though it had flash if you pay {2} more to cast it.\nGhitu Fire deals X damage to target creature or player.

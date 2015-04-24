@@ -9,4 +9,4 @@ pt=2/2
 ability=Flying;\
         {R}: Target creature can't block SN this turn.
 timing=main
-oracle=Flying. {R}: Target creature can't block Screeching Griffin this turn.
+oracle=Flying\n{R}: Target creature can't block Screeching Griffin this turn.

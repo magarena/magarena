@@ -8,4 +8,4 @@ cost={1}{W}
 ability=Enchant nonland permanent;\
         At the beginning of the upkeep of enchanted permanent's controller, that player sacrifices it unless he or she pays {X}, where X is its converted mana cost.
 timing=main
-oracle=Enchant nonland permanent. At the beginning of the upkeep of enchanted permanent's controller, that player sacrifices it unless he or she pays {X}, where X is its converted mana cost.
+oracle=Enchant nonland permanent\nAt the beginning of the upkeep of enchanted permanent's controller, that player sacrifices it unless he or she pays {X}, where X is its converted mana cost.

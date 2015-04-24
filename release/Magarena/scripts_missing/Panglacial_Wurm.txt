@@ -9,4 +9,4 @@ pt=9/5
 ability=Trample;\
         While you're searching your library, you may cast SN from your library.
 timing=main
-oracle=Trample. While you're searching your library, you may cast Panglacial Wurm from your library.
+oracle=Trample\nWhile you're searching your library, you may cast Panglacial Wurm from your library.

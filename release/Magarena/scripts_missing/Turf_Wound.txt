@@ -6,4 +6,4 @@ type=Instant
 cost={2}{R}
 effect=Target player can't play land cards this turn.~Draw a card.
 timing=removal
-oracle=Target player can't play land cards this turn. Draw a card.
+oracle=Target player can't play land cards this turn.\nDraw a card.

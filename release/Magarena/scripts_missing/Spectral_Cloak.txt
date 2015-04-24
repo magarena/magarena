@@ -8,4 +8,4 @@ cost={U}{U}
 ability=Enchant creature;\
         Enchanted creature has shroud as long as it's untapped.
 timing=main
-oracle=Enchant creature. Enchanted creature has shroud as long as it's untapped.
+oracle=Enchant creature\nEnchanted creature has shroud as long as it's untapped.

@@ -6,4 +6,4 @@ type=Instant
 cost={R}
 effect=Cast SN only during the declare blockers step.~Remove target creature defending player controls from combat. Creatures it was blocking that had become blocked by only that creature this combat become unblocked. You may have it block an attacking creature of your choice.
 timing=removal
-oracle=Cast False Orders only during the declare blockers step. Remove target creature defending player controls from combat. Creatures it was blocking that had become blocked by only that creature this combat become unblocked. You may have it block an attacking creature of your choice.
+oracle=Cast False Orders only during the declare blockers step.\nRemove target creature defending player controls from combat. Creatures it was blocking that had become blocked by only that creature this combat become unblocked. You may have it block an attacking creature of your choice.

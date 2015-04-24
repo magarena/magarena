@@ -10,4 +10,4 @@ ability=Whenever SN becomes tapped, exile the top three cards of target opponent
         You may look at cards exiled with SN.;\
         {U}, Sacrifice SN: Turn all cards exiled with SN face up. Counter all spells with those names.
 timing=main
-oracle=Whenever Grimoire Thief becomes tapped, exile the top three cards of target opponent's library face down. You may look at cards exiled with Grimoire Thief. {U}, Sacrifice Grimoire Thief: Turn all cards exiled with Grimoire Thief face up. Counter all spells with those names.
+oracle=Whenever Grimoire Thief becomes tapped, exile the top three cards of target opponent's library face down.\nYou may look at cards exiled with Grimoire Thief.\n{U}, Sacrifice Grimoire Thief: Turn all cards exiled with Grimoire Thief face up. Counter all spells with those names.

@@ -6,4 +6,4 @@ type=Instant
 cost={U}
 effect=Choose one — (1) Tap target permanent. (2) Untap target permanent.~Entwine {1}
 timing=removal
-oracle=Choose one — • Tap target permanent. • Untap target permanent. Entwine {1}
+oracle=Choose one —\n• Tap target permanent.\n• Untap target permanent.\nEntwine {1}

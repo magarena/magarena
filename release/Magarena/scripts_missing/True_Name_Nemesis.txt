@@ -9,4 +9,4 @@ pt=3/1
 ability=As SN enters the battlefield, choose a player.;\
         SN has protection from the chosen player.
 timing=main
-oracle=As True-Name Nemesis enters the battlefield, choose a player. True-Name Nemesis has protection from the chosen player.
+oracle=As True-Name Nemesis enters the battlefield, choose a player.\nTrue-Name Nemesis has protection from the chosen player.

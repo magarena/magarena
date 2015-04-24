@@ -9,4 +9,4 @@ ability=Flash;\
         Enchant creature;\
         Whenever enchanted creature deals combat damage to defending player, you may destroy target artifact that player controls.
 timing=main
-oracle=Flash. Enchant creature. Whenever enchanted creature deals combat damage to defending player, you may destroy target artifact that player controls.
+oracle=Flash\nEnchant creature\nWhenever enchanted creature deals combat damage to defending player, you may destroy target artifact that player controls.

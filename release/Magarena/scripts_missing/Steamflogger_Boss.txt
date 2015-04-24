@@ -9,4 +9,4 @@ pt=3/3
 ability=Other Rigger creatures you control get +1/+0 and have haste.;\
         If a Rigger you control would assemble a Contraption, it assembles two Contraptions instead.
 timing=main
-oracle=Other Rigger creatures you control get +1/+0 and have haste. If a Rigger you control would assemble a Contraption, it assembles two Contraptions instead.
+oracle=Other Rigger creatures you control get +1/+0 and have haste.\nIf a Rigger you control would assemble a Contraption, it assembles two Contraptions instead.

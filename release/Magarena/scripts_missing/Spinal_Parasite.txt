@@ -9,4 +9,4 @@ pt=-1/-1
 ability=Sunburst;\
         Remove two +1/+1 counters from SN: Remove a counter from target permanent.
 timing=main
-oracle=Sunburst. Remove two +1/+1 counters from Spinal Parasite: Remove a counter from target permanent.
+oracle=Sunburst\nRemove two +1/+1 counters from Spinal Parasite: Remove a counter from target permanent.

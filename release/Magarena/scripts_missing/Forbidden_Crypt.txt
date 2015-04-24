@@ -7,4 +7,4 @@ cost={3}{B}{B}
 ability=If you would draw a card, return a card from your graveyard to your hand instead. If you can't, you lose the game.;\
         If a card would be put into your graveyard from anywhere, exile that card instead.
 timing=main
-oracle=If you would draw a card, return a card from your graveyard to your hand instead. If you can't, you lose the game. If a card would be put into your graveyard from anywhere, exile that card instead.
+oracle=If you would draw a card, return a card from your graveyard to your hand instead. If you can't, you lose the game.\nIf a card would be put into your graveyard from anywhere, exile that card instead.

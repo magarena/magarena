@@ -10,4 +10,4 @@ ability=Flanking;\
         As SN enters the battlefield, choose a color.;\
         {W}{W}, {T}: Destroy target permanent of the chosen color.
 timing=main
-oracle=Flanking. As Pentarch Paladin enters the battlefield, choose a color. {W}{W}, {T}: Destroy target permanent of the chosen color.
+oracle=Flanking\nAs Pentarch Paladin enters the battlefield, choose a color.\n{W}{W}, {T}: Destroy target permanent of the chosen color.

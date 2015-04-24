@@ -9,4 +9,4 @@ pt=1/1
 ability=Intimidate;\
         Whenever SN deals combat damage to a player, you may discard a card. If you do, draw a card.
 timing=main
-oracle=Intimidate. Whenever Academy Raider deals combat damage to a player, you may discard a card. If you do, draw a card.
+oracle=Intimidate\nWhenever Academy Raider deals combat damage to a player, you may discard a card. If you do, draw a card.

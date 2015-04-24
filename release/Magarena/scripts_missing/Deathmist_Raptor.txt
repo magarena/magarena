@@ -10,4 +10,4 @@ ability=Deathtouch;\
         Whenever a permanent you control is turned face up, you may return SN from your graveyard to the battlefield face up or face down.;\
         Megamorph {4}{G}
 timing=main
-oracle=Deathtouch. Whenever a permanent you control is turned face up, you may return Deathmist Raptor from your graveyard to the battlefield face up or face down. Megamorph {4}{G}
+oracle=Deathtouch\nWhenever a permanent you control is turned face up, you may return Deathmist Raptor from your graveyard to the battlefield face up or face down.\nMegamorph {4}{G}

@@ -6,4 +6,4 @@ type=Sorcery
 cost={B}{B}{B}
 effect=Kicker {7}~Search target player's library for up to three cards, exile them, then that player shuffles his or her library. If SN was kicked, instead search that player's library for up to fifteen cards, exile them, then that player shuffles his or her library.
 timing=main
-oracle=Kicker {7}. Search target player's library for up to three cards, exile them, then that player shuffles his or her library. If Sadistic Sacrament was kicked, instead search that player's library for up to fifteen cards, exile them, then that player shuffles his or her library.
+oracle=Kicker {7}\nSearch target player's library for up to three cards, exile them, then that player shuffles his or her library. If Sadistic Sacrament was kicked, instead search that player's library for up to fifteen cards, exile them, then that player shuffles his or her library.

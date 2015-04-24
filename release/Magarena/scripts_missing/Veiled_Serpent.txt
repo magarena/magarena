@@ -7,4 +7,4 @@ cost={2}{U}
 ability=When an opponent casts a spell, if SN is an enchantment, SN becomes a 4/4 Serpent creature that can't attack unless defending player controls an Island.;\
         Cycling {2}
 timing=main
-oracle=When an opponent casts a spell, if Veiled Serpent is an enchantment, Veiled Serpent becomes a 4/4 Serpent creature that can't attack unless defending player controls an Island. Cycling {2}
+oracle=When an opponent casts a spell, if Veiled Serpent is an enchantment, Veiled Serpent becomes a 4/4 Serpent creature that can't attack unless defending player controls an Island.\nCycling {2}

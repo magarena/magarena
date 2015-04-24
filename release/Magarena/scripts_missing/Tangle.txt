@@ -6,4 +6,4 @@ type=Instant
 cost={1}{G}
 effect=Prevent all combat damage that would be dealt this turn.~Each attacking creature doesn't untap during its controller's next untap step.
 timing=removal
-oracle=Prevent all combat damage that would be dealt this turn. Each attacking creature doesn't untap during its controller's next untap step.
+oracle=Prevent all combat damage that would be dealt this turn.\nEach attacking creature doesn't untap during its controller's next untap step.

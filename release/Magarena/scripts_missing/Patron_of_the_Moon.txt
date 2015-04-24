@@ -10,4 +10,4 @@ ability=Moonfolk offering;\
         Flying;\
         {1}: Put up to two land cards from your hand onto the battlefield tapped.
 timing=main
-oracle=Moonfolk offering. Flying. {1}: Put up to two land cards from your hand onto the battlefield tapped.
+oracle=Moonfolk offering\nFlying\n{1}: Put up to two land cards from your hand onto the battlefield tapped.

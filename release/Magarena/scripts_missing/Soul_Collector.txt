@@ -10,4 +10,4 @@ ability=Flying;\
         Whenever a creature dealt damage by SN this turn dies, return that card to the battlefield under your control.;\
         Morph {B}{B}{B}
 timing=main
-oracle=Flying. Whenever a creature dealt damage by Soul Collector this turn dies, return that card to the battlefield under your control. Morph {B}{B}{B}
+oracle=Flying\nWhenever a creature dealt damage by Soul Collector this turn dies, return that card to the battlefield under your control.\nMorph {B}{B}{B}

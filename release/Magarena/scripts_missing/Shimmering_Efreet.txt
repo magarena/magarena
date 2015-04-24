@@ -10,4 +10,4 @@ ability=Flying;\
         Phasing;\
         Whenever SN phases in, target creature phases out.
 timing=main
-oracle=Flying. Phasing. Whenever Shimmering Efreet phases in, target creature phases out.
+oracle=Flying\nPhasing\nWhenever Shimmering Efreet phases in, target creature phases out.

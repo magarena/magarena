@@ -9,4 +9,4 @@ pt=8/8
 ability=SN has hexproof unless it's attacking or blocking.;\
         SN can't be blocked unless all creatures defending player controls block it.
 timing=main
-oracle=Tromokratis has hexproof unless it's attacking or blocking. Tromokratis can't be blocked unless all creatures defending player controls block it.
+oracle=Tromokratis has hexproof unless it's attacking or blocking.\nTromokratis can't be blocked unless all creatures defending player controls block it.

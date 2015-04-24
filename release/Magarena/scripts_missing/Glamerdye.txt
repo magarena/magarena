@@ -6,4 +6,4 @@ type=Instant
 cost={1}{U}
 effect=Change the text of target spell or permanent by replacing all instances of one color word with another.~Retrace
 timing=removal
-oracle=Change the text of target spell or permanent by replacing all instances of one color word with another. Retrace
+oracle=Change the text of target spell or permanent by replacing all instances of one color word with another.\nRetrace

@@ -9,4 +9,4 @@ pt=2/1
 ability=Forestwalk;\
         When SN enters the battlefield, you may search your library for a Forest card and put it onto the battlefield tapped under target player's control. If you do, shuffle your library.
 timing=main
-oracle=Forestwalk. When Yavimaya Dryad enters the battlefield, you may search your library for a Forest card and put it onto the battlefield tapped under target player's control. If you do, shuffle your library.
+oracle=Forestwalk\nWhen Yavimaya Dryad enters the battlefield, you may search your library for a Forest card and put it onto the battlefield tapped under target player's control. If you do, shuffle your library.

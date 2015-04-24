@@ -7,4 +7,4 @@ cost={2}{B}{B}
 ability=When SN enters the battlefield, sacrifice all creatures you control.;\
         Creatures you control get +2/+2.
 timing=main
-oracle=When Death Pit Offering enters the battlefield, sacrifice all creatures you control. Creatures you control get +2/+2.
+oracle=When Death Pit Offering enters the battlefield, sacrifice all creatures you control.\nCreatures you control get +2/+2.

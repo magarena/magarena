@@ -8,4 +8,4 @@ cost={1}{R}
 ability=Enchant creature;\
         Enchanted creature gets +3/+0 and can't be blocked except by two or more creatures.
 timing=main
-oracle=Enchant creature. Enchanted creature gets +3/+0 and can't be blocked except by two or more creatures.
+oracle=Enchant creature\nEnchanted creature gets +3/+0 and can't be blocked except by two or more creatures.

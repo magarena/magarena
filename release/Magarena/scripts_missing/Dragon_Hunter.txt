@@ -9,4 +9,4 @@ pt=2/1
 ability=Protection from Dragons;\
         SN can block Dragons as though it had reach.
 timing=main
-oracle=Protection from Dragons. Dragon Hunter can block Dragons as though it had reach.
+oracle=Protection from Dragons\nDragon Hunter can block Dragons as though it had reach.

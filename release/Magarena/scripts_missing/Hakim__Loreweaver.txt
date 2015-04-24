@@ -10,4 +10,4 @@ ability=Flying;\
         {U}{U}: Return target Aura card from your graveyard to the battlefield attached to SN. Activate this ability only during your upkeep and only if Hakim isn't enchanted.;\
         {U}{U}, {T}: Destroy all Auras attached to Hakim.
 timing=main
-oracle=Flying. {U}{U}: Return target Aura card from your graveyard to the battlefield attached to Hakim, Loreweaver. Activate this ability only during your upkeep and only if Hakim isn't enchanted. {U}{U}, {T}: Destroy all Auras attached to Hakim.
+oracle=Flying\n{U}{U}: Return target Aura card from your graveyard to the battlefield attached to Hakim, Loreweaver. Activate this ability only during your upkeep and only if Hakim isn't enchanted.\n{U}{U}, {T}: Destroy all Auras attached to Hakim.

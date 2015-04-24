@@ -9,4 +9,4 @@ ability=When SN enters the battlefield, put a token that's a copy of target nont
         When the token leaves the battlefield, sacrifice SN.;\
         At the beginning of your upkeep, sacrifice SN unless you pay {U}{U}.
 timing=main
-oracle=When Dance of Many enters the battlefield, put a token that's a copy of target nontoken creature onto the battlefield. When Dance of Many leaves the battlefield, exile the token. When the token leaves the battlefield, sacrifice Dance of Many. At the beginning of your upkeep, sacrifice Dance of Many unless you pay {U}{U}.
+oracle=When Dance of Many enters the battlefield, put a token that's a copy of target nontoken creature onto the battlefield.\nWhen Dance of Many leaves the battlefield, exile the token.\nWhen the token leaves the battlefield, sacrifice Dance of Many.\nAt the beginning of your upkeep, sacrifice Dance of Many unless you pay {U}{U}.

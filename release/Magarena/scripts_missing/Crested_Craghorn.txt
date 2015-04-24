@@ -9,4 +9,4 @@ pt=4/1
 ability=Haste;\
         Provoke
 timing=main
-oracle=Haste. Provoke
+oracle=Haste\nProvoke

@@ -9,4 +9,4 @@ pt=5/5
 ability=Trample;\
         Cumulative upkeep—Put a +1/+1 counter on a creature an opponent controls.
 timing=main
-oracle=Trample. Cumulative upkeep—Put a +1/+1 counter on a creature an opponent controls.
+oracle=Trample\nCumulative upkeep—Put a +1/+1 counter on a creature an opponent controls.

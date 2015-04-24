@@ -9,4 +9,4 @@ pt=1/4
 ability=Reach;\
         {1}{G}: SN can block an additional creature this turn.
 timing=main
-oracle=Reach. {1}{G}: Anurid Swarmsnapper can block an additional creature this turn.
+oracle=Reach\n{1}{G}: Anurid Swarmsnapper can block an additional creature this turn.

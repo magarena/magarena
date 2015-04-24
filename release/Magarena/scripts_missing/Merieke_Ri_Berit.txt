@@ -9,4 +9,4 @@ pt=1/1
 ability=SN doesn't untap during your untap step.;\
         {T}: Gain control of target creature for as long as you control SN. When SN leaves the battlefield or becomes untapped, destroy that creature. It can't be regenerated.
 timing=main
-oracle=Merieke Ri Berit doesn't untap during your untap step. {T}: Gain control of target creature for as long as you control Merieke Ri Berit. When Merieke Ri Berit leaves the battlefield or becomes untapped, destroy that creature. It can't be regenerated.
+oracle=Merieke Ri Berit doesn't untap during your untap step.\n{T}: Gain control of target creature for as long as you control Merieke Ri Berit. When Merieke Ri Berit leaves the battlefield or becomes untapped, destroy that creature. It can't be regenerated.

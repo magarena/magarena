@@ -10,4 +10,4 @@ ability=Trample;\
         Echo {0};\
         When SN's echo cost is paid, each opponent may draw up to three cards.
 timing=main
-oracle=Trample. Echo {0}. When Shah of Naar Isle's echo cost is paid, each opponent may draw up to three cards.
+oracle=Trample\nEcho {0}\nWhen Shah of Naar Isle's echo cost is paid, each opponent may draw up to three cards.

@@ -9,4 +9,4 @@ pt=1/1
 ability=Flying;\
         Whenever the fourth spell of a turn is cast, flip SN.
 timing=main
-oracle=Flying. Whenever the fourth spell of a turn is cast, flip Erayo, Soratami Ascendant.
+oracle=Flying\nWhenever the fourth spell of a turn is cast, flip Erayo, Soratami Ascendant.

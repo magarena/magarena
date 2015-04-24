@@ -9,4 +9,4 @@ pt=3/3
 ability=You can't cast SN if you've played a land this turn.;\
         You can't play lands if you've cast SN this turn.
 timing=main
-oracle=You can't cast Rock Jockey if you've played a land this turn. You can't play lands if you've cast Rock Jockey this turn.
+oracle=You can't cast Rock Jockey if you've played a land this turn.\nYou can't play lands if you've cast Rock Jockey this turn.

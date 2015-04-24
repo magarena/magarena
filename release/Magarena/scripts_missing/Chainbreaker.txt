@@ -9,4 +9,4 @@ pt=3/3
 ability=SN enters the battlefield with two -1/-1 counters on it.;\
         {3}, {T}: Remove a -1/-1 counter from target creature.
 timing=main
-oracle=Chainbreaker enters the battlefield with two -1/-1 counters on it. {3}, {T}: Remove a -1/-1 counter from target creature.
+oracle=Chainbreaker enters the battlefield with two -1/-1 counters on it.\n{3}, {T}: Remove a -1/-1 counter from target creature.

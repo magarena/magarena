@@ -9,4 +9,4 @@ pt=2/2
 ability=Haunt;\
         When SN enters the battlefield or the creature it haunts dies, destroy target creature that was dealt damage this turn.
 timing=main
-oracle=Haunt. When Orzhov Euthanist enters the battlefield or the creature it haunts dies, destroy target creature that was dealt damage this turn.
+oracle=Haunt\nWhen Orzhov Euthanist enters the battlefield or the creature it haunts dies, destroy target creature that was dealt damage this turn.

@@ -10,4 +10,4 @@ ability=Flying;\
         Infect;\
         Whenever SN deals combat damage to a player, you may sacrifice it. If you do, that player discards a card for each poison counter he or she has.
 timing=main
-oracle=Flying. Infect. Whenever Whispering Specter deals combat damage to a player, you may sacrifice it. If you do, that player discards a card for each poison counter he or she has.
+oracle=Flying\nInfect\nWhenever Whispering Specter deals combat damage to a player, you may sacrifice it. If you do, that player discards a card for each poison counter he or she has.

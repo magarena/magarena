@@ -9,4 +9,4 @@ ability=Enchant non-Wall creature you control;\
         When SN enters the battlefield, draw a card at the beginning of the next turn's upkeep.;\
         Tap enchanted creature: SN deals 1 damage to target creature or player. Put a -0/-1 counter on enchanted creature. Activate this ability only if enchanted creature is untapped.
 timing=main
-oracle=Enchant non-Wall creature you control. When Krovikan Plague enters the battlefield, draw a card at the beginning of the next turn's upkeep. Tap enchanted creature: Krovikan Plague deals 1 damage to target creature or player. Put a -0/-1 counter on enchanted creature. Activate this ability only if enchanted creature is untapped.
+oracle=Enchant non-Wall creature you control\nWhen Krovikan Plague enters the battlefield, draw a card at the beginning of the next turn's upkeep.\nTap enchanted creature: Krovikan Plague deals 1 damage to target creature or player. Put a -0/-1 counter on enchanted creature. Activate this ability only if enchanted creature is untapped.

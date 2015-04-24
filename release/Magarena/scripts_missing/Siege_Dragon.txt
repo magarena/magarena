@@ -10,4 +10,4 @@ ability=Flying;\
         When SN enters the battlefield, destroy all Walls your opponents control.;\
         Whenever SN attacks, if defending player controls no Walls, it deals 2 damage to each creature without flying that player controls.
 timing=main
-oracle=Flying. When Siege Dragon enters the battlefield, destroy all Walls your opponents control. Whenever Siege Dragon attacks, if defending player controls no Walls, it deals 2 damage to each creature without flying that player controls.
+oracle=Flying\nWhen Siege Dragon enters the battlefield, destroy all Walls your opponents control.\nWhenever Siege Dragon attacks, if defending player controls no Walls, it deals 2 damage to each creature without flying that player controls.

@@ -10,4 +10,4 @@ ability=Flash;\
         When SN enters the battlefield, creatures you control gain shroud until end of turn.;\
         When SN enters the battlefield, sacrifice it unless {G} was spent to cast it.
 timing=main
-oracle=Flash. When Plaxmanta enters the battlefield, creatures you control gain shroud until end of turn. When Plaxmanta enters the battlefield, sacrifice it unless {G} was spent to cast it.
+oracle=Flash\nWhen Plaxmanta enters the battlefield, creatures you control gain shroud until end of turn.\nWhen Plaxmanta enters the battlefield, sacrifice it unless {G} was spent to cast it.

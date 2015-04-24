@@ -6,4 +6,4 @@ type=Land
 ability=When you play another land, sacrifice SN.;\
         {T}: Add {2} to your mana pool.
 timing=main
-oracle=When you play another land, sacrifice City of Traitors. {T}: Add {2} to your mana pool.
+oracle=When you play another land, sacrifice City of Traitors.\n{T}: Add {2} to your mana pool.

@@ -7,4 +7,4 @@ cost={3}{G}{G}
 ability=Flash;\
         Whenever a player taps a land for mana, that player adds one mana to his or her mana pool of any type that land produced.
 timing=main
-oracle=Flash. Whenever a player taps a land for mana, that player adds one mana to his or her mana pool of any type that land produced.
+oracle=Flash\nWhenever a player taps a land for mana, that player adds one mana to his or her mana pool of any type that land produced.

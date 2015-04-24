@@ -9,4 +9,4 @@ pt=8/8
 ability=When SN enters the battlefield, if you cast it from your hand, you may search your library for a Spirit permanent card, put it onto the battlefield, then shuffle your library.;\
         When SN dies, you may exile it. If you do, return target Spirit permanent card from your graveyard to the battlefield.
 timing=main
-oracle=When Iname as One enters the battlefield, if you cast it from your hand, you may search your library for a Spirit permanent card, put it onto the battlefield, then shuffle your library. When Iname as One dies, you may exile it. If you do, return target Spirit permanent card from your graveyard to the battlefield.
+oracle=When Iname as One enters the battlefield, if you cast it from your hand, you may search your library for a Spirit permanent card, put it onto the battlefield, then shuffle your library.\nWhen Iname as One dies, you may exile it. If you do, return target Spirit permanent card from your graveyard to the battlefield.

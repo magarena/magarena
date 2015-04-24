@@ -6,4 +6,4 @@ type=Instant
 cost={X}{U}
 effect=Buyback {3}~Counter target spell with converted mana cost X.
 timing=removal
-oracle=Buyback {3}. Counter target spell with converted mana cost X.
+oracle=Buyback {3}\nCounter target spell with converted mana cost X.

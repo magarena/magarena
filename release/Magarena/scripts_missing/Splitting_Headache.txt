@@ -6,4 +6,4 @@ type=Sorcery
 cost={3}{B}
 effect=Choose one — (1) Target player discards two cards. (2) Target player reveals his or her hand, you choose a card from it, then that player discards that card.
 timing=main
-oracle=Choose one — • Target player discards two cards. • Target player reveals his or her hand, you choose a card from it, then that player discards that card.
+oracle=Choose one —\n• Target player discards two cards.\n• Target player reveals his or her hand, you choose a card from it, then that player discards that card.

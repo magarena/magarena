@@ -9,4 +9,4 @@ pt=4/4
 ability=Devour 2;\
         When SN enters the battlefield, target player discards a card for each creature it devoured.
 timing=main
-oracle=Devour 2. When Tar Fiend enters the battlefield, target player discards a card for each creature it devoured.
+oracle=Devour 2\nWhen Tar Fiend enters the battlefield, target player discards a card for each creature it devoured.

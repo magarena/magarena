@@ -6,4 +6,4 @@ type=Instant
 cost={2}{G}
 effect=Kicker {B}~Creatures you control get +1/+1 until end of turn. If SN was kicked, Zombie creatures you control get an additional +2/+2 until end of turn.
 timing=removal
-oracle=Kicker {B}. Creatures you control get +1/+1 until end of turn. If Strength of Night was kicked, Zombie creatures you control get an additional +2/+2 until end of turn.
+oracle=Kicker {B}\nCreatures you control get +1/+1 until end of turn. If Strength of Night was kicked, Zombie creatures you control get an additional +2/+2 until end of turn.

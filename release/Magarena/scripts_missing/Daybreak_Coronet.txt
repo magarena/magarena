@@ -8,4 +8,4 @@ cost={W}{W}
 ability=Enchant creature with another Aura attached to it;\
         Enchanted creature gets +3/+3 and has first strike, vigilance, and lifelink.
 timing=main
-oracle=Enchant creature with another Aura attached to it. Enchanted creature gets +3/+3 and has first strike, vigilance, and lifelink.
+oracle=Enchant creature with another Aura attached to it\nEnchanted creature gets +3/+3 and has first strike, vigilance, and lifelink.

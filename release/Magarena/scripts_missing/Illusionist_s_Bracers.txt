@@ -8,4 +8,4 @@ cost={2}
 ability=Whenever an ability of equipped creature is activated, if it isn't a mana ability, copy that ability. You may choose new targets for the copy.;\
         Equip {3}
 timing=main
-oracle=Whenever an ability of equipped creature is activated, if it isn't a mana ability, copy that ability. You may choose new targets for the copy. Equip {3}
+oracle=Whenever an ability of equipped creature is activated, if it isn't a mana ability, copy that ability. You may choose new targets for the copy.\nEquip {3}

@@ -7,4 +7,4 @@ subtype=Rogue
 cost={2}{B}{B}
 effect=Prowl {1}{B}~Target player loses 3 life and you gain 3 life. If SN's prowl cost was paid, draw a card.
 timing=main
-oracle=Prowl {1}{B}. Target player loses 3 life and you gain 3 life. If Morsel Theft's prowl cost was paid, draw a card.
+oracle=Prowl {1}{B}\nTarget player loses 3 life and you gain 3 life. If Morsel Theft's prowl cost was paid, draw a card.

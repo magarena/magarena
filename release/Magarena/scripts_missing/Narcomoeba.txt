@@ -9,4 +9,4 @@ pt=1/1
 ability=Flying;\
         When SN is put into your graveyard from your library, you may put it onto the battlefield.
 timing=main
-oracle=Flying. When Narcomoeba is put into your graveyard from your library, you may put it onto the battlefield.
+oracle=Flying\nWhen Narcomoeba is put into your graveyard from your library, you may put it onto the battlefield.

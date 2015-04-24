@@ -9,4 +9,4 @@ pt=2/1
 ability=Flash;\
         When SN enters the battlefield, prevent all combat damage that other creatures would deal this turn.
 timing=main
-oracle=Flash. When Haze Frog enters the battlefield, prevent all combat damage that other creatures would deal this turn.
+oracle=Flash\nWhen Haze Frog enters the battlefield, prevent all combat damage that other creatures would deal this turn.

@@ -10,4 +10,4 @@ ability=Lifelink;\
         Megamorph {2}{W};\
         When SN is turned face up, destroy target creature with power 4 or greater an opponent controls.
 timing=main
-oracle=Lifelink. Megamorph {2}{W}. When Hidden Dragonslayer is turned face up, destroy target creature with power 4 or greater an opponent controls.
+oracle=Lifelink\nMegamorph {2}{W}\nWhen Hidden Dragonslayer is turned face up, destroy target creature with power 4 or greater an opponent controls.

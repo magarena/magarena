@@ -9,4 +9,4 @@ pt=1/1
 ability=Flying;\
         {S}: SN gets +1/+1 until end of turn.
 timing=main
-oracle=Flying. {S}: Chilling Shade gets +1/+1 until end of turn.
+oracle=Flying\n{S}: Chilling Shade gets +1/+1 until end of turn.

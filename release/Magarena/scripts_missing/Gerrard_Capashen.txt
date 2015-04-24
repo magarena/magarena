@@ -9,4 +9,4 @@ pt=3/4
 ability=At the beginning of your upkeep, you gain 1 life for each card in target opponent's hand.;\
         {3}{W}: Tap target creature. Activate this ability only if SN is attacking.
 timing=main
-oracle=At the beginning of your upkeep, you gain 1 life for each card in target opponent's hand. {3}{W}: Tap target creature. Activate this ability only if Gerrard Capashen is attacking.
+oracle=At the beginning of your upkeep, you gain 1 life for each card in target opponent's hand.\n{3}{W}: Tap target creature. Activate this ability only if Gerrard Capashen is attacking.

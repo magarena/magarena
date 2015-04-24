@@ -6,4 +6,4 @@ type=Sorcery
 cost={6}{B}
 effect=Convoke~SN deals 4 damage to target creature or player and you gain 4 life.
 timing=main
-oracle=Convoke. Covenant of Blood deals 4 damage to target creature or player and you gain 4 life.
+oracle=Convoke\nCovenant of Blood deals 4 damage to target creature or player and you gain 4 life.

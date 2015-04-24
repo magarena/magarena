@@ -6,4 +6,4 @@ type=Instant
 cost={B}{B}{B}
 effect=As an additional cost to cast SN, sacrifice all permanents you control and discard your hand.~Target player loses 5 life.
 timing=removal
-oracle=As an additional cost to cast Kaervek's Spite, sacrifice all permanents you control and discard your hand. Target player loses 5 life.
+oracle=As an additional cost to cast Kaervek's Spite, sacrifice all permanents you control and discard your hand.\nTarget player loses 5 life.

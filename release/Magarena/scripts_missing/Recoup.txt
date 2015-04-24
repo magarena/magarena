@@ -6,4 +6,4 @@ type=Sorcery
 cost={1}{R}
 effect=Target sorcery card in your graveyard gains flashback until end of turn. The flashback cost is equal to its mana cost.~Flashback {3}{R}
 timing=main
-oracle=Target sorcery card in your graveyard gains flashback until end of turn. The flashback cost is equal to its mana cost. Flashback {3}{R}
+oracle=Target sorcery card in your graveyard gains flashback until end of turn. The flashback cost is equal to its mana cost.\nFlashback {3}{R}

@@ -7,4 +7,4 @@ cost={2}{U}{U}
 ability=If SN is in your opening hand, you may begin the game with it on the battlefield.;\
         All nonland permanents are legendary.
 timing=main
-oracle=If Leyline of Singularity is in your opening hand, you may begin the game with it on the battlefield. All nonland permanents are legendary.
+oracle=If Leyline of Singularity is in your opening hand, you may begin the game with it on the battlefield.\nAll nonland permanents are legendary.

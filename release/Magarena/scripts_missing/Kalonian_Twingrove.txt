@@ -9,4 +9,4 @@ pt=*/*
 ability=SN's power and toughness are each equal to the number of Forests you control.;\
         When SN enters the battlefield, put a green Treefolk Warrior creature token onto the battlefield with "This creature's power and toughness are each equal to the number of Forests you control."
 timing=main
-oracle=Kalonian Twingrove's power and toughness are each equal to the number of Forests you control. When Kalonian Twingrove enters the battlefield, put a green Treefolk Warrior creature token onto the battlefield with "This creature's power and toughness are each equal to the number of Forests you control."
+oracle=Kalonian Twingrove's power and toughness are each equal to the number of Forests you control.\nWhen Kalonian Twingrove enters the battlefield, put a green Treefolk Warrior creature token onto the battlefield with "This creature's power and toughness are each equal to the number of Forests you control."

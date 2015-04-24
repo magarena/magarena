@@ -9,4 +9,4 @@ pt=4/4
 ability=First strike;\
         Creatures with islandwalk can be blocked as though they didn't have islandwalk.
 timing=main
-oracle=First strike. Creatures with islandwalk can be blocked as though they didn't have islandwalk.
+oracle=First strike\nCreatures with islandwalk can be blocked as though they didn't have islandwalk.

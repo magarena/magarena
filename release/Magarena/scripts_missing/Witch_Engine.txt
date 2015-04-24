@@ -9,4 +9,4 @@ pt=4/4
 ability=Swampwalk;\
         {T}: Add {B}{B}{B}{B} to your mana pool. Target opponent gains control of SN.
 timing=main
-oracle=Swampwalk. {T}: Add {B}{B}{B}{B} to your mana pool. Target opponent gains control of Witch Engine.
+oracle=Swampwalk\n{T}: Add {B}{B}{B}{B} to your mana pool. Target opponent gains control of Witch Engine.

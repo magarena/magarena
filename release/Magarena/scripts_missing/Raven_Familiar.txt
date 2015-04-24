@@ -10,4 +10,4 @@ ability=Flying;\
         Echo {2}{U};\
         When SN enters the battlefield, look at the top three cards of your library. Put one of them into your hand and the rest on the bottom of your library in any order.
 timing=main
-oracle=Flying. Echo {2}{U}. When Raven Familiar enters the battlefield, look at the top three cards of your library. Put one of them into your hand and the rest on the bottom of your library in any order.
+oracle=Flying\nEcho {2}{U}\nWhen Raven Familiar enters the battlefield, look at the top three cards of your library. Put one of them into your hand and the rest on the bottom of your library in any order.

@@ -10,4 +10,4 @@ ability=Vigilance;\
         {T}: Add {G}{G} to your mana pool.;\
         At the beginning of each upkeep, if a player cast two or more spells last turn, transform SN.
 timing=main
-oracle=Vigilance. {T}: Add {G}{G} to your mana pool. At the beginning of each upkeep, if a player cast two or more spells last turn, transform Moonscarred Werewolf.
+oracle=Vigilance\n{T}: Add {G}{G} to your mana pool.\nAt the beginning of each upkeep, if a player cast two or more spells last turn, transform Moonscarred Werewolf.

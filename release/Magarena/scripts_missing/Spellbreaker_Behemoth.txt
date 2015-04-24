@@ -9,4 +9,4 @@ pt=5/5
 ability=SN can't be countered.;\
         Creature spells you control with power 5 or greater can't be countered.
 timing=main
-oracle=Spellbreaker Behemoth can't be countered. Creature spells you control with power 5 or greater can't be countered.
+oracle=Spellbreaker Behemoth can't be countered.\nCreature spells you control with power 5 or greater can't be countered.

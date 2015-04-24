@@ -6,4 +6,4 @@ type=Instant
 cost={1}{G}
 effect=Name a card, then target player puts the top card of his or her library into his or her graveyard. If that card is the named card, you gain life equal to its converted mana cost.~Draw a card.
 timing=removal
-oracle=Name a card, then target player puts the top card of his or her library into his or her graveyard. If that card is the named card, you gain life equal to its converted mana cost. Draw a card.
+oracle=Name a card, then target player puts the top card of his or her library into his or her graveyard. If that card is the named card, you gain life equal to its converted mana cost.\nDraw a card.

@@ -8,4 +8,4 @@ cost={B}{B}
 ability=Enchant creature;\
         At the beginning of the end step of enchanted creature's controller, SN deals 2 damage to that player unless that creature attacked this turn.
 timing=main
-oracle=Enchant creature. At the beginning of the end step of enchanted creature's controller, Insubordination deals 2 damage to that player unless that creature attacked this turn.
+oracle=Enchant creature\nAt the beginning of the end step of enchanted creature's controller, Insubordination deals 2 damage to that player unless that creature attacked this turn.

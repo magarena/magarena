@@ -8,4 +8,4 @@ ability=Skip your draw step.;\
         Whenever you play a card, draw a card.;\
         Your maximum hand size is two.
 timing=main
-oracle=Skip your draw step. Whenever you play a card, draw a card. Your maximum hand size is two.
+oracle=Skip your draw step.\nWhenever you play a card, draw a card.\nYour maximum hand size is two.

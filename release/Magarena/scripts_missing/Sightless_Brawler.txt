@@ -10,4 +10,4 @@ ability=Bestow {4}{W};\
         SN can't attack alone.;\
         Enchanted creature gets +3/+2 and can't attack alone.
 timing=main
-oracle=Bestow {4}{W}. Sightless Brawler can't attack alone. Enchanted creature gets +3/+2 and can't attack alone.
+oracle=Bestow {4}{W}\nSightless Brawler can't attack alone.\nEnchanted creature gets +3/+2 and can't attack alone.

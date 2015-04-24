@@ -9,4 +9,4 @@ pt=3/1
 ability=Shadow;\
         Suspend 2—{1}{U}
 timing=main
-oracle=Shadow. Suspend 2—{1}{U}
+oracle=Shadow\nSuspend 2—{1}{U}

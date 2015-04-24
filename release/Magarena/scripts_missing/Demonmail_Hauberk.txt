@@ -8,4 +8,4 @@ cost={4}
 ability=Equipped creature gets +4/+2.;\
         Equip—Sacrifice a creature.
 timing=main
-oracle=Equipped creature gets +4/+2. Equip—Sacrifice a creature.
+oracle=Equipped creature gets +4/+2.\nEquip—Sacrifice a creature.

@@ -8,4 +8,4 @@ cost={2}{G}
 ability=Enchant creature;\
         Enchanted creature gets +2/+2 for each other creature on the battlefield that shares a creature type with it.
 timing=main
-oracle=Enchant creature. Enchanted creature gets +2/+2 for each other creature on the battlefield that shares a creature type with it.
+oracle=Enchant creature\nEnchanted creature gets +2/+2 for each other creature on the battlefield that shares a creature type with it.

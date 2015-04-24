@@ -7,4 +7,4 @@ cost={3}
 ability=Arcane spells you cast cost {1} less to cast.;\
         Spirit creatures you control get +1/+1.
 timing=main
-oracle=Arcane spells you cast cost {1} less to cast. Spirit creatures you control get +1/+1.
+oracle=Arcane spells you cast cost {1} less to cast.\nSpirit creatures you control get +1/+1.

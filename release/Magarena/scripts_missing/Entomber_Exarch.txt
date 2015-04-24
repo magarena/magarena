@@ -10,4 +10,4 @@ ability=When SN enters the battlefield, choose one — \
         (1) Return target creature card from your graveyard to your hand. \
         (2) Target opponent reveals his or her hand, you choose a noncreature card from it, then that player discards that card.
 timing=main
-oracle=When Entomber Exarch enters the battlefield, choose one — • Return target creature card from your graveyard to your hand. • Target opponent reveals his or her hand, you choose a noncreature card from it, then that player discards that card.
+oracle=When Entomber Exarch enters the battlefield, choose one —\n• Return target creature card from your graveyard to your hand.\n• Target opponent reveals his or her hand, you choose a noncreature card from it, then that player discards that card.

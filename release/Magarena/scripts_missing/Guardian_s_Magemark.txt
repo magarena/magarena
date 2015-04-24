@@ -9,4 +9,4 @@ ability=Flash;\
         Enchant creature;\
         Creatures you control that are enchanted get +1/+1.
 timing=main
-oracle=Flash. Enchant creature. Creatures you control that are enchanted get +1/+1.
+oracle=Flash\nEnchant creature\nCreatures you control that are enchanted get +1/+1.

@@ -9,4 +9,4 @@ pt=2/2
 ability=First strike;\
         {1}{W}: Tap target creature blocking SN.
 timing=main
-oracle=First strike. {1}{W}: Tap target creature blocking Master of Arms.
+oracle=First strike\n{1}{W}: Tap target creature blocking Master of Arms.

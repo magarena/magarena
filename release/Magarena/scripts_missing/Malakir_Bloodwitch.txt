@@ -9,4 +9,4 @@ pt=4/4
 ability=Flying, protection from white;\
         When SN enters the battlefield, each opponent loses life equal to the number of Vampires you control. You gain life equal to the life lost this way.
 timing=main
-oracle=Flying, protection from white. When Malakir Bloodwitch enters the battlefield, each opponent loses life equal to the number of Vampires you control. You gain life equal to the life lost this way.
+oracle=Flying, protection from white\nWhen Malakir Bloodwitch enters the battlefield, each opponent loses life equal to the number of Vampires you control. You gain life equal to the life lost this way.

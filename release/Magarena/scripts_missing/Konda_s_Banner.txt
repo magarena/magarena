@@ -10,4 +10,4 @@ ability=SN can be attached only to a legendary creature.;\
         Creatures that share a creature type with equipped creature get +1/+1.;\
         Equip {2}
 timing=main
-oracle=Konda's Banner can be attached only to a legendary creature. Creatures that share a color with equipped creature get +1/+1. Creatures that share a creature type with equipped creature get +1/+1. Equip {2}
+oracle=Konda's Banner can be attached only to a legendary creature.\nCreatures that share a color with equipped creature get +1/+1.\nCreatures that share a creature type with equipped creature get +1/+1.\nEquip {2}

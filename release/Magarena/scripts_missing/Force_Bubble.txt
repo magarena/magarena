@@ -8,4 +8,4 @@ ability=If damage would be dealt to you, put that many depletion counters on SN 
         When there are four or more depletion counters on SN, sacrifice it.;\
         At the beginning of each end step, remove all depletion counters from SN.
 timing=main
-oracle=If damage would be dealt to you, put that many depletion counters on Force Bubble instead. When there are four or more depletion counters on Force Bubble, sacrifice it. At the beginning of each end step, remove all depletion counters from Force Bubble.
+oracle=If damage would be dealt to you, put that many depletion counters on Force Bubble instead.\nWhen there are four or more depletion counters on Force Bubble, sacrifice it.\nAt the beginning of each end step, remove all depletion counters from Force Bubble.

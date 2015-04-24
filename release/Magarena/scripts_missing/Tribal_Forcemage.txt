@@ -9,4 +9,4 @@ pt=1/1
 ability=Morph {1}{G};\
         When SN is turned face up, creatures of the creature type of your choice get +2/+2 and gain trample until end of turn.
 timing=main
-oracle=Morph {1}{G}. When Tribal Forcemage is turned face up, creatures of the creature type of your choice get +2/+2 and gain trample until end of turn.
+oracle=Morph {1}{G}\nWhen Tribal Forcemage is turned face up, creatures of the creature type of your choice get +2/+2 and gain trample until end of turn.

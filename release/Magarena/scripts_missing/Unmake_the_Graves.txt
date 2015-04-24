@@ -6,4 +6,4 @@ type=Instant
 cost={4}{B}
 effect=Convoke~Return up to two target creature cards from your graveyard to your hand.
 timing=removal
-oracle=Convoke. Return up to two target creature cards from your graveyard to your hand.
+oracle=Convoke\nReturn up to two target creature cards from your graveyard to your hand.

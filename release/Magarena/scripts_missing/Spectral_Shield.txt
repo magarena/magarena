@@ -8,4 +8,4 @@ cost={1}{W}{U}
 ability=Enchant creature;\
         Enchanted creature gets +0/+2 and can't be the target of spells.
 timing=main
-oracle=Enchant creature. Enchanted creature gets +0/+2 and can't be the target of spells.
+oracle=Enchant creature\nEnchanted creature gets +0/+2 and can't be the target of spells.

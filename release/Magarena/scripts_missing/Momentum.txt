@@ -9,4 +9,4 @@ ability=Enchant creature;\
         At the beginning of your upkeep, you may put a growth counter on SN.;\
         Enchanted creature gets +1/+1 for each growth counter on SN.
 timing=main
-oracle=Enchant creature. At the beginning of your upkeep, you may put a growth counter on Momentum. Enchanted creature gets +1/+1 for each growth counter on Momentum.
+oracle=Enchant creature\nAt the beginning of your upkeep, you may put a growth counter on Momentum.\nEnchanted creature gets +1/+1 for each growth counter on Momentum.

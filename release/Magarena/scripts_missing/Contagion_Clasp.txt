@@ -7,4 +7,4 @@ cost={2}
 ability=When SN enters the battlefield, put a -1/-1 counter on target creature.;\
         {4}, {T}: Proliferate.
 timing=main
-oracle=When Contagion Clasp enters the battlefield, put a -1/-1 counter on target creature. {4}, {T}: Proliferate.
+oracle=When Contagion Clasp enters the battlefield, put a -1/-1 counter on target creature.\n{4}, {T}: Proliferate.

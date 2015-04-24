@@ -6,4 +6,4 @@ type=Instant
 cost={1}{G}
 effect=You gain 5 life.~You gain 10 life instead if you control a creature with power 4 or greater.
 timing=removal
-oracle=You gain 5 life. Ferocious — You gain 10 life instead if you control a creature with power 4 or greater.
+oracle=You gain 5 life.\nFerocious — You gain 10 life instead if you control a creature with power 4 or greater.

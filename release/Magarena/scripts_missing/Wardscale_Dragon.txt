@@ -9,4 +9,4 @@ pt=4/4
 ability=Flying;\
         As long as SN is attacking, defending player can't cast spells.
 timing=main
-oracle=Flying. As long as Wardscale Dragon is attacking, defending player can't cast spells.
+oracle=Flying\nAs long as Wardscale Dragon is attacking, defending player can't cast spells.

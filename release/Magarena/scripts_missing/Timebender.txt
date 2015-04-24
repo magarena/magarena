@@ -11,4 +11,4 @@ ability=Morph {U};\
         (1) Remove two time counters from target permanent or suspended card. \
         (2) Put two time counters on target permanent with a time counter on it or suspended card.
 timing=main
-oracle=Morph {U}. When Timebender is turned face up, choose one — • Remove two time counters from target permanent or suspended card. • Put two time counters on target permanent with a time counter on it or suspended card.
+oracle=Morph {U}\nWhen Timebender is turned face up, choose one —\n• Remove two time counters from target permanent or suspended card.\n• Put two time counters on target permanent with a time counter on it or suspended card.

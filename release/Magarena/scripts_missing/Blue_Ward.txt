@@ -8,4 +8,4 @@ cost={W}
 ability=Enchant creature;\
         Enchanted creature has protection from blue. This effect doesn't remove SN.
 timing=main
-oracle=Enchant creature. Enchanted creature has protection from blue. This effect doesn't remove Blue Ward.
+oracle=Enchant creature\nEnchanted creature has protection from blue. This effect doesn't remove Blue Ward.

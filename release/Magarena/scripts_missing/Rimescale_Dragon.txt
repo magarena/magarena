@@ -10,4 +10,4 @@ ability=Flying;\
         {2}{S}: Tap target creature and put an ice counter on it.;\
         Creatures with ice counters on them don't untap during their controllers' untap steps.
 timing=main
-oracle=Flying. {2}{S}: Tap target creature and put an ice counter on it. Creatures with ice counters on them don't untap during their controllers' untap steps.
+oracle=Flying\n{2}{S}: Tap target creature and put an ice counter on it.\nCreatures with ice counters on them don't untap during their controllers' untap steps.

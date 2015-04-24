@@ -6,4 +6,4 @@ type=Instant
 cost={U}
 effect=SN costs {U} more to cast for each target beyond the first.~Return any number of target enchantments to their owners' hands.
 timing=removal
-oracle=Strive — Kiora's Dismissal costs {U} more to cast for each target beyond the first. Return any number of target enchantments to their owners' hands.
+oracle=Strive — Kiora's Dismissal costs {U} more to cast for each target beyond the first.\nReturn any number of target enchantments to their owners' hands.

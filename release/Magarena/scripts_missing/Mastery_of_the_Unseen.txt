@@ -7,4 +7,4 @@ cost={1}{W}
 ability=Whenever a permanent you control is turned face up, you gain 1 life for each creature you control.;\
         {3}{W}: Manifest the top card of your library.
 timing=main
-oracle=Whenever a permanent you control is turned face up, you gain 1 life for each creature you control. {3}{W}: Manifest the top card of your library.
+oracle=Whenever a permanent you control is turned face up, you gain 1 life for each creature you control.\n{3}{W}: Manifest the top card of your library.

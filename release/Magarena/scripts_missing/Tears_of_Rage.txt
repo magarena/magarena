@@ -6,4 +6,4 @@ type=Instant
 cost={2}{R}{R}
 effect=Cast SN only during the declare attackers step.~Attacking creatures you control get +X/+0 until end of turn, where X is the number of attacking creatures. Sacrifice those creatures at the beginning of the next end step.
 timing=removal
-oracle=Cast Tears of Rage only during the declare attackers step. Attacking creatures you control get +X/+0 until end of turn, where X is the number of attacking creatures. Sacrifice those creatures at the beginning of the next end step.
+oracle=Cast Tears of Rage only during the declare attackers step.\nAttacking creatures you control get +X/+0 until end of turn, where X is the number of attacking creatures. Sacrifice those creatures at the beginning of the next end step.

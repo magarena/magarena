@@ -9,4 +9,4 @@ pt=2/2
 ability=When SN enters the battlefield, exile all artifact and enchantment cards from all graveyards.;\
         When SN leaves the battlefield, return all artifact and enchantment cards from all graveyards to their owners' hands.
 timing=main
-oracle=When Saprazzan Bailiff enters the battlefield, exile all artifact and enchantment cards from all graveyards. When Saprazzan Bailiff leaves the battlefield, return all artifact and enchantment cards from all graveyards to their owners' hands.
+oracle=When Saprazzan Bailiff enters the battlefield, exile all artifact and enchantment cards from all graveyards.\nWhen Saprazzan Bailiff leaves the battlefield, return all artifact and enchantment cards from all graveyards to their owners' hands.

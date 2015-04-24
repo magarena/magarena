@@ -9,4 +9,4 @@ pt=1/3
 ability={U}, {T}: Target creature attacks target opponent this turn if able.;\
         Morph {U}
 timing=main
-oracle={U}, {T}: Target creature attacks target opponent this turn if able. Morph {U}
+oracle={U}, {T}: Target creature attacks target opponent this turn if able.\nMorph {U}

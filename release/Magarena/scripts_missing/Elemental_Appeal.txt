@@ -6,4 +6,4 @@ type=Sorcery
 cost={R}{R}{R}{R}
 effect=Kicker {5}~Put a 7/1 red Elemental creature token with trample and haste onto the battlefield. Exile it at the beginning of the next end step. If SN was kicked, that creature gets +7/+0 until end of turn.
 timing=main
-oracle=Kicker {5}. Put a 7/1 red Elemental creature token with trample and haste onto the battlefield. Exile it at the beginning of the next end step. If Elemental Appeal was kicked, that creature gets +7/+0 until end of turn.
+oracle=Kicker {5}\nPut a 7/1 red Elemental creature token with trample and haste onto the battlefield. Exile it at the beginning of the next end step. If Elemental Appeal was kicked, that creature gets +7/+0 until end of turn.

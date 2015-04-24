@@ -9,4 +9,4 @@ pt=3/3
 ability=Defender;\
         As long as SN is enchanted, it can attack as though it didn't have defender.
 timing=main
-oracle=Defender. As long as Pillar of War is enchanted, it can attack as though it didn't have defender.
+oracle=Defender\nAs long as Pillar of War is enchanted, it can attack as though it didn't have defender.

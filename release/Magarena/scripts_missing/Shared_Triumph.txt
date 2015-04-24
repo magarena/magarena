@@ -7,4 +7,4 @@ cost={1}{W}
 ability=As SN enters the battlefield, choose a creature type.;\
         Creatures of the chosen type get +1/+1.
 timing=main
-oracle=As Shared Triumph enters the battlefield, choose a creature type. Creatures of the chosen type get +1/+1.
+oracle=As Shared Triumph enters the battlefield, choose a creature type.\nCreatures of the chosen type get +1/+1.

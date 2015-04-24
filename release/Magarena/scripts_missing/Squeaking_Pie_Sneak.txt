@@ -9,4 +9,4 @@ pt=2/2
 ability=As an additional cost to cast SN, reveal a Goblin card from your hand or pay {3}.;\
         Fear
 timing=main
-oracle=As an additional cost to cast Squeaking Pie Sneak, reveal a Goblin card from your hand or pay {3}. Fear
+oracle=As an additional cost to cast Squeaking Pie Sneak, reveal a Goblin card from your hand or pay {3}.\nFear

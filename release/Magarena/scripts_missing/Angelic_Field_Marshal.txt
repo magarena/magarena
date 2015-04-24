@@ -9,4 +9,4 @@ pt=3/3
 ability=Flying;\
         Lieutenant — As long as you control your commander, SN gets +2/+2 and creatures you control have vigilance.
 timing=main
-oracle=Flying. Lieutenant — As long as you control your commander, Angelic Field Marshal gets +2/+2 and creatures you control have vigilance.
+oracle=Flying\nLieutenant — As long as you control your commander, Angelic Field Marshal gets +2/+2 and creatures you control have vigilance.

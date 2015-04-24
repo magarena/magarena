@@ -11,4 +11,4 @@ ability=Defender;\
         {4}: SN loses defender until end of turn.;\
         Transmute {1}{U}{U}
 timing=main
-oracle=Defender. When Grozoth enters the battlefield, you may search your library for any number of cards that have converted mana cost 9, reveal them, and put them into your hand. If you do, shuffle your library. {4}: Grozoth loses defender until end of turn. Transmute {1}{U}{U}
+oracle=Defender\nWhen Grozoth enters the battlefield, you may search your library for any number of cards that have converted mana cost 9, reveal them, and put them into your hand. If you do, shuffle your library.\n{4}: Grozoth loses defender until end of turn.\nTransmute {1}{U}{U}

@@ -8,4 +8,4 @@ ability=As SN enters the battlefield, choose a color.;\
         At the beginning of each opponent's upkeep, SN deals X damage to that player, where X is the number of nontoken permanents of the chosen color he or she controls.;\
         At the beginning of your upkeep, destroy SN unless you sacrifice two Islands.
 timing=main
-oracle=As Psychic Allergy enters the battlefield, choose a color. At the beginning of each opponent's upkeep, Psychic Allergy deals X damage to that player, where X is the number of nontoken permanents of the chosen color he or she controls. At the beginning of your upkeep, destroy Psychic Allergy unless you sacrifice two Islands.
+oracle=As Psychic Allergy enters the battlefield, choose a color.\nAt the beginning of each opponent's upkeep, Psychic Allergy deals X damage to that player, where X is the number of nontoken permanents of the chosen color he or she controls.\nAt the beginning of your upkeep, destroy Psychic Allergy unless you sacrifice two Islands.

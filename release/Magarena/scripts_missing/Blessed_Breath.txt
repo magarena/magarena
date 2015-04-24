@@ -7,4 +7,4 @@ subtype=Arcane
 cost={W}
 effect=Target creature you control gains protection from the color of your choice until end of turn.~Splice onto Arcane {W}
 timing=removal
-oracle=Target creature you control gains protection from the color of your choice until end of turn. Splice onto Arcane {W}
+oracle=Target creature you control gains protection from the color of your choice until end of turn.\nSplice onto Arcane {W}

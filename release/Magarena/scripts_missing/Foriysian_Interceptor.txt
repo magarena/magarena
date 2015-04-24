@@ -10,4 +10,4 @@ ability=Flash;\
         Defender;\
         SN can block an additional creature.
 timing=main
-oracle=Flash. Defender. Foriysian Interceptor can block an additional creature.
+oracle=Flash\nDefender\nForiysian Interceptor can block an additional creature.

@@ -8,4 +8,4 @@ cost={1}
 ability=Equipped creature has "{T}, Unattach SN: Tap target creature.";\
         Equip {1}
 timing=main
-oracle=Equipped creature has "{T}, Unattach Leonin Bola: Tap target creature.". Equip {1}
+oracle=Equipped creature has "{T}, Unattach Leonin Bola: Tap target creature."\nEquip {1}

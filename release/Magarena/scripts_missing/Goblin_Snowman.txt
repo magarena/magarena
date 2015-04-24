@@ -9,4 +9,4 @@ pt=1/1
 ability=Whenever SN blocks, prevent all combat damage that would be dealt to and dealt by it this turn.;\
         {T}: SN deals 1 damage to target creature it's blocking.
 timing=main
-oracle=Whenever Goblin Snowman blocks, prevent all combat damage that would be dealt to and dealt by it this turn. {T}: Goblin Snowman deals 1 damage to target creature it's blocking.
+oracle=Whenever Goblin Snowman blocks, prevent all combat damage that would be dealt to and dealt by it this turn.\n{T}: Goblin Snowman deals 1 damage to target creature it's blocking.

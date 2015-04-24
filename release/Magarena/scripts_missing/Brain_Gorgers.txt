@@ -9,4 +9,4 @@ pt=4/2
 ability=When you cast SN, any player may sacrifice a creature. If a player does, counter SN.;\
         Madness {1}{B}
 timing=main
-oracle=When you cast Brain Gorgers, any player may sacrifice a creature. If a player does, counter Brain Gorgers. Madness {1}{B}
+oracle=When you cast Brain Gorgers, any player may sacrifice a creature. If a player does, counter Brain Gorgers.\nMadness {1}{B}

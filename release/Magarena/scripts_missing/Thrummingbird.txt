@@ -9,4 +9,4 @@ pt=1/1
 ability=Flying;\
         Whenever SN deals combat damage to a player, proliferate.
 timing=main
-oracle=Flying. Whenever Thrummingbird deals combat damage to a player, proliferate.
+oracle=Flying\nWhenever Thrummingbird deals combat damage to a player, proliferate.

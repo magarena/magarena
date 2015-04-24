@@ -9,4 +9,4 @@ pt=1/1
 ability=Bloodthirst 2;\
         SN can't be blocked except by two or more creatures.
 timing=main
-oracle=Bloodthirst 2. Stormblood Berserker can't be blocked except by two or more creatures.
+oracle=Bloodthirst 2\nStormblood Berserker can't be blocked except by two or more creatures.

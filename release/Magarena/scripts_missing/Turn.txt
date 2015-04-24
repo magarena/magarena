@@ -6,4 +6,4 @@ type=Instant
 cost={2}{U}
 effect=Until end of turn, target creature loses all abilities and becomes a red Weird with base power and toughness 0/1.~Fuse
 timing=removal
-oracle=Until end of turn, target creature loses all abilities and becomes a red Weird with base power and toughness 0/1. Fuse
+oracle=Until end of turn, target creature loses all abilities and becomes a red Weird with base power and toughness 0/1.\nFuse

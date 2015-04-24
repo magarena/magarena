@@ -7,4 +7,4 @@ ability=SN enters the battlefield tapped.;\
         When SN enters the battlefield, return a land you control to its owner's hand.;\
         {T}: Add {R}{G} to your mana pool.
 timing=main
-oracle=Gruul Turf enters the battlefield tapped. When Gruul Turf enters the battlefield, return a land you control to its owner's hand. {T}: Add {R}{G} to your mana pool.
+oracle=Gruul Turf enters the battlefield tapped.\nWhen Gruul Turf enters the battlefield, return a land you control to its owner's hand.\n{T}: Add {R}{G} to your mana pool.

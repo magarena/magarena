@@ -8,4 +8,4 @@ ability=If damage would be dealt to you, exile that many cards from your graveya
         If you would gain life, draw that many cards instead.;\
         When SN leaves the battlefield, you lose the game.
 timing=main
-oracle=If damage would be dealt to you, exile that many cards from your graveyard instead. If you can't, you lose the game. If you would gain life, draw that many cards instead. When Nefarious Lich leaves the battlefield, you lose the game.
+oracle=If damage would be dealt to you, exile that many cards from your graveyard instead. If you can't, you lose the game.\nIf you would gain life, draw that many cards instead.\nWhen Nefarious Lich leaves the battlefield, you lose the game.

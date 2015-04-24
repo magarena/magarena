@@ -10,4 +10,4 @@ ability=Flying;\
         When SN enters the battlefield, return two creatures you control to their owner's hand.;\
         Whenever SN or another creature is returned to your hand from the battlefield, put a 1/1 white Soldier creature token onto the battlefield.
 timing=main
-oracle=Flying. When Stormfront Riders enters the battlefield, return two creatures you control to their owner's hand. Whenever Stormfront Riders or another creature is returned to your hand from the battlefield, put a 1/1 white Soldier creature token onto the battlefield.
+oracle=Flying\nWhen Stormfront Riders enters the battlefield, return two creatures you control to their owner's hand.\nWhenever Stormfront Riders or another creature is returned to your hand from the battlefield, put a 1/1 white Soldier creature token onto the battlefield.

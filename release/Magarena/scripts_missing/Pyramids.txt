@@ -8,4 +8,4 @@ ability={2}: Choose one — \
         (1) Destroy target Aura attached to a land. \
         (2) The next time target land would be destroyed this turn, remove all damage marked on it instead.
 timing=main
-oracle={2}: Choose one — • Destroy target Aura attached to a land. • The next time target land would be destroyed this turn, remove all damage marked on it instead.
+oracle={2}: Choose one —\n• Destroy target Aura attached to a land.\n• The next time target land would be destroyed this turn, remove all damage marked on it instead.

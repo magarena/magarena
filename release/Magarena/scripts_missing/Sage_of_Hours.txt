@@ -9,4 +9,4 @@ pt=1/1
 ability=Whenever you cast a spell that targets SN, put a +1/+1 counter on it.;\
         Remove all +1/+1 counters from SN: For each five counters removed this way, take an extra turn after this one.
 timing=main
-oracle=Heroic — Whenever you cast a spell that targets Sage of Hours, put a +1/+1 counter on it. Remove all +1/+1 counters from Sage of Hours: For each five counters removed this way, take an extra turn after this one.
+oracle=Heroic — Whenever you cast a spell that targets Sage of Hours, put a +1/+1 counter on it.\nRemove all +1/+1 counters from Sage of Hours: For each five counters removed this way, take an extra turn after this one.

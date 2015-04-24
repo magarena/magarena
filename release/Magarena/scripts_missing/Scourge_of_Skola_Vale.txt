@@ -10,4 +10,4 @@ ability=Trample;\
         SN enters the battlefield with two +1/+1 counters on it.;\
         {T}, Sacrifice another creature: Put a number of +1/+1 counters on SN equal to the sacrificed creature's toughness.
 timing=main
-oracle=Trample. Scourge of Skola Vale enters the battlefield with two +1/+1 counters on it. {T}, Sacrifice another creature: Put a number of +1/+1 counters on Scourge of Skola Vale equal to the sacrificed creature's toughness.
+oracle=Trample\nScourge of Skola Vale enters the battlefield with two +1/+1 counters on it.\n{T}, Sacrifice another creature: Put a number of +1/+1 counters on Scourge of Skola Vale equal to the sacrificed creature's toughness.

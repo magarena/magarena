@@ -9,4 +9,4 @@ pt=2/2
 ability=Flying;\
         Sacrifice SN: Return up to two target creatures to their owners' hands. Activate this ability only during your upkeep.
 timing=main
-oracle=Flying. Sacrifice Aven Augur: Return up to two target creatures to their owners' hands. Activate this ability only during your upkeep.
+oracle=Flying\nSacrifice Aven Augur: Return up to two target creatures to their owners' hands. Activate this ability only during your upkeep.

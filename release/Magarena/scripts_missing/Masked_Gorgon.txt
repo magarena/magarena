@@ -9,4 +9,4 @@ pt=5/5
 ability=Green creatures and white creatures have protection from Gorgons.;\
         Threshold — SN has protection from green and from white as long as seven or more cards are in your graveyard.
 timing=main
-oracle=Green creatures and white creatures have protection from Gorgons. Threshold — Masked Gorgon has protection from green and from white as long as seven or more cards are in your graveyard.
+oracle=Green creatures and white creatures have protection from Gorgons.\nThreshold — Masked Gorgon has protection from green and from white as long as seven or more cards are in your graveyard.

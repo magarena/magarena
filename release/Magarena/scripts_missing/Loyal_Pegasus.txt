@@ -9,4 +9,4 @@ pt=2/1
 ability=Flying;\
         SN can't attack or block alone.
 timing=main
-oracle=Flying. Loyal Pegasus can't attack or block alone.
+oracle=Flying\nLoyal Pegasus can't attack or block alone.

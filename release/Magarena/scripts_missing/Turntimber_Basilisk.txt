@@ -9,4 +9,4 @@ pt=2/1
 ability=Deathtouch;\
         Landfall — Whenever a land enters the battlefield under your control, you may have target creature block SN this turn if able.
 timing=main
-oracle=Deathtouch. Landfall — Whenever a land enters the battlefield under your control, you may have target creature block Turntimber Basilisk this turn if able.
+oracle=Deathtouch\nLandfall — Whenever a land enters the battlefield under your control, you may have target creature block Turntimber Basilisk this turn if able.

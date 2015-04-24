@@ -6,4 +6,4 @@ type=Sorcery
 cost={4}{R}{W}
 effect=Each player sacrifices an artifact, a creature, an enchantment, a land, and a planeswalker.~Fuse
 timing=main
-oracle=Each player sacrifices an artifact, a creature, an enchantment, a land, and a planeswalker. Fuse
+oracle=Each player sacrifices an artifact, a creature, an enchantment, a land, and a planeswalker.\nFuse

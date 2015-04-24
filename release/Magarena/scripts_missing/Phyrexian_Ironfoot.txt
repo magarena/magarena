@@ -9,4 +9,4 @@ pt=3/4
 ability=SN doesn't untap during your untap step.;\
         {1}{S}: Untap SN.
 timing=main
-oracle=Phyrexian Ironfoot doesn't untap during your untap step. {1}{S}: Untap Phyrexian Ironfoot.
+oracle=Phyrexian Ironfoot doesn't untap during your untap step.\n{1}{S}: Untap Phyrexian Ironfoot.

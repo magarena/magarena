@@ -9,4 +9,4 @@ pt=8/8
 ability=Trample;\
         Whenever SN attacks, if defending player controls no black permanents, it doesn't untap during your next untap step.
 timing=main
-oracle=Trample. Whenever Spectral Force attacks, if defending player controls no black permanents, it doesn't untap during your next untap step.
+oracle=Trample\nWhenever Spectral Force attacks, if defending player controls no black permanents, it doesn't untap during your next untap step.

@@ -6,4 +6,4 @@ type=Instant
 cost={1}{W}
 effect=Target player gains 4 life.~If you had a land enter the battlefield under your control this turn, that player gains 8 life instead.
 timing=removal
-oracle=Target player gains 4 life. Landfall — If you had a land enter the battlefield under your control this turn, that player gains 8 life instead.
+oracle=Target player gains 4 life.\nLandfall — If you had a land enter the battlefield under your control this turn, that player gains 8 life instead.

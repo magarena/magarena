@@ -6,4 +6,4 @@ type=Sorcery
 cost={2}{B}{B}
 effect=As an additional cost to cast SN, sacrifice a creature.~Destroy target creature. Its controller loses life equal to the number of creatures that died this turn.
 timing=main
-oracle=As an additional cost to cast Flesh Allergy, sacrifice a creature. Destroy target creature. Its controller loses life equal to the number of creatures that died this turn.
+oracle=As an additional cost to cast Flesh Allergy, sacrifice a creature.\nDestroy target creature. Its controller loses life equal to the number of creatures that died this turn.

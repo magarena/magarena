@@ -6,4 +6,4 @@ type=Instant
 cost={1}{W}
 effect=Choose one — (1) Prevent all combat damage that would be dealt this turn. (2) Regenerate target creature. (3) Counter target spell that targets you.
 timing=removal
-oracle=Choose one — • Prevent all combat damage that would be dealt this turn. • Regenerate target creature. • Counter target spell that targets you.
+oracle=Choose one —\n• Prevent all combat damage that would be dealt this turn.\n• Regenerate target creature.\n• Counter target spell that targets you.

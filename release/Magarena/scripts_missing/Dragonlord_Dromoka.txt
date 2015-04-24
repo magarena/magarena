@@ -10,4 +10,4 @@ ability=SN can't be countered.;\
         Flying, lifelink;\
         Your opponents can't cast spells during your turn.
 timing=main
-oracle=Dragonlord Dromoka can't be countered. Flying, lifelink. Your opponents can't cast spells during your turn.
+oracle=Dragonlord Dromoka can't be countered.\nFlying, lifelink\nYour opponents can't cast spells during your turn.

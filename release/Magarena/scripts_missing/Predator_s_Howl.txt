@@ -6,4 +6,4 @@ type=Instant
 cost={3}{G}
 effect=Put a 2/2 green Wolf creature token onto the battlefield.~Put three 2/2 green Wolf creature tokens onto the battlefield instead if a creature died this turn.
 timing=removal
-oracle=Put a 2/2 green Wolf creature token onto the battlefield. Morbid — Put three 2/2 green Wolf creature tokens onto the battlefield instead if a creature died this turn.
+oracle=Put a 2/2 green Wolf creature token onto the battlefield.\nMorbid — Put three 2/2 green Wolf creature tokens onto the battlefield instead if a creature died this turn.

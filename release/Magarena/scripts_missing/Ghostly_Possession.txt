@@ -9,4 +9,4 @@ ability=Enchant creature;\
         Enchanted creature has flying.;\
         Prevent all combat damage that would be dealt to and dealt by enchanted creature.
 timing=main
-oracle=Enchant creature. Enchanted creature has flying. Prevent all combat damage that would be dealt to and dealt by enchanted creature.
+oracle=Enchant creature\nEnchanted creature has flying.\nPrevent all combat damage that would be dealt to and dealt by enchanted creature.

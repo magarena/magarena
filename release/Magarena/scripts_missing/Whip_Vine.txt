@@ -10,4 +10,4 @@ ability=Defender; reach;\
         You may choose not to untap SN during your untap step.;\
         {T}: Tap target creature with flying blocked by SN. That creature doesn't untap during its controller's untap step for as long as SN remains tapped.
 timing=main
-oracle=Defender; reach. You may choose not to untap Whip Vine during your untap step. {T}: Tap target creature with flying blocked by Whip Vine. That creature doesn't untap during its controller's untap step for as long as Whip Vine remains tapped.
+oracle=Defender; reach\nYou may choose not to untap Whip Vine during your untap step.\n{T}: Tap target creature with flying blocked by Whip Vine. That creature doesn't untap during its controller's untap step for as long as Whip Vine remains tapped.

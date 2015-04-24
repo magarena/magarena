@@ -6,4 +6,4 @@ type=Instant
 cost={W}
 effect=Choose one — (1) Destroy target Aura attached to a creature. (2) Target Soldier creature gets +2/+2 until end of turn. (3) Creatures you control gain vigilance until end of turn.
 timing=removal
-oracle=Choose one — • Destroy target Aura attached to a creature. • Target Soldier creature gets +2/+2 until end of turn. • Creatures you control gain vigilance until end of turn.
+oracle=Choose one —\n• Destroy target Aura attached to a creature.\n• Target Soldier creature gets +2/+2 until end of turn.\n• Creatures you control gain vigilance until end of turn.

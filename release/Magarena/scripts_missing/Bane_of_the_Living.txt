@@ -9,4 +9,4 @@ pt=4/3
 ability=Morph {X}{B}{B};\
         When SN is turned face up, all creatures get -X/-X until end of turn.
 timing=main
-oracle=Morph {X}{B}{B}. When Bane of the Living is turned face up, all creatures get -X/-X until end of turn.
+oracle=Morph {X}{B}{B}\nWhen Bane of the Living is turned face up, all creatures get -X/-X until end of turn.

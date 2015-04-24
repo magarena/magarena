@@ -10,4 +10,4 @@ ability=Whenever SN attacks, you lose half your life, rounded up.;\
         Whenever SN deals combat damage to a player, that player loses half his or her life, rounded up.;\
         Morph {3}{B}{B}
 timing=main
-oracle=Whenever Ebonblade Reaper attacks, you lose half your life, rounded up. Whenever Ebonblade Reaper deals combat damage to a player, that player loses half his or her life, rounded up. Morph {3}{B}{B}
+oracle=Whenever Ebonblade Reaper attacks, you lose half your life, rounded up.\nWhenever Ebonblade Reaper deals combat damage to a player, that player loses half his or her life, rounded up.\nMorph {3}{B}{B}

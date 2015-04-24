@@ -8,4 +8,4 @@ cost={W}
 ability=Enchant land;\
         Enchanted land has "{T}: Counter target spell if it would destroy a land you control."
 timing=main
-oracle=Enchant land. Enchanted land has "{T}: Counter target spell if it would destroy a land you control."
+oracle=Enchant land\nEnchanted land has "{T}: Counter target spell if it would destroy a land you control."

@@ -7,4 +7,4 @@ cost={U}
 ability={3}{U}{U}: Shuffle your library.;\
         {X}: Look at the top X cards of your library, then put them back in any order.
 timing=main
-oracle={3}{U}{U}: Shuffle your library. {X}: Look at the top X cards of your library, then put them back in any order.
+oracle={3}{U}{U}: Shuffle your library.\n{X}: Look at the top X cards of your library, then put them back in any order.

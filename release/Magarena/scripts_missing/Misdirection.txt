@@ -6,4 +6,4 @@ type=Instant
 cost={3}{U}{U}
 effect=You may exile a blue card from your hand rather than pay SN's mana cost.~Change the target of target spell with a single target.
 timing=removal
-oracle=You may exile a blue card from your hand rather than pay Misdirection's mana cost. Change the target of target spell with a single target.
+oracle=You may exile a blue card from your hand rather than pay Misdirection's mana cost.\nChange the target of target spell with a single target.

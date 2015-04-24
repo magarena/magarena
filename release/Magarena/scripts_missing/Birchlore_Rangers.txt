@@ -9,4 +9,4 @@ pt=1/1
 ability=Tap two untapped Elves you control: Add one mana of any color to your mana pool.;\
         Morph {G}
 timing=main
-oracle=Tap two untapped Elves you control: Add one mana of any color to your mana pool. Morph {G}
+oracle=Tap two untapped Elves you control: Add one mana of any color to your mana pool.\nMorph {G}

@@ -11,4 +11,4 @@ ability=Kicker {X}{2};\
         When SN enters the battlefield, if it was kicked, put X feather counters on it.;\
         Other Bird creatures get +1/+1 for each feather counter on SN.
 timing=main
-oracle=Kicker {X}{2}. Flying. When Kangee, Aerie Keeper enters the battlefield, if it was kicked, put X feather counters on it. Other Bird creatures get +1/+1 for each feather counter on Kangee, Aerie Keeper.
+oracle=Kicker {X}{2}\nFlying\nWhen Kangee, Aerie Keeper enters the battlefield, if it was kicked, put X feather counters on it.\nOther Bird creatures get +1/+1 for each feather counter on Kangee, Aerie Keeper.

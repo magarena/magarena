@@ -9,4 +9,4 @@ pt=2/3
 ability=Defender;\
         Your maximum hand size is increased by one.
 timing=main
-oracle=Defender. Your maximum hand size is increased by one.
+oracle=Defender\nYour maximum hand size is increased by one.

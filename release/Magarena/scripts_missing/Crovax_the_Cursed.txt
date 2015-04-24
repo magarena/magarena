@@ -10,4 +10,4 @@ ability=SN enters the battlefield with four +1/+1 counters on it.;\
         At the beginning of your upkeep, you may sacrifice a creature. If you do, put a +1/+1 counter on Crovax. If you don't, remove a +1/+1 counter from Crovax.;\
         {B}: Crovax gains flying until end of turn.
 timing=main
-oracle=Crovax the Cursed enters the battlefield with four +1/+1 counters on it. At the beginning of your upkeep, you may sacrifice a creature. If you do, put a +1/+1 counter on Crovax. If you don't, remove a +1/+1 counter from Crovax. {B}: Crovax gains flying until end of turn.
+oracle=Crovax the Cursed enters the battlefield with four +1/+1 counters on it.\nAt the beginning of your upkeep, you may sacrifice a creature. If you do, put a +1/+1 counter on Crovax. If you don't, remove a +1/+1 counter from Crovax.\n{B}: Crovax gains flying until end of turn.

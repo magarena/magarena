@@ -9,4 +9,4 @@ pt=2/2
 ability=Whenever SN deals combat damage to a player, you may sacrifice it. If you do, that player discards three cards.;\
         Morph {1}{B}
 timing=main
-oracle=Whenever Haunted Cadaver deals combat damage to a player, you may sacrifice it. If you do, that player discards three cards. Morph {1}{B}
+oracle=Whenever Haunted Cadaver deals combat damage to a player, you may sacrifice it. If you do, that player discards three cards.\nMorph {1}{B}

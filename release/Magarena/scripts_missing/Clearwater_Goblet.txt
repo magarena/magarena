@@ -7,4 +7,4 @@ cost={5}
 ability=Sunburst;\
         At the beginning of your upkeep, you may gain life equal to the number of charge counters on SN.
 timing=main
-oracle=Sunburst. At the beginning of your upkeep, you may gain life equal to the number of charge counters on Clearwater Goblet.
+oracle=Sunburst\nAt the beginning of your upkeep, you may gain life equal to the number of charge counters on Clearwater Goblet.

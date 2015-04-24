@@ -6,4 +6,4 @@ type=Sorcery
 cost={X}{X}{R}
 effect=SN deals X damage divided as you choose among any number of target creatures and/or players.~Flashback—{R}{R}, Discard X cards.
 timing=main
-oracle=Conflagrate deals X damage divided as you choose among any number of target creatures and/or players. Flashback—{R}{R}, Discard X cards.
+oracle=Conflagrate deals X damage divided as you choose among any number of target creatures and/or players.\nFlashback—{R}{R}, Discard X cards.

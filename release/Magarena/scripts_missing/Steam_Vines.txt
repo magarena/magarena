@@ -8,4 +8,4 @@ cost={1}{R}{R}
 ability=Enchant land;\
         When enchanted land becomes tapped, destroy it and SN deals 1 damage to that land's controller. That player attaches SN to a land of his or her choice.
 timing=main
-oracle=Enchant land. When enchanted land becomes tapped, destroy it and Steam Vines deals 1 damage to that land's controller. That player attaches Steam Vines to a land of his or her choice.
+oracle=Enchant land\nWhen enchanted land becomes tapped, destroy it and Steam Vines deals 1 damage to that land's controller. That player attaches Steam Vines to a land of his or her choice.

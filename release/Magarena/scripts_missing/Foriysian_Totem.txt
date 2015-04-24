@@ -8,4 +8,4 @@ ability={T}: Add {R} to your mana pool.;\
         {4}{R}: SN becomes a 4/4 red Giant artifact creature with trample until end of turn.;\
         As long as SN is a creature, it can block an additional creature.
 timing=main
-oracle={T}: Add {R} to your mana pool. {4}{R}: Foriysian Totem becomes a 4/4 red Giant artifact creature with trample until end of turn. As long as Foriysian Totem is a creature, it can block an additional creature.
+oracle={T}: Add {R} to your mana pool.\n{4}{R}: Foriysian Totem becomes a 4/4 red Giant artifact creature with trample until end of turn.\nAs long as Foriysian Totem is a creature, it can block an additional creature.

@@ -9,4 +9,4 @@ ability=Enchant creature you control;\
         Enchanted creature gets +1/+1.;\
         Whenever enchanted creature deals combat damage to a player, you may sacrifice SN. If you do, destroy target artifact.
 timing=main
-oracle=Enchant creature you control. Enchanted creature gets +1/+1. Whenever enchanted creature deals combat damage to a player, you may sacrifice Flamespeaker's Will. If you do, destroy target artifact.
+oracle=Enchant creature you control\nEnchanted creature gets +1/+1.\nWhenever enchanted creature deals combat damage to a player, you may sacrifice Flamespeaker's Will. If you do, destroy target artifact.

@@ -6,4 +6,4 @@ type=Sorcery
 cost={1}{R}{R}
 effect=Each player shuffles the cards from his or her hand into his or her library, then draws that many cards.~If you control three or more artifacts, SN deals damage to each opponent equal to the number of cards that player has drawn this turn.
 timing=main
-oracle=Each player shuffles the cards from his or her hand into his or her library, then draws that many cards. Metalcraft — If you control three or more artifacts, Molten Psyche deals damage to each opponent equal to the number of cards that player has drawn this turn.
+oracle=Each player shuffles the cards from his or her hand into his or her library, then draws that many cards.\nMetalcraft — If you control three or more artifacts, Molten Psyche deals damage to each opponent equal to the number of cards that player has drawn this turn.

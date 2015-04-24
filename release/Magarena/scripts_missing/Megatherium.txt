@@ -9,4 +9,4 @@ pt=4/4
 ability=Trample;\
         When SN enters the battlefield, sacrifice it unless you pay {1} for each card in your hand.
 timing=main
-oracle=Trample. When Megatherium enters the battlefield, sacrifice it unless you pay {1} for each card in your hand.
+oracle=Trample\nWhen Megatherium enters the battlefield, sacrifice it unless you pay {1} for each card in your hand.

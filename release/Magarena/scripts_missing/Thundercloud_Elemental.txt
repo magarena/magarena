@@ -10,4 +10,4 @@ ability=Flying;\
         {3}{U}: Tap all creatures with toughness 2 or less.;\
         {3}{U}: All other creatures lose flying until end of turn.
 timing=main
-oracle=Flying. {3}{U}: Tap all creatures with toughness 2 or less. {3}{U}: All other creatures lose flying until end of turn.
+oracle=Flying\n{3}{U}: Tap all creatures with toughness 2 or less.\n{3}{U}: All other creatures lose flying until end of turn.

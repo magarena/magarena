@@ -6,4 +6,4 @@ type=Instant
 cost={1}{U}
 effect=Target creature becomes the color or colors of your choice until end of turn.~Draw a card.
 timing=removal
-oracle=Target creature becomes the color or colors of your choice until end of turn. Draw a card.
+oracle=Target creature becomes the color or colors of your choice until end of turn.\nDraw a card.

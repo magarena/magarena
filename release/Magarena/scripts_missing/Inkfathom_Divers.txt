@@ -9,4 +9,4 @@ pt=3/3
 ability=Islandwalk;\
         When SN enters the battlefield, look at the top four cards of your library, then put them back in any order.
 timing=main
-oracle=Islandwalk. When Inkfathom Divers enters the battlefield, look at the top four cards of your library, then put them back in any order.
+oracle=Islandwalk\nWhen Inkfathom Divers enters the battlefield, look at the top four cards of your library, then put them back in any order.

@@ -9,4 +9,4 @@ pt=2/4
 ability=Banding;\
         Cumulative upkeep {1}
 timing=main
-oracle=Banding. Cumulative upkeep {1}
+oracle=Banding\nCumulative upkeep {1}

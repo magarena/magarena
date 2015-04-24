@@ -7,4 +7,4 @@ cost={G}
 ability=You may play any number of lands on each of your turns.;\
         Whenever you play a land, if it wasn't the first land you played this turn, SN deals 1 damage to you.
 timing=main
-oracle=You may play any number of lands on each of your turns. Whenever you play a land, if it wasn't the first land you played this turn, Fastbond deals 1 damage to you.
+oracle=You may play any number of lands on each of your turns.\nWhenever you play a land, if it wasn't the first land you played this turn, Fastbond deals 1 damage to you.

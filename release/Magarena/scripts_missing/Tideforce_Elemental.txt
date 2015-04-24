@@ -9,4 +9,4 @@ pt=2/1
 ability={U}, {T}: You may tap or untap another target creature.;\
         Landfall — Whenever a land enters the battlefield under your control, you may untap SN.
 timing=main
-oracle={U}, {T}: You may tap or untap another target creature. Landfall — Whenever a land enters the battlefield under your control, you may untap Tideforce Elemental.
+oracle={U}, {T}: You may tap or untap another target creature.\nLandfall — Whenever a land enters the battlefield under your control, you may untap Tideforce Elemental.

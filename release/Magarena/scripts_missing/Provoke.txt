@@ -6,4 +6,4 @@ type=Instant
 cost={1}{G}
 effect=Untap target creature you don't control. That creature blocks this turn if able.~Draw a card.
 timing=removal
-oracle=Untap target creature you don't control. That creature blocks this turn if able. Draw a card.
+oracle=Untap target creature you don't control. That creature blocks this turn if able.\nDraw a card.

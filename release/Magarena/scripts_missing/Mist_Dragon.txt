@@ -10,4 +10,4 @@ ability={0}: SN gains flying.;\
         {0}: SN loses flying.;\
         {3}{U}{U}: SN phases out.
 timing=main
-oracle={0}: Mist Dragon gains flying. {0}: Mist Dragon loses flying. {3}{U}{U}: Mist Dragon phases out.
+oracle={0}: Mist Dragon gains flying.\n{0}: Mist Dragon loses flying.\n{3}{U}{U}: Mist Dragon phases out.

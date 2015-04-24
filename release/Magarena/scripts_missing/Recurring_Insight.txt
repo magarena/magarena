@@ -6,4 +6,4 @@ type=Sorcery
 cost={4}{U}{U}
 effect=Draw cards equal to the number of cards in target opponent's hand.~Rebound
 timing=main
-oracle=Draw cards equal to the number of cards in target opponent's hand. Rebound
+oracle=Draw cards equal to the number of cards in target opponent's hand.\nRebound

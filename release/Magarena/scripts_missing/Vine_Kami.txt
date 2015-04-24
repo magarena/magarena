@@ -9,4 +9,4 @@ pt=4/4
 ability=SN can't be blocked except by two or more creatures.;\
         Soulshift 6
 timing=main
-oracle=Vine Kami can't be blocked except by two or more creatures. Soulshift 6
+oracle=Vine Kami can't be blocked except by two or more creatures.\nSoulshift 6

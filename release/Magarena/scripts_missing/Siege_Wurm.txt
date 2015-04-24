@@ -9,4 +9,4 @@ pt=5/5
 ability=Convoke;\
         Trample
 timing=main
-oracle=Convoke. Trample
+oracle=Convoke\nTrample

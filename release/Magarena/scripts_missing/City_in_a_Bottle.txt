@@ -7,4 +7,4 @@ cost={2}
 ability=Whenever a nontoken permanent originally printed in the Arabian Nights expansion other than SN is on the battlefield, its controller sacrifices it.;\
         Players can't play cards originally printed in the Arabian Nights expansion.
 timing=main
-oracle=Whenever a nontoken permanent originally printed in the Arabian Nights expansion other than City in a Bottle is on the battlefield, its controller sacrifices it. Players can't play cards originally printed in the Arabian Nights expansion.
+oracle=Whenever a nontoken permanent originally printed in the Arabian Nights expansion other than City in a Bottle is on the battlefield, its controller sacrifices it.\nPlayers can't play cards originally printed in the Arabian Nights expansion.

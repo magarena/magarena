@@ -7,4 +7,4 @@ subtype=Arcane
 cost={3}{U}
 effect=Exchange control of two target lands.~Splice onto Arcane {3}{U}
 timing=removal
-oracle=Exchange control of two target lands. Splice onto Arcane {3}{U}
+oracle=Exchange control of two target lands.\nSplice onto Arcane {3}{U}

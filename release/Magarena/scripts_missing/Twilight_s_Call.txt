@@ -6,4 +6,4 @@ type=Sorcery
 cost={4}{B}{B}
 effect=You may cast SN as though it had flash if you pay {2} more to cast it.~Each player returns all creature cards from his or her graveyard to the battlefield.
 timing=main
-oracle=You may cast Twilight's Call as though it had flash if you pay {2} more to cast it. Each player returns all creature cards from his or her graveyard to the battlefield.
+oracle=You may cast Twilight's Call as though it had flash if you pay {2} more to cast it.\nEach player returns all creature cards from his or her graveyard to the battlefield.

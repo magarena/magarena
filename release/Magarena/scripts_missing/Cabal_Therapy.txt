@@ -6,4 +6,4 @@ type=Sorcery
 cost={B}
 effect=Name a nonland card. Target player reveals his or her hand and discards all cards with that name.~Flashback—Sacrifice a creature.
 timing=main
-oracle=Name a nonland card. Target player reveals his or her hand and discards all cards with that name. Flashback—Sacrifice a creature.
+oracle=Name a nonland card. Target player reveals his or her hand and discards all cards with that name.\nFlashback—Sacrifice a creature.

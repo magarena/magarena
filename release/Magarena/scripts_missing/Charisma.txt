@@ -8,4 +8,4 @@ cost={U}{U}{U}
 ability=Enchant creature;\
         Whenever enchanted creature deals damage to a creature, gain control of the other creature for as long as SN remains on the battlefield.
 timing=main
-oracle=Enchant creature. Whenever enchanted creature deals damage to a creature, gain control of the other creature for as long as Charisma remains on the battlefield.
+oracle=Enchant creature\nWhenever enchanted creature deals damage to a creature, gain control of the other creature for as long as Charisma remains on the battlefield.

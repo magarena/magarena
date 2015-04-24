@@ -9,4 +9,4 @@ pt=3/3
 ability=Exploit;\
         When SN exploits a creature, return to their owners' hands all creatures your opponents control with toughness less than the exploited creature's toughness.
 timing=main
-oracle=Exploit. When Profaner of the Dead exploits a creature, return to their owners' hands all creatures your opponents control with toughness less than the exploited creature's toughness.
+oracle=Exploit\nWhen Profaner of the Dead exploits a creature, return to their owners' hands all creatures your opponents control with toughness less than the exploited creature's toughness.

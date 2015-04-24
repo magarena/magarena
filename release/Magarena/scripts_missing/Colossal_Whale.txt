@@ -9,4 +9,4 @@ pt=5/5
 ability=Islandwalk;\
         Whenever SN attacks, you may exile target creature defending player controls until SN leaves the battlefield.
 timing=main
-oracle=Islandwalk. Whenever Colossal Whale attacks, you may exile target creature defending player controls until Colossal Whale leaves the battlefield.
+oracle=Islandwalk\nWhenever Colossal Whale attacks, you may exile target creature defending player controls until Colossal Whale leaves the battlefield.

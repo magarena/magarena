@@ -7,4 +7,4 @@ ability=SN enters the battlefield tapped.;\
         When SN enters the battlefield, return a land you control to its owner's hand.;\
         {T}: Add {R}{W} to your mana pool.
 timing=main
-oracle=Boros Garrison enters the battlefield tapped. When Boros Garrison enters the battlefield, return a land you control to its owner's hand. {T}: Add {R}{W} to your mana pool.
+oracle=Boros Garrison enters the battlefield tapped.\nWhen Boros Garrison enters the battlefield, return a land you control to its owner's hand.\n{T}: Add {R}{W} to your mana pool.

@@ -9,4 +9,4 @@ ability=SN enters the battlefield tapped.;\
         If you would begin your turn while SN is tapped, you may skip that turn instead. If you do, untap SN.;\
         {T}: Take an extra turn after this one.
 timing=main
-oracle=Time Vault enters the battlefield tapped. Time Vault doesn't untap during your untap step. If you would begin your turn while Time Vault is tapped, you may skip that turn instead. If you do, untap Time Vault. {T}: Take an extra turn after this one.
+oracle=Time Vault enters the battlefield tapped.\nTime Vault doesn't untap during your untap step.\nIf you would begin your turn while Time Vault is tapped, you may skip that turn instead. If you do, untap Time Vault.\n{T}: Take an extra turn after this one.

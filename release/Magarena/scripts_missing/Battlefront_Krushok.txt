@@ -9,4 +9,4 @@ pt=3/4
 ability=SN can't be blocked by more than one creature.;\
         Each creature you control with a +1/+1 counter on it can't be blocked by more than one creature.
 timing=main
-oracle=Battlefront Krushok can't be blocked by more than one creature. Each creature you control with a +1/+1 counter on it can't be blocked by more than one creature.
+oracle=Battlefront Krushok can't be blocked by more than one creature.\nEach creature you control with a +1/+1 counter on it can't be blocked by more than one creature.

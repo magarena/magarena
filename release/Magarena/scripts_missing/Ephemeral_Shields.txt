@@ -6,4 +6,4 @@ type=Instant
 cost={1}{W}
 effect=Convoke~Target creature gains indestructible until end of turn.
 timing=removal
-oracle=Convoke. Target creature gains indestructible until end of turn.
+oracle=Convoke\nTarget creature gains indestructible until end of turn.

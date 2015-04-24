@@ -6,4 +6,4 @@ type=Instant
 cost={R}
 effect=If you control a creature with power 4 or greater, damage can't be prevented this turn.~SN deals 2 damage to target creature or player.
 timing=removal
-oracle=Ferocious — If you control a creature with power 4 or greater, damage can't be prevented this turn. Wild Slash deals 2 damage to target creature or player.
+oracle=Ferocious — If you control a creature with power 4 or greater, damage can't be prevented this turn.\nWild Slash deals 2 damage to target creature or player.

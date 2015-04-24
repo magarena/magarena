@@ -9,4 +9,4 @@ pt=3/3
 ability=Flying;\
         Whenever SN attacks, you may return target creature defending player controls with toughness 2 or less to its owner's hand.
 timing=main
-oracle=Flying. Whenever Skymark Roc attacks, you may return target creature defending player controls with toughness 2 or less to its owner's hand.
+oracle=Flying\nWhenever Skymark Roc attacks, you may return target creature defending player controls with toughness 2 or less to its owner's hand.

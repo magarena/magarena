@@ -9,4 +9,4 @@ pt=3/3
 ability=Flying;\
         Whenever you cast a Spirit or Arcane spell, target player reveals his or her hand and discards all cards with that spell's converted mana cost.
 timing=main
-oracle=Flying. Whenever you cast a Spirit or Arcane spell, target player reveals his or her hand and discards all cards with that spell's converted mana cost.
+oracle=Flying\nWhenever you cast a Spirit or Arcane spell, target player reveals his or her hand and discards all cards with that spell's converted mana cost.

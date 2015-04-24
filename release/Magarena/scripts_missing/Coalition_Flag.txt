@@ -9,4 +9,4 @@ ability=Enchant creature you control;\
         Enchanted creature is a Flagbearer.;\
         While choosing targets as part of casting a spell or activating an ability, your opponents must choose at least one Flagbearer on the battlefield if able.
 timing=main
-oracle=Enchant creature you control. Enchanted creature is a Flagbearer. While choosing targets as part of casting a spell or activating an ability, your opponents must choose at least one Flagbearer on the battlefield if able.
+oracle=Enchant creature you control\nEnchanted creature is a Flagbearer.\nWhile choosing targets as part of casting a spell or activating an ability, your opponents must choose at least one Flagbearer on the battlefield if able.

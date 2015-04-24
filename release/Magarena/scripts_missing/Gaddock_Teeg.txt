@@ -9,4 +9,4 @@ pt=2/2
 ability=Noncreature spells with converted mana cost 4 or greater can't be cast.;\
         Noncreature spells with {X} in their mana costs can't be cast.
 timing=main
-oracle=Noncreature spells with converted mana cost 4 or greater can't be cast. Noncreature spells with {X} in their mana costs can't be cast.
+oracle=Noncreature spells with converted mana cost 4 or greater can't be cast.\nNoncreature spells with {X} in their mana costs can't be cast.

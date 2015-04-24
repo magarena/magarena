@@ -9,4 +9,4 @@ pt=2/1
 ability=Whenever you cast an instant or sorcery spell, you may put a charge counter on SN.;\
         Whenever SN deals combat damage to a player, you may draw X cards, where X is the number of charge counters on it.
 timing=main
-oracle=Whenever you cast an instant or sorcery spell, you may put a charge counter on Surrakar Spellblade. Whenever Surrakar Spellblade deals combat damage to a player, you may draw X cards, where X is the number of charge counters on it.
+oracle=Whenever you cast an instant or sorcery spell, you may put a charge counter on Surrakar Spellblade.\nWhenever Surrakar Spellblade deals combat damage to a player, you may draw X cards, where X is the number of charge counters on it.

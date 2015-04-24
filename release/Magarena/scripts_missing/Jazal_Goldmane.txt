@@ -9,4 +9,4 @@ pt=4/4
 ability=First strike;\
         {3}{W}{W}: Attacking creatures you control get +X/+X until end of turn, where X is the number of attacking creatures.
 timing=main
-oracle=First strike. {3}{W}{W}: Attacking creatures you control get +X/+X until end of turn, where X is the number of attacking creatures.
+oracle=First strike\n{3}{W}{W}: Attacking creatures you control get +X/+X until end of turn, where X is the number of attacking creatures.

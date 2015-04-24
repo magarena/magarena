@@ -8,4 +8,4 @@ cost={1}{W}
 ability=Enchant creature;\
         Enchanted creature gets +3/+3 unless it shares a color with the most common color among all permanents or a color tied for most common.
 timing=main
-oracle=Enchant creature. Enchanted creature gets +3/+3 unless it shares a color with the most common color among all permanents or a color tied for most common.
+oracle=Enchant creature\nEnchanted creature gets +3/+3 unless it shares a color with the most common color among all permanents or a color tied for most common.

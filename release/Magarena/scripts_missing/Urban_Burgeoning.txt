@@ -8,4 +8,4 @@ cost={G}
 ability=Enchant land;\
         Enchanted land has "Untap this land during each other player's untap step."
 timing=main
-oracle=Enchant land. Enchanted land has "Untap this land during each other player's untap step."
+oracle=Enchant land\nEnchanted land has "Untap this land during each other player's untap step."

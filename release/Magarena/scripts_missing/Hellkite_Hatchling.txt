@@ -9,4 +9,4 @@ pt=2/2
 ability=Devour 1;\
         SN has flying and trample if it devoured a creature.
 timing=main
-oracle=Devour 1. Hellkite Hatchling has flying and trample if it devoured a creature.
+oracle=Devour 1\nHellkite Hatchling has flying and trample if it devoured a creature.

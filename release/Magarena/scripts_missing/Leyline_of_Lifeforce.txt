@@ -7,4 +7,4 @@ cost={2}{G}{G}
 ability=If SN is in your opening hand, you may begin the game with it on the battlefield.;\
         Creature spells can't be countered.
 timing=main
-oracle=If Leyline of Lifeforce is in your opening hand, you may begin the game with it on the battlefield. Creature spells can't be countered.
+oracle=If Leyline of Lifeforce is in your opening hand, you may begin the game with it on the battlefield.\nCreature spells can't be countered.

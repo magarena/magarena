@@ -9,4 +9,4 @@ pt=2/2
 ability=Creatures you control have first strike.;\
         Creatures your opponents control lose first strike and can't have or gain first strike.
 timing=main
-oracle=Creatures you control have first strike. Creatures your opponents control lose first strike and can't have or gain first strike.
+oracle=Creatures you control have first strike.\nCreatures your opponents control lose first strike and can't have or gain first strike.

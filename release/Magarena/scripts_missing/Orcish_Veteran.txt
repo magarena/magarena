@@ -9,4 +9,4 @@ pt=2/2
 ability=SN can't block white creatures with power 2 or greater.;\
         {R}: SN gains first strike until end of turn.
 timing=main
-oracle=Orcish Veteran can't block white creatures with power 2 or greater. {R}: Orcish Veteran gains first strike until end of turn.
+oracle=Orcish Veteran can't block white creatures with power 2 or greater.\n{R}: Orcish Veteran gains first strike until end of turn.

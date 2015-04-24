@@ -6,4 +6,4 @@ type=Sorcery
 cost={3}{G}
 effect=All creatures able to block target creature this turn do so.~Fuse
 timing=main
-oracle=All creatures able to block target creature this turn do so. Fuse
+oracle=All creatures able to block target creature this turn do so.\nFuse

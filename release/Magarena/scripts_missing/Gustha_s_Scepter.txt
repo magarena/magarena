@@ -8,4 +8,4 @@ ability={T}: Exile a card from your hand face down. You may look at it for as lo
         {T}: Return a card you own exiled with SN to your hand.;\
         When you lose control of SN, put all cards exiled with SN into their owner's graveyard.
 timing=main
-oracle={T}: Exile a card from your hand face down. You may look at it for as long as it remains exiled. {T}: Return a card you own exiled with Gustha's Scepter to your hand. When you lose control of Gustha's Scepter, put all cards exiled with Gustha's Scepter into their owner's graveyard.
+oracle={T}: Exile a card from your hand face down. You may look at it for as long as it remains exiled.\n{T}: Return a card you own exiled with Gustha's Scepter to your hand.\nWhen you lose control of Gustha's Scepter, put all cards exiled with Gustha's Scepter into their owner's graveyard.

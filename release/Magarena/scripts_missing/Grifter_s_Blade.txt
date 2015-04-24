@@ -10,4 +10,4 @@ ability=Flash;\
         Equipped creature gets +1/+1.;\
         Equip {1}
 timing=main
-oracle=Flash. As Grifter's Blade enters the battlefield, choose a creature you control it could be attached to. If you do, it enters the battlefield attached to that creature. Equipped creature gets +1/+1. Equip {1}
+oracle=Flash\nAs Grifter's Blade enters the battlefield, choose a creature you control it could be attached to. If you do, it enters the battlefield attached to that creature.\nEquipped creature gets +1/+1.\nEquip {1}

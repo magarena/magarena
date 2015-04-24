@@ -9,4 +9,4 @@ pt=1/1
 ability={R}, {T}: SN loses this ability and becomes an Aura enchantment with enchant creature. Attach it to target creature. You may pay {R} to end this effect.;\
         Enchanted creature has haste.
 timing=main
-oracle={R}, {T}: Enraging Licid loses this ability and becomes an Aura enchantment with enchant creature. Attach it to target creature. You may pay {R} to end this effect. Enchanted creature has haste.
+oracle={R}, {T}: Enraging Licid loses this ability and becomes an Aura enchantment with enchant creature. Attach it to target creature. You may pay {R} to end this effect.\nEnchanted creature has haste.

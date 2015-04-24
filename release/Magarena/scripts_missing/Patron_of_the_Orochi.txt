@@ -9,4 +9,4 @@ pt=7/7
 ability=Snake offering;\
         {T}: Untap all Forests and all green creatures. Activate this ability only once each turn.
 timing=main
-oracle=Snake offering. {T}: Untap all Forests and all green creatures. Activate this ability only once each turn.
+oracle=Snake offering\n{T}: Untap all Forests and all green creatures. Activate this ability only once each turn.

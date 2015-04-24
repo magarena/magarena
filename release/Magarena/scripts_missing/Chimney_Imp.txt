@@ -9,4 +9,4 @@ pt=1/2
 ability=Flying;\
         When SN dies, target opponent puts a card from his or her hand on top of his or her library.
 timing=main
-oracle=Flying. When Chimney Imp dies, target opponent puts a card from his or her hand on top of his or her library.
+oracle=Flying\nWhen Chimney Imp dies, target opponent puts a card from his or her hand on top of his or her library.

@@ -9,4 +9,4 @@ pt=1/3
 ability=Protection from black;\
         {W}, Sacrifice SN: The next time a black source of your choice would deal damage this turn, prevent that damage.
 timing=main
-oracle=Protection from black. {W}, Sacrifice Pilgrim of Virtue: The next time a black source of your choice would deal damage this turn, prevent that damage.
+oracle=Protection from black\n{W}, Sacrifice Pilgrim of Virtue: The next time a black source of your choice would deal damage this turn, prevent that damage.

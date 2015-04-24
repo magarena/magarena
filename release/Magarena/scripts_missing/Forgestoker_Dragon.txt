@@ -9,4 +9,4 @@ pt=5/4
 ability=Flying;\
         {1}{R}: SN deals 1 damage to target creature. That creature can't block this combat. Activate this ability only if SN is attacking.
 timing=main
-oracle=Flying. {1}{R}: Forgestoker Dragon deals 1 damage to target creature. That creature can't block this combat. Activate this ability only if Forgestoker Dragon is attacking.
+oracle=Flying\n{1}{R}: Forgestoker Dragon deals 1 damage to target creature. That creature can't block this combat. Activate this ability only if Forgestoker Dragon is attacking.

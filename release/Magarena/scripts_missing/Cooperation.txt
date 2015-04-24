@@ -8,4 +8,4 @@ cost={2}{W}
 ability=Enchant creature;\
         Enchanted creature has banding.
 timing=main
-oracle=Enchant creature. Enchanted creature has banding.
+oracle=Enchant creature\nEnchanted creature has banding.

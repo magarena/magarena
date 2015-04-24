@@ -9,4 +9,4 @@ pt=1/1
 ability=Whenever SN attacks, each creature you control can't be blocked this turn except by two or more creatures.;\
         Undying
 timing=main
-oracle=Whenever Pyreheart Wolf attacks, each creature you control can't be blocked this turn except by two or more creatures. Undying
+oracle=Whenever Pyreheart Wolf attacks, each creature you control can't be blocked this turn except by two or more creatures.\nUndying

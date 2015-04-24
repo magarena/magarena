@@ -9,4 +9,4 @@ pt=2/2
 ability=Exalted;\
         {T}: Destroy target creature that dealt damage to you this turn.
 timing=main
-oracle=Exalted. {T}: Destroy target creature that dealt damage to you this turn.
+oracle=Exalted\n{T}: Destroy target creature that dealt damage to you this turn.

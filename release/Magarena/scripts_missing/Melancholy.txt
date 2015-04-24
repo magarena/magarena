@@ -10,4 +10,4 @@ ability=Enchant creature;\
         Enchanted creature doesn't untap during its controller's untap step.;\
         At the beginning of your upkeep, sacrifice SN unless you pay {B}.
 timing=main
-oracle=Enchant creature. When Melancholy enters the battlefield, tap enchanted creature. Enchanted creature doesn't untap during its controller's untap step. At the beginning of your upkeep, sacrifice Melancholy unless you pay {B}.
+oracle=Enchant creature\nWhen Melancholy enters the battlefield, tap enchanted creature.\nEnchanted creature doesn't untap during its controller's untap step.\nAt the beginning of your upkeep, sacrifice Melancholy unless you pay {B}.

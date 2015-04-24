@@ -6,4 +6,4 @@ type=Instant
 cost={2}{U}
 effect=Choose one — (1) Look at the top five cards of target opponent's library, then put them back in any order. (2) Look at the top five cards of your library, then put them back in any order.~Entwine {U}
 timing=removal
-oracle=Choose one — • Look at the top five cards of target opponent's library, then put them back in any order. • Look at the top five cards of your library, then put them back in any order. Entwine {U}
+oracle=Choose one —\n• Look at the top five cards of target opponent's library, then put them back in any order.\n• Look at the top five cards of your library, then put them back in any order.\nEntwine {U}

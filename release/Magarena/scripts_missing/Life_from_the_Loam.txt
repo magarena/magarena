@@ -6,4 +6,4 @@ type=Sorcery
 cost={1}{G}
 effect=Return up to three target land cards from your graveyard to your hand.~Dredge 3
 timing=main
-oracle=Return up to three target land cards from your graveyard to your hand. Dredge 3
+oracle=Return up to three target land cards from your graveyard to your hand.\nDredge 3

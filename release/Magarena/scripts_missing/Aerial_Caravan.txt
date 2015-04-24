@@ -9,4 +9,4 @@ pt=4/3
 ability=Flying;\
         {1}{U}{U}: Exile the top card of your library. Until end of turn, you may play that card.
 timing=main
-oracle=Flying. {1}{U}{U}: Exile the top card of your library. Until end of turn, you may play that card.
+oracle=Flying\n{1}{U}{U}: Exile the top card of your library. Until end of turn, you may play that card.

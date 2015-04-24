@@ -6,4 +6,4 @@ type=Sorcery
 cost={G}{G}
 effect=As an additional cost to cast SN, discard X cards.~Return X target cards from your graveyard to your hand. Exile SN.
 timing=main
-oracle=As an additional cost to cast Nostalgic Dreams, discard X cards. Return X target cards from your graveyard to your hand. Exile Nostalgic Dreams.
+oracle=As an additional cost to cast Nostalgic Dreams, discard X cards.\nReturn X target cards from your graveyard to your hand. Exile Nostalgic Dreams.

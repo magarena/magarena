@@ -6,4 +6,4 @@ type=Instant
 cost={2}{R}
 effect=Target player can't play land cards this turn.~Draw a card at the beginning of the next turn's upkeep.
 timing=removal
-oracle=Target player can't play land cards this turn. Draw a card at the beginning of the next turn's upkeep.
+oracle=Target player can't play land cards this turn.\nDraw a card at the beginning of the next turn's upkeep.

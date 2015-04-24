@@ -7,4 +7,4 @@ cost={1}{G}
 ability=Whenever a land enters the battlefield under your control, you may put a quest counter on SN.;\
         Remove three quest counters from SN and sacrifice it: Search your library for up to two basic land cards, put them onto the battlefield tapped, then shuffle your library.
 timing=main
-oracle=Landfall — Whenever a land enters the battlefield under your control, you may put a quest counter on Khalni Heart Expedition. Remove three quest counters from Khalni Heart Expedition and sacrifice it: Search your library for up to two basic land cards, put them onto the battlefield tapped, then shuffle your library.
+oracle=Landfall — Whenever a land enters the battlefield under your control, you may put a quest counter on Khalni Heart Expedition.\nRemove three quest counters from Khalni Heart Expedition and sacrifice it: Search your library for up to two basic land cards, put them onto the battlefield tapped, then shuffle your library.

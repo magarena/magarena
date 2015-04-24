@@ -8,4 +8,4 @@ cost={1}
 ability=Equipped creature gets +1/+0 for each Equipment attached to it.;\
         Equip {2}
 timing=main
-oracle=Equipped creature gets +1/+0 for each Equipment attached to it. Equip {2}
+oracle=Equipped creature gets +1/+0 for each Equipment attached to it.\nEquip {2}

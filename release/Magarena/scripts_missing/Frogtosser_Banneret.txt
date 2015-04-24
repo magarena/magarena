@@ -9,4 +9,4 @@ pt=1/1
 ability=Haste;\
         Goblin spells and Rogue spells you cast cost {1} less to cast.
 timing=main
-oracle=Haste. Goblin spells and Rogue spells you cast cost {1} less to cast.
+oracle=Haste\nGoblin spells and Rogue spells you cast cost {1} less to cast.

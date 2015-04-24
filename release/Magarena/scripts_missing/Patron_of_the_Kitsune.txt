@@ -9,4 +9,4 @@ pt=5/6
 ability=Fox offering;\
         Whenever a creature attacks, you may gain 1 life.
 timing=main
-oracle=Fox offering. Whenever a creature attacks, you may gain 1 life.
+oracle=Fox offering\nWhenever a creature attacks, you may gain 1 life.

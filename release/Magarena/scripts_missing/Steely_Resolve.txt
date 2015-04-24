@@ -7,4 +7,4 @@ cost={1}{G}
 ability=As SN enters the battlefield, choose a creature type.;\
         Creatures of the chosen type have shroud.
 timing=main
-oracle=As Steely Resolve enters the battlefield, choose a creature type. Creatures of the chosen type have shroud.
+oracle=As Steely Resolve enters the battlefield, choose a creature type.\nCreatures of the chosen type have shroud.

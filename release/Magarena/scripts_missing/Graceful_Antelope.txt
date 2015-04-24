@@ -9,4 +9,4 @@ pt=1/4
 ability=Plainswalk;\
         Whenever SN deals combat damage to a player, you may have target land become a Plains until SN leaves the battlefield.
 timing=main
-oracle=Plainswalk. Whenever Graceful Antelope deals combat damage to a player, you may have target land become a Plains until Graceful Antelope leaves the battlefield.
+oracle=Plainswalk\nWhenever Graceful Antelope deals combat damage to a player, you may have target land become a Plains until Graceful Antelope leaves the battlefield.

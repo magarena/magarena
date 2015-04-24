@@ -9,4 +9,4 @@ ability=Enchant creature;\
         Cumulative upkeep {R};\
         Enchanted creature's controller can't cast creature spells.
 timing=main
-oracle=Enchant creature. Cumulative upkeep {R}. Enchanted creature's controller can't cast creature spells.
+oracle=Enchant creature\nCumulative upkeep {R}\nEnchanted creature's controller can't cast creature spells.

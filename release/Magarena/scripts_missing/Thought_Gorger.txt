@@ -10,4 +10,4 @@ ability=Trample;\
         When SN enters the battlefield, put a +1/+1 counter on it for each card in your hand. If you do, discard your hand.;\
         When SN leaves the battlefield, draw a card for each +1/+1 counter on it.
 timing=main
-oracle=Trample. When Thought Gorger enters the battlefield, put a +1/+1 counter on it for each card in your hand. If you do, discard your hand. When Thought Gorger leaves the battlefield, draw a card for each +1/+1 counter on it.
+oracle=Trample\nWhen Thought Gorger enters the battlefield, put a +1/+1 counter on it for each card in your hand. If you do, discard your hand.\nWhen Thought Gorger leaves the battlefield, draw a card for each +1/+1 counter on it.

@@ -8,4 +8,4 @@ cost={4}{B}
 ability=Enchant player;\
         At the beginning of enchanted player's upkeep, SN deals damage to that player equal to the number of Curses attached to him or her.
 timing=main
-oracle=Enchant player. At the beginning of enchanted player's upkeep, Curse of Thirst deals damage to that player equal to the number of Curses attached to him or her.
+oracle=Enchant player\nAt the beginning of enchanted player's upkeep, Curse of Thirst deals damage to that player equal to the number of Curses attached to him or her.

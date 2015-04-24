@@ -7,4 +7,4 @@ cost={3}
 ability={1}, {T}: Put a charge counter on SN.;\
         {T}, Remove X charge counters from SN: Add {X}{1} to your mana pool.
 timing=main
-oracle={1}, {T}: Put a charge counter on Kyren Toy. {T}, Remove X charge counters from Kyren Toy: Add {X}{1} to your mana pool.
+oracle={1}, {T}: Put a charge counter on Kyren Toy.\n{T}, Remove X charge counters from Kyren Toy: Add {X}{1} to your mana pool.

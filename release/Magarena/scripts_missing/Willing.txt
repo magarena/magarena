@@ -6,4 +6,4 @@ type=Instant
 cost={1}{W}{B}
 effect=Creatures you control gain deathtouch and lifelink until end of turn.~Fuse
 timing=removal
-oracle=Creatures you control gain deathtouch and lifelink until end of turn. Fuse
+oracle=Creatures you control gain deathtouch and lifelink until end of turn.\nFuse

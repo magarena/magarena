@@ -10,4 +10,4 @@ ability=You may cast SN from your graveyard, but not from anywhere else.;\
         As long as Haakon is on the battlefield, you may play Knight cards from your graveyard.;\
         When Haakon dies, you lose 2 life.
 timing=main
-oracle=You may cast Haakon, Stromgald Scourge from your graveyard, but not from anywhere else. As long as Haakon is on the battlefield, you may play Knight cards from your graveyard. When Haakon dies, you lose 2 life.
+oracle=You may cast Haakon, Stromgald Scourge from your graveyard, but not from anywhere else.\nAs long as Haakon is on the battlefield, you may play Knight cards from your graveyard.\nWhen Haakon dies, you lose 2 life.

@@ -8,4 +8,4 @@ cost={1}{R}
 ability=Enchant player;\
         Whenever a creature deals combat damage to enchanted player, put a +1/+1 counter on that creature.
 timing=main
-oracle=Enchant player. Whenever a creature deals combat damage to enchanted player, put a +1/+1 counter on that creature.
+oracle=Enchant player\nWhenever a creature deals combat damage to enchanted player, put a +1/+1 counter on that creature.

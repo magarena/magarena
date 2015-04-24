@@ -9,4 +9,4 @@ pt=0/2
 ability=Defender;\
         {B}, Sacrifice SN: Destroy target creature SN is blocking.
 timing=main
-oracle=Defender. {B}, Sacrifice Wall of Corpses: Destroy target creature Wall of Corpses is blocking.
+oracle=Defender\n{B}, Sacrifice Wall of Corpses: Destroy target creature Wall of Corpses is blocking.

@@ -9,4 +9,4 @@ pt=5/5
 ability=Flying;\
         When SN dies, target player skips his or her next untap step. Tap up to five target permanents that player controls.
 timing=main
-oracle=Flying. When Yosei, the Morning Star dies, target player skips his or her next untap step. Tap up to five target permanents that player controls.
+oracle=Flying\nWhen Yosei, the Morning Star dies, target player skips his or her next untap step. Tap up to five target permanents that player controls.

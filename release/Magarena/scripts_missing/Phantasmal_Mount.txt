@@ -9,4 +9,4 @@ pt=1/1
 ability=Flying;\
         {T}: Target creature you control with toughness 2 or less gets +1/+1 and gains flying until end of turn. When SN leaves the battlefield this turn, sacrifice that creature. When the creature leaves the battlefield this turn, sacrifice SN.
 timing=main
-oracle=Flying. {T}: Target creature you control with toughness 2 or less gets +1/+1 and gains flying until end of turn. When Phantasmal Mount leaves the battlefield this turn, sacrifice that creature. When the creature leaves the battlefield this turn, sacrifice Phantasmal Mount.
+oracle=Flying\n{T}: Target creature you control with toughness 2 or less gets +1/+1 and gains flying until end of turn. When Phantasmal Mount leaves the battlefield this turn, sacrifice that creature. When the creature leaves the battlefield this turn, sacrifice Phantasmal Mount.

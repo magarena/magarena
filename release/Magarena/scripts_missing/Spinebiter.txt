@@ -9,4 +9,4 @@ pt=3/4
 ability=Infect;\
         You may have SN assign its combat damage as though it weren't blocked.
 timing=main
-oracle=Infect. You may have Spinebiter assign its combat damage as though it weren't blocked.
+oracle=Infect\nYou may have Spinebiter assign its combat damage as though it weren't blocked.

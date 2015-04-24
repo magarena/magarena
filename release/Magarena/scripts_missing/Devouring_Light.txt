@@ -6,4 +6,4 @@ type=Instant
 cost={1}{W}{W}
 effect=Convoke~Exile target attacking or blocking creature.
 timing=removal
-oracle=Convoke. Exile target attacking or blocking creature.
+oracle=Convoke\nExile target attacking or blocking creature.

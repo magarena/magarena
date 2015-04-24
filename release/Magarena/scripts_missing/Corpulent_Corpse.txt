@@ -9,4 +9,4 @@ pt=3/3
 ability=Fear;\
         Suspend 5—{B}
 timing=main
-oracle=Fear. Suspend 5—{B}
+oracle=Fear\nSuspend 5—{B}

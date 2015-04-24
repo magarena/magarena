@@ -7,4 +7,4 @@ cost={2}{W}
 ability=When SN enters the battlefield, draw a card.;\
         If a source would deal damage to a creature you control, it deals that much damage minus 1 to that creature instead.
 timing=main
-oracle=When Lashknife Barrier enters the battlefield, draw a card. If a source would deal damage to a creature you control, it deals that much damage minus 1 to that creature instead.
+oracle=When Lashknife Barrier enters the battlefield, draw a card.\nIf a source would deal damage to a creature you control, it deals that much damage minus 1 to that creature instead.

@@ -9,4 +9,4 @@ pt=6/4
 ability=Haste;\
         Echo—Sacrifice two lands.
 timing=main
-oracle=Haste. Echo—Sacrifice two lands.
+oracle=Haste\nEcho—Sacrifice two lands.

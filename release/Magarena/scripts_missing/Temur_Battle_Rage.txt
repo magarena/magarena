@@ -6,4 +6,4 @@ type=Instant
 cost={1}{R}
 effect=Target creature gains double strike until end of turn.~That creature also gains trample until end of turn if you control a creature with power 4 or greater.
 timing=removal
-oracle=Target creature gains double strike until end of turn. Ferocious — That creature also gains trample until end of turn if you control a creature with power 4 or greater.
+oracle=Target creature gains double strike until end of turn.\nFerocious — That creature also gains trample until end of turn if you control a creature with power 4 or greater.

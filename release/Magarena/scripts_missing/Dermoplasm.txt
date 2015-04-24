@@ -10,4 +10,4 @@ ability=Flying;\
         Morph {2}{U}{U};\
         When SN is turned face up, you may put a creature card with morph from your hand onto the battlefield face up. If you do, return SN to its owner's hand.
 timing=main
-oracle=Flying. Morph {2}{U}{U}. When Dermoplasm is turned face up, you may put a creature card with morph from your hand onto the battlefield face up. If you do, return Dermoplasm to its owner's hand.
+oracle=Flying\nMorph {2}{U}{U}\nWhen Dermoplasm is turned face up, you may put a creature card with morph from your hand onto the battlefield face up. If you do, return Dermoplasm to its owner's hand.

@@ -7,4 +7,4 @@ ability=SN enters the battlefield tapped.;\
         {T}: Add {B} to your mana pool.;\
         Dredge 2
 timing=main
-oracle=Dakmor Salvage enters the battlefield tapped. {T}: Add {B} to your mana pool. Dredge 2
+oracle=Dakmor Salvage enters the battlefield tapped.\n{T}: Add {B} to your mana pool.\nDredge 2

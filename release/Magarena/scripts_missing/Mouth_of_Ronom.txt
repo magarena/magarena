@@ -6,4 +6,4 @@ type=Snow,Land
 ability={T}: Add {1} to your mana pool.;\
         {4}{S}, {T}, Sacrifice SN: SN deals 4 damage to target creature.
 timing=main
-oracle={T}: Add {1} to your mana pool. {4}{S}, {T}, Sacrifice Mouth of Ronom: Mouth of Ronom deals 4 damage to target creature.
+oracle={T}: Add {1} to your mana pool.\n{4}{S}, {T}, Sacrifice Mouth of Ronom: Mouth of Ronom deals 4 damage to target creature.

@@ -9,4 +9,4 @@ pt=2/2
 ability=SN can't attack unless at least two other creatures attack.;\
         SN can't block unless at least two other creatures block.
 timing=main
-oracle=Orcish Conscripts can't attack unless at least two other creatures attack. Orcish Conscripts can't block unless at least two other creatures block.
+oracle=Orcish Conscripts can't attack unless at least two other creatures attack.\nOrcish Conscripts can't block unless at least two other creatures block.

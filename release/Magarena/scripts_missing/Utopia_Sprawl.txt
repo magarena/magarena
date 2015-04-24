@@ -9,4 +9,4 @@ ability=Enchant Forest;\
         As SN enters the battlefield, choose a color.;\
         Whenever enchanted Forest is tapped for mana, its controller adds one mana of the chosen color to his or her mana pool.
 timing=main
-oracle=Enchant Forest. As Utopia Sprawl enters the battlefield, choose a color. Whenever enchanted Forest is tapped for mana, its controller adds one mana of the chosen color to his or her mana pool.
+oracle=Enchant Forest\nAs Utopia Sprawl enters the battlefield, choose a color.\nWhenever enchanted Forest is tapped for mana, its controller adds one mana of the chosen color to his or her mana pool.

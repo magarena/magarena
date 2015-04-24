@@ -7,4 +7,4 @@ subtype=Arcane
 cost={4}{R}
 effect=You may put a creature card from your hand onto the battlefield. That creature gains haste. Sacrifice that creature at the beginning of the next end step.~Splice onto Arcane {2}{R}{R}
 timing=removal
-oracle=You may put a creature card from your hand onto the battlefield. That creature gains haste. Sacrifice that creature at the beginning of the next end step. Splice onto Arcane {2}{R}{R}
+oracle=You may put a creature card from your hand onto the battlefield. That creature gains haste. Sacrifice that creature at the beginning of the next end step.\nSplice onto Arcane {2}{R}{R}

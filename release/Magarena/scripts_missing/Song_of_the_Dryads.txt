@@ -8,4 +8,4 @@ cost={2}{G}
 ability=Enchant permanent;\
         Enchanted permanent is a colorless Forest land.
 timing=main
-oracle=Enchant permanent. Enchanted permanent is a colorless Forest land.
+oracle=Enchant permanent\nEnchanted permanent is a colorless Forest land.

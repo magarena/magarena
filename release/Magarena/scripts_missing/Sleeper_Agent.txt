@@ -9,4 +9,4 @@ pt=3/3
 ability=When SN enters the battlefield, target opponent gains control of it.;\
         At the beginning of your upkeep, SN deals 2 damage to you.
 timing=main
-oracle=When Sleeper Agent enters the battlefield, target opponent gains control of it. At the beginning of your upkeep, Sleeper Agent deals 2 damage to you.
+oracle=When Sleeper Agent enters the battlefield, target opponent gains control of it.\nAt the beginning of your upkeep, Sleeper Agent deals 2 damage to you.

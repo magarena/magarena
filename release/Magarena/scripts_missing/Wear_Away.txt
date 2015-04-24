@@ -7,4 +7,4 @@ subtype=Arcane
 cost={G}{G}
 effect=Destroy target artifact or enchantment.~Splice onto Arcane {3}{G}
 timing=removal
-oracle=Destroy target artifact or enchantment. Splice onto Arcane {3}{G}
+oracle=Destroy target artifact or enchantment.\nSplice onto Arcane {3}{G}

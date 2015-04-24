@@ -6,4 +6,4 @@ type=Land
 ability=Cumulative upkeep {1};\
         Creatures that attacked during their controller's last turn can't attack.
 timing=main
-oracle=Cumulative upkeep {1}. Creatures that attacked during their controller's last turn can't attack.
+oracle=Cumulative upkeep {1}\nCreatures that attacked during their controller's last turn can't attack.

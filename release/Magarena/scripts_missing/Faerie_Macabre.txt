@@ -9,4 +9,4 @@ pt=2/2
 ability=Flying;\
         Discard SN: Exile up to two target cards from graveyards.
 timing=main
-oracle=Flying. Discard Faerie Macabre: Exile up to two target cards from graveyards.
+oracle=Flying\nDiscard Faerie Macabre: Exile up to two target cards from graveyards.

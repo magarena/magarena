@@ -6,4 +6,4 @@ type=Sorcery
 cost={2}{W}{W}
 effect=Each player chooses a creature he or she controls. Destroy the rest.~Flashback {5}{W}{W}
 timing=main
-oracle=Each player chooses a creature he or she controls. Destroy the rest. Flashback {5}{W}{W}
+oracle=Each player chooses a creature he or she controls. Destroy the rest.\nFlashback {5}{W}{W}

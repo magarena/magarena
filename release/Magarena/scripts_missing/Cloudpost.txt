@@ -7,4 +7,4 @@ subtype=Locus
 ability=SN enters the battlefield tapped.;\
         {T}: Add {1} to your mana pool for each Locus on the battlefield.
 timing=main
-oracle=Cloudpost enters the battlefield tapped. {T}: Add {1} to your mana pool for each Locus on the battlefield.
+oracle=Cloudpost enters the battlefield tapped.\n{T}: Add {1} to your mana pool for each Locus on the battlefield.

@@ -9,4 +9,4 @@ pt=3/2
 ability=First strike;\
         Whenever a creature dealt damage by SN this turn dies, you gain life equal to that creature's toughness.
 timing=main
-oracle=First strike. Whenever a creature dealt damage by Abattoir Ghoul this turn dies, you gain life equal to that creature's toughness.
+oracle=First strike\nWhenever a creature dealt damage by Abattoir Ghoul this turn dies, you gain life equal to that creature's toughness.

@@ -9,4 +9,4 @@ ability=Enchant creature;\
         Enchanted creature gets +4/+4 and has first strike, and all creatures able to block it do so.;\
         Totem armor
 timing=main
-oracle=Enchant creature. Enchanted creature gets +4/+4 and has first strike, and all creatures able to block it do so. Totem armor
+oracle=Enchant creature\nEnchanted creature gets +4/+4 and has first strike, and all creatures able to block it do so.\nTotem armor

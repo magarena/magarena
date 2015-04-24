@@ -9,4 +9,4 @@ pt=5/5
 ability=Flying;\
         {U}: SN's owner shuffles it into his or her library.
 timing=main
-oracle=Flying. {U}: Cerulean Sphinx's owner shuffles it into his or her library.
+oracle=Flying\n{U}: Cerulean Sphinx's owner shuffles it into his or her library.

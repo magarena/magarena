@@ -7,4 +7,4 @@ ability=SN enters the battlefield tapped.;\
         When SN enters the battlefield, return a land you control to its owner's hand.;\
         {T}: Add {G}{U} to your mana pool.
 timing=main
-oracle=Simic Growth Chamber enters the battlefield tapped. When Simic Growth Chamber enters the battlefield, return a land you control to its owner's hand. {T}: Add {G}{U} to your mana pool.
+oracle=Simic Growth Chamber enters the battlefield tapped.\nWhen Simic Growth Chamber enters the battlefield, return a land you control to its owner's hand.\n{T}: Add {G}{U} to your mana pool.

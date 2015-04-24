@@ -10,4 +10,4 @@ ability=Changeling;\
         {T}: Target creature gains all creature types until end of turn.;\
         {T}: Target creature loses all creature types until end of turn.
 timing=main
-oracle=Changeling. {T}: Target creature gains all creature types until end of turn. {T}: Target creature loses all creature types until end of turn.
+oracle=Changeling\n{T}: Target creature gains all creature types until end of turn.\n{T}: Target creature loses all creature types until end of turn.

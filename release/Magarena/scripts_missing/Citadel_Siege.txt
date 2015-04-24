@@ -8,4 +8,4 @@ ability=As SN enters the battlefield, choose Khans or Dragons. \
         (1) Khans — At the beginning of combat on your turn, put two +1/+1 counters on target creature you control. \
         (2) Dragons — At the beginning of combat on each opponent's turn, tap target creature that player controls.
 timing=main
-oracle=As Citadel Siege enters the battlefield, choose Khans or Dragons. • Khans — At the beginning of combat on your turn, put two +1/+1 counters on target creature you control. • Dragons — At the beginning of combat on each opponent's turn, tap target creature that player controls.
+oracle=As Citadel Siege enters the battlefield, choose Khans or Dragons.\n• Khans — At the beginning of combat on your turn, put two +1/+1 counters on target creature you control.\n• Dragons — At the beginning of combat on each opponent's turn, tap target creature that player controls.

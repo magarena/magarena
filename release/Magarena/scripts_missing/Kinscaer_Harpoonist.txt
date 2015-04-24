@@ -9,4 +9,4 @@ pt=2/2
 ability=Flying;\
         Whenever SN attacks, you may have target creature lose flying until end of turn.
 timing=main
-oracle=Flying. Whenever Kinscaer Harpoonist attacks, you may have target creature lose flying until end of turn.
+oracle=Flying\nWhenever Kinscaer Harpoonist attacks, you may have target creature lose flying until end of turn.

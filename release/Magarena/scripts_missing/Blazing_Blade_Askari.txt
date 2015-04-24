@@ -9,4 +9,4 @@ pt=2/2
 ability=Flanking;\
         {2}: SN becomes colorless until end of turn.
 timing=main
-oracle=Flanking. {2}: Blazing Blade Askari becomes colorless until end of turn.
+oracle=Flanking\n{2}: Blazing Blade Askari becomes colorless until end of turn.

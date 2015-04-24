@@ -9,4 +9,4 @@ pt=5/5
 ability=SN costs {1} less to cast for each creature card in your graveyard.;\
         {7}{G}{G}: Monstrosity 5. This ability costs {1} less to activate for each creature card in your graveyard.
 timing=main
-oracle=Nemesis of Mortals costs {1} less to cast for each creature card in your graveyard. {7}{G}{G}: Monstrosity 5. This ability costs {1} less to activate for each creature card in your graveyard.
+oracle=Nemesis of Mortals costs {1} less to cast for each creature card in your graveyard.\n{7}{G}{G}: Monstrosity 5. This ability costs {1} less to activate for each creature card in your graveyard.

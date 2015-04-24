@@ -8,4 +8,4 @@ cost={2}{W}{W}
 ability=Enchant player;\
         Enchanted player can't cast more than one spell each turn.
 timing=main
-oracle=Enchant player. Enchanted player can't cast more than one spell each turn.
+oracle=Enchant player\nEnchanted player can't cast more than one spell each turn.

@@ -9,4 +9,4 @@ pt=2/2
 ability=Flying;\
         Blue spells you cast cost {U} more to cast.
 timing=main
-oracle=Flying. Blue spells you cast cost {U} more to cast.
+oracle=Flying\nBlue spells you cast cost {U} more to cast.

@@ -9,4 +9,4 @@ pt=4/4
 ability=Flying;\
         Whenever a Dragon you control becomes the target of a spell or ability an opponent controls, SN deals 3 damage to that player.
 timing=main
-oracle=Flying. Whenever a Dragon you control becomes the target of a spell or ability an opponent controls, Thunderbreak Regent deals 3 damage to that player.
+oracle=Flying\nWhenever a Dragon you control becomes the target of a spell or ability an opponent controls, Thunderbreak Regent deals 3 damage to that player.

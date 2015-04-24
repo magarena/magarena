@@ -6,4 +6,4 @@ type=Sorcery
 cost={3}{G}{G}
 effect=For each creature token on the battlefield, its controller puts a token that's a copy of that creature onto the battlefield.~Flashback {4}{G}{G}{G}
 timing=main
-oracle=For each creature token on the battlefield, its controller puts a token that's a copy of that creature onto the battlefield. Flashback {4}{G}{G}{G}
+oracle=For each creature token on the battlefield, its controller puts a token that's a copy of that creature onto the battlefield.\nFlashback {4}{G}{G}{G}

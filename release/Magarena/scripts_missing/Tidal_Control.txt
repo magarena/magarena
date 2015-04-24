@@ -7,4 +7,4 @@ cost={1}{U}{U}
 ability=Cumulative upkeep {2};\
         Pay 2 life or {2}: Counter target red or green spell. Any player may activate this ability.
 timing=main
-oracle=Cumulative upkeep {2}. Pay 2 life or {2}: Counter target red or green spell. Any player may activate this ability.
+oracle=Cumulative upkeep {2}\nPay 2 life or {2}: Counter target red or green spell. Any player may activate this ability.

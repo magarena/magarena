@@ -9,4 +9,4 @@ ability=Enchant creature;\
         As long as enchanted creature is black, it gets +1/+1 and has deathtouch.;\
         As long as enchanted creature is green, it gets +1/+1 and all creatures able to block it do so.
 timing=main
-oracle=Enchant creature. As long as enchanted creature is black, it gets +1/+1 and has deathtouch. As long as enchanted creature is green, it gets +1/+1 and all creatures able to block it do so.
+oracle=Enchant creature\nAs long as enchanted creature is black, it gets +1/+1 and has deathtouch.\nAs long as enchanted creature is green, it gets +1/+1 and all creatures able to block it do so.

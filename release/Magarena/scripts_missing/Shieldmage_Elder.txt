@@ -9,4 +9,4 @@ pt=2/3
 ability=Tap two untapped Clerics you control: Prevent all damage target creature would deal this turn.;\
         Tap two untapped Wizards you control: Prevent all damage target spell would deal this turn.
 timing=main
-oracle=Tap two untapped Clerics you control: Prevent all damage target creature would deal this turn. Tap two untapped Wizards you control: Prevent all damage target spell would deal this turn.
+oracle=Tap two untapped Clerics you control: Prevent all damage target creature would deal this turn.\nTap two untapped Wizards you control: Prevent all damage target spell would deal this turn.

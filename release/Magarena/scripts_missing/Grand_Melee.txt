@@ -7,4 +7,4 @@ cost={3}{R}
 ability=All creatures attack each turn if able.;\
         All creatures block each turn if able.
 timing=main
-oracle=All creatures attack each turn if able. All creatures block each turn if able.
+oracle=All creatures attack each turn if able.\nAll creatures block each turn if able.

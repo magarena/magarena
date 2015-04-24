@@ -8,4 +8,4 @@ cost={2}{U}
 ability=Enchant player;\
         At the beginning of enchanted player's upkeep, that player puts the top two cards of his or her library into his or her graveyard.
 timing=main
-oracle=Enchant player. At the beginning of enchanted player's upkeep, that player puts the top two cards of his or her library into his or her graveyard.
+oracle=Enchant player\nAt the beginning of enchanted player's upkeep, that player puts the top two cards of his or her library into his or her graveyard.

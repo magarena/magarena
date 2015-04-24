@@ -9,4 +9,4 @@ ability=SN doesn't untap during your untap step.;\
         At the beginning of your draw step, if SN is tapped, it deals 1 damage to you.;\
         {T}: Add {3} to your mana pool.
 timing=main
-oracle=Mana Vault doesn't untap during your untap step. At the beginning of your upkeep, you may pay {4}. If you do, untap Mana Vault. At the beginning of your draw step, if Mana Vault is tapped, it deals 1 damage to you. {T}: Add {3} to your mana pool.
+oracle=Mana Vault doesn't untap during your untap step.\nAt the beginning of your upkeep, you may pay {4}. If you do, untap Mana Vault.\nAt the beginning of your draw step, if Mana Vault is tapped, it deals 1 damage to you.\n{T}: Add {3} to your mana pool.

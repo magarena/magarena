@@ -10,4 +10,4 @@ ability=Flying;\
         Whenever SN attacks, put a +1/+1 counter on it.;\
         Angel spells and Human spells you cast cost {1} less to cast for each +1/+1 counter on SN.
 timing=main
-oracle=Flying. Whenever Herald of War attacks, put a +1/+1 counter on it. Angel spells and Human spells you cast cost {1} less to cast for each +1/+1 counter on Herald of War.
+oracle=Flying\nWhenever Herald of War attacks, put a +1/+1 counter on it.\nAngel spells and Human spells you cast cost {1} less to cast for each +1/+1 counter on Herald of War.

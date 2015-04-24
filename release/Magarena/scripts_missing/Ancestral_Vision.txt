@@ -6,4 +6,4 @@ type=Sorcery
 color=u
 effect=Suspend 4—{U}~Target player draws three cards.
 timing=main
-oracle=Suspend 4—{U}. Target player draws three cards.
+oracle=Suspend 4—{U}\nTarget player draws three cards.

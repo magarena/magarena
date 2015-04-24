@@ -8,4 +8,4 @@ cost={G/W}{G/W}
 ability=Enchant player;\
         If a card would be put into enchanted player's graveyard from anywhere, instead that card is revealed and put on the bottom of that player's library.
 timing=main
-oracle=Enchant player. If a card would be put into enchanted player's graveyard from anywhere, instead that card is revealed and put on the bottom of that player's library.
+oracle=Enchant player\nIf a card would be put into enchanted player's graveyard from anywhere, instead that card is revealed and put on the bottom of that player's library.

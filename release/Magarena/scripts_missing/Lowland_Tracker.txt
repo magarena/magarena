@@ -9,4 +9,4 @@ pt=2/2
 ability=First strike;\
         Provoke
 timing=main
-oracle=First strike. Provoke
+oracle=First strike\nProvoke

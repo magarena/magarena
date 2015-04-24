@@ -9,4 +9,4 @@ pt=4/6
 ability=Vigilance;\
         SN can block an additional creature for each Equipment attached to SN.
 timing=main
-oracle=Vigilance. Kemba's Legion can block an additional creature for each Equipment attached to Kemba's Legion.
+oracle=Vigilance\nKemba's Legion can block an additional creature for each Equipment attached to Kemba's Legion.

@@ -9,4 +9,4 @@ pt=2/5
 ability=As long as SN is untapped, all combat damage that would be dealt to you by unblocked creatures is dealt to SN instead.;\
         Morph {3}{W}
 timing=main
-oracle=As long as Weathered Bodyguards is untapped, all combat damage that would be dealt to you by unblocked creatures is dealt to Weathered Bodyguards instead. Morph {3}{W}
+oracle=As long as Weathered Bodyguards is untapped, all combat damage that would be dealt to you by unblocked creatures is dealt to Weathered Bodyguards instead.\nMorph {3}{W}

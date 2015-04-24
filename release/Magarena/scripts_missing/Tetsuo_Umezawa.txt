@@ -9,4 +9,4 @@ pt=3/3
 ability=SN can't be the target of Aura spells.;\
         {U}{B}{B}{R}, {T}: Destroy target tapped or blocking creature.
 timing=main
-oracle=Tetsuo Umezawa can't be the target of Aura spells. {U}{B}{B}{R}, {T}: Destroy target tapped or blocking creature.
+oracle=Tetsuo Umezawa can't be the target of Aura spells.\n{U}{B}{B}{R}, {T}: Destroy target tapped or blocking creature.

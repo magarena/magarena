@@ -9,4 +9,4 @@ pt=2/3
 ability=When SN is put into your hand from your graveyard, you gain 2 life.;\
         Dredge 2
 timing=main
-oracle=When Golgari Brownscale is put into your hand from your graveyard, you gain 2 life. Dredge 2
+oracle=When Golgari Brownscale is put into your hand from your graveyard, you gain 2 life.\nDredge 2

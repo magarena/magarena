@@ -8,4 +8,4 @@ cost={U}{U}{U}
 ability=Enchant land;\
         At the beginning of the upkeep of enchanted land's controller, destroy that land unless that player pays {1} or 1 life.
 timing=main
-oracle=Enchant land. At the beginning of the upkeep of enchanted land's controller, destroy that land unless that player pays {1} or 1 life.
+oracle=Enchant land\nAt the beginning of the upkeep of enchanted land's controller, destroy that land unless that player pays {1} or 1 life.

@@ -9,4 +9,4 @@ pt=0/1
 ability=Defender;\
         Exile a creature card from your graveyard: Put X +0/+1 counters on SN, where X is the exiled card's converted mana cost.
 timing=main
-oracle=Defender. Exile a creature card from your graveyard: Put X +0/+1 counters on Necropolis, where X is the exiled card's converted mana cost.
+oracle=Defender\nExile a creature card from your graveyard: Put X +0/+1 counters on Necropolis, where X is the exiled card's converted mana cost.

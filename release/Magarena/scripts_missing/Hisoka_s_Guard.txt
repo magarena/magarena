@@ -9,4 +9,4 @@ pt=1/1
 ability=You may choose not to untap SN during your untap step.;\
         {1}{U}, {T}: Target creature you control other than SN has shroud for as long as SN remains tapped.
 timing=main
-oracle=You may choose not to untap Hisoka's Guard during your untap step. {1}{U}, {T}: Target creature you control other than Hisoka's Guard has shroud for as long as Hisoka's Guard remains tapped.
+oracle=You may choose not to untap Hisoka's Guard during your untap step.\n{1}{U}, {T}: Target creature you control other than Hisoka's Guard has shroud for as long as Hisoka's Guard remains tapped.

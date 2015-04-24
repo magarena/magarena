@@ -6,4 +6,4 @@ type=Instant
 cost={3}{B}{B}
 effect=You may pay 1 life and exile a black card from your hand rather than pay SN's mana cost.~Distribute two -2/-1 counters among one or two target creatures.
 timing=removal
-oracle=You may pay 1 life and exile a black card from your hand rather than pay Contagion's mana cost. Distribute two -2/-1 counters among one or two target creatures.
+oracle=You may pay 1 life and exile a black card from your hand rather than pay Contagion's mana cost.\nDistribute two -2/-1 counters among one or two target creatures.

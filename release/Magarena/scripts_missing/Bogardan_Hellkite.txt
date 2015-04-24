@@ -10,4 +10,4 @@ ability=Flash;\
         Flying;\
         When SN enters the battlefield, it deals 5 damage divided as you choose among any number of target creatures and/or players.
 timing=main
-oracle=Flash. Flying. When Bogardan Hellkite enters the battlefield, it deals 5 damage divided as you choose among any number of target creatures and/or players.
+oracle=Flash\nFlying\nWhen Bogardan Hellkite enters the battlefield, it deals 5 damage divided as you choose among any number of target creatures and/or players.

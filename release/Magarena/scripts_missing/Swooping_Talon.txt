@@ -10,4 +10,4 @@ ability=Flying;\
         {1}: SN loses flying until end of turn.;\
         Provoke
 timing=main
-oracle=Flying. {1}: Swooping Talon loses flying until end of turn. Provoke
+oracle=Flying\n{1}: Swooping Talon loses flying until end of turn.\nProvoke

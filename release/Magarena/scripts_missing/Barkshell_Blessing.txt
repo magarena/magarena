@@ -6,4 +6,4 @@ type=Instant
 cost={G/W}
 effect=Target creature gets +2/+2 until end of turn.~Conspire
 timing=removal
-oracle=Target creature gets +2/+2 until end of turn. Conspire
+oracle=Target creature gets +2/+2 until end of turn.\nConspire

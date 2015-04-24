@@ -6,4 +6,4 @@ type=Sorcery
 cost={1}{R}
 effect=Up to two target creatures can't block this turn.~Flashback {3}{R}
 timing=main
-oracle=Up to two target creatures can't block this turn. Flashback {3}{R}
+oracle=Up to two target creatures can't block this turn.\nFlashback {3}{R}

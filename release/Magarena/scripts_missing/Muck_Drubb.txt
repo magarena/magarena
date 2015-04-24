@@ -10,4 +10,4 @@ ability=Flash;\
         When SN enters the battlefield, change the target of target spell that targets only a single creature to SN.;\
         Madness {2}{B}
 timing=main
-oracle=Flash. When Muck Drubb enters the battlefield, change the target of target spell that targets only a single creature to Muck Drubb. Madness {2}{B}
+oracle=Flash\nWhen Muck Drubb enters the battlefield, change the target of target spell that targets only a single creature to Muck Drubb.\nMadness {2}{B}

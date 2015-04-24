@@ -9,4 +9,4 @@ pt=5/5
 ability=Trample;\
         Whenever a creature dealt damage by SN this turn dies, you gain 1 life and Axelrod deals 1 damage to target player.
 timing=main
-oracle=Trample. Whenever a creature dealt damage by Axelrod Gunnarson this turn dies, you gain 1 life and Axelrod deals 1 damage to target player.
+oracle=Trample\nWhenever a creature dealt damage by Axelrod Gunnarson this turn dies, you gain 1 life and Axelrod deals 1 damage to target player.

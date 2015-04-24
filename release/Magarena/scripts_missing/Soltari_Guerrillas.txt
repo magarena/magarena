@@ -9,4 +9,4 @@ pt=3/2
 ability=Shadow;\
         {0}: The next time SN would deal combat damage to an opponent this turn, it deals that damage to target creature instead.
 timing=main
-oracle=Shadow. {0}: The next time Soltari Guerrillas would deal combat damage to an opponent this turn, it deals that damage to target creature instead.
+oracle=Shadow\n{0}: The next time Soltari Guerrillas would deal combat damage to an opponent this turn, it deals that damage to target creature instead.

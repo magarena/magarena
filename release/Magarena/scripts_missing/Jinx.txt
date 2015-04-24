@@ -6,4 +6,4 @@ type=Instant
 cost={1}{U}
 effect=Target land becomes the basic land type of your choice until end of turn.~Draw a card at the beginning of the next turn's upkeep.
 timing=removal
-oracle=Target land becomes the basic land type of your choice until end of turn. Draw a card at the beginning of the next turn's upkeep.
+oracle=Target land becomes the basic land type of your choice until end of turn.\nDraw a card at the beginning of the next turn's upkeep.

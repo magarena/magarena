@@ -7,4 +7,4 @@ cost={3}
 ability=As SN enters the battlefield, choose artifact, creature, enchantment, instant, or sorcery.;\
         Spells you cast of the chosen type cost {1} less to cast.
 timing=main
-oracle=As Cloud Key enters the battlefield, choose artifact, creature, enchantment, instant, or sorcery. Spells you cast of the chosen type cost {1} less to cast.
+oracle=As Cloud Key enters the battlefield, choose artifact, creature, enchantment, instant, or sorcery.\nSpells you cast of the chosen type cost {1} less to cast.

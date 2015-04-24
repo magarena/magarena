@@ -9,4 +9,4 @@ pt=1/5
 ability=Infect;\
         {G}: Target creature blocks SN this turn if able.
 timing=main
-oracle=Infect. {G}: Target creature blocks Tangle Angler this turn if able.
+oracle=Infect\n{G}: Target creature blocks Tangle Angler this turn if able.

@@ -9,4 +9,4 @@ pt=5/4
 ability=Deathtouch;\
         Whenever combat damage is dealt to you or a planeswalker you control, if SN is in your graveyard, destroy target attacking creature, then put SN on top of your library.
 timing=main
-oracle=Deathtouch. Whenever combat damage is dealt to you or a planeswalker you control, if Vengeful Pharaoh is in your graveyard, destroy target attacking creature, then put Vengeful Pharaoh on top of your library.
+oracle=Deathtouch\nWhenever combat damage is dealt to you or a planeswalker you control, if Vengeful Pharaoh is in your graveyard, destroy target attacking creature, then put Vengeful Pharaoh on top of your library.

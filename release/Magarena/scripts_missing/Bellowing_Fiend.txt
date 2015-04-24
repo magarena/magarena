@@ -9,4 +9,4 @@ pt=3/3
 ability=Flying;\
         Whenever SN deals damage to a creature, SN deals 3 damage to that creature's controller and 3 damage to you.
 timing=main
-oracle=Flying. Whenever Bellowing Fiend deals damage to a creature, Bellowing Fiend deals 3 damage to that creature's controller and 3 damage to you.
+oracle=Flying\nWhenever Bellowing Fiend deals damage to a creature, Bellowing Fiend deals 3 damage to that creature's controller and 3 damage to you.

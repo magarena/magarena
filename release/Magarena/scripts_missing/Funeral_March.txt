@@ -8,4 +8,4 @@ cost={1}{B}{B}
 ability=Enchant creature;\
         When enchanted creature leaves the battlefield, its controller sacrifices a creature.
 timing=main
-oracle=Enchant creature. When enchanted creature leaves the battlefield, its controller sacrifices a creature.
+oracle=Enchant creature\nWhen enchanted creature leaves the battlefield, its controller sacrifices a creature.

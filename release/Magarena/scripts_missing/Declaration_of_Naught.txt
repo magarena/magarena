@@ -7,4 +7,4 @@ cost={U}{U}
 ability=As SN enters the battlefield, name a card.;\
         {U}: Counter target spell with the chosen name.
 timing=main
-oracle=As Declaration of Naught enters the battlefield, name a card. {U}: Counter target spell with the chosen name.
+oracle=As Declaration of Naught enters the battlefield, name a card.\n{U}: Counter target spell with the chosen name.

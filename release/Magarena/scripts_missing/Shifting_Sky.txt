@@ -7,4 +7,4 @@ cost={2}{U}
 ability=As SN enters the battlefield, choose a color.;\
         All nonland permanents are the chosen color.
 timing=main
-oracle=As Shifting Sky enters the battlefield, choose a color. All nonland permanents are the chosen color.
+oracle=As Shifting Sky enters the battlefield, choose a color.\nAll nonland permanents are the chosen color.

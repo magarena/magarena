@@ -7,4 +7,4 @@ cost={3}{B}
 ability=Whenever you lose life, for each 1 life you lost, sacrifice a permanent other than SN unless you discard a card.;\
         {B}{B}: Draw a card.
 timing=main
-oracle=Whenever you lose life, for each 1 life you lost, sacrifice a permanent other than Oath of Lim-Dûl unless you discard a card. {B}{B}: Draw a card.
+oracle=Whenever you lose life, for each 1 life you lost, sacrifice a permanent other than Oath of Lim-Dûl unless you discard a card.\n{B}{B}: Draw a card.

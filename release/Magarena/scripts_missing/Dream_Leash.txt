@@ -9,4 +9,4 @@ ability=Enchant permanent;\
         You can't choose an untapped permanent as SN's target as you cast SN.;\
         You control enchanted permanent.
 timing=main
-oracle=Enchant permanent. You can't choose an untapped permanent as Dream Leash's target as you cast Dream Leash. You control enchanted permanent.
+oracle=Enchant permanent\nYou can't choose an untapped permanent as Dream Leash's target as you cast Dream Leash.\nYou control enchanted permanent.

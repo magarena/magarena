@@ -9,4 +9,4 @@ pt=1/1
 ability=SN attacks each turn if able.;\
         {B}, Sacrifice SN: The next time damage would be dealt to target creature this turn, destroy that creature instead.
 timing=main
-oracle=Kill-Suit Cultist attacks each turn if able. {B}, Sacrifice Kill-Suit Cultist: The next time damage would be dealt to target creature this turn, destroy that creature instead.
+oracle=Kill-Suit Cultist attacks each turn if able.\n{B}, Sacrifice Kill-Suit Cultist: The next time damage would be dealt to target creature this turn, destroy that creature instead.

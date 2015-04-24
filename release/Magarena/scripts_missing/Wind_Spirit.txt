@@ -9,4 +9,4 @@ pt=3/2
 ability=Flying;\
         SN can't be blocked except by two or more creatures.
 timing=main
-oracle=Flying. Wind Spirit can't be blocked except by two or more creatures.
+oracle=Flying\nWind Spirit can't be blocked except by two or more creatures.

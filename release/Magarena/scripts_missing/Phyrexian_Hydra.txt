@@ -9,4 +9,4 @@ pt=7/7
 ability=Infect;\
         If damage would be dealt to SN, prevent that damage. Put a -1/-1 counter on SN for each 1 damage prevented this way.
 timing=main
-oracle=Infect. If damage would be dealt to Phyrexian Hydra, prevent that damage. Put a -1/-1 counter on Phyrexian Hydra for each 1 damage prevented this way.
+oracle=Infect\nIf damage would be dealt to Phyrexian Hydra, prevent that damage. Put a -1/-1 counter on Phyrexian Hydra for each 1 damage prevented this way.

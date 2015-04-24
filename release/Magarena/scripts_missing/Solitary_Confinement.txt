@@ -9,4 +9,4 @@ ability=At the beginning of your upkeep, sacrifice SN unless you discard a card.
         You have shroud.;\
         Prevent all damage that would be dealt to you.
 timing=main
-oracle=At the beginning of your upkeep, sacrifice Solitary Confinement unless you discard a card. Skip your draw step. You have shroud. Prevent all damage that would be dealt to you.
+oracle=At the beginning of your upkeep, sacrifice Solitary Confinement unless you discard a card.\nSkip your draw step.\nYou have shroud.\nPrevent all damage that would be dealt to you.

@@ -7,4 +7,4 @@ cost={3}{U}{U}
 ability=When SN enters the battlefield, search your library for seven cards, exile them in a face-down pile, and shuffle that pile. Then shuffle your library.;\
         If you would draw a card, you may instead put the top card of the pile you exiled into your hand.
 timing=main
-oracle=When Parallel Thoughts enters the battlefield, search your library for seven cards, exile them in a face-down pile, and shuffle that pile. Then shuffle your library. If you would draw a card, you may instead put the top card of the pile you exiled into your hand.
+oracle=When Parallel Thoughts enters the battlefield, search your library for seven cards, exile them in a face-down pile, and shuffle that pile. Then shuffle your library.\nIf you would draw a card, you may instead put the top card of the pile you exiled into your hand.

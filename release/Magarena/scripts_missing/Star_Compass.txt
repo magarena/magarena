@@ -7,4 +7,4 @@ cost={2}
 ability=SN enters the battlefield tapped.;\
         {T}: Add to your mana pool one mana of any color that a basic land you control could produce.
 timing=main
-oracle=Star Compass enters the battlefield tapped. {T}: Add to your mana pool one mana of any color that a basic land you control could produce.
+oracle=Star Compass enters the battlefield tapped.\n{T}: Add to your mana pool one mana of any color that a basic land you control could produce.

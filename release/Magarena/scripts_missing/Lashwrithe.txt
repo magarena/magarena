@@ -9,4 +9,4 @@ ability=Living weapon;\
         Equipped creature gets +1/+1 for each Swamp you control.;\
         Equip {B/P}{B/P}
 timing=main
-oracle=Living weapon. Equipped creature gets +1/+1 for each Swamp you control. Equip {B/P}{B/P}
+oracle=Living weapon\nEquipped creature gets +1/+1 for each Swamp you control.\nEquip {B/P}{B/P}

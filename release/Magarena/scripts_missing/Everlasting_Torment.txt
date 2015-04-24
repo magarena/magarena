@@ -8,4 +8,4 @@ ability=Players can't gain life.;\
         Damage can't be prevented.;\
         All damage is dealt as though its source had wither.
 timing=main
-oracle=Players can't gain life. Damage can't be prevented. All damage is dealt as though its source had wither.
+oracle=Players can't gain life.\nDamage can't be prevented.\nAll damage is dealt as though its source had wither.

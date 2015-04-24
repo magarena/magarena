@@ -7,4 +7,4 @@ cost={2}{W}
 ability=You don't lose the game for having 0 or less life.;\
         As long as you have 0 or less life, all damage is dealt to you as though its source had infect.
 timing=main
-oracle=You don't lose the game for having 0 or less life. As long as you have 0 or less life, all damage is dealt to you as though its source had infect.
+oracle=You don't lose the game for having 0 or less life.\nAs long as you have 0 or less life, all damage is dealt to you as though its source had infect.

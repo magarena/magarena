@@ -8,4 +8,4 @@ cost={2}{U}
 ability=Enchant creature;\
         Prevent all combat damage that would be dealt to and dealt by enchanted creature.
 timing=main
-oracle=Enchant creature. Prevent all combat damage that would be dealt to and dealt by enchanted creature.
+oracle=Enchant creature\nPrevent all combat damage that would be dealt to and dealt by enchanted creature.

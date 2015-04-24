@@ -9,4 +9,4 @@ pt=3/1
 ability=Sacrifice SN: Put a +1/+1 counter on target creature.;\
         Dredge 3
 timing=main
-oracle=Sacrifice Shambling Shell: Put a +1/+1 counter on target creature. Dredge 3
+oracle=Sacrifice Shambling Shell: Put a +1/+1 counter on target creature.\nDredge 3

@@ -9,4 +9,4 @@ pt=2/2
 ability=First strike;\
         SN can't be equipped.
 timing=main
-oracle=First strike. Goblin Brawler can't be equipped.
+oracle=First strike\nGoblin Brawler can't be equipped.

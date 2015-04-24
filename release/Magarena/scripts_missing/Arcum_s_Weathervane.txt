@@ -7,4 +7,4 @@ cost={2}
 ability={2}, {T}: Target snow land is no longer snow.;\
         {2}, {T}: Target nonsnow basic land becomes snow.
 timing=main
-oracle={2}, {T}: Target snow land is no longer snow. {2}, {T}: Target nonsnow basic land becomes snow.
+oracle={2}, {T}: Target snow land is no longer snow.\n{2}, {T}: Target nonsnow basic land becomes snow.

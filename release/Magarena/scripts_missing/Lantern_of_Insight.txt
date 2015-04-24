@@ -7,4 +7,4 @@ cost={1}
 ability=Players play with the top card of their libraries revealed.;\
         {T}, Sacrifice SN: Target player shuffles his or her library.
 timing=main
-oracle=Players play with the top card of their libraries revealed. {T}, Sacrifice Lantern of Insight: Target player shuffles his or her library.
+oracle=Players play with the top card of their libraries revealed.\n{T}, Sacrifice Lantern of Insight: Target player shuffles his or her library.

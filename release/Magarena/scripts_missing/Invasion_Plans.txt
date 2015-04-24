@@ -7,4 +7,4 @@ cost={2}{R}
 ability=All creatures block each turn if able.;\
         The attacking player chooses how each creature blocks each turn.
 timing=main
-oracle=All creatures block each turn if able. The attacking player chooses how each creature blocks each turn.
+oracle=All creatures block each turn if able.\nThe attacking player chooses how each creature blocks each turn.

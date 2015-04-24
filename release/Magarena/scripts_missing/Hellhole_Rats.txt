@@ -9,4 +9,4 @@ pt=2/2
 ability=Haste;\
         When SN enters the battlefield, target player discards a card. SN deals damage to that player equal to that card's converted mana cost.
 timing=main
-oracle=Haste. When Hellhole Rats enters the battlefield, target player discards a card. Hellhole Rats deals damage to that player equal to that card's converted mana cost.
+oracle=Haste\nWhen Hellhole Rats enters the battlefield, target player discards a card. Hellhole Rats deals damage to that player equal to that card's converted mana cost.

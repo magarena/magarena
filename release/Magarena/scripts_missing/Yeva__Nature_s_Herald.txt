@@ -9,4 +9,4 @@ pt=4/4
 ability=Flash;\
         You may cast green creature cards as though they had flash.
 timing=main
-oracle=Flash. You may cast green creature cards as though they had flash.
+oracle=Flash\nYou may cast green creature cards as though they had flash.

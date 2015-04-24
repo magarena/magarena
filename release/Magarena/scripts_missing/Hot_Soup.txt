@@ -9,4 +9,4 @@ ability=Equipped creature can't be blocked.;\
         Whenever equipped creature is dealt damage, destroy it.;\
         Equip {3}
 timing=main
-oracle=Equipped creature can't be blocked. Whenever equipped creature is dealt damage, destroy it. Equip {3}
+oracle=Equipped creature can't be blocked.\nWhenever equipped creature is dealt damage, destroy it.\nEquip {3}

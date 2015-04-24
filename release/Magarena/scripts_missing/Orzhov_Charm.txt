@@ -6,4 +6,4 @@ type=Instant
 cost={W}{B}
 effect=Choose one — (1) Return target creature you control and all Auras you control attached to it to their owner's hand. (2) Destroy target creature and you lose life equal to its toughness. (3) Return target creature card with converted mana cost 1 or less from your graveyard to the battlefield.
 timing=removal
-oracle=Choose one — • Return target creature you control and all Auras you control attached to it to their owner's hand. • Destroy target creature and you lose life equal to its toughness. • Return target creature card with converted mana cost 1 or less from your graveyard to the battlefield.
+oracle=Choose one —\n• Return target creature you control and all Auras you control attached to it to their owner's hand.\n• Destroy target creature and you lose life equal to its toughness.\n• Return target creature card with converted mana cost 1 or less from your graveyard to the battlefield.

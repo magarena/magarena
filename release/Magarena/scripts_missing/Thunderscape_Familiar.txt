@@ -9,4 +9,4 @@ pt=1/1
 ability=First strike;\
         Black spells and green spells you cast cost {1} less to cast.
 timing=main
-oracle=First strike. Black spells and green spells you cast cost {1} less to cast.
+oracle=First strike\nBlack spells and green spells you cast cost {1} less to cast.

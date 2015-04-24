@@ -9,4 +9,4 @@ pt=1/1
 ability=Flying;\
         Your maximum hand size is reduced by two.
 timing=main
-oracle=Flying. Your maximum hand size is reduced by two.
+oracle=Flying\nYour maximum hand size is reduced by two.

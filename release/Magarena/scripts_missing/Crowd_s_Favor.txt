@@ -6,4 +6,4 @@ type=Instant
 cost={R}
 effect=Convoke~Target creature gets +1/+0 and gains first strike until end of turn.
 timing=removal
-oracle=Convoke. Target creature gets +1/+0 and gains first strike until end of turn.
+oracle=Convoke\nTarget creature gets +1/+0 and gains first strike until end of turn.

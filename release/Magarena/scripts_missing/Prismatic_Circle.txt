@@ -8,4 +8,4 @@ ability=Cumulative upkeep {1};\
         As SN enters the battlefield, choose a color.;\
         {1}: The next time a source of your choice of the chosen color would deal damage to you this turn, prevent that damage.
 timing=main
-oracle=Cumulative upkeep {1}. As Prismatic Circle enters the battlefield, choose a color. {1}: The next time a source of your choice of the chosen color would deal damage to you this turn, prevent that damage.
+oracle=Cumulative upkeep {1}\nAs Prismatic Circle enters the battlefield, choose a color.\n{1}: The next time a source of your choice of the chosen color would deal damage to you this turn, prevent that damage.

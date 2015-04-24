@@ -8,4 +8,4 @@ cost={R}
 ability=Enchant creature you control;\
         {R}: Enchanted creature deals 1 damage to target creature with flying.
 timing=main
-oracle=Enchant creature you control. {R}: Enchanted creature deals 1 damage to target creature with flying.
+oracle=Enchant creature you control\n{R}: Enchanted creature deals 1 damage to target creature with flying.

@@ -8,4 +8,4 @@ cost={2}{G}
 ability=Enchant land;\
         Whenever enchanted land is tapped for mana, its controller adds {G} to his or her mana pool for each Elf on the battlefield.
 timing=main
-oracle=Enchant land. Whenever enchanted land is tapped for mana, its controller adds {G} to his or her mana pool for each Elf on the battlefield.
+oracle=Enchant land\nWhenever enchanted land is tapped for mana, its controller adds {G} to his or her mana pool for each Elf on the battlefield.

@@ -9,4 +9,4 @@ pt=2/1
 ability=Flying;\
         Whenever SN deals combat damage to a player, you gain 1 life for each artifact that player controls.
 timing=main
-oracle=Flying. Whenever Emissary of Hope deals combat damage to a player, you gain 1 life for each artifact that player controls.
+oracle=Flying\nWhenever Emissary of Hope deals combat damage to a player, you gain 1 life for each artifact that player controls.

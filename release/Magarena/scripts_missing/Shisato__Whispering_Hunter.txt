@@ -9,4 +9,4 @@ pt=2/2
 ability=At the beginning of your upkeep, sacrifice a Snake.;\
         Whenever SN deals combat damage to a player, that player skips his or her next untap step.
 timing=main
-oracle=At the beginning of your upkeep, sacrifice a Snake. Whenever Shisato, Whispering Hunter deals combat damage to a player, that player skips his or her next untap step.
+oracle=At the beginning of your upkeep, sacrifice a Snake.\nWhenever Shisato, Whispering Hunter deals combat damage to a player, that player skips his or her next untap step.

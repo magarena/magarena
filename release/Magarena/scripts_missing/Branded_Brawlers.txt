@@ -9,4 +9,4 @@ pt=2/2
 ability=SN can't attack if defending player controls an untapped land.;\
         SN can't block if you control an untapped land.
 timing=main
-oracle=Branded Brawlers can't attack if defending player controls an untapped land. Branded Brawlers can't block if you control an untapped land.
+oracle=Branded Brawlers can't attack if defending player controls an untapped land.\nBranded Brawlers can't block if you control an untapped land.

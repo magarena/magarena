@@ -9,4 +9,4 @@ pt=5/3
 ability=Flying;\
         Prevent all damage that would be dealt to SN by creatures with first strike.
 timing=main
-oracle=Flying. Prevent all damage that would be dealt to Tresserhorn Skyknight by creatures with first strike.
+oracle=Flying\nPrevent all damage that would be dealt to Tresserhorn Skyknight by creatures with first strike.

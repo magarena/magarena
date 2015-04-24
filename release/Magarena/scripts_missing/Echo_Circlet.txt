@@ -8,4 +8,4 @@ cost={2}
 ability=Equipped creature can block an additional creature.;\
         Equip {1}
 timing=main
-oracle=Equipped creature can block an additional creature. Equip {1}
+oracle=Equipped creature can block an additional creature.\nEquip {1}

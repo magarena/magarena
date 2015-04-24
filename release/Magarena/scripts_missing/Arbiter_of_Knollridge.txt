@@ -9,4 +9,4 @@ pt=5/5
 ability=Vigilance;\
         When SN enters the battlefield, each player's life total becomes the highest life total among all players.
 timing=main
-oracle=Vigilance. When Arbiter of Knollridge enters the battlefield, each player's life total becomes the highest life total among all players.
+oracle=Vigilance\nWhen Arbiter of Knollridge enters the battlefield, each player's life total becomes the highest life total among all players.

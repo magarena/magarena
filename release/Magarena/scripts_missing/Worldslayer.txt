@@ -8,4 +8,4 @@ cost={5}
 ability=Whenever equipped creature deals combat damage to a player, destroy all permanents other than SN.;\
         Equip {5}
 timing=main
-oracle=Whenever equipped creature deals combat damage to a player, destroy all permanents other than Worldslayer. Equip {5}
+oracle=Whenever equipped creature deals combat damage to a player, destroy all permanents other than Worldslayer.\nEquip {5}

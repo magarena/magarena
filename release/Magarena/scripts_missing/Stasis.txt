@@ -7,4 +7,4 @@ cost={1}{U}
 ability=Players skip their untap steps.;\
         At the beginning of your upkeep, sacrifice SN unless you pay {U}.
 timing=main
-oracle=Players skip their untap steps. At the beginning of your upkeep, sacrifice Stasis unless you pay {U}.
+oracle=Players skip their untap steps.\nAt the beginning of your upkeep, sacrifice Stasis unless you pay {U}.

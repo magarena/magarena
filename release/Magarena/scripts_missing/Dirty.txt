@@ -6,4 +6,4 @@ type=Sorcery
 cost={2}{G}
 effect=Return target card from your graveyard to your hand.~Fuse
 timing=main
-oracle=Return target card from your graveyard to your hand. Fuse
+oracle=Return target card from your graveyard to your hand.\nFuse

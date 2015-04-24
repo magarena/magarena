@@ -10,4 +10,4 @@ ability=Bestow {3}{B};\
         Whenever SN or enchanted creature attacks, defending player loses 2 life.;\
         Enchanted creature gets +1/+1.
 timing=main
-oracle=Bestow {3}{B}. Whenever Spiteful Returned or enchanted creature attacks, defending player loses 2 life. Enchanted creature gets +1/+1.
+oracle=Bestow {3}{B}\nWhenever Spiteful Returned or enchanted creature attacks, defending player loses 2 life.\nEnchanted creature gets +1/+1.

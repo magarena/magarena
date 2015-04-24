@@ -10,4 +10,4 @@ ability=Flying;\
         SN enters the battlefield with three wish counters on it.;\
         {2}{U}{U}, Remove a wish counter from SN: Reveal the top card of your library. You may play that card without paying its mana cost. If you don't, exile it.
 timing=main
-oracle=Flying. Djinn of Wishes enters the battlefield with three wish counters on it. {2}{U}{U}, Remove a wish counter from Djinn of Wishes: Reveal the top card of your library. You may play that card without paying its mana cost. If you don't, exile it.
+oracle=Flying\nDjinn of Wishes enters the battlefield with three wish counters on it.\n{2}{U}{U}, Remove a wish counter from Djinn of Wishes: Reveal the top card of your library. You may play that card without paying its mana cost. If you don't, exile it.

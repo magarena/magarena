@@ -9,4 +9,4 @@ pt=3/3
 ability=Wither;\
         SN must be blocked if able.
 timing=main
-oracle=Wither. Inescapable Brute must be blocked if able.
+oracle=Wither\nInescapable Brute must be blocked if able.

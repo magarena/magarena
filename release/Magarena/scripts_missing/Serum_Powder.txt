@@ -7,4 +7,4 @@ cost={3}
 ability={T}: Add {1} to your mana pool.;\
         Any time you could mulligan and SN is in your hand, you may exile all the cards from your hand, then draw that many cards.
 timing=main
-oracle={T}: Add {1} to your mana pool. Any time you could mulligan and Serum Powder is in your hand, you may exile all the cards from your hand, then draw that many cards.
+oracle={T}: Add {1} to your mana pool.\nAny time you could mulligan and Serum Powder is in your hand, you may exile all the cards from your hand, then draw that many cards.

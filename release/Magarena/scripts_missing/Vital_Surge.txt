@@ -7,4 +7,4 @@ subtype=Arcane
 cost={1}{G}
 effect=You gain 3 life.~Splice onto Arcane {1}{G}
 timing=removal
-oracle=You gain 3 life. Splice onto Arcane {1}{G}
+oracle=You gain 3 life.\nSplice onto Arcane {1}{G}

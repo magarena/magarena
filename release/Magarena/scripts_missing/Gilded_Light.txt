@@ -6,4 +6,4 @@ type=Instant
 cost={1}{W}
 effect=You gain shroud until end of turn.~Cycling {2}
 timing=removal
-oracle=You gain shroud until end of turn. Cycling {2}
+oracle=You gain shroud until end of turn.\nCycling {2}

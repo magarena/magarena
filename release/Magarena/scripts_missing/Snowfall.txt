@@ -7,4 +7,4 @@ cost={2}{U}
 ability=Cumulative upkeep {U};\
         Whenever an Island is tapped for mana, its controller may add {U} to his or her mana pool. If that Island is snow, its controller may add {U}{U} to his or her mana pool instead. Spend this mana only to pay cumulative upkeep costs.
 timing=main
-oracle=Cumulative upkeep {U}. Whenever an Island is tapped for mana, its controller may add {U} to his or her mana pool. If that Island is snow, its controller may add {U}{U} to his or her mana pool instead. Spend this mana only to pay cumulative upkeep costs.
+oracle=Cumulative upkeep {U}\nWhenever an Island is tapped for mana, its controller may add {U} to his or her mana pool. If that Island is snow, its controller may add {U}{U} to his or her mana pool instead. Spend this mana only to pay cumulative upkeep costs.

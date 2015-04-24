@@ -9,4 +9,4 @@ pt=2/3
 ability=Dethrone;\
         Pay 3 life: Add {R} to your mana pool.
 timing=main
-oracle=Dethrone. Pay 3 life: Add {R} to your mana pool.
+oracle=Dethrone\nPay 3 life: Add {R} to your mana pool.

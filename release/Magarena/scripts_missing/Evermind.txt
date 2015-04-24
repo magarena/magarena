@@ -7,4 +7,4 @@ subtype=Arcane
 color=u
 effect=Draw a card.~Splice onto Arcane {1}{U}
 timing=removal
-oracle=Draw a card. Splice onto Arcane {1}{U}
+oracle=Draw a card.\nSplice onto Arcane {1}{U}
