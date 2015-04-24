@@ -2177,7 +2177,7 @@ public enum MagicRuleEventAction {
         }
     },
     TokenSingle(
-        "put (a|an) (?<name>[^\\.]*) onto the battlefield( )?(?<mods>.+)?\\.",
+        "put (a|an) (?<name>[^\\.]*) onto the battlefield(\\. | )?(?<mods>.+)?\\.",
         MagicTiming.Token,
         "Token"
     ) {
@@ -2198,7 +2198,7 @@ public enum MagicRuleEventAction {
         }
     },
     TokenMany(
-        "put(s)? (?<amount>[a-z]+) (?<name>[^\\.]*tokens[^\\.]*) onto the battlefield( )?(?<mods>.+)?\\.",
+        "put(s)? (?<amount>[a-z]+) (?<name>[^\\.]*tokens[^\\.]*) onto the battlefield(\\. | )?(?<mods>.+)?\\.",
         MagicTiming.Token,
         "Token"
     ) {

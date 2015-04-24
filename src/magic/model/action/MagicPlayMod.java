@@ -32,7 +32,7 @@ public enum MagicPlayMod implements MagicPermanentAction {
             game.doAction(new AddTriggerAction(perm, MagicAtEndOfTurnTrigger.ExileAtEnd));
         }
     },
-    EXILE_AT_END_OF_YOUR_TURN() {
+    EXILE_AT_END_OF_YOUR_TURN("Exile it at the beginning of your next end step") {
         protected void doAction(final MagicGame game, final MagicPermanent perm) {
             final MagicPlayer controller = perm.getController();
             game.doAction(new AddTriggerAction(perm, MagicAtEndOfTurnTrigger.ExileAtYourEnd(controller)));
