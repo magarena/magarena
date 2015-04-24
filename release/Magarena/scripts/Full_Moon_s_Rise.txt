@@ -6,5 +6,5 @@ type=Enchantment
 cost={1}{G}
 ability=Werewolf creatures you control get +1/+0 and have trample.;\
         Sacrifice SN: Regenerate all Werewolf creatures you control.
-timing=main
+timing=enchantment
 oracle=Werewolf creatures you control get +1/+0 and have trample. Sacrifice Full Moon's Rise: Regenerate all Werewolf creatures you control.
