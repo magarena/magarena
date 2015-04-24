@@ -49,14 +49,7 @@ public class DuelPlayerConfig {
         setDeckProfile(MagicDeckProfile.getDeckProfile(deckType, deckValue));
     }
 
-    public void load(final Properties properties, final String prefix) {
-
-        setDeckProfile(
-                properties.getProperty(
-                        prefix + PLAYER_DECK,
-                        DeckType.Random + ";" + MagicDeckProfile.ANY_THREE)
-        );
-
+    private void loadDeck(final Properties properties, final String prefix) {
         deck.clear();
         for (int index = 1; index <= properties.size(); index++) {
             final String deckPrefix = getDeckPrefix(prefix, index);
@@ -67,8 +60,16 @@ public class DuelPlayerConfig {
                     deck.add(cdef);
                 }
             }
-        }
+        }        
     }
+
+    public void load(final Properties properties, final String prefix) {
+        setDeckProfile(
+                properties.getProperty(
+                        prefix + PLAYER_DECK,
+                        DeckType.Random + ";" + MagicDeckProfile.ANY_THREE)
+        );
+        loadDeck(properties, prefix);    }
 
     public void save(final Properties properties, final String prefix) {
 
