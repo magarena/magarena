@@ -2046,6 +2046,12 @@ public class MagicTargetFilterFactory {
         4
     );
     
+    public static final MagicPermanentFilterImpl CREATURE_TOUGHNESS_4_OR_GREATER_YOU_CONTROL = MagicPTTargetFilter.Toughness(
+        MagicTargetFilterFactory.CREATURE_YOU_CONTROL,
+        Operator.GREATER_THAN_OR_EQUAL,
+        4
+    );
+    
     public static final MagicPermanentFilterImpl CREATURE_POWER_1_OR_LESS = new MagicPTTargetFilter(
         MagicTargetFilterFactory.CREATURE,
         Operator.LESS_THAN_OR_EQUAL,
@@ -2251,6 +2257,7 @@ public class MagicTargetFilterFactory {
         single.put("creature with power 5 or greater you control", CREATURE_POWER_5_OR_MORE_YOU_CONTROL);
         single.put("creature with power 2 or less you control", CREATURE_POWER_2_OR_LESS_YOU_CONTROL); 
         single.put("creature you control with power 5 or greater", CREATURE_POWER_5_OR_MORE_YOU_CONTROL);
+        single.put("creature you control with toughness 4 or greater", CREATURE_TOUGHNESS_4_OR_GREATER_YOU_CONTROL);
         single.put("creature with modular you control", MODULAR_CREATURE_YOU_CONTROL);
         single.put("creature you control with level up", LEVELUP_CREATURE_YOU_CONTROL);
         single.put("monocolored creature you control", MONOCOLORED_CREATURE_YOU_CONTROL);
