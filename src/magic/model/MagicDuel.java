@@ -222,7 +222,7 @@ public class MagicDuel {
     }
 
     private void load(final Properties properties) {
-        duelConfig.load(properties);
+        duelConfig.load(properties, true);
         opponentIndex=Integer.parseInt(properties.getProperty(OPPONENT,"1"));
         gameNr=Integer.parseInt(properties.getProperty(GAME,"1"));
         gamesPlayed=Integer.parseInt(properties.getProperty(PLAYED,"0"));

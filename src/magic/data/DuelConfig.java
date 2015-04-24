@@ -89,7 +89,7 @@ public class DuelConfig {
         players[playerIndex].setDeckProfile(MagicDeckProfile.getDeckProfile(deckType, deckValue));
     }
 
-    public void load(final Properties properties) {
+    public void load(final Properties properties, final boolean loadPlayerDecks) {
         startLife=Integer.parseInt(properties.getProperty(START_LIFE,Integer.toString(startLife)));
         handSize=Integer.parseInt(properties.getProperty(HAND_SIZE,Integer.toString(handSize)));
         games=Integer.parseInt(properties.getProperty(GAMES,Integer.toString(games)));
@@ -97,15 +97,17 @@ public class DuelConfig {
         setPlayerProfile(0, PlayerProfile.getHumanPlayer(properties.getProperty(PLAYER_ONE)));
         setPlayerProfile(1, PlayerProfile.getAiPlayer(properties.getProperty(PLAYER_TWO)));
 
-        for (int i = 0; i < getPlayerConfigs().length; i++) {
-            getPlayerConfig(i).load(properties, getPlayerPrefix(i));
+        if (loadPlayerDecks) {
+            for (int i = 0; i < getPlayerConfigs().length; i++) {
+                getPlayerConfig(i).load(properties, getPlayerPrefix(i));
+            }
         }
     }
 
     public void load() {
         final File configFile = MagicDuel.getLatestDuelFile();
         final Properties properties = configFile.exists() ? FileIO.toProp(configFile) : new Properties();
-        load(properties);
+        load(properties, false);
     }
 
     public void save(final Properties properties) {
