@@ -124,7 +124,7 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
         // add restriction as a MagicMatchedCostEvent
         final String[] part = token[1].split(ActivationRestriction);
         if (part.length > 1) {
-            matchedCostEvents.addAll(MagicConditionCostEvent.build(part[1]));
+            matchedCostEvents.addAll(MagicCondition.build(part[1]));
         }
 
         // parse the effect        

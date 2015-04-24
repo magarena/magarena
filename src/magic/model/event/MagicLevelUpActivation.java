@@ -52,7 +52,7 @@ public class MagicLevelUpActivation extends MagicPermanentActivation {
         game.doAction(new ChangeCountersAction(event.getPermanent(),MagicCounterType.Level,1));
     }
 
-    private static final class MaximumCondition implements MagicCondition {
+    private static final class MaximumCondition extends MagicCondition {
 
         private final int maximum;
 

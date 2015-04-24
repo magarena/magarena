@@ -68,7 +68,7 @@ public abstract class MagicCardAbilityActivation extends MagicCardActivation {
         // add restriction as a MagicMatchedCostEvent
         final String[] part = token[1].split(ActivationRestriction);
         if (part.length > 1) {
-            matchedCostEvents.addAll(MagicConditionCostEvent.build(part[1]));
+            matchedCostEvents.addAll(MagicCondition.build(part[1]));
         }
         
         // parse the effect        

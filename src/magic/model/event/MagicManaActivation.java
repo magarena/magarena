@@ -82,7 +82,7 @@ public abstract class MagicManaActivation implements MagicChangeCardDefinition {
         assert matchedCostEvents.size() > 0;
         
         if (part.length > 1) {
-            matchedCostEvents.addAll(MagicConditionCostEvent.build(part[1]));
+            matchedCostEvents.addAll(MagicCondition.build(part[1]));
         }
 
         // Mana activation cost events do not have choices.

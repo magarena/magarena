@@ -7,7 +7,7 @@ import magic.model.choice.MagicBuilderManaCost;
 import magic.model.choice.MagicPayManaCostResultBuilder;
 
 // X must be at least 1.
-public class MagicManaCostCondition implements MagicCondition {
+public class MagicManaCostCondition extends MagicCondition {
 
     private final MagicManaCost cost;
 
