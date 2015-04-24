@@ -9,6 +9,8 @@ def TARGET_OPPONENT_WITH_TWO_MORE_CARDS = new MagicTargetChoice(
     "target opponent who has at least two more cards in hand than you"
 );
 
+def effect = MagicRuleEventAction.create("Draw a card.");
+
 [
     new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Draw),
@@ -27,14 +29,9 @@ def TARGET_OPPONENT_WITH_TWO_MORE_CARDS = new MagicTargetChoice(
             return new MagicEvent(
                 source,
                 TARGET_OPPONENT_WITH_TWO_MORE_CARDS,
-                this,
+                effect.getAction(),
                 "Draw a card."
             );
-        }
-
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.addEvent(MagicRuleEventAction.create("Draw a card.").getEvent(event.getSource()));
         }
     }
 ]

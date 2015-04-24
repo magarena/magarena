@@ -28,7 +28,7 @@ def TARGET_OPPONENT_WHO_HAS_MORE_LIFE = new MagicTargetChoice(
                 source,
                 TARGET_OPPONENT_WHO_HAS_MORE_LIFE,
                 this,
-                "SN deals 2 damage to RN."
+                "SN deals 2 damage to target opponent\$ who has more life than PN."
             );
         }
 

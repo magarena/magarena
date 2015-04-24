@@ -9,6 +9,8 @@ def TARGET_OPPONENT_WHO_HAS_MORE_LIFE = new MagicTargetChoice(
     "target opponent who has more life than you"
 );
 
+def effect = MagicRuleEventAction.create("You gain 3 life.");
+
 [
     new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Pump),
@@ -27,14 +29,9 @@ def TARGET_OPPONENT_WHO_HAS_MORE_LIFE = new MagicTargetChoice(
             return new MagicEvent(
                 source,
                 TARGET_OPPONENT_WHO_HAS_MORE_LIFE,
-                this,
+                effect.getAction(),
                 "PN gains 3 life."
             );
-        }
-
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.addEvent(MagicRuleEventAction.create("You gain 3 life.").getEvent(event.getSource()));
         }
     }
 ]
