@@ -13,35 +13,35 @@ public enum MagicConditionParser {
     YouControl("you control a(n)? " + ARG.WORDRUN) {
         public MagicCondition toCondition(final Matcher arg) {
             return MagicConditionFactory.YouControl(
-                MagicTargetFilterFactory.singlePermanent(ARG.wordrun(arg))
+                MagicTargetFilterFactory.Permanent(ARG.wordrun(arg))
             );
         }
     },
     OpponentControl("an opponent controls a(n)? " + ARG.WORDRUN) {
         public MagicCondition toCondition(final Matcher arg) {
             return MagicConditionFactory.OpponentControl(
-                MagicTargetFilterFactory.singlePermanent(ARG.wordrun(arg))
+                MagicTargetFilterFactory.Permanent(ARG.wordrun(arg))
             );
         }
     },
     DefenderControl("defending player controls a(n)? " + ARG.WORDRUN) {
         public MagicCondition toCondition(final Matcher arg) {
             return MagicConditionFactory.OpponentControl(
-                MagicTargetFilterFactory.singlePermanent(ARG.wordrun(arg))
+                MagicTargetFilterFactory.Permanent(ARG.wordrun(arg))
             );
         }
     },
     YouControlAnother("you control another " + ARG.WORDRUN) {
         public MagicCondition toCondition(final Matcher arg) {
             return MagicConditionFactory.YouControlAnother(
-                MagicTargetFilterFactory.singlePermanent(ARG.wordrun(arg))
+                MagicTargetFilterFactory.Permanent(ARG.wordrun(arg))
             );
         }
     },
     ControlAtLeast("you control " + ARG.AMOUNT + " or more " + ARG.WORDRUN) {
         public MagicCondition toCondition(final Matcher arg) {
             return MagicConditionFactory.YouControlAtLeast(
-                MagicTargetFilterFactory.multiple(ARG.wordrun(arg)),
+                MagicTargetFilterFactory.Permanent(ARG.wordrun(arg)),
                 ARG.amount(arg)
             );
         }
@@ -49,7 +49,7 @@ public enum MagicConditionParser {
     OppControlAtLeast("an opponent controls " + ARG.AMOUNT + " or more " + ARG.WORDRUN) {
         public MagicCondition toCondition(final Matcher arg) {
             return MagicConditionFactory.OppControlAtLeast(
-                MagicTargetFilterFactory.multiple(ARG.wordrun(arg)),
+                MagicTargetFilterFactory.Permanent(ARG.wordrun(arg)),
                 ARG.amount(arg)
             );
         }
@@ -57,7 +57,7 @@ public enum MagicConditionParser {
     ControlNone("you control no " + ARG.WORDRUN) {
         public MagicCondition toCondition(final Matcher arg) {
             return MagicConditionFactory.YouControlNone(
-                MagicTargetFilterFactory.multiple(ARG.wordrun(arg))
+                MagicTargetFilterFactory.Permanent(ARG.wordrun(arg))
             );
         }
     },
@@ -335,28 +335,28 @@ public enum MagicConditionParser {
     NoneOnBattlefield("no " + ARG.WORDRUN + " are on the battlefield") {
         public MagicCondition toCondition(final Matcher arg) {
             return MagicConditionFactory.BattlefieldEqual(
-                MagicTargetFilterFactory.multiple(ARG.wordrun(arg)), 0
+                MagicTargetFilterFactory.Permanent(ARG.wordrun(arg)), 0
             );
         }
     },
     NoneOnBattlefieldAlt("there are no " + ARG.WORDRUN + " on the battlefield") {
         public MagicCondition toCondition(final Matcher arg) {
             return MagicConditionFactory.BattlefieldEqual(
-                MagicTargetFilterFactory.multiple(ARG.wordrun(arg)), 0
+                MagicTargetFilterFactory.Permanent(ARG.wordrun(arg)), 0
             );
         }
     },
     AtLeastOneOnBattlefield("there is (a|an) " + ARG.WORDRUN + " on the battlefield") {
         public MagicCondition toCondition(final Matcher arg) {
             return MagicConditionFactory.BattlefieldAtLeast(
-                MagicTargetFilterFactory.singlePermanent(ARG.wordrun(arg)), 1
+                MagicTargetFilterFactory.Permanent(ARG.wordrun(arg)), 1
             );
         }
     },
     FiveOrMoreIslands("there are " + ARG.AMOUNT + " or more " + ARG.WORDRUN + " on the battlefield") {
         public MagicCondition toCondition(final Matcher arg) {
             return MagicConditionFactory.BattlefieldAtLeast(
-                MagicTargetFilterFactory.multiple(ARG.wordrun(arg)), ARG.amount(arg)
+                MagicTargetFilterFactory.Permanent(ARG.wordrun(arg)), ARG.amount(arg)
             );
         }
     },

@@ -122,7 +122,7 @@ public enum MagicRuleEventAction {
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
-            final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.multiple(matcher.group("group"));
+            final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.Permanent(matcher.group("group"));
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
@@ -366,7 +366,7 @@ public enum MagicRuleEventAction {
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
-            final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.multiple(matcher.group("group"));
+            final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.Permanent(matcher.group("group"));
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
@@ -459,8 +459,8 @@ public enum MagicRuleEventAction {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
             final int amount = Integer.parseInt(matcher.group("amount"));
-            final MagicTargetFilter<MagicTarget> filter1 = MagicTargetFilterFactory.multipleTargets(matcher.group("group1"));
-            final MagicTargetFilter<MagicTarget> filter2 = MagicTargetFilterFactory.multipleTargets(matcher.group("group2"));
+            final MagicTargetFilter<MagicTarget> filter1 = MagicTargetFilterFactory.Target(matcher.group("group1"));
+            final MagicTargetFilter<MagicTarget> filter2 = MagicTargetFilterFactory.Target(matcher.group("group2"));
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
@@ -485,7 +485,7 @@ public enum MagicRuleEventAction {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
             final int amount = Integer.parseInt(matcher.group("amount"));
-            final MagicTargetFilter<MagicTarget> filter = MagicTargetFilterFactory.multipleTargets(matcher.group("group"));
+            final MagicTargetFilter<MagicTarget> filter = MagicTargetFilterFactory.Target(matcher.group("group"));
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
@@ -666,7 +666,7 @@ public enum MagicRuleEventAction {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
             final int amount = EnglishToInt.convert(matcher.group("amount"));
-            final MagicTargetFilter<MagicPlayer> filter = MagicTargetFilterFactory.singlePlayer(matcher.group("group"));
+            final MagicTargetFilter<MagicPlayer> filter = MagicTargetFilterFactory.Player(matcher.group("group"));
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
@@ -686,7 +686,7 @@ public enum MagicRuleEventAction {
         public MagicEventAction getAction(final Matcher matcher) {
             final int amount = EnglishToInt.convert(matcher.group("amount"));
             final boolean isRandom = matcher.group("random") != null;
-            final MagicTargetFilter<MagicPlayer> filter = MagicTargetFilterFactory.singlePlayer(matcher.group("group"));
+            final MagicTargetFilter<MagicPlayer> filter = MagicTargetFilterFactory.Player(matcher.group("group"));
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
@@ -929,7 +929,7 @@ public enum MagicRuleEventAction {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
             final int amount = Integer.parseInt(matcher.group("amount"));
-            final MagicTargetFilter<MagicPlayer> filter = MagicTargetFilterFactory.singlePlayer(matcher.group("group"));
+            final MagicTargetFilter<MagicPlayer> filter = MagicTargetFilterFactory.Player(matcher.group("group"));
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
@@ -989,7 +989,7 @@ public enum MagicRuleEventAction {
             final String[] pt = matcher.group("pt").replace("+","").split("/");
             final int power = Integer.parseInt(pt[0]);
             final int toughness = Integer.parseInt(pt[1]);
-            final MagicTargetFilter<MagicTarget> filter = MagicTargetFilterFactory.singleTarget(ARG.wordrun(matcher));
+            final MagicTargetFilter<MagicTarget> filter = MagicTargetFilterFactory.Target(ARG.wordrun(matcher));
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
@@ -1037,7 +1037,7 @@ public enum MagicRuleEventAction {
             final String[] pt = matcher.group("pt").replace("+","").split("/");
             final int power = Integer.parseInt(pt[0]);
             final int toughness = Integer.parseInt(pt[1]);
-            final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.multiple(matcher.group("group"));
+            final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.Permanent(matcher.group("group"));
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
@@ -1181,7 +1181,7 @@ public enum MagicRuleEventAction {
             final int power = Integer.parseInt(pt[0]);
             final int toughness = Integer.parseInt(pt[1]);
             final MagicAbilityList abilityList = MagicAbility.getAbilityList(matcher.group("ability"));
-            final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.multiple(matcher.group("group"));
+            final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.Permanent(matcher.group("group"));
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
@@ -1244,7 +1244,7 @@ public enum MagicRuleEventAction {
             final String[] pt = matcher.group("pt").replace("+","").split("/");
             final int power = Integer.parseInt(pt[0]);
             final int toughness = Integer.parseInt(pt[1]);
-            final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.multiple(matcher.group("group"));
+            final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.Permanent(matcher.group("group"));
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
@@ -1315,7 +1315,7 @@ public enum MagicRuleEventAction {
             final String[] pt = matcher.group("pt").replace("+","").split("/");
             final int power = Integer.parseInt(pt[0]);
             final int toughness = Integer.parseInt(pt[1]);
-            final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.multiple(matcher.group("group"));
+            final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.Permanent(matcher.group("group"));
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
@@ -1424,7 +1424,7 @@ public enum MagicRuleEventAction {
         public MagicEventAction getAction(final Matcher matcher) {
             final int amount = EnglishToInt.convert(matcher.group("amount"));
             final MagicCounterType counterType = MagicCounterType.getCounterRaw(matcher.group("type"));
-            final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.multiple(matcher.group("group"));
+            final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.Permanent(matcher.group("group"));
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
@@ -1660,7 +1660,7 @@ public enum MagicRuleEventAction {
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
-            final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.multiple(matcher.group("group"));
+            final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.Permanent(matcher.group("group"));
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
@@ -1799,7 +1799,7 @@ public enum MagicRuleEventAction {
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
-            final MagicTargetFilter<MagicCard> filter = MagicTargetFilterFactory.multipleCards(matcher.group("card") + " from your library");
+            final MagicTargetFilter<MagicCard> filter = MagicTargetFilterFactory.Card(matcher.group("card") + " from your library");
             final int amount = EnglishToInt.convert(matcher.group("amount"));
             return new MagicEventAction () {
                 @Override
@@ -1887,7 +1887,7 @@ public enum MagicRuleEventAction {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
             final int amount = EnglishToInt.convert(matcher.group("amount"));
-            final MagicTargetFilter<MagicCard> filter = MagicTargetFilterFactory.multipleCards(matcher.group("card") + " from your library");
+            final MagicTargetFilter<MagicCard> filter = MagicTargetFilterFactory.Card(matcher.group("card") + " from your library");
             final List<MagicPlayMod> mods = MagicPlayMod.build(matcher.group("mods"));
             return new MagicEventAction () {
                 @Override
@@ -2070,7 +2070,7 @@ public enum MagicRuleEventAction {
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
-            final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.multiple(matcher.group("group"));
+            final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.Permanent(matcher.group("group"));
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
@@ -2164,7 +2164,7 @@ public enum MagicRuleEventAction {
         "Untap"
     ) {
         public MagicEventAction getAction(final Matcher matcher) {
-            final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.multiple(matcher.group("group"));
+            final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.Permanent(matcher.group("group"));
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
@@ -2246,7 +2246,7 @@ public enum MagicRuleEventAction {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
             final int amount = EnglishToInt.convert(matcher.group("amount"));
-            final MagicTargetFilter<MagicPlayer> filter = MagicTargetFilterFactory.singlePlayer(matcher.group("group"));
+            final MagicTargetFilter<MagicPlayer> filter = MagicTargetFilterFactory.Player(matcher.group("group"));
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
@@ -2369,7 +2369,7 @@ public enum MagicRuleEventAction {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
             final MagicTargetChoice choice = new MagicTargetChoice(getHint(matcher), matcher.group("permanent")+" you control");
-            final MagicTargetFilter<MagicPlayer> filter = MagicTargetFilterFactory.singlePlayer(matcher.group("group"));
+            final MagicTargetFilter<MagicPlayer> filter = MagicTargetFilterFactory.Player(matcher.group("group"));
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
@@ -2518,7 +2518,7 @@ public enum MagicRuleEventAction {
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
-            final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.multiple(matcher.group("group"));
+            final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.Permanent(matcher.group("group"));
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
@@ -3139,7 +3139,7 @@ public enum MagicRuleEventAction {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
             final MagicAbilityList abilityList = MagicAbility.getAbilityList(matcher.group("ability"));
-            final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.multiple(matcher.group("group"));
+            final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.Permanent(matcher.group("group"));
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {

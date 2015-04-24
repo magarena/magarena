@@ -1,7 +1,7 @@
 [
     new MagicStatic(
         MagicLayer.ModPT,
-        multiple("merfolk creatures you control")
+        Permanent("merfolk creatures you control")
     ) {
 
         @Override

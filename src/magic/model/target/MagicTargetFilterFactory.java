@@ -2600,22 +2600,11 @@ public class MagicTargetFilterFactory {
             .replaceAll("^each ", "");
     }
 
-    public static MagicTargetFilter<MagicPermanent> multiple(final String arg) {
-        return singlePermanent(toSingular(arg));
-    }
-    
-    public static MagicTargetFilter<MagicTarget> multipleTargets(final String arg) {
-        return singleTarget(toSingular(arg));
-    }
-    
-    public static MagicTargetFilter<MagicCard> multipleCards(final String arg) {
-        return singleCard(toSingular(arg));
-    }
-
     private static final Pattern OTHER = Pattern.compile("^(an)?other ", Pattern.CASE_INSENSITIVE);
     
     @SuppressWarnings("unchecked")
-    public static MagicTargetFilter<MagicTarget> singleTarget(final String arg) {
+    public static MagicTargetFilter<MagicTarget> Target(final String text) {
+        final String arg = toSingular(text);
         final Matcher matcher = OTHER.matcher(arg);
         final boolean other = matcher.find();
         final String processed = matcher.replaceFirst("");
@@ -2624,7 +2613,8 @@ public class MagicTargetFilterFactory {
     }
     
     @SuppressWarnings("unchecked")
-    public static MagicTargetFilter<MagicPermanent> singlePermanent(final String arg) {
+    public static MagicTargetFilter<MagicPermanent> Permanent(final String text) {
+        final String arg = toSingular(text);
         final Matcher matcher = OTHER.matcher(arg);
         final boolean other = matcher.find();
         final String processed = matcher.replaceFirst("");
@@ -2633,17 +2623,20 @@ public class MagicTargetFilterFactory {
     }
     
     @SuppressWarnings("unchecked")
-    public static MagicTargetFilter<MagicCard> singleCard(final String arg) {
+    public static MagicTargetFilter<MagicCard> Card(final String text) {
+        final String arg = toSingular(text);
         return (MagicTargetFilter<MagicCard>)single(arg);
     }
     
     @SuppressWarnings("unchecked")
-    public static MagicTargetFilter<MagicPlayer> singlePlayer(final String arg) {
+    public static MagicTargetFilter<MagicPlayer> Player(final String text) {
+        final String arg = toSingular(text);
         return (MagicTargetFilter<MagicPlayer>)single(arg);
     }
     
     @SuppressWarnings("unchecked")
-    public static MagicTargetFilter<MagicItemOnStack> singleItemOnStack(final String arg) {
+    public static MagicTargetFilter<MagicItemOnStack> ItemOnStack(final String text) {
+        final String arg = toSingular(text);
         return (MagicTargetFilter<MagicItemOnStack>)single(arg);
     }
     

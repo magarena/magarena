@@ -412,10 +412,10 @@ public class MagicTargetChoice extends MagicChoice {
             targetFilter = MagicTargetFilterFactory.single(targetDescription.replaceFirst("(T|t)arget ", ""));
             targeted     = true;
         } else if (targetDescription.matches("(A|a)nother target .*")) {
-            targetFilter = new MagicOtherPermanentTargetFilter(MagicTargetFilterFactory.singlePermanent(targetDescription.replaceFirst("(A|a)nother target ", "")));
+            targetFilter = new MagicOtherPermanentTargetFilter(MagicTargetFilterFactory.Permanent(targetDescription.replaceFirst("(A|a)nother target ", "")));
             targeted     = true;
         } else if (targetDescription.matches("(A|a)nother .*")) {
-            targetFilter = new MagicOtherPermanentTargetFilter(MagicTargetFilterFactory.singlePermanent(targetDescription.replaceFirst("(A|a)nother ", "")));
+            targetFilter = new MagicOtherPermanentTargetFilter(MagicTargetFilterFactory.Permanent(targetDescription.replaceFirst("(A|a)nother ", "")));
             targeted     = false;
         } else if (targetDescription.matches("a(n)? .*")) {
             targetFilter = MagicTargetFilterFactory.single(targetDescription.replaceFirst("a(n)? ", ""));
