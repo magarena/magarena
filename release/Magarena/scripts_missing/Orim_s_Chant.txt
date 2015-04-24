@@ -1,9 +1,0 @@
-name=Orim's Chant
-image=http://magiccards.info/scans/en/ps/11.jpg
-value=2.500
-rarity=R
-type=Instant
-cost={W}
-effect=Kicker {W}~Target player can't cast spells this turn.~If SN was kicked, creatures can't attack this turn.
-timing=removal
-oracle=Kicker {W}. Target player can't cast spells this turn. If Orim's Chant was kicked, creatures can't attack this turn.
