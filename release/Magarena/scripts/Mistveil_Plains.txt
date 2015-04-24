@@ -5,7 +5,7 @@ rarity=U
 type=Land
 subtype=Plains
 mana=w3
-ability=SN enters the battlefield tapped.
+ability=SN enters the battlefield tapped.;\
+        {W}, {T}: Put target card from your graveyard on the bottom of your library. Activate this ability only if you control two or more white permanents.
 timing=land
-requires_groovy_code
 oracle=Mistveil Plains enters the battlefield tapped. {W}, {T}: Put target card from your graveyard on the bottom of your library. Activate this ability only if you control two or more white permanents.
