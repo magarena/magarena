@@ -1676,6 +1676,15 @@ public class MagicTargetFilterFactory {
         }
     };
 
+    public static final MagicCardFilterImpl INSTANT_LEQ_CMC_2_FROM_HAND = new MagicCardFilterImpl() {
+        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicCard target) {
+            return target.getConvertedCost() <= 2 && target.hasType(MagicType.Instant);
+        }
+        public boolean acceptType(final MagicTargetType targetType) {
+            return targetType == MagicTargetType.Hand;
+        }
+    };
+
     public static final MagicCardFilterImpl CREATURE_CARD_FROM_HAND = card(MagicType.Creature).from(MagicTargetType.Hand);
 
     public static final MagicCardFilterImpl BLUE_OR_RED_CREATURE_CARD_FROM_HAND = card(MagicColor.Blue).or(MagicColor.Red).and(MagicType.Creature).from(MagicTargetType.Hand);
@@ -2160,6 +2169,7 @@ public class MagicTargetFilterFactory {
         
         // <color|type|subtype> card from your hand
         single.put("card from your hand", CARD_FROM_HAND);
+        single.put("instant card with converted mana cost 2 or less from your hand", INSTANT_LEQ_CMC_2_FROM_HAND);
         single.put("red or green card from your hand", RED_OR_GREEN_CARD_FROM_HAND);
         single.put("basic land card from your hand", BASIC_LAND_CARD_FROM_HAND);
         single.put("artifact, creature, or land card from your hand", ARTIFACT_OR_CREATURE_OR_LAND_CARD_FROM_HAND );
