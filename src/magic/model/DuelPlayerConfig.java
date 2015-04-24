@@ -3,6 +3,7 @@ package magic.model;
 import java.util.Properties;
 import magic.data.CardDefinitions;
 import magic.data.DeckType;
+import magic.exception.InvalidDeckException;
 import magic.model.player.PlayerProfile;
 
 public class DuelPlayerConfig {
@@ -49,16 +50,26 @@ public class DuelPlayerConfig {
         setDeckProfile(MagicDeckProfile.getDeckProfile(deckType, deckValue));
     }
 
+    private MagicCardDefinition getCard(final String cardName) {
+        final String ERR_MSG = "\"latest.duel\" contains a deck with an invalid card: %s\n\n%s";
+        try {
+            final MagicCardDefinition cdef = CardDefinitions.getCard(cardName);
+            if (cdef.isValid()) {
+                return cdef;
+            }
+        } catch (Exception ex) {
+            throw new InvalidDeckException(String.format(ERR_MSG, cardName, ex.getMessage()));
+        }
+        throw new InvalidDeckException(String.format(ERR_MSG, cardName, ""));
+    }
+
     private void loadDeck(final Properties properties, final String prefix) {
         deck.clear();
         for (int i = 1; i <= properties.size(); i++) {
             final String deckPrefix = getDeckPrefix(prefix, i);
             if (properties.containsKey(deckPrefix)) {
                 final String cardName = properties.getProperty(deckPrefix);
-                final MagicCardDefinition cdef = CardDefinitions.getCard(cardName);
-                if (cdef.isValid()) {
-                    deck.add(cdef);
-                }
+                deck.add(getCard(cardName));
             }
         }        
     }

@@ -13,4 +13,12 @@ public class InvalidDeckException extends RuntimeException {
         super(message, cause);
     }
 
+    public InvalidDeckException(final Throwable cause) {
+        super(cause);
+    }
+
+    public InvalidDeckException(final String message) {
+        super(message);
+    }     
+
 }
