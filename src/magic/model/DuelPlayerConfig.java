@@ -51,11 +51,11 @@ public class DuelPlayerConfig {
 
     private void loadDeck(final Properties properties, final String prefix) {
         deck.clear();
-        for (int index = 1; index <= properties.size(); index++) {
-            final String deckPrefix = getDeckPrefix(prefix, index);
+        for (int i = 1; i <= properties.size(); i++) {
+            final String deckPrefix = getDeckPrefix(prefix, i);
             if (properties.containsKey(deckPrefix)) {
-                final String tName = properties.getProperty(deckPrefix);
-                final MagicCardDefinition cdef = CardDefinitions.getCard(tName);
+                final String cardName = properties.getProperty(deckPrefix);
+                final MagicCardDefinition cdef = CardDefinitions.getCard(cardName);
                 if (cdef.isValid()) {
                     deck.add(cdef);
                 }
