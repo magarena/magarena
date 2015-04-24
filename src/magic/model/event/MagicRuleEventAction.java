@@ -319,14 +319,10 @@ public enum MagicRuleEventAction {
             public void executeEvent(final MagicGame game, final MagicEvent event) {
                 event.processTargetCard(game,new MagicCardAction() {
                     public void doAction(final MagicCard card) {
-                        game.doAction(new RemoveCardAction(
-                            card,
+                        game.doAction(new ExileLinkAction(
+                            event.getSource().isPermanent() ? event.getPermanent() : MagicPermanent.NONE,
+                            card, 
                             card.getLocation()
-                        ));
-                        game.doAction(new MoveCardAction(
-                            card,
-                            MagicLocationType.Graveyard,
-                            MagicLocationType.Exile
                         ));
                     }
                 });

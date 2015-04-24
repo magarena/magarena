@@ -1260,5 +1260,13 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
         public void addAbility(final MagicManaActivation act) {
             //do nothing
         }
+        @Override
+        public void addExiledCard(final MagicCard card) {
+            //do nothing
+        }
+        @Override
+        public void removeExiledCard(final MagicCard card) {
+            //do nothing
+        }
     };
 }
