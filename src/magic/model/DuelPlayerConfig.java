@@ -43,7 +43,7 @@ public class DuelPlayerConfig {
         return prefix + "deck" + index;
     }
 
-    private void setPlayerDeckProfile(final String deckPropertyValue) {
+    private void setDeckProfile(final String deckPropertyValue) {
         final DeckType deckType = DeckType.valueOf(deckPropertyValue.split(";", 0)[0]);
         final String deckValue = deckPropertyValue.split(";", 0)[1];
         setDeckProfile(MagicDeckProfile.getDeckProfile(deckType, deckValue));
@@ -51,7 +51,7 @@ public class DuelPlayerConfig {
 
     public void load(final Properties properties, final String prefix) {
 
-        setPlayerDeckProfile(
+        setDeckProfile(
                 properties.getProperty(
                         prefix + PLAYER_DECK,
                         DeckType.Random + ";" + MagicDeckProfile.ANY_THREE)
