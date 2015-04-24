@@ -310,7 +310,7 @@ public enum MagicRuleEventAction {
         }
     ),
     ExileCard(
-        "exile (?<choice>[^\\.]*from[^\\.]*graveyard)\\.", 
+        "exile (?<choice>[^\\.]* card [^\\.]*)\\.", 
         MagicTargetHint.Negative, 
         MagicTiming.Removal,
         "Exile",
@@ -321,7 +321,7 @@ public enum MagicRuleEventAction {
                     public void doAction(final MagicCard card) {
                         game.doAction(new RemoveCardAction(
                             card,
-                            MagicLocationType.Graveyard
+                            card.getLocation()
                         ));
                         game.doAction(new MoveCardAction(
                             card,
