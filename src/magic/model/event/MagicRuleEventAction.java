@@ -338,8 +338,29 @@ public enum MagicRuleEventAction {
             }
         }
     },
+    ExilePermanent(
+        "exile " + ARG.CHOICE + "\\.", 
+        MagicTargetHint.Negative, 
+        MagicExileTargetPicker.create(), 
+        MagicTiming.Removal,
+        "Exile",
+        new MagicEventAction() {
+            @Override
+            public void executeEvent(final MagicGame game, final MagicEvent event) {
+                event.processTargetPermanent(game,new MagicPermanentAction() {
+                    public void doAction(final MagicPermanent perm) {
+                        if (event.getSource().isPermanent()) {
+                            game.doAction(new ExileLinkAction(event.getPermanent(), perm));
+                        } else {
+                            game.doAction(new RemoveFromPlayAction(perm,MagicLocationType.Exile));
+                        }
+                    }
+                });
+            }
+        }
+    ),
     ExileGroup(
-        "exile all (?<group>[^\\.]*)\\.", 
+        "exile (?<group>[^\\.]*)\\.", 
         MagicTiming.Removal,
         "Exile"
     ) {
@@ -361,27 +382,6 @@ public enum MagicRuleEventAction {
             };
         }
     },
-    ExilePermanent(
-        "exile (?<choice>[^\\.]*)\\.", 
-        MagicTargetHint.Negative, 
-        MagicExileTargetPicker.create(), 
-        MagicTiming.Removal,
-        "Exile",
-        new MagicEventAction() {
-            @Override
-            public void executeEvent(final MagicGame game, final MagicEvent event) {
-                event.processTargetPermanent(game,new MagicPermanentAction() {
-                    public void doAction(final MagicPermanent perm) {
-                        if (event.getSource().isPermanent()) {
-                            game.doAction(new ExileLinkAction(event.getPermanent(), perm));
-                        } else {
-                            game.doAction(new RemoveFromPlayAction(perm,MagicLocationType.Exile));
-                        }
-                    }
-                });
-            }
-        }
-    ),
     DamageChosenAndController(
         "sn deal(s)? (?<amount>[0-9]+) damage to " + ARG.CHOICE + " and (?<amount2>[0-9]+) damage to you\\.",
         MagicTargetHint.Negative, 
