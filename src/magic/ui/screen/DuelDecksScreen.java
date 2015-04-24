@@ -195,7 +195,7 @@ public class DuelDecksScreen
     /**
      *
      */
-    public void swapDecks() throws InvalidDeckException {
+    public void swapDecks() {
         screenContent.getDuel().restart();
         final DuelPlayerConfig[] players = screenContent.getDuel().getPlayers();
         final MagicDeckProfile deckProfile1 = players[0].getDeckProfile();

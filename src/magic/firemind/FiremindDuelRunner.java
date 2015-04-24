@@ -10,13 +10,11 @@ import java.util.Date;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import magic.ai.MagicAI;
 import magic.ai.MagicAIImpl;
 import magic.data.CardDefinitions;
 import magic.data.DeckUtils;
 import magic.data.DuelConfig;
 import magic.data.GeneralConfig;
-import magic.exception.InvalidDeckException;
 import magic.headless.HeadlessGameController;
 import magic.model.MagicDeckProfile;
 import magic.model.MagicDuel;
@@ -90,7 +88,7 @@ public class FiremindDuelRunner {
         System.exit(0);
     }
 
-    private static MagicDuel setupDuel() throws InvalidDeckException {
+    private static MagicDuel setupDuel() {
         // Set the random seed
         if (seed != 0) {
             MagicRandom.setRNGState(seed);
@@ -156,7 +154,7 @@ public class FiremindDuelRunner {
         }
     }
 
-    private static void runDuel() throws InvalidDeckException {
+    private static void runDuel() {
         int played = 0;
         int wins = 0;
         MagicGameLog.initialize();

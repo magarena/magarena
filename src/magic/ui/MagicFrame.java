@@ -26,7 +26,6 @@ import magic.data.GeneralConfig;
 import magic.data.MagicIcon;
 import magic.data.OSXAdapter;
 import magic.exception.DesktopNotSupportedException;
-import magic.exception.InvalidDeckException;
 import magic.model.MagicDeck;
 import magic.model.MagicDeckConstructionRule;
 import magic.model.MagicDuel;
@@ -97,7 +96,7 @@ public class MagicFrame extends JFrame implements IImageDragDropListener {
         });
     }
 
-    public void showDuel() throws InvalidDeckException {
+    public void showDuel() {
         if (duel!=null) {
             ScreenController.showDuelDecksScreen(duel);
             if (MagicSystem.isAiVersusAi()) {
@@ -110,13 +109,13 @@ public class MagicFrame extends JFrame implements IImageDragDropListener {
         }
     }
 
-    public void newDuel(final DuelConfig configuration) throws InvalidDeckException {
+    public void newDuel(final DuelConfig configuration) {
         duel = new MagicDuel(configuration);
         duel.initialize();
         showDuel();
     }
 
-    public void loadDuel() throws InvalidDeckException {
+    public void loadDuel() {
         final File duelFile=MagicDuel.getLatestDuelFile();
         if (duelFile.exists()) {
             duel=new MagicDuel();
@@ -127,7 +126,7 @@ public class MagicFrame extends JFrame implements IImageDragDropListener {
         }
     }
 
-    public void restartDuel() throws InvalidDeckException {
+    public void restartDuel() {
         if (duel!=null) {
             duel.restart();
             showDuel();
@@ -239,7 +238,7 @@ public class MagicFrame extends JFrame implements IImageDragDropListener {
     /**
      *
      */
-    public void closeDuelScreen() throws InvalidDeckException {
+    public void closeDuelScreen() {
         ScreenController.closeActiveScreen(false);
         showDuel();
     }

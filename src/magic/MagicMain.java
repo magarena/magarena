@@ -12,7 +12,6 @@ import javax.swing.UIManager.LookAndFeelInfo;
 
 import magic.data.DuelConfig;
 import magic.data.GeneralConfig;
-import magic.exception.InvalidDeckException;
 import magic.test.TestGameBuilder;
 import magic.ui.ScreenController;
 import magic.ui.UiExceptionHandler;
@@ -117,11 +116,7 @@ public class MagicMain {
             config.setPlayerProfile(0, PlayerProfiles.getDefaultAiPlayer());
             config.setPlayerProfile(1, PlayerProfiles.getDefaultAiPlayer());
 
-            try {
-                ScreenController.getMainFrame().newDuel(config);
-            } catch (InvalidDeckException ex) {
-                ScreenController.showWarningMessage(ex.getMessage());
-            }
+            ScreenController.getMainFrame().newDuel(config);
         }
     }
 

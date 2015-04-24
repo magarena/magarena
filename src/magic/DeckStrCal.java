@@ -3,7 +3,6 @@ package magic;
 import java.io.File;
 
 import magic.headless.HeadlessGameController;
-import magic.ai.MagicAI;
 import magic.ai.MagicAIImpl;
 import magic.data.DeckUtils;
 import magic.data.DuelConfig;
@@ -14,7 +13,6 @@ import magic.model.MagicDeckProfile;
 import magic.model.DuelPlayerConfig;
 import magic.model.player.AiProfile;
 import magic.data.DeckGenerators;
-import magic.exception.InvalidDeckException;
 import magic.exception.handler.ConsoleExceptionHandler;
 import magic.utility.ProgressReporter;
 import magic.utility.MagicSystem;
@@ -119,7 +117,7 @@ public class DeckStrCal {
         return validArgs;
     }
 
-    private static MagicDuel setupDuel() throws InvalidDeckException {
+    private static MagicDuel setupDuel() {
         // Set the random seed
         if (seed != 0) {
             MagicRandom.setRNGState(seed);
@@ -174,16 +172,11 @@ public class DeckStrCal {
         MagicSystem.initialize(new ProgressReporter());
 
         for (int i = 0; i < repeat; i++) {
-            try {
-                runDuel();
-            } catch (InvalidDeckException ex) {
-                System.err.println(ex);
-                break;
-            }
+            runDuel();
         }
     }
 
-    private static void runDuel() throws InvalidDeckException {
+    private static void runDuel() {
         final MagicDuel testDuel = setupDuel();
 
         System.out.println(

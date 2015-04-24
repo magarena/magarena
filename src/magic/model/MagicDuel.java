@@ -11,7 +11,6 @@ import java.util.TreeSet;
 import magic.data.DeckGenerators;
 import magic.data.DeckUtils;
 import magic.data.DuelConfig;
-import magic.exception.InvalidDeckException;
 import magic.model.phase.MagicDefaultGameplay;
 import magic.model.player.PlayerProfile;
 import magic.utility.MagicFileSystem.DataPath;
@@ -151,11 +150,11 @@ public class MagicDuel {
     }
 
     // Used by the "Generate Deck" button in DuelPanel.
-    public void buildDeck(final DuelPlayerConfig player) throws InvalidDeckException {
+    public void buildDeck(final DuelPlayerConfig player) {
         DeckGenerators.setRandomDeck(player);
     }
 
-    public void buildDecks() throws InvalidDeckException {
+    public void buildDecks() {
         for (final DuelPlayerConfig player : duelConfig.getPlayerConfigs()) {
             switch (player.getDeckProfile().getDeckType()) {
             case Random:
@@ -176,16 +175,16 @@ public class MagicDuel {
         }
     }
 
-    private void setDeckFromFile(final DuelPlayerConfig player, final Path deckFolder) throws InvalidDeckException {
+    private void setDeckFromFile(final DuelPlayerConfig player, final Path deckFolder) {
         final String deckFilename = player.getDeckProfile().getDeckValue() + DeckUtils.DECK_EXTENSION;
         player.setDeck(loadDeck(deckFolder.resolve(deckFilename)));
     }
 
-    private MagicDeck loadDeck(final Path deckFilePath) throws InvalidDeckException {
+    private MagicDeck loadDeck(final Path deckFilePath) {
         return DeckUtils.loadDeckFromFile(deckFilePath);
     }
 
-    public void initialize() throws InvalidDeckException {
+    public void initialize() {
         buildDecks();
     }
 

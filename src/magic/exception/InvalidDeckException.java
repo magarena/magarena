@@ -3,7 +3,7 @@ package magic.exception;
 import magic.model.MagicDeck;
 
 @SuppressWarnings("serial")
-public class InvalidDeckException extends Exception {
+public class InvalidDeckException extends RuntimeException {
 
     public InvalidDeckException(final MagicDeck deck) {
         super("[" + deck.getName()+ "] " + deck.getDescription().replace("\n", " "));

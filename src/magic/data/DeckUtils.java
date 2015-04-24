@@ -119,11 +119,11 @@ public class DeckUtils {
      * @return
      * @throws IOException
      */
-    private static List<String> getDeckFileContent(final String filename) throws InvalidDeckException {
+    private static List<String> getDeckFileContent(final String filename) {
         try {
             return FileIO.toStrList(new File(filename));
         } catch (IOException ex) {
-            throw new InvalidDeckException("Invalid deck: " + filename, ex);
+            throw new InvalidDeckException("Invalid deck (\".dec\") file: " + filename, ex);
         }
     }
 
@@ -217,14 +217,14 @@ public class DeckUtils {
      * @param deckFilePath full path of deck file to load.
      * @return
      */
-    public static MagicDeck loadDeckFromFile(final Path deckFilePath) throws InvalidDeckException {
+    public static MagicDeck loadDeckFromFile(final Path deckFilePath) {
         final List<String> lines = getDeckFileContent(deckFilePath.toString());
         final MagicDeck deck = parseDeckFileContent(lines);
         deck.setFilename(deckFilePath.getFileName().toString());
         return deck;
     }
 
-    public static void loadAndSetPlayerDeck(final String filename, final DuelPlayerConfig player) throws InvalidDeckException {
+    public static void loadAndSetPlayerDeck(final String filename, final DuelPlayerConfig player) {
 
         final MagicDeck deck = loadDeckFromFile(Paths.get(filename));
         
@@ -295,7 +295,7 @@ public class DeckUtils {
      *  Load a deck randomly chosen from the "decks" directory.
      *  (includes both custom & prebuilt decks).
      */
-    public static void loadRandomDeckFile(final DuelPlayerConfig player) throws InvalidDeckException {
+    public static void loadRandomDeckFile(final DuelPlayerConfig player) {
         final List<File> deckFiles = new ArrayList<>();
         retrieveDeckFiles(MagicFileSystem.getDataPath(DataPath.DECKS).toFile(), deckFiles);
         if (deckFiles.isEmpty()) {
