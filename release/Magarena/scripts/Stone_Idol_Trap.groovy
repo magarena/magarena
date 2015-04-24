@@ -19,25 +19,5 @@
                 )
             ];
         }
-    },
-    new MagicSpellCardEvent() {
-        @Override
-        public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-            return new MagicEvent(
-                cardOnStack,
-                this,
-                "Put a 6/12 colorless Construct artifact creature token with trample onto the battlefield. " + 
-                "Exile it at the beginning of your next end step."
-            );
-        }
-
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new PlayTokenAction(
-                event.getPlayer(),
-                TokenCardDefinitions.get("6/12 colorless Construct artifact creature token with trample"),
-                [MagicPlayMod.EXILE_AT_END_OF_TURN]
-            ));
-        }
     }
 ]
