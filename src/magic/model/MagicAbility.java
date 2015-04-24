@@ -556,20 +556,6 @@ public enum MagicAbility {
             card.add(MagicReplicateTrigger.create());
         }
     },
-    EndStepEffect("At the beginning of (the|each) end step, " + ARG.EFFECT, 0) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(MagicAtEndOfTurnTrigger.create(
-                MagicRuleEventAction.create(ARG.effect(arg))
-            ));
-        }
-    },
-    YourEndStepEffect("At the beginning of your end step, " + ARG.EFFECT, 0) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(MagicAtEndOfTurnTrigger.createYour(
-                MagicRuleEventAction.create(ARG.effect(arg))
-            ));
-        }
-    },
     SelfOrAnotherDiesEffect("Whenever SN or another " + ARG.WORDRUN + " (dies|is put into a graveyard from the battlefield), " + ARG.EFFECT, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicWhenOtherDiesTrigger.createSelfOrAnother(
@@ -862,6 +848,27 @@ public enum MagicAbility {
     OppDrawStepEffect("At the beginning of each (other player|opponent)'s draw step, " + ARG.EFFECT, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicAtDrawTrigger.createOpp(
+                MagicRuleEventAction.create(ARG.effect(arg))
+            ));
+        }
+    },
+    BeginCombatEffect("At the beginning of combat on your turn, " + ARG.EFFECT, 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            card.add(MagicAtBeginOfCombatTrigger.createYour(
+                MagicRuleEventAction.create(ARG.effect(arg))
+            ));
+        }
+    },
+    EndStepEffect("At the beginning of (the|each) end step, " + ARG.EFFECT, 0) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            card.add(MagicAtEndOfTurnTrigger.create(
+                MagicRuleEventAction.create(ARG.effect(arg))
+            ));
+        }
+    },
+    YourEndStepEffect("At the beginning of your end step, " + ARG.EFFECT, 0) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            card.add(MagicAtEndOfTurnTrigger.createYour(
                 MagicRuleEventAction.create(ARG.effect(arg))
             ));
         }
