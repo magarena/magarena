@@ -83,13 +83,19 @@ public enum MagicPlayMod implements MagicPermanentAction {
             perm.changeCounters(MagicCounterType.PlusOne,1);
         }
     },
-    BLACK("That creature is black") {
+    BLACK("It is black") {
         protected void doAction(final MagicGame game, final MagicPermanent perm) {
-            game.doAction(new AddStaticAction(perm, MagicStatic.Black));
+            game.doAction(new AddStaticAction(perm, MagicStatic.IsBlack));
         }
     },
     ZOMBIE() {
         protected void doAction(final MagicGame game, final MagicPermanent perm) {
+            game.doAction(new AddStaticAction(perm, MagicStatic.Zombie));
+        }
+    },
+    BLACK_ZOMBIE("That creature is a black Zombie in addition to its other colors and types") {
+        protected void doAction(final MagicGame game, final MagicPermanent perm) {
+            game.doAction(new AddStaticAction(perm, MagicStatic.AddBlack));
             game.doAction(new AddStaticAction(perm, MagicStatic.Zombie));
         }
     },
