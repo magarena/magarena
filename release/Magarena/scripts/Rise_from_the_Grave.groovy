@@ -18,7 +18,7 @@
                 game.doAction(new ReanimateAction(
                     it,
                     event.getPlayer(),
-                    [MagicPlayMod.BLACK, MagicPlayMod.ZOMBIE]
+                    [MagicPlayMod.BLACK_ZOMBIE]
                 ));
             });
         }

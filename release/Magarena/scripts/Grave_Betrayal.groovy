@@ -22,7 +22,7 @@ def DelayedTrigger = {
             game.doAction(new ReanimateAction(
                 event.getRefCard(),
                 event.getPlayer(),
-                [MagicPlayMod.UNDYING, MagicPlayMod.BLACK, MagicPlayMod.ZOMBIE]
+                [MagicPlayMod.UNDYING, MagicPlayMod.BLACK_ZOMBIE]
             ));
         }
     };

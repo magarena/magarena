@@ -32,7 +32,7 @@
                 game.doAction(new ReanimateAction(
                     card, 
                     player, 
-                    [MagicPlayMod.BLACK, MagicPlayMod.ZOMBIE]
+                    [MagicPlayMod.BLACK_ZOMBIE]
                 ));
             }
         }
