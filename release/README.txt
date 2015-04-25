@@ -70,6 +70,124 @@ Thank you for your support and have fun!
 
 Release 1.61 (April 26, 2015)
 ============
+lodici
+melvin
+Mike
+PalladiaMors
+ShawnieBoy
+    
+    triggers go on stack after state-based-actions are checked, fixes issue #209
+    remove DeckStrengthViewer
+    show id of give face down creatures/spells a unique name so name filter works
+    rename getDuelFile() to getLatestDuelFile() and actual duel file to "latest.duel".
+
+    Restore selected deck type and deck name on opening DeckChooserDialog.
+    support 'Whenever an opponent draws a card, <effect>' and 'Whenever a player draws a card, <effect>'
+    support 'At the beginning of your draw step, <effect>'
+    support 'At the beginning of each other player's draw step, <effect>'
+    becomes
+    only allow AI to animate if not excluded from combat
+    support "Whenever SN blocks or becomes blocked by a [permanent], <effect>"
+    support effect 'Destroy RN.' 'Destroy RN at end of combat.'
+    support 'return rn to its owner's hand at end of combat.'
+    support 'whenever a [creature] attacks or blocks, <effect>'
+    support 'Whenever a [creature] blocks, [effect]'
+    support ability 'whenever a [creature] attacks you, [effect]'
+    add 'during the end of combat step' condition
+    add ability '[costs]: Return SN from your graveyard to your hand.'
+    add effect 'return sn from your graveyard to the battlefield.'
+    support effect 'return all [permanents] to their owner's hand.'
+    support ability 'whenever a [permanent] becomes tapped, [effect]'
+    fix #171 Alesha, Who Smiles at Death not removing card from graveyard.
+    support effect 'each [group] puts the top [amount] cards of his or her library into his or her graveyard.'
+    support effect 'search your library for up to [amount] [cards] and put them onto the battlefield. Then shuffle your library.'
+    fix missing addEvent in effect of Ambush Krotiq
+    correct logic for filter used in Stormtide Leviathan
+    support ability 'split second'
+    support effect 'clash with an opponent, if you win, [effect]'
+    support effect 'flip coin. if you win, [effect] if you lose, [effect]'
+    add ability 'SN gets [pt] for each [permanent]'
+    allow "Look at the top card of your library.
+    You may put that card on the bottom of your library." in script.
+    enable "Whenever you scry, <effect>" in scripting
+    add effect 'SN gets [pt] for each [target]'
+    add ability 'when [permanent] deals damage to you, [effect]'
+    add ability 'At the beginning of combat on your turn, [effect]'
+    
+    reveal face down creature when it leaves the battlefield
+    Catch error on resume duel if player deck invalid (fixes #220).
+    fix #219 Ancient Grudge was targeting artifact or enchantment
+    show real card definition only if controller is human, fixes issue #215
+    Disable Generate Deck button unless deck generator is random. Fixes #167.
+    move clearing of message into clearValidChoices, Ensures it is the next event after choices are cleared, possible fix for #200
+    fix issue 120 : Horizontal scrollbar issue in user action panel.
+    fix Shorecrasher Mimic was checking for red and white spells.
+    partial upgrade to March of the Machines #16, add WAS_NONCREATURE_ARTIFACT condition
+    put a copy of the clone in copyMap first, MagicItemOnStack was the only one missing the put statement
+    fixes issue #190 (infinite loop on copying)
+    made MagicLogBook.add synchronized to prevent concurrent modification, fixes issue #121
+    fix: #179 add Cycling triggers to TypeCyclingActivation
+    allow Graft to check there is a +1/+1 counter to move for multiple triggers on the stack
+    fix Graft to check there is a +1/+1 counter to move 
+    If animations are enabled show pulsing border around avatar when player is valid choice (closes #149).
+    move modification before the first update so they can affect the comes into play triggers fixes issue #151
+    fix: Bladewing the Risen should have flying
+    fixes #148 : Player targeting highlight disappears/flashes.
+    limit equip activation to at most twice per turn
+    fix: Bullwhip was dealing 2 damage
+    draw mana symbols to indicate mana source base on permanent's mana activations
+    instead of card definition's mana activation fixes #158
+    fix: Alpha Brawl - Chosen creature doesn't damage itself.
+    fix: Fettergeist - Was counting a cost assuming itself always being a creature
+
+- added the following cards:
+Abzan Beastmaster, Acid-Spewer Dragon, Ambuscade Shaman,
+Angel of the Dire Hour, Arashin Foremost, Ashcloud Phoenix,
+Atarka Monument, Avatar of the Resolute, Battle-Rattle Shaman,
+Belltoll Dragon, Bloodsoaked Champion, Bottle of Suleiman,
+Breaching Leviathan, Briar Patch, Celestial Crusader, Ceremonial Guard,
+Chaotic Goo, Charmed Griffin, Cinder Wall, Coffin Puppets, Creepy Doll,
+Crushing Pain, Deathbringer Regent, Dragon Whisperer, Dread Cacodemon,
+Dromoka Monument, Ensouled Scimitar, Entangling Trap, Eternal Dragon,
+Faerie Noble, Fatal Blow, Fatestitcher, Final-Sting Faerie,
+Fire Juggler, Firewing Phoenix, Flamespeaker Adept, Flowstone Salamander,
+Full Moon's Rise, Furnace Dragon, Furystoke Giant, Gangrenous Goliath,
+Ghoulcaller's Bell, Gift of Estates, Glory, Goblin Bomb,
+Godo's Irregulars, Grafted Skullcap, Grim Poppet, Guardian Shield-Bearer,
+Hammer of Bogardan, Hand of Emrakul, Harbinger of the Hunt,
+Heart-Piercer Bow, Herdchaser Dragon, High Sentinels of Arashin,
+Hooded Assassin, Hypnox, Icefeather Aven, Incandescent Soulstoke,
+Invasive Species, Kederekt Leviathan, Keeper of the Beasts,
+Keeper of the Flame, Keeper of the Light, Keeper of the Mind,
+Kiora's Follower, Knight of the White Orchid, Knowledge and Power,
+Kolaghan Aspirant, Kolaghan Monument, Krosan Grip, Kuldotha Phoenix,
+Leering Emblem, Magma Phoenix, Mana Vapors, Mardu Ascendancy,
+Mighty Emergence, Molten Birth, Myojin of Cleansing Fire,
+Myojin of Infinite Rage, Myojin of Night's Reach, Myojin of Seeing Winds,
+Necromaster Dragon, Necrosavant, Nim Devourer, Noble Stand,
+Oaken Brawler, Ojutai Monument, Opal Acrolith, Opportunist,
+Orim's Chant, Oriss, Samite Guardian, Paragon of Eternal Wilds,
+Paragon of Fierce Defiance, Paragon of Gathering Mists,
+Paragon of New Dawns, Paragon of Open Graves, Parallax Inhibitor,
+Pestilence Rats, Phage the Untouchable, Phyrexian Driver, Planar Chaos,
+Primal Forcemage, Puppet's Verdict, Quagmire Lamprey, Radiant, Archangel,
+Reassembling Skeleton, Reiver Demon, Renegade Warlord, Returned Reveler,
+Ringskipper, Rishadan Pawnshop, Rot Farm Skeleton, Sabertooth Outrider,
+Salvage Titan, Scion of Vitu-Ghazi, Scoria Wurm, Sealock Monster,
+Secret Plans, Seedguide Ash, Shard Phoenix, Shieldhide Dragon,
+Sibsig Host, Sight of the Scalelords, Silumgar Monument, Simic Basilisk,
+Skarrgan Firebird, Skittish Valesk, Skyclaw Thrash, Slavering Nulls,
+Slithering Shade, Slumbering Dragon, Soul of New Phyrexia, Soul of Theros,
+Soul of Zendikar, Springjack Knight, Sprite Noble, Stitch in Time,
+Stonewood Invocation, Stormwing Dragon, Sudden Death, Sudden Shock,
+Sulfur Elemental, Sulfuric Vortex, Sultai Flayer, Summon the School,
+Surrak, the Hunt Caller, Take Possession, Tattermunge Witch,
+Tavern Swindler, Teferi's Puzzle Box, Tideforce Elemental,
+Ulasht, the Hate Seed, Unbender Tine, Undead Gladiator,
+Unyaro Griffin, Vebulid, Viashino Sandswimmer, Vineweft, Wall of Roots,
+Warmonger Hellkite, Weathered Wayfarer, Well of Ideas, Whetstone,
+Wild Wurm, Winter Sky, Wipe Away, Witch's Mist, Word of Seizing,
+Yore-Tiller Nephilim, Zombie Mob
 
 Release 1.60 (March 30, 2015)
 ============
