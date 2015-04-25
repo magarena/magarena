@@ -1,6 +1,6 @@
 name=Weathered Wayfarer
 image=http://magiccards.info/scans/en/9e/54.jpg
-value=2.500
+value=4.295
 rarity=R
 type=Creature
 subtype=Human,Nomad,Cleric

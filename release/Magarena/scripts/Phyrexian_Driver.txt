@@ -1,6 +1,6 @@
 name=Phyrexian Driver
 image=http://magiccards.info/scans/en/ne/64.jpg
-value=2.500
+value=2.688
 rarity=C
 type=Creature
 subtype=Zombie,Mercenary

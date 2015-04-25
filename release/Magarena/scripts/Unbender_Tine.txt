@@ -1,6 +1,6 @@
 name=Unbender Tine
 image=http://magiccards.info/scans/en/arc/97.jpg
-value=2.500
+value=3.227
 rarity=U
 type=Artifact
 cost={2}{W}{U}

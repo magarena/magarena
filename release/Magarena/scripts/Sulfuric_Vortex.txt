@@ -1,6 +1,6 @@
 name=Sulfuric Vortex
 image=http://magiccards.info/scans/en/vma/190.jpg
-value=2.500
+value=3.800
 rarity=R
 type=Enchantment
 cost={1}{R}{R}

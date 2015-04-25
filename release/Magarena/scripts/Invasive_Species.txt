@@ -1,6 +1,6 @@
 name=Invasive Species
 image=http://magiccards.info/scans/en/m15/181.jpg
-value=2.500
+value=2.750
 rarity=C
 type=Creature
 subtype=Insect

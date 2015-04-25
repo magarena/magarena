@@ -1,6 +1,6 @@
 name=Mighty Emergence
 image=http://magiccards.info/scans/en/ala/137.jpg
-value=2.500
+value=3.030
 rarity=U
 type=Enchantment
 cost={2}{G}

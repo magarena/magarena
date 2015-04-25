@@ -1,6 +1,6 @@
 name=Necrosavant
 image=http://magiccards.info/scans/en/6e/145.jpg
-value=2.500
+value=3.581
 rarity=R
 type=Creature
 subtype=Zombie,Giant

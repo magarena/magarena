@@ -1,6 +1,6 @@
 name=Myojin of Infinite Rage
 image=http://magiccards.info/scans/en/chk/181.jpg
-value=2.500
+value=3.663
 rarity=R
 type=Legendary,Creature
 subtype=Spirit

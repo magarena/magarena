@@ -1,6 +1,6 @@
 name=Leering Emblem
 image=http://magiccards.info/scans/en/eve/171.jpg
-value=2.500
+value=3.119
 rarity=R
 type=Artifact
 subtype=Equipment

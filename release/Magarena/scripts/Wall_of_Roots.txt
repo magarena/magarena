@@ -1,6 +1,6 @@
 name=Wall of Roots
 image=http://magiccards.info/scans/en/arc/73.jpg
-value=2.500
+value=4.430
 rarity=C
 type=Creature
 subtype=Plant,Wall

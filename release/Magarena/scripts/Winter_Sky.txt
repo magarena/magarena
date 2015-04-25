@@ -1,6 +1,6 @@
 name=Winter Sky
 image=http://magiccards.info/scans/en/hl/100.jpg
-value=2.500
+value=2.098
 rarity=R
 type=Sorcery
 cost={R}

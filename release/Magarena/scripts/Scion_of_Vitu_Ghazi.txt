@@ -1,6 +1,6 @@
 name=Scion of Vitu-Ghazi
 image=http://magiccards.info/scans/en/dgm/7.jpg
-value=2.500
+value=3.784
 rarity=R
 type=Creature
 subtype=Elemental

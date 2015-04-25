@@ -1,6 +1,6 @@
 name=Ghoulcaller's Bell
 image=http://magiccards.info/scans/en/isd/224.jpg
-value=2.500
+value=2.552
 rarity=C
 type=Artifact
 cost={1}

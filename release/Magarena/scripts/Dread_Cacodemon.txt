@@ -1,6 +1,6 @@
 name=Dread Cacodemon
 image=http://magiccards.info/scans/en/cmd/79.jpg
-value=2.500
+value=3.620
 rarity=R
 type=Creature
 subtype=Demon

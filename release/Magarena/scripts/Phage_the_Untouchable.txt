@@ -1,6 +1,6 @@
 name=Phage the Untouchable
 image=http://magiccards.info/scans/en/cns/120.jpg
-value=2.500
+value=4.250
 rarity=M
 type=Legendary,Creature
 subtype=Avatar,Minion

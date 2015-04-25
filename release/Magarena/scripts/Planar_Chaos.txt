@@ -1,6 +1,6 @@
 name=Planar Chaos
 image=http://magiccards.info/scans/en/ju/97.jpg
-value=2.500
+value=2.852
 rarity=U
 type=Enchantment
 cost={2}{R}

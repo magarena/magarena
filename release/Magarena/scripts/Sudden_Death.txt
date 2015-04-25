@@ -1,6 +1,6 @@
 name=Sudden Death
 image=http://magiccards.info/scans/en/ts/134.jpg
-value=2.500
+value=4.248
 rarity=U
 type=Instant
 cost={1}{B}{B}

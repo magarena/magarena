@@ -1,6 +1,6 @@
 name=Oaken Brawler
 image=http://magiccards.info/scans/en/lw/33.jpg
-value=2.500
+value=2.278
 rarity=C
 type=Creature
 subtype=Treefolk,Warrior

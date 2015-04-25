@@ -1,6 +1,6 @@
 name=Simic Basilisk
 image=http://magiccards.info/scans/en/di/91.jpg
-value=2.500
+value=2.286
 rarity=U
 type=Creature
 subtype=Basilisk,Mutant

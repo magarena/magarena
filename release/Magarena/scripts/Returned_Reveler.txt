@@ -1,6 +1,6 @@
 name=Returned Reveler
 image=http://magiccards.info/scans/en/jou/79.jpg
-value=2.500
+value=2.816
 rarity=C
 type=Creature
 subtype=Zombie,Satyr

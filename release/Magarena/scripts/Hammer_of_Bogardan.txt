@@ -1,6 +1,6 @@
 name=Hammer of Bogardan
 image=http://magiccards.info/scans/en/8e/193.jpg
-value=2.500
+value=3.649
 rarity=R
 type=Sorcery
 cost={1}{R}{R}

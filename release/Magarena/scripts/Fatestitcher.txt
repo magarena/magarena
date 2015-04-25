@@ -1,6 +1,6 @@
 name=Fatestitcher
 image=http://magiccards.info/scans/en/ala/43.jpg
-value=2.500
+value=4.243
 rarity=U
 type=Creature
 subtype=Zombie,Wizard

@@ -1,6 +1,6 @@
 name=Mana Vapors
 image=http://magiccards.info/scans/en/pr/38.jpg
-value=2.500
+value=3.938
 rarity=U
 type=Sorcery
 cost={1}{U}

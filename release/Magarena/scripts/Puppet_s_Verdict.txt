@@ -1,6 +1,6 @@
 name=Puppet's Verdict
 image=http://magiccards.info/scans/en/mm/208.jpg
-value=2.500
+value=3.552
 rarity=R
 type=Instant
 cost={1}{R}{R}

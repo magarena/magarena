@@ -1,6 +1,6 @@
 name=Yore-Tiller Nephilim
 image=http://magiccards.info/scans/en/gp/140.jpg
-value=2.500
+value=3.681
 rarity=R
 type=Creature
 subtype=Nephilim

@@ -1,6 +1,6 @@
 name=Keeper of the Beasts
 image=http://magiccards.info/scans/en/ex/112.jpg
-value=2.500
+value=3.621
 rarity=U
 type=Creature
 subtype=Human,Wizard

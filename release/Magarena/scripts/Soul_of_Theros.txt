@@ -1,6 +1,6 @@
 name=Soul of Theros
 image=http://magiccards.info/scans/en/m15/34.jpg
-value=2.500
+value=4.000
 rarity=M
 type=Creature
 subtype=Avatar

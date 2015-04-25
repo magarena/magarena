@@ -1,6 +1,6 @@
 name=Hand of Emrakul
 image=http://magiccards.info/scans/en/roe/5.jpg
-value=2.500
+value=4.004
 rarity=C
 type=Creature
 subtype=Eldrazi

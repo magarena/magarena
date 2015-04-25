@@ -1,6 +1,6 @@
 name=Seedguide Ash
 image=http://magiccards.info/scans/en/lw/235.jpg
-value=2.500
+value=3.580
 rarity=U
 type=Creature
 subtype=Treefolk,Druid

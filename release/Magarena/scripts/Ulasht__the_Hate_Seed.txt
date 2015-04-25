@@ -1,6 +1,6 @@
 name=Ulasht, the Hate Seed
 image=http://magiccards.info/scans/en/gp/136.jpg
-value=2.500
+value=3.929
 rarity=R
 type=Legendary,Creature
 subtype=Hellion,Hydra

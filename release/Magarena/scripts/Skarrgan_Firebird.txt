@@ -1,6 +1,6 @@
 name=Skarrgan Firebird
 image=http://magiccards.info/scans/en/ddl/57.jpg
-value=2.500
+value=3.929
 rarity=R
 type=Creature
 subtype=Phoenix

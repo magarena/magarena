@@ -1,6 +1,6 @@
 name=Rot Farm Skeleton
 image=http://magiccards.info/scans/en/dgm/98.jpg
-value=2.500
+value=3.836
 rarity=U
 type=Creature
 subtype=Plant,Skeleton

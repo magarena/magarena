@@ -1,6 +1,6 @@
 name=Reassembling Skeleton
 image=http://magiccards.info/scans/en/ddk/44.jpg
-value=2.500
+value=3.576
 rarity=U
 type=Creature
 subtype=Skeleton,Warrior

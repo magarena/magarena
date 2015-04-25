@@ -1,6 +1,6 @@
 name=Salvage Titan
 image=http://magiccards.info/scans/en/ala/84.jpg
-value=2.500
+value=4.202
 rarity=R
 type=Artifact,Creature
 subtype=Golem

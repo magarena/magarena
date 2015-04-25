@@ -1,6 +1,6 @@
 name=Opportunist
 image=http://magiccards.info/scans/en/tp/194.jpg
-value=2.500
+value=2.641
 rarity=U
 type=Creature
 subtype=Human,Soldier

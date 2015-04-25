@@ -1,6 +1,6 @@
 name=Keeper of the Light
 image=http://magiccards.info/scans/en/ex/8.jpg
-value=2.500
+value=3.320
 rarity=U
 type=Creature
 subtype=Human,Wizard

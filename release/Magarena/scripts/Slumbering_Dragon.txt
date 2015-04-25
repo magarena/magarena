@@ -1,6 +1,6 @@
 name=Slumbering Dragon
 image=http://magiccards.info/scans/en/m13/148.jpg
-value=2.500
+value=3.980
 rarity=R
 type=Creature
 subtype=Dragon

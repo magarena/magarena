@@ -1,6 +1,6 @@
 name=Orim's Chant
 image=http://magiccards.info/scans/en/ps/11.jpg
-value=2.500
+value=4.602
 rarity=R
 type=Instant
 cost={W}

@@ -1,6 +1,6 @@
 name=Bloodsoaked Champion
 image=http://magiccards.info/scans/en/ktk/66.jpg
-value=2.500
+value=4.417
 rarity=R
 type=Creature
 subtype=Human,Warrior

@@ -1,6 +1,6 @@
 name=Furnace Dragon
 image=http://magiccards.info/scans/en/ds/62.jpg
-value=2.500
+value=3.305
 rarity=R
 type=Creature
 subtype=Dragon

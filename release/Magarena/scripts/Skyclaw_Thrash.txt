@@ -1,6 +1,6 @@
 name=Skyclaw Thrash
 image=http://magiccards.info/scans/en/arb/89.jpg
-value=2.500
+value=2.754
 rarity=U
 type=Artifact,Creature
 subtype=Viashino,Warrior

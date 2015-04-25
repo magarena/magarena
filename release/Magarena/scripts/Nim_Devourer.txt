@@ -1,6 +1,6 @@
 name=Nim Devourer
 image=http://magiccards.info/scans/en/mi/70.jpg
-value=2.500
+value=3.408
 rarity=R
 type=Creature
 subtype=Zombie

@@ -1,6 +1,6 @@
 name=Ensouled Scimitar
 image=http://magiccards.info/scans/en/5dn/119.jpg
-value=2.500
+value=3.750
 rarity=U
 type=Artifact
 subtype=Equipment

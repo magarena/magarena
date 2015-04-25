@@ -1,6 +1,6 @@
 name=Sultai Flayer
 image=http://magiccards.info/scans/en/ktk/152.jpg
-value=2.500
+value=3.750
 rarity=U
 type=Creature
 subtype=Naga,Shaman

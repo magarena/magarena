@@ -1,6 +1,6 @@
 name=Glory
 image=http://magiccards.info/scans/en/ju/11.jpg
-value=2.500
+value=4.234
 rarity=R
 type=Creature
 subtype=Incarnation

@@ -1,6 +1,6 @@
 name=Rishadan Pawnshop
 image=http://magiccards.info/scans/en/mm/311.jpg
-value=2.500
+value=3.167
 rarity=R
 type=Artifact
 cost={2}

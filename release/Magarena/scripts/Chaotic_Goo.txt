@@ -1,6 +1,6 @@
 name=Chaotic Goo
 image=http://magiccards.info/scans/en/tp/168.jpg
-value=2.500
+value=3.403
 rarity=R
 type=Creature
 subtype=Ooze
