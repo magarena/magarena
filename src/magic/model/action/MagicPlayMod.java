@@ -70,6 +70,12 @@ public enum MagicPlayMod implements MagicPermanentAction {
             perm.setState(MagicPermanentState.Tapped);
         }
     },
+    TAPPED_AND_ATTACKING("tapped and attacking") {
+        protected void doAction(final MagicGame game, final MagicPermanent perm) {
+            TAPPED.doAction(game, perm);
+            ATTACKING.doAction(game, perm);
+        }
+    },
     HASTE_UEOT("it gains haste until end of turn") {
         protected void doAction(final MagicGame game, final MagicPermanent perm) {
             game.doAction(new GainAbilityAction(perm, MagicAbility.Haste));
@@ -90,24 +96,20 @@ public enum MagicPlayMod implements MagicPermanentAction {
             perm.changeCounters(MagicCounterType.PlusOne,1);
         }
     },
-    BLACK("It is black") {
-        protected void doAction(final MagicGame game, final MagicPermanent perm) {
-            game.doAction(new AddStaticAction(perm, MagicStatic.IsBlack));
-        }
-    },
     ZOMBIE() {
         protected void doAction(final MagicGame game, final MagicPermanent perm) {
             game.doAction(new AddStaticAction(perm, MagicStatic.Zombie));
         }
     },
-    BLACK_ZOMBIE("That creature is a black Zombie in addition to its other colors and types") {
+    BLACK_ZOMBIE("It is a black Zombie in addition to its other colors and types") {
         protected void doAction(final MagicGame game, final MagicPermanent perm) {
             game.doAction(new AddStaticAction(perm, MagicStatic.AddBlack));
             game.doAction(new AddStaticAction(perm, MagicStatic.Zombie));
         }
     },
-    NIGHTMARE("is a Nightmare in addition to its other creature types") {
+    BLACK_NIGHTMARE("It is black and is a Nightmare in addition to its other creature types") {
         protected void doAction(final MagicGame game, final MagicPermanent perm) {
+            game.doAction(new AddStaticAction(perm, MagicStatic.IsBlack));
             game.doAction(new AddStaticAction(perm, MagicStatic.Nightmare));
         }
     },
@@ -183,7 +185,7 @@ public enum MagicPlayMod implements MagicPermanentAction {
     }
     
     public static List<MagicPlayMod> build(final String text) {
-        final String[] tokens = text != null ? text.split("\\. | and ") : new String[0];
+        final String[] tokens = text != null ? text.split("\\. ") : new String[0];
         final List<MagicPlayMod> mods = new LinkedList<>();
         for (final String name : tokens) {
             mods.add(MagicPlayMod.getPlayMod(name));
