@@ -4,12 +4,14 @@ Abzan Advantage
 Abzan Ascendancy
 Abzan Banner
 Abzan Battle Priest
+Abzan Beastmaster
 Abzan Falconer
 Abzan Guide
 Abzan Kin-Guard
 Abzan Runemark
 Abzan Skycaptain
 Accursed Spirit
+Acid-Spewer Dragon
 Act of Treason
 Aegis Angel
 Aegis of the Gods
@@ -36,6 +38,7 @@ Alesha, Who Smiles at Death
 Alpine Grizzly
 Altac Bloodseeker
 Altar of the Brood
+Ambuscade Shaman
 Ambush Krotiq
 Amphin Pathmage
 Anafenza, Kin-Tree Spirit
@@ -50,12 +53,14 @@ Annul
 Anvilwrought Raptor
 Aqueous Form
 Arashin Cleric
+Arashin Foremost
 Arbor Colossus
 Archers of Qarsi
 Archers' Parapet
 Arena Athlete
 Armory of Iroas
 Artful Maneuver
+Ashcloud Phoenix
 Ashen Rider
 Ashiok's Adept
 Aspect of Gorgon
@@ -64,7 +69,9 @@ Asphodel Wanderer
 Asphyxiate
 Atarka Beastbreaker
 Atarka Efreet
+Atarka Monument
 Atarka, World Render
+Avatar of the Resolute
 Aven Skirmisher
 Aven Sunstriker
 Aven Surveyor
@@ -81,6 +88,7 @@ Battle Mastery
 Battlewise Hoplite
 Battlewise Valor
 Bear's Companion
+Belltoll Dragon
 Benthic Giant
 Berserkers' Onslaught
 Bident of Thassa
@@ -93,6 +101,7 @@ Bloodfell Caves
 Bloodfire Expert
 Bloodfire Mentor
 Blood Host
+Bloodsoaked Champion
 Bloodstained Mire
 Blood-Toll Harpy
 Blossoming Sands
@@ -164,6 +173,7 @@ Dauntless River Marshal
 Dawnbringer Charioteers
 Dazzling Ramparts
 Deathbellow Raider
+Deathbringer Regent
 Death Wind
 Debilitating Injury
 Decorated Griffin
@@ -200,9 +210,11 @@ Dragonscale Boon
 Dragon-Scarred Bear
 Dragon's Eye Sentry
 Dragon-Style Twins
+Dragon Whisperer
 Dreadbringer Lampads
 Dromoka Captain
 Dromoka Dunecaster
+Dromoka Monument
 Dromoka's Gift
 Dromoka, the Eternal
 Dromoka Warrior
@@ -259,6 +271,7 @@ Festergloom
 Firedrinker Satyr
 Firehoof Cavalry
 Flamecast Wheel
+Flamespeaker Adept
 Flatten
 Fleecemane Lion
 Fleetfeather Cockatrice
@@ -322,14 +335,17 @@ Grim Haruspex
 Grindclock
 Griptide
 Grisly Transformation
+Guardian Shield-Bearer
 Guardians of Meletis
 Gudul Lurker
 Gurmag Swiftwing
 Hammerhand
 Hammer of Purphoros
 Hand of Silumgar
+Harbinger of the Hunt
 Harsh Sustenance
 Harvestguard Alseids
+Heart-Piercer Bow
 Heat Ray
 Heir of the Wilds
 Heliod, God of the Sun
@@ -337,13 +353,16 @@ Heliod's Emissary
 Heliod's Pilgrim
 Herald of Dromoka
 Herald of Torment
+Herdchaser Dragon
 Heroes' Bane
 Hero's Blade
 Hero's Downfall
 Highland Game
+High Sentinels of Arashin
 Highspire Mantis
 Hold at Bay
 Honor's Reward
+Hooded Assassin
 Hopeful Eidolon
 Hordeling Outburst
 Horizon Chimera
@@ -355,12 +374,14 @@ Humbler of Mortals
 Hydra Broodmaster
 Hydrosurge
 Hythonia the Cruel
+Icefeather Aven
 Ill-Tempered Cyclops
 Impact Tremors
 Impetuous Sunchaser
 Inferno Fist
 Insatiable Harpy
 Inspired Charge
+Invasive Species
 Invisibility
 Island
 Jace's Ingenuity
@@ -383,8 +404,12 @@ Kill Shot
 Kindled Fury
 Kinsbaile Skirmisher
 Kin-Tree Warden
+Kiora's Follower
 Kird Chieftain
+Knowledge and Power
+Kolaghan Aspirant
 Kolaghan Forerunners
+Kolaghan Monument
 Kolaghan Skirmisher
 Kolaghan Stormsinger
 Kolaghan, the Storm's Fury
@@ -420,6 +445,7 @@ Mahamoti Djinn
 Mana Confluence
 Mantis Rider
 Marang River Skeleton
+Mardu Ascendancy
 Mardu Banner
 Mardu Blazebringer
 Mardu Hateblade
@@ -470,6 +496,7 @@ Naturalize
 Necrobite
 Necrogen Scudder
 Necromancer's Assistant
+Necromaster Dragon
 Negate
 Nessian Asp
 Nessian Courser
@@ -501,6 +528,7 @@ Oakheart Dryads
 Observant Alseid
 Odunos River Trawler
 Ojutai Interceptor
+Ojutai Monument
 Ojutai's Breath
 Ojutai, Soul of Winter
 Opaline Unicorn
@@ -513,6 +541,11 @@ Ornitharch
 Ornithopter
 Pacifism
 Palace Familiar
+Paragon of Eternal Wilds
+Paragon of Fierce Defiance
+Paragon of Gathering Mists
+Paragon of New Dawns
+Paragon of Open Graves
 Peak Eruption
 Pearl Lake Ancient
 Pensive Minotaur
@@ -574,6 +607,7 @@ Resupply
 Retraction Helix
 Returned Centaur
 Returned Phalanx
+Returned Reveler
 Revel of the Fallen God
 Reverent Hunter
 Revoke Existence
@@ -591,6 +625,7 @@ Rugged Highlands
 Rummaging Goblin
 Runeclaw Bear
 Rush of Battle
+Sabertooth Outrider
 Sacred Armory
 Sage-Eye Harrier
 Sage of the Inward Eye
@@ -624,6 +659,8 @@ Scouring Sands
 Scrapyard Mongrel
 Screamreach Brawler
 Scuttling Doom Engine
+Sealock Monster
+Secret Plans
 Sedge Scorpion
 Seeker of the Way
 Seek the Horizon
@@ -643,6 +680,7 @@ Shaman of the Great Hunt
 Shambling Goblin
 Shape the Sands
 Shatter
+Shieldhide Dragon
 Shipwreck Singer
 Shivan Dragon
 Shivan Reef
@@ -651,18 +689,21 @@ Shrapnel Blast
 Shredding Winds
 Shrike Harpy
 Shu Yun, the Silent Tempest
+Sibsig Host
 Sibsig Icebreakers
 Sidisi's Faithful
 Sidisi's Pet
 Sidisi, Undead Vizier
 Siegecraft
 Siege Rhino
+Sight of the Scalelords
 Sigiled Skink
 Sigiled Starfish
 Sign in Blood
 Silent Artisan
 Silent Sentinel
 Silumgar Butcher
+Silumgar Monument
 Silumgar Sorcerer
 Silumgar Spell-Eater
 Silumgar, the Drifting Death
@@ -679,6 +720,9 @@ Snake of the Golden Grove
 Snowhorn Rider
 Solemn Offering
 Soulmender
+Soul of New Phyrexia
+Soul of Theros
+Soul of Zendikar
 Soul Summons
 Spark Jolt
 Spearpoint Oread
@@ -701,6 +745,7 @@ Stormbreath Dragon
 Stormcaller of Keranos
 Stormcrag Elemental
 Stormtide Leviathan
+Stormwing Dragon
 Stratus Dancer
 Stratus Walk
 Strongarm Monk
@@ -709,12 +754,14 @@ Stymied Hopes
 Sultai Banner
 Sultai Charm
 Sultai Emissary
+Sultai Flayer
 Sultai Runemark
 Sultai Skullkeeper
 Summit Prowler
 Sunblade Elf
 Sungrace Pegasus
 Supply-Line Cranes
+Surrak, the Hunt Caller
 Swamp
 Swarmborn Giant
 Swarm of Bloodflies
@@ -794,6 +841,7 @@ Vaporkin
 Venerable Lammasu
 Venom Sliver
 Vial of Dragonfire
+Vineweft
 Viper's Kiss
 Virulent Plague
 Void Snare
