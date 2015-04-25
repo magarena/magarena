@@ -4,6 +4,6 @@ value=2.781
 rarity=U
 type=Sorcery
 cost={3}{R}{R}{R}
+effect=Put three 3/1 red Elemental creature tokens with haste onto the battlefield. Exile them at the beginning of the next end step.
 timing=main
-requires_groovy_code
 oracle=Put three 3/1 red Elemental creature tokens with haste onto the battlefield. Exile them at the beginning of the next end step.
