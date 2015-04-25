@@ -133,7 +133,7 @@ public class MCTSAI implements MagicAI {
 
         //normal: max time is 1000 * level
         final int artificialLevel = scorePlayer.getAiProfile().getAiLevel();
-        final int MAX_TIME = 1000 * artificialLevel;
+        final int DURATION = 1000 * artificialLevel;
 
         final long START_TIME = System.currentTimeMillis();
 
@@ -145,7 +145,7 @@ public class MCTSAI implements MagicAI {
         sims = 0;
         final ExecutorService executor = Executors.newFixedThreadPool(THREADS); 
         final BlockingQueue<Runnable> queue = new LinkedBlockingQueue<>();
-        executor.submit(genTreeUpdateTask(root, aiGame, executor, queue, START_TIME, MAX_TIME));
+        executor.submit(genTreeUpdateTask(root, aiGame, executor, queue, START_TIME, DURATION));
         
         try {
             // wait for artificialLevel + 1 seconds for jobs to finish
@@ -183,11 +183,11 @@ public class MCTSAI implements MagicAI {
         final ExecutorService executor, 
         final BlockingQueue<Runnable> queue, 
         final long START_TIME, 
-        final long MAX_TIME) {
+        final long DURATION) {
         return new Runnable() {
             @Override
             public void run() {
-                TreeUpdate(root, aiGame, executor, queue, START_TIME, MAX_TIME);
+                TreeUpdate(root, aiGame, executor, queue, START_TIME, DURATION);
             }
         };
     }
@@ -227,7 +227,7 @@ public class MCTSAI implements MagicAI {
         final ExecutorService executor, 
         final BlockingQueue<Runnable> queue, 
         final long START_TIME, 
-        final long MAX_TIME) {
+        final long DURATION) {
 
         //prioritize backpropagation tasks
         while (queue.isEmpty() == false) {
@@ -281,8 +281,8 @@ public class MCTSAI implements MagicAI {
         }
        
         // end simulations once root is AI win or time is up
-        if (System.currentTimeMillis() - START_TIME < MAX_TIME && !root.isAIWin()) {
-            executor.submit(genTreeUpdateTask(root, aiGame, executor, queue, START_TIME, MAX_TIME));
+        if (System.currentTimeMillis() < START_TIME + DURATION && !root.isAIWin()) {
+            executor.submit(genTreeUpdateTask(root, aiGame, executor, queue, START_TIME, DURATION));
         } else {
             executor.shutdown();
         }
