@@ -7,6 +7,6 @@ subtype=Human,Barbarian,Horror
 cost={2}{R}{R}
 pt=3/3
 ability=First strike;\
-        Threshold — As long as seven or more cards are in your graveyard, SN gets +1/+1, is black, and has "{2}{B}, {T}: Destroy target red creature."
+        As long as seven or more cards are in your graveyard, SN gets +1/+1, is black, and has "{2}{B}, {T}: Destroy target red creature."
 timing=main
 oracle=First strike\nThreshold — As long as seven or more cards are in your graveyard, Possessed Barbarian gets +1/+1, is black, and has "{2}{B}, {T}: Destroy target red creature."

@@ -8,6 +8,6 @@ cost={B}
 pt=0/1
 ability=Defender;\
         {B}: SN gets +1/+1 until end of turn.;\
-        Hellbent — SN can attack as though it didn't have defender as long as you have no cards in hand.
+        SN can attack as though it didn't have defender as long as you have no cards in hand.
 timing=main
 oracle=Defender\n{B}: Slithering Shade gets +1/+1 until end of turn.\nHellbent — Slithering Shade can attack as though it didn't have defender as long as you have no cards in hand.

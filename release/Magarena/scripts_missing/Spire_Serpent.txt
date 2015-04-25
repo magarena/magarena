@@ -7,6 +7,6 @@ subtype=Serpent
 cost={4}{U}
 pt=3/5
 ability=Defender;\
-        Metalcraft — As long as you control three or more artifacts, SN gets +2/+2 and can attack as though it didn't have defender.
+        As long as you control three or more artifacts, SN gets +2/+2 and can attack as though it didn't have defender.
 timing=main
 oracle=Defender\nMetalcraft — As long as you control three or more artifacts, Spire Serpent gets +2/+2 and can attack as though it didn't have defender.

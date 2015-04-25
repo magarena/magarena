@@ -7,6 +7,6 @@ subtype=Centaur,Horror
 cost={2}{G}{G}
 pt=3/3
 ability=Trample;\
-        Threshold — As long as seven or more cards are in your graveyard, SN gets +1/+1, is black, and has "{2}{B}, {T}: Destroy target green creature."
+        As long as seven or more cards are in your graveyard, SN gets +1/+1, is black, and has "{2}{B}, {T}: Destroy target green creature."
 timing=main
 oracle=Trample\nThreshold — As long as seven or more cards are in your graveyard, Possessed Centaur gets +1/+1, is black, and has "{2}{B}, {T}: Destroy target green creature."

@@ -7,6 +7,6 @@ subtype=Elemental
 cost={2}{U}
 pt=2/1
 ability={U}, {T}: You may tap or untap another target creature.;\
-        Landfall — Whenever a land enters the battlefield under your control, you may untap SN.
+        Whenever a land enters the battlefield under your control, you may untap SN.
 timing=main
 oracle={U}, {T}: You may tap or untap another target creature.\nLandfall — Whenever a land enters the battlefield under your control, you may untap Tideforce Elemental.
