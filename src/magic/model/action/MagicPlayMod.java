@@ -83,7 +83,7 @@ public enum MagicPlayMod implements MagicPermanentAction {
             perm.changeCounters(MagicCounterType.PlusOne,1);
         }
     },
-    BLACK() {
+    BLACK("That creature is black") {
         protected void doAction(final MagicGame game, final MagicPermanent perm) {
             game.doAction(new AddStaticAction(perm, MagicStatic.Black));
         }
@@ -93,7 +93,7 @@ public enum MagicPlayMod implements MagicPermanentAction {
             game.doAction(new AddStaticAction(perm, MagicStatic.Zombie));
         }
     },
-    NIGHTMARE() {
+    NIGHTMARE("is a Nightmare in addition to its other creature types") {
         protected void doAction(final MagicGame game, final MagicPermanent perm) {
             game.doAction(new AddStaticAction(perm, MagicStatic.Nightmare));
         }

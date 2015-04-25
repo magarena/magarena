@@ -1928,11 +1928,11 @@ public enum MagicRuleEventAction {
         }
     },
     Reanimate(
-        "return (?<choice>[^\\.]*graveyard) to the battlefield( )?(?<mods>.+)?\\.",
+        "return (?<choice>[^\\.]*graveyard) to the battlefield(\\. | )?(?<mods>.+)?\\.",
         MagicTargetHint.None,
         MagicGraveyardTargetPicker.PutOntoBattlefield,
         MagicTiming.Token,
-        "Return"
+        "Reanimate"
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
@@ -1954,25 +1954,17 @@ public enum MagicRuleEventAction {
         }
     },
     Reanimate2(
-        "put (?<choice>[^\\.]*graveyard) onto the battlefield under your control\\.",
+        "put (?<choice>[^\\.]*graveyard) onto the battlefield under your control(\\. | )?(?<mods>.+)?\\.",
         MagicTargetHint.None,
         MagicGraveyardTargetPicker.PutOntoBattlefield,
         MagicTiming.Token,
-        "Return",
-        new MagicEventAction() {
-            @Override
-            public void executeEvent(final MagicGame game, final MagicEvent event) {
-                event.processTargetCard(game,new MagicCardAction() {
-                    public void doAction(final MagicCard card) {
-                        game.doAction(new ReanimateAction(
-                            card,
-                            event.getPlayer()
-                        ));
-                    }
-                });
-            }
+        "Reanimate"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            return Reanimate.getAction(matcher);
         }
-    ),
+    },
     TapOrUntapChosen(
         "tap or untap (?<choice>[^\\.]*)\\.",
         MagicTargetHint.None,
