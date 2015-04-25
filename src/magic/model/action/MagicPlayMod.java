@@ -40,12 +40,17 @@ public enum MagicPlayMod implements MagicPermanentAction {
             game.doAction(new AddTriggerAction(perm, MagicAtEndOfTurnTrigger.ExileAtYourEnd(controller)));
         }
     },
+    EXILE_AT_END_OF_YOUR_TURN2("At the beginning of your next end step, exile it") {
+        protected void doAction(final MagicGame game, final MagicPermanent perm) {
+            EXILE_AT_END_OF_YOUR_TURN.doAction(game, perm);
+        }
+    },
     EXILE_WHEN_LEAVES("If it would leave the battlefield, exile it instead of putting it anywhere else") {
         protected void doAction(final MagicGame game, final MagicPermanent perm) {
             game.doAction(new AddTriggerAction(perm, MagicWhenLeavesPlayTrigger.Exile));
         }
     },
-    SACRIFICE_AT_END_OF_TURN("Sacrifice it at the beginning of the next end step") {
+    SACRIFICE_AT_END_OF_TURN("Sacrifice (it|those tokens) at the beginning of the next end step") {
         protected void doAction(final MagicGame game, final MagicPermanent perm) {
             game.doAction(new AddTriggerAction(perm, MagicAtEndOfTurnTrigger.Sacrifice));
         }
