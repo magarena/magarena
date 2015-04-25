@@ -2,6 +2,8 @@ package magic.model.action;
 
 import java.util.List;
 import java.util.LinkedList;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
@@ -27,7 +29,7 @@ public enum MagicPlayMod implements MagicPermanentAction {
             game.doAction(new AddTriggerAction(perm, MagicAtEndOfCombatTrigger.Exile));
         }
     },
-    EXILE_AT_END_OF_TURN("Exile it at the beginning of the next end step") {
+    EXILE_AT_END_OF_TURN("Exile (it|them) at the beginning of the next end step") {
         protected void doAction(final MagicGame game, final MagicPermanent perm) {
             game.doAction(new AddTriggerAction(perm, MagicAtEndOfTurnTrigger.ExileAtEnd));
         }
@@ -150,19 +152,14 @@ public enum MagicPlayMod implements MagicPermanentAction {
     },
     ;
 
-    final String text;
+    private final Pattern pattern;
 
-    private MagicPlayMod(final String name) {
-        text = name;
+    private MagicPlayMod(final String regex) {
+        pattern = Pattern.compile(regex, Pattern.CASE_INSENSITIVE);
     }
 
     private MagicPlayMod() {
         this("");
-    }
-
-    @Override
-    public String toString() {
-        return text;
     }
 
     public void doAction(final MagicPermanent perm) {
@@ -173,7 +170,7 @@ public enum MagicPlayMod implements MagicPermanentAction {
     
     public static MagicPlayMod getPlayMod(final String name) {
         for (final MagicPlayMod mod : values()) {
-            if (mod.toString().equalsIgnoreCase(name)) {
+            if (mod.pattern.matcher(name).matches()) {
                 return mod;
             }
         }
