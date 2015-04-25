@@ -114,7 +114,7 @@ public class ARG {
     public static final String COLON = "\\s*:\\s*";
 
     public static final String TARGET = "(?<choice>(another )?target [^\\.]*)";
-    public static final String PERMANENT = "(?<choice>[^\\.]*)";
+    public static final String CHOICE = "(?<choice>[^\\.]*)";
     public static final String CARD = "(?<choice>[^\\.]* card [^\\.]*)";
     public static final String GRAVEYARD = "(?<choice>[^\\.]* card [^\\.]* graveyard)";
 } 
