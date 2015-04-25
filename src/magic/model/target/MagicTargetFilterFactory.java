@@ -607,8 +607,6 @@ public class MagicTargetFilterFactory {
 
     public static final MagicPermanentFilterImpl FOREST = MagicTargetFilterFactory.permanent(MagicSubType.Forest, Control.Any);
 
-    public static final MagicCardFilterImpl FOREST_CARD_FROM_LIBRARY = card(MagicSubType.Forest).from(MagicTargetType.Library);
-    
     public static final MagicPermanentFilterImpl FOREST_YOU_CONTROL = MagicTargetFilterFactory.permanent(MagicSubType.Forest, Control.You);
 
     public static final MagicPermanentFilterImpl ISLAND_YOU_CONTROL = MagicTargetFilterFactory.permanent(MagicSubType.Island, Control.You);
@@ -752,11 +750,7 @@ public class MagicTargetFilterFactory {
 
     public static final MagicPermanentFilterImpl DRAGON_YOU_CONTROL = MagicTargetFilterFactory.permanent(MagicSubType.Dragon, Control.You);
     
-    public static final MagicPermanentFilterImpl DRAGON_CREATURE_YOU_CONTROL = MagicTargetFilterFactory.creature(MagicSubType.Dragon, Control.You);
-    
     public static final MagicPermanentFilterImpl SOLDIER_OR_WARRIOR_YOU_CONTROL = MagicTargetFilterFactory.permanentOr(MagicSubType.Soldier, MagicSubType.Warrior, Control.You);
-    
-    public static final MagicPermanentFilterImpl GIANT_YOU_CONTROL = MagicTargetFilterFactory.permanent(MagicSubType.Giant, Control.You);
     
     public static final MagicPermanentFilterImpl FOREST_OR_TREEFOLK_YOU_CONTROL = MagicTargetFilterFactory.permanentOr(MagicSubType.Forest, MagicSubType.Treefolk, Control.You);
     
@@ -764,14 +758,8 @@ public class MagicTargetFilterFactory {
     
     public static final MagicPermanentFilterImpl DJINN_OR_EFREET = MagicTargetFilterFactory.permanentOr(MagicSubType.Djinn, MagicSubType.Efreet, Control.Any);
 
-    public static final MagicPermanentFilterImpl SQUIRREL_CREATURE = MagicTargetFilterFactory.creature(MagicSubType.Squirrel, Control.Any);
-
-    public static final MagicPermanentFilterImpl CAT_CREATURE_YOU_CONTROL = MagicTargetFilterFactory.creature(MagicSubType.Cat, Control.You);
-    
     public static final MagicPermanentFilterImpl CLERIC_CREATURE_YOU_CONTROL = MagicTargetFilterFactory.creature(MagicSubType.Cleric, Control.You);
 
-    public static final MagicPermanentFilterImpl MYR_YOU_CONTROL = MagicTargetFilterFactory.permanent(MagicSubType.Myr, Control.You);
-    
     public static final MagicPermanentFilterImpl CLERIC_OR_WIZARD_CREATURE = MagicTargetFilterFactory.creatureOr(MagicSubType.Cleric, MagicSubType.Wizard, Control.Any);
     
     public static final MagicPermanentFilterImpl LEGENDARY_SAMURAI = MagicTargetFilterFactory.creatureAnd(MagicType.Legendary, MagicSubType.Samurai, Control.Any);
@@ -833,8 +821,6 @@ public class MagicTargetFilterFactory {
     public static final MagicPermanentFilterImpl HUMAN = MagicTargetFilterFactory.permanent(MagicSubType.Human, Control.Any);
 
     public static final MagicPermanentFilterImpl HUMAN_CREATURE = MagicTargetFilterFactory.creature(MagicSubType.Human, Control.Any);
-
-    public static final MagicPermanentFilterImpl HUMAN_CREATURE_YOU_CONTROL = MagicTargetFilterFactory.creature(MagicSubType.Human, Control.You);
 
     public static final MagicPermanentFilterImpl NONENCHANTMENT_CREATURE = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
@@ -929,8 +915,6 @@ public class MagicTargetFilterFactory {
     public static final MagicPermanentFilterImpl SLIVER = MagicTargetFilterFactory.permanent(MagicSubType.Sliver, Control.Any);
     
     public static final MagicPermanentFilterImpl SLIVER_CREATURE = MagicTargetFilterFactory.creature(MagicSubType.Sliver, Control.Any);
-    
-    public static final MagicPermanentFilterImpl SHAMAN_CREATURE_YOU_CONTROL = MagicTargetFilterFactory.creature(MagicSubType.Shaman, Control.You);
     
     public static final MagicPermanentFilterImpl ELF = MagicTargetFilterFactory.permanent(MagicSubType.Elf, Control.Any);
 
