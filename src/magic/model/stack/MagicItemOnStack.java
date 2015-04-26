@@ -108,7 +108,7 @@ public abstract class MagicItemOnStack extends MagicObjectImpl implements MagicT
     public MagicTarget getTarget() {
         final MagicTargetChoice tchoice = getEvent().getChoice().getTargetChoice();
         if (tchoice != null && tchoice.isTargeted()) {
-            return (MagicTarget)choiceResults[event.getTargetChoiceResultIndex()];
+            return (MagicTarget)choiceResults[getEvent().getTargetChoiceResultIndex()];
         } else {
             return MagicTargetNone.getInstance();
         }
