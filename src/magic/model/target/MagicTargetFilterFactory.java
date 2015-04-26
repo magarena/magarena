@@ -62,6 +62,12 @@ public class MagicTargetFilterFactory {
         }
     };
     
+    public static final MagicStackFilterImpl SPELL_OR_ABILITY_OPPONENT_CONTROL = new MagicStackFilterImpl() {
+        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicItemOnStack target) {
+            return target.isEnemy(player);
+        }
+    };
+    
     public static final MagicStackFilterImpl ACTIVATED_ABILITY = new MagicStackFilterImpl() {
         public boolean accept(final MagicSource source,final MagicPlayer player,final MagicItemOnStack target) {
             return target instanceof MagicAbilityOnStack;
@@ -2480,6 +2486,7 @@ public class MagicTargetFilterFactory {
         single.put("spell", SPELL);
         single.put("spell an opponent controls", SPELL_YOU_DONT_CONTROL);
         single.put("spell or ability", SPELL_OR_ABILITY);
+        single.put("spell or ability an opponent controls", SPELL_OR_ABILITY_OPPONENT_CONTROL);
         single.put("activated ability", ACTIVATED_ABILITY);
         single.put("activated or triggered ability", ACTIVATED_OR_TRIGGERED_ABILITY);
         single.put("spell, activated ability, or triggered ability", SPELL_OR_ABILITY);
