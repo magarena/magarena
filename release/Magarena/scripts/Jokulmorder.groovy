@@ -23,23 +23,5 @@
                 game.doAction(new SacrificeAction(event.getPermanent()));
             }
         }
-    },
-    new MagicWhenOtherComesIntoPlayTrigger() {
-        @Override
-        public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPermanent other) {
-            return (other.hasSubType(MagicSubType.Island) &&
-                    other.isFriend(permanent)) ?
-                new MagicEvent(
-                    permanent,
-                    this,
-                    "Untap SN."
-                ) :
-                MagicEvent.NONE;
-        }
-
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new UntapAction(event.getPermanent()));
-        }
     }
 ]

@@ -5,7 +5,7 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={B}
+ability=Whenever a creature dies, put a +1/+1 counter on enchanted creature.
 enchant=pump,pos creature
 timing=enchantment
-requires_groovy_code
 oracle=Enchant creature. Whenever a creature dies, put a +1/+1 counter on enchanted creature.

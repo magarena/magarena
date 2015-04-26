@@ -5,8 +5,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={1}{R}
-ability=When SN is put into a graveyard from the battlefield, return SN to its owner's hand.
+ability={R}: Enchanted creature gets +1/+0 until end of turn.;\
+        When SN is put into a graveyard from the battlefield, return SN to its owner's hand.
 enchant=pump,pos creature
 timing=aura
-requires_groovy_code=Firebreathing
 oracle=Enchant creature. {R}: Enchanted creature gets +1/+0 until end of turn. When Fiery Mantle is put into a graveyard from the battlefield, return Fiery Mantle to its owner's hand.

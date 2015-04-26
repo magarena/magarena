@@ -5,8 +5,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={1}{U}
-ability=Enchanted creature gets +1/+1 and has flying.
+ability=Enchanted creature gets +1/+1 and has flying.;\
+        Discard a card: Return enchanted creature to its owner's hand.
 timing=aura
 enchant=pump,creature
-requires_groovy_code
 oracle=Enchant creature. Enchanted creature gets +1/+1 and has flying. Discard a card: Return enchanted creature to its owner's hand.

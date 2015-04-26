@@ -6,8 +6,8 @@ type=Enchantment
 subtype=Aura
 cost={1}{R}
 ability=Flash;\
+        {R}: Enchanted creature gets +1/+0 until end of turn.;\
         {R}: Return SN to its owner's hand.
 enchant=pump,pos creature
 timing=aura
-requires_groovy_code=Firebreathing
 oracle=Flash. Enchant creature. {R}: Enchanted creature gets +1/+0 until end of turn. {R}: Return Ghitu Firebreathing to its owner's hand.

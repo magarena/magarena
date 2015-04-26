@@ -7,8 +7,9 @@ subtype=Leviathan
 cost={4}{U}{U}{U}
 pt=12/12
 ability=Trample;\
-SN enters the battlefield tapped.;\
-SN doesn't untap during your untap step.
+        SN enters the battlefield tapped.;\
+        SN doesn't untap during your untap step.;\
+        Whenever an Island enters the battlefield under your control, you may untap SN.
 timing=main
 requires_groovy_code
 oracle=Trample. Jokulmorder enters the battlefield tapped. When Jokulmorder enters the battlefield, sacrifice it unless you sacrifice five lands. Jokulmorder doesn't untap during your untap step. Whenever you play an Island, you may untap Jokulmorder.

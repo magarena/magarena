@@ -5,7 +5,7 @@ rarity=U
 type=Enchantment
 subtype=Aura
 cost={1}{G}
+ability={G}: Regenerate enchanted creature.
 enchant=pump,pos creature
 timing=aura
-requires_groovy_code
 oracle=Enchant creature. {G}: Regenerate enchanted creature.

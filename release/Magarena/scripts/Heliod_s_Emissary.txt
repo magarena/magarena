@@ -7,8 +7,8 @@ subtype=Elk
 cost={3}{W}
 ability=Bestow {6}{W};\
         Whenever SN attacks, tap target creature an opponent controls.;\
+        Whenever enchanted creature attacks, tap target creature an opponent controls.;\
         Enchanted creature gets +3/+3.
 pt=3/3
 timing=main
-requires_groovy_code
 oracle=Bestow {6}{W}. Whenever Heliod's Emissary or enchanted creature attacks, tap target creature an opponent controls. Enchanted creature gets +3/+3.

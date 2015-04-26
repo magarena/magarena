@@ -5,8 +5,8 @@ rarity=U
 type=Enchantment
 subtype=Aura
 cost={U}{B}
-ability=Enchanted creature has fear.
+ability=Enchanted creature has fear.;\
+        Whenever enchanted creature deals combat damage to an opponent, you may draw a card.
 timing=aura
 enchant=pump,pos creature
-requires_groovy_code
 oracle=Enchant creature. Enchanted creature has fear. Whenever enchanted creature deals combat damage to an opponent, you may draw a card.

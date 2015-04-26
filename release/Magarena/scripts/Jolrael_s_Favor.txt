@@ -5,8 +5,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={1}{G}
-ability=flash
+ability=flash;\
+        {1}{G}: Regenerate enchanted creature.
 enchant=pump,pos creature
 timing=pumpFlash
-requires_groovy_code
 oracle=Flash. Enchant creature. {1}{G}: Regenerate enchanted creature.
