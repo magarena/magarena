@@ -124,6 +124,23 @@ public abstract class MagicWhenDamageIsDealtTrigger extends MagicTrigger<MagicDa
         };
     }
     
+    public static MagicWhenDamageIsDealtTrigger CombatDamageToOpponent(final MagicTargetFilter<MagicPermanent> filter, final MagicSourceEvent sourceEvent) {
+        return new MagicWhenDamageIsDealtTrigger() {
+            @Override
+            public boolean accept(final MagicPermanent permanent, final MagicDamage damage) {
+                return super.accept(permanent, damage) &&
+                       damage.getSource().isPermanent() && 
+                       filter.accept(permanent, permanent.getController(), damage.getSourcePermanent()) && 
+                       permanent.isOpponent(damage.getTarget()) &&
+                       damage.isCombat();
+            }
+            @Override
+            public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
+                return sourceEvent.getEvent(permanent, damage.getTargetPlayer());
+            }
+        };
+    }
+    
     public static MagicWhenDamageIsDealtTrigger CombatDamageToAny(final MagicTargetFilter<MagicPermanent> filter, final MagicSourceEvent sourceEvent) {
         return new MagicWhenDamageIsDealtTrigger() {
             @Override
