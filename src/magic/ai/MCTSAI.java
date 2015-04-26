@@ -130,13 +130,7 @@ public class MCTSAI implements MagicAI {
         if (size == 1) {
             return startGame.map(RCHOICES.get(0));
         }
-
-        //normal: max time is 1000 * level
-        final int artificialLevel = scorePlayer.getAiProfile().getAiLevel();
-        final int DURATION = 1000 * artificialLevel;
-
-        final long START_TIME = System.currentTimeMillis();
-
+        
         //root represents the start state
         final MCTSGameTree root = MCTSGameTree.getNode(CACHE, aiGame, RCHOICES);
 
@@ -145,11 +139,23 @@ public class MCTSAI implements MagicAI {
         sims = 0;
         final ExecutorService executor = Executors.newFixedThreadPool(THREADS); 
         final BlockingQueue<Runnable> queue = new LinkedBlockingQueue<>();
-        executor.submit(genTreeUpdateTask(root, aiGame, executor, queue, START_TIME, DURATION));
+
+        // ensure tree update runs at least once
+        final int aiLevel = scorePlayer.getAiProfile().getAiLevel();
+        final long START_TIME = System.currentTimeMillis();
+        final long END_TIME = START_TIME + 1000 * aiLevel;
+        final Runnable updateTask = new Runnable() {
+            @Override
+            public void run() {
+                TreeUpdate(this, root, aiGame, executor, queue, END_TIME);
+            }
+        };
+        
+        updateTask.run();
         
         try {
             // wait for artificialLevel + 1 seconds for jobs to finish
-            executor.awaitTermination(artificialLevel + 1, TimeUnit.SECONDS);
+            executor.awaitTermination(aiLevel + 1, TimeUnit.SECONDS);
         } catch (final InterruptedException ex) {
             throw new RuntimeException(ex);
         } finally {
@@ -177,21 +183,6 @@ public class MCTSAI implements MagicAI {
         return startGame.map(RCHOICES.get(bestC));
     }
 
-    public Runnable genTreeUpdateTask(
-        final MCTSGameTree root, 
-        final MagicGame aiGame, 
-        final ExecutorService executor, 
-        final BlockingQueue<Runnable> queue, 
-        final long START_TIME, 
-        final long DURATION) {
-        return new Runnable() {
-            @Override
-            public void run() {
-                TreeUpdate(root, aiGame, executor, queue, START_TIME, DURATION);
-            }
-        };
-    }
-    
     private Runnable genSimulationTask(final MagicGame rootGame, final LinkedList<MCTSGameTree> path, final BlockingQueue<Runnable> queue) {
         return new Runnable() {
             @Override
@@ -222,12 +213,12 @@ public class MCTSAI implements MagicAI {
     }
 
     public void TreeUpdate(
+        final Runnable updateTask,
         final MCTSGameTree root, 
         final MagicGame aiGame, 
         final ExecutorService executor, 
         final BlockingQueue<Runnable> queue, 
-        final long START_TIME, 
-        final long DURATION) {
+        final long END_TIME) {
 
         //prioritize backpropagation tasks
         while (queue.isEmpty() == false) {
@@ -281,8 +272,8 @@ public class MCTSAI implements MagicAI {
         }
        
         // end simulations once root is AI win or time is up
-        if (System.currentTimeMillis() < START_TIME + DURATION && !root.isAIWin()) {
-            executor.submit(genTreeUpdateTask(root, aiGame, executor, queue, START_TIME, DURATION));
+        if (System.currentTimeMillis() < END_TIME && !root.isAIWin()) {
+            executor.submit(updateTask);
         } else {
             executor.shutdown();
         }
