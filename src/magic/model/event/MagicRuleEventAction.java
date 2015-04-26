@@ -1616,17 +1616,24 @@ public enum MagicRuleEventAction {
             }
         }
     ),
-    BounceSelf(
-        "return sn to its owner's hand\\.",
+    BounceIt(
+        "return " + ARG.IT + " to its owner's hand\\.",
         MagicTiming.Removal,
-        "Bounce",
-        new MagicEventAction() {
-            @Override
-            public void executeEvent(final MagicGame game, final MagicEvent event) {
-                game.doAction(new RemoveFromPlayAction(event.getPermanent(),MagicLocationType.OwnersHand));
-            }
+        "Bounce"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    final MagicPermanent it = ARG.itPermanent(event, matcher);
+                    if (it.isValid()) {
+                        game.doAction(new RemoveFromPlayAction(it,MagicLocationType.OwnersHand));
+                    }
+                }
+            };
         }
-    ),
+    },
     BounceItEndOfCombat(
         "return " + ARG.IT + " to its owner's hand at end of combat\\.",
         MagicTiming.Removal,
@@ -1643,25 +1650,6 @@ public enum MagicRuleEventAction {
                             it,
                             MagicAtEndOfCombatTrigger.Return
                         ));
-                    }
-                }
-            };
-        }
-    },
-    BounceGroup(
-        "return all (?<group>[^\\.]*) to their (owner's hand|owners' hands)\\.",
-        MagicTiming.Removal,
-        "Bounce"
-    ) {
-        @Override
-        public MagicEventAction getAction(final Matcher matcher) {
-            final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.Permanent(matcher.group("group"));
-            return new MagicEventAction() {
-                @Override
-                public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    final Collection<MagicPermanent> targets = filter.filter(event);
-                    for (final MagicPermanent it : targets) {
-                        game.doAction(new RemoveFromPlayAction(it, MagicLocationType.OwnersHand));
                     }
                 }
             };
@@ -1684,6 +1672,25 @@ public enum MagicRuleEventAction {
             }
         }
     ),
+    BounceGroup(
+        "return (?<group>[^\\.]*) to (its|their) (owner's hand|owners' hands)\\.",
+        MagicTiming.Removal,
+        "Bounce"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.Permanent(matcher.group("group"));
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    final Collection<MagicPermanent> targets = filter.filter(event);
+                    for (final MagicPermanent it : targets) {
+                        game.doAction(new RemoveFromPlayAction(it, MagicLocationType.OwnersHand));
+                    }
+                }
+            };
+        }
+    },
     BounceLibTopSelf(
         "put sn on top of its owner's library\\.",
         MagicTiming.Removal,
