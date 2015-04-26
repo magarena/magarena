@@ -1,5 +1,5 @@
 name=Balance
-image=http://magiccards.info/scans/en/vma/14.jpg
+image=http://magiccards.info/scans/en/4e/256.jpg
 value=5.000
 rarity=M
 type=Sorcery
