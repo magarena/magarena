@@ -408,6 +408,14 @@ public enum MagicAbility {
             ));
         }
     },
+    CombatDamageToOpponent("When(ever)? " + ARG.WORDRUN + " deals combat damage to an opponent, " + ARG.EFFECT, 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            card.add(MagicWhenDamageIsDealtTrigger.CombatDamageToOpponent(
+                MagicTargetFilterFactory.Permanent(ARG.wordrun(arg)),
+                MagicRuleEventAction.create(ARG.effect(arg))
+            ));
+        }
+    },
     DamageToPlayer("When(ever)? " + ARG.WORDRUN + " deals damage to a player, " + ARG.EFFECT, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicWhenDamageIsDealtTrigger.DamageToPlayer(
@@ -948,9 +956,10 @@ public enum MagicAbility {
             card.add(MagicWhenSelfTargetedTrigger.SacWhenTargeted);
         }
     },
-    WhenTargeted("When(ever)? SN becomes the target of a(n)? (?<wordrun>[^\\,]*), " + ARG.EFFECT, 0) {
+    WhenTargeted("When(ever)? " + ARG.WORDRUN2 + " becomes the target of (?<wordrun>[^\\,]*), " + ARG.EFFECT, 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(MagicWhenSelfTargetedTrigger.create(
+            card.add(MagicWhenTargetedTrigger.create(
+                MagicTargetFilterFactory.Permanent(ARG.wordrun2(arg)),
                 MagicTargetFilterFactory.ItemOnStack(ARG.wordrun(arg)),
                 MagicRuleEventAction.create(ARG.effect(arg))
             ));
