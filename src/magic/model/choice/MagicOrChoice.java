@@ -27,7 +27,7 @@ public class MagicOrChoice extends MagicChoice {
     @Override
     public MagicTargetChoice getTargetChoice(final Object[] chosen) {
         final int idx = (Integer)chosen[0] - 1;
-        return (MagicTargetChoice)choices[idx];
+        return choices[idx].getTargetChoice();
     }
 
     @Override
