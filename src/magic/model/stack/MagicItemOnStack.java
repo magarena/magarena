@@ -15,8 +15,10 @@ import magic.model.MagicType;
 import magic.model.MagicCounterType;
 import magic.model.event.MagicActivation;
 import magic.model.event.MagicEvent;
+import magic.model.choice.MagicTargetChoice;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
+import magic.model.target.MagicTargetNone;
 
 public abstract class MagicItemOnStack extends MagicObjectImpl implements MagicTarget, MagicMappable<MagicItemOnStack> {
 
@@ -99,15 +101,17 @@ public abstract class MagicItemOnStack extends MagicObjectImpl implements MagicT
         return choiceResults;
     }
 
-    public boolean containsInChoiceResults(final MagicObject obj) {
-        if (choiceResults != null) {
-            for (final Object choiceResult : choiceResults) {
-                if (choiceResult == obj) {
-                    return true;
-                }
-            }
+    public boolean isTarget(final MagicObject obj) {
+        return obj == getTarget();
+    }
+
+    public MagicTarget getTarget() {
+        final MagicTargetChoice tchoice = event.getChoice().getTargetChoice();
+        if (tchoice != null && tchoice.isTargeted()) {
+            return (MagicTarget)choiceResults[event.getTargetChoiceResultIndex()];
+        } else {
+            return MagicTargetNone.getInstance();
         }
-        return false;
     }
 
     public long getId() {

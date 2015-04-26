@@ -11,7 +11,7 @@ import magic.model.target.MagicTargetFilter;
 public abstract class MagicWhenSelfTargetedTrigger extends MagicWhenTargetedTrigger {
     @Override
     public boolean accept(final MagicPermanent permanent, final MagicItemOnStack item) {
-        return item.containsInChoiceResults(permanent);
+        return item.isTarget(permanent);
     }
     
     public static MagicWhenSelfTargetedTrigger create(final MagicTargetFilter<MagicItemOnStack> filter, final MagicSourceEvent sourceEvent) {
