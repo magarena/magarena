@@ -15,8 +15,8 @@
     )  {
         @Override
         public void modSubTypeFlags(final MagicPermanent permanent, final Set<MagicSubType> flags) {
-          flags.clear();
-          flags.add(MagicSubType.Mountain);
+            flags.clear();
+            flags.add(MagicSubType.Mountain);
         }
     }
 ]
