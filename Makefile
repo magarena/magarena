@@ -788,3 +788,6 @@ images.url: missing_images
 
 model_usage:
 	for i in `grep "class [A-Za-z]*" -hro src/magic/model | sed 's/class //'`; do echo -en "$$i\t"; grep $$i -lr src release/Magarena/scripts | wc -l; done > $@
+
+fix_indentation:
+	grep "^[ ]*" -r release/Magarena/scripts/*.groovy -o | awk -F':' 'length($2) < 15 {print $1 "\t" length($2) % 4}' | grep -v 0 | cut -f1 | uniq | vim -
