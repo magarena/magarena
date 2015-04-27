@@ -6,7 +6,7 @@ type=Creature
 subtype=Goblin
 cost={3}{R}
 pt=2/2
-ability=Haste
+ability=Haste;\
+        When SN enters the battlefield, reveal the top four cards of your library. Put all Goblin cards revealed this way into your hand and the rest on the bottom of your library in any order.
 timing=main
-requires_groovy_code
 oracle=Haste. When Goblin Ringleader enters the battlefield, reveal the top four cards of your library. Put all Goblin cards revealed this way into your hand and the rest on the bottom of your library in any order.

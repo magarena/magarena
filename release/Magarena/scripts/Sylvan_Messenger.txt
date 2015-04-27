@@ -6,7 +6,7 @@ type=Creature
 subtype=Elf
 cost={3}{G}
 pt=2/2
-ability=Trample
+ability=Trample;\
+        When SN enters the battlefield, reveal the top four cards of your library. Put all Elf cards revealed this way into your hand and the rest on the bottom of your library in any order.
 timing=main
-requires_groovy_code
 oracle=Trample. When Sylvan Messenger enters the battlefield, reveal the top four cards of your library. Put all Elf cards revealed this way into your hand and the rest on the bottom of your library in any order.

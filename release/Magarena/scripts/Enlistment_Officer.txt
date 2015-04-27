@@ -6,7 +6,7 @@ type=Creature
 subtype=Human,Soldier
 cost={3}{W}
 pt=2/3
-ability=First strike
+ability=First strike;\
+        When SN enters the battlefield, reveal the top four cards of your library. Put all Soldier cards revealed this way into your hand and the rest on the bottom of your library in any order.
 timing=main
-requires_groovy_code
 oracle=First strike. When Enlistment Officer enters the battlefield, reveal the top four cards of your library. Put all Soldier cards revealed this way into your hand and the rest on the bottom of your library in any order.
