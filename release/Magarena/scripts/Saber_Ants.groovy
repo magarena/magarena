@@ -19,7 +19,7 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-             if (event.isYes()){
+            if (event.isYes()){
                 game.doAction(new PlayTokensAction(
                     event.getPlayer(),
                     TokenCardDefinitions.get("1/1 green Insect creature token"),

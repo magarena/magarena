@@ -8,7 +8,7 @@
                 "PN gains X life, where X is the number of cards in his or her hand minus 4."
             ); 
         }
- 
+
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();

@@ -20,7 +20,7 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-             event.processTargetCardOnStack(game, {
+            event.processTargetCardOnStack(game, {
                 final int amount = event.getPermanent().getCounters(MagicCounterType.Verse);
                 game.addEvent(new MagicCounterUnlessEvent(event.getSource(),it,MagicManaCost.create("{"+amount+"}")));
             });

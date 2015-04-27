@@ -1,10 +1,7 @@
 [
     new MagicStatic(MagicLayer.SetPT) {
         @Override
-        public void modPowerToughness(
-                final MagicPermanent source,
-                final MagicPermanent permanent,
-                final MagicPowerToughness pt) {
+        public void modPowerToughness(final MagicPermanent source, final MagicPermanent permanent, final MagicPowerToughness pt) {
             final int level = permanent.getCounters(MagicCounterType.Level);
             if (level >= 5) {
                 pt.set(2,5);

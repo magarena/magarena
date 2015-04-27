@@ -1,13 +1,13 @@
 def EFFECT = MagicRuleEventAction.create("SN becomes a 4/4 Horror creature with flying.");
 
 [
-   new MagicPermanentActivation(
+    new MagicPermanentActivation(
         [MagicCondition.NOT_EXCLUDE_COMBAT_CONDITION],
         new MagicActivationHints(MagicTiming.Animate),
         "Becomes"
     ) {
 
-       @Override
+        @Override
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
                 new MagicPayLifeEvent(source,(source.getController().getLife().abs() + 1).intdiv(2))

@@ -11,7 +11,7 @@
             );
         }
 
-       @Override
+        @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final int amount = event.getCardOnStack().getX();
             final MagicPlayer player = event.getPlayer();

@@ -77,11 +77,11 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new GainAbilityAction(event.getPermanent(),MagicAbility.Trample));
-           event.processTargetPlayer(game, {
-               game.doAction(new PlayTokensAction(
-                   it,
-                   TokenCardDefinitions.get("1/1 green Hippo creature token"),
-                   1
+            event.processTargetPlayer(game, {
+                game.doAction(new PlayTokensAction(
+                    it,
+                    TokenCardDefinitions.get("1/1 green Hippo creature token"),
+                    1
                 ));
             });
         }
