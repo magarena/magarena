@@ -1,6 +1,6 @@
 def filter = new MagicPermanentFilterImpl() {
     public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
-        return target.isLand() == false && target.getName().equals("Detention Sphere") == false;
+        return target.isLand() == false && target.isName("Detention Sphere") == false;
     }
 };
 

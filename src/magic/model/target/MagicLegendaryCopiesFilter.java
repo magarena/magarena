@@ -15,7 +15,7 @@ public class MagicLegendaryCopiesFilter extends MagicPermanentFilterImpl {
 
     @Override
     public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
-        return name.equals(target.getName()) &&
+        return target.isName(name) &&
                target.hasType(MagicType.Legendary) &&
                target.isController(player);
     }

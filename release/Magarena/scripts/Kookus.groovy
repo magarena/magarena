@@ -1,6 +1,6 @@
 def KEEPER_OF_KOOKUS = new MagicPermanentFilterImpl() {
     public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
-        return target.isCreature() && target.getName().equals("Keeper of Kookus");
+        return target.isCreature() && target.isName("Keeper of Kookus");
     } 
 };
 

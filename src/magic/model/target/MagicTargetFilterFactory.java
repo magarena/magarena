@@ -1370,9 +1370,9 @@ public class MagicTargetFilterFactory {
     public static final MagicPermanentFilterImpl KALDRA_EQUIPMENT=new MagicPermanentFilterImpl() {
         public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
             return target.isEquipment() &&
-                    (target.getName().equals("Sword of Kaldra") || 
-                     target.getName().equals("Shield of Kaldra") || 
-                     target.getName().equals("Helm of Kaldra"));
+                    (target.isName("Sword of Kaldra") || 
+                     target.isName("Shield of Kaldra") || 
+                     target.isName("Helm of Kaldra"));
         }
     };
 
@@ -2797,7 +2797,7 @@ public class MagicTargetFilterFactory {
     public static final MagicPermanentFilterImpl permanentName(final String name, final Control control) {
         return new MagicPermanentFilterImpl() {
             public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
-                return target.getName().equalsIgnoreCase(name) &&
+                return target.isName(name) &&
                    ((control == Control.You && target.isController(player)) ||
                     (control == Control.Opp && target.isOpponent(player)) ||
                     (control == Control.Any)
@@ -2809,7 +2809,7 @@ public class MagicTargetFilterFactory {
     public static final MagicPermanentFilterImpl nonTokenPermanentName(final String name, final Control control) {
         return new MagicPermanentFilterImpl() {
             public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
-                return target.getName().equalsIgnoreCase(name) && !target.isToken() &&
+                return target.isName(name) && !target.isToken() &&
                    ((control == Control.You && target.isController(player)) ||
                     (control == Control.Opp && target.isOpponent(player)) ||
                     (control == Control.Any)
@@ -2821,7 +2821,7 @@ public class MagicTargetFilterFactory {
     public static final MagicPermanentFilterImpl permanentNotName(final String name, final Control control) {
         return new MagicPermanentFilterImpl() {
             public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
-                return target.getName().equalsIgnoreCase(name) == false &&
+                return target.isName(name) == false &&
                     ((control == Control.You && target.isController(player)) ||
                      (control == Control.Opp && target.isOpponent(player)) ||
                      (control == Control.Any)
@@ -2833,7 +2833,7 @@ public class MagicTargetFilterFactory {
     public static final MagicPermanentFilterImpl creatureName(final String name, final Control control) {
         return new MagicPermanentFilterImpl() {
             public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
-                return target.getName().equalsIgnoreCase(name) &&
+                return target.isName(name) &&
                        target.isCreature() &&
                    ((control == Control.You && target.isController(player)) ||
                     (control == Control.Opp && target.isOpponent(player)) ||

@@ -362,9 +362,14 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
         return cachedManaActivations.size();
     }
 
+    public boolean isName(final String other) {
+        final String name = getName();
+        return name.isEmpty() == false && name.equalsIgnoreCase(other);
+    }
+
     public String getName() {
         final String name = getCardDefinition().getName();
-        if (name.isEmpty()) {
+        if (name.isEmpty() && getGame().isReal()) {
             return "Permanent #" + (id % 1000);
         } else {
             return name;
