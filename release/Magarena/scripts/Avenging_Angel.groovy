@@ -10,7 +10,7 @@
             );
         }
 
-       @Override
+        @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()){
                 final MagicCard card = event.getPermanent().getCard();

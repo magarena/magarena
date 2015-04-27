@@ -10,22 +10,19 @@ def AB = new MagicStatic(MagicLayer.Ability) {
 
 [
     new MagicWhenBlocksTrigger() {
-       @Override
-       public MagicEvent executeTrigger(
-               final MagicGame game,
-               final MagicPermanent permanent,
-               final MagicPermanent blocker) {
-           return (permanent == blocker) ?
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPermanent blocker) {
+            return (permanent == blocker) ?
                 new MagicEvent(
                     permanent,
                     this,
                     "SN loses defender."
                 ):
                 MagicEvent.NONE;
-       }
-       @Override
-       public void executeEvent(final MagicGame game, final MagicEvent event) {
-           game.doAction(new AddStaticAction(event.getPermanent(), AB));
-       }
-   }
+        }
+        @Override
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
+            game.doAction(new AddStaticAction(event.getPermanent(), AB));
+        }
+    }
 ]

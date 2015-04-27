@@ -14,16 +14,16 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new PlayTokenAction(
                 event.getPlayer(),
-                TokenCardDefinitions.get("2/2 white Knight creature token with vigilance")                              
+                TokenCardDefinitions.get("2/2 white Knight creature token with vigilance")
             ));
             game.doAction(new PlayTokenAction(
                 event.getPlayer(),
-                TokenCardDefinitions.get("3/3 green Centaur creature token")                              
+                TokenCardDefinitions.get("3/3 green Centaur creature token")
             ));
             game.doAction(new PlayTokenAction(
                 event.getPlayer(),
-                TokenCardDefinitions.get("4/4 green Rhino creature token with trample")                              
+                TokenCardDefinitions.get("4/4 green Rhino creature token with trample")
             ));
-      }
+        }
     }
 ]

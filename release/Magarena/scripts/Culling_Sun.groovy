@@ -15,7 +15,7 @@ def CREATURE_CMC_LEQ_3 = new MagicCMCPermanentFilter(
             );
         }
 
-       @Override
+        @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final Collection<MagicPermanent> targets =
                 game.filterPermanents(event.getPlayer(),CREATURE_CMC_LEQ_3);

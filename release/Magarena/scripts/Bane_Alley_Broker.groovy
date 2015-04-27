@@ -36,12 +36,12 @@ def ExileCard = {
                 this,
                 "PN draws a card, then exiles a card from his or her hand."
             );
-        }       
+        }
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-           game.doAction(new DrawAction(event.getPlayer(),1));
-           game.addEvent(new MagicEvent(
+            game.doAction(new DrawAction(event.getPlayer(),1));
+            game.addEvent(new MagicEvent(
                 event.getSource(),
                 A_CARD_FROM_HAND,
                 MagicGraveyardTargetPicker.ExileOwn,
@@ -70,7 +70,7 @@ def ExileCard = {
                 this,
                 "PN returns a card\$ exiled with Bane Alley Broker to its owner's hand."
             );
-        }       
+        }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processChosenCards(game, {

@@ -1,5 +1,5 @@
 [
-     new MagicCardActivation(
+    new MagicCardActivation(
         [MagicCondition.CARD_CONDITION],
         new MagicActivationHints(MagicTiming.Main, true),
         "Cast"

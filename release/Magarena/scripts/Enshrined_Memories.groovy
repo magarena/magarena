@@ -23,8 +23,8 @@
                     top,
                     MagicLocationType.OwnersLibrary,
                     top.hasType(MagicType.Creature) ?
-                      MagicLocationType.OwnersHand :
-                      MagicLocationType.BottomOfOwnersLibrary
+                        MagicLocationType.OwnersHand :
+                        MagicLocationType.BottomOfOwnersLibrary
                 ));
             }
         }

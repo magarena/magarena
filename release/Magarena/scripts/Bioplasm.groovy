@@ -1,7 +1,7 @@
 [
     new MagicWhenSelfAttacksTrigger() {
         @Override
-         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent attacker) {
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent attacker) {
             return new MagicEvent(
                 permanent,
                 this,

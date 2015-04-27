@@ -21,8 +21,8 @@
                     top,
                     MagicLocationType.OwnersLibrary,
                     top.hasType(MagicType.Artifact) ?
-                      MagicLocationType.OwnersHand :
-                      MagicLocationType.Graveyard
+                        MagicLocationType.OwnersHand :
+                        MagicLocationType.Graveyard
                 ));
             }
         }

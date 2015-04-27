@@ -21,8 +21,8 @@
                     top,
                     MagicLocationType.OwnersLibrary,
                     top.hasSubType(MagicSubType.Soldier) ?
-                      MagicLocationType.OwnersHand :
-                      MagicLocationType.BottomOfOwnersLibrary
+                        MagicLocationType.OwnersHand :
+                        MagicLocationType.BottomOfOwnersLibrary
                 ));
             }
         }

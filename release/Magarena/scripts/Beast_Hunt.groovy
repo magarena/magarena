@@ -17,8 +17,8 @@
                 game.doAction(new RemoveCardAction(top, MagicLocationType.OwnersLibrary));
                 game.doAction(new MoveCardAction(top, MagicLocationType.OwnersLibrary,
                     top.hasType(MagicType.Creature) ?
-                      MagicLocationType.OwnersHand :
-                      MagicLocationType.Graveyard
+                        MagicLocationType.OwnersHand :
+                        MagicLocationType.Graveyard
                 ));
             }
         }

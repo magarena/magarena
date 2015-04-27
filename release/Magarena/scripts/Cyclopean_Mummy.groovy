@@ -9,7 +9,7 @@
             );
         }
 
-       @Override
+        @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicCard card = event.getPermanent().getCard();
  
