@@ -1,15 +1,15 @@
 [
-   new MagicPermanentActivation(
+    new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Removal),
         "Gain Life"
-   ) {
+    ) {
         @Override
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
-         return [
+            return [
                 new MagicPayManaCostEvent(source,"{W}"),
                 new MagicTapEvent(source),
                 new MagicSacrificePermanentEvent(source,SACRIFICE_CLERIC)
-            ];         
+            ];
         }
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
@@ -34,11 +34,11 @@
     ) {
         @Override
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
-         return [
+            return [
                 new MagicPayManaCostEvent(source,"{B}"),
                 new MagicTapEvent(source),
                 new MagicSacrificePermanentEvent(source,SACRIFICE_CLERIC)
-            ];         
+            ];
         }
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {

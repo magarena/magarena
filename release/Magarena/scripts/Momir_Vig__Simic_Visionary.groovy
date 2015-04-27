@@ -41,7 +41,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             for (final MagicCard card : event.getPlayer().getLibrary().getCardsFromTop(1)) {
                 game.doAction(new RevealAction(card));
-       
+
                 game.doAction(new RemoveCardAction(
                     card,
                     MagicLocationType.OwnersLibrary
@@ -50,10 +50,10 @@
                     card,
                     MagicLocationType.OwnersLibrary,
                     card.hasType(MagicType.Creature) ?
-                      MagicLocationType.OwnersHand :
-                      MagicLocationType.OwnersLibrary
-                ));       
-            }      
+                        MagicLocationType.OwnersHand :
+                        MagicLocationType.OwnersLibrary
+                ));
+            }
         }
     }
 ]

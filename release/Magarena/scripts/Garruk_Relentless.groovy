@@ -12,7 +12,7 @@ def ABILITY2 = MagicRuleEventAction.create("Put a 2/2 green Wolf creature token 
         public void modGame(final MagicPermanent source, final MagicGame game) {
             game.doAction(new PutStateTriggerOnStackAction(
                  EFFECT.getEvent(source)
-            ));               
+            ));
         }
     },
     new MagicPlaneswalkerActivation(0) {
@@ -36,7 +36,7 @@ def ABILITY2 = MagicRuleEventAction.create("Put a 2/2 green Wolf creature token 
     new MagicPlaneswalkerActivation(0) {
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-             return ABILITY2.getEvent(source);
+            return ABILITY2.getEvent(source);
         }
     }
 ]

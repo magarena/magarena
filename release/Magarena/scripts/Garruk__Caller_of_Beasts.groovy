@@ -30,12 +30,12 @@
     new MagicPlaneswalkerActivation(-3) {
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-             return new MagicEvent(
+            return new MagicEvent(
                 source,
                 this,
                 "PN may put a green creature card from his or her hand onto the battlefield."
             );
-       }
+        }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.addEvent(new MagicPutOntoBattlefieldEvent(

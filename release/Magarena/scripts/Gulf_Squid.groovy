@@ -10,8 +10,8 @@
             );
         }
 
-         @Override
-         public void executeEvent(final MagicGame game, final MagicEvent event) {
+        @Override
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
                 LAND_YOU_CONTROL.filter(it) each {
                     final MagicPermanent land ->

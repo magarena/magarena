@@ -19,7 +19,7 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-             if (event.isYes()) {
+            if (event.isYes()) {
                 game.doAction(new ChangeCountersAction(event.getPermanent(),MagicCounterType.PlusOne,event.getRefInt()));
             }
         }

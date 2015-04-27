@@ -10,12 +10,12 @@ def AB1 = MagicRuleEventAction.create("Put a 1/1 black Wolf creature token with 
     new MagicPlaneswalkerActivation(-1) {
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-             return new MagicEvent(
+            return new MagicEvent(
                 source,
                 this,
                 "Sacrifice a creature. If you do, search your library for a creature card, reveal it, put it into your hand, then shuffle your library."
             );
-       }
+        }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicEvent sac = new MagicSacrificePermanentEvent(event.getSource(),event.getPlayer(),SACRIFICE_CREATURE);

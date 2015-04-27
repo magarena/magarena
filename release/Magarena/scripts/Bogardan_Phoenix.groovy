@@ -11,7 +11,7 @@
                 MagicEvent.NONE;
         }
 
-       @Override
+        @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicCard card = event.getPermanent().getCard();
             if (card.isInGraveyard()) {
@@ -32,7 +32,7 @@
                 MagicEvent.NONE;
         }
 
-       @Override
+        @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicCard card = event.getPermanent().getCard();
             if (card.isInGraveyard()) {

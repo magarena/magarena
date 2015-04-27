@@ -20,7 +20,7 @@
     new MagicPlaneswalkerActivation(-2) {
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-             return new MagicEvent(
+            return new MagicEvent(
                 source,
                 NEG_TARGET_CREATURE,
                 MagicExileTargetPicker.create(),

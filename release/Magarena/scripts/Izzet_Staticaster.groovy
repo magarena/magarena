@@ -9,7 +9,7 @@
             return [new MagicTapEvent(source)];
         }
         @Override
-         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
+        public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
                 NEG_TARGET_CREATURE,

@@ -4,7 +4,7 @@
         public MagicTriggerType getType() {
             return MagicTriggerType.WhenChampioned;
         }
-         
+
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final ExileLinkAction action) {
             return action.source == permanent && action.permanent.hasSubType(MagicSubType.Faerie) ?
@@ -17,8 +17,8 @@
                 MagicEvent.NONE;
         }
 
-         @Override
-         public void executeEvent(final MagicGame game, final MagicEvent event) {
+        @Override
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
                 LAND_YOU_CONTROL.filter(it) each {
                     final MagicPermanent land ->

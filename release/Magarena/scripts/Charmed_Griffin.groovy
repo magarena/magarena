@@ -6,7 +6,7 @@ def ARTIFACT_OR_ENCHANTMENT_FROM_HAND = new MagicCardFilterImpl() {
         return targetType == MagicTargetType.Hand;
     }
 };
- 
+
 def AN_ARTIFACT_OR_ENCHANTMENT_FROM_HAND = new MagicTargetChoice(
     ARTIFACT_OR_ENCHANTMENT_FROM_HAND,  
     MagicTargetHint.None,

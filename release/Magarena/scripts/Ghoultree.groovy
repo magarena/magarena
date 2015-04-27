@@ -1,5 +1,5 @@
 [
-     new MagicCardActivation(
+    new MagicCardActivation(
         [MagicCondition.CARD_CONDITION],
         new MagicActivationHints(MagicTiming.Main, true),
         "Cast"
@@ -11,7 +11,7 @@
 
         @Override
         public Iterable<MagicEvent> getCostEvent(final MagicCard source) {
-            final int n = source.getController().filterCards(CREATURE_CARD_FROM_GRAVEYARD).size();    
+            final int n = source.getController().filterCards(CREATURE_CARD_FROM_GRAVEYARD).size();
             return [
                 new MagicPayManaCostEvent(
                     source,

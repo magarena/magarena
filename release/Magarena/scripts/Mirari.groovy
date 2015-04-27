@@ -19,7 +19,6 @@
             if (event.isYes()) {
                 game.doAction(new CopyCardOnStackAction(event.getPlayer(),event.getRefCardOnStack()));
             }
-           
         }
     }
 ]

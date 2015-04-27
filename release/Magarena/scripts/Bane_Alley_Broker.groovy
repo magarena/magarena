@@ -47,7 +47,7 @@ def ExileCard = {
                 MagicGraveyardTargetPicker.ExileOwn,
                 ExileCard,
                 "PN exiles a card\$ from his or her hand."
-           ));
+            ));
         }
     },
     new MagicPermanentActivation(

@@ -8,7 +8,7 @@ def action = {
 [
     new MagicWhenOtherSpellIsCastTrigger() {
         @Override
-       public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack cardOnStack) {
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack cardOnStack) {
             return permanent.isEnemy(cardOnStack) && cardOnStack.hasType(MagicType.Creature) ?
                 new MagicEvent(
                     permanent,
