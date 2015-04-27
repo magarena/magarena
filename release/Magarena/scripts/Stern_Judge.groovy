@@ -1,5 +1,5 @@
 [
-   new MagicPermanentActivation(
+    new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Removal),
         "-Life"
     ) {
