@@ -34,6 +34,7 @@ public class MagicSearchToLocationEvent extends MagicEvent {
     
     @Override
     public void onAddEvent(final MagicGame game) {
+        // reveal library so that search can choose the actual cards
         game.doAction(new AIRevealAction(getPlayer().getLibrary()));
     }
 
@@ -42,7 +43,7 @@ public class MagicSearchToLocationEvent extends MagicEvent {
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             // choice could be MagicMayChoice or MagicTargetChoice or MagicFromCardListChoice
             if (event.isNo()) {
-                game.doAction(AIRevealAction.Hide(event.getPlayer().getLibrary()));
+                // do nothing
             } else if (event.getChosen()[0] instanceof MagicCardChoiceResult) {
                 game.doAction(new ShuffleLibraryAction(event.getPlayer()));
                 event.processChosenCards(game, new MagicCardAction() {
@@ -64,6 +65,8 @@ public class MagicSearchToLocationEvent extends MagicEvent {
                     }
                 });
             }
+            // hide back all the cards in the library
+            game.doAction(AIRevealAction.Hide(event.getPlayer().getLibrary()));
         }
     };
 }

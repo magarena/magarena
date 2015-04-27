@@ -17,7 +17,6 @@ public class ShuffleLibraryAction extends MagicAction {
     public void doAction(final MagicGame game) {
         oldLibrary=new MagicCardList(player.getLibrary());
         player.getLibrary().shuffle();
-        game.doAction(AIRevealAction.Hide(player.getLibrary()));
     }
 
     @Override
