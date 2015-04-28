@@ -7,6 +7,6 @@ subtype=Kraken
 cost={3}{U}{U}
 pt=5/5
 ability=Hexproof;\
-        Lieutenant — As long as you control your commander, SN gets +2/+2 and has "Whenever SN becomes blocked, you may draw two cards."
+        As long as you control your commander, SN gets +2/+2 and has "Whenever SN becomes blocked, you may draw two cards."
 timing=main
 oracle=Hexproof\nLieutenant — As long as you control your commander, Stormsurge Kraken gets +2/+2 and has "Whenever Stormsurge Kraken becomes blocked, you may draw two cards."

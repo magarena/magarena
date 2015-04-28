@@ -7,6 +7,6 @@ subtype=Beast
 cost={4}{G}{G}
 pt=5/5
 ability=Trample;\
-        Lieutenant — As long as you control your commander, SN gets +2/+2 and other creatures you control get +2/+2 and have trample.
+        As long as you control your commander, SN gets +2/+2 and other creatures you control get +2/+2 and have trample.
 timing=main
 oracle=Trample\nLieutenant — As long as you control your commander, Thunderfoot Baloth gets +2/+2 and other creatures you control get +2/+2 and have trample.

@@ -7,6 +7,6 @@ subtype=Aura
 cost={1}{W}{U}
 ability=Enchant creature;\
         Enchanted creature doesn't untap during its controller's untap step.;\
-        Forecast — {W}{U}, Reveal SN from your hand: Tap target creature.
+        {W}{U}, Reveal SN from your hand: Tap target creature.
 timing=aura
 oracle=Enchant creature\nEnchanted creature doesn't untap during its controller's untap step.\nForecast — {W}{U}, Reveal Plumes of Peace from your hand: Tap target creature.

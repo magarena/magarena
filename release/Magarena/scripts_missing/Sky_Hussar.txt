@@ -8,6 +8,6 @@ cost={3}{W}{U}
 pt=4/3
 ability=Flying;\
         When SN enters the battlefield, untap all creatures you control.;\
-        Forecast — Tap two untapped white and/or blue creatures you control, Reveal SN from your hand: Draw a card.
+        Tap two untapped white and/or blue creatures you control, Reveal SN from your hand: Draw a card.
 timing=main
 oracle=Flying\nWhen Sky Hussar enters the battlefield, untap all creatures you control.\nForecast — Tap two untapped white and/or blue creatures you control, Reveal Sky Hussar from your hand: Draw a card.

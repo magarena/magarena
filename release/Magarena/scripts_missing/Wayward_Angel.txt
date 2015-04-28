@@ -7,6 +7,6 @@ subtype=Angel,Horror
 cost={4}{W}{W}
 pt=4/4
 ability=Flying, vigilance;\
-        Threshold — As long as seven or more cards are in your graveyard, SN gets +3/+3, is black, has trample, and has "At the beginning of your upkeep, sacrifice a creature."
+        As long as seven or more cards are in your graveyard, SN gets +3/+3, is black, has trample, and has "At the beginning of your upkeep, sacrifice a creature."
 timing=main
 oracle=Flying, vigilance\nThreshold — As long as seven or more cards are in your graveyard, Wayward Angel gets +3/+3, is black, has trample, and has "At the beginning of your upkeep, sacrifice a creature."
