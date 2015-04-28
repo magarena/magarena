@@ -5,5 +5,5 @@ rarity=C
 type=Artifact
 cost={1}
 ability=You may look at the top card of your library and at face-down creatures you don't control.
-timing=main
+timing=artifact
 oracle=You may look at the top card of your library and at face-down creatures you don't control.

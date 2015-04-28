@@ -5,5 +5,5 @@ rarity=R
 type=Artifact
 cost={2}
 ability={T}: Target permanent becomes the color of your choice until end of turn.
-timing=main
+timing=artifact
 oracle={T}: Target permanent becomes the color of your choice until end of turn.

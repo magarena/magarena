@@ -6,5 +6,5 @@ type=Land
 ability=SN enters the battlefield tapped.;\
         When SN enters the battlefield, sacrifice it unless you return an untapped Mountain you control to its owner's hand.;\
         {T}: Add {1}{R} to your mana pool.
-timing=main
+timing=land
 oracle=Dormant Volcano enters the battlefield tapped.\nWhen Dormant Volcano enters the battlefield, sacrifice it unless you return an untapped Mountain you control to its owner's hand.\n{T}: Add {1}{R} to your mana pool.

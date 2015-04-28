@@ -5,5 +5,5 @@ rarity=R
 type=Enchantment
 cost={3}{W}{W}
 ability=Whenever a creature you control deals combat damage, you gain that much life.
-timing=main
+timing=enchantment
 oracle=Whenever a creature you control deals combat damage, you gain that much life.

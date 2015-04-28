@@ -5,5 +5,5 @@ rarity=R
 type=Artifact
 cost={4}
 ability=At the beginning of each player's end step, if that player has 5 or less life, SN deals 2 damage to him or her.
-timing=main
+timing=artifact
 oracle=At the beginning of each player's end step, if that player has 5 or less life, Razor Pendulum deals 2 damage to him or her.

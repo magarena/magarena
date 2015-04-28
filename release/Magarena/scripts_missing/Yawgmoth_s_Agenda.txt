@@ -7,5 +7,5 @@ cost={3}{B}{B}
 ability=You can't cast more than one spell each turn.;\
         You may play cards from your graveyard.;\
         If a card would be put into your graveyard from anywhere, exile it instead.
-timing=main
+timing=enchantment
 oracle=You can't cast more than one spell each turn.\nYou may play cards from your graveyard.\nIf a card would be put into your graveyard from anywhere, exile it instead.

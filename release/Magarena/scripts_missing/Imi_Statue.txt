@@ -5,5 +5,5 @@ rarity=R
 type=Artifact
 cost={3}
 ability=Players can't untap more than one artifact during their untap steps.
-timing=main
+timing=artifact
 oracle=Players can't untap more than one artifact during their untap steps.

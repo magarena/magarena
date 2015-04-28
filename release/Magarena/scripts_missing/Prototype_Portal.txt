@@ -6,5 +6,5 @@ type=Artifact
 cost={4}
 ability=When SN enters the battlefield, you may exile an artifact card from your hand.;\
         {X}, {T}: Put a token that's a copy of the exiled card onto the battlefield. X is the converted mana cost of that card.
-timing=main
+timing=artifact
 oracle=Imprint — When Prototype Portal enters the battlefield, you may exile an artifact card from your hand.\n{X}, {T}: Put a token that's a copy of the exiled card onto the battlefield. X is the converted mana cost of that card.

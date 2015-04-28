@@ -5,5 +5,5 @@ rarity=R
 type=Artifact
 cost={5}
 ability=If damage would be dealt to a player, that player exiles that many cards from the top of his or her library instead.
-timing=main
+timing=artifact
 oracle=If damage would be dealt to a player, that player exiles that many cards from the top of his or her library instead.

@@ -7,5 +7,5 @@ subtype=Aura
 cost={U}
 ability=Enchant creature;\
         Enchanted creature has phasing and can't be blocked except by Walls.
-timing=main
+timing=aura
 oracle=Enchant creature\nEnchanted creature has phasing and can't be blocked except by Walls.

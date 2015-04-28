@@ -7,5 +7,5 @@ subtype=Aura
 cost={1}{U}
 ability=Enchant creature;\
         Enchanted creature can't attack or block, and its activated abilities can't be activated. Its controller may exile three cards from his or her graveyard for that player to ignore this effect until end of turn.
-timing=main
+timing=aura
 oracle=Enchant creature\nEnchanted creature can't attack or block, and its activated abilities can't be activated. Its controller may exile three cards from his or her graveyard for that player to ignore this effect until end of turn.

@@ -5,5 +5,5 @@ rarity=U
 type=Artifact
 cost={4}
 ability={T}: Add {3} to your mana pool.
-timing=main
+timing=artifact
 oracle={T}: Add {3} to your mana pool.

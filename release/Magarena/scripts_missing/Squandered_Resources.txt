@@ -5,5 +5,5 @@ rarity=R
 type=Enchantment
 cost={B}{G}
 ability=Sacrifice a land: Add to your mana pool one mana of any type the sacrificed land could produce.
-timing=main
+timing=enchantment
 oracle=Sacrifice a land: Add to your mana pool one mana of any type the sacrificed land could produce.

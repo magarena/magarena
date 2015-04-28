@@ -8,5 +8,5 @@ cost={1}
 ability=Equipped creature can't be blocked.;\
         Whenever equipped creature is dealt damage, destroy it.;\
         Equip {3}
-timing=main
+timing=equipment
 oracle=Equipped creature can't be blocked.\nWhenever equipped creature is dealt damage, destroy it.\nEquip {3}

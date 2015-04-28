@@ -7,5 +7,5 @@ subtype=Aura
 cost={2}{U}{U}
 ability=Enchant land;\
         Enchanted land has "{T}, Discard a card: Gain control of target creature until end of turn."
-timing=main
+timing=aura
 oracle=Enchant land\nEnchanted land has "{T}, Discard a card: Gain control of target creature until end of turn."

@@ -5,5 +5,5 @@ rarity=R
 type=Artifact
 cost={3}
 ability=You may spend white mana as though it were red mana.
-timing=main
+timing=artifact
 oracle=You may spend white mana as though it were red mana.

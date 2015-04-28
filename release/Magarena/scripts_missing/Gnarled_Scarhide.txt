@@ -9,5 +9,5 @@ pt=2/1
 ability=Bestow {3}{B};\
         SN can't block.;\
         Enchanted creature gets +2/+1 and can't block.
-timing=main
+timing=enchantment
 oracle=Bestow {3}{B}\nGnarled Scarhide can't block.\nEnchanted creature gets +2/+1 and can't block.

@@ -8,5 +8,5 @@ cost={3}
 ability=When SN enters the battlefield, attach it to target creature you control.;\
         Equipped creature gets +3/+1.;\
         Equip—Sacrifice an artifact.
-timing=main
+timing=equipment
 oracle=When Piston Sledge enters the battlefield, attach it to target creature you control.\nEquipped creature gets +3/+1.\nEquip—Sacrifice an artifact.

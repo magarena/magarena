@@ -5,5 +5,5 @@ rarity=R
 type=Enchantment
 cost={3}{U}
 ability=Sorcery spells cost {3} more to cast.
-timing=main
+timing=enchantment
 oracle=Sorcery spells cost {3} more to cast.

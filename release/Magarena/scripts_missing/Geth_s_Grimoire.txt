@@ -5,5 +5,5 @@ rarity=U
 type=Artifact
 cost={4}
 ability=Whenever an opponent discards a card, you may draw a card.
-timing=main
+timing=artifact
 oracle=Whenever an opponent discards a card, you may draw a card.

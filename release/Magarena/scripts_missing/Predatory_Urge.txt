@@ -7,5 +7,5 @@ subtype=Aura
 cost={3}{G}
 ability=Enchant creature;\
         Enchanted creature has "{T}: This creature deals damage equal to its power to target creature. That creature deals damage equal to its power to this creature."
-timing=main
+timing=aura
 oracle=Enchant creature\nEnchanted creature has "{T}: This creature deals damage equal to its power to target creature. That creature deals damage equal to its power to this creature."

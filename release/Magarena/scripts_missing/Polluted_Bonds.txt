@@ -5,5 +5,5 @@ rarity=R
 type=Enchantment
 cost={3}{B}{B}
 ability=Whenever a land enters the battlefield under an opponent's control, that player loses 2 life and you gain 2 life.
-timing=main
+timing=enchantment
 oracle=Whenever a land enters the battlefield under an opponent's control, that player loses 2 life and you gain 2 life.

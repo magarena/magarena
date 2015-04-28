@@ -6,5 +6,5 @@ type=Enchantment
 cost={2}{W}{W}
 ability=As SN enters the battlefield, choose a color.;\
         If an instant or sorcery spell of the chosen color would deal damage to you, it deals that damage to its controller instead.
-timing=main
+timing=enchantment
 oracle=As Harsh Judgment enters the battlefield, choose a color.\nIf an instant or sorcery spell of the chosen color would deal damage to you, it deals that damage to its controller instead.

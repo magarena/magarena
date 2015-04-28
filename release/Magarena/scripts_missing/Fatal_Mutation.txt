@@ -7,5 +7,5 @@ subtype=Aura
 cost={B}
 ability=Enchant creature;\
         When enchanted creature is turned face up, destroy it. It can't be regenerated.
-timing=main
+timing=aura
 oracle=Enchant creature\nWhen enchanted creature is turned face up, destroy it. It can't be regenerated.

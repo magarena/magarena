@@ -9,5 +9,5 @@ pt=1/5
 ability=Draft SN face up.;\
         Each player passes the last card from each booster pack to a player who drafted a card named SN.;\
         {T}: Put target card from your graveyard on the bottom of your library.
-timing=main
+timing=artifact
 oracle=Draft Canal Dredger face up.\nEach player passes the last card from each booster pack to a player who drafted a card named Canal Dredger.\n{T}: Put target card from your graveyard on the bottom of your library.

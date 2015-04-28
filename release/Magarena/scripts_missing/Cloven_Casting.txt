@@ -5,5 +5,5 @@ rarity=R
 type=Enchantment
 cost={5}{U}{R}
 ability=Whenever you cast a multicolored instant or sorcery spell, you may pay {1}. If you do, copy that spell. You may choose new targets for the copy.
-timing=main
+timing=enchantment
 oracle=Whenever you cast a multicolored instant or sorcery spell, you may pay {1}. If you do, copy that spell. You may choose new targets for the copy.

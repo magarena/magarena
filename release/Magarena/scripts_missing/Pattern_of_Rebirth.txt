@@ -7,5 +7,5 @@ subtype=Aura
 cost={3}{G}
 ability=Enchant creature;\
         When enchanted creature dies, that creature's controller may search his or her library for a creature card and put that card onto the battlefield. If that player does, he or she shuffles his or her library.
-timing=main
+timing=aura
 oracle=Enchant creature\nWhen enchanted creature dies, that creature's controller may search his or her library for a creature card and put that card onto the battlefield. If that player does, he or she shuffles his or her library.

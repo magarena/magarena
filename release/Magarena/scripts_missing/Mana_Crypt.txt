@@ -6,5 +6,5 @@ type=Artifact
 cost={0}
 ability=At the beginning of your upkeep, flip a coin. If you lose the flip, SN deals 3 damage to you.;\
         {T}: Add {2} to your mana pool.
-timing=main
+timing=artifact
 oracle=At the beginning of your upkeep, flip a coin. If you lose the flip, Mana Crypt deals 3 damage to you.\n{T}: Add {2} to your mana pool.

@@ -8,5 +8,5 @@ cost={3}
 ability=When SN enters the battlefield, search your library for a land card, exile it, then shuffle your library.;\
         Equipped creature gets +1/+1 for each land on the battlefield with the same name as the exiled card.;\
         Equip {3}
-timing=main
+timing=equipment
 oracle=Imprint — When Strata Scythe enters the battlefield, search your library for a land card, exile it, then shuffle your library.\nEquipped creature gets +1/+1 for each land on the battlefield with the same name as the exiled card.\nEquip {3}

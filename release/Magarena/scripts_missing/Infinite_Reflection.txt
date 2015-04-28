@@ -8,5 +8,5 @@ cost={5}{U}
 ability=Enchant creature;\
         When SN enters the battlefield attached to a creature, each other nontoken creature you control becomes a copy of that creature.;\
         Nontoken creatures you control enter the battlefield as a copy of enchanted creature.
-timing=main
+timing=aura
 oracle=Enchant creature\nWhen Infinite Reflection enters the battlefield attached to a creature, each other nontoken creature you control becomes a copy of that creature.\nNontoken creatures you control enter the battlefield as a copy of enchanted creature.

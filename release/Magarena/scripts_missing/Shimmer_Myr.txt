@@ -8,5 +8,5 @@ cost={3}
 pt=2/2
 ability=Flash;\
         You may cast artifact cards as though they had flash.
-timing=main
+timing=artifact
 oracle=Flash\nYou may cast artifact cards as though they had flash.

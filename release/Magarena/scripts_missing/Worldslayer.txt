@@ -7,5 +7,5 @@ subtype=Equipment
 cost={5}
 ability=Whenever equipped creature deals combat damage to a player, destroy all permanents other than SN.;\
         Equip {5}
-timing=main
+timing=equipment
 oracle=Whenever equipped creature deals combat damage to a player, destroy all permanents other than Worldslayer.\nEquip {5}

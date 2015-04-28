@@ -7,6 +7,6 @@ subtype=Human,Nomad,Horror
 cost={2}{W}{W}
 pt=3/3
 ability=Vigilance;\
-        As long as seven or more cards are in your graveyard, SN gets +1/+1, is black, and has "{2}{B}, {T}: Destroy target white creature."
+        Threshold — As long as seven or more cards are in your graveyard, SN gets +1/+1, is black, and has "{2}{B}, {T}: Destroy target white creature."
 timing=main
 oracle=Vigilance\nThreshold — As long as seven or more cards are in your graveyard, Possessed Nomad gets +1/+1, is black, and has "{2}{B}, {T}: Destroy target white creature."

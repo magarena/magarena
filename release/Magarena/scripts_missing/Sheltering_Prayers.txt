@@ -5,5 +5,5 @@ rarity=R
 type=Enchantment
 cost={W}
 ability=Basic lands each player controls have shroud as long as that player controls three or fewer lands.
-timing=main
+timing=enchantment
 oracle=Basic lands each player controls have shroud as long as that player controls three or fewer lands.

@@ -5,5 +5,5 @@ rarity=R
 type=Artifact
 cost={4}
 ability=You may cast nonland cards as though they had flash.
-timing=main
+timing=artifact
 oracle=You may cast nonland cards as though they had flash.

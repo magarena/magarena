@@ -8,5 +8,5 @@ cost={1}{U}
 ability=Enchant creature;\
         Enchanted creature has flying.;\
         Sacrifice SN: Return enchanted creature to its owner's hand.
-timing=main
+timing=aura
 oracle=Enchant creature\nEnchanted creature has flying.\nSacrifice Phantom Wings: Return enchanted creature to its owner's hand.

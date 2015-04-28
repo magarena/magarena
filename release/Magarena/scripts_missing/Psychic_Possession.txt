@@ -8,5 +8,5 @@ cost={2}{U}{U}
 ability=Enchant opponent;\
         Skip your draw step.;\
         Whenever enchanted opponent draws a card, you may draw a card.
-timing=main
+timing=aura
 oracle=Enchant opponent\nSkip your draw step.\nWhenever enchanted opponent draws a card, you may draw a card.

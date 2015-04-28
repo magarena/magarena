@@ -5,5 +5,5 @@ rarity=R
 type=Artifact
 cost={2}
 ability={2}, {T}: Draw a card if you have seven or more cards in hand.
-timing=main
+timing=artifact
 oracle={2}, {T}: Draw a card if you have seven or more cards in hand.

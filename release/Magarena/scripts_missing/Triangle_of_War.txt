@@ -5,5 +5,5 @@ rarity=U
 type=Artifact
 cost={1}
 ability={2}, Sacrifice SN: Target creature you control fights target creature an opponent controls.
-timing=main
+timing=artifact
 oracle={2}, Sacrifice Triangle of War: Target creature you control fights target creature an opponent controls.

@@ -5,5 +5,5 @@ rarity=R
 type=Enchantment
 cost={2}{B}
 ability=Whenever a permanent is returned to a player's hand, that player discards a card.
-timing=main
+timing=enchantment
 oracle=Whenever a permanent is returned to a player's hand, that player discards a card.

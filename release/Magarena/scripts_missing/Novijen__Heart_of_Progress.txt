@@ -5,5 +5,5 @@ rarity=U
 type=Land
 ability={T}: Add {1} to your mana pool.;\
         {G}{U}, {T}: Put a +1/+1 counter on each creature that entered the battlefield this turn.
-timing=main
+timing=land
 oracle={T}: Add {1} to your mana pool.\n{G}{U}, {T}: Put a +1/+1 counter on each creature that entered the battlefield this turn.

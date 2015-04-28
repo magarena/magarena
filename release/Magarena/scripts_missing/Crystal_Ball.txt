@@ -5,5 +5,5 @@ rarity=U
 type=Artifact
 cost={3}
 ability={1}, {T}: Scry 2.
-timing=main
+timing=artifact
 oracle={1}, {T}: Scry 2.

@@ -5,5 +5,5 @@ rarity=R
 type=Artifact
 cost={2}
 ability={2}, {T}, Sacrifice SN: Destroy all nontoken permanents originally printed in the Homelands expansion. They can't be regenerated.
-timing=main
+timing=artifact
 oracle={2}, {T}, Sacrifice Apocalypse Chime: Destroy all nontoken permanents originally printed in the Homelands expansion. They can't be regenerated.

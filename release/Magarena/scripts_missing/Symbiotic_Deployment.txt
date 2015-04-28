@@ -6,5 +6,5 @@ type=Enchantment
 cost={2}{G}
 ability=Skip your draw step.;\
         {1}, Tap two untapped creatures you control: Draw a card.
-timing=main
+timing=enchantment
 oracle=Skip your draw step.\n{1}, Tap two untapped creatures you control: Draw a card.

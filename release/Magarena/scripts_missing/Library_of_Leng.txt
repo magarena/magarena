@@ -6,5 +6,5 @@ type=Artifact
 cost={1}
 ability=You have no maximum hand size.;\
         If an effect causes you to discard a card, discard it, but you may put it on top of your library instead of into your graveyard.
-timing=main
+timing=artifact
 oracle=You have no maximum hand size.\nIf an effect causes you to discard a card, discard it, but you may put it on top of your library instead of into your graveyard.

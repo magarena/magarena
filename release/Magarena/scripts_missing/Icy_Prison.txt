@@ -7,5 +7,5 @@ cost={U}{U}
 ability=When SN enters the battlefield, exile target creature.;\
         At the beginning of your upkeep, sacrifice SN unless any player pays {3}.;\
         When SN leaves the battlefield, return the exiled card to the battlefield under its owner's control.
-timing=main
+timing=enchantment
 oracle=When Icy Prison enters the battlefield, exile target creature.\nAt the beginning of your upkeep, sacrifice Icy Prison unless any player pays {3}.\nWhen Icy Prison leaves the battlefield, return the exiled card to the battlefield under its owner's control.

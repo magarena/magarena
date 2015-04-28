@@ -8,5 +8,5 @@ cost={2}{W}
 ability=Flash;\
         Enchant creature;\
         Creatures you control that are enchanted get +1/+1.
-timing=main
+timing=aura
 oracle=Flash\nEnchant creature\nCreatures you control that are enchanted get +1/+1.

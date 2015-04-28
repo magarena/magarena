@@ -5,5 +5,5 @@ rarity=R
 type=Artifact
 cost={5}
 ability=Whenever a creature dies, if another creature is on the battlefield, return the first card to the battlefield under its owner's control at the beginning of the next end step.
-timing=main
+timing=artifact
 oracle=Whenever a creature dies, if another creature is on the battlefield, return the first card to the battlefield under its owner's control at the beginning of the next end step.

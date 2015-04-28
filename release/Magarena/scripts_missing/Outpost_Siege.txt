@@ -7,5 +7,5 @@ cost={3}{R}
 ability=As SN enters the battlefield, choose Khans or Dragons. \
         (1) Khans — At the beginning of your upkeep, exile the top card of your library. Until end of turn, you may play that card. \
         (2) Dragons — Whenever a creature you control leaves the battlefield, SN deals 1 damage to target creature or player.
-timing=main
+timing=enchantment
 oracle=As Outpost Siege enters the battlefield, choose Khans or Dragons.\n• Khans — At the beginning of your upkeep, exile the top card of your library. Until end of turn, you may play that card.\n• Dragons — Whenever a creature you control leaves the battlefield, Outpost Siege deals 1 damage to target creature or player.

@@ -7,5 +7,5 @@ subtype=Equipment
 cost={2}
 ability=Equipped creature can block an additional creature.;\
         Equip {1}
-timing=main
+timing=equipment
 oracle=Equipped creature can block an additional creature.\nEquip {1}

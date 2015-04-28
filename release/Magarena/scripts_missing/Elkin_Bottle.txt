@@ -5,5 +5,5 @@ rarity=R
 type=Artifact
 cost={3}
 ability={3}, {T}: Exile the top card of your library. Until the beginning of your next upkeep, you may play that card.
-timing=main
+timing=artifact
 oracle={3}, {T}: Exile the top card of your library. Until the beginning of your next upkeep, you may play that card.

@@ -6,5 +6,5 @@ type=Land
 ability=SN enters the battlefield tapped.;\
         {T}: Add {B} to your mana pool.;\
         {T}, Sacrifice SN: Add {U}{R} to your mana pool.
-timing=main
+timing=land
 oracle=Sulfur Vent enters the battlefield tapped.\n{T}: Add {B} to your mana pool.\n{T}, Sacrifice Sulfur Vent: Add {U}{R} to your mana pool.

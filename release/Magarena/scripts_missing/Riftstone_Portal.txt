@@ -5,5 +5,5 @@ rarity=U
 type=Land
 ability={T}: Add {1} to your mana pool.;\
         As long as SN is in your graveyard, lands you control have "{T}: Add {G} or {W} to your mana pool."
-timing=main
+timing=land
 oracle={T}: Add {1} to your mana pool.\nAs long as Riftstone Portal is in your graveyard, lands you control have "{T}: Add {G} or {W} to your mana pool."

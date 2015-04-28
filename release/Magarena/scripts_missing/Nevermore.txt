@@ -6,5 +6,5 @@ type=Enchantment
 cost={1}{W}{W}
 ability=As SN enters the battlefield, name a nonland card.;\
         The named card can't be cast.
-timing=main
+timing=enchantment
 oracle=As Nevermore enters the battlefield, name a nonland card.\nThe named card can't be cast.

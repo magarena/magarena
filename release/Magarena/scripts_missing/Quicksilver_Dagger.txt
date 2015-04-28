@@ -7,5 +7,5 @@ subtype=Aura
 cost={1}{U}{R}
 ability=Enchant creature;\
         Enchanted creature has "{T}: This creature deals 1 damage to target player. You draw a card."
-timing=main
+timing=aura
 oracle=Enchant creature\nEnchanted creature has "{T}: This creature deals 1 damage to target player. You draw a card."

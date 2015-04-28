@@ -5,5 +5,5 @@ rarity=C
 type=Artifact
 cost={1}
 ability={1}, {T}, Sacrifice SN: Add one mana of any color to your mana pool. Draw a card.
-timing=main
+timing=artifact
 oracle={1}, {T}, Sacrifice Chromatic Sphere: Add one mana of any color to your mana pool. Draw a card.

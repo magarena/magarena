@@ -7,5 +7,5 @@ subtype=Golem
 cost={6}
 pt=0/0
 ability=Modular—Sunburst
-timing=main
+timing=artifact
 oracle=Modular—Sunburst

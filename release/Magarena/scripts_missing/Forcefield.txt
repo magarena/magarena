@@ -5,5 +5,5 @@ rarity=R
 type=Artifact
 cost={3}
 ability={1}: The next time an unblocked creature of your choice would deal combat damage to you this turn, prevent all but 1 of that damage.
-timing=main
+timing=artifact
 oracle={1}: The next time an unblocked creature of your choice would deal combat damage to you this turn, prevent all but 1 of that damage.

@@ -5,5 +5,5 @@ rarity=R
 type=World,Enchantment
 cost={2}{B}{B}
 ability=At the beginning of each player's upkeep, that player may sacrifice a creature. If that player doesn't, he or she loses 5 life and you sacrifice SN.
-timing=main
+timing=enchantment
 oracle=At the beginning of each player's upkeep, that player may sacrifice a creature. If that player doesn't, he or she loses 5 life and you sacrifice Pillar Tombs of Aku.

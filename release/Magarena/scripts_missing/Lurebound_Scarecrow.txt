@@ -8,5 +8,5 @@ cost={3}
 pt=4/4
 ability=As SN enters the battlefield, choose a color.;\
         When you control no permanents of the chosen color, sacrifice SN.
-timing=main
+timing=artifact
 oracle=As Lurebound Scarecrow enters the battlefield, choose a color.\nWhen you control no permanents of the chosen color, sacrifice Lurebound Scarecrow.

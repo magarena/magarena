@@ -7,5 +7,5 @@ cost={6}
 ability=Convoke;\
         As SN enters the battlefield, choose a creature type.;\
         Creatures you control of the chosen type get +2/+2.
-timing=main
+timing=artifact
 oracle=Convoke\nAs Obelisk of Urd enters the battlefield, choose a creature type.\nCreatures you control of the chosen type get +2/+2.

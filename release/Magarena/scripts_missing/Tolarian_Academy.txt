@@ -4,5 +4,5 @@ value=2.500
 rarity=M
 type=Legendary,Land
 ability={T}: Add {U} to your mana pool for each artifact you control.
-timing=main
+timing=land
 oracle={T}: Add {U} to your mana pool for each artifact you control.

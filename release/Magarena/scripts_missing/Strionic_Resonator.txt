@@ -5,5 +5,5 @@ rarity=R
 type=Artifact
 cost={2}
 ability={2}, {T}: Copy target triggered ability you control. You may choose new targets for the copy.
-timing=main
+timing=artifact
 oracle={2}, {T}: Copy target triggered ability you control. You may choose new targets for the copy.

@@ -9,5 +9,5 @@ ability=Flash;\
         Enchant red or green creature;\
         When SN enters the battlefield, tap enchanted creature.;\
         Enchanted creature doesn't untap during its controller's untap step.
-timing=main
+timing=aura
 oracle=Flash\nEnchant red or green creature\nWhen Encase in Ice enters the battlefield, tap enchanted creature.\nEnchanted creature doesn't untap during its controller's untap step.

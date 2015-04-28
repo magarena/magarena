@@ -6,5 +6,5 @@ type=Enchantment
 cost={1}{W}{W}
 ability=When SN enters the battlefield, it becomes an Aura with enchant creature. Manifest the top card of your library and attach SN to it.;\
         Enchanted creature has flying and lifelink.
-timing=main
+timing=enchantment
 oracle=When Lightform enters the battlefield, it becomes an Aura with enchant creature. Manifest the top card of your library and attach Lightform to it.\nEnchanted creature has flying and lifelink.

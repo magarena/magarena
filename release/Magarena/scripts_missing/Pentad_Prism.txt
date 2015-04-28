@@ -6,5 +6,5 @@ type=Artifact
 cost={2}
 ability=Sunburst;\
         Remove a charge counter from SN: Add one mana of any color to your mana pool.
-timing=main
+timing=artifact
 oracle=Sunburst\nRemove a charge counter from Pentad Prism: Add one mana of any color to your mana pool.

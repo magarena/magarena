@@ -5,5 +5,5 @@ rarity=U
 type=Artifact
 cost={4}
 ability={2}, {T}: Target creature gains islandwalk until end of turn. When that creature dies this turn, destroy SN.
-timing=main
+timing=artifact
 oracle={2}, {T}: Target creature gains islandwalk until end of turn. When that creature dies this turn, destroy Sandals of Abdallah.

@@ -6,5 +6,5 @@ type=Enchantment
 cost={4}{B}{R}
 ability=Players can't gain life.;\
         At the beginning of each player's upkeep, that player loses half his or her life, rounded up.
-timing=main
+timing=enchantment
 oracle=Players can't gain life.\nAt the beginning of each player's upkeep, that player loses half his or her life, rounded up.

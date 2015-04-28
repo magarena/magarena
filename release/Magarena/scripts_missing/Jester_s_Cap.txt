@@ -5,5 +5,5 @@ rarity=R
 type=Artifact
 cost={4}
 ability={2}, {T}, Sacrifice SN: Search target player's library for three cards and exile them. Then that player shuffles his or her library.
-timing=main
+timing=artifact
 oracle={2}, {T}, Sacrifice Jester's Cap: Search target player's library for three cards and exile them. Then that player shuffles his or her library.

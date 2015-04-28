@@ -5,5 +5,5 @@ rarity=R
 type=Enchantment
 cost={3}{U}
 ability=At the beginning of your upkeep, you may exchange control of target nonland permanent you control and target nonland permanent an opponent controls with an equal or lesser converted mana cost.
-timing=main
+timing=enchantment
 oracle=At the beginning of your upkeep, you may exchange control of target nonland permanent you control and target nonland permanent an opponent controls with an equal or lesser converted mana cost.

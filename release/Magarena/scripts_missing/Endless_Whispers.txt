@@ -5,5 +5,5 @@ rarity=R
 type=Enchantment
 cost={2}{B}{B}
 ability=Each creature has "When this creature dies, choose target opponent. That player puts this card from its owner's graveyard onto the battlefield under his or her control at the beginning of the next end step."
-timing=main
+timing=enchantment
 oracle=Each creature has "When this creature dies, choose target opponent. That player puts this card from its owner's graveyard onto the battlefield under his or her control at the beginning of the next end step."

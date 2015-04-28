@@ -7,5 +7,5 @@ cost={2}{U}
 ability=As SN enters the battlefield, choose Khans or Dragons. \
         (1) Khans — At the beginning of your draw step, draw an additional card, then discard a card. \
         (2) Dragons — Spells your opponents cast that target you or a permanent you control cost {2} more to cast.
-timing=main
+timing=enchantment
 oracle=As Monastery Siege enters the battlefield, choose Khans or Dragons.\n• Khans — At the beginning of your draw step, draw an additional card, then discard a card.\n• Dragons — Spells your opponents cast that target you or a permanent you control cost {2} more to cast.

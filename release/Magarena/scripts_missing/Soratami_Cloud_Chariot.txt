@@ -6,5 +6,5 @@ type=Artifact
 cost={5}
 ability={2}: Target creature you control gains flying until end of turn.;\
         {2}: Prevent all combat damage that would be dealt to and dealt by target creature you control this turn.
-timing=main
+timing=artifact
 oracle={2}: Target creature you control gains flying until end of turn.\n{2}: Prevent all combat damage that would be dealt to and dealt by target creature you control this turn.

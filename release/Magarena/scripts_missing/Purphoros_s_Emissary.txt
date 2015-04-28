@@ -9,5 +9,5 @@ pt=3/3
 ability=Bestow {6}{R};\
         SN can't be blocked except by two or more creatures.;\
         Enchanted creature gets +3/+3 and can't be blocked except by two or more creatures.
-timing=main
+timing=enchantment
 oracle=Bestow {6}{R}\nPurphoros's Emissary can't be blocked except by two or more creatures.\nEnchanted creature gets +3/+3 and can't be blocked except by two or more creatures.

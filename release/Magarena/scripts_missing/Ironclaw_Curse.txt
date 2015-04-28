@@ -8,5 +8,5 @@ cost={R}
 ability=Enchant creature;\
         Enchanted creature gets -0/-1.;\
         Enchanted creature can't block creatures with power equal to or greater than the enchanted creature's toughness.
-timing=main
+timing=aura
 oracle=Enchant creature\nEnchanted creature gets -0/-1.\nEnchanted creature can't block creatures with power equal to or greater than the enchanted creature's toughness.

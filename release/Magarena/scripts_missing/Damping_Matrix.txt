@@ -5,5 +5,5 @@ rarity=R
 type=Artifact
 cost={3}
 ability=Activated abilities of artifacts and creatures can't be activated unless they're mana abilities.
-timing=main
+timing=artifact
 oracle=Activated abilities of artifacts and creatures can't be activated unless they're mana abilities.

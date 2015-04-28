@@ -5,5 +5,5 @@ rarity=R
 type=Enchantment
 cost={3}{U}{U}
 ability=Whenever you cast a spell, proliferate.
-timing=main
+timing=enchantment
 oracle=Whenever you cast a spell, proliferate.

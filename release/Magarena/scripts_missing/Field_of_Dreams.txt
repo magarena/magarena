@@ -5,5 +5,5 @@ rarity=R
 type=World,Enchantment
 cost={U}
 ability=Players play with the top card of their libraries revealed.
-timing=main
+timing=enchantment
 oracle=Players play with the top card of their libraries revealed.

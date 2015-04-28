@@ -5,5 +5,5 @@ rarity=U
 type=Enchantment
 cost={2}{W}
 ability=Creatures you control get +0/+1 for each Gate you control and have vigilance.
-timing=main
+timing=enchantment
 oracle=Creatures you control get +0/+1 for each Gate you control and have vigilance.

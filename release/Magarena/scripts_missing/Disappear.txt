@@ -7,5 +7,5 @@ subtype=Aura
 cost={2}{U}{U}
 ability=Enchant creature;\
         {U}: Return enchanted creature and SN to their owners' hands.
-timing=main
+timing=aura
 oracle=Enchant creature\n{U}: Return enchanted creature and Disappear to their owners' hands.

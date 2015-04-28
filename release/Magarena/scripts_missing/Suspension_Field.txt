@@ -5,5 +5,5 @@ rarity=U
 type=Enchantment
 cost={1}{W}
 ability=When SN enters the battlefield, you may exile target creature with toughness 3 or greater until SN leaves the battlefield.
-timing=main
+timing=enchantment
 oracle=When Suspension Field enters the battlefield, you may exile target creature with toughness 3 or greater until Suspension Field leaves the battlefield.

@@ -8,5 +8,5 @@ cost={3}
 pt=1/4
 ability={T}: Exile target artifact card from a graveyard.;\
         SN has all activated abilities of all cards exiled with it.
-timing=main
+timing=artifact
 oracle=Imprint — {T}: Exile target artifact card from a graveyard.\nMyr Welder has all activated abilities of all cards exiled with it.

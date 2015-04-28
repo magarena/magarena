@@ -7,6 +7,6 @@ subtype=Basilisk
 cost={1}{G}{G}
 pt=2/1
 ability=Deathtouch;\
-        Whenever a land enters the battlefield under your control, you may have target creature block SN this turn if able.
+        Landfall — Whenever a land enters the battlefield under your control, you may have target creature block SN this turn if able.
 timing=main
 oracle=Deathtouch\nLandfall — Whenever a land enters the battlefield under your control, you may have target creature block Turntimber Basilisk this turn if able.

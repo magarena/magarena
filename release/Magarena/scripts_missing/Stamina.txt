@@ -8,5 +8,5 @@ cost={2}{G}
 ability=Enchant creature;\
         Enchanted creature has vigilance.;\
         Sacrifice SN: Regenerate enchanted creature.
-timing=main
+timing=aura
 oracle=Enchant creature\nEnchanted creature has vigilance.\nSacrifice Stamina: Regenerate enchanted creature.

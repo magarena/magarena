@@ -7,5 +7,5 @@ subtype=Myr
 cost={3}
 pt=2/2
 ability={T}: Add {2} to your mana pool.
-timing=main
+timing=artifact
 oracle={T}: Add {2} to your mana pool.

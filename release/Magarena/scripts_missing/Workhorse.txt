@@ -8,5 +8,5 @@ cost={6}
 pt=0/0
 ability=SN enters the battlefield with four +1/+1 counters on it.;\
         Remove a +1/+1 counter from SN: Add {1} to your mana pool.
-timing=main
+timing=artifact
 oracle=Workhorse enters the battlefield with four +1/+1 counters on it.\nRemove a +1/+1 counter from Workhorse: Add {1} to your mana pool.

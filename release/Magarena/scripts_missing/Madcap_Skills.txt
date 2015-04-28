@@ -7,5 +7,5 @@ subtype=Aura
 cost={1}{R}
 ability=Enchant creature;\
         Enchanted creature gets +3/+0 and can't be blocked except by two or more creatures.
-timing=main
+timing=aura
 oracle=Enchant creature\nEnchanted creature gets +3/+0 and can't be blocked except by two or more creatures.

@@ -9,4 +9,4 @@ pt=2/2
 ability=Flying; flanking ;\
         Suspend 3—{W}
 timing=main
-oracle=Flying; flanking \nSuspend 3—{W}
+oracle=Flying, flanking \nSuspend 3—{W}

@@ -5,5 +5,5 @@ rarity=R
 type=Artifact
 cost={2}
 ability={3}, {T}: Target player looks at the top three cards of his or her library, puts one of them back on top of his or her library, then exiles the rest.
-timing=main
+timing=artifact
 oracle={3}, {T}: Target player looks at the top three cards of his or her library, puts one of them back on top of his or her library, then exiles the rest.

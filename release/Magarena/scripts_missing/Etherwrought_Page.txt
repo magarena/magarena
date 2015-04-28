@@ -8,5 +8,5 @@ ability=At the beginning of your upkeep, choose one — \
         (1) You gain 2 life. \
         (2) Look at the top card of your library. You may put that card into your graveyard. \
         (3) Each opponent loses 1 life.
-timing=main
+timing=artifact
 oracle=At the beginning of your upkeep, choose one —\n• You gain 2 life.\n• Look at the top card of your library. You may put that card into your graveyard.\n• Each opponent loses 1 life.

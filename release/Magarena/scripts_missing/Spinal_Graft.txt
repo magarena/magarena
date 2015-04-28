@@ -8,5 +8,5 @@ cost={1}{B}
 ability=Enchant creature;\
         Enchanted creature gets +3/+3.;\
         When enchanted creature becomes the target of a spell or ability, destroy that creature. It can't be regenerated.
-timing=main
+timing=aura
 oracle=Enchant creature\nEnchanted creature gets +3/+3.\nWhen enchanted creature becomes the target of a spell or ability, destroy that creature. It can't be regenerated.

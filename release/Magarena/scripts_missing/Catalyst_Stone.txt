@@ -6,5 +6,5 @@ type=Artifact
 cost={2}
 ability=Flashback costs you pay cost up to {2} less.;\
         Flashback costs your opponents pay cost {2} more.
-timing=main
+timing=artifact
 oracle=Flashback costs you pay cost up to {2} less.\nFlashback costs your opponents pay cost {2} more.

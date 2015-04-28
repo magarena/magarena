@@ -5,5 +5,5 @@ rarity=R
 type=Enchantment
 cost={2}{G}{G}
 ability=Whenever a land enters the battlefield, its controller puts a 1/1 green Snake creature token onto the battlefield.
-timing=main
+timing=enchantment
 oracle=Whenever a land enters the battlefield, its controller puts a 1/1 green Snake creature token onto the battlefield.

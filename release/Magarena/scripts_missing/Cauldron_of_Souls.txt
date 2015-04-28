@@ -5,5 +5,5 @@ rarity=R
 type=Artifact
 cost={5}
 ability={T}: Choose any number of target creatures. Each of those creatures gains persist until end of turn.
-timing=main
+timing=artifact
 oracle={T}: Choose any number of target creatures. Each of those creatures gains persist until end of turn.

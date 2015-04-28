@@ -6,5 +6,5 @@ type=Enchantment
 cost={4}{G}{G}
 ability=Cumulative upkeep {2};\
         If a land is tapped for mana, it produces colorless mana instead of any other type.
-timing=main
+timing=enchantment
 oracle=Cumulative upkeep {2}\nIf a land is tapped for mana, it produces colorless mana instead of any other type.

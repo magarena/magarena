@@ -7,5 +7,5 @@ subtype=Aura,Curse
 cost={2}{W}{W}
 ability=Enchant player;\
         Enchanted player can't cast more than one spell each turn.
-timing=main
+timing=aura
 oracle=Enchant player\nEnchanted player can't cast more than one spell each turn.

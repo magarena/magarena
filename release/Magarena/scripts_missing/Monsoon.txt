@@ -5,5 +5,5 @@ rarity=R
 type=Enchantment
 cost={2}{R}{G}
 ability=At the beginning of each player's end step, tap all untapped Islands that player controls and SN deals X damage to the player, where X is the number of Islands tapped this way.
-timing=main
+timing=enchantment
 oracle=At the beginning of each player's end step, tap all untapped Islands that player controls and Monsoon deals X damage to the player, where X is the number of Islands tapped this way.

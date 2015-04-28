@@ -5,5 +5,5 @@ rarity=R
 type=Enchantment
 cost={2}{R}
 ability=At end of combat, destroy each creature that blocked or was blocked this turn.
-timing=main
+timing=enchantment
 oracle=At end of combat, destroy each creature that blocked or was blocked this turn.

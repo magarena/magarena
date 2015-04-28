@@ -8,5 +8,5 @@ cost={3}{R}
 ability=Enchant creature;\
         Cumulative upkeep {R};\
         Enchanted creature's controller can't cast creature spells.
-timing=main
+timing=aura
 oracle=Enchant creature\nCumulative upkeep {R}\nEnchanted creature's controller can't cast creature spells.

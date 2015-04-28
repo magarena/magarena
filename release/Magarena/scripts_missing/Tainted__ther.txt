@@ -5,5 +5,5 @@ rarity=R
 type=Enchantment
 cost={2}{B}{B}
 ability=Whenever a creature enters the battlefield, its controller sacrifices a creature or land.
-timing=main
+timing=enchantment
 oracle=Whenever a creature enters the battlefield, its controller sacrifices a creature or land.

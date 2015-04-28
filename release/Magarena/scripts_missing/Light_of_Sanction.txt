@@ -5,5 +5,5 @@ rarity=R
 type=Enchantment
 cost={1}{W}{W}
 ability=Prevent all damage that would be dealt to creatures you control by sources you control.
-timing=main
+timing=enchantment
 oracle=Prevent all damage that would be dealt to creatures you control by sources you control.

@@ -5,5 +5,5 @@ rarity=U
 type=Enchantment
 cost={2}{U}
 ability=At the beginning of your upkeep, look at the top card of your library. You may put that card into your graveyard.
-timing=main
+timing=enchantment
 oracle=At the beginning of your upkeep, look at the top card of your library. You may put that card into your graveyard.

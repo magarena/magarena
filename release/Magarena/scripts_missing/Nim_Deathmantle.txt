@@ -8,5 +8,5 @@ cost={2}
 ability=Equipped creature gets +2/+2, has intimidate, and is a black Zombie.;\
         Whenever a nontoken creature is put into your graveyard from the battlefield, you may pay {4}. If you do, return that card to the battlefield and attach SN to it.;\
         Equip {4}
-timing=main
+timing=equipment
 oracle=Equipped creature gets +2/+2, has intimidate, and is a black Zombie.\nWhenever a nontoken creature is put into your graveyard from the battlefield, you may pay {4}. If you do, return that card to the battlefield and attach Nim Deathmantle to it.\nEquip {4}

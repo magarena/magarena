@@ -5,5 +5,5 @@ rarity=R
 type=Enchantment
 cost={3}{G}
 ability=At the beginning of your upkeep, put X 2/2 green Wolf creature tokens onto the battlefield, where X is the number of your opponents with four or more cards in hand.
-timing=main
+timing=enchantment
 oracle=At the beginning of your upkeep, put X 2/2 green Wolf creature tokens onto the battlefield, where X is the number of your opponents with four or more cards in hand.

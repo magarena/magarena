@@ -7,5 +7,5 @@ subtype=Equipment
 cost={4}
 ability=Equipped creature gets +1/+1 for each Swamp you control.;\
         Equip—Pay 3 life.
-timing=main
+timing=equipment
 oracle=Equipped creature gets +1/+1 for each Swamp you control.\nEquip—Pay 3 life.

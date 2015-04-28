@@ -5,5 +5,5 @@ rarity=R
 type=Enchantment
 cost={U}{U}
 ability=Whenever a land card is put into your graveyard from your library, you may pay {1}. If you do, draw a card.
-timing=main
+timing=enchantment
 oracle=Whenever a land card is put into your graveyard from your library, you may pay {1}. If you do, draw a card.

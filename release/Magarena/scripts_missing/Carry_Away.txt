@@ -8,5 +8,5 @@ cost={U}{U}
 ability=Enchant Equipment;\
         When SN enters the battlefield, unattach enchanted Equipment.;\
         You control enchanted Equipment.
-timing=main
+timing=aura
 oracle=Enchant Equipment\nWhen Carry Away enters the battlefield, unattach enchanted Equipment.\nYou control enchanted Equipment.

@@ -5,5 +5,5 @@ rarity=R
 type=Artifact
 cost={5}
 ability={X}, {T}: Tap X target lands.
-timing=main
+timing=artifact
 oracle={X}, {T}: Tap X target lands.

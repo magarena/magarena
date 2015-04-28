@@ -5,5 +5,5 @@ rarity=R
 type=Artifact
 cost={3}{W}{W}
 ability={T}, Sacrifice SN: Destroy all permanents except for artifacts and lands. Activate this ability only during your upkeep.
-timing=main
+timing=artifact
 oracle={T}, Sacrifice Scourglass: Destroy all permanents except for artifacts and lands. Activate this ability only during your upkeep.

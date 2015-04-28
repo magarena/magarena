@@ -7,5 +7,5 @@ cost={B}{B}{B}
 ability=Skip your draw step.;\
         Whenever you discard a card, exile that card from your graveyard.;\
         Pay 1 life: Exile the top card of your library face down. Put that card into your hand at the beginning of your next end step.
-timing=main
+timing=enchantment
 oracle=Skip your draw step.\nWhenever you discard a card, exile that card from your graveyard.\nPay 1 life: Exile the top card of your library face down. Put that card into your hand at the beginning of your next end step.

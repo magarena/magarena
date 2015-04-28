@@ -5,5 +5,5 @@ rarity=C
 type=Artifact
 cost={1}
 ability={T}: Look at target player's hand.
-timing=main
+timing=artifact
 oracle={T}: Look at target player's hand.

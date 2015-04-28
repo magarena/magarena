@@ -5,5 +5,5 @@ rarity=U
 type=Enchantment
 cost={2}{G}{W}
 ability={G}{W}, Discard a card: Put a +1/+1 counter on target creature or that creature gains banding, first strike, or trample.
-timing=main
+timing=enchantment
 oracle={G}{W}, Discard a card: Put a +1/+1 counter on target creature or that creature gains banding, first strike, or trample.

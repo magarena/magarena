@@ -9,5 +9,5 @@ ability=As long as equipped creature is tapped, tapped creatures you control get
         As long as equipped creature is untapped, untapped creatures you control get +0/+2.;\
         {3}: You may tap or untap equipped creature.;\
         Equip {3}
-timing=main
+timing=equipment
 oracle=As long as equipped creature is tapped, tapped creatures you control get +2/+0.\nAs long as equipped creature is untapped, untapped creatures you control get +0/+2.\n{3}: You may tap or untap equipped creature.\nEquip {3}

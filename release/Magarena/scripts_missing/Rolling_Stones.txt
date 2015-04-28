@@ -5,5 +5,5 @@ rarity=R
 type=Enchantment
 cost={1}{W}
 ability=Wall creatures can attack as though they didn't have defender.
-timing=main
+timing=enchantment
 oracle=Wall creatures can attack as though they didn't have defender.

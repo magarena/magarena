@@ -6,5 +6,5 @@ type=Artifact
 cost={3}
 ability=You may activate abilities of creatures you control as though those creatures had haste.;\
         {1}, {T}: Untap target creature.
-timing=main
+timing=artifact
 oracle=You may activate abilities of creatures you control as though those creatures had haste.\n{1}, {T}: Untap target creature.

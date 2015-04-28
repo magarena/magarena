@@ -5,5 +5,5 @@ rarity=M
 type=Artifact
 cost={0}
 ability=Sacrifice SN, Discard your hand: Add three mana of any one color to your mana pool. Activate this ability only any time you could cast an instant.
-timing=main
+timing=artifact
 oracle=Sacrifice Lion's Eye Diamond, Discard your hand: Add three mana of any one color to your mana pool. Activate this ability only any time you could cast an instant.

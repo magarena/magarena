@@ -5,5 +5,5 @@ rarity=R
 type=Enchantment
 cost={4}{U}{U}{U}
 ability=If you would draw a card, draw two cards instead.
-timing=main
+timing=enchantment
 oracle=If you would draw a card, draw two cards instead.

@@ -5,5 +5,5 @@ rarity=U
 type=Enchantment
 cost={2}{B}
 ability=At the beginning of your upkeep, if you control a green or white permanent, target player loses 1 life. If you control a green permanent and a white permanent, that player loses 3 life instead.
-timing=main
+timing=enchantment
 oracle=At the beginning of your upkeep, if you control a green or white permanent, target player loses 1 life. If you control a green permanent and a white permanent, that player loses 3 life instead.

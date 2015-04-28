@@ -5,5 +5,5 @@ rarity=R
 type=Artifact
 cost={3}
 ability=No more than two creatures can attack you each combat.
-timing=main
+timing=artifact
 oracle=No more than two creatures can attack you each combat.

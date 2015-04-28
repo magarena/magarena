@@ -5,5 +5,5 @@ rarity=U
 type=Enchantment
 cost={2}{W}
 ability=Sacrifice a white creature: For each attacking red creature, prevent all combat damage that would be dealt by that creature this turn unless its controller pays {2}{R}.
-timing=main
+timing=enchantment
 oracle=Sacrifice a white creature: For each attacking red creature, prevent all combat damage that would be dealt by that creature this turn unless its controller pays {2}{R}.

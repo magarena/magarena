@@ -8,5 +8,5 @@ cost={3}
 pt=1/1
 ability=Flying;\
         When SN dies, return another target artifact card from your graveyard to your hand.
-timing=main
+timing=artifact
 oracle=Flying\nWhen Junk Diver dies, return another target artifact card from your graveyard to your hand.

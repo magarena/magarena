@@ -5,5 +5,5 @@ rarity=R
 type=Enchantment
 cost={2}{W}
 ability=Nonartifact creatures get +2/+2 as long as they all share a color.
-timing=main
+timing=enchantment
 oracle=Nonartifact creatures get +2/+2 as long as they all share a color.

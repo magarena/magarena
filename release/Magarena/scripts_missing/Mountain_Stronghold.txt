@@ -4,5 +4,5 @@ value=2.500
 rarity=U
 type=Land
 ability=Red legendary creatures you control have "bands with other legendary creatures."
-timing=main
+timing=land
 oracle=Red legendary creatures you control have "bands with other legendary creatures."

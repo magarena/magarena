@@ -5,5 +5,5 @@ rarity=R
 type=Land
 ability={T}: Add {1} to your mana pool.;\
         {B/G}, {T}: Add {B}{B}, {B}{G}, or {G}{G} to your mana pool.
-timing=main
+timing=land
 oracle={T}: Add {1} to your mana pool.\n{B/G}, {T}: Add {B}{B}, {B}{G}, or {G}{G} to your mana pool.

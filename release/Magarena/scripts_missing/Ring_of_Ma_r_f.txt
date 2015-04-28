@@ -5,5 +5,5 @@ rarity=R
 type=Artifact
 cost={5}
 ability={5}, {T}, Exile SN: The next time you would draw a card this turn, instead choose a card you own from outside the game and put it into your hand.
-timing=main
+timing=artifact
 oracle={5}, {T}, Exile Ring of Ma'rûf: The next time you would draw a card this turn, instead choose a card you own from outside the game and put it into your hand.

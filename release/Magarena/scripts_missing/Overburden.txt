@@ -5,5 +5,5 @@ rarity=R
 type=Enchantment
 cost={1}{U}
 ability=Whenever a player puts a nontoken creature onto the battlefield, that player returns a land he or she controls to its owner's hand.
-timing=main
+timing=enchantment
 oracle=Whenever a player puts a nontoken creature onto the battlefield, that player returns a land he or she controls to its owner's hand.

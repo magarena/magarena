@@ -5,5 +5,5 @@ rarity=R
 type=Snow,Land
 ability={T}: Add {1} to your mana pool.;\
         {1}{S}, {T}: Look at the top card of your library. If that card is snow, you may reveal it and put it into your hand.
-timing=main
+timing=land
 oracle={T}: Add {1} to your mana pool.\n{1}{S}, {T}: Look at the top card of your library. If that card is snow, you may reveal it and put it into your hand.

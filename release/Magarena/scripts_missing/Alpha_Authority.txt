@@ -7,5 +7,5 @@ subtype=Aura
 cost={1}{G}
 ability=Enchant creature;\
         Enchanted creature has hexproof and can't be blocked by more than one creature.
-timing=main
+timing=aura
 oracle=Enchant creature\nEnchanted creature has hexproof and can't be blocked by more than one creature.

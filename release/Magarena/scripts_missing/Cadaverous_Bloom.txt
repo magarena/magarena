@@ -5,5 +5,5 @@ rarity=R
 type=Enchantment
 cost={3}{B}{G}
 ability=Exile a card from your hand: Add {B}{B} or {G}{G} to your mana pool.
-timing=main
+timing=enchantment
 oracle=Exile a card from your hand: Add {B}{B} or {G}{G} to your mana pool.

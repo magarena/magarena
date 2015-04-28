@@ -5,5 +5,5 @@ rarity=R
 type=Enchantment
 cost={2}{B}
 ability=At the beginning of your upkeep, reveal the top card of your library and put that card into your hand. You lose life equal to its converted mana cost.
-timing=main
+timing=enchantment
 oracle=At the beginning of your upkeep, reveal the top card of your library and put that card into your hand. You lose life equal to its converted mana cost.

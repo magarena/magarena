@@ -6,5 +6,5 @@ type=Enchantment
 cost={3}{R}{R}{R}
 ability=At the beginning of each player's upkeep, that player gains control of SN.;\
         When you gain control of SN from another player, choose a creature you control and an opponent. Flip a coin. If you lose the flip, that opponent gains control of that creature.
-timing=main
+timing=enchantment
 oracle=At the beginning of each player's upkeep, that player gains control of Risky Move.\nWhen you gain control of Risky Move from another player, choose a creature you control and an opponent. Flip a coin. If you lose the flip, that opponent gains control of that creature.

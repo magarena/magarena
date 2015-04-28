@@ -6,5 +6,5 @@ type=Enchantment
 cost={2}{B}
 ability=White spells cost {3} more to cast.;\
         Activated abilities of white enchantments cost {3} more to activate.
-timing=main
+timing=enchantment
 oracle=White spells cost {3} more to cast.\nActivated abilities of white enchantments cost {3} more to activate.

@@ -5,5 +5,5 @@ rarity=R
 type=Artifact
 cost={4}
 ability={2}: SN becomes a 3/6 Golem artifact creature until end of combat. Activate this ability only during combat.
-timing=main
+timing=artifact
 oracle={2}: Jade Statue becomes a 3/6 Golem artifact creature until end of combat. Activate this ability only during combat.

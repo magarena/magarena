@@ -7,5 +7,5 @@ subtype=Equipment
 cost={4}
 ability=Equipped creature gets +2/+1 and has "{T}, Unattach SN: Destroy target creature.";\
         Equip {5}
-timing=main
+timing=equipment
 oracle=Equipped creature gets +2/+1 and has "{T}, Unattach Heartseeker: Destroy target creature."\nEquip {5}

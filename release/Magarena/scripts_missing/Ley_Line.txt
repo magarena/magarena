@@ -5,5 +5,5 @@ rarity=U
 type=Enchantment
 cost={3}{G}
 ability=At the beginning of each player's upkeep, that player may put a +1/+1 counter on target creature of his or her choice.
-timing=main
+timing=enchantment
 oracle=At the beginning of each player's upkeep, that player may put a +1/+1 counter on target creature of his or her choice.

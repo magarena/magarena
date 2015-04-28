@@ -5,5 +5,5 @@ rarity=U
 type=Enchantment
 cost={B}
 ability=Whenever another card is put into a graveyard from anywhere, exile that card.
-timing=main
+timing=enchantment
 oracle=Whenever another card is put into a graveyard from anywhere, exile that card.

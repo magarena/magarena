@@ -5,5 +5,5 @@ rarity=U
 type=Artifact
 cost={2}
 ability={T}, Sacrifice an artifact: Proliferate.
-timing=main
+timing=artifact
 oracle={T}, Sacrifice an artifact: Proliferate.

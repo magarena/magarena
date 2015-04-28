@@ -8,5 +8,5 @@ cost={G}
 ability=Enchant creature;\
         Enchanted creature gets +0/+2.;\
         Sacrifice SN: Regenerate enchanted creature.
-timing=main
+timing=aura
 oracle=Enchant creature\nEnchanted creature gets +0/+2.\nSacrifice Carapace: Regenerate enchanted creature.

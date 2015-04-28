@@ -5,5 +5,5 @@ rarity=R
 type=Artifact
 cost={2}
 ability=Whenever a spell or ability causes a player to shuffle his or her library, SN deals 2 damage to him or her.
-timing=main
+timing=artifact
 oracle=Whenever a spell or ability causes a player to shuffle his or her library, Psychogenic Probe deals 2 damage to him or her.

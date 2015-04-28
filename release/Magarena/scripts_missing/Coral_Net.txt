@@ -7,5 +7,5 @@ subtype=Aura
 cost={U}
 ability=Enchant green or white creature;\
         Enchanted creature has "At the beginning of your upkeep, sacrifice this creature unless you discard a card."
-timing=main
+timing=aura
 oracle=Enchant green or white creature\nEnchanted creature has "At the beginning of your upkeep, sacrifice this creature unless you discard a card."

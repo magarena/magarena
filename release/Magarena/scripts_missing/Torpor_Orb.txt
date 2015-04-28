@@ -5,5 +5,5 @@ rarity=R
 type=Artifact
 cost={2}
 ability=Creatures entering the battlefield don't cause abilities to trigger.
-timing=main
+timing=artifact
 oracle=Creatures entering the battlefield don't cause abilities to trigger.

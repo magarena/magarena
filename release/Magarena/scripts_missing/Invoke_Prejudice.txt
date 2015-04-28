@@ -5,5 +5,5 @@ rarity=R
 type=Enchantment
 cost={U}{U}{U}{U}
 ability=Whenever an opponent casts a creature spell that doesn't share a color with a creature you control, counter that spell unless that player pays {X}, where X is its converted mana cost.
-timing=main
+timing=enchantment
 oracle=Whenever an opponent casts a creature spell that doesn't share a color with a creature you control, counter that spell unless that player pays {X}, where X is its converted mana cost.

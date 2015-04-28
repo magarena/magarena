@@ -5,5 +5,5 @@ rarity=U
 type=Artifact
 cost={2}
 ability={2}: Target creature gains banding until end of turn.
-timing=main
+timing=artifact
 oracle={2}: Target creature gains banding until end of turn.

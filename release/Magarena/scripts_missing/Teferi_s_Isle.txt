@@ -6,5 +6,5 @@ type=Legendary,Land
 ability=Phasing;\
         SN enters the battlefield tapped.;\
         {T}: Add {U}{U} to your mana pool.
-timing=main
+timing=land
 oracle=Phasing\nTeferi's Isle enters the battlefield tapped.\n{T}: Add {U}{U} to your mana pool.

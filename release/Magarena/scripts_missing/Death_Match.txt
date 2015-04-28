@@ -5,5 +5,5 @@ rarity=R
 type=Enchantment
 cost={3}{B}
 ability=Whenever a creature enters the battlefield, that creature's controller may have target creature of his or her choice get -3/-3 until end of turn.
-timing=main
+timing=enchantment
 oracle=Whenever a creature enters the battlefield, that creature's controller may have target creature of his or her choice get -3/-3 until end of turn.

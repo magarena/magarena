@@ -5,5 +5,5 @@ rarity=R
 type=Enchantment
 cost={4}{B}{B}{B}
 ability=At the beginning of your end step, you may reveal the top card of your library. If you do, each opponent loses life equal to that card's converted mana cost.
-timing=main
+timing=enchantment
 oracle=At the beginning of your end step, you may reveal the top card of your library. If you do, each opponent loses life equal to that card's converted mana cost.

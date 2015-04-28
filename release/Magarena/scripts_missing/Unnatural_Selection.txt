@@ -5,5 +5,5 @@ rarity=R
 type=Enchantment
 cost={1}{U}
 ability={1}: Choose a creature type other than Wall. Target creature becomes that type until end of turn.
-timing=main
+timing=enchantment
 oracle={1}: Choose a creature type other than Wall. Target creature becomes that type until end of turn.

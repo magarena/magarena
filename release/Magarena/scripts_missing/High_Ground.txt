@@ -5,5 +5,5 @@ rarity=U
 type=Enchantment
 cost={W}
 ability=Each creature you control can block an additional creature.
-timing=main
+timing=enchantment
 oracle=Each creature you control can block an additional creature.

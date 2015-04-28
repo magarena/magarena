@@ -7,5 +7,5 @@ subtype=Aura
 cost={G}
 ability=Enchant land;\
         Enchanted land has "Untap this land during each other player's untap step."
-timing=main
+timing=aura
 oracle=Enchant land\nEnchanted land has "Untap this land during each other player's untap step."

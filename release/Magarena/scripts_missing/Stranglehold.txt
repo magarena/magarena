@@ -6,5 +6,5 @@ type=Enchantment
 cost={3}{R}
 ability=Your opponents can't search libraries.;\
         If an opponent would begin an extra turn, that player skips that turn instead.
-timing=main
+timing=enchantment
 oracle=Your opponents can't search libraries.\nIf an opponent would begin an extra turn, that player skips that turn instead.

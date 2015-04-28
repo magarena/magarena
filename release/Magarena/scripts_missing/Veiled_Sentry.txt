@@ -5,5 +5,5 @@ rarity=U
 type=Enchantment
 cost={U}
 ability=When an opponent casts a spell, if SN is an enchantment, SN becomes an Illusion creature with power and toughness each equal to that spell's converted mana cost.
-timing=main
+timing=enchantment
 oracle=When an opponent casts a spell, if Veiled Sentry is an enchantment, Veiled Sentry becomes an Illusion creature with power and toughness each equal to that spell's converted mana cost.

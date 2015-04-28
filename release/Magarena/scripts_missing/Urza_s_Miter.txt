@@ -5,5 +5,5 @@ rarity=R
 type=Artifact
 cost={3}
 ability=Whenever an artifact you control is put into a graveyard from the battlefield, if it wasn't sacrificed, you may pay {3}. If you do, draw a card.
-timing=main
+timing=artifact
 oracle=Whenever an artifact you control is put into a graveyard from the battlefield, if it wasn't sacrificed, you may pay {3}. If you do, draw a card.

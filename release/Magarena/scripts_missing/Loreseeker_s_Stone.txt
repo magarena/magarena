@@ -5,5 +5,5 @@ rarity=U
 type=Artifact
 cost={6}
 ability={3}, {T}: Draw three cards. This ability costs {1} more to activate for each card in your hand.
-timing=main
+timing=artifact
 oracle={3}, {T}: Draw three cards. This ability costs {1} more to activate for each card in your hand.

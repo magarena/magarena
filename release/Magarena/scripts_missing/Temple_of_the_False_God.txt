@@ -4,5 +4,5 @@ value=2.500
 rarity=U
 type=Land
 ability={T}: Add {2} to your mana pool. Activate this ability only if you control five or more lands.
-timing=main
+timing=land
 oracle={T}: Add {2} to your mana pool. Activate this ability only if you control five or more lands.

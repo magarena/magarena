@@ -7,5 +7,5 @@ subtype=Aura
 cost={2}{W}{W}
 ability=Enchant creature;\
         Enchanted creature can block any number of creatures.
-timing=main
+timing=aura
 oracle=Enchant creature\nEnchanted creature can block any number of creatures.

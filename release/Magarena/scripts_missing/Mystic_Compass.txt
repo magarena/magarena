@@ -5,5 +5,5 @@ rarity=U
 type=Artifact
 cost={2}
 ability={1}, {T}: Target land becomes the basic land type of your choice until end of turn.
-timing=main
+timing=artifact
 oracle={1}, {T}: Target land becomes the basic land type of your choice until end of turn.

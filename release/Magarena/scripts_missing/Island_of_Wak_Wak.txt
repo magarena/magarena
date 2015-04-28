@@ -4,5 +4,5 @@ value=2.500
 rarity=R
 type=Land
 ability={T}: Target creature with flying has base power 0 until end of turn.
-timing=main
+timing=land
 oracle={T}: Target creature with flying has base power 0 until end of turn.

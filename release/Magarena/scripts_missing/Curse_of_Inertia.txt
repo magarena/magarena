@@ -7,5 +7,5 @@ subtype=Aura,Curse
 cost={2}{U}
 ability=Enchant player;\
         Whenever a player attacks enchanted player with one or more creatures, that attacking player may tap or untap target permanent of his or her choice.
-timing=main
+timing=aura
 oracle=Enchant player\nWhenever a player attacks enchanted player with one or more creatures, that attacking player may tap or untap target permanent of his or her choice.

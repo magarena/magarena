@@ -7,5 +7,5 @@ subtype=Construct
 cost={3}
 pt=1/2
 ability={T}: Reveal any number of artifact cards in your hand. Add {2} to your mana pool for each card revealed this way.
-timing=main
+timing=artifact
 oracle={T}: Reveal any number of artifact cards in your hand. Add {2} to your mana pool for each card revealed this way.

@@ -7,5 +7,5 @@ cost={3}
 ability=At the beginning of your upkeep, put a plague counter on SN.;\
         {1}{B}{G}: Put a plague counter on SN or remove a plague counter from it.;\
         When SN has three or more plague counters on it, sacrifice it. If you do, destroy all nonland permanents.
-timing=main
+timing=artifact
 oracle=At the beginning of your upkeep, put a plague counter on Plague Boiler.\n{1}{B}{G}: Put a plague counter on Plague Boiler or remove a plague counter from it.\nWhen Plague Boiler has three or more plague counters on it, sacrifice it. If you do, destroy all nonland permanents.

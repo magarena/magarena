@@ -8,5 +8,5 @@ cost={3}
 ability=Equipped creature has "{2}: This creature gets +1/+0 until end of turn.";\
         Whenever equipped creature deals damage to a blocking creature, SN deals that much damage to each other creature defending player controls.;\
         Equip {3}
-timing=main
+timing=equipment
 oracle=Equipped creature has "{2}: This creature gets +1/+0 until end of turn."\nWhenever equipped creature deals damage to a blocking creature, Kusari-Gama deals that much damage to each other creature defending player controls.\nEquip {3}

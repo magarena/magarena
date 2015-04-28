@@ -5,5 +5,5 @@ rarity=U
 type=Artifact
 cost={1}
 ability={X}{1}: SN becomes an X/X Construct artifact creature. Sacrifice it at the beginning of the next end step.
-timing=main
+timing=artifact
 oracle={X}{1}: Chimeric Coils becomes an X/X Construct artifact creature. Sacrifice it at the beginning of the next end step.

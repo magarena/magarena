@@ -7,5 +7,5 @@ cost={2}{W}{W}
 ability=At the beginning of your upkeep, sacrifice SN unless you pay {W}{W}.;\
         Spells cost an additional "Sacrifice a Swamp" to cast for each black mana symbol in their mana costs.;\
         Activated abilities cost an additional "Sacrifice a Swamp" to activate for each black mana symbol in their activation costs.
-timing=main
+timing=enchantment
 oracle=At the beginning of your upkeep, sacrifice Drought unless you pay {W}{W}.\nSpells cost an additional "Sacrifice a Swamp" to cast for each black mana symbol in their mana costs.\nActivated abilities cost an additional "Sacrifice a Swamp" to activate for each black mana symbol in their activation costs.

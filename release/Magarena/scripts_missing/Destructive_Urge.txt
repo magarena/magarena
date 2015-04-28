@@ -7,5 +7,5 @@ subtype=Aura
 cost={1}{R}{R}
 ability=Enchant creature;\
         Whenever enchanted creature deals combat damage to a player, that player sacrifices a land.
-timing=main
+timing=aura
 oracle=Enchant creature\nWhenever enchanted creature deals combat damage to a player, that player sacrifices a land.

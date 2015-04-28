@@ -7,5 +7,5 @@ cost={1}{B}{R}
 ability=Cumulative upkeep {1};\
         At the beginning of your upkeep, put a rust counter on each artifact target opponent controls. Then destroy each artifact with converted mana cost less than or equal to the number of rust counters on it. Artifacts destroyed this way can't be regenerated.;\
         When SN leaves the battlefield, remove all rust counters from all permanents.
-timing=main
+timing=enchantment
 oracle=Cumulative upkeep {1}\nAt the beginning of your upkeep, put a rust counter on each artifact target opponent controls. Then destroy each artifact with converted mana cost less than or equal to the number of rust counters on it. Artifacts destroyed this way can't be regenerated.\nWhen Corrosion leaves the battlefield, remove all rust counters from all permanents.

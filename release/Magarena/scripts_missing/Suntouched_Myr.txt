@@ -7,5 +7,5 @@ subtype=Myr
 cost={3}
 pt=0/0
 ability=Sunburst
-timing=main
+timing=artifact
 oracle=Sunburst

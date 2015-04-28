@@ -6,5 +6,5 @@ type=Artifact
 cost={2}
 ability=When SN enters the battlefield, draw a card.;\
         {1}, {T}: Add one mana of any color to your mana pool.
-timing=main
+timing=artifact
 oracle=When Prophetic Prism enters the battlefield, draw a card.\n{1}, {T}: Add one mana of any color to your mana pool.

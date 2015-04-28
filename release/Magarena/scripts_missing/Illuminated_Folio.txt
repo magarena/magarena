@@ -5,5 +5,5 @@ rarity=U
 type=Artifact
 cost={5}
 ability={1}, {T}, Reveal two cards from your hand that share a color: Draw a card.
-timing=main
+timing=artifact
 oracle={1}, {T}, Reveal two cards from your hand that share a color: Draw a card.

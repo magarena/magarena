@@ -7,5 +7,5 @@ cost={4}
 ability=Indestructible;\
         At the beginning of your upkeep, you may put a charge counter on SN.;\
         When SN has twenty or more charge counters on it, you win the game.
-timing=main
+timing=artifact
 oracle=Indestructible\nAt the beginning of your upkeep, you may put a charge counter on Darksteel Reactor.\nWhen Darksteel Reactor has twenty or more charge counters on it, you win the game.

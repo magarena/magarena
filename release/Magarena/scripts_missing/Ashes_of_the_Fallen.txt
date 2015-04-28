@@ -6,5 +6,5 @@ type=Artifact
 cost={2}
 ability=As SN enters the battlefield, choose a creature type.;\
         Each creature card in your graveyard has the chosen creature type in addition to its other types.
-timing=main
+timing=artifact
 oracle=As Ashes of the Fallen enters the battlefield, choose a creature type.\nEach creature card in your graveyard has the chosen creature type in addition to its other types.

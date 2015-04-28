@@ -8,5 +8,5 @@ cost={B}
 ability=Enchant creature;\
         Whenever a player cycles a card, put a plague counter on SN.;\
         Enchanted creature gets -1/-1 for each plague counter on SN.
-timing=main
+timing=aura
 oracle=Enchant creature\nWhenever a player cycles a card, put a plague counter on Withering Hex.\nEnchanted creature gets -1/-1 for each plague counter on Withering Hex.

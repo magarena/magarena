@@ -5,5 +5,5 @@ rarity=R
 type=Artifact
 cost={2}
 ability=Red spells you cast cost {1} less to cast.
-timing=main
+timing=artifact
 oracle=Red spells you cast cost {1} less to cast.

@@ -5,5 +5,5 @@ rarity=M
 type=Enchantment
 cost={7}{U}{U}{U}
 ability=You may cast nonland cards from your hand without paying their mana costs.
-timing=main
+timing=enchantment
 oracle=You may cast nonland cards from your hand without paying their mana costs.

@@ -7,5 +7,5 @@ subtype=Aura,Curse
 cost={3}{B}{B}
 ability=Enchant player;\
         Creatures enchanted player controls get -1/-1.
-timing=main
+timing=aura
 oracle=Enchant player\nCreatures enchanted player controls get -1/-1.

@@ -7,6 +7,6 @@ subtype=Human,Shaman
 cost={2}{G}{G}
 pt=2/4
 ability=Vigilance;\
-        {T}: Add {3} to your mana pool. Activate this ability only if creatures you control have total power 8 or greater.
+        Formidable — {T}: Add {3} to your mana pool. Activate this ability only if creatures you control have total power 8 or greater.
 timing=main
 oracle=Vigilance\nFormidable — {T}: Add {3} to your mana pool. Activate this ability only if creatures you control have total power 8 or greater.

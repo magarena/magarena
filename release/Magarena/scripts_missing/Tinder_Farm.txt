@@ -6,5 +6,5 @@ type=Land
 ability=SN enters the battlefield tapped.;\
         {T}: Add {G} to your mana pool.;\
         {T}, Sacrifice SN: Add {R}{W} to your mana pool.
-timing=main
+timing=land
 oracle=Tinder Farm enters the battlefield tapped.\n{T}: Add {G} to your mana pool.\n{T}, Sacrifice Tinder Farm: Add {R}{W} to your mana pool.

@@ -7,5 +7,5 @@ subtype=Aura
 cost={3}{W}
 ability=Enchant creature;\
         Enchanted creature has "Whenever you gain life, put that many +1/+1 counters on this creature."
-timing=main
+timing=aura
 oracle=Enchant creature\nEnchanted creature has "Whenever you gain life, put that many +1/+1 counters on this creature."

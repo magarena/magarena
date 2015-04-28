@@ -5,5 +5,5 @@ rarity=R
 type=Artifact
 cost={3}
 ability=You may play land cards from your graveyard.
-timing=main
+timing=artifact
 oracle=You may play land cards from your graveyard.

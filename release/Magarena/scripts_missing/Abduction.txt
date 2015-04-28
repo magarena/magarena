@@ -9,5 +9,5 @@ ability=Enchant creature;\
         When SN enters the battlefield, untap enchanted creature.;\
         You control enchanted creature.;\
         When enchanted creature dies, return that card to the battlefield under its owner's control.
-timing=main
+timing=aura
 oracle=Enchant creature\nWhen Abduction enters the battlefield, untap enchanted creature.\nYou control enchanted creature.\nWhen enchanted creature dies, return that card to the battlefield under its owner's control.

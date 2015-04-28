@@ -5,5 +5,5 @@ rarity=R
 type=Artifact
 cost={6}
 ability=At the beginning of each player's upkeep, that player reveals the top card of his or her library. If it's an artifact, creature, enchantment, or land card, the player may put it onto the battlefield.
-timing=main
+timing=artifact
 oracle=At the beginning of each player's upkeep, that player reveals the top card of his or her library. If it's an artifact, creature, enchantment, or land card, the player may put it onto the battlefield.

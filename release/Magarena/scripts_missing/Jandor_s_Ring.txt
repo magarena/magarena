@@ -5,5 +5,5 @@ rarity=R
 type=Artifact
 cost={6}
 ability={2}, {T}, Discard the last card you drew this turn: Draw a card.
-timing=main
+timing=artifact
 oracle={2}, {T}, Discard the last card you drew this turn: Draw a card.

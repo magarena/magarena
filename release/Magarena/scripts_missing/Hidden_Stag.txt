@@ -6,5 +6,5 @@ type=Enchantment
 cost={1}{G}
 ability=Whenever an opponent plays a land, if SN is an enchantment, SN becomes a 3/2 Elk Beast creature.;\
         Whenever you play a land, if SN is a creature, SN becomes an enchantment.
-timing=main
+timing=enchantment
 oracle=Whenever an opponent plays a land, if Hidden Stag is an enchantment, Hidden Stag becomes a 3/2 Elk Beast creature.\nWhenever you play a land, if Hidden Stag is a creature, Hidden Stag becomes an enchantment.

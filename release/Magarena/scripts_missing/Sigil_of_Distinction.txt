@@ -8,5 +8,5 @@ cost={X}
 ability=SN enters the battlefield with X charge counters on it.;\
         Equipped creature gets +1/+1 for each charge counter on SN.;\
         Equip—Remove a charge counter from SN.
-timing=main
+timing=equipment
 oracle=Sigil of Distinction enters the battlefield with X charge counters on it.\nEquipped creature gets +1/+1 for each charge counter on Sigil of Distinction.\nEquip—Remove a charge counter from Sigil of Distinction.

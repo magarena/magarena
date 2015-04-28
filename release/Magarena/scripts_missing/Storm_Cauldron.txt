@@ -6,5 +6,5 @@ type=Artifact
 cost={5}
 ability=Each player may play an additional land during each of his or her turns.;\
         Whenever a land is tapped for mana, return it to its owner's hand.
-timing=main
+timing=artifact
 oracle=Each player may play an additional land during each of his or her turns.\nWhenever a land is tapped for mana, return it to its owner's hand.

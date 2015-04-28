@@ -7,5 +7,5 @@ subtype=Aura
 cost={R}
 ability=Enchant creature;\
         Whenever enchanted creature becomes blocked, you may have it deal damage equal to its power to target creature. If you do, the first creature assigns no combat damage this turn.
-timing=main
+timing=aura
 oracle=Enchant creature\nWhenever enchanted creature becomes blocked, you may have it deal damage equal to its power to target creature. If you do, the first creature assigns no combat damage this turn.

@@ -5,5 +5,5 @@ rarity=R
 type=Land
 ability={T}, Exile a creature you control: Put a storage counter on SN.;\
         {T}: Add {X} to your mana pool, where X is the number of storage counters on SN.
-timing=main
+timing=land
 oracle={T}, Exile a creature you control: Put a storage counter on City of Shadows.\n{T}: Add {X} to your mana pool, where X is the number of storage counters on City of Shadows.

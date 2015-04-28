@@ -7,5 +7,5 @@ subtype=Aura,Curse
 cost={2}{W}
 ability=Enchant player;\
         Whenever a creature attacks enchanted player, its controller gains 1 life.
-timing=main
+timing=aura
 oracle=Enchant player\nWhenever a creature attacks enchanted player, its controller gains 1 life.

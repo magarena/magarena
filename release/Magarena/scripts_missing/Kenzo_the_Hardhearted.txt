@@ -8,4 +8,4 @@ cost={W}
 pt=3/4
 ability=Double strike; bushido 2
 timing=main
-oracle=Double strike; bushido 2
+oracle=Double strike, bushido 2

@@ -5,5 +5,5 @@ rarity=U
 type=Enchantment
 cost={2}{U}
 ability=Red creature spells and green creature spells cost {1} more to cast.
-timing=main
+timing=enchantment
 oracle=Red creature spells and green creature spells cost {1} more to cast.

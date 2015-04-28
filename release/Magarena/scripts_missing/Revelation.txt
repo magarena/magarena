@@ -5,5 +5,5 @@ rarity=R
 type=World,Enchantment
 cost={G}
 ability=Players play with their hands revealed.
-timing=main
+timing=enchantment
 oracle=Players play with their hands revealed.

@@ -5,5 +5,5 @@ rarity=R
 type=Enchantment
 cost={4}{B}{B}
 ability=At the beginning of each player's upkeep, that player puts the top card of his or her library into his or her graveyard. Then he or she puts X 1/1 black Minion creature tokens onto the battlefield, where X is that card's converted mana cost.
-timing=main
+timing=enchantment
 oracle=At the beginning of each player's upkeep, that player puts the top card of his or her library into his or her graveyard. Then he or she puts X 1/1 black Minion creature tokens onto the battlefield, where X is that card's converted mana cost.

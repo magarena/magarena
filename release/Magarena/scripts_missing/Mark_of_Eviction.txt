@@ -7,5 +7,5 @@ subtype=Aura
 cost={U}
 ability=Enchant creature;\
         At the beginning of your upkeep, return enchanted creature and all Auras attached to that creature to their owners' hands.
-timing=main
+timing=aura
 oracle=Enchant creature\nAt the beginning of your upkeep, return enchanted creature and all Auras attached to that creature to their owners' hands.

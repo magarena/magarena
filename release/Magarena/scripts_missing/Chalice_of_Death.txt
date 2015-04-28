@@ -4,5 +4,5 @@ value=2.500
 rarity=U
 type=Artifact
 ability={T}: Target player loses 5 life.
-timing=main
+timing=artifact
 oracle={T}: Target player loses 5 life.

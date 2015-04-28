@@ -5,5 +5,5 @@ rarity=R
 type=Enchantment
 cost={5}{U}{U}
 ability=Whenever a player casts an instant or sorcery card, exile it. Then that player copies each instant or sorcery card exiled with SN. For each copy, the player may cast the copy without paying its mana cost.
-timing=main
+timing=enchantment
 oracle=Whenever a player casts an instant or sorcery card, exile it. Then that player copies each instant or sorcery card exiled with Eye of the Storm. For each copy, the player may cast the copy without paying its mana cost.

@@ -5,5 +5,5 @@ rarity=R
 type=Artifact
 cost={6}
 ability=Each opponent who controls more creatures than you can't play creature cards. The same is true for artifacts, enchantments, and lands.
-timing=main
+timing=artifact
 oracle=Each opponent who controls more creatures than you can't play creature cards. The same is true for artifacts, enchantments, and lands.

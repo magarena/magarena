@@ -4,5 +4,5 @@ value=2.500
 rarity=R
 type=Land
 ability={T}: Add one mana of any color to your mana pool. An opponent gains control of SN at the beginning of the next end step.
-timing=main
+timing=land
 oracle={T}: Add one mana of any color to your mana pool. An opponent gains control of Rainbow Vale at the beginning of the next end step.

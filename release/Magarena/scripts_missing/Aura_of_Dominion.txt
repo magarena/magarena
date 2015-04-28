@@ -7,5 +7,5 @@ subtype=Aura
 cost={U}{U}
 ability=Enchant creature;\
         {1}, Tap an untapped creature you control: Untap enchanted creature.
-timing=main
+timing=aura
 oracle=Enchant creature\n{1}, Tap an untapped creature you control: Untap enchanted creature.

@@ -4,5 +4,5 @@ value=2.500
 rarity=R
 type=Land
 ability={1}, {T}: Add {G}{W} to your mana pool.
-timing=main
+timing=land
 oracle={1}, {T}: Add {G}{W} to your mana pool.

@@ -5,5 +5,5 @@ rarity=R
 type=Enchantment
 cost={1}{R}
 ability=Cumulative upkeep—Add {R} to your mana pool.
-timing=main
+timing=enchantment
 oracle=Cumulative upkeep—Add {R} to your mana pool.

@@ -5,5 +5,5 @@ rarity=R
 type=Enchantment
 cost={3}{G}
 ability=Whenever a Forest is tapped for mana, its controller adds {G} to his or her mana pool.
-timing=main
+timing=enchantment
 oracle=Whenever a Forest is tapped for mana, its controller adds {G} to his or her mana pool.

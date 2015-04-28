@@ -5,5 +5,5 @@ rarity=R
 type=Enchantment
 cost={3}{G}
 ability=Any player may cast creature and enchantment cards as though they had flash.
-timing=main
+timing=enchantment
 oracle=Any player may cast creature and enchantment cards as though they had flash.

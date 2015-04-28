@@ -8,5 +8,5 @@ cost={3}
 pt=1/1
 ability={T}: Target spell becomes colorless.;\
         {T}: Target permanent becomes colorless until end of turn.
-timing=main
+timing=artifact
 oracle={T}: Target spell becomes colorless.\n{T}: Target permanent becomes colorless until end of turn.

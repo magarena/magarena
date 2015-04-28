@@ -5,5 +5,5 @@ rarity=R
 type=Artifact
 cost={5}
 ability={3}, {T}: Counter target instant or Aura spell that targets a permanent you control.
-timing=main
+timing=artifact
 oracle={3}, {T}: Counter target instant or Aura spell that targets a permanent you control.

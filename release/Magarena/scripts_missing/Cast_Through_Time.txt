@@ -5,5 +5,5 @@ rarity=M
 type=Enchantment
 cost={4}{U}{U}{U}
 ability=Instant and sorcery spells you control have rebound.
-timing=main
+timing=enchantment
 oracle=Instant and sorcery spells you control have rebound.

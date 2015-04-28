@@ -8,5 +8,5 @@ cost={2}{U}
 ability=Enchant creature;\
         Enchanted creature can't be blocked by Spirits.;\
         {1}{U}: Return SN to its owner's hand.
-timing=main
+timing=aura
 oracle=Enchant creature\nEnchanted creature can't be blocked by Spirits.\n{1}{U}: Return Field of Reality to its owner's hand.

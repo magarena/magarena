@@ -5,5 +5,5 @@ rarity=R
 type=Enchantment
 cost={2}{R}
 ability=During combat, players can't cast instant spells or activate abilities that aren't mana abilities.
-timing=main
+timing=enchantment
 oracle=During combat, players can't cast instant spells or activate abilities that aren't mana abilities.

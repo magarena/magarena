@@ -7,5 +7,5 @@ subtype=Aura
 cost={1}{U}
 ability=Enchant artifact or creature;\
         Enchanted permanent has phasing.
-timing=main
+timing=aura
 oracle=Enchant artifact or creature\nEnchanted permanent has phasing.

@@ -5,5 +5,5 @@ rarity=R
 type=Enchantment
 cost={2}{G}
 ability=At the beginning of your upkeep, each player reveals the top card of his or her library. If all cards revealed this way are creature cards, put those cards onto the battlefield under their owners' control.
-timing=main
+timing=enchantment
 oracle=At the beginning of your upkeep, each player reveals the top card of his or her library. If all cards revealed this way are creature cards, put those cards onto the battlefield under their owners' control.

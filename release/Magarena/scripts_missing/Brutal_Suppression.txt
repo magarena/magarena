@@ -5,5 +5,5 @@ rarity=U
 type=Enchantment
 cost={R}
 ability=Activated abilities of nontoken Rebels cost an additional "Sacrifice a land" to activate.
-timing=main
+timing=enchantment
 oracle=Activated abilities of nontoken Rebels cost an additional "Sacrifice a land" to activate.

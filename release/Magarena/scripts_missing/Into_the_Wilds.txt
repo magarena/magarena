@@ -5,5 +5,5 @@ rarity=R
 type=Enchantment
 cost={3}{G}
 ability=At the beginning of your upkeep, look at the top card of your library. If it's a land card, you may put it onto the battlefield.
-timing=main
+timing=enchantment
 oracle=At the beginning of your upkeep, look at the top card of your library. If it's a land card, you may put it onto the battlefield.

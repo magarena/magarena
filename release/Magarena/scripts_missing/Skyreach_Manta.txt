@@ -8,5 +8,5 @@ cost={5}
 pt=0/0
 ability=Sunburst;\
         Flying
-timing=main
+timing=artifact
 oracle=Sunburst\nFlying

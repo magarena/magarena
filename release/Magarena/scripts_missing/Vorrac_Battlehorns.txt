@@ -7,5 +7,5 @@ subtype=Equipment
 cost={2}
 ability=Equipped creature has trample and can't be blocked by more than one creature.;\
         Equip {1}
-timing=main
+timing=equipment
 oracle=Equipped creature has trample and can't be blocked by more than one creature.\nEquip {1}

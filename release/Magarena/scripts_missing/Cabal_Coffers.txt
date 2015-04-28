@@ -4,5 +4,5 @@ value=2.500
 rarity=U
 type=Land
 ability={2}, {T}: Add {B} to your mana pool for each Swamp you control.
-timing=main
+timing=land
 oracle={2}, {T}: Add {B} to your mana pool for each Swamp you control.

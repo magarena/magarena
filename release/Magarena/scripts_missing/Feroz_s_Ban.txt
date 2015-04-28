@@ -5,5 +5,5 @@ rarity=R
 type=Artifact
 cost={6}
 ability=Creature spells cost {2} more to cast.
-timing=main
+timing=artifact
 oracle=Creature spells cost {2} more to cast.

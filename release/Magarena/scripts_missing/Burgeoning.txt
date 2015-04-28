@@ -5,5 +5,5 @@ rarity=R
 type=Enchantment
 cost={G}
 ability=Whenever an opponent plays a land, you may put a land card from your hand onto the battlefield.
-timing=main
+timing=enchantment
 oracle=Whenever an opponent plays a land, you may put a land card from your hand onto the battlefield.

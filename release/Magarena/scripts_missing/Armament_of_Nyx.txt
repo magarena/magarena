@@ -7,5 +7,5 @@ subtype=Aura
 cost={2}{W}
 ability=Enchant creature;\
         Enchanted creature has double strike as long as it's an enchantment. Otherwise, prevent all damage that would be dealt by enchanted creature.
-timing=main
+timing=aura
 oracle=Enchant creature\nEnchanted creature has double strike as long as it's an enchantment. Otherwise, prevent all damage that would be dealt by enchanted creature.

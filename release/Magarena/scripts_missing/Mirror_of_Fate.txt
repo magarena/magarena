@@ -5,5 +5,5 @@ rarity=R
 type=Artifact
 cost={5}
 ability={T}, Sacrifice SN: Choose up to seven face-up exiled cards you own. Exile all the cards from your library, then put the chosen cards on top of your library.
-timing=main
+timing=artifact
 oracle={T}, Sacrifice Mirror of Fate: Choose up to seven face-up exiled cards you own. Exile all the cards from your library, then put the chosen cards on top of your library.

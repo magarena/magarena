@@ -5,5 +5,5 @@ rarity=R
 type=World,Enchantment
 cost={3}{R}
 ability=At the beginning of each player's upkeep, that player exiles a card at random from his or her hand. The player may play that card this turn. At the beginning of the next end step, if the player hasn't played the card, he or she puts it into his or her graveyard.
-timing=main
+timing=enchantment
 oracle=At the beginning of each player's upkeep, that player exiles a card at random from his or her hand. The player may play that card this turn. At the beginning of the next end step, if the player hasn't played the card, he or she puts it into his or her graveyard.

@@ -6,5 +6,5 @@ type=Legendary,Enchantment,Artifact
 cost={1}{W}{W}
 ability=Creatures you control get +1/+1.;\
         {1}{W}{W}, {T}: Destroy target creature that dealt damage to you this turn.
-timing=main
+timing=artifact
 oracle=Creatures you control get +1/+1.\n{1}{W}{W}, {T}: Destroy target creature that dealt damage to you this turn.

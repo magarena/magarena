@@ -6,5 +6,5 @@ type=Artifact
 cost={2}
 ability=At the beginning of your upkeep, SN deals 2 damage to you.;\
         Sacrifice a creature: Target opponent gains control of SN.
-timing=main
+timing=artifact
 oracle=At the beginning of your upkeep, Jinxed Idol deals 2 damage to you.\nSacrifice a creature: Target opponent gains control of Jinxed Idol.

@@ -8,5 +8,5 @@ cost={4}
 ability=Sunburst;\
         Equipped creature gets +X/+X, where X is the number of charge counters on SN.;\
         Equip {2}
-timing=main
+timing=equipment
 oracle=Sunburst\nEquipped creature gets +X/+X, where X is the number of charge counters on Opaline Bracers.\nEquip {2}

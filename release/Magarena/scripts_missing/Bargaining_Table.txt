@@ -5,5 +5,5 @@ rarity=R
 type=Artifact
 cost={5}
 ability={X}, {T}: Draw a card. X is the number of cards in an opponent's hand.
-timing=main
+timing=artifact
 oracle={X}, {T}: Draw a card. X is the number of cards in an opponent's hand.

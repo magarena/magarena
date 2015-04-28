@@ -6,5 +6,5 @@ type=Artifact
 cost={2}
 ability=When SN enters the battlefield, draw a card.;\
         Each land with an activated ability that isn't a mana ability doesn't untap during its controller's untap step.
-timing=main
+timing=artifact
 oracle=When Tsabo's Web enters the battlefield, draw a card.\nEach land with an activated ability that isn't a mana ability doesn't untap during its controller's untap step.

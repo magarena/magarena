@@ -5,5 +5,5 @@ rarity=R
 type=Artifact
 cost={5}
 ability=The "legend rule" doesn't apply.
-timing=main
+timing=artifact
 oracle=The "legend rule" doesn't apply.

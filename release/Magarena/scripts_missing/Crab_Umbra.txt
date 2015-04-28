@@ -8,5 +8,5 @@ cost={U}
 ability=Enchant creature;\
         {2}{U}: Untap enchanted creature.;\
         Totem armor
-timing=main
+timing=aura
 oracle=Enchant creature\n{2}{U}: Untap enchanted creature.\nTotem armor

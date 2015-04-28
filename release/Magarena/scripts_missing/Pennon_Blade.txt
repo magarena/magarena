@@ -7,5 +7,5 @@ subtype=Equipment
 cost={3}
 ability=Equipped creature gets +1/+1 for each creature you control.;\
         Equip {4}
-timing=main
+timing=equipment
 oracle=Equipped creature gets +1/+1 for each creature you control.\nEquip {4}

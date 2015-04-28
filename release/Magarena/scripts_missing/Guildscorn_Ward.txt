@@ -7,5 +7,5 @@ subtype=Aura
 cost={W}
 ability=Enchant creature;\
         Enchanted creature has protection from multicolored.
-timing=main
+timing=aura
 oracle=Enchant creature\nEnchanted creature has protection from multicolored.

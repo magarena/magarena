@@ -8,5 +8,5 @@ cost={2}
 ability=Equipped creature gets +2/+2.;\
         As long as equipped creature has defender, it can attack as though it didn't have defender.;\
         Equip {3}
-timing=main
+timing=equipment
 oracle=Equipped creature gets +2/+2.\nAs long as equipped creature has defender, it can attack as though it didn't have defender.\nEquip {3}

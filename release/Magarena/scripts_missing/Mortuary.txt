@@ -5,5 +5,5 @@ rarity=R
 type=Enchantment
 cost={3}{B}
 ability=Whenever a creature is put into your graveyard from the battlefield, put that card on top of your library.
-timing=main
+timing=enchantment
 oracle=Whenever a creature is put into your graveyard from the battlefield, put that card on top of your library.

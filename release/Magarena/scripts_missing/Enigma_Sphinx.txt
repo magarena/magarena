@@ -9,5 +9,5 @@ pt=5/4
 ability=Flying;\
         When SN is put into your graveyard from the battlefield, put it into your library third from the top.;\
         Cascade
-timing=main
+timing=artifact
 oracle=Flying\nWhen Enigma Sphinx is put into your graveyard from the battlefield, put it into your library third from the top.\nCascade

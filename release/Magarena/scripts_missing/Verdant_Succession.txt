@@ -5,5 +5,5 @@ rarity=R
 type=Enchantment
 cost={4}{G}
 ability=Whenever a green nontoken creature dies, that creature's controller may search his or her library for a card with the same name as that creature and put it onto the battlefield. If that player does, he or she shuffles his or her library.
-timing=main
+timing=enchantment
 oracle=Whenever a green nontoken creature dies, that creature's controller may search his or her library for a card with the same name as that creature and put it onto the battlefield. If that player does, he or she shuffles his or her library.

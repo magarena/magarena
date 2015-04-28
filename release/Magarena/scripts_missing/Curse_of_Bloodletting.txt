@@ -7,5 +7,5 @@ subtype=Aura,Curse
 cost={3}{R}{R}
 ability=Enchant player;\
         If a source would deal damage to enchanted player, it deals double that damage to that player instead.
-timing=main
+timing=aura
 oracle=Enchant player\nIf a source would deal damage to enchanted player, it deals double that damage to that player instead.

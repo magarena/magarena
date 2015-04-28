@@ -7,5 +7,5 @@ subtype=Golem
 cost={8}
 pt=8/8
 ability=Your life total can't change.
-timing=main
+timing=artifact
 oracle=Your life total can't change.

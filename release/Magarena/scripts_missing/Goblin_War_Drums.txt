@@ -5,5 +5,5 @@ rarity=U
 type=Enchantment
 cost={2}{R}
 ability=Each creature you control can't be blocked except by two or more creatures.
-timing=main
+timing=enchantment
 oracle=Each creature you control can't be blocked except by two or more creatures.

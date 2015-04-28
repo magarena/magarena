@@ -7,5 +7,5 @@ subtype=Aura
 cost={U}
 ability=Enchant creature;\
         {0}: Enchanted creature becomes the color or colors of your choice. Activate this ability only once each turn.
-timing=main
+timing=aura
 oracle=Enchant creature\n{0}: Enchanted creature becomes the color or colors of your choice. Activate this ability only once each turn.

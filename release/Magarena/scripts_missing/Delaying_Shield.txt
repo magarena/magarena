@@ -6,5 +6,5 @@ type=Enchantment
 cost={3}{W}
 ability=If damage would be dealt to you, put that many delay counters on SN instead.;\
         At the beginning of your upkeep, remove all delay counters from SN. For each delay counter removed this way, you lose 1 life unless you pay {1}{W}.
-timing=main
+timing=enchantment
 oracle=If damage would be dealt to you, put that many delay counters on Delaying Shield instead.\nAt the beginning of your upkeep, remove all delay counters from Delaying Shield. For each delay counter removed this way, you lose 1 life unless you pay {1}{W}.

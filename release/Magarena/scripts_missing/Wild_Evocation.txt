@@ -5,5 +5,5 @@ rarity=R
 type=Enchantment
 cost={5}{R}
 ability=At the beginning of each player's upkeep, that player reveals a card at random from his or her hand. If it's a land card, the player puts it onto the battlefield. Otherwise, the player casts it without paying its mana cost if able.
-timing=main
+timing=enchantment
 oracle=At the beginning of each player's upkeep, that player reveals a card at random from his or her hand. If it's a land card, the player puts it onto the battlefield. Otherwise, the player casts it without paying its mana cost if able.

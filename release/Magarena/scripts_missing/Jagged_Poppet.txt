@@ -7,6 +7,6 @@ subtype=Ogre,Warrior
 cost={1}{B}{R}
 pt=3/4
 ability=Whenever SN is dealt damage, discard that many cards.;\
-        Whenever SN deals combat damage to a player, if you have no cards in hand, that player discards cards equal to the damage.
+        Hellbent — Whenever SN deals combat damage to a player, if you have no cards in hand, that player discards cards equal to the damage.
 timing=main
 oracle=Whenever Jagged Poppet is dealt damage, discard that many cards.\nHellbent — Whenever Jagged Poppet deals combat damage to a player, if you have no cards in hand, that player discards cards equal to the damage.

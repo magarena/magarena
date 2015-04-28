@@ -8,5 +8,5 @@ ability=When SN enters the battlefield, exile the top seven cards of your librar
         You may look at and play cards exiled with SN.;\
         Skip your draw step.;\
         You can't cast more than one spell each turn.
-timing=main
+timing=enchantment
 oracle=When Colfenor's Plans enters the battlefield, exile the top seven cards of your library face down.\nYou may look at and play cards exiled with Colfenor's Plans.\nSkip your draw step.\nYou can't cast more than one spell each turn.

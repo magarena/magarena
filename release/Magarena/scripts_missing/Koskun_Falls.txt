@@ -6,5 +6,5 @@ type=World,Enchantment
 cost={2}{B}{B}
 ability=At the beginning of your upkeep, sacrifice SN unless you tap an untapped creature you control.;\
         Creatures can't attack you unless their controller pays {2} for each creature he or she controls that's attacking you.
-timing=main
+timing=enchantment
 oracle=At the beginning of your upkeep, sacrifice Koskun Falls unless you tap an untapped creature you control.\nCreatures can't attack you unless their controller pays {2} for each creature he or she controls that's attacking you.

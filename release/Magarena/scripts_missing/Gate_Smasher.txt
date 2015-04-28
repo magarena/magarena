@@ -8,5 +8,5 @@ cost={3}
 ability=SN can be attached only to a creature with toughness 4 or greater.;\
         Equipped creature gets +3/+0 and has trample.;\
         Equip {3}
-timing=main
+timing=equipment
 oracle=Gate Smasher can be attached only to a creature with toughness 4 or greater.\nEquipped creature gets +3/+0 and has trample.\nEquip {3}

@@ -5,5 +5,5 @@ rarity=U
 type=Artifact
 cost={1}
 ability={2}, {T}, Sacrifice SN: Add {G}{W} to your mana pool. Draw a card.
-timing=main
+timing=artifact
 oracle={2}, {T}, Sacrifice Sungrass Egg: Add {G}{W} to your mana pool. Draw a card.

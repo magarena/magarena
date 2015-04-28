@@ -6,5 +6,5 @@ type=Artifact
 cost={1}
 ability={1}: Look at the top three cards of your library, then put them back in any order.;\
         {T}: Draw a card, then put SN on top of its owner's library.
-timing=main
+timing=artifact
 oracle={1}: Look at the top three cards of your library, then put them back in any order.\n{T}: Draw a card, then put Sensei's Divining Top on top of its owner's library.

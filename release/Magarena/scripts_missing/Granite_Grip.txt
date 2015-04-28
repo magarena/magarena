@@ -7,5 +7,5 @@ subtype=Aura
 cost={2}{R}
 ability=Enchant creature;\
         Enchanted creature gets +1/+0 for each Mountain you control.
-timing=main
+timing=aura
 oracle=Enchant creature\nEnchanted creature gets +1/+0 for each Mountain you control.

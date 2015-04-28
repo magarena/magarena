@@ -7,5 +7,5 @@ subtype=Aura
 cost={2}{U}
 ability=Enchant player;\
         At the beginning of enchanted player's first upkeep each turn, that player gets an additional upkeep step after this step.
-timing=main
+timing=aura
 oracle=Enchant player\nAt the beginning of enchanted player's first upkeep each turn, that player gets an additional upkeep step after this step.

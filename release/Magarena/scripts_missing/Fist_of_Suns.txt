@@ -5,5 +5,5 @@ rarity=R
 type=Artifact
 cost={3}
 ability=You may pay {W}{U}{B}{R}{G} rather than pay the mana cost for spells that you cast.
-timing=main
+timing=artifact
 oracle=You may pay {W}{U}{B}{R}{G} rather than pay the mana cost for spells that you cast.

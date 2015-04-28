@@ -5,5 +5,5 @@ rarity=R
 type=Enchantment
 cost={4}{U}{U}
 ability=At the beginning of your upkeep, put a lore counter on SN, then draw a card for each lore counter on SN.
-timing=main
+timing=enchantment
 oracle=At the beginning of your upkeep, put a lore counter on Mind Unbound, then draw a card for each lore counter on Mind Unbound.

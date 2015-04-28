@@ -6,5 +6,5 @@ type=Artifact
 cost={3}
 ability=At the beginning of each player's upkeep, SN deals 1 damage to that player.;\
         {2}: Prevent the next 1 damage that would be dealt by SN this turn.
-timing=main
+timing=artifact
 oracle=At the beginning of each player's upkeep, Barbed Wire deals 1 damage to that player.\n{2}: Prevent the next 1 damage that would be dealt by Barbed Wire this turn.

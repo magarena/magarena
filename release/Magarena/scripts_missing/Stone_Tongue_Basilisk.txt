@@ -7,6 +7,6 @@ subtype=Basilisk
 cost={4}{G}{G}{G}
 pt=4/5
 ability=Whenever SN deals combat damage to a creature, destroy that creature at end of combat.;\
-        As long as seven or more cards are in your graveyard, all creatures able to block SN do so.
+        Threshold — As long as seven or more cards are in your graveyard, all creatures able to block SN do so.
 timing=main
 oracle=Whenever Stone-Tongue Basilisk deals combat damage to a creature, destroy that creature at end of combat.\nThreshold — As long as seven or more cards are in your graveyard, all creatures able to block Stone-Tongue Basilisk do so.

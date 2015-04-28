@@ -5,5 +5,5 @@ rarity=U
 type=Artifact
 cost={4}
 ability={3}, {T}: Put a 1/1 colorless Insect artifact creature token with flying and haste named Hornet onto the battlefield. Destroy it at the beginning of the next end step.
-timing=main
+timing=artifact
 oracle={3}, {T}: Put a 1/1 colorless Insect artifact creature token with flying and haste named Hornet onto the battlefield. Destroy it at the beginning of the next end step.

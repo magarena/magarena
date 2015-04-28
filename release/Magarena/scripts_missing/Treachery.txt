@@ -8,5 +8,5 @@ cost={3}{U}{U}
 ability=Enchant creature;\
         When SN enters the battlefield, untap up to five lands.;\
         You control enchanted creature.
-timing=main
+timing=aura
 oracle=Enchant creature\nWhen Treachery enters the battlefield, untap up to five lands.\nYou control enchanted creature.

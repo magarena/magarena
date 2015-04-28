@@ -7,6 +7,6 @@ subtype=Human,Warrior
 cost={B}
 pt=2/1
 ability=SN enters the battlefield tapped.;\
-        Whenever you cast a spell that targets SN, each opponent loses 1 life. You gain life equal to the life lost this way.
+        Heroic — Whenever you cast a spell that targets SN, each opponent loses 1 life. You gain life equal to the life lost this way.
 timing=main
 oracle=Tormented Hero enters the battlefield tapped.\nHeroic — Whenever you cast a spell that targets Tormented Hero, each opponent loses 1 life. You gain life equal to the life lost this way.

@@ -5,5 +5,5 @@ rarity=R
 type=Enchantment
 cost={3}{R}
 ability=Whenever a player taps a nonbasic land for mana, SN deals 1 damage to that player.
-timing=main
+timing=enchantment
 oracle=Whenever a player taps a nonbasic land for mana, Burning Earth deals 1 damage to that player.

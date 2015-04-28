@@ -5,5 +5,5 @@ rarity=U
 type=Enchantment
 cost={B}
 ability=When an opponent has 10 or less life, if SN is an enchantment, it becomes a 3/2 Hound creature.
-timing=main
+timing=enchantment
 oracle=When an opponent has 10 or less life, if Lurking Jackals is an enchantment, it becomes a 3/2 Hound creature.

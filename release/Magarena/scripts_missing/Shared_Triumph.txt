@@ -6,5 +6,5 @@ type=Enchantment
 cost={1}{W}
 ability=As SN enters the battlefield, choose a creature type.;\
         Creatures of the chosen type get +1/+1.
-timing=main
+timing=enchantment
 oracle=As Shared Triumph enters the battlefield, choose a creature type.\nCreatures of the chosen type get +1/+1.

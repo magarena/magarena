@@ -6,5 +6,5 @@ type=Enchantment
 cost={2}{B}
 ability=You may cast SN as though it had flash. If you cast it any time a sorcery couldn't have been cast, the controller of the permanent it becomes sacrifices it at the beginning of the next cleanup step.;\
         When SN enters the battlefield, if it's on the battlefield, it becomes an Aura with "enchant creature put onto the battlefield with SN." Put target creature card from a graveyard onto the battlefield under your control and attach SN to it. When SN leaves the battlefield, that creature's controller sacrifices it.
-timing=main
+timing=enchantment
 oracle=You may cast Necromancy as though it had flash. If you cast it any time a sorcery couldn't have been cast, the controller of the permanent it becomes sacrifices it at the beginning of the next cleanup step.\nWhen Necromancy enters the battlefield, if it's on the battlefield, it becomes an Aura with "enchant creature put onto the battlefield with Necromancy." Put target creature card from a graveyard onto the battlefield under your control and attach Necromancy to it. When Necromancy leaves the battlefield, that creature's controller sacrifices it.

@@ -8,5 +8,5 @@ cost={7}
 pt=4/4
 ability=Trample;\
         As long as you control another creature, prevent all damage that would be dealt to SN by spells that target it.
-timing=main
+timing=artifact
 oracle=Trample\nAs long as you control another creature, prevent all damage that would be dealt to Bronze Horse by spells that target it.

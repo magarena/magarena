@@ -7,5 +7,5 @@ subtype=Aura,Curse
 cost={1}{R}
 ability=Enchant player;\
         At the beginning of enchanted player's upkeep, SN deals 1 damage to that player.
-timing=main
+timing=aura
 oracle=Enchant player\nAt the beginning of enchanted player's upkeep, Curse of the Pierced Heart deals 1 damage to that player.

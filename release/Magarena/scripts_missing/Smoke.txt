@@ -5,5 +5,5 @@ rarity=R
 type=Enchantment
 cost={R}{R}
 ability=Players can't untap more than one creature during their untap steps.
-timing=main
+timing=enchantment
 oracle=Players can't untap more than one creature during their untap steps.

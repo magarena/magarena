@@ -5,5 +5,5 @@ rarity=R
 type=Enchantment
 cost={4}{G}
 ability=Whenever a nontoken creature you control dies, put a slime counter on SN, then put a green Ooze creature token onto the battlefield with "This creature's power and toughness are each equal to the number of slime counters on SN."
-timing=main
+timing=enchantment
 oracle=Whenever a nontoken creature you control dies, put a slime counter on Gutter Grime, then put a green Ooze creature token onto the battlefield with "This creature's power and toughness are each equal to the number of slime counters on Gutter Grime."

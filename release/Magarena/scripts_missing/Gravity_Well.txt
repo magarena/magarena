@@ -5,5 +5,5 @@ rarity=U
 type=Enchantment
 cost={1}{G}{G}
 ability=Whenever a creature with flying attacks, it loses flying until end of turn.
-timing=main
+timing=enchantment
 oracle=Whenever a creature with flying attacks, it loses flying until end of turn.

@@ -5,5 +5,5 @@ rarity=R
 type=Enchantment
 cost={3}{G}
 ability=Each land gets +2/+2 as long as it's a creature.
-timing=main
+timing=enchantment
 oracle=Each land gets +2/+2 as long as it's a creature.

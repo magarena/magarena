@@ -7,5 +7,5 @@ subtype=Aura
 cost={W}
 ability=Enchant land;\
         Enchanted land has indestructible and can't be enchanted by other Auras.
-timing=main
+timing=aura
 oracle=Enchant land\nEnchanted land has indestructible and can't be enchanted by other Auras.

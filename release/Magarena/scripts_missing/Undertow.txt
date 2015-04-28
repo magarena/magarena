@@ -5,5 +5,5 @@ rarity=U
 type=Enchantment
 cost={2}{U}
 ability=Creatures with islandwalk can be blocked as though they didn't have islandwalk.
-timing=main
+timing=enchantment
 oracle=Creatures with islandwalk can be blocked as though they didn't have islandwalk.

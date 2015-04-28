@@ -5,5 +5,5 @@ rarity=R
 type=Enchantment
 cost={1}{U/R}{U/R}
 ability={1}{U/R}{U/R}: Copy target instant or sorcery spell that targets you. You may choose new targets for the copy.
-timing=main
+timing=enchantment
 oracle={1}{U/R}{U/R}: Copy target instant or sorcery spell that targets you. You may choose new targets for the copy.

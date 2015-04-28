@@ -6,5 +6,5 @@ type=Artifact
 cost={4}
 ability=When SN enters the battlefield, return two lands you control to their owner's hand.;\
         {T}: Add two mana of any one color to your mana pool.
-timing=main
+timing=artifact
 oracle=When Khalni Gem enters the battlefield, return two lands you control to their owner's hand.\n{T}: Add two mana of any one color to your mana pool.

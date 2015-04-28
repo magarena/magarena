@@ -7,5 +7,5 @@ subtype=Aura
 cost={1}{W}
 ability=Enchant artifact;\
         Enchanted artifact can't attack or block, and its activated abilities can't be activated.
-timing=main
+timing=aura
 oracle=Enchant artifact\nEnchanted artifact can't attack or block, and its activated abilities can't be activated.

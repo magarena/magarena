@@ -8,5 +8,5 @@ cost={1}{U}
 ability=Enchant creature;\
         Enchanted creature has flying.;\
         Enchanted creature has first strike as long as it's blocking and you control a snow land.
-timing=main
+timing=aura
 oracle=Enchant creature\nEnchanted creature has flying.\nEnchanted creature has first strike as long as it's blocking and you control a snow land.

@@ -5,5 +5,5 @@ rarity=U
 type=Enchantment
 cost={2}{R}
 ability={X}{R}: This turn, creatures can't block unless their controller pays {X} for each blocking creature he or she controls.
-timing=main
+timing=enchantment
 oracle={X}{R}: This turn, creatures can't block unless their controller pays {X} for each blocking creature he or she controls.

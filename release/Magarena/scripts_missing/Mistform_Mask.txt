@@ -7,5 +7,5 @@ subtype=Aura
 cost={1}{U}
 ability=Enchant creature;\
         {1}: Enchanted creature becomes the creature type of your choice until end of turn.
-timing=main
+timing=aura
 oracle=Enchant creature\n{1}: Enchanted creature becomes the creature type of your choice until end of turn.

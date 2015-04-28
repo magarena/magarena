@@ -4,5 +4,5 @@ value=2.500
 rarity=R
 type=Land
 ability={T}: Choose a color of a permanent you control. Add one mana of that color to your mana pool.
-timing=main
+timing=land
 oracle={T}: Choose a color of a permanent you control. Add one mana of that color to your mana pool.

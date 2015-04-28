@@ -8,5 +8,5 @@ cost={5}
 pt=-1/-1
 ability=Sunburst;\
         Remove two +1/+1 counters from SN: Remove a counter from target permanent.
-timing=main
+timing=artifact
 oracle=Sunburst\nRemove two +1/+1 counters from Spinal Parasite: Remove a counter from target permanent.

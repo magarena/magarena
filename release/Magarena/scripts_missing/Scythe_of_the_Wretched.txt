@@ -8,5 +8,5 @@ cost={2}
 ability=Equipped creature gets +2/+2.;\
         Whenever a creature dealt damage by equipped creature this turn dies, return that card to the battlefield under your control. Attach SN to that creature.;\
         Equip {4}
-timing=main
+timing=equipment
 oracle=Equipped creature gets +2/+2.\nWhenever a creature dealt damage by equipped creature this turn dies, return that card to the battlefield under your control. Attach Scythe of the Wretched to that creature.\nEquip {4}

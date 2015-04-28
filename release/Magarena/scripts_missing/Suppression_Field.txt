@@ -5,5 +5,5 @@ rarity=U
 type=Enchantment
 cost={1}{W}
 ability=Activated abilities cost {2} more to activate unless they're mana abilities.
-timing=main
+timing=enchantment
 oracle=Activated abilities cost {2} more to activate unless they're mana abilities.

@@ -5,5 +5,5 @@ rarity=R
 type=Enchantment
 cost={4}{B}
 ability=Whenever a creature enters the battlefield, destroy all other creatures that share a color with it. They can't be regenerated.
-timing=main
+timing=enchantment
 oracle=Whenever a creature enters the battlefield, destroy all other creatures that share a color with it. They can't be regenerated.

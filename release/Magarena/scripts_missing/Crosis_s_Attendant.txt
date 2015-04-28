@@ -7,5 +7,5 @@ subtype=Golem
 cost={5}
 pt=3/3
 ability={1}, Sacrifice SN: Add {U}{B}{R} to your mana pool.
-timing=main
+timing=artifact
 oracle={1}, Sacrifice Crosis's Attendant: Add {U}{B}{R} to your mana pool.

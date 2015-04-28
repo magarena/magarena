@@ -7,5 +7,5 @@ subtype=Hound
 cost={6}
 pt=3/3
 ability=Put a card from your hand on top of your library: Return SN to its owner's hand.
-timing=main
+timing=artifact
 oracle=Put a card from your hand on top of your library: Return Leashling to its owner's hand.

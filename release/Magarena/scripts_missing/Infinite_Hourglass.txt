@@ -7,5 +7,5 @@ cost={4}
 ability=At the beginning of your upkeep, put a time counter on SN.;\
         All creatures get +1/+0 for each time counter on SN.;\
         {3}: Remove a time counter from SN. Any player may activate this ability but only during any upkeep step.
-timing=main
+timing=artifact
 oracle=At the beginning of your upkeep, put a time counter on Infinite Hourglass.\nAll creatures get +1/+0 for each time counter on Infinite Hourglass.\n{3}: Remove a time counter from Infinite Hourglass. Any player may activate this ability but only during any upkeep step.

@@ -6,5 +6,5 @@ type=Legendary,Artifact
 cost={5}
 ability=Each legendary creature you control gets +1/+1 for each other legendary creature you control.;\
         {X}, {T}: Look at the top X cards of your library. You may reveal a legendary creature card from among them and put it into your hand. Put the rest on the bottom of your library in a random order.
-timing=main
+timing=artifact
 oracle=Each legendary creature you control gets +1/+1 for each other legendary creature you control.\n{X}, {T}: Look at the top X cards of your library. You may reveal a legendary creature card from among them and put it into your hand. Put the rest on the bottom of your library in a random order.

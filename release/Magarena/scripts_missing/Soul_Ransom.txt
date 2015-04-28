@@ -8,5 +8,5 @@ cost={2}{U}{B}
 ability=Enchant creature;\
         You control enchanted creature.;\
         Discard two cards: SN's controller sacrifices it, then draws two cards. Only any opponent may activate this ability.
-timing=main
+timing=aura
 oracle=Enchant creature\nYou control enchanted creature.\nDiscard two cards: Soul Ransom's controller sacrifices it, then draws two cards. Only any opponent may activate this ability.

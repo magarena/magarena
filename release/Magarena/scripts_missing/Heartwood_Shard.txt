@@ -5,5 +5,5 @@ rarity=U
 type=Artifact
 cost={3}
 ability={3}, {T} or {G}, {T}: Target creature gains trample until end of turn.
-timing=main
+timing=artifact
 oracle={3}, {T} or {G}, {T}: Target creature gains trample until end of turn.

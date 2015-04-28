@@ -5,5 +5,5 @@ rarity=R
 type=Enchantment
 cost={U}{B}{R}
 ability={3}: Look at the top three cards of target player's library, then put them back in any order.
-timing=main
+timing=enchantment
 oracle={3}: Look at the top three cards of target player's library, then put them back in any order.

@@ -5,5 +5,5 @@ rarity=U
 type=Enchantment
 cost={1}{G}
 ability=At the beginning of your upkeep, you may search your library for a basic land card, reveal that card, and put it into your hand. If you do, you skip your draw step this turn and shuffle your library.
-timing=main
+timing=enchantment
 oracle=At the beginning of your upkeep, you may search your library for a basic land card, reveal that card, and put it into your hand. If you do, you skip your draw step this turn and shuffle your library.

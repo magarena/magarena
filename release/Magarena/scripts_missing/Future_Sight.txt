@@ -6,5 +6,5 @@ type=Enchantment
 cost={2}{U}{U}{U}
 ability=Play with the top card of your library revealed.;\
         You may play the top card of your library.
-timing=main
+timing=enchantment
 oracle=Play with the top card of your library revealed.\nYou may play the top card of your library.

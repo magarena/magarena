@@ -8,5 +8,5 @@ cost={4}
 pt=0/0
 ability=Sunburst;\
         {1}, Remove four +1/+1 counters from SN: Target player draws three cards.
-timing=main
+timing=artifact
 oracle=Sunburst\n{1}, Remove four +1/+1 counters from Etched Oracle: Target player draws three cards.

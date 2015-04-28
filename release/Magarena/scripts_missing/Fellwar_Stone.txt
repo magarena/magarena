@@ -5,5 +5,5 @@ rarity=U
 type=Artifact
 cost={2}
 ability={T}: Add to your mana pool one mana of any color that a land an opponent controls could produce.
-timing=main
+timing=artifact
 oracle={T}: Add to your mana pool one mana of any color that a land an opponent controls could produce.

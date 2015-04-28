@@ -5,5 +5,5 @@ rarity=R
 type=Legendary,Artifact
 cost={2}
 ability=If you would flip a coin, instead flip two coins and ignore one.
-timing=main
+timing=artifact
 oracle=If you would flip a coin, instead flip two coins and ignore one.

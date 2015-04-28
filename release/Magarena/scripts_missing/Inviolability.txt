@@ -7,5 +7,5 @@ subtype=Aura
 cost={1}{W}
 ability=Enchant creature;\
         Prevent all damage that would be dealt to enchanted creature.
-timing=main
+timing=aura
 oracle=Enchant creature\nPrevent all damage that would be dealt to enchanted creature.

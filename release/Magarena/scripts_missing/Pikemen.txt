@@ -8,4 +8,4 @@ cost={1}{W}
 pt=1/1
 ability=First strike; banding
 timing=main
-oracle=First strike; banding
+oracle=First strike, banding

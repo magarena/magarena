@@ -5,5 +5,5 @@ rarity=U
 type=Enchantment
 cost={U}{U}
 ability={1}{U}{U}, Sacrifice a blue creature: Put X 1/1 blue Camarid creature tokens onto the battlefield, where X is the sacrificed creature's converted mana cost.
-timing=main
+timing=enchantment
 oracle={1}{U}{U}, Sacrifice a blue creature: Put X 1/1 blue Camarid creature tokens onto the battlefield, where X is the sacrificed creature's converted mana cost.

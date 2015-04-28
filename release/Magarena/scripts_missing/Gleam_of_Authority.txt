@@ -8,5 +8,5 @@ cost={1}{W}
 ability=Enchant creature;\
         Enchanted creature gets +1/+1 for each +1/+1 counter on other creatures you control.;\
         Enchanted creature has vigilance and "{W}, {T}: Bolster 1."
-timing=main
+timing=aura
 oracle=Enchant creature\nEnchanted creature gets +1/+1 for each +1/+1 counter on other creatures you control.\nEnchanted creature has vigilance and "{W}, {T}: Bolster 1."

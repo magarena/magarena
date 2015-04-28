@@ -5,5 +5,5 @@ rarity=U
 type=Enchantment
 cost={2}{B}
 ability={4}: Return target creature card from a graveyard to its owner's hand. Any player may activate this ability but only any time he or she could cast a sorcery.
-timing=main
+timing=enchantment
 oracle={4}: Return target creature card from a graveyard to its owner's hand. Any player may activate this ability but only any time he or she could cast a sorcery.

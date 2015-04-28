@@ -5,5 +5,5 @@ rarity=R
 type=Enchantment
 cost={2}{G}
 ability=Players can cast spells and activate abilities only during their own turns.
-timing=main
+timing=enchantment
 oracle=Players can cast spells and activate abilities only during their own turns.

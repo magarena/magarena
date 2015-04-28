@@ -8,5 +8,5 @@ cost={4}
 ability=Equipped creature gets +2/+2 and has infect.;\
         Whenever SN becomes unattached from a permanent, sacrifice that permanent.;\
         Equip {2}
-timing=main
+timing=equipment
 oracle=Equipped creature gets +2/+2 and has infect.\nWhenever Grafted Exoskeleton becomes unattached from a permanent, sacrifice that permanent.\nEquip {2}

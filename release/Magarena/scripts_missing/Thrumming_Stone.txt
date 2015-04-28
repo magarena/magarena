@@ -5,5 +5,5 @@ rarity=R
 type=Legendary,Artifact
 cost={5}
 ability=Spells you cast have ripple 4.
-timing=main
+timing=artifact
 oracle=Spells you cast have ripple 4.

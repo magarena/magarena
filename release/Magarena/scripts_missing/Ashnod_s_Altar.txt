@@ -5,5 +5,5 @@ rarity=R
 type=Artifact
 cost={3}
 ability=Sacrifice a creature: Add {2} to your mana pool.
-timing=main
+timing=artifact
 oracle=Sacrifice a creature: Add {2} to your mana pool.

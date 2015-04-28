@@ -5,5 +5,5 @@ rarity=R
 type=Artifact
 cost={4}
 ability={1}: The next time a source of your choice would deal damage to target creature this turn, that source deals that damage to you instead.
-timing=main
+timing=artifact
 oracle={1}: The next time a source of your choice would deal damage to target creature this turn, that source deals that damage to you instead.

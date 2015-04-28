@@ -5,5 +5,5 @@ rarity=R
 type=Artifact
 cost={3}
 ability=As long as SN is untapped, each player chooses artifact, creature, or land during his or her untap step. That player can untap only permanents of the chosen type this step.
-timing=main
+timing=artifact
 oracle=As long as Storage Matrix is untapped, each player chooses artifact, creature, or land during his or her untap step. That player can untap only permanents of the chosen type this step.

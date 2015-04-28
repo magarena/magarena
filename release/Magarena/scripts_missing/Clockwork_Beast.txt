@@ -9,5 +9,5 @@ pt=0/4
 ability=SN enters the battlefield with seven +1/+0 counters on it.;\
         At end of combat, if SN attacked or blocked this combat, remove a +1/+0 counter from it.;\
         {X}, {T}: Put up to X +1/+0 counters on SN. This ability can't cause the total number of +1/+0 counters on SN to be greater than seven. Activate this ability only during your upkeep.
-timing=main
+timing=artifact
 oracle=Clockwork Beast enters the battlefield with seven +1/+0 counters on it.\nAt end of combat, if Clockwork Beast attacked or blocked this combat, remove a +1/+0 counter from it.\n{X}, {T}: Put up to X +1/+0 counters on Clockwork Beast. This ability can't cause the total number of +1/+0 counters on Clockwork Beast to be greater than seven. Activate this ability only during your upkeep.

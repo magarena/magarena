@@ -5,5 +5,5 @@ rarity=R
 type=Enchantment
 cost={2}{R}
 ability={3}{R}{R}: Untap all creatures you control. After this main phase, there is an additional combat phase followed by an additional main phase. Activate this ability only any time you could cast a sorcery.
-timing=main
+timing=enchantment
 oracle={3}{R}{R}: Untap all creatures you control. After this main phase, there is an additional combat phase followed by an additional main phase. Activate this ability only any time you could cast a sorcery.

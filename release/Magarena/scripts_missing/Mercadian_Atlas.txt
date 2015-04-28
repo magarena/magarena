@@ -5,5 +5,5 @@ rarity=R
 type=Artifact
 cost={5}
 ability=At the beginning of your end step, if you didn't play a land this turn, you may draw a card.
-timing=main
+timing=artifact
 oracle=At the beginning of your end step, if you didn't play a land this turn, you may draw a card.

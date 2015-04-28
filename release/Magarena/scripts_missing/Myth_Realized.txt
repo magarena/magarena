@@ -7,5 +7,5 @@ cost={W}
 ability=Whenever you cast a noncreature spell, put a lore counter on SN.;\
         {2}{W}: Put a lore counter on SN.;\
         {W}: Until end of turn, SN becomes a Monk Avatar creature in addition to its other types and gains "This creature's power and toughness are each equal to the number of lore counters on it."
-timing=main
+timing=enchantment
 oracle=Whenever you cast a noncreature spell, put a lore counter on Myth Realized.\n{2}{W}: Put a lore counter on Myth Realized.\n{W}: Until end of turn, Myth Realized becomes a Monk Avatar creature in addition to its other types and gains "This creature's power and toughness are each equal to the number of lore counters on it."

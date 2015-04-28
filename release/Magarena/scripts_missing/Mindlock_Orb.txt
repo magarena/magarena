@@ -5,5 +5,5 @@ rarity=R
 type=Artifact
 cost={3}{U}
 ability=Players can't search libraries.
-timing=main
+timing=artifact
 oracle=Players can't search libraries.

@@ -5,5 +5,5 @@ rarity=R
 type=Enchantment
 cost={3}{U}{U}
 ability=Whenever a player casts a spell, any other player may pay that spell's mana cost. If a player does, counter the spell.
-timing=main
+timing=enchantment
 oracle=Whenever a player casts a spell, any other player may pay that spell's mana cost. If a player does, counter the spell.

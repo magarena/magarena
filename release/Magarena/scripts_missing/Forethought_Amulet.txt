@@ -6,5 +6,5 @@ type=Artifact
 cost={5}
 ability=At the beginning of your upkeep, sacrifice SN unless you pay {3}.;\
         If an instant or sorcery source would deal 3 or more damage to you, it deals 2 damage to you instead.
-timing=main
+timing=artifact
 oracle=At the beginning of your upkeep, sacrifice Forethought Amulet unless you pay {3}.\nIf an instant or sorcery source would deal 3 or more damage to you, it deals 2 damage to you instead.

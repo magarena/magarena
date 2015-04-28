@@ -5,5 +5,5 @@ rarity=R
 type=Land
 ability=When you play another land, sacrifice SN.;\
         {T}: Add {2} to your mana pool.
-timing=main
+timing=land
 oracle=When you play another land, sacrifice City of Traitors.\n{T}: Add {2} to your mana pool.

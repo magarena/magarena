@@ -5,5 +5,5 @@ rarity=U
 type=Artifact
 cost={0}
 ability={T}, Sacrifice SN: The next time a source of your choice would deal damage to you this turn, prevent half that damage, rounded down.
-timing=main
+timing=artifact
 oracle={T}, Sacrifice Dark Sphere: The next time a source of your choice would deal damage to you this turn, prevent half that damage, rounded down.

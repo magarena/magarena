@@ -5,5 +5,5 @@ rarity=U
 type=Artifact
 cost={3}
 ability={3}, {T}, Sacrifice SN: Search your library for an Island card, a Swamp card, and a Mountain card. Reveal those cards and put them into your hand. Then shuffle your library.
-timing=main
+timing=artifact
 oracle={3}, {T}, Sacrifice Gem of Becoming: Search your library for an Island card, a Swamp card, and a Mountain card. Reveal those cards and put them into your hand. Then shuffle your library.

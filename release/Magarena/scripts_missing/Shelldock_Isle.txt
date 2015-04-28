@@ -6,5 +6,5 @@ type=Land
 ability=Hideaway;\
         {T}: Add {U} to your mana pool.;\
         {U}, {T}: You may play the exiled card without paying its mana cost if a library has twenty or fewer cards in it.
-timing=main
+timing=land
 oracle=Hideaway\n{T}: Add {U} to your mana pool.\n{U}, {T}: You may play the exiled card without paying its mana cost if a library has twenty or fewer cards in it.

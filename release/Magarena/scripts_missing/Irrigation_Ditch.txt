@@ -6,5 +6,5 @@ type=Land
 ability=SN enters the battlefield tapped.;\
         {T}: Add {W} to your mana pool.;\
         {T}, Sacrifice SN: Add {G}{U} to your mana pool.
-timing=main
+timing=land
 oracle=Irrigation Ditch enters the battlefield tapped.\n{T}: Add {W} to your mana pool.\n{T}, Sacrifice Irrigation Ditch: Add {G}{U} to your mana pool.

@@ -6,5 +6,5 @@ type=Artifact
 cost={3}
 ability={4}, {T}: Put a charge counter on SN.;\
         {T}, Remove three charge counters from SN: Take an extra turn after this one.
-timing=main
+timing=artifact
 oracle={4}, {T}: Put a charge counter on Magistrate's Scepter.\n{T}, Remove three charge counters from Magistrate's Scepter: Take an extra turn after this one.

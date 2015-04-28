@@ -5,5 +5,5 @@ rarity=U
 type=Enchantment
 cost={2}{G}
 ability=Creatures you control have "Whenever this creature becomes blocked by a creature, this creature gets +1/+1 until end of turn."
-timing=main
+timing=enchantment
 oracle=Creatures you control have "Whenever this creature becomes blocked by a creature, this creature gets +1/+1 until end of turn."

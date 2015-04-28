@@ -7,5 +7,5 @@ subtype=Aura
 cost={G/W}{G/W}
 ability=Enchant player;\
         If a card would be put into enchanted player's graveyard from anywhere, instead that card is revealed and put on the bottom of that player's library.
-timing=main
+timing=aura
 oracle=Enchant player\nIf a card would be put into enchanted player's graveyard from anywhere, instead that card is revealed and put on the bottom of that player's library.

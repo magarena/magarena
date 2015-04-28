@@ -6,5 +6,5 @@ type=Artifact
 cost={2}
 ability=Whenever you cast a noncreature spell, put a lore counter on SN.;\
         {3}, {T}: Target creature you control gets +1/+1 until end of turn for each lore counter on SN.
-timing=main
+timing=artifact
 oracle=Whenever you cast a noncreature spell, put a lore counter on Scroll of the Masters.\n{3}, {T}: Target creature you control gets +1/+1 until end of turn for each lore counter on Scroll of the Masters.

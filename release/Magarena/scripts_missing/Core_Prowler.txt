@@ -8,5 +8,5 @@ cost={4}
 pt=2/2
 ability=Infect;\
         When SN dies, proliferate.
-timing=main
+timing=artifact
 oracle=Infect\nWhen Core Prowler dies, proliferate.

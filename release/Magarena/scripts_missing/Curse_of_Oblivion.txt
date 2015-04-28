@@ -7,5 +7,5 @@ subtype=Aura,Curse
 cost={3}{B}
 ability=Enchant player;\
         At the beginning of enchanted player's upkeep, that player exiles two cards from his or her graveyard.
-timing=main
+timing=aura
 oracle=Enchant player\nAt the beginning of enchanted player's upkeep, that player exiles two cards from his or her graveyard.

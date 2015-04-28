@@ -7,5 +7,5 @@ subtype=Aura
 cost={U}
 ability=Enchant creature;\
         {U}{U}: Enchanted creature phases out.
-timing=main
+timing=aura
 oracle=Enchant creature\n{U}{U}: Enchanted creature phases out.

@@ -5,5 +5,5 @@ rarity=U
 type=Enchantment
 cost={1}{U}
 ability=Red spells cost {2} more to cast.
-timing=main
+timing=enchantment
 oracle=Red spells cost {2} more to cast.

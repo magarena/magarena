@@ -5,5 +5,5 @@ rarity=R
 type=Artifact
 cost={3}
 ability=Creatures with landwalk abilities can be blocked as though they didn't have those abilities.
-timing=main
+timing=artifact
 oracle=Creatures with landwalk abilities can be blocked as though they didn't have those abilities.

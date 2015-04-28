@@ -5,5 +5,5 @@ rarity=U
 type=Enchantment
 cost={1}{U}
 ability=Whenever a creature you control attacks, it phases out at end of combat.
-timing=main
+timing=enchantment
 oracle=Whenever a creature you control attacks, it phases out at end of combat.

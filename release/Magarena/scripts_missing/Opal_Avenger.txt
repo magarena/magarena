@@ -5,5 +5,5 @@ rarity=R
 type=Enchantment
 cost={2}{W}
 ability=When you have 10 or less life, if SN is an enchantment, SN becomes a 3/5 Soldier creature.
-timing=main
+timing=enchantment
 oracle=When you have 10 or less life, if Opal Avenger is an enchantment, Opal Avenger becomes a 3/5 Soldier creature.

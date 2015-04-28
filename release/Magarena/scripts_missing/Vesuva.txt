@@ -4,5 +4,5 @@ value=2.500
 rarity=R
 type=Land
 ability=You may have SN enter the battlefield tapped as a copy of any land on the battlefield.
-timing=main
+timing=land
 oracle=You may have Vesuva enter the battlefield tapped as a copy of any land on the battlefield.

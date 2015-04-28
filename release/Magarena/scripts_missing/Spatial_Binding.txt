@@ -5,5 +5,5 @@ rarity=U
 type=Enchantment
 cost={U}{B}
 ability=Pay 1 life: Until your next upkeep, target permanent can't phase out.
-timing=main
+timing=enchantment
 oracle=Pay 1 life: Until your next upkeep, target permanent can't phase out.

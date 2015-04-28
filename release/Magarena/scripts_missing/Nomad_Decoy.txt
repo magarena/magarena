@@ -7,6 +7,6 @@ subtype=Human,Nomad
 cost={2}{W}
 pt=1/2
 ability={W}, {T}: Tap target creature.;\
-        {W}{W}, {T}: Tap two target creatures. Activate this ability only if seven or more cards are in your graveyard.
+        Threshold — {W}{W}, {T}: Tap two target creatures. Activate this ability only if seven or more cards are in your graveyard.
 timing=main
 oracle={W}, {T}: Tap target creature.\nThreshold — {W}{W}, {T}: Tap two target creatures. Activate this ability only if seven or more cards are in your graveyard.

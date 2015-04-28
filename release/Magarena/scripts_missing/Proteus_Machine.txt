@@ -8,5 +8,5 @@ cost={3}
 pt=2/2
 ability=Morph {0};\
         When SN is turned face up, it becomes the creature type of your choice.
-timing=main
+timing=artifact
 oracle=Morph {0}\nWhen Proteus Machine is turned face up, it becomes the creature type of your choice.

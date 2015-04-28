@@ -7,5 +7,5 @@ subtype=Aura
 cost={G}
 ability=Enchant land you control;\
         Tap enchanted land: Target blocking creature gets +1/+2 until end of turn. Activate this ability only if enchanted land is untapped.
-timing=main
+timing=aura
 oracle=Enchant land you control\nTap enchanted land: Target blocking creature gets +1/+2 until end of turn. Activate this ability only if enchanted land is untapped.

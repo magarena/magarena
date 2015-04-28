@@ -8,5 +8,5 @@ cost={4}
 ability=Equipped creature has double strike.;\
         Whenever equipped creature attacks, you may have target creature block it this turn if able.;\
         Equip {4}
-timing=main
+timing=equipment
 oracle=Equipped creature has double strike.\nWhenever equipped creature attacks, you may have target creature block it this turn if able.\nEquip {4}

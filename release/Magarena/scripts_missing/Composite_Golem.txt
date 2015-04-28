@@ -7,5 +7,5 @@ subtype=Golem
 cost={6}
 pt=4/4
 ability=Sacrifice SN: Add {W}{U}{B}{R}{G} to your mana pool.
-timing=main
+timing=artifact
 oracle=Sacrifice Composite Golem: Add {W}{U}{B}{R}{G} to your mana pool.

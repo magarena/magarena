@@ -7,5 +7,5 @@ subtype=Vedalken,Wizard
 cost={U}
 pt=1/1
 ability={2}{U}, {T}, Sacrifice a white creature, a blue creature, and a black creature: Search your library for a card named Sphinx Sovereign and put it onto the battlefield. Then shuffle your library.
-timing=main
+timing=artifact
 oracle={2}{U}, {T}, Sacrifice a white creature, a blue creature, and a black creature: Search your library for a card named Sphinx Sovereign and put it onto the battlefield. Then shuffle your library.

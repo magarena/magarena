@@ -7,5 +7,5 @@ subtype=Aura,Curse
 cost={2}{R}
 ability=Enchant player;\
         Creatures enchanted player controls attack each turn if able.
-timing=main
+timing=aura
 oracle=Enchant player\nCreatures enchanted player controls attack each turn if able.

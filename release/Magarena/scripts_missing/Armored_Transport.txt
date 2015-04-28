@@ -7,5 +7,5 @@ subtype=Construct
 cost={3}
 pt=2/1
 ability=Prevent all combat damage that would be dealt to SN by creatures blocking it.
-timing=main
+timing=artifact
 oracle=Prevent all combat damage that would be dealt to Armored Transport by creatures blocking it.

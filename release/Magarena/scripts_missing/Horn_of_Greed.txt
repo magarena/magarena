@@ -5,5 +5,5 @@ rarity=R
 type=Artifact
 cost={3}
 ability=Whenever a player plays a land, that player draws a card.
-timing=main
+timing=artifact
 oracle=Whenever a player plays a land, that player draws a card.

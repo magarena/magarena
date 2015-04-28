@@ -5,5 +5,5 @@ rarity=M
 type=Enchantment
 cost={W}{U}{B}{R}{G}
 ability=The first spell you cast each turn has cascade.
-timing=main
+timing=enchantment
 oracle=The first spell you cast each turn has cascade.
