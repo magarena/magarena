@@ -42,8 +42,7 @@ public class MagicCoinFlipEvent extends MagicEvent {
             public void executeEvent(final MagicGame game, final MagicEvent event) {
                 //True = Heads
                 final MagicPlayer player = event.getPlayer();
-                final MagicRandom rng = new MagicRandom(event.getStateId());
-                boolean coinFace = rng.nextInt(2) == 0;
+                boolean coinFace = (player.getStateId() & 1) == 0;
                 boolean playerFace = event.isMode(1);
                 if (coinFace) {
                     game.logAppendMessage(player, "Coin landed heads.");
