@@ -7,6 +7,6 @@ subtype=Beast
 cost={4}{R}
 pt=3/3
 ability=Protection from red;\
-        SN gets +1/+1 as long as an opponent controls a white permanent.
+        SN gets +1/+1 as long as an opponent controls a nontoken white permanent.
 timing=main
-oracle=Protection from red. Beasts of Bogardan gets +1/+1 as long as an opponent controls a white permanent.
+oracle=Protection from red. Beasts of Bogardan gets +1/+1 as long as an opponent controls a nontoken white permanent.

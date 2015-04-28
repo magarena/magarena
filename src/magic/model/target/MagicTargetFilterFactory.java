@@ -426,6 +426,12 @@ public class MagicTargetFilterFactory {
         }
     };
     
+    public static final MagicPermanentFilterImpl NONTOKEN_WHITE_PERMANENT=new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+            return !target.isToken() && target.hasColor(MagicColor.White);
+        }
+    };
+    
     public static final MagicPermanentFilterImpl NONTOKEN_ELF=new MagicPermanentFilterImpl() {
         public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
             return !target.isToken() && target.hasSubType(MagicSubType.Elf);
@@ -2434,6 +2440,7 @@ public class MagicTargetFilterFactory {
         single.put("nonland permanent", NONLAND_PERMANENT);
         single.put("nontoken permanent", NONTOKEN_PERMANENT);
         single.put("nontoken red permanent", NONTOKEN_RED_PERMANENT);
+        single.put("nontoken white permanent", NONTOKEN_WHITE_PERMANENT);
         single.put("nonland permanent with converted mana cost 3 or less", NONLAND_PERMANENT_CMC_LEQ_3);
         single.put("black or red permanent", BLACK_OR_RED_PERMANENT);
         single.put("black or green permanent", BLACK_OR_GREEN_PERMANENT);
