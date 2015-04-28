@@ -244,8 +244,12 @@ public class MCTSAI implements MagicAI {
         // play a simulated game to get score
         // update all nodes along the path from root to new node
 
+        final boolean running = System.currentTimeMillis() < END_TIME;
+
         // submit random play to executor
-        executor.submit(genSimulationTask(rootGame, path, queue));
+        if (running) {
+            executor.submit(genSimulationTask(rootGame, path, queue));
+        }
         
         // virtual loss + game theoretic value propagation
         final Iterator<MCTSGameTree> iter = path.descendingIterator();
@@ -272,7 +276,7 @@ public class MCTSAI implements MagicAI {
         }
        
         // end simulations once root is AI win or time is up
-        if (System.currentTimeMillis() < END_TIME && !root.isAIWin()) {
+        if (running && root.isAIWin() == false) {
             executor.submit(updateTask);
         } else {
             executor.shutdown();
