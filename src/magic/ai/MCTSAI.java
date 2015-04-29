@@ -378,9 +378,10 @@ public class MCTSAI implements MagicAI {
             if (curr.size() < choices.size()) {
                 final int idx = curr.size();
                 final Object[] choice = choices.get(idx);
+                final String choiceStr = MCTSGameTree.obj2String(choice[0]);
                 game.executeNextEvent(choice);
                 final MCTSGameTree child = new MCTSGameTree(curr, idx, game.getScore());
-                assert (child.desc = MCTSGameTree.obj2String(choice[0])).equals(child.desc);
+                assert (child.desc = choiceStr).equals(child.desc);
                 curr.addChild(child);
                 path.add(child);
                 return path;
