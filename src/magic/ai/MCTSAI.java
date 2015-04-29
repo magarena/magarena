@@ -7,6 +7,7 @@ import magic.model.MagicGameLog;
 import magic.model.MagicPlayer;
 import magic.model.choice.MagicBuilderPayManaCostResult;
 import magic.model.event.MagicEvent;
+import magic.exception.handler.ConsoleExceptionHandler;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -137,6 +138,7 @@ public class MCTSAI implements MagicAI {
         log("MCTS cached=" + root.getNumSim());
         
         sims = 0;
+        final ConsoleExceptionHandler handler = new ConsoleExceptionHandler(); 
         final ExecutorService executor = Executors.newFixedThreadPool(THREADS); 
         final BlockingQueue<Runnable> queue = new LinkedBlockingQueue<>();
 
@@ -147,7 +149,11 @@ public class MCTSAI implements MagicAI {
         final Runnable updateTask = new Runnable() {
             @Override
             public void run() {
-                TreeUpdate(this, root, aiGame, executor, queue, END_TIME);
+                try {
+                    TreeUpdate(this, root, aiGame, executor, queue, END_TIME);
+                } catch (final Throwable ex) {
+                    handler.uncaughtException(Thread.currentThread(), ex);
+                }
             }
         };
         
