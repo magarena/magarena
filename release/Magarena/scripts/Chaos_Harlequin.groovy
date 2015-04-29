@@ -21,22 +21,14 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            for (final MagicCard card : event.getPlayer().getLibrary().getCardsFromTop(1)) {
-                game.doAction(new RemoveCardAction(
-                    card,
-                    MagicLocationType.OwnersLibrary
-                ));
-                game.doAction(new MoveCardAction(
-                    card,
-                    MagicLocationType.OwnersLibrary,
-                    MagicLocationType.Exile
-                ));
-                game.doAction(new ChangeTurnPTAction(
-                    event.getPermanent(),
-                    card.hasType(MagicType.Land) ? -4 : +2,
-                    0
-                ));
-            }
+            final MagicCard card = event.getPlayer().getLibrary().getCardAtTop();
+            game.doAction(new RemoveCardAction(card, MagicLocationType.OwnersLibrary));
+            game.doAction(new MoveCardAction(card, MagicLocationType.OwnersLibrary, MagicLocationType.Exile));
+            game.doAction(new ChangeTurnPTAction(
+                event.getPermanent(),
+                card.hasType(MagicType.Land) ? -4 : +2,
+                0
+            ));
         }
     }
 ]

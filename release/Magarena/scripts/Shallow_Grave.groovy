@@ -14,14 +14,12 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
-            final MagicCardList top1 = player.getGraveyard().getCardsFromTop(1);
-            for (final MagicCard card : top1) {
-                game.doAction(new ReanimateAction(
-                    card,
-                    player,
-                    [MagicPlayMod.HASTE_UEOT, MagicPlayMod.EXILE_AT_END_OF_TURN]
-                ));
-            }
+            final MagicCard card = player.getGraveyard().getCardAtTop();
+            game.doAction(new ReanimateAction(
+                card,
+                player,
+                [MagicPlayMod.HASTE_UEOT, MagicPlayMod.EXILE_AT_END_OF_TURN]
+            ));
         }
     }
 ]

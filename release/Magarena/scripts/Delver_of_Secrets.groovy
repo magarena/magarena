@@ -21,16 +21,16 @@ def ACTION = {
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            for (final MagicCard card : event.getPlayer().getLibrary().getCardsFromTop(1)) {
-                game.doAction(new LookAction(card, event.getPlayer(), "top card of your library"));
-                game.addEvent(new MagicEvent(
-                    event.getSource(),
-                    new MagicMayChoice("Reveal the top card of your library?"),
-                    card,
-                    ACTION,
-                    ""
-                ));
-            }
+            final MagicPlayer player = event.getPlayer();
+            final MagicCard card = player.getLibrary().getCardAtTop();
+            game.doAction(new LookAction(card, player, "top card of your library"));
+            game.addEvent(new MagicEvent(
+                event.getSource(),
+                new MagicMayChoice("Reveal the top card of your library?"),
+                card,
+                ACTION,
+                ""
+            ));
         }
     }
 ]

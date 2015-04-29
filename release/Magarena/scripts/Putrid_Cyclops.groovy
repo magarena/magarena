@@ -12,11 +12,10 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.addEvent(new MagicScryEvent(event));
-            for (final MagicCard card : event.getPlayer().getLibrary().getCardsFromTop(1)) {
-                game.doAction(new RevealAction(card));
-                final int X = card.getConvertedCost();
-                game.doAction(new ChangeTurnPTAction(event.getPermanent(),-X,-X));
-            }
+            final MagicCard card = event.getPlayer().getLibrary().getCardAtTop();
+            game.doAction(new RevealAction(card));
+            final int X = card.getConvertedCost();
+            game.doAction(new ChangeTurnPTAction(event.getPermanent(),-X,-X));
         }
     }
 ]
