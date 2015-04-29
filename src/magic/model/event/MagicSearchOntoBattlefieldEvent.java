@@ -42,12 +42,6 @@ public class MagicSearchOntoBattlefieldEvent extends MagicEvent {
             ""
         );
     }
-    
-    @Override
-    public void onAddEvent(final MagicGame game) {
-        // reveal library so that search can choose the actual cards
-        game.doAction(new AIRevealAction(getPlayer().getLibrary()));
-    }
 
     private static final MagicEventAction EventAction(final List<? extends MagicPermanentAction> mods) {
         return new MagicEventAction() {
@@ -60,6 +54,7 @@ public class MagicSearchOntoBattlefieldEvent extends MagicEvent {
                     event.processChosenCards(game, new MagicCardAction() {
                         public void doAction(final MagicCard card) {
                             game.logAppendMessage(event.getPlayer(), "Found (" + card + ").");
+                            game.doAction(new AIRevealAction(card));
                             game.doAction(new RemoveCardAction(card,MagicLocationType.OwnersLibrary));
                             game.doAction(new PlayCardAction(card,event.getPlayer(),mods));
                         }
@@ -69,14 +64,13 @@ public class MagicSearchOntoBattlefieldEvent extends MagicEvent {
                     event.processTargetCard(game, new MagicCardAction() {
                         public void doAction(final MagicCard card) {
                             game.logAppendMessage(event.getPlayer(), "Found (" + card + ").");
+                            game.doAction(new AIRevealAction(card));
                             game.doAction(new RemoveCardAction(card,MagicLocationType.OwnersLibrary));
                             game.doAction(new PlayCardAction(card,event.getPlayer(),mods));
                         }
                     });
                     game.doAction(new ShuffleLibraryAction(event.getPlayer()));
                 }
-                // hide back all the cards in the library
-                game.doAction(AIRevealAction.Hide(event.getPlayer().getLibrary()));
             }
         };
     }

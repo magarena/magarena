@@ -31,16 +31,12 @@ public class MagicSearchToLocationEvent extends MagicEvent {
             ""
         );
     }
-    
-    @Override
-    public void onAddEvent(final MagicGame game) {
-        // reveal library so that search can choose the actual cards
-        game.doAction(new AIRevealAction(getPlayer().getLibrary()));
-    }
 
     private static final MagicEventAction EventAction = new MagicEventAction() {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
+            final MagicLocationType toLocation = MagicLocationType.values()[event.getRefInt()];
+
             // choice could be MagicMayChoice or MagicTargetChoice or MagicFromCardListChoice
             if (event.isNo()) {
                 // do nothing
@@ -49,8 +45,8 @@ public class MagicSearchToLocationEvent extends MagicEvent {
                 event.processChosenCards(game, new MagicCardAction() {
                     public void doAction(final MagicCard card) {
                         game.logAppendMessage(event.getPlayer(), "Found (" + card + ").");
+                        game.doAction(new AIRevealAction(card));
                         game.doAction(new RemoveCardAction(card,MagicLocationType.OwnersLibrary));
-                        final MagicLocationType toLocation = MagicLocationType.values()[event.getRefInt()];
                         game.doAction(new MoveCardAction(card,MagicLocationType.OwnersLibrary, toLocation));
                     }
                 });
@@ -59,14 +55,12 @@ public class MagicSearchToLocationEvent extends MagicEvent {
                 event.processTargetCard(game, new MagicCardAction() {
                     public void doAction(final MagicCard card) {
                         game.logAppendMessage(event.getPlayer(), "Found (" + card + ").");
+                        game.doAction(new AIRevealAction(card));
                         game.doAction(new RemoveCardAction(card,MagicLocationType.OwnersLibrary));
-                        final MagicLocationType toLocation = MagicLocationType.values()[event.getRefInt()];
                         game.doAction(new MoveCardAction(card,MagicLocationType.OwnersLibrary, toLocation));
                     }
                 });
             }
-            // hide back all the cards in the library
-            game.doAction(AIRevealAction.Hide(event.getPlayer().getLibrary()));
         }
     };
 }

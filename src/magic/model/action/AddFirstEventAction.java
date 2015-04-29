@@ -13,7 +13,6 @@ public class AddFirstEventAction extends MagicAction {
 
     @Override
     public void doAction(final MagicGame game) {
-        event.onAddEvent(game);
         game.getEvents().addFirst(event);
     }
 

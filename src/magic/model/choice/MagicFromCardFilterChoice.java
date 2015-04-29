@@ -112,8 +112,16 @@ public class MagicFromCardFilterChoice extends MagicChoice {
             final MagicSource source) {
 
         final List<Object> options = new ArrayList<Object>();
-        final List<MagicCard> cList = player.filterCards(filter);
+        final List<MagicCard> oList = player.filterCards(filter);
+        final List<Boolean> known = new ArrayList<Boolean>(oList.size());
 
+        //reveal the cards
+        for (final MagicCard card : oList) {
+            known.add(card.isGameKnown());
+            card.setGameKnown(true);
+        }
+
+        final List<MagicCard> cList = new MagicCardList(oList);
         Collections.sort(cList);
 
         final int actualAmount = Math.min(amount,cList.size());
@@ -121,10 +129,15 @@ public class MagicFromCardFilterChoice extends MagicChoice {
             options.add(new MagicCardChoiceResult());
         } else if (upTo) {
             createOptionsUpTo(options,cList,new MagicCard[actualAmount],0,actualAmount,0);
-            //System.out.println("END");
         } else {
             createOptions(options,cList,new MagicCard[actualAmount],0,actualAmount,0);
         }
+        
+        //hide the cards
+        for (int i = 0; i < oList.size(); i++) {
+            oList.get(i).setGameKnown(known.get(i));
+        }
+        
         return options;
     }
 
