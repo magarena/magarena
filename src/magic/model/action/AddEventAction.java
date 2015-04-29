@@ -7,8 +7,8 @@ public class AddEventAction extends MagicAction {
 
     private final MagicEvent event;
 
-    public AddEventAction(final MagicEvent event) {
-        this.event=event;
+    public AddEventAction(final MagicEvent aEvent) {
+        event = aEvent;
     }
 
     @Override
