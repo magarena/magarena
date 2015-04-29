@@ -143,9 +143,7 @@ public class MagicCard
     }
 
     public long getStateId() {
-        return getCardDefinition().getIndex() +
-               (aiKnown ? 1024 : 0) + 
-               (gameKnown ? 2048 : 0);
+        return getCardDefinition().getIndex() * (aiKnown ? 10 : 1) * (gameKnown ? 100 : 1);
     }
 
     public int getImageIndex() {
