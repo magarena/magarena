@@ -143,7 +143,12 @@ public class MagicCard
     }
 
     public long getStateId() {
-        return getCardDefinition().getIndex() * (aiKnown ? 10 : 1) * (gameKnown ? 100 : 1);
+        return magic.model.MurmurHash3.hash(new long[] {
+            getCardDefinition().getIndex(),
+            aiKnown   ? 1L : -1L,
+            gameKnown ? 1L : -1L,
+            token     ? 1L : -1L
+        });
     }
 
     public int getImageIndex() {
