@@ -82,6 +82,8 @@ ShawnieBoy
     rename getDuelFile() to getLatestDuelFile() and actual duel file to "latest.duel".
 
     Restore selected deck type and deck name on opening DeckChooserDialog.
+    
+    support 'reveal the top [amount] cards of your library. Put all [cards] revealed this way into your hand and the rest on the bottom of your library in any order.'
     support 'Whenever an opponent draws a card, <effect>' and 'Whenever a player draws a card, <effect>'
     support 'At the beginning of your draw step, <effect>'
     support 'At the beginning of each other player's draw step, <effect>'
@@ -113,10 +115,13 @@ ShawnieBoy
     add effect 'SN gets [pt] for each [target]'
     add ability 'when [permanent] deals damage to you, [effect]'
     add ability 'At the beginning of combat on your turn, [effect]'
+    add ability 'when [permanent] deals combat damage to an opponent, [effect]' and 
+    'when [permanent] becomes the target of [spell/ability], [effect]
     
     reveal face down creature when it leaves the battlefield
     Catch error on resume duel if player deck invalid (fixes #220).
     fix #219 Ancient Grudge was targeting artifact or enchantment
+    Fix: correct oracle and ability for Beasts of Bogardan - include nontoken
     show real card definition only if controller is human, fixes issue #215
     Disable Generate Deck button unless deck generator is random. Fixes #167.
     move clearing of message into clearValidChoices, Ensures it is the next event after choices are cleared, possible fix for #200
