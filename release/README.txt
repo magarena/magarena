@@ -119,34 +119,29 @@ ShawnieBoy
   * effect: Look at the top card of your library. You may put that card on the bottom of your library.
     
 - fixed the following bugs:
+  * crash when clicking on "Generate Deck" button if prebuild deck was used (issue #167)
+  * crash due to concurrent modification in MagicLogBook (issue #121)
+  * crash due to two spell on the stack having each other as target (issue #190)
   * player targeting highlight disappears/flashes (issue #148)
   * player was allowed to see the AI's face down cards (issue #215)
-  * clicking on "Generate Deck" when using a prebuilt deck leads to a crash (issue #167)
+  * message in user action panel disappears/flashes (issue #200)
+  * horizontal scrollbar appears in user action panel (issue #120)
+  * catch error on resume duel if player's deck is invalid (issue #220)
   * face down cards were not revealed when they leave the battlefield
+  * type cycling did not count as cycling for the purpose of cycling triggers (issue #179)
+  * graft did not ensure that source had a +1/+1 before moving the counter onto to the target
+  * comes into play modifications did not affect comes into play triggers as they were applied too late (issue #151)
+  * show mana symbols on permanents base on actual mana ability instead of what is defined by the card (issue #158)
   * Ambush Krotiq's second ability does nothing when it resolves
   * Alesha, Who Smiles at Death's second ability did not remove card from the graveyard
-  * Catch error on resume duel if player deck invalid (issue #220).
+  * Alpha Brawl's effect caused the chosen creature to damage itself
   * Ancient Grudge was targeting artifact or enchantment (issue #219)
   * Beasts of Bogardan was checking for white permanent, should be nontoken white permanent
-  * Shorecrasher Mimic was checking for red and white spells
-  * Bladewing the Risen did not have flying
   * Bullwhip was dealing 2 damage, should be 1 damage
-    move clearing of message into clearValidChoices, Ensures it is the next event after choices are cleared, possible fix for #200
-    fix issue 120 : Horizontal scrollbar issue in user action panel.
-    partial upgrade to March of the Machines #16, add WAS_NONCREATURE_ARTIFACT condition
-    put a copy of the clone in copyMap first, MagicItemOnStack was the only one missing the put statement
-    fixes issue #190 (infinite loop on copying)
-    made MagicLogBook.add synchronized to prevent concurrent modification, fixes issue #121
-    fix: #179 add Cycling triggers to TypeCyclingActivation
-    allow Graft to check there is a +1/+1 counter to move for multiple triggers on the stack
-    fix Graft to check there is a +1/+1 counter to move 
-    If animations are enabled show pulsing border around avatar when player is valid choice (closes #149).
-    move modification before the first update so they can affect the comes into play triggers fixes issue #151
-    limit equip activation to at most twice per turn
-    draw mana symbols to indicate mana source base on permanent's mana activations
-    instead of card definition's mana activation fixes #158
-    fix: Alpha Brawl - Chosen creature doesn't damage itself.
-    fix: Fettergeist - Was counting a cost assuming itself always being a creature
+  * Bladewing the Risen did not have flying
+  * Fettergeist upkeep cost was computed assuming that it is always a creature
+  * March of the Machines causes all noncreature artifacts to be put into the graveyard
+  * Shorecrasher Mimic was checking for red and white spells
 
 - added the following cards:
 Abzan Beastmaster, Acid-Spewer Dragon, Ambuscade Shaman,
