@@ -87,53 +87,52 @@ ShawnieBoy
 - Restore selected deck type and deck name on opening DeckChooserDialog.
     
 - added the following to the card script:
-  * effect: Reveal the top <amount> cards of your library. Put all <cards> revealed this way into your hand and the rest on the bottom of your library in any order.
   * ability: Whenever an opponent draws a card, <effect>
   * ability: Whenever a player draws a card, <effect>
-  * ability: At the beginning of your draw step, [effect]
-  * ability: At the beginning of each other player's draw step, [effect]
-  * effect: SN becomes
+  * ability: At the beginning of your draw step, <effect>
+  * ability: At the beginning of each other player's draw step, <effect>
   * ability: Whenever SN blocks or becomes blocked by a <permanent>, <effect>
+  * ability: Whenever a <creature> attacks or blocks, <effect>
+  * ability: Whenever a <creature> blocks, <effect>
+  * ability: Whenever a <creature> attacks you, <effect>
+  * ability: Whenever a <permanent> becomes tapped, <effect>
+  * ability: Whenever you scry, <effect>
+  * ability: <costs>: Return SN from your graveyard to your hand.
+  * ability: SN gets <pt change> for each <target>
+  * ability: split second
+  * ability: When <permanent> deals damage to you, <effect>
+  * ability: When <permanent> deals combat damage to an opponent, <effect>
+  * ability: At the beginning of combat on your turn, <effect>
+  * ability: When <permanent> becomes the target of [spell/ability], <effect>
+  * effect: SN becomes <pt> <color> <subtype> <type> with <abilities> until end of turn. 
+  * effect: <target> becomes <pt> <color> <subtype> <type> with <abilities> until end of turn. 
   * effect: Destroy that <permanent>. 
   * effect: Destroy that <permanent> at end of combat.
   * effect: Return that <permanent> to its owner's hand at end of combat.
-  * ability: Whenever a <creature> attacks or blocks, <effect>
-  * ability: Whenever a <creature> blocks, <effect>
-    
-    support ability 'whenever a [creature] attacks you, [effect]'
-    add 'during the end of combat step' condition
-    add ability '[costs]: Return SN from your graveyard to your hand.'
-    add effect 'return sn from your graveyard to the battlefield.'
-    support effect 'return all [permanents] to their owner's hand.'
-    support ability 'whenever a [permanent] becomes tapped, [effect]'
-    fix #171 Alesha, Who Smiles at Death not removing card from graveyard.
-    support effect 'each [group] puts the top [amount] cards of his or her library into his or her graveyard.'
-    support effect 'search your library for up to [amount] [cards] and put them onto the battlefield. Then shuffle your library.'
-    fix missing addEvent in effect of Ambush Krotiq
-    correct logic for filter used in Stormtide Leviathan
-    support ability 'split second'
-    support effect 'clash with an opponent, if you win, [effect]'
-    support effect 'flip coin. if you win, [effect] if you lose, [effect]'
-    add ability 'SN gets [pt] for each [permanent]'
-    allow "Look at the top card of your library.
-    You may put that card on the bottom of your library." in script.
-    enable "Whenever you scry, <effect>" in scripting
-    add effect 'SN gets [pt] for each [target]'
-    add ability 'when [permanent] deals damage to you, [effect]'
-    add ability 'At the beginning of combat on your turn, [effect]'
-    add ability 'when [permanent] deals combat damage to an opponent, [effect]' and 
-    'when [permanent] becomes the target of [spell/ability], [effect]
+  * effect: Reveal the top <amount> cards of your library. Put all <cards> revealed this way into your hand and the rest on the bottom of your library in any order.
+  * effect: Return SN from your graveyard to the battlefield.
+  * effect: Return <permanents> to their owner's hand.
+  * effect: Each <player> puts the top <amount> cards of his or her library into his or her graveyard.
+  * effect: Search your library for up to <amount> <cards> and put them onto the battlefield. Then shuffle your library.
+  * effect: Clash with an opponent, if you win, <effect>
+  * effect: Flip coin. If you win, <effect> if you lose, <effect>'
+  * effect: Look at the top card of your library. You may put that card on the bottom of your library.
     
 - fixed the following bugs:
-    reveal face down creature when it leaves the battlefield
-    Catch error on resume duel if player deck invalid (fixes #220).
-    fix #219 Ancient Grudge was targeting artifact or enchantment
-    Fix: correct oracle and ability for Beasts of Bogardan - include nontoken
-    show real card definition only if controller is human, fixes issue #215
-    Disable Generate Deck button unless deck generator is random. Fixes #167.
+  * player targeting highlight disappears/flashes (issue #148)
+  * player was allowed to see the AI's face down cards (issue #215)
+  * clicking on "Generate Deck" when using a prebuilt deck leads to a crash (issue #167)
+  * face down cards were not revealed when they leave the battlefield
+  * Ambush Krotiq's second ability does nothing when it resolves
+  * Alesha, Who Smiles at Death's second ability did not remove card from the graveyard
+  * Catch error on resume duel if player deck invalid (issue #220).
+  * Ancient Grudge was targeting artifact or enchantment (issue #219)
+  * Beasts of Bogardan was checking for white permanent, should be nontoken white permanent
+  * Shorecrasher Mimic was checking for red and white spells
+  * Bladewing the Risen did not have flying
+  * Bullwhip was dealing 2 damage, should be 1 damage
     move clearing of message into clearValidChoices, Ensures it is the next event after choices are cleared, possible fix for #200
     fix issue 120 : Horizontal scrollbar issue in user action panel.
-    fix Shorecrasher Mimic was checking for red and white spells.
     partial upgrade to March of the Machines #16, add WAS_NONCREATURE_ARTIFACT condition
     put a copy of the clone in copyMap first, MagicItemOnStack was the only one missing the put statement
     fixes issue #190 (infinite loop on copying)
@@ -143,10 +142,7 @@ ShawnieBoy
     fix Graft to check there is a +1/+1 counter to move 
     If animations are enabled show pulsing border around avatar when player is valid choice (closes #149).
     move modification before the first update so they can affect the comes into play triggers fixes issue #151
-    fix: Bladewing the Risen should have flying
-    fixes #148 : Player targeting highlight disappears/flashes.
     limit equip activation to at most twice per turn
-    fix: Bullwhip was dealing 2 damage
     draw mana symbols to indicate mana source base on permanent's mana activations
     instead of card definition's mana activation fixes #158
     fix: Alpha Brawl - Chosen creature doesn't damage itself.
@@ -248,7 +244,7 @@ ShawnieBoy
   * effect: Put <card> on the bottom of its owner's library.
   * effect: SN becomes a <pt> <subtype> creature with <abilities>.
   * effect: <permanent> gain protection from the color of your choice until end of turn.
-  * effect: Counter [spell]. If that spell is countered this way, exile it instead of putting it into its owner's graveyard.
+  * effect: Counter <spell>. If that spell is countered this way, exile it instead of putting it into its owner's graveyard.
 
 - fixed the following bugs:
   * errors when playing sound causes program to crash (issue #112)
@@ -1443,7 +1439,7 @@ ShawnieBoy
   * effect: Remove <amount> <counter> from SN.
   * effect: Switch <chosen>'s power and toughness until end of turn.
   * effect: Switch SN's power and toughness until end of turn.
-  * effect: Put <chosen from hand> onto the battlefield [tapped]
+  * effect: Put <chosen from hand> onto the battlefield <tapped>
   * effect: SN deals <amount> damage to each <creature/player>
   * effect: SN deals damage to each <creature/player> and each <creature/player>
   * effect: Draw a card at the beginning of the next turn's upkeep.
