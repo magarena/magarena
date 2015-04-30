@@ -23,11 +23,13 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
-                final MagicCard card = it.getLibrary().getCardAtTop();
-                game.doAction(new RemoveCardAction(card,MagicLocationType.OwnersLibrary));
-                game.doAction(new MoveCardAction(card,MagicLocationType.OwnersLibrary,MagicLocationType.Exile));
-                if (card.hasType(MagicType.Land)) {
-                    game.doAction(new ChangeLifeAction(event.getPlayer(),1));
+                final MagicCardList top1 = it.getLibrary().getCardsFromTop(1);
+                for (final MagicCard card : top1) {
+                    game.doAction(new RemoveCardAction(card,MagicLocationType.OwnersLibrary));
+                    game.doAction(new MoveCardAction(card,MagicLocationType.OwnersLibrary,MagicLocationType.Exile));
+                    if (card.hasType(MagicType.Land)) {
+                        game.doAction(new ChangeLifeAction(event.getPlayer(),1));
+                    }
                 }
             });
         }

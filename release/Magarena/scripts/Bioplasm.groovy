@@ -11,13 +11,14 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicCard card = event.getPlayer().getLibrary().getCardAtTop();
-            game.doAction(new RemoveCardAction(card, MagicLocationType.OwnersLibrary));
-            game.doAction(new MoveCardAction(card, MagicLocationType.OwnersLibrary, MagicLocationType.Exile));
-            if (card.hasType(MagicType.Creature)) {
-                final int X = card.getPower();
-                final int Y = card.getToughness();
-                game.doAction(new ChangeTurnPTAction(event.getPermanent(), +X, +Y));
+            for (final MagicCard card : event.getPlayer().getLibrary().getCardsFromTop(1)) {
+                game.doAction(new RemoveCardAction(card, MagicLocationType.OwnersLibrary));
+                game.doAction(new MoveCardAction(card, MagicLocationType.OwnersLibrary, MagicLocationType.Exile));
+                if (card.hasType(MagicType.Creature)) {
+                    final int X = card.getPower();
+                    final int Y = card.getToughness();
+                    game.doAction(new ChangeTurnPTAction(event.getPermanent(), +X, +Y));
+                }
             }
         }
     }

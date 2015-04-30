@@ -23,17 +23,17 @@ def FATESEAL = {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
-                final MagicCard card = it.getLibrary().getCardAtTop();
-                final MagicPlayer player = event.getPlayer();
-                game.doAction(new LookAction(card, player, "top card of ${it}'s library"));
-                game.addEvent(new MagicEvent(
-                    event.getSource(),
-                    player,
-                    new MagicMayChoice("Put ("+card.getName()+") on the bottom of ${it}'s library?"),
-                    it,
-                    FATESEAL,
-                    ""
-                ));
+                for (final MagicCard card : it.getLibrary().getCardsFromTop(1)) {
+                    game.doAction(new LookAction(card, event.getPlayer(), "top card of ${it}'s library"));
+                    game.addEvent(new MagicEvent(
+                        event.getSource(),
+                        event.getPlayer(),
+                        new MagicMayChoice("Put ("+card.getName()+") on the bottom of ${it}'s library?"),
+                        it,
+                        FATESEAL,
+                        ""
+                    ));
+                }
             });
         }
     },

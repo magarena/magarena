@@ -20,11 +20,19 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicPlayer player = event.getPlayer();
-            final MagicCard card = player.getGraveyard().getCardAtTop();
-            game.doAction(new RemoveCardAction(card, MagicLocationType.Graveyard));
-            game.doAction(new MoveCardAction(card, MagicLocationType.Graveyard, MagicLocationType.BottomOfOwnersLibrary));
-            game.logAppendMessage(player," ("+card.getName()+")");
+            final MagicCardList top1 = event.getPlayer().getGraveyard().getCardsFromTop(1) ;
+            for (final MagicCard top : top1) {
+                game.doAction(new RemoveCardAction(
+                    top,
+                    MagicLocationType.Graveyard
+                ));
+                game.doAction(new MoveCardAction(
+                    top,
+                    MagicLocationType.Graveyard,
+                    MagicLocationType.BottomOfOwnersLibrary
+                ));
+                game.logAppendMessage(event.getPlayer()," ("+top.getName()+")");
+            }
         }
     }
 ]

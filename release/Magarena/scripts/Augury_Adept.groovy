@@ -11,11 +11,12 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
-            final MagicCard card = player.getLibrary().getCardAtTop();
-            game.doAction(new RevealAction(card));
-            game.doAction(new RemoveCardAction(card, MagicLocationType.OwnersLibrary));
-            game.doAction(new MoveCardAction(card, MagicLocationType.OwnersLibrary, MagicLocationType.OwnersHand));
-            game.doAction(new ChangeLifeAction(player, card.getConvertedCost()));
+            player.getLibrary().getCardsFromTop(1) each {
+                game.doAction(new RevealAction(it));
+                game.doAction(new RemoveCardAction(it, MagicLocationType.OwnersLibrary));
+                game.doAction(new MoveCardAction(it, MagicLocationType.OwnersLibrary, MagicLocationType.OwnersHand));
+                game.doAction(new ChangeLifeAction(player, it.getConvertedCost()));
+            }
         }
     }
 ]
