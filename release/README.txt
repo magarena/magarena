@@ -88,25 +88,23 @@ ShawnieBoy
 - removed deck strength calculator
     
 - added the following to the card script:
-  * ability: Whenever an opponent draws a card, <effect>
-  * ability: Whenever a player draws a card, <effect>
+  * ability: split second
   * ability: At the beginning of your draw step, <effect>
   * ability: At the beginning of each other player's draw step, <effect>
+  * ability: At the beginning of combat on your turn, <effect>
   * ability: Whenever SN blocks or becomes blocked by a <permanent>, <effect>
   * ability: Whenever a <creature> attacks or blocks, <effect>
   * ability: Whenever a <creature> blocks, <effect>
   * ability: Whenever a <creature> attacks you, <effect>
   * ability: Whenever a <permanent> becomes tapped, <effect>
+  * ability: Whenever an opponent draws a card, <effect>
+  * ability: Whenever a player draws a card, <effect>
   * ability: Whenever you scry, <effect>
-  * ability: <costs>: Return SN from your graveyard to your hand.
-  * ability: SN gets <pt change> for each <target>
-  * ability: split second
+  * ability: When <permanent> becomes the target of [spell/ability], <effect>
   * ability: When <permanent> deals damage to you, <effect>
   * ability: When <permanent> deals combat damage to an opponent, <effect>
-  * ability: At the beginning of combat on your turn, <effect>
-  * ability: When <permanent> becomes the target of [spell/ability], <effect>
-  * effect: SN becomes <pt> <color> <subtype> <type> with <abilities> until end of turn. 
-  * effect: <target> becomes <pt> <color> <subtype> <type> with <abilities> until end of turn. 
+  * ability: SN gets <pt change> for each <target>
+  * ability: <costs>: Return SN from your graveyard to your hand.
   * effect: Destroy that <permanent>. 
   * effect: Destroy that <permanent> at end of combat.
   * effect: Return that <permanent> to its owner's hand at end of combat.
@@ -118,6 +116,8 @@ ShawnieBoy
   * effect: Clash with an opponent, if you win, <effect>
   * effect: Flip coin. If you win, <effect> if you lose, <effect>'
   * effect: Look at the top card of your library. You may put that card on the bottom of your library.
+  * effect: SN becomes <pt> <color> <subtype> <type> with <abilities> until end of turn. 
+  * effect: <target> becomes <pt> <color> <subtype> <type> with <abilities> until end of turn. 
     
 - fixed the following bugs:
   * crash when clicking on "Generate Deck" button if prebuild deck was used (issue #167)
