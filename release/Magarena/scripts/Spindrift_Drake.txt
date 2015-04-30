@@ -9,4 +9,4 @@ pt=2/1
 ability=flying;\
         At the beginning of your upkeep, you may pay {U}. If you don't, sacrifice SN.
 timing=main
-oracle=Flying. At the beginning of your upkeep, sacrifice Spindrift Drake unless you pay {U}.
+oracle=Flying\nAt the beginning of your upkeep, sacrifice Spindrift Drake unless you pay {U}.

@@ -9,4 +9,4 @@ timing=aura
 ability=Enchanted creature has first strike.
 enchant=pump,pos creature
 requires_groovy_code
-oracle=Enchant creature. Enchanted creature gets +1/+1 for each enchantment you control and has first strike.
+oracle=Enchant creature\nEnchanted creature gets +1/+1 for each enchantment you control and has first strike.

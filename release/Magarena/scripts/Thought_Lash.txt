@@ -7,4 +7,4 @@ cost={2}{U}{U}
 ability=Exile the top card of your library: Prevent the next 1 damage that would be dealt to you this turn.
 timing=enchantment
 requires_groovy_code
-oracle=Cumulative upkeep—Exile the top card of your library. When a player doesn't pay Thought Lash's cumulative upkeep, that player exiles all cards from his or her library. Exile the top card of your library: Prevent the next 1 damage that would be dealt to you this turn.
+oracle=Cumulative upkeep—Exile the top card of your library.\nWhen a player doesn't pay Thought Lash's cumulative upkeep, that player exiles all cards from his or her library.\nExile the top card of your library: Prevent the next 1 damage that would be dealt to you this turn.

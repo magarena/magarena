@@ -9,4 +9,4 @@ pt=5/5
 ability=swampwalk;\
         Whenever a player casts a black spell, you gain 1 life.
 timing=main
-oracle=Swampwalk. Whenever a player casts a black spell, you gain 1 life.
+oracle=Swampwalk\nWhenever a player casts a black spell, you gain 1 life.

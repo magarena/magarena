@@ -9,4 +9,4 @@ pt=3/3
 ability=Protection from red;\
         {T}: SN deals 1 damage to each creature without flying.
 timing=main
-oracle=Protection from red. {T}: Subterranean Spirit deals 1 damage to each creature without flying.
+oracle=Protection from red\n{T}: Subterranean Spirit deals 1 damage to each creature without flying.

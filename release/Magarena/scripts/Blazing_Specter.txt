@@ -9,4 +9,4 @@ pt=2/2
 ability=flying;haste;\
         Whenever SN deals combat damage to a player, that player discards a card.
 timing=fmain
-oracle=Flying, haste. Whenever Blazing Specter deals combat damage to a player, that player discards a card.
+oracle=Flying, haste\nWhenever Blazing Specter deals combat damage to a player, that player discards a card.

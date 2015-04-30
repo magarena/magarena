@@ -7,4 +7,4 @@ cost={1}{U}{U}
 ability=cumulative upkeep {1};\
         {U},Discard a card: Draw a card.
 timing=enchantment
-oracle=Cumulative upkeep {1}. {U}, Discard a card: Draw a card.
+oracle=Cumulative upkeep {1}\n{U}, Discard a card: Draw a card.

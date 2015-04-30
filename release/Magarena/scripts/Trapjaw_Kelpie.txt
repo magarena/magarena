@@ -8,4 +8,4 @@ subtype=Beast
 cost={4}{G/U}{G/U}
 pt=3/3
 timing=flash
-oracle=Flash. Persist
+oracle=Flash\nPersist

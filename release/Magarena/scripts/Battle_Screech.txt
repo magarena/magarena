@@ -7,4 +7,4 @@ cost={2}{W}{W}
 ability=Flashback tap three untapped white creatures you control.
 effect=Put two 1/1 white Bird creature tokens with flying onto the battlefield.
 timing=main
-oracle=Put two 1/1 white Bird creature tokens with flying onto the battlefield. Flashback—Tap three untapped white creatures you control.
+oracle=Put two 1/1 white Bird creature tokens with flying onto the battlefield.\nFlashback—Tap three untapped white creatures you control.

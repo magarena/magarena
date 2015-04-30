@@ -9,4 +9,4 @@ pt=6/6
 ability=Flying
 timing=main
 requires_groovy_code
-oracle=Flying. Threshold — Other creatures you control get +2/+2 as long as seven or more cards are in your graveyard.
+oracle=Flying\nThreshold — Other creatures you control get +2/+2 as long as seven or more cards are in your graveyard.

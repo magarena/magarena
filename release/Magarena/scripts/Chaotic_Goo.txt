@@ -9,4 +9,4 @@ pt=0/0
 ability=SN enters the battlefield with three +1/+1 counters on it.;\
         At the beginning of your upkeep, you may flip a coin. If you win the flip, put a +1/+1 counter on SN. If you lose the flip, remove a +1/+1 counter from SN.
 timing=main
-oracle=Chaotic Goo enters the battlefield with three +1/+1 counters on it. At the beginning of your upkeep, you may flip a coin. If you win the flip, put a +1/+1 counter on Chaotic Goo. If you lose the flip, remove a +1/+1 counter from Chaotic Goo.
+oracle=Chaotic Goo enters the battlefield with three +1/+1 counters on it.\nAt the beginning of your upkeep, you may flip a coin. If you win the flip, put a +1/+1 counter on Chaotic Goo. If you lose the flip, remove a +1/+1 counter from Chaotic Goo.

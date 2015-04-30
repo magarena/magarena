@@ -11,4 +11,4 @@ ability=wither;\
         Whenever you cast a black spell, remove a -1/-1 counter from SN.;\
         Whenever you cast a green spell, remove a -1/-1 counter from SN.
 timing=main
-oracle=Noxious Hatchling enters the battlefield with four -1/-1 counters on it. Wither. Whenever you cast a black spell, remove a -1/-1 counter from Noxious Hatchling. Whenever you cast a green spell, remove a -1/-1 counter from Noxious Hatchling.
+oracle=Noxious Hatchling enters the battlefield with four -1/-1 counters on it.\nWither\nWhenever you cast a black spell, remove a -1/-1 counter from Noxious Hatchling.\nWhenever you cast a green spell, remove a -1/-1 counter from Noxious Hatchling.

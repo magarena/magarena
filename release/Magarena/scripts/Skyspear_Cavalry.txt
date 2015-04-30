@@ -9,4 +9,4 @@ pt=2/2
 ability=Flying;\
         Double strike
 timing=main
-oracle=Flying. Double strike
+oracle=Flying\nDouble strike

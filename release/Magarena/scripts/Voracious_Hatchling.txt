@@ -11,4 +11,4 @@ ability=lifelink;\
         Whenever you cast a black spell, remove a -1/-1 counter from SN.
 pt=6/6
 timing=main
-oracle=Lifelink. Voracious Hatchling enters the battlefield with four -1/-1 counters on it. Whenever you cast a white spell, remove a -1/-1 counter from Voracious Hatchling. Whenever you cast a black spell, remove a -1/-1 counter from Voracious Hatchling.
+oracle=Lifelink\nVoracious Hatchling enters the battlefield with four -1/-1 counters on it.\nWhenever you cast a white spell, remove a -1/-1 counter from Voracious Hatchling.\nWhenever you cast a black spell, remove a -1/-1 counter from Voracious Hatchling.

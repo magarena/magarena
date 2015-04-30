@@ -10,4 +10,4 @@ ability=Trample; haste;\
         At the beginning of the end step, sacrifice SN.;\
         Morph {R}{R}
 timing=main
-oracle=Trample, haste. At the beginning of the end step, sacrifice Blistering Firecat. Morph {R}{R}
+oracle=Trample, haste\nAt the beginning of the end step, sacrifice Blistering Firecat.\nMorph {R}{R}

@@ -9,4 +9,4 @@ pt=8/4
 ability={G}: Regenerate SN.
 timing=main
 requires_groovy_code
-oracle=When Hunted Troll enters the battlefield, target opponent puts four 1/1 blue Faerie creature tokens with flying onto the battlefield. {G}: Regenerate Hunted Troll.
+oracle=When Hunted Troll enters the battlefield, target opponent puts four 1/1 blue Faerie creature tokens with flying onto the battlefield.\n{G}: Regenerate Hunted Troll.

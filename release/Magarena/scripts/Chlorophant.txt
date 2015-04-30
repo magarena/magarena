@@ -9,4 +9,4 @@ pt=1/1
 ability=At the beginning of your upkeep, you may put a +1/+1 counter on SN.;\
         As long as seven or more cards are in your graveyard, SN has "At the beginning of your upkeep, you may put a +1/+1 counter on SN."
 timing=main
-oracle=At the beginning of your upkeep, you may put a +1/+1 counter on Chlorophant. Threshold — As long as seven or more cards are in your graveyard, Chlorophant has "At the beginning of your upkeep, you may put another +1/+1 counter on Chlorophant."
+oracle=At the beginning of your upkeep, you may put a +1/+1 counter on Chlorophant.\nThreshold — As long as seven or more cards are in your graveyard, Chlorophant has "At the beginning of your upkeep, you may put another +1/+1 counter on Chlorophant."

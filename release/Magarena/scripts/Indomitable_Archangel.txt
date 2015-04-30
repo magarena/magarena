@@ -9,4 +9,4 @@ pt=4/4
 ability=flying;\
         Artifacts you control have shroud as long as you control three or more artifacts.
 timing=main
-oracle=Flying. Metalcraft — Artifacts you control have shroud as long as you control three or more artifacts.
+oracle=Flying\nMetalcraft — Artifacts you control have shroud as long as you control three or more artifacts.

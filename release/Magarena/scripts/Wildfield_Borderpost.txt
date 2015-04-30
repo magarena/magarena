@@ -8,4 +8,4 @@ ability=You may pay {1} and return a basic land you control to its owner's hand 
         SN enters the battlefield tapped.;\
         {T}: Add {G} or {W} to your mana pool.
 timing=artifact
-oracle=You may pay {1} and return a basic land you control to its owner's hand rather than pay Wildfield Borderpost's mana cost. Wildfield Borderpost enters the battlefield tapped. {T}: Add {G} or {W} to your mana pool.
+oracle=You may pay {1} and return a basic land you control to its owner's hand rather than pay Wildfield Borderpost's mana cost.\nWildfield Borderpost enters the battlefield tapped.\n{T}: Add {G} or {W} to your mana pool.

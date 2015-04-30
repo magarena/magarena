@@ -9,4 +9,4 @@ pt=2/2
 ability=When SN enters the battlefield, if you control two or more Swamps, you may have target player discard a card.;\
         When SN enters the battlefield, if you control two or more Forests, you may put target card from your graveyard on top of your library.
 timing=main
-oracle=When Hag Hedge-Mage enters the battlefield, if you control two or more Swamps, you may have target player discard a card. When Hag Hedge-Mage enters the battlefield, if you control two or more Forests, you may put target card from your graveyard on top of your library.
+oracle=When Hag Hedge-Mage enters the battlefield, if you control two or more Swamps, you may have target player discard a card.\nWhen Hag Hedge-Mage enters the battlefield, if you control two or more Forests, you may put target card from your graveyard on top of your library.

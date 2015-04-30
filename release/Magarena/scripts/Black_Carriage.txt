@@ -10,4 +10,4 @@ ability=trample;\
         SN doesn't untap during your untap step.;\
         Sacrifice a creature: Untap SN. Activate this ability only during your upkeep.
 timing=main
-oracle=Trample. Black Carriage doesn't untap during your untap step. Sacrifice a creature: Untap Black Carriage. Activate this ability only during your upkeep.
+oracle=Trample\nBlack Carriage doesn't untap during your untap step.\nSacrifice a creature: Untap Black Carriage. Activate this ability only during your upkeep.

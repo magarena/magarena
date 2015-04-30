@@ -8,4 +8,4 @@ effect=Target creature gets -3/-3 until end of turn.
 ability=Cycling {2};\
         Madness {3}{B}
 timing=main
-oracle=Target creature gets -3/-3 until end of turn. Cycling {2}. Madness {3}{B}
+oracle=Target creature gets -3/-3 until end of turn.\nCycling {2}\nMadness {3}{B}

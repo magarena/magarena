@@ -9,4 +9,4 @@ pt=1/2
 ability=Prowess
 timing=main
 requires_groovy_code
-oracle=Prowess Whenever Jeskai Elder deals combat damage to a player, you may draw a card. If you do, discard a card.
+oracle=Prowess\nWhenever Jeskai Elder deals combat damage to a player, you may draw a card. If you do, discard a card.

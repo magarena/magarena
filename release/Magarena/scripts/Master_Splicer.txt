@@ -10,4 +10,4 @@ ability=When SN enters the battlefield, put a 3/3 colorless Golem artifact creat
         golem creatures you control get +1/+1
 static=player
 timing=main
-oracle=When Master Splicer enters the battlefield, put a 3/3 colorless Golem artifact creature token onto the battlefield. Golem creatures you control get +1/+1.
+oracle=When Master Splicer enters the battlefield, put a 3/3 colorless Golem artifact creature token onto the battlefield.\nGolem creatures you control get +1/+1.

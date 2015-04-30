@@ -9,4 +9,4 @@ pt=2/1
 ability=trample;\
         Whenever SN attacks, SN gets +1/+0 until end of turn for each other attacking Aurochs.
 timing=main
-oracle=Trample. Whenever Bull Aurochs attacks, it gets +1/+0 until end of turn for each other attacking Aurochs.
+oracle=Trample\nWhenever Bull Aurochs attacks, it gets +1/+0 until end of turn for each other attacking Aurochs.

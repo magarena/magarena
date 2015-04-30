@@ -9,4 +9,4 @@ pt=0/3
 ability={T}: Put a -1/-1 counter on target creature.
 timing=main
 requires_groovy_code
-oracle=When you control no Islands, sacrifice Skeleton Ship. {T}: Put a -1/-1 counter on target creature.
+oracle=When you control no Islands, sacrifice Skeleton Ship.\n{T}: Put a -1/-1 counter on target creature.

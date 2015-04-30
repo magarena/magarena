@@ -10,4 +10,4 @@ ability=Flying;\
         Devour 2
 timing=main
 requires_groovy_code
-oracle=Flying. Devour 2. Whenever Preyseizer Dragon attacks, it deals damage to target creature or player equal to the number of +1/+1 counters on Preyseizer Dragon.
+oracle=Flying\nDevour 2\nWhenever Preyseizer Dragon attacks, it deals damage to target creature or player equal to the number of +1/+1 counters on Preyseizer Dragon.

@@ -9,4 +9,4 @@ pt=2/2
 ability=Other blue creatures you control get +1/+1.;\
         {U}, {T}: Another target blue creature you control gains flying until end of turn.
 timing=main
-oracle=Other blue creatures you control get +1/+1. {U}, {T}: Another target blue creature you control gains flying until end of turn.
+oracle=Other blue creatures you control get +1/+1.\n{U}, {T}: Another target blue creature you control gains flying until end of turn.

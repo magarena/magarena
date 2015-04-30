@@ -6,4 +6,4 @@ type=Instant
 cost={U}
 timing=draw
 requires_groovy_code
-oracle=Look at the top card of your library. You may put that card on the bottom of your library. Draw a card.
+oracle=Look at the top card of your library. You may put that card on the bottom of your library.\nDraw a card.

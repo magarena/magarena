@@ -7,4 +7,4 @@ cost={2}{G}
 ability=Whenever a creature you control attacks, you may put a quest counter on SN.;\
         As long as SN has seven or more quest counters on it, creatures you control get +5/+5.
 timing=enchantment
-oracle=Whenever a creature you control attacks, you may put a quest counter on Beastmaster Ascension. As long as Beastmaster Ascension has seven or more quest counters on it, creatures you control get +5/+5.
+oracle=Whenever a creature you control attacks, you may put a quest counter on Beastmaster Ascension.\nAs long as Beastmaster Ascension has seven or more quest counters on it, creatures you control get +5/+5.

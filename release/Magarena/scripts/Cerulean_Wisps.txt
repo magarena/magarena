@@ -6,4 +6,4 @@ type=Instant
 cost={U}
 timing=tapping
 requires_groovy_code
-oracle=Target creature becomes blue until end of turn. Untap that creature. Draw a card.
+oracle=Target creature becomes blue until end of turn. Untap that creature.\nDraw a card.

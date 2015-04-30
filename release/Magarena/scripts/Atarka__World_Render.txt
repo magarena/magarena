@@ -9,4 +9,4 @@ pt=6/4
 ability=Flying; trample;\
         Whenever a Dragon you control attacks, RN gains double strike until end of turn.
 timing=main
-oracle=Flying, trample. Whenever a Dragon you control attacks, it gains double strike until end of turn.
+oracle=Flying, trample\nWhenever a Dragon you control attacks, it gains double strike until end of turn.

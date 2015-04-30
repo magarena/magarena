@@ -7,4 +7,4 @@ cost={3}
 ability={T}: Add {U} or {R} or {W} to your mana pool.;\
         {U}{R}{W}, {T}, Sacrifice SN: Draw a card.
 timing=artifact
-oracle={T}: Add {U}, {R}, or {W} to your mana pool. {U}{R}{W}, {T}, Sacrifice Jeskai Banner: Draw a card.
+oracle={T}: Add {U}, {R}, or {W} to your mana pool.\n{U}{R}{W}, {T}, Sacrifice Jeskai Banner: Draw a card.

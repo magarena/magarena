@@ -8,4 +8,4 @@ cost={1}{U}
 ability=Enchanted creature can't be blocked.
 timing=aura
 enchant=unblockable,pos creature
-oracle=Enchant creature. Enchanted creature can't be blocked.
+oracle=Enchant creature\nEnchanted creature can't be blocked.

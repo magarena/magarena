@@ -7,4 +7,4 @@ cost={3}{U}{B}
 ability=cascade
 effect=Return target permanent to its owner's hand.
 timing=removal
-oracle=Cascade. Return target permanent to its owner's hand.
+oracle=Cascade\nReturn target permanent to its owner's hand.

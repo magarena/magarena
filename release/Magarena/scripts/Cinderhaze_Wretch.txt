@@ -9,4 +9,4 @@ pt=3/2
 ability={T}: Target player discards a card. Activate this ability only during your turn.;\
         Put a -1/-1 counter on SN: Untap SN.
 timing=main
-oracle={T}: Target player discards a card. Activate this ability only during your turn. Put a -1/-1 counter on Cinderhaze Wretch: Untap Cinderhaze Wretch.
+oracle={T}: Target player discards a card. Activate this ability only during your turn.\nPut a -1/-1 counter on Cinderhaze Wretch: Untap Cinderhaze Wretch.

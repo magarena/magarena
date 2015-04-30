@@ -7,4 +7,4 @@ cost={B}{G}
 ability=SN can't be countered by spells or abilities.
 timing=removal
 effect=Destroy target nonland permanent with converted mana cost 3 or less.
-oracle=Abrupt Decay can't be countered by spells or abilities. Destroy target nonland permanent with converted mana cost 3 or less.
+oracle=Abrupt Decay can't be countered by spells or abilities.\nDestroy target nonland permanent with converted mana cost 3 or less.

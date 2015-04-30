@@ -7,4 +7,4 @@ cost={W}
 ability=buyback {3}
 effect=Target creature can't attack this turn.~Buyback
 timing=mustattack
-oracle=Buyback {3}. Target creature can't attack this turn.
+oracle=Buyback {3}\nTarget creature can't attack this turn.

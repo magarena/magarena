@@ -9,4 +9,4 @@ pt=1/1
 ability=haste;\
         When SN enters the battlefield, tap all other creatures.
 timing=fmain
-oracle=Haste. When Shrieking Mogg enters the battlefield, tap all other creatures.
+oracle=Haste\nWhen Shrieking Mogg enters the battlefield, tap all other creatures.

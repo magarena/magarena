@@ -9,4 +9,4 @@ pt=0/3
 ability=Defender;\
         Whenever SN blocks, you may draw a card.
 timing=main
-oracle=Defender. Whenever Psychic Membrane blocks, you may draw a card.
+oracle=Defender\nWhenever Psychic Membrane blocks, you may draw a card.

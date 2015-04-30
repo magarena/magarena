@@ -7,4 +7,4 @@ cost={1}{B}{B}
 ability={1}{B},Discard a card:Exile target card from a graveyard.;\
         {1}{B},Sacrifice SN:Exile target card from a graveyard.
 timing=enchantment
-oracle={1}{B}, Discard a card: Exile target card from a graveyard. {1}{B}, Sacrifice Mortiphobia: Exile target card from a graveyard.
+oracle={1}{B}, Discard a card: Exile target card from a graveyard.\n{1}{B}, Sacrifice Mortiphobia: Exile target card from a graveyard.

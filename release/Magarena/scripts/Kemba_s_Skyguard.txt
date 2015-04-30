@@ -9,4 +9,4 @@ pt=2/2
 ability=flying;\
         When SN enters the battlefield, you gain 2 life.
 timing=main
-oracle=Flying. When Kemba's Skyguard enters the battlefield, you gain 2 life.
+oracle=Flying\nWhen Kemba's Skyguard enters the battlefield, you gain 2 life.

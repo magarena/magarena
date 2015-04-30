@@ -9,4 +9,4 @@ pt=1/1
 ability=SN can't be blocked.;\
         Megamorph {U}
 timing=main
-oracle=Gudul Lurker can't be blocked. Megamorph {U}
+oracle=Gudul Lurker can't be blocked.\nMegamorph {U}

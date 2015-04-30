@@ -9,4 +9,4 @@ pt=*/*
 ability=flying;\
         SN's power and toughness are each equal to the number of instant cards in all graveyards.
 timing=main
-oracle=Flying. Cognivore's power and toughness are each equal to the number of instant cards in all graveyards.
+oracle=Flying\nCognivore's power and toughness are each equal to the number of instant cards in all graveyards.

@@ -9,4 +9,4 @@ pt=2/3
 ability=Flying;\
         {3}{W}{W}, Sacrifice SN: Exile all black creatures.
 timing=main
-oracle=Flying. {3}{W}{W}, Sacrifice Major Teroh: Exile all black creatures.
+oracle=Flying\n{3}{W}{W}, Sacrifice Major Teroh: Exile all black creatures.

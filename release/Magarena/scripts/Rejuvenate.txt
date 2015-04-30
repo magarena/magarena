@@ -7,4 +7,4 @@ cost={3}{G}
 effect=You gain 6 life.
 ability=cycling {2}
 timing=draw
-oracle=You gain 6 life. Cycling {2}
+oracle=You gain 6 life.\nCycling {2}

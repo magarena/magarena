@@ -9,4 +9,4 @@ pt=1/2
 ability=flying
 timing=main
 requires_groovy_code
-oracle=Flying. Metalcraft — Whenever Screeching Silcaw deals combat damage to a player, if you control three or more artifacts, that player puts the top four cards of his or her library into his or her graveyard.
+oracle=Flying\nMetalcraft — Whenever Screeching Silcaw deals combat damage to a player, if you control three or more artifacts, that player puts the top four cards of his or her library into his or her graveyard.

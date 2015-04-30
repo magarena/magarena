@@ -7,4 +7,4 @@ cost={2}{U}
 effect=Target player draws a card.
 ability=Retrace
 timing=draw
-oracle=Target player draws a card. Retrace
+oracle=Target player draws a card.\nRetrace

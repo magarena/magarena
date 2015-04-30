@@ -7,4 +7,4 @@ cost={1}{R}{R}
 ability=Creatures you control have haste;\
         {2}{R},{T},Sacrifice a land: Put a 3/3 colorless Golem enchantment artifact creature token onto the battlefield.
 timing=artifact
-oracle=Creatures you control have haste. {2}{R}, {T}, Sacrifice a land: Put a 3/3 colorless Golem enchantment artifact creature token onto the battlefield.
+oracle=Creatures you control have haste.\n{2}{R}, {T}, Sacrifice a land: Put a 3/3 colorless Golem enchantment artifact creature token onto the battlefield.

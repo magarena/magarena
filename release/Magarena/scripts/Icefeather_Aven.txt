@@ -10,4 +10,4 @@ ability=Flying;\
         Morph {1}{G}{U};\
         When SN is turned face up, you may return another target creature to its owner's hand.
 timing=main
-oracle=Flying. Morph {1}{G}{U}. When Icefeather Aven is turned face up, you may return another target creature to its owner's hand.
+oracle=Flying\nMorph {1}{G}{U}\nWhen Icefeather Aven is turned face up, you may return another target creature to its owner's hand.

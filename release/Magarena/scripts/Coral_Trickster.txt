@@ -9,4 +9,4 @@ pt=2/1
 ability=Morph {U};\
         When SN is turned face up, you may tap or untap target permanent.
 timing=main
-oracle=Morph {U}. When Coral Trickster is turned face up, you may tap or untap target permanent.
+oracle=Morph {U}\nWhen Coral Trickster is turned face up, you may tap or untap target permanent.

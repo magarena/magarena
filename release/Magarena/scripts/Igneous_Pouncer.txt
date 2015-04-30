@@ -9,4 +9,4 @@ pt=5/1
 ability=Haste;\
         Swampcycling {2};Mountaincycling {2}
 timing=main
-oracle=Haste. Swampcycling {2}, mountaincycling {2}
+oracle=Haste\nSwampcycling {2}, mountaincycling {2}

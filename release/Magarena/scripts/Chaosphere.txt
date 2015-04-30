@@ -7,4 +7,4 @@ cost={2}{R}
 ability=Creatures with flying can block only creatures with flying.;\
         Creatures without flying have reach.
 timing=main
-oracle=Creatures with flying can block only creatures with flying. Creatures without flying have reach.
+oracle=Creatures with flying can block only creatures with flying.\nCreatures without flying have reach.

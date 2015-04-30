@@ -9,4 +9,4 @@ pt=4/4
 ability=Trample;\
         SN gets +4/+4 as long as there are no cards in your graveyard.
 timing=main
-oracle=Trample. Gorilla Titan gets +4/+4 as long as there are no cards in your graveyard.
+oracle=Trample\nGorilla Titan gets +4/+4 as long as there are no cards in your graveyard.

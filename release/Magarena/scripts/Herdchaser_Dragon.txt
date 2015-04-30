@@ -10,4 +10,4 @@ ability=Flying, trample;\
         Megamorph {5}{G}{G};\
         When SN is turned face up, put a +1/+1 counter on each other Dragon creature you control.
 timing=main
-oracle=Flying, trample. Megamorph {5}{G}{G}. When Herdchaser Dragon is turned face up, put a +1/+1 counter on each other Dragon creature you control.
+oracle=Flying, trample\nMegamorph {5}{G}{G}\nWhen Herdchaser Dragon is turned face up, put a +1/+1 counter on each other Dragon creature you control.

@@ -10,4 +10,4 @@ ability=Equipped creature gets +1/+0.;\
 transform=Withengar Unbound
 timing=equipment
 requires_groovy_code
-oracle=Equipped creature gets +1/+0. When equipped creature deals combat damage to a player, unattach Elbrus, the Binding Blade, then transform it. Equip {1}
+oracle=Equipped creature gets +1/+0.\nWhen equipped creature deals combat damage to a player, unattach Elbrus, the Binding Blade, then transform it.\nEquip {1}

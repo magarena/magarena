@@ -8,4 +8,4 @@ cost={1}{R}
 pt=1/2
 ability=flying;SN attacks each turn if able.
 timing=main
-oracle=Flying. Utvara Scalper attacks each turn if able.
+oracle=Flying\nUtvara Scalper attacks each turn if able.

@@ -9,4 +9,4 @@ pt=6/3
 ability=Non-Eye creatures you control can't attack.;\
         Whenever SN becomes blocked by a creature, destroy that creature.
 timing=main
-oracle=Non-Eye creatures you control can't attack. Whenever Evil Eye of Urborg becomes blocked by a creature, destroy that creature.
+oracle=Non-Eye creatures you control can't attack.\nWhenever Evil Eye of Urborg becomes blocked by a creature, destroy that creature.

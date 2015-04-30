@@ -10,4 +10,4 @@ ability=flying;\
         Whenever a creature an opponent controls dies, you may gain 3 life.
 timing=fmain
 requires_groovy_code
-oracle=Flying. Whenever a creature an opponent controls dies, you may gain 3 life. Whenever an opponent discards a card, you may gain 3 life.
+oracle=Flying\nWhenever a creature an opponent controls dies, you may gain 3 life.\nWhenever an opponent discards a card, you may gain 3 life.

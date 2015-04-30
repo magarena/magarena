@@ -9,4 +9,4 @@ pt=2/2
 ability=Flying
 timing=main
 requires_groovy_code
-oracle=Flying. Sacrifice Unyaro Griffin: Counter target red instant or sorcery spell.
+oracle=Flying\nSacrifice Unyaro Griffin: Counter target red instant or sorcery spell.

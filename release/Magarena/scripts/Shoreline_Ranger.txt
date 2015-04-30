@@ -9,4 +9,4 @@ pt=3/4
 ability=Flying;\
         Islandcycling {2}
 timing=main
-oracle=Flying. Islandcycling {2}
+oracle=Flying\nIslandcycling {2}

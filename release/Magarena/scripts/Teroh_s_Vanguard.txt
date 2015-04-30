@@ -9,4 +9,4 @@ pt=2/3
 ability=flash;\
         As long as seven or more cards are in your graveyard, SN has "When SN enters the battlefield, creatures you control gain protection from black until end of turn."
 timing=pumpFlash
-oracle=Flash. Threshold — As long as seven or more cards are in your graveyard, Teroh's Vanguard has "When Teroh's Vanguard enters the battlefield, creatures you control gain protection from black until end of turn."
+oracle=Flash\nThreshold — As long as seven or more cards are in your graveyard, Teroh's Vanguard has "When Teroh's Vanguard enters the battlefield, creatures you control gain protection from black until end of turn."

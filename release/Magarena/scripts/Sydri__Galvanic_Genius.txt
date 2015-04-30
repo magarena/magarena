@@ -9,4 +9,4 @@ pt=2/2
 ability={W}{B}: Target artifact creature gains deathtouch, lifelink until end of turn.
 timing=main
 requires_groovy_code
-oracle={U}: Target noncreature artifact becomes an artifact creature with power and toughness each equal to its converted mana cost until end of turn. {W}{B}: Target artifact creature gains deathtouch and lifelink until end of turn.
+oracle={U}: Target noncreature artifact becomes an artifact creature with power and toughness each equal to its converted mana cost until end of turn.\n{W}{B}: Target artifact creature gains deathtouch and lifelink until end of turn.

@@ -8,4 +8,4 @@ cost={4}{B}{B}
 ability=extort;other creatures you control have extort
 pt=2/7
 timing=main
-oracle=Extort. Other creatures you control have extort.
+oracle=Extort\nOther creatures you control have extort.

@@ -9,4 +9,4 @@ pt=4/2
 ability=Trample;\
         Whenever SN attacks, if creatures you control have total power 8 or greater, SN gains first strike until end of turn.
 timing=main
-oracle=Trample. Formidable — Whenever Sabertooth Outrider attacks, if creatures you control have total power 8 or greater, Sabertooth Outrider gains first strike until end of turn.
+oracle=Trample\nFormidable — Whenever Sabertooth Outrider attacks, if creatures you control have total power 8 or greater, Sabertooth Outrider gains first strike until end of turn.

@@ -9,4 +9,4 @@ pt=4/3
 ability=SN can't block.;\
         Unearth {B}{R}
 timing=main
-oracle=Shambling Remains can't block. Unearth {B}{R}
+oracle=Shambling Remains can't block.\nUnearth {B}{R}

@@ -9,4 +9,4 @@ pt=3/2
 ability=Flying;\
         When SN dies, each player discards a card.
 timing=main
-oracle=Flying. When Serum Raker dies, each player discards a card.
+oracle=Flying\nWhen Serum Raker dies, each player discards a card.

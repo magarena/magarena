@@ -9,4 +9,4 @@ pt=2/2
 ability=Cycling {2}{U};\
         When you cycle SN, Wizard creatures gain flying until end of turn.
 timing=main
-oracle=Cycling {2}{U}. When you cycle Gempalm Sorcerer, Wizard creatures gain flying until end of turn.
+oracle=Cycling {2}{U}\nWhen you cycle Gempalm Sorcerer, Wizard creatures gain flying until end of turn.

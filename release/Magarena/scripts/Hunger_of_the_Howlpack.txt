@@ -6,4 +6,4 @@ type=Instant
 cost={G}
 timing=pump
 requires_groovy_code
-oracle=Put a +1/+1 counter on target creature. Morbid — Put three +1/+1 counters on that creature instead if a creature died this turn.
+oracle=Put a +1/+1 counter on target creature.\nMorbid — Put three +1/+1 counters on that creature instead if a creature died this turn.

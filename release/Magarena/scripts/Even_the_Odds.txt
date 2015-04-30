@@ -7,4 +7,4 @@ cost={2}{W}
 effect=Put three 1/1 white Soldier creature tokens onto the battlefield.
 timing=token
 requires_groovy_code
-oracle=Cast Even the Odds only if you control fewer creatures than each opponent. Put three 1/1 white Soldier creature tokens onto the battlefield.
+oracle=Cast Even the Odds only if you control fewer creatures than each opponent.\nPut three 1/1 white Soldier creature tokens onto the battlefield.

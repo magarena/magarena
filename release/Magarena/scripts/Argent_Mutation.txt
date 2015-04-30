@@ -6,4 +6,4 @@ type=Instant
 cost={2}{U}
 effect=Target permanent becomes an artifact in addition to its other types until end of turn.~Draw a card.
 timing=pump
-oracle=Target permanent becomes an artifact in addition to its other types until end of turn. Draw a card.
+oracle=Target permanent becomes an artifact in addition to its other types until end of turn.\nDraw a card.

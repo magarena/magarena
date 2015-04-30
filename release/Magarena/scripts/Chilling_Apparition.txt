@@ -9,4 +9,4 @@ pt=1/1
 ability={B}: Regenerate SN.;\
         Whenever SN deals combat damage to a player, that player discards a card.
 timing=main
-oracle={B}: Regenerate Chilling Apparition. Whenever Chilling Apparition deals combat damage to a player, that player discards a card.
+oracle={B}: Regenerate Chilling Apparition.\nWhenever Chilling Apparition deals combat damage to a player, that player discards a card.

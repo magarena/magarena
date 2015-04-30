@@ -11,4 +11,4 @@ ability=flying;\
         At the beginning of your upkeep, you may pay {G}{W}{U}. If you don't, sacrifice SN.
 timing=main
 requires_groovy_code
-oracle=Flying. At the beginning of your upkeep, sacrifice Arcades Sabboth unless you pay {G}{W}{U}. Each untapped creature you control gets +0/+2 as long as it's not attacking. {W}: Arcades Sabboth gets +0/+1 until end of turn.
+oracle=Flying\nAt the beginning of your upkeep, sacrifice Arcades Sabboth unless you pay {G}{W}{U}.\nEach untapped creature you control gets +0/+2 as long as it's not attacking.\n{W}: Arcades Sabboth gets +0/+1 until end of turn.

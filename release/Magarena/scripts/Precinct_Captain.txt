@@ -9,4 +9,4 @@ pt=2/2
 ability=first strike;\
         Whenever SN deals combat damage to a player, put a 1/1 white Soldier creature token onto the battlefield.
 timing=main
-oracle=First strike. Whenever Precinct Captain deals combat damage to a player, put a 1/1 white Soldier creature token onto the battlefield.
+oracle=First strike\nWhenever Precinct Captain deals combat damage to a player, put a 1/1 white Soldier creature token onto the battlefield.

@@ -8,4 +8,4 @@ cost={1}{G}
 ability=Enchanted creature gets +1/+1 and can't be blocked except by creatures with flying.
 timing=aura
 enchant=unblockable,pos creature
-oracle=Enchant creature. Enchanted creature gets +1/+1 and can't be blocked except by creatures with flying.
+oracle=Enchant creature\nEnchanted creature gets +1/+1 and can't be blocked except by creatures with flying.

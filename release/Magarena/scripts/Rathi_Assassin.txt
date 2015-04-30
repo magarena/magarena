@@ -9,4 +9,4 @@ pt=2/2
 ability={1}{B}{B}, {T}: Destroy target tapped nonblack creature.;\
         {3}, {T}: Search your library for a Mercenary permanent card with converted mana cost 3 or less and put it onto the battlefield. Then shuffle your library.
 timing=main
-oracle={1}{B}{B}, {T}: Destroy target tapped nonblack creature. {3}, {T}: Search your library for a Mercenary permanent card with converted mana cost 3 or less and put it onto the battlefield. Then shuffle your library.
+oracle={1}{B}{B}, {T}: Destroy target tapped nonblack creature.\n{3}, {T}: Search your library for a Mercenary permanent card with converted mana cost 3 or less and put it onto the battlefield. Then shuffle your library.

@@ -9,4 +9,4 @@ pt=2/2
 ability=flying
 timing=main
 requires_groovy_code=Gustcloak Skirmisher
-oracle=Flying. Whenever Gustcloak Harrier becomes blocked, you may untap it and remove it from combat.
+oracle=Flying\nWhenever Gustcloak Harrier becomes blocked, you may untap it and remove it from combat.

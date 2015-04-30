@@ -8,4 +8,4 @@ subtype=Plant,Wall
 cost={G}
 pt=0/3
 timing=smain
-oracle=Defender. Reach
+oracle=Defender\nReach

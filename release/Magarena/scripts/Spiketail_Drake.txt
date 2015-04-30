@@ -8,4 +8,4 @@ cost={3}{U}{U}
 pt=3/3
 ability=flying;Sacrifice SN:Counter target spell unless its controller pays {3}.
 timing=main
-oracle=Flying. Sacrifice Spiketail Drake: Counter target spell unless its controller pays {3}.
+oracle=Flying\nSacrifice Spiketail Drake: Counter target spell unless its controller pays {3}.

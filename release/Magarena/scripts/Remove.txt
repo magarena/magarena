@@ -7,4 +7,4 @@ cost={U}
 ability=Cast SN only during the declare attackers step and only if you've been attacked this step.
 effect=Return target attacking creature to its owner's hand.
 timing=attack
-oracle=Cast Remove only during the declare attackers step and only if you've been attacked this step. Return target attacking creature to its owner's hand.
+oracle=Cast Remove only during the declare attackers step and only if you've been attacked this step.\nReturn target attacking creature to its owner's hand.

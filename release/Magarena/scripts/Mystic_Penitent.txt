@@ -9,4 +9,4 @@ pt=1/1
 ability=vigilance;\
         As long as seven or more cards are in your graveyard, SN gets +1/+1 and has flying.
 timing=main
-oracle=Vigilance. Threshold — As long as seven or more cards are in your graveyard, Mystic Penitent gets +1/+1 and has flying.
+oracle=Vigilance\nThreshold — As long as seven or more cards are in your graveyard, Mystic Penitent gets +1/+1 and has flying.

@@ -6,4 +6,4 @@ type=Instant
 cost={B}
 effect=Exile target card from a graveyard.~Draw a card.
 timing=removal
-oracle=Exile target card from a graveyard. Draw a card.
+oracle=Exile target card from a graveyard.\nDraw a card.

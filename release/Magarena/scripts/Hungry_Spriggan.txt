@@ -9,4 +9,4 @@ pt=1/1
 ability=trample;\
         Whenever SN attacks, SN gets +3/+3 until end of turn.
 timing=main
-oracle=Trample. Whenever Hungry Spriggan attacks, it gets +3/+3 until end of turn.
+oracle=Trample\nWhenever Hungry Spriggan attacks, it gets +3/+3 until end of turn.

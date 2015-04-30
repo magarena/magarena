@@ -9,4 +9,4 @@ pt=2/4
 ability=When SN enters the battlefield, you may exile another target nontoken creature.
 timing=artifact
 requires_groovy_code
-oracle=Imprint — When Duplicant enters the battlefield, you may exile target nontoken creature. As long as a card exiled with Duplicant is a creature card, Duplicant has the power, toughness, and creature types of the last creature card exiled with Duplicant. It's still a Shapeshifter.
+oracle=Imprint — When Duplicant enters the battlefield, you may exile target nontoken creature.\nAs long as a card exiled with Duplicant is a creature card, Duplicant has the power, toughness, and creature types of the last creature card exiled with Duplicant. It's still a Shapeshifter.

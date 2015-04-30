@@ -9,4 +9,4 @@ ability=Enchanted creature can't be blocked by black creatures.;\
         Enchanted creature gets +2/+2 as long as an opponent controls a black permanent.
 enchant=pump,pos creature
 timing=aura
-oracle=Enchant creature. Enchanted creature can't be blocked by black creatures. Enchanted creature gets +2/+2 as long as an opponent controls a black permanent.
+oracle=Enchant creature\nEnchanted creature can't be blocked by black creatures.\nEnchanted creature gets +2/+2 as long as an opponent controls a black permanent.

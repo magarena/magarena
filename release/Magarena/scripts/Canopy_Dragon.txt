@@ -9,4 +9,4 @@ pt=4/4
 ability=Trample;\
         {1}{G}: SN gains flying until end of turn.~SN loses trample until end of turn.
 timing=main
-oracle=Trample. {1}{G}: Canopy Dragon gains flying and loses trample until end of turn.
+oracle=Trample\n{1}{G}: Canopy Dragon gains flying and loses trample until end of turn.

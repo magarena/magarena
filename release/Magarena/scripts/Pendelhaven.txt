@@ -6,4 +6,4 @@ type=Legendary,Land
 ability={T}: Add {G} to your mana pool.
 timing=land
 requires_groovy_code
-oracle={T}: Add {G} to your mana pool. {T}: Target 1/1 creature gets +1/+2 until end of turn.
+oracle={T}: Add {G} to your mana pool.\n{T}: Target 1/1 creature gets +1/+2 until end of turn.

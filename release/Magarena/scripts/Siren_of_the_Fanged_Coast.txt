@@ -9,4 +9,4 @@ ability=flying
 pt=1/1
 timing=main
 requires_groovy_code
-oracle=Flying. Tribute 3. When Siren of the Fanged Coast enters the battlefield, if tribute wasn't paid, gain control of target creature.
+oracle=Flying\nTribute 3\nWhen Siren of the Fanged Coast enters the battlefield, if tribute wasn't paid, gain control of target creature.

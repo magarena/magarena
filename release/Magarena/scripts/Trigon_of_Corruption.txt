@@ -8,4 +8,4 @@ ability=SN enters the battlefield with three charge counters on it.;\
         {B}{B},{T}:Put a charge counter on SN.;\
         {2},{T},Remove a charge counter from SN:Put a -1/-1 counter on target creature.
 timing=artifact
-oracle=Trigon of Corruption enters the battlefield with three charge counters on it. {B}{B}, {T}: Put a charge counter on Trigon of Corruption. {2}, {T}, Remove a charge counter from Trigon of Corruption: Put a -1/-1 counter on target creature.
+oracle=Trigon of Corruption enters the battlefield with three charge counters on it.\n{B}{B}, {T}: Put a charge counter on Trigon of Corruption.\n{2}, {T}, Remove a charge counter from Trigon of Corruption: Put a -1/-1 counter on target creature.

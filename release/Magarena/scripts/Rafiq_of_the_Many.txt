@@ -9,4 +9,4 @@ pt=3/3
 ability=exalted
 timing=fmain
 requires_groovy_code
-oracle=Exalted. Whenever a creature you control attacks alone, it gains double strike until end of turn.
+oracle=Exalted\nWhenever a creature you control attacks alone, it gains double strike until end of turn.

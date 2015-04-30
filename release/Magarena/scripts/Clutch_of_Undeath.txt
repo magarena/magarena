@@ -8,4 +8,4 @@ cost={3}{B}{B}
 enchant=pump,creature
 timing=aura
 requires_groovy_code
-oracle=Enchant creature. Enchanted creature gets +3/+3 as long as it's a Zombie. Otherwise, it gets -3/-3.
+oracle=Enchant creature\nEnchanted creature gets +3/+3 as long as it's a Zombie. Otherwise, it gets -3/-3.

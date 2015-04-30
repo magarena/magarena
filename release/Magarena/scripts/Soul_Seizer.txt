@@ -10,4 +10,4 @@ ability=Flying
 transform=Ghastly Haunting
 timing=main
 requires_groovy_code
-oracle=Flying. When Soul Seizer deals combat damage to a player, you may transform it. If you do, attach it to target creature that player controls.
+oracle=Flying\nWhen Soul Seizer deals combat damage to a player, you may transform it. If you do, attach it to target creature that player controls.

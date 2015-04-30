@@ -9,4 +9,4 @@ pt=6/6
 ability=trample;cumulative upkeep {G/W}
 timing=main
 requires_groovy_code
-oracle=Trample. Cumulative upkeep {G} or {W}. When Arctic Nishoba dies, you gain 2 life for each age counter on it.
+oracle=Trample\nCumulative upkeep {G} or {W}\nWhen Arctic Nishoba dies, you gain 2 life for each age counter on it.

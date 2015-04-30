@@ -6,4 +6,4 @@ type=Land
 ability=When SN enters the battlefield, you gain 2 life.;\
         {T}: Add {1} to your mana pool.
 timing=main
-oracle=When Radiant Fountain enters the battlefield, you gain 2 life. {T}: Add {1} to your mana pool.
+oracle=When Radiant Fountain enters the battlefield, you gain 2 life.\n{T}: Add {1} to your mana pool.

@@ -7,4 +7,4 @@ cost={1}
 ability={2}, {T}, Sacrifice SN: Search your library for a basic land card, reveal it, and put it into your hand. Then shuffle your library.;\
         When SN is put into a graveyard from the battlefield, you may pay {G}. If you do, draw a card.
 timing=artifact
-oracle={2}, {T}, Sacrifice Horizon Spellbomb: Search your library for a basic land card, reveal it, and put it into your hand. Then shuffle your library. When Horizon Spellbomb is put into a graveyard from the battlefield, you may pay {G}. If you do, draw a card.
+oracle={2}, {T}, Sacrifice Horizon Spellbomb: Search your library for a basic land card, reveal it, and put it into your hand. Then shuffle your library.\nWhen Horizon Spellbomb is put into a graveyard from the battlefield, you may pay {G}. If you do, draw a card.

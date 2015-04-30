@@ -9,4 +9,4 @@ static=player
 timing=fmain
 enchant=pump,pos creature
 requires_groovy_code
-oracle=Enchant creature. Creatures you control that are enchanted get +1/+1. Whenever a creature you control that's enchanted becomes blocked, it gets +1/+1 until end of turn for each creature blocking it.
+oracle=Enchant creature\nCreatures you control that are enchanted get +1/+1.\nWhenever a creature you control that's enchanted becomes blocked, it gets +1/+1 until end of turn for each creature blocking it.

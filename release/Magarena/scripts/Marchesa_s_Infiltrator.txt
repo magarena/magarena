@@ -9,4 +9,4 @@ pt=1/1
 ability=Dethrone;\
         Whenever SN deals combat damage to a player, draw a card.
 timing=main
-oracle=Dethrone. Whenever Marchesa's Infiltrator deals combat damage to a player, draw a card.
+oracle=Dethrone\nWhenever Marchesa's Infiltrator deals combat damage to a player, draw a card.

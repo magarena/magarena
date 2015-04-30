@@ -8,4 +8,4 @@ cost={6}
 pt=5/5
 ability=infect;SN attacks each turn if able.
 timing=main
-oracle=Infect. Phyrexian Juggernaut attacks each turn if able.
+oracle=Infect\nPhyrexian Juggernaut attacks each turn if able.

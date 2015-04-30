@@ -9,4 +9,4 @@ pt=2/3
 ability=Megamorph {4}{U};\
         When SN is turned face up, counter target spell unless its controller pays {3}.
 timing=main
-oracle=Megamorph {4}{U}. When Silumgar Spell-Eater is turned face up, counter target spell unless its controller pays {3}.
+oracle=Megamorph {4}{U}\nWhen Silumgar Spell-Eater is turned face up, counter target spell unless its controller pays {3}.

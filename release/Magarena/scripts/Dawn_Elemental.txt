@@ -9,4 +9,4 @@ pt=3/3
 ability=Flying
 timing=main
 requires_groovy_code=Cho Manno, Revolutionary
-oracle=Flying. Prevent all damage that would be dealt to Dawn Elemental.
+oracle=Flying\nPrevent all damage that would be dealt to Dawn Elemental.

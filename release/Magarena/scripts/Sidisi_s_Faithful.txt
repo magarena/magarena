@@ -9,4 +9,4 @@ pt=0/4
 ability=Exploit;\
         When SN exploits a creature, return target creature to its owner's hand.
 timing=main
-oracle=Exploit. When Sidisi's Faithful exploits a creature, return target creature to its owner's hand.
+oracle=Exploit\nWhen Sidisi's Faithful exploits a creature, return target creature to its owner's hand.

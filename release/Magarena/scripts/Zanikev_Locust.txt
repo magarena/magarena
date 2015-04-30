@@ -9,4 +9,4 @@ pt=3/3
 ability=Flying;\
         Scavenge {2}{B}{B}
 timing=main
-oracle=Flying. Scavenge {2}{B}{B}
+oracle=Flying\nScavenge {2}{B}{B}

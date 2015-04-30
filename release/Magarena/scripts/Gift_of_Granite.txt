@@ -9,4 +9,4 @@ ability=flash;\
         Enchanted creature gets +0/+2.
 timing=pumpflash
 enchant=pump,pos creature
-oracle=Flash. Enchant creature. Enchanted creature gets +0/+2.
+oracle=Flash\nEnchant creature\nEnchanted creature gets +0/+2.

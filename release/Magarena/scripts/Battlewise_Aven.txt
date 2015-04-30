@@ -9,4 +9,4 @@ pt=2/2
 ability=Flying;\
         As long as seven or more cards are in your graveyard, SN gets +1/+1 and has first strike.
 timing=main
-oracle=Flying. Threshold — As long as seven or more cards are in your graveyard, Battlewise Aven gets +1/+1 and has first strike.
+oracle=Flying\nThreshold — As long as seven or more cards are in your graveyard, Battlewise Aven gets +1/+1 and has first strike.

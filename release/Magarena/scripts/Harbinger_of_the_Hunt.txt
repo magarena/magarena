@@ -10,4 +10,4 @@ ability=Flying;\
         {2}{R}: SN deals 1 damage to each creature without flying.;\
         {2}{G}: SN deals 1 damage to each other creature with flying.
 timing=main
-oracle=Flying. {2}{R}: Harbinger of the Hunt deals 1 damage to each creature without flying. {2}{G}: Harbinger of the Hunt deals 1 damage to each other creature with flying.
+oracle=Flying\n{2}{R}: Harbinger of the Hunt deals 1 damage to each creature without flying.\n{2}{G}: Harbinger of the Hunt deals 1 damage to each other creature with flying.

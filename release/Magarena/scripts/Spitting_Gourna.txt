@@ -9,4 +9,4 @@ pt=3/4
 ability=Reach;\
         Morph {4}{G}
 timing=main
-oracle=Reach. Morph {4}{G}
+oracle=Reach\nMorph {4}{G}

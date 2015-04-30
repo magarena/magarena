@@ -6,4 +6,4 @@ type=Instant
 cost={X}{W}
 timing=pump
 requires_groovy_code
-oracle=Prevent the next X damage that would be dealt to you this turn. Draw a card.
+oracle=Prevent the next X damage that would be dealt to you this turn.\nDraw a card.

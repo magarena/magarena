@@ -9,4 +9,4 @@ pt=5/3
 ability={B}: Regenerate SN.;\
         Swampcycling {2}
 timing=main
-oracle={B}: Regenerate Twisted Abomination. Swampcycling {2}
+oracle={B}: Regenerate Twisted Abomination.\nSwampcycling {2}

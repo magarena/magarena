@@ -9,4 +9,4 @@ pt=6/6
 ability=flying
 timing=main
 requires_groovy_code
-oracle=Flying. When Fire Dragon enters the battlefield, it deals damage to target creature equal to the number of Mountains you control.
+oracle=Flying\nWhen Fire Dragon enters the battlefield, it deals damage to target creature equal to the number of Mountains you control.

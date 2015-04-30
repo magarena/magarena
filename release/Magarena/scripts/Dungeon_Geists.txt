@@ -9,4 +9,4 @@ pt=3/3
 ability=flying
 timing=main
 requires_groovy_code
-oracle=Flying. When Dungeon Geists enters the battlefield, tap target creature an opponent controls. That creature doesn't untap during its controller's untap step for as long as you control Dungeon Geists.
+oracle=Flying\nWhen Dungeon Geists enters the battlefield, tap target creature an opponent controls. That creature doesn't untap during its controller's untap step for as long as you control Dungeon Geists.

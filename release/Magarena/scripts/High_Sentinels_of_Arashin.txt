@@ -10,4 +10,4 @@ ability=Flying;\
         SN gets +1/+1 for each other creature you control with a +1/+1 counter on it.;\
         {3}{W}: Put a +1/+1 counter on target creature.
 timing=main
-oracle=Flying. High Sentinels of Arashin gets +1/+1 for each other creature you control with a +1/+1 counter on it. {3}{W}: Put a +1/+1 counter on target creature.
+oracle=Flying\nHigh Sentinels of Arashin gets +1/+1 for each other creature you control with a +1/+1 counter on it.\n{3}{W}: Put a +1/+1 counter on target creature.

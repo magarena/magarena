@@ -8,4 +8,4 @@ cost={R}
 ability=Enchanted creature gets +1/-1 and attacks each turn if able.
 timing=aura
 enchant=must attack,neg creature
-oracle=Enchant creature. Enchanted creature gets +1/-1 and attacks each turn if able.
+oracle=Enchant creature\nEnchanted creature gets +1/-1 and attacks each turn if able.

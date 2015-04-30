@@ -7,4 +7,4 @@ cost={U}{U}{U}
 ability=Cast SN only during the declare attackers step.
 effect=Target creature can't be blocked this turn.
 timing=attack
-oracle=Cast Teleport only during the declare attackers step. Target creature can't be blocked this turn.
+oracle=Cast Teleport only during the declare attackers step.\nTarget creature can't be blocked this turn.

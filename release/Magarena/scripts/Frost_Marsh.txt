@@ -7,4 +7,4 @@ mana=b3u3
 ability=SN enters the battlefield tapped.;\
         {T}: Add {U} or {B} to your mana pool.
 timing=tapland
-oracle=Frost Marsh enters the battlefield tapped. {T}: Add {U} or {B} to your mana pool.
+oracle=Frost Marsh enters the battlefield tapped.\n{T}: Add {U} or {B} to your mana pool.

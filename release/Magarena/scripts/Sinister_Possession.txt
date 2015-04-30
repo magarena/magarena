@@ -8,4 +8,4 @@ cost={B}
 timing=aura
 enchant=can't attack or block,neg creature
 requires_groovy_code
-oracle=Enchant creature. Whenever enchanted creature attacks or blocks, its controller loses 2 life.
+oracle=Enchant creature\nWhenever enchanted creature attacks or blocks, its controller loses 2 life.

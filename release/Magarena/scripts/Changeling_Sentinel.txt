@@ -8,4 +8,4 @@ subtype=Shapeshifter
 cost={3}{W}
 pt=3/2
 timing=main
-oracle=Changeling. Vigilance
+oracle=Changeling\nVigilance

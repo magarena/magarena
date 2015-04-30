@@ -8,4 +8,4 @@ subtype=Spider
 cost={G}{G}
 pt=1/3
 timing=main
-oracle=Reach. Wither
+oracle=Reach\nWither

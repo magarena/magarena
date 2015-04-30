@@ -9,4 +9,4 @@ pt=2/2
 ability=Soulbond;\
         As long as SN is paired with another creature, both creatures have first strike.
 timing=main
-oracle=Soulbond. As long as Hanweir Lancer is paired with another creature, both creatures have first strike.
+oracle=Soulbond\nAs long as Hanweir Lancer is paired with another creature, both creatures have first strike.

@@ -9,4 +9,4 @@ ability=SN enters the battlefield tapped.;\
         {T}: Add {R} to your mana pool.;\
         {T}, Remove a charge counter from SN: Add one mana of any color to your mana pool.
 timing=tapland
-oracle=Vivid Crag enters the battlefield tapped with two charge counters on it. {T}: Add {R} to your mana pool. {T}, Remove a charge counter from Vivid Crag: Add one mana of any color to your mana pool.
+oracle=Vivid Crag enters the battlefield tapped with two charge counters on it.\n{T}: Add {R} to your mana pool.\n{T}, Remove a charge counter from Vivid Crag: Add one mana of any color to your mana pool.

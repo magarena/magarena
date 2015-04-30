@@ -8,4 +8,4 @@ cost={4}{R}{R}
 pt=6/5
 ability=flying;unleash;SN has trample as long as it has a +1/+1 counter on it.
 timing=main
-oracle=Flying. Unleash. Chaos Imps has trample as long as it has a +1/+1 counter on it.
+oracle=Flying\nUnleash\nChaos Imps has trample as long as it has a +1/+1 counter on it.

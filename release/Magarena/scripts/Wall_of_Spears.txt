@@ -8,4 +8,4 @@ subtype=Wall
 cost={3}
 pt=2/3
 timing=smain
-oracle=Defender. First strike
+oracle=Defender\nFirst strike

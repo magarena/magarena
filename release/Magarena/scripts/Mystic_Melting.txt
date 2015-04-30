@@ -6,4 +6,4 @@ type=Instant
 cost={3}{G}
 effect=Destroy target artifact or enchantment.~Draw a card at the beginning of the next turn's upkeep.
 timing=removal
-oracle=Destroy target artifact or enchantment. Draw a card at the beginning of the next turn's upkeep.
+oracle=Destroy target artifact or enchantment.\nDraw a card at the beginning of the next turn's upkeep.

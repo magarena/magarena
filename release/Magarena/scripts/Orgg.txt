@@ -10,4 +10,4 @@ ability=Trample;\
 SN can't block creatures with power 3 or greater.
 timing=main
 requires_groovy_code
-oracle=Trample. Orgg can't attack if defending player controls an untapped creature with power 3 or greater. Orgg can't block creatures with power 3 or greater.
+oracle=Trample\nOrgg can't attack if defending player controls an untapped creature with power 3 or greater.\nOrgg can't block creatures with power 3 or greater.

@@ -9,4 +9,4 @@ pt=3/4
 ability=Defender.;\
         {W}: SN can attack as though it didn't have defender this turn.
 timing=main
-oracle=Defender. {W}: Mirror Wall can attack this turn as though it didn't have defender.
+oracle=Defender\n{W}: Mirror Wall can attack this turn as though it didn't have defender.

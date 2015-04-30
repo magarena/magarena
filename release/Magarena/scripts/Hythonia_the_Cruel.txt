@@ -10,4 +10,4 @@ ability=deathtouch;\
         {6}{B}{B}: Monstrosity 3.;\
         When SN becomes monstrous, destroy all non-Gorgon creatures.
 timing=main
-oracle=Deathtouch. {6}{B}{B}: Monstrosity 3. When Hythonia the Cruel becomes monstrous, destroy all non-Gorgon creatures.
+oracle=Deathtouch\n{6}{B}{B}: Monstrosity 3.\nWhen Hythonia the Cruel becomes monstrous, destroy all non-Gorgon creatures.

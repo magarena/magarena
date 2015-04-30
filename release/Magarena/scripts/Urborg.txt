@@ -8,4 +8,4 @@ ability={T}: Add {B} to your mana pool.;\
         {T}: Target creature loses first strike until end of turn.;\
         {T}: Target creature loses swampwalk until end of turn.
 timing=main
-oracle={T}: Add {B} to your mana pool. {T}: Target creature loses first strike or swampwalk until end of turn.
+oracle={T}: Add {B} to your mana pool.\n{T}: Target creature loses first strike or swampwalk until end of turn.

@@ -9,4 +9,4 @@ pt=2/2
 ability=exalted;\
         {1},Sacrifice SN: Destroy target artifact or enchantment.
 timing=main
-oracle=Exalted. {1}, Sacrifice Qasali Pridemage: Destroy target artifact or enchantment.
+oracle=Exalted\n{1}, Sacrifice Qasali Pridemage: Destroy target artifact or enchantment.

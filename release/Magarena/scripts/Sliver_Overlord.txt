@@ -9,4 +9,4 @@ pt=7/7
 ability={3}: Search your library for a Sliver card, reveal it, and put it into your hand. Then shuffle your library.
 timing=main
 requires_groovy_code
-oracle={3}: Search your library for a Sliver card, reveal that card, and put it into your hand. Then shuffle your library. {3}: Gain control of target Sliver.
+oracle={3}: Search your library for a Sliver card, reveal that card, and put it into your hand. Then shuffle your library.\n{3}: Gain control of target Sliver.

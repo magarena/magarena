@@ -9,4 +9,4 @@ pt=5/5
 ability=flying
 timing=main
 requires_groovy_code
-oracle=Flying. When Hunted Lammasu enters the battlefield, target opponent puts a 4/4 black Horror creature token onto the battlefield.
+oracle=Flying\nWhen Hunted Lammasu enters the battlefield, target opponent puts a 4/4 black Horror creature token onto the battlefield.

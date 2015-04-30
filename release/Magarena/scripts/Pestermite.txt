@@ -9,4 +9,4 @@ pt=2/1
 ability=flash;flying;\
         When SN enters the battlefield, you may tap or untap target permanent.
 timing=main
-oracle=Flash. Flying. When Pestermite enters the battlefield, you may tap or untap target permanent.
+oracle=Flash\nFlying\nWhen Pestermite enters the battlefield, you may tap or untap target permanent.

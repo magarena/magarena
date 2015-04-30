@@ -8,4 +8,4 @@ ability=SN enters the battlefield tapped.;\
         When SN enters the battlefield, you gain 1 life.;\
         {T}: Add {G} or {U} to your mana pool.
 timing=tapland
-oracle=Thornwood Falls enters the battlefield tapped. When Thornwood Falls enters the battlefield, you gain 1 life. {T}: Add {G} or {U} to your mana pool.
+oracle=Thornwood Falls enters the battlefield tapped.\nWhen Thornwood Falls enters the battlefield, you gain 1 life.\n{T}: Add {G} or {U} to your mana pool.

@@ -7,4 +7,4 @@ cost={1}{U}{U}
 ability=Buyback Discard two cards.
 effect=Counter target spell.~Buyback
 timing=counter
-oracle=Buyback—Discard two cards. Counter target spell.
+oracle=Buyback—Discard two cards.\nCounter target spell.

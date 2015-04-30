@@ -7,4 +7,4 @@ cost={1}{W}
 effect=Put target enchantment on top of its owner's library.
 ability=cycling {2}
 timing=removal
-oracle=Put target enchantment on top of its owner's library. Cycling {2}
+oracle=Put target enchantment on top of its owner's library.\nCycling {2}

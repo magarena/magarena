@@ -9,4 +9,4 @@ ability={1}{W}: Attach SN to target creature.;\
         Enchanted creature can't activate abilities.
 enchant=default,neg creature
 timing=enchantment
-oracle=Enchant creature. Enchanted creature's activated abilities can't be activated. {1}{W}: Attach Detainment Spell to target creature.
+oracle=Enchant creature\nEnchanted creature's activated abilities can't be activated.\n{1}{W}: Attach Detainment Spell to target creature.

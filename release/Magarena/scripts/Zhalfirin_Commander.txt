@@ -9,4 +9,4 @@ pt=2/2
 ability=flanking;\
         {1}{W}{W}: Target Knight creature gets +1/+1 until end of turn.
 timing=main
-oracle=Flanking. {1}{W}{W}: Target Knight creature gets +1/+1 until end of turn.
+oracle=Flanking\n{1}{W}{W}: Target Knight creature gets +1/+1 until end of turn.

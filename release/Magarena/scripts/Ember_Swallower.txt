@@ -9,4 +9,4 @@ pt=4/5
 ability={5}{R}{R}: Monstrosity 3.
 timing=main
 requires_groovy_code
-oracle={5}{R}{R}: Monstrosity 3. When Ember Swallower becomes monstrous, each player sacrifices three lands.
+oracle={5}{R}{R}: Monstrosity 3.\nWhen Ember Swallower becomes monstrous, each player sacrifices three lands.

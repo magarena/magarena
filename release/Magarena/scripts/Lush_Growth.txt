@@ -8,4 +8,4 @@ cost={G}
 timing=main
 enchant=default,land
 requires_groovy_code
-oracle=Enchant land. Enchanted land is a Mountain, Forest, and Plains.
+oracle=Enchant land\nEnchanted land is a Mountain, Forest, and Plains.

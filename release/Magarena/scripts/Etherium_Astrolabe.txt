@@ -6,4 +6,4 @@ type=Artifact
 cost={2}{U}
 ability=Flash;{B},{T},Sacrifice an artifact: Draw a card.
 timing=artifact
-oracle=Flash. {B}, {T}, Sacrifice an artifact: Draw a card.
+oracle=Flash\n{B}, {T}, Sacrifice an artifact: Draw a card.

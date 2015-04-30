@@ -8,4 +8,4 @@ cost={1}{U}
 timing=main
 enchant=toughness,neg creature
 requires_groovy_code
-oracle=Enchant creature. When enchanted creature dies, Creature Bond deals damage equal to that creature's toughness to the creature's controller.
+oracle=Enchant creature\nWhen enchanted creature dies, Creature Bond deals damage equal to that creature's toughness to the creature's controller.

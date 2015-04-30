@@ -8,4 +8,4 @@ cost={W}{W}
 pt=2/2
 ability=protection from black;bushido 1
 timing=main
-oracle=Protection from black. Bushido 1
+oracle=Protection from black\nBushido 1

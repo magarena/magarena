@@ -7,4 +7,4 @@ cost={W}
 ability=buyback {3}
 effect=Prevent the next 3 damage that would be dealt to target creature this turn.~Buyback
 timing=pump
-oracle=Buyback {3}. Prevent the next 3 damage that would be dealt to target creature this turn.
+oracle=Buyback {3}\nPrevent the next 3 damage that would be dealt to target creature this turn.

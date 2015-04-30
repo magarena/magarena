@@ -9,4 +9,4 @@ pt=2/1
 ability=Flying; vigilance;\
         Megamorph {1}{W}
 timing=main
-oracle=Flying, vigilance. Megamorph {1}{W}
+oracle=Flying, vigilance\nMegamorph {1}{W}

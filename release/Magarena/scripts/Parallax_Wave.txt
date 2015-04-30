@@ -8,4 +8,4 @@ ability=fading 5;\
         Remove a fade counter from SN: Exile target creature.;\
         When SN leaves the battlefield, each player returns to the battlefield all cards he or she owns exiled with SN.
 timing=enchantment
-oracle=Fading 5. Remove a fade counter from Parallax Wave: Exile target creature. When Parallax Wave leaves the battlefield, each player returns to the battlefield all cards he or she owns exiled with Parallax Wave.
+oracle=Fading 5\nRemove a fade counter from Parallax Wave: Exile target creature.\nWhen Parallax Wave leaves the battlefield, each player returns to the battlefield all cards he or she owns exiled with Parallax Wave.

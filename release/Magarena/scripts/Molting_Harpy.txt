@@ -9,4 +9,4 @@ pt=2/1
 ability=flying;\
         At the beginning of your upkeep, you may pay {2}. If you don't, sacrifice SN.
 timing=main
-oracle=Flying. At the beginning of your upkeep, sacrifice Molting Harpy unless you pay {2}.
+oracle=Flying\nAt the beginning of your upkeep, sacrifice Molting Harpy unless you pay {2}.

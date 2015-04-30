@@ -10,4 +10,4 @@ ability=other archer creatures you control get +1/+1
 static=player
 timing=main
 requires_groovy_code
-oracle=Other Archer creatures you control get +1/+1. Whenever an Archer you control deals damage to a creature, that Archer deals that much damage to that creature's controller.
+oracle=Other Archer creatures you control get +1/+1.\nWhenever an Archer you control deals damage to a creature, that Archer deals that much damage to that creature's controller.

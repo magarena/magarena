@@ -8,4 +8,4 @@ ability=SN enters the battlefield tapped.;\
         {T}: Add {G} to your mana pool.;\
         cycling {2}
 timing=tapland
-oracle=Slippery Karst enters the battlefield tapped. {T}: Add {G} to your mana pool. Cycling {2}
+oracle=Slippery Karst enters the battlefield tapped.\n{T}: Add {G} to your mana pool.\nCycling {2}

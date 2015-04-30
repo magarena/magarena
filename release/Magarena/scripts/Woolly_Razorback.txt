@@ -11,4 +11,4 @@ ability=SN enters the battlefield with three ice counters on it.;\
         Whenever SN blocks, remove an ice counter from SN.
 timing=main
 requires_groovy_code
-oracle=Woolly Razorback enters the battlefield with three ice counters on it. As long as Woolly Razorback has an ice counter on it, prevent all combat damage it would deal and it has defender. Whenever Woolly Razorback blocks, remove an ice counter from it.
+oracle=Woolly Razorback enters the battlefield with three ice counters on it.\nAs long as Woolly Razorback has an ice counter on it, prevent all combat damage it would deal and it has defender.\nWhenever Woolly Razorback blocks, remove an ice counter from it.

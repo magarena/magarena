@@ -9,4 +9,4 @@ pt=1/1
 ability=SN gets +1/+1 as long as you control a Plains.;\
         {4}{W}: Creatures you control get +1/+1 until end of turn.
 timing=main
-oracle=Sunblade Elf gets +1/+1 as long as you control a Plains. {4}{W}: Creatures you control get +1/+1 until end of turn.
+oracle=Sunblade Elf gets +1/+1 as long as you control a Plains.\n{4}{W}: Creatures you control get +1/+1 until end of turn.

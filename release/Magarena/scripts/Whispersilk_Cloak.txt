@@ -8,4 +8,4 @@ cost={3}
 ability=Equipped creature has shroud and can't be blocked.;\
         Equip {2}
 timing=equipment
-oracle=Equipped creature can't be blocked and has shroud. Equip {2}
+oracle=Equipped creature can't be blocked and has shroud.\nEquip {2}

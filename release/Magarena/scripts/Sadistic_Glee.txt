@@ -8,4 +8,4 @@ cost={B}
 ability=Whenever a creature dies, put a +1/+1 counter on enchanted creature.
 enchant=pump,pos creature
 timing=enchantment
-oracle=Enchant creature. Whenever a creature dies, put a +1/+1 counter on enchanted creature.
+oracle=Enchant creature\nWhenever a creature dies, put a +1/+1 counter on enchanted creature.

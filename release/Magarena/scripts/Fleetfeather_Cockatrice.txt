@@ -10,4 +10,4 @@ ability=Flash;\
         Flying;deathtouch;\
         {5}{G}{U}: Monstrosity 3.
 timing=flash
-oracle=Flash. Flying, deathtouch. {5}{G}{U}: Monstrosity 3.
+oracle=Flash\nFlying, deathtouch\n{5}{G}{U}: Monstrosity 3.

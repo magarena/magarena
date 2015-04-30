@@ -9,4 +9,4 @@ pt=1/1
 ability=haste;\
         Whenever SN and at least two other creatures attack, creatures you control gain first strike, trample, and can't be blocked by creature tokens until end of turn.
 timing=main
-oracle=Haste. Battalion — Whenever Legion Loyalist and at least two other creatures attack, creatures you control gain first strike and trample until end of turn and can't be blocked by creature tokens this turn.
+oracle=Haste\nBattalion — Whenever Legion Loyalist and at least two other creatures attack, creatures you control gain first strike and trample until end of turn and can't be blocked by creature tokens this turn.

@@ -10,4 +10,4 @@ ability=trample;haste;\
         At the beginning of the end step, sacrifice SN.;\
         Unearth {1}{R}
 timing=fmain
-oracle=Trample, haste. At the beginning of the end step, sacrifice Hellspark Elemental. Unearth {1}{R}
+oracle=Trample, haste\nAt the beginning of the end step, sacrifice Hellspark Elemental.\nUnearth {1}{R}

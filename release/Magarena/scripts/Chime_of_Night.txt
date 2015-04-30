@@ -8,4 +8,4 @@ cost={1}{B}
 ability=When SN is put into a graveyard from the battlefield, destroy target nonblack creature.
 enchant=default,creature
 timing=enchantment
-oracle=Enchant creature. When Chime of Night is put into a graveyard from the battlefield, destroy target nonblack creature.
+oracle=Enchant creature\nWhen Chime of Night is put into a graveyard from the battlefield, destroy target nonblack creature.

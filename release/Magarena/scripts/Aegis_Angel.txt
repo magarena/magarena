@@ -9,4 +9,4 @@ pt=5/5
 ability=Flying
 timing=main
 requires_groovy_code
-oracle=Flying. When Aegis Angel enters the battlefield, another target permanent gains indestructible for as long as you control Aegis Angel.
+oracle=Flying\nWhen Aegis Angel enters the battlefield, another target permanent gains indestructible for as long as you control Aegis Angel.

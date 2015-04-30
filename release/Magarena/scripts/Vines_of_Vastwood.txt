@@ -7,4 +7,4 @@ cost={G}
 timing=pump
 ability=kicker {G}
 requires_groovy_code
-oracle=Kicker {G}. Target creature can't be the target of spells or abilities your opponents control this turn. If Vines of Vastwood was kicked, that creature gets +4/+4 until end of turn.
+oracle=Kicker {G}\nTarget creature can't be the target of spells or abilities your opponents control this turn. If Vines of Vastwood was kicked, that creature gets +4/+4 until end of turn.

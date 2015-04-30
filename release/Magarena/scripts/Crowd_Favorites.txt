@@ -8,4 +8,4 @@ cost={6}{W}
 pt=4/4
 ability={3}{W}:Tap target creature.;{3}{W}:SN gets +0/+5 until end of turn.
 timing=main
-oracle={3}{W}: Tap target creature. {3}{W}: Crowd Favorites gets +0/+5 until end of turn.
+oracle={3}{W}: Tap target creature.\n{3}{W}: Crowd Favorites gets +0/+5 until end of turn.

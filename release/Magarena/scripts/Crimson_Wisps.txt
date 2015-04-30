@@ -6,4 +6,4 @@ type=Instant
 cost={R}
 effect=Target creature becomes red and gains haste until end of turn.~Draw a card.
 timing=fmain
-oracle=Target creature becomes red and gains haste until end of turn. Draw a card.
+oracle=Target creature becomes red and gains haste until end of turn.\nDraw a card.

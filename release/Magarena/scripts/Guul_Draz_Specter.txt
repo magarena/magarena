@@ -10,4 +10,4 @@ ability=flying;\
         SN gets +3/+3 as long as an opponent has no cards in hand.;\
         Whenever SN deals combat damage to a player, that player discards a card.
 timing=main
-oracle=Flying. Guul Draz Specter gets +3/+3 as long as an opponent has no cards in hand. Whenever Guul Draz Specter deals combat damage to a player, that player discards a card.
+oracle=Flying\nGuul Draz Specter gets +3/+3 as long as an opponent has no cards in hand.\nWhenever Guul Draz Specter deals combat damage to a player, that player discards a card.

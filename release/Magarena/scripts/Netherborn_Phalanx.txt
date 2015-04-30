@@ -9,4 +9,4 @@ pt=2/4
 ability=Transmute {1}{B}{B}
 timing=main
 requires_groovy_code
-oracle=When Netherborn Phalanx enters the battlefield, each opponent loses 1 life for each creature he or she controls. Transmute {1}{B}{B}
+oracle=When Netherborn Phalanx enters the battlefield, each opponent loses 1 life for each creature he or she controls.\nTransmute {1}{B}{B}

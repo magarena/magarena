@@ -9,4 +9,4 @@ pt=1/1
 ability=Shroud;\
         Whenever another creature dies, you may put a +1/+1 counter on SN.
 timing=main
-oracle=Shroud. Whenever another creature dies, you may put a +1/+1 counter on Algae Gharial.
+oracle=Shroud\nWhenever another creature dies, you may put a +1/+1 counter on Algae Gharial.

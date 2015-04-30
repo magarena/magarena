@@ -9,4 +9,4 @@ pt=4/4
 ability=vigilance;protection from creatures
 timing=main
 requires_groovy_code
-oracle=Vigilance, protection from creatures. Whenever a creature deals combat damage to you, destroy that creature. Put a 1/1 white and black Spirit creature token with flying onto the battlefield.
+oracle=Vigilance, protection from creatures\nWhenever a creature deals combat damage to you, destroy that creature. Put a 1/1 white and black Spirit creature token with flying onto the battlefield.

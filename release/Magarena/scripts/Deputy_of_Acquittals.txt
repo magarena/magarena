@@ -9,4 +9,4 @@ pt=2/2
 ability=Flash;\
         When SN enters the battlefield, you may return another target creature you control to its owner's hand.
 timing=pumpFlash
-oracle=Flash. When Deputy of Acquittals enters the battlefield, you may return another target creature you control to its owner's hand.
+oracle=Flash\nWhen Deputy of Acquittals enters the battlefield, you may return another target creature you control to its owner's hand.

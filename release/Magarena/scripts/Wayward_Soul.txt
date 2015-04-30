@@ -9,4 +9,4 @@ pt=3/2
 ability=flying;\
         {U}: Put SN on top of its owner's library.
 timing=main
-oracle=Flying. {U}: Put Wayward Soul on top of its owner's library.
+oracle=Flying\n{U}: Put Wayward Soul on top of its owner's library.

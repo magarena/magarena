@@ -9,4 +9,4 @@ pt=6/6
 ability=Trample;\
         Whenever SN deals damage to an opponent, you may return target card from your graveyard to your hand.
 timing=main
-oracle=Trample. Whenever Charnelhoard Wurm deals damage to an opponent, you may return target card from your graveyard to your hand.
+oracle=Trample\nWhenever Charnelhoard Wurm deals damage to an opponent, you may return target card from your graveyard to your hand.

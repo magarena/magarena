@@ -9,4 +9,4 @@ pt=2/1
 ability=Megamorph {1}{G};\
         When SN is turned face up, destroy target artifact or enchantment an opponent controls.
 timing=main
-oracle=Megamorph {1}{G}. When Ainok Survivalist is turned face up, destroy target artifact or enchantment an opponent controls.
+oracle=Megamorph {1}{G}\nWhen Ainok Survivalist is turned face up, destroy target artifact or enchantment an opponent controls.

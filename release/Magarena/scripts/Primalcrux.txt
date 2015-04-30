@@ -9,4 +9,4 @@ pt=*/*
 ability=trample
 timing=main
 requires_groovy_code
-oracle=Trample. Chroma — Primalcrux's power and toughness are each equal to the number of green mana symbols in the mana costs of permanents you control.
+oracle=Trample\nChroma — Primalcrux's power and toughness are each equal to the number of green mana symbols in the mana costs of permanents you control.

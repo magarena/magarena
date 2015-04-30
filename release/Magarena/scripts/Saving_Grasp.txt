@@ -7,4 +7,4 @@ cost={U}
 effect=Return target creature you own to your hand.
 ability=Flashback {W}
 timing=removal
-oracle=Return target creature you own to your hand. Flashback {W}
+oracle=Return target creature you own to your hand.\nFlashback {W}

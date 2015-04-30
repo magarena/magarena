@@ -9,4 +9,4 @@ pt=2/1
 ability=Whenever you cast a blue spell, SN gets +1/+1 until end of turn.;\
         Whenever you cast a black spell, SN gains fear until end of turn.
 timing=main
-oracle=Whenever you cast a blue spell, Gravelgill Duo gets +1/+1 until end of turn. Whenever you cast a black spell, Gravelgill Duo gains fear until end of turn.
+oracle=Whenever you cast a blue spell, Gravelgill Duo gets +1/+1 until end of turn.\nWhenever you cast a black spell, Gravelgill Duo gains fear until end of turn.

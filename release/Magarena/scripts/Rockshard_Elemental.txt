@@ -9,4 +9,4 @@ pt=4/3
 ability=Double strike;\
         Morph {4}{R}{R}
 timing=main
-oracle=Double strike. Morph {4}{R}{R}
+oracle=Double strike\nMorph {4}{R}{R}

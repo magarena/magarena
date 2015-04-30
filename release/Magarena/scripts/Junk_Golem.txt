@@ -10,4 +10,4 @@ ability=SN enters the battlefield with three +1/+1 counters on it.;\
         {1}, Discard a card: Put a +1/+1 counter on SN.
 timing=main
 requires_groovy_code
-oracle=Junk Golem enters the battlefield with three +1/+1 counters on it. At the beginning of your upkeep, sacrifice Junk Golem unless you remove a +1/+1 counter from it. {1}, Discard a card: Put a +1/+1 counter on Junk Golem.
+oracle=Junk Golem enters the battlefield with three +1/+1 counters on it.\nAt the beginning of your upkeep, sacrifice Junk Golem unless you remove a +1/+1 counter from it.\n{1}, Discard a card: Put a +1/+1 counter on Junk Golem.

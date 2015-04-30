@@ -9,4 +9,4 @@ pt=5/5
 ability=When SN enters the battlefield, put two 1/1 blue Merfolk Wizard creature tokens onto the battlefield.;\
         Tap two untapped Merfolk you control: Untap SN.~SN gains shroud until end of turn.
 timing=main
-oracle=When Benthicore enters the battlefield, put two 1/1 blue Merfolk Wizard creature tokens onto the battlefield. Tap two untapped Merfolk you control: Untap Benthicore. It gains shroud until end of turn.
+oracle=When Benthicore enters the battlefield, put two 1/1 blue Merfolk Wizard creature tokens onto the battlefield.\nTap two untapped Merfolk you control: Untap Benthicore. It gains shroud until end of turn.

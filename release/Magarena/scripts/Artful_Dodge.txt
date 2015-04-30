@@ -7,4 +7,4 @@ cost={U}
 effect=Target creature can't be blocked this turn.
 ability=Flashback {U}
 timing=fmain
-oracle=Target creature can't be blocked this turn. Flashback {U}
+oracle=Target creature can't be blocked this turn.\nFlashback {U}

@@ -9,4 +9,4 @@ pt=1/1
 ability=flying;\
         Whenever SN attacks, attacking Humans gain flying until end of turn.
 timing=main
-oracle=Flying. Whenever Cavalry Pegasus attacks, each attacking Human gains flying until end of turn.
+oracle=Flying\nWhenever Cavalry Pegasus attacks, each attacking Human gains flying until end of turn.

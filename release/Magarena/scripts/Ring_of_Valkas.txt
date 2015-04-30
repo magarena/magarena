@@ -9,4 +9,4 @@ ability=Equipped creature has haste.;\
         Equip {1}
 timing=equipment
 requires_groovy_code
-oracle=Equipped creature has haste. At the beginning of your upkeep, put a +1/+1 counter on equipped creature if it's red. Equip {1}
+oracle=Equipped creature has haste.\nAt the beginning of your upkeep, put a +1/+1 counter on equipped creature if it's red.\nEquip {1}

@@ -9,4 +9,4 @@ pt=4/4
 ability=Flying
 timing=main
 requires_groovy_code
-oracle=Flying. Whenever Mindscour Dragon deals combat damage to an opponent, target player puts the top four cards of his or her library into his or her graveyard.
+oracle=Flying\nWhenever Mindscour Dragon deals combat damage to an opponent, target player puts the top four cards of his or her library into his or her graveyard.

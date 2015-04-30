@@ -10,4 +10,4 @@ ability=Haste;\
         SN has trample as long as it has a -1/-1 counter on it.;\
         Persist
 timing=main
-oracle=Haste. Thunderblust has trample as long as it has a -1/-1 counter on it. Persist
+oracle=Haste\nThunderblust has trample as long as it has a -1/-1 counter on it.\nPersist

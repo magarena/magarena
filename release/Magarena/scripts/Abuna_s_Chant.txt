@@ -7,4 +7,4 @@ cost={3}{W}
 ability=Entwine {2}
 effect=Choose one — (1) You gain 5 life. (2) Prevent the next 5 damage that would be dealt to target creature this turn.
 timing=pump
-oracle=Choose one — • You gain 5 life. • Prevent the next 5 damage that would be dealt to target creature this turn. Entwine {2}
+oracle=Choose one —\n• You gain 5 life.\n• Prevent the next 5 damage that would be dealt to target creature this turn.\nEntwine {2}

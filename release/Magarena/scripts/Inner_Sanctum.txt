@@ -6,4 +6,4 @@ type=Enchantment
 cost={1}{W}{W}
 timing=enchantment
 requires_groovy_code
-oracle=Cumulative upkeep—Pay 2 life. Prevent all damage that would be dealt to creatures you control.
+oracle=Cumulative upkeep—Pay 2 life.\nPrevent all damage that would be dealt to creatures you control.

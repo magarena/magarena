@@ -9,4 +9,4 @@ cost={6}{U}
 pt=10/10
 ability=flying;champion Elemental
 timing=main
-oracle=Flying. Champion an Elemental
+oracle=Flying\nChampion an Elemental

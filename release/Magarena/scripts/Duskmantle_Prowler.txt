@@ -8,4 +8,4 @@ cost={3}{B}
 pt=2/2
 ability=exalted;haste
 timing=fmain
-oracle=Haste. Exalted
+oracle=Haste\nExalted

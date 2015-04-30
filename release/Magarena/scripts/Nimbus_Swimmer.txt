@@ -9,4 +9,4 @@ pt=0/0
 ability=flying;\
         SN enters the battlefield with X +1/+1 counters on it.
 timing=main
-oracle=Flying. Nimbus Swimmer enters the battlefield with X +1/+1 counters on it.
+oracle=Flying\nNimbus Swimmer enters the battlefield with X +1/+1 counters on it.

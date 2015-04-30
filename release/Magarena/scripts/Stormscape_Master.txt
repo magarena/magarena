@@ -9,4 +9,4 @@ pt=2/2
 ability={W}{W}, {T}: Target creature gains protection from the color of your choice until end of turn.;\
         {B}{B}, {T}: Target player loses 2 life and you gain 2 life.
 timing=main
-oracle={W}{W}, {T}: Target creature gains protection from the color of your choice until end of turn. {B}{B}, {T}: Target player loses 2 life and you gain 2 life.
+oracle={W}{W}, {T}: Target creature gains protection from the color of your choice until end of turn.\n{B}{B}, {T}: Target player loses 2 life and you gain 2 life.

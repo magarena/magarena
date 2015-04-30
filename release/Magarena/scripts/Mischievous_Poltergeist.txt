@@ -9,4 +9,4 @@ pt=1/1
 ability=flying;\
         Pay 1 life: Regenerate SN.
 timing=main
-oracle=Flying. Pay 1 life: Regenerate Mischievous Poltergeist.
+oracle=Flying\nPay 1 life: Regenerate Mischievous Poltergeist.

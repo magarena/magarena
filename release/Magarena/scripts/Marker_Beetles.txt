@@ -9,4 +9,4 @@ pt=2/3
 ability=When SN dies, target creature gets +1/+1 until end of turn.;\
         {2},Sacrifice SN: Draw a card.
 timing=main
-oracle=When Marker Beetles dies, target creature gets +1/+1 until end of turn. {2}, Sacrifice Marker Beetles: Draw a card.
+oracle=When Marker Beetles dies, target creature gets +1/+1 until end of turn.\n{2}, Sacrifice Marker Beetles: Draw a card.

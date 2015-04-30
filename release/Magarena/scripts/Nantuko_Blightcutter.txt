@@ -9,4 +9,4 @@ pt=2/2
 ability=Protection from black
 timing=main
 requires_groovy_code
-oracle=Protection from black. Threshold — Nantuko Blightcutter gets +1/+1 for each black permanent your opponents control as long as seven or more cards are in your graveyard.
+oracle=Protection from black\nThreshold — Nantuko Blightcutter gets +1/+1 for each black permanent your opponents control as long as seven or more cards are in your graveyard.

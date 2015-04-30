@@ -8,4 +8,4 @@ cost={1}{R}
 ability={T}: Enchanted creature gets +2/-2 until end of turn.
 timing=aura
 enchant=weaken +2/-2,creature
-oracle=Enchant creature. {T}: Enchanted creature gets +2/-2 until end of turn.
+oracle=Enchant creature\n{T}: Enchanted creature gets +2/-2 until end of turn.

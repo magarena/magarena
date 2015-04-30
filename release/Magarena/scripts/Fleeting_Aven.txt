@@ -9,4 +9,4 @@ pt=2/2
 ability=Flying;\
         Whenever a player cycles a card, return SN to its owner's hand.
 timing=main
-oracle=Flying. Whenever a player cycles a card, return Fleeting Aven to its owner's hand.
+oracle=Flying\nWhenever a player cycles a card, return Fleeting Aven to its owner's hand.

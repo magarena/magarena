@@ -10,4 +10,4 @@ ability=Flying;\
         Whenever SN deals combat damage to a player, that player discards two cards.;\
         Morph {3}{B}{B}
 timing=main
-oracle=Flying. Whenever Silent Specter deals combat damage to a player, that player discards two cards. Morph {3}{B}{B}
+oracle=Flying\nWhenever Silent Specter deals combat damage to a player, that player discards two cards.\nMorph {3}{B}{B}

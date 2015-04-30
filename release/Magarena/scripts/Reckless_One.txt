@@ -9,4 +9,4 @@ pt=*/*
 ability=haste;\
         SN's power and toughness are each equal to the number of Goblins on the battlefield.
 timing=fmain
-oracle=Haste. Reckless One's power and toughness are each equal to the number of Goblins on the battlefield.
+oracle=Haste\nReckless One's power and toughness are each equal to the number of Goblins on the battlefield.

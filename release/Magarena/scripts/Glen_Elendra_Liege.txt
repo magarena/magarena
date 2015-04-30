@@ -11,4 +11,4 @@ ability=flying;\
         other black creatures you control get +1/+1
 static=player
 timing=main
-oracle=Flying. Other blue creatures you control get +1/+1. Other black creatures you control get +1/+1.
+oracle=Flying\nOther blue creatures you control get +1/+1.\nOther black creatures you control get +1/+1.

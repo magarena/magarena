@@ -9,4 +9,4 @@ pt=3/3
 ability=flying;\
         When SN enters the battlefield, detain target creature an opponent controls.
 timing=main
-oracle=Flying. When Isperia's Skywatch enters the battlefield, detain target creature an opponent controls.
+oracle=Flying\nWhen Isperia's Skywatch enters the battlefield, detain target creature an opponent controls.

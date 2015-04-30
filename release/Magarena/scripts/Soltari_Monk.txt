@@ -8,4 +8,4 @@ cost={W}{W}
 pt=2/1
 ability=shadow;protection from black
 timing=main
-oracle=Protection from black. Shadow
+oracle=Protection from black\nShadow

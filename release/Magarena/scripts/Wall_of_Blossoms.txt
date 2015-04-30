@@ -9,4 +9,4 @@ pt=0/4
 ability=Defender;\
         When SN enters the battlefield, draw a card.
 timing=main
-oracle=Defender. When Wall of Blossoms enters the battlefield, draw a card.
+oracle=Defender\nWhen Wall of Blossoms enters the battlefield, draw a card.

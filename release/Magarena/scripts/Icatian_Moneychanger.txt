@@ -11,4 +11,4 @@ ability=SN enters the battlefield with three credit counters on it.;\
         At the beginning of your upkeep, put a credit counter on SN.
 timing=main
 requires_groovy_code
-oracle=Icatian Moneychanger enters the battlefield with three credit counters on it. When Icatian Moneychanger enters the battlefield, it deals 3 damage to you. At the beginning of your upkeep, put a credit counter on Icatian Moneychanger. Sacrifice Icatian Moneychanger: You gain 1 life for each credit counter on Icatian Moneychanger. Activate this ability only during your upkeep.
+oracle=Icatian Moneychanger enters the battlefield with three credit counters on it.\nWhen Icatian Moneychanger enters the battlefield, it deals 3 damage to you.\nAt the beginning of your upkeep, put a credit counter on Icatian Moneychanger.\nSacrifice Icatian Moneychanger: You gain 1 life for each credit counter on Icatian Moneychanger. Activate this ability only during your upkeep.

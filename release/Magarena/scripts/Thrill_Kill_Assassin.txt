@@ -8,4 +8,4 @@ cost={1}{B}
 pt=1/2
 ability=deathtouch;unleash
 timing=main
-oracle=Deathtouch. Unleash
+oracle=Deathtouch\nUnleash

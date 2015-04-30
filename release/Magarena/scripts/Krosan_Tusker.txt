@@ -9,4 +9,4 @@ pt=6/5
 ability=Cycling {2}{G};\
         When you cycle SN, you may search your library for a basic land card, reveal that card, put it into your hand, then shuffle your library.
 timing=main
-oracle=Cycling {2}{G}. When you cycle Krosan Tusker, you may search your library for a basic land card, reveal that card, put it into your hand, then shuffle your library.
+oracle=Cycling {2}{G}\nWhen you cycle Krosan Tusker, you may search your library for a basic land card, reveal that card, put it into your hand, then shuffle your library.

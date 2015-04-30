@@ -9,4 +9,4 @@ pt=6/6
 timing=main
 ability=vanishing 2;kicker {4}
 requires_groovy_code
-oracle=Kicker {4}. Vanishing 2. If Ravaging Riftwurm was kicked, it enters the battlefield with three additional time counters on it.
+oracle=Kicker {4}\nVanishing 2\nIf Ravaging Riftwurm was kicked, it enters the battlefield with three additional time counters on it.

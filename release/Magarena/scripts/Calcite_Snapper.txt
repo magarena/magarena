@@ -9,4 +9,4 @@ pt=1/4
 ability=shroud;\
         Whenever a land enters the battlefield under your control, you may switch SN's power and toughness until end of turn.
 timing=main
-oracle=Shroud. Landfall — Whenever a land enters the battlefield under your control, you may switch Calcite Snapper's power and toughness until end of turn.
+oracle=Shroud\nLandfall — Whenever a land enters the battlefield under your control, you may switch Calcite Snapper's power and toughness until end of turn.

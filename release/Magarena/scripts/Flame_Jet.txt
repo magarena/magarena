@@ -7,4 +7,4 @@ cost={1}{R}
 effect=SN deals 3 damage to target player.
 ability=cycling {2}
 timing=main
-oracle=Flame Jet deals 3 damage to target player. Cycling {2}
+oracle=Flame Jet deals 3 damage to target player.\nCycling {2}

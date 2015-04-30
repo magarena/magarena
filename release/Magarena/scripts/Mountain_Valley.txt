@@ -6,4 +6,4 @@ type=Land
 ability=SN enters the battlefield tapped.;\
         {T}, Sacrifice SN: Search your library for a Mountain or Forest card and put it onto the battlefield. Then shuffle your library.
 timing=land
-oracle=Mountain Valley enters the battlefield tapped. {T}, Sacrifice Mountain Valley: Search your library for a Mountain or Forest card and put it onto the battlefield. Then shuffle your library.
+oracle=Mountain Valley enters the battlefield tapped.\n{T}, Sacrifice Mountain Valley: Search your library for a Mountain or Forest card and put it onto the battlefield. Then shuffle your library.

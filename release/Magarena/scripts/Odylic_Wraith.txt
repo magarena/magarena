@@ -9,4 +9,4 @@ pt=2/2
 ability=swampwalk;\
         Whenever SN deals damage to a player, that player discards a card.
 timing=main
-oracle=Swampwalk. Whenever Odylic Wraith deals damage to a player, that player discards a card.
+oracle=Swampwalk\nWhenever Odylic Wraith deals damage to a player, that player discards a card.

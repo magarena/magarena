@@ -8,4 +8,4 @@ ability=SN enters the battlefield tapped.;\
         When SN enters the battlefield, you gain 1 life.;\
         {T}: Add {G} or {W} to your mana pool.
 timing=tapland
-oracle=Blossoming Sands enters the battlefield tapped. When Blossoming Sands enters the battlefield, you gain 1 life. {T}: Add {G} or {W} to your mana pool.
+oracle=Blossoming Sands enters the battlefield tapped.\nWhen Blossoming Sands enters the battlefield, you gain 1 life.\n{T}: Add {G} or {W} to your mana pool.

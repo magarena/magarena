@@ -9,4 +9,4 @@ pt=2/2
 ability=Morph {2}{U};\
         When SN is turned face up, return target creature to its owner's hand.
 timing=main
-oracle=Morph {2}{U}. When Echo Tracer is turned face up, return target creature to its owner's hand.
+oracle=Morph {2}{U}\nWhen Echo Tracer is turned face up, return target creature to its owner's hand.

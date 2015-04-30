@@ -7,4 +7,4 @@ ability={T}: Add {1} to your mana pool.
 timing=land
 mana_or_combat
 requires_groovy_code
-oracle={T}: Add {1} to your mana pool. {1}: Mutavault becomes a 2/2 creature with all creature types until end of turn. It's still a land.
+oracle={T}: Add {1} to your mana pool.\n{1}: Mutavault becomes a 2/2 creature with all creature types until end of turn. It's still a land.

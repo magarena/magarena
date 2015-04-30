@@ -9,4 +9,4 @@ pt=5/3
 ability=SN has haste as long as you control a red permanent.;\
         SN has lifelink as long as you control a white permanent.
 timing=main
-oracle=Cliffrunner Behemoth has haste as long as you control a red permanent. Cliffrunner Behemoth has lifelink as long as you control a white permanent.
+oracle=Cliffrunner Behemoth has haste as long as you control a red permanent.\nCliffrunner Behemoth has lifelink as long as you control a white permanent.

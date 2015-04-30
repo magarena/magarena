@@ -6,4 +6,4 @@ type=Instant
 cost={5}{W}
 effect=You gain 6 life.~Draw a card.
 timing=removal
-oracle=You gain 6 life. Draw a card.
+oracle=You gain 6 life.\nDraw a card.

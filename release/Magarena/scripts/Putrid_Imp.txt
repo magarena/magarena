@@ -9,4 +9,4 @@ pt=1/1
 ability=Discard a card: SN gains flying until end of turn.;\
         As long as seven or more cards are in your graveyard, SN gets +1/+1 and can't block.
 timing=main
-oracle=Discard a card: Putrid Imp gains flying until end of turn. Threshold — As long as seven or more cards are in your graveyard, Putrid Imp gets +1/+1 and can't block.
+oracle=Discard a card: Putrid Imp gains flying until end of turn.\nThreshold — As long as seven or more cards are in your graveyard, Putrid Imp gets +1/+1 and can't block.

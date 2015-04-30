@@ -6,4 +6,4 @@ type=Instant
 cost={2}{B}
 effect=Destroy target white creature. It can't be regenerated.~Draw a card.
 timing=removal
-oracle=Destroy target white creature. It can't be regenerated. Draw a card.
+oracle=Destroy target white creature. It can't be regenerated.\nDraw a card.

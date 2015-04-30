@@ -7,4 +7,4 @@ mana=b3r3g3
 ability={T}: Add {B} or {R} or {G} to your mana pool.;\
         SN enters the battlefield tapped.
 timing=tapland
-oracle=Savage Lands enters the battlefield tapped. {T}: Add {B}, {R}, or {G} to your mana pool.
+oracle=Savage Lands enters the battlefield tapped.\n{T}: Add {B}, {R}, or {G} to your mana pool.

@@ -9,4 +9,4 @@ pt=1/1
 ability=Flying;\
         Bushido 1
 timing=main
-oracle=Flying. Bushido 1
+oracle=Flying\nBushido 1

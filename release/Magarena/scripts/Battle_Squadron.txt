@@ -9,4 +9,4 @@ pt=*/*
 ability=flying;\
         SN's power and toughness are each equal to the number of creatures you control.
 timing=main
-oracle=Flying. Battle Squadron's power and toughness are each equal to the number of creatures you control.
+oracle=Flying\nBattle Squadron's power and toughness are each equal to the number of creatures you control.

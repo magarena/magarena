@@ -8,4 +8,4 @@ cost={1}{B}
 timing=aura
 enchant=toughness,neg creature
 requires_groovy_code
-oracle=Enchant creature. Whenever enchanted creature is dealt damage, Binding Agony deals that much damage to that creature's controller.
+oracle=Enchant creature\nWhenever enchanted creature is dealt damage, Binding Agony deals that much damage to that creature's controller.

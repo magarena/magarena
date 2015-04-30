@@ -9,4 +9,4 @@ pt=4/3
 ability=Flying;\
         {2}{U}: Tap target creature with flying.
 timing=main
-oracle=Flying. {2}{U}: Tap target creature with flying.
+oracle=Flying\n{2}{U}: Tap target creature with flying.

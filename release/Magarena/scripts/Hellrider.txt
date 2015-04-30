@@ -9,4 +9,4 @@ pt=3/3
 ability=haste
 timing=fmain
 requires_groovy_code
-oracle=Haste. Whenever a creature you control attacks, Hellrider deals 1 damage to defending player.
+oracle=Haste\nWhenever a creature you control attacks, Hellrider deals 1 damage to defending player.

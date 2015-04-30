@@ -9,4 +9,4 @@ pt=2/2
 ability=flying;\
         Whenever SN attacks, you may have target creature gain flying until end of turn.
 timing=main
-oracle=Flying. Whenever Kinsbaile Balloonist attacks, you may have target creature gain flying until end of turn.
+oracle=Flying\nWhenever Kinsbaile Balloonist attacks, you may have target creature gain flying until end of turn.

@@ -9,4 +9,4 @@ pt=1/4
 ability=Flying
 timing=main
 requires_groovy_code
-oracle=Flying. {2}{W}: Rappelling Scouts gains protection from the color of your choice until end of turn.
+oracle=Flying\n{2}{W}: Rappelling Scouts gains protection from the color of your choice until end of turn.

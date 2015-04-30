@@ -9,4 +9,4 @@ pt=2/2
 ability=When SN enters the battlefield, return target enchantment creature card from your graveyard to your hand.;\
         {W}, Sacrifice SN: Return target enchantment creature card from your graveyard to your hand.
 timing=main
-oracle=When Odunos River Trawler enters the battlefield, return target enchantment creature card from your graveyard to your hand. {W}, Sacrifice Odunos River Trawler: Return target enchantment creature card from your graveyard to your hand.
+oracle=When Odunos River Trawler enters the battlefield, return target enchantment creature card from your graveyard to your hand.\n{W}, Sacrifice Odunos River Trawler: Return target enchantment creature card from your graveyard to your hand.

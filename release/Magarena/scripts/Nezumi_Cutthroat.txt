@@ -8,4 +8,4 @@ subtype=Rat,Warrior
 cost={1}{B}
 pt=2/1
 timing=fmain
-oracle=Fear. Nezumi Cutthroat can't block.
+oracle=Fear\nNezumi Cutthroat can't block.

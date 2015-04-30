@@ -9,4 +9,4 @@ pt=2/1
 ability=infect
 timing=main
 requires_groovy_code
-oracle=Infect. When Ichor Rats enters the battlefield, each player gets a poison counter.
+oracle=Infect\nWhen Ichor Rats enters the battlefield, each player gets a poison counter.

@@ -9,4 +9,4 @@ pt=3/1
 ability=When SN enters the battlefield, sacrifice a creature.;\
         {B}: Regenerate SN.
 timing=main
-oracle=When Kjeldoran Dead enters the battlefield, sacrifice a creature. {B}: Regenerate Kjeldoran Dead.
+oracle=When Kjeldoran Dead enters the battlefield, sacrifice a creature.\n{B}: Regenerate Kjeldoran Dead.

@@ -6,4 +6,4 @@ type=Instant
 cost={3}{R}{R}
 timing=removal
 requires_groovy_code
-oracle=Return all Islands to their owners' hands. Each player sacrifices a Plains or a white permanent for each white permanent he or she controls.
+oracle=Return all Islands to their owners' hands.\nEach player sacrifices a Plains or a white permanent for each white permanent he or she controls.

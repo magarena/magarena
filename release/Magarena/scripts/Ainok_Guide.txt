@@ -10,4 +10,4 @@ ability=When SN enters the battlefield, choose one — \
         (1) Put a +1/+1 counter on SN. \
         (2) Search your library for a basic land card, reveal it, then shuffle your library and put that card on top of it.
 timing=main
-oracle=When Ainok Guide enters the battlefield, choose one — • Put a +1/+1 counter on Ainok Guide. • Search your library for a basic land card, reveal it, then shuffle your library and put that card on top of it.
+oracle=When Ainok Guide enters the battlefield, choose one —\n• Put a +1/+1 counter on Ainok Guide.\n• Search your library for a basic land card, reveal it, then shuffle your library and put that card on top of it.

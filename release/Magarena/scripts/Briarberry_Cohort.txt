@@ -9,4 +9,4 @@ pt=1/1
 ability=Flying;\
         SN gets +1/+1 as long as you control another blue creature.
 timing=main
-oracle=Flying. Briarberry Cohort gets +1/+1 as long as you control another blue creature.
+oracle=Flying\nBriarberry Cohort gets +1/+1 as long as you control another blue creature.

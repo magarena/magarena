@@ -10,4 +10,4 @@ ability=When you cycle SN, you may exile target card from a graveyard.;\
         When SN dies, you may exile target card from a graveyard.;\
         Cycling {2}{B}
 timing=main
-oracle=When you cycle Grixis Sojourners or it dies, you may exile target card from a graveyard. Cycling {2}{B}
+oracle=When you cycle Grixis Sojourners or it dies, you may exile target card from a graveyard.\nCycling {2}{B}

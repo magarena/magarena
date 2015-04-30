@@ -8,4 +8,4 @@ subtype=Hellion
 cost={5}{R}
 pt=5/4
 timing=fmain
-oracle=Haste. Flameborn Hellion attacks each turn if able.
+oracle=Haste\nFlameborn Hellion attacks each turn if able.

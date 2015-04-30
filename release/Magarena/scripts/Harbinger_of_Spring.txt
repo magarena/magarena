@@ -9,4 +9,4 @@ pt=2/1
 ability=Protection from non-Spirit creatures;\
         Soulshift 4
 timing=main
-oracle=Protection from non-Spirit creatures. Soulshift 4
+oracle=Protection from non-Spirit creatures\nSoulshift 4

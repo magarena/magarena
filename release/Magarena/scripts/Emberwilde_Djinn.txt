@@ -9,4 +9,4 @@ pt=5/4
 ability=Flying
 timing=main
 requires_groovy_code
-oracle=Flying. At the beginning of each player's upkeep, that player may pay {R}{R} or 2 life. If he or she does, the player gains control of Emberwilde Djinn.
+oracle=Flying\nAt the beginning of each player's upkeep, that player may pay {R}{R} or 2 life. If he or she does, the player gains control of Emberwilde Djinn.

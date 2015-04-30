@@ -7,4 +7,4 @@ cost={B}
 effect=Target player discards a card.
 ability=Flashback {3}{B}
 timing=main
-oracle=Target player discards a card. Flashback {3}{B}
+oracle=Target player discards a card.\nFlashback {3}{B}

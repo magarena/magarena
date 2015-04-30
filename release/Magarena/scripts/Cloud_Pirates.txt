@@ -8,4 +8,4 @@ cost={U}
 pt=1/1
 ability=flying;SN can block only creatures with flying.
 timing=main
-oracle=Flying. Cloud Pirates can block only creatures with flying.
+oracle=Flying\nCloud Pirates can block only creatures with flying.

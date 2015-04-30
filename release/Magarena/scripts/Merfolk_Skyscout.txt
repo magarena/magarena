@@ -9,4 +9,4 @@ pt=2/3
 ability=Flying;\
         Whenever SN attacks or blocks, untap target permanent.
 timing=main
-oracle=Flying. Whenever Merfolk Skyscout attacks or blocks, untap target permanent.
+oracle=Flying\nWhenever Merfolk Skyscout attacks or blocks, untap target permanent.

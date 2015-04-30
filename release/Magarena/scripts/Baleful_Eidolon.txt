@@ -10,4 +10,4 @@ ability=Bestow {4}{B};\
         Deathtouch;\
         Enchanted creature gets +1/+1 and has deathtouch.
 timing=main
-oracle=Bestow {4}{B}. Deathtouch. Enchanted creature gets +1/+1 and has deathtouch.
+oracle=Bestow {4}{B}\nDeathtouch\nEnchanted creature gets +1/+1 and has deathtouch.

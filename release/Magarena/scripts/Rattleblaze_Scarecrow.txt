@@ -9,4 +9,4 @@ pt=5/3
 ability=SN has persist as long as you control a black creature.;\
         SN has haste as long as you control a red creature.
 timing=artifact
-oracle=Rattleblaze Scarecrow has persist as long as you control a black creature. Rattleblaze Scarecrow has haste as long as you control a red creature.
+oracle=Rattleblaze Scarecrow has persist as long as you control a black creature.\nRattleblaze Scarecrow has haste as long as you control a red creature.

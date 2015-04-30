@@ -9,4 +9,4 @@ pt=2/2
 ability=flying;\
         {R}: SN gets +1/+0 until end of turn. Activate this ability only once each turn.
 timing=main
-oracle=Flying. {R}: Spitting Drake gets +1/+0 until end of turn. Activate this ability only once each turn.
+oracle=Flying\n{R}: Spitting Drake gets +1/+0 until end of turn. Activate this ability only once each turn.

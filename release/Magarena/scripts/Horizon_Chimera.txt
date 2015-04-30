@@ -9,4 +9,4 @@ pt=3/2
 ability=flash;flying;trample;\
         Whenever you draw a card, you gain 1 life.
 timing=flash
-oracle=Flash. Flying, trample. Whenever you draw a card, you gain 1 life.
+oracle=Flash\nFlying, trample\nWhenever you draw a card, you gain 1 life.

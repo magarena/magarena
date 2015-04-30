@@ -10,4 +10,4 @@ ability=flying;\
         SN enters the battlefield with three +1/+1 counters on it.
 timing=main
 requires_groovy_code=Phantom Nomad
-oracle=Flying. Phantom Flock enters the battlefield with three +1/+1 counters on it. If damage would be dealt to Phantom Flock, prevent that damage. Remove a +1/+1 counter from Phantom Flock.
+oracle=Flying\nPhantom Flock enters the battlefield with three +1/+1 counters on it.\nIf damage would be dealt to Phantom Flock, prevent that damage. Remove a +1/+1 counter from Phantom Flock.

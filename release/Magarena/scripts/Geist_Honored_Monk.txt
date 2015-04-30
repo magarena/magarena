@@ -10,4 +10,4 @@ ability=vigilance;\
         SN's power and toughness are each equal to the number of creatures you control.;\
         When SN enters the battlefield, put two 1/1 white Spirit creature tokens with flying onto the battlefield.
 timing=main
-oracle=Vigilance. Geist-Honored Monk's power and toughness are each equal to the number of creatures you control. When Geist-Honored Monk enters the battlefield, put two 1/1 white Spirit creature tokens with flying onto the battlefield.
+oracle=Vigilance\nGeist-Honored Monk's power and toughness are each equal to the number of creatures you control.\nWhen Geist-Honored Monk enters the battlefield, put two 1/1 white Spirit creature tokens with flying onto the battlefield.

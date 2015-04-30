@@ -9,4 +9,4 @@ pt=1/1
 ability=Soulbond;\
         As long as SN is paired with another creature, both creatures have protection from Zombies.
 timing=main
-oracle=Soulbond. As long as Diregraf Escort is paired with another creature, both creatures have protection from Zombies.
+oracle=Soulbond\nAs long as Diregraf Escort is paired with another creature, both creatures have protection from Zombies.

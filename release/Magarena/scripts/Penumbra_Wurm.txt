@@ -9,4 +9,4 @@ pt=6/6
 ability=trample;\
         When SN dies, put a 6/6 black Wurm creature token with trample onto the battlefield.
 timing=main
-oracle=Trample. When Penumbra Wurm dies, put a 6/6 black Wurm creature token with trample onto the battlefield.
+oracle=Trample\nWhen Penumbra Wurm dies, put a 6/6 black Wurm creature token with trample onto the battlefield.

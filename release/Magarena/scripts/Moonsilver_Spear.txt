@@ -9,4 +9,4 @@ ability=Equipped creature has first strike.;\
         Whenever equipped creature attacks, put a 4/4 white Angel creature token with flying onto the battlefield.;\
         Equip {4}
 timing=equipment
-oracle=Equipped creature has first strike. Whenever equipped creature attacks, put a 4/4 white Angel creature token with flying onto the battlefield. Equip {4}
+oracle=Equipped creature has first strike.\nWhenever equipped creature attacks, put a 4/4 white Angel creature token with flying onto the battlefield.\nEquip {4}

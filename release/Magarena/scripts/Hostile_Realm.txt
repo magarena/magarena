@@ -8,4 +8,4 @@ cost={2}{R}
 ability=Enchanted land has "{T}: Target creature can't block this turn."
 timing=aura
 enchant=default,pos land
-oracle=Enchant land. Enchanted land has "{T}: Target creature can't block this turn."
+oracle=Enchant land\nEnchanted land has "{T}: Target creature can't block this turn."

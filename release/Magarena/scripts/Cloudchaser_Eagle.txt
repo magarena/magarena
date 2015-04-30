@@ -9,4 +9,4 @@ pt=2/2
 ability=flying;\
         When SN enters the battlefield, destroy target enchantment.
 timing=main
-oracle=Flying. When Cloudchaser Eagle enters the battlefield, destroy target enchantment.
+oracle=Flying\nWhen Cloudchaser Eagle enters the battlefield, destroy target enchantment.

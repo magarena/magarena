@@ -9,4 +9,4 @@ pt=2/1
 ability=flying;\
         {2},Sacrifice SN: Draw a card.
 timing=main
-oracle=Flying. {2}, Sacrifice Slinking Skirge: Draw a card.
+oracle=Flying\n{2}, Sacrifice Slinking Skirge: Draw a card.

@@ -7,4 +7,4 @@ cost={2}{R}
 effect=Destroy target artifact.
 timing=removal
 requires_groovy_code
-oracle=If an opponent controls an Island and you control a Mountain, you may cast Mogg Salvage without paying its mana cost. Destroy target artifact.
+oracle=If an opponent controls an Island and you control a Mountain, you may cast Mogg Salvage without paying its mana cost.\nDestroy target artifact.

@@ -8,4 +8,4 @@ cost={B}{B}
 enchant=default,neg artifact
 timing=enchantment
 requires_groovy_code
-oracle=Enchant artifact. At the beginning of the upkeep of enchanted artifact's controller, Warp Artifact deals 1 damage to that player.
+oracle=Enchant artifact\nAt the beginning of the upkeep of enchanted artifact's controller, Warp Artifact deals 1 damage to that player.

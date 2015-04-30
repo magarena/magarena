@@ -8,4 +8,4 @@ subtype=Bird
 cost={1}{U}
 pt=2/1
 timing=main
-oracle=Flying. Welkin Tern can block only creatures with flying.
+oracle=Flying\nWelkin Tern can block only creatures with flying.

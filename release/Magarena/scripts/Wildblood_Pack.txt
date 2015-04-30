@@ -12,4 +12,4 @@ ability=Trample;\
 transform=Instigator Gang
 timing=main
 hidden
-oracle=Trample. Attacking creatures you control get +3/+0. At the beginning of each upkeep, if a player cast two or more spells last turn, transform Wildblood Pack.
+oracle=Trample\nAttacking creatures you control get +3/+0.\nAt the beginning of each upkeep, if a player cast two or more spells last turn, transform Wildblood Pack.

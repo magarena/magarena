@@ -8,4 +8,4 @@ cost={1}{B}
 pt=1/1
 ability=bloodthirst 1;flying
 timing=main
-oracle=Bloodthirst 1. Flying
+oracle=Bloodthirst 1\nFlying

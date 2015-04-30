@@ -12,4 +12,4 @@ ability=Whenever equipped creature deals combat damage, put two charge counters 
         (3) You gain 2 life.;\
         Equip {2}
 timing=main
-oracle=Whenever equipped creature deals combat damage, put two charge counters on Umezawa's Jitte. Remove a charge counter from Umezawa's Jitte: Choose one — • Equipped creature gets +2/+2 until end of turn. • Target creature gets -1/-1 until end of turn. • You gain 2 life. Equip {2}
+oracle=Whenever equipped creature deals combat damage, put two charge counters on Umezawa's Jitte.\nRemove a charge counter from Umezawa's Jitte: Choose one —\n• Equipped creature gets +2/+2 until end of turn.\n• Target creature gets -1/-1 until end of turn.\n• You gain 2 life.\nEquip {2}

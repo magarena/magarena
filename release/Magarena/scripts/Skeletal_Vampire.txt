@@ -11,4 +11,4 @@ ability=flying;\
         {3}{B}{B}, Sacrifice a Bat: put two 1/1 black Bat creature tokens with flying onto the battlefield.;\
         Sacrifice a Bat: Regenerate SN.
 timing=main
-oracle=Flying. When Skeletal Vampire enters the battlefield, put two 1/1 black Bat creature tokens with flying onto the battlefield. {3}{B}{B}, Sacrifice a Bat: Put two 1/1 black Bat creature tokens with flying onto the battlefield. Sacrifice a Bat: Regenerate Skeletal Vampire.
+oracle=Flying\nWhen Skeletal Vampire enters the battlefield, put two 1/1 black Bat creature tokens with flying onto the battlefield.\n{3}{B}{B}, Sacrifice a Bat: Put two 1/1 black Bat creature tokens with flying onto the battlefield.\nSacrifice a Bat: Regenerate Skeletal Vampire.

@@ -7,4 +7,4 @@ cost={2}{G}
 ability=Flashback {2}{G}
 timing=pump
 requires_groovy_code
-oracle=You gain 2 life for each creature card in your graveyard. Flashback {2}{G}
+oracle=You gain 2 life for each creature card in your graveyard.\nFlashback {2}{G}

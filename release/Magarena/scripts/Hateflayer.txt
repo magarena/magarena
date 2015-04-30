@@ -9,4 +9,4 @@ pt=5/5
 ability=wither
 timing=main
 requires_groovy_code
-oracle=Wither. {2}{R}, {Q}: Hateflayer deals damage equal to its power to target creature or player.
+oracle=Wither\n{2}{R}, {Q}: Hateflayer deals damage equal to its power to target creature or player.

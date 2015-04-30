@@ -9,4 +9,4 @@ pt=1/1
 ability=When SN enters the battlefield, destroy target creature with power 4 or greater. It can't be regenerated.;\
         Madness {B}
 timing=main
-oracle=When Big Game Hunter enters the battlefield, destroy target creature with power 4 or greater. It can't be regenerated. Madness {B}
+oracle=When Big Game Hunter enters the battlefield, destroy target creature with power 4 or greater. It can't be regenerated.\nMadness {B}

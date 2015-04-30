@@ -10,4 +10,4 @@ ability=Trample;\
         Whenever SN deals combat damage to a player, you may draw a card.;\
         Morph {1}{G}{G}
 timing=main
-oracle=Trample. Whenever Hystrodon deals combat damage to a player, you may draw a card. Morph {1}{G}{G}
+oracle=Trample\nWhenever Hystrodon deals combat damage to a player, you may draw a card.\nMorph {1}{G}{G}

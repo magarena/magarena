@@ -9,4 +9,4 @@ ability=When SN enters the battlefield, put a +1/+1 counter on target creature y
         Enchanted creature gets -1/-1.
 timing=main
 enchant=weaken,neg creature
-oracle=Enchant creature. When Ancestral Vengeance enters the battlefield, put a +1/+1 counter on target creature you control. Enchanted creature gets -1/-1.
+oracle=Enchant creature\nWhen Ancestral Vengeance enters the battlefield, put a +1/+1 counter on target creature you control.\nEnchanted creature gets -1/-1.

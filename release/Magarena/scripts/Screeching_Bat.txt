@@ -10,4 +10,4 @@ ability=Flying;\
         At the beginning of your upkeep, you may pay {2}{B}{B}. If you do, transform SN.
 timing=main
 transform=Stalking Vampire
-oracle=Flying. At the beginning of your upkeep, you may pay {2}{B}{B}. If you do, transform Screeching Bat.
+oracle=Flying\nAt the beginning of your upkeep, you may pay {2}{B}{B}. If you do, transform Screeching Bat.

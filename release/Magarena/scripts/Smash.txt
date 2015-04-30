@@ -7,4 +7,4 @@ type=Instant
 cost={2}{R}
 effect=Destroy target artifact.~Draw a card.
 timing=removal
-oracle=Destroy target artifact. Draw a card.
+oracle=Destroy target artifact.\nDraw a card.

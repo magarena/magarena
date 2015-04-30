@@ -9,4 +9,4 @@ pt=3/2
 ability=Morph {4}{R};\
         When SN is turned face up, destroy target land.
 timing=main
-oracle=Morph {4}{R}. When Shaleskin Plower is turned face up, destroy target land.
+oracle=Morph {4}{R}\nWhen Shaleskin Plower is turned face up, destroy target land.

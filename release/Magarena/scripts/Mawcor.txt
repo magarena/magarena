@@ -8,4 +8,4 @@ cost={3}{U}{U}
 pt=3/3
 ability=flying;{T}: SN deals 1 damage to target creature or player.
 timing=main
-oracle=Flying. {T}: Mawcor deals 1 damage to target creature or player.
+oracle=Flying\n{T}: Mawcor deals 1 damage to target creature or player.

@@ -9,4 +9,4 @@ pt=4/3
 timing=main
 ability=Multikicker {R}
 requires_groovy_code
-oracle=Multikicker {R}. When Deathforge Shaman enters the battlefield, it deals damage to target player equal to twice the number of times it was kicked.
+oracle=Multikicker {R}\nWhen Deathforge Shaman enters the battlefield, it deals damage to target player equal to twice the number of times it was kicked.

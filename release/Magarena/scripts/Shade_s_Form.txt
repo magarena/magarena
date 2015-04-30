@@ -9,4 +9,4 @@ ability=Enchanted creature has "{B}: SN gets +1/+1 until end of turn."
 timing=aura
 enchant=pump,pos creature
 requires_groovy_code=Unhallowed Pact
-oracle=Enchant creature. Enchanted creature has "{B}: This creature gets +1/+1 until end of turn.". When enchanted creature dies, return that card to the battlefield under your control.
+oracle=Enchant creature\nEnchanted creature has "{B}: This creature gets +1/+1 until end of turn."\nWhen enchanted creature dies, return that card to the battlefield under your control.

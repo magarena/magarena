@@ -9,4 +9,4 @@ pt=*/*
 ability=flying;\
         SN's power and toughness are each equal to the number of Illusions on the battlefield.
 timing=main
-oracle=Flying. Krovikan Mist's power and toughness are each equal to the number of Illusions on the battlefield.
+oracle=Flying\nKrovikan Mist's power and toughness are each equal to the number of Illusions on the battlefield.

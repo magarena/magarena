@@ -6,4 +6,4 @@ type=Instant
 cost={4}{W}
 effect=Exile target attacking creature.~Draw a card.
 timing=removal
-oracle=Exile target attacking creature. Draw a card.
+oracle=Exile target attacking creature.\nDraw a card.

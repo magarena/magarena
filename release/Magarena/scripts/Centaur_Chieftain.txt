@@ -9,4 +9,4 @@ pt=3/3
 ability=haste;\
         As long as seven or more cards are in your graveyard, SN has "When SN enters the battlefield, creatures you control get +1/+1 and gain trample until end of turn."
 timing=main
-oracle=Haste. Threshold — As long as seven or more cards are in your graveyard, Centaur Chieftain has "When Centaur Chieftain enters the battlefield, creatures you control get +1/+1 and gain trample until end of turn."
+oracle=Haste\nThreshold — As long as seven or more cards are in your graveyard, Centaur Chieftain has "When Centaur Chieftain enters the battlefield, creatures you control get +1/+1 and gain trample until end of turn."

@@ -7,4 +7,4 @@ cost={2}{U}{U}
 effect=Counter target spell.
 timing=counter
 requires_groovy_code
-oracle=You may discard an Island card and another card rather than pay Foil's mana cost. Counter target spell.
+oracle=You may discard an Island card and another card rather than pay Foil's mana cost.\nCounter target spell.

@@ -10,4 +10,4 @@ ability=SN doesn't untap during your untap step.;\
         Whenever a creature dies, untap SN.;\
         {T}: SN deals 1 damage to target creature or player.
 timing=main
-oracle=Goblin Sharpshooter doesn't untap during your untap step. Whenever a creature dies, untap Goblin Sharpshooter. {T}: Goblin Sharpshooter deals 1 damage to target creature or player.
+oracle=Goblin Sharpshooter doesn't untap during your untap step.\nWhenever a creature dies, untap Goblin Sharpshooter.\n{T}: Goblin Sharpshooter deals 1 damage to target creature or player.

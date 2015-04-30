@@ -8,4 +8,4 @@ cost={G}
 enchant=pump,pos forest
 timing=enchantment
 requires_groovy_code
-oracle=Enchant Forest. {2}: Enchanted Forest becomes a 4/4 green Spirit creature until end of turn. It's still a land. When enchanted Forest is put into a graveyard, you may return Genju of the Cedars from your graveyard to your hand.
+oracle=Enchant Forest\n{2}: Enchanted Forest becomes a 4/4 green Spirit creature until end of turn. It's still a land.\nWhen enchanted Forest is put into a graveyard, you may return Genju of the Cedars from your graveyard to your hand.

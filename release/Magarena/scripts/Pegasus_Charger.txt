@@ -8,4 +8,4 @@ subtype=Pegasus
 cost={2}{W}
 pt=2/1
 timing=main
-oracle=Flying. First strike
+oracle=Flying\nFirst strike

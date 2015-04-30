@@ -7,4 +7,4 @@ cost={1}{U}
 effect=Counter target spell unless its controller pays {2}.
 ability=cycling {2}
 timing=counter
-oracle=Counter target spell unless its controller pays {2}. Cycling {2}
+oracle=Counter target spell unless its controller pays {2}.\nCycling {2}

@@ -9,4 +9,4 @@ pt=3/3
 ability=flying;first strike
 timing=main
 requires_groovy_code=Mourning Thrull
-oracle=Flying, first strike. Whenever Kjeldoran Gargoyle deals damage, you gain that much life.
+oracle=Flying, first strike\nWhenever Kjeldoran Gargoyle deals damage, you gain that much life.

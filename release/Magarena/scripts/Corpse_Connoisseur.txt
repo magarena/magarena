@@ -9,4 +9,4 @@ pt=3/3
 ability=When SN enters the battlefield, you may search your library for a creature card and put that card into your graveyard. If you do, shuffle your library.;\
         Unearth {3}{B}
 timing=main
-oracle=When Corpse Connoisseur enters the battlefield, you may search your library for a creature card and put that card into your graveyard. If you do, shuffle your library. Unearth {3}{B}
+oracle=When Corpse Connoisseur enters the battlefield, you may search your library for a creature card and put that card into your graveyard. If you do, shuffle your library.\nUnearth {3}{B}

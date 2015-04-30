@@ -9,4 +9,4 @@ pt=2/1
 ability=islandwalk;\
         {G}: Regenerate SN.
 timing=main
-oracle=Islandwalk. {G}: Regenerate River Boa.
+oracle=Islandwalk\n{G}: Regenerate River Boa.

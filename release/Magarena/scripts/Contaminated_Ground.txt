@@ -8,4 +8,4 @@ cost={1}{B}
 timing=main
 enchant=tap,neg land
 requires_groovy_code=Evil Presence;Corrupted Roots
-oracle=Enchant land. Enchanted land is a Swamp. Whenever enchanted land becomes tapped, its controller loses 2 life.
+oracle=Enchant land\nEnchanted land is a Swamp.\nWhenever enchanted land becomes tapped, its controller loses 2 life.

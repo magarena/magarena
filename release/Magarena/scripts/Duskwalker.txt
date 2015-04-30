@@ -9,4 +9,4 @@ pt=1/1
 timing=main
 ability=kicker {3}{B}
 requires_groovy_code
-oracle=Kicker {3}{B}. If Duskwalker was kicked, it enters the battlefield with two +1/+1 counters on it and with fear.
+oracle=Kicker {3}{B}\nIf Duskwalker was kicked, it enters the battlefield with two +1/+1 counters on it and with fear.

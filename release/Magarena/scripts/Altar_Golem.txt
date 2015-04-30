@@ -11,4 +11,4 @@ ability=Trample;\
         SN doesn't untap during your untap step.;\
         Tap five untapped creatures you control: Untap SN.
 timing=main
-oracle=Trample. Altar Golem's power and toughness are each equal to the number of creatures on the battlefield. Altar Golem doesn't untap during your untap step. Tap five untapped creatures you control: Untap Altar Golem.
+oracle=Trample\nAltar Golem's power and toughness are each equal to the number of creatures on the battlefield.\nAltar Golem doesn't untap during your untap step.\nTap five untapped creatures you control: Untap Altar Golem.

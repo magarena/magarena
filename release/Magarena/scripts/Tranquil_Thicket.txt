@@ -8,4 +8,4 @@ ability=SN enters the battlefield tapped.;\
         {T}: Add {G} to your mana pool.;\
         cycling {G}
 timing=tapland
-oracle=Tranquil Thicket enters the battlefield tapped. {T}: Add {G} to your mana pool. Cycling {G}
+oracle=Tranquil Thicket enters the battlefield tapped.\n{T}: Add {G} to your mana pool.\nCycling {G}

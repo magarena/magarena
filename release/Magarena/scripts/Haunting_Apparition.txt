@@ -10,4 +10,4 @@ ability=Flying;\
         As SN enters the battlefield, choose an opponent.
 timing=main
 requires_groovy_code
-oracle=Flying. As Haunting Apparition enters the battlefield, choose an opponent. Haunting Apparition's power is equal to 1 plus the number of green creature cards in the chosen player's graveyard.
+oracle=Flying\nAs Haunting Apparition enters the battlefield, choose an opponent.\nHaunting Apparition's power is equal to 1 plus the number of green creature cards in the chosen player's graveyard.

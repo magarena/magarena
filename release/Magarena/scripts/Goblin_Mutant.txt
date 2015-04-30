@@ -10,4 +10,4 @@ ability=Trample;\
 SN can't block creatures with power 3 or greater.
 timing=main
 requires_groovy_code
-oracle=Trample. Goblin Mutant can't attack if defending player controls an untapped creature with power 3 or greater. Goblin Mutant can't block creatures with power 3 or greater.
+oracle=Trample\nGoblin Mutant can't attack if defending player controls an untapped creature with power 3 or greater.\nGoblin Mutant can't block creatures with power 3 or greater.

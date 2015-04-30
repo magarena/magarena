@@ -9,4 +9,4 @@ pt=5/5
 ability=defender;\
         When SN becomes the target of a spell or ability, sacrifice it.
 timing=main
-oracle=Defender. When Phantasmal Abomination becomes the target of a spell or ability, sacrifice it.
+oracle=Defender\nWhen Phantasmal Abomination becomes the target of a spell or ability, sacrifice it.

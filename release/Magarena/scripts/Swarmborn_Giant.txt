@@ -10,4 +10,4 @@ ability={4}{G}{G}: Monstrosity 2.;\
         As long as SN is monstrous, it has reach.
 timing=main
 requires_groovy_code
-oracle=When you're dealt combat damage, sacrifice Swarmborn Giant. {4}{G}{G}: Monstrosity 2. As long as Swarmborn Giant is monstrous, it has reach.
+oracle=When you're dealt combat damage, sacrifice Swarmborn Giant.\n{4}{G}{G}: Monstrosity 2.\nAs long as Swarmborn Giant is monstrous, it has reach.

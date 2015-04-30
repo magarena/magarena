@@ -8,4 +8,4 @@ ability=Storm;\
         Cast SN with AI only if an opponent controls an attacking creature.
 effect=Target player sacrifices an attacking creature.
 timing=block
-oracle=Target player sacrifices an attacking creature. Storm
+oracle=Target player sacrifices an attacking creature.\nStorm

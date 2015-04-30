@@ -10,4 +10,4 @@ ability=protection from black;\
         SN enters the battlefield with three +1/+1 counters on it.
 timing=main
 requires_groovy_code=Phantom Nomad
-oracle=Protection from black. Phantom Centaur enters the battlefield with three +1/+1 counters on it. If damage would be dealt to Phantom Centaur, prevent that damage. Remove a +1/+1 counter from Phantom Centaur.
+oracle=Protection from black\nPhantom Centaur enters the battlefield with three +1/+1 counters on it.\nIf damage would be dealt to Phantom Centaur, prevent that damage. Remove a +1/+1 counter from Phantom Centaur.

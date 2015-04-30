@@ -9,4 +9,4 @@ pt=2/3
 ability=exalted;\
         When SN enters the battlefield, you gain 3 life.
 timing=main
-oracle=Exalted. When Rhox Bodyguard enters the battlefield, you gain 3 life.
+oracle=Exalted\nWhen Rhox Bodyguard enters the battlefield, you gain 3 life.

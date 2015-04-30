@@ -9,4 +9,4 @@ pt=1/1
 ability=When SN enters the battlefield, you may search your library for a card named Embermage Goblin, reveal it, and put it into your hand. If you do, shuffle your library.;\
         {T}: SN deals 1 damage to target creature or player.
 timing=main
-oracle=When Embermage Goblin enters the battlefield, you may search your library for a card named Embermage Goblin, reveal it, and put it into your hand. If you do, shuffle your library. {T}: Embermage Goblin deals 1 damage to target creature or player.
+oracle=When Embermage Goblin enters the battlefield, you may search your library for a card named Embermage Goblin, reveal it, and put it into your hand. If you do, shuffle your library.\n{T}: Embermage Goblin deals 1 damage to target creature or player.

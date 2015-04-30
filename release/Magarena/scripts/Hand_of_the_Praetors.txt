@@ -10,4 +10,4 @@ ability=infect
 static=player
 timing=main
 requires_groovy_code
-oracle=Infect. Other creatures you control with infect get +1/+1. Whenever you cast a creature spell with infect, target player gets a poison counter.
+oracle=Infect\nOther creatures you control with infect get +1/+1.\nWhenever you cast a creature spell with infect, target player gets a poison counter.

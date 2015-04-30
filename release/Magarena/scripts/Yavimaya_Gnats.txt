@@ -9,4 +9,4 @@ pt=0/1
 ability=flying;\
         {G}: Regenerate SN.
 timing=main
-oracle=Flying. {G}: Regenerate Yavimaya Gnats.
+oracle=Flying\n{G}: Regenerate Yavimaya Gnats.

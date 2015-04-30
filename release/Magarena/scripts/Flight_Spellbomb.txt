@@ -7,4 +7,4 @@ cost={1}
 ability={T}, Sacrifice SN: Target creature gains flying until end of turn.;\
         When SN is put into a graveyard from the battlefield, you may pay {U}. If you do, draw a card.
 timing=artifact
-oracle={T}, Sacrifice Flight Spellbomb: Target creature gains flying until end of turn. When Flight Spellbomb is put into a graveyard from the battlefield, you may pay {U}. If you do, draw a card.
+oracle={T}, Sacrifice Flight Spellbomb: Target creature gains flying until end of turn.\nWhen Flight Spellbomb is put into a graveyard from the battlefield, you may pay {U}. If you do, draw a card.

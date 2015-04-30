@@ -8,4 +8,4 @@ cost={4}
 pt=2/2
 ability=flash;protection from artifacts
 timing=artifact
-oracle=Flash. Protection from artifacts
+oracle=Flash\nProtection from artifacts

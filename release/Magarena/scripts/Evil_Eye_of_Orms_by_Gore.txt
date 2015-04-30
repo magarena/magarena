@@ -9,4 +9,4 @@ pt=3/6
 ability=Non-Eye creatures you control can't attack.;\
         SN can't be blocked except by Walls.
 timing=main
-oracle=Non-Eye creatures you control can't attack. Evil Eye of Orms-by-Gore can't be blocked except by Walls.
+oracle=Non-Eye creatures you control can't attack.\nEvil Eye of Orms-by-Gore can't be blocked except by Walls.

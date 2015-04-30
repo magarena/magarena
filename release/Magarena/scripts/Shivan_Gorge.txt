@@ -6,4 +6,4 @@ type=Legendary,Land
 ability={T}: Add {1} to your mana pool.;\
         {2}{R}, {T}: SN deals 1 damage to each opponent.
 timing=land
-oracle={T}: Add {1} to your mana pool. {2}{R}, {T}: Shivan Gorge deals 1 damage to each opponent.
+oracle={T}: Add {1} to your mana pool.\n{2}{R}, {T}: Shivan Gorge deals 1 damage to each opponent.

@@ -9,4 +9,4 @@ pt=1/1
 ability=Dethrone;\
         {1}{U}{R}: Target creature you control gains haste and can't be blocked until end of turn.
 timing=main
-oracle=Dethrone. {1}{U}{R}: Target creature you control gains haste until end of turn and can't be blocked this turn.
+oracle=Dethrone\n{1}{U}{R}: Target creature you control gains haste until end of turn and can't be blocked this turn.

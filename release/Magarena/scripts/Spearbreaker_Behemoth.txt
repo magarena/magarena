@@ -9,4 +9,4 @@ pt=5/5
 ability=Indestructible;\
         {1}: Target creature with power 5 or greater gains indestructible until end of turn.
 timing=main
-oracle=Indestructible. {1}: Target creature with power 5 or greater gains indestructible until end of turn.
+oracle=Indestructible\n{1}: Target creature with power 5 or greater gains indestructible until end of turn.

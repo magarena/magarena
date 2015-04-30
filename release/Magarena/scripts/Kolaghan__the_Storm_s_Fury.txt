@@ -10,4 +10,4 @@ ability=Flying;\
         Whenever a Dragon you control attacks, creatures you control get +1/+0 until end of turn.;\
         Dash {3}{B}{R}
 timing=main
-oracle=Flying. Whenever a Dragon you control attacks, creatures you control get +1/+0 until end of turn. Dash {3}{B}{R}
+oracle=Flying\nWhenever a Dragon you control attacks, creatures you control get +1/+0 until end of turn.\nDash {3}{B}{R}

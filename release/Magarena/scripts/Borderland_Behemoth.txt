@@ -9,4 +9,4 @@ pt=4/4
 ability=Trample;\
         SN gets +4/+4 for each other Giant you control.
 timing=main
-oracle=Trample. Borderland Behemoth gets +4/+4 for each other Giant you control.
+oracle=Trample\nBorderland Behemoth gets +4/+4 for each other Giant you control.

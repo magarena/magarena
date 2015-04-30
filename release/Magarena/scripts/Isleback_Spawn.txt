@@ -9,4 +9,4 @@ pt=4/8
 ability=Shroud;\
         SN gets +4/+8 as long as a library has twenty or fewer cards in it.
 timing=main
-oracle=Shroud. Isleback Spawn gets +4/+8 as long as a library has twenty or fewer cards in it.
+oracle=Shroud\nIsleback Spawn gets +4/+8 as long as a library has twenty or fewer cards in it.

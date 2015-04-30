@@ -9,4 +9,4 @@ pt=1/2
 ability=cumulative upkeep {1}
 timing=main
 requires_groovy_code
-oracle=Cumulative upkeep {1}. {T}: Kjeldoran Javelineer deals damage equal to the number of age counters on it to target attacking or blocking creature.
+oracle=Cumulative upkeep {1}\n{T}: Kjeldoran Javelineer deals damage equal to the number of age counters on it to target attacking or blocking creature.

@@ -8,4 +8,4 @@ cost={4}{U}{R}
 pt=3/6
 ability=cascade;{1}{U}{R}: Return SN to its owner's hand.
 timing=main
-oracle={1}{U}{R}: Return Etherium-Horn Sorcerer to its owner's hand. Cascade
+oracle={1}{U}{R}: Return Etherium-Horn Sorcerer to its owner's hand.\nCascade

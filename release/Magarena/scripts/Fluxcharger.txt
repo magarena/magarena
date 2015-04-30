@@ -9,4 +9,4 @@ pt=1/5
 ability=Flying;\
         Whenever you cast an instant or sorcery spell, you may switch SN's power and toughness until end of turn.
 timing=main
-oracle=Flying. Whenever you cast an instant or sorcery spell, you may switch Fluxcharger's power and toughness until end of turn.
+oracle=Flying\nWhenever you cast an instant or sorcery spell, you may switch Fluxcharger's power and toughness until end of turn.

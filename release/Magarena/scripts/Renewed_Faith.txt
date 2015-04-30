@@ -8,4 +8,4 @@ ability=Cycling {1}{W};\
         When you cycle SN, you may gain 2 life.
 effect=You gain 6 life.
 timing=removal
-oracle=You gain 6 life. Cycling {1}{W}. When you cycle Renewed Faith, you may gain 2 life.
+oracle=You gain 6 life.\nCycling {1}{W}\nWhen you cycle Renewed Faith, you may gain 2 life.

@@ -9,4 +9,4 @@ pt=2/2
 ability=When SN enters the battlefield, each player loses 3 life.;\
         {3}, {T}: Search your library for a Mercenary permanent card with converted mana cost 3 or less and put it onto the battlefield. Then shuffle your library.
 timing=main
-oracle=When Rathi Fiend enters the battlefield, each player loses 3 life. {3}, {T}: Search your library for a Mercenary permanent card with converted mana cost 3 or less and put it onto the battlefield. Then shuffle your library.
+oracle=When Rathi Fiend enters the battlefield, each player loses 3 life.\n{3}, {T}: Search your library for a Mercenary permanent card with converted mana cost 3 or less and put it onto the battlefield. Then shuffle your library.

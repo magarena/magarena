@@ -7,4 +7,4 @@ cost={4}{G}
 ability=Flashback {6}{B}
 timing=main
 requires_groovy_code
-oracle=Put a 1/2 green Spider creature token with reach onto the battlefield for each creature card in your graveyard. Flashback {6}{B}
+oracle=Put a 1/2 green Spider creature token with reach onto the battlefield for each creature card in your graveyard.\nFlashback {6}{B}

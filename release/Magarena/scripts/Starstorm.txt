@@ -7,4 +7,4 @@ cost={X}{R}{R}
 ability=cycling {3}
 timing=removal
 requires_groovy_code
-oracle=Starstorm deals X damage to each creature. Cycling {3}
+oracle=Starstorm deals X damage to each creature.\nCycling {3}

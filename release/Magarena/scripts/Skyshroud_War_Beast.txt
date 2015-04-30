@@ -10,4 +10,4 @@ ability=Trample;\
         As SN enters the battlefield, choose an opponent.
 timing=main
 requires_groovy_code
-oracle=Trample. As Skyshroud War Beast enters the battlefield, choose an opponent. Skyshroud War Beast's power and toughness are each equal to the number of nonbasic lands the chosen player controls.
+oracle=Trample\nAs Skyshroud War Beast enters the battlefield, choose an opponent.\nSkyshroud War Beast's power and toughness are each equal to the number of nonbasic lands the chosen player controls.

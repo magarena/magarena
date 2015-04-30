@@ -9,4 +9,4 @@ pt=2/2
 ability=Soulbond;\
         As long as SN is paired with another creature, both creatures have double strike.
 timing=main
-oracle=Soulbond. As long as Silverblade Paladin is paired with another creature, both creatures have double strike.
+oracle=Soulbond\nAs long as Silverblade Paladin is paired with another creature, both creatures have double strike.

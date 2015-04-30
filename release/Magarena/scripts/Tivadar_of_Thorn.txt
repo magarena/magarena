@@ -10,4 +10,4 @@ ability=first strike;\
         protection from red;\
         When SN enters the battlefield, destroy target Goblin.
 timing=main
-oracle=First strike, protection from red. When Tivadar of Thorn enters the battlefield, destroy target Goblin.
+oracle=First strike, protection from red\nWhen Tivadar of Thorn enters the battlefield, destroy target Goblin.

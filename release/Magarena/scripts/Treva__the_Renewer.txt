@@ -9,4 +9,4 @@ pt=6/6
 ability=flying
 timing=smain
 requires_groovy_code
-oracle=Flying. Whenever Treva, the Renewer deals combat damage to a player, you may pay {2}{W}. If you do, choose a color, then you gain 1 life for each permanent of that color.
+oracle=Flying\nWhenever Treva, the Renewer deals combat damage to a player, you may pay {2}{W}. If you do, choose a color, then you gain 1 life for each permanent of that color.

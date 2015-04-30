@@ -9,4 +9,4 @@ pt=7/6
 ability=flying;\
         {B}: SN deals 1 damage to each creature and each player.
 timing=main
-oracle=Flying. {B}: Pestilence Demon deals 1 damage to each creature and each player.
+oracle=Flying\n{B}: Pestilence Demon deals 1 damage to each creature and each player.

@@ -9,4 +9,4 @@ pt=3/2
 ability=Prowess;\
         When SN enters the battlefield, return target enchantment card from your graveyard to your hand.
 timing=main
-oracle=Prowess. When Lotus-Eye Mystics enters the battlefield, return target enchantment card from your graveyard to your hand.
+oracle=Prowess\nWhen Lotus-Eye Mystics enters the battlefield, return target enchantment card from your graveyard to your hand.

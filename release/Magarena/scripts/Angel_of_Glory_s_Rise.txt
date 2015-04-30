@@ -10,4 +10,4 @@ pt=4/6
 ability=flying
 timing=main
 requires_groovy_code
-oracle=Flying. When Angel of Glory's Rise enters the battlefield, exile all Zombies, then return all Human creature cards from your graveyard to the battlefield.
+oracle=Flying\nWhen Angel of Glory's Rise enters the battlefield, exile all Zombies, then return all Human creature cards from your graveyard to the battlefield.

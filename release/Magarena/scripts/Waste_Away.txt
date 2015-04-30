@@ -7,4 +7,4 @@ cost={4}{B}
 ability=As an additional cost to cast SN, discard a card.
 effect=Target creature gets -5/-5 until end of turn.
 timing=removal
-oracle=As an additional cost to cast Waste Away, discard a card. Target creature gets -5/-5 until end of turn.
+oracle=As an additional cost to cast Waste Away, discard a card.\nTarget creature gets -5/-5 until end of turn.

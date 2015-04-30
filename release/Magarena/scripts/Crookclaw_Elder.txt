@@ -10,4 +10,4 @@ ability=Flying;\
         Tap two untapped Birds you control: Draw a card.;\
         Tap two untapped Wizards you control: Target creature gains flying until end of turn.
 timing=main
-oracle=Flying. Tap two untapped Birds you control: Draw a card. Tap two untapped Wizards you control: Target creature gains flying until end of turn.
+oracle=Flying\nTap two untapped Birds you control: Draw a card.\nTap two untapped Wizards you control: Target creature gains flying until end of turn.

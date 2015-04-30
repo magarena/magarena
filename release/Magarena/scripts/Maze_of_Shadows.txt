@@ -6,4 +6,4 @@ type=Land
 ability={T}: Add {1} to your mana pool.
 timing=main
 requires_groovy_code
-oracle={T}: Add {1} to your mana pool. {T}: Untap target attacking creature with shadow. Prevent all combat damage that would be dealt to and dealt by that creature this turn.
+oracle={T}: Add {1} to your mana pool.\n{T}: Untap target attacking creature with shadow. Prevent all combat damage that would be dealt to and dealt by that creature this turn.

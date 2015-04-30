@@ -11,4 +11,4 @@ ability=Flying;\
         {B}: Transform SN. Activate this ability only if you control five or more Vampires.
 timing=main
 transform=Lord of Lineage
-oracle=Flying. {T}: Put a 2/2 black Vampire creature token with flying onto the battlefield. {B}: Transform Bloodline Keeper. Activate this ability only if you control five or more Vampires.
+oracle=Flying\n{T}: Put a 2/2 black Vampire creature token with flying onto the battlefield.\n{B}: Transform Bloodline Keeper. Activate this ability only if you control five or more Vampires.

@@ -9,4 +9,4 @@ pt=6/6
 ability=trample;\
         When SN dies, destroy all nonland permanents. They can't be regenerated.
 timing=main
-oracle=Trample. When Child of Alara dies, destroy all nonland permanents. They can't be regenerated.
+oracle=Trample\nWhen Child of Alara dies, destroy all nonland permanents. They can't be regenerated.

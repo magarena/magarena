@@ -9,4 +9,4 @@ ability=When SN enters the battlefield, put two 2/2 green Wolf creature tokens o
 enchant=pump,pos creature
 timing=main
 requires_groovy_code
-oracle=Enchant creature. When Raised by Wolves enters the battlefield, put two 2/2 green Wolf creature tokens onto the battlefield. Enchanted creature gets +1/+1 for each Wolf you control.
+oracle=Enchant creature\nWhen Raised by Wolves enters the battlefield, put two 2/2 green Wolf creature tokens onto the battlefield.\nEnchanted creature gets +1/+1 for each Wolf you control.

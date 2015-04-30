@@ -8,4 +8,4 @@ cost={3}
 ability=Equipped creature gets +2/+0 and has first strike, vigilance, trample, and haste.;\
         Equip {3}
 timing=equipment
-oracle=Equipped creature gets +2/+0 and has first strike, vigilance, trample, and haste. Equip {3}
+oracle=Equipped creature gets +2/+0 and has first strike, vigilance, trample, and haste.\nEquip {3}

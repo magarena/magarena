@@ -9,4 +9,4 @@ pt=2/2
 ability=Flying;\
         {U}: SN gains shroud until end of turn.
 timing=main
-oracle=Flying. {U}: Advanced Hoverguard gains shroud until end of turn.
+oracle=Flying\n{U}: Advanced Hoverguard gains shroud until end of turn.

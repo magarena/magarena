@@ -9,4 +9,4 @@ pt=4/1
 ability=SN can't block.;\
         Whenever SN deals combat damage to a creature, destroy that creature. It can't be regenerated.
 timing=main
-oracle=Dripping Dead can't block. Whenever Dripping Dead deals combat damage to a creature, destroy that creature. It can't be regenerated.
+oracle=Dripping Dead can't block.\nWhenever Dripping Dead deals combat damage to a creature, destroy that creature. It can't be regenerated.

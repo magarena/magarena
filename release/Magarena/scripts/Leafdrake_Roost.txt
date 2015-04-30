@@ -8,4 +8,4 @@ cost={3}{G}{U}
 ability=Enchanted land has "{G}{U}, {T}: Put a 2/2 green and blue Drake creature token with flying onto the battlefield."
 enchant=pump,pos land
 timing=enchantment
-oracle=Enchant land. Enchanted land has "{G}{U}, {T}: Put a 2/2 green and blue Drake creature token with flying onto the battlefield."
+oracle=Enchant land\nEnchanted land has "{G}{U}, {T}: Put a 2/2 green and blue Drake creature token with flying onto the battlefield."

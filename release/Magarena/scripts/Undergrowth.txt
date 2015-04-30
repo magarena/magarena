@@ -7,4 +7,4 @@ cost={G}
 ability=Kicker {2}{R}
 timing=block
 requires_groovy_code
-oracle=As an additional cost to cast Undergrowth, you may pay {2}{R}. Prevent all combat damage that would be dealt this turn. If its additional cost was paid, Undergrowth doesn't affect combat damage that would be dealt by red creatures.
+oracle=As an additional cost to cast Undergrowth, you may pay {2}{R}.\nPrevent all combat damage that would be dealt this turn. If its additional cost was paid, Undergrowth doesn't affect combat damage that would be dealt by red creatures.

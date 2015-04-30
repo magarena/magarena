@@ -9,4 +9,4 @@ pt=2/3
 ability=Outlast {G};\
         Each creature you control with a +1/+1 counter on it has trample.
 timing=main
-oracle=Outlast {G}. Each creature you control with a +1/+1 counter on it has trample.
+oracle=Outlast {G}\nEach creature you control with a +1/+1 counter on it has trample.

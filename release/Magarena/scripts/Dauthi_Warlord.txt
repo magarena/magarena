@@ -9,4 +9,4 @@ pt=*/1
 ability=shadow;\
         SN's power is equal to the number of creatures with shadow on the battlefield.
 timing=main
-oracle=Shadow. Dauthi Warlord's power is equal to the number of creatures with shadow on the battlefield.
+oracle=Shadow\nDauthi Warlord's power is equal to the number of creatures with shadow on the battlefield.

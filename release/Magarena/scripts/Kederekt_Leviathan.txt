@@ -9,4 +9,4 @@ pt=5/5
 ability=When SN enters the battlefield, return all other nonland permanents to their owners' hands.;\
         Unearth {6}{U}
 timing=main
-oracle=When Kederekt Leviathan enters the battlefield, return all other nonland permanents to their owners' hands. Unearth {6}{U}
+oracle=When Kederekt Leviathan enters the battlefield, return all other nonland permanents to their owners' hands.\nUnearth {6}{U}

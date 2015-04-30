@@ -8,4 +8,4 @@ cost={R}{R}{R}
 pt=1/1
 timing=main
 requires_groovy_code
-oracle=When War Elemental enters the battlefield, sacrifice it unless an opponent was dealt damage this turn. Whenever an opponent is dealt damage, put that many +1/+1 counters on War Elemental.
+oracle=When War Elemental enters the battlefield, sacrifice it unless an opponent was dealt damage this turn.\nWhenever an opponent is dealt damage, put that many +1/+1 counters on War Elemental.

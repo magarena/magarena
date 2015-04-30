@@ -9,4 +9,4 @@ pt=1/1
 ability={T}: SN deals 1 damage to target creature with flying.;\
         Whenever SN deals damage to a creature, tap that creature and it doesn't untap during its controller's next untap step.
 timing=main
-oracle={T}: Matsu-Tribe Sniper deals 1 damage to target creature with flying. Whenever Matsu-Tribe Sniper deals damage to a creature, tap that creature and it doesn't untap during its controller's next untap step.
+oracle={T}: Matsu-Tribe Sniper deals 1 damage to target creature with flying.\nWhenever Matsu-Tribe Sniper deals damage to a creature, tap that creature and it doesn't untap during its controller's next untap step.

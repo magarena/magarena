@@ -6,4 +6,4 @@ type=Instant
 cost={R}
 effect=Exile target permanent you own or control.~Draw a card at the beginning of the next turn's upkeep.
 timing=removal
-oracle=Exile target permanent you own or control. Draw a card at the beginning of the next turn's upkeep.
+oracle=Exile target permanent you own or control.\nDraw a card at the beginning of the next turn's upkeep.

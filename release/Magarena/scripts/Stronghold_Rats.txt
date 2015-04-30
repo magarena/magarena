@@ -9,4 +9,4 @@ pt=2/1
 ability=Shadow;\
         Whenever SN deals combat damage to a player, each player discards a card.
 timing=main
-oracle=Shadow. Whenever Stronghold Rats deals combat damage to a player, each player discards a card.
+oracle=Shadow\nWhenever Stronghold Rats deals combat damage to a player, each player discards a card.

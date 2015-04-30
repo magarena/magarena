@@ -10,4 +10,4 @@ ability=Flying;\
         All creatures attack each combat if able.;\
         {1}{R}: Attacking creatures get +1/+0 until end of turn.
 timing=main
-oracle=Flying. All creatures attack each combat if able. {1}{R}: Attacking creatures get +1/+0 until end of turn.
+oracle=Flying\nAll creatures attack each combat if able.\n{1}{R}: Attacking creatures get +1/+0 until end of turn.

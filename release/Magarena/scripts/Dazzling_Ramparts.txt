@@ -9,4 +9,4 @@ pt=0/7
 ability=Defender;\
         {1}{W}, {T}: Tap target creature.
 timing=main
-oracle=Defender. {1}{W}, {T}: Tap target creature.
+oracle=Defender\n{1}{W}, {T}: Tap target creature.

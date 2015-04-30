@@ -7,4 +7,4 @@ cost={U}{U}
 effect=Counter target instant or sorcery spell.
 ability=Transmute {1}{U}{U}
 timing=counter
-oracle=Counter target instant or sorcery spell. Transmute {1}{U}{U}
+oracle=Counter target instant or sorcery spell.\nTransmute {1}{U}{U}

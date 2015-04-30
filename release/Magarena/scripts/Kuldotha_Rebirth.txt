@@ -7,4 +7,4 @@ cost={R}
 ability=As an additional cost to cast SN, sacrifice an artifact.
 effect=Put three 1/1 red Goblin creature tokens onto the battlefield.
 timing=main
-oracle=As an additional cost to cast Kuldotha Rebirth, sacrifice an artifact. Put three 1/1 red Goblin creature tokens onto the battlefield.
+oracle=As an additional cost to cast Kuldotha Rebirth, sacrifice an artifact.\nPut three 1/1 red Goblin creature tokens onto the battlefield.

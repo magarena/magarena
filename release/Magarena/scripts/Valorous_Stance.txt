@@ -6,4 +6,4 @@ type=Instant
 cost={1}{W}
 effect=Choose one — (1) Target creature gains indestructible until end of turn. (2) Destroy target creature with toughness 4 or greater.
 timing=removal
-oracle=Choose one — • Target creature gains indestructible until end of turn. • Destroy target creature with toughness 4 or greater.
+oracle=Choose one —\n• Target creature gains indestructible until end of turn.\n• Destroy target creature with toughness 4 or greater.

@@ -9,4 +9,4 @@ pt=0/1
 ability=flying;\
         Whenever SN blocks, you may gain 4 life.
 timing=main
-oracle=Flying. Whenever Goldenglow Moth blocks, you may gain 4 life.
+oracle=Flying\nWhenever Goldenglow Moth blocks, you may gain 4 life.

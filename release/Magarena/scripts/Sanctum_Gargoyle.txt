@@ -9,4 +9,4 @@ pt=2/3
 ability=Flying;\
         When SN enters the battlefield, you may return target artifact card from your graveyard to your hand.
 timing=main
-oracle=Flying. When Sanctum Gargoyle enters the battlefield, you may return target artifact card from your graveyard to your hand.
+oracle=Flying\nWhen Sanctum Gargoyle enters the battlefield, you may return target artifact card from your graveyard to your hand.

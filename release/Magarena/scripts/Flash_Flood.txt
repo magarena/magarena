@@ -6,4 +6,4 @@ type=Instant
 cost={U}
 effect=Choose one — (1) Destroy target red permanent. (2) Return target Mountain to its owner's hand.
 timing=removal
-oracle=Choose one — • Destroy target red permanent. • Return target Mountain to its owner's hand.
+oracle=Choose one —\n• Destroy target red permanent.\n• Return target Mountain to its owner's hand.

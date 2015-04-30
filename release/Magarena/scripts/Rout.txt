@@ -7,4 +7,4 @@ cost={3}{W}{W}
 effect=Destroy all creatures. They can't be regenerated.
 timing=main
 requires_groovy_code
-oracle=You may cast Rout any time you could cast an instant if you pay {2} more to cast it. Destroy all creatures. They can't be regenerated.
+oracle=You may cast Rout as though it had flash if you pay {2} more to cast it.\nDestroy all creatures. They can't be regenerated.

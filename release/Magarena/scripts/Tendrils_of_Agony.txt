@@ -7,4 +7,4 @@ cost={2}{B}{B}
 effect=Target player loses 2 life and you gain 2 life.
 ability=storm
 timing=main
-oracle=Target player loses 2 life and you gain 2 life. Storm
+oracle=Target player loses 2 life and you gain 2 life.\nStorm

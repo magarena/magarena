@@ -9,4 +9,4 @@ pt=3/3
 ability=Defender;\
         When SN blocks, destroy SN at end of combat.
 timing=main
-oracle=Defender. When Cinder Wall blocks, destroy it at end of combat.
+oracle=Defender\nWhen Cinder Wall blocks, destroy it at end of combat.

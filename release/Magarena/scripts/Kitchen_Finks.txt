@@ -8,4 +8,4 @@ cost={1}{G/W}{G/W}
 pt=3/2
 ability=persist;When SN enters the battlefield, you gain 2 life.
 timing=main
-oracle=When Kitchen Finks enters the battlefield, you gain 2 life. Persist
+oracle=When Kitchen Finks enters the battlefield, you gain 2 life.\nPersist

@@ -9,4 +9,4 @@ pt=3/3
 ability=hexproof;\
         Whenever an opponent casts a blue or black spell during your turn, put a +1/+1 counter on SN.
 timing=main
-oracle=Hexproof. Whenever an opponent casts a blue or black spell during your turn, put a +1/+1 counter on Witchstalker.
+oracle=Hexproof\nWhenever an opponent casts a blue or black spell during your turn, put a +1/+1 counter on Witchstalker.

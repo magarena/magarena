@@ -9,4 +9,4 @@ ability=Equipped creature has vigilance.;\
         Equip {1}
 timing=equipment
 requires_groovy_code
-oracle=Equipped creature has vigilance. At the beginning of your upkeep, put a +1/+1 counter on equipped creature if it's white. Equip {1}
+oracle=Equipped creature has vigilance.\nAt the beginning of your upkeep, put a +1/+1 counter on equipped creature if it's white.\nEquip {1}

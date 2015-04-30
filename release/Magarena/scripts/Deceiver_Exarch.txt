@@ -11,4 +11,4 @@ ability=Flash;\
         (1) Untap target permanent you control. \
         (2) Tap target permanent an opponent controls.
 timing=main
-oracle=Flash. When Deceiver Exarch enters the battlefield, choose one — • Untap target permanent you control. • Tap target permanent an opponent controls.
+oracle=Flash\nWhen Deceiver Exarch enters the battlefield, choose one —\n• Untap target permanent you control.\n• Tap target permanent an opponent controls.

@@ -6,4 +6,4 @@ type=Artifact
 cost={4}
 timing=artifact
 requires_groovy_code
-oracle=At the beginning of each opponent's upkeep, exile all cards from your hand face down. At the beginning of your upkeep, return all cards you own exiled with Bottled Cloister to your hand, then draw a card.
+oracle=At the beginning of each opponent's upkeep, exile all cards from your hand face down.\nAt the beginning of your upkeep, return all cards you own exiled with Bottled Cloister to your hand, then draw a card.

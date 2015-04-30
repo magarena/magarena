@@ -9,4 +9,4 @@ pt=4/7
 ability=indestructible
 timing=main
 requires_groovy_code
-oracle=Indestructible. As long as your devotion to blue and black is less than seven, Phenax isn't a creature. Creatures you control have "{T}: Target player puts the top X cards of his or her library into his or her graveyard, where X is this creature's toughness."
+oracle=Indestructible\nAs long as your devotion to blue and black is less than seven, Phenax isn't a creature.\nCreatures you control have "{T}: Target player puts the top X cards of his or her library into his or her graveyard, where X is this creature's toughness."

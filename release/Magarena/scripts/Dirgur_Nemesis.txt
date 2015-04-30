@@ -9,4 +9,4 @@ pt=6/5
 ability=Defender;\
         Megamorph {6}{U}
 timing=main
-oracle=Defender. Megamorph {6}{U}
+oracle=Defender\nMegamorph {6}{U}

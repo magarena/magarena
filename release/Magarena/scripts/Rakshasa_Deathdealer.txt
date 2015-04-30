@@ -9,4 +9,4 @@ pt=2/2
 ability={B}{G}: SN gets +2/+2 until end of turn.;\
         {B}{G}: Regenerate SN.
 timing=main
-oracle={B}{G}: Rakshasa Deathdealer gets +2/+2 until end of turn. {B}{G}: Regenerate Rakshasa Deathdealer.
+oracle={B}{G}: Rakshasa Deathdealer gets +2/+2 until end of turn.\n{B}{G}: Regenerate Rakshasa Deathdealer.

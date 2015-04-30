@@ -9,4 +9,4 @@ cost={4}{R}
 pt=3/3
 timing=main
 requires_groovy_code
-oracle=Haste. When Zealous Conscripts enters the battlefield, gain control of target permanent until end of turn. Untap that permanent. It gains haste until end of turn.
+oracle=Haste\nWhen Zealous Conscripts enters the battlefield, gain control of target permanent until end of turn. Untap that permanent. It gains haste until end of turn.

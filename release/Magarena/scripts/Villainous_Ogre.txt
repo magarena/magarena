@@ -9,4 +9,4 @@ pt=3/2
 ability=SN can't block.;\
         As long as you control a Demon, SN has "{B}: Regenerate SN.".
 timing=main
-oracle=Villainous Ogre can't block. As long as you control a Demon, Villainous Ogre has "{B}: Regenerate Villainous Ogre."
+oracle=Villainous Ogre can't block.\nAs long as you control a Demon, Villainous Ogre has "{B}: Regenerate Villainous Ogre."

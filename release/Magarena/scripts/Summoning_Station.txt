@@ -7,4 +7,4 @@ cost={7}
 ability={T}: Put a 2/2 colorless Pincher creature token onto the battlefield.;\
         Whenever an artifact is put into a graveyard from the battlefield, you may untap SN.
 timing=artifact
-oracle={T}: Put a 2/2 colorless Pincher creature token onto the battlefield. Whenever an artifact is put into a graveyard from the battlefield, you may untap Summoning Station.
+oracle={T}: Put a 2/2 colorless Pincher creature token onto the battlefield.\nWhenever an artifact is put into a graveyard from the battlefield, you may untap Summoning Station.

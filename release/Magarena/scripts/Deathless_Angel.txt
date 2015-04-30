@@ -9,4 +9,4 @@ pt=5/7
 ability=flying;\
         {W}{W}: Target creature gains indestructible until end of turn.
 timing=main
-oracle=Flying. {W}{W}: Target creature gains indestructible until end of turn.
+oracle=Flying\n{W}{W}: Target creature gains indestructible until end of turn.

@@ -9,4 +9,4 @@ pt=2/1
 ability=Soulbond;\
         As long as SN is paired with another creature, both creatures have lifelink.
 timing=main
-oracle=Soulbond. As long as Nearheath Pilgrim is paired with another creature, both creatures have lifelink.
+oracle=Soulbond\nAs long as Nearheath Pilgrim is paired with another creature, both creatures have lifelink.

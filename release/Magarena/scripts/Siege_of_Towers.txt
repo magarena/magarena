@@ -7,4 +7,4 @@ cost={1}{R}
 ability=Replicate {1}{R}
 effect=Target Mountain becomes a 3/1 creature. It's still a land.
 timing=main
-oracle=Replicate {1}{R}. Target Mountain becomes a 3/1 creature. It's still a land.
+oracle=Replicate {1}{R}\nTarget Mountain becomes a 3/1 creature. It's still a land.

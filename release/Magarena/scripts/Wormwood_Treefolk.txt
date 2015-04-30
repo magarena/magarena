@@ -9,4 +9,4 @@ pt=4/4
 ability={G}{G}: SN gains forestwalk until end of turn.~SN deals 2 damage to you.;\
         {B}{B}: SN gains swampwalk until end of turn.~SN deals 2 damage to you.
 timing=main
-oracle={G}{G}: Wormwood Treefolk gains forestwalk until end of turn and deals 2 damage to you. {B}{B}: Wormwood Treefolk gains swampwalk until end of turn and deals 2 damage to you.
+oracle={G}{G}: Wormwood Treefolk gains forestwalk until end of turn and deals 2 damage to you.\n{B}{B}: Wormwood Treefolk gains swampwalk until end of turn and deals 2 damage to you.

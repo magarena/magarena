@@ -8,4 +8,4 @@ cost={2}{U}
 pt=2/3
 ability=flying;SN can block only creatures with flying.
 timing=main
-oracle=Flying. Scrapskin Drake can block only creatures with flying.
+oracle=Flying\nScrapskin Drake can block only creatures with flying.

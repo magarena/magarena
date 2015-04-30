@@ -9,4 +9,4 @@ pt=0/0
 ability=Remove a +1/+1 counter from SN: Put target artifact card from your graveyard on top of your library.;\
         Modular 2
 timing=main
-oracle=Remove a +1/+1 counter from Arcbound Reclaimer: Put target artifact card from your graveyard on top of your library. Modular 2
+oracle=Remove a +1/+1 counter from Arcbound Reclaimer: Put target artifact card from your graveyard on top of your library.\nModular 2

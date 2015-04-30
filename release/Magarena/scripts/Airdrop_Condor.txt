@@ -9,4 +9,4 @@ pt=2/2
 ability=flying
 timing=main
 requires_groovy_code
-oracle=Flying. {1}{R}, Sacrifice a Goblin creature: Airdrop Condor deals damage equal to the sacrificed creature's power to target creature or player.
+oracle=Flying\n{1}{R}, Sacrifice a Goblin creature: Airdrop Condor deals damage equal to the sacrificed creature's power to target creature or player.

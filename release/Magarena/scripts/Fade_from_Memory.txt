@@ -7,4 +7,4 @@ cost={B}
 effect=Exile target card from a graveyard.
 ability=cycling {B}
 timing=removal
-oracle=Exile target card from a graveyard. Cycling {B}
+oracle=Exile target card from a graveyard.\nCycling {B}

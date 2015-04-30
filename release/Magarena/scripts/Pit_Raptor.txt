@@ -10,4 +10,4 @@ ability=flying;\
         first strike;\
         At the beginning of your upkeep, you may pay {2}{B}{B}. If you don't, sacrifice SN.
 timing=main
-oracle=Flying, first strike. At the beginning of your upkeep, sacrifice Pit Raptor unless you pay {2}{B}{B}.
+oracle=Flying, first strike\nAt the beginning of your upkeep, sacrifice Pit Raptor unless you pay {2}{B}{B}.

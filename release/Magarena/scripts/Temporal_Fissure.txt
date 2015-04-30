@@ -7,4 +7,4 @@ cost={4}{U}
 effect=Return target permanent to its owner's hand.
 ability=storm
 timing=main
-oracle=Return target permanent to its owner's hand. Storm
+oracle=Return target permanent to its owner's hand.\nStorm

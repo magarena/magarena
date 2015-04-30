@@ -9,4 +9,4 @@ pt=2/1
 ability=flying;\
         Whenever SN attacks, another target creature you control gains flying until end of turn.
 timing=main
-oracle=Flying. Whenever Trained Condor attacks, another target creature you control gains flying until end of turn.
+oracle=Flying\nWhenever Trained Condor attacks, another target creature you control gains flying until end of turn.

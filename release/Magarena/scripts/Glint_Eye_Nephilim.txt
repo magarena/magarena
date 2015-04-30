@@ -9,4 +9,4 @@ pt=2/2
 ability={1}, Discard a card: SN gets +1/+1 until end of turn.
 timing=main
 requires_groovy_code
-oracle=Whenever Glint-Eye Nephilim deals combat damage to a player, draw that many cards. {1}, Discard a card: Glint-Eye Nephilim gets +1/+1 until end of turn.
+oracle=Whenever Glint-Eye Nephilim deals combat damage to a player, draw that many cards.\n{1}, Discard a card: Glint-Eye Nephilim gets +1/+1 until end of turn.

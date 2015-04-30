@@ -7,4 +7,4 @@ cost={1}{R}
 effect=Green creatures and white creatures can't block this turn.
 ability=Flashback {1}{R}, Pay 3 life.
 timing=main
-oracle=Green creatures and white creatures can't block this turn. Flashback—{1}{R}, Pay 3 life.
+oracle=Green creatures and white creatures can't block this turn.\nFlashback—{1}{R}, Pay 3 life.

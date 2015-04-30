@@ -8,4 +8,4 @@ cost={1}
 ability=Equipped creature has deathtouch.;\
         Equip {2}
 timing=equipment
-oracle=Equipped creature has deathtouch. Equip {2}
+oracle=Equipped creature has deathtouch.\nEquip {2}

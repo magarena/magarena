@@ -11,4 +11,4 @@ ability=Flying;\
         Whenever SN deals damage to a player, that player discards a card.
 timing=main
 requires_groovy_code
-oracle=Flying. As Entropic Specter enters the battlefield, choose an opponent. Entropic Specter's power and toughness are each equal to the number of cards in the chosen player's hand. Whenever Entropic Specter deals damage to a player, that player discards a card.
+oracle=Flying\nAs Entropic Specter enters the battlefield, choose an opponent.\nEntropic Specter's power and toughness are each equal to the number of cards in the chosen player's hand.\nWhenever Entropic Specter deals damage to a player, that player discards a card.

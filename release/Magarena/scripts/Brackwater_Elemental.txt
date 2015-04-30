@@ -9,4 +9,4 @@ pt=4/4
 ability=When SN attacks or blocks, sacrifice SN at the beginning of the next end step.;\
         Unearth {2}{U}
 timing=main
-oracle=When Brackwater Elemental attacks or blocks, sacrifice it at the beginning of the next end step. Unearth {2}{U}
+oracle=When Brackwater Elemental attacks or blocks, sacrifice it at the beginning of the next end step.\nUnearth {2}{U}

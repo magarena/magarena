@@ -9,4 +9,4 @@ timing=aura
 ability=You control enchanted creature.;\
         Enchanted creature gets +2/+2 and has trample.
 enchant=gain control,neg creature
-oracle=Enchant creature. You control enchanted creature. Enchanted creature gets +2/+2 and has trample.
+oracle=Enchant creature\nYou control enchanted creature.\nEnchanted creature gets +2/+2 and has trample.

@@ -9,4 +9,4 @@ pt=2/2
 ability=Morph {3}{B}
 timing=main
 requires_groovy_code
-oracle=Morph {3}{B}. When Infernal Caretaker is turned face up, return all Zombie cards from all graveyards to their owners' hands.
+oracle=Morph {3}{B}\nWhen Infernal Caretaker is turned face up, return all Zombie cards from all graveyards to their owners' hands.

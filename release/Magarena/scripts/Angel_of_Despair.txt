@@ -10,4 +10,4 @@ pt=5/5
 ability=Flying;\
         When SN enters the battlefield, destroy target permanent.
 timing=fmain
-oracle=Flying. When Angel of Despair enters the battlefield, destroy target permanent.
+oracle=Flying\nWhen Angel of Despair enters the battlefield, destroy target permanent.

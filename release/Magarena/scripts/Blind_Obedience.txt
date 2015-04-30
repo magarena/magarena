@@ -7,4 +7,4 @@ cost={1}{W}
 ability=extort
 timing=main
 requires_groovy_code
-oracle=Extort. Artifacts and creatures your opponents control enter the battlefield tapped.
+oracle=Extort\nArtifacts and creatures your opponents control enter the battlefield tapped.

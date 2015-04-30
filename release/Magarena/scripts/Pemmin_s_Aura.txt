@@ -12,4 +12,4 @@ ability={U}: Untap enchanted creature.;\
         {1}: Enchanted creature gets -1/+1 until end of turn.
 enchant=pump,pos creature
 timing=aura
-oracle=Enchant creature. {U}: Untap enchanted creature. {U}: Enchanted creature gains flying until end of turn. {U}: Enchanted creature gains shroud until end of turn. {1}: Enchanted creature gets +1/-1 or -1/+1 until end of turn.
+oracle=Enchant creature\n{U}: Untap enchanted creature.\n{U}: Enchanted creature gains flying until end of turn.\n{U}: Enchanted creature gains shroud until end of turn.\n{1}: Enchanted creature gets +1/-1 or -1/+1 until end of turn.

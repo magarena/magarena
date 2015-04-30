@@ -9,4 +9,4 @@ pt=1/1
 ability=Flying.;\
         {U}: Target permanent becomes blue in addition to its other colors until end of turn.
 timing=main
-oracle=Flying. {U}: Target permanent becomes blue in addition to its other colors until end of turn.
+oracle=Flying\n{U}: Target permanent becomes blue in addition to its other colors until end of turn.

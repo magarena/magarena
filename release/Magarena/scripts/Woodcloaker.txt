@@ -9,4 +9,4 @@ pt=3/3
 ability=Morph {2}{G}{G};\
         When SN is turned face up, target creature gains trample until end of turn.
 timing=main
-oracle=Morph {2}{G}{G}. When Woodcloaker is turned face up, target creature gains trample until end of turn.
+oracle=Morph {2}{G}{G}\nWhen Woodcloaker is turned face up, target creature gains trample until end of turn.

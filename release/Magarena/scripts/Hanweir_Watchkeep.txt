@@ -10,4 +10,4 @@ ability=Defender;\
         At the beginning of each upkeep, if no spells were cast last turn, transform SN.
 transform=Bane of Hanweir
 timing=main
-oracle=Defender. At the beginning of each upkeep, if no spells were cast last turn, transform Hanweir Watchkeep.
+oracle=Defender\nAt the beginning of each upkeep, if no spells were cast last turn, transform Hanweir Watchkeep.

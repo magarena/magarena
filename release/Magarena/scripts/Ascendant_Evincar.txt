@@ -11,4 +11,4 @@ ability=flying;\
         nonblack creatures get -1/-1
 static=all
 timing=main
-oracle=Flying. Other black creatures get +1/+1. Nonblack creatures get -1/-1.
+oracle=Flying\nOther black creatures get +1/+1.\nNonblack creatures get -1/-1.

@@ -9,4 +9,4 @@ pt=5/3
 ability=SN attacks each turn if able.;\
         SN can't be blocked by Walls.
 timing=main
-oracle=Juggernaut attacks each turn if able. Juggernaut can't be blocked by Walls.
+oracle=Juggernaut attacks each turn if able.\nJuggernaut can't be blocked by Walls.

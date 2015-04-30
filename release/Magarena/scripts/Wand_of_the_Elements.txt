@@ -7,4 +7,4 @@ cost={4}
 ability={T}, Sacrifice an Island: Put a 2/2 blue Elemental creature token with flying onto the battlefield.;\
         {T}, Sacrifice a Mountain: Put a 3/3 red Elemental creature token onto the battlefield.
 timing=artifact
-oracle={T}, Sacrifice an Island: Put a 2/2 blue Elemental creature token with flying onto the battlefield. {T}, Sacrifice a Mountain: Put a 3/3 red Elemental creature token onto the battlefield.
+oracle={T}, Sacrifice an Island: Put a 2/2 blue Elemental creature token with flying onto the battlefield.\n{T}, Sacrifice a Mountain: Put a 3/3 red Elemental creature token onto the battlefield.

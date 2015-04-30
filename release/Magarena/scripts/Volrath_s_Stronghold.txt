@@ -6,4 +6,4 @@ type=Legendary,Land
 ability={T}: Add {1} to your mana pool.;\
         {1}{B}, {T}: Put target creature card from your graveyard on top of your library.
 timing=land
-oracle={T}: Add {1} to your mana pool. {1}{B}, {T}: Put target creature card from your graveyard on top of your library.
+oracle={T}: Add {1} to your mana pool.\n{1}{B}, {T}: Put target creature card from your graveyard on top of your library.

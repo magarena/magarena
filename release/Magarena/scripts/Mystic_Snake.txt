@@ -9,4 +9,4 @@ pt=2/2
 ability=flash;\
         When SN enters the battlefield, counter target spell.
 timing=counterflash
-oracle=Flash. When Mystic Snake enters the battlefield, counter target spell.
+oracle=Flash\nWhen Mystic Snake enters the battlefield, counter target spell.

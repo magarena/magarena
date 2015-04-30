@@ -9,4 +9,4 @@ pt=2/2
 ability=First strike;\
         {W}{U}{B}{R}{G}: Until end of turn, SN becomes a Dragon.~SN gets +5/+3 and gains flying and trample until end of turn.
 timing=main
-oracle=First strike. {W}{U}{B}{R}{G}: Until end of turn, Dragonsoul Knight becomes a Dragon, gets +5/+3, and gains flying and trample.
+oracle=First strike\n{W}{U}{B}{R}{G}: Until end of turn, Dragonsoul Knight becomes a Dragon, gets +5/+3, and gains flying and trample.

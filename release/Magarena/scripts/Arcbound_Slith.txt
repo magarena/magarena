@@ -9,4 +9,4 @@ pt=0/0
 ability=Whenever SN deals combat damage to a player, put a +1/+1 counter on SN.;\
         Modular 1
 timing=main
-oracle=Whenever Arcbound Slith deals combat damage to a player, put a +1/+1 counter on it. Modular 1
+oracle=Whenever Arcbound Slith deals combat damage to a player, put a +1/+1 counter on it.\nModular 1

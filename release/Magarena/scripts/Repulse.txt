@@ -7,4 +7,4 @@ type=Instant
 cost={2}{U}
 effect=Return target creature to its owner's hand.~Draw a card.
 timing=removal
-oracle=Return target creature to its owner's hand. Draw a card.
+oracle=Return target creature to its owner's hand.\nDraw a card.

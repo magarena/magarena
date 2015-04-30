@@ -9,4 +9,4 @@ pt=1/3
 ability=Flying;\
         {U},Sacrifice SN:Counter target spell unless its controller pays {2}.
 timing=artifact
-oracle=Flying. {U}, Sacrifice Wizard Replica: Counter target spell unless its controller pays {2}.
+oracle=Flying\n{U}, Sacrifice Wizard Replica: Counter target spell unless its controller pays {2}.

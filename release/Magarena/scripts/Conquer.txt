@@ -8,4 +8,4 @@ cost={3}{R}{R}
 ability=You control enchanted land.
 enchant=gain control,neg land
 timing=aura
-oracle=Enchant land. You control enchanted land.
+oracle=Enchant land\nYou control enchanted land.

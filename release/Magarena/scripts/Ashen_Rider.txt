@@ -10,4 +10,4 @@ ability=flying;\
         When SN enters the battlefield, Exile target permanent.;\
         When SN dies, exile target permanent.
 timing=main
-oracle=Flying. When Ashen Rider enters the battlefield or dies, exile target permanent.
+oracle=Flying\nWhen Ashen Rider enters the battlefield or dies, exile target permanent.

@@ -9,4 +9,4 @@ pt=2/2
 ability=Flying;\
         When SN enters the battlefield, destroy target creature that was dealt damage this turn.
 timing=main
-oracle=Flying. When Final-Sting Faerie enters the battlefield, destroy target creature that was dealt damage this turn.
+oracle=Flying\nWhen Final-Sting Faerie enters the battlefield, destroy target creature that was dealt damage this turn.

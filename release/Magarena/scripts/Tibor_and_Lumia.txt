@@ -9,4 +9,4 @@ pt=3/3
 ability=Whenever you cast a blue spell, target creature gains flying until end of turn.;\
         Whenever you cast a red spell, SN deals 1 damage to each creature without flying.
 timing=main
-oracle=Whenever you cast a blue spell, target creature gains flying until end of turn. Whenever you cast a red spell, Tibor and Lumia deals 1 damage to each creature without flying.
+oracle=Whenever you cast a blue spell, target creature gains flying until end of turn.\nWhenever you cast a red spell, Tibor and Lumia deals 1 damage to each creature without flying.

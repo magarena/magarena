@@ -6,4 +6,4 @@ type=Instant
 cost={2}{G}
 effect=Target creature gets +2/+2 and gains trample until end of turn.~Draw a card.
 timing=pump
-oracle=Target creature gets +2/+2 and gains trample until end of turn. Draw a card.
+oracle=Target creature gets +2/+2 and gains trample until end of turn.\nDraw a card.

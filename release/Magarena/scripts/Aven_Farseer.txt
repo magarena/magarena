@@ -9,4 +9,4 @@ pt=1/1
 ability=Flying
 timing=main
 requires_groovy_code
-oracle=Flying. Whenever a permanent is turned face up, put a +1/+1 counter on Aven Farseer.
+oracle=Flying\nWhenever a permanent is turned face up, put a +1/+1 counter on Aven Farseer.

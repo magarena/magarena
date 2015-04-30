@@ -9,4 +9,4 @@ pt=4/4
 ability=flying
 timing=main
 requires_groovy_code
-oracle=Flying. At the beginning of your upkeep, you may gain control of target permanent until end of turn. If you do, untap it and it gains haste until end of turn.
+oracle=Flying\nAt the beginning of your upkeep, you may gain control of target permanent until end of turn. If you do, untap it and it gains haste until end of turn.

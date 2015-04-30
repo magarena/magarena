@@ -9,4 +9,4 @@ pt=4/4
 ability=Flying;\
         When SN attacks or blocks, sacrifice SN at end of combat.
 timing=main
-oracle=Flying. When Fog Elemental attacks or blocks, sacrifice it at end of combat.
+oracle=Flying\nWhen Fog Elemental attacks or blocks, sacrifice it at end of combat.

@@ -9,4 +9,4 @@ pt=2/2
 ability=Prowess;\
         Whenever you cast a noncreature spell, put a 1/1 white Monk creature token with prowess onto the battlefield.
 timing=main
-oracle=Prowess. Whenever you cast a noncreature spell, put a 1/1 white Monk creature token with prowess onto the battlefield.
+oracle=Prowess\nWhenever you cast a noncreature spell, put a 1/1 white Monk creature token with prowess onto the battlefield.

@@ -9,4 +9,4 @@ pt=2/5
 ability=Defender;\
         SN enters the battlefield tapped.
 timing=main
-oracle=Defender. Custodian of the Trove enters the battlefield tapped.
+oracle=Defender\nCustodian of the Trove enters the battlefield tapped.

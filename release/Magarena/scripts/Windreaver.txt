@@ -12,4 +12,4 @@ ability=flying;\
         {U}: Return SN to its owner's hand.;\
         {U}: Switch SN's power and toughness until end of turn.
 timing=main
-oracle=Flying. {W}: Windreaver gains vigilance until end of turn. {W}: Windreaver gets +0/+1 until end of turn. {U}: Switch Windreaver's power and toughness until end of turn. {U}: Return Windreaver to its owner's hand.
+oracle=Flying\n{W}: Windreaver gains vigilance until end of turn.\n{W}: Windreaver gets +0/+1 until end of turn.\n{U}: Switch Windreaver's power and toughness until end of turn.\n{U}: Return Windreaver to its owner's hand.

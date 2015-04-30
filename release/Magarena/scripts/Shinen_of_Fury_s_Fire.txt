@@ -9,4 +9,4 @@ pt=2/1
 ability=Haste;\
         Discard SN: Target creature gains haste until end of turn.
 timing=main
-oracle=Haste. Channel — {R}, Discard Shinen of Fury's Fire: Target creature gains haste until end of turn.
+oracle=Haste\nChannel — {R}, Discard Shinen of Fury's Fire: Target creature gains haste until end of turn.

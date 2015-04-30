@@ -9,4 +9,4 @@ pt=1/1
 ability=hexproof;\
         Whenever a creature dies, put a +1/+1 counter on SN.
 timing=main
-oracle=Hexproof. Whenever a creature dies, put a +1/+1 counter on Lumberknot.
+oracle=Hexproof\nWhenever a creature dies, put a +1/+1 counter on Lumberknot.

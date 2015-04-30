@@ -7,4 +7,4 @@ cost={4}{R}{R}
 ability=You may sacrifice two Mountains rather than pay SN's mana cost.
 effect=Destroy all artifacts.
 timing=main
-oracle=You may sacrifice two Mountains rather than pay Pulverize's mana cost. Destroy all artifacts.
+oracle=You may sacrifice two Mountains rather than pay Pulverize's mana cost.\nDestroy all artifacts.

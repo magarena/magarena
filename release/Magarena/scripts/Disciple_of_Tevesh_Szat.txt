@@ -8,4 +8,4 @@ cost={2}{B}{B}
 pt=3/1
 ability={T}:Target creature gets -1/-1 until end of turn.;{4}{B}{B},{T},Sacrifice SN:Target creature gets -6/-6 until end of turn.
 timing=main
-oracle={T}: Target creature gets -1/-1 until end of turn. {4}{B}{B}, {T}, Sacrifice Disciple of Tevesh Szat: Target creature gets -6/-6 until end of turn.
+oracle={T}: Target creature gets -1/-1 until end of turn.\n{4}{B}{B}, {T}, Sacrifice Disciple of Tevesh Szat: Target creature gets -6/-6 until end of turn.

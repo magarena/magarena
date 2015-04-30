@@ -9,4 +9,4 @@ pt=2/3
 ability=Flying
 timing=main
 requires_groovy_code
-oracle=Flying. When you control no enchantments, sacrifice Tethered Griffin.
+oracle=Flying\nWhen you control no enchantments, sacrifice Tethered Griffin.

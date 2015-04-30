@@ -8,4 +8,4 @@ cost={B}{B}
 pt=2/2
 ability=first strike;protection from white
 timing=main
-oracle=First strike. Protection from white
+oracle=First strike\nProtection from white

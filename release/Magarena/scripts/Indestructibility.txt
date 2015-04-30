@@ -8,4 +8,4 @@ cost={3}{W}
 ability=Enchanted permanent has indestructible.
 timing=aura
 enchant=indestructible,pos permanent
-oracle=Enchant permanent. Enchanted permanent has indestructible.
+oracle=Enchant permanent\nEnchanted permanent has indestructible.

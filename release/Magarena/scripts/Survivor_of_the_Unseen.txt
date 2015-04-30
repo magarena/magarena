@@ -9,4 +9,4 @@ pt=2/1
 ability=Cumulative upkeep {2}
 timing=main
 requires_groovy_code
-oracle=Cumulative upkeep {2}. {T}: Draw two cards, then put a card from your hand on top of your library.
+oracle=Cumulative upkeep {2}\n{T}: Draw two cards, then put a card from your hand on top of your library.

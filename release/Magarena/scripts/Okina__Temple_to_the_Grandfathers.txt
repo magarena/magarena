@@ -6,4 +6,4 @@ type=Legendary,Land
 ability={T}: Add {G} to your mana pool.;\
         {G}, {T}: Target legendary creature gets +1/+1 until end of turn.
 timing=land
-oracle={T}: Add {G} to your mana pool. {G}, {T}: Target legendary creature gets +1/+1 until end of turn.
+oracle={T}: Add {G} to your mana pool.\n{G}, {T}: Target legendary creature gets +1/+1 until end of turn.

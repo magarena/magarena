@@ -9,4 +9,4 @@ pt=3/2
 ability=Affinity for Swamps.;\
         Fear
 timing=main
-oracle=Affinity for Swamps. Fear
+oracle=Affinity for Swamps\nFear

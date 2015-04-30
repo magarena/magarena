@@ -6,4 +6,4 @@ type=Sorcery
 cost={5}{W}{W}
 effect=Return target permanent card from your graveyard to the battlefield.~Rebound
 timing=main
-oracle=Return target permanent card from your graveyard to the battlefield. Rebound
+oracle=Return target permanent card from your graveyard to the battlefield.\nRebound

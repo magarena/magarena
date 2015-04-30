@@ -8,4 +8,4 @@ cost={8}
 pt=8/8
 ability=annihilator 2;SN attacks each turn if able.
 timing=main
-oracle=Annihilator 2. Ulamog's Crusher attacks each turn if able.
+oracle=Annihilator 2\nUlamog's Crusher attacks each turn if able.

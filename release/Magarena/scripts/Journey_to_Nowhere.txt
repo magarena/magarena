@@ -8,4 +8,4 @@ cost={1}{W}
 ability=When SN enters the battlefield, exile target creature.;\
         When SN leaves the battlefield, return the exiled card to the battlefield under its owner's control.
 timing=enchantment
-oracle=When Journey to Nowhere enters the battlefield, exile target creature. When Journey to Nowhere leaves the battlefield, return the exiled card to the battlefield under its owner's control.
+oracle=When Journey to Nowhere enters the battlefield, exile target creature.\nWhen Journey to Nowhere leaves the battlefield, return the exiled card to the battlefield under its owner's control.

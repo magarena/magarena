@@ -8,4 +8,4 @@ cost={2}{R}{R}
 pt=-1/3
 ability=double strike;{R}: SN gets +1/+0 until end of turn.
 timing=main
-oracle=Double strike. {R}: Char-Rumbler gets +1/+0 until end of turn.
+oracle=Double strike\n{R}: Char-Rumbler gets +1/+0 until end of turn.

@@ -8,4 +8,4 @@ subtype=Human,Rogue
 cost={W}{U}
 pt=2/1
 timing=fmain
-oracle=First strike. Shroud
+oracle=First strike\nShroud

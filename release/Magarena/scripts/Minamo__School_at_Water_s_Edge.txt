@@ -7,4 +7,4 @@ mana=u2
 ability={T}: Add {U} to your mana pool.;\
         {U},{T}:Untap target legendary creature.
 timing=land
-oracle={T}: Add {U} to your mana pool. {U}, {T}: Untap target legendary permanent.
+oracle={T}: Add {U} to your mana pool.\n{U}, {T}: Untap target legendary permanent.

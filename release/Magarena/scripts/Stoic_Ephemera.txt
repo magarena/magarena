@@ -10,4 +10,4 @@ ability=Defender;\
         Flying
 timing=main
 requires_groovy_code
-oracle=Defender. Flying. When Stoic Ephemera blocks, sacrifice it at end of combat.
+oracle=Defender\nFlying\nWhen Stoic Ephemera blocks, sacrifice it at end of combat.

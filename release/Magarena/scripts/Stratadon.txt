@@ -9,4 +9,4 @@ pt=5/5
 ability=Trample
 timing=main
 requires_groovy_code
-oracle=Domain — Stratadon costs {1} less to cast for each basic land type among lands you control. Trample
+oracle=Domain — Stratadon costs {1} less to cast for each basic land type among lands you control.\nTrample

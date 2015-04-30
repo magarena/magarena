@@ -9,4 +9,4 @@ pt=3/3
 ability=horsemanship;\
         Whenever SN blocks, SN gets +1/+1 until end of turn.
 timing=main
-oracle=Horsemanship. Whenever Zhao Zilong, Tiger General blocks, it gets +1/+1 until end of turn.
+oracle=Horsemanship\nWhenever Zhao Zilong, Tiger General blocks, it gets +1/+1 until end of turn.

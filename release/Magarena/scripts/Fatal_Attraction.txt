@@ -9,4 +9,4 @@ ability=When SN enters the battlefield, SN deals 2 damage to enchanted creature.
         At the beginning of your upkeep, SN deals 4 damage to enchanted creature.
 timing=aura
 enchant=destroy,neg creature
-oracle=Enchant creature. When Fatal Attraction enters the battlefield, it deals 2 damage to enchanted creature. At the beginning of your upkeep, Fatal Attraction deals 4 damage to enchanted creature.
+oracle=Enchant creature\nWhen Fatal Attraction enters the battlefield, it deals 2 damage to enchanted creature.\nAt the beginning of your upkeep, Fatal Attraction deals 4 damage to enchanted creature.

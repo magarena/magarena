@@ -7,4 +7,4 @@ cost={R}
 effect=Draw two cards, then discard two cards.
 ability=Flashback {2}{R}
 timing=draw
-oracle=Draw two cards, then discard two cards. Flashback {2}{R}
+oracle=Draw two cards, then discard two cards.\nFlashback {2}{R}

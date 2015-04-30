@@ -9,4 +9,4 @@ pt=6/6
 ability=trample;\
         Whenever another nontoken creature enters the battlefield under your control, you may draw a card.
 timing=main
-oracle=Trample. Whenever another nontoken creature enters the battlefield under your control, you may draw a card.
+oracle=Trample\nWhenever another nontoken creature enters the battlefield under your control, you may draw a card.

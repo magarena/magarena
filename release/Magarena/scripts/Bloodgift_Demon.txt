@@ -9,4 +9,4 @@ pt=5/4
 ability=flying
 timing=main
 requires_groovy_code
-oracle=Flying. At the beginning of your upkeep, target player draws a card and loses 1 life.
+oracle=Flying\nAt the beginning of your upkeep, target player draws a card and loses 1 life.

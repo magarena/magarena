@@ -8,4 +8,4 @@ cost={1}{G}{W}
 ability=Enchanted creature gets +2/+2 and has trample and lifelink.
 timing=aura
 enchant=pump,pos creature
-oracle=Enchant creature. Enchanted creature gets +2/+2 and has trample and lifelink.
+oracle=Enchant creature\nEnchanted creature gets +2/+2 and has trample and lifelink.

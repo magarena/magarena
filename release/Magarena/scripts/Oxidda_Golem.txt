@@ -9,4 +9,4 @@ pt=3/2
 ability=Affinity for Mountains.;\
         Haste
 timing=main
-oracle=Affinity for Mountains. Haste
+oracle=Affinity for Mountains\nHaste

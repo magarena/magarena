@@ -9,4 +9,4 @@ pt=2/1
 ability=first strike;\
         {1}{B}: Regenerate SN.
 timing=main
-oracle=First strike. {1}{B}: Regenerate Lim-Dûl's High Guard.
+oracle=First strike\n{1}{B}: Regenerate Lim-Dûl's High Guard.

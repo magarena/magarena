@@ -6,4 +6,4 @@ type=Sorcery
 cost={4}{R}
 effect=Destroy target land.~Draw a card.
 timing=main
-oracle=Destroy target land. Draw a card.
+oracle=Destroy target land.\nDraw a card.

@@ -9,4 +9,4 @@ pt=4/3
 ability={5}{R}{R}: Monstrosity 1.;\
         When SN becomes monstrous, SN deals 2 damage to each opponent and each creature your opponents control.
 timing=main
-oracle={5}{R}{R}: Monstrosity 1. When Wildfire Cerberus becomes monstrous, it deals 2 damage to each opponent and each creature your opponents control.
+oracle={5}{R}{R}: Monstrosity 1.\nWhen Wildfire Cerberus becomes monstrous, it deals 2 damage to each opponent and each creature your opponents control.

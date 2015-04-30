@@ -9,4 +9,4 @@ pt=2/3
 ability=SN has first strike as long as it's attacking.;\
         Whenever a player casts a black spell, you may pay {B}. If you do, put a +1/+1 counter on SN.
 timing=main
-oracle=Purraj of Urborg has first strike as long as it's attacking. Whenever a player casts a black spell, you may pay {B}. If you do, put a +1/+1 counter on Purraj of Urborg.
+oracle=Purraj of Urborg has first strike as long as it's attacking.\nWhenever a player casts a black spell, you may pay {B}. If you do, put a +1/+1 counter on Purraj of Urborg.

@@ -9,4 +9,4 @@ pt=1/1
 ability={1}{R}: Target Goblin creature gets +1/+0 until end of turn.;\
         Morph {R}
 timing=main
-oracle={1}{R}: Target Goblin creature gets +1/+0 until end of turn. Morph {R}
+oracle={1}{R}: Target Goblin creature gets +1/+0 until end of turn.\nMorph {R}

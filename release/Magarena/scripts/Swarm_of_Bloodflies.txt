@@ -10,4 +10,4 @@ ability=Flying;\
         SN enters the battlefield with two +1/+1 counters on it.;\
         Whenever another creature dies, put a +1/+1 counter on SN.
 timing=main
-oracle=Flying. Swarm of Bloodflies enters the battlefield with two +1/+1 counters on it. Whenever another creature dies, put a +1/+1 counter on Swarm of Bloodflies.
+oracle=Flying\nSwarm of Bloodflies enters the battlefield with two +1/+1 counters on it.\nWhenever another creature dies, put a +1/+1 counter on Swarm of Bloodflies.

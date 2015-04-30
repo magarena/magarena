@@ -10,4 +10,4 @@ pt=1/3
 ability=When SN enters the battlefield, you may exile another target creature.;\
         When SN leaves the battlefield, return the exiled card to the battlefield under its owner's control.
 timing=main
-oracle=When Fiend Hunter enters the battlefield, you may exile another target creature. When Fiend Hunter leaves the battlefield, return the exiled card to the battlefield under its owner's control.
+oracle=When Fiend Hunter enters the battlefield, you may exile another target creature.\nWhen Fiend Hunter leaves the battlefield, return the exiled card to the battlefield under its owner's control.

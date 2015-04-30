@@ -9,4 +9,4 @@ pt=0/2
 ability=SN can't attack unless defending player controls an Island.
 timing=main
 requires_groovy_code=Merchant Ship;Sea Serpent
-oracle=Merchant Ship can't attack unless defending player controls an Island. Whenever Merchant Ship attacks and isn't blocked, you gain 2 life. When you control no Islands, sacrifice Merchant Ship.
+oracle=Merchant Ship can't attack unless defending player controls an Island.\nWhenever Merchant Ship attacks and isn't blocked, you gain 2 life.\nWhen you control no Islands, sacrifice Merchant Ship.

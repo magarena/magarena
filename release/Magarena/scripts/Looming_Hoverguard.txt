@@ -9,4 +9,4 @@ pt=3/3
 ability=flying;\
         When SN enters the battlefield, put target artifact on top of its owner's library.
 timing=main
-oracle=Flying. When Looming Hoverguard enters the battlefield, put target artifact on top of its owner's library.
+oracle=Flying\nWhen Looming Hoverguard enters the battlefield, put target artifact on top of its owner's library.

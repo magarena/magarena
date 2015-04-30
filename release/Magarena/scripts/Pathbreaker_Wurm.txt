@@ -9,4 +9,4 @@ pt=6/4
 ability=Soulbond;\
         As long as SN is paired with another creature, both creatures have trample.
 timing=main
-oracle=Soulbond. As long as Pathbreaker Wurm is paired with another creature, both creatures have trample.
+oracle=Soulbond\nAs long as Pathbreaker Wurm is paired with another creature, both creatures have trample.

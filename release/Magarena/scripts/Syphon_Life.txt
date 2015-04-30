@@ -7,4 +7,4 @@ cost={1}{B}{B}
 effect=Target player loses 2 life and you gain 2 life.
 ability=Retrace
 timing=main
-oracle=Target player loses 2 life and you gain 2 life. Retrace
+oracle=Target player loses 2 life and you gain 2 life.\nRetrace

@@ -11,4 +11,4 @@ ability=first strike;\
         other knight creatures you control have indestructible
 static=player
 timing=main
-oracle=First strike. Other Knight creatures you control get +1/+1 and have indestructible.
+oracle=First strike\nOther Knight creatures you control get +1/+1 and have indestructible.

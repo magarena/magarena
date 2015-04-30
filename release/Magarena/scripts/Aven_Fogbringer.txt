@@ -8,4 +8,4 @@ cost={3}{U}
 pt=2/1
 ability=flying;When SN enters the battlefield, return target land to its owner's hand.
 timing=main
-oracle=Flying. When Aven Fogbringer enters the battlefield, return target land to its owner's hand.
+oracle=Flying\nWhen Aven Fogbringer enters the battlefield, return target land to its owner's hand.

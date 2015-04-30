@@ -9,4 +9,4 @@ pt=3/4
 ability=Morph {6}{R};\
         When SN is turned face up, Beast creatures you control get +3/+0 until end of turn.
 timing=main
-oracle=Morph {6}{R}. When Bloodstoke Howler is turned face up, Beast creatures you control get +3/+0 until end of turn.
+oracle=Morph {6}{R}\nWhen Bloodstoke Howler is turned face up, Beast creatures you control get +3/+0 until end of turn.

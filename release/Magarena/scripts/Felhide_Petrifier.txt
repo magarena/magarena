@@ -9,4 +9,4 @@ pt=2/3
 ability=Deathtouch;\
         other Minotaur creatures you control have deathtouch.
 timing=main
-oracle=Deathtouch. Other Minotaur creatures you control have deathtouch.
+oracle=Deathtouch\nOther Minotaur creatures you control have deathtouch.

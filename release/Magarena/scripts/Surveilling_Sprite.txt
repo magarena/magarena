@@ -9,4 +9,4 @@ pt=1/1
 ability=flying;\
         When SN dies, you may draw a card.
 timing=main
-oracle=Flying. When Surveilling Sprite dies, you may draw a card.
+oracle=Flying\nWhen Surveilling Sprite dies, you may draw a card.

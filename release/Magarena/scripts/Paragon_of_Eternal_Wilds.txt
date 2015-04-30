@@ -9,4 +9,4 @@ pt=2/2
 ability=Other green creatures you control get +1/+1.;\
         {G}, {T}: Another target green creature you control gains trample until end of turn.
 timing=main
-oracle=Other green creatures you control get +1/+1. {G}, {T}: Another target green creature you control gains trample until end of turn.
+oracle=Other green creatures you control get +1/+1.\n{G}, {T}: Another target green creature you control gains trample until end of turn.

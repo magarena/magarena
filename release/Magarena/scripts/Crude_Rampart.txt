@@ -9,4 +9,4 @@ pt=4/5
 ability=Defender;\
         Morph {4}{W}
 timing=main
-oracle=Defender. Morph {4}{W}
+oracle=Defender\nMorph {4}{W}

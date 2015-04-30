@@ -9,4 +9,4 @@ pt=2/5
 ability=Deathtouch;\
         {2}, Remove a +1/+1 counter from a creature you control: Target creature gets -1/-1 until end of turn.
 timing=main
-oracle=Deathtouch. {2}, Remove a +1/+1 counter from a creature you control: Target creature gets -1/-1 until end of turn.
+oracle=Deathtouch\n{2}, Remove a +1/+1 counter from a creature you control: Target creature gets -1/-1 until end of turn.

@@ -6,4 +6,4 @@ type=Instant
 cost={3}{B}
 effect=Choose one — (1) Put a 2/2 black Zombie creature token onto the battlefield. (2) Destroy target nonartifact, nonblack creature. It can't be regenerated.
 timing=removal
-oracle=Choose one — • Put a 2/2 black Zombie creature token onto the battlefield. • Destroy target nonartifact, nonblack creature. It can't be regenerated.
+oracle=Choose one —\n• Put a 2/2 black Zombie creature token onto the battlefield.\n• Destroy target nonartifact, nonblack creature. It can't be regenerated.

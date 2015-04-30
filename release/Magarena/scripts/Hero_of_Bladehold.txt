@@ -9,4 +9,4 @@ pt=3/4
 ability=battle cry;\
         Whenever SN attacks, put two 1/1 white Soldier creature tokens onto the battlefield tapped and attacking.
 timing=fmain
-oracle=Battle cry. Whenever Hero of Bladehold attacks, put two 1/1 white Soldier creature tokens onto the battlefield tapped and attacking.
+oracle=Battle cry\nWhenever Hero of Bladehold attacks, put two 1/1 white Soldier creature tokens onto the battlefield tapped and attacking.

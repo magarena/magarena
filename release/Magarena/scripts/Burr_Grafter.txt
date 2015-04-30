@@ -9,4 +9,4 @@ pt=2/2
 ability=Sacrifice SN: Target creature gets +2/+2 until end of turn.;\
         soulshift 3
 timing=main
-oracle=Sacrifice Burr Grafter: Target creature gets +2/+2 until end of turn. Soulshift 3
+oracle=Sacrifice Burr Grafter: Target creature gets +2/+2 until end of turn.\nSoulshift 3

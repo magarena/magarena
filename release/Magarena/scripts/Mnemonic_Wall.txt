@@ -9,4 +9,4 @@ pt=0/4
 ability=defender;\
         When SN enters the battlefield, you may return target instant or sorcery card from your graveyard to your hand.
 timing=main
-oracle=Defender. When Mnemonic Wall enters the battlefield, you may return target instant or sorcery card from your graveyard to your hand.
+oracle=Defender\nWhen Mnemonic Wall enters the battlefield, you may return target instant or sorcery card from your graveyard to your hand.

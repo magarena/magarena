@@ -8,4 +8,4 @@ cost={1}{W}
 timing=main
 pt=1/2
 ability=cycling {2};protection from red
-oracle=Protection from red. Cycling {2}
+oracle=Protection from red\nCycling {2}

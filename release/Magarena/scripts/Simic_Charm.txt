@@ -6,4 +6,4 @@ type=Instant
 cost={G}{U}
 effect=Choose one — (1) Target creature gets +3/+3 until end of turn. (2) Permanents you control gain hexproof until end of turn. (3) Return target creature to its owner's hand.
 timing=pump
-oracle=Choose one — • Target creature gets +3/+3 until end of turn. • Permanents you control gain hexproof until end of turn. • Return target creature to its owner's hand.
+oracle=Choose one —\n• Target creature gets +3/+3 until end of turn.\n• Permanents you control gain hexproof until end of turn.\n• Return target creature to its owner's hand.

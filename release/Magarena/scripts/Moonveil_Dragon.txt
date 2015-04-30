@@ -9,4 +9,4 @@ pt=5/5
 ability=flying;\
         {R}: Creatures you control get +1/+0 until end of turn.
 timing=main
-oracle=Flying. {R}: Each creature you control gets +1/+0 until end of turn.
+oracle=Flying\n{R}: Each creature you control gets +1/+0 until end of turn.

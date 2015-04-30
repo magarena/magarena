@@ -6,4 +6,4 @@ type=Instant
 cost={1}{R}
 effect=Target multicolored creature gains double strike until end of turn.~Draw a card.
 timing=block
-oracle=Target multicolored creature gains double strike until end of turn. Draw a card.
+oracle=Target multicolored creature gains double strike until end of turn.\nDraw a card.

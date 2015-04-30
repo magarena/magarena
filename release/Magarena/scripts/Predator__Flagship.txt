@@ -6,4 +6,4 @@ type=Legendary,Artifact
 cost={5}
 ability={2}:Target creature gains flying until end of turn.;{5},{T}:Destroy target creature with flying.
 timing=artifact
-oracle={2}: Target creature gains flying until end of turn. {5}, {T}: Destroy target creature with flying.
+oracle={2}: Target creature gains flying until end of turn.\n{5}, {T}: Destroy target creature with flying.

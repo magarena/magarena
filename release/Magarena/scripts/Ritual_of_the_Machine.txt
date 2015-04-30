@@ -7,4 +7,4 @@ cost={2}{B}{B}
 ability=As an additional cost to cast SN, sacrifice a creature.
 timing=main
 requires_groovy_code
-oracle=As an additional cost to cast Ritual of the Machine, sacrifice a creature. Gain control of target nonartifact, nonblack creature.
+oracle=As an additional cost to cast Ritual of the Machine, sacrifice a creature.\nGain control of target nonartifact, nonblack creature.

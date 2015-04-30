@@ -9,4 +9,4 @@ pt=2/2
 ability={T}: Put a 1/1 white Human creature token onto the battlefield.
 timing=main
 requires_groovy_code
-oracle={T}: Put a 1/1 white Human creature token onto the battlefield. Fateful hour — As long as you have 5 or less life, other creatures you control get +2/+2.
+oracle={T}: Put a 1/1 white Human creature token onto the battlefield.\nFateful hour — As long as you have 5 or less life, other creatures you control get +2/+2.

@@ -7,4 +7,4 @@ mana=b2u2
 ability={T}: Add {1} to your mana pool.;\
         {T}: Add {B} or {U} to your mana pool. SN deals 1 damage to you.
 timing=land
-oracle={T}: Add {1} to your mana pool. {T}: Add {U} or {B} to your mana pool. Underground River deals 1 damage to you.
+oracle={T}: Add {1} to your mana pool.\n{T}: Add {U} or {B} to your mana pool. Underground River deals 1 damage to you.

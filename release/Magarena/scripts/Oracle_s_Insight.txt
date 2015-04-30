@@ -8,4 +8,4 @@ cost={3}{U}
 ability=Enchanted creature has "{T}: Scry 1.~Draw a card."
 enchant=pump,pos creature
 timing=main
-oracle=Enchant creature. Enchanted creature has "{T}: Scry 1, then draw a card."
+oracle=Enchant creature\nEnchanted creature has "{T}: Scry 1, then draw a card."

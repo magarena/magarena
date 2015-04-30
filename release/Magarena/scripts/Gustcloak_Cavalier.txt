@@ -10,4 +10,4 @@ ability=flanking;\
         Whenever SN attacks, you may tap target creature.
 timing=main
 requires_groovy_code=Gustcloak Skirmisher
-oracle=Flanking. Whenever Gustcloak Cavalier attacks, you may tap target creature. Whenever Gustcloak Cavalier becomes blocked, you may untap Gustcloak Cavalier and remove it from combat.
+oracle=Flanking\nWhenever Gustcloak Cavalier attacks, you may tap target creature.\nWhenever Gustcloak Cavalier becomes blocked, you may untap Gustcloak Cavalier and remove it from combat.

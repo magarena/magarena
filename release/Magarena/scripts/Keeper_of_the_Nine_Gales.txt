@@ -9,4 +9,4 @@ pt=1/2
 ability=Flying;\
         {T}, Tap another two untapped Birds you control: Return target permanent to its owner's hand.
 timing=main
-oracle=Flying. {T}, Tap two untapped Birds you control: Return target permanent to its owner's hand.
+oracle=Flying\n{T}, Tap two untapped Birds you control: Return target permanent to its owner's hand.

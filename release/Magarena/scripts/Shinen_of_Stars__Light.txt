@@ -9,4 +9,4 @@ pt=2/1
 ability=First strike;\
         {1}{W}, Discard SN: Target creature gains first strike until end of turn.
 timing=main
-oracle=First strike. Channel — {1}{W}, Discard Shinen of Stars' Light: Target creature gains first strike until end of turn.
+oracle=First strike\nChannel — {1}{W}, Discard Shinen of Stars' Light: Target creature gains first strike until end of turn.

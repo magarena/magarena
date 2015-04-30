@@ -7,4 +7,4 @@ cost={1}{B}{B}
 ability=cycling {2}
 effect=Destroy target creature with power 2 or less.
 timing=removal
-oracle=Destroy target creature with power 2 or less. Cycling {2}
+oracle=Destroy target creature with power 2 or less.\nCycling {2}

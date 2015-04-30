@@ -9,4 +9,4 @@ pt=5/5
 ability=protection from white;\
         When SN enters the battlefield, you lose 5 life.
 timing=main
-oracle=Protection from white. When Eviscerator enters the battlefield, you lose 5 life.
+oracle=Protection from white\nWhen Eviscerator enters the battlefield, you lose 5 life.

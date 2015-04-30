@@ -10,4 +10,4 @@ ability=Bestow {5}{G};\
         Trample;\
         Enchanted creature gets +3/+3 and has trample.
 timing=main
-oracle=Bestow {5}{G}. Trample. Enchanted creature gets +3/+3 and has trample.
+oracle=Bestow {5}{G}\nTrample\nEnchanted creature gets +3/+3 and has trample.

@@ -9,4 +9,4 @@ pt=5/5
 ability=SN can't attack unless defending player controls a Swamp.
 timing=main
 requires_groovy_code
-oracle=Bog Serpent can't attack unless defending player controls a Swamp. When you control no Swamps, sacrifice Bog Serpent.
+oracle=Bog Serpent can't attack unless defending player controls a Swamp.\nWhen you control no Swamps, sacrifice Bog Serpent.

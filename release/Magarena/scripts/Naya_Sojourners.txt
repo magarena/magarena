@@ -10,4 +10,4 @@ ability=When you cycle SN, you may put a +1/+1 counter on target creature.;\
         When SN dies, you may put a +1/+1 counter on target creature.;\
         Cycling {2}{G}
 timing=main
-oracle=When you cycle Naya Sojourners or it dies, you may put a +1/+1 counter on target creature. Cycling {2}{G}
+oracle=When you cycle Naya Sojourners or it dies, you may put a +1/+1 counter on target creature.\nCycling {2}{G}

@@ -9,4 +9,4 @@ pt=1/2
 ability={T}: Untap target artifact or creature. Activate this ability with AI no more than three times each turn.;\
         Morph {U}
 timing=main
-oracle={T}: Untap target artifact or creature. Morph {U}
+oracle={T}: Untap target artifact or creature.\nMorph {U}

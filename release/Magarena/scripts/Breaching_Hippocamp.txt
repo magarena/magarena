@@ -9,4 +9,4 @@ pt=3/2
 ability=flash;\
         When SN enters the battlefield, untap another target creature you control.
 timing=flash
-oracle=Flash. When Breaching Hippocamp enters the battlefield, untap another target creature you control.
+oracle=Flash\nWhen Breaching Hippocamp enters the battlefield, untap another target creature you control.

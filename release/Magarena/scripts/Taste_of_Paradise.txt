@@ -7,4 +7,4 @@ cost={3}{G}
 ability=Multikicker {1}{G}
 timing=main
 requires_groovy_code
-oracle=As an additional cost to cast Taste of Paradise, you may pay {1}{G} any number of times. You gain 3 life plus an additional 3 life for each additional {1}{G} you paid.
+oracle=As an additional cost to cast Taste of Paradise, you may pay {1}{G} any number of times.\nYou gain 3 life plus an additional 3 life for each additional {1}{G} you paid.

@@ -9,4 +9,4 @@ ability=You control enchanted creature.;\
         At the beginning of your upkeep, put a -1/-1 counter on enchanted creature.
 timing=aura
 enchant=gain control,neg creature
-oracle=Enchant creature. You control enchanted creature. At the beginning of your upkeep, put a -1/-1 counter on enchanted creature.
+oracle=Enchant creature\nYou control enchanted creature.\nAt the beginning of your upkeep, put a -1/-1 counter on enchanted creature.

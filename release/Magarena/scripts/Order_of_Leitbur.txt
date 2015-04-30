@@ -10,4 +10,4 @@ ability=protection from black;\
         {W}: SN gains first strike until end of turn.;\
         {W}{W}: SN gets +1/+0 until end of turn.
 timing=main
-oracle=Protection from black. {W}: Order of Leitbur gains first strike until end of turn. {W}{W}: Order of Leitbur gets +1/+0 until end of turn.
+oracle=Protection from black\n{W}: Order of Leitbur gains first strike until end of turn.\n{W}{W}: Order of Leitbur gets +1/+0 until end of turn.

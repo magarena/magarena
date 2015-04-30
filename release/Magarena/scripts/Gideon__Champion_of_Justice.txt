@@ -8,4 +8,4 @@ cost={2}{W}{W}
 ability=loyalty 4
 timing=main
 requires_groovy_code
-oracle=+1: Put a loyalty counter on Gideon, Champion of Justice for each creature target opponent controls. 0: Until end of turn, Gideon, Champion of Justice becomes a Human Soldier creature with power and toughness each equal to the number of loyalty counters on him and gains indestructible. He's still a planeswalker. Prevent all damage that would be dealt to him this turn. -15: Exile all other permanents.
+oracle=+1: Put a loyalty counter on Gideon, Champion of Justice for each creature target opponent controls.\n0: Until end of turn, Gideon, Champion of Justice becomes a Human Soldier creature with power and toughness each equal to the number of loyalty counters on him and gains indestructible. He's still a planeswalker. Prevent all damage that would be dealt to him this turn.\n−15: Exile all other permanents.

@@ -11,4 +11,4 @@ ability=Whenever SN deals combat damage to a player, draw a card.;\
 transform=Lambholt Elder
 timing=main
 hidden
-oracle=Whenever Silverpelt Werewolf deals combat damage to a player, draw a card. At the beginning of each upkeep, if a player cast two or more spells last turn, transform Silverpelt Werewolf.
+oracle=Whenever Silverpelt Werewolf deals combat damage to a player, draw a card.\nAt the beginning of each upkeep, if a player cast two or more spells last turn, transform Silverpelt Werewolf.

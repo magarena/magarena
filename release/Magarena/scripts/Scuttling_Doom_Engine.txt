@@ -9,4 +9,4 @@ pt=6/6
 ability=SN can't be blocked by creatures with power 2 or less.;\
         When SN dies, SN deals 6 damage to target opponent.
 timing=main
-oracle=Scuttling Doom Engine can't be blocked by creatures with power 2 or less. When Scuttling Doom Engine dies, it deals 6 damage to target opponent.
+oracle=Scuttling Doom Engine can't be blocked by creatures with power 2 or less.\nWhen Scuttling Doom Engine dies, it deals 6 damage to target opponent.

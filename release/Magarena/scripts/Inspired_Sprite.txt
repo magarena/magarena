@@ -11,4 +11,4 @@ ability=Flash;\
         Whenever you cast a Wizard spell, you may untap SN.;\
         {T}: Draw a card, then discard a card.
 timing=main
-oracle=Flash. Flying. Whenever you cast a Wizard spell, you may untap Inspired Sprite. {T}: Draw a card, then discard a card.
+oracle=Flash\nFlying\nWhenever you cast a Wizard spell, you may untap Inspired Sprite.\n{T}: Draw a card, then discard a card.

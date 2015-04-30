@@ -9,4 +9,4 @@ pt=2/3
 ability=Exploit;\
         When SN exploits a creature, creatures your opponents control get -1/-1 until end of turn.
 timing=main
-oracle=Exploit. When Minister of Pain exploits a creature, creatures your opponents control get -1/-1 until end of turn.
+oracle=Exploit\nWhen Minister of Pain exploits a creature, creatures your opponents control get -1/-1 until end of turn.

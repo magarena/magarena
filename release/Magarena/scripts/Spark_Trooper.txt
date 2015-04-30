@@ -11,4 +11,4 @@ ability=trample;\
         lifelink;\
         At the beginning of the end step, sacrifice SN.
 timing=fmain
-oracle=Trample, lifelink, haste. At the beginning of the end step, sacrifice Spark Trooper.
+oracle=Trample, lifelink, haste\nAt the beginning of the end step, sacrifice Spark Trooper.

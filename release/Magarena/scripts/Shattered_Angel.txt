@@ -9,4 +9,4 @@ pt=3/3
 ability=flying
 timing=main
 requires_groovy_code
-oracle=Flying. Whenever a land enters the battlefield under an opponent's control, you may gain 3 life.
+oracle=Flying\nWhenever a land enters the battlefield under an opponent's control, you may gain 3 life.

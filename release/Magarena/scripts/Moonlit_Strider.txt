@@ -9,4 +9,4 @@ pt=1/4
 ability=Sacrifice SN: Target creature you control gains protection from the color of your choice until end of turn.;\
         Soulshift 3
 timing=main
-oracle=Sacrifice Moonlit Strider: Target creature you control gains protection from the color of your choice until end of turn. Soulshift 3
+oracle=Sacrifice Moonlit Strider: Target creature you control gains protection from the color of your choice until end of turn.\nSoulshift 3

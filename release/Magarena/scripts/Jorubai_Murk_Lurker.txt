@@ -9,4 +9,4 @@ pt=1/3
 ability=SN gets +1/+1 as long as you control a Swamp.;\
         {1}{B}: Target creature gains lifelink until end of turn.
 timing=main
-oracle=Jorubai Murk Lurker gets +1/+1 as long as you control a Swamp. {1}{B}: Target creature gains lifelink until end of turn.
+oracle=Jorubai Murk Lurker gets +1/+1 as long as you control a Swamp.\n{1}{B}: Target creature gains lifelink until end of turn.

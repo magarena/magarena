@@ -10,4 +10,4 @@ ability=Defender;\
         Flying;\
         SN can't block creatures with power 2 or less.
 timing=main
-oracle=Defender. Flying. Sunweb can't block creatures with power 2 or less.
+oracle=Defender\nFlying\nSunweb can't block creatures with power 2 or less.

@@ -7,4 +7,4 @@ cost={X}{R}
 timing=removal
 removal=1
 requires_groovy_code
-oracle=Street Spasm deals X damage to target creature without flying you don't control. Overload {X}{X}{R}{R}
+oracle=Street Spasm deals X damage to target creature without flying you don't control.\nOverload {X}{X}{R}{R}

@@ -9,4 +9,4 @@ ability={U}: Tap enchanted creature.;\
         {U}: Untap enchanted creature.
 timing=aura
 enchant=default,creature
-oracle=Enchant creature. {U}: Tap enchanted creature. {U}: Untap enchanted creature.
+oracle=Enchant creature\n{U}: Tap enchanted creature.\n{U}: Untap enchanted creature.

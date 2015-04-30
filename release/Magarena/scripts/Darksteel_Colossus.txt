@@ -10,4 +10,4 @@ ability=trample;\
         indestructible;\
         If SN would be put into a graveyard from anywhere, reveal SN and shuffle it into its owner's library instead.
 timing=main
-oracle=Trample, indestructible. If Darksteel Colossus would be put into a graveyard from anywhere, reveal Darksteel Colossus and shuffle it into its owner's library instead.
+oracle=Trample, indestructible\nIf Darksteel Colossus would be put into a graveyard from anywhere, reveal Darksteel Colossus and shuffle it into its owner's library instead.

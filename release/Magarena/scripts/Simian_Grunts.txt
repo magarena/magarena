@@ -8,4 +8,4 @@ cost={2}{G}
 pt=3/4
 ability=flash;echo {2}{G}
 timing=flash
-oracle=Flash. Echo {2}{G}
+oracle=Flash\nEcho {2}{G}

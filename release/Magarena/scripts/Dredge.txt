@@ -6,4 +6,4 @@ type=Instant
 cost={B}
 effect=Sacrifice a creature or land.~Draw a card.
 timing=draw
-oracle=Sacrifice a creature or land. Draw a card.
+oracle=Sacrifice a creature or land.\nDraw a card.

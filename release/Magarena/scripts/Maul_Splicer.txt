@@ -10,4 +10,4 @@ ability=When SN enters the battlefield, put two 3/3 colorless Golem artifact cre
         golem creatures you control have trample
 static=player
 timing=main
-oracle=When Maul Splicer enters the battlefield, put two 3/3 colorless Golem artifact creature tokens onto the battlefield. Golem creatures you control have trample.
+oracle=When Maul Splicer enters the battlefield, put two 3/3 colorless Golem artifact creature tokens onto the battlefield.\nGolem creatures you control have trample.

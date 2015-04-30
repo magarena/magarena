@@ -9,4 +9,4 @@ pt=7/7
 ability=trample;haste
 timing=fmain
 requires_groovy_code
-oracle=Trample, haste. At the beginning of the end step, Blitz Hellion's owner shuffles it into his or her library.
+oracle=Trample, haste\nAt the beginning of the end step, Blitz Hellion's owner shuffles it into his or her library.

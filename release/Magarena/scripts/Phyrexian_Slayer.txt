@@ -9,4 +9,4 @@ pt=2/2
 ability=Flying.;\
         Whenever SN becomes blocked by a white creature, destroy that creature. It can't be regenerated.
 timing=main
-oracle=Flying. Whenever Phyrexian Slayer becomes blocked by a white creature, destroy that creature. It can't be regenerated.
+oracle=Flying\nWhenever Phyrexian Slayer becomes blocked by a white creature, destroy that creature. It can't be regenerated.

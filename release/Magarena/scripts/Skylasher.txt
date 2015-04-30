@@ -10,4 +10,4 @@ ability=flash;\
         SN can't be countered.;\
         reach;protection from blue
 timing=flash
-oracle=Flash. Skylasher can't be countered. Reach, protection from blue
+oracle=Flash\nSkylasher can't be countered.\nReach, protection from blue

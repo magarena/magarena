@@ -11,4 +11,4 @@ ability=echo {3}{R};\
         When SN enters the battlefield, SN deals 1 damage to each creature without flying.;\
         When SN leaves the battlefield, SN deals 1 damage to each creature without flying.
 timing=main
-oracle=Echo {3}{R}. When Subterranean Shambler enters the battlefield or leaves the battlefield, it deals 1 damage to each creature without flying.
+oracle=Echo {3}{R}\nWhen Subterranean Shambler enters the battlefield or leaves the battlefield, it deals 1 damage to each creature without flying.

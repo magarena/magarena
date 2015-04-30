@@ -9,4 +9,4 @@ pt=4/4
 ability=Flying;\
         When SN dies, exile target permanent.
 timing=main
-oracle=Flying. When Archon of Justice dies, exile target permanent.
+oracle=Flying\nWhen Archon of Justice dies, exile target permanent.

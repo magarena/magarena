@@ -9,4 +9,4 @@ pt=3/6
 ability=Exploit;\
         When SN exploits a creature, put two 2/2 black Zombie creature tokens onto the battlefield.
 timing=main
-oracle=Exploit. When Rakshasa Gravecaller exploits a creature, put two 2/2 black Zombie creature tokens onto the battlefield.
+oracle=Exploit\nWhen Rakshasa Gravecaller exploits a creature, put two 2/2 black Zombie creature tokens onto the battlefield.

@@ -9,4 +9,4 @@ pt=5/3
 ability=defender;flying
 timing=smain
 requires_groovy_code
-oracle=Defender, flying. {1}{R}: Target creature attacks this turn if able.
+oracle=Defender, flying\n{1}{R}: Target creature attacks this turn if able.

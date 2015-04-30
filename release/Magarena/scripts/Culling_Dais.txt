@@ -7,4 +7,4 @@ cost={2}
 ability={T},Sacrifice a creature: Put a charge counter on SN.
 timing=artifact
 requires_groovy_code
-oracle={T}, Sacrifice a creature: Put a charge counter on Culling Dais. {1}, Sacrifice Culling Dais: Draw a card for each charge counter on Culling Dais.
+oracle={T}, Sacrifice a creature: Put a charge counter on Culling Dais.\n{1}, Sacrifice Culling Dais: Draw a card for each charge counter on Culling Dais.

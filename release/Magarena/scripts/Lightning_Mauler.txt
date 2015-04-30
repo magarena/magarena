@@ -9,4 +9,4 @@ pt=2/1
 ability=Soulbond;\
         As long as SN is paired with another creature, both creatures have haste.
 timing=main
-oracle=Soulbond. As long as Lightning Mauler is paired with another creature, both creatures have haste.
+oracle=Soulbond\nAs long as Lightning Mauler is paired with another creature, both creatures have haste.

@@ -10,4 +10,4 @@ ability=Fading 1;\
         When SN leaves the battlefield, destroy enchanted creature. It can't be regenerated.
 timing=aura
 enchant=pump,creature
-oracle=Enchant creature. Fading 1. Enchanted creature gets +3/+2. When Parallax Dementia leaves the battlefield, destroy enchanted creature. That creature can't be regenerated.
+oracle=Enchant creature\nFading 1\nEnchanted creature gets +3/+2.\nWhen Parallax Dementia leaves the battlefield, destroy enchanted creature. That creature can't be regenerated.

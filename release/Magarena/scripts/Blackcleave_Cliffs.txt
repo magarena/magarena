@@ -7,4 +7,4 @@ mana=b3r3
 ability={T}: Add {B} or {R} to your mana pool.;\
         SN enters the battlefield tapped unless you control two or fewer other lands.
 timing=land
-oracle=Blackcleave Cliffs enters the battlefield tapped unless you control two or fewer other lands. {T}: Add {B} or {R} to your mana pool.
+oracle=Blackcleave Cliffs enters the battlefield tapped unless you control two or fewer other lands.\n{T}: Add {B} or {R} to your mana pool.

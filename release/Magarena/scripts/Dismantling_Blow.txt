@@ -7,4 +7,4 @@ cost={2}{W}
 ability=Kicker {2}{U}
 timing=removal
 requires_groovy_code
-oracle=Kicker {2}{U}. Destroy target artifact or enchantment. If Dismantling Blow was kicked, draw two cards.
+oracle=Kicker {2}{U}\nDestroy target artifact or enchantment.\nIf Dismantling Blow was kicked, draw two cards.

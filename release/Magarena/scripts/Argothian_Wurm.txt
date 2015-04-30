@@ -9,4 +9,4 @@ pt=6/6
 ability=trample
 timing=main
 requires_groovy_code
-oracle=Trample. When Argothian Wurm enters the battlefield, any player may sacrifice a land. If a player does, put Argothian Wurm on top of its owner's library.
+oracle=Trample\nWhen Argothian Wurm enters the battlefield, any player may sacrifice a land. If a player does, put Argothian Wurm on top of its owner's library.

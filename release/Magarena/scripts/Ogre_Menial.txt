@@ -8,4 +8,4 @@ cost={3}{R}
 pt=0/4
 ability=infect;{R}: SN gets +1/+0 until end of turn.
 timing=main
-oracle=Infect. {R}: Ogre Menial gets +1/+0 until end of turn.
+oracle=Infect\n{R}: Ogre Menial gets +1/+0 until end of turn.

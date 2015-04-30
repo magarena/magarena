@@ -8,4 +8,4 @@ mana=u3b3
 ability={T}: Add {U} or {B} to your mana pool.;\
         SN enters the battlefield tapped.
 timing=tapland
-oracle=Dimir Guildgate enters the battlefield tapped. {T}: Add {U} or {B} to your mana pool.
+oracle=Dimir Guildgate enters the battlefield tapped.\n{T}: Add {U} or {B} to your mana pool.

@@ -9,4 +9,4 @@ ability=creatures you control have haste
 static=player
 timing=aura
 enchant=pump,creature you control
-oracle=Enchant creature you control. Creatures you control have haste.
+oracle=Enchant creature you control\nCreatures you control have haste.

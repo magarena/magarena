@@ -7,4 +7,4 @@ cost={1}{U}
 effect=Turn target creature with a morph ability face down.
 ability=Cycling {U}
 timing=removal
-oracle=Turn target creature with morph ability face down. Cycling {U}
+oracle=Turn target creature with morph face down.\nCycling {U}

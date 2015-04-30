@@ -9,4 +9,4 @@ pt=8/8
 ability=Trample
 timing=main
 requires_groovy_code
-oracle=Trample. At the beginning of your upkeep, Force of Nature deals 8 damage to you unless you pay {G}{G}{G}{G}.
+oracle=Trample\nAt the beginning of your upkeep, Force of Nature deals 8 damage to you unless you pay {G}{G}{G}{G}.

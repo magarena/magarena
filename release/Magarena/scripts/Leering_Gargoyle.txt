@@ -9,4 +9,4 @@ pt=2/2
 ability=Flying;\
         {T}: SN gets -2/+2 until end of turn.~SN loses flying until end of turn.
 timing=main
-oracle=Flying. {T}: Leering Gargoyle gets -2/+2 and loses flying until end of turn.
+oracle=Flying\n{T}: Leering Gargoyle gets -2/+2 and loses flying until end of turn.

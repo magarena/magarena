@@ -9,4 +9,4 @@ pt=8/8
 ability=SN can't be countered.;\
         trample
 timing=main
-oracle=Terra Stomper can't be countered. Trample
+oracle=Terra Stomper can't be countered.\nTrample

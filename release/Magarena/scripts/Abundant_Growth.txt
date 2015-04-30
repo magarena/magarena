@@ -9,4 +9,4 @@ ability=When SN enters the battlefield, draw a card.;\
         Enchanted land has "{T}: Add one mana of any color to your mana pool."
 enchant=pump,pos land
 timing=enchantment
-oracle=Enchant land. When Abundant Growth enters the battlefield, draw a card. Enchanted land has "{T}: Add one mana of any color to your mana pool."
+oracle=Enchant land\nWhen Abundant Growth enters the battlefield, draw a card.\nEnchanted land has "{T}: Add one mana of any color to your mana pool."

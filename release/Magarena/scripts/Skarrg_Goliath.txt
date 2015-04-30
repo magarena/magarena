@@ -9,4 +9,4 @@ pt=9/9
 ability=trample;\
         {5}{G}{G}, Discard SN: Target attacking creature gets +9/+9 and gains trample until end of turn.
 timing=main
-oracle=Trample. Bloodrush — {5}{G}{G}, Discard Skarrg Goliath: Target attacking creature gets +9/+9 and gains trample until end of turn.
+oracle=Trample\nBloodrush — {5}{G}{G}, Discard Skarrg Goliath: Target attacking creature gets +9/+9 and gains trample until end of turn.

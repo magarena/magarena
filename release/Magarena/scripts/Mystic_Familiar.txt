@@ -9,4 +9,4 @@ pt=1/2
 ability=flying;\
         As long as seven or more cards are in your graveyard, SN gets +1/+1 and has protection from black.
 timing=main
-oracle=Flying. Threshold — As long as seven or more cards are in your graveyard, Mystic Familiar gets +1/+1 and has protection from black.
+oracle=Flying\nThreshold — As long as seven or more cards are in your graveyard, Mystic Familiar gets +1/+1 and has protection from black.

@@ -8,4 +8,4 @@ cost={1}{U}
 pt=1/1
 ability=flying;{2},Return a land you control to its owner's hand:Untap target land.
 timing=main
-oracle=Flying. {2}, Return a land you control to its owner's hand: Untap target land.
+oracle=Flying\n{2}, Return a land you control to its owner's hand: Untap target land.

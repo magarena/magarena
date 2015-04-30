@@ -9,4 +9,4 @@ pt=3/3
 ability=flanking;\
         When SN becomes the target of a spell or ability, sacrifice it.
 timing=main
-oracle=Flanking. When Skulking Knight becomes the target of a spell or ability, sacrifice it.
+oracle=Flanking\nWhen Skulking Knight becomes the target of a spell or ability, sacrifice it.

@@ -8,4 +8,4 @@ mana=u3r3
 ability={T}: Add {U} or {R} to your mana pool.;\
         SN enters the battlefield tapped.
 timing=tapland
-oracle=Izzet Guildgate enters the battlefield tapped. {T}: Add {U} or {R} to your mana pool.
+oracle=Izzet Guildgate enters the battlefield tapped.\n{T}: Add {U} or {R} to your mana pool.

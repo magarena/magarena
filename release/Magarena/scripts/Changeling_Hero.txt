@@ -9,4 +9,4 @@ cost={4}{W}
 pt=4/4
 ability=changeling;lifelink;champion creature
 timing=main
-oracle=Changeling. Champion a creature. Lifelink
+oracle=Changeling\nChampion a creature\nLifelink

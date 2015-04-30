@@ -9,4 +9,4 @@ pt=3/2
 ability=SN doesn't untap during your untap step.;\
         Whenever an artifact enters the battlefield, you may untap SN.
 timing=main
-oracle=Battered Golem doesn't untap during your untap step. Whenever an artifact enters the battlefield, you may untap Battered Golem.
+oracle=Battered Golem doesn't untap during your untap step.\nWhenever an artifact enters the battlefield, you may untap Battered Golem.

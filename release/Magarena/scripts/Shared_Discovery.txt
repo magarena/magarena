@@ -7,4 +7,4 @@ cost={U}
 ability=As an additional cost to cast SN, tap four untapped creatures you control.
 effect=Draw three cards.
 timing=main
-oracle=As an additional cost to cast Shared Discovery, tap four untapped creatures you control. Draw three cards.
+oracle=As an additional cost to cast Shared Discovery, tap four untapped creatures you control.\nDraw three cards.

@@ -7,4 +7,4 @@ cost={2}{W}
 ability=cycling {W}
 timing=pump
 requires_groovy_code
-oracle=Choose a color. Creatures you control gain protection from the chosen color until end of turn. Cycling {W}
+oracle=Choose a color. Creatures you control gain protection from the chosen color until end of turn.\nCycling {W}

@@ -9,4 +9,4 @@ pt=1/2
 ability=evolve
 timing=fmain
 requires_groovy_code
-oracle=Evolve. {1}{U}, {T}: Move a +1/+1 counter from Simic Fluxmage onto target creature.
+oracle=Evolve\n{1}{U}, {T}: Move a +1/+1 counter from Simic Fluxmage onto target creature.

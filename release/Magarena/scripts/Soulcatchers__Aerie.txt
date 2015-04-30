@@ -6,4 +6,4 @@ type=Enchantment
 cost={1}{W}
 timing=enchantment
 requires_groovy_code
-oracle=Whenever a Bird is put into your graveyard from the battlefield, put a feather counter on Soulcatchers' Aerie. Bird creatures get +1/+1 for each feather counter on Soulcatchers' Aerie.
+oracle=Whenever a Bird is put into your graveyard from the battlefield, put a feather counter on Soulcatchers' Aerie.\nBird creatures get +1/+1 for each feather counter on Soulcatchers' Aerie.

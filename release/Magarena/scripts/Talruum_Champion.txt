@@ -9,4 +9,4 @@ pt=3/3
 ability=first strike
 timing=main
 requires_groovy_code
-oracle=First strike. Whenever Talruum Champion blocks or becomes blocked by a creature, that creature loses first strike until end of turn.
+oracle=First strike\nWhenever Talruum Champion blocks or becomes blocked by a creature, that creature loses first strike until end of turn.

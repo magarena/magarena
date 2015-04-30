@@ -9,4 +9,4 @@ pt=5/3
 ability=trample;\
         When SN dies, return SN from the graveyard to its owner's hand.
 timing=main
-oracle=Trample. When Weatherseed Treefolk dies, return it to its owner's hand.
+oracle=Trample\nWhen Weatherseed Treefolk dies, return it to its owner's hand.

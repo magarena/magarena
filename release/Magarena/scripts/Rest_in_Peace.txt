@@ -6,4 +6,4 @@ type=Enchantment
 cost={1}{W}
 timing=enchantment
 requires_groovy_code
-oracle=When Rest in Peace enters the battlefield, exile all cards from all graveyards. If a card or token would be put into a graveyard from anywhere, exile it instead.
+oracle=When Rest in Peace enters the battlefield, exile all cards from all graveyards.\nIf a card or token would be put into a graveyard from anywhere, exile it instead.

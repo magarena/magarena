@@ -10,4 +10,4 @@ ability=When SN enters the battlefield, choose one — \
         (1) Search your library for a creature card, reveal it, then shuffle your library and put that card on top of it. \
         (2) Put target noncreature permanent on the bottom of its owner's library.
 timing=main
-oracle=When Brutalizer Exarch enters the battlefield, choose one — • Search your library for a creature card, reveal it, then shuffle your library and put that card on top of it. • Put target noncreature permanent on the bottom of its owner's library.
+oracle=When Brutalizer Exarch enters the battlefield, choose one —\n• Search your library for a creature card, reveal it, then shuffle your library and put that card on top of it.\n• Put target noncreature permanent on the bottom of its owner's library.

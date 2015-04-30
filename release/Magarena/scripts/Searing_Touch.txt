@@ -8,4 +8,4 @@ cost={R}
 ability=buyback {4}
 effect=SN deals 1 damage to target creature or player.~Buyback
 timing=removal
-oracle=Buyback {4}. Searing Touch deals 1 damage to target creature or player.
+oracle=Buyback {4}\nSearing Touch deals 1 damage to target creature or player.

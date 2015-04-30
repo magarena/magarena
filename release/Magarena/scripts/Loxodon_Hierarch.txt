@@ -9,4 +9,4 @@ pt=4/4
 ability=When SN enters the battlefield, you gain 4 life.;\
         {G}{W}, Sacrifice SN: Regenerate each creature you control.
 timing=fmain
-oracle=When Loxodon Hierarch enters the battlefield, you gain 4 life. {G}{W}, Sacrifice Loxodon Hierarch: Regenerate each creature you control.
+oracle=When Loxodon Hierarch enters the battlefield, you gain 4 life.\n{G}{W}, Sacrifice Loxodon Hierarch: Regenerate each creature you control.

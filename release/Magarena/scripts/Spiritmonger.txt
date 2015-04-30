@@ -10,4 +10,4 @@ timing=main
 ability=Whenever SN deals damage to a creature, put a +1/+1 counter on SN.;\
         {B}: Regenerate SN.
 requires_groovy_code
-oracle=Whenever Spiritmonger deals damage to a creature, put a +1/+1 counter on Spiritmonger. {B}: Regenerate Spiritmonger. {G}: Spiritmonger becomes the color of your choice until end of turn.
+oracle=Whenever Spiritmonger deals damage to a creature, put a +1/+1 counter on Spiritmonger.\n{B}: Regenerate Spiritmonger.\n{G}: Spiritmonger becomes the color of your choice until end of turn.

@@ -8,4 +8,4 @@ subtype=Shapeshifter
 cost={3}{G}{G}
 pt=4/4
 timing=main
-oracle=Changeling. Trample
+oracle=Changeling\nTrample

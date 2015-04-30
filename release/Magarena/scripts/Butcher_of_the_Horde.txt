@@ -11,4 +11,4 @@ ability=Flying.;\
         Sacrifice another creature: SN gains lifelink until end of turn.;\
         Sacrifice another creature: SN gains haste until end of turn.
 timing=main
-oracle=Flying. Sacrifice another creature: Butcher of the Horde gains your choice of vigilance, lifelink, or haste until end of turn.
+oracle=Flying\nSacrifice another creature: Butcher of the Horde gains your choice of vigilance, lifelink, or haste until end of turn.

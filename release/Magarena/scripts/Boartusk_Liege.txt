@@ -11,4 +11,4 @@ ability=trample;\
         other green creatures you control get +1/+1
 static=player
 timing=main
-oracle=Trample. Other red creatures you control get +1/+1. Other green creatures you control get +1/+1.
+oracle=Trample\nOther red creatures you control get +1/+1.\nOther green creatures you control get +1/+1.

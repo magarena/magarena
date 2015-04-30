@@ -9,4 +9,4 @@ pt=2/1
 ability=flying;\
         {U}, {T}: You may tap or untap target creature.
 timing=main
-oracle=Flying. {U}, {T}: You may tap or untap target creature.
+oracle=Flying\n{U}, {T}: You may tap or untap target creature.

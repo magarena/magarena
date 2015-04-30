@@ -8,4 +8,4 @@ cost={3}{G}
 pt=6/3
 ability=shroud;echo {3}{G}
 timing=main
-oracle=Shroud. Echo {3}{G}
+oracle=Shroud\nEcho {3}{G}

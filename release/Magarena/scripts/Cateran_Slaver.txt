@@ -9,4 +9,4 @@ pt=5/5
 ability=swampwalk;\
         {5}, {T}: Search your library for a Mercenary permanent card with converted mana cost 5 or less and put it onto the battlefield. Then shuffle your library.
 timing=main
-oracle=Swampwalk. {5}, {T}: Search your library for a Mercenary permanent card with converted mana cost 5 or less and put it onto the battlefield. Then shuffle your library.
+oracle=Swampwalk\n{5}, {T}: Search your library for a Mercenary permanent card with converted mana cost 5 or less and put it onto the battlefield. Then shuffle your library.

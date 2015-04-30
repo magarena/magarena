@@ -9,4 +9,4 @@ pt=1/1
 ability={B},{T}:Target creature gets -1/-1 until end of turn.;\
         {3}{B}{B}, {T}: Target creature gets -2/-2 until end of turn. Activate this ability only if seven or more cards are in your graveyard.
 timing=main
-oracle={B}, {T}: Target creature gets -1/-1 until end of turn. Threshold — {3}{B}{B}, {T}: Target creature gets -2/-2 until end of turn. Activate this ability only if seven or more cards are in your graveyard.
+oracle={B}, {T}: Target creature gets -1/-1 until end of turn.\nThreshold — {3}{B}{B}, {T}: Target creature gets -2/-2 until end of turn. Activate this ability only if seven or more cards are in your graveyard.

@@ -9,4 +9,4 @@ pt=2/2
 ability={2}{U}: Copy target instant spell you control with converted mana cost 2 or less. You may choose new targets for the copy.;\
         {2}{R}: Copy target sorcery spell you control with converted mana cost 2 or less. You may choose new targets for the copy.
 timing=main
-oracle={2}{U}: Copy target instant spell you control with converted mana cost 2 or less. You may choose new targets for the copy. {2}{R}: Copy target sorcery spell you control with converted mana cost 2 or less. You may choose new targets for the copy.
+oracle={2}{U}: Copy target instant spell you control with converted mana cost 2 or less. You may choose new targets for the copy.\n{2}{R}: Copy target sorcery spell you control with converted mana cost 2 or less. You may choose new targets for the copy.

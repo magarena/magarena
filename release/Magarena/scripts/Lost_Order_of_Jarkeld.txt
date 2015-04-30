@@ -9,4 +9,4 @@ pt=1+*/1+*
 ability=As SN enters the battlefield, choose an opponent.
 timing=main
 requires_groovy_code
-oracle=As Lost Order of Jarkeld enters the battlefield, choose an opponent. Lost Order of Jarkeld's power and toughness are each equal to 1 plus the number of creatures the chosen player controls.
+oracle=As Lost Order of Jarkeld enters the battlefield, choose an opponent.\nLost Order of Jarkeld's power and toughness are each equal to 1 plus the number of creatures the chosen player controls.

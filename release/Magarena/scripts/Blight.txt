@@ -8,4 +8,4 @@ cost={B}{B}
 ability=When enchanted land becomes tapped, destroy RN.
 enchant=destroy,neg land
 timing=removal
-oracle=Enchant land. When enchanted land becomes tapped, destroy it.
+oracle=Enchant land\nWhen enchanted land becomes tapped, destroy it.

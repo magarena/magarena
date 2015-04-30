@@ -12,4 +12,4 @@ ability=alt cost {4}{R/P}, Pay 2 life named Pay 2 life;\
         {R/P}: SN gets +1/+0 until end of turn.;\
         Pay 2 life: SN gets +1/+0 until end of turn.
 timing=main
-oracle=Flying. {R/P}: Moltensteel Dragon gets +1/+0 until end of turn.
+oracle=Flying\n{R/P}: Moltensteel Dragon gets +1/+0 until end of turn.

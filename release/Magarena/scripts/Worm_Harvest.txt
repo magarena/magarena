@@ -7,4 +7,4 @@ cost={2}{B/G}{B/G}{B/G}
 ability=Retrace
 timing=token
 requires_groovy_code
-oracle=Put a 1/1 black and green Worm creature token onto the battlefield for each land card in your graveyard. Retrace
+oracle=Put a 1/1 black and green Worm creature token onto the battlefield for each land card in your graveyard.\nRetrace

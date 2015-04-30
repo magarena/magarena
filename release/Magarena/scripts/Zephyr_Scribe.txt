@@ -9,4 +9,4 @@ pt=2/1
 ability={U}, {T}: Draw a card, then discard a card.;\
         Whenever you cast a noncreature spell, untap SN.
 timing=main
-oracle={U}, {T}: Draw a card, then discard a card. Whenever you cast a noncreature spell, untap Zephyr Scribe.
+oracle={U}, {T}: Draw a card, then discard a card.\nWhenever you cast a noncreature spell, untap Zephyr Scribe.

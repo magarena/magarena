@@ -6,4 +6,4 @@ type=Enchantment
 cost={2}{W}{U}
 ability=cascade;Sacrifice SN:Creatures you control gain flying until end of turn.
 timing=enchantment
-oracle=Sacrifice Stormcaller's Boon: Creatures you control gain flying until end of turn. Cascade
+oracle=Sacrifice Stormcaller's Boon: Creatures you control gain flying until end of turn.\nCascade

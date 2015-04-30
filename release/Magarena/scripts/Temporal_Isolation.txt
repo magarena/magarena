@@ -14,4 +14,4 @@ timing=flash
 # from doing any damage.
 enchant=can't attack or block,neg creature
 requires_groovy_code
-oracle=Flash. Enchant creature. Enchanted creature has shadow. Prevent all damage that would be dealt by enchanted creature.
+oracle=Flash\nEnchant creature\nEnchanted creature has shadow.\nPrevent all damage that would be dealt by enchanted creature.

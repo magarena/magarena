@@ -9,4 +9,4 @@ pt=1/1
 ability=hexproof;\
         SN can't be blocked except by creatures with flying.
 timing=fmain
-oracle=Hexproof. Silhana Ledgewalker can't be blocked except by creatures with flying.
+oracle=Hexproof\nSilhana Ledgewalker can't be blocked except by creatures with flying.

@@ -8,4 +8,4 @@ cost={3}{U}{U}
 pt=2/2
 ability=flying;Whenever SN becomes untapped, draw a card.
 timing=main
-oracle=Flying. Inspired — Whenever Sphinx's Disciple becomes untapped, draw a card.
+oracle=Flying\nInspired — Whenever Sphinx's Disciple becomes untapped, draw a card.

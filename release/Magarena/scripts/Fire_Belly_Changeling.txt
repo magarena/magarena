@@ -9,4 +9,4 @@ pt=1/1
 ability=Changeling;\
         {R}: SN gets +1/+0 until end of turn. Activate this ability no more than twice each turn.
 timing=main
-oracle=Changeling. {R}: Fire-Belly Changeling gets +1/+0 until end of turn. Activate this ability no more than twice each turn.
+oracle=Changeling\n{R}: Fire-Belly Changeling gets +1/+0 until end of turn. Activate this ability no more than twice each turn.

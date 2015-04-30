@@ -9,4 +9,4 @@ pt=3/4
 ability=Reach
 timing=main
 requires_groovy_code
-oracle=Reach. Whenever Harbor Guardian attacks, defending player may draw a card.
+oracle=Reach\nWhenever Harbor Guardian attacks, defending player may draw a card.

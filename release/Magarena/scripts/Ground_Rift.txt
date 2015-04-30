@@ -7,4 +7,4 @@ cost={R}
 effect=Target creature without flying can't block this turn.
 ability=storm
 timing=fmain
-oracle=Target creature without flying can't block this turn. Storm
+oracle=Target creature without flying can't block this turn.\nStorm

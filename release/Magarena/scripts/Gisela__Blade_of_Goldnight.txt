@@ -9,4 +9,4 @@ ability=flying;first strike
 pt=5/5
 timing=main
 requires_groovy_code
-oracle=Flying, first strike. If a source would deal damage to an opponent or a permanent an opponent controls, that source deals double that damage to that player or permanent instead. If a source would deal damage to you or a permanent you control, prevent half that damage, rounded up.
+oracle=Flying, first strike\nIf a source would deal damage to an opponent or a permanent an opponent controls, that source deals double that damage to that player or permanent instead.\nIf a source would deal damage to you or a permanent you control, prevent half that damage, rounded up.

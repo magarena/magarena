@@ -7,4 +7,4 @@ cost={3}{U}{U}
 effect=Counter target spell.
 ability=Flashback {5}{U}{U}
 timing=counter
-oracle=Counter target spell. Flashback {5}{U}{U}
+oracle=Counter target spell.\nFlashback {5}{U}{U}

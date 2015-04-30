@@ -9,4 +9,4 @@ pt=6/5
 ability=flying;\
         When SN enters the battlefield, you lose 5 life.
 timing=main
-oracle=Flying. When Dread Reaper enters the battlefield, you lose 5 life.
+oracle=Flying\nWhen Dread Reaper enters the battlefield, you lose 5 life.

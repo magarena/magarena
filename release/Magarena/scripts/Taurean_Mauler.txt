@@ -9,4 +9,4 @@ pt=2/2
 ability=changeling;\
         Whenever an opponent casts a spell, you may put a +1/+1 counter on SN.
 timing=fmain
-oracle=Changeling. Whenever an opponent casts a spell, you may put a +1/+1 counter on Taurean Mauler.
+oracle=Changeling\nWhenever an opponent casts a spell, you may put a +1/+1 counter on Taurean Mauler.

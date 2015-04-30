@@ -9,4 +9,4 @@ pt=3/4
 ability=Flying;\
         At the beginning of your upkeep, return an enchantment you control to its owner's hand.
 timing=main
-oracle=Flying. At the beginning of your upkeep, return an enchantment you control to its owner's hand.
+oracle=Flying\nAt the beginning of your upkeep, return an enchantment you control to its owner's hand.

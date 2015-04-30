@@ -6,4 +6,4 @@ type=Instant
 cost={1}{W}
 effect=Tap target creature.~Draw a card.
 timing=tapping
-oracle=Tap target creature. Draw a card.
+oracle=Tap target creature.\nDraw a card.

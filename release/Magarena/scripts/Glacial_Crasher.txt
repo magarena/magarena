@@ -9,4 +9,4 @@ pt=5/5
 ability=Trample;\
         SN can't attack unless there is a Mountain on the battlefield.
 timing=main
-oracle=Trample. Glacial Crasher can't attack unless there is a Mountain on the battlefield.
+oracle=Trample\nGlacial Crasher can't attack unless there is a Mountain on the battlefield.

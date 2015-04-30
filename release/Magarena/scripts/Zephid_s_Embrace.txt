@@ -8,4 +8,4 @@ cost={2}{U}{U}
 ability=Enchanted creature gets +2/+2 and has flying and shroud.
 timing=aura
 enchant=pump,pos creature
-oracle=Enchant creature. Enchanted creature gets +2/+2 and has flying and shroud.
+oracle=Enchant creature\nEnchanted creature gets +2/+2 and has flying and shroud.

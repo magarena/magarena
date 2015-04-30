@@ -7,4 +7,4 @@ cost={1}{W}
 ability=Other enchantments you control have shroud.;\
         Enchanted creatures you control have shroud.
 timing=enchantment
-oracle=Other enchantments you control have shroud. Enchanted creatures you control have shroud.
+oracle=Other enchantments you control have shroud.\nEnchanted creatures you control have shroud.

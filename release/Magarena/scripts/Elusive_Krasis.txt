@@ -9,4 +9,4 @@ pt=0/4
 ability=SN can't be blocked.;\
         evolve
 timing=main
-oracle=Elusive Krasis can't be blocked. Evolve
+oracle=Elusive Krasis can't be blocked.\nEvolve

@@ -9,4 +9,4 @@ pt=2/4
 ability=flying;\
         {U}{U}{U}: Regenerate SN.
 timing=main
-oracle=Flying. {U}{U}{U}: Regenerate Ghost Ship.
+oracle=Flying\n{U}{U}{U}: Regenerate Ghost Ship.

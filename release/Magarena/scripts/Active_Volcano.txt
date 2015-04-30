@@ -6,4 +6,4 @@ type=Instant
 cost={R}
 effect=Choose one — (1) Destroy target blue permanent. (2) Return target Island to its owner's hand.
 timing=removal
-oracle=Choose one — • Destroy target blue permanent. • Return target Island to its owner's hand.
+oracle=Choose one —\n• Destroy target blue permanent.\n• Return target Island to its owner's hand.

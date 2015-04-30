@@ -9,4 +9,4 @@ pt=1/4
 ability=Whenever SN attacks, SN gets +1/-2 until end of turn.;\
         {1}{R}{R},{T}: Target creature gains mountainwalk until end of turn.
 timing=main
-oracle=Whenever Cave People attacks, it gets +1/-2 until end of turn. {1}{R}{R}, {T}: Target creature gains mountainwalk until end of turn.
+oracle=Whenever Cave People attacks, it gets +1/-2 until end of turn.\n{1}{R}{R}, {T}: Target creature gains mountainwalk until end of turn.

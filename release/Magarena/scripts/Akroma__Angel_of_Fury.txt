@@ -11,4 +11,4 @@ ability=SN can't be countered.;\
         {R}: SN gets +1/+0 until end of turn.;\
         Morph {3}{R}{R}{R}
 timing=main
-oracle=Akroma, Angel of Fury can't be countered. Flying, trample, protection from white and from blue. {R}: Akroma, Angel of Fury gets +1/+0 until end of turn. Morph {3}{R}{R}{R}
+oracle=Akroma, Angel of Fury can't be countered.\nFlying, trample, protection from white and from blue\n{R}: Akroma, Angel of Fury gets +1/+0 until end of turn.\nMorph {3}{R}{R}{R}

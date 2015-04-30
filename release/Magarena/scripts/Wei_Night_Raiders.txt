@@ -9,4 +9,4 @@ pt=2/2
 ability=horsemanship;\
         Whenever SN deals damage to an opponent, that opponent discards a card.
 timing=main
-oracle=Horsemanship. Whenever Wei Night Raiders deals damage to an opponent, that player discards a card.
+oracle=Horsemanship\nWhenever Wei Night Raiders deals damage to an opponent, that player discards a card.

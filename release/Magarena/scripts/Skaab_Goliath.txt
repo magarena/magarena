@@ -9,4 +9,4 @@ pt=6/9
 ability=As an additional cost to cast SN, exile two creature cards from your graveyard.;\
         Trample
 timing=main
-oracle=As an additional cost to cast Skaab Goliath, exile two creature cards from your graveyard. Trample
+oracle=As an additional cost to cast Skaab Goliath, exile two creature cards from your graveyard.\nTrample

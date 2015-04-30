@@ -10,4 +10,4 @@ ability=Defender;\
         Whenever you gain life, put a +1/+1 counter on SN.
 timing=main
 requires_groovy_code
-oracle=Defender. Whenever you gain life, put a +1/+1 counter on Wall of Limbs. {5}{B}{B}, Sacrifice Wall of Limbs: Target player loses X life, where X is Wall of Limbs's power.
+oracle=Defender\nWhenever you gain life, put a +1/+1 counter on Wall of Limbs.\n{5}{B}{B}, Sacrifice Wall of Limbs: Target player loses X life, where X is Wall of Limbs's power.

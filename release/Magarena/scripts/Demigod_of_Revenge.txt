@@ -9,4 +9,4 @@ pt=5/4
 ability=flying;haste
 timing=fmain
 requires_groovy_code
-oracle=Flying, haste. When you cast Demigod of Revenge, return all cards named Demigod of Revenge from your graveyard to the battlefield.
+oracle=Flying, haste\nWhen you cast Demigod of Revenge, return all cards named Demigod of Revenge from your graveyard to the battlefield.

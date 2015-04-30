@@ -9,4 +9,4 @@ pt=4/1
 ability=SN can't attack unless defending player controls an Island.
 timing=main
 requires_groovy_code=Sea Serpent
-oracle=Dandân can't attack unless defending player controls an Island. When you control no Islands, sacrifice Dandân.
+oracle=Dandân can't attack unless defending player controls an Island.\nWhen you control no Islands, sacrifice Dandân.

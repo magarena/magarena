@@ -9,4 +9,4 @@ pt=2/2
 ability=Whenever SN deals combat damage to a player, put a +1/+1 counter on SN.;\
         Whenever another creature dies, put a +1/+1 counter on SN.
 timing=main
-oracle=Whenever Havengul Vampire deals combat damage to a player, put a +1/+1 counter on it. Whenever another creature dies, put a +1/+1 counter on Havengul Vampire.
+oracle=Whenever Havengul Vampire deals combat damage to a player, put a +1/+1 counter on it.\nWhenever another creature dies, put a +1/+1 counter on Havengul Vampire.

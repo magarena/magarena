@@ -9,4 +9,4 @@ pt=1/4
 ability=flash;\
         When SN enters the battlefield, untap all creatures you control.
 timing=main
-oracle=Flash. When Village Bell-Ringer enters the battlefield, untap all creatures you control.
+oracle=Flash\nWhen Village Bell-Ringer enters the battlefield, untap all creatures you control.

@@ -9,4 +9,4 @@ pt=2/2
 ability=Minion creatures get +1/+1.
 timing=main
 requires_groovy_code
-oracle=Minion creatures get +1/+1. {B}{B}{B}, Exile Balthor the Defiled: Each player returns all black and all red creature cards from his or her graveyard to the battlefield.
+oracle=Minion creatures get +1/+1.\n{B}{B}{B}, Exile Balthor the Defiled: Each player returns all black and all red creature cards from his or her graveyard to the battlefield.

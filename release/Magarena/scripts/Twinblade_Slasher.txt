@@ -9,4 +9,4 @@ pt=1/1
 ability=wither;\
         {1}{G}: SN gets +2/+2 until end of turn. Activate this ability only once each turn.
 timing=main
-oracle=Wither. {1}{G}: Twinblade Slasher gets +2/+2 until end of turn. Activate this ability only once each turn.
+oracle=Wither\n{1}{G}: Twinblade Slasher gets +2/+2 until end of turn. Activate this ability only once each turn.

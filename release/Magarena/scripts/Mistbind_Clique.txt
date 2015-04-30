@@ -10,4 +10,4 @@ pt=4/4
 ability=flash;flying;champion Faerie
 timing=main
 requires_groovy_code
-oracle=Flash. Flying. Champion a Faerie. When a Faerie is championed with Mistbind Clique, tap all lands target player controls.
+oracle=Flash\nFlying\nChampion a Faerie\nWhen a Faerie is championed with Mistbind Clique, tap all lands target player controls.

@@ -8,4 +8,4 @@ cost={2}{R}{R}
 pt=2/2
 ability=flying;{R},{T}:SN deals 1 damage to target attacking or blocking creature.
 timing=main
-oracle=Flying. {R}, {T}: Crimson Manticore deals 1 damage to target attacking or blocking creature.
+oracle=Flying\n{R}, {T}: Crimson Manticore deals 1 damage to target attacking or blocking creature.

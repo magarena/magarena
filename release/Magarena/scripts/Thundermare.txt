@@ -9,4 +9,4 @@ pt=5/5
 ability=haste;\
         When SN enters the battlefield, tap all other creatures.
 timing=fmain
-oracle=Haste. When Thundermare enters the battlefield, tap all other creatures.
+oracle=Haste\nWhen Thundermare enters the battlefield, tap all other creatures.

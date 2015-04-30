@@ -9,4 +9,4 @@ pt=2/2
 ability=SN gets +1/+1 as long as you control a Mountain.;\
         {R}: SN gains haste until end of turn.
 timing=main
-oracle=Flinthoof Boar gets +1/+1 as long as you control a Mountain. {R}: Flinthoof Boar gains haste until end of turn.
+oracle=Flinthoof Boar gets +1/+1 as long as you control a Mountain.\n{R}: Flinthoof Boar gains haste until end of turn.

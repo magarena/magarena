@@ -10,4 +10,4 @@ ability=Defender;\
         {4}: SN loses defender until end of turn.;\
         {T}: Untap target permanent. Activate this ability with AI no more than three times each turn.
 timing=main
-oracle=Defender. {4}: Tidewater Minion loses defender until end of turn. {T}: Untap target permanent.
+oracle=Defender\n{4}: Tidewater Minion loses defender until end of turn.\n{T}: Untap target permanent.

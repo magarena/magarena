@@ -9,4 +9,4 @@ ability=When SN enters the battlefield, draw a card.
 timing=main
 enchant=default,land
 requires_groovy_code=Sea's Claim
-oracle=Enchant land. When Spreading Seas enters the battlefield, draw a card. Enchanted land is an Island.
+oracle=Enchant land\nWhen Spreading Seas enters the battlefield, draw a card.\nEnchanted land is an Island.

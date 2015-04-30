@@ -9,4 +9,4 @@ ability=When SN enters the battlefield, draw a card.;\
         Enchanted creature has intimidate.
 timing=aura
 enchant=unblockable,pos creature
-oracle=Enchant creature. When Grisly Transformation enters the battlefield, draw a card. Enchanted creature has intimidate.
+oracle=Enchant creature\nWhen Grisly Transformation enters the battlefield, draw a card.\nEnchanted creature has intimidate.

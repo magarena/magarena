@@ -6,4 +6,4 @@ type=Instant
 cost={1}{U}
 timing=counter
 requires_groovy_code
-oracle=Counter target spell unless its controller exiles all cards from his or her graveyard. Draw a card.
+oracle=Counter target spell unless its controller exiles all cards from his or her graveyard.\nDraw a card.

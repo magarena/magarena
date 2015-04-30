@@ -9,4 +9,4 @@ pt=2/2
 ability=When SN enters the battlefield, you may search your library for a basic land card and put it onto the battlefield tapped. Then shuffle your library.;\
         When SN dies, you may draw a card.
 timing=main
-oracle=When Solemn Simulacrum enters the battlefield, you may search your library for a basic land card, put that card onto the battlefield tapped, then shuffle your library. When Solemn Simulacrum dies, you may draw a card.
+oracle=When Solemn Simulacrum enters the battlefield, you may search your library for a basic land card, put that card onto the battlefield tapped, then shuffle your library.\nWhen Solemn Simulacrum dies, you may draw a card.

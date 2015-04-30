@@ -10,4 +10,4 @@ ability=SN can't be countered.;\
         haste;\
         SN can't be the target of nongreen spells or abilities from nongreen sources.
 timing=fmain
-oracle=Gaea's Revenge can't be countered. Haste. Gaea's Revenge can't be the target of nongreen spells or abilities from nongreen sources.
+oracle=Gaea's Revenge can't be countered.\nHaste\nGaea's Revenge can't be the target of nongreen spells or abilities from nongreen sources.

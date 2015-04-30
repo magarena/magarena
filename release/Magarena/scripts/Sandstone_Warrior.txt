@@ -8,4 +8,4 @@ cost={2}{R}{R}
 pt=1/3
 ability=first strike;{R}: SN gets +1/+0 until end of turn.
 timing=main
-oracle=First strike. {R}: Sandstone Warrior gets +1/+0 until end of turn.
+oracle=First strike\n{R}: Sandstone Warrior gets +1/+0 until end of turn.

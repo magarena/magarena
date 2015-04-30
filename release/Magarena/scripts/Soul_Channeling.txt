@@ -8,4 +8,4 @@ cost={2}{B}
 ability=Pay 2 life: Regenerate enchanted creature.
 enchant=pump,pos creature
 timing=aura
-oracle=Enchant creature. Pay 2 life: Regenerate enchanted creature.
+oracle=Enchant creature\nPay 2 life: Regenerate enchanted creature.

@@ -9,4 +9,4 @@ pt=1/2
 ability=Protection from Beasts;\
         Morph {2}{U}
 timing=main
-oracle=Protection from Beasts. Morph {2}{U}
+oracle=Protection from Beasts\nMorph {2}{U}

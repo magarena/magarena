@@ -10,4 +10,4 @@ ability=Bestow {4}{U};\
         Flying;\
         Enchanted creature gets +2/+2 and has flying.
 timing=main
-oracle=Bestow {4}{U}. Flying. Enchanted creature gets +2/+2 and has flying.
+oracle=Bestow {4}{U}\nFlying\nEnchanted creature gets +2/+2 and has flying.

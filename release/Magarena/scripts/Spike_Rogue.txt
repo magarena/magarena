@@ -10,4 +10,4 @@ ability=SN enters the battlefield with two +1/+1 counters on it.;\
         {2}, Remove a +1/+1 counter from SN: Put a +1/+1 counter on target creature.;\
         {2}, Remove a +1/+1 counter from a creature you control: Put a +1/+1 counter on SN.
 timing=main
-oracle=Spike Rogue enters the battlefield with two +1/+1 counters on it. {2}, Remove a +1/+1 counter from Spike Rogue: Put a +1/+1 counter on target creature. {2}, Remove a +1/+1 counter from a creature you control: Put a +1/+1 counter on Spike Rogue.
+oracle=Spike Rogue enters the battlefield with two +1/+1 counters on it.\n{2}, Remove a +1/+1 counter from Spike Rogue: Put a +1/+1 counter on target creature.\n{2}, Remove a +1/+1 counter from a creature you control: Put a +1/+1 counter on Spike Rogue.

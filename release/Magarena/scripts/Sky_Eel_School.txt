@@ -9,4 +9,4 @@ pt=3/3
 ability=flying;\
         When SN enters the battlefield, draw a card, then discards a card.
 timing=main
-oracle=Flying. When Sky-Eel School enters the battlefield, draw a card, then discard a card.
+oracle=Flying\nWhen Sky-Eel School enters the battlefield, draw a card, then discard a card.

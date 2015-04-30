@@ -7,4 +7,4 @@ cost={B}
 effect=Target opponent loses 3 life.
 ability=Flashback {5}{R}
 timing=main
-oracle=Target opponent loses 3 life. Flashback {5}{R}
+oracle=Target opponent loses 3 life.\nFlashback {5}{R}

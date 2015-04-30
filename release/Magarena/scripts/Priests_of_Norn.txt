@@ -8,4 +8,4 @@ subtype=Cleric
 cost={2}{W}
 pt=1/4
 timing=main
-oracle=Vigilance. Infect
+oracle=Vigilance\nInfect

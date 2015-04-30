@@ -9,4 +9,4 @@ pt=0/13
 ability=defender
 timing=main
 requires_groovy_code
-oracle=Defender. {T}: Exchange your life total with Tree of Redemption's toughness.
+oracle=Defender\n{T}: Exchange your life total with Tree of Redemption's toughness.

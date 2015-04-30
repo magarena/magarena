@@ -9,4 +9,4 @@ pt=4/4
 ability=When SN enters the battlefield, you gain 4 life.;\
         If a spell or ability an opponent controls causes you to discard SN, put it onto the battlefield instead of putting it into your graveyard.
 timing=main
-oracle=When Obstinate Baloth enters the battlefield, you gain 4 life. If a spell or ability an opponent controls causes you to discard Obstinate Baloth, put it onto the battlefield instead of putting it into your graveyard.
+oracle=When Obstinate Baloth enters the battlefield, you gain 4 life.\nIf a spell or ability an opponent controls causes you to discard Obstinate Baloth, put it onto the battlefield instead of putting it into your graveyard.

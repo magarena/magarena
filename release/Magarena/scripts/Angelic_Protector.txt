@@ -9,4 +9,4 @@ pt=2/2
 ability=Flying;\
         Whenever SN becomes the target of a spell or ability, SN gets +0/+3 until end of turn.
 timing=main
-oracle=Flying. Whenever Angelic Protector becomes the target of a spell or ability, Angelic Protector gets +0/+3 until end of turn.
+oracle=Flying\nWhenever Angelic Protector becomes the target of a spell or ability, Angelic Protector gets +0/+3 until end of turn.

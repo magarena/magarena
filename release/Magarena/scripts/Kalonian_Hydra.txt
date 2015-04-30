@@ -10,4 +10,4 @@ ability=trample;\
         SN enters the battlefield with four +1/+1 counters on it.
 timing=main
 requires_groovy_code
-oracle=Trample. Kalonian Hydra enters the battlefield with four +1/+1 counters on it. Whenever Kalonian Hydra attacks, double the number of +1/+1 counters on each creature you control.
+oracle=Trample\nKalonian Hydra enters the battlefield with four +1/+1 counters on it.\nWhenever Kalonian Hydra attacks, double the number of +1/+1 counters on each creature you control.

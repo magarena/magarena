@@ -9,4 +9,4 @@ pt=*/*
 ability=Flying;\
         SN's power and toughness are each equal to the number of blue permanents you control.
 timing=main
-oracle=Flying. Faerie Swarm's power and toughness are each equal to the number of blue permanents you control.
+oracle=Flying\nFaerie Swarm's power and toughness are each equal to the number of blue permanents you control.

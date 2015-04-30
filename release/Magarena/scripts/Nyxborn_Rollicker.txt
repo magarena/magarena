@@ -9,4 +9,4 @@ pt=1/1
 ability=Bestow {1}{R};\
         Enchanted creature gets +1/+1.
 timing=main
-oracle=Bestow {1}{R}. Enchanted creature gets +1/+1.
+oracle=Bestow {1}{R}\nEnchanted creature gets +1/+1.

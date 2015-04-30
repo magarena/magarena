@@ -9,4 +9,4 @@ pt=2/2
 ability=Islandwalk;\
         {1}{W}: Target Merfolk you control gains protection from the color of your choice until end of turn.
 timing=main
-oracle=Islandwalk. {1}{W}: Target Merfolk you control gains protection from the color of your choice until end of turn.
+oracle=Islandwalk\n{1}{W}: Target Merfolk you control gains protection from the color of your choice until end of turn.

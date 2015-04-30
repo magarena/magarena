@@ -9,4 +9,4 @@ pt=1/1
 ability=Morph {W};\
         When SN is turned face up, regenerate target creature.
 timing=main
-oracle=Morph {W}. When Daru Mender is turned face up, regenerate target creature.
+oracle=Morph {W}\nWhen Daru Mender is turned face up, regenerate target creature.

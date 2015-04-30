@@ -7,4 +7,4 @@ cost={1}
 ability={R},Sacrifice SN: SN deals 2 damage to target creature or player.;\
         {1},Sacrifice SN: Draw a card.
 timing=artifact
-oracle={R}, Sacrifice Pyrite Spellbomb: Pyrite Spellbomb deals 2 damage to target creature or player. {1}, Sacrifice Pyrite Spellbomb: Draw a card.
+oracle={R}, Sacrifice Pyrite Spellbomb: Pyrite Spellbomb deals 2 damage to target creature or player.\n{1}, Sacrifice Pyrite Spellbomb: Draw a card.

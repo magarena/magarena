@@ -8,4 +8,4 @@ cost={B}
 ability=Enchanted creature gets +2/+1 and has "{R}: SN gains trample until end of turn."
 timing=enchantment
 enchant=pump,pos creature
-oracle=Enchant creature. Enchanted creature gets +2/+1 and has "{R}: This creature gains trample until end of turn."
+oracle=Enchant creature\nEnchanted creature gets +2/+1 and has "{R}: This creature gains trample until end of turn."

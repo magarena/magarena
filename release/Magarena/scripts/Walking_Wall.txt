@@ -9,4 +9,4 @@ pt=0/6
 ability=Defender.;\
         {3}: SN gets +3/-1 until end of turn.~SN can attack as though it didn't have defender this turn. Activate this ability only once each turn.
 timing=main
-oracle=Defender. {3}: Walking Wall gets +3/-1 until end of turn and can attack this turn as though it didn't have defender. Activate this ability only once each turn.
+oracle=Defender\n{3}: Walking Wall gets +3/-1 until end of turn and can attack this turn as though it didn't have defender. Activate this ability only once each turn.

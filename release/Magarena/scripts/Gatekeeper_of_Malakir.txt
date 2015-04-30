@@ -9,4 +9,4 @@ ability=kicker {B};\
         When SN enters the battlefield, if it was kicked, target player sacrifices a creature.
 pt=2/2
 timing=fmain
-oracle=Kicker {B}. When Gatekeeper of Malakir enters the battlefield, if it was kicked, target player sacrifices a creature.
+oracle=Kicker {B}\nWhen Gatekeeper of Malakir enters the battlefield, if it was kicked, target player sacrifices a creature.

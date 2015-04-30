@@ -9,4 +9,4 @@ pt=2/2
 ability=Hexproof;\
         Dethrone
 timing=main
-oracle=Hexproof. Dethrone
+oracle=Hexproof\nDethrone

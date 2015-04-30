@@ -9,4 +9,4 @@ pt=3/4
 ability={T}: Draw three cards.;\
         {2}{U}{U}: Return SN to its owner's hand.
 timing=main
-oracle={T}: Draw three cards. {2}{U}{U}: Return Arcanis the Omnipotent to its owner's hand.
+oracle={T}: Draw three cards.\n{2}{U}{U}: Return Arcanis the Omnipotent to its owner's hand.

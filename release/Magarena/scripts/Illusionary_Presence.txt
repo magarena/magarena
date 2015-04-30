@@ -9,4 +9,4 @@ pt=2/2
 ability=Cumulative upkeep {U}
 timing=main
 requires_groovy_code
-oracle=Cumulative upkeep {U}. At the beginning of your upkeep, choose a land type. Illusionary Presence gains landwalk of the chosen type until end of turn.
+oracle=Cumulative upkeep {U}\nAt the beginning of your upkeep, choose a land type. Illusionary Presence gains landwalk of the chosen type until end of turn.

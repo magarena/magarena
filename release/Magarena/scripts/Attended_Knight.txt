@@ -9,4 +9,4 @@ ability=first strike;\
         When SN enters the battlefield, put a 1/1 white Soldier creature token onto the battlefield.
 pt=2/2
 timing=main
-oracle=First strike. When Attended Knight enters the battlefield, put a 1/1 white Soldier creature token onto the battlefield.
+oracle=First strike\nWhen Attended Knight enters the battlefield, put a 1/1 white Soldier creature token onto the battlefield.

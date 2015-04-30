@@ -10,4 +10,4 @@ ability=Flying;\
         SN gets +1/+1 as long as you control a Plains.;\
         {W}: SN gains lifelink until end of turn.
 timing=main
-oracle=Flying. Arctic Aven gets +1/+1 as long as you control a Plains. {W}: Arctic Aven gains lifelink until end of turn.
+oracle=Flying\nArctic Aven gets +1/+1 as long as you control a Plains.\n{W}: Arctic Aven gains lifelink until end of turn.

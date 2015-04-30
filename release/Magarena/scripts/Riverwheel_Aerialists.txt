@@ -9,4 +9,4 @@ pt=4/5
 ability=Flying;\
         Prowess
 timing=main
-oracle=Flying. Prowess
+oracle=Flying\nProwess

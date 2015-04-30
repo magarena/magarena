@@ -9,4 +9,4 @@ pt=1/2
 ability=Haste;\
         Prowess
 timing=main
-oracle=Haste. Prowess
+oracle=Haste\nProwess

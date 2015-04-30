@@ -9,4 +9,4 @@ pt=3/3
 ability=When SN enters the battlefield, other creatures you control gain "{T}: This creature deals 2 damage to target creature or player" until end of turn.;\
         Persist
 timing=main
-oracle=When Furystoke Giant enters the battlefield, other creatures you control gain "{T}: This creature deals 2 damage to target creature or player" until end of turn. Persist
+oracle=When Furystoke Giant enters the battlefield, other creatures you control gain "{T}: This creature deals 2 damage to target creature or player" until end of turn.\nPersist

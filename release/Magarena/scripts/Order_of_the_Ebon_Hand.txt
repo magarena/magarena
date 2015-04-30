@@ -10,4 +10,4 @@ ability=protection from white;\
         {B}: SN gains first strike until end of turn.;\
         {B}{B}: SN gets +1/+0 until end of turn.
 timing=main
-oracle=Protection from white. {B}: Order of the Ebon Hand gains first strike until end of turn. {B}{B}: Order of the Ebon Hand gets +1/+0 until end of turn.
+oracle=Protection from white\n{B}: Order of the Ebon Hand gains first strike until end of turn.\n{B}{B}: Order of the Ebon Hand gets +1/+0 until end of turn.

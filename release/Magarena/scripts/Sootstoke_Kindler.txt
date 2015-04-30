@@ -9,4 +9,4 @@ pt=1/1
 ability=Haste;\
         {T}: Target black or red creature gains haste until end of turn.
 timing=main
-oracle=Haste. {T}: Target black or red creature gains haste until end of turn.
+oracle=Haste\n{T}: Target black or red creature gains haste until end of turn.

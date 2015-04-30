@@ -9,4 +9,4 @@ pt=0/4
 ability=Defender.;\
         Whenever a creature you control with defender blocks, you may gain 2 life.
 timing=smain
-oracle=Defender. Whenever a creature you control with defender blocks, you may gain 2 life.
+oracle=Defender\nWhenever a creature you control with defender blocks, you may gain 2 life.

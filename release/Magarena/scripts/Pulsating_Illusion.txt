@@ -8,4 +8,4 @@ cost={4}{U}
 pt=0/1
 ability=Flying;Discard a card: SN gets +4/+4 until end of turn. Activate this ability only once each turn.
 timing=main
-oracle=Flying. Discard a card: Pulsating Illusion gets +4/+4 until end of turn. Activate this ability only once each turn.
+oracle=Flying\nDiscard a card: Pulsating Illusion gets +4/+4 until end of turn. Activate this ability only once each turn.

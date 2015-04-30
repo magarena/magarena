@@ -9,4 +9,4 @@ pt=1/3
 ability=defender;flying
 timing=smain
 requires_groovy_code
-oracle=Defender, flying. Prevent all combat damage that would be dealt to Guard Gomazoa.
+oracle=Defender, flying\nPrevent all combat damage that would be dealt to Guard Gomazoa.

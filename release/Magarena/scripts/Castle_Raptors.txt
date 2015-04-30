@@ -9,4 +9,4 @@ pt=3/3
 ability=Flying;\
         As long as SN is untapped, it gets +0/+2.
 timing=main
-oracle=Flying. As long as Castle Raptors is untapped, it gets +0/+2.
+oracle=Flying\nAs long as Castle Raptors is untapped, it gets +0/+2.

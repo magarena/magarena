@@ -9,4 +9,4 @@ pt=2/2
 ability=bushido 1
 timing=main
 requires_groovy_code
-oracle=Bushido 1. If a permanent would be put into a graveyard, exile it instead.
+oracle=Bushido 1\nIf a permanent would be put into a graveyard, exile it instead.

@@ -9,4 +9,4 @@ pt=1/1
 ability=flying;\
         Sacrifice SN: Counter target spell unless its controller pays {1}.
 timing=main
-oracle=Flying. Sacrifice Spiketail Hatchling: Counter target spell unless its controller pays {1}.
+oracle=Flying\nSacrifice Spiketail Hatchling: Counter target spell unless its controller pays {1}.

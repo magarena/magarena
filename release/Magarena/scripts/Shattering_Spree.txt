@@ -8,4 +8,4 @@ cost={R}
 ability=replicate {R}
 effect=Destroy target artifact.
 timing=removal
-oracle=Replicate {R}. Destroy target artifact.
+oracle=Replicate {R}\nDestroy target artifact.

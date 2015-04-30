@@ -9,4 +9,4 @@ pt=0/2
 ability=Flying;\
         {2}: SN gets +1/+0 until end of turn. Activate this ability no more than twice each turn.
 timing=main
-oracle=Flying. {2}: Roterothopter gets +1/+0 until end of turn. Activate this ability no more than twice each turn.
+oracle=Flying\n{2}: Roterothopter gets +1/+0 until end of turn. Activate this ability no more than twice each turn.

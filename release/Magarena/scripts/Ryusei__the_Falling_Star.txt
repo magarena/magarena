@@ -9,4 +9,4 @@ pt=5/5
 ability=Flying;\
         When SN dies, SN deals 5 damage to each creature without flying.
 timing=main
-oracle=Flying. When Ryusei, the Falling Star dies, it deals 5 damage to each creature without flying.
+oracle=Flying\nWhen Ryusei, the Falling Star dies, it deals 5 damage to each creature without flying.

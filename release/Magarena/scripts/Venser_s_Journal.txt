@@ -6,4 +6,4 @@ type=Artifact
 cost={5}
 timing=artifact
 requires_groovy_code=Spellbook;Venser's Journal
-oracle=You have no maximum hand size. At the beginning of your upkeep, you gain 1 life for each card in your hand.
+oracle=You have no maximum hand size.\nAt the beginning of your upkeep, you gain 1 life for each card in your hand.

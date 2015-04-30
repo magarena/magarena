@@ -6,4 +6,4 @@ type=Instant
 cost={2}{U}
 effect=Counter target creature spell.~Draw a card.
 timing=counter
-oracle=Counter target creature spell. Draw a card.
+oracle=Counter target creature spell.\nDraw a card.

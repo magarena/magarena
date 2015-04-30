@@ -9,4 +9,4 @@ pt=2/2
 ability=Flying;\
         When SN enters the battlefield, target player discards two cards.
 timing=main
-oracle=Flying. When Abyssal Horror enters the battlefield, target player discards two cards.
+oracle=Flying\nWhen Abyssal Horror enters the battlefield, target player discards two cards.

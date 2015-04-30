@@ -7,4 +7,4 @@ cost={4}
 ability={3}: Exile target creature you control.
 timing=artifact
 requires_groovy_code
-oracle={3}: Exile target creature you control. Sacrifice Cold Storage: Return each creature card exiled with Cold Storage to the battlefield under your control.
+oracle={3}: Exile target creature you control.\nSacrifice Cold Storage: Return each creature card exiled with Cold Storage to the battlefield under your control.

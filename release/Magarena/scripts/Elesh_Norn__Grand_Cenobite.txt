@@ -11,4 +11,4 @@ ability=vigilance;\
         creatures your opponents control get -2/-2
 static=all
 timing=main
-oracle=Vigilance. Other creatures you control get +2/+2. Creatures your opponents control get -2/-2.
+oracle=Vigilance\nOther creatures you control get +2/+2.\nCreatures your opponents control get -2/-2.

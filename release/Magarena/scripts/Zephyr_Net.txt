@@ -8,4 +8,4 @@ cost={1}{U}
 ability=Enchanted creature has defender and flying.
 timing=aura
 enchant=defender,creature
-oracle=Enchant creature. Enchanted creature has defender and flying.
+oracle=Enchant creature\nEnchanted creature has defender and flying.

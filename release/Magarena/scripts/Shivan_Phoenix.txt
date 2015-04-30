@@ -9,4 +9,4 @@ pt=3/4
 ability=When SN dies, return SN from the graveyard to its owner's hand.;\
         flying
 timing=main
-oracle=Flying. When Shivan Phoenix dies, return Shivan Phoenix to its owner's hand.
+oracle=Flying\nWhen Shivan Phoenix dies, return Shivan Phoenix to its owner's hand.

@@ -9,4 +9,4 @@ pt=2/3
 ability=Flying;\
         When SN enters the battlefield, return a permanent you control to its owner's hand.
 timing=main
-oracle=Flying. When Kor Skyfisher enters the battlefield, return a permanent you control to its owner's hand.
+oracle=Flying\nWhen Kor Skyfisher enters the battlefield, return a permanent you control to its owner's hand.

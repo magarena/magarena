@@ -9,4 +9,4 @@ pt=1/3
 ability=horsemanship;\
         Whenever SN deals damage to an opponent, you may draw a card.
 timing=main
-oracle=Horsemanship. Whenever Lu Xun, Scholar General deals damage to an opponent, you may draw a card.
+oracle=Horsemanship\nWhenever Lu Xun, Scholar General deals damage to an opponent, you may draw a card.

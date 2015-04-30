@@ -9,4 +9,4 @@ pt=5/5
 ability=At the beginning of your upkeep, flip a coin. If you lose the flip, turn SN face down.;\
         Morph {5}{R}
 timing=main
-oracle=At the beginning of your upkeep, flip a coin. If you lose the flip, turn Skittish Valesk face down. Morph {5}{R}
+oracle=At the beginning of your upkeep, flip a coin. If you lose the flip, turn Skittish Valesk face down.\nMorph {5}{R}

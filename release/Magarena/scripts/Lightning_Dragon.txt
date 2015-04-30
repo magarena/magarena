@@ -8,4 +8,4 @@ cost={2}{R}{R}
 pt=4/4
 ability=flying;echo {2}{R}{R};{R}: SN gets +1/+0 until end of turn.
 timing=main
-oracle=Flying. Echo {2}{R}{R}. {R}: Lightning Dragon gets +1/+0 until end of turn.
+oracle=Flying\nEcho {2}{R}{R}\n{R}: Lightning Dragon gets +1/+0 until end of turn.

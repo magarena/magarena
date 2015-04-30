@@ -9,4 +9,4 @@ pt=3/2
 ability=Affinity for artifacts.;\
         Flying
 timing=main
-oracle=Affinity for artifacts. Flying
+oracle=Affinity for artifacts\nFlying

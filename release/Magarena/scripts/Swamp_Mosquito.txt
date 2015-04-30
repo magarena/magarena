@@ -9,4 +9,4 @@ pt=0/1
 ability=flying
 timing=main
 requires_groovy_code=Crypt Cobra
-oracle=Flying. Whenever Swamp Mosquito attacks and isn't blocked, defending player gets a poison counter.
+oracle=Flying\nWhenever Swamp Mosquito attacks and isn't blocked, defending player gets a poison counter.

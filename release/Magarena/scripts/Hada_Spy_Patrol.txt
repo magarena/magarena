@@ -9,4 +9,4 @@ pt=1/1
 ability=level up {2}{U} 3
 timing=main
 requires_groovy_code
-oracle=Level up {2}{U}. LEVEL 1-2. 2/2. Hada Spy Patrol can't be blocked. LEVEL 3+. 3/3. Shroud. Hada Spy Patrol can't be blocked.
+oracle=Level up {2}{U}\nLEVEL 1-2\n2/2\nHada Spy Patrol can't be blocked.\nLEVEL 3+\n3/3\nShroud\nHada Spy Patrol can't be blocked.

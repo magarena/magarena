@@ -9,4 +9,4 @@ pt=0/3
 ability=defender;\
         Whenever SN blocks, you gain 3 life.
 timing=main
-oracle=Defender. Whenever Pride Guardian blocks, you gain 3 life.
+oracle=Defender\nWhenever Pride Guardian blocks, you gain 3 life.

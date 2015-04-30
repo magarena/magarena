@@ -9,4 +9,4 @@ pt=2/1
 ability=Flying;\
         SN can't block.
 timing=main
-oracle=Flying. Aesthir Glider can't block.
+oracle=Flying\nAesthir Glider can't block.

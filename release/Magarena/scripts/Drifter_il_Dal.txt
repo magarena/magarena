@@ -9,4 +9,4 @@ pt=2/1
 ability=shadow;\
         At the beginning of your upkeep, you may pay {U}. If you don't, sacrifice SN.
 timing=main
-oracle=Shadow. At the beginning of your upkeep, sacrifice Drifter il-Dal unless you pay {U}.
+oracle=Shadow\nAt the beginning of your upkeep, sacrifice Drifter il-Dal unless you pay {U}.

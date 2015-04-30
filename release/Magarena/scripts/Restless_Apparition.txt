@@ -8,4 +8,4 @@ cost={W/B}{W/B}{W/B}
 pt=2/2
 ability=persist;{W/B}{W/B}{W/B}: SN gets +3/+3 until end of turn.
 timing=main
-oracle={W/B}{W/B}{W/B}: Restless Apparition gets +3/+3 until end of turn. Persist
+oracle={W/B}{W/B}{W/B}: Restless Apparition gets +3/+3 until end of turn.\nPersist

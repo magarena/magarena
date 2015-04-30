@@ -9,4 +9,4 @@ pt=2/3
 ability=Outlast {B};\
         Each creature you control with a +1/+1 counter on it has deathtouch.
 timing=main
-oracle=Outlast {B}. Each creature you control with a +1/+1 counter on it has deathtouch.
+oracle=Outlast {B}\nEach creature you control with a +1/+1 counter on it has deathtouch.

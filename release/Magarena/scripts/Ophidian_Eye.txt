@@ -9,4 +9,4 @@ ability=flash;\
         Whenever enchanted creature deals damage to an opponent, you may draw a card.
 timing=flash
 enchant=unblockable,pos creature
-oracle=Flash. Enchant creature. Whenever enchanted creature deals damage to an opponent, you may draw a card.
+oracle=Flash\nEnchant creature\nWhenever enchanted creature deals damage to an opponent, you may draw a card.

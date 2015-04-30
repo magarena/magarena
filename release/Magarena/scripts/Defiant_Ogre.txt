@@ -10,4 +10,4 @@ ability=When SN enters the battlefield, choose one — \
         (1) Put a +1/+1 counter on SN. \
         (2) Destroy target artifact.
 timing=main
-oracle=When Defiant Ogre enters the battlefield, choose one — • Put a +1/+1 counter on Defiant Ogre. • Destroy target artifact.
+oracle=When Defiant Ogre enters the battlefield, choose one —\n• Put a +1/+1 counter on Defiant Ogre.\n• Destroy target artifact.

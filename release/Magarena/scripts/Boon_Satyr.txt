@@ -10,4 +10,4 @@ ability=Bestow {3}{G}{G};\
         Flash;\
         Enchanted creature gets +4/+2.
 timing=pumpFlash
-oracle=Flash. Bestow {3}{G}{G}. Enchanted creature gets +4/+2.
+oracle=Flash\nBestow {3}{G}{G}\nEnchanted creature gets +4/+2.

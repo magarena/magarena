@@ -11,4 +11,4 @@ ability=Intimidate;\
 transform=Gatstaf Shepherd
 timing=main
 hidden
-oracle=Intimidate. At the beginning of each upkeep, if a player cast two or more spells last turn, transform Gatstaf Howler.
+oracle=Intimidate\nAt the beginning of each upkeep, if a player cast two or more spells last turn, transform Gatstaf Howler.

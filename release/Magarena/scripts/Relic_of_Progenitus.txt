@@ -6,4 +6,4 @@ type=Artifact
 cost={1}
 timing=main
 requires_groovy_code
-oracle={T}: Target player exiles a card from his or her graveyard. {1}, Exile Relic of Progenitus: Exile all cards from all graveyards. Draw a card.
+oracle={T}: Target player exiles a card from his or her graveyard.\n{1}, Exile Relic of Progenitus: Exile all cards from all graveyards. Draw a card.

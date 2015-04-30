@@ -10,4 +10,4 @@ ability=Flying;\
         Double strike;\
         Megamorph {4}{W}
 timing=main
-oracle=Flying. Double strike. Megamorph {4}{W}
+oracle=Flying\nDouble strike\nMegamorph {4}{W}

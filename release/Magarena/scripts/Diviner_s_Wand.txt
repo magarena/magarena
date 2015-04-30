@@ -9,4 +9,4 @@ ability=Equipped creature has "Whenever you draw a card, SN gets +1/+1 and gains
         Equip {3}
 timing=equipment
 requires_groovy_code
-oracle=Equipped creature has "Whenever you draw a card, this creature gets +1/+1 and gains flying until end of turn" and "{4}: Draw a card.". Whenever a Wizard creature enters the battlefield, you may attach Diviner's Wand to it. Equip {3}
+oracle=Equipped creature has "Whenever you draw a card, this creature gets +1/+1 and gains flying until end of turn" and "{4}: Draw a card."\nWhenever a Wizard creature enters the battlefield, you may attach Diviner's Wand to it.\nEquip {3}

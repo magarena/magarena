@@ -9,4 +9,4 @@ pt=2/1
 ability=echo {G}{G};\
         When SN enters the battlefield, draw a card.
 timing=main
-oracle=Echo {G}{G}. When Multani's Acolyte enters the battlefield, draw a card.
+oracle=Echo {G}{G}\nWhen Multani's Acolyte enters the battlefield, draw a card.

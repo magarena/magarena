@@ -9,4 +9,4 @@ pt=3/3
 ability=At the beginning of your upkeep, return a black creature you control to its owner's hand.;\
         {1}{B}: Regenerate SN.
 timing=main
-oracle=At the beginning of your upkeep, return a black creature you control to its owner's hand. {1}{B}: Regenerate Skull Collector.
+oracle=At the beginning of your upkeep, return a black creature you control to its owner's hand.\n{1}{B}: Regenerate Skull Collector.

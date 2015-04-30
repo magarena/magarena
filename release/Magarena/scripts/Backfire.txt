@@ -8,4 +8,4 @@ cost={U}
 timing=aura
 enchant=can't attack,neg creature
 requires_groovy_code
-oracle=Enchant creature. Whenever enchanted creature deals damage to you, Backfire deals that much damage to that creature's controller.
+oracle=Enchant creature\nWhenever enchanted creature deals damage to you, Backfire deals that much damage to that creature's controller.

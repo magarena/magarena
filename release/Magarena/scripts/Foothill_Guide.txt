@@ -9,4 +9,4 @@ pt=1/1
 ability=Protection from Goblins;\
         Morph {W}
 timing=main
-oracle=Protection from Goblins. Morph {W}
+oracle=Protection from Goblins\nMorph {W}

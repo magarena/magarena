@@ -9,4 +9,4 @@ pt=2/3
 ability=Flying;\
         Whenever SN blocks or becomes blocked by a creature, that creature gets +1/+1 until end of turn.
 timing=main
-oracle=Flying. Whenever Flailing Drake blocks or becomes blocked by a creature, that creature gets +1/+1 until end of turn.
+oracle=Flying\nWhenever Flailing Drake blocks or becomes blocked by a creature, that creature gets +1/+1 until end of turn.

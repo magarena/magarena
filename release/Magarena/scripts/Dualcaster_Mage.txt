@@ -9,4 +9,4 @@ pt=2/2
 ability=Flash;\
         When SN enters the battlefield, copy target instant or sorcery spell. You may choose new targets for the copy.
 timing=spell
-oracle=Flash. When Dualcaster Mage enters the battlefield, copy target instant or sorcery spell. You may choose new targets for the copy.
+oracle=Flash\nWhen Dualcaster Mage enters the battlefield, copy target instant or sorcery spell. You may choose new targets for the copy.

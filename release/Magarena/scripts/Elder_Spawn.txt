@@ -9,4 +9,4 @@ pt=6/6
 ability=SN can't be blocked by red creatures.
 timing=main
 requires_groovy_code
-oracle=At the beginning of your upkeep, unless you sacrifice an Island, sacrifice Elder Spawn and it deals 6 damage to you. Elder Spawn can't be blocked by red creatures.
+oracle=At the beginning of your upkeep, unless you sacrifice an Island, sacrifice Elder Spawn and it deals 6 damage to you.\nElder Spawn can't be blocked by red creatures.

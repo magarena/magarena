@@ -9,4 +9,4 @@ pt=5/5
 ability=flying;haste
 timing=main
 requires_groovy_code
-oracle=Flying. Haste. When Thundermaw Hellkite enters the battlefield, it deals 1 damage to each creature with flying your opponents control. Tap those creatures.
+oracle=Flying\nHaste\nWhen Thundermaw Hellkite enters the battlefield, it deals 1 damage to each creature with flying your opponents control. Tap those creatures.

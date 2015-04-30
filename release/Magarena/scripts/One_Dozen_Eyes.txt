@@ -7,4 +7,4 @@ cost={5}{G}
 ability=Entwine {G}{G}{G}
 effect=Choose one — (1) Put a 5/5 green Beast creature token onto the battlefield. (2) Put five 1/1 green Insect creature tokens onto the battlefield.
 timing=main
-oracle=Choose one — • Put a 5/5 green Beast creature token onto the battlefield. • Put five 1/1 green Insect creature tokens onto the battlefield. Entwine {G}{G}{G}
+oracle=Choose one —\n• Put a 5/5 green Beast creature token onto the battlefield.\n• Put five 1/1 green Insect creature tokens onto the battlefield.\nEntwine {G}{G}{G}

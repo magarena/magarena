@@ -9,4 +9,4 @@ ability=Equipped creature gets +0/+2 and has vigilance.;\
         Equip {2}
 timing=equipment
 requires_groovy_code
-oracle=Equipped creature gets +0/+2 and has vigilance. Whenever equipped creature blocks a creature, that creature doesn't untap during its controller's next untap step. Equip {2}
+oracle=Equipped creature gets +0/+2 and has vigilance.\nWhenever equipped creature blocks a creature, that creature doesn't untap during its controller's next untap step.\nEquip {2}

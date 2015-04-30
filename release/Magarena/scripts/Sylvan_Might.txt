@@ -7,4 +7,4 @@ cost={1}{G}
 effect=Target creature gets +2/+2 and gains trample until end of turn.
 ability=Flashback {2}{G}{G}
 timing=pump
-oracle=Target creature gets +2/+2 and gains trample until end of turn. Flashback {2}{G}{G}
+oracle=Target creature gets +2/+2 and gains trample until end of turn.\nFlashback {2}{G}{G}

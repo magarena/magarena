@@ -9,4 +9,4 @@ pt=3/4
 ability=Affinity for Plains.;\
         Vigilance
 timing=main
-oracle=Affinity for Plains. Vigilance
+oracle=Affinity for Plains\nVigilance

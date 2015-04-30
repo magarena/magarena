@@ -8,4 +8,4 @@ cost={3}{G}
 timing=aura
 enchant=pump,creature
 requires_groovy_code
-oracle=Enchant creature. When enchanted creature dies, you gain X life and draw X cards, where X is its toughness.
+oracle=Enchant creature\nWhen enchanted creature dies, you gain X life and draw X cards, where X is its toughness.

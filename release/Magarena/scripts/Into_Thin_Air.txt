@@ -7,4 +7,4 @@ cost={5}{U}
 ability=Affinity for artifacts.
 effect=Return target artifact to its owner's hand.
 timing=removal
-oracle=Affinity for artifacts. Return target artifact to its owner's hand.
+oracle=Affinity for artifacts\nReturn target artifact to its owner's hand.

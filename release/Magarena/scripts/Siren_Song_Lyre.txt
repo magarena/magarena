@@ -8,4 +8,4 @@ cost={2}
 ability=Equipped creature has "{2},{T}:Tap target creature.";\
         Equip {2}
 timing=equipment
-oracle=Equipped creature has "{2}, {T}: Tap target creature.". Equip {2}
+oracle=Equipped creature has "{2}, {T}: Tap target creature."\nEquip {2}

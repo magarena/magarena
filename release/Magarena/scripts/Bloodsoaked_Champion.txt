@@ -9,4 +9,4 @@ pt=2/1
 ability=SN can't block.;\
         {1}{B}: Return SN from your graveyard to the battlefield. Activate this ability only if you attacked with a creature this turn.
 timing=main
-oracle=Bloodsoaked Champion can't block. Raid — {1}{B}: Return Bloodsoaked Champion from your graveyard to the battlefield. Activate this ability only if you attacked with a creature this turn.
+oracle=Bloodsoaked Champion can't block.\nRaid — {1}{B}: Return Bloodsoaked Champion from your graveyard to the battlefield. Activate this ability only if you attacked with a creature this turn.

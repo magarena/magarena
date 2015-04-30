@@ -9,4 +9,4 @@ pt=1/2
 ability={T}, Sacrifice a creature, sacrifice a Swamp: Destroy target nonartifact creature. It can't be regenerated.;\
         {T}, Sacrifice a creature, sacrifice a snow Swamp: Destroy target creature. It can't be regenerated.
 timing=main
-oracle={T}, Sacrifice a creature and a Swamp: Destroy target nonartifact creature. It can't be regenerated. {T}, Sacrifice a creature and a snow Swamp: Destroy target creature. It can't be regenerated.
+oracle={T}, Sacrifice a creature and a Swamp: Destroy target nonartifact creature. It can't be regenerated.\n{T}, Sacrifice a creature and a snow Swamp: Destroy target creature. It can't be regenerated.

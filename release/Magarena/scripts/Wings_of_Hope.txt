@@ -8,4 +8,4 @@ cost={W}{U}
 ability=Enchanted creature gets +1/+3 and has flying.
 timing=aura
 enchant=flying,pos creature
-oracle=Enchant creature. Enchanted creature gets +1/+3 and has flying.
+oracle=Enchant creature\nEnchanted creature gets +1/+3 and has flying.

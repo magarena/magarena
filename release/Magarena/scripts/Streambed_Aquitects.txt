@@ -9,4 +9,4 @@ pt=2/3
 ability={T}: Target Merfolk creature gets +1/+1 and gains islandwalk until end of turn.;\
         {T}: Target land becomes an Island until end of turn.
 timing=main
-oracle={T}: Target Merfolk creature gets +1/+1 and gains islandwalk until end of turn. {T}: Target land becomes an Island until end of turn.
+oracle={T}: Target Merfolk creature gets +1/+1 and gains islandwalk until end of turn.\n{T}: Target land becomes an Island until end of turn.

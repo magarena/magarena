@@ -7,4 +7,4 @@ cost={1}{G}
 ability=Flashback {2}{G}
 effect=Prevent all combat damage that would be dealt this turn.
 timing=block
-oracle=Prevent all combat damage that would be dealt this turn. Flashback {2}{G}
+oracle=Prevent all combat damage that would be dealt this turn.\nFlashback {2}{G}

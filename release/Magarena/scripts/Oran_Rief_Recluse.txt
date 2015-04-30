@@ -10,4 +10,4 @@ ability=Kicker {2}{G};\
         Reach;\
         When SN enters the battlefield, if it was kicked, destroy target creature with flying.
 timing=main
-oracle=Kicker {2}{G}. Reach. When Oran-Rief Recluse enters the battlefield, if it was kicked, destroy target creature with flying.
+oracle=Kicker {2}{G}\nReach\nWhen Oran-Rief Recluse enters the battlefield, if it was kicked, destroy target creature with flying.

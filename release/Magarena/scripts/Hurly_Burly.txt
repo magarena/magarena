@@ -6,4 +6,4 @@ type=Sorcery
 cost={1}{R}
 effect=Choose one — (1) SN deals 1 damage to each creature without flying. (2) SN deals 1 damage to each creature with flying.
 timing=main
-oracle=Choose one — • Hurly-Burly deals 1 damage to each creature without flying. • Hurly-Burly deals 1 damage to each creature with flying.
+oracle=Choose one —\n• Hurly-Burly deals 1 damage to each creature without flying.\n• Hurly-Burly deals 1 damage to each creature with flying.

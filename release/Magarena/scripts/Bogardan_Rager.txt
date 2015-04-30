@@ -9,4 +9,4 @@ pt=3/4
 ability=flash;\
         When SN enters the battlefield, target creature gets +4/+0 until end of turn.
 timing=flash
-oracle=Flash. When Bogardan Rager enters the battlefield, target creature gets +4/+0 until end of turn.
+oracle=Flash\nWhen Bogardan Rager enters the battlefield, target creature gets +4/+0 until end of turn.

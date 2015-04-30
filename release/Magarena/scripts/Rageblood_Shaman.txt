@@ -11,4 +11,4 @@ ability=trample;\
         other minotaur creatures you control have trample
 static=player
 timing=main
-oracle=Trample. Other Minotaur creatures you control get +1/+1 and have trample.
+oracle=Trample\nOther Minotaur creatures you control get +1/+1 and have trample.

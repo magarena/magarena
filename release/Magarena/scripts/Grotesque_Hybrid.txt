@@ -9,4 +9,4 @@ pt=3/3
 ability=Whenever SN deals combat damage to a creature, destroy that creature. It can't be regenerated.;\
         Discard a card: SN gains flying, protection from green and from white until end of turn.
 timing=main
-oracle=Whenever Grotesque Hybrid deals combat damage to a creature, destroy that creature. It can't be regenerated. Discard a card: Grotesque Hybrid gains flying and protection from green and from white until end of turn.
+oracle=Whenever Grotesque Hybrid deals combat damage to a creature, destroy that creature. It can't be regenerated.\nDiscard a card: Grotesque Hybrid gains flying and protection from green and from white until end of turn.

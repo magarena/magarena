@@ -8,4 +8,4 @@ cost={3}{W}
 pt=2/5
 ability=echo {3}{W};When SN enters the battlefield, you gain 5 life.
 timing=main
-oracle=Echo {3}{W}. When Radiant's Dragoons enters the battlefield, you gain 5 life.
+oracle=Echo {3}{W}\nWhen Radiant's Dragoons enters the battlefield, you gain 5 life.

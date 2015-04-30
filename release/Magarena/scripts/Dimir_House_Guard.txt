@@ -8,4 +8,4 @@ cost={3}{B}
 pt=2/3
 ability=fear;Sacrifice a creature: Regenerate SN.;Transmute {1}{B}{B}
 timing=main
-oracle=Fear. Sacrifice a creature: Regenerate Dimir House Guard. Transmute {1}{B}{B}
+oracle=Fear\nSacrifice a creature: Regenerate Dimir House Guard.\nTransmute {1}{B}{B}

@@ -9,4 +9,4 @@ pt=2/2
 ability=Whenever SN or another creature enters the battlefield under your control, that creature gets +2/+2 until end of turn.;\
         Dash {3}{B}
 timing=main
-oracle=Whenever Ambuscade Shaman or another creature enters the battlefield under your control, that creature gets +2/+2 until end of turn. Dash {3}{B}
+oracle=Whenever Ambuscade Shaman or another creature enters the battlefield under your control, that creature gets +2/+2 until end of turn.\nDash {3}{B}

@@ -9,4 +9,4 @@ ability=Enchanted creature can't attack.;\
         When SN is put into a graveyard from the battlefield, return SN to its owner's hand.
 timing=aura
 enchant=can't attack,neg creature
-oracle=Enchant creature. Enchanted creature can't attack. When Cessation is put into a graveyard from the battlefield, return Cessation to its owner's hand.
+oracle=Enchant creature\nEnchanted creature can't attack.\nWhen Cessation is put into a graveyard from the battlefield, return Cessation to its owner's hand.

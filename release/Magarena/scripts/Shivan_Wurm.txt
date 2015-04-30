@@ -9,4 +9,4 @@ pt=7/7
 ability=trample;\
         When SN enters the battlefield, return a red or green creature you control to its owner's hand.
 timing=main
-oracle=Trample. When Shivan Wurm enters the battlefield, return a red or green creature you control to its owner's hand.
+oracle=Trample\nWhen Shivan Wurm enters the battlefield, return a red or green creature you control to its owner's hand.

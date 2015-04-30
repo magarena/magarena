@@ -9,4 +9,4 @@ pt=1/2
 ability=protection from blue;\
         Whenever SN attacks, SN gets +2/+0 until end of turn for each other attacking Goblin.
 timing=main
-oracle=Protection from blue. Whenever Goblin Piledriver attacks, it gets +2/+0 until end of turn for each other attacking Goblin.
+oracle=Protection from blue\nWhenever Goblin Piledriver attacks, it gets +2/+0 until end of turn for each other attacking Goblin.

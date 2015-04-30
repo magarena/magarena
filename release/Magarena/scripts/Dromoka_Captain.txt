@@ -9,4 +9,4 @@ pt=1/1
 ability=First strike;\
         Whenever SN attacks, bolster 1.
 timing=main
-oracle=First strike. Whenever Dromoka Captain attacks, bolster 1.
+oracle=First strike\nWhenever Dromoka Captain attacks, bolster 1.

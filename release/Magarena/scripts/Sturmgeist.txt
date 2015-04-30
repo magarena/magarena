@@ -10,4 +10,4 @@ ability=flying;\
         SN's power and toughness are each equal to the number of cards in your hand.;\
         Whenever SN deals combat damage to a player, draw a card.
 timing=main
-oracle=Flying. Sturmgeist's power and toughness are each equal to the number of cards in your hand. Whenever Sturmgeist deals combat damage to a player, draw a card.
+oracle=Flying\nSturmgeist's power and toughness are each equal to the number of cards in your hand.\nWhenever Sturmgeist deals combat damage to a player, draw a card.

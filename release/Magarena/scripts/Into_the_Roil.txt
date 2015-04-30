@@ -8,4 +8,4 @@ cost={1}{U}
 timing=removal
 ability=kicker {1}{U}
 requires_groovy_code
-oracle=Kicker {1}{U}. Return target nonland permanent to its owner's hand. If Into the Roil was kicked, draw a card.
+oracle=Kicker {1}{U}\nReturn target nonland permanent to its owner's hand. If Into the Roil was kicked, draw a card.

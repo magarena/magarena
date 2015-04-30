@@ -9,4 +9,4 @@ pt=3/3
 ability=flying;\
         Whenever a land enters the battlefield under your control, you may put a 1/1 white Bird creature token with flying onto the battlefield.
 timing=main
-oracle=Flying. Landfall — Whenever a land enters the battlefield under your control, you may put a 1/1 white Bird creature token with flying onto the battlefield.
+oracle=Flying\nLandfall — Whenever a land enters the battlefield under your control, you may put a 1/1 white Bird creature token with flying onto the battlefield.

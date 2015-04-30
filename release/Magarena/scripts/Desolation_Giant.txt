@@ -9,4 +9,4 @@ pt=3/3
 ability=Kicker {W}{W}
 timing=main
 requires_groovy_code
-oracle=Kicker {W}{W}. When Desolation Giant enters the battlefield, destroy all other creatures you control. If it was kicked, destroy all other creatures instead.
+oracle=Kicker {W}{W}\nWhen Desolation Giant enters the battlefield, destroy all other creatures you control. If it was kicked, destroy all other creatures instead.

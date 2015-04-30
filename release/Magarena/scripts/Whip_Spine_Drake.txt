@@ -9,4 +9,4 @@ pt=3/3
 ability=Flying;\
         Morph {2}{W}
 timing=main
-oracle=Flying. Morph {2}{W}
+oracle=Flying\nMorph {2}{W}

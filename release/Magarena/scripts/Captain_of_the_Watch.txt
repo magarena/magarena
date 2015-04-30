@@ -12,4 +12,4 @@ ability=vigilance;\
         When SN enters the battlefield, put three 1/1 white Soldier creature tokens onto the battlefield.
 static=player
 timing=main
-oracle=Vigilance. Other Soldier creatures you control get +1/+1 and have vigilance. When Captain of the Watch enters the battlefield, put three 1/1 white Soldier creature tokens onto the battlefield.
+oracle=Vigilance\nOther Soldier creatures you control get +1/+1 and have vigilance.\nWhen Captain of the Watch enters the battlefield, put three 1/1 white Soldier creature tokens onto the battlefield.

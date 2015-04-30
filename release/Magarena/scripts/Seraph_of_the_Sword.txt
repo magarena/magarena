@@ -9,4 +9,4 @@ pt=3/3
 ability=flying
 timing=main
 requires_groovy_code=Guard Gomazoa
-oracle=Flying. Prevent all combat damage that would be dealt to Seraph of the Sword.
+oracle=Flying\nPrevent all combat damage that would be dealt to Seraph of the Sword.

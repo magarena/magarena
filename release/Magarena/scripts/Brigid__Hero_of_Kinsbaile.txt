@@ -9,4 +9,4 @@ pt=2/3
 ability=first strike
 timing=smain
 requires_groovy_code
-oracle=First strike. {T}: Brigid, Hero of Kinsbaile deals 2 damage to each attacking or blocking creature target player controls.
+oracle=First strike\n{T}: Brigid, Hero of Kinsbaile deals 2 damage to each attacking or blocking creature target player controls.

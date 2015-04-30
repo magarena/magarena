@@ -9,4 +9,4 @@ pt=2/1
 ability=flying;\
         When SN enters the battlefield, each player loses 1 life.
 timing=main
-oracle=Flying. When Blood-Toll Harpy enters the battlefield, each player loses 1 life.
+oracle=Flying\nWhen Blood-Toll Harpy enters the battlefield, each player loses 1 life.

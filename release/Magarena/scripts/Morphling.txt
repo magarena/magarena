@@ -12,4 +12,4 @@ ability={U}: Untap SN.;\
         {1}: SN gets +1/-1 until end of turn.;\
         {1}: SN gets -1/+1 until end of turn.
 timing=main
-oracle={U}: Untap Morphling. {U}: Morphling gains flying until end of turn. {U}: Morphling gains shroud until end of turn. {1}: Morphling gets +1/-1 until end of turn. {1}: Morphling gets -1/+1 until end of turn.
+oracle={U}: Untap Morphling.\n{U}: Morphling gains flying until end of turn.\n{U}: Morphling gains shroud until end of turn.\n{1}: Morphling gets +1/-1 until end of turn.\n{1}: Morphling gets -1/+1 until end of turn.

@@ -9,4 +9,4 @@ pt=2/2
 ability=lifelink;\
         When SN dies, put a 1/1 white Spirit creature token with flying onto the battlefield.
 timing=main
-oracle=Lifelink. When Elgaud Inquisitor dies, put a 1/1 white Spirit creature token with flying onto the battlefield.
+oracle=Lifelink\nWhen Elgaud Inquisitor dies, put a 1/1 white Spirit creature token with flying onto the battlefield.

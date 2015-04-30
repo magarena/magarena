@@ -9,4 +9,4 @@ pt=0/5
 ability=Defender;flying;\
         Morph {U}
 timing=main
-oracle=Defender, flying. Morph {U}
+oracle=Defender, flying\nMorph {U}

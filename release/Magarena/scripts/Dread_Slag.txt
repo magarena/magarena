@@ -9,4 +9,4 @@ pt=9/9
 ability=Trample.;\
         SN gets -4/-4 for each card in your hand.
 timing=main
-oracle=Trample. Dread Slag gets -4/-4 for each card in your hand.
+oracle=Trample\nDread Slag gets -4/-4 for each card in your hand.

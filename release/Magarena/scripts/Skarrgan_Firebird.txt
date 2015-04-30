@@ -10,4 +10,4 @@ ability=Bloodthirst 3;\
         Flying;\
         {R}{R}{R}: Return SN from your graveyard to your hand. Activate this ability only if an opponent was dealt damage this turn.
 timing=main
-oracle=Bloodthirst 3. Flying. {R}{R}{R}: Return Skarrgan Firebird from your graveyard to your hand. Activate this ability only if an opponent was dealt damage this turn.
+oracle=Bloodthirst 3\nFlying\n{R}{R}{R}: Return Skarrgan Firebird from your graveyard to your hand. Activate this ability only if an opponent was dealt damage this turn.

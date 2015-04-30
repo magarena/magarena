@@ -9,4 +9,4 @@ pt=2/2
 ability=Flying;\
         As long as SN is enchanted, it has "{T}: SN deals 2 damage to target attacking or blocking creature."
 timing=main
-oracle=Flying. As long as Freewind Equenaut is enchanted, it has "{T}: Freewind Equenaut deals 2 damage to target attacking or blocking creature."
+oracle=Flying\nAs long as Freewind Equenaut is enchanted, it has "{T}: Freewind Equenaut deals 2 damage to target attacking or blocking creature."

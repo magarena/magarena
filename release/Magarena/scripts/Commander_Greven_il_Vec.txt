@@ -9,4 +9,4 @@ pt=7/5
 ability=fear;\
         When SN enters the battlefield, sacrifice a creature.
 timing=main
-oracle=Fear. When Commander Greven il-Vec enters the battlefield, sacrifice a creature.
+oracle=Fear\nWhen Commander Greven il-Vec enters the battlefield, sacrifice a creature.

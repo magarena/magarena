@@ -9,4 +9,4 @@ pt=2/*
 ability=Flying
 timing=main
 requires_groovy_code
-oracle=Flying. Domain — Aven Trailblazer's toughness is equal to the number of basic land types among lands you control.
+oracle=Flying\nDomain — Aven Trailblazer's toughness is equal to the number of basic land types among lands you control.

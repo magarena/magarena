@@ -10,4 +10,4 @@ ability=Living weapon;\
         {3}: Return SN to its owner's hand.;\
         Equip {5}
 timing=equipment
-oracle=Living weapon. Equipped creature gets +4/+4 and has vigilance and lifelink. {3}: Return Batterskull to its owner's hand. Equip {5}
+oracle=Living weapon\nEquipped creature gets +4/+4 and has vigilance and lifelink.\n{3}: Return Batterskull to its owner's hand.\nEquip {5}

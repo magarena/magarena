@@ -9,4 +9,4 @@ pt=6/5
 ability=flying;trample;haste;protection from black;\
         SN has first strike as long as it's attacking.
 timing=main
-oracle=Flying, trample, haste, protection from black. Spirit of the Night has first strike as long as it's attacking.
+oracle=Flying, trample, haste, protection from black\nSpirit of the Night has first strike as long as it's attacking.

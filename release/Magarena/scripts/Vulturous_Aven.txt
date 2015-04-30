@@ -10,4 +10,4 @@ ability=Flying;\
         Exploit;\
         When SN exploits a creature, you draw two cards and you lose 2 life.
 timing=main
-oracle=Flying. Exploit. When Vulturous Aven exploits a creature, you draw two cards and you lose 2 life.
+oracle=Flying\nExploit\nWhen Vulturous Aven exploits a creature, you draw two cards and you lose 2 life.

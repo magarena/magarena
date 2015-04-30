@@ -9,4 +9,4 @@ ability=Enchanted creature doesn't untap during its controller's untap step.;\
         {3}{U}: Attach SN to target creature.
 timing=enchantment
 enchant=can't attack or block,neg creature
-oracle=Enchant creature. Enchanted creature doesn't untap during its controller's untap step. {3}{U}: Attach Stasis Cell to target creature.
+oracle=Enchant creature\nEnchanted creature doesn't untap during its controller's untap step.\n{3}{U}: Attach Stasis Cell to target creature.

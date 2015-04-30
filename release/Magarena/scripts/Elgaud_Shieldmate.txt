@@ -9,4 +9,4 @@ pt=2/3
 ability=Soulbond;\
         As long as SN is paired with another creature, both creatures have hexproof.
 timing=main
-oracle=Soulbond. As long as Elgaud Shieldmate is paired with another creature, both creatures have hexproof.
+oracle=Soulbond\nAs long as Elgaud Shieldmate is paired with another creature, both creatures have hexproof.

@@ -7,4 +7,4 @@ cost={4}{G}
 ability=Cumulative upkeep {G}
 timing=enchantment
 requires_groovy_code
-oracle=Cumulative upkeep {G}. {2}{G}, Pay 3 life for each velocity counter on Tornado: Destroy target permanent and put a velocity counter on Tornado. Activate this ability only once each turn.
+oracle=Cumulative upkeep {G}\n{2}{G}, Pay 3 life for each velocity counter on Tornado: Destroy target permanent and put a velocity counter on Tornado. Activate this ability only once each turn.

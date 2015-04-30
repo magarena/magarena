@@ -11,4 +11,4 @@ ability=SN doesn't untap during your untap step.;\
         SN can't attack unless defending player controls an Island.
 timing=main
 requires_groovy_code=Sea Serpent
-oracle=Island Fish Jasconius doesn't untap during your untap step. At the beginning of your upkeep, you may pay {U}{U}{U}. If you do, untap Island Fish Jasconius. Island Fish Jasconius can't attack unless defending player controls an Island. When you control no Islands, sacrifice Island Fish Jasconius.
+oracle=Island Fish Jasconius doesn't untap during your untap step.\nAt the beginning of your upkeep, you may pay {U}{U}{U}. If you do, untap Island Fish Jasconius.\nIsland Fish Jasconius can't attack unless defending player controls an Island.\nWhen you control no Islands, sacrifice Island Fish Jasconius.

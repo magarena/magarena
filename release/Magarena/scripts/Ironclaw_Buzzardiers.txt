@@ -9,4 +9,4 @@ pt=2/2
 ability=SN can't block creatures with power 2 or greater.;\
         {R}: SN gains flying until end of turn.
 timing=main
-oracle=Ironclaw Buzzardiers can't block creatures with power 2 or greater. {R}: Ironclaw Buzzardiers gains flying until end of turn.
+oracle=Ironclaw Buzzardiers can't block creatures with power 2 or greater.\n{R}: Ironclaw Buzzardiers gains flying until end of turn.

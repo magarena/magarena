@@ -8,4 +8,4 @@ subtype=Goblin,Zombie
 cost={3}{B}
 pt=2/1
 timing=fmain
-oracle=Haste. Infect
+oracle=Haste\nInfect

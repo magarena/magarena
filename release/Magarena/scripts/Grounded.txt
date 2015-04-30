@@ -8,4 +8,4 @@ cost={1}{G}
 timing=aura
 enchant=lose flying,neg creature
 requires_groovy_code
-oracle=Enchant creature. Enchanted creature loses flying.
+oracle=Enchant creature\nEnchanted creature loses flying.

@@ -9,4 +9,4 @@ pt=2/2
 ability=Haste;\
         SN attacks each turn if able.
 timing=main
-oracle=Haste. Valley Dasher attacks each turn if able.
+oracle=Haste\nValley Dasher attacks each turn if able.

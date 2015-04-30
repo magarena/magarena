@@ -9,4 +9,4 @@ ability=Enchanted creature can't block.;\
         When SN is put into a graveyard from the battlefield, return SN from the graveyard to its owner's hand.
 timing=aura
 enchant=can't block,neg creature
-oracle=Enchant creature. Enchanted creature can't block. When Sluggishness is put into a graveyard from the battlefield, return Sluggishness to its owner's hand.
+oracle=Enchant creature\nEnchanted creature can't block.\nWhen Sluggishness is put into a graveyard from the battlefield, return Sluggishness to its owner's hand.

@@ -9,4 +9,4 @@ pt=2/2
 timing=main
 ability=Multikicker {B}
 requires_groovy_code
-oracle=Multikicker {B}. When Bloodhusk Ritualist enters the battlefield, target opponent discards a card for each time it was kicked.
+oracle=Multikicker {B}\nWhen Bloodhusk Ritualist enters the battlefield, target opponent discards a card for each time it was kicked.

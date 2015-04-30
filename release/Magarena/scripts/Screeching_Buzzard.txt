@@ -9,4 +9,4 @@ pt=2/2
 ability=Flying;\
         When SN dies, each opponent discards a card.
 timing=main
-oracle=Flying. When Screeching Buzzard dies, each opponent discards a card.
+oracle=Flying\nWhen Screeching Buzzard dies, each opponent discards a card.

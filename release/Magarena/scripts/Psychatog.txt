@@ -9,4 +9,4 @@ pt=1/2
 ability=Discard a card: SN gets +1/+1 until end of turn.;\
         Exile two cards from your graveyard: SN gets +1/+1 until end of turn.
 timing=main
-oracle=Discard a card: Psychatog gets +1/+1 until end of turn. Exile two cards from your graveyard: Psychatog gets +1/+1 until end of turn.
+oracle=Discard a card: Psychatog gets +1/+1 until end of turn.\nExile two cards from your graveyard: Psychatog gets +1/+1 until end of turn.

@@ -9,4 +9,4 @@ pt=10/10
 ability=SN enters the battlefield with five -1/-1 counters on it.;\
         {W}{U}{B}{R}{G}, Remove five -1/-1 counters from SN: Target player draws three cards.
 timing=main
-oracle=Etched Monstrosity enters the battlefield with five -1/-1 counters on it. {W}{U}{B}{R}{G}, Remove five -1/-1 counters from Etched Monstrosity: Target player draws three cards.
+oracle=Etched Monstrosity enters the battlefield with five -1/-1 counters on it.\n{W}{U}{B}{R}{G}, Remove five -1/-1 counters from Etched Monstrosity: Target player draws three cards.

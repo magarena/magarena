@@ -8,4 +8,4 @@ cost={3}{W}
 pt=2/2
 ability=flying;When SN enters the battlefield, destroy target enchantment.
 timing=main
-oracle=Flying. When Aven Cloudchaser enters the battlefield, destroy target enchantment.
+oracle=Flying\nWhen Aven Cloudchaser enters the battlefield, destroy target enchantment.

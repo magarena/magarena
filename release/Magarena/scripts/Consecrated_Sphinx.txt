@@ -9,4 +9,4 @@ pt=4/6
 ability=Flying.;\
         Whenever an opponent draws a card, you may draw two cards.
 timing=main
-oracle=Flying. Whenever an opponent draws a card, you may draw two cards.
+oracle=Flying\nWhenever an opponent draws a card, you may draw two cards.

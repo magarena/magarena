@@ -10,4 +10,4 @@ ability=Flash;\
         Split second.;\
         White creatures get +1/-1.
 timing=flash
-oracle=Flash. Split second. White creatures get +1/-1.
+oracle=Flash\nSplit second\nWhite creatures get +1/-1.

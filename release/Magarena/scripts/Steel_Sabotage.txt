@@ -6,4 +6,4 @@ type=Instant
 cost={U}
 effect=Choose one — (1) Counter target artifact spell. (2) Return target artifact to its owner's hand.
 timing=counter
-oracle=Choose one — • Counter target artifact spell. • Return target artifact to its owner's hand.
+oracle=Choose one —\n• Counter target artifact spell.\n• Return target artifact to its owner's hand.

@@ -9,4 +9,4 @@ ability=Equipped creature has fear.;\
         Whenever equipped creature deals combat damage to a player, you may draw a card.;\
         Equip {2}
 timing=equipment
-oracle=Equipped creature has fear. Whenever equipped creature deals combat damage to a player, you may draw a card. Equip {2}
+oracle=Equipped creature has fear.\nWhenever equipped creature deals combat damage to a player, you may draw a card.\nEquip {2}

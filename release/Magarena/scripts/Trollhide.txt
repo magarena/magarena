@@ -8,4 +8,4 @@ cost={2}{G}
 enchant=pump,pos creature
 ability=Enchanted creature gets +2/+2 and has "{1}{G}: Regenerate SN."
 timing=enchantment
-oracle=Enchant creature. Enchanted creature gets +2/+2 and has "{1}{G}: Regenerate this creature."
+oracle=Enchant creature\nEnchanted creature gets +2/+2 and has "{1}{G}: Regenerate this creature."

@@ -9,4 +9,4 @@ pt=1/1
 ability=flying;\
         Sacrifice SN: Regenerate target artifact.
 timing=main
-oracle=Flying. Sacrifice Pteron Ghost: Regenerate target artifact.
+oracle=Flying\nSacrifice Pteron Ghost: Regenerate target artifact.

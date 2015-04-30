@@ -9,4 +9,4 @@ pt=5/3
 ability=vanishing 1
 timing=main
 requires_groovy_code
-oracle=Vanishing 1. Whenever a creature you control deals combat damage to a player, put a time counter on Lavacore Elemental.
+oracle=Vanishing 1\nWhenever a creature you control deals combat damage to a player, put a time counter on Lavacore Elemental.

@@ -9,4 +9,4 @@ pt=1/1
 ability={B},{T}: Target creature gets +1/+0 until end of turn.;\
         {G},{T}: Target creature gets +0/+1 until end of turn.
 timing=main
-oracle={B}, {T}: Target creature gets +1/+0 until end of turn. {G}, {T}: Target creature gets +0/+1 until end of turn.
+oracle={B}, {T}: Target creature gets +1/+0 until end of turn.\n{G}, {T}: Target creature gets +0/+1 until end of turn.

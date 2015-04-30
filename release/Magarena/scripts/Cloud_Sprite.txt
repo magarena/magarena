@@ -8,4 +8,4 @@ subtype=Faerie
 cost={U}
 pt=1/1
 timing=fmain
-oracle=Flying. Cloud Sprite can block only creatures with flying.
+oracle=Flying\nCloud Sprite can block only creatures with flying.

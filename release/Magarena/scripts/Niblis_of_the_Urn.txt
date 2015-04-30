@@ -9,4 +9,4 @@ pt=1/1
 ability=flying;\
         Whenever SN attacks, you may tap target creature.
 timing=main
-oracle=Flying. Whenever Niblis of the Urn attacks, you may tap target creature.
+oracle=Flying\nWhenever Niblis of the Urn attacks, you may tap target creature.

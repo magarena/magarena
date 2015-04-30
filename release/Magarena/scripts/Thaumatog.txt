@@ -8,4 +8,4 @@ cost={1}{G}{W}
 pt=1/2
 ability=Sacrifice a land:SN gets +1/+1 until end of turn.;Sacrifice an enchantment:SN gets +1/+1 until end of turn.
 timing=main
-oracle=Sacrifice a land: Thaumatog gets +1/+1 until end of turn. Sacrifice an enchantment: Thaumatog gets +1/+1 until end of turn.
+oracle=Sacrifice a land: Thaumatog gets +1/+1 until end of turn.\nSacrifice an enchantment: Thaumatog gets +1/+1 until end of turn.

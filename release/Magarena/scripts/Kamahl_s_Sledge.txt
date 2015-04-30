@@ -6,4 +6,4 @@ type=Sorcery
 cost={5}{R}{R}
 timing=main
 requires_groovy_code
-oracle=Kamahl's Sledge deals 4 damage to target creature. Threshold — If seven or more cards are in your graveyard, instead Kamahl's Sledge deals 4 damage to that creature and 4 damage to that creature's controller.
+oracle=Kamahl's Sledge deals 4 damage to target creature.\nThreshold — If seven or more cards are in your graveyard, instead Kamahl's Sledge deals 4 damage to that creature and 4 damage to that creature's controller.

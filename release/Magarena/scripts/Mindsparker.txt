@@ -9,4 +9,4 @@ pt=3/2
 ability=first strike
 timing=main
 requires_groovy_code
-oracle=First strike. Whenever an opponent casts a white or blue instant or sorcery spell, Mindsparker deals 2 damage to that player.
+oracle=First strike\nWhenever an opponent casts a white or blue instant or sorcery spell, Mindsparker deals 2 damage to that player.

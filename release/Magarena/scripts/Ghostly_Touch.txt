@@ -8,4 +8,4 @@ cost={1}{U}
 ability=Enchanted creature has "Whenever SN attacks, you may tap or untap target permanent."
 enchant=pump,pos creature
 timing=main
-oracle=Enchant creature. Enchanted creature has "Whenever this creature attacks, you may tap or untap target permanent."
+oracle=Enchant creature\nEnchanted creature has "Whenever this creature attacks, you may tap or untap target permanent."

@@ -9,4 +9,4 @@ pt=2/1
 ability=SN can't be blocked.;\
         When SN enters the battlefield, target creature can't be blocked this turn.
 timing=fmain
-oracle=Neurok Invisimancer can't be blocked. When Neurok Invisimancer enters the battlefield, target creature can't be blocked this turn.
+oracle=Neurok Invisimancer can't be blocked.\nWhen Neurok Invisimancer enters the battlefield, target creature can't be blocked this turn.

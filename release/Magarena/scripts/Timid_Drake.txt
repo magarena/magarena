@@ -9,4 +9,4 @@ pt=3/3
 ability=Flying;\
         When another creature enters the battlefield, return SN to its owner's hand.
 timing=main
-oracle=Flying. When another creature enters the battlefield, return Timid Drake to its owner's hand.
+oracle=Flying\nWhen another creature enters the battlefield, return Timid Drake to its owner's hand.

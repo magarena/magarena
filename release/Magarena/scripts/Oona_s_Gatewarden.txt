@@ -8,4 +8,4 @@ subtype=Faerie,Soldier
 cost={U/B}
 pt=2/1
 timing=smain
-oracle=Defender, flying. Wither
+oracle=Defender, flying\nWither

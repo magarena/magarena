@@ -10,4 +10,4 @@ ability=Flash;\
         Enchanted creature doesn't untap during its controller's untap step.
 timing=tapping
 enchant=can't attack or block,neg creature
-oracle=Flash. Enchant creature. Enchanted creature doesn't untap during its controller's untap step.
+oracle=Flash\nEnchant creature\nEnchanted creature doesn't untap during its controller's untap step.

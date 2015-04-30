@@ -9,4 +9,4 @@ pt=*/1
 ability=First strike;\
         SN's power is equal to the number of creatures you control.
 timing=main
-oracle=First strike. Soulsurge Elemental's power is equal to the number of creatures you control.
+oracle=First strike\nSoulsurge Elemental's power is equal to the number of creatures you control.

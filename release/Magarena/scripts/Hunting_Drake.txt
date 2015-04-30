@@ -9,4 +9,4 @@ pt=2/2
 ability=flying;\
         When SN enters the battlefield, put target red or green creature on top of its owner's library.
 timing=main
-oracle=Flying. When Hunting Drake enters the battlefield, put target red or green creature on top of its owner's library.
+oracle=Flying\nWhen Hunting Drake enters the battlefield, put target red or green creature on top of its owner's library.

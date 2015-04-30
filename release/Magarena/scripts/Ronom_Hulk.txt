@@ -8,4 +8,4 @@ cost={4}{G}
 pt=5/6
 ability=protection from snow;cumulative upkeep {1}
 timing=main
-oracle=Protection from snow. Cumulative upkeep {1}
+oracle=Protection from snow\nCumulative upkeep {1}

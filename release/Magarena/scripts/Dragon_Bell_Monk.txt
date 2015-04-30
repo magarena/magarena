@@ -9,4 +9,4 @@ pt=2/2
 ability=Vigilance;\
         Prowess
 timing=main
-oracle=Vigilance. Prowess
+oracle=Vigilance\nProwess

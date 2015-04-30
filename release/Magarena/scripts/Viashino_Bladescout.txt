@@ -9,4 +9,4 @@ pt=2/1
 ability=flash;\
         When SN enters the battlefield, target creature gains first strike until end of turn.
 timing=flash
-oracle=Flash. When Viashino Bladescout enters the battlefield, target creature gains first strike until end of turn.
+oracle=Flash\nWhen Viashino Bladescout enters the battlefield, target creature gains first strike until end of turn.

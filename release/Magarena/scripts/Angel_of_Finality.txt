@@ -9,4 +9,4 @@ pt=3/4
 ability=Flying
 timing=main
 requires_groovy_code=Bojuka Bog
-oracle=Flying. When Angel of Finality enters the battlefield, exile all cards from target player's graveyard.
+oracle=Flying\nWhen Angel of Finality enters the battlefield, exile all cards from target player's graveyard.

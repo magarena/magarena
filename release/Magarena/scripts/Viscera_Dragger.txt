@@ -9,4 +9,4 @@ pt=3/3
 ability=Cycling {2};\
         Unearth {1}{B}
 timing=main
-oracle=Cycling {2}. Unearth {1}{B}
+oracle=Cycling {2}\nUnearth {1}{B}

@@ -8,4 +8,4 @@ cost={1}{U}
 ability=changeling
 timing=pump
 requires_groovy_code
-oracle=Changeling. Target creature becomes 4/4, gains all creature types, and gains flying until end of turn.
+oracle=Changeling\nUntil end of turn, target creature has base power and toughness 4/4, gains all creature types, and gains flying.

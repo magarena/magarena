@@ -9,4 +9,4 @@ ability=Enchanted creature gets -2/-0.;\
         {B}:Return SN to its owner's hand.
 timing=aura
 enchant=weaken,neg creature
-oracle=Enchant creature. Enchanted creature gets -2/-0. {B}: Return Mourning to its owner's hand.
+oracle=Enchant creature\nEnchanted creature gets -2/-0.\n{B}: Return Mourning to its owner's hand.

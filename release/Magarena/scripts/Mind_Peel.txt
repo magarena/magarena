@@ -7,4 +7,4 @@ cost={B}
 ability=buyback {2}{B}{B}
 effect=Target player discards a card.~Buyback
 timing=removal
-oracle=Buyback {2}{B}{B}. Target player discards a card.
+oracle=Buyback {2}{B}{B}\nTarget player discards a card.

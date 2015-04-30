@@ -9,4 +9,4 @@ pt=*/*
 ability=vigilance;\
         SN's power and toughness are each equal to the number of enchantment cards in all graveyards.
 timing=main
-oracle=Vigilance. Cantivore's power and toughness are each equal to the number of enchantment cards in all graveyards.
+oracle=Vigilance\nCantivore's power and toughness are each equal to the number of enchantment cards in all graveyards.

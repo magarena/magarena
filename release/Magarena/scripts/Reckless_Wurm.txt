@@ -9,4 +9,4 @@ pt=4/4
 ability=Trample;\
         Madness {2}{R}
 timing=main
-oracle=Trample. Madness {2}{R}
+oracle=Trample\nMadness {2}{R}

@@ -7,4 +7,4 @@ cost={2}{R}
 ability=As an additional cost to cast SN, sacrifice a land.
 effect=SN deals 5 damage to target creature.
 timing=main
-oracle=As an additional cost to cast Magma Rift, sacrifice a land. Magma Rift deals 5 damage to target creature.
+oracle=As an additional cost to cast Magma Rift, sacrifice a land.\nMagma Rift deals 5 damage to target creature.

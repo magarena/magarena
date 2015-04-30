@@ -8,4 +8,4 @@ cost={4}{B}{B}
 pt=4/1
 ability=flying;soulshift 5
 timing=main
-oracle=Flying. Soulshift 5
+oracle=Flying\nSoulshift 5

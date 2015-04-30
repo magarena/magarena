@@ -8,4 +8,4 @@ cost={4}{U}
 pt=7/4
 ability=defender;flying;first strike;cumulative upkeep {U}
 timing=main
-oracle=Defender, flying, first strike. Cumulative upkeep {U}
+oracle=Defender, flying, first strike\nCumulative upkeep {U}

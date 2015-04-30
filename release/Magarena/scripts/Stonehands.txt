@@ -9,4 +9,4 @@ ability=Enchanted creature gets +0/+2.;\
         {R}: Enchanted creature gets +1/+0 until end of turn.
 enchant=pump,pos creature
 timing=aura
-oracle=Enchant creature. Enchanted creature gets +0/+2. {R}: Enchanted creature gets +1/+0 until end of turn.
+oracle=Enchant creature\nEnchanted creature gets +0/+2.\n{R}: Enchanted creature gets +1/+0 until end of turn.

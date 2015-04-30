@@ -8,4 +8,4 @@ cost={2}{R}
 pt=1/1
 ability=haste;{R}: SN gets +1/+0 until end of turn.
 timing=fmain
-oracle=Haste. {R}: Furnace Spirit gets +1/+0 until end of turn.
+oracle=Haste\n{R}: Furnace Spirit gets +1/+0 until end of turn.

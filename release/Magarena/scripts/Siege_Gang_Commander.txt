@@ -9,4 +9,4 @@ pt=2/2
 ability={1}{R},Sacrifice a Goblin: SN deals 2 damage to target creature or player.;\
         When SN enters the battlefield, put three 1/1 red Goblin creature tokens onto the battlefield.
 timing=main
-oracle=When Siege-Gang Commander enters the battlefield, put three 1/1 red Goblin creature tokens onto the battlefield. {1}{R}, Sacrifice a Goblin: Siege-Gang Commander deals 2 damage to target creature or player.
+oracle=When Siege-Gang Commander enters the battlefield, put three 1/1 red Goblin creature tokens onto the battlefield.\n{1}{R}, Sacrifice a Goblin: Siege-Gang Commander deals 2 damage to target creature or player.

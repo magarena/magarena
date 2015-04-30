@@ -9,4 +9,4 @@ pt=4/4
 ability=Soulbond;\
         As long as SN is paired with another creature, each of those creatures gets +4/+4.
 timing=main
-oracle=Soulbond. As long as Wolfir Silverheart is paired with another creature, each of those creatures gets +4/+4.
+oracle=Soulbond\nAs long as Wolfir Silverheart is paired with another creature, each of those creatures gets +4/+4.

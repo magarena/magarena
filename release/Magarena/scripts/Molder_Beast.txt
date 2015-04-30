@@ -9,4 +9,4 @@ pt=5/3
 ability=trample;\
         Whenever an artifact is put into a graveyard from the battlefield, SN gets +2/+0 until end of turn.
 timing=main
-oracle=Trample. Whenever an artifact is put into a graveyard from the battlefield, Molder Beast gets +2/+0 until end of turn.
+oracle=Trample\nWhenever an artifact is put into a graveyard from the battlefield, Molder Beast gets +2/+0 until end of turn.

@@ -9,4 +9,4 @@ pt=4/4
 ability=flying;\
         When SN dies, shuffle SN into its owner's library.
 timing=main
-oracle=Flying. When Alabaster Dragon dies, shuffle it into its owner's library.
+oracle=Flying\nWhen Alabaster Dragon dies, shuffle it into its owner's library.

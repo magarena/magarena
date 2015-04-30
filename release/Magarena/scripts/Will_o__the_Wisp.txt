@@ -9,4 +9,4 @@ pt=0/1
 ability=flying;\
         {B}: Regenerate SN.
 timing=main
-oracle=Flying. {B}: Regenerate Will-o'-the-Wisp.
+oracle=Flying\n{B}: Regenerate Will-o'-the-Wisp.

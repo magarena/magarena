@@ -8,4 +8,4 @@ cost={1}{R}
 enchant=pump,pos creature
 timing=main
 requires_groovy_code
-oracle=Enchant creature. Whenever enchanted creature attacks, it gets +X/+0 until end of turn, where X is your devotion to red.
+oracle=Enchant creature\nWhenever enchanted creature attacks, it gets +X/+0 until end of turn, where X is your devotion to red.

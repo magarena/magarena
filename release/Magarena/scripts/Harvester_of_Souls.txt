@@ -9,4 +9,4 @@ pt=5/5
 ability=deathtouch;\
         Whenever another nontoken creature dies, you may draw a card.
 timing=main
-oracle=Deathtouch. Whenever another nontoken creature dies, you may draw a card.
+oracle=Deathtouch\nWhenever another nontoken creature dies, you may draw a card.

@@ -8,4 +8,4 @@ cost={1}{G}
 ability=At the beginning of your upkeep, choose one — (1) Destroy enchanted permanent. (2) You gain 2 life.
 timing=aura
 enchant=destroy,neg artifact or enchantment
-oracle=Enchant artifact or enchantment. At the beginning of your upkeep, choose one — • Destroy enchanted permanent. • You gain 2 life.
+oracle=Enchant artifact or enchantment\nAt the beginning of your upkeep, choose one —\n• Destroy enchanted permanent.\n• You gain 2 life.

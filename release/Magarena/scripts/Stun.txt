@@ -6,4 +6,4 @@ type=Instant
 cost={1}{R}
 effect=Target creature can't block this turn.~Draw a card.
 timing=block
-oracle=Target creature can't block this turn. Draw a card.
+oracle=Target creature can't block this turn.\nDraw a card.

@@ -9,4 +9,4 @@ pt=5/3
 ability=flying
 timing=main
 requires_groovy_code
-oracle=Flying. When Avatar of Discord enters the battlefield, sacrifice it unless you discard two cards.
+oracle=Flying\nWhen Avatar of Discord enters the battlefield, sacrifice it unless you discard two cards.

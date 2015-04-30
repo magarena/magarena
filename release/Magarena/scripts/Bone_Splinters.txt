@@ -7,4 +7,4 @@ cost={B}
 ability=As an additional cost to cast SN, sacrifice a creature.
 effect=Destroy target creature.
 timing=main
-oracle=As an additional cost to cast Bone Splinters, sacrifice a creature. Destroy target creature.
+oracle=As an additional cost to cast Bone Splinters, sacrifice a creature.\nDestroy target creature.

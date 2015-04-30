@@ -9,4 +9,4 @@ pt=2/2
 ability={R}{G}: Creatures you control gain trample until end of turn.;\
         {1}{R}{G}: Target land you control becomes a 4/4 Elemental creature until end of turn. It's still a land.
 timing=main
-oracle={R}{G}: Creatures you control gain trample until end of turn. {1}{R}{G}: Target land you control becomes a 4/4 Elemental creature until end of turn. It's still a land.
+oracle={R}{G}: Creatures you control gain trample until end of turn.\n{1}{R}{G}: Target land you control becomes a 4/4 Elemental creature until end of turn. It's still a land.

@@ -9,4 +9,4 @@ pt=2/2
 ability=level up {3} 4
 timing=main
 requires_groovy_code
-oracle=Level up {3}. LEVEL 1-3. 2/3. Flying. LEVEL 4+. 4/4. Flying, vigilance
+oracle=Level up {3}\nLEVEL 1-3\n2/3\nFlying\nLEVEL 4+\n4/4\nFlying, vigilance

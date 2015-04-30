@@ -10,4 +10,4 @@ ability=Flash;\
         {R}: Return SN to its owner's hand.
 enchant=pump,pos creature
 timing=aura
-oracle=Flash. Enchant creature. {R}: Enchanted creature gets +1/+0 until end of turn. {R}: Return Ghitu Firebreathing to its owner's hand.
+oracle=Flash\nEnchant creature\n{R}: Enchanted creature gets +1/+0 until end of turn.\n{R}: Return Ghitu Firebreathing to its owner's hand.

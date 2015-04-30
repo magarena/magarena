@@ -9,4 +9,4 @@ ability=Reach;\
         {6}{G}: Monstrosity 4.
 pt=4/5
 timing=main
-oracle=Reach. {6}{G}: Monstrosity 4.
+oracle=Reach\n{6}{G}: Monstrosity 4.

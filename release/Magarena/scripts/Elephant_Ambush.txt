@@ -7,4 +7,4 @@ cost={2}{G}{G}
 effect=Put a 3/3 green Elephant creature token onto the battlefield.
 ability=Flashback {6}{G}{G}
 timing=pumpFlash
-oracle=Put a 3/3 green Elephant creature token onto the battlefield. Flashback {6}{G}{G}
+oracle=Put a 3/3 green Elephant creature token onto the battlefield.\nFlashback {6}{G}{G}

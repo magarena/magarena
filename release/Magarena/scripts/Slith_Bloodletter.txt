@@ -9,4 +9,4 @@ pt=1/1
 ability=Whenever SN deals combat damage to a player, put a +1/+1 counter on SN.;\
         {1}{G}: Regenerate SN.
 timing=main
-oracle=Whenever Slith Bloodletter deals combat damage to a player, put a +1/+1 counter on it. {1}{B}: Regenerate Slith Bloodletter.
+oracle=Whenever Slith Bloodletter deals combat damage to a player, put a +1/+1 counter on it.\n{1}{B}: Regenerate Slith Bloodletter.

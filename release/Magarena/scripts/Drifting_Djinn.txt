@@ -9,4 +9,4 @@ pt=5/5
 ability=flying;\
         cycling {2};At the beginning of your upkeep, you may pay {1}{U}. If you don't, sacrifice SN.
 timing=main
-oracle=Flying. At the beginning of your upkeep, sacrifice Drifting Djinn unless you pay {1}{U}. Cycling {2}
+oracle=Flying\nAt the beginning of your upkeep, sacrifice Drifting Djinn unless you pay {1}{U}.\nCycling {2}

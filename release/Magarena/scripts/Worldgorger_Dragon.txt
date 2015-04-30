@@ -10,4 +10,4 @@ ability=Flying; trample;\
         When SN enters the battlefield, exile all other permanents you control.;\
         When SN leaves the battlefield, return the exiled cards to the battlefield under their owners' control.
 timing=main
-oracle=Flying, trample. When Worldgorger Dragon enters the battlefield, exile all other permanents you control. When Worldgorger Dragon leaves the battlefield, return the exiled cards to the battlefield under their owners' control.
+oracle=Flying, trample\nWhen Worldgorger Dragon enters the battlefield, exile all other permanents you control.\nWhen Worldgorger Dragon leaves the battlefield, return the exiled cards to the battlefield under their owners' control.

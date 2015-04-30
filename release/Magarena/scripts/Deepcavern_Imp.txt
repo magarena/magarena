@@ -9,4 +9,4 @@ pt=2/2
 ability=flying;haste
 timing=fmain
 requires_groovy_code
-oracle=Flying, haste. Echo—Discard a card.
+oracle=Flying, haste\nEcho—Discard a card.

@@ -8,4 +8,4 @@ ability=miracle {R}
 effect=SN deals 5 damage to target creature or player.
 removal=5
 timing=removal
-oracle=Thunderous Wrath deals 5 damage to target creature or player. Miracle {R}
+oracle=Thunderous Wrath deals 5 damage to target creature or player.\nMiracle {R}

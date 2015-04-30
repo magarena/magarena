@@ -9,4 +9,4 @@ pt=3/3
 ability=flying;other griffin creatures get +1/+1
 static=all
 timing=main
-oracle=Flying. Other Griffin creatures get +1/+1.
+oracle=Flying\nOther Griffin creatures get +1/+1.

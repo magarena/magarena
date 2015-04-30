@@ -9,4 +9,4 @@ pt=2/1
 ability=Morph {2}{R};\
         When SN is turned face up, SN deals 2 damage to target creature or player.
 timing=main
-oracle=Morph {2}{R}. When Skirk Marauder is turned face up, it deals 2 damage to target creature or player.
+oracle=Morph {2}{R}\nWhen Skirk Marauder is turned face up, it deals 2 damage to target creature or player.

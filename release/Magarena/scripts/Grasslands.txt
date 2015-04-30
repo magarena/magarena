@@ -6,4 +6,4 @@ type=Land
 ability=SN enters the battlefield tapped.;\
         {T},Sacrifice SN: Search your library for a Forest or Plains card and put it onto the battlefield. Then shuffle your library.
 timing=land
-oracle=Grasslands enters the battlefield tapped. {T}, Sacrifice Grasslands: Search your library for a Forest or Plains card and put it onto the battlefield. Then shuffle your library.
+oracle=Grasslands enters the battlefield tapped.\n{T}, Sacrifice Grasslands: Search your library for a Forest or Plains card and put it onto the battlefield. Then shuffle your library.

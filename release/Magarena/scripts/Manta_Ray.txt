@@ -10,4 +10,4 @@ ability=SN can't attack unless defending player controls an Island.;\
         SN can't be blocked except by blue creatures.
 timing=main
 requires_groovy_code=Sea Serpent
-oracle=Manta Ray can't attack unless defending player controls an Island. Manta Ray can't be blocked except by blue creatures. When you control no Islands, sacrifice Manta Ray.
+oracle=Manta Ray can't attack unless defending player controls an Island.\nManta Ray can't be blocked except by blue creatures.\nWhen you control no Islands, sacrifice Manta Ray.

@@ -7,4 +7,4 @@ cost={4}{B}{B}
 effect=Destroy target nonblack creature.
 ability=Madness {B}
 timing=removal
-oracle=Destroy target nonblack creature. Madness {B}
+oracle=Destroy target nonblack creature.\nMadness {B}

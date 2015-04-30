@@ -9,4 +9,4 @@ pt=3/3
 ability=Flying
 requires_groovy_code
 timing=main
-oracle=Flying. {2}{W}: Choose a color. Creatures you control gain protection from the chosen color until end of turn. Activate this ability only if Glory is in your graveyard.
+oracle=Flying\n{2}{W}: Choose a color. Creatures you control gain protection from the chosen color until end of turn. Activate this ability only if Glory is in your graveyard.

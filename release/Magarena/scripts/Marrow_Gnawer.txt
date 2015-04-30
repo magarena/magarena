@@ -9,4 +9,4 @@ pt=2/3
 ability=Rat creatures have fear.
 requires_groovy_code
 timing=main
-oracle=Rat creatures have fear. {T}, Sacrifice a Rat: Put X 1/1 black Rat creature tokens onto the battlefield, where X is the number of Rats you control.
+oracle=Rat creatures have fear.\n{T}, Sacrifice a Rat: Put X 1/1 black Rat creature tokens onto the battlefield, where X is the number of Rats you control.

@@ -10,4 +10,4 @@ ability=Flying;\
         Megamorph {1}{U};\
         When SN is turned face up, counter target instant or sorcery spell.
 timing=main
-oracle=Flying. Megamorph {1}{U}. When Stratus Dancer is turned face up, counter target instant or sorcery spell.
+oracle=Flying\nMegamorph {1}{U}\nWhen Stratus Dancer is turned face up, counter target instant or sorcery spell.

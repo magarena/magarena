@@ -8,4 +8,4 @@ subtype=Goblin
 cost={1}{R}
 pt=1/1
 timing=fmain
-oracle=Flying. Goblin Glider can't block.
+oracle=Flying\nGoblin Glider can't block.

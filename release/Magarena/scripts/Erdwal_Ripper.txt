@@ -9,4 +9,4 @@ pt=2/1
 ability=haste;\
         Whenever SN deals combat damage to a player, put a +1/+1 counter on SN.
 timing=fmain
-oracle=Haste. Whenever Erdwal Ripper deals combat damage to a player, put a +1/+1 counter on it.
+oracle=Haste\nWhenever Erdwal Ripper deals combat damage to a player, put a +1/+1 counter on it.

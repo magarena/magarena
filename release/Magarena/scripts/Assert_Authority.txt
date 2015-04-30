@@ -7,4 +7,4 @@ cost={5}{U}{U}
 ability=Affinity for artifacts
 effect=Counter target spell. If that spell is countered this way, exile it instead of putting it into its owner's graveyard.
 timing=counter
-oracle=Affinity for artifacts. Counter target spell. If that spell is countered this way, exile it instead of putting it into its owner's graveyard.
+oracle=Affinity for artifacts\nCounter target spell. If that spell is countered this way, exile it instead of putting it into its owner's graveyard.

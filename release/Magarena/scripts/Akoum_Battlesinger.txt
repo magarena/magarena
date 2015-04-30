@@ -9,4 +9,4 @@ pt=1/1
 ability=Haste;\
         Whenever SN or another Ally enters the battlefield under your control, you may have Ally creatures you control get +1/+0 until end of turn.
 timing=fmain
-oracle=Haste. Whenever Akoum Battlesinger or another Ally enters the battlefield under your control, you may have Ally creatures you control get +1/+0 until end of turn.
+oracle=Haste\nWhenever Akoum Battlesinger or another Ally enters the battlefield under your control, you may have Ally creatures you control get +1/+0 until end of turn.

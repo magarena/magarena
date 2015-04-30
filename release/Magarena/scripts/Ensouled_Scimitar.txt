@@ -9,4 +9,4 @@ ability={3}: SN becomes a 1/5 Spirit artifact creature with flying until end of 
         Equipped creature gets +1/+5.;\
         Equip {2}
 timing=main
-oracle={3}: Ensouled Scimitar becomes a 1/5 Spirit artifact creature with flying until end of turn. Equipped creature gets +1/+5. Equip {2}
+oracle={3}: Ensouled Scimitar becomes a 1/5 Spirit artifact creature with flying until end of turn.\nEquipped creature gets +1/+5.\nEquip {2}

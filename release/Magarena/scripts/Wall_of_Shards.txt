@@ -9,4 +9,4 @@ pt=1/8
 ability=Defender; flying
 timing=main
 requires_groovy_code
-oracle=Defender, flying. Cumulative upkeep—An opponent gains 1 life.
+oracle=Defender, flying\nCumulative upkeep—An opponent gains 1 life.

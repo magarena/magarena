@@ -9,4 +9,4 @@ ability=Enchanted creature doesn't untap during its controller's untap step.;\
         {W}:Return SN to its owner's hand.
 timing=enchantment
 enchant=tap,neg creature
-oracle=Enchant creature. Enchanted creature doesn't untap during its controller's untap step. {W}: Return Shackles to its owner's hand.
+oracle=Enchant creature\nEnchanted creature doesn't untap during its controller's untap step.\n{W}: Return Shackles to its owner's hand.

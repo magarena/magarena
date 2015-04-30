@@ -9,4 +9,4 @@ pt=6/5
 ability=Morph {5}{G}{G};\
         When SN is turned face up, you may put a creature card from your hand onto the battlefield.
 timing=main
-oracle=Morph {5}{G}{G}. When Root Elemental is turned face up, you may put a creature card from your hand onto the battlefield.
+oracle=Morph {5}{G}{G}\nWhen Root Elemental is turned face up, you may put a creature card from your hand onto the battlefield.

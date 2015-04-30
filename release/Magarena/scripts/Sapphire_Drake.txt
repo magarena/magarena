@@ -9,4 +9,4 @@ pt=4/4
 ability=Flying;\
         Each creature you control with a +1/+1 counter on it has flying.
 timing=main
-oracle=Flying. Each creature you control with a +1/+1 counter on it has flying.
+oracle=Flying\nEach creature you control with a +1/+1 counter on it has flying.

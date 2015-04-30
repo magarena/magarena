@@ -9,4 +9,4 @@ pt=4/2
 ability=Haste
 timing=main
 requires_groovy_code
-oracle=Haste. Whenever a creature you control deals combat damage to a player, put a +1/+1 counter on it. Ferocious — {2}{G/U}{G/U}: Draw a card for each creature you control with power 4 or greater.
+oracle=Haste\nWhenever a creature you control deals combat damage to a player, put a +1/+1 counter on it.\nFerocious — {2}{G/U}{G/U}: Draw a card for each creature you control with power 4 or greater.

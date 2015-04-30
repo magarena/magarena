@@ -9,4 +9,4 @@ pt=3/3
 ability=SN has indestructible as long as it has a divinity counter on it.
 timing=main
 requires_groovy_code
-oracle=Myojin of Seeing Winds enters the battlefield with a divinity counter on it if you cast it from your hand. Myojin of Seeing Winds has indestructible as long as it has a divinity counter on it. Remove a divinity counter from Myojin of Seeing Winds: Draw a card for each permanent you control.
+oracle=Myojin of Seeing Winds enters the battlefield with a divinity counter on it if you cast it from your hand.\nMyojin of Seeing Winds has indestructible as long as it has a divinity counter on it.\nRemove a divinity counter from Myojin of Seeing Winds: Draw a card for each permanent you control.

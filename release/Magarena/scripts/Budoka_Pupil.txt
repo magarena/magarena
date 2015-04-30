@@ -10,4 +10,4 @@ ability=Whenever you cast a Spirit or Arcane spell, you may put a ki counter on 
         At the beginning of the end step, if there are two or more ki counters on SN, you may flip SN.
 timing=main
 flip=Ichiga, Who Topples Oaks
-oracle=Whenever you cast a Spirit or Arcane spell, you may put a ki counter on Budoka Pupil. At the beginning of the end step, if there are two or more ki counters on Budoka Pupil, you may flip it.
+oracle=Whenever you cast a Spirit or Arcane spell, you may put a ki counter on Budoka Pupil.\nAt the beginning of the end step, if there are two or more ki counters on Budoka Pupil, you may flip it.

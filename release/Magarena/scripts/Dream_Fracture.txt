@@ -6,4 +6,4 @@ type=Instant
 cost={1}{U}{U}
 timing=counter
 requires_groovy_code
-oracle=Counter target spell. Its controller draws a card. Draw a card.
+oracle=Counter target spell. Its controller draws a card.\nDraw a card.

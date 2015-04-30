@@ -7,4 +7,4 @@ mana=u3b3r3
 ability={T}: Add {U} or {B} or {R} to your mana pool.;\
         SN enters the battlefield tapped.
 timing=tapland
-oracle=Crumbling Necropolis enters the battlefield tapped. {T}: Add {U}, {B}, or {R} to your mana pool.
+oracle=Crumbling Necropolis enters the battlefield tapped.\n{T}: Add {U}, {B}, or {R} to your mana pool.

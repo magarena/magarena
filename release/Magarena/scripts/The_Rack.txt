@@ -7,4 +7,4 @@ cost={1}
 timing=smain
 ability=As SN enters the battlefield, choose an opponent.
 requires_groovy_code
-oracle=As The Rack enters the battlefield, choose an opponent. At the beginning of the chosen player's upkeep, The Rack deals X damage to that player, where X is 3 minus the number of cards in his or her hand.
+oracle=As The Rack enters the battlefield, choose an opponent.\nAt the beginning of the chosen player's upkeep, The Rack deals X damage to that player, where X is 3 minus the number of cards in his or her hand.

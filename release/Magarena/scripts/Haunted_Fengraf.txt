@@ -6,4 +6,4 @@ type=Land
 ability={T}: Add {1} to your mana pool.
 timing=land
 requires_groovy_code
-oracle={T}: Add {1} to your mana pool. {3}, {T}, Sacrifice Haunted Fengraf: Return a creature card at random from your graveyard to your hand.
+oracle={T}: Add {1} to your mana pool.\n{3}, {T}, Sacrifice Haunted Fengraf: Return a creature card at random from your graveyard to your hand.

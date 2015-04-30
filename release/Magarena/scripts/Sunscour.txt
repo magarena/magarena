@@ -7,4 +7,4 @@ cost={5}{W}{W}
 ability=You may exile two white cards from your hand rather than pay SN's mana cost.
 effect=Destroy all creatures.
 timing=main
-oracle=You may exile two white cards from your hand rather than pay Sunscour's mana cost. Destroy all creatures.
+oracle=You may exile two white cards from your hand rather than pay Sunscour's mana cost.\nDestroy all creatures.

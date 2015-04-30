@@ -9,4 +9,4 @@ pt=3/2
 ability=shroud
 timing=main
 requires_groovy_code
-oracle=Shroud. When Scythe Tiger enters the battlefield, sacrifice it unless you sacrifice a land.
+oracle=Shroud\nWhen Scythe Tiger enters the battlefield, sacrifice it unless you sacrifice a land.

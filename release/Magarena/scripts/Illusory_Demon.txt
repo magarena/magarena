@@ -9,4 +9,4 @@ pt=4/3
 ability=Flying;\
         When you cast a spell, sacrifice SN.
 timing=main
-oracle=Flying. When you cast a spell, sacrifice Illusory Demon.
+oracle=Flying\nWhen you cast a spell, sacrifice Illusory Demon.

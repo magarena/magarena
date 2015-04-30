@@ -9,4 +9,4 @@ pt=2/2
 ability=First strike
 timing=main
 requires_groovy_code
-oracle=First strike. Whenever Voracious Cobra deals combat damage to a creature, destroy that creature.
+oracle=First strike\nWhenever Voracious Cobra deals combat damage to a creature, destroy that creature.

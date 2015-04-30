@@ -9,4 +9,4 @@ pt=6/6
 ability=Flying; trample
 timing=main
 requires_groovy_code
-oracle=Flying, trample. You can't win the game and your opponents can't lose the game.
+oracle=Flying, trample\nYou can't win the game and your opponents can't lose the game.

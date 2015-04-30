@@ -9,4 +9,4 @@ pt=2/1
 ability=SN can't be blocked by artifact creatures.
 timing=main
 requires_groovy_code
-oracle=Argothian Pixies can't be blocked by artifact creatures. Prevent all damage that would be dealt to Argothian Pixies by artifact creatures.
+oracle=Argothian Pixies can't be blocked by artifact creatures.\nPrevent all damage that would be dealt to Argothian Pixies by artifact creatures.

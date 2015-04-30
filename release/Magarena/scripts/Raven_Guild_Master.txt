@@ -9,4 +9,4 @@ pt=1/1
 ability=Morph {2}{U}{U}
 timing=main
 requires_groovy_code
-oracle=Whenever Raven Guild Master deals combat damage to a player, that player exiles the top ten cards of his or her library. Morph {2}{U}{U}
+oracle=Whenever Raven Guild Master deals combat damage to a player, that player exiles the top ten cards of his or her library.\nMorph {2}{U}{U}

@@ -9,4 +9,4 @@ pt=3/2
 ability=Horsemanship;\
         Sacrifice SN: Return target black card from your graveyard to your hand. Activate this ability only during your turn, before attackers are declared.
 timing=main
-oracle=Horsemanship. Sacrifice Xiahou Dun, the One-Eyed: Return target black card from your graveyard to your hand. Activate this ability only during your turn, before attackers are declared.
+oracle=Horsemanship\nSacrifice Xiahou Dun, the One-Eyed: Return target black card from your graveyard to your hand. Activate this ability only during your turn, before attackers are declared.

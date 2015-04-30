@@ -7,4 +7,4 @@ cost={U}
 ability=replicate {U}
 effect=Tap target permanent.
 timing=tapping
-oracle=Replicate {U}. Tap target permanent.
+oracle=Replicate {U}\nTap target permanent.

@@ -9,4 +9,4 @@ pt=2/2
 ability=SN can't block creatures with power 2 or greater.;\
         Dash {1}{R}
 timing=main
-oracle=Zurgo Bellstriker can't block creatures with power 2 or greater. Dash {1}{R}
+oracle=Zurgo Bellstriker can't block creatures with power 2 or greater.\nDash {1}{R}

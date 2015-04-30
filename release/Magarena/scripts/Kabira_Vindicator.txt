@@ -9,4 +9,4 @@ pt=2/4
 ability=level up {2}{W} 5
 timing=main
 requires_groovy_code
-oracle=Level up {2}{W}. LEVEL 2-4. 3/6. Other creatures you control get +1/+1. LEVEL 5+. 4/8. Other creatures you control get +2/+2.
+oracle=Level up {2}{W}\nLEVEL 2-4\n3/6\nOther creatures you control get +1/+1.\nLEVEL 5+\n4/8\nOther creatures you control get +2/+2.

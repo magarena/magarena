@@ -7,4 +7,4 @@ cost={3}{U}
 effect=Return target permanent to its owner's hand.
 ability=Flashback {5}{U}{U}
 timing=main
-oracle=Return target permanent to its owner's hand. Flashback {5}{U}{U}
+oracle=Return target permanent to its owner's hand.\nFlashback {5}{U}{U}

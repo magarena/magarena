@@ -6,4 +6,4 @@ type=Legendary,Land
 ability={T}: Add {1} to your mana pool.;\
         {G}, {T}: Regenerate target creature.
 timing=land
-oracle={T}: Add {1} to your mana pool. {G}, {T}: Regenerate target creature.
+oracle={T}: Add {1} to your mana pool.\n{G}, {T}: Regenerate target creature.

@@ -6,4 +6,4 @@ type=Instant
 cost={1}{G}
 effect=Counter target activated ability.~Draw a card.
 timing=counter
-oracle=Counter target activated ability. Draw a card.
+oracle=Counter target activated ability.\nDraw a card.

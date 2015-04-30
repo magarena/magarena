@@ -9,4 +9,4 @@ pt=3/3
 ability=Defender;\
         {3}: SN loses defender until end of turn.~SN gains flying until end of turn.
 timing=main
-oracle=Defender. {3}: Until end of turn, Gargoyle Sentinel loses defender and gains flying.
+oracle=Defender\n{3}: Until end of turn, Gargoyle Sentinel loses defender and gains flying.

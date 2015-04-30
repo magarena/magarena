@@ -7,4 +7,4 @@ cost={2}
 ability=Indestructible.;\
         {3}: SN becomes a 2/2 Beast artifact creature until end of turn.
 timing=artifact
-oracle=Indestructible. {3}: Darksteel Brute becomes a 2/2 Beast artifact creature until end of turn.
+oracle=Indestructible\n{3}: Darksteel Brute becomes a 2/2 Beast artifact creature until end of turn.

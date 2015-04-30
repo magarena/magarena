@@ -9,4 +9,4 @@ pt=2/2
 ability=Other white creatures you control get +1/+1.;\
         {W}, {T}: Another target white creature you control gains vigilance until end of turn.
 timing=main
-oracle=Other white creatures you control get +1/+1. {W}, {T}: Another target white creature you control gains vigilance until end of turn.
+oracle=Other white creatures you control get +1/+1.\n{W}, {T}: Another target white creature you control gains vigilance until end of turn.

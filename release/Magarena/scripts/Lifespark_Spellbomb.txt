@@ -7,4 +7,4 @@ cost={1}
 ability={G}, Sacrifice SN: Until end of turn, target land becomes a 3/3 creature that's still a land.;\
         {1}, Sacrifice SN: Draw a card.
 timing=main
-oracle={G}, Sacrifice Lifespark Spellbomb: Until end of turn, target land becomes a 3/3 creature that's still a land. {1}, Sacrifice Lifespark Spellbomb: Draw a card.
+oracle={G}, Sacrifice Lifespark Spellbomb: Until end of turn, target land becomes a 3/3 creature that's still a land.\n{1}, Sacrifice Lifespark Spellbomb: Draw a card.

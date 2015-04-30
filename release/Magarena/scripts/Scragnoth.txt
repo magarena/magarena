@@ -9,4 +9,4 @@ pt=3/4
 ability=SN can't be countered.;\
         protection from blue
 timing=main
-oracle=Scragnoth can't be countered. Protection from blue
+oracle=Scragnoth can't be countered.\nProtection from blue

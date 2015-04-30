@@ -6,4 +6,4 @@ type=Instant
 cost={B}
 effect=Target creature becomes black and gains fear until end of turn.~Draw a card.
 timing=pump
-oracle=Target creature becomes black and gains fear until end of turn. Draw a card.
+oracle=Target creature becomes black and gains fear until end of turn.\nDraw a card.

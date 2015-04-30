@@ -9,4 +9,4 @@ pt=10/9
 ability=annihilator 2
 timing=main
 requires_groovy_code
-oracle=When you cast Artisan of Kozilek, you may return target creature card from your graveyard to the battlefield. Annihilator 2
+oracle=When you cast Artisan of Kozilek, you may return target creature card from your graveyard to the battlefield.\nAnnihilator 2

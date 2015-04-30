@@ -9,4 +9,4 @@ pt=3/3
 ability=trample;\
         {G}, Discard a card: Regenerate SN.
 timing=main
-oracle=Trample. {G}, Discard a card: Regenerate Centaur Veteran.
+oracle=Trample\n{G}, Discard a card: Regenerate Centaur Veteran.

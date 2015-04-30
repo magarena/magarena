@@ -9,4 +9,4 @@ pt=5/5
 ability=Flying
 timing=main
 requires_groovy_code
-oracle=Flying. When Conquering Manticore enters the battlefield, gain control of target creature an opponent controls until end of turn. Untap that creature. It gains haste until end of turn.
+oracle=Flying\nWhen Conquering Manticore enters the battlefield, gain control of target creature an opponent controls until end of turn. Untap that creature. It gains haste until end of turn.

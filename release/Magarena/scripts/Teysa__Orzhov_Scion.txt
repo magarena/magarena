@@ -9,4 +9,4 @@ pt=2/3
 ability=Sacrifice three white creatures: Exile target creature.;\
         Whenever another black creature you control dies, put a 1/1 white Spirit creature token with flying onto the battlefield.
 timing=main
-oracle=Sacrifice three white creatures: Exile target creature. Whenever another black creature you control dies, put a 1/1 white Spirit creature token with flying onto the battlefield.
+oracle=Sacrifice three white creatures: Exile target creature.\nWhenever another black creature you control dies, put a 1/1 white Spirit creature token with flying onto the battlefield.

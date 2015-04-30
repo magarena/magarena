@@ -9,4 +9,4 @@ pt=1/1
 ability=haste;\
         {1}{B}: Regenerate SN.
 timing=fmain
-oracle=Haste. {1}{B}: Regenerate Manor Skeleton.
+oracle=Haste\n{1}{B}: Regenerate Manor Skeleton.

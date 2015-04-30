@@ -9,4 +9,4 @@ pt=2/3
 ability=bushido 1
 timing=main
 requires_groovy_code
-oracle=Bushido 1. {1}{R}: Sokenzan Spellblade gets +X/+0 until end of turn, where X is the number of cards in your hand.
+oracle=Bushido 1\n{1}{R}: Sokenzan Spellblade gets +X/+0 until end of turn, where X is the number of cards in your hand.

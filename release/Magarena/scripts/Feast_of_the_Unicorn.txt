@@ -8,4 +8,4 @@ cost={3}{B}
 ability=Enchanted creature gets +4/+0.
 timing=aura
 enchant=pump,pos creature
-oracle=Enchant creature. Enchanted creature gets +4/+0.
+oracle=Enchant creature\nEnchanted creature gets +4/+0.

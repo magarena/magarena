@@ -9,4 +9,4 @@ pt=2/2
 ability=flying
 timing=main
 requires_groovy_code=Order of the Stars
-oracle=Flying. As Voice of All enters the battlefield, choose a color. Voice of All has protection from the chosen color.
+oracle=Flying\nAs Voice of All enters the battlefield, choose a color.\nVoice of All has protection from the chosen color.

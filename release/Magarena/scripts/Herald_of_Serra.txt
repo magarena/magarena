@@ -8,4 +8,4 @@ cost={2}{W}{W}
 pt=3/4
 ability=flying;vigilance;echo {2}{W}{W}
 timing=main
-oracle=Flying, vigilance. Echo {2}{W}{W}
+oracle=Flying, vigilance\nEcho {2}{W}{W}

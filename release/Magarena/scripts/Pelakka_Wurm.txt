@@ -10,4 +10,4 @@ ability=trample;\
         When SN enters the battlefield, you gain 7 life.;\
         When SN dies, draw a card.
 timing=fmain
-oracle=Trample. When Pelakka Wurm enters the battlefield, you gain 7 life. When Pelakka Wurm dies, draw a card.
+oracle=Trample\nWhen Pelakka Wurm enters the battlefield, you gain 7 life.\nWhen Pelakka Wurm dies, draw a card.

@@ -9,4 +9,4 @@ pt=3/3
 ability=Flying;\
         {U}, Discard SN: Target creature gains flying until end of turn.
 timing=main
-oracle=Flying. Channel — {U}, Discard Shinen of Flight's Wings: Target creature gains flying until end of turn.
+oracle=Flying\nChannel — {U}, Discard Shinen of Flight's Wings: Target creature gains flying until end of turn.

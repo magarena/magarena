@@ -9,4 +9,4 @@ ability=When SN enters the battlefield, draw two cards.;\
         Enchanted creature has flying.
 timing=aura
 enchant=flying,pos creature
-oracle=Enchant creature. When Flight of Fancy enters the battlefield, draw two cards. Enchanted creature has flying.
+oracle=Enchant creature\nWhen Flight of Fancy enters the battlefield, draw two cards.\nEnchanted creature has flying.

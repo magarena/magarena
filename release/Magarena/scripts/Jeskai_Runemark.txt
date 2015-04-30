@@ -9,4 +9,4 @@ ability=Enchanted creature gets +2/+2.;\
         Enchanted creature has flying as long as you control a red or white permanent.
 timing=aura
 enchant=pump,pos creature
-oracle=Enchant creature. Enchanted creature gets +2/+2. Enchanted creature has flying as long as you control a red or white permanent.
+oracle=Enchant creature\nEnchanted creature gets +2/+2.\nEnchanted creature has flying as long as you control a red or white permanent.

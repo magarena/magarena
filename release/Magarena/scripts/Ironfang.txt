@@ -11,4 +11,4 @@ ability=First strike;\
 transform=Village Ironsmith
 timing=main
 hidden
-oracle=First strike. At the beginning of each upkeep, if a player cast two or more spells last turn, transform Ironfang.
+oracle=First strike\nAt the beginning of each upkeep, if a player cast two or more spells last turn, transform Ironfang.

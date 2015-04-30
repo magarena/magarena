@@ -7,4 +7,4 @@ cost={3}{G}
 ability=Retrace
 effect=Target creature gets +4/+4 until end of turn.
 timing=pump
-oracle=Target creature gets +4/+4 until end of turn. Retrace
+oracle=Target creature gets +4/+4 until end of turn.\nRetrace

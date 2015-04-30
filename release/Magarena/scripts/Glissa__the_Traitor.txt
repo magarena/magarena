@@ -9,4 +9,4 @@ pt=3/3
 ability=first strike;deathtouch;\
         Whenever a creature an opponent controls dies, you may return target artifact card from your graveyard to your hand.
 timing=fmain
-oracle=First strike, deathtouch. Whenever a creature an opponent controls dies, you may return target artifact card from your graveyard to your hand.
+oracle=First strike, deathtouch\nWhenever a creature an opponent controls dies, you may return target artifact card from your graveyard to your hand.

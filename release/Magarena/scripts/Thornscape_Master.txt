@@ -9,4 +9,4 @@ pt=2/2
 ability={R}{R}, {T}: SN deals 2 damage to target creature.;\
         {W}{W}, {T}: Target creature gains protection from the color of your choice until end of turn.
 timing=main
-oracle={R}{R}, {T}: Thornscape Master deals 2 damage to target creature. {W}{W}, {T}: Target creature gains protection from the color of your choice until end of turn.
+oracle={R}{R}, {T}: Thornscape Master deals 2 damage to target creature.\n{W}{W}, {T}: Target creature gains protection from the color of your choice until end of turn.

@@ -9,4 +9,4 @@ pt=4/4
 ability=extort;\
         Whenever SN attacks, you may return target artifact, creature, or enchantment card from your graveyard to your hand.
 timing=main
-oracle=Extort. Whenever Treasury Thrull attacks, you may return target artifact, creature, or enchantment card from your graveyard to your hand.
+oracle=Extort\nWhenever Treasury Thrull attacks, you may return target artifact, creature, or enchantment card from your graveyard to your hand.

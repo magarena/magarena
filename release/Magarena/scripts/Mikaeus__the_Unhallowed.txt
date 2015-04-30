@@ -12,4 +12,4 @@ ability=intimidate;\
 static=player
 timing=main
 requires_groovy_code
-oracle=Intimidate. Whenever a Human deals damage to you, destroy it. Other non-Human creatures you control get +1/+1 and have undying.
+oracle=Intimidate\nWhenever a Human deals damage to you, destroy it.\nOther non-Human creatures you control get +1/+1 and have undying.

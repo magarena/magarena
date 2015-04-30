@@ -7,4 +7,4 @@ cost={1}{B}{R}
 ability=Goblin creatures get +1/+1.
 timing=main
 requires_groovy_code
-oracle=Goblin creatures get +1/+1. All Goblins are black and are Zombies in addition to their other creature types.
+oracle=Goblin creatures get +1/+1.\nAll Goblins are black and are Zombies in addition to their other creature types.

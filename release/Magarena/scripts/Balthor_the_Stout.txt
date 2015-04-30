@@ -10,4 +10,4 @@ ability=Other barbarian creatures get +1/+1.;\
         {R}: Another target Barbarian creature gets +1/+0 until end of turn.
 static=all
 timing=main
-oracle=Other Barbarian creatures get +1/+1. {R}: Another target Barbarian creature gets +1/+0 until end of turn.
+oracle=Other Barbarian creatures get +1/+1.\n{R}: Another target Barbarian creature gets +1/+0 until end of turn.

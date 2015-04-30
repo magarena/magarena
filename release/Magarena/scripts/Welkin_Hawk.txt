@@ -9,4 +9,4 @@ pt=1/1
 ability=Flying;\
         When SN dies, you may search your library for a card named Welkin Hawk, reveal that card, put it into your hand, then shuffle your library.
 timing=main
-oracle=Flying. When Welkin Hawk dies, you may search your library for a card named Welkin Hawk, reveal that card, put it into your hand, then shuffle your library.
+oracle=Flying\nWhen Welkin Hawk dies, you may search your library for a card named Welkin Hawk, reveal that card, put it into your hand, then shuffle your library.

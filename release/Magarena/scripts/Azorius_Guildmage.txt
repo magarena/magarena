@@ -9,4 +9,4 @@ pt=2/2
 ability={2}{W}: Tap target creature.;\
         {2}{U}: Counter target activated ability.
 timing=main
-oracle={2}{W}: Tap target creature. {2}{U}: Counter target activated ability.
+oracle={2}{W}: Tap target creature.\n{2}{U}: Counter target activated ability.

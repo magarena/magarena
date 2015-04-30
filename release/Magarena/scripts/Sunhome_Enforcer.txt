@@ -9,4 +9,4 @@ pt=2/4
 ability={1}{R}: SN gets +1/+0 until end of turn.
 timing=main
 requires_groovy_code
-oracle=Whenever Sunhome Enforcer deals combat damage, you gain that much life. {1}{R}: Sunhome Enforcer gets +1/+0 until end of turn.
+oracle=Whenever Sunhome Enforcer deals combat damage, you gain that much life.\n{1}{R}: Sunhome Enforcer gets +1/+0 until end of turn.

@@ -11,4 +11,4 @@ ability=shadow;\
         When SN enters the battlefield, exile another target creature with shadow.;\
         When SN leaves the battlefield, return the exiled card to the battlefield under its owner's control.
 timing=main
-oracle=Shadow. When Faceless Devourer enters the battlefield, exile another target creature with shadow. When Faceless Devourer leaves the battlefield, return the exiled card to the battlefield under its owner's control.
+oracle=Shadow\nWhen Faceless Devourer enters the battlefield, exile another target creature with shadow.\nWhen Faceless Devourer leaves the battlefield, return the exiled card to the battlefield under its owner's control.

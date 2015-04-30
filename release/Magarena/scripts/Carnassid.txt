@@ -9,4 +9,4 @@ pt=5/4
 ability=trample;\
         {1}{G}: Regenerate SN.
 timing=main
-oracle=Trample. {1}{G}: Regenerate Carnassid.
+oracle=Trample\n{1}{G}: Regenerate Carnassid.

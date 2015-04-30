@@ -8,4 +8,4 @@ cost={3}{U}
 pt=2/2
 ability=flying;Whenever a land enters the battlefield under your control, SN gets +2/+2 until end of turn.
 timing=main
-oracle=Flying. Landfall — Whenever a land enters the battlefield under your control, Windrider Eel gets +2/+2 until end of turn.
+oracle=Flying\nLandfall — Whenever a land enters the battlefield under your control, Windrider Eel gets +2/+2 until end of turn.

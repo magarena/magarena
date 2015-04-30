@@ -9,4 +9,4 @@ ability=Cycling {G/W}
 timing=main
 enchant=pump,pos creature
 requires_groovy_code
-oracle=Enchant creature. Enchanted creature gets +1/+1 for each creature you control. Cycling {G/W}
+oracle=Enchant creature\nEnchanted creature gets +1/+1 for each creature you control.\nCycling {G/W}

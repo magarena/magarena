@@ -9,4 +9,4 @@ pt=4/4
 ability=flying
 timing=main
 requires_groovy_code
-oracle=Flying. {X}{B}{B}: Target creature gets -0/-X until end of turn and Drana, Kalastria Bloodchief gets +X/+0 until end of turn.
+oracle=Flying\n{X}{B}{B}: Target creature gets -0/-X until end of turn and Drana, Kalastria Bloodchief gets +X/+0 until end of turn.

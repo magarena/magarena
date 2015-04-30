@@ -8,4 +8,4 @@ cost={G}{G}
 pt=2/2
 timing=main
 requires_groovy_code
-oracle=Each Fungus creature gets +1/+1 for each spore counter on it. {B}{G}, Exile a Fungus card from a graveyard: Put a spore counter on each Fungus on the battlefield.
+oracle=Each Fungus creature gets +1/+1 for each spore counter on it.\n{B}{G}, Exile a Fungus card from a graveyard: Put a spore counter on each Fungus on the battlefield.

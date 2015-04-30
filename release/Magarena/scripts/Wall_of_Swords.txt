@@ -8,4 +8,4 @@ subtype=Wall
 cost={3}{W}
 pt=3/5
 timing=smain
-oracle=Defender. Flying
+oracle=Defender\nFlying

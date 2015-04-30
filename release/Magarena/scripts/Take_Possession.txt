@@ -9,4 +9,4 @@ ability=Split second.;\
         You control enchanted permanent.
 timing=aura
 enchant=gain control,neg permanent
-oracle=Split second. Enchant permanent. You control enchanted permanent.
+oracle=Split second\nEnchant permanent\nYou control enchanted permanent.

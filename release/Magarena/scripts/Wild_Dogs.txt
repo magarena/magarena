@@ -9,4 +9,4 @@ pt=2/1
 ability=Cycling {2}
 timing=main
 requires_groovy_code
-oracle=At the beginning of your upkeep, if a player has more life than each other player, the player with the most life gains control of Wild Dogs. Cycling {2}
+oracle=At the beginning of your upkeep, if a player has more life than each other player, the player with the most life gains control of Wild Dogs.\nCycling {2}

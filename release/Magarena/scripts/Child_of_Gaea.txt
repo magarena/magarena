@@ -10,4 +10,4 @@ ability=Trample;\
         At the beginning of your upkeep, you may pay {G}{G}. If you don't, sacrifice SN.;\
         {1}{G}: Regenerate SN.
 timing=main
-oracle=Trample. At the beginning of your upkeep, sacrifice Child of Gaea unless you pay {G}{G}. {1}{G}: Regenerate Child of Gaea.
+oracle=Trample\nAt the beginning of your upkeep, sacrifice Child of Gaea unless you pay {G}{G}.\n{1}{G}: Regenerate Child of Gaea.

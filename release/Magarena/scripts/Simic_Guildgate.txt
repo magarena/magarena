@@ -8,4 +8,4 @@ mana=g3u3
 ability={T}: Add {G} or {U} to your mana pool.;\
         SN enters the battlefield tapped.
 timing=tapland
-oracle=Simic Guildgate enters the battlefield tapped. {T}: Add {G} or {U} to your mana pool.
+oracle=Simic Guildgate enters the battlefield tapped.\n{T}: Add {G} or {U} to your mana pool.

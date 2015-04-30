@@ -9,4 +9,4 @@ pt=3/3
 ability=Flying;\
         Whenever SN or another creature enters the battlefield under your control, tap target creature an opponent controls.
 timing=main
-oracle=Flying. Whenever Kapsho Kitefins or another creature enters the battlefield under your control, tap target creature an opponent controls.
+oracle=Flying\nWhenever Kapsho Kitefins or another creature enters the battlefield under your control, tap target creature an opponent controls.

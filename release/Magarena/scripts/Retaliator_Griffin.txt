@@ -9,4 +9,4 @@ pt=2/2
 ability=flying
 timing=fmain
 requires_groovy_code
-oracle=Flying. Whenever a source an opponent controls deals damage to you, you may put that many +1/+1 counters on Retaliator Griffin.
+oracle=Flying\nWhenever a source an opponent controls deals damage to you, you may put that many +1/+1 counters on Retaliator Griffin.

@@ -9,4 +9,4 @@ pt=6/3
 ability=Haste;\
         Multicolored creatures you control have haste.
 timing=main
-oracle=Haste. Multicolored creatures you control have haste.
+oracle=Haste\nMulticolored creatures you control have haste.

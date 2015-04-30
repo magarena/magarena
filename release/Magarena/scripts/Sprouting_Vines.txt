@@ -7,4 +7,4 @@ cost={2}{G}
 ability=storm
 effect=Search your library for a basic land card, reveal it, and put it into your hand. Then shuffle your library.
 timing=removal
-oracle=Search your library for a basic land card, reveal that card, and put it into your hand. Then shuffle your library. Storm
+oracle=Search your library for a basic land card, reveal that card, and put it into your hand. Then shuffle your library.\nStorm

@@ -6,4 +6,4 @@ type=Land
 ability={T}: Add {1} to your mana pool.
 timing=main
 requires_groovy_code
-oracle={T}: Add {1} to your mana pool. {T}: Untap target Griffin. If it's a creature, it gets +1/+1 until end of turn.
+oracle={T}: Add {1} to your mana pool.\n{T}: Untap target Griffin. If it's a creature, it gets +1/+1 until end of turn.

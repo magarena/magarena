@@ -6,4 +6,4 @@ type=Instant
 cost={2}{G}
 timing=block
 requires_groovy_code
-oracle=Untap target attacking creature. Prevent all combat damage that would be dealt to and dealt by that creature this turn. Draw a card at the beginning of the next turn's upkeep.
+oracle=Untap target attacking creature. Prevent all combat damage that would be dealt to and dealt by that creature this turn.\nDraw a card at the beginning of the next turn's upkeep.

@@ -9,4 +9,4 @@ pt=3/2
 ability=Whenever SN attacks, put a 2/1 black Warrior creature token onto the battlefield.;\
         Dash {3}{B}
 timing=main
-oracle=Whenever Mardu Strike Leader attacks, put a 2/1 black Warrior creature token onto the battlefield. Dash {3}{B}
+oracle=Whenever Mardu Strike Leader attacks, put a 2/1 black Warrior creature token onto the battlefield.\nDash {3}{B}

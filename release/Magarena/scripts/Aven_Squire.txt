@@ -8,4 +8,4 @@ subtype=Bird,Soldier
 cost={1}{W}
 pt=1/1
 timing=main
-oracle=Flying. Exalted
+oracle=Flying\nExalted

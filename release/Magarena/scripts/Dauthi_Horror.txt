@@ -9,4 +9,4 @@ pt=2/1
 ability=shadow;\
         SN can't be blocked by white creatures.
 timing=main
-oracle=Shadow. Dauthi Horror can't be blocked by white creatures.
+oracle=Shadow\nDauthi Horror can't be blocked by white creatures.

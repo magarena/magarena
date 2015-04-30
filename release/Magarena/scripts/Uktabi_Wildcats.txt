@@ -9,4 +9,4 @@ pt=*/*
 ability=SN's power and toughness are each equal to the number of Forests you control.;\
         {G}, Sacrifice a Forest: Regenerate SN.
 timing=main
-oracle=Uktabi Wildcats's power and toughness are each equal to the number of Forests you control. {G}, Sacrifice a Forest: Regenerate Uktabi Wildcats.
+oracle=Uktabi Wildcats's power and toughness are each equal to the number of Forests you control.\n{G}, Sacrifice a Forest: Regenerate Uktabi Wildcats.

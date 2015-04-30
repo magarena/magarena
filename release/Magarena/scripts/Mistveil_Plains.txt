@@ -8,4 +8,4 @@ mana=w3
 ability=SN enters the battlefield tapped.;\
         {W}, {T}: Put target card from your graveyard on the bottom of your library. Activate this ability only if you control two or more white permanents.
 timing=land
-oracle=Mistveil Plains enters the battlefield tapped. {W}, {T}: Put target card from your graveyard on the bottom of your library. Activate this ability only if you control two or more white permanents.
+oracle=Mistveil Plains enters the battlefield tapped.\n{W}, {T}: Put target card from your graveyard on the bottom of your library. Activate this ability only if you control two or more white permanents.

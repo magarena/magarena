@@ -7,4 +7,4 @@ cost={5}{U/R}{U/R}
 effect=Put a 5/5 blue and red Elemental creature token with flying onto the battlefield.
 ability=Retrace
 timing=token
-oracle=Put a 5/5 blue and red Elemental creature token with flying onto the battlefield. Retrace
+oracle=Put a 5/5 blue and red Elemental creature token with flying onto the battlefield.\nRetrace

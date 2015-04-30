@@ -8,4 +8,4 @@ cost={2}{B}
 ability=Enchanted creature gets +1/+3 and has deathtouch.
 timing=main
 enchant=pump,pos creature
-oracle=Enchant creature. Enchanted creature gets +1/+3 and has deathtouch.
+oracle=Enchant creature\nEnchanted creature gets +1/+3 and has deathtouch.

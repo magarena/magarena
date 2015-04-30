@@ -7,4 +7,4 @@ cost={2}{B}
 ability=Entwine {B}
 effect=Choose one — (1) Regenerate each creature you control. (2) SN deals 1 damage to each creature and each player.
 timing=removal
-oracle=Choose one — • Regenerate each creature you control. • Wail of the Nim deals 1 damage to each creature and each player. Entwine {B}
+oracle=Choose one —\n• Regenerate each creature you control.\n• Wail of the Nim deals 1 damage to each creature and each player.\nEntwine {B}

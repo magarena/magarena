@@ -9,4 +9,4 @@ pt=5/5
 ability=flying
 timing=main
 requires_groovy_code
-oracle=Flying. {3}{R}: Destroy target artifact. Hoard-Smelter Dragon gets +X/+0 until end of turn, where X is that artifact's converted mana cost.
+oracle=Flying\n{3}{R}: Destroy target artifact. Hoard-Smelter Dragon gets +X/+0 until end of turn, where X is that artifact's converted mana cost.

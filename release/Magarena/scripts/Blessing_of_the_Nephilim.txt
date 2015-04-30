@@ -8,4 +8,4 @@ cost={W}
 timing=aura
 enchant=pump,pos creature
 requires_groovy_code
-oracle=Enchant creature. Enchanted creature gets +1/+1 for each of its colors.
+oracle=Enchant creature\nEnchanted creature gets +1/+1 for each of its colors.

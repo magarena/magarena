@@ -9,4 +9,4 @@ pt=1/4
 ability=Morph {1}{W};\
         When SN is turned face up, destroy target enchantment.
 timing=main
-oracle=Morph {1}{W}. When Daru Sanctifier is turned face up, destroy target enchantment.
+oracle=Morph {1}{W}\nWhen Daru Sanctifier is turned face up, destroy target enchantment.

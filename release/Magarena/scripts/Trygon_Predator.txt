@@ -9,4 +9,4 @@ pt=2/3
 ability=flying
 timing=main
 requires_groovy_code
-oracle=Flying. Whenever Trygon Predator deals combat damage to a player, you may destroy target artifact or enchantment that player controls.
+oracle=Flying\nWhenever Trygon Predator deals combat damage to a player, you may destroy target artifact or enchantment that player controls.

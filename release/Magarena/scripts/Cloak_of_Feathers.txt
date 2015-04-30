@@ -6,4 +6,4 @@ type=Sorcery
 cost={U}
 effect=Target creature gains flying until end of turn.~Draw a card.
 timing=main
-oracle=Target creature gains flying until end of turn. Draw a card.
+oracle=Target creature gains flying until end of turn.\nDraw a card.

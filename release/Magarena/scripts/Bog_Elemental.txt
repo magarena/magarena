@@ -9,4 +9,4 @@ pt=5/4
 ability=Protection from white
 timing=main
 requires_groovy_code
-oracle=Protection from white. At the beginning of your upkeep, sacrifice Bog Elemental unless you sacrifice a land.
+oracle=Protection from white\nAt the beginning of your upkeep, sacrifice Bog Elemental unless you sacrifice a land.

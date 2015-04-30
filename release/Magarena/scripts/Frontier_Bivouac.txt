@@ -7,4 +7,4 @@ mana=g3u3r3
 ability=SN enters the battlefield tapped.;\
         {T}: Add {G} or {U} or {R} to your mana pool.
 timing=tapland
-oracle=Frontier Bivouac enters the battlefield tapped. {T}: Add {G}, {U}, or {R} to your mana pool.
+oracle=Frontier Bivouac enters the battlefield tapped.\n{T}: Add {G}, {U}, or {R} to your mana pool.

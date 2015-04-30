@@ -8,4 +8,4 @@ subtype=Drake
 cost={4}{U}
 pt=3/3
 timing=flash
-oracle=Flash. Flying
+oracle=Flash\nFlying

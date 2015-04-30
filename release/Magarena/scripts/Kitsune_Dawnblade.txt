@@ -9,4 +9,4 @@ pt=2/3
 ability=bushido 1;\
         When SN enters the battlefield, you may tap target creature.
 timing=main
-oracle=Bushido 1. When Kitsune Dawnblade enters the battlefield, you may tap target creature.
+oracle=Bushido 1\nWhen Kitsune Dawnblade enters the battlefield, you may tap target creature.

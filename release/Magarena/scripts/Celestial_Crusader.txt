@@ -11,4 +11,4 @@ ability=Flash;\
         Flying;\
         Other white creatures get +1/+1.
 timing=flash
-oracle=Flash. Split second. Flying. Other white creatures get +1/+1.
+oracle=Flash\nSplit second\nFlying\nOther white creatures get +1/+1.

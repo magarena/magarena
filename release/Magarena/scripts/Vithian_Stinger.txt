@@ -9,4 +9,4 @@ pt=0/1
 ability={T}: SN deals 1 damage to target creature or player.;\
         Unearth {1}{R}
 timing=main
-oracle={T}: Vithian Stinger deals 1 damage to target creature or player. Unearth {1}{R}
+oracle={T}: Vithian Stinger deals 1 damage to target creature or player.\nUnearth {1}{R}

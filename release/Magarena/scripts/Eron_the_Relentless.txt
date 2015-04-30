@@ -9,4 +9,4 @@ pt=5/2
 ability=haste;\
         {R}{R}{R}: Regenerate SN.
 timing=fmain
-oracle=Haste. {R}{R}{R}: Regenerate Eron the Relentless.
+oracle=Haste\n{R}{R}{R}: Regenerate Eron the Relentless.

@@ -9,4 +9,4 @@ pt=4/2
 ability=Flying;\
         {1}{R}{R}{R}: Return SN from your graveyard to your hand.
 timing=main
-oracle=Flying. {1}{R}{R}{R}: Return Firewing Phoenix from your graveyard to your hand.
+oracle=Flying\n{1}{R}{R}{R}: Return Firewing Phoenix from your graveyard to your hand.

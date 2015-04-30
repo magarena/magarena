@@ -8,4 +8,4 @@ cost={3}{U}{U}
 timing=aura
 ability=You control enchanted creature.
 enchant=gain control,neg creature
-oracle=Enchant creature. You control enchanted creature.
+oracle=Enchant creature\nYou control enchanted creature.

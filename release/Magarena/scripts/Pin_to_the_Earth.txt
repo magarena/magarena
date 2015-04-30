@@ -8,4 +8,4 @@ cost={1}{U}
 ability=Enchanted creature gets -6/-0.
 timing=aura
 enchant=weaken -6/-0,neg creature
-oracle=Enchant creature. Enchanted creature gets -6/-0.
+oracle=Enchant creature\nEnchanted creature gets -6/-0.

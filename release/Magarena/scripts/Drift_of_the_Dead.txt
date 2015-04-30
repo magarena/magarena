@@ -9,4 +9,4 @@ pt=*/*
 ability=defender;\
         SN's power and toughness are each equal to the number of snow lands you control.
 timing=main
-oracle=Defender. Drift of the Dead's power and toughness are each equal to the number of snow lands you control.
+oracle=Defender\nDrift of the Dead's power and toughness are each equal to the number of snow lands you control.

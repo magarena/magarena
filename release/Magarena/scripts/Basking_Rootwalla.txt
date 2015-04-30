@@ -9,4 +9,4 @@ pt=1/1
 ability={1}{G}: SN gets +2/+2 until end of turn. Activate this ability only once each turn.;\
         Madness {0}
 timing=main
-oracle={1}{G}: Basking Rootwalla gets +2/+2 until end of turn. Activate this ability only once each turn. Madness {0}
+oracle={1}{G}: Basking Rootwalla gets +2/+2 until end of turn. Activate this ability only once each turn.\nMadness {0}

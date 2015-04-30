@@ -9,4 +9,4 @@ pt=2/1
 ability=Megamorph {3}{G};\
         When SN is turned face up, put a +1/+1 counter on another target creature you control.
 timing=main
-oracle=Megamorph {3}{G}. When Guardian Shield-Bearer is turned face up, put a +1/+1 counter on another target creature you control.
+oracle=Megamorph {3}{G}\nWhen Guardian Shield-Bearer is turned face up, put a +1/+1 counter on another target creature you control.

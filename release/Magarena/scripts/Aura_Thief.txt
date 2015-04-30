@@ -9,4 +9,4 @@ pt=2/2
 ability=Flying
 timing=main
 requires_groovy_code
-oracle=Flying. When Aura Thief dies, you gain control of all enchantments.
+oracle=Flying\nWhen Aura Thief dies, you gain control of all enchantments.

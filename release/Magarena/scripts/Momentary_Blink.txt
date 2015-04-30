@@ -7,4 +7,4 @@ cost={1}{W}
 effect=Exile target creature you control, then return it to the battlefield under its owner's control.
 ability=Flashback {3}{U}
 timing=removal
-oracle=Exile target creature you control, then return it to the battlefield under its owner's control. Flashback {3}{U}
+oracle=Exile target creature you control, then return it to the battlefield under its owner's control.\nFlashback {3}{U}

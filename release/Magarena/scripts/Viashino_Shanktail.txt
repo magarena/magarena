@@ -9,4 +9,4 @@ pt=3/1
 ability=first strike;\
         {2}{R}, Discard SN: Target attacking creature gets +3/+1 and gains first strike until end of turn.
 timing=main
-oracle=First strike. Bloodrush — {2}{R}, Discard Viashino Shanktail: Target attacking creature gets +3/+1 and gains first strike until end of turn.
+oracle=First strike\nBloodrush — {2}{R}, Discard Viashino Shanktail: Target attacking creature gets +3/+1 and gains first strike until end of turn.

@@ -8,4 +8,4 @@ subtype=Boar
 cost={2}{R}
 pt=2/1
 timing=main
-oracle=First strike. Infect
+oracle=First strike\nInfect

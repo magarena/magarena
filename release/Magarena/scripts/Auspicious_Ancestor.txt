@@ -9,4 +9,4 @@ pt=2/3
 ability=When SN dies, you gain 3 life.;\
         Whenever a player casts a white spell, you may pay {1}. If you do, you gain 1 life.
 timing=main
-oracle=When Auspicious Ancestor dies, you gain 3 life. Whenever a player casts a white spell, you may pay {1}. If you do, you gain 1 life.
+oracle=When Auspicious Ancestor dies, you gain 3 life.\nWhenever a player casts a white spell, you may pay {1}. If you do, you gain 1 life.

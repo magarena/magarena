@@ -8,4 +8,4 @@ cost={3}{W}
 ability=Tap four untapped Merfolk you control: Return SN from your graveyard to your hand.
 effect=Put two 1/1 blue Merfolk Wizard creature tokens onto the battlefield.
 timing=token
-oracle=Put two 1/1 blue Merfolk Wizard creature tokens onto the battlefield. Tap four untapped Merfolk you control: Return Summon the School from your graveyard to your hand.
+oracle=Put two 1/1 blue Merfolk Wizard creature tokens onto the battlefield.\nTap four untapped Merfolk you control: Return Summon the School from your graveyard to your hand.

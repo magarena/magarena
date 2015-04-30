@@ -10,4 +10,4 @@ ability=Flying;\
         SN can block only creatures with flying.;\
         Morph {2}{U}
 timing=main
-oracle=Flying. Ascending Aven can block only creatures with flying. Morph {2}{U}
+oracle=Flying\nAscending Aven can block only creatures with flying.\nMorph {2}{U}

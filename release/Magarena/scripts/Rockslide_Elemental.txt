@@ -9,4 +9,4 @@ pt=1/1
 ability=first strike;\
         Whenever another creature dies, you may put a +1/+1 counter on SN.
 timing=main
-oracle=First strike. Whenever another creature dies, you may put a +1/+1 counter on Rockslide Elemental.
+oracle=First strike\nWhenever another creature dies, you may put a +1/+1 counter on Rockslide Elemental.

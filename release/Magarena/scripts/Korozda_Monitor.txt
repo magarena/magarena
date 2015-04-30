@@ -9,4 +9,4 @@ pt=3/3
 ability=Trample;\
         Scavenge {5}{G}{G}
 timing=main
-oracle=Trample. Scavenge {5}{G}{G}
+oracle=Trample\nScavenge {5}{G}{G}

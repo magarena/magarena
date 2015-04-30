@@ -9,4 +9,4 @@ pt=5/5
 ability=shadow;flying
 timing=fmain
 requires_groovy_code
-oracle=Flying. Shadow. {B}{B}: Creatures with shadow get +1/+0 until end of turn and creatures without shadow get -1/-0 until end of turn.
+oracle=Flying\nShadow\n{B}{B}: Creatures with shadow get +1/+0 until end of turn and creatures without shadow get -1/-0 until end of turn.

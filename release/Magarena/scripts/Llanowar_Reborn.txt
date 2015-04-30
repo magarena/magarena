@@ -8,4 +8,4 @@ ability=SN enters the battlefield tapped.;\
         {T}: Add {G} to your mana pool.;\
         graft 1
 timing=land
-oracle=Llanowar Reborn enters the battlefield tapped. {T}: Add {G} to your mana pool. Graft 1
+oracle=Llanowar Reborn enters the battlefield tapped.\n{T}: Add {G} to your mana pool.\nGraft 1

@@ -8,4 +8,4 @@ cost={1}
 ability=Whenever a land enters the battlefield under your control, equipped creature gets +2/+2 until end of turn.;\
         Equip {1}
 timing=equipment
-oracle=Landfall — Whenever a land enters the battlefield under your control, equipped creature gets +2/+2 until end of turn. Equip {1}
+oracle=Landfall — Whenever a land enters the battlefield under your control, equipped creature gets +2/+2 until end of turn.\nEquip {1}

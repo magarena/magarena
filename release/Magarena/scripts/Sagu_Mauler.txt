@@ -9,4 +9,4 @@ pt=6/6
 ability=Trample;hexproof;\
         Morph {3}{G}{U}
 timing=main
-oracle=Trample, hexproof. Morph {3}{G}{U}
+oracle=Trample, hexproof\nMorph {3}{G}{U}

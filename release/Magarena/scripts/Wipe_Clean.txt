@@ -7,4 +7,4 @@ cost={1}{W}
 effect=Exile target enchantment.
 ability=cycling {3}
 timing=removal
-oracle=Exile target enchantment. Cycling {3}
+oracle=Exile target enchantment.\nCycling {3}

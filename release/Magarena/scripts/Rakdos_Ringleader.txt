@@ -10,4 +10,4 @@ ability=first strike;\
 cost={4}{B}{R}
 pt=3/1
 timing=main
-oracle=First strike. Whenever Rakdos Ringleader deals combat damage to a player, that player discards a card at random. {B}: Regenerate Rakdos Ringleader.
+oracle=First strike\nWhenever Rakdos Ringleader deals combat damage to a player, that player discards a card at random.\n{B}: Regenerate Rakdos Ringleader.

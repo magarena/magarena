@@ -9,4 +9,4 @@ pt=1/1
 ability=Soulbond;\
         As long as SN is paired with another creature, both creatures have deathtouch.
 timing=main
-oracle=Soulbond. As long as Nightshade Peddler is paired with another creature, both creatures have deathtouch.
+oracle=Soulbond\nAs long as Nightshade Peddler is paired with another creature, both creatures have deathtouch.

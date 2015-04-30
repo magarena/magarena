@@ -9,4 +9,4 @@ pt=2/4
 ability=reach
 timing=main
 requires_groovy_code=Festerhide Boar
-oracle=Reach. Morbid — Somberwald Spider enters the battlefield with two +1/+1 counters on it if a creature died this turn.
+oracle=Reach\nMorbid — Somberwald Spider enters the battlefield with two +1/+1 counters on it if a creature died this turn.

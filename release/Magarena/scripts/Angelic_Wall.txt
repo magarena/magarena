@@ -9,4 +9,4 @@ pt=0/4
 ability=Defender;\
         Flying
 timing=smain
-oracle=Defender. Flying
+oracle=Defender\nFlying

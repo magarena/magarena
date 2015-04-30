@@ -8,4 +8,4 @@ subtype=Human,Soldier
 cost={2}{W}
 pt=0/4
 timing=smain
-oracle=Defender. Exalted
+oracle=Defender\nExalted

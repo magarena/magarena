@@ -10,4 +10,4 @@ ability=Affinity for artifacts;\
         Flying;\
         When SN enters the battlefield, if you cast it from your hand, exile all artifacts.
 timing=main
-oracle=Affinity for artifacts. Flying. When Furnace Dragon enters the battlefield, if you cast it from your hand, exile all artifacts.
+oracle=Affinity for artifacts\nFlying\nWhen Furnace Dragon enters the battlefield, if you cast it from your hand, exile all artifacts.

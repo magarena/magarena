@@ -8,4 +8,4 @@ cost={2}{R/W}
 timing=aura
 enchant=pump,pos creature
 requires_groovy_code
-oracle=Enchant creature. As long as enchanted creature is red, it gets +1/+1 and has "{R/W}: This creature gets +1/+0 until end of turn.". As long as enchanted creature is white, it gets +1/+1 and has lifelink.
+oracle=Enchant creature\nAs long as enchanted creature is red, it gets +1/+1 and has "{R/W}: This creature gets +1/+0 until end of turn."\nAs long as enchanted creature is white, it gets +1/+1 and has lifelink.

@@ -10,4 +10,4 @@ transform=Soul Seizer
 timing=aura
 hidden
 enchant=gain control,neg creature
-oracle=Enchant creature. You control enchanted creature.
+oracle=Enchant creature\nYou control enchanted creature.

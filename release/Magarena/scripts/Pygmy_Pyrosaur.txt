@@ -8,4 +8,4 @@ cost={1}{R}
 pt=1/1
 ability=SN can't block.;{R}: SN gets +1/+0 until end of turn.
 timing=main
-oracle=Pygmy Pyrosaur can't block. {R}: Pygmy Pyrosaur gets +1/+0 until end of turn.
+oracle=Pygmy Pyrosaur can't block.\n{R}: Pygmy Pyrosaur gets +1/+0 until end of turn.

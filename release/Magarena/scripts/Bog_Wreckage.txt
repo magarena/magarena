@@ -8,4 +8,4 @@ ability=SN enters the battlefield tapped.;\
         {T}: Add {B} to your mana pool.;\
         {T}, Sacrifice SN: Add one mana of any color to your mana pool.
 timing=tapland
-oracle=Bog Wreckage enters the battlefield tapped. {T}: Add {B} to your mana pool. {T}, Sacrifice Bog Wreckage: Add one mana of any color to your mana pool.
+oracle=Bog Wreckage enters the battlefield tapped.\n{T}: Add {B} to your mana pool.\n{T}, Sacrifice Bog Wreckage: Add one mana of any color to your mana pool.

@@ -9,4 +9,4 @@ pt=3/3
 ability=First strike;\
         Whenever SN attacks, each other attacking creature gets +1/+0 until end of turn.
 timing=main
-oracle=First strike. Whenever Renegade Warlord attacks, each other attacking creature gets +1/+0 until end of turn.
+oracle=First strike\nWhenever Renegade Warlord attacks, each other attacking creature gets +1/+0 until end of turn.

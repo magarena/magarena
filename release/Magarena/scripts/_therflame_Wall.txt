@@ -10,4 +10,4 @@ ability=defender;\
         SN can block creatures with shadow as though they didn't have shadow.;\
         {R}: SN gets +1/+0 until end of turn.
 timing=smain
-oracle=Defender. Ætherflame Wall can block creatures with shadow as though they didn't have shadow. {R}: Ætherflame Wall gets +1/+0 until end of turn.
+oracle=Defender\nÆtherflame Wall can block creatures with shadow as though they didn't have shadow.\n{R}: Ætherflame Wall gets +1/+0 until end of turn.

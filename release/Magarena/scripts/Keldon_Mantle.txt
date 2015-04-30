@@ -10,4 +10,4 @@ ability={B}: Regenerate enchanted creature.;\
         {G}: Enchanted creature gains trample until end of turn.
 enchant=pump,pos creature
 timing=aura
-oracle=Enchant creature. {B}: Regenerate enchanted creature. {R}: Enchanted creature gets +1/+0 until end of turn. {G}: Enchanted creature gains trample until end of turn.
+oracle=Enchant creature\n{B}: Regenerate enchanted creature.\n{R}: Enchanted creature gets +1/+0 until end of turn.\n{G}: Enchanted creature gains trample until end of turn.

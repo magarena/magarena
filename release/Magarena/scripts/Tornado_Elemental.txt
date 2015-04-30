@@ -9,4 +9,4 @@ pt=6/6
 ability=When SN enters the battlefield, SN deals 6 damage to each creature with flying.
 timing=main
 requires_groovy_code=Rhox
-oracle=When Tornado Elemental enters the battlefield, it deals 6 damage to each creature with flying. You may have Tornado Elemental assign its combat damage as though it weren't blocked.
+oracle=When Tornado Elemental enters the battlefield, it deals 6 damage to each creature with flying.\nYou may have Tornado Elemental assign its combat damage as though it weren't blocked.

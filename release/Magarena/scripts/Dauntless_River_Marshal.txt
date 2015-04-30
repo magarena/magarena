@@ -9,4 +9,4 @@ pt=2/1
 ability=SN gets +1/+1 as long as you control an Island.;\
         {3}{U}: Tap target creature.
 timing=main
-oracle=Dauntless River Marshal gets +1/+1 as long as you control an Island. {3}{U}: Tap target creature.
+oracle=Dauntless River Marshal gets +1/+1 as long as you control an Island.\n{3}{U}: Tap target creature.

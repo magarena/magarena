@@ -9,4 +9,4 @@ ability={R}: Enchanted creature gets +1/+0 until end of turn.;\
         {R}: Return SN to its owner's hand.
 enchant=pump,pos creature
 timing=aura
-oracle=Enchant creature. {R}: Enchanted creature gets +1/+0 until end of turn. {R}: Return Crown of Flames to its owner's hand.
+oracle=Enchant creature\n{R}: Enchanted creature gets +1/+0 until end of turn.\n{R}: Return Crown of Flames to its owner's hand.

@@ -9,4 +9,4 @@ pt=4/5
 ability=Trample;\
         When SN enters the battlefield, each opponent loses 3 life.~You gain 3 life.
 timing=main
-oracle=Trample. When Siege Rhino enters the battlefield, each opponent loses 3 life and you gain 3 life.
+oracle=Trample\nWhen Siege Rhino enters the battlefield, each opponent loses 3 life and you gain 3 life.

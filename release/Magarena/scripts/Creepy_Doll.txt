@@ -9,4 +9,4 @@ pt=1/1
 ability=Indestructible;\
         Whenever SN deals combat damage to a creature, flip a coin. If you win the flip, destroy that creature.
 timing=main
-oracle=Indestructible. Whenever Creepy Doll deals combat damage to a creature, flip a coin. If you win the flip, destroy that creature.
+oracle=Indestructible\nWhenever Creepy Doll deals combat damage to a creature, flip a coin. If you win the flip, destroy that creature.

@@ -9,4 +9,4 @@ pt=0/0
 ability=First strike;\
         Modular 4
 timing=main
-oracle=First strike. Modular 4
+oracle=First strike\nModular 4

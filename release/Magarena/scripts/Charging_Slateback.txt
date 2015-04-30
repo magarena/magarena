@@ -9,4 +9,4 @@ pt=4/3
 ability=SN can't block.;\
         Morph {4}{R}
 timing=main
-oracle=Charging Slateback can't block. Morph {4}{R}
+oracle=Charging Slateback can't block.\nMorph {4}{R}

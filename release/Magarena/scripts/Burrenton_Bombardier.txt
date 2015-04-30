@@ -9,4 +9,4 @@ pt=2/2
 ability=flying;\
         Reinforce 2—{2}{W}
 timing=main
-oracle=Flying. Reinforce 2—{2}{W}
+oracle=Flying\nReinforce 2—{2}{W}

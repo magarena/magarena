@@ -8,4 +8,4 @@ subtype=Aura
 cost={2}{G}
 timing=enchantment
 requires_groovy_code
-oracle=Enchant creature. Enchanted creature gets +1/+1 for each Forest you control.
+oracle=Enchant creature\nEnchanted creature gets +1/+1 for each Forest you control.

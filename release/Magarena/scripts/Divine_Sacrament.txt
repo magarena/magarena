@@ -7,4 +7,4 @@ cost={1}{W}{W}
 ability=White creatures get +1/+1.;\
         White creatures get +1/+1 as long as seven or more cards are in your graveyard.
 timing=enchantment
-oracle=White creatures get +1/+1. Threshold — White creatures get an additional +1/+1 as long as seven or more cards are in your graveyard.
+oracle=White creatures get +1/+1.\nThreshold — White creatures get an additional +1/+1 as long as seven or more cards are in your graveyard.

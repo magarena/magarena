@@ -9,4 +9,4 @@ pt=3/3
 ability=Flying
 timing=main
 requires_groovy_code
-oracle=Flying. When Bogardan Phoenix dies, exile it if it had a death counter on it. Otherwise, return it to the battlefield under your control and put a death counter on it.
+oracle=Flying\nWhen Bogardan Phoenix dies, exile it if it had a death counter on it. Otherwise, return it to the battlefield under your control and put a death counter on it.

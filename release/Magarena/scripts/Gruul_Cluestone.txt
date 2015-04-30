@@ -7,4 +7,4 @@ cost={3}
 ability={T}: Add {R} or {G} to your mana pool.;\
         {R}{G},{T},Sacrifice SN: Draw a card.
 timing=artifact
-oracle={T}: Add {R} or {G} to your mana pool. {R}{G}, {T}, Sacrifice Gruul Cluestone: Draw a card.
+oracle={T}: Add {R} or {G} to your mana pool.\n{R}{G}, {T}, Sacrifice Gruul Cluestone: Draw a card.

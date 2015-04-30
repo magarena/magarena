@@ -9,4 +9,4 @@ pt=1/1
 ability={B}: SN gets +1/+1 until end of turn.
 timing=main
 requires_groovy_code
-oracle={B}: Cinder Shade gets +1/+1 until end of turn. {R}, Sacrifice Cinder Shade: Cinder Shade deals damage equal to its power to target creature.
+oracle={B}: Cinder Shade gets +1/+1 until end of turn.\n{R}, Sacrifice Cinder Shade: Cinder Shade deals damage equal to its power to target creature.

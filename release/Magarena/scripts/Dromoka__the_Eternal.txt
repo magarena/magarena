@@ -9,4 +9,4 @@ pt=5/5
 ability=Flying;\
         Whenever a Dragon you control attacks, bolster 2.
 timing=main
-oracle=Flying. Whenever a Dragon you control attacks, bolster 2.
+oracle=Flying\nWhenever a Dragon you control attacks, bolster 2.

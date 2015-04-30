@@ -9,4 +9,4 @@ ability=When SN enters the battlefield, put two 1/1 green Saproling creature tok
         Enchanted creature has trample.
 timing=aura
 enchant=trample,pos creature
-oracle=Enchant creature. When Fists of Ironwood enters the battlefield, put two 1/1 green Saproling creature tokens onto the battlefield. Enchanted creature has trample.
+oracle=Enchant creature\nWhen Fists of Ironwood enters the battlefield, put two 1/1 green Saproling creature tokens onto the battlefield.\nEnchanted creature has trample.

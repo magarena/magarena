@@ -9,4 +9,4 @@ pt=2/5
 ability={1}{W}{W}: Target creature you control gains protection from the color of your choice until end of turn.;\
         {1}{U}{U}: SN gains shroud until end of turn.
 timing=main
-oracle={1}{W}{W}: Target creature you control gains protection from the color of your choice until end of turn. {1}{U}{U}: Armored Guardian gains shroud until end of turn.
+oracle={1}{W}{W}: Target creature you control gains protection from the color of your choice until end of turn.\n{1}{U}{U}: Armored Guardian gains shroud until end of turn.

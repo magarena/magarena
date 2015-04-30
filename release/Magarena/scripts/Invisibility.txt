@@ -8,4 +8,4 @@ cost={U}{U}
 ability=Enchanted creature can't be blocked except by Walls.
 enchant=unblockable,pos creature
 timing=aura
-oracle=Enchant creature. Enchanted creature can't be blocked except by Walls.
+oracle=Enchant creature\nEnchanted creature can't be blocked except by Walls.

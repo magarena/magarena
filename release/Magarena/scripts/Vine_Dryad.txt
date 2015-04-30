@@ -10,4 +10,4 @@ ability=Flash;\
         Forestwalk;\
         You may exile a green card from your hand rather than pay SN's mana cost.
 timing=flash
-oracle=Flash. Forestwalk. You may exile a green card from your hand rather than pay Vine Dryad's mana cost.
+oracle=Flash\nForestwalk\nYou may exile a green card from your hand rather than pay Vine Dryad's mana cost.

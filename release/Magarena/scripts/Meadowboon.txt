@@ -9,4 +9,4 @@ pt=3/3
 ability=evoke {3}{W}
 timing=main
 requires_groovy_code
-oracle=When Meadowboon leaves the battlefield, put a +1/+1 counter on each creature target player controls. Evoke {3}{W}
+oracle=When Meadowboon leaves the battlefield, put a +1/+1 counter on each creature target player controls.\nEvoke {3}{W}

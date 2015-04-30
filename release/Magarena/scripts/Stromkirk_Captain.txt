@@ -11,4 +11,4 @@ ability=first strike;\
         other vampire creatures you control have first strike
 static=player
 timing=main
-oracle=First strike. Other Vampire creatures you control get +1/+1 and have first strike.
+oracle=First strike\nOther Vampire creatures you control get +1/+1 and have first strike.

@@ -9,4 +9,4 @@ pt=4/2
 ability=horsemanship;\
         Whenever SN attacks, each other creature you control gets +1/+0 until end of turn.
 timing=main
-oracle=Horsemanship. Whenever Zhang He, Wei General attacks, each other creature you control gets +1/+0 until end of turn.
+oracle=Horsemanship\nWhenever Zhang He, Wei General attacks, each other creature you control gets +1/+0 until end of turn.

@@ -10,4 +10,4 @@ ability=SN's power and toughness are each equal to the number of artifacts you c
         Other artifact creatures you control get +1/+1
 static=player
 timing=main
-oracle=Master of Etherium's power and toughness are each equal to the number of artifacts you control. Other artifact creatures you control get +1/+1.
+oracle=Master of Etherium's power and toughness are each equal to the number of artifacts you control.\nOther artifact creatures you control get +1/+1.

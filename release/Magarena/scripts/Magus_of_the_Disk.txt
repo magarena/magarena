@@ -9,4 +9,4 @@ pt=2/4
 ability=SN enters the battlefield tapped.;\
         {1}, {T}: Destroy all artifacts, creatures, and enchantments.
 timing=main
-oracle=Magus of the Disk enters the battlefield tapped. {1}, {T}: Destroy all artifacts, creatures, and enchantments.
+oracle=Magus of the Disk enters the battlefield tapped.\n{1}, {T}: Destroy all artifacts, creatures, and enchantments.

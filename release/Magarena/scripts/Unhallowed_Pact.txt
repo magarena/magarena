@@ -8,4 +8,4 @@ cost={2}{B}
 timing=aura
 enchant=gain control,neg creature
 requires_groovy_code
-oracle=Enchant creature. When enchanted creature dies, return that card to the battlefield under your control.
+oracle=Enchant creature\nWhen enchanted creature dies, return that card to the battlefield under your control.

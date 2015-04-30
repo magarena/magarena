@@ -6,4 +6,4 @@ type=Enchantment
 cost={2}{R}
 ability={1}{R},Discard a card at random:SN deals 1 damage to target creature or player.;{1}{R},Sacrifice SN:SN deals 1 damage to target creature or player.
 timing=enchantment
-oracle={1}{R}, Discard a card at random: Pyromania deals 1 damage to target creature or player. {1}{R}, Sacrifice Pyromania: Pyromania deals 1 damage to target creature or player.
+oracle={1}{R}, Discard a card at random: Pyromania deals 1 damage to target creature or player.\n{1}{R}, Sacrifice Pyromania: Pyromania deals 1 damage to target creature or player.

@@ -9,4 +9,4 @@ pt=0/0
 ability=defender;\
         SN enters the battlefield with X +1/+1 counters on it.
 timing=main
-oracle=Defender. Shifting Wall enters the battlefield with X +1/+1 counters on it.
+oracle=Defender\nShifting Wall enters the battlefield with X +1/+1 counters on it.

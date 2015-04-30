@@ -7,4 +7,4 @@ cost={1}{B}{R}
 effect=Target creature can't block this turn.
 ability=cascade
 timing=fmain
-oracle=Cascade. Target creature can't block this turn.
+oracle=Cascade\nTarget creature can't block this turn.

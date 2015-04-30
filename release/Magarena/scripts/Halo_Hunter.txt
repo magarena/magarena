@@ -9,4 +9,4 @@ pt=6/3
 ability=intimidate;\
         When SN enters the battlefield, destroy target Angel.
 timing=main
-oracle=Intimidate. When Halo Hunter enters the battlefield, destroy target Angel.
+oracle=Intimidate\nWhen Halo Hunter enters the battlefield, destroy target Angel.

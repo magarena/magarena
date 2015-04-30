@@ -8,4 +8,4 @@ cost={W}{B}
 pt=2/1
 ability=lifelink;extort
 timing=main
-oracle=Lifelink. Extort
+oracle=Lifelink\nExtort

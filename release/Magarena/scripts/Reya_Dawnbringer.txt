@@ -9,4 +9,4 @@ pt=4/6
 ability=flying;\
         At the beginning of your upkeep, you may return target creature card from your graveyard to the battlefield.
 timing=main
-oracle=Flying. At the beginning of your upkeep, you may return target creature card from your graveyard to the battlefield.
+oracle=Flying\nAt the beginning of your upkeep, you may return target creature card from your graveyard to the battlefield.

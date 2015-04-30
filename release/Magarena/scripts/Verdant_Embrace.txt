@@ -8,4 +8,4 @@ cost={3}{G}{G}
 ability=Enchanted creature gets +3/+3 and has "At the beginning of each upkeep, put a 1/1 green Saproling creature token onto the battlefield."
 timing=main
 enchant=pump,pos creature
-oracle=Enchant creature. Enchanted creature gets +3/+3 and has "At the beginning of each upkeep, put a 1/1 green Saproling creature token onto the battlefield."
+oracle=Enchant creature\nEnchanted creature gets +3/+3 and has "At the beginning of each upkeep, put a 1/1 green Saproling creature token onto the battlefield."

@@ -9,4 +9,4 @@ ability=Enchanted creature can't be blocked except by creatures with flying or r
 timing=aura
 enchant=shroud,creature
 requires_groovy_code
-oracle=Enchant creature. Enchanted creature can't be blocked except by creatures with flying or reach. Enchanted creature can't be the target of spells or abilities your opponents control.
+oracle=Enchant creature\nEnchanted creature can't be blocked except by creatures with flying or reach.\nEnchanted creature can't be the target of spells or abilities your opponents control.

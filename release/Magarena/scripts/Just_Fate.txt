@@ -7,4 +7,4 @@ cost={2}{W}
 ability=Cast SN only during the declare attackers step and only if you've been attacked this step.
 effect=Destroy target attacking creature.
 timing=attack
-oracle=Cast Just Fate only during the declare attackers step and only if you've been attacked this step. Destroy target attacking creature.
+oracle=Cast Just Fate only during the declare attackers step and only if you've been attacked this step.\nDestroy target attacking creature.

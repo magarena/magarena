@@ -7,4 +7,4 @@ cost={1}{U}{U}
 ability=cycling {2}
 effect=Return target permanent to its owner's hand.
 timing=removal
-oracle=Return target permanent to its owner's hand. Cycling {2}
+oracle=Return target permanent to its owner's hand.\nCycling {2}

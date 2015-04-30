@@ -9,4 +9,4 @@ pt=4/4
 ability=flying;\
         Whenever SN attacks, attacking creatures gain flying and lifelink until end of turn.
 timing=main
-oracle=Flying. Whenever Victory's Herald attacks, attacking creatures gain flying and lifelink until end of turn.
+oracle=Flying\nWhenever Victory's Herald attacks, attacking creatures gain flying and lifelink until end of turn.

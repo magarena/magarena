@@ -9,4 +9,4 @@ pt=0/2
 ability=Whenever SN blocks, put a +1/+1 counter on SN.;\
         Remove a +1/+1 counter from SN: SN can't be blocked this turn.
 timing=main
-oracle=Whenever Spincrusher blocks, put a +1/+1 counter on it. Remove a +1/+1 counter from Spincrusher: Spincrusher can't be blocked this turn.
+oracle=Whenever Spincrusher blocks, put a +1/+1 counter on it.\nRemove a +1/+1 counter from Spincrusher: Spincrusher can't be blocked this turn.

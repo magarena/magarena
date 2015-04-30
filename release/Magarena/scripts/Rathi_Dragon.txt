@@ -9,4 +9,4 @@ pt=5/5
 ability=Flying
 timing=main
 requires_groovy_code
-oracle=Flying. When Rathi Dragon enters the battlefield, sacrifice it unless you sacrifice two Mountains.
+oracle=Flying\nWhen Rathi Dragon enters the battlefield, sacrifice it unless you sacrifice two Mountains.

@@ -9,4 +9,4 @@ pt=1/2
 ability=Sacrifice an Aura: Regenerate SN.
 timing=main
 requires_groovy_code
-oracle=Gatherer of Graces gets +1/+1 for each Aura attached to it. Sacrifice an Aura: Regenerate Gatherer of Graces.
+oracle=Gatherer of Graces gets +1/+1 for each Aura attached to it.\nSacrifice an Aura: Regenerate Gatherer of Graces.

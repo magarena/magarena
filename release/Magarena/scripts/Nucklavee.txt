@@ -9,4 +9,4 @@ pt=4/4
 ability=When SN enters the battlefield, you may return target red sorcery card from your graveyard to your hand.;\
         When SN enters the battlefield, you may return target blue instant card from your graveyard to your hand.
 timing=main
-oracle=When Nucklavee enters the battlefield, you may return target red sorcery card from your graveyard to your hand. When Nucklavee enters the battlefield, you may return target blue instant card from your graveyard to your hand.
+oracle=When Nucklavee enters the battlefield, you may return target red sorcery card from your graveyard to your hand.\nWhen Nucklavee enters the battlefield, you may return target blue instant card from your graveyard to your hand.

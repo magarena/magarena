@@ -7,4 +7,4 @@ cost={8}{R}
 effect=Search your library for a Dragon permanent card and put it onto the battlefield. Then shuffle your library.
 ability=Storm
 timing=main
-oracle=Search your library for a Dragon permanent card and put it onto the battlefield. Then shuffle your library. Storm
+oracle=Search your library for a Dragon permanent card and put it onto the battlefield. Then shuffle your library.\nStorm

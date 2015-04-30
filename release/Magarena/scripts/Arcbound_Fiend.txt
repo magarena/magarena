@@ -9,4 +9,4 @@ pt=0/0
 ability=fear;modular 3
 timing=main
 requires_groovy_code
-oracle=Fear. At the beginning of your upkeep, you may move a +1/+1 counter from target creature onto Arcbound Fiend. Modular 3
+oracle=Fear\nAt the beginning of your upkeep, you may move a +1/+1 counter from target creature onto Arcbound Fiend.\nModular 3

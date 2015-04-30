@@ -7,4 +7,4 @@ cost={U}
 effect=Target creature gains flying until end of turn.
 ability=Flashback {U}
 timing=pumpFlash
-oracle=Target creature gains flying until end of turn. Flashback {U}
+oracle=Target creature gains flying until end of turn.\nFlashback {U}

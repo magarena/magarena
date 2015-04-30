@@ -9,4 +9,4 @@ pt=4/4
 ability=Trample;\
         Whenever SN attacks, SN gets +3/+0 until end of turn for each other attacking Beast.
 timing=main
-oracle=Trample. Whenever Shaleskin Bruiser attacks, it gets +3/+0 until end of turn for each other attacking Beast.
+oracle=Trample\nWhenever Shaleskin Bruiser attacks, it gets +3/+0 until end of turn for each other attacking Beast.

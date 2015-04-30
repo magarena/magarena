@@ -9,4 +9,4 @@ pt=1/1
 ability=Flying;\
         Whenever you cast a spell that targets SN, put a +1/+1 counter on SN.
 timing=main
-oracle=Flying. Heroic — Whenever you cast a spell that targets Akroan Skyguard, put a +1/+1 counter on Akroan Skyguard.
+oracle=Flying\nHeroic — Whenever you cast a spell that targets Akroan Skyguard, put a +1/+1 counter on Akroan Skyguard.

@@ -9,4 +9,4 @@ pt=1/2
 ability={T}: You may tap or untap another target permanent.;\
         Unearth {U}
 timing=main
-oracle={T}: You may tap or untap another target permanent. Unearth {U}
+oracle={T}: You may tap or untap another target permanent.\nUnearth {U}

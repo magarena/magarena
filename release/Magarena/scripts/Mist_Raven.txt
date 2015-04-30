@@ -10,4 +10,4 @@ pt=2/2
 ability=flying;\
         When SN enters the battlefield, return target creature to its owner's hand.
 timing=fmain
-oracle=Flying. When Mist Raven enters the battlefield, return target creature to its owner's hand.
+oracle=Flying\nWhen Mist Raven enters the battlefield, return target creature to its owner's hand.

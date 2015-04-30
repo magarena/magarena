@@ -9,4 +9,4 @@ pt=3/2
 ability=flying;\
         {B}, Sacrifice a creature: Regenerate SN.
 timing=main
-oracle=Flying. {B}, Sacrifice a creature: Regenerate Skeletal Kathari.
+oracle=Flying\n{B}, Sacrifice a creature: Regenerate Skeletal Kathari.

@@ -8,4 +8,4 @@ cost={2}{B}
 pt=3/1
 ability=flying;SN can't block.
 timing=fmain
-oracle=Flying. Daggerclaw Imp can't block.
+oracle=Flying\nDaggerclaw Imp can't block.

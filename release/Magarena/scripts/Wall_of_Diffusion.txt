@@ -9,4 +9,4 @@ pt=0/5
 ability=defender;\
         SN can block creatures with shadow as though SN had shadow.
 timing=smain
-oracle=Defender. Wall of Diffusion can block creatures with shadow as though Wall of Diffusion had shadow.
+oracle=Defender\nWall of Diffusion can block creatures with shadow as though Wall of Diffusion had shadow.

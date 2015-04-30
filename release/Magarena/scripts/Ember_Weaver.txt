@@ -9,4 +9,4 @@ pt=2/3
 ability=reach;\
         As long as you control a red permanent, SN gets +1/+0 and has first strike.
 timing=main
-oracle=Reach. As long as you control a red permanent, Ember Weaver gets +1/+0 and has first strike.
+oracle=Reach\nAs long as you control a red permanent, Ember Weaver gets +1/+0 and has first strike.

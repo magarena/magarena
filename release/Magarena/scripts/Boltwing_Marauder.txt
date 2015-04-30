@@ -9,4 +9,4 @@ pt=5/4
 ability=Flying;\
         Whenever another creature enters the battlefield under your control, target creature gets +2/+0 until end of turn.
 timing=main
-oracle=Flying. Whenever another creature enters the battlefield under your control, target creature gets +2/+0 until end of turn.
+oracle=Flying\nWhenever another creature enters the battlefield under your control, target creature gets +2/+0 until end of turn.

@@ -6,4 +6,4 @@ type=Instant
 cost={G}
 effect=Target creature gets +2/+2 until end of turn.~Rebound
 timing=pump
-oracle=Target creature gets +2/+2 until end of turn. Rebound
+oracle=Target creature gets +2/+2 until end of turn.\nRebound

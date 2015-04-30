@@ -9,4 +9,4 @@ pt=2/2
 ability=infect
 timing=main
 requires_groovy_code
-oracle=Infect. Whenever Septic Rats attacks, if defending player is poisoned, it gets +1/+1 until end of turn.
+oracle=Infect\nWhenever Septic Rats attacks, if defending player is poisoned, it gets +1/+1 until end of turn.

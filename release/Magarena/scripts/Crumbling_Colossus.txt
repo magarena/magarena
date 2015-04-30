@@ -9,4 +9,4 @@ pt=7/4
 ability=Trample;\
         When SN attacks, sacrifice SN at end of combat.
 timing=main
-oracle=Trample. When Crumbling Colossus attacks, sacrifice it at end of combat.
+oracle=Trample\nWhen Crumbling Colossus attacks, sacrifice it at end of combat.

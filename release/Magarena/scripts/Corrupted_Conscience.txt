@@ -9,4 +9,4 @@ ability=You control enchanted creature.;\
         Enchanted creature has infect.
 timing=aura
 enchant=gain control,neg creature
-oracle=Enchant creature. You control enchanted creature. Enchanted creature has infect.
+oracle=Enchant creature\nYou control enchanted creature.\nEnchanted creature has infect.

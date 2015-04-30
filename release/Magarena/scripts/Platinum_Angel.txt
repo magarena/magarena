@@ -9,4 +9,4 @@ pt=4/4
 ability=flying
 timing=fmain
 requires_groovy_code
-oracle=Flying. You can't lose the game and your opponents can't win the game.
+oracle=Flying\nYou can't lose the game and your opponents can't win the game.

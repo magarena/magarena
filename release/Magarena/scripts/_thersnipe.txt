@@ -9,4 +9,4 @@ pt=4/4
 ability=When SN enters the battlefield, return target nonland permanent to its owner's hand.;\
         evoke {1}{U}{U}
 timing=main
-oracle=When Æthersnipe enters the battlefield, return target nonland permanent to its owner's hand. Evoke {1}{U}{U}
+oracle=When Æthersnipe enters the battlefield, return target nonland permanent to its owner's hand.\nEvoke {1}{U}{U}

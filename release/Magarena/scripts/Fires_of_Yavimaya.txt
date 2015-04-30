@@ -8,4 +8,4 @@ ability=creatures you control have haste;\
         Sacrifice SN: Target creature gets +2/+2 until end of turn.
 static=player
 timing=enchantment
-oracle=Creatures you control have haste. Sacrifice Fires of Yavimaya: Target creature gets +2/+2 until end of turn.
+oracle=Creatures you control have haste.\nSacrifice Fires of Yavimaya: Target creature gets +2/+2 until end of turn.

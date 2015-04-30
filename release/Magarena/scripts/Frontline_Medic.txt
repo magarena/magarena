@@ -9,4 +9,4 @@ pt=3/3
 ability=Whenever SN and at least two other creatures attack, creatures you control gain indestructible until end of turn.;\
         Sacrifice SN: Counter target spell with {X} in its mana cost unless its controller pays {3}.
 timing=main
-oracle=Battalion — Whenever Frontline Medic and at least two other creatures attack, creatures you control gain indestructible until end of turn. Sacrifice Frontline Medic: Counter target spell with {X} in its mana cost unless its controller pays {3}.
+oracle=Battalion — Whenever Frontline Medic and at least two other creatures attack, creatures you control gain indestructible until end of turn.\nSacrifice Frontline Medic: Counter target spell with {X} in its mana cost unless its controller pays {3}.

@@ -9,4 +9,4 @@ pt=3/3
 ability=Flying;\
         Discard a creature card: SN gets +2/+2 until end of turn.
 timing=main
-oracle=Flying. Discard a creature card: Skyshroud Vampire gets +2/+2 until end of turn.
+oracle=Flying\nDiscard a creature card: Skyshroud Vampire gets +2/+2 until end of turn.

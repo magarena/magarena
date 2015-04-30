@@ -9,4 +9,4 @@ pt=2/2
 ability=Cumulative upkeep {1};\
         SN can't be blocked except by Walls.
 timing=main
-oracle=Cumulative upkeep {1}. Flow of Maggots can't be blocked by non-Wall creatures.
+oracle=Cumulative upkeep {1}\nFlow of Maggots can't be blocked by non-Wall creatures.

@@ -9,4 +9,4 @@ pt=8/8
 ability=Trample
 timing=main
 requires_groovy_code
-oracle=Trample. When Boldwyr Heavyweights enters the battlefield, each opponent may search his or her library for a creature card and put it onto the battlefield. Then each player who searched his or her library this way shuffles it.
+oracle=Trample\nWhen Boldwyr Heavyweights enters the battlefield, each opponent may search his or her library for a creature card and put it onto the battlefield. Then each player who searched his or her library this way shuffles it.

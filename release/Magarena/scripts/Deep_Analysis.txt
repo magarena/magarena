@@ -7,4 +7,4 @@ cost={3}{U}
 effect=Target player draws two cards.
 ability=Flashback {1}{U}, Pay 3 life.
 timing=main
-oracle=Target player draws two cards. Flashback—{1}{U}, Pay 3 life.
+oracle=Target player draws two cards.\nFlashback—{1}{U}, Pay 3 life.

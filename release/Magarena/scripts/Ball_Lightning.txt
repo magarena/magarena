@@ -10,4 +10,4 @@ ability=trample;\
         haste;\
         At the beginning of the end step, sacrifice SN.
 timing=fmain
-oracle=Trample. Haste. At the beginning of the end step, sacrifice Ball Lightning.
+oracle=Trample\nHaste\nAt the beginning of the end step, sacrifice Ball Lightning.

@@ -10,4 +10,4 @@ ability=SN can't attack unless defending player controls an Island.;\
         {5}{U}{U}: Monstrosity 3.;\
         When SN becomes monstrous, target land becomes an Island in addition to its other types.
 timing=main
-oracle=Sealock Monster can't attack unless defending player controls an Island. {5}{U}{U}: Monstrosity 3. When Sealock Monster becomes monstrous, target land becomes an Island in addition to its other types.
+oracle=Sealock Monster can't attack unless defending player controls an Island.\n{5}{U}{U}: Monstrosity 3.\nWhen Sealock Monster becomes monstrous, target land becomes an Island in addition to its other types.

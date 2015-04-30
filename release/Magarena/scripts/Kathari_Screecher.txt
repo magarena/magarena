@@ -9,4 +9,4 @@ pt=2/2
 ability=Flying;\
         Unearth {2}{U}
 timing=main
-oracle=Flying. Unearth {2}{U}
+oracle=Flying\nUnearth {2}{U}

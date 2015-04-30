@@ -9,4 +9,4 @@ pt=6/6
 ability=flying;haste
 timing=main
 requires_groovy_code
-oracle=Flying, haste. When Hunted Dragon enters the battlefield, target opponent puts three 2/2 white Knight creature tokens with first strike onto the battlefield.
+oracle=Flying, haste\nWhen Hunted Dragon enters the battlefield, target opponent puts three 2/2 white Knight creature tokens with first strike onto the battlefield.

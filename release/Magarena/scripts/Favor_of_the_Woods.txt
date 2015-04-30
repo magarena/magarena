@@ -8,4 +8,4 @@ cost={2}{G}
 ability=Whenever enchanted creature blocks, you gain 3 life.
 timing=aura
 enchant=pump,pos creature
-oracle=Enchant creature. Whenever enchanted creature blocks, you gain 3 life.
+oracle=Enchant creature\nWhenever enchanted creature blocks, you gain 3 life.

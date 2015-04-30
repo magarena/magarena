@@ -9,4 +9,4 @@ pt=2/3
 ability=First strike
 timing=main
 requires_groovy_code
-oracle=First strike. Discard a card: Resilient Wanderer gains protection from the color of your choice until end of turn.
+oracle=First strike\nDiscard a card: Resilient Wanderer gains protection from the color of your choice until end of turn.

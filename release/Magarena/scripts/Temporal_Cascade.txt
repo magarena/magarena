@@ -7,4 +7,4 @@ cost={5}{U}{U}
 ability=Entwine {2}
 timing=main
 requires_groovy_code
-oracle=Choose one — • Each player shuffles his or her hand and graveyard into his or her library. • Each player draws seven cards. Entwine {2}
+oracle=Choose one —\n• Each player shuffles his or her hand and graveyard into his or her library.\n• Each player draws seven cards.\nEntwine {2}

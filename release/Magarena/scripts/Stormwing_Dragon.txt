@@ -10,4 +10,4 @@ ability=Flying, first strike;\
         Megamorph {5}{R}{R};\
         When SN is turned face up, put a +1/+1 counter on each other Dragon creature you control.
 timing=main
-oracle=Flying, first strike. Megamorph {5}{R}{R}. When Stormwing Dragon is turned face up, put a +1/+1 counter on each other Dragon creature you control.
+oracle=Flying, first strike\nMegamorph {5}{R}{R}\nWhen Stormwing Dragon is turned face up, put a +1/+1 counter on each other Dragon creature you control.

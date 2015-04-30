@@ -9,4 +9,4 @@ cost={1}{W/U}
 timing=nextturn
 enchant=can't attack or block,neg creature
 requires_groovy_code=Narcolepsy
-oracle=Enchant creature. At the beginning of each upkeep, tap enchanted creature.
+oracle=Enchant creature\nAt the beginning of each upkeep, tap enchanted creature.

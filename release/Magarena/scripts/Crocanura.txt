@@ -8,4 +8,4 @@ cost={2}{G}
 pt=1/3
 ability=reach;evolve
 timing=main
-oracle=Reach. Evolve
+oracle=Reach\nEvolve

@@ -8,4 +8,4 @@ cost={4}{W}
 pt=3/3
 ability=vigilance;soulshift 4
 timing=main
-oracle=Vigilance. Soulshift 4
+oracle=Vigilance\nSoulshift 4

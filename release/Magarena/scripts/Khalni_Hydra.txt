@@ -9,4 +9,4 @@ pt=8/8
 ability=Trample
 timing=main
 requires_groovy_code
-oracle=Khalni Hydra costs {G} less to cast for each green creature you control. Trample
+oracle=Khalni Hydra costs {G} less to cast for each green creature you control.\nTrample

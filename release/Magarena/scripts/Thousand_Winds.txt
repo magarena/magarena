@@ -9,4 +9,4 @@ pt=5/6
 ability=Morph {5}{U}{U};\
         When SN is turned face up, return all other tapped creatures to their owners' hands.
 timing=main
-oracle=Morph {5}{U}{U} When Thousand Winds is turned face up, return all other tapped creatures to their owners' hands.
+oracle=Flying\nMorph {5}{U}{U}\nWhen Thousand Winds is turned face up, return all other tapped creatures to their owners' hands.

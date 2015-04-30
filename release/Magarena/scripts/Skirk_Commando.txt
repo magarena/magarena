@@ -9,4 +9,4 @@ pt=2/1
 ability=Morph {2}{R}
 timing=main
 requires_groovy_code
-oracle=Whenever Skirk Commando deals combat damage to a player, you may have it deal 2 damage to target creature that player controls. Morph {2}{R}
+oracle=Whenever Skirk Commando deals combat damage to a player, you may have it deal 2 damage to target creature that player controls.\nMorph {2}{R}

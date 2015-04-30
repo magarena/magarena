@@ -9,4 +9,4 @@ pt=1/4
 ability=flying;\
         When SN enters the battlefield, return target enchantment card from your graveyard to your hand.
 timing=main
-oracle=Flying. When Griffin Dreamfinder enters the battlefield, return target enchantment card from your graveyard to your hand.
+oracle=Flying\nWhen Griffin Dreamfinder enters the battlefield, return target enchantment card from your graveyard to your hand.

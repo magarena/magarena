@@ -9,4 +9,4 @@ ability=vigilance;\
         Whenever you cast a spell that targets SN, put a 1/1 white Cat Soldier creature token with vigilance onto the battlefield.
 pt=2/2
 timing=main
-oracle=Vigilance. Heroic — Whenever you cast a spell that targets Vanguard of Brimaz, put a 1/1 white Cat Soldier creature token with vigilance onto the battlefield.
+oracle=Vigilance\nHeroic — Whenever you cast a spell that targets Vanguard of Brimaz, put a 1/1 white Cat Soldier creature token with vigilance onto the battlefield.

@@ -10,4 +10,4 @@ ability=Flash;\
         Flying;\
         When SN enters the battlefield, if you cast it from your hand, exile all attacking creatures.
 timing=flash
-oracle=Flash. Flying. When Angel of the Dire Hour enters the battlefield, if you cast it from your hand, exile all attacking creatures.
+oracle=Flash\nFlying\nWhen Angel of the Dire Hour enters the battlefield, if you cast it from your hand, exile all attacking creatures.

@@ -8,4 +8,4 @@ mana=w3b3
 ability={T}: Add {W} or {B} to your mana pool.;\
         SN enters the battlefield tapped.
 timing=tapland
-oracle=Orzhov Guildgate enters the battlefield tapped. {T}: Add {W} or {B} to your mana pool.
+oracle=Orzhov Guildgate enters the battlefield tapped.\n{T}: Add {W} or {B} to your mana pool.

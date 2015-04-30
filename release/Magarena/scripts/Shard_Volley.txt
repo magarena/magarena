@@ -8,4 +8,4 @@ cost={R}
 ability=As an additional cost to cast SN, sacrifice a land.
 effect=SN deals 3 damage to target creature or player.
 timing=removal
-oracle=As an additional cost to cast Shard Volley, sacrifice a land. Shard Volley deals 3 damage to target creature or player.
+oracle=As an additional cost to cast Shard Volley, sacrifice a land.\nShard Volley deals 3 damage to target creature or player.

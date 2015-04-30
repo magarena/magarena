@@ -9,4 +9,4 @@ ability=When SN enters the battlefield, exile another target nonland permanent.;
         When SN leaves the battlefield, return the exiled card to the battlefield under its owner's control.;\
         Cast SN with AI only if an opponent controls a nonland permanent.
 timing=removal
-oracle=When Oblivion Ring enters the battlefield, exile another target nonland permanent. When Oblivion Ring leaves the battlefield, return the exiled card to the battlefield under its owner's control.
+oracle=When Oblivion Ring enters the battlefield, exile another target nonland permanent.\nWhen Oblivion Ring leaves the battlefield, return the exiled card to the battlefield under its owner's control.

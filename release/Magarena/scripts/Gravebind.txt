@@ -6,4 +6,4 @@ type=Instant
 cost={B}
 timing=removal
 requires_groovy_code
-oracle=Target creature can't be regenerated this turn. Draw a card at the beginning of the next turn's upkeep.
+oracle=Target creature can't be regenerated this turn.\nDraw a card at the beginning of the next turn's upkeep.

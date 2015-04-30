@@ -9,4 +9,4 @@ pt=4/4
 ability=Flying
 timing=main
 requires_groovy_code
-oracle=Flying. Cumulative upkeep—Discard a card. When Vexing Sphinx dies, draw a card for each age counter on it.
+oracle=Flying\nCumulative upkeep—Discard a card.\nWhen Vexing Sphinx dies, draw a card for each age counter on it.

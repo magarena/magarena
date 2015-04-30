@@ -9,4 +9,4 @@ pt=5/5
 ability=flying;\
         When SN dies, all creatures get -5/-5 until end of turn.
 timing=main
-oracle=Flying. When Havoc Demon dies, all creatures get -5/-5 until end of turn.
+oracle=Flying\nWhen Havoc Demon dies, all creatures get -5/-5 until end of turn.

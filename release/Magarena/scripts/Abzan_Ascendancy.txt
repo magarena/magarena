@@ -7,4 +7,4 @@ cost={W}{B}{G}
 ability=When SN enters the battlefield, put a +1/+1 counter on each creature you control.;\
         Whenever a nontoken creature you control dies, put a 1/1 white Spirit creature token with flying onto the battlefield.
 timing=main
-oracle=When Abzan Ascendancy enters the battlefield, put a +1/+1 counter on each creature you control. Whenever a nontoken creature you control dies, put a 1/1 white Spirit creature token with flying onto the battlefield.
+oracle=When Abzan Ascendancy enters the battlefield, put a +1/+1 counter on each creature you control.\nWhenever a nontoken creature you control dies, put a 1/1 white Spirit creature token with flying onto the battlefield.

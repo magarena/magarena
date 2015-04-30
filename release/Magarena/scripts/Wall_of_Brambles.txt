@@ -9,4 +9,4 @@ pt=2/3
 ability=defender;\
         {G}: Regenerate SN.
 timing=smain
-oracle=Defender. {G}: Regenerate Wall of Brambles.
+oracle=Defender\n{G}: Regenerate Wall of Brambles.

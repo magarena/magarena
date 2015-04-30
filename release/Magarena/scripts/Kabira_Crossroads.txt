@@ -8,4 +8,4 @@ ability={T}: Add {W} to your mana pool.;\
         SN enters the battlefield tapped.;\
         When SN enters the battlefield, you gain 2 life.
 timing=land
-oracle=Kabira Crossroads enters the battlefield tapped. When Kabira Crossroads enters the battlefield, you gain 2 life. {T}: Add {W} to your mana pool.
+oracle=Kabira Crossroads enters the battlefield tapped.\nWhen Kabira Crossroads enters the battlefield, you gain 2 life.\n{T}: Add {W} to your mana pool.

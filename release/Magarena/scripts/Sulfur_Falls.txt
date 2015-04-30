@@ -7,4 +7,4 @@ mana=u3r3
 ability={T}: Add {U} or {R} to your mana pool.;\
         SN enters the battlefield tapped unless you control an Island or a Mountain.
 timing=land
-oracle=Sulfur Falls enters the battlefield tapped unless you control an Island or a Mountain. {T}: Add {U} or {R} to your mana pool.
+oracle=Sulfur Falls enters the battlefield tapped unless you control an Island or a Mountain.\n{T}: Add {U} or {R} to your mana pool.

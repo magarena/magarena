@@ -9,4 +9,4 @@ pt=0/0
 ability=Flying;\
         Modular 1
 timing=main
-oracle=Flying. Modular 1
+oracle=Flying\nModular 1

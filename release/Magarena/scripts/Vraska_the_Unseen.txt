@@ -8,4 +8,4 @@ cost={3}{B}{G}
 ability=loyalty 5
 timing=main
 requires_groovy_code
-oracle=+1: Until your next turn, whenever a creature deals combat damage to Vraska the Unseen, destroy that creature. -3: Destroy target nonland permanent. -7: Put three 1/1 black Assassin creature tokens onto the battlefield with "Whenever this creature deals combat damage to a player, that player loses the game."
+oracle=+1: Until your next turn, whenever a creature deals combat damage to Vraska the Unseen, destroy that creature.\n−3: Destroy target nonland permanent.\n−7: Put three 1/1 black Assassin creature tokens onto the battlefield with "Whenever this creature deals combat damage to a player, that player loses the game."

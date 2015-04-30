@@ -11,4 +11,4 @@ ability=indestructible;\
         {2}{R}: Creatures you control get +1/+0 until end of turn.
 timing=main
 requires_groovy_code
-oracle=Indestructible. As long as your devotion to red is less than five, Purphoros isn't a creature. Whenever another creature enters the battlefield under your control, Purphoros deals 2 damage to each opponent. {2}{R}: Creatures you control get +1/+0 until end of turn.
+oracle=Indestructible\nAs long as your devotion to red is less than five, Purphoros isn't a creature.\nWhenever another creature enters the battlefield under your control, Purphoros deals 2 damage to each opponent.\n{2}{R}: Creatures you control get +1/+0 until end of turn.

@@ -10,4 +10,4 @@ pt=5/5
 ability=trample;champion Treefolk or Warrior
 timing=main
 requires_groovy_code
-oracle=Trample. Champion a Treefolk or Warrior. Whenever a creature you control becomes blocked, it gets +0/+5 until end of turn.
+oracle=Trample\nChampion a Treefolk or Warrior\nWhenever a creature you control becomes blocked, it gets +0/+5 until end of turn.

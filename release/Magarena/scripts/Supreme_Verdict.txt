@@ -9,4 +9,4 @@ ability=SN can't be countered.;\
 effect=Destroy all creatures.
 timing=removal
 removal=2
-oracle=Supreme Verdict can't be countered. Destroy all creatures.
+oracle=Supreme Verdict can't be countered.\nDestroy all creatures.

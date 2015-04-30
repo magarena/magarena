@@ -9,4 +9,4 @@ pt=6/6
 ability=Flying; vigilance;\
         Whenever SN attacks, if it's enchanted, exile target permanent.
 timing=main
-oracle=Flying, vigilance. Whenever Krond the Dawn-Clad attacks, if it's enchanted, exile target permanent.
+oracle=Flying, vigilance\nWhenever Krond the Dawn-Clad attacks, if it's enchanted, exile target permanent.

@@ -6,4 +6,4 @@ type=Instant
 cost={1}{G}
 effect=Target creature gets +1/+1 until end of turn.~Draw a card.
 timing=pump
-oracle=Target creature gets +1/+1 until end of turn. Draw a card.
+oracle=Target creature gets +1/+1 until end of turn.\nDraw a card.

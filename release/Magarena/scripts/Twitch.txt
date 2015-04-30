@@ -6,4 +6,4 @@ type=Instant
 cost={2}{U}
 effect=You may tap or untap target artifact, creature, or land.~Draw a card.
 timing=tapping
-oracle=You may tap or untap target artifact, creature, or land. Draw a card.
+oracle=You may tap or untap target artifact, creature, or land.\nDraw a card.

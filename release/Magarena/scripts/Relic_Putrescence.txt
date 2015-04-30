@@ -8,4 +8,4 @@ cost={2}{B}
 timing=aura
 enchant=tap,neg artifact
 requires_groovy_code
-oracle=Enchant artifact. Whenever enchanted artifact becomes tapped, its controller gets a poison counter.
+oracle=Enchant artifact\nWhenever enchanted artifact becomes tapped, its controller gets a poison counter.

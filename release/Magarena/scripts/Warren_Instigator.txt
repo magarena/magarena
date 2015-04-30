@@ -9,4 +9,4 @@ pt=1/1
 ability=double strike;\
         Whenever SN deals damage to an opponent, you may put a Goblin creature card from your hand onto the battlefield.
 timing=main
-oracle=Double strike. Whenever Warren Instigator deals damage to an opponent, you may put a Goblin creature card from your hand onto the battlefield.
+oracle=Double strike\nWhenever Warren Instigator deals damage to an opponent, you may put a Goblin creature card from your hand onto the battlefield.

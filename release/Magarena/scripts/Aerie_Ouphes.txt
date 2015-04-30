@@ -9,4 +9,4 @@ pt=3/3
 ability=Persist
 timing=main
 requires_groovy_code
-oracle=Sacrifice Aerie Ouphes: Aerie Ouphes deals damage equal to its power to target creature with flying. Persist
+oracle=Sacrifice Aerie Ouphes: Aerie Ouphes deals damage equal to its power to target creature with flying.\nPersist

@@ -10,4 +10,4 @@ ability=flying;\
         {G}: Regenerate SN.;\
         {G}: Untap SN. Activate this ability only once each turn.
 timing=main
-oracle=Flying. {G}: Regenerate Locust Swarm. {G}: Untap Locust Swarm. Activate this ability only once each turn.
+oracle=Flying\n{G}: Regenerate Locust Swarm.\n{G}: Untap Locust Swarm. Activate this ability only once each turn.

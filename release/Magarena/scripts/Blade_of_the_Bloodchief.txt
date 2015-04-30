@@ -8,4 +8,4 @@ cost={1}
 ability=Equip {1}
 timing=equipment
 requires_groovy_code
-oracle=Whenever a creature dies, put a +1/+1 counter on equipped creature. If equipped creature is a Vampire, put two +1/+1 counters on it instead. Equip {1}
+oracle=Whenever a creature dies, put a +1/+1 counter on equipped creature. If equipped creature is a Vampire, put two +1/+1 counters on it instead.\nEquip {1}

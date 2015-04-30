@@ -9,4 +9,4 @@ pt=2/2
 ability={B},{T}: Target player loses 1 life.;\
         {G},{T}: Put a 1/1 green Saproling creature token onto the battlefield.
 timing=main
-oracle={B}, {T}: Target player loses 1 life. {G}, {T}: Put a 1/1 green Saproling creature token onto the battlefield.
+oracle={B}, {T}: Target player loses 1 life.\n{G}, {T}: Put a 1/1 green Saproling creature token onto the battlefield.

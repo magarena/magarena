@@ -9,4 +9,4 @@ pt=0/6
 ability=Defender
 timing=main
 requires_groovy_code
-oracle=Defender. {T}: Put target card from a graveyard on the bottom of its owner's library.
+oracle=Defender\n{T}: Put target card from a graveyard on the bottom of its owner's library.

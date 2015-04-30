@@ -8,4 +8,4 @@ cost={1}{U}
 ability=Enchanted land has "{T}: Counter target spell unless its controller pays {1}."
 enchant=pump,pos land
 timing=aura
-oracle=Enchant land. Enchanted land has "{T}: Counter target spell unless its controller pays {1}."
+oracle=Enchant land\nEnchanted land has "{T}: Counter target spell unless its controller pays {1}."

@@ -8,4 +8,4 @@ cost={4}{W}{W}
 ability=miracle {W}
 timing=removal
 requires_groovy_code
-oracle=Put all creatures on the bottom of their owners' libraries. Miracle {W}
+oracle=Put all creatures on the bottom of their owners' libraries.\nMiracle {W}

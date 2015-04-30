@@ -7,4 +7,4 @@ cost={1}
 ability={4}: Put a pressure counter on SN.
 timing=main
 requires_groovy_code
-oracle={4}: Put a pressure counter on Magma Mine. {T}, Sacrifice Magma Mine: Magma Mine deals damage equal to the number of pressure counters on it to target creature or player.
+oracle={4}: Put a pressure counter on Magma Mine.\n{T}, Sacrifice Magma Mine: Magma Mine deals damage equal to the number of pressure counters on it to target creature or player.

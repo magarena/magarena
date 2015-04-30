@@ -8,4 +8,4 @@ cost={2}
 pt=0/6
 ability=defender;{G}: SN gains reach until end of turn.
 timing=main
-oracle=Defender. {G}: Wall of Tanglecord gains reach until end of turn.
+oracle=Defender\n{G}: Wall of Tanglecord gains reach until end of turn.

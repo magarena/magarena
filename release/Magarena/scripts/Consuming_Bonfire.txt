@@ -7,4 +7,4 @@ subtype=Elemental
 cost={3}{R}{R}
 effect=Choose one — (1) SN deals 4 damage to target non-Elemental creature. (2) SN deals 7 damage to target Treefolk creature.
 timing=main
-oracle=Choose one — • Consuming Bonfire deals 4 damage to target non-Elemental creature. • Consuming Bonfire deals 7 damage to target Treefolk creature.
+oracle=Choose one —\n• Consuming Bonfire deals 4 damage to target non-Elemental creature.\n• Consuming Bonfire deals 7 damage to target Treefolk creature.

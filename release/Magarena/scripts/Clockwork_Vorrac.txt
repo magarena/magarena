@@ -11,4 +11,4 @@ ability=Trample;\
         Whenever SN attacks or blocks, remove a +1/+1 counter from SN at end of combat.;\
         {T}: Put a +1/+1 counter on SN.
 timing=artifact
-oracle=Trample. Clockwork Vorrac enters the battlefield with four +1/+1 counters on it. Whenever Clockwork Vorrac attacks or blocks, remove a +1/+1 counter from it at end of combat. {T}: Put a +1/+1 counter on Clockwork Vorrac.
+oracle=Trample\nClockwork Vorrac enters the battlefield with four +1/+1 counters on it.\nWhenever Clockwork Vorrac attacks or blocks, remove a +1/+1 counter from it at end of combat.\n{T}: Put a +1/+1 counter on Clockwork Vorrac.

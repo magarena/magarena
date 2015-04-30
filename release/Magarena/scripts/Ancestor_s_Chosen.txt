@@ -9,4 +9,4 @@ pt=4/4
 ability=first strike
 timing=main
 requires_groovy_code
-oracle=First strike. When Ancestor's Chosen enters the battlefield, you gain 1 life for each card in your graveyard.
+oracle=First strike\nWhen Ancestor's Chosen enters the battlefield, you gain 1 life for each card in your graveyard.

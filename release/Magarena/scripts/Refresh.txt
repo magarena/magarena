@@ -6,4 +6,4 @@ type=Instant
 cost={2}{G}
 effect=Regenerate target creature.~Draw a card.
 timing=pump
-oracle=Regenerate target creature. Draw a card.
+oracle=Regenerate target creature.\nDraw a card.

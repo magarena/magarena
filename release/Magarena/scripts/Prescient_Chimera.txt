@@ -9,4 +9,4 @@ pt=3/4
 ability=flying;\
         Whenever you cast an instant or sorcery spell, scry 1.
 timing=main
-oracle=Flying. Whenever you cast an instant or sorcery spell, scry 1.
+oracle=Flying\nWhenever you cast an instant or sorcery spell, scry 1.

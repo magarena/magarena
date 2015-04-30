@@ -7,4 +7,4 @@ cost={4}
 timing=artifact
 ability={T}:Put a charge counter on SN.
 requires_groovy_code
-oracle={T}: Put a charge counter on Otherworld Atlas. {T}: Each player draws a card for each charge counter on Otherworld Atlas.
+oracle={T}: Put a charge counter on Otherworld Atlas.\n{T}: Each player draws a card for each charge counter on Otherworld Atlas.

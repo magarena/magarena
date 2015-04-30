@@ -8,4 +8,4 @@ cost={3}{R}
 pt=3/3
 ability=changeling;{R}: SN gains first strike until end of turn.
 timing=main
-oracle=Changeling. {R}: War-Spike Changeling gains first strike until end of turn.
+oracle=Changeling\n{R}: War-Spike Changeling gains first strike until end of turn.

@@ -8,4 +8,4 @@ effect=Creatures you control get +1/+1 and gain vigilance until end of turn.
 ability=Cycling {2};\
         Flashback {3}{W}
 timing=main
-oracle=Creatures you control get +1/+1 and gain vigilance until end of turn. Cycling {2}. Flashback {3}{W}
+oracle=Creatures you control get +1/+1 and gain vigilance until end of turn.\nCycling {2}\nFlashback {3}{W}

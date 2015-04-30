@@ -9,4 +9,4 @@ pt=3/2
 ability=unleash
 timing=main
 requires_groovy_code
-oracle=Unleash. {2}{B}{R}, Sacrifice Hellhole Flailer: Hellhole Flailer deals damage equal to its power to target player.
+oracle=Unleash\n{2}{B}{R}, Sacrifice Hellhole Flailer: Hellhole Flailer deals damage equal to its power to target player.

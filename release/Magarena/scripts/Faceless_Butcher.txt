@@ -10,4 +10,4 @@ pt=2/3
 ability=When SN enters the battlefield, exile another target creature.;\
         When SN leaves the battlefield, return the exiled card to the battlefield under its owner's control.
 timing=main
-oracle=When Faceless Butcher enters the battlefield, exile target creature other than Faceless Butcher. When Faceless Butcher leaves the battlefield, return the exiled card to the battlefield under its owner's control.
+oracle=When Faceless Butcher enters the battlefield, exile target creature other than Faceless Butcher.\nWhen Faceless Butcher leaves the battlefield, return the exiled card to the battlefield under its owner's control.

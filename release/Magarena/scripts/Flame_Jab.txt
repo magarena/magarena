@@ -7,4 +7,4 @@ cost={R}
 ability=Retrace
 effect=SN deals 1 damage to target creature or player.
 timing=removal
-oracle=Flame Jab deals 1 damage to target creature or player. Retrace
+oracle=Flame Jab deals 1 damage to target creature or player.\nRetrace

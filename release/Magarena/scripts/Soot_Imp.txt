@@ -9,4 +9,4 @@ pt=1/2
 ability=flying
 timing=main
 requires_groovy_code
-oracle=Flying. Whenever a player casts a nonblack spell, that player loses 1 life.
+oracle=Flying\nWhenever a player casts a nonblack spell, that player loses 1 life.

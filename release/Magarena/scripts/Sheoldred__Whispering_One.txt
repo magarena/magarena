@@ -10,4 +10,4 @@ ability=swampwalk;\
         At the beginning of your upkeep, return target creature card from your graveyard to the battlefield.
 timing=main
 requires_groovy_code
-oracle=Swampwalk. At the beginning of your upkeep, return target creature card from your graveyard to the battlefield. At the beginning of each opponent's upkeep, that player sacrifices a creature.
+oracle=Swampwalk\nAt the beginning of your upkeep, return target creature card from your graveyard to the battlefield.\nAt the beginning of each opponent's upkeep, that player sacrifices a creature.

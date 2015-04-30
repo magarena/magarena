@@ -9,4 +9,4 @@ pt=2/2
 ability=level up {3}{R} 3
 timing=main
 requires_groovy_code
-oracle=Level up {3}{R}. LEVEL 1-2. 2/3. {T}: Brimstone Mage deals 1 damage to target creature or player. LEVEL 3+. 2/4. {T}: Brimstone Mage deals 3 damage to target creature or player.
+oracle=Level up {3}{R}\nLEVEL 1-2\n2/3\n{T}: Brimstone Mage deals 1 damage to target creature or player.\nLEVEL 3+\n2/4\n{T}: Brimstone Mage deals 3 damage to target creature or player.

@@ -10,4 +10,4 @@ ability=Flying;\
         SN can block only creatures with flying.;\
         {R}{R}: SN gets +2/+0 until end of turn.~SN deals 1 damage to you.
 timing=main
-oracle=Flying. Stormcloud Djinn can block only creatures with flying. {R}{R}: Stormcloud Djinn gets +2/+0 until end of turn and deals 1 damage to you.
+oracle=Flying\nStormcloud Djinn can block only creatures with flying.\n{R}{R}: Stormcloud Djinn gets +2/+0 until end of turn and deals 1 damage to you.

@@ -9,4 +9,4 @@ pt=2/2
 ability=Deathtouch;\
         Scavenge {1}{B}{G}
 timing=main
-oracle=Deathtouch. Scavenge {1}{B}{G}
+oracle=Deathtouch\nScavenge {1}{B}{G}

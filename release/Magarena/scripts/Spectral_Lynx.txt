@@ -9,4 +9,4 @@ pt=2/1
 ability=protection from green;\
         {B}: Regenerate SN.
 timing=main
-oracle=Protection from green. {B}: Regenerate Spectral Lynx.
+oracle=Protection from green\n{B}: Regenerate Spectral Lynx.

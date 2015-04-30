@@ -9,4 +9,4 @@ pt=2/2
 ability=flanking;\
         Whenever SN attacks, tap target creature defending player controls.
 timing=main
-oracle=Flanking. Whenever Sidar Jabari attacks, tap target creature defending player controls.
+oracle=Flanking\nWhenever Sidar Jabari attacks, tap target creature defending player controls.

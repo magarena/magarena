@@ -8,4 +8,4 @@ cost={3}{U}{U}
 ability=miracle {1}{U}
 effect=Return all nonland permanents to their owners' hands.
 timing=removal
-oracle=Return all nonland permanents to their owners' hands. Miracle {1}{U}
+oracle=Return all nonland permanents to their owners' hands.\nMiracle {1}{U}

@@ -10,4 +10,4 @@ ability=other elf creatures you control get +1/+1;\
         {G}, {T}: Put a 1/1 green Elf Warrior creature token onto the battlefield.
 static=player
 timing=main
-oracle=Other Elf creatures you control get +1/+1. {G}, {T}: Put a 1/1 green Elf Warrior creature token onto the battlefield.
+oracle=Other Elf creatures you control get +1/+1.\n{G}, {T}: Put a 1/1 green Elf Warrior creature token onto the battlefield.

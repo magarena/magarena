@@ -9,4 +9,4 @@ pt=5/5
 ability={2}{B}, Sacrifice a creature: Target creature gets -2/-2 until end of turn.
 timing=main
 requires_groovy_code
-oracle={2}{B}, Sacrifice a creature: Target creature gets -2/-2 until end of turn. {2}{B}, Exile a creature card from your graveyard: Target creature gets -2/-2 until end of turn.
+oracle={2}{B}, Sacrifice a creature: Target creature gets -2/-2 until end of turn.\n{2}{B}, Exile a creature card from your graveyard: Target creature gets -2/-2 until end of turn.

@@ -6,4 +6,4 @@ type=Instant
 cost={R}
 effect=Choose one — (1) Target creature gains haste until end of turn. (2) Target creature gets +2/+0 until end of turn. (3) SN deals 3 damage to target Wizard creature.
 timing=pump
-oracle=Choose one — • Target creature gains haste until end of turn. • Target creature gets +2/+0 until end of turn. • Fever Charm deals 3 damage to target Wizard creature.
+oracle=Choose one —\n• Target creature gains haste until end of turn.\n• Target creature gets +2/+0 until end of turn.\n• Fever Charm deals 3 damage to target Wizard creature.

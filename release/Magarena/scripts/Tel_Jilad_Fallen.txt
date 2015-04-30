@@ -8,4 +8,4 @@ cost={2}{G}{G}
 pt=3/1
 ability=protection from artifacts;infect
 timing=main
-oracle=Protection from artifacts. Infect
+oracle=Protection from artifacts\nInfect

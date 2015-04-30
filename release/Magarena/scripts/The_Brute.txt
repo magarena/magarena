@@ -9,4 +9,4 @@ ability=Enchanted creature gets +1/+0.;\
         {R}{R}{R}: Regenerate enchanted creature.
 enchant=pump,pos creature
 timing=aura
-oracle=Enchant creature. Enchanted creature gets +1/+0. {R}{R}{R}: Regenerate enchanted creature.
+oracle=Enchant creature\nEnchanted creature gets +1/+0.\n{R}{R}{R}: Regenerate enchanted creature.

@@ -8,4 +8,4 @@ subtype=Drake
 cost={1}{U}{B}
 pt=2/3
 timing=main
-oracle=Flying. Urborg Drake attacks each turn if able.
+oracle=Flying\nUrborg Drake attacks each turn if able.

@@ -9,4 +9,4 @@ pt=0/2
 ability=defender;flying
 timing=main
 requires_groovy_code
-oracle=Defender, flying. Prevent all combat damage that would be dealt to and dealt by Fog Bank.
+oracle=Defender, flying\nPrevent all combat damage that would be dealt to and dealt by Fog Bank.

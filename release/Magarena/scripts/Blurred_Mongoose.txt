@@ -9,4 +9,4 @@ subtype=Mongoose
 cost={1}{G}
 pt=2/1
 timing=fmain
-oracle=Blurred Mongoose can't be countered. Shroud
+oracle=Blurred Mongoose can't be countered.\nShroud

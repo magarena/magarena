@@ -7,4 +7,4 @@ cost={3}{U}
 ability=You may return two Islands you control to their owner's hand rather than pay SN's mana cost.
 effect=Tap all creatures.
 timing=tapping
-oracle=You may return two Islands you control to their owner's hand rather than pay Ensnare's mana cost. Tap all creatures.
+oracle=You may return two Islands you control to their owner's hand rather than pay Ensnare's mana cost.\nTap all creatures.

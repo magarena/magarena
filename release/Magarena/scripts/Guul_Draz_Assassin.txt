@@ -9,4 +9,4 @@ pt=1/1
 ability=level up {1}{B} 4
 timing=main
 requires_groovy_code
-oracle=Level up {1}{B}. LEVEL 2-3. 2/2. {B}, {T}: Target creature gets -2/-2 until end of turn. LEVEL 4+. 4/4. {B}, {T}: Target creature gets -4/-4 until end of turn.
+oracle=Level up {1}{B}\nLEVEL 2-3\n2/2\n{B}, {T}: Target creature gets -2/-2 until end of turn.\nLEVEL 4+\n4/4\n{B}, {T}: Target creature gets -4/-4 until end of turn.

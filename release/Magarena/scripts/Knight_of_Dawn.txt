@@ -9,4 +9,4 @@ pt=2/2
 ability=First strike
 timing=main
 requires_groovy_code
-oracle=First strike. {W}{W}: Knight of Dawn gains protection from the color of your choice until end of turn.
+oracle=First strike\n{W}{W}: Knight of Dawn gains protection from the color of your choice until end of turn.

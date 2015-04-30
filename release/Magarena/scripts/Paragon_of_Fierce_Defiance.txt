@@ -9,4 +9,4 @@ pt=2/2
 ability=Other red creatures you control get +1/+1.;\
         {R}, {T}: Another target red creature you control gains haste until end of turn.
 timing=main
-oracle=Other red creatures you control get +1/+1. {R}, {T}: Another target red creature you control gains haste until end of turn.
+oracle=Other red creatures you control get +1/+1.\n{R}, {T}: Another target red creature you control gains haste until end of turn.

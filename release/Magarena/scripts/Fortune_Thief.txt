@@ -9,4 +9,4 @@ pt=0/1
 ability=Morph {R}{R}
 timing=main
 requires_groovy_code=Ali from Cairo
-oracle=Damage that would reduce your life total to less than 1 reduces it to 1 instead. Morph {R}{R}
+oracle=Damage that would reduce your life total to less than 1 reduces it to 1 instead.\nMorph {R}{R}

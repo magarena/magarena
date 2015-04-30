@@ -9,4 +9,4 @@ pt=4/3
 ability=Flying; haste
 timing=main
 requires_groovy_code
-oracle=Flying, haste. Grandeur — Discard another card named Tarox Bladewing: Tarox Bladewing gets +X/+X until end of turn, where X is its power.
+oracle=Flying, haste\nGrandeur — Discard another card named Tarox Bladewing: Tarox Bladewing gets +X/+X until end of turn, where X is its power.

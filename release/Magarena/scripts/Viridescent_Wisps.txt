@@ -6,4 +6,4 @@ type=Instant
 cost={G}
 timing=pump
 requires_groovy_code
-oracle=Target creature becomes green and gets +1/+0 until end of turn. Draw a card.
+oracle=Target creature becomes green and gets +1/+0 until end of turn.\nDraw a card.

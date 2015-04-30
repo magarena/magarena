@@ -8,4 +8,4 @@ cost={2}{R}
 ability=wither
 effect=SN deals 3 damage to target creature or player.
 timing=removal
-oracle=Wither. Puncture Blast deals 3 damage to target creature or player.
+oracle=Wither\nPuncture Blast deals 3 damage to target creature or player.

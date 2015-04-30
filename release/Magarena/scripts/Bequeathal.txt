@@ -8,4 +8,4 @@ cost={G}
 ability=When enchanted creature dies, you draw two cards.
 enchant=pump,creature
 timing=enchantment
-oracle=Enchant creature. When enchanted creature dies, you draw two cards.
+oracle=Enchant creature\nWhen enchanted creature dies, you draw two cards.

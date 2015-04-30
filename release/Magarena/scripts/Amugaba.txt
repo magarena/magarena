@@ -9,4 +9,4 @@ pt=6/6
 ability=Flying;\
         {2}{U}, Discard a card: Return SN to its owner's hand.
 timing=main
-oracle=Flying. {2}{U}, Discard a card: Return Amugaba to its owner's hand.
+oracle=Flying\n{2}{U}, Discard a card: Return Amugaba to its owner's hand.

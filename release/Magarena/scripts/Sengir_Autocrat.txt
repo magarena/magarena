@@ -9,4 +9,4 @@ pt=2/2
 ability=When SN enters the battlefield, put three 0/1 black Serf creature tokens onto the battlefield.;\
         When SN leaves the battlefield, exile all Serf tokens.
 timing=main
-oracle=When Sengir Autocrat enters the battlefield, put three 0/1 black Serf creature tokens onto the battlefield. When Sengir Autocrat leaves the battlefield, exile all Serf tokens.
+oracle=When Sengir Autocrat enters the battlefield, put three 0/1 black Serf creature tokens onto the battlefield.\nWhen Sengir Autocrat leaves the battlefield, exile all Serf tokens.

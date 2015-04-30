@@ -6,4 +6,4 @@ type=Instant
 cost={W}
 effect=Target creature you control gains protection from the color of your choice until end of turn.~Rebound
 timing=pump
-oracle=Target creature you control gains protection from the color of your choice until end of turn. Rebound
+oracle=Target creature you control gains protection from the color of your choice until end of turn.\nRebound

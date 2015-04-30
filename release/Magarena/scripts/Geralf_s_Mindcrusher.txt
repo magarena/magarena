@@ -9,4 +9,4 @@ pt=5/5
 ability=undying;\
         When SN enters the battlefield, target player puts the top five cards of his or her library into his or her graveyard.
 timing=main
-oracle=When Geralf's Mindcrusher enters the battlefield, target player puts the top five cards of his or her library into his or her graveyard. Undying
+oracle=When Geralf's Mindcrusher enters the battlefield, target player puts the top five cards of his or her library into his or her graveyard.\nUndying

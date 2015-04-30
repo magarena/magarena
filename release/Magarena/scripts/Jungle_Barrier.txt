@@ -9,4 +9,4 @@ pt=2/6
 ability=When SN enters the battlefield, draw a card.;\
         defender
 timing=main
-oracle=Defender. When Jungle Barrier enters the battlefield, draw a card.
+oracle=Defender\nWhen Jungle Barrier enters the battlefield, draw a card.

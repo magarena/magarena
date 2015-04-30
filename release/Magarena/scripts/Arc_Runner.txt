@@ -9,4 +9,4 @@ pt=5/1
 ability=Haste;\
         At the beginning of the end step, sacrifice SN.
 timing=fmain
-oracle=Haste. At the beginning of the end step, sacrifice Arc Runner.
+oracle=Haste\nAt the beginning of the end step, sacrifice Arc Runner.

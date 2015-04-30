@@ -9,4 +9,4 @@ pt=9/9
 ability=You may pay 6 life and sacrifice three black creatures rather than pay SN's mana cost.;\
         flying;trample
 timing=main
-oracle=You may pay 6 life and sacrifice three black creatures rather than pay Demon of Death's Gate's mana cost. Flying, trample
+oracle=You may pay 6 life and sacrifice three black creatures rather than pay Demon of Death's Gate's mana cost.\nFlying, trample

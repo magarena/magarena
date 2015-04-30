@@ -9,4 +9,4 @@ pt=1/3
 ability=flying;\
         Whenever you cast an artifact spell, you may untap target creature.
 timing=main
-oracle=Flying. Whenever you cast an artifact spell, you may untap target creature.
+oracle=Flying\nWhenever you cast an artifact spell, you may untap target creature.

@@ -9,4 +9,4 @@ pt=3/3
 ability=horsemanship;\
         When SN enters the battlefield, you lose 3 life.
 timing=main
-oracle=Horsemanship. When Cao Ren, Wei Commander enters the battlefield, you lose 3 life.
+oracle=Horsemanship\nWhen Cao Ren, Wei Commander enters the battlefield, you lose 3 life.

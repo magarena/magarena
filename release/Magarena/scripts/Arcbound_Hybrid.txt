@@ -9,4 +9,4 @@ pt=0/0
 ability=Haste;\
         Modular 2
 timing=fmain
-oracle=Haste. Modular 2
+oracle=Haste\nModular 2

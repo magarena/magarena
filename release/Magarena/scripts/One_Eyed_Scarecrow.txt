@@ -10,4 +10,4 @@ pt=2/3
 ability=defender;creatures with flying your opponents control get -1/-0
 static=opponent
 timing=artifact
-oracle=Defender. Creatures with flying your opponents control get -1/-0.
+oracle=Defender\nCreatures with flying your opponents control get -1/-0.

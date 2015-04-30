@@ -9,4 +9,4 @@ pt=2/2
 ability=When SN enters the battlefield, if you control two or more Mountains, you may destroy target artifact.;\
         When SN enters the battlefield, if you control two or more Plains, you may destroy target enchantment.
 timing=main
-oracle=When Duergar Hedge-Mage enters the battlefield, if you control two or more Mountains, you may destroy target artifact. When Duergar Hedge-Mage enters the battlefield, if you control two or more Plains, you may destroy target enchantment.
+oracle=When Duergar Hedge-Mage enters the battlefield, if you control two or more Mountains, you may destroy target artifact.\nWhen Duergar Hedge-Mage enters the battlefield, if you control two or more Plains, you may destroy target enchantment.

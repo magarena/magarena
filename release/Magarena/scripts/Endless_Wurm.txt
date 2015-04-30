@@ -9,4 +9,4 @@ pt=9/9
 ability=trample
 timing=main
 requires_groovy_code
-oracle=Trample. At the beginning of your upkeep, sacrifice Endless Wurm unless you sacrifice an enchantment.
+oracle=Trample\nAt the beginning of your upkeep, sacrifice Endless Wurm unless you sacrifice an enchantment.

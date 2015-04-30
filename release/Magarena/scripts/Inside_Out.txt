@@ -6,4 +6,4 @@ type=Instant
 cost={1}{U/R}
 timing=removal
 requires_groovy_code=Twisted Image
-oracle=Switch target creature's power and toughness until end of turn. Draw a card.
+oracle=Switch target creature's power and toughness until end of turn.\nDraw a card.

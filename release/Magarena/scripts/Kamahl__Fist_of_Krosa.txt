@@ -9,4 +9,4 @@ pt=4/3
 ability={G}: Target land becomes a 1/1 creature until end of turn. It's still a land.;\
         {2}{G}{G}{G}: Creatures you control get +3/+3 and gain trample until end of turn.
 timing=main
-oracle={G}: Target land becomes a 1/1 creature until end of turn. It's still a land. {2}{G}{G}{G}: Creatures you control get +3/+3 and gain trample until end of turn.
+oracle={G}: Target land becomes a 1/1 creature until end of turn. It's still a land.\n{2}{G}{G}{G}: Creatures you control get +3/+3 and gain trample until end of turn.

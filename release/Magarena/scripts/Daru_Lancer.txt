@@ -9,4 +9,4 @@ pt=3/4
 ability=First strike;\
         Morph {2}{W}{W}
 timing=main
-oracle=First strike. Morph {2}{W}{W}
+oracle=First strike\nMorph {2}{W}{W}

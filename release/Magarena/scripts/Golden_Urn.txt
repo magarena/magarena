@@ -7,4 +7,4 @@ cost={1}
 timing=artifact
 ability=At the beginning of your upkeep, you may put a charge counter on SN.
 requires_groovy_code
-oracle=At the beginning of your upkeep, you may put a charge counter on Golden Urn. {T}, Sacrifice Golden Urn: You gain life equal to the number of charge counters on Golden Urn.
+oracle=At the beginning of your upkeep, you may put a charge counter on Golden Urn.\n{T}, Sacrifice Golden Urn: You gain life equal to the number of charge counters on Golden Urn.

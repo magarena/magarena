@@ -9,4 +9,4 @@ pt=0/6
 ability=Defender;\
         Whenever SN blocks, put a -0/-1 counter on SN.
 timing=main
-oracle=Defender. Whenever Shield Sphere blocks, put a -0/-1 counter on it.
+oracle=Defender\nWhenever Shield Sphere blocks, put a -0/-1 counter on it.

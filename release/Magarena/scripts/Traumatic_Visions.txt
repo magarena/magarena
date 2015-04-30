@@ -7,4 +7,4 @@ cost={3}{U}{U}
 ability=Basic landcycling {1}{U}
 effect=Counter target spell.
 timing=counter
-oracle=Counter target spell. Basic landcycling {1}{U}
+oracle=Counter target spell.\nBasic landcycling {1}{U}

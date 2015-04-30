@@ -9,4 +9,4 @@ pt=0/1
 ability={T}:SN deals 1 damage to target player.;\
         Whenever you cast a red spell, you may untap SN.
 timing=main
-oracle={T}: Cinder Pyromancer deals 1 damage to target player. Whenever you cast a red spell, you may untap Cinder Pyromancer.
+oracle={T}: Cinder Pyromancer deals 1 damage to target player.\nWhenever you cast a red spell, you may untap Cinder Pyromancer.

@@ -8,4 +8,4 @@ cost={3}{W}{U}
 ability=loyalty 3
 timing=main
 requires_groovy_code
-oracle=+2: Exile target permanent you own. Return it to the battlefield under your control at the beginning of the next end step. -1: Creatures can't be blocked this turn. -8: You get an emblem with "Whenever you cast a spell, exile target permanent."
+oracle=+2: Exile target permanent you own. Return it to the battlefield under your control at the beginning of the next end step.\n−1: Creatures can't be blocked this turn.\n−8: You get an emblem with "Whenever you cast a spell, exile target permanent."

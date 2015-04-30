@@ -9,4 +9,4 @@ pt=2/2
 ability=level up {1} 4
 timing=main
 requires_groovy_code
-oracle=Level up {1}. LEVEL 2-3. 3/3. Flying. LEVEL 4+. 4/4. Flying. Other Merfolk creatures you control get +1/+1.
+oracle=Level up {1}\nLEVEL 2-3\n3/3\nFlying\nLEVEL 4+\n4/4\nFlying\nOther Merfolk creatures you control get +1/+1.

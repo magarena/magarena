@@ -9,4 +9,4 @@ pt=5/4
 ability=Flying
 timing=main
 requires_groovy_code=Gallowbraid
-oracle=Flying. Cumulative upkeep—Pay 1 life.
+oracle=Flying\nCumulative upkeep—Pay 1 life.

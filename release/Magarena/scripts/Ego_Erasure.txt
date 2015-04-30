@@ -8,4 +8,4 @@ ability=changeling
 cost={2}{U}
 timing=removal
 requires_groovy_code
-oracle=Changeling. Creatures target player controls get -2/-0 and lose all creature types until end of turn.
+oracle=Changeling\nCreatures target player controls get -2/-0 and lose all creature types until end of turn.

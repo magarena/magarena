@@ -9,4 +9,4 @@ pt=2/1
 ability=swampwalk;\
         {G}: Regenerate SN.
 timing=main
-oracle=Swampwalk. {G}: Regenerate Mire Boa.
+oracle=Swampwalk\n{G}: Regenerate Mire Boa.

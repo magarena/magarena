@@ -8,4 +8,4 @@ subtype=Human,Archer
 cost={2}{G}
 pt=1/3
 timing=main
-oracle=Reach. Exalted
+oracle=Reach\nExalted

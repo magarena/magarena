@@ -8,4 +8,4 @@ cost={2}{R}
 pt=2/2
 ability=flanking;haste
 timing=fmain
-oracle=Haste. Flanking
+oracle=Haste\nFlanking

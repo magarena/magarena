@@ -9,4 +9,4 @@ pt=2/2
 ability=flash;\
         When SN enters the battlefield, return a creature you control to its owner's hand.
 timing=pumpFlash
-oracle=Flash. When Whitemane Lion enters the battlefield, return a creature you control to its owner's hand.
+oracle=Flash\nWhen Whitemane Lion enters the battlefield, return a creature you control to its owner's hand.

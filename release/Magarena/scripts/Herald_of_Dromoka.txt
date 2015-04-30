@@ -9,4 +9,4 @@ pt=2/2
 ability=Vigilance;\
         Other Warrior creatures you control have vigilance.
 timing=fmain
-oracle=Vigilance. Other Warrior creatures you control have vigilance.
+oracle=Vigilance\nOther Warrior creatures you control have vigilance.

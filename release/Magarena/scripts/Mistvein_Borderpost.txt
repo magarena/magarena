@@ -8,4 +8,4 @@ ability=You may pay {1} and return a basic land you control to its owner's hand 
         SN enters the battlefield tapped.;\
         {T}: Add {U} or {B} to your mana pool.
 timing=artifact
-oracle=You may pay {1} and return a basic land you control to its owner's hand rather than pay Mistvein Borderpost's mana cost. Mistvein Borderpost enters the battlefield tapped. {T}: Add {U} or {B} to your mana pool.
+oracle=You may pay {1} and return a basic land you control to its owner's hand rather than pay Mistvein Borderpost's mana cost.\nMistvein Borderpost enters the battlefield tapped.\n{T}: Add {U} or {B} to your mana pool.

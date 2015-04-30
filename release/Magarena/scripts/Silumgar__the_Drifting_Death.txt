@@ -9,4 +9,4 @@ pt=3/7
 ability=Flying; hexproof;\
         Whenever a Dragon you control attacks, creatures defending player controls get -1/-1 until end of turn.
 timing=main
-oracle=Flying, hexproof. Whenever a Dragon you control attacks, creatures defending player controls get -1/-1 until end of turn.
+oracle=Flying, hexproof\nWhenever a Dragon you control attacks, creatures defending player controls get -1/-1 until end of turn.

@@ -7,4 +7,4 @@ cost={4}{G/U}{G/U}
 timing=main
 ability=Retrace
 requires_groovy_code
-oracle=Put a token that's a copy of target creature onto the battlefield. Retrace
+oracle=Put a token that's a copy of target creature onto the battlefield.\nRetrace

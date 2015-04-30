@@ -8,4 +8,4 @@ cost={2}
 ability=Equipped creature can't be blocked except by walls.;\
         Equip {2}
 timing=artifact
-oracle=Equipped creature can't be blocked except by Walls. Equip {2}
+oracle=Equipped creature can't be blocked except by Walls.\nEquip {2}

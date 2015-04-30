@@ -9,4 +9,4 @@ pt=1/5
 ability=Flying;vigilance;\
         Whenever SN attacks, other attacking creatures get +1/+1 until end of turn.
 timing=main
-oracle=Flying, vigilance. Whenever Jelenn Sphinx attacks, other attacking creatures get +1/+1 until end of turn.
+oracle=Flying, vigilance\nWhenever Jelenn Sphinx attacks, other attacking creatures get +1/+1 until end of turn.

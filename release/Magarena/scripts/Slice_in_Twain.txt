@@ -6,4 +6,4 @@ type=Instant
 cost={2}{G}{G}
 effect=Destroy target artifact or enchantment.~Draw a card.
 timing=removal
-oracle=Destroy target artifact or enchantment. Draw a card.
+oracle=Destroy target artifact or enchantment.\nDraw a card.

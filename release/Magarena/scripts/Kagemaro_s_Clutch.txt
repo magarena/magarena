@@ -8,4 +8,4 @@ cost={3}{B}
 timing=aura
 enchant=weaken,neg creature
 requires_groovy_code
-oracle=Enchant creature. Enchanted creature gets -X/-X, where X is the number of cards in your hand.
+oracle=Enchant creature\nEnchanted creature gets -X/-X, where X is the number of cards in your hand.

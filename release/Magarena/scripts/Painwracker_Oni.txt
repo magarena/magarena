@@ -9,4 +9,4 @@ pt=5/4
 ability=Fear
 timing=main
 requires_groovy_code
-oracle=Fear. At the beginning of your upkeep, sacrifice a creature if you don't control an Ogre.
+oracle=Fear\nAt the beginning of your upkeep, sacrifice a creature if you don't control an Ogre.

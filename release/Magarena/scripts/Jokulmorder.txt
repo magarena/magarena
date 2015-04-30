@@ -12,4 +12,4 @@ ability=Trample;\
         Whenever an Island enters the battlefield under your control, you may untap SN.
 timing=main
 requires_groovy_code
-oracle=Trample. Jokulmorder enters the battlefield tapped. When Jokulmorder enters the battlefield, sacrifice it unless you sacrifice five lands. Jokulmorder doesn't untap during your untap step. Whenever you play an Island, you may untap Jokulmorder.
+oracle=Trample\nJokulmorder enters the battlefield tapped.\nWhen Jokulmorder enters the battlefield, sacrifice it unless you sacrifice five lands.\nJokulmorder doesn't untap during your untap step.\nWhenever you play an Island, you may untap Jokulmorder.

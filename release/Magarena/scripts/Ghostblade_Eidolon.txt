@@ -10,4 +10,4 @@ ability=Bestow {5}{W};\
         Double strike;\
         Enchanted creature gets +1/+1 and has double strike.
 timing=main
-oracle=Bestow {5}{W}. Double strike. Enchanted creature gets +1/+1 and has double strike.
+oracle=Bestow {5}{W}\nDouble strike\nEnchanted creature gets +1/+1 and has double strike.

@@ -7,4 +7,4 @@ cost={2}{U}{U}
 timing=counter
 ability=SN can't be countered by spells or abilities.
 effect=Counter target spell.
-oracle=Last Word can't be countered by spells or abilities. Counter target spell.
+oracle=Last Word can't be countered by spells or abilities.\nCounter target spell.

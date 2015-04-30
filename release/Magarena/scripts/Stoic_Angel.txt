@@ -10,4 +10,4 @@ ability=flying;vigilance;\
         creatures have "SN doesn't untap during your untap step."
 timing=main
 requires_groovy_code
-oracle=Flying, vigilance. Players can't untap more than one creature during their untap steps.
+oracle=Flying, vigilance\nPlayers can't untap more than one creature during their untap steps.

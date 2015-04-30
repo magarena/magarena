@@ -9,4 +9,4 @@ pt=3/5
 ability=flying;kicker {1}{U}
 timing=main
 requires_groovy_code
-oracle=Kicker {1}{U}. Flying. When Sphinx of Lost Truths enters the battlefield, draw three cards. Then if it wasn't kicked, discard three cards.
+oracle=Kicker {1}{U}\nFlying\nWhen Sphinx of Lost Truths enters the battlefield, draw three cards. Then if it wasn't kicked, discard three cards.

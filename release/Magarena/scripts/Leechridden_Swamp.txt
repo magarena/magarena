@@ -7,4 +7,4 @@ subtype=Swamp
 ability=SN enters the battlefield tapped.;\
         {B}, {T}: Each opponent loses 1 life. Activate this ability only if you control two or more black permanents.
 timing=tapland
-oracle=Leechridden Swamp enters the battlefield tapped. {B}, {T}: Each opponent loses 1 life. Activate this ability only if you control two or more black permanents.
+oracle=Leechridden Swamp enters the battlefield tapped.\n{B}, {T}: Each opponent loses 1 life. Activate this ability only if you control two or more black permanents.

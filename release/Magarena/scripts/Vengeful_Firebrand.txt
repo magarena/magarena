@@ -9,4 +9,4 @@ pt=5/2
 ability=SN has haste as long as a Warrior card is in your graveyard.;\
         {R}: SN gets +1/+0 until end of turn.
 timing=main
-oracle=Vengeful Firebrand has haste as long as a Warrior card is in your graveyard. {R}: Vengeful Firebrand gets +1/+0 until end of turn.
+oracle=Vengeful Firebrand has haste as long as a Warrior card is in your graveyard.\n{R}: Vengeful Firebrand gets +1/+0 until end of turn.

@@ -9,4 +9,4 @@ pt=0/4
 ability=fear
 timing=main
 requires_groovy_code
-oracle=Fear. Whenever Guiltfeeder attacks and isn't blocked, defending player loses 1 life for each card in his or her graveyard.
+oracle=Fear\nWhenever Guiltfeeder attacks and isn't blocked, defending player loses 1 life for each card in his or her graveyard.

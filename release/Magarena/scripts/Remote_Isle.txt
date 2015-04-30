@@ -8,4 +8,4 @@ ability=SN enters the battlefield tapped.;\
         {T}: Add {U} to your mana pool.;\
         cycling {2}
 timing=tapland
-oracle=Remote Isle enters the battlefield tapped. {T}: Add {U} to your mana pool. Cycling {2}
+oracle=Remote Isle enters the battlefield tapped.\n{T}: Add {U} to your mana pool.\nCycling {2}

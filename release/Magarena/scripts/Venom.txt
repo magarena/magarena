@@ -8,4 +8,4 @@ cost={1}{G}{G}
 timing=aura
 enchant=pump,pos creature
 requires_groovy_code
-oracle=Enchant creature. Whenever enchanted creature blocks or becomes blocked by a non-Wall creature, destroy the other creature at end of combat.
+oracle=Enchant creature\nWhenever enchanted creature blocks or becomes blocked by a non-Wall creature, destroy the other creature at end of combat.

@@ -9,4 +9,4 @@ pt=1/1
 ability=Vigilance.;\
         Whenever SN blocks or becomes blocked by a white creature, SN gains first strike until end of turn.
 timing=main
-oracle=Vigilance. Whenever Ghost Hounds blocks or becomes blocked by a white creature, Ghost Hounds gains first strike until end of turn.
+oracle=Vigilance\nWhenever Ghost Hounds blocks or becomes blocked by a white creature, Ghost Hounds gains first strike until end of turn.

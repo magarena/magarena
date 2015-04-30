@@ -8,4 +8,4 @@ cost={3}{W}
 pt=2/2
 ability=flying;{T}:Target attacking or blocking creature gets +2/+2 until end of turn.
 timing=main
-oracle=Flying. {T}: Target attacking or blocking creature gets +2/+2 until end of turn.
+oracle=Flying\n{T}: Target attacking or blocking creature gets +2/+2 until end of turn.

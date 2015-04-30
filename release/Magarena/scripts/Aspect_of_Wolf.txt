@@ -8,4 +8,4 @@ cost={1}{G}
 enchant=pump,pos creature
 timing=aura
 requires_groovy_code
-oracle=Enchant creature. Enchanted creature gets +X/+Y, where X is half the number of Forests you control, rounded down, and Y is half the number of Forests you control, rounded up.
+oracle=Enchant creature\nEnchanted creature gets +X/+Y, where X is half the number of Forests you control, rounded down, and Y is half the number of Forests you control, rounded up.

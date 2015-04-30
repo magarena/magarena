@@ -9,4 +9,4 @@ pt=2/2
 ability=flying;\
         As long as seven or more cards are in your graveyard, SN gets +2/+2 and can't block.
 timing=main
-oracle=Flying. Threshold — As long as seven or more cards are in your graveyard, Childhood Horror gets +2/+2 and can't block.
+oracle=Flying\nThreshold — As long as seven or more cards are in your graveyard, Childhood Horror gets +2/+2 and can't block.

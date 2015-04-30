@@ -10,4 +10,4 @@ ability=Flying;\
         SN can't block.;\
         Dash {1}{B}
 timing=main
-oracle=Flying. Reckless Imp can't block. Dash {1}{B}
+oracle=Flying\nReckless Imp can't block.\nDash {1}{B}

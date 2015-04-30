@@ -9,4 +9,4 @@ pt=2/2
 ability=flying;\
         When SN enters the battlefield, if you control a black permanent, target player loses 2 life and you gain 2 life.
 timing=main
-oracle=Flying. When Parasitic Strix enters the battlefield, if you control a black permanent, target player loses 2 life and you gain 2 life.
+oracle=Flying\nWhen Parasitic Strix enters the battlefield, if you control a black permanent, target player loses 2 life and you gain 2 life.

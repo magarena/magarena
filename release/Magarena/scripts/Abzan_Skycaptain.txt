@@ -9,4 +9,4 @@ pt=2/2
 ability=Flying;\
         When SN dies, bolster 2.
 timing=main
-oracle=Flying. When Abzan Skycaptain dies, bolster 2.
+oracle=Flying\nWhen Abzan Skycaptain dies, bolster 2.

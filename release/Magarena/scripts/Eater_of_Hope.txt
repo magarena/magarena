@@ -10,4 +10,4 @@ ability=flying;\
         Sacrifice another creature: Regenerate SN.;\
         {2}{B}, Sacrifice another two creatures: Destroy target creature.
 timing=main
-oracle=Flying. {B}, Sacrifice another creature: Regenerate Eater of Hope. {2}{B}, Sacrifice two other creatures: Destroy target creature.
+oracle=Flying\n{B}, Sacrifice another creature: Regenerate Eater of Hope.\n{2}{B}, Sacrifice two other creatures: Destroy target creature.

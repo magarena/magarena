@@ -9,4 +9,4 @@ pt=3/2
 ability=Deathtouch;\
         Whenever you cast a spell that targets SN, each opponent sacrifices a creature.
 timing=main
-oracle=Deathtouch. Heroic — Whenever you cast a spell that targets Agent of the Fates, each opponent sacrifices a creature.
+oracle=Deathtouch\nHeroic — Whenever you cast a spell that targets Agent of the Fates, each opponent sacrifices a creature.

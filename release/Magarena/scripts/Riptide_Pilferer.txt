@@ -9,4 +9,4 @@ pt=1/1
 ability=Whenever SN deals combat damage to a player, that player discards a card.;\
         Morph {U}
 timing=main
-oracle=Whenever Riptide Pilferer deals combat damage to a player, that player discards a card. Morph {U}
+oracle=Whenever Riptide Pilferer deals combat damage to a player, that player discards a card.\nMorph {U}

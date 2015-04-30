@@ -7,4 +7,4 @@ cost={1}{U}
 effect=Target creature gains shroud until end of turn.
 ability=cycling {U}
 timing=removal
-oracle=Target creature gains shroud until end of turn. Cycling {U}
+oracle=Target creature gains shroud until end of turn.\nCycling {U}

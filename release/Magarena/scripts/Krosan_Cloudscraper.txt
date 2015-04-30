@@ -9,4 +9,4 @@ pt=13/13
 ability=At the beginning of your upkeep, you may pay {G}{G}. If you don't, sacrifice SN.;\
         Morph {7}{G}{G}
 timing=main
-oracle=At the beginning of your upkeep, sacrifice Krosan Cloudscraper unless you pay {G}{G}. Morph {7}{G}{G}
+oracle=At the beginning of your upkeep, sacrifice Krosan Cloudscraper unless you pay {G}{G}.\nMorph {7}{G}{G}

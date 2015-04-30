@@ -10,4 +10,4 @@ ability=At the beginning of your upkeep, put a spore counter on SN.;\
         Sacrifice a Saproling: Target creature gets -1/-1 until end of turn.;\
         Remove three spore counters from SN: Put a 1/1 green Saproling creature token onto the battlefield.
 timing=main
-oracle=At the beginning of your upkeep, put a spore counter on Deathspore Thallid. Remove three spore counters from Deathspore Thallid: Put a 1/1 green Saproling creature token onto the battlefield. Sacrifice a Saproling: Target creature gets -1/-1 until end of turn.
+oracle=At the beginning of your upkeep, put a spore counter on Deathspore Thallid.\nRemove three spore counters from Deathspore Thallid: Put a 1/1 green Saproling creature token onto the battlefield.\nSacrifice a Saproling: Target creature gets -1/-1 until end of turn.

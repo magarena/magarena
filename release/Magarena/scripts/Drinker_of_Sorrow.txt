@@ -9,4 +9,4 @@ pt=5/3
 ability=SN can't block.;\
         Whenever SN deals combat damage, sacrifice a permanent.
 timing=main
-oracle=Drinker of Sorrow can't block. Whenever Drinker of Sorrow deals combat damage, sacrifice a permanent.
+oracle=Drinker of Sorrow can't block.\nWhenever Drinker of Sorrow deals combat damage, sacrifice a permanent.

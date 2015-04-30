@@ -9,4 +9,4 @@ pt=2/2
 ability=Soulbond;\
         As long as SN is paired with another creature, each of those creatures gets +2/+2.
 timing=main
-oracle=Soulbond. As long as Druid's Familiar is paired with another creature, each of those creatures gets +2/+2.
+oracle=Soulbond\nAs long as Druid's Familiar is paired with another creature, each of those creatures gets +2/+2.

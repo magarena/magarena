@@ -9,4 +9,4 @@ pt=1/1
 ability=Haste;\
         {T}: Target creature with power 5 or greater gains haste until end of turn.
 timing=fmain
-oracle=Haste. {T}: Target creature with power 5 or greater gains haste until end of turn.
+oracle=Haste\n{T}: Target creature with power 5 or greater gains haste until end of turn.

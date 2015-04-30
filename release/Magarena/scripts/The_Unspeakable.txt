@@ -9,4 +9,4 @@ pt=6/7
 ability=Flying; trample;\
         Whenever SN deals combat damage to a player, you may return target Arcane card from your graveyard to your hand.
 timing=main
-oracle=Flying, trample. Whenever The Unspeakable deals combat damage to a player, you may return target Arcane card from your graveyard to your hand.
+oracle=Flying, trample\nWhenever The Unspeakable deals combat damage to a player, you may return target Arcane card from your graveyard to your hand.

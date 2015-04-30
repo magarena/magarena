@@ -7,4 +7,4 @@ cost={6}{G}{G}{G}
 effect=Put three 6/6 green Wurm creature tokens onto the battlefield.
 ability=Flashback {9}{G}{G}{G}
 timing=main
-oracle=Put three 6/6 green Wurm creature tokens onto the battlefield. Flashback {9}{G}{G}{G}
+oracle=Put three 6/6 green Wurm creature tokens onto the battlefield.\nFlashback {9}{G}{G}{G}

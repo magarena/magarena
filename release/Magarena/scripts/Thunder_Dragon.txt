@@ -9,4 +9,4 @@ pt=5/5
 ability=flying;\
         When SN enters the battlefield, SN deals 3 damage to each creature without flying.
 timing=main
-oracle=Flying. When Thunder Dragon enters the battlefield, it deals 3 damage to each creature without flying.
+oracle=Flying\nWhen Thunder Dragon enters the battlefield, it deals 3 damage to each creature without flying.

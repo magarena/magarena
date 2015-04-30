@@ -9,4 +9,4 @@ pt=0/1
 ability=exalted;\
         {U},{T}: Draw a card, then discard a card.
 timing=main
-oracle=Exalted. {U}, {T}: Draw a card, then discard a card.
+oracle=Exalted\n{U}, {T}: Draw a card, then discard a card.

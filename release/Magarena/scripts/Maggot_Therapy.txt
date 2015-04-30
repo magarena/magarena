@@ -9,4 +9,4 @@ ability=Flash;\
         Enchanted creature gets +2/-2.
 timing=flash
 enchant=weaken +2/-2,creature
-oracle=Flash. Enchant creature. Enchanted creature gets +2/-2.
+oracle=Flash\nEnchant creature\nEnchanted creature gets +2/-2.

@@ -9,4 +9,4 @@ pt=3/5
 ability=Reach;\
         When SN enters the battlefield, you may destroy target Equipment.
 timing=main
-oracle=Reach. When Acid Web Spider enters the battlefield, you may destroy target Equipment.
+oracle=Reach\nWhen Acid Web Spider enters the battlefield, you may destroy target Equipment.

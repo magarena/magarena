@@ -8,4 +8,4 @@ cost={G}
 timing=aura
 enchant=destroy,neg creature
 requires_groovy_code
-oracle=Enchant creature. When enchanted creature is dealt damage, destroy it.
+oracle=Enchant creature\nWhen enchanted creature is dealt damage, destroy it.

@@ -8,4 +8,4 @@ ability={T}: Add {U} or {B} to your mana pool.;\
         {4}{U}{B}: SN becomes a 4/4 blue and black Dragon artifact creature with flying until end of turn.
 mana_or_combat
 timing=main
-oracle={T}: Add {U} or {B} to your mana pool. {4}{U}{B}: Silumgar Monument becomes a 4/4 blue and black Dragon artifact creature with flying until end of turn.
+oracle={T}: Add {U} or {B} to your mana pool.\n{4}{U}{B}: Silumgar Monument becomes a 4/4 blue and black Dragon artifact creature with flying until end of turn.

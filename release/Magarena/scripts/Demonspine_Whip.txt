@@ -8,4 +8,4 @@ cost={B}{R}
 ability=Equip {1}
 timing=main
 requires_groovy_code
-oracle={X}: Equipped creature gets +X/+0 until end of turn. Equip {1}
+oracle={X}: Equipped creature gets +X/+0 until end of turn.\nEquip {1}

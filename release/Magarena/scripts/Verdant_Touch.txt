@@ -7,4 +7,4 @@ cost={1}{G}
 ability=Buyback {3}
 effect=Target land becomes a 2/2 creature that's still a land.~Buyback
 timing=main
-oracle=Buyback {3}. Target land becomes a 2/2 creature that's still a land.
+oracle=Buyback {3}\nTarget land becomes a 2/2 creature that's still a land.

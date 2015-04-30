@@ -9,4 +9,4 @@ pt=1/1
 ability=shadow;\
         Whenever SN deals damage to an opponent, draw a card, then discard a card.
 timing=main
-oracle=Shadow. Whenever Looter il-Kor deals damage to an opponent, draw a card, then discard a card.
+oracle=Shadow\nWhenever Looter il-Kor deals damage to an opponent, draw a card, then discard a card.

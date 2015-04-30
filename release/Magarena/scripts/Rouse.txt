@@ -7,4 +7,4 @@ cost={1}{B}
 effect=Target creature gets +2/+0 until end of turn.
 timing=pump
 requires_groovy_code
-oracle=If you control a Swamp, you may pay 2 life rather than pay Rouse's mana cost. Target creature gets +2/+0 until end of turn.
+oracle=If you control a Swamp, you may pay 2 life rather than pay Rouse's mana cost.\nTarget creature gets +2/+0 until end of turn.

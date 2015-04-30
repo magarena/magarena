@@ -8,4 +8,4 @@ subtype=Spirit
 cost={2}{G}{G}{G}
 pt=6/4
 timing=fmain
-oracle=Trample; shroud
+oracle=Trample\nShroud

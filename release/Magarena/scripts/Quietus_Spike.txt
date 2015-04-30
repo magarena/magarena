@@ -9,4 +9,4 @@ ability=Equipped creature has deathtouch.;\
         Equip {3}
 timing=equipment
 requires_groovy_code
-oracle=Equipped creature has deathtouch. Whenever equipped creature deals combat damage to a player, that player loses half his or her life, rounded up. Equip {3}
+oracle=Equipped creature has deathtouch.\nWhenever equipped creature deals combat damage to a player, that player loses half his or her life, rounded up.\nEquip {3}

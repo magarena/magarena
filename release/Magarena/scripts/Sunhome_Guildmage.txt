@@ -9,4 +9,4 @@ pt=2/2
 ability={1}{R}{W}: Creatures you control get +1/+0 until end of turn.;\
         {2}{R}{W}: Put a 1/1 red and white Soldier creature token with haste onto the battlefield.
 timing=main
-oracle={1}{R}{W}: Creatures you control get +1/+0 until end of turn. {2}{R}{W}: Put a 1/1 red and white Soldier creature token with haste onto the battlefield.
+oracle={1}{R}{W}: Creatures you control get +1/+0 until end of turn.\n{2}{R}{W}: Put a 1/1 red and white Soldier creature token with haste onto the battlefield.

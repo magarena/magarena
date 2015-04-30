@@ -9,4 +9,4 @@ pt=10/4
 ability={B}: Regenerate SN.
 timing=main
 requires_groovy_code
-oracle=When Lord of Tresserhorn enters the battlefield, you lose 2 life, you sacrifice two creatures, and target opponent draws two cards. {B}: Regenerate Lord of Tresserhorn.
+oracle=When Lord of Tresserhorn enters the battlefield, you lose 2 life, you sacrifice two creatures, and target opponent draws two cards.\n{B}: Regenerate Lord of Tresserhorn.

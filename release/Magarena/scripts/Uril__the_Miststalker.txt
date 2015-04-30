@@ -9,4 +9,4 @@ pt=5/5
 ability=hexproof
 timing=main
 requires_groovy_code
-oracle=Hexproof. Uril, the Miststalker gets +2/+2 for each Aura attached to it.
+oracle=Hexproof\nUril, the Miststalker gets +2/+2 for each Aura attached to it.

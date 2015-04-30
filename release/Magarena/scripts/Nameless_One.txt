@@ -9,4 +9,4 @@ pt=*/*
 ability=SN's power and toughness are each equal to the number of Wizards on the battlefield.;\
         Morph {2}{U}
 timing=main
-oracle=Nameless One's power and toughness are each equal to the number of Wizards on the battlefield. Morph {2}{U}
+oracle=Nameless One's power and toughness are each equal to the number of Wizards on the battlefield.\nMorph {2}{U}

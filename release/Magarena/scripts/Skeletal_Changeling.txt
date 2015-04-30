@@ -9,4 +9,4 @@ pt=1/1
 ability=changeling;\
         {1}{B}: Regenerate SN.
 timing=main
-oracle=Changeling. {1}{B}: Regenerate Skeletal Changeling.
+oracle=Changeling\n{1}{B}: Regenerate Skeletal Changeling.

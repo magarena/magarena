@@ -9,4 +9,4 @@ pt=6/6
 ability=At the beginning of your upkeep, you lose 2 life.;\
         Morph {2}{B}{B}
 timing=main
-oracle=At the beginning of your upkeep, you lose 2 life. Morph {2}{B}{B}
+oracle=At the beginning of your upkeep, you lose 2 life.\nMorph {2}{B}{B}

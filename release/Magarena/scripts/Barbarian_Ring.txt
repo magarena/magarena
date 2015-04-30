@@ -7,4 +7,4 @@ mana=r2
 ability={T}: Add {R} to your mana pool. SN deals 1 damage to you.;\
         {R}, {T}, Sacrifice SN: SN deals 2 damage to target creature or player. Activate this ability only if seven or more cards are in your graveyard.
 timing=land
-oracle={T}: Add {R} to your mana pool. Barbarian Ring deals 1 damage to you. Threshold — {R}, {T}, Sacrifice Barbarian Ring: Barbarian Ring deals 2 damage to target creature or player. Activate this ability only if seven or more cards are in your graveyard.
+oracle={T}: Add {R} to your mana pool. Barbarian Ring deals 1 damage to you.\nThreshold — {R}, {T}, Sacrifice Barbarian Ring: Barbarian Ring deals 2 damage to target creature or player. Activate this ability only if seven or more cards are in your graveyard.

@@ -8,4 +8,4 @@ cost={2}{B}
 enchant=weaken,neg creature
 timing=aura
 requires_groovy_code=One Thousand Lashes
-oracle=Enchant creature. At the beginning of the upkeep of enchanted creature's controller, that player loses 1 life.
+oracle=Enchant creature\nAt the beginning of the upkeep of enchanted creature's controller, that player loses 1 life.

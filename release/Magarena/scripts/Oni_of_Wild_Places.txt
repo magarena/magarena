@@ -9,4 +9,4 @@ pt=6/5
 ability=Haste;\
         At the beginning of your upkeep, return a red creature you control to its owner's hand.
 timing=main
-oracle=Haste. At the beginning of your upkeep, return a red creature you control to its owner's hand.
+oracle=Haste\nAt the beginning of your upkeep, return a red creature you control to its owner's hand.

@@ -9,4 +9,4 @@ pt=5/3
 ability=islandwalk;\
         At the beginning of your upkeep, you lose 2 life.
 timing=main
-oracle=Islandwalk. At the beginning of your upkeep, you lose 2 life.
+oracle=Islandwalk\nAt the beginning of your upkeep, you lose 2 life.

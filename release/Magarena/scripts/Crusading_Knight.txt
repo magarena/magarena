@@ -9,4 +9,4 @@ pt=2/2
 ability=Protection from black;\
         SN gets +1/+1 for each Swamp your opponents control.
 timing=main
-oracle=Protection from black. Crusading Knight gets +1/+1 for each Swamp your opponents control.
+oracle=Protection from black\nCrusading Knight gets +1/+1 for each Swamp your opponents control.

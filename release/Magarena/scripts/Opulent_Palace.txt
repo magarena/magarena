@@ -7,4 +7,4 @@ mana=b3g3u3
 ability=SN enters the battlefield tapped.;\
         {T}: Add {B} or {G} or {U} to your mana pool.
 timing=tapland
-oracle=Opulent Palace enters the battlefield tapped. {T}: Add {B}, {G}, or {U} to your mana pool.
+oracle=Opulent Palace enters the battlefield tapped.\n{T}: Add {B}, {G}, or {U} to your mana pool.

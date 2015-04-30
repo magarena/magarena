@@ -9,4 +9,4 @@ pt=3/4
 ability=Reach;\
         Megamorph {5}{G}
 timing=main
-oracle=Reach. Megamorph {5}{G}
+oracle=Reach\nMegamorph {5}{G}

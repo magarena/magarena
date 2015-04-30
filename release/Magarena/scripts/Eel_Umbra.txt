@@ -10,4 +10,4 @@ ability=Flash;\
         totem armor
 timing=pumpFlash
 enchant=pump,pos creature
-oracle=Flash. Enchant creature. Enchanted creature gets +1/+1. Totem armor
+oracle=Flash\nEnchant creature\nEnchanted creature gets +1/+1.\nTotem armor

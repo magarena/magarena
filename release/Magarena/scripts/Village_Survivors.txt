@@ -9,4 +9,4 @@ pt=4/5
 ability=vigilance
 timing=fmain
 requires_groovy_code
-oracle=Vigilance. Fateful hour — As long as you have 5 or less life, other creatures you control have vigilance.
+oracle=Vigilance\nFateful hour — As long as you have 5 or less life, other creatures you control have vigilance.

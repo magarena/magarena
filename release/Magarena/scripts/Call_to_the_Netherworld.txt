@@ -7,4 +7,4 @@ cost={B}
 effect=Return target black creature card from your graveyard to your hand.
 ability=Madness {0}
 timing=main
-oracle=Return target black creature card from your graveyard to your hand. Madness {0}
+oracle=Return target black creature card from your graveyard to your hand.\nMadness {0}

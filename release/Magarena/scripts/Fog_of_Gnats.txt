@@ -9,4 +9,4 @@ pt=1/1
 ability=flying;\
         {B}: Regenerate SN.
 timing=main
-oracle=Flying. {B}: Regenerate Fog of Gnats.
+oracle=Flying\n{B}: Regenerate Fog of Gnats.

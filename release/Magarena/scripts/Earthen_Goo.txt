@@ -9,4 +9,4 @@ pt=2/2
 ability=trample;cumulative upkeep {R/G}
 timing=main
 requires_groovy_code
-oracle=Trample. Cumulative upkeep {R} or {G}. Earthen Goo gets +1/+1 for each age counter on it.
+oracle=Trample\nCumulative upkeep {R} or {G}\nEarthen Goo gets +1/+1 for each age counter on it.

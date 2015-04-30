@@ -7,4 +7,4 @@ cost={2}{B/R}{B/R}
 ability=At the beginning of each player's draw step, that player draws an additional card.;\
         Whenever a player draws a card, SN deals 1 damage to that player.
 timing=enchantment
-oracle=At the beginning of each player's draw step, that player draws an additional card. Whenever a player draws a card, Spiteful Visions deals 1 damage to that player.
+oracle=At the beginning of each player's draw step, that player draws an additional card.\nWhenever a player draws a card, Spiteful Visions deals 1 damage to that player.

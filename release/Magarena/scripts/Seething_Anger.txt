@@ -7,4 +7,4 @@ cost={R}
 ability=buyback {3}
 effect=Target creature gets +3/+0 until end of turn.~Buyback
 timing=pump
-oracle=Buyback {3}. Target creature gets +3/+0 until end of turn.
+oracle=Buyback {3}\nTarget creature gets +3/+0 until end of turn.

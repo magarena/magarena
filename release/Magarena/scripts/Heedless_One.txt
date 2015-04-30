@@ -9,4 +9,4 @@ pt=*/*
 ability=trample;\
         SN's power and toughness are each equal to the number of Elves on the battlefield.
 timing=main
-oracle=Trample. Heedless One's power and toughness are each equal to the number of Elves on the battlefield.
+oracle=Trample\nHeedless One's power and toughness are each equal to the number of Elves on the battlefield.

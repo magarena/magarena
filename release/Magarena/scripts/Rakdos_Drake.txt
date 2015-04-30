@@ -8,4 +8,4 @@ subtype=Drake
 cost={2}{B}
 pt=1/2
 timing=main
-oracle=Flying. Unleash
+oracle=Flying\nUnleash

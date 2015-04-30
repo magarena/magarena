@@ -10,4 +10,4 @@ ability=Flying;\
         SN can't be blocked by blue creatures.;\
         {U}: Target creature becomes blue until end of turn.
 timing=main
-oracle=Flying. Metathran Transport can't be blocked by blue creatures. {U}: Target creature becomes blue until end of turn.
+oracle=Flying\nMetathran Transport can't be blocked by blue creatures.\n{U}: Target creature becomes blue until end of turn.

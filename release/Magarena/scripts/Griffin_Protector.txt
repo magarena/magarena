@@ -9,4 +9,4 @@ pt=2/3
 ability=flying;\
         Whenever another creature enters the battlefield under your control, SN gets +1/+1 until end of turn.
 timing=main
-oracle=Flying. Whenever another creature enters the battlefield under your control, Griffin Protector gets +1/+1 until end of turn.
+oracle=Flying\nWhenever another creature enters the battlefield under your control, Griffin Protector gets +1/+1 until end of turn.

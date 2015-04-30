@@ -9,4 +9,4 @@ pt=2/2
 ability=Haste
 timing=main
 requires_groovy_code
-oracle=Haste. When Vulshok Battlemaster enters the battlefield, attach all Equipment on the battlefield to it.
+oracle=Haste\nWhen Vulshok Battlemaster enters the battlefield, attach all Equipment on the battlefield to it.

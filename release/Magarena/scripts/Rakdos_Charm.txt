@@ -6,4 +6,4 @@ type=Instant
 cost={B}{R}
 timing=removal
 requires_groovy_code
-oracle=Choose one — • Exile all cards from target player's graveyard. • Destroy target artifact. • Each creature deals 1 damage to its controller.
+oracle=Choose one —\n• Exile all cards from target player's graveyard.\n• Destroy target artifact.\n• Each creature deals 1 damage to its controller.

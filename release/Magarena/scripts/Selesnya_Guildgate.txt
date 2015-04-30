@@ -8,4 +8,4 @@ mana=g3w3
 ability={T}: Add {G} or {W} to your mana pool.;\
         SN enters the battlefield tapped.
 timing=tapland
-oracle=Selesnya Guildgate enters the battlefield tapped. {T}: Add {G} or {W} to your mana pool.
+oracle=Selesnya Guildgate enters the battlefield tapped.\n{T}: Add {G} or {W} to your mana pool.

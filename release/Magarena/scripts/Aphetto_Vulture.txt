@@ -9,4 +9,4 @@ pt=3/2
 ability=Flying;\
         When SN dies, you may put target Zombie card from your graveyard on top of your library.
 timing=main
-oracle=Flying. When Aphetto Vulture dies, you may put target Zombie card from your graveyard on top of your library.
+oracle=Flying\nWhen Aphetto Vulture dies, you may put target Zombie card from your graveyard on top of your library.

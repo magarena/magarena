@@ -9,4 +9,4 @@ timing=aura
 ability=When enchanted land becomes tapped, destroy RN.;\
         When SN is put into a graveyard from the battlefield, return SN from the graveyard to its owner's hand.
 enchant=destroy,neg swamp
-oracle=Enchant Swamp. When enchanted land becomes tapped, destroy it. When Spreading Algae is put into a graveyard from the battlefield, return Spreading Algae to its owner's hand.
+oracle=Enchant Swamp\nWhen enchanted land becomes tapped, destroy it.\nWhen Spreading Algae is put into a graveyard from the battlefield, return Spreading Algae to its owner's hand.

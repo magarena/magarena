@@ -10,4 +10,4 @@ ability=First strike;\
         At the beginning of each upkeep, if no spells were cast last turn, transform SN.
 timing=main
 transform=Ironfang
-oracle=First strike. At the beginning of each upkeep, if no spells were cast last turn, transform Village Ironsmith.
+oracle=First strike\nAt the beginning of each upkeep, if no spells were cast last turn, transform Village Ironsmith.

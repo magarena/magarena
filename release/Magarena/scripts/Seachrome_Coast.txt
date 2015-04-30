@@ -7,4 +7,4 @@ mana=w3u3
 ability={T}: Add {W} or {U} to your mana pool.;\
         SN enters the battlefield tapped unless you control two or fewer other lands.
 timing=land
-oracle=Seachrome Coast enters the battlefield tapped unless you control two or fewer other lands. {T}: Add {W} or {U} to your mana pool.
+oracle=Seachrome Coast enters the battlefield tapped unless you control two or fewer other lands.\n{T}: Add {W} or {U} to your mana pool.

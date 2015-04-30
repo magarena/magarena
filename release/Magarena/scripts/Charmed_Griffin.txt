@@ -9,4 +9,4 @@ pt=3/3
 ability=Flying
 timing=main
 requires_groovy_code
-oracle=Flying. When Charmed Griffin enters the battlefield, each other player may put an artifact or enchantment card onto the battlefield from his or her hand.
+oracle=Flying\nWhen Charmed Griffin enters the battlefield, each other player may put an artifact or enchantment card onto the battlefield from his or her hand.

@@ -8,4 +8,4 @@ cost={G}
 pt=1/1
 ability={R},{T}:Target creature gains first strike until end of turn.;{W},{T}:Tap target creature.
 timing=main
-oracle={R}, {T}: Target creature gains first strike until end of turn. {W}, {T}: Tap target creature.
+oracle={R}, {T}: Target creature gains first strike until end of turn.\n{W}, {T}: Tap target creature.

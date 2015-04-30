@@ -8,4 +8,4 @@ cost={4}{U}{R}
 pt=6/6
 ability=flying;trample;cumulative upkeep {U}{R}
 timing=main
-oracle=Flying, trample. Cumulative upkeep {U}{R}
+oracle=Flying, trample\nCumulative upkeep {U}{R}

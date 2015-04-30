@@ -9,4 +9,4 @@ pt=1/4
 ability=defender;\
         Sacrifice another creature: SN gains deathtouch until end of turn.
 timing=main
-oracle=Defender. Sacrifice another creature: Corpse Blockade gains deathtouch until end of turn.
+oracle=Defender\nSacrifice another creature: Corpse Blockade gains deathtouch until end of turn.

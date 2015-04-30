@@ -9,4 +9,4 @@ ability=Equipped creature has "{2},{T}: This creature deals 1 damage to target c
         Equip {4}
 timing=equipment
 requires_groovy_code
-oracle=Equipped creature has "{2}, {T}: This creature deals 1 damage to target creature or player" and "Whenever a creature dies, untap this creature.". Whenever a Shaman creature enters the battlefield, you may attach Thornbite Staff to it. Equip {4}
+oracle=Equipped creature has "{2}, {T}: This creature deals 1 damage to target creature or player" and "Whenever a creature dies, untap this creature."\nWhenever a Shaman creature enters the battlefield, you may attach Thornbite Staff to it.\nEquip {4}

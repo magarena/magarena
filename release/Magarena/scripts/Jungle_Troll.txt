@@ -8,4 +8,4 @@ cost={1}{R}{G}
 pt=2/1
 ability={R/G}: Regenerate SN.
 timing=main
-oracle={R}: Regenerate Jungle Troll. {G}: Regenerate Jungle Troll.
+oracle={R}: Regenerate Jungle Troll.\n{G}: Regenerate Jungle Troll.

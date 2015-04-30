@@ -9,4 +9,4 @@ pt=3/4
 ability={G},Discard a card:SN gains trample until end of turn.;\
         As long as seven or more cards are in your graveyard, SN gets +2/+2 and has shroud.
 timing=main
-oracle={G}, Discard a card: Crashing Centaur gains trample until end of turn. Threshold — As long as seven or more cards are in your graveyard, Crashing Centaur gets +2/+2 and has shroud.
+oracle={G}, Discard a card: Crashing Centaur gains trample until end of turn.\nThreshold — As long as seven or more cards are in your graveyard, Crashing Centaur gets +2/+2 and has shroud.

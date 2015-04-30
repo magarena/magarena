@@ -9,4 +9,4 @@ pt=2/2
 ability=flying;\
         When SN enters the battlefield, you lose 2 life.
 timing=smain
-oracle=Flying. When Foul Imp enters the battlefield, you lose 2 life.
+oracle=Flying\nWhen Foul Imp enters the battlefield, you lose 2 life.

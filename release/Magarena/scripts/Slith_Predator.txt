@@ -9,4 +9,4 @@ pt=1/1
 ability=trample;\
         Whenever SN deals combat damage to a player, put a +1/+1 counter on SN.
 timing=main
-oracle=Trample. Whenever Slith Predator deals combat damage to a player, put a +1/+1 counter on it.
+oracle=Trample\nWhenever Slith Predator deals combat damage to a player, put a +1/+1 counter on it.

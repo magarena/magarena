@@ -9,4 +9,4 @@ pt=3/3
 ability=Flying;\
         When SN enters the battlefield, you gain 3 life.
 timing=main
-oracle=Flying. When Angel of Mercy enters the battlefield, you gain 3 life.
+oracle=Flying\nWhen Angel of Mercy enters the battlefield, you gain 3 life.

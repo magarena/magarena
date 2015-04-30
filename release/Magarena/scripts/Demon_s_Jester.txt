@@ -9,4 +9,4 @@ pt=2/2
 ability=flying;\
         SN gets +2/+1 as long as you have no cards in hand.
 timing=main
-oracle=Flying. Hellbent — Demon's Jester gets +2/+1 as long as you have no cards in hand.
+oracle=Flying\nHellbent — Demon's Jester gets +2/+1 as long as you have no cards in hand.

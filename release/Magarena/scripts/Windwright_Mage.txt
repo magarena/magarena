@@ -9,4 +9,4 @@ pt=2/2
 ability=lifelink;\
         SN has flying as long as an artifact card is in your graveyard.
 timing=artifact
-oracle=Lifelink. Windwright Mage has flying as long as an artifact card is in your graveyard.
+oracle=Lifelink\nWindwright Mage has flying as long as an artifact card is in your graveyard.

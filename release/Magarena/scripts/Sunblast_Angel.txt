@@ -10,4 +10,4 @@ pt=4/5
 ability=flying;\
         When SN enters the battlefield, destroy all tapped creatures.
 timing=fmain
-oracle=Flying. When Sunblast Angel enters the battlefield, destroy all tapped creatures.
+oracle=Flying\nWhen Sunblast Angel enters the battlefield, destroy all tapped creatures.

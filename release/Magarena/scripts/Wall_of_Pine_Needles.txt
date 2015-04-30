@@ -9,4 +9,4 @@ pt=3/3
 ability=defender;\
         {G}: Regenerate SN.
 timing=smain
-oracle=Defender. {G}: Regenerate Wall of Pine Needles.
+oracle=Defender\n{G}: Regenerate Wall of Pine Needles.

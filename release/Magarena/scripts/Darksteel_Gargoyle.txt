@@ -8,4 +8,4 @@ subtype=Gargoyle
 cost={7}
 pt=3/3
 timing=main
-oracle=Flying. Indestructible
+oracle=Flying\nIndestructible

@@ -6,4 +6,4 @@ type=Instant
 cost={B}
 effect=Target creature gets +2/+0 and gains deathtouch until end of turn.~Rebound
 timing=pump
-oracle=Target creature gets +2/+0 and gains deathtouch until end of turn. Rebound
+oracle=Target creature gets +2/+0 and gains deathtouch until end of turn.\nRebound

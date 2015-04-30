@@ -9,4 +9,4 @@ pt=2/3
 ability=Flying;\
         When SN enters the battlefield, bolster 1.
 timing=main
-oracle=Flying. When Aven Tactician enters the battlefield, bolster 1.
+oracle=Flying\nWhen Aven Tactician enters the battlefield, bolster 1.

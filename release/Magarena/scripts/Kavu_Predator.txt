@@ -9,4 +9,4 @@ pt=2/2
 ability=trample
 timing=main
 requires_groovy_code
-oracle=Trample. Whenever an opponent gains life, put that many +1/+1 counters on Kavu Predator.
+oracle=Trample\nWhenever an opponent gains life, put that many +1/+1 counters on Kavu Predator.

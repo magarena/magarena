@@ -7,4 +7,4 @@ cost={3}{G}
 effect=Put two 1/1 green Squirrel creature tokens onto the battlefield.
 ability=Flashback {1}{G}, Pay 3 life.
 timing=main
-oracle=Put two 1/1 green Squirrel creature tokens onto the battlefield. Flashback—{1}{G}, Pay 3 life.
+oracle=Put two 1/1 green Squirrel creature tokens onto the battlefield.\nFlashback—{1}{G}, Pay 3 life.

@@ -10,4 +10,4 @@ ability=Deathtouch;\
         Exploit;\
         When SN exploits a creature, you may search your library for a card, put it into your hand, then shuffle your library.
 timing=main
-oracle=Deathtouch. Exploit. When Sidisi, Undead Vizier exploits a creature, you may search your library for a card, put it into your hand, then shuffle your library.
+oracle=Deathtouch\nExploit\nWhen Sidisi, Undead Vizier exploits a creature, you may search your library for a card, put it into your hand, then shuffle your library.

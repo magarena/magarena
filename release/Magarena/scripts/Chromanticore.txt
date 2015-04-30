@@ -10,4 +10,4 @@ ability=bestow {2}{W}{U}{B}{R}{G};\
         Flying;first strike;vigilance;trample;lifelink;\
         Enchanted creature gets +4/+4 and has flying, first strike, vigilance, trample, and lifelink.
 timing=main
-oracle=Bestow {2}{W}{U}{B}{R}{G}. Flying, first strike, vigilance, trample, lifelink. Enchanted creature gets +4/+4 and has flying, first strike, vigilance, trample, and lifelink.
+oracle=Bestow {2}{W}{U}{B}{R}{G}\nFlying, first strike, vigilance, trample, lifelink\nEnchanted creature gets +4/+4 and has flying, first strike, vigilance, trample, and lifelink.

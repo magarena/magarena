@@ -9,4 +9,4 @@ pt=5/5
 ability=trample
 timing=main
 requires_groovy_code
-oracle=Trample. Whenever Phyrexian Negator is dealt damage, sacrifice that many permanents.
+oracle=Trample\nWhenever Phyrexian Negator is dealt damage, sacrifice that many permanents.

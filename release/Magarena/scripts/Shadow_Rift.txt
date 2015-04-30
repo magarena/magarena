@@ -6,4 +6,4 @@ type=Instant
 cost={U}
 effect=Target creature gains shadow until end of turn.~Draw a card.
 timing=animate
-oracle=Target creature gains shadow until end of turn. Draw a card.
+oracle=Target creature gains shadow until end of turn.\nDraw a card.

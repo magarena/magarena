@@ -10,4 +10,4 @@ ability=Flying;\
         When SN dies, SN deals 3 damage to each creature and each player.;\
         {3}{R}{R}: Return SN from your graveyard to your hand.
 timing=main
-oracle=Flying. When Magma Phoenix dies, it deals 3 damage to each creature and each player. {3}{R}{R}: Return Magma Phoenix from your graveyard to your hand.
+oracle=Flying\nWhen Magma Phoenix dies, it deals 3 damage to each creature and each player.\n{3}{R}{R}: Return Magma Phoenix from your graveyard to your hand.

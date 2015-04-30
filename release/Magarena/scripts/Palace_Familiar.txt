@@ -9,4 +9,4 @@ pt=1/1
 ability=Flying;\
         When SN dies, draw a card.
 timing=main
-oracle=Flying. When Palace Familiar dies, draw a card.
+oracle=Flying\nWhen Palace Familiar dies, draw a card.

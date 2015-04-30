@@ -8,4 +8,4 @@ cost={4}{B}{B}
 pt=4/1
 ability=infect;{B}: Regenerate SN.
 timing=main
-oracle=Infect. {B}: Regenerate Toxic Nim.
+oracle=Infect\n{B}: Regenerate Toxic Nim.

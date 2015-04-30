@@ -6,4 +6,4 @@ type=Instant
 cost={4}{U}
 effect=Creatures your opponents control get -4/-0 until end of turn.~Draw a card.
 timing=block
-oracle=Creatures your opponents control get -4/-0 until end of turn. Draw a card.
+oracle=Creatures your opponents control get -4/-0 until end of turn.\nDraw a card.

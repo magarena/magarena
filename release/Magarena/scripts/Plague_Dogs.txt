@@ -9,4 +9,4 @@ pt=3/3
 ability=When SN dies, all creatures get -1/-1 until end of turn.;\
         {2},Sacrifice SN: Draw a card.
 timing=main
-oracle=When Plague Dogs dies, all creatures get -1/-1 until end of turn. {2}, Sacrifice Plague Dogs: Draw a card.
+oracle=When Plague Dogs dies, all creatures get -1/-1 until end of turn.\n{2}, Sacrifice Plague Dogs: Draw a card.

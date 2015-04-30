@@ -7,4 +7,4 @@ cost={2}{R}
 ability=You may sacrifice a Mountain rather than pay SN's mana cost.
 effect=Destroy target artifact.
 timing=removal
-oracle=You may sacrifice a Mountain rather than pay Crash's mana cost. Destroy target artifact.
+oracle=You may sacrifice a Mountain rather than pay Crash's mana cost.\nDestroy target artifact.

@@ -7,4 +7,4 @@ type=Instant
 cost={B}
 timing=removal
 requires_groovy_code
-oracle=Target creature gets -1/-1 until end of turn. Morbid — That creature gets -13/-13 until end of turn instead if a creature died this turn.
+oracle=Target creature gets -1/-1 until end of turn.\nMorbid — That creature gets -13/-13 until end of turn instead if a creature died this turn.

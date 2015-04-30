@@ -7,4 +7,4 @@ cost={5}{W}
 ability=Miracle {W}
 timing=removal
 requires_groovy_code
-oracle=Put target artifact, creature, or enchantment on the bottom of its owner's library. Miracle {W}
+oracle=Put target artifact, creature, or enchantment on the bottom of its owner's library.\nMiracle {W}

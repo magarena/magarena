@@ -7,4 +7,4 @@ mana=w3b3g3
 ability=SN enters the battlefield tapped.;\
         {T}: Add {W} or {B} or {G} to your mana pool.
 timing=tapland
-oracle=Sandsteppe Citadel enters the battlefield tapped. {T}: Add {W}, {B}, or {G} to your mana pool.
+oracle=Sandsteppe Citadel enters the battlefield tapped.\n{T}: Add {W}, {B}, or {G} to your mana pool.

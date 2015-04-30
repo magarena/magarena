@@ -9,4 +9,4 @@ pt=2/1
 ability=Shadow
 timing=main
 requires_groovy_code=Mindstab Thrull
-oracle=Shadow. Whenever Dauthi Mindripper attacks and isn't blocked, you may sacrifice it. If you do, defending player discards three cards.
+oracle=Shadow\nWhenever Dauthi Mindripper attacks and isn't blocked, you may sacrifice it. If you do, defending player discards three cards.

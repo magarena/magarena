@@ -9,4 +9,4 @@ pt=2/3
 ability=Reach.;\
         Whenever SN blocks a creature with flying, SN gets +2/+0 until end of turn.
 timing=main
-oracle=Reach. Whenever Netcaster Spider blocks a creature with flying, Netcaster Spider gets +2/+0 until end of turn.
+oracle=Reach\nWhenever Netcaster Spider blocks a creature with flying, Netcaster Spider gets +2/+0 until end of turn.

@@ -11,4 +11,4 @@ ability=indestructible;\
         {1}{U}: Target creature you control can't be blocked this turn.
 timing=main
 requires_groovy_code
-oracle=Indestructible. As long as your devotion to blue is less than five, Thassa isn't a creature. At the beginning of your upkeep, scry 1. {1}{U}: Target creature you control can't be blocked this turn.
+oracle=Indestructible\nAs long as your devotion to blue is less than five, Thassa isn't a creature.\nAt the beginning of your upkeep, scry 1.\n{1}{U}: Target creature you control can't be blocked this turn.

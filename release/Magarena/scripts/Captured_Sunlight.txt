@@ -7,4 +7,4 @@ cost={2}{G}{W}
 ability=cascade
 effect=You gain 4 life.
 timing=removal
-oracle=Cascade. You gain 4 life.
+oracle=Cascade\nYou gain 4 life.

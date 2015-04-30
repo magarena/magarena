@@ -7,4 +7,4 @@ cost={4}{B}
 effect=Creatures you control get +2/+0 until end of turn.
 requires_groovy_code
 timing=pump
-oracle=If you control a Swamp, you may sacrifice a creature rather than pay Dark Triumph's mana cost. Creatures you control get +2/+0 until end of turn.
+oracle=If you control a Swamp, you may sacrifice a creature rather than pay Dark Triumph's mana cost.\nCreatures you control get +2/+0 until end of turn.

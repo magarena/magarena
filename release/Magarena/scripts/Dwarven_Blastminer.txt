@@ -9,4 +9,4 @@ pt=1/1
 ability={2}{R}, {T}: Destroy target nonbasic land.;\
         Morph {R}
 timing=main
-oracle={2}{R}, {T}: Destroy target nonbasic land. Morph {R}
+oracle={2}{R}, {T}: Destroy target nonbasic land.\nMorph {R}

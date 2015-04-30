@@ -9,4 +9,4 @@ pt=2/2
 ability=SN gets +1/+1 as long as you control an Island.;\
         {1}{U}: SN can't be blocked this turn.
 timing=main
-oracle=Harbor Bandit gets +1/+1 as long as you control an Island. {1}{U}: Harbor Bandit can't be blocked this turn.
+oracle=Harbor Bandit gets +1/+1 as long as you control an Island.\n{1}{U}: Harbor Bandit can't be blocked this turn.

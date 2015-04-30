@@ -9,4 +9,4 @@ pt=2/3
 ability=islandwalk;\
         {2}{U}: Tap target creature without flying.
 timing=main
-oracle=Islandwalk. {2}{U}: Tap target creature without flying.
+oracle=Islandwalk\n{2}{U}: Tap target creature without flying.

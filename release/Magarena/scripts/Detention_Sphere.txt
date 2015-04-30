@@ -8,4 +8,4 @@ ability=When SN leaves the battlefield, return the exiled cards to the battlefie
         Cast SN with AI only if an opponent controls a nonland permanent.
 timing=enchantment
 requires_groovy_code
-oracle=When Detention Sphere enters the battlefield, you may exile target nonland permanent not named Detention Sphere and all other permanents with the same name as that permanent. When Detention Sphere leaves the battlefield, return the exiled cards to the battlefield under their owner's control.
+oracle=When Detention Sphere enters the battlefield, you may exile target nonland permanent not named Detention Sphere and all other permanents with the same name as that permanent.\nWhen Detention Sphere leaves the battlefield, return the exiled cards to the battlefield under their owner's control.

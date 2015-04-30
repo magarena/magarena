@@ -7,4 +7,4 @@ cost={3}{W}
 effect=Put two 1/1 white Kithkin Soldier creature tokens onto the battlefield.
 ability=Retrace
 timing=token
-oracle=Put two 1/1 white Kithkin Soldier creature tokens onto the battlefield. Retrace
+oracle=Put two 1/1 white Kithkin Soldier creature tokens onto the battlefield.\nRetrace

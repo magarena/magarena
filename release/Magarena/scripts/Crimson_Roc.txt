@@ -9,4 +9,4 @@ pt=2/2
 ability=Flying.;\
         Whenever SN blocks a creature without flying, SN gets +1/+0 and gains first strike until end of turn.
 timing=main
-oracle=Flying. Whenever Crimson Roc blocks a creature without flying, Crimson Roc gets +1/+0 and gains first strike until end of turn.
+oracle=Flying\nWhenever Crimson Roc blocks a creature without flying, Crimson Roc gets +1/+0 and gains first strike until end of turn.

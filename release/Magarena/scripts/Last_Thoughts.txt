@@ -6,4 +6,4 @@ type=Sorcery
 cost={3}{U}
 effect=Draw a card.~Cipher.
 timing=main
-oracle=Draw a card. Cipher
+oracle=Draw a card.\nCipher

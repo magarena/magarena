@@ -7,4 +7,4 @@ cost={1}{U}{U}
 ability=Split second.
 effect=Return target permanent to its owner's hand.
 timing=removal
-oracle=Split second. Return target permanent to its owner's hand.
+oracle=Split second\nReturn target permanent to its owner's hand.

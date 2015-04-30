@@ -9,4 +9,4 @@ ability=Equipped creature gets +2/+1 and has haste.;\
         Equip {3}
 timing=equipment
 requires_groovy_code
-oracle=Equipped creature gets +2/+1 and has haste. Whenever a Warrior creature enters the battlefield, you may attach Obsidian Battle-Axe to it. Equip {3}
+oracle=Equipped creature gets +2/+1 and has haste.\nWhenever a Warrior creature enters the battlefield, you may attach Obsidian Battle-Axe to it.\nEquip {3}

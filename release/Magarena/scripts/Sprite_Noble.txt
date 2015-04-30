@@ -10,4 +10,4 @@ ability=Flying;\
         Other creatures you control with flying get +0/+1.;\
         {T}: Other creatures you control with flying get +1/+0 until end of turn.
 timing=main
-oracle=Flying. Other creatures you control with flying get +0/+1. {T}: Other creatures you control with flying get +1/+0 until end of turn.
+oracle=Flying\nOther creatures you control with flying get +0/+1.\n{T}: Other creatures you control with flying get +1/+0 until end of turn.

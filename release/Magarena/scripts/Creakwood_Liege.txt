@@ -11,4 +11,4 @@ ability=other black creatures you control get +1/+1;\
         At the beginning of your upkeep, you may put a 1/1 black and green Worm creature token onto the battlefield.
 static=player
 timing=main
-oracle=Other black creatures you control get +1/+1. Other green creatures you control get +1/+1. At the beginning of your upkeep, you may put a 1/1 black and green Worm creature token onto the battlefield.
+oracle=Other black creatures you control get +1/+1.\nOther green creatures you control get +1/+1.\nAt the beginning of your upkeep, you may put a 1/1 black and green Worm creature token onto the battlefield.

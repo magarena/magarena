@@ -7,4 +7,4 @@ cost={6}
 ability={T}: Return target noncreature artifact card with converted mana cost 1 or less from your graveyard to the battlefield.;\
         Whenever a creature dies, you may untap SN.
 timing=artifact
-oracle={T}: Return target noncreature artifact card with converted mana cost 1 or less from your graveyard to the battlefield. Whenever a creature dies, you may untap Salvaging Station.
+oracle={T}: Return target noncreature artifact card with converted mana cost 1 or less from your graveyard to the battlefield.\nWhenever a creature dies, you may untap Salvaging Station.

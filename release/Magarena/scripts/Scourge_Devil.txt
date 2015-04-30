@@ -9,4 +9,4 @@ pt=3/3
 ability=When SN enters the battlefield, creatures you control get +1/+0 until end of turn.;\
         Unearth {2}{R}
 timing=main
-oracle=When Scourge Devil enters the battlefield, creatures you control get +1/+0 until end of turn. Unearth {2}{R}
+oracle=When Scourge Devil enters the battlefield, creatures you control get +1/+0 until end of turn.\nUnearth {2}{R}

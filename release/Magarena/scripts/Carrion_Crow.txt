@@ -9,4 +9,4 @@ pt=2/2
 ability=Flying;\
         SN enters the battlefield tapped.
 timing=main
-oracle=Flying. Carrion Crow enters the battlefield tapped.
+oracle=Flying\nCarrion Crow enters the battlefield tapped.

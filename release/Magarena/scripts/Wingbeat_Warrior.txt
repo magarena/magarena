@@ -10,4 +10,4 @@ ability=Flying;\
         Morph {2}{W};\
         When SN is turned face up, target creature gains first strike until end of turn.
 timing=main
-oracle=Flying. Morph {2}{W}. When Wingbeat Warrior is turned face up, target creature gains first strike until end of turn.
+oracle=Flying\nMorph {2}{W}\nWhen Wingbeat Warrior is turned face up, target creature gains first strike until end of turn.

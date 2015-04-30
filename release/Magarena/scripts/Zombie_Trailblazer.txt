@@ -9,4 +9,4 @@ pt=2/2
 ability=Tap an untapped Zombie you control: Target land becomes a Swamp until end of turn.;\
         Tap an untapped Zombie you control: Target creature gains swampwalk until end of turn.
 timing=main
-oracle=Tap an untapped Zombie you control: Target land becomes a Swamp until end of turn. Tap an untapped Zombie you control: Target creature gains swampwalk until end of turn.
+oracle=Tap an untapped Zombie you control: Target land becomes a Swamp until end of turn.\nTap an untapped Zombie you control: Target creature gains swampwalk until end of turn.

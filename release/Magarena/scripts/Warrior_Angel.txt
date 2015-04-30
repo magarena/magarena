@@ -9,4 +9,4 @@ pt=3/4
 ability=Flying
 timing=main
 requires_groovy_code=Mourning Thrull
-oracle=Flying. Whenever Warrior Angel deals damage, you gain that much life.
+oracle=Flying\nWhenever Warrior Angel deals damage, you gain that much life.

@@ -9,4 +9,4 @@ pt=1/2
 ability=Hexproof;\
         SN can't be blocked by creatures with horsemanship.
 timing=main
-oracle=Hexproof. Zuo Ci, the Mocking Sage can't be blocked by creatures with horsemanship.
+oracle=Hexproof\nZuo Ci, the Mocking Sage can't be blocked by creatures with horsemanship.

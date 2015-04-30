@@ -9,4 +9,4 @@ pt=2/2
 ability=fading 4;\
         Remove a fade counter from SN: Tap target creature.
 timing=main
-oracle=Fading 4. Remove a fade counter from Jolting Merfolk: Tap target creature.
+oracle=Fading 4\nRemove a fade counter from Jolting Merfolk: Tap target creature.

@@ -10,4 +10,4 @@ ability=Flying;\
         Lifelink;\
         Whenever you gain life, put a +1/+1 counter on each creature you control.
 timing=main
-oracle=Flying. Lifelink. Whenever you gain life, put a +1/+1 counter on each creature you control.
+oracle=Flying\nLifelink\nWhenever you gain life, put a +1/+1 counter on each creature you control.

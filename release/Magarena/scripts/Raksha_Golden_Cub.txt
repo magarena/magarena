@@ -9,4 +9,4 @@ pt=3/4
 ability=vigilance;\
         As long as SN is equipped, Cat creatures you control get +2/+2 and have double strike.
 timing=fmain
-oracle=Vigilance. As long as Raksha Golden Cub is equipped, Cat creatures you control get +2/+2 and have double strike.
+oracle=Vigilance\nAs long as Raksha Golden Cub is equipped, Cat creatures you control get +2/+2 and have double strike.

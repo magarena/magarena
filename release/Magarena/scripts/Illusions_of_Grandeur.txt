@@ -8,4 +8,4 @@ ability=When SN enters the battlefield, you gain 20 life.;\
         When SN leaves the battlefield, you lose 20 life.;\
         cumulative upkeep {2}
 timing=enchantment
-oracle=Cumulative upkeep {2}. When Illusions of Grandeur enters the battlefield, you gain 20 life. When Illusions of Grandeur leaves the battlefield, you lose 20 life.
+oracle=Cumulative upkeep {2}\nWhen Illusions of Grandeur enters the battlefield, you gain 20 life.\nWhen Illusions of Grandeur leaves the battlefield, you lose 20 life.

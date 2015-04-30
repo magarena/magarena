@@ -10,4 +10,4 @@ ability=SN can't block.
 requires_groovy_code
 flip=Homura's Essence
 timing=main
-oracle=Homura, Human Ascendant can't block. When Homura dies, return it to the battlefield flipped.
+oracle=Homura, Human Ascendant can't block.\nWhen Homura dies, return it to the battlefield flipped.

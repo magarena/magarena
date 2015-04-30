@@ -8,4 +8,4 @@ subtype=Giant,Berserker
 cost={4}{R}
 pt=4/4
 timing=fmain
-oracle=Battle cry. Kuldotha Ringleader attacks each turn if able.
+oracle=Battle cry\nKuldotha Ringleader attacks each turn if able.

@@ -9,4 +9,4 @@ pt=3/3
 ability=Flying.;\
         When SN attacks or blocks, return SN to its owner's hand at end of combat.
 timing=main
-oracle=Flying. When Windscouter attacks or blocks, return it to its owner's hand at end of combat.
+oracle=Flying\nWhen Windscouter attacks or blocks, return it to its owner's hand at end of combat.

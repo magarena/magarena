@@ -11,4 +11,4 @@ ability=flying;\
         It gains haste. At the beginning of your next end step, exile it.;\
         persist
 timing=fmain
-oracle=Flying. When Puppeteer Clique enters the battlefield, put target creature card from an opponent's graveyard onto the battlefield under your control. It gains haste. At the beginning of your next end step, exile it. Persist
+oracle=Flying\nWhen Puppeteer Clique enters the battlefield, put target creature card from an opponent's graveyard onto the battlefield under your control. It gains haste. At the beginning of your next end step, exile it.\nPersist

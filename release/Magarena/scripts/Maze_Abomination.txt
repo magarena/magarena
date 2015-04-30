@@ -9,4 +9,4 @@ pt=4/5
 ability=Deathtouch;\
         Multicolored creatures you control have deathtouch.
 timing=main
-oracle=Deathtouch. Multicolored creatures you control have deathtouch.
+oracle=Deathtouch\nMulticolored creatures you control have deathtouch.

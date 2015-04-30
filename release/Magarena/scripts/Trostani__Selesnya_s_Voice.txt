@@ -9,4 +9,4 @@ pt=2/5
 ability={1}{G}{W}, {T}: Populate.
 timing=main
 requires_groovy_code
-oracle=Whenever another creature enters the battlefield under your control, you gain life equal to that creature's toughness. {1}{G}{W}, {T}: Populate.
+oracle=Whenever another creature enters the battlefield under your control, you gain life equal to that creature's toughness.\n{1}{G}{W}, {T}: Populate.

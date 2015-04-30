@@ -9,4 +9,4 @@ pt=5/1
 ability=Fading 5;\
         {1}, Remove a fade counter from SN: SN deals 1 damage to target creature or player.
 timing=main
-oracle=Fading 5. {1}, Remove a fade counter from Ancient Hydra: Ancient Hydra deals 1 damage to target creature or player.
+oracle=Fading 5\n{1}, Remove a fade counter from Ancient Hydra: Ancient Hydra deals 1 damage to target creature or player.

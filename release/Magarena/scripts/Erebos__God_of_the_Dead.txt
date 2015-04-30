@@ -10,4 +10,4 @@ ability=indestructible;\
         {1}{B}, Pay 2 life: Draw a card.
 timing=main
 requires_groovy_code
-oracle=Indestructible. As long as your devotion to black is less than five, Erebos isn't a creature. Your opponents can't gain life. {1}{B}, Pay 2 life: Draw a card.
+oracle=Indestructible\nAs long as your devotion to black is less than five, Erebos isn't a creature.\nYour opponents can't gain life.\n{1}{B}, Pay 2 life: Draw a card.

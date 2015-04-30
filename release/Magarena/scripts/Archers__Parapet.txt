@@ -9,4 +9,4 @@ pt=0/5
 ability=Defender;\
         {1}{B}, {T}: Each opponent loses 1 life.
 timing=main
-oracle=Defender. {1}{B}, {T}: Each opponent loses 1 life.
+oracle=Defender\n{1}{B}, {T}: Each opponent loses 1 life.

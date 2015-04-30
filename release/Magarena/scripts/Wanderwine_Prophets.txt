@@ -10,4 +10,4 @@ pt=4/4
 ability=champion Merfolk
 timing=main
 requires_groovy_code
-oracle=Champion a Merfolk. Whenever Wanderwine Prophets deals combat damage to a player, you may sacrifice a Merfolk. If you do, take an extra turn after this one.
+oracle=Champion a Merfolk\nWhenever Wanderwine Prophets deals combat damage to a player, you may sacrifice a Merfolk. If you do, take an extra turn after this one.

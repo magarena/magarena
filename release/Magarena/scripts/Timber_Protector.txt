@@ -11,4 +11,4 @@ ability=other treefolk creatures you control get +1/+1;\
         other forest you control have indestructible
 static=player
 timing=main
-oracle=Other Treefolk creatures you control get +1/+1. Other Treefolk and Forests you control have indestructible.
+oracle=Other Treefolk creatures you control get +1/+1.\nOther Treefolk and Forests you control have indestructible.

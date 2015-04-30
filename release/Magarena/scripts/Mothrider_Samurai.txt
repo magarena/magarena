@@ -8,4 +8,4 @@ cost={3}{W}
 pt=2/2
 ability=flying;bushido 1
 timing=main
-oracle=Flying. Bushido 1
+oracle=Flying\nBushido 1

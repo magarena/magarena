@@ -9,4 +9,4 @@ pt=6/4
 ability=Trample
 timing=main
 requires_groovy_code=Dimir Cutpurse
-oracle=Trample. Whenever Fungal Shambler deals damage to an opponent, you draw a card and that opponent discards a card.
+oracle=Trample\nWhenever Fungal Shambler deals damage to an opponent, you draw a card and that opponent discards a card.

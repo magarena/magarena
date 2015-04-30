@@ -9,4 +9,4 @@ pt=*/*
 ability=flying;\
         SN's power and toughness are each equal to the number of Swamps you control.
 timing=smain
-oracle=Flying. Nightmare's power and toughness are each equal to the number of Swamps you control.
+oracle=Flying\nNightmare's power and toughness are each equal to the number of Swamps you control.

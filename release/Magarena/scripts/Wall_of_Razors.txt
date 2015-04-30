@@ -8,4 +8,4 @@ cost={1}{R}
 pt=4/1
 ability=defender;first strike
 timing=main
-oracle=Defender. First strike
+oracle=Defender\nFirst strike

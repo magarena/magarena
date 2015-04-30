@@ -9,4 +9,4 @@ pt=2/2
 ability=shadow;\
         SN has first strike as long as it's attacking.
 timing=main
-oracle=Shadow. Soltari Lancer has first strike as long as it's attacking.
+oracle=Shadow\nSoltari Lancer has first strike as long as it's attacking.

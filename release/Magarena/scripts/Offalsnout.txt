@@ -10,4 +10,4 @@ ability=flash;\
         When SN leaves the battlefield, exile target card from a graveyard.;\
         evoke {B}
 timing=main
-oracle=Flash. When Offalsnout leaves the battlefield, exile target card from a graveyard. Evoke {B}
+oracle=Flash\nWhen Offalsnout leaves the battlefield, exile target card from a graveyard.\nEvoke {B}

@@ -7,4 +7,4 @@ type=Instant
 cost={2}{W}
 timing=attack
 requires_groovy_code
-oracle=Target player sacrifices an attacking creature. Metalcraft — That player sacrifices two attacking creatures instead if you control three or more artifacts.
+oracle=Target player sacrifices an attacking creature.\nMetalcraft — That player sacrifices two attacking creatures instead if you control three or more artifacts.

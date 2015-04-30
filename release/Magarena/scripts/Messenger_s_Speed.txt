@@ -8,4 +8,4 @@ cost={R}
 ability=Enchanted creature has trample and haste.
 enchant=trample,pos creature
 timing=fmain
-oracle=Enchant creature. Enchanted creature has trample and haste.
+oracle=Enchant creature\nEnchanted creature has trample and haste.

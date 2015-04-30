@@ -8,4 +8,4 @@ ability=You may pay {1} and return a basic land you control to its owner's hand 
         SN enters the battlefield tapped.;\
         {T}: Add {B} or {R} to your mana pool.
 timing=artifact
-oracle=You may pay {1} and return a basic land you control to its owner's hand rather than pay Veinfire Borderpost's mana cost. Veinfire Borderpost enters the battlefield tapped. {T}: Add {B} or {R} to your mana pool.
+oracle=You may pay {1} and return a basic land you control to its owner's hand rather than pay Veinfire Borderpost's mana cost.\nVeinfire Borderpost enters the battlefield tapped.\n{T}: Add {B} or {R} to your mana pool.

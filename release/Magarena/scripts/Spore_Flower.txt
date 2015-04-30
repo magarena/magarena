@@ -9,4 +9,4 @@ pt=0/1
 ability=At the beginning of your upkeep, put a spore counter on SN.;\
         Remove three spore counters from SN: Prevent all combat damage that would be dealt this turn.
 timing=main
-oracle=At the beginning of your upkeep, put a spore counter on Spore Flower. Remove three spore counters from Spore Flower: Prevent all combat damage that would be dealt this turn.
+oracle=At the beginning of your upkeep, put a spore counter on Spore Flower.\nRemove three spore counters from Spore Flower: Prevent all combat damage that would be dealt this turn.

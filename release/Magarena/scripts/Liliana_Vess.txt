@@ -8,4 +8,4 @@ cost={3}{B}{B}
 timing=main
 ability=loyalty 5
 requires_groovy_code
-oracle=+1: Target player discards a card. -2: Search your library for a card, then shuffle your library and put that card on top of it. -8: Put all creature cards from all graveyards onto the battlefield under your control.
+oracle=+1: Target player discards a card.\n−2: Search your library for a card, then shuffle your library and put that card on top of it.\n−8: Put all creature cards from all graveyards onto the battlefield under your control.

@@ -9,4 +9,4 @@ enchant=pump,pos creature
 ability=Enchanted creature gets +2/+2.
 timing=enchantment
 requires_groovy_code=Wind Zendikon
-oracle=Enchant creature. Enchanted creature gets +2/+2. When enchanted creature dies, return that card to its owner's hand.
+oracle=Enchant creature\nEnchanted creature gets +2/+2.\nWhen enchanted creature dies, return that card to its owner's hand.

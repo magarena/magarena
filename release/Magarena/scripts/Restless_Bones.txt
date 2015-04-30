@@ -9,4 +9,4 @@ pt=1/1
 ability={3}{B},{T}:Target creature gains swampwalk until end of turn.;\
         {1}{B}: Regenerate SN.
 timing=main
-oracle={3}{B}, {T}: Target creature gains swampwalk until end of turn. {1}{B}: Regenerate Restless Bones.
+oracle={3}{B}, {T}: Target creature gains swampwalk until end of turn.\n{1}{B}: Regenerate Restless Bones.

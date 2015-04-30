@@ -8,4 +8,4 @@ cost={3}{W}
 pt=2/4
 ability=vigilance;extort
 timing=main
-oracle=Vigilance. Extort
+oracle=Vigilance\nExtort

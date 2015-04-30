@@ -6,4 +6,4 @@ type=Instant
 cost={B}
 timing=removal
 requires_groovy_code
-oracle=Choose one — • Midnight Charm deals 1 damage to target creature and you gain 1 life. • Target creature gains first strike until end of turn. • Tap target creature.
+oracle=Choose one —\n• Midnight Charm deals 1 damage to target creature and you gain 1 life.\n• Target creature gains first strike until end of turn.\n• Tap target creature.

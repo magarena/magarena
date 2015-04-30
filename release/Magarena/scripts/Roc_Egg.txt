@@ -9,4 +9,4 @@ pt=0/3
 ability=defender;\
         When SN dies, put a 3/3 white Bird creature token with flying onto the battlefield.
 timing=main
-oracle=Defender. When Roc Egg dies, put a 3/3 white Bird creature token with flying onto the battlefield.
+oracle=Defender\nWhen Roc Egg dies, put a 3/3 white Bird creature token with flying onto the battlefield.

@@ -6,4 +6,4 @@ type=Sorcery
 cost={2}{U}{B}
 timing=main
 requires_groovy_code
-oracle=Each player discards his or her hand, then draws cards equal to the greatest number of cards a player discarded this way. Cipher
+oracle=Each player discards his or her hand, then draws cards equal to the greatest number of cards a player discarded this way.\nCipher

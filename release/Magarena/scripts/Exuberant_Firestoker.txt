@@ -9,4 +9,4 @@ pt=1/1
 ability=At the beginning of your end step, if you control a creature with power 5 or greater, you may have SN deal 2 damage to target player.;\
         {T}: Add {1} to your mana pool.
 timing=main
-oracle=At the beginning of your end step, if you control a creature with power 5 or greater, you may have Exuberant Firestoker deal 2 damage to target player. {T}: Add {1} to your mana pool.
+oracle=At the beginning of your end step, if you control a creature with power 5 or greater, you may have Exuberant Firestoker deal 2 damage to target player.\n{T}: Add {1} to your mana pool.

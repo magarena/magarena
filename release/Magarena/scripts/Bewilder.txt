@@ -6,4 +6,4 @@ type=Instant
 cost={2}{U}
 effect=Target creature gets -3/-0 until end of turn.~Draw a card.
 timing=removal
-oracle=Target creature gets -3/-0 until end of turn. Draw a card.
+oracle=Target creature gets -3/-0 until end of turn.\nDraw a card.

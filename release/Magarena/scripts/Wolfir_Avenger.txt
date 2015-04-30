@@ -9,4 +9,4 @@ pt=3/3
 ability=flash;\
         {1}{G}: Regenerate SN.
 timing=flash
-oracle=Flash. {1}{G}: Regenerate Wolfir Avenger.
+oracle=Flash\n{1}{G}: Regenerate Wolfir Avenger.

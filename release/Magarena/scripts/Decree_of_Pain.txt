@@ -8,4 +8,4 @@ ability=Cycling {3}{B}{B};\
         When you cycle SN, all creatures get -2/-2 until end of turn.
 timing=main
 requires_groovy_code
-oracle=Destroy all creatures. They can't be regenerated. Draw a card for each creature destroyed this way. Cycling {3}{B}{B}. When you cycle Decree of Pain, all creatures get -2/-2 until end of turn.
+oracle=Destroy all creatures. They can't be regenerated. Draw a card for each creature destroyed this way.\nCycling {3}{B}{B}\nWhen you cycle Decree of Pain, all creatures get -2/-2 until end of turn.

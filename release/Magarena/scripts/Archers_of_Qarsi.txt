@@ -9,4 +9,4 @@ pt=5/2
 ability=Defender;\
         Reach
 timing=main
-oracle=Defender. Reach
+oracle=Defender\nReach

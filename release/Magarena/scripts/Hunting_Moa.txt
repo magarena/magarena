@@ -10,4 +10,4 @@ ability=echo {2}{G};\
         When SN enters the battlefield, put a +1/+1 counter on target creature.;\
         When SN dies, put a +1/+1 counter on target creature.
 timing=main
-oracle=Echo {2}{G}. When Hunting Moa enters the battlefield or dies, put a +1/+1 counter on target creature.
+oracle=Echo {2}{G}\nWhen Hunting Moa enters the battlefield or dies, put a +1/+1 counter on target creature.

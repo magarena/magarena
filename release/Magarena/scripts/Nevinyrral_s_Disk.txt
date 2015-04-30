@@ -7,4 +7,4 @@ cost={4}
 ability=SN enters the battlefield tapped.;\
         {1}, {T}: Destroy all artifacts, creatures, and enchantments.
 timing=artifact
-oracle=Nevinyrral's Disk enters the battlefield tapped. {1}, {T}: Destroy all artifacts, creatures, and enchantments.
+oracle=Nevinyrral's Disk enters the battlefield tapped.\n{1}, {T}: Destroy all artifacts, creatures, and enchantments.

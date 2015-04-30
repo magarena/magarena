@@ -9,4 +9,4 @@ ability=Flash;\
         Enchanted creature has flying.
 timing=pumpFlash
 enchant=flying,pos creature
-oracle=Flash. Enchant creature. Enchanted creature has flying.
+oracle=Flash\nEnchant creature\nEnchanted creature has flying.

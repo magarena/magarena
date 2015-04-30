@@ -9,4 +9,4 @@ pt=1/1
 ability=At the beginning of your upkeep, put a currency counter on SN.;\
         Remove two currency counters from SN: Untap target basic land. Activate this ability only during an opponent's upkeep.
 timing=main
-oracle=At the beginning of your upkeep, put a currency counter on Trade Caravan. Remove two currency counters from Trade Caravan: Untap target basic land. Activate this ability only during an opponent's upkeep.
+oracle=At the beginning of your upkeep, put a currency counter on Trade Caravan.\nRemove two currency counters from Trade Caravan: Untap target basic land. Activate this ability only during an opponent's upkeep.

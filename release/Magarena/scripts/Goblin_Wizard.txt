@@ -9,4 +9,4 @@ pt=1/1
 ability={T}: You may put a Goblin permanent card from your hand onto the battlefield.;\
         {R}: Target Goblin gains protection from white until end of turn.
 timing=main
-oracle={T}: You may put a Goblin permanent card from your hand onto the battlefield. {R}: Target Goblin gains protection from white until end of turn.
+oracle={T}: You may put a Goblin permanent card from your hand onto the battlefield.\n{R}: Target Goblin gains protection from white until end of turn.

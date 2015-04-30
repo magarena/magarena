@@ -9,4 +9,4 @@ ability=Equipped creature has first strike.;\
         Equip {1}
 timing=equipment
 requires_groovy_code
-oracle=Equipped creature has first strike. As long as equipped creature is a Human, it gets +1/+1. Equip {1}
+oracle=Equipped creature has first strike.\nAs long as equipped creature is a Human, it gets +1/+1.\nEquip {1}

@@ -6,4 +6,4 @@ type=Artifact
 cost={2}
 timing=artifact
 requires_groovy_code
-oracle=Whenever you're dealt damage, put that many charge counters on Sun Droplet. At the beginning of each upkeep, you may remove a charge counter from Sun Droplet. If you do, you gain 1 life.
+oracle=Whenever you're dealt damage, put that many charge counters on Sun Droplet.\nAt the beginning of each upkeep, you may remove a charge counter from Sun Droplet. If you do, you gain 1 life.

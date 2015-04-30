@@ -9,4 +9,4 @@ ability=Enchanted creature has haste.;\
         At the beginning of the end step, return SN to its owner's hand.
 timing=fmain
 enchant=haste,pos creature
-oracle=Enchant creature. Enchanted creature has haste. At the beginning of the end step, return Mark of Fury to its owner's hand.
+oracle=Enchant creature\nEnchanted creature has haste.\nAt the beginning of the end step, return Mark of Fury to its owner's hand.

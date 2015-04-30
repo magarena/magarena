@@ -9,4 +9,4 @@ pt=5/8
 ability=islandwalk;swampwalk
 timing=smain
 requires_groovy_code
-oracle=Islandwalk, swampwalk. Whenever Wrexial, the Risen Deep deals combat damage to a player, you may cast target instant or sorcery card from that player's graveyard without paying its mana cost. If that card would be put into a graveyard this turn, exile it instead.
+oracle=Islandwalk, swampwalk\nWhenever Wrexial, the Risen Deep deals combat damage to a player, you may cast target instant or sorcery card from that player's graveyard without paying its mana cost. If that card would be put into a graveyard this turn, exile it instead.

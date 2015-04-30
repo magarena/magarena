@@ -9,4 +9,4 @@ pt=3/3
 ability=Flying;\
         {1}{G}{U}: Creatures you control gain shroud until end of turn.
 timing=main
-oracle=Flying. {1}{G}{U}: Creatures you control gain shroud until end of turn.
+oracle=Flying\n{1}{G}{U}: Creatures you control gain shroud until end of turn.

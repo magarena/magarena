@@ -7,4 +7,4 @@ mana=r4
 ability={T}: Add {R} to your mana pool.
 timing=main
 requires_groovy_code
-oracle={T}: Add {R} to your mana pool. {T}: Target creature loses all landwalk abilities until end of turn.
+oracle={T}: Add {R} to your mana pool.\n{T}: Target creature loses all landwalk abilities until end of turn.

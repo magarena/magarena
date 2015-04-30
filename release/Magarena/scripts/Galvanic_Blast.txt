@@ -7,4 +7,4 @@ type=Instant
 cost={R}
 timing=removal
 requires_groovy_code
-oracle=Galvanic Blast deals 2 damage to target creature or player. Metalcraft — Galvanic Blast deals 4 damage to that creature or player instead if you control three or more artifacts.
+oracle=Galvanic Blast deals 2 damage to target creature or player.\nMetalcraft — Galvanic Blast deals 4 damage to that creature or player instead if you control three or more artifacts.

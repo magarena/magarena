@@ -8,4 +8,4 @@ cost={W/U}
 pt=1/1
 ability=flying;Sacrifice SN: Counter target instant or sorcery spell unless its controller pays {1}.
 timing=main
-oracle=Flying. Sacrifice Judge's Familiar: Counter target instant or sorcery spell unless its controller pays {1}.
+oracle=Flying\nSacrifice Judge's Familiar: Counter target instant or sorcery spell unless its controller pays {1}.

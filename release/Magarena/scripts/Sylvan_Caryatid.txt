@@ -9,4 +9,4 @@ pt=0/3
 ability=defender;hexproof;\
         {T}: Add one mana of any color to your mana pool.
 timing=main
-oracle=Defender, hexproof. {T}: Add one mana of any color to your mana pool.
+oracle=Defender, hexproof\n{T}: Add one mana of any color to your mana pool.

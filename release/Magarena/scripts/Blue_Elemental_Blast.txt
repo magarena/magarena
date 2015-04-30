@@ -6,4 +6,4 @@ type=Instant
 cost={U}
 effect=Choose one — (1) Counter target red spell. (2) Destroy target red permanent.
 timing=counter
-oracle=Choose one — • Counter target red spell. • Destroy target red permanent.
+oracle=Choose one —\n• Counter target red spell.\n• Destroy target red permanent.

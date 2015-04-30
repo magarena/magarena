@@ -9,4 +9,4 @@ pt=2/2
 ability=First strike;\
         {R}, {T}: Attacking creatures gain first strike until end of turn.
 timing=main
-oracle=First strike. {R}, {T}: Attacking creatures gain first strike until end of turn.
+oracle=First strike\n{R}, {T}: Attacking creatures gain first strike until end of turn.

@@ -9,4 +9,4 @@ pt=3/1
 ability=Morph {3}{B};\
         When SN is turned face up, target creature gets -3/-3 until end of turn.
 timing=main
-oracle=Morph {3}{B}. When Aphetto Exterminator is turned face up, target creature gets -3/-3 until end of turn.
+oracle=Morph {3}{B}\nWhen Aphetto Exterminator is turned face up, target creature gets -3/-3 until end of turn.

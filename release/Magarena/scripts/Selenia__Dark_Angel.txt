@@ -8,4 +8,4 @@ cost={3}{W}{B}
 pt=3/3
 ability=flying;Pay 2 life: Return SN to its owner's hand.
 timing=main
-oracle=Flying. Pay 2 life: Return Selenia, Dark Angel to its owner's hand.
+oracle=Flying\nPay 2 life: Return Selenia, Dark Angel to its owner's hand.

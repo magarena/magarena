@@ -8,4 +8,4 @@ cost={B}
 timing=aura
 enchant=tap,neg Forest or Plains
 requires_groovy_code
-oracle=Enchant Forest or Plains. Whenever enchanted land becomes tapped, its controller loses 2 life.
+oracle=Enchant Forest or Plains\nWhenever enchanted land becomes tapped, its controller loses 2 life.

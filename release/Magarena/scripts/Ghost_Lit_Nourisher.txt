@@ -9,4 +9,4 @@ pt=2/1
 ability={2}{G}, {T}: Target creature gets +2/+2 until end of turn.;\
         {3}{G}, Discard SN: Target creature gets +4/+4 until end of turn.
 timing=main
-oracle={2}{G}, {T}: Target creature gets +2/+2 until end of turn. Channel — {3}{G}, Discard Ghost-Lit Nourisher: Target creature gets +4/+4 until end of turn.
+oracle={2}{G}, {T}: Target creature gets +2/+2 until end of turn.\nChannel — {3}{G}, Discard Ghost-Lit Nourisher: Target creature gets +4/+4 until end of turn.

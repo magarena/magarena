@@ -8,4 +8,4 @@ cost={4}{U}{B}{B}{R}
 timing=main
 ability=loyalty 5
 requires_groovy_code
-oracle=+3: Destroy target noncreature permanent. -2: Gain control of target creature. -9: Nicol Bolas, Planeswalker deals 7 damage to target player. That player discards seven cards, then sacrifices seven permanents.
+oracle=+3: Destroy target noncreature permanent.\n−2: Gain control of target creature.\n−9: Nicol Bolas, Planeswalker deals 7 damage to target player. That player discards seven cards, then sacrifices seven permanents.

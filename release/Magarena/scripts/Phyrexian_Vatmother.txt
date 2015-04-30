@@ -9,4 +9,4 @@ pt=4/5
 ability=infect
 timing=main
 requires_groovy_code
-oracle=Infect. At the beginning of your upkeep, you get a poison counter.
+oracle=Infect\nAt the beginning of your upkeep, you get a poison counter.

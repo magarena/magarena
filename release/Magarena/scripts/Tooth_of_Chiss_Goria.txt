@@ -8,4 +8,4 @@ ability=Flash;\
         Affinity for artifacts.;\
         {T}: Target creature gets +1/+0 until end of turn.
 timing=artifact
-oracle=Flash. Affinity for artifacts. {T}: Target creature gets +1/+0 until end of turn.
+oracle=Flash\nAffinity for artifacts\n{T}: Target creature gets +1/+0 until end of turn.

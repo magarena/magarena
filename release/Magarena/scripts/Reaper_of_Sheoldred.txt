@@ -9,4 +9,4 @@ pt=2/5
 ability=Infect
 timing=main
 requires_groovy_code
-oracle=Infect. Whenever a source deals damage to Reaper of Sheoldred, that source's controller gets a poison counter.
+oracle=Infect\nWhenever a source deals damage to Reaper of Sheoldred, that source's controller gets a poison counter.

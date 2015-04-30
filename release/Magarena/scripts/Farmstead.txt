@@ -8,4 +8,4 @@ cost={W}{W}{W}
 ability=Enchanted land has "At the beginning of your upkeep, you may pay {W}{W}. If you do, you gain 1 life."
 enchant=pump,pos land
 timing=aura
-oracle=Enchant land. Enchanted land has "At the beginning of your upkeep, you may pay {W}{W}. If you do, you gain 1 life."
+oracle=Enchant land\nEnchanted land has "At the beginning of your upkeep, you may pay {W}{W}. If you do, you gain 1 life."

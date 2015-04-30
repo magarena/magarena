@@ -9,4 +9,4 @@ pt=2/2
 ability=Flash;\
         When SN enters the battlefield, target creature gets +0/+3 until end of turn.
 timing=pumpflash
-oracle=Flash. When Affa Guard Hound enters the battlefield, target creature gets +0/+3 until end of turn.
+oracle=Flash\nWhen Affa Guard Hound enters the battlefield, target creature gets +0/+3 until end of turn.

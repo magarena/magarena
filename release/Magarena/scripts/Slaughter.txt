@@ -7,4 +7,4 @@ cost={2}{B}{B}
 ability=Buyback Pay 4 life.
 effect=Destroy target nonblack creature. It can't be regenerated.~Buyback
 timing=removal
-oracle=Buyback—Pay 4 life. Destroy target nonblack creature. It can't be regenerated.
+oracle=Buyback—Pay 4 life.\nDestroy target nonblack creature. It can't be regenerated.

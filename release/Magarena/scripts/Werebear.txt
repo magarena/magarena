@@ -9,4 +9,4 @@ pt=1/1
 ability={T}: Add {G} to your mana pool.;\
         SN gets +3/+3 as long as seven or more cards are in your graveyard.
 timing=main
-oracle={T}: Add {G} to your mana pool. Threshold — Werebear gets +3/+3 as long as seven or more cards are in your graveyard.
+oracle={T}: Add {G} to your mana pool.\nThreshold — Werebear gets +3/+3 as long as seven or more cards are in your graveyard.

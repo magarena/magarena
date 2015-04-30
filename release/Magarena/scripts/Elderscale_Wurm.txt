@@ -9,4 +9,4 @@ pt=7/7
 ability=trample
 timing=main
 requires_groovy_code
-oracle=Trample. When Elderscale Wurm enters the battlefield, if your life total is less than 7, your life total becomes 7. As long as you have 7 or more life, damage that would reduce your life total to less than 7 reduces it to 7 instead.
+oracle=Trample\nWhen Elderscale Wurm enters the battlefield, if your life total is less than 7, your life total becomes 7.\nAs long as you have 7 or more life, damage that would reduce your life total to less than 7 reduces it to 7 instead.

@@ -9,4 +9,4 @@ pt=5/5
 ability=Trample;\
         When SN enters the battlefield, return another creature you control to its owner's hand.
 timing=main
-oracle=Trample. When Ambush Krotiq enters the battlefield, return another creature you control to its owner's hand.
+oracle=Trample\nWhen Ambush Krotiq enters the battlefield, return another creature you control to its owner's hand.

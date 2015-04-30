@@ -7,4 +7,4 @@ cost={1}{G}
 ability=Cumulative upkeep {2};\
         Snow permanents have "SN doesn't untap during your untap step."
 timing=enchantment
-oracle=Cumulative upkeep {2}. Snow permanents don't untap during their controllers' untap steps.
+oracle=Cumulative upkeep {2}\nSnow permanents don't untap during their controllers' untap steps.

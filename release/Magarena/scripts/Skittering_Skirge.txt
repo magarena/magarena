@@ -9,4 +9,4 @@ pt=3/2
 ability=Flying;\
         When you cast a creature spell, sacrifice SN.
 timing=main
-oracle=Flying. When you cast a creature spell, sacrifice Skittering Skirge.
+oracle=Flying\nWhen you cast a creature spell, sacrifice Skittering Skirge.

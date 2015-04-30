@@ -9,4 +9,4 @@ pt=5/6
 ability=At the beginning of your upkeep, sacrifice a permanent.
 timing=main
 requires_groovy_code
-oracle=At the beginning of your upkeep, sacrifice a permanent.Whenever Greater Harvester deals combat damage to a player, that player sacrifices two permanents.
+oracle=At the beginning of your upkeep, sacrifice a permanent.\nWhenever Greater Harvester deals combat damage to a player, that player sacrifices two permanents.

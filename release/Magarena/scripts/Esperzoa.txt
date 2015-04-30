@@ -9,4 +9,4 @@ pt=4/3
 ability=flying;\
         At the beginning of your upkeep, return an artifact you control to its owner's hand.
 timing=main
-oracle=Flying. At the beginning of your upkeep, return an artifact you control to its owner's hand.
+oracle=Flying\nAt the beginning of your upkeep, return an artifact you control to its owner's hand.

@@ -7,4 +7,4 @@ cost={U}
 ability=buyback {2}{U}
 effect=Tap target artifact, creature, or land.~Buyback
 timing=tapping
-oracle=Buyback {2}{U}. Tap target artifact, creature, or land.
+oracle=Buyback {2}{U}\nTap target artifact, creature, or land.

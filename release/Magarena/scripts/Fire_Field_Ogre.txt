@@ -9,4 +9,4 @@ pt=4/2
 ability=First strike;\
         Unearth {U}{B}{R}
 timing=main
-oracle=First strike. Unearth {U}{B}{R}
+oracle=First strike\nUnearth {U}{B}{R}

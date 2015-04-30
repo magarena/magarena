@@ -9,4 +9,4 @@ pt=2/2
 ability=flash
 timing=counterflash
 requires_groovy_code
-oracle=Flash. When Venser, Shaper Savant enters the battlefield, return target spell or permanent to its owner's hand.
+oracle=Flash\nWhen Venser, Shaper Savant enters the battlefield, return target spell or permanent to its owner's hand.

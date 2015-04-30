@@ -9,4 +9,4 @@ pt=2/2
 ability={3}{R}, Sacrifice a land: SN deals 2 damage to target player.;\
         {3}{G}: Target creature gets +2/+2 until end of turn.
 timing=main
-oracle={3}{R}, Sacrifice a land: Gruul Guildmage deals 2 damage to target player. {3}{G}: Target creature gets +2/+2 until end of turn.
+oracle={3}{R}, Sacrifice a land: Gruul Guildmage deals 2 damage to target player.\n{3}{G}: Target creature gets +2/+2 until end of turn.

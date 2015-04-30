@@ -9,4 +9,4 @@ pt=1/1
 ability={T}: Counter target spell unless its controller pays {1}.;\
         Morph {U}
 timing=main
-oracle={T}: Counter target spell unless its controller pays {1}. Morph {U}
+oracle={T}: Counter target spell unless its controller pays {1}.\nMorph {U}

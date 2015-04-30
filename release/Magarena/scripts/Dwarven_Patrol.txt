@@ -9,4 +9,4 @@ pt=4/2
 ability=SN doesn't untap during your untap step.;\
         Whenever you cast a nonred spell, untap SN.
 timing=main
-oracle=Dwarven Patrol doesn't untap during your untap step. Whenever you cast a nonred spell, untap Dwarven Patrol.
+oracle=Dwarven Patrol doesn't untap during your untap step.\nWhenever you cast a nonred spell, untap Dwarven Patrol.

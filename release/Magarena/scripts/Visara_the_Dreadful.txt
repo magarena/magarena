@@ -9,4 +9,4 @@ pt=5/5
 ability=flying;\
         {T}: Destroy target creature. It can't be regenerated.
 timing=main
-oracle=Flying. {T}: Destroy target creature. It can't be regenerated.
+oracle=Flying\n{T}: Destroy target creature. It can't be regenerated.

@@ -7,4 +7,4 @@ cost={2}{W}{W}
 ability=cumulative upkeep {W}
 timing=enchantment
 requires_groovy_code
-oracle=Cumulative upkeep {W}. Whenever a Swamp, Mountain, black permanent, or red permanent becomes tapped, Royal Decree deals 1 damage to that permanent's controller.
+oracle=Cumulative upkeep {W}\nWhenever a Swamp, Mountain, black permanent, or red permanent becomes tapped, Royal Decree deals 1 damage to that permanent's controller.

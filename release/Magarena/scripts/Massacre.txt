@@ -7,4 +7,4 @@ cost={2}{B}{B}
 effect=All creatures get -2/-2 until end of turn.
 timing=main
 requires_groovy_code
-oracle=If an opponent controls a Plains and you control a Swamp, you may cast Massacre without paying its mana cost. All creatures get -2/-2 until end of turn.
+oracle=If an opponent controls a Plains and you control a Swamp, you may cast Massacre without paying its mana cost.\nAll creatures get -2/-2 until end of turn.

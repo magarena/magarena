@@ -9,4 +9,4 @@ pt=2/2
 ability=Flying.;\
         {W}: Target permanent becomes white until end of turn.
 timing=main
-oracle=Flying. {W}: Target permanent becomes white until end of turn.
+oracle=Flying\n{W}: Target permanent becomes white until end of turn.

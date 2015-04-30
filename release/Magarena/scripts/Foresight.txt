@@ -6,4 +6,4 @@ type=Sorcery
 cost={1}{U}
 timing=main
 requires_groovy_code
-oracle=Search your library for three cards, exile them, then shuffle your library. Draw a card at the beginning of the next turn's upkeep.
+oracle=Search your library for three cards, exile them, then shuffle your library.\nDraw a card at the beginning of the next turn's upkeep.

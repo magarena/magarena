@@ -9,4 +9,4 @@ pt=3/1
 ability=kicker {1}{U};\
         When SN enters the battlefield, if it was kicked, return target permanent to its owner's hand.
 timing=main
-oracle=Kicker {1}{U}. When Urborg Emissary enters the battlefield, if it was kicked, return target permanent to its owner's hand.
+oracle=Kicker {1}{U}\nWhen Urborg Emissary enters the battlefield, if it was kicked, return target permanent to its owner's hand.

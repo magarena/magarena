@@ -8,4 +8,4 @@ cost={1}{R}
 pt=1/2
 ability=first strike;other Kobold creatures you control have first strike
 timing=main
-oracle=First strike. Other Kobold creatures you control have first strike.
+oracle=First strike\nOther Kobold creatures you control have first strike.

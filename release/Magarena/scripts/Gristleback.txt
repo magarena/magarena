@@ -9,4 +9,4 @@ pt=2/2
 ability=bloodthirst 1
 timing=main
 requires_groovy_code
-oracle=Bloodthirst 1. Sacrifice Gristleback: You gain life equal to Gristleback's power.
+oracle=Bloodthirst 1\nSacrifice Gristleback: You gain life equal to Gristleback's power.

@@ -6,4 +6,4 @@ type=Instant
 cost={W}{U}{B}
 effect=Choose one — (1) You gain 5 life. (2) Counter target spell. (3) Target creature gets -2/-2 until end of turn.
 timing=counter
-oracle=Choose one — • You gain 5 life. • Counter target spell. • Target creature gets -2/-2 until end of turn.
+oracle=Choose one —\n• You gain 5 life.\n• Counter target spell.\n• Target creature gets -2/-2 until end of turn.

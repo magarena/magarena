@@ -10,4 +10,4 @@ ability=Haste;\
         Battle cry;\
         Whenever SN attacks, creatures with power 1 or less can't block this turn.
 timing=main
-oracle=Haste. Battle cry. Whenever Hero of Oxid Ridge attacks, creatures with power 1 or less can't block this turn.
+oracle=Haste\nBattle cry\nWhenever Hero of Oxid Ridge attacks, creatures with power 1 or less can't block this turn.

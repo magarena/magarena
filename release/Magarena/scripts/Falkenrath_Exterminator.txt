@@ -9,4 +9,4 @@ pt=1/1
 ability=Whenever SN deals combat damage to a player, put a +1/+1 counter on SN.
 timing=main
 requires_groovy_code
-oracle=Whenever Falkenrath Exterminator deals combat damage to a player, put a +1/+1 counter on it. {2}{R}: Falkenrath Exterminator deals damage to target creature equal to the number of +1/+1 counters on Falkenrath Exterminator.
+oracle=Whenever Falkenrath Exterminator deals combat damage to a player, put a +1/+1 counter on it.\n{2}{R}: Falkenrath Exterminator deals damage to target creature equal to the number of +1/+1 counters on Falkenrath Exterminator.

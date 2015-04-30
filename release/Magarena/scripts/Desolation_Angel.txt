@@ -10,4 +10,4 @@ ability=Kicker {W}{W};\
 Flying
 timing=main
 requires_groovy_code
-oracle=Kicker {W}{W}. Flying. When Desolation Angel enters the battlefield, destroy all lands you control. If it was kicked, destroy all lands instead.
+oracle=Kicker {W}{W}\nFlying\nWhen Desolation Angel enters the battlefield, destroy all lands you control. If it was kicked, destroy all lands instead.

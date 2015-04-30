@@ -9,4 +9,4 @@ pt=3/3
 ability=Devour 1;\
         When SN enters the battlefield, SN deals 3 damage to each creature.
 timing=main
-oracle=Devour 1. When Caldera Hellion enters the battlefield, it deals 3 damage to each creature.
+oracle=Devour 1\nWhen Caldera Hellion enters the battlefield, it deals 3 damage to each creature.

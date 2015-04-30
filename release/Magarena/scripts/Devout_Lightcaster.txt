@@ -9,4 +9,4 @@ pt=2/2
 ability=protection from black;\
         When SN enters the battlefield, exile target black permanent.
 timing=main
-oracle=Protection from black. When Devout Lightcaster enters the battlefield, exile target black permanent.
+oracle=Protection from black\nWhen Devout Lightcaster enters the battlefield, exile target black permanent.

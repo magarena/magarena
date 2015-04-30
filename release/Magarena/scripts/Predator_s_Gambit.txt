@@ -9,4 +9,4 @@ ability=Enchanted creature gets +2/+1.
 timing=aura
 enchant=pump,pos creature
 requires_groovy_code
-oracle=Enchant creature. Enchanted creature gets +2/+1. Enchanted creature has intimidate as long as its controller controls no other creatures.
+oracle=Enchant creature\nEnchanted creature gets +2/+1.\nEnchanted creature has intimidate as long as its controller controls no other creatures.

@@ -9,4 +9,4 @@ pt=5/5
 ability=First strike
 timing=main
 requires_groovy_code
-oracle=First strike. Ruham Djinn gets -2/-2 as long as white is the most common color among all permanents or is tied for most common.
+oracle=First strike\nRuham Djinn gets -2/-2 as long as white is the most common color among all permanents or is tied for most common.

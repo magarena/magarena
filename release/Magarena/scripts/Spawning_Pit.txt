@@ -7,4 +7,4 @@ cost={2}
 ability=Sacrifice a creature: Put a charge counter on SN.;\
         {1},Remove two charge counters from SN: Put a 2/2 colorless Spawn artifact creature token onto the battlefield.
 timing=artifact
-oracle=Sacrifice a creature: Put a charge counter on Spawning Pit. {1}, Remove two charge counters from Spawning Pit: Put a 2/2 colorless Spawn artifact creature token onto the battlefield.
+oracle=Sacrifice a creature: Put a charge counter on Spawning Pit.\n{1}, Remove two charge counters from Spawning Pit: Put a 2/2 colorless Spawn artifact creature token onto the battlefield.

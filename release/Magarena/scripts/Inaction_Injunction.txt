@@ -7,4 +7,4 @@ type=Sorcery
 cost={1}{U}
 effect=Detain target creature an opponent controls.~Draw a card.
 timing=removal
-oracle=Detain target creature an opponent controls. Draw a card.
+oracle=Detain target creature an opponent controls.\nDraw a card.

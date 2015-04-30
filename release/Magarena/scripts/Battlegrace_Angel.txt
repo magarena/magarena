@@ -9,4 +9,4 @@ pt=4/4
 ability=flying;exalted
 timing=fmain
 requires_groovy_code
-oracle=Flying. Exalted. Whenever a creature you control attacks alone, it gains lifelink until end of turn.
+oracle=Flying\nExalted\nWhenever a creature you control attacks alone, it gains lifelink until end of turn.

@@ -9,4 +9,4 @@ pt=*/*
 ability=SN's power and toughness are each equal to the number of cards in your hand.;\
         At the beginning of your draw step, draw an additional card.
 timing=main
-oracle=Overbeing of Myth's power and toughness are each equal to the number of cards in your hand. At the beginning of your draw step, draw an additional card.
+oracle=Overbeing of Myth's power and toughness are each equal to the number of cards in your hand.\nAt the beginning of your draw step, draw an additional card.

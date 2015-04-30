@@ -6,4 +6,4 @@ type=Sorcery
 cost={4}{B}
 effect=Target opponent loses 3 life.~Cipher.
 timing=main
-oracle=Target opponent loses 3 life. Cipher
+oracle=Target opponent loses 3 life.\nCipher

@@ -8,4 +8,4 @@ effect=Destroy all enchantments.
 removal=2
 timing=removal
 ability=cycling {2}
-oracle=Destroy all enchantments. Cycling {2}
+oracle=Destroy all enchantments.\nCycling {2}

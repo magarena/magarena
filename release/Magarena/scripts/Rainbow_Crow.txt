@@ -9,4 +9,4 @@ pt=2/2
 ability=Flying
 timing=main
 requires_groovy_code
-oracle=Flying. {1}: Rainbow Crow becomes the color of your choice until end of turn.
+oracle=Flying\n{1}: Rainbow Crow becomes the color of your choice until end of turn.

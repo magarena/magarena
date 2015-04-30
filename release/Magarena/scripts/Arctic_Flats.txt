@@ -7,4 +7,4 @@ mana=w3g3
 ability=SN enters the battlefield tapped.;\
         {T}: Add {G} or {W} to your mana pool.
 timing=tapland
-oracle=Arctic Flats enters the battlefield tapped. {T}: Add {G} or {W} to your mana pool.
+oracle=Arctic Flats enters the battlefield tapped.\n{T}: Add {G} or {W} to your mana pool.

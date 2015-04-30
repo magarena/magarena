@@ -9,4 +9,4 @@ ability=Flashback {5}{B}{B};\
         Cast SN with AI only if an opponent controls a creature.
 effect=Target player sacrifices a creature.
 timing=removal
-oracle=Target player sacrifices a creature. Flashback {5}{B}{B}
+oracle=Target player sacrifices a creature.\nFlashback {5}{B}{B}

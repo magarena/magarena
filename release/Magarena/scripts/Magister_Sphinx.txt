@@ -9,4 +9,4 @@ pt=5/5
 ability=flying
 timing=artifact
 requires_groovy_code
-oracle=Flying. When Magister Sphinx enters the battlefield, target player's life total becomes 10.
+oracle=Flying\nWhen Magister Sphinx enters the battlefield, target player's life total becomes 10.

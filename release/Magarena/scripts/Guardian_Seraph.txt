@@ -9,4 +9,4 @@ pt=3/4
 ability=flying
 timing=fmain
 requires_groovy_code
-oracle=Flying. If a source an opponent controls would deal damage to you, prevent 1 of that damage.
+oracle=Flying\nIf a source an opponent controls would deal damage to you, prevent 1 of that damage.

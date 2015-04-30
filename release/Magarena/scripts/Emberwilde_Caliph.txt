@@ -10,4 +10,4 @@ ability=Flying, trample.;\
         SN attacks each turn if able.
 timing=main
 requires_groovy_code
-oracle=Flying, trample. Emberwilde Caliph attacks each turn if able. Whenever Emberwilde Caliph deals damage, you lose that much life.
+oracle=Flying, trample\nEmberwilde Caliph attacks each turn if able.\nWhenever Emberwilde Caliph deals damage, you lose that much life.

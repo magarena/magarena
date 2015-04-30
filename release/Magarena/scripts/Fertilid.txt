@@ -9,4 +9,4 @@ pt=0/0
 ability=SN enters the battlefield with two +1/+1 counters on it.
 timing=main
 requires_groovy_code
-oracle=Fertilid enters the battlefield with two +1/+1 counters on it. {1}{G}, Remove a +1/+1 counter from Fertilid: Target player searches his or her library for a basic land card and puts it onto the battlefield tapped. Then that player shuffles his or her library.
+oracle=Fertilid enters the battlefield with two +1/+1 counters on it.\n{1}{G}, Remove a +1/+1 counter from Fertilid: Target player searches his or her library for a basic land card and puts it onto the battlefield tapped. Then that player shuffles his or her library.

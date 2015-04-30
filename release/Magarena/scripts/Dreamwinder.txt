@@ -9,4 +9,4 @@ pt=4/3
 ability=SN can't attack unless defending player controls an Island.;\
         {U}, Sacrifice an Island: Target land becomes an Island until end of turn.
 timing=main
-oracle=Dreamwinder can't attack unless defending player controls an Island. {U}, Sacrifice an Island: Target land becomes an Island until end of turn.
+oracle=Dreamwinder can't attack unless defending player controls an Island.\n{U}, Sacrifice an Island: Target land becomes an Island until end of turn.

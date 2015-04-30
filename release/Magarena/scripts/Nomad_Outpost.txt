@@ -7,4 +7,4 @@ mana=r3w3b3
 ability=SN enters the battlefield tapped.;\
         {T}: Add {R} or {W} or {B} to your mana pool.
 timing=tapland
-oracle=Nomad Outpost enters the battlefield tapped. {T}: Add {R}, {W}, or {B} to your mana pool.
+oracle=Nomad Outpost enters the battlefield tapped.\n{T}: Add {R}, {W}, or {B} to your mana pool.

@@ -8,4 +8,4 @@ cost={2}{R}{R}
 pt=2/2
 ability=double strike;undying
 timing=main
-oracle=Double strike. Undying
+oracle=Double strike\nUndying

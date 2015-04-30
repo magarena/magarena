@@ -9,4 +9,4 @@ pt=0/5
 ability=defender;reach;\
         Whenever SN blocks a creature, return that creature to its owner's hand at end of combat.
 timing=smain
-oracle=Defender; reach. Whenever Æther Membrane blocks a creature, return that creature to its owner's hand at end of combat.
+oracle=Defender, reach\nWhenever Æther Membrane blocks a creature, return that creature to its owner's hand at end of combat.

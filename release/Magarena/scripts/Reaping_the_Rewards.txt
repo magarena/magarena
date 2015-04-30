@@ -7,4 +7,4 @@ cost={W}
 ability=Buyback Sacrifice a land.
 effect=You gain 2 life.~Buyback
 timing=removal
-oracle=Buyback—Sacrifice a land. You gain 2 life.
+oracle=Buyback—Sacrifice a land.\nYou gain 2 life.

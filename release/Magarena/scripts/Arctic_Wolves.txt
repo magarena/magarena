@@ -9,4 +9,4 @@ pt=4/5
 ability=Cumulative upkeep {2};\
         When SN enters the battlefield, draw a card.
 timing=main
-oracle=Cumulative upkeep {2}. When Arctic Wolves enters the battlefield, draw a card.
+oracle=Cumulative upkeep {2}\nWhen Arctic Wolves enters the battlefield, draw a card.

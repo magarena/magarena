@@ -9,4 +9,4 @@ pt=5/4
 ability=Trample;\
         Multicolored creatures you control have trample.
 timing=main
-oracle=Trample. Multicolored creatures you control have trample.
+oracle=Trample\nMulticolored creatures you control have trample.

@@ -9,4 +9,4 @@ pt=2/2
 ability=At the beginning of your upkeep, SN deals 1 damage to each creature and each player.;\
         When SN dies, SN deals 1 damage to each creature and each player.
 timing=main
-oracle=At the beginning of your upkeep, Plague Spitter deals 1 damage to each creature and each player. When Plague Spitter dies, Plague Spitter deals 1 damage to each creature and each player.
+oracle=At the beginning of your upkeep, Plague Spitter deals 1 damage to each creature and each player.\nWhen Plague Spitter dies, Plague Spitter deals 1 damage to each creature and each player.

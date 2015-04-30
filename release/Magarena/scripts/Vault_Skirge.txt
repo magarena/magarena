@@ -8,4 +8,4 @@ cost={1}{B/P}
 pt=1/1
 ability=flying;lifelink;alt cost Pay 2 life, {1} named Pay 2 life
 timing=main
-oracle=Flying. Lifelink
+oracle=Flying\nLifelink

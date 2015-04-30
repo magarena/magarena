@@ -10,4 +10,4 @@ ability=Flying.;\
         When SN enters the battlefield, you may return target Dragon permanent card from your graveyard to the battlefield.;\
         {B}{R}: Dragon creatures get +1/+1 until end of turn.
 timing=main
-oracle=Flying. When Bladewing the Risen enters the battlefield, you may return target Dragon permanent card from your graveyard to the battlefield. {B}{R}: Dragon creatures get +1/+1 until end of turn.
+oracle=Flying\nWhen Bladewing the Risen enters the battlefield, you may return target Dragon permanent card from your graveyard to the battlefield.\n{B}{R}: Dragon creatures get +1/+1 until end of turn.

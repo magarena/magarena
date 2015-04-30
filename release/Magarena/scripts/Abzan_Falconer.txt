@@ -9,4 +9,4 @@ pt=2/3
 ability=Outlast {W};\
         Each creature you control with a +1/+1 counter on it has flying.
 timing=main
-oracle=Outlast {W}. Each creature you control with a +1/+1 counter on it has flying.
+oracle=Outlast {W}\nEach creature you control with a +1/+1 counter on it has flying.

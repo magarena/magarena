@@ -9,4 +9,4 @@ pt=2/2
 ability={1}{G}, Sacrifice an Elf: Target creature gets +3/+3 until end of turn.
 timing=main
 requires_groovy_code
-oracle=Forests you control are 1/1 green Elf creatures that are still lands. {1}{G}, Sacrifice an Elf: Target creature gets +3/+3 until end of turn.
+oracle=Forests you control are 1/1 green Elf creatures that are still lands.\n{1}{G}, Sacrifice an Elf: Target creature gets +3/+3 until end of turn.

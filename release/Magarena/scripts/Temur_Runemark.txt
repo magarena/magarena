@@ -9,4 +9,4 @@ ability=Enchanted creature gets +2/+2.;\
         Enchanted creature has trample as long as you control a blue or red permanent.
 timing=aura
 enchant=pump,pos creature
-oracle=Enchant creature. Enchanted creature gets +2/+2. Enchanted creature has trample as long as you control a blue or red permanent.
+oracle=Enchant creature\nEnchanted creature gets +2/+2.\nEnchanted creature has trample as long as you control a blue or red permanent.

@@ -8,4 +8,4 @@ cost={4}{U}
 ability=Enchanted permanent doesn't untap during its controller's untap step.
 timing=aura
 enchant=can't attack or block,neg artifact or creature
-oracle=Enchant artifact or creature. Enchanted permanent doesn't untap during its controller's untap step.
+oracle=Enchant artifact or creature\nEnchanted permanent doesn't untap during its controller's untap step.

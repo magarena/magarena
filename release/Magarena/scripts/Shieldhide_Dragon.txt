@@ -10,4 +10,4 @@ ability=Flying, lifelink;\
         Megamorph {5}{W}{W};\
         When SN is turned face up, put a +1/+1 counter on each other Dragon creature you control.
 timing=main
-oracle=Flying, lifelink. Megamorph {5}{W}{W}. When Shieldhide Dragon is turned face up, put a +1/+1 counter on each other Dragon creature you control.
+oracle=Flying, lifelink\nMegamorph {5}{W}{W}\nWhen Shieldhide Dragon is turned face up, put a +1/+1 counter on each other Dragon creature you control.

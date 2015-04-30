@@ -7,4 +7,4 @@ cost={3}
 ability={T}: Add {R} or {W} to your mana pool.;\
         {R}{W},{T},Sacrifice SN: Draw a card.
 timing=artifact
-oracle={T}: Add {R} or {W} to your mana pool. {R}{W}, {T}, Sacrifice Boros Cluestone: Draw a card.
+oracle={T}: Add {R} or {W} to your mana pool.\n{R}{W}, {T}, Sacrifice Boros Cluestone: Draw a card.

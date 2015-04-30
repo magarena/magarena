@@ -6,4 +6,4 @@ type=Sorcery
 cost={3}{B}
 effect=Target player discards a card.~Cipher.
 timing=main
-oracle=Target player discards a card. Cipher
+oracle=Target player discards a card.\nCipher

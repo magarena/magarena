@@ -9,4 +9,4 @@ pt=0/6
 ability=defender;\
         {1}: Regenerate SN.
 timing=smain
-oracle=Defender. {1}: Regenerate Living Wall.
+oracle=Defender\n{1}: Regenerate Living Wall.

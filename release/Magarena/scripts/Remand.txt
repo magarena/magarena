@@ -6,4 +6,4 @@ type=Instant
 cost={1}{U}
 timing=counter
 requires_groovy_code
-oracle=Counter target spell. If that spell is countered this way, put it into its owner's hand instead of into that player's graveyard. Draw a card.
+oracle=Counter target spell. If that spell is countered this way, put it into its owner's hand instead of into that player's graveyard.\nDraw a card.

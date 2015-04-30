@@ -11,4 +11,4 @@ ability=Flying;\
         (1) Put a +1/+1 counter on SN. \
         (2) Return target creature to its owner's hand.
 timing=main
-oracle=Flying. When Aven Surveyor enters the battlefield, choose one — • Put a +1/+1 counter on Aven Surveyor. • Return target creature to its owner's hand.
+oracle=Flying\nWhen Aven Surveyor enters the battlefield, choose one —\n• Put a +1/+1 counter on Aven Surveyor.\n• Return target creature to its owner's hand.

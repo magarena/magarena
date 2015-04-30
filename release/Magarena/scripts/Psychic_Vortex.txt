@@ -6,4 +6,4 @@ type=Enchantment
 cost={2}{U}{U}
 timing=enchantment
 requires_groovy_code
-oracle=Cumulative upkeep—Draw a card. At the beginning of your end step, sacrifice a land and discard your hand.
+oracle=Cumulative upkeep—Draw a card.\nAt the beginning of your end step, sacrifice a land and discard your hand.

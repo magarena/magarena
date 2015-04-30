@@ -11,4 +11,4 @@ ability=SN enters the battlefield tapped.;\
         Sacrifice another creature: Untap SN.~Put a +1/+1 counter on SN.;\
         Whenever SN attacks, destroy target creature defending player controls.~Put a +1/+1 counter on SN.
 timing=main
-oracle=Grimgrin, Corpse-Born enters the battlefield tapped and doesn't untap during your untap step. Sacrifice another creature: Untap Grimgrin and put a +1/+1 counter on it. Whenever Grimgrin attacks, destroy target creature defending player controls, then put a +1/+1 counter on Grimgrin.
+oracle=Grimgrin, Corpse-Born enters the battlefield tapped and doesn't untap during your untap step.\nSacrifice another creature: Untap Grimgrin and put a +1/+1 counter on it.\nWhenever Grimgrin attacks, destroy target creature defending player controls, then put a +1/+1 counter on Grimgrin.

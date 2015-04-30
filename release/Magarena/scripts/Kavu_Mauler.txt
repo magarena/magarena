@@ -9,4 +9,4 @@ pt=4/4
 ability=Trample;\
         Whenever SN attacks, SN gets +1/+1 until end of turn for each other attacking Kavu.
 timing=main
-oracle=Trample. Whenever Kavu Mauler attacks, it gets +1/+1 until end of turn for each other attacking Kavu.
+oracle=Trample\nWhenever Kavu Mauler attacks, it gets +1/+1 until end of turn for each other attacking Kavu.

@@ -9,4 +9,4 @@ pt=0/0
 ability=Graft 2;\
         {G}: Target creature with a +1/+1 counter on it gains reach until end of turn.
 timing=main
-oracle=Graft 2. {G}: Target creature with a +1/+1 counter on it gains reach until end of turn.
+oracle=Graft 2\n{G}: Target creature with a +1/+1 counter on it gains reach until end of turn.

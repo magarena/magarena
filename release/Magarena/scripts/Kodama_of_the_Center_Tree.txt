@@ -9,4 +9,4 @@ pt=*/*
 ability=SN's power and toughness are each equal to the number of Spirits you control.
 timing=main
 requires_groovy_code
-oracle=Kodama of the Center Tree's power and toughness are each equal to the number of Spirits you control. Kodama of the Center Tree has soulshift X, where X is the number of Spirits you control.
+oracle=Kodama of the Center Tree's power and toughness are each equal to the number of Spirits you control.\nKodama of the Center Tree has soulshift X, where X is the number of Spirits you control.

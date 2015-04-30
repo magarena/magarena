@@ -9,4 +9,4 @@ pt=2/5
 ability=vigilance;\
         When SN enters the battlefield, you gain 4 life.
 timing=main
-oracle=Vigilance. When Jedit's Dragoons enters the battlefield, you gain 4 life.
+oracle=Vigilance\nWhen Jedit's Dragoons enters the battlefield, you gain 4 life.

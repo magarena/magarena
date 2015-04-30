@@ -8,4 +8,4 @@ cost={3}{U}
 pt=1/4
 ability=flying;{2},Return a land you control to its owner's hand:Target player puts the top two cards of his or her library into his or her graveyard.
 timing=main
-oracle=Flying. {2}, Return a land you control to its owner's hand: Target player puts the top two cards of his or her library into his or her graveyard.
+oracle=Flying\n{2}, Return a land you control to its owner's hand: Target player puts the top two cards of his or her library into his or her graveyard.

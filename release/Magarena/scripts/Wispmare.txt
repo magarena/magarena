@@ -10,4 +10,4 @@ ability=flying;\
         When SN enters the battlefield, destroy target enchantment.;\
         evoke {W}
 timing=main
-oracle=Flying. When Wispmare enters the battlefield, destroy target enchantment. Evoke {W}
+oracle=Flying\nWhen Wispmare enters the battlefield, destroy target enchantment.\nEvoke {W}

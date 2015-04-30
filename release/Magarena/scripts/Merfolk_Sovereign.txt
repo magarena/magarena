@@ -10,4 +10,4 @@ ability=other merfolk creatures you control get +1/+1;\
         {T}: Target Merfolk creature can't be blocked this turn.
 static=player
 timing=main
-oracle=Other Merfolk creatures you control get +1/+1. {T}: Target Merfolk creature can't be blocked this turn.
+oracle=Other Merfolk creatures you control get +1/+1.\n{T}: Target Merfolk creature can't be blocked this turn.

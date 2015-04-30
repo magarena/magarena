@@ -9,4 +9,4 @@ pt=*/*
 ability=hexproof;\
         SN's power and toughness are each equal to the number of Forests you control.
 timing=smain
-oracle=Hexproof. Dungrove Elder's power and toughness are each equal to the number of Forests you control.
+oracle=Hexproof\nDungrove Elder's power and toughness are each equal to the number of Forests you control.

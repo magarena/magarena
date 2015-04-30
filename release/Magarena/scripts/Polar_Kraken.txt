@@ -10,4 +10,4 @@ ability=Trample;\
 SN enters the battlefield tapped.
 timing=main
 requires_groovy_code
-oracle=Trample. Polar Kraken enters the battlefield tapped. Cumulative upkeep—Sacrifice a land.
+oracle=Trample\nPolar Kraken enters the battlefield tapped.\nCumulative upkeep—Sacrifice a land.

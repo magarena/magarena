@@ -8,4 +8,4 @@ cost={4}{R/G}
 pt=5/2
 ability=trample;persist
 timing=main
-oracle=Trample. Persist
+oracle=Trample\nPersist

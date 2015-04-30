@@ -9,4 +9,4 @@ pt=1/4
 ability=changeling;\
         {1}{U}: Switch SN's power and toughness until end of turn.
 timing=main
-oracle=Changeling. {1}{U}: Switch Turtleshell Changeling's power and toughness until end of turn.
+oracle=Changeling\n{1}{U}: Switch Turtleshell Changeling's power and toughness until end of turn.

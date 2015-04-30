@@ -8,4 +8,4 @@ cost={3}{R}
 pt=3/2
 ability=haste;echo {1}{B};{B/R}: SN gets +1/+0 until end of turn.
 timing=main
-oracle=Haste. Echo {1}{B}. {B/R}: Henchfiend of Ukor gets +1/+0 until end of turn.
+oracle=Haste\nEcho {1}{B}\n{B/R}: Henchfiend of Ukor gets +1/+0 until end of turn.

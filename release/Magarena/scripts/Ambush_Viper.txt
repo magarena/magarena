@@ -10,4 +10,4 @@ pt=2/1
 timing=flash
 ability=Flash;\
         Deathtouch
-oracle=Flash. Deathtouch
+oracle=Flash\nDeathtouch

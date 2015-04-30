@@ -9,4 +9,4 @@ pt=3/3
 ability=Exploit;\
         When SN exploits a creature, target creature gets -3/-3 until end of turn.
 timing=main
-oracle=Exploit. When Silumgar Butcher exploits a creature, target creature gets -3/-3 until end of turn.
+oracle=Exploit\nWhen Silumgar Butcher exploits a creature, target creature gets -3/-3 until end of turn.

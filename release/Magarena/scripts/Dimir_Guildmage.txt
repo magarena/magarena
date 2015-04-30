@@ -9,4 +9,4 @@ pt=2/2
 ability={3}{U}: Target player draws a card. Activate this ability only any time you could cast a sorcery.;\
         {3}{B}: Target player discards a card. Activate this ability only any time you could cast a sorcery.
 timing=main
-oracle={3}{U}: Target player draws a card. Activate this ability only any time you could cast a sorcery. {3}{B}: Target player discards a card. Activate this ability only any time you could cast a sorcery.
+oracle={3}{U}: Target player draws a card. Activate this ability only any time you could cast a sorcery.\n{3}{B}: Target player discards a card. Activate this ability only any time you could cast a sorcery.

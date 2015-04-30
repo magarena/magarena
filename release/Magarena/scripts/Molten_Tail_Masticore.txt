@@ -10,4 +10,4 @@ ability={4}, Exile a creature card from your graveyard: SN deals 4 damage to tar
         {2}: Regenerate SN.
 timing=main
 requires_groovy_code
-oracle=At the beginning of your upkeep, sacrifice Molten-Tail Masticore unless you discard a card. {4}, Exile a creature card from your graveyard: Molten-Tail Masticore deals 4 damage to target creature or player. {2}: Regenerate Molten-Tail Masticore.
+oracle=At the beginning of your upkeep, sacrifice Molten-Tail Masticore unless you discard a card.\n{4}, Exile a creature card from your graveyard: Molten-Tail Masticore deals 4 damage to target creature or player.\n{2}: Regenerate Molten-Tail Masticore.

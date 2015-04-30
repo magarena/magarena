@@ -10,4 +10,4 @@ ability=Flying;\
         Morph {2}{U};\
         When SN is turned face up, target creature you control gains hexproof until end of turn.
 timing=main
-oracle=Flying. Morph {2}{U}. When Mistfire Weaver is turned face up, target creature you control gains hexproof until end of turn.
+oracle=Flying\nMorph {2}{U}\nWhen Mistfire Weaver is turned face up, target creature you control gains hexproof until end of turn.

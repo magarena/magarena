@@ -9,4 +9,4 @@ pt=2/1
 ability=SN gets +1/+1 as long as you control a Swamp.;\
         {2}{B}: Regenerate SN.
 timing=main
-oracle=Crimson Muckwader gets +1/+1 as long as you control a Swamp. {2}{B}: Regenerate Crimson Muckwader.
+oracle=Crimson Muckwader gets +1/+1 as long as you control a Swamp.\n{2}{B}: Regenerate Crimson Muckwader.

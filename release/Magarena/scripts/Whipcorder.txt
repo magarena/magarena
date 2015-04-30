@@ -9,4 +9,4 @@ pt=2/2
 ability={W}, {T}: Tap target creature.;\
         Morph {W}
 timing=main
-oracle={W}, {T}: Tap target creature. Morph {W}
+oracle={W}, {T}: Tap target creature.\nMorph {W}

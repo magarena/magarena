@@ -8,4 +8,4 @@ cost={2}
 ability=Equipped creature has intimidate.;\
         Equip {2}
 timing=equipment
-oracle=Equipped creature has intimidate. Equip {2}
+oracle=Equipped creature has intimidate.\nEquip {2}

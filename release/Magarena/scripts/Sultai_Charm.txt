@@ -6,4 +6,4 @@ type=Instant
 cost={B}{G}{U}
 effect=Choose one — (1) Destroy target monocolored creature. (2) Destroy target artifact or enchantment. (3) Draw two cards, then discard a card.
 timing=removal
-oracle=Choose one — • Destroy target monocolored creature. • Destroy target artifact or enchantment. • Draw two cards, then discard a card.
+oracle=Choose one —\n• Destroy target monocolored creature.\n• Destroy target artifact or enchantment.\n• Draw two cards, then discard a card.

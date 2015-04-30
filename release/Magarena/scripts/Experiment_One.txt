@@ -9,4 +9,4 @@ pt=1/1
 ability=evolve;\
         Remove two +1/+1 counters from SN: Regenerate SN.
 timing=main
-oracle=Evolve. Remove two +1/+1 counters from Experiment One: Regenerate Experiment One.
+oracle=Evolve\nRemove two +1/+1 counters from Experiment One: Regenerate Experiment One.

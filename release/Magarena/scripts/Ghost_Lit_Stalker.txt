@@ -9,4 +9,4 @@ pt=1/1
 ability={4}{B}, {T}: Target player discards two cards. Activate this ability only any time you could cast a sorcery.;\
         {5}{B}{B}, Discard SN: Target player discards four cards. Activate this ability only any time you could cast a sorcery.
 timing=main
-oracle={4}{B}, {T}: Target player discards two cards. Activate this ability only any time you could cast a sorcery. Channel — {5}{B}{B}, Discard Ghost-Lit Stalker: Target player discards four cards. Activate this ability only any time you could cast a sorcery.
+oracle={4}{B}, {T}: Target player discards two cards. Activate this ability only any time you could cast a sorcery.\nChannel — {5}{B}{B}, Discard Ghost-Lit Stalker: Target player discards four cards. Activate this ability only any time you could cast a sorcery.

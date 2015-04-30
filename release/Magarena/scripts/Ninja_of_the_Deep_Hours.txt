@@ -9,4 +9,4 @@ pt=2/2
 ability=ninjutsu {1}{U};\
         Whenever SN deals combat damage to a player, you may draw a card.
 timing=main
-oracle=Ninjutsu {1}{U}. Whenever Ninja of the Deep Hours deals combat damage to a player, you may draw a card.
+oracle=Ninjutsu {1}{U}\nWhenever Ninja of the Deep Hours deals combat damage to a player, you may draw a card.

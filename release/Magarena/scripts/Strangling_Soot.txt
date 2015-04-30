@@ -7,4 +7,4 @@ cost={2}{B}
 effect=Destroy target creature with toughness 3 or less.
 ability=Flashback {5}{R}
 timing=removal
-oracle=Destroy target creature with toughness 3 or less. Flashback {5}{R}
+oracle=Destroy target creature with toughness 3 or less.\nFlashback {5}{R}

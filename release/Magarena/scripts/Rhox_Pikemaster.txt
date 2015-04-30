@@ -9,4 +9,4 @@ pt=3/3
 ability=first strike;other soldier creatures you control have first strike
 static=player
 timing=main
-oracle=First strike. Other Soldier creatures you control have first strike.
+oracle=First strike\nOther Soldier creatures you control have first strike.

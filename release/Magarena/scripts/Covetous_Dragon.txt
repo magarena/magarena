@@ -9,4 +9,4 @@ pt=6/5
 ability=Flying
 requires_groovy_code
 timing=main
-oracle=Flying. When you control no artifacts, sacrifice Covetous Dragon.
+oracle=Flying\nWhen you control no artifacts, sacrifice Covetous Dragon.

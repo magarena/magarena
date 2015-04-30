@@ -9,4 +9,4 @@ pt=1/1
 ability=hexproof;\
         SN can't be blocked.
 timing=main
-oracle=Hexproof. Invisible Stalker can't be blocked.
+oracle=Hexproof\nInvisible Stalker can't be blocked.

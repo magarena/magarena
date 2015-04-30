@@ -9,4 +9,4 @@ pt=4/3
 ability=Flying;\
         SN can't attack unless defending player controls an Island.
 timing=main
-oracle=Flying. Ethereal Whiskergill can't attack unless defending player controls an Island.
+oracle=Flying\nEthereal Whiskergill can't attack unless defending player controls an Island.

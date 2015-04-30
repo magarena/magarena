@@ -9,4 +9,4 @@ pt=1/1
 ability=When SN enters the battlefield, put a 3/3 colorless Golem artifact creature token onto the battlefield.;\
         {1}: Regenerate target Golem you control.
 timing=fmain
-oracle=When Vital Splicer enters the battlefield, put a 3/3 colorless Golem artifact creature token onto the battlefield. {1}: Regenerate target Golem you control.
+oracle=When Vital Splicer enters the battlefield, put a 3/3 colorless Golem artifact creature token onto the battlefield.\n{1}: Regenerate target Golem you control.

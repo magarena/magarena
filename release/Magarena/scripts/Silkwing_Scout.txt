@@ -9,4 +9,4 @@ pt=2/1
 ability=flying;\
         {G},Sacrifice SN:Search your library for a basic land card and put it onto the battlefield tapped. Then shuffle your library.
 timing=main
-oracle=Flying. {G}, Sacrifice Silkwing Scout: Search your library for a basic land card and put that card onto the battlefield tapped. Then shuffle your library.
+oracle=Flying\n{G}, Sacrifice Silkwing Scout: Search your library for a basic land card and put that card onto the battlefield tapped. Then shuffle your library.

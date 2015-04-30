@@ -9,4 +9,4 @@ pt=1/3
 ability=Flying;\
         {U}, {T}, Discard a card: Return target permanent you control to its owner's hand.
 timing=main
-oracle=Flying. {U}, {T}, Discard a card: Return target permanent you control to its owner's hand.
+oracle=Flying\n{U}, {T}, Discard a card: Return target permanent you control to its owner's hand.

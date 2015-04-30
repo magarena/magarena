@@ -9,4 +9,4 @@ pt=6/6
 ability=flying
 timing=main
 requires_groovy_code
-oracle=Flying. {R}: Ancient Hellkite deals 1 damage to target creature defending player controls. Activate this ability only if Ancient Hellkite is attacking.
+oracle=Flying\n{R}: Ancient Hellkite deals 1 damage to target creature defending player controls. Activate this ability only if Ancient Hellkite is attacking.

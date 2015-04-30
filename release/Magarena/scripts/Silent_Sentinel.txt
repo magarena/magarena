@@ -9,4 +9,4 @@ pt=4/6
 ability=flying;\
         Whenever SN attacks, you may return target enchantment card from your graveyard to the battlefield.
 timing=main
-oracle=Flying. Whenever Silent Sentinel attacks, you may return target enchantment card from your graveyard to the battlefield.
+oracle=Flying\nWhenever Silent Sentinel attacks, you may return target enchantment card from your graveyard to the battlefield.

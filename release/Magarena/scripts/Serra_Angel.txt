@@ -8,4 +8,4 @@ subtype=Angel
 cost={3}{W}{W}
 pt=4/4
 timing=main
-oracle=Flying. Vigilance
+oracle=Flying\nVigilance

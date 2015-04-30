@@ -9,4 +9,4 @@ pt=0/0
 ability=SN enters the battlefield with five +1/+1 counters on it.;\
         Whenever an artifact enters the battlefield, remove a +1/+1 counter from SN.
 timing=main
-oracle=Karstoderm enters the battlefield with five +1/+1 counters on it. Whenever an artifact enters the battlefield, remove a +1/+1 counter from Karstoderm.
+oracle=Karstoderm enters the battlefield with five +1/+1 counters on it.\nWhenever an artifact enters the battlefield, remove a +1/+1 counter from Karstoderm.

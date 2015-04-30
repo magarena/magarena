@@ -8,4 +8,4 @@ cost={5}
 ability=Equip {3}
 timing=equipment
 requires_groovy_code
-oracle=All damage that would be dealt to you is dealt to equipped creature instead. Equip {3}
+oracle=All damage that would be dealt to you is dealt to equipped creature instead.\nEquip {3}

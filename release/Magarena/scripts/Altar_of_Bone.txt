@@ -7,4 +7,4 @@ cost={G}{W}
 ability=As an additional cost to cast SN, sacrifice a creature.
 effect=Search your library for a creature card, reveal it, and put it into your hand. Then shuffle your library.
 timing=main
-oracle=As an additional cost to cast Altar of Bone, sacrifice a creature. Search your library for a creature card, reveal that card, and put it into your hand. Then shuffle your library.
+oracle=As an additional cost to cast Altar of Bone, sacrifice a creature.\nSearch your library for a creature card, reveal that card, and put it into your hand. Then shuffle your library.

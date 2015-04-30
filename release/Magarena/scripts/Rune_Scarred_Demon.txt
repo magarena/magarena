@@ -9,4 +9,4 @@ pt=6/6
 ability=Flying;\
         When SN enters the battlefield, search your library for a card, put it into your hand, then shuffle your library.
 timing=main
-oracle=Flying. When Rune-Scarred Demon enters the battlefield, search your library for a card, put it into your hand, then shuffle your library.
+oracle=Flying\nWhen Rune-Scarred Demon enters the battlefield, search your library for a card, put it into your hand, then shuffle your library.

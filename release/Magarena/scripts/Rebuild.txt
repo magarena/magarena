@@ -7,4 +7,4 @@ cost={2}{U}
 ability=cycling {2}
 effect=Return all artifacts to their owners' hands.
 timing=removal
-oracle=Return all artifacts to their owners' hands. Cycling {2}
+oracle=Return all artifacts to their owners' hands.\nCycling {2}

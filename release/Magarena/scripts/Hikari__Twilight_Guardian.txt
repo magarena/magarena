@@ -9,4 +9,4 @@ pt=4/4
 ability=Flying;\
         Whenever you cast a Spirit or Arcane spell, you may exile SN. If you do, return it to the battlefield under its owner's control at the beginning of the next end step.
 timing=main
-oracle=Flying. Whenever you cast a Spirit or Arcane spell, you may exile Hikari, Twilight Guardian. If you do, return it to the battlefield under its owner's control at the beginning of the next end step.
+oracle=Flying\nWhenever you cast a Spirit or Arcane spell, you may exile Hikari, Twilight Guardian. If you do, return it to the battlefield under its owner's control at the beginning of the next end step.

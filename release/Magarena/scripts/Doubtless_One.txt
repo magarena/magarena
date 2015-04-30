@@ -9,4 +9,4 @@ pt=*/*
 ability=SN's power and toughness are each equal to the number of Clerics on the battlefield.
 timing=main
 requires_groovy_code=Mourning Thrull
-oracle=Doubtless One's power and toughness are each equal to the number of Clerics on the battlefield. Whenever Doubtless One deals damage, you gain that much life.
+oracle=Doubtless One's power and toughness are each equal to the number of Clerics on the battlefield.\nWhenever Doubtless One deals damage, you gain that much life.

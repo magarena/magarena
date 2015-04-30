@@ -8,4 +8,4 @@ subtype=Faerie,Soldier
 cost={3}{U}
 pt=2/3
 timing=main
-oracle=Flash. Flying
+oracle=Flash\nFlying

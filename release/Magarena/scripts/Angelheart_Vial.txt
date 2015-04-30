@@ -7,4 +7,4 @@ cost={5}
 ability={2}, {T}, Remove four charge counters from SN: You gain 2 life.~Draw a card.
 timing=main
 requires_groovy_code
-oracle=Whenever you're dealt damage, you may put that many charge counters on Angelheart Vial. {2}, {T}, Remove four charge counters from Angelheart Vial: You gain 2 life and draw a card.
+oracle=Whenever you're dealt damage, you may put that many charge counters on Angelheart Vial.\n{2}, {T}, Remove four charge counters from Angelheart Vial: You gain 2 life and draw a card.

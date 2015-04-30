@@ -9,4 +9,4 @@ pt=1/1
 ability={R},{T}:Target creature gains first strike until end of turn.;\
         {U}, {T}: Put target creature you control on top of its owner's library.
 timing=main
-oracle={U}, {T}: Put target creature you control on top of its owner's library. {R}, {T}: Target creature gains first strike until end of turn.
+oracle={U}, {T}: Put target creature you control on top of its owner's library.\n{R}, {T}: Target creature gains first strike until end of turn.

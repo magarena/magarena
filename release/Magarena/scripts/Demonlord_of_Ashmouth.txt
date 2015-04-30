@@ -9,4 +9,4 @@ pt=5/4
 ability=flying;undying
 timing=main
 requires_groovy_code
-oracle=Flying. When Demonlord of Ashmouth enters the battlefield, exile it unless you sacrifice another creature. Undying
+oracle=Flying\nWhen Demonlord of Ashmouth enters the battlefield, exile it unless you sacrifice another creature.\nUndying

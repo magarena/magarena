@@ -10,4 +10,4 @@ ability=When you cycle SN, you may put a 1/1 white Soldier creature token onto t
         When SN dies, you may put a 1/1 white Soldier creature token onto the battlefield.;\
         Cycling {2}{W}
 timing=main
-oracle=When you cycle Bant Sojourners or it dies, you may put a 1/1 white Soldier creature token onto the battlefield. Cycling {2}{W}
+oracle=When you cycle Bant Sojourners or it dies, you may put a 1/1 white Soldier creature token onto the battlefield.\nCycling {2}{W}

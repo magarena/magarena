@@ -8,4 +8,4 @@ cost={3}{U}
 pt=2/2
 ability=flying;hexproof
 timing=fmain
-oracle=Flying. Hexproof
+oracle=Flying\nHexproof

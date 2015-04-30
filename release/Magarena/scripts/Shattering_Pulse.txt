@@ -8,4 +8,4 @@ cost={1}{R}
 ability=buyback {3}
 effect=Destroy target artifact.~Buyback
 timing=removal
-oracle=Buyback {3}. Destroy target artifact.
+oracle=Buyback {3}\nDestroy target artifact.

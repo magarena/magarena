@@ -8,4 +8,4 @@ cost={R/W}{R/W}{R/W}{R/W}{R/W}
 pt=3/4
 ability=flying;attacking creatures you control get +2/+0
 timing=main
-oracle=Flying. Attacking creatures you control get +2/+0.
+oracle=Flying\nAttacking creatures you control get +2/+0.

@@ -9,4 +9,4 @@ pt=5/5
 ability=flying;\
         Whenever another non-Spirit creature you control dies, put a 1/1 white Spirit creature token with flying onto the battlefield.
 timing=fmain
-oracle=Flying. Whenever another non-Spirit creature you control dies, put a 1/1 white Spirit creature token with flying onto the battlefield.
+oracle=Flying\nWhenever another non-Spirit creature you control dies, put a 1/1 white Spirit creature token with flying onto the battlefield.

@@ -6,4 +6,4 @@ type=Instant
 cost={2}{R}
 effect=Green creatures you control get +1/+1 until end of turn.~Nongreen creatures you control get +1/+0 until end of turn.
 timing=pump
-oracle=Green creatures you control get +1/+1 until end of turn. Nongreen creatures you control get +1/+0 until end of turn.
+oracle=Green creatures you control get +1/+1 until end of turn.\nNongreen creatures you control get +1/+0 until end of turn.

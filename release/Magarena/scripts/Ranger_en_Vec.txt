@@ -9,4 +9,4 @@ pt=2/2
 ability=first strike;\
         {G}: Regenerate SN.
 timing=main
-oracle=First strike. {G}: Regenerate Ranger en-Vec.
+oracle=First strike\n{G}: Regenerate Ranger en-Vec.

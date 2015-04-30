@@ -8,4 +8,4 @@ cost={U}
 ability=Whenever enchanted creature becomes tapped, you draw a card.
 timing=aura
 enchant=tap,creature an opponent controls
-oracle=Enchant creature an opponent controls. Whenever enchanted creature becomes tapped, you draw a card.
+oracle=Enchant creature an opponent controls\nWhenever enchanted creature becomes tapped, you draw a card.

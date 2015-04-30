@@ -9,4 +9,4 @@ pt=2/2
 ability=flying;\
         When SN dies, draw a card.
 timing=main
-oracle=Flying. When Runewing dies, draw a card.
+oracle=Flying\nWhen Runewing dies, draw a card.

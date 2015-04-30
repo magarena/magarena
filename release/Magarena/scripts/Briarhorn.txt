@@ -10,4 +10,4 @@ ability=flash;\
         When SN enters the battlefield, target creature gets +3/+3 until end of turn.;\
         evoke {1}{G}
 timing=flash
-oracle=Flash. When Briarhorn enters the battlefield, target creature gets +3/+3 until end of turn. Evoke {1}{G}
+oracle=Flash\nWhen Briarhorn enters the battlefield, target creature gets +3/+3 until end of turn.\nEvoke {1}{G}

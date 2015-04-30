@@ -9,4 +9,4 @@ pt=1/1
 ability=trample;kicker {8}
 timing=main
 requires_groovy_code
-oracle=Kicker {8}. Trample. If Llanowar Elite was kicked, it enters the battlefield with five +1/+1 counters on it.
+oracle=Kicker {8}\nTrample\nIf Llanowar Elite was kicked, it enters the battlefield with five +1/+1 counters on it.

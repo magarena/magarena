@@ -10,4 +10,4 @@ ability=When SN enters the battlefield, choose one — \
         (1) Target creature gets +2/+0 until end of turn. \
         (2) Target creature gets -0/-2 until end of turn.
 timing=main
-oracle=When Tormentor Exarch enters the battlefield, choose one — • Target creature gets +2/+0 until end of turn. • Target creature gets -0/-2 until end of turn.
+oracle=When Tormentor Exarch enters the battlefield, choose one —\n• Target creature gets +2/+0 until end of turn.\n• Target creature gets -0/-2 until end of turn.

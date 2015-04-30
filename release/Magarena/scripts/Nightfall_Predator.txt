@@ -11,4 +11,4 @@ requires_groovy_code
 transform=Daybreak Ranger
 timing=main
 hidden
-oracle={R}, {T}: Nightfall Predator fights target creature. At the beginning of each upkeep, if a player cast two or more spells last turn, transform Nightfall Predator.
+oracle={R}, {T}: Nightfall Predator fights target creature.\nAt the beginning of each upkeep, if a player cast two or more spells last turn, transform Nightfall Predator.

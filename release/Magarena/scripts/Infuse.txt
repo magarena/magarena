@@ -6,4 +6,4 @@ type=Instant
 cost={2}{U}
 effect=Untap target artifact, creature, or land.~Draw a card at the beginning of the next turn's upkeep.
 timing=main
-oracle=Untap target artifact, creature, or land. Draw a card at the beginning of the next turn's upkeep.
+oracle=Untap target artifact, creature, or land.\nDraw a card at the beginning of the next turn's upkeep.

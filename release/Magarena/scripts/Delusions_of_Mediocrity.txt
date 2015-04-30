@@ -7,4 +7,4 @@ cost={3}{U}
 ability=When SN enters the battlefield, you gain 10 life.;\
         When SN leaves the battlefield, you lose 10 life.
 timing=enchantment
-oracle=When Delusions of Mediocrity enters the battlefield, you gain 10 life. When Delusions of Mediocrity leaves the battlefield, you lose 10 life.
+oracle=When Delusions of Mediocrity enters the battlefield, you gain 10 life.\nWhen Delusions of Mediocrity leaves the battlefield, you lose 10 life.

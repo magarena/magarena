@@ -9,4 +9,4 @@ pt=0/4
 ability=defender;\
         {G},Sacrifice a Wall: Draw a card.
 timing=main
-oracle=Defender. {G}, Sacrifice a Wall: Draw a card.
+oracle=Defender\n{G}, Sacrifice a Wall: Draw a card.

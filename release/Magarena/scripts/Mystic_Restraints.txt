@@ -10,4 +10,4 @@ ability=Flash;\
         Enchanted creature doesn't untap during its controller's untap step.
 timing=flash
 enchant=can't attack or block,neg creature
-oracle=Flash. Enchant creature. When Mystic Restraints enters the battlefield, tap enchanted creature. Enchanted creature doesn't untap during its controller's untap step.
+oracle=Flash\nEnchant creature\nWhen Mystic Restraints enters the battlefield, tap enchanted creature.\nEnchanted creature doesn't untap during its controller's untap step.

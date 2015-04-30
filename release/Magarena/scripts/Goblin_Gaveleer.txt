@@ -9,4 +9,4 @@ pt=1/1
 ability=trample
 timing=main
 requires_groovy_code
-oracle=Trample. Goblin Gaveleer gets +2/+0 for each Equipment attached to it.
+oracle=Trample\nGoblin Gaveleer gets +2/+0 for each Equipment attached to it.

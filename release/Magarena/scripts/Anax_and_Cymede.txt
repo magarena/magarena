@@ -9,4 +9,4 @@ pt=3/2
 ability=first strike;vigilance;\
         Whenever you cast a spell that targets SN, creatures you control get +1/+1 and gain trample until end of turn.
 timing=main
-oracle=First strike, vigilance. Heroic — Whenever you cast a spell that targets Anax and Cymede, creatures you control get +1/+1 and gain trample until end of turn.
+oracle=First strike, vigilance\nHeroic — Whenever you cast a spell that targets Anax and Cymede, creatures you control get +1/+1 and gain trample until end of turn.

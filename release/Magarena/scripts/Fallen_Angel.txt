@@ -9,4 +9,4 @@ pt=3/3
 ability=flying;\
         Sacrifice a creature: SN gets +2/+1 until end of turn.
 timing=main
-oracle=Flying. Sacrifice a creature: Fallen Angel gets +2/+1 until end of turn.
+oracle=Flying\nSacrifice a creature: Fallen Angel gets +2/+1 until end of turn.

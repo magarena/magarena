@@ -6,4 +6,4 @@ type=Instant
 cost={U}{R}
 timing=mustattack
 requires_groovy_code
-oracle=Target creature you don't control gets -2/-0 until end of turn and attacks this turn if able. Overload {3}{U}{R}
+oracle=Target creature you don't control gets -2/-0 until end of turn and attacks this turn if able.\nOverload {3}{U}{R}

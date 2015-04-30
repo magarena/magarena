@@ -9,4 +9,4 @@ pt=3/4
 ability=Intimidate;\
         SN can't block creatures with power 2 or less.
 timing=main
-oracle=Intimidate. Cyclops Tyrant can't block creatures with power 2 or less.
+oracle=Intimidate\nCyclops Tyrant can't block creatures with power 2 or less.

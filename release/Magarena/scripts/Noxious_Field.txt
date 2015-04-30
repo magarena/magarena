@@ -8,4 +8,4 @@ cost={1}{B}{B}
 ability=Enchanted land has "{T}: SN deals 1 damage to each creature and each player."
 enchant=pump,pos land
 timing=enchantment
-oracle=Enchant land. Enchanted land has "{T}: This land deals 1 damage to each creature and each player."
+oracle=Enchant land\nEnchanted land has "{T}: This land deals 1 damage to each creature and each player."

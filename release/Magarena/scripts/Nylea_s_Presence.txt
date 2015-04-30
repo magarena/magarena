@@ -9,4 +9,4 @@ ability=When SN enters the battlefield, draw a card.
 given_subtype=Plains,Island,Swamp,Mountain,Forest
 enchant=pump,pos land
 timing=aura
-oracle=Enchant land. When Nylea's Presence enters the battlefield, draw a card. Enchanted land is every basic land type in addition to its other types.
+oracle=Enchant land\nWhen Nylea's Presence enters the battlefield, draw a card.\nEnchanted land is every basic land type in addition to its other types.

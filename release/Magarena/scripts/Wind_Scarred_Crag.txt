@@ -8,4 +8,4 @@ ability=SN enters the battlefield tapped.;\
         When SN enters the battlefield, you gain 1 life.;\
         {T}: Add {R} or {W} to your mana pool.
 timing=tapland
-oracle=Wind-Scarred Crag enters the battlefield tapped. When Wind-Scarred Crag enters the battlefield, you gain 1 life. {T}: Add {R} or {W} to your mana pool.
+oracle=Wind-Scarred Crag enters the battlefield tapped.\nWhen Wind-Scarred Crag enters the battlefield, you gain 1 life.\n{T}: Add {R} or {W} to your mana pool.

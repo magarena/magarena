@@ -9,4 +9,4 @@ pt=8/5
 ability=trample;\
         {G}: Regenerate SN.
 timing=main
-oracle=Trample. {G}: Regenerate Silvos, Rogue Elemental.
+oracle=Trample\n{G}: Regenerate Silvos, Rogue Elemental.

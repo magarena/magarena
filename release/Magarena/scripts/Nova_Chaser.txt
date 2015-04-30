@@ -9,4 +9,4 @@ cost={3}{R}
 pt=10/2
 ability=trample;champion Elemental
 timing=main
-oracle=Trample. Champion an Elemental
+oracle=Trample\nChampion an Elemental

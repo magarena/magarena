@@ -8,4 +8,4 @@ effect=SN deals 4 damage to target creature you don't control.
 timing=removal
 removal=4
 requires_groovy_code
-oracle=Mizzium Mortars deals 4 damage to target creature you don't control. Overload {3}{R}{R}{R}
+oracle=Mizzium Mortars deals 4 damage to target creature you don't control.\nOverload {3}{R}{R}{R}

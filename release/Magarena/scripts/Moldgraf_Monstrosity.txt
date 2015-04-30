@@ -9,4 +9,4 @@ pt=8/8
 ability=trample
 timing=main
 requires_groovy_code
-oracle=Trample. When Moldgraf Monstrosity dies, exile it, then return two creature cards at random from your graveyard to the battlefield.
+oracle=Trample\nWhen Moldgraf Monstrosity dies, exile it, then return two creature cards at random from your graveyard to the battlefield.

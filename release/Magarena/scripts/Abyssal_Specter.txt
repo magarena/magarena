@@ -9,4 +9,4 @@ pt=2/3
 ability=Flying;\
         Whenever SN deals damage to a player, that player discards a card.
 timing=main
-oracle=Flying. Whenever Abyssal Specter deals damage to a player, that player discards a card.
+oracle=Flying\nWhenever Abyssal Specter deals damage to a player, that player discards a card.

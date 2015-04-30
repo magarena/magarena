@@ -7,4 +7,4 @@ cost={1}{R}
 ability=Flashback {2}{U}
 timing=Draw
 requires_groovy_code
-oracle=Draw two cards, then discard a card at random. Flashback {2}{U}
+oracle=Draw two cards, then discard a card at random.\nFlashback {2}{U}

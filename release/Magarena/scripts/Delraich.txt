@@ -9,4 +9,4 @@ pt=6/6
 ability=Trample.;\
         You may sacrifice three black creatures rather than pay SN's mana cost.
 timing=main
-oracle=Trample. You may sacrifice three black creatures rather than pay Delraich's mana cost.
+oracle=Trample\nYou may sacrifice three black creatures rather than pay Delraich's mana cost.

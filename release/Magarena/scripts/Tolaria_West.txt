@@ -8,4 +8,4 @@ ability={T}: Add {U} to your mana pool.;\
         SN enters the battlefield tapped.;\
         Transmute {1}{U}{U}
 timing=tapland
-oracle=Tolaria West enters the battlefield tapped. {T}: Add {U} to your mana pool. Transmute {1}{U}{U}
+oracle=Tolaria West enters the battlefield tapped.\n{T}: Add {U} to your mana pool.\nTransmute {1}{U}{U}

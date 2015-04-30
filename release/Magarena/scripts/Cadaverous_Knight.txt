@@ -9,4 +9,4 @@ pt=2/2
 ability=flanking;\
         {1}{B}{B}: Regenerate SN.
 timing=main
-oracle=Flanking. {1}{B}{B}: Regenerate Cadaverous Knight.
+oracle=Flanking\n{1}{B}{B}: Regenerate Cadaverous Knight.

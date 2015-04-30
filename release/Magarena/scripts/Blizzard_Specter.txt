@@ -9,4 +9,4 @@ pt=2/3
 ability=Flying
 timing=main
 requires_groovy_code
-oracle=Flying. Whenever Blizzard Specter deals combat damage to a player, choose one — • That player returns a permanent he or she controls to its owner's hand. • That player discards a card.
+oracle=Flying\nWhenever Blizzard Specter deals combat damage to a player, choose one —\n• That player returns a permanent he or she controls to its owner's hand.\n• That player discards a card.

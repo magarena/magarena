@@ -6,4 +6,4 @@ type=Sorcery
 cost={X}{R}{W}
 timing=main
 requires_groovy_code
-oracle=Choose one — • Energy Bolt deals X damage to target player. • Target player gains X life.
+oracle=Choose one —\n• Energy Bolt deals X damage to target player.\n• Target player gains X life.

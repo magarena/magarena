@@ -9,4 +9,4 @@ pt=1/3
 ability=Exploit;\
         When SN exploits a creature, target opponent loses 2 life and you gain 2 life.
 timing=main
-oracle=Exploit. When Qarsi Sadist exploits a creature, target opponent loses 2 life and you gain 2 life.
+oracle=Exploit\nWhen Qarsi Sadist exploits a creature, target opponent loses 2 life and you gain 2 life.

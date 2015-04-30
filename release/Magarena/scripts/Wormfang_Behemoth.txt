@@ -8,4 +8,4 @@ cost={3}{U}{U}
 pt=5/5
 timing=main
 requires_groovy_code
-oracle=When Wormfang Behemoth enters the battlefield, exile all cards from your hand. When Wormfang Behemoth leaves the battlefield, return the exiled cards to their owner's hand.
+oracle=When Wormfang Behemoth enters the battlefield, exile all cards from your hand.\nWhen Wormfang Behemoth leaves the battlefield, return the exiled cards to their owner's hand.

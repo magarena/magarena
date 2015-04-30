@@ -9,4 +9,4 @@ pt=2/1
 ability=Flying;\
         SN can't attack unless you control a Knight or Soldier.
 timing=main
-oracle=Flying. War Falcon can't attack unless you control a Knight or a Soldier.
+oracle=Flying\nWar Falcon can't attack unless you control a Knight or a Soldier.

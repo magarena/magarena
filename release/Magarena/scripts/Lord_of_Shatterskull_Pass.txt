@@ -9,4 +9,4 @@ pt=3/3
 ability=level up {1}{R} 6
 timing=main
 requires_groovy_code
-oracle=Level up {1}{R}. LEVEL 1-5. 6/6. LEVEL 6+. 6/6. Whenever Lord of Shatterskull Pass attacks, it deals 6 damage to each creature defending player controls.
+oracle=Level up {1}{R}\nLEVEL 1-5\n6/6\nLEVEL 6+\n6/6\nWhenever Lord of Shatterskull Pass attacks, it deals 6 damage to each creature defending player controls.

@@ -9,4 +9,4 @@ pt=2/1
 ability=flash;\
         {B}: Regenerate SN.
 timing=flash
-oracle=Flash. {B}: Regenerate Drudge Reavers.
+oracle=Flash\n{B}: Regenerate Drudge Reavers.

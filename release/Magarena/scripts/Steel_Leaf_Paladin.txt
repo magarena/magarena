@@ -9,4 +9,4 @@ pt=4/4
 ability=First strike;\
         When SN enters the battlefield, return a green or white creature you control to its owner's hand.
 timing=main
-oracle=First strike. When Steel Leaf Paladin enters the battlefield, return a green or white creature you control to its owner's hand.
+oracle=First strike\nWhen Steel Leaf Paladin enters the battlefield, return a green or white creature you control to its owner's hand.

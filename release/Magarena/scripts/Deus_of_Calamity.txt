@@ -9,4 +9,4 @@ pt=6/6
 ability=trample
 timing=main
 requires_groovy_code
-oracle=Trample. Whenever Deus of Calamity deals 6 or more damage to an opponent, destroy target land that player controls.
+oracle=Trample\nWhenever Deus of Calamity deals 6 or more damage to an opponent, destroy target land that player controls.

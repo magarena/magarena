@@ -9,4 +9,4 @@ pt=2/2
 ability=protection from red;\
         Whenever a player casts a red spell, you may gain 1 life.
 timing=fmain
-oracle=Protection from red. Whenever a player casts a red spell, you may gain 1 life.
+oracle=Protection from red\nWhenever a player casts a red spell, you may gain 1 life.

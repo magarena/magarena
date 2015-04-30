@@ -9,4 +9,4 @@ pt=1/1
 ability=wither;\
         {1}{B}: Regenerate SN.
 timing=main
-oracle=Wither. {1}{B}: Regenerate Cinderbones.
+oracle=Wither\n{1}{B}: Regenerate Cinderbones.

@@ -9,4 +9,4 @@ pt=1/1
 ability=ninjutsu {U}
 timing=main
 requires_groovy_code
-oracle=Ninjutsu {U}. Whenever Mistblade Shinobi deals combat damage to a player, you may return target creature that player controls to its owner's hand.
+oracle=Ninjutsu {U}\nWhenever Mistblade Shinobi deals combat damage to a player, you may return target creature that player controls to its owner's hand.

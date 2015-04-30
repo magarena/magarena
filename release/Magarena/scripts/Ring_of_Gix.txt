@@ -6,4 +6,4 @@ type=Artifact
 cost={3}
 ability=echo {3};{1},{T}:Tap target artifact.;{1},{T}:Tap target creature.;{1},{T}:Tap target land.
 timing=artifact
-oracle=Echo {3}. {1}, {T}: Tap target artifact, creature, or land.
+oracle=Echo {3}\n{1}, {T}: Tap target artifact, creature, or land.

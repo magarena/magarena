@@ -7,4 +7,4 @@ cost={4}
 ability=Morph {3}
 timing=main
 requires_groovy_code
-oracle={X}{X}, {T}: Target player puts the top X cards of his or her library into his or her graveyard. Morph {3}
+oracle={X}{X}, {T}: Target player puts the top X cards of his or her library into his or her graveyard.\nMorph {3}

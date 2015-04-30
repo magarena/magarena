@@ -8,4 +8,4 @@ ability=At the beginning of each upkeep, put a strife counter on SN.
 static=all
 timing=enchantment
 requires_groovy_code
-oracle=At the beginning of each upkeep, put a strife counter on Crescendo of War. Attacking creatures get +1/+0 for each strife counter on Crescendo of War. Blocking creatures you control get +1/+0 for each strife counter on Crescendo of War.
+oracle=At the beginning of each upkeep, put a strife counter on Crescendo of War.\nAttacking creatures get +1/+0 for each strife counter on Crescendo of War.\nBlocking creatures you control get +1/+0 for each strife counter on Crescendo of War.

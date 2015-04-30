@@ -8,4 +8,4 @@ subtype=Faerie,Rogue
 cost={B}
 pt=1/1
 timing=fmain
-oracle=Flying. Nightshade Stinger can't block.
+oracle=Flying\nNightshade Stinger can't block.

@@ -9,4 +9,4 @@ pt=0/0
 ability={2}{B}, Remove a +1/+1 counter from SN: Target creature gets -1/-1 until end of turn.
 timing=main
 requires_groovy_code=Undergrowth Scavenger
-oracle=Drakestown Forgotten enters the battlefield with X +1/+1 counters on it, where X is the number of creature cards in all graveyards. {2}{B}, Remove a +1/+1 counter from Drakestown Forgotten: Target creature gets -1/-1 until end of turn.
+oracle=Drakestown Forgotten enters the battlefield with X +1/+1 counters on it, where X is the number of creature cards in all graveyards.\n{2}{B}, Remove a +1/+1 counter from Drakestown Forgotten: Target creature gets -1/-1 until end of turn.

@@ -10,4 +10,4 @@ ability=Bestow {3}{G};\
         Reach;\
         Enchanted creature gets +2/+2 and has reach.
 timing=main
-oracle=Bestow {3}{G}. Reach. Enchanted creature gets +2/+2 and has reach.
+oracle=Bestow {3}{G}\nReach\nEnchanted creature gets +2/+2 and has reach.

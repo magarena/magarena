@@ -11,4 +11,4 @@ ability={G}: Regenerate SN.;\
 transform=Ulvenwald Mystics
 timing=main
 hidden
-oracle={G}: Regenerate Ulvenwald Primordials. At the beginning of each upkeep, if a player cast two or more spells last turn, transform Ulvenwald Primordials.
+oracle={G}: Regenerate Ulvenwald Primordials.\nAt the beginning of each upkeep, if a player cast two or more spells last turn, transform Ulvenwald Primordials.

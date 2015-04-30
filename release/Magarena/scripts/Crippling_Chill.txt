@@ -6,4 +6,4 @@ type=Instant
 cost={2}{U}
 effect=Tap target creature. It doesn't untap during its controller's next untap step.~Draw a card.
 timing=tapping
-oracle=Tap target creature. It doesn't untap during its controller's next untap step. Draw a card.
+oracle=Tap target creature. It doesn't untap during its controller's next untap step.\nDraw a card.

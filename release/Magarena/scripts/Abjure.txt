@@ -7,4 +7,4 @@ cost={U}
 ability=As an additional cost to cast SN, sacrifice a blue permanent.
 effect=Counter target spell.
 timing=counter
-oracle=As an additional cost to cast Abjure, sacrifice a blue permanent. Counter target spell.
+oracle=As an additional cost to cast Abjure, sacrifice a blue permanent.\nCounter target spell.

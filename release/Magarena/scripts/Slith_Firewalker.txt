@@ -9,4 +9,4 @@ pt=1/1
 ability=haste;\
         Whenever SN deals combat damage to a player, put a +1/+1 counter on SN.
 timing=fmain
-oracle=Haste. Whenever Slith Firewalker deals combat damage to a player, put a +1/+1 counter on it.
+oracle=Haste\nWhenever Slith Firewalker deals combat damage to a player, put a +1/+1 counter on it.

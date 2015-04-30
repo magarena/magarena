@@ -9,4 +9,4 @@ pt=3/3
 ability=soulshift 3;\
         {G}{G}, Sacrifice SN: Put target land on top of its owner's library.
 timing=main
-oracle={G}{G}, Sacrifice Rootrunner: Put target land on top of its owner's library. Soulshift 3
+oracle={G}{G}, Sacrifice Rootrunner: Put target land on top of its owner's library.\nSoulshift 3

@@ -7,4 +7,4 @@ cost={2}{G}
 ability=Split second.
 effect=Destroy target artifact or enchantment.
 timing=removal
-oracle=Split second. Destroy target artifact or enchantment.
+oracle=Split second\nDestroy target artifact or enchantment.

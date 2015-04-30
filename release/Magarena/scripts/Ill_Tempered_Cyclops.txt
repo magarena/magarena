@@ -9,4 +9,4 @@ pt=3/3
 ability=Trample;\
         {5}{R}: Monstrosity 3.
 timing=main
-oracle=Trample. {5}{R}: Monstrosity 3.
+oracle=Trample\n{5}{R}: Monstrosity 3.

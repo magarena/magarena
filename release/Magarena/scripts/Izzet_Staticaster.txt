@@ -10,4 +10,4 @@ ability=Flash;\
         Haste
 timing=main
 requires_groovy_code
-oracle=Flash. Haste. {T}: Izzet Staticaster deals 1 damage to target creature and each other creature with the same name as that creature.
+oracle=Flash\nHaste\n{T}: Izzet Staticaster deals 1 damage to target creature and each other creature with the same name as that creature.

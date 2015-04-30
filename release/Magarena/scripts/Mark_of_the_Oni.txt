@@ -9,4 +9,4 @@ ability=You control enchanted creature.;\
         At the beginning of the end step, if you control no Demons, sacrifice SN.
 timing=aura
 enchant=gain control,neg creature
-oracle=Enchant creature. You control enchanted creature. At the beginning of the end step, if you control no Demons, sacrifice Mark of the Oni.
+oracle=Enchant creature\nYou control enchanted creature.\nAt the beginning of the end step, if you control no Demons, sacrifice Mark of the Oni.

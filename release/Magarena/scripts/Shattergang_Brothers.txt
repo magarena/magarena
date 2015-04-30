@@ -10,4 +10,4 @@ ability={2}{B}, Sacrifice a creature: Each other player sacrifices a creature.;\
         {2}{R}, Sacrifice an artifact: Each other player sacrifices an artifact.;\
         {2}{G}, Sacrifice an enchantment: Each other player sacrifices an enchantment.
 timing=main
-oracle={2}{B}, Sacrifice a creature: Each other player sacrifices a creature. {2}{R}, Sacrifice an artifact: Each other player sacrifices an artifact. {2}{G}, Sacrifice an enchantment: Each other player sacrifices an enchantment.
+oracle={2}{B}, Sacrifice a creature: Each other player sacrifices a creature.\n{2}{R}, Sacrifice an artifact: Each other player sacrifices an artifact.\n{2}{G}, Sacrifice an enchantment: Each other player sacrifices an enchantment.

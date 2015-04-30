@@ -9,4 +9,4 @@ pt=2/2
 ability=Protection from white;\
         SN gets +1/+1 for each Plains your opponents control.
 timing=main
-oracle=Protection from white. Marauding Knight gets +1/+1 for each Plains your opponents control.
+oracle=Protection from white\nMarauding Knight gets +1/+1 for each Plains your opponents control.

@@ -8,4 +8,4 @@ subtype=Leviathan
 cost={7}{U}{U}
 pt=7/11
 timing=fmain
-oracle=Islandwalk, trample, shroud
+oracle=Islandwalk, trample\nShroud

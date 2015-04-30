@@ -10,4 +10,4 @@ ability=Flying;\
         Morph {3}{W};\
         When SN is turned face up, target creature you control gains protection from the color of your choice until end of turn.
 timing=main
-oracle=Flying. Morph {3}{W}. When Aven Liberator is turned face up, target creature you control gains protection from the color of your choice until end of turn.
+oracle=Flying\nMorph {3}{W}\nWhen Aven Liberator is turned face up, target creature you control gains protection from the color of your choice until end of turn.

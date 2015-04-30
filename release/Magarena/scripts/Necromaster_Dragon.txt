@@ -9,4 +9,4 @@ pt=4/4
 ability=Flying;\
         Whenever SN deals combat damage to a player, you may pay {2}. If you do, put a 2/2 black Zombie creature token onto the battlefield.~Each opponent puts the top two cards of his or her library into his or her graveyard.
 timing=main
-oracle=Flying. Whenever Necromaster Dragon deals combat damage to a player, you may pay {2}. If you do, put a 2/2 black Zombie creature token onto the battlefield and each opponent puts the top two cards of his or her library into his or her graveyard.
+oracle=Flying\nWhenever Necromaster Dragon deals combat damage to a player, you may pay {2}. If you do, put a 2/2 black Zombie creature token onto the battlefield and each opponent puts the top two cards of his or her library into his or her graveyard.

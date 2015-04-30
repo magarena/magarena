@@ -9,4 +9,4 @@ pt=2/3
 ability={G/U}, Sacrifice SN: Put target card from a graveyard on the bottom of its owner's library.;\
         Persist
 timing=main
-oracle={G/U}, Sacrifice Grazing Kelpie: Put target card from a graveyard on the bottom of its owner's library. Persist
+oracle={G/U}, Sacrifice Grazing Kelpie: Put target card from a graveyard on the bottom of its owner's library.\nPersist

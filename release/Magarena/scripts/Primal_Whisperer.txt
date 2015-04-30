@@ -9,4 +9,4 @@ pt=2/2
 ability=SN gets +2/+2 for each face-down creature on the battlefield.;\
         Morph {3}{G}
 timing=main
-oracle=Primal Whisperer gets +2/+2 for each face-down creature on the battlefield. Morph {3}{G}
+oracle=Primal Whisperer gets +2/+2 for each face-down creature on the battlefield.\nMorph {3}{G}

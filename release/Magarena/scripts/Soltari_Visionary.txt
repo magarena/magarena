@@ -9,4 +9,4 @@ pt=2/2
 ability=shadow
 timing=main
 requires_groovy_code
-oracle=Shadow. Whenever Soltari Visionary deals damage to a player, destroy target enchantment that player controls.
+oracle=Shadow\nWhenever Soltari Visionary deals damage to a player, destroy target enchantment that player controls.

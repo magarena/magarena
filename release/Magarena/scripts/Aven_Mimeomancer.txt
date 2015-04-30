@@ -9,4 +9,4 @@ pt=3/1
 ability=flying
 timing=smain
 requires_groovy_code
-oracle=Flying. At the beginning of your upkeep, you may put a feather counter on target creature. If you do, that creature is 3/1 and has flying for as long as it has a feather counter on it.
+oracle=Flying\nAt the beginning of your upkeep, you may put a feather counter on target creature. If you do, that creature has base power and toughness 3/1 and has flying for as long as it has a feather counter on it.

@@ -9,4 +9,4 @@ pt=2/2
 ability=flying;haste;\
         Whenever SN deals combat damage to a player, put two +1/+1 counters on SN.
 timing=fmain
-oracle=Flying, haste. Whenever Falkenrath Marauders deals combat damage to a player, put two +1/+1 counters on it.
+oracle=Flying, haste\nWhenever Falkenrath Marauders deals combat damage to a player, put two +1/+1 counters on it.

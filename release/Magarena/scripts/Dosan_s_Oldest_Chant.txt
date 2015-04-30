@@ -6,4 +6,4 @@ type=Sorcery
 cost={4}{G}
 effect=You gain 6 life.~Draw a card.
 timing=main
-oracle=You gain 6 life. Draw a card.
+oracle=You gain 6 life.\nDraw a card.

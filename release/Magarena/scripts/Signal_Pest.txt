@@ -8,4 +8,4 @@ cost={1}
 pt=0/1
 ability=battle cry;SN can't be blocked except by creatures with flying or reach.
 timing=smain
-oracle=Battle cry. Signal Pest can't be blocked except by creatures with flying or reach.
+oracle=Battle cry\nSignal Pest can't be blocked except by creatures with flying or reach.

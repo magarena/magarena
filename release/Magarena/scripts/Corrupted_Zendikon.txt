@@ -12,4 +12,4 @@ given_subtype=Ooze
 set_pt=3/3
 timing=enchantment
 requires_groovy_code=Wind Zendikon
-oracle=Enchant land. Enchanted land is a 3/3 black Ooze creature. It's still a land. When enchanted land dies, return that card to its owner's hand.
+oracle=Enchant land\nEnchanted land is a 3/3 black Ooze creature. It's still a land.\nWhen enchanted land dies, return that card to its owner's hand.

@@ -10,4 +10,4 @@ ability=When SN enters the battlefield, choose one — \
         (1) Put a +1/+1 counter on SN. \
         (2) Destroy target creature that was dealt damage this turn.
 timing=main
-oracle=When Hooded Assassin enters the battlefield, choose one — • Put a +1/+1 counter on Hooded Assassin. • Destroy target creature that was dealt damage this turn.
+oracle=When Hooded Assassin enters the battlefield, choose one —\n• Put a +1/+1 counter on Hooded Assassin.\n• Destroy target creature that was dealt damage this turn.

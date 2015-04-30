@@ -7,4 +7,4 @@ cost={3}{U}
 effect=Search your library for an instant card or a card with flash, reveal it, and put it into your hand. Then shuffle your library.
 ability=Flashback {5}{B}
 timing=draw
-oracle=Search your library for an instant card or a card with flash, reveal it, and put it into your hand. Then shuffle your library. Flashback {5}{B}
+oracle=Search your library for an instant card or a card with flash, reveal it, and put it into your hand. Then shuffle your library.\nFlashback {5}{B}

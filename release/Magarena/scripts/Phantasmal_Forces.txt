@@ -9,4 +9,4 @@ pt=4/1
 ability=flying;\
         At the beginning of your upkeep, you may pay {U}. If you don't, sacrifice SN.
 timing=main
-oracle=Flying. At the beginning of your upkeep, sacrifice Phantasmal Forces unless you pay {U}.
+oracle=Flying\nAt the beginning of your upkeep, sacrifice Phantasmal Forces unless you pay {U}.

@@ -9,4 +9,4 @@ pt=3/3
 ability=Kavu creatures have trample;\
         Whenever another Kavu enters the battlefield, put a +1/+1 counter on SN.
 timing=main
-oracle=Kavu creatures have trample. Whenever another Kavu enters the battlefield, put a +1/+1 counter on Kavu Monarch.
+oracle=Kavu creatures have trample.\nWhenever another Kavu enters the battlefield, put a +1/+1 counter on Kavu Monarch.

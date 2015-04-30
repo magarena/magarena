@@ -9,4 +9,4 @@ ability=When SN enters the battlefield, draw a card at the beginning of the next
         Enchanted creature gets +1/+1.
 timing=enchantment
 enchant=pump,pos creature
-oracle=Enchant creature. When Krovikan Fetish enters the battlefield, draw a card at the beginning of the next turn's upkeep. Enchanted creature gets +1/+1.
+oracle=Enchant creature\nWhen Krovikan Fetish enters the battlefield, draw a card at the beginning of the next turn's upkeep.\nEnchanted creature gets +1/+1.

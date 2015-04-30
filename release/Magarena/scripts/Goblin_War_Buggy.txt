@@ -8,4 +8,4 @@ cost={1}{R}
 pt=2/2
 ability=haste;echo {1}{R}
 timing=main
-oracle=Haste. Echo {1}{R}
+oracle=Haste\nEcho {1}{R}

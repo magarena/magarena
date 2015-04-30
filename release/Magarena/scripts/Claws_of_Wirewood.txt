@@ -7,4 +7,4 @@ cost={3}{G}
 effect=SN deals 3 damage to each creature with flying and each player.
 ability=cycling {2}
 timing=main
-oracle=Claws of Wirewood deals 3 damage to each creature with flying and each player. Cycling {2}
+oracle=Claws of Wirewood deals 3 damage to each creature with flying and each player.\nCycling {2}

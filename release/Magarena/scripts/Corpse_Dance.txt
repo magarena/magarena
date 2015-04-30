@@ -7,4 +7,4 @@ cost={2}{B}
 timing=animate
 ability=buyback {2}
 requires_groovy_code
-oracle=Buyback {2}. Return the top creature card of your graveyard to the battlefield. That creature gains haste until end of turn. Exile it at the beginning of the next end step.
+oracle=Buyback {2}\nReturn the top creature card of your graveyard to the battlefield. That creature gains haste until end of turn. Exile it at the beginning of the next end step.

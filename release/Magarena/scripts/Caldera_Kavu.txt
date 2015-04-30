@@ -9,4 +9,4 @@ pt=2/2
 ability={1}{B}: SN gets +1/+1 until end of turn.
 timing=main
 requires_groovy_code=Spiritmonger
-oracle={1}{B}: Caldera Kavu gets +1/+1 until end of turn. {G}: Caldera Kavu becomes the color of your choice until end of turn.
+oracle={1}{B}: Caldera Kavu gets +1/+1 until end of turn.\n{G}: Caldera Kavu becomes the color of your choice until end of turn.

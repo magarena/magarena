@@ -9,4 +9,4 @@ pt=2/2
 ability=Haste;\
         Whenever SN attacks, creatures you control gain first strike and deathtouch until end of turn.
 timing=fmain
-oracle=Haste. Whenever Ankle Shanker attacks, creatures you control gain first strike and deathtouch until end of turn.
+oracle=Haste\nWhenever Ankle Shanker attacks, creatures you control gain first strike and deathtouch until end of turn.

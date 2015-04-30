@@ -7,4 +7,4 @@ cost={1}{W}
 ability=Cast SN only during the declare attackers step and only if you've been attacked this step.
 effect=Creatures you control get +2/+2 until end of turn.
 timing=attack
-oracle=Cast Warrior's Stand only during the declare attackers step and only if you've been attacked this step. Creatures you control get +2/+2 until end of turn.
+oracle=Cast Warrior's Stand only during the declare attackers step and only if you've been attacked this step.\nCreatures you control get +2/+2 until end of turn.

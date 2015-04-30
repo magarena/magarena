@@ -9,4 +9,4 @@ pt=0/4
 ability=Defender.;\
         Whenever SN blocks a creature, return that creature to its owner's hand at end of combat.
 timing=smain
-oracle=Defender. Whenever Wall of Tears blocks a creature, return that creature to its owner's hand at end of combat.
+oracle=Defender\nWhenever Wall of Tears blocks a creature, return that creature to its owner's hand at end of combat.

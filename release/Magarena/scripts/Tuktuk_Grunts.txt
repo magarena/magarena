@@ -9,4 +9,4 @@ pt=2/2
 ability=haste;\
         Whenever SN or another Ally enters the battlefield under your control, you may put a +1/+1 counter on SN.
 timing=fmain
-oracle=Haste. Whenever Tuktuk Grunts or another Ally enters the battlefield under your control, you may put a +1/+1 counter on Tuktuk Grunts.
+oracle=Haste\nWhenever Tuktuk Grunts or another Ally enters the battlefield under your control, you may put a +1/+1 counter on Tuktuk Grunts.

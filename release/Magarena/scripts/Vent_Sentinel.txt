@@ -9,4 +9,4 @@ pt=2/4
 ability=Defender
 timing=main
 requires_groovy_code
-oracle=Defender. {1}{R}, {T}: Vent Sentinel deals damage to target player equal to the number of creatures with defender you control.
+oracle=Defender\n{1}{R}, {T}: Vent Sentinel deals damage to target player equal to the number of creatures with defender you control.

@@ -9,4 +9,4 @@ pt=5/5
 ability=flying;\
         When SN becomes the target of a spell or ability, sacrifice it.
 timing=main
-oracle=Flying. When Phantasmal Dragon becomes the target of a spell or ability, sacrifice it.
+oracle=Flying\nWhen Phantasmal Dragon becomes the target of a spell or ability, sacrifice it.

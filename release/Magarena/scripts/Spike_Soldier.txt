@@ -10,4 +10,4 @@ ability=SN enters the battlefield with three +1/+1 counters on it.;\
         {2}, Remove a +1/+1 counter from SN: Put a +1/+1 counter on target creature.;\
         Remove a +1/+1 counter from SN: SN gets +2/+2 until end of turn.
 timing=main
-oracle=Spike Soldier enters the battlefield with three +1/+1 counters on it. {2}, Remove a +1/+1 counter from Spike Soldier: Put a +1/+1 counter on target creature. Remove a +1/+1 counter from Spike Soldier: Spike Soldier gets +2/+2 until end of turn.
+oracle=Spike Soldier enters the battlefield with three +1/+1 counters on it.\n{2}, Remove a +1/+1 counter from Spike Soldier: Put a +1/+1 counter on target creature.\nRemove a +1/+1 counter from Spike Soldier: Spike Soldier gets +2/+2 until end of turn.

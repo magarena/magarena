@@ -6,4 +6,4 @@ type=Instant
 cost={2}{R}
 timing=removal
 requires_groovy_code
-oracle=Target creature attacks this turn if able. Draw a card.
+oracle=Target creature attacks this turn if able.\nDraw a card.

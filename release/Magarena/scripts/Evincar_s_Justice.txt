@@ -8,4 +8,4 @@ cost={2}{B}{B}
 ability=buyback {3}
 effect=SN deals 2 damage to each creature and each player.~Buyback
 timing=removal
-oracle=Buyback {3}. Evincar's Justice deals 2 damage to each creature and each player.
+oracle=Buyback {3}\nEvincar's Justice deals 2 damage to each creature and each player.

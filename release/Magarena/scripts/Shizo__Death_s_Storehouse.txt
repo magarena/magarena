@@ -7,4 +7,4 @@ mana=b1
 ability={T}: Add {B} to your mana pool.;\
         {T}, {B}: Target legendary creature gains fear until end of turn.
 timing=land
-oracle={T}: Add {B} to your mana pool. {B}, {T}: Target legendary creature gains fear until end of turn.
+oracle={T}: Add {B} to your mana pool.\n{B}, {T}: Target legendary creature gains fear until end of turn.

@@ -9,4 +9,4 @@ pt=2/3
 ability=Morph {1}{G}{G}
 timing=main
 requires_groovy_code
-oracle=Whenever Serpentine Basilisk deals combat damage to a creature, destroy that creature at end of combat. Morph {1}{G}{G}
+oracle=Whenever Serpentine Basilisk deals combat damage to a creature, destroy that creature at end of combat.\nMorph {1}{G}{G}

@@ -8,4 +8,4 @@ cost={1}{U}
 ability=Enchanted creature has islandwalk.
 timing=aura
 enchant=unblockable,pos creature
-oracle=Enchant creature. Enchanted creature has islandwalk.
+oracle=Enchant creature\nEnchanted creature has islandwalk.

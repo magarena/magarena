@@ -7,4 +7,4 @@ cost={2}{R}
 ability=Entwine {2}
 timing=pump
 requires_groovy_code
-oracle=Choose one — • Creatures target player controls attack this turn if able. • Creatures you control gain first strike until end of turn. Entwine {2}
+oracle=Choose one —\n• Creatures target player controls attack this turn if able.\n• Creatures you control gain first strike until end of turn.\nEntwine {2}

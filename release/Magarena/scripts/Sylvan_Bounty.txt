@@ -7,4 +7,4 @@ cost={5}{G}
 ability=Basic landcycling {1}{G}
 effect=Target player gains 8 life.
 timing=removal
-oracle=Target player gains 8 life. Basic landcycling {1}{G}
+oracle=Target player gains 8 life.\nBasic landcycling {1}{G}

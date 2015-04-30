@@ -6,4 +6,4 @@ type=Instant
 cost={1}{W}
 effect=You gain 1 life.~Draw a card at the beginning of the next turn's upkeep.
 timing=pump
-oracle=You gain 1 life. Draw a card at the beginning of the next turn's upkeep.
+oracle=You gain 1 life.\nDraw a card at the beginning of the next turn's upkeep.

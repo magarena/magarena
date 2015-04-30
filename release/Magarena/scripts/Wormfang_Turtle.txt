@@ -9,4 +9,4 @@ pt=2/4
 ability=When SN enters the battlefield, exile a land you control.;\
         When SN leaves the battlefield, return the exiled card to the battlefield under its owner's control.
 timing=main
-oracle=When Wormfang Turtle enters the battlefield, exile a land you control. When Wormfang Turtle leaves the battlefield, return the exiled card to the battlefield under its owner's control.
+oracle=When Wormfang Turtle enters the battlefield, exile a land you control.\nWhen Wormfang Turtle leaves the battlefield, return the exiled card to the battlefield under its owner's control.

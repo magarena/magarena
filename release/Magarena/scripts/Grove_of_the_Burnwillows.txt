@@ -7,4 +7,4 @@ mana=r3g3
 ability={T}: Add {1} to your mana pool.
 timing=land
 requires_groovy_code
-oracle={T}: Add {1} to your mana pool. {T}: Add {R} or {G} to your mana pool. Each opponent gains 1 life.
+oracle={T}: Add {1} to your mana pool.\n{T}: Add {R} or {G} to your mana pool. Each opponent gains 1 life.

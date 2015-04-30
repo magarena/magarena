@@ -7,4 +7,4 @@ cost={1}{U}{U}
 ability=Flash;\
         At the beginning of each player's draw step, that player draws an additional card.
 timing=flash
-oracle=Flash. At the beginning of each player's draw step, that player draws an additional card.
+oracle=Flash\nAt the beginning of each player's draw step, that player draws an additional card.

@@ -9,4 +9,4 @@ pt=2/2
 ability=First strike.;\
         Whenever SN attacks, you may put a Soldier creature card from your hand onto the battlefield tapped and attacking.
 timing=main
-oracle=First strike. Whenever Preeminent Captain attacks, you may put a Soldier creature card from your hand onto the battlefield tapped and attacking.
+oracle=First strike\nWhenever Preeminent Captain attacks, you may put a Soldier creature card from your hand onto the battlefield tapped and attacking.

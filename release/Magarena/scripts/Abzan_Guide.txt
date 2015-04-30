@@ -9,4 +9,4 @@ pt=4/4
 ability=Lifelink;\
         Morph {2}{W}{B}{G}
 timing=main
-oracle=Lifelink. Morph {2}{W}{B}{G}
+oracle=Lifelink\nMorph {2}{W}{B}{G}

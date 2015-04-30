@@ -9,4 +9,4 @@ ability=Enchanted creature has first strike.;\
         {1}{B}: Enchanted creature gets +2/+2 until end of turn.
 enchant=pump,pos creature
 timing=aura
-oracle=Enchant creature. Enchanted creature has first strike. {1}{B}: Enchanted creature gets +2/+2 until end of turn.
+oracle=Enchant creature\nEnchanted creature has first strike.\n{1}{B}: Enchanted creature gets +2/+2 until end of turn.

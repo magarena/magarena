@@ -8,4 +8,4 @@ cost={4}{G}{G}{G}
 ability=Enchanted creature gets +8/+8 and has trample.
 timing=aura
 enchant=trample,pos creature
-oracle=Enchant creature. Enchanted creature gets +8/+8 and has trample.
+oracle=Enchant creature\nEnchanted creature gets +8/+8 and has trample.

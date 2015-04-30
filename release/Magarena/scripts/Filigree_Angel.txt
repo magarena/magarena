@@ -9,4 +9,4 @@ pt=4/4
 ability=Flying
 timing=artifact
 requires_groovy_code
-oracle=Flying. When Filigree Angel enters the battlefield, you gain 3 life for each artifact you control.
+oracle=Flying\nWhen Filigree Angel enters the battlefield, you gain 3 life for each artifact you control.

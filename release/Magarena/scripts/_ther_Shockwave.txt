@@ -6,4 +6,4 @@ type=Instant
 cost={3}{W}
 effect=Choose one — (1) Tap all Spirits. (2) Tap all non-Spirit creatures.
 timing=tapping
-oracle=Choose one — • Tap all Spirits. • Tap all non-Spirit creatures.
+oracle=Choose one —\n• Tap all Spirits.\n• Tap all non-Spirit creatures.

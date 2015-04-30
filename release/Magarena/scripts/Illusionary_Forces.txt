@@ -8,4 +8,4 @@ cost={3}{U}
 pt=4/4
 ability=flying;cumulative upkeep {U}
 timing=main
-oracle=Flying. Cumulative upkeep {U}
+oracle=Flying\nCumulative upkeep {U}

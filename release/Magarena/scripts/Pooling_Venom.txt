@@ -9,4 +9,4 @@ ability={3}{B}: Destroy enchanted land.
 timing=aura
 enchant=destroy,neg land
 requires_groovy_code=Corrupted Roots
-oracle=Enchant land. Whenever enchanted land becomes tapped, its controller loses 2 life. {3}{B}: Destroy enchanted land.
+oracle=Enchant land\nWhenever enchanted land becomes tapped, its controller loses 2 life.\n{3}{B}: Destroy enchanted land.

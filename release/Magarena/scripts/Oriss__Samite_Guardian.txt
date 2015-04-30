@@ -9,4 +9,4 @@ pt=1/3
 ability={T}: Prevent all damage that would be dealt to target creature this turn.
 timing=main
 requires_groovy_code
-oracle={T}: Prevent all damage that would be dealt to target creature this turn. Grandeur — Discard another card named Oriss, Samite Guardian: Target player can't cast spells this turn, and creatures that player controls can't attack this turn.
+oracle={T}: Prevent all damage that would be dealt to target creature this turn.\nGrandeur — Discard another card named Oriss, Samite Guardian: Target player can't cast spells this turn, and creatures that player controls can't attack this turn.

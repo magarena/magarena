@@ -8,4 +8,4 @@ subtype=Elf,Archer
 cost={1}{G}
 pt=2/1
 timing=main
-oracle=Reach. Deathtouch
+oracle=Reach\nDeathtouch

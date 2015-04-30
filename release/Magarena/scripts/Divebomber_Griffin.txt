@@ -8,4 +8,4 @@ cost={3}{W}{W}
 pt=3/2
 ability=flying;{T},Sacrifice SN:SN deals 3 damage to target attacking or blocking creature.
 timing=main
-oracle=Flying. {T}, Sacrifice Divebomber Griffin: Divebomber Griffin deals 3 damage to target attacking or blocking creature.
+oracle=Flying\n{T}, Sacrifice Divebomber Griffin: Divebomber Griffin deals 3 damage to target attacking or blocking creature.

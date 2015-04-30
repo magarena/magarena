@@ -9,4 +9,4 @@ pt=4/5
 ability={1}{U}{U}: Target permanent becomes an artifact in addition to its other types.
 timing=main
 requires_groovy_code
-oracle={1}{U}{U}: Target permanent becomes an artifact in addition to its other types. {3}{U}: Gain control of target artifact.
+oracle={1}{U}{U}: Target permanent becomes an artifact in addition to its other types.\n{3}{U}: Gain control of target artifact.

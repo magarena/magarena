@@ -8,4 +8,4 @@ cost={5}{B}{B}
 effect=Target player loses 5 life and you gain 5 life.
 timing=removal
 requires_groovy_code
-oracle=If an opponent gained life this turn, you may pay {B} rather than pay Needlebite Trap's mana cost. Target player loses 5 life and you gain 5 life.
+oracle=If an opponent gained life this turn, you may pay {B} rather than pay Needlebite Trap's mana cost.\nTarget player loses 5 life and you gain 5 life.

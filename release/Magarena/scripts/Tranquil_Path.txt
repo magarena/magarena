@@ -6,4 +6,4 @@ type=Sorcery
 cost={4}{G}
 effect=Destroy all enchantments.~Draw a card.
 timing=main
-oracle=Destroy all enchantments. Draw a card.
+oracle=Destroy all enchantments.\nDraw a card.

@@ -8,4 +8,4 @@ cost={U}
 ability=Enchanted creature can't be blocked and "Whenever SN attacks, scry 1."
 timing=aura
 enchant=unblockable,pos creature
-oracle=Enchant creature. Enchanted creature can't be blocked. Whenever enchanted creature attacks, scry 1.
+oracle=Enchant creature\nEnchanted creature can't be blocked.\nWhenever enchanted creature attacks, scry 1.

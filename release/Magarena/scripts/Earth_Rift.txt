@@ -7,4 +7,4 @@ cost={3}{R}
 effect=Destroy target land.
 ability=Flashback {5}{R}{R}
 timing=main
-oracle=Destroy target land. Flashback {5}{R}{R}
+oracle=Destroy target land.\nFlashback {5}{R}{R}

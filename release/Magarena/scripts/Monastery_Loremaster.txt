@@ -9,4 +9,4 @@ pt=3/2
 ability=Megamorph {5}{U};\
         When SN is turned face up, return target noncreature, nonland card from your graveyard to your hand.
 timing=main
-oracle=Megamorph {5}{U}. When Monastery Loremaster is turned face up, return target noncreature, nonland card from your graveyard to your hand.
+oracle=Megamorph {5}{U}\nWhen Monastery Loremaster is turned face up, return target noncreature, nonland card from your graveyard to your hand.

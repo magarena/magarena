@@ -9,4 +9,4 @@ pt=3/3
 ability={R/W}: SN gains first strike until end of turn.
 timing=main
 requires_groovy_code
-oracle=Whenever Boros Reckoner is dealt damage, it deals that much damage to target creature or player. {R/W}: Boros Reckoner gains first strike until end of turn.
+oracle=Whenever Boros Reckoner is dealt damage, it deals that much damage to target creature or player.\n{R/W}: Boros Reckoner gains first strike until end of turn.

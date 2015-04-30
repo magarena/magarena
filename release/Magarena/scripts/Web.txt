@@ -8,4 +8,4 @@ cost={G}
 ability=Enchanted creature gets +0/+2 and has reach.
 timing=aura
 enchant=flying,pos creature
-oracle=Enchant creature. Enchanted creature gets +0/+2 and has reach.
+oracle=Enchant creature\nEnchanted creature gets +0/+2 and has reach.

@@ -9,4 +9,4 @@ pt=2/2
 ability=flash;flying
 timing=flash
 requires_groovy_code
-oracle=Flash. Flying. When Hollowhenge Spirit enters the battlefield, remove target attacking or blocking creature from combat.
+oracle=Flash\nFlying\nWhen Hollowhenge Spirit enters the battlefield, remove target attacking or blocking creature from combat.

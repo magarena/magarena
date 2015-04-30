@@ -10,4 +10,4 @@ ability=Trample;\
         Whenever another artifact enters the battlefield, put a +1/+1 counter on SN.;\
         Modular 1
 timing=fmain
-oracle=Trample. Whenever another artifact enters the battlefield, put a +1/+1 counter on Arcbound Crusher. Modular 1
+oracle=Trample\nWhenever another artifact enters the battlefield, put a +1/+1 counter on Arcbound Crusher.\nModular 1

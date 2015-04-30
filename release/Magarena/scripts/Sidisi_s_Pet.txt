@@ -9,4 +9,4 @@ pt=1/4
 ability=Lifelink;\
         Morph {1}{B}
 timing=main
-oracle=Lifelink. Morph {1}{B}
+oracle=Lifelink\nMorph {1}{B}

@@ -9,4 +9,4 @@ pt=2/2
 ability=Flanking
 timing=main
 requires_groovy_code
-oracle=Flanking. When Knight of the Mists enters the battlefield, you may pay {U}. If you don't, destroy target Knight and it can't be regenerated.
+oracle=Flanking\nWhen Knight of the Mists enters the battlefield, you may pay {U}. If you don't, destroy target Knight and it can't be regenerated.

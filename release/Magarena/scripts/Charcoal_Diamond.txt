@@ -7,4 +7,4 @@ cost={2}
 ability=SN enters the battlefield tapped.;\
         {T}: Add {B} to your mana pool.
 timing=artifact
-oracle=Charcoal Diamond enters the battlefield tapped. {T}: Add {B} to your mana pool.
+oracle=Charcoal Diamond enters the battlefield tapped.\n{T}: Add {B} to your mana pool.

@@ -9,4 +9,4 @@ pt=1/1
 ability=Flying;\
         SN gets +4/+4 as long as an opponent has ten or more cards in his or her graveyard.
 timing=main
-oracle=Flying. Jace's Phantasm gets +4/+4 as long as an opponent has ten or more cards in his or her graveyard.
+oracle=Flying\nJace's Phantasm gets +4/+4 as long as an opponent has ten or more cards in his or her graveyard.

@@ -10,4 +10,4 @@ ability=When SN enters the battlefield, put a +1/+1 counter on enchanted creatur
         Whenever a creature enters the battlefield under your control, you may return SN to its owner's hand.
 timing=main
 enchant=flying,pos creature
-oracle=Enchant creature. When Ephara's Enlightenment enters the battlefield, put a +1/+1 counter on enchanted creature. Enchanted creature has flying. Whenever a creature enters the battlefield under your control, you may return Ephara's Enlightenment to its owner's hand.
+oracle=Enchant creature\nWhen Ephara's Enlightenment enters the battlefield, put a +1/+1 counter on enchanted creature.\nEnchanted creature has flying.\nWhenever a creature enters the battlefield under your control, you may return Ephara's Enlightenment to its owner's hand.

@@ -11,4 +11,4 @@ ability=Champion Elf;\
         Each Wolf you control has deathtouch;\
         {2}{G}: Put a 2/2 green Wolf creature token onto the battlefield.
 timing=main
-oracle=Champion an Elf. {2}{G}: Put a 2/2 green Wolf creature token onto the battlefield. Each Wolf you control has deathtouch.
+oracle=Champion an Elf\n{2}{G}: Put a 2/2 green Wolf creature token onto the battlefield.\nWolves you control have deathtouch.

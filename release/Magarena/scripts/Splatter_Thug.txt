@@ -8,4 +8,4 @@ cost={2}{R}
 pt=2/2
 ability=first strike;unleash
 timing=main
-oracle=First strike. Unleash
+oracle=First strike\nUnleash

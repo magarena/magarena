@@ -6,4 +6,4 @@ type=Instant
 cost={U}{B}{R}
 effect=Choose one — (1) Return target permanent to its owner's hand. (2) Destroy target nonblack creature. It can't be regenerated. (3) Destroy target artifact.
 timing=removal
-oracle=Choose one — • Return target permanent to its owner's hand. • Destroy target nonblack creature. It can't be regenerated. • Destroy target artifact.
+oracle=Choose one —\n• Return target permanent to its owner's hand.\n• Destroy target nonblack creature. It can't be regenerated.\n• Destroy target artifact.

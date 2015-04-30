@@ -8,4 +8,4 @@ subtype=Goblin,Berserker
 cost={1}{R}
 pt=2/1
 timing=main
-oracle=First strike. Riot Piker attacks each turn if able.
+oracle=First strike\nRiot Piker attacks each turn if able.

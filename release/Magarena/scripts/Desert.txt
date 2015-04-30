@@ -7,4 +7,4 @@ subtype=Desert
 ability={T}: Add {1} to your mana pool.;\
         {T}: SN deals 1 damage to target attacking creature. Activate this ability only during the end of combat step.
 timing=land
-oracle={T}: Add {1} to your mana pool. {T}: Desert deals 1 damage to target attacking creature. Activate this ability only during the end of combat step.
+oracle={T}: Add {1} to your mana pool.\n{T}: Desert deals 1 damage to target attacking creature. Activate this ability only during the end of combat step.

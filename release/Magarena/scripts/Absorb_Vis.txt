@@ -7,4 +7,4 @@ cost={6}{B}
 ability=Basic landcycling {1}{B}
 effect=Target player loses 4 life and you gain 4 life.
 timing=main
-oracle=Target player loses 4 life and you gain 4 life. Basic landcycling {1}{B}
+oracle=Target player loses 4 life and you gain 4 life.\nBasic landcycling {1}{B}

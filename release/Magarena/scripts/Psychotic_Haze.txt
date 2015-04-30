@@ -7,4 +7,4 @@ cost={2}{B}{B}
 effect=SN deals 1 damage to each creature and each player.
 ability=Madness {1}{B}
 timing=removal
-oracle=Psychotic Haze deals 1 damage to each creature and each player. Madness {1}{B}
+oracle=Psychotic Haze deals 1 damage to each creature and each player.\nMadness {1}{B}

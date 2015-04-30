@@ -8,4 +8,4 @@ cost={1}{R}
 pt=1/1
 timing=main
 ability=SN can't block.;flying
-oracle=Flying. Kyren Glider can't block.
+oracle=Flying\nKyren Glider can't block.

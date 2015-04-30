@@ -9,4 +9,4 @@ pt=3/3
 ability=Vigilance;\
         {2}{R}: Creatures you control get +1/+0 until end of turn.
 timing=main
-oracle=Vigilance. {2}{R}: Creatures you control get +1/+0 until end of turn.
+oracle=Vigilance\n{2}{R}: Creatures you control get +1/+0 until end of turn.

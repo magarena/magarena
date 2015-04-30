@@ -8,4 +8,4 @@ cost={2}{U}
 ability=Enchanted creature doesn't untap during its controller's untap step.
 timing=aura
 enchant=can't attack or block,neg tapped creature
-oracle=Enchant tapped creature. Enchanted creature doesn't untap during its controller's untap step.
+oracle=Enchant tapped creature\nEnchanted creature doesn't untap during its controller's untap step.

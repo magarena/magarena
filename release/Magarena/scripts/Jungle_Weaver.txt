@@ -8,4 +8,4 @@ cost={5}{G}{G}
 pt=5/6
 ability=reach;cycling {2}
 timing=main
-oracle=Reach. Cycling {2}
+oracle=Reach\nCycling {2}

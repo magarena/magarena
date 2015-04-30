@@ -9,4 +9,4 @@ pt=2/1
 ability=first strike
 timing=fmain
 requires_groovy_code
-oracle=First strike. Sacrifice Vampire Hexmage: Remove all counters from target permanent.
+oracle=First strike\nSacrifice Vampire Hexmage: Remove all counters from target permanent.

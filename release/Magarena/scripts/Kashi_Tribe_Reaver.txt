@@ -9,4 +9,4 @@ pt=3/2
 ability=Whenever SN deals combat damage to a creature, tap that creature and it doesn't untap during its controller's next untap step.;\
         {1}{G}: Regenerate SN.
 timing=main
-oracle=Whenever Kashi-Tribe Reaver deals combat damage to a creature, tap that creature and it doesn't untap during its controller's next untap step. {1}{G}: Regenerate Kashi-Tribe Reaver.
+oracle=Whenever Kashi-Tribe Reaver deals combat damage to a creature, tap that creature and it doesn't untap during its controller's next untap step.\n{1}{G}: Regenerate Kashi-Tribe Reaver.

@@ -8,4 +8,4 @@ subtype=Spider
 cost={4}{G}{G}
 pt=3/4
 timing=flash
-oracle=Flash. Reach
+oracle=Flash\nReach

@@ -11,4 +11,4 @@ given_subtype=Treefolk
 given_color=g
 set_pt=5/6
 timing=enchantment
-oracle=Enchant land. Enchanted land is a 5/6 green Treefolk creature that's still a land.
+oracle=Enchant land\nEnchanted land is a 5/6 green Treefolk creature that's still a land.

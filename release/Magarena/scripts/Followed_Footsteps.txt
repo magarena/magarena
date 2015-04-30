@@ -8,4 +8,4 @@ cost={3}{U}{U}
 timing=aura
 enchant=copy,creature
 requires_groovy_code
-oracle=Enchant creature. At the beginning of your upkeep, put a token that's a copy of enchanted creature onto the battlefield.
+oracle=Enchant creature\nAt the beginning of your upkeep, put a token that's a copy of enchanted creature onto the battlefield.

@@ -7,4 +7,4 @@ cost={U}
 effect=Counter target instant or sorcery spell unless its controller pays {1}.
 ability=storm
 timing=counter
-oracle=Counter target instant or sorcery spell unless its controller pays {1}. Storm
+oracle=Counter target instant or sorcery spell unless its controller pays {1}.\nStorm

@@ -10,4 +10,4 @@ ability=Flying;\
         First strike
 timing=main
 requires_groovy_code
-oracle=Flying. First strike. At the beginning of your upkeep, you may sacrifice an artifact. If you don't, tap Yawgmoth Demon and it deals 2 damage to you.
+oracle=Flying\nFirst strike\nAt the beginning of your upkeep, you may sacrifice an artifact. If you don't, tap Yawgmoth Demon and it deals 2 damage to you.

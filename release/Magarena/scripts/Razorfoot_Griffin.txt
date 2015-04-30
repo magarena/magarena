@@ -8,4 +8,4 @@ subtype=Griffin
 cost={3}{W}
 pt=2/2
 timing=main
-oracle=Flying. First strike
+oracle=Flying\nFirst strike

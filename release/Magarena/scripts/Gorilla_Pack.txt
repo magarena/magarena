@@ -9,4 +9,4 @@ pt=3/3
 ability=SN can't attack unless defending player controls a Forest.
 timing=main
 requires_groovy_code
-oracle=Gorilla Pack can't attack unless defending player controls a Forest. When you control no Forests, sacrifice Gorilla Pack.
+oracle=Gorilla Pack can't attack unless defending player controls a Forest.\nWhen you control no Forests, sacrifice Gorilla Pack.

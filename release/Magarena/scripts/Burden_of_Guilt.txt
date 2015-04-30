@@ -9,4 +9,4 @@ cost={W}
 ability={1}: Tap enchanted creature.
 timing=tapping
 enchant=tap,neg creature
-oracle=Enchant creature. {1}: Tap enchanted creature.
+oracle=Enchant creature\n{1}: Tap enchanted creature.

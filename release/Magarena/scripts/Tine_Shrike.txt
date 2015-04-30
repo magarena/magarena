@@ -8,4 +8,4 @@ subtype=Bird
 cost={3}{W}
 pt=2/1
 timing=main
-oracle=Flying. Infect
+oracle=Flying\nInfect

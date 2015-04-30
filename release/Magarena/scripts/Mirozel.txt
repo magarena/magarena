@@ -9,4 +9,4 @@ pt=2/3
 ability=Flying;\
         When SN becomes the target of a spell or ability, return SN to its owner's hand.
 timing=main
-oracle=Flying. When Mirozel becomes the target of a spell or ability, return Mirozel to its owner's hand.
+oracle=Flying\nWhen Mirozel becomes the target of a spell or ability, return Mirozel to its owner's hand.

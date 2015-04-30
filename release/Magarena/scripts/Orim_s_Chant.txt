@@ -7,4 +7,4 @@ cost={W}
 ability=Kicker {W}
 timing=tapping
 requires_groovy_code
-oracle=Kicker {W}. Target player can't cast spells this turn. If Orim's Chant was kicked, creatures can't attack this turn.
+oracle=Kicker {W}\nTarget player can't cast spells this turn.\nIf Orim's Chant was kicked, creatures can't attack this turn.

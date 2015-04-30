@@ -9,4 +9,4 @@ pt=2/2
 ability=level up {R} 8
 timing=main
 requires_groovy_code
-oracle=Level up {R}. LEVEL 4-7. 4/4. Flying. LEVEL 8+. 8/8. Flying, trample. {R}: Kargan Dragonlord gets +1/+0 until end of turn.
+oracle=Level up {R}\nLEVEL 4-7\n4/4\nFlying\nLEVEL 8+\n8/8\nFlying, trample\n{R}: Kargan Dragonlord gets +1/+0 until end of turn.

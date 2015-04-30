@@ -9,4 +9,4 @@ pt=3/3
 ability=flying
 timing=main
 requires_groovy_code
-oracle=Flying. When Avenging Angel dies, you may put it on top of its owner's library.
+oracle=Flying\nWhen Avenging Angel dies, you may put it on top of its owner's library.

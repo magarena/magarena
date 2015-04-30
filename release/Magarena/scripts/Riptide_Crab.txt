@@ -9,4 +9,4 @@ pt=1/3
 ability=vigilance;\
         When SN dies, draw a card.
 timing=main
-oracle=Vigilance. When Riptide Crab dies, draw a card.
+oracle=Vigilance\nWhen Riptide Crab dies, draw a card.

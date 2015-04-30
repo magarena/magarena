@@ -9,4 +9,4 @@ pt=7/4
 ability=Trample;\
         Morph {4}{G}{G}{G}
 timing=main
-oracle=Trample. Morph {4}{G}{G}{G}
+oracle=Trample\nMorph {4}{G}{G}{G}

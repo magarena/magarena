@@ -10,4 +10,4 @@ ability=Flash;\
         When SN enters the battlefield, counter target activated ability.;\
         Whenever you cast a spell, you may return SN to its owner's hand.
 timing=main
-oracle=Flash. When Voidmage Husher enters the battlefield, counter target activated ability. Whenever you cast a spell, you may return Voidmage Husher to its owner's hand.
+oracle=Flash\nWhen Voidmage Husher enters the battlefield, counter target activated ability.\nWhenever you cast a spell, you may return Voidmage Husher to its owner's hand.

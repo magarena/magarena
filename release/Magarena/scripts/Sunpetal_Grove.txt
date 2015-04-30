@@ -7,4 +7,4 @@ mana=g3w3
 ability={T}: Add {G} or {W} to your mana pool.;\
         SN enters the battlefield tapped unless you control a Forest or a Plains.
 timing=land
-oracle=Sunpetal Grove enters the battlefield tapped unless you control a Forest or a Plains. {T}: Add {G} or {W} to your mana pool.
+oracle=Sunpetal Grove enters the battlefield tapped unless you control a Forest or a Plains.\n{T}: Add {G} or {W} to your mana pool.

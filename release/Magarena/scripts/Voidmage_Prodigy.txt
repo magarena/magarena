@@ -9,4 +9,4 @@ pt=2/1
 ability={U}{U}, Sacrifice a Wizard: Counter target spell.;\
         Morph {U}
 timing=main
-oracle={U}{U}, Sacrifice a Wizard: Counter target spell. Morph {U}
+oracle={U}{U}, Sacrifice a Wizard: Counter target spell.\nMorph {U}

@@ -10,4 +10,4 @@ ability=Double strike;\
         Whenever SN enters the battlefield, another target Warrior creature you control gains double strike until end of turn.;\
         Whenever SN attacks, another target Warrior creature you control gains double strike until end of turn.
 timing=main
-oracle=Double strike. Whenever Arashin Foremost enters the battlefield or attacks, another target Warrior creature you control gains double strike until end of turn.
+oracle=Double strike\nWhenever Arashin Foremost enters the battlefield or attacks, another target Warrior creature you control gains double strike until end of turn.

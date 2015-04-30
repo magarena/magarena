@@ -9,4 +9,4 @@ pt=3/3
 ability=Flying;\
         Whenever you cast a Spirit or Arcane spell, you may tap or untap target creature.
 timing=main
-oracle=Flying. Whenever you cast a Spirit or Arcane spell, you may tap or untap target creature.
+oracle=Flying\nWhenever you cast a Spirit or Arcane spell, you may tap or untap target creature.

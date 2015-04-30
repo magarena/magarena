@@ -7,4 +7,4 @@ cost={4}{R}
 effect=Destroy target artifact or land.
 ability=cycling {2}
 timing=main
-oracle=Destroy target artifact or land. Cycling {2}
+oracle=Destroy target artifact or land.\nCycling {2}

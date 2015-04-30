@@ -7,4 +7,4 @@ cost={X}{X}{W}{W}{W}
 timing=main
 ability=miracle {X}{W}{W}
 requires_groovy_code
-oracle=Put X 4/4 white Angel creature tokens with flying onto the battlefield. Miracle {X}{W}{W}
+oracle=Put X 4/4 white Angel creature tokens with flying onto the battlefield.\nMiracle {X}{W}{W}

@@ -9,4 +9,4 @@ pt=5/5
 ability=flying;{1}{R}: SN gets +1/+0 until end of turn.
 timing=main
 requires_groovy_code
-oracle=Flying. {1}{R}: Mordant Dragon gets +1/+0 until end of turn. Whenever Mordant Dragon deals combat damage to a player, you may have it deal that much damage to target creature that player controls.
+oracle=Flying\n{1}{R}: Mordant Dragon gets +1/+0 until end of turn.\nWhenever Mordant Dragon deals combat damage to a player, you may have it deal that much damage to target creature that player controls.

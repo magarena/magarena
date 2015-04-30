@@ -10,4 +10,4 @@ ability=Flying;\
         When SN enters the battlefield, destroy target enchantment.;\
         {W}: Target permanent becomes white until end of turn.
 timing=main
-oracle=Flying. When Cloudchaser Kestrel enters the battlefield, destroy target enchantment. {W}: Target permanent becomes white until end of turn.
+oracle=Flying\nWhen Cloudchaser Kestrel enters the battlefield, destroy target enchantment.\n{W}: Target permanent becomes white until end of turn.

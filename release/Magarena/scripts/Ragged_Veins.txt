@@ -9,4 +9,4 @@ ability=Flash
 timing=pumpFlash
 enchant=toughness,neg creature
 requires_groovy_code
-oracle=Flash. Enchant creature. Whenever enchanted creature is dealt damage, its controller loses that much life.
+oracle=Flash\nEnchant creature\nWhenever enchanted creature is dealt damage, its controller loses that much life.

@@ -9,4 +9,4 @@ pt=4/4
 ability=flying
 timing=main
 requires_groovy_code
-oracle=Flying. Whenever another creature dies, you may draw a card. If you do, discard a card.
+oracle=Flying\nWhenever another creature dies, you may draw a card. If you do, discard a card.

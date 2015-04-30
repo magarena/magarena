@@ -10,4 +10,4 @@ ability=Flying;\
         Morph {2}{U}
 timing=main
 requires_groovy_code
-oracle=Flying. Morph {2}{U}. When Maelstrom Djinn is turned face up, put two time counters on it and it gains vanishing.
+oracle=Flying\nMorph {2}{U}\nWhen Maelstrom Djinn is turned face up, put two time counters on it and it gains vanishing.

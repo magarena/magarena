@@ -9,4 +9,4 @@ pt=0/7
 ability=Defender
 timing=main
 requires_groovy_code
-oracle=Defender. Whenever Wall of Junk blocks, return it to its owner's hand at end of combat.
+oracle=Defender\nWhen Wall of Junk blocks, return it to its owner's hand at end of combat.

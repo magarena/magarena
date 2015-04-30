@@ -9,4 +9,4 @@ pt=5/5
 ability=When SN enters the battlefield, sacrifice a creature.;\
         SN can't be blocked by Saprolings.
 timing=main
-oracle=When Vindictive Mob enters the battlefield, sacrifice a creature. Vindictive Mob can't be blocked by Saprolings.
+oracle=When Vindictive Mob enters the battlefield, sacrifice a creature.\nVindictive Mob can't be blocked by Saprolings.

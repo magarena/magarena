@@ -9,4 +9,4 @@ pt=1/3
 ability=Whenever SN deals combat damage to a player, you may draw a card.
 timing=main
 requires_groovy_code=Serpentine Basilisk
-oracle=Whenever Ohran Viper deals combat damage to a creature, destroy that creature at end of combat. Whenever Ohran Viper deals combat damage to a player, you may draw a card.
+oracle=Whenever Ohran Viper deals combat damage to a creature, destroy that creature at end of combat.\nWhenever Ohran Viper deals combat damage to a player, you may draw a card.

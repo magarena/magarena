@@ -9,4 +9,4 @@ pt=2/4
 ability=fading 4;\
         Remove a fade counter from SN: Prevent the next 2 damage that would be dealt to target creature or player this turn.
 timing=main
-oracle=Fading 4. Remove a fade counter from Defender en-Vec: Prevent the next 2 damage that would be dealt to target creature or player this turn.
+oracle=Fading 4\nRemove a fade counter from Defender en-Vec: Prevent the next 2 damage that would be dealt to target creature or player this turn.

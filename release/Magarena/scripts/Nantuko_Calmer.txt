@@ -9,4 +9,4 @@ pt=2/3
 ability={G},{T},Sacrifice SN:Destroy target enchantment.;\
         SN gets +1/+1 as long as seven or more cards are in your graveyard.
 timing=main
-oracle={G}, {T}, Sacrifice Nantuko Calmer: Destroy target enchantment. Threshold — Nantuko Calmer gets +1/+1 as long as seven or more cards are in your graveyard.
+oracle={G}, {T}, Sacrifice Nantuko Calmer: Destroy target enchantment.\nThreshold — Nantuko Calmer gets +1/+1 as long as seven or more cards are in your graveyard.

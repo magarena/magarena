@@ -9,4 +9,4 @@ pt=6/6
 ability=flying;\
         At the beginning of each end step, if a creature died this turn, destroy target non-Demon creature.
 timing=main
-oracle=Flying. Morbid — At the beginning of each end step, if a creature died this turn, destroy target non-Demon creature.
+oracle=Flying\nMorbid — At the beginning of each end step, if a creature died this turn, destroy target non-Demon creature.

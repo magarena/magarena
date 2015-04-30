@@ -9,4 +9,4 @@ pt=2/3
 ability={B}, Discard a card: Regenerate SN.;\
         As long as seven or more cards are in your graveyard, SN gets +2/+2 and can't block.
 timing=main
-oracle={B}, Discard a card: Regenerate Dirty Wererat. Threshold — As long as seven or more cards are in your graveyard, Dirty Wererat gets +2/+2 and can't block.
+oracle={B}, Discard a card: Regenerate Dirty Wererat.\nThreshold — As long as seven or more cards are in your graveyard, Dirty Wererat gets +2/+2 and can't block.

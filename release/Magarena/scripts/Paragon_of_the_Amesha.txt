@@ -9,4 +9,4 @@ pt=2/2
 ability=First strike;\
         {W}{U}{B}{R}{G}: Until end of turn, SN becomes an Angel.~SN gets +3/+3 and gains flying and lifelink until end of turn.
 timing=main
-oracle=First strike. {W}{U}{B}{R}{G}: Until end of turn, Paragon of the Amesha becomes an Angel, gets +3/+3, and gains flying and lifelink.
+oracle=First strike\n{W}{U}{B}{R}{G}: Until end of turn, Paragon of the Amesha becomes an Angel, gets +3/+3, and gains flying and lifelink.

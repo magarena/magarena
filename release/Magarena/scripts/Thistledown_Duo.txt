@@ -9,4 +9,4 @@ pt=2/2
 ability=Whenever you cast a white spell, SN gets +1/+1 until end of turn.;\
         Whenever you cast a blue spell, SN gains flying until end of turn.
 timing=main
-oracle=Whenever you cast a white spell, Thistledown Duo gets +1/+1 until end of turn. Whenever you cast a blue spell, Thistledown Duo gains flying until end of turn.
+oracle=Whenever you cast a white spell, Thistledown Duo gets +1/+1 until end of turn.\nWhenever you cast a blue spell, Thistledown Duo gains flying until end of turn.

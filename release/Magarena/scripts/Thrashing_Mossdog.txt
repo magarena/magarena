@@ -9,4 +9,4 @@ pt=3/3
 ability=Reach;\
         Scavenge {4}{G}{G}
 timing=main
-oracle=Reach. Scavenge {4}{G}{G}
+oracle=Reach\nScavenge {4}{G}{G}

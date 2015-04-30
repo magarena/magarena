@@ -8,4 +8,4 @@ cost={1}{W}
 timing=aura
 enchant=can't attack,neg creature
 requires_groovy_code=Defang
-oracle=Enchant creature. Prevent all damage that would be dealt by enchanted creature.
+oracle=Enchant creature\nPrevent all damage that would be dealt by enchanted creature.
