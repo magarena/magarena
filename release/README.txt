@@ -75,25 +75,31 @@ melvin
 Mike
 PalladiaMors
 ShawnieBoy
-    
-    triggers go on stack after state-based-actions are checked, fixes issue #209
-    remove DeckStrengthViewer
-    show id of give face down creatures/spells a unique name so name filter works
-    rename getDuelFile() to getLatestDuelFile() and actual duel file to "latest.duel".
 
-    Restore selected deck type and deck name on opening DeckChooserDialog.
+- triggers go on stack after state-based-actions are checked, fixes issue #209
+
+- remove DeckStrengthViewer
+ 
+- show id of give face down creatures/spells a unique name so name filter works
+  
+- rename getDuelFile() to getLatestDuelFile() and actual duel file to "latest.duel".
+
+- Restore selected deck type and deck name on opening DeckChooserDialog.
     
-    support 'reveal the top [amount] cards of your library. Put all [cards] revealed this way into your hand and the rest on the bottom of your library in any order.'
-    support 'Whenever an opponent draws a card, <effect>' and 'Whenever a player draws a card, <effect>'
-    support 'At the beginning of your draw step, <effect>'
-    support 'At the beginning of each other player's draw step, <effect>'
-    becomes
-    only allow AI to animate if not excluded from combat
-    support "Whenever SN blocks or becomes blocked by a [permanent], <effect>"
-    support effect 'Destroy RN.' 'Destroy RN at end of combat.'
-    support 'return rn to its owner's hand at end of combat.'
-    support 'whenever a [creature] attacks or blocks, <effect>'
-    support 'Whenever a [creature] blocks, [effect]'
+- added the following to the card script:
+  * effect: Reveal the top <amount> cards of your library. Put all <cards> revealed this way into your hand and the rest on the bottom of your library in any order.
+  * ability: Whenever an opponent draws a card, <effect>
+  * ability: Whenever a player draws a card, <effect>
+  * ability: At the beginning of your draw step, [effect]
+  * ability: At the beginning of each other player's draw step, [effect]
+  * effect: SN becomes
+  * ability: Whenever SN blocks or becomes blocked by a <permanent>, <effect>
+  * effect: Destroy that <permanent>. 
+  * effect: Destroy that <permanent> at end of combat.
+  * effect: Return that <permanent> to its owner's hand at end of combat.
+  * ability: Whenever a <creature> attacks or blocks, <effect>
+  * ability: Whenever a <creature> blocks, <effect>
+    
     support ability 'whenever a [creature] attacks you, [effect]'
     add 'during the end of combat step' condition
     add ability '[costs]: Return SN from your graveyard to your hand.'
@@ -118,6 +124,7 @@ ShawnieBoy
     add ability 'when [permanent] deals combat damage to an opponent, [effect]' and 
     'when [permanent] becomes the target of [spell/ability], [effect]
     
+- fixed the following bugs:
     reveal face down creature when it leaves the battlefield
     Catch error on resume duel if player deck invalid (fixes #220).
     fix #219 Ancient Grudge was targeting artifact or enchantment
@@ -148,17 +155,18 @@ ShawnieBoy
 - added the following cards:
 Abzan Beastmaster, Acid-Spewer Dragon, Ambuscade Shaman,
 Angel of the Dire Hour, Arashin Foremost, Ashcloud Phoenix,
-Atarka Monument, Avatar of the Resolute, Battle-Rattle Shaman,
+Atarka Monument, Avatar of the Resolute, Balance, Battle-Rattle Shaman,
 Belltoll Dragon, Bloodsoaked Champion, Bottle of Suleiman,
 Breaching Leviathan, Briar Patch, Celestial Crusader, Ceremonial Guard,
-Chaotic Goo, Charmed Griffin, Cinder Wall, Coffin Puppets, Creepy Doll,
-Crushing Pain, Deathbringer Regent, Dragon Whisperer, Dread Cacodemon,
-Dromoka Monument, Ensouled Scimitar, Entangling Trap, Eternal Dragon,
-Faerie Noble, Fatal Blow, Fatestitcher, Final-Sting Faerie,
-Fire Juggler, Firewing Phoenix, Flamespeaker Adept, Flowstone Salamander,
-Full Moon's Rise, Furnace Dragon, Furystoke Giant, Gangrenous Goliath,
-Ghoulcaller's Bell, Gift of Estates, Glory, Goblin Bomb,
-Godo's Irregulars, Grafted Skullcap, Grim Poppet, Guardian Shield-Bearer,
+Chaotic Goo, Charmed Griffin, Cinder Wall, Coffin Puppets,
+Creepy Doll, Crushing Pain, Deathbringer Regent, Denizen of the Deep,
+Dragon Whisperer, Dread Cacodemon, Dromoka Monument, Ensouled Scimitar,
+Entangling Trap, Eternal Dragon, Faerie Noble, Fatal Blow, Fatestitcher,
+Final-Sting Faerie, Fire Juggler, Firewing Phoenix, Flamespeaker Adept,
+Flowstone Salamander, Full Moon's Rise, Furnace Dragon,
+Furystoke Giant, Gangrenous Goliath, Ghoulcaller's Bell,
+Gift of Estates, Glory, Goblin Bomb, Godo's Irregulars,
+Grafted Skullcap, Grim Poppet, Guardian Shield-Bearer,
 Hammer of Bogardan, Hand of Emrakul, Harbinger of the Hunt,
 Heart-Piercer Bow, Herdchaser Dragon, High Sentinels of Arashin,
 Hooded Assassin, Hypnox, Icefeather Aven, Incandescent Soulstoke,
@@ -222,7 +230,7 @@ ShawnieBoy
 - support Dragons of Tarkir in Card Explorer
 
 - added the following to the card script:
-  * cost: Exile [amount] [cards]
+  * cost: Exile <amount> <cards>
   * condition: creatures you control have total power 8 or greater
   * condition: SN is an Enchantment
   * ability: exploit
