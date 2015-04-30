@@ -76,15 +76,16 @@ Mike
 PalladiaMors
 ShawnieBoy
 
-- triggers go on stack after state-based-actions are checked, fixes issue #209
+- triggers go on stack after state-based-actions are checked, previously they
+  go on the stack immediately when they are triggered
 
-- remove DeckStrengthViewer
- 
-- show id of give face down creatures/spells a unique name so name filter works
-  
-- rename getDuelFile() to getLatestDuelFile() and actual duel file to "latest.duel".
+- give nameless permanents/spells a unique id to improve clarity of stack/log messages
 
-- Restore selected deck type and deck name on opening DeckChooserDialog.
+- rename save file for an onging duel to latest.duel due to change in format
+
+- restore selected deck type and deck name on opening deck chooser dialog
+
+- removed deck strength calculator
     
 - added the following to the card script:
   * ability: Whenever an opponent draws a card, <effect>
