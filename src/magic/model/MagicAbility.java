@@ -20,7 +20,8 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public enum MagicAbility {
-  
+
+    // intrinsic abilities (implemented directly in the game engine)
     AttacksEachTurnIfAble("(SN )?attack(s)? each (turn|combat) if able(\\.)?",-10),
     CannotBlock("(SN )?can't block(\\.)?",-50),
     CannotAttack("(SN )?can't attack(\\.)?",-50),
@@ -76,6 +77,7 @@ public enum MagicAbility {
     ProtectionFromColoredSpells("protection from colored spells",100),
     ProtectionFromEverything("protection from everything",200),
 
+    // generalize intrinsic abilities (store a filter inside a trigger)
     ProtectionFromPermanent("protection from " + ARG.WORDRUN + "(\\.)?", 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicProtectionTrigger.create(
@@ -97,6 +99,8 @@ public enum MagicAbility {
             ));
         }
     },
+
+    // keyword abilities
     Undying("undying",60) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicUndyingTrigger.create());
@@ -432,6 +436,7 @@ public enum MagicAbility {
         }
     },
     
+    // abilities that involve SN
     ShockLand("As SN enters the battlefield, you may pay 2 life\\. If you don't, SN enters the battlefield tapped\\.", -10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicRavnicaLandTrigger.create());
@@ -719,6 +724,7 @@ public enum MagicAbility {
         }
     },
     
+    // triggered abilities
     AnyAttacksEffect("When(ever)? " + ARG.WORDRUN + " attacks, " + ARG.EFFECT, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicWhenAttacksTrigger.create(
@@ -1067,6 +1073,7 @@ public enum MagicAbility {
             card.add(MagicStatic.ControlEnchanted);
         }
     },
+
 /*  
     EnchantDual("Enchant " + ARG.WORD1 + " or "+ ARG.WORD2, 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
@@ -1080,6 +1087,8 @@ public enum MagicAbility {
     },
     //Cannot implement target pickers
 */
+
+    // activated card abilities
     CardAbility(".*Discard SN:.*", 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicCardAbilityActivation.create(arg.group(), MagicLocationType.OwnersHand));
@@ -1095,6 +1104,8 @@ public enum MagicAbility {
             card.add(MagicCardAbilityActivation.create(arg.group(), MagicLocationType.Graveyard));
         }
     },
+
+    // mana abilities
     SacAddMana("Sacrifice SN: Add " + ARG.MANA + " to your mana pool\\.",10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final List<MagicManaType> manatype = MagicManaType.getList(ARG.mana(arg));
@@ -1119,11 +1130,15 @@ public enum MagicAbility {
             card.add(MagicManaActivation.create(ARG.cost(arg) + ", " + ARG.effect(arg), manatype));
         }
     },
+
+    // activated permanent abilities
     ActivatedAbility("[^\"]+:(?! Add)" + ARG.ANY, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicPermanentActivation.create(arg.group()));
         }
     },
+
+    // static ability
     ConditionPumpGainGroup("As long as " + ARG.WORDRUN + ", " + ARG.WORDRUN2 + " get " + ARG.PT + " and " + ARG.ANY + "\\.", 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final int[] pt = ARG.pt(arg);
