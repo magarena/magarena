@@ -49,10 +49,10 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
     
     @Override
     public final boolean canPlay(final MagicGame game, final MagicPlayer player, final MagicPermanent source, final boolean useHints) {
-        final boolean superCanPlay = super.canPlay(game, player, source, useHints);
+        boolean canPlay = super.canPlay(game, player, source, useHints);
        
         // More complex check that first executes events without choice, then check conditions of the others
-        if (superCanPlay && source.producesMana()) {
+        if (canPlay && source.producesMana()) {
             game.snapshot();
             for (final MagicEvent event : getCostEvent(source)) {
                 if (event.hasChoice() == false) {
@@ -60,19 +60,15 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
                 }
             }
             for (final MagicEvent event : getCostEvent(source)) {
-                if (event.hasChoice() == true) {
-                    for (final MagicCondition condition : event.getConditions()) {
-                        if (!condition.accept(source)) {
-                            game.restore();
-                            return false;
-                        }
-                    }
+                if (event.hasChoice() == true && event.isSatisfied() == false) {
+                    canPlay = false;
+                    break;
                 }
             }
             game.restore();
         }
 
-        return superCanPlay;
+        return canPlay;
     }
 
     @Override
