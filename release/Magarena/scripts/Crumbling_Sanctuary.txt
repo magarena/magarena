@@ -4,6 +4,6 @@ value=2.500
 rarity=R
 type=Artifact
 cost={5}
-ability=If damage would be dealt to a player, that player exiles that many cards from the top of his or her library instead.
 timing=artifact
+requires_groovy_code
 oracle=If damage would be dealt to a player, that player exiles that many cards from the top of his or her library instead.

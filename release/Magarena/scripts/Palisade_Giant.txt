@@ -6,6 +6,6 @@ type=Creature
 subtype=Giant,Soldier
 cost={4}{W}{W}
 pt=2/7
-ability=All damage that would be dealt to you or another permanent you control is dealt to SN instead.
 timing=main
+requires_groovy_code
 oracle=All damage that would be dealt to you or another permanent you control is dealt to Palisade Giant instead.
