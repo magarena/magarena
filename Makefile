@@ -795,3 +795,6 @@ fix_indentation:
 update_card_property:
 	ls -1 replace/* | parallel -q sed -i 's/\([^=]*\)=\(.*\)/s|\1=.*|\1=\2|/;s/\\/\\\\/g'
 	ls -1 release/Magarena/scripts/*.txt | parallel -q sed -i -f replace/{/} {}
+
+sims_count:
+	grep "sims=[0-9]*" -r 14* -o -h | sed 's/sims=//' | sort -n | histogram.py -x 800 > $@
