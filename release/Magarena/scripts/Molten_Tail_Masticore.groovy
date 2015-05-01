@@ -1,7 +1,3 @@
-def choice = new MagicTargetChoice("a creature card from your graveyard");
-
-def EFFECT = MagicRuleEventAction.create("SN deals 4 damage to target creature or player.");
-
 [
     new MagicAtYourUpkeepTrigger() {
         @Override
