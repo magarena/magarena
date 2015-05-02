@@ -1,10 +1,13 @@
 def action = {
     final MagicGame game, final MagicEvent event ->
-    game.doAction(new SacrificeAction(event.getPermanent()));
-    game.doAction(new PlayTokenAction(
-        event.getPlayer(), 
-        TokenCardDefinitions.get("legendary 20/20 black Avatar creature token with flying and indestructible named Marit Lage")
-    ));
+    final SacrificeAction sac = new SacrificeAction(event.getPermanent())
+    game.doAction(sac);
+    if (sac.isValid()) {
+        game.doAction(new PlayTokenAction(
+            event.getPlayer(), 
+            TokenCardDefinitions.get("legendary 20/20 black Avatar creature token with flying and indestructible named Marit Lage")
+        ));
+    }
 }
 
 [
@@ -18,7 +21,7 @@ def action = {
             game.doAction(new PutStateTriggerOnStackAction(new MagicEvent(
                 source,
                 action,
-                "Sacrifice SN and put a legendary 20/20 black Avatar creature token with flying and indestructible named Marit Lage onto the battlefield."
+                "Sacrifice SN. If you do, put a legendary 20/20 black Avatar creature token with flying and indestructible named Marit Lage onto the battlefield."
             )));
         }
     }
