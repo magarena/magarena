@@ -20,6 +20,15 @@ import magic.model.target.MagicOtherPermanentTargetFilter;
 
 public class MagicConditionFactory {
     
+    public static MagicCondition CounterAtMost(final MagicCounterType counterType, final int n) {
+        return new MagicCondition() {
+            public boolean accept(final MagicSource source) {
+                final MagicPermanent permanent = (MagicPermanent)source;
+                return permanent.getCounters(counterType) <= n;
+            }
+        };
+    }
+    
     public static MagicCondition CounterAtLeast(final MagicCounterType counterType, final int n) {
         return new MagicCondition() {
             public boolean accept(final MagicSource source) {

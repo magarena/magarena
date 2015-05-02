@@ -87,6 +87,13 @@ public enum MagicConditionParser {
             return MagicCondition.OPPONENT_HELLBENT;
         }
     },
+    CountersAtMost("(SN|it) has " + ARG.AMOUNT + " or fewer " + ARG.WORD1 + " counters on (it|him)") {
+        public MagicCondition toCondition(final Matcher arg) {
+            final int amount = ARG.amount(arg);
+            final MagicCounterType counterType = MagicCounterType.getCounterRaw(ARG.word1(arg));
+            return MagicConditionFactory.CounterAtMost(counterType, amount);
+        }
+    },
     CountersAtLeast("(SN|it) has " + ARG.AMOUNT + " or more " + ARG.WORD1 + " counters on it") {
         public MagicCondition toCondition(final Matcher arg) {
             final int amount = ARG.amount(arg);
