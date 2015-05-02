@@ -14,8 +14,8 @@ public class PutStateTriggerOnStackAction extends MagicAction {
 
     @Override
     public void doAction(final MagicGame game) {
-        if (game.getStack().hasItem(event.getSource(), event.getChoiceDescription()) == false) {
-            game.doAction(new PutItemOnStackAction(new MagicTriggerOnStack(event)));
+        if (game.hasItem(event.getSource(), event.getChoiceDescription()) == false) {
+            game.doAction(new EnqueueTriggerAction(event));
         }
     }
 

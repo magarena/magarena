@@ -991,6 +991,10 @@ public class MagicGame {
         return pendingStack;
     }
 
+    public boolean hasItem(final MagicSource source, final String desc) {
+       return stack.hasItem(source, desc) || pendingStack.hasItem(source, desc);
+    }
+
     public void setPriorityPassed(final boolean passed) {
         priorityPassed=passed;
     }
