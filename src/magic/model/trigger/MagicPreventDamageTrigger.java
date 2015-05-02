@@ -162,4 +162,19 @@ public abstract class MagicPreventDamageTrigger extends MagicIfDamageWouldBeDeal
             }
         };
     }
+    
+    // prevent all combat damage that would be dealt to [permanent]
+    public static final MagicPreventDamageTrigger PreventCombatDamageDealtTo(final MagicTargetFilter<MagicPermanent> filter) {
+        return new MagicPreventDamageTrigger() {
+            @Override
+            public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
+                if (damage.isCombat() &&
+                    damage.getTarget().isPermanent() &&
+                    filter.accept(permanent, permanent.getController(), damage.getTargetPermanent())) {
+                    damage.prevent();
+                }
+                return MagicEvent.NONE;
+            }
+        };
+    }
 }
