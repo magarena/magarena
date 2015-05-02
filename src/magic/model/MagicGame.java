@@ -580,7 +580,7 @@ public class MagicGame {
         // add Soulbond trigger here
         triggers = new MagicPermanentTriggerMap(additionalTriggers);
         triggers.add(new MagicPermanentTrigger(0, MagicPermanent.NONE, MagicWhenOtherComesIntoPlayTrigger.Soulbond));
-        triggers.add(new MagicPermanentTrigger(0, MagicPermanent.NONE, MagicPreventDamageTrigger.GlobalPreventDamageToTarget));
+        triggers.add(new MagicPermanentTrigger(Long.MAX_VALUE, MagicPermanent.NONE, MagicPreventDamageTrigger.GlobalPreventDamageToTarget));
 
         for (final MagicPlayer player : players) {
         for (final MagicPermanent perm : player.getPermanents()) {
