@@ -1,19 +1,21 @@
 [
-    new MagicPreventDamageTrigger() {
+    new MagicIfDamageWouldBeDealtTrigger(MagicTrigger.REPLACE_DAMAGE) {
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicDamage damage) {
+            int amt = 0;
+
             if (damage.isCombat() && damage.getTarget() == permanent) {
-                final int amt = damage.getAmount();
-                // Prevention effect
-                damage.prevent();
-                return new MagicEvent(
+                amt = damage.prevent();
+            }
+
+            return amt > 0 ?
+                new MagicEvent(
                     permanent,
                     amt,
                     this,
                     "Exile RN cards from the top of your library."
-                );
-            }
-            return MagicEvent.NONE;
+                ):
+                MagicEvent.NONE;
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
