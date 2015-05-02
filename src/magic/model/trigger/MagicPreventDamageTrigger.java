@@ -6,6 +6,7 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.event.MagicEvent;
 import magic.model.target.MagicTarget;
+import magic.model.target.MagicTargetFilter;
 import magic.model.action.PreventDamageAction;
 
 public abstract class MagicPreventDamageTrigger extends MagicIfDamageWouldBeDealtTrigger {
@@ -141,6 +142,20 @@ public abstract class MagicPreventDamageTrigger extends MagicIfDamageWouldBeDeal
                 if (damage.isCombat() && 
                     damage.getTarget().isPlayer() && 
                     damage.getTarget().getController().getId() == player.getId()) {
+                    damage.prevent();
+                }
+                return MagicEvent.NONE;
+            }
+        };
+    }
+    
+    // prevent all damage that would be dealt to [permanent]
+    public static final MagicPreventDamageTrigger PreventDamageDealtTo(final MagicTargetFilter<MagicPermanent> filter) {
+        return new MagicPreventDamageTrigger() {
+            @Override
+            public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
+                if (damage.getTarget().isPermanent() &&
+                    filter.accept(permanent, permanent.getController(), damage.getTargetPermanent())) {
                     damage.prevent();
                 }
                 return MagicEvent.NONE;

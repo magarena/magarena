@@ -1147,6 +1147,12 @@ public enum MagicAbility {
     },
 
     // static ability
+    PreventDamageDealtTo("prevent all damage that would be dealt to " + ARG.WORDRUN + "\\.", 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.Permanent(ARG.wordrun(arg));
+            card.add(MagicPreventDamageTrigger.PreventDamageDealtTo(filter));
+        }
+    },
     ConditionPumpGainGroup("As long as " + ARG.WORDRUN + ", " + ARG.WORDRUN2 + " get " + ARG.PT + " and " + ARG.ANY + "\\.", 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final int[] pt = ARG.pt(arg);
