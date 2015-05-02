@@ -1,5 +1,5 @@
 [
-    new MagicWhenAttacksTrigger(1) {
+    new MagicWhenAttacksTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
             final MagicPermanent equippedCreature=permanent.getEquippedCreature();
