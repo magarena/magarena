@@ -6,7 +6,8 @@ type=Creature
 subtype=Human
 cost={U}
 pt=0/2
-ability=SN can't attack unless defending player controls an Island.
+ability=SN can't attack unless defending player controls an Island.;\
+        When you control no Islands, sacrifice SN.
 timing=main
-requires_groovy_code=Merchant Ship;Sea Serpent
+requires_groovy_code
 oracle=Merchant Ship can't attack unless defending player controls an Island.\nWhenever Merchant Ship attacks and isn't blocked, you gain 2 life.\nWhen you control no Islands, sacrifice Merchant Ship.

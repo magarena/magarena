@@ -6,7 +6,7 @@ type=Creature
 subtype=Griffin
 cost={W}
 pt=2/3
-ability=Flying
+ability=Flying;\
+        When you control no enchantments, sacrifice SN.
 timing=main
-requires_groovy_code
 oracle=Flying\nWhen you control no enchantments, sacrifice Tethered Griffin.

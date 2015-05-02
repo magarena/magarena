@@ -1,20 +1,6 @@
-def EFFECT = MagicRuleEventAction.create("Transform SN."); 
-
 def ABILITY2 = MagicRuleEventAction.create("Put a 2/2 green Wolf creature token onto the battlefield.");
 
 [
-    new MagicStatic(MagicLayer.Game) {
-        @Override
-        public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
-            return source.getCounters(MagicCounterType.Loyalty) <= 2;
-        }
-        @Override
-        public void modGame(final MagicPermanent source, final MagicGame game) {
-            game.doAction(new PutStateTriggerOnStackAction(
-                 EFFECT.getEvent(source)
-            ));
-        }
-    },
     new MagicPlaneswalkerActivation(0) {
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {

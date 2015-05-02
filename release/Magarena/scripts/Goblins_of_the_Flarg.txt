@@ -6,7 +6,7 @@ type=Creature
 subtype=Goblin,Warrior
 cost={R}
 pt=1/1
-ability=Mountainwalk
+ability=Mountainwalk;\
+        When you control a Dwarf, sacrifice SN.
 timing=main
-requires_groovy_code
 oracle=Mountainwalk\nWhen you control a Dwarf, sacrifice Goblins of the Flarg.

@@ -7,7 +7,7 @@ subtype=Fish
 cost={1}{U}{U}
 pt=3/3
 ability=SN can't attack unless defending player controls an Island.;\
-        SN can't be blocked except by blue creatures.
+        SN can't be blocked except by blue creatures.;\
+        When you control no Islands, sacrifice SN.
 timing=main
-requires_groovy_code=Sea Serpent
 oracle=Manta Ray can't attack unless defending player controls an Island.\nManta Ray can't be blocked except by blue creatures.\nWhen you control no Islands, sacrifice Manta Ray.

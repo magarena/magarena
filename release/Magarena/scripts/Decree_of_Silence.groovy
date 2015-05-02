@@ -1,5 +1,3 @@
-def EFFECT = MagicRuleEventAction.create("Sacrifice SN.");
-
 [
     new MagicWhenOtherSpellIsCastTrigger() {
         @Override
@@ -17,38 +15,6 @@ def EFFECT = MagicRuleEventAction.create("Sacrifice SN.");
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new CounterItemOnStackAction(event.getRefCardOnStack()));
             game.doAction(new ChangeCountersAction(event.getPermanent(),MagicCounterType.Depletion,1));
-        }
-    },
-    new MagicStatic(MagicLayer.Game) {
-        @Override
-        public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
-            return source.getCounters(MagicCounterType.Depletion) >= 3;
-        }
-        @Override
-        public void modGame(final MagicPermanent source, final MagicGame game) {
-            game.doAction(new PutStateTriggerOnStackAction(
-                EFFECT.getEvent(source)
-            ));
-        }
-    },
-    new MagicWhenCycleTrigger() {
-        @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicCard card) {
-            return new MagicEvent(
-                card,
-                new MagicMayChoice(NEG_TARGET_SPELL),
-                this,
-                "PN may\$ counter target spell\$."
-            );
-        }
-
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            if (event.isYes()) {
-                event.processTargetCardOnStack(game, {
-                    game.doAction(new CounterItemOnStackAction(it));
-                });
-            }
         }
     }
 ]

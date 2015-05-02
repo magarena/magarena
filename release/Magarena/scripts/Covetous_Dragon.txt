@@ -6,7 +6,7 @@ type=Creature
 subtype=Dragon
 cost={4}{R}
 pt=6/5
-ability=Flying
-requires_groovy_code
+ability=Flying;\
+        When you control no artifacts, sacrifice SN.
 timing=main
 oracle=Flying\nWhen you control no artifacts, sacrifice Covetous Dragon.

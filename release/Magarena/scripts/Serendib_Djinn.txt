@@ -6,7 +6,8 @@ type=Creature
 subtype=Djinn
 cost={2}{U}{U}
 pt=5/6
-ability=Flying
+ability=Flying;\
+        When you control no lands, sacrifice SN.
 timing=main
 requires_groovy_code
 oracle=Flying\nAt the beginning of your upkeep, sacrifice a land. If you sacrifice an Island this way, Serendib Djinn deals 3 damage to you.\nWhen you control no lands, sacrifice Serendib Djinn.

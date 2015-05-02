@@ -6,7 +6,7 @@ type=Creature
 subtype=Serpent
 cost={5}{U}
 pt=5/5
-ability=SN can't attack unless defending player controls an Island.
+ability=SN can't attack unless defending player controls an Island.;\
+        When you control no Islands, sacrifice SN.
 timing=main
-requires_groovy_code
 oracle=Sea Serpent can't attack unless defending player controls an Island.\nWhen you control no Islands, sacrifice Sea Serpent.

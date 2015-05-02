@@ -6,7 +6,7 @@ type=Creature
 subtype=Serpent
 cost={5}{B}
 pt=5/5
-ability=SN can't attack unless defending player controls a Swamp.
+ability=SN can't attack unless defending player controls a Swamp.;\
+        When you control no Swamps, sacrifice SN.
 timing=main
-requires_groovy_code
 oracle=Bog Serpent can't attack unless defending player controls a Swamp.\nWhen you control no Swamps, sacrifice Bog Serpent.

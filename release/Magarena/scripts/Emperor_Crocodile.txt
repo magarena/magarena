@@ -6,6 +6,6 @@ type=Creature
 subtype=Crocodile
 cost={3}{G}
 pt=5/5
+ability=When you control no other creatures, sacrifice SN.
 timing=main
-requires_groovy_code
 oracle=When you control no other creatures, sacrifice Emperor Crocodile.

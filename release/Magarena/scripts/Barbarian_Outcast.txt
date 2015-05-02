@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Barbarian,Beast
 cost={1}{R}
 pt=2/2
+ability=When you control no Swamps, sacrifice SN.
 timing=main
-requires_groovy_code
 oracle=When you control no Swamps, sacrifice Barbarian Outcast.
