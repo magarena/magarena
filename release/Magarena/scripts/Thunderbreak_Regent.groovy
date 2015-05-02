@@ -1,25 +1,26 @@
-MagicTargetFilter<MagicPermanent> DRAGON_YOU_CONTROL = Permanent("Dragon you control");
+def TARGET = Permanent("Dragon you control");
+def SPELL = ItemOnStack("spell or ability an opponent controls");
 
 [
     new MagicWhenTargetedTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicItemOnStack itemOnStack) {
             final MagicTarget target = itemOnStack.getTarget();
-            return target.isPermanent() &&
-                   DRAGON_YOU_CONTROL.accept(permanent, permanent.getController(), (MagicPermanent)target) &&
-                   itemOnStack.getController() == permanent.getOpponent() ?
+            return target.isPermanent() && 
+                   TARGET.accept(permanent, permanent.getController(), (MagicPermanent)target) &&
+                   SPELL.accept(permanent, permanent.getController(), itemOnStack) ?
                 new MagicEvent(
                     permanent,
                     itemOnStack.getController(),
                     this,
-                    "SN deals 3 damage to RN."
+                    "SN deals 3 damage to PN."
                 ):
                 MagicEvent.NONE;
         }
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new DealDamageAction(event.getPermanent(),event.getRefPlayer(),3));
+            game.doAction(new DealDamageAction(event.getPermanent(),event.getPlayer(),3));
         }
     }
 ]
