@@ -14,10 +14,12 @@ import magic.model.MagicSubType;
 import magic.model.MagicType;
 import magic.model.condition.MagicCondition;
 import magic.model.action.RemoveStaticAction;
+import magic.model.action.PutStateTriggerOnStackAction;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicPermanentTargetFilter;
 import magic.model.target.MagicTargetFilter;
 import magic.model.target.MagicTargetFilterFactory;
+import magic.model.event.MagicSourceEvent;
 
 import java.util.Set;
 
@@ -514,6 +516,19 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
                     game.addDelayedAction(new RemoveStaticAction(source, this));
                     return false;
                 }
+            }
+        };
+    }
+
+    public static MagicStatic StateTrigger(final MagicCondition cond, final MagicSourceEvent effect) {
+        return new MagicStatic(MagicLayer.Game) {
+            @Override
+            public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
+                return cond.accept(source);
+            }
+            @Override
+            public void modGame(final MagicPermanent source, final MagicGame game) {
+                game.doAction(new PutStateTriggerOnStackAction(effect.getEvent(source)));
             }
         };
     }

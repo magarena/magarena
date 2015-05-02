@@ -1068,6 +1068,14 @@ public enum MagicAbility {
             ));
         }
     },
+    WhenConditionEffect("When " + ARG.COND + ", " + ARG.EFFECT, 0) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            card.add(MagicStatic.StateTrigger(
+                MagicConditionParser.build(ARG.cond(arg)),
+                MagicRuleEventAction.create(ARG.effect(arg))
+            ));
+        }
+    },
     ControlEnchanted("You control enchanted " + ARG.ANY + "\\.", 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicStatic.ControlEnchanted);
