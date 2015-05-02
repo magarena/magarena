@@ -4,6 +4,6 @@ value=4.297
 rarity=R
 type=Artifact
 cost={4}
+ability=Prevent all damage that would be dealt to creatures.
 timing=main
-requires_groovy_code
 oracle=Prevent all damage that would be dealt to creatures.

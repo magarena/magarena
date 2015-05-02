@@ -6,6 +6,6 @@ type=Legendary,Creature
 subtype=Elf,Shaman
 cost={5}{G}{W}
 pt=5/7
+ability=Prevent all damage that would be dealt to creature tokens you control.
 timing=main
-requires_groovy_code
 oracle=Prevent all damage that would be dealt to creature tokens you control.

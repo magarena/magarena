@@ -9,7 +9,7 @@
             return MagicEvent.NONE;
         }
     },
-    new MagicIfDamageWouldBeDealtTrigger(MagicTrigger.PREVENT_DAMAGE) {
+    new MagicPreventDamageTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
             if (permanent.isFriend(damage.getTarget())) {

@@ -6,7 +6,7 @@ type=Creature
 subtype=Elemental
 cost={W}{W}{W}{W}
 pt=3/3
-ability=Flying
+ability=Flying;\
+        Prevent all damage that would be dealt to SN.
 timing=main
-requires_groovy_code=Cho Manno, Revolutionary
 oracle=Flying\nPrevent all damage that would be dealt to Dawn Elemental.

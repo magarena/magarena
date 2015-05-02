@@ -4,6 +4,6 @@ value=4.087
 rarity=R
 type=Artifact
 cost={2}
+ability=Prevent all combat damage that would be dealt to attacking creatures you control.
 timing=main
 oracle=Prevent all combat damage that would be dealt to attacking creatures you control.
-requires_groovy_code

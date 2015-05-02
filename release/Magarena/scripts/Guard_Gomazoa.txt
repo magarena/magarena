@@ -6,7 +6,7 @@ type=Creature
 subtype=Jellyfish
 cost={2}{U}
 pt=1/3
-ability=defender;flying
+ability=defender;flying;\
+        Prevent all combat damage that would be dealt to SN.
 timing=smain
-requires_groovy_code
 oracle=Defender, flying\nPrevent all combat damage that would be dealt to Guard Gomazoa.
