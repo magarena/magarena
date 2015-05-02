@@ -21,7 +21,6 @@ public class DealDamageAction extends MagicAction {
     private final MagicDamage damage;
     private MagicTarget target;
     private int oldDamage = UNINIT;
-    private int oldPrevent = UNINIT;
     
     public DealDamageAction(final MagicSource source, MagicTarget target, final int amt) {
         this(new MagicDamage(source, target, amt), null);
@@ -38,30 +37,6 @@ public class DealDamageAction extends MagicAction {
     private DealDamageAction(final MagicDamage aDamage, final MagicTarget aTarget) {
         damage = aDamage;
         target = aTarget;
-    }
-
-    private int preventDamage(final MagicGame game,int amount) {
-        // Damage is not preventable.
-        if (damage.isUnpreventable()) {
-            return amount;
-        }
-        
-        if (target.isPermanent()) {
-            final MagicPermanent targetPermanent = (MagicPermanent)target;
-            if (targetPermanent.hasProtectionFrom(damage.getSource())) {
-                return 0;
-            }
-        }
-
-        // Prevent x amount of damage.
-        final int prevent=target.getPreventDamage();
-        if (prevent>0) {
-            final int min=Math.min(amount,prevent);
-            amount-=min;
-            oldPrevent=prevent;
-            target.setPreventDamage(prevent-min);
-        }
-        return amount;
     }
 
     @Override
@@ -96,13 +71,8 @@ public class DealDamageAction extends MagicAction {
         }
 
         damage.setDealtAmount(0);
-        int dealtAmount=damage.getAmount();
-        if (dealtAmount<=0) {
-            return;
-        }
-
-        dealtAmount=preventDamage(game,dealtAmount);
-        if (dealtAmount<=0) {
+        final int dealtAmount=damage.getAmount();
+        if (dealtAmount <= 0) {
             return;
         }
 
@@ -154,9 +124,6 @@ public class DealDamageAction extends MagicAction {
         if (oldDamage!=UNINIT) {
             final MagicPermanent targetPermanent=(MagicPermanent)target;
             targetPermanent.setDamage(oldDamage);
-        }
-        if (oldPrevent!=UNINIT) {
-            target.setPreventDamage(oldPrevent);
         }
     }
 }

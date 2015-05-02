@@ -1,3 +1,3 @@
 [
-    MagicIfDamageWouldBeDealtTrigger.PreventCombatDamageDealtToDealtBy
+    MagicPreventDamageTrigger.PreventCombatDamageDealtToDealtBy
 ]

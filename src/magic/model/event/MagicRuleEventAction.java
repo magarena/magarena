@@ -40,7 +40,7 @@ import magic.model.target.*;
 import magic.model.trigger.MagicAtEndOfCombatTrigger;
 import magic.model.trigger.MagicAtEndOfTurnTrigger;
 import magic.model.trigger.MagicAtUpkeepTrigger;
-import magic.model.trigger.MagicIfDamageWouldBeDealtTrigger;
+import magic.model.trigger.MagicPreventDamageTrigger;
 import magic.model.trigger.MagicReboundTrigger;
 
 public enum MagicRuleEventAction {
@@ -559,7 +559,7 @@ public enum MagicRuleEventAction {
             @Override
             public void executeEvent(final MagicGame game, final MagicEvent event) {
                 game.doAction(new AddTurnTriggerAction(
-                    MagicIfDamageWouldBeDealtTrigger.PreventCombatDamage
+                    MagicPreventDamageTrigger.PreventCombatDamage
                 ));
             }
         }
@@ -577,7 +577,7 @@ public enum MagicRuleEventAction {
                     public void doAction(final MagicPermanent creature) {
                         game.doAction(new AddTurnTriggerAction(
                             creature,
-                            MagicIfDamageWouldBeDealtTrigger.PreventCombatDamageDealtBy
+                            MagicPreventDamageTrigger.PreventCombatDamageDealtBy
                         ));
                     }
                 });
@@ -597,7 +597,7 @@ public enum MagicRuleEventAction {
                     public void doAction(final MagicPermanent creature) {
                         game.doAction(new AddTurnTriggerAction(
                             creature,
-                            MagicIfDamageWouldBeDealtTrigger.PreventDamageDealtTo
+                            MagicPreventDamageTrigger.PreventDamageDealtTo
                         ));
                     }
                 });

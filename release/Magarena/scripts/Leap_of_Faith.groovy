@@ -18,7 +18,7 @@
                 game.doAction(new GainAbilityAction(it,MagicAbility.Flying));
                 game.doAction(new AddTurnTriggerAction(
                     it,
-                    MagicIfDamageWouldBeDealtTrigger.PreventDamageDealtTo
+                    MagicPreventDamageTrigger.PreventDamageDealtTo
                 ));
             });
         }

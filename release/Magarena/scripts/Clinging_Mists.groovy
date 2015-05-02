@@ -13,7 +13,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new AddTurnTriggerAction(
-                MagicIfDamageWouldBeDealtTrigger.PreventCombatDamage
+                MagicPreventDamageTrigger.PreventCombatDamage
             ));
             if (MagicCondition.FATEFUL_HOUR.accept(event.getSource())) {
                 ATTACKING_CREATURE.filter(game) each {

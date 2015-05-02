@@ -23,7 +23,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new AddTurnTriggerAction(
                 event.getPermanent(),                
-                MagicIfDamageWouldBeDealtTrigger.PreventDamageDealtTo
+                MagicPreventDamageTrigger.PreventDamageDealtTo
             ));
         }
     }
