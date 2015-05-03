@@ -7,6 +7,7 @@ import magic.model.MagicPlayer;
 import magic.model.event.MagicEvent;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
+import magic.model.target.MagicTargetType;
 import magic.model.action.PreventDamageAction;
 
 public abstract class MagicPreventDamageTrigger extends MagicIfDamageWouldBeDealtTrigger {
@@ -150,12 +151,17 @@ public abstract class MagicPreventDamageTrigger extends MagicIfDamageWouldBeDeal
     }
     
     // prevent all damage that would be dealt to [permanent]
-    public static final MagicPreventDamageTrigger PreventDamageDealtTo(final MagicTargetFilter<MagicPermanent> filter) {
+    public static final MagicPreventDamageTrigger PreventDamageDealtTo(final MagicTargetFilter<MagicTarget> filter) {
         return new MagicPreventDamageTrigger() {
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
-                if (damage.getTarget().isPermanent() &&
-                    filter.accept(permanent, permanent.getController(), damage.getTargetPermanent())) {
+                if ((damage.isTargetCreature() && 
+                     filter.acceptType(MagicTargetType.Permanent) && 
+                     filter.accept(permanent, permanent.getController(), damage.getTargetPermanent())) ||
+                    (damage.isTargetPlayer() &&
+                     filter.acceptType(MagicTargetType.Player) &&
+                     filter.accept(permanent, permanent.getController(), damage.getTargetPlayer()))) {
+
                     damage.prevent();
                 }
                 return MagicEvent.NONE;
@@ -164,14 +170,41 @@ public abstract class MagicPreventDamageTrigger extends MagicIfDamageWouldBeDeal
     }
     
     // prevent all combat damage that would be dealt to [permanent]
-    public static final MagicPreventDamageTrigger PreventCombatDamageDealtTo(final MagicTargetFilter<MagicPermanent> filter) {
+    public static final MagicPreventDamageTrigger PreventCombatDamageDealtTo(final MagicTargetFilter<MagicTarget> filter) {
         return new MagicPreventDamageTrigger() {
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
-                if (damage.isCombat() &&
-                    damage.getTarget().isPermanent() &&
-                    filter.accept(permanent, permanent.getController(), damage.getTargetPermanent())) {
-                    damage.prevent();
+                if ((damage.isTargetCreature() && 
+                     filter.acceptType(MagicTargetType.Permanent) && 
+                     filter.accept(permanent, permanent.getController(), damage.getTargetPermanent())) ||
+                    (damage.isTargetPlayer() &&
+                     filter.acceptType(MagicTargetType.Player) &&
+                     filter.accept(permanent, permanent.getController(), damage.getTargetPlayer()))) {
+
+                    if (damage.isCombat()) {
+                        damage.prevent();
+                    }
+                }
+                return MagicEvent.NONE;
+            }
+        };
+    }
+
+    // prevent all noncombat damage that would be dealt to [permanent]
+    public static final MagicPreventDamageTrigger PreventNonCombatDamageDealtTo(final MagicTargetFilter<MagicTarget> filter) {
+        return new MagicPreventDamageTrigger() {
+            @Override
+            public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
+                if ((damage.isTargetCreature() && 
+                     filter.acceptType(MagicTargetType.Permanent) && 
+                     filter.accept(permanent, permanent.getController(), damage.getTargetPermanent())) ||
+                    (damage.isTargetPlayer() &&
+                     filter.acceptType(MagicTargetType.Player) &&
+                     filter.accept(permanent, permanent.getController(), damage.getTargetPlayer()))) {
+
+                    if (damage.isCombat() == false) {
+                        damage.prevent();
+                    }
                 }
                 return MagicEvent.NONE;
             }

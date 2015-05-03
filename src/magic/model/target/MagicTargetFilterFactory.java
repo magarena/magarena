@@ -46,6 +46,12 @@ public class MagicTargetFilterFactory {
             return source == target;
         }
     };
+    
+    public static final MagicPlayerFilterImpl YOU = new MagicPlayerFilterImpl() {
+        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPlayer target) {
+            return player == target;
+        }
+    };
 
     public static final MagicStackFilterImpl SPELL_OR_ABILITY_THAT_TARGETS_PERMANENTS =new MagicStackFilterImpl() {
         public boolean accept(final MagicSource source,final MagicPlayer player,final MagicItemOnStack target) {
@@ -2547,6 +2553,7 @@ public class MagicTargetFilterFactory {
         // using source
         single.put("creature blocking it", CREATURE_BLOCKING_SN);
         single.put("SN", SN);
+        single.put("you", YOU);
         single.put("this creature", SN);
     }
 
