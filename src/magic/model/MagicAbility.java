@@ -203,9 +203,9 @@ public enum MagicAbility {
             card.add(MagicLeavesReturnExileTrigger.create());
         }
     },
-    Echo("echo " + ARG.MANACOST,-20) {
+    Echo("echo( |—)" + ARG.COST,-20) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(new MagicEchoTrigger(MagicManaCost.create(ARG.manacost(arg))));
+            card.add(new MagicEchoTrigger(new MagicRegularCostEvent(ARG.cost(arg))));
         }
     },
     Bloodthirst("bloodthirst " + ARG.NUMBER,10) {
@@ -231,17 +231,17 @@ public enum MagicAbility {
             card.add(new MagicMiracleTrigger(manaCost));
         }
     },
-    Kicker("(kicker |kicker—)" + ARG.COST, 0) {
+    Kicker("kicker( |—)" + ARG.COST, 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(new MagicKickerCost(new MagicRegularCostEvent(ARG.cost(arg))));
         }
     },
-    Buyback("buyback " + ARG.COST, 0) {
+    Buyback("buyback( |—)" + ARG.COST, 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicKickerCost.Buyback(new MagicRegularCostEvent(ARG.cost(arg))));
         }
     },
-    Entwine("entwine " + ARG.COST, 0) {
+    Entwine("entwine( |—)" + ARG.COST, 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicKickerCost.Entwine(new MagicRegularCostEvent(ARG.cost(arg))));
         }
@@ -344,7 +344,7 @@ public enum MagicAbility {
             card.add(new MagicRetraceActivation(cardDef));
         }
     },
-    Flashback("flashback " + ARG.COST,10) {
+    Flashback("flashback( |—)" + ARG.COST,10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final MagicCardDefinition cardDef = (MagicCardDefinition)card;
             final List<MagicMatchedCostEvent> matchedCostEvents = MagicRegularCostEvent.build(ARG.cost(arg));
@@ -428,7 +428,7 @@ public enum MagicAbility {
             card.add(new MagicMadnessTrigger(MagicManaCost.create(ARG.manacost(arg))));
         }
     },
-    Morph("morph " + ARG.COST, 10) {
+    Morph("morph( |—)" + ARG.COST, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final List<MagicMatchedCostEvent> matchedCostEvents = MagicRegularCostEvent.build(ARG.cost(arg));
             card.add(new MagicMorphActivation(matchedCostEvents));
