@@ -282,17 +282,16 @@ public enum MagicAbility {
             card.add(MagicExtortTrigger.create());
         }
     },
-    Cycling("cycling " + ARG.MANACOST, 20) {
+    Cycling("cycling( |—)" + ARG.COST, 20) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            final MagicManaCost manaCost = MagicManaCost.create(ARG.manacost(arg));
-            card.add(new MagicCyclingActivation(manaCost));
+            card.add(new MagicCyclingActivation(new MagicRegularCostEvent(ARG.cost(arg))));
         }
     },
-    TypeCycling(ARG.WORDRUN + "cycling " + ARG.MANACOST, 20) {
+    TypeCycling(ARG.WORDRUN + "cycling( |—)" + ARG.COST, 20) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            final MagicManaCost manaCost = MagicManaCost.create(ARG.manacost(arg));
+            final MagicMatchedCostEvent matchedCost = new MagicRegularCostEvent(ARG.cost(arg));
             final String type = ARG.wordrun(arg);
-            card.add(new MagicTypeCyclingActivation(manaCost,type));
+            card.add(new MagicTypeCyclingActivation(matchedCost,type));
         }
     },
     Reinforce("reinforce " + ARG.NUMBER + "—" + ARG.MANACOST, 20) {

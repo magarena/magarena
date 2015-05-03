@@ -15,24 +15,24 @@ import java.util.Arrays;
 
 public class MagicCyclingActivation extends MagicCardAbilityActivation {
 
-    final MagicManaCost cost;
+    final MagicMatchedCostEvent matchedCost;
 
-    protected MagicCyclingActivation(final MagicManaCost aCost, final String name) {
+    protected MagicCyclingActivation(final MagicMatchedCostEvent aMatchedCost, final String name) {
         super(
             new MagicActivationHints(MagicTiming.Main,true),
             name
         );
-        cost = aCost;
+        matchedCost = aMatchedCost;
     }
     
-    public MagicCyclingActivation(final MagicManaCost aCost) {
-        this(aCost, "Cycle");
+    public MagicCyclingActivation(final MagicMatchedCostEvent aMatchedCost) {
+        this(aMatchedCost, "Cycle");
     }
 
     @Override
     public Iterable<? extends MagicEvent> getCostEvent(final MagicCard source) {
         return Arrays.asList(
-            new MagicPayManaCostEvent(source, cost),
+            matchedCost.getEvent(source),
             new MagicDiscardSelfEvent(source)
         );
     }

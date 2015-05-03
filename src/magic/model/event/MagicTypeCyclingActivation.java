@@ -19,8 +19,8 @@ public class MagicTypeCyclingActivation extends MagicCyclingActivation {
 
     final String type;
 
-    public MagicTypeCyclingActivation(final MagicManaCost aCost, final String aType) {
-        super(aCost, aType + "cycle");
+    public MagicTypeCyclingActivation(final MagicMatchedCostEvent aMatchedCost, final String aType) {
+        super(aMatchedCost, aType + "cycle");
         type = aType;
     }
 
