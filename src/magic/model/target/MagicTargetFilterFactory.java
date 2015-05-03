@@ -2553,6 +2553,7 @@ public class MagicTargetFilterFactory {
         // using source
         single.put("creature blocking it", CREATURE_BLOCKING_SN);
         single.put("SN", SN);
+        single.put("it", SN);
         single.put("you", YOU);
         single.put("this creature", SN);
     }
