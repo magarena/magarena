@@ -7,7 +7,6 @@ subtype=Giant,Soldier
 cost={3}{W}{U}{B}
 pt=4/5
 ability=At the beginning of your upkeep, you gain 2 life.;\
-        Whenever you gain life, you may pay {1}. If you do, draw a card and each opponent loses 1 life.;\
-        At the beginning of your upkeep, if SN is in the command zone, you gain 2 life.
+        Whenever you gain life, you may pay {1}. If you do, draw a card.~Each opponent loses 1 life.
 timing=main
 oracle=At the beginning of your upkeep, you gain 2 life.\nWhenever you gain life, you may pay {1}. If you do, draw a card and each opponent loses 1 life.\nAt the beginning of your upkeep, if Oloro, Ageless Ascetic is in the command zone, you gain 2 life.
