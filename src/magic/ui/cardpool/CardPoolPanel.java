@@ -4,13 +4,15 @@ import java.awt.event.MouseAdapter;
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 import java.util.List;
+import javax.swing.JPanel;
 import magic.model.MagicCardDefinition;
+import magic.ui.CardFilterPanel;
+import magic.ui.ICardFilterPanelListener;
 import magic.ui.cardtable.CardTablePanel;
-import magic.ui.explorer.ExplorerDeckEditorPanel;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-public abstract class CardPoolPanel extends ExplorerDeckEditorPanel {
+public abstract class CardPoolPanel extends JPanel implements ICardFilterPanelListener {
 
     // fired when contents of cardPoolTable are updated.
     public static final String CP_CARDPOOL = "cardPoolContent";
@@ -22,19 +24,18 @@ public abstract class CardPoolPanel extends ExplorerDeckEditorPanel {
     protected static final int FILTERS_PANEL_HEIGHT = 88; // pixels
 
     // ui components.
-    protected final CardPoolFilterPanel filterPanel;
+    protected final CardFilterPanel filterPanel;
     protected final CardTablePanel cardPoolTable;
     // fields
     private final MigLayout miglayout = new MigLayout();
     protected List<MagicCardDefinition> cardPool;
     private boolean isFilterVisible = true;
     // abstract methods
-    public abstract boolean isDeckEditor();
     protected abstract String getCardPoolTitle();
     protected abstract MouseAdapter getMouseAdapter();
 
     public CardPoolPanel() {
-        filterPanel = new CardPoolFilterPanel(this);
+        filterPanel = new CardFilterPanel(this);
         cardPool = filterPanel.getCardDefinitions(isDeckEditor());
         cardPoolTable = new CardTablePanel(cardPool, getCardPoolTitle());
 

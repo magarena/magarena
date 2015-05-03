@@ -49,10 +49,8 @@ public class DeckEditorCardPoolPanel extends CardPoolPanel {
     }
 
     @Override
-    public void updateCardPool() {
+    public void refreshTable() {
         refreshContent();
     }
-
-
 
 }

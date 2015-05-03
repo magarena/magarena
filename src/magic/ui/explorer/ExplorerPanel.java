@@ -1,6 +1,5 @@
 package magic.ui.explorer;
 
-import magic.ui.explorer.ExplorerFilterPanel;
 import magic.data.GeneralConfig;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
@@ -36,21 +35,23 @@ import java.text.NumberFormat;
 import java.util.List;
 import javax.swing.SwingUtilities;
 
+import magic.ui.CardFilterPanel;
 import magic.utility.MagicSystem;
 import magic.ui.GraphicsUtilities;
+import magic.ui.ICardFilterPanelListener;
 import magic.ui.ScreenController;
 import magic.ui.cardtable.CardTable;
 import magic.ui.cardtable.ICardSelectionListener;
 
 @SuppressWarnings("serial")
-public class ExplorerPanel extends ExplorerDeckEditorPanel implements ICardSelectionListener {
+public class ExplorerPanel extends JPanel implements ICardSelectionListener, ICardFilterPanelListener {
 
     private static final int FILTERS_PANEL_HEIGHT = 88; // pixels
     private static final GeneralConfig CONFIG = GeneralConfig.getInstance();
 
     private CardTable cardPoolTable;
     private CardTable deckTable;
-    private ExplorerFilterPanel filterPanel;
+    private CardFilterPanel filterPanel;
     private List<MagicCardDefinition> cardPoolDefs;
     private MagicDeck deckDefs;
     private final boolean isDeckEditor;
@@ -88,7 +89,7 @@ public class ExplorerPanel extends ExplorerDeckEditorPanel implements ICardSelec
         // create ui components.
         buttonsPanel = new DeckEditorButtonsPanel();
         sideBarPanel = new SideBarPanel(isDeckEditor());
-        filterPanel = new ExplorerFilterPanel(this);
+        filterPanel = new CardFilterPanel(this);
         final Container cardsPanel = getMainContentContainer();
 
         final JPanel rhs = new JPanel();
@@ -275,7 +276,10 @@ public class ExplorerPanel extends ExplorerDeckEditorPanel implements ICardSelec
         }
     }
 
-    //protected abstract void closeScreen();
+    @Override
+    public void refreshTable() {
+        updateCardPool();
+    }
 
     private class CardPoolMouseListener extends MouseAdapter {
         @Override

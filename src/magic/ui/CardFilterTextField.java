@@ -1,5 +1,6 @@
-package magic.ui.widget;
+package magic.ui;
 
+import magic.ui.widget.*;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
@@ -13,25 +14,24 @@ import javax.swing.JTextField;
 import javax.swing.Timer;
 import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
-import magic.ui.explorer.ExplorerDeckEditorPanel;
 
 import magic.ui.widget.TextPrompt.Show;
 
 @SuppressWarnings("serial")
-public class CardPoolTextFilter extends JTextField implements DocumentListener {
+public class CardFilterTextField extends JTextField implements DocumentListener {
 
     private static final int SEARCH_TIMER_DELAY = 500; //msecs
 
     private Timer searchTextTimer;
     private final Font defaultFont;
     private final Font searchingFont;
-    private final ExplorerDeckEditorPanel explorerPanel;
+    private final ICardFilterPanelListener listener;
 
     private final List<String> searchTerms = new ArrayList<>();
 
-    public CardPoolTextFilter(final ExplorerDeckEditorPanel explorerPanel) {
+    public CardFilterTextField(final ICardFilterPanelListener aListener) {
 
-        this.explorerPanel = explorerPanel;
+        this.listener = aListener;
         defaultFont = getFont();
         searchingFont = defaultFont.deriveFont(Font.BOLD);
 
@@ -67,7 +67,7 @@ public class CardPoolTextFilter extends JTextField implements DocumentListener {
                 @Override
                 public void actionPerformed(ActionEvent e) {
                     searchTextTimer.stop();
-                    explorerPanel.updateCardPool();
+                    listener.refreshTable();
                     setFont(defaultFont);
                 }
             });
