@@ -94,12 +94,20 @@ public class DuelConfig {
         handSize=Integer.parseInt(properties.getProperty(HAND_SIZE,Integer.toString(handSize)));
         games=Integer.parseInt(properties.getProperty(GAMES,Integer.toString(games)));
         cube=properties.getProperty(CUBE,cube);
+        loadPlayerConfigs(properties, loadPlayerDecks);
+    }
+
+    private void loadPlayerConfigs(final Properties properties, final boolean loadPlayerDecks) {
         setPlayerProfile(0, PlayerProfile.getHumanPlayer(properties.getProperty(PLAYER_ONE)));
         setPlayerProfile(1, PlayerProfile.getAiPlayer(properties.getProperty(PLAYER_TWO)));
-
-        if (loadPlayerDecks) {
-            for (int i = 0; i < getPlayerConfigs().length; i++) {
-                getPlayerConfig(i).load(properties, getPlayerPrefix(i));
+        for (int i = 0; i < getPlayerConfigs().length; i++) {
+            getPlayerConfig(i).setDeckProfile(
+                    properties.getProperty(
+                            getPlayerPrefix(i) + "deckProfile",
+                            DeckType.Random + ";" + MagicDeckProfile.ANY_THREE)
+            );
+            if (loadPlayerDecks) {
+                getPlayerConfig(i).loadDeck(properties, getPlayerPrefix(i));
             }
         }
     }

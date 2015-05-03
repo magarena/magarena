@@ -44,7 +44,7 @@ public class DuelPlayerConfig {
         return prefix + "deck" + index;
     }
 
-    private void setDeckProfile(final String deckPropertyValue) {
+    public void setDeckProfile(final String deckPropertyValue) {
         final DeckType deckType = DeckType.valueOf(deckPropertyValue.split(";", 0)[0]);
         final String deckValue = deckPropertyValue.split(";", 0)[1];
         setDeckProfile(MagicDeckProfile.getDeckProfile(deckType, deckValue));
@@ -63,7 +63,7 @@ public class DuelPlayerConfig {
         throw new InvalidDeckException(String.format(ERR_MSG, cardName, ""));
     }
 
-    private void loadDeck(final Properties properties, final String prefix) {
+    public void loadDeck(final Properties properties, final String prefix) {
         deck.clear();
         for (int i = 1; i <= properties.size(); i++) {
             final String deckPrefix = getDeckPrefix(prefix, i);
@@ -72,15 +72,6 @@ public class DuelPlayerConfig {
                 deck.add(getCard(cardName));
             }
         }        
-    }
-
-    public void load(final Properties properties, final String prefix) {
-        setDeckProfile(
-                properties.getProperty(
-                        prefix + PLAYER_DECK,
-                        DeckType.Random + ";" + MagicDeckProfile.ANY_THREE)
-        );
-        loadDeck(properties, prefix);
     }
 
     public void save(final Properties properties, final String prefix) {
