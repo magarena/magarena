@@ -364,10 +364,10 @@ public enum MagicAbility {
             card.add(new MagicUnearthActivation(manaCost));
         }
     },
-    Equip("Equip " + ARG.MANACOST, 0) {
+    Equip("Equip( |—)" + ARG.COST, 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            final MagicManaCost cost = MagicManaCost.create(ARG.manacost(arg));
-            card.add(new MagicEquipActivation(cost));
+            final List<MagicMatchedCostEvent> matchedCostEvents = MagicRegularCostEvent.build(ARG.cost(arg));
+            card.add(new MagicEquipActivation(matchedCostEvents));
         }
     },
     Megamorph("megamorph " + ARG.COST, 10) {

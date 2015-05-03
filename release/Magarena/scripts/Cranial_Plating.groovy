@@ -1,4 +1,4 @@
-def equip = new MagicEquipActivation(MagicManaCost.create("{B}{B}"));
+def equip = new MagicEquipActivation(MagicRegularCostEvent.build("{B}{B}"));
 
 [
     new MagicStatic(MagicLayer.ModPT) {
