@@ -670,23 +670,6 @@ public enum MagicAbility {
             ));
         }
     },
-    ConditionPumpGainUnless("SN (gets " + ARG.PT + " )?(and )?(" + ARG.ANY + " )?unless " + ARG.WORDRUN + "\\.", 0) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            final MagicCondition condition = MagicConditionFactory.Unless(MagicConditionParser.build(ARG.wordrun(arg)));
-            if (arg.group("pt") != null) {
-                final int [] pt = ARG.pt(arg);
-                card.add(MagicStatic.genPTStatic(condition, pt[0], pt[1]));
-            }
-            if (arg.group("any") != null) {
-                card.add(MagicStatic.genABStatic(
-                    condition,
-                    MagicAbility.getAbilityList(
-                        ARG.any(arg)
-                    )
-                ));
-            }
-        }
-    },
     ConditionPumpGain("SN (gets " + ARG.PT + " )?(and )?(" + ARG.ANY + " )?as long as " + ARG.WORDRUN + "\\.", 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final MagicCondition condition = MagicConditionParser.build(ARG.wordrun(arg));
@@ -707,13 +690,6 @@ public enum MagicAbility {
     ConditionPumpGainAlt("As long as (?<wordrun>[^\\,]*), (SN|it) (gets " + ARG.PT + "(.| ))?(and )?(" + ARG.ANY + ")?(\\.)?", 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             ConditionPumpGain.addAbilityImpl(card, arg);
-        }
-    },
-    CantBlockPermanent("(SN )?can't block " + ARG.WORDRUN + "(\\.)?", 10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(MagicCantBlockTrigger.create(
-                MagicTargetFilterFactory.Permanent(ARG.wordrun(arg))
-            ));
         }
     },
     
@@ -1195,6 +1171,32 @@ public enum MagicAbility {
     ConditionGainGroupAlt(ARG.WORDRUN2 + " (has|have) " + ARG.ANY + " as long as " + ARG.WORDRUN + "(\\.)?", 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             ConditionGainGroup.addAbilityImpl(card, arg);
+        }
+    },
+    ConditionPumpGainUnless(ARG.WORDRUN + " (gets " + ARG.PT + " )?(and )?(" + ARG.ANY + " )?unless " + ARG.WORDRUN2 + "\\.", 0) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.Permanent(ARG.wordrun(arg));
+            final MagicCondition condition = MagicConditionFactory.Unless(MagicConditionParser.build(ARG.wordrun2(arg)));
+            if (arg.group("pt") != null) {
+                final int [] pt = ARG.pt(arg);
+                card.add(MagicStatic.genPTStatic(condition, filter, pt[0], pt[1]));
+            }
+            if (arg.group("any") != null) {
+                card.add(MagicStatic.genABStatic(
+                    condition,
+                    filter,
+                    MagicAbility.getAbilityList(
+                        ARG.any(arg)
+                    )
+                ));
+            }
+        }
+    },
+    CantBlockPermanent("(SN )?can't block " + ARG.WORDRUN + "(\\.)?", 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            card.add(MagicCantBlockTrigger.create(
+                MagicTargetFilterFactory.Permanent(ARG.wordrun(arg))
+            ));
         }
     },
     LordPumpGain(ARG.WORDRUN + " get(s)? " + ARG.PT + "(,)? (and|has) " + ARG.ANY + "(\\.)?", 0) {
