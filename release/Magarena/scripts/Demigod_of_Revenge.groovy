@@ -1,10 +1,7 @@
 [
     new MagicWhenSpellIsCastTrigger() {
         @Override
-        public MagicEvent executeTrigger(
-                final MagicGame game,
-                final MagicPermanent permanent,
-                final MagicCardOnStack cardOnStack) {
+        public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicCardOnStack cardOnStack) {
             return new MagicEvent(
                 cardOnStack,
                 this,
