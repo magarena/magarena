@@ -59,7 +59,7 @@ public class ARG {
         return m.group("wordrun");
     }
 
-    public static final String WORDRUN2 = "(?<wordrun2>[^\\.\"]+)";
+    public static final String WORDRUN2 = "(?<wordrun2>[^\\.\"]+?)";
     public static String wordrun2(final Matcher m) {
         return m.group("wordrun2");
     }
