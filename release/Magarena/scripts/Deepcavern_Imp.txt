@@ -6,7 +6,7 @@ type=Creature
 subtype=Imp,Rebel
 cost={2}{B}
 pt=2/2
-ability=flying;haste
+ability=flying;haste;\
+        Echo—Discard a card.
 timing=fmain
-requires_groovy_code
 oracle=Flying, haste\nEcho—Discard a card.
