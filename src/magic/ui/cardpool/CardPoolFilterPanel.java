@@ -41,7 +41,7 @@ public class CardPoolFilterPanel extends TexturedPanel implements ActionListener
 
     private static final long serialVersionUID = 1L;
 
-    private static final String[] COST_VALUES = {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15"};
+    private static final String[] COST_VALUES = {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16"};
     private static final String[] FILTER_CHOICES = {"Match any selected", "Match all selected", "Exclude selected"};
     private static final Color TEXT_COLOR = ThemeFactory.getInstance().getCurrentTheme().getTextColor();
     private static final Dimension POPUP_CHECKBOXES_SIZE = new Dimension(200, 150);
