@@ -90,21 +90,18 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
         }
     }
     
-    public static MagicStatic genSelfPTStatic(final MagicTargetFilter<MagicTarget> filter, final MagicPowerToughness given) {
-        return new MagicStatic(MagicLayer.ModPT) {
+    public static MagicStatic genPTStatic(final MagicTargetFilter<MagicPermanent> affected, final MagicTargetFilter<MagicTarget> counted, final MagicPowerToughness given) {
+        return new MagicStatic(MagicLayer.ModPT, affected) {
             @Override
             public void modPowerToughness(final MagicPermanent source, final MagicPermanent permanent, final MagicPowerToughness pt) {
-                final int amt = filter.filter(permanent.getController()).size();
+                final int amt = counted.filter(permanent.getController()).size();
                 pt.add(given.power() * amt, given.toughness() * amt);
             }
         };
     }
     
-    public static MagicStatic genPTStatic(final MagicTargetFilter<MagicPermanent> filter, final int givenPower, final int givenToughness) {
-        return new MagicStatic(
-            MagicLayer.ModPT,
-            filter
-        ) {
+    public static MagicStatic genPTStatic(final MagicTargetFilter<MagicPermanent> affected, final int givenPower, final int givenToughness) {
+        return new MagicStatic(MagicLayer.ModPT, affected) {
             @Override
             public void modPowerToughness(
                 final MagicPermanent source,
@@ -116,9 +113,7 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
     }
     
     public static MagicStatic genPTStatic(final MagicCondition condition, final int givenPower, final int givenToughness) {
-        return new MagicStatic(
-            MagicLayer.Game
-        ) {
+        return new MagicStatic(MagicLayer.Game) {
             @Override
             public void modPowerToughness(
                 final MagicPermanent source,
@@ -134,10 +129,7 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
     }
     
     public static MagicStatic genPTStatic(final MagicCondition condition, final MagicTargetFilter<MagicPermanent> filter, final int givenPower, final int givenToughness) {
-        return new MagicStatic(
-            MagicLayer.Game,
-            filter
-        ) {
+        return new MagicStatic(MagicLayer.Game, filter) {
             @Override
             public void modPowerToughness(
                 final MagicPermanent source,
@@ -185,10 +177,7 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
     }
     
     public static MagicStatic genABStatic(final MagicTargetFilter<MagicPermanent> filter, final MagicAbilityList abilityList) {
-        return new MagicStatic(
-            MagicLayer.Ability,
-            filter
-        ) {
+        return new MagicStatic(MagicLayer.Ability, filter) {
             @Override
             public void modAbilityFlags(
                 final MagicPermanent source,
@@ -200,10 +189,7 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
     }
     
     public static MagicStatic genABStatic(final MagicCondition condition, final MagicTargetFilter<MagicPermanent> filter, final MagicAbilityList abilityList) {
-        return new MagicStatic(
-            MagicLayer.Game,
-            filter
-        ) {
+        return new MagicStatic(MagicLayer.Game, filter) {
             @Override
             public void modAbilityFlags(
                 final MagicPermanent source,
@@ -219,9 +205,7 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
     }
     
     public static MagicStatic genABStatic(final MagicCondition condition, final MagicAbilityList abilityList) {
-        return new MagicStatic(
-            MagicLayer.Game
-        ) {
+        return new MagicStatic(MagicLayer.Game) {
             @Override
             public void modAbilityFlags(
                 final MagicPermanent source,
@@ -269,10 +253,7 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
     }
     
     public static MagicStatic genABGameStatic(final MagicTargetFilter<MagicPermanent> filter, final MagicAbilityList abilityList) {
-        return new MagicStatic(
-            MagicLayer.Game,
-            filter
-        ) {
+        return new MagicStatic(MagicLayer.Game, filter) {
             @Override
             public void modAbilityFlags(
                 final MagicPermanent source,

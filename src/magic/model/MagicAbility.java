@@ -670,13 +670,6 @@ public enum MagicAbility {
             ));
         }
     },
-    EachPump("SN gets " + ARG.PT + " for each " + ARG.WORDRUN + "\\.", 0) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            final MagicPowerToughness pt = ARG.mpt(arg);
-            final MagicTargetFilter<MagicTarget> filter = MagicTargetFilterFactory.Target(ARG.wordrun(arg));
-            card.add(MagicStatic.genSelfPTStatic(filter, pt));
-        }
-    },
     ConditionPumpGainUnless("SN (gets " + ARG.PT + " )?(and )?(" + ARG.ANY + " )?unless " + ARG.WORDRUN + "\\.", 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final MagicCondition condition = MagicConditionFactory.Unless(MagicConditionParser.build(ARG.wordrun(arg)));
@@ -1218,6 +1211,14 @@ public enum MagicAbility {
             final int[] pt = ARG.pt(arg);
             final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.Permanent(ARG.wordrun(arg));
             card.add(MagicStatic.genPTStatic(filter, pt[0], pt[1]));
+        }
+    },
+    LordPumpEach(ARG.WORDRUN + " get(s)? " + ARG.PT + " for each " + ARG.WORDRUN2 + "\\.", 0) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            final MagicPowerToughness pt = ARG.mpt(arg);
+            final MagicTargetFilter<MagicPermanent> affected = MagicTargetFilterFactory.Permanent(ARG.wordrun(arg));
+            final MagicTargetFilter<MagicTarget> counted = MagicTargetFilterFactory.Target(ARG.wordrun2(arg));
+            card.add(MagicStatic.genPTStatic(affected, counted, pt));
         }
     },
     LordGain(ARG.WORDRUN + " (have|has) " + ARG.ANY + "(\\.)?", 0) {
