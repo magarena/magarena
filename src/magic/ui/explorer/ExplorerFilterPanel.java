@@ -29,8 +29,8 @@ import magic.model.MagicColor;
 import magic.model.MagicRarity;
 import magic.model.MagicSubType;
 import magic.model.MagicType;
+import magic.ui.CardFilterPanel;
 import magic.ui.dialog.DownloadImagesDialog;
-import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.ButtonControlledPopup;
 import magic.ui.widget.CardPoolTextFilter;
 import magic.ui.widget.FontsAndBorders;
@@ -41,11 +41,11 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
 
     private static final long serialVersionUID = 1L;
 
-    private static final String[] COST_VALUES = {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16"};
-    private static final String[] FILTER_CHOICES = {"Match any selected", "Match all selected", "Exclude selected"};
-    private static final Color TEXT_COLOR = ThemeFactory.getInstance().getCurrentTheme().getTextColor();
-    private static final Dimension POPUP_CHECKBOXES_SIZE = new Dimension(200, 150);
-    private static final Dimension BUTTON_HOLDER_PANEL_SIZE = new Dimension(100, 36);
+    private static final String[] COST_VALUES = CardFilterPanel.COST_VALUES;
+    private static final String[] FILTER_CHOICES = CardFilterPanel.FILTER_CHOICES;
+    private static final Color TEXT_COLOR = CardFilterPanel.TEXT_COLOR;
+    private static final Dimension POPUP_CHECKBOXES_SIZE = CardFilterPanel.POPUP_CHECKBOXES_SIZE;
+    private static final Dimension BUTTON_HOLDER_PANEL_SIZE = CardFilterPanel.BUTTON_HOLDER_PANEL_SIZE;
 
     private final MigLayout layout = new MigLayout();
     private final ExplorerDeckEditorPanel explorerPanel;
