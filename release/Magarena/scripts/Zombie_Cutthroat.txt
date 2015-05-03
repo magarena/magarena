@@ -6,6 +6,6 @@ type=Creature
 subtype=Zombie
 cost={3}{B}{B}
 pt=3/4
-ability=Morph Pay 5 life
+ability=Morph—Pay 5 life.
 timing=main
 oracle=Morph—Pay 5 life.

@@ -4,7 +4,7 @@ value=4.163
 rarity=R
 type=Sorcery
 cost={4}{U}{U}
-ability=Buyback Sacrifice three Islands.
+ability=Buyback—Sacrifice three Islands.
 timing=main
 requires_groovy_code
 oracle=Buyback—Sacrifice three Islands.\nTarget player takes an extra turn after this one.
