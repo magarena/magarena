@@ -1,27 +1,5 @@
 package magic.ui.explorer;
 
-import magic.data.GeneralConfig;
-import magic.model.MagicCardDefinition;
-import magic.model.MagicDeck;
-import magic.model.MagicDeckConstructionRule;
-import magic.model.MagicRandom;
-import magic.ui.screen.widget.ActionBar;
-import magic.ui.screen.widget.StatusBar;
-import magic.ui.duel.viewer.CardViewer;
-import magic.ui.duel.viewer.DeckStatisticsViewer;
-import magic.ui.widget.FontsAndBorders;
-import magic.ui.widget.TexturedPanel;
-import net.miginfocom.swing.MigLayout;
-
-import javax.swing.BorderFactory;
-import javax.swing.JButton;
-import javax.swing.JOptionPane;
-import javax.swing.JPanel;
-import javax.swing.JScrollPane;
-import javax.swing.JSplitPane;
-import javax.swing.JTable;
-import javax.swing.ScrollPaneConstants;
-
 import java.awt.Color;
 import java.awt.Container;
 import java.awt.Cursor;
@@ -33,15 +11,34 @@ import java.awt.event.MouseEvent;
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
 import java.util.List;
+import javax.swing.BorderFactory;
+import javax.swing.JButton;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.JSplitPane;
+import javax.swing.JTable;
+import javax.swing.ScrollPaneConstants;
 import javax.swing.SwingUtilities;
-
+import magic.data.GeneralConfig;
+import magic.model.MagicCardDefinition;
+import magic.model.MagicDeck;
+import magic.model.MagicDeckConstructionRule;
+import magic.model.MagicRandom;
 import magic.ui.CardFilterPanel;
-import magic.utility.MagicSystem;
 import magic.ui.GraphicsUtilities;
 import magic.ui.ICardFilterPanelListener;
 import magic.ui.ScreenController;
 import magic.ui.cardtable.CardTable;
 import magic.ui.cardtable.ICardSelectionListener;
+import magic.ui.duel.viewer.CardViewer;
+import magic.ui.duel.viewer.DeckStatisticsViewer;
+import magic.ui.screen.widget.ActionBar;
+import magic.ui.screen.widget.StatusBar;
+import magic.ui.widget.FontsAndBorders;
+import magic.ui.widget.TexturedPanel;
+import magic.utility.MagicSystem;
+import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
 public class ExplorerPanel extends JPanel implements ICardSelectionListener, ICardFilterPanelListener {
