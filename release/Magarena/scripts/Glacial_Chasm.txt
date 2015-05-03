@@ -4,7 +4,8 @@ value=4.000
 rarity=U
 type=Land
 ability=When SN enters the battlefield, sacrifice a land.;\
-        Creatures you control can't attack.
+        Creatures you control can't attack.;\
+        Prevent all damage that would be dealt to you.
 timing=land
 requires_groovy_code
 oracle=Cumulative upkeep—Pay 2 life.\nWhen Glacial Chasm enters the battlefield, sacrifice a land.\nCreatures you control can't attack.\nPrevent all damage that would be dealt to you.

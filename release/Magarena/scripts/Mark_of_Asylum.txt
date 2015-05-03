@@ -4,6 +4,6 @@ value=3.236
 rarity=R
 type=Enchantment
 cost={1}{W}
-timing=main
-requires_groovy_code
+ability=Prevent all noncombat damage that would be dealt to creatures you control.
+timing=enchantment
 oracle=Prevent all noncombat damage that would be dealt to creatures you control.

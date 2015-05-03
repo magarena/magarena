@@ -23,14 +23,5 @@
                 game.doAction(new SacrificeAction(event.getPermanent()));
             }
         }
-    },
-    new MagicPreventDamageTrigger() {
-        @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
-            if (permanent.isController(damage.getTarget())) {
-                damage.prevent();
-            }
-            return MagicEvent.NONE;
-        }
     }
 ]
