@@ -25,12 +25,28 @@ final public class MagicSystem {
     public static final boolean IS_WINDOWS_OS = System.getProperty("os.name").toLowerCase().startsWith("windows");
     private static final ProgressReporter reporter = new ProgressReporter();
 
-    private static final FutureTask<Void> loadCards = new LoadCardsFutureTask(new Runnable() {
+    // Load card definitions in the background so that it does not delay the
+    // loading of the UI. Override done() to ensure exceptions not suppressed.
+    private static final FutureTask<Void> loadCards = new FutureTask<Void>(new Runnable() {
         @Override
         public void run() {
             initializeEngine(reporter);
         }
-    });
+    }, null) {
+        @Override
+        protected void done() {
+            try {
+                if (!isCancelled()) {
+                    get();
+                }
+            } catch (ExecutionException ex) {
+                throw new RuntimeException(ex.getCause());
+            } catch (InterruptedException ex) {
+                // Shouldn't happen, we're invoked when computation is finished
+                throw new AssertionError(ex);
+            }
+        }
+    };
 
     public static boolean isTestGame() {
         return (System.getProperty("testGame") != null);
