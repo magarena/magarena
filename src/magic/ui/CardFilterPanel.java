@@ -221,9 +221,15 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
         }
     }
 
-    private void populateCheckboxPopup(final ButtonControlledPopup popup, final Object[] checkboxValues, final JCheckBox[] newCheckboxes, final JRadioButton[] newFilterButtons, final boolean hideAND) {
+    private void populateCheckboxPopup(
+            final String migLayout,
+            final ButtonControlledPopup popup,
+            final Object[] checkboxValues,
+            final JCheckBox[] newCheckboxes,
+            final JRadioButton[] newFilterButtons,
+            final boolean hideAND) {
 
-        final JPanel checkboxesPanel = new JPanel(new MigLayout("flowy, insets 2"));
+        final JPanel checkboxesPanel = new JPanel(new MigLayout(migLayout));
         checkboxesPanel.setAlignmentX(Component.LEFT_ALIGNMENT);
         checkboxesPanel.setOpaque(false);
 
@@ -262,6 +268,11 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
             bg.add(newFilterButtons[i]);
             popup.add(newFilterButtons[i]);
         }
+
+    }
+
+    private void populateCheckboxPopup(final ButtonControlledPopup popup, final Object[] checkboxValues, final JCheckBox[] newCheckboxes, final JRadioButton[] newFilterButtons, final boolean hideAND) {
+        populateCheckboxPopup("flowy, insets 2", popup, checkboxValues, newCheckboxes, newFilterButtons, hideAND);
     }
 
     /**
@@ -576,7 +587,7 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
         costPopup = addFilterPopupPanel("Mana Cost");
         costCheckBoxes = new JCheckBox[COST_VALUES.length];
         costFilterChoices = new JRadioButton[FILTER_CHOICES.length];
-        populateCheckboxPopup(costPopup, COST_VALUES, costCheckBoxes, costFilterChoices, true);
+        populateCheckboxPopup("flowx, wrap 5, insets 2, gap 8", costPopup, COST_VALUES, costCheckBoxes, costFilterChoices, true);
     }
 
     private void addCardSubtypeFilter() {
