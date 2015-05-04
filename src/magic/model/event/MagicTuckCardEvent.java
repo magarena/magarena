@@ -21,6 +21,16 @@ public class MagicTuckCardEvent extends MagicEvent {
         );
     }
     
+    public MagicTuckCardEvent(final MagicSource source, final MagicPlayer player, final Boolean log) {
+        super(
+            source,
+            player,
+            MagicTargetChoice.A_CARD_FROM_HAND,
+            EVENT_ACTION,
+            ""
+        );
+    }
+    
     private static final MagicEventAction EVENT_ACTION=new MagicEventAction() {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
