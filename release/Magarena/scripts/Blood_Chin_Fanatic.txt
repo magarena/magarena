@@ -6,6 +6,6 @@ type=Creature
 subtype=Orc,Warrior
 cost={1}{B}{B}
 pt=3/3
-ability={1}{B}, Sacrifice another Warrior creature: Target player loses X life and you gain X life, where X is the sacrificed creature's power.
 timing=main
+requires_groovy_code
 oracle={1}{B}, Sacrifice another Warrior creature: Target player loses X life and you gain X life, where X is the sacrificed creature's power.
