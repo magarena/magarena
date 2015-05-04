@@ -19,7 +19,7 @@
                 NEG_TARGET_CREATURE_OR_PLAYER,
                 new MagicDamageTargetPicker(source.getCounters(MagicCounterType.Charge)),
                 this,
-                "SN deals damage equal to the number of charge counters on it to target creature or player\$."
+                "SN deals damage equal to the number of charge counters on it to target creature or player\$. "+ "("+source.getCounters(MagicCounterType.Charge)+")"
             );
         }
 
