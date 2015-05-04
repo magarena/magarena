@@ -574,7 +574,7 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
 
     private void addManaCostFilter() {
         costPopup = addFilterPopupPanel("Mana Cost");
-        costCheckBoxes = new JCheckBox[MagicManaCost.MAXIMUM_MANA_COST + 1];
+        costCheckBoxes = new JCheckBox[COST_VALUES.length];
         costFilterChoices = new JRadioButton[FILTER_CHOICES.length];
         populateCheckboxPopup(costPopup, COST_VALUES, costCheckBoxes, costFilterChoices, true);
     }
