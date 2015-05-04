@@ -24,6 +24,7 @@ import magic.data.MagicSetDefinitions;
 import magic.data.MagicSets;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicColor;
+import magic.model.MagicManaCost;
 import magic.model.MagicRarity;
 import magic.model.MagicSubType;
 import magic.model.MagicType;
@@ -37,7 +38,13 @@ import net.miginfocom.swing.MigLayout;
 @SuppressWarnings("serial")
 public class CardFilterPanel extends TexturedPanel implements ActionListener {
 
-    public static final String[] COST_VALUES = {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16"};
+    public static final String[] COST_VALUES = new String[MagicManaCost.MAXIMUM_MANA_COST + 1];
+    static {
+        for (int i = 0; i <= MagicManaCost.MAXIMUM_MANA_COST; i++) {
+            COST_VALUES[i] = Integer.toString(i);
+        }
+    }
+
     public static final String[] FILTER_CHOICES = {"Match any selected", "Match all selected", "Exclude selected"};
     public static final Color TEXT_COLOR = ThemeFactory.getInstance().getCurrentTheme().getTextColor();
     public static final Dimension POPUP_CHECKBOXES_SIZE = new Dimension(200, 150);
@@ -567,7 +574,7 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
 
     private void addManaCostFilter() {
         costPopup = addFilterPopupPanel("Mana Cost");
-        costCheckBoxes = new JCheckBox[COST_VALUES.length];
+        costCheckBoxes = new JCheckBox[MagicManaCost.MAXIMUM_MANA_COST + 1];
         costFilterChoices = new JRadioButton[FILTER_CHOICES.length];
         populateCheckboxPopup(costPopup, COST_VALUES, costCheckBoxes, costFilterChoices, true);
     }
