@@ -20,6 +20,7 @@ import magic.model.target.MagicPermanentTargetFilter;
 import magic.model.target.MagicTargetFilter;
 import magic.model.target.MagicTargetFilterFactory;
 import magic.model.event.MagicSourceEvent;
+import magic.model.event.MagicEvent;
 
 import java.util.Set;
 
@@ -509,7 +510,10 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
             }
             @Override
             public void modGame(final MagicPermanent source, final MagicGame game) {
-                game.doAction(new PutStateTriggerOnStackAction(effect.getEvent(source)));
+                final MagicEvent event = effect.getEvent(source);
+                if (event.isValid()) {
+                    game.doAction(new PutStateTriggerOnStackAction(event));
+                }
             }
         };
     }
