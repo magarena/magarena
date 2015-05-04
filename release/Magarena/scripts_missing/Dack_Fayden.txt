@@ -1,5 +1,5 @@
 name=Dack Fayden
-image=http://magiccards.info/scans/en/vma/247.jpg
+image=http://magiccards.info/cns/en/42.html
 value=2.500
 rarity=M
 type=Planeswalker
