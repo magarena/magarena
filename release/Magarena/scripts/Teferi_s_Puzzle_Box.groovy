@@ -12,12 +12,13 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicCardList hand = new MagicCardList(event.getPlayer().getHand());
+            final MagicPlayer player = event.getPlayer();
+            final MagicCardList hand = new MagicCardList(player.getHand());
             for (final MagicCard card : hand) {
-                game.addEvent(new MagicTuckCardEvent(event.getPermanent(),event.getPlayer(),false));
+                game.addEvent(new MagicTuckCardEvent(event.getPermanent(),player,false));
             }
             game.logAppendMessage(player,"PN puts "+hand.size()+" cards on the bottom of his or her library.");
-            game.addEvent(new MagicDrawEvent(event.getPermanent(),event.getPlayer(),hand.size()));
+            game.addEvent(new MagicDrawEvent(event.getPermanent(),player,hand.size()));
         }
     }
 ]
