@@ -13,6 +13,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final int amount=event.getRefPermanent().getPower();
+            game.logAppendMessage(event.getPlayer(),"("+amount+")");
             game.doAction(new PlayTokensAction(
                     event.getPlayer(),
                     TokenCardDefinitions.get("0/1 black Insect creature token"),

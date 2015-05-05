@@ -16,6 +16,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
                 final int amount=event.getRefPermanent().getConvertedCost();
+                game.logAppendMessage(event.getPlayer(),"("+amount+")");
                 game.doAction(new ChangeCountersAction(it, MagicCounterType.PlusOne, amount));
             });
         }

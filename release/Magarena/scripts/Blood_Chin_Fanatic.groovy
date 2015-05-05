@@ -26,6 +26,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
                 final int amount=event.getRefPermanent().getPower();
+                game.logAppendMessage(event.getPlayer(),"("+amount+")");
                 game.doAction(new ChangeLifeAction(it,-amount));
                 game.doAction(new ChangeLifeAction(event.getPlayer(),amount));
             });
