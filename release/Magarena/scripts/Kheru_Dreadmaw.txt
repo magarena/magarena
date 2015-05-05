@@ -6,7 +6,7 @@ type=Creature
 subtype=Zombie,Crocodile
 cost={4}{B}
 pt=4/4
-ability=Defender;\
-        {1}{G}, Sacrifice another creature: You gain life equal to the sacrificed creature's toughness.
+ability=Defender
 timing=main
+requires_groovy_code
 oracle=Defender\n{1}{G}, Sacrifice another creature: You gain life equal to the sacrificed creature's toughness.
