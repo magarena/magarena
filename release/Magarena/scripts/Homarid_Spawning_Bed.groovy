@@ -24,7 +24,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
-            final int amount=event.getRefPermanent().getPower();
+            final int amount=event.getRefPermanent().getConvertedCost();
             game.logAppendMessage(player,"("+amount+")");
             game.doAction(new PlayTokensAction(
                 player,
