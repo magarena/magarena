@@ -4,6 +4,7 @@ value=2.500
 rarity=R
 type=Sorcery
 cost={1}{G}
-effect=As an additional cost to cast SN, sacrifice a creature.~Draw cards equal to the sacrificed creature's power.
-timing=main
+ability=As an additional cost to cast SN, sacrifice a creature.
+timing=draw
+requires_groovy_code
 oracle=As an additional cost to cast Life's Legacy, sacrifice a creature.\nDraw cards equal to the sacrificed creature's power.
