@@ -1,5 +1,6 @@
 [
     new MagicPermanentActivation(
+        [new MagicArtificialCondition(MagicConditionFactory.GraveyardAtLeast(1))],
         new MagicActivationHints(MagicTiming.Draw),
         "Card"
     ) {
