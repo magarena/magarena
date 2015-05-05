@@ -4,6 +4,6 @@ value=2.500
 rarity=R
 type=Enchantment
 cost={2}{G}{G}
-ability=Sacrifice a creature: Draw cards equal to the sacrificed creature's power, then discard three cards.
 timing=enchantment
+requires_groovy_code
 oracle=Sacrifice a creature: Draw cards equal to the sacrificed creature's power, then discard three cards.
