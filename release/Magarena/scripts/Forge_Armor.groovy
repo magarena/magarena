@@ -5,6 +5,7 @@
             return new MagicEvent(
                 cardOnStack,
                 POS_TARGET_CREATURE,
+                MagicPumpTargetPicker.create(),
                 payedCost.getTarget(),
                 this,
                 "PN puts X +1/+1 counters on target creature, where X is RN's converted mana cost."
