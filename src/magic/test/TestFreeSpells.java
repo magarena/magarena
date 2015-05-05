@@ -25,6 +25,7 @@ class TestFreeSpells extends TestGameBuilder {
         addToHand(P,"Altar's Reap",1);
         addToHand(P,"Artillerize",1);
         addToHand(P,"Crop Rotation",1);
+        addToHand(P,"Headless Skaab",1);
 
 
         P = opponent;
