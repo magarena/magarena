@@ -1,0 +1,37 @@
+[
+    new MagicPermanentActivation(
+        new MagicActivationHints(MagicTiming.Token),
+        "Tokens"
+    ) {
+        @Override
+        public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
+            return [
+                new MagicTapEvent(source),
+                new MagicPayManaCostEvent(source,"{B}"),
+                new MagicSacrificePermanentEvent(source, MagicTargetChoice.Other("a creature to sacrifice",source))
+            ];
+        }
+
+        @Override
+        public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
+            return new MagicEvent(
+                source,
+                payedCost.getTarget(),
+                this,
+                "PN puts X 2/2 black Zombie creature tokens onto the battlefield, where X is RN's power."
+            );
+        }
+
+        @Override
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
+            final MagicPlayer player = event.getPlayer();
+            final int amount=event.getRefPermanent().getPower();
+            game.logAppendMessage(player,"("+amount+")");
+            game.doAction(new PlayTokensAction(
+                player,
+                TokenCardDefinitions.get("2/2 black Zombie creature token"),
+                amount
+            ));
+        }
+    }
+]

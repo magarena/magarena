@@ -6,6 +6,6 @@ type=Legendary,Creature
 subtype=Human,Wizard
 cost={3}{B}{B}
 pt=3/4
-ability={B}, {T}, Sacrifice another creature: Put X 2/2 black Zombie creature tokens onto the battlefield, where X is the sacrificed creature's power.
 timing=main
+requires_groovy_code
 oracle={B}, {T}, Sacrifice another creature: Put X 2/2 black Zombie creature tokens onto the battlefield, where X is the sacrificed creature's power.
