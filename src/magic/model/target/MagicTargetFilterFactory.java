@@ -1,5 +1,10 @@
 package magic.model.target;
 
+import java.util.Map;
+import java.util.TreeMap;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 import magic.model.MagicAbility;
 import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
@@ -9,17 +14,12 @@ import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPermanentState;
 import magic.model.MagicPlayer;
+import magic.model.MagicSource;
 import magic.model.MagicSubType;
 import magic.model.MagicType;
-import magic.model.MagicSource;
 import magic.model.choice.MagicTargetChoice;
-import magic.model.stack.MagicItemOnStack;
 import magic.model.stack.MagicAbilityOnStack;
-
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-import java.util.Map;
-import java.util.TreeMap;
+import magic.model.stack.MagicItemOnStack;
 
 public class MagicTargetFilterFactory {
 
