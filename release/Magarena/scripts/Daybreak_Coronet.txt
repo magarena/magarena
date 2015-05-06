@@ -5,7 +5,7 @@ rarity=R
 type=Enchantment
 subtype=Aura
 cost={W}{W}
-ability=Enchant creature with another Aura attached to it;\
-        Enchanted creature gets +3/+3 and has first strike, vigilance, and lifelink.
+ability=Enchanted creature gets +3/+3 and has first strike, vigilance, and lifelink.
 timing=aura
+enchant=pump,pos creature with another Aura attached to it
 oracle=Enchant creature with another Aura attached to it\nEnchanted creature gets +3/+3 and has first strike, vigilance, and lifelink.
