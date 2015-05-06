@@ -887,6 +887,18 @@ public class MagicTargetFilterFactory {
         }
     };
     
+    public static final MagicPermanentFilterImpl CREATURE_WITH_ANOTHER_AURA = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+            int amount = 0;
+            if (source.isPermanent()) {
+                amount = 1;
+            }
+            return target.isEnchanted() &&
+                    target.getAuraPermanents().size() >= 1+amount &&
+                    target.isCreature();
+        }
+    };
+    
     public static final MagicPermanentFilterImpl ENCHANTED_LAND = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
             final MagicPermanent perm = (MagicPermanent)source;
@@ -2365,6 +2377,7 @@ public class MagicTargetFilterFactory {
         single.put("creature with a +1/+1 counter on it", CREATURE_PLUSONE_COUNTER);
         single.put("creature with a -1/-1 counter on it", CREATURE_MINSUONE_COUNTER);
         single.put("creature with a counter on it", CREATURE_WITH_COUNTER);
+        single.put("creature with another Aura attached to it", CREATURE_WITH_ANOTHER_AURA);
         single.put("creature that isn't enchanted", CREATURE_THAT_ISNT_ENCHANTED);
         single.put("attacking creature with flying", ATTACKING_CREATURE_WITH_FLYING);
         single.put("attacking creature with flanking", ATTACKING_CREATURE_WITH_FLANKING);
