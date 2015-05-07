@@ -889,13 +889,8 @@ public class MagicTargetFilterFactory {
     
     public static final MagicPermanentFilterImpl CREATURE_WITH_ANOTHER_AURA = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
-            int amount = 0;
-            if (source.isPermanent()) {
-                amount = 1;
-            }
-            return target.isEnchanted() &&
-                    target.getAuraPermanents().size() >= 1+amount &&
-                    target.isCreature();
+            final int amount = source.isPermanent() ? 1 : 0;
+            return target.isCreature() && target.getAuraPermanents().size() >= 1+amount;
         }
     };
     
