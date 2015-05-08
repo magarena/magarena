@@ -1,0 +1,35 @@
+[
+    new MagicSpellCardEvent() {
+        @Override
+        public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
+            return new MagicEvent(
+                cardOnStack,
+                TARGET_OPPONENT,
+                this,
+                "Target opponent\$ sacrifices a creature, discards three cards, then loses 5 life." +
+                "You return a creature card from your graveyard to your hand, draw three cards, then gain 5 life."
+            );
+        }
+        @Override
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
+            event.processTargetPlayer(game, {
+                game.addEvent(new MagicSacrificePermanentEvent(
+                    event.getSource(),
+                    it,
+                    SACRIFICE_CREATURE
+                ));
+                game.addEvent(new MagicDiscardEvent(event.getSource(), it, 3));
+                game.doAction(new ChangeLifeAction(it,-5));
+            });
+            game.addEvent(new MagicEvent(
+                event.getSource(),
+                TARGET_CREATURE_CARD_FROM_GRAVEYARD,
+                MagicGraveyardTargetPicker.ReturnToHand,
+                this,
+                "Return a creature card from your graveyard to your hand."
+            ));
+            game.doAction(new DrawAction(event.getPlayer(),3));
+            game.doAction(new ChangeLifeAction(event.getPlayer(), 5));
+        }
+    }
+]
