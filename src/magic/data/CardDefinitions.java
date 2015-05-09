@@ -440,13 +440,11 @@ public class CardDefinitions {
     }
 
     public static boolean isCardPlayable(MagicCardDefinition card) {
-        final String key = card.getAsciiName();
-        return allPlayableCardDefs.containsKey(key);
+        return allPlayableCardDefs.containsKey(card.getAsciiName());
     }
 
     public static boolean isCardMissing(MagicCardDefinition card) {
-        final String key = card.getAsciiName();
-        return (missingCards == null ? false : missingCards.containsKey(key));
+        return missingCards == null ? false : missingCards.containsKey(card.getAsciiName());
     }
 
     public static synchronized Collection<MagicCardDefinition> getMissingCards() {
