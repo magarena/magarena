@@ -182,7 +182,7 @@ public class ExplorerPanel extends JPanel implements ICardSelectionListener, ICa
 
     private String generatePoolTitle() {
         final StringBuffer sb = new StringBuffer();
-        final int total = cardPoolDefs.size();
+        final int total = filterPanel.getTotalCardCount();
         sb.append("Cards: ").append(NumberFormat.getInstance().format(total));
         if (!isDeckEditor) {
             sb.append("      Playable: ").append(getCountCaption(total, filterPanel.getPlayableCardCount()));

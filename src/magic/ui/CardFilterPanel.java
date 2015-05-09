@@ -455,18 +455,22 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
 
         missingCards = 0;
         playableCards = 0;
-        for (final MagicCardDefinition cardDefinition : cards) {
-            if (!cardDefinition.isHidden() || !isDeckEditor) {
-                if (filter(cardDefinition)) {
-                    cardDefinitions.add(cardDefinition);
-                    if (cardDefinition.isMissing()) {
-                        missingCards++;
-                    } else {
-                        playableCards++;
+
+        for (final MagicCardDefinition cardDef : cards) {
+            if (!cardDef.isHidden() || !isDeckEditor) {
+                if (filter(cardDef)) {
+                    cardDefinitions.add(cardDef);
+                    if (!cardDef.isToken() && !cardDef.isHidden()) {
+                        if (cardDef.isMissing()) {
+                            missingCards++;
+                        } else {
+                            playableCards++;
+                        }
                     }
                 }
             }
         }
+
         return cardDefinitions;
     }
 
@@ -622,5 +626,8 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
         return missingCards;
     }
 
+    public int getTotalCardCount() {
+        return playableCards + missingCards;
+    }
 
 }
