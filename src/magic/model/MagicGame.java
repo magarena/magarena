@@ -1133,11 +1133,6 @@ public class MagicGame {
     }
 
     // ***** TARGETTING *****
-    
-    public List<MagicPlayer> filterPlayers(final MagicPlayer player,final MagicTargetFilter<MagicPlayer> targetFilter) {
-        return targetFilter.filter(player);
-    }
-
     public List<MagicPermanent> filterPermanents(final MagicPlayer player,final MagicTargetFilter<MagicPermanent> targetFilter) {
         return targetFilter.filter(player);
     }
