@@ -1,3 +1,5 @@
+def effect = MagicRuleEventAction.create("return a creature card from your graveyard to your hand.")
+
 [
     new MagicSpellCardEvent() {
         @Override
@@ -13,23 +15,14 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
-                game.addEvent(new MagicSacrificePermanentEvent(
-                    event.getSource(),
-                    it,
-                    SACRIFICE_CREATURE
-                ));
+                game.addEvent(new MagicSacrificePermanentEvent(event.getSource(), it, SACRIFICE_CREATURE));
                 game.addEvent(new MagicDiscardEvent(event.getSource(), it, 3));
                 game.doAction(new ChangeLifeAction(it,-5));
+                
+                game.addEvent(effect.getEvent(event.getSource(), event.getPlayer()));
+                game.doAction(new DrawAction(event.getPlayer(), 3));
+                game.doAction(new ChangeLifeAction(event.getPlayer(), 5));
             });
-            game.addEvent(new MagicEvent(
-                event.getSource(),
-                TARGET_CREATURE_CARD_FROM_GRAVEYARD,
-                MagicGraveyardTargetPicker.ReturnToHand,
-                this,
-                "Return a creature card from your graveyard to your hand."
-            ));
-            game.doAction(new DrawAction(event.getPlayer(),3));
-            game.doAction(new ChangeLifeAction(event.getPlayer(), 5));
         }
     }
 ]
