@@ -206,6 +206,14 @@ public class MagicCardDefinition implements MagicAbilityStore {
         return imageUpdated != null && imageUpdated.after(d);
     }
 
+    /**
+     * Returns the name of the card exactly as it appears on the printed card.
+     * <p>
+     * Note that in the case of token cards this means it may return the
+     * same name (eg. five different Wurm tokens would all return "Wurm").
+     *
+     * @see getDistinctName()
+     */
     public String getName() {
         return name;
     }
@@ -214,6 +222,14 @@ public class MagicCardDefinition implements MagicAbilityStore {
         this.name = name;
     }
 
+    /**
+     * Returns a guaranteed distinct card name.
+     * <p>
+     * In most cases this will be the same as {@link getName()} but for tokens
+     * of the same type (eg. Wurm) this will return a name that clearly identifies
+     * the card (eg. 5/5 green Wurm creature token with trample).
+     *
+     */
     public String getDistinctName() {
         return distinctName;
     }
