@@ -11,8 +11,8 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final Boolean fatefulHour = MagicCondition.FATEFUL_HOUR.accept(event.getSource());
-            game.filterPermanents(event.getPlayer(), CREATURE_YOU_CONTROL) each {
+            final boolean fatefulHour = MagicCondition.FATEFUL_HOUR.accept(event.getSource());
+            CREATURE_YOU_CONTROL.filter(event) each {
                 game.doAction(new ChangeTurnPTAction(it, 1, 1));
                 if (fatefulHour) {
                     game.doAction(new GainAbilityAction(it, MagicAbility.Indestructible));

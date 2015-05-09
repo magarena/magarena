@@ -23,7 +23,7 @@
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.filterPermanents(CREATURE_WITH_FLYING) each {
+            CREATURE_WITH_FLYING.filter(event) each {
                 game.doAction(new DealDamageAction(event.getSource(), it, event.getRefInt()));
             }
         }

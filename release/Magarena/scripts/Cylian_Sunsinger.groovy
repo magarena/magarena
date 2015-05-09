@@ -19,15 +19,8 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicTargetFilter<MagicPermanent> targetFilter =
-                new MagicNameTargetFilter(
-                    CREATURE,
-                    event.getPermanent().getName()
-                );
-            final Collection<MagicPermanent> targets =
-                game.filterPermanents(event.getPlayer(), targetFilter);
-            for (final MagicPermanent permanent : targets) {
-                game.doAction(new ChangeTurnPTAction(permanent,3,3));
+            new MagicNameTargetFilter(CREATURE, event.getPermanent().getName()).filter(event) each {
+                game.doAction(new ChangeTurnPTAction(it, 3, 3));
             }
         }
     }

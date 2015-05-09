@@ -13,7 +13,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
-                def amount = it.getLibrary().size().intdiv(2);
+                def amount = it.getLibrary().size() intdiv 2;
                 game.doAction(new MillLibraryAction(it,amount));
             });
         }

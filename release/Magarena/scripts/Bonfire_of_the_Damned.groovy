@@ -17,9 +17,8 @@
             event.processTargetPlayer(game, {
                 final int amount = event.getCardOnStack().getX();
                 game.doAction(new DealDamageAction(event.getSource(), it, amount));
-                final Collection<MagicPermanent> targets = game.filterPermanents(it, CREATURE_YOU_CONTROL);
-                for (final MagicPermanent target : targets) {
-                    game.doAction(new DealDamageAction(event.getSource(), target, amount));
+                CREATURE_YOU_CONTROL.filter(it) each {
+                    game.doAction(new DealDamageAction(event.getSource(), it, amount));
                 }
             });
         }

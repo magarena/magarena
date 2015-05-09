@@ -1,6 +1,6 @@
 def action = {
     final MagicGame game, final MagicEvent event ->
-    game.filterPermanents(CREATURE) each {
+    CREATURE.filter(event) each {
         if (it.getColorFlags() & event.getRefPermanent().getColorFlags()) {
             game.doAction(new GainAbilityAction(it, event.getChosenColor().getProtectionAbility()));
         }

@@ -2,8 +2,8 @@
     new MagicStatic(MagicLayer.ModPT) {
         @Override
         public void modPowerToughness(final MagicPermanent source, final MagicPermanent permanent, final MagicPowerToughness pt) {
-            final int p = (int)Math.floor(source.getController().getNrOfPermanents(MagicSubType.Forest)/2);
-            final int t = (int)Math.ceil(source.getController().getNrOfPermanents(MagicSubType.Forest)/2);
+            def p = source.getController().getNrOfPermanents(MagicSubType.Forest).intdiv(2);
+            def t = (source.getController().getNrOfPermanents(MagicSubType.Forest) + 1).intdiv(2);
             pt.add(p,t);
         }
         @Override

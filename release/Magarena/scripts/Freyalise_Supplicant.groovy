@@ -26,7 +26,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTarget(game, {
-                def amount = event.getRefPermanent().getPower().intdiv(2);
+                def amount = event.getRefPermanent().getPower() intdiv 2;
                 game.logAppendMessage(event.getPlayer(),"("+amount+")");
                 game.doAction(new DealDamageAction(event.getPermanent(),it,amount));
             });

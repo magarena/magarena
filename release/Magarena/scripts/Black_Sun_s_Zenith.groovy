@@ -13,7 +13,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final int amount = event.getCardOnStack().getX();
-            game.filterPermanents(event.getPlayer(), CREATURE) each {
+            CREATURE.filter(event) each {
                 game.doAction(new ChangeCountersAction(it, MagicCounterType.MinusOne, amount));
             }
             game.doAction(new ChangeCardDestinationAction(event.getCardOnStack(),MagicLocationType.OwnersLibrary));

@@ -32,7 +32,7 @@ def ST = new MagicStatic(MagicLayer.Type) {
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.filterPermanents(CREATURE) each {
+            CREATURE.filter(event) each {
                 game.doAction(new ChangeCountersAction(it, MagicCounterType.Gold, -it.getCounters(MagicCounterType.Gold)));
             }
         }

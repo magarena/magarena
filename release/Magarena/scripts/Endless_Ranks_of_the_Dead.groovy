@@ -12,13 +12,11 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
-            final int zombies = player.getNrOfPermanents(MagicSubType.Zombie)
-            def amount = zombies.intdiv(2);
             game.doAction(new PlayTokensAction(
                 player,
                 CardDefinitions.getToken("2/2 black Zombie creature token"),
-                amount
-            ));;
+                player.getNrOfPermanents(MagicSubType.Zombie).intdiv(2)
+            ));
         }
     }
 ]
