@@ -7,3 +7,4 @@ subtype=Dragon
 color=rg
 pt=1/1
 ability=flying;devour 2
+oracle=Flying, devour 2

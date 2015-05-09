@@ -7,3 +7,4 @@ subtype=Hellion
 color=r
 pt=4/4
 ability=haste
+oracle=Haste

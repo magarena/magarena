@@ -7,3 +7,4 @@ subtype=Elemental
 color=R
 pt=3/1
 ability=haste
+oracle=Haste

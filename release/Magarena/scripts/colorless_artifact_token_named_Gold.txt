@@ -5,3 +5,4 @@ value=1
 color=
 type=Artifact
 ability=Sacrifice SN: Add one mana of any color to your mana pool.
+oracle=Sacrifice this artifact: Add one mana of any color to your mana pool.

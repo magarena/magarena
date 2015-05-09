@@ -7,3 +7,4 @@ color=u
 subtype=Djinn,Monk
 type=Creature
 ability=flying
+oracle=Flying

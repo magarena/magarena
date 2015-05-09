@@ -7,3 +7,4 @@ subtype=Angel
 color=w
 pt=4/4
 ability=flying
+oracle=Flying

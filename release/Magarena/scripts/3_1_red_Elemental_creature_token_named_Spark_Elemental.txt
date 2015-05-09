@@ -9,3 +9,4 @@ ability=trample;\
         haste;\
         At the beginning of the end step, sacrifice SN.
 pt=3/1
+oracle=Trample, haste\nAt the beginning of the end step, sacrifice Spark Elemental.

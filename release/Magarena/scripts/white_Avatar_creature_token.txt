@@ -5,4 +5,6 @@ value=4
 type=Creature
 subtype=Avatar
 color=w
+pt=*/*
 requires_groovy_code=Serra Avatar
+oracle=This creature's power and toughness are each equal to your life total.

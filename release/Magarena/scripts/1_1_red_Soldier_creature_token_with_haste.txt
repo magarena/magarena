@@ -7,3 +7,4 @@ subtype=Soldier
 color=r
 pt=1/1
 ability=haste
+oracle=Haste

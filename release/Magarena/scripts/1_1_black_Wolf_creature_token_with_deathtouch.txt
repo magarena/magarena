@@ -7,3 +7,4 @@ subtype=Wolf
 color=b
 pt=1/1
 ability=deathtouch
+oracle=Deathtouch

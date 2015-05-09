@@ -7,3 +7,4 @@ subtype=Gargoyle
 color=
 ability=flying
 pt=3/4
+oracle=Flying

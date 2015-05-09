@@ -7,3 +7,4 @@ subtype=Elf,Druid
 color=g
 ability={T}: Add {G} to your mana pool.
 pt=1/1
+oracle={T}: Add {G} to your mana pool.

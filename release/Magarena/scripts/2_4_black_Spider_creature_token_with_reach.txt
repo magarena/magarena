@@ -7,3 +7,4 @@ subtype=Spider
 color=b
 ability=reach
 pt=2/4
+oracle=Reach

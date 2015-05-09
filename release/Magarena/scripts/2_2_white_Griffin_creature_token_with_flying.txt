@@ -7,3 +7,4 @@ subtype=Griffin
 color=w
 pt=2/2
 ability=flying
+oracle=Flying

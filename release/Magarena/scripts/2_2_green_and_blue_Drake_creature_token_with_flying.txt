@@ -7,3 +7,4 @@ color=GB
 type=Creature
 ability=flying
 subtype=Drake
+oracle=Flying

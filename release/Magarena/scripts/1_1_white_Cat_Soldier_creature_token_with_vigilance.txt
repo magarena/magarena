@@ -7,3 +7,4 @@ subtype=Cat
 color=w
 ability=vigilance
 pt=1/1
+oracle=Vigilance

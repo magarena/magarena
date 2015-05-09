@@ -7,3 +7,4 @@ subtype=Harpy
 color=b
 pt=1/1
 ability=flying
+oracle=Flying

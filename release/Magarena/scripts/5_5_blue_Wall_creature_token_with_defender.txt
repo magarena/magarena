@@ -7,3 +7,4 @@ subtype=Wall
 color=u
 pt=5/5
 ability=defender
+oracle=Defender

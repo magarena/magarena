@@ -7,3 +7,4 @@ subtype=Cat,Warrior
 color=g
 pt=2/2
 ability=forestwalk
+oracle=Forestwalk

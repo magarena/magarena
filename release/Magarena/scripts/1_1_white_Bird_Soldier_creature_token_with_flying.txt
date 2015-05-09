@@ -7,3 +7,4 @@ subtype=Bird,Soldier
 color=w
 pt=1/1
 ability=flying
+oracle=Flying

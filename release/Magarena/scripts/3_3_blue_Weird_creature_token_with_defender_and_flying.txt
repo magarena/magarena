@@ -7,3 +7,4 @@ subtype=Weird
 color=u
 pt=3/3
 ability=defender;flying
+oracle=Defender, flying

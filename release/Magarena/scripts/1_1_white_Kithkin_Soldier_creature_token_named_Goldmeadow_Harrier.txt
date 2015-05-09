@@ -7,3 +7,4 @@ subtype=Kithkin,Soldier
 color=w
 ability={W},{T}:Tap target creature.
 pt=1/1
+oracle={W}, {T}: Tap target creature.

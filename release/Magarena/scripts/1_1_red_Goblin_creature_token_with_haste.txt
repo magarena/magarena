@@ -7,3 +7,4 @@ subtype=Goblin
 color=r
 ability=haste
 pt=1/1
+oracle=Haste

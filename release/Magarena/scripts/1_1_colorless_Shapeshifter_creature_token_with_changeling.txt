@@ -7,3 +7,4 @@ subtype=Shapeshifter
 color=
 pt=1/1
 ability=changeling
+oracle=Changeling

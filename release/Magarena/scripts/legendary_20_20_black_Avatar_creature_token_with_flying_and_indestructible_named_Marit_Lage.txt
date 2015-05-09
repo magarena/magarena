@@ -7,3 +7,4 @@ subtype=Avatar
 color=b
 pt=20/20
 ability=flying;indestructible
+oracle=Flying, indestructible

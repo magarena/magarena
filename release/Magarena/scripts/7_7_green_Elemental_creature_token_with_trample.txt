@@ -7,3 +7,4 @@ subtype=Elemental
 color=g
 ability=trample
 pt=7/7
+oracle=Trample

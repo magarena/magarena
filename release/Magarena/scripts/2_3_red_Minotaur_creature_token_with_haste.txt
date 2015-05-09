@@ -7,3 +7,4 @@ subtype=Minotaur
 color=R
 pt=2/3
 ability=haste
+oracle=Haste

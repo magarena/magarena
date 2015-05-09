@@ -7,3 +7,4 @@ subtype=Insect
 color=g
 pt=1/1
 ability=infect
+oracle=Infect

@@ -7,3 +7,4 @@ color=
 value=1
 pt=1/1
 ability=flying
+oracle=Flying

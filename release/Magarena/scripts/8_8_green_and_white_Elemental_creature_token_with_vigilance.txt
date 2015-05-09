@@ -7,3 +7,4 @@ subtype=Elemental
 color=gw
 pt=8/8
 ability=vigilance
+oracle=Vigilance

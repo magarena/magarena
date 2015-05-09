@@ -7,3 +7,4 @@ subtype=Plant,Wall
 color=U
 pt=0/1
 ability=defender
+oracle=Defender

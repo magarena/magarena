@@ -7,3 +7,4 @@ color=w
 subtype=Monk
 type=Creature
 ability=prowess
+oracle=Prowess
