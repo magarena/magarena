@@ -11,7 +11,7 @@
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.filterPermanents(ATTACKING_CREATURE) each {
+            ATTACKING_CREATURE.filter(event) each {
                 if (it.hasColor(MagicColor.Red)) {
                     game.doAction(new ChangeTurnPTAction(it,2,0));
                 }

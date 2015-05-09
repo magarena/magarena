@@ -10,10 +10,13 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.filterPermanents(CREATURE) each {
+            CREATURE.filter(event) each {
                 if (it.isEnchanted()) {
-                    final int amount = it.getAuraPermanents().size()*2
-                    game.doAction(new DealDamageAction(event.getSource(), it, amount));
+                    game.doAction(new DealDamageAction(
+                        event.getSource(), 
+                        it, 
+                        it.getAuraPermanents().size()*2
+                    ));
                 }
             }
         }

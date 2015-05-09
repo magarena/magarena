@@ -11,7 +11,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
-            final int amount = game.filterPermanents(player,FOREST).size();
+            final int amount = FOREST.filter(event).size();
             game.doAction(new ChangeLifeAction(player,amount));
         }
     }

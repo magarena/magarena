@@ -20,7 +20,7 @@
                     pt.set(X,X);
                 }
             };
-            game.filterPermanents(event.getPlayer(), CREATURE_YOU_CONTROL) each {
+            CREATURE_YOU_CONTROL.filter(event) each {
                 game.doAction(new BecomesCreatureAction(it, PT));
             }
         }

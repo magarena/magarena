@@ -3,8 +3,7 @@
         @Override
         public void modPowerToughness(final MagicGame game, final MagicPlayer player, final MagicPermanent permanent, final MagicPowerToughness pt) {
             int amount = 0;
-            final MagicTargetFilter<MagicPermanent> filter = CREATURE_YOU_CONTROL.except(permanent);
-            game.filterPermanents(player,filter) each {
+            CREATURE_YOU_CONTROL.except(permanent).filter(player) each {
                 amount += it.getConvertedCost();
             }
             pt.set(amount, amount);

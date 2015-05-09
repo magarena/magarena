@@ -19,11 +19,8 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicPlayer player=event.getPlayer();
-            game.filterPermanents(player, CREATURE) each {
-                if (!it.isController(player)) {
-                    game.doAction(new GainAbilityAction(it, MagicAbility.AttacksEachTurnIfAble));
-                } 
+            CREATURE_YOUR_OPPONENT_CONTROLS.filter(event) each {
+                game.doAction(new GainAbilityAction(it, MagicAbility.AttacksEachTurnIfAble));
             }
         }
     },
