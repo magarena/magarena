@@ -38,9 +38,6 @@ public class RemoveCardAction extends MagicAction {
                 index=owner.getExile().removeCard(card);
                 break;
         }
-        if (index < 0 && card.isToken() == false) {
-            System.err.println("REMOVE: Fail to remove " + card + " from " + locationType + ", card in " + card.getLocation());
-        } 
         game.setStateCheckRequired();
     }
 
