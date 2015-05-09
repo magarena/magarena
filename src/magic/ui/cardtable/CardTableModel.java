@@ -235,7 +235,7 @@ public class CardTableModel implements TableModel {
                         } else {
                             return ratingFormatter.format(card.getValue());
                         }
-            case 1:        return card.getName();
+            case 1:        return card.getDistinctName();
             case 2:        return card.getCost();
             case 3:        if (card.isCreature()) {
                             return card.getCardPower();

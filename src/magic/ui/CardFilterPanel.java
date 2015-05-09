@@ -33,6 +33,7 @@ import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.ButtonControlledPopup;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TexturedPanel;
+import magic.utility.MagicSystem;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
@@ -95,6 +96,7 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
     // ...
     private JButton resetButton;
 
+    private int totalFilteredCards = 0;
     private int playableCards = 0;
     private int missingCards = 0;
 
@@ -281,10 +283,6 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
      */
     private boolean filter(final MagicCardDefinition cardDefinition) {
 
-        if (cardDefinition.isToken()) {
-            return false;
-        }
-
         // search text in name, abilities, type, text, etc.
         if (nameTextField != null) {
             if (nameTextField.getSearchTerms().size() > 0) {
@@ -337,7 +335,17 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
             new CardChecker() {
                 @Override
                 public boolean checkCard(final MagicCardDefinition card, final int i) {
-                    return card.hasType(MagicType.FILTER_TYPES.toArray(new MagicType[0])[i]);
+                    if (typeCheckBoxes[i].getText().equals("Token")) {
+                        return card.isToken();
+                    } else if (typeCheckBoxes[i].getText().equals("Transform")) {
+                        return card.isDoubleFaced();
+                    } else if (typeCheckBoxes[i].getText().equals("Flip")) {
+                        return card.isFlipCard();
+                    } else if (typeCheckBoxes[i].getText().equals("Hidden")) {
+                        return card.isHidden();
+                    } else {
+                        return card.hasType(MagicType.FILTER_TYPES.toArray(new MagicType[0])[i]);
+                    }
                 }
             })) {
             return false;
@@ -455,10 +463,12 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
 
         missingCards = 0;
         playableCards = 0;
+        totalFilteredCards = 0;
 
         for (final MagicCardDefinition cardDef : cards) {
             if (!cardDef.isHidden() || !isDeckEditor) {
                 if (filter(cardDef)) {
+                    totalFilteredCards++;
                     cardDefinitions.add(cardDef);
                     if (!cardDef.isToken() && !cardDef.isHidden()) {
                         if (cardDef.isMissing()) {
@@ -533,9 +543,26 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
 
     private void addCardTypeFilter() {
         typePopup = addFilterPopupPanel("Type");
-        typeCheckBoxes = new JCheckBox[MagicType.FILTER_TYPES.size()];
+        final Object[] types = getTypeFilterValues();
+        typeCheckBoxes = new JCheckBox[types.length];
         typeFilterChoices = new JRadioButton[FILTER_CHOICES.length];
-        populateCheckboxPopup(typePopup, MagicType.FILTER_TYPES.toArray(), typeCheckBoxes, typeFilterChoices, false);
+        populateCheckboxPopup("flowy, wrap 9, insets 2, gapy 6, gapx 20", typePopup, types, typeCheckBoxes, typeFilterChoices, false);
+    }
+
+    private Object[] getTypeFilterValues() {
+        final List<Object> types = new ArrayList<>();
+        for (MagicType type : MagicType.FILTER_TYPES) {
+            types.add(type);
+        }
+        if (!listener.isDeckEditor()) {
+            types.add("Token");
+            types.add("Transform");
+            types.add("Flip");
+            if (MagicSystem.isDevMode()) {
+                types.add("Hidden");
+            }
+        }
+        return types.toArray();
     }
 
     private void addOracleFilter() {
@@ -627,7 +654,8 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
     }
 
     public int getTotalCardCount() {
-        return playableCards + missingCards;
+        final int total = playableCards + missingCards;
+        return total == 0 ? totalFilteredCards : total;
     }
 
 }

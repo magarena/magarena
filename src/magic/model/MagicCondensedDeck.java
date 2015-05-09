@@ -34,7 +34,7 @@ public class MagicCondensedDeck extends ArrayList<MagicCondensedCardDefinition> 
     }
 
     private String getKey(final MagicCardDefinition card) {
-        return card.getName();
+        return card.getDistinctName();
     }
 
     public boolean addCard(final MagicCardDefinition card, final boolean ignoreCopiesLimit) {
