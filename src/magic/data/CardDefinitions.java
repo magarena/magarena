@@ -97,26 +97,23 @@ public class CardDefinitions {
         }
     }
 
-    private static void addDefinition(final MagicCardDefinition cardDefinition) {
-        assert cardDefinition != null : "CardDefinitions.addDefinition passed null";
-        assert cardDefinition.getIndex() == -1 : "cardDefinition has been assigned index";
+    private static void addDefinition(final MagicCardDefinition cardDef) {
+        assert cardDef != null : "CardDefinitions.addDefinition passed null";
+        assert cardDef.getIndex() == -1 : "cardDefinition has been assigned index";
 
-        final String key = cardDefinition.getAsciiName();
-
-        final MagicCardDefinition prev = allPlayableCardDefs.putIfAbsent(key, cardDefinition);
-        if (prev != null) {
+        if (allPlayableCardDefs.putIfAbsent(cardDef.getAsciiName(), cardDef) != null) {
             // card definition already added, early exit
             return;
         }
 
-        cardDefinition.setIndex(cdefIndex.getAndIncrement());
+        cardDef.setIndex(cdefIndex.getAndIncrement());
         
-        if (cardDefinition.isToken()) {
-            TokenCardDefinitions.add(cardDefinition);
+        if (cardDef.isToken()) {
+            TokenCardDefinitions.add(cardDef);
         }
         
-        if (cardDefinition.isToken() == false && cardDefinition.isHidden() == false) {
-            cardDefinition.add(new MagicCardActivation(cardDefinition));
+        if (cardDef.isToken() == false && cardDef.isHidden() == false) {
+            cardDef.add(new MagicCardActivation(cardDef));
         }
     }
 
