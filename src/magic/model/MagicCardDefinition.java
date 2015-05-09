@@ -234,8 +234,9 @@ public class MagicCardDefinition implements MagicAbilityStore {
         return distinctName;
     }
 
-    public void setDistinctName(final String name) {
-        distinctName = name;
+    public void setDistinctName(String aName) {
+        assert (this.name.equals(aName) ? this.name == aName : true) : "Same name but using two separate strings. Should reference same string for efficiency.";
+        distinctName = aName;
     }
 
     /**
