@@ -52,7 +52,7 @@ public final class GameStateSnapshot {
     private static void savePlayerPermanentsState(final MagicPlayer player, final GamePlayerState gamePlayerState) {
         final Map<GameCardState, Integer> cards = new HashMap<>();
         for (final MagicPermanent card : player.getPermanents()) {
-            final GameCardState tsCard = new GameCardState(card.getCardDefinition().getFullName(), 0, card.isTapped());
+            final GameCardState tsCard = new GameCardState(card.getCardDefinition().getDistinctName(), 0, card.isTapped());
             updateCardCount2(tsCard, cards);
         }
         for (final GameCardState card : cards.keySet()) {

@@ -27,7 +27,7 @@ def choice = new MagicTargetChoice("target nonartifact attacking creature");
                     event.getPlayer(),
                     MagicCardDefinition.create({
                         it.setName("Spirit");
-                        it.setFullName("black Spirit creature token");
+                        it.setDistinctName("black Spirit creature token");
                         it.setPowerToughness(power,toughness);
                         it.setColors("b");
                         it.addSubType(MagicSubType.Spirit);

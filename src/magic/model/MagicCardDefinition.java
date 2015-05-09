@@ -39,7 +39,7 @@ public class MagicCardDefinition implements MagicAbilityStore {
         @Override
         protected void initialize() {
             setName("Unknown");
-            setFullName("Unknown");
+            setDistinctName("Unknown");
             setToken();
             setValue(1);
             addType(MagicType.Creature);
@@ -58,7 +58,7 @@ public class MagicCardDefinition implements MagicAbilityStore {
         @Override
         protected void initialize() {
             setName("");
-            setFullName("2/2 face-down creature");
+            setDistinctName("2/2 face-down creature");
             setValue(1);
             addType(MagicType.Creature);
             setCost(MagicManaCost.create("{0}"));
@@ -72,7 +72,7 @@ public class MagicCardDefinition implements MagicAbilityStore {
     private String name;
 
     // name used for mapping and persistence, must be unique
-    private String fullName;
+    private String distinctName;
     private boolean isValid = true;
     private boolean isScriptFileMissing = false;
 
@@ -214,26 +214,26 @@ public class MagicCardDefinition implements MagicAbilityStore {
         this.name = name;
     }
 
-    public String getFullName() {
-        return fullName;
+    public String getDistinctName() {
+        return distinctName;
     }
 
-    public void setFullName(final String name) {
-        fullName = name;
+    public void setDistinctName(final String name) {
+        distinctName = name;
     }
 
     /**
      * Returns the name of the card containing only ASCII characters.
      */
     public String getAsciiName() {
-        return CardDefinitions.getASCII(fullName);
+        return CardDefinitions.getASCII(distinctName);
     }
     
     /**
      * Returns the name of the script/groovy file without extension
      */
     public String getFilename() {
-        return CardDefinitions.getCanonicalName(fullName);
+        return CardDefinitions.getCanonicalName(distinctName);
     }
 
     public void setIndex(final int index) {
@@ -246,8 +246,8 @@ public class MagicCardDefinition implements MagicAbilityStore {
 
     public String getImageName() {
         return token ?
-            CardDefinitions.getCanonicalName(fullName):
-            fullName.replaceAll("[<>:\"/\\\\|?*\\x00-\\x1F]", "_");                
+            CardDefinitions.getCanonicalName(distinctName):
+            distinctName.replaceAll("[<>:\"/\\\\|?*\\x00-\\x1F]", "_");
     }
 
     public void setImageCount(final int count) {
@@ -892,7 +892,7 @@ public class MagicCardDefinition implements MagicAbilityStore {
     public boolean hasText(String s) {
         s = s.toLowerCase();
         return (
-            CardDefinitions.getASCII(fullName).toLowerCase().contains(s) ||
+            CardDefinitions.getASCII(distinctName).toLowerCase().contains(s) ||
             CardDefinitions.getASCII(name).toLowerCase().contains(s) ||
             subTypeHasText(s) ||
             abilityHasText(s) ||

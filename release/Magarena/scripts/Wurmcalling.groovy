@@ -15,7 +15,7 @@
             final int x = event.getCardOnStack().getX();
             game.doAction(new PlayTokenAction(event.getPlayer(), MagicCardDefinition.create({
                 it.setName("Wurm");
-                it.setFullName("green Wurm creature token");
+                it.setDistinctName("green Wurm creature token");
                 it.setPowerToughness(x, x);
                 it.setColors("g");
                 it.addSubType(MagicSubType.Wurm);

@@ -377,7 +377,7 @@ public class CardDefinitions {
             } else {
                 final MagicCardDefinition card = new MagicCardDefinition();
                 card.setName(cardName);
-                card.setFullName(cardName);
+                card.setDistinctName(cardName);
                 card.setIsMissing(true);
                 card.setIsValid(false);
                 card.setIsScriptFileMissing(true);

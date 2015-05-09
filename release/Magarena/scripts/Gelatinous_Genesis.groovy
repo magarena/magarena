@@ -16,7 +16,7 @@
                 event.getPlayer(), 
                 MagicCardDefinition.create({
                     it.setName("Ooze");
-                    it.setFullName("green Ooze creature token");
+                    it.setDistinctName("green Ooze creature token");
                     it.setPowerToughness(x, x);
                     it.setColors("g");
                     it.addSubType(MagicSubType.Ooze);

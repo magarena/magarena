@@ -13,7 +13,7 @@ def PutHydra = new MagicTrigger<Integer>() {
         final int x = event.getRefInt();
         final MagicCardDefinition tokenDef = MagicCardDefinition.create({
             it.setName("Hydra");
-            it.setFullName("green Hydra creature token");
+            it.setDistinctName("green Hydra creature token");
             it.setPowerToughness(x,x);
             it.setColors("g");
             it.addSubType(MagicSubType.Hydra);

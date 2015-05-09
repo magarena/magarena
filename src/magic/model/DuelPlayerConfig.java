@@ -82,7 +82,7 @@ public class DuelPlayerConfig {
 
         int index = 1;
         for (final MagicCardDefinition cardDefinition : deck) {
-            properties.setProperty(getDeckPrefix(prefix, index++), cardDefinition.getFullName());
+            properties.setProperty(getDeckPrefix(prefix, index++), cardDefinition.getDistinctName());
         }
     }
 
