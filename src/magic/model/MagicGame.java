@@ -1134,10 +1134,6 @@ public class MagicGame {
 
     // ***** TARGETTING *****
     
-    public List<MagicTarget> filterTargets(final MagicPlayer player,final MagicTargetFilter<MagicTarget> targetFilter) {
-        return targetFilter.filter(player);
-    }
-    
     public List<MagicPlayer> filterPlayers(final MagicPlayer player,final MagicTargetFilter<MagicPlayer> targetFilter) {
         return targetFilter.filter(player);
     }
@@ -1155,14 +1151,6 @@ public class MagicGame {
     }
     
     public List<MagicCard> filterCards(final MagicTargetFilter<MagicCard> targetFilter) {
-        return targetFilter.filter(this);
-    }
-
-    public List<MagicItemOnStack> filterItemOnStack(final MagicPlayer player,final MagicTargetFilter<MagicItemOnStack> targetFilter) {
-        return targetFilter.filter(player);
-    }
-    
-    public List<MagicItemOnStack> filterItemOnStack(final MagicTargetFilter<MagicItemOnStack> targetFilter) {
         return targetFilter.filter(this);
     }
 
