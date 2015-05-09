@@ -18,7 +18,7 @@ Beastmaster Ascension
 Beetleback Chief
 Benevolent Offering
 Bitter Feud
-Black Sun’s Zenith
+Black Sun's Zenith
 Blasphemous Act
 Bloodgift Demon
 Bogardan Hellkite
@@ -35,14 +35,14 @@ Butcher of Malakir
 Cackling Counterpart
 Caged Sun
 Call to Mind
-Cathars’ Crusade
+Cathars' Crusade
 Cathodion
 Celestial Crusader
 Chaos Warp
 Charcoal Diamond
 Collective Unconscious
 Comeuppance
-Commander’s Sphere
+Commander's Sphere
 Compulsive Research
 Concentrate
 Condemn
@@ -99,11 +99,11 @@ Flametongue Kavu
 Flesh Carver
 Flickerwisp
 Fog Bank
-Fool’s Demise
+Fool's Demise
 Forest
 Forgotten Cave
 Fresh Meat
-Freyalise, Llanowar’s Fury
+Freyalise, Llanowar's Fury
 Frost Titan
 Gargoyle Castle
 Geist-Honored Monk
@@ -146,11 +146,11 @@ Kemba, Kha Regent
 Kor Sanctifiers
 Lashwrithe
 Lifeblood Hydra
-Liliana’s Reaver
+Liliana's Reaver
 Liquimetal Coating
 Llanowar Elves
 Lonely Sandbar
-Loreseeker’s Stone
+Loreseeker's Stone
 Lorthos, the Tidemaker
 Loxodon Warhammer
 Lys Alana Huntmaster
@@ -158,7 +158,7 @@ Magmaquake
 Magus of the Coffers
 Malicious Affliction
 Marble Diamond
-Marshal’s Anthem
+Marshal's Anthem
 Martial Coup
 Mask of Memory
 Masked Admirers
@@ -182,8 +182,8 @@ Nahiri, the Lithomancer
 Nantuko Shade
 Necromantic Selection
 Nekrataal
-Nevinyrral’s Disk
-Nomads’ Assembly
+Nevinyrral's Disk
+Nomads' Assembly
 Ob Nixilis of the Black Oath
 Oblation
 Oran-Rief, the Vastwood
@@ -195,15 +195,15 @@ Panic Spellbomb
 Pearl Medallion
 Pentavus
 Pestilence Demon
-Phyrexia’s Core
+Phyrexia's Core
 Phyrexian Gargantua
 Phyrexian Ingester
-Pilgrim’s Eye
+Pilgrim's Eye
 Plains
 Polluted Mire
 Pongify
 Pontiff of Blight
-Praetor’s Counsel
+Praetor's Counsel
 Predator, Flagship
 Priest of Titania
 Primordial Sage
@@ -229,7 +229,7 @@ Sapphire Medallion
 Scrap Mastery
 Sea Gate Oracle
 Secluded Steppe
-Seer’s Sundial
+Seer's Sundial
 Serra Avatar
 Shaper Parasite
 Shriekmaw
@@ -280,9 +280,9 @@ Thornweald Archer
 Thran Dynamo
 Thunderfoot Baloth
 Timberwatch Elf
-Titania’s Chosen
+Titania's Chosen
 Titania, Protector of Argoth
-Tormod’s Crypt
+Tormod's Crypt
 Tornado Elemental
 Trading Post
 Tragic Slip
@@ -291,30 +291,30 @@ True Conviction
 Tuktuk the Explorer
 Turn to Frog
 Twilight Shepherd
-Tyrant’s Familiar
+Tyrant's Familiar
 Unstable Obelisk
-Ur-Golem’s Eye
+Ur-Golem's Eye
 Vampire Hexmage
 Victimize
 Volcanic Offering
 Wake the Dead
 Warmonger Hellkite
 Wave of Vitriol
-Wayfarer’s Bauble
+Wayfarer's Bauble
 Well of Ideas
 Wellwisher
 Whipflare
 Whirlwind
-White Sun’s Zenith
+White Sun's Zenith
 Whitemane Lion
 Willbender
 Wing Shards
 Wolfbriar Elemental
-Wolfcaller’s Howl
+Wolfcaller's Howl
 Wood Elves
 Word of Seizing
 Worn Powerstone
-Wren’s Run Packmaster
+Wren's Run Packmaster
 Wurmcoil Engine
 Xathrid Demon
 Zoetic Cavern
