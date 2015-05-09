@@ -19,6 +19,7 @@ import magic.model.target.MagicTarget;
 import magic.model.target.MagicPermanentTargetFilter;
 import magic.model.target.MagicTargetFilter;
 import magic.model.target.MagicTargetFilterFactory;
+import magic.model.target.MagicTargetHint;
 import magic.model.event.MagicSourceEvent;
 import magic.model.event.MagicEvent;
 
@@ -95,7 +96,7 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
         return new MagicStatic(MagicLayer.ModPT, affected) {
             @Override
             public void modPowerToughness(final MagicPermanent source, final MagicPermanent permanent, final MagicPowerToughness pt) {
-                final int amt = counted.filter(source.getController()).size();
+                final int amt = counted.filter(source, source.getController(), MagicTargetHint.None).size();
                 pt.add(given.power() * amt, given.toughness() * amt);
             }
         };
