@@ -1,6 +1,7 @@
 package magic.model.event;
 
 import magic.model.MagicSource;
+import magic.model.MagicPlayer;
 import magic.model.MagicCopyable;
 import magic.model.condition.MagicCondition;
 import magic.model.choice.MagicChoice;
@@ -16,8 +17,16 @@ public abstract class MagicSourceEvent {
         rule = aRule;
         matcher = aMatcher;
     }
-
-    public abstract MagicEvent getEvent(final MagicSource source, final MagicCopyable ref);
+    
+    public abstract MagicEvent getEvent(final MagicSource source, final MagicPlayer player, final MagicCopyable ref);
+    
+    public MagicEvent getEvent(final MagicSource source, final MagicCopyable ref) {
+        return getEvent(source, source.getController(), ref);
+    }
+    
+    public MagicEvent getEvent(final MagicSource source, final MagicPlayer player) {
+        return getEvent(source, player, MagicEvent.NO_REF);
+    }
     
     public MagicEvent getEvent(final MagicSource source) {
         return getEvent(source, MagicEvent.NO_REF);

@@ -3593,9 +3593,10 @@ public enum MagicRuleEventAction {
         if (mayCost != MagicManaCost.ZERO) {
             return new MagicSourceEvent(ruleAction, matcher) {
                 @Override
-                public MagicEvent getEvent(final MagicSource source, final MagicCopyable ref) {
+                public MagicEvent getEvent(final MagicSource source, final MagicPlayer player, final MagicCopyable ref) {
                     return ifCond.accept(source) ? new MagicEvent(
                         source,
+                        player,
                         new MagicMayChoice(
                             new MagicPayManaCostChoice(mayCost),
                             choice
@@ -3622,9 +3623,10 @@ public enum MagicRuleEventAction {
         } else if (optional) {
             return new MagicSourceEvent(ruleAction, matcher) {
                 @Override
-                public MagicEvent getEvent(final MagicSource source, final MagicCopyable ref) {
+                public MagicEvent getEvent(final MagicSource source, final MagicPlayer player, final MagicCopyable ref) {
                     return ifCond.accept(source) ? new MagicEvent(
                         source,
+                        player,
                         new MagicMayChoice(
                             pnMayChoice.replaceAll("SN",source.toString()),
                             choice
@@ -3651,9 +3653,10 @@ public enum MagicRuleEventAction {
         } else {
             return new MagicSourceEvent(ruleAction, matcher) {
                 @Override
-                public MagicEvent getEvent(final MagicSource source, final MagicCopyable ref) {
+                public MagicEvent getEvent(final MagicSource source, final MagicPlayer player, final MagicCopyable ref) {
                     return ifCond.accept(source) ? new MagicEvent(
                         source,
+                        player,
                         choice,
                         picker,
                         ref,
