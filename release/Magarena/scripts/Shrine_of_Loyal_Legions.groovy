@@ -26,7 +26,7 @@
             final int amount=event.getPermanent().getCounters(MagicCounterType.Charge);
             game.doAction(new PlayTokensAction(
                     event.getPlayer(),
-                    TokenCardDefinitions.get("1/1 colorless Myr artifact creature token"),
+                    CardDefinitions.getToken("1/1 colorless Myr artifact creature token"),
                     amount
                 ));
         }

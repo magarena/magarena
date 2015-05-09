@@ -16,7 +16,7 @@
             def amount = zombies.intdiv(2);
             game.doAction(new PlayTokensAction(
                 player,
-                TokenCardDefinitions.get("2/2 black Zombie creature token"),
+                CardDefinitions.getToken("2/2 black Zombie creature token"),
                 amount
             ));;
         }

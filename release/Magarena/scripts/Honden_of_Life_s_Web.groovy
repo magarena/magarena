@@ -13,7 +13,7 @@
             final int size = event.getPlayer().getNrOfPermanents(MagicSubType.Shrine);
             game.doAction(new PlayTokensAction(
                 event.getPlayer(),
-                TokenCardDefinitions.get("1/1 colorless Spirit creature token"),
+                CardDefinitions.getToken("1/1 colorless Spirit creature token"),
                 size
             ));
         }

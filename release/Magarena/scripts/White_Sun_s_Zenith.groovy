@@ -14,7 +14,7 @@
             final MagicCardOnStack spell = event.getCardOnStack();
             game.doAction(new PlayTokensAction(
                 event.getPlayer(),
-                TokenCardDefinitions.get("2/2 white Cat creature token"),
+                CardDefinitions.getToken("2/2 white Cat creature token"),
                 spell.getX()
             ));
             game.doAction(new ChangeCardDestinationAction(spell,MagicLocationType.OwnersLibrary));

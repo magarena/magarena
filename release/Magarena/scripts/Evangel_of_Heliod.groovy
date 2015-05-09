@@ -13,7 +13,7 @@
             final int amount = event.getPlayer().getDevotion(MagicColor.White);
             game.doAction(new PlayTokensAction(
                 event.getPlayer(),
-                TokenCardDefinitions.get("1/1 white Soldier creature token"),
+                CardDefinitions.getToken("1/1 white Soldier creature token"),
                 amount
             ));
         }

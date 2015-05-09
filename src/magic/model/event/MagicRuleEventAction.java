@@ -6,7 +6,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import magic.data.EnglishToInt;
-import magic.data.TokenCardDefinitions;
+import magic.data.CardDefinitions;
 import magic.model.ARG;
 import magic.model.MagicRandom;
 import magic.model.MagicAbility;
@@ -2208,7 +2208,7 @@ public enum MagicRuleEventAction {
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
-            final MagicCardDefinition tokenDef = TokenCardDefinitions.get(matcher.group("name"));
+            final MagicCardDefinition tokenDef = CardDefinitions.getToken(matcher.group("name"));
             final List<MagicPlayMod> mods = MagicPlayMod.build(matcher.group("mods"));
             return new MagicEventAction() {
                 @Override
@@ -2231,7 +2231,7 @@ public enum MagicRuleEventAction {
         public MagicEventAction getAction(final Matcher matcher) {
             final int amount = EnglishToInt.convert(matcher.group("amount"));
             final String tokenName = matcher.group("name").replace("tokens", "token");
-            final MagicCardDefinition tokenDef = TokenCardDefinitions.get(tokenName);
+            final MagicCardDefinition tokenDef = CardDefinitions.getToken(tokenName);
             final List<MagicPlayMod> mods = MagicPlayMod.build(matcher.group("mods"));
             return new MagicEventAction() {
                 @Override

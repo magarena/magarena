@@ -17,7 +17,7 @@
             if (event.isYes()) {
                 game.doAction(new PlayTokenAction(
                     event.getPlayer(),
-                    TokenCardDefinitions.get("3/1 red Elemental Shaman creature token"),
+                    CardDefinitions.getToken("3/1 red Elemental Shaman creature token"),
                     (event.getRefPlayer() == event.getPlayer()) ? [MagicPlayMod.HASTE_UEOT] : [MagicPlayMod.NONE]
                 ));
             }

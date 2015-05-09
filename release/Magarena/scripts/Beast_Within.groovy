@@ -16,7 +16,7 @@
                 game.doAction(new DestroyAction(it));
                 game.doAction(new PlayTokenAction(
                     it.getController(),
-                    TokenCardDefinitions.get("3/3 green Beast creature token")
+                    CardDefinitions.getToken("3/3 green Beast creature token")
                 ));
             });
         }

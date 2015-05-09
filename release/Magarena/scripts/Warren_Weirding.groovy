@@ -6,7 +6,7 @@ def action = {
             for (int i = 0; i < 2; i++) {
                 game.doAction(new PlayTokenAction(
                     event.getPlayer(),
-                    TokenCardDefinitions.get("1/1 black Goblin Rogue creature token"),
+                    CardDefinitions.getToken("1/1 black Goblin Rogue creature token"),
                     MagicPlayMod.HASTE_UEOT
                 ));
             }

@@ -1,6 +1,6 @@
 package magic.model.trigger;
 
-import magic.data.TokenCardDefinitions;
+import magic.data.CardDefinitions;
 import magic.model.MagicGame;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
@@ -36,7 +36,7 @@ public class MagicLivingWeaponTrigger extends MagicWhenComesIntoPlayTrigger {
         final MagicPermanent sn = event.getPermanent();
         game.doAction(new PlayTokenAction(
             event.getPlayer(),
-            TokenCardDefinitions.get("0/0 black Germ creature token"),
+            CardDefinitions.getToken("0/0 black Germ creature token"),
             new MagicPermanentAction() {
                 @Override
                 public void doAction(final MagicPermanent perm) {

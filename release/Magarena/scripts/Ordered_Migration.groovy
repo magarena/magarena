@@ -15,7 +15,7 @@
             final MagicPlayer player = event.getPlayer();
             final int domain = player.getDomain();
             game.logAppendMessage(player," ("+domain+")");
-            game.doAction(new PlayTokensAction(player,TokenCardDefinitions.get("1/1 blue Bird creature token with flying"),domain));
+            game.doAction(new PlayTokensAction(player,CardDefinitions.getToken("1/1 blue Bird creature token with flying"),domain));
         }
     }
 ]

@@ -14,7 +14,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new PlayTokensAction(
                 event.getPlayer(),
-                TokenCardDefinitions.get("4/4 white Angel creature token with flying"),
+                CardDefinitions.getToken("4/4 white Angel creature token with flying"),
                 event.getRefInt()
             ));
         }
@@ -37,7 +37,7 @@
             if (event.isYes()) {
                 game.doAction(new PlayTokensAction(
                     event.getPlayer(),
-                    TokenCardDefinitions.get("1/1 white Soldier creature token"),
+                    CardDefinitions.getToken("1/1 white Soldier creature token"),
                     event.getPaidMana().getX()
                 ));
             }

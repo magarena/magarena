@@ -15,7 +15,7 @@
             event.processTargetPlayer(game, {
                 game.doAction(new PlayTokensAction(
                     it,
-                    TokenCardDefinitions.get("1/1 blue Faerie creature token with flying"),
+                    CardDefinitions.getToken("1/1 blue Faerie creature token with flying"),
                     4
                 )); 
             })

@@ -101,20 +101,13 @@ public class CardDefinitions {
         assert cardDef != null : "CardDefinitions.addDefinition passed null";
         assert cardDef.getIndex() == -1 : "cardDefinition has been assigned index";
 
-        if (allPlayableCardDefs.putIfAbsent(cardDef.getAsciiName(), cardDef) != null) {
-            // card definition already added, early exit
-            return;
-        }
-
         cardDef.setIndex(cdefIndex.getAndIncrement());
-        
-        if (cardDef.isToken()) {
-            TokenCardDefinitions.add(cardDef);
-        }
         
         if (cardDef.isToken() == false && cardDef.isHidden() == false) {
             cardDef.add(new MagicCardActivation(cardDef));
         }
+        
+        allPlayableCardDefs.put(cardDef.getAsciiName(), cardDef);
     }
 
     private static MagicCardDefinition prop2carddef(final File scriptFile, final boolean isMissing) {
@@ -261,6 +254,15 @@ public class CardDefinitions {
             executor.awaitTermination(100, TimeUnit.SECONDS);
         } catch (final InterruptedException ex) {
             throw new RuntimeException(ex);
+        }
+    }
+    
+    public static MagicCardDefinition getToken(final String original) {
+        final MagicCardDefinition token = getCard(original);
+        if (token.isToken()) {
+            return token;
+        } else {
+            throw new RuntimeException("unknown token: \"" + original + "\"");
         }
     }
 
@@ -474,7 +476,7 @@ public class CardDefinitions {
     private static List<String> getPlayableNonTokenCardNames() {
         final ArrayList<String> cardNames = new ArrayList<>();
         for (MagicCardDefinition card : getAllPlayableCardDefs()) {
-            if (!card.isToken()) {
+            if (card.isToken() == false) {
                 cardNames.add(card.getName());
             }
         }

@@ -53,7 +53,7 @@ def choice = new MagicTargetChoice("a basic land you control");
                 game.doAction(new DestroyAction(it));
                 game.doAction(new PlayTokenAction(
                     it.getController(),
-                    TokenCardDefinitions.get("0/1 green Sheep creature token")
+                    CardDefinitions.getToken("0/1 green Sheep creature token")
                 ));
             });
         }

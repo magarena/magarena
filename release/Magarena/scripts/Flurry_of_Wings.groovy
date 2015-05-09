@@ -13,7 +13,7 @@
             final int X = game.getTurnPlayer().getNrOfAttackers();
             game.doAction(new PlayTokensAction(
                 event.getPlayer(),
-                TokenCardDefinitions.get("1/1 white Bird Soldier creature token with flying"),
+                CardDefinitions.getToken("1/1 white Bird Soldier creature token with flying"),
                 X
             ));
         }

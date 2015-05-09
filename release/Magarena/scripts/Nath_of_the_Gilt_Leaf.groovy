@@ -16,7 +16,7 @@
             if (event.isYes()) {
                 game.doAction(new PlayTokenAction(
                     event.getPlayer(), 
-                    TokenCardDefinitions.get("1/1 green Elf Warrior creature token")
+                    CardDefinitions.getToken("1/1 green Elf Warrior creature token")
                 ));
             }
         }

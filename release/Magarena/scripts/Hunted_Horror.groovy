@@ -15,7 +15,7 @@
             event.processTargetPlayer(game, {
                 game.doAction(new PlayTokensAction(
                     it,
-                    TokenCardDefinitions.get("3/3 green Centaur creature token with protection from black"),
+                    CardDefinitions.getToken("3/3 green Centaur creature token with protection from black"),
                     2
                 )); 
             })

@@ -14,7 +14,7 @@
             game.doAction(new ChangeCountersAction(perm,MagicCounterType.Muster,1));
             game.doAction(new PlayTokensAction(
                 event.getPlayer(),
-                TokenCardDefinitions.get("1/1 red and white Soldier creature token with haste"), 
+                CardDefinitions.getToken("1/1 red and white Soldier creature token with haste"), 
                 perm.getCounters(MagicCounterType.Muster)
             ));
         }

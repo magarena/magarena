@@ -12,7 +12,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player=event.getPlayer();
-            game.doAction(new PlayTokenAction(player,TokenCardDefinitions.get("3/3 green Beast creature token")));
+            game.doAction(new PlayTokenAction(player,CardDefinitions.getToken("3/3 green Beast creature token")));
             final boolean more = player.getOpponent().getNrOfPermanents(MagicType.Creature) >
                                  player.getNrOfPermanents(MagicType.Creature);
             if (more) {

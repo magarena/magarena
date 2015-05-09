@@ -16,7 +16,7 @@
             game.logAppendMessage(event.getPlayer(),"("+amount+")");
             game.doAction(new PlayTokensAction(
                     event.getPlayer(),
-                    TokenCardDefinitions.get("0/1 black Insect creature token"),
+                    CardDefinitions.getToken("0/1 black Insect creature token"),
                     amount
                 ));
         }

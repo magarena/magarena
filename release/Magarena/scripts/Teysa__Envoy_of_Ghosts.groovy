@@ -20,7 +20,7 @@
             game.doAction(new DestroyAction(event.getRefPermanent()));
             game.doAction(new PlayTokenAction(
                 event.getPlayer(),
-                TokenCardDefinitions.get("1/1 white and black Spirit creature token with flying")
+                CardDefinitions.getToken("1/1 white and black Spirit creature token with flying")
             ));
         }
     }   

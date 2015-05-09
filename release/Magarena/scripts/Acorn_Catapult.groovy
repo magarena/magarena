@@ -30,7 +30,7 @@
                 game.doAction(new DealDamageAction(event.getSource(),it,1));
                 game.doAction(new PlayTokenAction(
                     it.getController(),
-                    TokenCardDefinitions.get("1/1 green Squirrel creature token")
+                    CardDefinitions.getToken("1/1 green Squirrel creature token")
                 ));
             });
         }

@@ -3,7 +3,6 @@ package magic.test;
 import java.util.concurrent.atomic.AtomicInteger;
 import magic.ai.MagicAIImpl;
 import magic.data.CardDefinitions;
-import magic.data.TokenCardDefinitions;
 import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeckProfile;
@@ -49,12 +48,6 @@ public abstract class TestGameBuilder {
         final MagicCardDefinition cardDefinition=CardDefinitions.getCard(name);
         for (int c=count;c>0;c--) {
             player.addCardToHand(new MagicCard(cardDefinition,player,currentId.incrementAndGet()));
-        }
-    }
-
-    static void createAllTokens(final MagicGame game, final MagicPlayer player) {
-        for (final MagicCardDefinition cardDefinition : TokenCardDefinitions.getAll()) {
-            game.doAction(new PlayTokenAction(player,cardDefinition));
         }
     }
 

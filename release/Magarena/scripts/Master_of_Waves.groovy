@@ -13,7 +13,7 @@
             final int amount = event.getPlayer().getDevotion(MagicColor.Blue);
             game.doAction(new PlayTokensAction(
                 event.getPlayer(),
-                TokenCardDefinitions.get("1/0 blue Elemental creature token"),
+                CardDefinitions.getToken("1/0 blue Elemental creature token"),
                 amount
             ));
         }

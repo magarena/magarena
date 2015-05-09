@@ -39,7 +39,7 @@
                             if (card.hasColor(color)) {
                                 game.doAction(new PlayTokenAction(
                                     event.getPlayer(),
-                                    TokenCardDefinitions.get("1/1 black Faerie Rogue creature token with flying")
+                                    CardDefinitions.getToken("1/1 black Faerie Rogue creature token with flying")
                                 ));
                             }
                         }

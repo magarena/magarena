@@ -15,7 +15,7 @@
             final rn = event.getRefPermanent();
             game.doAction(new PlayTokenAction(
                 event.getPlayer(),
-                TokenCardDefinitions.get("1/1 white Cat Soldier creature token with vigilance"),
+                CardDefinitions.getToken("1/1 white Cat Soldier creature token with vigilance"),
                 {
                     final MagicPermanent perm ->
                     final MagicGame G = perm.getGame();

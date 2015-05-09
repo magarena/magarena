@@ -13,7 +13,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
             final int amount = 2 * game.filterCards(player, CREATURE_CARD_FROM_GRAVEYARD).size();
-            game.doAction(new PlayTokensAction(player,TokenCardDefinitions.get("1/2 green Spider creature token with reach"),amount));
+            game.doAction(new PlayTokensAction(player,CardDefinitions.getToken("1/2 green Spider creature token with reach"),amount));
         }
     }
 ]

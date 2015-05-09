@@ -13,7 +13,7 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new PlayTokensAction(event.getRefCardOnStack().getCard().getController(), TokenCardDefinitions.get("1/1 white and blue Bird creature token with flying"), event.getRefCardOnStack().getConvertedCost()));
+            game.doAction(new PlayTokensAction(event.getRefCardOnStack().getCard().getController(), CardDefinitions.getToken("1/1 white and blue Bird creature token with flying"), event.getRefCardOnStack().getConvertedCost()));
             game.doAction(new CounterItemOnStackAction(event.getRefCardOnStack()));
         }
     }

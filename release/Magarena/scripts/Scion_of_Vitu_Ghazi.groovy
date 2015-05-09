@@ -14,7 +14,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new PlayTokenAction(
                 event.getPlayer(),
-                TokenCardDefinitions.get("1/1 white and blue Bird creature token with flying")
+                CardDefinitions.getToken("1/1 white and blue Bird creature token with flying")
             ));
             game.addEvent(new MagicPopulateEvent(event.getSource()));
         }

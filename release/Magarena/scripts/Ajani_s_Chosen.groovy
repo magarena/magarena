@@ -16,7 +16,7 @@
             final MagicPermanent rn = event.getRefPermanent();
             game.doAction(new PlayTokenAction(
                 event.getPlayer(),
-                TokenCardDefinitions.get("2/2 white Cat creature token"),
+                CardDefinitions.getToken("2/2 white Cat creature token"),
                 {
                     final MagicPermanent token ->
                     final MagicGame G1 = token.getGame();

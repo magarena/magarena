@@ -28,7 +28,7 @@
             game.logAppendMessage(player,"("+amount+")");
             game.doAction(new PlayTokensAction(
                 player,
-                TokenCardDefinitions.get("1/1 blue Camarid creature token"),
+                CardDefinitions.getToken("1/1 blue Camarid creature token"),
                 amount
             ));
         }

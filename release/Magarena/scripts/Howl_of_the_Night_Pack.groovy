@@ -13,7 +13,7 @@
             final MagicPlayer player = event.getPlayer();
             game.doAction(new PlayTokensAction(
                 player,
-                TokenCardDefinitions.get("2/2 green Wolf creature token"),
+                CardDefinitions.getToken("2/2 green Wolf creature token"),
                 player.getNrOfPermanents(FOREST)
             ));
         }

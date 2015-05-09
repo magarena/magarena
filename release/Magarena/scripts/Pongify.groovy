@@ -23,7 +23,7 @@
                 game.doAction(new DestroyAction(it));
                 game.doAction(new PlayTokenAction(
                     controller,
-                    TokenCardDefinitions.get("3/3 green Ape creature token")
+                    CardDefinitions.getToken("3/3 green Ape creature token")
                 ));
             });
         }

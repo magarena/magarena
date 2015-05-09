@@ -15,7 +15,7 @@
             event.processTargetPlayer(game, {
                 game.doAction(new PlayTokenAction(
                     it,
-                    TokenCardDefinitions.get("4/4 black Horror creature token")
+                    CardDefinitions.getToken("4/4 black Horror creature token")
                 )); 
             })
         }

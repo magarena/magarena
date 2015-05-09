@@ -26,7 +26,7 @@ def action = {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
-            game.doAction(new PlayTokenAction(player,TokenCardDefinitions.get("2/2 blue Homunculus creature token")));
+            game.doAction(new PlayTokenAction(player,CardDefinitions.getToken("2/2 blue Homunculus creature token")));
             game.addEvent(new MagicEvent(
                 event.getSource(),
                 player,

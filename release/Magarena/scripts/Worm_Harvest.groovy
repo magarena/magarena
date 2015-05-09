@@ -17,7 +17,7 @@
             ).size();
             game.doAction(new PlayTokensAction(
                 event.getPlayer(),
-                TokenCardDefinitions.get("1/1 black and green Worm creature token"),
+                CardDefinitions.getToken("1/1 black and green Worm creature token"),
                 amount
             ));
         }

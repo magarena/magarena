@@ -23,7 +23,7 @@ def choice = new MagicTargetChoice("a Rat to sacrifice");
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final int amount = event.getPlayer().getNrOfPermanents(MagicSubType.Rat);
-            game.doAction(new PlayTokensAction(event.getPlayer(),TokenCardDefinitions.get("1/1 black Rat creature token"),amount));
+            game.doAction(new PlayTokensAction(event.getPlayer(),CardDefinitions.getToken("1/1 black Rat creature token"),amount));
         }
     }
 ]

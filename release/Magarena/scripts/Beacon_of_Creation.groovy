@@ -14,7 +14,7 @@
             final MagicPlayer player = event.getPlayer()
             game.doAction(new PlayTokensAction(
                 player,
-                TokenCardDefinitions.get("1/1 green Insect creature token"),
+                CardDefinitions.getToken("1/1 green Insect creature token"),
                 player.getNrOfPermanents(FOREST)
             ));
             game.doAction(new ChangeCardDestinationAction(event.getCardOnStack(),MagicLocationType.OwnersLibrary));

@@ -23,7 +23,7 @@
                 game.doAction(new DestroyAction(it));
                 game.doAction(new PlayTokenAction(
                     controller,
-                    TokenCardDefinitions.get("1/1 white Spirit creature token with flying")
+                    CardDefinitions.getToken("1/1 white Spirit creature token with flying")
                 ));
             });
         }

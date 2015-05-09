@@ -25,7 +25,7 @@
             if (event.isYes()) {
                 game.doAction(new PlayTokenAction(
                     event.getPlayer(),
-                    TokenCardDefinitions.get("1/1 colorless Sliver creature token")
+                    CardDefinitions.getToken("1/1 colorless Sliver creature token")
                 ));
             }
         }

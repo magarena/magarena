@@ -20,7 +20,7 @@
             if (event.isYes()) {
                 game.doAction(new PlayTokensAction(
                     event.getPlayer().getOpponent(),
-                    TokenCardDefinitions.get("1/1 red Survivor creature token"),
+                    CardDefinitions.getToken("1/1 red Survivor creature token"),
                     event.getPermanent().getCounters(MagicCounterType.Age)
                 ));
             } else {

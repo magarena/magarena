@@ -21,7 +21,7 @@
             }
             game.doAction(new PlayTokensAction(
                 event.getPlayer(),
-                TokenCardDefinitions.get("5/5 red Dragon creature token with flying"),
+                CardDefinitions.getToken("5/5 red Dragon creature token with flying"),
                 targets.size()
             ));
         }

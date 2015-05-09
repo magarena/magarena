@@ -22,7 +22,7 @@
             if (event.isYes()){
                 game.doAction(new PlayTokensAction(
                     event.getPlayer(),
-                    TokenCardDefinitions.get("1/1 white Soldier creature token"),
+                    CardDefinitions.getToken("1/1 white Soldier creature token"),
                     event.getRefInt()
                 ));
             }

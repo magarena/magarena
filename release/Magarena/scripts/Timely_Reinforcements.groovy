@@ -20,7 +20,7 @@
                 player.getOpponent().getNrOfPermanents(MagicType.Creature)) {
                 game.doAction(new PlayTokensAction(
                     player,
-                    TokenCardDefinitions.get("1/1 white Soldier creature token"),
+                    CardDefinitions.getToken("1/1 white Soldier creature token"),
                     3
                 ));
             }

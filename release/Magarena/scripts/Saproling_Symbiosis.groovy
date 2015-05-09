@@ -12,7 +12,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new PlayTokensAction(
                 event.getPlayer(),
-                TokenCardDefinitions.get("1/1 green Saproling creature token"),
+                CardDefinitions.getToken("1/1 green Saproling creature token"),
                 event.getPlayer().getNrOfPermanents(MagicType.Creature)
             ));
         }

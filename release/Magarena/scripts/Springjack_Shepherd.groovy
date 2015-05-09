@@ -13,7 +13,7 @@
             final int amount = event.getPlayer().getDevotion(MagicColor.White);
             game.doAction(new PlayTokensAction(
                 event.getPlayer(),
-                TokenCardDefinitions.get("0/1 white Goat creature token"),
+                CardDefinitions.getToken("0/1 white Goat creature token"),
                 amount
             ));
         }

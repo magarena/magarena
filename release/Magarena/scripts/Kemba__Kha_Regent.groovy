@@ -14,7 +14,7 @@
             final MagicPermanent permanent = event.getPermanent();
             game.doAction(new PlayTokensAction(
                 event.getPlayer(),
-                TokenCardDefinitions.get("2/2 white Cat creature token"),
+                CardDefinitions.getToken("2/2 white Cat creature token"),
                 permanent.getEquipmentPermanents().size()
             ));
         }

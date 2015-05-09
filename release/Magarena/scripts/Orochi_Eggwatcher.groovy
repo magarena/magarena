@@ -23,7 +23,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new PlayTokenAction(
                 event.getPlayer(),
-                TokenCardDefinitions.get("1/1 green Snake creature token")
+                CardDefinitions.getToken("1/1 green Snake creature token")
             ));
             if (event.getPlayer().getNrOfPermanents(MagicType.Creature) >= 10) {
                 game.doAction(new FlipAction(event.getPermanent()));

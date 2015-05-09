@@ -14,7 +14,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new PlayTokensAction(
                 event.getPlayer(),
-                TokenCardDefinitions.get("0/1 colorless Eldrazi Spawn creature token"),
+                CardDefinitions.getToken("0/1 colorless Eldrazi Spawn creature token"),
                 event.getRefInt()
             ));
         }

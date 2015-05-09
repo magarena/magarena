@@ -15,7 +15,7 @@
             int x = event.getCardOnStack().getX();
             game.doAction(new PlayTokensAction(
                 player,
-                TokenCardDefinitions.get("1/1 red Goblin creature token"),
+                CardDefinitions.getToken("1/1 red Goblin creature token"),
                 x
             ));
         }

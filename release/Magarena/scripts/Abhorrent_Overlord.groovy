@@ -13,7 +13,7 @@
             final int amount = event.getPlayer().getDevotion(MagicColor.Black);
             game.doAction(new PlayTokensAction(
                 event.getPlayer(),
-                TokenCardDefinitions.get("1/1 black Harpy creature token with flying"),
+                CardDefinitions.getToken("1/1 black Harpy creature token with flying"),
                 amount
             ));
         }

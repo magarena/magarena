@@ -15,7 +15,7 @@
             event.processTargetPlayer(game, {
                 game.doAction(new PlayTokensAction(
                     it,
-                    TokenCardDefinitions.get("2/2 white Knight creature token with first strike"),
+                    CardDefinitions.getToken("2/2 white Knight creature token with first strike"),
                     3
                 )); 
             })

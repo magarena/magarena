@@ -15,7 +15,7 @@
             final MagicPlayer player = event.getPlayer();
             final int domain = player.getDomain();
             game.logAppendMessage(player," ("+domain+")");
-            game.doAction(new PlayTokensAction(player,TokenCardDefinitions.get("1/1 green Saproling creature token"),domain));
+            game.doAction(new PlayTokensAction(player,CardDefinitions.getToken("1/1 green Saproling creature token"),domain));
         }
     }
 ]

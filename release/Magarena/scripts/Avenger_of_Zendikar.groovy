@@ -18,7 +18,7 @@
             int amount = player.getNrOfPermanents(MagicType.Land);
             game.doAction(new PlayTokensAction(
                 player,
-                TokenCardDefinitions.get("0/1 green Plant creature token"),
+                CardDefinitions.getToken("0/1 green Plant creature token"),
                 amount
             ));
         }

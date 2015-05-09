@@ -80,7 +80,7 @@
             event.processTargetPlayer(game, {
                 game.doAction(new PlayTokensAction(
                     it,
-                    TokenCardDefinitions.get("1/1 green Hippo creature token"),
+                    CardDefinitions.getToken("1/1 green Hippo creature token"),
                     1
                 ));
             });

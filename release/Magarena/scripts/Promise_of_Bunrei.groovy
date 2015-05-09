@@ -22,7 +22,7 @@
                 game.doAction(new SacrificeAction(permanent));
                 game.doAction(new PlayTokensAction(
                     player,
-                    TokenCardDefinitions.get("1/1 colorless Spirit creature token"),
+                    CardDefinitions.getToken("1/1 colorless Spirit creature token"),
                     4
                 ));
             }

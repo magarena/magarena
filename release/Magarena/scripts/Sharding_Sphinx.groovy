@@ -24,7 +24,7 @@
             if (event.isYes()) {
                 game.doAction(new PlayTokenAction(
                     event.getPlayer(),
-                    TokenCardDefinitions.get("1/1 blue Thopter artifact creature token with flying")
+                    CardDefinitions.getToken("1/1 blue Thopter artifact creature token with flying")
                 ));
             }
         }
