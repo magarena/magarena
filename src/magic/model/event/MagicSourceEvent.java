@@ -24,14 +24,14 @@ public abstract class MagicSourceEvent {
         return getEvent(source, source.getController(), ref);
     }
     
-    public MagicEvent getEvent(final MagicSource source, final MagicPlayer player) {
-        return getEvent(source, player, MagicEvent.NO_REF);
+    public MagicEvent getEvent(final MagicSource source) {
+        return getEvent(source, source.getController(), MagicEvent.NO_REF);
     }
     
-    public MagicEvent getEvent(final MagicSource source) {
-        return getEvent(source, MagicEvent.NO_REF);
+    public MagicEvent getEvent(final MagicEvent event) {
+        return getEvent(event.getSource(), event.getPlayer(), MagicEvent.NO_REF);
     }
-
+    
     public MagicCondition[] getConditions() {
         return rule.getConditions(matcher);
     }
