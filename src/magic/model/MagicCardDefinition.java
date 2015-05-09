@@ -222,6 +222,20 @@ public class MagicCardDefinition implements MagicAbilityStore {
         fullName = name;
     }
 
+    /**
+     * Returns the name of the card containing only ASCII characters.
+     */
+    public String getAsciiName() {
+        return CardDefinitions.getASCII(fullName);
+    }
+    
+    /**
+     * Returns the name of the script/groovy file without extension
+     */
+    public String getFilename() {
+        return CardDefinitions.getCanonicalName(fullName);
+    }
+
     public void setIndex(final int index) {
         this.index=index;
     }
@@ -1009,12 +1023,5 @@ public class MagicCardDefinition implements MagicAbilityStore {
     }
     public boolean IsScriptFileMissing() {
         return isScriptFileMissing;
-    }
-
-    /**
-     * Returns the name of the card containing only ASCII characters.
-     */
-    public String getAsciiName() {
-        return CardDefinitions.getASCII(fullName);
     }
 }
