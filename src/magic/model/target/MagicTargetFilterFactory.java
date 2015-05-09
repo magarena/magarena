@@ -2569,7 +2569,7 @@ public class MagicTargetFilterFactory {
 
     public static String toSingular(final String arg) {
         return arg.toLowerCase()
-            .replaceAll("\"", "QUOTE")
+            .replaceAll("`", "QUOTE")
             .replaceAll("\\bcards\\b", "card")
             .replaceAll("\\bpermanents\\b", "permanent")
             .replaceAll("\\bcreatures\\b", "creature")
