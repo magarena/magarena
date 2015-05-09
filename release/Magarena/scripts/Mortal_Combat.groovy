@@ -2,7 +2,7 @@
     new MagicAtYourUpkeepTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
-            return upkeepPlayer.filterCards(CREATURE_CARD_FROM_GRAVEYARD).size() >= 20 ?
+            return CREATURE_CARD_FROM_GRAVEYARD.filter(upkeepPlayer).size() >= 20 ?
                 new MagicEvent(
                     permanent,
                     this,
@@ -13,7 +13,7 @@
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            if (event.getPlayer().filterCards(CREATURE_CARD_FROM_GRAVEYARD).size() >= 20) {
+            if (CREATURE_CARD_FROM_GRAVEYARD.filter(event).size() >= 20) {
                 game.doAction(new LoseGameAction(event.getPlayer().getOpponent()));
             }
         };

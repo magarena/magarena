@@ -13,8 +13,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
-            final List<MagicCard> zombies =
-                    game.filterCards(player,ZOMBIE_CREATURE_CARD_FROM_GRAVEYARD);
+            final List<MagicCard> zombies = ZOMBIE_CREATURE_CARD_FROM_GRAVEYARD.filter(event);
             for (final MagicCard target : zombies) {
                 game.doAction(new ReanimateAction(
                     target,
@@ -22,8 +21,7 @@
                     [MagicPlayMod.TAPPED]
                 ));
             }
-            final List<MagicPermanent> humans =
-                    game.filterPermanents(player,HUMAN);
+            final List<MagicPermanent> humans = game.filterPermanents(player,HUMAN);
             game.doAction(new DestroyAction(humans));
         }
     }

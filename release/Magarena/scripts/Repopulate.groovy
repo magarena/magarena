@@ -12,7 +12,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
-                final List<MagicCard> graveyard = game.filterCards(it,CREATURE_CARD_FROM_GRAVEYARD);
+                final List<MagicCard> graveyard = CREATURE_CARD_FROM_GRAVEYARD.filter(it);
                 for (final MagicCard card : graveyard) {
                     game.doAction(new RemoveCardAction(card,MagicLocationType.Graveyard));
                     game.doAction(new MoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.OwnersLibrary));

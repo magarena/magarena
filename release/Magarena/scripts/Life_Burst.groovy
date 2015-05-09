@@ -12,11 +12,11 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final int amount = game.filterCards(
-                cardName("Life Burst")
+            final int amount = cardName("Life Burst")
                 .from(MagicTargetType.Graveyard)
                 .from(MagicTargetType.OpponentsGraveyard)
-            ).size()*4;
+                .filter(event)
+                .size()*4;
             event.processTargetPlayer(game, {
                 game.doAction(new ChangeLifeAction(it,4));
                 game.logAppendMessage(event.getPlayer()," (X="+amount+")");

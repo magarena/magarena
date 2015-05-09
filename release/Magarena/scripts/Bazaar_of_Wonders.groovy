@@ -33,17 +33,12 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicCardOnStack spell = event.getRefCardOnStack();
             final String name = spell.getCard().getName();
-            final int graveyard = game.filterCards(
-                cardName(name)
+            final int graveyard = cardName(name)
                 .from(MagicTargetType.Graveyard)
                 .from(MagicTargetType.OpponentsGraveyard)
-            ).size();
-            final int battlefield = game.filterPermanents(
-                nonTokenPermanentName(
-                    name, 
-                    Control.Any
-                )
-            ).size();
+                .filter(event)
+                .size()
+            final int battlefield = nonTokenPermanentName(name, Control.Any).filter(event).size();
             final int amount = graveyard + battlefield;
             if (amount > 0) {
                 game.logAppendMessage(event.getPlayer(), "("+name+") is countered.")

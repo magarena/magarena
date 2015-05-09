@@ -10,10 +10,12 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final List<MagicCard> graveyard=
-                game.filterCards(event.getPlayer(),BASIC_LAND_CARD_FROM_ALL_GRAVEYARDS);
-            for (final MagicCard card : graveyard) {
-                game.doAction(new ReanimateAction(card,card.getOwner(),[MagicPlayMod.TAPPED]));
+            BASIC_LAND_CARD_FROM_ALL_GRAVEYARDS.filter(event) each {
+                game.doAction(new ReanimateAction(
+                    it, 
+                    it.getOwner(), 
+                    [MagicPlayMod.TAPPED]
+                ));
             }
         }
     }

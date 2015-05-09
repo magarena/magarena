@@ -1146,14 +1146,6 @@ public class MagicGame {
         return targetFilter.filter(this);
     }
 
-    public List<MagicCard> filterCards(final MagicPlayer player,final MagicTargetFilter<MagicCard> targetFilter) {
-        return targetFilter.filter(player);
-    }
-    
-    public List<MagicCard> filterCards(final MagicTargetFilter<MagicCard> targetFilter) {
-        return targetFilter.filter(this);
-    }
-
     public boolean hasLegalTargets(
             final MagicPlayer player,
             final MagicSource source,

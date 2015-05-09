@@ -23,7 +23,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
-            final MagicCardList cards = new MagicCardList(game.filterCards(player,CREATURE_CARD_FROM_GRAVEYARD));
+            final MagicCardList cards = new MagicCardList(CREATURE_CARD_FROM_GRAVEYARD.filter(event));
             for (final MagicCard card : cards.getRandomCards(1)) {
                 game.doAction(new RemoveCardAction(card,MagicLocationType.Graveyard));
                 game.doAction(new MoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.OwnersHand));

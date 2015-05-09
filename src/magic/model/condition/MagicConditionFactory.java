@@ -289,7 +289,7 @@ public class MagicConditionFactory {
                 );
                 final MagicGame game = source.getGame();
                 final MagicPlayer player = source.getController();
-                return game.filterCards(player, filter).size() >= amt;
+                return filter.filter(player).size() >= amt;
             }
         };
     }

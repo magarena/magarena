@@ -11,9 +11,11 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicPlayer player = event.getPlayer();
-            final int amount = 2 * game.filterCards(player, CREATURE_CARD_FROM_GRAVEYARD).size();
-            game.doAction(new PlayTokensAction(player,CardDefinitions.getToken("1/2 green Spider creature token with reach"),amount));
+            game.doAction(new PlayTokensAction(
+                event.getPlayer(),
+                CardDefinitions.getToken("1/2 green Spider creature token with reach"),
+                CREATURE_CARD_FROM_GRAVEYARD.filter(event).size()
+            ));
         }
     }
 ]

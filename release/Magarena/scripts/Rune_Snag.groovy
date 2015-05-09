@@ -12,11 +12,11 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final int amount = (game.filterCards(
-                cardName("Rune Snag")
+            final int amount = (cardName("Rune Snag")
                 .from(MagicTargetType.Graveyard)
                 .from(MagicTargetType.OpponentsGraveyard)
-            ).size()*2)+2;
+                .filter(event)
+                .size()*2)+2;
             event.processTargetCardOnStack(game, {
                 game.logAppendMessage(event.getPlayer()," (X="+amount+")");
                 game.addEvent(new MagicCounterUnlessEvent(

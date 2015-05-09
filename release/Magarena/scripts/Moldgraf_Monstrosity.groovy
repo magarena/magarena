@@ -15,7 +15,7 @@
             game.doAction(new MoveCardAction(permanent.getCard(),MagicLocationType.Graveyard,MagicLocationType.Exile));
 
             final MagicPlayer player = event.getPlayer();
-            final MagicCardList cards = new MagicCardList(game.filterCards(player,CREATURE_CARD_FROM_GRAVEYARD));
+            final MagicCardList cards = new MagicCardList(CREATURE_CARD_FROM_GRAVEYARD.filter(event));
             for (final MagicCard card : cards.getRandomCards(2)) {
                 game.doAction(new ReanimateAction(
                     card,

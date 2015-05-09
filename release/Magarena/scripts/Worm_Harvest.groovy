@@ -11,10 +11,7 @@
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final int amount = game.filterCards(
-                event.getPlayer(),
-                LAND_CARD_FROM_YOUR_GRAVEYARD
-            ).size();
+            final int amount = LAND_CARD_FROM_YOUR_GRAVEYARD.filter(event).size();
             game.doAction(new PlayTokensAction(
                 event.getPlayer(),
                 CardDefinitions.getToken("1/1 black and green Worm creature token"),

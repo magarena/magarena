@@ -12,11 +12,11 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final int amount = game.filterCards(
-                cardName("Mind Burst")
+            final int amount = cardName("Mind Burst")
                 .from(MagicTargetType.Graveyard)
                 .from(MagicTargetType.OpponentsGraveyard)
-            ).size()+1;
+                .filter(event)
+                .size()+1;
             event.processTargetPlayer(game, {
                 game.logAppendMessage(event.getPlayer()," (X="+amount+")");
                 game.addEvent(new MagicDiscardEvent(event.getSource(),it,amount));

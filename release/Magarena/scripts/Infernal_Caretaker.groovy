@@ -10,11 +10,9 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final List<MagicCard> graveyard=
-                game.filterCards(event.getPlayer(),ZOMBIE_CARD_FROM_ALL_GRAVEYARDS);
-            for (final MagicCard card : graveyard) {
-                game.doAction(new RemoveCardAction(card,MagicLocationType.Graveyard));
-                game.doAction(new MoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.OwnersHand));
+            ZOMBIE_CARD_FROM_ALL_GRAVEYARDS.filter(event) each {
+                game.doAction(new RemoveCardAction(it, MagicLocationType.Graveyard));
+                game.doAction(new MoveCardAction(it, MagicLocationType.Graveyard,MagicLocationType.OwnersHand));
             }
         }
     }

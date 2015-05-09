@@ -12,10 +12,10 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MillLibraryAction(event.getPlayer(),3));
-                event.processTargetPermanent(game, {
-                final int amount = game.filterCards(event.getPlayer(), CREATURE_CARD_FROM_GRAVEYARD).size();
-                    game.doAction(new ChangeCountersAction(it,MagicCounterType.PlusOne,amount))
+            event.processTargetPermanent(game, {
+                game.doAction(new MillLibraryAction(event.getPlayer(),3));
+                final int amount = CREATURE_CARD_FROM_GRAVEYARD.filter(event).size();
+                game.doAction(new ChangeCountersAction(it,MagicCounterType.PlusOne,amount))
             });
         }
     }

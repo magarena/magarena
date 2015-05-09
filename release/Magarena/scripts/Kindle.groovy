@@ -12,11 +12,11 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final int amount = game.filterCards(
-                cardName("Kindle")
+            final int amount = cardName("Kindle")
                 .from(MagicTargetType.Graveyard)
                 .from(MagicTargetType.OpponentsGraveyard)
-            ).size()+2;
+                .filter(event)
+                .size()+2;
             event.processTarget(game, {
                 game.logAppendMessage(event.getPlayer()," (X="+amount+")");
                 game.doAction(new DealDamageAction(event.getSource(),it,amount));

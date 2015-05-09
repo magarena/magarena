@@ -22,7 +22,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
-                final MagicCardList cards = new MagicCardList(game.filterCards(it,CREATURE_CARD_FROM_GRAVEYARD));
+                final MagicCardList cards = new MagicCardList(CREATURE_CARD_FROM_GRAVEYARD.filter(it));
                 for (final MagicCard card : cards.getRandomCards(1)) {
                     game.doAction(new ReanimateAction(
                         card,

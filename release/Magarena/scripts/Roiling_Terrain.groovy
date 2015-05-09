@@ -15,7 +15,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
                 game.doAction(new DestroyAction(it));
-                final int amount = game.filterCards(it.getController(),LAND_CARD_FROM_YOUR_GRAVEYARD).size();
+                final int amount = LAND_CARD_FROM_YOUR_GRAVEYARD.filter(it.getController()).size();
                 game.doAction(new DealDamageAction(event.getSource(),it.getController(),amount));
                 game.logAppendMessage(event.getPlayer()," ("+amount+")");
             });

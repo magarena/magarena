@@ -11,7 +11,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
-            final int amount = game.filterCards(player, CREATURE_CARD_FROM_GRAVEYARD).size();
+            final int amount = CREATURE_CARD_FROM_GRAVEYARD.filter(event).size();
             game.doAction(new ChangeLifeAction(player,amount));
         }
     }

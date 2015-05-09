@@ -11,10 +11,9 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             for (final MagicPlayer player : game.getAPNAP()) {
-                final List<MagicCard> targets = game.filterCards(player,CREATURE_CARD_FROM_GRAVEYARD);
-                for (final MagicCard card:targets) {
-                    game.doAction(new RemoveCardAction(card,MagicLocationType.Graveyard));
-                    game.doAction(new MoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.OwnersHand));
+                CREATURE_CARD_FROM_GRAVEYARD.filter(player) each {
+                    game.doAction(new RemoveCardAction(it,MagicLocationType.Graveyard));
+                    game.doAction(new MoveCardAction(it,MagicLocationType.Graveyard,MagicLocationType.OwnersHand));
                 }
             }
         }

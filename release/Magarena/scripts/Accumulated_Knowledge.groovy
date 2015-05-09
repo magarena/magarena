@@ -11,11 +11,11 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final int amount = game.filterCards(
-                cardName("Accumulated Knowledge")
+            final int amount = cardName("Accumulated Knowledge")
                 .from(MagicTargetType.Graveyard)
                 .from(MagicTargetType.OpponentsGraveyard)
-            ).size();
+                .filter(event)
+                .size();
             game.doAction(new DrawAction(event.getPlayer()));
             game.logAppendMessage(event.getPlayer()," (X="+amount+")");
             game.doAction(new DrawAction(event.getPlayer(),amount));

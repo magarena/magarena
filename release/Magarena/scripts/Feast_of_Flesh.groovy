@@ -12,11 +12,11 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final int amount = game.filterCards(
-                cardName("Feast of Flesh")
+            final int amount = cardName("Feast of Flesh")
                 .from(MagicTargetType.Graveyard)
                 .from(MagicTargetType.OpponentsGraveyard)
-            ).size()+1;
+                .filter(event)
+                .size()+1;
             event.processTargetPermanent(game, {
                 game.logAppendMessage(event.getPlayer()," (X="+amount+")");
                 game.doAction(new DealDamageAction(event.getSource(),it,amount));

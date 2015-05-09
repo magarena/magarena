@@ -12,11 +12,11 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final int amount = game.filterCards(
-                cardName("Muscle Burst")
+            final int amount = cardName("Muscle Burst")
                 .from(MagicTargetType.Graveyard)
                 .from(MagicTargetType.OpponentsGraveyard)
-            ).size()+3;
+                .filter(event)
+                .size()+3;
             event.processTargetPermanent(game, {
                 game.logAppendMessage(event.getPlayer()," (X="+amount+")");
                 game.doAction(new ChangeTurnPTAction(it,amount,amount));

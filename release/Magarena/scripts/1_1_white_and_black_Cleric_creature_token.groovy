@@ -24,10 +24,10 @@
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.filterCards(event.getPlayer(), CARD_FROM_GRAVEYARD) each {
+            CARD_FROM_GRAVEYARD.filter(event) find {
                 if (it.getName().equals("Deathpact Angel")) {
                     game.doAction(new ReanimateAction(it, event.getPlayer()));
-                    break;
+                    return true;
                 }
             }
         }

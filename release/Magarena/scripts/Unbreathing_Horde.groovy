@@ -4,7 +4,7 @@
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPayedCost payedCost) {
             final MagicPlayer player = permanent.getController();
             final int amount = game.filterPermanents(player,ZOMBIE_YOU_CONTROL.except(permanent)).size() +
-                               game.filterCards(player,ZOMBIE_CARD_FROM_GRAVEYARD).size();
+                               ZOMBIE_CARD_FROM_GRAVEYARD.filter(player).size();
             game.doAction(new ChangeCountersAction(permanent,MagicCounterType.PlusOne,amount));
             return MagicEvent.NONE;
         }

@@ -5,14 +5,13 @@
             return new MagicEvent(
                 cardOnStack,
                 this,
-                "PN draws a card for each creature " +
-                "card in his or her graveyard."
+                "PN draws a card for each creature card in his or her graveyard."
             );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
-            final int amount = game.filterCards(player, CREATURE_CARD_FROM_GRAVEYARD).size();
+            final int amount = CREATURE_CARD_FROM_GRAVEYARD.filter(event).size();
             game.doAction(new DrawAction(player,amount));
         }
     }

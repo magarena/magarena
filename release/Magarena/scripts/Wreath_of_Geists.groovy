@@ -4,8 +4,7 @@
         CREATURE) {
         @Override
         public void modPowerToughness(final MagicPermanent source,final MagicPermanent permanent,final MagicPowerToughness pt) {
-            final MagicGame game = source.getGame();
-            final int amount = game.filterCards(permanent.getController(),CREATURE_CARD_FROM_GRAVEYARD).size();
+            final int amount = CREATURE_CARD_FROM_GRAVEYARD.filter(source.getController()).size();
             pt.add(amount,amount);
         }
         @Override

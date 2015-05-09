@@ -608,21 +608,9 @@ public abstract class MagicCondition implements MagicMatchedCostEvent {
         }
     };
     
-    public static MagicCondition HAS_WARRIOR_IN_GRAVEYARD = new MagicCondition() {
-        public boolean accept(final MagicSource source) {
-            final MagicGame game = source.getGame();
-            final MagicPlayer player = source.getController();
-            return game.filterCards(player, MagicTargetFilterFactory.WARRIOR_CARD_FROM_GRAVEYARD).size() > 0;
-        }
-    };
+    public static MagicCondition HAS_WARRIOR_IN_GRAVEYARD = MagicConditionFactory.YouHaveAtLeast(MagicTargetFilterFactory.WARRIOR_CARD_FROM_GRAVEYARD, 1);
 
-    public static MagicCondition HAS_ARTIFACT_IN_GRAVEYARD = new MagicCondition() {
-        public boolean accept(final MagicSource source) {
-            final MagicGame game = source.getGame();
-            final MagicPlayer player = source.getController();
-            return game.filterCards(player, MagicTargetFilterFactory.ARTIFACT_CARD_FROM_GRAVEYARD).size() > 0;
-        }
-    };
+    public static MagicCondition HAS_ARTIFACT_IN_GRAVEYARD = MagicConditionFactory.YouHaveAtLeast(MagicTargetFilterFactory.ARTIFACT_CARD_FROM_GRAVEYARD, 1);
 
     public static MagicCondition OPP_NOT_CONTROL_CREATURE_CONDITION = new MagicCondition() {
         public boolean accept(MagicSource source) {
@@ -758,8 +746,8 @@ public abstract class MagicCondition implements MagicMatchedCostEvent {
         public boolean accept(final MagicSource source) {
             final MagicGame game = source.getGame();
             final MagicPlayer player = source.getController();
-            return game.filterCards(player, MagicTargetFilterFactory.CREATURE_CARD_FROM_GRAVEYARD).size() > 0 ||
-                    game.filterCards(player,MagicTargetFilterFactory.CREATURE_CARD_FROM_OPPONENTS_GRAVEYARD).size() >0;
+            return MagicTargetFilterFactory.CREATURE_CARD_FROM_GRAVEYARD.filter(player).size() > 0 ||
+                   MagicTargetFilterFactory.CREATURE_CARD_FROM_OPPONENTS_GRAVEYARD.filter(player).size() > 0;
         }
     };
 

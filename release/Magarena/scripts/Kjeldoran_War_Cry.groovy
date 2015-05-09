@@ -11,11 +11,11 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final int amount = game.filterCards(
-                cardName("Kjeldoran War Cry")
+            final int amount = cardName("Kjeldoran War Cry")
                 .from(MagicTargetType.Graveyard)
                 .from(MagicTargetType.OpponentsGraveyard)
-            ).size()+1;
+                .filter(event)
+                .size()+1;
             final Collection<MagicPermanent> targets = game.filterPermanents(
                 event.getPlayer(),
                 CREATURE_YOU_CONTROL

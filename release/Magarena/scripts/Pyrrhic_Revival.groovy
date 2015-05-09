@@ -12,15 +12,10 @@
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicPlayer player = event.getPlayer();
-            final Collection<MagicCard> targets = game.filterCards(
-                player,
-                CREATURE_CARD_FROM_ALL_GRAVEYARDS
-            );
-            for (final MagicCard card : targets) {
+            CREATURE_CARD_FROM_ALL_GRAVEYARDS.filter(event) each {
                 game.doAction(new ReanimateAction(
-                    card, 
-                    card.getController(), 
+                    it, 
+                    it.getController(), 
                     [MagicPlayMod.PERSIST]
                 ));
             }
