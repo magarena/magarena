@@ -62,7 +62,7 @@ public class DeckUtils {
         }
 
         for (final MagicCardDefinition cardDefinition : deck) {
-            final String name = CardDefinitions.getASCII(cardDefinition.getFullName());
+            final String name = cardDefinition.getAsciiName();
             final int index;
             if (cardDefinition.isLand()) {
                 index=2;

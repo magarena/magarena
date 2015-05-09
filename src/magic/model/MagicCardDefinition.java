@@ -1011,4 +1011,10 @@ public class MagicCardDefinition implements MagicAbilityStore {
         return isScriptFileMissing;
     }
 
+    /**
+     * Returns the name of the card containing only ASCII characters.
+     */
+    public String getAsciiName() {
+        return CardDefinitions.getASCII(fullName);
+    }
 }

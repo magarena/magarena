@@ -101,7 +101,7 @@ public class CardDefinitions {
         assert cardDefinition != null : "CardDefinitions.addDefinition passed null";
         assert cardDefinition.getIndex() == -1 : "cardDefinition has been assigned index";
 
-        final String key = getASCII(cardDefinition.getFullName());
+        final String key = cardDefinition.getAsciiName();
 
         final MagicCardDefinition prev = allPlayableCardDefs.putIfAbsent(key, cardDefinition);
         if (prev != null) {
@@ -365,7 +365,7 @@ public class CardDefinitions {
             if (scriptFiles != null) {
                 for (final File file : scriptFiles) {
                     MagicCardDefinition cdef = prop2carddef(file, true);
-                    missingScripts.put(getASCII(cdef.getFullName()), cdef);
+                    missingScripts.put(cdef.getAsciiName(), cdef);
                 }
             }
         }
@@ -443,12 +443,12 @@ public class CardDefinitions {
     }
 
     public static boolean isCardPlayable(MagicCardDefinition card) {
-        final String key = getASCII(card.getFullName());
+        final String key = card.getAsciiName();
         return allPlayableCardDefs.containsKey(key);
     }
 
     public static boolean isCardMissing(MagicCardDefinition card) {
-        final String key = getASCII(card.getFullName());
+        final String key = card.getAsciiName();
         return (missingCards == null ? false : missingCards.containsKey(key));
     }
 
