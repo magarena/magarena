@@ -434,11 +434,11 @@ public class CardDefinitions {
     }
 
     public static String getScriptFilename(final MagicCardDefinition card) {
-        return getCanonicalName(card.getName()) + ".txt";
+        return card.getFilename() + ".txt";
     }
 
     public static String getGroovyFilename(final MagicCardDefinition card) {
-        return getCanonicalName(card.getName()) + ".groovy";
+        return card.getFilename() + ".groovy";
     }
 
     public static boolean isCardPlayable(MagicCardDefinition card) {
