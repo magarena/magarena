@@ -98,6 +98,7 @@ public enum MagicSets {
     _2ED("Unlimited Edition"), // 1993-12-1
     LEB("Limited Edition Beta"), // 1993-10-?
     LEA("Limited Edition Alpha"), // 1993-8-5
+    pMEI("Promotional Media Inserts") // 1994-9+-?
     ;
 
     private final String setName;
