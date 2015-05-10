@@ -8,4 +8,5 @@ color=b
 pt=2/1
 ability=SN can't block.
 timing=main
+hidden
 oracle=Unhallowed Cathar can't block.

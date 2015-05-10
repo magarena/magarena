@@ -7,5 +7,6 @@ subtype=Human,Advisor
 cost={2}{U}
 pt=0/1
 ability={T}: Draw a card, then discard a card. If a creature card is discarded this way, untap SN, then transform it.
+transform=Homicidal Brute
 timing=main
 oracle={T}: Draw a card, then discard a card. If a creature card is discarded this way, untap Civilized Scholar, then transform it.

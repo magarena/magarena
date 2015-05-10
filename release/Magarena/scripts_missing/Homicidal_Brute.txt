@@ -7,5 +7,7 @@ subtype=Human,Mutant
 color=r
 pt=5/1
 ability=At the beginning of your end step, if SN didn't attack this turn, tap SN, then transform it.
+transform=Civilized Scholar
 timing=main
+hidden
 oracle=At the beginning of your end step, if Homicidal Brute didn't attack this turn, tap Homicidal Brute, then transform it.
