@@ -37,9 +37,7 @@ public class MagicBattleCryTrigger extends MagicWhenAttacksTrigger {
     @Override
     public void executeEvent(final MagicGame game, final MagicEvent event) {
         final MagicPermanent permanent = event.getPermanent();
-        final Collection<MagicPermanent> targets = game.filterPermanents(
-                event.getPlayer(),
-                MagicTargetFilterFactory.ATTACKING_CREATURE);
+        final Collection<MagicPermanent> targets = MagicTargetFilterFactory.ATTACKING_CREATURE.filter(event);
         for (final MagicPermanent creature : targets) {
             if (creature != permanent && creature.isAttacking()) {
                 game.doAction(new ChangeTurnPTAction(creature,1,0));

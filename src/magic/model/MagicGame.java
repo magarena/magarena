@@ -918,7 +918,7 @@ public class MagicGame {
     }
 
     public int getNrOfPermanents(final MagicTargetFilter<MagicPermanent> filter) {
-        return filterPermanents(filter).size();
+        return filter.filter(this).size();
     }
     
     public boolean canPlaySorcery(final MagicPlayer controller) {
@@ -1076,7 +1076,7 @@ public class MagicGame {
         // 704.5k "legend rule"
         if (permanent.hasType(MagicType.Legendary)) {
             final MagicTargetFilter<MagicPermanent> targetFilter=new MagicLegendaryCopiesFilter(permanent.getName());
-            final Collection<MagicPermanent> targets=filterPermanents(permanent.getController(),targetFilter);
+            final Collection<MagicPermanent> targets=targetFilter.filter(permanent.getController());
             if (targets.size() > 1) {
                 addEvent(new MagicUniquenessEvent(permanent, targetFilter));
             }
@@ -1085,7 +1085,7 @@ public class MagicGame {
         // 704.5j "planeswalker uniqueness rule."
         if (permanent.hasType(MagicType.Planeswalker)) {
             final MagicTargetFilter<MagicPermanent> targetFilter=new MagicPlaneswalkerCopiesFilter(permanent);
-            final Collection<MagicPermanent> targets=filterPermanents(permanent.getController(),targetFilter);
+            final Collection<MagicPermanent> targets=targetFilter.filter(permanent.getController());
             if (targets.size() > 1) {
                 addEvent(new MagicUniquenessEvent(permanent, targetFilter));
             }
@@ -1093,13 +1093,8 @@ public class MagicGame {
     
         // 704.5m "world rule"
         if (permanent.hasType(MagicType.World)) {
-            final Collection<MagicPermanent> targets=filterPermanents(
-                permanent.getController(),
-                new MagicOtherPermanentTargetFilter(
-                    MagicTargetFilterFactory.WORLD,
-                    permanent
-                )
-            );
+            final MagicTargetFilter<MagicPermanent> targetFilter = new MagicOtherPermanentTargetFilter(MagicTargetFilterFactory.WORLD, permanent);
+            final Collection<MagicPermanent> targets = targetFilter.filter(permanent.getController());
             for (final MagicPermanent world : targets) {
                 logAppendMessage(
                     world.getController(),
@@ -1133,13 +1128,6 @@ public class MagicGame {
     }
 
     // ***** TARGETTING *****
-    public List<MagicPermanent> filterPermanents(final MagicPlayer player,final MagicTargetFilter<MagicPermanent> targetFilter) {
-        return targetFilter.filter(player);
-    }
-    
-    public List<MagicPermanent> filterPermanents(final MagicTargetFilter<MagicPermanent> targetFilter) {
-        return targetFilter.filter(this);
-    }
 
     public boolean hasLegalTargets(
             final MagicPlayer player,

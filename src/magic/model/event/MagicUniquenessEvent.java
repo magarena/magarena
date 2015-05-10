@@ -27,7 +27,7 @@ public class MagicUniquenessEvent extends MagicEvent {
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
                     event.processTargetPermanent(game,new MagicPermanentAction() {
                         public void doAction(final MagicPermanent permanent) {
-                            final Collection<MagicPermanent> targets = game.filterPermanents(event.getPlayer(),filter);
+                            final Collection<MagicPermanent> targets = filter.filter(event);
                             for (final MagicPermanent target : targets) {
                                 if (target != permanent) {
                                     game.logAppendMessage(

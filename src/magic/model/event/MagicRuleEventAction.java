@@ -1497,7 +1497,7 @@ public enum MagicRuleEventAction {
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    final Collection<MagicPermanent> targets = event.getPlayer().filterPermanents(MagicTargetFilterFactory.CREATURE_YOU_CONTROL);
+                    final Collection<MagicPermanent> targets = MagicTargetFilterFactory.CREATURE_YOU_CONTROL.filter(event);
                     int minToughness = Integer.MAX_VALUE;
                     for (final MagicPermanent creature: targets) {
                         minToughness = Math.min(minToughness, creature.getToughnessValue());

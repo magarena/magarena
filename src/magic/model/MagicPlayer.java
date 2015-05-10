@@ -627,7 +627,7 @@ public class MagicPlayer extends MagicObjectImpl implements MagicTarget, MagicMa
     }
     
     public List<MagicPermanent> filterPermanents(final MagicTargetFilter<MagicPermanent> targetFilter) {
-        return currGame.filterPermanents(this, targetFilter);
+        return targetFilter.filter(this);
     }
 
     public int getDevotion(final MagicColor... colors) {

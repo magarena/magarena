@@ -42,7 +42,7 @@ public class MagicBasicLandChoice extends MagicChoice {
     }
 
     private static Collection<Object> getArtificialMostOptions(final MagicGame game,final MagicPlayer player) {
-        final Collection<MagicPermanent> targets=game.filterPermanents(player,MagicTargetFilterFactory.PERMANENT);
+        final Collection<MagicPermanent> targets = MagicTargetFilterFactory.PERMANENT.filter(player);
         final int[] counts=new int[MagicSubType.ALL_BASIC_LANDS.size()];
         for (final MagicPermanent permanent : targets) {
             for (final MagicSubType subType : MagicSubType.ALL_BASIC_LANDS) {
@@ -67,7 +67,7 @@ public class MagicBasicLandChoice extends MagicChoice {
 
     private static Collection<Object> getArtificialUnsummonOptions(final MagicGame game,final MagicPlayer player) {
 
-        final Collection<MagicPermanent> targets=game.filterPermanents(player,MagicTargetFilterFactory.CREATURE);
+        final Collection<MagicPermanent> targets = MagicTargetFilterFactory.CREATURE.filter(player);
         final int[] scores=new int[MagicSubType.ALL_BASIC_LANDS.size()];
         for (final MagicPermanent permanent : targets) {
             int score=permanent.getScore();

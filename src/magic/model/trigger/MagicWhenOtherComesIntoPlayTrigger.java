@@ -131,10 +131,10 @@ public abstract class MagicWhenOtherComesIntoPlayTrigger extends MagicTrigger<Ma
                 controller.getNrOfPermanents(MagicType.Creature) > 1) {
                 final boolean hasSoulbond = otherPermanent.hasAbility(MagicAbility.Soulbond);
                 if ((hasSoulbond &&
-                     game.filterPermanents(controller,MagicTargetFilterFactory.UNPAIRED_CREATURE_YOU_CONTROL).size() > 1)
+                     MagicTargetFilterFactory.UNPAIRED_CREATURE_YOU_CONTROL.filter(controller).size() > 1)
                     ||
                     (!hasSoulbond &&
-                     game.filterPermanents(controller,MagicTargetFilterFactory.UNPAIRED_SOULBOND_CREATURE).size() > 0)) {
+                     MagicTargetFilterFactory.UNPAIRED_SOULBOND_CREATURE.filter(controller).size() > 0)) {
                     return new MagicSoulbondEvent(otherPermanent,hasSoulbond);
                 } else {
                     return MagicEvent.NONE;
