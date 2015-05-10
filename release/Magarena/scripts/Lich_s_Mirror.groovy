@@ -21,8 +21,6 @@
             final int lifeChange = 20 - player.getLife();
             game.doAction(new ChangeLifeAction(player, lifeChange));
             final MagicCardList hand = new MagicCardList(player.getHand());
-            final MagicCardList graveyard = new MagicCardList(player.getGraveyard());
-            final List<MagicPermanent> battlefield = player.filterPermanents(PERMANENT_YOU_OWN);
             for (final MagicCard card : hand) {
                 game.doAction(new RemoveCardAction(
                     card,
@@ -34,6 +32,7 @@
                     MagicLocationType.OwnersLibrary
                 ));
             };
+            final MagicCardList graveyard = new MagicCardList(player.getGraveyard());
             for (final MagicCard card : graveyard) {
                 game.doAction(new RemoveCardAction(
                     card,
@@ -45,9 +44,9 @@
                     MagicLocationType.OwnersLibrary
                 ));
             };
-            for (final MagicPermanent permanent : battlefield) {
+            PERMANENT_YOU_OWN.filter(event) each {
                 game.doAction(new RemoveFromPlayAction(
-                    permanent,
+                    it,
                     MagicLocationType.OwnersLibrary
                 ));
             };

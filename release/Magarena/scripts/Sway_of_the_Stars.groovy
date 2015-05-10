@@ -11,16 +11,15 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             for (final MagicPlayer player : game.getAPNAP()) {
-                final Collection<MagicPermanent> permanents = player.filterPermanents(PERMANENT_YOU_OWN);
-                final MagicCardList hand = new MagicCardList(player.getHand());
-                final MagicCardList graveyard = new MagicCardList(player.getGraveyard());
-                for (final MagicPermanent permanent : permanents) {
-                    game.doAction(new RemoveFromPlayAction(permanent,MagicLocationType.OwnersLibrary));
+                PERMANENT_YOU_OWN.filter(player) each {
+                    game.doAction(new RemoveFromPlayAction(it,MagicLocationType.OwnersLibrary));
                 }
+                final MagicCardList hand = new MagicCardList(player.getHand());
                 for (final MagicCard cardHand : hand) {
                     game.doAction(new RemoveCardAction(cardHand,MagicLocationType.OwnersHand));
                     game.doAction(new MoveCardAction(cardHand,MagicLocationType.OwnersHand,MagicLocationType.OwnersLibrary));
                 }
+                final MagicCardList graveyard = new MagicCardList(player.getGraveyard());
                 for (final MagicCard cardGraveyard : graveyard) {
                     game.doAction(new RemoveCardAction(cardGraveyard,MagicLocationType.Graveyard));
                     game.doAction(new MoveCardAction(cardGraveyard,MagicLocationType.Graveyard,MagicLocationType.OwnersLibrary));

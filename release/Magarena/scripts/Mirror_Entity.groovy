@@ -33,11 +33,9 @@
                     pt.set(X,X);
                 }
             };
-            final MagicPlayer you = event.getPlayer();
-            final Collection<MagicPermanent> creatures = you.filterPermanents(CREATURE_YOU_CONTROL);
-            for (final MagicPermanent creature : creatures) {
+            CREATURE_YOU_CONTROL.filter(event) each {
                 game.doAction(new BecomesCreatureAction(
-                    creature,
+                    it,
                     PT,
                     MagicStatic.AllCreatureTypesUntilEOT
                 ));

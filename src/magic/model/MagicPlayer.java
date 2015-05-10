@@ -626,10 +626,6 @@ public class MagicPlayer extends MagicObjectImpl implements MagicTarget, MagicMa
         return domain;
     }
     
-    public List<MagicPermanent> filterPermanents(final MagicTargetFilter<MagicPermanent> targetFilter) {
-        return targetFilter.filter(this);
-    }
-
     public int getDevotion(final MagicColor... colors) {
         int devotion = 0;
         for (final MagicPermanent permanent : permanents) {

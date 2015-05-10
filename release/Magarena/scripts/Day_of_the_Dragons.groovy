@@ -31,14 +31,13 @@
             return new MagicEvent(
                 permanent,
                 this,
-                "Sacrifice all Dragons. Return exiled cards to the battlefield under your control."
+                "Sacrifice all Dragons PN controls. Return exiled cards to the battlefield under your control."
             );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final Collection<MagicPermanent> targets = event.getPlayer().filterPermanents(DRAGON_YOU_CONTROL);
-            for (final MagicPermanent target : targets) {
-                game.doAction(new SacrificeAction(target));
+            DRAGON_YOU_CONTROL.filter(event) each {
+                game.doAction(new SacrificeAction(it));
             }
             game.doAction(new ReturnLinkedExileAction(
                 event.getPermanent(),

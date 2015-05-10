@@ -15,7 +15,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicAbility protection = event.getChosenColor().getProtectionAbility();
             final Boolean threshold = MagicCondition.THRESHOLD_CONDITION.accept(event.getSource());
-            event.getPlayer().filterPermanents(CREATURE_YOU_CONTROL) each {
+            CREATURE_YOU_CONTROL.filter(event) each {
                 game.doAction(new ChangeTurnPTAction(it, 0, 2));
                 if (threshold) {
                     game.doAction(new GainAbilityAction(it, protection));

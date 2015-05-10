@@ -13,9 +13,8 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
-                final Collection<MagicPermanent> targets = it.filterPermanents(CREATURE_YOU_CONTROL);
-                for (final MagicPermanent target : targets) {
-                    game.doAction(new ChangeCountersAction(target,MagicCounterType.PlusOne,1));
+                CREATURE_YOU_CONTROL.filter(it) each {
+                    game.doAction(new ChangeCountersAction(it,MagicCounterType.PlusOne,1));
                 }
             });
         }

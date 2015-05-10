@@ -19,7 +19,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final Collection<MagicPermanent> creatures = event.getPlayer().filterPermanents(CREATURE_YOU_CONTROL);
+                final Collection<MagicPermanent> creatures = CREATURE_YOU_CONTROL.filter(event);
                 for (final MagicColor color : MagicColor.values()) {
                     if (it.hasColor(color)) {
                         for (final MagicPermanent creature : creatures) {

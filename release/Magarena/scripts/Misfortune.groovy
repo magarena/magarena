@@ -18,15 +18,13 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isMode(1)) {
-                final Collection<MagicPermanent> targets = event.getRefPlayer().filterPermanents(CREATURE);
-                for (final MagicPermanent creature : targets) {         
-                    game.doAction(new ChangeCountersAction(creature, MagicCounterType.PlusOne, 1));
+                CREATURE_YOU_CONTROL.filter(event.getRefPlayer()) each {
+                    game.doAction(new ChangeCountersAction(it, MagicCounterType.PlusOne, 1));
                 }
                 game.doAction(new ChangeLifeAction(event.getRefPlayer(), 4));
             } else if (event.isMode(2)) {
-                final Collection<MagicPermanent> targets = event.getPlayer().filterPermanents(CREATURE);
-                for (final MagicPermanent creature : targets) {         
-                    game.doAction(new ChangeCountersAction(creature, MagicCounterType.MinusOne, 1));
+                CREATURE_YOU_CONTROL.filter(event.getPlayer()) each {
+                    game.doAction(new ChangeCountersAction(it, MagicCounterType.MinusOne, 1));
                 }
                 game.doAction(new DealDamageAction(event.getSource(), event.getPlayer(), 4));
             }
