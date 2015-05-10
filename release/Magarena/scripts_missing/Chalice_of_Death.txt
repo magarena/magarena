@@ -4,6 +4,7 @@ value=2.500
 rarity=U
 type=Artifact
 ability={T}: Target player loses 5 life.
+transform=Chalice of Life
 timing=artifact
 hidden
 oracle={T}: Target player loses 5 life.

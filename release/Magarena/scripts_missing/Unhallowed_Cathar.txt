@@ -7,6 +7,7 @@ subtype=Zombie,Soldier
 color=b
 pt=2/1
 ability=SN can't block.
+transform=Loyal Cathar
 timing=main
 hidden
 oracle=Unhallowed Cathar can't block.
