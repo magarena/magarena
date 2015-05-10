@@ -7,5 +7,6 @@ subtype=Ogre,Monk
 cost={B}{B}{B}
 pt=2/4
 ability=At the beginning of the end step, if three or more creatures died this turn, flip SN.
+flip=Kuon's Essence
 timing=main
 oracle=At the beginning of the end step, if three or more creatures died this turn, flip Kuon, Ogre Ascendant.

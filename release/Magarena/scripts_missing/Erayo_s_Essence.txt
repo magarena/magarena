@@ -5,5 +5,7 @@ rarity=R
 type=Legendary,Enchantment
 cost={1}{U}
 ability=Whenever an opponent casts a spell for the first time in a turn, counter that spell.
+flip=Erayo, Soratami Ascendant
 timing=enchantment
+hidden
 oracle=Whenever an opponent casts a spell for the first time in a turn, counter that spell.

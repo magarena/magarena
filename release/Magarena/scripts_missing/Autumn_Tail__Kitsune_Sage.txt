@@ -7,5 +7,7 @@ subtype=Fox,Wizard
 cost={3}{W}
 pt=4/5
 ability={1}: Attach target Aura attached to a creature to another creature.
+flip=Kitsune Mystic
 timing=main
+hidden
 oracle={1}: Attach target Aura attached to a creature to another creature.

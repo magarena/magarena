@@ -7,5 +7,6 @@ subtype=Snake,Monk
 cost={1}{G}{G}
 pt=2/3
 ability=Reveal your hand: If you have seven or more land cards in your hand, flip SN.
+flip=Sasaya's Essence
 timing=main
 oracle=Reveal your hand: If you have seven or more land cards in your hand, flip Sasaya, Orochi Ascendant.

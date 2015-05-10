@@ -7,5 +7,6 @@ subtype=Ogre,Shaman
 cost={3}{R}
 pt=2/2
 ability={T}: SN deals 1 damage to target creature that was dealt damage this turn. When that creature dies this turn, flip SN.
+flip=Goka the Unjust
 timing=main
 oracle={T}: Initiate of Blood deals 1 damage to target creature that was dealt damage this turn. When that creature dies this turn, flip Initiate of Blood.

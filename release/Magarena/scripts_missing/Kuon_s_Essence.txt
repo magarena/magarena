@@ -5,5 +5,7 @@ rarity=R
 type=Legendary,Enchantment
 cost={B}{B}{B}
 ability=At the beginning of each player's upkeep, that player sacrifices a creature.
+flip=Kuon, Ogre Ascendant
 timing=enchantment
+hidden
 oracle=At the beginning of each player's upkeep, that player sacrifices a creature.

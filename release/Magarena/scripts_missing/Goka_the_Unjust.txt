@@ -7,5 +7,7 @@ subtype=Ogre,Shaman
 cost={3}{R}
 pt=4/4
 ability={T}: SN deals 4 damage to target creature that was dealt damage this turn.
+flip=Initiate of Blood
 timing=main
+hidden
 oracle={T}: Goka the Unjust deals 4 damage to target creature that was dealt damage this turn.
