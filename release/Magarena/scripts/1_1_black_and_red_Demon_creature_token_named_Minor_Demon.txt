@@ -1,5 +1,5 @@
 name=1/1 black and red Demon creature token named Minor Demon
-image=http://i1013.photobucket.com/albums/af260/lovesoldier99/MINORDEMONTOKEN.jpg
+image=http://cdn.staticneo.com/w/mtg/c/c7/Minor_Demon.jpg
 token=Minor Demon
 type=Creature
 subtype=Demon

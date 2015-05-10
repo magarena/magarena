@@ -1,6 +1,6 @@
 name=2/2 green and blue Drake creature token with flying
 token=Drake
-image=http://i37.photobucket.com/albums/e81/FirePenguinMaster/38e6fa3f.jpg
+image=http://cdn.staticneo.com/w/mtg/6/62/Drake.jpg
 value=2
 pt=2/2
 color=GB

@@ -1,6 +1,6 @@
 name=5/5 colorless Djinn artifact creature token with flying
 token=Djinn
-image=http://media-dominaria.cursecdn.com/attachments/71/116/635032489341076803.jpg
+image=http://cdn.staticneo.com/w/mtg/0/0a/Djinn.jpg
 value=3
 type=Artifact,Creature
 subtype=Djinn

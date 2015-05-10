@@ -1,6 +1,6 @@
 name=0/1 black Insect creature token
 token=Insect
-image=http://img.photobucket.com/albums/v18/qtinator/Insect.jpg
+image=http://cdn.staticneo.com/w/mtg/d/df/Insect3.jpg
 value=1
 type=Creature
 subtype=Insect

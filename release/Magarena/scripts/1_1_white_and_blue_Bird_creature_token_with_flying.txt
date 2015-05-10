@@ -1,6 +1,6 @@
 name=1/1 white and blue Bird creature token with flying
 token=Bird
-image=http://img.photobucket.com/albums/v60/PolarBearGod/Bird.jpg
+image=http://cdn.staticneo.com/w/mtg/3/37/Bird2.jpg
 value=1
 type=Creature
 subtype=Bird

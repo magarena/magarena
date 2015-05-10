@@ -1,6 +1,6 @@
 name=1/1 green Squirrel creature token
 token=Squirrel
-image=http://media.wizards.com/images/magic/daily/arcana/arc1509_squirrel.jpg
+image=http://cdn.staticneo.com/w/mtg/f/fd/Squirrel.jpg
 value=1
 type=Creature
 subtype=Squirrel

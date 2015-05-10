@@ -1,6 +1,6 @@
 name=3/1 red Elemental creature token named Spark Elemental
 token=Spark Elemental
-image=http://i167.photobucket.com/albums/u148/Ruja/Magic%20Tokens/FSSparkElemental.png
+image=http://cdn.staticneo.com/w/mtg/a/ae/Spark_Elemental.jpg
 value=2
 type=Creature
 subtype=Elemental

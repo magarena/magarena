@@ -1,6 +1,6 @@
 name=2/4 black Spider creature token with reach
 token=Spider
-image=http://i167.photobucket.com/albums/u148/Ruja/Magic%20Tokens/Time%20Spiral/15.jpg
+image=http://cdn.staticneo.com/w/mtg/c/c4/Spider.jpg
 value=3
 type=Creature
 subtype=Spider
