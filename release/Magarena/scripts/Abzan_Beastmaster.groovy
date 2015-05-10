@@ -12,7 +12,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
             MagicPermanent highest = MagicPermanent.NONE;
-            game.filterPermanents(player, CREATURE) each {
+            CREATURE.filter(event) each {
                 if (it.getToughness() > highest.getToughness()) {
                     highest = it;
                 }

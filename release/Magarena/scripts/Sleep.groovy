@@ -12,11 +12,10 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
-                final Collection<MagicPermanent> targets = game.filterPermanents(it,CREATURE_YOU_CONTROL);
-                for (final MagicPermanent creature : targets) {
-                    game.doAction(new TapAction(creature));
+                CREATURE_YOU_CONTROL.filter(it) each {
+                    game.doAction(new TapAction(it));
                     game.doAction(ChangeStateAction.Set(
-                        creature,
+                        it,
                         MagicPermanentState.DoesNotUntapDuringNext
                     ));
                 }

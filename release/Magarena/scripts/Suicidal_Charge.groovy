@@ -18,13 +18,9 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final Collection<MagicPermanent> creatures = game.filterPermanents(
-                event.getPlayer(),
-                CREATURE_YOUR_OPPONENT_CONTROLS
-            );
-            for (final MagicPermanent creature : creatures) {
-                game.doAction(new ChangeTurnPTAction(creature,-1,-1));
-                game.doAction(new GainAbilityAction(creature,MagicAbility.AttacksEachTurnIfAble));
+            CREATURE_YOUR_OPPONENT_CONTROLS.filter(event) each {
+                game.doAction(new ChangeTurnPTAction(it,-1,-1));
+                game.doAction(new GainAbilityAction(it,MagicAbility.AttacksEachTurnIfAble));
             }
         }
     }

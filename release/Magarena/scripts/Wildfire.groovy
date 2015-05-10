@@ -18,9 +18,8 @@
                     MagicChainEventFactory.Sac
                 ));
             }
-            final Collection<MagicPermanent> targets = game.filterPermanents(CREATURE);
-            for (final MagicPermanent target : targets) {
-                game.doAction(new DealDamageAction(event.getSource(), target, 4));
+            CREATURE.filter(event) each {
+                game.doAction(new DealDamageAction(event.getSource(), it, 4));
             }
         }
     }

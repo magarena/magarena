@@ -23,18 +23,13 @@
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicPermanent source=event.getPermanent();
-            final int amount=source.getCounters(MagicCounterType.Charge);
-            final Collection<MagicPermanent> targets=
-                game.filterPermanents(
-                    source.getController(),
-                    new MagicCMCPermanentFilter(
-                        NONLAND_PERMANENT,
-                        Operator.EQUAL,
-                        amount
-                    )
-                );
-            game.doAction(new DestroyAction(targets));
+            game.doAction(new DestroyAction(
+                new MagicCMCPermanentFilter(
+                    NONLAND_PERMANENT,
+                    Operator.EQUAL,
+                    event.getPermanent().getCounters(MagicCounterType.Charge)
+                ).filter(event)
+            ));
         }
     }
 ]

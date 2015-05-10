@@ -38,12 +38,10 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final Collection<MagicPermanent> targets=
-                game.filterPermanents(event.getPlayer(),CREATURE_WITHOUT_FLYING_YOUR_OPPONENT_CONTROLS);
             final MagicSource source = event.getSource();
             final int amount = event.getRefInt();
-            for (final MagicPermanent target : targets) {
-                game.doAction(new DealDamageAction(source,target,amount));
+            CREATURE_WITHOUT_FLYING_YOUR_OPPONENT_CONTROLS.filter(event) each {
+                game.doAction(new DealDamageAction(source,it,amount));
             }
         }
     }

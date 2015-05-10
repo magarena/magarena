@@ -26,16 +26,13 @@
             final MagicPlayer player = event.getPlayer();
             final int amount=event.getRefPermanent().getConvertedCost();
             game.logAppendMessage(player,"("+amount+")");
-            final Collection<MagicPermanent> targets=
-                game.filterPermanents(
-                    player,
-                    new MagicCMCPermanentFilter(
-                        CREATURE,
-                        Operator.EQUAL,
-                        amount
-                    )
-                );
-            game.doAction(new DestroyAction(targets));
+            game.doAction(new DestroyAction(
+                new MagicCMCPermanentFilter(
+                    CREATURE,
+                    Operator.EQUAL,
+                    amount
+                ).filter(event)
+            ));
         }
     }
 ]

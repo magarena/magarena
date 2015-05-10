@@ -1394,6 +1394,12 @@ public class MagicTargetFilterFactory {
                      target.isName("Helm of Kaldra"));
         }
     };
+    
+    public static final MagicPermanentFilterImpl KALDRA_EQUIPMENT_YOU_CONTROL=new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+            return KALDRA_EQUIPMENT.accept(source, player, target) && target.isController(player);
+        }
+    };
 
     public static final MagicPermanentFilterImpl BLOCKED_CREATURE = MagicTargetFilterFactory.creature(MagicPermanentState.Blocked, Control.Any);
 

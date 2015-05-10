@@ -14,13 +14,11 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final MagicTargetFilter<MagicPermanent> targetFilter = new MagicNameTargetFilter(
+                new MagicNameTargetFilter(
                     CREATURE,
                     it.getName()
-                );
-                final Collection<MagicPermanent> targets = game.filterPermanents(event.getPlayer(),targetFilter);
-                for (final MagicPermanent permanent : targets) {
-                    game.addEvent(new MagicExileEvent(permanent));
+                ).filter(event) each {
+                    game.addEvent(new MagicExileEvent(it));
                 }
             });
         }

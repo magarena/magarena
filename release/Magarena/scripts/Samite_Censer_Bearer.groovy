@@ -20,10 +20,8 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final Collection<MagicPermanent> targets=
-                game.filterPermanents(event.getPlayer(),CREATURE_YOU_CONTROL);
-            for (final MagicPermanent creature : targets) {
-                game.doAction(new PreventDamageAction(creature,1));
+            CREATURE_YOU_CONTROL.filter(event) each {
+                game.doAction(new PreventDamageAction(it,1));
             }
         }
     }

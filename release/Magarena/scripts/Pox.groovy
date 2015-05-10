@@ -17,42 +17,41 @@
                 // Don't lose negative life.
                 return 0;
             } else {
-                return (int) ((value + 2) / 3);
+                return (value + 2).intdiv(3).abs();
             }
         }
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            for (final MagicPlayer player : game.getAPNAP()) {
-                game.doAction(new ChangeLifeAction(player,
-                    -oneThird(player.getLife())
+            game.getAPNAP() each {
+                game.doAction(new ChangeLifeAction(
+                    it,
+                    -oneThird(it.getLife())
                 ));
             }
-            for (final MagicPlayer player : game.getAPNAP()) {
+            game.getAPNAP() each {
                 game.addEvent(new MagicDiscardEvent(
                     event.getSource(),
-                    player,
-                    oneThird(player.getHandSize())
+                    it,
+                    oneThird(it.getHandSize())
                 ));
             }
-            for (final MagicPlayer player : game.getAPNAP()) {
-                final int numCreatures =
-                    game.filterPermanents(player,CREATURE_YOU_CONTROL).size();
-                for (int i = 0; i < oneThird(numCreatures); ++i) {
+            game.getAPNAP() each {
+                final int numCreatures = CREATURE_YOU_CONTROL.filter(it).size();
+                for (int i = 0; i < oneThird(numCreatures); i++) {
                     game.addEvent(new MagicSacrificePermanentEvent(
                         event.getSource(),
-                        player,
+                        it,
                         SACRIFICE_CREATURE
                     ));
                 }
             }
-            for (final MagicPlayer player : game.getAPNAP()) {
-                final int numLands =
-                    game.filterPermanents(player,LAND_YOU_CONTROL).size();
+            game.getAPNAP() each {
+                final int numLands = LAND_YOU_CONTROL.filter(it).size();
                 for (int i = 0; i < oneThird(numLands); ++i) {
                     game.addEvent(new MagicSacrificePermanentEvent(
                         event.getSource(),
-                        player,
+                        it,
                         SACRIFICE_LAND
                     ));
                 }

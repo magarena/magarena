@@ -36,9 +36,8 @@ def HAS_ALL_KALDRA_EQUIPMENT = new MagicCondition() {
                 CardDefinitions.getToken("legendary 4/4 colorless Avatar creature token named Kaldra"),
                 {
                     final MagicPermanent perm ->
-                    final MagicGame G = perm.getGame();
-                    for (final MagicPermanent equip : G.filterPermanents(G.getPlayer(pIdx), KALDRA_EQUIPMENT)) {
-                        G.doAction(new AttachAction(equip, perm));
+                    KALDRA_EQUIPMENT_YOU_CONTROL.filter(perm.getController()) each {
+                        perm.getGame().doAction(new AttachAction(it, perm));
                     }
                 }
             ));

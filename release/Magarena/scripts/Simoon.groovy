@@ -13,12 +13,8 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
-                final Collection<MagicPermanent> targets = game.filterPermanents(
-                        it,
-                        CREATURE_YOU_CONTROL);
-                final MagicSource source = event.getSource();
-                for (final MagicPermanent target : targets) {
-                    game.doAction(new DealDamageAction(source,target,1));
+                CREATURE_YOU_CONTROL.filter(it) each {
+                    game.doAction(new DealDamageAction(event.getSource(), it, 1));
                 }
             });
         }

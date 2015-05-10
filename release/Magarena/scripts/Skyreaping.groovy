@@ -11,11 +11,8 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final int amount = event.getPlayer().getDevotion(MagicColor.Green);
-            final MagicSource source = event.getSource();
-            final Collection<MagicPermanent> targets=
-                game.filterPermanents(event.getPlayer(),CREATURE_WITH_FLYING);
-            for (final MagicPermanent target : targets) {
-                game.doAction(new DealDamageAction(source,target,amount));
+            CREATURE_WITH_FLYING.filter(event) each {
+                game.doAction(new DealDamageAction(event.getSource(),it,amount));
             }
         }
     }
