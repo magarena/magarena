@@ -12,8 +12,6 @@ import magic.model.condition.MagicConditionFactory;
 
 public class MagicAddCounterChosenEvent extends MagicEvent {
 
-    private final MagicCondition[] conds;
-
     public MagicAddCounterChosenEvent(final MagicSource source, final MagicCounterType counterType) {
         super(
             source,
@@ -34,13 +32,5 @@ public class MagicAddCounterChosenEvent extends MagicEvent {
             },
             "Put a " + counterType.getName() + " counter on a creature$ you control."
         );
-        conds = new MagicCondition[]{
-            MagicConditionFactory.HasOptions(source.getController(), getTargetChoice())
-        };
-    }
-
-    @Override
-    public final MagicCondition[] getConditions() {
-        return conds;
     }
 }

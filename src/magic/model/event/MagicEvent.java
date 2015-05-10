@@ -376,11 +376,7 @@ public class MagicEvent implements MagicCopyable {
     public final MagicChoice getChoice() {
         return choice;
     }
-    
-    public final boolean hasOptions() {
-        return choice.hasOptions(player.getGame(), player, source, false);
-    }
-
+   
     public final MagicTargetPicker<?> getTargetPicker() {
         return targetPicker;
     }
@@ -676,7 +672,7 @@ public class MagicEvent implements MagicCopyable {
                 return false;
             }
         }
-        return true;
+        return choice.hasOptions(player.getGame(), player, source, false);
     }
 
     public String toString() {

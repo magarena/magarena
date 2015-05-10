@@ -15,7 +15,7 @@ def effect = MagicRuleEventAction.create("return a basic land card from your gra
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicEvent costEvent = effect.getEvent(event);
-            if (event.isYes() && costEvent.hasOptions()) {
+            if (event.isYes() && costEvent.isSatisfied()) {
                 game.addEvent(costEvent);
             } else {
                 game.doAction(new SacrificeAction(event.getPermanent()));

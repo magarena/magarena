@@ -12,8 +12,6 @@ import magic.model.condition.MagicConditionFactory;
 
 public class MagicDiscardChosenEvent extends MagicEvent {
 
-    private final MagicCondition[] conds;
-
     public MagicDiscardChosenEvent(final MagicSource source, final MagicTargetChoice targetChoice) {
         this(source, source.getController(), targetChoice);
     }
@@ -29,7 +27,6 @@ public class MagicDiscardChosenEvent extends MagicEvent {
             EVENT_ACTION,
             "PN discards " + targetChoice.getTargetDescription().replace(" from your hand", "") + "$."
         );
-        conds = new MagicCondition[]{MagicConditionFactory.HasOptions(player, targetChoice)};
     }
 
     private static final MagicEventAction EVENT_ACTION = new MagicEventAction() {
@@ -44,9 +41,4 @@ public class MagicDiscardChosenEvent extends MagicEvent {
             });
         }
     };
-
-    @Override
-    public MagicCondition[] getConditions() {
-        return conds;
-    }
 }

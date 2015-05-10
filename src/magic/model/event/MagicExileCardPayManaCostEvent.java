@@ -14,8 +14,6 @@ import magic.model.condition.MagicConditionFactory;
 
 public class MagicExileCardPayManaCostEvent extends MagicEvent {
 
-    private final MagicCondition[] conds;
-
     public MagicExileCardPayManaCostEvent(final MagicSource source, final MagicTargetChoice targetChoice) {
         this(source, source.getController(), targetChoice);
     }
@@ -28,7 +26,6 @@ public class MagicExileCardPayManaCostEvent extends MagicEvent {
             EVENT_ACTION,
             "Choose " + targetChoice.getTargetDescription() + "$."
         );
-        conds = new MagicCondition[]{MagicConditionFactory.HasOptions(player, targetChoice)};
     }
 
     private static final MagicEventAction EVENT_ACTION=new MagicEventAction() {
@@ -50,9 +47,4 @@ public class MagicExileCardPayManaCostEvent extends MagicEvent {
             });
         }
     };
-
-    @Override
-    public MagicCondition[] getConditions() {
-        return conds;
-    }
 }

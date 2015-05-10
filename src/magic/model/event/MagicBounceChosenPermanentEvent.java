@@ -14,8 +14,6 @@ import magic.model.target.MagicBounceTargetPicker;
 
 public class MagicBounceChosenPermanentEvent extends MagicEvent {
 
-    private final MagicCondition[] conds;
-
     public MagicBounceChosenPermanentEvent(
             final MagicSource source,
             final MagicTargetChoice targetChoice) {
@@ -34,7 +32,6 @@ public class MagicBounceChosenPermanentEvent extends MagicEvent {
             EVENT_ACTION,
             "Return "+targetChoice.getTargetDescription()+"$ to its owner's hand."
         );
-        conds = new MagicCondition[]{MagicConditionFactory.HasOptions(player, targetChoice)};
     }
 
     private static final MagicEventAction EVENT_ACTION=new MagicEventAction() {
@@ -50,9 +47,4 @@ public class MagicBounceChosenPermanentEvent extends MagicEvent {
             });
         }
     };
-
-    @Override
-    public MagicCondition[] getConditions() {
-        return conds;
-    }
 }

@@ -12,8 +12,6 @@ import magic.model.condition.MagicConditionFactory;
 import magic.model.target.MagicTapTargetPicker;
 
 public class MagicUntapPermanentEvent extends MagicEvent {
-    
-    private final MagicCondition[] conds;
 
     public MagicUntapPermanentEvent(
             final MagicSource source,
@@ -33,7 +31,6 @@ public class MagicUntapPermanentEvent extends MagicEvent {
             EVENT_ACTION,
             "Choose "+targetChoice.getTargetDescription()+"$."
         );
-        conds = new MagicCondition[]{MagicConditionFactory.HasOptions(player, targetChoice)};
     }
 
     private static final MagicEventAction EVENT_ACTION=new MagicEventAction() {
@@ -46,9 +43,4 @@ public class MagicUntapPermanentEvent extends MagicEvent {
             });
         }
     };
-
-    @Override
-    public MagicCondition[] getConditions() {
-        return conds;
-    }
 }

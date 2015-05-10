@@ -14,8 +14,6 @@ import magic.model.target.MagicTargetFilterFactory;
 
 public class MagicRemoveCounterChosenEvent extends MagicEvent {
 
-    private final MagicCondition[] conds;
-
     public MagicRemoveCounterChosenEvent(final MagicSource source, final MagicCounterType counterType) {
         super(
             source,
@@ -39,13 +37,5 @@ public class MagicRemoveCounterChosenEvent extends MagicEvent {
             },
             "Remove a " + counterType.getName() + " counter from a creature$ you control."
         );
-        conds = new MagicCondition[]{
-            MagicConditionFactory.HasOptions(source.getController(), getTargetChoice())
-        };
-    }
-
-    @Override
-    public final MagicCondition[] getConditions() {
-        return conds;
     }
 }
