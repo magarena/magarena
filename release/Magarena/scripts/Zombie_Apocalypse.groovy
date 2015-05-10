@@ -21,8 +21,7 @@
                     [MagicPlayMod.TAPPED]
                 ));
             }
-            final List<MagicPermanent> humans = game.filterPermanents(player,HUMAN);
-            game.doAction(new DestroyAction(humans));
+            game.doAction(new DestroyAction(HUMAN.filter(event)));
         }
     }
 ]

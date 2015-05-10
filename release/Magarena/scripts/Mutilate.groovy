@@ -11,14 +11,10 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer you = event.getPlayer();
-            Collection<MagicPermanent> creatures = game.filterPermanents(
-                you,
-                CREATURE
-            )
             final int amt = you.getNrOfPermanents(MagicSubType.Swamp);
-            for (final MagicPermanent creature : creatures) {
+            CREATURE.filter(event) each {
                 game.doAction(new ChangeTurnPTAction(
-                    creature,
+                    it,
                     -amt,
                     -amt
                 ));

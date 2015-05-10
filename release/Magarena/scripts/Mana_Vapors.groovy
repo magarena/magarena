@@ -12,10 +12,9 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
-                final Collection<MagicPermanent> targets = game.filterPermanents(it,LAND_YOU_CONTROL);
-                for (final MagicPermanent land : targets) {
+                LAND_YOU_CONTROL.filter(it) each {
                     game.doAction(ChangeStateAction.Set(
-                        land,
+                        it,
                         MagicPermanentState.DoesNotUntapDuringNext
                     ));
                 }

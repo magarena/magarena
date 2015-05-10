@@ -12,15 +12,13 @@
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final Collection<MagicPermanent> targets =
-                game.filterPermanents(
-                    new MagicCMCPermanentFilter(
-                        ARTIFACT,
-                        Operator.LESS_THAN_OR_EQUAL,
-                        event.getRefInt()
-                    )
-                );
-            game.doAction(new DestroyAction(targets));
+            game.doAction(new DestroyAction(
+                new MagicCMCPermanentFilter(
+                    ARTIFACT,
+                    Operator.LESS_THAN_OR_EQUAL,
+                    event.getRefInt()
+                ).filter(event)
+            ));
         }
     }
 ]

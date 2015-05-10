@@ -13,7 +13,7 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final Collection<MagicPermanent> targets = game.filterPermanents(CREATURE);
+            final Collection<MagicPermanent> targets = CREATURE.filter(event);
             for (final MagicPermanent target : targets) {
                 game.doAction(ChangeStateAction.Set(target,MagicPermanentState.CannotBeRegenerated));
             }

@@ -10,13 +10,9 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final Collection<MagicPermanent> targets = game.filterPermanents(
-                event.getPlayer(),
-                CREATURE_YOU_CONTROL
-            );
             int x = 0;
-            for (final MagicPermanent creature : targets) {
-                x = Math.max(x,creature.getPower());
+            CREATURE_YOU_CONTROL.filter(event) each {
+                x = Math.max(x,it.getPower());
             }
             game.doAction(new PlayTokenAction(event.getPlayer(), MagicCardDefinition.create({
                 it.setName("Ooze");

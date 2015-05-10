@@ -22,22 +22,14 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isKicked() || event.isMode(1)) {
                 event.processTargetPlayer(game, {
-                    final Collection<MagicPermanent> targets = game.filterPermanents(
-                        it,
-                        CREATURE_YOU_CONTROL
-                    );
-                    for (final MagicPermanent creature : targets) {
-                        game.doAction(new GainAbilityAction(creature,MagicAbility.AttacksEachTurnIfAble));
+                    CREATURE_YOU_CONTROL.filter(it) each {
+                        game.doAction(new GainAbilityAction(it,MagicAbility.AttacksEachTurnIfAble));
                     }
                 });
             }
             if (event.isKicked() || event.isMode(2)) {
-                final Collection<MagicPermanent> targets = game.filterPermanents(
-                    event.getPlayer(),
-                    CREATURE_YOU_CONTROL
-                );
-                for (final MagicPermanent creature : targets) {
-                    game.doAction(new GainAbilityAction(creature,MagicAbility.FirstStrike));
+                CREATURE_YOU_CONTROL.filter(event) {
+                    game.doAction(new GainAbilityAction(it,MagicAbility.FirstStrike));
                 }
             }
         }

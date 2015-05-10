@@ -15,10 +15,8 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
                 final MagicSource source = event.getSource();
-                final Collection<MagicPermanent> creatures =
-                        game.filterPermanents(event.getPlayer().getOpponent(),CREATURE_YOU_CONTROL);
-                for (final MagicPermanent creature : creatures) {
-                    game.doAction(new DealDamageAction(source,creature,1));
+                CREATURE_YOU_CONTROL.filter(game.getDefendingPlayer()) each {
+                    game.doAction(new DealDamageAction(source,it,1));
                 }
             }
         }

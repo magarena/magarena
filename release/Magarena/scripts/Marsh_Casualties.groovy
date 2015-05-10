@@ -14,10 +14,8 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
                 final int amount = event.isKicked() ? -2 : -1;
-                final Collection<MagicPermanent> targets=
-                    game.filterPermanents(it,CREATURE_YOU_CONTROL);
-                for (final MagicPermanent target : targets) {
-                    game.doAction(new ChangeTurnPTAction(target,amount,amount));
+                CREATURE_YOU_CONTROL.filter(it) each {
+                    game.doAction(new ChangeTurnPTAction(it,amount,amount));
                 }
             });
         }
