@@ -28,7 +28,7 @@
                 });
             }
             if (event.isKicked() || event.isMode(2)) {
-                CREATURE_YOU_CONTROL.filter(event) {
+                CREATURE_YOU_CONTROL.filter(event) each {
                     game.doAction(new GainAbilityAction(it,MagicAbility.FirstStrike));
                 }
             }
