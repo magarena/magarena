@@ -776,8 +776,6 @@ public class MagicTargetFilterFactory {
     
     public static final MagicPermanentFilterImpl DJINN_OR_EFREET = MagicTargetFilterFactory.permanentOr(MagicSubType.Djinn, MagicSubType.Efreet, Control.Any);
 
-    public static final MagicPermanentFilterImpl CLERIC_CREATURE_YOU_CONTROL = MagicTargetFilterFactory.creature(MagicSubType.Cleric, Control.You);
-
     public static final MagicPermanentFilterImpl CLERIC_OR_WIZARD_CREATURE = MagicTargetFilterFactory.creatureOr(MagicSubType.Cleric, MagicSubType.Wizard, Control.Any);
     
     public static final MagicPermanentFilterImpl LEGENDARY_SAMURAI = MagicTargetFilterFactory.creatureAnd(MagicType.Legendary, MagicSubType.Samurai, Control.Any);
