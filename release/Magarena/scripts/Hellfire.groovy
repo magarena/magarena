@@ -11,8 +11,7 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final Collection<MagicPermanent> targets = game.filterPermanents(NONBLACK_CREATURE);
-            final DestroyAction destroy = new DestroyAction(targets);
+            final DestroyAction destroy = new DestroyAction(NONBLACK_CREATURE.filter(event));
             game.doAction(destroy);
             game.doAction(new DealDamageAction(event.getSource(),event.getPlayer(),destroy.getNumDestroyed() + 3));
         }

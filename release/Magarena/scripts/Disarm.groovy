@@ -13,11 +13,8 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final Collection<MagicPermanent> equipmentList = game.filterPermanents(it.getController(),EQUIPMENT_YOU_CONTROL);
-                for (final MagicPermanent equipment : equipmentList) {
-                    if (equipment.getEquippedCreature() == it) {
-                        game.doAction(new AttachAction(equipment,MagicPermanent.NONE));
-                    }
+                it.getEquipmentPermanents() each {
+                    game.doAction(new AttachAction(it, MagicPermanent.NONE));
                 }
             });
         }

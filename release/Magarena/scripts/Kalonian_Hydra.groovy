@@ -10,12 +10,12 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final Collection<MagicPermanent> targets = game.filterPermanents(
-                    event.getPlayer(),
-                    CREATURE_YOU_CONTROL
-                );
-            for (final MagicPermanent creature : targets) {
-                game.doAction(new ChangeCountersAction(creature,MagicCounterType.PlusOne,creature.getCounters(MagicCounterType.PlusOne)));
+            CREATURE_YOU_CONTROL.filter(event) each {
+                game.doAction(new ChangeCountersAction(
+                    it,
+                    MagicCounterType.PlusOne,
+                    it.getCounters(MagicCounterType.PlusOne)
+                ));
             }
         }
     }

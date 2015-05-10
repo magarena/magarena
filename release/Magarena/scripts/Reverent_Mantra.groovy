@@ -14,9 +14,8 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicColor color = event.getChosenColor();
             final MagicAbility protection = color.getProtectionAbility();
-            final Collection<MagicPermanent> targets = game.filterPermanents(CREATURE);
-            for (final MagicPermanent target : targets) {
-                game.doAction(new GainAbilityAction(target, protection));
+            CREATURE.filter(event) each {
+                game.doAction(new GainAbilityAction(it, protection));
             }
         }
     }

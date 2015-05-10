@@ -16,12 +16,8 @@
                 .from(MagicTargetType.OpponentsGraveyard)
                 .filter(event)
                 .size()+1;
-            final Collection<MagicPermanent> targets = game.filterPermanents(
-                event.getPlayer(),
-                CREATURE_YOU_CONTROL
-            );
-            for (final MagicPermanent creature : targets) {
-                game.doAction(new ChangeTurnPTAction(creature,amount,amount));
+            CREATURE_YOU_CONTROL.filter(event) each {
+                game.doAction(new ChangeTurnPTAction(it,amount,amount));
             }
         }
     }

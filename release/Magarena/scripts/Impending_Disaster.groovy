@@ -14,10 +14,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (game.getNrOfPermanents(MagicType.Land) >= 7) {
                 game.doAction(new SacrificeAction(event.getPermanent()));
-                final Collection<MagicPermanent> lands = game.filterPermanents(LAND);
-                for (final MagicPermanent land : lands) {
-                    game.doAction(new DestroyAction(land));
-                }
+                game.doAction(new DestroyAction(LAND.filter(event)));
             }
         }
     }

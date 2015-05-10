@@ -11,9 +11,7 @@
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicPermanentList permanents = new MagicPermanentList(
-                game.filterPermanents(NONLAND_PERMANENT)
-            );
+            final MagicPermanentList permanents = new MagicPermanentList(NONLAND_PERMANENT.filter(event));
             final MagicRandom rng = new MagicRandom(permanents.getStateId());
             for(final MagicPermanent permanent : permanents) {
                 final int newCtrlNr = rng.nextInt(2); 

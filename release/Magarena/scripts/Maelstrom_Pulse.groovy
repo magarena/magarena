@@ -13,13 +13,9 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final MagicTargetFilter<MagicPermanent> targetFilter =
-                    new MagicNameTargetFilter(it.getName());
-                final Collection<MagicPermanent> targets =
-                    game.filterPermanents(event.getPlayer(),targetFilter);
-                for (final MagicPermanent target : targets) {
-                    game.doAction(new DestroyAction(target));
-                }
+                game.doAction(new DestroyAction(
+                    new MagicNameTargetFilter(it.getName()).filter(event)
+                ));
             });
         }
     }

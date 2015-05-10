@@ -27,12 +27,9 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final Collection<MagicPermanent> targets = game.filterPermanents(
-                    event.getPlayer(),
-                    CREATURE_YOU_CONTROL);
             int power = 0;
-            for (final MagicPermanent creature : targets) {
-                power = Math.max(power,creature.getPower());
+            CREATURE_YOU_CONTROL.filter(event) each {
+                power = Math.max(power, it.getPower());
             }
             game.doAction(new DrawAction(
                 event.getPlayer(),
