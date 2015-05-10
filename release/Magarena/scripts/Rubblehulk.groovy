@@ -24,9 +24,9 @@
 
         @Override
         public void executeEvent(final MagicGame game,final MagicEvent event) {
-            final int size = game.filterPermanents(event.getPlayer(),LAND_YOU_CONTROL).size();
+            final int X = LAND_YOU_CONTROL.filter(event).size();
             event.processTargetPermanent(game, {
-                game.doAction(new ChangeTurnPTAction(it,size,size));
+                game.doAction(new ChangeTurnPTAction(it, X, X));
             });
         }
     }

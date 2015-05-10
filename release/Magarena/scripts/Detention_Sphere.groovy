@@ -21,14 +21,10 @@ def choice = new MagicTargetChoice(filter, "target nonland permanent not named D
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final Collection<MagicPermanent> targets = game.filterPermanents(
-                    event.getPlayer(),
-                    new MagicNameTargetFilter(it.getName())
-                );
-                for (final MagicPermanent target : targets) {
+                new MagicNameTargetFilter(it.getName()).filter(event) each {
                     game.doAction(new ExileLinkAction(
                         event.getPermanent(),
-                        target
+                        it
                     ));
                 }
             });

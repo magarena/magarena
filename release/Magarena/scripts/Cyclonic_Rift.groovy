@@ -16,10 +16,8 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final Collection<MagicPermanent> targets=
-                game.filterPermanents(event.getPlayer(),NONLAND_PERMANENT_YOUR_OPPONENT_CONTROLS);
-            for (final MagicPermanent target : targets) {
-                game.doAction(new RemoveFromPlayAction(target,MagicLocationType.OwnersHand));
+            NONLAND_PERMANENT_YOUR_OPPONENT_CONTROLS.filter(event) each {
+                game.doAction(new RemoveFromPlayAction(it, MagicLocationType.OwnersHand));
             }
         }
     }

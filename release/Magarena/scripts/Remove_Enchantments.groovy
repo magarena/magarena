@@ -15,34 +15,24 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
-            final List<MagicPermanent> enchantments = game.filterPermanents(player, ENCHANTMENT_YOU_OWN_AND_CONTROL);
-            for (final MagicPermanent permanent : enchantments) {
-                game.doAction(new RemoveFromPlayAction(permanent, MagicLocationType.OwnersHand));
+            
+            ENCHANTMENT_YOU_OWN_AND_CONTROL.filter(event) each {
+                game.doAction(new RemoveFromPlayAction(it, MagicLocationType.OwnersHand));
             }
-            final List<MagicPermanent> auras = game.filterPermanents(player, AURA_YOU_OWN);
-            for (final MagicPermanent permanent : auras) {
-                final MagicPermanent enchantedPermanent = permanent.getEnchantedPermanent();
-                final MagicPlayer enchantedController = enchantedPermanent.getController();
-                if (enchantedController == player || 
-                        (enchantedController == player.getOpponent() &&
-                            (enchantedPermanent.isCreature() && enchantedPermanent.isAttacking())
-                        )
-                    ) {
-                    game.doAction(new RemoveFromPlayAction(permanent, MagicLocationType.OwnersHand));
+
+            AURA_YOU_OWN.filter(event) each {
+                final MagicPermanent enchanted = it.getEnchantedPermanent();
+                if (enchanted.isFriend(player) || (enchanted.isEnemy(player) && enchanted.isAttacking())) {
+                    game.doAction(new RemoveFromPlayAction(it, MagicLocationType.OwnersHand));
                 }
             }
-            final List<MagicPermanent> destroyEnchantment = game.filterPermanents(player, ENCHANTMENT_YOU_CONTROL);
-            game.doAction(new DestroyAction(destroyEnchantment));
-            final List<MagicPermanent> destroyAura = game.filterPermanents(player, AURA);
-            for (final MagicPermanent permanent : destroyAura) {
-                final MagicPermanent enchantedPermanent = permanent.getEnchantedPermanent();
-                final MagicPlayer enchantedController = enchantedPermanent.getController();
-                if (enchantedController == player || 
-                        (enchantedController == player.getOpponent() &&
-                            (enchantedPermanent.isCreature() && enchantedPermanent.isAttacking())
-                        )
-                    ) {
-                    game.doAction(new DestroyAction(permanent));
+            
+            game.doAction(new DestroyAction(ENCHANTMENT_YOU_CONTROL.filter(event)));
+            
+            AURA.filter(event) each {
+                final MagicPermanent enchanted = it.getEnchantedPermanent();
+                if (enchanted.isFriend(player) || (enchanted.isEnemy(player) && enchanted.isAttacking())) {
+                    game.doAction(new DestroyAction(it));
                 }
             }
         }

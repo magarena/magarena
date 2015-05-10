@@ -46,11 +46,11 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final Collection<MagicPermanent> targets = game.filterPermanents(
-                event.getPlayer(),
-                NONLAND_NONTOKEN_PERMANENT.except(event.getPermanent())
-            );
-            game.doAction(new DestroyAction(targets));
+            game.doAction(new DestroyAction(
+                NONLAND_NONTOKEN_PERMANENT
+                .except(event.getPermanent())
+                .filter(event)
+            ));
         }
     }
 ]

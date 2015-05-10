@@ -22,13 +22,11 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final MagicTargetFilter<MagicPermanent> targetFilter = new MagicNameTargetFilter(
+                new MagicNameTargetFilter(
                     CREATURE,
                     it.getName()
-                );
-                final Collection<MagicPermanent> targets = game.filterPermanents(event.getPlayer(),targetFilter);
-                for (final MagicPermanent creature : targets) {
-                    game.doAction(new DealDamageAction(event.getSource(),creature,1));
+                ).filter(event) each {
+                    game.doAction(new DealDamageAction(event.getSource(), it, 1));
                 }
             });
         }

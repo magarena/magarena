@@ -12,7 +12,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
-                final int amt = game.filterPermanents(it, TAPPED_CREATURE_YOU_CONTROL).size();
+                final int amt = TAPPED_CREATURE_YOU_CONTROL.filter(it).size();
                 game.doAction(new DrawAction(event.getPlayer(),amt));
             });
         }

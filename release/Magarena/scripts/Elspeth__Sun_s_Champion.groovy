@@ -29,7 +29,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new DestroyAction(
-                game.filterPermanents(CREATURE_POWER_4_OR_MORE)
+                CREATURE_POWER_4_OR_MORE.filter(event)
             ));
         }
     },

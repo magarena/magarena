@@ -16,10 +16,8 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final Collection<MagicPermanent> targets=
-                game.filterPermanents(event.getPlayer(),CREATURE_YOUR_OPPONENT_CONTROLS);
-            for (final MagicPermanent target : targets) {
-                game.doAction(new DealDamageAction(event.getSource(),target,1));
+            CREATURE_YOUR_OPPONENT_CONTROLS.filter(event) each {
+                game.doAction(new DealDamageAction(event.getSource(), it, 1));
             }
         }
     }
