@@ -12,7 +12,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final int X = event.getPlayer().filterCards(CREATURE_CARD_FROM_GRAVEYARD).size();
+                final int X = CREATURE_CARD_FROM_GRAVEYARD.filter(event).size();
                 game.doAction(new ChangeTurnPTAction(it, X, 0));
             });
         }

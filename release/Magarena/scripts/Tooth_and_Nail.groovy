@@ -4,6 +4,8 @@ def TEXT2 = "Put up to two creature cards from your hand onto the battlefield."
 
 def choice = new MagicTargetChoice("a creature card from your hand");
 
+def effect1 = MagicRuleEventAction.create(TEXT1);
+
 [
     new MagicSpellCardEvent() {
         @Override
@@ -25,12 +27,7 @@ def choice = new MagicTargetChoice("a creature card from your hand");
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isKicked() || event.isMode(1)) {
-                final List<MagicCard> choiceList = event.getPlayer().filterCards(CREATURE_CARD_FROM_LIBRARY);
-                game.addEvent(new MagicSearchToLocationEvent(
-                    event,
-                    new MagicFromCardListChoice(choiceList, 2, true),
-                    MagicLocationType.OwnersHand
-                ));
+                game.addEvent(effect1.getEvent(event));
             } 
             
             if (event.isKicked() || event.isMode(2)) {

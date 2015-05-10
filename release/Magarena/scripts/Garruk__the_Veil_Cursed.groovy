@@ -40,7 +40,7 @@ def AB1 = MagicRuleEventAction.create("Put a 1/1 black Wolf creature token with 
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final int X = event.getPlayer().filterCards(CREATURE_CARD_FROM_GRAVEYARD).size();
+            final int X = CREATURE_CARD_FROM_GRAVEYARD.filter(event).size();
             CREATURE_YOU_CONTROL.filter(event.getPlayer()) each {
                 game.doAction(new GainAbilityAction(it, MagicAbility.Trample));
                 game.doAction(new ChangeTurnPTAction(it, X, X));
