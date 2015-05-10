@@ -189,7 +189,7 @@ public class MagicConditionFactory {
         return new MagicCondition() {
             @Override
             public boolean accept(final MagicSource source) {
-                return source.getController().filterCards(filter).size() >= amt;
+                return filter.filter(source.getController()).size() >= amt;
             }
         };
     }
