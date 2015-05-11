@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Rogue
 cost={4}{G}
 pt=3/4
+ability=Whenever SN attacks, put a 2/2 green Wolf creature token onto the battlefield tapped and attacking for each creature card in your graveyard.
 timing=main
-requires_groovy_code
 oracle=Whenever Kessig Cagebreakers attacks, put a 2/2 green Wolf creature token onto the battlefield tapped and attacking for each creature card in your graveyard.
