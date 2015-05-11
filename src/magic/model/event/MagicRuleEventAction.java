@@ -623,17 +623,21 @@ public enum MagicRuleEventAction {
         }
     },
     DrawSelf(
-        ARG.YOU + "( )?draw(s)? (?<amount>[a-z]+) (additional )?card(s)?\\.", 
+        ARG.YOU + "( )?draw(s)? (?<amount>[a-z]+) (additional )?card(s)?( for each " + ARG.WORDRUN +")?\\.", 
         MagicTiming.Draw, 
         "Draw"
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
+            final MagicTargetFilter<MagicTarget> filter = matcher.group("wordrun") != null ? 
+                MagicTargetFilterFactory.Target(ARG.wordrun(matcher)):
+                MagicTargetFilterFactory.ONE;
             final int amount = EnglishToInt.convert(matcher.group("amount"));
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    game.doAction(new DrawAction(ARG.youPlayer(event, matcher), amount));
+                    final int multiplier = filter.filter(event).size();
+                    game.doAction(new DrawAction(ARG.youPlayer(event, matcher), amount * multiplier));
                 }
             };
         }
