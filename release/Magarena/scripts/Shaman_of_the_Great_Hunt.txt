@@ -6,7 +6,8 @@ type=Creature
 subtype=Orc,Shaman
 cost={3}{R}
 pt=4/2
-ability=Haste
+ability=Haste;\
+        {2}{G/U}{G/U}: Draw a card for each creature you control with power 4 or greater.
 timing=main
 requires_groovy_code
 oracle=Haste\nWhenever a creature you control deals combat damage to a player, put a +1/+1 counter on it.\nFerocious — {2}{G/U}{G/U}: Draw a card for each creature you control with power 4 or greater.

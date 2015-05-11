@@ -6,6 +6,6 @@ type=Creature
 subtype=Elemental
 cost={4}{G}{G}{G}
 pt=5/5
+ability=When SN enters the battlefield, draw a card for each green creature you control.
 timing=main
-requires_groovy_code
 oracle=When Regal Force enters the battlefield, draw a card for each green creature you control.

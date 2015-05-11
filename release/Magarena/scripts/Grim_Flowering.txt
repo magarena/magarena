@@ -4,6 +4,6 @@ value=3.318
 rarity=U
 type=Sorcery
 cost={5}{G}
+effect=Draw a card for each creature card in your graveyard.
 timing=draw
-requires_groovy_code
 oracle=Draw a card for each creature card in your graveyard.

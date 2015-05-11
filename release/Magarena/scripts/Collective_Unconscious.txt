@@ -4,6 +4,6 @@ value=3.512
 rarity=R
 type=Sorcery
 cost={4}{G}{G}
+effect=Draw a card for each creature you control.
 timing=main
-requires_groovy_code
 oracle=Draw a card for each creature you control.

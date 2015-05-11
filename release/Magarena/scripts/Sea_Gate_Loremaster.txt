@@ -6,6 +6,6 @@ type=Creature
 subtype=Merfolk,Wizard,Ally
 cost={4}{U}
 pt=1/3
+ability={T}: Draw a card for each Ally you control.
 timing=main
-requires_groovy_code
 oracle={T}: Draw a card for each Ally you control.
