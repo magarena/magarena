@@ -2209,29 +2209,38 @@ public enum MagicRuleEventAction {
             };
         }
     },
-    TokenSingle(
-        "put (a|an) (?<name>[^\\.]*) onto the battlefield(\\. | )?(?<mods>.+)?\\.",
+    PutTokenForEach(
+        "put(s)? (?<amount>[a-z]+) (?<name>[^\\.]*token[^\\.]*) onto the battlefield( )?(?<mods>.+?)? for each " + ARG.WORDRUN + "\\.",
         MagicTiming.Token,
         "Token"
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
-            final MagicCardDefinition tokenDef = CardDefinitions.getToken(matcher.group("name"));
+            final MagicTargetFilter<MagicTarget> filter = matcher.group("wordrun") != null ? 
+                MagicTargetFilterFactory.Target(ARG.wordrun(matcher)):
+                MagicTargetFilterFactory.ONE;
+            final int amount = EnglishToInt.convert(matcher.group("amount"));
+            final String tokenName = matcher.group("name").replace("tokens", "token");
+            final MagicCardDefinition tokenDef = CardDefinitions.getToken(tokenName);
             final List<MagicPlayMod> mods = MagicPlayMod.build(matcher.group("mods"));
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    game.doAction(new PlayTokenAction(
-                        event.getPlayer(),
-                        tokenDef,
-                        mods
-                    ));
+                    final int multiplier = filter.filter(event).size();
+                    final int total = amount * multiplier;
+                    for (int i = 0; i < total; i++) {
+                        game.doAction(new PlayTokenAction(
+                            event.getPlayer(),
+                            tokenDef,
+                            mods
+                        ));
+                    }
                 }
             };
         }
     },
-    TokenMany(
-        "put(s)? (?<amount>[a-z]+) (?<name>[^\\.]*tokens[^\\.]*) onto the battlefield(\\. | )?(?<mods>.+)?\\.",
+    PutToken(
+        "put(s)? (?<amount>[a-z]+) (?<name>[^\\.]*token[^\\.]*) onto the battlefield( )?(?<mods>.+?)?\\.",
         MagicTiming.Token,
         "Token"
     ) {
