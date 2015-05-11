@@ -8,7 +8,7 @@
                 MagicBounceTargetPicker.create(),
                 this,
                 "Return target creature\$ to its owner's hand. " +
-                "Its controller draws a card life."
+                "Its controller draws a card."
             );
         }
         @Override
