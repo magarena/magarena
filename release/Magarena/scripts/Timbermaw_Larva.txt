@@ -6,6 +6,6 @@ type=Creature
 subtype=Beast
 cost={3}{G}
 pt=2/2
+ability=Whenever SN attacks, SN gets +1/+1 until end of turn for each Forest you control.
 timing=main
-requires_groovy_code
 oracle=Whenever Timbermaw Larva attacks, it gets +1/+1 until end of turn for each Forest you control.

@@ -5,7 +5,8 @@ rarity=C
 type=Artifact
 subtype=Equipment
 cost={2}
-ability=Equip {1}
+ability=Equipped creature gets +1/+0 for each artifact you control.;\
+        Equip {1}
 timing=equipment
 requires_groovy_code
 oracle=Equipped creature gets +1/+0 for each artifact you control.\n{B}{B}: Attach Cranial Plating to target creature you control.\nEquip {1}

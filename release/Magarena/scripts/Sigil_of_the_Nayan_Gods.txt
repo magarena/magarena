@@ -5,8 +5,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={1}{G}{W}
-ability=Cycling {G/W}
+ability=Enchanted creature gets +1/+1 for each creature you control.;\
+        Cycling {G/W}
 timing=main
 enchant=pump,pos creature
-requires_groovy_code
 oracle=Enchant creature\nEnchanted creature gets +1/+1 for each creature you control.\nCycling {G/W}

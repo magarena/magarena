@@ -6,6 +6,6 @@ type=Enchantment
 enchant=pump,pos creature
 subtype=Aura
 cost={2}{G}
+ability=Enchanted creature gets +1/+1 for each Forest you control.
 timing=enchantment
-requires_groovy_code
 oracle=Enchant creature\nEnchanted creature gets +1/+1 for each Forest you control.

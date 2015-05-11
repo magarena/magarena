@@ -5,8 +5,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={1}{R}{R}
-ability=Enchanted creature has first strike.
+ability=Enchanted creature gets +1/+0 for each Mountain you control.;\
+        Enchanted creature has first strike.
 enchant=pump,pos creature
 timing=aura
-requires_groovy_code
 oracle=Enchant creature\nEnchanted creature gets +1/+0 for each Mountain you control and has first strike.
