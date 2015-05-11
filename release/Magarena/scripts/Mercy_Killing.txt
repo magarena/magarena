@@ -4,6 +4,6 @@ value=2.500
 rarity=U
 type=Instant
 cost={2}{G/W}
-effect=Target creature's controller sacrifices it, then puts X 1/1 green and white Elf Warrior creature tokens onto the battlefield, where X is that creature's power.
-timing=removal
+timing=token
+requires_groovy_code
 oracle=Target creature's controller sacrifices it, then puts X 1/1 green and white Elf Warrior creature tokens onto the battlefield, where X is that creature's power.
