@@ -6,6 +6,6 @@ type=Legendary,Creature
 subtype=Elemental,Shaman
 cost={2}{B}{B}
 pt=4/4
-ability=Whenever SN deals combat damage to a player, choose target creature that player controls. He or she sacrifices that creature.
 timing=main
+requires_groovy_code
 oracle=Whenever Ashling, the Extinguisher deals combat damage to a player, choose target creature that player controls. He or she sacrifices that creature.
