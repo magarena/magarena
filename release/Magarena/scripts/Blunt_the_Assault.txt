@@ -4,6 +4,6 @@ value=2.833
 rarity=C
 type=Instant
 cost={3}{G}
+effect=You gain 1 life for each creature on the battlefield.~Prevent all combat damage that would be dealt this turn.
 timing=block
-requires_groovy_code
 oracle=You gain 1 life for each creature on the battlefield. Prevent all combat damage that would be dealt this turn.

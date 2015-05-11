@@ -6,7 +6,7 @@ type=Artifact,Creature
 subtype=Angel
 cost={5}{W}{W}{U}
 pt=4/4
-ability=Flying
+ability=Flying;\
+        When SN enters the battlefield, you gain 3 life for each artifact you control.
 timing=artifact
-requires_groovy_code
 oracle=Flying\nWhen Filigree Angel enters the battlefield, you gain 3 life for each artifact you control.

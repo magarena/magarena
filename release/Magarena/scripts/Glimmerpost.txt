@@ -4,7 +4,7 @@ value=3.654
 rarity=C
 type=Land
 subtype=Locus
-ability={T}: Add {1} to your mana pool.
+ability=When SN enters the battlefield, you gain 1 life for each Locus on the battlefield.;\
+        {T}: Add {1} to your mana pool.
 timing=main
-requires_groovy_code
 oracle=When Glimmerpost enters the battlefield, you gain 1 life for each Locus on the battlefield.\n{T}: Add {1} to your mana pool.

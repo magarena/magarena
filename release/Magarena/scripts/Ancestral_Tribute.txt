@@ -5,6 +5,6 @@ rarity=R
 type=Sorcery
 cost={5}{W}{W}
 ability=Flashback {9}{W}{W}{W}
+effect=You gain 2 life for each card in your graveyard.
 timing=main
-requires_groovy_code
 oracle=You gain 2 life for each card in your graveyard.\nFlashback {9}{W}{W}{W}

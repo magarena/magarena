@@ -6,7 +6,7 @@ type=Legendary,Creature
 subtype=Elf,Warrior
 cost={2}{G}
 pt=3/2
-ability={B}, Sacrifice an Elf: Regenerate SN.
+ability=Whenever SN attacks, you gain 1 life for each Elf you control.;\
+        {B}, Sacrifice an Elf: Regenerate SN.
 timing=main
-requires_groovy_code
 oracle=Whenever Rhys the Exiled attacks, you gain 1 life for each Elf you control.\n{B}, Sacrifice an Elf: Regenerate Rhys the Exiled.

@@ -6,6 +6,6 @@ type=Creature
 subtype=Centaur,Spellshaper
 cost={3}{G}
 pt=1/1
+ability={2}{G}{G}, {T}, Discard a card: You gain 2 life for each card in your hand.
 timing=main
 oracle={2}{G}{G}, {T}, Discard a card: You gain 2 life for each card in your hand.
-requires_groovy_code

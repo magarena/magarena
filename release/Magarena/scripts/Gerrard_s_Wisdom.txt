@@ -4,6 +4,6 @@ value=3.167
 rarity=U
 type=Sorcery
 cost={2}{W}{W}
+effect=You gain 2 life for each card in your hand.
 timing=main
 oracle=You gain 2 life for each card in your hand.
-requires_groovy_code

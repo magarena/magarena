@@ -6,6 +6,6 @@ type=Creature
 subtype=Elf,Shaman
 cost={G}
 pt=1/1
+ability=Sacrifice SN: You gain 1 life for each Elf card in your graveyard.
 timing=main
-requires_groovy_code
 oracle=Sacrifice Elvish Eulogist: You gain 1 life for each Elf card in your graveyard.

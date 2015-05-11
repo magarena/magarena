@@ -4,6 +4,6 @@ value=3.591
 rarity=C
 type=Sorcery
 cost={W}
+effect=You gain 2 life for each creature you control.
 timing=main
-requires_groovy_code=Festival of Trokin
 oracle=You gain 2 life for each creature you control.

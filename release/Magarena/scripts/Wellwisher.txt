@@ -6,6 +6,6 @@ type=Creature
 subtype=Elf
 cost={1}{G}
 pt=1/1
+ability={T}: You gain 1 life for each Elf on the battlefield.
 timing=main
-requires_groovy_code
 oracle={T}: You gain 1 life for each Elf on the battlefield.
