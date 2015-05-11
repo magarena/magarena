@@ -519,6 +519,15 @@ public class MagicTargetFilterFactory {
             return !target.isCreature();
         }
     };
+    
+    public static final MagicTargetFilterImpl ONE=new MagicTargetFilterImpl() {
+        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicTarget target) {
+            return target == player;
+        }
+        public boolean acceptType(final MagicTargetType targetType) {
+            return targetType==MagicTargetType.Player;
+        }
+    };
 
     public static final MagicTargetFilterImpl CREATURE_OR_PLAYER=new MagicTargetFilterImpl() {
         public boolean accept(final MagicSource source,final MagicPlayer player,final MagicTarget target) {

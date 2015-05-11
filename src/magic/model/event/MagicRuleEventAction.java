@@ -869,17 +869,21 @@ public enum MagicRuleEventAction {
         }
     },
     GainLife(
-        "((Y|y)ou)?( )?gain (?<amount>[0-9]+) life\\.", 
+        "((Y|y)ou)?( )?gain (?<amount>[0-9]+) life( for each " + ARG.WORDRUN + ")?\\.", 
         MagicTiming.Removal, 
         "+Life"
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
+            final MagicTargetFilter<MagicTarget> filter = matcher.group("wordrun") != null ? 
+                MagicTargetFilterFactory.Target(ARG.wordrun(matcher)):
+                MagicTargetFilterFactory.ONE;
             final int amount = Integer.parseInt(matcher.group("amount"));
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    game.doAction(new ChangeLifeAction(event.getPlayer(), amount));
+                    final int multiplier = filter.filter(event).size();
+                    game.doAction(new ChangeLifeAction(event.getPlayer(), amount * multiplier));
                 }
             };
         }
