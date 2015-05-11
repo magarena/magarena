@@ -6,6 +6,6 @@ type=Enchantment
 subtype=Aura
 cost={1}{B}
 timing=aura
-enchant=destroy,neg creature
+enchant=sacrifice,neg creature
 requires_groovy_code
 oracle=Enchant creature\nAt the beginning of the end step of enchanted creature's controller, that player sacrifices that creature.
