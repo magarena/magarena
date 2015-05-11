@@ -58,10 +58,8 @@ public abstract class MagicManaActivation implements MagicChangeCardDefinition {
 
         // Check able to pay costs
         for (final MagicEvent event : getCostEvent(source)) {
-            for (final MagicCondition condition : event.getConditions()) {
-                if (!condition.accept(source)) {
-                    return false;
-                }
+            if (event.isSatisfied() == false) {
+                return false;
             }
         }
 

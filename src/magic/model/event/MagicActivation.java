@@ -113,10 +113,8 @@ public abstract class MagicActivation<T extends MagicSource> implements MagicEve
         // * execute pay mana cost event
         //
         for (final MagicEvent event : getCostEvent(source)) {
-            for (final MagicCondition condition : event.getConditions()) {
-                if (condition.accept(source) == false) {
-                    return false;
-                }
+            if (event.isSatisfied() == false) {
+                return false;
             }
         }
 

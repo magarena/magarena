@@ -13,7 +13,7 @@ import magic.model.condition.MagicConditionFactory;
 
 public class MagicExileTopLibraryEvent extends MagicEvent{
     
-    private final MagicCondition[] conds;
+    private final MagicCondition cond;
 
     public MagicExileTopLibraryEvent(final MagicSource source, final int amount) {
         this(source, source.getController(), amount);
@@ -27,7 +27,7 @@ public class MagicExileTopLibraryEvent extends MagicEvent{
             EVENT_ACTION,
             "PN exiles the top RN cards of his or her library."
         );
-        conds = new MagicCondition[]{MagicConditionFactory.LibraryAtLeast(amount)};
+        cond = MagicConditionFactory.LibraryAtLeast(amount);
     }
 
     private static final MagicEventAction EVENT_ACTION=new MagicEventAction() {
@@ -42,7 +42,7 @@ public class MagicExileTopLibraryEvent extends MagicEvent{
     };
     
     @Override
-    public MagicCondition[] getConditions() {
-        return conds;
+    public boolean isSatisfied() {
+        return cond.accept(getSource()) && super.isSatisfied();
     }
 }

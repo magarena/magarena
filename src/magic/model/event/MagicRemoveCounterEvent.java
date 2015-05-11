@@ -9,7 +9,7 @@ import magic.model.condition.MagicConditionFactory;
 
 public class MagicRemoveCounterEvent extends MagicEvent {
 
-    private final MagicCondition[] conds;
+    private final MagicCondition cond;
 
     public MagicRemoveCounterEvent(final MagicPermanent permanent,final MagicCounterType counterType,final int amount) {
         super(
@@ -26,14 +26,12 @@ public class MagicRemoveCounterEvent extends MagicEvent {
             },
             genDescription(permanent,counterType,amount)
         );
-        conds = new MagicCondition[]{
-            MagicConditionFactory.CounterAtLeast(counterType, amount)
-        };
+        cond = MagicConditionFactory.CounterAtLeast(counterType, amount);
     }
 
     @Override
-    public final MagicCondition[] getConditions() {
-        return conds;
+    public boolean isSatisfied() {
+        return cond.accept(getSource()) && super.isSatisfied();
     }
 
     private static String genDescription(final MagicPermanent permanent,final MagicCounterType counterType,final int amount) {

@@ -8,7 +8,7 @@ import magic.model.condition.MagicConditionFactory;
 
 public class MagicRepeatedCardsEvent extends MagicEvent {
     
-    private final MagicCondition[] conds;
+    private final MagicCondition cond;
 
     public MagicRepeatedCardsEvent(final MagicSource source, final MagicTargetChoice targetChoice, final int amt, final MagicChainEventFactory factory) {
         super(
@@ -27,11 +27,11 @@ public class MagicRepeatedCardsEvent extends MagicEvent {
             },
             ""
         );
-        conds = new MagicCondition[]{MagicConditionFactory.YouHaveAtLeast(targetChoice.getCardFilter(), amt)};
+        cond = MagicConditionFactory.YouHaveAtLeast(targetChoice.getCardFilter(), amt);
     }
 
     @Override
-    public MagicCondition[] getConditions() {
-        return conds;
+    public boolean isSatisfied() {
+        return cond.accept(getSource()) && super.isSatisfied();
     }
 }

@@ -8,7 +8,7 @@ import magic.model.condition.MagicConditionFactory;
 
 public class MagicRepeatedPermanentsEvent extends MagicEvent {
     
-    private final MagicCondition[] conds;
+    private final MagicCondition cond;
 
     public MagicRepeatedPermanentsEvent(final MagicSource source, final MagicTargetChoice targetChoice, final int amt, final MagicChainEventFactory factory) {
         super(
@@ -27,11 +27,11 @@ public class MagicRepeatedPermanentsEvent extends MagicEvent {
             },
             ""
         );
-        conds = new MagicCondition[]{MagicConditionFactory.YouControlAtLeast(targetChoice.getPermanentFilter(), amt)};
+        cond = MagicConditionFactory.YouControlAtLeast(targetChoice.getPermanentFilter(), amt);
     }
 
     @Override
-    public MagicCondition[] getConditions() {
-        return conds;
+    public boolean isSatisfied() {
+        return cond.accept(getSource()) && super.isSatisfied();
     }
 }

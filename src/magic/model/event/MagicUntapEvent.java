@@ -7,7 +7,7 @@ import magic.model.condition.MagicCondition;
 
 public class MagicUntapEvent extends MagicEvent {
 
-    private static final MagicCondition[] conds = new MagicCondition[]{MagicCondition.CAN_UNTAP_CONDITION};
+    private static final MagicCondition cond = MagicCondition.CAN_UNTAP_CONDITION;
 
     public MagicUntapEvent(final MagicPermanent permanent) {
         super(
@@ -25,7 +25,7 @@ public class MagicUntapEvent extends MagicEvent {
     };
 
     @Override
-    public MagicCondition[] getConditions() {
-        return conds;
+    public boolean isSatisfied() {
+        return cond.accept(getSource()) && super.isSatisfied();
     }
 }

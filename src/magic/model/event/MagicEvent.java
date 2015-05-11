@@ -662,16 +662,7 @@ public class MagicEvent implements MagicCopyable {
         }
     }
 
-    public MagicCondition[] getConditions() {
-        return MagicActivation.NO_COND;
-    }
-    
     public boolean isSatisfied() {
-        for (final MagicCondition condition : getConditions()) {
-            if (!condition.accept(source)) {
-                return false;
-            }
-        }
         return choice.hasOptions(player.getGame(), player, source, false);
     }
 

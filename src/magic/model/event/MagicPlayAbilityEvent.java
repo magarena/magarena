@@ -7,19 +7,19 @@ import magic.model.condition.MagicCondition;
 
 public class MagicPlayAbilityEvent extends MagicEvent {
 
-    private final MagicCondition[] conds;
+    private final MagicCondition cond;
     
     public MagicPlayAbilityEvent(final MagicPermanent source) {
         this(source, MagicCondition.ABILITY_ONCE_CONDITION);
     }
 
-    public MagicPlayAbilityEvent(final MagicPermanent source, final MagicCondition cond) {
+    public MagicPlayAbilityEvent(final MagicPermanent source, final MagicCondition condition) {
         super(
             source,
             EVENT_ACTION,
             ""
         );
-        conds = new MagicCondition[]{cond};
+        cond = condition;
     }
     private static final MagicEventAction EVENT_ACTION=new MagicEventAction() {
         @Override
@@ -29,7 +29,7 @@ public class MagicPlayAbilityEvent extends MagicEvent {
     };
 
     @Override
-    public MagicCondition[] getConditions() {
-        return conds;
+    public boolean isSatisfied() {
+        return cond.accept(getSource()) && super.isSatisfied();
     }
 }

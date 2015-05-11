@@ -13,7 +13,7 @@ import magic.model.condition.MagicConditionFactory;
 
 public class MagicDiscardEvent extends MagicEvent {
 
-    private final MagicCondition[] conds;
+    private final MagicCondition cond;
 
     public MagicDiscardEvent(final MagicSource source,final MagicPlayer player, final int amount) {
         this(source, player, amount, false);
@@ -57,9 +57,7 @@ public class MagicDiscardEvent extends MagicEvent {
         );
         //check if source is in player's hand
         final int minHandSize = player.getHand().contains(source) ? amount + 1 : amount;
-        conds = new MagicCondition[]{
-            MagicConditionFactory.HandAtLeast(minHandSize)
-        };
+        cond = MagicConditionFactory.HandAtLeast(minHandSize);
     }
 
     private static final MagicEventAction EVENT_ACTION=new MagicEventAction() {
@@ -75,8 +73,8 @@ public class MagicDiscardEvent extends MagicEvent {
     };
 
     @Override
-    public MagicCondition[] getConditions() {
-        return conds;
+    public boolean isSatisfied() {
+        return cond.accept(getSource()) && super.isSatisfied();
     }
 
     private static final String genDescription(final MagicPlayer player,final int amount) {

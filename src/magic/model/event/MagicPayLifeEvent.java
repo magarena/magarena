@@ -9,7 +9,7 @@ import magic.model.condition.MagicConditionFactory;
 
 public class MagicPayLifeEvent extends MagicEvent {
 
-    private final MagicCondition[] conds;
+    private final MagicCondition cond;
 
     public MagicPayLifeEvent(final MagicSource source,final int amount) {
         this(source, source.getController(), amount);
@@ -27,13 +27,11 @@ public class MagicPayLifeEvent extends MagicEvent {
             },
             "Pay "+amount+" life."
         );
-        conds = new MagicCondition[] {
-            MagicConditionFactory.YouLifeAtLeast(amount)
-        };
+        cond = MagicConditionFactory.YouLifeAtLeast(amount);
     }
 
     @Override
-    public MagicCondition[] getConditions() {
-        return conds;
+    public boolean isSatisfied() {
+        return cond.accept(getSource()) && super.isSatisfied();
     }
 }
