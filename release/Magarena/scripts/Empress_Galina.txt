@@ -6,6 +6,6 @@ type=Legendary,Creature
 subtype=Merfolk
 cost={3}{U}{U}
 pt=1/3
+ability={U}{U}, {T}: Gain control of target legendary permanent.
 timing=main
-requires_groovy_code
 oracle={U}{U}, {T}: Gain control of target legendary permanent.

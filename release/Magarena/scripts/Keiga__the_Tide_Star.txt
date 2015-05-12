@@ -6,7 +6,7 @@ type=Legendary,Creature
 subtype=Dragon,Spirit
 cost={5}{U}
 pt=5/5
-ability=flying
+ability=flying;\
+        When SN dies, gain control of target creature.
 timing=main
-requires_groovy_code
 oracle=Flying\nWhen Keiga, the Tide Star dies, gain control of target creature.
