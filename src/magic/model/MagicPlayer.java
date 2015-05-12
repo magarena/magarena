@@ -304,7 +304,7 @@ public class MagicPlayer extends MagicObjectImpl implements MagicTarget, MagicMa
         creaturesAttackedThisTurn=count; 
     }
     
-    public void incCreatuesAttacked() {
+    public void incCreaturesAttacked() {
         creaturesAttackedThisTurn++;
     }
     
