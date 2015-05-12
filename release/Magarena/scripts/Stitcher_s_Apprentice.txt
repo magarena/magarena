@@ -6,6 +6,6 @@ type=Creature
 subtype=Homunculus
 cost={1}{U}
 pt=1/2
+ability={1}{U}, {T}: Put a 2/2 blue Homunculus creature token onto the battlefield.~Sacrifice a creature.
 timing=main
-requires_groovy_code
 oracle={1}{U}, {T}: Put a 2/2 blue Homunculus creature token onto the battlefield, then sacrifice a creature.
