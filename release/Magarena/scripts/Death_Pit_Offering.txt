@@ -4,7 +4,7 @@ value=2.500
 rarity=R
 type=Enchantment
 cost={2}{B}{B}
-ability=When SN enters the battlefield, sacrifice all creatures you control.;\
-        Creatures you control get +2/+2.
+ability=Creatures you control get +2/+2.
 timing=enchantment
+requires_groovy_code
 oracle=When Death Pit Offering enters the battlefield, sacrifice all creatures you control.\nCreatures you control get +2/+2.
