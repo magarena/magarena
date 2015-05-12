@@ -4,6 +4,6 @@ value=2.600
 rarity=C
 type=Instant
 cost={2}{B}
-effect=Target creature gains deathtouch until end of turn.~Regenerate it*.
+effect=Target creature gains deathtouch until end of turn.~Regenerate *it*.
 timing=pump
 oracle=Target creature gains deathtouch until end of turn. Regenerate it.

@@ -3509,7 +3509,7 @@ public enum MagicRuleEventAction {
         return matcher;
     }
     
-    static final Pattern TARGET_REFERENCE = Pattern.compile("([A-Za-z]+)\\*");
+    static final Pattern TARGET_REFERENCE = Pattern.compile("\\*([^*]+)\\*");
 
     private static MagicEventAction computeEventAction(final MagicEventAction main, final String[] part) {
         if (part.length > 1) {

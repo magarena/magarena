@@ -4,6 +4,6 @@ value=2.817
 rarity=U
 type=Instant
 cost={2}{W}
-effect=Untap target creature.~It* gets +2/+4 until end of turn.
+effect=Untap target creature.~*It* gets +2/+4 until end of turn.
 timing=tapping
 oracle=Untap target creature. It gets +2/+4 until end of turn.
