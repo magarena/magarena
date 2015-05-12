@@ -47,6 +47,10 @@ public class MagicSimpleMayChoice extends MagicChoice {
         this(description, 0, 0, DEFAULT_YES);
     }
     
+    public MagicSimpleMayChoice() {
+        this(0, 0, DEFAULT_YES);
+    }
+    
     public MagicSimpleMayChoice(final int action) {
         this(action, 0, DEFAULT_YES);
     }
