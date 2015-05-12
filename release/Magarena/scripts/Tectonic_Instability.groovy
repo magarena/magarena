@@ -14,8 +14,7 @@
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicPlayer player = event.getRefPermanent().getController()
-            LAND.filter(player) each {
+            LAND_YOU_CONTROL.filter(event.getRefPermanent().getController()) each {
                 game.doAction(new TapAction(it))
             }
         }

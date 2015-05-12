@@ -13,7 +13,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final int X = event.getCardOnStack().getController().getDevotion(MagicColor.Green);
+                final int X = event.getPlayer().getDevotion(MagicColor.Green);
                 game.doAction(new ChangeTurnPTAction(it,X,X));
             });
         }

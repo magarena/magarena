@@ -18,7 +18,7 @@ def action = {
                 cardOnStack,
                 NEG_TARGET_SPELL,
                 this,
-                "Counter target spell\$ unless its controller exiles all cards from his or her graveyard. Draw a card."
+                "Counter target spell\$ unless its controller exiles all cards from his or her graveyard. PN draws a card."
             );
         }
         @Override
@@ -33,7 +33,7 @@ def action = {
                     "PN may\$ exile his or her graveyard. If PN doesn't, RN is countered."
                 ));
             });
-        game.doAction(new DrawAction(event.getSource().getController(),1));
+            game.doAction(new DrawAction(event.getPlayer(),1));
         }
     }
 ]
