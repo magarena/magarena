@@ -9,8 +9,8 @@ def choice = Negative("target Wall");
                 choice,
                 MagicDestroyTargetPicker.DestroyNoRegen,
                 this,
-                "Destroy target Wall\$. It can't be regenerated. SN deals damage equal to that Wall's converted mana cost. "+
-                "to the Wall's controller."
+                "Destroy target Wall\$. It can't be regenerated. " + 
+                "SN deals damage equal to that Wall's converted mana cost to the Wall's controller."
             );
         }
         @Override

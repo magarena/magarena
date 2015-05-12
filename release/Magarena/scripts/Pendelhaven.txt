@@ -3,7 +3,7 @@ image=http://magiccards.info/scans/en/tsts/120.jpg
 value=4.362
 rarity=U
 type=Legendary,Land
-ability={T}: Add {G} to your mana pool.
+ability={T}: Add {G} to your mana pool.;\
+        {T}: Target 1/1 creature gets +1/+2 until end of turn.
 timing=land
-requires_groovy_code
 oracle={T}: Add {G} to your mana pool.\n{T}: Target 1/1 creature gets +1/+2 until end of turn.

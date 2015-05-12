@@ -20,10 +20,7 @@
             ));
         }
     },   
-    new MagicStatic(
-        MagicLayer.ModPT,
-        Permanent("Bird creatures")
-    ) {
+    new MagicStatic(MagicLayer.ModPT, Permanent("Bird creatures")) {
         @Override
         public void modPowerToughness(final MagicPermanent source, final MagicPermanent permanent, final MagicPowerToughness pt) {
             final int amount = source.getCounters(MagicCounterType.Feather);

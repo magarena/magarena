@@ -1,13 +1,7 @@
 [
-    new MagicStatic(
-        MagicLayer.ModPT,
-        CREATURE
-    ) {
+    new MagicStatic(MagicLayer.ModPT, CREATURE) {
         @Override
-        public void modPowerToughness(
-                final MagicPermanent source,
-                final MagicPermanent permanent,
-                final MagicPowerToughness pt) {
+        public void modPowerToughness(final MagicPermanent source, final MagicPermanent permanent, final MagicPowerToughness pt) {
             final int amount = source.getCounters(MagicCounterType.Strife);
             pt.add(amount,0);
         }

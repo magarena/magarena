@@ -14,10 +14,7 @@ def event = {
 }
 
 [
-    new MagicStatic(
-        MagicLayer.Ability,
-        CREATURE_YOUR_OPPONENT_CONTROLS
-    ) {
+    new MagicStatic(MagicLayer.Ability, CREATURE_YOUR_OPPONENT_CONTROLS) {
         @Override
         public void modAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final Set<MagicAbility> flags) {
             permanent.addAbility(MagicAbility.AttacksEachTurnIfAble, flags);

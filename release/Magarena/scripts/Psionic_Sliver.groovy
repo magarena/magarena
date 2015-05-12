@@ -30,10 +30,7 @@ def PsionicDamage = new MagicPermanentActivation(
 };
 
 [
-    new MagicStatic(
-        MagicLayer.Ability,
-        SLIVER
-    ) {
+    new MagicStatic(MagicLayer.Ability, SLIVER) {
         @Override
         public void modAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final Set<MagicAbility> flags) {
             permanent.addAbility(PsionicDamage);

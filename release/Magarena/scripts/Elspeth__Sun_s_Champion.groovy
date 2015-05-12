@@ -45,10 +45,7 @@
         @Override
         public void executeEvent(final MagicGame outerGame, final MagicEvent event) {
             outerGame.doAction(new AddStaticAction(
-                new MagicStatic(
-                    MagicLayer.ModPT,
-                    ANY
-                ) {
+                new MagicStatic(MagicLayer.ModPT, ANY) {
                     @Override
                     public void modPowerToughness(final MagicPermanent source,final MagicPermanent permanent,final MagicPowerToughness pt) {
                         pt.add(2, 2);
@@ -60,10 +57,7 @@
                 }
             ));
             outerGame.doAction(new AddStaticAction(
-                new MagicStatic(
-                    MagicLayer.Ability,
-                    ANY
-                ) {
+                new MagicStatic(MagicLayer.Ability, ANY) {
                     @Override
                     public void modAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final Set<MagicAbility> flags) {
                         permanent.addAbility(MagicAbility.Flying, flags);

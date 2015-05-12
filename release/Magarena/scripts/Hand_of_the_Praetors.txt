@@ -6,7 +6,8 @@ type=Creature
 subtype=Zombie
 cost={3}{B}
 pt=3/2
-ability=infect
+ability=infect;\
+        Other creatures you control with infect get +1/+1
 static=player
 timing=main
 requires_groovy_code

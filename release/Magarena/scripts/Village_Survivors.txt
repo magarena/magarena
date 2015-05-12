@@ -6,7 +6,7 @@ type=Creature
 subtype=Human
 cost={4}{G}
 pt=4/5
-ability=vigilance
+ability=vigilance;\
+        As long as you have 5 or less life, other creatures you control have vigilance.
 timing=fmain
-requires_groovy_code
 oracle=Vigilance\nFateful hour — As long as you have 5 or less life, other creatures you control have vigilance.

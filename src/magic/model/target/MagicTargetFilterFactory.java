@@ -1162,6 +1162,8 @@ public class MagicTargetFilterFactory {
     
     public static final MagicPermanentFilterImpl CREATURE_WITH_DEFENDER_YOU_CONTROL = MagicTargetFilterFactory.creature(MagicAbility.Defender, Control.You);
     
+    public static final MagicPermanentFilterImpl CREATURE_WITH_INFECT_YOU_CONTROL = MagicTargetFilterFactory.creature(MagicAbility.Infect, Control.You);
+    
     public static final MagicPermanentFilterImpl CREATURE_WITH_HORSEMANSHIP = MagicTargetFilterFactory.creature(MagicAbility.Horsemanship, Control.Any);
     
     public static final MagicPermanentFilterImpl CREATURE_WITH_ISLANDWALK = MagicTargetFilterFactory.creature(MagicAbility.Islandwalk, Control.Any);
@@ -2308,6 +2310,7 @@ public class MagicTargetFilterFactory {
         single.put("creature you control with defender", CREATURE_WITH_DEFENDER_YOU_CONTROL);
         single.put("creature with defender you control", CREATURE_WITH_DEFENDER_YOU_CONTROL);
         single.put("face-up nontoken creature you control", FACEUP_NONTOKEN_CREATURE_YOU_CONTROL);
+        single.put("creature you control with infect", CREATURE_WITH_INFECT_YOU_CONTROL);
         
         // <color|type|subtype> creature an opponent controls
         single.put("creature with flying an opponent controls", CREATURE_WITH_FLYING_YOUR_OPPONENT_CONTROLS);

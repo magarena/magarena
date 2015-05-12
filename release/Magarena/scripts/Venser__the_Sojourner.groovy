@@ -29,10 +29,7 @@
         @Override
         public void executeEvent(final MagicGame outerGame, final MagicEvent outerEvent) {
             outerGame.doAction(new AddStaticAction(
-                new MagicStatic(
-                    MagicLayer.Ability,
-                    CREATURE,
-                    MagicStatic.UntilEOT) {
+                new MagicStatic(MagicLayer.Ability, CREATURE, MagicStatic.UntilEOT) {
                     @Override
                     public void modAbilityFlags(final MagicPermanent source, final MagicPermanent permanent, final Set<MagicAbility> flags) {
                         permanent.addAbility(MagicAbility.Unblockable, flags);

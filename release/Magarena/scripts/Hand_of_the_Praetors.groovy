@@ -1,17 +1,4 @@
 [
-    new MagicStatic(
-        MagicLayer.ModPT,
-        CREATURE_YOU_CONTROL
-    ) {
-        @Override
-        public void modPowerToughness(final MagicPermanent source,final MagicPermanent permanent,final MagicPowerToughness pt) {
-            pt.add(1,1);
-        }
-        @Override
-        public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
-            return source != target && target.hasAbility(MagicAbility.Infect);
-        }
-    },
     new MagicWhenOtherSpellIsCastTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack cardOnStack) {

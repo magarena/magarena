@@ -1,8 +1,5 @@
 [
-    new MagicStatic(
-        MagicLayer.Ability,
-        CREATURE
-    ) {
+    new MagicStatic(MagicLayer.Ability, CREATURE) {
         @Override
         public void modAbilityFlags(final MagicPermanent source, final MagicPermanent target, final Set<MagicAbility> flags) {
             for (final MagicColor color : MagicColor.values()) {

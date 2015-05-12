@@ -7,10 +7,7 @@ def EQUIPMENT_YOU_CONTROL = new MagicPermanentFilterImpl() {
 };
 
 [
-    new MagicStatic(
-        MagicLayer.Ability,
-        EQUIPMENT_YOU_CONTROL
-    ) {
+    new MagicStatic(MagicLayer.Ability, EQUIPMENT_YOU_CONTROL) {
         @Override
         public void modAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final Set<MagicAbility> flags) {
             permanent.addAbility(Equip0);
