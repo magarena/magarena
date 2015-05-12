@@ -4,6 +4,6 @@ value=1.315
 rarity=C
 type=Instant
 cost={2}{W}
+effect=Target creature gains flying until end of turn.~Prevent all damage that would be dealt to *that creature* this turn.
 timing=pump
-requires_groovy_code
 oracle=Target creature gains flying until end of turn. Prevent all damage that would be dealt to that creature this turn.
