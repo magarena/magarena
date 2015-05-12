@@ -10,7 +10,7 @@ def choice = new MagicTargetChoice("target creature defending player controls");
                 new MagicDamageTargetPicker(permanent.getPower()),
                 this,
                 "PN may\$ have SN deal damage equal to its power to target creature defending player controls.\$ "+
-                "If you do, that creature deals damage equal to its power to SN."
+                "If PN does, that creature deals damage equal to its power to SN."
             );
         }
 
