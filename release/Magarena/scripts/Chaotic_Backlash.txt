@@ -4,6 +4,7 @@ value=2.500
 rarity=U
 type=Instant
 cost={4}{R}
-effect=SN deals damage to target player equal to twice the number of white and/or blue permanents he or she controls.
+ability=Cast SN with AI only if an opponent controls one or more white or blue permanents.
 timing=removal
+requires_groovy_code
 oracle=Chaotic Backlash deals damage to target player equal to twice the number of white and/or blue permanents he or she controls.
