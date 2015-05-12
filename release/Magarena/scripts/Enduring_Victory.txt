@@ -4,6 +4,6 @@ value=2.500
 rarity=C
 type=Instant
 cost={4}{W}
-effect=Destroy target attacking or blocking creature. Bolster 1.
+effect=Destroy target attacking or blocking creature.~Bolster 1.
 timing=removal
 oracle=Destroy target attacking or blocking creature. Bolster 1.
