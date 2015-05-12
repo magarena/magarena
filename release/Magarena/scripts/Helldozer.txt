@@ -6,6 +6,6 @@ type=Creature
 subtype=Zombie,Giant
 cost={3}{B}{B}{B}
 pt=6/5
-ability={B}{B}{B}, {T}: Destroy target land. If that land was nonbasic, untap SN.
 timing=main
+requires_groovy_code
 oracle={B}{B}{B}, {T}: Destroy target land. If that land was nonbasic, untap Helldozer.
