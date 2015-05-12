@@ -313,6 +313,12 @@ public class MagicTargetFilterFactory {
     
     public static final MagicPermanentFilterImpl WHITE_OR_BLACK_PERMANENT = MagicTargetFilterFactory.permanentOr(MagicColor.White, MagicColor.Black, Control.Any);
     
+    public static final MagicPermanentFilterImpl WHITE_OR_BLUE_PERMANENT_AN_OPPONENT_CONTROLS = MagicTargetFilterFactory.permanentOr(MagicColor.White, MagicColor.Blue, Control.Opp);
+    
+    public static final MagicPermanentFilterImpl WHITE_OR_BLUE_PERMANENT_YOU_CONTROL = MagicTargetFilterFactory.permanentOr(MagicColor.White, MagicColor.Blue, Control.You);
+    
+    public static final MagicPermanentFilterImpl WHITE_OR_BLUE_PERMANENT = MagicTargetFilterFactory.permanentOr(MagicColor.White, MagicColor.Blue, Control.Any);
+    
     public static final MagicPermanentFilterImpl RED_OR_WHITE_PERMANENT = MagicTargetFilterFactory.permanentOr(MagicColor.Red, MagicColor.White, Control.Any);
 
     public static final MagicPermanentFilterImpl NON_SWAMP_LAND=new MagicPermanentFilterImpl() {
@@ -2465,6 +2471,7 @@ public class MagicTargetFilterFactory {
         single.put("nonland permanent an opponent controls", NONLAND_PERMANENT_YOUR_OPPONENT_CONTROLS);
         single.put("Island or Swamp an opponent controls", ISLAND_OR_SWAMP_AN_OPPONENT_CONTROLS);
         single.put("nonbasic land an opponent controls", NONBASIC_LAND_AN_OPPONENT_CONTROLS);
+        single.put("white or blue permanent an opponent controls", WHITE_OR_BLUE_PERMANENT_AN_OPPONENT_CONTROLS);
         
         // <color|type|subtype> you don't control
         single.put("spell you don't control", SPELL_YOU_DONT_CONTROL);
@@ -2487,6 +2494,7 @@ public class MagicTargetFilterFactory {
         single.put("blue or red permanent", BLUE_OR_RED_PERMANENT);
         single.put("green or blue permanent", GREEN_OR_BLUE_PERMANENT);
         single.put("white or black permanent", WHITE_OR_BLACK_PERMANENT);
+        single.put("white or blue permanent", WHITE_OR_BLUE_PERMANENT);
         single.put("red or white permanent", RED_OR_WHITE_PERMANENT);
         single.put("multicolored permanent", MULTICOLORED_PERMANENT);
         single.put("nonwhite permanent", NONWHITE_PERMANENT);
