@@ -6,3 +6,4 @@ type=Creature
 subtype=Elf,Warrior
 color=gw
 pt=1/1
+oracle=NONE
