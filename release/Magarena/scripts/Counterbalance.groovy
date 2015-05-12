@@ -5,7 +5,11 @@
             return permanent.isEnemy(cardOnStack) ?
                 new MagicEvent(
                     permanent,
-                    new MagicMayChoice("Reveal the top card of your library?"),
+                    new MagicSimpleMayChoice(
+                        MagicSimpleMayChoice.DRAW_CARDS,
+                        1,
+                        MagicSimpleMayChoice.DEFAULT_YES
+                    ),
                     cardOnStack,
                     this,
                     "Reveal the top card of your library. " +
