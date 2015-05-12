@@ -1,0 +1,9 @@
+name=1/1 black Thrull creature token
+token=Thrull
+image=http://cdn.staticneo.com/w/mtg/e/e3/Thrull.jpg
+value=1
+type=Creature
+subtype=Thrull
+color=b
+pt=1/1
+oracle=NONE
