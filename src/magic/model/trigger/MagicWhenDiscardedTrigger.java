@@ -27,7 +27,7 @@ public abstract class MagicWhenDiscardedTrigger extends MagicWhenOtherPutIntoGra
         return new MagicWhenDiscardedTrigger() {
             @Override
             public MagicEvent getEvent(final MagicPermanent source, final MagicCard card) {
-                return sourceEvent.getEvent(source);
+                return sourceEvent.getEvent(source, card.getOwner());
             }
         };
     }
@@ -41,7 +41,7 @@ public abstract class MagicWhenDiscardedTrigger extends MagicWhenOtherPutIntoGra
         
             @Override
             public MagicEvent getEvent(final MagicPermanent source, final MagicCard card) {
-                return sourceEvent.getEvent(source);
+                return sourceEvent.getEvent(source, card.getOwner());
             }
         };
     }
