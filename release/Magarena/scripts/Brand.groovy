@@ -10,9 +10,8 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicPlayer player = event.getPlayer();
             PERMANENT_YOU_OWN.filter(event) each {
-                game.doAction(new GainControlAction(player, it));
+                game.doAction(new GainControlAction(event.getPlayer(), it));
             }
         }
     }

@@ -4,6 +4,6 @@ value=2.945
 rarity=C
 type=Instant
 cost={U}
+effect=Target creature gains flying until end of turn.~Untap *it*.
 timing=tapping
-requires_groovy_code
 oracle=Target creature gains flying until end of turn. Untap it.

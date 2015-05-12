@@ -6,7 +6,7 @@ type=Creature
 subtype=Spirit,Avatar
 cost={U/R}{U/R}{U/R}{U/R}{U/R}
 pt=4/4
-ability=flying
+ability=flying;\
+        At the beginning of your upkeep, you may gain control of target permanent until end of turn.~Untap *it*.~*It* gains haste until end of turn.
 timing=main
-requires_groovy_code
 oracle=Flying\nAt the beginning of your upkeep, you may gain control of target permanent until end of turn. If you do, untap it and it gains haste until end of turn.

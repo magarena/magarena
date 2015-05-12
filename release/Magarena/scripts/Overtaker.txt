@@ -6,6 +6,6 @@ type=Creature
 subtype=Merfolk,Spellshaper
 cost={1}{U}
 pt=1/1
+ability={3}{U}, {T}, Discard a card: Untap target creature.~Gain control of *it* until end of turn.~*That creature* gains haste until end of turn.
 timing=main
-requires_groovy_code
 oracle={3}{U}, {T}, Discard a card: Untap target creature and gain control of it until end of turn. That creature gains haste until end of turn.

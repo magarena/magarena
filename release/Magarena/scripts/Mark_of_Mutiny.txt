@@ -5,6 +5,6 @@ removal=5
 rarity=U
 type=Sorcery
 cost={2}{R}
+effect=Gain control of target creature until end of turn.~Put a +1/+1 counter on *it*.~Untap *it*.~*That creature* gains haste until end of turn.
 timing=removal
-requires_groovy_code
 oracle=Gain control of target creature until end of turn. Put a +1/+1 counter on it and untap it. That creature gains haste until end of turn.

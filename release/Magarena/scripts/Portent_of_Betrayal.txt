@@ -4,6 +4,6 @@ value=3.056
 rarity=C
 type=Sorcery
 cost={3}{R}
+effect=Gain control of target creature until end of turn.~Untap *that creature*.~*It* gains haste until end of turn.~Scry 1.
 timing=main
-requires_groovy_code
 oracle=Gain control of target creature until end of turn. Untap that creature. It gains haste until end of turn. Scry 1.

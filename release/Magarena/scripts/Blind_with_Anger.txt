@@ -5,6 +5,6 @@ rarity=U
 type=Instant
 subtype=Arcane
 cost={3}{R}
+effect=Untap target nonlegendary creature.~Gain control of *it* until end of turn.~*That creature* gains haste until end of turn.
 timing=removal
-requires_groovy_code
 oracle=Untap target nonlegendary creature and gain control of it until end of turn. That creature gains haste until end of turn.
