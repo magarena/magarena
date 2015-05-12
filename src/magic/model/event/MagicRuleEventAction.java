@@ -2134,7 +2134,7 @@ public enum MagicRuleEventAction {
         }
     },
     ParalyzeChosen(
-        ARG.CHOICE + " doesn't untap during its controller's next untap step\\.",
+        ARG.CHOICE + " doesn't untap during (your|its controller's) next untap step\\.",
         MagicTargetHint.Negative,
         new MagicNoCombatTargetPicker(true,true,false),
         MagicTiming.Tapping,
