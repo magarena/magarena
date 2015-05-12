@@ -12,10 +12,11 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
-            final int amount = player.getNrOfPermanents(MagicSubType.Mountain);
-            final int halfAmount = (int)Math.ceil(amount/2);
             event.processTarget(game, {
+                final int amount = player.getNrOfPermanents(MagicSubType.Mountain);
                 game.doAction(new DealDamageAction(event.getSource(),it,amount));
+                
+                def halfAmount = (amount + 1).intdiv(2);
                 game.doAction(new DealDamageAction(event.getSource(),event.getPlayer(),halfAmount));
             });
         }
