@@ -2,9 +2,8 @@
     new MagicWhenDamageIsDealtTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
-            return (damage.isCombat() && 
-                damage.isSource(permanent.getEnchantedPermanent()) &&
-                damage.isTargetPlayer()) ?
+            return (damage.isSource(permanent.getEnchantedPermanent()) &&
+                    damage.isCombat() && damage.isTargetPlayer()) ?
                 new MagicEvent(
                     permanent,
                     damage.getTarget(),
@@ -18,8 +17,8 @@
             game.addEvent(new MagicSacrificePermanentEvent(
                 event.getPermanent(),
                 event.getRefPlayer(), 
-                MagicTargetChoice.SACRIFICE_LAND)
-            );
+                MagicTargetChoice.SACRIFICE_LAND
+            ));
         }
     }
 ]
