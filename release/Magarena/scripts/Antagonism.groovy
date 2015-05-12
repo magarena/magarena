@@ -1,10 +1,7 @@
 [
     new MagicAtEndOfTurnTrigger() {
         @Override
-        public MagicEvent executeTrigger(
-                final MagicGame game,
-                final MagicPermanent permanent,
-                final MagicPlayer player) {
+        public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPlayer player) {
             return (!player.getOpponent().hasState(MagicPlayerState.WasDealtDamage)) ?
                 new MagicEvent(
                     permanent,
