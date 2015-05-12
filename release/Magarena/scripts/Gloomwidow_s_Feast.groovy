@@ -21,7 +21,7 @@
                         CardDefinitions.getToken("1/2 green Spider creature token with reach")
                     ));
                 }
-            })
+            });
         }
     }
 ]
