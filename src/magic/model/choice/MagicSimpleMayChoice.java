@@ -23,6 +23,7 @@ public class MagicSimpleMayChoice extends MagicChoice {
     public static final int ADD_PLUSONE_COUNTER = 8;   // always returns YES_CHOICE_LIST
     public static final int PLAY_TOKEN = 9;            // always returns YES_CHOICE_LIST
     public static final int PUMP = 10;                 // always returns YES_CHOICE_LIST
+    public static final int COUNTER_SPELL = 11;        // always returns YES_CHOICE_LIST
 
     public static final int DEFAULT_NONE = 0;
     public static final int DEFAULT_NO   = 1;
@@ -42,7 +43,19 @@ public class MagicSimpleMayChoice extends MagicChoice {
         this.defaultChoice = defaultChoice;
     }
 
-    public MagicSimpleMayChoice(final int action,final int amount,final int defaultChoice) {
+    public MagicSimpleMayChoice(final String description) {
+        this(description, 0, 0, DEFAULT_YES);
+    }
+    
+    public MagicSimpleMayChoice(final int action) {
+        this(action, 0, DEFAULT_YES);
+    }
+    
+    public MagicSimpleMayChoice(final int action, final int defaultChoice) {
+        this(action, 0, defaultChoice);
+    }
+
+    public MagicSimpleMayChoice(final int action, final int amount,final int defaultChoice) {
         this("Proceed with \"may\" action?", action, amount, defaultChoice);
     }
 
