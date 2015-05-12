@@ -3295,6 +3295,27 @@ public enum MagicRuleEventAction {
             return LoseSelf.getName(matcher);
         }
     },
+    GainControl(
+        "gain control of " + ARG.TARGET + " until end of turn\\.",
+        MagicTargetHint.Negative,
+        MagicExileTargetPicker.create(),
+        MagicTiming.Removal, 
+        "Control"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    event.processTargetPermanent(game,new MagicPermanentAction() {
+                        public void doAction(final MagicPermanent perm) {
+                            game.doAction(new GainControlAction(event.getPlayer(), perm, MagicStatic.UntilEOT));
+                        }
+                    });
+                }
+            };
+        }
+    },
     Clash(
         "clash with an opponent. If you win, (?<effect>.*)",
         MagicTiming.None,
