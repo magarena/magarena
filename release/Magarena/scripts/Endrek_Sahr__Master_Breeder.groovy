@@ -15,10 +15,10 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new PlayTokensAction(
-                    event.getPlayer(),
-                    CardDefinitions.getToken("1/1 black Thrull creature token"),
-                    event.getRefInt()
-                ));
+                event.getPlayer(),
+                CardDefinitions.getToken("1/1 black Thrull creature token"),
+                event.getRefInt()
+            ));
         }
     }
 ]
