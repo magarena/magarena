@@ -3296,7 +3296,7 @@ public enum MagicRuleEventAction {
         }
     },
     GainControl(
-        "gain control of " + ARG.TARGET + " until end of turn\\.",
+        "gain control of " + ARG.TARGET + "(?<ueot> until end of turn)?\\.",
         MagicTargetHint.Negative,
         MagicExileTargetPicker.create(),
         MagicTiming.Removal, 
@@ -3304,12 +3304,13 @@ public enum MagicRuleEventAction {
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
+            final boolean duration = matcher.group("ueot") != null ? MagicStatic.UntilEOT : MagicStatic.Forever;
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
                     event.processTargetPermanent(game,new MagicPermanentAction() {
                         public void doAction(final MagicPermanent perm) {
-                            game.doAction(new GainControlAction(event.getPlayer(), perm, MagicStatic.UntilEOT));
+                            game.doAction(new GainControlAction(event.getPlayer(), perm, duration));
                         }
                     });
                 }
