@@ -3508,22 +3508,27 @@ public enum MagicRuleEventAction {
         }
         return matcher;
     }
+    
+    static final Pattern TARGET_REFERENCE = Pattern.compile("([A-Za-z]+)\\*");
 
     private static MagicEventAction computeEventAction(final MagicEventAction main, final String[] part) {
         if (part.length > 1) {
             final MagicEventAction[] acts = new MagicEventAction[part.length];
             acts[0] = main;
             for (int i = 1; i < part.length; i++) {
-                final String rider = part[i];
+                final Matcher referenceMatcher = TARGET_REFERENCE.matcher(part[i]);
+                final boolean hasReference = referenceMatcher.find();
+                final String rider = TARGET_REFERENCE.matcher(part[i]).replaceAll("target permanent");
                 final MagicRuleEventAction riderAction = MagicRuleEventAction.build(rider);
                 final Matcher riderMatcher = riderAction.matched(rider);
 
                 //rider cannot have choices
-                if (riderAction.getChoice(riderMatcher).isValid()) {
+                if (hasReference == false && riderAction.getChoice(riderMatcher).isValid()) {
                     throw new RuntimeException("rider should not have choice: \"" + part[i] + "\"");
                 }
 
                 acts[i] = riderAction.getAction(riderMatcher);
+                part[i] = TARGET_REFERENCE.matcher(part[i]).replaceAll("$1");
             }
             return MagicEventActionFactory.compose(acts);
         } else {
@@ -3533,7 +3538,6 @@ public enum MagicRuleEventAction {
 
     public static String personalize(final String text) {
         return text
-            .replaceAll("~", " ")
             .replaceAll("(S|s)earch your ", "PN searches PN's ")
             .replaceAll("discard ","discards ")
             .replaceAll("reveal ","reveals ")
@@ -3604,8 +3608,8 @@ public enum MagicRuleEventAction {
         final MagicChoice choice = ruleAction.getChoice(matcher);
         final String pnMayChoice = capitalize(ruleWithoutMay).replaceFirst("\\.", "?");
 
-        final String contextRule = concat(ruleWithoutMay, part).replace("your ","PN's ").replace("you ","PN ").replace("you.", "PN.");
-        final String playerRule = personalize(text);
+        final String contextRule = personalize(concat(ruleWithoutMay, part));
+        final String playerRule = personalize(concat(rule, part));
 
         if (mayCost != MagicManaCost.ZERO) {
             return new MagicSourceEvent(ruleAction, matcher) {
