@@ -696,6 +696,13 @@ public class MagicTargetFilterFactory {
             return target.isCreature() && target.isEnchanted() == false;
         }
     };
+    
+    public static final MagicPermanentFilterImpl NON_LEGENDARY_CREATURE=new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+            return !target.hasType(MagicType.Legendary) &&
+                   target.isCreature();
+        }
+    };
 
     public static final MagicPermanentFilterImpl NON_LEGENDARY_CREATURE_YOU_CONTROL=new MagicPermanentFilterImpl() {
         public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
@@ -2417,6 +2424,7 @@ public class MagicTargetFilterFactory {
         single.put("enchanted permanent", ENCHANTED_PERMANENT);
         single.put("enchanted artifact", ENCHANTED_ARTIFACT);
         single.put("equipped creature", EQUIPPED_CREATURE);
+        single.put("nonlegendary creature", NON_LEGENDARY_CREATURE);
 
         // <color|type|subtype> you control
         single.put("basic land you control", BASIC_LAND_YOU_CONTROL);
