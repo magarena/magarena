@@ -4,6 +4,6 @@ value=2.500
 rarity=C
 type=Instant
 cost={2}{U}{R}
-effect=Counter target creature spell. SN deals damage equal to that spell's power to its controller.
-timing=removal
+timing=counter
+requires_groovy_code
 oracle=Counter target creature spell. Essence Backlash deals damage equal to that spell's power to its controller.
