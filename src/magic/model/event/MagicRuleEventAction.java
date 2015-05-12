@@ -747,7 +747,7 @@ public enum MagicRuleEventAction {
         }
     },
     DrawDiscardPlayer(
-        ARG.YOU + "( )?draw(s)? (?<amount1>[a-z]+) card(s)?, then discard(s)? (?<amount2>[a-z]+) card(s)?\\.", 
+        ARG.YOU + "( )?draw(s)? (?<amount1>[a-z]+) card(s)?(, then|\\. if you do,) discard(s)? (?<amount2>[a-z]+) card(s)?\\.", 
         MagicTiming.Draw, 
         "Draw"
     ) {
