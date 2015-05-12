@@ -2611,6 +2611,7 @@ public class MagicTargetFilterFactory {
             .replaceAll("\\bdruids\\b", "druid")
             .replaceAll("\\billusions\\b", "illusion")
             .replaceAll("\\bsoldiers\\b", "soldier")
+            .replaceAll("\\bthrulls\\b", "thrull")
             .replaceAll("\\bwarriors\\b", "warrior")
             .replaceAll("\\bwizards\\b", "wizard")
             .replaceAll("\\bvampires\\b", "vampire")
