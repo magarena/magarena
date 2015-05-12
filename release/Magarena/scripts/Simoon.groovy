@@ -6,8 +6,7 @@
                 cardOnStack,
                 NEG_TARGET_PLAYER,
                 this,
-                "SN deals 1 damage to each creature target player\$ " +
-                "controls."
+                "SN deals 1 damage to each creature target player\$ controls."
             );
         }
         @Override
