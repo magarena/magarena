@@ -4,6 +4,6 @@ value=2.500
 rarity=C
 type=Instant
 cost={4}{G}
-effect=Destroy target creature with flying. Bolster 2.
+effect=Destroy target creature with flying.~Bolster 2.
 timing=removal
 oracle=Destroy target creature with flying. Bolster 2.
