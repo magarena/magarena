@@ -4,6 +4,6 @@ value=4.320
 rarity=U
 type=Enchantment
 cost={2}{U}{U}
+ability=Whenever a creature you control deals combat damage to an opponent, you may draw a card.
 timing=main
-requires_groovy_code
 oracle=Whenever a creature you control deals combat damage to an opponent, you may draw a card.

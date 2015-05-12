@@ -5,11 +5,7 @@
             return (played.isEnemy(permanent) && played.isLand()) ?
                 new MagicEvent(
                     permanent,
-                    new MagicSimpleMayChoice(
-                        MagicSimpleMayChoice.GAIN_LIFE,
-                        3,
-                        MagicSimpleMayChoice.DEFAULT_YES
-                    ),
+                    new MagicSimpleMayChoice(),
                     this,
                     "PN may\$ gain 3 life."
                 ):

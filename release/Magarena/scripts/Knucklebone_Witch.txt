@@ -6,6 +6,6 @@ type=Creature
 subtype=Goblin,Shaman
 cost={B}
 pt=1/1
+ability=Whenever a Goblin you control is put into a graveyard from the battlefield, you may put a +1/+1 counter on SN.
 timing=fmain
-requires_groovy_code
 oracle=Whenever a Goblin you control is put into a graveyard from the battlefield, you may put a +1/+1 counter on Knucklebone Witch.

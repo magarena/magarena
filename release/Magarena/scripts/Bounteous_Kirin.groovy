@@ -4,11 +4,7 @@
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicCardOnStack cardOnStack) {
             return new MagicEvent(
                 permanent,
-                new MagicSimpleMayChoice(
-                    MagicSimpleMayChoice.GAIN_LIFE,
-                    cardOnStack.getConvertedCost(),
-                    MagicSimpleMayChoice.DEFAULT_YES
-                ),
+                new MagicSimpleMayChoice(),
                 cardOnStack.getConvertedCost(),
                 this,
                 "You may gain RN life."

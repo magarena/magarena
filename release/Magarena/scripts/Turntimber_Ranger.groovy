@@ -6,11 +6,7 @@
                     otherPermanent.hasSubType(MagicSubType.Ally)) ?
                 new MagicEvent(
                     permanent,
-                    new MagicSimpleMayChoice(
-                        MagicSimpleMayChoice.PLAY_TOKEN,
-                        1,
-                        MagicSimpleMayChoice.DEFAULT_YES
-                    ),
+                    new MagicSimpleMayChoice(),
                     this,
                     "PN may\$ put a 2/2 green Wolf creature " +
                     "token onto the battlefield. If you do, put a " +

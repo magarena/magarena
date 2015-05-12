@@ -6,11 +6,7 @@
             return (card.isFriend(permanent)) ?
                 new MagicEvent(
                     permanent,
-                    new MagicSimpleMayChoice(
-                        MagicSimpleMayChoice.ADD_POS_COUNTER,
-                        1,
-                        MagicSimpleMayChoice.DEFAULT_YES
-                    ),
+                    new MagicSimpleMayChoice(),
                     this,
                     "PN may\$ put a Quest counter on SN."
                 ) :

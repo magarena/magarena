@@ -6,11 +6,7 @@
                     otherPermanent.isCreature()) ?
                 new MagicEvent(
                     permanent,
-                    new MagicSimpleMayChoice(
-                        MagicSimpleMayChoice.ADD_PLUSONE_COUNTER,
-                        1,
-                        MagicSimpleMayChoice.DEFAULT_YES
-                    ),
+                    new MagicSimpleMayChoice(),
                     otherPermanent.getPower(),
                     this,
                     "PN may\$ put RN +1/+1 counters on SN."

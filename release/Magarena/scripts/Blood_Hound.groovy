@@ -6,11 +6,7 @@
             return (damage.getTarget() == permanent.getController()) ?
                 new MagicEvent(
                     permanent,
-                    new MagicSimpleMayChoice(
-                        MagicSimpleMayChoice.ADD_PLUSONE_COUNTER,
-                        damage.getDealtAmount(),
-                        MagicSimpleMayChoice.DEFAULT_YES
-                    ),
+                    new MagicSimpleMayChoice(),
                     amount,
                     this,
                     "PN may\$ put RN +1/+1 counters on SN."

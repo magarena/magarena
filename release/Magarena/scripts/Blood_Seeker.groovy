@@ -8,11 +8,7 @@
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent other) {
             return new MagicEvent(
                 permanent,
-                new MagicSimpleMayChoice(
-                    MagicSimpleMayChoice.OPPONENT_LOSE_LIFE,
-                    1,
-                    MagicSimpleMayChoice.DEFAULT_YES
-                ),
+                new MagicSimpleMayChoice(),
                 other.getController(),
                 this,
                 "PN may\$ have RN lose 1 life."

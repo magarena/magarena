@@ -6,11 +6,7 @@
             return (damage.getTarget() == permanent) ?
                 new MagicEvent(
                     permanent,
-                    new MagicSimpleMayChoice(
-                        MagicSimpleMayChoice.PLAY_TOKEN,
-                        damage.getDealtAmount(),
-                        MagicSimpleMayChoice.DEFAULT_YES
-                    ),
+                    new MagicSimpleMayChoice(),
                     amount,
                     this,
                     "PN may\$ put RN 1/1 green Insect creature tokens onto the battlefield."

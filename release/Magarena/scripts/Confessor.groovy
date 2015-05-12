@@ -4,11 +4,7 @@
         public MagicEvent getEvent(final MagicPermanent permanent,final MagicCard card) {
             return new MagicEvent(
                 permanent,
-                new MagicSimpleMayChoice(
-                    MagicSimpleMayChoice.GAIN_LIFE,
-                    1,
-                    MagicSimpleMayChoice.DEFAULT_YES
-                ),
+                new MagicSimpleMayChoice(),
                 this,
                 "PN may\$ gain 1 life."
             );

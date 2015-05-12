@@ -22,11 +22,7 @@
             return (permanent.getCounters(MagicCounterType.Charge)>0) ?
                 new MagicEvent(
                     permanent,
-                    new MagicSimpleMayChoice(
-                        MagicSimpleMayChoice.GAIN_LIFE,
-                        1,
-                        MagicSimpleMayChoice.DEFAULT_YES
-                    ),
+                    new MagicSimpleMayChoice(),
                     this,
                     "PN may\$ remove a charge counter from SN. If PN does, PN gains 1 life."
                 ):

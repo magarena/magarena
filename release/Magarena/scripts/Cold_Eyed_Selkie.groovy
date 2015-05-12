@@ -11,7 +11,7 @@
                     ),
                     damage.getAmount(),
                     this,                            
-                    "PN may\$ draw "+damage.getAmount()+" cards."
+                    "PN may\$ draw RN cards."
                 );
         }
         @Override

@@ -5,11 +5,7 @@
             return permanent.isOpponent(eotPlayer) && !permanent.getController().hasState(MagicPlayerState.HasLostLife) ?
                 new MagicEvent(
                     permanent,
-                    new MagicSimpleMayChoice(
-                        MagicSimpleMayChoice.ADD_POS_COUNTER,
-                        1,
-                        MagicSimpleMayChoice.DEFAULT_YES
-                    ),
+                    new MagicSimpleMayChoice(),
                     this,
                     "PN may\$ put a quest counter on SN."
                 ):

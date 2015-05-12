@@ -5,11 +5,7 @@
             final int amount=permanent.getPower();
             return new MagicEvent(
                 permanent,
-                new MagicSimpleMayChoice(
-                        MagicSimpleMayChoice.GAIN_LIFE,
-                        amount,
-                        MagicSimpleMayChoice.DEFAULT_YES
-                    ),
+                new MagicSimpleMayChoice(),
                 this,
                 "PN may\$ gain life equal to SN's power ("+amount+")."
             );
@@ -31,11 +27,7 @@
                     otherPermanent.isFriend(permanent)) ?
                 new MagicEvent(
                     permanent,
-                    new MagicSimpleMayChoice(
-                        MagicSimpleMayChoice.GAIN_LIFE,
-                        amount,
-                        MagicSimpleMayChoice.DEFAULT_YES
-                    ),
+                    new MagicSimpleMayChoice(),
                     otherPermanent,
                     this,
                     "PN may\$ gain life equal to RN's power ("+amount+")."

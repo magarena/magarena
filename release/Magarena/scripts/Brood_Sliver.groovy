@@ -9,14 +9,9 @@
                 new MagicEvent(
                     permanent,
                     source.getController(),
-                    new MagicSimpleMayChoice(
-                        MagicSimpleMayChoice.PLAY_TOKEN,
-                        1,
-                        MagicSimpleMayChoice.DEFAULT_YES
-                    ),
+                    new MagicSimpleMayChoice(),
                     this,
-                    "PN may\$ put a 1/1 colorless Sliver " +
-                    "creature token onto the battlefield."
+                    "PN may\$ put a 1/1 colorless Sliver creature token onto the battlefield."
                 ):
                 MagicEvent.NONE;
         }
