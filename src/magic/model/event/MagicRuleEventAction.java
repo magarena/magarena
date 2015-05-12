@@ -914,7 +914,7 @@ public enum MagicRuleEventAction {
         }
     },
     LoseLifeSelf(
-        "((Y|y)ou)?( )?lose (?<amount>[0-9]+) life\\.", 
+        ARG.YOU + "( )?lose(s)? (?<amount>[0-9]+) life\\.", 
         MagicTiming.Removal, 
         "-Life"
     ) {
@@ -924,7 +924,7 @@ public enum MagicRuleEventAction {
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    game.doAction(new ChangeLifeAction(event.getPlayer(), -amount));
+                    game.doAction(new ChangeLifeAction(ARG.youPlayer(event, matcher), -amount));
                 }
             };
         }
