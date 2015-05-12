@@ -4,6 +4,6 @@ value=3.925
 rarity=U
 type=Enchantment
 cost={2}{B}
+ability=Whenever an opponent discards a card, SN deals 2 damage to that player.
 timing=enchantment
-requires_groovy_code
 oracle=Whenever an opponent discards a card, Megrim deals 2 damage to that player.
