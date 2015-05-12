@@ -5,7 +5,8 @@
             return new MagicEvent(
                 permanent,
                 this,
-                "Reveal the top card of PN's library and put that card into PN's hand. PN loses life equal to its converted mana cost."
+                "PN reveals the top card of his or her library and puts that card into his or her hand. "+
+                "PN loses life equal to its converted mana cost."
             );
         }
         @Override
