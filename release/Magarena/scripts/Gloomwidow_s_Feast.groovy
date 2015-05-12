@@ -4,7 +4,7 @@
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                NEG_TARGET_CREATURE_WITH_FLYING,
+                TARGET_CREATURE_WITH_FLYING,
                 MagicDestroyTargetPicker.Destroy,
                 this,
                 "Destroy target creature with flying.\$ If that creature was blue or black, "+
