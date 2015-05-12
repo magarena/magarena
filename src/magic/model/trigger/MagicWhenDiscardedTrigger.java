@@ -22,6 +22,15 @@ public abstract class MagicWhenDiscardedTrigger extends MagicWhenOtherPutIntoGra
     }
 
     protected abstract MagicEvent getEvent(final MagicPermanent source, final MagicCard card);
+    
+    public static MagicWhenDiscardedTrigger player(final MagicSourceEvent sourceEvent) {
+        return new MagicWhenDiscardedTrigger() {
+            @Override
+            public MagicEvent getEvent(final MagicPermanent source, final MagicCard card) {
+                return sourceEvent.getEvent(source);
+            }
+        };
+    }
 
     public static MagicWhenDiscardedTrigger opponent(final MagicSourceEvent sourceEvent) {
         return new MagicWhenDiscardedTrigger() {
