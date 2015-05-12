@@ -4,6 +4,6 @@ value=2.500
 rarity=R
 type=Sorcery
 cost={2}{R}{R}
-effect=Target opponent reveals the top card of his or her library. SN deals damage equal to the revealed card's converted mana cost to that player and each creature he or she controls. If a land card is revealed this way, return SN to its owner's hand.
 timing=main
+requires_groovy_code
 oracle=Target opponent reveals the top card of his or her library. Cerebral Eruption deals damage equal to the revealed card's converted mana cost to that player and each creature he or she controls. If a land card is revealed this way, return Cerebral Eruption to its owner's hand.
