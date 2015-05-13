@@ -31,7 +31,7 @@ def TEXT2 = "Until end of turn, lands you control become 2/2 creatures that are 
                 this,
                 payedCost.isKicked() ?
                     TEXT1 + " " + TEXT2 :
-                    "Choose one\$ — • " + TEXT1 + " • " + TEXT2
+                    "Choose one\$ — (1) " + TEXT1 + " (2) " + TEXT2
             );
         }
         @Override

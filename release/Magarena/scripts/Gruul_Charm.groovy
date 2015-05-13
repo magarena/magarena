@@ -14,9 +14,9 @@ def EFFECT3 = MagicRuleEventAction.create("SN deals 3 damage to each creature wi
                     MagicChoice.NONE
                 ),
                 this,
-                "Choose one\$ - creatures without flying can't block this turn; " +
-                "or gain control of all permanents you own; " +
-                "or SN deals 3 damage to each creature with flying.\$" 
+                "Choose one\$ - (1) creatures without flying can't block this turn; " +
+                "or (2) gain control of all permanents you own; " +
+                "or (3) SN deals 3 damage to each creature with flying." 
             );
         }
         @Override

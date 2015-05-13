@@ -11,8 +11,8 @@
                 ),
                 cardOnStack.getController(),
                 this,
-                "Choose one\$ - RN puts a +1/+1 counter on each creature he or she controls and gains 4 life; " +
-                "or RN puts a -1/-1 counter on each creature PN controls and SN deals 4 damage to PN."
+                "Choose one\$ - (1) RN puts a +1/+1 counter on each creature he or she controls and gains 4 life; " +
+                "or (2) RN puts a -1/-1 counter on each creature PN controls and SN deals 4 damage to PN."
             );
         }
         @Override

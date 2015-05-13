@@ -14,8 +14,8 @@
                 payedCost.isKicked() ?
                     "Creatures target player\$ controls attack this turn if able. "+ 
                     "Creatures you control gain first strike until end of turn." :
-                    "Choose one\$ — • Creatures target player\$ controls attack this turn if able. "+
-                    "• Creatures you control gain first strike until end of turn."
+                    "Choose one\$ — (1) Creatures target player\$ controls attack this turn if able; "+
+                    "(2) Creatures you control gain first strike until end of turn."
             );
         }
         @Override

@@ -17,7 +17,7 @@ def TEXT2 = "Each player draws seven cards."
                 this,
                 payedCost.isKicked() ?
                     TEXT1 + " " + TEXT2 :
-                    "Choose one\$ — • " + TEXT1 + " • " + TEXT2
+                    "Choose one\$ — (1) " + TEXT1 + " (2) " + TEXT2
             );
         }
         @Override

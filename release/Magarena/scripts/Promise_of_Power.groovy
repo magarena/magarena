@@ -18,7 +18,7 @@ def TEXT2 = "Put an X/X black Demon creature token with flying onto the battlefi
                 this,
                 payedCost.isKicked() ?
                     TEXT1 + " " + TEXT2 :
-                    "Choose one\$ — • " + TEXT1 + " • " + TEXT2
+                    "Choose one\$ — (1) " + TEXT1 + " (2) " + TEXT2
             );
         }
         @Override
@@ -28,16 +28,18 @@ def TEXT2 = "Put an X/X black Demon creature token with flying onto the battlefi
                 game.doAction(new ChangeLifeAction(event.getPlayer(),-5));
             }
             if (event.isKicked() || event.isMode(2)) {
-                final int x = event.getPlayer().getHandSize();
-                game.doAction(new PlayTokenAction(event.getPlayer(), MagicCardDefinition.create({
+                final MagicPlayer player = event.getPlayer();
+                final int amount = player.getHandSize();
+                game.logAppendMessage(player,"("+amount+")");
+                game.doAction(new PlayTokenAction(player, MagicCardDefinition.create({
                     it.setName("Demon");
                     it.setDistinctName("black Demon creature token with flying");
-                    it.setPowerToughness(x, x);
+                    it.setPowerToughness(amount, amount);
                     it.setColors("b");
                     it.addSubType(MagicSubType.Demon);
                     it.addType(MagicType.Creature);
                     it.setToken();
-                    it.setValue(x);
+                    it.setValue(amount);
                 })));
             }
         }
