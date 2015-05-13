@@ -4,6 +4,6 @@ value=2.500
 rarity=R
 type=Sorcery
 cost={4}{R}{R}
-effect=For each player, SN deals damage to that player and each creature that player controls equal to the number of creatures he or she controls.
 timing=main
+requires_groovy_code
 oracle=For each player, Incite Rebellion deals damage to that player and each creature that player controls equal to the number of creatures he or she controls.
