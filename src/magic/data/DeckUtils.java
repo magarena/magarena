@@ -339,6 +339,7 @@ public class DeckUtils {
         } catch (final RuntimeException e) {
             final MagicCardDefinition cardDefinition = new MagicCardDefinition();
             cardDefinition.setName(name);
+            cardDefinition.setDistinctName(name);
             cardDefinition.setIsValid(false);
             return cardDefinition;
         }
