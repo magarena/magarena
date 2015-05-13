@@ -37,7 +37,7 @@ def choice = new MagicTargetChoice("a Fungus card from a graveyard");
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            FUNGUS.filter(game) each {
+            FUNGUS.filter(event) each {
                 game.doAction(new ChangeCountersAction(it,MagicCounterType.Spore,1));
             }
         }

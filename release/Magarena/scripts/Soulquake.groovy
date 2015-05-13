@@ -14,7 +14,7 @@
                 CREATURE.filter(event),
                 MagicLocationType.OwnersHand
             ));
-            CREATURE_CARD_FROM_ALL_GRAVEYARDS.filter(game) each {
+            CREATURE_CARD_FROM_ALL_GRAVEYARDS.filter(event) each {
                 game.doAction(new RemoveCardAction(it,MagicLocationType.Graveyard));
                 game.doAction(new MoveCardAction(it,MagicLocationType.Graveyard,MagicLocationType.OwnersHand));
             }

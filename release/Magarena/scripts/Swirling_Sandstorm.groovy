@@ -11,7 +11,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (MagicCondition.THRESHOLD_CONDITION.accept(event.getSource())) {
-                CREATURE_WITHOUT_FLYING.filter(game) each {
+                CREATURE_WITHOUT_FLYING.filter(event) each {
                     game.doAction(new DealDamageAction(event.getSource(),it,5));
                 }
             }

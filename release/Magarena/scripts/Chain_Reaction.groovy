@@ -11,7 +11,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final int amount=game.getNrOfPermanents(MagicType.Creature);
-            CREATURE.filter(game) each {
+            CREATURE.filter(event) each {
                 game.doAction(new DealDamageAction(event.getSource(),it,amount));
             }
         }

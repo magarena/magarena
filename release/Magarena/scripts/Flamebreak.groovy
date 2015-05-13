@@ -12,7 +12,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicSource source = event.getSource();
-            CREATURE_WITHOUT_FLYING.filter(game) each {
+            CREATURE_WITHOUT_FLYING.filter(event) each {
                 final MagicDamage damage=new MagicDamage(source,it,3);
                 damage.setNoRegeneration();
                 game.doAction(new DealDamageAction(damage));

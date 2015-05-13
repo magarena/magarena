@@ -12,7 +12,7 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            NONBLUE_CREATURE.filter(game) each {
+            NONBLUE_CREATURE.filter(event) each {
                 game.doAction(new TapAction(it));
                 game.doAction(ChangeStateAction.Set(
                     it,

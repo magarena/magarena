@@ -13,7 +13,7 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final Collection<MagicPermanent> targets = CREATURE.except(event.getPermanent()).filter(game);
+            final Collection<MagicPermanent> targets = CREATURE.except(event.getPermanent()).filter(event);
             if (targets.size() >= 5) {
                 game.doAction(new DestroyAction(targets));
             }

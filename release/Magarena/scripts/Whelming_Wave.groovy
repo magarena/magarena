@@ -10,7 +10,7 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final Collection<MagicPermanent> targets = CREATURE.filter(game);
+            final Collection<MagicPermanent> targets = CREATURE.filter(event);
             for (final MagicPermanent target : targets) {
                 if (!target.hasSubType(MagicSubType.Kraken) && 
                     !target.hasSubType(MagicSubType.Leviathan) &&

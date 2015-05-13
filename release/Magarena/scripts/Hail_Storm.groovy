@@ -10,13 +10,12 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicPlayer player = event.getPlayer();
             final MagicSource source = event.getSource();
-            ATTACKING_CREATURE.filter(game) each {
+            ATTACKING_CREATURE.filter(event) each {
                 game.doAction(new DealDamageAction(source,it,2));
             }
-            game.doAction(new DealDamageAction(source,player,1));
-            CREATURE_YOU_CONTROL.filter(player) each {
+            game.doAction(new DealDamageAction(source,event.getPlayer(),1));
+            CREATURE_YOU_CONTROL.filter(event) each {
                 game.doAction(new DealDamageAction(source,it,1));
             }
         }

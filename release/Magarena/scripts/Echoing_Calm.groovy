@@ -18,7 +18,7 @@
                     ENCHANTMENT,
                     it.getName()
                 );
-                targetFilter.filter(game) each {
+                targetFilter.filter(event) each {
                     final MagicPermanent permanent ->
                     game.doAction(new DestroyAction(permanent));
                 }

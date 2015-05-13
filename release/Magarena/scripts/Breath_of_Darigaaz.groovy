@@ -13,7 +13,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final int amount = event.isKicked() ? 4 : 1;
             final MagicSource source = event.getSource();
-            CREATURE_WITHOUT_FLYING.filter(game) each {
+            CREATURE_WITHOUT_FLYING.filter(event) each {
                 game.doAction(new DealDamageAction(source, it, amount));
             }
             game.getAPNAP() each {

@@ -27,7 +27,7 @@ def EFFECT2 = MagicRuleEventAction.create("Destroy target artifact.");
                     }
                 });
             } else if (event.isMode(3)) {
-                CREATURE.filter(game) each {
+                CREATURE.filter(event) each {
                     game.doAction(new DealDamageAction(it,it.getController(),1));
                 }
             } else {

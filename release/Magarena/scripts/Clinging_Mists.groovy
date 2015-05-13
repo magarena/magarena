@@ -16,7 +16,7 @@
                 MagicPreventDamageTrigger.PreventCombatDamage
             ));
             if (MagicCondition.FATEFUL_HOUR.accept(event.getSource())) {
-                ATTACKING_CREATURE.filter(game) each {
+                ATTACKING_CREATURE.filter(event) each {
                     game.doAction(new TapAction(it));
                     game.doAction(ChangeStateAction.Set(
                         it,

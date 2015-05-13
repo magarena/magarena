@@ -15,7 +15,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
                 final MagicTargetFilter<MagicPermanent> targetFilter = new MagicNameTargetFilter(CREATURE, it.getName());
-                targetFilter.filter(game) each {
+                targetFilter.filter(event) each {
                     final MagicPermanent creature ->
                     game.doAction(new ChangeTurnPTAction(creature,-3,-3));
                 }

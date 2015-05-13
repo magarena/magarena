@@ -15,7 +15,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
                 final MagicTargetFilter<MagicPermanent> targetFilter = new MagicNameTargetFilter(LAND, it.getName());
-                game.doAction(new DestroyAction(targetFilter.filter(game)));
+                game.doAction(new DestroyAction(targetFilter.filter(event)));
             });
         }
     }

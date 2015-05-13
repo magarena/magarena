@@ -21,7 +21,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final int X = event.getPlayer().getHandSize();
-            CREATURE.filter(game) each {
+            CREATURE.filter(event) each {
                 game.doAction(new ChangeTurnPTAction(it, -X, -X));
             }
         }

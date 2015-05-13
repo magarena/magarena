@@ -15,7 +15,7 @@
             event.processTargetPermanent(game, {
                 game.doAction(new DestroyAction(it));
                 if (MagicCondition.THRESHOLD_CONDITION.accept(event.getSource())) {
-                    CREATURE.filter(game) each {
+                    CREATURE.filter(event) each {
                         game.doAction(new DealDamageAction(event.getSource(),it,1));
                     }
                     game.getAPNAP() each {

@@ -24,7 +24,7 @@ def ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            LAND.filter(game) each {
+            LAND.filter(event) each {
                 game.doAction(new BecomesCreatureAction(it,PT,ST));
             }
         }

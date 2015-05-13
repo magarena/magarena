@@ -15,7 +15,7 @@
             event.processTargetPlayer(game, {
                 game.doAction(new ChangePlayerStateAction(it, MagicPlayerState.CantCastSpells));
                 if (event.isKicked()) {
-                    CREATURE.filter(game) each {
+                    CREATURE.filter(event) each {
                         game.doAction(new GainAbilityAction(it, MagicAbility.CannotAttack));
                     }
                 }
