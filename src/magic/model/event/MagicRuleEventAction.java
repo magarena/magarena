@@ -22,6 +22,7 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPermanentState;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
+import magic.model.MagicMessage;
 import magic.model.action.*;
 import magic.model.choice.MagicChoice;
 import magic.model.choice.MagicFromCardFilterChoice;
@@ -3671,7 +3672,7 @@ public enum MagicRuleEventAction {
                         source,
                         player,
                         new MagicMayChoice(
-                            pnMayChoice.replaceAll("SN",source.toString()),
+                            MagicMessage.replaceName(pnMayChoice, source, player, ref),  
                             choice
                         ),
                         picker,
