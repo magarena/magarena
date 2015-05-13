@@ -10,9 +10,10 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            ENCHANTMENT.filter(game) each {
-                game.doAction(new RemoveFromPlayAction(it,MagicLocationType.TopOfOwnersLibrary));
-            }
+            game.doAction(new RemoveAllFromPlayAction(
+                ENCHANTMENT.filter(event),
+                MagicLocationType.TopOfOwnersLibrary
+            ));
         }
     }
 ]

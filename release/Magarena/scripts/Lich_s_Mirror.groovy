@@ -18,8 +18,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
-            final int lifeChange = 20 - player.getLife();
-            game.doAction(new ChangeLifeAction(player, lifeChange));
+
             final MagicCardList hand = new MagicCardList(player.getHand());
             for (final MagicCard card : hand) {
                 game.doAction(new RemoveCardAction(
@@ -32,6 +31,7 @@
                     MagicLocationType.OwnersLibrary
                 ));
             };
+            
             final MagicCardList graveyard = new MagicCardList(player.getGraveyard());
             for (final MagicCard card : graveyard) {
                 game.doAction(new RemoveCardAction(
@@ -44,13 +44,16 @@
                     MagicLocationType.OwnersLibrary
                 ));
             };
-            PERMANENT_YOU_OWN.filter(event) each {
-                game.doAction(new RemoveFromPlayAction(
-                    it,
-                    MagicLocationType.OwnersLibrary
-                ));
-            };
+            
+            game.doAction(new RemoveAllFromPlayAction(
+                PERMANENT_YOU_OWN.filter(event),
+                MagicLocationType.OwnersLibrary
+            ));
+            
             game.doAction(new DrawAction(player,7));
+            
+            final int lifeChange = 20 - player.getLife();
+            game.doAction(new ChangeLifeAction(player, lifeChange));
         }
     }
 ]

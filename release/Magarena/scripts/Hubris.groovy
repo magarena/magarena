@@ -13,15 +13,11 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                if (it.isEnchanted()) {
-                    final MagicPermanentList auras = new MagicPermanentList();
-                    auras.addAll(it.getAuraPermanents())
-                    for (final MagicPermanent aura : auras) {
-                        game.doAction(new RemoveFromPlayAction(aura,MagicLocationType.OwnersHand));
-                    }
-                }
-                game.doAction(new RemoveFromPlayAction(it,MagicLocationType.OwnersHand));
-            })
+                final MagicPermanentList all = new MagicPermanentList();
+                all.add(it);
+                all.addAll(it.getAuraPermanents());
+                game.doAction(new RemoveAllFromPlayAction(all, MagicLocationType.OwnersHand));
+            });
         }
     }
 ]

@@ -15,14 +15,13 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final MagicTargetFilter<MagicPermanent> targetFilter = new MagicNameTargetFilter(
-                    NONLAND_PERMANENT,
-                    it.getName()
-                );
-                targetFilter.filter(game) each {
-                    final MagicPermanent target ->
-                    game.doAction(new RemoveFromPlayAction(target, MagicLocationType.OwnersHand));
-                }
+                game.doAction(new RemoveAllFromPlayAction(
+                    new MagicNameTargetFilter(
+                        PERMANENT,
+                        it.getName()
+                    ).filter(event),
+                    MagicLocationType.OwnersHand
+                ));
             });
         }
     }

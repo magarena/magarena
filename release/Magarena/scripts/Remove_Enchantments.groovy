@@ -15,27 +15,26 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
-            
-            ENCHANTMENT_YOU_OWN_AND_CONTROL.filter(event) each {
-                game.doAction(new RemoveFromPlayAction(it, MagicLocationType.OwnersHand));
-            }
 
+            final MagicPermanentList bounce = new MagicPermanentList();
+            bounce.addAll(ENCHANTMENT_YOU_OWN_AND_CONTROL.filter(event));
             AURA_YOU_OWN.filter(event) each {
                 final MagicPermanent enchanted = it.getEnchantedPermanent();
                 if (enchanted.isFriend(player) || (enchanted.isEnemy(player) && enchanted.isAttacking())) {
-                    game.doAction(new RemoveFromPlayAction(it, MagicLocationType.OwnersHand));
+                    bounce.add(it)
                 }
             }
+            game.doAction(new RemoveAllFromPlayAction(bounce, MagicLocationType.OwnersHand));
             
-            game.doAction(new DestroyAction(ENCHANTMENT_YOU_CONTROL.filter(event)));
-            
+            final MagicPermanentList destroy = new MagicPermanentList();
+            destroy.addAll(ENCHANTMENT_YOU_CONTROL.filter(event));
             AURA.filter(event) each {
                 final MagicPermanent enchanted = it.getEnchantedPermanent();
                 if (enchanted.isFriend(player) || (enchanted.isEnemy(player) && enchanted.isAttacking())) {
-                    game.doAction(new DestroyAction(it));
+                    destroy.add(it);
                 }
             }
+            game.doAction(new DestroyAction(destroy));
         }
     }
 ]
-// All permanents returning to hand should return at the same time. All permanents being destroyed should be destroyed at the same time.

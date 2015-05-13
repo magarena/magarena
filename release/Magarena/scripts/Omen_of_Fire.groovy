@@ -23,9 +23,10 @@ def A_PLAINS_OR_WHITE_PERMANENT = new MagicTargetChoice(
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            ISLAND.filter(event) each {
-                game.doAction(new RemoveFromPlayAction(it, MagicLocationType.OwnersHand));
-            }
+            game.doAction(new RemoveAllFromPlayAction(
+                ISLAND.filter(event),
+                MagicLocationType.OwnersHand
+            ));
             game.getAPNAP() each {
                 final int amount = it.getNrOfPermanents(MagicColor.White);
                 for (int i = 0; i < amount; i++) {

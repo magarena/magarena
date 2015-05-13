@@ -18,10 +18,10 @@ def ARTIFACT_YOU_OWN = new MagicPermanentFilterImpl() {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
-                ARTIFACT_YOU_OWN.filter(it) each {
-                    final MagicPermanent artifact ->
-                    game.doAction(new RemoveFromPlayAction(artifact,MagicLocationType.OwnersHand));
-                }
+                game.doAction(new RemoveAllFromPlayAction(
+                    ARTIFACT_YOU_OWN.filter(it),
+                    MagicLocationType.OwnersHand
+                ));
             });
         }
     }

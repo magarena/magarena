@@ -10,9 +10,10 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            CREATURE.filter(game) each {
-                game.doAction(new RemoveFromPlayAction(it,MagicLocationType.BottomOfOwnersLibrary));
-            }
+            game.doAction(new RemoveAllFromPlayAction(
+                CREATURE.filter(event),
+                MagicLocationType.BottomOfOwnersLibrary
+            ));
         }
     }
 ]

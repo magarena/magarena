@@ -10,27 +10,25 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            ARTIFACT.filter(event) each {
-                game.doAction(new RemoveFromPlayAction(it, MagicLocationType.Exile));
-            }
-            CREATURE.filter(event) each {
-                game.doAction(new RemoveFromPlayAction(it, MagicLocationType.Exile));
-            }
-            LAND.filter(event) each {
-                game.doAction(new RemoveFromPlayAction(it, MagicLocationType.Exile));
-            }
+            final MagicPermanentList all = new MagicPermanentList();
+            all.addAll(ARTIFACT.filter(event));
+            all.addAll(CREATURE.filter(event));
+            all.addAll(LAND.filter(event));
+            game.doAction(new RemoveAllFromPlayAction(all, MagicLocationType.Exile));
+            
             for (final MagicPlayer player : game.getAPNAP()) {
                 final MagicCardList graveyard = new MagicCardList(player.getGraveyard());
-                for (final MagicCard cardGraveyard : graveyard) {
-                    game.doAction(new RemoveCardAction(cardGraveyard,MagicLocationType.Graveyard));
-                    game.doAction(new MoveCardAction(cardGraveyard,MagicLocationType.Graveyard,MagicLocationType.Exile));
+                for (final MagicCard it : graveyard) {
+                    game.doAction(new RemoveCardAction(it,MagicLocationType.Graveyard));
+                    game.doAction(new MoveCardAction(it,MagicLocationType.Graveyard,MagicLocationType.Exile));
                 }
             }
+
             for (final MagicPlayer player : game.getAPNAP()) {
                 final MagicCardList hand = new MagicCardList(player.getHand());
-                for (final MagicCard cardHand : hand) {
-                    game.doAction(new RemoveCardAction(cardHand,MagicLocationType.OwnersHand));
-                    game.doAction(new MoveCardAction(cardHand,MagicLocationType.OwnersHand,MagicLocationType.Exile));
+                for (final MagicCard it : hand) {
+                    game.doAction(new RemoveCardAction(it,MagicLocationType.OwnersHand));
+                    game.doAction(new MoveCardAction(it,MagicLocationType.OwnersHand,MagicLocationType.Exile));
                 }
             }
         }

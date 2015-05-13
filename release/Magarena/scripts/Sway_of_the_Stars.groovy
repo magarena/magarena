@@ -11,21 +11,20 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             for (final MagicPlayer player : game.getAPNAP()) {
-                PERMANENT_YOU_OWN.filter(player) each {
-                    game.doAction(new RemoveFromPlayAction(it,MagicLocationType.OwnersLibrary));
-                }
                 final MagicCardList hand = new MagicCardList(player.getHand());
-                for (final MagicCard cardHand : hand) {
-                    game.doAction(new RemoveCardAction(cardHand,MagicLocationType.OwnersHand));
-                    game.doAction(new MoveCardAction(cardHand,MagicLocationType.OwnersHand,MagicLocationType.OwnersLibrary));
+                for (final MagicCard it : hand) {
+                    game.doAction(new RemoveCardAction(it,MagicLocationType.OwnersHand));
+                    game.doAction(new MoveCardAction(it,MagicLocationType.OwnersHand,MagicLocationType.OwnersLibrary));
                 }
                 final MagicCardList graveyard = new MagicCardList(player.getGraveyard());
-                for (final MagicCard cardGraveyard : graveyard) {
-                    game.doAction(new RemoveCardAction(cardGraveyard,MagicLocationType.Graveyard));
-                    game.doAction(new MoveCardAction(cardGraveyard,MagicLocationType.Graveyard,MagicLocationType.OwnersLibrary));
+                for (final MagicCard it : graveyard) {
+                    game.doAction(new RemoveCardAction(it,MagicLocationType.Graveyard));
+                    game.doAction(new MoveCardAction(it,MagicLocationType.Graveyard,MagicLocationType.OwnersLibrary));
                 }
-            }
-            for (final MagicPlayer player : game.getAPNAP()) {
+                game.doAction(new RemoveAllFromPlayAction(
+                    PERMANENT_YOU_OWN.filter(player),
+                    MagicLocationType.OwnersLibrary
+                ));
                 game.doAction(new DrawAction(player,7));
             }
             for (final MagicPlayer player : game.getAPNAP()) {

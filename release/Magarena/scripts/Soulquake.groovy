@@ -10,9 +10,10 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            CREATURE.filter(game) each {
-                game.doAction(new RemoveFromPlayAction(it,MagicLocationType.OwnersHand));
-            }
+            game.doAction(new RemoveAllFromPlayAction(
+                CREATURE.filter(event),
+                MagicLocationType.OwnersHand
+            ));
             CREATURE_CARD_FROM_ALL_GRAVEYARDS.filter(game) each {
                 game.doAction(new RemoveCardAction(it,MagicLocationType.Graveyard));
                 game.doAction(new MoveCardAction(it,MagicLocationType.Graveyard,MagicLocationType.OwnersHand));

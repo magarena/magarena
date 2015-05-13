@@ -16,9 +16,10 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            NONLAND_PERMANENT_YOUR_OPPONENT_CONTROLS.filter(event) each {
-                game.doAction(new RemoveFromPlayAction(it, MagicLocationType.OwnersHand));
-            }
+            game.doAction(new RemoveAllFromPlayAction(
+                NONLAND_PERMANENT_YOUR_OPPONENT_CONTROLS.filter(event),
+                MagicLocationType.OwnersHand
+            ));
         }
     }
 ]
