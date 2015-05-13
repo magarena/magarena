@@ -11,10 +11,22 @@ public class RemoveFromPlayAction extends MagicAction {
     private final MagicPermanent permanent;
     private MagicLocationType toLocation;
     private boolean valid;
+    private boolean update;
 
-    public RemoveFromPlayAction(final MagicPermanent aPermanent,final MagicLocationType aToLocation) {
+    private RemoveFromPlayAction(final MagicPermanent aPermanent, final MagicLocationType aToLocation, final boolean aUpdate) {
         permanent  = aPermanent;
         toLocation = aToLocation;
+        update = aUpdate;
+    }
+    
+    // default to update after remove
+    public RemoveFromPlayAction(final MagicPermanent aPermanent, final MagicLocationType aToLocation) {
+        this(aPermanent, aToLocation, true);
+    }
+
+    // version that doesn't update, caller should call update
+    public static RemoveFromPlayAction NoUpdate(final MagicPermanent aPermanent, final MagicLocationType aToLocation) {
+        return new RemoveFromPlayAction(aPermanent, aToLocation, false);
     }
 
     public boolean isValid() {
@@ -91,6 +103,10 @@ public class RemoveFromPlayAction extends MagicAction {
 
         if (permanent.isFaceDown()) {
             game.doAction(new RevealAction(permanent.getCard()));
+        }
+
+        if (update) {
+            game.update();
         }
 
         game.setStateCheckRequired();
