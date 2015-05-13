@@ -14,9 +14,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
-                event.processTargetPermanent(game, {
-                    game.doAction(new EnterAsCopyAction(event.getCardOnStack(), it))
-                });
+                game.doAction(new EnterAsCopyAction(event.getCardOnStack(), event.getTarget()))
             } else {
                 game.logAppendMessage(event.getPlayer(), "Put ${event.getCardOnStack()} onto the battlefield.");
                 game.doAction(new PlayCardFromStackAction(

@@ -14,9 +14,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
-                event.processTargetCard(game, {
-                    game.doAction(new EnterAsCopyAction(event.getCardOnStack(), it))
-                });
+                game.doAction(new EnterAsCopyAction(event.getCardOnStack(), event.getTarget()))
             } else {
                 game.doAction(new PlayCardFromStackAction(
                     event.getCardOnStack()

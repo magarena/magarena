@@ -23,13 +23,11 @@ def choice = new MagicTargetChoice("an artifact");
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
-                event.processTargetPermanent(game, {
-                    game.doAction(new EnterAsCopyAction(event.getCardOnStack(), it, {
-                        final MagicPermanent perm ->
-                        final MagicGame G = perm.getGame();
-                        G.doAction(new AddStaticAction(perm, type));
-                    }));
-                });
+                game.doAction(new EnterAsCopyAction(event.getCardOnStack(), event.getTarget(), {
+                    final MagicPermanent perm ->
+                    final MagicGame G = perm.getGame();
+                    G.doAction(new AddStaticAction(perm, type));
+                }));
             } else {
                 game.doAction(new PlayCardFromStackAction(
                     event.getCardOnStack()
