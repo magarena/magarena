@@ -73,11 +73,12 @@ public class MagicCardDefinition implements MagicAbilityStore {
 
     // name used for mapping and persistence, must be unique
     private String distinctName;
+    
     private boolean isValid = true;
+    private boolean isMissing = false;
     private boolean isScriptFileMissing = false;
 
     private String imageURL;
-    private String cardInfoUrl = "";
     private int imageCount = 1;
     private Date imageUpdated;
     private int index=-1;
@@ -88,7 +89,9 @@ public class MagicCardDefinition implements MagicAbilityStore {
     private MagicRarity rarity;
     private boolean token = false;
     private boolean hidden = false;
+    private boolean excludeManaOrCombat = false;
     private int typeFlags;
+    private EnumSet<MagicType> cardType = EnumSet.noneOf(MagicType.class);
     private EnumSet<MagicSubType> subTypeFlags = EnumSet.noneOf(MagicSubType.class);
     private EnumSet<MagicAbility> abilityFlags = EnumSet.noneOf(MagicAbility.class);
     private int colorFlags = -1;
@@ -115,7 +118,7 @@ public class MagicCardDefinition implements MagicAbilityStore {
     private final Collection<MagicWhenPutIntoGraveyardTrigger> putIntoGraveyardTriggers = new ArrayList<MagicWhenPutIntoGraveyardTrigger>();
     private final Collection<MagicManaActivation> manaActivations=new ArrayList<MagicManaActivation>();
     private final Collection<MagicEventSource> costEventSources=new ArrayList<MagicEventSource>();
-    private boolean excludeManaOrCombat;
+    
     private MagicCardDefinition flipCardDefinition;
     private MagicCardDefinition transformCardDefinition;
 
@@ -124,10 +127,6 @@ public class MagicCardDefinition implements MagicAbilityStore {
     private String effectProperty;
     private String flipCardName;
     private String transformCardName;
-
-    private boolean isMissing = false;
-
-    private Set<MagicType> cardType = EnumSet.noneOf(MagicType.class);
 
     public MagicCardDefinition() {
         initialize();
@@ -281,14 +280,6 @@ public class MagicCardDefinition implements MagicAbilityStore {
     
     public String getImageURL() {
         return imageURL;
-    }
-
-    public void setCardInfoURL(final String url) {
-        this.cardInfoUrl = url;
-    }
-
-    public String getCardInfoURL() {
-        return this.cardInfoUrl;
     }
 
     public String getCardTextName() {
