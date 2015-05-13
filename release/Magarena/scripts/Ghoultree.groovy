@@ -11,7 +11,7 @@
 
         @Override
         public Iterable<MagicEvent> getCostEvent(final MagicCard source) {
-            final int n = CREATURE_CARD_FROM_GRAVEYARD.filter(source.getController()).size();
+            final int n = CREATURE_CARD_FROM_GRAVEYARD.filter(source).size();
             return [
                 new MagicPayManaCostEvent(
                     source,

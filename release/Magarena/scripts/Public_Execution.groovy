@@ -15,8 +15,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
                 game.doAction(new DestroyAction(it));
-                final MagicTargetFilter<MagicPermanent> otherCreatures = CREATURE_YOU_CONTROL.except(it);
-                otherCreatures.filter(it.getController()) each {
+                CREATURE_YOU_CONTROL.except(it).filter(it) each {
                     game.doAction(new ChangeTurnPTAction(it, -2, 0));
                 }
             });

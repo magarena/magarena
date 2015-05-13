@@ -16,8 +16,8 @@ import java.util.List;
 import java.util.Set;
 
 public abstract class MagicCardFilterImpl implements MagicTargetFilter<MagicCard> {
-    public List<MagicCard> filter(final MagicGame game) {
-        return filter(MagicSource.NONE, game.getTurnPlayer(), MagicTargetHint.None);
+    public List<MagicCard> filter(final MagicSource source) {
+        return filter(source, source.getController(), MagicTargetHint.None);
     }
     
     public List<MagicCard> filter(final MagicPlayer player) {

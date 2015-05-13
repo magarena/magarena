@@ -10,8 +10,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public abstract class MagicStackFilterImpl implements MagicTargetFilter<MagicItemOnStack> {
-    public List<MagicItemOnStack> filter(final MagicGame game) {
-        return filter(MagicSource.NONE, game.getTurnPlayer(), MagicTargetHint.None);
+    public List<MagicItemOnStack> filter(final MagicSource source) {
+        return filter(source, source.getController(), MagicTargetHint.None);
     }
     
     public List<MagicItemOnStack> filter(final MagicPlayer player) {

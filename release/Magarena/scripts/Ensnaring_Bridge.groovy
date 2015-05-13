@@ -6,7 +6,7 @@
                 CREATURE,
                 Operator.GREATER_THAN,
                 source.getController().getHandSize()
-            ).filter(game) each {
+            ).filter(source) each {
                 it.addAbility(MagicAbility.CannotAttack);
             }
         }

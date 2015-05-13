@@ -14,9 +14,9 @@ public interface MagicTargetFilter<T extends MagicTarget> {
     boolean accept(final MagicSource source,final MagicPlayer player,final T target);
     
     List<T> filter(final MagicSource source, final MagicPlayer player, final MagicTargetHint targetHint);
-
-    List<T> filter(final MagicGame game);
     
+    List<T> filter(final MagicSource source);
+
     List<T> filter(final MagicPlayer player);
     
     List<T> filter(final MagicEvent event);

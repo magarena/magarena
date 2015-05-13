@@ -9,8 +9,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public abstract class MagicPlayerFilterImpl implements MagicTargetFilter<MagicPlayer> {
-    public List<MagicPlayer> filter(final MagicGame game) {
-        return filter(MagicSource.NONE, game.getTurnPlayer(), MagicTargetHint.None);
+    public List<MagicPlayer> filter(final MagicSource source) {
+        return filter(source, source.getController(), MagicTargetHint.None);
     }
     
     public List<MagicPlayer> filter(final MagicPlayer player) {

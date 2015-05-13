@@ -918,7 +918,8 @@ public class MagicGame {
     }
 
     public int getNrOfPermanents(final MagicTargetFilter<MagicPermanent> filter) {
-        return filter.filter(this).size();
+        return players[0].getNrOfPermanents(filter) +
+               players[1].getNrOfPermanents(filter);
     }
     
     public boolean canPlaySorcery(final MagicPlayer controller) {

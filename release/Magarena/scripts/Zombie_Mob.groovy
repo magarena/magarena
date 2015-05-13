@@ -2,7 +2,7 @@
     new MagicComesIntoPlayWithCounterTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPayedCost payedCost) {
-            final int amount = CREATURE_CARD_FROM_GRAVEYARD.filter(permanent.getController()).size();
+            final int amount = CREATURE_CARD_FROM_GRAVEYARD.filter(permanent).size();
             if (amount>0) {
                 game.doAction(new ChangeCountersAction(permanent, MagicCounterType.PlusOne, amount));
             } 
