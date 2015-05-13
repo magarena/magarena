@@ -1533,7 +1533,7 @@ public enum MagicRuleEventAction {
         }
     ),
     ReanimateCardSelf(
-        "return sn from your graveyard to the battlefield( )?(?<mods>.+)?\\.",
+        "return sn from your graveyard to the battlefield(\\. | )?(?<mods>.+)?\\.",
         MagicTiming.Token,
         "Reanimate"
     ) {
@@ -1949,7 +1949,7 @@ public enum MagicRuleEventAction {
         }
     },
     FromHandToBattlefield(
-        "put (?<card>[^\\.]*hand) onto the battlefield( )?(?<mods>.+)?\\.",
+        "put (?<card>[^\\.]*hand) onto the battlefield(\\. | )?(?<mods>.+)?\\.",
         MagicTiming.Token,
         "Put"
     ) {
