@@ -166,7 +166,7 @@ public enum MagicPlayMod implements MagicPermanentAction {
     }
 
     private MagicPlayMod() {
-        this("");
+        this("NONE");
     }
 
     public void doAction(final MagicPermanent perm) {
