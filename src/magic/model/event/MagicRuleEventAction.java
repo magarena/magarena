@@ -2211,7 +2211,7 @@ public enum MagicRuleEventAction {
         }
     },
     PutTokenForEach(
-        "put(s)? (?<amount>[a-z]+) (?<name>[^\\.]*token[^\\.]*) onto the battlefield( )?(?<mods>.+?)? for each " + ARG.WORDRUN + "\\.",
+        "put(s)? (?<amount>[a-z]+) (?<name>[^\\.]*token[^\\.]*) onto the battlefield( (?<mods>.+?))? for each " + ARG.WORDRUN + "\\.",
         MagicTiming.Token,
         "Token"
     ) {
@@ -2241,7 +2241,7 @@ public enum MagicRuleEventAction {
         }
     },
     PutToken(
-        "put(s)? (?<amount>[a-z]+) (?<name>[^\\.]*token[^\\.]*) onto the battlefield( )?(?<mods>.+?)?\\.",
+        "put(s)? (?<amount>[a-z]+) (?<name>[^\\.]*token[^\\.]*) onto the battlefield(\\. | )?(?<mods>.+?)?\\.",
         MagicTiming.Token,
         "Token"
     ) {
