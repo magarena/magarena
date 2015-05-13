@@ -205,6 +205,11 @@ public enum MagicConditionParser {
             return MagicConditionFactory.HasAbility(MagicAbility.Defender);
         }
     },
+    HasFlying("SN has flying") {
+        public MagicCondition toCondition(final Matcher arg) {
+            return MagicConditionFactory.HasAbility(MagicAbility.Flying);
+        }
+    },
     NoCardsInGraveyard("there are no cards in your graveyard") {
         public MagicCondition toCondition(final Matcher arg) {
             return MagicCondition.EMPTY_GRAVEYARD_CONDITION;
