@@ -4,7 +4,7 @@ value=2.500
 rarity=R
 type=Enchantment
 cost={1}{B}{G}
-ability=At the beginning of your upkeep, SN deals 1 damage to you.;\
-        Whenever a creature is put into an opponent's graveyard from the battlefield, you gain life equal to its toughness.
+ability=At the beginning of your upkeep, SN deals 1 damage to you.
 timing=enchantment
+requires_groovy_code
 oracle=At the beginning of your upkeep, Grim Feast deals 1 damage to you.\nWhenever a creature is put into an opponent's graveyard from the battlefield, you gain life equal to its toughness.
