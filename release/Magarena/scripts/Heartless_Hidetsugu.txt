@@ -6,6 +6,6 @@ type=Legendary,Creature
 subtype=Ogre,Shaman
 cost={3}{R}{R}
 pt=4/3
-ability={T}: SN deals damage to each player equal to half that player's life total, rounded down.
 timing=main
+requires_groovy_code
 oracle={T}: Heartless Hidetsugu deals damage to each player equal to half that player's life total, rounded down.
