@@ -5,6 +5,6 @@ rarity=U
 type=Instant
 subtype=Arcane
 cost={2}{R}{R}
-effect=SN deals damage to target player equal to the number of cards in that player's hand.
 timing=removal
+requires_groovy_code=Storm Seeker
 oracle=Gaze of Adamaro deals damage to target player equal to the number of cards in that player's hand.
