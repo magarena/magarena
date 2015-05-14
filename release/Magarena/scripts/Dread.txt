@@ -7,7 +7,7 @@ subtype=Elemental,Incarnation
 cost={3}{B}{B}{B}
 pt=6/6
 ability=fear;\
+        Whenever a creature deals damage to you, destroy RN.;\
         When SN is put into a graveyard from anywhere, shuffle it into its owner's library.
 timing=fmain
-requires_groovy_code
 oracle=Fear\nWhenever a creature deals damage to you, destroy it.\nWhen Dread is put into a graveyard from anywhere, shuffle it into its owner's library.

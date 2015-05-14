@@ -6,6 +6,6 @@ type=Creature
 subtype=Zombie,Warrior
 cost={3}{B}{B}
 pt=4/2
+ability=Whenever SN is dealt damage, put a 2/2 black Zombie creature token onto the battlefield.
 timing=main
-requires_groovy_code
 oracle=Whenever a source deals damage to Nested Ghoul, put a 2/2 black Zombie creature token onto the battlefield.

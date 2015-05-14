@@ -6,7 +6,8 @@ type=Creature
 subtype=Faerie,Rogue
 cost={1}{B}
 pt=1/1
-ability=Flying
+ability=Flying;\
+        Whenever a creature you control with a +1/+1 counter on it deals combat damage to a player, that player discards a card.
 timing=main
 requires_groovy_code
 oracle=Flying\nEach other Rogue creature you control enters the battlefield with an additional +1/+1 counter on it.\nWhenever a creature you control with a +1/+1 counter on it deals combat damage to a player, that player discards a card.

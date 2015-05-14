@@ -6,7 +6,7 @@ type=Creature
 subtype=Snake
 cost={2}{R}{G}
 pt=2/2
-ability=First strike
+ability=First strike;\
+        Whenever SN deals combat damage to a creature, destroy that creature.
 timing=main
-requires_groovy_code
 oracle=First strike\nWhenever Voracious Cobra deals combat damage to a creature, destroy that creature.
