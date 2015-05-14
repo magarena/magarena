@@ -77,7 +77,7 @@ public class CardTablePanel extends TexturedPanel {
                 if (isRowSelected) {
                     c.setForeground(table.getSelectionForeground());
                 } else {
-                    c.setForeground(card.isMissing() ? Color.GRAY : defaultForeColor);
+                    c.setForeground(card.isInvalid() ? Color.GRAY : defaultForeColor);
                 }
                 return c;
             }

@@ -140,7 +140,7 @@ public class CardScriptScreen
 
         public ScreenContent(final MagicCardDefinition card) {
 
-            final Path scriptsPath = card.isMissing() ?
+            final Path scriptsPath = card.isInvalid() ?
                     MagicFileSystem.getDataPath(DataPath.SCRIPTS_MISSING) :
                     MagicFileSystem.getDataPath(DataPath.SCRIPTS);
 

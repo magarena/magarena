@@ -469,7 +469,7 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
                     totalFilteredCards++;
                     cardDefinitions.add(cardDef);
                     if (!cardDef.isToken() && !cardDef.isHidden()) {
-                        if (cardDef.isMissing()) {
+                        if (cardDef.isInvalid()) {
                             missingCards++;
                         } else {
                             playableCards++;

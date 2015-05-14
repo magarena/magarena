@@ -92,7 +92,7 @@ public class CardViewer extends JPanel implements ICardSelectionListener {
             }
             @Override
             public void mouseEntered(MouseEvent e) {
-                if (!isGameScreenPopup && currentCardDefinition.hasMultipleAspects() && !currentCardDefinition.isMissing()) {
+                if (!isGameScreenPopup && currentCardDefinition.hasMultipleAspects() && currentCardDefinition.isValid()) {
                     setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
                 } else {
                     setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
@@ -108,7 +108,7 @@ public class CardViewer extends JPanel implements ICardSelectionListener {
     }
 
     private void switchCardAspect() {
-        if (currentCardDefinition.hasMultipleAspects() && !currentCardDefinition.isMissing()) {
+        if (currentCardDefinition.hasMultipleAspects() && currentCardDefinition.isValid()) {
             setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
             if (currentCardDefinition.isDoubleFaced()) {
                 setCard(currentCardDefinition.getTransformedDefinition());
@@ -145,7 +145,7 @@ public class CardViewer extends JPanel implements ICardSelectionListener {
                 }
             }
 
-            if (cardDefinition.isMissing() && cardImage != IconImages.MISSING_CARD) {
+            if (cardDefinition.isInvalid() && cardImage != IconImages.MISSING_CARD) {
                 setCardImage(getGreyScaleImage(cardImage));
             } else {
                 setCardImage(cardImage);

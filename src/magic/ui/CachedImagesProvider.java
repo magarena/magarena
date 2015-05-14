@@ -35,7 +35,7 @@ public class CachedImagesProvider implements CardImagesProvider {
         if (cardDefinition == MagicCardDefinition.UNKNOWN) {
             return IconImages.MISSING_CARD;
         }
-        if (cardDefinition.isMissing()) {
+        if (cardDefinition.isInvalid()) {
             if (!MagicFileSystem.getCardImageFile(cardDefinition, index).exists()) {
                 return IconImages.MISSING_CARD;
             }

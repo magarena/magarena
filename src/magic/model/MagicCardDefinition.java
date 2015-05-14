@@ -75,7 +75,6 @@ public class MagicCardDefinition implements MagicAbilityStore {
     private String distinctName;
     
     private boolean isValid = true;
-    private boolean isMissing = false;
 
     private String imageURL;
     private int imageCount = 1;
@@ -192,6 +191,11 @@ public class MagicCardDefinition implements MagicAbilityStore {
     public boolean isValid() {
         return isValid;
     }
+    
+    public boolean isInvalid() {
+        return isValid == false;
+    }
+    
     public void setIsValid(boolean b) {
         this.isValid = b;
     }
@@ -1017,11 +1021,4 @@ public class MagicCardDefinition implements MagicAbilityStore {
             return TOUGHNESS_COMPARATOR_DESC.compare(cardDefinition2, cardDefinition1);
         }
     };
-
-    public void setIsMissing(boolean b) {
-        this.isMissing = b;
-    }
-    public boolean isMissing() {
-        return isMissing;
-    }
 }

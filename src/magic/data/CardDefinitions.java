@@ -113,7 +113,7 @@ public class CardDefinitions {
     private static MagicCardDefinition prop2carddef(final File scriptFile, final boolean isMissing) {
         final Properties content = FileIO.toProp(scriptFile);
         final MagicCardDefinition cardDefinition = new MagicCardDefinition();
-        cardDefinition.setIsMissing(isMissing);
+        cardDefinition.setIsValid(isMissing == false);
 
         for (final String key : content.stringPropertyNames()) {
             try {
@@ -378,7 +378,6 @@ public class CardDefinitions {
                 final MagicCardDefinition card = new MagicCardDefinition();
                 card.setName(cardName);
                 card.setDistinctName(cardName);
-                card.setIsMissing(true);
                 card.setIsValid(false);
                 missingCards.put(cardKey, card);
             }
