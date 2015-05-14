@@ -4,6 +4,9 @@ import magic.model.target.MagicTarget;
 
 public class MagicDamage {
 
+    public static final boolean Combat = true;
+    public static final boolean Any = false;
+
     private final MagicSource source;
     private MagicTarget target;
     private int amount;

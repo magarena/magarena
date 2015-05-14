@@ -795,7 +795,7 @@ public enum MagicAbility {
             card.add(MagicWhenDamageIsDealtTrigger.DamageToCreature(
                 MagicTargetFilterFactory.Permanent(ARG.wordrun(arg)),
                 MagicRuleEventAction.create(ARG.effect(arg)),
-                false
+                MagicDamage.Any
             ));
         }
     },
@@ -804,7 +804,7 @@ public enum MagicAbility {
             card.add(MagicWhenDamageIsDealtTrigger.DamageToCreature(
                 MagicTargetFilterFactory.Permanent(ARG.wordrun(arg)),
                 MagicRuleEventAction.create(ARG.effect(arg)),
-                true
+                MagicDamage.Combat
             ));
         }
     },
@@ -813,7 +813,7 @@ public enum MagicAbility {
             card.add(MagicWhenDamageIsDealtTrigger.DamageToYou(
                 MagicTargetFilterFactory.Permanent(ARG.wordrun(arg)),
                 MagicRuleEventAction.create(ARG.effect(arg)),
-                false
+                MagicDamage.Any
             ));
         }
     },
@@ -822,7 +822,7 @@ public enum MagicAbility {
             card.add(MagicWhenDamageIsDealtTrigger.DamageToOpponent(
                 MagicTargetFilterFactory.Permanent(ARG.wordrun(arg)),
                 MagicRuleEventAction.create(ARG.effect(arg)),
-                false
+                MagicDamage.Any
             ));
         }
     },
@@ -831,7 +831,7 @@ public enum MagicAbility {
             card.add(MagicWhenDamageIsDealtTrigger.DamageToOpponent(
                 MagicTargetFilterFactory.Permanent(ARG.wordrun(arg)),
                 MagicRuleEventAction.create(ARG.effect(arg)),
-                true
+                MagicDamage.Combat
             ));
         }
     },
@@ -840,7 +840,7 @@ public enum MagicAbility {
             card.add(MagicWhenDamageIsDealtTrigger.DamageToPlayer(
                 MagicTargetFilterFactory.Permanent(ARG.wordrun(arg)),
                 MagicRuleEventAction.create(ARG.effect(arg)),
-                false
+                MagicDamage.Any
             ));
         }
     },
@@ -849,7 +849,7 @@ public enum MagicAbility {
             card.add(MagicWhenDamageIsDealtTrigger.DamageToPlayer(
                 MagicTargetFilterFactory.Permanent(ARG.wordrun(arg)),
                 MagicRuleEventAction.create(ARG.effect(arg)),
-                true
+                MagicDamage.Combat
             ));
         }
     },
@@ -858,7 +858,7 @@ public enum MagicAbility {
             card.add(MagicWhenDamageIsDealtTrigger.DamageToAny(
                 MagicTargetFilterFactory.Permanent(ARG.wordrun(arg)),
                 MagicRuleEventAction.create(ARG.effect(arg)),
-                true
+                MagicDamage.Combat
             ));
         }
     },
@@ -867,7 +867,7 @@ public enum MagicAbility {
             card.add(MagicWhenDamageIsDealtTrigger.DamageToAny(
                 MagicTargetFilterFactory.Permanent(ARG.wordrun(arg)),
                 MagicRuleEventAction.create(ARG.effect(arg)),
-                false
+                MagicDamage.Any
             ));
         }
     },
