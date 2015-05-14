@@ -7,10 +7,7 @@ def Spirit = new MagicStatic(MagicLayer.Type) {
 [
     new MagicAtUpkeepTrigger() {
         @Override
-        public MagicEvent executeTrigger(
-                final MagicGame game,
-                final MagicPermanent permanent,
-                final MagicPlayer upkeepPlayer) {
+        public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPlayer upkeepPlayer) {
             return new MagicEvent(
                 permanent,
                 new MagicMayChoice(

@@ -1,10 +1,7 @@
 [
     new MagicWhenOtherDiesTrigger() {
         @Override
-        public MagicEvent executeTrigger(
-                final MagicGame game,
-                final MagicPermanent permanent,
-                final MagicPermanent otherPermanent) {
+        public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPermanent otherPermanent) {
             return (otherPermanent.isLand()) ?
                 new MagicEvent(
                     permanent,

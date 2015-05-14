@@ -1,10 +1,7 @@
 [
     new MagicWhenDamageIsDealtTrigger() {
         @Override
-        public MagicEvent executeTrigger(
-                final MagicGame game,
-                final MagicPermanent permanent,
-                final MagicDamage damage) {
+        public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicDamage damage) {
             final int amount = damage.getDealtAmount();
             final MagicPermanent enchantedCreature = permanent.getEnchantedPermanent();
             return (damage.getTarget() == enchantedCreature) ?

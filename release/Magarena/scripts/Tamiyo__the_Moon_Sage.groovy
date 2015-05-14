@@ -66,10 +66,7 @@
             outerGame.doAction(new AddTriggerAction(
                 new MagicWhenOtherPutIntoGraveyardTrigger() {
                     @Override
-                    public MagicEvent executeTrigger(
-                            final MagicGame game,
-                            final MagicPermanent permanent,
-                            final MoveCardAction act) {
+                    public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MoveCardAction act) {
                         return act.card.getOwner().getId() == you.getId() ?
                             // HACK: As emblem is not represented, source of event is the card
                             new MagicEvent(

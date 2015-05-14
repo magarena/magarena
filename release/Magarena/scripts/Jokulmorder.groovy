@@ -16,7 +16,7 @@
                 SACRIFICE_LAND,
                 5,
                 MagicChainEventFactory.Sac
-                );  
+            );  
             if (event.isYes() && costEvent.isSatisfied()) {
                 game.addEvent(costEvent);
             } else {
