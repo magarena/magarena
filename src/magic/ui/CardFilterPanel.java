@@ -153,7 +153,7 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
 
     private String[] getStatusFilterValues() {
         if (!listener.isDeckEditor()) {
-            return new String[] {"New cards", "Playable", "Unimplemented", "Script file missing"};
+            return new String[] {"New cards", "Playable", "Unimplemented"};
         } else {
             return new String[] {"New cards"};
         }
@@ -408,8 +408,6 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
                                 return CardDefinitions.isCardPlayable(card);
                             case "Unimplemented":
                                 return CardDefinitions.isCardMissing(card);
-                            case "Script file missing":
-                                return card.IsScriptFileMissing();
                             default:
                                 return true;
                         }

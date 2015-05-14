@@ -76,7 +76,6 @@ public class MagicCardDefinition implements MagicAbilityStore {
     
     private boolean isValid = true;
     private boolean isMissing = false;
-    private boolean isScriptFileMissing = false;
 
     private String imageURL;
     private int imageCount = 1;
@@ -1024,12 +1023,5 @@ public class MagicCardDefinition implements MagicAbilityStore {
     }
     public boolean isMissing() {
         return isMissing;
-    }
-
-    public void setIsScriptFileMissing(boolean b) {
-        isScriptFileMissing = b;
-    }
-    public boolean IsScriptFileMissing() {
-        return isScriptFileMissing;
     }
 }

@@ -380,7 +380,6 @@ public class CardDefinitions {
                 card.setDistinctName(cardName);
                 card.setIsMissing(true);
                 card.setIsValid(false);
-                card.setIsScriptFileMissing(true);
                 missingCards.put(cardKey, card);
             }
         }
