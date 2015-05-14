@@ -105,7 +105,7 @@ public abstract class MagicWhenDamageIsDealtTrigger extends MagicTrigger<MagicDa
             }
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
-                return sourceEvent.getEvent(permanent);
+                return sourceEvent.getEvent(permanent, damage.getSourcePermanent());
             }
         };
     }
