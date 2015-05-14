@@ -484,6 +484,7 @@ checks: \
 	check_requires_groovy_code \
 	check_script_name \
 	check_tokens \
+	check_all_cards \
 	check_unique_property \
 	check_required_property \
 	check_spells \
@@ -551,6 +552,7 @@ check_decks:
 	<(grep "name=" -r release/Magarena/scripts/ | sed 's/.*name=//' | sort) \
 	<(cat release/Magarena/decks/prebuilt/*.dec | grep "^[0-9]" | sed 's/^[0-9]* //' | sort | uniq) | grep ">" | ${NO_OUTPUT}
 
+# each property occurs at most once
 check_unique_property:
 	grep "^[^=]*" -r release/Magarena/scripts/*.txt | sed 's/=.*//g' | sort | uniq -d | ${NO_OUTPUT}
 
@@ -581,6 +583,11 @@ check_unused_choice:
 	for i in `cat declared-choices`; do grep $$i -r src release/Magarena/scripts | grep -v "public static final" | grep -o $$i; done | sort | uniq > used-choices
 	diff declared-choices used-choices | ${NO_OUTPUT}
 	rm declared-choices used-choices
+
+check_all_cards:
+	diff \
+	<(grep "name=" `grep "token=" -Lr release/Magarena/scripts release/Magarena/scripts_missing` -h | sed 's/name=//' | sort) \
+	resources/magic/data/AllCardNames.txt
 
 crash.txt: $(wildcard *.log)
 	for i in `grep "^Excep" -l $^`; do \
