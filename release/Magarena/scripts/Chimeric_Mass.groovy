@@ -1,9 +1,6 @@
 def PT = new MagicStatic(MagicLayer.SetPT, MagicStatic.UntilEOT) {
     @Override
-    public void modPowerToughness(
-            final MagicPermanent source,
-            final MagicPermanent permanent,
-            final MagicPowerToughness pt) {
+    public void modPowerToughness(final MagicPermanent source, final MagicPermanent permanent, final MagicPowerToughness pt) {
         final int charge=permanent.getCounters(MagicCounterType.Charge);
         pt.set(charge,charge);
     }
@@ -11,9 +8,7 @@ def PT = new MagicStatic(MagicLayer.SetPT, MagicStatic.UntilEOT) {
 
 def ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
     @Override
-    public void modSubTypeFlags(
-            final MagicPermanent permanent,
-            final Set<MagicSubType> flags) {
+    public void modSubTypeFlags(final MagicPermanent permanent, final Set<MagicSubType> flags) {
         flags.add(MagicSubType.Construct);
     }
     @Override

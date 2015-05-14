@@ -30,10 +30,7 @@
             game.doAction(new AddStaticAction(permanent,
                 new MagicStatic(MagicLayer.SetPT) {
                 @Override
-                public void modPowerToughness(
-                        final MagicPermanent S,
-                        final MagicPermanent P,
-                        final MagicPowerToughness pt) {
+                public void modPowerToughness(final MagicPermanent S, final MagicPermanent P, final MagicPowerToughness pt) {
                     pt.setToughness(life);
                 }
             }));

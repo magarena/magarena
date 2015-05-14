@@ -25,11 +25,7 @@
             final int X = event.getRefInt();
             final MagicStatic PT = new MagicStatic(MagicLayer.SetPT, MagicStatic.UntilEOT) {
                 @Override
-                public void modPowerToughness(
-                    final MagicPermanent S,
-                    final MagicPermanent P,
-                    final MagicPowerToughness pt
-                ) {
+                public void modPowerToughness(final MagicPermanent S, final MagicPermanent P, final MagicPowerToughness pt) {
                     pt.set(X,X);
                 }
             };

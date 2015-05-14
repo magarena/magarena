@@ -12,10 +12,7 @@
     },
     new MagicStatic(MagicLayer.Ability) {
         @Override
-        public void modAbilityFlags(
-                final MagicPermanent source,
-                final MagicPermanent permanent,
-                final Set<MagicAbility> flags) {
+        public void modAbilityFlags(final MagicPermanent source, final MagicPermanent permanent, final Set<MagicAbility> flags) {
             final int level=permanent.getCounters(MagicCounterType.Level);
             if (level>=3) {
                 permanent.addAbility(MagicAbility.FirstStrike, flags);
