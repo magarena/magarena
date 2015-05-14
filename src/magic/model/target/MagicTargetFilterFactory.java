@@ -52,6 +52,18 @@ public class MagicTargetFilterFactory {
             return player == target;
         }
     };
+    
+    public static final MagicPermanentFilterImpl EQUIPMENT_ATTACHED_TO_SOURCE = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+            return target.getEquippedCreature() == source; 
+        }
+    };
+    
+    public static final MagicPermanentFilterImpl AURA_ATTACHED_TO_SOURCE = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+            return target.getEnchantedPermanent() == source; 
+        }
+    };
 
     public static final MagicStackFilterImpl SPELL_OR_ABILITY_THAT_TARGETS_PERMANENTS =new MagicStackFilterImpl() {
         public boolean accept(final MagicSource source,final MagicPlayer player,final MagicItemOnStack target) {
@@ -2598,6 +2610,8 @@ public class MagicTargetFilterFactory {
         single.put("it", SN);
         single.put("you", YOU);
         single.put("this creature", SN);
+        single.put("Equipment attached to it", EQUIPMENT_ATTACHED_TO_SOURCE);
+        single.put("Aura attached to it", AURA_ATTACHED_TO_SOURCE);
     }
 
     public static String toSingular(final String arg) {
