@@ -196,8 +196,8 @@ public class MagicCardDefinition implements MagicAbilityStore {
         return isValid == false;
     }
     
-    public void setIsValid(boolean b) {
-        this.isValid = b;
+    public void setInvalid() {
+        isValid = false;
     }
 
     public void setImageUpdated(final Date d) {

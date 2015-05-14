@@ -340,7 +340,7 @@ public class DeckUtils {
             final MagicCardDefinition cardDefinition = new MagicCardDefinition();
             cardDefinition.setName(name);
             cardDefinition.setDistinctName(name);
-            cardDefinition.setIsValid(false);
+            cardDefinition.setInvalid();
             return cardDefinition;
         }
     }
