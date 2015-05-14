@@ -6,6 +6,6 @@ type=Artifact,Creature
 subtype=Myr
 cost={3}
 pt=1/1
+ability=SN gets +1/+1 for each Equipment attached to it.
 timing=main
-requires_groovy_code
 oracle=Myr Adapter gets +1/+1 for each Equipment attached to it.

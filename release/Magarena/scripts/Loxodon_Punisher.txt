@@ -6,6 +6,6 @@ type=Creature
 subtype=Elephant,Soldier
 cost={3}{W}
 pt=2/2
+ability=SN gets +2/+2 for each Equipment attached to it.
 timing=main
-requires_groovy_code
 oracle=Loxodon Punisher gets +2/+2 for each Equipment attached to it.
