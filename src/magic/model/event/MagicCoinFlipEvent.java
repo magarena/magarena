@@ -21,7 +21,7 @@ public class MagicCoinFlipEvent extends MagicEvent {
             MagicCoinFlipChoice.create(),
             ref,
             EventAction(winAction, loseAction),
-            "PN flips a coin$."
+            "Choose one$ — (1) Heads; (2) Tails. PN flips a coin."
         );
     }
     
@@ -32,7 +32,7 @@ public class MagicCoinFlipEvent extends MagicEvent {
             MagicCoinFlipChoice.create(),
             ref,
             EventAction(winAction, loseAction),
-            "PN flips a coin$."
+            "Choose one$ — (1) Heads; (2) Tails. PN flips a coin$."
         );
     }
 
