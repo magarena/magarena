@@ -6,9 +6,10 @@
             return (damage.getTarget() == permanent.getEnchantedPermanent()) ?
                 new MagicEvent(
                     permanent,
+                    permanent.getEnchantedPermanent().getController(),
                     amount,
                     this,
-                    "SN deals RN damage to "+permanent.getEnchantedPermanent().getController()
+                    "SN deals RN damage to PN."
                 ) :
                 MagicEvent.NONE;
         }
@@ -16,7 +17,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new DealDamageAction(
                 event.getSource(),
-                event.getPermanent().getEnchantedPermanent().getController(),
+                event.getPlayer(),
                 event.getRefInt()
             ));
         }
