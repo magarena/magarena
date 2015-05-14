@@ -56,7 +56,7 @@
                     MagicChoice.NONE
                 ),
                 this,
-                "Choose one\$ - (1) Put a charge counter on SN; or (2) Remove a charge counter from SN."
+                "Choose one\$ — (1) Put a charge counter on SN; or (2) Remove a charge counter from SN."
             );
         }
         @Override

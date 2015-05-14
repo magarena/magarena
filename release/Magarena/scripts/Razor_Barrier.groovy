@@ -19,7 +19,7 @@ def action = {
                     TARGET_PERMANENT_YOU_CONTROL
                 ),
                 this,
-                "Choose one\$ - (1) target permanent you control gains protection from artifacts until end of turn; " +
+                "Choose one\$ — (1) target permanent you control gains protection from artifacts until end of turn; " +
                 "or (2) target permanent you control gains protection from the color of your choice until end of turn.\$" 
             );
         }

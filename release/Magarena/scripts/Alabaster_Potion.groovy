@@ -11,7 +11,7 @@
                 ),
                 amount,
                 this,
-                "Choose one\$ - (1) target player gains X life; " +
+                "Choose one\$ — (1) target player gains X life; " +
                 "or (2) prevent the next X damage that would be dealt to target creature or player this turn.\$ (X=${amount})" 
             );
         }

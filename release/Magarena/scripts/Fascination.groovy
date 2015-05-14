@@ -11,7 +11,7 @@
                 ),
                 amount,
                 this,
-                "Choose one\$ - (1) each player draws X cards; " +
+                "Choose one\$ — (1) each player draws X cards; " +
                 "or (1) each player puts the top X cards of his or her library into his or her graveyard. (X={amount})" 
             );
         }

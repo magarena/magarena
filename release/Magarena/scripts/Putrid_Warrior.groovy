@@ -10,7 +10,7 @@
                     MagicChoice.NONE
                 ),
                 this,
-                "Choose one\$ - (1) Each player loses 1 life; or (2) each player gains 1 life."
+                "Choose one\$ — (1) Each player loses 1 life; or (2) each player gains 1 life."
             ):
             MagicEvent.NONE;
         }

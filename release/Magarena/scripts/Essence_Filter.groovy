@@ -17,7 +17,7 @@ def EFFECT1 = MagicRuleEventAction.create("Destroy all enchantments.");
                     MagicChoice.NONE
                 ),
                 this,
-                "Choose one\$ - (1) destroy all enchantments; " +
+                "Choose one\$ — (1) destroy all enchantments; " +
                 "or (2) destroy all nonwhite enchantments." 
             );
         }

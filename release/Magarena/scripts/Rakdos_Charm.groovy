@@ -12,7 +12,7 @@ def EFFECT2 = MagicRuleEventAction.create("Destroy target artifact.");
                     MagicChoice.NONE
                 ),
                 this,
-                "Choose one\$ - (1) exile all cards from target player's graveyard; " +
+                "Choose one\$ — (1) exile all cards from target player's graveyard; " +
                 "or (2) destroy target artifact; " +
                 "or (3) each creature deals 1 damage to its controller.\$" 
             );

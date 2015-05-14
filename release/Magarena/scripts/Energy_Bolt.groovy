@@ -11,7 +11,7 @@
                 ),
                 amount,
                 this,
-                "Choose one\$ - (1) SN deals X damage to target player; " +
+                "Choose one\$ — (1) SN deals X damage to target player; " +
                 "or (2) target player gains X life.\$ (X=${amount})" 
             );
         }

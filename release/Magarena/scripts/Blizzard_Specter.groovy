@@ -10,7 +10,7 @@
                 ),
                 damage.getTarget(),
                 this,
-                "Choose one\$ - (1) RN discards a card; or (2) RN returns a permanent he or she controls to its owner's hand."
+                "Choose one\$ — (1) RN discards a card; or (2) RN returns a permanent he or she controls to its owner's hand."
             );
         }
         @Override
