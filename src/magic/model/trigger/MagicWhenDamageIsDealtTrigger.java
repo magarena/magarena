@@ -26,14 +26,15 @@ public abstract class MagicWhenDamageIsDealtTrigger extends MagicTrigger<MagicDa
         return MagicTriggerType.WhenDamageIsDealt;
     }
     
-    public static MagicWhenDamageIsDealtTrigger DamageToCreature(final MagicTargetFilter<MagicPermanent> filter, final MagicSourceEvent sourceEvent) {
+    public static MagicWhenDamageIsDealtTrigger DamageToCreature(final MagicTargetFilter<MagicPermanent> filter, final MagicSourceEvent sourceEvent, final boolean isCombat) {
         return new MagicWhenDamageIsDealtTrigger() {
             @Override
             public boolean accept(final MagicPermanent permanent, final MagicDamage damage) {
                 return super.accept(permanent, damage) && 
                        damage.getSource().isPermanent() && 
                        filter.accept(permanent, permanent.getController(), damage.getSourcePermanent()) && 
-                       damage.isTargetCreature();
+                       damage.isTargetCreature() &&
+                       (isCombat == false || damage.isCombat());
             }
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
@@ -42,31 +43,15 @@ public abstract class MagicWhenDamageIsDealtTrigger extends MagicTrigger<MagicDa
         };
     }
     
-    public static MagicWhenDamageIsDealtTrigger CombatDamageToCreature(final MagicTargetFilter<MagicPermanent> filter, final MagicSourceEvent sourceEvent) {
+    public static MagicWhenDamageIsDealtTrigger DamageToPlayer(final MagicTargetFilter<MagicPermanent> filter, final MagicSourceEvent sourceEvent, final boolean isCombat) {
         return new MagicWhenDamageIsDealtTrigger() {
             @Override
             public boolean accept(final MagicPermanent permanent, final MagicDamage damage) {
                 return super.accept(permanent, damage) && 
                        damage.getSource().isPermanent() && 
                        filter.accept(permanent, permanent.getController(), damage.getSourcePermanent()) && 
-                       damage.isTargetCreature() &&
-                       damage.isCombat();
-            }
-            @Override
-            public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
-                return sourceEvent.getEvent(permanent, damage.getTargetPermanent());
-            }
-        };
-    }
-
-    public static MagicWhenDamageIsDealtTrigger DamageToPlayer(final MagicTargetFilter<MagicPermanent> filter, final MagicSourceEvent sourceEvent) {
-        return new MagicWhenDamageIsDealtTrigger() {
-            @Override
-            public boolean accept(final MagicPermanent permanent, final MagicDamage damage) {
-                return super.accept(permanent, damage) && 
-                       damage.getSource().isPermanent() && 
-                       filter.accept(permanent, permanent.getController(), damage.getSourcePermanent()) && 
-                       damage.isTargetPlayer();
+                       damage.isTargetPlayer() &&
+                       (isCombat == false || damage.isCombat());
             }
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
@@ -75,14 +60,15 @@ public abstract class MagicWhenDamageIsDealtTrigger extends MagicTrigger<MagicDa
         };
     }
     
-    public static MagicWhenDamageIsDealtTrigger DamageToYou(final MagicTargetFilter<MagicPermanent> filter, final MagicSourceEvent sourceEvent) {
+    public static MagicWhenDamageIsDealtTrigger DamageToYou(final MagicTargetFilter<MagicPermanent> filter, final MagicSourceEvent sourceEvent, final boolean isCombat) {
         return new MagicWhenDamageIsDealtTrigger() {
             @Override
             public boolean accept(final MagicPermanent permanent, final MagicDamage damage) {
                 return super.accept(permanent, damage) && 
                        damage.getSource().isPermanent() && 
                        filter.accept(permanent, permanent.getController(), damage.getSourcePermanent()) && 
-                       permanent.isController(damage.getTarget());
+                       permanent.isController(damage.getTarget()) &&
+                       (isCombat == false || damage.isCombat());
             }
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
@@ -91,48 +77,15 @@ public abstract class MagicWhenDamageIsDealtTrigger extends MagicTrigger<MagicDa
         };
     }
     
-    public static MagicWhenDamageIsDealtTrigger DamageToOpponent(final MagicTargetFilter<MagicPermanent> filter, final MagicSourceEvent sourceEvent) {
+    public static MagicWhenDamageIsDealtTrigger DamageToOpponent(final MagicTargetFilter<MagicPermanent> filter, final MagicSourceEvent sourceEvent, final boolean isCombat) {
         return new MagicWhenDamageIsDealtTrigger() {
             @Override
             public boolean accept(final MagicPermanent permanent, final MagicDamage damage) {
                 return super.accept(permanent, damage) && 
-                       damage.getSource().isPermanent() && 
-                       filter.accept(permanent, permanent.getController(), damage.getSourcePermanent()) && 
-                       permanent.isOpponent(damage.getTarget());
-            }
-            @Override
-            public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
-                return sourceEvent.getEvent(permanent, damage.getTargetPlayer());
-            }
-        };
-    }
-    
-    public static MagicWhenDamageIsDealtTrigger CombatDamageToPlayer(final MagicTargetFilter<MagicPermanent> filter, final MagicSourceEvent sourceEvent) {
-        return new MagicWhenDamageIsDealtTrigger() {
-            @Override
-            public boolean accept(final MagicPermanent permanent, final MagicDamage damage) {
-                return super.accept(permanent, damage) &&
-                       damage.getSource().isPermanent() && 
-                       filter.accept(permanent, permanent.getController(), damage.getSourcePermanent()) && 
-                       damage.isTargetPlayer() &&
-                       damage.isCombat();
-            }
-            @Override
-            public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
-                return sourceEvent.getEvent(permanent, damage.getTargetPlayer());
-            }
-        };
-    }
-    
-    public static MagicWhenDamageIsDealtTrigger CombatDamageToOpponent(final MagicTargetFilter<MagicPermanent> filter, final MagicSourceEvent sourceEvent) {
-        return new MagicWhenDamageIsDealtTrigger() {
-            @Override
-            public boolean accept(final MagicPermanent permanent, final MagicDamage damage) {
-                return super.accept(permanent, damage) &&
                        damage.getSource().isPermanent() && 
                        filter.accept(permanent, permanent.getController(), damage.getSourcePermanent()) && 
                        permanent.isOpponent(damage.getTarget()) &&
-                       damage.isCombat();
+                       (isCombat == false || damage.isCombat());
             }
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
@@ -141,14 +94,14 @@ public abstract class MagicWhenDamageIsDealtTrigger extends MagicTrigger<MagicDa
         };
     }
     
-    public static MagicWhenDamageIsDealtTrigger CombatDamageToAny(final MagicTargetFilter<MagicPermanent> filter, final MagicSourceEvent sourceEvent) {
+    public static MagicWhenDamageIsDealtTrigger DamageToAny(final MagicTargetFilter<MagicPermanent> filter, final MagicSourceEvent sourceEvent, final boolean isCombat) {
         return new MagicWhenDamageIsDealtTrigger() {
             @Override
             public boolean accept(final MagicPermanent permanent, final MagicDamage damage) {
                 return super.accept(permanent, damage) && 
                        damage.getSource().isPermanent() && 
                        filter.accept(permanent, permanent.getController(), damage.getSourcePermanent()) && 
-                       damage.isCombat();
+                       (isCombat == false || damage.isCombat());
             }
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
