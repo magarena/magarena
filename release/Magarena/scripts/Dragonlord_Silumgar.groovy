@@ -6,6 +6,7 @@ def CREATURE_OR_PLANESWALKER = new MagicPermanentFilterImpl() {
 
 def TARGET_CREATURE_OR_PLANESWALKER = new MagicTargetChoice(
     CREATURE_OR_PLANESWALKER,
+    MagicTargetHint.Negative,
     "target creature or planeswalker"
 );
 [
