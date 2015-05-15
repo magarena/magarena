@@ -1,11 +1,8 @@
 package magic.model.event;
 
+import magic.model.MagicCopyable;
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
-import magic.model.MagicRandom;
-import magic.model.MagicSource;
-import magic.model.MagicCopyable;
-import magic.model.action.MagicAction;
 import magic.model.choice.MagicCoinFlipChoice;
 
 public class MagicCoinFlipEvent extends MagicEvent {
