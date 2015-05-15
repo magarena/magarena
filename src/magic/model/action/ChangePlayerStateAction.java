@@ -27,9 +27,7 @@ public class ChangePlayerStateAction extends MagicAction {
             // no duration, manually removed during player's next upkeep
             final MagicStatic exhausted = new MagicStatic(MagicLayer.Player) {
                 @Override
-                public void modPlayer(
-                        final MagicPermanent source,
-                        final MagicPlayer aPlayer) {
+                public void modPlayer(final MagicPermanent source, final MagicPlayer aPlayer) {
                     if (player.getId() == aPlayer.getId()) {
                         aPlayer.setState(state);
                     }
@@ -52,9 +50,7 @@ public class ChangePlayerStateAction extends MagicAction {
             // until end of turn
             game.doAction(new AddStaticAction(new MagicStatic(MagicLayer.Player, MagicStatic.UntilEOT) {
                 @Override
-                public void modPlayer(
-                        final MagicPermanent source,
-                        final MagicPlayer aPlayer) {
+                public void modPlayer(final MagicPermanent source, final MagicPlayer aPlayer) {
                     if (player.getId() == aPlayer.getId()) {
                         aPlayer.setState(state);
                     }

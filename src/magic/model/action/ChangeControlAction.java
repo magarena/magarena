@@ -12,10 +12,7 @@ public class ChangeControlAction extends MagicAction {
     private final MagicPermanent perm;
     private final int score;
 
-    public ChangeControlAction(
-            final MagicPlayer curr,
-            final MagicPermanent perm,
-            final int score) {
+    public ChangeControlAction(final MagicPlayer curr, final MagicPermanent perm, final int score) {
         this.curr = curr;
         this.perm = perm;
         this.score = score;

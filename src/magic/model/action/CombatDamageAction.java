@@ -22,10 +22,7 @@ public class CombatDamageAction extends MagicAction {
     private final MagicPlayer defendingPlayer;
     private final boolean first;
 
-    public CombatDamageAction(
-            final MagicPlayer attackingPlayer,
-            final MagicPlayer defendingPlayer,
-            final boolean first) {
+    public CombatDamageAction(final MagicPlayer attackingPlayer, final MagicPlayer defendingPlayer, final boolean first) {
         this.attackingPlayer=attackingPlayer;
         this.defendingPlayer=defendingPlayer;
         this.first = first;
@@ -40,10 +37,7 @@ public class CombatDamageAction extends MagicAction {
             creature.hasAbility(MagicAbility.DoubleStrike);
     }
 
-    private void combatDamage(
-            final MagicGame game,
-            final MagicPlayer aAttackingPlayer,
-            final MagicPlayer aDefendingPlayer) {
+    private void combatDamage(final MagicGame game, final MagicPlayer aAttackingPlayer, final MagicPlayer aDefendingPlayer) {
 
         final Collection<MagicDamage> combatDamage=new ArrayList<MagicDamage>();
 

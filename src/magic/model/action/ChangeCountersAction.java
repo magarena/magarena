@@ -11,11 +11,7 @@ public class ChangeCountersAction extends MagicAction {
     private final int amount;
     private final boolean hasScore;
 
-    private ChangeCountersAction(
-            final MagicPermanent permanent,
-            final MagicCounterType counterType,
-            final int amount,
-            final boolean hasScore) {
+    private ChangeCountersAction(final MagicPermanent permanent, final MagicCounterType counterType, final int amount, final boolean hasScore) {
         this.permanent=permanent;
         this.counterType=counterType;
 
@@ -26,17 +22,11 @@ public class ChangeCountersAction extends MagicAction {
         this.hasScore=hasScore;
     }
     
-    public static ChangeCountersAction Enters(
-            final MagicPermanent permanent,
-            final MagicCounterType counterType,
-            final int amount) {
+    public static ChangeCountersAction Enters(final MagicPermanent permanent, final MagicCounterType counterType, final int amount) {
         return new ChangeCountersAction(permanent, counterType, amount, false);
     }
     
-    public ChangeCountersAction(
-            final MagicPermanent permanent,
-            final MagicCounterType counterType,
-            final int amount) {
+    public ChangeCountersAction(final MagicPermanent permanent, final MagicCounterType counterType, final int amount) {
         this(permanent, counterType, amount, true);
     }
 
