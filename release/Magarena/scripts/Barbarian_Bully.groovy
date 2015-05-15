@@ -15,7 +15,7 @@ def action = {
         @Override
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
-                new MagicDiscardEvent(source, source.getController(), 1, true),
+                MagicDiscardEvent.Random(source),
                 new MagicPlayAbilityEvent(source)
             ];
         }
