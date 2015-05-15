@@ -52,10 +52,7 @@ public class LoseAbilityAction extends MagicAction {
     public void doAction(final MagicGame game) {
         game.doAction(new AddStaticAction(permanent, new MagicStatic(MagicLayer.Ability, duration) {
             @Override
-            public void modAbilityFlags(
-                    final MagicPermanent source,
-                    final MagicPermanent permanent,
-                    final Set<MagicAbility> flags) {
+            public void modAbilityFlags(final MagicPermanent source, final MagicPermanent permanent, final Set<MagicAbility> flags) {
                 abilityList.loseAbility(permanent, flags);
             }
         }));
