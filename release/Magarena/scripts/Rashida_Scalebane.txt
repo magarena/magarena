@@ -6,6 +6,6 @@ type=Legendary,Creature
 subtype=Human,Soldier
 cost={3}{W}{W}
 pt=3/4
-ability={T}: Destroy target attacking or blocking Dragon. It can't be regenerated. You gain life equal to its power.
 timing=main
+requires_groovy_code
 oracle={T}: Destroy target attacking or blocking Dragon. It can't be regenerated. You gain life equal to its power.
