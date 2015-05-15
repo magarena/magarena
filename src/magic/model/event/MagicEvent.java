@@ -1,5 +1,7 @@
 package magic.model.event;
 
+import java.util.List;
+
 import magic.ai.ArtificialScoringSystem;
 import magic.model.MagicCard;
 import magic.model.MagicCardList;
@@ -15,7 +17,6 @@ import magic.model.MagicPermanentList;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.MagicSubType;
-import magic.model.ARG;
 import magic.model.action.MagicCardAction;
 import magic.model.action.MagicCardOnStackAction;
 import magic.model.action.MagicItemOnStackAction;
@@ -30,15 +31,12 @@ import magic.model.choice.MagicExcludeResult;
 import magic.model.choice.MagicPayManaCostResult;
 import magic.model.choice.MagicPlayChoiceResult;
 import magic.model.choice.MagicTargetChoice;
-import magic.model.condition.MagicCondition;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.stack.MagicItemOnStack;
 import magic.model.target.MagicDefaultTargetPicker;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetNone;
 import magic.model.target.MagicTargetPicker;
-
-import java.util.List;
 
 public class MagicEvent implements MagicCopyable {
 
