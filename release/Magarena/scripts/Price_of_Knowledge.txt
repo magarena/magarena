@@ -4,7 +4,6 @@ value=2.500
 rarity=R
 type=Enchantment
 cost={6}{B}
-ability=Players have no maximum hand size.;\
-        At the beginning of each opponent's upkeep, SN deals damage to that player equal to the number of cards in that player's hand.
 timing=enchantment
+requires_groovy_code=Anvil of Bogardan;Price of Knowledge
 oracle=Players have no maximum hand size.\nAt the beginning of each opponent's upkeep, Price of Knowledge deals damage to that player equal to the number of cards in that player's hand.
