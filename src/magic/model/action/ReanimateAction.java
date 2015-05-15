@@ -1,14 +1,12 @@
 package magic.model.action;
 
+import java.util.Arrays;
+import java.util.List;
+
 import magic.model.MagicCard;
 import magic.model.MagicGame;
 import magic.model.MagicLocationType;
-import magic.model.MagicPayedCost;
 import magic.model.MagicPlayer;
-import magic.model.stack.MagicCardOnStack;
-
-import java.util.Arrays;
-import java.util.List;
 
 public class ReanimateAction extends MagicAction {
 
