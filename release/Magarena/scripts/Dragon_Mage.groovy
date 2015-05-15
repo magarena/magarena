@@ -4,7 +4,6 @@
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
             return new MagicEvent(
                 permanent,
-                damage.getTargetPlayer(),
                 this,
                 "Each player discards his or her hand, then draws seven cards."
             );
@@ -16,8 +15,6 @@
                 for (final MagicCard card : hand) {
                     game.doAction(new DiscardCardAction(player,card));
                 }
-            }
-            for (final MagicPlayer player : game.getAPNAP()) {
                 game.doAction(new DrawAction(player, 7));
             }
         }
