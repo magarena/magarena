@@ -4,6 +4,6 @@ value=2.500
 rarity=R
 type=Sorcery
 cost={4}{U}{U}
-effect=Draw cards equal to the number of cards in target opponent's hand.~Rebound
 timing=main
+requires_groovy_code
 oracle=Draw cards equal to the number of cards in target opponent's hand.\nRebound
