@@ -6,7 +6,7 @@ type=Creature
 subtype=Hippogriff
 cost={3}{W}{W}
 pt=3/3
-ability=Flying;\
-        When SN enters the battlefield, return target artifact card from your graveyard to your hand. You gain life equal to that card's converted mana cost.
+ability=Flying
 timing=main
+requires_groovy_code
 oracle=Flying\nWhen Razor Hippogriff enters the battlefield, return target artifact card from your graveyard to your hand. You gain life equal to that card's converted mana cost.
