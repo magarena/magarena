@@ -460,6 +460,17 @@ public enum MagicRuleEventAction {
             };
         }
     },
+    DamageChosenEqualAlt(
+        ARG.IT + " deal(s)? damage to " + ARG.TARGET + " equal to " + ARG.WORDRUN + "(\\.)?",
+        MagicTargetHint.Negative, 
+        MagicTiming.Removal,
+        "Damage"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            return DamageChosenEqual.getAction(matcher);
+        }
+    },
     DamageTarget(
         "sn deal(s)? (?<amount>[0-9]+) damage to " + ARG.YOU + "\\.",
         MagicTiming.Removal,
