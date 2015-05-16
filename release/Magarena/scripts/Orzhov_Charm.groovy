@@ -21,7 +21,10 @@ def choice = new MagicTargetChoice(filter, "a creature card with converted mana 
                     choice
                 ),
                 this,
-                "Choose one — (1) Return target creature you control and all Auras you control attached to it to their owner's hand. (2) Destroy target creature and you lose life equal to its toughness. (3) Return target creature card with converted mana cost 1 or less from your graveyard to the battlefield." 
+                "Choose one — " + 
+                "(1) Return target creature you control and all Auras you control attached to it to their owner's hand. " + 
+                "(2) Destroy target creature and you lose life equal to its toughness. " + 
+                "(3) Return target creature card with converted mana cost 1 or less from your graveyard to the battlefield." 
             );
         }
         @Override
