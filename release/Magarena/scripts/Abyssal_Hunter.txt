@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Assassin
 cost={3}{B}
 pt=1/1
+ability={B}, {T}: Tap target creature.~SN deals damage equal to its power to *that creature*.
 timing=main
-requires_groovy_code
 oracle={B}, {T}: Tap target creature. Abyssal Hunter deals damage equal to Abyssal Hunter's power to that creature.
