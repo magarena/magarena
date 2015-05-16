@@ -110,9 +110,7 @@ public class MCTSAI implements MagicAI {
         MagicGameLog.log(message);
     }
 
-    public Object[] findNextEventChoiceResults(
-            final MagicGame startGame,
-            final MagicPlayer scorePlayer) {
+    public Object[] findNextEventChoiceResults(final MagicGame startGame, final MagicPlayer scorePlayer) {
 
         // Determine possible choices
         final MagicGame aiGame = new MagicGame(startGame, scorePlayer);
@@ -224,7 +222,8 @@ public class MCTSAI implements MagicAI {
         final MagicGame aiGame, 
         final ExecutorService executor, 
         final BlockingQueue<Runnable> queue, 
-        final long END_TIME) {
+        final long END_TIME
+    ) {
 
         //prioritize backpropagation tasks
         while (queue.isEmpty() == false) {
@@ -290,11 +289,12 @@ public class MCTSAI implements MagicAI {
     }
 
     private String outputChoice(
-            final MagicPlayer scorePlayer,
-            final MCTSGameTree root,
-            final long START_TIME,
-            final int bestC,
-            final int sims) {
+        final MagicPlayer scorePlayer,
+        final MCTSGameTree root,
+        final long START_TIME,
+        final int bestC,
+        final int sims
+    ) {
 
         final StringBuilder out = new StringBuilder();
         final long duration = System.currentTimeMillis() - START_TIME;

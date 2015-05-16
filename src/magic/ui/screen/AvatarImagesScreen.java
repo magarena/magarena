@@ -281,8 +281,12 @@ public class AvatarImagesScreen
          */
         @Override
         public Component getListCellRendererComponent(
-                JList<? extends AvatarImageSet> list, AvatarImageSet value, int index,
-                boolean isSelected, boolean cellHasFocus) {
+            JList<? extends AvatarImageSet> list, 
+            AvatarImageSet value, 
+            int index,
+            boolean isSelected, 
+            boolean cellHasFocus
+        ) {
 
             final Color foreColor = isSelected ? MagicStyle.HIGHLIGHT_COLOR : Color.WHITE;
 

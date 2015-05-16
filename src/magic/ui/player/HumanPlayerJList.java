@@ -37,11 +37,12 @@ public class HumanPlayerJList
 
         @Override
         public Component getListCellRendererComponent(
-                JList<? extends HumanProfile> list,
-                HumanProfile profile,
-                int index,
-                boolean isSelected,
-                boolean cellHasFocus) {
+            JList<? extends HumanProfile> list,
+            HumanProfile profile,
+            int index,
+            boolean isSelected,
+            boolean cellHasFocus
+        ) {
 
             this.profile = profile;
             foreColor = isSelected ? MagicStyle.HIGHLIGHT_COLOR: Color.WHITE;

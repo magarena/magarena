@@ -25,12 +25,13 @@ import magic.data.MagicIcon;
 
 public class ImageDrawingUtils {
     public static void drawCostInfo(
-            final Graphics g,
-            final ImageObserver observer,
-            final MagicManaCost cost,
-            final int x1,
-            final int x2,
-            final int y) {
+        final Graphics g,
+        final ImageObserver observer,
+        final MagicManaCost cost,
+        final int x1,
+        final int x2,
+        final int y
+    ) {
         final List<MagicIcon> icons = cost.getIcons();
         int x=x2-icons.size()*16;
         for (final MagicIcon icon : icons) {
@@ -42,11 +43,12 @@ public class ImageDrawingUtils {
     }
 
     public static int drawManaInfo(
-            final Graphics g,
-            final ImageObserver observer,
-            final Collection<MagicManaActivation> acts,
-            int ax,
-            final int ay) {
+        final Graphics g,
+        final ImageObserver observer,
+        final Collection<MagicManaActivation> acts,
+        int ax,
+        final int ay
+    ) {
         final Set<MagicManaType> types = new HashSet<MagicManaType>();
         for (final MagicManaActivation manaAct : acts) {
             for (final MagicManaType manaType : manaAct.getManaTypes()) {
@@ -75,11 +77,12 @@ public class ImageDrawingUtils {
     }
 
     public static int drawAbilityInfo(
-            final Graphics g,
-            final ImageObserver observer,
-            final Set<MagicAbility> abilityFlags,
-            int ax,
-            final int ay) {
+        final Graphics g,
+        final ImageObserver observer,
+        final Set<MagicAbility> abilityFlags,
+        int ax,
+        final int ay
+    ) {
         if (abilityFlags.contains(MagicAbility.Flying)) {
             g.drawImage(IconImages.getIcon(MagicIcon.FLYING).getImage(),ax,ay,observer);
             ax+=16;
@@ -172,11 +175,12 @@ public class ImageDrawingUtils {
     }
 
     public static int drawCountersInfo(
-            final Graphics g,
-            final ImageObserver observer,
-            final MagicPermanent permanent,
-            int ax,
-            final int ay) {
+        final Graphics g,
+        final ImageObserver observer,
+        final MagicPermanent permanent,
+        int ax,
+        final int ay
+    ) {
         for (final MagicCounterType counterType : MagicCounterType.values()) {
             int amount = permanent.getCounters(counterType);
             if (amount > 0) {
@@ -347,14 +351,15 @@ public class ImageDrawingUtils {
     }
 
     public static void drawCreatureInfo(
-            final Graphics g,
-            final FontMetrics metrics,
-            final String pt,
-            final int ptWidth,
-            final String damage,
-            final int x,
-            final int y,
-            final boolean flip) {
+        final Graphics g,
+        final FontMetrics metrics,
+        final String pt,
+        final int ptWidth,
+        final String damage,
+        final int x,
+        final int y,
+        final boolean flip
+    ) {
         final boolean isDamage = damage.length() > 0;
         g.setColor(FontsAndBorders.GRAY2);
         g.fillRect(x,y,ptWidth+4,isDamage?32:18);

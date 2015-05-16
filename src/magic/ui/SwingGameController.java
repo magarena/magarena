@@ -847,11 +847,7 @@ public class SwingGameController implements IUIGameController, ILogBookListener 
     }
 
     @Override
-    public int getMultiKickerCountChoice(
-            final MagicSource source,
-            final MagicManaCost cost,
-            final int maximumCount,
-            final String name) throws UndoClickedException {
+    public int getMultiKickerCountChoice(final MagicSource source, final MagicManaCost cost, final int maximumCount, final String name) throws UndoClickedException {
         final MultiKickerChoicePanel kickerPanel = waitForInput(new Callable<MultiKickerChoicePanel>() {
             @Override
             public MultiKickerChoicePanel call() {
@@ -862,10 +858,7 @@ public class SwingGameController implements IUIGameController, ILogBookListener 
     }
 
     @Override
-    public int getSingleKickerCountChoice(
-            final MagicSource source,
-            final MagicManaCost cost,
-            final String name) throws UndoClickedException {
+    public int getSingleKickerCountChoice(final MagicSource source, final MagicManaCost cost, final String name) throws UndoClickedException {
         final MayChoicePanel kickerPanel = waitForInput(new Callable<MayChoicePanel>() {
             @Override
             public MayChoicePanel call() {
@@ -887,9 +880,7 @@ public class SwingGameController implements IUIGameController, ILogBookListener 
     }
 
     @Override
-    public boolean getTakeMulliganChoice(
-            final MagicSource source,
-            final MagicPlayer player) throws UndoClickedException {
+    public boolean getTakeMulliganChoice(final MagicSource source, final MagicPlayer player) throws UndoClickedException {
         final MayChoicePanel choicePanel = waitForInput(new Callable<MayChoicePanel>() {
             @Override
             public MayChoicePanel call() {

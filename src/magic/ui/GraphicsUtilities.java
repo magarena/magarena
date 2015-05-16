@@ -49,19 +49,17 @@ final public class GraphicsUtilities {
 
     private GraphicsUtilities() {}
 
-    public static BufferedImage scale(
-            final BufferedImage img,
-            final int targetWidth,
-            final int targetHeight) {
+    public static BufferedImage scale(final BufferedImage img, final int targetWidth, final int targetHeight) {
         if (img.getWidth() == targetWidth && img.getHeight() == targetHeight) {
             return img;
         } else {
             return scale(
-                    img,
-                    targetWidth,
-                    targetHeight,
-                    RenderingHints.VALUE_INTERPOLATION_BILINEAR,
-                    true);
+                img,
+                targetWidth,
+                targetHeight,
+                RenderingHints.VALUE_INTERPOLATION_BILINEAR,
+                true
+            );
         }
     }
 
@@ -87,11 +85,13 @@ final public class GraphicsUtilities {
      *    the {@code BILINEAR} hint is specified)
      * @return a scaled version of the original {@code BufferedImage}
      */
-    public static BufferedImage scale(final BufferedImage img,
-                               final int targetWidth,
-                               final int targetHeight,
-                               final Object hint,
-                               final boolean higherQuality) {
+    public static BufferedImage scale(
+        final BufferedImage img,
+        final int targetWidth,
+        final int targetHeight,
+        final Object hint,
+        final boolean higherQuality
+    ) {
         BufferedImage ret = img;
         int w;
         int h;

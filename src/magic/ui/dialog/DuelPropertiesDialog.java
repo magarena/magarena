@@ -30,11 +30,12 @@ public class DuelPropertiesDialog extends JDialog {
 
     // CTR : edit an existing profile.
     public DuelPropertiesDialog(
-            final MagicFrame frame,
-            final int handSize,
-            final int initialLife,
-            final int maxGames,
-            final String cube) {
+        final MagicFrame frame,
+        final int handSize,
+        final int initialLife,
+        final int maxGames,
+        final String cube
+    ) {
 
         super(frame, true);
         this.setTitle("Duel Properties");

@@ -12,51 +12,51 @@ import java.util.List;
 public class CardStatistics {
 
     private static final List<String> MANA_CURVE_TEXT = Collections.unmodifiableList(
-            Arrays.asList(
-                    "X", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9+"
-            )
+        Arrays.asList(
+            "X", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9+"
+        )
     );
 
     public static final List<MagicIcon> MANA_CURVE_ICONS = Collections.unmodifiableList(
-            Arrays.asList(
-                    MagicIcon.MANA_X,
-                    MagicIcon.MANA_0,
-                    MagicIcon.MANA_1,
-                    MagicIcon.MANA_2,
-                    MagicIcon.MANA_3,
-                    MagicIcon.MANA_4,
-                    MagicIcon.MANA_5,
-                    MagicIcon.MANA_6,
-                    MagicIcon.MANA_7,
-                    MagicIcon.MANA_8,
-                    MagicIcon.MANA_9
-            )
+        Arrays.asList(
+            MagicIcon.MANA_X,
+            MagicIcon.MANA_0,
+            MagicIcon.MANA_1,
+            MagicIcon.MANA_2,
+            MagicIcon.MANA_3,
+            MagicIcon.MANA_4,
+            MagicIcon.MANA_5,
+            MagicIcon.MANA_6,
+            MagicIcon.MANA_7,
+            MagicIcon.MANA_8,
+            MagicIcon.MANA_9
+        )
     );
     public static final int MANA_CURVE_SIZE = MANA_CURVE_TEXT.size();
 
     public static final List<String> TYPE_NAMES = Collections.unmodifiableList(
-            Arrays.asList(
-                    "Land",
-                    "Spell",
-                    "Creature",
-                    "Equipment",
-                    "Aura",
-                    "Enchantment",
-                    "Artifact"
-            )
+        Arrays.asList(
+            "Land",
+            "Spell",
+            "Creature",
+            "Equipment",
+            "Aura",
+            "Enchantment",
+            "Artifact"
+        )
     );
     public static final int NR_OF_TYPES = TYPE_NAMES.size();
 
     public static final List<MagicIcon> TYPE_ICONS = Collections.unmodifiableList(
-            Arrays.asList(
-                    MagicIcon.LAND,
-                    MagicIcon.SPELL,
-                    MagicIcon.CREATURE,
-                    MagicIcon.EQUIPMENT,
-                    MagicIcon.AURA,
-                    MagicIcon.ENCHANTMENT,
-                    MagicIcon.ARTIFACT
-            )
+        Arrays.asList(
+            MagicIcon.LAND,
+            MagicIcon.SPELL,
+            MagicIcon.CREATURE,
+            MagicIcon.EQUIPMENT,
+            MagicIcon.AURA,
+            MagicIcon.ENCHANTMENT,
+            MagicIcon.ARTIFACT
+        )
     );
     
     private final Collection<MagicCardDefinition> cards;

@@ -84,11 +84,12 @@ public class RandomDecksComboBox extends JComboBox<String> implements ListCellRe
 
     @Override
     public Component getListCellRendererComponent(
-            final JList<? extends String> list,
-            final String selectedVal,
-            final int index,
-            final boolean isSelected,
-            final boolean cellHasFocus) {
+        final JList<? extends String> list,
+        final String selectedVal,
+        final int index,
+        final boolean isSelected,
+        final boolean cellHasFocus
+    ) {
         if (selectedVal.equals(SEPARATOR)) {
             return new javax.swing.JSeparator(javax.swing.JSeparator.HORIZONTAL);
         } else if (DeckGenerators.getInstance().getGeneratorNames().contains(selectedVal)) {

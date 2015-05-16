@@ -37,11 +37,12 @@ public class AiPlayerJList
 
         @Override
         public Component getListCellRendererComponent(
-                JList<? extends AiProfile> list,
-                AiProfile profile,
-                int index,
-                boolean isSelected,
-                boolean cellHasFocus) {
+            JList<? extends AiProfile> list,
+            AiProfile profile,
+            int index,
+            boolean isSelected,
+            boolean cellHasFocus
+        ) {
 
             this.profile = profile;
             foreColor = isSelected ? MagicStyle.HIGHLIGHT_COLOR : Color.WHITE;

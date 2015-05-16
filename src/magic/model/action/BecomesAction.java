@@ -33,7 +33,8 @@ public class BecomesAction extends MagicAction {
         final Set<MagicType> aType, 
         final MagicAbilityList aAbility, 
         final boolean aDuration, 
-        final boolean aAdditionTo) {
+        final boolean aAdditionTo
+    ) {
         permanent = aPermanent;
         pt=aPt;
         color=aColor;
