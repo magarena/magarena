@@ -6,7 +6,7 @@ type=Creature
 subtype=Human,Soldier
 cost={W}
 pt=1/2
-ability=cumulative upkeep {1}
+ability=cumulative upkeep {1};\
+        {T}: SN deals damage equal to the number of age counters on it to target attacking or blocking creature.
 timing=main
-requires_groovy_code
 oracle=Cumulative upkeep {1}\n{T}: Kjeldoran Javelineer deals damage equal to the number of age counters on it to target attacking or blocking creature.

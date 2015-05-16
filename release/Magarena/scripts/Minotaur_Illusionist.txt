@@ -6,7 +6,7 @@ type=Creature
 subtype=Minotaur,Wizard
 cost={3}{U}{R}
 pt=3/4
-ability={1}{U}: SN gains shroud until end of turn.
+ability={1}{U}: SN gains shroud until end of turn.;\
+        {R}, Sacrifice SN: SN deals damage equal to its power to target creature.
 timing=main
-requires_groovy_code
 oracle={1}{U}: Minotaur Illusionist gains shroud until end of turn.\n{R}, Sacrifice Minotaur Illusionist: Minotaur Illusionist deals damage equal to its power to target creature.

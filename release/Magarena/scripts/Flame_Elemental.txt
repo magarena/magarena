@@ -6,6 +6,6 @@ type=Creature
 subtype=Elemental
 cost={2}{R}{R}
 pt=3/2
+ability={R}, {T}, Sacrifice SN: SN deals damage equal to its power to target creature.
 timing=main
-requires_groovy_code
 oracle={R}, {T}, Sacrifice Flame Elemental: Flame Elemental deals damage equal to its power to target creature.

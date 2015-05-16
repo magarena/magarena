@@ -6,7 +6,7 @@ type=Creature
 subtype=Elf,Archer
 cost={1}{G}{G}
 pt=*/*
-ability=SN's power and toughness are each equal to the number of Elves you control.
+ability=SN's power and toughness are each equal to the number of Elves you control.;\
+        {T}: SN deals damage equal to its power to target creature with flying.
 timing=main
-requires_groovy_code
 oracle=Jagged-Scar Archers's power and toughness are each equal to the number of Elves you control.\n{T}: Jagged-Scar Archers deals damage equal to its power to target creature with flying.

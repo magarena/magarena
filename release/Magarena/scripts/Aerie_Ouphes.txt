@@ -6,7 +6,7 @@ type=Creature
 subtype=Ouphe
 cost={4}{G}
 pt=3/3
-ability=Persist
+ability=Sacrifice SN: SN deals damage equal to its power to target creature with flying.;\
+        Persist
 timing=main
-requires_groovy_code
 oracle=Sacrifice Aerie Ouphes: Aerie Ouphes deals damage equal to its power to target creature with flying.\nPersist

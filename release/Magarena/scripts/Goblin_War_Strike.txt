@@ -5,6 +5,6 @@ removal=3
 rarity=C
 type=Sorcery
 cost={R}
+effect=SN deals damage equal to the number of Goblins you control to target player.
 timing=removal
-requires_groovy_code
 oracle=Goblin War Strike deals damage equal to the number of Goblins you control to target player.

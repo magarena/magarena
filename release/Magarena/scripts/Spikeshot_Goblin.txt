@@ -6,6 +6,6 @@ type=Creature
 subtype=Goblin,Shaman
 cost={2}{R}
 pt=1/2
+ability={R}, {T}: SN deals damage equal to its power to target creature or player.
 timing=main
-requires_groovy_code
 oracle={R}, {T}: Spikeshot Goblin deals damage equal to its power to target creature or player.
