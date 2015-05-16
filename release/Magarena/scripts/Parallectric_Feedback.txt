@@ -4,6 +4,6 @@ value=2.500
 rarity=R
 type=Instant
 cost={3}{R}
-effect=SN deals damage to target spell's controller equal to that spell's converted mana cost.
-timing=removal
+timing=counter
+requires_groovy_code
 oracle=Parallectric Feedback deals damage to target spell's controller equal to that spell's converted mana cost.
