@@ -611,12 +611,12 @@ public enum MagicAbility {
             card.add(MagicAtYourUpkeepTrigger.kinship(effect, MagicRuleEventAction.create(effect).getAction()));
         }
     },
-    CDAPT("SN's power and toughness are each equal to (" + ARG.NUMBER + " plus )?the number of " + ARG.ANY + "\\.", 0) {
+    CDAPT("SN's power and toughness are each equal to( " + ARG.NUMBER + " plus)? " + ARG.ANY + "\\.", 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final int base = (arg.group("number") != null) ? ARG.number(arg) : 0;
             card.add(MagicCDA.setPT(
                 base,
-                MagicTargetFilterFactory.Target(ARG.any(arg))
+                MagicAmountParser.build(ARG.any(arg))
             ));
         }
     },

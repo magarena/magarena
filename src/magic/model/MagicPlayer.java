@@ -18,7 +18,7 @@ import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 import magic.model.target.MagicTargetType;
 
-public class MagicPlayer extends MagicObjectImpl implements MagicTarget, MagicMappable<MagicPlayer> {
+public class MagicPlayer extends MagicObjectImpl implements MagicSource, MagicTarget, MagicMappable<MagicPlayer> {
 
     public static final MagicPlayer NONE = new MagicPlayer(-1, null, -1) {
         @Override

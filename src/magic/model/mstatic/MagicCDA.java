@@ -7,6 +7,7 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.MagicPowerToughness;
 import magic.model.MagicSubType;
+import magic.model.MagicAmount;
 import magic.model.target.MagicTargetFilter;
 import magic.model.target.MagicTarget;
 
@@ -37,6 +38,16 @@ public abstract class MagicCDA implements MagicChangeCardDefinition {
             @Override
             public void modPowerToughness(final MagicGame game,final MagicPlayer player,final MagicPowerToughness pt) {
                 final int amount = filter.filter(player).size();
+                pt.set(base + amount, base + amount);
+            }
+        };
+    }
+    
+    public static MagicCDA setPT(final int base, final MagicAmount count) {
+        return new MagicCDA() {
+            @Override
+            public void modPowerToughness(final MagicGame game,final MagicPlayer player,final MagicPowerToughness pt) {
+                final int amount = count.getAmount(player);
                 pt.set(base + amount, base + amount);
             }
         };
