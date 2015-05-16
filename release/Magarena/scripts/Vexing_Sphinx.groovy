@@ -27,19 +27,5 @@
                 game.doAction(new SacrificeAction(event.getPermanent()));
             }
         }
-    },
-    new MagicWhenDiesTrigger() {       
-        @Override
-        public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPermanent died) {       
-            return new MagicEvent(
-                permanent,
-                this,
-                "PN draws a card for each age counter on SN."
-            );
-        }
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new DrawAction(event.getPlayer(),event.getPermanent().getCounters(MagicCounterType.Age)));
-        }
     }
 ]

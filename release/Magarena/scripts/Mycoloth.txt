@@ -6,7 +6,7 @@ type=Creature
 subtype=Fungus
 cost={3}{G}{G}
 pt=4/4
-ability=devour 2
+ability=devour 2;\
+        At the beginning of your upkeep, put a 1/1 green Saproling creature token onto the battlefield for each +1/+1 counter on SN.
 timing=main
-requires_groovy_code
 oracle=Devour 2\nAt the beginning of your upkeep, put a 1/1 green Saproling creature token onto the battlefield for each +1/+1 counter on Mycoloth.

@@ -6,7 +6,8 @@ type=Creature
 subtype=Sphinx
 cost={1}{U}{U}
 pt=4/4
-ability=Flying
+ability=Flying;\
+        When SN dies, draw a card for each age counter on SN.
 timing=main
 requires_groovy_code
 oracle=Flying\nCumulative upkeep—Discard a card.\nWhen Vexing Sphinx dies, draw a card for each age counter on it.

@@ -6,6 +6,6 @@ type=Creature
 subtype=Kavu,Scout
 cost={2}{R}
 pt=0/2
+ability=SN gets +1/+0 for each basic land type among lands you control.
 timing=main
-requires_groovy_code
 oracle=Domain — Kavu Scout gets +1/+0 for each basic land type among lands you control.

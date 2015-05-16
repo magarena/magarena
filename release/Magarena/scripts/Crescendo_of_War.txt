@@ -4,8 +4,9 @@ value=3.500
 rarity=R
 type=Enchantment
 cost={3}{W}
-ability=At the beginning of each upkeep, put a strife counter on SN.
+ability=At the beginning of each upkeep, put a strife counter on SN.;\
+        Attacking creatures get +1/+0 for each strife counter on SN.;\
+        Blocking creatures you control get +1/+0 for each strife counter on SN.
 static=all
 timing=enchantment
-requires_groovy_code
 oracle=At the beginning of each upkeep, put a strife counter on Crescendo of War.\nAttacking creatures get +1/+0 for each strife counter on Crescendo of War.\nBlocking creatures you control get +1/+0 for each strife counter on Crescendo of War.

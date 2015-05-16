@@ -5,7 +5,7 @@ rarity=U
 type=Artifact
 subtype=Equipment
 cost={4}
-ability=Equip {3}
+ability=Equipped creature gets +1/+1 for each basic land type among lands you control.;\
+        Equip {3}
 timing=main
-requires_groovy_code=Strength of Unity
 oracle=Domain — Equipped creature gets +1/+1 for each basic land type among lands you control.\nEquip {3}

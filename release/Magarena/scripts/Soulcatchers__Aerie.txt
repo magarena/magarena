@@ -4,6 +4,7 @@ value=4.187
 rarity=U
 type=Enchantment
 cost={1}{W}
+ability=Bird creatures get +1/+1 for each feather counter on SN.
 timing=enchantment
 requires_groovy_code
 oracle=Whenever a Bird is put into your graveyard from the battlefield, put a feather counter on Soulcatchers' Aerie.\nBird creatures get +1/+1 for each feather counter on Soulcatchers' Aerie.
