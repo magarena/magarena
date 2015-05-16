@@ -6,6 +6,6 @@ type=Creature
 subtype=Merfolk,Soldier
 cost={2}{U}
 pt=1/1
+ability=Whenever a permanent you control becomes untapped, SN gets +1/+1 until end of turn.
 timing=main
-requires_groovy_code
 oracle=Whenever a permanent you control becomes untapped, Wake Thrasher gets +1/+1 until end of turn.

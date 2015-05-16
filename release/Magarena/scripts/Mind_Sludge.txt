@@ -4,6 +4,6 @@ value=3.832
 rarity=U
 type=Sorcery
 cost={4}{B}
+effect=Target player discards a card for each Swamp you control.
 timing=main
-requires_groovy_code
 oracle=Target player discards a card for each Swamp you control.
