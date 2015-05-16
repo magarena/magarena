@@ -4,11 +4,9 @@ import magic.model.MagicCard;
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
-import magic.model.action.MagicCardAction;
 import magic.model.action.DiscardCardAction;
+import magic.model.action.MagicCardAction;
 import magic.model.choice.MagicTargetChoice;
-import magic.model.condition.MagicCondition;
-import magic.model.condition.MagicConditionFactory;
 
 public class MagicDiscardChosenEvent extends MagicEvent {
 
