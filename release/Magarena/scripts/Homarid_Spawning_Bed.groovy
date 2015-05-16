@@ -17,7 +17,7 @@
                 source,
                 payedCost.getTarget(),
                 this,
-                "PN puts X 1/1 blue Camarid creature tokens onto the battlefield, where X is RN's power."
+                "PN puts X 1/1 blue Camarid creature tokens onto the battlefield, where X is RN's converted mana cost."
             );
         }
 
@@ -25,7 +25,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
             final int amount=event.getRefPermanent().getConvertedCost();
-            game.logAppendMessage(player,"("+amount+")");
+            game.logAppendMessage(player,"(X="+amount+")");
             game.doAction(new PlayTokensAction(
                 player,
                 CardDefinitions.getToken("1/1 blue Camarid creature token"),
