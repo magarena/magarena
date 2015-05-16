@@ -2478,6 +2478,7 @@ public class MagicTargetFilterFactory {
         single.put("legendary snakes you control", LEGENDARY_SNAKE_YOU_CONTROL);
         single.put("untapped land you control", UNTAPPED_LAND_YOU_CONTROL);
         single.put("red or green enchantment you control", RED_OR_GREEN_ENCHANTMENT_YOU_CONTROL);
+        single.put("untapped mountain you control", UNTAPPED_MOUNTAIN_YOU_CONTROL);
         
         // <color|type|subtype> an opponent controls
         single.put("permanent an opponent controls", PERMANENT_AN_OPPONENT_CONTROLS);
@@ -2658,6 +2659,7 @@ public class MagicTargetFilterFactory {
             .replaceAll("\\bsaprolings\\b", "saproling")
             .replaceAll("\\bnightmares\\b", "nightmare")
             .replaceAll("\\bwalls\\b", "wall")
+            .replaceAll("\\bshrines\\b", "shrine")
             .replaceAll("\\band\\b", "or")
             .replaceAll("\\bthem\\b", "it")
             .replaceAll("\\bin your hand\\b", "from your hand")
