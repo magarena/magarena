@@ -37,18 +37,6 @@ public abstract class MagicWhenOtherComesIntoPlayTrigger extends MagicTrigger<Ma
             }
         };
     }
-    public static final MagicWhenOtherComesIntoPlayTrigger createAnother(final MagicTargetFilter<MagicPermanent> filter, final MagicSourceEvent sourceEvent) {
-        return new MagicWhenOtherComesIntoPlayTrigger() {
-            @Override
-            public boolean accept(final MagicPermanent permanent, final MagicPermanent played) {
-                return permanent != played && filter.accept(permanent, permanent.getController(), played);
-            }
-            @Override
-            public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPermanent played) {
-                return sourceEvent.getEvent(permanent, played);
-            }
-        };
-    }
     
     public static final MagicWhenOtherComesIntoPlayTrigger create(final MagicTargetFilter<MagicPermanent> filter, final MagicSourceEvent sourceEvent) {
         return new MagicWhenOtherComesIntoPlayTrigger() {
