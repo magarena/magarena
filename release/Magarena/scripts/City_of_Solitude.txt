@@ -1,0 +1,9 @@
+name=City of Solitude
+image=http://magiccards.info/scans/en/vi/52.jpg
+value=2.500
+rarity=R
+type=Enchantment
+cost={2}{G}
+timing=enchantment
+requires_groovy_code
+oracle=Players can cast spells and activate abilities only during their own turns.
