@@ -33,7 +33,7 @@ def action = {
             game.addEvent(new MagicEvent(
                 event.getSource(),
                 event.getPlayer().getOpponent(),
-                new MagicMayChoice("have SN deal 4 damage to you?"),
+                new MagicMayChoice("Have SN deal 4 damage to you?"),
                 action,
                 "PN may\$ have SN deal 4 damage to you. If you don't, SN gets +2/+2 until end of turn."
             ));
