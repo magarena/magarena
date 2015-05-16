@@ -10,7 +10,7 @@
                 new MagicTapEvent(source),
                 new MagicPayManaCostEvent(source, "{R}"),
                 new MagicDiscardChosenEvent(source, A_CARD_FROM_HAND)
-                ];
+            ];
         }
 
         @Override
