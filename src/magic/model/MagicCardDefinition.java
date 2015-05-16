@@ -915,7 +915,7 @@ public class MagicCardDefinition implements MagicAbilityStore {
     public static final Comparator<MagicCardDefinition> NAME_COMPARATOR_DESC=new Comparator<MagicCardDefinition>() {
         @Override
         public int compare(final MagicCardDefinition cardDefinition1,final MagicCardDefinition cardDefinition2) {
-            return cardDefinition1.getDistinctName().compareTo(cardDefinition2.getDistinctName());
+            return cardDefinition1.getName().compareTo(cardDefinition2.getName());
         }
     };
 
