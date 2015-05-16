@@ -596,10 +596,7 @@ class MCTSGameTree implements Iterable<MCTSGameTree> {
         }
     }
 
-    static void addNode(
-            final LRUCache<Long, MCTSGameTree> cache,
-            final MagicGame game,
-            final MCTSGameTree node) {
+    static void addNode(final LRUCache<Long, MCTSGameTree> cache, final MagicGame game, final MCTSGameTree node) {
         if (node.isCached()) {
             return;
         }
@@ -609,10 +606,7 @@ class MCTSGameTree implements Iterable<MCTSGameTree> {
         assert log("ADDED: " + game.getIdString());
     }
 
-    static MCTSGameTree getNode(
-            final LRUCache<Long, MCTSGameTree> cache,
-            final MagicGame game,
-            final List<Object[]> choices) {
+    static MCTSGameTree getNode(final LRUCache<Long, MCTSGameTree> cache, final MagicGame game, final List<Object[]> choices) {
         final long gid = game.getStateId();
         final MCTSGameTree candidate = cache.get(gid);
 

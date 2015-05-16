@@ -68,11 +68,7 @@ public class PlayerZoneViewer extends JPanel implements ChangeListener {
         update(false);
     }
 
-    private void showCards(
-            final MagicCardList cards,
-            final boolean showFullScreen,
-            String cardZoneTitle,
-            final boolean showCardIcons) {
+    private void showCards(final MagicCardList cards, final boolean showFullScreen, final String cardZoneTitle, final boolean showCardIcons) {
         if (showFullScreen) {
             showFullScreenZone(cards, cardZoneTitle);
         } else {

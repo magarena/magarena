@@ -23,12 +23,12 @@ public class MagicBasicLandChoice extends MagicChoice {
     private static final int UNSUMMON=2;
 
     private static final List<Object> LAND_OPTIONS=Arrays.<Object>asList(
-            MagicSubType.Plains,
-            MagicSubType.Island,
-            MagicSubType.Swamp,
-            MagicSubType.Forest,
-            MagicSubType.Mountain
-        );
+        MagicSubType.Plains,
+        MagicSubType.Island,
+        MagicSubType.Swamp,
+        MagicSubType.Forest,
+        MagicSubType.Mountain
+    );
 
     public static final MagicBasicLandChoice ALL_INSTANCE=new MagicBasicLandChoice(ALL);
     public static final MagicBasicLandChoice MOST_INSTANCE=new MagicBasicLandChoice(MOST);
@@ -95,11 +95,9 @@ public class MagicBasicLandChoice extends MagicChoice {
     }
 
     @Override
-    Collection<Object> getArtificialOptions(
-            final MagicGame game,
-            final MagicEvent event,
-            final MagicPlayer player,
-            final MagicSource source) {
+    Collection<Object> getArtificialOptions(final MagicGame game, final MagicEvent event) {
+        final MagicPlayer player = event.getPlayer();
+        final MagicSource source = event.getSource();
 
         switch (type) {
             case MOST: return getArtificialMostOptions(game,player);
@@ -109,11 +107,9 @@ public class MagicBasicLandChoice extends MagicChoice {
     }
 
     @Override
-    public Object[] getPlayerChoiceResults(
-            final IUIGameController controller,
-            final MagicGame game,
-            final MagicPlayer player,
-            final MagicSource source) throws UndoClickedException {
+    public Object[] getPlayerChoiceResults(final IUIGameController controller, final MagicGame game, final MagicEvent event) throws UndoClickedException {
+        final MagicPlayer player = event.getPlayer();
+        final MagicSource source = event.getSource();
         controller.disableActionButton(false);
         return new Object[]{controller.getLandSubTypeChoice(source)};
     }

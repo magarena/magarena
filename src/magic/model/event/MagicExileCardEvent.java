@@ -18,10 +18,7 @@ public class MagicExileCardEvent extends MagicEvent {
         this(source, source.getController(), targetChoice);
     }
 
-    public MagicExileCardEvent(
-            final MagicSource source,
-            final MagicPlayer player,
-            final MagicTargetChoice targetChoice) {
+    public MagicExileCardEvent(final MagicSource source, final MagicPlayer player, final MagicTargetChoice targetChoice) {
         super(
             source,
             player,

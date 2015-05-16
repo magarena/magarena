@@ -3410,54 +3410,51 @@ public enum MagicRuleEventAction {
         this(aPattern, MagicTargetHint.None, MagicDefaultTargetPicker.create(), timing, "", MagicEventAction.NONE);
     }
     
-    private MagicRuleEventAction(
-            final String aPattern, 
-            final MagicTiming aTiming, 
-            final String aName) {
+    private MagicRuleEventAction(final String aPattern, final MagicTiming aTiming, final String aName) {
         this(aPattern, MagicTargetHint.None, MagicDefaultTargetPicker.create(), aTiming, aName, MagicEventAction.NONE);
     }
     
-    private MagicRuleEventAction(
-            final String aPattern, 
-            final MagicTiming aTiming, 
-            final String aName, 
-            final MagicEventAction aAction) {
+    private MagicRuleEventAction(final String aPattern, final MagicTiming aTiming, final String aName, final MagicEventAction aAction) {
         this(aPattern, MagicTargetHint.None, MagicDefaultTargetPicker.create(), aTiming, aName, aAction);
     }
     
     private MagicRuleEventAction(
-            final String aPattern, 
-            final MagicTargetHint aHint, 
-            final MagicTargetPicker<?> aPicker, 
-            final MagicTiming aTiming, 
-            final String aName) {
+        final String aPattern, 
+        final MagicTargetHint aHint, 
+        final MagicTargetPicker<?> aPicker, 
+        final MagicTiming aTiming, 
+        final String aName
+    ) {
         this(aPattern, aHint, aPicker, aTiming, aName, MagicEventAction.NONE);
     }
     
     private MagicRuleEventAction(
-            final String aPattern, 
-            final MagicTargetHint aHint, 
-            final MagicTiming aTiming, 
-            final String aName) {
+        final String aPattern, 
+        final MagicTargetHint aHint, 
+        final MagicTiming aTiming, 
+        final String aName
+    ) {
         this(aPattern, aHint, MagicDefaultTargetPicker.create(), aTiming, aName, MagicEventAction.NONE);
     }
     
     private MagicRuleEventAction(
-            final String aPattern, 
-            final MagicTargetHint aHint, 
-            final MagicTiming aTiming, 
-            final String aName,
-            final MagicEventAction aAction) {
+        final String aPattern, 
+        final MagicTargetHint aHint, 
+        final MagicTiming aTiming, 
+        final String aName,
+        final MagicEventAction aAction
+    ) {
         this(aPattern, aHint, MagicDefaultTargetPicker.create(), aTiming, aName, aAction);
     }
 
     private MagicRuleEventAction(
-            final String aPattern, 
-            final MagicTargetHint aHint, 
-            final MagicTargetPicker<?> aPicker, 
-            final MagicTiming aTiming, 
-            final String aName, 
-            final MagicEventAction aAction) {
+        final String aPattern, 
+        final MagicTargetHint aHint, 
+        final MagicTargetPicker<?> aPicker, 
+        final MagicTiming aTiming, 
+        final String aName, 
+        final MagicEventAction aAction
+    ) {
         pattern = Pattern.compile(aPattern, Pattern.CASE_INSENSITIVE);
         hint = aHint;
         picker = aPicker;

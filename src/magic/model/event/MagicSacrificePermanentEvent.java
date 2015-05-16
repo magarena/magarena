@@ -13,24 +13,15 @@ import magic.model.target.MagicSacrificeTargetPicker;
 
 public class MagicSacrificePermanentEvent extends MagicEvent {
 
-    public MagicSacrificePermanentEvent(
-            final MagicSource source,
-            final MagicTargetChoice targetChoice) {
+    public MagicSacrificePermanentEvent(final MagicSource source, final MagicTargetChoice targetChoice) {
         this(source, source.getController(), targetChoice);
     }
     
-    public MagicSacrificePermanentEvent(
-            final MagicSource source,
-            final MagicPlayer player,
-            final MagicTargetChoice targetChoice) {
+    public MagicSacrificePermanentEvent(final MagicSource source, final MagicPlayer player, final MagicTargetChoice targetChoice) {
         this(source, player, targetChoice, EVENT_ACTION);
     }
 
-    public MagicSacrificePermanentEvent(
-            final MagicSource source,
-            final MagicPlayer player,
-            final MagicTargetChoice targetChoice,
-            final MagicEventAction action) {
+    public MagicSacrificePermanentEvent(final MagicSource source, final MagicPlayer player, final MagicTargetChoice targetChoice, final MagicEventAction action) {
         super(
             source,
             player,

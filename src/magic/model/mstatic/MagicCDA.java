@@ -27,10 +27,7 @@ characteristics only if certain conditions are met.
 public abstract class MagicCDA implements MagicChangeCardDefinition {
 
     public static final MagicCDA Changeling = new MagicCDA() {
-        public void getSubTypeFlags(
-                final MagicGame game,
-                final MagicPlayer player,
-                final Set<MagicSubType> flags) {
+        public void getSubTypeFlags(final MagicGame game, final MagicPlayer player, final Set<MagicSubType> flags) {
             flags.addAll(MagicSubType.ALL_CREATURES);
         }
     };
@@ -69,24 +66,15 @@ public abstract class MagicCDA implements MagicChangeCardDefinition {
         return flags;
     }
 
-    public void getSubTypeFlags(
-            final MagicGame game,
-            final MagicPlayer player,
-            final Set<MagicSubType> flags) {
+    public void getSubTypeFlags(final MagicGame game, final MagicPlayer player, final Set<MagicSubType> flags) {
     }
 
-    public void modPowerToughness(
-            final MagicGame game,
-            final MagicPlayer player,
-            final MagicPermanent permanent,
-            final MagicPowerToughness pt) {
+    public void modPowerToughness(final MagicGame game, final MagicPlayer player, final MagicPermanent permanent, final MagicPowerToughness pt) {
         modPowerToughness(game, player, pt);
     }
 
-    public void modPowerToughness(
-            final MagicGame game,
-            final MagicPlayer player,
-            final MagicPowerToughness pt) {
+    public void modPowerToughness(final MagicGame game, final MagicPlayer player, final MagicPowerToughness pt) {
+    
     }
 
     @Override

@@ -52,11 +52,7 @@ public class ZoneToggleButton extends JToggleButton {
     }
     
     // CTR
-    private ZoneToggleButton(
-            final MagicPlayerZone zone,
-            final int cardCount,
-            final ValueStyle valueStyle,
-            final boolean isActive) {
+    private ZoneToggleButton(final MagicPlayerZone zone, final int cardCount, final ValueStyle valueStyle, final boolean isActive) {
 
         this.playerZone = zone;
         this.magicIcon = zone.getIcon();
@@ -73,11 +69,7 @@ public class ZoneToggleButton extends JToggleButton {
     }
     
     // CTR
-    ZoneToggleButton(
-            final MagicPlayerZone playerZone,
-            final int cardCount,
-            final boolean isActive) {
-        
+    ZoneToggleButton(final MagicPlayerZone playerZone, final int cardCount, final boolean isActive) {
         this(playerZone, cardCount, ValueStyle.NORMAL, isActive);
     }
 

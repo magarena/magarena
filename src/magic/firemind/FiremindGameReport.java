@@ -38,14 +38,12 @@ public class FiremindGameReport implements Thread.UncaughtExceptionHandler {
         FiremindClient.postFailure(currentDuelId, sw.toString());
     }
 
-    private static void buildCard(final MagicGame game, final String place,
-            final MagicCard card, final StringBuilder report) {
+    private static void buildCard(final MagicGame game, final String place, final MagicCard card, final StringBuilder report) {
         report.append("   - ").append(place).append(" : ")
                 .append(card.getName()).append("\n");
     }
 
-    private static void buildPermanent(final MagicGame game,
-            final MagicPermanent permanent, final StringBuilder report) {
+    private static void buildPermanent(final MagicGame game, final MagicPermanent permanent, final StringBuilder report) {
         report.append("   - Permanent : ").append(permanent.getName());
         if (permanent.isCreature()) {
             final MagicPowerToughness pt = permanent.getPowerToughness();
@@ -62,8 +60,7 @@ public class FiremindGameReport implements Thread.UncaughtExceptionHandler {
         report.append("\n");
     }
 
-    private static void buildPlayer(final MagicGame game,
-            final MagicPlayer player, final StringBuilder report) {
+    private static void buildPlayer(final MagicGame game, final MagicPlayer player, final StringBuilder report) {
         report.append(player.getIndex()).append("] ");
         report.append("Player : ").append(player.getName());
         report.append("  Life : ").append(player.getLife());
@@ -83,8 +80,7 @@ public class FiremindGameReport implements Thread.UncaughtExceptionHandler {
         }
     }
 
-    private static void buildStack(final MagicGame game,
-            final StringBuilder report) {
+    private static void buildStack(final MagicGame game, final StringBuilder report) {
         report.append("Stack : ").append(game.getStack().size()).append('\n');
         for (final MagicItemOnStack itemOnStack : game.getStack()) {
             report.append("   - Name : ");
@@ -95,8 +91,7 @@ public class FiremindGameReport implements Thread.UncaughtExceptionHandler {
         }
     }
 
-    private static void buildScore(final MagicGame game,
-            final StringBuilder report) {
+    private static void buildScore(final MagicGame game, final StringBuilder report) {
         int totalScore = 0;
         int count = 0;
         for (final MagicAction action : game.getActions()) {

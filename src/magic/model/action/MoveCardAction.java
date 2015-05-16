@@ -18,11 +18,7 @@ public class MoveCardAction extends MagicAction {
     public final MagicLocationType fromLocation;
     private MagicLocationType toLocation;
 
-    private MoveCardAction(
-            final MagicCard card,
-            final MagicPermanent permanent,
-            final MagicLocationType fromLocation,
-            final MagicLocationType toLocation) {
+    private MoveCardAction(final MagicCard card, final MagicPermanent permanent, final MagicLocationType fromLocation, final MagicLocationType toLocation) {
         this.card=card;
         this.permanent=permanent;
         this.fromLocation=fromLocation;

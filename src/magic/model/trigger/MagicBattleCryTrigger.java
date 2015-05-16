@@ -21,10 +21,7 @@ public class MagicBattleCryTrigger extends MagicWhenAttacksTrigger {
     }
 
     @Override
-    public MagicEvent executeTrigger(
-            final MagicGame game,
-            final MagicPermanent permanent,
-            final MagicPermanent attacker) {
+    public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPermanent attacker) {
         return (permanent == attacker) ?
             new MagicEvent(
                 permanent,

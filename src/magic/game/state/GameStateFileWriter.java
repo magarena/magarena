@@ -63,11 +63,7 @@ public final class GameStateFileWriter {
         properties.setProperty(keyPrefix + ".deck.color", player.getDeckProfileColors());
     }
 
-    private static void setCardZoneProperties(
-            final List<GameCardState> cards,
-            final String keyPrefix,
-            final Properties properties) {
-
+    private static void setCardZoneProperties(final List<GameCardState> cards, final String keyPrefix, final Properties properties) {
         for (int j = 0; j < cards.size(); j++) {
             final GameCardState card = cards.get(j);
             final String key = keyPrefix + j;

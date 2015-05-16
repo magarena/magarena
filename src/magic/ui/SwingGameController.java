@@ -587,11 +587,10 @@ public class SwingGameController implements IUIGameController, ILogBookListener 
     }
 
     private Object[] getPlayerNextEventChoiceResults(final MagicEvent event) throws UndoClickedException {
-        final MagicSource source=event.getSource();
-        setSourceCardDefinition(source);
+        setSourceCardDefinition(event.getSource());
         final Object[] choiceResults;
         try {
-            choiceResults = event.getChoice().getPlayerChoiceResults(this,game,event.getPlayer(),source);
+            choiceResults = event.getChoice().getPlayerChoiceResults(this,game,event);
         } finally {
             clearValidChoices();
             setSourceCardDefinition(MagicSource.NONE);

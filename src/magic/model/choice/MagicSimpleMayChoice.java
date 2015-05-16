@@ -64,12 +64,14 @@ public class MagicSimpleMayChoice extends MagicChoice {
     }
 
     @Override
-    Collection<Object> getArtificialOptions(final MagicGame game,final MagicEvent event,final MagicPlayer player,final MagicSource source) {
+    Collection<Object> getArtificialOptions(final MagicGame game,final MagicEvent event) {
         throw new UnsupportedOperationException();
     }
 
     @Override
-    public List<Object[]> getArtificialChoiceResults(final MagicGame game,final MagicEvent event,final MagicPlayer player,final MagicSource source) {
+    public List<Object[]> getArtificialChoiceResults(final MagicGame game,final MagicEvent event) {
+        final MagicPlayer player = event.getPlayer();
+        final MagicSource source = event.getSource();
         boolean yes = true;
         switch (action) {
             case DRAW_CARDS:
@@ -83,11 +85,9 @@ public class MagicSimpleMayChoice extends MagicChoice {
     }
 
     @Override
-    public Object[] getPlayerChoiceResults(
-            final IUIGameController controller,
-            final MagicGame game,
-            final MagicPlayer player,
-            final MagicSource source) throws UndoClickedException {
+    public Object[] getPlayerChoiceResults(final IUIGameController controller, final MagicGame game, final MagicEvent event) throws UndoClickedException {
+        final MagicPlayer player = event.getPlayer();
+        final MagicSource source = event.getSource();
 
         final boolean hints = GeneralConfig.getInstance().getSmartTarget();
         if (hints && defaultChoice != DEFAULT_NONE) {

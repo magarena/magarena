@@ -224,12 +224,13 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
     }
 
     private void populateCheckboxPopup(
-            final String migLayout,
-            final ButtonControlledPopup popup,
-            final Object[] checkboxValues,
-            final JCheckBox[] newCheckboxes,
-            final JRadioButton[] newFilterButtons,
-            final boolean hideAND) {
+        final String migLayout,
+        final ButtonControlledPopup popup,
+        final Object[] checkboxValues,
+        final JCheckBox[] newCheckboxes,
+        final JRadioButton[] newFilterButtons,
+        final boolean hideAND
+    ) {
 
         final JPanel checkboxesPanel = new JPanel(new MigLayout(migLayout));
         checkboxesPanel.setAlignmentX(Component.LEFT_ALIGNMENT);

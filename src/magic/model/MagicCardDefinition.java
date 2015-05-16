@@ -686,11 +686,7 @@ public class MagicCardDefinition implements MagicAbilityStore {
         return new MagicPowerToughness(power, toughness);
     }
 
-    public void applyCDAPowerToughness(
-            final MagicGame game,
-            final MagicPlayer player,
-            final MagicPermanent perm,
-            final MagicPowerToughness pt) {
+    public void applyCDAPowerToughness(final MagicGame game, final MagicPlayer player, final MagicPermanent perm, final MagicPowerToughness pt) {
         for (final MagicCDA lv : CDAs) {
             lv.modPowerToughness(game, player, perm, pt);
         }

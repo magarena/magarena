@@ -37,12 +37,13 @@ public class MagicCardChoice extends MagicChoice {
     }
 
     private void createOptions(
-            final Collection<Object> options,
-            final MagicCardList hand,
-            final MagicCard[] cards,
-            final int count,
-            final int aAmount,
-            final int index) {
+        final Collection<Object> options,
+        final MagicCardList hand,
+        final MagicCard[] cards,
+        final int count,
+        final int aAmount,
+        final int index
+    ) {
 
         if (count == aAmount) {
             options.add(new MagicCardChoiceResult(cards));
@@ -60,11 +61,9 @@ public class MagicCardChoice extends MagicChoice {
     }
 
     @Override
-    Collection<Object> getArtificialOptions(
-            final MagicGame game,
-            final MagicEvent event,
-            final MagicPlayer player,
-            final MagicSource source) {
+    Collection<Object> getArtificialOptions(final MagicGame game, final MagicEvent event) {
+        final MagicPlayer player = event.getPlayer();
+        final MagicSource source = event.getSource();
 
         final List<Object> options = new ArrayList<>();
         final MagicCardList hand = new MagicCardList(player.getHand());
@@ -80,11 +79,9 @@ public class MagicCardChoice extends MagicChoice {
     }
 
     @Override
-    public Object[] getPlayerChoiceResults(
-            final IUIGameController controller,
-            final MagicGame game,
-            final MagicPlayer player,
-            final MagicSource source) throws UndoClickedException {
+    public Object[] getPlayerChoiceResults(final IUIGameController controller, final MagicGame game, final MagicEvent event) throws UndoClickedException {
+        final MagicPlayer player = event.getPlayer();
+        final MagicSource source = event.getSource();
 
         final MagicCardChoiceResult result=new MagicCardChoiceResult();
         final Set<Object> validCards=new HashSet<Object>(player.getHand());

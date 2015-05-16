@@ -507,20 +507,14 @@ public class MagicTargetChoice extends MagicChoice {
     }
 
     @Override
-    public final boolean hasOptions(
-            final MagicGame game,
-            final MagicPlayer player,
-            final MagicSource source,
-            final boolean hints) {
+    public final boolean hasOptions(final MagicGame game, final MagicPlayer player, final MagicSource source, final boolean hints) {
         return game.hasLegalTargets(player,source,this,hints);
     }
 
     @Override
-    final Collection<?> getArtificialOptions(
-            final MagicGame game,
-            final MagicEvent event,
-            final MagicPlayer player,
-            final MagicSource source) {
+    final Collection<?> getArtificialOptions(final MagicGame game, final MagicEvent event) {
+        final MagicPlayer player = event.getPlayer();
+        final MagicSource source = event.getSource();
         Collection<MagicTarget> targets = game.getLegalTargets(player,source,this,targetHint);
         if (game.getFastTarget()) {
             @SuppressWarnings("unchecked")
@@ -531,11 +525,9 @@ public class MagicTargetChoice extends MagicChoice {
     }
 
     @Override
-    public final Object[] getPlayerChoiceResults(
-            final IUIGameController controller,
-            final MagicGame game,
-            final MagicPlayer player,
-            final MagicSource source) throws UndoClickedException {
+    public final Object[] getPlayerChoiceResults(final IUIGameController controller, final MagicGame game, final MagicEvent event) throws UndoClickedException {
+        final MagicPlayer player = event.getPlayer();
+        final MagicSource source = event.getSource();
 
         controller.disableActionButton(false);
         controller.showMessage(source,getDescription());

@@ -14,16 +14,11 @@ import magic.model.target.MagicBounceTargetPicker;
 
 public class MagicBounceChosenPermanentEvent extends MagicEvent {
 
-    public MagicBounceChosenPermanentEvent(
-            final MagicSource source,
-            final MagicTargetChoice targetChoice) {
+    public MagicBounceChosenPermanentEvent(final MagicSource source, final MagicTargetChoice targetChoice) {
         this(source, source.getController(), targetChoice);
     }
 
-    public MagicBounceChosenPermanentEvent(
-            final MagicSource source,
-            final MagicPlayer player,
-            final MagicTargetChoice targetChoice) {
+    public MagicBounceChosenPermanentEvent(final MagicSource source, final MagicPlayer player, final MagicTargetChoice targetChoice) {
         super(
             source,
             player,

@@ -22,11 +22,7 @@ public abstract class MagicActivation<T extends MagicSource> implements MagicEve
     private final MagicCondition[] conditions;
     private final MagicActivationHints hints;
 
-    MagicActivation(
-        final MagicCondition[] conditions,
-        final MagicActivationHints hints,
-        final String txt) {
-
+    MagicActivation(final MagicCondition[] conditions, final MagicActivationHints hints, final String txt) {
         this.text = txt;
         this.conditions=conditions;
         this.hints=hints;

@@ -25,18 +25,16 @@ public class GainControlAction extends MagicAction {
     @Override
     public void doAction(final MagicGame game) {
         //insert continuous effect
-        game.doAction(new AddStaticAction(permanent, new MagicStatic(
-                MagicLayer.Control,
-                duration) {
-            @Override
-            public MagicPlayer getController(
-                    final MagicPermanent source,
-                    final MagicPermanent permanent,
-                    final MagicPlayer controller) {
-                final MagicGame game = controller.getGame();
-                return game.getPlayer(player.getIndex());
+        game.doAction(new AddStaticAction(
+            permanent, 
+            new MagicStatic(MagicLayer.Control, duration) {
+                @Override
+                public MagicPlayer getController(final MagicPermanent source, final MagicPermanent permanent, final MagicPlayer controller) {
+                    final MagicGame game = controller.getGame();
+                    return game.getPlayer(player.getIndex());
+                }
             }
-        }));
+        ));
     }
 
     @Override

@@ -123,21 +123,13 @@ public class MagicGame {
         return COUNT;
     }
 
-    static MagicGame create(
-            final MagicDuel duel,
-            final MagicGameplay gameplay,
-            final MagicPlayer[] players,
-            final MagicPlayer startPlayer) {
+    static MagicGame create(final MagicDuel duel, final MagicGameplay gameplay, final MagicPlayer[] players, final MagicPlayer startPlayer) {
         COUNT++;
         INSTANCE = new MagicGame(duel, gameplay, players, startPlayer);
         return INSTANCE;
     }
 
-    private MagicGame(
-            final MagicDuel aDuel,
-            final MagicGameplay aGameplay,
-            final MagicPlayer[] aPlayers,
-            final MagicPlayer startPlayer) {
+    private MagicGame(final MagicDuel aDuel, final MagicGameplay aGameplay, final MagicPlayer[] aPlayers, final MagicPlayer startPlayer) {
 
         artificial=false;
         duel = aDuel;
@@ -1130,11 +1122,7 @@ public class MagicGame {
 
     // ***** TARGETTING *****
 
-    public boolean hasLegalTargets(
-            final MagicPlayer player,
-            final MagicSource source,
-            final MagicTargetChoice targetChoice,
-            final boolean hints) {
+    public boolean hasLegalTargets(final MagicPlayer player, final MagicSource source, final MagicTargetChoice targetChoice, final boolean hints) {
 
         if (targetChoice == MagicTargetChoice.NONE) {
             return true;
@@ -1159,11 +1147,7 @@ public class MagicGame {
         return false;
     }
 
-    public List<MagicTarget> getLegalTargets(
-            final MagicPlayer player,
-            final MagicSource source,
-            final MagicTargetChoice targetChoice,
-            final MagicTargetHint targetHint) {
+    public List<MagicTarget> getLegalTargets(final MagicPlayer player, final MagicSource source, final MagicTargetChoice targetChoice, final MagicTargetHint targetHint) {
 
         final Collection<? extends MagicTarget> targets = targetChoice.getTargetFilter().filter(
             source,
@@ -1195,11 +1179,7 @@ public class MagicGame {
         return options;
     }
 
-    public <T extends MagicTarget> boolean isLegalTarget(
-            final MagicPlayer player,
-            final MagicSource source,
-            final MagicTargetChoice targetChoice,
-            final T target) {
+    public <T extends MagicTarget> boolean isLegalTarget(final MagicPlayer player, final MagicSource source, final MagicTargetChoice targetChoice, final T target) {
 
         @SuppressWarnings("unchecked")
         MagicTargetFilter<T> targetFilter = (MagicTargetFilter<T>)targetChoice.getTargetFilter();
@@ -1331,11 +1311,7 @@ public class MagicGame {
         return additionalTriggers.remove(permanent);
     }
 
-    public <T> void executeTrigger(
-            final MagicTrigger<T> trigger,
-            final MagicPermanent permanent,
-            final MagicSource source,
-            final T data) {
+    public <T> void executeTrigger(final MagicTrigger<T> trigger, final MagicPermanent permanent, final MagicSource source, final T data) {
 
         if (trigger.accept(permanent, data) == false) {
             return;

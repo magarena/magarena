@@ -22,10 +22,7 @@ public class MagicDefaultPermanentPicker extends MagicTargetPicker<MagicPermanen
     }
 
     @Override
-    public Collection<MagicPermanent> pickTargets(
-            final MagicGame game,
-            final MagicPlayer player,
-            final Collection<MagicPermanent> options) {
+    public Collection<MagicPermanent> pickTargets(final MagicGame game, final MagicPlayer player, final Collection<MagicPermanent> options) {
         return options;
     }
 }

@@ -32,11 +32,9 @@ public class MagicPlayChoice extends MagicChoice {
     }
 
     @Override
-    Collection<Object> getArtificialOptions(
-            final MagicGame game,
-            final MagicEvent event,
-            final MagicPlayer player,
-            final MagicSource source) {
+    Collection<Object> getArtificialOptions(final MagicGame game, final MagicEvent event) {
+        final MagicPlayer player = event.getPlayer();
+        final MagicSource source = event.getSource();
 
         // When something is already on top of stack for the player, always pass.
         if (game.getStack().hasItemOnTopOfPlayer(player)) {
@@ -60,11 +58,7 @@ public class MagicPlayChoice extends MagicChoice {
         return options.size() > 1 ? options : PASS_OPTIONS;
     }
 
-    private static void addValidChoices(
-            final MagicGame game,
-            final MagicPlayer player,
-            final boolean isAI,
-            final Collection<Object> validChoices) {
+    private static void addValidChoices(final MagicGame game, final MagicPlayer player, final boolean isAI, final Collection<Object> validChoices) {
         final Set<MagicSourceActivation<? extends MagicSource>> sourceActivations = player.getSourceActivations();
         MagicActivation<? extends MagicSource> skip = null;
         for (final MagicSourceActivation<? extends MagicSource> sourceActivation : sourceActivations) {
@@ -81,11 +75,9 @@ public class MagicPlayChoice extends MagicChoice {
     }
 
     @Override
-    public Object[] getPlayerChoiceResults(
-            final IUIGameController controller,
-            final MagicGame game,
-            final MagicPlayer player,
-            final MagicSource source) throws UndoClickedException {
+    public Object[] getPlayerChoiceResults(final IUIGameController controller, final MagicGame game, final MagicEvent event) throws UndoClickedException {
+        final MagicPlayer player = event.getPlayer();
+        final MagicSource source = event.getSource();
         
         controller.focusViewers(0);
 

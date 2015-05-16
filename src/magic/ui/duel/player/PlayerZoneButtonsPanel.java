@@ -53,10 +53,7 @@ public class PlayerZoneButtonsPanel extends JPanel {
 
     }
 
-    private ZoneToggleButton getZoneToggleButton(
-            final MagicPlayerZone zone,
-            final int cardCount,
-            final boolean isActive) {
+    private ZoneToggleButton getZoneToggleButton(final MagicPlayerZone zone, final int cardCount, final boolean isActive) {
 
         final ZoneToggleButton btn = new ZoneToggleButton(zone, cardCount, isActive);
         btn.addMouseListener(new MouseAdapter() {

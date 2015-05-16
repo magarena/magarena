@@ -17,10 +17,7 @@ public class MagicStormTrigger extends MagicWhenSpellIsCastTrigger {
     }
 
     @Override
-    public MagicEvent executeTrigger(
-            final MagicGame game,
-            final MagicPermanent permanent,
-            final MagicCardOnStack cardOnStack) {
+    public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicCardOnStack cardOnStack) {
         final int count = game.getSpellsCast();
         return (count > 0) ?
             new MagicEvent(

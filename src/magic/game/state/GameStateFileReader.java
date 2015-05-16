@@ -47,11 +47,7 @@ public final class GameStateFileReader {
         player.setDeckProfileColors(prop.getProperty(keyPrefix + ".deck.color"));
     }
 
-    private static void setCardsZoneState(
-            final Properties prop,
-            final String zoneName,
-            final List<GameCardState> cards,
-            final int playerIndex) {
+    private static void setCardsZoneState(final Properties prop, final String zoneName, final List<GameCardState> cards, final int playerIndex) {
 
         final List<String> usedKeys = new ArrayList<>();
         for (int i = 0; i < prop.size(); i++) {

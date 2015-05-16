@@ -17,10 +17,7 @@ public class MagicBloodthirstTrigger extends MagicWhenComesIntoPlayTrigger {
     }
 
     @Override
-    public MagicEvent executeTrigger(
-            final MagicGame game,
-            final MagicPermanent permanent,
-            final MagicPayedCost payedCost) {
+    public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPayedCost payedCost) {
         return (permanent.getOpponent().hasState(MagicPlayerState.WasDealtDamage)) ?
             new MagicEvent(
                 permanent,

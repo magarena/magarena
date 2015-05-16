@@ -32,19 +32,11 @@ public class MagicMayChoice extends MagicChoice {
     private static final MagicChoice satisfied(final MagicMatchedCostEvent cost) {
         return new MagicChoice("satisfied") {
             @Override
-            public Collection<Object> getArtificialOptions(
-                    final MagicGame game,
-                    final MagicEvent event,
-                    final MagicPlayer player,
-                    final MagicSource source) {
+            public Collection<Object> getArtificialOptions(final MagicGame game, final MagicEvent event) {
                 return Collections.singletonList(null);
             }
             @Override
-            public Object[] getPlayerChoiceResults(
-                final IUIGameController controller,
-                final MagicGame game,
-                final MagicPlayer player,
-                final MagicSource source) {
+            public Object[] getPlayerChoiceResults(final IUIGameController controller, final MagicGame game, final MagicEvent event) {
                 return new Object[1];
             }
             @Override
@@ -119,20 +111,14 @@ public class MagicMayChoice extends MagicChoice {
     }
 
     @Override
-    Collection<Object> getArtificialOptions(
-            final MagicGame game,
-            final MagicEvent event,
-            final MagicPlayer player,
-            final MagicSource source) {
+    Collection<Object> getArtificialOptions(final MagicGame game, final MagicEvent event) {
         throw new UnsupportedOperationException();
     }
 
     @Override
-    public List<Object[]> getArtificialChoiceResults(
-            final MagicGame game,
-            final MagicEvent event,
-            final MagicPlayer player,
-            final MagicSource source) {
+    public List<Object[]> getArtificialChoiceResults(final MagicGame game, final MagicEvent event) {
+        final MagicPlayer player = event.getPlayer();
+        final MagicSource source = event.getSource();
 
         final int nrOfChoices = choices.length;
         if (nrOfChoices == 0) {
@@ -148,7 +134,7 @@ public class MagicMayChoice extends MagicChoice {
             if (!choices[index].hasOptions(game,player,source,true)) {
                 return Collections.singletonList(noChoiceResults);
             }
-            optionsList.add(choices[index].getArtificialOptions(game,event,player,source));
+            optionsList.add(choices[index].getArtificialOptions(game,event));
         }
 
         final List<Object[]> choiceResultsList=new ArrayList<Object[]>();
@@ -180,11 +166,9 @@ public class MagicMayChoice extends MagicChoice {
     }
 
     @Override
-    public Object[] getPlayerChoiceResults(
-            final IUIGameController controller,
-            final MagicGame game,
-            final MagicPlayer player,
-            final MagicSource source) throws UndoClickedException {
+    public Object[] getPlayerChoiceResults(final IUIGameController controller, final MagicGame game, final MagicEvent event) throws UndoClickedException {
+        final MagicPlayer player = event.getPlayer();
+        final MagicSource source = event.getSource();
 
         final Object[] choiceResults=new Object[choices.length+1];
         choiceResults[0]=NO_CHOICE;
@@ -204,7 +188,7 @@ public class MagicMayChoice extends MagicChoice {
         // Yes is chosen.
         choiceResults[0]=YES_CHOICE;
         for (int index=0;index<choices.length;index++) {
-            final Object[] partialChoiceResults=choices[index].getPlayerChoiceResults(controller,game,player,source);
+            final Object[] partialChoiceResults=choices[index].getPlayerChoiceResults(controller,game,event);
             choiceResults[index+1]=partialChoiceResults[0];
         }
         return choiceResults;

@@ -41,25 +41,19 @@ public class MagicOrChoice extends MagicChoice {
     }
 
     @Override
-    Collection<Object> getArtificialOptions(
-            final MagicGame game,
-            final MagicEvent event,
-            final MagicPlayer player,
-            final MagicSource source) {
+    Collection<Object> getArtificialOptions(final MagicGame game, final MagicEvent event) {
         throw new UnsupportedOperationException();
     }
 
     @Override
-    public List<Object[]> getArtificialChoiceResults(
-            final MagicGame game,
-            final MagicEvent event,
-            final MagicPlayer player,
-            final MagicSource source) {
+    public List<Object[]> getArtificialChoiceResults(final MagicGame game, final MagicEvent event) {
+        final MagicPlayer player = event.getPlayer();
+        final MagicSource source = event.getSource();
 
         final List<Object[]> choiceResultsList=new ArrayList<>();
         for (int i = 0; i < choices.length; i++) {
             if (choices[i].hasOptions(game,player,source,true)) {
-                for (final Object obj : choices[i].getArtificialOptions(game,event,player,source)) {
+                for (final Object obj : choices[i].getArtificialOptions(game,event)) {
                     choiceResultsList.add(new Object[] {
                         i + 1,
                         obj
@@ -81,11 +75,9 @@ public class MagicOrChoice extends MagicChoice {
     }
 
     @Override
-    public Object[] getPlayerChoiceResults(
-            final IUIGameController controller,
-            final MagicGame game,
-            final MagicPlayer player,
-            final MagicSource source) throws UndoClickedException {
+    public Object[] getPlayerChoiceResults(final IUIGameController controller, final MagicGame game, final MagicEvent event) throws UndoClickedException {
+        final MagicPlayer player = event.getPlayer();
+        final MagicSource source = event.getSource();
         
         final boolean hints = GeneralConfig.getInstance().getSmartTarget();
         final List<Integer> availableModes = new ArrayList<>();
@@ -104,7 +96,7 @@ public class MagicOrChoice extends MagicChoice {
         return choices[mode - 1].isValid() ?
             new Object[] {
                 mode,
-                choices[mode - 1].getPlayerChoiceResults(controller,game,player,source)[0]
+                choices[mode - 1].getPlayerChoiceResults(controller,game,event)[0]
             }:
             new Object[] {
                 mode

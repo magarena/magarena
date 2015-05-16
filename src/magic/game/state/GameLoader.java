@@ -55,10 +55,7 @@ public final class GameLoader {
         return duel;
     }
 
-    private static void setPlayerGameState(
-            final MagicPlayer player,
-            final GamePlayerState playerState,
-            final MagicGame game) {
+    private static void setPlayerGameState(final MagicPlayer player, final GamePlayerState playerState, final MagicGame game) {
 
         player.setLife(playerState.getLife());
 

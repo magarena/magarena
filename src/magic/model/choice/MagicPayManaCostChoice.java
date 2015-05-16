@@ -63,11 +63,9 @@ public class MagicPayManaCostChoice extends MagicChoice {
     }
 
     @Override
-    Collection<Object> getArtificialOptions(
-            final MagicGame game,
-            final MagicEvent event,
-            final MagicPlayer player,
-            final MagicSource source) {
+    Collection<Object> getArtificialOptions(final MagicGame game, final MagicEvent event) {
+        final MagicPlayer player = event.getPlayer();
+        final MagicSource source = event.getSource();
 
         final Collection<Object> options = genOptions(game, player);
 
@@ -82,22 +80,18 @@ public class MagicPayManaCostChoice extends MagicChoice {
     }
 
     @Override
-    public Object[] getSimulationChoiceResult(
-            final MagicGame game,
-            final MagicEvent event,
-            final MagicPlayer player,
-            final MagicSource source) {
+    public Object[] getSimulationChoiceResult(final MagicGame game, final MagicEvent event) {
+        final MagicPlayer player = event.getPlayer();
+        final MagicSource source = event.getSource();
         //in simulation use delayed pay mana cost
         final List<Object> choices = (List<Object>)buildDelayedPayManaCostResults(game,player);
         return new Object[]{choices.get(MagicRandom.nextRNGInt(choices.size()))};
     }
 
     @Override
-    public Object[] getPlayerChoiceResults(
-            final IUIGameController controller,
-            final MagicGame game,
-            final MagicPlayer player,
-            final MagicSource source) throws UndoClickedException {
+    public Object[] getPlayerChoiceResults(final IUIGameController controller, final MagicGame game, final MagicEvent event) throws UndoClickedException {
+        final MagicPlayer player = event.getPlayer();
+        final MagicSource source = event.getSource();
 
         controller.disableActionButton(false);
 

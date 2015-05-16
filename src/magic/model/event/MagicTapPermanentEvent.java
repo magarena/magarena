@@ -13,16 +13,11 @@ import magic.model.target.MagicTapTargetPicker;
 
 public class MagicTapPermanentEvent extends MagicEvent {
 
-    public MagicTapPermanentEvent(
-            final MagicSource source,
-            final MagicTargetChoice targetChoice) {
+    public MagicTapPermanentEvent(final MagicSource source, final MagicTargetChoice targetChoice) {
         this(source, source.getController(), targetChoice);
     }
 
-    public MagicTapPermanentEvent(
-            final MagicSource source,
-            final MagicPlayer player,
-            final MagicTargetChoice targetChoice) {
+    public MagicTapPermanentEvent(final MagicSource source, final MagicPlayer player, final MagicTargetChoice targetChoice) {
         super(
             source,
             player,

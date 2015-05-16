@@ -30,17 +30,15 @@ public class MagicDeclareBlockersChoice extends MagicChoice {
     }
 
     @Override
-    Collection<Object> getArtificialOptions(final MagicGame game,final MagicEvent event,final MagicPlayer player,final MagicSource source) {
-        final MagicDeclareBlockersResultBuilder builder=
-            new MagicDeclareBlockersResultBuilder(game,player,game.getFastBlocker());
+    Collection<Object> getArtificialOptions(final MagicGame game,final MagicEvent event) {
+        final MagicPlayer player = event.getPlayer();
+        final MagicSource source = event.getSource();
+        final MagicDeclareBlockersResultBuilder builder = new MagicDeclareBlockersResultBuilder(game,player,game.getFastBlocker());
         return builder.getResults();
     }
 
     /** Builds result and does cleanup for blockers. */
-    private static void buildResult(
-            final MagicCombatCreatureBuilder builder,
-            final MagicDeclareBlockersResult result) {
-
+    private static void buildResult(final MagicCombatCreatureBuilder builder, final MagicDeclareBlockersResult result) {
         for (final MagicCombatCreature attacker : builder.getAttackers()) {
             final MagicPermanentList blockers=attacker.permanent.getBlockingCreatures();
             if (!blockers.isEmpty()) {
@@ -63,11 +61,9 @@ public class MagicDeclareBlockersChoice extends MagicChoice {
     }
 
     @Override
-    public Object[] getPlayerChoiceResults(
-            final IUIGameController controller,
-            final MagicGame game,
-            final MagicPlayer player,
-            final MagicSource source) throws UndoClickedException {
+    public Object[] getPlayerChoiceResults(final IUIGameController controller, final MagicGame game, final MagicEvent event) throws UndoClickedException {
+        final MagicPlayer player = event.getPlayer();
+        final MagicSource source = event.getSource();
 
         final MagicDeclareBlockersResult result=new MagicDeclareBlockersResult(0,0);
         final MagicCombatCreatureBuilder builder=new MagicCombatCreatureBuilder(game,player.getOpponent(),player);
@@ -131,11 +127,9 @@ public class MagicDeclareBlockersChoice extends MagicChoice {
     }
 
     @Override
-    public Object[] getSimulationChoiceResult(
-            final MagicGame game,
-            final MagicEvent event,
-            final MagicPlayer player,
-            final MagicSource source) {
+    public Object[] getSimulationChoiceResult(final MagicGame game, final MagicEvent event) {
+        final MagicPlayer player = event.getPlayer();
+        final MagicSource source = event.getSource();
 
         final MagicDeclareBlockersResult result=new MagicDeclareBlockersResult(0,0);
         final MagicCombatCreatureBuilder builder=new MagicCombatCreatureBuilder(game,player.getOpponent(),player);

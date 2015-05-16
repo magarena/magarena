@@ -82,12 +82,13 @@ public class MagicFromCardListChoice extends MagicChoice {
     }
 
     private void createOptions(
-            final Collection<Object> options,
-            final List<MagicCard> cList,
-            final MagicCard[] cards,
-            final int count,
-            final int limit,
-            final int index) {
+        final Collection<Object> options,
+        final List<MagicCard> cList,
+        final MagicCard[] cards,
+        final int count,
+        final int limit,
+        final int index
+    ) {
         
         if (count == limit) {
             options.add(new MagicCardChoiceResult(cards));
@@ -105,12 +106,13 @@ public class MagicFromCardListChoice extends MagicChoice {
     }
     
     private void createOptionsUpTo(
-            final Collection<Object> options,
-            final List<MagicCard> cList,
-            final MagicCard[] cards,
-            final int count,
-            final int limit,
-            final int index) {
+        final Collection<Object> options,
+        final List<MagicCard> cList,
+        final MagicCard[] cards,
+        final int count,
+        final int limit,
+        final int index
+    ) {
        
         if (index >= cList.size() || count >= limit) {
             final MagicCardChoiceResult result = new MagicCardChoiceResult(cards);
@@ -140,11 +142,9 @@ public class MagicFromCardListChoice extends MagicChoice {
 
     // FIXME: need to implement ordering of cards for AI, needed by scry
     @Override
-    Collection<Object> getArtificialOptions(
-            final MagicGame game,
-            final MagicEvent event,
-            final MagicPlayer player,
-            final MagicSource source) {
+    Collection<Object> getArtificialOptions(final MagicGame game, final MagicEvent event) {
+        final MagicPlayer player = event.getPlayer();
+        final MagicSource source = event.getSource();
 
         final List<Object> options = new ArrayList<Object>();
         final List<MagicCard> oList = new ArrayList<MagicCard>();
@@ -182,11 +182,9 @@ public class MagicFromCardListChoice extends MagicChoice {
     }
 
     @Override
-    public Object[] getPlayerChoiceResults(
-            final IUIGameController controller,
-            final MagicGame game,
-            final MagicPlayer player,
-            final MagicSource source) throws UndoClickedException {
+    public Object[] getPlayerChoiceResults(final IUIGameController controller, final MagicGame game, final MagicEvent event) throws UndoClickedException {
+        final MagicPlayer player = event.getPlayer();
+        final MagicSource source = event.getSource();
 
         final MagicCardChoiceResult result=new MagicCardChoiceResult();
         final Set<Object> validCards=new HashSet<Object>(choiceList);

@@ -10,10 +10,7 @@ import magic.model.event.MagicPermanentActivation;
 
 public class MagicAbilityOnStack extends MagicItemOnStack {
 
-    public MagicAbilityOnStack(
-            final MagicPermanentActivation activation,
-            final MagicPermanent permanent,
-            final MagicPayedCost payedCost) {
+    public MagicAbilityOnStack(final MagicPermanentActivation activation, final MagicPermanent permanent, final MagicPayedCost payedCost) {
         super(permanent, permanent.getController(), activation.getPermanentEvent(permanent,payedCost), activation);
     }
 

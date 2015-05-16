@@ -20,19 +20,11 @@ public abstract class MagicChoice {
 
     public static final MagicChoice NONE = new MagicChoice("none") {
         @Override
-        public Collection<Object> getArtificialOptions(
-                final MagicGame game,
-                final MagicEvent event,
-                final MagicPlayer player,
-                final MagicSource source) {
+        public Collection<Object> getArtificialOptions(final MagicGame game, final MagicEvent event) {
             return Collections.emptyList();
         }
         @Override
-        public Object[] getPlayerChoiceResults(
-            final IUIGameController controller,
-            final MagicGame game,
-            final MagicPlayer player,
-            final MagicSource source) {
+        public Object[] getPlayerChoiceResults(final IUIGameController controller, final MagicGame game, final MagicEvent event) {
             return new Object[0];
         }
         @Override
@@ -86,16 +78,11 @@ public abstract class MagicChoice {
     }
 
     /** Gets the available options for AI. */
-    abstract Collection<?> getArtificialOptions(
-            final MagicGame game,final MagicEvent event,final MagicPlayer player,final MagicSource source);
+    abstract Collection<?> getArtificialOptions(final MagicGame game,final MagicEvent event);
 
     /** Gets the choice results for AI. */
-    public List<Object[]> getArtificialChoiceResults(
-            final MagicGame game,
-            final MagicEvent event,
-            final MagicPlayer player,
-            final MagicSource source) {
-        final Collection<?> options=getArtificialOptions(game,event,player,source);
+    public List<Object[]> getArtificialChoiceResults(final MagicGame game, final MagicEvent event) {
+        final Collection<?> options=getArtificialOptions(game,event);
         final int size=options.size();
         if (size == 0) {
             throw new RuntimeException("no artificial choice result for " + event);
@@ -111,13 +98,8 @@ public abstract class MagicChoice {
     }
 
     /** Gets one choice results for simulation. */
-    public Object[] getSimulationChoiceResult(
-            final MagicGame game,
-            final MagicEvent event,
-            final MagicPlayer player,
-            final MagicSource source) {
-
-        final List<Object[]> choices = getArtificialChoiceResults(game, event, player, source);
+    public Object[] getSimulationChoiceResult(final MagicGame game, final MagicEvent event) {
+        final List<Object[]> choices = getArtificialChoiceResults(game, event);
         final int size = choices.size();
         if (size == 0) {
             throw new RuntimeException("no simulation choice result");
@@ -126,12 +108,7 @@ public abstract class MagicChoice {
     }
 
     /** Gets the choice results of the player. */
-    public abstract Object[] getPlayerChoiceResults(
-        final IUIGameController controller,
-        final MagicGame game,
-        final MagicPlayer player,
-        final MagicSource source
-    ) throws UndoClickedException;
+    public abstract Object[] getPlayerChoiceResults(final IUIGameController controller, final MagicGame game, final MagicEvent event) throws UndoClickedException;
 
     public static boolean isYesChoice(final Object choiceResult) {
         return choiceResult == YES_CHOICE;

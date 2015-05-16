@@ -16,12 +16,9 @@ public class MagicScryChoice extends MagicMayChoice {
     }
     
     @Override
-    public List<Object[]> getArtificialChoiceResults(
-            final MagicGame game,
-            final MagicEvent event,
-            final MagicPlayer player,
-            final MagicSource source) {
-        
+    public List<Object[]> getArtificialChoiceResults(final MagicGame game, final MagicEvent event) {
+        final MagicPlayer player = event.getPlayer();
+        final MagicSource source = event.getSource();
         if (player.getLibrary().isEmpty()) {
             final List<Object[]> choiceResultsList=new ArrayList<>();
             choiceResultsList.add(new Object[]{NO_CHOICE});
@@ -32,11 +29,9 @@ public class MagicScryChoice extends MagicMayChoice {
     }
 
     @Override
-    public Object[] getPlayerChoiceResults(
-            final IUIGameController controller,
-            final MagicGame game,
-            final MagicPlayer player,
-            final MagicSource source) throws UndoClickedException {
+    public Object[] getPlayerChoiceResults(final IUIGameController controller, final MagicGame game, final MagicEvent event) throws UndoClickedException {
+        final MagicPlayer player = event.getPlayer();
+        final MagicSource source = event.getSource();
         
         final Object[] choiceResults=new Object[1];
         choiceResults[0]=NO_CHOICE;

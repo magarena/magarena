@@ -20,10 +20,7 @@ public class MagicExtortTrigger extends MagicWhenOtherSpellIsCastTrigger {
     }
 
     @Override
-    public MagicEvent executeTrigger(
-            final MagicGame game,
-            final MagicPermanent permanent,
-            final MagicCardOnStack cardOnStack) {
+    public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicCardOnStack cardOnStack) {
         return permanent.isFriend(cardOnStack) ?
             new MagicEvent(
                 permanent,

@@ -38,7 +38,8 @@ public class MagicCardOnStack extends MagicItemOnStack implements MagicSource {
         final MagicPlayer controller,
         final MagicCardEvent aCardEvent, 
         final MagicPayedCost aPayedCost,
-        final List<? extends MagicPermanentAction> aModifications) {
+        final List<? extends MagicPermanentAction> aModifications
+    ) {
         super(card, controller);
         payedCost = aPayedCost;
         cardEvent = aCardEvent;
