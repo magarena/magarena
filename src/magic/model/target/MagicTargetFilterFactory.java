@@ -1316,6 +1316,8 @@ public class MagicTargetFilterFactory {
     public static final MagicPermanentFilterImpl BLOCKING_CREATURE = MagicTargetFilterFactory.creature(MagicPermanentState.Blocking, Control.Any);
 
     public static final MagicPermanentFilterImpl ATTACKING_CREATURE_YOU_CONTROL = MagicTargetFilterFactory.creature(MagicPermanentState.Attacking, Control.You);
+    
+    public static final MagicPermanentFilterImpl BLOCKING_CREATURE_YOU_CONTROL = MagicTargetFilterFactory.creature(MagicPermanentState.Blocking, Control.You);
 
     public static final MagicPermanentFilterImpl ATTACKING_CREATURE_YOUR_OPPONENT_CONTROLS = MagicTargetFilterFactory.creature(MagicPermanentState.Attacking, Control.Opp);
     
@@ -2301,6 +2303,7 @@ public class MagicTargetFilterFactory {
         single.put("nonlegendary creature you control", NON_LEGENDARY_CREATURE_YOU_CONTROL);
         single.put("unblocked attacking creature you control", UNBLOCKED_ATTACKING_CREATURE_YOU_CONTROL);
         single.put("attacking creature you control", ATTACKING_CREATURE_YOU_CONTROL);
+        single.put("blocking creature you control", BLOCKING_CREATURE_YOU_CONTROL);
         single.put("nontoken creature you control", NONTOKEN_CREATURE_YOU_CONTROL);
         single.put("creature with power 3 or greater you control", CREATURE_POWER_3_OR_MORE_YOU_CONTROL);
         single.put("creature with power 4 or greater you control", CREATURE_POWER_4_OR_MORE_YOU_CONTROL);
