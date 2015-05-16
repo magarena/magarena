@@ -20,7 +20,7 @@ public enum MagicAmountParser {
             };
         }
     },
-    Domain("basic land type among lands you control") {
+    Domain("basic land type(s)? among lands you control") {
         public MagicAmount toAmount(final Matcher arg) {
             return MagicAmountFactory.Domain;
         }
@@ -40,14 +40,14 @@ public enum MagicAmountParser {
             return MagicAmountFactory.SN_Power;
         }
     },
-    CounterOnSN("(the number of )?" + ARG.WORD1 + " counter(s)? on (it|SN)") {
+    CounterOnSN(ARG.WORD1 + " counter(s)? on (it|SN)") {
         public MagicAmount toAmount(final Matcher arg) {
             return MagicAmountFactory.CounterOnSource(
                 MagicCounterType.getCounterRaw(ARG.word1(arg))
             );
         }
     },
-    FromFilter("(the number of )?" + ARG.ANY) {
+    FromFilter(ARG.ANY) {
         public MagicAmount toAmount(final Matcher arg) {
             return MagicAmountFactory.FromFilter(
                 MagicTargetFilterFactory.Target(ARG.any(arg))
@@ -71,8 +71,9 @@ public enum MagicAmountParser {
         if (text == null || text.isEmpty()) {
             return MagicAmountFactory.One;
         }
+        final String cleaned = text.replaceAll("^the number of ", "");
         for (final MagicAmountParser rule : values()) {
-            final Matcher matcher = rule.matcher(text);
+            final Matcher matcher = rule.matcher(cleaned);
             if (matcher.matches()) {
                 return rule.toAmount(matcher);
             }
