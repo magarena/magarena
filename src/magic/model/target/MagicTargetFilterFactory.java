@@ -2610,8 +2610,6 @@ public class MagicTargetFilterFactory {
         single.put("it", SN);
         single.put("you", YOU);
         single.put("this creature", SN);
-        single.put("Equipment attached to it", EQUIPMENT_ATTACHED_TO_SOURCE);
-        single.put("Aura attached to it", AURA_ATTACHED_TO_SOURCE);
     }
 
     public static String toSingular(final String arg) {

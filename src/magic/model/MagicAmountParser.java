@@ -20,6 +20,28 @@ public enum MagicAmountParser {
             };
         }
     },
+    Domain("basic land type among lands you control") {
+        public MagicAmount toAmount(final Matcher arg) {
+            return MagicAmountFactory.Domain;
+        }
+    },
+    Equipment("Equipment attached to (it|SN)") {
+        public MagicAmount toAmount(final Matcher arg) {
+            return MagicAmountFactory.Equipment;
+        }
+    },
+    Aura("Aura attached to (it|SN)") {
+        public MagicAmount toAmount(final Matcher arg) {
+            return MagicAmountFactory.Aura;
+        }
+    },
+    CounterOnSN("(the number of )?" + ARG.WORD1 + " counter(s)? on (it|SN)") {
+        public MagicAmount toAmount(final Matcher arg) {
+            return MagicAmountFactory.CounterOnSource(
+                MagicCounterType.getCounterRaw(ARG.word1(arg))
+            );
+        }
+    },
     FromFilter("(the number of )?" + ARG.ANY) {
         public MagicAmount toAmount(final Matcher arg) {
             return MagicAmountFactory.FromFilter(
