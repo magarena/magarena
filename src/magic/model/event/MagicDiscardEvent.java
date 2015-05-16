@@ -47,7 +47,7 @@ public class MagicDiscardEvent extends MagicEvent {
         return Random(source, source.getController(), 1);
     }
 
-    public MagicDiscardEvent(final MagicSource source,final MagicPlayer player,final int amount,final boolean random) {
+    private MagicDiscardEvent(final MagicSource source,final MagicPlayer player,final int amount,final boolean random) {
         super(
             source,
             player,
