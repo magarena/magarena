@@ -6,7 +6,7 @@ type=Creature
 subtype=Avatar
 cost={4}{W}{W}{W}
 pt=*/*
-ability=When SN is put into a graveyard from anywhere, shuffle it into its owner's library.
+ability=SN's power and toughness are each equal to your life total.;\
+        When SN is put into a graveyard from anywhere, shuffle it into its owner's library.
 timing=main
-requires_groovy_code
 oracle=Serra Avatar's power and toughness are each equal to your life total.\nWhen Serra Avatar is put into a graveyard from anywhere, shuffle it into its owner's library.

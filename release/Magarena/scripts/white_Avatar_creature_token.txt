@@ -6,5 +6,5 @@ type=Creature
 subtype=Avatar
 color=w
 pt=*/*
-requires_groovy_code=Serra Avatar
+ability=SN's power and toughness are each equal to your life total.
 oracle=This creature's power and toughness are each equal to your life total.
