@@ -63,7 +63,7 @@ def AB2 = new MagicStatic(MagicLayer.Ability) {
             MagicConditionFactory.HasSubType(MagicSubType.Warrior)
         ],
         new MagicActivationHints(MagicTiming.Animate),
-        "Warrior"
+        "Spirit"
     ) {
 
         @Override
