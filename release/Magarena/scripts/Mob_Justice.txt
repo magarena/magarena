@@ -5,6 +5,6 @@ removal=3
 rarity=C
 type=Sorcery
 cost={1}{R}
+effect=SN deals damage to target player equal to the number of creatures you control.
 timing=removal
-requires_groovy_code
 oracle=Mob Justice deals damage to target player equal to the number of creatures you control.

@@ -7,7 +7,7 @@ subtype=Dragon
 cost={4}{R}{R}
 pt=4/4
 ability=Flying;\
-        Devour 2
+        Devour 2;\
+        Whenever SN attacks, SN deals damage to target creature or player equal to the number of +1/+1 counters on SN.
 timing=main
-requires_groovy_code
 oracle=Flying\nDevour 2\nWhenever Preyseizer Dragon attacks, it deals damage to target creature or player equal to the number of +1/+1 counters on Preyseizer Dragon.

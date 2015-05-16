@@ -6,6 +6,6 @@ type=Legendary,Creature
 subtype=Goblin,Shaman
 cost={2}{R}{R}
 pt=1/1
+ability={T}: SN deals damage to target attacking creature equal to the number of untapped Mountains you control.
 timing=main
-requires_groovy_code
 oracle={T}: Ben-Ben, Akki Hermit deals damage to target attacking creature equal to the number of untapped Mountains you control.

@@ -5,6 +5,6 @@ removal=3
 rarity=U
 type=Sorcery
 cost={R}{G}
+effect=SN deals damage to target creature equal to the number of lands you control.
 timing=removal
-requires_groovy_code
 oracle=Ground Assault deals damage to target creature equal to the number of lands you control.

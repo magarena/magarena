@@ -4,6 +4,6 @@ value=4.072
 rarity=C
 type=Instant
 cost={R}
+effect=SN deals damage to target creature equal to the number of snow permanents you control.
 timing=removal
-requires_groovy_code
 oracle=Skred deals damage to target creature equal to the number of snow permanents you control.

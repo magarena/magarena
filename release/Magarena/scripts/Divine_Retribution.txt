@@ -4,6 +4,6 @@ value=2.538
 rarity=R
 type=Instant
 cost={1}{W}
+effect=SN deals damage to target attacking creature equal to the number of attacking creatures.
 timing=block
-requires_groovy_code
 oracle=Divine Retribution deals damage to target attacking creature equal to the number of attacking creatures.
