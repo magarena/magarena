@@ -6,7 +6,7 @@ type=Creature
 subtype=Bird,Soldier
 cost={2}{W}
 pt=2/*
-ability=Flying
+ability=Flying;\
+        SN's toughness is equal to the number of basic land types among lands you control.
 timing=main
-requires_groovy_code
 oracle=Flying\nDomain — Aven Trailblazer's toughness is equal to the number of basic land types among lands you control.
