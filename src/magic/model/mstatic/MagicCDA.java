@@ -36,8 +36,8 @@ public abstract class MagicCDA implements MagicChangeCardDefinition {
     public static MagicCDA setPT(final int base, final MagicAmount count) {
         return new MagicCDA() {
             @Override
-            public void modPowerToughness(final MagicGame game,final MagicPlayer player,final MagicPowerToughness pt) {
-                final int amount = count.getAmount(player);
+            public void modPowerToughness(final MagicGame game, final MagicPlayer player, final MagicPermanent permanent, final MagicPowerToughness pt) {
+                final int amount = count.getAmount(permanent);
                 pt.set(base + amount, base + amount);
             }
         };
@@ -46,8 +46,8 @@ public abstract class MagicCDA implements MagicChangeCardDefinition {
     public static MagicCDA setPower(final int base, final MagicAmount count) {
         return new MagicCDA() {
             @Override
-            public void modPowerToughness(final MagicGame game,final MagicPlayer player,final MagicPowerToughness pt) {
-                final int amount = count.getAmount(player);
+            public void modPowerToughness(final MagicGame game, final MagicPlayer player, final MagicPermanent permanent, final MagicPowerToughness pt) {
+                final int amount = count.getAmount(permanent);
                 pt.setPower(base + amount);
             }
         };
@@ -56,8 +56,8 @@ public abstract class MagicCDA implements MagicChangeCardDefinition {
     public static MagicCDA setToughness(final int base, final MagicAmount count) {
         return new MagicCDA() {
             @Override
-            public void modPowerToughness(final MagicGame game,final MagicPlayer player,final MagicPowerToughness pt) {
-                final int amount = count.getAmount(player);
+            public void modPowerToughness(final MagicGame game, final MagicPlayer player, final MagicPermanent permanent, final MagicPowerToughness pt) {
+                final int amount = count.getAmount(permanent);
                 pt.setToughness(base + amount);
             }
         };
@@ -67,16 +67,9 @@ public abstract class MagicCDA implements MagicChangeCardDefinition {
         return flags;
     }
 
-    public void getSubTypeFlags(final MagicGame game, final MagicPlayer player, final Set<MagicSubType> flags) {
-    }
+    public void getSubTypeFlags(final MagicGame game, final MagicPlayer player, final Set<MagicSubType> flags) {}
 
-    public void modPowerToughness(final MagicGame game, final MagicPlayer player, final MagicPermanent permanent, final MagicPowerToughness pt) {
-        modPowerToughness(game, player, pt);
-    }
-
-    public void modPowerToughness(final MagicGame game, final MagicPlayer player, final MagicPowerToughness pt) {
-    
-    }
+    public void modPowerToughness(final MagicGame game, final MagicPlayer player, final MagicPermanent permanent, final MagicPowerToughness pt) {}
 
     @Override
     public void change(final MagicCardDefinition cdef) {
