@@ -3599,8 +3599,8 @@ public enum MagicRuleEventAction {
         final String thing = "(permanent|creature|artifact|land|player|opponent)";
         final String evenQuotes = "(?=([^\"]*'[^\"]*')*[^\"]*$)";
         return text
-            .replaceAll("\\b(T|t)his " + thing + "\\b" + evenQuotes, "SN")
-            .replaceAll("\\b(T|t)hat " + thing + "\\b" + evenQuotes, "RN");
+            .replaceAll("\\b(T|t)his " + thing + "( |\\.)" + evenQuotes, "SN$3")
+            .replaceAll("\\b(T|t)hat " + thing + "( |\\.)" + evenQuotes, "RN$3");
     }
 
     private static String concat(final String part0, final String[] parts) {
