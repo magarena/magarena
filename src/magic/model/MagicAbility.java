@@ -620,21 +620,21 @@ public enum MagicAbility {
             ));
         }
     },
-    CDAPower("SN's power is equal to (" + ARG.NUMBER + " plus )?the number of " + ARG.ANY + "\\.", 0) {
+    CDAPower("SN's power is equal to( " + ARG.NUMBER + " plus)? " + ARG.ANY + "\\.", 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final int base = (arg.group("number") != null) ? ARG.number(arg) : 0;
             card.add(MagicCDA.setPower(
                 base,
-                MagicTargetFilterFactory.Target(ARG.any(arg))
+                MagicAmountParser.build(ARG.any(arg))
             ));
         }
     },
-    CDAToughness("SN's toughness is equal to (" + ARG.NUMBER + " plus )?the number of " + ARG.ANY + "\\.", 0) {
+    CDAToughness("SN's toughness is equal to( " + ARG.NUMBER + " plus)? " + ARG.ANY + "\\.", 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final int base = (arg.group("number") != null) ? ARG.number(arg) : 0;
             card.add(MagicCDA.setToughness(
                 base,
-                MagicTargetFilterFactory.Target(ARG.any(arg))
+                MagicAmountParser.build(ARG.any(arg))
             ));
         }
     },
@@ -1269,8 +1269,8 @@ public enum MagicAbility {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final MagicPowerToughness pt = ARG.mpt(arg);
             final MagicTargetFilter<MagicPermanent> affected = MagicTargetFilterFactory.Permanent(ARG.wordrun(arg));
-            final MagicTargetFilter<MagicTarget> counted = MagicTargetFilterFactory.Target(ARG.wordrun2(arg));
-            card.add(MagicStatic.genPTStatic(affected, counted, pt));
+            final MagicAmount count = MagicAmountParser.build(ARG.wordrun2(arg));
+            card.add(MagicStatic.genPTStatic(affected, count, pt));
         }
     },
     LordGain(ARG.WORDRUN + " (have|has) " + ARG.ANY + "(\\.)?", 0) {

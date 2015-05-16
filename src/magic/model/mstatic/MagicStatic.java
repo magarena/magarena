@@ -12,6 +12,7 @@ import magic.model.MagicPlayer;
 import magic.model.MagicPowerToughness;
 import magic.model.MagicSubType;
 import magic.model.MagicType;
+import magic.model.MagicAmount;
 import magic.model.condition.MagicCondition;
 import magic.model.action.RemoveStaticAction;
 import magic.model.action.PutStateTriggerOnStackAction;
@@ -92,11 +93,11 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
         }
     }
     
-    public static MagicStatic genPTStatic(final MagicTargetFilter<MagicPermanent> affected, final MagicTargetFilter<MagicTarget> counted, final MagicPowerToughness given) {
+    public static MagicStatic genPTStatic(final MagicTargetFilter<MagicPermanent> affected, final MagicAmount count, final MagicPowerToughness given) {
         return new MagicStatic(MagicLayer.ModPT, affected) {
             @Override
             public void modPowerToughness(final MagicPermanent source, final MagicPermanent permanent, final MagicPowerToughness pt) {
-                final int amt = counted.filter(source, source.getController(), MagicTargetHint.None).size();
+                final int amt = count.getAmount(source);
                 pt.add(given.power() * amt, given.toughness() * amt);
             }
         };

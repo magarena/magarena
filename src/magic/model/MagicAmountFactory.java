@@ -23,4 +23,12 @@ public class MagicAmountFactory {
             }
         };
     }
+
+    public static MagicAmount One = 
+        new MagicAmount() {
+            @Override
+            public int getAmount(final MagicSource source) {
+                return 1;
+            }
+        };
 }

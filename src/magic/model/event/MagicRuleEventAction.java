@@ -23,6 +23,8 @@ import magic.model.MagicPermanentState;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.MagicMessage;
+import magic.model.MagicAmount;
+import magic.model.MagicAmountParser;
 import magic.model.action.*;
 import magic.model.choice.MagicChoice;
 import magic.model.choice.MagicFromCardFilterChoice;
@@ -630,14 +632,12 @@ public enum MagicRuleEventAction {
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
-            final MagicTargetFilter<MagicTarget> filter = matcher.group("wordrun") != null ? 
-                MagicTargetFilterFactory.Target(ARG.wordrun(matcher)):
-                MagicTargetFilterFactory.ONE;
+            final MagicAmount count = MagicAmountParser.build(ARG.wordrun(matcher));
             final int amount = EnglishToInt.convert(matcher.group("amount"));
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    final int multiplier = filter.filter(event).size();
+                    final int multiplier = count.getAmount(event.getSource());
                     game.doAction(new DrawAction(ARG.youPlayer(event, matcher), amount * multiplier));
                 }
             };
@@ -880,14 +880,12 @@ public enum MagicRuleEventAction {
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
-            final MagicTargetFilter<MagicTarget> filter = matcher.group("wordrun") != null ? 
-                MagicTargetFilterFactory.Target(ARG.wordrun(matcher)):
-                MagicTargetFilterFactory.ONE;
+            final MagicAmount count = MagicAmountParser.build(ARG.wordrun(matcher));
             final int amount = Integer.parseInt(matcher.group("amount"));
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    final int multiplier = filter.filter(event).size();
+                    final int multiplier = count.getAmount(event.getSource());
                     game.doAction(new ChangeLifeAction(event.getPlayer(), amount * multiplier));
                 }
             };
@@ -998,11 +996,11 @@ public enum MagicRuleEventAction {
             final String[] pt = matcher.group("pt").replace("+","").split("/");
             final int power = Integer.parseInt(pt[0]);
             final int toughness = Integer.parseInt(pt[1]);
-            final MagicTargetFilter<MagicTarget> filter = MagicTargetFilterFactory.Target(ARG.wordrun(matcher));
+            final MagicAmount count = MagicAmountParser.build(ARG.wordrun(matcher));
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    final int amt = filter.filter(event).size();
+                    final int amt = count.getAmount(event.getSource());
                     game.doAction(new ChangeTurnPTAction(
                         ARG.itPermanent(event, matcher),
                         power * amt,
@@ -2217,9 +2215,7 @@ public enum MagicRuleEventAction {
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
-            final MagicTargetFilter<MagicTarget> filter = matcher.group("wordrun") != null ? 
-                MagicTargetFilterFactory.Target(ARG.wordrun(matcher)):
-                MagicTargetFilterFactory.ONE;
+            final MagicAmount count = MagicAmountParser.build(ARG.wordrun(matcher));
             final int amount = EnglishToInt.convert(matcher.group("amount"));
             final String tokenName = matcher.group("name").replace("tokens", "token");
             final MagicCardDefinition tokenDef = CardDefinitions.getToken(tokenName);
@@ -2227,7 +2223,7 @@ public enum MagicRuleEventAction {
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    final int multiplier = filter.filter(event).size();
+                    final int multiplier = count.getAmount(event.getSource());
                     final int total = amount * multiplier;
                     for (int i = 0; i < total; i++) {
                         game.doAction(new PlayTokenAction(

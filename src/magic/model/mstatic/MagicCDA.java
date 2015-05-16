@@ -33,16 +33,6 @@ public abstract class MagicCDA implements MagicChangeCardDefinition {
         }
     };
 
-    public static MagicCDA setPT(final int base, final MagicTargetFilter<MagicTarget> filter) {
-        return new MagicCDA() {
-            @Override
-            public void modPowerToughness(final MagicGame game,final MagicPlayer player,final MagicPowerToughness pt) {
-                final int amount = filter.filter(player).size();
-                pt.set(base + amount, base + amount);
-            }
-        };
-    }
-    
     public static MagicCDA setPT(final int base, final MagicAmount count) {
         return new MagicCDA() {
             @Override
@@ -53,21 +43,21 @@ public abstract class MagicCDA implements MagicChangeCardDefinition {
         };
     }
     
-    public static MagicCDA setPower(final int base, final MagicTargetFilter<MagicTarget> filter) {
+    public static MagicCDA setPower(final int base, final MagicAmount count) {
         return new MagicCDA() {
             @Override
             public void modPowerToughness(final MagicGame game,final MagicPlayer player,final MagicPowerToughness pt) {
-                final int amount = filter.filter(player).size();
+                final int amount = count.getAmount(player);
                 pt.setPower(base + amount);
             }
         };
     }
     
-    public static MagicCDA setToughness(final int base, final MagicTargetFilter<MagicTarget> filter) {
+    public static MagicCDA setToughness(final int base, final MagicAmount count) {
         return new MagicCDA() {
             @Override
             public void modPowerToughness(final MagicGame game,final MagicPlayer player,final MagicPowerToughness pt) {
-                final int amount = filter.filter(player).size();
+                final int amount = count.getAmount(player);
                 pt.setToughness(base + amount);
             }
         };

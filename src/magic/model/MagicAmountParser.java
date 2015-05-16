@@ -20,7 +20,7 @@ public enum MagicAmountParser {
             };
         }
     },
-    FromFilter("the number of " + ARG.ANY) {
+    FromFilter("(the number of )?" + ARG.ANY) {
         public MagicAmount toAmount(final Matcher arg) {
             return MagicAmountFactory.FromFilter(
                 MagicTargetFilterFactory.Target(ARG.any(arg))
@@ -41,6 +41,9 @@ public enum MagicAmountParser {
     public abstract MagicAmount toAmount(final Matcher arg);
     
     public static final MagicAmount build(final String text) {
+        if (text == null || text.isEmpty()) {
+            return MagicAmountFactory.One;
+        }
         for (final MagicAmountParser rule : values()) {
             final Matcher matcher = rule.matcher(text);
             if (matcher.matches()) {
