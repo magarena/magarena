@@ -35,6 +35,11 @@ public enum MagicAmountParser {
             return MagicAmountFactory.Aura;
         }
     },
+    ItsPower("its power") {
+        public MagicAmount toAmount(final Matcher arg) {
+            return MagicAmountFactory.SN_Power;
+        }
+    },
     CounterOnSN("(the number of )?" + ARG.WORD1 + " counter(s)? on (it|SN)") {
         public MagicAmount toAmount(final Matcher arg) {
             return MagicAmountFactory.CounterOnSource(

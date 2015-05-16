@@ -57,4 +57,13 @@ public class MagicAmountFactory {
                 return source.getController().getDomain();
             }
         };
+    
+    public static MagicAmount SN_Power = 
+        new MagicAmount() {
+            @Override
+            public int getAmount(final MagicSource source) {
+                final MagicPermanent perm = (MagicPermanent)source;
+                return perm.getPower();
+            }
+        };
 }

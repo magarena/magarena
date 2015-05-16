@@ -438,6 +438,28 @@ public enum MagicRuleEventAction {
             return DamageChosenAndController.getPicker(matcher);
         }
     },
+    DamageChosenEqual(
+        ARG.IT + " deal(s)? damage equal to " + ARG.WORDRUN + " to " + ARG.TARGET + "(\\.)?",
+        MagicTargetHint.Negative, 
+        MagicTiming.Removal,
+        "Damage"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            final MagicAmount count = MagicAmountParser.build(ARG.wordrun(matcher));
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    event.processTarget(game,new MagicTargetAction() {
+                        public void doAction(final MagicTarget target) {
+                            final MagicSource source = ARG.itSource(event, matcher);
+                            game.doAction(new DealDamageAction(source, target, count.getAmount(source)));
+                        }
+                    });
+                }
+            };
+        }
+    },
     DamageTarget(
         "sn deal(s)? (?<amount>[0-9]+) damage to " + ARG.YOU + "\\.",
         MagicTiming.Removal,
