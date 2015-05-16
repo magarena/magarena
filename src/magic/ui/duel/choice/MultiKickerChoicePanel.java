@@ -32,12 +32,7 @@ public class MultiKickerChoicePanel extends JPanel implements ActionListener {
     private final int maximumCount;
     private int count;
 
-    public MultiKickerChoicePanel(
-            final IGameController controller,
-            final MagicSource source,
-            final MagicManaCost cost,
-            final int maximumCount,
-            final String name) {
+    public MultiKickerChoicePanel(final IGameController controller, final MagicSource source, final MagicManaCost cost, final int maximumCount, final String name) {
 
         this.controller=(SwingGameController) controller;
         this.maximumCount=maximumCount;

@@ -131,9 +131,15 @@ public class FiremindClient {
         }
     }
     
-    public static boolean postGame(Integer duel_id, Integer game_number,
-            Date play_time, boolean win_deck1, Integer magarena_version_major,
-            Integer magarena_version_minor, String logFile) {
+    public static boolean postGame(
+        Integer duel_id, 
+        Integer game_number,
+        Date play_time, 
+        boolean win_deck1, 
+        Integer magarena_version_major,
+        Integer magarena_version_minor, 
+        String logFile
+    ) {
         CONFIG.load();
         String url = firemindHost + "/api/v1/duel_jobs/" + duel_id + "/games";
         System.out.println("Posting game result "+game_number);

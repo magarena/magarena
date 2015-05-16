@@ -28,10 +28,7 @@ public class PlayChoicePanel extends JPanel implements ActionListener {
     private final List<MagicPlayChoiceResult> results;
     private MagicPlayChoiceResult result;
 
-    public PlayChoicePanel(
-            final IGameController controller,
-            final MagicSource source,
-            final List<MagicPlayChoiceResult> results) {
+    public PlayChoicePanel(final IGameController controller, final MagicSource source, final List<MagicPlayChoiceResult> results) {
 
         this.controller=(SwingGameController) controller;
         this.results=results;

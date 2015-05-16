@@ -85,10 +85,7 @@ public class FileIO {
         }
     }
 
-    public static void toFile(
-            final File aFile,
-            final Properties properties,
-            final String name) throws IOException {
+    public static void toFile(final File aFile, final Properties properties, final String name) throws IOException {
         FileOutputStream fos = null;
         try {
             fos = new FileOutputStream(aFile);

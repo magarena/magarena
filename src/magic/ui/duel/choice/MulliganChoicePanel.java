@@ -12,11 +12,7 @@ import magic.ui.ScreenController;
 @SuppressWarnings("serial")
 public class MulliganChoicePanel extends MayChoicePanel {
 
-    public MulliganChoicePanel(
-            final IGameController controller,
-            final MagicSource source,
-            final String message,
-            final MagicCardList hand) {
+    public MulliganChoicePanel(final IGameController controller, final MagicSource source, final String message, final MagicCardList hand) {
         super(controller, source, message);
         SwingUtilities.invokeLater(new Runnable() {
             @Override

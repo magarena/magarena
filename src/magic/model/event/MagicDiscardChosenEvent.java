@@ -14,10 +14,7 @@ public class MagicDiscardChosenEvent extends MagicEvent {
         this(source, source.getController(), targetChoice);
     }
 
-    public MagicDiscardChosenEvent(
-            final MagicSource source,
-            final MagicPlayer player,
-            final MagicTargetChoice targetChoice) {
+    public MagicDiscardChosenEvent(final MagicSource source, final MagicPlayer player, final MagicTargetChoice targetChoice) {
         super(
             source,
             player,

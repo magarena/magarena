@@ -273,11 +273,7 @@ public class SwingGameController implements IUIGameController, ILogBookListener 
      * @param cardRect : screen position & size of selected card on battlefield.
      * @param popupAboveBelowOnly : if true then the popup will restrict its height to always fit above/below the selected card.
      */
-    public void viewCardPopup(
-            final MagicObject cardObject,
-            final int index,
-            final Rectangle cardRect,
-            final boolean popupAboveBelowOnly) {
+    public void viewCardPopup(final MagicObject cardObject, final int index, final Rectangle cardRect, final boolean popupAboveBelowOnly) {
 
         // mouse wheel rotation event can fire more than once
         // so ignore all but the first event.

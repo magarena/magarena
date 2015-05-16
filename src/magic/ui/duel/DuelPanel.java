@@ -59,10 +59,7 @@ public final class DuelPanel extends JPanel {
     private final AnimationCanvas animationCanvas;
     private final DuelDialogPanel dialogPanel;
 
-    public DuelPanel(
-            final MagicFrame frame,
-            final MagicGame game,
-            final ZoneBackgroundLabel backgroundLabel) {
+    public DuelPanel(final MagicFrame frame, final MagicGame game, final ZoneBackgroundLabel backgroundLabel) {
 
         this.frame = frame;
         this.backgroundLabel = backgroundLabel;

@@ -152,17 +152,17 @@ public class AvatarImagesScreen
         // paint the Icon to the BufferedImage.
         icon.paintIcon(null, g, 0,0);
         g.dispose();
-        rightActionButton =
-                new ActionBarButton(
-                        new ImageIcon(GraphicsUtilities.scale(bi, 46, 46)),
-                        "Select Avatar", "Click to select this avatar image.",
-                        new AbstractAction() {
-                            @Override
-                            public void actionPerformed(ActionEvent e) {
-                                notifyConsumer(iconLabel);
-                                ScreenController.closeActiveScreen(false);
-                            }
-                        });
+        rightActionButton = new ActionBarButton(
+            new ImageIcon(GraphicsUtilities.scale(bi, 46, 46)),
+            "Select Avatar", "Click to select this avatar image.",
+            new AbstractAction() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    notifyConsumer(iconLabel);
+                    ScreenController.closeActiveScreen(false);
+                }
+            }
+        );
 
         refreshActionBar();
         this.selectedImageLabel = iconLabel;
