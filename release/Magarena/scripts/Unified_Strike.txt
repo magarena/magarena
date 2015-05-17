@@ -4,6 +4,6 @@ value=2.500
 rarity=C
 type=Instant
 cost={W}
-effect=Exile target attacking creature if its power is less than or equal to the number of Soldiers on the battlefield.
-timing=removal
+timing=attack
+requires_groovy_code
 oracle=Exile target attacking creature if its power is less than or equal to the number of Soldiers on the battlefield.
