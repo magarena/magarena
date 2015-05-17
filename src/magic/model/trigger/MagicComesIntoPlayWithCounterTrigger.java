@@ -4,6 +4,8 @@ import magic.model.MagicCounterType;
 import magic.model.MagicGame;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
+import magic.model.MagicAmount;
+import magic.model.MagicAmountFactory;
 import magic.model.action.ChangeCountersAction;
 import magic.model.event.MagicEvent;
 
@@ -11,25 +13,30 @@ public class MagicComesIntoPlayWithCounterTrigger extends MagicWhenComesIntoPlay
 
     private final MagicCounterType counterType;
     private final int amount;
+    private final MagicAmount count;
 
-    public MagicComesIntoPlayWithCounterTrigger(final MagicCounterType counterType, final int amount) {
+    public MagicComesIntoPlayWithCounterTrigger(final MagicCounterType aCounterType, final int aAmount, final MagicAmount aCount) {
         super(MagicTrigger.REPLACEMENT);
-        this.counterType = counterType;
-        this.amount = amount;
+        counterType = aCounterType;
+        amount = aAmount;
+        count = aCount;
+    }
+    
+    public MagicComesIntoPlayWithCounterTrigger(final MagicCounterType aCounterType, final int aAmount) {
+        this(aCounterType, aAmount, MagicAmountFactory.One);
     }
     
     public MagicComesIntoPlayWithCounterTrigger() {
-        super(MagicTrigger.REPLACEMENT);
-        this.counterType= MagicCounterType.PlusOne;
-        this.amount=0;
+        this(MagicCounterType.PlusOne, 0, MagicAmountFactory.One);
     }
     
     @Override
     public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPayedCost payedCost) {
+        final int total = amount * count.getAmount(permanent);
         game.doAction(ChangeCountersAction.Enters(
             permanent,
             counterType,
-            amount
+            total
         ));
         return MagicEvent.NONE;
     }
