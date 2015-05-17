@@ -5,6 +5,7 @@ removal=2
 rarity=U
 type=Instant
 cost={R}{G}
+ability=Cast SN with AI only if an opponent controls a creature.
 timing=removal
 requires_groovy_code
 oracle=Simoon deals 1 damage to each creature target opponent controls.
