@@ -35,7 +35,7 @@ public enum MagicAmountParser {
             return MagicAmountFactory.Aura;
         }
     },
-    ItsPower("its power") {
+    ItsPower("(its|SN's) power") {
         public MagicAmount toAmount(final Matcher arg) {
             return MagicAmountFactory.SN_Power;
         }
