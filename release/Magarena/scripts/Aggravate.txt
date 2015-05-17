@@ -5,6 +5,7 @@ removal=2
 rarity=U
 type=Instant
 cost={3}{R}{R}
+ability=Cast SN with AI only if an opponent controls a creature.
 timing=removal
 requires_groovy_code
 oracle=Aggravate deals 1 damage to each creature target player controls. Each creature dealt damage this way attacks this turn if able.
