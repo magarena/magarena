@@ -21,7 +21,8 @@
                 player.controlsPermanent(GREEN_CREATURE) &&
                 player.controlsPermanent(RED_CREATURE) &&
                 player.controlsPermanent(WHITE_CREATURE)) {
-                    game.doAction(new LoseGameAction(player.getOpponent()));
+
+                game.doAction(new LoseGameAction(player.getOpponent()));
             }
         }
     }
