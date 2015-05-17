@@ -4,6 +4,6 @@ value=2.500
 rarity=R
 type=Sorcery
 cost={5}{R}{R}
-effect=Return target instant or sorcery card from your graveyard to your hand. SN deals damage equal to that card's converted mana cost to each creature your opponents control. Exile SN.
 timing=main
+requires_groovy_code
 oracle=Return target instant or sorcery card from your graveyard to your hand. Volcanic Vision deals damage equal to that card's converted mana cost to each creature your opponents control. Exile Volcanic Vision.
