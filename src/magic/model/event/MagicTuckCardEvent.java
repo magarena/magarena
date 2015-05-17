@@ -21,7 +21,7 @@ public class MagicTuckCardEvent extends MagicEvent {
         );
     }
     
-    public MagicTuckCardEvent(final MagicSource source, final MagicPlayer player, final Boolean log) {
+    public MagicTuckCardEvent(final MagicSource source, final MagicPlayer player, final boolean log) {
         super(
             source,
             player,
