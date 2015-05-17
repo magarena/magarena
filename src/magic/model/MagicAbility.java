@@ -524,22 +524,18 @@ public enum MagicAbility {
             card.add(MagicTappedIntoPlayTrigger.create());
         }
     },
-    EntersWithCounterMultiKick("SN enters the battlefield with a " + ARG.WORDRUN + " counter on it for each time it was kicked\\.", 0) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            final String name = ARG.wordrun(arg);
-            final MagicCounterType counterType = MagicCounterType.getCounterRaw(name);
-            card.add(MagicComesIntoPlayWithCounterTrigger.MultiKicker(counterType));
-        }
-    },
     EntersWithCounter("SN enters the battlefield with " + ARG.WORD1 + " " + ARG.WORD2 + " counter(s)? on it( for each " + ARG.WORDRUN + ")?\\.", 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final String amount = ARG.word1(arg);
             final MagicCounterType counterType = MagicCounterType.getCounterRaw(ARG.word2(arg));
-            final MagicAmount count = MagicAmountParser.build(ARG.wordrun(arg));
-            if (amount.equalsIgnoreCase("X")) {
+            final String each = ARG.wordrun(arg);
+            if ("a".equalsIgnoreCase(amount) && "time it was kicked".equalsIgnoreCase(each)) {
+                card.add(MagicComesIntoPlayWithCounterTrigger.MultiKicker(counterType));
+            } else if (amount.equalsIgnoreCase("X")) {
                 card.add(MagicComesIntoPlayWithCounterTrigger.XCounters(counterType));
             } else {
                 final int n = EnglishToInt.convert(amount);
+                final MagicAmount count = MagicAmountParser.build(each);
                 card.add(new MagicComesIntoPlayWithCounterTrigger(counterType,n,count));
             }
         }
