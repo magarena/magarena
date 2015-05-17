@@ -1,5 +1,5 @@
 name=Goblin Raider
-image=http://magiccards.info/scans/en/9e/8.jpg
+image=http://magiccards.info/scans/en/9eb/8.jpg
 value=2.071
 ability=SN can't block.
 rarity=C

@@ -1,5 +1,5 @@
 name=Eager Cadet
-image=http://magiccards.info/scans/en/7e/14.jpg
+image=http://magiccards.info/scans/en/9eb/1.jpg
 value=1.724
 rarity=C
 type=Creature
