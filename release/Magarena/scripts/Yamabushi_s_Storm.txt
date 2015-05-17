@@ -4,6 +4,7 @@ value=2.639
 rarity=C
 type=Sorcery
 cost={1}{R}
+ability=Cast SN with AI only if an opponent controls a creature.
 timing=main
 requires_groovy_code
 oracle=Yamabushi's Storm deals 1 damage to each creature. If a creature dealt damage this way would die this turn, exile it instead.
