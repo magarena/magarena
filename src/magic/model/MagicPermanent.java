@@ -788,19 +788,18 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
             }
 
             // Soulbond
-            if (pairedCreature.isValid() &&
-                !pairedCreature.isCreature()) {
-                game.doAction(new SoulbondAction(this,pairedCreature,false));
+            if (pairedCreature.isValid() && pairedCreature.isCreature() == false) {
+                game.addDelayedAction(new SoulbondAction(this,pairedCreature,false));
             }
         }
 
         if (isAura()) {
             //not targeting since Aura is already attached
             final MagicTargetChoice tchoice = new MagicTargetChoice(getAuraTargetChoice(), false);
-            if (isCreature() ||
-                !enchantedPermanent.isValid() ||
-                !game.isLegalTarget(getController(),this,tchoice,enchantedPermanent) ||
-                enchantedPermanent.hasProtectionFrom(this)) {
+            if (isCreature() 
+                || enchantedPermanent.isValid() == false 
+                || game.isLegalTarget(getController(),this,tchoice,enchantedPermanent) == false 
+                || enchantedPermanent.hasProtectionFrom(this)) {
                 // 702.102e If an Aura with bestow is attached to an illegal object or player, it becomes unattached. 
                 // This is an exception to rule 704.5n.
                 if (hasAbility(MagicAbility.Bestow)) {
@@ -815,7 +814,9 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
         }
 
         if (isEquipment() && equippedCreature.isValid()) {
-            if (isCreature() || !equippedCreature.isCreature() || equippedCreature.hasProtectionFrom(this)) {
+            if (isCreature() 
+                || equippedCreature.isCreature() == false 
+                || equippedCreature.hasProtectionFrom(this)) {
                 game.addDelayedAction(new AttachAction(this,MagicPermanent.NONE));
             }
         }
