@@ -3,8 +3,8 @@ def targetChoice = MagicTargetChoice.Negative("target attacking or blocking crea
 
 [
     new MagicPermanentActivation(
-        new MagicActivationHints(MagicTiming.Token),
-        "Tokens"
+        new MagicActivationHints(MagicTiming.Removal),
+        "Damage"
     ) {
         @Override
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
