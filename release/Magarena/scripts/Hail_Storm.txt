@@ -4,6 +4,7 @@ value=3.221
 rarity=U
 type=Instant
 cost={1}{G}{G}
+ability=Cast SN with AI only if an opponent controls an attacking creature.
 timing=block
 requires_groovy_code
 oracle=Hail Storm deals 2 damage to each attacking creature and 1 damage to you and each creature you control.
