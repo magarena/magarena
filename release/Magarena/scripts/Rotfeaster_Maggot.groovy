@@ -5,7 +5,7 @@
             return new MagicEvent(
                 permanent,
                 TARGET_CREATURE_CARD_FROM_ALL_GRAVEYARDS,
-                MagicToughnessTargetPicker.create(),
+                MagicGraveyardTargetPicker.PutOntoBattlefield,
                 this,
                 "Exile target creature card from a graveyard.\$ PN gains life equal to that card's toughness."
             );
