@@ -4,6 +4,7 @@ value=3.613
 rarity=U
 type=Sorcery
 cost={2}{G}
+ability=Cast SN with AI only if an opponent controls a creature with flying.
 effect=SN deals 4 damage to each creature with flying.
 timing=main
 oracle=Needle Storm deals 4 damage to each creature with flying.

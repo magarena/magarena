@@ -4,6 +4,7 @@ value=3.715
 rarity=U
 type=Sorcery
 cost={1}{R}
+ability=Cast SN with AI only if an opponent controls a nonartifact creature.
 effect=SN deals 2 damage to each nonartifact creature.
 timing=main
 oracle=Whipflare deals 2 damage to each nonartifact creature.
