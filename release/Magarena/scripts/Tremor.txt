@@ -4,6 +4,7 @@ value=2.769
 rarity=C
 type=Sorcery
 cost={R}
+ability=Cast SN with AI only if an opponent controls a creature without flying.
 effect=SN deals 1 damage to each creature without flying.
 timing=main
 oracle=Tremor deals 1 damage to each creature without flying.
