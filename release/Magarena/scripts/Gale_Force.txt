@@ -4,6 +4,7 @@ value=2.370
 rarity=U
 type=Sorcery
 cost={4}{G}
+ability=Cast SN with AI only if an opponent controls a creature with flying.
 effect=SN deals 5 damage to each creature with flying.
 timing=main
 oracle=Gale Force deals 5 damage to each creature with flying.
