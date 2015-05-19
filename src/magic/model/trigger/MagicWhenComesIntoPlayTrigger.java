@@ -86,8 +86,8 @@ public abstract class MagicWhenComesIntoPlayTrigger extends MagicTrigger<MagicPa
             public void executeEvent(final MagicGame game, final MagicEvent event) {
                 event.processTargetPermanent(game,new MagicPermanentAction() {
                     public void doAction(final MagicPermanent permanent) {
-                        game.doAction(new SacrificeAction(permanent));
                         game.doAction(ChangeStateAction.Set(event.getPermanent(), MagicPermanentState.Exploit));
+                        game.doAction(new SacrificeAction(permanent));
                     }
                 });
             }
