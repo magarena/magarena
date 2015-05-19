@@ -5,6 +5,7 @@ removal=2
 rarity=R
 type=Sorcery
 cost={3}{U}
+ability=Cast SN with AI only if an opponent controls a Forest.
 effect=Destroy all Forests.
 timing=removal
 oracle=Destroy all Forests.
