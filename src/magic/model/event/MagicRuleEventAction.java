@@ -452,8 +452,11 @@ public enum MagicRuleEventAction {
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
                     event.processTarget(game,new MagicTargetAction() {
                         public void doAction(final MagicTarget target) {
-                            final MagicSource source = ARG.itSource(event, matcher);
-                            game.doAction(new DealDamageAction(source, target, count.getAmount(source)));
+                            game.doAction(new DealDamageAction(
+                                ARG.itSource(event, matcher),
+                                target, 
+                                count.getAmount(event)
+                            ));
                         }
                     });
                 }
@@ -670,7 +673,7 @@ public enum MagicRuleEventAction {
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    final int multiplier = count.getAmount(event.getSource());
+                    final int multiplier = count.getAmount(event);
                     game.doAction(new DrawAction(ARG.youPlayer(event, matcher), amount * multiplier));
                 }
             };
@@ -856,7 +859,7 @@ public enum MagicRuleEventAction {
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    final int multipler = count.getAmount(event.getSource());
+                    final int multipler = count.getAmount(event);
                     final int total = amount * multipler;
                     event.processTargetPlayer(game,new MagicPlayerAction() {
                         public void doAction(final MagicPlayer player) {
@@ -921,7 +924,7 @@ public enum MagicRuleEventAction {
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    final int multiplier = count.getAmount(event.getSource());
+                    final int multiplier = count.getAmount(event);
                     game.doAction(new ChangeLifeAction(event.getPlayer(), amount * multiplier));
                 }
             };
@@ -1036,7 +1039,7 @@ public enum MagicRuleEventAction {
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    final int amt = count.getAmount(event.getSource());
+                    final int amt = count.getAmount(event);
                     game.doAction(new ChangeTurnPTAction(
                         ARG.itPermanent(event, matcher),
                         power * amt,
@@ -2259,7 +2262,7 @@ public enum MagicRuleEventAction {
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    final int multiplier = count.getAmount(event.getSource());
+                    final int multiplier = count.getAmount(event);
                     final int total = amount * multiplier;
                     for (int i = 0; i < total; i++) {
                         game.doAction(new PlayTokenAction(

@@ -12,12 +12,7 @@ public enum MagicAmountParser {
             
     YourLife("your life total") {
         public MagicAmount toAmount(final Matcher arg) {
-            return new MagicAmount() {
-                @Override
-                public int getAmount(final MagicSource source) {
-                    return source.getController().getLife();
-                }
-            };
+            return MagicAmountFactory.LifeTotal;
         }
     },
     Domain("basic land type(s)? among lands you control") {

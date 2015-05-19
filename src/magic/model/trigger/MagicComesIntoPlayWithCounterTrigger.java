@@ -32,7 +32,7 @@ public class MagicComesIntoPlayWithCounterTrigger extends MagicWhenComesIntoPlay
     
     @Override
     public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPayedCost payedCost) {
-        final int total = amount * count.getAmount(permanent);
+        final int total = amount * count.getAmount(permanent, permanent.getController());
         game.doAction(ChangeCountersAction.Enters(
             permanent,
             counterType,
