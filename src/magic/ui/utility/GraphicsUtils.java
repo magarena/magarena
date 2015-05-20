@@ -33,7 +33,6 @@ import magic.data.GeneralConfig;
 import magic.ui.CardImagesProvider;
 import magic.ui.MagicStyle;
 import magic.ui.ScreenController;
-import magic.ui.WhiteColorSwapImageFilter;
 import magic.ui.theme.Theme;
 import magic.utility.MagicFileSystem.DataPath;
 import magic.utility.MagicFileSystem;
