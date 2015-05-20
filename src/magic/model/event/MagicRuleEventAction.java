@@ -8,7 +8,6 @@ import java.util.regex.Pattern;
 import magic.data.EnglishToInt;
 import magic.data.CardDefinitions;
 import magic.model.ARG;
-import magic.model.MagicRandom;
 import magic.model.MagicAbility;
 import magic.model.MagicAbilityList;
 import magic.model.MagicCard;
@@ -1524,10 +1523,10 @@ public enum MagicRuleEventAction {
         public String getName(final Matcher matcher) {
             final int amount = EnglishToInt.convert(matcher.group("amount"));
             if (amount>1) {
-                final String name = "+Counters";
+                final String name = "-Counters";
                 return name;
             } else {
-                final String name = "+Counter";
+                final String name = "-Counter";
                 return name;
             }
         }
