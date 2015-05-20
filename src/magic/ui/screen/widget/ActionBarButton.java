@@ -46,11 +46,11 @@ public class ActionBarButton extends MenuButton {
         super.setIcon(defaultIcon);
         setRolloverIcon(GraphicsUtils.getRecoloredIcon(
                 (ImageIcon) defaultIcon,
-                MagicStyle.HIGHLIGHT_COLOR)
+                MagicStyle.getRolloverColor())
         );
         setPressedIcon(GraphicsUtils.getRecoloredIcon(
                 (ImageIcon) defaultIcon,
-                MagicStyle.PRESSED_COLOR)
+                MagicStyle.getPressedColor())
         );
     }
 

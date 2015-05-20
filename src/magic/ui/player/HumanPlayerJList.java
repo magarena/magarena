@@ -45,13 +45,13 @@ public class HumanPlayerJList
         ) {
 
             this.profile = profile;
-            foreColor = isSelected ? MagicStyle.HIGHLIGHT_COLOR: Color.WHITE;
+            foreColor = isSelected ? MagicStyle.getRolloverColor(): Color.WHITE;
 
             final JPanel panel = new JPanel(new MigLayout("insets 0 0 0 6, gap 0"));
             panel.setPreferredSize(new Dimension(0, 70));
             panel.setOpaque(false);
             panel.setForeground(foreColor);
-            panel.setBorder(isSelected ? BorderFactory.createLineBorder(MagicStyle.HIGHLIGHT_COLOR, 1) : null);
+            panel.setBorder(isSelected ? BorderFactory.createLineBorder(MagicStyle.getRolloverColor(), 1) : null);
 
             panel.add(getAvatarPortrait(), "w 70!, h 70!");
             panel.add(getNamePanel(), "w 100%");

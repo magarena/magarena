@@ -242,7 +242,7 @@ public class CardScriptScreen
                 @Override
                 public void mouseEntered(MouseEvent e) {
                     headerLabel.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
-                    headerLabel.setForeground(MagicStyle.HIGHLIGHT_COLOR);
+                    headerLabel.setForeground(MagicStyle.getRolloverColor());
                 }
                 @Override
                 public void mouseExited(MouseEvent e) {

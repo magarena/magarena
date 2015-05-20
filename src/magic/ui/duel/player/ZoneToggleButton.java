@@ -100,14 +100,14 @@ public class ZoneToggleButton extends JToggleButton {
     private void drawSelectedFill(Graphics g) {
         final Graphics2D g2d = (Graphics2D) g;
         g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
-        g2d.setColor(MagicStyle.getTranslucentColor(MagicStyle.HIGHLIGHT_COLOR, 110));
+        g2d.setColor(MagicStyle.getTranslucentColor(MagicStyle.getRolloverColor(), 110));
         g2d.fillRoundRect(0, 0, getWidth(), getHeight()-1, 18, 18);
     }
 
     private void drawSelectedBorder(Graphics g) {
         final Graphics2D g2d = (Graphics2D) g;
         g2d.setStroke(new BasicStroke(4.0f));
-        g2d.setColor(MagicStyle.HIGHLIGHT_COLOR);
+        g2d.setColor(MagicStyle.getRolloverColor());
         g2d.drawRect(0, 0, getWidth(), getHeight());
     }
 

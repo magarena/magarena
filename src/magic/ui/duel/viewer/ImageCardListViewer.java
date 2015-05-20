@@ -45,7 +45,7 @@ public class ImageCardListViewer extends JPanel implements ChoiceViewer {
     private static final int CARD_HEIGHT=140;
     private static final int SPACING=10;
     private static final BasicStroke MOUSE_OVER_STROKE = new BasicStroke(2);
-    private static final Color MOUSE_OVER_COLOR = MagicStyle.HIGHLIGHT_COLOR;
+    private static final Color MOUSE_OVER_COLOR = MagicStyle.getRolloverColor();
     private static final Color MOUSE_OVER_TCOLOR = MagicStyle.getTranslucentColor(MOUSE_OVER_COLOR, 20);
 
     private final SwingGameController controller;

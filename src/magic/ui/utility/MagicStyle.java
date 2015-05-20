@@ -7,6 +7,7 @@ import javax.swing.JComponent;
 import java.awt.Color;
 import java.awt.Component;
 import java.awt.Cursor;
+import magic.data.GeneralConfig;
 import magic.model.MagicCardDefinition;
 import magic.ui.screen.interfaces.IThemeStyle;
 import magic.ui.theme.Theme;
@@ -19,9 +20,6 @@ import magic.ui.theme.ThemeFactory;
 public final class MagicStyle {
 
     private MagicStyle() {}
-
-    public static Color HIGHLIGHT_COLOR = Color.YELLOW;
-    public static Color PRESSED_COLOR = MagicStyle.HIGHLIGHT_COLOR.darker();
 
     private static Color BG1;
     private static Color BG2;
@@ -40,7 +38,7 @@ public final class MagicStyle {
         }
         if (value == true) {
             component.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
-            component.setBorder(BorderFactory.createLineBorder(HIGHLIGHT_COLOR, 2));
+            component.setBorder(BorderFactory.createLineBorder(getRolloverColor(), 2));
             component.setBackground(BG1);
         } else {
             component.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
@@ -85,6 +83,14 @@ public final class MagicStyle {
             case 4: return theme.getColor(Theme.COLOR_RARE_FOREGROUND);
             default: return theme.getColor(Theme.COLOR_COMMON_FOREGROUND);
         }
+    }
+
+    public static Color getRolloverColor() {
+        return GeneralConfig.getInstance().getRolloverColor();
+    }
+    
+    public static Color getPressedColor() {
+        return getRolloverColor().darker();
     }
 
 }

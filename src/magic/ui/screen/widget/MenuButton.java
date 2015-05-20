@@ -70,7 +70,7 @@ public class MenuButton extends JButton {
         addMouseListener(new MouseAdapter() {
             @Override
             public void mouseEntered(MouseEvent e) {
-                setForeground(MagicStyle.HIGHLIGHT_COLOR);
+                setForeground(MagicStyle.getRolloverColor());
             }
             @Override
             public void mouseExited(MouseEvent e) {
@@ -78,7 +78,7 @@ public class MenuButton extends JButton {
             }
             @Override
             public void mousePressed(MouseEvent e) {
-                setForeground(MagicStyle.HIGHLIGHT_COLOR.darker());
+                setForeground(MagicStyle.getPressedColor());
                 setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
 
             }
@@ -121,11 +121,11 @@ public class MenuButton extends JButton {
         super.setIcon(defaultIcon);
         setRolloverIcon(GraphicsUtils.getRecoloredIcon(
                 (ImageIcon) defaultIcon,
-                MagicStyle.HIGHLIGHT_COLOR)
+                MagicStyle.getRolloverColor())
         );
         setPressedIcon(GraphicsUtils.getRecoloredIcon(
                 (ImageIcon) defaultIcon,
-                MagicStyle.PRESSED_COLOR)
+                MagicStyle.getPressedColor())
         );
     }
 
