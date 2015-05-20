@@ -1,14 +1,12 @@
 package magic.ui.screen.widget;
 
 import java.awt.Color;
-import java.awt.Cursor;
 import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import javax.swing.AbstractAction;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
-import javax.swing.SwingConstants;
 import magic.data.MagicIcon;
 import magic.ui.IconImages;
 import magic.ui.screen.AbstractScreen;
@@ -36,7 +34,7 @@ public class StatusBar extends TexturedPanel implements IThemeStyle {
 
     private void layoutMagStatusBar() {
         removeAll();
-        setLayout(new MigLayout("insets 0 0 0 16, gap 12, aligny center", "[33%][][33%]"));
+        setLayout(new MigLayout("insets 0 0 0 0, gap 12, aligny center", "[33%][][33%]"));
         if (magScreen != null) {
             final IStatusBar screen = (IStatusBar)magScreen;
             add(new CaptionPanel(screen.getScreenCaption()));
@@ -56,68 +54,62 @@ public class StatusBar extends TexturedPanel implements IThemeStyle {
     private class OptionsPanel extends JPanel {
 
         private final MigLayout migLayout = new MigLayout();
-        private final JButton wikiButton = new JButton();
-        private final JButton optionsButton = new JButton();
+        private JButton wikiButton;
+        private JButton optionsButton;
 
         public OptionsPanel() {
+            setupButtons();
             setLookAndFeel();
-            setButtonActions();
             refreshLayout();
         }
 
-        private void setButtonActions() {
+        private void setupButtons() {
             // wiki button
             if (magScreen.hasWikiPage()) {
-                wikiButton.addActionListener(new AbstractAction() {
-                    @Override
-                    public void actionPerformed(final ActionEvent e) {
-                        magScreen.showWikiHelpPage();
-                    }
-                });
+                wikiButton = new ActionBarButton(
+                        IconImages.getIcon(MagicIcon.HELP_ICON),
+                        "Wiki Help [F1]",
+                        "Opens the wiki help page for this screen in your browser.",
+                        new AbstractAction() {
+                            @Override
+                            public void actionPerformed(final ActionEvent e) {
+                                magScreen.showWikiHelpPage();
+                            }
+                        }
+                );
             }
             // options button
             if (magScreen.hasOptionsMenu()) {
-                optionsButton.addActionListener(new AbstractAction() {
-                    @Override
-                    public void actionPerformed(ActionEvent e) {
-                        ((IOptionsMenu)magScreen).showOptionsMenuOverlay();
-                    }
-                });
+                optionsButton = new ActionBarButton(
+                        IconImages.getIcon(MagicIcon.OPTIONS_ICON),
+                        "Options Menu [ESC]",
+                        "Displays menu of common and screen sepcific options.",
+                        new AbstractAction() {
+                            @Override
+                            public void actionPerformed(final ActionEvent e) {
+                                ((IOptionsMenu)magScreen).showOptionsMenuOverlay();
+                            }
+                        }
+                );
             }
         }
 
         private void refreshLayout() {
             removeAll();
-            migLayout.setLayoutConstraints("insets 0, gapx 20, alignx right");
-            if (magScreen.hasOptionsMenu()) { add(optionsButton); }
-            if (magScreen.hasWikiPage())  { add(wikiButton); }
+            migLayout.setLayoutConstraints("insets 0, gapx 0, alignx right");
+            if (magScreen.hasOptionsMenu()) {
+                add(optionsButton);
+            }
+            if (magScreen.hasWikiPage()) {
+                add(wikiButton);
+            }
         }
 
         private void setLookAndFeel() {
             setOpaque(false);
             setLayout(migLayout);
-            // wiki button
-            wikiButton.setIcon(IconImages.getIcon(MagicIcon.HELP_ICON));
-            wikiButton.setHorizontalAlignment(SwingConstants.RIGHT);
-            wikiButton.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
-            wikiButton.setToolTipText("<html><b>Wiki Help [F1]</b><br>Opens the wiki help page for this screen in your browser.");
-            setButtonTransparent(wikiButton);
-            // options button
-            optionsButton.setIcon(IconImages.getIcon(MagicIcon.OPTIONS_ICON));
-            optionsButton.setHorizontalAlignment(SwingConstants.RIGHT);
-            optionsButton.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
-            optionsButton.setToolTipText("<html><b>Options Menu [ESC]</b><br>Displays menu of common and screen sepcific options.");
-            setButtonTransparent(optionsButton);
-
         }
 
-        private void setButtonTransparent(final JButton btn) {
-            btn.setOpaque(false);
-            btn.setContentAreaFilled(false);
-            btn.setBorderPainted(false);
-            btn.setBorder(null);
-        }
-        
     }
 
 }
