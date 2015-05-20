@@ -166,7 +166,7 @@ public class DuelGameScreen extends AbstractScreen implements IOptionsMenu {
                 }
             });
             menu.addBlankItem();
-            menu.addMenuItem("Close menu", new AbstractAction() {
+            menu.addMenuItem("Resume game", new AbstractAction() {
                 @Override
                 public void actionPerformed(final ActionEvent e) {
                     hideOverlay();
