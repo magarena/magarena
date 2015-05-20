@@ -10,7 +10,7 @@ import java.awt.image.BufferedImage;
 import javax.swing.ImageIcon;
 import magic.data.GeneralConfig;
 import magic.model.MagicGame;
-import magic.ui.GraphicsUtilities;
+import magic.ui.utility.GraphicsUtils;
 import magic.ui.IconImages;
 import magic.ui.MagicStyle;
 import magic.ui.duel.CounterOverlay;
@@ -39,14 +39,14 @@ public class PlayerImagePanel extends AnimationPanel {
         this.playerInfo = player;
         this.game = game;
         activeImage = getPlayerAvatarImage();
-        inactiveImage = GraphicsUtilities.getGreyScaleImage(activeImage);
+        inactiveImage = GraphicsUtils.getGreyScaleImage(activeImage);
         poisonCounter = new CounterOverlay(20, 20, Color.GREEN);
         damageCounter = new CounterOverlay(20, 20, Color.CYAN);
     }
 
     private BufferedImage getPlayerAvatarImage() {
         final ImageIcon icon = IconImages.getIconSize3(this.playerInfo.player.getPlayerDefinition());
-        return GraphicsUtilities.scale(GraphicsUtilities.getConvertedIcon(icon), 74, 74);
+        return GraphicsUtils.scale(GraphicsUtils.getConvertedIcon(icon), 74, 74);
     }
 
     @Override
@@ -110,7 +110,7 @@ public class PlayerImagePanel extends AnimationPanel {
         final String text = Integer.toString(playerInfo.life);
         final int textX = x + 4;
         final int textY = y + image.getHeight(null) - 6;
-        GraphicsUtilities.drawStringWithOutline(g2d, text, textX, textY);
+        GraphicsUtils.drawStringWithOutline(g2d, text, textX, textY);
     }    
 
     public void updateDisplay(final PlayerViewerInfo playerInfo) {

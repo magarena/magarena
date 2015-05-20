@@ -26,7 +26,7 @@ import magic.model.MagicDeck;
 import magic.model.MagicDeckConstructionRule;
 import magic.model.MagicRandom;
 import magic.ui.CardFilterPanel;
-import magic.ui.GraphicsUtilities;
+import magic.ui.utility.GraphicsUtils;
 import magic.ui.ICardFilterPanelListener;
 import magic.ui.ScreenController;
 import magic.ui.cardtable.CardTable;
@@ -96,7 +96,7 @@ public class ExplorerPanel extends JPanel implements ICardSelectionListener, ICa
         rhs.setOpaque(false);
         rhs.setBorder(BorderFactory.createMatteBorder(0, 1, 0, 0, Color.BLACK));
 
-        final Dimension imageSize = GraphicsUtilities.getMaxCardImageSize();
+        final Dimension imageSize = GraphicsUtils.getMaxCardImageSize();
         migLayout.setLayoutConstraints("insets 0, gap 0");
         if (CONFIG.isHighQuality()) {
             migLayout.setColumnConstraints("[][grow]");
@@ -476,8 +476,8 @@ public class ExplorerPanel extends JPanel implements ICardSelectionListener, ICa
             setLayout(migLayout);
             setBackground(FontsAndBorders.IMENUOVERLAY_BACKGROUND_COLOR);
             // card image viewer
-            cardViewer.setPreferredSize(GraphicsUtilities.getMaxCardImageSize());
-            cardViewer.setMaximumSize(GraphicsUtilities.getMaxCardImageSize());
+            cardViewer.setPreferredSize(GraphicsUtils.getMaxCardImageSize());
+            cardViewer.setMaximumSize(GraphicsUtils.getMaxCardImageSize());
             // card image scroll pane
             cardScrollPane.setBorder(BorderFactory.createMatteBorder(0, 0, 1, 0, Color.BLACK));
             cardScrollPane.setOpaque(false);

@@ -9,7 +9,7 @@ import java.awt.RenderingHints;
 import java.awt.Transparency;
 import java.awt.geom.Ellipse2D;
 import java.awt.image.BufferedImage;
-import magic.ui.GraphicsUtilities;
+import magic.ui.utility.GraphicsUtils;
 
 public class CounterOverlay {
 
@@ -21,7 +21,7 @@ public class CounterOverlay {
 
     public CounterOverlay(final int width, final int height, final Color color) {
         this.counterColor = color;
-        image = GraphicsUtilities.getCompatibleBufferedImage(width, height, Transparency.TRANSLUCENT);
+        image = GraphicsUtils.getCompatibleBufferedImage(width, height, Transparency.TRANSLUCENT);
         drawCounter();
     }
 
@@ -30,7 +30,7 @@ public class CounterOverlay {
     }
 
     private void drawCounter() {
-        GraphicsUtilities.clearImage(image);
+        GraphicsUtils.clearImage(image);
         final Graphics2D g2d = image.createGraphics();
 //        drawBorder(g2d);
         g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
@@ -81,7 +81,7 @@ public class CounterOverlay {
         final int textWidth = metrics.stringWidth(text);
         final int textX = image.getWidth(null) / 2 - textWidth / 2;
         final int textY = image.getHeight(null) / 2 + 4;
-        GraphicsUtilities.drawStringWithOutline(g2d, text, textX, textY);
+        GraphicsUtils.drawStringWithOutline(g2d, text, textX, textY);
     }
 
     public void setCounterValue(final int value) {

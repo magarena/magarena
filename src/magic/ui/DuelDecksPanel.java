@@ -1,5 +1,6 @@
 package magic.ui;
 
+import magic.ui.utility.GraphicsUtils;
 import magic.ui.cardtable.CardTable;
 import magic.data.DuelConfig;
 import magic.model.MagicCardDefinition;
@@ -71,8 +72,8 @@ public class DuelDecksPanel extends TexturedPanel {
 
         // card image
         cardViewer=new CardViewer();
-        cardViewer.setPreferredSize(GraphicsUtilities.getMaxCardImageSize());
-        cardViewer.setMaximumSize(GraphicsUtilities.getMaxCardImageSize());
+        cardViewer.setPreferredSize(GraphicsUtils.getMaxCardImageSize());
+        cardViewer.setMaximumSize(GraphicsUtils.getMaxCardImageSize());
         cardViewer.setCard(MagicCardDefinition.UNKNOWN);
         cardViewer.setAlignmentX(Component.LEFT_ALIGNMENT);
 
@@ -197,7 +198,7 @@ public class DuelDecksPanel extends TexturedPanel {
         tabbedPane.setPreferredSize(new Dimension(800, 0));
 
         // layout screen components.
-        final Dimension imageSize = GraphicsUtilities.getMaxCardImageSize();
+        final Dimension imageSize = GraphicsUtils.getMaxCardImageSize();
         migLayout.setLayoutConstraints("insets 0, gap 0");
         if (CONFIG.isHighQuality()) {
             migLayout.setColumnConstraints("[][grow]");

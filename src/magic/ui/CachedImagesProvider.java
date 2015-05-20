@@ -1,5 +1,6 @@
 package magic.ui;
 
+import magic.ui.utility.GraphicsUtils;
 import java.awt.Dimension;
 import java.awt.image.BufferedImage;
 import java.io.File;
@@ -56,8 +57,8 @@ public class CachedImagesProvider implements CardImagesProvider {
 
     private BufferedImage getScaledImage(final String cacheKey, final BufferedImage sourceImage) {
         if (!scaledImages.containsKey(cacheKey)) {
-            final Dimension imageSize = GraphicsUtilities.getMaxCardImageSize();
-            final BufferedImage image = GraphicsUtilities.scale(sourceImage, imageSize.width, imageSize.height);
+            final Dimension imageSize = GraphicsUtils.getMaxCardImageSize();
+            final BufferedImage image = GraphicsUtils.scale(sourceImage, imageSize.width, imageSize.height);
             scaledImages.put(cacheKey, image);
             return image;
         } else {

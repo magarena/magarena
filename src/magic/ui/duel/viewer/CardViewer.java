@@ -17,7 +17,7 @@ import magic.ui.CardImagesProvider;
 import magic.data.GeneralConfig;
 import magic.ui.IconImages;
 import magic.model.MagicCardDefinition;
-import magic.ui.GraphicsUtilities;
+import magic.ui.utility.GraphicsUtils;
 import magic.ui.cardtable.ICardSelectionListener;
 import magic.ui.widget.TransparentImagePanel;
 
@@ -140,7 +140,7 @@ public class CardViewer extends JPanel implements ICardSelectionListener {
             } else {
                 cardImage = IMAGE_HELPER.getImage(cardDefinition,index,false);
                 if (isGameScreenPopup) {
-                    setSize(GraphicsUtilities.getMaxCardImageSize());
+                    setSize(GraphicsUtils.getMaxCardImageSize());
                     revalidate();
                 }
             }

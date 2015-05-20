@@ -1,5 +1,6 @@
 package magic.ui;
 
+import magic.ui.utility.GraphicsUtils;
 import magic.data.GeneralConfig;
 import magic.ui.theme.Theme;
 
@@ -52,7 +53,7 @@ public class BackgroundPanel extends JPanel {
 
     private BufferedImage getBackgroundImage() {
         if (GeneralConfig.getInstance().isCustomBackground()) {
-            return GraphicsUtilities.getCustomBackgroundImage();
+            return GraphicsUtils.getCustomBackgroundImage();
         } else {
             return activeTheme.getTexture(Theme.TEXTURE_BACKGROUND);
         }

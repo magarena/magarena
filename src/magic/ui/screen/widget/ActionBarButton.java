@@ -6,7 +6,7 @@ import javax.swing.ImageIcon;
 import java.awt.Point;
 import java.awt.event.MouseEvent;
 import javax.swing.Icon;
-import magic.ui.GraphicsUtilities;
+import magic.ui.utility.GraphicsUtils;
 import magic.ui.MagicStyle;
 
 @SuppressWarnings("serial")
@@ -44,11 +44,11 @@ public class ActionBarButton extends MenuButton {
     @Override
     public void setIcon(Icon defaultIcon) {
         super.setIcon(defaultIcon);
-        setRolloverIcon(GraphicsUtilities.getRecoloredIcon(
+        setRolloverIcon(GraphicsUtils.getRecoloredIcon(
                 (ImageIcon) defaultIcon,
                 MagicStyle.HIGHLIGHT_COLOR)
         );
-        setPressedIcon(GraphicsUtilities.getRecoloredIcon(
+        setPressedIcon(GraphicsUtils.getRecoloredIcon(
                 (ImageIcon) defaultIcon,
                 MagicStyle.PRESSED_COLOR)
         );

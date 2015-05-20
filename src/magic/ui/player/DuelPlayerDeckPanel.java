@@ -11,7 +11,7 @@ import javax.swing.SwingConstants;
 import magic.data.DeckType;
 import magic.model.MagicColor;
 import magic.model.MagicDeckProfile;
-import magic.ui.GraphicsUtilities;
+import magic.ui.utility.GraphicsUtils;
 import magic.ui.dialog.DeckChooserDialog;
 import magic.ui.screen.interfaces.IThemeStyle;
 import magic.ui.theme.Theme;
@@ -117,9 +117,9 @@ public class DuelPlayerDeckPanel extends TexturedPanel implements IThemeStyle {
         return new MouseAdapter() {
             @Override
             public void mouseReleased(MouseEvent e) {
-                GraphicsUtilities.setBusyMouseCursor(true);
+                GraphicsUtils.setBusyMouseCursor(true);
                 setDeckProfile();
-                GraphicsUtilities.setBusyMouseCursor(false);
+                GraphicsUtils.setBusyMouseCursor(false);
             }
             @Override
             public void mouseEntered(MouseEvent e) {

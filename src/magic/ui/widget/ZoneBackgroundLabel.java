@@ -4,8 +4,8 @@ import magic.data.GeneralConfig;
 import magic.ui.duel.resolution.ResolutionProfileResult;
 import magic.ui.duel.resolution.ResolutionProfileType;
 import magic.ui.theme.Theme;
-import magic.ui.GraphicsUtilities;
 
+import magic.ui.utility.GraphicsUtils;
 import javax.swing.JLabel;
 
 import java.awt.Dimension;
@@ -28,7 +28,7 @@ public class ZoneBackgroundLabel extends JLabel {
     public void setGame(final boolean game) {
         this.game=game;
         if (GeneralConfig.getInstance().isCustomBackground()) {
-            customImage = GraphicsUtilities.getCustomBackgroundImage();
+            customImage = GraphicsUtils.getCustomBackgroundImage();
         }
     }
 

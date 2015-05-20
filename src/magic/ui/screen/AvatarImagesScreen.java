@@ -49,7 +49,7 @@ import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.screen.widget.MenuButton;
 import magic.ui.theme.PlayerAvatar;
 import magic.ui.theme.Theme;
-import magic.ui.GraphicsUtilities;
+import magic.ui.utility.GraphicsUtils;
 import magic.ui.ImageFileIO;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TexturedPanel;
@@ -108,7 +108,7 @@ public class AvatarImagesScreen
             final String filePath = imagePath.toAbsolutePath().toString();
             try (final InputStream ins = new FileInputStream(new File(filePath))) {
                 final BufferedImage image = ImageFileIO.toImg(ins, IconImages.MISSING);
-                final ImageIcon icon = new ImageIcon(GraphicsUtilities.scale(image, PlayerAvatar.LARGE_SIZE, PlayerAvatar.LARGE_SIZE));
+                final ImageIcon icon = new ImageIcon(GraphicsUtils.scale(image, PlayerAvatar.LARGE_SIZE, PlayerAvatar.LARGE_SIZE));
                 final JLabel iconLabel = new JLabel(icon);
                 imagePathMap.put(iconLabel, imagePath);
                 iconLabel.setBorder(FontsAndBorders.EMPTY_BORDER);
@@ -153,7 +153,7 @@ public class AvatarImagesScreen
         icon.paintIcon(null, g, 0,0);
         g.dispose();
         rightActionButton = new ActionBarButton(
-            new ImageIcon(GraphicsUtilities.scale(bi, 46, 46)),
+            new ImageIcon(GraphicsUtils.scale(bi, 46, 46)),
             "Select Avatar", "Click to select this avatar image.",
             new AbstractAction() {
                 @Override

@@ -14,7 +14,7 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
-import magic.ui.GraphicsUtilities;
+import magic.ui.utility.GraphicsUtils;
 import magic.ui.ScreenController;
 
 @SuppressWarnings("serial")
@@ -119,11 +119,11 @@ public class MenuButton extends JButton {
     @Override
     public void setIcon(final Icon defaultIcon) {
         super.setIcon(defaultIcon);
-        setRolloverIcon(GraphicsUtilities.getRecoloredIcon(
+        setRolloverIcon(GraphicsUtils.getRecoloredIcon(
                 (ImageIcon) defaultIcon,
                 MagicStyle.HIGHLIGHT_COLOR)
         );
-        setPressedIcon(GraphicsUtilities.getRecoloredIcon(
+        setPressedIcon(GraphicsUtils.getRecoloredIcon(
                 (ImageIcon) defaultIcon,
                 MagicStyle.PRESSED_COLOR)
         );

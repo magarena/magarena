@@ -1,5 +1,6 @@
 package magic.ui;
 
+import magic.ui.utility.GraphicsUtils;
 import java.awt.datatransfer.DataFlavor;
 import java.awt.datatransfer.Transferable;
 import java.awt.datatransfer.UnsupportedFlavorException;
@@ -95,7 +96,7 @@ public class ImageDropTargetListener implements DropTargetListener {
 
     private boolean isValidImageFile(final File imageFile) {
         return isValidMimeType(imageFile, "image")
-                && GraphicsUtilities.isValidImageFile(imageFile.toPath());
+                && GraphicsUtils.isValidImageFile(imageFile.toPath());
     }
 
     private boolean isValidMimeType(final File file, final String mimeType) {

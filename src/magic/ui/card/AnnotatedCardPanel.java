@@ -38,7 +38,7 @@ import magic.model.MagicObject;
 import magic.model.MagicPermanent;
 import magic.ui.SwingGameController;
 import magic.ui.theme.AbilityIcon;
-import magic.ui.GraphicsUtilities;
+import magic.ui.utility.GraphicsUtils;
 import magic.utility.MagicSystem;
 import org.pushingpixels.trident.Timeline;
 import org.pushingpixels.trident.ease.Spline;
@@ -185,7 +185,7 @@ public class AnnotatedCardPanel extends JPanel {
 
     private void setPopupImage() {
         // create a blank canvas of the appropriate size.
-        popupImage = GraphicsUtilities.getCompatibleBufferedImage(getWidth(), getHeight(), Transparency.TRANSLUCENT);
+        popupImage = GraphicsUtils.getCompatibleBufferedImage(getWidth(), getHeight(), Transparency.TRANSLUCENT);
         final Graphics g = popupImage.getGraphics();
         final Graphics2D g2d = (Graphics2D)g;
         // don't overwrite original image with modified PT overlay, use a copy.
@@ -193,7 +193,7 @@ public class AnnotatedCardPanel extends JPanel {
         // draw modified PT on original image so it is scaled properly.
         drawPowerToughnessOverlay(cardCanvas);
         // scale card image if required.
-        final BufferedImage scaledImage = GraphicsUtilities.scale(cardCanvas, imageOnlyPopupSize.width, imageOnlyPopupSize.height);
+        final BufferedImage scaledImage = GraphicsUtils.scale(cardCanvas, imageOnlyPopupSize.width, imageOnlyPopupSize.height);
         //
         // draw card image onto popup canvas, right-aligned.
         g.drawImage(scaledImage, popupSize.width - imageOnlyPopupSize.width, 0, this);

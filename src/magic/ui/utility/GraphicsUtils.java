@@ -1,4 +1,4 @@
-package magic.ui;
+package magic.ui.utility;
 
 import java.awt.AlphaComposite;
 import java.awt.Color;
@@ -30,6 +30,10 @@ import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JComponent;
 import magic.data.GeneralConfig;
+import magic.ui.CardImagesProvider;
+import magic.ui.MagicStyle;
+import magic.ui.ScreenController;
+import magic.ui.WhiteColorSwapImageFilter;
 import magic.ui.theme.Theme;
 import magic.utility.MagicFileSystem.DataPath;
 import magic.utility.MagicFileSystem;
@@ -42,7 +46,7 @@ import magic.utility.MagicFileSystem;
  * @author rbair
  * @author Karl Schaefer
  */
-final public class GraphicsUtilities {
+final public class GraphicsUtils {
 
     private final static GraphicsConfiguration GC = (java.awt.GraphicsEnvironment.isHeadless() == false) ?
         GraphicsEnvironment
@@ -51,7 +55,7 @@ final public class GraphicsUtilities {
             .getDefaultConfiguration() :
         null;
 
-    private GraphicsUtilities() {}
+    private GraphicsUtils() {}
 
     public static BufferedImage scale(final BufferedImage img, final int targetWidth, final int targetHeight) {
         if (img.getWidth() == targetWidth && img.getHeight() == targetHeight) {
@@ -206,7 +210,7 @@ final public class GraphicsUtilities {
         }
                 
         return (image != null) ?
-            GraphicsUtilities.getOptimizedImage(image) :
+            GraphicsUtils.getOptimizedImage(image) :
             MagicStyle.getTheme().getTexture(Theme.TEXTURE_BACKGROUND);
     }
 
@@ -238,7 +242,7 @@ final public class GraphicsUtilities {
 
     public static BufferedImage getConvertedIcon(final ImageIcon icon) {
         final BufferedImage bi = 
-                GraphicsUtilities.getCompatibleBufferedImage(
+                GraphicsUtils.getCompatibleBufferedImage(
                         icon.getIconWidth(), icon.getIconHeight(), Transparency.TRANSLUCENT);
         final Graphics g = bi.createGraphics();
         // paint the Icon to the BufferedImage.

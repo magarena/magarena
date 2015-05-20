@@ -1,5 +1,6 @@
 package magic.ui;
 
+import magic.ui.utility.GraphicsUtils;
 import magic.utility.MagicSystem;
 
 import java.awt.Dimension;
@@ -282,9 +283,9 @@ public class MagicFrame extends JFrame implements IImageDragDropListener {
         contentPanel.getActionMap().put("Screenshot", new AbstractAction() {
             @Override
             public void actionPerformed(final ActionEvent e) {
-                GraphicsUtilities.setBusyMouseCursor(true);
+                GraphicsUtils.setBusyMouseCursor(true);
                 doScreenshot();
-                GraphicsUtilities.setBusyMouseCursor(false);
+                GraphicsUtils.setBusyMouseCursor(false);
             }
         });
     }
@@ -316,7 +317,7 @@ public class MagicFrame extends JFrame implements IImageDragDropListener {
     private void doScreenshot() {
         try {
             final Path filePath = MagicFileSystem.getDataPath(DataPath.LOGS).resolve("screenshot.png");
-            final File imageFile = GraphicsUtilities.doScreenshotToFile(this.getContentPane(), filePath);
+            final File imageFile = GraphicsUtils.doScreenshotToFile(this.getContentPane(), filePath);
             DesktopUtils.openFileInDefaultOsEditor(imageFile);
         } catch (IOException | DesktopNotSupportedException e) {
             e.printStackTrace();

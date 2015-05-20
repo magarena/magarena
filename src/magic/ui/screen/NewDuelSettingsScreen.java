@@ -15,7 +15,7 @@ import magic.model.MagicDeck;
 import magic.model.player.IPlayerProfileListener;
 import magic.model.player.PlayerProfile;
 import magic.model.player.PlayerProfiles;
-import magic.ui.GraphicsUtilities;
+import magic.ui.utility.GraphicsUtils;
 import magic.ui.MagicFrame;
 import magic.ui.ScreenController;
 import magic.ui.screen.interfaces.IActionBar;
@@ -178,10 +178,10 @@ public class NewDuelSettingsScreen
             return new MouseAdapter() {
                 @Override
                 public void mouseReleased(MouseEvent e) {
-                    GraphicsUtilities.setBusyMouseCursor(true);
+                    GraphicsUtils.setBusyMouseCursor(true);
                     selectNewProfile(panel.getPlayer());
                     mouseExited(e);
-                    GraphicsUtilities.setBusyMouseCursor(false);
+                    GraphicsUtils.setBusyMouseCursor(false);
                 }
                 @Override
                 public void mouseEntered(MouseEvent e) {
