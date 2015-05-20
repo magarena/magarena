@@ -4,6 +4,7 @@ value=2.500
 rarity=U
 type=Sorcery
 cost={2}{G}
+ability=Cast SN with AI only if an opponent controls a creature with flying.
 timing=main
 requires_groovy_code
 oracle=Wing Storm deals damage to each player equal to twice the number of creatures with flying that player controls.
