@@ -12,6 +12,9 @@ import java.awt.Cursor;
 import java.awt.event.ActionEvent;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import javax.swing.Icon;
+import javax.swing.ImageIcon;
+import magic.ui.GraphicsUtilities;
 import magic.ui.ScreenController;
 
 @SuppressWarnings("serial")
@@ -111,6 +114,19 @@ public class MenuButton extends JButton {
 
     public static MenuButton getCloseScreenButton(final String caption) {
         return new MenuButton(caption, closeScreenAction);
+    }
+
+    @Override
+    public void setIcon(final Icon defaultIcon) {
+        super.setIcon(defaultIcon);
+        setRolloverIcon(GraphicsUtilities.getRecoloredIcon(
+                (ImageIcon) defaultIcon,
+                MagicStyle.HIGHLIGHT_COLOR)
+        );
+        setPressedIcon(GraphicsUtilities.getRecoloredIcon(
+                (ImageIcon) defaultIcon,
+                MagicStyle.PRESSED_COLOR)
+        );
     }
 
 }

@@ -21,6 +21,8 @@ public final class MagicStyle {
     private MagicStyle() {}
 
     public static Color HIGHLIGHT_COLOR = Color.YELLOW;
+    public static Color PRESSED_COLOR = MagicStyle.HIGHLIGHT_COLOR.darker();
+
     private static Color BG1;
     private static Color BG2;
     private static Theme currentTheme = null;

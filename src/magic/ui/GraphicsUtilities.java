@@ -16,13 +16,17 @@ import java.awt.GraphicsEnvironment;
 import java.awt.Paint;
 import java.awt.Rectangle;
 import java.awt.RenderingHints;
+import java.awt.Toolkit;
 import java.awt.Transparency;
 import java.awt.image.BufferedImage;
+import java.awt.image.FilteredImageSource;
+import java.awt.image.ImageProducer;
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Path;
 import javax.imageio.ImageIO;
 import javax.swing.BorderFactory;
+import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JComponent;
 import magic.data.GeneralConfig;
@@ -282,6 +286,21 @@ final public class GraphicsUtilities {
 
         return greyscaleImage;
     }
-
     
+    private static float[] getImageFilterValues(final Color color) {
+        return new float[]{
+            color.getRed() / 255f,
+            color.getGreen() / 255f,
+            color.getBlue() / 255f};
+    }
+    
+    public static Icon getRecoloredIcon(final ImageIcon defaultIcon, final Color newColor) {
+        final ImageProducer ip = defaultIcon.getImage().getSource();
+        final float[] filter = getImageFilterValues(newColor);
+        return new ImageIcon(
+                Toolkit.getDefaultToolkit().createImage(
+                        new FilteredImageSource(ip, new WhiteColorSwapImageFilter(filter)))
+        );
+    }
+
 }
