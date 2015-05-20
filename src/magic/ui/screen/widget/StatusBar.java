@@ -83,7 +83,7 @@ public class StatusBar extends TexturedPanel implements IThemeStyle {
                 optionsButton = new ActionBarButton(
                         IconImages.getIcon(MagicIcon.OPTIONS_ICON),
                         "Options Menu [ESC]",
-                        "Displays menu of common and screen sepcific options.",
+                        "Displays menu of common and screen specific options.",
                         new AbstractAction() {
                             @Override
                             public void actionPerformed(final ActionEvent e) {
