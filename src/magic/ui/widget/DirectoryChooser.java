@@ -14,7 +14,7 @@ import javax.swing.JFileChooser;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
-import magic.ui.DesktopUtils;
+import magic.ui.utility.DesktopUtils;
 import magic.ui.ScreenController;
 import net.miginfocom.swing.MigLayout;
 

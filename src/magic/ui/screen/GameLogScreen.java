@@ -8,7 +8,7 @@ import java.util.List;
 import javax.swing.AbstractAction;
 import javax.swing.JPanel;
 import magic.data.MagicIcon;
-import magic.ui.DesktopUtils;
+import magic.ui.utility.DesktopUtils;
 import magic.ui.IconImages;
 import magic.ui.ScreenController;
 import magic.ui.screen.interfaces.IStatusBar;

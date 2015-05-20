@@ -1,5 +1,6 @@
 package magic.ui;
 
+import magic.ui.utility.DesktopUtils;
 import magic.ui.utility.GraphicsUtils;
 import magic.utility.MagicSystem;
 

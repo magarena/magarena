@@ -22,7 +22,7 @@ import magic.ui.IconImages;
 import magic.ui.URLUtils;
 import magic.exception.DesktopNotSupportedException;
 import magic.model.MagicCardDefinition;
-import magic.ui.DesktopUtils;
+import magic.ui.utility.DesktopUtils;
 import magic.ui.ScreenController;
 import magic.ui.screen.interfaces.IActionBar;
 import magic.ui.screen.interfaces.IStatusBar;
