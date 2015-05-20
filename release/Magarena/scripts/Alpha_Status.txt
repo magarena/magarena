@@ -5,7 +5,7 @@ rarity=U
 type=Enchantment
 subtype=Aura
 cost={2}{G}
-ability=Enchant creature;\
-        Enchanted creature gets +2/+2 for each other creature on the battlefield that shares a creature type with it.
 timing=aura
+enchant=pump,pos creature
+requires_groovy_code
 oracle=Enchant creature\nEnchanted creature gets +2/+2 for each other creature on the battlefield that shares a creature type with it.
