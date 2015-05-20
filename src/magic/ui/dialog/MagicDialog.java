@@ -13,7 +13,7 @@ import javax.swing.JPanel;
 import javax.swing.JRootPane;
 import javax.swing.KeyStroke;
 import javax.swing.SwingConstants;
-import magic.ui.MagicStyle;
+import magic.ui.utility.MagicStyle;
 import magic.ui.theme.Theme;
 import magic.ui.widget.FontsAndBorders;
 import net.miginfocom.swing.MigLayout;

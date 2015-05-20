@@ -1,5 +1,6 @@
 package magic.ui;
 
+import magic.ui.utility.MagicStyle;
 import java.util.Stack;
 import javax.swing.JComponent;
 import javax.swing.JOptionPane;

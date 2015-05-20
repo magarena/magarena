@@ -1,5 +1,6 @@
 package magic.ui;
 
+import magic.ui.utility.MagicStyle;
 import magic.ui.utility.GraphicsUtils;
 import magic.data.GeneralConfig;
 import magic.ui.theme.Theme;

@@ -13,7 +13,7 @@ import magic.ui.screen.interfaces.IActionBar;
 import magic.ui.screen.interfaces.IThemeStyle;
 import magic.ui.theme.Theme;
 import magic.ui.widget.TexturedPanel;
-import magic.ui.MagicStyle;
+import magic.ui.utility.MagicStyle;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")

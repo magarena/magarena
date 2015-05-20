@@ -2,7 +2,7 @@ package magic.ui.player;
 
 import magic.model.player.AiProfile;
 import magic.ui.widget.FontsAndBorders;
-import magic.ui.MagicStyle;
+import magic.ui.utility.MagicStyle;
 import net.miginfocom.swing.MigLayout;
 
 import javax.swing.BorderFactory;

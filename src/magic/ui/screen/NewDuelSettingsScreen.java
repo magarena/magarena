@@ -25,7 +25,7 @@ import magic.ui.screen.widget.DuelSettingsPanel;
 import magic.ui.screen.widget.MenuButton;
 import magic.ui.player.DuelPlayerDeckPanel;
 import magic.ui.player.DuelPlayerPanel;
-import magic.ui.MagicStyle;
+import magic.ui.utility.MagicStyle;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")

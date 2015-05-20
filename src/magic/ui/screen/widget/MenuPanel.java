@@ -13,7 +13,7 @@ import java.util.ArrayList;
 import java.util.List;
 import magic.ui.screen.interfaces.IThemeStyle;
 import magic.ui.theme.Theme;
-import magic.ui.MagicStyle;
+import magic.ui.utility.MagicStyle;
 
 @SuppressWarnings("serial")
 public class MenuPanel extends TexturedPanel implements IThemeStyle {

@@ -12,7 +12,7 @@ import magic.data.GeneralConfig;
 import magic.model.MagicGame;
 import magic.ui.utility.GraphicsUtils;
 import magic.ui.IconImages;
-import magic.ui.MagicStyle;
+import magic.ui.utility.MagicStyle;
 import magic.ui.duel.CounterOverlay;
 import magic.ui.duel.viewer.PlayerViewerInfo;
 import magic.ui.theme.ThemeFactory;

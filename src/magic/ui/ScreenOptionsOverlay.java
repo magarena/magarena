@@ -1,5 +1,6 @@
 package magic.ui;
 
+import magic.ui.utility.MagicStyle;
 import java.awt.Color;
 import java.awt.Component;
 import java.awt.event.ActionEvent;

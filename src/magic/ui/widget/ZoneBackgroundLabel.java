@@ -13,7 +13,7 @@ import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Rectangle;
 import java.awt.image.BufferedImage;
-import magic.ui.MagicStyle;
+import magic.ui.utility.MagicStyle;
 
 public class ZoneBackgroundLabel extends JLabel {
 

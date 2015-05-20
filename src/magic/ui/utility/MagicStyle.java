@@ -1,4 +1,4 @@
-package magic.ui;
+package magic.ui.utility;
 
 
 import javax.swing.BorderFactory;

@@ -14,7 +14,7 @@ import magic.data.GeneralConfig;
 import magic.model.IUIGameController;
 import magic.ui.MagicFrame;
 import magic.ui.theme.Theme;
-import magic.ui.MagicStyle;
+import magic.ui.utility.MagicStyle;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")

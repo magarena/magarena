@@ -16,7 +16,7 @@ import javax.swing.SwingUtilities;
 import magic.data.MagicIcon;
 import magic.model.MagicGame;
 import magic.ui.IconImages;
-import magic.ui.MagicStyle;
+import magic.ui.utility.MagicStyle;
 import magic.ui.SwingGameController;
 import magic.ui.screen.interfaces.IOptionsMenu;
 import magic.ui.screen.widget.ActionBarButton;

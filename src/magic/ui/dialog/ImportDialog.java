@@ -45,7 +45,7 @@ import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.MagicDownload;
 import magic.utility.MagicFileSystem;
-import magic.ui.MagicStyle;
+import magic.ui.utility.MagicStyle;
 import net.miginfocom.swing.MigLayout;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.IOCase;

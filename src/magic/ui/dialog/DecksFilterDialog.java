@@ -30,7 +30,7 @@ import magic.ui.theme.Theme;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.deck.DeckFilter;
 import magic.ui.widget.deck.DeckFilter.NumericFilter;
-import magic.ui.MagicStyle;
+import magic.ui.utility.MagicStyle;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")

@@ -19,7 +19,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import magic.ui.IconImages;
-import magic.ui.MagicStyle;
+import magic.ui.utility.MagicStyle;
 
 public class TextLabel extends JPanel {
 

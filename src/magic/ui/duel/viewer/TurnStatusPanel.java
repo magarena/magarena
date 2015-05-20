@@ -5,7 +5,7 @@ import javax.swing.BorderFactory;
 import javax.swing.JPanel;
 import magic.model.MagicGame;
 import magic.model.phase.MagicPhaseType;
-import magic.ui.MagicStyle;
+import magic.ui.utility.MagicStyle;
 import magic.ui.SwingGameController;
 import magic.ui.theme.Theme;
 import net.miginfocom.swing.MigLayout;

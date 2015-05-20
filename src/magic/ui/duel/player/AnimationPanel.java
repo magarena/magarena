@@ -6,7 +6,7 @@ import java.awt.Graphics2D;
 import java.awt.Stroke;
 import javax.swing.JPanel;
 import magic.data.GeneralConfig;
-import magic.ui.MagicStyle;
+import magic.ui.utility.MagicStyle;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
 import org.pushingpixels.trident.Timeline;

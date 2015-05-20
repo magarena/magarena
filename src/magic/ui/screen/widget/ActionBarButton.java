@@ -7,7 +7,7 @@ import java.awt.Point;
 import java.awt.event.MouseEvent;
 import javax.swing.Icon;
 import magic.ui.utility.GraphicsUtils;
-import magic.ui.MagicStyle;
+import magic.ui.utility.MagicStyle;
 
 @SuppressWarnings("serial")
 public class ActionBarButton extends MenuButton {

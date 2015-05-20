@@ -15,7 +15,7 @@ import magic.ui.SwingGameController;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.CostPanel;
 import magic.ui.widget.PanelButton;
-import magic.ui.MagicStyle;
+import magic.ui.utility.MagicStyle;
 
 public class CardButton extends PanelButton implements ChoiceViewer {
     private static final long serialVersionUID = 1L;

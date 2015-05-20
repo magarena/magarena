@@ -11,7 +11,7 @@ import javax.swing.event.ChangeListener;
 
 import java.awt.BorderLayout;
 import java.awt.CardLayout;
-import magic.ui.MagicStyle;
+import magic.ui.utility.MagicStyle;
 
 public class HandGraveyardExileViewer extends JPanel implements ChangeListener {
     private static final long serialVersionUID = 1L;

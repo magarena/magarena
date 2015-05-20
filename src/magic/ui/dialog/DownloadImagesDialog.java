@@ -39,7 +39,7 @@ import magic.ui.widget.downloader.PlayableDownloadPanel;
 import magic.ui.widget.downloader.UnimplementedDownloadPanel;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicFileSystem.DataPath;
-import magic.ui.MagicStyle;
+import magic.ui.utility.MagicStyle;
 import magic.utility.MagicSystem;
 import net.miginfocom.swing.MigLayout;
 

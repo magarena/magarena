@@ -18,7 +18,7 @@ import magic.data.MagicIcon;
 import magic.model.MagicPlayerZone;
 import magic.ui.utility.GraphicsUtils;
 import magic.ui.IconImages;
-import magic.ui.MagicStyle;
+import magic.ui.utility.MagicStyle;
 import org.pushingpixels.trident.Timeline;
 
 
