@@ -4,6 +4,7 @@ value=3.821
 rarity=R
 type=Sorcery
 cost={2}{W}{W}
+ability=Cast SN with AI only if an opponent controls a black creature.
 effect=Destroy all black creatures.
 timing=main
 oracle=Destroy all black creatures.

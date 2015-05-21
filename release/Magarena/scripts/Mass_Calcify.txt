@@ -4,6 +4,7 @@ value=3.357
 rarity=R
 type=Sorcery
 cost={5}{W}{W}
+ability=Cast SN with AI only if an opponent controls a nonwhite creature.
 effect=Destroy all nonwhite creatures.
 timing=main
 oracle=Destroy all nonwhite creatures.
