@@ -9,7 +9,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public enum MagicConditionParser {
-            
+
     YouControl("you control a(n)? " + ARG.WORDRUN) {
         public MagicCondition toCondition(final Matcher arg) {
             return MagicConditionFactory.YouControl(
@@ -190,7 +190,7 @@ public enum MagicConditionParser {
             return MagicCondition.IS_BLOCKED_CONDITION;
         }
     },
-    IsAttacking("it's attacking") {
+    IsAttacking("(SN is|it's) attacking") {
         public MagicCondition toCondition(final Matcher arg) {
             return MagicCondition.IS_ATTACKING_CONDITION;
         }
@@ -460,17 +460,17 @@ public enum MagicConditionParser {
     ;
 
     private final Pattern pattern;
-    
+
     private MagicConditionParser(final String regex) {
         pattern = Pattern.compile(regex, Pattern.CASE_INSENSITIVE);
     }
-    
+
     public Matcher matcher(final String rule) {
         return pattern.matcher(rule);
     }
 
     public abstract MagicCondition toCondition(final Matcher arg);
-    
+
     public static final MagicCondition build(final String cost) {
         final boolean aiOnly = cost.startsWith("with AI ");
         final String processed = cost
@@ -487,7 +487,7 @@ public enum MagicConditionParser {
         }
         throw new RuntimeException("unknown condition \"" + cost + "\"");
     }
-    
+
     public static MagicCondition[] buildCast(final String costs) {
         final String[] splitCosts = costs.split(" and ");
         final MagicCondition[] conds = new MagicCondition[splitCosts.length + 1];
