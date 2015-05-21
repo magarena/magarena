@@ -4,7 +4,8 @@ value=3.412
 rarity=U
 type=Instant
 cost={W/P}
-ability=alt cost Pay 2 life named Pay 2 life
+ability=alt cost Pay 2 life named Pay 2 life;\
+        Cast SN with AI only if an opponent controls an attacking creature.
 effect=SN deals 1 damage to each attacking creature.
 timing=block
 oracle=Marrow Shards deals 1 damage to each attacking creature.
