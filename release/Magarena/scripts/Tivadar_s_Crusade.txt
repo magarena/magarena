@@ -4,6 +4,7 @@ value=3.643
 rarity=U
 type=Sorcery
 cost={1}{W}{W}
+ability=Cast SN with AI only if an opponent controls a Goblin.
 effect=Destroy all Goblins.
 timing=removal
 oracle=Destroy all Goblins.

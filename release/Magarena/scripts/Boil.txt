@@ -4,6 +4,7 @@ value=4.195
 rarity=U
 type=Instant
 cost={3}{R}
+ability=Cast SN with AI only if an opponent controls an Island.
 effect=Destroy all Islands.
 timing=removal
 oracle=Destroy all Islands.
