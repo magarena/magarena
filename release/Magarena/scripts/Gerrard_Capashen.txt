@@ -6,7 +6,7 @@ type=Legendary,Creature
 subtype=Human,Soldier
 cost={3}{W}{W}
 pt=3/4
-ability=At the beginning of your upkeep, you gain 1 life for each card in target opponent's hand.;\
-        {3}{W}: Tap target creature. Activate this ability only if SN is attacking.
+ability={3}{W}: Tap target creature. Activate this ability only if SN is attacking.
 timing=main
+requires_groovy_code
 oracle=At the beginning of your upkeep, you gain 1 life for each card in target opponent's hand.\n{3}{W}: Tap target creature. Activate this ability only if Gerrard Capashen is attacking.
