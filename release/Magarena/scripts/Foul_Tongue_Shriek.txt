@@ -4,6 +4,7 @@ value=2.500
 rarity=C
 type=Instant
 cost={B}
-effect=Target opponent loses 1 life for each attacking creature you control. You gain that much life.
-timing=removal
+ability=Cast SN with AI only if you control an attacking creature.
+timing=attack
+requires_groovy_code
 oracle=Target opponent loses 1 life for each attacking creature you control. You gain that much life.
