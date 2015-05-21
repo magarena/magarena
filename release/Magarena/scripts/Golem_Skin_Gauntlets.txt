@@ -5,7 +5,7 @@ rarity=U
 type=Artifact
 subtype=Equipment
 cost={1}
-ability=Equipped creature gets +1/+0 for each Equipment attached to it.;\
-        Equip {2}
+ability=Equip {2}
 timing=equipment
+requires_groovy_code
 oracle=Equipped creature gets +1/+0 for each Equipment attached to it.\nEquip {2}
