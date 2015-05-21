@@ -4,6 +4,7 @@ value=4.464
 rarity=U
 type=Sorcery
 cost={2}{B}
+ability=Cast SN with AI only if an opponent controls a green creature.
 effect=Destroy all green creatures. They can't be regenerated.
 timing=main
 oracle=Destroy all green creatures. They can't be regenerated.

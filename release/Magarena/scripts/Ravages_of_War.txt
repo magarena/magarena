@@ -5,6 +5,7 @@ removal=2
 rarity=R
 type=Sorcery
 cost={3}{W}
+ability=Cast SN with AI only if an opponent controls a land.
 effect=Destroy all lands.
 timing=removal
 oracle=Destroy all lands.

@@ -4,6 +4,7 @@ value=4.570
 rarity=U
 type=Instant
 cost={1}{R}
+ability=Cast SN with AI only if an opponent controls a nonbasic land.
 timing=removal
 requires_groovy_code
 oracle=Price of Progress deals damage to each player equal to twice the number of nonbasic lands that player controls.

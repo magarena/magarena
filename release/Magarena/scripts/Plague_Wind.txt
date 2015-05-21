@@ -5,6 +5,7 @@ removal=2
 rarity=R
 type=Sorcery
 cost={7}{B}{B}
+ability=Cast SN with AI only if an opponent controls a creature.
 effect=Destroy all creatures you don't control. They can't be regenerated.
 timing=removal
 oracle=Destroy all creatures you don't control. They can't be regenerated.
