@@ -5,7 +5,7 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={2}{R}
-ability=Enchant creature;\
-        Enchanted creature gets +1/+0 for each Mountain you control.
+ability=Enchanted creature gets +1/+0 for each Mountain you control.
 timing=aura
+enchant=pump,pos creature
 oracle=Enchant creature\nEnchanted creature gets +1/+0 for each Mountain you control.
