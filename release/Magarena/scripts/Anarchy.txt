@@ -4,6 +4,7 @@ value=4.390
 rarity=U
 type=Sorcery
 cost={2}{R}{R}
+ability=Cast SN with AI only if an opponent controls a white permanent.
 effect=Destroy all white permanents.
 timing=main
 oracle=Destroy all white permanents.
