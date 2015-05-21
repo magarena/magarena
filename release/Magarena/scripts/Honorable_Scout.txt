@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Soldier,Scout
 cost={W}
 pt=1/1
-ability=When SN enters the battlefield, you gain 2 life for each black and/or red creature target opponent controls.
 timing=main
+requires_groovy_code
 oracle=When Honorable Scout enters the battlefield, you gain 2 life for each black and/or red creature target opponent controls.
