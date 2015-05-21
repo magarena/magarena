@@ -4,6 +4,7 @@ value=2.745
 rarity=C
 type=Instant
 cost={1}{R}
+ability=Cast SN with AI only if an opponent controls a creature without flying.
 effect=SN deals 1 damage to each creature without flying.
 timing=removal
 oracle=Seismic Shudder deals 1 damage to each creature without flying.
