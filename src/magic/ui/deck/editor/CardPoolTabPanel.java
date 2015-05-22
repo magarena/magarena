@@ -1,6 +1,5 @@
 package magic.ui.deck.editor;
 
-import magic.ui.deck.editor.CardPoolOptionBar;
 import java.awt.event.ActionEvent;
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
@@ -14,7 +13,7 @@ import magic.ui.screen.widget.ActionBarButton;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-public class CardPoolTabPanel extends JPanel {
+class CardPoolTabPanel extends JPanel {
 
     // fired when contents of cardPoolTable are updated.
     public static final String CP_CARDPOOL = DeckEditorCardPoolPanel.CP_CARDPOOL;

@@ -1,6 +1,5 @@
 package magic.ui.deck.editor;
 
-import magic.ui.deck.editor.DeckCardPoolActionBar;
 import java.awt.event.ActionEvent;
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
@@ -13,7 +12,7 @@ import magic.ui.cardtable.CardTablePanel;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-public class HistoryTabPanel extends JPanel {
+class HistoryTabPanel extends JPanel {
 
     // fired when card selection changes
     public static final String CP_CARD_SELECTED = CardTablePanel.CP_CARD_SELECTED;

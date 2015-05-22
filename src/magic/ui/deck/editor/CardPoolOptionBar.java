@@ -6,7 +6,7 @@ import magic.ui.widget.TexturedPanel;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-public class CardPoolOptionBar extends TexturedPanel {
+class CardPoolOptionBar extends TexturedPanel {
 
     private final MigLayout miglayout = new MigLayout();
 

@@ -12,7 +12,7 @@ import magic.ui.cardtable.CardTablePanel;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-public class DeckEditorCardPoolPanel extends JPanel implements ICardFilterPanelListener {
+class DeckEditorCardPoolPanel extends JPanel implements ICardFilterPanelListener {
 
     public static final String CP_CARD_RCLICKED = CardTablePanel.CP_CARD_RCLICKED;
 

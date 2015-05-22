@@ -11,7 +11,7 @@ import magic.ui.widget.TexturedPanel;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-public class DeckCardPoolActionBar extends TexturedPanel {
+class DeckCardPoolActionBar extends TexturedPanel {
 
     public static final String CP_OPTIONBAR = "optionBar";
 

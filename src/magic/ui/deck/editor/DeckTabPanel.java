@@ -1,7 +1,5 @@
 package magic.ui.deck.editor;
 
-import magic.ui.deck.editor.DeckListOptionBar;
-import magic.ui.deck.editor.DeckCardPoolActionBar;
 import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 import java.beans.PropertyChangeEvent;
@@ -19,7 +17,7 @@ import magic.ui.screen.widget.ActionBarButton;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-public class DeckTabPanel extends JPanel {
+class DeckTabPanel extends JPanel {
 
     // fired when contents of deck list are updated.
     public static final String CP_DECKLIST= "DeckList";
