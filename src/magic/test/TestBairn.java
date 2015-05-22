@@ -24,7 +24,6 @@ class TestBairn extends TestGameBuilder {
         P.setLife(20);
         addToLibrary(P, "Island", 20);
         createPermanent(game, P, "Island", 10);
-        createPermanent(game, P, "Forest", 10);
         createPermanent(game, P, "Gilder Bairn");
         createPermanent(game, P, "Paradise Mantle", 1);
         addToHand(P, "Simic Initiate", 4);
