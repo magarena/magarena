@@ -41,25 +41,16 @@ public class CardExplorerScreen
         setContent(content);
     }
 
-    /* (non-Javadoc)
-     * @see magic.ui.IMagStatusBar#getScreenCaption()
-     */
     @Override
     public String getScreenCaption() {
         return "Card Explorer";
     }
 
-    /* (non-Javadoc)
-     * @see magic.ui.IMagActionBar#getLeftAction()
-     */
     @Override
     public MenuButton getLeftAction() {
         return MenuButton.getCloseScreenButton("Close");
     }
 
-    /* (non-Javadoc)
-     * @see magic.ui.IMagActionBar#getRightAction()
-     */
     @Override
     public MenuButton getRightAction() {
         return null;
@@ -111,9 +102,6 @@ public class CardExplorerScreen
         Desktop.getDesktop().open(MagicFileSystem.getDataPath(DataPath.LOGS).toFile());
     }
 
-    /* (non-Javadoc)
-     * @see magic.ui.MagScreen#canScreenClose()
-     */
     @Override
     public boolean isScreenReadyToClose(final AbstractScreen nextScreen) {
         MagicSetDefinitions.clearLoadedSets();
@@ -121,9 +109,6 @@ public class CardExplorerScreen
         return true;
     }
 
-    /* (non-Javadoc)
-     * @see magic.ui.IMagScreenOptionsMenu#showOptionsMenuOverlay()
-     */
     @Override
     public void showOptionsMenuOverlay() {
         new ScreenOptions(getFrame());
@@ -140,9 +125,6 @@ public class CardExplorerScreen
             super(frame);
         }
 
-        /* (non-Javadoc)
-         * @see magic.ui.ScreenOptionsOverlay#getScreenMenu()
-         */
         @Override
         protected MenuPanel getScreenMenu() {
             return null;
@@ -150,9 +132,6 @@ public class CardExplorerScreen
 
     }
 
-    /* (non-Javadoc)
-     * @see magic.ui.screen.interfaces.IStatusBar#getStatusPanel()
-     */
     @Override
     public JPanel getStatusPanel() {
         return null;
