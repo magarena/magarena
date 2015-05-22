@@ -4,6 +4,7 @@ value=2.500
 rarity=U
 type=Instant
 cost={2}{R}
-effect=Each attacking creature gets +1/+0 until end of turn for each nonbasic land defending player controls.
-timing=removal
+ability=Cast SN with AI only if an opponent controls a nonbasic land.
+timing=block
+requires_groovy_code
 oracle=Each attacking creature gets +1/+0 until end of turn for each nonbasic land defending player controls.
