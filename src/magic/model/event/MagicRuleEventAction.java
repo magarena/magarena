@@ -911,20 +911,21 @@ public enum MagicRuleEventAction {
             };
         }
     },
-    GainLife(
-        "((Y|y)ou)?( )?gain (?<amount>[0-9]+) life( for each " + ARG.WORDRUN + ")?\\.",
+    GainLifeYou(
+        ARG.YOU + "( )?gain (?<amount>[0-9]+) life( for each " + ARG.WORDRUN + ")?\\.",
         MagicTiming.Removal,
         "+Life"
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
-            final MagicAmount count = MagicAmountParser.build(ARG.wordrun(matcher));
             final int amount = Integer.parseInt(matcher.group("amount"));
+            final MagicAmount count = MagicAmountParser.build(ARG.wordrun(matcher));
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    final MagicPlayer player = ARG.youPlayer(event, matcher);
                     final int multiplier = count.getAmount(event);
-                    game.doAction(new ChangeLifeAction(event.getPlayer(), amount * multiplier));
+                    game.doAction(new ChangeLifeAction(player, amount * multiplier));
                 }
             };
         }
@@ -950,18 +951,21 @@ public enum MagicRuleEventAction {
             };
         }
     },
-    LoseLifeSelf(
-        ARG.YOU + "( )?lose(s)? (?<amount>[0-9]+) life\\.",
+    LoseLifeYou(
+        ARG.YOU + "( )?lose(s)? (?<amount>[0-9]+) life( for each " + ARG.WORDRUN + ")?\\.",
         MagicTiming.Removal,
         "-Life"
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
             final int amount = Integer.parseInt(matcher.group("amount"));
+            final MagicAmount count = MagicAmountParser.build(ARG.wordrun(matcher));
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    game.doAction(new ChangeLifeAction(ARG.youPlayer(event, matcher), -amount));
+                    final MagicPlayer player = ARG.youPlayer(event, matcher);
+                    final int multiplier = count.getAmount(event);
+                    game.doAction(new ChangeLifeAction(player, -amount * multiplier));
                 }
             };
         }
