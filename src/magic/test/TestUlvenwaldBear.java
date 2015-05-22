@@ -18,8 +18,8 @@ class TestUlvenwaldBear extends TestGameBuilder {
         P.setLife(4);
         P.setPoison(6);
         addToLibrary(P,"Plains",10);
-        createPermanent(game,P,"Rupture Spire",false,8);
-        createPermanent(game,P,"Grizzly Bears",false,1);
+        createPermanent(P,"Rupture Spire",false,8);
+        createPermanent(P,"Grizzly Bears",false,1);
         addToHand(P,"Ulvenwald Bear",1);
         addToHand(P,"Lightning Bolt",1);
 
@@ -29,8 +29,8 @@ class TestUlvenwaldBear extends TestGameBuilder {
         P.setLife(1);
         P.setPoison(8);
         addToLibrary(P,"Island",10);
-        createPermanent(game,P,"Rupture Spire",false,8);
-        createPermanent(game,P,"Grizzly Bears",false,1);
+        createPermanent(P,"Rupture Spire",false,8);
+        createPermanent(P,"Grizzly Bears",false,1);
 
         return game;
     }

@@ -17,8 +17,8 @@ class TestPersistUndying extends TestGameBuilder {
 
         P.setLife(20);
         addToLibrary(P, "Plains", 10);
-        createPermanent(game,P,"Rupture Spire",false,9);
-        createPermanent(game,P,"Antler Skulkin",false,1);
+        createPermanent(P,"Rupture Spire",false,9);
+        createPermanent(P,"Antler Skulkin",false,1);
         addToHand(P, "Murderous Redcap", 1);
         addToHand(P, "Vorapede", 1);
         addToHand(P, "Wingrattle Scarecrow", 1);
@@ -29,7 +29,7 @@ class TestPersistUndying extends TestGameBuilder {
 
         P.setLife(10);
         addToLibrary(P, "Plains", 10);
-        createPermanent(game,P,"Rupture Spire",false,8);
+        createPermanent(P,"Rupture Spire",false,8);
         addToHand(P, "Rendclaw Trow", 1);
         addToHand(P, "Young Wolf", 1);
 

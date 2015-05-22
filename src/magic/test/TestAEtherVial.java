@@ -17,7 +17,7 @@ class TestAEtherVial extends TestGameBuilder {
 
         P.setLife(1);
         addToLibrary(P, "Plains", 10);
-        createPermanent(game,P,"Rupture Spire",false,8);
+        createPermanent(P,"Rupture Spire",false,8);
         addToHand(P,"AEther Vial",1);
         addToHand(P,"Legacy's Allure",1);
         addToHand(P,"Thieving Magpie",1);
@@ -28,7 +28,7 @@ class TestAEtherVial extends TestGameBuilder {
 
         P.setLife(20);
         addToLibrary(P, "Plains", 10);
-        createPermanent(game,P,"Rupture Spire",false,8);
+        createPermanent(P,"Rupture Spire",false,8);
         addToHand(P,"Thieving Magpie",3);
 
         return game;

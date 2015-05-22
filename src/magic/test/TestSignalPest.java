@@ -23,7 +23,7 @@ class TestSignalPest extends TestGameBuilder {
         P.setLife(4);
         P.setPoison(6);
         addToLibrary(P,"Plains",10);
-        createPermanent(game,P,"Rupture Spire",false,8);
+        createPermanent(P,"Rupture Spire",false,8);
         addToHand(P,"Sphere of the Suns",2);
         addToHand(P,"Mox Opal",2);
         addToHand(P,"Signal Pest",3);
@@ -34,7 +34,7 @@ class TestSignalPest extends TestGameBuilder {
         P.setLife(1);
         P.setPoison(8);
         addToLibrary(P,"Island",10);
-        createPermanent(game,P,"Rupture Spire",false,8);
+        createPermanent(P,"Rupture Spire",false,8);
         addToHand(P,"Giant Spider",1);
         addToHand(P,"Birds of Paradise", 1);
         addToHand(P,"Sphere of the Suns",1);

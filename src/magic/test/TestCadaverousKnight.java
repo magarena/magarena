@@ -18,15 +18,15 @@ class TestCadaverousKnight extends TestGameBuilder {
 
         P.setLife(20);
         addToLibrary(P, "Plains", 10);
-        createPermanent(game,P,"Rupture Spire",false,8);
-        createPermanent(game,P,"Cadaverous Knight",false,1);
+        createPermanent(P,"Rupture Spire",false,8);
+        createPermanent(P,"Cadaverous Knight",false,1);
 
         P = opponent;
 
         P.setLife(1);
         addToLibrary(P, "Plains", 10);
-        createPermanent(game,P,"Rupture Spire",false,8);
-        createPermanent(game,P,"Phyrexian Crusader",false,1);
+        createPermanent(P,"Rupture Spire",false,8);
+        createPermanent(P,"Phyrexian Crusader",false,1);
 
         return game;
     }

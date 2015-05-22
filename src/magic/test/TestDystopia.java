@@ -17,15 +17,15 @@ class TestDystopia extends TestGameBuilder {
 
         P.setLife(13);
         addToLibrary(P, "Forest", 20);
-        createPermanent(game,P,"Dystopia");
-        createPermanent(game,P,"Forest",10);
+        createPermanent(P,"Dystopia");
+        createPermanent(P,"Forest",10);
         addToHand(P, "Life and Limb", 1);
 
         P = opponent;
 
         P.setLife(13);
         addToLibrary(P, "Forest", 20);
-        createPermanent(game,P,"Forest",10);
+        createPermanent(P,"Forest",10);
         return game;
     }
 }

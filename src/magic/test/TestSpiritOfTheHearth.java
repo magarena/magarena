@@ -17,14 +17,14 @@ class TestSpiritOfTheHearth extends TestGameBuilder {
 
         P.setLife(1);
         addToLibrary(P, "Plains", 10);
-        createPermanent(game,P,"Rupture Spire",false,8);
+        createPermanent(P,"Rupture Spire",false,8);
         addToHand(P, "Spirit of the Hearth", 1);
 
         P = opponent;
 
         P.setLife(1);
         addToLibrary(P, "Plains", 10);
-        createPermanent(game,P,"Rupture Spire",false,8);
+        createPermanent(P,"Rupture Spire",false,8);
         addToHand(P, "Concussive Bolt", 1);
 
         return game;

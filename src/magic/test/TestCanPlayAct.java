@@ -21,8 +21,8 @@ class TestCanPlayAct extends TestGameBuilder {
         addToLibrary(P, "Entreat the Angels", 20);
         addToLibrary(P, "Sliver Overlord", 1);
         addToGraveyard(P, "Ink-Eyes, Servant of Oni", 3);
-        createPermanent(game,P, "Mountain", false, 1);
-        createPermanent(game,P, "Kher Keep", false, 1);
+        createPermanent(P, "Mountain", false, 1);
+        createPermanent(P, "Kher Keep", false, 1);
         addToHand(P, "Lightning Bolt", 1);
         addToHand(P, "Mountain", 1);
         addToHand(P, "Argothian Wurm", 1);
@@ -33,8 +33,8 @@ class TestCanPlayAct extends TestGameBuilder {
 
         P.setLife(6);
         addToLibrary(P, "Mountain", 20);
-        createPermanent(game,P,"Rupture Spire",false,9);
-        createPermanent(game,P, "Grizzly Bears", false, 1);
+        createPermanent(P,"Rupture Spire",false,9);
+        createPermanent(P, "Grizzly Bears", false, 1);
         addToHand(P, "Trained Jackal", 1);
         addToGraveyard(P, "Ink-Eyes, Servant of Oni", 1);
 

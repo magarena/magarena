@@ -17,7 +17,7 @@ class TestPacifism extends TestGameBuilder {
 
         P.setLife(20);
         addToLibrary(P, "Plains", 10);
-        createPermanent(game,P,"Rupture Spire",false,8);
+        createPermanent(P,"Rupture Spire",false,8);
         addToHand(P,"Kor Firewalker",3);
         addToHand(P,"Pacifism",3);
 
@@ -26,8 +26,8 @@ class TestPacifism extends TestGameBuilder {
 
         P.setLife(20);
         addToLibrary(P, "Plains", 10);
-        createPermanent(game,P,"Rupture Spire",false,8);
-        createPermanent(game,P,"Alabaster Mage",false,3);
+        createPermanent(P,"Rupture Spire",false,8);
+        createPermanent(P,"Alabaster Mage",false,3);
 
         return game;
     }

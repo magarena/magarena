@@ -17,16 +17,16 @@ class TestChangeling extends TestGameBuilder {
 
         P.setLife(20);
         addToLibrary(P, "Plains", 10);
-        createPermanent(game,P,"Rupture Spire",false,8);
-        createPermanent(game,P,"Avian Changeling",false,1);
-        createPermanent(game,P,"Heavy Mattock",false,1);
+        createPermanent(P,"Rupture Spire",false,8);
+        createPermanent(P,"Avian Changeling",false,1);
+        createPermanent(P,"Heavy Mattock",false,1);
 
         P = opponent;
 
         P.setLife(20);
         addToLibrary(P, "Plains", 10);
-        createPermanent(game,P,"Rupture Spire",false,8);
-        createPermanent(game,P,"Serra Angel",false,1);
+        createPermanent(P,"Rupture Spire",false,8);
+        createPermanent(P,"Serra Angel",false,1);
 
         return game;
     }

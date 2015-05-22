@@ -20,15 +20,15 @@ class TestNoChoice extends TestGameBuilder {
 
         P.setLife(1);
         addToLibrary(P, "Forest", 20);
-        createPermanent(game,P, "Vesper Ghoul", false, 1);
-        createPermanent(game,P, "Foul Familiar", false, 1);
+        createPermanent(P, "Vesper Ghoul", false, 1);
+        createPermanent(P, "Foul Familiar", false, 1);
         
         P = opponent;
 
         P.setLife(1);
         addToLibrary(P, "Forest", 20);
-        createPermanent(game,P, "Vesper Ghoul", false, 1);
-        createPermanent(game,P, "Foul Familiar", false, 1);
+        createPermanent(P, "Vesper Ghoul", false, 1);
+        createPermanent(P, "Foul Familiar", false, 1);
 
         return game;
     }

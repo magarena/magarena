@@ -18,7 +18,7 @@ class TestEquipBug extends TestGameBuilder {
         P.setLife(20);
         addToLibrary(P, "Forest", 10);
         addToLibrary(P,"Strider Harness",1);
-        createPermanent(game,P,"Forest",false,8);
+        createPermanent(P,"Forest",false,8);
 
         P = opponent;
 

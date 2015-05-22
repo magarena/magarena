@@ -17,17 +17,17 @@ class TestGodhead extends TestGameBuilder {
 
         P.setLife(10);
         addToLibrary(P, "Plains", 10);
-        createPermanent(game,P,"Rupture Spire",false,8);
-        createPermanent(game,P,"Godhead of Awe", false, 1);
-        createPermanent(game,P,"Yavimaya Wurm", false, 1);
+        createPermanent(P,"Rupture Spire",false,8);
+        createPermanent(P,"Godhead of Awe", false, 1);
+        createPermanent(P,"Yavimaya Wurm", false, 1);
 
 
         P = opponent;
 
         P.setLife(1);
         addToLibrary(P, "Plains", 10);
-        createPermanent(game,P,"Rupture Spire",false,8);
-        createPermanent(game,P,"Zephyr Sprite",false,7);
+        createPermanent(P,"Rupture Spire",false,8);
+        createPermanent(P,"Zephyr Sprite",false,7);
 
         return game;
     }

@@ -17,8 +17,8 @@ class TestEntersWithX extends TestGameBuilder {
 
         P.setLife(1);
         addToLibrary(P, "Plains", 10);
-        createPermanent(game,P,"Rupture Spire",false,8);
-        createPermanent(game,P,"Thieving Magpie",false,1);
+        createPermanent(P,"Rupture Spire",false,8);
+        createPermanent(P,"Thieving Magpie",false,1);
         addToHand(P,"Primordial Hydra",1);
         addToHand(P,"Mikaeus, the Lunarch",1);
         addToHand(P,"Chimeric Mass",1);
@@ -29,8 +29,8 @@ class TestEntersWithX extends TestGameBuilder {
 
         P.setLife(20);
         addToLibrary(P, "Plains", 10);
-        createPermanent(game,P,"Rupture Spire",false,8);
-        createPermanent(game,P,"Thieving Magpie",false,1);
+        createPermanent(P,"Rupture Spire",false,8);
+        createPermanent(P,"Thieving Magpie",false,1);
         addToHand(P, "Plains", 7);
 
         return game;

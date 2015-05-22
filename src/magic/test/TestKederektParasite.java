@@ -18,7 +18,7 @@ class TestKederektParasite extends TestGameBuilder {
 
         P.setLife(20);
         addToLibrary(P, "Mountain", 10);
-        createPermanent(game,P,"Kederekt Parasite",false,4);
+        createPermanent(P,"Kederekt Parasite",false,4);
         addToHand(P,"Mogg Fanatic",3);
         addToHand(P,"Rakdos Guildmage",3);
 
@@ -27,7 +27,7 @@ class TestKederektParasite extends TestGameBuilder {
 
         P.setLife(20);
         addToLibrary(P, "Mountain", 10);
-        createPermanent(game,P,"Kederekt Parasite",false,4);
+        createPermanent(P,"Kederekt Parasite",false,4);
         addToHand(P,"Mogg Fanatic",3);
         addToHand(P,"Rakdos Guildmage",3);
 

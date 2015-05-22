@@ -20,10 +20,10 @@ class TestScry extends TestGameBuilder {
         addToLibrary(P, "Island", 2);
         addToLibrary(P, "Entreat the Angels", 1);
         addToLibrary(P, "Sliver Overlord", 1);
-        createPermanent(game,P, "Island", false, 10);
-        createPermanent(game,P,"Chromatic Lantern");
-        createPermanent(game,P,"Flamespeaker Adept");
-        createPermanent(game,P,"Knowledge and Power");
+        createPermanent(P, "Island", false, 10);
+        createPermanent(P,"Chromatic Lantern");
+        createPermanent(P,"Flamespeaker Adept");
+        createPermanent(P,"Knowledge and Power");
         addToHand(P, "Spark Jolt", 2);
         addToHand(P, "Temple of Silence", 1);
         addToHand(P,"Opt",1);
@@ -32,9 +32,9 @@ class TestScry extends TestGameBuilder {
 
         P.setLife(6);
         addToLibrary(P, "Temple of Silence", 20);
-        createPermanent(game,P,"Rupture Spire",false,1);
-        createPermanent(game,P, "Grizzly Bears", false, 1);
-        createPermanent(game,P,"Flamespeaker Adept");
+        createPermanent(P,"Rupture Spire",false,1);
+        createPermanent(P, "Grizzly Bears", false, 1);
+        createPermanent(P,"Flamespeaker Adept");
         addToHand(P, "Spark Jolt", 1);
         addToHand(P, "Temple of Silence", 1);
 

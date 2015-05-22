@@ -17,9 +17,9 @@ class TestTotemArmorIndestructible extends TestGameBuilder {
 
         P.setLife(20);
         addToLibrary(P, "Plains", 10);
-        createPermanent(game,P,"Rupture Spire",false,8);
-        createPermanent(game,P,"Grizzly Bears",false,1);
-        createPermanent(game,P,"Darksteel Plate",false,1);
+        createPermanent(P,"Rupture Spire",false,8);
+        createPermanent(P,"Grizzly Bears",false,1);
+        createPermanent(P,"Darksteel Plate",false,1);
         addToHand(P,"Spider Umbra",1);
         addToHand(P,"Doom Blade",1);
 
@@ -28,7 +28,7 @@ class TestTotemArmorIndestructible extends TestGameBuilder {
 
         P.setLife(20);
         addToLibrary(P, "Plains", 10);
-        createPermanent(game,P,"Rupture Spire",false,8);
+        createPermanent(P,"Rupture Spire",false,8);
 
         return game;
     }

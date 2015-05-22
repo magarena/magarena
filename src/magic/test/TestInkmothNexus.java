@@ -23,7 +23,7 @@ class TestInkmothNexus extends TestGameBuilder {
         P.setLife(4);
         P.setPoison(6);
         addToLibrary(P,"Plains",10);
-        createPermanent(game,P,"Rupture Spire",false,8);
+        createPermanent(P,"Rupture Spire",false,8);
         addToHand(P,"Inkmoth Nexus",1);
         addToHand(P,"Stonework Puma",1);
 
@@ -33,7 +33,7 @@ class TestInkmothNexus extends TestGameBuilder {
         P.setLife(1);
         P.setPoison(8);
         addToLibrary(P,"Island",10);
-        createPermanent(game,P,"Rupture Spire",false,8);
+        createPermanent(P,"Rupture Spire",false,8);
         addToHand(P,"Stonework Puma",1);
         addToHand(P,"Llanowar Elves", 1);
         addToHand(P,"Prickly Boggart", 1);

@@ -18,8 +18,8 @@ class TestAuraScript extends TestGameBuilder {
 
         P.setLife(1);
         addToLibrary(P, "Plains", 10);
-        createPermanent(game,P,"Rupture Spire",false,8);
-        createPermanent(game,P,"Thieving Magpie",false,1);
+        createPermanent(P,"Rupture Spire",false,8);
+        createPermanent(P,"Thieving Magpie",false,1);
         addToHand(P,"Dark Favor",1);
         addToHand(P,"Legacy's Allure",1);
         addToHand(P,"Thieving Magpie",1);
@@ -28,7 +28,7 @@ class TestAuraScript extends TestGameBuilder {
 
         P.setLife(20);
         addToLibrary(P, "Plains", 10);
-        createPermanent(game,P,"Rupture Spire",false,8);
+        createPermanent(P,"Rupture Spire",false,8);
         addToHand(P,"Thieving Magpie",3);
 
         return game;

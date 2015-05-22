@@ -17,7 +17,7 @@ class TestPopulate extends TestGameBuilder {
 
         P.setLife(20);
         addToLibrary(P, "Plains", 10);
-        createPermanent(game,P,"Rupture Spire",false,8);
+        createPermanent(P,"Rupture Spire",false,8);
         addToHand(P, "Eyes in the Skies", 1);
         addToHand(P, "Trostani, Selesnya's Voice", 1);
         addToHand(P, "Vitu-Ghazi Guildmage", 1);
@@ -29,7 +29,7 @@ class TestPopulate extends TestGameBuilder {
 
         P.setLife(10);
         addToLibrary(P, "Plains", 10);
-        createPermanent(game,P,"Rupture Spire",false,8);
+        createPermanent(P,"Rupture Spire",false,8);
         addToHand(P, "Growing Ranks", 1);
         addToHand(P, "Rootborn Defenses", 1);
         addToHand(P, "Sundering Growth", 1);

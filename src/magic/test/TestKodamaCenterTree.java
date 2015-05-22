@@ -17,14 +17,14 @@ class TestKodamaCenterTree extends TestGameBuilder {
 
         P.setLife(20);
         addToLibrary(P, "Plains", 10);
-        createPermanent(game,P,"Forest",false,1);
-        createPermanent(game,P,"Kodama of the Center Tree",false,5);
+        createPermanent(P,"Forest",false,1);
+        createPermanent(P,"Kodama of the Center Tree",false,5);
 
         P = opponent;
 
         P.setLife(20);
         addToLibrary(P, "Plains", 10);
-        createPermanent(game,P,"Rupture Spire",false,8);
+        createPermanent(P,"Rupture Spire",false,8);
         addToHand(P, "Lightning Bolt", 3);
 
         return game;

@@ -20,15 +20,15 @@ class TestTyreal extends TestGameBuilder {
 
     P.setLife(20);
     addToLibrary(P, "Plains", 10);
-    createPermanent(game, P, "Rupture Spire", false, 10);
-    //createPermanent(game, P, "Goblin Bombardment", false, 1);
-    //createPermanent(game, P, "Jayemdae Tome", false, 1);
-    //createPermanent(game, P, "Mad Auntie", false, 1);
-    //createPermanent(game, P, "Ib Halfheart, Goblin Tactician", false, 1);
-    //createPermanent(game, P, "Boggart Shenanigans", false, 1);
-    //createPermanent(game, P, "Knucklebone Witch", false, 1);
-    //createPermanent(game, P, "Strangleroot Geist", false, 1);
-    //createPermanent(game, P, "Vorapede", false, 1);
+    createPermanent(P, "Rupture Spire", false, 10);
+    //createPermanent(P, "Goblin Bombardment", false, 1);
+    //createPermanent(P, "Jayemdae Tome", false, 1);
+    //createPermanent(P, "Mad Auntie", false, 1);
+    //createPermanent(P, "Ib Halfheart, Goblin Tactician", false, 1);
+    //createPermanent(P, "Boggart Shenanigans", false, 1);
+    //createPermanent(P, "Knucklebone Witch", false, 1);
+    //createPermanent(P, "Strangleroot Geist", false, 1);
+    //createPermanent(P, "Vorapede", false, 1);
     addToHand(P, "Dungeon Geists", 1);
     addToHand(P, "Torch Fiend", 1);
     addToHand(P, "Disenchant", 1);
@@ -37,13 +37,13 @@ class TestTyreal extends TestGameBuilder {
 
     P.setLife(1);
     addToLibrary(P, "Plains", 10);
-    createPermanent(game, P, "Rupture Spire", false, 10);
-    createPermanent(game, P, "Mad Auntie", false, 1);
-    final MagicPermanent la = createPermanent(game, P, "Legacy's Allure", false, 1);
+    createPermanent(P, "Rupture Spire", false, 10);
+    createPermanent(P, "Mad Auntie", false, 1);
+    final MagicPermanent la = createPermanent(P, "Legacy's Allure", false, 1);
     game.doAction(new ChangeCountersAction(la, MagicCounterType.Charge, 1));
     //game.doAction(new MagicChangeCountersAction(la, MagicCounterType.Charge, 1));
-    //createPermanent(game, P, "Mad Auntie", false, 1);
-    // createPermanent(game,P,"Jayemdae Tome",false,1);
+    //createPermanent(P, "Mad Auntie", false, 1);
+    // createPermanent(P,"Jayemdae Tome",false,1);
 
     return game;
     }

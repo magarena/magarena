@@ -17,13 +17,13 @@ class TestDoubleStrikeDread extends TestGameBuilder {
 
         P.setLife(10);
         addToLibrary(P, "Plains", 10);
-        createPermanent(game,P,"Rupture Spire",false,8);
-        createPermanent(game,P,"Dread",false,1);
-        createPermanent(game,P,"Dissipation Field",false,1);
-        createPermanent(game,P,"Sword of Body and Mind",false,1);
-        createPermanent(game,P,"Sword of Light and Shadow",false,1);
-        createPermanent(game,P,"Hearthfire Hobgoblin", false, 1);
-        createPermanent(game,P,"Oracle of Nectars", false, 1);
+        createPermanent(P,"Rupture Spire",false,8);
+        createPermanent(P,"Dread",false,1);
+        createPermanent(P,"Dissipation Field",false,1);
+        createPermanent(P,"Sword of Body and Mind",false,1);
+        createPermanent(P,"Sword of Light and Shadow",false,1);
+        createPermanent(P,"Hearthfire Hobgoblin", false, 1);
+        createPermanent(P,"Oracle of Nectars", false, 1);
         addToGraveyard(P,"Oracle of Nectars", 1);
         addToHand(P, "Pacifism", 2);
 
@@ -32,10 +32,10 @@ class TestDoubleStrikeDread extends TestGameBuilder {
 
         P.setLife(10);
         addToLibrary(P, "Plains", 10);
-        createPermanent(game,P,"Rupture Spire",false,8);
-        createPermanent(game,P,"Hearthfire Hobgoblin", false, 1);
-        createPermanent(game,P,"Dread",false,1);
-        createPermanent(game,P,"Dissipation Field",false,1);
+        createPermanent(P,"Rupture Spire",false,8);
+        createPermanent(P,"Hearthfire Hobgoblin", false, 1);
+        createPermanent(P,"Dread",false,1);
+        createPermanent(P,"Dissipation Field",false,1);
         addToHand(P, "Pacifism", 2);
 
         return game;

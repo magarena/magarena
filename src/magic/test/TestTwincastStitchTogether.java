@@ -17,7 +17,7 @@ class TestTwinCastStitchTogether extends TestGameBuilder {
 
         P.setLife(1);
         addToLibrary(P, "Plains", 10);
-        createPermanent(game,P,"Rupture Spire",false,8);
+        createPermanent(P,"Rupture Spire",false,8);
         addToHand(P, "Twincast", 1);
         addToHand(P, "Aven Squire", 1);
         addToGraveyard(P, "Aven Squire", 1);
@@ -26,7 +26,7 @@ class TestTwinCastStitchTogether extends TestGameBuilder {
 
         P.setLife(1);
         addToLibrary(P, "Plains", 10);
-        createPermanent(game,P,"Rupture Spire",false,8);
+        createPermanent(P,"Rupture Spire",false,8);
         addToHand(P, "Stitch Together", 1);
         addToHand(P, "Electrickery", 1);
         addToGraveyard(P, "Aven Squire", 1);

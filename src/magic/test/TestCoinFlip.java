@@ -18,8 +18,8 @@ class TestCoinFlip extends TestGameBuilder {
 
         P.setLife(20);
         addToLibrary(P, "Mountain", 10);
-        createPermanent(game,P,"Mountain",false,20);
-        createPermanent(game,P,"Tavern Swindler",false,1);
+        createPermanent(P,"Mountain",false,20);
+        createPermanent(P,"Tavern Swindler",false,1);
         addToHand(P,"Scoria Wurm",1);
         addToHand(P, "Wild Wurm", 3);
         addToHand(P, "Molten Birth", 1);
@@ -29,9 +29,9 @@ class TestCoinFlip extends TestGameBuilder {
 
         P.setLife(20);
         addToLibrary(P, "Plains", 10);
-        createPermanent(game,P,"Mountain",false,20);
-        createPermanent(game,P,"Tavern Swindler",false,1);
-        createPermanent(game,P,"Creepy Doll",false,1);
+        createPermanent(P,"Mountain",false,20);
+        createPermanent(P,"Tavern Swindler",false,1);
+        createPermanent(P,"Creepy Doll",false,1);
         addToHand(P,"Scoria Wurm",1);
         addToHand(P, "Wild Wurm", 3);
 

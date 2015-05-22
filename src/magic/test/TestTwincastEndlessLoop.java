@@ -23,9 +23,9 @@ class TestTwincastEndlessLoop extends TestGameBuilder {
 
         P.setLife(6);
         addToLibrary(P, "Plains", 15);
-        createPermanent(game,P,"Rupture Spire",false,6);
-        createPermanent(game,P,"Wall of Diffusion",false,1);
-        createPermanent(game,P,"Eager Cadet",false,1);
+        createPermanent(P,"Rupture Spire",false,6);
+        createPermanent(P,"Wall of Diffusion",false,1);
+        createPermanent(P,"Eager Cadet",false,1);
         addToHand(P,"Twincast",1);
         addToHand(P,"Benalish Lancer",1);
         addToHand(P,"Accorder Paladin",1);
@@ -38,9 +38,9 @@ class TestTwincastEndlessLoop extends TestGameBuilder {
 
         P.setLife(12);
         addToLibrary(P, "Swamp", 15);
-        createPermanent(game,P,"Rupture Spire",false,4);
-        createPermanent(game,P,"Eager Cadet",false,1);
-        createPermanent(game,P,"Diregraf Ghoul",false,1);
+        createPermanent(P,"Rupture Spire",false,4);
+        createPermanent(P,"Eager Cadet",false,1);
+        createPermanent(P,"Diregraf Ghoul",false,1);
         addToHand(P,"Twincast",1);
 
         return game;

@@ -17,15 +17,15 @@ class TestExhaustion extends TestGameBuilder {
 
         P.setLife(20);
         addToLibrary(P, "Plains", 10);
-        createPermanent(game,P,"Rupture Spire",false,8);
-        createPermanent(game,P,"Grizzly Bears",false,1);
+        createPermanent(P,"Rupture Spire",false,8);
+        createPermanent(P,"Grizzly Bears",false,1);
         addToHand(P, "Brain Freeze", 1);
 
         P = opponent;
 
         P.setLife(3);
         addToLibrary(P, "Plains", 10);
-        createPermanent(game,P,"Rupture Spire",false,8);
+        createPermanent(P,"Rupture Spire",false,8);
         addToHand(P, "Exhaustion", 1);
 
         return game;

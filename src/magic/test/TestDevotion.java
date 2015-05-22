@@ -22,7 +22,7 @@ class TestDevotion extends TestGameBuilder {
         addToLibrary(P, "Sliver Overlord", 1);
         addToLibrary(P, "Wingsteed Rider", 1);
         addToGraveyard(P, "Ink-Eyes, Servant of Oni", 3);
-        createPermanent(game,P, "Rupture Spire", false, 9);
+        createPermanent(P, "Rupture Spire", false, 9);
         addToHand(P, "Rupture Spire", 1);
         addToHand(P, "Abhorrent Overlord", 1);
         addToHand(P, "Purphoros, God of the Forge", 1);
@@ -32,8 +32,8 @@ class TestDevotion extends TestGameBuilder {
 
         P.setLife(20);
         addToLibrary(P, "Mountain", 20);
-        createPermanent(game,P,"Rupture Spire",false,9);
-        createPermanent(game,P, "Grizzly Bears", false, 1);
+        createPermanent(P,"Rupture Spire",false,9);
+        createPermanent(P, "Grizzly Bears", false, 1);
         addToHand(P, "Trained Jackal", 1);
         addToGraveyard(P, "Ink-Eyes, Servant of Oni", 1);
 

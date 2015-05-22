@@ -17,15 +17,15 @@ class TestVinesOfVastwood extends TestGameBuilder {
 
         P.setLife(5);
         addToLibrary(P, "Swamp", 20);
-        createPermanent(game,P,"Rupture Spire",false,9);
+        createPermanent(P,"Rupture Spire",false,9);
         addToHand(P, "Vines of Vastwood", 1);
 
         P = opponent;
 
         P.setLife(5);
         addToLibrary(P, "Mountain", 20);
-        createPermanent(game,P,"Rupture Spire",false,9);
-        createPermanent(game,P,"Grizzly Bears",false,1);
+        createPermanent(P,"Rupture Spire",false,9);
+        createPermanent(P,"Grizzly Bears",false,1);
         addToHand(P, "Vines of Vastwood", 1);
 
         return game;

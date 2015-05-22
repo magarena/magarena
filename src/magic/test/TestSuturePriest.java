@@ -17,8 +17,8 @@ class TestSuturePriest extends TestGameBuilder {
 
         P.setLife(20);
         addToLibrary(P, "Plains", 10);
-        createPermanent(game,P,"Rupture Spire",false,8);
-        createPermanent(game,P,"Suture Priest",false,1);
+        createPermanent(P,"Rupture Spire",false,8);
+        createPermanent(P,"Suture Priest",false,1);
         addToHand(P,"Kor Firewalker",3);
         addToHand(P,"Sun Titan",3);
 
@@ -27,8 +27,8 @@ class TestSuturePriest extends TestGameBuilder {
 
         P.setLife(20);
         addToLibrary(P, "Plains", 10);
-        createPermanent(game,P,"Rupture Spire",false,8);
-        createPermanent(game,P,"Suture Priest",false,1);
+        createPermanent(P,"Rupture Spire",false,8);
+        createPermanent(P,"Suture Priest",false,1);
         addToHand(P,"Kor Firewalker",3);
         addToHand(P,"Sun Titan",3);
 

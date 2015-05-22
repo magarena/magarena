@@ -51,8 +51,8 @@ public abstract class TestGameBuilder {
         }
     }
 
-    public static MagicPermanent createPermanent(final MagicGame game, final MagicPlayer player, final String name, final boolean tapped, final int count) {
-
+    public static MagicPermanent createPermanent(final MagicPlayer player, final String name, final boolean tapped, final int count) {
+        final MagicGame game = player.getGame();
         final MagicCardDefinition cardDefinition=CardDefinitions.getCard(name);
         MagicPermanent lastPermanent= MagicPermanent.NONE;
         for (int c=count;c>0;c--) {
@@ -80,12 +80,12 @@ public abstract class TestGameBuilder {
         return lastPermanent;
     }
     
-    public static MagicPermanent createPermanent(final MagicGame game,final MagicPlayer player,final String name,final int amount){
-        return createPermanent(game,player,name,false,amount);
+    public static MagicPermanent createPermanent(final MagicPlayer player,final String name,final int amount){
+        return createPermanent(player,name,false,amount);
     }
     
-    public static MagicPermanent createPermanent(final MagicGame game,final MagicPlayer player,final String name){
-        return createPermanent(game,player,name,false,1);
+    public static MagicPermanent createPermanent(final MagicPlayer player,final String name){
+        return createPermanent(player,name,false,1);
     }
 
     protected abstract MagicGame getGame();

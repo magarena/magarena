@@ -18,8 +18,8 @@ class TestNyxathid extends TestGameBuilder {
 
         P.setLife(20);
         addToLibrary(P, "Mountain", 10);
-        createPermanent(game,P,"Rupture Spire",false,6);
-        createPermanent(game,P,"Nyxathid",false,1);
+        createPermanent(P,"Rupture Spire",false,6);
+        createPermanent(P,"Nyxathid",false,1);
         addToHand(P,"Eager Cadet",1);
 
 
@@ -27,8 +27,8 @@ class TestNyxathid extends TestGameBuilder {
 
         P.setLife(20);
         addToLibrary(P, "Mountain", 10);
-        createPermanent(game,P,"Rupture Spire",false,6);
-        createPermanent(game,P,"Eager Cadet",false,1);
+        createPermanent(P,"Rupture Spire",false,6);
+        createPermanent(P,"Eager Cadet",false,1);
         addToHand(P,"Sift",1);
         addToHand(P,"Mountain",3);
 

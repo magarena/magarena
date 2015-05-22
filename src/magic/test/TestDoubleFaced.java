@@ -17,8 +17,8 @@ class TestDoubleFaced extends TestGameBuilder {
 
         P.setLife(5);
         addToLibrary(P, "Forest", 20);
-        createPermanent(game,P, "Island", false, 8);
-        createPermanent(game,P, "Chromatic Lantern", false, 1);
+        createPermanent(P, "Island", false, 8);
+        createPermanent(P, "Chromatic Lantern", false, 1);
         addToHand(P, "Thraben Sentry", 2);
         addToHand(P, "Lightning Bolt", 1);
         addToHand(P, "Ludevic's Test Subject", 2);
@@ -27,8 +27,8 @@ class TestDoubleFaced extends TestGameBuilder {
 
         P.setLife(1);
         addToLibrary(P, "Forest", 20);
-        createPermanent(game,P, "Island", false, 8);
-        createPermanent(game,P, "Grizzly Bears", false, 1);
+        createPermanent(P, "Island", false, 8);
+        createPermanent(P, "Grizzly Bears", false, 1);
         addToHand(P, "Ludevic's Test Subject", 2);
 
         return game;

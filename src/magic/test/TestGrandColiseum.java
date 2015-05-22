@@ -18,14 +18,14 @@ class TestGrandColiseum extends TestGameBuilder {
 
         P.setLife(20);
         addToLibrary(P, "Plains", 10);
-        createPermanent(game,P,"Grand Coliseum",false,8);
+        createPermanent(P,"Grand Coliseum",false,8);
         addToHand(P,"Grizzly Bears",1);
 
         P = opponent;
 
         P.setLife(20);
         addToLibrary(P, "Plains", 10);
-        createPermanent(game,P,"Grand Coliseum",false,8);
+        createPermanent(P,"Grand Coliseum",false,8);
         addToHand(P,"Grizzly Bears",1);
 
         return game;

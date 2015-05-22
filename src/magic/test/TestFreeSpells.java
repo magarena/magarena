@@ -17,9 +17,9 @@ class TestFreeSpells extends TestGameBuilder {
 
         P.setLife(20);
         addToLibrary(P, "Plains", 10);
-        createPermanent(game,P,"Plains",false,10);
-        createPermanent(game,P,"Chromatic Lantern");
-        createPermanent(game,P,"Maelstrom Archangel");
+        createPermanent(P,"Plains",false,10);
+        createPermanent(P,"Chromatic Lantern");
+        createPermanent(P,"Maelstrom Archangel");
         addToHand(P,"Isochron Scepter",1);
         addToHand(P,"Spellbinder",1);
         addToHand(P,"Altar's Reap",1);
@@ -32,7 +32,7 @@ class TestFreeSpells extends TestGameBuilder {
 
         P.setLife(20);
         addToLibrary(P, "Plains", 10);
-        createPermanent(game,P,"Rupture Spire",false,8);
+        createPermanent(P,"Rupture Spire",false,8);
 
         return game;
     }

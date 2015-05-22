@@ -23,7 +23,7 @@ class TestPyroclasm extends TestGameBuilder {
         P.setLife(4);
         P.setPoison(6);
         addToLibrary(P,"Plains",10);
-        createPermanent(game,P,"Rupture Spire",false,1);
+        createPermanent(P,"Rupture Spire",false,1);
         addToHand(P,"Pyroclasm",2);
 
 
@@ -32,7 +32,7 @@ class TestPyroclasm extends TestGameBuilder {
         P.setLife(1);
         P.setPoison(8);
         addToLibrary(P,"Island",10);
-        createPermanent(game,P,"Rupture Spire",false,8);
+        createPermanent(P,"Rupture Spire",false,8);
         addToHand(P,"Llanowar Elves", 1);
         addToHand(P,"Mogg Fanatic", 1);
         addToHand(P,"Prickly Boggart", 1);

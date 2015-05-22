@@ -17,8 +17,8 @@ class TestGraveBetrayal extends TestGameBuilder {
 
         P.setLife(10);
         addToLibrary(P, "Mountain", 20);
-        createPermanent(game,P,"Mountain",false,8);
-        createPermanent(game,P,"Grave Betrayal",false,1);
+        createPermanent(P,"Mountain",false,8);
+        createPermanent(P,"Grave Betrayal",false,1);
         addToHand(P, "Scavenging Ooze", 1);
         addToHand(P, "Lightning Bolt", 1);
         addToHand(P, "Rise of the Hobgoblins", 3);
@@ -27,7 +27,7 @@ class TestGraveBetrayal extends TestGameBuilder {
 
         P.setLife(2);
         addToLibrary(P, "Mountain", 20);
-        createPermanent(game,P,"Mountain",false,9);
+        createPermanent(P,"Mountain",false,9);
         addToHand(P, "Rise of the Hobgoblins", 3);
 
         return game;

@@ -28,10 +28,10 @@ class TestSoulbond extends TestGameBuilder {
 
         P.setLife(12);
         addToLibrary(P,"Plains",15);
-        createPermanent(game,P,"Rupture Spire",false,8);
-        createPermanent(game,P,"Creeping Tar Pit",false,1);
-        createPermanent(game,P,"Wingcrafter",false,1);
-        createPermanent(game,P,"Wall of Stone",false,1);
+        createPermanent(P,"Rupture Spire",false,8);
+        createPermanent(P,"Creeping Tar Pit",false,1);
+        createPermanent(P,"Wingcrafter",false,1);
+        createPermanent(P,"Wall of Stone",false,1);
         addToHand(P,"Wingcrafter",1);
         addToHand(P,"Barony Vampire",1);
         addToHand(P,"Act of Treason",1);
@@ -43,10 +43,10 @@ class TestSoulbond extends TestGameBuilder {
 
         P.setLife(12);
         addToLibrary(P, "Swamp", 15);
-        createPermanent(game,P,"Rupture Spire",false,8);
-        createPermanent(game,P,"Assault Griffin",false,1);
-        createPermanent(game,P,"Hagra Diabolist",false,1);
-        final MagicPermanent la = createPermanent(game, P, "Legacy's Allure", false, 1);
+        createPermanent(P,"Rupture Spire",false,8);
+        createPermanent(P,"Assault Griffin",false,1);
+        createPermanent(P,"Hagra Diabolist",false,1);
+        final MagicPermanent la = createPermanent(P, "Legacy's Allure", false, 1);
         game.doAction(new ChangeCountersAction(la, MagicCounterType.Charge, 3));
         addToHand(P,"Wingcrafter",1);
         addToHand(P,"Eager Cadet",1);

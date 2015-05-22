@@ -21,9 +21,9 @@ class TestBowOfNylea extends TestGameBuilder {
         addToGraveyard(P, "Mountain", 10);
         addToGraveyard(P, "Lightning Bolt", 1);
         addToGraveyard(P, "Mountain", 10);
-        createPermanent(game,P, "Mountain", false, 8);
-        createPermanent(game,P, "Chromatic Lantern", false, 1);
-        createPermanent(game,P, "Bow of Nylea", false, 1);
+        createPermanent(P, "Mountain", false, 8);
+        createPermanent(P, "Chromatic Lantern", false, 1);
+        createPermanent(P, "Bow of Nylea", false, 1);
 
         P = opponent;
 
@@ -33,9 +33,9 @@ class TestBowOfNylea extends TestGameBuilder {
         addToGraveyard(P, "Mountain", 10);
         addToGraveyard(P, "Lightning Bolt", 1);
         addToGraveyard(P, "Mountain", 10);
-        createPermanent(game,P, "Mountain", false, 8);
-        createPermanent(game,P, "Chromatic Lantern", false, 1);
-        createPermanent(game,P, "Bow of Nylea", false, 1);
+        createPermanent(P, "Mountain", false, 8);
+        createPermanent(P, "Chromatic Lantern", false, 1);
+        createPermanent(P, "Bow of Nylea", false, 1);
 
         return game;
     }

@@ -17,18 +17,18 @@ class TestMCTS extends TestGameBuilder {
 
         P.setLife(4);
         addToLibrary(P, "Plains", 10);
-        createPermanent(game,P,"Rupture Spire",false,8);
-        createPermanent(game,P,"Hearthfire Hobgoblin", false, 4);
-        createPermanent(game,P,"Akrasan Squire", false, 4);
+        createPermanent(P,"Rupture Spire",false,8);
+        createPermanent(P,"Hearthfire Hobgoblin", false, 4);
+        createPermanent(P,"Akrasan Squire", false, 4);
 
 
         P = opponent;
 
         P.setLife(4);
         addToLibrary(P, "Plains", 10);
-        createPermanent(game,P,"Rupture Spire",false,8);
-        createPermanent(game,P,"Hearthfire Hobgoblin", false, 4);
-        createPermanent(game,P,"Akrasan Squire", false, 4);
+        createPermanent(P,"Rupture Spire",false,8);
+        createPermanent(P,"Hearthfire Hobgoblin", false, 4);
+        createPermanent(P,"Akrasan Squire", false, 4);
 
         return game;
     }

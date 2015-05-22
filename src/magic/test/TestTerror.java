@@ -17,16 +17,16 @@ class TestTerror extends TestGameBuilder {
 
         P.setLife(1);
         addToLibrary(P, "Plains", 10);
-        createPermanent(game,P,"Rupture Spire",false,8);
-        createPermanent(game,P,"Thieving Magpie",false,1);
+        createPermanent(P,"Rupture Spire",false,8);
+        createPermanent(P,"Thieving Magpie",false,1);
         addToHand(P,"Terror",1);
 
         P = opponent;
 
         P.setLife(20);
         addToLibrary(P, "Plains", 10);
-        createPermanent(game,P,"Rupture Spire",false,8);
-        createPermanent(game,P,"Thieving Magpie",false,1);
+        createPermanent(P,"Rupture Spire",false,8);
+        createPermanent(P,"Thieving Magpie",false,1);
 
         return game;
     }

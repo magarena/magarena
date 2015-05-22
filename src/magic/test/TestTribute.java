@@ -22,8 +22,8 @@ class TestTribute extends TestGameBuilder {
         addToLibrary(P, "Sliver Overlord", 1);
         addToLibrary(P, "Wingsteed Rider", 1);
         addToGraveyard(P, "Ink-Eyes, Servant of Oni", 3);
-        createPermanent(game,P, "Rupture Spire", false, 9);
-        createPermanent(game,P, "Hollowsage", false, 1);
+        createPermanent(P, "Rupture Spire", false, 9);
+        createPermanent(P, "Hollowsage", false, 1);
         addToHand(P, "Rupture Spire", 1);
         addToHand(P, "Fanatic of Xenagos", 1);
         addToHand(P, "Siren of the Fanged Coast", 1);
@@ -33,8 +33,8 @@ class TestTribute extends TestGameBuilder {
 
         P.setLife(6);
         addToLibrary(P, "Mountain", 20);
-        createPermanent(game,P,"Rupture Spire",false,9);
-        createPermanent(game,P, "Grizzly Bears", false, 1);
+        createPermanent(P,"Rupture Spire",false,9);
+        createPermanent(P, "Grizzly Bears", false, 1);
         addToHand(P, "Trained Jackal", 1);
         addToGraveyard(P, "Ink-Eyes, Servant of Oni", 1);
 

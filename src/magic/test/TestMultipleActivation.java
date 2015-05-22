@@ -18,14 +18,14 @@ class TestMultipleActivation extends TestGameBuilder {
 
         P.setLife(2);
         addToLibrary(P,"Swamp",10);
-        createPermanent(game,P,"Swamp",false,4);
-        createPermanent(game,P,"Nantuko Shade",false,1);
+        createPermanent(P,"Swamp",false,4);
+        createPermanent(P,"Nantuko Shade",false,1);
 
         P = player;
 
         P.setLife(10);
         addToLibrary(P,"Swamp",10);
-        createPermanent(game,P,"Swamp",true,10);
+        createPermanent(P,"Swamp",true,10);
         addToHand(P,"Wall of Reverence",1);
         addToHand(P,"Skithiryx, the Blight Dragon",1);
 

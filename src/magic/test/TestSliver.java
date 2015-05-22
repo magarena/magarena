@@ -17,18 +17,18 @@ class TestSliver extends TestGameBuilder {
 
         P.setLife(1);
         addToLibrary(P, "Island", 10);
-        createPermanent(game,P,"Island",false,20);
-        createPermanent(game,P,"Sliver Queen",false,1);
-        createPermanent(game,P,"Heart Sliver",false,1);
-        createPermanent(game,P,"Magma Sliver",false,1);
+        createPermanent(P,"Island",false,20);
+        createPermanent(P,"Sliver Queen",false,1);
+        createPermanent(P,"Heart Sliver",false,1);
+        createPermanent(P,"Magma Sliver",false,1);
 
 
         P = opponent;
 
         P.setLife(20);
         addToLibrary(P, "Plains", 10);
-        createPermanent(game,P,"Plains",false,10);
-        createPermanent(game,P,"Honor Guard",false,4);
+        createPermanent(P,"Plains",false,10);
+        createPermanent(P,"Honor Guard",false,4);
 
         return game;
     }

@@ -17,7 +17,7 @@ class TestCopyOverload extends TestGameBuilder {
 
         P.setLife(20);
         addToLibrary(P, "Plains", 20);
-        createPermanent(game,P,"Rupture Spire",false,8);
+        createPermanent(P,"Rupture Spire",false,8);
         addToHand(P, "Street Spasm", 1);
         addToHand(P, "Reverberate", 1);
 
@@ -25,8 +25,8 @@ class TestCopyOverload extends TestGameBuilder {
 
         P.setLife(20);
         addToLibrary(P, "Plains", 20);
-        createPermanent(game,P,"Rupture Spire",false,8);
-        createPermanent(game,P,"Grizzly Bears",false,2);
+        createPermanent(P,"Rupture Spire",false,8);
+        createPermanent(P,"Grizzly Bears",false,2);
 
         return game;
     }

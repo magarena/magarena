@@ -19,8 +19,8 @@ class TestAvarax extends TestGameBuilder {
         P.setLife(20);
         addToLibrary(P, "Avarax", 3);
         addToLibrary(P, "Plains", 10);
-        createPermanent(game,P,"Plains",false,8);
-        createPermanent(game,P,"Chromatic Lantern",false,1);
+        createPermanent(P,"Plains",false,8);
+        createPermanent(P,"Chromatic Lantern",false,1);
         addToHand(P,"Avarax",1);
         addToHand(P, "Borderland Ranger", 1);
 
@@ -29,7 +29,7 @@ class TestAvarax extends TestGameBuilder {
 
         P.setLife(20);
         addToLibrary(P, "Plains", 10);
-        createPermanent(game,P,"Rupture Spire",false,8);
+        createPermanent(P,"Rupture Spire",false,8);
 
         return game;
     }

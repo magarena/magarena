@@ -17,9 +17,9 @@ class TestMarch extends TestGameBuilder {
 
         P.setLife(1);
         addToLibrary(P, "Island", 10);
-        createPermanent(game,P,"Island",false,8);
-        createPermanent(game,P,"Chimeric Staff",false,1);
-        createPermanent(game,P,"Seat of the Synod",false,1);
+        createPermanent(P,"Island",false,8);
+        createPermanent(P,"Chimeric Staff",false,1);
+        createPermanent(P,"Seat of the Synod",false,1);
         addToHand(P,"Master of Etherium",1);
         addToHand(P,"March of the Machines",1);
 
@@ -28,7 +28,7 @@ class TestMarch extends TestGameBuilder {
 
         P.setLife(20);
         addToLibrary(P, "Plains", 10);
-        createPermanent(game,P,"Rupture Spire",false,8);
+        createPermanent(P,"Rupture Spire",false,8);
 
         return game;
     }

@@ -17,14 +17,14 @@ class TestAbilities extends TestGameBuilder {
 
         P.setLife(20);
         addToLibrary(P, "Plains", 10);
-        createPermanent(game,P,"Rupture Spire",false,20);
-        createPermanent(game,P,"Accorder Paladin",false,100);
-        createPermanent(game,P,"Lightning Greaves",false,1);
-        createPermanent(game,P,"Sword of Body and Mind",false,1);
-        createPermanent(game,P,"Darksteel Axe",false,1);
-        createPermanent(game,P,"Akroma's Memorial",false,1);
-        createPermanent(game,P,"Imperious Perfect",false,1);
-        createPermanent(game,P,"Imperious Perfect",false,1);
+        createPermanent(P,"Rupture Spire",false,20);
+        createPermanent(P,"Accorder Paladin",false,100);
+        createPermanent(P,"Lightning Greaves",false,1);
+        createPermanent(P,"Sword of Body and Mind",false,1);
+        createPermanent(P,"Darksteel Axe",false,1);
+        createPermanent(P,"Akroma's Memorial",false,1);
+        createPermanent(P,"Imperious Perfect",false,1);
+        createPermanent(P,"Imperious Perfect",false,1);
         addToHand(P,"Naturalize",5);
         addToHand(P,"Demystify",3);
         addToHand(P,"Doom Blade",5);
@@ -38,10 +38,10 @@ class TestAbilities extends TestGameBuilder {
 
         P.setLife(20);
         addToLibrary(P, "Plains", 10);
-        createPermanent(game,P,"Rupture Spire",false,8);
-        createPermanent(game,P,"Sword of Body and Mind",false,1);
-        createPermanent(game,P,"Bladed Pinions",false,1);
-        createPermanent(game,P,"Acidic Slime",false,3);
+        createPermanent(P,"Rupture Spire",false,8);
+        createPermanent(P,"Sword of Body and Mind",false,1);
+        createPermanent(P,"Bladed Pinions",false,1);
+        createPermanent(P,"Acidic Slime",false,3);
         addToHand(P,"Unquestioned Authority",1);
 
         return game;

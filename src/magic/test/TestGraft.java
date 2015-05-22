@@ -18,9 +18,9 @@ class TestGraft extends TestGameBuilder {
 
         P.setLife(20);
         addToLibrary(P, "Island", 10);
-        createPermanent(game,P,"Llanowar Reborn",false,2);
-        createPermanent(game,P,"Island",false,1);
-        createPermanent(game,P,"Forest",false,2);
+        createPermanent(P,"Llanowar Reborn",false,2);
+        createPermanent(P,"Island",false,1);
+        createPermanent(P,"Forest",false,2);
         addToHand(P, "Ethereal Ambush", 1);
 
         P = opponent;

@@ -17,7 +17,7 @@ class TestDragons extends TestGameBuilder {
 
         P.setLife(1);
         addToLibrary(P, "Plains", 10);
-        createPermanent(game,P,"Rupture Spire",false,8);
+        createPermanent(P,"Rupture Spire",false,8);
         addToHand(P,"Flameblast Dragon",1);
         addToHand(P,"Balefire Dragon",1);
 
@@ -26,7 +26,7 @@ class TestDragons extends TestGameBuilder {
 
         P.setLife(20);
         addToLibrary(P, "Plains", 10);
-        createPermanent(game,P,"Rupture Spire",false,8);
+        createPermanent(P,"Rupture Spire",false,8);
         addToHand(P,"Thieving Magpie",3);
 
         return game;

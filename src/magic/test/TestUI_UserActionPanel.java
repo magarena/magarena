@@ -19,10 +19,10 @@ class TestUI_UserActionPanel extends TestGameBuilder {
         P.setLife(20);
         addToLibrary(P, "Forest", 10);
         addToLibrary(P, "Adder-Staff Boggart", 1);
-        createPermanent(game, P, "Thousand Winds", false, 3);
-        createPermanent(game, P, "Island", false, 2);
-        createPermanent(game, P, "Mountain", false, 3);
-        createPermanent(game, P, "Forest", false, 2);
+        createPermanent(P, "Thousand Winds", false, 3);
+        createPermanent(P, "Island", false, 2);
+        createPermanent(P, "Mountain", false, 3);
+        createPermanent(P, "Forest", false, 2);
         addToHand(P, "Backslide", 1);
         addToHand(P, "Adder-Staff Boggart", 1);
         addToHand(P, "Joraga Warcaller", 1);

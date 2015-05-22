@@ -17,8 +17,8 @@ class TestMorph extends TestGameBuilder {
 
         P.setLife(5);
         addToLibrary(P, "Forest", 20);
-        createPermanent(game,P, "Thousand Winds", false, 3);
-        createPermanent(game,P, "Island", false, 6);
+        createPermanent(P, "Thousand Winds", false, 3);
+        createPermanent(P, "Island", false, 6);
         addToHand(P, "Backslide", 2);
 //        addToHand(P, "Lightning Bolt", 1);
 //        addToHand(P, "Ludevic's Test Subject", 2);
@@ -27,8 +27,8 @@ class TestMorph extends TestGameBuilder {
 
         P.setLife(1);
         addToLibrary(P, "Forest", 20);
-//        createPermanent(game,P, "Island", false, 8);
-//        createPermanent(game,P, "Grizzly Bears", false, 1);
+//        createPermanent(P, "Island", false, 8);
+//        createPermanent(P, "Grizzly Bears", false, 1);
         addToHand(P, "Ludevic's Test Subject", 2);
 
         return game;

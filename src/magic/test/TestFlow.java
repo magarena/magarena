@@ -18,9 +18,9 @@ class TestFlow extends TestGameBuilder {
         P.setLife(4);
         P.setPoison(0);
         addToLibrary(P,"Plains",10);
-        createPermanent(game,P,"Rupture Spire",false,8);
-        //createPermanent(game,P,"Grizzly Bears",false,1);
-        createPermanent(game,P,"Chameleon Colossus",false,1);
+        createPermanent(P,"Rupture Spire",false,8);
+        //createPermanent(P,"Grizzly Bears",false,1);
+        createPermanent(P,"Chameleon Colossus",false,1);
 
 
         P = opponent;
@@ -28,9 +28,9 @@ class TestFlow extends TestGameBuilder {
         P.setLife(2);
         P.setPoison(0);
         addToLibrary(P,"Island",10);
-        createPermanent(game,P,"Rupture Spire",false,5);
-        createPermanent(game,P,"Tectonic Edge",false,3);
-        createPermanent(game,P,"Grizzly Bears",false,1);
+        createPermanent(P,"Rupture Spire",false,5);
+        createPermanent(P,"Tectonic Edge",false,3);
+        createPermanent(P,"Grizzly Bears",false,1);
 
         return game;
     }

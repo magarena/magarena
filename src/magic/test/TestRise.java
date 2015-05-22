@@ -17,14 +17,14 @@ class TestRise extends TestGameBuilder {
 
         P.setLife(1);
         addToLibrary(P, "Plains", 10);
-        createPermanent(game,P,"Plains",false,1);
+        createPermanent(P,"Plains",false,1);
         addToHand(P,"Rise of the Hobgoblins",1);
 
         P = opponent;
 
         P.setLife(20);
         addToLibrary(P, "Plains", 10);
-        createPermanent(game,P,"Plains",false,1);
+        createPermanent(P,"Plains",false,1);
         addToHand(P,"Rise of the Hobgoblins",1);
 
         return game;

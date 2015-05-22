@@ -20,15 +20,15 @@ class TestMindRavel extends TestGameBuilder {
         P.setLife(13);
         addToLibrary(P, "Lightning Bolt", 10);
         addToGraveyard(P, "Lightning Bolt", 1);
-        createPermanent(game,P, "Mountain", false, 8);
-        createPermanent(game,P, "Chromatic Lantern", false, 1);
+        createPermanent(P, "Mountain", false, 8);
+        createPermanent(P, "Chromatic Lantern", false, 1);
         addToHand(P, "Mind Ravel", 2);
 
         P = opponent;
 
         P.setLife(13);
         addToLibrary(P, "Forest", 20);
-        createPermanent(game,P,"Forest",false,5);
+        createPermanent(P,"Forest",false,5);
         addToGraveyard(P, "Grizzly Bears", 1);
         addToHand(P, "Mind Ravel", 2);
 

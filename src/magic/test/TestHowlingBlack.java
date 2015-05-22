@@ -17,15 +17,15 @@ class TestHowlingBlack extends TestGameBuilder {
 
         P.setLife(5);
         addToLibrary(P, "Plains", 10);
-        createPermanent(game,P,"Rupture Spire",false,8);
-        createPermanent(game,P,"Howling Mine",false,1);
-        createPermanent(game,P,"Black Vise",false,1);
+        createPermanent(P,"Rupture Spire",false,8);
+        createPermanent(P,"Howling Mine",false,1);
+        createPermanent(P,"Black Vise",false,1);
 
         P = opponent;
 
         P.setLife(5);
         addToLibrary(P, "Plains", 10);
-        createPermanent(game,P,"Rupture Spire",false,8);
+        createPermanent(P,"Rupture Spire",false,8);
 
         return game;
     }

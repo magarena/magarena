@@ -18,10 +18,10 @@ class TestBlockerOrder extends TestGameBuilder {
         P.setLife(4);
         P.setPoison(0);
         addToLibrary(P,"Plains",10);
-        createPermanent(game,P,"Rupture Spire",false,8);
-        createPermanent(game,P,"Grizzly Bears",false,1);
-        createPermanent(game,P,"Akrasan Squire",false,1);
-        createPermanent(game,P,"Birds of Paradise",false,1);
+        createPermanent(P,"Rupture Spire",false,8);
+        createPermanent(P,"Grizzly Bears",false,1);
+        createPermanent(P,"Akrasan Squire",false,1);
+        createPermanent(P,"Birds of Paradise",false,1);
         addToHand(P, "Giant Growth", 3);
 
         P = opponent;
@@ -29,9 +29,9 @@ class TestBlockerOrder extends TestGameBuilder {
         P.setLife(2);
         P.setPoison(0);
         addToLibrary(P,"Island",10);
-        createPermanent(game,P,"Rupture Spire",false,5);
-        createPermanent(game,P,"Yavimaya Wurm",false,1);
-        createPermanent(game,P,"Yavimaya Wurm",false,1);
+        createPermanent(P,"Rupture Spire",false,5);
+        createPermanent(P,"Yavimaya Wurm",false,1);
+        createPermanent(P,"Yavimaya Wurm",false,1);
 
         return game;
     }

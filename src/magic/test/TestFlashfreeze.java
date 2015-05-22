@@ -23,7 +23,7 @@ class TestFlashfreeze extends TestGameBuilder {
         P.setLife(4);
         P.setPoison(0);
         addToLibrary(P,"Plains",10);
-        createPermanent(game,P,"Rupture Spire",false,8);
+        createPermanent(P,"Rupture Spire",false,8);
         addToHand(P,"Flashfreeze",3);
 
 
@@ -32,8 +32,8 @@ class TestFlashfreeze extends TestGameBuilder {
         P.setLife(4);
         P.setPoison(0);
         addToLibrary(P,"Island",10);
-        createPermanent(game,P,"Rupture Spire",false,5);
-        createPermanent(game,P,"Tectonic Edge",false,3);
+        createPermanent(P,"Rupture Spire",false,5);
+        createPermanent(P,"Tectonic Edge",false,3);
         addToHand(P,"Llanowar Elves", 1);
         addToHand(P,"Mogg Fanatic", 1);
         addToHand(P,"Prickly Boggart", 1);

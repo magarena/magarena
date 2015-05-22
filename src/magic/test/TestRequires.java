@@ -17,7 +17,7 @@ class TestRequires extends TestGameBuilder {
 
         P.setLife(1);
         addToLibrary(P, "Plains", 10);
-        createPermanent(game,P,"Rupture Spire",false,8);
+        createPermanent(P,"Rupture Spire",false,8);
         addToHand(P,"Griptide",1);
         addToHand(P,"Holy Day",1);
         addToHand(P,"Twincast",1);
@@ -27,7 +27,7 @@ class TestRequires extends TestGameBuilder {
 
         P.setLife(20);
         addToLibrary(P, "Plains", 10);
-        createPermanent(game,P,"Rupture Spire",false,8);
+        createPermanent(P,"Rupture Spire",false,8);
         addToHand(P,"Thieving Magpie",3);
 
         return game;

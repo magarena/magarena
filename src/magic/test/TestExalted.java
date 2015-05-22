@@ -17,7 +17,7 @@ class TestExalted extends TestGameBuilder {
 
         P.setLife(20);
         addToLibrary(P, "Plains", 10);
-        createPermanent(game,P,"Rhox Charger",false,2);
+        createPermanent(P,"Rhox Charger",false,2);
 
 
         P = opponent;

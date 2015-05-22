@@ -20,15 +20,15 @@ class TestManifest extends TestGameBuilder {
         P.setLife(10);
         addToLibrary(P, "Wolf-Skull Shaman", 1);
         addToLibrary(P, "Carrion Crow", 1);
-        createPermanent(game,P, "Plains", false, 8);
-        createPermanent(game,P, "Chromatic Lantern", false, 1);
+        createPermanent(P, "Plains", false, 8);
+        createPermanent(P, "Chromatic Lantern", false, 1);
         addToHand(P, "Ethereal Ambush", 1);
 
         P = opponent;
 
         P.setLife(10);
         addToLibrary(P, "Forest", 20);
-        createPermanent(game,P, "Grizzly Bears", false, 1);
+        createPermanent(P, "Grizzly Bears", false, 1);
 
         return game;
     }

@@ -17,16 +17,16 @@ class TestKessigWolfRun extends TestGameBuilder {
 
         P.setLife(20);
         addToLibrary(P, "Plains", 10);
-        createPermanent(game,P,"Mountain",false,1);
-        createPermanent(game,P,"Forest",false,1);
-        createPermanent(game,P,"Kessig Wolf Run",false,1);
-        createPermanent(game,P,"Grizzly Bears",false,1);
+        createPermanent(P,"Mountain",false,1);
+        createPermanent(P,"Forest",false,1);
+        createPermanent(P,"Kessig Wolf Run",false,1);
+        createPermanent(P,"Grizzly Bears",false,1);
 
         P = opponent;
 
         P.setLife(1);
         addToLibrary(P, "Plains", 10);
-        createPermanent(game,P,"Rupture Spire",false,8);
+        createPermanent(P,"Rupture Spire",false,8);
 
         return game;
     }

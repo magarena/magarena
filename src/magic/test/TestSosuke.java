@@ -19,16 +19,16 @@ class TestSosuke extends TestGameBuilder {
         P.setLife(6);
         addToLibrary(P, "Forest", 20);
         addToLibrary(P, "Island", 20);
-        createPermanent(game,P,"Rupture Spire",false,9);
-        createPermanent(game,P, "Sosuke, Son of Seshiro", false, 1);
+        createPermanent(P,"Rupture Spire",false,9);
+        createPermanent(P, "Sosuke, Son of Seshiro", false, 1);
         addToHand(P, "Lightning Bolt", 1);
 
         P = opponent;
 
         P.setLife(6);
         addToLibrary(P, "Mountain", 20);
-        createPermanent(game,P,"Rupture Spire",false,9);
-        createPermanent(game,P, "Grizzly Bears", false, 1);
+        createPermanent(P,"Rupture Spire",false,9);
+        createPermanent(P, "Grizzly Bears", false, 1);
         addToGraveyard(P, "Ink-Eyes, Servant of Oni", 1);
 
         return game;

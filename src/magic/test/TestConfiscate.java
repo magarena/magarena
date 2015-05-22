@@ -17,8 +17,8 @@ class TestConfiscate extends TestGameBuilder {
 
         P.setLife(10);
         addToLibrary(P, "Plains", 20);
-        createPermanent(game,P,"Rupture Spire",false,8);
-        createPermanent(game,P,"Grizzly Bears",false,1);
+        createPermanent(P,"Rupture Spire",false,8);
+        createPermanent(P,"Grizzly Bears",false,1);
         addToHand(P,"Confiscate",1);
 
 
@@ -26,8 +26,8 @@ class TestConfiscate extends TestGameBuilder {
 
         P.setLife(10);
         addToLibrary(P, "Plains", 20);
-        createPermanent(game,P,"Rupture Spire",false,8);
-        createPermanent(game,P,"Serra Angel",false,1);
+        createPermanent(P,"Rupture Spire",false,8);
+        createPermanent(P,"Serra Angel",false,1);
         addToHand(P,"Sword of Body and Mind",1);
 
         return game;

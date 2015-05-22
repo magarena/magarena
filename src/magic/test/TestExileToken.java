@@ -17,7 +17,7 @@ class TestExileToken extends TestGameBuilder {
 
         P.setLife(20);
         addToLibrary(P, "Plains", 10);
-        createPermanent(game,P,"Rupture Spire",false,8);
+        createPermanent(P,"Rupture Spire",false,8);
         addToHand(P,"Journey to Nowhere",1);
         addToHand(P,"Naturalize",1);
 
@@ -26,7 +26,7 @@ class TestExileToken extends TestGameBuilder {
 
         P.setLife(20);
         addToLibrary(P, "Plains", 10);
-        createPermanent(game,P,"Rupture Spire",false,8);
+        createPermanent(P,"Rupture Spire",false,8);
         addToHand(P,"Rise of the Hobgoblins",1);
 
         return game;

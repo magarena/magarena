@@ -17,9 +17,9 @@ class TestMCTSCrash extends TestGameBuilder {
 
         P.setLife(20);
         addToLibrary(P, "Plains", 10);
-        createPermanent(game,P,"Rupture Spire",false,8);
-        createPermanent(game,P,"Sword of Feast and Famine",false,2);
-        createPermanent(game,P,"Marisi's Twinclaws",false, 2);
+        createPermanent(P,"Rupture Spire",false,8);
+        createPermanent(P,"Sword of Feast and Famine",false,2);
+        createPermanent(P,"Marisi's Twinclaws",false, 2);
 
 
         P = opponent;
@@ -27,9 +27,9 @@ class TestMCTSCrash extends TestGameBuilder {
         P.setLife(20);
         addToLibrary(P, "Plains", 10);
         addToHand(P, "Plains", 10);
-        createPermanent(game,P,"Rupture Spire",false,8);
-        createPermanent(game,P,"Mogg Fanatic", false, 1);
-        createPermanent(game,P,"Knight of Meadowgrain", false, 2);
+        createPermanent(P,"Rupture Spire",false,8);
+        createPermanent(P,"Mogg Fanatic", false, 1);
+        createPermanent(P,"Knight of Meadowgrain", false, 2);
 
         return game;
     }

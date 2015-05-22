@@ -17,11 +17,11 @@ class TestGainControl extends TestGameBuilder {
 
         P.setLife(20);
         addToLibrary(P, "Plains", 10);
-        createPermanent(game,P,"Rupture Spire",false,8);
-        createPermanent(game,P,"Creeping Tar Pit",false,1);
-        createPermanent(game,P,"Raging Ravine",false,1);
-        createPermanent(game,P,"Memnarch",false,1);
-        createPermanent(game,P,"Grizzly Bears",false,3);
+        createPermanent(P,"Rupture Spire",false,8);
+        createPermanent(P,"Creeping Tar Pit",false,1);
+        createPermanent(P,"Raging Ravine",false,1);
+        createPermanent(P,"Memnarch",false,1);
+        createPermanent(P,"Grizzly Bears",false,3);
         addToHand(P,"Act of Treason",1);
         addToHand(P,"Threaten",1);
         addToHand(P,"Slave of Bolas",1);
@@ -38,9 +38,9 @@ class TestGainControl extends TestGameBuilder {
 
         P.setLife(20);
         addToLibrary(P, "Plains", 10);
-        createPermanent(game,P,"Rupture Spire",false,8);
-        createPermanent(game,P,"Grizzly Bears",false,3);
-        createPermanent(game,P,"Helm of Kaldra",false,1);
+        createPermanent(P,"Rupture Spire",false,8);
+        createPermanent(P,"Grizzly Bears",false,3);
+        createPermanent(P,"Helm of Kaldra",false,1);
 
         return game;
     }

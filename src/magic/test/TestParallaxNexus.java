@@ -17,14 +17,14 @@ class TestParallaxNexus extends TestGameBuilder {
 
         P.setLife(10);
         addToLibrary(P, "Plains", 10);
-        createPermanent(game,P,"Rupture Spire",false,8);
+        createPermanent(P,"Rupture Spire",false,8);
         addToHand(P, "Parallax Nexus", 1);
 
         P = opponent;
 
         P.setLife(10);
         addToLibrary(P, "Plains", 10);
-        createPermanent(game,P,"Rupture Spire",false,8);
+        createPermanent(P,"Rupture Spire",false,8);
         addToHand(P, "Grizzly Bears", 1);
         addToHand(P, "Parallax Nexus", 1);
 

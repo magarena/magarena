@@ -17,8 +17,8 @@ class TestLegacysAllure extends TestGameBuilder {
 
         P.setLife(9);
         addToLibrary(P, "Plains", 20);
-        createPermanent(game,P,"Rupture Spire",false,8);
-        createPermanent(game,P,"Legacy's Allure",false,1);
+        createPermanent(P,"Rupture Spire",false,8);
+        createPermanent(P,"Legacy's Allure",false,1);
         addToHand(P,"Giant Growth",1);
 
 
@@ -26,8 +26,8 @@ class TestLegacysAllure extends TestGameBuilder {
 
         P.setLife(10);
         addToLibrary(P, "Plains", 20);
-        createPermanent(game,P,"Rupture Spire",false,8);
-        createPermanent(game,P,"Steward of Valeron",false,2);
+        createPermanent(P,"Rupture Spire",false,8);
+        createPermanent(P,"Steward of Valeron",false,2);
 
         return game;
     }

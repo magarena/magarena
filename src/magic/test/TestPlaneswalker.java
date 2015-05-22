@@ -17,8 +17,8 @@ class TestPlaneswalker extends TestGameBuilder {
 
         P.setLife(20);
         addToLibrary(P, "Plains", 10);
-        createPermanent(game,P,"Rupture Spire",false,10);
-        createPermanent(game,P,"Grizzly Bears",false,1);
+        createPermanent(P,"Rupture Spire",false,10);
+        createPermanent(P,"Grizzly Bears",false,1);
         addToHand(P, "Ajani, Caller of the Pride", 1);
         addToHand(P, "Sarkhan Vol", 1);
         addToHand(P, "Tamiyo, the Moon Sage", 1);
@@ -33,8 +33,8 @@ class TestPlaneswalker extends TestGameBuilder {
 
         P.setLife(10);
         addToLibrary(P, "Plains", 10);
-        createPermanent(game,P,"Rupture Spire",false,8);
-        //createPermanent(game,P,"Grizzly Bears",false,1);
+        createPermanent(P,"Rupture Spire",false,8);
+        //createPermanent(P,"Grizzly Bears",false,1);
         addToHand(P, "Elspeth, Knight-Errant", 1);
         addToHand(P, "Ajani Goldmane", 1);
         addToHand(P, "Garruk, Primal Hunter", 1);

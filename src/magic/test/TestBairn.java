@@ -18,15 +18,15 @@ class TestBairn extends TestGameBuilder {
 
         P.setLife(20);
         addToLibrary(P, "Forest", 20);
-        createPermanent(game, P, "Wall of Denial", 5);
+        createPermanent(P, "Wall of Denial", 5);
 
         P = opponent;
 
         P.setLife(20);
         addToLibrary(P, "Island", 20);
-        createPermanent(game, P, "Island", 10);
-        createPermanent(game, P, "Gilder Bairn");
-        createPermanent(game, P, "Paradise Mantle", 1);
+        createPermanent(P, "Island", 10);
+        createPermanent(P, "Gilder Bairn");
+        createPermanent(P, "Paradise Mantle", 1);
         addToHand(P, "Simic Initiate", 4);
 
         return game;

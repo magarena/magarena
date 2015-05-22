@@ -17,14 +17,14 @@ class TestGhostCouncil extends TestGameBuilder {
 
         P.setLife(2);
         addToLibrary(P,"Swamp",10);
-        createPermanent(game,P,"Swamp",false,4);
-        createPermanent(game,P,"Ghost Council of Orzhova",false,1);
+        createPermanent(P,"Swamp",false,4);
+        createPermanent(P,"Ghost Council of Orzhova",false,1);
 
         P = player;
 
         P.setLife(5);
         addToLibrary(P,"Mountain",10);
-        createPermanent(game,P,"Mountain",false,4);
+        createPermanent(P,"Mountain",false,4);
         addToHand(P,"Act of Treason",1);
 
         return game;

@@ -19,8 +19,8 @@ class TestCascade extends TestGameBuilder {
         addToLibrary(P, "Lightning Bolt", 1);
         addToLibrary(P, "Fling", 1);
         addToGraveyard(P, "Lightning Bolt", 1);
-        createPermanent(game,P, "Mountain", false, 8);
-        createPermanent(game,P, "Chromatic Lantern", false, 1);
+        createPermanent(P, "Mountain", false, 8);
+        createPermanent(P, "Chromatic Lantern", false, 1);
         addToHand(P, "Bloodbraid Elf", 1);
 
         P = opponent;
@@ -29,8 +29,8 @@ class TestCascade extends TestGameBuilder {
         addToLibrary(P, "Forest", 20);
         addToLibrary(P, "Grizzly Bears", 1);
         addToHand(P, "Brainbite", 1);
-        createPermanent(game,P,"Forest",false,5);
-        createPermanent(game,P, "Glasses of Urza", false, 1);
+        createPermanent(P,"Forest",false,5);
+        createPermanent(P, "Glasses of Urza", false, 1);
         addToGraveyard(P, "Grizzly Bears", 1);
 
         return game;

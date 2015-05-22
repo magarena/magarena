@@ -18,16 +18,16 @@ class TestObstinateBaloth extends TestGameBuilder {
         P.setLife(6);
         addToLibrary(P, "Forest", 20);
         addToLibrary(P, "Island", 20);
-        createPermanent(game,P,"Rupture Spire",false,9);
-        createPermanent(game,P, "Grizzly Bears", false, 2);
+        createPermanent(P,"Rupture Spire",false,9);
+        createPermanent(P, "Grizzly Bears", false, 2);
         addToHand(P, "Mind Rot", 1);
 
         P = opponent;
 
         P.setLife(6);
         addToLibrary(P, "Mountain", 20);
-        createPermanent(game,P,"Rupture Spire",false,9);
-        createPermanent(game,P, "Blight Mamba", false, 1);
+        createPermanent(P,"Rupture Spire",false,9);
+        createPermanent(P, "Blight Mamba", false, 1);
         addToHand(P, "Obstinate Baloth", 2);
 
         return game;

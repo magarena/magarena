@@ -17,8 +17,8 @@ class TestGethsVerdict extends TestGameBuilder {
 
         P.setLife(20);
         addToLibrary(P, "Plains", 10);
-        createPermanent(game,P,"Rupture Spire",false,8);
-        createPermanent(game,P,"Sun Titan",false,1);
+        createPermanent(P,"Rupture Spire",false,8);
+        createPermanent(P,"Sun Titan",false,1);
         addToHand(P,"Geth's Verdict",1);
         addToHand(P,"Gatekeeper of Malakir",1);
 
@@ -27,8 +27,8 @@ class TestGethsVerdict extends TestGameBuilder {
 
         P.setLife(20);
         addToLibrary(P, "Plains", 10);
-        createPermanent(game,P,"Rupture Spire",false,8);
-        createPermanent(game,P,"Sun Titan",false,1);
+        createPermanent(P,"Rupture Spire",false,8);
+        createPermanent(P,"Sun Titan",false,1);
         addToHand(P,"Geth's Verdict",1);
         addToHand(P,"Gatekeeper of Malakir",1);
 

@@ -23,12 +23,12 @@ class TestCunningSparkmage extends TestGameBuilder {
         // Library
         addToLibrary(P, "Forest", 10);
         // Battlefield
-        createPermanent(game, P, "Forest", false, 6);
-        createPermanent(game, P, "Quest for the Gemblades", false, 1);
-        createPermanent(game, P, "3/3 green Elephant creature token", false, 1);
-        createPermanent(game, P, "1/1 green Snake creature token", false, 1);
-        createPermanent(game, P, "Strangleroot Geist", false, 2);
-        createPermanent(game, P, "2/2 green Wolf creature token", false, 1);
+        createPermanent(P, "Forest", false, 6);
+        createPermanent(P, "Quest for the Gemblades", false, 1);
+        createPermanent(P, "3/3 green Elephant creature token", false, 1);
+        createPermanent(P, "1/1 green Snake creature token", false, 1);
+        createPermanent(P, "Strangleroot Geist", false, 2);
+        createPermanent(P, "2/2 green Wolf creature token", false, 1);
         // Hand
         addToHand(P, "Forest", 1);
         addToHand(P, "Penumbra Spider", 1);
@@ -43,13 +43,13 @@ class TestCunningSparkmage extends TestGameBuilder {
         addToLibrary(P, "Mountain", 10);
         addToLibrary(P, "Swamp", 10);
         // Battlefield
-        createPermanent(game, P, "Blood Crypt", true, 1);
-        createPermanent(game, P, "Dragonskull Summit", false, 1);
-        createPermanent(game, P, "Mountain", true, 1);
-        createPermanent(game, P, "Rakdos Guildgate", false, 1);
-        createPermanent(game, P, "Cunning Sparkmage", false, 1);
-        createPermanent(game, P, "Ember Hauler", false, 1);
-        createPermanent(game, P, "Lavaborn Muse", false, 1);
+        createPermanent(P, "Blood Crypt", true, 1);
+        createPermanent(P, "Dragonskull Summit", false, 1);
+        createPermanent(P, "Mountain", true, 1);
+        createPermanent(P, "Rakdos Guildgate", false, 1);
+        createPermanent(P, "Cunning Sparkmage", false, 1);
+        createPermanent(P, "Ember Hauler", false, 1);
+        createPermanent(P, "Lavaborn Muse", false, 1);
         // Hand
         addToHand(P, "Mountain", 2);
 

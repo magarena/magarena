@@ -22,18 +22,18 @@ class TestProtection extends TestGameBuilder {
         addToLibrary(P, "Sliver Overlord", 1);
         addToLibrary(P, "Wingsteed Rider", 1);
         addToGraveyard(P, "Ink-Eyes, Servant of Oni", 3);
-        createPermanent(game,P, "Rupture Spire", false, 9);
-        createPermanent(game,P, "Tower of the Magistrate", false, 1);
-        createPermanent(game,P, "Dragon Blood", false, 1);
-        createPermanent(game,P, "Grizzly Bears", false, 1);
+        createPermanent(P, "Rupture Spire", false, 9);
+        createPermanent(P, "Tower of the Magistrate", false, 1);
+        createPermanent(P, "Dragon Blood", false, 1);
+        createPermanent(P, "Grizzly Bears", false, 1);
         addToHand(P, "Rupture Spire", 1);
 
         P = opponent;
 
         P.setLife(6);
         addToLibrary(P, "Mountain", 20);
-        createPermanent(game,P,"Rupture Spire",false,9);
-        createPermanent(game,P, "Grizzly Bears", false, 1);
+        createPermanent(P,"Rupture Spire",false,9);
+        createPermanent(P, "Grizzly Bears", false, 1);
         addToHand(P, "Trained Jackal", 1);
         addToGraveyard(P, "Ink-Eyes, Servant of Oni", 1);
 

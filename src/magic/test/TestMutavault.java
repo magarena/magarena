@@ -19,7 +19,7 @@ class TestMutavault extends TestGameBuilder {
         P.setLife(4);
         P.setPoison(6);
         addToLibrary(P,"Plains",10);
-        createPermanent(game,P,"Rupture Spire",false,1);
+        createPermanent(P,"Rupture Spire",false,1);
         addToHand(P,"Mutavault",2);
 
 
@@ -28,8 +28,8 @@ class TestMutavault extends TestGameBuilder {
         P.setLife(1);
         P.setPoison(8);
         addToLibrary(P,"Island",10);
-        createPermanent(game,P,"Rupture Spire",false,3);
-        createPermanent(game,P,"Tectonic Edge",false,3);
+        createPermanent(P,"Rupture Spire",false,3);
+        createPermanent(P,"Tectonic Edge",false,3);
         addToHand(P,"Vines of Vastwood",1);
         addToHand(P,"Inkwell Leviathan",1);
 

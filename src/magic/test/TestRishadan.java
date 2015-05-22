@@ -20,11 +20,11 @@ class TestRishadan extends TestGameBuilder {
 
         P.setLife(15);
         addToLibrary(P, "Forest", 22);
-        createPermanent(game,P,"Forest",false,4);
-        createPermanent(game,P,"Swamp",false,4);
-        createPermanent(game,P,"Skyshroud Sentinel",false,1);
-        createPermanent(game,P,"Vampire Hounds",true,1);
-        createPermanent(game,P,"Soldevi Digger",false,1);
+        createPermanent(P,"Forest",false,4);
+        createPermanent(P,"Swamp",false,4);
+        createPermanent(P,"Skyshroud Sentinel",false,1);
+        createPermanent(P,"Vampire Hounds",true,1);
+        createPermanent(P,"Soldevi Digger",false,1);
         addToHand(P,"Howling Wolf",3);
         addToHand(P,"Skyshroud Sentinel",2);
         
@@ -42,13 +42,13 @@ class TestRishadan extends TestGameBuilder {
         P.setLife(8);
         addToLibrary(P, "Forest", 19);
         addToHand(P, "Vampire Hounds",1);
-        createPermanent(game,P,"Forest",false,1);
-        createPermanent(game,P,"Bayou",false,2);
-        createPermanent(game,P,"Swamp",false,4);
-        createPermanent(game,P,"Vampire Hounds",false,2);
-        createPermanent(game,P,"Skyshroud Sentinel",false,2);
-        createPermanent(game,P,"Howling Wolf",false,1);
-        createPermanent(game,P,"Rishadan Pawnshop",false,1);
+        createPermanent(P,"Forest",false,1);
+        createPermanent(P,"Bayou",false,2);
+        createPermanent(P,"Swamp",false,4);
+        createPermanent(P,"Vampire Hounds",false,2);
+        createPermanent(P,"Skyshroud Sentinel",false,2);
+        createPermanent(P,"Howling Wolf",false,1);
+        createPermanent(P,"Rishadan Pawnshop",false,1);
         addToHand(P,"Exhume",1);
         addToGraveyard(P, "Exhume", 2);
 

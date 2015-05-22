@@ -19,17 +19,17 @@ class TestVarolz extends TestGameBuilder {
         P.setLife(10);
         addToLibrary(P, "Mountain", 20);
         addToGraveyard(P, "Vexing Devil", 1);
-        createPermanent(game,P,"Rupture Spire",false,9);
-        createPermanent(game,P,"Vigor",false,1);
-        createPermanent(game,P,"Goblin King",false,1);
+        createPermanent(P,"Rupture Spire",false,9);
+        createPermanent(P,"Vigor",false,1);
+        createPermanent(P,"Goblin King",false,1);
         addToHand(P, "Varolz, the Scar-Striped", 1);
 
         P = opponent;
 
         P.setLife(10);
         addToLibrary(P, "Mountain", 20);
-        createPermanent(game,P,"Rupture Spire",false,9);
-        createPermanent(game,P,"Goblin King",false,2);
+        createPermanent(P,"Rupture Spire",false,9);
+        createPermanent(P,"Goblin King",false,2);
         addToHand(P, "Grizzly Bears", 2);
 
         return game;

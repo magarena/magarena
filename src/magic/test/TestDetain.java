@@ -18,8 +18,8 @@ class TestDetain extends TestGameBuilder {
 
         P.setLife(1);
         addToLibrary(P, "Plains", 10);
-        createPermanent(game,P,"Rupture Spire",false,8);
-        createPermanent(game,P,"Arbor Elf",false,1);
+        createPermanent(P,"Rupture Spire",false,8);
+        createPermanent(P,"Arbor Elf",false,1);
         addToHand(P, "Azorius Arrester", 1);
         addToHand(P, "Isperia's Skywatch", 1);
         addToHand(P, "Soulsworn Spirit", 1);
@@ -32,9 +32,9 @@ class TestDetain extends TestGameBuilder {
 
         P.setLife(1);
         addToLibrary(P, "Plains", 10);
-        createPermanent(game,P,"Rupture Spire",false,1);
-        createPermanent(game,P,"Forest",true,1);
-        createPermanent(game,P,"Shivan Hellkite",false,1);
+        createPermanent(P,"Rupture Spire",false,1);
+        createPermanent(P,"Forest",true,1);
+        createPermanent(P,"Shivan Hellkite",false,1);
 
         return game;
     }

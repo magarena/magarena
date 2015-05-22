@@ -17,16 +17,16 @@ class TestDelayedTrigger extends TestGameBuilder {
 
         P.setLife(13);
         addToLibrary(P, "Forest", 20);
-        createPermanent(game,P, "Forest", false, 8);
-        createPermanent(game,P, "Chromatic Lantern", false, 1);
-        createPermanent(game,P, "Duskmantle Guildmage", false, 1);
-        createPermanent(game,P, "Vizkopa Guildmage",false,1);
+        createPermanent(P, "Forest", false, 8);
+        createPermanent(P, "Chromatic Lantern", false, 1);
+        createPermanent(P, "Duskmantle Guildmage", false, 1);
+        createPermanent(P, "Vizkopa Guildmage",false,1);
 
         P = opponent;
 
         P.setLife(13);
         addToLibrary(P, "Forest", 20);
-        createPermanent(game,P,"Rupture Spire",false,5);
+        createPermanent(P,"Rupture Spire",false,5);
 
         return game;
     }

@@ -17,7 +17,7 @@ class TestArcboundOverseer extends TestGameBuilder {
 
         P.setLife(20);
         addToLibrary(P, "Plains", 10);
-        createPermanent(game,P,"Rupture Spire",false,8);
+        createPermanent(P,"Rupture Spire",false,8);
         addToHand(P, "Arcbound Overseer", 1);
         addToHand(P, "Arcbound Ravager", 1);
 
@@ -25,7 +25,7 @@ class TestArcboundOverseer extends TestGameBuilder {
 
         P.setLife(1);
         addToLibrary(P, "Plains", 10);
-        createPermanent(game,P,"Rupture Spire",false,8);
+        createPermanent(P,"Rupture Spire",false,8);
 
         return game;
     }

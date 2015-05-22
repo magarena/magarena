@@ -17,8 +17,8 @@ class TestStorm extends TestGameBuilder {
 
         P.setLife(20);
         addToLibrary(P, "Plains", 10);
-        createPermanent(game,P,"Island",false,8);
-        createPermanent(game,P,"Grizzly Bears",false,2);
+        createPermanent(P,"Island",false,8);
+        createPermanent(P,"Grizzly Bears",false,2);
         addToHand(P, "Astral Steel", 3);
         addToHand(P, "Brain Freeze", 3);
         addToHand(P, "Flusterstorm", 3);
@@ -27,7 +27,7 @@ class TestStorm extends TestGameBuilder {
 
         P.setLife(1);
         addToLibrary(P, "Plains", 10);
-        createPermanent(game,P,"Island",false,8);
+        createPermanent(P,"Island",false,8);
         //addToHand(P, "Flusterstorm", 3);
 
         return game;

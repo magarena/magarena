@@ -17,10 +17,10 @@ class TestCrumbling extends TestGameBuilder {
 
         P.setLife(20);
         addToLibrary(P, "Plains", 10);
-        createPermanent(game,P,"Plains",false,8);
-        createPermanent(game,P,"Chromatic Lantern");
-        createPermanent(game,P,"Crumbling Sanctuary");
-        createPermanent(game,P,"Samite Healer");
+        createPermanent(P,"Plains",false,8);
+        createPermanent(P,"Chromatic Lantern");
+        createPermanent(P,"Crumbling Sanctuary");
+        createPermanent(P,"Samite Healer");
         addToHand(P, "Palisade Giant", 1);
         addToHand(P, "Lightning Helix", 1);
 
@@ -28,7 +28,7 @@ class TestCrumbling extends TestGameBuilder {
 
         P.setLife(20);
         addToLibrary(P, "Plains", 10);
-        createPermanent(game,P,"Rupture Spire",false,8);
+        createPermanent(P,"Rupture Spire",false,8);
 
         return game;
     }

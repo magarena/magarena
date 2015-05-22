@@ -17,18 +17,18 @@ class TestAltacBloodseeker extends TestGameBuilder {
 
         P.setLife(20);
         addToLibrary(P, "Plains", 10);
-        createPermanent(game,P,"Plains",false,8);
-        createPermanent(game,P,"Chromatic Lantern",false,1);
-        createPermanent(game, P, "Altac Bloodseeker", false, 4);
-        createPermanent(game, P, "Advance Scout", false, 1);
+        createPermanent(P,"Plains",false,8);
+        createPermanent(P,"Chromatic Lantern",false,1);
+        createPermanent(P, "Altac Bloodseeker", false, 4);
+        createPermanent(P, "Advance Scout", false, 1);
 
 
         P = opponent;
 
         P.setLife(20);
         addToLibrary(P, "Plains", 10);
-        createPermanent(game,P,"Rupture Spire",false,8);
-        createPermanent(game, P, "Llanowar Elves", false, 5);
+        createPermanent(P,"Rupture Spire",false,8);
+        createPermanent(P, "Llanowar Elves", false, 5);
 
         return game;
     }

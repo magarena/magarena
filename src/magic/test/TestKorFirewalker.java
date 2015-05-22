@@ -22,7 +22,7 @@ class TestKorFirewalker extends TestGameBuilder {
 
         P.setLife(20);
         addToLibrary(P, "Plains", 10);
-        createPermanent(game,P,"Rupture Spire",false,8);
+        createPermanent(P,"Rupture Spire",false,8);
         addToHand(P,"Kor Firewalker",3);
         addToHand(P,"Lightning Bolt",3);
 
@@ -31,8 +31,8 @@ class TestKorFirewalker extends TestGameBuilder {
 
         P.setLife(20);
         addToLibrary(P, "Plains", 10);
-        createPermanent(game,P,"Rupture Spire",false,8);
-        createPermanent(game,P,"Phyrexian Crusader", false,1);
+        createPermanent(P,"Rupture Spire",false,8);
+        createPermanent(P,"Phyrexian Crusader", false,1);
         addToHand(P,"Lightning Bolt",3);
 
         return game;

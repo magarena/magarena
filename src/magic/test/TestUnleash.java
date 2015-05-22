@@ -17,7 +17,7 @@ class TestUnleash extends TestGameBuilder {
 
         P.setLife(20);
         addToLibrary(P, "Plains", 10);
-        createPermanent(game,P,"Rupture Spire",false,8);
+        createPermanent(P,"Rupture Spire",false,8);
         addToHand(P, "Bloodfray Giant", 1);
         addToHand(P, "Carnival Hellsteed", 1);
         addToHand(P, "Chaos Imps", 1);
@@ -34,7 +34,7 @@ class TestUnleash extends TestGameBuilder {
 
         P.setLife(10);
         addToLibrary(P, "Plains", 10);
-        createPermanent(game,P,"Rupture Spire",false,8);
+        createPermanent(P,"Rupture Spire",false,8);
         addToHand(P, "Bloodfray Giant", 1);
         addToHand(P, "Carnival Hellsteed", 1);
 

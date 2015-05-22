@@ -18,10 +18,10 @@ class TestWorship extends TestGameBuilder {
 
         P.setLife(2);
         addToLibrary(P, "Plains", 10);
-        createPermanent(game,P,"Swamp",false,4);
-        createPermanent(game,P,"Plains",false,2);
-        createPermanent(game,P,"Worship",false,1);
-        createPermanent(game,P,"Air Servant",false,1);
+        createPermanent(P,"Swamp",false,4);
+        createPermanent(P,"Plains",false,2);
+        createPermanent(P,"Worship",false,1);
+        createPermanent(P,"Air Servant",false,1);
         addToHand(P,"Doom Blade",2);
         addToHand(P,"Demystify",2);
         addToHand(P,"Stomping Ground",1);
@@ -31,10 +31,10 @@ class TestWorship extends TestGameBuilder {
 
         P.setLife(2);
         addToLibrary(P, "Plains", 10);
-        createPermanent(game,P,"Swamp",false,4);
-        createPermanent(game,P,"Plains",false,2);
-        createPermanent(game,P,"Worship",false,1);
-        createPermanent(game,P,"Alpha Myr",false,1);
+        createPermanent(P,"Swamp",false,4);
+        createPermanent(P,"Plains",false,2);
+        createPermanent(P,"Worship",false,1);
+        createPermanent(P,"Alpha Myr",false,1);
 
         return game;
     }

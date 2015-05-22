@@ -33,11 +33,11 @@ class TestNPH extends TestGameBuilder {
         addToHand(player,"Urabrask the Hidden",1);
         addToHand(player,"Sickleslicer",1);
 
-        createPermanent(game,player,"Raging Goblin",false,1);
-        createPermanent(game,player,"Bonesplitter",false,1);
-        createPermanent(game,player,"Rupture Spire",false,7);
-        createPermanent(game,opponent,"Bloodrock Cyclops",false,1);
-        createPermanent(game,opponent,"Silver Knight",false,1);
+        createPermanent(player,"Raging Goblin",false,1);
+        createPermanent(player,"Bonesplitter",false,1);
+        createPermanent(player,"Rupture Spire",false,7);
+        createPermanent(opponent,"Bloodrock Cyclops",false,1);
+        createPermanent(opponent,"Silver Knight",false,1);
 
         return game;
     }

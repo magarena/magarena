@@ -17,15 +17,15 @@ class TestGuiltyConscienceStuffyDoll extends TestGameBuilder {
 
         P.setLife(5);
         addToLibrary(P, "Swamp", 20);
-        createPermanent(game,P,"Rupture Spire",false,9);
-        createPermanent(game,P,"Stuffy Doll",false,1);
+        createPermanent(P,"Rupture Spire",false,9);
+        createPermanent(P,"Stuffy Doll",false,1);
         addToHand(P, "Guilty Conscience", 1);
 
         P = opponent;
 
         P.setLife(6);
         addToLibrary(P, "Mountain", 20);
-        createPermanent(game,P,"Rupture Spire",false,9);
+        createPermanent(P,"Rupture Spire",false,9);
         addToHand(P, "Grizzly Bears", 2);
 
         return game;

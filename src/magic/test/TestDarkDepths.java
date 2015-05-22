@@ -17,14 +17,14 @@ class TestDarkDepths extends TestGameBuilder {
 
         P.setLife(13);
         addToLibrary(P, "Forest", 20);
-        createPermanent(game,P, "Vampire Hexmage",false,1);
+        createPermanent(P, "Vampire Hexmage",false,1);
         addToHand(P, "Dark Depths", 1);
 
         P = opponent;
 
         P.setLife(13);
         addToLibrary(P, "Forest", 20);
-        createPermanent(game,P,"Desecration Demon",false,1);
+        createPermanent(P,"Desecration Demon",false,1);
 
         return game;
     }

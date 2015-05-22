@@ -68,7 +68,7 @@ public final class GameLoader {
         // Battlefield
         final List<GameCardState> permanents = playerState.getPermanents();
         for (GameCardState permanent : permanents) {
-            TestGameBuilder.createPermanent(game, player, permanent.getCardName(), permanent.isTapped(), permanent.getQuantity());
+            TestGameBuilder.createPermanent(player, permanent.getCardName(), permanent.isTapped(), permanent.getQuantity());
         }
 
         // Hand

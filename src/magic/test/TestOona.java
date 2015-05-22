@@ -17,14 +17,14 @@ class TestOona extends TestGameBuilder {
 
         P.setLife(10);
         addToLibrary(P, "Mountain", 20);
-        createPermanent(game,P,"Rupture Spire",false,9);
+        createPermanent(P,"Rupture Spire",false,9);
         addToHand(P, "Oona, Queen of the Fae", 1);
 
         P = opponent;
 
         P.setLife(5);
         addToLibrary(P, "Flailing Drake", 20);
-        createPermanent(game,P,"Rupture Spire",false,9);
+        createPermanent(P,"Rupture Spire",false,9);
         addToHand(P, "Flailing Drake", 2);
 
         return game;

@@ -17,7 +17,7 @@ class TestRegen extends TestGameBuilder {
 
         P.setLife(20);
         addToLibrary(P, "Plains", 10);
-        createPermanent(game,P,"Rupture Spire",false,8);
+        createPermanent(P,"Rupture Spire",false,8);
         addToHand(P,"Doom Blade",3);
 
 
@@ -25,8 +25,8 @@ class TestRegen extends TestGameBuilder {
 
         P.setLife(20);
         addToLibrary(P, "Plains", 10);
-        createPermanent(game,P,"Rupture Spire",false,8);
-        createPermanent(game,P,"River Boa",false,1);
+        createPermanent(P,"Rupture Spire",false,8);
+        createPermanent(P,"River Boa",false,1);
 
         return game;
     }

@@ -17,7 +17,7 @@ class TestExtort extends TestGameBuilder {
 
         P.setLife(20);
         addToLibrary(P, "Plains", 10);
-        createPermanent(game,P,"Rupture Spire",false,8);
+        createPermanent(P,"Rupture Spire",false,8);
         addToHand(P, "Basilica Guards", 1);
         addToHand(P, "Basilica Screecher", 1);
         addToHand(P, "Blind Obedience", 1);
@@ -30,7 +30,7 @@ class TestExtort extends TestGameBuilder {
 
         P.setLife(10);
         addToLibrary(P, "Plains", 10);
-        createPermanent(game,P,"Rupture Spire",false,8);
+        createPermanent(P,"Rupture Spire",false,8);
         addToHand(P, "Grizzly Bears", 1);
         addToHand(P, "Manalith", 1);
 

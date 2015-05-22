@@ -17,8 +17,8 @@ class TestOverload extends TestGameBuilder {
 
         P.setLife(20);
         addToLibrary(P, "Plains", 10);
-        createPermanent(game,P,"Rupture Spire",false,8);
-        createPermanent(game,P,"Grizzly Bears",false,2);
+        createPermanent(P,"Rupture Spire",false,8);
+        createPermanent(P,"Grizzly Bears",false,2);
         addToHand(P, "Blustersquall", 1);
         addToHand(P, "Chemister's Trick", 1);
         addToHand(P, "Counterflux", 1);
@@ -32,8 +32,8 @@ class TestOverload extends TestGameBuilder {
 
         P.setLife(10);
         addToLibrary(P, "Plains", 10);
-        createPermanent(game,P,"Rupture Spire",false,8);
-        createPermanent(game,P,"Grizzly Bears",false,2);
+        createPermanent(P,"Rupture Spire",false,8);
+        createPermanent(P,"Grizzly Bears",false,2);
         addToHand(P, "Downsize", 1);
         addToHand(P, "Dynacharge", 1);
         addToHand(P, "Mizzium Skin", 1);

@@ -17,7 +17,7 @@ class TestMindshrieker extends TestGameBuilder {
 
         P.setLife(20);
         addToLibrary(P, "Plains", 10);
-        createPermanent(game,P,"Rupture Spire",false,8);
+        createPermanent(P,"Rupture Spire",false,8);
         addToHand(P,"Mindshrieker",3);
         addToHand(P,"Wolfir Silverheart",3);
 
@@ -26,8 +26,8 @@ class TestMindshrieker extends TestGameBuilder {
 
         P.setLife(20);
         addToLibrary(P, "Silverblade Paladin", 10);
-        createPermanent(game,P,"Rupture Spire",false,8);
-        createPermanent(game,P,"Phyrexian Crusader",false,3);
+        createPermanent(P,"Rupture Spire",false,8);
+        createPermanent(P,"Phyrexian Crusader",false,3);
         addToHand(P,"Silverblade Paladin",3);
 
         return game;

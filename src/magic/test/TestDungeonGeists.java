@@ -17,7 +17,7 @@ class TestDungeonGeists extends TestGameBuilder {
 
         P.setLife(20);
         addToLibrary(P, "Plains", 10);
-        createPermanent(game,P,"Rupture Spire",false,8);
+        createPermanent(P,"Rupture Spire",false,8);
         addToHand(P,"Dungeon Geists",1);
 
 
@@ -25,8 +25,8 @@ class TestDungeonGeists extends TestGameBuilder {
 
         P.setLife(20);
         addToLibrary(P, "Plains", 10);
-        createPermanent(game,P,"Rupture Spire",false,8);
-        createPermanent(game,P,"Serra Angel",false,1);
+        createPermanent(P,"Rupture Spire",false,8);
+        createPermanent(P,"Serra Angel",false,1);
         addToHand(P,"Act of Treason",1);
 
         return game;

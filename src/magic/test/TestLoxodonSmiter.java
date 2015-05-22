@@ -17,7 +17,7 @@ class TestLoxodonSmiter extends TestGameBuilder {
 
         P.setLife(10);
         addToLibrary(P, "Mountain", 20);
-        createPermanent(game,P,"Rupture Spire",false,9);
+        createPermanent(P,"Rupture Spire",false,9);
         addToHand(P, "Loxodon Smiter", 1);
         addToHand(P, "Lightning Bolt", 1);
 
@@ -25,7 +25,7 @@ class TestLoxodonSmiter extends TestGameBuilder {
 
         P.setLife(2);
         addToLibrary(P, "Mountain", 20);
-        createPermanent(game,P,"Rupture Spire",false,9);
+        createPermanent(P,"Rupture Spire",false,9);
         addToHand(P, "Dismal Failure", 2);
 
         return game;

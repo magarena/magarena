@@ -17,11 +17,11 @@ class TestManaChoice extends TestGameBuilder {
 
         P.setLife(20);
         addToLibrary(P, "Plains", 10);
-        createPermanent(game,P,"Abandoned Outpost",false,1);
-        //createPermanent(game,P,"Bog Wreckage",false,1);
-        createPermanent(game,P,"Ravaged Highlands",false,1);
-        createPermanent(game,P,"Seafloor Debris",false,1);
-        createPermanent(game,P,"Timberland Ruins",false,1);
+        createPermanent(P,"Abandoned Outpost",false,1);
+        //createPermanent(P,"Bog Wreckage",false,1);
+        createPermanent(P,"Ravaged Highlands",false,1);
+        createPermanent(P,"Seafloor Debris",false,1);
+        createPermanent(P,"Timberland Ruins",false,1);
         addToHand(P, "Gemstone Mine", 1);
         addToHand(P, "Fusion Elemental", 1);
 
@@ -29,7 +29,7 @@ class TestManaChoice extends TestGameBuilder {
 
         P.setLife(1);
         addToLibrary(P, "Plains", 10);
-        createPermanent(game,P,"Rupture Spire",false,8);
+        createPermanent(P,"Rupture Spire",false,8);
 
         return game;
     }

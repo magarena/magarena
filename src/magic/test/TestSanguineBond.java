@@ -17,18 +17,18 @@ class TestSanguineBond extends TestGameBuilder {
 
         P.setLife(10);
         addToLibrary(P, "Plains", 10);
-        createPermanent(game,P,"Rupture Spire",false,8);
-        createPermanent(game,P,"Sanguine Bond",false,1);
-        createPermanent(game,P,"Grizzly Bears",false,1);
+        createPermanent(P,"Rupture Spire",false,8);
+        createPermanent(P,"Sanguine Bond",false,1);
+        createPermanent(P,"Grizzly Bears",false,1);
         addToHand(P, "Exquisite Blood", 1);
 
         P = opponent;
 
         P.setLife(10);
         addToLibrary(P, "Plains", 10);
-        createPermanent(game,P,"Rupture Spire",false,8);
-        createPermanent(game,P,"Sanguine Bond",false,1);
-        createPermanent(game,P,"Grizzly Bears",false,2);
+        createPermanent(P,"Rupture Spire",false,8);
+        createPermanent(P,"Sanguine Bond",false,1);
+        createPermanent(P,"Grizzly Bears",false,2);
         addToHand(P, "Exquisite Blood", 1);
 
         return game;
