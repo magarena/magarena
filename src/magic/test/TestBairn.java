@@ -1,5 +1,6 @@
 package magic.test;
 
+import magic.ai.MagicAIImpl;
 import magic.model.MagicDuel;
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
@@ -7,7 +8,7 @@ import magic.model.phase.MagicMainPhase;
 
 class TestBairn extends TestGameBuilder {
     public MagicGame getGame() {
-        final MagicDuel duel=createDuel();
+        final MagicDuel duel=createDuel(MagicAIImpl.MCTS,8);
         final MagicGame game=duel.nextGame();
         game.setPhase(MagicMainPhase.getFirstInstance());
         final MagicPlayer player=game.getPlayer(0);
