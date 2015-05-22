@@ -29,7 +29,7 @@ import magic.data.MagicIcon;
 import magic.ui.CardImagesProvider;
 
 @SuppressWarnings("serial")
-public class DeckViewScreen
+public class DeckTiledCardsScreen
     extends AbstractScreen
     implements IStatusBar, IActionBar {
 
@@ -54,7 +54,7 @@ public class DeckViewScreen
     private final MagicDeck deck;
     private final StatusPanel statusPanel;
 
-    public DeckViewScreen(final MagicDeck deck) {
+    public DeckTiledCardsScreen(final MagicDeck deck) {
         this.deck = deck;
         this.statusPanel = new StatusPanel(deck.getName(), getCardTypeCaption(CardTypeFilter.ALL, deck.size()));
         content = new CardsCanvas(cardSize);

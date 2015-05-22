@@ -25,7 +25,7 @@ import magic.ui.screen.CardScriptScreen;
 import magic.ui.screen.CardZoneScreen;
 import magic.ui.screen.DeckEditorSplitScreen;
 import magic.ui.screen.DeckEditorTabbedScreen;
-import magic.ui.screen.DeckViewScreen;
+import magic.ui.screen.DeckTiledCardsScreen;
 import magic.ui.screen.DecksScreen;
 import magic.ui.screen.DuelDecksScreen;
 import magic.ui.screen.DuelGameScreen;
@@ -120,7 +120,7 @@ public final class ScreenController {
     }
 
     public static void showDeckView(final MagicDeck deck) {
-        showScreen(new DeckViewScreen(deck));
+        showScreen(new DeckTiledCardsScreen(deck));
     }
 
     public static void showSelectAiProfileScreen(final IPlayerProfileListener listener, final PlayerProfile profile) {
