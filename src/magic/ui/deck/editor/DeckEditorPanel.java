@@ -85,11 +85,6 @@ public class DeckEditorPanel extends JPanel {
         }
     }
 
-    protected void close() {
-//        filterPanel.closePopups();
-    }
-
-//    @Override
     public void setCard(final MagicCardDefinition card) {
         final int cardCount = tabbedPanel.getDeck().getCardCount(card);
         sideBarPanel.setCard(card);
