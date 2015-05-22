@@ -19,14 +19,16 @@ public class LoseGameAction extends MagicAction {
         player = aPlayer;
         reason = aReason;
     }
-    
+
     public LoseGameAction(final MagicPlayer aPlayer) {
         this(aPlayer, LIFE_REASON);
     }
-    
+
     public MagicPlayer getPlayer() {
         return player;
     }
+
+    public String getReason() { return reason; }
 
     public void setPlayer(final MagicPlayer aPlayer) {
         player = aPlayer;
