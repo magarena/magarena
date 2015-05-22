@@ -90,6 +90,9 @@ public class CardPanel extends JPanel {
             return;
         }
 
+        decksButton.setForeground(Color.GRAY);
+        decksButton.setText("searching...");
+        
         cardViewer.setCard(aCardDef);
         decksPanel.setCard(aCardDef);
 
