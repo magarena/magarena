@@ -5,6 +5,7 @@ removal=2
 rarity=U
 type=Instant
 cost={2}{W}
+ability=Cast SN with AI only if an opponent controls an enchantment.
 effect=Destroy all enchantments.
 timing=removal
 oracle=Destroy all enchantments.

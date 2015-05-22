@@ -4,6 +4,7 @@ value=4.182
 rarity=R
 type=Sorcery
 cost={2}{B}{B}{B}
+ability=Cast SN with AI only if an opponent controls a nonblack creature.
 timing=main
 requires_groovy_code
 oracle=Destroy all nonblack creatures. Hellfire deals X plus 3 damage to you, where X is the number of creatures that died this way.

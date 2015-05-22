@@ -5,6 +5,7 @@ removal=4
 rarity=U
 type=Sorcery
 cost={2}{B}{B}
+ability=Cast SN with AI only if an opponent controls a creature.
 timing=removal
 requires_groovy_code
 oracle=Each player sacrifices two creatures.

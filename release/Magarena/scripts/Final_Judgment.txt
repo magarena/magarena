@@ -4,6 +4,7 @@ value=4.187
 rarity=R
 type=Sorcery
 cost={4}{W}{W}
+ability=Cast SN with AI only if an opponent controls a creature.
 effect=Exile all creatures.
 timing=main
 oracle=Exile all creatures.
