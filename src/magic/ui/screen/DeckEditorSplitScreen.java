@@ -19,11 +19,11 @@ import magic.data.MagicSetDefinitions;
 import magic.exception.InvalidDeckException;
 import magic.model.MagicDeck;
 import magic.ui.MagicFileChoosers;
-import magic.ui.explorer.ExplorerPanel;
 import magic.ui.MagicFrame;
 import magic.ui.ScreenController;
 import magic.ui.ScreenOptionsOverlay;
 import magic.ui.dialog.DownloadImagesDialog;
+import magic.ui.explorer.DeckEditorSplitPanel;
 import magic.ui.screen.interfaces.IActionBar;
 import magic.ui.screen.interfaces.IDeckConsumer;
 import magic.ui.screen.interfaces.IOptionsMenu;
@@ -39,14 +39,14 @@ public class DeckEditorSplitScreen
     extends AbstractScreen
     implements IStatusBar, IActionBar, IOptionsMenu, IWikiPage, IDeckConsumer {
 
-    private final ExplorerPanel screenContent;
+    private final DeckEditorSplitPanel screenContent;
     private final boolean isStandalone;
     private final DeckStatusPanel deckStatusPanel = new DeckStatusPanel();
 
     // CTR : opens Deck Editor ready to update passed in deck.
     public DeckEditorSplitScreen(final MagicDeck deck) {
         isStandalone = (deck == null);
-        this.screenContent = new ExplorerPanel(deck);
+        this.screenContent = new DeckEditorSplitPanel(deck);
         setContent(this.screenContent);
     }
     // CTR : open Deck Editor in standalone mode starting with an empty deck.
