@@ -4,7 +4,7 @@ value=2.500
 rarity=U
 type=Enchantment
 cost={2}{W}
-ability=Creatures you control have vigilance.
+ability=Creatures you control get +0/+1 for each Gate you control.;\
+        Creatures you control have vigilance.
 timing=enchantment
-requires_groovy_code
 oracle=Creatures you control get +0/+1 for each Gate you control and have vigilance.
