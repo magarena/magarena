@@ -148,9 +148,10 @@ public class ExplorerPanel extends JPanel implements ICardSelectionListener, ICa
 
     private class CardPoolMouseListener extends MouseAdapter {
         @Override
-        public void mouseClicked(final MouseEvent e) {
+        public void mouseReleased(MouseEvent e) {
+            super.mouseReleased(e);
             // double-click actions.
-            if (e.getClickCount() > 1) {
+            if (e.getClickCount() > 1 && SwingUtilities.isLeftMouseButton(e)) {
                 showCardScriptScreen();
             }
         }
