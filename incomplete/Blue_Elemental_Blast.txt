@@ -1,9 +1,0 @@
-name=Blue Elemental Blast
-image=http://mtgimage.com/card/blue%20elemental%20blast.jpg
-value=2.500
-rarity=U
-type=Instant
-cost={U}
-timing=removal
-requires_groovy_code
-oracle=Choose one — Counter target red spell; or destroy target red permanent.
