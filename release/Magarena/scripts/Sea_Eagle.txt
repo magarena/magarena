@@ -1,5 +1,5 @@
 name=Sea Eagle
-image=http://magiccards.info/scans/en/8e/4.jpg
+image=http://magiccards.info/scans/en/8eb/4.jpg
 value=1.179
 ability=flying
 rarity=C
