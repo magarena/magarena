@@ -1,5 +1,6 @@
-package magic.ui.explorer;
+package magic.ui.deck.editor;
 
+import magic.ui.deck.editor.CardPoolTabPanel;
 import java.awt.Color;
 import java.awt.Component;
 import java.awt.Dimension;

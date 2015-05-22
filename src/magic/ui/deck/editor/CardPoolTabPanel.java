@@ -1,5 +1,6 @@
-package magic.ui.explorer;
+package magic.ui.deck.editor;
 
+import magic.ui.deck.editor.CardPoolOptionBar;
 import java.awt.event.ActionEvent;
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
@@ -9,7 +10,6 @@ import javax.swing.JPanel;
 import magic.data.MagicIcon;
 import magic.ui.IconImages;
 import magic.model.MagicCardDefinition;
-import magic.ui.cardpool.DeckEditorCardPoolPanel;
 import magic.ui.screen.widget.ActionBarButton;
 import net.miginfocom.swing.MigLayout;
 

@@ -1,5 +1,6 @@
-package magic.ui.explorer;
+package magic.ui.deck.editor;
 
+import magic.ui.deck.editor.DeckEditorSideBarPanel;
 import java.awt.Color;
 import java.awt.Container;
 import java.awt.Cursor;

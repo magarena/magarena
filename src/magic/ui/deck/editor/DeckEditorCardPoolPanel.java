@@ -1,4 +1,4 @@
-package magic.ui.cardpool;
+package magic.ui.deck.editor;
 
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;

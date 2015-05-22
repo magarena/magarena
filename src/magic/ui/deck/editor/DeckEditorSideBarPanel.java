@@ -1,4 +1,4 @@
-package magic.ui.explorer;
+package magic.ui.deck.editor;
 
 import java.awt.Color;
 import javax.swing.BorderFactory;

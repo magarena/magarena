@@ -1,5 +1,7 @@
-package magic.ui.explorer;
+package magic.ui.deck.editor;
 
+import magic.ui.deck.editor.DeckListOptionBar;
+import magic.ui.deck.editor.DeckCardPoolActionBar;
 import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 import java.beans.PropertyChangeEvent;
