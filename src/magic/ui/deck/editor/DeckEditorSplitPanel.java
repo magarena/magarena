@@ -1,6 +1,5 @@
 package magic.ui.deck.editor;
 
-import magic.ui.deck.editor.DeckEditorSideBarPanel;
 import java.awt.Color;
 import java.awt.Container;
 import java.awt.Cursor;
@@ -9,7 +8,6 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-import java.text.DecimalFormat;
 import java.text.NumberFormat;
 import java.util.List;
 import javax.swing.BorderFactory;
@@ -19,11 +17,11 @@ import javax.swing.JPanel;
 import javax.swing.JSplitPane;
 import javax.swing.JTable;
 import javax.swing.SwingUtilities;
-import magic.data.CardDefinitions;
 import magic.data.GeneralConfig;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
 import magic.model.MagicDeckConstructionRule;
+import magic.model.MagicRandom;
 import magic.ui.CardFilterPanel;
 import magic.ui.utility.GraphicsUtils;
 import magic.ui.ICardFilterPanelListener;
@@ -48,7 +46,6 @@ public class DeckEditorSplitPanel extends JPanel implements ICardSelectionListen
     private CardFilterPanel filterPanel;
     private List<MagicCardDefinition> cardPoolDefs;
     private MagicDeck deckDefs;
-    private final boolean isDeckEditor;
     private MagicDeck deck;
     private MagicDeck originalDeck;
     private DeckEditorButtonsPanel buttonsPanel;
@@ -56,14 +53,7 @@ public class DeckEditorSplitPanel extends JPanel implements ICardSelectionListen
     private final MigLayout migLayout = new MigLayout();
     private JSplitPane cardsSplitPane;
 
-    // CTR - Card Explorer
-    public DeckEditorSplitPanel() {
-        this.isDeckEditor = false;
-        setupExplorerPanel(null);
-    }
-    // CTR - Deck Editor
     public DeckEditorSplitPanel(final MagicDeck deck) {
-        this.isDeckEditor = true;
         setupExplorerPanel(deck);
     }
 
@@ -111,9 +101,8 @@ public class DeckEditorSplitPanel extends JPanel implements ICardSelectionListen
         if (cardPoolDefs.isEmpty()) {
             sideBarPanel.setCard(MagicCardDefinition.UNKNOWN);
          } else {
-//             final int index = MagicRandom.nextRNGInt(cardPoolDefs.size());
-//             sideBarPanel.setCard(cardPoolDefs.get(index));
-             sideBarPanel.setCard(CardDefinitions.getCard("Damnation"));
+             final int index = MagicRandom.nextRNGInt(cardPoolDefs.size());
+             sideBarPanel.setCard(cardPoolDefs.get(index));
          }
 
     }
@@ -121,50 +110,41 @@ public class DeckEditorSplitPanel extends JPanel implements ICardSelectionListen
     private Container getMainContentContainer() {
 
         // card pool
-        cardPoolDefs = filterPanel.getCardDefinitions(isDeckEditor);
+        cardPoolDefs = filterPanel.getCardDefinitions(true);
 
         cardPoolTable = new CardTable(cardPoolDefs, generatePoolTitle(), false);
         cardPoolTable.addMouseListener(new CardPoolMouseListener());
         cardPoolTable.addCardSelectionListener(this);
 
-        if (isDeckEditor()) {
+        cardPoolTable.setDeckEditorSelectionMode();
 
-            cardPoolTable.setDeckEditorSelectionMode();
+        deckDefs = this.deck;
+        deckTable = new CardTable(deckDefs, generateDeckTitle(deckDefs), true);
+        deckTable.addMouseListener(new DeckMouseListener());
+        deckTable.addCardSelectionListener(this);
+        deckTable.setDeckEditorSelectionMode();
+        deckTable.showCardCount(true);
 
-            deckDefs = this.deck;
-            deckTable = new CardTable(deckDefs, generateDeckTitle(deckDefs), true);
-            deckTable.addMouseListener(new DeckMouseListener());
-            deckTable.addCardSelectionListener(this);
-            deckTable.setDeckEditorSelectionMode();
-            deckTable.showCardCount(true);
+        final JPanel deckPanel = new JPanel();
+        deckPanel.setOpaque(false);
+        deckPanel.setLayout(new MigLayout("insets 0, gap 0, flowy"));
+        deckPanel.add(buttonsPanel, "w 100%, h 40!");
+        deckPanel.add(deckTable, "w 100%, h 100%");
 
-            final JPanel deckPanel = new JPanel();
-            deckPanel.setOpaque(false);
-            deckPanel.setLayout(new MigLayout("insets 0, gap 0, flowy"));
-            deckPanel.add(buttonsPanel, "w 100%, h 40!");
-            deckPanel.add(deckTable, "w 100%, h 100%");
+        cardsSplitPane = new JSplitPane(JSplitPane.VERTICAL_SPLIT);
+        cardsSplitPane.setOneTouchExpandable(false);
+        cardsSplitPane.setLeftComponent(cardPoolTable);
+        cardsSplitPane.setRightComponent(deckPanel);
+        cardsSplitPane.setResizeWeight(0.5);
+        cardsSplitPane.setDividerSize(14);
+        cardsSplitPane.setBorder(null);
+        cardsSplitPane.setOpaque(false);
+        cardsSplitPane.setDividerLocation(getDividerPosition());
 
-            cardsSplitPane = new JSplitPane(JSplitPane.VERTICAL_SPLIT);
-            cardsSplitPane.setOneTouchExpandable(false);
-            cardsSplitPane.setLeftComponent(cardPoolTable);
-            cardsSplitPane.setRightComponent(deckPanel);
-            cardsSplitPane.setResizeWeight(0.5);
-            cardsSplitPane.setDividerSize(14);
-            cardsSplitPane.setBorder(null);
-            cardsSplitPane.setOpaque(false);
-            cardsSplitPane.setDividerLocation(getDividerPosition());
+        // update deck stats
+        sideBarPanel.getStatsViewer().setDeck(this.deck);
 
-            // update deck stats
-            sideBarPanel.getStatsViewer().setDeck(this.deck);
-
-            return cardsSplitPane;
-
-        } else {
-            // no deck
-            deckDefs = null;
-            deckTable = null;
-            return cardPoolTable;
-        }
+        return cardsSplitPane;
 
     }
 
@@ -182,22 +162,12 @@ public class DeckEditorSplitPanel extends JPanel implements ICardSelectionListen
         final StringBuffer sb = new StringBuffer();
         final int total = filterPanel.getTotalCardCount();
         sb.append("Cards: ").append(NumberFormat.getInstance().format(total));
-        if (!isDeckEditor) {
-            sb.append("      Playable: ").append(getCountCaption(total, filterPanel.getPlayableCardCount()));
-            sb.append("      Unimplemented: ").append(getCountCaption(total, filterPanel.getMissingCardCount()));
-        }
         return sb.toString();
-    }
-
-    private String getCountCaption(final int total, final int value) {
-        final double percent = value / (double)total * 100;
-        DecimalFormat df = new DecimalFormat("0.0");
-        return NumberFormat.getInstance().format(value) + " (" + (!Double.isNaN(percent) ? df.format(percent) : "0.0") + "%)";
     }
 
     @Override
     public boolean isDeckEditor() {
-        return this.isDeckEditor;
+        return true;
     }
 
     private String generateDeckTitle(final MagicDeck deck) {
@@ -205,19 +175,17 @@ public class DeckEditorSplitPanel extends JPanel implements ICardSelectionListen
     }
 
     public void updateCardPool() {
-        cardPoolDefs = filterPanel.getCardDefinitions(isDeckEditor);
+        cardPoolDefs = filterPanel.getCardDefinitions(true);
         cardPoolTable.setCards(cardPoolDefs);
         cardPoolTable.setTitle(generatePoolTitle());
     }
 
     public void updateDeck() {
-        if (isDeckEditor()) {
-            deckDefs = this.deck;
-            deckTable.setTitle(generateDeckTitle(deckDefs));
-            deckTable.setCards(deckDefs);
-            sideBarPanel.getStatsViewer().setDeck(deckDefs);
-            validate();
-        }
+        deckDefs = this.deck;
+        deckTable.setTitle(generateDeckTitle(deckDefs));
+        deckTable.setCards(deckDefs);
+        sideBarPanel.getStatsViewer().setDeck(deckDefs);
+        validate();
     }
 
     private void removeSelectedFromDeck() {
@@ -227,9 +195,8 @@ public class DeckEditorSplitPanel extends JPanel implements ICardSelectionListen
             for (final MagicCardDefinition card : deckCards) {
                 this.deck.remove(card);
             }
-
             updateDeck();
-
+            
         } else {
             ScreenController.showWarningMessage("Please select a valid card in the deck to remove it.");
         }
@@ -242,7 +209,6 @@ public class DeckEditorSplitPanel extends JPanel implements ICardSelectionListen
             for (final MagicCardDefinition card : cardPoolCards) {
                 this.deck.add(card);
             }
-
             updateDeck();
 
         } else {
@@ -282,11 +248,7 @@ public class DeckEditorSplitPanel extends JPanel implements ICardSelectionListen
         public void mouseClicked(final MouseEvent e) {
             // double-click actions.
             if (e.getClickCount() > 1) {
-                if (isDeckEditor()) {
-                    addSelectedToDeck();
-                } else {
-                    showCardScriptScreen();
-                }
+                addSelectedToDeck();
             }
         }
     }
@@ -302,28 +264,24 @@ public class DeckEditorSplitPanel extends JPanel implements ICardSelectionListen
     private class DeckMouseListener extends MouseAdapter {
         @Override
         public void mouseClicked(final MouseEvent e) {
-            if (isDeckEditor()) {
-                if (e.getClickCount() > 1) {
-                    if (e.getButton() == MouseEvent.BUTTON1) {
-                        removeSelectedFromDeck();
-                    } else if (e.getButton() == MouseEvent.BUTTON3) {
-                        final List<MagicCardDefinition> deckCards = deckTable.getSelectedCards();
-                        if (deckCards.size() > 0) {
-                            for (final MagicCardDefinition card : deckCards) {
-                                deck.add(card);
-                            }
-
-                            updateDeck();
-
+            if (e.getClickCount() > 1) {
+                if (e.getButton() == MouseEvent.BUTTON1) {
+                    removeSelectedFromDeck();
+                } else if (e.getButton() == MouseEvent.BUTTON3) {
+                    final List<MagicCardDefinition> deckCards = deckTable.getSelectedCards();
+                    if (deckCards.size() > 0) {
+                        for (final MagicCardDefinition card : deckCards) {
+                            deck.add(card);
                         }
+                        updateDeck();
                     }
                 }
-                if (e.getButton() == MouseEvent.BUTTON3) {
-                    final JTable table = (JTable)(e.getSource());
-                    final int row = table.rowAtPoint(e.getPoint());
-                    table.clearSelection();
-                    table.addRowSelectionInterval(row,row);
-                }
+            }
+            if (e.getButton() == MouseEvent.BUTTON3) {
+                final JTable table = (JTable) (e.getSource());
+                final int row = table.rowAtPoint(e.getPoint());
+                table.clearSelection();
+                table.addRowSelectionInterval(row, row);
             }
         }
     }
@@ -331,12 +289,10 @@ public class DeckEditorSplitPanel extends JPanel implements ICardSelectionListen
     public void setDeck(final MagicDeck deck0) {
         if (deck0 != null) {
             this.deck = deck0;
-            if (isDeckEditor()) {
-                deckDefs = this.deck;
-                deckTable.setTitle(generateDeckTitle(deckDefs));
-                deckTable.setCards(deckDefs);
-                sideBarPanel.getStatsViewer().setDeck(deckDefs);
-            }
+            deckDefs = this.deck;
+            deckTable.setTitle(generateDeckTitle(deckDefs));
+            deckTable.setCards(deckDefs);
+            sideBarPanel.getStatsViewer().setDeck(deckDefs);
         }
     }
 
@@ -376,7 +332,7 @@ public class DeckEditorSplitPanel extends JPanel implements ICardSelectionListen
     }
 
     public boolean isStandaloneDeckEditor() {
-        return isDeckEditor() && !isUpdatingExistingDeck();
+        return !isUpdatingExistingDeck();
     }
 
     private boolean isUpdatingExistingDeck() {
