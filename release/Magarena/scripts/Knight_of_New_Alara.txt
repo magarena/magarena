@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Knight
 cost={2}{G}{W}
 pt=2/2
-ability=Each other multicolored creature you control gets +1/+1 for each of its colors.
 timing=main
+requires_groovy_code
 oracle=Each other multicolored creature you control gets +1/+1 for each of its colors.
