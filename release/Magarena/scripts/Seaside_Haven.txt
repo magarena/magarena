@@ -4,6 +4,6 @@ value=3.405
 rarity=U
 type=Land
 ability={T}: Add {1} to your mana pool.;\
-        {W}{B}, {T}, Sacrifice a Bird: Draw a card.
+        {W}{U}, {T}, Sacrifice a Bird: Draw a card.
 timing=land
 oracle={T}: Add {1} to your mana pool.\n{W}{U}, {T}, Sacrifice a Bird: Draw a card.
