@@ -6,6 +6,6 @@ type=Creature
 subtype=Ouphe
 cost={1}{G/U}{G/U}
 pt=1/3
-ability={2}{G/U}, {Q}: For each counter on target permanent, put another of those counters on that permanent.
 timing=main
+requires_groovy_code
 oracle={2}{G/U}, {Q}: For each counter on target permanent, put another of those counters on that permanent.
