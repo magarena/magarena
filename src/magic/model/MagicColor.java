@@ -129,7 +129,7 @@ public enum MagicColor {
         return colorText.toString();
     }
 
-    private static int numColors(final MagicSource source) {
+    public static int numColors(final MagicSource source) {
         int numColors = 0;
         for (final MagicColor color : values()) {
             if (source.hasColor(color)) {
