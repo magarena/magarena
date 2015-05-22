@@ -68,7 +68,7 @@ public class ExplorerPanel extends JPanel implements ICardSelectionListener, ICa
         } else {
             migLayout.setColumnConstraints("[" + imageSize.width + "!][100%]");
             setLayout(migLayout);
-            add(sideBarPanel, "h 100%");
+            add(sideBarPanel, "h 100%, w " + imageSize.width + "!");
             add(rhs, "w 100%, h 100%");                    
         }
         
@@ -78,6 +78,7 @@ public class ExplorerPanel extends JPanel implements ICardSelectionListener, ICa
          } else {
              final int index = MagicRandom.nextRNGInt(cardPoolDefs.size());
              sideBarPanel.setCard(cardPoolDefs.get(index));
+//             sideBarPanel.setCard(CardDefinitions.getCard("Damnation"));
          }
 
     }
@@ -128,7 +129,7 @@ public class ExplorerPanel extends JPanel implements ICardSelectionListener, ICa
         SwingUtilities.invokeLater(new Runnable() {
             @Override
             public void run() {
-                sideBarPanel.getCardViewer().setCard(card);
+                sideBarPanel.setCard(card);
             }
         });
     }

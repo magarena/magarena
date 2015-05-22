@@ -26,6 +26,7 @@ import magic.ui.screen.CardZoneScreen;
 import magic.ui.screen.DeckEditorSplitScreen;
 import magic.ui.screen.DeckEditorTabbedScreen;
 import magic.ui.screen.DeckTiledCardsScreen;
+import magic.ui.screen.DeckViewScreen;
 import magic.ui.screen.DecksScreen;
 import magic.ui.screen.DuelDecksScreen;
 import magic.ui.screen.DuelGameScreen;
@@ -94,12 +95,21 @@ public final class ScreenController {
             showScreen(new DeckEditorTabbedScreen(deck));
         }
     }
+
     public static void showDeckEditor() {
         if (GeneralConfig.getInstance().isSplitViewDeckEditor()) {
             showScreen(new DeckEditorSplitScreen());
         } else {
             showScreen(new DeckEditorTabbedScreen());
         }
+    }
+
+    public static void showDeckViewScreen(MagicDeck deck, MagicCardDefinition selectedCard) {
+        showScreen(new DeckViewScreen(deck, selectedCard));
+    }
+
+    public static void showDeckViewScreen(MagicDeck deck) {
+        showScreen(new DeckViewScreen(deck));
     }
 
     public static void showSampleHandScreen(final MagicDeck deck) {

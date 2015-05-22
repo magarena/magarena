@@ -14,7 +14,7 @@ import magic.ui.widget.TexturedPanel;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-class DeckEditorSideBarPanel extends TexturedPanel {
+public class DeckEditorSideBarPanel extends TexturedPanel {
 
     private static final GeneralConfig CONFIG = GeneralConfig.getInstance();
 
@@ -23,7 +23,7 @@ class DeckEditorSideBarPanel extends TexturedPanel {
     private final DeckEditorCardViewer cardViewer = new DeckEditorCardViewer();
     private final DeckStatisticsViewer statsViewer = new DeckStatisticsViewer();
 
-    DeckEditorSideBarPanel() {
+    public DeckEditorSideBarPanel() {
         setLookAndFeel();
         refreshLayout();
         setCard(MagicCardDefinition.UNKNOWN);
