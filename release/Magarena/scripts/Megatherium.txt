@@ -6,7 +6,7 @@ type=Creature
 subtype=Beast
 cost={2}{G}
 pt=4/4
-ability=Trample;\
-        When SN enters the battlefield, sacrifice it unless you pay {1} for each card in your hand.
+ability=Trample
 timing=main
+requires_groovy_code
 oracle=Trample\nWhen Megatherium enters the battlefield, sacrifice it unless you pay {1} for each card in your hand.
