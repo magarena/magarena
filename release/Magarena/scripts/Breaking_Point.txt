@@ -4,7 +4,6 @@ value=2.500
 rarity=R
 type=Sorcery
 cost={1}{R}{R}
-ability=Cast SN with AI only if an opponent controls a creature.
 timing=main
 requires_groovy_code
 oracle=Any player may have Breaking Point deal 6 damage to him or her. If no one does, destroy all creatures. Creatures destroyed this way can't be regenerated.

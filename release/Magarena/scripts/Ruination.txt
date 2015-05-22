@@ -4,7 +4,6 @@ value=4.128
 rarity=R
 type=Sorcery
 cost={3}{R}
-ability=Cast SN with AI only if an opponent controls a nonbasic land.
 effect=Destroy all nonbasic lands.
 timing=main
 oracle=Destroy all nonbasic lands.

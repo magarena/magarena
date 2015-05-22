@@ -4,7 +4,6 @@ value=4.114
 rarity=R
 type=Sorcery
 cost={5}{W}{W}
-ability=Cast SN with AI only if an opponent controls a creature.
 effect=Destroy all creatures.
 timing=main
 requires_groovy_code

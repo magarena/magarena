@@ -4,7 +4,6 @@ value=3.000
 rarity=R
 type=Sorcery
 cost={4}{W}{W}
-ability=Cast SN with AI only if an opponent controls a tapped creature.
 effect=Destroy all tapped creatures.
 timing=main
 oracle=Destroy all tapped creatures.

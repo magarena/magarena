@@ -4,7 +4,6 @@ value=4.090
 rarity=R
 type=Sorcery
 cost={2}{G}{G}
-ability=Cast SN with AI only if an opponent controls a creature with flying.
 effect=Destroy all creatures with flying.
 timing=main
 oracle=Destroy all creatures with flying.
