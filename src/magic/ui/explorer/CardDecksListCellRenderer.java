@@ -7,7 +7,7 @@ import javax.swing.JList;
 import org.apache.commons.io.FilenameUtils;
 
 @SuppressWarnings("serial")
-public class CardDecksListCellRenderer  extends DefaultListCellRenderer {
+class CardDecksListCellRenderer  extends DefaultListCellRenderer {
 
     @Override
     public Component getListCellRendererComponent(JList<?> list, Object value, int index, boolean isSelected, boolean cellHasFocus) {

@@ -1,6 +1,5 @@
-package magic.ui.cardinfo;
+package magic.ui.explorer;
 
-import magic.ui.explorer.CardDecksListCellRenderer;
 import java.awt.Color;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
@@ -32,7 +31,7 @@ import magic.ui.widget.FontsAndBorders;
 import magic.utility.MagicSystem;
 
 @SuppressWarnings("serial")
-public class CardDecksPanel extends JPanel {
+class CardDecksPanel extends JPanel {
 
     public static final String CP_DECKS_UPDATED = "DecksUpdated";
 

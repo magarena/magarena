@@ -1,4 +1,4 @@
-package magic.ui.cardinfo;
+package magic.ui.explorer;
 
 import java.awt.Color;
 import java.awt.Cursor;
