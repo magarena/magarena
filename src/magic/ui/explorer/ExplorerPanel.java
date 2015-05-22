@@ -15,10 +15,8 @@ import javax.swing.BorderFactory;
 import javax.swing.JButton;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
-import javax.swing.JScrollPane;
 import javax.swing.JSplitPane;
 import javax.swing.JTable;
-import javax.swing.ScrollPaneConstants;
 import javax.swing.SwingUtilities;
 import magic.data.GeneralConfig;
 import magic.model.MagicCardDefinition;
@@ -31,8 +29,6 @@ import magic.ui.ICardFilterPanelListener;
 import magic.ui.ScreenController;
 import magic.ui.cardtable.CardTable;
 import magic.ui.cardtable.ICardSelectionListener;
-import magic.ui.duel.viewer.CardViewer;
-import magic.ui.duel.viewer.DeckStatisticsViewer;
 import magic.ui.screen.widget.ActionBar;
 import magic.ui.screen.widget.StatusBar;
 import magic.ui.widget.FontsAndBorders;
@@ -55,7 +51,7 @@ public class ExplorerPanel extends JPanel implements ICardSelectionListener, ICa
     private MagicDeck deck;
     private MagicDeck originalDeck;
     private DeckEditorButtonsPanel buttonsPanel;
-    private SideBarPanel sideBarPanel;
+    private ExplorerSidebarPanel sideBarPanel;
     private final MigLayout migLayout = new MigLayout();
     private JSplitPane cardsSplitPane;
 
@@ -85,7 +81,7 @@ public class ExplorerPanel extends JPanel implements ICardSelectionListener, ICa
 
         // create ui components.
         buttonsPanel = new DeckEditorButtonsPanel();
-        sideBarPanel = new SideBarPanel(isDeckEditor());
+        sideBarPanel = new ExplorerSidebarPanel(isDeckEditor());
         filterPanel = new CardFilterPanel(this);
         final Container cardsPanel = getMainContentContainer();
 
@@ -260,7 +256,7 @@ public class ExplorerPanel extends JPanel implements ICardSelectionListener, ICa
         SwingUtilities.invokeLater(new Runnable() {
             @Override
             public void run() {
-                sideBarPanel.cardViewer.setCard(card);
+                sideBarPanel.getCardViewer().setCard(card);
             }
         });
     }
@@ -455,56 +451,6 @@ public class ExplorerPanel extends JPanel implements ICardSelectionListener, ICa
                     CONFIG.save();
                 }
             }
-        }
-
-    }
-
-    private class SideBarPanel extends TexturedPanel {
-
-        private final MigLayout migLayout = new MigLayout();
-        private final JScrollPane cardScrollPane = new JScrollPane();
-        private final CardViewer cardViewer = new CardViewer();
-        private final DeckStatisticsViewer statsViewer;
-
-        private SideBarPanel(final boolean isDeckEditorMode) {
-            statsViewer = isDeckEditorMode ? new DeckStatisticsViewer() : null;
-            setLookAndFeel();
-            refreshLayout();
-        }
-
-        private void setLookAndFeel() {
-            setLayout(migLayout);
-            setBackground(FontsAndBorders.IMENUOVERLAY_BACKGROUND_COLOR);
-            // card image viewer
-            cardViewer.setPreferredSize(GraphicsUtils.getMaxCardImageSize());
-            cardViewer.setMaximumSize(GraphicsUtils.getMaxCardImageSize());
-            // card image scroll pane
-            cardScrollPane.setBorder(BorderFactory.createMatteBorder(0, 0, 1, 0, Color.BLACK));
-            cardScrollPane.setOpaque(false);
-            cardScrollPane.getViewport().setOpaque(false);
-            cardScrollPane.getVerticalScrollBar().setUnitIncrement(10);
-            cardScrollPane.setHorizontalScrollBarPolicy(
-                    CONFIG.isHighQuality() ?
-                    ScrollPaneConstants.HORIZONTAL_SCROLLBAR_AS_NEEDED :
-                    ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
-        }
-
-        private void refreshLayout() {
-            removeAll();
-            migLayout.setLayoutConstraints("flowy, insets 0");
-            cardScrollPane.setViewportView(cardViewer);
-            add(cardScrollPane);
-            if (statsViewer != null) {
-                add(statsViewer, "w 100%, gap 6 6 6 6, aligny bottom, pushy");
-            }
-        }
-
-        public DeckStatisticsViewer getStatsViewer() {
-            return statsViewer;
-        }
-
-        public void setCard(final MagicCardDefinition card) {
-            cardViewer.setCard(card);
         }
 
     }
