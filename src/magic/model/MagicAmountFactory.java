@@ -24,6 +24,19 @@ public class MagicAmountFactory {
             }
         };
     }
+    
+    public static MagicAmount AllCountersOnSource =
+        new MagicAmount() {
+            @Override
+            public int getAmount(final MagicSource source, final MagicPlayer player) {
+                final MagicPermanent perm = (MagicPermanent)source;
+                int amount = 0;
+                for (final MagicCounterType counterType : MagicCounterType.values()) {
+                    amount+=perm.getCounters(counterType);
+                }
+                return amount;
+            }
+        };
 
     public static MagicAmount One = 
         new MagicAmount() {
