@@ -108,8 +108,6 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
 
         disableUpdate = false;
 
-        setBackground(FontsAndBorders.IMENUOVERLAY_BACKGROUND_COLOR);
-
         layout.setLayoutConstraints("flowy, wrap 2, gap 4");
         setLayout(layout);
 
