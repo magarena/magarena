@@ -47,7 +47,6 @@ public class ExplorerPanel extends JPanel implements ICardSelectionListener, ICa
     private CardFilterPanel filterPanel;
     private List<MagicCardDefinition> cardPoolDefs;
     private MagicDeck deckDefs;
-    private final boolean isDeckEditor;
     private MagicDeck deck;
     private MagicDeck originalDeck;
     private DeckEditorButtonsPanel buttonsPanel;
@@ -55,15 +54,8 @@ public class ExplorerPanel extends JPanel implements ICardSelectionListener, ICa
     private final MigLayout migLayout = new MigLayout();
     private JSplitPane cardsSplitPane;
 
-    // CTR - Card Explorer
     public ExplorerPanel() {
-        this.isDeckEditor = false;
         setupExplorerPanel(null);
-    }
-    // CTR - Deck Editor
-    public ExplorerPanel(final MagicDeck deck) {
-        this.isDeckEditor = true;
-        setupExplorerPanel(deck);
     }
 
     private void setupExplorerPanel(final MagicDeck deck0) {
@@ -119,7 +111,7 @@ public class ExplorerPanel extends JPanel implements ICardSelectionListener, ICa
     private Container getMainContentContainer() {
 
         // card pool
-        cardPoolDefs = filterPanel.getCardDefinitions(isDeckEditor);
+        cardPoolDefs = filterPanel.getCardDefinitions(false);
 
         cardPoolTable = new CardTable(cardPoolDefs, generatePoolTitle(), false);
         cardPoolTable.addMouseListener(new CardPoolMouseListener());
@@ -180,10 +172,8 @@ public class ExplorerPanel extends JPanel implements ICardSelectionListener, ICa
         final StringBuffer sb = new StringBuffer();
         final int total = filterPanel.getTotalCardCount();
         sb.append("Cards: ").append(NumberFormat.getInstance().format(total));
-        if (!isDeckEditor) {
-            sb.append("      Playable: ").append(getCountCaption(total, filterPanel.getPlayableCardCount()));
-            sb.append("      Unimplemented: ").append(getCountCaption(total, filterPanel.getMissingCardCount()));
-        }
+        sb.append("      Playable: ").append(getCountCaption(total, filterPanel.getPlayableCardCount()));
+        sb.append("      Unimplemented: ").append(getCountCaption(total, filterPanel.getMissingCardCount()));
         return sb.toString();
     }
 
@@ -193,8 +183,9 @@ public class ExplorerPanel extends JPanel implements ICardSelectionListener, ICa
         return NumberFormat.getInstance().format(value) + " (" + (!Double.isNaN(percent) ? df.format(percent) : "0.0") + "%)";
     }
 
+    @Override
     public boolean isDeckEditor() {
-        return this.isDeckEditor;
+        return false;
     }
 
     private String generateDeckTitle(final MagicDeck deck) {
@@ -202,7 +193,7 @@ public class ExplorerPanel extends JPanel implements ICardSelectionListener, ICa
     }
 
     public void updateCardPool() {
-        cardPoolDefs = filterPanel.getCardDefinitions(isDeckEditor);
+        cardPoolDefs = filterPanel.getCardDefinitions(false);
         cardPoolTable.setCards(cardPoolDefs);
         cardPoolTable.setTitle(generatePoolTitle());
     }
