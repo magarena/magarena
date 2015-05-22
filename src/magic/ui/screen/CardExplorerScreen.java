@@ -77,7 +77,7 @@ public class CardExplorerScreen
         buttons.add(
                 new ActionBarButton(
                         IconImages.getIcon(MagicIcon.EDIT_ICON),
-                        "View Script", "View the script and groovy files for the selected card (or double-click row).",
+                        "View Script", "View the script and groovy files for the selected card.<br>(or double-click row)",
                         new AbstractAction() {
                             @Override
                             public void actionPerformed(final ActionEvent e) {
