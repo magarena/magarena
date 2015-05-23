@@ -577,9 +577,9 @@ public enum MagicAbility {
     },
     CastRestriction("Cast SN " + ARG.ANY, 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            final MagicCondition[] conds = MagicConditionParser.buildCast(ARG.any(arg));  
-            final MagicCardDefinition cardDef = (MagicCardDefinition)card;
-            card.add(MagicCardActivation.castOnly(cardDef, conds));
+            for (final MagicMatchedCostEvent mce : MagicConditionParser.buildCost(ARG.any(arg))) {
+                card.add(MagicAdditionalCost.create(mce));
+            }
         }
     },
     AdditionalCost("As an additional cost to cast SN, " + ARG.COST, 10) {

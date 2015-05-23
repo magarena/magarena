@@ -4,9 +4,12 @@ import magic.model.ARG;
 import magic.model.MagicCounterType;
 import magic.model.MagicAbility;
 import magic.model.target.MagicTargetFilterFactory;
+import magic.model.event.MagicMatchedCostEvent;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import java.util.List;
+import java.util.LinkedList;
 
 public enum MagicConditionParser {
 
@@ -496,5 +499,14 @@ public enum MagicConditionParser {
             conds[i + 1] = build(splitCosts[i]);
         }
         return conds;
+    }
+    
+    public static List<MagicMatchedCostEvent> buildCost(final String costs) {
+        final String[] splitCosts = costs.split(" and ");
+        final List<MagicMatchedCostEvent> matched = new LinkedList<MagicMatchedCostEvent>();
+        for (String cost : splitCosts) {
+            matched.add(build(cost));
+        }
+        return matched;
     }
 }
