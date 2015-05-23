@@ -382,6 +382,10 @@ public class ImageDrawingUtils {
                     g.drawImage(IconImages.getIcon(MagicIcon.BLOODCOUNTER).getImage(),ax,ay,observer);
                     if (amount > 1){drawStringWithOutline(g, str, ax+6, ay+14, observer);}
                     ax+=inc;
+                } else if (counterType == MagicCounterType.Growth) {
+                    g.drawImage(IconImages.getIcon(MagicIcon.GROWTHCOUNTER).getImage(),ax,ay,observer);
+                    if (amount > 1){drawStringWithOutline(g, str, ax+6, ay+14, observer);}
+                    ax+=inc;
                 }
             }
         }
