@@ -65,7 +65,8 @@ class CardDecksPanel extends JPanel {
         decksJList.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseReleased(MouseEvent evt) {
-                JList<File> list = (JList) evt.getSource();
+                @SuppressWarnings("unchecked")
+                JList<File> list = (JList<File>)evt.getSource();
                 if (evt.getClickCount() == 2 && SwingUtilities.isLeftMouseButton(evt)) { // Double-click
                     final int index = list.locationToIndex(evt.getPoint());
                     final File deckFile = decksJList.getModel().getElementAt(index);
