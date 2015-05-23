@@ -4,6 +4,6 @@ value=2.500
 rarity=R
 type=Sorcery
 cost={2}{G}{G}
-effect=Each player draws a card for each creature card in his or her graveyard.
-timing=main
+timing=draw
+requires_groovy_code
 oracle=Each player draws a card for each creature card in his or her graveyard.
