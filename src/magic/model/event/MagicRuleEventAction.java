@@ -451,10 +451,12 @@ public enum MagicRuleEventAction {
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
                     event.processTarget(game,new MagicTargetAction() {
                         public void doAction(final MagicTarget target) {
+                            final int amount = count.getAmount(event);
+                            game.logAppendMessage(event.getPlayer(),"("+amount+")");
                             game.doAction(new DealDamageAction(
                                 ARG.itSource(event, matcher),
-                                target, 
-                                count.getAmount(event)
+                                target,
+                                amount
                             ));
                         }
                     });
@@ -673,6 +675,7 @@ public enum MagicRuleEventAction {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
                     final int multiplier = count.getAmount(event);
+                    game.logAppendMessage(event.getPlayer(), "("+amount+")");
                     game.doAction(new DrawAction(ARG.youPlayer(event, matcher), amount * multiplier));
                 }
             };
@@ -732,7 +735,7 @@ public enum MagicRuleEventAction {
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
                     for (final MagicPlayer player : filter.filter(event)) {
                         if (isRandom) {
-                            game.addEvent(MagicDiscardEvent.Random(event.getSource(), player, amount));   
+                            game.addEvent(MagicDiscardEvent.Random(event.getSource(), player, amount));
                         } else {
                             game.addEvent(new MagicDiscardEvent(event.getSource(), player, amount));
                         }
@@ -860,6 +863,7 @@ public enum MagicRuleEventAction {
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
                     final int multipler = count.getAmount(event);
                     final int total = amount * multipler;
+                    game.logAppendMessage(event.getPlayer(), "("+amount+")");
                     event.processTargetPlayer(game,new MagicPlayerAction() {
                         public void doAction(final MagicPlayer player) {
                             if (isRandom) {
@@ -925,6 +929,7 @@ public enum MagicRuleEventAction {
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
                     final MagicPlayer player = ARG.youPlayer(event, matcher);
                     final int multiplier = count.getAmount(event);
+                    game.logAppendMessage(event.getPlayer(), "("+amount+")");
                     game.doAction(new ChangeLifeAction(player, amount * multiplier));
                 }
             };
@@ -965,6 +970,7 @@ public enum MagicRuleEventAction {
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
                     final MagicPlayer player = ARG.youPlayer(event, matcher);
                     final int multiplier = count.getAmount(event);
+                    game.logAppendMessage(event.getPlayer(), "("+amount+")");
                     game.doAction(new ChangeLifeAction(player, -amount * multiplier));
                 }
             };
@@ -1042,11 +1048,12 @@ public enum MagicRuleEventAction {
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    final int amt = count.getAmount(event);
+                    final int amount = count.getAmount(event);
+                    game.logAppendMessage(event.getPlayer(), "("+amount+")");
                     game.doAction(new ChangeTurnPTAction(
                         ARG.itPermanent(event, matcher),
-                        power * amt,
-                        toughness * amt
+                        power * amount,
+                        toughness * amount
                     ));
                 }
             };
@@ -1859,7 +1866,7 @@ public enum MagicRuleEventAction {
                         event,
                         choice,
                         MagicLocationType.OwnersHand
-                    ));      
+                    ));
                 }
             };
         }
@@ -1895,7 +1902,7 @@ public enum MagicRuleEventAction {
                             "to put into your hand"
                         ),
                         MagicLocationType.OwnersHand
-                    ));      
+                    ));
                 }
             };
         }
@@ -1915,7 +1922,7 @@ public enum MagicRuleEventAction {
                         event,
                         choice,
                         MagicLocationType.TopOfOwnersLibrary
-                    ));      
+                    ));
                 }
             };
         }
@@ -1935,7 +1942,7 @@ public enum MagicRuleEventAction {
                         event,
                         choice,
                         MagicLocationType.Graveyard
-                    ));      
+                    ));
                 }
             };
         }
@@ -2267,6 +2274,7 @@ public enum MagicRuleEventAction {
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
                     final int multiplier = count.getAmount(event);
                     final int total = amount * multiplier;
+                    game.logAppendMessage(event.getPlayer(), "("+multiplier+")");
                     for (int i = 0; i < total; i++) {
                         game.doAction(new PlayTokenAction(
                             event.getPlayer(),
@@ -2921,7 +2929,7 @@ public enum MagicRuleEventAction {
                         spec.additionTo
                     ));
                 }
-            };   
+            };
         }
         @Override
         public MagicCondition[] getConditions(final Matcher matcher) {
@@ -2972,7 +2980,7 @@ public enum MagicRuleEventAction {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
             final PermanentSpecParser spec = new PermanentSpecParser(matcher);
-            
+
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
@@ -2991,7 +2999,7 @@ public enum MagicRuleEventAction {
                         }
                     });
                 }
-            };   
+            };
 
         }
     },
@@ -3393,11 +3401,11 @@ public enum MagicRuleEventAction {
             final MagicEventAction winAction = matcher.group("win") != null ?
                 MagicRuleEventAction.create(matcher.group("win")).getAction() :
                 MagicEventAction.NONE;
-            
+
             final MagicEventAction loseAction = matcher.group("lose") != null ?
                 MagicRuleEventAction.create(matcher.group("lose")).getAction() :
                 MagicEventAction.NONE;
-           
+
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
@@ -3435,27 +3443,27 @@ public enum MagicRuleEventAction {
     private final MagicTargetPicker<?> picker;
     private final MagicTiming timing;
     private final String name;
-    
+
     private MagicRuleEventAction(final String aPattern) {
         this(aPattern, MagicTargetHint.None, MagicDefaultTargetPicker.create(), MagicTiming.None, "", MagicEventAction.NONE);
     }
-    
+
     private MagicRuleEventAction(final String aPattern, final MagicTargetHint aHint) {
         this(aPattern, aHint, MagicDefaultTargetPicker.create(), MagicTiming.None, "", MagicEventAction.NONE);
     }
-    
+
     private MagicRuleEventAction(final String aPattern, final MagicTiming timing) {
         this(aPattern, MagicTargetHint.None, MagicDefaultTargetPicker.create(), timing, "", MagicEventAction.NONE);
     }
-    
+
     private MagicRuleEventAction(final String aPattern, final MagicTiming aTiming, final String aName) {
         this(aPattern, MagicTargetHint.None, MagicDefaultTargetPicker.create(), aTiming, aName, MagicEventAction.NONE);
     }
-    
+
     private MagicRuleEventAction(final String aPattern, final MagicTiming aTiming, final String aName, final MagicEventAction aAction) {
         this(aPattern, MagicTargetHint.None, MagicDefaultTargetPicker.create(), aTiming, aName, aAction);
     }
-    
+
     private MagicRuleEventAction(
         final String aPattern,
         final MagicTargetHint aHint,
@@ -3465,7 +3473,7 @@ public enum MagicRuleEventAction {
     ) {
         this(aPattern, aHint, aPicker, aTiming, aName, MagicEventAction.NONE);
     }
-    
+
     private MagicRuleEventAction(
         final String aPattern,
         final MagicTargetHint aHint,
@@ -3474,7 +3482,7 @@ public enum MagicRuleEventAction {
     ) {
         this(aPattern, aHint, MagicDefaultTargetPicker.create(), aTiming, aName, MagicEventAction.NONE);
     }
-    
+
     private MagicRuleEventAction(
         final String aPattern,
         final MagicTargetHint aHint,
@@ -3504,31 +3512,31 @@ public enum MagicRuleEventAction {
     public boolean matches(final String rule) {
         return pattern.matcher(rule).matches();
     }
-    
+
     public MagicTargetPicker<?> getPicker(final Matcher matcher) {
         return picker;
     }
-    
+
     public MagicEventAction getAction(final Matcher matcher) {
         return action;
     }
-    
+
     public MagicEventAction getNoAction(final Matcher matcher) {
         return MagicEventAction.NONE;
     }
-    
+
     public MagicTiming getTiming(final Matcher matcher) {
         return timing;
     }
-    
+
     public String getName(final Matcher matcher) {
         return name;
     }
-    
+
     public MagicTargetHint getHint(final Matcher matcher) {
         return hint;
     }
-    
+
     public boolean isIndependent() {
         return pattern.toString().contains("sn") == false;
     }
@@ -3540,7 +3548,7 @@ public enum MagicRuleEventAction {
             return MagicChoice.NONE;
         }
     }
-    
+
     public MagicCondition[] getConditions(final Matcher matcher) {
         return MagicActivation.NO_COND;
     }
@@ -3566,7 +3574,7 @@ public enum MagicRuleEventAction {
         }
         return matcher;
     }
-    
+
     static final Pattern TARGET_REFERENCE = Pattern.compile("\\*([^*]+)\\*");
 
     private static MagicEventAction computeEventAction(final MagicEventAction main, final String[] part) {
@@ -3630,10 +3638,10 @@ public enum MagicRuleEventAction {
         }
         return res.toString();
     }
-    
+
     static final Pattern INTERVENING_IF = Pattern.compile("if " + ARG.COND + ", " + ARG.ANY, Pattern.CASE_INSENSITIVE);
     static final Pattern MAY_PAY = Pattern.compile("you may pay " + ARG.MANACOST + "\\. if you do, .+", Pattern.CASE_INSENSITIVE);
-    
+
     public static MagicSourceEvent create(final String raw) {
         final String text = renameThisThat(raw);
         final String[] part = text.split("~");
@@ -3707,7 +3715,7 @@ public enum MagicRuleEventAction {
                         source,
                         player,
                         new MagicMayChoice(
-                            MagicMessage.replaceName(pnMayChoice, source, player, ref),  
+                            MagicMessage.replaceName(pnMayChoice, source, player, ref),
                             choice
                         ),
                         picker,
