@@ -675,7 +675,7 @@ public enum MagicRuleEventAction {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
                     final int multiplier = count.getAmount(event);
-                    game.logAppendMessage(event.getPlayer(), "("+amount+")");
+                    game.logAppendMessage(event.getPlayer(), "("+multiplier+")");
                     game.doAction(new DrawAction(ARG.youPlayer(event, matcher), amount * multiplier));
                 }
             };
@@ -861,9 +861,9 @@ public enum MagicRuleEventAction {
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    final int multipler = count.getAmount(event);
-                    final int total = amount * multipler;
-                    game.logAppendMessage(event.getPlayer(), "("+amount+")");
+                    final int multiplier = count.getAmount(event);
+                    final int total = amount * multiplier;
+                    game.logAppendMessage(event.getPlayer(), "("+multiplier+")");
                     event.processTargetPlayer(game,new MagicPlayerAction() {
                         public void doAction(final MagicPlayer player) {
                             if (isRandom) {
@@ -929,7 +929,7 @@ public enum MagicRuleEventAction {
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
                     final MagicPlayer player = ARG.youPlayer(event, matcher);
                     final int multiplier = count.getAmount(event);
-                    game.logAppendMessage(event.getPlayer(), "("+amount+")");
+                    game.logAppendMessage(event.getPlayer(), "("+multiplier+")");
                     game.doAction(new ChangeLifeAction(player, amount * multiplier));
                 }
             };
@@ -970,7 +970,7 @@ public enum MagicRuleEventAction {
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
                     final MagicPlayer player = ARG.youPlayer(event, matcher);
                     final int multiplier = count.getAmount(event);
-                    game.logAppendMessage(event.getPlayer(), "("+amount+")");
+                    game.logAppendMessage(event.getPlayer(), "("+multiplier+")");
                     game.doAction(new ChangeLifeAction(player, -amount * multiplier));
                 }
             };
