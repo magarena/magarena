@@ -2,9 +2,8 @@ package magic.model;
 
 import java.util.HashSet;
 
+@SuppressWarnings("serial")
 public class MagicCubeDefinition extends HashSet<String> {
-
-    private static final long serialVersionUID = 1L;
 
     private final String name;
 
