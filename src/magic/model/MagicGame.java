@@ -553,7 +553,7 @@ public class MagicGame {
     public void addDelayedAction(final MagicAction action) {
         delayedActions.add(action);
     }
-    
+
     public void doAction(final MagicAction action) {
         actions.add(action);
         try {
@@ -568,7 +568,7 @@ public class MagicGame {
     public void update() {
         doDelayedActions();
         MagicPermanent.update(this);
-       
+
         // add Soulbond trigger here
         triggers = new MagicPermanentTriggerMap(additionalTriggers);
         triggers.add(new MagicPermanentTrigger(0, MagicPermanent.NONE, MagicWhenOtherComesIntoPlayTrigger.Soulbond));
@@ -623,7 +623,7 @@ public class MagicGame {
             doAction(action);
         }
     }
-    
+
     public void snapshot() {
         final MagicAction markerAction=new MarkerAction();
         doAction(markerAction);
@@ -700,7 +700,14 @@ public class MagicGame {
         if (disableLog) {
             return;
         }
-        logMessageBuilder.appendMessage(player,"("+amount+")");
+        logMessageBuilder.appendMessage(player, "(" + amount + ")");
+    }
+
+    public void logAppendX(final MagicPlayer player, final int X) {
+        if (disableLog) {
+            return;
+        }
+        logMessageBuilder.appendMessage(player, "(X="+X+")");
     }
 
     public void logMessage(final MagicPlayer player,final String message) {
@@ -754,7 +761,7 @@ public class MagicGame {
         if (event.getManaChoiceResultIndex() >= 0) {
             payedCost.set(choiceResults[event.getManaChoiceResultIndex()]);
         }
-        
+
         // Target in cost
         if (event.getTargetChoiceResultIndex() >= 0) {
             payedCost.set(choiceResults[event.getTargetChoiceResultIndex()]);
@@ -789,7 +796,7 @@ public class MagicGame {
         }
         return false;
     }
-    
+
     public List<Object[]> advanceToNextEventWithChoices() {
         while (isFinished() == false) {
             if (hasNextEvent() == false) {
@@ -812,7 +819,7 @@ public class MagicGame {
     public void addEvent(final MagicEvent event) {
         doAction(new AddEventAction(event));
     }
-    
+
     public void addFirstEvent(final MagicEvent event) {
         doAction(new AddFirstEventAction(event));
     }
@@ -892,7 +899,7 @@ public class MagicGame {
     public MagicPlayer getLosingPlayer() {
         return losingPlayer;
     }
-    
+
     public MagicSource getActiveSource() {
         return activeSource;
     }
@@ -905,12 +912,12 @@ public class MagicGame {
         return players[0].getNrOfPermanents(type) +
                players[1].getNrOfPermanents(type);
     }
-    
+
     public int getNrOfPermanents(final MagicSubType subType) {
         return players[0].getNrOfPermanents(subType) +
                players[1].getNrOfPermanents(subType);
     }
-    
+
     public int getNrOfPermanents(final MagicColor color) {
         return players[0].getNrOfPermanents(color) +
                players[1].getNrOfPermanents(color);
@@ -920,7 +927,7 @@ public class MagicGame {
         return players[0].getNrOfPermanents(filter) +
                players[1].getNrOfPermanents(filter);
     }
-    
+
     public boolean canPlaySorcery(final MagicPlayer controller) {
         return phase.getType().isMain() &&
                stack.isEmpty() &&
@@ -951,7 +958,7 @@ public class MagicGame {
         maxLands++;
     }
 
-    public void resetMaxLands() { 
+    public void resetMaxLands() {
         maxLands = 1;
     }
 
@@ -962,7 +969,7 @@ public class MagicGame {
         }
         return spellCount;
     }
-    
+
     public int getSpellsCastLastTurn() {
         int spellCount = 0;
         for (final MagicPlayer player : players) {
@@ -974,7 +981,7 @@ public class MagicGame {
     public void incSpellsCast(final MagicPlayer player) {
         player.incSpellsCast();
     }
-    
+
     public boolean getCreatureDiedThisTurn() {
         return creatureDiedThisTurn;
     }
@@ -1014,7 +1021,7 @@ public class MagicGame {
     public int getPriorityPassedCount() {
         return priorityPassedCount;
     }
-    
+
     public MagicSource createDelayedSource(final MagicObject obj, final MagicPlayer controller) {
         return new MagicCard(obj.getCardDefinition(), controller.map(this), getUniqueId());
     }
@@ -1022,7 +1029,7 @@ public class MagicGame {
     public MagicPermanent createPermanent(final MagicCard card,final MagicPlayer controller) {
         return new MagicPermanent(getUniqueId(),card,controller);
     }
-    
+
     public MagicPermanent createPermanent(final MagicCard card, final MagicCardDefinition cardDef, final MagicPlayer controller) {
         return new MagicPermanent(getUniqueId(),card,cardDef,controller);
     }
@@ -1061,7 +1068,7 @@ public class MagicGame {
             update();
             // some action may set stateCheckRequired to true, if so loop again
         }
-   
+
         // update log with messages from state-based actions
         logMessages();
 
@@ -1090,7 +1097,7 @@ public class MagicGame {
                 addEvent(new MagicUniquenessEvent(permanent, targetFilter));
             }
         }
-    
+
         // 704.5m "world rule"
         if (permanent.hasType(MagicType.World)) {
             final MagicTargetFilter<MagicPermanent> targetFilter = new MagicOtherPermanentTargetFilter(MagicTargetFilterFactory.WORLD, permanent);
@@ -1101,7 +1108,7 @@ public class MagicGame {
                     world.getName() + " is put into its owner's graveyard."
                 );
                 doAction(new RemoveFromPlayAction(
-                    world, 
+                    world,
                     MagicLocationType.Graveyard
                 ));
             }
@@ -1119,7 +1126,7 @@ public class MagicGame {
                 assert obj == null ||
                        obj instanceof Enum ||
                        obj instanceof Number ||
-                       obj instanceof String : 
+                       obj instanceof String :
                        obj.getClass().getName() + " not mapped";
                 mappedData[index]=obj;
             }
@@ -1211,13 +1218,13 @@ public class MagicGame {
             addStatic(permanent, mstatic);
         }
     }
-    
+
     public void addStatics(final MagicPermanent permanent, final Collection<MagicStatic> mstatics) {
         for (final MagicStatic mstatic : mstatics) {
             addStatic(permanent, mstatic);
         }
     }
-    
+
     public Collection<MagicPermanentStatic> removeSelfStatics(final MagicPermanent permanent) {
         return statics.remove(permanent, permanent.getStatics());
     }
@@ -1251,7 +1258,7 @@ public class MagicGame {
     public void removeStatic(final MagicPermanent permanent,final MagicStatic mstatic) {
         statics.remove(permanent, mstatic);
     }
-    
+
     public void removeStatics(final MagicPermanent permanent,final Collection<MagicStatic> mstatics) {
         statics.remove(permanent, mstatics);
     }
@@ -1263,7 +1270,7 @@ public class MagicGame {
     public void setImmediate(final boolean aImmediate) {
         immediate = aImmediate;
     }
-    
+
     public boolean isImmediate() {
         return immediate;
     }
