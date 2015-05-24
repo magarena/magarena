@@ -675,7 +675,9 @@ public enum MagicRuleEventAction {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
                     final int multiplier = count.getAmount(event);
-                    game.logAppendMessage(event.getPlayer(), "("+multiplier+")");
+                    if (multiplier>1) {
+                        game.logAppendMessage(event.getPlayer(), "(" + multiplier + ")");
+                    }
                     game.doAction(new DrawAction(ARG.youPlayer(event, matcher), amount * multiplier));
                 }
             };
