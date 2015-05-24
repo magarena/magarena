@@ -33,7 +33,7 @@ def choice = new MagicTargetChoice(filter, "target attacking or blocking Dragon"
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game,{
                 final int amount = it.getPower();
-                game.logAppendMessage(event.getPlayer(),"("+amount+")");
+                game.logAppendValue(event.getPlayer(),amount);
                 game.doAction(ChangeStateAction.Set(it,MagicPermanentState.CannotBeRegenerated));
                 game.doAction(new DestroyAction(it));
                 game.doAction(new ChangeLifeAction(event.getPlayer(), amount));

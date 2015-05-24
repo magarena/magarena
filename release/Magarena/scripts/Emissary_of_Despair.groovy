@@ -13,7 +13,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer opponent = event.getPlayer();
             final int amount = opponent.getNrOfPermanents(MagicType.Artifact);
-            game.logAppendMessage(opponent, "("+amount+")");
+            game.logAppendValue(opponent, amount);
             game.doAction(new ChangeLifeAction(opponent,-amount));
         }
     }

@@ -17,7 +17,7 @@
                 game.doAction(new DestroyAction(it));
                 final int amount = LAND_CARD_FROM_YOUR_GRAVEYARD.filter(it).size();
                 game.doAction(new DealDamageAction(event.getSource(),it.getController(),amount));
-                game.logAppendMessage(event.getPlayer()," ("+amount+")");
+                game.logAppendValue(event.getPlayer(),amount);
             });
         }
     }

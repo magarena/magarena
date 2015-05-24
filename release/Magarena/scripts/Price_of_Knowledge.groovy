@@ -14,7 +14,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final int amount = event.getPlayer().getHandSize();
-            game.logAppendMessage(event.getPlayer(),"("+amount+")");
+            game.logAppendValue(event.getPlayer(),amount);
             game.doAction(new DealDamageAction(event.getSource(), event.getPlayer(), amount));
         }
     }

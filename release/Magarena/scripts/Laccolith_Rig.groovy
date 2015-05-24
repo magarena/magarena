@@ -21,7 +21,7 @@
                 event.processTargetPermanent(game, {
                     final MagicPermanent permanent = event.getPermanent().getEnchantedPermanent();
                     final int amount = permanent.getPower();
-                    game.logAppendMessage(event.getPlayer(),"("+amount+")")
+                    game.logAppendValue(event.getPlayer(),amount)
                     game.doAction(new DealDamageAction(permanent,it,amount));
                     game.doAction(ChangeStateAction.Set(permanent,MagicPermanentState.NoCombatDamage));
                 });

@@ -26,7 +26,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
             final int amount=event.getRefPermanent().getPower();
-            game.logAppendMessage(player,"("+amount+")");
+            game.logAppendValue(player,amount);
             game.doAction(new PlayTokensAction(
                 player,
                 CardDefinitions.getToken("2/2 black Zombie creature token"),

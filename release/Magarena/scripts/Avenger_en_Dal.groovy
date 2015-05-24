@@ -31,7 +31,7 @@ def choice = new MagicTargetChoice("target attacking creature");
             event.processTargetPermanent(game, {
                 game.addEvent(new MagicExileEvent(it));
                 game.doAction(new ChangeLifeAction(it.getController(),it.getToughness()));
-                game.logAppendMessage(event.getPlayer(),"("+it.getToughness()+")");
+                game.logAppendValue(event.getPlayer(),it.getToughness());
             });
         }
     }

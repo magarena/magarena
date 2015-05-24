@@ -13,7 +13,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
                 final int amount = it.getNrOfPermanents(MagicTargetFilterFactory.WHITE_OR_BLUE_PERMANENT_YOU_CONTROL) * 2;
-                game.logAppendMessage(event.getPlayer(),"("+amount+")");
+                game.logAppendValue(event.getPlayer(),amount);
                 game.doAction(new DealDamageAction(event.getSource(), it, amount));
             });
         }

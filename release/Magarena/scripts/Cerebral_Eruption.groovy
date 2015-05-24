@@ -17,7 +17,7 @@
                 for (final MagicCard card : it.getLibrary().getCardsFromTop(1)) {
                     game.doAction(new RevealAction(card));
                     final int amount = card.getConvertedCost();
-                    game.logAppendMessage(event.getPlayer(),"("+amount+")");
+                    game.logAppendValue(event.getPlayer(),amount);
                     game.doAction(new DealDamageAction(event.getSource(),it,amount));
                     CREATURE_YOU_CONTROL.filter(it) each {
                         game.doAction(new DealDamageAction(event.getSource(), it, amount));

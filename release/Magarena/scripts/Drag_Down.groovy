@@ -16,7 +16,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
                 final int amount = event.getPlayer().getDomain();
-                game.logAppendMessage(event.getPlayer()," ("+amount+")");
+                game.logAppendValue(event.getPlayer(),amount);
                 game.doAction(new ChangeTurnPTAction(it,-amount,-amount));
             });
         }

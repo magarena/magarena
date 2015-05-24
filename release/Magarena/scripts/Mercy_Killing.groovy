@@ -14,7 +14,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
                 final int amount = it.getPower();
-                game.logAppendMessage(event.getPlayer(),"("+amount+")");
+                game.logAppendMessage(event.getPlayer(),"(X="+amount+")");
                 final MagicPlayer controller=it.getController();
                 game.doAction(new SacrificeAction(it));
                 game.doAction(new PlayTokensAction(

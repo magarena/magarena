@@ -42,7 +42,7 @@ def choice = new MagicTargetChoice(filter, "a creature card with converted mana 
                     final MagicPermanent creature ->
                     final int amount = creature.getToughness();
                     final MagicPlayer player = event.getPlayer();
-                    game.logAppendMessage(player,"("+amount+")");
+                    game.logAppendValue(player,amount);
                     game.doAction(new DestroyAction(creature));
                     game.doAction(new ChangeLifeAction(player,-creature.getToughness()));
                 });

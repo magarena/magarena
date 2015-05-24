@@ -15,7 +15,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
                 final int amount=event.getRefPermanent().getPower();
-                game.logAppendMessage(event.getPlayer(),"("+amount+")");
+                game.logAppendValue(event.getPlayer(),amount);
                 game.addEvent(new MagicDiscardEvent(event.getSource(), it, amount));
             });
         }

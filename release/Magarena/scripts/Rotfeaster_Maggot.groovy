@@ -15,7 +15,7 @@
             event.processTargetCard(game, {
                 final int amount = it.getToughness();
                 final MagicPlayer player = event.getPlayer();
-                game.logAppendMessage(player,"("+amount+")");
+                game.logAppendValue(player,amount);
                 game.doAction(new RemoveCardAction(it, MagicLocationType.Graveyard));
                 game.doAction(new MoveCardAction(it, MagicLocationType.Graveyard, MagicLocationType.Exile));
                 game.doAction(new ChangeLifeAction(player, amount));

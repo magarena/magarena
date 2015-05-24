@@ -11,7 +11,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final int amount = NONBASIC_LAND_YOU_CONTROL.filter(game.getDefendingPlayer()).size();
-            game.logAppendMessage(event.getPlayer(), "("+amount+")");
+            game.logAppendValue(event.getPlayer(), amount);
             ATTACKING_CREATURE.filter(event) each {
                 game.doAction(new ChangeTurnPTAction(it, amount,0));
             }

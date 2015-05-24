@@ -18,7 +18,7 @@
                 game.doAction(new DestroyAction(it));
                 if (event.isKicked()) {
                     game.doAction(new DealDamageAction(event.getSource(),it.getController(),it.getPower()));
-                    game.logAppendMessage(event.getPlayer(),"("+it.getPower()+")");
+                    game.logAppendValue(event.getPlayer(),it.getPower());
                 }
             });
         }

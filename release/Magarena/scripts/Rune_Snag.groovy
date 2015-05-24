@@ -18,7 +18,7 @@
                 .filter(event)
                 .size()*2)+2;
             event.processTargetCardOnStack(game, {
-                game.logAppendMessage(event.getPlayer()," (X="+amount+")");
+                game.logAppendValue(event.getPlayer(),amount);
                 game.addEvent(new MagicCounterUnlessEvent(
                     event.getSource(),
                     it,

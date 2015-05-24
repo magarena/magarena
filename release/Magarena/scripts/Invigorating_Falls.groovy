@@ -13,7 +13,7 @@
             final MagicPlayer player = event.getPlayer();
             final int amount = CREATURE_CARD_FROM_ALL_GRAVEYARDS.filter(event).size();
             game.doAction(new ChangeLifeAction(player,amount));
-            game.logAppendMessage(player," ("+amount+")");
+            game.logAppendValue(player,amount);
         }
     }
 ]

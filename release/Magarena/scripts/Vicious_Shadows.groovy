@@ -16,7 +16,7 @@
             if (event.isYes()) {
                 event.processTargetPlayer(game, {
                     final int amount = it.getHandSize();
-                    game.logAppendMessage(event.getPlayer(), "("+amount+")");
+                    game.logAppendValue(event.getPlayer(),amount);
                     game.doAction(new DealDamageAction(event.getPermanent(), it, it.getHandSize()));
                 });
             }

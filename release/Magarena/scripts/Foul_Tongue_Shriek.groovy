@@ -14,7 +14,7 @@
             event.processTargetPlayer(game, {
                 final MagicPlayer player = event.getPlayer();
                 final int amount = ATTACKING_CREATURE_YOU_CONTROL.filter(player).size();
-                game.logAppendMessage(player, "("+amount+")");
+                game.logAppendValue(player,amount);
                 game.doAction(new ChangeLifeAction(it, -amount));
                 game.doAction(new ChangeLifeAction(player, amount));
             });

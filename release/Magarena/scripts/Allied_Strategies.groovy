@@ -14,7 +14,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
                 final int domain = it.getDomain();
-                game.logAppendMessage(event.getPlayer()," ("+domain+")");
+                game.logAppendValue(event.getPlayer(), domain);
                 game.doAction(new DrawAction(it,domain));
             });
         }

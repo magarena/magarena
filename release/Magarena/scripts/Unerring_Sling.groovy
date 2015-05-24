@@ -31,7 +31,7 @@ def targetChoice = MagicTargetChoice.Negative("target attacking or blocking crea
             event.processTargetPermanent(game, {
                 final MagicPlayer player = event.getPlayer();
                 final int amount=event.getRefPermanent().getPower();
-                game.logAppendMessage(player,"("+amount+")");
+                game.logAppendValue(player,amount);
                 game.doAction(new DealDamageAction(event.getPermanent(), it, amount));
             });
         }

@@ -28,7 +28,7 @@
             event.processTargetPermanent(game,{
                 final int amount = it.getPower();
                 game.doAction(new DealDamageAction(it,it,amount));
-                game.logAppendMessage(event.getPlayer()," ("+amount+")")
+                game.logAppendValue(event.getPlayer(),amount)
             });
         }
     }

@@ -13,7 +13,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetCardOnStack(game, {
                 final int amount = it.getConvertedCost();
-                game.logAppendMessage(event.getPlayer(),"("+amount+")");
+                game.logAppendValue(event.getPlayer(),amount);
                 game.doAction(new DealDamageAction(event.getSource(), it.getController(), amount));
             });
         }

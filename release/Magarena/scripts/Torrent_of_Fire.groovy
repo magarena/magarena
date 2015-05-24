@@ -18,7 +18,7 @@
                 PERMANENT_YOU_CONTROL.filter(player) each {
                     amount = Math.max(amount,it.getConvertedCost());
                 }
-                game.logAppendMessage(player,"("+amount+")");
+                game.logAppendValue(player,amount);
                 game.doAction(new DealDamageAction(event.getSource(), it, amount));
             });
         }

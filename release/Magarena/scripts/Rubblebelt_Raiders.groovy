@@ -17,7 +17,7 @@
                 ATTACKING_CREATURE_YOU_CONTROL
             );
             game.doAction(new ChangeCountersAction(event.getPermanent(),MagicCounterType.PlusOne,attackers));
-            game.logAppendMessage(player," ("+attackers+")");
+            game.logAppendValue(player,attackers);
         }
     }
 ]

@@ -14,7 +14,7 @@
             event.processTargetPlayer(game, {
                 final MagicPlayer player = event.getPlayer();
                 final int amount = it.getHandSize();
-                game.logAppendMessage(player, "("+amount+")");
+                game.logAppendValue(player,amount);
                 game.doAction(new ChangeLifeAction(player, amount))
             });
         }

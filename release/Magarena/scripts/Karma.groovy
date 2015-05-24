@@ -14,7 +14,7 @@
             final MagicPlayer player = event.getPlayer();
             final int amount = player.getNrOfPermanents(SWAMP_YOU_CONTROL);
             game.doAction(new DealDamageAction(event.getSource(),player,amount));
-            game.logAppendMessage(player," ("+amount+")");
+            game.logAppendValue(player,amount);
         }
     }
 ]

@@ -12,7 +12,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final int amount = ARTIFACT.filter(event).size() + CREATURE.filter(event).size();
-            game.logAppendMessage(event.getPlayer(), "("+amount+")");
+            game.logAppendValue(event.getPlayer(),amount);
             game.doAction(new ChangeLifeAction(event.getPlayer(), amount));
         }
     }

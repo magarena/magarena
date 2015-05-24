@@ -19,7 +19,7 @@ def filter = new MagicPermanentFilterImpl() {
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
             def amount = player.getNrOfPermanents(MagicSubType.Island).intdiv(2);
-            game.logAppendMessage(player,"("+amount+")");
+            game.logAppendValue(player,amount);
             filter.filter(event) each {
                 game.doAction(new DealDamageAction(event.getSource(), it, amount));
             }

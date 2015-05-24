@@ -28,7 +28,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
                 final int amount=it.getHandSize();
-                game.logAppendMessage(event.getPlayer()," ("+amount+")");
+                game.logAppendValue(event.getPlayer(),amount);
                 game.doAction(new DealDamageAction(event.getSource(),it,amount));
             });
         }

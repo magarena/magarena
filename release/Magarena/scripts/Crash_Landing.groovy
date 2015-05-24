@@ -16,7 +16,7 @@
             event.processTargetPermanent(game, {
                 final MagicPlayer player = event.getPlayer();
                 final int amount = player.getNrOfPermanents(MagicSubType.Forest);
-                game.logAppendMessage(player,"("+amount+")");
+                game.logAppendValue(player,amount);
                 game.doAction(new LoseAbilityAction(it,MagicAbility.Flying));
                 game.doAction(new DealDamageAction(event.getSource(),it,amount));
             });

@@ -19,7 +19,7 @@
                 for (final MagicCard card : player.getLibrary().getCardsFromTop(1)) {
                     final int amount = card.getConvertedCost();
                     game.doAction(new RevealAction(card));
-                    game.logAppendMessage(player,"("+amount+")");
+                    game.logAppendValue(player,amount);
                     game.doAction(new ChangeLifeAction(player.getOpponent(), -amount));
                 }
             }

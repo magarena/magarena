@@ -17,7 +17,7 @@ def choice = new MagicTargetChoice("target instant or sorcery card from your gra
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetCard(game, {
                 final int amount = it.getConvertedCost();
-                game.logAppendMessage(event.getPlayer(), "("+amount+")");
+                game.logAppendValue(event.getPlayer(),amount);
                 game.doAction(new RemoveCardAction(it, MagicLocationType.Graveyard));
                 game.doAction(new MoveCardAction(it, MagicLocationType.Graveyard, MagicLocationType.OwnersHand));
                 CREATURE_YOUR_OPPONENT_CONTROLS.filter(event) each {

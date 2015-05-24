@@ -16,7 +16,7 @@
             event.processTargetPermanent(game, {
                 final MagicPlayer player = event.getPlayer()
                 int amount = it.getPower();
-                game.logAppendMessage(player,"("+amount+")");
+                game.logAppendValue(player,amount);
                 game.doAction(new ChangeLifeAction(player, amount));
             });
         }

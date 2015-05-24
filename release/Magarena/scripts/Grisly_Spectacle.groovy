@@ -18,7 +18,7 @@ def choice = Negative("target nonartifact creature");
             event.processTargetPermanent(game, {
                 game.doAction(new DestroyAction(it));
                 game.doAction(new MillLibraryAction(it.getController(),it.getPower()));
-                game.logAppendMessage(event.getPlayer(),"("+it.getPower()+")");
+                game.logAppendValue(event.getPlayer(),it.getPower());
             });
         }
     }

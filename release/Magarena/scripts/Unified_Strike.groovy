@@ -16,7 +16,7 @@
             event.processTargetPermanent(game, {
                 final MagicPlayer player = event.getPlayer()
                 final int amount = game.getNrOfPermanents(MagicSubType.Soldier)
-                game.logAppendMessage(player,"("+amount+")");
+                game.logAppendValue(player,amount);
                 if (it.getPower() <= amount) {
                     game.doAction(new RemoveFromPlayAction(it, MagicLocationType.Exile));
                 }

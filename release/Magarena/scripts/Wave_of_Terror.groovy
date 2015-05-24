@@ -14,7 +14,7 @@
         @Override
         public void executeEvent(final MagicGame game,final MagicEvent event) {
             final int amount = event.getPermanent().getCounters(MagicCounterType.Age);
-            game.logAppendMessage(event.getPlayer(), "("+amount+")");
+            game.logAppendValue(event.getPlayer(),amount);
             CREATURE.filter(event) each {
                 if (it.getConvertedCost() == amount) {
                     game.doAction(ChangeStateAction.Set(it, MagicPermanentState.CannotBeRegenerated));

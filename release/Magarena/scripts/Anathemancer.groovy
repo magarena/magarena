@@ -15,7 +15,7 @@
             event.processTargetPlayer(game, {
                 final int amount = it.getNrOfPermanents(NONBASIC_LAND_YOU_CONTROL)
                 game.doAction(new DealDamageAction(event.getSource(),it,amount));
-                game.logAppendMessage(event.getPlayer(),"("+amount+")");
+                game.logAppendValue(event.getPlayer(),amount);
             });
         }
     }

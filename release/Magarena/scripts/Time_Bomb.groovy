@@ -25,7 +25,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPermanent source=event.getPermanent();
             final int amount=source.getCounters(MagicCounterType.Charge);
-            game.logAppendMessage(event.getPlayer()," ("+amount+")");
+            game.logAppendValue(event.getPlayer(),amount);
             CREATURE.filter(event) each {
                 game.doAction(new DealDamageAction(source,it,amount));
             }

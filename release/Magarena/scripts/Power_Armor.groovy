@@ -28,7 +28,7 @@
             event.processTargetPermanent(game,{
                 final MagicPlayer player = event.getPlayer()
                 final int amount = player.getDomain();
-                game.logAppendMessage(player," ("+amount+")");
+                game.logAppendValue(player,amount);
                 game.doAction(new ChangeTurnPTAction(it,amount,amount));
             });
         }

@@ -26,7 +26,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetCardOnStack(game, {
                 final int amount = event.getRefCard().getConvertedCost();
-                game.logAppendMessage(event.getPlayer(), "("+amount+")");
+                game.logAppendValue(event.getPlayer(),amount);
                 if (it.getConvertedCost() == amount) {
                     game.doAction(new CounterItemOnStackAction(it));
                     game.logAppendMessage(event.getPlayer(), "\n ("+it.getName()+") is countered."); 

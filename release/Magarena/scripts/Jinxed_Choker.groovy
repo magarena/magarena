@@ -32,7 +32,7 @@
             final MagicPermanent permanent = event.getPermanent();
             final int amount = permanent.getCounters(MagicCounterType.Charge);
             final MagicPlayer player = event.getPlayer();
-            game.logAppendMessage(player,"("+amount+")");
+            game.logAppendValue(player,amount);
             game.doAction(new DealDamageAction(permanent, player, amount));
         }
     },

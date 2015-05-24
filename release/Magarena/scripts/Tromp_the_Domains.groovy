@@ -13,7 +13,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
             final int domain = player.getDomain();
-            game.logAppendMessage(player," ("+domain+")");
+            game.logAppendValue(player,domain);
             CREATURE_YOU_CONTROL.filter(player) each {
                 game.doAction(new ChangeTurnPTAction(it,domain,domain));
                 game.doAction(new GainAbilityAction(it,MagicAbility.Trample));

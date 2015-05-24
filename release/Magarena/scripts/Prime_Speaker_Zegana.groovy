@@ -17,7 +17,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final int amount = event.getPermanent().getPower();
-            game.logAppendMessage(event.getPlayer(),"("+amount+")");
+            game.logAppendValue(event.getPlayer(),amount);
             game.doAction(new DrawAction(event.getPlayer(), amount));
         }
     }
