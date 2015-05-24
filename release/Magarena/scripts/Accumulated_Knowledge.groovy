@@ -17,7 +17,7 @@
                 .filter(event)
                 .size();
             game.doAction(new DrawAction(event.getPlayer()));
-            game.logAppendMessage(event.getPlayer()," (X="+amount+")");
+            game.logAppendX(event.getPlayer(),amount);
             game.doAction(new DrawAction(event.getPlayer(),amount));
         }
     }

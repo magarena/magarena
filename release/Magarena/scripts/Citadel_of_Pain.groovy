@@ -17,7 +17,7 @@
                 event.getPlayer(),
                 amount
             ));
-            game.logAppendMessage(event.getPlayer(),"(X="+amount+")");
+            game.logAppendX(event.getPlayer(),amount);
         }
     }
 ]

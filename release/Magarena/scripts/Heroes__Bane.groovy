@@ -23,7 +23,7 @@
             final MagicPermanent creature = event.getPermanent();
             final int amount = creature.getPower();
             game.doAction(new ChangeCountersAction(creature,MagicCounterType.PlusOne,amount));
-            game.logAppendMessage(event.getPlayer(),"(X="+amount+")");
+            game.logAppendX(event.getPlayer(),amount);
         }
     }
 ]

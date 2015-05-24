@@ -14,7 +14,7 @@
             final int amount = player.getNrOfPermanents(MagicSubType.Zombie);
             game.doAction(new DrawAction(player,amount));
             game.doAction(new ChangeLifeAction(player,-amount));
-            game.logAppendMessage(player," (X="+amount+")");
+            game.logAppendX(player,amount);
         }
     }
 ]

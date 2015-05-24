@@ -18,7 +18,7 @@
                 .from(MagicTargetType.OpponentsGraveyard)
                 .filter(event)
                 .size();
-            game.logAppendMessage(event.getPlayer(),"(X="+amount+")")
+            game.logAppendX(event.getPlayer(),amount)
             game.doAction(new DealDamageAction(event.getSource(),event.getPlayer(),amount));
         }
     }

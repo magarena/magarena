@@ -13,7 +13,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
                 final int amount = it.getNrOfPermanents(WHITE_CREATURE) * 2;
-                game.logAppendMessage(event.getPlayer()," (X="+amount+")");
+                game.logAppendX(event.getPlayer(),amount);
                 if (amount>0) {
                     game.doAction(new DealDamageAction(event.getSource(),it,amount));
                 }

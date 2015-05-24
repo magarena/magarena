@@ -20,7 +20,7 @@
                     amount,
                     0
                 ));
-                game.logAppendMessage(event.getPlayer()," (X="+amount+")");
+                game.logAppendX(event.getPlayer(),amount);
             });
         }
     }

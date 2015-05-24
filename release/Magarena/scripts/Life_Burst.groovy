@@ -19,7 +19,7 @@
                 .size()*4;
             event.processTargetPlayer(game, {
                 game.doAction(new ChangeLifeAction(it,4));
-                game.logAppendMessage(event.getPlayer()," (X="+amount+")");
+                game.logAppendValue(event.getPlayer(),amount);
                 game.doAction(new ChangeLifeAction(it,4*amount));
             });
         }

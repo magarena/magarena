@@ -18,7 +18,7 @@
                 .filter(event)
                 .size()+3;
             event.processTargetPermanent(game, {
-                game.logAppendMessage(event.getPlayer()," (X="+amount+")");
+                game.logAppendX(event.getPlayer(),amount);
                 game.doAction(new ChangeTurnPTAction(it,amount,amount));
             });
         }

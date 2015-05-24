@@ -18,7 +18,7 @@
                 .filter(event)
                 .size()+2;
             event.processTarget(game, {
-                game.logAppendMessage(event.getPlayer()," (X="+amount+")");
+                game.logAppendX(event.getPlayer(),amount);
                 game.doAction(new DealDamageAction(event.getSource(),it,amount));
             });
         }

@@ -12,7 +12,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicSource source = event.getSource();
             final int amount = game.getNrOfPermanents(MagicSubType.Beast);
-            game.logAppendMessage(event.getPlayer()," (X="+amount+")");
+            game.logAppendX(event.getPlayer(),amount);
             CREATURE_WITHOUT_FLYING.filter(event) each {
                 game.doAction(new DealDamageAction(source,it,amount));
             }

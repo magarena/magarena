@@ -39,7 +39,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
                 final int X = event.getPermanent().getCounters(MagicCounterType.PlusOne);
-                game.logAppendMessage(event.getPlayer(), "(X="+X+")");
+                game.logAppendX(event.getPlayer(),X);
                 game.doAction(new PlayTokenAction(
                     it,
                     MagicCardDefinition.create({

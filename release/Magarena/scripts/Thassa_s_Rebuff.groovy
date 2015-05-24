@@ -13,7 +13,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
             final int amount = player.getDevotion(MagicColor.Blue);
-            game.logAppendMessage(player," (X="+amount+")");
+            game.logAppendX(player,amount);
             event.processTargetCardOnStack(game, {
                 game.addEvent(new MagicCounterUnlessEvent(
                     event.getSource(), 

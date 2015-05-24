@@ -18,7 +18,7 @@
                 .filter(event)
                 .size()+1;
             event.processTargetPlayer(game, {
-                game.logAppendMessage(event.getPlayer()," (X="+amount+")");
+                game.logAppendX(event.getPlayer(),amount);
                 game.addEvent(new MagicDiscardEvent(event.getSource(),it,amount));
             });
         }
