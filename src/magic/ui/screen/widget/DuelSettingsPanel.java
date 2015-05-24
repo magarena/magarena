@@ -29,7 +29,7 @@ public class DuelSettingsPanel extends TexturedPanel implements IThemeStyle {
     private int startLife;
     private int handSize;
     private int maxGames = 7;
-    private String cubeName = CubeDefinitions.getCubeNames()[0];
+    private String cubeName = CubeDefinitions.DEFAULT_CUBE_NAME;
     private final MouseAdapter mouseAdapter = getMouseAdapter();
 
     public DuelSettingsPanel(final MagicFrame frame, final DuelConfig config) {

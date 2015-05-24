@@ -15,6 +15,7 @@ import magic.utility.MagicFileSystem.DataPath;
 
 public class CubeDefinitions {
 
+    public static final String DEFAULT_CUBE_NAME = "all";
     private static final String CUBE_FILE_EXTENSION = "_cube.txt";
 
     private static final FileFilter CUBE_FILE_FILTER = new FileFilter() {
@@ -27,19 +28,11 @@ public class CubeDefinitions {
     private static final List<MagicCubeDefinition> cubeDefinitions = new ArrayList<>();
 
     static {
-        cubeDefinitions.add(new MagicCubeDefinition("all"));
+        cubeDefinitions.add(new MagicCubeDefinition(DEFAULT_CUBE_NAME));
     }
 
     public static MagicCubeDefinition[] getCubesArray() {
         return cubeDefinitions.toArray(new MagicCubeDefinition[cubeDefinitions.size()]);
-    }
-
-    public static String[] getCubeNames() {
-        final String[] names=new String[cubeDefinitions.size()];
-        for (int index=0;index<names.length;index++) {
-            names[index]=cubeDefinitions.get(index).getName();
-        }
-        return names;
     }
 
     public static String[] getFilterValues() {
