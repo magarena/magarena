@@ -696,6 +696,13 @@ public class MagicGame {
         logMessageBuilder.appendMessage(player,message);
     }
 
+    public void logAppendValue(final MagicPlayer player, final int amount) {
+        if (disableLog) {
+            return;
+        }
+        logMessageBuilder.appendMessage(player,"("+amount+")");
+    }
+
     public void logMessage(final MagicPlayer player,final String message) {
         if (disableLog) {
             return;
