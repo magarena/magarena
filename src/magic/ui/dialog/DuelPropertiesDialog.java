@@ -1,6 +1,5 @@
 package magic.ui.dialog;
 
-import java.awt.Component;
 import magic.utility.MagicSystem;
 import magic.data.CubeDefinitions;
 import magic.ui.MagicFrame;
@@ -19,8 +18,6 @@ import javax.swing.JRootPane;
 import javax.swing.KeyStroke;
 
 import java.awt.event.ActionEvent;
-import javax.swing.DefaultListCellRenderer;
-import javax.swing.JList;
 import magic.model.MagicCubeDefinition;
 
 @SuppressWarnings("serial")
@@ -53,7 +50,6 @@ public class DuelPropertiesDialog extends JDialog {
         winsSliderPanel = new SliderPanel("Max. games:", null, 1, 11, 2, maxGames);
 
         cubeComboBox = new JComboBox<>(CubeDefinitions.getCubesArray());
-        cubeComboBox.setRenderer(new CubesListCellRenderer());
         cubeComboBox.setLightWeightPopupEnabled(false);
         cubeComboBox.setFocusable(false);
         cubeComboBox.setSelectedItem(cube);
@@ -137,14 +133,5 @@ public class DuelPropertiesDialog extends JDialog {
     public MagicCubeDefinition getCube() {
         return cubeComboBox.getItemAt(cubeComboBox.getSelectedIndex());
     }
-
-    private class CubesListCellRenderer extends DefaultListCellRenderer {
-        @Override
-        public Component getListCellRendererComponent(JList<?> list, Object value, int index, boolean isSelected, boolean cellHasFocus) {
-            final MagicCubeDefinition cube = (MagicCubeDefinition) value;
-            return super.getListCellRendererComponent(list, cube.getName(), index, isSelected, cellHasFocus);
-        }
-    }
-
 
 }

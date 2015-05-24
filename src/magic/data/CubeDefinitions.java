@@ -38,8 +38,8 @@ public class CubeDefinitions {
     public static String[] getFilterValues() {
         final List<String> values = new ArrayList<>();
         for (MagicCubeDefinition cube : cubeDefinitions) {
-            if (!cube.toString().equalsIgnoreCase("all")) {
-              values.add(cube.toString());
+            if (cube.getName().equals(DEFAULT_CUBE_NAME) == false) {
+              values.add(cube.getName());
           }
         }
         return values.toArray(new String[values.size()]);
@@ -47,7 +47,7 @@ public class CubeDefinitions {
 
     public static MagicCubeDefinition getCubeDefinition(final String name) {
         for (final MagicCubeDefinition cubeDefinition : cubeDefinitions) {
-            if (cubeDefinition.getName().equals(name)) {
+            if (cubeDefinition.getLabel().equals(name)) {
                 return cubeDefinition;
             }
         }
@@ -87,7 +87,7 @@ public class CubeDefinitions {
         if (MagicSystem.showStartupStats()) {
             System.err.println(cubeDefinitions.size()+" cube definitions");
             for (final MagicCubeDefinition cubeDefinition : cubeDefinitions) {
-                System.err.println("Cube "+cubeDefinition.getName());
+                System.err.println("Cube " + cubeDefinition);
             }
         }
     }
@@ -99,11 +99,11 @@ public class CubeDefinitions {
 
     //TODO: convert cubeDefinitions to a Map keyed on cubeName then can get rid of this function.
     private static MagicCubeDefinition currentCube = null;
-    public static MagicCubeDefinition getCube(String cubeName) {
-        cubeName = getCubeNameWithoutSize(cubeName);
-        if (currentCube == null || !currentCube.toString().equals(cubeName)) {
+    public static MagicCubeDefinition getCube(final String cubeLabel) {
+        final String cubeName = getCubeNameWithoutSize(cubeLabel);
+        if (currentCube == null || !currentCube.getName().equals(cubeName)) {
             for (MagicCubeDefinition cube : cubeDefinitions) {
-                if (cube.toString().equals(cubeName)) {
+                if (cube.getName().equals(cubeName)) {
                     currentCube = cube;
                     break;
                 }

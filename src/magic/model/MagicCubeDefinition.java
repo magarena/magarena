@@ -16,11 +16,16 @@ public class MagicCubeDefinition extends HashSet<String> {
     }
 
     public String getName() {
+        return name;
+    }
+
+    public String getLabel() {
         return name + " (" + size() + " cards)";
     }
 
     @Override
     public String toString() {
-        return name;
+        return getLabel();
     }
+    
 }
