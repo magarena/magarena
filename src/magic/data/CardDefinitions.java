@@ -29,6 +29,7 @@ import magic.utility.MagicSystem;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicChangeCardDefinition;
 import magic.model.MagicColor;
+import magic.model.MagicCubeDefinition;
 import magic.model.event.MagicCardActivation;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicFileSystem.DataPath;
@@ -214,10 +215,11 @@ public class CardDefinitions {
         reporter.setMessage("Loading cards...100%");
         
         // update card lists
+        final MagicCubeDefinition cube = CubeDefinitions.getDefaultCube();
         for (final MagicCardDefinition cardDefinition : allPlayableCardDefs.values()) {
             if (cardDefinition.isToken() == false && cardDefinition.isHidden() == false) {
                 defaultPlayableCardDefs.add(cardDefinition);
-                CubeDefinitions.getCubeDefinition(CubeDefinitions.DEFAULT_CUBE_NAME).add(cardDefinition.getName());
+                cube.add(cardDefinition.getName());
 
                 if (cardDefinition.isLand() == false) {
                     spellCards.add(cardDefinition);

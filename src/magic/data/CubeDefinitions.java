@@ -129,4 +129,8 @@ public class CubeDefinitions {
         }
     }
 
+    public static MagicCubeDefinition getDefaultCube() {
+        return getCubeDefinition(CubeDefinitions.DEFAULT_CUBE_NAME);
+    }
+
 }
