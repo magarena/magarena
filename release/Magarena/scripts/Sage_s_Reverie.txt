@@ -5,8 +5,7 @@ rarity=U
 type=Enchantment
 subtype=Aura
 cost={3}{W}
-ability=Enchant creature;\
-        When SN enters the battlefield, draw a card for each Aura you control that's attached to a creature.;\
-        Enchanted creature gets +1/+1 for each Aura you control that's attached to a creature.
 timing=aura
+enchant=pump,pos creature
+requires_groovy_code
 oracle=Enchant creature\nWhen Sage's Reverie enters the battlefield, draw a card for each Aura you control that's attached to a creature.\nEnchanted creature gets +1/+1 for each Aura you control that's attached to a creature.
