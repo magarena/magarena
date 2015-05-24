@@ -217,7 +217,7 @@ public class CardDefinitions {
         for (final MagicCardDefinition cardDefinition : allPlayableCardDefs.values()) {
             if (cardDefinition.isToken() == false && cardDefinition.isHidden() == false) {
                 defaultPlayableCardDefs.add(cardDefinition);
-                CubeDefinitions.getCubeDefinition("all").add(cardDefinition.getName());
+                CubeDefinitions.getCubeDefinition(CubeDefinitions.DEFAULT_CUBE_NAME).add(cardDefinition.getName());
 
                 if (cardDefinition.isLand() == false) {
                     spellCards.add(cardDefinition);
