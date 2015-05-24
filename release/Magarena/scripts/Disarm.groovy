@@ -13,7 +13,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                it.getEquipmentPermanents() each {
+                EQUIPMENT_ATTACHED_TO_SOURCE.filter(it) each {
                     game.doAction(new AttachAction(it, MagicPermanent.NONE));
                 }
             });
