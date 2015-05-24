@@ -11,12 +11,15 @@
 
         @Override
         public Iterable<MagicEvent> getCostEvent(final MagicCard source) {
-            final int amount =  CREATURE_CARD_FROM_GRAVEYARD.filter(source.getController()).size();
-            final int cost = Math.max(0,(4-amount));
-            return [new MagicPayManaCostEvent(source,"{"+cost+"}{G}{G}")];
+            final int n =  CREATURE_CARD_FROM_GRAVEYARD.filter(source.getController()).size();
+            return [
+                new MagicPayManaCostEvent(
+                    source,
+                    source.getCost().reduce(MagicCostManaType.Colorless, n)
+                )
+            ];
         }
     },
-    
     new MagicPermanentActivation(
         [MagicCondition.NOT_MONSTROUS_CONDITION],
         new MagicActivationHints(MagicTiming.Pump),
@@ -24,10 +27,12 @@
     ) {
         @Override
         public Iterable<? extends MagicEvent> getCostEvent(final MagicPermanent source) {
-            final int amount =  CREATURE_CARD_FROM_GRAVEYARD.filter(source.getController()).size();
-            final int cost = Math.max(0,(7-amount));
+            final int n =  CREATURE_CARD_FROM_GRAVEYARD.filter(source.getController()).size();
             return [
-                new MagicPayManaCostEvent(source,"{"+cost+"}{G}{G}")
+                new MagicPayManaCostEvent(
+                    source,
+                    MagicManaCost.create("{7}{G}{G}").reduce(MagicCostManaType.Colorless, n)
+                )
             ];
         }
         
@@ -49,5 +54,4 @@
             ));
         }
     }
-    
 ]
