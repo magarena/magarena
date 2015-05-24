@@ -6,7 +6,7 @@ type=Creature
 subtype=Insect,Horror
 cost={4}{G}{G}
 pt=4/4
-ability=Infect;\
-        At the beginning of your upkeep, put a 1/1 green Insect creature token with infect onto the battlefield for each poison counter your opponents have.
+ability=Infect
 timing=main
+requires_groovy_code
 oracle=Infect\nAt the beginning of your upkeep, put a 1/1 green Insect creature token with infect onto the battlefield for each poison counter your opponents have.
