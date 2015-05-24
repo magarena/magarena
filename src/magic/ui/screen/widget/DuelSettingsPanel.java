@@ -29,7 +29,7 @@ public class DuelSettingsPanel extends TexturedPanel implements IThemeStyle {
     private int startLife;
     private int handSize;
     private int maxGames = 7;
-    private String cube = CubeDefinitions.getCubeNames()[0];
+    private String cubeName = CubeDefinitions.getCubeNames()[0];
     private final MouseAdapter mouseAdapter = getMouseAdapter();
 
     public DuelSettingsPanel(final MagicFrame frame, final DuelConfig config) {
@@ -40,7 +40,7 @@ public class DuelSettingsPanel extends TexturedPanel implements IThemeStyle {
         startLife = config.getStartLife();
         handSize = config.getHandSize();
         maxGames = config.getNrOfGames();
-        cube = config.getCube();
+        cubeName = config.getCube();
 
         refreshStyle();
 
@@ -64,7 +64,7 @@ public class DuelSettingsPanel extends TexturedPanel implements IThemeStyle {
             sb.append("Initial Player life: ").append(startLife).append("<br>");
             sb.append("Initial Hand size: ").append(handSize).append("<br>");
             sb.append("Maximum games: ").append(maxGames).append(" (first to ").append(getGamesRequiredToWinDuel()).append(")<br>");
-            sb.append("Cube: ").append(cube).append("</html>");
+            sb.append("Cube: ").append(cubeName).append("</html>");
             setToolTipText(sb.toString());
         }
     }
@@ -112,13 +112,18 @@ public class DuelSettingsPanel extends TexturedPanel implements IThemeStyle {
     }
 
     public void updateDuelSettings() {
-        final DuelPropertiesDialog dialog =
-                new DuelPropertiesDialog(frame, handSize, startLife, maxGames, cube);
+        final DuelPropertiesDialog dialog = new DuelPropertiesDialog(
+                frame,
+                handSize,
+                startLife,
+                maxGames,
+                CubeDefinitions.getCube(cubeName)
+        );
         if (!dialog.isCancelled()) {
             startLife = dialog.getStartLife();
             handSize = dialog.getHandSize();
             maxGames = dialog.getNrOfGames();
-            cube = dialog.getCube();
+            cubeName = dialog.getCube().getName();
             saveSettings();
             refreshDisplay();
         }
@@ -128,11 +133,11 @@ public class DuelSettingsPanel extends TexturedPanel implements IThemeStyle {
         config.setStartLife(startLife);
         config.setHandSize(handSize);
         config.setNrOfGames(maxGames);
-        config.setCube(cube);
+        config.setCube(cubeName);
     }
 
     public String getCube() {
-        return cube;
+        return cubeName;
     }
 
     public int getStartLife() {
@@ -148,13 +153,7 @@ public class DuelSettingsPanel extends TexturedPanel implements IThemeStyle {
     }
 
     private String getCubeNameWithoutSize() {
-        String verboseCubeName = toTitleCase(cube);
-        final int toIndex = verboseCubeName.indexOf("(");
-        if (toIndex == -1) {
-            return verboseCubeName;
-        } else {
-            return verboseCubeName.substring(0, toIndex).trim();
-        }
+        return toTitleCase(CubeDefinitions.getCubeNameWithoutSize(cubeName));
     }
 
     private String toTitleCase(final String text) {

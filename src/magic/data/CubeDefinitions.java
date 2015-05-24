@@ -36,6 +36,10 @@ public class CubeDefinitions {
         }
     }
 
+    public static MagicCubeDefinition[] getCubesArray() {
+        return cubeDefinitions.toArray(new MagicCubeDefinition[cubeDefinitions.size()]);
+    }
+
     public static String[] getCubeNames() {
         final String[] names=new String[cubeDefinitions.size()];
         for (int index=0;index<names.length;index++) {
@@ -108,7 +112,8 @@ public class CubeDefinitions {
 
     //TODO: convert cubeDefinitions to a Map keyed on cubeName then can get rid of this function.
     private static MagicCubeDefinition currentCube = null;
-    public static MagicCubeDefinition getCube(final String cubeName) {
+    public static MagicCubeDefinition getCube(String cubeName) {
+        cubeName = getCubeNameWithoutSize(cubeName);
         if (currentCube == null || !currentCube.toString().equals(cubeName)) {
             for (MagicCubeDefinition cube : cubeDefinitions) {
                 if (cube.toString().equals(cubeName)) {
@@ -127,4 +132,14 @@ public class CubeDefinitions {
         }
         return cubeDefinition;
     }
+
+    public static String getCubeNameWithoutSize(final String cube) {
+        final int toIndex = cube.indexOf("(");
+        if (toIndex == -1) {
+            return cube;
+        } else {
+            return cube.substring(0, toIndex).trim();
+        }
+    }
+
 }

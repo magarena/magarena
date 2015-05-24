@@ -1,5 +1,6 @@
 package magic.ui.dialog;
 
+import java.awt.Component;
 import magic.utility.MagicSystem;
 import magic.data.CubeDefinitions;
 import magic.ui.MagicFrame;
@@ -18,6 +19,9 @@ import javax.swing.JRootPane;
 import javax.swing.KeyStroke;
 
 import java.awt.event.ActionEvent;
+import javax.swing.DefaultListCellRenderer;
+import javax.swing.JList;
+import magic.model.MagicCubeDefinition;
 
 @SuppressWarnings("serial")
 public class DuelPropertiesDialog extends JDialog {
@@ -25,7 +29,7 @@ public class DuelPropertiesDialog extends JDialog {
     private final SliderPanel handSizeSliderPanel;
     private final SliderPanel lifeSliderPanel;
     private final SliderPanel winsSliderPanel;
-    private final JComboBox<String> cubeComboBox;
+    private final JComboBox<MagicCubeDefinition> cubeComboBox;
     private boolean isCancelled = false;
 
     // CTR : edit an existing profile.
@@ -34,7 +38,7 @@ public class DuelPropertiesDialog extends JDialog {
         final int handSize,
         final int initialLife,
         final int maxGames,
-        final String cube
+        final MagicCubeDefinition cube
     ) {
 
         super(frame, true);
@@ -48,7 +52,8 @@ public class DuelPropertiesDialog extends JDialog {
         handSizeSliderPanel = new SliderPanel("Hand size:", null, 6, 8, 1, handSize);
         winsSliderPanel = new SliderPanel("Max. games:", null, 1, 11, 2, maxGames);
 
-        cubeComboBox = new JComboBox<String>(CubeDefinitions.getCubeNames());
+        cubeComboBox = new JComboBox<>(CubeDefinitions.getCubesArray());
+        cubeComboBox.setRenderer(new CubesListCellRenderer());
         cubeComboBox.setLightWeightPopupEnabled(false);
         cubeComboBox.setFocusable(false);
         cubeComboBox.setSelectedItem(cube);
@@ -129,8 +134,17 @@ public class DuelPropertiesDialog extends JDialog {
         return winsSliderPanel.getValue();
     }
 
-    public String getCube() {
+    public MagicCubeDefinition getCube() {
         return cubeComboBox.getItemAt(cubeComboBox.getSelectedIndex());
     }
+
+    private class CubesListCellRenderer extends DefaultListCellRenderer {
+        @Override
+        public Component getListCellRendererComponent(JList<?> list, Object value, int index, boolean isSelected, boolean cellHasFocus) {
+            final MagicCubeDefinition cube = (MagicCubeDefinition) value;
+            return super.getListCellRendererComponent(list, cube.getName(), index, isSelected, cellHasFocus);
+        }
+    }
+
 
 }
