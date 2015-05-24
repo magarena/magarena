@@ -4,6 +4,6 @@ value=2.500
 rarity=C
 type=Instant
 cost={2}{W}
-effect=You gain 1 life for each creature your opponents control. Prevent all damage that would be dealt to you this turn.
-timing=removal
+timing=pump
+requires_groovy_code
 oracle=You gain 1 life for each creature your opponents control. Prevent all damage that would be dealt to you this turn.
