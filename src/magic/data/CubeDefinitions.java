@@ -15,25 +15,19 @@ import magic.utility.MagicFileSystem.DataPath;
 
 public class CubeDefinitions {
 
-    private static final String[] INCLUDED_CUBES={"all"};
-    private static final String CUBE_FILE_EXTENSION="_cube.txt";
+    private static final String CUBE_FILE_EXTENSION = "_cube.txt";
 
-    static final String DEFAULT_NAME=INCLUDED_CUBES[0];
-
-    private static final FileFilter CUBE_FILE_FILTER=new FileFilter() {
+    private static final FileFilter CUBE_FILE_FILTER = new FileFilter() {
         @Override
         public boolean accept(final File file) {
-            return file.isFile()&&file.getName().endsWith(CUBE_FILE_EXTENSION);
+            return file.isFile() && file.getName().endsWith(CUBE_FILE_EXTENSION);
         }
     };
 
-    private static final List<MagicCubeDefinition> cubeDefinitions;
+    private static final List<MagicCubeDefinition> cubeDefinitions = new ArrayList<>();
 
     static {
-        cubeDefinitions=new ArrayList<>();
-        for (final String cubeName : INCLUDED_CUBES) {
-            cubeDefinitions.add(new MagicCubeDefinition(cubeName));
-        }
+        cubeDefinitions.add(new MagicCubeDefinition("all"));
     }
 
     public static MagicCubeDefinition[] getCubesArray() {
