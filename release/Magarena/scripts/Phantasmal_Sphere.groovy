@@ -10,12 +10,12 @@
             final int amount = permanent.getCounters(MagicCounterType.PlusOne);
             return amount > 0 ?
                 new MagicEvent(
-                permanent,
-                new MagicMayChoice(new MagicPayManaCostChoice(MagicManaCost.create("{"+amount+"}"))),
-                this,
-                "PN may\$ pay {"+amount+"}. If he or she doesn't, sacrifice SN."
-            ):
-            MagicEvent.NONE;
+                    permanent,
+                    new MagicMayChoice(new MagicPayManaCostChoice(MagicManaCost.create("{"+amount+"}"))),
+                    this,
+                    "PN may\$ pay {"+amount+"}. If he or she doesn't, sacrifice SN."
+                ):
+                MagicEvent.NONE;
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
@@ -24,8 +24,7 @@
             }
         }
     },
-    
-    new MagicWhenLeavesPlayTrigger() {
+    new MagicWhenSelfLeavesPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final RemoveFromPlayAction act) {
             return new MagicEvent(
@@ -39,19 +38,19 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
-                final int amount = event.getPermanent().getCounters(MagicCounterType.PlusOne);
-                game.logAppendMessage(event.getPlayer(), "("+amount+")");
+                final int X = event.getPermanent().getCounters(MagicCounterType.PlusOne);
+                game.logAppendMessage(event.getPlayer(), "("+X+")");
                 game.doAction(new PlayTokenAction(
                     it,
                     MagicCardDefinition.create({
                         it.setName("Orb");
                         it.setDistinctName("blue Orb creature token with flying");
-                        it.setPowerToughness(amount, amount);
+                        it.setPowerToughness(X, X);
                         it.setColors("u");
                         it.addSubType(MagicSubType.Orb);
                         it.addType(MagicType.Creature);
                         it.setToken();
-                        it.setValue(amount);
+                        it.setValue(X);
                     })
                 ));
             });
