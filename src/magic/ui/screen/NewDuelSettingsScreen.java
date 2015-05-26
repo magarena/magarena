@@ -103,7 +103,7 @@ public class NewDuelSettingsScreen
         duelConfig.setStartLife(content.getStartLife());
         duelConfig.setHandSize(content.getHandSize());
         duelConfig.setNrOfGames(content.getNrOfGames());
-        duelConfig.setCube(content.getCube().getLabel());
+        duelConfig.setCube(content.getCube());
         duelConfig.setPlayerProfile(0, content.getPlayerProfile(0));
         duelConfig.setPlayerProfile(1, content.getPlayerProfile(1));
         duelConfig.setPlayerDeckProfile(0, content.getDeckType(0), content.getDeckValue(0));

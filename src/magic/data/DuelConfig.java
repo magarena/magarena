@@ -71,8 +71,8 @@ public class DuelConfig {
     public MagicCubeDefinition getCube() {
         return cube;
     }
-    public void setCube(final String cube) {
-        this.cube = CubeDefinitions.getCubeDefinition(cube);
+    public void setCube(final MagicCubeDefinition cube) {
+        this.cube = cube;
     }
 
     public PlayerProfile getPlayerProfile(final int playerIndex) {
