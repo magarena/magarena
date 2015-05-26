@@ -27,7 +27,7 @@ public class DuelConfig {
     private int startLife = 20;
     private int handSize = 7;
     private int games = 7;
-    private MagicCubeDefinition cube = CubeDefinitions.getDefaultCube();
+    private MagicCubeDefinition cube = CubeDefinitions.DEFAULT_CUBE;
     private DuelPlayerConfig[] players = new DuelPlayerConfig[MAX_PLAYERS];
 
     // CTR

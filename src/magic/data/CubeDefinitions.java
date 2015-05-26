@@ -23,13 +23,13 @@ public class CubeDefinitions {
         }
     };
 
-    public static final String DEFAULT_CUBE_NAME = "all";
+    public static final MagicCubeDefinition DEFAULT_CUBE = new MagicCubeDefinition("all");
+
     private static final List<MagicCubeDefinition> cubeDefinitions = new ArrayList<>();
     private static MagicCubeDefinition currentCube;
     static {
-        final MagicCubeDefinition defaultCube = new MagicCubeDefinition(DEFAULT_CUBE_NAME);
-        cubeDefinitions.add(defaultCube);
-        currentCube = defaultCube;
+        cubeDefinitions.add(DEFAULT_CUBE);
+        currentCube = DEFAULT_CUBE;
     }
 
     public static MagicCubeDefinition[] getCubesArray() {
@@ -39,7 +39,7 @@ public class CubeDefinitions {
     public static String[] getFilterValues() {
         final List<String> values = new ArrayList<>();
         for (MagicCubeDefinition cube : cubeDefinitions) {
-            if (cube.getName().equals(DEFAULT_CUBE_NAME) == false) {
+            if (cube != DEFAULT_CUBE) {
               values.add(cube.getName());
           }
         }
@@ -132,10 +132,6 @@ public class CubeDefinitions {
         } else {
             return cube.substring(0, toIndex).trim();
         }
-    }
-
-    public static MagicCubeDefinition getDefaultCube() {
-        return getCubeDefinition(CubeDefinitions.DEFAULT_CUBE_NAME);
     }
 
 }
