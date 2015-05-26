@@ -79,7 +79,7 @@ public class DuelSettingsPanel extends TexturedPanel implements IThemeStyle {
         add(getDuelSettingsLabel(IconImages.getIcon(MagicIcon.LIFE_ICON), "" + startLife), "h 100%");
         add(getDuelSettingsLabel(IconImages.getIcon(MagicIcon.HAND_ICON), "" + handSize), "h 100%");
         add(getDuelSettingsLabel(IconImages.getIcon(MagicIcon.TARGET_ICON), "" + maxGames), "h 100%");
-        add(getDuelSettingsLabel(IconImages.getIcon(MagicIcon.CUBE_ICON), " " + getCubeNameWithoutSize()), "h 100%");
+        add(getDuelSettingsLabel(IconImages.getIcon(MagicIcon.CUBE_ICON), " " + cube.getName()), "h 100%");
         revalidate();
         repaint();
     }
@@ -151,14 +151,6 @@ public class DuelSettingsPanel extends TexturedPanel implements IThemeStyle {
 
     public int getNrOfGames() {
         return maxGames;
-    }
-
-    private String getCubeNameWithoutSize() {
-        return toTitleCase(cube.getName());
-    }
-
-    private String toTitleCase(final String text) {
-        return text.substring(0, 1).toUpperCase() + text.substring(1);
     }
 
     @Override
