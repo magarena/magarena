@@ -121,6 +121,7 @@ public class DeckGenerators {
         if (customGenerator == null) {
             defaultGenerator.generateDeck(MagicDeck.DEFAULT_SIZE, deckProfile, deck);
         } else {
+            customGenerator.setCubeDefinition(cubeDefinition);
             customGenerator.generateDeck(MagicDeck.DEFAULT_SIZE, deckProfile, deck);
         }
         DeckGenerator.addBasicLandsToDeck(deck, deckProfile, MagicDeck.DEFAULT_SIZE);
