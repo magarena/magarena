@@ -5,6 +5,7 @@ import java.util.Properties;
 import magic.model.MagicDeckProfile;
 import magic.model.MagicDuel;
 import magic.model.DuelPlayerConfig;
+import magic.model.MagicCubeDefinition;
 import magic.model.player.PlayerProfile;
 import magic.model.player.PlayerProfiles;
 
@@ -26,7 +27,7 @@ public class DuelConfig {
     private int startLife = 20;
     private int handSize = 7;
     private int games = 7;
-    private String cube = CubeDefinitions.DEFAULT_CUBE_NAME;
+    private MagicCubeDefinition cube = CubeDefinitions.getDefaultCube();
     private DuelPlayerConfig[] players = new DuelPlayerConfig[MAX_PLAYERS];
 
     // CTR
@@ -68,10 +69,10 @@ public class DuelConfig {
     }
 
     public String getCube() {
-        return cube;
+        return cube.getLabel();
     }
     public void setCube(final String cube) {
-        this.cube=cube;
+        this.cube = CubeDefinitions.getCubeDefinition(cube);
     }
 
     public PlayerProfile getPlayerProfile(final int playerIndex) {
@@ -90,10 +91,10 @@ public class DuelConfig {
     }
 
     public void load(final Properties properties, final boolean loadPlayerDecks) {
-        startLife=Integer.parseInt(properties.getProperty(START_LIFE,Integer.toString(startLife)));
-        handSize=Integer.parseInt(properties.getProperty(HAND_SIZE,Integer.toString(handSize)));
-        games=Integer.parseInt(properties.getProperty(GAMES,Integer.toString(games)));
-        cube=properties.getProperty(CUBE,cube);
+        startLife = Integer.parseInt(properties.getProperty(START_LIFE, Integer.toString(startLife)));
+        handSize = Integer.parseInt(properties.getProperty(HAND_SIZE, Integer.toString(handSize)));
+        games = Integer.parseInt(properties.getProperty(GAMES, Integer.toString(games)));
+        cube = CubeDefinitions.getCube(properties.getProperty(CUBE, cube.getName()));
         loadPlayerConfigs(properties, loadPlayerDecks);
     }
 
@@ -122,7 +123,7 @@ public class DuelConfig {
         properties.setProperty(START_LIFE, Integer.toString(startLife));
         properties.setProperty(HAND_SIZE, Integer.toString(handSize));
         properties.setProperty(GAMES, Integer.toString(games));
-        properties.setProperty(CUBE, cube);
+        properties.setProperty(CUBE, cube.getName());
         properties.setProperty(PLAYER_ONE, players[0].getProfile().getId());
         properties.setProperty(PLAYER_TWO, players[1].getProfile().getId());
 
