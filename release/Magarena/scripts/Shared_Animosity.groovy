@@ -15,25 +15,25 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
             final MagicPermanent creature=event.getRefPermanent();
-            Set<MagicSubType> creatureSubTypes = new HashSet<MagicSubType>();
-            for (final MagicSubType creatureSubType: MagicSubType.values()) {
-                if (creature.hasSubType(creatureSubType)) {
-                    creatureSubTypes.add(creatureSubType);
+
+            final Set<MagicSubType> self = new HashSet<MagicSubType>();
+            for (final MagicSubType st: MagicSubType.ALL_CREATURES) {
+                if (creature.hasSubType(st)) {
+                    self.add(st);
                 }
             }
+
             final List<MagicPermanent> attacking = ATTACKING_CREATURE_YOU_CONTROL.except(creature).filter(player);
             int amount = 0;
             for (final MagicPermanent attacker : attacking) {
-                boolean hasSubType=false;
-                for (final MagicSubType subType : creatureSubTypes) {
-                    if (attacker.hasSubType(subType)) {
-                        hasSubType=true;
+                for (final MagicSubType st : self) {
+                    if (attacker.hasSubType(st)) {
+                        amount++;
+                        break;
                     }
                 }
-                if (hasSubType) {
-                    amount+=1;
-                }
             }
+
             if (amount > 0) {
                 game.logAppendValue(player, amount);
                 game.doAction(new ChangeTurnPTAction(creature,amount,0));
