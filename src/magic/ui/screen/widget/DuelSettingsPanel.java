@@ -137,8 +137,8 @@ public class DuelSettingsPanel extends TexturedPanel implements IThemeStyle {
         config.setCube(cube.getLabel());
     }
 
-    public String getCube() {
-        return cube.getLabel();
+    public MagicCubeDefinition getCube() {
+        return cube;
     }
 
     public int getStartLife() {

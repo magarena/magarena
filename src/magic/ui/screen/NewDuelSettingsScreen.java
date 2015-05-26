@@ -11,6 +11,7 @@ import magic.data.DeckType;
 import magic.data.DeckUtils;
 import magic.data.DuelConfig;
 import magic.exception.InvalidDeckException;
+import magic.model.MagicCubeDefinition;
 import magic.model.MagicDeck;
 import magic.model.player.IPlayerProfileListener;
 import magic.model.player.PlayerProfile;
@@ -102,7 +103,7 @@ public class NewDuelSettingsScreen
         duelConfig.setStartLife(content.getStartLife());
         duelConfig.setHandSize(content.getHandSize());
         duelConfig.setNrOfGames(content.getNrOfGames());
-        duelConfig.setCube(content.getCube());
+        duelConfig.setCube(content.getCube().getLabel());
         duelConfig.setPlayerProfile(0, content.getPlayerProfile(0));
         duelConfig.setPlayerProfile(1, content.getPlayerProfile(1));
         duelConfig.setPlayerDeckProfile(0, content.getDeckType(0), content.getDeckValue(0));
@@ -202,7 +203,7 @@ public class NewDuelSettingsScreen
             }
         }
 
-        public String getCube() {
+        public MagicCubeDefinition getCube() {
             return duelSettingsPanel.getCube();
         }
 
