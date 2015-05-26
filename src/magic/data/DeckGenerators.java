@@ -117,7 +117,7 @@ public class DeckGenerators {
         final MagicDeck deck = player.getDeck();
         final MagicCubeDefinition cubeDefinition = DuelConfig.getInstance().getCube();
         final RandomDeckGenerator defaultGenerator = new RandomDeckGenerator(cubeDefinition);
-        final RandomDeckGenerator customGenerator = DeckGenerators.getDeckGenerator(player.getDeckProfile());
+        final RandomDeckGenerator customGenerator = DeckGenerators.getDeckGenerator(deckProfile);
         if (customGenerator == null) {
             defaultGenerator.generateDeck(MagicDeck.DEFAULT_SIZE, deckProfile, deck);
         } else {
