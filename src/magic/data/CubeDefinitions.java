@@ -52,7 +52,7 @@ public class CubeDefinitions {
                 return cubeDefinition;
             }
         }
-        return cubeDefinitions.get(0);
+        return DEFAULT_CUBE;
     }
 
     private static void loadCubeDefinition(final String name,final File file) {
@@ -125,7 +125,7 @@ public class CubeDefinitions {
         return cubeDefinition;
     }
 
-    public static String getCubeNameWithoutSize(final String cube) {
+    private static String getCubeNameWithoutSize(final String cube) {
         final int toIndex = cube.indexOf("(");
         if (toIndex == -1) {
             return cube;
