@@ -2,7 +2,7 @@
     new MagicWhenDamageIsDealtTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
-            return (damage.getSource().isPermanent() &&
+            return (damage.getSource() == permanent &&
                     damage.isCombat() && damage.isTargetPlayer()) ?
                 new MagicEvent(
                     permanent,
