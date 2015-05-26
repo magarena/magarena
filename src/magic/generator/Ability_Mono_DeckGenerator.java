@@ -1,7 +1,6 @@
 package magic.generator;
 
 import magic.data.CardDefinitions;
-import magic.data.CubeDefinitions;
 import magic.model.MagicAbility;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicColor;
@@ -24,7 +23,6 @@ public class Ability_Mono_DeckGenerator extends RandomDeckGenerator {
     private final String colorText;
 
     public Ability_Mono_DeckGenerator() {
-        super(null);
 
         if (!hasChoice()) {
             getPossibleTribes();
@@ -39,7 +37,6 @@ public class Ability_Mono_DeckGenerator extends RandomDeckGenerator {
             colorText = "";
         }
 
-        setCubeDefinition(CubeDefinitions.getCubeDefinition(getColorText()));
     }
 
     private boolean hasChoice() {

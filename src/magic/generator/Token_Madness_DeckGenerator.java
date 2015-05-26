@@ -1,6 +1,5 @@
 package magic.generator;
 
-import magic.data.CubeDefinitions;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicCondensedDeck;
 import magic.model.MagicDeckProfile;
@@ -40,11 +39,6 @@ public class Token_Madness_DeckGenerator extends RandomDeckGenerator {
         "Sunpetal Grove",
         "Sunpetal Grove"
     };
-
-    public Token_Madness_DeckGenerator() {
-        super(null);
-        setCubeDefinition(CubeDefinitions.getCubeDefinition(getColorText()));
-    }
 
     public String getColorText() {
         return colorText;

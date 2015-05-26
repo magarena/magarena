@@ -46,15 +46,6 @@ public class CubeDefinitions {
         return values.toArray(new String[values.size()]);
     }
 
-    public static MagicCubeDefinition getCubeDefinition(final String name) {
-        for (final MagicCubeDefinition cubeDefinition : cubeDefinitions) {
-            if (cubeDefinition.getLabel().equals(name)) {
-                return cubeDefinition;
-            }
-        }
-        return DEFAULT_CUBE;
-    }
-
     private static void loadCubeDefinition(final String name,final File file) {
         List<String> content = Collections.emptyList();
         try { //load cube

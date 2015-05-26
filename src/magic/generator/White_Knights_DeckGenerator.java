@@ -1,6 +1,5 @@
 package magic.generator;
 
-import magic.data.CubeDefinitions;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicCondensedDeck;
 import magic.model.MagicDeckProfile;
@@ -25,11 +24,6 @@ public class White_Knights_DeckGenerator extends RandomDeckGenerator {
         "Hero of Bladehold",
         "Hero of Bladehold"
     };
-
-    public White_Knights_DeckGenerator() {
-        super(null);
-        setCubeDefinition(CubeDefinitions.getCubeDefinition(getColorText()));
-    }
 
     public String getColorText() {
         return colorText;

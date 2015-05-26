@@ -1,6 +1,5 @@
 package magic.generator;
 
-import magic.data.CubeDefinitions;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicCondensedDeck;
 import magic.model.MagicDeckProfile;
@@ -36,11 +35,6 @@ public class White_Metal_DeckGenerator extends RandomDeckGenerator {
         "Inkmoth Nexus",
         "Inkmoth Nexus"
     };
-
-    public White_Metal_DeckGenerator() {
-        super(null);
-        setCubeDefinition(CubeDefinitions.getCubeDefinition(getColorText()));
-    }
 
     public String getColorText() {
         return colorText;

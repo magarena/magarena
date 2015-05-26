@@ -1,6 +1,5 @@
 package magic.generator;
 
-import magic.data.CubeDefinitions;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicCondensedDeck;
 import magic.model.MagicDeckProfile;
@@ -26,11 +25,6 @@ public class Human_Law_DeckGenerator extends RandomDeckGenerator {
         "Honor of the Pure",
         "Day of Judgment"
     };
-
-    public Human_Law_DeckGenerator() {
-        super(null);
-        setCubeDefinition(CubeDefinitions.getCubeDefinition(getColorText()));
-    }
 
     public String getColorText() {
         return colorText;

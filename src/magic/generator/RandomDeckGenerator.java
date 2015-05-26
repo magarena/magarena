@@ -10,6 +10,7 @@ import magic.model.MagicRandom;
 
 import java.util.ArrayList;
 import java.util.List;
+import magic.data.CubeDefinitions;
 import magic.data.DeckGenerator;
 
 public class RandomDeckGenerator {
@@ -21,6 +22,10 @@ public class RandomDeckGenerator {
 
     public RandomDeckGenerator(final MagicCubeDefinition cubeDefinition) {
         this.cubeDefinition = cubeDefinition;
+    }
+
+    public RandomDeckGenerator() {
+        this(CubeDefinitions.DEFAULT_CUBE);
     }
 
     public void setCubeDefinition(final MagicCubeDefinition cube) {
