@@ -40,7 +40,7 @@ public class DuelSettingsPanel extends TexturedPanel implements IThemeStyle {
         startLife = config.getStartLife();
         handSize = config.getHandSize();
         maxGames = config.getNrOfGames();
-        cubeName = config.getCube();
+        cubeName = config.getCube().getLabel();
 
         refreshStyle();
 

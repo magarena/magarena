@@ -68,8 +68,8 @@ public class DuelConfig {
         return games;
     }
 
-    public String getCube() {
-        return cube.getLabel();
+    public MagicCubeDefinition getCube() {
+        return cube;
     }
     public void setCube(final String cube) {
         this.cube = CubeDefinitions.getCubeDefinition(cube);
