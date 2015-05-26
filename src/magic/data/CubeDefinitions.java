@@ -15,9 +15,7 @@ import magic.utility.MagicFileSystem.DataPath;
 
 public class CubeDefinitions {
 
-    public static final String DEFAULT_CUBE_NAME = "all";
     private static final String CUBE_FILE_EXTENSION = "_cube.txt";
-
     private static final FileFilter CUBE_FILE_FILTER = new FileFilter() {
         @Override
         public boolean accept(final File file) {
@@ -25,10 +23,13 @@ public class CubeDefinitions {
         }
     };
 
+    public static final String DEFAULT_CUBE_NAME = "all";
     private static final List<MagicCubeDefinition> cubeDefinitions = new ArrayList<>();
-
+    private static MagicCubeDefinition currentCube;
     static {
-        cubeDefinitions.add(new MagicCubeDefinition(DEFAULT_CUBE_NAME));
+        final MagicCubeDefinition defaultCube = new MagicCubeDefinition(DEFAULT_CUBE_NAME);
+        cubeDefinitions.add(defaultCube);
+        currentCube = defaultCube;
     }
 
     public static MagicCubeDefinition[] getCubesArray() {
@@ -97,11 +98,14 @@ public class CubeDefinitions {
         return cube.contains(card.getName());
     }
 
-    //TODO: convert cubeDefinitions to a Map keyed on cubeName then can get rid of this function.
-    private static MagicCubeDefinition currentCube = null;
     public static MagicCubeDefinition getCube(final String cubeLabel) {
+
+        // prior to 1.62 the cube label including card count was saved to the duel
+        // config file so for backwards compatibility during import need to check
+        // for and remove card count if it exists to isolate just the cube name.
         final String cubeName = getCubeNameWithoutSize(cubeLabel);
-        if (currentCube == null || !currentCube.getName().equals(cubeName)) {
+        
+        if (!currentCube.getName().equals(cubeName)) {
             for (MagicCubeDefinition cube : cubeDefinitions) {
                 if (cube.getName().equals(cubeName)) {
                     currentCube = cube;
@@ -110,6 +114,7 @@ public class CubeDefinitions {
             }
         }
         return currentCube;
+        
     }
 
     public static MagicCubeDefinition createCube(Collection<MagicCardDefinition> cardPool) {
