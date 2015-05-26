@@ -1,6 +1,6 @@
 [
     new MagicGraveyardActivation(
-        [MagicCondition.SORCERY_CONDITION],
+        [MagicCondition.SORCERY_CONDITION, MagicCondition.GRAVEYARD_CONDITION],
         new MagicActivationHints(MagicTiming.Main),
         "Cast"
     ) {
