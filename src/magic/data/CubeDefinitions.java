@@ -40,8 +40,8 @@ public class CubeDefinitions {
         final List<String> values = new ArrayList<>();
         for (MagicCubeDefinition cube : cubeDefinitions) {
             if (cube != DEFAULT_CUBE) {
-              values.add(cube.getName());
-          }
+                values.add(cube.getLabel());
+            }
         }
         return values.toArray(new String[values.size()]);
     }
