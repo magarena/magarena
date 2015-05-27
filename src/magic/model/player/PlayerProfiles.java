@@ -95,18 +95,19 @@ public final class PlayerProfiles {
     }
 
     public static void createDefaultAiPlayerProfiles() throws IOException {
-        AiProfile profile;
-        profile = AiProfile.create("Les Vegas", MagicAIImpl.VEGAS, 6);
+        createAiPlayerProfile("Les Vegas", MagicAIImpl.VEGAS, 6, PlayerProfiles.AVATAR_LesVegas);
+        createAiPlayerProfile("Mini Max", MagicAIImpl.MMAB, 6, PlayerProfiles.AVATAR_MiniMax);
+        createAiPlayerProfile("Monty Carlo", MagicAIImpl.MCTS, 6, PlayerProfiles.AVATAR_MontyCarlo);
+    }
+
+    private static void createAiPlayerProfile(
+            final String name,
+            final MagicAIImpl aiImpl,
+            final int level,
+            final Path avatarPath) {
+        final AiProfile profile = AiProfile.create(name, aiImpl, level);
         profile.save();
-        setPlayerAvatar(profile, PlayerProfiles.AVATAR_LesVegas);
-        
-        profile = AiProfile.create("Mini Max", MagicAIImpl.MMAB, 6);
-        profile.save();
-        setPlayerAvatar(profile, PlayerProfiles.AVATAR_MiniMax);
-        
-        profile = AiProfile.create("Monty Carlo", MagicAIImpl.MCTS, 6);
-        profile.save();
-        setPlayerAvatar(profile, PlayerProfiles.AVATAR_MontyCarlo);
+        setPlayerAvatar(profile, avatarPath);
     }
 
     public static void setPlayerAvatar(final PlayerProfile profile, final Path avatarPath) {
