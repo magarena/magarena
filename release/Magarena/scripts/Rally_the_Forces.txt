@@ -4,6 +4,7 @@ value=2.846
 rarity=C
 type=Instant
 cost={2}{R}
+ability=Cast SN with AI only if you control an attacking creature.
 effect=Attacking creatures get +1/+0 and gain first strike until end of turn.
 timing=attack
 oracle=Attacking creatures get +1/+0 and gain first strike until end of turn.
