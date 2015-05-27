@@ -89,9 +89,14 @@ public class MagicFrame extends JFrame implements IImageDragDropListener {
                 onClose();
             }
             @Override
-            public void windowDeactivated(final WindowEvent e) {
-                if (isFullScreen() && e.getOppositeWindow() == null && !ignoreWindowDeactivate) {
-                    setState(Frame.ICONIFIED);
+            public void windowDeactivated(final WindowEvent ev) {
+                if (isFullScreen() && ev.getOppositeWindow() == null && !ignoreWindowDeactivate) {
+                    try {
+                        setState(Frame.ICONIFIED);
+                    } catch (Exception ex) {
+                        // see issue #130: Crashes when there is a change in focus? On Mac.
+                        System.err.println("setState(Frame.ICONIFIED) failed\n" + ex);
+                    }
                 }
                 ignoreWindowDeactivate = false;
             }
