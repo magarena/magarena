@@ -96,13 +96,8 @@ public class DeckTiledCardsScreen
             }
 
         }
-        if (!cards.isEmpty()) {
-            Collections.sort(cards);
-            return cards;
-        } else {
-            return null;
-        }
-
+        Collections.sort(cards);
+        return cards;
     }
     
     @Override

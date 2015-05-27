@@ -156,10 +156,8 @@ public class CardsCanvas extends JPanel {
 
     private List<CardCanvas> getCanvasCards(final List<MagicCard> magicCards) {
         final List <CardCanvas> canvasCards = new ArrayList<>();
-        if (magicCards != null) {
-            for (MagicCard magicCard : magicCards) {
-                canvasCards.add(new CardCanvas(magicCard));
-            }
+        for (MagicCard magicCard : magicCards) {
+            canvasCards.add(new CardCanvas(magicCard));
         }
         return canvasCards;
     }
