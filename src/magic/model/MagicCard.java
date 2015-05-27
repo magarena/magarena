@@ -360,7 +360,7 @@ public class MagicCard
     public Collection<MagicSourceActivation<? extends MagicSource>> getSourceActivations() {
         List<MagicSourceActivation<? extends MagicSource>> sourceActs = new LinkedList<>();
         final Collection<MagicActivation<MagicCard>> activations = isInHand() ? 
-            getCardDefinition().getCardActivations() :
+            getCardDefinition().getHandActivations() :
             getCardDefinition().getGraveyardActivations();
         for (final MagicActivation<MagicCard> act : activations) {
             sourceActs.add(MagicSourceActivation.create(this, act));

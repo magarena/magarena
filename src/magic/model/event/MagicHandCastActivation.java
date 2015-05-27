@@ -113,7 +113,7 @@ public class MagicHandCastActivation extends MagicActivation<MagicCard> implemen
 
     @Override
     public void change(final MagicCardDefinition cdef) {
-        cdef.addCardAct(this);
+        cdef.addHandAct(this);
     }
     
     public static final MagicHandCastActivation create(final MagicCardDefinition cardDef, final String costs, final String name) {
@@ -148,7 +148,7 @@ public class MagicHandCastActivation extends MagicActivation<MagicCard> implemen
             }
             @Override
             public void change(final MagicCardDefinition cdef) {
-                cdef.setCardAct(this);
+                cdef.setHandAct(this);
             }
         };
     }

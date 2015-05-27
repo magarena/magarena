@@ -6,7 +6,7 @@
     ) {
         @Override
         public void change(final MagicCardDefinition cdef) {
-            cdef.setCardAct(this);
+            cdef.setHandAct(this);
         }
 
         @Override

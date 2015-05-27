@@ -13,7 +13,7 @@ def FEWER_CREATURES_CONDITION = new MagicCondition() {
     ) {
         @Override
         public void change(final MagicCardDefinition cdef) {
-            cdef.setCardAct(this);
+            cdef.setHandAct(this);
         }
     }
 ]

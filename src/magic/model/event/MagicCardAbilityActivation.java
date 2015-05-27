@@ -105,7 +105,7 @@ public abstract class MagicCardAbilityActivation extends MagicHandCastActivation
             @Override
             public void change(final MagicCardDefinition cdef) {
                 if (loc == MagicLocationType.OwnersHand) {
-                    cdef.addCardAct(this);
+                    cdef.addHandAct(this);
                 } else if (loc == MagicLocationType.Graveyard) {
                     cdef.addGraveyardAct(this);
                 } else {

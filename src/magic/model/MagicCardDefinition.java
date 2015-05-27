@@ -104,7 +104,7 @@ public class MagicCardDefinition implements MagicAbilityStore {
     private MagicCardEvent cardEvent=MagicPlayCardEvent.create();
     private final Collection<MagicActivation<MagicPermanent>> permActivations=new ArrayList<MagicActivation<MagicPermanent>>();
     private final Collection<MagicActivation<MagicPermanent>> morphActivations=new ArrayList<MagicActivation<MagicPermanent>>();
-    private final LinkedList<MagicActivation<MagicCard>> cardActivations = new LinkedList<MagicActivation<MagicCard>>();
+    private final LinkedList<MagicActivation<MagicCard>> handActivations = new LinkedList<MagicActivation<MagicCard>>();
     private final LinkedList<MagicActivation<MagicCard>> graveyardActivations = new LinkedList<MagicActivation<MagicCard>>();
     private final Collection<MagicCDA> CDAs = new ArrayList<MagicCDA>();
     private final Collection<MagicTrigger<?>> triggers = new ArrayList<MagicTrigger<?>>();
@@ -749,14 +749,14 @@ public class MagicCardDefinition implements MagicAbilityStore {
         return new MagicActivationHints(timing,true);
     }
 
-    // cast card activation is the first element of cardActivations
+    // cast card activation is the first element of handActivations
     public MagicActivation<MagicCard> getCastActivation() {
-        assert cardActivations.size() >= 1 : this + " has no card activations";
-        return cardActivations.getFirst();
+        assert handActivations.size() >= 1 : this + " has no card activations";
+        return handActivations.getFirst();
     }
 
-    public Collection<MagicActivation<MagicCard>> getCardActivations() {
-        return cardActivations;
+    public Collection<MagicActivation<MagicCard>> getHandActivations() {
+        return handActivations;
     }
 
     public Collection<MagicActivation<MagicCard>> getGraveyardActivations() {
@@ -839,18 +839,18 @@ public class MagicCardDefinition implements MagicAbilityStore {
         morphActivations.add(activation);
     }
 
-    public void addCardAct(final MagicHandCastActivation activation) {
-        cardActivations.add(activation);
+    public void addHandAct(final MagicHandCastActivation activation) {
+        handActivations.add(activation);
     }
 
     public void addGraveyardAct(final MagicHandCastActivation activation) {
         graveyardActivations.add(activation);
     }
 
-    public void setCardAct(final MagicHandCastActivation activation) {
-        assert cardActivations.size() == 1 : "removing multiple (" + cardActivations.size() + ") card activations";
-        cardActivations.clear();
-        cardActivations.add(activation);
+    public void setHandAct(final MagicHandCastActivation activation) {
+        assert handActivations.size() == 1 : "removing multiple (" + handActivations.size() + ") card activations";
+        handActivations.clear();
+        handActivations.add(activation);
     }
 
     public Collection<MagicActivation<MagicPermanent>> getActivations() {
