@@ -10,7 +10,7 @@ public class MagicRetraceActivation extends MagicGraveyardCastActivation {
     
     public MagicRetraceActivation(final MagicCardDefinition cdef) {
         super(
-            MagicCardActivation.CARD_CONDITION,
+            MagicHandCastActivation.CARD_CONDITION,
             cdef.getActivationHints(),
             "Retrace"
         );

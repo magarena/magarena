@@ -1,5 +1,5 @@
 [
-    new MagicCardActivation(
+    new MagicHandCastActivation(
         [
             MagicConditionFactory.OpponentGainLifeOrMore(1),
             MagicCondition.CARD_CONDITION

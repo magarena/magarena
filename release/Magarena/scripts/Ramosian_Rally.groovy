@@ -1,7 +1,7 @@
 def AN_UNTAPPED_CREATURE_YOU_CONTROL = new MagicTargetChoice("an untapped creature you control");
 
 [
-    new MagicCardActivation(
+    new MagicHandCastActivation(
         [MagicCondition.PLAINS_CONDITION, MagicCondition.CARD_CONDITION],
         new MagicActivationHints(MagicTiming.Pump, true),
         "Tap"

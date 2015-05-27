@@ -6,7 +6,7 @@ def FEWER_CREATURES_CONDITION = new MagicCondition() {
 };
 
 [
-    new MagicCardActivation(
+    new MagicHandCastActivation(
         [FEWER_CREATURES_CONDITION, MagicCondition.CARD_CONDITION],
         new MagicActivationHints(MagicTiming.Token),
         "Cast"

@@ -1,5 +1,5 @@
 [
-    new MagicCardActivation(
+    new MagicHandCastActivation(
         [MagicCondition.NOT_SORCERY_CONDITION],
         new MagicActivationHints(MagicTiming.Pump,true),
         "Flash"

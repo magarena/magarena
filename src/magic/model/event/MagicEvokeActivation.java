@@ -6,7 +6,7 @@ import magic.model.condition.MagicCondition;
 
 import java.util.Arrays;
 
-public class MagicEvokeActivation extends MagicCardActivation {
+public class MagicEvokeActivation extends MagicHandCastActivation {
 
     final MagicManaCost cost;
 

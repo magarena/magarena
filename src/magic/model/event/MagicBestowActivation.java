@@ -20,7 +20,7 @@ import magic.model.target.MagicPumpTargetPicker;
 
 import java.util.Arrays;
 
-public class MagicBestowActivation extends MagicCardActivation {
+public class MagicBestowActivation extends MagicHandCastActivation {
 
     final MagicManaCost cost;
     final public static MagicPlayAuraEvent BestowEvent = new MagicPlayAuraEvent(

@@ -709,7 +709,7 @@ public class SwingGameController implements IUIGameController, ILogBookListener 
             final MagicEventAction action = event.getMagicEventAction();
             // action appears to be an instance of an anonymous inner class so "instanceof" does not work.
             // (see http://stackoverflow.com/questions/17048900/reflection-class-forname-finds-classes-classname1-and-classname2-what-a)
-            final boolean isValidAction = action.getClass().getName().startsWith("magic.model.event.MagicCardActivation");
+            final boolean isValidAction = action.getClass().getName().startsWith("magic.model.event.MagicHandCastActivation");
             if (event.isValid() && isValidAction) {
                 gamePanel.setAnimationEvent(event);
             }

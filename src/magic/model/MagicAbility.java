@@ -379,7 +379,7 @@ public enum MagicAbility {
     Affinity("affinity for " + ARG.WORDRUN + "(\\.)?", 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final MagicCardDefinition cardDef = (MagicCardDefinition)card;
-            card.add(MagicCardActivation.affinity(cardDef, MagicTargetFilterFactory.Permanent(ARG.wordrun(arg))));
+            card.add(MagicHandCastActivation.affinity(cardDef, MagicTargetFilterFactory.Permanent(ARG.wordrun(arg))));
         }
     },
     Outlast("outlast "+ARG.COST,10) {
@@ -565,14 +565,14 @@ public enum MagicAbility {
             final String arg = matcher.group("any");
             final MagicCardDefinition cardDef = (MagicCardDefinition)card;
             final String[] tokens = arg.split(" named ");
-            card.add(MagicCardActivation.create(cardDef, tokens[0], tokens[1]));
+            card.add(MagicHandCastActivation.create(cardDef, tokens[0], tokens[1]));
         }
     },
     AlternateCost2("You may " + ARG.ANY + " rather than pay SN's mana cost\\.", 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher matcher) {
             final String arg = matcher.group("any").replace(" and ",", ");
             final MagicCardDefinition cardDef = (MagicCardDefinition)card;
-            card.add(MagicCardActivation.create(cardDef, arg, "Alt"));
+            card.add(MagicHandCastActivation.create(cardDef, arg, "Alt"));
         }
     },
     CastRestriction("Cast SN " + ARG.ANY, 0) {

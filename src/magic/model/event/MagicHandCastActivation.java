@@ -22,7 +22,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Collections;
 
-public class MagicCardActivation extends MagicActivation<MagicCard> implements MagicChangeCardDefinition, MagicCardEvent {
+public class MagicHandCastActivation extends MagicActivation<MagicCard> implements MagicChangeCardDefinition, MagicCardEvent {
     
     public static final MagicCondition[] CARD_CONDITION = new MagicCondition[]{
         MagicCondition.CARD_CONDITION,  
@@ -30,7 +30,7 @@ public class MagicCardActivation extends MagicActivation<MagicCard> implements M
     
     final boolean usesStack;
 
-    public MagicCardActivation(final MagicCardDefinition cdef) {
+    public MagicHandCastActivation(final MagicCardDefinition cdef) {
         super(
             CARD_CONDITION,
             cdef.getActivationHints(),
@@ -39,12 +39,12 @@ public class MagicCardActivation extends MagicActivation<MagicCard> implements M
         usesStack = cdef.usesStack();
     }
 
-    protected MagicCardActivation(final MagicActivationHints hints, final String txt) {
+    protected MagicHandCastActivation(final MagicActivationHints hints, final String txt) {
         super(MagicActivation.NO_COND, hints, txt);
         usesStack = true;
     }
 
-    protected MagicCardActivation(final MagicCondition[] conditions, final MagicActivationHints hints, final String txt) {
+    protected MagicHandCastActivation(final MagicCondition[] conditions, final MagicActivationHints hints, final String txt) {
         super(conditions, hints, txt);
         usesStack = true;
     }
@@ -83,7 +83,7 @@ public class MagicCardActivation extends MagicActivation<MagicCard> implements M
                 if (usesStack) {
                     final MagicCardOnStack cardOnStack=new MagicCardOnStack(
                         card,
-                        MagicCardActivation.this,
+                        MagicHandCastActivation.this,
                         game.getPayedCost()
                     );
                     cardOnStack.setFromLocation(fromLocation);
@@ -116,11 +116,11 @@ public class MagicCardActivation extends MagicActivation<MagicCard> implements M
         cdef.addCardAct(this);
     }
     
-    public static final MagicCardActivation create(final MagicCardDefinition cardDef, final String costs, final String name) {
+    public static final MagicHandCastActivation create(final MagicCardDefinition cardDef, final String costs, final String name) {
         final List<MagicMatchedCostEvent> matchedCostEvents = MagicRegularCostEvent.build(costs);
         assert matchedCostEvents.size() > 0;
 
-        return new MagicCardActivation(CARD_CONDITION, cardDef.getActivationHints(), name) {
+        return new MagicHandCastActivation(CARD_CONDITION, cardDef.getActivationHints(), name) {
             @Override
             public Iterable<MagicEvent> getCostEvent(final MagicCard source) {
                 final List<MagicEvent> costEvents = new LinkedList<MagicEvent>();
@@ -132,8 +132,8 @@ public class MagicCardActivation extends MagicActivation<MagicCard> implements M
         };
     }
 
-    public static final MagicCardActivation affinity(final MagicCardDefinition cardDef, final MagicTargetFilter<MagicPermanent> filter) {
-        return new MagicCardActivation(CARD_CONDITION, cardDef.getActivationHints(), "Cast") {
+    public static final MagicHandCastActivation affinity(final MagicCardDefinition cardDef, final MagicTargetFilter<MagicPermanent> filter) {
+        return new MagicHandCastActivation(CARD_CONDITION, cardDef.getActivationHints(), "Cast") {
             @Override
             public Iterable<MagicEvent> getCostEvent(final MagicCard source) {
                 return Collections.<MagicEvent>singletonList(

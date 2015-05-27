@@ -21,7 +21,7 @@ import magic.model.action.PutItemOnStackAction;
 import magic.model.action.RemoveCardAction;
 import magic.model.action.PlayCardFromStackAction;
 
-public class MagicMorphCastActivation extends MagicCardActivation {
+public class MagicMorphCastActivation extends MagicHandCastActivation {
 
     public static final MagicMorphCastActivation Morph = new MagicMorphCastActivation("Morph");
     public static final MagicMorphCastActivation Megamorph = new MagicMorphCastActivation("Megamorph");

@@ -6,7 +6,7 @@ def SWAMP_AND_FOREST_CONDITION = new MagicCondition() {
 };
 
 [
-    new MagicCardActivation(
+    new MagicHandCastActivation(
         [SWAMP_AND_FOREST_CONDITION, MagicCondition.CARD_CONDITION],
         new MagicActivationHints(MagicTiming.Main, true),
         "Free"

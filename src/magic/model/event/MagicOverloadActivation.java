@@ -2,7 +2,7 @@ package magic.model.event;
 
 import magic.model.condition.MagicCondition;
 
-public abstract class MagicOverloadActivation extends MagicCardActivation {
+public abstract class MagicOverloadActivation extends MagicHandCastActivation {
 
     public MagicOverloadActivation(final MagicTiming timing) {
         super(

@@ -12,7 +12,7 @@ import magic.model.condition.MagicCondition;
 
 import java.util.Arrays;
 
-public class MagicDashActivation extends MagicCardActivation {
+public class MagicDashActivation extends MagicHandCastActivation {
 
     final MagicManaCost cost;
 

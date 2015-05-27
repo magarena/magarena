@@ -5,7 +5,7 @@ import magic.data.CardDefinitions;
 import magic.data.CardProperty;
 import magic.model.event.MagicActivation;
 import magic.model.event.MagicActivationHints;
-import magic.model.event.MagicCardActivation;
+import magic.model.event.MagicHandCastActivation;
 import magic.model.event.MagicCardEvent;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicEventSource;
@@ -839,15 +839,15 @@ public class MagicCardDefinition implements MagicAbilityStore {
         morphActivations.add(activation);
     }
 
-    public void addCardAct(final MagicCardActivation activation) {
+    public void addCardAct(final MagicHandCastActivation activation) {
         cardActivations.add(activation);
     }
 
-    public void addGraveyardAct(final MagicCardActivation activation) {
+    public void addGraveyardAct(final MagicHandCastActivation activation) {
         graveyardActivations.add(activation);
     }
 
-    public void setCardAct(final MagicCardActivation activation) {
+    public void setCardAct(final MagicHandCastActivation activation) {
         assert cardActivations.size() == 1 : "removing multiple (" + cardActivations.size() + ") card activations";
         cardActivations.clear();
         cardActivations.add(activation);

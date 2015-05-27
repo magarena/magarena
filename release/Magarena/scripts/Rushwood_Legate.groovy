@@ -6,7 +6,7 @@ def FOREST_AND_ISLAND_CONDITION = new MagicCondition() {
 };
 
 [
-    new MagicCardActivation(
+    new MagicHandCastActivation(
         [FOREST_AND_ISLAND_CONDITION, MagicCondition.CARD_CONDITION],
         new MagicActivationHints(MagicTiming.Main, true),
         "Free"

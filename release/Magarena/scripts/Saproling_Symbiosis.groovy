@@ -1,5 +1,5 @@
 [
-    new MagicCardActivation(
+    new MagicHandCastActivation(
         new MagicActivationHints(MagicTiming.Token,true),
         "Instant"
     ) {

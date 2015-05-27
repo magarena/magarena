@@ -18,7 +18,7 @@ public class MagicFlashbackActivation extends MagicGraveyardCastActivation {
     
     public MagicFlashbackActivation(final MagicCardDefinition cdef, final List<MagicMatchedCostEvent> aMatchedCostEvents) {
         super(
-            MagicCardActivation.CARD_CONDITION,
+            MagicHandCastActivation.CARD_CONDITION,
             cdef.getActivationHints(),
             "Flashback"
         );

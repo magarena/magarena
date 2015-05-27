@@ -30,7 +30,7 @@ import magic.model.MagicCardDefinition;
 import magic.model.MagicChangeCardDefinition;
 import magic.model.MagicColor;
 import magic.model.MagicCubeDefinition;
-import magic.model.event.MagicCardActivation;
+import magic.model.event.MagicHandCastActivation;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicFileSystem.DataPath;
 import magic.utility.MagicResources;
@@ -105,7 +105,7 @@ public class CardDefinitions {
         cardDef.setIndex(cdefIndex.getAndIncrement());
         
         if (cardDef.isToken() == false && cardDef.isHidden() == false) {
-            cardDef.add(new MagicCardActivation(cardDef));
+            cardDef.add(new MagicHandCastActivation(cardDef));
         }
         
         allPlayableCardDefs.put(cardDef.getAsciiName(), cardDef);

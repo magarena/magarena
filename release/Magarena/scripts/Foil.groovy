@@ -13,7 +13,7 @@ def AN_ISLAND_CARD_FROM_HAND = new MagicTargetChoice(
 );
 
 [
-    new MagicCardActivation(
+    new MagicHandCastActivation(
         [
             MagicConditionFactory.HandAtLeast(3),
             MagicCondition.CARD_CONDITION,
