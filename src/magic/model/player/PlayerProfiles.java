@@ -123,7 +123,13 @@ public final class PlayerProfiles {
     }
 
     public static PlayerProfile getDefaultAiPlayer() {
-        return getAiPlayerProfiles().values().iterator().next();
+        for (PlayerProfile profile : getAiPlayerProfiles().values()) {
+            final AiProfile aiProfile = (AiProfile) profile;
+            if (aiProfile.getAiType() == MagicAIImpl.MCTS) {
+                return profile;
+            }
+        }
+        throw new RuntimeException("Missing default AI player profile!");
     }
 
     private static HashMap<String, PlayerProfile> getPlayerProfiles(final Class<? extends PlayerProfile> profileClass) {
