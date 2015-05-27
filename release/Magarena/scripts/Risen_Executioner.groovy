@@ -1,5 +1,5 @@
 [
-    new MagicGraveyardActivation(
+    new MagicGraveyardCastActivation(
         [MagicCondition.CARD_CONDITION],
         new MagicActivationHints(MagicTiming.Main),
         "Cast"

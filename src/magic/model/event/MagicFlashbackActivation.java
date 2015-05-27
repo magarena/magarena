@@ -12,7 +12,7 @@ import magic.model.stack.MagicCardOnStack;
 import java.util.LinkedList;
 import java.util.List;
 
-public class MagicFlashbackActivation extends MagicGraveyardActivation {
+public class MagicFlashbackActivation extends MagicGraveyardCastActivation {
     
     private final List<MagicMatchedCostEvent> matchedCostEvents;
     

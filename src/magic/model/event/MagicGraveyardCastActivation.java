@@ -6,9 +6,9 @@ import magic.model.MagicLocationType;
 import magic.model.event.MagicEvent;
 import magic.model.condition.MagicCondition;
 
-public class MagicGraveyardActivation extends MagicCardActivation {
+public class MagicGraveyardCastActivation extends MagicCardActivation {
 
-    protected MagicGraveyardActivation(final MagicCondition[] conditions, final MagicActivationHints hints, final String txt) {
+    protected MagicGraveyardCastActivation(final MagicCondition[] conditions, final MagicActivationHints hints, final String txt) {
         super(conditions, hints, txt);
     }
     
