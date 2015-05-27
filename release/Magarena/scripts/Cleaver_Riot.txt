@@ -4,6 +4,7 @@ value=2.679
 rarity=U
 type=Sorcery
 cost={4}{R}
+ability=Cast SN with AI only if you control a creature.
 effect=Creatures you control gain double strike until end of turn.
 timing=fmain
 oracle=Creatures you control gain double strike until end of turn.
