@@ -48,7 +48,7 @@ public abstract class MagicCardAbilityActivation extends MagicHandCastActivation
                     game.doAction(new PutItemOnStackAction(abilityOnStack));
                 }
             },
-            name + " SN."
+            "Play activated ability of SN."
         );
     }
 
