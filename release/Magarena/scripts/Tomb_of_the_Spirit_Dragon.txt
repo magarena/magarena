@@ -3,7 +3,7 @@ image=http://magiccards.info/scans/en/ktk/245.jpg
 value=2.500
 rarity=U
 type=Land
-ability={T}: Add {1} to your mana pool.;\
-        {2}, {T}: You gain 1 life for each colorless creature you control.
+ability={T}: Add {1} to your mana pool.
 timing=land
+requires_groovy_code
 oracle={T}: Add {1} to your mana pool.\n{2}, {T}: You gain 1 life for each colorless creature you control.
