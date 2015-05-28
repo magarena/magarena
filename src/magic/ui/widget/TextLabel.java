@@ -38,6 +38,7 @@ public class TextLabel extends JPanel {
     private final boolean center;
     private Color textColor;
     private Color choiceColor;
+    private boolean isBlueInfo = true;
 
     static {
 
@@ -80,7 +81,7 @@ public class TextLabel extends JPanel {
         if (textPart.charAt(0)=='{') {
             component = new IconComponent(IconImages.getIcon(TextImages.getIcon(textPart)));
         } else if (info) {
-            component=new TextComponent(textPart,this,FontsAndBorders.FONT0,true);
+            component=new TextComponent(textPart,this,FontsAndBorders.FONT0,isBlueInfo);
         } else {
             component=new TextComponent(textPart,this,FontsAndBorders.FONT1,false);
         }
@@ -109,14 +110,16 @@ public class TextLabel extends JPanel {
             } else if (ch=='}') {
                 addComponent(buildComponent(text.substring(startIndex,index+1),info));
                 startIndex=index+1;
-            } else if (ch=='(') {
+            } else if (ch=='(' || ch=='[') {
                 addComponent(buildComponent(text.substring(startIndex,index),info));
                 startIndex=index;
-                info=true;
-            } else if (ch==')') {
+                info = true;
+                isBlueInfo = ch=='(';
+            } else if (ch==')'|| ch==']') {
                 addComponent(buildComponent(text.substring(startIndex,index+1),info));
                 startIndex=index+1;
                 info=false;
+                isBlueInfo = true;
             }
         }
     }
