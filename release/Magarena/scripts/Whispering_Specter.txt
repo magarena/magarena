@@ -7,7 +7,7 @@ subtype=Specter
 cost={1}{B}{B}
 pt=1/1
 ability=Flying;\
-        Infect;\
-        Whenever SN deals combat damage to a player, you may sacrifice it. If you do, that player discards a card for each poison counter he or she has.
+        Infect
 timing=main
+requires_groovy_code
 oracle=Flying\nInfect\nWhenever Whispering Specter deals combat damage to a player, you may sacrifice it. If you do, that player discards a card for each poison counter he or she has.
