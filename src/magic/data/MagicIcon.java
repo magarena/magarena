@@ -169,6 +169,7 @@ public enum MagicIcon {
     RUSTCOUNTER("rust-counter.png"),
     BLOODCOUNTER("blood-counter.png"),
     GROWTHCOUNTER("spore-counter.png"),
+    PLAGUECOUNTER("spore-counter.png"),
 
     MANA_ANY("anymana.gif"),
 
