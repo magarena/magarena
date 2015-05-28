@@ -88,4 +88,18 @@ public class MagicAmountFactory {
                 return player.getLife();
             }
         };
+    
+    public static MagicAmount ColorsOnPerms = 
+        new MagicAmount() {
+            @Override
+            public int getAmount(final MagicSource source, final MagicPlayer player) {
+                int amount = 0;
+                for (final MagicColor color : MagicColor.values()) {
+                    if (player.controlsPermanent(color)) {
+                        amount++;
+                    }
+                }
+                return amount;
+            }
+        };
 }

@@ -47,6 +47,11 @@ public enum MagicAmountParser {
             );
         }
     },
+    ColorOnPerms("color among permanents you control") {
+        public MagicAmount toAmount(final Matcher arg) {
+            return MagicAmountFactory.ColorsOnPerms;
+        }
+    },
     FromFilter(ARG.ANY) {
         public MagicAmount toAmount(final Matcher arg) {
             return MagicAmountFactory.FromFilter(
