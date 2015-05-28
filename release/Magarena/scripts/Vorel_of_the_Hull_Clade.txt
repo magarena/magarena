@@ -6,6 +6,6 @@ type=Legendary,Creature
 subtype=Human,Merfolk
 cost={1}{G}{U}
 pt=1/4
-ability={G}{U}, {T}: For each counter on target artifact, creature, or land, put another of those counters on that permanent.
 timing=main
+requires_groovy_code
 oracle={G}{U}, {T}: For each counter on target artifact, creature, or land, put another of those counters on that permanent.
