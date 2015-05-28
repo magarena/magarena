@@ -4,6 +4,6 @@ value=2.500
 rarity=R
 type=Sorcery
 cost={2}{R}{R}
-effect=Each player sacrifices a land for each card in your hand.
 timing=main
+requires_groovy_code
 oracle=Each player sacrifices a land for each card in your hand.
