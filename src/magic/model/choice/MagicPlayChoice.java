@@ -21,8 +21,8 @@ public class MagicPlayChoice extends MagicChoice {
 
     private static final MagicChoice INSTANCE=new MagicPlayChoice();
 
-    private static final String MESSAGE="Play a card or ability.|Press {f} to pass priority.|[Shift+Right, Shift+Space or right click {f} to skip to end of turn.]";
-    private static final String CONTINUE_MESSAGE="Press {f} to pass priority.";
+    private static final String CONTINUE_MESSAGE="Click {f} or Space to pass.";
+    private static final String MESSAGE="Play a card or ability.|" + CONTINUE_MESSAGE + "|[Right click {f} or Shift+Space to|skip till end of turn.]";
 
     private static final Collection<Object> PASS_OPTIONS=Collections.<Object>singleton(MagicPlayChoiceResult.SKIP);
     private static final Object[] PASS_CHOICE_RESULTS= {MagicPlayChoiceResult.SKIP};
