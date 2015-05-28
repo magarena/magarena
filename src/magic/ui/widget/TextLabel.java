@@ -91,7 +91,7 @@ public class TextLabel extends JPanel {
         text=text.replaceAll("\\s+"," ").trim()+' ';
         int startIndex=0;
         boolean info=false;
-        boolean isBlueInfo = true;
+        boolean isBlueInfo = false;
         for (int index=0;index<text.length();index++) {
             final char ch=text.charAt(index);
             if (ch==' ') {
@@ -108,16 +108,24 @@ public class TextLabel extends JPanel {
             } else if (ch=='}') {
                 addComponent(buildComponent(text.substring(startIndex,index+1),info,isBlueInfo));
                 startIndex=index+1;
-            } else if (ch=='(' || ch=='[') {
+            } else if (ch=='(') {
                 addComponent(buildComponent(text.substring(startIndex,index),info,isBlueInfo));
                 startIndex=index;
                 info = true;
-                isBlueInfo = ch=='(';
-            } else if (ch==')'|| ch==']') {
+                isBlueInfo = true;
+            } else if (ch==')') {
                 addComponent(buildComponent(text.substring(startIndex,index+1),info,isBlueInfo));
                 startIndex=index+1;
-                info=false;
-                isBlueInfo=false;
+                info = false;
+                isBlueInfo = false;
+            } else if (ch=='[') {
+                addComponent(buildComponent(text.substring(startIndex,index),info,isBlueInfo));
+                startIndex=index+1;
+                info = true;
+            } else if (ch==']') {
+                addComponent(buildComponent(text.substring(startIndex,index),info,isBlueInfo));
+                startIndex=index+1;
+                info = false;
             }
         }
     }
