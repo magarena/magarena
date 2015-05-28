@@ -38,7 +38,6 @@ public class TextLabel extends JPanel {
     private final boolean center;
     private Color textColor;
     private Color choiceColor;
-    private boolean isBlueInfo = true;
 
     static {
 
@@ -72,8 +71,7 @@ public class TextLabel extends JPanel {
         }
     }
 
-    private TComponent buildComponent(final String textPart,final boolean info) {
-
+    private TComponent buildComponent(final String textPart, final boolean info, final boolean isBlueInfo) {
         if (textPart.isEmpty()) {
             return null;
         }
@@ -93,33 +91,33 @@ public class TextLabel extends JPanel {
         text=text.replaceAll("\\s+"," ").trim()+' ';
         int startIndex=0;
         boolean info=false;
+        boolean isBlueInfo = true;
         for (int index=0;index<text.length();index++) {
-
             final char ch=text.charAt(index);
             if (ch==' ') {
-                addComponent(buildComponent(text.substring(startIndex,index),info));
+                addComponent(buildComponent(text.substring(startIndex,index),info,isBlueInfo));
                 addComponent(SPACE_LABEL);
                 startIndex=index+1;
             } else if (ch=='|') {
-                addComponent(buildComponent(text.substring(startIndex,index),info));
+                addComponent(buildComponent(text.substring(startIndex,index),info,isBlueInfo));
                 addComponent(BREAK_LABEL);
                 startIndex=index+1;
             } else if (ch=='{') {
-                addComponent(buildComponent(text.substring(startIndex,index),info));
+                addComponent(buildComponent(text.substring(startIndex,index),info,isBlueInfo));
                 startIndex=index;
             } else if (ch=='}') {
-                addComponent(buildComponent(text.substring(startIndex,index+1),info));
+                addComponent(buildComponent(text.substring(startIndex,index+1),info,isBlueInfo));
                 startIndex=index+1;
             } else if (ch=='(' || ch=='[') {
-                addComponent(buildComponent(text.substring(startIndex,index),info));
+                addComponent(buildComponent(text.substring(startIndex,index),info,isBlueInfo));
                 startIndex=index;
                 info = true;
                 isBlueInfo = ch=='(';
             } else if (ch==')'|| ch==']') {
-                addComponent(buildComponent(text.substring(startIndex,index+1),info));
+                addComponent(buildComponent(text.substring(startIndex,index+1),info,isBlueInfo));
                 startIndex=index+1;
                 info=false;
-                isBlueInfo = true;
+                isBlueInfo=false;
             }
         }
     }
