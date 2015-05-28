@@ -4,6 +4,7 @@ value=2.500
 rarity=C
 type=Sorcery
 cost={2}{B}{B}
-effect=Each player loses 1 life for each creature he or she controls.
+ability=Cast SN with AI only if an opponent controls a creature.
 timing=main
+requires_groovy_code
 oracle=Each player loses 1 life for each creature he or she controls.
