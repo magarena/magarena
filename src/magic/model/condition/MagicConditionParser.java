@@ -450,6 +450,11 @@ public enum MagicConditionParser {
             return MagicCondition.CREATURE_IN_A_GRAVEYARD;
         }
     },
+    InstantOrSorceryInGraveyard("there is an instant or sorcery card in a graveyard") {
+        public MagicCondition toCondition(final Matcher arg) {
+            return MagicCondition.INSTANT_OR_SORCERY_IN_A_GRAVEYARD;
+        }
+    },
     Formidable("creatures you control have total power 8 or greater") {
         public MagicCondition toCondition(final Matcher arg) {
             return MagicCondition.FORMIDABLE;
@@ -500,7 +505,7 @@ public enum MagicConditionParser {
         }
         return conds;
     }
-    
+
     public static List<MagicMatchedCostEvent> buildCost(final String costs) {
         final String[] splitCosts = costs.split(" and ");
         final List<MagicMatchedCostEvent> matched = new LinkedList<MagicMatchedCostEvent>();
