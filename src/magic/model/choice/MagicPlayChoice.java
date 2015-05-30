@@ -136,7 +136,7 @@ public class MagicPlayChoice extends MagicChoice {
             if (game.getStack().isEmpty()) {
                 return PASS_CHOICE_RESULTS;
             } else {
-                game.skipTurnTill(MagicPhaseType.Mulligan);
+                game.clearSkipTurnTill();
             }
         }
 

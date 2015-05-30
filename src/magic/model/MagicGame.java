@@ -237,6 +237,10 @@ public class MagicGame {
     public void skipTurnTill(final MagicPhaseType skip) {
         skipTurnTill = skip;
     }
+    
+    public void clearSkipTurnTill() {
+        skipTurnTill = MagicPhaseType.Mulligan;
+    }
 
     public boolean shouldSkip() {
         return phase.getType().ordinal() < skipTurnTill.ordinal();

@@ -203,7 +203,7 @@ public class SwingGameController implements IUIGameController, ILogBookListener 
     public void passKeyPressed() {
         if (gamePanel.canClickAction()) {
             actionClicked();
-            game.skipTurnTill(MagicPhaseType.Cleanup);
+            game.skipTurnTill(MagicPhaseType.EndOfTurn);
         }
     }
 
