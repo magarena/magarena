@@ -1031,6 +1031,14 @@ public class MagicTargetFilterFactory {
                    target.isController(player);
         }
     };
+
+    public static final MagicPermanentFilterImpl TAPPED_ARTIFACT_CREATURE_AND_LAND_YOU_CONTROL = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
+            return  target.isController(player) &&
+                    target.isTapped() &&
+                    (target.hasType(MagicType.Artifact) || target.hasType(MagicType.Creature) || target.hasType(MagicType.Land));
+        }
+    };
     
     public static final MagicPermanentFilterImpl UNTAPPED_ARTIFACT_CREATURE_OR_LAND_YOU_CONTROL = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
@@ -1747,6 +1755,12 @@ public class MagicTargetFilterFactory {
             return MagicColor.isMulti(permanent);
         }
     };
+
+    public static final MagicPermanentFilterImpl COLORLESS_CREATURE_YOU_CONTROL = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
+            return  target.isController(player) && target.isCreature() && MagicColor.isColorless(target);
+        }
+    };
     
     public static final MagicCardFilterImpl MULTICOLORED_CARD_FROM_GRAVEYARD = new MagicCardFilterImpl() {
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicCard target) {
@@ -2332,6 +2346,7 @@ public class MagicTargetFilterFactory {
         single.put("creature with defender you control", CREATURE_WITH_DEFENDER_YOU_CONTROL);
         single.put("face-up nontoken creature you control", FACEUP_NONTOKEN_CREATURE_YOU_CONTROL);
         single.put("creature you control with infect", CREATURE_WITH_INFECT_YOU_CONTROL);
+        single.put("colorless creature you control", COLORLESS_CREATURE_YOU_CONTROL);
         
         // <color|type|subtype> creature an opponent controls
         single.put("creature with flying an opponent controls", CREATURE_WITH_FLYING_YOUR_OPPONENT_CONTROLS);
@@ -2479,6 +2494,7 @@ public class MagicTargetFilterFactory {
         single.put("untapped land you control", UNTAPPED_LAND_YOU_CONTROL);
         single.put("red or green enchantment you control", RED_OR_GREEN_ENCHANTMENT_YOU_CONTROL);
         single.put("untapped mountain you control", UNTAPPED_MOUNTAIN_YOU_CONTROL);
+        single.put("tapped artifact, creature, or land you control", TAPPED_ARTIFACT_CREATURE_AND_LAND_YOU_CONTROL);
         
         // <color|type|subtype> an opponent controls
         single.put("permanent an opponent controls", PERMANENT_AN_OPPONENT_CONTROLS);
