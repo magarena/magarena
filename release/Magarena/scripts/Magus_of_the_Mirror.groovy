@@ -1,7 +1,7 @@
 [
     new MagicPermanentActivation(
         [MagicCondition.YOUR_UPKEEP_CONDITION],
-        new MagicActivationHints(MagicTiming.Pump),
+        new MagicActivationHints(MagicTiming.None),
         "Swap"
     ) {
         @Override
