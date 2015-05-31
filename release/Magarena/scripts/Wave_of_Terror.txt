@@ -1,6 +1,6 @@
 name=Wave of Terror
 image=http://magiccards.info/scans/en/wl/28.jpg
-value=2.500
+value=3.578
 rarity=R
 type=Enchantment
 cost={2}{B}

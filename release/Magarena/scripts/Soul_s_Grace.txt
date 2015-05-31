@@ -1,6 +1,6 @@
 name=Soul's Grace
 image=http://magiccards.info/scans/en/ala/28.jpg
-value=2.500
+value=2.468
 rarity=C
 type=Instant
 cost={1}{W}

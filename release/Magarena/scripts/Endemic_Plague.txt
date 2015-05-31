@@ -1,6 +1,6 @@
 name=Endemic Plague
 image=http://magiccards.info/scans/en/on/142.jpg
-value=2.500
+value=2.816
 rarity=R
 type=Sorcery
 cost={3}{B}

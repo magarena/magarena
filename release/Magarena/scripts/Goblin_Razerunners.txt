@@ -1,6 +1,6 @@
 name=Goblin Razerunners
 image=http://magiccards.info/scans/en/cfx/64.jpg
-value=2.500
+value=3.250
 rarity=R
 type=Creature
 subtype=Goblin,Warrior

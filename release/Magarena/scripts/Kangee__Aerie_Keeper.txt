@@ -1,6 +1,6 @@
 name=Kangee, Aerie Keeper
 image=http://magiccards.info/scans/en/in/253.jpg
-value=2.500
+value=3.755
 rarity=R
 type=Legendary,Creature
 subtype=Bird,Wizard

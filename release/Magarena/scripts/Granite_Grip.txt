@@ -1,6 +1,6 @@
 name=Granite Grip
 image=http://magiccards.info/scans/en/7e/195.jpg
-value=2.500
+value=3.086
 rarity=C
 type=Enchantment
 subtype=Aura

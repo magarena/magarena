@@ -1,6 +1,6 @@
 name=Thermokarst
 image=http://magiccards.info/scans/en/me2/183.jpg
-value=2.500
+value=3.929
 rarity=C
 type=Sorcery
 cost={1}{G}{G}

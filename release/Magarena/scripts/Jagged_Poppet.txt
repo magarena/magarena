@@ -1,6 +1,6 @@
 name=Jagged Poppet
 image=http://magiccards.info/scans/en/di/115.jpg
-value=2.500
+value=3.400
 rarity=U
 type=Creature
 subtype=Ogre,Warrior

@@ -1,6 +1,6 @@
 name=Duskmantle Seer
 image=http://magiccards.info/scans/en/gtc/159.jpg
-value=2.500
+value=3.735
 rarity=M
 type=Creature
 subtype=Vampire,Wizard

@@ -1,6 +1,6 @@
 name=Public Execution
 image=http://magiccards.info/scans/en/m13/105.jpg
-value=2.500
+value=2.529
 rarity=U
 type=Instant
 cost={5}{B}

@@ -1,6 +1,6 @@
 name=Mind Unbound
 image=http://magiccards.info/scans/en/m12/68.jpg
-value=2.500
+value=3.528
 rarity=R
 type=Enchantment
 cost={4}{U}{U}

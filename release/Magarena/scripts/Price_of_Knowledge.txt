@@ -1,6 +1,6 @@
 name=Price of Knowledge
 image=http://magiccards.info/scans/en/c13/89.jpg
-value=2.500
+value=3.776
 rarity=R
 type=Enchantment
 cost={6}{B}

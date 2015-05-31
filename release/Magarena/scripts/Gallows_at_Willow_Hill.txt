@@ -1,6 +1,6 @@
 name=Gallows at Willow Hill
 image=http://magiccards.info/scans/en/avr/215.jpg
-value=2.500
+value=2.670
 rarity=R
 type=Artifact
 cost={3}

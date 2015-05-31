@@ -1,6 +1,6 @@
 name=Prime Speaker Zegana
 image=http://magiccards.info/scans/en/gtc/188.jpg
-value=2.500
+value=4.035
 rarity=M
 type=Legendary,Creature
 subtype=Merfolk,Wizard

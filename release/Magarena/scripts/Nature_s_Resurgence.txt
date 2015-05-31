@@ -1,6 +1,6 @@
 name=Nature's Resurgence
 image=http://magiccards.info/scans/en/7e/259.jpg
-value=2.500
+value=3.420
 rarity=R
 type=Sorcery
 cost={2}{G}{G}

@@ -1,6 +1,6 @@
 name=Greater Good
 image=http://magiccards.info/scans/en/9e/245.jpg
-value=2.500
+value=4.217
 rarity=R
 type=Enchantment
 cost={2}{G}{G}

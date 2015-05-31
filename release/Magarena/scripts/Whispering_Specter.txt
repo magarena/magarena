@@ -1,6 +1,6 @@
 name=Whispering Specter
 image=http://magiccards.info/scans/en/nph/77.jpg
-value=2.500
+value=3.071
 rarity=U
 type=Creature
 subtype=Specter

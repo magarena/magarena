@@ -1,6 +1,6 @@
 name=Chaotic Backlash
 image=http://magiccards.info/scans/en/eve/49.jpg
-value=2.500
+value=2.667
 rarity=U
 type=Instant
 cost={4}{R}

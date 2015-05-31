@@ -1,6 +1,6 @@
 name=Transcendence
 image=http://magiccards.info/scans/en/tr/20.jpg
-value=2.500
+value=3.597
 rarity=R
 type=Enchantment
 cost={3}{W}{W}{W}

@@ -1,6 +1,6 @@
 name=City of Solitude
 image=http://magiccards.info/scans/en/vi/52.jpg
-value=2.500
+value=4.435
 rarity=R
 type=Enchantment
 cost={2}{G}

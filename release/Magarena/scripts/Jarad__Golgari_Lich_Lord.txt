@@ -1,6 +1,6 @@
 name=Jarad, Golgari Lich Lord
 image=http://magiccards.info/scans/en/rtr/174.jpg
-value=2.500
+value=3.943
 rarity=M
 type=Legendary,Creature
 subtype=Zombie,Elf

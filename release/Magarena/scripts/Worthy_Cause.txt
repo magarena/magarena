@@ -1,6 +1,6 @@
 name=Worthy Cause
 image=http://magiccards.info/scans/en/tp/265.jpg
-value=2.500
+value=2.594
 rarity=U
 type=Instant
 cost={W}

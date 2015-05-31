@@ -1,6 +1,6 @@
 name=Unified Strike
 image=http://magiccards.info/scans/en/on/58.jpg
-value=2.500
+value=3.135
 rarity=C
 type=Instant
 cost={W}

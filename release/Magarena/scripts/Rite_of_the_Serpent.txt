@@ -1,6 +1,6 @@
 name=Rite of the Serpent
 image=http://magiccards.info/scans/en/ktk/86.jpg
-value=2.500
+value=2.250
 rarity=C
 type=Sorcery
 cost={4}{B}{B}

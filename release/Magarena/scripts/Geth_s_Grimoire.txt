@@ -1,6 +1,6 @@
 name=Geth's Grimoire
 image=http://magiccards.info/scans/en/ds/123.jpg
-value=2.500
+value=3.970
 rarity=U
 type=Artifact
 cost={4}

@@ -1,6 +1,6 @@
 name=Corpse Lunge
 image=http://magiccards.info/scans/en/isd/93.jpg
-value=2.500
+value=2.413
 rarity=C
 type=Instant
 cost={2}{B}

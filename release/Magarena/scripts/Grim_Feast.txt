@@ -1,6 +1,6 @@
 name=Grim Feast
 image=http://magiccards.info/scans/en/mr/325.jpg
-value=2.500
+value=4.048
 rarity=R
 type=Enchantment
 cost={1}{B}{G}

@@ -1,6 +1,6 @@
 name=Rotfeaster Maggot
 image=http://magiccards.info/scans/en/m15/112.jpg
-value=2.500
+value=3.000
 rarity=C
 type=Creature
 subtype=Insect

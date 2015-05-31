@@ -1,6 +1,6 @@
 name=Palisade Giant
 image=http://magiccards.info/scans/en/rtr/15.jpg
-value=2.500
+value=3.364
 rarity=R
 type=Creature
 subtype=Giant,Soldier

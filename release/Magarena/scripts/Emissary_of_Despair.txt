@@ -1,6 +1,6 @@
 name=Emissary of Despair
 image=http://magiccards.info/scans/en/ds/42.jpg
-value=2.500
+value=3.455
 rarity=U
 type=Creature
 subtype=Spirit

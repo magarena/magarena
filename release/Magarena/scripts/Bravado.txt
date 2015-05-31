@@ -1,6 +1,6 @@
 name=Bravado
 image=http://magiccards.info/scans/en/us/177.jpg
-value=2.500
+value=3.464
 rarity=C
 type=Enchantment
 subtype=Aura

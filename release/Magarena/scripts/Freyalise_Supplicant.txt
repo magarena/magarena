@@ -1,6 +1,6 @@
 name=Freyalise Supplicant
 image=http://magiccards.info/scans/en/ia/127.jpg
-value=2.500
+value=3.103
 rarity=U
 type=Creature
 subtype=Human,Cleric

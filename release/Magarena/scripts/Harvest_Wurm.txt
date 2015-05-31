@@ -1,6 +1,6 @@
 name=Harvest Wurm
 image=http://magiccards.info/scans/en/wl/72.jpg
-value=2.500
+value=3.902
 rarity=C
 type=Creature
 subtype=Wurm

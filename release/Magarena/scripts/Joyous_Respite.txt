@@ -1,6 +1,6 @@
 name=Joyous Respite
 image=http://magiccards.info/scans/en/chk/216.jpg
-value=2.500
+value=1.671
 rarity=C
 type=Sorcery
 subtype=Arcane

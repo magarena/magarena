@@ -1,6 +1,6 @@
 name=Soul Tithe
 image=http://magiccards.info/scans/en/rtr/23.jpg
-value=2.500
+value=3.855
 rarity=U
 type=Enchantment
 subtype=Aura

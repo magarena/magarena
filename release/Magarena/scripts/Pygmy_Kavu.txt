@@ -1,6 +1,6 @@
 name=Pygmy Kavu
 image=http://magiccards.info/scans/en/ps/88.jpg
-value=2.500
+value=3.074
 rarity=C
 type=Creature
 subtype=Kavu

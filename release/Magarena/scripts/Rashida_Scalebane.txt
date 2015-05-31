@@ -1,6 +1,6 @@
 name=Rashida Scalebane
 image=http://magiccards.info/scans/en/mr/239.jpg
-value=2.500
+value=3.359
 rarity=R
 type=Legendary,Creature
 subtype=Human,Soldier

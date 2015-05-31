@@ -1,6 +1,6 @@
 name=Mercadia's Downfall
 image=http://magiccards.info/scans/en/mm/205.jpg
-value=2.500
+value=2.395
 rarity=U
 type=Instant
 cost={2}{R}

@@ -1,6 +1,6 @@
 name=Hot Soup
 image=http://magiccards.info/scans/en/m15/219.jpg
-value=2.500
+value=3.286
 rarity=U
 type=Artifact
 subtype=Equipment

@@ -1,6 +1,6 @@
 name=Forge Armor
 image=http://magiccards.info/scans/en/mi/92.jpg
-value=2.500
+value=2.167
 rarity=U
 type=Instant
 cost={4}{R}

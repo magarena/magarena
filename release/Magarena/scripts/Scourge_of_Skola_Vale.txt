@@ -1,6 +1,6 @@
 name=Scourge of Skola Vale
 image=http://magiccards.info/scans/en/bng/137.jpg
-value=2.500
+value=3.760
 rarity=R
 type=Creature
 subtype=Hydra

@@ -1,6 +1,6 @@
 name=Helldozer
 image=http://magiccards.info/scans/en/pch/30.jpg
-value=2.500
+value=4.219
 rarity=R
 type=Creature
 subtype=Zombie,Giant

@@ -1,6 +1,6 @@
 name=Sanguine Praetor
 image=http://magiccards.info/scans/en/gp/60.jpg
-value=2.500
+value=3.229
 rarity=R
 type=Creature
 subtype=Avatar,Praetor

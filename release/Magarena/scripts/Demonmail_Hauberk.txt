@@ -1,6 +1,6 @@
 name=Demonmail Hauberk
 image=http://magiccards.info/scans/en/isd/221.jpg
-value=2.500
+value=3.198
 rarity=U
 type=Artifact
 subtype=Equipment

@@ -1,6 +1,6 @@
 name=Final Strike
 image=http://magiccards.info/scans/en/po/16.jpg
-value=2.500
+value=1.707
 rarity=R
 type=Sorcery
 cost={2}{B}{B}

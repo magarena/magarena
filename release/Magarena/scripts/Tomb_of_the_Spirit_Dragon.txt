@@ -1,6 +1,6 @@
 name=Tomb of the Spirit Dragon
 image=http://magiccards.info/scans/en/ktk/245.jpg
-value=2.500
+value=3.667
 rarity=U
 type=Land
 ability={T}: Add {1} to your mana pool.;\

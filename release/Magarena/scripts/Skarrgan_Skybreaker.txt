@@ -1,6 +1,6 @@
 name=Skarrgan Skybreaker
 image=http://magiccards.info/scans/en/ddl/60.jpg
-value=2.500
+value=3.033
 rarity=U
 type=Creature
 subtype=Giant,Shaman

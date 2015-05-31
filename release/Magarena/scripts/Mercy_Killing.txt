@@ -1,6 +1,6 @@
 name=Mercy Killing
 image=http://magiccards.info/scans/en/shm/231.jpg
-value=2.500
+value=3.852
 rarity=U
 type=Instant
 cost={2}{G/W}

@@ -1,6 +1,6 @@
 name=Zephyr Spirit
 image=http://magiccards.info/scans/en/rav/76.jpg
-value=2.500
+value=0.858
 rarity=C
 type=Creature
 subtype=Spirit

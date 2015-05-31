@@ -1,6 +1,6 @@
 name=Electryte
 image=http://magiccards.info/scans/en/us/183.jpg
-value=2.500
+value=2.929
 rarity=R
 type=Creature
 subtype=Beast

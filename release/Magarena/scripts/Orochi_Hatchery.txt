@@ -1,6 +1,6 @@
 name=Orochi Hatchery
 image=http://magiccards.info/scans/en/chk/266.jpg
-value=2.500
+value=3.894
 rarity=R
 type=Artifact
 cost={X}{X}

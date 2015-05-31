@@ -1,6 +1,6 @@
 name=Avoid Fate
 image=http://magiccards.info/scans/en/tsts/73.jpg
-value=2.500
+value=4.236
 rarity=C
 type=Instant
 cost={G}

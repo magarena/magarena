@@ -1,6 +1,6 @@
 name=Civic Saber
 image=http://magiccards.info/scans/en/rtr/227.jpg
-value=2.500
+value=3.093
 rarity=U
 type=Artifact
 subtype=Equipment

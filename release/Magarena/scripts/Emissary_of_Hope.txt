@@ -1,6 +1,6 @@
 name=Emissary of Hope
 image=http://magiccards.info/scans/en/ds/3.jpg
-value=2.500
+value=2.481
 rarity=U
 type=Creature
 subtype=Spirit

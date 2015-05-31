@@ -1,6 +1,6 @@
 name=Dune-Brood Nephilim
 image=http://magiccards.info/scans/en/gp/110.jpg
-value=2.500
+value=4.061
 rarity=R
 type=Creature
 subtype=Nephilim

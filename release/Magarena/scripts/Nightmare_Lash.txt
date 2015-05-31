@@ -1,6 +1,6 @@
 name=Nightmare Lash
 image=http://magiccards.info/scans/en/mi/219.jpg
-value=2.500
+value=4.208
 rarity=R
 type=Artifact
 subtype=Equipment

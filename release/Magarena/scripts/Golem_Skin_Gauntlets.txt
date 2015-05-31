@@ -1,6 +1,6 @@
 name=Golem-Skin Gauntlets
 image=http://magiccards.info/scans/en/mi/181.jpg
-value=2.500
+value=3.275
 rarity=U
 type=Artifact
 subtype=Equipment

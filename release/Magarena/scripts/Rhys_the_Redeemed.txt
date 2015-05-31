@@ -1,6 +1,6 @@
 name=Rhys the Redeemed
 image=http://magiccards.info/scans/en/shm/237.jpg
-value=2.500
+value=4.116
 rarity=R
 type=Legendary,Creature
 subtype=Elf,Warrior

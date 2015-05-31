@@ -1,6 +1,6 @@
 name=Laccolith Rig
 image=http://magiccards.info/scans/en/ne/88.jpg
-value=2.500
+value=3.574
 rarity=C
 type=Enchantment
 subtype=Aura

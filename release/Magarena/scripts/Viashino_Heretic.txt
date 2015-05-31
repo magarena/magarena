@@ -1,6 +1,6 @@
 name=Viashino Heretic
 image=http://magiccards.info/scans/en/ul/95.jpg
-value=2.500
+value=4.443
 rarity=U
 type=Creature
 subtype=Viashino

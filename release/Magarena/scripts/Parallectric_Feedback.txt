@@ -1,6 +1,6 @@
 name=Parallectric Feedback
 image=http://magiccards.info/scans/en/gp/71.jpg
-value=2.500
+value=3.750
 rarity=R
 type=Instant
 cost={3}{R}

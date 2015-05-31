@@ -1,6 +1,6 @@
 name=Cenn's Heir
 image=http://magiccards.info/scans/en/lw/8.jpg
-value=2.500
+value=3.373
 rarity=C
 type=Creature
 subtype=Kithkin,Soldier

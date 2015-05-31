@@ -1,6 +1,6 @@
 name=War Report
 image=http://magiccards.info/scans/en/nph/26.jpg
-value=2.500
+value=3.106
 rarity=C
 type=Instant
 cost={3}{W}

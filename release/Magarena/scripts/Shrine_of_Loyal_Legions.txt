@@ -1,6 +1,6 @@
 name=Shrine of Loyal Legions
 image=http://magiccards.info/scans/en/md1/5.jpg
-value=2.500
+value=3.167
 rarity=U
 type=Artifact
 cost={2}

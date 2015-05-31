@@ -1,6 +1,6 @@
 name=Skizzik Surger
 image=http://magiccards.info/scans/en/fut/120.jpg
-value=2.500
+value=2.000
 rarity=U
 type=Creature
 subtype=Elemental

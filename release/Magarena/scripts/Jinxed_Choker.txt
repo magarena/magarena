@@ -1,6 +1,6 @@
 name=Jinxed Choker
 image=http://magiccards.info/scans/en/mi/189.jpg
-value=2.500
+value=3.596
 rarity=R
 type=Artifact
 cost={3}

@@ -1,6 +1,6 @@
 name=Knight of New Alara
 image=http://magiccards.info/scans/en/arb/70.jpg
-value=2.500
+value=3.840
 rarity=R
 type=Creature
 subtype=Human,Knight

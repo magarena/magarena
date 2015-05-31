@@ -1,6 +1,6 @@
 name=Academy Elite
 image=http://magiccards.info/scans/en/vma/55.jpg
-value=2.500
+value=3.083
 rarity=R
 type=Creature
 subtype=Human,Wizard
