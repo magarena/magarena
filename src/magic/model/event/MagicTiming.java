@@ -159,7 +159,7 @@ public enum MagicTiming {
             if (timing.getCode().equalsIgnoreCase(code)) {
                 return timing;
             }
-         }
-        return None;
+        }
+        throw new RuntimeException("unknown timing: \"" + code + "\"");
     }
 }
