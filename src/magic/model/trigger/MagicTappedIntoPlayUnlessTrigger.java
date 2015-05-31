@@ -14,6 +14,7 @@ public class MagicTappedIntoPlayUnlessTrigger extends MagicWhenComesIntoPlayTrig
     private final MagicSubType subType2;
 
     public MagicTappedIntoPlayUnlessTrigger(final MagicSubType subType1,final MagicSubType subType2) {
+        super(MagicTrigger.REPLACEMENT);
         this.subType1=subType1;
         this.subType2=subType2;
     }
@@ -34,10 +35,5 @@ public class MagicTappedIntoPlayUnlessTrigger extends MagicWhenComesIntoPlayTrig
     @Override
     public void executeEvent(final MagicGame game, final MagicEvent event) {
         game.doAction(TapAction.Enters(event.getPermanent()));
-    }
-
-    @Override
-    public boolean usesStack() {
-        return false;
     }
 }

@@ -33,7 +33,7 @@ public abstract class MagicTrigger<T> implements MagicEventAction,MagicChangeCar
     }
 
     public boolean usesStack() {
-        return getType().usesStack();
+        return getType() != MagicTriggerType.IfDamageWouldBeDealt && priority > REPLACEMENT;
     }
 
     @Override

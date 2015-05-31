@@ -12,7 +12,9 @@ public class MagicUnleashTrigger extends MagicWhenComesIntoPlayTrigger {
 
     private static final MagicUnleashTrigger INSTANCE = new MagicUnleashTrigger();
 
-    private MagicUnleashTrigger() {}
+    private MagicUnleashTrigger() {
+        super(MagicTrigger.REPLACEMENT);
+    }
 
     public static MagicUnleashTrigger create() {
         return INSTANCE;
@@ -36,9 +38,5 @@ public class MagicUnleashTrigger extends MagicWhenComesIntoPlayTrigger {
                 1
             ));
         }
-    }
-    @Override
-    public boolean usesStack() {
-        return false;
     }
 }

@@ -9,7 +9,7 @@ def drawCards = {
 }
 
 [
-    new MagicWhenComesIntoPlayTrigger() {
+    new MagicWhenComesIntoPlayTrigger(MagicTrigger.REPLACEMENT) {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPayedCost payedCost) {
             final MagicTargetChoice targetChoice=new MagicTargetChoice(
@@ -28,11 +28,6 @@ def drawCards = {
             }
             drawCards(game, permanent);
             return MagicEvent.NONE;
-        }
-
-        @Override
-        public boolean usesStack() {
-            return false;
         }
 
         @Override

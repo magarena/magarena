@@ -43,8 +43,4 @@ public enum MagicTriggerType {
     CannotBeBlocked,        // MagicPermanent
     CantBlock,              // MagicPermanent
     ;
-
-    public boolean usesStack() {
-        return this != IfDamageWouldBeDealt;
-    }
 }

@@ -16,8 +16,9 @@ public class MagicDevourTrigger extends MagicWhenComesIntoPlayTrigger {
 
     private final int amount;
 
-    public MagicDevourTrigger(final int amount) {
-        this.amount = amount;
+    public MagicDevourTrigger(final int aAmount) {
+        super(MagicTrigger.REPLACEMENT);
+        amount = aAmount;
     }
 
     @Override
@@ -33,11 +34,6 @@ public class MagicDevourTrigger extends MagicWhenComesIntoPlayTrigger {
             this,
             "You may$ sacrifice a creature$ to SN."
         );
-    }
-
-    @Override
-    public boolean usesStack() {
-        return false;
     }
 
     @Override

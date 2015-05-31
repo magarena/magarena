@@ -12,8 +12,9 @@ public class MagicBloodthirstTrigger extends MagicWhenComesIntoPlayTrigger {
 
     private final int amount;
 
-    public MagicBloodthirstTrigger(final int amount) {
-        this.amount = amount;
+    public MagicBloodthirstTrigger(final int aAmount) {
+        super(MagicTrigger.REPLACEMENT);
+        amount = aAmount;
     }
 
     @Override
@@ -35,10 +36,6 @@ public class MagicBloodthirstTrigger extends MagicWhenComesIntoPlayTrigger {
             MagicCounterType.PlusOne,
             amount
         ));
-    }
-    @Override
-    public boolean usesStack() {
-        return false;
     }
 }
 

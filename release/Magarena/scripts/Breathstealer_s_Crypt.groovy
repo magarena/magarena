@@ -1,5 +1,5 @@
 [
-    new MagicWhenOtherDrawnTrigger() {
+    new MagicWhenOtherDrawnTrigger(MagicTrigger.REPLACEMENT) {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCard card) {
             return card.hasType(MagicType.Creature) ? 
@@ -19,11 +19,6 @@
             } else {
                 game.doAction(new DiscardCardAction(event.getPlayer(), event.getCard()));
             }
-        }
-
-        @Override
-        public boolean usesStack() {
-            return false;
         }
     }
 ]

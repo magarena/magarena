@@ -12,7 +12,9 @@ public class MagicRavnicaLandTrigger extends MagicWhenComesIntoPlayTrigger {
 
     private static final MagicRavnicaLandTrigger INSTANCE = new MagicRavnicaLandTrigger();
 
-    private MagicRavnicaLandTrigger() {}
+    private MagicRavnicaLandTrigger() {
+        super(MagicTrigger.REPLACEMENT);
+    }
 
     public static MagicRavnicaLandTrigger create() {
         return INSTANCE;
@@ -40,10 +42,5 @@ public class MagicRavnicaLandTrigger extends MagicWhenComesIntoPlayTrigger {
         } else {
             game.doAction(TapAction.Enters(event.getPermanent()));
         }
-    }
-
-    @Override
-    public boolean usesStack() {
-        return false;
     }
 }

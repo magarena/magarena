@@ -11,7 +11,9 @@ public class MagicTappedIntoPlayUnlessTwoTrigger extends MagicWhenComesIntoPlayT
 
     private static final MagicTappedIntoPlayUnlessTwoTrigger INSTANCE = new MagicTappedIntoPlayUnlessTwoTrigger();
 
-    private MagicTappedIntoPlayUnlessTwoTrigger() {}
+    private MagicTappedIntoPlayUnlessTwoTrigger() {
+        super(MagicTrigger.REPLACEMENT);
+    }
 
     public static MagicTappedIntoPlayUnlessTwoTrigger create() {
         return INSTANCE;
@@ -31,10 +33,5 @@ public class MagicTappedIntoPlayUnlessTwoTrigger extends MagicWhenComesIntoPlayT
     @Override
     public void executeEvent(final MagicGame game, final MagicEvent event) {
         game.doAction(TapAction.Enters(event.getPermanent()));
-    }
-
-    @Override
-    public boolean usesStack() {
-        return false;
     }
 }

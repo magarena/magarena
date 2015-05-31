@@ -1,5 +1,5 @@
 [
-    new MagicWhenComesIntoPlayTrigger() {
+    new MagicWhenComesIntoPlayTrigger(MagicTrigger.REPLACEMENT) {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPayedCost payedCost) {
             final MagicTargetChoice targetChoice=new MagicTargetChoice(
@@ -16,11 +16,6 @@
                     "PN may\$ sacrifice a creature\$ to SN."
                 ):
                 MagicEvent.NONE;
-        }
-
-        @Override
-        public boolean usesStack() {
-            return false;
         }
 
         @Override

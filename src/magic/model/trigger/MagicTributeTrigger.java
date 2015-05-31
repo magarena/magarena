@@ -33,6 +33,7 @@ public abstract class MagicTributeTrigger extends MagicWhenComesIntoPlayTrigger 
     };
 
     public MagicTributeTrigger(final int aAmt) {
+        super(MagicTrigger.REPLACEMENT);
         amt = aAmt;
     }
     
@@ -55,11 +56,6 @@ public abstract class MagicTributeTrigger extends MagicWhenComesIntoPlayTrigger 
             action,
             "PN may$ put RN +1/+1 counters on SN."
         );
-    }
-
-    @Override
-    public boolean usesStack() {
-        return false;
     }
     
     public abstract MagicEvent getEvent(final MagicPermanent permanent);
