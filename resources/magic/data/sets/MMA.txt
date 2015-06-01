@@ -1,0 +1,229 @@
+Æther Spellbomb
+Æther Vial
+Æthersnipe
+Absorb Vis
+Academy Ruins
+Adarkar Valkyrie
+Amrou Scout
+Amrou Seekers
+Angel's Grace
+Arcbound Ravager
+Arcbound Stinger
+Arcbound Wanderer
+Arcbound Worker
+Auntie's Snitch
+Auriok Salvagers
+Avian Changeling
+Blightspeaker
+Blind-Spot Giant
+Blinding Beam
+Blinkmoth Nexus
+Blood Moon
+Bonesplitter
+Bound in Silence
+Bridge from Below
+Brute Force
+Careful Consideration
+Cenn's Enlistment
+Chalice of the Void
+Citanul Woodreaders
+City of Brass
+Cloudgoat Ranger
+Cold-Eyed Selkie
+Countryside Crusher
+Court Homunculus
+Crush Underfoot
+Cryptic Command
+Dakmor Salvage
+Dampen Thought
+Dark Confidant
+Death Cloud
+Death Denied
+Death Rattle
+Deepcavern Imp
+Demigod of Revenge
+Desperate Ritual
+Dispeller's Capsule
+Divinity of Pride
+Doubling Season
+Drag Down
+Dragonstorm
+Dreamspoiler Witches
+Durkwood Baloth
+Earwig Squad
+Echoing Courage
+Echoing Truth
+Electrolyze
+Elspeth, Knight-Errant
+Empty the Warrens
+Engineered Explosives
+Epochrasite
+Errant Ephemeron
+Erratic Mutation
+Esperzoa
+Etched Oracle
+Eternal Witness
+Etherium Sculptor
+Ethersworn Canonist
+Executioner's Capsule
+Extirpate
+Facevaulter
+Faerie Macabre
+Faerie Mechanist
+Festering Goblin
+Feudkiller's Verdict
+Fiery Fall
+Figure of Destiny
+Flickerwisp
+Frogmite
+Fury Charm
+Giant Dustwasp
+Gifts Ungiven
+Glacial Ray
+Gleam of Resistance
+Glen Elendra Archmage
+Glimmervoid
+Grand Arbiter Augustin IV
+Grapeshot
+Greater Gargadon
+Greater Mossdog
+Grinning Ignus
+Hammerheim Deadeye
+Hana Kami
+Hillcomber Giant
+Horobi's Whisper
+Imperiosaur
+Incremental Growth
+Ivory Giant
+Jhoira of the Ghitu
+Jugan, the Rising Star
+Kataki, War's Wage
+Keiga, the Tide Star
+Kiki-Jiki, Mirror Breaker
+Kira, Great Glass-Spinner
+Kitchen Finks
+Kithkin Greatheart
+Knight of the Reliquary
+Kodama's Reach
+Kokusho, the Evening Star
+Krosan Grip
+Latchkey Faerie
+Lava Spike
+Life from the Loam
+Lightning Helix
+Logic Knot
+Lotus Bloom
+Mad Auntie
+Maelstrom Pulse
+Manamorphose
+Marsh Flitter
+Masked Admirers
+Meadowboon
+Meloku the Clouded Mirror
+Mind Funeral
+Mogg War Marshal
+Moldervine Cloak
+Molten Disaster
+Mothdust Changeling
+Mulldrifter
+Murderous Redcap
+Myr Enforcer
+Myr Retriever
+Nantuko Shaman
+Narcomoeba
+Oona, Queen of the Fae
+Otherworldly Journey
+Pact of Negation
+Pallid Mycoderm
+Paradise Mantle
+Pardic Dragon
+Path to Exile
+Peer Through Depths
+Penumbra Spider
+Peppersmoke
+Perilous Research
+Pestermite
+Petals of Insight
+Phthisis
+Plumeveil
+Progenitus
+Pyrite Spellbomb
+Pyromancer's Swath
+Rathi Trapper
+Raven's Crime
+Reach Through Mists
+Reach of Branches
+Relic of Progenitus
+Reveillark
+Rift Bolt
+Rift Elemental
+Riftsweeper
+Riftwing Cloudskate
+Rude Awakening
+Runed Stalactite
+Ryusei, the Falling Star
+Saltfield Recluse
+Sanctum Gargoyle
+Sandsower
+Sarkhan Vol
+Scion of Oona
+Search for Tomorrow
+Shrapnel Blast
+Skeletal Vampire
+Skyreach Manta
+Slaughter Pact
+Spell Snare
+Spellstutter Sprite
+Sporesower Thallid
+Sporoloth Ancient
+Squee, Goblin Nabob
+Stingscourger
+Stinkdrinker Daredevil
+Stinkweed Imp
+Stir the Pride
+Stonehewer Giant
+Street Wraith
+Sudden Shock
+Summoner's Pact
+Sword of Fire and Ice
+Sword of Light and Shadow
+Sylvan Bounty
+Syphon Life
+Take Possession
+Tar Pitcher
+Tarmogoyf
+Terashi's Grasp
+Terramorphic Expanse
+Test of Faith
+Thallid
+Thallid Germinator
+Thallid Shell-Dweller
+Thieving Sprite
+Thirst for Knowledge
+Thundercloud Shaman
+Thundering Giant
+Tidehollow Sculler
+Tombstalker
+Tooth and Nail
+Torrent of Stone
+Traumatic Visions
+Tribal Flames
+Tromp the Domains
+Trygon Predator
+Vedalken Dismisser
+Vedalken Shackles
+Vendilion Clique
+Verdeloth the Ancient
+Veteran Armorer
+Vivid Crag
+Vivid Creek
+Vivid Grove
+Vivid Marsh
+Vivid Meadow
+Walker of the Grove
+War-Spike Changeling
+Warren Pilferers
+Warren Weirding
+Woodfall Primus
+Worm Harvest
+Yosei, the Morning Star

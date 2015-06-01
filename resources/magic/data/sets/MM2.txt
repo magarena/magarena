@@ -1,0 +1,249 @@
+Æthersnipe
+Agony Warp
+Air Servant
+Algae Gharial
+All Is Dust
+All Suns' Dawn
+Alloy Myr
+Ant Queen
+Apocalypse Hydra
+Apostle's Blessing
+Aquastrand Spider
+Argent Sphinx
+Arrest
+Artisan of Kozilek
+Ashenmoor Gouger
+Azorius Chancery
+Banefire
+Battlegrace Angel
+Bestial Menace
+Bitterblossom
+Blades of Velis Vel
+Blinding Souleater
+Blinkmoth Nexus
+Blood Ogre
+Bloodshot Trainee
+Bloodthrone Vampire
+Bone Splinters
+Boros Garrison
+Boros Swiftblade
+Brute Force
+Burst Lightning
+Cathodion
+Celestial Purge
+Chimeric Mass
+Cloud Elemental
+Combust
+Comet Storm
+Commune with Nature
+Conclave Phalanx
+Copper Carapace
+Court Homunculus
+Cranial Plating
+Creakwood Liege
+Cryptic Command
+Culling Dais
+Cytoplast Root-Kin
+Daggerclaw Imp
+Dark Confidant
+Darksteel Axe
+Darksteel Citadel
+Daybreak Coronet
+Death Denied
+Deathmark
+Devouring Greed
+Dimir Aqueduct
+Dimir Guildmage
+Dismember
+Dispatch
+Dragonsoul Knight
+Dread Drone
+Drooling Groodion
+Duskhunter Bat
+Eldrazi Temple
+Electrolyze
+Elesh Norn, Grand Cenobite
+Emrakul, the Aeons Torn
+Endrek Sahr, Master Breeder
+Etched Champion
+Etched Monstrosity
+Etched Oracle
+Ethercaste Knight
+Everflowing Chalice
+Evolving Wilds
+Expedition Map
+Eye of Ugin
+Faerie Mechanist
+Fiery Fall
+Flashfreeze
+Flayer Husk
+Fortify
+Frogmite
+Fulminator Mage
+Ghost Council of Orzhova
+Ghostly Changeling
+Glassdust Hulk
+Glint Hawk Idol
+Gnarlid Pack
+Goblin Fireslinger
+Goblin War Paint
+Golgari Rot Farm
+Gorehorn Minotaurs
+Grim Affliction
+Gruul Turf
+Guile
+Gust-Skimmer
+Gut Shot
+Hearthfire Hobgoblin
+Helium Squirter
+Hellkite Charger
+Hikari, Twilight Guardian
+Horde of Notions
+Hurkyl's Recall
+Incandescent Soulstoke
+Indomitable Archangel
+Inexorable Tide
+Inner-Flame Igniter
+Instill Infection
+Iona, Shield of Emeria
+Izzet Boilerworks
+Kami of Ancient Law
+Karn Liberated
+Karplusan Strider
+Kavu Primarch
+Kiki-Jiki, Mirror Breaker
+Kitesail
+Kor Duelist
+Kozilek's Predator
+Kozilek, Butcher of Truth
+Leyline of Sanctity
+Lightning Bolt
+Lodestone Golem
+Lodestone Myr
+Long-Forgotten Gohei
+Lorescale Coatl
+Mana Leak
+Matca Rioters
+Midnight Banshee
+Mighty Leap
+Mirran Crusader
+Mirror Entity
+Moonlit Strider
+Mortarpod
+Mox Opal
+Mulldrifter
+Mutagenic Growth
+Myr Enforcer
+Myrsmith
+Mystic Snake
+Nameless Inversion
+Narcolepsy
+Necrogenesis
+Necroskitter
+Nest Invader
+Niv-Mizzet, the Firemind
+Nobilis of War
+Noble Hierarch
+Novijen Sages
+Oblivion Ring
+Orzhov Basilica
+Otherworldly Journey
+Overwhelm
+Overwhelming Stampede
+Pelakka Wurm
+Pillory of the Sleepless
+Plagued Rusalka
+Plaxcaster Frogling
+Plummet
+Precursor Golem
+Primeval Titan
+Profane Command
+Puppeteer Clique
+Qumulox
+Raise the Alarm
+Rakdos Carnarium
+Rampant Growth
+Reassembling Skeleton
+Remand
+Repeal
+Restless Apparition
+Root-Kin Ally
+Runed Servitor
+Rusted Relic
+Savage Twister
+Scatter the Seeds
+Scavenger Drake
+Scion of the Wild
+Scute Mob
+Scuttling Death
+Selesnya Guildmage
+Selesnya Sanctuary
+Shadowmage Infiltrator
+Shrewd Hatchling
+Shrivel
+Sickle Ripper
+Sickleslicer
+Sigil Blessing
+Sign in Blood
+Simic Growth Chamber
+Simic Initiate
+Skarrgan Firebird
+Skyhunter Skirmisher
+Skyreach Manta
+Smash to Smithereens
+Smokebraider
+Somber Hoverguard
+Soulbright Flamekin
+Spectral Procession
+Spellskite
+Sphere of the Suns
+Spikeshot Elder
+Spitebellows
+Splinter Twin
+Spread the Sickness
+Steady Progress
+Stoic Rebuttal
+Stormblood Berserker
+Sundering Vitae
+Sunforger
+Sunlance
+Sunspear Shikari
+Surgical Extraction
+Surrakar Spellblade
+Swans of Bryn Argoll
+Sylvan Bounty
+Taj-Nar Swordsmith
+Tarmogoyf
+Telling Time
+Terashi's Grasp
+Tezzeret the Seeker
+Tezzeret's Gambit
+Thief of Hope
+Thoughtcast
+Thrive
+Thrummingbird
+Thunderblust
+Tribal Flames
+Tukatongue Thallid
+Tumble Magnet
+Ulamog's Crusher
+Ulamog, the Infinite Gyre
+Vampire Lacerator
+Vampire Outcasts
+Vapor Snag
+Vendilion Clique
+Vengeful Rebirth
+Viashino Slaughtermaster
+Vigean Graftmage
+Vines of Vastwood
+Waking Nightmare
+Water Servant
+Waxmane Baku
+Wayfarer's Bauble
+Wildfire
+Wilt-Leaf Liege
+Wings of Velis Vel
+Wolfbriar Elemental
+Worldheart Phoenix
+Wrap in Flames
+Wrecking Ball
