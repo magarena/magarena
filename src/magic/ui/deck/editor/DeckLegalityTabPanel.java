@@ -102,7 +102,7 @@ class DeckLegalityTabPanel extends JPanel {
             add(getIconLabel(MagicIcon.ILLEGAL_ICON, "Illegal"));
             add(getIconLabel(MagicIcon.BANNED_ICON, "Banned"));
             add(getIconLabel(MagicIcon.RESTRICTED_ICON, "Restricted", "Only one copy of a card allowed in the deck."));
-            add(getIconLabel(MagicIcon.RESTRICTED_ICON, "Copies exceeded", "<html>Does not apply to basic lands,<br><i>Relentless Rats</i> or <i>Shadowborn Apostle</i>.</html>"));
+            add(getIconLabel(MagicIcon.RESTRICTED_ICON, "Too many copies", "<html><b>Too many copies of a card in deck</b><br>Does not apply to basic lands,<br><i>Relentless Rats</i> or <i>Shadowborn Apostle</i>.</html>"));
         }
 
         private JLabel getIconLabel(MagicIcon magicIcon, String text, String tooltip) {
