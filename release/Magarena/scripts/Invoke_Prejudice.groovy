@@ -22,13 +22,14 @@
             return (cardOnStack.hasType(MagicType.Creature) && cardOnStack.isEnemy(permanent) && hasColor == false) ?
                 new MagicEvent(
                     permanent,
+                    cardOnStack.getController(),
                     new MagicMayChoice(
                         "Pay {"+amount+"}?",
                         new MagicPayManaCostChoice(MagicManaCost.create("{"+amount+"}"))
                     ),
                     cardOnStack,
                     this,
-                    "Counter RN spell unless that player pays {X}, where X is its converted mana cost. (X=${amount})"
+                    "Counter RN unless PN pays {X}, where X is its converted mana cost. (X=${amount})"
                 ):
                 MagicEvent.NONE;
         }
