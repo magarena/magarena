@@ -1,6 +1,6 @@
 package magic.ui.screen;
 
-import magic.data.FileIO;
+import magic.utility.FileIO;
 import magic.ui.screen.interfaces.IActionBar;
 import magic.ui.screen.widget.MenuButton;
 import magic.ui.widget.FontsAndBorders;

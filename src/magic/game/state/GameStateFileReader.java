@@ -4,7 +4,7 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
-import magic.data.FileIO;
+import magic.utility.FileIO;
 import magic.utility.MagicFileSystem;
 
 public final class GameStateFileReader {

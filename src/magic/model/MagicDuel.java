@@ -9,10 +9,11 @@ import java.util.Enumeration;
 import java.util.Properties;
 import java.util.TreeSet;
 import magic.data.DeckGenerators;
-import magic.data.DeckUtils;
+import magic.utility.DeckUtils;
 import magic.data.DuelConfig;
 import magic.model.phase.MagicDefaultGameplay;
 import magic.model.player.PlayerProfile;
+import magic.utility.FileIO;
 import magic.utility.MagicFileSystem.DataPath;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicSystem;
@@ -205,7 +206,7 @@ public class MagicDuel {
         final Properties properties = getNewSortedProperties();
         save(properties);
         try {
-            magic.data.FileIO.toFile(file, properties, "Duel");
+            FileIO.toFile(file, properties, "Duel");
         } catch (final IOException ex) {
             System.err.println("ERROR! Unable save duel to " + file);
         }
@@ -231,7 +232,7 @@ public class MagicDuel {
     }
 
     public void load(final File file) {
-        load(magic.data.FileIO.toProp(file));
+        load(FileIO.toProp(file));
     }
 
     public void restart() {

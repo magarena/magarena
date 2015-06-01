@@ -4,7 +4,7 @@ import java.io.File;
 
 import magic.headless.HeadlessGameController;
 import magic.ai.MagicAIImpl;
-import magic.data.DeckUtils;
+import magic.utility.DeckUtils;
 import magic.data.DuelConfig;
 import magic.model.MagicDuel;
 import magic.model.MagicGame;

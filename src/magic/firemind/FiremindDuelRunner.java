@@ -12,7 +12,7 @@ import java.util.regex.Pattern;
 
 import magic.ai.MagicAIImpl;
 import magic.data.CardDefinitions;
-import magic.data.DeckUtils;
+import magic.utility.DeckUtils;
 import magic.data.DuelConfig;
 import magic.data.GeneralConfig;
 import magic.headless.HeadlessGameController;

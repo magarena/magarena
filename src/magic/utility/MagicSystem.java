@@ -1,7 +1,6 @@
 package magic.utility;
 
 import magic.data.DeckGenerators;
-import magic.data.DeckUtils;
 import magic.data.KeywordDefinitions;
 import magic.data.CubeDefinitions;
 import magic.data.CardDefinitions;

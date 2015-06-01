@@ -1,6 +1,6 @@
 package magic.model.player;
 
-import magic.data.FileIO;
+import magic.utility.FileIO;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicColor;
 import magic.model.MagicDeck;

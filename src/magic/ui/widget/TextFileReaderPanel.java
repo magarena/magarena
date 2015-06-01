@@ -7,7 +7,7 @@ import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.SwingUtilities;
 
-import magic.data.FileIO;
+import magic.utility.FileIO;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")

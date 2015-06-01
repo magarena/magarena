@@ -6,7 +6,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.Properties;
 import java.util.UUID;
-import magic.data.FileIO;
+import magic.utility.FileIO;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicFileSystem.DataPath;
 

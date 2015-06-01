@@ -1,7 +1,7 @@
 package magic.ui.duel.viewer;
 
-import magic.data.FileIO;
 
+import magic.utility.FileIO;
 import javax.swing.JComponent;
 import javax.swing.JFileChooser;
 import javax.swing.JScrollPane;

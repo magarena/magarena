@@ -1,5 +1,6 @@
 package magic.data;
 
+import magic.utility.FileIO;
 import java.io.File;
 import java.util.Properties;
 import magic.model.MagicDeckProfile;

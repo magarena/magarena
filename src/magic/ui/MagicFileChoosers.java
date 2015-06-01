@@ -7,7 +7,7 @@ import java.nio.file.Path;
 import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
 import javax.swing.filechooser.FileFilter;
-import static magic.data.DeckUtils.DECK_EXTENSION;
+import static magic.utility.DeckUtils.DECK_EXTENSION;
 import magic.utility.MagicFileSystem;
 
 public class MagicFileChoosers {

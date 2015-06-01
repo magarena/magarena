@@ -1,5 +1,6 @@
 package magic.data;
 
+import magic.utility.FileIO;
 import java.awt.Color;
 import java.io.File;
 import java.io.IOException;

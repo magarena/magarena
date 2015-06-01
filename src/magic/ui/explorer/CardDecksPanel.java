@@ -23,13 +23,13 @@ import javax.swing.ScrollPaneConstants;
 import javax.swing.SwingUtilities;
 import javax.swing.SwingWorker;
 import javax.swing.Timer;
-import magic.data.DeckUtils;
+import magic.utility.DeckUtils;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
 import magic.ui.ScreenController;
 import net.miginfocom.swing.MigLayout;
-import static magic.data.DeckUtils.DECK_EXTENSION;
-import static magic.data.DeckUtils.getDeckFolder;
+import static magic.utility.DeckUtils.DECK_EXTENSION;
+import static magic.utility.DeckUtils.getDeckFolder;
 import magic.ui.widget.FontsAndBorders;
 import magic.utility.MagicSystem;
 

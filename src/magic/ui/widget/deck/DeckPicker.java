@@ -28,7 +28,7 @@ import javax.swing.SwingUtilities;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 import magic.data.DeckType;
-import magic.data.DeckUtils;
+import magic.utility.DeckUtils;
 import magic.exception.InvalidDeckException;
 import magic.firemind.FiremindJsonReader;
 import magic.model.MagicDeck;

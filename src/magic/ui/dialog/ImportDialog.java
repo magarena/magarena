@@ -34,7 +34,7 @@ import javax.swing.SwingWorker;
 import magic.data.CardDefinitions;
 import magic.data.DownloadableFile;
 import magic.data.DuelConfig;
-import magic.data.FileIO;
+import magic.utility.FileIO;
 import magic.data.GeneralConfig;
 import magic.model.MagicCardDefinition;
 import magic.model.player.PlayerProfiles;

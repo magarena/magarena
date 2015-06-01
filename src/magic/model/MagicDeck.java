@@ -1,7 +1,7 @@
 package magic.model;
 
 import java.util.ArrayList;
-import magic.data.DeckUtils;
+import magic.utility.DeckUtils;
 
 @SuppressWarnings("serial")
 public class MagicDeck extends ArrayList<MagicCardDefinition> {

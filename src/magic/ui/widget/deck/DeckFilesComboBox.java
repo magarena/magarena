@@ -1,7 +1,7 @@
 package magic.ui.widget.deck;
 
-import magic.data.DeckUtils;
 
+import magic.utility.DeckUtils;
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.JComboBox;
 

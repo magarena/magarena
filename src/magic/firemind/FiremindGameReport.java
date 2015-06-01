@@ -1,6 +1,6 @@
 package magic.firemind;
 
-import magic.data.FileIO;
+import magic.utility.FileIO;
 import magic.model.action.MagicAction;
 import magic.model.stack.MagicItemOnStack;
 import magic.utility.MagicFileSystem;

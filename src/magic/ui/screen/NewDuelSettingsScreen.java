@@ -8,7 +8,7 @@ import java.util.List;
 import javax.swing.AbstractAction;
 import javax.swing.JPanel;
 import magic.data.DeckType;
-import magic.data.DeckUtils;
+import magic.utility.DeckUtils;
 import magic.data.DuelConfig;
 import magic.exception.InvalidDeckException;
 import magic.model.MagicCubeDefinition;

@@ -1,5 +1,6 @@
-package magic.data;
+package magic.utility;
 
+import magic.utility.FileIO;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
@@ -14,6 +15,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.SortedMap;
 import java.util.TreeMap;
+import magic.data.CardDefinitions;
+import magic.data.GeneralConfig;
 import magic.exception.InvalidDeckException;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicColor;
@@ -100,7 +103,7 @@ public class DeckUtils {
             System.err.println("Invalid deck : " + deck.getFilename() + " - " + ex.getMessage());
         } finally {
             if (writer != null) {
-                magic.data.FileIO.close(writer);
+                magic.utility.FileIO.close(writer);
             }
         }
 

@@ -3,7 +3,6 @@ package magic.utility;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
-import magic.data.FileIO;
 import magic.data.MagicFormats;
 import magic.data.MagicSets;
 

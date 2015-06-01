@@ -1,5 +1,7 @@
 package magic.data;
 
+import magic.utility.DeckUtils;
+import magic.utility.FileIO;
 import magic.generator.RandomDeckGenerator;
 import magic.model.MagicCubeDefinition;
 

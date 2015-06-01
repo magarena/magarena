@@ -11,7 +11,7 @@ import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import magic.data.DeckType;
-import magic.data.DeckUtils;
+import magic.utility.DeckUtils;
 import magic.data.GeneralConfig;
 import magic.data.MagicIcon;
 import magic.ui.IconImages;
