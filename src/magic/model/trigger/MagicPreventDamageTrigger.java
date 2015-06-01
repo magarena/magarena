@@ -14,17 +14,17 @@ public abstract class MagicPreventDamageTrigger extends MagicIfDamageWouldBeDeal
     public MagicPreventDamageTrigger() {
         super(MagicTrigger.PREVENT_DAMAGE);
     }
-    
+
     @Override
     public boolean accept(final MagicPermanent permanent, final MagicDamage damage) {
         return damage.getAmount() > 0 && damage.isUnpreventable() == false;
     }
-    
+
     public static final MagicPreventDamageTrigger GlobalPreventDamageToTarget = new MagicPreventDamageTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
             final MagicTarget target = damage.getTarget();
-           
+
             // Protection from source reduces damage to 0
             if (target.isPermanent()) {
                 final MagicPermanent targetPermanent = (MagicPermanent)target;
@@ -43,7 +43,7 @@ public abstract class MagicPreventDamageTrigger extends MagicIfDamageWouldBeDeal
             return MagicEvent.NONE;
         }
     };
-    
+
     public static final MagicPreventDamageTrigger PreventCombatDamageDealtToDealtBy = new MagicPreventDamageTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
@@ -53,7 +53,7 @@ public abstract class MagicPreventDamageTrigger extends MagicIfDamageWouldBeDeal
             return MagicEvent.NONE;
         }
     };
-    
+
     public static final MagicPreventDamageTrigger PreventCombatDamageDealtTo = new MagicPreventDamageTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
@@ -63,7 +63,7 @@ public abstract class MagicPreventDamageTrigger extends MagicIfDamageWouldBeDeal
             return MagicEvent.NONE;
         }
     };
-    
+
     public static final MagicPreventDamageTrigger PreventCombatDamageDealtBy = new MagicPreventDamageTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
@@ -73,7 +73,7 @@ public abstract class MagicPreventDamageTrigger extends MagicIfDamageWouldBeDeal
             return MagicEvent.NONE;
         }
     };
-    
+
     public static final MagicPreventDamageTrigger PreventDamageDealtTo = new MagicPreventDamageTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
@@ -83,7 +83,17 @@ public abstract class MagicPreventDamageTrigger extends MagicIfDamageWouldBeDeal
             return MagicEvent.NONE;
         }
     };
-    
+
+    public static final MagicPreventDamageTrigger PreventDamageDealtBy = new MagicPreventDamageTrigger() {
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
+            if (damage.isSource(permanent)) {
+                damage.prevent();
+            }
+            return MagicEvent.NONE;
+        }
+    };
+
     public static final MagicPreventDamageTrigger PreventCombatDamage = new MagicPreventDamageTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
@@ -93,7 +103,7 @@ public abstract class MagicPreventDamageTrigger extends MagicIfDamageWouldBeDeal
             return MagicEvent.NONE;
         }
     };
-    
+
     // prevent all damage that would be dealt to you or creatures you control this turn
     public static final MagicPreventDamageTrigger PreventDamageDealtToYouOrCreaturesYouControl(final MagicPlayer player) {
         return new MagicPreventDamageTrigger() {
@@ -106,13 +116,13 @@ public abstract class MagicPreventDamageTrigger extends MagicIfDamageWouldBeDeal
             }
         };
     }
-    
+
     // prevent all combat damage that would be dealt to you or creatures you control this turn
     public static final MagicPreventDamageTrigger PreventCombatDamageDealtToYouOrCreaturesYouControl(final MagicPlayer player) {
         return new MagicPreventDamageTrigger() {
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
-                if (damage.isCombat() && 
+                if (damage.isCombat() &&
                     damage.getTarget().getController().getId() == player.getId()) {
                     damage.prevent();
                 }
@@ -120,13 +130,13 @@ public abstract class MagicPreventDamageTrigger extends MagicIfDamageWouldBeDeal
             }
         };
     }
-    
+
     // prevent all damage that would be dealt to you
     public static final MagicPreventDamageTrigger PreventDamageDealtToYou(final MagicPlayer player) {
         return new MagicPreventDamageTrigger() {
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
-                if (damage.getTarget().isPlayer() && 
+                if (damage.getTarget().isPlayer() &&
                     damage.getTarget().getController().getId() == player.getId()) {
                     damage.prevent();
                 }
@@ -134,14 +144,14 @@ public abstract class MagicPreventDamageTrigger extends MagicIfDamageWouldBeDeal
             }
         };
     }
-    
+
     // prevent all combat damage that would be dealt to you
     public static final MagicPreventDamageTrigger PreventCombatDamageDealtToYou(final MagicPlayer player) {
         return new MagicPreventDamageTrigger() {
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
-                if (damage.isCombat() && 
-                    damage.getTarget().isPlayer() && 
+                if (damage.isCombat() &&
+                    damage.getTarget().isPlayer() &&
                     damage.getTarget().getController().getId() == player.getId()) {
                     damage.prevent();
                 }
@@ -149,14 +159,14 @@ public abstract class MagicPreventDamageTrigger extends MagicIfDamageWouldBeDeal
             }
         };
     }
-    
+
     // prevent all damage that would be dealt to [permanent]
     public static final MagicPreventDamageTrigger PreventDamageDealtTo(final MagicTargetFilter<MagicTarget> filter) {
         return new MagicPreventDamageTrigger() {
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
-                if ((damage.isTargetCreature() && 
-                     filter.acceptType(MagicTargetType.Permanent) && 
+                if ((damage.isTargetCreature() &&
+                     filter.acceptType(MagicTargetType.Permanent) &&
                      filter.accept(permanent, permanent.getController(), damage.getTargetPermanent())) ||
                     (damage.isTargetPlayer() &&
                      filter.acceptType(MagicTargetType.Player) &&
@@ -168,14 +178,14 @@ public abstract class MagicPreventDamageTrigger extends MagicIfDamageWouldBeDeal
             }
         };
     }
-    
+
     // prevent all combat damage that would be dealt to [permanent]
     public static final MagicPreventDamageTrigger PreventCombatDamageDealtTo(final MagicTargetFilter<MagicTarget> filter) {
         return new MagicPreventDamageTrigger() {
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
-                if ((damage.isTargetCreature() && 
-                     filter.acceptType(MagicTargetType.Permanent) && 
+                if ((damage.isTargetCreature() &&
+                     filter.acceptType(MagicTargetType.Permanent) &&
                      filter.accept(permanent, permanent.getController(), damage.getTargetPermanent())) ||
                     (damage.isTargetPlayer() &&
                      filter.acceptType(MagicTargetType.Player) &&
@@ -195,8 +205,8 @@ public abstract class MagicPreventDamageTrigger extends MagicIfDamageWouldBeDeal
         return new MagicPreventDamageTrigger() {
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
-                if ((damage.isTargetCreature() && 
-                     filter.acceptType(MagicTargetType.Permanent) && 
+                if ((damage.isTargetCreature() &&
+                     filter.acceptType(MagicTargetType.Permanent) &&
                      filter.accept(permanent, permanent.getController(), damage.getTargetPermanent())) ||
                     (damage.isTargetPlayer() &&
                      filter.acceptType(MagicTargetType.Player) &&
