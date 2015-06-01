@@ -92,7 +92,7 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
                 (source == target && source.isPaired());
         }
     }
-    
+
     public static MagicStatic genPTStatic(final MagicTargetFilter<MagicPermanent> affected, final MagicAmount count, final MagicPowerToughness given) {
         return new MagicStatic(MagicLayer.ModPT, affected) {
             @Override
@@ -102,7 +102,7 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
             }
         };
     }
-    
+
     public static MagicStatic genPTStatic(final MagicTargetFilter<MagicPermanent> affected, final int givenPower, final int givenToughness) {
         return new MagicStatic(MagicLayer.ModPT, affected) {
             @Override
@@ -111,7 +111,7 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
             }
         };
     }
-    
+
     public static MagicStatic genPTStatic(final MagicCondition condition, final int givenPower, final int givenToughness) {
         return new MagicStatic(MagicLayer.Game) {
             @Override
@@ -124,7 +124,7 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
             }
         };
     }
-    
+
     public static MagicStatic genPTStatic(final MagicCondition condition, final MagicTargetFilter<MagicPermanent> filter, final int givenPower, final int givenToughness) {
         return new MagicStatic(MagicLayer.Game, filter) {
             @Override
@@ -150,7 +150,7 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
             }
         };
     }
-    
+
     public static MagicStatic genPTSetStatic(final int givenPower, final int givenToughness) {
         return new MagicStatic(MagicLayer.SetPT) {
             @Override
@@ -163,7 +163,7 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
             }
         };
     }
-    
+
     public static MagicStatic genABStatic(final MagicTargetFilter<MagicPermanent> filter, final MagicAbilityList abilityList) {
         return new MagicStatic(MagicLayer.Ability, filter) {
             @Override
@@ -172,7 +172,7 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
             }
         };
     }
-    
+
     public static MagicStatic genABStatic(final MagicCondition condition, final MagicTargetFilter<MagicPermanent> filter, final MagicAbilityList abilityList) {
         return new MagicStatic(MagicLayer.Game, filter) {
             @Override
@@ -185,7 +185,7 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
             }
         };
     }
-    
+
     public static MagicStatic genABStatic(final MagicCondition condition, final MagicAbilityList abilityList) {
         return new MagicStatic(MagicLayer.Game) {
             @Override
@@ -198,7 +198,7 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
             }
         };
     }
-    
+
     public static MagicStatic linkedABStatic(final MagicCondition condition, final MagicAbilityList abilityList) {
         return new MagicStatic(MagicLayer.Ability) {
             @Override
@@ -211,7 +211,7 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
             }
         };
     }
-    
+
     public static MagicStatic linkedABStatic(final MagicAbilityList abilityList) {
         return new MagicStatic(MagicLayer.Ability) {
             @Override
@@ -224,7 +224,7 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
             }
         };
     }
-    
+
     public static MagicStatic genABGameStatic(final MagicTargetFilter<MagicPermanent> filter, final MagicAbilityList abilityList) {
         return new MagicStatic(MagicLayer.Game, filter) {
             @Override
@@ -233,7 +233,7 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
             }
         };
     }
-    
+
     public static MagicStatic genTypeStatic(final int givenTypeFlags) {
         return new MagicStatic(MagicLayer.Type) {
             @Override
@@ -317,6 +317,26 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
         };
     }
 
+    public static MagicStatic ControlAsLongAsYouControlSourceAndSourceIsTapped(final MagicPlayer you, final MagicPermanent target) {
+        final MagicTargetFilter<MagicPermanent> filter = new MagicPermanentTargetFilter(target);
+        return new MagicStatic(MagicLayer.Control,filter) {
+            @Override
+            public MagicPlayer getController(final MagicPermanent source, final MagicPermanent permanent, final MagicPlayer player) {
+                return source.getController();
+            }
+            @Override
+            public boolean condition(final MagicGame game, final MagicPermanent source, final MagicPermanent target) {
+                if (you.getIndex() != source.getController().getIndex() || source.isUntapped()) {
+                    //remove this static after the update
+                    game.addDelayedAction(new RemoveStaticAction(source, this));
+                    return false;
+                } else {
+                    return true;
+                }
+            }
+        };
+    }
+
     public static MagicStatic Unleash = new MagicStatic(MagicLayer.Ability) {
         @Override
         public void modAbilityFlags(final MagicPermanent source, final MagicPermanent permanent, final Set<MagicAbility> flags) {
@@ -334,14 +354,14 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
             pt.set(pt.toughness(),pt.power());
         }
     };
-    
+
     public static MagicStatic Zombie = new MagicStatic(MagicLayer.Type) {
         @Override
         public void modSubTypeFlags(final MagicPermanent permanent,final Set<MagicSubType> flags) {
             flags.add(MagicSubType.Zombie);
         }
     };
-    
+
     public static MagicStatic Vampire = new MagicStatic(MagicLayer.Type) {
         @Override
         public void modSubTypeFlags(final MagicPermanent permanent,final Set<MagicSubType> flags) {
@@ -355,28 +375,28 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
             return MagicColor.Black.getMask();
         }
     };
-    
+
     public static MagicStatic AddBlack = new MagicStatic(MagicLayer.Color) {
         @Override
         public int getColorFlags(final MagicPermanent permanent,final int flags) {
             return flags | MagicColor.Black.getMask();
         }
     };
-    
+
     public static MagicStatic Artifact = new MagicStatic(MagicLayer.Type) {
         @Override
         public int getTypeFlags(final MagicPermanent permanent,final int flags) {
             return flags | MagicType.Artifact.getMask();
         }
     };
-            
+
     public static MagicStatic AllCreatureTypesUntilEOT = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
         @Override
         public void modSubTypeFlags(final MagicPermanent permanent, final Set<MagicSubType> flags) {
             flags.addAll(MagicSubType.ALL_CREATURES);
         }
     };
-    
+
     public static MagicStatic Bestowed = new MagicStatic(MagicLayer.Type) {
         @Override
         public int getTypeFlags(final MagicPermanent permanent,final int flags) {
@@ -398,7 +418,7 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
             flags.add(MagicSubType.Nightmare);
         }
     };
-    
+
     public static MagicStatic AsLongAsCond(final MagicPermanent chosen, final int P, final int T, final MagicCondition cond) {
         final long id = chosen.getId();
         return new MagicStatic(MagicLayer.ModPT) {
@@ -422,7 +442,7 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
             }
         };
     }
-    
+
     public static MagicStatic AsLongAsCond(final MagicPermanent chosen, final MagicAbility ability, final MagicCondition cond) {
         final long id = chosen.getId();
         return new MagicStatic(MagicLayer.Ability) {
