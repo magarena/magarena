@@ -6,6 +6,6 @@ type=Creature
 subtype=Goblin
 cost={R}
 pt=2/1
-ability=Whenever SN blocks or becomes blocked, target opponent gains control of it.
 timing=main
+requires_groovy_code
 oracle=Whenever Goblin Cadets blocks or becomes blocked, target opponent gains control of it.
