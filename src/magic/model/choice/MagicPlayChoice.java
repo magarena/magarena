@@ -133,10 +133,12 @@ public class MagicPlayChoice extends MagicChoice {
         }
 
         if (game.shouldSkip()) {
-            if (game.getStack().isEmpty() && player.getOpponent().getNrOfAttackers() == 0) {
-                return PASS_CHOICE_RESULTS;
-            } else {
+            if (game.getStack().isEmpty() == false) {
                 game.clearSkipTurnTill();
+            } else if (game.isPhase(MagicPhaseType.DeclareAttackers) && player.getOpponent().getNrOfAttackers() > 0) {
+                game.clearSkipTurnTill();
+            } else {
+                return PASS_CHOICE_RESULTS;
             }
         }
 
