@@ -2,6 +2,11 @@ package magic.data;
 
 public enum MagicIcon {
 
+    ILLEGAL_ICON("card_illegal.png"),
+    LEGAL_ICON("card_legal.png"),
+    BANNED_ICON("card_banned.png"),
+    RESTRICTED_ICON("card_restricted.png"),
+
     HEADER_ICON("headerIcon.png"),
     OPTIONS_ICON("w_book.png"),
     OPTIONBAR_ICON("w_book24.png"),

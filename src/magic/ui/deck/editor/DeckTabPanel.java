@@ -257,4 +257,8 @@ class DeckTabPanel extends JPanel {
         return originalDeck != null;
     }
 
+    void setSelectedCard(MagicCardDefinition selectedCard) {
+        deckTable.setSelectedCard(selectedCard);
+    }
+
 }

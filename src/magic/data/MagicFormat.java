@@ -1,11 +1,11 @@
 package magic.data;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Scanner;
-
 import magic.model.MagicCardDefinition;
+import magic.model.MagicDeck;
+import magic.utility.DeckUtils;
 import magic.utility.MagicResources;
 
 public enum MagicFormat {
@@ -42,12 +42,23 @@ public enum MagicFormat {
 
     private final String name;
     private final String filename;
+    private final int minimumDeckSize;
+    private final int maximumCardCopies;
+    
+    private final List<String> bannedCardNames = new ArrayList<>();
+    private final List<String> restrictedCardNames = new ArrayList<>();
+    private final List<MagicSets> magicSets = new ArrayList<>();
 
-    private static final HashMap<MagicFormat, MagicFormatDefinition> loadedFormats = new HashMap<>();
-
-    private MagicFormat(final String name, final String filename) {
+    // CTR
+    private MagicFormat(String name, String filename, int minDeckSize, int maxCardCopies) {
         this.name = name;
         this.filename = filename;
+        this.minimumDeckSize = minDeckSize;
+        this.maximumCardCopies = maxCardCopies;
+    }
+    // CTR
+    private MagicFormat(String name, String filename) {
+        this(name, filename, 60, 4);
     }
 
     public String getName() {
@@ -66,38 +77,89 @@ public enum MagicFormat {
         return values.toArray(new String[values.size()]);
     }
 
-    public static boolean isCardLegal(MagicCardDefinition card, MagicFormat magicFormatType) {
-        if (!loadedFormats.containsKey(magicFormatType)) {
-            loadedFormats.put(magicFormatType, loadMagicFormatFile(magicFormatType));
-        }
-        final MagicFormatDefinition magicFormat = loadedFormats.get(magicFormatType);
-        return magicFormat.contains(card);
+    private boolean isCardLegal(MagicCardDefinition card, int cardCount) {
+        return getCardLegality(card, cardCount) == CardLegality.Legal;
     }
 
-    private static MagicFormatDefinition loadMagicFormatFile(final MagicFormat magicFormatType) {
+    public boolean isCardLegal(MagicCardDefinition card) {
+        return isCardLegal(card, 1);
+    }
 
-        final MagicFormatDefinition magicFormat = new MagicFormatDefinition();
-
-        try (final Scanner sc = new Scanner(MagicResources.getFileContent(magicFormatType))) {
+    private void loadMagicFormatFile() {
+        try (final Scanner sc = new Scanner(MagicResources.getFileContent(this))) {
             while (sc.hasNextLine()) {
                 final String line = sc.nextLine().trim();
                 final boolean skipLine = (line.startsWith("#") || line.isEmpty());
                 if (!skipLine) {
                     switch (line.substring(0, 1)) {
-                    case "!":
-                        magicFormat.addBannedCardName(line.substring(1));
-                        break;
-                    case "*":
-                        magicFormat.addRestrictedCardName(line.substring(1));
-                        break;
-                    default:
-                        magicFormat.addSetCode(line);
+                        case "!":
+                            bannedCardNames.add(line.substring(1));
+                            break;
+                        case "*":
+                            restrictedCardNames.add(line.substring(1));
+                            break;
+                        default:
+                            magicSets.add(MagicSets.valueOf(line));
                     }
                 }
             }
         }
+    }
 
-        return magicFormat;
+    public CardLegality getCardLegality(MagicCardDefinition card, int cardCount) {
+        if (cardCount > getMaximumCardCopies() && card.isLand() == false) {
+            return CardLegality.TooManyCopies;
+        }
+        if (magicSets.isEmpty()) {
+            loadMagicFormatFile();
+        }
+        if (isCardBanned(card)) {
+            return CardLegality.Banned;
+        } else if (cardCount > 1 && isCardRestricted(card)) {
+            return CardLegality.Restricted;
+        } else if (isCardInFormat(card)) { // this takes the longest so is done last.
+            return CardLegality.Legal;
+        } else {
+            return CardLegality.Illegal;
+        }
+    }
+
+    public int getMinimumDeckSize() {
+        return minimumDeckSize;
+    }
+
+    private int getMaximumCardCopies() {
+        return maximumCardCopies;
+    }
+
+    public boolean isDeckLegal(final MagicDeck aDeck) {
+        if (aDeck.size() < getMinimumDeckSize()) {
+            return false;
+        }
+        for (final MagicCardDefinition card : DeckUtils.getDistinctCards(aDeck)) {
+            final int cardCountCheck = card.isLand() ? 1 : aDeck.getCardCount(card);
+            if (isCardLegal(card, cardCountCheck) == false) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    private boolean isCardBanned(MagicCardDefinition aCard) {
+        return bannedCardNames.isEmpty() == false && bannedCardNames.contains(aCard.getName());
+    }
+
+    private boolean isCardRestricted(MagicCardDefinition card) {
+        return restrictedCardNames.isEmpty() == false && restrictedCardNames.contains(card.getName());
+    }
+
+    private boolean isCardInFormat(MagicCardDefinition card) {
+        for (MagicSets magicSet : magicSets) {
+            if (MagicSetDefinitions.isCardInSet(card, magicSet)) {
+                return true;
+            }
+        }
+        return false;
     }
 
 }

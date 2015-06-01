@@ -311,7 +311,7 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
                 @Override
                 public boolean checkCard(final MagicCardDefinition card, final int i) {
                     final MagicFormat magicFormat  = MagicFormat.values()[i];
-                    return MagicFormat.isCardLegal(card, magicFormat);
+                    return magicFormat.isCardLegal(card);
                 }
             })) {
             return false;

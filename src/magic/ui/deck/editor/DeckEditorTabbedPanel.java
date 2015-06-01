@@ -1,8 +1,8 @@
 package magic.ui.deck.editor;
 
-import magic.ui.deck.editor.CardPoolTabPanel;
 import java.awt.Color;
 import java.awt.Component;
+import java.awt.Cursor;
 import java.awt.Dimension;
 import java.awt.Font;
 import java.beans.PropertyChangeEvent;
@@ -17,8 +17,6 @@ import javax.swing.SwingUtilities;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 import magic.data.DeckGenerator;
-import magic.data.MagicIcon;
-import magic.ui.IconImages;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
 import magic.ui.ScreenController;
@@ -41,11 +39,13 @@ public class DeckEditorTabbedPanel extends JPanel {
     private final CardPoolTabPanel cardPoolTabPanel;
     private final DeckTabPanel deckTabPanel;
     private final HistoryTabPanel historyTabPanel;
+    private final DeckLegalityTabPanel legalityTabPanel;
 
     DeckEditorTabbedPanel(final MagicDeck deck) {
         deckTabPanel = new DeckTabPanel(deck);
         cardPoolTabPanel = new CardPoolTabPanel();
         historyTabPanel = new HistoryTabPanel();
+        legalityTabPanel = new DeckLegalityTabPanel();
         setLookAndFeel();
         refreshLayout();
         updateDeckTabCaption();
@@ -163,6 +163,25 @@ public class DeckEditorTabbedPanel extends JPanel {
                         firePropertyChange(CP_CARD_SELECTED, false, true);
                     }
                 });
+        // LegalityTabPanel
+        legalityTabPanel.addPropertyChangeListener(
+                DeckLegalityTabPanel.CP_CARD_SELECTED,
+                new PropertyChangeListener() {
+                    @Override
+                    public void propertyChange(PropertyChangeEvent evt) {
+                        deckTabPanel.setSelectedCard(legalityTabPanel.getSelectedCard());
+                    }
+                });
+        legalityTabPanel.addPropertyChangeListener(
+                CardsLegalityPanel.CP_CARD_DCLICKED,
+                new PropertyChangeListener() {
+                    @Override
+                    public void propertyChange(PropertyChangeEvent evt) {
+                        deckTabPanel.setSelectedCard(legalityTabPanel.getSelectedCard());
+                        tabbedPane.setSelectedIndex(0);
+                        setTabbedPanelToFocus();
+                    }
+                });
     }
 
     private boolean generateRandomDeck() {
@@ -202,22 +221,29 @@ public class DeckEditorTabbedPanel extends JPanel {
         setOpaque(false);
         setLayout(miglayout);
         miglayout.setLayoutConstraints("insets 0, gap 0");
-        //
+
         tabbedPane.setTabPlacement(JTabbedPane.TOP);
         tabbedPane.setBorder(BorderFactory.createMatteBorder(0, 1, 0, 0, Color.BLACK));
+        // deck
         tabbedPane.add(deckTabPanel);
-        tabbedPane.setTabComponentAt(tabbedPane.getTabCount()-1, getTabLabel("Deck : 0 cards"));
+        tabbedPane.setTabComponentAt(tabbedPane.getTabCount()-1, getTabLabel("Deck : 0"));
+        // card pool
         tabbedPane.add(cardPoolTabPanel);
-        tabbedPane.setTabComponentAt(tabbedPane.getTabCount()-1, getTabLabel("Card Pool"));
+        tabbedPane.setTabComponentAt(tabbedPane.getTabCount()-1, getTabLabel("Playable"));
+        // history
         tabbedPane.add(historyTabPanel);
-        tabbedPane.setTabComponentAt(tabbedPane.getTabCount()-1, getTabLabel("Card Recall"));
+        tabbedPane.setTabComponentAt(tabbedPane.getTabCount()-1, getTabLabel("History"));
+        // deck legality
+        tabbedPane.add(legalityTabPanel);
+        tabbedPane.setTabComponentAt(tabbedPane.getTabCount()-1, getTabLabel("Legality"));
+
         tabbedPane.addChangeListener(new TabbedPaneChangeListener());
         setSelectedTabStyle();
     }
 
     private JLabel getTabLabel(final String text) {
         final JLabel lbl = new JLabel(text);
-        lbl.setPreferredSize(new Dimension(180, lbl.getFont().getSize()+4));
+        lbl.setPreferredSize(new Dimension(150, lbl.getFont().getSize()+6));
         lbl.setHorizontalAlignment(SwingConstants.CENTER);
         lbl.setVerticalAlignment(SwingConstants.CENTER);
         lbl.setFont(new Font("SansSerif", Font.BOLD, 14));
@@ -230,10 +256,8 @@ public class DeckEditorTabbedPanel extends JPanel {
             final JLabel tabLabel = (JLabel) tabbedPane.getTabComponentAt(i);
             if (i == index) {
                 tabLabel.setFont(tabLabel.getFont().deriveFont(Font.BOLD));
-                tabLabel.setIcon(IconImages.getIcon(MagicIcon.CHARGE));
             } else {
                 tabLabel.setFont(tabLabel.getFont().deriveFont(Font.PLAIN));
-                tabLabel.setIcon(null);
             }
         }
     }
@@ -245,17 +269,18 @@ public class DeckEditorTabbedPanel extends JPanel {
     }
 
     public MagicCardDefinition getSelectedCard() {
-        if (tabbedPane.getSelectedIndex() == 0) {
-            return deckTabPanel.getSelectedCard();
-        } else if (tabbedPane.getSelectedIndex() == 1) {
-            return cardPoolTabPanel.getSelectedCard();
-        } else {
-            return historyTabPanel.getSelectedCard();
+        switch (tabbedPane.getSelectedIndex()) {
+            case 0: return deckTabPanel.getSelectedCard();
+            case 1: return cardPoolTabPanel.getSelectedCard();
+            case 2: return historyTabPanel.getSelectedCard();
+            case 3: return legalityTabPanel.getSelectedCard();
+            default: throw new IndexOutOfBoundsException("Invalid tab.");
         }
     }
 
     public void setDeck(final MagicDeck originalDeck) {
         deckTabPanel.setDeck(originalDeck);
+        legalityTabPanel.setDeck(deckTabPanel.getDeck());
     }
 
     MagicDeck getDeck() {
@@ -276,20 +301,25 @@ public class DeckEditorTabbedPanel extends JPanel {
             SwingUtilities.invokeLater(new Runnable() {
                 @Override
                 public void run() {
+                    tabbedPane.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+                    if (tabbedPane.getSelectedIndex() == 3) {
+                        legalityTabPanel.setDeck(deckTabPanel.getDeck());
+                    }
                     setSelectedTabStyle();
                     setTabbedPanelToFocus();
                     firePropertyChange(CP_CARD_SELECTED, false, true);
+                    tabbedPane.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
                 }
             });
         }
     }
 
     private void updateDeckTabCaption() {
-        ((JLabel)tabbedPane.getTabComponentAt(0)).setText("Deck : " + deckTabPanel.getDeck().size() + " cards");
+        ((JLabel)tabbedPane.getTabComponentAt(0)).setText("Deck : " + deckTabPanel.getDeck().size());
     }
 
     private void updateCardPoolTabCaption() {
-        ((JLabel)tabbedPane.getTabComponentAt(1)).setText("Card Pool : " + NumberFormat.getInstance().format(cardPoolTabPanel.getCardPoolSize()));
+        ((JLabel)tabbedPane.getTabComponentAt(1)).setText("Playable : " + NumberFormat.getInstance().format(cardPoolTabPanel.getCardPoolSize()));
     }
 
 }

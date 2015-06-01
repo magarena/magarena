@@ -11,8 +11,10 @@ import java.io.InputStreamReader;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 import java.util.SortedMap;
 import java.util.TreeMap;
 import magic.data.CardDefinitions;
@@ -374,5 +376,13 @@ public class DeckUtils {
         }
         return matchingDeckFiles;
     };
+
+    public static Set<MagicCardDefinition> getDistinctCards(final MagicDeck aDeck) {
+        final Set<MagicCardDefinition> distinctCards = new HashSet<>();
+        for (final MagicCardDefinition card : aDeck) {
+            distinctCards.add(card);
+        }
+        return distinctCards;
+    }
 
 }
