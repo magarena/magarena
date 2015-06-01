@@ -1,4 +1,4 @@
-Magarena 
+Magarena
 ========
 Homepage: http://magarena.github.io
 Forum   : http://www.slightlymagic.net/forum/viewforum.php?f=82
@@ -7,11 +7,11 @@ Requires: Java Runtime Environment 7 (http://java.com) or above must be installe
 
 Starting Magarena:
   On Windows, double click on Magarena.exe
-  On Linux, execute ./Magarena.sh. 
+  On Linux, execute ./Magarena.sh.
   On Mac, double click the Magarena icon
-  
+
 Keyboard Controls
-=================  
+=================
 
 General
 -------
@@ -23,8 +23,7 @@ F12    : hide UI so you can admire the background art in all its glory!
 Duel Screen
 -----------
 Right arrow, Space              : action button
-Shift + Right arrow, 
-Shift + Space                   : skip until end of turn
+Shift+Right arrow, Shift+Space  : skip until end of turn
 Left arrow, Backspace, Delete   : undo button
 Y key                           : yes button
 N key                           : no button
@@ -200,7 +199,7 @@ ShawnieBoy
 - restore selected deck type and deck name on opening deck chooser dialog
 
 - removed deck strength calculator
-    
+
 - added the following to the card script:
   * ability: split second
   * ability: At the beginning of your draw step, <effect>
@@ -219,7 +218,7 @@ ShawnieBoy
   * ability: When <permanent> deals combat damage to an opponent, <effect>
   * ability: SN gets <pt change> for each <target>
   * ability: <costs>: Return SN from your graveyard to your hand.
-  * effect: Destroy that <permanent>. 
+  * effect: Destroy that <permanent>.
   * effect: Destroy that <permanent> at end of combat.
   * effect: Return that <permanent> to its owner's hand at end of combat.
   * effect: Reveal the top <amount> cards of your library. Put all <cards> revealed this way into your hand and the rest on the bottom of your library in any order.
@@ -230,9 +229,9 @@ ShawnieBoy
   * effect: Clash with an opponent, if you win, <effect>
   * effect: Flip coin. If you win, <effect> if you lose, <effect>'
   * effect: Look at the top card of your library. You may put that card on the bottom of your library.
-  * effect: SN becomes <pt> <color> <subtype> <type> with <abilities> until end of turn. 
-  * effect: <target> becomes <pt> <color> <subtype> <type> with <abilities> until end of turn. 
-    
+  * effect: SN becomes <pt> <color> <subtype> <type> with <abilities> until end of turn.
+  * effect: <target> becomes <pt> <color> <subtype> <type> with <abilities> until end of turn.
+
 - fixed the following bugs:
   * crash when clicking on "Generate Deck" button if prebuild deck was used (issue #167)
   * crash due to concurrent modification in MagicLogBook (issue #121)
@@ -369,7 +368,7 @@ ShawnieBoy
   * effects that modify how a card entered the battlefield did not affect cards that clone permanents when they come into play (issue #108)
   * creatures that receive damage and stop being creatures did not have damage cleared at end of turn (issue #131)
   * Sakashima's Student and Phyrexian Metamorph's card abilities were overriden by AI casting hint (issue #81)
-  * *Chimera's ability should last forever instead of until end of turn 
+  * *Chimera's ability should last forever instead of until end of turn
   * Snapcaster Mage can only be cast by AI during the main phase
   * Moltensteel Dragon and Pith Driller could not be cast by paying life
 
