@@ -75,61 +75,56 @@ melvin
 PalladiaMors
 ShawnieBoy
     
-    Card totals updated to only count non-token, front face definitions, deck editor and explorer counts now match.
-    
-    Tokens are now displayed in explorer (not deck editor); Added Token, Transform, Flip and Hidden (devMode only) to Types filter.
-    
-    rollover color can be changed using new setting in preferences dialog.
-    
-    add/edit all power/toughness modifying counters
+- Display decks containing selected card in Card Explorer, double-click deck name to view list of cards in deck
 
-    add reason in log for unattaching aura/equipment, fixes issue #258
-    
-    display decks containing selected card in Card Explorer, double-click deck name to view list of cards in deck.
-    
-    Can now do simple custom layouts of filter values (closes #237)
+- Display tokens in Card Explorer
+
+- Highlight icons in action and status bar on mouse over
+
+- Add reason in log for unattaching aura/equipment
 
 - added the following to the card script:
-    add 'Whenever SN enters the battlefield or attacks, <effect>', rearrange abilities to group similar ones together
-    add condition 'SN has [amount] or fewer [type] counters on it'
-    support state trigger, 'When [condition], [effect]'
-    add ability 'prevent all damage that would be dealt to [permanents]
-    add ability 'prevent all combat damage that would be dealt to [permanents]'
-    support 'put a [token] onto the battlefield for each [target]
-    change syntax of target reference to any character between asterisks
-    add effect 'gain control of [permanent] until end of turn.'
-    add ability 'Whenever a player discards a card, [effect]'
-    add ability 'Whenever an opponent discards a card, [effect]'
-    support effect 'whenever [permanent] is dealt damage, [effect]'
-    support 'SN deals damage equal to [value] to [target]'
-
+  * Allow rider effect to reference target by putting reference word between asterisks
+    eg: Untap target permanent.~Gain control of *it* until end of turn.~*It* gains haste until end of turn. 
+  * ability: Whenever SN enters the battlefield or attacks, <effect>
+  * ability: Prevent all damage that would be dealt to [permanents]
+  * ability: Prevent all combat damage that would be dealt to [permanents]
+  * ability: Prevent all noncombat damage that would be dealt to [permanents]
+  * ability: Whenever [permanent] is dealt damage, [effect]
+  * ability: Whenever a player discards a card, [effect]
+  * ability: Whenever an opponent discards a card, [effect]
+  * ability: When [condition], [effect]
+  * effect: Put a [token] onto the battlefield for each [amount].
+  * effect: Gain control of [permanent] until end of turn.
+  * effect: SN deals damage equal to [amount] to [target].
 
 - fixed the following bugs:
-    fixes #252 : NPE when opened deck editor bug UI.
-    fix skip till end of turn not stopping at end of turn. fixes issue #318
-    fixes #181: Ensure default AI player profile is MCTS.
-    Closes #130:  Crashes when there is a change in focus? On Mac.
-    fixes #310: Tiled cards deck view, no cards in category NPE.
-    fixes #305 : Saved cube setting not restored correctly after import.
-    fix: Seaside Haven had activation cost of {W}{B} instead of {W}{U}
-    trigger 'when exploit' before removing the creature to be sacrificed so that self sacrifice will trigger, fixes issue #282
-    fix card image: Eager Cadet, Coral Eel, Goblin Raider, Giant Octopus, Sea Eagle, Silverback Ape, Vengeance, Vizzerdrix
-    fix: Correct image url for Sea Eagle, was displaying Avatar of Hope
-    fix: Belltower Sphinx's triggered ability should use the stack, finally fixes #255
-    replace processTarget with getTarget as clone effect does not target and should work even when target becomes illegal
-    fix incomplete replacement of placeholder text in May choice panel, fixes issue #247
-    fix: Invasion block wrongly including Planar Chaos instead of Planeshift
-    use backtick to protect names from singular conversion, fixes issue #243
-    Fixes #236 : the load cards FutureTask was suppressing exceptions leading to behaviour as detailed in #236.
-    Maximum mana cost filter value increased to 16 (fixes #233).
-    fix #232 : New Duel screen is not restoring decks from "latest.duel".
-    prevent damage before replace damage, prevent damage shield also occurs  during prevent damage  
-    use EnqueueTriggerAction instead of PutItemOnStackAction for state trigger so they go onto the stack when a player has priority
-    fix missing 'if you do' check for Dark Depths, only put token if sacrifice succeeds
-    fix: Barbarian Bully activation should be a random discard
-    fix: Aurification type and ability change not working
-    fix: Glint Eye Nephilim was triggering when any permanent dealt damage to a player
-    correct Ward Sliver to not use the stack
+  * Themed random deck generator did not make use of selected cube
+  * fixes #252 : NPE when opened deck editor bug UI.
+  * fix skip till end of turn not stopping at end of turn. fixes issue #318
+  * fixes #181: Ensure default AI player profile is MCTS.
+  * Closes #130:  Crashes when there is a change in focus? On Mac.
+  * fixes #310: Tiled cards deck view, no cards in category NPE.
+  * fixes #305 : Saved cube setting not restored correctly after import.
+  * fix: Seaside Haven had activation cost of {W}{B} instead of {W}{U}
+  * trigger 'when exploit' before removing the creature to be sacrificed so that self sacrifice will trigger, fixes issue #282
+  * fix card image: Eager Cadet, Coral Eel, Goblin Raider, Giant Octopus, Sea Eagle, Silverback Ape, Vengeance, Vizzerdrix
+  * fix: Correct image url for Sea Eagle, was displaying Avatar of Hope
+  * fix: Belltower Sphinx's triggered ability should use the stack, finally fixes #255
+  * replace processTarget with getTarget as clone effect does not target and should work even when target becomes illegal
+  * fix incomplete replacement of placeholder text in May choice panel, fixes issue #247
+  * fix: Invasion block wrongly including Planar Chaos instead of Planeshift
+  * use backtick to protect names from singular conversion, fixes issue #243
+  * Fixes #236 : the load cards FutureTask was suppressing exceptions leading to behaviour as detailed in #236.
+  * Maximum mana cost filter value increased to 16 (fixes #233).
+  * fix #232 : New Duel screen is not restoring decks from "latest.duel".
+  * prevent damage before replace damage, prevent damage shield also occurs  during prevent damage  
+  * use EnqueueTriggerAction instead of PutItemOnStackAction for state trigger so they go onto the stack when a player has priority
+  * fix missing 'if you do' check for Dark Depths, only put token if sacrifice succeeds
+  * fix: Barbarian Bully activation should be a random discard
+  * fix: Aurification type and ability change not working
+  * fix: Glint Eye Nephilim was triggering when any permanent dealt damage to a player
+  * correct Ward Sliver to not use the stack
 
 - added the following cards:
 Academy Elite, Alpha Status, Animal Boneyard, Ashling, the Extinguisher,
@@ -150,18 +145,18 @@ Foul-Tongue Shriek, Freyalise Supplicant, Gallows at Willow Hill,
 Gaze of Adamaro, General's Kabuto, Gerrard Capashen, Geth's Grimoire,
 Ghoulcaller Gisa, Gilder Bairn, Gleam of Authority, Gloomwidow's Feast,
 Goblin Razerunners, Golem-Skin Gauntlets, Graceblade Artisan,
-Granite Grip, Greater Good, Grim Feast, Harvest Wurm, Heartless Hidetsugu,
-Helldozer, Hidden Predators, Hisoka, Minamo Sensei, Hold the Gates,
-Homarid Spawning Bed, Honorable Scout, Hooded Hydra, Hot Soup,
-Ichor Explosion, Incite Rebellion, Inspiring Call, Ire of Kaminari,
-Ixidron, Jagged Poppet, Jarad, Golgari Lich Lord, Jinxed Choker,
-Joyous Respite, Kangee, Aerie Keeper, Kheru Bloodsucker, Kheru Dreadmaw,
-Kinsbaile Borderguard, Kithkin Zealot, Kiyomaro, First to Stand,
-Knight of New Alara, Laccolith Rig, Lich's Tomb, Lifeblood Hydra,
-Life's Legacy, Lingering Death, Maga, Traitor to Mortals,
-Magus of the Mirror, Mana Bloom, Mastery of the Unseen, Megatherium,
-Mercadia's Downfall, Mercurial Chemister, Mercy Killing, Mindculling,
-Mindmoil, Mind Unbound, Mirror Universe, Momentous Fall, Momentum,
+Granite Grip, Greater Good, Grim Feast, Hall of Triumph, Harvest Wurm,
+Heartless Hidetsugu, Helldozer, Hidden Predators, Hisoka, Minamo Sensei,
+Hold the Gates, Homarid Spawning Bed, Honorable Scout, Hooded Hydra,
+Hot Soup, Ichor Explosion, Incite Rebellion, Inspiring Call,
+Ire of Kaminari, Ixidron, Jagged Poppet, Jarad, Golgari Lich Lord,
+Jinxed Choker, Joyous Respite, Kangee, Aerie Keeper,
+Kheru Bloodsucker, Kheru Dreadmaw, Kinsbaile Borderguard, Kithkin Zealot,
+Kiyomaro, First to Stand, Knight of New Alara, Laccolith Rig, Lich's Tomb,
+Lifeblood Hydra, Life's Legacy, Lingering Death, Maga, Traitor to Mortals,
+Magus of the Mirror, Mana Bloom, Mastery of the Unseen,
+Megatherium, Mercadia's Downfall, Mercurial Chemister, Mercy Killing,
+Mindculling, Mind Unbound, Mirror Universe, Momentous Fall, Momentum,
 Mortis Dogs, Mycosynth Fiend, Myth Realized, Nature's Resurgence,
 Nemesis of Mortals, Nightmare Lash, Nomads' Assembly, Ojutai's Summons,
 Oloro, Ageless Ascetic, Opal Avenger, Orochi Hatchery, Orzhov Charm,
