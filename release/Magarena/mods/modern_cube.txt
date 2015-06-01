@@ -2283,6 +2283,7 @@ Hair-Strung Koto
 Halcyon Glaze
 Halimar Excavator
 Halimar Wavewatch
+Hall of Triumph
 Hallowed Burial
 Hallowed Fountain
 Halo Hunter
@@ -3275,7 +3276,6 @@ Mind Grind
 Mindlash Sliver
 Mindless Automaton
 Mindless Null
-Mindmoil
 Mind Rot
 Mindscour Dragon
 Mind Sculpt
@@ -5292,7 +5292,6 @@ Tectonic Edge
 Tectonic Fiend
 Tectonic Rift
 Teetering Peaks
-Teferi's Puzzle Box
 Telekinetic Sliver
 Teleportal
 Tel-Jilad Archers

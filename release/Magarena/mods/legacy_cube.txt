@@ -3606,6 +3606,7 @@ Halberdier
 Halcyon Glaze
 Halimar Excavator
 Halimar Wavewatch
+Hall of Triumph
 Hallowed Burial
 Hallowed Fountain
 Hallowed Ground
@@ -5092,7 +5093,6 @@ Mind Knives
 Mindlash Sliver
 Mindless Automaton
 Mindless Null
-Mindmoil
 Mind Over Matter
 Mind Peel
 Mind Ravel
@@ -8160,7 +8160,6 @@ Tectonic Rift
 Teeka's Dragon
 Teetering Peaks
 Teferi's Care
-Teferi's Puzzle Box
 Tek
 Telekinetic Sliver
 Teleport
