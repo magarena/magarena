@@ -106,8 +106,14 @@ public enum MagicFormat {
         }
     }
 
+    private boolean isCardExemptFromMaxCopiesRestriction(MagicCardDefinition card) {
+        return card.isLand() == true
+                || card.getName().equals("Relentless Rats")
+                || card.getName().equals("Shadowborn Apostle");
+    }
+
     public CardLegality getCardLegality(MagicCardDefinition card, int cardCount) {
-        if (cardCount > getMaximumCardCopies() && card.isLand() == false) {
+        if (cardCount > getMaximumCardCopies() && isCardExemptFromMaxCopiesRestriction(card) == false) {
             return CardLegality.TooManyCopies;
         }
         if (magicSets.isEmpty()) {
