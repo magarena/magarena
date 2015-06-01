@@ -6,7 +6,7 @@ type=Legendary,Creature
 subtype=Kobold
 cost={2}{B}{B}{R}{R}
 pt=5/5
-ability=At the beginning of your upkeep, you may pay {R}{R}{R}. If you don't, tap SN and all creatures named Kobolds of Kher Keep, then an opponent gains control of them.;\
-        Creatures you control named Kobolds of Kher Keep get +2/+2.
+ability=Creatures you control named Kobolds of Kher Keep get +2/+2.
 timing=main
+requires_groovy_code
 oracle=At the beginning of your upkeep, you may pay {R}{R}{R}. If you don't, tap Rohgahh of Kher Keep and all creatures named Kobolds of Kher Keep, then an opponent gains control of them.\nCreatures you control named Kobolds of Kher Keep get +2/+2.
