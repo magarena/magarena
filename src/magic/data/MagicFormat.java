@@ -8,7 +8,7 @@ import java.util.Scanner;
 import magic.model.MagicCardDefinition;
 import magic.utility.MagicResources;
 
-public enum MagicFormats {
+public enum MagicFormat {
 
     // add new formats here...
     // @name: display name in UI.
@@ -43,9 +43,9 @@ public enum MagicFormats {
     private final String name;
     private final String filename;
 
-    private static final HashMap<MagicFormats, MagicFormatDefinition> loadedFormats = new HashMap<>();
+    private static final HashMap<MagicFormat, MagicFormatDefinition> loadedFormats = new HashMap<>();
 
-    private MagicFormats(final String name, final String filename) {
+    private MagicFormat(final String name, final String filename) {
         this.name = name;
         this.filename = filename;
     }
@@ -60,13 +60,13 @@ public enum MagicFormats {
 
     public static String[] getFilterValues() {
         final List<String> values = new ArrayList<>();
-        for (MagicFormats f : MagicFormats.values()) {
+        for (MagicFormat f : MagicFormat.values()) {
             values.add(f.getName());
         }
         return values.toArray(new String[values.size()]);
     }
 
-    public static boolean isCardLegal(MagicCardDefinition card, MagicFormats magicFormatType) {
+    public static boolean isCardLegal(MagicCardDefinition card, MagicFormat magicFormatType) {
         if (!loadedFormats.containsKey(magicFormatType)) {
             loadedFormats.put(magicFormatType, loadMagicFormatFile(magicFormatType));
         }
@@ -74,7 +74,7 @@ public enum MagicFormats {
         return magicFormat.contains(card);
     }
 
-    private static MagicFormatDefinition loadMagicFormatFile(final MagicFormats magicFormatType) {
+    private static MagicFormatDefinition loadMagicFormatFile(final MagicFormat magicFormatType) {
 
         final MagicFormatDefinition magicFormat = new MagicFormatDefinition();
 
