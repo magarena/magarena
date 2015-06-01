@@ -74,7 +74,7 @@ lodici
 melvin
 PalladiaMors
 ShawnieBoy
-    
+
 - Display decks containing selected card in Card Explorer, double-click deck name to view list of cards in deck
 
 - Display tokens in Card Explorer
@@ -85,7 +85,7 @@ ShawnieBoy
 
 - added the following to the card script:
   * Allow rider effect to reference target by putting reference word between asterisks
-    eg: Untap target permanent.~Gain control of *it* until end of turn.~*It* gains haste until end of turn. 
+    eg: Untap target permanent.~Gain control of *it* until end of turn.~*It* gains haste until end of turn.
   * ability: Whenever SN enters the battlefield or attacks, <effect>
   * ability: Prevent all damage that would be dealt to [permanents]
   * ability: Prevent all combat damage that would be dealt to [permanents]
@@ -99,32 +99,31 @@ ShawnieBoy
   * effect: SN deals damage equal to [amount] to [target].
 
 - fixed the following bugs:
-  * Themed random deck generator did not make use of selected cube
-  * fixes #252 : NPE when opened deck editor bug UI.
-  * fix skip till end of turn not stopping at end of turn. fixes issue #318
-  * fixes #181: Ensure default AI player profile is MCTS.
-  * Closes #130:  Crashes when there is a change in focus? On Mac.
-  * fixes #310: Tiled cards deck view, no cards in category NPE.
-  * fixes #305 : Saved cube setting not restored correctly after import.
-  * fix: Seaside Haven had activation cost of {W}{B} instead of {W}{U}
-  * trigger 'when exploit' before removing the creature to be sacrificed so that self sacrifice will trigger, fixes issue #282
-  * fix card image: Eager Cadet, Coral Eel, Goblin Raider, Giant Octopus, Sea Eagle, Silverback Ape, Vengeance, Vizzerdrix
-  * fix: Correct image url for Sea Eagle, was displaying Avatar of Hope
-  * fix: Belltower Sphinx's triggered ability should use the stack, finally fixes #255
-  * replace processTarget with getTarget as clone effect does not target and should work even when target becomes illegal
-  * fix incomplete replacement of placeholder text in May choice panel, fixes issue #247
-  * fix: Invasion block wrongly including Planar Chaos instead of Planeshift
-  * use backtick to protect names from singular conversion, fixes issue #243
-  * Fixes #236 : the load cards FutureTask was suppressing exceptions leading to behaviour as detailed in #236.
-  * Maximum mana cost filter value increased to 16 (fixes #233).
-  * fix #232 : New Duel screen is not restoring decks from "latest.duel".
-  * prevent damage before replace damage, prevent damage shield also occurs  during prevent damage  
-  * use EnqueueTriggerAction instead of PutItemOnStackAction for state trigger so they go onto the stack when a player has priority
-  * fix missing 'if you do' check for Dark Depths, only put token if sacrifice succeeds
-  * fix: Barbarian Bully activation should be a random discard
-  * fix: Aurification type and ability change not working
-  * fix: Glint Eye Nephilim was triggering when any permanent dealt damage to a player
-  * correct Ward Sliver to not use the stack
+  * crash due to change in focus on Mac OS (issue #130)
+  * crash due to unimplemented cards in deck (issue #252)
+  * crash due to no cards in category on tiled cards view (issue #310)
+  * initial default AI randomly chosen, should be MCTS (issue #181)
+  * new duel screen did not restore previously selected decks (issue #232)
+  * exceptions during card loading caused the card pool to be empty (issue #236)
+  * saved cube settings not restored after import (issue #305)
+  * themed random deck generator did not make use of selected cube
+  * maximum mana cost is 16 but explorer filter only goes to 15 (issue #233).
+  * placeholder text, such as SN and PN, appears in user choice panel for optional effects (issue #247)
+  * skip till end of turn did not allow player to gain priority at end of turn (issue #318)
+  * Invasion block included Planeshift, should be Planar Chaos
+  * 'prevent the next n damage' effect did not take effect if damage is replaced by a different action
+  * exploit trigger did not activate when creature to be exploited is itself (issue #282)
+  * state triggers did not wait till player has priority being going onto the stack
+  * Clone effect was countered if chosen permanent is removed before effect resolves
+  * Seaside Haven's activation cost is {W}{B}, should be {W}{U}
+  * Barbarian Bully's activation cost is discard, should be random discard
+  * Belltower Sphinx's triggered ability did not uses the stack (issue #255)
+  * Glint Eye Nephilim's trigger occurred when any permanent dealt damage to a player
+  * Aurification's type and ability modification is missing
+  * Ward Sliver enter the battlefield replacement uses the stack
+  * Dark Depths put the token into play regardless of whether the sacrifice action succeeds
+  * Relentless Rats' static ability had no effect (issue #243)
+  * wrong card images for Eager Cadet, Coral Eel, Goblin Raider, Giant Octopus, Sea Eagle, Silverback Ape, Vengeance, and Vizzerdrix
 
 - added the following cards:
 Academy Elite, Alpha Status, Animal Boneyard, Ashling, the Extinguisher,
