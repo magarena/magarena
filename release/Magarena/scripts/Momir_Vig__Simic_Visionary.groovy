@@ -4,31 +4,6 @@
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack cardOnStack) {
             return permanent.isFriend(cardOnStack) &&
                    cardOnStack.hasType(MagicType.Creature) &&
-                   cardOnStack.hasColor(MagicColor.Green) ?
-                new MagicEvent(
-                    permanent,
-                    new MagicMayChoice(),
-                    this,
-                    "PN may\$ search your library for a creature card and reveal it. "+
-                    "If you do, shuffle your library and put that card on top of it."
-                ):
-                MagicEvent.NONE;
-        }
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            if (event.isYes()) {
-                game.addEvent(
-                MagicRuleEventAction.create(
-                "Search your library for a creature card, reveal it, then shuffle your library and put that card on top of it.").getEvent(event.getSource()
-                ));
-            }
-        }
-    },
-    new MagicWhenOtherSpellIsCastTrigger() {
-        @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack cardOnStack) {
-            return permanent.isFriend(cardOnStack) &&
-                   cardOnStack.hasType(MagicType.Creature) &&
                    cardOnStack.hasColor(MagicColor.Blue) ?
                 new MagicEvent(
                     permanent,
@@ -52,6 +27,32 @@
                     card.hasType(MagicType.Creature) ?
                         MagicLocationType.OwnersHand :
                         MagicLocationType.OwnersLibrary
+                ));
+            }
+        }
+    },
+    
+    new MagicWhenOtherSpellIsCastTrigger() {
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack cardOnStack) {
+            return permanent.isFriend(cardOnStack) &&
+                   cardOnStack.hasType(MagicType.Creature) &&
+                   cardOnStack.hasColor(MagicColor.Green) ?
+                new MagicEvent(
+                    permanent,
+                    new MagicMayChoice(),
+                    this,
+                    "PN may\$ search your library for a creature card and reveal it. "+
+                    "If you do, shuffle your library and put that card on top of it."
+                ):
+                MagicEvent.NONE;
+        }
+        @Override
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
+            if (event.isYes()) {
+                game.addEvent(
+                MagicRuleEventAction.create(
+                "Search your library for a creature card, reveal it, then shuffle your library and put that card on top of it.").getEvent(event.getSource()
                 ));
             }
         }
