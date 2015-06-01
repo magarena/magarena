@@ -4,6 +4,6 @@ value=2.500
 rarity=R
 type=Sorcery
 cost={5}{R}{R}{R}
-effect=Untap all creatures and gain control of them until end of turn. They gain haste until end of turn.
 timing=main
+requires_groovy_code
 oracle=Untap all creatures and gain control of them until end of turn. They gain haste until end of turn.
