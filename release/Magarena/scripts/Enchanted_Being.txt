@@ -6,6 +6,6 @@ type=Creature
 subtype=Human
 cost={1}{W}{W}
 pt=2/2
-ability=Prevent all combat damage that would be dealt to SN by enchanted creatures.
 timing=main
+requires_groovy_code
 oracle=Prevent all combat damage that would be dealt to Enchanted Being by enchanted creatures.
