@@ -805,3 +805,27 @@ update_card_property:
 
 sims_count:
 	grep "sims=[0-9]*" -r 14* -o -h | sed 's/sims=//' | sort -n | histogram.py -x 800 > $@
+
+create-draft-release:
+	github-release release \
+    --user magarena \
+    --repo magarena \
+    --tag "${tag}" \
+    --name "${name}" \
+    --draft
+
+upload-lin-release:
+	github-release upload \
+    --user magarena \
+    --repo magarena \
+    --tag "${tag}" \
+    --name "Magarena-${tag}.zip" \
+    --file Magarena-${tag}.zip
+
+upload-mac-release:
+	github-release upload \
+    --user magarena \
+    --repo magarena \
+    --tag "${tag}" \
+    --name "Magarena-${tag}.app.zip" \
+    --file Magarena-${tag}.app.zip
