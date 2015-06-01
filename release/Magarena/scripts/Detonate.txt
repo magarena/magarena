@@ -4,6 +4,6 @@ value=2.500
 rarity=U
 type=Sorcery
 cost={X}{R}
-effect=Destroy target artifact with converted mana cost X. It can't be regenerated. SN deals X damage to that artifact's controller.
 timing=main
+requires_groovy_code
 oracle=Destroy target artifact with converted mana cost X. It can't be regenerated. Detonate deals X damage to that artifact's controller.
