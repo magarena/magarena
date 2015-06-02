@@ -130,7 +130,10 @@ public final class PlayerProfiles {
                 return profile;
             }
         }
-        throw new RuntimeException("Missing default AI player profile!");
+        // No MCTS profile exists which can happen when importing
+        // previous set of players and default AI profiles have
+        // been deleted or changed by user. (see github issue #329).
+        return getAiPlayerProfiles().values().iterator().next();
     }
 
     private static HashMap<String, PlayerProfile> getPlayerProfiles(final Class<? extends PlayerProfile> profileClass) {
