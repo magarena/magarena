@@ -6,6 +6,6 @@ type=Creature
 subtype=Spirit
 cost={2}{B}{B}
 pt=0/1
-ability={X}, {T}: SN deals half X damage, rounded down, to target creature or player, and half X damage, rounded up, to you.
 timing=main
+requires_groovy_code
 oracle={X}, {T}: Banshee deals half X damage, rounded down, to target creature or player, and half X damage, rounded up, to you.
