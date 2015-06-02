@@ -394,6 +394,10 @@ public class ImageDrawingUtils {
                     g.drawImage(IconImages.getIcon(MagicIcon.PLAGUECOUNTER).getImage(),ax,ay,observer);
                     if (amount > 1){drawStringWithOutline(g, str, ax+6, ay+14, observer);}
                     ax+=inc;
+                }  else if (counterType == MagicCounterType.Pin) {
+                    g.drawImage(IconImages.getIcon(MagicIcon.PINCOUNTER).getImage(),ax,ay,observer);
+                    if (amount > 1){drawStringWithOutline(g, str, ax+6, ay+14, observer);}
+                    ax+=inc;
                 }
             }
         }
