@@ -2193,6 +2193,15 @@ public class MagicTargetFilterFactory {
         2
     );
 
+    public static final MagicPermanentFilterImpl WHITE_CREATURE_POWER_2_OR_MORE = new MagicPermanentFilterImpl() {
+        @Override
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
+            return target.hasColor(MagicColor.White) &&
+                    target.isCreature() &&
+                    target.getPower() >= 2;
+        }
+    };
+
     public static final MagicPermanentFilterImpl CREATURE_POWER_3_OR_MORE = new MagicPTTargetFilter(
         MagicTargetFilterFactory.CREATURE,
         Operator.GREATER_THAN_OR_EQUAL,
@@ -2417,6 +2426,7 @@ public class MagicTargetFilterFactory {
         single.put("green creature or white creature", GREEN_OR_WHITE_CREATURE);
         single.put("white or blue creature", WHITE_OR_BLUE_CREATURE);
         single.put("white or black creature", WHITE_OR_BLACK_CREATURE);
+        single.put("white creature with power 2 or greater", WHITE_CREATURE_POWER_2_OR_MORE);
         single.put("creature with converted mana cost 3 or less", CREATURE_CONVERTED_3_OR_LESS);
         single.put("creature with converted mana cost 2 or less", CREATURE_CONVERTED_2_OR_LESS);
         single.put("creature with flying", CREATURE_WITH_FLYING);
