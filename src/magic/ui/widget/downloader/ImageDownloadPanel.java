@@ -268,6 +268,7 @@ public abstract class ImageDownloadPanel extends JPanel {
             }
             setButtonState(false);
             resetProgressBar();
+            doCustomActionAfterDownload(errorCount);
             if (isException) {
                 captionLabel.setText("!!! ERROR - See console for details !!!");
                 captionLabel.setHorizontalAlignment(SwingConstants.CENTER);
@@ -280,8 +281,6 @@ public abstract class ImageDownloadPanel extends JPanel {
                 }
                 buildDownloadImagesList();
             }
-
-            doCustomActionAfterDownload(errorCount);
             
             notifyStatusChanged(DownloaderState.STOPPED);
         }
