@@ -177,6 +177,7 @@ public enum MagicIcon {
     PLAGUECOUNTER("spore-counter.png"),
     PINCOUNTER("pin-counter.png"),
     HEALINGCOUNTER("healing-counter.png"),
+    SCREAMCOUNTER("scream-counter.png"),
 
     MANA_ANY("anymana.gif"),
 

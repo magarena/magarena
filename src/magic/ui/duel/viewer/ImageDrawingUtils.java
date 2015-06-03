@@ -402,6 +402,10 @@ public class ImageDrawingUtils {
                     g.drawImage(IconImages.getIcon(MagicIcon.HEALINGCOUNTER).getImage(),ax,ay,observer);
                     if (amount > 1){drawStringWithOutline(g, str, ax+6, ay+14, observer);}
                     ax+=inc;
+                }  else if (counterType == MagicCounterType.Scream) {
+                    g.drawImage(IconImages.getIcon(MagicIcon.SCREAMCOUNTER).getImage(),ax,ay,observer);
+                    if (amount > 1){drawStringWithOutline(g, str, ax+6, ay+14, observer);}
+                    ax+=inc;
                 }
             }
         }
