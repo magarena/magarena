@@ -142,6 +142,13 @@ public abstract class MagicCondition implements MagicMatchedCostEvent {
         }
     };
 
+    public static MagicCondition ANY_UPKEEP_CONDITION = new MagicCondition() {
+        public boolean accept(final MagicSource source) {
+            final MagicGame game = source.getGame();
+            return game.isPhase(MagicPhaseType.Upkeep);
+        }
+    };
+
     public static MagicCondition OPPONENTS_UPKEEP_CONDITION = new MagicCondition() {
         public boolean accept(final MagicSource source) {
             final MagicGame game = source.getGame();
