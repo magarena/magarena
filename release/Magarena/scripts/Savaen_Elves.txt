@@ -6,6 +6,6 @@ type=Creature
 subtype=Elf
 cost={G}
 pt=1/1
-ability={G}{G}, {T}: Destroy target Aura attached to a land.
 timing=main
+requires_groovy_code
 oracle={G}{G}, {T}: Destroy target Aura attached to a land.
