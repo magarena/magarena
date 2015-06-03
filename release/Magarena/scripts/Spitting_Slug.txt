@@ -6,6 +6,6 @@ type=Creature
 subtype=Slug
 cost={1}{G}{G}
 pt=2/4
-ability=Whenever SN blocks or becomes blocked, you may pay {1}{G}. If you do, SN gains first strike until end of turn. Otherwise, each creature blocking or blocked by SN gains first strike until end of turn.
 timing=main
+requires_groovy_code
 oracle=Whenever Spitting Slug blocks or becomes blocked, you may pay {1}{G}. If you do, Spitting Slug gains first strike until end of turn. Otherwise, each creature blocking or blocked by Spitting Slug gains first strike until end of turn.
