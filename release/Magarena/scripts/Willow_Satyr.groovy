@@ -18,7 +18,7 @@ def NEG_TARGET_LEGENDARY_CREATURE = MagicTargetChoice.Negative("target legendary
                 NEG_TARGET_LEGENDARY_CREATURE,
                 MagicExileTargetPicker.create(),
                 this,
-                "Gain control of target legendary creature\$ for as long as PN controls SN and SN remains tapped."
+                "PN gains control of target legendary creature\$ for as long as PN controls SN and SN remains tapped."
             );
         }
 
