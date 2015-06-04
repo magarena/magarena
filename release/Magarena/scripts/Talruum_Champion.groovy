@@ -6,7 +6,7 @@ def AB = new MagicStatic(MagicLayer.Ability, MagicStatic.UntilEOT) {
 };
 
 [
-    new MagicWhenBlocksOrBecomesBlockedTrigger() {
+    new MagicWhenBlocksOrBecomesBlockedByTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent blocker) {
             return new MagicEvent(
