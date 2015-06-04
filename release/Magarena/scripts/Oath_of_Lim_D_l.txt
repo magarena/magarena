@@ -4,7 +4,7 @@ value=2.500
 rarity=R
 type=Enchantment
 cost={3}{B}
-ability=Whenever you lose life, for each 1 life you lost, sacrifice a permanent other than SN unless you discard a card.;\
-        {B}{B}: Draw a card.
+ability={B}{B}: Draw a card.
 timing=enchantment
+requires_groovy_code
 oracle=Whenever you lose life, for each 1 life you lost, sacrifice a permanent other than Oath of Lim-Dûl unless you discard a card.\n{B}{B}: Draw a card.
