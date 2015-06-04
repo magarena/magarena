@@ -508,19 +508,17 @@ public class MagicPlayer extends MagicObjectImpl implements MagicSource, MagicTa
     }
 
     public int getNrOfAttackers() {
-        int count=0;
-        for (final MagicPermanent permanent : permanents) {
-            if (permanent.hasState(MagicPermanentState.Attacking)) {
-                count++;
-            }
-        }
-        return count;
+        return getNrOfPermanents(MagicPermanentState.Attacking);
     }
 
     public int getNrOfBlockers() {
+        return getNrOfPermanents(MagicPermanentState.Blocking);
+    }
+    
+    public int getNrOfPermanents(final MagicPermanentState state) {
         int count=0;
         for (final MagicPermanent permanent : permanents) {
-            if (permanent.hasState(MagicPermanentState.Blocking)) {
+            if (permanent.hasState(state)) {
                 count++;
             }
         }

@@ -911,6 +911,11 @@ public class MagicGame {
     public boolean hasTurn(final MagicPlayer player) {
         return player == turnPlayer;
     }
+    
+    public int getNrOfPermanents(final MagicPermanentState state) {
+        return players[0].getNrOfPermanents(state) +
+               players[1].getNrOfPermanents(state);
+    }
 
     public int getNrOfPermanents(final MagicType type) {
         return players[0].getNrOfPermanents(type) +
