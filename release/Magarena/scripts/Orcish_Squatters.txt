@@ -6,6 +6,6 @@ type=Creature
 subtype=Orc
 cost={4}{R}
 pt=2/3
-ability=Whenever SN attacks and isn't blocked, you may gain control of target land defending player controls for as long as you control SN. If you do, SN assigns no combat damage this turn.
 timing=main
+requires_groovy_code
 oracle=Whenever Orcish Squatters attacks and isn't blocked, you may gain control of target land defending player controls for as long as you control Orcish Squatters. If you do, Orcish Squatters assigns no combat damage this turn.
