@@ -13,7 +13,7 @@ def SNOW_MOUNTAIN_CONDITION = new MagicCondition() {
 
 [
     new MagicPermanentActivation(
-        [MagicCondition.ABILITY_ONCE_CONDITION, SNOW_MOUNTAIN_CONDITION],
+        [SNOW_MOUNTAIN_CONDITION],
         new MagicActivationHints(MagicTiming.Pump),
         "Flying"
     ) {
