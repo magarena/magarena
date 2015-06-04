@@ -1,6 +1,6 @@
 name=3/3 blue Weird creature token with defender and flying
 token=Weird
-image=http://cdn.staticneo.com/w/mtg/9/9a/Weird1.jpg
+image=http://cdn.staticneo.com/w/mtg/a/ae/Weird.jpg
 value=3
 type=Creature
 subtype=Weird

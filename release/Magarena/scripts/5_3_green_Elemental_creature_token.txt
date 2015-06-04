@@ -1,6 +1,6 @@
 name=5/3 green Elemental creature token
 token=Elemental
-image=http://www.magicspoiler.com/wp-content/uploads/2014/11/Elemental-Commander-2014-Token.png
+image=http://magiccards.info/extras/token/commander-2014/elemental.jpg
 value=4
 pt=5/3
 color=g

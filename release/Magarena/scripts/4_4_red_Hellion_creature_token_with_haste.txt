@@ -1,6 +1,6 @@
 name=4/4 red Hellion creature token with haste
 token=Hellion
-image=http://www.mtgmintcard.com/images/products/304/MAGIC-THE-GATHERING-HELLION-TOKEN-ROET003.jpg
+image=http://magiccards.info/extras/token/magic-2013/hellion.jpg
 value=4
 type=Creature
 subtype=Hellion

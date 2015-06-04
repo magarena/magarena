@@ -1,6 +1,6 @@
 name=3/4 white Bird creature token with flying
 token=Bird
-image=http://media.wizards.com/images/magic/tcg/products/ktk/8arg43u984398yf/en_e5l3l6c42r.png
+image=http://magiccards.info/extras/token/khans-of-tarkir/bird.jpg
 value=3
 type=Creature
 subtype=Bird
