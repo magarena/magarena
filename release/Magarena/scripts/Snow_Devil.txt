@@ -5,8 +5,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={1}{U}
-ability=Enchant creature;\
-        Enchanted creature has flying.;\
-        Enchanted creature has first strike as long as it's blocking and you control a snow land.
+ability=Enchanted creature has flying.
 timing=aura
+enchant=flying,pos creature
+requires_groovy_code
 oracle=Enchant creature\nEnchanted creature has flying.\nEnchanted creature has first strike as long as it's blocking and you control a snow land.
