@@ -4,6 +4,6 @@ value=2.500
 rarity=U
 type=Artifact
 cost={2}
-ability={T}, Sacrifice SN: Return all Auras attached to target permanent you own to their owners' hands. Draw a card at the beginning of the next turn's upkeep.
 timing=artifact
+requires_groovy_code
 oracle={T}, Sacrifice Scarab of the Unseen: Return all Auras attached to target permanent you own to their owners' hands. Draw a card at the beginning of the next turn's upkeep.
