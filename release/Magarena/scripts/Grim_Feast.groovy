@@ -1,11 +1,11 @@
 [
     new MagicWhenOtherDiesTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPermanent otherPermanent) {
-            return (otherPermanent.isCreature() && permanent.isEnemy(otherPermanent)) ?
+        public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPermanent died) {
+            return (died.isCreature() && permanent.isOpponent(died.getOwner())) ?
                 new MagicEvent(
                     permanent,
-                    otherPermanent,
+                    died,
                     this,
                     "PN gains life equal to RN's toughness."
                 ) :
