@@ -5,8 +5,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={U}
-ability=Enchant creature;\
-        Enchanted creature doesn't untap during its controller's untap step.;\
-        At the beginning of the upkeep of enchanted creature's controller, that player may discard a card at random. If he or she does, untap that creature.
+ability=Enchanted creature doesn't untap during its controller's untap step.
 timing=aura
+enchant=tap,neg creature
+requires_groovy_code
 oracle=Enchant creature\nEnchanted creature doesn't untap during its controller's untap step.\nAt the beginning of the upkeep of enchanted creature's controller, that player may discard a card at random. If he or she does, untap that creature.
