@@ -6,7 +6,7 @@ type=Creature
 subtype=Human,Knight
 cost={2}{W}
 pt=2/2
-ability=Flanking;\
-        {1}{W}: Each creature without flanking blocking SN gets -1/-1 until end of turn. Activate this ability only once each turn.
+ability=Flanking
 timing=main
+requires_groovy_code
 oracle=Flanking\n{1}{W}: Each creature without flanking blocking Knight of Valor gets -1/-1 until end of turn. Activate this ability only once each turn.
