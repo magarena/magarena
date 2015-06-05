@@ -3,8 +3,8 @@ image=http://magiccards.info/scans/en/ai/187.jpg
 value=2.500
 rarity=R
 type=Land
-ability=If SN would enter the battlefield, instead sacrifice each other permanent named SN you control, then put SN onto the battlefield.;\
-        At the beginning of your upkeep, if you control three or fewer lands, you gain 1 life.;\
+ability=At the beginning of your upkeep, if you control three or fewer lands, you gain 1 life.;\
         {T}: Add {1} to your mana pool.
 timing=land
+requires_groovy_code
 oracle=If Sheltered Valley would enter the battlefield, instead sacrifice each other permanent named Sheltered Valley you control, then put Sheltered Valley onto the battlefield.\nAt the beginning of your upkeep, if you control three or fewer lands, you gain 1 life.\n{T}: Add {1} to your mana pool.
