@@ -6,9 +6,6 @@ import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.model.phase.MagicUpkeepPhase;
 
-// There's 4 elves and a bunch of island in the AI's hand - after 4 draws it
-// will draw a Breaching Leviathan which it won't be able to cast as it hasn't
-// been playing any islands
 class TestHandSize extends TestGameBuilder {
     public MagicGame getGame() {
         final MagicDuel duel=createDuel(MagicAIImpl.MCTS,8);
