@@ -243,27 +243,27 @@ public class MagicPlayer extends MagicObjectImpl implements MagicSource, MagicTa
     public int getLife() {
         return life;
     }
-    
+
     public int getLifeGainThisTurn() {
         return lifeGainThisTurn;
     }
-    
+
     public void setLifeGainThisTurn(final int lifeGainThisTurn) {
         this.lifeGainThisTurn=lifeGainThisTurn;
     }
-    
+
     public void changeLifeGainThisTurn(final int lifeGainThisTurn) {
         this.lifeGainThisTurn+=lifeGainThisTurn;
     }
-    
+
     public int getLifeLossThisTurn() {
         return lifeLossThisTurn;
     }
-    
+
     public void setLifeLossThisTurn(final int lifeLossThisTurn) {
         this.lifeLossThisTurn=lifeLossThisTurn;
     }
-    
+
     public void changeLifeLossThisTurn(final int lifeLossThisTurn) {
         this.lifeLossThisTurn+=lifeLossThisTurn;
     }
@@ -295,43 +295,55 @@ public class MagicPlayer extends MagicObjectImpl implements MagicSource, MagicTa
     public void noMaxHandSize() {
         maxHandSize = Integer.MAX_VALUE;
     }
-    
+
+    public void setMaxHandSize(final int amount) {
+        maxHandSize = amount;
+    }
+
+    public void reduceMaxHandSize(final int amount) {
+        maxHandSize -= amount;
+    }
+
+    public void increaseMaxHandSize(final int amount) {
+        maxHandSize += amount;
+    }
+
     public int getCreaturesAttackedThisTurn() {
         return creaturesAttackedThisTurn;
     }
-    
+
     public void setCreaturesAttackedThisTurn(final int count) {
-        creaturesAttackedThisTurn=count; 
+        creaturesAttackedThisTurn=count;
     }
-    
+
     public void incCreaturesAttacked() {
         creaturesAttackedThisTurn++;
     }
-    
+
     public void decCreaturesAttacked() {
         creaturesAttackedThisTurn--;
     }
-    
+
     public int getSpellsCastLastTurn() {
         return spellsCastLastTurn;
     }
-    
+
     public void setSpellsCastLastTurn(final int count) {
         spellsCastLastTurn=count;
     }
-    
+
     public int getSpellsCast() {
         return spellsCast;
     }
-    
+
     public void incSpellsCast() {
         spellsCast++;
     }
-    
+
     public void setSpellsCast(final int count) {
         spellsCast=count;
     }
-    
+
     public MagicCardList getPrivateHand() {
         return hand;
     }
@@ -369,11 +381,11 @@ public class MagicPlayer extends MagicObjectImpl implements MagicSource, MagicTa
                 library.addToTop(card);
             }
         }
-        
+
         // shuffle library
         library.shuffle(MagicRandom.nextRNGInt());
         library.setAIKnown(true);
-        
+
         // put cards into hand
         for (int i = 0; i < handSize - knownCards.size(); i++) {
             addCardToHand(library.removeCardAtTop());
@@ -414,7 +426,7 @@ public class MagicPlayer extends MagicObjectImpl implements MagicSource, MagicTa
 
     public List<MagicCard> filterCards(final MagicTargetFilter<MagicCard> filter) {
         final List<MagicCard> targets = new ArrayList<MagicCard>();
-        
+
         // Cards in graveyard
         if (filter.acceptType(MagicTargetType.Graveyard)) {
             addCards(targets, graveyard, filter);
@@ -424,7 +436,7 @@ public class MagicPlayer extends MagicObjectImpl implements MagicSource, MagicTa
         if (filter.acceptType(MagicTargetType.Hand)) {
             addCards(targets, hand, filter);
         }
-        
+
         // Cards in library
         if (filter.acceptType(MagicTargetType.Library)) {
             addCards(targets, library, filter);
@@ -432,7 +444,7 @@ public class MagicPlayer extends MagicObjectImpl implements MagicSource, MagicTa
 
         return targets;
     }
-            
+
     private void addCards(final List<MagicCard> targets, final MagicCardList list, final MagicTargetFilter<MagicCard> filter) {
         for (final MagicCard card : list) {
             if (filter.accept(MagicSource.NONE, this, card)) {
@@ -514,7 +526,7 @@ public class MagicPlayer extends MagicObjectImpl implements MagicSource, MagicTa
     public int getNrOfBlockers() {
         return getNrOfPermanents(MagicPermanentState.Blocking);
     }
-    
+
     public int getNrOfPermanents(final MagicPermanentState state) {
         int count=0;
         for (final MagicPermanent permanent : permanents) {
@@ -544,7 +556,7 @@ public class MagicPlayer extends MagicObjectImpl implements MagicSource, MagicTa
         }
         return count;
     }
-    
+
     public int getNrOfPermanents(final MagicColor color) {
         int count=0;
         for (final MagicPermanent permanent : permanents) {
@@ -613,7 +625,7 @@ public class MagicPlayer extends MagicObjectImpl implements MagicSource, MagicTa
         }
         return false;
     }
-    
+
     public int getDomain() {
         int domain = 0;
         for (final MagicSubType basicLandType : MagicSubType.ALL_BASIC_LANDS) {
@@ -623,7 +635,7 @@ public class MagicPlayer extends MagicObjectImpl implements MagicSource, MagicTa
         }
         return domain;
     }
-    
+
     public int getDevotion(final MagicColor... colors) {
         int devotion = 0;
         for (final MagicPermanent permanent : permanents) {
@@ -651,7 +663,7 @@ public class MagicPlayer extends MagicObjectImpl implements MagicSource, MagicTa
     public boolean isPlayer() {
         return true;
     }
-    
+
     @Override
     public boolean isSpell() {
         return false;
@@ -671,12 +683,12 @@ public class MagicPlayer extends MagicObjectImpl implements MagicSource, MagicTa
     public MagicPlayer getController() {
         return this;
     }
-    
+
     @Override
     public MagicPlayer getOpponent() {
         return currGame.getOpponent(this);
     }
-    
+
     public boolean isValid() {
         return true;
     }
@@ -716,7 +728,7 @@ public class MagicPlayer extends MagicObjectImpl implements MagicSource, MagicTa
         if (hasAbility(MagicAbility.Hexproof) && isEnemy(source)) {
             return false;
         }
-        
+
         return true;
     }
 
@@ -796,7 +808,7 @@ public class MagicPlayer extends MagicObjectImpl implements MagicSource, MagicTa
     public boolean isHuman() {
         return playerDefinition.getProfile().isHuman();
     }
-    
+
     public boolean isArtificial() {
         return playerDefinition.getProfile().isArtificial();
     }

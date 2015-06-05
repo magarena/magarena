@@ -6,7 +6,7 @@ type=Creature
 subtype=Beast
 cost={U}
 pt=1/1
-ability=Flying;\
-        Your maximum hand size is reduced by two.
+ability=Flying
 timing=main
+requires_groovy_code
 oracle=Flying\nYour maximum hand size is reduced by two.
