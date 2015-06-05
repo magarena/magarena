@@ -6,6 +6,6 @@ type=Creature
 subtype=Rat,Shaman
 cost={2}{B}{B}
 pt=2/2
-ability=Each opponent's maximum hand size is reduced by two.
 timing=main
+requires_groovy_code
 oracle=Each opponent's maximum hand size is reduced by two.
