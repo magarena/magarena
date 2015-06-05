@@ -7,7 +7,7 @@ subtype=Praetor
 cost={8}{U}{U}
 pt=5/4
 ability=Flash;\
-        At the beginning of your end step, draw seven cards.;\
-        Each opponent's maximum hand size is reduced by seven.
-timing=main
+        At the beginning of your end step, draw seven cards.
+timing=flash
+requires_groovy_code
 oracle=Flash\nAt the beginning of your end step, draw seven cards.\nEach opponent's maximum hand size is reduced by seven.
