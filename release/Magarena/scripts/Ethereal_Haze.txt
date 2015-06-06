@@ -5,6 +5,6 @@ rarity=C
 type=Instant
 subtype=Arcane
 cost={W}
-effect=Prevent all damage that would be dealt by creatures this turn.
-timing=removal
+timing=attack
+requires_groovy_code
 oracle=Prevent all damage that would be dealt by creatures this turn.
