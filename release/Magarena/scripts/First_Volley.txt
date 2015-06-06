@@ -5,6 +5,6 @@ rarity=C
 type=Instant
 subtype=Arcane
 cost={1}{R}
-effect=SN deals 1 damage to target creature and 1 damage to that creature's controller.
 timing=removal
+requires_groovy_code
 oracle=First Volley deals 1 damage to target creature and 1 damage to that creature's controller.
