@@ -13,7 +13,7 @@ def ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
     }
     @Override
     public int getTypeFlags(final MagicPermanent permanent,final int flags) {
-        return flags|MagicType.Creature.getMask()|MagicType.Artifact();
+        return flags|MagicType.Creature.getMask()|MagicType.Artifact.getMask();
     }
 };
 [
