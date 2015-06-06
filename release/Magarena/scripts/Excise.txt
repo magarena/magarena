@@ -4,6 +4,6 @@ value=3.394
 rarity=C
 type=Instant
 cost={X}{W}
-effect=Exile target attacking creature unless its controller pays {X}.
-timing=removal
+timing=attack
+requires_groovy_code
 oracle=Exile target attacking creature unless its controller pays {X}.
