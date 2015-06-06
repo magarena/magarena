@@ -451,7 +451,7 @@ public enum MagicConditionParser {
         }
     },
     CreatureInYourGraveyard("you have a creature card in your graveyard") {
-        public MagicCondition toCondition(final Matcher arf) { return MagicCondition.CREATURE_IN_YOUR_GRAVEYARD;}
+        public MagicCondition toCondition(final Matcher arf) { return MagicCondition.HAS_CREATURE_IN_GRAVEYARD;}
     },
     ArtifactInYourGraveyard("you have an artifact card in your graveyard") {
         public MagicCondition toCondition(final Matcher arf) { return MagicCondition.HAS_ARTIFACT_IN_GRAVEYARD;}

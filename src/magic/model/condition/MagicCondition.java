@@ -756,7 +756,7 @@ public abstract class MagicCondition implements MagicMatchedCostEvent {
         }
     };
 
-    public static MagicCondition CREATURE_IN_YOUR_GRAVEYARD = new MagicCondition() {
+    public static MagicCondition HAS_CREATURE_IN_GRAVEYARD = new MagicCondition() {
         public boolean accept(MagicSource source) {
             final MagicPlayer player = source.getController();
             return MagicTargetFilterFactory.CREATURE_CARD_FROM_GRAVEYARD.filter(player).size() > 0;
