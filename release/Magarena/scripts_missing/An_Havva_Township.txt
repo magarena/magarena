@@ -1,6 +1,6 @@
 name=An-Havva Township
 image=http://magiccards.info/scans/en/hl/136.jpg
-value=2.500
+value=1.437
 rarity=U
 type=Land
 ability={T}: Add {1} to your mana pool.;\

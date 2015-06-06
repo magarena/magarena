@@ -1,6 +1,6 @@
 name=Twist Allegiance
 image=http://magiccards.info/scans/en/bok/120.jpg
-value=2.500
+value=3.257
 rarity=R
 type=Sorcery
 cost={6}{R}

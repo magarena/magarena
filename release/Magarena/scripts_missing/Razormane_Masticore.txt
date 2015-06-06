@@ -1,6 +1,6 @@
 name=Razormane Masticore
 image=http://magiccards.info/scans/en/ddf/56.jpg
-value=2.500
+value=4.509
 rarity=R
 type=Artifact,Creature
 subtype=Masticore

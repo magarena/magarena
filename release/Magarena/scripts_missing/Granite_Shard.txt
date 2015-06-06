@@ -1,6 +1,6 @@
 name=Granite Shard
 image=http://magiccards.info/scans/en/mi/182.jpg
-value=2.500
+value=3.013
 rarity=U
 type=Artifact
 cost={3}

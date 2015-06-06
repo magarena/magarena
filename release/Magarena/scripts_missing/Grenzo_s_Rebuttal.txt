@@ -1,6 +1,6 @@
 name=Grenzo's Rebuttal
 image=http://magiccards.info/scans/en/cns/33.jpg
-value=2.500
+value=3.889
 rarity=R
 type=Sorcery
 cost={4}{R}{R}

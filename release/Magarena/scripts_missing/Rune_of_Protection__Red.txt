@@ -1,6 +1,6 @@
 name=Rune of Protection: Red
 image=http://magiccards.info/scans/en/us/40.jpg
-value=2.500
+value=3.855
 rarity=C
 type=Enchantment
 cost={1}{W}

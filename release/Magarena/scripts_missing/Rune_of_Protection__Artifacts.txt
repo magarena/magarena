@@ -1,6 +1,6 @@
 name=Rune of Protection: Artifacts
 image=http://magiccards.info/scans/en/us/35.jpg
-value=2.500
+value=3.606
 rarity=U
 type=Enchantment
 cost={1}{W}

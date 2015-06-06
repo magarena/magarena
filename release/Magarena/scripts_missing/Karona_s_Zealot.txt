@@ -1,6 +1,6 @@
 name=Karona's Zealot
 image=http://magiccards.info/scans/en/sc/18.jpg
-value=2.500
+value=2.340
 rarity=U
 type=Creature
 subtype=Human,Cleric

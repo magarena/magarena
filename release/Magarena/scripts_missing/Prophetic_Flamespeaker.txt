@@ -1,6 +1,6 @@
 name=Prophetic Flamespeaker
 image=http://magiccards.info/scans/en/jou/106.jpg
-value=2.500
+value=4.262
 rarity=M
 type=Creature
 subtype=Human,Shaman

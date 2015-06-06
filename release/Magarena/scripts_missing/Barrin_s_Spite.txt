@@ -1,6 +1,6 @@
 name=Barrin's Spite
 image=http://magiccards.info/scans/en/in/235.jpg
-value=2.500
+value=3.688
 rarity=R
 type=Sorcery
 cost={2}{U}{B}

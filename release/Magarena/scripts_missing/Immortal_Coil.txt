@@ -1,6 +1,6 @@
 name=Immortal Coil
 image=http://magiccards.info/scans/en/ala/79.jpg
-value=2.500
+value=2.966
 rarity=R
 type=Artifact
 cost={2}{B}{B}

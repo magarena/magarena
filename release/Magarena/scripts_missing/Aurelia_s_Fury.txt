@@ -1,6 +1,6 @@
 name=Aurelia's Fury
 image=http://magiccards.info/scans/en/gtc/144.jpg
-value=2.500
+value=4.041
 rarity=M
 type=Instant
 cost={X}{R}{W}

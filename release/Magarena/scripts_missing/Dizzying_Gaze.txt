@@ -1,6 +1,6 @@
 name=Dizzying Gaze
 image=http://magiccards.info/scans/en/ex/81.jpg
-value=2.500
+value=2.672
 rarity=C
 type=Enchantment
 subtype=Aura

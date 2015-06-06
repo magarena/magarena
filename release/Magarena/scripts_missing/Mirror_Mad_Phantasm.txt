@@ -1,6 +1,6 @@
 name=Mirror-Mad Phantasm
 image=http://magiccards.info/scans/en/isd/68.jpg
-value=2.500
+value=3.773
 rarity=M
 type=Creature
 subtype=Spirit

@@ -1,6 +1,6 @@
 name=Nether Spirit
 image=http://magiccards.info/scans/en/mm/149.jpg
-value=2.500
+value=4.250
 rarity=R
 type=Creature
 subtype=Spirit

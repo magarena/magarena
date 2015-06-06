@@ -1,6 +1,6 @@
 name=Sentry Oak
 image=http://magiccards.info/scans/en/lw/38.jpg
-value=2.500
+value=1.967
 rarity=U
 type=Creature
 subtype=Treefolk,Warrior

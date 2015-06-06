@@ -1,6 +1,6 @@
 name=Loyal Cathar
 image=http://magiccards.info/scans/en/dka/13a.jpg
-value=2.500
+value=3.595
 rarity=C
 type=Creature
 subtype=Human,Soldier

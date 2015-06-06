@@ -1,6 +1,6 @@
 name=Elephant Grass
 image=http://magiccards.info/scans/en/vi/54.jpg
-value=2.500
+value=4.048
 rarity=U
 type=Enchantment
 cost={G}

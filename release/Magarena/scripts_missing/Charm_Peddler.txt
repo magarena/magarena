@@ -1,6 +1,6 @@
 name=Charm Peddler
 image=http://magiccards.info/scans/en/mm/6.jpg
-value=2.500
+value=2.786
 rarity=C
 type=Creature
 subtype=Human,Spellshaper

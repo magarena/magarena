@@ -1,6 +1,6 @@
 name=Erayo, Soratami Ascendant
 image=http://magiccards.info/scans/en/sok/35a.jpg
-value=2.500
+value=4.211
 rarity=R
 type=Legendary,Creature
 subtype=Moonfolk,Monk

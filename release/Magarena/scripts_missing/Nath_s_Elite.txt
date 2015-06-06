@@ -1,6 +1,6 @@
 name=Nath's Elite
 image=http://magiccards.info/scans/en/lw/231.jpg
-value=2.500
+value=2.900
 rarity=C
 type=Creature
 subtype=Elf,Warrior

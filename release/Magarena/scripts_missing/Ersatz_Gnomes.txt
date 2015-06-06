@@ -1,6 +1,6 @@
 name=Ersatz Gnomes
 image=http://magiccards.info/scans/en/mr/266.jpg
-value=2.500
+value=3.837
 rarity=U
 type=Artifact,Creature
 subtype=Gnome

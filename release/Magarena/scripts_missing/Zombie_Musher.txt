@@ -1,6 +1,6 @@
 name=Zombie Musher
 image=http://magiccards.info/scans/en/cs/75.jpg
-value=2.500
+value=3.152
 rarity=C
 type=Snow,Creature
 subtype=Zombie

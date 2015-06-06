@@ -1,6 +1,6 @@
 name=Spectral Shield
 image=http://magiccards.info/scans/en/me3/176.jpg
-value=2.500
+value=2.771
 rarity=U
 type=Enchantment
 subtype=Aura

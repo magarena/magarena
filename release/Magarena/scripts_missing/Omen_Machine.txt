@@ -1,6 +1,6 @@
 name=Omen Machine
 image=http://magiccards.info/scans/en/nph/148.jpg
-value=2.500
+value=3.082
 rarity=R
 type=Artifact
 cost={6}

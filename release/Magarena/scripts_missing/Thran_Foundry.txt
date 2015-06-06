@@ -1,6 +1,6 @@
 name=Thran Foundry
 image=http://magiccards.info/scans/en/ud/140.jpg
-value=2.500
+value=3.707
 rarity=U
 type=Artifact
 cost={1}

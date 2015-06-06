@@ -1,6 +1,6 @@
 name=Deftblade Elite
 image=http://magiccards.info/scans/en/vma/23.jpg
-value=2.500
+value=3.250
 rarity=C
 type=Creature
 subtype=Human,Soldier

@@ -1,6 +1,6 @@
 name=Rakdos Augermage
 image=http://magiccards.info/scans/en/di/127.jpg
-value=2.500
+value=3.684
 rarity=R
 type=Creature
 subtype=Human,Wizard

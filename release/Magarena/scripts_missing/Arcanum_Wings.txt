@@ -1,6 +1,6 @@
 name=Arcanum Wings
 image=http://magiccards.info/scans/en/fut/48.jpg
-value=2.500
+value=3.847
 rarity=U
 type=Enchantment
 subtype=Aura

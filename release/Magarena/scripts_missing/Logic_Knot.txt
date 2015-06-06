@@ -1,6 +1,6 @@
 name=Logic Knot
 image=http://magiccards.info/scans/en/mma/51.jpg
-value=2.500
+value=3.794
 rarity=C
 type=Instant
 cost={X}{U}{U}

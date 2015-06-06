@@ -1,6 +1,6 @@
 name=Rootwater Thief
 image=http://magiccards.info/scans/en/ne/40.jpg
-value=2.500
+value=4.396
 rarity=R
 type=Creature
 subtype=Merfolk,Rogue

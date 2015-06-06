@@ -1,6 +1,6 @@
 name=Opaline Bracers
 image=http://magiccards.info/scans/en/5dn/141.jpg
-value=2.500
+value=3.040
 rarity=C
 type=Artifact
 subtype=Equipment

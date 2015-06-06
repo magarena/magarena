@@ -1,6 +1,6 @@
 name=Reign of Chaos
 image=http://magiccards.info/scans/en/mr/190.jpg
-value=2.500
+value=3.636
 rarity=U
 type=Sorcery
 cost={2}{R}{R}

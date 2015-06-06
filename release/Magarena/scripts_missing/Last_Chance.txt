@@ -1,6 +1,6 @@
 name=Last Chance
 image=http://magiccards.info/scans/en/me4/125.jpg
-value=2.500
+value=3.961
 rarity=R
 type=Sorcery
 cost={R}{R}

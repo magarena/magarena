@@ -1,6 +1,6 @@
 name=Gideon Jura
 image=http://magiccards.info/scans/en/m12/16.jpg
-value=2.500
+value=4.098
 rarity=M
 type=Planeswalker
 subtype=Gideon

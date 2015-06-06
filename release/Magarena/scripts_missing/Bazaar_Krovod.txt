@@ -1,6 +1,6 @@
 name=Bazaar Krovod
 image=http://magiccards.info/scans/en/rtr/7.jpg
-value=2.500
+value=2.017
 rarity=U
 type=Creature
 subtype=Beast

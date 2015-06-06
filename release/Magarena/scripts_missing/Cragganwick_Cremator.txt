@@ -1,6 +1,6 @@
 name=Cragganwick Cremator
 image=http://magiccards.info/scans/en/shm/87.jpg
-value=2.500
+value=3.538
 rarity=R
 type=Creature
 subtype=Giant,Shaman

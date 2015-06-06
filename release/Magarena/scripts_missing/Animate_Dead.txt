@@ -1,6 +1,6 @@
 name=Animate Dead
 image=http://magiccards.info/scans/en/vma/104.jpg
-value=2.500
+value=4.500
 rarity=U
 type=Enchantment
 subtype=Aura

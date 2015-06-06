@@ -1,6 +1,6 @@
 name=Triclopean Sight
 image=http://magiccards.info/scans/en/lw/45.jpg
-value=2.500
+value=3.071
 rarity=C
 type=Enchantment
 subtype=Aura

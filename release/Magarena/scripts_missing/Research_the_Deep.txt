@@ -1,6 +1,6 @@
 name=Research the Deep
 image=http://magiccards.info/scans/en/mt/46.jpg
-value=2.500
+value=2.438
 rarity=U
 type=Sorcery
 cost={1}{U}

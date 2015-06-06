@@ -1,6 +1,6 @@
 name=Warden of the Beyond
 image=http://magiccards.info/scans/en/m15/42.jpg
-value=2.500
+value=3.071
 rarity=U
 type=Creature
 subtype=Human,Wizard

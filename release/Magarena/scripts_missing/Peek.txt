@@ -1,6 +1,6 @@
 name=Peek
 image=http://magiccards.info/scans/en/10e/94.jpg
-value=2.500
+value=3.537
 rarity=C
 type=Instant
 cost={U}

@@ -1,6 +1,6 @@
 name=Foresee
 image=http://magiccards.info/scans/en/m11/54.jpg
-value=2.500
+value=4.011
 rarity=C
 type=Sorcery
 cost={3}{U}

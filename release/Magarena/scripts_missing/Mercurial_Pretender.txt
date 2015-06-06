@@ -1,6 +1,6 @@
 name=Mercurial Pretender
 image=http://magiccards.info/scans/en/m15/68.jpg
-value=2.500
+value=2.583
 rarity=R
 type=Creature
 subtype=Shapeshifter

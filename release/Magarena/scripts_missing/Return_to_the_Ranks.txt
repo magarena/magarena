@@ -1,6 +1,6 @@
 name=Return to the Ranks
 image=http://magiccards.info/scans/en/m15/29.jpg
-value=2.500
+value=3.357
 rarity=R
 type=Sorcery
 cost={X}{W}{W}

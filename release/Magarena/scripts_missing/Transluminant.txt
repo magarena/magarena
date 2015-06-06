@@ -1,6 +1,6 @@
 name=Transluminant
 image=http://magiccards.info/scans/en/rav/186.jpg
-value=2.500
+value=2.949
 rarity=C
 type=Creature
 subtype=Dryad,Shaman

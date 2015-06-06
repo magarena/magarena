@@ -1,6 +1,6 @@
 name=Clockwork Avian
 image=http://magiccards.info/scans/en/me4/190.jpg
-value=2.500
+value=3.182
 rarity=U
 type=Artifact,Creature
 subtype=Bird

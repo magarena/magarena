@@ -1,6 +1,6 @@
 name=Hollow Warrior
 image=http://magiccards.info/scans/en/pr/138.jpg
-value=2.500
+value=2.321
 rarity=U
 type=Artifact,Creature
 subtype=Golem,Warrior

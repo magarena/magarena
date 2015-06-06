@@ -1,6 +1,6 @@
 name=Proteus Machine
 image=http://magiccards.info/scans/en/sc/141.jpg
-value=2.500
+value=3.132
 rarity=U
 type=Artifact,Creature
 subtype=Shapeshifter

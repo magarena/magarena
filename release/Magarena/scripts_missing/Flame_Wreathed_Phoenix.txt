@@ -1,6 +1,6 @@
 name=Flame-Wreathed Phoenix
 image=http://magiccards.info/scans/en/bng/97.jpg
-value=2.500
+value=3.589
 rarity=M
 type=Creature
 subtype=Phoenix

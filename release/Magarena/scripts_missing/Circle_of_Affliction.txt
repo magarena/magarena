@@ -1,6 +1,6 @@
 name=Circle of Affliction
 image=http://magiccards.info/scans/en/pc/66.jpg
-value=2.500
+value=3.375
 rarity=U
 type=Enchantment
 cost={1}{B}

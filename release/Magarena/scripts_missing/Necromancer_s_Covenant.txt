@@ -1,6 +1,6 @@
 name=Necromancer's Covenant
 image=http://magiccards.info/scans/en/arb/82.jpg
-value=2.500
+value=3.667
 rarity=R
 type=Enchantment
 cost={3}{W}{B}{B}

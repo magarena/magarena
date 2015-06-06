@@ -1,6 +1,6 @@
 name=Quicksilver Elemental
 image=http://magiccards.info/scans/en/mi/47.jpg
-value=2.500
+value=3.888
 rarity=R
 type=Creature
 subtype=Elemental

@@ -1,6 +1,6 @@
 name=Blood Vassal
 image=http://magiccards.info/scans/en/us/118.jpg
-value=2.500
+value=3.817
 rarity=C
 type=Creature
 subtype=Thrull

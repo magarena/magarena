@@ -1,6 +1,6 @@
 name=Drudge Spell
 image=http://magiccards.info/scans/en/hl/6.jpg
-value=2.500
+value=3.130
 rarity=U
 type=Enchantment
 cost={B}{B}

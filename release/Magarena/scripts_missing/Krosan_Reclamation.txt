@@ -1,6 +1,6 @@
 name=Krosan Reclamation
 image=http://magiccards.info/scans/en/ju/122.jpg
-value=2.500
+value=3.052
 rarity=U
 type=Instant
 cost={1}{G}

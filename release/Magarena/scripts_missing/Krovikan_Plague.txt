@@ -1,6 +1,6 @@
 name=Krovikan Plague
 image=http://magiccards.info/scans/en/ai/16.jpg
-value=2.500
+value=2.685
 rarity=U
 type=Enchantment
 subtype=Aura

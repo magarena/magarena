@@ -1,6 +1,6 @@
 name=Desert Nomads
 image=http://magiccards.info/scans/en/an/47.jpg
-value=2.500
+value=2.627
 rarity=C
 type=Creature
 subtype=Human,Nomad

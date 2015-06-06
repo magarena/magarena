@@ -1,6 +1,6 @@
 name=Ponder
 image=http://magiccards.info/scans/en/m12/73.jpg
-value=2.500
+value=4.565
 rarity=C
 type=Sorcery
 cost={U}

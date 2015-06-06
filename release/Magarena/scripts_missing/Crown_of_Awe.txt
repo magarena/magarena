@@ -1,6 +1,6 @@
 name=Crown of Awe
 image=http://magiccards.info/scans/en/on/16.jpg
-value=2.500
+value=3.026
 rarity=C
 type=Enchantment
 subtype=Aura

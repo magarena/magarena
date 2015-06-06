@@ -1,6 +1,6 @@
 name=Evolution Vat
 image=http://magiccards.info/scans/en/di/161.jpg
-value=2.500
+value=3.365
 rarity=R
 type=Artifact
 cost={3}

@@ -1,6 +1,6 @@
 name=Wu Scout
 image=http://magiccards.info/scans/en/p3k/62.jpg
-value=2.500
+value=3.379
 rarity=C
 type=Creature
 subtype=Human,Soldier,Scout

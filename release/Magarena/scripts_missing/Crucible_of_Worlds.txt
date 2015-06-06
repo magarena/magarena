@@ -1,6 +1,6 @@
 name=Crucible of Worlds
 image=http://magiccards.info/scans/en/10e/319.jpg
-value=2.500
+value=4.597
 rarity=R
 type=Artifact
 cost={3}

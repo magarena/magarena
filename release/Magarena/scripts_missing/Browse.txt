@@ -1,6 +1,6 @@
 name=Browse
 image=http://magiccards.info/scans/en/cstd/10.jpg
-value=2.500
+value=4.298
 rarity=U
 type=Enchantment
 cost={2}{U}{U}

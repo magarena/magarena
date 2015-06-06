@@ -1,6 +1,6 @@
 name=Impaler Shrike
 image=http://magiccards.info/scans/en/nph/36.jpg
-value=2.500
+value=3.104
 rarity=C
 type=Creature
 subtype=Bird

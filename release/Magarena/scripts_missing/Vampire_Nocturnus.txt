@@ -1,6 +1,6 @@
 name=Vampire Nocturnus
 image=http://magiccards.info/scans/en/m13/113.jpg
-value=2.500
+value=3.976
 rarity=M
 type=Creature
 subtype=Vampire

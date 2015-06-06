@@ -1,6 +1,6 @@
 name=Overburden
 image=http://magiccards.info/scans/en/pr/39.jpg
-value=2.500
+value=3.977
 rarity=R
 type=Enchantment
 cost={1}{U}

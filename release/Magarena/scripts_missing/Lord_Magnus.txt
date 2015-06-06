@@ -1,6 +1,6 @@
 name=Lord Magnus
 image=http://magiccards.info/scans/en/lg/283.jpg
-value=2.500
+value=2.429
 rarity=U
 type=Legendary,Creature
 subtype=Human,Druid

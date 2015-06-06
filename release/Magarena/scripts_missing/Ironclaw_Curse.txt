@@ -1,6 +1,6 @@
 name=Ironclaw Curse
 image=http://magiccards.info/scans/en/5e/244.jpg
-value=2.500
+value=2.196
 rarity=R
 type=Enchantment
 subtype=Aura

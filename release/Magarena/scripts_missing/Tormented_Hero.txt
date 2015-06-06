@@ -1,6 +1,6 @@
 name=Tormented Hero
 image=http://magiccards.info/scans/en/ths/108.jpg
-value=2.500
+value=3.627
 rarity=U
 type=Creature
 subtype=Human,Warrior

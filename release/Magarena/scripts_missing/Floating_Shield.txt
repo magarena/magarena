@@ -1,6 +1,6 @@
 name=Floating Shield
 image=http://magiccards.info/scans/en/tr/5.jpg
-value=2.500
+value=2.618
 rarity=C
 type=Enchantment
 subtype=Aura

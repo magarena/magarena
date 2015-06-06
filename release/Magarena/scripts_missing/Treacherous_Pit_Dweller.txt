@@ -1,6 +1,6 @@
 name=Treacherous Pit-Dweller
 image=http://magiccards.info/scans/en/avr/121.jpg
-value=2.500
+value=3.110
 rarity=R
 type=Creature
 subtype=Demon

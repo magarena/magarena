@@ -1,6 +1,6 @@
 name=Vigor Mortis
 image=http://magiccards.info/scans/en/ddj/74.jpg
-value=2.500
+value=3.750
 rarity=U
 type=Sorcery
 cost={2}{B}{B}

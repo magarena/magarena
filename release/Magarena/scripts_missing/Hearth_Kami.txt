@@ -1,6 +1,6 @@
 name=Hearth Kami
 image=http://magiccards.info/scans/en/chk/171.jpg
-value=2.500
+value=3.366
 rarity=C
 type=Creature
 subtype=Spirit

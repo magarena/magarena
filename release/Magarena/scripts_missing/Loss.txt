@@ -1,6 +1,6 @@
 name=Loss
 image=http://magiccards.info/scans/en/dgm/130b.jpg
-value=2.500
+value=2.413
 rarity=U
 type=Instant
 cost={2}{B}

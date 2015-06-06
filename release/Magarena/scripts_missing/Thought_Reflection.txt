@@ -1,6 +1,6 @@
 name=Thought Reflection
 image=http://magiccards.info/scans/en/shm/53.jpg
-value=2.500
+value=3.317
 rarity=R
 type=Enchantment
 cost={4}{U}{U}{U}

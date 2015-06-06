@@ -1,6 +1,6 @@
 name=Paroxysm
 image=http://magiccards.info/scans/en/ex/94.jpg
-value=2.500
+value=1.757
 rarity=U
 type=Enchantment
 subtype=Aura

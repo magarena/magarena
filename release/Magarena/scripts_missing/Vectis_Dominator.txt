@@ -1,6 +1,6 @@
 name=Vectis Dominator
 image=http://magiccards.info/scans/en/arb/84.jpg
-value=2.500
+value=2.292
 rarity=C
 type=Artifact,Creature
 subtype=Human,Wizard

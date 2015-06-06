@@ -1,6 +1,6 @@
 name=Academy Raider
 image=http://magiccards.info/scans/en/m14/124.jpg
-value=2.500
+value=2.354
 rarity=C
 type=Creature
 subtype=Human,Warrior

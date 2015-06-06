@@ -1,6 +1,6 @@
 name=Spear of Heliod
 image=http://magiccards.info/scans/en/ths/33.jpg
-value=2.500
+value=3.538
 rarity=R
 type=Legendary,Enchantment,Artifact
 cost={1}{W}{W}

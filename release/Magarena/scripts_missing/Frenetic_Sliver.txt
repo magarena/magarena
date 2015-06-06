@@ -1,6 +1,6 @@
 name=Frenetic Sliver
 image=http://magiccards.info/scans/en/pc/157.jpg
-value=2.500
+value=3.250
 rarity=U
 type=Creature
 subtype=Sliver

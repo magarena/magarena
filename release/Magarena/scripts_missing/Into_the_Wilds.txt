@@ -1,6 +1,6 @@
 name=Into the Wilds
 image=http://magiccards.info/scans/en/m14/180.jpg
-value=2.500
+value=3.598
 rarity=R
 type=Enchantment
 cost={3}{G}

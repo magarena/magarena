@@ -1,6 +1,6 @@
 name=Phytotitan
 image=http://magiccards.info/scans/en/m15/191.jpg
-value=2.500
+value=3.444
 rarity=R
 type=Creature
 subtype=Plant,Elemental

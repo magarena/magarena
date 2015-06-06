@@ -1,6 +1,6 @@
 name=Willing
 image=http://magiccards.info/scans/en/dgm/132b.jpg
-value=2.500
+value=3.758
 rarity=R
 type=Instant
 cost={1}{W}{B}

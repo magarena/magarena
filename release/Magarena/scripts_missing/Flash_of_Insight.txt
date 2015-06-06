@@ -1,6 +1,6 @@
 name=Flash of Insight
 image=http://magiccards.info/scans/en/ju/40.jpg
-value=2.500
+value=3.424
 rarity=U
 type=Instant
 cost={X}{1}{U}

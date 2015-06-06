@@ -1,6 +1,6 @@
 name=Blind Zealot
 image=http://magiccards.info/scans/en/nph/52.jpg
-value=2.500
+value=3.560
 rarity=C
 type=Creature
 subtype=Human,Cleric

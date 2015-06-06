@@ -1,6 +1,6 @@
 name=Lashknife Barrier
 image=http://magiccards.info/scans/en/ps/9.jpg
-value=2.500
+value=3.708
 rarity=U
 type=Enchantment
 cost={2}{W}

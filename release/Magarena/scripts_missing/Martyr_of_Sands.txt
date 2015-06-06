@@ -1,6 +1,6 @@
 name=Martyr of Sands
 image=http://magiccards.info/scans/en/cs/15.jpg
-value=2.500
+value=4.315
 rarity=C
 type=Creature
 subtype=Human,Cleric

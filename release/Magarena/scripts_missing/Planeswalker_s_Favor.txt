@@ -1,6 +1,6 @@
 name=Planeswalker's Favor
 image=http://magiccards.info/scans/en/ps/86.jpg
-value=2.500
+value=3.327
 rarity=R
 type=Enchantment
 cost={2}{G}

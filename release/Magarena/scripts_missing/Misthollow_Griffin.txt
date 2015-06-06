@@ -1,6 +1,6 @@
 name=Misthollow Griffin
 image=http://magiccards.info/scans/en/avr/68.jpg
-value=2.500
+value=3.818
 rarity=M
 type=Creature
 subtype=Griffin

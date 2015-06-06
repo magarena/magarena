@@ -1,6 +1,6 @@
 name=Hindering Light
 image=http://magiccards.info/scans/en/ala/173.jpg
-value=2.500
+value=3.715
 rarity=C
 type=Instant
 cost={W}{U}

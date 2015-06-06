@@ -1,6 +1,6 @@
 name=Mistform Stalker
 image=http://magiccards.info/scans/en/on/98.jpg
-value=2.500
+value=2.763
 rarity=U
 type=Creature
 subtype=Illusion

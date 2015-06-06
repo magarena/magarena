@@ -1,6 +1,6 @@
 name=Sovereigns of Lost Alara
 image=http://magiccards.info/scans/en/arb/12.jpg
-value=2.500
+value=3.783
 rarity=R
 type=Creature
 subtype=Spirit

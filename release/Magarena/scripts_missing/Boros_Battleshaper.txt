@@ -1,6 +1,6 @@
 name=Boros Battleshaper
 image=http://magiccards.info/scans/en/dgm/58.jpg
-value=2.500
+value=3.482
 rarity=R
 type=Creature
 subtype=Minotaur,Soldier

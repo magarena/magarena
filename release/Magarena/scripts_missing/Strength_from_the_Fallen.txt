@@ -1,6 +1,6 @@
 name=Strength from the Fallen
 image=http://magiccards.info/scans/en/jou/143.jpg
-value=2.500
+value=3.000
 rarity=U
 type=Enchantment
 cost={1}{G}

@@ -1,6 +1,6 @@
 name=Violent Ultimatum
 image=http://magiccards.info/scans/en/ala/206.jpg
-value=2.500
+value=3.379
 rarity=R
 type=Sorcery
 cost={B}{B}{R}{R}{R}{G}{G}

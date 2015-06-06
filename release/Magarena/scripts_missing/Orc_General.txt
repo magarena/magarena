@@ -1,6 +1,6 @@
 name=Orc General
 image=http://magiccards.info/scans/en/me2/137.jpg
-value=2.500
+value=3.138
 rarity=U
 type=Creature
 subtype=Orc,Warrior

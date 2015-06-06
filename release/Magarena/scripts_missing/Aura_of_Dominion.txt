@@ -1,6 +1,6 @@
 name=Aura of Dominion
 image=http://magiccards.info/scans/en/chk/51.jpg
-value=2.500
+value=2.833
 rarity=U
 type=Enchantment
 subtype=Aura

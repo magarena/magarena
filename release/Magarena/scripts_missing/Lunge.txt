@@ -1,6 +1,6 @@
 name=Lunge
 image=http://magiccards.info/scans/en/mm/203.jpg
-value=2.500
+value=3.284
 rarity=C
 type=Instant
 cost={2}{R}

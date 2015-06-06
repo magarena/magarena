@@ -1,6 +1,6 @@
 name=Stasis
 image=http://magiccards.info/scans/en/me4/64.jpg
-value=2.500
+value=4.546
 rarity=R
 type=Enchantment
 cost={1}{U}

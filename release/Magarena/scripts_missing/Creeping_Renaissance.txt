@@ -1,6 +1,6 @@
 name=Creeping Renaissance
 image=http://magiccards.info/scans/en/isd/174.jpg
-value=2.500
+value=3.804
 rarity=R
 type=Sorcery
 cost={3}{G}{G}

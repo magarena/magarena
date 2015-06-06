@@ -1,6 +1,6 @@
 name=Wei Assassins
 image=http://magiccards.info/scans/en/p3k/86.jpg
-value=2.500
+value=2.980
 rarity=U
 type=Creature
 subtype=Human,Soldier,Assassin

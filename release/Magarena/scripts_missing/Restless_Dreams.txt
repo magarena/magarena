@@ -1,6 +1,6 @@
 name=Restless Dreams
 image=http://magiccards.info/scans/en/tr/79.jpg
-value=2.500
+value=2.741
 rarity=C
 type=Sorcery
 cost={B}

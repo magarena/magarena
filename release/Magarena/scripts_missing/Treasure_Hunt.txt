@@ -1,6 +1,6 @@
 name=Treasure Hunt
 image=http://magiccards.info/scans/en/wwk/42.jpg
-value=2.500
+value=3.715
 rarity=C
 type=Sorcery
 cost={1}{U}

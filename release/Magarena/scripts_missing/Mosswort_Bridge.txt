@@ -1,6 +1,6 @@
 name=Mosswort Bridge
 image=http://magiccards.info/scans/en/c13/307.jpg
-value=2.500
+value=3.600
 rarity=R
 type=Land
 ability=Hideaway;\

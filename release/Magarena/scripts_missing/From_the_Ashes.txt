@@ -1,6 +1,6 @@
 name=From the Ashes
 image=http://magiccards.info/scans/en/c13/108.jpg
-value=2.500
+value=3.719
 rarity=R
 type=Sorcery
 cost={3}{R}

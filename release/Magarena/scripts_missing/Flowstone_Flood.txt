@@ -1,6 +1,6 @@
 name=Flowstone Flood
 image=http://magiccards.info/scans/en/ex/83.jpg
-value=2.500
+value=2.386
 rarity=U
 type=Sorcery
 cost={3}{R}

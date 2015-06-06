@@ -1,6 +1,6 @@
 name=Medomai the Ageless
 image=http://magiccards.info/scans/en/ths/196.jpg
-value=2.500
+value=3.516
 rarity=M
 type=Legendary,Creature
 subtype=Sphinx

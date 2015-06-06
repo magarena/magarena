@@ -1,6 +1,6 @@
 name=Might Makes Right
 image=http://magiccards.info/scans/en/m15/156.jpg
-value=2.500
+value=2.083
 rarity=U
 type=Enchantment
 cost={5}{R}

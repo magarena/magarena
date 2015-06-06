@@ -1,6 +1,6 @@
 name=Aura of Silence
 image=http://magiccards.info/scans/en/10e/6.jpg
-value=2.500
+value=4.465
 rarity=U
 type=Enchantment
 cost={1}{W}{W}

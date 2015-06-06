@@ -1,6 +1,6 @@
 name=Despise
 image=http://magiccards.info/scans/en/ktk/69.jpg
-value=2.500
+value=3.750
 rarity=U
 type=Sorcery
 cost={B}

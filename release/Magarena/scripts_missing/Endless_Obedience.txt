@@ -1,6 +1,6 @@
 name=Endless Obedience
 image=http://magiccards.info/scans/en/m15/94.jpg
-value=2.500
+value=3.167
 rarity=U
 type=Sorcery
 cost={4}{B}{B}

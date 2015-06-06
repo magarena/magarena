@@ -1,6 +1,6 @@
 name=Thran Tome
 image=http://magiccards.info/scans/en/wl/160.jpg
-value=2.500
+value=3.138
 rarity=R
 type=Artifact
 cost={4}

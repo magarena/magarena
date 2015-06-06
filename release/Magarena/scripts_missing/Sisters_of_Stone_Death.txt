@@ -1,6 +1,6 @@
 name=Sisters of Stone Death
 image=http://magiccards.info/scans/en/rav/231.jpg
-value=2.500
+value=4.004
 rarity=R
 type=Legendary,Creature
 subtype=Gorgon

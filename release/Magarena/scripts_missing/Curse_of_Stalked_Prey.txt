@@ -1,6 +1,6 @@
 name=Curse of Stalked Prey
 image=http://magiccards.info/scans/en/isd/136.jpg
-value=2.500
+value=3.823
 rarity=R
 type=Enchantment
 subtype=Aura,Curse

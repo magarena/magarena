@@ -1,6 +1,6 @@
 name=Feral Hydra
 image=http://magiccards.info/scans/en/arc/53.jpg
-value=2.500
+value=3.000
 rarity=R
 type=Creature
 subtype=Hydra,Beast

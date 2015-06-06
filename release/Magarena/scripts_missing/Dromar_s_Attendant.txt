@@ -1,6 +1,6 @@
 name=Dromar's Attendant
 image=http://magiccards.info/scans/en/in/303.jpg
-value=2.500
+value=2.558
 rarity=U
 type=Artifact,Creature
 subtype=Golem

@@ -1,6 +1,6 @@
 name=Vastwood Hydra
 image=http://magiccards.info/scans/en/m14/198.jpg
-value=2.500
+value=3.598
 rarity=R
 type=Creature
 subtype=Hydra

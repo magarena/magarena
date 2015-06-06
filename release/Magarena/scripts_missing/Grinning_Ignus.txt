@@ -1,6 +1,6 @@
 name=Grinning Ignus
 image=http://magiccards.info/scans/en/mma/118.jpg
-value=2.500
+value=3.765
 rarity=U
 type=Creature
 subtype=Elemental

@@ -1,6 +1,6 @@
 name=Fist of Suns
 image=http://magiccards.info/scans/en/5dn/123.jpg
-value=2.500
+value=4.303
 rarity=R
 type=Artifact
 cost={3}

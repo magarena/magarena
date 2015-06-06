@@ -1,6 +1,6 @@
 name=Living Inferno
 image=http://magiccards.info/scans/en/gp/69.jpg
-value=2.500
+value=3.400
 rarity=R
 type=Creature
 subtype=Elemental

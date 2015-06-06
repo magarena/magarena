@@ -1,6 +1,6 @@
 name=Gyre Sage
 image=http://magiccards.info/scans/en/gtc/123.jpg
-value=2.500
+value=3.787
 rarity=R
 type=Creature
 subtype=Elf,Druid

@@ -1,6 +1,6 @@
 name=Second Sunrise
 image=http://magiccards.info/scans/en/mi/20.jpg
-value=2.500
+value=4.373
 rarity=R
 type=Instant
 cost={1}{W}{W}

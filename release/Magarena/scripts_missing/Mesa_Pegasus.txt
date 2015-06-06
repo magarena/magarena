@@ -1,6 +1,6 @@
 name=Mesa Pegasus
 image=http://magiccards.info/scans/en/med/20.jpg
-value=2.500
+value=2.816
 rarity=C
 type=Creature
 subtype=Pegasus

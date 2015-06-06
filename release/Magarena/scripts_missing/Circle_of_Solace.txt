@@ -1,6 +1,6 @@
 name=Circle of Solace
 image=http://magiccards.info/scans/en/on/13.jpg
-value=2.500
+value=2.938
 rarity=R
 type=Enchantment
 cost={3}{W}

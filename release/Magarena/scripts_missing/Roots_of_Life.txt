@@ -1,6 +1,6 @@
 name=Roots of Life
 image=http://magiccards.info/scans/en/mr/135.jpg
-value=2.500
+value=3.757
 rarity=U
 type=Enchantment
 cost={1}{G}{G}

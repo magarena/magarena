@@ -1,6 +1,6 @@
 name=Hull Breach
 image=http://magiccards.info/scans/en/c13/193.jpg
-value=2.500
+value=4.447
 rarity=C
 type=Sorcery
 cost={R}{G}

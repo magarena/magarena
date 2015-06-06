@@ -1,6 +1,6 @@
 name=Scent of Brine
 image=http://magiccards.info/scans/en/ud/45.jpg
-value=2.500
+value=3.100
 rarity=C
 type=Instant
 cost={1}{U}

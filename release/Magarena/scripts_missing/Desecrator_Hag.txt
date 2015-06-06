@@ -1,6 +1,6 @@
 name=Desecrator Hag
 image=http://magiccards.info/scans/en/cmd/193.jpg
-value=2.500
+value=2.682
 rarity=C
 type=Creature
 subtype=Hag

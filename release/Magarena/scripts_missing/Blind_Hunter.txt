@@ -1,6 +1,6 @@
 name=Blind Hunter
 image=http://magiccards.info/scans/en/gp/102.jpg
-value=2.500
+value=3.936
 rarity=C
 type=Creature
 subtype=Bat

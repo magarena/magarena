@@ -1,6 +1,6 @@
 name=Soul Strings
 image=http://magiccards.info/scans/en/pr/78.jpg
-value=2.500
+value=2.796
 rarity=C
 type=Sorcery
 cost={X}{B}

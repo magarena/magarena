@@ -1,6 +1,6 @@
 name=Razor Pendulum
 image=http://magiccards.info/scans/en/mr/282.jpg
-value=2.500
+value=3.041
 rarity=R
 type=Artifact
 cost={4}

@@ -1,6 +1,6 @@
 name=Grafted Exoskeleton
 image=http://magiccards.info/scans/en/som/162.jpg
-value=2.500
+value=3.766
 rarity=U
 type=Artifact
 subtype=Equipment

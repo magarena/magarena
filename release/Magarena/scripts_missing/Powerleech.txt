@@ -1,6 +1,6 @@
 name=Powerleech
 image=http://magiccards.info/scans/en/aq/64.jpg
-value=2.500
+value=3.093
 rarity=U
 type=Enchantment
 cost={G}{G}

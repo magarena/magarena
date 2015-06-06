@@ -1,6 +1,6 @@
 name=Explorer's Scope
 image=http://magiccards.info/scans/en/cns/198.jpg
-value=2.500
+value=3.833
 rarity=U
 type=Artifact
 subtype=Equipment

@@ -1,6 +1,6 @@
 name=Spinal Parasite
 image=http://magiccards.info/scans/en/5dn/155.jpg
-value=2.500
+value=1.462
 rarity=U
 type=Artifact,Creature
 subtype=Insect

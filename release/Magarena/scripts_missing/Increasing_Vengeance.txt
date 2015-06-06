@@ -1,6 +1,6 @@
 name=Increasing Vengeance
 image=http://magiccards.info/scans/en/dka/95.jpg
-value=2.500
+value=3.862
 rarity=R
 type=Instant
 cost={R}{R}

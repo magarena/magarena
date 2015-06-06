@@ -1,6 +1,6 @@
 name=Mizzium Transreliquat
 image=http://magiccards.info/scans/en/gp/153.jpg
-value=2.500
+value=4.200
 rarity=R
 type=Artifact
 cost={3}

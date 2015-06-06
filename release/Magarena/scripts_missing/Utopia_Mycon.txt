@@ -1,6 +1,6 @@
 name=Utopia Mycon
 image=http://magiccards.info/scans/en/fut/140.jpg
-value=2.500
+value=3.880
 rarity=U
 type=Creature
 subtype=Fungus

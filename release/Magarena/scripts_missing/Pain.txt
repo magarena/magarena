@@ -1,6 +1,6 @@
 name=Pain
 image=http://magiccards.info/scans/en/ddh/72a.jpg
-value=2.500
+value=4.184
 rarity=U
 type=Sorcery
 cost={B}

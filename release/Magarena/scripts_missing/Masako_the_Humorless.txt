@@ -1,6 +1,6 @@
 name=Masako the Humorless
 image=http://magiccards.info/scans/en/chk/33.jpg
-value=2.500
+value=3.956
 rarity=R
 type=Legendary,Creature
 subtype=Human,Advisor

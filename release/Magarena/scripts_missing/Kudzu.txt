@@ -1,6 +1,6 @@
 name=Kudzu
 image=http://magiccards.info/scans/en/me4/159.jpg
-value=2.500
+value=3.714
 rarity=U
 type=Enchantment
 subtype=Aura

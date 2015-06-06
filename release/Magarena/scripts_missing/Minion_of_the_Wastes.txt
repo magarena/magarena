@@ -1,6 +1,6 @@
 name=Minion of the Wastes
 image=http://magiccards.info/scans/en/tp/40.jpg
-value=2.500
+value=3.943
 rarity=R
 type=Creature
 subtype=Minion

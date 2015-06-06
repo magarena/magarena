@@ -1,6 +1,6 @@
 name=Mistform Seaswift
 image=http://magiccards.info/scans/en/le/45.jpg
-value=2.500
+value=2.540
 rarity=C
 type=Creature
 subtype=Illusion

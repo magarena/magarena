@@ -1,6 +1,6 @@
 name=Muse Vessel
 image=http://magiccards.info/scans/en/di/163.jpg
-value=2.500
+value=3.581
 rarity=R
 type=Artifact
 cost={4}

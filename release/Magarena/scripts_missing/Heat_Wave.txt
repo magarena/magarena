@@ -1,6 +1,6 @@
 name=Heat Wave
 image=http://magiccards.info/scans/en/vi/83.jpg
-value=2.500
+value=3.278
 rarity=U
 type=Enchantment
 cost={2}{R}

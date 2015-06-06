@@ -1,6 +1,6 @@
 name=Puresight Merrow
 image=http://magiccards.info/scans/en/shm/146.jpg
-value=2.500
+value=3.457
 rarity=U
 type=Creature
 subtype=Merfolk,Wizard

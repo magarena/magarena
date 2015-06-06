@@ -1,6 +1,6 @@
 name=Æther Storm
 image=http://magiccards.info/scans/en/me2/39.jpg
-value=2.500
+value=3.259
 rarity=U
 type=Enchantment
 cost={3}{U}

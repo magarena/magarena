@@ -1,6 +1,6 @@
 name=Gang of Devils
 image=http://magiccards.info/scans/en/ddk/56.jpg
-value=2.500
+value=2.875
 rarity=U
 type=Creature
 subtype=Devil

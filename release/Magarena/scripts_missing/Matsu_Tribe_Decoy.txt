@@ -1,6 +1,6 @@
 name=Matsu-Tribe Decoy
 image=http://magiccards.info/scans/en/chk/227.jpg
-value=2.500
+value=1.600
 rarity=C
 type=Creature
 subtype=Snake,Warrior

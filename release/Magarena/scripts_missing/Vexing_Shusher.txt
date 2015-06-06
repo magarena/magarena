@@ -1,6 +1,6 @@
 name=Vexing Shusher
 image=http://magiccards.info/scans/en/shm/222.jpg
-value=2.500
+value=4.397
 rarity=R
 type=Creature
 subtype=Goblin,Shaman

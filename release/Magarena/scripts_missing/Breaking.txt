@@ -1,6 +1,6 @@
 name=Breaking
 image=http://magiccards.info/scans/en/dgm/124a.jpg
-value=2.500
+value=3.800
 rarity=R
 type=Sorcery
 cost={U}{B}

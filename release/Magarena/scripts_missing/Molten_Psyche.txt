@@ -1,6 +1,6 @@
 name=Molten Psyche
 image=http://magiccards.info/scans/en/som/98.jpg
-value=2.500
+value=3.131
 rarity=R
 type=Sorcery
 cost={1}{R}{R}

@@ -1,6 +1,6 @@
 name=Ghastly Remains
 image=http://magiccards.info/scans/en/le/71.jpg
-value=2.500
+value=3.000
 rarity=R
 type=Creature
 subtype=Zombie

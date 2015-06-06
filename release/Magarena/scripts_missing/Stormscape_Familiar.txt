@@ -1,6 +1,6 @@
 name=Stormscape Familiar
 image=http://magiccards.info/scans/en/tsts/32.jpg
-value=2.500
+value=4.358
 rarity=C
 type=Creature
 subtype=Bird

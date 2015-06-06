@@ -1,6 +1,6 @@
 name=Trickbind
 image=http://magiccards.info/scans/en/ts/88.jpg
-value=2.500
+value=4.434
 rarity=R
 type=Instant
 cost={1}{U}

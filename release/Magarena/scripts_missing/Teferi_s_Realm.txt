@@ -1,6 +1,6 @@
 name=Teferi's Realm
 image=http://magiccards.info/scans/en/vi/44.jpg
-value=2.500
+value=3.912
 rarity=R
 type=World,Enchantment
 cost={1}{U}{U}

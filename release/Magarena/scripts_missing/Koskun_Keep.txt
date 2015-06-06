@@ -1,6 +1,6 @@
 name=Koskun Keep
 image=http://magiccards.info/scans/en/hl/139.jpg
-value=2.500
+value=1.333
 rarity=U
 type=Land
 ability={T}: Add {1} to your mana pool.;\

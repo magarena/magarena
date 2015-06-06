@@ -1,6 +1,6 @@
 name=Shinen of Life's Roar
 image=http://magiccards.info/scans/en/arc/69.jpg
-value=2.500
+value=3.486
 rarity=C
 type=Creature
 subtype=Spirit

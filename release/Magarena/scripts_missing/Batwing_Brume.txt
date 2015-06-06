@@ -1,6 +1,6 @@
 name=Batwing Brume
 image=http://magiccards.info/scans/en/arc/80.jpg
-value=2.500
+value=3.736
 rarity=U
 type=Instant
 cost={1}{W/B}

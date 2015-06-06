@@ -1,6 +1,6 @@
 name=Erayo's Essence
 image=http://magiccards.info/scans/en/sok/35b.jpg
-value=2.500
+value=4.211
 rarity=R
 type=Legendary,Enchantment
 cost={1}{U}

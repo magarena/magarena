@@ -1,6 +1,6 @@
 name=Corrosive Gale
 image=http://magiccards.info/scans/en/nph/107.jpg
-value=2.500
+value=3.014
 rarity=U
 type=Sorcery
 cost={X}{G/P}

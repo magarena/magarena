@@ -1,6 +1,6 @@
 name=Conspiracy
 image=http://magiccards.info/scans/en/tsts/39.jpg
-value=2.500
+value=4.241
 rarity=R
 type=Enchantment
 cost={3}{B}{B}

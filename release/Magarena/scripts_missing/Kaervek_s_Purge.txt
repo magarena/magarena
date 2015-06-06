@@ -1,6 +1,6 @@
 name=Kaervek's Purge
 image=http://magiccards.info/scans/en/mr/330.jpg
-value=2.500
+value=3.402
 rarity=U
 type=Sorcery
 cost={X}{B}{R}

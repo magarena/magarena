@@ -1,6 +1,6 @@
 name=Runeflare Trap
 image=http://magiccards.info/scans/en/zen/146.jpg
-value=2.500
+value=3.417
 rarity=U
 type=Instant
 subtype=Trap

@@ -1,6 +1,6 @@
 name=Fearsome Temper
 image=http://magiccards.info/scans/en/bng/95.jpg
-value=2.500
+value=2.595
 rarity=C
 type=Enchantment
 subtype=Aura

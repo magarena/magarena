@@ -1,6 +1,6 @@
 name=Decomposition
 image=http://magiccards.info/scans/en/mr/110.jpg
-value=2.500
+value=3.326
 rarity=U
 type=Enchantment
 subtype=Aura

@@ -1,6 +1,6 @@
 name=Timecrafting
 image=http://magiccards.info/scans/en/pc/109.jpg
-value=2.500
+value=2.875
 rarity=U
 type=Instant
 cost={X}{R}

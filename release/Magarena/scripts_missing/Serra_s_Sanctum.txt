@@ -1,6 +1,6 @@
 name=Serra's Sanctum
 image=http://magiccards.info/scans/en/us/325.jpg
-value=2.500
+value=4.454
 rarity=R
 type=Legendary,Land
 ability={T}: Add {W} to your mana pool for each enchantment you control.

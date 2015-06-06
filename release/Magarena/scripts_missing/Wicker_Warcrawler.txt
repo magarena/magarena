@@ -1,6 +1,6 @@
 name=Wicker Warcrawler
 image=http://magiccards.info/scans/en/shm/269.jpg
-value=2.500
+value=2.717
 rarity=U
 type=Artifact,Creature
 subtype=Scarecrow

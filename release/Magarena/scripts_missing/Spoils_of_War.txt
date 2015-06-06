@@ -1,6 +1,6 @@
 name=Spoils of War
 image=http://magiccards.info/scans/en/ia/52.jpg
-value=2.500
+value=2.946
 rarity=R
 type=Sorcery
 cost={X}{B}

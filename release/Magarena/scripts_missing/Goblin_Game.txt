@@ -1,6 +1,6 @@
 name=Goblin Game
 image=http://magiccards.info/scans/en/ps/61.jpg
-value=2.500
+value=4.269
 rarity=R
 type=Sorcery
 cost={5}{R}{R}

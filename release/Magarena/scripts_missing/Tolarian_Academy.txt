@@ -1,6 +1,6 @@
 name=Tolarian Academy
 image=http://magiccards.info/scans/en/vma/319.jpg
-value=2.500
+value=5.000
 rarity=M
 type=Legendary,Land
 ability={T}: Add {U} to your mana pool for each artifact you control.

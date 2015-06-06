@@ -1,6 +1,6 @@
 name=Gauntlets of Chaos
 image=http://magiccards.info/scans/en/me3/196.jpg
-value=2.500
+value=2.909
 rarity=R
 type=Artifact
 cost={5}

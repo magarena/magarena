@@ -1,6 +1,6 @@
 name=Sunflare Shaman
 image=http://magiccards.info/scans/en/mt/108.jpg
-value=2.500
+value=2.968
 rarity=C
 type=Creature
 subtype=Elemental,Shaman

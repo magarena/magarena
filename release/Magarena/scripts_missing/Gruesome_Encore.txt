@@ -1,6 +1,6 @@
 name=Gruesome Encore
 image=http://magiccards.info/scans/en/mbs/44.jpg
-value=2.500
+value=3.363
 rarity=U
 type=Sorcery
 cost={2}{B}

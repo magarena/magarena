@@ -1,6 +1,6 @@
 name=Rolling Spoil
 image=http://magiccards.info/scans/en/rav/179.jpg
-value=2.500
+value=2.797
 rarity=U
 type=Sorcery
 cost={2}{G}{G}

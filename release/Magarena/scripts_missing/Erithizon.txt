@@ -1,6 +1,6 @@
 name=Erithizon
 image=http://magiccards.info/scans/en/mm/244.jpg
-value=2.500
+value=2.138
 rarity=R
 type=Creature
 subtype=Beast

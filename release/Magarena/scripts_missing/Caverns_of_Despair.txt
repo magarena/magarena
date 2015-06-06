@@ -1,6 +1,6 @@
 name=Caverns of Despair
 image=http://magiccards.info/scans/en/lg/136.jpg
-value=2.500
+value=2.614
 rarity=R
 type=World,Enchantment
 cost={2}{R}{R}

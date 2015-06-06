@@ -1,6 +1,6 @@
 name=Heritage Druid
 image=http://magiccards.info/scans/en/mt/126.jpg
-value=2.500
+value=4.339
 rarity=U
 type=Creature
 subtype=Elf,Druid

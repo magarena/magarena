@@ -1,6 +1,6 @@
 name=Kuon's Essence
 image=http://magiccards.info/scans/en/sok/78b.jpg
-value=2.500
+value=3.103
 rarity=R
 type=Legendary,Enchantment
 cost={B}{B}{B}

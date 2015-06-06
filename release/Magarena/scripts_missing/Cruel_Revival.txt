@@ -1,6 +1,6 @@
 name=Cruel Revival
 image=http://magiccards.info/scans/en/pch/23.jpg
-value=2.500
+value=3.868
 rarity=C
 type=Instant
 cost={4}{B}

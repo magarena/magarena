@@ -1,6 +1,6 @@
 name=Power Sink
 image=http://magiccards.info/scans/en/vma/88.jpg
-value=2.500
+value=4.000
 rarity=U
 type=Instant
 cost={X}{U}

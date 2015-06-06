@@ -1,6 +1,6 @@
 name=Daxos of Meletis
 image=http://magiccards.info/scans/en/ths/191.jpg
-value=2.500
+value=3.726
 rarity=R
 type=Legendary,Creature
 subtype=Human,Soldier

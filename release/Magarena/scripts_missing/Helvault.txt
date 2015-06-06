@@ -1,6 +1,6 @@
 name=Helvault
 image=http://magiccards.info/scans/en/dka/151.jpg
-value=2.500
+value=3.266
 rarity=M
 type=Legendary,Artifact
 cost={3}

@@ -1,6 +1,6 @@
 name=Yeva, Nature's Herald
 image=http://magiccards.info/scans/en/m13/197.jpg
-value=2.500
+value=4.010
 rarity=R
 type=Legendary,Creature
 subtype=Elf,Shaman

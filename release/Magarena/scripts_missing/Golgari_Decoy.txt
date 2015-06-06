@@ -1,6 +1,6 @@
 name=Golgari Decoy
 image=http://magiccards.info/scans/en/rtr/127.jpg
-value=2.500
+value=3.074
 rarity=U
 type=Creature
 subtype=Elf,Rogue

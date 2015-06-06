@@ -1,6 +1,6 @@
 name=Custodi Soulbinders
 image=http://magiccards.info/scans/en/cns/17.jpg
-value=2.500
+value=3.636
 rarity=R
 type=Creature
 subtype=Human,Cleric

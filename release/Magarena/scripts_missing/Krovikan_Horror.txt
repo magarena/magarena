@@ -1,6 +1,6 @@
 name=Krovikan Horror
 image=http://magiccards.info/scans/en/me2/101.jpg
-value=2.500
+value=3.654
 rarity=R
 type=Creature
 subtype=Horror,Spirit

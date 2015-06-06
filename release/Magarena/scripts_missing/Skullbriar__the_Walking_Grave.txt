@@ -1,6 +1,6 @@
 name=Skullbriar, the Walking Grave
 image=http://magiccards.info/scans/en/cmd/227.jpg
-value=2.500
+value=4.166
 rarity=R
 type=Legendary,Creature
 subtype=Zombie,Elemental

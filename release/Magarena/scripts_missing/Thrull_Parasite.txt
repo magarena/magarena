@@ -1,6 +1,6 @@
 name=Thrull Parasite
 image=http://magiccards.info/scans/en/gtc/81.jpg
-value=2.500
+value=3.978
 rarity=U
 type=Creature
 subtype=Thrull

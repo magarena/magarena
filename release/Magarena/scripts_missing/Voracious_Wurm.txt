@@ -1,6 +1,6 @@
 name=Voracious Wurm
 image=http://magiccards.info/scans/en/m14/200.jpg
-value=2.500
+value=3.632
 rarity=U
 type=Creature
 subtype=Wurm

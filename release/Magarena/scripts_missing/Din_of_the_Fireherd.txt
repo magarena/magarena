@@ -1,6 +1,6 @@
 name=Din of the Fireherd
 image=http://magiccards.info/scans/en/shm/184.jpg
-value=2.500
+value=3.939
 rarity=R
 type=Sorcery
 cost={5}{B/R}{B/R}{B/R}

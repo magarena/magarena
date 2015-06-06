@@ -1,6 +1,6 @@
 name=Cunning
 image=http://magiccards.info/scans/en/ex/28.jpg
-value=2.500
+value=2.095
 rarity=C
 type=Enchantment
 subtype=Aura

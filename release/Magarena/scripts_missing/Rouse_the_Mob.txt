@@ -1,6 +1,6 @@
 name=Rouse the Mob
 image=http://magiccards.info/scans/en/jou/109.jpg
-value=2.500
+value=3.021
 rarity=C
 type=Instant
 cost={R}

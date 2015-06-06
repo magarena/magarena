@@ -1,6 +1,6 @@
 name=Loxodon Peacekeeper
 image=http://magiccards.info/scans/en/mi/13.jpg
-value=2.500
+value=2.333
 rarity=R
 type=Creature
 subtype=Elephant,Soldier

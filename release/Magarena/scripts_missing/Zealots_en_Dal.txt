@@ -1,6 +1,6 @@
 name=Zealots en-Dal
 image=http://magiccards.info/scans/en/ex/26.jpg
-value=2.500
+value=2.462
 rarity=U
 type=Creature
 subtype=Human,Soldier

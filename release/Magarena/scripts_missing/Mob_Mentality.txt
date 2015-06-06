@@ -1,6 +1,6 @@
 name=Mob Mentality
 image=http://magiccards.info/scans/en/vi/88.jpg
-value=2.500
+value=3.243
 rarity=U
 type=Enchantment
 subtype=Aura

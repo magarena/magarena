@@ -1,6 +1,6 @@
 name=Chilling Shade
 image=http://magiccards.info/scans/en/cs/53.jpg
-value=2.500
+value=3.839
 rarity=C
 type=Snow,Creature
 subtype=Shade

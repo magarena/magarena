@@ -1,6 +1,6 @@
 name=Shade of Trokair
 image=http://magiccards.info/scans/en/pc/18.jpg
-value=2.500
+value=3.614
 rarity=C
 type=Creature
 subtype=Shade

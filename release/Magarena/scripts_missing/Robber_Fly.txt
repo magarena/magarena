@@ -1,6 +1,6 @@
 name=Robber Fly
 image=http://magiccards.info/scans/en/mm/209.jpg
-value=2.500
+value=2.871
 rarity=U
 type=Creature
 subtype=Insect

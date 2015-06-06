@@ -1,6 +1,6 @@
 name=Gigantiform
 image=http://magiccards.info/scans/en/zen/162.jpg
-value=2.500
+value=3.844
 rarity=R
 type=Enchantment
 subtype=Aura

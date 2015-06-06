@@ -1,6 +1,6 @@
 name=Story Circle
 image=http://magiccards.info/scans/en/10e/49.jpg
-value=2.500
+value=4.330
 rarity=R
 type=Enchantment
 cost={1}{W}{W}

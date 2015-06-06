@@ -1,6 +1,6 @@
 name=Imperial Mask
 image=http://magiccards.info/scans/en/fut/23.jpg
-value=2.500
+value=4.031
 rarity=R
 type=Enchantment
 cost={4}{W}

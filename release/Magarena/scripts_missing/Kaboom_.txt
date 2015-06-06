@@ -1,6 +1,6 @@
 name=Kaboom!
 image=http://magiccards.info/scans/en/on/214.jpg
-value=2.500
+value=3.679
 rarity=R
 type=Sorcery
 cost={4}{R}

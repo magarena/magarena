@@ -1,6 +1,6 @@
 name=Unliving Psychopath
 image=http://magiccards.info/scans/en/di/56.jpg
-value=2.500
+value=2.894
 rarity=R
 type=Creature
 subtype=Zombie,Assassin

@@ -1,6 +1,6 @@
 name=Ugin's Nexus
 image=http://magiccards.info/scans/en/ktk/227.jpg
-value=2.500
+value=3.500
 rarity=M
 type=Legendary,Artifact
 cost={5}

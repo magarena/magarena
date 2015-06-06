@@ -1,6 +1,6 @@
 name=Artifact Ward
 image=http://magiccards.info/scans/en/aq/96.jpg
-value=2.500
+value=2.466
 rarity=C
 type=Enchantment
 subtype=Aura

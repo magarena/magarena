@@ -1,6 +1,6 @@
 name=Beast Walkers
 image=http://magiccards.info/scans/en/hl/108.jpg
-value=2.500
+value=1.402
 rarity=R
 type=Creature
 subtype=Human,Beast,Soldier

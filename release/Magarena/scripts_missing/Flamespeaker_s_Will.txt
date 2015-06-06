@@ -1,6 +1,6 @@
 name=Flamespeaker's Will
 image=http://magiccards.info/scans/en/jou/95.jpg
-value=2.500
+value=2.425
 rarity=C
 type=Enchantment
 subtype=Aura

@@ -1,6 +1,6 @@
 name=Chorus of the Conclave
 image=http://magiccards.info/scans/en/cmd/189.jpg
-value=2.500
+value=3.288
 rarity=R
 type=Legendary,Creature
 subtype=Dryad

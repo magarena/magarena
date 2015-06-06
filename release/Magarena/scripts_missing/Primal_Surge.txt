@@ -1,6 +1,6 @@
 name=Primal Surge
 image=http://magiccards.info/scans/en/avr/189.jpg
-value=2.500
+value=3.658
 rarity=M
 type=Sorcery
 cost={8}{G}{G}

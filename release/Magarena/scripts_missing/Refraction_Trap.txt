@@ -1,6 +1,6 @@
 name=Refraction Trap
 image=http://magiccards.info/scans/en/wwk/17.jpg
-value=2.500
+value=2.330
 rarity=U
 type=Instant
 subtype=Trap

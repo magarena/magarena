@@ -1,6 +1,6 @@
 name=Burn at the Stake
 image=http://magiccards.info/scans/en/avr/130.jpg
-value=2.500
+value=3.770
 rarity=R
 type=Sorcery
 cost={2}{R}{R}{R}

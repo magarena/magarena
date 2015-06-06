@@ -1,6 +1,6 @@
 name=Ash Zealot
 image=http://magiccards.info/scans/en/rtr/86.jpg
-value=2.500
+value=4.053
 rarity=R
 type=Creature
 subtype=Human,Warrior

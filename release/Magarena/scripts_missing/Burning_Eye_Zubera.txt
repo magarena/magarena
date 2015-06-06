@@ -1,6 +1,6 @@
 name=Burning-Eye Zubera
 image=http://magiccards.info/scans/en/sok/95.jpg
-value=2.500
+value=3.064
 rarity=U
 type=Creature
 subtype=Zubera,Spirit

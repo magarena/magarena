@@ -1,6 +1,6 @@
 name=Fire Covenant
 image=http://magiccards.info/scans/en/med/145.jpg
-value=2.500
+value=3.708
 rarity=U
 type=Instant
 cost={1}{B}{R}

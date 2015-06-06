@@ -1,6 +1,6 @@
 name=Reveillark
 image=http://magiccards.info/scans/en/mma/26.jpg
-value=2.500
+value=4.258
 rarity=R
 type=Creature
 subtype=Elemental

@@ -1,6 +1,6 @@
 name=Inviolability
 image=http://magiccards.info/scans/en/mm/23.jpg
-value=2.500
+value=4.075
 rarity=C
 type=Enchantment
 subtype=Aura

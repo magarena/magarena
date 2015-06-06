@@ -1,6 +1,6 @@
 name=Lancers en-Kor
 image=http://magiccards.info/scans/en/sh/108.jpg
-value=2.500
+value=3.426
 rarity=U
 type=Creature
 subtype=Kor,Soldier

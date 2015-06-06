@@ -1,6 +1,6 @@
 name=Nightveil Specter
 image=http://magiccards.info/scans/en/gtc/222.jpg
-value=2.500
+value=4.022
 rarity=R
 type=Creature
 subtype=Specter

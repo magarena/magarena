@@ -1,6 +1,6 @@
 name=Booby Trap
 image=http://magiccards.info/scans/en/9e/289.jpg
-value=2.500
+value=3.949
 rarity=R
 type=Artifact
 cost={6}

@@ -1,6 +1,6 @@
 name=Tribute to the Wild
 image=http://magiccards.info/scans/en/vma/238.jpg
-value=2.500
+value=3.000
 rarity=C
 type=Instant
 cost={1}{G}

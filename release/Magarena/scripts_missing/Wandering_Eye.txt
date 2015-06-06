@@ -1,6 +1,6 @@
 name=Wandering Eye
 image=http://magiccards.info/scans/en/ne/50.jpg
-value=2.500
+value=3.204
 rarity=C
 type=Creature
 subtype=Illusion

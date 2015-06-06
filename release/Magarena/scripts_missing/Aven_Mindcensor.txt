@@ -1,6 +1,6 @@
 name=Aven Mindcensor
 image=http://magiccards.info/scans/en/fut/18.jpg
-value=2.500
+value=4.441
 rarity=U
 type=Creature
 subtype=Bird,Wizard

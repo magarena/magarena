@@ -1,6 +1,6 @@
 name=Thought Dissector
 image=http://magiccards.info/scans/en/ds/152.jpg
-value=2.500
+value=3.652
 rarity=R
 type=Artifact
 cost={4}

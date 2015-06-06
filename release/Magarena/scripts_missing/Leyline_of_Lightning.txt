@@ -1,6 +1,6 @@
 name=Leyline of Lightning
 image=http://magiccards.info/scans/en/gp/68.jpg
-value=2.500
+value=2.879
 rarity=R
 type=Enchantment
 cost={2}{R}{R}

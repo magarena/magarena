@@ -1,6 +1,6 @@
 name=Gibbering Descent
 image=http://magiccards.info/scans/en/fut/66.jpg
-value=2.500
+value=3.750
 rarity=R
 type=Enchantment
 cost={4}{B}{B}

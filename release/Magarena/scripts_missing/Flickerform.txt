@@ -1,6 +1,6 @@
 name=Flickerform
 image=http://magiccards.info/scans/en/c13/12.jpg
-value=2.500
+value=3.536
 rarity=R
 type=Enchantment
 subtype=Aura

@@ -1,6 +1,6 @@
 name=Sorin Markov
 image=http://magiccards.info/scans/en/m12/109.jpg
-value=2.500
+value=3.855
 rarity=M
 type=Planeswalker
 subtype=Sorin

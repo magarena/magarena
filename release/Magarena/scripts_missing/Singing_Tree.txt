@@ -1,6 +1,6 @@
 name=Singing Tree
 image=http://magiccards.info/scans/en/med/130.jpg
-value=2.500
+value=4.036
 rarity=U
 type=Creature
 subtype=Plant

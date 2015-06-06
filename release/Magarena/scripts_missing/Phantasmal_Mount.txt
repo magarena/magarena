@@ -1,6 +1,6 @@
 name=Phantasmal Mount
 image=http://magiccards.info/scans/en/me2/59.jpg
-value=2.500
+value=2.875
 rarity=C
 type=Creature
 subtype=Illusion,Horse

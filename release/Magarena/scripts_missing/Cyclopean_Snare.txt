@@ -1,6 +1,6 @@
 name=Cyclopean Snare
 image=http://magiccards.info/scans/en/rav/259.jpg
-value=2.500
+value=0.875
 rarity=U
 type=Artifact
 cost={2}

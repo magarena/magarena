@@ -1,6 +1,6 @@
 name=Ordeal of Nylea
 image=http://magiccards.info/scans/en/ths/170.jpg
-value=2.500
+value=3.562
 rarity=U
 type=Enchantment
 subtype=Aura

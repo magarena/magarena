@@ -1,6 +1,6 @@
 name=Cloudpost
 image=http://magiccards.info/scans/en/mi/280.jpg
-value=2.500
+value=4.413
 rarity=C
 type=Land
 subtype=Locus

@@ -1,6 +1,6 @@
 name=Runed Stalactite
 image=http://magiccards.info/scans/en/mma/214.jpg
-value=2.500
+value=3.667
 rarity=C
 type=Artifact
 subtype=Equipment

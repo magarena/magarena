@@ -1,6 +1,6 @@
 name=Kira, Great Glass-Spinner
 image=http://magiccards.info/scans/en/mma/49.jpg
-value=2.500
+value=4.463
 rarity=R
 type=Legendary,Creature
 subtype=Spirit

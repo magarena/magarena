@@ -1,6 +1,6 @@
 name=Teferi's Response
 image=http://magiccards.info/scans/en/in/78.jpg
-value=2.500
+value=4.154
 rarity=R
 type=Instant
 cost={1}{U}

@@ -1,6 +1,6 @@
 name=Doorkeeper
 image=http://magiccards.info/scans/en/rtr/37.jpg
-value=2.500
+value=2.878
 rarity=C
 type=Creature
 subtype=Homunculus

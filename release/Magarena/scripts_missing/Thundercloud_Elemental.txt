@@ -1,6 +1,6 @@
 name=Thundercloud Elemental
 image=http://magiccards.info/scans/en/sc/54.jpg
-value=2.500
+value=2.339
 rarity=U
 type=Creature
 subtype=Elemental

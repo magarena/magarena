@@ -1,6 +1,6 @@
 name=Clockwork Steed
 image=http://magiccards.info/scans/en/me2/205.jpg
-value=2.500
+value=2.764
 rarity=U
 type=Artifact,Creature
 subtype=Horse

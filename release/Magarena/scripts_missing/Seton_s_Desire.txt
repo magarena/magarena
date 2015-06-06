@@ -1,6 +1,6 @@
 name=Seton's Desire
 image=http://magiccards.info/scans/en/od/268.jpg
-value=2.500
+value=2.300
 rarity=C
 type=Enchantment
 subtype=Aura

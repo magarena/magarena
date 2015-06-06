@@ -1,6 +1,6 @@
 name=Sheltering Prayers
 image=http://magiccards.info/scans/en/pr/22.jpg
-value=2.500
+value=1.227
 rarity=R
 type=Enchantment
 cost={W}

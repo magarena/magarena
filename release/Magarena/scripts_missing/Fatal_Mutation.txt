@@ -1,6 +1,6 @@
 name=Fatal Mutation
 image=http://magiccards.info/scans/en/sc/66.jpg
-value=2.500
+value=1.306
 rarity=U
 type=Enchantment
 subtype=Aura

@@ -1,6 +1,6 @@
 name=Krark's Thumb
 image=http://magiccards.info/scans/en/mi/190.jpg
-value=2.500
+value=4.219
 rarity=R
 type=Legendary,Artifact
 cost={2}

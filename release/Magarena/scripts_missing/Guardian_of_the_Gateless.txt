@@ -1,6 +1,6 @@
 name=Guardian of the Gateless
 image=http://magiccards.info/scans/en/gtc/14.jpg
-value=2.500
+value=3.551
 rarity=U
 type=Creature
 subtype=Angel

@@ -1,6 +1,6 @@
 name=Leonin Shikari
 image=http://magiccards.info/scans/en/ds/6.jpg
-value=2.500
+value=4.435
 rarity=R
 type=Creature
 subtype=Cat,Soldier

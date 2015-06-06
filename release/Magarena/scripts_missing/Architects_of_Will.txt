@@ -1,6 +1,6 @@
 name=Architects of Will
 image=http://magiccards.info/scans/en/arc/77.jpg
-value=2.500
+value=2.885
 rarity=C
 type=Artifact,Creature
 subtype=Human,Wizard

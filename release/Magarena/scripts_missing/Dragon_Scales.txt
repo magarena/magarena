@@ -1,6 +1,6 @@
 name=Dragon Scales
 image=http://magiccards.info/scans/en/sc/10.jpg
-value=2.500
+value=3.067
 rarity=C
 type=Enchantment
 subtype=Aura

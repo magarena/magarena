@@ -1,6 +1,6 @@
 name=Dragonshift
 image=http://magiccards.info/scans/en/dgm/66.jpg
-value=2.500
+value=3.761
 rarity=R
 type=Instant
 cost={1}{U}{R}

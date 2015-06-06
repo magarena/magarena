@@ -1,6 +1,6 @@
 name=Angelic Arbiter
 image=http://magiccards.info/scans/en/cmd/5.jpg
-value=2.500
+value=3.837
 rarity=R
 type=Creature
 subtype=Angel

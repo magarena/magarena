@@ -1,6 +1,6 @@
 name=Ferropede
 image=http://magiccards.info/scans/en/5dn/122.jpg
-value=2.500
+value=3.524
 rarity=U
 type=Artifact,Creature
 subtype=Insect

@@ -1,6 +1,6 @@
 name=Steel Golem
 image=http://magiccards.info/scans/en/10e/344.jpg
-value=2.500
+value=2.711
 rarity=U
 type=Artifact,Creature
 subtype=Golem

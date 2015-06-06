@@ -1,6 +1,6 @@
 name=Anger
 image=http://magiccards.info/scans/en/ddi/51.jpg
-value=2.500
+value=4.279
 rarity=U
 type=Creature
 subtype=Incarnation

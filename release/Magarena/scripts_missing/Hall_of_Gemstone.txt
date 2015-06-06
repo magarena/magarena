@@ -1,6 +1,6 @@
 name=Hall of Gemstone
 image=http://magiccards.info/scans/en/mr/119.jpg
-value=2.500
+value=4.010
 rarity=R
 type=World,Enchantment
 cost={1}{G}{G}

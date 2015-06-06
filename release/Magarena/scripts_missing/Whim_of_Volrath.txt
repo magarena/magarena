@@ -1,6 +1,6 @@
 name=Whim of Volrath
 image=http://magiccards.info/scans/en/tp/102.jpg
-value=2.500
+value=3.600
 rarity=R
 type=Instant
 cost={U}

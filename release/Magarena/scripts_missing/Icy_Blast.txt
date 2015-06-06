@@ -1,6 +1,6 @@
 name=Icy Blast
 image=http://magiccards.info/scans/en/ktk/42.jpg
-value=2.500
+value=3.667
 rarity=R
 type=Instant
 cost={X}{U}

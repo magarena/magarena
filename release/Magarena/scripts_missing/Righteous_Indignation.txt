@@ -1,6 +1,6 @@
 name=Righteous Indignation
 image=http://magiccards.info/scans/en/mm/46.jpg
-value=2.500
+value=1.804
 rarity=U
 type=Enchantment
 cost={2}{W}

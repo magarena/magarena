@@ -1,6 +1,6 @@
 name=Angelic Favor
 image=http://magiccards.info/scans/en/ne/1.jpg
-value=2.500
+value=4.107
 rarity=U
 type=Instant
 cost={3}{W}

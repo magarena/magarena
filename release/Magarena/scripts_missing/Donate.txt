@@ -1,6 +1,6 @@
 name=Donate
 image=http://magiccards.info/scans/en/ud/31.jpg
-value=2.500
+value=4.567
 rarity=R
 type=Sorcery
 cost={2}{U}

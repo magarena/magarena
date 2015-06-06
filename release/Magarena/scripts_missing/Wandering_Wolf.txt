@@ -1,6 +1,6 @@
 name=Wandering Wolf
 image=http://magiccards.info/scans/en/avr/202.jpg
-value=2.500
+value=3.390
 rarity=C
 type=Creature
 subtype=Wolf

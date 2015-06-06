@@ -1,6 +1,6 @@
 name=Arachnus Web
 image=http://magiccards.info/scans/en/m12/163.jpg
-value=2.500
+value=3.556
 rarity=C
 type=Enchantment
 subtype=Aura

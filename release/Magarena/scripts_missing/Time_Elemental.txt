@@ -1,6 +1,6 @@
 name=Time Elemental
 image=http://magiccards.info/scans/en/med/53.jpg
-value=2.500
+value=3.420
 rarity=R
 type=Creature
 subtype=Elemental

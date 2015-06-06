@@ -1,6 +1,6 @@
 name=Grab the Reins
 image=http://magiccards.info/scans/en/mi/95.jpg
-value=2.500
+value=4.250
 rarity=U
 type=Instant
 cost={3}{R}

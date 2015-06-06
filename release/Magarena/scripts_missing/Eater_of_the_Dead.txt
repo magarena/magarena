@@ -1,6 +1,6 @@
 name=Eater of the Dead
 image=http://magiccards.info/scans/en/med/67.jpg
-value=2.500
+value=3.400
 rarity=U
 type=Creature
 subtype=Horror

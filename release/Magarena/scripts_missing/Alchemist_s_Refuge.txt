@@ -1,6 +1,6 @@
 name=Alchemist's Refuge
 image=http://magiccards.info/scans/en/avr/225.jpg
-value=2.500
+value=4.038
 rarity=R
 type=Land
 ability={T}: Add {1} to your mana pool.;\

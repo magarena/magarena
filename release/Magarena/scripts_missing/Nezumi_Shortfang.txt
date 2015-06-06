@@ -1,6 +1,6 @@
 name=Nezumi Shortfang
 image=http://magiccards.info/scans/en/chk/131a.jpg
-value=2.500
+value=3.975
 rarity=R
 type=Creature
 subtype=Rat,Rogue

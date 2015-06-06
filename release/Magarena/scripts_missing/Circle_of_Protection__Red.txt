@@ -1,6 +1,6 @@
 name=Circle of Protection: Red
 image=http://magiccards.info/scans/en/9e/11.jpg
-value=2.500
+value=3.544
 rarity=U
 type=Enchantment
 cost={1}{W}

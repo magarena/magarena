@@ -1,6 +1,6 @@
 name=Mayael's Aria
 image=http://magiccards.info/scans/en/arb/121.jpg
-value=2.500
+value=3.836
 rarity=R
 type=Enchantment
 cost={R}{G}{W}

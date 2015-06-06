@@ -1,6 +1,6 @@
 name=Gorilla War Cry
 image=http://magiccards.info/scans/en/me4/124.jpg
-value=2.500
+value=3.450
 rarity=C
 type=Instant
 cost={1}{R}

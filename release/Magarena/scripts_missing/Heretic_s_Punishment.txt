@@ -1,6 +1,6 @@
 name=Heretic's Punishment
 image=http://magiccards.info/scans/en/isd/147.jpg
-value=2.500
+value=2.955
 rarity=R
 type=Enchantment
 cost={4}{R}

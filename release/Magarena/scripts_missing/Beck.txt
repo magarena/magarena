@@ -1,6 +1,6 @@
 name=Beck
 image=http://magiccards.info/scans/en/dgm/123a.jpg
-value=2.500
+value=3.889
 rarity=R
 type=Sorcery
 cost={G}{U}

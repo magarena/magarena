@@ -1,6 +1,6 @@
 name=Wooded Bastion
 image=http://magiccards.info/scans/en/shm/281.jpg
-value=2.500
+value=4.357
 rarity=R
 type=Land
 ability={T}: Add {1} to your mana pool.;\

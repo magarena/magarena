@@ -1,6 +1,6 @@
 name=Quenchable Fire
 image=http://magiccards.info/scans/en/cfx/70.jpg
-value=2.500
+value=3.018
 rarity=C
 type=Sorcery
 cost={3}{R}

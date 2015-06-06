@@ -1,6 +1,6 @@
 name=Shrieking Grotesque
 image=http://magiccards.info/scans/en/gp/15.jpg
-value=2.500
+value=3.321
 rarity=C
 type=Creature
 subtype=Gargoyle

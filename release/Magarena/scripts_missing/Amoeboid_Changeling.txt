@@ -1,6 +1,6 @@
 name=Amoeboid Changeling
 image=http://magiccards.info/scans/en/lw/51.jpg
-value=2.500
+value=3.804
 rarity=C
 type=Creature
 subtype=Shapeshifter

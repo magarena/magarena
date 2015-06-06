@@ -1,6 +1,6 @@
 name=Endless Horizons
 image=http://magiccards.info/scans/en/eve/4.jpg
-value=2.500
+value=3.947
 rarity=R
 type=Enchantment
 cost={3}{W}

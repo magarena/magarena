@@ -1,6 +1,6 @@
 name=Task Mage Assembly
 image=http://magiccards.info/scans/en/pr/105.jpg
-value=2.500
+value=2.704
 rarity=R
 type=Enchantment
 cost={2}{R}

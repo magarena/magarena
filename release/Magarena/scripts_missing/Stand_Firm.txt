@@ -1,6 +1,6 @@
 name=Stand Firm
 image=http://magiccards.info/scans/en/ddl/21.jpg
-value=2.500
+value=3.462
 rarity=C
 type=Instant
 cost={W}

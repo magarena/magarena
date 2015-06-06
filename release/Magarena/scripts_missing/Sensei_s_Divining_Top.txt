@@ -1,6 +1,6 @@
 name=Sensei's Divining Top
 image=http://magiccards.info/scans/en/chk/268.jpg
-value=2.500
+value=4.588
 rarity=U
 type=Artifact
 cost={1}

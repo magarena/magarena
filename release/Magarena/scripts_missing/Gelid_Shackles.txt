@@ -1,6 +1,6 @@
 name=Gelid Shackles
 image=http://magiccards.info/scans/en/cs/6.jpg
-value=2.500
+value=3.280
 rarity=C
 type=Snow,Enchantment
 subtype=Aura

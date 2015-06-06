@@ -1,6 +1,6 @@
 name=First Response
 image=http://magiccards.info/scans/en/m15/12.jpg
-value=2.500
+value=2.583
 rarity=U
 type=Enchantment
 cost={3}{W}

@@ -1,6 +1,6 @@
 name=Dig Through Time
 image=http://magiccards.info/scans/en/ktk/36.jpg
-value=2.500
+value=2.875
 rarity=R
 type=Instant
 cost={6}{U}{U}

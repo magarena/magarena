@@ -1,6 +1,6 @@
 name=Game Preserve
 image=http://magiccards.info/scans/en/mm/248.jpg
-value=2.500
+value=3.000
 rarity=R
 type=Enchantment
 cost={2}{G}

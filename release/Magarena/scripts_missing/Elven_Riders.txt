@@ -1,6 +1,6 @@
 name=Elven Riders
 image=http://magiccards.info/scans/en/10e/259.jpg
-value=2.500
+value=2.941
 rarity=U
 type=Creature
 subtype=Elf

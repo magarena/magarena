@@ -1,6 +1,6 @@
 name=Ephara, God of the Polis
 image=http://magiccards.info/scans/en/bng/145.jpg
-value=2.500
+value=3.595
 rarity=M
 type=Legendary,Enchantment,Creature
 subtype=God

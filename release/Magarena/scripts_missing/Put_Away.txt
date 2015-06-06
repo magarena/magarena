@@ -1,6 +1,6 @@
 name=Put Away
 image=http://magiccards.info/scans/en/shm/48.jpg
-value=2.500
+value=2.115
 rarity=C
 type=Instant
 cost={2}{U}{U}

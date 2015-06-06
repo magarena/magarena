@@ -1,6 +1,6 @@
 name=Sepulchral Primordial
 image=http://magiccards.info/scans/en/gtc/75.jpg
-value=2.500
+value=3.493
 rarity=R
 type=Creature
 subtype=Avatar

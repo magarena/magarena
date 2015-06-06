@@ -1,6 +1,6 @@
 name=Fire at Will
 image=http://magiccards.info/scans/en/eve/140.jpg
-value=2.500
+value=2.373
 rarity=C
 type=Instant
 cost={R/W}{R/W}{R/W}

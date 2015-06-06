@@ -1,6 +1,6 @@
 name=Ashen Ghoul
 image=http://magiccards.info/scans/en/cstd/20.jpg
-value=2.500
+value=3.681
 rarity=U
 type=Creature
 subtype=Zombie

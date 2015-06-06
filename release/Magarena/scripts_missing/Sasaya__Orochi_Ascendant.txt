@@ -1,6 +1,6 @@
 name=Sasaya, Orochi Ascendant
 image=http://magiccards.info/scans/en/sok/145a.jpg
-value=2.500
+value=3.274
 rarity=R
 type=Legendary,Creature
 subtype=Snake,Monk

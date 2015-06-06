@@ -1,6 +1,6 @@
 name=Spin into Myth
 image=http://magiccards.info/scans/en/arc/8.jpg
-value=2.500
+value=3.667
 rarity=U
 type=Instant
 cost={4}{U}

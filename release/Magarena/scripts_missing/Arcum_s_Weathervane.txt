@@ -1,6 +1,6 @@
 name=Arcum's Weathervane
 image=http://magiccards.info/scans/en/cstd/44.jpg
-value=2.500
+value=2.250
 rarity=U
 type=Artifact
 cost={2}

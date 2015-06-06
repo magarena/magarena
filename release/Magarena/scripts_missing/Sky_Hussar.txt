@@ -1,6 +1,6 @@
 name=Sky Hussar
 image=http://magiccards.info/scans/en/di/131.jpg
-value=2.500
+value=4.107
 rarity=U
 type=Creature
 subtype=Human,Knight

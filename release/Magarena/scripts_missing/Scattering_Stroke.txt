@@ -1,6 +1,6 @@
 name=Scattering Stroke
 image=http://magiccards.info/scans/en/cmd/60.jpg
-value=2.500
+value=2.757
 rarity=U
 type=Instant
 cost={2}{U}{U}

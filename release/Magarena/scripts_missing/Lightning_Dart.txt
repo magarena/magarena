@@ -1,6 +1,6 @@
 name=Lightning Dart
 image=http://magiccards.info/scans/en/in/152.jpg
-value=2.500
+value=3.083
 rarity=U
 type=Instant
 cost={1}{R}

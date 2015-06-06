@@ -1,6 +1,6 @@
 name=Embalmed Brawler
 image=http://magiccards.info/scans/en/le/69.jpg
-value=2.500
+value=2.191
 rarity=C
 type=Creature
 subtype=Zombie

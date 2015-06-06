@@ -1,6 +1,6 @@
 name=Angel of Fury
 image=http://magiccards.info/scans/en/me2/2.jpg
-value=2.500
+value=2.629
 rarity=R
 type=Creature
 subtype=Angel

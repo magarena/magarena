@@ -1,6 +1,6 @@
 name=Dawn's Reflection
 image=http://magiccards.info/scans/en/5dn/85.jpg
-value=2.500
+value=3.750
 rarity=C
 type=Enchantment
 subtype=Aura

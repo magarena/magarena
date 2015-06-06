@@ -1,6 +1,6 @@
 name=Gaea's Liege
 image=http://magiccards.info/scans/en/tsts/78.jpg
-value=2.500
+value=3.442
 rarity=R
 type=Creature
 subtype=Avatar

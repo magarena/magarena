@@ -1,6 +1,6 @@
 name=Arachnus Spinner
 image=http://magiccards.info/scans/en/m12/162.jpg
-value=2.500
+value=4.135
 rarity=R
 type=Creature
 subtype=Spider

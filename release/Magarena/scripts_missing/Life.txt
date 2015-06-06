@@ -1,6 +1,6 @@
 name=Life
 image=http://magiccards.info/scans/en/ddj/77a.jpg
-value=2.500
+value=4.368
 rarity=U
 type=Sorcery
 cost={G}

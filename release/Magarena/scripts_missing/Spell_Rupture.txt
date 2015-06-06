@@ -1,6 +1,6 @@
 name=Spell Rupture
 image=http://magiccards.info/scans/en/gtc/52.jpg
-value=2.500
+value=3.303
 rarity=C
 type=Instant
 cost={1}{U}

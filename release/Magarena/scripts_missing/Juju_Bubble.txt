@@ -1,6 +1,6 @@
 name=Juju Bubble
 image=http://magiccards.info/scans/en/vi/147.jpg
-value=2.500
+value=0.914
 rarity=U
 type=Artifact
 cost={1}

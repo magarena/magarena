@@ -1,6 +1,6 @@
 name=Blood Funnel
 image=http://magiccards.info/scans/en/rav/77.jpg
-value=2.500
+value=2.235
 rarity=R
 type=Enchantment
 cost={1}{B}

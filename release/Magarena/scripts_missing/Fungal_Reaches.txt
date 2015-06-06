@@ -1,6 +1,6 @@
 name=Fungal Reaches
 image=http://magiccards.info/scans/en/cmd/274.jpg
-value=2.500
+value=2.925
 rarity=U
 type=Land
 ability={T}: Add {1} to your mana pool.;\

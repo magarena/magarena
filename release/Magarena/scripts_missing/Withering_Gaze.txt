@@ -1,6 +1,6 @@
 name=Withering Gaze
 image=http://magiccards.info/scans/en/9e/113.jpg
-value=2.500
+value=3.061
 rarity=U
 type=Sorcery
 cost={2}{U}

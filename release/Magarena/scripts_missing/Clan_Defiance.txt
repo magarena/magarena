@@ -1,6 +1,6 @@
 name=Clan Defiance
 image=http://magiccards.info/scans/en/gtc/151.jpg
-value=2.500
+value=4.005
 rarity=R
 type=Sorcery
 cost={X}{R}{G}

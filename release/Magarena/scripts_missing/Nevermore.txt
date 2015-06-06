@@ -1,6 +1,6 @@
 name=Nevermore
 image=http://magiccards.info/scans/en/isd/25.jpg
-value=2.500
+value=3.796
 rarity=R
 type=Enchantment
 cost={1}{W}{W}

@@ -1,6 +1,6 @@
 name=Malicious Advice
 image=http://magiccards.info/scans/en/ps/114.jpg
-value=2.500
+value=1.570
 rarity=C
 type=Instant
 cost={X}{U}{B}

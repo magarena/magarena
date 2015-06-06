@@ -1,6 +1,6 @@
 name=Reap Intellect
 image=http://magiccards.info/scans/en/dgm/95.jpg
-value=2.500
+value=2.775
 rarity=M
 type=Sorcery
 cost={X}{2}{U}{B}

@@ -1,6 +1,6 @@
 name=Chimeric Coils
 image=http://magiccards.info/scans/en/5dn/108.jpg
-value=2.500
+value=2.536
 rarity=U
 type=Artifact
 cost={1}

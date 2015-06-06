@@ -1,6 +1,6 @@
 name=Lightning Storm
 image=http://magiccards.info/scans/en/cs/89.jpg
-value=2.500
+value=3.604
 rarity=U
 type=Instant
 cost={1}{R}{R}

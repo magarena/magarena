@@ -1,6 +1,6 @@
 name=Hidetsugu's Second Rite
 image=http://magiccards.info/scans/en/sok/102.jpg
-value=2.500
+value=3.946
 rarity=R
 type=Instant
 cost={3}{R}

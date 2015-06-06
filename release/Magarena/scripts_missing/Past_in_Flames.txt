@@ -1,6 +1,6 @@
 name=Past in Flames
 image=http://magiccards.info/scans/en/isd/155.jpg
-value=2.500
+value=4.183
 rarity=M
 type=Sorcery
 cost={3}{R}

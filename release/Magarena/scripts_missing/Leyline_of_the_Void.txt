@@ -1,6 +1,6 @@
 name=Leyline of the Void
 image=http://magiccards.info/scans/en/m11/101.jpg
-value=2.500
+value=4.445
 rarity=R
 type=Enchantment
 cost={2}{B}{B}

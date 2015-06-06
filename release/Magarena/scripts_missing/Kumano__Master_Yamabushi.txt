@@ -1,6 +1,6 @@
 name=Kumano, Master Yamabushi
 image=http://magiccards.info/scans/en/chk/176.jpg
-value=2.500
+value=4.234
 rarity=R
 type=Legendary,Creature
 subtype=Human,Shaman

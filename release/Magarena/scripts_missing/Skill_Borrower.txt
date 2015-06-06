@@ -1,6 +1,6 @@
 name=Skill Borrower
 image=http://magiccards.info/scans/en/ala/56.jpg
-value=2.500
+value=3.861
 rarity=R
 type=Artifact,Creature
 subtype=Human,Wizard

@@ -1,6 +1,6 @@
 name=Genesis
 image=http://magiccards.info/scans/en/vma/212.jpg
-value=2.500
+value=4.000
 rarity=R
 type=Creature
 subtype=Incarnation

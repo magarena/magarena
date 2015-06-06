@@ -1,6 +1,6 @@
 name=Saffi Eriksdotter
 image=http://magiccards.info/scans/en/ts/245.jpg
-value=2.500
+value=4.051
 rarity=R
 type=Legendary,Creature
 subtype=Human,Scout

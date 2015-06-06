@@ -1,6 +1,6 @@
 name=Inquisitor's Flail
 image=http://magiccards.info/scans/en/isd/227.jpg
-value=2.500
+value=3.858
 rarity=U
 type=Artifact
 subtype=Equipment

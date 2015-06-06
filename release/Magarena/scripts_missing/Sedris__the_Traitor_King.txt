@@ -1,6 +1,6 @@
 name=Sedris, the Traitor King
 image=http://magiccards.info/scans/en/ala/193.jpg
-value=2.500
+value=3.579
 rarity=M
 type=Legendary,Creature
 subtype=Zombie,Warrior

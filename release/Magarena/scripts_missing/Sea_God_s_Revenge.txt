@@ -1,6 +1,6 @@
 name=Sea God's Revenge
 image=http://magiccards.info/scans/en/ths/61.jpg
-value=2.500
+value=3.438
 rarity=U
 type=Sorcery
 cost={5}{U}

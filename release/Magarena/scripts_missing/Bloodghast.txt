@@ -1,6 +1,6 @@
 name=Bloodghast
 image=http://magiccards.info/scans/en/zen/83.jpg
-value=2.500
+value=4.458
 rarity=R
 type=Creature
 subtype=Vampire,Spirit

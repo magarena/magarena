@@ -1,6 +1,6 @@
 name=Malakir Bloodwitch
 image=http://magiccards.info/scans/en/zen/100.jpg
-value=2.500
+value=4.061
 rarity=R
 type=Creature
 subtype=Vampire,Shaman

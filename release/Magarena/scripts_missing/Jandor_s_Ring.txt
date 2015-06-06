@@ -1,6 +1,6 @@
 name=Jandor's Ring
 image=http://magiccards.info/scans/en/rv/256.jpg
-value=2.500
+value=0.952
 rarity=R
 type=Artifact
 cost={6}

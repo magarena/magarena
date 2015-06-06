@@ -1,6 +1,6 @@
 name=Eater of Days
 image=http://magiccards.info/scans/en/ds/120.jpg
-value=2.500
+value=3.646
 rarity=R
 type=Artifact,Creature
 subtype=Leviathan

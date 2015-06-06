@@ -1,6 +1,6 @@
 name=Standardize
 image=http://magiccards.info/scans/en/on/116.jpg
-value=2.500
+value=3.350
 rarity=R
 type=Instant
 cost={U}{U}

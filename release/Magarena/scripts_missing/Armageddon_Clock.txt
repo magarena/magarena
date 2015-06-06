@@ -1,6 +1,6 @@
 name=Armageddon Clock
 image=http://magiccards.info/scans/en/me4/180.jpg
-value=2.500
+value=3.889
 rarity=R
 type=Artifact
 cost={6}

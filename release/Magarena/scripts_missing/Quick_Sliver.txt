@@ -1,6 +1,6 @@
 name=Quick Sliver
 image=http://magiccards.info/scans/en/le/136.jpg
-value=2.500
+value=3.988
 rarity=C
 type=Creature
 subtype=Sliver

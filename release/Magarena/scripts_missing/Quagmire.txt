@@ -1,6 +1,6 @@
 name=Quagmire
 image=http://magiccards.info/scans/en/lg/29.jpg
-value=2.500
+value=1.585
 rarity=U
 type=Enchantment
 cost={2}{B}

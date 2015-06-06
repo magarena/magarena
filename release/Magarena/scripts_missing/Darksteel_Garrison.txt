@@ -1,6 +1,6 @@
 name=Darksteel Garrison
 image=http://magiccards.info/scans/en/fut/167.jpg
-value=2.500
+value=3.690
 rarity=R
 type=Artifact
 subtype=Fortification

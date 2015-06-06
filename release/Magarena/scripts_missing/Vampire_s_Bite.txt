@@ -1,6 +1,6 @@
 name=Vampire's Bite
 image=http://magiccards.info/scans/en/ddk/19.jpg
-value=2.500
+value=3.077
 rarity=C
 type=Instant
 cost={B}

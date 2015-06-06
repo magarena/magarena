@@ -1,6 +1,6 @@
 name=Smoke Teller
 image=http://magiccards.info/scans/en/ktk/151.jpg
-value=2.500
+value=3.000
 rarity=C
 type=Creature
 subtype=Human,Shaman

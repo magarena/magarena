@@ -1,6 +1,6 @@
 name=Crosis, the Purger
 image=http://magiccards.info/scans/en/in/242.jpg
-value=2.500
+value=4.235
 rarity=R
 type=Legendary,Creature
 subtype=Dragon

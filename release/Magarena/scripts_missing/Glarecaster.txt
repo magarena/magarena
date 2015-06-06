@@ -1,6 +1,6 @@
 name=Glarecaster
 image=http://magiccards.info/scans/en/on/30.jpg
-value=2.500
+value=3.518
 rarity=R
 type=Creature
 subtype=Bird,Cleric

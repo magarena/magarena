@@ -1,6 +1,6 @@
 name=Goblin Dynamo
 image=http://magiccards.info/scans/en/le/97.jpg
-value=2.500
+value=2.250
 rarity=U
 type=Creature
 subtype=Goblin,Mutant

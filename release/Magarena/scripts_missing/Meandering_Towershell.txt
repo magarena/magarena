@@ -1,6 +1,6 @@
 name=Meandering Towershell
 image=http://magiccards.info/scans/en/ktk/141.jpg
-value=2.500
+value=3.000
 rarity=R
 type=Creature
 subtype=Turtle

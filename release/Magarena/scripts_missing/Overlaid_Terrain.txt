@@ -1,6 +1,6 @@
 name=Overlaid Terrain
 image=http://magiccards.info/scans/en/ne/108.jpg
-value=2.500
+value=2.792
 rarity=R
 type=Enchantment
 cost={2}{G}{G}

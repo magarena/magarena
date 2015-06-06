@@ -1,6 +1,6 @@
 name=Vexing Arcanix
 image=http://magiccards.info/scans/en/8e/319.jpg
-value=2.500
+value=3.694
 rarity=R
 type=Artifact
 cost={4}

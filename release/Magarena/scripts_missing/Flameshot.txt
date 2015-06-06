@@ -1,6 +1,6 @@
 name=Flameshot
 image=http://magiccards.info/scans/en/pr/90.jpg
-value=2.500
+value=3.115
 rarity=U
 type=Sorcery
 cost={3}{R}

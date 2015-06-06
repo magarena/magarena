@@ -1,6 +1,6 @@
 name=Shimmering Grotto
 image=http://magiccards.info/scans/en/m14/229.jpg
-value=2.500
+value=3.069
 rarity=U
 type=Land
 ability={T}: Add {1} to your mana pool.;\

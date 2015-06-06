@@ -1,6 +1,6 @@
 name=Chromatic Star
 image=http://magiccards.info/scans/en/10e/314.jpg
-value=2.500
+value=3.742
 rarity=U
 type=Artifact
 cost={1}

@@ -1,6 +1,6 @@
 name=Titania's Song
 image=http://magiccards.info/scans/en/me4/170.jpg
-value=2.500
+value=4.029
 rarity=R
 type=Enchantment
 cost={3}{G}

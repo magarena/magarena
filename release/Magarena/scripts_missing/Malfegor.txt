@@ -1,6 +1,6 @@
 name=Malfegor
 image=http://magiccards.info/scans/en/cmd/208.jpg
-value=2.500
+value=3.263
 rarity=M
 type=Legendary,Creature
 subtype=Demon,Dragon

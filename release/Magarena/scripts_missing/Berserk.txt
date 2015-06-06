@@ -1,6 +1,6 @@
 name=Berserk
 image=http://magiccards.info/scans/en/vma/197.jpg
-value=2.500
+value=3.750
 rarity=R
 type=Instant
 cost={G}

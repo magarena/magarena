@@ -1,6 +1,6 @@
 name=Funeral March
 image=http://magiccards.info/scans/en/me2/91.jpg
-value=2.500
+value=3.115
 rarity=C
 type=Enchantment
 subtype=Aura

@@ -1,6 +1,6 @@
 name=Runechanter's Pike
 image=http://magiccards.info/scans/en/isd/231.jpg
-value=2.500
+value=4.113
 rarity=R
 type=Artifact
 subtype=Equipment

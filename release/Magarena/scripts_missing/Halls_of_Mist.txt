@@ -1,6 +1,6 @@
 name=Halls of Mist
 image=http://magiccards.info/scans/en/ia/332.jpg
-value=2.500
+value=3.188
 rarity=R
 type=Land
 ability=Cumulative upkeep {1};\

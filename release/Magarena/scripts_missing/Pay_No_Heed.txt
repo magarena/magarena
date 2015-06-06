@@ -1,6 +1,6 @@
 name=Pay No Heed
 image=http://magiccards.info/scans/en/ddl/19.jpg
-value=2.500
+value=2.909
 rarity=C
 type=Instant
 cost={W}

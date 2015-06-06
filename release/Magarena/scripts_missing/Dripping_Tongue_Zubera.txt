@@ -1,6 +1,6 @@
 name=Dripping-Tongue Zubera
 image=http://magiccards.info/scans/en/chk/206.jpg
-value=2.500
+value=3.329
 rarity=C
 type=Creature
 subtype=Zubera,Spirit

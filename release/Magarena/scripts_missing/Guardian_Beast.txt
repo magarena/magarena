@@ -1,6 +1,6 @@
 name=Guardian Beast
 image=http://magiccards.info/scans/en/me4/85.jpg
-value=2.500
+value=4.511
 rarity=R
 type=Creature
 subtype=Beast

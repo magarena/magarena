@@ -1,6 +1,6 @@
 name=Gnarled Scarhide
 image=http://magiccards.info/scans/en/jou/72.jpg
-value=2.500
+value=3.720
 rarity=U
 type=Enchantment,Creature
 subtype=Minotaur

@@ -1,6 +1,6 @@
 name=Clockwork Swarm
 image=http://magiccards.info/scans/en/me4/192.jpg
-value=2.500
+value=3.056
 rarity=C
 type=Artifact,Creature
 subtype=Insect

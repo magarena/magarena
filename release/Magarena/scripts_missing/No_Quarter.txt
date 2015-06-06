@@ -1,6 +1,6 @@
 name=No Quarter
 image=http://magiccards.info/scans/en/tp/193.jpg
-value=2.500
+value=3.300
 rarity=R
 type=Enchantment
 cost={3}{R}

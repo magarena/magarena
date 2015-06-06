@@ -1,6 +1,6 @@
 name=Golgari Brownscale
 image=http://magiccards.info/scans/en/rav/166.jpg
-value=2.500
+value=3.000
 rarity=C
 type=Creature
 subtype=Lizard

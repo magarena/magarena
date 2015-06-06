@@ -1,6 +1,6 @@
 name=Maze's End
 image=http://magiccards.info/scans/en/dgm/152.jpg
-value=2.500
+value=2.976
 rarity=M
 type=Land
 ability=SN enters the battlefield tapped.;\

@@ -1,6 +1,6 @@
 name=Hollowborn Barghest
 image=http://magiccards.info/scans/en/shm/68.jpg
-value=2.500
+value=3.713
 rarity=R
 type=Creature
 subtype=Demon,Hound

@@ -1,6 +1,6 @@
 name=Ceaseless Searblades
 image=http://magiccards.info/scans/en/lw/158.jpg
-value=2.500
+value=2.946
 rarity=U
 type=Creature
 subtype=Elemental,Warrior

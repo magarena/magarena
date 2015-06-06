@@ -1,6 +1,6 @@
 name=Cavern of Souls
 image=http://magiccards.info/scans/en/avr/226.jpg
-value=2.500
+value=4.305
 rarity=R
 type=Land
 ability=As SN enters the battlefield, choose a creature type.;\

@@ -1,6 +1,6 @@
 name=Runed Halo
 image=http://magiccards.info/scans/en/shm/21.jpg
-value=2.500
+value=3.820
 rarity=R
 type=Enchantment
 cost={W}{W}

@@ -1,6 +1,6 @@
 name=Metrognome
 image=http://magiccards.info/scans/en/us/301.jpg
-value=2.500
+value=3.250
 rarity=R
 type=Artifact
 cost={4}

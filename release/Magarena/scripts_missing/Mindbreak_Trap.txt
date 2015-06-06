@@ -1,6 +1,6 @@
 name=Mindbreak Trap
 image=http://magiccards.info/scans/en/zen/57.jpg
-value=2.500
+value=4.512
 rarity=M
 type=Instant
 subtype=Trap

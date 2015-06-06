@@ -1,6 +1,6 @@
 name=Arc Blade
 image=http://magiccards.info/scans/en/fut/94.jpg
-value=2.500
+value=3.403
 rarity=U
 type=Sorcery
 cost={3}{R}{R}

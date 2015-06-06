@@ -1,6 +1,6 @@
 name=Sigil of Sleep
 image=http://magiccards.info/scans/en/ddi/25.jpg
-value=2.500
+value=4.274
 rarity=C
 type=Enchantment
 subtype=Aura

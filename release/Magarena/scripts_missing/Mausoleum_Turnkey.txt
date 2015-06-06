@@ -1,6 +1,6 @@
 name=Mausoleum Turnkey
 image=http://magiccards.info/scans/en/rav/94.jpg
-value=2.500
+value=2.583
 rarity=U
 type=Creature
 subtype=Ogre,Rogue

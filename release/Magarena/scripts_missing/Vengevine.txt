@@ -1,6 +1,6 @@
 name=Vengevine
 image=http://magiccards.info/scans/en/roe/212.jpg
-value=2.500
+value=4.394
 rarity=M
 type=Creature
 subtype=Elemental

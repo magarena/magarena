@@ -1,6 +1,6 @@
 name=Urban Burgeoning
 image=http://magiccards.info/scans/en/rtr/138.jpg
-value=2.500
+value=2.868
 rarity=C
 type=Enchantment
 subtype=Aura

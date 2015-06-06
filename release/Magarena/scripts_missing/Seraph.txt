@@ -1,6 +1,6 @@
 name=Seraph
 image=http://magiccards.info/scans/en/med/26.jpg
-value=2.500
+value=3.250
 rarity=R
 type=Creature
 subtype=Angel

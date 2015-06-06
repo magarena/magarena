@@ -1,6 +1,6 @@
 name=Firecat Blitz
 image=http://magiccards.info/scans/en/ju/88.jpg
-value=2.500
+value=3.849
 rarity=U
 type=Sorcery
 cost={X}{R}{R}

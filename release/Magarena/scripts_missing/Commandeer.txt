@@ -1,6 +1,6 @@
 name=Commandeer
 image=http://magiccards.info/scans/en/cs/29.jpg
-value=2.500
+value=4.415
 rarity=R
 type=Instant
 cost={5}{U}{U}

@@ -1,6 +1,6 @@
 name=Veiled Apparition
 image=http://magiccards.info/scans/en/us/107.jpg
-value=2.500
+value=2.516
 rarity=U
 type=Enchantment
 cost={1}{U}

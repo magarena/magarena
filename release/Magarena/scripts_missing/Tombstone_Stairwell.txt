@@ -1,6 +1,6 @@
 name=Tombstone Stairwell
 image=http://magiccards.info/scans/en/mr/47.jpg
-value=2.500
+value=4.315
 rarity=R
 type=World,Enchantment
 cost={2}{B}{B}

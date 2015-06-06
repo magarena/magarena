@@ -1,6 +1,6 @@
 name=Stinging Licid
 image=http://magiccards.info/scans/en/tp/91.jpg
-value=2.500
+value=3.232
 rarity=U
 type=Creature
 subtype=Licid

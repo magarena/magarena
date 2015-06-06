@@ -1,6 +1,6 @@
 name=Pendrell Flux
 image=http://magiccards.info/scans/en/us/87.jpg
-value=2.500
+value=4.122
 rarity=C
 type=Enchantment
 subtype=Aura

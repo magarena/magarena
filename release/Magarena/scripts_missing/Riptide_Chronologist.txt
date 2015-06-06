@@ -1,6 +1,6 @@
 name=Riptide Chronologist
 image=http://magiccards.info/scans/en/on/107.jpg
-value=2.500
+value=1.288
 rarity=U
 type=Creature
 subtype=Human,Wizard

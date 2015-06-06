@@ -1,6 +1,6 @@
 name=Fencer's Magemark
 image=http://magiccards.info/scans/en/gp/65.jpg
-value=2.500
+value=3.207
 rarity=C
 type=Enchantment
 subtype=Aura

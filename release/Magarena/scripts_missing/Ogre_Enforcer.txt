@@ -1,6 +1,6 @@
 name=Ogre Enforcer
 image=http://magiccards.info/scans/en/vi/89.jpg
-value=2.500
+value=3.562
 rarity=R
 type=Creature
 subtype=Ogre

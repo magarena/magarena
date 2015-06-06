@@ -1,6 +1,6 @@
 name=Reverse Polarity
 image=http://magiccards.info/scans/en/rv/220.jpg
-value=2.500
+value=2.375
 rarity=U
 type=Instant
 cost={W}{W}

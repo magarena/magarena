@@ -1,6 +1,6 @@
 name=Avarice Amulet
 image=http://magiccards.info/scans/en/m15/212.jpg
-value=2.500
+value=3.000
 rarity=R
 type=Artifact
 subtype=Equipment

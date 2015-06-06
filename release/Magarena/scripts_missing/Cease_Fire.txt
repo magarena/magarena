@@ -1,6 +1,6 @@
 name=Cease-Fire
 image=http://magiccards.info/scans/en/od/14.jpg
-value=2.500
+value=2.776
 rarity=C
 type=Instant
 cost={2}{W}

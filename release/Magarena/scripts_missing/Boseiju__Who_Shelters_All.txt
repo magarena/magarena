@@ -1,6 +1,6 @@
 name=Boseiju, Who Shelters All
 image=http://magiccards.info/scans/en/chk/273.jpg
-value=2.500
+value=4.058
 rarity=R
 type=Legendary,Land
 ability=SN enters the battlefield tapped.;\

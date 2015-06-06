@@ -1,6 +1,6 @@
 name=Rimescale Dragon
 image=http://magiccards.info/scans/en/cs/95.jpg
-value=2.500
+value=4.184
 rarity=R
 type=Snow,Creature
 subtype=Dragon

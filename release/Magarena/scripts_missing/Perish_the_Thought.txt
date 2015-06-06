@@ -1,6 +1,6 @@
 name=Perish the Thought
 image=http://magiccards.info/scans/en/roe/123.jpg
-value=2.500
+value=2.512
 rarity=C
 type=Sorcery
 cost={2}{B}

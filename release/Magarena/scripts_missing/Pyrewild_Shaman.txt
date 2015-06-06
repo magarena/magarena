@@ -1,6 +1,6 @@
 name=Pyrewild Shaman
 image=http://magiccards.info/scans/en/dgm/36.jpg
-value=2.500
+value=3.718
 rarity=R
 type=Creature
 subtype=Goblin,Shaman

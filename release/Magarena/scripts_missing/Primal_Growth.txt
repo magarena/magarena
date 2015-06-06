@@ -1,6 +1,6 @@
 name=Primal Growth
 image=http://magiccards.info/scans/en/ps/87.jpg
-value=2.500
+value=3.819
 rarity=C
 type=Sorcery
 cost={2}{G}

@@ -1,6 +1,6 @@
 name=Squeaking Pie Sneak
 image=http://magiccards.info/scans/en/lw/142.jpg
-value=2.500
+value=3.241
 rarity=U
 type=Creature
 subtype=Goblin,Rogue

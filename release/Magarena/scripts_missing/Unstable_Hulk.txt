@@ -1,6 +1,6 @@
 name=Unstable Hulk
 image=http://magiccards.info/scans/en/le/115.jpg
-value=2.500
+value=2.556
 rarity=R
 type=Creature
 subtype=Goblin,Mutant

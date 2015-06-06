@@ -1,6 +1,6 @@
 name=Ashiok, Nightmare Weaver
 image=http://magiccards.info/scans/en/ths/188.jpg
-value=2.500
+value=3.619
 rarity=M
 type=Planeswalker
 subtype=Ashiok

@@ -1,6 +1,6 @@
 name=Vigil for the Lost
 image=http://magiccards.info/scans/en/som/26.jpg
-value=2.500
+value=1.845
 rarity=U
 type=Enchantment
 cost={3}{W}

@@ -1,6 +1,6 @@
 name=Pride of the Clouds
 image=http://magiccards.info/scans/en/di/125.jpg
-value=2.500
+value=4.140
 rarity=R
 type=Creature
 subtype=Elemental,Cat

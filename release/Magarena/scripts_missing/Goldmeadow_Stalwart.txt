@@ -1,6 +1,6 @@
 name=Goldmeadow Stalwart
 image=http://magiccards.info/scans/en/lw/18.jpg
-value=2.500
+value=3.984
 rarity=U
 type=Creature
 subtype=Kithkin,Soldier

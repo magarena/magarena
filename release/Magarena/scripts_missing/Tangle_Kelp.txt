@@ -1,6 +1,6 @@
 name=Tangle Kelp
 image=http://magiccards.info/scans/en/dk/36.jpg
-value=2.500
+value=3.000
 rarity=U
 type=Enchantment
 subtype=Aura

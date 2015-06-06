@@ -1,6 +1,6 @@
 name=Soldevi Adnate
 image=http://magiccards.info/scans/en/ai/25.jpg
-value=2.500
+value=4.062
 rarity=C
 type=Creature
 subtype=Human,Cleric

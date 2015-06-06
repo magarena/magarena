@@ -1,6 +1,6 @@
 name=Kiora's Dismissal
 image=http://magiccards.info/scans/en/jou/44.jpg
-value=2.500
+value=3.238
 rarity=U
 type=Instant
 cost={U}

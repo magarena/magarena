@@ -1,6 +1,6 @@
 name=False Cure
 image=http://magiccards.info/scans/en/on/146.jpg
-value=2.500
+value=4.328
 rarity=R
 type=Instant
 cost={B}{B}

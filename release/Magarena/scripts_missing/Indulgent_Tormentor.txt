@@ -1,6 +1,6 @@
 name=Indulgent Tormentor
 image=http://magiccards.info/scans/en/m15/101.jpg
-value=2.500
+value=4.000
 rarity=R
 type=Creature
 subtype=Demon

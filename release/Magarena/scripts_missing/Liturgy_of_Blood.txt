@@ -1,6 +1,6 @@
 name=Liturgy of Blood
 image=http://magiccards.info/scans/en/m14/104.jpg
-value=2.500
+value=2.770
 rarity=C
 type=Sorcery
 cost={3}{B}{B}

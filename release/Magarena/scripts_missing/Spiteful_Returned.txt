@@ -1,6 +1,6 @@
 name=Spiteful Returned
 image=http://magiccards.info/scans/en/bng/84.jpg
-value=2.500
+value=3.812
 rarity=U
 type=Enchantment,Creature
 subtype=Zombie

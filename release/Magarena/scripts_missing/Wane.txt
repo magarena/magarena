@@ -1,6 +1,6 @@
 name=Wane
 image=http://magiccards.info/scans/en/arc/101b.jpg
-value=2.500
+value=4.148
 rarity=U
 type=Instant
 cost={W}

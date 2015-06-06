@@ -1,6 +1,6 @@
 name=Martyr's Bond
 image=http://magiccards.info/scans/en/cmd/19.jpg
-value=2.500
+value=4.127
 rarity=R
 type=Enchantment
 cost={4}{W}{W}

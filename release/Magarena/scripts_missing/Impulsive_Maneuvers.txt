@@ -1,6 +1,6 @@
 name=Impulsive Maneuvers
 image=http://magiccards.info/scans/en/od/197.jpg
-value=2.500
+value=2.371
 rarity=R
 type=Enchantment
 cost={2}{R}{R}

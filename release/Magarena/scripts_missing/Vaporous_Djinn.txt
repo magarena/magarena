@@ -1,6 +1,6 @@
 name=Vaporous Djinn
 image=http://magiccards.info/scans/en/mr/101.jpg
-value=2.500
+value=2.278
 rarity=U
 type=Creature
 subtype=Djinn

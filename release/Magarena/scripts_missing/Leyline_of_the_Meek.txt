@@ -1,6 +1,6 @@
 name=Leyline of the Meek
 image=http://magiccards.info/scans/en/gp/10.jpg
-value=2.500
+value=3.638
 rarity=R
 type=Enchantment
 cost={2}{W}{W}

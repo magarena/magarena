@@ -1,6 +1,6 @@
 name=Magus of the Future
 image=http://magiccards.info/scans/en/fut/40.jpg
-value=2.500
+value=4.222
 rarity=R
 type=Creature
 subtype=Human,Wizard

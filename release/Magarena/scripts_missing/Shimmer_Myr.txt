@@ -1,6 +1,6 @@
 name=Shimmer Myr
 image=http://magiccards.info/scans/en/mbs/129.jpg
-value=2.500
+value=3.718
 rarity=R
 type=Artifact,Creature
 subtype=Myr

@@ -1,6 +1,6 @@
 name=Krosan Restorer
 image=http://magiccards.info/scans/en/tr/130.jpg
-value=2.500
+value=4.056
 rarity=C
 type=Creature
 subtype=Human,Druid

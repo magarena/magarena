@@ -1,6 +1,6 @@
 name=Moonscarred Werewolf
 image=http://magiccards.info/scans/en/dka/125b.jpg
-value=2.500
+value=3.315
 rarity=C
 type=Creature
 subtype=Werewolf

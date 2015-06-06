@@ -1,6 +1,6 @@
 name=Hour of Need
 image=http://magiccards.info/scans/en/jou/40.jpg
-value=2.500
+value=3.764
 rarity=U
 type=Instant
 cost={2}{U}

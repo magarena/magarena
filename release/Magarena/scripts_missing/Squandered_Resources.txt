@@ -1,6 +1,6 @@
 name=Squandered Resources
 image=http://magiccards.info/scans/en/vi/137.jpg
-value=2.500
+value=4.276
 rarity=R
 type=Enchantment
 cost={B}{G}

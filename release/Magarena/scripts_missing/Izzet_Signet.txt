@@ -1,6 +1,6 @@
 name=Izzet Signet
 image=http://magiccards.info/scans/en/ddj/17.jpg
-value=2.500
+value=4.071
 rarity=C
 type=Artifact
 cost={2}

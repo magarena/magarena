@@ -1,6 +1,6 @@
 name=Golgothian Sylex
 image=http://magiccards.info/scans/en/aq/16.jpg
-value=2.500
+value=2.312
 rarity=R
 type=Artifact
 cost={4}

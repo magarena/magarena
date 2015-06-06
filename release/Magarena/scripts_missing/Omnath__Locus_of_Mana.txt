@@ -1,6 +1,6 @@
 name=Omnath, Locus of Mana
 image=http://magiccards.info/scans/en/wwk/109.jpg
-value=2.500
+value=3.929
 rarity=M
 type=Legendary,Creature
 subtype=Elemental

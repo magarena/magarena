@@ -1,6 +1,6 @@
 name=Pyric Salamander
 image=http://magiccards.info/scans/en/mr/187.jpg
-value=2.500
+value=2.386
 rarity=C
 type=Creature
 subtype=Salamander

@@ -1,6 +1,6 @@
 name=Trial
 image=http://magiccards.info/scans/en/di/158a.jpg
-value=2.500
+value=3.196
 rarity=U
 type=Instant
 cost={W}{U}

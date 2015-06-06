@@ -1,6 +1,6 @@
 name=Nemesis Mask
 image=http://magiccards.info/scans/en/ds/134.jpg
-value=2.500
+value=3.689
 rarity=U
 type=Artifact
 subtype=Equipment

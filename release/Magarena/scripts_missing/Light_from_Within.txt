@@ -1,6 +1,6 @@
 name=Light from Within
 image=http://magiccards.info/scans/en/eve/10.jpg
-value=2.500
+value=4.061
 rarity=R
 type=Enchantment
 cost={2}{W}{W}

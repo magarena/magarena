@@ -1,6 +1,6 @@
 name=Determined
 image=http://magiccards.info/scans/en/di/149b.jpg
-value=2.500
+value=3.971
 rarity=R
 type=Instant
 cost={G}{U}

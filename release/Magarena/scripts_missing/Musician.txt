@@ -1,6 +1,6 @@
 name=Musician
 image=http://magiccards.info/scans/en/me2/56.jpg
-value=2.500
+value=2.942
 rarity=R
 type=Creature
 subtype=Human,Wizard

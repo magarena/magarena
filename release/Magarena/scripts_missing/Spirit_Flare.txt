@@ -1,6 +1,6 @@
 name=Spirit Flare
 image=http://magiccards.info/scans/en/tr/15.jpg
-value=2.500
+value=2.521
 rarity=C
 type=Instant
 cost={3}{W}

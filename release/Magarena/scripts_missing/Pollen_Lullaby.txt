@@ -1,6 +1,6 @@
 name=Pollen Lullaby
 image=http://magiccards.info/scans/en/cmd/26.jpg
-value=2.500
+value=2.593
 rarity=U
 type=Instant
 cost={1}{W}

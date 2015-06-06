@@ -1,6 +1,6 @@
 name=Black Market
 image=http://magiccards.info/scans/en/mm/116.jpg
-value=2.500
+value=4.174
 rarity=R
 type=Enchantment
 cost={3}{B}{B}

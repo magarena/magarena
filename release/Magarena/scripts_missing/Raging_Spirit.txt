@@ -1,6 +1,6 @@
 name=Raging Spirit
 image=http://magiccards.info/scans/en/mr/188.jpg
-value=2.500
+value=2.722
 rarity=C
 type=Creature
 subtype=Spirit

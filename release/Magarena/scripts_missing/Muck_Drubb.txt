@@ -1,6 +1,6 @@
 name=Muck Drubb
 image=http://magiccards.info/scans/en/pc/76.jpg
-value=2.500
+value=3.300
 rarity=U
 type=Creature
 subtype=Beast

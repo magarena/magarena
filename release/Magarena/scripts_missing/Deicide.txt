@@ -1,6 +1,6 @@
 name=Deicide
 image=http://magiccards.info/scans/en/jou/7.jpg
-value=2.500
+value=3.278
 rarity=R
 type=Instant
 cost={1}{W}

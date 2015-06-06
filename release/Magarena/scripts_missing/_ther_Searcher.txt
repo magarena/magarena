@@ -1,6 +1,6 @@
 name=Æther Searcher
 image=http://magiccards.info/scans/en/cns/53.jpg
-value=2.500
+value=3.571
 rarity=R
 type=Artifact,Creature
 subtype=Construct

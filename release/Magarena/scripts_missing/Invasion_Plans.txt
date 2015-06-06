@@ -1,6 +1,6 @@
 name=Invasion Plans
 image=http://magiccards.info/scans/en/sh/89.jpg
-value=2.500
+value=4.236
 rarity=R
 type=Enchantment
 cost={2}{R}

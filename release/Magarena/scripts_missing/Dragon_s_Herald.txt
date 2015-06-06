@@ -1,6 +1,6 @@
 name=Dragon's Herald
 image=http://magiccards.info/scans/en/ala/98.jpg
-value=2.500
+value=2.610
 rarity=U
 type=Creature
 subtype=Goblin,Shaman

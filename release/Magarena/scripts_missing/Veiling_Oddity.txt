@@ -1,6 +1,6 @@
 name=Veiling Oddity
 image=http://magiccards.info/scans/en/pc/51.jpg
-value=2.500
+value=2.946
 rarity=C
 type=Creature
 subtype=Illusion

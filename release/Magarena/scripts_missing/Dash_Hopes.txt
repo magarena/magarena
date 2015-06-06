@@ -1,6 +1,6 @@
 name=Dash Hopes
 image=http://magiccards.info/scans/en/pc/68.jpg
-value=2.500
+value=4.011
 rarity=C
 type=Instant
 cost={B}{B}

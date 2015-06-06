@@ -1,6 +1,6 @@
 name=Swooping Talon
 image=http://magiccards.info/scans/en/le/23.jpg
-value=2.500
+value=2.688
 rarity=U
 type=Creature
 subtype=Bird,Soldier

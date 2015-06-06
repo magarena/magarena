@@ -1,6 +1,6 @@
 name=Melancholy
 image=http://magiccards.info/scans/en/pc/88.jpg
-value=2.500
+value=2.210
 rarity=C
 type=Enchantment
 subtype=Aura

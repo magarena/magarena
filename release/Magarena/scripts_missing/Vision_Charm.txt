@@ -1,6 +1,6 @@
 name=Vision Charm
 image=http://magiccards.info/scans/en/vi/49.jpg
-value=2.500
+value=4.466
 rarity=C
 type=Instant
 cost={U}

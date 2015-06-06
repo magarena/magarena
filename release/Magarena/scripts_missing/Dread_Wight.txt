@@ -1,6 +1,6 @@
 name=Dread Wight
 image=http://magiccards.info/scans/en/me4/79.jpg
-value=2.500
+value=3.762
 rarity=U
 type=Creature
 subtype=Zombie

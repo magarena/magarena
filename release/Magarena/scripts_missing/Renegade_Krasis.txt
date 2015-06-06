@@ -1,6 +1,6 @@
 name=Renegade Krasis
 image=http://magiccards.info/scans/en/dgm/47.jpg
-value=2.500
+value=3.792
 rarity=R
 type=Creature
 subtype=Beast,Mutant

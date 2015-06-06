@@ -1,6 +1,6 @@
 name=Stalking Yeti
 image=http://magiccards.info/scans/en/cs/98.jpg
-value=2.500
+value=2.919
 rarity=U
 type=Snow,Creature
 subtype=Yeti

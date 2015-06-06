@@ -1,6 +1,6 @@
 name=Bronze Horse
 image=http://magiccards.info/scans/en/me4/186.jpg
-value=2.500
+value=2.900
 rarity=U
 type=Artifact,Creature
 subtype=Horse

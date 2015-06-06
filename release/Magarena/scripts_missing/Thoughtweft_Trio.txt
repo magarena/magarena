@@ -1,6 +1,6 @@
 name=Thoughtweft Trio
 image=http://magiccards.info/scans/en/lw/44.jpg
-value=2.500
+value=4.059
 rarity=R
 type=Creature
 subtype=Kithkin,Soldier

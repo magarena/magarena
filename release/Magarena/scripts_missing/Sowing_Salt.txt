@@ -1,6 +1,6 @@
 name=Sowing Salt
 image=http://magiccards.info/scans/en/bok/118.jpg
-value=2.500
+value=4.167
 rarity=U
 type=Sorcery
 cost={2}{R}{R}

@@ -1,6 +1,6 @@
 name=Mirror Sheen
 image=http://magiccards.info/scans/en/eve/105.jpg
-value=2.500
+value=3.217
 rarity=R
 type=Enchantment
 cost={1}{U/R}{U/R}

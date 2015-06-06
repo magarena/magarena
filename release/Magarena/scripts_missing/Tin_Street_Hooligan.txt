@@ -1,6 +1,6 @@
 name=Tin Street Hooligan
 image=http://magiccards.info/scans/en/gp/78.jpg
-value=2.500
+value=4.256
 rarity=C
 type=Creature
 subtype=Goblin,Rogue

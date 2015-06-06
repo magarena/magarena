@@ -1,6 +1,6 @@
 name=Whipkeeper
 image=http://magiccards.info/scans/en/od/228.jpg
-value=2.500
+value=1.806
 rarity=U
 type=Creature
 subtype=Dwarf

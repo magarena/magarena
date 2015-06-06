@@ -1,6 +1,6 @@
 name=Lavaball Trap
 image=http://magiccards.info/scans/en/zen/135.jpg
-value=2.500
+value=3.198
 rarity=R
 type=Instant
 subtype=Trap

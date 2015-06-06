@@ -1,6 +1,6 @@
 name=Spellwild Ouphe
 image=http://magiccards.info/scans/en/fut/151.jpg
-value=2.500
+value=3.151
 rarity=U
 type=Creature
 subtype=Ouphe

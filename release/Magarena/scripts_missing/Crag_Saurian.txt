@@ -1,6 +1,6 @@
 name=Crag Saurian
 image=http://magiccards.info/scans/en/mm/185.jpg
-value=2.500
+value=2.145
 rarity=R
 type=Creature
 subtype=Lizard

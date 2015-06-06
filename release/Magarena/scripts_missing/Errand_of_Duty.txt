@@ -1,6 +1,6 @@
 name=Errand of Duty
 image=http://magiccards.info/scans/en/me2/12.jpg
-value=2.500
+value=2.661
 rarity=U
 type=Instant
 cost={1}{W}

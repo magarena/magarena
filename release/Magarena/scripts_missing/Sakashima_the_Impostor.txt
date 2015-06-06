@@ -1,6 +1,6 @@
 name=Sakashima the Impostor
 image=http://magiccards.info/scans/en/sok/53.jpg
-value=2.500
+value=4.039
 rarity=R
 type=Legendary,Creature
 subtype=Human,Rogue

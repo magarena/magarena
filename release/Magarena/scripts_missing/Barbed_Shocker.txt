@@ -1,6 +1,6 @@
 name=Barbed Shocker
 image=http://magiccards.info/scans/en/cns/136.jpg
-value=2.500
+value=3.833
 rarity=U
 type=Creature
 subtype=Insect

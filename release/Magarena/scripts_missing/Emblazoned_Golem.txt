@@ -1,6 +1,6 @@
 name=Emblazoned Golem
 image=http://magiccards.info/scans/en/ap/136.jpg
-value=2.500
+value=2.766
 rarity=U
 type=Artifact,Creature
 subtype=Golem

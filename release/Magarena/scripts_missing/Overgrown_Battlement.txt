@@ -1,6 +1,6 @@
 name=Overgrown Battlement
 image=http://magiccards.info/scans/en/roe/203.jpg
-value=2.500
+value=4.268
 rarity=C
 type=Creature
 subtype=Wall

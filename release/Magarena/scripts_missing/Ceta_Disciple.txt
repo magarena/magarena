@@ -1,6 +1,6 @@
 name=Ceta Disciple
 image=http://magiccards.info/scans/en/ap/19.jpg
-value=2.500
+value=3.191
 rarity=C
 type=Creature
 subtype=Merfolk,Wizard

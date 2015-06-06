@@ -1,6 +1,6 @@
 name=Arrow Storm
 image=http://magiccards.info/scans/en/ktk/98.jpg
-value=2.500
+value=2.750
 rarity=C
 type=Sorcery
 cost={3}{R}{R}

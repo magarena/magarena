@@ -1,6 +1,6 @@
 name=Champion of Stray Souls
 image=http://magiccards.info/scans/en/bng/63.jpg
-value=2.500
+value=3.720
 rarity=M
 type=Creature
 subtype=Skeleton,Warrior

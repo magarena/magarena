@@ -1,6 +1,6 @@
 name=Notorious Throng
 image=http://magiccards.info/scans/en/mt/45.jpg
-value=2.500
+value=3.612
 rarity=R
 type=Tribal,Sorcery
 subtype=Rogue

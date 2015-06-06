@@ -1,6 +1,6 @@
 name=Druids' Repository
 image=http://magiccards.info/scans/en/avr/176.jpg
-value=2.500
+value=3.721
 rarity=R
 type=Enchantment
 cost={1}{G}{G}

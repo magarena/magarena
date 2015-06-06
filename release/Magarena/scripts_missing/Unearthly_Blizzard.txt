@@ -1,6 +1,6 @@
 name=Unearthly Blizzard
 image=http://magiccards.info/scans/en/chk/196.jpg
-value=2.500
+value=2.812
 rarity=C
 type=Sorcery
 subtype=Arcane

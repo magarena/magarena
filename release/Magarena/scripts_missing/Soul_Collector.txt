@@ -1,6 +1,6 @@
 name=Soul Collector
 image=http://magiccards.info/scans/en/tsts/47.jpg
-value=2.500
+value=4.035
 rarity=R
 type=Creature
 subtype=Vampire

@@ -1,6 +1,6 @@
 name=Forgotten Harvest
 image=http://magiccards.info/scans/en/pr/114.jpg
-value=2.500
+value=2.645
 rarity=R
 type=Enchantment
 cost={1}{G}

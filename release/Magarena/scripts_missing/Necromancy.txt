@@ -1,6 +1,6 @@
 name=Necromancy
 image=http://magiccards.info/scans/en/vi/14.jpg
-value=2.500
+value=4.556
 rarity=U
 type=Enchantment
 cost={2}{B}

@@ -1,6 +1,6 @@
 name=Gaea's Cradle
 image=http://magiccards.info/scans/en/us/321.jpg
-value=2.500
+value=4.618
 rarity=R
 type=Legendary,Land
 ability={T}: Add {G} to your mana pool for each creature you control.

@@ -1,6 +1,6 @@
 name=Qal Sisma Behemoth
 image=http://magiccards.info/scans/en/dtk/149.jpg
-value=2.500
+value=3.500
 rarity=U
 type=Creature
 subtype=Ogre,Warrior

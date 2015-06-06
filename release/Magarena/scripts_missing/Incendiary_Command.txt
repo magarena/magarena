@@ -1,6 +1,6 @@
 name=Incendiary Command
 image=http://magiccards.info/scans/en/c13/113.jpg
-value=2.500
+value=3.615
 rarity=R
 type=Sorcery
 cost={3}{R}{R}

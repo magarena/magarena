@@ -1,6 +1,6 @@
 name=Viridian Acolyte
 image=http://magiccards.info/scans/en/ds/89.jpg
-value=2.500
+value=2.367
 rarity=C
 type=Creature
 subtype=Elf,Shaman

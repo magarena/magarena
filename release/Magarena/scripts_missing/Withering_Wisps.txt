@@ -1,6 +1,6 @@
 name=Withering Wisps
 image=http://magiccards.info/scans/en/me2/114.jpg
-value=2.500
+value=4.172
 rarity=U
 type=Enchantment
 cost={1}{B}{B}

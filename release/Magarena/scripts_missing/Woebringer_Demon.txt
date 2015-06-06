@@ -1,6 +1,6 @@
 name=Woebringer Demon
 image=http://magiccards.info/scans/en/rav/113.jpg
-value=2.500
+value=3.344
 rarity=R
 type=Creature
 subtype=Demon

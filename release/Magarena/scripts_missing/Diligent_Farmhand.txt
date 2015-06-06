@@ -1,6 +1,6 @@
 name=Diligent Farmhand
 image=http://magiccards.info/scans/en/od/237.jpg
-value=2.500
+value=3.684
 rarity=C
 type=Creature
 subtype=Human,Druid

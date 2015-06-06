@@ -1,6 +1,6 @@
 name=Stamina
 image=http://magiccards.info/scans/en/mm/277.jpg
-value=2.500
+value=2.769
 rarity=U
 type=Enchantment
 subtype=Aura

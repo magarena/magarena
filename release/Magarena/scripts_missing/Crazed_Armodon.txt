@@ -1,6 +1,6 @@
 name=Crazed Armodon
 image=http://magiccards.info/scans/en/tp/114.jpg
-value=2.500
+value=2.903
 rarity=R
 type=Creature
 subtype=Elephant

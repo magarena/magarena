@@ -1,6 +1,6 @@
 name=Jilt
 image=http://magiccards.info/scans/en/ap/27.jpg
-value=2.500
+value=4.112
 rarity=C
 type=Instant
 cost={1}{U}

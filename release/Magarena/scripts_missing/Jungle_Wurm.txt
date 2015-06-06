@@ -1,6 +1,6 @@
 name=Jungle Wurm
 image=http://magiccards.info/scans/en/vma/217.jpg
-value=2.500
+value=1.500
 rarity=C
 type=Creature
 subtype=Wurm

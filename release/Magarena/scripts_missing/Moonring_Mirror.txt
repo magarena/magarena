@@ -1,6 +1,6 @@
 name=Moonring Mirror
 image=http://magiccards.info/scans/en/chk/262.jpg
-value=2.500
+value=3.038
 rarity=R
 type=Artifact
 cost={5}

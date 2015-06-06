@@ -1,6 +1,6 @@
 name=Lure of Prey
 image=http://magiccards.info/scans/en/mr/125.jpg
-value=2.500
+value=4.198
 rarity=R
 type=Instant
 cost={2}{G}{G}

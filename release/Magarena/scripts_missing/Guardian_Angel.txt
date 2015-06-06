@@ -1,6 +1,6 @@
 name=Guardian Angel
 image=http://magiccards.info/scans/en/rv/205.jpg
-value=2.500
+value=2.655
 rarity=C
 type=Instant
 cost={X}{W}

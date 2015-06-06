@@ -1,6 +1,6 @@
 name=Exotic Orchard
 image=http://magiccards.info/scans/en/pc2/117.jpg
-value=2.500
+value=2.962
 rarity=R
 type=Land
 ability={T}: Add to your mana pool one mana of any color that a land an opponent controls could produce.

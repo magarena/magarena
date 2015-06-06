@@ -1,6 +1,6 @@
 name=Kjeldoran Royal Guard
 image=http://magiccards.info/scans/en/10e/25.jpg
-value=2.500
+value=3.379
 rarity=R
 type=Creature
 subtype=Human,Soldier

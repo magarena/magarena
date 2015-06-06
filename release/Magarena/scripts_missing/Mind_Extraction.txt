@@ -1,6 +1,6 @@
 name=Mind Extraction
 image=http://magiccards.info/scans/en/ap/42.jpg
-value=2.500
+value=2.867
 rarity=C
 type=Sorcery
 cost={2}{B}

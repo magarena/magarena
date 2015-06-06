@@ -1,6 +1,6 @@
 name=Blue Mana Battery
 image=http://magiccards.info/scans/en/4e/318.jpg
-value=2.500
+value=2.859
 rarity=R
 type=Artifact
 cost={4}

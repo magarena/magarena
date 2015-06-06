@@ -1,6 +1,6 @@
 name=Equinox
 image=http://magiccards.info/scans/en/lg/182.jpg
-value=2.500
+value=2.378
 rarity=C
 type=Enchantment
 subtype=Aura

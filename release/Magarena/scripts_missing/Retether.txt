@@ -1,6 +1,6 @@
 name=Retether
 image=http://magiccards.info/scans/en/pc/13.jpg
-value=2.500
+value=3.925
 rarity=R
 type=Sorcery
 cost={3}{W}

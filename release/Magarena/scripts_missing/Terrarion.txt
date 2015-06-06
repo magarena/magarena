@@ -1,6 +1,6 @@
 name=Terrarion
 image=http://magiccards.info/scans/en/rav/273.jpg
-value=2.500
+value=3.318
 rarity=C
 type=Artifact
 cost={1}

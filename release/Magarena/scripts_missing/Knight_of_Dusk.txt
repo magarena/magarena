@@ -1,6 +1,6 @@
 name=Knight of Dusk
 image=http://magiccards.info/scans/en/10e/152.jpg
-value=2.500
+value=4.046
 rarity=U
 type=Creature
 subtype=Human,Knight

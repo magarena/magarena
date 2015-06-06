@@ -1,6 +1,6 @@
 name=Thalakos Dreamsower
 image=http://magiccards.info/scans/en/tp/92.jpg
-value=2.500
+value=3.219
 rarity=U
 type=Creature
 subtype=Thalakos,Wizard

@@ -1,6 +1,6 @@
 name=Jugan, the Rising Star
 image=http://magiccards.info/scans/en/mma/150.jpg
-value=2.500
+value=3.717
 rarity=M
 type=Legendary,Creature
 subtype=Dragon,Spirit

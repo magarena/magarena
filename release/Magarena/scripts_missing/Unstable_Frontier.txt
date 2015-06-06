@@ -1,6 +1,6 @@
 name=Unstable Frontier
 image=http://magiccards.info/scans/en/cfx/145.jpg
-value=2.500
+value=2.789
 rarity=U
 type=Land
 ability={T}: Add {1} to your mana pool.;\

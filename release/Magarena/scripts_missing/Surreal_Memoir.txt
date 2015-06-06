@@ -1,6 +1,6 @@
 name=Surreal Memoir
 image=http://magiccards.info/scans/en/roe/167.jpg
-value=2.500
+value=3.856
 rarity=U
 type=Sorcery
 cost={3}{R}

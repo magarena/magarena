@@ -1,6 +1,6 @@
 name=Time Vault
 image=http://magiccards.info/scans/en/vma/287.jpg
-value=2.500
+value=4.833
 rarity=M
 type=Artifact
 cost={2}

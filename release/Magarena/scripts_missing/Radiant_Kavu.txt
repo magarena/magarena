@@ -1,6 +1,6 @@
 name=Radiant Kavu
 image=http://magiccards.info/scans/en/ps/120.jpg
-value=2.500
+value=3.926
 rarity=R
 type=Creature
 subtype=Kavu

@@ -1,6 +1,6 @@
 name=Hall of the Bandit Lord
 image=http://magiccards.info/scans/en/chk/277.jpg
-value=2.500
+value=2.265
 rarity=R
 type=Legendary,Land
 ability=SN enters the battlefield tapped.;\

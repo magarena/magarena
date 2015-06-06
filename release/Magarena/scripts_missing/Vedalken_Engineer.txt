@@ -1,6 +1,6 @@
 name=Vedalken Engineer
 image=http://magiccards.info/scans/en/pch/15.jpg
-value=2.500
+value=4.454
 rarity=C
 type=Creature
 subtype=Vedalken,Artificer

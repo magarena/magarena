@@ -1,6 +1,6 @@
 name=Distant Melody
 image=http://magiccards.info/scans/en/mt/32.jpg
-value=2.500
+value=3.625
 rarity=C
 type=Sorcery
 cost={3}{U}

@@ -1,6 +1,6 @@
 name=Nalathni Dragon
 image=http://magiccards.info/scans/en/mbp/3.jpg
-value=2.500
+value=2.662
 rarity=R
 type=Creature
 subtype=Dragon

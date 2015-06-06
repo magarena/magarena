@@ -1,6 +1,6 @@
 name=Callous Oppressor
 image=http://magiccards.info/scans/en/on/72.jpg
-value=2.500
+value=3.514
 rarity=R
 type=Creature
 subtype=Cephalid

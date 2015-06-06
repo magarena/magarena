@@ -1,6 +1,6 @@
 name=Venomous Breath
 image=http://magiccards.info/scans/en/mm/281.jpg
-value=2.500
+value=2.929
 rarity=U
 type=Instant
 cost={3}{G}

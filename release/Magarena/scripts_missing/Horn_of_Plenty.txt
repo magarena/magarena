@@ -1,6 +1,6 @@
 name=Horn of Plenty
 image=http://magiccards.info/scans/en/mm/298.jpg
-value=2.500
+value=2.518
 rarity=R
 type=Artifact
 cost={6}

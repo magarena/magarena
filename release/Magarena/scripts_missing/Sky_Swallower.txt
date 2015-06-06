@@ -1,6 +1,6 @@
 name=Sky Swallower
 image=http://magiccards.info/scans/en/gp/34.jpg
-value=2.500
+value=2.418
 rarity=R
 type=Creature
 subtype=Leviathan

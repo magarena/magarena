@@ -1,6 +1,6 @@
 name=Thundering Wurm
 image=http://magiccards.info/scans/en/po/115.jpg
-value=2.500
+value=3.227
 rarity=R
 type=Creature
 subtype=Wurm

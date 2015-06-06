@@ -1,6 +1,6 @@
 name=Phyrexian Grimoire
 image=http://magiccards.info/scans/en/tp/291.jpg
-value=2.500
+value=2.672
 rarity=R
 type=Artifact
 cost={3}

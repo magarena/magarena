@@ -1,6 +1,6 @@
 name=Scroll Rack
 image=http://magiccards.info/scans/en/cma/16.jpg
-value=2.500
+value=4.585
 rarity=R
 type=Artifact
 cost={2}

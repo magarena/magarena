@@ -1,6 +1,6 @@
 name=Urza's Filter
 image=http://magiccards.info/scans/en/in/318.jpg
-value=2.500
+value=3.632
 rarity=R
 type=Artifact
 cost={4}

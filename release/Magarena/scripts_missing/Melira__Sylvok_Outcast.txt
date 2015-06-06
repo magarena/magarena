@@ -1,6 +1,6 @@
 name=Melira, Sylvok Outcast
 image=http://magiccards.info/scans/en/nph/115.jpg
-value=2.500
+value=4.018
 rarity=R
 type=Legendary,Creature
 subtype=Human,Scout

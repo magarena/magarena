@@ -1,6 +1,6 @@
 name=Marshaling the Troops
 image=http://magiccards.info/scans/en/p3k/141.jpg
-value=2.500
+value=3.765
 rarity=R
 type=Sorcery
 cost={1}{G}

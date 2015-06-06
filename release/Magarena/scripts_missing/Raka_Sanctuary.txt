@@ -1,6 +1,6 @@
 name=Raka Sanctuary
 image=http://magiccards.info/scans/en/ap/67.jpg
-value=2.500
+value=3.446
 rarity=U
 type=Enchantment
 cost={2}{R}

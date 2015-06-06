@@ -1,6 +1,6 @@
 name=Whispergear Sneak
 image=http://magiccards.info/scans/en/cns/64.jpg
-value=2.500
+value=3.700
 rarity=C
 type=Artifact,Creature
 subtype=Construct

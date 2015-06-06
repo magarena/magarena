@@ -1,6 +1,6 @@
 name=Land's Edge
 image=http://magiccards.info/scans/en/ch/52.jpg
-value=2.500
+value=3.462
 rarity=R
 type=World,Enchantment
 cost={1}{R}{R}

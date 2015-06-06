@@ -1,6 +1,6 @@
 name=Rain of Salt
 image=http://magiccards.info/scans/en/us/206.jpg
-value=2.500
+value=2.879
 rarity=U
 type=Sorcery
 cost={4}{R}{R}

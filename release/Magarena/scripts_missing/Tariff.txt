@@ -1,6 +1,6 @@
 name=Tariff
 image=http://magiccards.info/scans/en/6e/47.jpg
-value=2.500
+value=3.766
 rarity=R
 type=Sorcery
 cost={1}{W}

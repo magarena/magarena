@@ -1,6 +1,6 @@
 name=Rack and Ruin
 image=http://magiccards.info/scans/en/ul/89.jpg
-value=2.500
+value=4.011
 rarity=U
 type=Instant
 cost={2}{R}

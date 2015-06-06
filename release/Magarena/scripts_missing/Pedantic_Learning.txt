@@ -1,6 +1,6 @@
 name=Pedantic Learning
 image=http://magiccards.info/scans/en/od/90.jpg
-value=2.500
+value=2.188
 rarity=R
 type=Enchantment
 cost={U}{U}

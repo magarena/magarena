@@ -1,6 +1,6 @@
 name=Thought Prison
 image=http://magiccards.info/scans/en/mi/261.jpg
-value=2.500
+value=3.600
 rarity=U
 type=Artifact
 cost={5}

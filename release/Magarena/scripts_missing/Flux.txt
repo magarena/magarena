@@ -1,6 +1,6 @@
 name=Flux
 image=http://magiccards.info/scans/en/wl/39.jpg
-value=2.500
+value=3.671
 rarity=C
 type=Sorcery
 cost={2}{U}

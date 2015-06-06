@@ -1,6 +1,6 @@
 name=Overblaze
 image=http://magiccards.info/scans/en/bok/114.jpg
-value=2.500
+value=3.404
 rarity=U
 type=Instant
 subtype=Arcane

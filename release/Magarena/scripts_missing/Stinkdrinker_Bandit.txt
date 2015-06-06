@@ -1,6 +1,6 @@
 name=Stinkdrinker Bandit
 image=http://magiccards.info/scans/en/mt/80.jpg
-value=2.500
+value=3.300
 rarity=U
 type=Creature
 subtype=Goblin,Rogue

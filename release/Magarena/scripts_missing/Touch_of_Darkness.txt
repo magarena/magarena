@@ -1,6 +1,6 @@
 name=Touch of Darkness
 image=http://magiccards.info/scans/en/lg/36.jpg
-value=2.500
+value=2.132
 rarity=U
 type=Instant
 cost={B}

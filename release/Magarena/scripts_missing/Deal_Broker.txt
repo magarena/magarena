@@ -1,6 +1,6 @@
 name=Deal Broker
 image=http://magiccards.info/scans/en/cns/61.jpg
-value=2.500
+value=3.944
 rarity=R
 type=Artifact,Creature
 subtype=Construct

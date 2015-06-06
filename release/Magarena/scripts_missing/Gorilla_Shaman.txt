@@ -1,6 +1,6 @@
 name=Gorilla Shaman
 image=http://magiccards.info/scans/en/cstd/33.jpg
-value=2.500
+value=4.455
 rarity=U
 type=Creature
 subtype=Ape,Shaman

@@ -1,6 +1,6 @@
 name=Heed the Mists
 image=http://magiccards.info/scans/en/bok/36.jpg
-value=2.500
+value=2.586
 rarity=U
 type=Sorcery
 subtype=Arcane

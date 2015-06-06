@@ -1,6 +1,6 @@
 name=Moonbow Illusionist
 image=http://magiccards.info/scans/en/sok/46.jpg
-value=2.500
+value=1.472
 rarity=C
 type=Creature
 subtype=Moonfolk,Wizard

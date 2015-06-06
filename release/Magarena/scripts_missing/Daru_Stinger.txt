@@ -1,6 +1,6 @@
 name=Daru Stinger
 image=http://magiccards.info/scans/en/le/10.jpg
-value=2.500
+value=3.162
 rarity=C
 type=Creature
 subtype=Soldier

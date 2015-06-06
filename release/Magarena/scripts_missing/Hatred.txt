@@ -1,6 +1,6 @@
 name=Hatred
 image=http://magiccards.info/scans/en/ex/64.jpg
-value=2.500
+value=4.500
 rarity=R
 type=Instant
 cost={3}{B}{B}

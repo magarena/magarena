@@ -1,6 +1,6 @@
 name=Matopi Golem
 image=http://magiccards.info/scans/en/vi/150.jpg
-value=2.500
+value=1.667
 rarity=U
 type=Artifact,Creature
 subtype=Golem

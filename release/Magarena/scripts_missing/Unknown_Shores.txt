@@ -1,6 +1,6 @@
 name=Unknown Shores
 image=http://magiccards.info/scans/en/ths/229.jpg
-value=2.500
+value=2.865
 rarity=C
 type=Land
 ability={T}: Add {1} to your mana pool.;\

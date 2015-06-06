@@ -1,6 +1,6 @@
 name=Three Dreams
 image=http://magiccards.info/scans/en/pc2/13.jpg
-value=2.500
+value=3.385
 rarity=R
 type=Sorcery
 cost={4}{W}

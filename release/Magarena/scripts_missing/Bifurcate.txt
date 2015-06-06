@@ -1,6 +1,6 @@
 name=Bifurcate
 image=http://magiccards.info/scans/en/mm/230.jpg
-value=2.500
+value=4.174
 rarity=R
 type=Sorcery
 cost={3}{G}

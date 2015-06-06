@@ -1,6 +1,6 @@
 name=Purging Scythe
 image=http://magiccards.info/scans/en/us/308.jpg
-value=2.500
+value=3.888
 rarity=R
 type=Artifact
 cost={5}

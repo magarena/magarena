@@ -1,6 +1,6 @@
 name=Cytoshape
 image=http://magiccards.info/scans/en/di/108.jpg
-value=2.500
+value=3.988
 rarity=R
 type=Instant
 cost={1}{G}{U}

@@ -1,6 +1,6 @@
 name=Dawnglow Infusion
 image=http://magiccards.info/scans/en/shm/225.jpg
-value=2.500
+value=3.614
 rarity=U
 type=Sorcery
 cost={X}{G/W}

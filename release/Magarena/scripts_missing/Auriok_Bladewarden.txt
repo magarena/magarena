@@ -1,6 +1,6 @@
 name=Auriok Bladewarden
 image=http://magiccards.info/scans/en/mi/3.jpg
-value=2.500
+value=3.266
 rarity=U
 type=Creature
 subtype=Human,Soldier

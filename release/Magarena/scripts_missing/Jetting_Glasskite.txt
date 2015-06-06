@@ -1,6 +1,6 @@
 name=Jetting Glasskite
 image=http://magiccards.info/scans/en/cns/100.jpg
-value=2.500
+value=3.429
 rarity=U
 type=Creature
 subtype=Spirit

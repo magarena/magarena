@@ -1,6 +1,6 @@
 name=Llawan, Cephalid Empress
 image=http://magiccards.info/scans/en/tr/42.jpg
-value=2.500
+value=4.000
 rarity=R
 type=Legendary,Creature
 subtype=Cephalid

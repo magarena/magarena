@@ -1,6 +1,6 @@
 name=Singe
 image=http://magiccards.info/scans/en/ps/71.jpg
-value=2.500
+value=3.438
 rarity=C
 type=Instant
 cost={R}

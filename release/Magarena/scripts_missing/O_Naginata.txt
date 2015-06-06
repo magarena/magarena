@@ -1,6 +1,6 @@
 name=O-Naginata
 image=http://magiccards.info/scans/en/sok/157.jpg
-value=2.500
+value=3.925
 rarity=U
 type=Artifact
 subtype=Equipment

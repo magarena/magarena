@@ -1,6 +1,6 @@
 name=Krark-Clan Ironworks
 image=http://magiccards.info/scans/en/5dn/134.jpg
-value=2.500
+value=4.361
 rarity=U
 type=Artifact
 cost={4}

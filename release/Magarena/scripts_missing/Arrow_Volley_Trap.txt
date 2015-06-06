@@ -1,6 +1,6 @@
 name=Arrow Volley Trap
 image=http://magiccards.info/scans/en/ddn/71.jpg
-value=2.500
+value=2.000
 rarity=U
 type=Instant
 subtype=Trap

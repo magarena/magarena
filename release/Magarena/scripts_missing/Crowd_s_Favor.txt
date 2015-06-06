@@ -1,6 +1,6 @@
 name=Crowd's Favor
 image=http://magiccards.info/scans/en/m15/138.jpg
-value=2.500
+value=2.917
 rarity=C
 type=Instant
 cost={R}

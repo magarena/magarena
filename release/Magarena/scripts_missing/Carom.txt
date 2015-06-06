@@ -1,6 +1,6 @@
 name=Carom
 image=http://magiccards.info/scans/en/di/6.jpg
-value=2.500
+value=2.236
 rarity=C
 type=Instant
 cost={1}{W}

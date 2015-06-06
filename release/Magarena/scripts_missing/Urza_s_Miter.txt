@@ -1,6 +1,6 @@
 name=Urza's Miter
 image=http://magiccards.info/scans/en/me4/237.jpg
-value=2.500
+value=2.148
 rarity=R
 type=Artifact
 cost={3}

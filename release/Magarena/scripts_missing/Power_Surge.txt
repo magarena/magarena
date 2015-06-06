@@ -1,6 +1,6 @@
 name=Power Surge
 image=http://magiccards.info/scans/en/4e/234.jpg
-value=2.500
+value=2.300
 rarity=R
 type=Enchantment
 cost={R}{R}

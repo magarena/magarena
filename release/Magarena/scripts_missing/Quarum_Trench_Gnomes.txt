@@ -1,6 +1,6 @@
 name=Quarum Trench Gnomes
 image=http://magiccards.info/scans/en/lg/159.jpg
-value=2.500
+value=2.582
 rarity=R
 type=Creature
 subtype=Gnome

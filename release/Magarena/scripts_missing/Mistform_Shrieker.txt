@@ -1,6 +1,6 @@
 name=Mistform Shrieker
 image=http://magiccards.info/scans/en/on/96.jpg
-value=2.500
+value=2.183
 rarity=U
 type=Creature
 subtype=Illusion

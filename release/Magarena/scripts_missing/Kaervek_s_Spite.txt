@@ -1,6 +1,6 @@
 name=Kaervek's Spite
 image=http://magiccards.info/scans/en/vi/13.jpg
-value=2.500
+value=3.114
 rarity=R
 type=Instant
 cost={B}{B}{B}

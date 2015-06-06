@@ -1,6 +1,6 @@
 name=Simic Guildmage
 image=http://magiccards.info/scans/en/di/148.jpg
-value=2.500
+value=3.862
 rarity=U
 type=Creature
 subtype=Elf,Wizard

@@ -1,6 +1,6 @@
 name=Ice Cauldron
 image=http://magiccards.info/scans/en/me4/206.jpg
-value=2.500
+value=3.552
 rarity=R
 type=Artifact
 cost={4}

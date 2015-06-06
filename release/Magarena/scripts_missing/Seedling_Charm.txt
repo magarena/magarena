@@ -1,6 +1,6 @@
 name=Seedling Charm
 image=http://magiccards.info/scans/en/mr/138.jpg
-value=2.500
+value=3.917
 rarity=C
 type=Instant
 cost={G}

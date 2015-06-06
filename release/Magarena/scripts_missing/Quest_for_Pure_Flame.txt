@@ -1,6 +1,6 @@
 name=Quest for Pure Flame
 image=http://magiccards.info/scans/en/zen/144.jpg
-value=2.500
+value=3.860
 rarity=U
 type=Enchantment
 cost={R}

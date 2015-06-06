@@ -1,6 +1,6 @@
 name=Heliophial
 image=http://magiccards.info/scans/en/5dn/130.jpg
-value=2.500
+value=2.226
 rarity=C
 type=Artifact
 cost={5}

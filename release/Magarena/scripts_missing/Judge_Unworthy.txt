@@ -1,6 +1,6 @@
 name=Judge Unworthy
 image=http://magiccards.info/scans/en/fut/9.jpg
-value=2.500
+value=3.429
 rarity=C
 type=Instant
 cost={1}{W}

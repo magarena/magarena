@@ -1,6 +1,6 @@
 name=Boreal Griffin
 image=http://magiccards.info/scans/en/cs/2.jpg
-value=2.500
+value=1.342
 rarity=C
 type=Snow,Creature
 subtype=Griffin

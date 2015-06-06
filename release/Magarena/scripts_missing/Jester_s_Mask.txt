@@ -1,6 +1,6 @@
 name=Jester's Mask
 image=http://magiccards.info/scans/en/me2/211.jpg
-value=2.500
+value=4.054
 rarity=R
 type=Artifact
 cost={5}

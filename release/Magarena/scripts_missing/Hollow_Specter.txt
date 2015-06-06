@@ -1,6 +1,6 @@
 name=Hollow Specter
 image=http://magiccards.info/scans/en/le/75.jpg
-value=2.500
+value=3.667
 rarity=R
 type=Creature
 subtype=Specter

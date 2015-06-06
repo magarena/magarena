@@ -1,6 +1,6 @@
 name=Trap Runner
 image=http://magiccards.info/scans/en/mm/55.jpg
-value=2.500
+value=3.891
 rarity=U
 type=Creature
 subtype=Human,Soldier

@@ -1,6 +1,6 @@
 name=Dream Cache
 image=http://magiccards.info/scans/en/6e/66.jpg
-value=2.500
+value=3.514
 rarity=C
 type=Sorcery
 cost={2}{U}

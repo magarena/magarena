@@ -1,6 +1,6 @@
 name=Gaddock Teeg
 image=http://magiccards.info/scans/en/lw/248.jpg
-value=2.500
+value=4.477
 rarity=R
 type=Legendary,Creature
 subtype=Kithkin,Advisor

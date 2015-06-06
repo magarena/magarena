@@ -1,6 +1,6 @@
 name=Bloom Tender
 image=http://magiccards.info/scans/en/eve/66.jpg
-value=2.500
+value=4.411
 rarity=R
 type=Creature
 subtype=Elf,Druid

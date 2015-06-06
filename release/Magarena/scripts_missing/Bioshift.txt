@@ -1,6 +1,6 @@
 name=Bioshift
 image=http://magiccards.info/scans/en/gtc/214.jpg
-value=2.500
+value=3.174
 rarity=C
 type=Instant
 cost={G/U}

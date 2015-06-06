@@ -1,6 +1,6 @@
 name=Mossbridge Troll
 image=http://magiccards.info/scans/en/shm/123.jpg
-value=2.500
+value=4.075
 rarity=R
 type=Creature
 subtype=Troll

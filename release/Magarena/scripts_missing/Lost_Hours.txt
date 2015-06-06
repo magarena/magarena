@@ -1,6 +1,6 @@
 name=Lost Hours
 image=http://magiccards.info/scans/en/fut/69.jpg
-value=2.500
+value=2.984
 rarity=C
 type=Sorcery
 cost={1}{B}

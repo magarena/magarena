@@ -1,6 +1,6 @@
 name=Hotheaded Giant
 image=http://magiccards.info/scans/en/eve/57.jpg
-value=2.500
+value=2.688
 rarity=C
 type=Creature
 subtype=Giant,Warrior

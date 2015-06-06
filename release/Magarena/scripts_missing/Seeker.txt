@@ -1,6 +1,6 @@
 name=Seeker
 image=http://magiccards.info/scans/en/4e/299.jpg
-value=2.500
+value=1.649
 rarity=C
 type=Enchantment
 subtype=Aura

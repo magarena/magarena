@@ -1,6 +1,6 @@
 name=Squallmonger
 image=http://magiccards.info/scans/en/cmd/173.jpg
-value=2.500
+value=3.442
 rarity=U
 type=Creature
 subtype=Monger

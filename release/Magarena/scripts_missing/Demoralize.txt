@@ -1,6 +1,6 @@
 name=Demoralize
 image=http://magiccards.info/scans/en/od/184.jpg
-value=2.500
+value=3.196
 rarity=C
 type=Instant
 cost={2}{R}

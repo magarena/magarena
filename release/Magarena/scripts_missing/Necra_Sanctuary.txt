@@ -1,6 +1,6 @@
 name=Necra Sanctuary
 image=http://magiccards.info/scans/en/ap/45.jpg
-value=2.500
+value=3.474
 rarity=U
 type=Enchantment
 cost={2}{B}

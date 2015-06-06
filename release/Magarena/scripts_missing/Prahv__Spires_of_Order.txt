@@ -1,6 +1,6 @@
 name=Prahv, Spires of Order
 image=http://magiccards.info/scans/en/di/177.jpg
-value=2.500
+value=2.978
 rarity=U
 type=Land
 ability={T}: Add {1} to your mana pool.;\

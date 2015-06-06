@@ -1,6 +1,6 @@
 name=Pharika, God of Affliction
 image=http://magiccards.info/scans/en/jou/154.jpg
-value=2.500
+value=3.373
 rarity=M
 type=Legendary,Enchantment,Creature
 subtype=God

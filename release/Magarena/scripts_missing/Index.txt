@@ -1,6 +1,6 @@
 name=Index
 image=http://magiccards.info/scans/en/m13/55.jpg
-value=2.500
+value=3.258
 rarity=C
 type=Sorcery
 cost={U}

@@ -1,6 +1,6 @@
 name=Phyrexian Unlife
 image=http://magiccards.info/scans/en/nph/18.jpg
-value=2.500
+value=3.668
 rarity=R
 type=Enchantment
 cost={2}{W}

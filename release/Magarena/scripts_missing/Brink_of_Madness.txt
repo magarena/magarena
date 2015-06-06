@@ -1,6 +1,6 @@
 name=Brink of Madness
 image=http://magiccards.info/scans/en/ul/50.jpg
-value=2.500
+value=3.812
 rarity=R
 type=Enchantment
 cost={2}{B}{B}

@@ -1,6 +1,6 @@
 name=Crosis's Attendant
 image=http://magiccards.info/scans/en/in/300.jpg
-value=2.500
+value=3.944
 rarity=U
 type=Artifact,Creature
 subtype=Golem

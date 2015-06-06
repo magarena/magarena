@@ -1,6 +1,6 @@
 name=Telemin Performance
 image=http://magiccards.info/scans/en/cfx/35.jpg
-value=2.500
+value=4.319
 rarity=R
 type=Sorcery
 cost={3}{U}{U}

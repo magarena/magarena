@@ -1,6 +1,6 @@
 name=Twigwalker
 image=http://magiccards.info/scans/en/od/279.jpg
-value=2.500
+value=2.808
 rarity=U
 type=Creature
 subtype=Insect

@@ -1,6 +1,6 @@
 name=Scalding Tongs
 image=http://magiccards.info/scans/en/tp/297.jpg
-value=2.500
+value=3.731
 rarity=R
 type=Artifact
 cost={2}

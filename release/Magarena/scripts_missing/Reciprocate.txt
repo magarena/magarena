@@ -1,6 +1,6 @@
 name=Reciprocate
 image=http://magiccards.info/scans/en/ddg/24.jpg
-value=2.500
+value=3.456
 rarity=U
 type=Instant
 cost={W}

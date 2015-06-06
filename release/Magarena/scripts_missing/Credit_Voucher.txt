@@ -1,6 +1,6 @@
 name=Credit Voucher
 image=http://magiccards.info/scans/en/mm/289.jpg
-value=2.500
+value=3.120
 rarity=U
 type=Artifact
 cost={2}

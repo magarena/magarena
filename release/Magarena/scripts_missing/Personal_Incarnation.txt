@@ -1,6 +1,6 @@
 name=Personal Incarnation
 image=http://magiccards.info/scans/en/me4/22.jpg
-value=2.500
+value=2.357
 rarity=R
 type=Creature
 subtype=Avatar,Incarnation

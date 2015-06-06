@@ -1,6 +1,6 @@
 name=Pitfall Trap
 image=http://magiccards.info/scans/en/zen/32.jpg
-value=2.500
+value=3.058
 rarity=U
 type=Instant
 subtype=Trap

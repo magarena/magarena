@@ -1,6 +1,6 @@
 name=Chief Engineer
 image=http://magiccards.info/scans/en/m15/47.jpg
-value=2.500
+value=3.562
 rarity=R
 type=Creature
 subtype=Vedalken,Artificer

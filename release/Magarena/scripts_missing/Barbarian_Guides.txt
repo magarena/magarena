@@ -1,6 +1,6 @@
 name=Barbarian Guides
 image=http://magiccards.info/scans/en/ia/174.jpg
-value=2.500
+value=2.023
 rarity=C
 type=Creature
 subtype=Human,Barbarian

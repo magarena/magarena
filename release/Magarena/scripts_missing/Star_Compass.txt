@@ -1,6 +1,6 @@
 name=Star Compass
 image=http://magiccards.info/scans/en/8e/315.jpg
-value=2.500
+value=3.096
 rarity=U
 type=Artifact
 cost={2}

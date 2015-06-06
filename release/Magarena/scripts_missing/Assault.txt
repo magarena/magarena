@@ -1,6 +1,6 @@
 name=Assault
 image=http://magiccards.info/scans/en/pch/103a.jpg
-value=2.500
+value=3.628
 rarity=U
 type=Sorcery
 cost={R}

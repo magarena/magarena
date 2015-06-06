@@ -1,6 +1,6 @@
 name=Sacred Guide
 image=http://magiccards.info/scans/en/tp/250.jpg
-value=2.500
+value=3.300
 rarity=R
 type=Creature
 subtype=Human,Cleric

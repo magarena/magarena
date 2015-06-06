@@ -1,6 +1,6 @@
 name=Sunscape Familiar
 image=http://magiccards.info/scans/en/ps/17.jpg
-value=2.500
+value=4.261
 rarity=C
 type=Creature
 subtype=Wall

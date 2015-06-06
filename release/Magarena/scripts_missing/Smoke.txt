@@ -1,6 +1,6 @@
 name=Smoke
 image=http://magiccards.info/scans/en/me4/137.jpg
-value=2.500
+value=4.059
 rarity=R
 type=Enchantment
 cost={R}{R}

@@ -1,6 +1,6 @@
 name=Razor Boomerang
 image=http://magiccards.info/scans/en/wwk/129.jpg
-value=2.500
+value=0.795
 rarity=U
 type=Artifact
 subtype=Equipment

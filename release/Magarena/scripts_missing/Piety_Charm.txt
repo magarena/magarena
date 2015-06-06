@@ -1,6 +1,6 @@
 name=Piety Charm
 image=http://magiccards.info/scans/en/on/49.jpg
-value=2.500
+value=3.161
 rarity=C
 type=Instant
 cost={W}

@@ -1,6 +1,6 @@
 name=Andradite Leech
 image=http://magiccards.info/scans/en/in/93.jpg
-value=2.500
+value=1.190
 rarity=R
 type=Creature
 subtype=Leech

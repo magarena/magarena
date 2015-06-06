@@ -1,6 +1,6 @@
 name=Gather Courage
 image=http://magiccards.info/scans/en/m15/175.jpg
-value=2.500
+value=3.500
 rarity=U
 type=Instant
 cost={G}

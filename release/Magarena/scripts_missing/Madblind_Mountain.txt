@@ -1,6 +1,6 @@
 name=Madblind Mountain
 image=http://magiccards.info/scans/en/shm/274.jpg
-value=2.500
+value=1.926
 rarity=U
 type=Land
 subtype=Mountain

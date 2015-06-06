@@ -1,6 +1,6 @@
 name=Solfatara
 image=http://magiccards.info/scans/en/vi/93.jpg
-value=2.500
+value=3.153
 rarity=C
 type=Instant
 cost={2}{R}

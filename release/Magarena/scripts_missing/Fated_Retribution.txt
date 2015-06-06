@@ -1,6 +1,6 @@
 name=Fated Retribution
 image=http://magiccards.info/scans/en/bng/11.jpg
-value=2.500
+value=3.622
 rarity=R
 type=Instant
 cost={4}{W}{W}{W}

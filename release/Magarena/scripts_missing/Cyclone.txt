@@ -1,6 +1,6 @@
 name=Cyclone
 image=http://magiccards.info/scans/en/me4/148.jpg
-value=2.500
+value=2.775
 rarity=R
 type=Enchantment
 cost={2}{G}{G}

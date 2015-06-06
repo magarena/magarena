@@ -1,6 +1,6 @@
 name=Farsight Mask
 image=http://magiccards.info/scans/en/pc2/109.jpg
-value=2.500
+value=2.967
 rarity=U
 type=Artifact
 cost={5}

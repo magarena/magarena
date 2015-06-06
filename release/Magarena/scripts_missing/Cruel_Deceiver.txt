@@ -1,6 +1,6 @@
 name=Cruel Deceiver
 image=http://magiccards.info/scans/en/chk/106.jpg
-value=2.500
+value=2.243
 rarity=C
 type=Creature
 subtype=Spirit

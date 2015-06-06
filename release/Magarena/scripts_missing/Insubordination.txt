@@ -1,6 +1,6 @@
 name=Insubordination
 image=http://magiccards.info/scans/en/mm/141.jpg
-value=2.500
+value=2.760
 rarity=C
 type=Enchantment
 subtype=Aura

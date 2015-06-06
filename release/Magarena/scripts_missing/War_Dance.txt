@@ -1,6 +1,6 @@
 name=War Dance
 image=http://magiccards.info/scans/en/us/282.jpg
-value=2.500
+value=2.788
 rarity=U
 type=Enchantment
 cost={G}

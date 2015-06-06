@@ -1,6 +1,6 @@
 name=Dosan the Falling Leaf
 image=http://magiccards.info/scans/en/chk/205.jpg
-value=2.500
+value=3.925
 rarity=R
 type=Legendary,Creature
 subtype=Human,Monk

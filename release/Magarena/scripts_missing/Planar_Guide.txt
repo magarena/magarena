@@ -1,6 +1,6 @@
 name=Planar Guide
 image=http://magiccards.info/scans/en/le/18.jpg
-value=2.500
+value=4.064
 rarity=R
 type=Creature
 subtype=Human,Cleric

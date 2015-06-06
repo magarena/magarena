@@ -1,6 +1,6 @@
 name=Searing Rays
 image=http://magiccards.info/scans/en/in/165.jpg
-value=2.500
+value=3.271
 rarity=U
 type=Sorcery
 cost={2}{R}

@@ -1,6 +1,6 @@
 name=Mudhole
 image=http://magiccards.info/scans/en/od/208.jpg
-value=2.500
+value=1.110
 rarity=R
 type=Instant
 cost={2}{R}

@@ -1,6 +1,6 @@
 name=Pillar of War
 image=http://magiccards.info/scans/en/bng/160.jpg
-value=2.500
+value=3.167
 rarity=U
 type=Artifact,Creature
 subtype=Golem

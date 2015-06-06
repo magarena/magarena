@@ -1,6 +1,6 @@
 name=Tidal Visionary
 image=http://magiccards.info/scans/en/in/80.jpg
-value=2.500
+value=3.414
 rarity=C
 type=Creature
 subtype=Merfolk,Wizard

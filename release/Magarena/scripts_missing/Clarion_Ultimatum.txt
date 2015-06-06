@@ -1,6 +1,6 @@
 name=Clarion Ultimatum
 image=http://magiccards.info/scans/en/ala/163.jpg
-value=2.500
+value=3.005
 rarity=R
 type=Sorcery
 cost={G}{G}{W}{W}{W}{U}{U}

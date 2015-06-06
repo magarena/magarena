@@ -1,6 +1,6 @@
 name=Ral Zarek
 image=http://magiccards.info/scans/en/dgm/94.jpg
-value=2.500
+value=3.939
 rarity=M
 type=Planeswalker
 subtype=Ral

@@ -1,6 +1,6 @@
 name=Huntmaster of the Fells
 image=http://magiccards.info/scans/en/dka/140a.jpg
-value=2.500
+value=3.953
 rarity=M
 type=Creature
 subtype=Human,Werewolf

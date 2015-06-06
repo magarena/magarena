@@ -1,6 +1,6 @@
 name=Primal Beyond
 image=http://magiccards.info/scans/en/mt/149.jpg
-value=2.500
+value=3.750
 rarity=R
 type=Land
 ability=As SN enters the battlefield, you may reveal an Elemental card from your hand. If you don't, SN enters the battlefield tapped.;\

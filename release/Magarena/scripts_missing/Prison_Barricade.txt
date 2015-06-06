@@ -1,6 +1,6 @@
 name=Prison Barricade
 image=http://magiccards.info/scans/en/in/25.jpg
-value=2.500
+value=2.661
 rarity=C
 type=Creature
 subtype=Wall

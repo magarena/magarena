@@ -1,6 +1,6 @@
 name=Stone-Tongue Basilisk
 image=http://magiccards.info/scans/en/od/276.jpg
-value=2.500
+value=3.600
 rarity=R
 type=Creature
 subtype=Basilisk

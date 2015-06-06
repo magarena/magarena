@@ -1,6 +1,6 @@
 name=Crystal Shard
 image=http://magiccards.info/scans/en/mi/159.jpg
-value=2.500
+value=4.000
 rarity=U
 type=Artifact
 cost={3}

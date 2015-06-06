@@ -1,6 +1,6 @@
 name=Guan Yu, Sainted Warrior
 image=http://magiccards.info/scans/en/me3/12.jpg
-value=2.500
+value=3.667
 rarity=U
 type=Legendary,Creature
 subtype=Human,Soldier,Warrior

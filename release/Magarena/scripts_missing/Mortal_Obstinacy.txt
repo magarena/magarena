@@ -1,6 +1,6 @@
 name=Mortal Obstinacy
 image=http://magiccards.info/scans/en/jou/17.jpg
-value=2.500
+value=3.000
 rarity=C
 type=Enchantment
 subtype=Aura

@@ -1,6 +1,6 @@
 name=Blinding Powder
 image=http://magiccards.info/scans/en/bok/153.jpg
-value=2.500
+value=3.032
 rarity=U
 type=Artifact
 subtype=Equipment

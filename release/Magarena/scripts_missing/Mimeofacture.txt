@@ -1,6 +1,6 @@
 name=Mimeofacture
 image=http://magiccards.info/scans/en/gp/30.jpg
-value=2.500
+value=3.536
 rarity=R
 type=Sorcery
 cost={3}{U}

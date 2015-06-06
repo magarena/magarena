@@ -1,6 +1,6 @@
 name=Cascade Bluffs
 image=http://magiccards.info/scans/en/eve/175.jpg
-value=2.500
+value=4.404
 rarity=R
 type=Land
 ability={T}: Add {1} to your mana pool.;\

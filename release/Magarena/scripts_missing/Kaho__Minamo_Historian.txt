@@ -1,6 +1,6 @@
 name=Kaho, Minamo Historian
 image=http://magiccards.info/scans/en/sok/41.jpg
-value=2.500
+value=3.927
 rarity=R
 type=Legendary,Creature
 subtype=Human,Wizard

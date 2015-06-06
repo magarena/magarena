@@ -1,6 +1,6 @@
 name=Bladewing's Thrall
 image=http://magiccards.info/scans/en/sc/55.jpg
-value=2.500
+value=3.382
 rarity=U
 type=Creature
 subtype=Zombie

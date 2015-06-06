@@ -1,6 +1,6 @@
 name=Word of Command
 image=http://magiccards.info/scans/en/me4/103.jpg
-value=2.500
+value=4.500
 rarity=R
 type=Instant
 cost={B}{B}

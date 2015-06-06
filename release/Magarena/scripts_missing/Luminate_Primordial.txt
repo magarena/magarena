@@ -1,6 +1,6 @@
 name=Luminate Primordial
 image=http://magiccards.info/scans/en/gtc/20.jpg
-value=2.500
+value=3.037
 rarity=R
 type=Creature
 subtype=Avatar

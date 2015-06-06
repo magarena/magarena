@@ -1,6 +1,6 @@
 name=Nameless Race
 image=http://magiccards.info/scans/en/dk/12.jpg
-value=2.500
+value=2.827
 rarity=R
 type=Creature
 cost={3}{B}

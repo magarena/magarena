@@ -1,6 +1,6 @@
 name=Collective Restraint
 image=http://magiccards.info/scans/en/in/49.jpg
-value=2.500
+value=4.222
 rarity=R
 type=Enchantment
 cost={3}{U}

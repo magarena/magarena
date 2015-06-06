@@ -1,6 +1,6 @@
 name=Sylvan Primordial
 image=http://magiccards.info/scans/en/gtc/136.jpg
-value=2.500
+value=3.763
 rarity=R
 type=Creature
 subtype=Avatar

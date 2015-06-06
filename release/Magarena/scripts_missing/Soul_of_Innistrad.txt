@@ -1,6 +1,6 @@
 name=Soul of Innistrad
 image=http://magiccards.info/scans/en/m15/115.jpg
-value=2.500
+value=3.688
 rarity=M
 type=Creature
 subtype=Avatar

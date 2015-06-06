@@ -1,6 +1,6 @@
 name=Search for Tomorrow
 image=http://magiccards.info/scans/en/mma/161.jpg
-value=2.500
+value=4.088
 rarity=C
 type=Sorcery
 cost={2}{G}

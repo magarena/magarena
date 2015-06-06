@@ -1,6 +1,6 @@
 name=Soul Ransom
 image=http://magiccards.info/scans/en/gtc/198.jpg
-value=2.500
+value=3.303
 rarity=R
 type=Enchantment
 subtype=Aura

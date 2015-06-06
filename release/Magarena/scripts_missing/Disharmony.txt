@@ -1,6 +1,6 @@
 name=Disharmony
 image=http://magiccards.info/scans/en/me3/95.jpg
-value=2.500
+value=3.317
 rarity=U
 type=Instant
 cost={2}{R}

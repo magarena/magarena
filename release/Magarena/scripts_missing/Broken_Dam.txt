@@ -1,6 +1,6 @@
 name=Broken Dam
 image=http://magiccards.info/scans/en/p3k/37.jpg
-value=2.500
+value=3.737
 rarity=C
 type=Sorcery
 cost={U}

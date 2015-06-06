@@ -1,6 +1,6 @@
 name=Shadowblood Egg
 image=http://magiccards.info/scans/en/od/308.jpg
-value=2.500
+value=2.442
 rarity=U
 type=Artifact
 cost={1}

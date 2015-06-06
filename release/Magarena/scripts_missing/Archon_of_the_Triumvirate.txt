@@ -1,6 +1,6 @@
 name=Archon of the Triumvirate
 image=http://magiccards.info/scans/en/rtr/142.jpg
-value=2.500
+value=3.408
 rarity=R
 type=Creature
 subtype=Archon

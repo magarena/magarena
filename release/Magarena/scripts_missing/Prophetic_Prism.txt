@@ -1,6 +1,6 @@
 name=Prophetic Prism
 image=http://magiccards.info/scans/en/gtc/234.jpg
-value=2.500
+value=3.865
 rarity=C
 type=Artifact
 cost={2}

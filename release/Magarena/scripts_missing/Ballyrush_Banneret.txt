@@ -1,6 +1,6 @@
 name=Ballyrush Banneret
 image=http://magiccards.info/scans/en/mt/1.jpg
-value=2.500
+value=3.648
 rarity=C
 type=Creature
 subtype=Kithkin,Soldier

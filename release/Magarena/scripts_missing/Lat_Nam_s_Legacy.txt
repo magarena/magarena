@@ -1,6 +1,6 @@
 name=Lat-Nam's Legacy
 image=http://magiccards.info/scans/en/cstd/13.jpg
-value=2.500
+value=4.035
 rarity=C
 type=Instant
 cost={1}{U}

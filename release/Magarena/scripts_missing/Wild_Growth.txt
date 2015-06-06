@@ -1,6 +1,6 @@
 name=Wild Growth
 image=http://magiccards.info/scans/en/7e/282.jpg
-value=2.500
+value=3.917
 rarity=C
 type=Enchantment
 subtype=Aura

@@ -1,6 +1,6 @@
 name=Implements of Sacrifice
 image=http://magiccards.info/scans/en/fe/173.jpg
-value=2.500
+value=2.819
 rarity=R
 type=Artifact
 cost={2}

@@ -1,6 +1,6 @@
 name=Erebos's Emissary
 image=http://magiccards.info/scans/en/ths/86.jpg
-value=2.500
+value=3.468
 rarity=U
 type=Enchantment,Creature
 subtype=Snake

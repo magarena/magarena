@@ -1,6 +1,6 @@
 name=Goblin Festival
 image=http://magiccards.info/scans/en/ud/83.jpg
-value=2.500
+value=3.217
 rarity=R
 type=Enchantment
 cost={1}{R}

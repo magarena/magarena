@@ -1,6 +1,6 @@
 name=Soldevi Machinist
 image=http://magiccards.info/scans/en/me4/63.jpg
-value=2.500
+value=2.658
 rarity=U
 type=Creature
 subtype=Human,Wizard,Artificer

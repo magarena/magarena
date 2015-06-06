@@ -1,6 +1,6 @@
 name=Tainted Æther
 image=http://magiccards.info/scans/en/7e/167.jpg
-value=2.500
+value=4.132
 rarity=R
 type=Enchantment
 cost={2}{B}{B}

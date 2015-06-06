@@ -1,6 +1,6 @@
 name=Leave No Trace
 image=http://magiccards.info/scans/en/rav/23.jpg
-value=2.500
+value=3.364
 rarity=C
 type=Instant
 cost={1}{W}

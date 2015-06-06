@@ -1,6 +1,6 @@
 name=Somnophore
 image=http://magiccards.info/scans/en/us/97.jpg
-value=2.500
+value=4.181
 rarity=R
 type=Creature
 subtype=Illusion

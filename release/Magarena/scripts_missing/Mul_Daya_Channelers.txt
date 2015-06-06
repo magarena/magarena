@@ -1,6 +1,6 @@
 name=Mul Daya Channelers
 image=http://magiccards.info/scans/en/roe/198.jpg
-value=2.500
+value=4.239
 rarity=R
 type=Creature
 subtype=Elf,Druid,Shaman

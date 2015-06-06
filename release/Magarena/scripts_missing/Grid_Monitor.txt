@@ -1,6 +1,6 @@
 name=Grid Monitor
 image=http://magiccards.info/scans/en/mi/183.jpg
-value=2.500
+value=2.671
 rarity=R
 type=Artifact,Creature
 subtype=Construct

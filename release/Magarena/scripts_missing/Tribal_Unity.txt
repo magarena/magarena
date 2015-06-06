@@ -1,6 +1,6 @@
 name=Tribal Unity
 image=http://magiccards.info/scans/en/pch/80.jpg
-value=2.500
+value=3.075
 rarity=U
 type=Instant
 cost={X}{2}{G}

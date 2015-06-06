@@ -1,6 +1,6 @@
 name=Shell of the Last Kappa
 image=http://magiccards.info/scans/en/chk/269.jpg
-value=2.500
+value=3.803
 rarity=R
 type=Legendary,Artifact
 cost={3}

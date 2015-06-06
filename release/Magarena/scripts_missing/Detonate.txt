@@ -1,6 +1,6 @@
 name=Detonate
 image=http://magiccards.info/scans/en/me4/111.jpg
-value=2.500
+value=3.688
 rarity=U
 type=Sorcery
 cost={X}{R}

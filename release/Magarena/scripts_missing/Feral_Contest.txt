@@ -1,6 +1,6 @@
 name=Feral Contest
 image=http://magiccards.info/scans/en/wwk/100.jpg
-value=2.500
+value=1.946
 rarity=C
 type=Sorcery
 cost={3}{G}

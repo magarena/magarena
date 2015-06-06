@@ -1,6 +1,6 @@
 name=Cauldron Dance
 image=http://magiccards.info/scans/en/in/238.jpg
-value=2.500
+value=4.192
 rarity=U
 type=Instant
 cost={4}{B}{R}

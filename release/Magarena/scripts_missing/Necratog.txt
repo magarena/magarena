@@ -1,6 +1,6 @@
 name=Necratog
 image=http://magiccards.info/scans/en/wl/18.jpg
-value=2.500
+value=3.697
 rarity=U
 type=Creature
 subtype=Atog

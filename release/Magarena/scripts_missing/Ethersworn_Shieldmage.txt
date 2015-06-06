@@ -1,6 +1,6 @@
 name=Ethersworn Shieldmage
 image=http://magiccards.info/scans/en/arc/84.jpg
-value=2.500
+value=2.870
 rarity=C
 type=Artifact,Creature
 subtype=Vedalken,Wizard

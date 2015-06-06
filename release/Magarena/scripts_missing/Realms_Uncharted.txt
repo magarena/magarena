@@ -1,6 +1,6 @@
 name=Realms Uncharted
 image=http://magiccards.info/scans/en/roe/206.jpg
-value=2.500
+value=3.778
 rarity=R
 type=Instant
 cost={2}{G}

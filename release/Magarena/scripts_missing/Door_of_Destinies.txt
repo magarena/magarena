@@ -1,6 +1,6 @@
 name=Door of Destinies
 image=http://magiccards.info/scans/en/m14/208.jpg
-value=2.500
+value=3.786
 rarity=R
 type=Artifact
 cost={4}

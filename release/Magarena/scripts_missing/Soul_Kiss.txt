@@ -1,6 +1,6 @@
 name=Soul Kiss
 image=http://magiccards.info/scans/en/me2/112.jpg
-value=2.500
+value=2.536
 rarity=U
 type=Enchantment
 subtype=Aura

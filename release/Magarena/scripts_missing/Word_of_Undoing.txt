@@ -1,6 +1,6 @@
 name=Word of Undoing
 image=http://magiccards.info/scans/en/med/56.jpg
-value=2.500
+value=4.138
 rarity=C
 type=Instant
 cost={U}

@@ -1,6 +1,6 @@
 name=Blinding Angel
 image=http://magiccards.info/scans/en/9e/7.jpg
-value=2.500
+value=4.397
 rarity=R
 type=Creature
 subtype=Angel

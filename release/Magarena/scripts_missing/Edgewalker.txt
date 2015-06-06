@@ -1,6 +1,6 @@
 name=Edgewalker
 image=http://magiccards.info/scans/en/sc/137.jpg
-value=2.500
+value=4.213
 rarity=U
 type=Creature
 subtype=Human,Cleric

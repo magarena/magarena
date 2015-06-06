@@ -1,6 +1,6 @@
 name=Exclusion Ritual
 image=http://magiccards.info/scans/en/nph/10.jpg
-value=2.500
+value=2.978
 rarity=U
 type=Enchantment
 cost={4}{W}{W}

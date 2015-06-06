@@ -1,6 +1,6 @@
 name=Moment of Silence
 image=http://magiccards.info/scans/en/mm/28.jpg
-value=2.500
+value=3.694
 rarity=C
 type=Instant
 cost={W}

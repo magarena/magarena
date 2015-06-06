@@ -1,6 +1,6 @@
 name=Battlefield Thaumaturge
 image=http://magiccards.info/scans/en/jou/31.jpg
-value=2.500
+value=3.776
 rarity=R
 type=Creature
 subtype=Human,Wizard

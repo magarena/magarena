@@ -1,6 +1,6 @@
 name=Nature's Chosen
 image=http://magiccards.info/scans/en/ai/81.jpg
-value=2.500
+value=3.846
 rarity=U
 type=Enchantment
 subtype=Aura

@@ -1,6 +1,6 @@
 name=Circle of Despair
 image=http://magiccards.info/scans/en/mr/319.jpg
-value=2.500
+value=3.132
 rarity=R
 type=Enchantment
 cost={1}{W}{B}

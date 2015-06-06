@@ -1,6 +1,6 @@
 name=Hellhole Rats
 image=http://magiccards.info/scans/en/di/113.jpg
-value=2.500
+value=3.963
 rarity=U
 type=Creature
 subtype=Rat

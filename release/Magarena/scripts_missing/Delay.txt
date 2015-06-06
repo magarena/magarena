@@ -1,6 +1,6 @@
 name=Delay
 image=http://magiccards.info/scans/en/fut/35.jpg
-value=2.500
+value=3.954
 rarity=U
 type=Instant
 cost={1}{U}

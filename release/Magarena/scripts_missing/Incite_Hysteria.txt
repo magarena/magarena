@@ -1,6 +1,6 @@
 name=Incite Hysteria
 image=http://magiccards.info/scans/en/rav/132.jpg
-value=2.500
+value=2.596
 rarity=C
 type=Sorcery
 cost={2}{R}

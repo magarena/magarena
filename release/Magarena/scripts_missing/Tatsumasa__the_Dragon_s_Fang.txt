@@ -1,6 +1,6 @@
 name=Tatsumasa, the Dragon's Fang
 image=http://magiccards.info/scans/en/chk/270.jpg
-value=2.500
+value=3.971
 rarity=R
 type=Legendary,Artifact
 subtype=Equipment

@@ -1,6 +1,6 @@
 name=See the Unwritten
 image=http://magiccards.info/scans/en/ktk/149.jpg
-value=2.500
+value=3.250
 rarity=M
 type=Sorcery
 cost={4}{G}{G}

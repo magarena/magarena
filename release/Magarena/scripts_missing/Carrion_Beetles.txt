@@ -1,6 +1,6 @@
 name=Carrion Beetles
 image=http://magiccards.info/scans/en/us/122.jpg
-value=2.500
+value=3.468
 rarity=C
 type=Creature
 subtype=Insect

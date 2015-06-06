@@ -1,6 +1,6 @@
 name=Territorial Dispute
 image=http://magiccards.info/scans/en/mm/217.jpg
-value=2.500
+value=2.079
 rarity=R
 type=Enchantment
 cost={4}{R}{R}

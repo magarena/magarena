@@ -1,6 +1,6 @@
 name=Bone Shaman
 image=http://magiccards.info/scans/en/ia/176.jpg
-value=2.500
+value=2.097
 rarity=C
 type=Creature
 subtype=Giant,Shaman

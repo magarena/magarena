@@ -1,6 +1,6 @@
 name=Horobi's Whisper
 image=http://magiccards.info/scans/en/mma/88.jpg
-value=2.500
+value=3.083
 rarity=U
 type=Instant
 subtype=Arcane

@@ -1,6 +1,6 @@
 name=Mana Crypt
 image=http://magiccards.info/scans/en/vma/272.jpg
-value=2.500
+value=4.125
 rarity=M
 type=Artifact
 cost={0}

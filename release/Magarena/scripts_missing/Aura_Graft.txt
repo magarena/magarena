@@ -1,6 +1,6 @@
 name=Aura Graft
 image=http://magiccards.info/scans/en/10e/67.jpg
-value=2.500
+value=3.304
 rarity=U
 type=Instant
 cost={1}{U}

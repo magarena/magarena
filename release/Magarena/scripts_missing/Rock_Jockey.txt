@@ -1,6 +1,6 @@
 name=Rock Jockey
 image=http://magiccards.info/scans/en/sc/101.jpg
-value=2.500
+value=2.182
 rarity=C
 type=Creature
 subtype=Goblin

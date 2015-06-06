@@ -1,6 +1,6 @@
 name=Entering
 image=http://magiccards.info/scans/en/dgm/124b.jpg
-value=2.500
+value=3.800
 rarity=R
 type=Sorcery
 cost={4}{B}{R}

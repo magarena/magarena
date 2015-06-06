@@ -1,6 +1,6 @@
 name=Illusionary Mask
 image=http://magiccards.info/scans/en/me3/197.jpg
-value=2.500
+value=4.592
 rarity=R
 type=Artifact
 cost={2}

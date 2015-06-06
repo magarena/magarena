@@ -1,6 +1,6 @@
 name=Wall of Dust
 image=http://magiccards.info/scans/en/4e/247.jpg
-value=2.500
+value=3.328
 rarity=U
 type=Creature
 subtype=Wall

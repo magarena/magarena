@@ -1,6 +1,6 @@
 name=Thieves' Fortune
 image=http://magiccards.info/scans/en/mt/54.jpg
-value=2.500
+value=3.016
 rarity=U
 type=Tribal,Instant
 subtype=Rogue

@@ -1,6 +1,6 @@
 name=Winter's Chill
 image=http://magiccards.info/scans/en/ia/107.jpg
-value=2.500
+value=3.342
 rarity=R
 type=Instant
 cost={X}{U}

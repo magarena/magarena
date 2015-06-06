@@ -1,6 +1,6 @@
 name=Touch of the Eternal
 image=http://magiccards.info/scans/en/m13/37.jpg
-value=2.500
+value=1.983
 rarity=R
 type=Enchantment
 cost={5}{W}{W}

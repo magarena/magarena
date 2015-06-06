@@ -1,6 +1,6 @@
 name=Bold Defense
 image=http://magiccards.info/scans/en/zen/3.jpg
-value=2.500
+value=1.569
 rarity=C
 type=Instant
 cost={2}{W}

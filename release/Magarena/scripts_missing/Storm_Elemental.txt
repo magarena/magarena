@@ -1,6 +1,6 @@
 name=Storm Elemental
 image=http://magiccards.info/scans/en/cstd/17.jpg
-value=2.500
+value=2.014
 rarity=U
 type=Creature
 subtype=Elemental

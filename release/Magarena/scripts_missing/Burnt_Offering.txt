@@ -1,6 +1,6 @@
 name=Burnt Offering
 image=http://magiccards.info/scans/en/ia/4.jpg
-value=2.500
+value=4.109
 rarity=C
 type=Instant
 cost={B}

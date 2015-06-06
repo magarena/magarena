@@ -1,6 +1,6 @@
 name=Stasis Cocoon
 image=http://magiccards.info/scans/en/5dn/18.jpg
-value=2.500
+value=3.044
 rarity=C
 type=Enchantment
 subtype=Aura

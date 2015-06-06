@@ -1,6 +1,6 @@
 name=Liquid Fire
 image=http://magiccards.info/scans/en/od/201.jpg
-value=2.500
+value=2.148
 rarity=U
 type=Sorcery
 cost={4}{R}{R}

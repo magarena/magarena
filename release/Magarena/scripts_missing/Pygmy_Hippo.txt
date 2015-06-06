@@ -1,6 +1,6 @@
 name=Pygmy Hippo
 image=http://magiccards.info/scans/en/vi/133.jpg
-value=2.500
+value=4.125
 rarity=R
 type=Creature
 subtype=Hippo

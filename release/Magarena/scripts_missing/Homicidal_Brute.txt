@@ -1,6 +1,6 @@
 name=Homicidal Brute
 image=http://magiccards.info/scans/en/isd/47b.jpg
-value=2.500
+value=3.034
 rarity=U
 type=Creature
 subtype=Human,Mutant

@@ -1,6 +1,6 @@
 name=Cabal Ritual
 image=http://magiccards.info/scans/en/vma/106.jpg
-value=2.500
+value=4.500
 rarity=U
 type=Instant
 cost={1}{B}

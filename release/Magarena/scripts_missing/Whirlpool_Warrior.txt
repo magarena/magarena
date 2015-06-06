@@ -1,6 +1,6 @@
 name=Whirlpool Warrior
 image=http://magiccards.info/scans/en/pc2/29.jpg
-value=2.500
+value=4.318
 rarity=R
 type=Creature
 subtype=Merfolk,Warrior

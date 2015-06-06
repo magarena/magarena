@@ -1,6 +1,6 @@
 name=Meletis Charlatan
 image=http://magiccards.info/scans/en/ths/54.jpg
-value=2.500
+value=3.510
 rarity=R
 type=Creature
 subtype=Human,Wizard

@@ -1,6 +1,6 @@
 name=Dead
 image=http://magiccards.info/scans/en/pc/113a.jpg
-value=2.500
+value=4.039
 rarity=C
 type=Instant
 cost={R}

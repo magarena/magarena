@@ -1,6 +1,6 @@
 name=Shared Fate
 image=http://magiccards.info/scans/en/mi/49.jpg
-value=2.500
+value=3.787
 rarity=R
 type=Enchantment
 cost={4}{U}

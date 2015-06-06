@@ -1,6 +1,6 @@
 name=Alms
 image=http://magiccards.info/scans/en/wl/119.jpg
-value=2.500
+value=2.012
 rarity=C
 type=Enchantment
 cost={W}

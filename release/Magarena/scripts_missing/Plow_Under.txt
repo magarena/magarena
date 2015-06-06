@@ -1,6 +1,6 @@
 name=Plow Under
 image=http://magiccards.info/scans/en/8e/272.jpg
-value=2.500
+value=4.398
 rarity=R
 type=Sorcery
 cost={3}{G}{G}

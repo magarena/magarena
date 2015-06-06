@@ -1,6 +1,6 @@
 name=Mistform Wall
 image=http://magiccards.info/scans/en/on/99.jpg
-value=2.500
+value=2.821
 rarity=C
 type=Creature
 subtype=Illusion,Wall

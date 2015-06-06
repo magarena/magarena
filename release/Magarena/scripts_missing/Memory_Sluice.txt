@@ -1,6 +1,6 @@
 name=Memory Sluice
 image=http://magiccards.info/scans/en/shm/170.jpg
-value=2.500
+value=3.776
 rarity=C
 type=Sorcery
 cost={U/B}

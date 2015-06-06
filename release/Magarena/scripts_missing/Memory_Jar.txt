@@ -1,6 +1,6 @@
 name=Memory Jar
 image=http://magiccards.info/scans/en/vma/276.jpg
-value=2.500
+value=4.500
 rarity=M
 type=Artifact
 cost={5}

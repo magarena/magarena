@@ -1,6 +1,6 @@
 name=Chancellor of the Forge
 image=http://magiccards.info/scans/en/nph/81.jpg
-value=2.500
+value=3.477
 rarity=R
 type=Creature
 subtype=Giant

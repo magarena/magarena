@@ -1,6 +1,6 @@
 name=Champion of Lambholt
 image=http://magiccards.info/scans/en/avr/171.jpg
-value=2.500
+value=3.922
 rarity=R
 type=Creature
 subtype=Human,Warrior

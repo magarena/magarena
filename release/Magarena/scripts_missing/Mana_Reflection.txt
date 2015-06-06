@@ -1,6 +1,6 @@
 name=Mana Reflection
 image=http://magiccards.info/scans/en/shm/122.jpg
-value=2.500
+value=4.012
 rarity=R
 type=Enchantment
 cost={4}{G}{G}

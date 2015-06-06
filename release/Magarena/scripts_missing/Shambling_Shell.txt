@@ -1,6 +1,6 @@
 name=Shambling Shell
 image=http://magiccards.info/scans/en/ddj/57.jpg
-value=2.500
+value=4.393
 rarity=C
 type=Creature
 subtype=Plant,Zombie

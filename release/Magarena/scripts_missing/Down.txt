@@ -1,6 +1,6 @@
 name=Down
 image=http://magiccards.info/scans/en/dgm/126a.jpg
-value=2.500
+value=3.793
 rarity=U
 type=Sorcery
 cost={3}{B}

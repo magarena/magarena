@@ -1,6 +1,6 @@
 name=Wall of Tombstones
 image=http://magiccards.info/scans/en/lg/43.jpg
-value=2.500
+value=3.000
 rarity=U
 type=Creature
 subtype=Wall

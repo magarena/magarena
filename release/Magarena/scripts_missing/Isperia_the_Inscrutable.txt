@@ -1,6 +1,6 @@
 name=Isperia the Inscrutable
 image=http://magiccards.info/scans/en/di/114.jpg
-value=2.500
+value=3.909
 rarity=R
 type=Legendary,Creature
 subtype=Sphinx

@@ -1,6 +1,6 @@
 name=Haazda Shield Mate
 image=http://magiccards.info/scans/en/di/12.jpg
-value=2.500
+value=2.660
 rarity=R
 type=Creature
 subtype=Human,Soldier

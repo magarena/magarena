@@ -1,6 +1,6 @@
 name=Dearly Departed
 image=http://magiccards.info/scans/en/isd/9.jpg
-value=2.500
+value=3.627
 rarity=R
 type=Creature
 subtype=Spirit

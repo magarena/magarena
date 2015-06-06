@@ -1,6 +1,6 @@
 name=Web of Inertia
 image=http://magiccards.info/scans/en/ju/53.jpg
-value=2.500
+value=3.456
 rarity=U
 type=Enchantment
 cost={2}{U}

@@ -1,6 +1,6 @@
 name=Entomber Exarch
 image=http://magiccards.info/scans/en/nph/59.jpg
-value=2.500
+value=3.473
 rarity=U
 type=Creature
 subtype=Cleric

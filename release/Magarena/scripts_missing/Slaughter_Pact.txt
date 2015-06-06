@@ -1,6 +1,6 @@
 name=Slaughter Pact
 image=http://magiccards.info/scans/en/mma/97.jpg
-value=2.500
+value=4.312
 rarity=R
 type=Instant
 cost={0}

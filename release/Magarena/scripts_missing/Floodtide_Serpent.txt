@@ -1,6 +1,6 @@
 name=Floodtide Serpent
 image=http://magiccards.info/scans/en/bng/41.jpg
-value=2.500
+value=2.514
 rarity=C
 type=Creature
 subtype=Serpent

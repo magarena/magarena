@@ -1,6 +1,6 @@
 name=Dawn Charm
 image=http://magiccards.info/scans/en/pc/4.jpg
-value=2.500
+value=4.171
 rarity=C
 type=Instant
 cost={1}{W}

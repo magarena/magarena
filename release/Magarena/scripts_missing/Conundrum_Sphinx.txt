@@ -1,6 +1,6 @@
 name=Conundrum Sphinx
 image=http://magiccards.info/scans/en/cmd/42.jpg
-value=2.500
+value=3.960
 rarity=R
 type=Creature
 subtype=Sphinx

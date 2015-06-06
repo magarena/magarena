@@ -1,6 +1,6 @@
 name=Curse of Exhaustion
 image=http://magiccards.info/scans/en/dka/5.jpg
-value=2.500
+value=3.942
 rarity=U
 type=Enchantment
 subtype=Aura,Curse

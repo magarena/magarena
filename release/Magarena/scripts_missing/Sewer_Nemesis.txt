@@ -1,6 +1,6 @@
 name=Sewer Nemesis
 image=http://magiccards.info/scans/en/cmd/98.jpg
-value=2.500
+value=4.149
 rarity=R
 type=Creature
 subtype=Horror

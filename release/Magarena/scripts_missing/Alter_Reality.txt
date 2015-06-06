@@ -1,6 +1,6 @@
 name=Alter Reality
 image=http://magiccards.info/scans/en/tr/22.jpg
-value=2.500
+value=3.851
 rarity=R
 type=Instant
 cost={1}{U}

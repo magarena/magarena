@@ -1,6 +1,6 @@
 name=Rewind
 image=http://magiccards.info/scans/en/m13/65.jpg
-value=2.500
+value=4.248
 rarity=U
 type=Instant
 cost={2}{U}{U}

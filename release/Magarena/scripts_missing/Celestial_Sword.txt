@@ -1,6 +1,6 @@
 name=Celestial Sword
 image=http://magiccards.info/scans/en/me4/188.jpg
-value=2.500
+value=2.292
 rarity=U
 type=Artifact
 cost={6}

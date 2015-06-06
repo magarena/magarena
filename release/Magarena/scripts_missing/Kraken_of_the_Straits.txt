@@ -1,6 +1,6 @@
 name=Kraken of the Straits
 image=http://magiccards.info/scans/en/bng/42.jpg
-value=2.500
+value=3.480
 rarity=U
 type=Creature
 subtype=Kraken

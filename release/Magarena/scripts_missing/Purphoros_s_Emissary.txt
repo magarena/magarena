@@ -1,6 +1,6 @@
 name=Purphoros's Emissary
 image=http://magiccards.info/scans/en/ths/136.jpg
-value=2.500
+value=3.538
 rarity=U
 type=Enchantment,Creature
 subtype=Ox

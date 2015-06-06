@@ -1,6 +1,6 @@
 name=Astrolabe
 image=http://magiccards.info/scans/en/me3/189.jpg
-value=2.500
+value=2.778
 rarity=C
 type=Artifact
 cost={3}

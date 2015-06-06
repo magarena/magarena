@@ -1,6 +1,6 @@
 name=Shisato, Whispering Hunter
 image=http://magiccards.info/scans/en/chk/242.jpg
-value=2.500
+value=2.880
 rarity=R
 type=Legendary,Creature
 subtype=Snake,Warrior

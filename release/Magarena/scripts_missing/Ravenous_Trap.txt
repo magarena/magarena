@@ -1,6 +1,6 @@
 name=Ravenous Trap
 image=http://magiccards.info/scans/en/zen/109.jpg
-value=2.500
+value=4.415
 rarity=U
 type=Instant
 subtype=Trap

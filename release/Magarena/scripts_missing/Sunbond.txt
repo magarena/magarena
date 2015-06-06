@@ -1,6 +1,6 @@
 name=Sunbond
 image=http://magiccards.info/scans/en/bng/28.jpg
-value=2.500
+value=3.847
 rarity=U
 type=Enchantment
 subtype=Aura

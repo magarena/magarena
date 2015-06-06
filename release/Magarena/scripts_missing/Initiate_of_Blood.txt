@@ -1,6 +1,6 @@
 name=Initiate of Blood
 image=http://magiccards.info/scans/en/chk/173a.jpg
-value=2.500
+value=3.105
 rarity=U
 type=Creature
 subtype=Ogre,Shaman

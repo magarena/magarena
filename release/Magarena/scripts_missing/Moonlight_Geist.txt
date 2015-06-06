@@ -1,6 +1,6 @@
 name=Moonlight Geist
 image=http://magiccards.info/scans/en/avr/29.jpg
-value=2.500
+value=2.062
 rarity=C
 type=Creature
 subtype=Spirit

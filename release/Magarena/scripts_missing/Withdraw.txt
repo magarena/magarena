@@ -1,6 +1,6 @@
 name=Withdraw
 image=http://magiccards.info/scans/en/pr/54.jpg
-value=2.500
+value=3.862
 rarity=C
 type=Instant
 cost={U}{U}

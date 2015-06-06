@@ -1,6 +1,6 @@
 name=Sliver Hive
 image=http://magiccards.info/scans/en/m15/247.jpg
-value=2.500
+value=3.875
 rarity=R
 type=Land
 ability={T}: Add {1} to your mana pool.;\

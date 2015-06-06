@@ -1,6 +1,6 @@
 name=Dralnu's Pet
 image=http://magiccards.info/scans/en/ps/23.jpg
-value=2.500
+value=3.786
 rarity=R
 type=Creature
 subtype=Shapeshifter

@@ -1,6 +1,6 @@
 name=Neurok Familiar
 image=http://magiccards.info/scans/en/mi/43.jpg
-value=2.500
+value=2.750
 rarity=C
 type=Creature
 subtype=Bird

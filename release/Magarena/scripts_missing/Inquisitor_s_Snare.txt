@@ -1,6 +1,6 @@
 name=Inquisitor's Snare
 image=http://magiccards.info/scans/en/shm/8.jpg
-value=2.500
+value=2.786
 rarity=C
 type=Instant
 cost={1}{W}

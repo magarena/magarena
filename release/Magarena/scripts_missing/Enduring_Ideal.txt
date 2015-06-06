@@ -1,6 +1,6 @@
 name=Enduring Ideal
 image=http://magiccards.info/scans/en/sok/9.jpg
-value=2.500
+value=3.800
 rarity=R
 type=Sorcery
 cost={5}{W}{W}

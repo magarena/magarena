@@ -1,6 +1,6 @@
 name=Ring of Ma'rûf
 image=http://magiccards.info/scans/en/med/163.jpg
-value=2.500
+value=3.689
 rarity=R
 type=Artifact
 cost={5}

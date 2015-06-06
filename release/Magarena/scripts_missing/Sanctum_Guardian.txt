@@ -1,6 +1,6 @@
 name=Sanctum Guardian
 image=http://magiccards.info/scans/en/9e/40.jpg
-value=2.500
+value=3.400
 rarity=U
 type=Creature
 subtype=Human,Cleric

@@ -1,6 +1,6 @@
 name=Phyrexian Colossus
 image=http://magiccards.info/scans/en/pvc/16.jpg
-value=2.500
+value=4.134
 rarity=R
 type=Artifact,Creature
 subtype=Golem

@@ -1,6 +1,6 @@
 name=Knollspine Dragon
 image=http://magiccards.info/scans/en/shm/98.jpg
-value=2.500
+value=3.720
 rarity=R
 type=Creature
 subtype=Dragon

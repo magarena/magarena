@@ -1,6 +1,6 @@
 name=Mages' Contest
 image=http://magiccards.info/scans/en/in/154.jpg
-value=2.500
+value=3.561
 rarity=R
 type=Instant
 cost={1}{R}{R}

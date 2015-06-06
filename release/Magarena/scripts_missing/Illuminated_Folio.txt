@@ -1,6 +1,6 @@
 name=Illuminated Folio
 image=http://magiccards.info/scans/en/shm/254.jpg
-value=2.500
+value=2.284
 rarity=U
 type=Artifact
 cost={5}

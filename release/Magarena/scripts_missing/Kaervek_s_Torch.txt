@@ -1,6 +1,6 @@
 name=Kaervek's Torch
 image=http://magiccards.info/scans/en/vma/175.jpg
-value=2.500
+value=4.000
 rarity=U
 type=Sorcery
 cost={X}{R}

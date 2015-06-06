@@ -1,6 +1,6 @@
 name=Thermal Flux
 image=http://magiccards.info/scans/en/cs/49.jpg
-value=2.500
+value=1.500
 rarity=C
 type=Instant
 cost={U}

@@ -1,6 +1,6 @@
 name=Hankyu
 image=http://magiccards.info/scans/en/chk/253.jpg
-value=2.500
+value=2.819
 rarity=U
 type=Artifact
 subtype=Equipment

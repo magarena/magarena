@@ -1,6 +1,6 @@
 name=Petals of Insight
 image=http://magiccards.info/scans/en/mma/60.jpg
-value=2.500
+value=3.679
 rarity=C
 type=Sorcery
 subtype=Arcane

@@ -1,6 +1,6 @@
 name=Consign to Dust
 image=http://magiccards.info/scans/en/jou/119.jpg
-value=2.500
+value=2.875
 rarity=U
 type=Instant
 cost={2}{G}

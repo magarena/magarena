@@ -1,6 +1,6 @@
 name=Goblin Clearcutter
 image=http://magiccards.info/scans/en/le/96.jpg
-value=2.500
+value=3.241
 rarity=U
 type=Creature
 subtype=Goblin

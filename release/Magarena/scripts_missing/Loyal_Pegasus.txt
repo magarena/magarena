@@ -1,6 +1,6 @@
 name=Loyal Pegasus
 image=http://magiccards.info/scans/en/bng/19.jpg
-value=2.500
+value=3.567
 rarity=C
 type=Creature
 subtype=Pegasus

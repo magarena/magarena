@@ -1,6 +1,6 @@
 name=Sorrow's Path
 image=http://magiccards.info/scans/en/me3/211.jpg
-value=2.500
+value=0.906
 rarity=R
 type=Land
 ability={T}: Choose two target blocking creatures an opponent controls. If each of those creatures could block all creatures that the other is blocking, remove both of them from combat. Each one then blocks all creatures the other was blocking.;\

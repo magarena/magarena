@@ -1,6 +1,6 @@
 name=Lens of Clarity
 image=http://magiccards.info/scans/en/ktk/223.jpg
-value=2.500
+value=2.000
 rarity=C
 type=Artifact
 cost={1}

@@ -1,6 +1,6 @@
 name=Ember-Fist Zubera
 image=http://magiccards.info/scans/en/chk/166.jpg
-value=2.500
+value=2.776
 rarity=C
 type=Creature
 subtype=Zubera,Spirit

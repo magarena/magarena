@@ -1,6 +1,6 @@
 name=Retaliate
 image=http://magiccards.info/scans/en/5dn/13.jpg
-value=2.500
+value=3.470
 rarity=R
 type=Instant
 cost={2}{W}{W}

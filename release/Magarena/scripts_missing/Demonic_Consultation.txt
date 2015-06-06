@@ -1,6 +1,6 @@
 name=Demonic Consultation
 image=http://magiccards.info/scans/en/me2/85.jpg
-value=2.500
+value=4.588
 rarity=U
 type=Instant
 cost={B}

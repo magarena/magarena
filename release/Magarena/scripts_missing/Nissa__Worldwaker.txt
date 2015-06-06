@@ -1,6 +1,6 @@
 name=Nissa, Worldwaker
 image=http://magiccards.info/scans/en/m15/187.jpg
-value=2.500
+value=4.150
 rarity=M
 type=Planeswalker
 subtype=Nissa

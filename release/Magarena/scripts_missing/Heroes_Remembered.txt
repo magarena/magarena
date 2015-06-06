@@ -1,6 +1,6 @@
 name=Heroes Remembered
 image=http://magiccards.info/scans/en/pc/7.jpg
-value=2.500
+value=3.620
 rarity=R
 type=Sorcery
 cost={6}{W}{W}{W}

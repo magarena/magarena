@@ -1,6 +1,6 @@
 name=Brood Keeper
 image=http://magiccards.info/scans/en/m15/132.jpg
-value=2.500
+value=3.300
 rarity=U
 type=Creature
 subtype=Human,Shaman

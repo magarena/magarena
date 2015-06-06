@@ -1,6 +1,6 @@
 name=Thoughtbound Primoc
 image=http://magiccards.info/scans/en/on/240.jpg
-value=2.500
+value=2.158
 rarity=U
 type=Creature
 subtype=Bird,Beast

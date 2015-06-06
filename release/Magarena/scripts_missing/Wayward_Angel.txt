@@ -1,6 +1,6 @@
 name=Wayward Angel
 image=http://magiccards.info/scans/en/od/57.jpg
-value=2.500
+value=3.938
 rarity=R
 type=Creature
 subtype=Angel,Horror

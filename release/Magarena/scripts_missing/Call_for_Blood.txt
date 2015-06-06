@@ -1,6 +1,6 @@
 name=Call for Blood
 image=http://magiccards.info/scans/en/bok/63.jpg
-value=2.500
+value=1.391
 rarity=C
 type=Instant
 subtype=Arcane

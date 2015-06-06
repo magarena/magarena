@@ -1,6 +1,6 @@
 name=Fill with Fright
 image=http://magiccards.info/scans/en/5dn/50.jpg
-value=2.500
+value=2.823
 rarity=C
 type=Sorcery
 cost={3}{B}

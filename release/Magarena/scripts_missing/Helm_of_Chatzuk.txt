@@ -1,6 +1,6 @@
 name=Helm of Chatzuk
 image=http://magiccards.info/scans/en/5e/376.jpg
-value=2.500
+value=2.424
 rarity=R
 type=Artifact
 cost={1}

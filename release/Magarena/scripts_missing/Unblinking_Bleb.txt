@@ -1,6 +1,6 @@
 name=Unblinking Bleb
 image=http://magiccards.info/scans/en/fut/45.jpg
-value=2.500
+value=3.038
 rarity=C
 type=Creature
 subtype=Illusion

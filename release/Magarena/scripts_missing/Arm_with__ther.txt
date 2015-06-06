@@ -1,6 +1,6 @@
 name=Arm with Æther
 image=http://magiccards.info/scans/en/nph/28.jpg
-value=2.500
+value=2.870
 rarity=U
 type=Sorcery
 cost={2}{U}

@@ -1,6 +1,6 @@
 name=Eye of the Storm
 image=http://magiccards.info/scans/en/rav/48.jpg
-value=2.500
+value=4.035
 rarity=R
 type=Enchantment
 cost={5}{U}{U}

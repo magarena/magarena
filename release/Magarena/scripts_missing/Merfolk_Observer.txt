@@ -1,6 +1,6 @@
 name=Merfolk Observer
 image=http://magiccards.info/scans/en/roe/76.jpg
-value=2.500
+value=2.274
 rarity=C
 type=Creature
 subtype=Merfolk,Rogue

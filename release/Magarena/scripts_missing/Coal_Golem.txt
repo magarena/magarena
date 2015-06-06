@@ -1,6 +1,6 @@
 name=Coal Golem
 image=http://magiccards.info/scans/en/me3/193.jpg
-value=2.500
+value=2.172
 rarity=C
 type=Artifact,Creature
 subtype=Golem

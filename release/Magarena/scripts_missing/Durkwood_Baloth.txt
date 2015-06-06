@@ -1,6 +1,6 @@
 name=Durkwood Baloth
 image=http://magiccards.info/scans/en/mma/142.jpg
-value=2.500
+value=3.237
 rarity=C
 type=Creature
 subtype=Beast

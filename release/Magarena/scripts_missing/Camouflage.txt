@@ -1,6 +1,6 @@
 name=Camouflage
 image=http://magiccards.info/scans/en/un/96.jpg
-value=2.500
+value=3.756
 rarity=U
 type=Instant
 cost={G}

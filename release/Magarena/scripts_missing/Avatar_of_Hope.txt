@@ -1,6 +1,6 @@
 name=Avatar of Hope
 image=http://magiccards.info/scans/en/8e/4.jpg
-value=2.500
+value=3.729
 rarity=R
 type=Creature
 subtype=Avatar

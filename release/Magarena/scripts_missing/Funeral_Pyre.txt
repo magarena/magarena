@@ -1,6 +1,6 @@
 name=Funeral Pyre
 image=http://magiccards.info/scans/en/ju/10.jpg
-value=2.500
+value=2.220
 rarity=C
 type=Instant
 cost={W}

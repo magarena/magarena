@@ -1,6 +1,6 @@
 name=Gosta Dirk
 image=http://magiccards.info/scans/en/lg/267.jpg
-value=2.500
+value=1.707
 rarity=R
 type=Legendary,Creature
 subtype=Human,Warrior

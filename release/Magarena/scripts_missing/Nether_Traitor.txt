@@ -1,6 +1,6 @@
 name=Nether Traitor
 image=http://magiccards.info/scans/en/ts/120.jpg
-value=2.500
+value=4.141
 rarity=R
 type=Creature
 subtype=Spirit

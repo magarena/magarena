@@ -1,6 +1,6 @@
 name=Gauntlet of Might
 image=http://magiccards.info/scans/en/me4/202.jpg
-value=2.500
+value=4.543
 rarity=R
 type=Artifact
 cost={4}

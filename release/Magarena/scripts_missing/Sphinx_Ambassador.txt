@@ -1,6 +1,6 @@
 name=Sphinx Ambassador
 image=http://magiccards.info/scans/en/m10/73.jpg
-value=2.500
+value=4.188
 rarity=M
 type=Creature
 subtype=Sphinx

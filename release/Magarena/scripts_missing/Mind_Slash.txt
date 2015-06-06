@@ -1,6 +1,6 @@
 name=Mind Slash
 image=http://magiccards.info/scans/en/8e/145.jpg
-value=2.500
+value=3.975
 rarity=U
 type=Enchantment
 cost={1}{B}{B}

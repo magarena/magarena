@@ -1,6 +1,6 @@
 name=Oona's Prowler
 image=http://magiccards.info/scans/en/lw/133.jpg
-value=2.500
+value=4.110
 rarity=R
 type=Creature
 subtype=Faerie,Rogue

@@ -1,6 +1,6 @@
 name=Tyrannize
 image=http://magiccards.info/scans/en/shm/201.jpg
-value=2.500
+value=3.074
 rarity=R
 type=Sorcery
 cost={3}{B/R}{B/R}

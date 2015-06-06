@@ -1,6 +1,6 @@
 name=Silvergill Adept
 image=http://magiccards.info/scans/en/lw/86.jpg
-value=2.500
+value=4.264
 rarity=U
 type=Creature
 subtype=Merfolk,Wizard

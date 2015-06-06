@@ -1,6 +1,6 @@
 name=Quicksilver Fountain
 image=http://magiccards.info/scans/en/mi/233.jpg
-value=2.500
+value=4.043
 rarity=R
 type=Artifact
 cost={3}

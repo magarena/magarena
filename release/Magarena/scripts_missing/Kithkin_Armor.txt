@@ -1,6 +1,6 @@
 name=Kithkin Armor
 image=http://magiccards.info/scans/en/wl/135.jpg
-value=2.500
+value=3.345
 rarity=C
 type=Enchantment
 subtype=Aura

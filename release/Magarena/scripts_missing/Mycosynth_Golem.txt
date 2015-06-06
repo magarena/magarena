@@ -1,6 +1,6 @@
 name=Mycosynth Golem
 image=http://magiccards.info/scans/en/5dn/137.jpg
-value=2.500
+value=4.435
 rarity=R
 type=Artifact,Creature
 subtype=Golem

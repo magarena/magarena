@@ -1,6 +1,6 @@
 name=Greater Werewolf
 image=http://magiccards.info/scans/en/5e/28.jpg
-value=2.500
+value=3.000
 rarity=U
 type=Creature
 subtype=Werewolf

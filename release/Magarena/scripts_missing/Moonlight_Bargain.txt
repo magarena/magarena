@@ -1,6 +1,6 @@
 name=Moonlight Bargain
 image=http://magiccards.info/scans/en/rav/95.jpg
-value=2.500
+value=2.860
 rarity=R
 type=Instant
 cost={3}{B}{B}

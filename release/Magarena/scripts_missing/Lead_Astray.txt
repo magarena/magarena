@@ -1,6 +1,6 @@
 name=Lead Astray
 image=http://magiccards.info/scans/en/ju/14.jpg
-value=2.500
+value=2.400
 rarity=C
 type=Instant
 cost={1}{W}

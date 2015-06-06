@@ -1,6 +1,6 @@
 name=Symbiosis
 image=http://magiccards.info/scans/en/br/85.jpg
-value=2.500
+value=3.446
 rarity=C
 type=Instant
 cost={1}{G}

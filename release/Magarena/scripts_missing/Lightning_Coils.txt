@@ -1,6 +1,6 @@
 name=Lightning Coils
 image=http://magiccards.info/scans/en/mi/198.jpg
-value=2.500
+value=3.755
 rarity=R
 type=Artifact
 cost={3}

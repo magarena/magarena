@@ -1,6 +1,6 @@
 name=Vizkopa Confessor
 image=http://magiccards.info/scans/en/gtc/205.jpg
-value=2.500
+value=2.447
 rarity=U
 type=Creature
 subtype=Human,Cleric

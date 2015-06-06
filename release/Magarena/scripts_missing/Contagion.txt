@@ -1,6 +1,6 @@
 name=Contagion
 image=http://magiccards.info/scans/en/med/64.jpg
-value=2.500
+value=4.571
 rarity=R
 type=Instant
 cost={3}{B}{B}

@@ -1,6 +1,6 @@
 name=Permafrost Trap
 image=http://magiccards.info/scans/en/wwk/34.jpg
-value=2.500
+value=3.008
 rarity=U
 type=Instant
 subtype=Trap

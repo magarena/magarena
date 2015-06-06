@@ -1,6 +1,6 @@
 name=Spellshift
 image=http://magiccards.info/scans/en/pc/47.jpg
-value=2.500
+value=2.102
 rarity=R
 type=Instant
 cost={3}{U}

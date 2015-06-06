@@ -1,6 +1,6 @@
 name=Acquire
 image=http://magiccards.info/scans/en/5dn/21.jpg
-value=2.500
+value=4.117
 rarity=R
 type=Sorcery
 cost={3}{U}{U}

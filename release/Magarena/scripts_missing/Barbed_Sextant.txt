@@ -1,6 +1,6 @@
 name=Barbed Sextant
 image=http://magiccards.info/scans/en/cstd/45.jpg
-value=2.500
+value=3.028
 rarity=C
 type=Artifact
 cost={1}

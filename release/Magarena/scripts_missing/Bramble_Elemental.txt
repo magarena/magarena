@@ -1,6 +1,6 @@
 name=Bramble Elemental
 image=http://magiccards.info/scans/en/pc2/59.jpg
-value=2.500
+value=2.979
 rarity=C
 type=Creature
 subtype=Elemental

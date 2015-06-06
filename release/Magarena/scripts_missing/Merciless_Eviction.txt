@@ -1,6 +1,6 @@
 name=Merciless Eviction
 image=http://magiccards.info/scans/en/gtc/177.jpg
-value=2.500
+value=4.036
 rarity=R
 type=Sorcery
 cost={4}{W}{B}

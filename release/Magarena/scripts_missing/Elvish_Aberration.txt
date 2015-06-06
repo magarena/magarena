@@ -1,6 +1,6 @@
 name=Elvish Aberration
 image=http://magiccards.info/scans/en/vma/206.jpg
-value=2.500
+value=3.667
 rarity=C
 type=Creature
 subtype=Elf,Mutant

@@ -1,6 +1,6 @@
 name=Thrull Wizard
 image=http://magiccards.info/scans/en/fe/31.jpg
-value=2.500
+value=2.784
 rarity=U
 type=Creature
 subtype=Thrull,Wizard

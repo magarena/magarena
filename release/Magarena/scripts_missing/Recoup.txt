@@ -1,6 +1,6 @@
 name=Recoup
 image=http://magiccards.info/scans/en/ddk/63.jpg
-value=2.500
+value=4.553
 rarity=U
 type=Sorcery
 cost={1}{R}

@@ -1,6 +1,6 @@
 name=Stonehewer Giant
 image=http://magiccards.info/scans/en/mma/31.jpg
-value=2.500
+value=3.819
 rarity=R
 type=Creature
 subtype=Giant,Warrior

@@ -1,6 +1,6 @@
 name=Sentinel
 image=http://magiccards.info/scans/en/ch/87.jpg
-value=2.500
+value=4.206
 rarity=R
 type=Artifact,Creature
 subtype=Shapeshifter

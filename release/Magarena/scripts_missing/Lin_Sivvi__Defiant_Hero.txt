@@ -1,6 +1,6 @@
 name=Lin Sivvi, Defiant Hero
 image=http://magiccards.info/scans/en/ne/12.jpg
-value=2.500
+value=4.158
 rarity=R
 type=Legendary,Creature
 subtype=Human,Rebel

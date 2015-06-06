@@ -1,6 +1,6 @@
 name=Pattern of Rebirth
 image=http://magiccards.info/scans/en/ud/115.jpg
-value=2.500
+value=4.305
 rarity=R
 type=Enchantment
 subtype=Aura

@@ -1,6 +1,6 @@
 name=Disappear
 image=http://magiccards.info/scans/en/ud/30.jpg
-value=2.500
+value=2.870
 rarity=U
 type=Enchantment
 subtype=Aura

@@ -1,6 +1,6 @@
 name=Choking Vines
 image=http://magiccards.info/scans/en/wl/65.jpg
-value=2.500
+value=3.542
 rarity=C
 type=Instant
 cost={X}{G}

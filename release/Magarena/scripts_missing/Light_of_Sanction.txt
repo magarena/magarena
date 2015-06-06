@@ -1,6 +1,6 @@
 name=Light of Sanction
 image=http://magiccards.info/scans/en/rav/24.jpg
-value=2.500
+value=3.010
 rarity=R
 type=Enchantment
 cost={1}{W}{W}

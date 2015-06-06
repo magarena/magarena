@@ -1,6 +1,6 @@
 name=Vine Kami
 image=http://magiccards.info/scans/en/chk/249.jpg
-value=2.500
+value=2.160
 rarity=C
 type=Creature
 subtype=Spirit

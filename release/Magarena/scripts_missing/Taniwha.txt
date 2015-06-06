@@ -1,6 +1,6 @@
 name=Taniwha
 image=http://magiccards.info/scans/en/mr/95.jpg
-value=2.500
+value=3.083
 rarity=R
 type=Legendary,Creature
 subtype=Serpent

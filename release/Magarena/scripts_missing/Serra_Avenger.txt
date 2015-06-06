@@ -1,6 +1,6 @@
 name=Serra Avenger
 image=http://magiccards.info/scans/en/m13/33.jpg
-value=2.500
+value=4.247
 rarity=R
 type=Creature
 subtype=Angel

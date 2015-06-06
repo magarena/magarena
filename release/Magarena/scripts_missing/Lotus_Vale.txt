@@ -1,6 +1,6 @@
 name=Lotus Vale
 image=http://magiccards.info/scans/en/wl/165.jpg
-value=2.500
+value=4.326
 rarity=R
 type=Land
 ability=If SN would enter the battlefield, sacrifice two untapped lands instead. If you do, put SN onto the battlefield. If you don't, put it into its owner's graveyard.;\

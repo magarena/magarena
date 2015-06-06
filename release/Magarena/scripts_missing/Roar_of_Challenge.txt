@@ -1,6 +1,6 @@
 name=Roar of Challenge
 image=http://magiccards.info/scans/en/ktk/145.jpg
-value=2.500
+value=2.833
 rarity=U
 type=Sorcery
 cost={2}{G}

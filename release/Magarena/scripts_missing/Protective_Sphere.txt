@@ -1,6 +1,6 @@
 name=Protective Sphere
 image=http://magiccards.info/scans/en/in/26.jpg
-value=2.500
+value=2.859
 rarity=C
 type=Enchantment
 cost={2}{W}

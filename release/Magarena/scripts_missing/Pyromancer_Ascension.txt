@@ -1,6 +1,6 @@
 name=Pyromancer Ascension
 image=http://magiccards.info/scans/en/zen/143.jpg
-value=2.500
+value=4.066
 rarity=R
 type=Enchantment
 cost={1}{R}

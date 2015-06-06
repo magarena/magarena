@@ -1,6 +1,6 @@
 name=Riptide Entrancer
 image=http://magiccards.info/scans/en/on/108.jpg
-value=2.500
+value=3.864
 rarity=R
 type=Creature
 subtype=Human,Wizard

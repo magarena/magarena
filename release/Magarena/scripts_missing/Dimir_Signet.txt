@@ -1,6 +1,6 @@
 name=Dimir Signet
 image=http://magiccards.info/scans/en/cmd/246.jpg
-value=2.500
+value=3.750
 rarity=C
 type=Artifact
 cost={2}

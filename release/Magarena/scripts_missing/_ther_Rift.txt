@@ -1,6 +1,6 @@
 name=Æther Rift
 image=http://magiccards.info/scans/en/in/227.jpg
-value=2.500
+value=3.978
 rarity=R
 type=Enchantment
 cost={1}{R}{G}

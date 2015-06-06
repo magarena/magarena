@@ -1,6 +1,6 @@
 name=Trepanation Blade
 image=http://magiccards.info/scans/en/isd/235.jpg
-value=2.500
+value=3.844
 rarity=U
 type=Artifact
 subtype=Equipment

@@ -1,6 +1,6 @@
 name=Spinebiter
 image=http://magiccards.info/scans/en/nph/121.jpg
-value=2.500
+value=3.331
 rarity=U
 type=Creature
 subtype=Beast

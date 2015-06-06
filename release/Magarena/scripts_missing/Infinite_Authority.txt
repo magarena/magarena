@@ -1,6 +1,6 @@
 name=Infinite Authority
 image=http://magiccards.info/scans/en/lg/191.jpg
-value=2.500
+value=2.108
 rarity=R
 type=Enchantment
 subtype=Aura

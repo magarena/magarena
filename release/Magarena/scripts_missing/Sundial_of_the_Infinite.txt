@@ -1,6 +1,6 @@
 name=Sundial of the Infinite
 image=http://magiccards.info/scans/en/m12/218.jpg
-value=2.500
+value=4.221
 rarity=R
 type=Artifact
 cost={2}

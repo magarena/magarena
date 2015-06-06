@@ -1,6 +1,6 @@
 name=Sarkhan, the Dragonspeaker
 image=http://magiccards.info/scans/en/ktk/119.jpg
-value=2.500
+value=4.786
 rarity=M
 type=Planeswalker
 subtype=Sarkhan

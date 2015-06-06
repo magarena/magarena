@@ -1,6 +1,6 @@
 name=Divine Intervention
 image=http://magiccards.info/scans/en/me3/8.jpg
-value=2.500
+value=3.623
 rarity=R
 type=Enchantment
 cost={6}{W}{W}

@@ -1,6 +1,6 @@
 name=Leyline of Singularity
 image=http://magiccards.info/scans/en/gp/29.jpg
-value=2.500
+value=4.073
 rarity=R
 type=Enchantment
 cost={2}{U}{U}

@@ -1,6 +1,6 @@
 name=Merfolk Spy
 image=http://magiccards.info/scans/en/m14/62.jpg
-value=2.500
+value=3.364
 rarity=C
 type=Creature
 subtype=Merfolk,Rogue

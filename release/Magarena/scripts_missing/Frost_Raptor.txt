@@ -1,6 +1,6 @@
 name=Frost Raptor
 image=http://magiccards.info/scans/en/cs/34.jpg
-value=2.500
+value=3.012
 rarity=C
 type=Snow,Creature
 subtype=Bird

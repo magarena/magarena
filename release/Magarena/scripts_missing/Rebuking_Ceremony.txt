@@ -1,6 +1,6 @@
 name=Rebuking Ceremony
 image=http://magiccards.info/scans/en/ds/82.jpg
-value=2.500
+value=1.842
 rarity=R
 type=Sorcery
 cost={3}{G}{G}

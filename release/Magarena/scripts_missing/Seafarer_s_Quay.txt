@@ -1,6 +1,6 @@
 name=Seafarer's Quay
 image=http://magiccards.info/scans/en/lg/251.jpg
-value=2.500
+value=1.297
 rarity=U
 type=Land
 ability=Blue legendary creatures you control have "bands with other legendary creatures."

@@ -1,6 +1,6 @@
 name=Ancient Ziggurat
 image=http://magiccards.info/scans/en/cfx/141.jpg
-value=2.500
+value=4.165
 rarity=U
 type=Land
 ability={T}: Add one mana of any color to your mana pool. Spend this mana only to cast a creature spell.

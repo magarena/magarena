@@ -1,6 +1,6 @@
 name=Darkwater Egg
 image=http://magiccards.info/scans/en/od/299.jpg
-value=2.500
+value=2.450
 rarity=U
 type=Artifact
 cost={1}

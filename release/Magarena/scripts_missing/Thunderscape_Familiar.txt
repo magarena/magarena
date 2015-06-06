@@ -1,6 +1,6 @@
 name=Thunderscape Familiar
 image=http://magiccards.info/scans/en/ps/76.jpg
-value=2.500
+value=4.300
 rarity=C
 type=Creature
 subtype=Kavu

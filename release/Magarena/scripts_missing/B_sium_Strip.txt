@@ -1,6 +1,6 @@
 name=Bösium Strip
 image=http://magiccards.info/scans/en/wl/146.jpg
-value=2.500
+value=4.089
 rarity=R
 type=Artifact
 cost={3}

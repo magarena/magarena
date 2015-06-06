@@ -1,6 +1,6 @@
 name=Ill-Gotten Gains
 image=http://magiccards.info/scans/en/cns/114.jpg
-value=2.500
+value=4.500
 rarity=R
 type=Sorcery
 cost={2}{B}{B}

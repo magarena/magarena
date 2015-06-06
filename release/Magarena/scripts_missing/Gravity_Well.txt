@@ -1,6 +1,6 @@
 name=Gravity Well
 image=http://magiccards.info/scans/en/roe/185.jpg
-value=2.500
+value=3.844
 rarity=U
 type=Enchantment
 cost={1}{G}{G}

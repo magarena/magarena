@@ -1,6 +1,6 @@
 name=Transmute Artifact
 image=http://magiccards.info/scans/en/me4/69.jpg
-value=2.500
+value=4.316
 rarity=R
 type=Sorcery
 cost={U}{U}

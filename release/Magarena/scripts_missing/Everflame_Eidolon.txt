@@ -1,6 +1,6 @@
 name=Everflame Eidolon
 image=http://magiccards.info/scans/en/bng/92.jpg
-value=2.500
+value=3.640
 rarity=U
 type=Enchantment,Creature
 subtype=Spirit

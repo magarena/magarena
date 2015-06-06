@@ -1,6 +1,6 @@
 name=Elemental Augury
 image=http://magiccards.info/scans/en/me2/193.jpg
-value=2.500
+value=3.302
 rarity=R
 type=Enchantment
 cost={U}{B}{R}

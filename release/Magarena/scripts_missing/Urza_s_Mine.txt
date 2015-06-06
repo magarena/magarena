@@ -1,6 +1,6 @@
 name=Urza's Mine
 image=http://magiccards.info/scans/en/me4/257.jpg
-value=2.500
+value=4.328
 rarity=B
 type=Land
 subtype=Urza's,Mine

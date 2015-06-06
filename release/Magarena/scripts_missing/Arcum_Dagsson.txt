@@ -1,6 +1,6 @@
 name=Arcum Dagsson
 image=http://magiccards.info/scans/en/cs/27.jpg
-value=2.500
+value=4.012
 rarity=R
 type=Legendary,Creature
 subtype=Human,Artificer

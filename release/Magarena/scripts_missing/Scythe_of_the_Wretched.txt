@@ -1,6 +1,6 @@
 name=Scythe of the Wretched
 image=http://magiccards.info/scans/en/mi/239.jpg
-value=2.500
+value=4.380
 rarity=R
 type=Artifact
 subtype=Equipment

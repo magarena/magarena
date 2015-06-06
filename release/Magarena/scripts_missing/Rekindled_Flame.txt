@@ -1,6 +1,6 @@
 name=Rekindled Flame
 image=http://magiccards.info/scans/en/eve/61.jpg
-value=2.500
+value=3.698
 rarity=R
 type=Sorcery
 cost={2}{R}{R}

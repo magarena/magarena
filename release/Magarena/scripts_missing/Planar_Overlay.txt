@@ -1,6 +1,6 @@
 name=Planar Overlay
 image=http://magiccards.info/scans/en/ps/28.jpg
-value=2.500
+value=3.023
 rarity=R
 type=Sorcery
 cost={2}{U}

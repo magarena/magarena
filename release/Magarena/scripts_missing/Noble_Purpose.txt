@@ -1,6 +1,6 @@
 name=Noble Purpose
 image=http://magiccards.info/scans/en/8e/31.jpg
-value=2.500
+value=4.245
 rarity=R
 type=Enchantment
 cost={3}{W}{W}

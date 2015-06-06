@@ -1,6 +1,6 @@
 name=Mercadian Lift
 image=http://magiccards.info/scans/en/mm/306.jpg
-value=2.500
+value=2.538
 rarity=R
 type=Artifact
 cost={2}

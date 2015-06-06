@@ -1,6 +1,6 @@
 name=Realmwright
 image=http://magiccards.info/scans/en/gtc/45.jpg
-value=2.500
+value=3.906
 rarity=R
 type=Creature
 subtype=Vedalken,Wizard

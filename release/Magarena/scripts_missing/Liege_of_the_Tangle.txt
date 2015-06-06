@@ -1,6 +1,6 @@
 name=Liege of the Tangle
 image=http://magiccards.info/scans/en/som/123.jpg
-value=2.500
+value=3.989
 rarity=M
 type=Creature
 subtype=Elemental

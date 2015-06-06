@@ -1,6 +1,6 @@
 name=Ice
 image=http://magiccards.info/scans/en/ddj/32b.jpg
-value=2.500
+value=4.597
 rarity=U
 type=Instant
 cost={1}{U}

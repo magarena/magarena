@@ -1,6 +1,6 @@
 name=Animate Artifact
 image=http://magiccards.info/scans/en/me4/38.jpg
-value=2.500
+value=2.903
 rarity=U
 type=Enchantment
 subtype=Aura

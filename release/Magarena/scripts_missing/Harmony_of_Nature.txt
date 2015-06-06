@@ -1,6 +1,6 @@
 name=Harmony of Nature
 image=http://magiccards.info/scans/en/po2/68.jpg
-value=2.500
+value=3.674
 rarity=U
 type=Sorcery
 cost={2}{G}

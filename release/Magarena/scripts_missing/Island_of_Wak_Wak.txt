@@ -1,6 +1,6 @@
 name=Island of Wak-Wak
 image=http://magiccards.info/scans/en/med/176.jpg
-value=2.500
+value=3.877
 rarity=R
 type=Land
 ability={T}: Target creature with flying has base power 0 until end of turn.

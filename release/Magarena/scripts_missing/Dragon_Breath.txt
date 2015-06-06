@@ -1,6 +1,6 @@
 name=Dragon Breath
 image=http://magiccards.info/scans/en/arc/33.jpg
-value=2.500
+value=4.344
 rarity=C
 type=Enchantment
 subtype=Aura

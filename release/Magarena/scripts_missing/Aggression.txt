@@ -1,6 +1,6 @@
 name=Aggression
 image=http://magiccards.info/scans/en/ia/169.jpg
-value=2.500
+value=2.961
 rarity=U
 type=Enchantment
 subtype=Aura

@@ -1,6 +1,6 @@
 name=Doom Cannon
 image=http://magiccards.info/scans/en/on/307.jpg
-value=2.500
+value=2.150
 rarity=R
 type=Artifact
 cost={6}

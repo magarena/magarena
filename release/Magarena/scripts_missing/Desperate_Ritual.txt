@@ -1,6 +1,6 @@
 name=Desperate Ritual
 image=http://magiccards.info/scans/en/mma/110.jpg
-value=2.500
+value=4.325
 rarity=U
 type=Instant
 subtype=Arcane

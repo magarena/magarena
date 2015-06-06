@@ -1,6 +1,6 @@
 name=Herald of War
 image=http://magiccards.info/scans/en/avr/24.jpg
-value=2.500
+value=3.792
 rarity=R
 type=Creature
 subtype=Angel

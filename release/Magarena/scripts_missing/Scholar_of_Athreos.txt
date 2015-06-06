@@ -1,6 +1,6 @@
 name=Scholar of Athreos
 image=http://magiccards.info/scans/en/ths/28.jpg
-value=2.500
+value=3.406
 rarity=C
 type=Creature
 subtype=Human,Cleric

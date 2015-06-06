@@ -1,6 +1,6 @@
 name=Dawn to Dusk
 image=http://magiccards.info/scans/en/bng/6.jpg
-value=2.500
+value=3.413
 rarity=U
 type=Sorcery
 cost={2}{W}{W}

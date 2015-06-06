@@ -1,6 +1,6 @@
 name=Lavinia of the Tenth
 image=http://magiccards.info/scans/en/dgm/80.jpg
-value=2.500
+value=3.784
 rarity=R
 type=Legendary,Creature
 subtype=Human,Soldier

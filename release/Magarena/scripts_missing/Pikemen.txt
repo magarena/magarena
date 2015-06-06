@@ -1,6 +1,6 @@
 name=Pikemen
 image=http://magiccards.info/scans/en/5e/328.jpg
-value=2.500
+value=2.972
 rarity=C
 type=Creature
 subtype=Human,Soldier

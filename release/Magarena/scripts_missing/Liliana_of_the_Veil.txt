@@ -1,6 +1,6 @@
 name=Liliana of the Veil
 image=http://magiccards.info/scans/en/isd/105.jpg
-value=2.500
+value=4.287
 rarity=M
 type=Planeswalker
 subtype=Liliana

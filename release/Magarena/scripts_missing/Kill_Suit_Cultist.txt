@@ -1,6 +1,6 @@
 name=Kill-Suit Cultist
 image=http://magiccards.info/scans/en/di/65.jpg
-value=2.500
+value=2.408
 rarity=C
 type=Creature
 subtype=Goblin,Berserker

@@ -1,6 +1,6 @@
 name=Wonder
 image=http://magiccards.info/scans/en/c13/67.jpg
-value=2.500
+value=4.538
 rarity=U
 type=Creature
 subtype=Incarnation

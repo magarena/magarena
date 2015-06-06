@@ -1,6 +1,6 @@
 name=Bartel Runeaxe
 image=http://magiccards.info/scans/en/me3/145.jpg
-value=2.500
+value=3.385
 rarity=U
 type=Legendary,Creature
 subtype=Giant,Warrior

@@ -1,6 +1,6 @@
 name=Overload
 image=http://magiccards.info/scans/en/in/157.jpg
-value=2.500
+value=2.630
 rarity=C
 type=Instant
 cost={R}

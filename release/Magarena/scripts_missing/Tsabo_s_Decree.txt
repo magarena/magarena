@@ -1,6 +1,6 @@
 name=Tsabo's Decree
 image=http://magiccards.info/scans/en/in/129.jpg
-value=2.500
+value=4.254
 rarity=R
 type=Instant
 cost={5}{B}

@@ -1,6 +1,6 @@
 name=Graven Dominator
 image=http://magiccards.info/scans/en/gp/7.jpg
-value=2.500
+value=3.462
 rarity=R
 type=Creature
 subtype=Gargoyle

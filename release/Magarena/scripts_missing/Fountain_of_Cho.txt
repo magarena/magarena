@@ -1,6 +1,6 @@
 name=Fountain of Cho
 image=http://magiccards.info/scans/en/mm/317.jpg
-value=2.500
+value=3.260
 rarity=U
 type=Land
 ability=SN enters the battlefield tapped.;\

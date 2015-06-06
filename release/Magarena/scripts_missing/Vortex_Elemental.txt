@@ -1,6 +1,6 @@
 name=Vortex Elemental
 image=http://magiccards.info/scans/en/bng/56.jpg
-value=2.500
+value=3.843
 rarity=U
 type=Creature
 subtype=Elemental

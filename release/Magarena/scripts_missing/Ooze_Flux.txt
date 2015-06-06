@@ -1,6 +1,6 @@
 name=Ooze Flux
 image=http://magiccards.info/scans/en/gtc/128.jpg
-value=2.500
+value=3.316
 rarity=R
 type=Enchantment
 cost={3}{G}

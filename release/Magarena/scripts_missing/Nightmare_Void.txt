@@ -1,6 +1,6 @@
 name=Nightmare Void
 image=http://magiccards.info/scans/en/ddj/73.jpg
-value=2.500
+value=3.056
 rarity=U
 type=Sorcery
 cost={3}{B}

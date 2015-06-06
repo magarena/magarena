@@ -1,6 +1,6 @@
 name=Vicious Betrayal
 image=http://magiccards.info/scans/en/5dn/60.jpg
-value=2.500
+value=1.278
 rarity=C
 type=Sorcery
 cost={3}{B}{B}

@@ -1,6 +1,6 @@
 name=Rimebound Dead
 image=http://magiccards.info/scans/en/cs/69.jpg
-value=2.500
+value=3.942
 rarity=C
 type=Snow,Creature
 subtype=Skeleton

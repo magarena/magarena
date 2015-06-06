@@ -1,6 +1,6 @@
 name=Goka the Unjust
 image=http://magiccards.info/scans/en/chk/173b.jpg
-value=2.500
+value=3.105
 rarity=U
 type=Legendary,Creature
 subtype=Ogre,Shaman

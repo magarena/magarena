@@ -1,6 +1,6 @@
 name=Tower Geist
 image=http://magiccards.info/scans/en/dka/53.jpg
-value=2.500
+value=3.430
 rarity=U
 type=Creature
 subtype=Spirit

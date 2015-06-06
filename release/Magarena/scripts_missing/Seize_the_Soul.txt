@@ -1,6 +1,6 @@
 name=Seize the Soul
 image=http://magiccards.info/scans/en/gp/61.jpg
-value=2.500
+value=3.661
 rarity=R
 type=Instant
 cost={2}{B}{B}

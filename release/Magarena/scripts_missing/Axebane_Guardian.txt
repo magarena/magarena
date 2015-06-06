@@ -1,6 +1,6 @@
 name=Axebane Guardian
 image=http://magiccards.info/scans/en/rtr/115.jpg
-value=2.500
+value=3.306
 rarity=C
 type=Creature
 subtype=Human,Druid

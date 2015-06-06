@@ -1,6 +1,6 @@
 name=Hooting Mandrills
 image=http://magiccards.info/scans/en/ktk/137.jpg
-value=2.500
+value=4.000
 rarity=C
 type=Creature
 subtype=Ape

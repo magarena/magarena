@@ -1,6 +1,6 @@
 name=Chromatic Sphere
 image=http://magiccards.info/scans/en/mi/151.jpg
-value=2.500
+value=3.070
 rarity=C
 type=Artifact
 cost={1}

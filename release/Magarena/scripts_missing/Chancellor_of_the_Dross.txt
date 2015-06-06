@@ -1,6 +1,6 @@
 name=Chancellor of the Dross
 image=http://magiccards.info/scans/en/nph/54.jpg
-value=2.500
+value=3.627
 rarity=R
 type=Creature
 subtype=Vampire

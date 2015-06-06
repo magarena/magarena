@@ -1,6 +1,6 @@
 name=Cloak of Invisibility
 image=http://magiccards.info/scans/en/mr/58.jpg
-value=2.500
+value=3.112
 rarity=C
 type=Enchantment
 subtype=Aura

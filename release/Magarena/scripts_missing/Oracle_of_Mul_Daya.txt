@@ -1,6 +1,6 @@
 name=Oracle of Mul Daya
 image=http://magiccards.info/scans/en/zen/172.jpg
-value=2.500
+value=4.052
 rarity=R
 type=Creature
 subtype=Elf,Shaman

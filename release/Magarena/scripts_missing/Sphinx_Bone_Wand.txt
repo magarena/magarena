@@ -1,6 +1,6 @@
 name=Sphinx-Bone Wand
 image=http://magiccards.info/scans/en/ddj/29.jpg
-value=2.500
+value=2.792
 rarity=R
 type=Artifact
 cost={7}

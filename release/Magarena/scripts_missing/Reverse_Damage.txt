@@ -1,6 +1,6 @@
 name=Reverse Damage
 image=http://magiccards.info/scans/en/9e/35.jpg
-value=2.500
+value=3.723
 rarity=R
 type=Instant
 cost={1}{W}{W}

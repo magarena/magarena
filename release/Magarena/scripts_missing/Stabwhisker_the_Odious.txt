@@ -1,6 +1,6 @@
 name=Stabwhisker the Odious
 image=http://magiccards.info/scans/en/chk/131b.jpg
-value=2.500
+value=3.975
 rarity=R
 type=Legendary,Creature
 subtype=Rat,Shaman

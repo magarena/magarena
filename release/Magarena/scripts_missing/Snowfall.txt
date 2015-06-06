@@ -1,6 +1,6 @@
 name=Snowfall
 image=http://magiccards.info/scans/en/ia/101.jpg
-value=2.500
+value=2.302
 rarity=C
 type=Enchantment
 cost={2}{U}

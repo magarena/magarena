@@ -1,6 +1,6 @@
 name=Curse of Misfortunes
 image=http://magiccards.info/scans/en/dka/56.jpg
-value=2.500
+value=3.075
 rarity=R
 type=Enchantment
 subtype=Aura,Curse

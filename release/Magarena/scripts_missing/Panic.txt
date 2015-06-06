@@ -1,6 +1,6 @@
 name=Panic
 image=http://magiccards.info/scans/en/me2/145.jpg
-value=2.500
+value=3.121
 rarity=C
 type=Instant
 cost={R}

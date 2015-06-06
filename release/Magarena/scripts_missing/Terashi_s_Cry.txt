@@ -1,6 +1,6 @@
 name=Terashi's Cry
 image=http://magiccards.info/scans/en/chk/47.jpg
-value=2.500
+value=2.012
 rarity=C
 type=Sorcery
 subtype=Arcane

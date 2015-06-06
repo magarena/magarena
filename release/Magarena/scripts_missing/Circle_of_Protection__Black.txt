@@ -1,6 +1,6 @@
 name=Circle of Protection: Black
 image=http://magiccards.info/scans/en/9e/10.jpg
-value=2.500
+value=3.272
 rarity=U
 type=Enchantment
 cost={1}{W}

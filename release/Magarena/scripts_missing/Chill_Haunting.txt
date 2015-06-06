@@ -1,6 +1,6 @@
 name=Chill Haunting
 image=http://magiccards.info/scans/en/sc/60.jpg
-value=2.500
+value=1.683
 rarity=U
 type=Instant
 cost={1}{B}

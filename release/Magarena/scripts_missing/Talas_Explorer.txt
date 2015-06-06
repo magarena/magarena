@@ -1,6 +1,6 @@
 name=Talas Explorer
 image=http://magiccards.info/scans/en/po2/49.jpg
-value=2.500
+value=2.804
 rarity=C
 type=Creature
 subtype=Human,Pirate,Scout

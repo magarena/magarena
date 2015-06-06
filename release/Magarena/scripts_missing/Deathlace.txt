@@ -1,6 +1,6 @@
 name=Deathlace
 image=http://magiccards.info/scans/en/4e/15.jpg
-value=2.500
+value=2.010
 rarity=R
 type=Instant
 cost={B}

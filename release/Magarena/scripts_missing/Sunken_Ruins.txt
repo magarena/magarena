@@ -1,6 +1,6 @@
 name=Sunken Ruins
 image=http://magiccards.info/scans/en/shm/280.jpg
-value=2.500
+value=4.322
 rarity=R
 type=Land
 ability={T}: Add {1} to your mana pool.;\

@@ -1,6 +1,6 @@
 name=Tromokratis
 image=http://magiccards.info/scans/en/bng/55.jpg
-value=2.500
+value=3.819
 rarity=R
 type=Legendary,Creature
 subtype=Kraken

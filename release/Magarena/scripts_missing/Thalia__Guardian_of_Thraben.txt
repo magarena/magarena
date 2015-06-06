@@ -1,6 +1,6 @@
 name=Thalia, Guardian of Thraben
 image=http://magiccards.info/scans/en/dka/24.jpg
-value=2.500
+value=4.561
 rarity=R
 type=Legendary,Creature
 subtype=Human,Soldier

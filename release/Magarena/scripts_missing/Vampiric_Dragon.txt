@@ -1,6 +1,6 @@
 name=Vampiric Dragon
 image=http://magiccards.info/scans/en/arc/99.jpg
-value=2.500
+value=4.070
 rarity=R
 type=Creature
 subtype=Vampire,Dragon

@@ -1,6 +1,6 @@
 name=Lotus Bloom
 image=http://magiccards.info/scans/en/mma/208.jpg
-value=2.500
+value=4.096
 rarity=R
 type=Artifact
 ability=Suspend 3—{0};\

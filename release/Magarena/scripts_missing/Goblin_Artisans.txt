@@ -1,6 +1,6 @@
 name=Goblin Artisans
 image=http://magiccards.info/scans/en/ch/48.jpg
-value=2.500
+value=2.712
 rarity=U
 type=Creature
 subtype=Goblin,Artificer

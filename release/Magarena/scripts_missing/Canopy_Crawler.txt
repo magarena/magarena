@@ -1,6 +1,6 @@
 name=Canopy Crawler
 image=http://magiccards.info/scans/en/le/122.jpg
-value=2.500
+value=3.574
 rarity=U
 type=Creature
 subtype=Beast

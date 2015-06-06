@@ -1,6 +1,6 @@
 name=Karametra's Acolyte
 image=http://magiccards.info/scans/en/ths/160.jpg
-value=2.500
+value=3.530
 rarity=U
 type=Creature
 subtype=Human,Druid

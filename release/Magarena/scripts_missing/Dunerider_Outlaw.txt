@@ -1,6 +1,6 @@
 name=Dunerider Outlaw
 image=http://magiccards.info/scans/en/pc/86.jpg
-value=2.500
+value=3.588
 rarity=U
 type=Creature
 subtype=Human,Rebel,Rogue

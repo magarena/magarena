@@ -1,6 +1,6 @@
 name=Keldon Battlewagon
 image=http://magiccards.info/scans/en/pr/139.jpg
-value=2.500
+value=2.811
 rarity=R
 type=Artifact,Creature
 subtype=Juggernaut

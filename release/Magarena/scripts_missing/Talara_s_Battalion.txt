@@ -1,6 +1,6 @@
 name=Talara's Battalion
 image=http://magiccards.info/scans/en/eve/77.jpg
-value=2.500
+value=4.160
 rarity=R
 type=Creature
 subtype=Elf,Warrior

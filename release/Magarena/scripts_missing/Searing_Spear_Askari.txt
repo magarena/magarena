@@ -1,6 +1,6 @@
 name=Searing Spear Askari
 image=http://magiccards.info/scans/en/mr/191.jpg
-value=2.500
+value=3.900
 rarity=C
 type=Creature
 subtype=Human,Knight

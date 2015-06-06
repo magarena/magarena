@@ -1,6 +1,6 @@
 name=Null Profusion
 image=http://magiccards.info/scans/en/pc/89.jpg
-value=2.500
+value=3.601
 rarity=R
 type=Enchantment
 cost={4}{B}{B}

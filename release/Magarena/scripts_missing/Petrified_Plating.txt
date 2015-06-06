@@ -1,6 +1,6 @@
 name=Petrified Plating
 image=http://magiccards.info/scans/en/fut/133.jpg
-value=2.500
+value=1.969
 rarity=C
 type=Enchantment
 subtype=Aura

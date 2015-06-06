@@ -1,6 +1,6 @@
 name=Wall of Nets
 image=http://magiccards.info/scans/en/ex/24.jpg
-value=2.500
+value=4.240
 rarity=R
 type=Creature
 subtype=Wall

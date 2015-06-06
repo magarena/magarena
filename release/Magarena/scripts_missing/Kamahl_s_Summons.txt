@@ -1,6 +1,6 @@
 name=Kamahl's Summons
 image=http://magiccards.info/scans/en/on/269.jpg
-value=2.500
+value=2.875
 rarity=U
 type=Sorcery
 cost={3}{G}

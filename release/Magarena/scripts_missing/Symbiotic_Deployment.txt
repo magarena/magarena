@@ -1,6 +1,6 @@
 name=Symbiotic Deployment
 image=http://magiccards.info/scans/en/ap/88.jpg
-value=2.500
+value=3.691
 rarity=R
 type=Enchantment
 cost={2}{G}

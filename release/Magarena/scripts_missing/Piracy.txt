@@ -1,6 +1,6 @@
 name=Piracy
 image=http://magiccards.info/scans/en/st/45.jpg
-value=2.500
+value=3.840
 rarity=R
 type=Sorcery
 cost={U}{U}

@@ -1,6 +1,6 @@
 name=Engineered Plague
 image=http://magiccards.info/scans/en/7e/133.jpg
-value=2.500
+value=4.350
 rarity=U
 type=Enchantment
 cost={2}{B}

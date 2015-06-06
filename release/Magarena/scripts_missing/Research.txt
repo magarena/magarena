@@ -1,6 +1,6 @@
 name=Research
 image=http://magiccards.info/scans/en/di/155a.jpg
-value=2.500
+value=4.337
 rarity=R
 type=Instant
 cost={G}{U}

@@ -1,6 +1,6 @@
 name=March of Souls
 image=http://magiccards.info/scans/en/ps/10.jpg
-value=2.500
+value=4.019
 rarity=R
 type=Sorcery
 cost={4}{W}

@@ -1,6 +1,6 @@
 name=Vow of Flight
 image=http://magiccards.info/scans/en/cmd/68.jpg
-value=2.500
+value=3.339
 rarity=U
 type=Enchantment
 subtype=Aura

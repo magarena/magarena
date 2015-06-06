@@ -1,6 +1,6 @@
 name=Rag Man
 image=http://magiccards.info/scans/en/7e/156.jpg
-value=2.500
+value=2.766
 rarity=R
 type=Creature
 subtype=Human,Minion

@@ -1,6 +1,6 @@
 name=Gorilla Berserkers
 image=http://magiccards.info/scans/en/ai/75.jpg
-value=2.500
+value=3.760
 rarity=C
 type=Creature
 subtype=Ape,Berserker

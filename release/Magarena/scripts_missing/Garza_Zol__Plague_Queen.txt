@@ -1,6 +1,6 @@
 name=Garza Zol, Plague Queen
 image=http://magiccards.info/scans/en/cs/129.jpg
-value=2.500
+value=3.661
 rarity=R
 type=Legendary,Creature
 subtype=Vampire

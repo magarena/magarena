@@ -1,6 +1,6 @@
 name=Wall of Glare
 image=http://magiccards.info/scans/en/ud/25.jpg
-value=2.500
+value=4.127
 rarity=C
 type=Creature
 subtype=Wall

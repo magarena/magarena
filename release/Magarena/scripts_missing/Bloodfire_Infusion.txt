@@ -1,6 +1,6 @@
 name=Bloodfire Infusion
 image=http://magiccards.info/scans/en/ap/57.jpg
-value=2.500
+value=3.865
 rarity=C
 type=Enchantment
 subtype=Aura

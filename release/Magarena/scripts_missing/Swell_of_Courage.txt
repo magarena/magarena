@@ -1,6 +1,6 @@
 name=Swell of Courage
 image=http://magiccards.info/scans/en/ddf/31.jpg
-value=2.500
+value=2.914
 rarity=U
 type=Instant
 cost={3}{W}{W}

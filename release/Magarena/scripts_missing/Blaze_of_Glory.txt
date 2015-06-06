@@ -1,6 +1,6 @@
 name=Blaze of Glory
 image=http://magiccards.info/scans/en/me4/7.jpg
-value=2.500
+value=3.422
 rarity=U
 type=Instant
 cost={W}

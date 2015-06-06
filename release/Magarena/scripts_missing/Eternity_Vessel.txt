@@ -1,6 +1,6 @@
 name=Eternity Vessel
 image=http://magiccards.info/scans/en/zen/200.jpg
-value=2.500
+value=3.848
 rarity=M
 type=Artifact
 cost={6}

@@ -1,6 +1,6 @@
 name=Solitary Confinement
 image=http://magiccards.info/scans/en/ju/24.jpg
-value=2.500
+value=4.149
 rarity=R
 type=Enchantment
 cost={2}{W}

@@ -1,6 +1,6 @@
 name=Capricious Efreet
 image=http://magiccards.info/scans/en/c13/102.jpg
-value=2.500
+value=3.545
 rarity=R
 type=Creature
 subtype=Efreet

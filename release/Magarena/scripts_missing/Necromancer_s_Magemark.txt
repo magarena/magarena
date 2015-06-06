@@ -1,6 +1,6 @@
 name=Necromancer's Magemark
 image=http://magiccards.info/scans/en/gp/53.jpg
-value=2.500
+value=3.449
 rarity=C
 type=Enchantment
 subtype=Aura

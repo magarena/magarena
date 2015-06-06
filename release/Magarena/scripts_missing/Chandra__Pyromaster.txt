@@ -1,6 +1,6 @@
 name=Chandra, Pyromaster
 image=http://magiccards.info/scans/en/m15/134.jpg
-value=2.500
+value=4.667
 rarity=M
 type=Planeswalker
 subtype=Chandra

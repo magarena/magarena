@@ -1,6 +1,6 @@
 name=Trench Gorger
 image=http://magiccards.info/scans/en/cmd/65.jpg
-value=2.500
+value=3.783
 rarity=R
 type=Creature
 subtype=Leviathan

@@ -1,6 +1,6 @@
 name=Gravebane Zombie
 image=http://magiccards.info/scans/en/6e/133.jpg
-value=2.500
+value=2.783
 rarity=U
 type=Creature
 subtype=Zombie

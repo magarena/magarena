@@ -1,6 +1,6 @@
 name=Clone Shell
 image=http://magiccards.info/scans/en/som/143.jpg
-value=2.500
+value=2.988
 rarity=U
 type=Artifact,Creature
 subtype=Shapeshifter

@@ -1,6 +1,6 @@
 name=Cromat
 image=http://magiccards.info/scans/en/ap/94.jpg
-value=2.500
+value=4.118
 rarity=R
 type=Legendary,Creature
 subtype=Illusion

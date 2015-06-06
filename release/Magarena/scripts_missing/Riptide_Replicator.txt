@@ -1,6 +1,6 @@
 name=Riptide Replicator
 image=http://magiccards.info/scans/en/on/309.jpg
-value=2.500
+value=4.163
 rarity=R
 type=Artifact
 cost={X}{4}

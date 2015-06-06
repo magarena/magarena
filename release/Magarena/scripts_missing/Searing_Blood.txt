@@ -1,6 +1,6 @@
 name=Searing Blood
 image=http://magiccards.info/scans/en/bng/111.jpg
-value=2.500
+value=3.830
 rarity=U
 type=Instant
 cost={R}{R}

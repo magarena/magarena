@@ -1,6 +1,6 @@
 name=Burn
 image=http://magiccards.info/scans/en/dgm/134b.jpg
-value=2.500
+value=4.101
 rarity=U
 type=Instant
 cost={1}{R}

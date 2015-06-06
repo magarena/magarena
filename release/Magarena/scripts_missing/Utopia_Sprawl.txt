@@ -1,6 +1,6 @@
 name=Utopia Sprawl
 image=http://magiccards.info/scans/en/di/99.jpg
-value=2.500
+value=3.974
 rarity=C
 type=Enchantment
 subtype=Aura

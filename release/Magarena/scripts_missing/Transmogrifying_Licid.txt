@@ -1,6 +1,6 @@
 name=Transmogrifying Licid
 image=http://magiccards.info/scans/en/ex/141.jpg
-value=2.500
+value=3.197
 rarity=U
 type=Artifact,Creature
 subtype=Licid

@@ -1,6 +1,6 @@
 name=Greater Realm of Preservation
 image=http://magiccards.info/scans/en/med/13.jpg
-value=2.500
+value=2.821
 rarity=U
 type=Enchantment
 cost={1}{W}

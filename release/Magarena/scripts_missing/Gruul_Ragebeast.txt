@@ -1,6 +1,6 @@
 name=Gruul Ragebeast
 image=http://magiccards.info/scans/en/gtc/170.jpg
-value=2.500
+value=3.380
 rarity=R
 type=Creature
 subtype=Beast

@@ -1,6 +1,6 @@
 name=Reprocess
 image=http://magiccards.info/scans/en/7e/159.jpg
-value=2.500
+value=4.271
 rarity=R
 type=Sorcery
 cost={2}{B}{B}

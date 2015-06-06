@@ -1,6 +1,6 @@
 name=Azorius Herald
 image=http://magiccards.info/scans/en/c13/6.jpg
-value=2.500
+value=3.846
 rarity=U
 type=Creature
 subtype=Spirit

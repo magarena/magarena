@@ -1,6 +1,6 @@
 name=Cultivate
 image=http://magiccards.info/scans/en/c13/139.jpg
-value=2.500
+value=3.583
 rarity=C
 type=Sorcery
 cost={2}{G}

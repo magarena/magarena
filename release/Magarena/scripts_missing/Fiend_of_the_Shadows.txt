@@ -1,6 +1,6 @@
 name=Fiend of the Shadows
 image=http://magiccards.info/scans/en/dka/62.jpg
-value=2.500
+value=3.518
 rarity=R
 type=Creature
 subtype=Vampire,Wizard

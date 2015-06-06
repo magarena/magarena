@@ -1,6 +1,6 @@
 name=Prismatic Omen
 image=http://magiccards.info/scans/en/shm/126.jpg
-value=2.500
+value=4.175
 rarity=R
 type=Enchantment
 cost={1}{G}

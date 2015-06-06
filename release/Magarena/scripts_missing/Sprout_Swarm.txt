@@ -1,6 +1,6 @@
 name=Sprout Swarm
 image=http://magiccards.info/scans/en/fut/138.jpg
-value=2.500
+value=4.107
 rarity=C
 type=Instant
 cost={1}{G}

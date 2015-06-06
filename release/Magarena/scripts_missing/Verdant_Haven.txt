@@ -1,6 +1,6 @@
 name=Verdant Haven
 image=http://magiccards.info/scans/en/m15/206.jpg
-value=2.500
+value=2.600
 rarity=C
 type=Enchantment
 subtype=Aura

@@ -1,6 +1,6 @@
 name=Song of Serenity
 image=http://magiccards.info/scans/en/ex/125.jpg
-value=2.500
+value=3.640
 rarity=U
 type=Enchantment
 cost={1}{G}

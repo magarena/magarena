@@ -1,6 +1,6 @@
 name=Norritt
 image=http://magiccards.info/scans/en/ia/43.jpg
-value=2.500
+value=3.388
 rarity=C
 type=Creature
 subtype=Imp

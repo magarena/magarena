@@ -1,6 +1,6 @@
 name=Reality Twist
 image=http://magiccards.info/scans/en/ia/94.jpg
-value=2.500
+value=3.622
 rarity=R
 type=Enchantment
 cost={U}{U}{U}

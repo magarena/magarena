@@ -1,6 +1,6 @@
 name=Darkwater Catacombs
 image=http://magiccards.info/scans/en/od/319.jpg
-value=2.500
+value=3.982
 rarity=R
 type=Land
 ability={1}, {T}: Add {U}{B} to your mana pool.

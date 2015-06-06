@@ -1,6 +1,6 @@
 name=Saltcrusted Steppe
 image=http://magiccards.info/scans/en/c13/316.jpg
-value=2.500
+value=3.850
 rarity=U
 type=Land
 ability={T}: Add {1} to your mana pool.;\

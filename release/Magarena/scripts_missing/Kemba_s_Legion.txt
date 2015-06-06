@@ -1,6 +1,6 @@
 name=Kemba's Legion
 image=http://magiccards.info/scans/en/mbs/9.jpg
-value=2.500
+value=2.060
 rarity=U
 type=Creature
 subtype=Cat,Soldier

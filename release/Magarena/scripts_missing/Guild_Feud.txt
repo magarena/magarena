@@ -1,6 +1,6 @@
 name=Guild Feud
 image=http://magiccards.info/scans/en/rtr/97.jpg
-value=2.500
+value=2.846
 rarity=R
 type=Enchantment
 cost={5}{R}

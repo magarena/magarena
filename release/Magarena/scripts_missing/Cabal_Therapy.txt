@@ -1,6 +1,6 @@
 name=Cabal Therapy
 image=http://magiccards.info/scans/en/ju/62.jpg
-value=2.500
+value=4.542
 rarity=U
 type=Sorcery
 cost={B}

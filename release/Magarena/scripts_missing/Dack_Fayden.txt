@@ -1,6 +1,6 @@
 name=Dack Fayden
 image=http://magiccards.info/scans/en/cns/42.jpg
-value=2.500
+value=3.862
 rarity=M
 type=Planeswalker
 subtype=Dack

@@ -1,6 +1,6 @@
 name=Abandon Hope
 image=http://magiccards.info/scans/en/tp/1.jpg
-value=2.500
+value=2.823
 rarity=U
 type=Sorcery
 cost={X}{1}{B}

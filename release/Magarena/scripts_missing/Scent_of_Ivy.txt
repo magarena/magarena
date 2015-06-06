@@ -1,6 +1,6 @@
 name=Scent of Ivy
 image=http://magiccards.info/scans/en/ud/120.jpg
-value=2.500
+value=2.952
 rarity=C
 type=Instant
 cost={G}

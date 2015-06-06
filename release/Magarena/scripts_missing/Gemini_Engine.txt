@@ -1,6 +1,6 @@
 name=Gemini Engine
 image=http://magiccards.info/scans/en/ds/121.jpg
-value=2.500
+value=4.035
 rarity=R
 type=Artifact,Creature
 subtype=Construct

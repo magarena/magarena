@@ -1,6 +1,6 @@
 name=Chandra Ablaze
 image=http://magiccards.info/scans/en/zen/120.jpg
-value=2.500
+value=3.980
 rarity=M
 type=Planeswalker
 subtype=Chandra

@@ -1,6 +1,6 @@
 name=Awesome Presence
 image=http://magiccards.info/scans/en/ai/34.jpg
-value=2.500
+value=3.452
 rarity=C
 type=Enchantment
 subtype=Aura

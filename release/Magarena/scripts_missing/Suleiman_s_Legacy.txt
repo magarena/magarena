@@ -1,6 +1,6 @@
 name=Suleiman's Legacy
 image=http://magiccards.info/scans/en/vi/138.jpg
-value=2.500
+value=3.819
 rarity=R
 type=Enchantment
 cost={R}{W}

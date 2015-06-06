@@ -1,6 +1,6 @@
 name=Devoted Caretaker
 image=http://magiccards.info/scans/en/od/18.jpg
-value=2.500
+value=4.076
 rarity=R
 type=Creature
 subtype=Human,Cleric

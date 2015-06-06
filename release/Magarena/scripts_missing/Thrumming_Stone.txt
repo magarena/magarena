@@ -1,6 +1,6 @@
 name=Thrumming Stone
 image=http://magiccards.info/scans/en/cs/142.jpg
-value=2.500
+value=4.183
 rarity=R
 type=Legendary,Artifact
 cost={5}

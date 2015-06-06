@@ -1,6 +1,6 @@
 name=Nebuchadnezzar
 image=http://magiccards.info/scans/en/me3/162.jpg
-value=2.500
+value=3.939
 rarity=U
 type=Legendary,Creature
 subtype=Human,Wizard

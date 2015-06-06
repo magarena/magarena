@@ -1,6 +1,6 @@
 name=Battering Wurm
 image=http://magiccards.info/scans/en/gp/79.jpg
-value=2.500
+value=2.609
 rarity=U
 type=Creature
 subtype=Wurm

@@ -1,6 +1,6 @@
 name=Weird Harvest
 image=http://magiccards.info/scans/en/9e/282.jpg
-value=2.500
+value=3.741
 rarity=R
 type=Sorcery
 cost={X}{G}{G}

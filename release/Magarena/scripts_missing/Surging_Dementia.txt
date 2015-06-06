@@ -1,6 +1,6 @@
 name=Surging Dementia
 image=http://magiccards.info/scans/en/cs/72.jpg
-value=2.500
+value=1.811
 rarity=C
 type=Sorcery
 cost={1}{B}

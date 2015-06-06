@@ -1,6 +1,6 @@
 name=Portent
 image=http://magiccards.info/scans/en/cstd/15.jpg
-value=2.500
+value=4.344
 rarity=C
 type=Sorcery
 cost={U}

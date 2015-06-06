@@ -1,6 +1,6 @@
 name=Chance Encounter
 image=http://magiccards.info/scans/en/od/182.jpg
-value=2.500
+value=3.952
 rarity=R
 type=Enchantment
 cost={2}{R}{R}

@@ -1,6 +1,6 @@
 name=Path of Bravery
 image=http://magiccards.info/scans/en/m14/26.jpg
-value=2.500
+value=3.671
 rarity=R
 type=Enchantment
 cost={2}{W}

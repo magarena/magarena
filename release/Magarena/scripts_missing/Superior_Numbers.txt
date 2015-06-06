@@ -1,6 +1,6 @@
 name=Superior Numbers
 image=http://magiccards.info/scans/en/mr/142.jpg
-value=2.500
+value=3.054
 rarity=U
 type=Sorcery
 cost={G}{G}

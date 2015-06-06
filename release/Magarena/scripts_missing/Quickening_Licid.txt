@@ -1,6 +1,6 @@
 name=Quickening Licid
 image=http://magiccards.info/scans/en/tp/248.jpg
-value=2.500
+value=2.759
 rarity=U
 type=Creature
 subtype=Licid

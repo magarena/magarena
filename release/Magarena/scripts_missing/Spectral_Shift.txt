@@ -1,6 +1,6 @@
 name=Spectral Shift
 image=http://magiccards.info/scans/en/5dn/37.jpg
-value=2.500
+value=3.614
 rarity=R
 type=Instant
 cost={1}{U}

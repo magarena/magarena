@@ -1,6 +1,6 @@
 name=Mishra's Bauble
 image=http://magiccards.info/scans/en/cs/138.jpg
-value=2.500
+value=4.297
 rarity=U
 type=Artifact
 cost={0}

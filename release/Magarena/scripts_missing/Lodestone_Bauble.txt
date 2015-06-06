@@ -1,6 +1,6 @@
 name=Lodestone Bauble
 image=http://magiccards.info/scans/en/me2/213.jpg
-value=2.500
+value=3.764
 rarity=R
 type=Artifact
 cost={0}

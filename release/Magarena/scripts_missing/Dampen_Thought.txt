@@ -1,6 +1,6 @@
 name=Dampen Thought
 image=http://magiccards.info/scans/en/mma/39.jpg
-value=2.500
+value=3.156
 rarity=C
 type=Instant
 subtype=Arcane

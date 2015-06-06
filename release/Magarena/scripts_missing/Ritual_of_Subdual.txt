@@ -1,6 +1,6 @@
 name=Ritual of Subdual
 image=http://magiccards.info/scans/en/me2/174.jpg
-value=2.500
+value=3.080
 rarity=R
 type=Enchantment
 cost={4}{G}{G}

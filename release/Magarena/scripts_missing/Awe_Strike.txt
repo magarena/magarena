@@ -1,6 +1,6 @@
 name=Awe Strike
 image=http://magiccards.info/scans/en/mi/6.jpg
-value=2.500
+value=3.500
 rarity=C
 type=Instant
 cost={W}

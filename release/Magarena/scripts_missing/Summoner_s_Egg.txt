@@ -1,6 +1,6 @@
 name=Summoner's Egg
 image=http://magiccards.info/scans/en/5dn/157.jpg
-value=2.500
+value=4.185
 rarity=R
 type=Artifact,Creature
 subtype=Construct

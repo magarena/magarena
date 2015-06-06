@@ -1,6 +1,6 @@
 name=Haunted Cadaver
 image=http://magiccards.info/scans/en/on/154.jpg
-value=2.500
+value=3.329
 rarity=C
 type=Creature
 subtype=Zombie

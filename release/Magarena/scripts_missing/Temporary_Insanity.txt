@@ -1,6 +1,6 @@
 name=Temporary Insanity
 image=http://magiccards.info/scans/en/ddg/73.jpg
-value=2.500
+value=2.288
 rarity=U
 type=Instant
 cost={3}{R}

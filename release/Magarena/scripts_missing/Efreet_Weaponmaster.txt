@@ -1,6 +1,6 @@
 name=Efreet Weaponmaster
 image=http://magiccards.info/scans/en/ktk/175.jpg
-value=2.500
+value=3.000
 rarity=C
 type=Creature
 subtype=Efreet,Monk

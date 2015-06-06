@@ -1,6 +1,6 @@
 name=Siege Wurm
 image=http://magiccards.info/scans/en/m15/200.jpg
-value=2.500
+value=3.333
 rarity=C
 type=Creature
 subtype=Wurm

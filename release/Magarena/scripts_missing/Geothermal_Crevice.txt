@@ -1,6 +1,6 @@
 name=Geothermal Crevice
 image=http://magiccards.info/scans/en/in/323.jpg
-value=2.500
+value=3.423
 rarity=C
 type=Land
 ability=SN enters the battlefield tapped.;\

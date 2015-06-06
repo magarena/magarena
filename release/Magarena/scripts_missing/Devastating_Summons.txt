@@ -1,6 +1,6 @@
 name=Devastating Summons
 image=http://magiccards.info/scans/en/roe/140.jpg
-value=2.500
+value=3.909
 rarity=R
 type=Sorcery
 cost={R}

@@ -1,6 +1,6 @@
 name=Dwarven Ruins
 image=http://magiccards.info/scans/en/me2/227.jpg
-value=2.500
+value=3.312
 rarity=U
 type=Land
 ability=SN enters the battlefield tapped.;\

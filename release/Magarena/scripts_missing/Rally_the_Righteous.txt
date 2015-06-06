@@ -1,6 +1,6 @@
 name=Rally the Righteous
 image=http://magiccards.info/scans/en/rav/222.jpg
-value=2.500
+value=3.420
 rarity=C
 type=Instant
 cost={1}{R}{W}

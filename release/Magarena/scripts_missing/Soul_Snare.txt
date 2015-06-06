@@ -1,6 +1,6 @@
 name=Soul Snare
 image=http://magiccards.info/scans/en/cmd/32.jpg
-value=2.500
+value=4.011
 rarity=U
 type=Enchantment
 cost={W}

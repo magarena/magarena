@@ -1,6 +1,6 @@
 name=Repel the Darkness
 image=http://magiccards.info/scans/en/roe/42.jpg
-value=2.500
+value=3.000
 rarity=C
 type=Instant
 cost={2}{W}

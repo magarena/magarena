@@ -1,6 +1,6 @@
 name=Goblin War Cry
 image=http://magiccards.info/scans/en/po2/104.jpg
-value=2.500
+value=2.250
 rarity=U
 type=Sorcery
 cost={2}{R}

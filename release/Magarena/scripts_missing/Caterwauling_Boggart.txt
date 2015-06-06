@@ -1,6 +1,6 @@
 name=Caterwauling Boggart
 image=http://magiccards.info/scans/en/lw/157.jpg
-value=2.500
+value=3.000
 rarity=C
 type=Creature
 subtype=Goblin,Shaman

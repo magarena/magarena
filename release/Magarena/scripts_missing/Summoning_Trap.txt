@@ -1,6 +1,6 @@
 name=Summoning Trap
 image=http://magiccards.info/scans/en/zen/184.jpg
-value=2.500
+value=3.975
 rarity=R
 type=Instant
 subtype=Trap

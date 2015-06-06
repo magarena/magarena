@@ -1,6 +1,6 @@
 name=Ichorid
 image=http://magiccards.info/scans/en/vma/123.jpg
-value=2.500
+value=4.500
 rarity=R
 type=Creature
 subtype=Horror

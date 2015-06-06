@@ -1,6 +1,6 @@
 name=Extraplanar Lens
 image=http://magiccards.info/scans/en/mi/169.jpg
-value=2.500
+value=4.387
 rarity=R
 type=Artifact
 cost={3}

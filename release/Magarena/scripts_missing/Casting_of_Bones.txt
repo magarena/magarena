@@ -1,6 +1,6 @@
 name=Casting of Bones
 image=http://magiccards.info/scans/en/cstd/22.jpg
-value=2.500
+value=3.402
 rarity=C
 type=Enchantment
 subtype=Aura

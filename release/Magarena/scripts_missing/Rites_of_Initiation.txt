@@ -1,6 +1,6 @@
 name=Rites of Initiation
 image=http://magiccards.info/scans/en/vma/182.jpg
-value=2.500
+value=3.000
 rarity=U
 type=Instant
 cost={R}

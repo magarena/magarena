@@ -1,6 +1,6 @@
 name=Conjurer's Ban
 image=http://magiccards.info/scans/en/gp/108.jpg
-value=2.500
+value=2.782
 rarity=U
 type=Sorcery
 cost={W}{B}

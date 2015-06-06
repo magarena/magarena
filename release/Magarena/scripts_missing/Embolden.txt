@@ -1,6 +1,6 @@
 name=Embolden
 image=http://magiccards.info/scans/en/od/22.jpg
-value=2.500
+value=3.077
 rarity=C
 type=Instant
 cost={2}{W}

@@ -1,6 +1,6 @@
 name=Swerve
 image=http://magiccards.info/scans/en/ala/200.jpg
-value=2.500
+value=4.067
 rarity=U
 type=Instant
 cost={U}{R}

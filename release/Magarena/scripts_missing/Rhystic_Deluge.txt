@@ -1,6 +1,6 @@
 name=Rhystic Deluge
 image=http://magiccards.info/scans/en/pr/43.jpg
-value=2.500
+value=3.135
 rarity=C
 type=Enchantment
 cost={2}{U}

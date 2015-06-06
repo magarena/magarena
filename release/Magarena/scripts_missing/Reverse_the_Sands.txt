@@ -1,6 +1,6 @@
 name=Reverse the Sands
 image=http://magiccards.info/scans/en/chk/41.jpg
-value=2.500
+value=3.245
 rarity=R
 type=Sorcery
 cost={6}{W}{W}

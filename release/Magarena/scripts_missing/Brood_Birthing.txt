@@ -1,6 +1,6 @@
 name=Brood Birthing
 image=http://magiccards.info/scans/en/roe/138.jpg
-value=2.500
+value=3.986
 rarity=C
 type=Sorcery
 cost={1}{R}

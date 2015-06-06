@@ -1,6 +1,6 @@
 name=Reach of Branches
 image=http://magiccards.info/scans/en/mma/158.jpg
-value=2.500
+value=3.786
 rarity=U
 type=Tribal,Instant
 subtype=Treefolk

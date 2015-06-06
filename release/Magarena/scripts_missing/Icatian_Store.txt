@@ -1,6 +1,6 @@
 name=Icatian Store
 image=http://magiccards.info/scans/en/5e/423.jpg
-value=2.500
+value=2.950
 rarity=R
 type=Land
 ability=SN enters the battlefield tapped.;\

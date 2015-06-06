@@ -1,6 +1,6 @@
 name=Mindleech Mass
 image=http://magiccards.info/scans/en/rav/215.jpg
-value=2.500
+value=4.029
 rarity=R
 type=Creature
 subtype=Horror

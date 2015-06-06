@@ -1,6 +1,6 @@
 name=Sigil of the New Dawn
 image=http://magiccards.info/scans/en/on/55.jpg
-value=2.500
+value=4.160
 rarity=R
 type=Enchantment
 cost={3}{W}

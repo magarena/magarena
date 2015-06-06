@@ -1,6 +1,6 @@
 name=Carrion Thrash
 image=http://magiccards.info/scans/en/ala/162.jpg
-value=2.500
+value=2.233
 rarity=C
 type=Creature
 subtype=Viashino,Warrior

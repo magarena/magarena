@@ -1,6 +1,6 @@
 name=Overgrowth
 image=http://magiccards.info/scans/en/10e/283.jpg
-value=2.500
+value=3.854
 rarity=C
 type=Enchantment
 subtype=Aura

@@ -1,6 +1,6 @@
 name=Through the Breach
 image=http://magiccards.info/scans/en/chk/193.jpg
-value=2.500
+value=3.581
 rarity=R
 type=Instant
 subtype=Arcane

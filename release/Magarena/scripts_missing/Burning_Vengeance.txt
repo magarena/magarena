@@ -1,6 +1,6 @@
 name=Burning Vengeance
 image=http://magiccards.info/scans/en/isd/133.jpg
-value=2.500
+value=3.623
 rarity=U
 type=Enchantment
 cost={2}{R}

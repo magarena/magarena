@@ -1,6 +1,6 @@
 name=Clearwater Goblet
 image=http://magiccards.info/scans/en/5dn/109.jpg
-value=2.500
+value=4.269
 rarity=R
 type=Artifact
 cost={5}

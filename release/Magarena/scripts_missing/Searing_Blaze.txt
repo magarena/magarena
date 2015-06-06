@@ -1,6 +1,6 @@
 name=Searing Blaze
 image=http://magiccards.info/scans/en/ddi/67.jpg
-value=2.500
+value=4.022
 rarity=C
 type=Instant
 cost={R}{R}

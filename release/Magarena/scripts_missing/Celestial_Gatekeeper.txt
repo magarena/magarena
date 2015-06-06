@@ -1,6 +1,6 @@
 name=Celestial Gatekeeper
 image=http://magiccards.info/scans/en/le/6.jpg
-value=2.500
+value=3.709
 rarity=R
 type=Creature
 subtype=Bird,Cleric

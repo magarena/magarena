@@ -1,6 +1,6 @@
 name=Cranial Archive
 image=http://magiccards.info/scans/en/ktk/218.jpg
-value=2.500
+value=2.400
 rarity=U
 type=Artifact
 cost={2}

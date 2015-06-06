@@ -1,6 +1,6 @@
 name=Glamerdye
 image=http://magiccards.info/scans/en/eve/21.jpg
-value=2.500
+value=2.980
 rarity=R
 type=Instant
 cost={1}{U}

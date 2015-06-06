@@ -1,6 +1,6 @@
 name=Punishment
 image=http://magiccards.info/scans/en/di/150b.jpg
-value=2.500
+value=4.217
 rarity=R
 type=Sorcery
 cost={X}{B}{G}

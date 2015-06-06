@@ -1,6 +1,6 @@
 name=Nivmagus Elemental
 image=http://magiccards.info/scans/en/rtr/219.jpg
-value=2.500
+value=3.907
 rarity=R
 type=Creature
 subtype=Elemental

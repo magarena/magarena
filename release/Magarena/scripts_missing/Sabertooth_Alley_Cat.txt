@@ -1,6 +1,6 @@
 name=Sabertooth Alley Cat
 image=http://magiccards.info/scans/en/rav/140.jpg
-value=2.500
+value=1.931
 rarity=C
 type=Creature
 subtype=Cat

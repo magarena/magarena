@@ -1,6 +1,6 @@
 name=Sphinx of the Chimes
 image=http://magiccards.info/scans/en/rtr/52.jpg
-value=2.500
+value=3.597
 rarity=R
 type=Creature
 subtype=Sphinx

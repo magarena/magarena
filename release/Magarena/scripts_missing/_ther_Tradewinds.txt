@@ -1,6 +1,6 @@
 name=Æther Tradewinds
 image=http://magiccards.info/scans/en/cns/89.jpg
-value=2.500
+value=3.200
 rarity=C
 type=Instant
 cost={2}{U}

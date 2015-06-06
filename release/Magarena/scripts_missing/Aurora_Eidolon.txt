@@ -1,6 +1,6 @@
 name=Aurora Eidolon
 image=http://magiccards.info/scans/en/di/1.jpg
-value=2.500
+value=1.887
 rarity=C
 type=Creature
 subtype=Spirit

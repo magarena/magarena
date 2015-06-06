@@ -1,6 +1,6 @@
 name=City of Shadows
 image=http://magiccards.info/scans/en/me3/206.jpg
-value=2.500
+value=3.597
 rarity=R
 type=Land
 ability={T}, Exile a creature you control: Put a storage counter on SN.;\

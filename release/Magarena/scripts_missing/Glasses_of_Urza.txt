@@ -1,6 +1,6 @@
 name=Glasses of Urza
 image=http://magiccards.info/scans/en/me4/203.jpg
-value=2.500
+value=4.064
 rarity=C
 type=Artifact
 cost={1}

@@ -1,6 +1,6 @@
 name=Necromancer's Stockpile
 image=http://magiccards.info/scans/en/m15/108.jpg
-value=2.500
+value=2.812
 rarity=R
 type=Enchantment
 cost={1}{B}

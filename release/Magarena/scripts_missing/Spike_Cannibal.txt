@@ -1,6 +1,6 @@
 name=Spike Cannibal
 image=http://magiccards.info/scans/en/ex/75.jpg
-value=2.500
+value=4.184
 rarity=U
 type=Creature
 subtype=Spike

@@ -1,6 +1,6 @@
 name=Aeon Chronicler
 image=http://magiccards.info/scans/en/ddm/17.jpg
-value=2.500
+value=3.833
 rarity=R
 type=Creature
 subtype=Avatar

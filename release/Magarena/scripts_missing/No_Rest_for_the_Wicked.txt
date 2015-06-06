@@ -1,6 +1,6 @@
 name=No Rest for the Wicked
 image=http://magiccards.info/scans/en/10e/165.jpg
-value=2.500
+value=4.100
 rarity=U
 type=Enchantment
 cost={1}{B}

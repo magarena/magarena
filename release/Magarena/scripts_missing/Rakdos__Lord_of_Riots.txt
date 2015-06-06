@@ -1,6 +1,6 @@
 name=Rakdos, Lord of Riots
 image=http://magiccards.info/scans/en/rtr/187.jpg
-value=2.500
+value=4.163
 rarity=M
 type=Legendary,Creature
 subtype=Demon

@@ -1,6 +1,6 @@
 name=Jace, Memory Adept
 image=http://magiccards.info/scans/en/m14/60.jpg
-value=2.500
+value=3.490
 rarity=M
 type=Planeswalker
 subtype=Jace

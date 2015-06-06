@@ -1,6 +1,6 @@
 name=Icatian Infantry
 image=http://magiccards.info/scans/en/fe/147.jpg
-value=2.500
+value=2.988
 rarity=C
 type=Creature
 subtype=Human,Soldier

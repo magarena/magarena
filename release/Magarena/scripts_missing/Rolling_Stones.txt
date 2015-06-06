@@ -1,6 +1,6 @@
 name=Rolling Stones
 image=http://magiccards.info/scans/en/8e/38.jpg
-value=2.500
+value=4.088
 rarity=R
 type=Enchantment
 cost={1}{W}

@@ -1,6 +1,6 @@
 name=Ice Floe
 image=http://magiccards.info/scans/en/me2/232.jpg
-value=2.500
+value=3.900
 rarity=U
 type=Land
 ability=You may choose not to untap SN during your untap step.;\

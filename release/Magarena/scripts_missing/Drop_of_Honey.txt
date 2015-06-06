@@ -1,6 +1,6 @@
 name=Drop of Honey
 image=http://magiccards.info/scans/en/me4/150.jpg
-value=2.500
+value=4.371
 rarity=R
 type=Enchantment
 cost={G}

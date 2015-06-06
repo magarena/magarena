@@ -1,6 +1,6 @@
 name=Shining Shoal
 image=http://magiccards.info/scans/en/bok/21.jpg
-value=2.500
+value=4.156
 rarity=R
 type=Instant
 subtype=Arcane

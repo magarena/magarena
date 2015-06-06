@@ -1,6 +1,6 @@
 name=Farrel's Mantle
 image=http://magiccards.info/scans/en/me2/13.jpg
-value=2.500
+value=3.380
 rarity=U
 type=Enchantment
 subtype=Aura

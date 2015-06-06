@@ -1,6 +1,6 @@
 name=Runner's Bane
 image=http://magiccards.info/scans/en/dgm/17.jpg
-value=2.500
+value=2.700
 rarity=C
 type=Enchantment
 subtype=Aura

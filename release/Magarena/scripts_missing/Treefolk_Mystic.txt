@@ -1,6 +1,6 @@
 name=Treefolk Mystic
 image=http://magiccards.info/scans/en/ul/114.jpg
-value=2.500
+value=2.862
 rarity=C
 type=Creature
 subtype=Treefolk

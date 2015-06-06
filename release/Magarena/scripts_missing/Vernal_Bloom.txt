@@ -1,6 +1,6 @@
 name=Vernal Bloom
 image=http://magiccards.info/scans/en/8e/286.jpg
-value=2.500
+value=4.118
 rarity=R
 type=Enchantment
 cost={3}{G}

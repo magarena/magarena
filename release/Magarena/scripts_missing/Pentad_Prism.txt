@@ -1,6 +1,6 @@
 name=Pentad Prism
 image=http://magiccards.info/scans/en/pch/122.jpg
-value=2.500
+value=4.417
 rarity=C
 type=Artifact
 cost={2}

@@ -1,6 +1,6 @@
 name=Obsidian Fireheart
 image=http://magiccards.info/scans/en/zen/140.jpg
-value=2.500
+value=4.095
 rarity=M
 type=Creature
 subtype=Elemental

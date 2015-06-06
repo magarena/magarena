@@ -1,6 +1,6 @@
 name=Pack Hunt
 image=http://magiccards.info/scans/en/ne/109.jpg
-value=2.500
+value=4.051
 rarity=R
 type=Sorcery
 cost={3}{G}

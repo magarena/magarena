@@ -1,6 +1,6 @@
 name=Surprise Deployment
 image=http://magiccards.info/scans/en/ps/18.jpg
-value=2.500
+value=3.393
 rarity=U
 type=Instant
 cost={3}{W}

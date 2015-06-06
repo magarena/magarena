@@ -1,6 +1,6 @@
 name=Ghostly Flicker
 image=http://magiccards.info/scans/en/avr/57.jpg
-value=2.500
+value=3.861
 rarity=C
 type=Instant
 cost={2}{U}

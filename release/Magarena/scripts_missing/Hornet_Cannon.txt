@@ -1,6 +1,6 @@
 name=Hornet Cannon
 image=http://magiccards.info/scans/en/pvc/28.jpg
-value=2.500
+value=2.612
 rarity=U
 type=Artifact
 cost={4}

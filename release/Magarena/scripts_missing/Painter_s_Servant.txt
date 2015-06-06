@@ -1,6 +1,6 @@
 name=Painter's Servant
 image=http://magiccards.info/scans/en/shm/257.jpg
-value=2.500
+value=4.583
 rarity=R
 type=Artifact,Creature
 subtype=Scarecrow

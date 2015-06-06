@@ -1,6 +1,6 @@
 name=Search Warrant
 image=http://magiccards.info/scans/en/rtr/193.jpg
-value=2.500
+value=1.926
 rarity=C
 type=Sorcery
 cost={W}{U}

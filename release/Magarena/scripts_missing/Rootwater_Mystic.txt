@@ -1,6 +1,6 @@
 name=Rootwater Mystic
 image=http://magiccards.info/scans/en/ex/44.jpg
-value=2.500
+value=2.538
 rarity=C
 type=Creature
 subtype=Merfolk,Wizard

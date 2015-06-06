@@ -1,6 +1,6 @@
 name=Goblin Flotilla
 image=http://magiccards.info/scans/en/fe/113.jpg
-value=2.500
+value=2.712
 rarity=R
 type=Creature
 subtype=Goblin

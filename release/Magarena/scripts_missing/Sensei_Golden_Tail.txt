@@ -1,6 +1,6 @@
 name=Sensei Golden-Tail
 image=http://magiccards.info/scans/en/chk/44.jpg
-value=2.500
+value=3.909
 rarity=R
 type=Legendary,Creature
 subtype=Fox,Samurai

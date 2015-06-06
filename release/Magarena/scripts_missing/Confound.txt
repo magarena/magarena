@@ -1,6 +1,6 @@
 name=Confound
 image=http://magiccards.info/scans/en/ps/22.jpg
-value=2.500
+value=4.070
 rarity=C
 type=Instant
 cost={1}{U}

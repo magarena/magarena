@@ -1,6 +1,6 @@
 name=Engineered Explosives
 image=http://magiccards.info/scans/en/mma/204.jpg
-value=2.500
+value=4.227
 rarity=R
 type=Artifact
 cost={X}

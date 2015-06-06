@@ -1,6 +1,6 @@
 name=Chill of Foreboding
 image=http://magiccards.info/scans/en/dka/32.jpg
-value=2.500
+value=2.833
 rarity=U
 type=Sorcery
 cost={2}{U}

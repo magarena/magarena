@@ -1,6 +1,6 @@
 name=Living Wish
 image=http://magiccards.info/scans/en/ju/124.jpg
-value=2.500
+value=4.385
 rarity=R
 type=Sorcery
 cost={1}{G}

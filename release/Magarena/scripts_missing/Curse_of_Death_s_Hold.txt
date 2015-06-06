@@ -1,6 +1,6 @@
 name=Curse of Death's Hold
 image=http://magiccards.info/scans/en/isd/94.jpg
-value=2.500
+value=3.827
 rarity=R
 type=Enchantment
 subtype=Aura,Curse

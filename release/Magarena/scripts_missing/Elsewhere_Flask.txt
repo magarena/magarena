@@ -1,6 +1,6 @@
 name=Elsewhere Flask
 image=http://magiccards.info/scans/en/shm/250.jpg
-value=2.500
+value=3.050
 rarity=C
 type=Artifact
 cost={2}

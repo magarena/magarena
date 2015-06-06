@@ -1,6 +1,6 @@
 name=Brass Herald
 image=http://magiccards.info/scans/en/8e/293.jpg
-value=2.500
+value=3.413
 rarity=R
 type=Artifact,Creature
 subtype=Golem

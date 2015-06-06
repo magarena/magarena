@@ -1,6 +1,6 @@
 name=Siren's Call
 image=http://magiccards.info/scans/en/4e/101.jpg
-value=2.500
+value=4.071
 rarity=U
 type=Instant
 cost={U}

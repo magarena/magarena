@@ -1,6 +1,6 @@
 name=Return of the Nightstalkers
 image=http://magiccards.info/scans/en/po2/28.jpg
-value=2.500
+value=2.351
 rarity=R
 type=Sorcery
 cost={5}{B}{B}

@@ -1,6 +1,6 @@
 name=Venarian Glimmer
 image=http://magiccards.info/scans/en/pc/52.jpg
-value=2.500
+value=2.843
 rarity=U
 type=Instant
 cost={X}{U}

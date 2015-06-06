@@ -1,6 +1,6 @@
 name=Petradon
 image=http://magiccards.info/scans/en/tr/108.jpg
-value=2.500
+value=3.879
 rarity=R
 type=Creature
 subtype=Nightmare,Beast

@@ -1,6 +1,6 @@
 name=Ignition Team
 image=http://magiccards.info/scans/en/cns/34.jpg
-value=2.500
+value=3.700
 rarity=R
 type=Creature
 subtype=Goblin,Warrior

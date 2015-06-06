@@ -1,6 +1,6 @@
 name=Phyrexian Portal
 image=http://magiccards.info/scans/en/me2/217.jpg
-value=2.500
+value=3.603
 rarity=R
 type=Artifact
 cost={3}

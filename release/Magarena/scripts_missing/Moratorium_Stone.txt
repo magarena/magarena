@@ -1,6 +1,6 @@
 name=Moratorium Stone
 image=http://magiccards.info/scans/en/gp/154.jpg
-value=2.500
+value=3.371
 rarity=R
 type=Artifact
 cost={1}

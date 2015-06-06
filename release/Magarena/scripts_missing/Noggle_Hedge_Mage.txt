@@ -1,6 +1,6 @@
 name=Noggle Hedge-Mage
 image=http://magiccards.info/scans/en/eve/108.jpg
-value=2.500
+value=3.293
 rarity=U
 type=Creature
 subtype=Noggle,Wizard

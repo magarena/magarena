@@ -1,6 +1,6 @@
 name=Naked Singularity
 image=http://magiccards.info/scans/en/me4/216.jpg
-value=2.500
+value=4.081
 rarity=R
 type=Artifact
 cost={5}

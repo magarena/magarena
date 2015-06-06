@@ -1,6 +1,6 @@
 name=Thieving Sprite
 image=http://magiccards.info/scans/en/mma/101.jpg
-value=2.500
+value=3.077
 rarity=C
 type=Creature
 subtype=Faerie,Rogue

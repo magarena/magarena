@@ -1,6 +1,6 @@
 name=Phyrexian Splicer
 image=http://magiccards.info/scans/en/tp/293.jpg
-value=2.500
+value=3.432
 rarity=U
 type=Artifact
 cost={2}

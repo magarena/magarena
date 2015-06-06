@@ -1,6 +1,6 @@
 name=Cunning Wish
 image=http://magiccards.info/scans/en/ju/37.jpg
-value=2.500
+value=4.529
 rarity=R
 type=Instant
 cost={2}{U}

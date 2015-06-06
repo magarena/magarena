@@ -1,6 +1,6 @@
 name=Corpse Harvester
 image=http://magiccards.info/scans/en/pch/22.jpg
-value=2.500
+value=3.851
 rarity=U
 type=Creature
 subtype=Zombie,Wizard

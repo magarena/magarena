@@ -1,6 +1,6 @@
 name=Cruel Sadist
 image=http://magiccards.info/scans/en/m15/93.jpg
-value=2.500
+value=3.333
 rarity=R
 type=Creature
 subtype=Human,Assassin

@@ -1,6 +1,6 @@
 name=Jade Monolith
 image=http://magiccards.info/scans/en/me4/208.jpg
-value=2.500
+value=3.037
 rarity=R
 type=Artifact
 cost={4}

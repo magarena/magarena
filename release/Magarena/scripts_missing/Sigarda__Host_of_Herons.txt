@@ -1,6 +1,6 @@
 name=Sigarda, Host of Herons
 image=http://magiccards.info/scans/en/avr/210.jpg
-value=2.500
+value=3.977
 rarity=M
 type=Legendary,Creature
 subtype=Angel

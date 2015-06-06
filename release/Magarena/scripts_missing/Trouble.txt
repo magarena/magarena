@@ -1,6 +1,6 @@
 name=Trouble
 image=http://magiccards.info/scans/en/dgm/133b.jpg
-value=2.500
+value=4.026
 rarity=U
 type=Sorcery
 cost={2}{R}

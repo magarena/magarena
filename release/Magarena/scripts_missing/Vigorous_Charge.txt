@@ -1,6 +1,6 @@
 name=Vigorous Charge
 image=http://magiccards.info/scans/en/in/222.jpg
-value=2.500
+value=3.431
 rarity=C
 type=Instant
 cost={G}

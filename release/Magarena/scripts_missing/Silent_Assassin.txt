@@ -1,6 +1,6 @@
 name=Silent Assassin
 image=http://magiccards.info/scans/en/mm/160.jpg
-value=2.500
+value=3.066
 rarity=R
 type=Creature
 subtype=Human,Mercenary,Assassin

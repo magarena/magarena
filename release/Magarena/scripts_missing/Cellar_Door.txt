@@ -1,6 +1,6 @@
 name=Cellar Door
 image=http://magiccards.info/scans/en/isd/218.jpg
-value=2.500
+value=3.067
 rarity=U
 type=Artifact
 cost={2}

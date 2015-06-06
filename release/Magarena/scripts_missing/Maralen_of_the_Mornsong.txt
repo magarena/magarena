@@ -1,6 +1,6 @@
 name=Maralen of the Mornsong
 image=http://magiccards.info/scans/en/mt/65.jpg
-value=2.500
+value=3.765
 rarity=R
 type=Legendary,Creature
 subtype=Elf,Wizard

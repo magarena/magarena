@@ -1,6 +1,6 @@
 name=Thunderscape Battlemage
 image=http://magiccards.info/scans/en/pvc/41.jpg
-value=2.500
+value=3.783
 rarity=U
 type=Creature
 subtype=Human,Wizard

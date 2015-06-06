@@ -1,6 +1,6 @@
 name=Bloodbond March
 image=http://magiccards.info/scans/en/rav/192.jpg
-value=2.500
+value=3.862
 rarity=R
 type=Enchantment
 cost={2}{B}{G}

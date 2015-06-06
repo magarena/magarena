@@ -1,6 +1,6 @@
 name=Stormscale Anarch
 image=http://magiccards.info/scans/en/di/74.jpg
-value=2.500
+value=2.843
 rarity=R
 type=Creature
 subtype=Viashino,Shaman

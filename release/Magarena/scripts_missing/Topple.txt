@@ -1,6 +1,6 @@
 name=Topple
 image=http://magiccards.info/scans/en/ne/24.jpg
-value=2.500
+value=3.654
 rarity=C
 type=Sorcery
 cost={2}{W}

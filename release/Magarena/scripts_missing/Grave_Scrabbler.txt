@@ -1,6 +1,6 @@
 name=Grave Scrabbler
 image=http://magiccards.info/scans/en/fut/86.jpg
-value=2.500
+value=3.227
 rarity=C
 type=Creature
 subtype=Zombie

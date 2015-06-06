@@ -1,6 +1,6 @@
 name=Stain the Mind
 image=http://magiccards.info/scans/en/m15/117.jpg
-value=2.500
+value=2.333
 rarity=R
 type=Sorcery
 cost={4}{B}

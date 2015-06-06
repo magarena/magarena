@@ -1,6 +1,6 @@
 name=Descent into Madness
 image=http://magiccards.info/scans/en/avr/97.jpg
-value=2.500
+value=3.125
 rarity=M
 type=Enchantment
 cost={3}{B}{B}

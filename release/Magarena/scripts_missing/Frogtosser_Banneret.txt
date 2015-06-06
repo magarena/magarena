@@ -1,6 +1,6 @@
 name=Frogtosser Banneret
 image=http://magiccards.info/scans/en/mt/64.jpg
-value=2.500
+value=3.713
 rarity=C
 type=Creature
 subtype=Goblin,Rogue

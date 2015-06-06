@@ -1,6 +1,6 @@
 name=Llanowar Empath
 image=http://magiccards.info/scans/en/fut/130.jpg
-value=2.500
+value=2.569
 rarity=C
 type=Creature
 subtype=Elf,Shaman

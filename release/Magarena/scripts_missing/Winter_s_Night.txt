@@ -1,6 +1,6 @@
 name=Winter's Night
 image=http://magiccards.info/scans/en/me2/200.jpg
-value=2.500
+value=2.536
 rarity=R
 type=World,Enchantment
 cost={R}{G}{W}

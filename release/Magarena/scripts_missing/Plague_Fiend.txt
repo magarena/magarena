@@ -1,6 +1,6 @@
 name=Plague Fiend
 image=http://magiccards.info/scans/en/pr/73.jpg
-value=2.500
+value=2.717
 rarity=C
 type=Creature
 subtype=Insect

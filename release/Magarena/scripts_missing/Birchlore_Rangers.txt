@@ -1,6 +1,6 @@
 name=Birchlore Rangers
 image=http://magiccards.info/scans/en/on/248.jpg
-value=2.500
+value=3.658
 rarity=C
 type=Creature
 subtype=Elf,Druid

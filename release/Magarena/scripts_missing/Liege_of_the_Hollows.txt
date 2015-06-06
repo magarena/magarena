@@ -1,6 +1,6 @@
 name=Liege of the Hollows
 image=http://magiccards.info/scans/en/wl/73.jpg
-value=2.500
+value=3.671
 rarity=R
 type=Creature
 subtype=Spirit

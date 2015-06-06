@@ -1,6 +1,6 @@
 name=Wellgabber Apothecary
 image=http://magiccards.info/scans/en/lw/47.jpg
-value=2.500
+value=2.000
 rarity=C
 type=Creature
 subtype=Merfolk,Cleric

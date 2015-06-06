@@ -1,6 +1,6 @@
 name=Sai of the Shinobi
 image=http://magiccards.info/scans/en/pc2/113.jpg
-value=2.500
+value=3.357
 rarity=U
 type=Artifact
 subtype=Equipment

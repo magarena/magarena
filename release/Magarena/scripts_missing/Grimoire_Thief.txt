@@ -1,6 +1,6 @@
 name=Grimoire Thief
 image=http://magiccards.info/scans/en/mt/35.jpg
-value=2.500
+value=4.326
 rarity=R
 type=Creature
 subtype=Merfolk,Rogue

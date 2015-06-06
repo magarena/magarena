@@ -1,6 +1,6 @@
 name=Rally the Horde
 image=http://magiccards.info/scans/en/sok/110.jpg
-value=2.500
+value=2.985
 rarity=R
 type=Sorcery
 cost={5}{R}

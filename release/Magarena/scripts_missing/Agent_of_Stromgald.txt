@@ -1,6 +1,6 @@
 name=Agent of Stromgald
 image=http://magiccards.info/scans/en/ai/95.jpg
-value=2.500
+value=3.737
 rarity=C
 type=Creature
 subtype=Human,Knight

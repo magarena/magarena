@@ -1,6 +1,6 @@
 name=Morsel Theft
 image=http://magiccards.info/scans/en/mt/68.jpg
-value=2.500
+value=3.532
 rarity=C
 type=Tribal,Sorcery
 subtype=Rogue

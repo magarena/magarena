@@ -1,6 +1,6 @@
 name=Teferi's Honor Guard
 image=http://magiccards.info/scans/en/vi/122.jpg
-value=2.500
+value=3.406
 rarity=U
 type=Creature
 subtype=Human,Knight

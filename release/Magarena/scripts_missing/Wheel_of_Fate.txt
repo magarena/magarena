@@ -1,6 +1,6 @@
 name=Wheel of Fate
 image=http://magiccards.info/scans/en/ts/187.jpg
-value=2.500
+value=3.652
 rarity=R
 type=Sorcery
 color=r

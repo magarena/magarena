@@ -1,6 +1,6 @@
 name=Sultai Ascendancy
 image=http://magiccards.info/scans/en/ktk/203.jpg
-value=2.500
+value=3.000
 rarity=R
 type=Enchantment
 cost={B}{G}{U}

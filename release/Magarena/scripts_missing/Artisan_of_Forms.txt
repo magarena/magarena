@@ -1,6 +1,6 @@
 name=Artisan of Forms
 image=http://magiccards.info/scans/en/ths/40.jpg
-value=2.500
+value=3.542
 rarity=R
 type=Creature
 subtype=Human,Wizard

@@ -1,6 +1,6 @@
 name=War Barge
 image=http://magiccards.info/scans/en/tsts/116.jpg
-value=2.500
+value=2.944
 rarity=U
 type=Artifact
 cost={4}

@@ -1,6 +1,6 @@
 name=Desertion
 image=http://magiccards.info/scans/en/cma/4.jpg
-value=2.500
+value=4.250
 rarity=R
 type=Instant
 cost={3}{U}{U}

@@ -1,6 +1,6 @@
 name=Aerial Caravan
 image=http://magiccards.info/scans/en/mm/58.jpg
-value=2.500
+value=2.943
 rarity=R
 type=Creature
 subtype=Human,Soldier

@@ -1,6 +1,6 @@
 name=Wirewood Channeler
 image=http://magiccards.info/scans/en/le/144.jpg
-value=2.500
+value=3.881
 rarity=U
 type=Creature
 subtype=Elf,Druid

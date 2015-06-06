@@ -1,6 +1,6 @@
 name=Kinscaer Harpoonist
 image=http://magiccards.info/scans/en/shm/41.jpg
-value=2.500
+value=2.050
 rarity=C
 type=Creature
 subtype=Kithkin,Soldier

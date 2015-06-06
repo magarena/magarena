@@ -1,6 +1,6 @@
 name=Squealing Devil
 image=http://magiccards.info/scans/en/di/72.jpg
-value=2.500
+value=3.276
 rarity=U
 type=Creature
 subtype=Devil

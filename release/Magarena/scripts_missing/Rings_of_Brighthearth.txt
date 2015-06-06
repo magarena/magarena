@@ -1,6 +1,6 @@
 name=Rings of Brighthearth
 image=http://magiccards.info/scans/en/lw/259.jpg
-value=2.500
+value=4.355
 rarity=R
 type=Artifact
 cost={3}

@@ -1,6 +1,6 @@
 name=Farrelite Priest
 image=http://magiccards.info/scans/en/fe/137.jpg
-value=2.500
+value=3.288
 rarity=U
 type=Creature
 subtype=Human,Cleric

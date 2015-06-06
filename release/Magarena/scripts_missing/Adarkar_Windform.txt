@@ -1,6 +1,6 @@
 name=Adarkar Windform
 image=http://magiccards.info/scans/en/cs/26.jpg
-value=2.500
+value=2.176
 rarity=U
 type=Snow,Creature
 subtype=Illusion

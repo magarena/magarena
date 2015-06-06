@@ -1,6 +1,6 @@
 name=Voracious Dragon
 image=http://magiccards.info/scans/en/ddg/56.jpg
-value=2.500
+value=2.929
 rarity=R
 type=Creature
 subtype=Dragon

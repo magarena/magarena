@@ -1,6 +1,6 @@
 name=Teferi's Drake
 image=http://magiccards.info/scans/en/mr/97.jpg
-value=2.500
+value=2.823
 rarity=C
 type=Creature
 subtype=Drake

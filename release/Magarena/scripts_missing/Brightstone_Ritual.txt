@@ -1,6 +1,6 @@
 name=Brightstone Ritual
 image=http://magiccards.info/scans/en/on/191.jpg
-value=2.500
+value=4.287
 rarity=C
 type=Instant
 cost={R}

@@ -1,6 +1,6 @@
 name=Anavolver
 image=http://magiccards.info/scans/en/ap/75.jpg
-value=2.500
+value=3.973
 rarity=R
 type=Creature
 subtype=Volver

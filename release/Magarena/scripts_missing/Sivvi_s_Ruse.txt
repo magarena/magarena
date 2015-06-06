@@ -1,6 +1,6 @@
 name=Sivvi's Ruse
 image=http://magiccards.info/scans/en/ne/21.jpg
-value=2.500
+value=3.466
 rarity=U
 type=Instant
 cost={2}{W}{W}

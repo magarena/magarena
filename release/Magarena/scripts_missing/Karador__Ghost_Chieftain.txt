@@ -1,6 +1,6 @@
 name=Karador, Ghost Chieftain
 image=http://magiccards.info/scans/en/cmd/207.jpg
-value=2.500
+value=4.043
 rarity=M
 type=Legendary,Creature
 subtype=Centaur,Spirit

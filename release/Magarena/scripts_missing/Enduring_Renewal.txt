@@ -1,6 +1,6 @@
 name=Enduring Renewal
 image=http://magiccards.info/scans/en/tsts/7.jpg
-value=2.500
+value=4.325
 rarity=R
 type=Enchantment
 cost={2}{W}{W}

@@ -1,6 +1,6 @@
 name=Sawtooth Thresher
 image=http://magiccards.info/scans/en/5dn/149.jpg
-value=2.500
+value=2.640
 rarity=C
 type=Artifact,Creature
 subtype=Construct

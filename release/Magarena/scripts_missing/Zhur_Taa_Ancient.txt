@@ -1,6 +1,6 @@
 name=Zhur-Taa Ancient
 image=http://magiccards.info/scans/en/dgm/119.jpg
-value=2.500
+value=3.814
 rarity=R
 type=Creature
 subtype=Beast

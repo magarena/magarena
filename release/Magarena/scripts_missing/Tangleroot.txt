@@ -1,6 +1,6 @@
 name=Tangleroot
 image=http://magiccards.info/scans/en/mi/259.jpg
-value=2.500
+value=3.600
 rarity=R
 type=Artifact
 cost={3}

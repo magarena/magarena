@@ -1,6 +1,6 @@
 name=Goblin Lyre
 image=http://magiccards.info/scans/en/ia/294.jpg
-value=2.500
+value=2.078
 rarity=R
 type=Artifact
 cost={3}

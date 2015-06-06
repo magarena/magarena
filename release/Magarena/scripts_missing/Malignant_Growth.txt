@@ -1,6 +1,6 @@
 name=Malignant Growth
 image=http://magiccards.info/scans/en/mr/332.jpg
-value=2.500
+value=2.603
 rarity=R
 type=Enchantment
 cost={3}{G}{U}

@@ -1,6 +1,6 @@
 name=Omen
 image=http://magiccards.info/scans/en/po/63.jpg
-value=2.500
+value=2.314
 rarity=C
 type=Sorcery
 cost={1}{U}

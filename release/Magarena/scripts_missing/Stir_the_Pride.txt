@@ -1,6 +1,6 @@
 name=Stir the Pride
 image=http://magiccards.info/scans/en/mma/30.jpg
-value=2.500
+value=3.143
 rarity=U
 type=Instant
 cost={4}{W}

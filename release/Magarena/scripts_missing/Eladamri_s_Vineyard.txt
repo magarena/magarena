@@ -1,6 +1,6 @@
 name=Eladamri's Vineyard
 image=http://magiccards.info/scans/en/tp/118.jpg
-value=2.500
+value=4.351
 rarity=R
 type=Enchantment
 cost={G}

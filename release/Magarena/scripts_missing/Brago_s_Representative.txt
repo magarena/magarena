@@ -1,6 +1,6 @@
 name=Brago's Representative
 image=http://magiccards.info/scans/en/cns/14.jpg
-value=2.500
+value=3.167
 rarity=C
 type=Creature
 subtype=Human,Advisor

@@ -1,6 +1,6 @@
 name=River Kelpie
 image=http://magiccards.info/scans/en/shm/49.jpg
-value=2.500
+value=4.180
 rarity=R
 type=Creature
 subtype=Beast

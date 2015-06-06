@@ -1,6 +1,6 @@
 name=Krovikan Whispers
 image=http://magiccards.info/scans/en/cs/39.jpg
-value=2.500
+value=1.803
 rarity=U
 type=Enchantment
 subtype=Aura

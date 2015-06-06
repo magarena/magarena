@@ -1,6 +1,6 @@
 name=Splitting Headache
 image=http://magiccards.info/scans/en/shm/79.jpg
-value=2.500
+value=2.750
 rarity=C
 type=Sorcery
 cost={3}{B}

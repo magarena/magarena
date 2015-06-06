@@ -1,6 +1,6 @@
 name=Moonring Island
 image=http://magiccards.info/scans/en/shm/276.jpg
-value=2.500
+value=2.438
 rarity=U
 type=Land
 subtype=Island

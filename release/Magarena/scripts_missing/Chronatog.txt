@@ -1,6 +1,6 @@
 name=Chronatog
 image=http://magiccards.info/scans/en/vi/28.jpg
-value=2.500
+value=3.890
 rarity=R
 type=Creature
 subtype=Atog

@@ -1,6 +1,6 @@
 name=Arcum's Whistle
 image=http://magiccards.info/scans/en/ia/286.jpg
-value=2.500
+value=2.161
 rarity=U
 type=Artifact
 cost={3}

@@ -1,6 +1,6 @@
 name=Rainbow Efreet
 image=http://magiccards.info/scans/en/vi/41.jpg
-value=2.500
+value=3.872
 rarity=R
 type=Creature
 subtype=Efreet

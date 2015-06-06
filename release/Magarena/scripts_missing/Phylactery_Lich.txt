@@ -1,6 +1,6 @@
 name=Phylactery Lich
 image=http://magiccards.info/scans/en/m13/104.jpg
-value=2.500
+value=3.670
 rarity=R
 type=Creature
 subtype=Zombie

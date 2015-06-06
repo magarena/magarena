@@ -1,6 +1,6 @@
 name=Darksteel Reactor
 image=http://magiccards.info/scans/en/ds/114.jpg
-value=2.500
+value=4.165
 rarity=R
 type=Artifact
 cost={4}

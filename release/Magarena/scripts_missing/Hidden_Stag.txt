@@ -1,6 +1,6 @@
 name=Hidden Stag
 image=http://magiccards.info/scans/en/us/265.jpg
-value=2.500
+value=3.845
 rarity=R
 type=Enchantment
 cost={1}{G}

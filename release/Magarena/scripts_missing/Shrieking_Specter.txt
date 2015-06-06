@@ -1,6 +1,6 @@
 name=Shrieking Specter
 image=http://magiccards.info/scans/en/st/89.jpg
-value=2.500
+value=1.354
 rarity=U
 type=Creature
 subtype=Specter

@@ -1,6 +1,6 @@
 name=Blood Cultist
 image=http://magiccards.info/scans/en/ala/157.jpg
-value=2.500
+value=2.984
 rarity=U
 type=Creature
 subtype=Human,Wizard

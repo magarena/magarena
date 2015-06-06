@@ -1,6 +1,6 @@
 name=Aphetto Dredging
 image=http://magiccards.info/scans/en/on/125.jpg
-value=2.500
+value=3.719
 rarity=C
 type=Sorcery
 cost={3}{B}

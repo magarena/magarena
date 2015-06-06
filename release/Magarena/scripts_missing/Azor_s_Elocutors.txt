@@ -1,6 +1,6 @@
 name=Azor's Elocutors
 image=http://magiccards.info/scans/en/rtr/210.jpg
-value=2.500
+value=3.591
 rarity=R
 type=Creature
 subtype=Human,Advisor

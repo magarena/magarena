@@ -1,6 +1,6 @@
 name=Mogg Jailer
 image=http://magiccards.info/scans/en/ps/68.jpg
-value=2.500
+value=2.640
 rarity=U
 type=Creature
 subtype=Goblin

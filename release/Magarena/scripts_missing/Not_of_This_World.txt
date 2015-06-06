@@ -1,6 +1,6 @@
 name=Not of This World
 image=http://magiccards.info/scans/en/roe/8.jpg
-value=2.500
+value=3.500
 rarity=U
 type=Tribal,Instant
 subtype=Eldrazi

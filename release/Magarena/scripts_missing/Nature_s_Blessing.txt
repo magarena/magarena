@@ -1,6 +1,6 @@
 name=Nature's Blessing
 image=http://magiccards.info/scans/en/me2/196.jpg
-value=2.500
+value=3.500
 rarity=U
 type=Enchantment
 cost={2}{G}{W}

@@ -1,6 +1,6 @@
 name=Soulless Revival
 image=http://magiccards.info/scans/en/chk/144.jpg
-value=2.500
+value=3.242
 rarity=C
 type=Instant
 subtype=Arcane

@@ -1,6 +1,6 @@
 name=Archetype of Imagination
 image=http://magiccards.info/scans/en/bng/32.jpg
-value=2.500
+value=3.837
 rarity=U
 type=Enchantment,Creature
 subtype=Human,Wizard

@@ -1,6 +1,6 @@
 name=Viridian Harvest
 image=http://magiccards.info/scans/en/nph/125.jpg
-value=2.500
+value=1.777
 rarity=C
 type=Enchantment
 subtype=Aura

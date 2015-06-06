@@ -1,6 +1,6 @@
 name=Jinx
 image=http://magiccards.info/scans/en/hl/36.jpg
-value=2.500
+value=2.588
 rarity=C
 type=Instant
 cost={1}{U}

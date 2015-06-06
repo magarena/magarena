@@ -1,6 +1,6 @@
 name=Cogwork Tracker
 image=http://magiccards.info/scans/en/cns/60.jpg
-value=2.500
+value=3.100
 rarity=U
 type=Artifact,Creature
 subtype=Hound,Construct

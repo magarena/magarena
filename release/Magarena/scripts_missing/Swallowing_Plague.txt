@@ -1,6 +1,6 @@
 name=Swallowing Plague
 image=http://magiccards.info/scans/en/chk/146.jpg
-value=2.500
+value=3.163
 rarity=U
 type=Sorcery
 subtype=Arcane

@@ -1,6 +1,6 @@
 name=Muzzio, Visionary Architect
 image=http://magiccards.info/scans/en/vma/82.jpg
-value=2.500
+value=4.219
 rarity=M
 type=Legendary,Creature
 subtype=Human,Artificer

@@ -1,6 +1,6 @@
 name=Duneblast
 image=http://magiccards.info/scans/en/ktk/174.jpg
-value=2.500
+value=3.833
 rarity=R
 type=Sorcery
 cost={4}{W}{B}{G}

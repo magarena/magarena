@@ -1,6 +1,6 @@
 name=Reward the Faithful
 image=http://magiccards.info/scans/en/sc/22.jpg
-value=2.500
+value=3.382
 rarity=U
 type=Instant
 cost={W}

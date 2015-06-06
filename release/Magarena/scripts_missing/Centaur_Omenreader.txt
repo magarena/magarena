@@ -1,6 +1,6 @@
 name=Centaur Omenreader
 image=http://magiccards.info/scans/en/fut/143.jpg
-value=2.500
+value=3.709
 rarity=U
 type=Snow,Creature
 subtype=Centaur,Shaman

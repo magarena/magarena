@@ -1,6 +1,6 @@
 name=Reset
 image=http://magiccards.info/scans/en/me3/48.jpg
-value=2.500
+value=4.489
 rarity=R
 type=Instant
 cost={U}{U}

@@ -1,6 +1,6 @@
 name=Witch-Maw Nephilim
 image=http://magiccards.info/scans/en/gp/138.jpg
-value=2.500
+value=4.109
 rarity=R
 type=Creature
 subtype=Nephilim

@@ -1,6 +1,6 @@
 name=Pillar of the Paruns
 image=http://magiccards.info/scans/en/di/176.jpg
-value=2.500
+value=4.145
 rarity=R
 type=Land
 ability={T}: Add one mana of any color to your mana pool. Spend this mana only to cast a multicolored spell.

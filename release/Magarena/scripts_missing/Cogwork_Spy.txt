@@ -1,6 +1,6 @@
 name=Cogwork Spy
 image=http://magiccards.info/scans/en/cns/59.jpg
-value=2.500
+value=2.600
 rarity=C
 type=Artifact,Creature
 subtype=Bird,Construct

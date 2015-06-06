@@ -1,6 +1,6 @@
 name=Prismatic Ward
 image=http://magiccards.info/scans/en/5e/329.jpg
-value=2.500
+value=3.022
 rarity=C
 type=Enchantment
 subtype=Aura

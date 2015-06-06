@@ -1,6 +1,6 @@
 name=Nirkana Revenant
 image=http://magiccards.info/scans/en/roe/120.jpg
-value=2.500
+value=4.251
 rarity=M
 type=Creature
 subtype=Vampire,Shade

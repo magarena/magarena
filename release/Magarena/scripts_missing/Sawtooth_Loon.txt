@@ -1,6 +1,6 @@
 name=Sawtooth Loon
 image=http://magiccards.info/scans/en/ddi/17.jpg
-value=2.500
+value=3.714
 rarity=U
 type=Creature
 subtype=Bird

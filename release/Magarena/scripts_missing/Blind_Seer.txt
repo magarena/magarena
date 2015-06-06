@@ -1,6 +1,6 @@
 name=Blind Seer
 image=http://magiccards.info/scans/en/in/47.jpg
-value=2.500
+value=3.550
 rarity=R
 type=Legendary,Creature
 subtype=Human,Wizard

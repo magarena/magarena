@@ -1,6 +1,6 @@
 name=Floodwater Dam
 image=http://magiccards.info/scans/en/me4/200.jpg
-value=2.500
+value=2.400
 rarity=R
 type=Artifact
 cost={3}

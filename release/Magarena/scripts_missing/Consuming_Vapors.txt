@@ -1,6 +1,6 @@
 name=Consuming Vapors
 image=http://magiccards.info/scans/en/roe/101.jpg
-value=2.500
+value=4.276
 rarity=R
 type=Sorcery
 cost={3}{B}

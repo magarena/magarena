@@ -1,6 +1,6 @@
 name=Archangel of Strife
 image=http://magiccards.info/scans/en/cmd/7.jpg
-value=2.500
+value=3.775
 rarity=R
 type=Creature
 subtype=Angel

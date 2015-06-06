@@ -1,6 +1,6 @@
 name=Unexpected Results
 image=http://magiccards.info/scans/en/gtc/203.jpg
-value=2.500
+value=3.512
 rarity=R
 type=Sorcery
 cost={2}{G}{U}

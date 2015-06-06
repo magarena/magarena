@@ -1,6 +1,6 @@
 name=Truce
 image=http://magiccards.info/scans/en/5e/341.jpg
-value=2.500
+value=3.226
 rarity=R
 type=Instant
 cost={2}{W}

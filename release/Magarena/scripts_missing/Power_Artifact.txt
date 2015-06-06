@@ -1,6 +1,6 @@
 name=Power Artifact
 image=http://magiccards.info/scans/en/me4/57.jpg
-value=2.500
+value=4.475
 rarity=R
 type=Enchantment
 subtype=Aura

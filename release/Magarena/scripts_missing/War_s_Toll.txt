@@ -1,6 +1,6 @@
 name=War's Toll
 image=http://magiccards.info/scans/en/di/77.jpg
-value=2.500
+value=3.778
 rarity=R
 type=Enchantment
 cost={3}{R}

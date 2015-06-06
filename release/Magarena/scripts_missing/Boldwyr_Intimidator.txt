@@ -1,6 +1,6 @@
 name=Boldwyr Intimidator
 image=http://magiccards.info/scans/en/cns/137.jpg
-value=2.500
+value=3.500
 rarity=U
 type=Creature
 subtype=Giant,Warrior

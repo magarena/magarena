@@ -1,6 +1,6 @@
 name=Mana-Charged Dragon
 image=http://magiccards.info/scans/en/cmd/129.jpg
-value=2.500
+value=3.800
 rarity=R
 type=Creature
 subtype=Dragon

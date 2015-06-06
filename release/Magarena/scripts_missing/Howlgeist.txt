@@ -1,6 +1,6 @@
 name=Howlgeist
 image=http://magiccards.info/scans/en/avr/182.jpg
-value=2.500
+value=3.059
 rarity=U
 type=Creature
 subtype=Spirit,Wolf

@@ -1,6 +1,6 @@
 name=Kalonian Twingrove
 image=http://magiccards.info/scans/en/m15/182.jpg
-value=2.500
+value=3.083
 rarity=R
 type=Creature
 subtype=Treefolk,Warrior

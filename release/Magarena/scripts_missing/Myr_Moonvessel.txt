@@ -1,6 +1,6 @@
 name=Myr Moonvessel
 image=http://magiccards.info/scans/en/ds/133.jpg
-value=2.500
+value=3.577
 rarity=C
 type=Artifact,Creature
 subtype=Myr

@@ -1,6 +1,6 @@
 name=Ransack
 image=http://magiccards.info/scans/en/st/47.jpg
-value=2.500
+value=3.452
 rarity=R
 type=Sorcery
 cost={3}{U}

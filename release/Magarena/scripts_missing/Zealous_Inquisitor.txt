@@ -1,6 +1,6 @@
 name=Zealous Inquisitor
 image=http://magiccards.info/scans/en/9e/57.jpg
-value=2.500
+value=3.066
 rarity=U
 type=Creature
 subtype=Human,Cleric

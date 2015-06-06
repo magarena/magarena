@@ -1,6 +1,6 @@
 name=Turbulent Dreams
 image=http://magiccards.info/scans/en/tr/49.jpg
-value=2.500
+value=3.537
 rarity=R
 type=Sorcery
 cost={U}{U}

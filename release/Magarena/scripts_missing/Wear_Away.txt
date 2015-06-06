@@ -1,6 +1,6 @@
 name=Wear Away
 image=http://magiccards.info/scans/en/chk/250.jpg
-value=2.500
+value=3.076
 rarity=C
 type=Instant
 subtype=Arcane

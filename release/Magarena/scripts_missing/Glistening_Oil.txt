@@ -1,6 +1,6 @@
 name=Glistening Oil
 image=http://magiccards.info/scans/en/nph/62.jpg
-value=2.500
+value=3.051
 rarity=R
 type=Enchantment
 subtype=Aura

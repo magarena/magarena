@@ -1,6 +1,6 @@
 name=Soulblast
 image=http://magiccards.info/scans/en/10e/236.jpg
-value=2.500
+value=3.940
 rarity=R
 type=Instant
 cost={3}{R}{R}{R}

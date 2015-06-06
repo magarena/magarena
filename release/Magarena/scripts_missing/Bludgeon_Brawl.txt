@@ -1,6 +1,6 @@
 name=Bludgeon Brawl
 image=http://magiccards.info/scans/en/nph/80.jpg
-value=2.500
+value=3.191
 rarity=R
 type=Enchantment
 cost={2}{R}

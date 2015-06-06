@@ -1,6 +1,6 @@
 name=Runic Repetition
 image=http://magiccards.info/scans/en/isd/72.jpg
-value=2.500
+value=3.621
 rarity=U
 type=Sorcery
 cost={2}{U}

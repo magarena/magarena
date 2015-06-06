@@ -1,6 +1,6 @@
 name=Seize the Day
 image=http://magiccards.info/scans/en/od/220.jpg
-value=2.500
+value=4.048
 rarity=R
 type=Sorcery
 cost={3}{R}

@@ -1,6 +1,6 @@
 name=Moonmist
 image=http://magiccards.info/scans/en/isd/195.jpg
-value=2.500
+value=3.880
 rarity=C
 type=Instant
 cost={1}{G}

@@ -1,6 +1,6 @@
 name=Orcish Mine
 image=http://magiccards.info/scans/en/hl/98.jpg
-value=2.500
+value=1.838
 rarity=U
 type=Enchantment
 subtype=Aura

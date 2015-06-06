@@ -1,6 +1,6 @@
 name=Bloodthirsty Ogre
 image=http://magiccards.info/scans/en/chk/104.jpg
-value=2.500
+value=2.757
 rarity=U
 type=Creature
 subtype=Ogre,Warrior,Shaman

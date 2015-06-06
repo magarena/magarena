@@ -1,6 +1,6 @@
 name=Chaotic Strike
 image=http://magiccards.info/scans/en/in/140.jpg
-value=2.500
+value=1.324
 rarity=U
 type=Instant
 cost={1}{R}

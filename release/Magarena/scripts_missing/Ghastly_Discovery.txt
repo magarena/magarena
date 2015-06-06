@@ -1,6 +1,6 @@
 name=Ghastly Discovery
 image=http://magiccards.info/scans/en/shm/39.jpg
-value=2.500
+value=2.737
 rarity=C
 type=Sorcery
 cost={2}{U}

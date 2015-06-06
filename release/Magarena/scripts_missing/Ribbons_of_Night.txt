@@ -1,6 +1,6 @@
 name=Ribbons of Night
 image=http://magiccards.info/scans/en/rav/101.jpg
-value=2.500
+value=3.426
 rarity=U
 type=Sorcery
 cost={4}{B}

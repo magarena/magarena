@@ -1,6 +1,6 @@
 name=Brand of Ill Omen
 image=http://magiccards.info/scans/en/ia/177.jpg
-value=2.500
+value=3.630
 rarity=R
 type=Enchantment
 subtype=Aura

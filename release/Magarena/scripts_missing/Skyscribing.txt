@@ -1,6 +1,6 @@
 name=Skyscribing
 image=http://magiccards.info/scans/en/c13/57.jpg
-value=2.500
+value=3.679
 rarity=U
 type=Sorcery
 cost={X}{U}{U}

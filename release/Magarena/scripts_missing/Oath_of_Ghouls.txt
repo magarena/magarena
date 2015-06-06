@@ -1,6 +1,6 @@
 name=Oath of Ghouls
 image=http://magiccards.info/scans/en/ex/69.jpg
-value=2.500
+value=3.886
 rarity=R
 type=Enchantment
 cost={1}{B}

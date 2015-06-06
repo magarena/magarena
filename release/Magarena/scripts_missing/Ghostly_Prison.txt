@@ -1,6 +1,6 @@
 name=Ghostly Prison
 image=http://magiccards.info/scans/en/pc2/7.jpg
-value=2.500
+value=4.130
 rarity=U
 type=Enchantment
 cost={2}{W}

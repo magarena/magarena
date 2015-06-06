@@ -1,6 +1,6 @@
 name=Lurebound Scarecrow
 image=http://magiccards.info/scans/en/shm/256.jpg
-value=2.500
+value=3.346
 rarity=U
 type=Artifact,Creature
 subtype=Scarecrow

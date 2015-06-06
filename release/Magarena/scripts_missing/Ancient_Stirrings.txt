@@ -1,6 +1,6 @@
 name=Ancient Stirrings
 image=http://magiccards.info/scans/en/roe/174.jpg
-value=2.500
+value=4.182
 rarity=C
 type=Sorcery
 cost={G}

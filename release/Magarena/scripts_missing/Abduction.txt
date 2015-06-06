@@ -1,6 +1,6 @@
 name=Abduction
 image=http://magiccards.info/scans/en/6e/55.jpg
-value=2.500
+value=3.511
 rarity=U
 type=Enchantment
 subtype=Aura

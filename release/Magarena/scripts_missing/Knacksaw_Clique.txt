@@ -1,6 +1,6 @@
 name=Knacksaw Clique
 image=http://magiccards.info/scans/en/shm/42.jpg
-value=2.500
+value=3.481
 rarity=R
 type=Creature
 subtype=Faerie,Rogue

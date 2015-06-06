@@ -1,6 +1,6 @@
 name=Veteran Explorer
 image=http://magiccards.info/scans/en/cmd/177.jpg
-value=2.500
+value=3.617
 rarity=U
 type=Creature
 subtype=Human,Soldier,Scout

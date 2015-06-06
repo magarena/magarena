@@ -1,6 +1,6 @@
 name=Dust Elemental
 image=http://magiccards.info/scans/en/pc/5.jpg
-value=2.500
+value=4.128
 rarity=R
 type=Creature
 subtype=Elemental

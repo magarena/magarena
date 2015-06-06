@@ -1,6 +1,6 @@
 name=Endless Whispers
 image=http://magiccards.info/scans/en/5dn/49.jpg
-value=2.500
+value=4.071
 rarity=R
 type=Enchantment
 cost={2}{B}{B}

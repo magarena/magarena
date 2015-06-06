@@ -1,6 +1,6 @@
 name=Aerial Formation
 image=http://magiccards.info/scans/en/jou/30.jpg
-value=2.500
+value=2.583
 rarity=C
 type=Instant
 cost={U}

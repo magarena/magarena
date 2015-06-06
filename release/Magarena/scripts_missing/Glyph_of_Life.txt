@@ -1,6 +1,6 @@
 name=Glyph of Life
 image=http://magiccards.info/scans/en/lg/184.jpg
-value=2.500
+value=2.030
 rarity=C
 type=Instant
 cost={W}

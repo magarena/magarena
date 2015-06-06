@@ -1,6 +1,6 @@
 name=Grifter's Blade
 image=http://magiccards.info/scans/en/rav/263.jpg
-value=2.500
+value=2.378
 rarity=U
 type=Artifact
 subtype=Equipment

@@ -1,6 +1,6 @@
 name=Serra's Hymn
 image=http://magiccards.info/scans/en/us/48.jpg
-value=2.500
+value=2.097
 rarity=U
 type=Enchantment
 cost={W}

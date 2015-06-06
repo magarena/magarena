@@ -1,6 +1,6 @@
 name=Excise
 image=http://magiccards.info/scans/en/pr/8.jpg
-value=2.500
+value=3.394
 rarity=C
 type=Instant
 cost={X}{W}

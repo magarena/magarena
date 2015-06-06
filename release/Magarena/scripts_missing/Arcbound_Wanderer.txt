@@ -1,6 +1,6 @@
 name=Arcbound Wanderer
 image=http://magiccards.info/scans/en/mma/200.jpg
-value=2.500
+value=2.844
 rarity=C
 type=Artifact,Creature
 subtype=Golem

@@ -1,6 +1,6 @@
 name=Skybind
 image=http://magiccards.info/scans/en/jou/25.jpg
-value=2.500
+value=2.773
 rarity=R
 type=Enchantment
 cost={3}{W}{W}

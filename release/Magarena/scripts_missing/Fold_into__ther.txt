@@ -1,6 +1,6 @@
 name=Fold into Æther
 image=http://magiccards.info/scans/en/5dn/31.jpg
-value=2.500
+value=2.300
 rarity=U
 type=Instant
 cost={2}{U}{U}

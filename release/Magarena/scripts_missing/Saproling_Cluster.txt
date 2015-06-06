@@ -1,6 +1,6 @@
 name=Saproling Cluster
 image=http://magiccards.info/scans/en/ne/114.jpg
-value=2.500
+value=2.771
 rarity=R
 type=Enchantment
 cost={1}{G}

@@ -1,6 +1,6 @@
 name=Spreading Plague
 image=http://magiccards.info/scans/en/in/125.jpg
-value=2.500
+value=4.105
 rarity=R
 type=Enchantment
 cost={4}{B}

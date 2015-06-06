@@ -1,6 +1,6 @@
 name=Unwilling Recruit
 image=http://magiccards.info/scans/en/eve/64.jpg
-value=2.500
+value=3.481
 rarity=U
 type=Sorcery
 cost={X}{R}{R}{R}

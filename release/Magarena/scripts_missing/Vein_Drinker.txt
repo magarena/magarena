@@ -1,6 +1,6 @@
 name=Vein Drinker
 image=http://magiccards.info/scans/en/ala/91.jpg
-value=2.500
+value=3.313
 rarity=R
 type=Creature
 subtype=Vampire

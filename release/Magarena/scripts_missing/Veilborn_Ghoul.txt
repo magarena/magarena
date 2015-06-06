@@ -1,6 +1,6 @@
 name=Veilborn Ghoul
 image=http://magiccards.info/scans/en/m13/114.jpg
-value=2.500
+value=2.512
 rarity=U
 type=Creature
 subtype=Zombie

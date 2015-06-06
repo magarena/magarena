@@ -1,6 +1,6 @@
 name=Inkfathom Divers
 image=http://magiccards.info/scans/en/lw/70.jpg
-value=2.500
+value=2.450
 rarity=C
 type=Creature
 subtype=Merfolk,Soldier

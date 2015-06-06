@@ -1,6 +1,6 @@
 name=Jeweled Torque
 image=http://magiccards.info/scans/en/mm/301.jpg
-value=2.500
+value=2.630
 rarity=U
 type=Artifact
 cost={2}

@@ -1,6 +1,6 @@
 name=Flaming Gambit
 image=http://magiccards.info/scans/en/tr/98.jpg
-value=2.500
+value=1.909
 rarity=U
 type=Instant
 cost={X}{R}

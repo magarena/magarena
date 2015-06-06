@@ -1,6 +1,6 @@
 name=Jungle Patrol
 image=http://magiccards.info/scans/en/mr/121.jpg
-value=2.500
+value=3.449
 rarity=R
 type=Creature
 subtype=Human,Soldier

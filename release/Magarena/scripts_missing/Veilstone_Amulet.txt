@@ -1,6 +1,6 @@
 name=Veilstone Amulet
 image=http://magiccards.info/scans/en/fut/166.jpg
-value=2.500
+value=3.808
 rarity=R
 type=Artifact
 cost={3}

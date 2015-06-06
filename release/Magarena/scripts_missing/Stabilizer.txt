@@ -1,6 +1,6 @@
 name=Stabilizer
 image=http://magiccards.info/scans/en/sc/142.jpg
-value=2.500
+value=1.886
 rarity=R
 type=Artifact
 cost={2}

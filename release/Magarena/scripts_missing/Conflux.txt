@@ -1,6 +1,6 @@
 name=Conflux
 image=http://magiccards.info/scans/en/cfx/102.jpg
-value=2.500
+value=3.049
 rarity=M
 type=Sorcery
 cost={3}{W}{U}{B}{R}{G}

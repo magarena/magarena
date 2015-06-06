@@ -1,6 +1,6 @@
 name=Predatory Advantage
 image=http://magiccards.info/scans/en/arb/58.jpg
-value=2.500
+value=2.878
 rarity=R
 type=Enchantment
 cost={3}{R}{G}

@@ -1,6 +1,6 @@
 name=Wojek Siren
 image=http://magiccards.info/scans/en/rav/37.jpg
-value=2.500
+value=1.881
 rarity=C
 type=Instant
 cost={W}

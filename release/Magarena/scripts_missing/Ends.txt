@@ -1,6 +1,6 @@
 name=Ends
 image=http://magiccards.info/scans/en/di/153b.jpg
-value=2.500
+value=4.000
 rarity=R
 type=Instant
 cost={3}{R}{W}

@@ -1,6 +1,6 @@
 name=Clear the Land
 image=http://magiccards.info/scans/en/mm/235.jpg
-value=2.500
+value=3.750
 rarity=R
 type=Sorcery
 cost={2}{G}

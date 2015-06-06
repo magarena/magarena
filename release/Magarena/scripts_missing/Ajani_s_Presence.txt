@@ -1,6 +1,6 @@
 name=Ajani's Presence
 image=http://magiccards.info/scans/en/jou/2.jpg
-value=2.500
+value=3.603
 rarity=C
 type=Instant
 cost={W}

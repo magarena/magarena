@@ -1,6 +1,6 @@
 name=Gitaxian Probe
 image=http://magiccards.info/scans/en/nph/35.jpg
-value=2.500
+value=4.348
 rarity=C
 type=Sorcery
 cost={U/P}

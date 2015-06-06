@@ -1,6 +1,6 @@
 name=Excruciator
 image=http://magiccards.info/scans/en/rav/121.jpg
-value=2.500
+value=3.181
 rarity=R
 type=Creature
 subtype=Avatar

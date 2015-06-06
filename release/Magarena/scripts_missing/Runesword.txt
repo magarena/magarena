@@ -1,6 +1,6 @@
 name=Runesword
 image=http://magiccards.info/scans/en/ch/86.jpg
-value=2.500
+value=1.254
 rarity=C
 type=Artifact
 cost={6}

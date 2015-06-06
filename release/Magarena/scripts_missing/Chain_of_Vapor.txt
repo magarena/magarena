@@ -1,6 +1,6 @@
 name=Chain of Vapor
 image=http://magiccards.info/scans/en/on/73.jpg
-value=2.500
+value=4.456
 rarity=U
 type=Instant
 cost={U}

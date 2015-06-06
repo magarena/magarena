@@ -1,6 +1,6 @@
 name=Anurid Scavenger
 image=http://magiccards.info/scans/en/tr/119.jpg
-value=2.500
+value=3.714
 rarity=U
 type=Creature
 subtype=Frog,Beast

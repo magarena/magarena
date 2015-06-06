@@ -1,6 +1,6 @@
 name=Ancient Tomb
 image=http://magiccards.info/scans/en/vma/289.jpg
-value=2.500
+value=4.333
 rarity=R
 type=Land
 ability={T}: Add {2} to your mana pool. SN deals 2 damage to you.

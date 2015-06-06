@@ -1,6 +1,6 @@
 name=Living Destiny
 image=http://magiccards.info/scans/en/roe/195.jpg
-value=2.500
+value=2.171
 rarity=C
 type=Instant
 cost={3}{G}

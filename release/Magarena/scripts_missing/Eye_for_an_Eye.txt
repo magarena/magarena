@@ -1,6 +1,6 @@
 name=Eye for an Eye
 image=http://magiccards.info/scans/en/me4/12.jpg
-value=2.500
+value=3.750
 rarity=R
 type=Instant
 cost={W}{W}

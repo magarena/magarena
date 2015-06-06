@@ -1,6 +1,6 @@
 name=Predator's Howl
 image=http://magiccards.info/scans/en/cns/37.jpg
-value=2.500
+value=3.611
 rarity=U
 type=Instant
 cost={3}{G}

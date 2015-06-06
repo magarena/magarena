@@ -1,6 +1,6 @@
 name=Prey Upon
 image=http://magiccards.info/scans/en/ddl/62.jpg
-value=2.500
+value=3.906
 rarity=C
 type=Sorcery
 cost={G}

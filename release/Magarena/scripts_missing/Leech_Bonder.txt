@@ -1,6 +1,6 @@
 name=Leech Bonder
 image=http://magiccards.info/scans/en/shm/43.jpg
-value=2.500
+value=3.491
 rarity=U
 type=Creature
 subtype=Merfolk,Soldier

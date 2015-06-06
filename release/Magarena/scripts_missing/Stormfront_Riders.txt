@@ -1,6 +1,6 @@
 name=Stormfront Riders
 image=http://magiccards.info/scans/en/ddf/17.jpg
-value=2.500
+value=3.551
 rarity=U
 type=Creature
 subtype=Human,Soldier

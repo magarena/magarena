@@ -1,6 +1,6 @@
 name=Fendeep Summoner
 image=http://magiccards.info/scans/en/mt/61.jpg
-value=2.500
+value=3.450
 rarity=R
 type=Creature
 subtype=Treefolk,Shaman

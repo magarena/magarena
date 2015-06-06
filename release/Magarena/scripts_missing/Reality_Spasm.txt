@@ -1,6 +1,6 @@
 name=Reality Spasm
 image=http://magiccards.info/scans/en/roe/81.jpg
-value=2.500
+value=3.234
 rarity=U
 type=Instant
 cost={X}{U}{U}

@@ -1,6 +1,6 @@
 name=Enslaved Horror
 image=http://magiccards.info/scans/en/mm/134.jpg
-value=2.500
+value=1.893
 rarity=U
 type=Creature
 subtype=Horror

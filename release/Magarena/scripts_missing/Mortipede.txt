@@ -1,6 +1,6 @@
 name=Mortipede
 image=http://magiccards.info/scans/en/rav/96.jpg
-value=2.500
+value=2.636
 rarity=C
 type=Creature
 subtype=Insect

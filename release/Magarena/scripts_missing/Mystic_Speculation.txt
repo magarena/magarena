@@ -1,6 +1,6 @@
 name=Mystic Speculation
 image=http://magiccards.info/scans/en/fut/41.jpg
-value=2.500
+value=3.865
 rarity=U
 type=Sorcery
 cost={U}

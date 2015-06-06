@@ -1,6 +1,6 @@
 name=Trinisphere
 image=http://magiccards.info/scans/en/ds/154.jpg
-value=2.500
+value=4.556
 rarity=R
 type=Artifact
 cost={3}

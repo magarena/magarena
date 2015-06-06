@@ -1,6 +1,6 @@
 name=Bloodcrazed Hoplite
 image=http://magiccards.info/scans/en/jou/61.jpg
-value=2.500
+value=3.571
 rarity=C
 type=Creature
 subtype=Human,Soldier

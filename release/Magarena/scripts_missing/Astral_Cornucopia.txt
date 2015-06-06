@@ -1,6 +1,6 @@
 name=Astral Cornucopia
 image=http://magiccards.info/scans/en/bng/157.jpg
-value=2.500
+value=3.435
 rarity=R
 type=Artifact
 cost={X}{X}{X}

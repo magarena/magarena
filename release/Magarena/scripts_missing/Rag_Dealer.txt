@@ -1,6 +1,6 @@
 name=Rag Dealer
 image=http://magiccards.info/scans/en/chk/138.jpg
-value=2.500
+value=2.903
 rarity=C
 type=Creature
 subtype=Human,Rogue

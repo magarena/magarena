@@ -1,6 +1,6 @@
 name=Ancient Spring
 image=http://magiccards.info/scans/en/in/319.jpg
-value=2.500
+value=3.221
 rarity=C
 type=Land
 ability=SN enters the battlefield tapped.;\

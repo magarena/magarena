@@ -1,6 +1,6 @@
 name=Golgari Signet
 image=http://magiccards.info/scans/en/ddj/66.jpg
-value=2.500
+value=4.273
 rarity=C
 type=Artifact
 cost={2}

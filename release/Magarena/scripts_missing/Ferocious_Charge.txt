@@ -1,6 +1,6 @@
 name=Ferocious Charge
 image=http://magiccards.info/scans/en/5dn/88.jpg
-value=2.500
+value=3.067
 rarity=C
 type=Instant
 cost={2}{G}

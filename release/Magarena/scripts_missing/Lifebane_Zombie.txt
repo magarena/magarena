@@ -1,6 +1,6 @@
 name=Lifebane Zombie
 image=http://magiccards.info/scans/en/m14/101.jpg
-value=2.500
+value=3.660
 rarity=R
 type=Creature
 subtype=Zombie,Warrior

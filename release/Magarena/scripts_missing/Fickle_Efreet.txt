@@ -1,6 +1,6 @@
 name=Fickle Efreet
 image=http://magiccards.info/scans/en/pr/89.jpg
-value=2.500
+value=2.113
 rarity=R
 type=Creature
 subtype=Efreet

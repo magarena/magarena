@@ -1,6 +1,6 @@
 name=Spiritual Visit
 image=http://magiccards.info/scans/en/sok/29.jpg
-value=2.500
+value=3.894
 rarity=C
 type=Instant
 subtype=Arcane

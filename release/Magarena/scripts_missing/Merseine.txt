@@ -1,6 +1,6 @@
 name=Merseine
 image=http://magiccards.info/scans/en/fe/49.jpg
-value=2.500
+value=2.062
 rarity=C
 type=Enchantment
 subtype=Aura

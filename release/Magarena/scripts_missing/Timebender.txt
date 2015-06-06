@@ -1,6 +1,6 @@
 name=Timebender
 image=http://magiccards.info/scans/en/pc/50.jpg
-value=2.500
+value=3.150
 rarity=U
 type=Creature
 subtype=Human,Wizard

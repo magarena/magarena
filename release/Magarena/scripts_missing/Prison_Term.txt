@@ -1,6 +1,6 @@
 name=Prison Term
 image=http://magiccards.info/scans/en/cmd/27.jpg
-value=2.500
+value=3.789
 rarity=U
 type=Enchantment
 subtype=Aura

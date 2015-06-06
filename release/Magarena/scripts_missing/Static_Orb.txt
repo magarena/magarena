@@ -1,6 +1,6 @@
 name=Static Orb
 image=http://magiccards.info/scans/en/7e/319.jpg
-value=2.500
+value=4.138
 rarity=R
 type=Artifact
 cost={3}

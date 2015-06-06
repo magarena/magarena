@@ -1,6 +1,6 @@
 name=Ordeal of Heliod
 image=http://magiccards.info/scans/en/ths/25.jpg
-value=2.500
+value=3.535
 rarity=U
 type=Enchantment
 subtype=Aura

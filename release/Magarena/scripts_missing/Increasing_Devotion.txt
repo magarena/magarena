@@ -1,6 +1,6 @@
 name=Increasing Devotion
 image=http://magiccards.info/scans/en/dka/11.jpg
-value=2.500
+value=3.780
 rarity=R
 type=Sorcery
 cost={3}{W}{W}

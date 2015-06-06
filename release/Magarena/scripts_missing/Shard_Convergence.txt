@@ -1,6 +1,6 @@
 name=Shard Convergence
 image=http://magiccards.info/scans/en/cfx/91.jpg
-value=2.500
+value=3.074
 rarity=U
 type=Sorcery
 cost={3}{G}

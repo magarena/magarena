@@ -1,6 +1,6 @@
 name=Rivals' Duel
 image=http://magiccards.info/scans/en/pc2/51.jpg
-value=2.500
+value=3.094
 rarity=U
 type=Sorcery
 cost={3}{R}

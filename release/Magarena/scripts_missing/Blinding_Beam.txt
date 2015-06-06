@@ -1,6 +1,6 @@
 name=Blinding Beam
 image=http://magiccards.info/scans/en/mma/7.jpg
-value=2.500
+value=3.458
 rarity=C
 type=Instant
 cost={2}{W}

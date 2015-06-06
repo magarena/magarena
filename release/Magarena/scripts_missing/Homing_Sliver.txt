@@ -1,6 +1,6 @@
 name=Homing Sliver
 image=http://magiccards.info/scans/en/fut/118.jpg
-value=2.500
+value=4.203
 rarity=C
 type=Creature
 subtype=Sliver

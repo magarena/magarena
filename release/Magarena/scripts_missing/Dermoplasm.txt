@@ -1,6 +1,6 @@
 name=Dermoplasm
 image=http://magiccards.info/scans/en/le/35.jpg
-value=2.500
+value=3.900
 rarity=R
 type=Creature
 subtype=Shapeshifter

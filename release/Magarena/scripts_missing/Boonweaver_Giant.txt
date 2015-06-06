@@ -1,6 +1,6 @@
 name=Boonweaver Giant
 image=http://magiccards.info/scans/en/m15/5.jpg
-value=2.500
+value=3.000
 rarity=U
 type=Creature
 subtype=Giant,Monk

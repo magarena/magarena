@@ -1,6 +1,6 @@
 name=Auriok Steelshaper
 image=http://magiccards.info/scans/en/mi/4.jpg
-value=2.500
+value=4.404
 rarity=R
 type=Creature
 subtype=Human,Soldier

@@ -1,6 +1,6 @@
 name=Crystallization
 image=http://magiccards.info/scans/en/arb/144.jpg
-value=2.500
+value=3.442
 rarity=C
 type=Enchantment
 subtype=Aura

@@ -1,6 +1,6 @@
 name=Goblin Sappers
 image=http://magiccards.info/scans/en/ia/189.jpg
-value=2.500
+value=1.983
 rarity=C
 type=Creature
 subtype=Goblin

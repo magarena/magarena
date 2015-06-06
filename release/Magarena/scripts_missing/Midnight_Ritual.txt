@@ -1,6 +1,6 @@
 name=Midnight Ritual
 image=http://magiccards.info/scans/en/10e/158.jpg
-value=2.500
+value=3.556
 rarity=R
 type=Sorcery
 cost={X}{2}{B}

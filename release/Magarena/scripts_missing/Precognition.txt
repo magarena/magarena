@@ -1,6 +1,6 @@
 name=Precognition
 image=http://magiccards.info/scans/en/tp/79.jpg
-value=2.500
+value=3.269
 rarity=R
 type=Enchantment
 cost={4}{U}

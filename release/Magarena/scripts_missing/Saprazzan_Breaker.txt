@@ -1,6 +1,6 @@
 name=Saprazzan Breaker
 image=http://magiccards.info/scans/en/mm/98.jpg
-value=2.500
+value=2.548
 rarity=U
 type=Creature
 subtype=Beast

@@ -1,6 +1,6 @@
 name=Custodi Squire
 image=http://magiccards.info/scans/en/cns/18.jpg
-value=2.500
+value=3.786
 rarity=C
 type=Creature
 subtype=Spirit,Cleric

@@ -1,6 +1,6 @@
 name=Burning-Tree Shaman
 image=http://magiccards.info/scans/en/gp/105.jpg
-value=2.500
+value=4.066
 rarity=R
 type=Creature
 subtype=Centaur,Shaman

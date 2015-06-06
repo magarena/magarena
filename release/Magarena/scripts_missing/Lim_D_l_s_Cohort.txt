@@ -1,6 +1,6 @@
 name=Lim-Dûl's Cohort
 image=http://magiccards.info/scans/en/me4/90.jpg
-value=2.500
+value=3.250
 rarity=C
 type=Creature
 subtype=Zombie

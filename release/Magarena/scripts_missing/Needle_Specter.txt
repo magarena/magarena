@@ -1,6 +1,6 @@
 name=Needle Specter
 image=http://magiccards.info/scans/en/eve/39.jpg
-value=2.500
+value=3.617
 rarity=R
 type=Creature
 subtype=Specter

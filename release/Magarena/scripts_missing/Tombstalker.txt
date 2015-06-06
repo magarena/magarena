@@ -1,6 +1,6 @@
 name=Tombstalker
 image=http://magiccards.info/scans/en/mma/102.jpg
-value=2.500
+value=4.266
 rarity=R
 type=Creature
 subtype=Demon

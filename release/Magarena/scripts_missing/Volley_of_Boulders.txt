@@ -1,6 +1,6 @@
 name=Volley of Boulders
 image=http://magiccards.info/scans/en/ddi/73.jpg
-value=2.500
+value=2.433
 rarity=R
 type=Sorcery
 cost={8}{R}

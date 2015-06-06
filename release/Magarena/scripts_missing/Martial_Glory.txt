@@ -1,6 +1,6 @@
 name=Martial Glory
 image=http://magiccards.info/scans/en/gtc/175.jpg
-value=2.500
+value=3.214
 rarity=C
 type=Instant
 cost={R}{W}

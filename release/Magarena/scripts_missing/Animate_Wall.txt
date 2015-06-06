@@ -1,6 +1,6 @@
 name=Animate Wall
 image=http://magiccards.info/scans/en/med/2.jpg
-value=2.500
+value=2.755
 rarity=U
 type=Enchantment
 subtype=Aura

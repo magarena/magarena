@@ -1,6 +1,6 @@
 name=Joven's Ferrets
 image=http://magiccards.info/scans/en/me2/169.jpg
-value=2.500
+value=4.010
 rarity=U
 type=Creature
 subtype=Ferret

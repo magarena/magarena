@@ -1,6 +1,6 @@
 name=Jaded Response
 image=http://magiccards.info/scans/en/ap/26.jpg
-value=2.500
+value=2.766
 rarity=C
 type=Instant
 cost={1}{U}

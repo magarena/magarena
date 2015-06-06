@@ -1,6 +1,6 @@
 name=Animal Magnetism
 image=http://magiccards.info/scans/en/on/245.jpg
-value=2.500
+value=2.160
 rarity=R
 type=Sorcery
 cost={4}{G}

@@ -1,6 +1,6 @@
 name=Porphyry Nodes
 image=http://magiccards.info/scans/en/pc/28.jpg
-value=2.500
+value=4.198
 rarity=R
 type=Enchantment
 cost={W}

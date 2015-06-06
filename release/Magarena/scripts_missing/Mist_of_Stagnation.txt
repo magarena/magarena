@@ -1,6 +1,6 @@
 name=Mist of Stagnation
 image=http://magiccards.info/scans/en/ju/48.jpg
-value=2.500
+value=3.861
 rarity=R
 type=Enchantment
 cost={3}{U}{U}

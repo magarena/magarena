@@ -1,6 +1,6 @@
 name=Celestial Prism
 image=http://magiccards.info/scans/en/4e/322.jpg
-value=2.500
+value=0.934
 rarity=U
 type=Artifact
 cost={3}

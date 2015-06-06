@@ -1,6 +1,6 @@
 name=Serum Powder
 image=http://magiccards.info/scans/en/ds/138.jpg
-value=2.500
+value=3.882
 rarity=R
 type=Artifact
 cost={3}

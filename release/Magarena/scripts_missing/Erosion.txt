@@ -1,6 +1,6 @@
 name=Erosion
 image=http://magiccards.info/scans/en/4e/70.jpg
-value=2.500
+value=1.644
 rarity=C
 type=Enchantment
 subtype=Aura

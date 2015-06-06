@@ -1,6 +1,6 @@
 name=Quagnoth
 image=http://magiccards.info/scans/en/fut/150.jpg
-value=2.500
+value=3.836
 rarity=R
 type=Creature
 subtype=Beast

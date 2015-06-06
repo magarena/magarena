@@ -1,6 +1,6 @@
 name=Keening Stone
 image=http://magiccards.info/scans/en/roe/219.jpg
-value=2.500
+value=4.039
 rarity=R
 type=Artifact
 cost={6}

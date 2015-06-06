@@ -1,6 +1,6 @@
 name=Mammoth Harness
 image=http://magiccards.info/scans/en/hl/64.jpg
-value=2.500
+value=1.299
 rarity=R
 type=Enchantment
 subtype=Aura

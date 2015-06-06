@@ -1,6 +1,6 @@
 name=Harsh Deceiver
 image=http://magiccards.info/scans/en/chk/11.jpg
-value=2.500
+value=1.103
 rarity=C
 type=Creature
 subtype=Spirit

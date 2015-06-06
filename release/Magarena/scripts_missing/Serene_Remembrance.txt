@@ -1,6 +1,6 @@
 name=Serene Remembrance
 image=http://magiccards.info/scans/en/gtc/132.jpg
-value=2.500
+value=3.026
 rarity=U
 type=Sorcery
 cost={G}

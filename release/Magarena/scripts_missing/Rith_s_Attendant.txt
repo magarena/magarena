@@ -1,6 +1,6 @@
 name=Rith's Attendant
 image=http://magiccards.info/scans/en/in/310.jpg
-value=2.500
+value=2.532
 rarity=U
 type=Artifact,Creature
 subtype=Golem

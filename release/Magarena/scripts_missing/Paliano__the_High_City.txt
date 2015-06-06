@@ -1,6 +1,6 @@
 name=Paliano, the High City
 image=http://magiccards.info/scans/en/cns/65.jpg
-value=2.500
+value=3.458
 rarity=R
 type=Legendary,Land
 ability=Reveal SN as you draft it. The player to your right chooses a color, you choose another color, then the player to your left chooses a third color.;\

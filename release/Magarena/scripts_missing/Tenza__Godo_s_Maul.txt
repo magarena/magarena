@@ -1,6 +1,6 @@
 name=Tenza, Godo's Maul
 image=http://magiccards.info/scans/en/chk/271.jpg
-value=2.500
+value=3.620
 rarity=U
 type=Legendary,Artifact
 subtype=Equipment

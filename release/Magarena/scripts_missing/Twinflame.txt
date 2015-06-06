@@ -1,6 +1,6 @@
 name=Twinflame
 image=http://magiccards.info/scans/en/jou/115.jpg
-value=2.500
+value=3.233
 rarity=R
 type=Sorcery
 cost={1}{R}

@@ -1,6 +1,6 @@
 name=Artificial Evolution
 image=http://magiccards.info/scans/en/on/67.jpg
-value=2.500
+value=4.292
 rarity=R
 type=Instant
 cost={U}

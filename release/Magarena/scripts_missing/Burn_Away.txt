@@ -1,6 +1,6 @@
 name=Burn Away
 image=http://magiccards.info/scans/en/ktk/104.jpg
-value=2.500
+value=3.250
 rarity=U
 type=Instant
 cost={4}{R}

@@ -1,6 +1,6 @@
 name=Riding the Dilu Horse
 image=http://magiccards.info/scans/en/me3/131.jpg
-value=2.500
+value=4.070
 rarity=U
 type=Sorcery
 cost={2}{G}

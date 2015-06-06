@@ -1,6 +1,6 @@
 name=Psychic Possession
 image=http://magiccards.info/scans/en/di/30.jpg
-value=2.500
+value=3.949
 rarity=R
 type=Enchantment
 subtype=Aura

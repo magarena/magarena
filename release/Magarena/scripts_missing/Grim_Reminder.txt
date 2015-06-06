@@ -1,6 +1,6 @@
 name=Grim Reminder
 image=http://magiccards.info/scans/en/mi/66.jpg
-value=2.500
+value=2.962
 rarity=R
 type=Instant
 cost={2}{B}

@@ -1,6 +1,6 @@
 name=Talon of Pain
 image=http://magiccards.info/scans/en/ds/150.jpg
-value=2.500
+value=3.986
 rarity=U
 type=Artifact
 cost={4}

@@ -1,6 +1,6 @@
 name=Petra Sphinx
 image=http://magiccards.info/scans/en/med/23.jpg
-value=2.500
+value=3.333
 rarity=R
 type=Creature
 subtype=Sphinx

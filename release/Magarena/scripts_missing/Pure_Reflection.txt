@@ -1,6 +1,6 @@
 name=Pure Reflection
 image=http://magiccards.info/scans/en/in/27.jpg
-value=2.500
+value=3.554
 rarity=R
 type=Enchantment
 cost={2}{W}

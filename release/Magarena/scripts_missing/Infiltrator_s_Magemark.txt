@@ -1,6 +1,6 @@
 name=Infiltrator's Magemark
 image=http://magiccards.info/scans/en/gp/28.jpg
-value=2.500
+value=3.935
 rarity=C
 type=Enchantment
 subtype=Aura

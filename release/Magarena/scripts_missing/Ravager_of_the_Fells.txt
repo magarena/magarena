@@ -1,6 +1,6 @@
 name=Ravager of the Fells
 image=http://magiccards.info/scans/en/dka/140b.jpg
-value=2.500
+value=3.953
 rarity=M
 type=Creature
 subtype=Werewolf

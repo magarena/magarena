@@ -1,6 +1,6 @@
 name=Sungrass Prairie
 image=http://magiccards.info/scans/en/od/328.jpg
-value=2.500
+value=3.810
 rarity=R
 type=Land
 ability={1}, {T}: Add {G}{W} to your mana pool.

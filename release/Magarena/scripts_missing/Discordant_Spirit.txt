@@ -1,6 +1,6 @@
 name=Discordant Spirit
 image=http://magiccards.info/scans/en/mr/321.jpg
-value=2.500
+value=2.894
 rarity=R
 type=Creature
 subtype=Spirit

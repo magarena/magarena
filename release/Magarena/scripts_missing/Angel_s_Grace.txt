@@ -1,6 +1,6 @@
 name=Angel's Grace
 image=http://magiccards.info/scans/en/mma/4.jpg
-value=2.500
+value=4.297
 rarity=R
 type=Instant
 cost={W}

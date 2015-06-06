@@ -1,6 +1,6 @@
 name=Resolute Archangel
 image=http://magiccards.info/scans/en/m15/28.jpg
-value=2.500
+value=3.500
 rarity=R
 type=Creature
 subtype=Angel

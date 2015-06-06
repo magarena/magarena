@@ -1,6 +1,6 @@
 name=Thoughtcutter Agent
 image=http://magiccards.info/scans/en/ala/201.jpg
-value=2.500
+value=2.010
 rarity=U
 type=Artifact,Creature
 subtype=Human,Rogue

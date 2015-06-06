@@ -1,6 +1,6 @@
 name=Abeyance
 image=http://magiccards.info/scans/en/wl/117.jpg
-value=2.500
+value=4.466
 rarity=R
 type=Instant
 cost={1}{W}

@@ -1,6 +1,6 @@
 name=Leonin Bola
 image=http://magiccards.info/scans/en/ds/127.jpg
-value=2.500
+value=3.306
 rarity=C
 type=Artifact
 subtype=Equipment

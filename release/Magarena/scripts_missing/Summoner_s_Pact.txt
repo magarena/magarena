@@ -1,6 +1,6 @@
 name=Summoner's Pact
 image=http://magiccards.info/scans/en/mma/164.jpg
-value=2.500
+value=4.500
 rarity=R
 type=Instant
 cost={0}

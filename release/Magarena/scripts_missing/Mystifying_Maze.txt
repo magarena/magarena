@@ -1,6 +1,6 @@
 name=Mystifying Maze
 image=http://magiccards.info/scans/en/m11/226.jpg
-value=2.500
+value=3.938
 rarity=R
 type=Land
 ability={T}: Add {1} to your mana pool.;\

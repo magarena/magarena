@@ -1,6 +1,6 @@
 name=Telekinesis
 image=http://magiccards.info/scans/en/med/52.jpg
-value=2.500
+value=3.816
 rarity=C
 type=Instant
 cost={U}{U}

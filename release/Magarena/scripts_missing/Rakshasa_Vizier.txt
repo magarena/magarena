@@ -1,6 +1,6 @@
 name=Rakshasa Vizier
 image=http://magiccards.info/scans/en/ktk/193.jpg
-value=2.500
+value=3.250
 rarity=R
 type=Creature
 subtype=Cat,Demon

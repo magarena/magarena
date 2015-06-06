@@ -1,6 +1,6 @@
 name=Sulfur Vent
 image=http://magiccards.info/scans/en/in/328.jpg
-value=2.500
+value=3.192
 rarity=C
 type=Land
 ability=SN enters the battlefield tapped.;\

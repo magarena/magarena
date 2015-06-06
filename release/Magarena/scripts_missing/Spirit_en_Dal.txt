@@ -1,6 +1,6 @@
 name=Spirit en-Dal
 image=http://magiccards.info/scans/en/fut/17.jpg
-value=2.500
+value=3.892
 rarity=U
 type=Creature
 subtype=Spirit

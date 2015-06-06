@@ -1,6 +1,6 @@
 name=Weaver of Lies
 image=http://magiccards.info/scans/en/le/57.jpg
-value=2.500
+value=3.409
 rarity=R
 type=Creature
 subtype=Beast

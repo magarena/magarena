@@ -1,6 +1,6 @@
 name=Shifting Borders
 image=http://magiccards.info/scans/en/sok/56.jpg
-value=2.500
+value=2.148
 rarity=U
 type=Instant
 subtype=Arcane

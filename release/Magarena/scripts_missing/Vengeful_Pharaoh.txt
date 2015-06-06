@@ -1,6 +1,6 @@
 name=Vengeful Pharaoh
 image=http://magiccards.info/scans/en/m12/116.jpg
-value=2.500
+value=4.137
 rarity=R
 type=Creature
 subtype=Zombie

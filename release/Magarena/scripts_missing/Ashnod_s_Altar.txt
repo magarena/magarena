@@ -1,6 +1,6 @@
 name=Ashnod's Altar
 image=http://magiccards.info/scans/en/me4/181.jpg
-value=2.500
+value=4.430
 rarity=R
 type=Artifact
 cost={3}

@@ -1,6 +1,6 @@
 name=Consume Strength
 image=http://magiccards.info/scans/en/ddm/74.jpg
-value=2.500
+value=4.094
 rarity=C
 type=Instant
 cost={1}{B}{G}

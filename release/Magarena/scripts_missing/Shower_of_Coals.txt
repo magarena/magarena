@@ -1,6 +1,6 @@
 name=Shower of Coals
 image=http://magiccards.info/scans/en/od/221.jpg
-value=2.500
+value=3.578
 rarity=U
 type=Sorcery
 cost={3}{R}{R}

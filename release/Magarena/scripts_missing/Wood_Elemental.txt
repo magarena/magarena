@@ -1,6 +1,6 @@
 name=Wood Elemental
 image=http://magiccards.info/scans/en/me4/175.jpg
-value=2.500
+value=0.911
 rarity=R
 type=Creature
 subtype=Elemental

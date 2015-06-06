@@ -1,6 +1,6 @@
 name=Coercive Portal
 image=http://magiccards.info/scans/en/vma/266.jpg
-value=2.500
+value=4.000
 rarity=M
 type=Artifact
 cost={4}

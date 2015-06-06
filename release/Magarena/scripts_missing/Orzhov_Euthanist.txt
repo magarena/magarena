@@ -1,6 +1,6 @@
 name=Orzhov Euthanist
 image=http://magiccards.info/scans/en/gp/54.jpg
-value=2.500
+value=3.103
 rarity=C
 type=Creature
 subtype=Human,Assassin

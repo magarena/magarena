@@ -1,6 +1,6 @@
 name=Autumn Willow
 image=http://magiccards.info/scans/en/med/113.jpg
-value=2.500
+value=3.930
 rarity=R
 type=Legendary,Creature
 subtype=Avatar

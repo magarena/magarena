@@ -1,6 +1,6 @@
 name=Glyph of Delusion
 image=http://magiccards.info/scans/en/lg/60.jpg
-value=2.500
+value=2.317
 rarity=C
 type=Instant
 cost={U}

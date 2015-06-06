@@ -1,6 +1,6 @@
 name=Puppet Master
 image=http://magiccards.info/scans/en/ch/23.jpg
-value=2.500
+value=2.648
 rarity=U
 type=Enchantment
 subtype=Aura

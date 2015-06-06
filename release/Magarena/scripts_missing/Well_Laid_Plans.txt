@@ -1,6 +1,6 @@
 name=Well-Laid Plans
 image=http://magiccards.info/scans/en/in/88.jpg
-value=2.500
+value=2.397
 rarity=R
 type=Enchantment
 cost={2}{U}

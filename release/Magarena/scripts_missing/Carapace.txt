@@ -1,6 +1,6 @@
 name=Carapace
 image=http://magiccards.info/scans/en/me2/155.jpg
-value=2.500
+value=3.283
 rarity=C
 type=Enchantment
 subtype=Aura

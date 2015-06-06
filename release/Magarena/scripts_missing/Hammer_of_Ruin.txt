@@ -1,6 +1,6 @@
 name=Hammer of Ruin
 image=http://magiccards.info/scans/en/wwk/124.jpg
-value=2.500
+value=2.582
 rarity=U
 type=Artifact
 subtype=Equipment

@@ -1,6 +1,6 @@
 name=Kjeldoran Warrior
 image=http://magiccards.info/scans/en/ia/265.jpg
-value=2.500
+value=3.268
 rarity=C
 type=Creature
 subtype=Human,Warrior

@@ -1,6 +1,6 @@
 name=Constricting Sliver
 image=http://magiccards.info/scans/en/m15/7.jpg
-value=2.500
+value=3.688
 rarity=U
 type=Creature
 subtype=Sliver

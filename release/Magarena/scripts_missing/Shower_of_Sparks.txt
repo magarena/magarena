@@ -1,6 +1,6 @@
 name=Shower of Sparks
 image=http://magiccards.info/scans/en/ddl/61.jpg
-value=2.500
+value=3.000
 rarity=C
 type=Instant
 cost={R}

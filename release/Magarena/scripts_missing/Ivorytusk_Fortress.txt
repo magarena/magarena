@@ -1,6 +1,6 @@
 name=Ivorytusk Fortress
 image=http://magiccards.info/scans/en/ktk/179.jpg
-value=2.500
+value=4.167
 rarity=R
 type=Creature
 subtype=Elephant

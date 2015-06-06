@@ -1,6 +1,6 @@
 name=Fuel for the Cause
 image=http://magiccards.info/scans/en/mbs/25.jpg
-value=2.500
+value=3.356
 rarity=C
 type=Instant
 cost={2}{U}{U}

@@ -1,6 +1,6 @@
 name=Scapeshift
 image=http://magiccards.info/scans/en/mt/136.jpg
-value=2.500
+value=3.703
 rarity=R
 type=Sorcery
 cost={2}{G}{G}

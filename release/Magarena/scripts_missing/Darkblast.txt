@@ -1,6 +1,6 @@
 name=Darkblast
 image=http://magiccards.info/scans/en/rav/82.jpg
-value=2.500
+value=4.191
 rarity=U
 type=Instant
 cost={B}

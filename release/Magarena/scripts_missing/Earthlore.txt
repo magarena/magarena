@@ -1,6 +1,6 @@
 name=Earthlore
 image=http://magiccards.info/scans/en/ia/119.jpg
-value=2.500
+value=2.115
 rarity=C
 type=Enchantment
 subtype=Aura

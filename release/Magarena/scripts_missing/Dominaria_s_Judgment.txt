@@ -1,6 +1,6 @@
 name=Dominaria's Judgment
 image=http://magiccards.info/scans/en/ps/4.jpg
-value=2.500
+value=3.516
 rarity=R
 type=Instant
 cost={2}{W}

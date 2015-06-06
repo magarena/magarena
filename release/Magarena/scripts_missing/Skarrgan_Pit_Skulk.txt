@@ -1,6 +1,6 @@
 name=Skarrgan Pit-Skulk
 image=http://magiccards.info/scans/en/gp/96.jpg
-value=2.500
+value=4.000
 rarity=C
 type=Creature
 subtype=Human,Warrior

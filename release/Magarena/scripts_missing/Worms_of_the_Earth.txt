@@ -1,6 +1,6 @@
 name=Worms of the Earth
 image=http://magiccards.info/scans/en/dk/18.jpg
-value=2.500
+value=3.117
 rarity=R
 type=Enchantment
 cost={2}{B}{B}{B}

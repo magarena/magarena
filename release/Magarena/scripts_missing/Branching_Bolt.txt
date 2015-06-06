@@ -1,6 +1,6 @@
 name=Branching Bolt
 image=http://magiccards.info/scans/en/arc/82.jpg
-value=2.500
+value=3.018
 rarity=C
 type=Instant
 cost={1}{R}{G}

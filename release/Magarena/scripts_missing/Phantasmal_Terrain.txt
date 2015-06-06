@@ -1,6 +1,6 @@
 name=Phantasmal Terrain
 image=http://magiccards.info/scans/en/me4/56.jpg
-value=2.500
+value=3.000
 rarity=C
 type=Enchantment
 subtype=Aura

@@ -1,6 +1,6 @@
 name=Undead Alchemist
 image=http://magiccards.info/scans/en/isd/84.jpg
-value=2.500
+value=3.845
 rarity=R
 type=Creature
 subtype=Zombie

@@ -1,6 +1,6 @@
 name=Bust
 image=http://magiccards.info/scans/en/pc/112b.jpg
-value=2.500
+value=3.885
 rarity=R
 type=Sorcery
 cost={5}{R}

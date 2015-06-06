@@ -1,6 +1,6 @@
 name=Melek, Izzet Paragon
 image=http://magiccards.info/scans/en/dgm/84.jpg
-value=2.500
+value=3.821
 rarity=R
 type=Legendary,Creature
 subtype=Weird,Wizard

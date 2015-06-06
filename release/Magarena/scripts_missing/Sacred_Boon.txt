@@ -1,6 +1,6 @@
 name=Sacred Boon
 image=http://magiccards.info/scans/en/me2/33.jpg
-value=2.500
+value=3.167
 rarity=U
 type=Instant
 cost={1}{W}

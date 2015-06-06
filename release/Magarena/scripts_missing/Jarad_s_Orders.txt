@@ -1,6 +1,6 @@
 name=Jarad's Orders
 image=http://magiccards.info/scans/en/rtr/175.jpg
-value=2.500
+value=3.785
 rarity=R
 type=Sorcery
 cost={2}{B}{G}

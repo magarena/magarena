@@ -1,6 +1,6 @@
 name=Treachery
 image=http://magiccards.info/scans/en/ud/50.jpg
-value=2.500
+value=4.540
 rarity=R
 type=Enchantment
 subtype=Aura

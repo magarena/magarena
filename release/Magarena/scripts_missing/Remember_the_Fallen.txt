@@ -1,6 +1,6 @@
 name=Remember the Fallen
 image=http://magiccards.info/scans/en/nph/21.jpg
-value=2.500
+value=3.363
 rarity=C
 type=Sorcery
 cost={2}{W}

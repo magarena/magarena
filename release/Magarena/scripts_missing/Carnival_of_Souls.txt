@@ -1,6 +1,6 @@
 name=Carnival of Souls
 image=http://magiccards.info/scans/en/ud/55.jpg
-value=2.500
+value=3.034
 rarity=R
 type=Enchantment
 cost={1}{B}

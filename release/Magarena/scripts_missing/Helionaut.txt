@@ -1,6 +1,6 @@
 name=Helionaut
 image=http://magiccards.info/scans/en/ap/13.jpg
-value=2.500
+value=2.750
 rarity=C
 type=Creature
 subtype=Human,Soldier

@@ -1,6 +1,6 @@
 name=Fertile Ground
 image=http://magiccards.info/scans/en/pvc/52.jpg
-value=2.500
+value=4.274
 rarity=C
 type=Enchantment
 subtype=Aura

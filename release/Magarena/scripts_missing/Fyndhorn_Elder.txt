@@ -1,6 +1,6 @@
 name=Fyndhorn Elder
 image=http://magiccards.info/scans/en/8e/251.jpg
-value=2.500
+value=3.815
 rarity=U
 type=Creature
 subtype=Elf,Druid

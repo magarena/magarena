@@ -1,6 +1,6 @@
 name=Epic Experiment
 image=http://magiccards.info/scans/en/rtr/159.jpg
-value=2.500
+value=3.819
 rarity=M
 type=Sorcery
 cost={X}{U}{R}

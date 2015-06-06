@@ -1,6 +1,6 @@
 name=Reconnaissance
 image=http://magiccards.info/scans/en/ex/17.jpg
-value=2.500
+value=4.476
 rarity=U
 type=Enchantment
 cost={W}

@@ -1,6 +1,6 @@
 name=Living Hive
 image=http://magiccards.info/scans/en/pch/75.jpg
-value=2.500
+value=4.107
 rarity=R
 type=Creature
 subtype=Elemental,Insect

@@ -1,6 +1,6 @@
 name=Terror of Kruin Pass
 image=http://magiccards.info/scans/en/isd/152b.jpg
-value=2.500
+value=3.890
 rarity=R
 type=Creature
 subtype=Werewolf

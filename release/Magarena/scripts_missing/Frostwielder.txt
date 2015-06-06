@@ -1,6 +1,6 @@
 name=Frostwielder
 image=http://magiccards.info/scans/en/chk/167.jpg
-value=2.500
+value=2.867
 rarity=C
 type=Creature
 subtype=Human,Shaman

@@ -1,6 +1,6 @@
 name=Temur Charm
 image=http://magiccards.info/scans/en/ktk/208.jpg
-value=2.500
+value=3.500
 rarity=U
 type=Instant
 cost={G}{U}{R}

@@ -1,6 +1,6 @@
 name=Bridge from Below
 image=http://magiccards.info/scans/en/mma/74.jpg
-value=2.500
+value=4.470
 rarity=R
 type=Enchantment
 cost={B}{B}{B}

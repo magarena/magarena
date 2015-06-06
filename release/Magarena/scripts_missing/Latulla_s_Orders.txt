@@ -1,6 +1,6 @@
 name=Latulla's Orders
 image=http://magiccards.info/scans/en/pr/96.jpg
-value=2.500
+value=3.029
 rarity=C
 type=Enchantment
 subtype=Aura

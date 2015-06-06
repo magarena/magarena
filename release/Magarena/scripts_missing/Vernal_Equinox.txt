@@ -1,6 +1,6 @@
 name=Vernal Equinox
 image=http://magiccards.info/scans/en/mm/283.jpg
-value=2.500
+value=3.130
 rarity=R
 type=Enchantment
 cost={3}{G}

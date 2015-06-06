@@ -1,6 +1,6 @@
 name=Gemstone Caverns
 image=http://magiccards.info/scans/en/ts/274.jpg
-value=2.500
+value=4.029
 rarity=R
 type=Legendary,Land
 ability=If SN is in your opening hand and you're not playing first, you may begin the game with SN on the battlefield with a luck counter on it. If you do, exile a card from your hand.;\

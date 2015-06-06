@@ -1,6 +1,6 @@
 name=Akuta, Born of Ash
 image=http://magiccards.info/scans/en/sok/61.jpg
-value=2.500
+value=3.661
 rarity=R
 type=Legendary,Creature
 subtype=Spirit

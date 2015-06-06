@@ -1,6 +1,6 @@
 name=Dawning Purist
 image=http://magiccards.info/scans/en/on/22.jpg
-value=2.500
+value=2.826
 rarity=U
 type=Creature
 subtype=Human,Cleric

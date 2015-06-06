@@ -1,6 +1,6 @@
 name=Imprison
 image=http://magiccards.info/scans/en/lg/21.jpg
-value=2.500
+value=2.513
 rarity=R
 type=Enchantment
 subtype=Aura

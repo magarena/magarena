@@ -1,6 +1,6 @@
 name=Joraga Treespeaker
 image=http://magiccards.info/scans/en/roe/190.jpg
-value=2.500
+value=4.258
 rarity=U
 type=Creature
 subtype=Elf,Druid

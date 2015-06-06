@@ -1,6 +1,6 @@
 name=Boreal Centaur
 image=http://magiccards.info/scans/en/cs/104.jpg
-value=2.500
+value=3.064
 rarity=C
 type=Snow,Creature
 subtype=Centaur,Warrior

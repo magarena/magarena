@@ -1,6 +1,6 @@
 name=Prized Unicorn
 image=http://magiccards.info/scans/en/m11/193.jpg
-value=2.500
+value=3.034
 rarity=U
 type=Creature
 subtype=Unicorn

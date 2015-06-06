@@ -1,6 +1,6 @@
 name=Winterflame
 image=http://magiccards.info/scans/en/ktk/213.jpg
-value=2.500
+value=2.750
 rarity=U
 type=Instant
 cost={1}{U}{R}

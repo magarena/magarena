@@ -1,6 +1,6 @@
 name=Wicked Akuba
 image=http://magiccards.info/scans/en/chk/150.jpg
-value=2.500
+value=3.891
 rarity=C
 type=Creature
 subtype=Spirit

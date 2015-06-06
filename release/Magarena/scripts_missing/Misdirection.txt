@@ -1,6 +1,6 @@
 name=Misdirection
 image=http://magiccards.info/scans/en/cns/102.jpg
-value=2.500
+value=4.364
 rarity=R
 type=Instant
 cost={3}{U}{U}

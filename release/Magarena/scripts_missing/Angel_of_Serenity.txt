@@ -1,6 +1,6 @@
 name=Angel of Serenity
 image=http://magiccards.info/scans/en/rtr/1.jpg
-value=2.500
+value=3.990
 rarity=M
 type=Creature
 subtype=Angel

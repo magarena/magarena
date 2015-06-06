@@ -1,6 +1,6 @@
 name=Tourach's Chant
 image=http://magiccards.info/scans/en/fe/32.jpg
-value=2.500
+value=2.914
 rarity=U
 type=Enchantment
 cost={1}{B}{B}

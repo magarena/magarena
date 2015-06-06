@@ -1,6 +1,6 @@
 name=Dimir Machinations
 image=http://magiccards.info/scans/en/rav/84.jpg
-value=2.500
+value=3.807
 rarity=U
 type=Sorcery
 cost={2}{B}

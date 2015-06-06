@@ -1,6 +1,6 @@
 name=Lava Storm
 image=http://magiccards.info/scans/en/wl/110.jpg
-value=2.500
+value=3.266
 rarity=C
 type=Instant
 cost={3}{R}{R}

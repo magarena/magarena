@@ -1,6 +1,6 @@
 name=Plaxmanta
 image=http://magiccards.info/scans/en/di/29.jpg
-value=2.500
+value=4.108
 rarity=U
 type=Creature
 subtype=Beast

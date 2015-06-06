@@ -1,6 +1,6 @@
 name=Worldpurge
 image=http://magiccards.info/scans/en/shm/156.jpg
-value=2.500
+value=3.145
 rarity=R
 type=Sorcery
 cost={4}{W/U}{W/U}{W/U}{W/U}

@@ -1,6 +1,6 @@
 name=Wort, the Raidmother
 image=http://magiccards.info/scans/en/shm/223.jpg
-value=2.500
+value=3.750
 rarity=R
 type=Legendary,Creature
 subtype=Goblin,Shaman

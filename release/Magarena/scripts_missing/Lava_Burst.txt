@@ -1,6 +1,6 @@
 name=Lava Burst
 image=http://magiccards.info/scans/en/me2/134.jpg
-value=2.500
+value=3.985
 rarity=U
 type=Sorcery
 cost={X}{R}

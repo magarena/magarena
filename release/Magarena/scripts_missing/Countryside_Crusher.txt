@@ -1,6 +1,6 @@
 name=Countryside Crusher
 image=http://magiccards.info/scans/en/mma/108.jpg
-value=2.500
+value=4.013
 rarity=R
 type=Creature
 subtype=Giant,Warrior

@@ -1,6 +1,6 @@
 name=Cream of the Crop
 image=http://magiccards.info/scans/en/mt/117.jpg
-value=2.500
+value=3.607
 rarity=R
 type=Enchantment
 cost={1}{G}

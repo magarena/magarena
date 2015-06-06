@@ -1,6 +1,6 @@
 name=Ghostly Flame
 image=http://magiccards.info/scans/en/ia/370.jpg
-value=2.500
+value=3.188
 rarity=R
 type=Enchantment
 cost={B}{R}

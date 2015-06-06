@@ -1,6 +1,6 @@
 name=Paladin of Prahv
 image=http://magiccards.info/scans/en/ddg/22.jpg
-value=2.500
+value=2.700
 rarity=U
 type=Creature
 subtype=Human,Knight

@@ -1,6 +1,6 @@
 name=Enigma Eidolon
 image=http://magiccards.info/scans/en/di/24.jpg
-value=2.500
+value=2.000
 rarity=C
 type=Creature
 subtype=Spirit

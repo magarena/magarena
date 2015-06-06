@@ -1,6 +1,6 @@
 name=Defense Grid
 image=http://magiccards.info/scans/en/9e/293.jpg
-value=2.500
+value=4.255
 rarity=R
 type=Artifact
 cost={2}

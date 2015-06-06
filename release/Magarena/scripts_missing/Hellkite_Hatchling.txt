@@ -1,6 +1,6 @@
 name=Hellkite Hatchling
 image=http://magiccards.info/scans/en/pc2/95.jpg
-value=2.500
+value=2.905
 rarity=U
 type=Creature
 subtype=Dragon

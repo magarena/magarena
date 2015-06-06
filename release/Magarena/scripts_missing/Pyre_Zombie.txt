@@ -1,6 +1,6 @@
 name=Pyre Zombie
 image=http://magiccards.info/scans/en/in/261.jpg
-value=2.500
+value=3.151
 rarity=R
 type=Creature
 subtype=Zombie

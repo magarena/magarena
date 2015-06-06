@@ -1,6 +1,6 @@
 name=Sorin, Lord of Innistrad
 image=http://magiccards.info/scans/en/ddk/1.jpg
-value=2.500
+value=3.788
 rarity=M
 type=Planeswalker
 subtype=Sorin

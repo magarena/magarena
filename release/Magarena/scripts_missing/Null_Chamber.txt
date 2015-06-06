@@ -1,6 +1,6 @@
 name=Null Chamber
 image=http://magiccards.info/scans/en/mr/235.jpg
-value=2.500
+value=3.293
 rarity=R
 type=World,Enchantment
 cost={3}{W}

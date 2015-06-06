@@ -1,6 +1,6 @@
 name=Arboria
 image=http://magiccards.info/scans/en/me3/113.jpg
-value=2.500
+value=4.061
 rarity=R
 type=World,Enchantment
 cost={2}{G}{G}

@@ -1,6 +1,6 @@
 name=Liliana of the Dark Realms
 image=http://magiccards.info/scans/en/m14/102.jpg
-value=2.500
+value=3.663
 rarity=M
 type=Planeswalker
 subtype=Liliana

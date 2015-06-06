@@ -1,6 +1,6 @@
 name=Storage Matrix
 image=http://magiccards.info/scans/en/9e/310.jpg
-value=2.500
+value=4.238
 rarity=R
 type=Artifact
 cost={3}

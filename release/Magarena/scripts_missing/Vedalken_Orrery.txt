@@ -1,6 +1,6 @@
 name=Vedalken Orrery
 image=http://magiccards.info/scans/en/cns/206.jpg
-value=2.500
+value=4.250
 rarity=R
 type=Artifact
 cost={4}

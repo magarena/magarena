@@ -1,6 +1,6 @@
 name=Gremlin Mine
 image=http://magiccards.info/scans/en/nph/136.jpg
-value=2.500
+value=2.881
 rarity=C
 type=Artifact
 cost={1}

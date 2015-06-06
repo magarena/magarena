@@ -1,6 +1,6 @@
 name=Mardu Warshrieker
 image=http://magiccards.info/scans/en/ktk/117.jpg
-value=2.500
+value=3.250
 rarity=C
 type=Creature
 subtype=Orc,Shaman

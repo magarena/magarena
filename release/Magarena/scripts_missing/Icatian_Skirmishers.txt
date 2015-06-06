@@ -1,6 +1,6 @@
 name=Icatian Skirmishers
 image=http://magiccards.info/scans/en/fe/161.jpg
-value=2.500
+value=2.614
 rarity=R
 type=Creature
 subtype=Human,Soldier

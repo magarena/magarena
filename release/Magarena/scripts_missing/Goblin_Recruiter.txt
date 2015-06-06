@@ -1,6 +1,6 @@
 name=Goblin Recruiter
 image=http://magiccards.info/scans/en/6e/186.jpg
-value=2.500
+value=4.569
 rarity=U
 type=Creature
 subtype=Goblin

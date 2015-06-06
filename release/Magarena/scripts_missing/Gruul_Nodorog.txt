@@ -1,6 +1,6 @@
 name=Gruul Nodorog
 image=http://magiccards.info/scans/en/gp/88.jpg
-value=2.500
+value=1.600
 rarity=C
 type=Creature
 subtype=Beast

@@ -1,6 +1,6 @@
 name=Ohran Yeti
 image=http://magiccards.info/scans/en/cs/93.jpg
-value=2.500
+value=2.458
 rarity=C
 type=Snow,Creature
 subtype=Yeti

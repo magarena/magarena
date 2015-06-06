@@ -1,6 +1,6 @@
 name=Ice Cave
 image=http://magiccards.info/scans/en/ap/24.jpg
-value=2.500
+value=3.487
 rarity=R
 type=Enchantment
 cost={3}{U}{U}

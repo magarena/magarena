@@ -1,6 +1,6 @@
 name=Equal Treatment
 image=http://magiccards.info/scans/en/tr/4.jpg
-value=2.500
+value=3.667
 rarity=U
 type=Instant
 cost={1}{W}

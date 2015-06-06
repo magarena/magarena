@@ -1,6 +1,6 @@
 name=Flay
 image=http://magiccards.info/scans/en/pr/65.jpg
-value=2.500
+value=2.069
 rarity=C
 type=Sorcery
 cost={3}{B}

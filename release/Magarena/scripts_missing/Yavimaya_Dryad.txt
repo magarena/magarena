@@ -1,6 +1,6 @@
 name=Yavimaya Dryad
 image=http://magiccards.info/scans/en/arc/75.jpg
-value=2.500
+value=4.170
 rarity=U
 type=Creature
 subtype=Dryad

@@ -1,6 +1,6 @@
 name=False Peace
 image=http://magiccards.info/scans/en/st/16.jpg
-value=2.500
+value=3.571
 rarity=U
 type=Sorcery
 cost={W}

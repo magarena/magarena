@@ -1,6 +1,6 @@
 name=Seeds of Strength
 image=http://magiccards.info/scans/en/rav/227.jpg
-value=2.500
+value=3.035
 rarity=C
 type=Instant
 cost={G}{W}

@@ -1,6 +1,6 @@
 name=Multani's Presence
 image=http://magiccards.info/scans/en/ul/109.jpg
-value=2.500
+value=3.730
 rarity=U
 type=Enchantment
 cost={G}

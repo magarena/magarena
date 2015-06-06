@@ -1,6 +1,6 @@
 name=Dewdrop Spy
 image=http://magiccards.info/scans/en/mt/30.jpg
-value=2.500
+value=3.102
 rarity=C
 type=Creature
 subtype=Faerie,Rogue

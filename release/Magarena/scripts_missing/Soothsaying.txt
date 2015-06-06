@@ -1,6 +1,6 @@
 name=Soothsaying
 image=http://magiccards.info/scans/en/mm/104.jpg
-value=2.500
+value=4.303
 rarity=U
 type=Enchantment
 cost={U}

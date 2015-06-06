@@ -1,6 +1,6 @@
 name=Patron of the Nezumi
 image=http://magiccards.info/scans/en/cmd/93.jpg
-value=2.500
+value=3.200
 rarity=R
 type=Legendary,Creature
 subtype=Spirit

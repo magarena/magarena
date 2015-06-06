@@ -1,6 +1,6 @@
 name=Calming Verse
 image=http://magiccards.info/scans/en/pr/110.jpg
-value=2.500
+value=3.761
 rarity=C
 type=Sorcery
 cost={3}{G}

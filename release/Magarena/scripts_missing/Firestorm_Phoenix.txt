@@ -1,6 +1,6 @@
 name=Firestorm Phoenix
 image=http://magiccards.info/scans/en/me3/99.jpg
-value=2.500
+value=2.952
 rarity=R
 type=Creature
 subtype=Phoenix

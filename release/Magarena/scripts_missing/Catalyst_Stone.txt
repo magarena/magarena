@@ -1,6 +1,6 @@
 name=Catalyst Stone
 image=http://magiccards.info/scans/en/od/297.jpg
-value=2.500
+value=3.902
 rarity=R
 type=Artifact
 cost={2}

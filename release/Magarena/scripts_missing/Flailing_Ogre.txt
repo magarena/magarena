@@ -1,6 +1,6 @@
 name=Flailing Ogre
 image=http://magiccards.info/scans/en/mm/188.jpg
-value=2.500
+value=2.672
 rarity=U
 type=Creature
 subtype=Ogre

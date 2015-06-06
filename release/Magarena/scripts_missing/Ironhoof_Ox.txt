@@ -1,6 +1,6 @@
 name=Ironhoof Ox
 image=http://magiccards.info/scans/en/me4/158.jpg
-value=2.500
+value=3.286
 rarity=C
 type=Creature
 subtype=Ox

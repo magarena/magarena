@@ -1,6 +1,6 @@
 name=Charmed Pendant
 image=http://magiccards.info/scans/en/od/298.jpg
-value=2.500
+value=2.855
 rarity=R
 type=Artifact
 cost={4}

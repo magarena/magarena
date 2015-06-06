@@ -1,6 +1,6 @@
 name=Psychic Purge
 image=http://magiccards.info/scans/en/med/45.jpg
-value=2.500
+value=3.662
 rarity=U
 type=Sorcery
 cost={U}

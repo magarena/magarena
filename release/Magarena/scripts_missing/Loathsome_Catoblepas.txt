@@ -1,6 +1,6 @@
 name=Loathsome Catoblepas
 image=http://magiccards.info/scans/en/ths/95.jpg
-value=2.500
+value=1.951
 rarity=C
 type=Creature
 subtype=Beast

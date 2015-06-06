@@ -1,6 +1,6 @@
 name=Glarewielder
 image=http://magiccards.info/scans/en/lw/171.jpg
-value=2.500
+value=2.456
 rarity=U
 type=Creature
 subtype=Elemental,Shaman

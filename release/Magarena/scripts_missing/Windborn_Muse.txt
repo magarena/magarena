@@ -1,6 +1,6 @@
 name=Windborn Muse
 image=http://magiccards.info/scans/en/cmd/38.jpg
-value=2.500
+value=4.171
 rarity=R
 type=Creature
 subtype=Spirit

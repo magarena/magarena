@@ -1,6 +1,6 @@
 name=Gruul War Chant
 image=http://magiccards.info/scans/en/dgm/75.jpg
-value=2.500
+value=3.775
 rarity=U
 type=Enchantment
 cost={2}{R}{G}

@@ -1,6 +1,6 @@
 name=Nacatl Hunt-Pride
 image=http://magiccards.info/scans/en/ddh/20.jpg
-value=2.500
+value=2.477
 rarity=U
 type=Creature
 subtype=Cat,Warrior

@@ -1,6 +1,6 @@
 name=Odric, Master Tactician
 image=http://magiccards.info/scans/en/m13/23.jpg
-value=2.500
+value=4.012
 rarity=R
 type=Legendary,Creature
 subtype=Human,Soldier

@@ -1,6 +1,6 @@
 name=Greener Pastures
 image=http://magiccards.info/scans/en/us/258.jpg
-value=2.500
+value=3.683
 rarity=R
 type=Enchantment
 cost={2}{G}

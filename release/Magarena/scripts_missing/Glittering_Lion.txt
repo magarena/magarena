@@ -1,6 +1,6 @@
 name=Glittering Lion
 image=http://magiccards.info/scans/en/pr/10.jpg
-value=2.500
+value=3.468
 rarity=U
 type=Creature
 subtype=Cat

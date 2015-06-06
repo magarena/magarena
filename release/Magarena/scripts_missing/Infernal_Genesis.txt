@@ -1,6 +1,6 @@
 name=Infernal Genesis
 image=http://magiccards.info/scans/en/pr/68.jpg
-value=2.500
+value=3.180
 rarity=R
 type=Enchantment
 cost={4}{B}{B}

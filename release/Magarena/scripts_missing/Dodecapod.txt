@@ -1,6 +1,6 @@
 name=Dodecapod
 image=http://magiccards.info/scans/en/tsts/108.jpg
-value=2.500
+value=3.543
 rarity=U
 type=Artifact,Creature
 subtype=Golem

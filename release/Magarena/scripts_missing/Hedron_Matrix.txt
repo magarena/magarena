@@ -1,6 +1,6 @@
 name=Hedron Matrix
 image=http://magiccards.info/scans/en/roe/218.jpg
-value=2.500
+value=3.115
 rarity=R
 type=Artifact
 subtype=Equipment

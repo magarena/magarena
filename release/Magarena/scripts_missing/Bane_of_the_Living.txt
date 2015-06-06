@@ -1,6 +1,6 @@
 name=Bane of the Living
 image=http://magiccards.info/scans/en/le/60.jpg
-value=2.500
+value=4.000
 rarity=R
 type=Creature
 subtype=Insect

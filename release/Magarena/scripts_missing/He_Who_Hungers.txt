@@ -1,6 +1,6 @@
 name=He Who Hungers
 image=http://magiccards.info/scans/en/chk/114.jpg
-value=2.500
+value=3.762
 rarity=R
 type=Legendary,Creature
 subtype=Spirit

@@ -1,6 +1,6 @@
 name=Enraging Licid
 image=http://magiccards.info/scans/en/tp/171.jpg
-value=2.500
+value=3.062
 rarity=U
 type=Creature
 subtype=Licid

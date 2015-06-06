@@ -1,6 +1,6 @@
 name=Budoka Gardener
 image=http://magiccards.info/scans/en/chk/202a.jpg
-value=2.500
+value=3.154
 rarity=R
 type=Creature
 subtype=Human,Monk

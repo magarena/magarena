@@ -1,6 +1,6 @@
 name=Kyren Toy
 image=http://magiccards.info/scans/en/mm/303.jpg
-value=2.500
+value=3.207
 rarity=R
 type=Artifact
 cost={3}

@@ -1,6 +1,6 @@
 name=White Ward
 image=http://magiccards.info/scans/en/4e/307.jpg
-value=2.500
+value=1.642
 rarity=U
 type=Enchantment
 subtype=Aura

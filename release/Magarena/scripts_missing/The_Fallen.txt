@@ -1,6 +1,6 @@
 name=The Fallen
 image=http://magiccards.info/scans/en/med/69.jpg
-value=2.500
+value=3.500
 rarity=U
 type=Creature
 subtype=Zombie

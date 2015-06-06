@@ -1,6 +1,6 @@
 name=Rite of Ruin
 image=http://magiccards.info/scans/en/avr/153.jpg
-value=2.500
+value=2.969
 rarity=R
 type=Sorcery
 cost={5}{R}{R}

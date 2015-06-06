@@ -1,6 +1,6 @@
 name=Landslide
 image=http://magiccards.info/scans/en/ud/92.jpg
-value=2.500
+value=3.865
 rarity=U
 type=Sorcery
 cost={R}

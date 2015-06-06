@@ -1,6 +1,6 @@
 name=Spelltwine
 image=http://magiccards.info/scans/en/ddm/34.jpg
-value=2.500
+value=3.778
 rarity=R
 type=Sorcery
 cost={5}{U}

@@ -1,6 +1,6 @@
 name=Waste Not
 image=http://magiccards.info/scans/en/m15/122.jpg
-value=2.500
+value=3.818
 rarity=R
 type=Enchantment
 cost={1}{B}

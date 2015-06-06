@@ -1,6 +1,6 @@
 name=Unstable Footing
 image=http://magiccards.info/scans/en/zen/153.jpg
-value=2.500
+value=3.836
 rarity=U
 type=Instant
 cost={R}

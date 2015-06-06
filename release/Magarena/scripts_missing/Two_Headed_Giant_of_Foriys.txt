@@ -1,6 +1,6 @@
 name=Two-Headed Giant of Foriys
 image=http://magiccards.info/scans/en/me4/139.jpg
-value=2.500
+value=4.307
 rarity=U
 type=Creature
 subtype=Giant

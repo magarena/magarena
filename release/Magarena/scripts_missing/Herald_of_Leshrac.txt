@@ -1,6 +1,6 @@
 name=Herald of Leshrac
 image=http://magiccards.info/scans/en/cs/62.jpg
-value=2.500
+value=3.900
 rarity=R
 type=Creature
 subtype=Avatar

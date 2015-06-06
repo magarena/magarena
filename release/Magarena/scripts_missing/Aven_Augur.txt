@@ -1,6 +1,6 @@
 name=Aven Augur
 image=http://magiccards.info/scans/en/fut/32.jpg
-value=2.500
+value=2.663
 rarity=C
 type=Creature
 subtype=Bird,Wizard

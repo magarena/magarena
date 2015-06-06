@@ -1,6 +1,6 @@
 name=Rage Extractor
 image=http://magiccards.info/scans/en/nph/91.jpg
-value=2.500
+value=3.572
 rarity=U
 type=Artifact
 cost={4}{R/P}

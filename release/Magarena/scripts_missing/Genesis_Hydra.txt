@@ -1,6 +1,6 @@
 name=Genesis Hydra
 image=http://magiccards.info/scans/en/m15/176.jpg
-value=2.500
+value=3.688
 rarity=R
 type=Creature
 subtype=Plant,Hydra

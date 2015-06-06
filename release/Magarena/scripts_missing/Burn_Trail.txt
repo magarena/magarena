@@ -1,6 +1,6 @@
 name=Burn Trail
 image=http://magiccards.info/scans/en/shm/86.jpg
-value=2.500
+value=2.797
 rarity=C
 type=Sorcery
 cost={3}{R}

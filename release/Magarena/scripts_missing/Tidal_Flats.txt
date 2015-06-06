@@ -1,6 +1,6 @@
 name=Tidal Flats
 image=http://magiccards.info/scans/en/fe/54.jpg
-value=2.500
+value=2.615
 rarity=C
 type=Enchantment
 cost={U}

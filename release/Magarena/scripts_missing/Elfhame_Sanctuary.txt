@@ -1,6 +1,6 @@
 name=Elfhame Sanctuary
 image=http://magiccards.info/scans/en/in/185.jpg
-value=2.500
+value=3.750
 rarity=U
 type=Enchantment
 cost={1}{G}

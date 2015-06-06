@@ -1,6 +1,6 @@
 name=Hide
 image=http://magiccards.info/scans/en/di/151a.jpg
-value=2.500
+value=4.315
 rarity=R
 type=Instant
 cost={R}{W}

@@ -1,6 +1,6 @@
 name=Tinder Farm
 image=http://magiccards.info/scans/en/in/329.jpg
-value=2.500
+value=3.143
 rarity=C
 type=Land
 ability=SN enters the battlefield tapped.;\

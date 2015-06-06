@@ -1,6 +1,6 @@
 name=Dueling Grounds
 image=http://magiccards.info/scans/en/in/245.jpg
-value=2.500
+value=4.208
 rarity=R
 type=Enchantment
 cost={1}{G}{W}

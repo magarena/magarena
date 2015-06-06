@@ -1,6 +1,6 @@
 name=Pure Intentions
 image=http://magiccards.info/scans/en/sok/25.jpg
-value=2.500
+value=2.697
 rarity=R
 type=Instant
 subtype=Arcane

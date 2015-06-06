@@ -1,6 +1,6 @@
 name=Basal Thrull
 image=http://magiccards.info/scans/en/med/59.jpg
-value=2.500
+value=3.821
 rarity=C
 type=Creature
 subtype=Thrull

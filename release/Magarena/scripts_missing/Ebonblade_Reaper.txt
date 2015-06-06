@@ -1,6 +1,6 @@
 name=Ebonblade Reaper
 image=http://magiccards.info/scans/en/on/141.jpg
-value=2.500
+value=3.121
 rarity=R
 type=Creature
 subtype=Human,Cleric

@@ -1,6 +1,6 @@
 name=Turn the Tables
 image=http://magiccards.info/scans/en/ds/18.jpg
-value=2.500
+value=3.364
 rarity=R
 type=Instant
 cost={3}{W}{W}

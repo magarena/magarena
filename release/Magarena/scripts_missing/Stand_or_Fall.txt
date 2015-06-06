@@ -1,6 +1,6 @@
 name=Stand or Fall
 image=http://magiccards.info/scans/en/in/171.jpg
-value=2.500
+value=3.250
 rarity=R
 type=Enchantment
 cost={3}{R}

@@ -1,6 +1,6 @@
 name=Juxtapose
 image=http://magiccards.info/scans/en/med/41.jpg
-value=2.500
+value=3.742
 rarity=U
 type=Sorcery
 cost={3}{U}

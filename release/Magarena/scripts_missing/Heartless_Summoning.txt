@@ -1,6 +1,6 @@
 name=Heartless Summoning
 image=http://magiccards.info/scans/en/isd/104.jpg
-value=2.500
+value=3.970
 rarity=R
 type=Enchantment
 cost={1}{B}

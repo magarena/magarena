@@ -1,6 +1,6 @@
 name=Essence Leak
 image=http://magiccards.info/scans/en/in/55.jpg
-value=2.500
+value=3.540
 rarity=U
 type=Enchantment
 subtype=Aura

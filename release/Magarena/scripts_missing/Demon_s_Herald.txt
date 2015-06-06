@@ -1,6 +1,6 @@
 name=Demon's Herald
 image=http://magiccards.info/scans/en/ala/72.jpg
-value=2.500
+value=1.848
 rarity=U
 type=Creature
 subtype=Human,Wizard

@@ -1,6 +1,6 @@
 name=Sarkhan the Mad
 image=http://magiccards.info/scans/en/roe/214.jpg
-value=2.500
+value=3.473
 rarity=M
 type=Planeswalker
 subtype=Sarkhan

@@ -1,6 +1,6 @@
 name=Graceful Reprieve
 image=http://magiccards.info/scans/en/mt/11.jpg
-value=2.500
+value=3.569
 rarity=U
 type=Instant
 cost={1}{W}

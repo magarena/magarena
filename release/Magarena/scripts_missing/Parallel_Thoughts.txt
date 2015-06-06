@@ -1,6 +1,6 @@
 name=Parallel Thoughts
 image=http://magiccards.info/scans/en/sc/44.jpg
-value=2.500
+value=4.225
 rarity=R
 type=Enchantment
 cost={3}{U}{U}

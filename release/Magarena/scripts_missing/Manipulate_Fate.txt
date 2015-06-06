@@ -1,6 +1,6 @@
 name=Manipulate Fate
 image=http://magiccards.info/scans/en/in/60.jpg
-value=2.500
+value=2.750
 rarity=U
 type=Sorcery
 cost={1}{U}

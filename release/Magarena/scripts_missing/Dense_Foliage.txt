@@ -1,6 +1,6 @@
 name=Dense Foliage
 image=http://magiccards.info/scans/en/6e/221.jpg
-value=2.500
+value=4.216
 rarity=R
 type=Enchantment
 cost={2}{G}

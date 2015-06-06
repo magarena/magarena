@@ -1,6 +1,6 @@
 name=Magister of Worth
 image=http://magiccards.info/scans/en/vma/255.jpg
-value=2.500
+value=4.150
 rarity=R
 type=Creature
 subtype=Angel

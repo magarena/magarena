@@ -1,6 +1,6 @@
 name=Ignorant Bliss
 image=http://magiccards.info/scans/en/di/64.jpg
-value=2.500
+value=3.162
 rarity=U
 type=Instant
 cost={1}{R}

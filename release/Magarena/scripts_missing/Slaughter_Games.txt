@@ -1,6 +1,6 @@
 name=Slaughter Games
 image=http://magiccards.info/scans/en/rtr/197.jpg
-value=2.500
+value=4.078
 rarity=R
 type=Sorcery
 cost={2}{B}{R}

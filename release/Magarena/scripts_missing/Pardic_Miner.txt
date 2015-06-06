@@ -1,6 +1,6 @@
 name=Pardic Miner
 image=http://magiccards.info/scans/en/od/212.jpg
-value=2.500
+value=2.783
 rarity=R
 type=Creature
 subtype=Dwarf

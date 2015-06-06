@@ -1,6 +1,6 @@
 name=Ajani Steadfast
 image=http://magiccards.info/scans/en/m15/1.jpg
-value=2.500
+value=3.950
 rarity=M
 type=Planeswalker
 subtype=Ajani

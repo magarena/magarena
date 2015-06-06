@@ -1,6 +1,6 @@
 name=Kataki, War's Wage
 image=http://magiccards.info/scans/en/md1/24.jpg
-value=2.500
+value=4.409
 rarity=R
 type=Legendary,Creature
 subtype=Spirit

@@ -1,6 +1,6 @@
 name=Teremko Griffin
 image=http://magiccards.info/scans/en/mr/247.jpg
-value=2.500
+value=2.875
 rarity=C
 type=Creature
 subtype=Griffin

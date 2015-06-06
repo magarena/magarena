@@ -1,6 +1,6 @@
 name=Soldevi Sentry
 image=http://magiccards.info/scans/en/ai/175.jpg
-value=2.500
+value=2.295
 rarity=C
 type=Artifact,Creature
 subtype=Soldier

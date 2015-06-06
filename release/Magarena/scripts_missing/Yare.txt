@@ -1,6 +1,6 @@
 name=Yare
 image=http://magiccards.info/scans/en/mr/252.jpg
-value=2.500
+value=2.844
 rarity=R
 type=Instant
 cost={2}{W}

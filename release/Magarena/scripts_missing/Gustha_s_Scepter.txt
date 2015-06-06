@@ -1,6 +1,6 @@
 name=Gustha's Scepter
 image=http://magiccards.info/scans/en/me2/209.jpg
-value=2.500
+value=4.107
 rarity=R
 type=Artifact
 cost={0}

@@ -1,6 +1,6 @@
 name=Herald of Anafenza
 image=http://magiccards.info/scans/en/ktk/12.jpg
-value=2.500
+value=4.167
 rarity=R
 type=Creature
 subtype=Human,Soldier

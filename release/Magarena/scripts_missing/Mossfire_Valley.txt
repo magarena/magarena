@@ -1,6 +1,6 @@
 name=Mossfire Valley
 image=http://magiccards.info/scans/en/od/321.jpg
-value=2.500
+value=4.062
 rarity=R
 type=Land
 ability={1}, {T}: Add {R}{G} to your mana pool.

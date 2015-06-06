@@ -1,6 +1,6 @@
 name=Bubbling Cauldron
 image=http://magiccards.info/scans/en/m14/205.jpg
-value=2.500
+value=3.553
 rarity=U
 type=Artifact
 cost={2}

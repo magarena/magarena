@@ -1,6 +1,6 @@
 name=Graven Cairns
 image=http://magiccards.info/scans/en/shm/272.jpg
-value=2.500
+value=4.167
 rarity=R
 type=Land
 ability={T}: Add {1} to your mana pool.;\

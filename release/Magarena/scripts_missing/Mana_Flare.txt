@@ -1,6 +1,6 @@
 name=Mana Flare
 image=http://magiccards.info/scans/en/med/103.jpg
-value=2.500
+value=3.936
 rarity=R
 type=Enchantment
 cost={2}{R}

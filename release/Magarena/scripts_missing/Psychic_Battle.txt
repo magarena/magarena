@@ -1,6 +1,6 @@
 name=Psychic Battle
 image=http://magiccards.info/scans/en/in/68.jpg
-value=2.500
+value=3.871
 rarity=R
 type=Enchantment
 cost={3}{U}{U}

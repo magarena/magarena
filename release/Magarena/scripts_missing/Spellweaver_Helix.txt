@@ -1,6 +1,6 @@
 name=Spellweaver Helix
 image=http://magiccards.info/scans/en/mi/247.jpg
-value=2.500
+value=3.720
 rarity=R
 type=Artifact
 cost={3}

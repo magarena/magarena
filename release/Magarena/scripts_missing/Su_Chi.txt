@@ -1,6 +1,6 @@
 name=Su-Chi
 image=http://magiccards.info/scans/en/vma/285.jpg
-value=2.500
+value=4.000
 rarity=U
 type=Artifact,Creature
 subtype=Construct

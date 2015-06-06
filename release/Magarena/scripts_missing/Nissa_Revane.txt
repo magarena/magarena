@@ -1,6 +1,6 @@
 name=Nissa Revane
 image=http://magiccards.info/scans/en/zen/170.jpg
-value=2.500
+value=3.471
 rarity=M
 type=Planeswalker
 subtype=Nissa

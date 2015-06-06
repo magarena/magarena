@@ -1,6 +1,6 @@
 name=Shauku, Endbringer
 image=http://magiccards.info/scans/en/mr/40.jpg
-value=2.500
+value=3.965
 rarity=R
 type=Legendary,Creature
 subtype=Vampire

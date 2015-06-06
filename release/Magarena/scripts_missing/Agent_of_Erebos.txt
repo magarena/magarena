@@ -1,6 +1,6 @@
 name=Agent of Erebos
 image=http://magiccards.info/scans/en/jou/59.jpg
-value=2.500
+value=3.204
 rarity=U
 type=Enchantment,Creature
 subtype=Zombie

@@ -1,6 +1,6 @@
 name=Hour of Reckoning
 image=http://magiccards.info/scans/en/cmd/15.jpg
-value=2.500
+value=3.671
 rarity=R
 type=Sorcery
 cost={4}{W}{W}{W}

@@ -1,6 +1,6 @@
 name=Rebound
 image=http://magiccards.info/scans/en/sh/40.jpg
-value=2.500
+value=3.417
 rarity=U
 type=Instant
 cost={1}{U}

@@ -1,6 +1,6 @@
 name=Avizoa
 image=http://magiccards.info/scans/en/wl/35.jpg
-value=2.500
+value=2.011
 rarity=R
 type=Creature
 subtype=Jellyfish

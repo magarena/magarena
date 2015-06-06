@@ -1,6 +1,6 @@
 name=Dead Drop
 image=http://magiccards.info/scans/en/ktk/67.jpg
-value=2.500
+value=1.700
 rarity=U
 type=Sorcery
 cost={9}{B}

@@ -1,6 +1,6 @@
 name=Voidstone Gargoyle
 image=http://magiccards.info/scans/en/pc/21.jpg
-value=2.500
+value=3.802
 rarity=R
 type=Creature
 subtype=Gargoyle

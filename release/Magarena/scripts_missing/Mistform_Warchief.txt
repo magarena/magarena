@@ -1,6 +1,6 @@
 name=Mistform Warchief
 image=http://magiccards.info/scans/en/sc/43.jpg
-value=2.500
+value=3.756
 rarity=U
 type=Creature
 subtype=Illusion

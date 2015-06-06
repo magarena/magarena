@@ -1,6 +1,6 @@
 name=Mercenary Informer
 image=http://magiccards.info/scans/en/pr/15.jpg
-value=2.500
+value=3.161
 rarity=R
 type=Creature
 subtype=Human,Rebel,Mercenary

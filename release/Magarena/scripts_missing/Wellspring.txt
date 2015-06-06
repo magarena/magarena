@@ -1,6 +1,6 @@
 name=Wellspring
 image=http://magiccards.info/scans/en/mr/348.jpg
-value=2.500
+value=2.212
 rarity=R
 type=Enchantment
 subtype=Aura

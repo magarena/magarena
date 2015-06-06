@@ -1,6 +1,6 @@
 name=Sage Aven
 image=http://magiccards.info/scans/en/9e/95.jpg
-value=2.500
+value=1.827
 rarity=C
 type=Creature
 subtype=Bird,Wizard

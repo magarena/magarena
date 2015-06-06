@@ -1,6 +1,6 @@
 name=Cabal Conditioning
 image=http://magiccards.info/scans/en/sc/56.jpg
-value=2.500
+value=3.052
 rarity=R
 type=Sorcery
 cost={6}{B}

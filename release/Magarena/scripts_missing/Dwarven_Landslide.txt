@@ -1,6 +1,6 @@
 name=Dwarven Landslide
 image=http://magiccards.info/scans/en/ap/60.jpg
-value=2.500
+value=2.057
 rarity=C
 type=Sorcery
 cost={3}{R}

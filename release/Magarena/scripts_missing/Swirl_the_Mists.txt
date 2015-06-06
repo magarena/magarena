@@ -1,6 +1,6 @@
 name=Swirl the Mists
 image=http://magiccards.info/scans/en/chk/94.jpg
-value=2.500
+value=3.240
 rarity=R
 type=Enchantment
 cost={2}{U}{U}

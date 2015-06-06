@@ -1,6 +1,6 @@
 name=Aura Finesse
 image=http://magiccards.info/scans/en/roe/54.jpg
-value=2.500
+value=3.008
 rarity=C
 type=Instant
 cost={U}

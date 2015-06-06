@@ -1,6 +1,6 @@
 name=Council Guardian
 image=http://magiccards.info/scans/en/cns/15.jpg
-value=2.500
+value=4.083
 rarity=U
 type=Creature
 subtype=Giant,Soldier

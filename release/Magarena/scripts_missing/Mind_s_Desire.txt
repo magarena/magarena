@@ -1,6 +1,6 @@
 name=Mind's Desire
 image=http://magiccards.info/scans/en/vma/80.jpg
-value=2.500
+value=4.500
 rarity=R
 type=Sorcery
 cost={4}{U}{U}

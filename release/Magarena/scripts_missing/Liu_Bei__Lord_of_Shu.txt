@@ -1,6 +1,6 @@
 name=Liu Bei, Lord of Shu
 image=http://magiccards.info/scans/en/me3/19.jpg
-value=2.500
+value=3.586
 rarity=R
 type=Legendary,Creature
 subtype=Human,Soldier

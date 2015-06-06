@@ -1,6 +1,6 @@
 name=Turntimber Basilisk
 image=http://magiccards.info/scans/en/zen/190.jpg
-value=2.500
+value=3.610
 rarity=U
 type=Creature
 subtype=Basilisk

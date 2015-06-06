@@ -1,6 +1,6 @@
 name=Incremental Blight
 image=http://magiccards.info/scans/en/arc/17.jpg
-value=2.500
+value=3.364
 rarity=U
 type=Sorcery
 cost={3}{B}{B}

@@ -1,6 +1,6 @@
 name=Warden of Evos Isle
 image=http://magiccards.info/scans/en/m14/79.jpg
-value=2.500
+value=3.658
 rarity=U
 type=Creature
 subtype=Bird,Wizard

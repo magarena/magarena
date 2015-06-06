@@ -1,6 +1,6 @@
 name=Hunt the Hunter
 image=http://magiccards.info/scans/en/ths/159.jpg
-value=2.500
+value=2.368
 rarity=U
 type=Sorcery
 cost={G}

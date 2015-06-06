@@ -1,6 +1,6 @@
 name=Skyshroud Cutter
 image=http://magiccards.info/scans/en/ne/118.jpg
-value=2.500
+value=2.915
 rarity=C
 type=Creature
 subtype=Beast

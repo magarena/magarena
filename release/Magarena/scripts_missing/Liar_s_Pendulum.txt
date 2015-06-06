@@ -1,6 +1,6 @@
 name=Liar's Pendulum
 image=http://magiccards.info/scans/en/mi/196.jpg
-value=2.500
+value=3.096
 rarity=R
 type=Artifact
 cost={1}

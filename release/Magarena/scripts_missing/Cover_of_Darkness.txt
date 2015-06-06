@@ -1,6 +1,6 @@
 name=Cover of Darkness
 image=http://magiccards.info/scans/en/on/133.jpg
-value=2.500
+value=4.110
 rarity=R
 type=Enchantment
 cost={1}{B}

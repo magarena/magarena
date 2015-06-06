@@ -1,6 +1,6 @@
 name=Sewers of Estark
 image=http://magiccards.info/scans/en/mbp/2.jpg
-value=2.500
+value=2.781
 rarity=R
 type=Instant
 cost={2}{B}{B}

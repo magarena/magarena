@@ -1,6 +1,6 @@
 name=Akroan Conscriptor
 image=http://magiccards.info/scans/en/bng/87.jpg
-value=2.500
+value=3.461
 rarity=U
 type=Creature
 subtype=Human,Shaman

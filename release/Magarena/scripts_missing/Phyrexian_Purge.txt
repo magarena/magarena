@@ -1,6 +1,6 @@
 name=Phyrexian Purge
 image=http://magiccards.info/scans/en/mr/333.jpg
-value=2.500
+value=3.978
 rarity=R
 type=Sorcery
 cost={2}{B}{R}

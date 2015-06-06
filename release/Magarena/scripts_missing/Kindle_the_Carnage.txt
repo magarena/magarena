@@ -1,6 +1,6 @@
 name=Kindle the Carnage
 image=http://magiccards.info/scans/en/di/66.jpg
-value=2.500
+value=3.878
 rarity=U
 type=Sorcery
 cost={1}{R}{R}

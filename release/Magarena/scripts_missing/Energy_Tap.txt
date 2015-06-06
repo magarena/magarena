@@ -1,6 +1,6 @@
 name=Energy Tap
 image=http://magiccards.info/scans/en/4e/69.jpg
-value=2.500
+value=4.160
 rarity=C
 type=Sorcery
 cost={U}

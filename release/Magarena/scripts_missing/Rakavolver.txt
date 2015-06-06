@@ -1,6 +1,6 @@
 name=Rakavolver
 image=http://magiccards.info/scans/en/ap/68.jpg
-value=2.500
+value=4.192
 rarity=R
 type=Creature
 subtype=Volver

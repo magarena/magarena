@@ -1,6 +1,6 @@
 name=Carpet of Flowers
 image=http://magiccards.info/scans/en/us/240.jpg
-value=2.500
+value=3.716
 rarity=U
 type=Enchantment
 cost={G}

@@ -1,6 +1,6 @@
 name=Pack's Disdain
 image=http://magiccards.info/scans/en/mt/73.jpg
-value=2.500
+value=2.871
 rarity=C
 type=Instant
 cost={1}{B}

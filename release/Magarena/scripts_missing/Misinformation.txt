@@ -1,6 +1,6 @@
 name=Misinformation
 image=http://magiccards.info/scans/en/me2/105.jpg
-value=2.500
+value=4.016
 rarity=U
 type=Instant
 cost={B}

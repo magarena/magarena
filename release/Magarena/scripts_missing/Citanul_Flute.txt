@@ -1,6 +1,6 @@
 name=Citanul Flute
 image=http://magiccards.info/scans/en/10e/315.jpg
-value=2.500
+value=3.727
 rarity=R
 type=Artifact
 cost={5}

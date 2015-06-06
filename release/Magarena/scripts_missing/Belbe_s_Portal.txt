@@ -1,6 +1,6 @@
 name=Belbe's Portal
 image=http://magiccards.info/scans/en/ne/127.jpg
-value=2.500
+value=4.027
 rarity=R
 type=Artifact
 cost={5}

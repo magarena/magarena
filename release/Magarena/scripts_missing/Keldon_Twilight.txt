@@ -1,6 +1,6 @@
 name=Keldon Twilight
 image=http://magiccards.info/scans/en/ps/112.jpg
-value=2.500
+value=3.097
 rarity=R
 type=Enchantment
 cost={1}{B}{R}

@@ -1,6 +1,6 @@
 name=Horizon Scholar
 image=http://magiccards.info/scans/en/ths/51.jpg
-value=2.500
+value=3.156
 rarity=U
 type=Creature
 subtype=Sphinx

@@ -1,6 +1,6 @@
 name=Gomazoa
 image=http://magiccards.info/scans/en/cmd/48.jpg
-value=2.500
+value=3.671
 rarity=U
 type=Creature
 subtype=Jellyfish

@@ -1,6 +1,6 @@
 name=Cloven Casting
 image=http://magiccards.info/scans/en/arb/86.jpg
-value=2.500
+value=2.847
 rarity=R
 type=Enchantment
 cost={5}{U}{R}

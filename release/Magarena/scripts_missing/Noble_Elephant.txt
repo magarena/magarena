@@ -1,6 +1,6 @@
 name=Noble Elephant
 image=http://magiccards.info/scans/en/mr/234.jpg
-value=2.500
+value=2.667
 rarity=C
 type=Creature
 subtype=Elephant

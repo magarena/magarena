@@ -1,6 +1,6 @@
 name=Excavation
 image=http://magiccards.info/scans/en/pr/33.jpg
-value=2.500
+value=2.844
 rarity=U
 type=Enchantment
 cost={1}{U}

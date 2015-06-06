@@ -1,6 +1,6 @@
 name=Quillmane Baku
 image=http://magiccards.info/scans/en/bok/48.jpg
-value=2.500
+value=1.518
 rarity=C
 type=Creature
 subtype=Spirit

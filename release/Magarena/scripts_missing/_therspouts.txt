@@ -1,6 +1,6 @@
 name=Ætherspouts
 image=http://magiccards.info/scans/en/m15/44.jpg
-value=2.500
+value=3.500
 rarity=R
 type=Instant
 cost={3}{U}{U}

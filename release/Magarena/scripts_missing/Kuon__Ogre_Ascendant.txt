@@ -1,6 +1,6 @@
 name=Kuon, Ogre Ascendant
 image=http://magiccards.info/scans/en/sok/78a.jpg
-value=2.500
+value=3.103
 rarity=R
 type=Legendary,Creature
 subtype=Ogre,Monk

@@ -1,6 +1,6 @@
 name=High Ground
 image=http://magiccards.info/scans/en/10e/20.jpg
-value=2.500
+value=4.284
 rarity=U
 type=Enchantment
 cost={W}

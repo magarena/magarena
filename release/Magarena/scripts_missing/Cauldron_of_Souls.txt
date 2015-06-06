@@ -1,6 +1,6 @@
 name=Cauldron of Souls
 image=http://magiccards.info/scans/en/shm/248.jpg
-value=2.500
+value=3.799
 rarity=R
 type=Artifact
 cost={5}

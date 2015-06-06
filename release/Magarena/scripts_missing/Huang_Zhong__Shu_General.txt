@@ -1,6 +1,6 @@
 name=Huang Zhong, Shu General
 image=http://magiccards.info/scans/en/p3k/8.jpg
-value=2.500
+value=2.554
 rarity=R
 type=Legendary,Creature
 subtype=Human,Soldier

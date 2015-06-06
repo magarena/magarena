@@ -1,6 +1,6 @@
 name=Coalition Relic
 image=http://magiccards.info/scans/en/pvc/54.jpg
-value=2.500
+value=4.310
 rarity=R
 type=Artifact
 cost={3}

@@ -1,6 +1,6 @@
 name=Ashnod's Cylix
 image=http://magiccards.info/scans/en/me2/203.jpg
-value=2.500
+value=3.345
 rarity=R
 type=Artifact
 cost={2}

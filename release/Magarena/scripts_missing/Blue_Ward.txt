@@ -1,6 +1,6 @@
 name=Blue Ward
 image=http://magiccards.info/scans/en/4e/260.jpg
-value=2.500
+value=1.939
 rarity=U
 type=Enchantment
 subtype=Aura

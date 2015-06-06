@@ -1,6 +1,6 @@
 name=Curse of Thirst
 image=http://magiccards.info/scans/en/dka/57.jpg
-value=2.500
+value=2.173
 rarity=U
 type=Enchantment
 subtype=Aura,Curse

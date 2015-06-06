@@ -1,6 +1,6 @@
 name=Xenagos, the Reveler
 image=http://magiccards.info/scans/en/ths/209.jpg
-value=2.500
+value=3.737
 rarity=M
 type=Planeswalker
 subtype=Xenagos

@@ -1,6 +1,6 @@
 name=Vampiric Embrace
 image=http://magiccards.info/scans/en/us/164.jpg
-value=2.500
+value=3.788
 rarity=U
 type=Enchantment
 subtype=Aura

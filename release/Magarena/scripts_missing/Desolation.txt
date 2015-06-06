@@ -1,6 +1,6 @@
 name=Desolation
 image=http://magiccards.info/scans/en/vi/8.jpg
-value=2.500
+value=3.583
 rarity=U
 type=Enchantment
 cost={1}{B}{B}

@@ -1,6 +1,6 @@
 name=Savage Offensive
 image=http://magiccards.info/scans/en/in/162.jpg
-value=2.500
+value=2.740
 rarity=C
 type=Sorcery
 cost={1}{R}

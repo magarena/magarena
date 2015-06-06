@@ -1,6 +1,6 @@
 name=Narcomoeba
 image=http://magiccards.info/scans/en/mma/55.jpg
-value=2.500
+value=4.535
 rarity=U
 type=Creature
 subtype=Illusion

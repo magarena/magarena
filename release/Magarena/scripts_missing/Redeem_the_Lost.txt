@@ -1,6 +1,6 @@
 name=Redeem the Lost
 image=http://magiccards.info/scans/en/mt/21.jpg
-value=2.500
+value=2.971
 rarity=U
 type=Instant
 cost={1}{W}

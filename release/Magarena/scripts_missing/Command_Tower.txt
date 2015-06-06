@@ -1,6 +1,6 @@
 name=Command Tower
 image=http://magiccards.info/scans/en/c13/281.jpg
-value=2.500
+value=3.596
 rarity=C
 type=Land
 ability={T}: Add to your mana pool one mana of any color in your commander's color identity.

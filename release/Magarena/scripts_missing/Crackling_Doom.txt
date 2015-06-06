@@ -1,6 +1,6 @@
 name=Crackling Doom
 image=http://magiccards.info/scans/en/ktk/171.jpg
-value=2.500
+value=4.400
 rarity=R
 type=Instant
 cost={R}{W}{B}

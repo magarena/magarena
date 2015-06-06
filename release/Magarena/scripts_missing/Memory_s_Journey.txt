@@ -1,6 +1,6 @@
 name=Memory's Journey
 image=http://magiccards.info/scans/en/isd/66.jpg
-value=2.500
+value=4.185
 rarity=U
 type=Instant
 cost={1}{U}

@@ -1,6 +1,6 @@
 name=Haze Frog
 image=http://magiccards.info/scans/en/roe/187.jpg
-value=2.500
+value=2.273
 rarity=C
 type=Creature
 subtype=Frog

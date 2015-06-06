@@ -1,6 +1,6 @@
 name=Castigate
 image=http://magiccards.info/scans/en/gp/106.jpg
-value=2.500
+value=4.218
 rarity=C
 type=Sorcery
 cost={W}{B}

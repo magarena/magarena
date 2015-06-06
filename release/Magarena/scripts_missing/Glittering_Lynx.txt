@@ -1,6 +1,6 @@
 name=Glittering Lynx
 image=http://magiccards.info/scans/en/pr/11.jpg
-value=2.500
+value=3.569
 rarity=C
 type=Creature
 subtype=Cat

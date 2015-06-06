@@ -1,6 +1,6 @@
 name=Flint Golem
 image=http://magiccards.info/scans/en/ne/130.jpg
-value=2.500
+value=3.103
 rarity=U
 type=Artifact,Creature
 subtype=Golem

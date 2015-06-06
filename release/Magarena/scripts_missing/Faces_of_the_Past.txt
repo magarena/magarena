@@ -1,6 +1,6 @@
 name=Faces of the Past
 image=http://magiccards.info/scans/en/sc/35.jpg
-value=2.500
+value=3.464
 rarity=R
 type=Enchantment
 cost={2}{U}

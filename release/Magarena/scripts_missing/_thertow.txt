@@ -1,6 +1,6 @@
 name=Æthertow
 image=http://magiccards.info/scans/en/shm/136.jpg
-value=2.500
+value=2.884
 rarity=C
 type=Instant
 cost={3}{W/U}

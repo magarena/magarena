@@ -1,6 +1,6 @@
 name=Gamekeeper
 image=http://magiccards.info/scans/en/cns/165.jpg
-value=2.500
+value=3.875
 rarity=U
 type=Creature
 subtype=Elf

@@ -1,6 +1,6 @@
 name=Cabal Interrogator
 image=http://magiccards.info/scans/en/sc/57.jpg
-value=2.500
+value=3.946
 rarity=U
 type=Creature
 subtype=Zombie,Wizard

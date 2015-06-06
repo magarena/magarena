@@ -1,6 +1,6 @@
 name=Trophy Hunter
 image=http://magiccards.info/scans/en/rav/187.jpg
-value=2.500
+value=3.375
 rarity=U
 type=Creature
 subtype=Human,Archer

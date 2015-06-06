@@ -1,6 +1,6 @@
 name=Reweave
 image=http://magiccards.info/scans/en/chk/82.jpg
-value=2.500
+value=3.113
 rarity=R
 type=Instant
 subtype=Arcane

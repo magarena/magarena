@@ -1,6 +1,6 @@
 name=Maelstrom Nexus
 image=http://magiccards.info/scans/en/arb/130.jpg
-value=2.500
+value=3.654
 rarity=M
 type=Enchantment
 cost={W}{U}{B}{R}{G}

@@ -1,6 +1,6 @@
 name=Ogre Savant
 image=http://magiccards.info/scans/en/ddj/9.jpg
-value=2.500
+value=2.333
 rarity=C
 type=Creature
 subtype=Ogre,Wizard

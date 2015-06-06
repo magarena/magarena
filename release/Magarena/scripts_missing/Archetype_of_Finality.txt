@@ -1,6 +1,6 @@
 name=Archetype of Finality
 image=http://magiccards.info/scans/en/bng/58.jpg
-value=2.500
+value=3.466
 rarity=U
 type=Enchantment,Creature
 subtype=Gorgon

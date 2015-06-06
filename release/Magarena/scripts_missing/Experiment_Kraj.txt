@@ -1,6 +1,6 @@
 name=Experiment Kraj
 image=http://magiccards.info/scans/en/di/110.jpg
-value=2.500
+value=4.193
 rarity=R
 type=Legendary,Creature
 subtype=Ooze,Mutant

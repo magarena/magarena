@@ -1,6 +1,6 @@
 name=Suppress
 image=http://magiccards.info/scans/en/ap/52.jpg
-value=2.500
+value=3.500
 rarity=U
 type=Sorcery
 cost={2}{B}

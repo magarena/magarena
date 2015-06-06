@@ -1,6 +1,6 @@
 name=Jihad
 image=http://magiccards.info/scans/en/an/60.jpg
-value=2.500
+value=3.931
 rarity=R
 type=Enchantment
 cost={W}{W}{W}

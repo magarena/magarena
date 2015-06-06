@@ -1,6 +1,6 @@
 name=Karrthus, Tyrant of Jund
 image=http://magiccards.info/scans/en/arb/117.jpg
-value=2.500
+value=4.101
 rarity=M
 type=Legendary,Creature
 subtype=Dragon

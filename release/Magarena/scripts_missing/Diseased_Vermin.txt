@@ -1,6 +1,6 @@
 name=Diseased Vermin
 image=http://magiccards.info/scans/en/ai/5.jpg
-value=2.500
+value=3.303
 rarity=U
 type=Creature
 subtype=Rat

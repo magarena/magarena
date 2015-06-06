@@ -1,6 +1,6 @@
 name=Lurking Jackals
 image=http://magiccards.info/scans/en/ud/62.jpg
-value=2.500
+value=3.620
 rarity=U
 type=Enchantment
 cost={B}

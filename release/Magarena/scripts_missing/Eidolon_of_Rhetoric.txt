@@ -1,6 +1,6 @@
 name=Eidolon of Rhetoric
 image=http://magiccards.info/scans/en/jou/10.jpg
-value=2.500
+value=4.071
 rarity=U
 type=Enchantment,Creature
 subtype=Spirit

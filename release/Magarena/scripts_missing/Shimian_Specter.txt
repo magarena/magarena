@@ -1,6 +1,6 @@
 name=Shimian Specter
 image=http://magiccards.info/scans/en/m13/109.jpg
-value=2.500
+value=3.943
 rarity=R
 type=Creature
 subtype=Specter

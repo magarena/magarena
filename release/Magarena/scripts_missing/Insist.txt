@@ -1,6 +1,6 @@
 name=Insist
 image=http://magiccards.info/scans/en/tr/127.jpg
-value=2.500
+value=4.102
 rarity=R
 type=Sorcery
 cost={G}

@@ -1,6 +1,6 @@
 name=Paralyze
 image=http://magiccards.info/scans/en/vma/132.jpg
-value=2.500
+value=4.000
 rarity=C
 type=Enchantment
 subtype=Aura

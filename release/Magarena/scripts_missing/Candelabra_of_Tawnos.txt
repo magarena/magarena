@@ -1,6 +1,6 @@
 name=Candelabra of Tawnos
 image=http://magiccards.info/scans/en/me4/187.jpg
-value=2.500
+value=4.599
 rarity=R
 type=Artifact
 cost={1}

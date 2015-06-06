@@ -1,6 +1,6 @@
 name=Veiled Serpent
 image=http://magiccards.info/scans/en/us/110.jpg
-value=2.500
+value=3.231
 rarity=C
 type=Enchantment
 cost={2}{U}

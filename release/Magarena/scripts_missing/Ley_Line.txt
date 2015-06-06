@@ -1,6 +1,6 @@
 name=Ley Line
 image=http://magiccards.info/scans/en/mm/256.jpg
-value=2.500
+value=2.161
 rarity=U
 type=Enchantment
 cost={3}{G}

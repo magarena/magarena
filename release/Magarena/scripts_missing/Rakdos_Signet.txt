@@ -1,6 +1,6 @@
 name=Rakdos Signet
 image=http://magiccards.info/scans/en/cmd/257.jpg
-value=2.500
+value=3.577
 rarity=C
 type=Artifact
 cost={2}

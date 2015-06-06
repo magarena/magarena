@@ -1,6 +1,6 @@
 name=Tear
 image=http://magiccards.info/scans/en/dgm/135b.jpg
-value=2.500
+value=4.315
 rarity=U
 type=Instant
 cost={W}

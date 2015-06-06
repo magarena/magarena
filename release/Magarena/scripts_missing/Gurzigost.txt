@@ -1,6 +1,6 @@
 name=Gurzigost
 image=http://magiccards.info/scans/en/tr/126.jpg
-value=2.500
+value=4.103
 rarity=R
 type=Creature
 subtype=Beast

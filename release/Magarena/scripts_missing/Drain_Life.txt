@@ -1,6 +1,6 @@
 name=Drain Life
 image=http://magiccards.info/scans/en/bd/24.jpg
-value=2.500
+value=3.868
 rarity=C
 type=Sorcery
 cost={X}{1}{B}

@@ -1,6 +1,6 @@
 name=Gift of the Deity
 image=http://magiccards.info/scans/en/eve/122.jpg
-value=2.500
+value=3.321
 rarity=C
 type=Enchantment
 subtype=Aura

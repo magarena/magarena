@@ -1,6 +1,6 @@
 name=Relentless Assault
 image=http://magiccards.info/scans/en/pch/62.jpg
-value=2.500
+value=4.221
 rarity=R
 type=Sorcery
 cost={2}{R}{R}

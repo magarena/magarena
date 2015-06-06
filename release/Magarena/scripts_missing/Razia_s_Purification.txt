@@ -1,6 +1,6 @@
 name=Razia's Purification
 image=http://magiccards.info/scans/en/rav/224.jpg
-value=2.500
+value=4.000
 rarity=R
 type=Sorcery
 cost={4}{R}{W}

@@ -1,6 +1,6 @@
 name=Sporogenesis
 image=http://magiccards.info/scans/en/us/273.jpg
-value=2.500
+value=3.629
 rarity=R
 type=Enchantment
 cost={3}{G}

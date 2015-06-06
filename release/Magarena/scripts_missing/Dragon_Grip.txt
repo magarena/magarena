@@ -1,6 +1,6 @@
 name=Dragon Grip
 image=http://magiccards.info/scans/en/ktk/107.jpg
-value=2.500
+value=3.667
 rarity=U
 type=Enchantment
 subtype=Aura

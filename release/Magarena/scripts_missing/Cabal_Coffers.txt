@@ -1,6 +1,6 @@
 name=Cabal Coffers
 image=http://magiccards.info/scans/en/pch/132.jpg
-value=2.500
+value=4.348
 rarity=U
 type=Land
 ability={2}, {T}: Add {B} to your mana pool for each Swamp you control.

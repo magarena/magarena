@@ -1,6 +1,6 @@
 name=Ana Sanctuary
 image=http://magiccards.info/scans/en/ap/74.jpg
-value=2.500
+value=3.643
 rarity=U
 type=Enchantment
 cost={2}{G}

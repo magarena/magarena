@@ -1,6 +1,6 @@
 name=Verdant Succession
 image=http://magiccards.info/scans/en/od/280.jpg
-value=2.500
+value=4.037
 rarity=R
 type=Enchantment
 cost={4}{G}

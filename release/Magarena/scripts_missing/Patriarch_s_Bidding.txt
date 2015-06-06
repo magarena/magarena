@@ -1,6 +1,6 @@
 name=Patriarch's Bidding
 image=http://magiccards.info/scans/en/on/161.jpg
-value=2.500
+value=4.298
 rarity=R
 type=Sorcery
 cost={3}{B}{B}

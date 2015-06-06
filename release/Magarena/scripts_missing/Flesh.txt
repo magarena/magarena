@@ -1,6 +1,6 @@
 name=Flesh
 image=http://magiccards.info/scans/en/dgm/128a.jpg
-value=2.500
+value=3.977
 rarity=R
 type=Sorcery
 cost={3}{B}{G}

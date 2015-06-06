@@ -1,6 +1,6 @@
 name=Valor Made Real
 image=http://magiccards.info/scans/en/cns/86.jpg
-value=2.500
+value=3.625
 rarity=C
 type=Instant
 cost={W}

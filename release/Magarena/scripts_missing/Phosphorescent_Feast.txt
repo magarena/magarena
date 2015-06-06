@@ -1,6 +1,6 @@
 name=Phosphorescent Feast
 image=http://magiccards.info/scans/en/eve/72.jpg
-value=2.500
+value=2.019
 rarity=U
 type=Sorcery
 cost={2}{G}{G}{G}

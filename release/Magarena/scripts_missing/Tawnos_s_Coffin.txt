@@ -1,6 +1,6 @@
 name=Tawnos's Coffin
 image=http://magiccards.info/scans/en/med/169.jpg
-value=2.500
+value=3.897
 rarity=R
 type=Artifact
 cost={4}

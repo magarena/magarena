@@ -1,6 +1,6 @@
 name=Charging Rhino
 image=http://magiccards.info/scans/en/m15/171.jpg
-value=2.500
+value=3.000
 rarity=C
 type=Creature
 subtype=Rhino

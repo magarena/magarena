@@ -1,6 +1,6 @@
 name=Possessed Nomad
 image=http://magiccards.info/scans/en/tr/13.jpg
-value=2.500
+value=3.622
 rarity=R
 type=Creature
 subtype=Human,Nomad,Horror

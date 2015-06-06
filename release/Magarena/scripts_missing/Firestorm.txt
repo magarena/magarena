@@ -1,6 +1,6 @@
 name=Firestorm
 image=http://magiccards.info/scans/en/wl/101.jpg
-value=2.500
+value=4.488
 rarity=R
 type=Instant
 cost={R}

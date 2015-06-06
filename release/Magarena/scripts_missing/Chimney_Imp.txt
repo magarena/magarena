@@ -1,6 +1,6 @@
 name=Chimney Imp
 image=http://magiccards.info/scans/en/mi/59.jpg
-value=2.500
+value=3.312
 rarity=C
 type=Creature
 subtype=Imp

@@ -1,6 +1,6 @@
 name=Warbreak Trumpeter
 image=http://magiccards.info/scans/en/le/116.jpg
-value=2.500
+value=3.061
 rarity=U
 type=Creature
 subtype=Goblin

@@ -1,6 +1,6 @@
 name=Leeching Licid
 image=http://magiccards.info/scans/en/tp/35.jpg
-value=2.500
+value=2.621
 rarity=U
 type=Creature
 subtype=Licid

@@ -1,6 +1,6 @@
 name=Brighthearth Banneret
 image=http://magiccards.info/scans/en/mt/88.jpg
-value=2.500
+value=3.514
 rarity=C
 type=Creature
 subtype=Elemental,Warrior

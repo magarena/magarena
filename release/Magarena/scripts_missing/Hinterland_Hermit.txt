@@ -1,6 +1,6 @@
 name=Hinterland Hermit
 image=http://magiccards.info/scans/en/dka/94a.jpg
-value=2.500
+value=2.349
 rarity=C
 type=Creature
 subtype=Human,Werewolf

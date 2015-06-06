@@ -1,6 +1,6 @@
 name=Archive Trap
 image=http://magiccards.info/scans/en/zen/41.jpg
-value=2.500
+value=4.483
 rarity=R
 type=Instant
 subtype=Trap

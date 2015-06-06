@@ -1,6 +1,6 @@
 name=Temporal Extortion
 image=http://magiccards.info/scans/en/pc/81.jpg
-value=2.500
+value=4.196
 rarity=R
 type=Sorcery
 cost={B}{B}{B}{B}

@@ -1,6 +1,6 @@
 name=Wheel of Sun and Moon
 image=http://magiccards.info/scans/en/shm/243.jpg
-value=2.500
+value=4.510
 rarity=R
 type=Enchantment
 subtype=Aura

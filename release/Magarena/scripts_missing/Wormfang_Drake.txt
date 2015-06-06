@@ -1,6 +1,6 @@
 name=Wormfang Drake
 image=http://magiccards.info/scans/en/ju/57.jpg
-value=2.500
+value=4.070
 rarity=C
 type=Creature
 subtype=Nightmare,Drake

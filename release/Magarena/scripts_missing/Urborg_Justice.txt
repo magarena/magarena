@@ -1,6 +1,6 @@
 name=Urborg Justice
 image=http://magiccards.info/scans/en/wl/26.jpg
-value=2.500
+value=4.064
 rarity=R
 type=Instant
 cost={B}{B}

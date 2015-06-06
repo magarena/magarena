@@ -1,6 +1,6 @@
 name=Words of Worship
 image=http://magiccards.info/scans/en/on/61.jpg
-value=2.500
+value=3.596
 rarity=R
 type=Enchantment
 cost={2}{W}

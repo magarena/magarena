@@ -1,6 +1,6 @@
 name=Dance of Many
 image=http://magiccards.info/scans/en/me3/34.jpg
-value=2.500
+value=4.039
 rarity=U
 type=Enchantment
 cost={U}{U}

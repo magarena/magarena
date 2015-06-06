@@ -1,6 +1,6 @@
 name=Kumano's Pupils
 image=http://magiccards.info/scans/en/chk/177.jpg
-value=2.500
+value=1.241
 rarity=U
 type=Creature
 subtype=Human,Shaman

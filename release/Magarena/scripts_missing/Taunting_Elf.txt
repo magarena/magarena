@@ -1,6 +1,6 @@
 name=Taunting Elf
 image=http://magiccards.info/scans/en/on/290.jpg
-value=2.500
+value=4.321
 rarity=C
 type=Creature
 subtype=Elf

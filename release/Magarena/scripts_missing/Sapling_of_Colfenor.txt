@@ -1,6 +1,6 @@
 name=Sapling of Colfenor
 image=http://magiccards.info/scans/en/eve/128.jpg
-value=2.500
+value=3.836
 rarity=R
 type=Legendary,Creature
 subtype=Treefolk,Shaman

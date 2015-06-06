@@ -1,6 +1,6 @@
 name=Necrotic Plague
 image=http://magiccards.info/scans/en/m11/107.jpg
-value=2.500
+value=2.854
 rarity=R
 type=Enchantment
 subtype=Aura

@@ -1,6 +1,6 @@
 name=Lim-Dûl's Hex
 image=http://magiccards.info/scans/en/ia/34.jpg
-value=2.500
+value=3.284
 rarity=U
 type=Enchantment
 cost={1}{B}
