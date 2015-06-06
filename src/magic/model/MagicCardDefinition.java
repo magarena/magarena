@@ -623,6 +623,11 @@ public class MagicCardDefinition implements MagicAbilityStore {
         if (colorFlags == -1) {
             throw new RuntimeException(name + "'s color is not set");
         }
+
+        //every Aura should have an MagicPlayAuraEvent
+        if (isAura() && cardEvent == MagicPlayCardEvent.create()) {
+            throw new RuntimeException(name + " does not have the enchant property");
+        }
     }
 
     public MagicManaCost getCost() {
