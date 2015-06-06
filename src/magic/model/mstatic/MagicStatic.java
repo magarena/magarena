@@ -337,6 +337,26 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
         };
     }
 
+    public static MagicStatic ControlAsLongAsSourceIsTapped(final MagicPlayer you, final MagicPermanent target) {
+        final MagicTargetFilter<MagicPermanent> filter = new MagicPermanentTargetFilter(target);
+        return new MagicStatic(MagicLayer.Control,filter) {
+            @Override
+            public MagicPlayer getController(final MagicPermanent source, final MagicPermanent permanent, final MagicPlayer player) {
+                return source.getController();
+            }
+            @Override
+            public boolean condition(final MagicGame game, final MagicPermanent source, final MagicPermanent target) {
+                if (source.isUntapped()) {
+                    //remove this static after the update
+                    game.addDelayedAction(new RemoveStaticAction(source, this));
+                    return false;
+                } else {
+                    return true;
+                }
+            }
+        };
+    }
+
     public static MagicStatic Unleash = new MagicStatic(MagicLayer.Ability) {
         @Override
         public void modAbilityFlags(final MagicPermanent source, final MagicPermanent permanent, final Set<MagicAbility> flags) {
