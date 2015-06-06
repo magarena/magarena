@@ -4,6 +4,7 @@ value=3.438
 rarity=R
 type=Sorcery
 cost={1}{G}
-effect=Each player puts a green Elephant creature token onto the battlefield. Those creatures have "This creature's power and toughness are each equal to the number of creature cards in its controller's graveyard."
+ability=Cast SN with AI only if you have a creature card in your graveyard.
 timing=main
+requires_groovy_code
 oracle=Each player puts a green Elephant creature token onto the battlefield. Those creatures have "This creature's power and toughness are each equal to the number of creature cards in its controller's graveyard."

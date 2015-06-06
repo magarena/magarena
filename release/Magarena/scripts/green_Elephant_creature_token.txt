@@ -1,0 +1,10 @@
+name=green Elephant creature token
+token=Elephant
+image=http://cdn.staticneo.com/w/mtg/2/20/Elephant3.jpg
+value=4
+type=Creature
+subtype=Elephant
+color=g
+pt=*/*
+ability=SN's power and toughness are each equal to the number of creature cards in your graveyard.
+oracle=This creature's power and toughness are each equal to the number of creature cards in its controller's graveyard.
