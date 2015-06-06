@@ -5,9 +5,9 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={1}{W}
-ability=Enchant creature;\
-        Enchanted creature can't attack.;\
+ability=Enchanted creature can't attack.;\
         {B}: Enchanted creature gets -1/-1 until end of turn.;\
         {R}: Enchanted creature can't block this turn.
 timing=aura
+enchant=can't attack,neg creature
 oracle=Enchant creature\nEnchanted creature can't attack.\n{B}: Enchanted creature gets -1/-1 until end of turn.\n{R}: Enchanted creature can't block this turn.
