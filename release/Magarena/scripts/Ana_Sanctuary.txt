@@ -4,6 +4,6 @@ value=3.643
 rarity=U
 type=Enchantment
 cost={2}{G}
-ability=At the beginning of your upkeep, if you control a blue or black permanent, target creature gets +1/+1 until end of turn. If you control a blue permanent and a black permanent, that creature gets +5/+5 until end of turn instead.
 timing=enchantment
+requires_groovy_code
 oracle=At the beginning of your upkeep, if you control a blue or black permanent, target creature gets +1/+1 until end of turn. If you control a blue permanent and a black permanent, that creature gets +5/+5 until end of turn instead.
