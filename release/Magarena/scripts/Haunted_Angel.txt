@@ -6,7 +6,7 @@ type=Creature
 subtype=Angel
 cost={2}{W}
 pt=3/3
-ability=Flying;\
-        When SN dies, exile SN and each other player puts a 3/3 black Angel creature token with flying onto the battlefield.
+ability=Flying
 timing=main
+requires_groovy_code
 oracle=Flying\nWhen Haunted Angel dies, exile Haunted Angel and each other player puts a 3/3 black Angel creature token with flying onto the battlefield.
