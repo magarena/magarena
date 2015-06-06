@@ -6,6 +6,6 @@ type=Legendary,Creature
 subtype=Human,Monk
 cost={1}{G}{G}
 pt=2/2
-ability=Players can cast spells only during their own turns.
 timing=main
+requires_groovy_code
 oracle=Players can cast spells only during their own turns.
