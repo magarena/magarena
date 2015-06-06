@@ -5,6 +5,7 @@ rarity=U
 type=Instant
 subtype=Arcane
 cost={2}{R}
-effect=Each enchantment deals 2 damage to its controller, then each Aura attached to a creature deals 2 damage to the creature it's attached to.
+ability=Cast SN with AI only if an opponent controls an enchantment.
 timing=removal
+requires_groovy_code
 oracle=Each enchantment deals 2 damage to its controller, then each Aura attached to a creature deals 2 damage to the creature it's attached to.
