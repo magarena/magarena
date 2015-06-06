@@ -7,6 +7,6 @@ subtype=Aura
 cost={W}
 ability={1}{W}: Attach SN to target creature.;\
         Enchanted creature can't activate abilities.
+timing=aura
 enchant=default,neg creature
-timing=enchantment
 oracle=Enchant creature\nEnchanted creature's activated abilities can't be activated.\n{1}{W}: Attach Detainment Spell to target creature.
