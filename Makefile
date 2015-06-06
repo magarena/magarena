@@ -480,7 +480,6 @@ find_android: $(MAG)
 
 # meta check
 checks: \
-	check_aura \
 	check_requires_groovy_code \
 	check_script_name \
 	check_tokens \
@@ -512,12 +511,6 @@ check_meta: cards/scriptable.txt
 # every image is to a jpg file or attachment
 check_image:
 	grep '^image=' -r release/Magarena/scripts | grep -v "jpg$$" | grep -v "png$$" | grep -v attachment.php | ${NO_OUTPUT}
-
-# every aura must have an enchant property
-check_aura:
-	diff \
-	<(grep "subtype.*Aura" -lr release/Magarena/scripts | sort) \
-	<(grep enchant= -lr release/Magarena/scripts | sort)
 
 # every card that requires groovy code has a corresponding groovy script file
 # every groovy script file has a corresponding card script that requires groovy code
