@@ -3,6 +3,7 @@ package magic.model.condition;
 import magic.model.MagicGame;
 import magic.model.MagicSource;
 import magic.model.event.MagicEvent;
+import magic.model.event.MagicConditionEvent;
 
 public class MagicArtificialCondition extends MagicCondition {
 
@@ -19,7 +20,7 @@ public class MagicArtificialCondition extends MagicCondition {
     
     @Override
     public MagicEvent getEvent(final MagicSource source) {
-        return cond.getEvent(source);
+        return new MagicConditionEvent(source, this);
     }
 
     @Override
