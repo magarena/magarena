@@ -410,6 +410,10 @@ public class ImageDrawingUtils {
                     g.drawImage(IconImages.getIcon(MagicIcon.DEVOTIONCOUNTER).getImage(),ax,ay,observer);
                     if (amount > 1){drawStringWithOutline(g, str, ax+6, ay+14, observer);}
                     ax+=inc;
+                }   else if (counterType == MagicCounterType.Divinity) {
+                    g.drawImage(IconImages.getIcon(MagicIcon.DIVINITYCOUNTER).getImage(),ax,ay,observer);
+                    if (amount > 1){drawStringWithOutline(g, str, ax+6, ay+14, observer);}
+                    ax+=inc;
                 }
             }
         }

@@ -179,6 +179,7 @@ public enum MagicIcon {
     HEALINGCOUNTER("healing-counter.png"),
     SCREAMCOUNTER("scream-counter.png"),
     DEVOTIONCOUNTER("devotion-counter.png"),
+    DIVINITYCOUNTER("divinity-counter.png"),
 
     MANA_ANY("anymana.gif"),
 
