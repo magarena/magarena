@@ -5,7 +5,6 @@
             return new MagicEvent(
                 cardOnStack,
                 NEG_TARGET_CREATURE,
-                new MagicDamageTargetPicker(2),
                 this,
                 "Until end of turn, target creature\$ and each other creature that shares a color with it gain \"This creature can't block.\""
             );
