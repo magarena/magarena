@@ -4,6 +4,6 @@ value=3.364
 rarity=C
 type=Instant
 cost={1}{W}
-effect=Destroy target enchantment and each other enchantment that shares a color with it.
 timing=removal
+requires_groovy_code
 oracle=Radiance — Destroy target enchantment and each other enchantment that shares a color with it.
