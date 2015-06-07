@@ -451,6 +451,10 @@ verify_mana_cost_order: cards/mtg_mana_costs cards/mag_mana_costs
 	vim $^
 	hg add $^
 
+update_default_value:
+	grep value=2.500 -r release/Magarena/scripts release/Magarena/scripts_missing -l | parallel -j 30 make {}.update_value
+	git checkout -- `grep "value=$$" -r release/Magarena/scripts release/Magarena/scripts_missing -l`
+
 find_event_data: scripts/check_data.awk
 	for i in `grep "new MagicEvent(" -lr src`; do \
 			grep "new Object\|data\[[0-9\]" $$i > /dev/null && echo $$i; \
