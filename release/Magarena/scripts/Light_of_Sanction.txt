@@ -4,6 +4,6 @@ value=3.010
 rarity=R
 type=Enchantment
 cost={1}{W}{W}
-ability=Prevent all damage that would be dealt to creatures you control by sources you control.
 timing=enchantment
+requires_groovy_code
 oracle=Prevent all damage that would be dealt to creatures you control by sources you control.
