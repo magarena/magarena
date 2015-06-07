@@ -1,6 +1,6 @@
 name=Scarwood Bandits
 image=http://magiccards.info/scans/en/me4/165.jpg
-value=2.500
+value=3.361
 rarity=R
 type=Creature
 subtype=Human,Rogue

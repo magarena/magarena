@@ -1,6 +1,6 @@
 name=Enchanted Being
 image=http://magiccards.info/scans/en/lg/181.jpg
-value=2.500
+value=2.100
 rarity=C
 type=Creature
 subtype=Human

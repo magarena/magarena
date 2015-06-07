@@ -1,6 +1,6 @@
 name=Monsoon
 image=http://magiccards.info/scans/en/ia/376.jpg
-value=2.500
+value=3.044
 rarity=R
 type=Enchantment
 cost={2}{R}{G}

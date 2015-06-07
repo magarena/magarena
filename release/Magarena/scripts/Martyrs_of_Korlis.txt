@@ -1,6 +1,6 @@
 name=Martyrs of Korlis
 image=http://magiccards.info/scans/en/me4/20.jpg
-value=2.500
+value=2.963
 rarity=U
 type=Creature
 subtype=Human

@@ -1,6 +1,6 @@
 name=Mana Vortex
 image=http://magiccards.info/scans/en/me3/44.jpg
-value=2.500
+value=3.542
 rarity=R
 type=Enchantment
 cost={1}{U}{U}

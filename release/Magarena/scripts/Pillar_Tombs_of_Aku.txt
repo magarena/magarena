@@ -1,6 +1,6 @@
 name=Pillar Tombs of Aku
 image=http://magiccards.info/scans/en/vi/17.jpg
-value=2.500
+value=3.419
 rarity=R
 type=World,Enchantment
 cost={2}{B}{B}

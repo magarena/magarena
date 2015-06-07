@@ -1,6 +1,6 @@
 name=Goblin Cadets
 image=http://magiccards.info/scans/en/cmd/125.jpg
-value=2.500
+value=2.683
 rarity=U
 type=Creature
 subtype=Goblin

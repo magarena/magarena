@@ -1,6 +1,6 @@
 name=Spore Cloud
 image=http://magiccards.info/scans/en/me2/176.jpg
-value=2.500
+value=3.774
 rarity=U
 type=Instant
 cost={1}{G}{G}

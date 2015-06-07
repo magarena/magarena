@@ -1,6 +1,6 @@
 name=Snow Devil
 image=http://magiccards.info/scans/en/cstd/16.jpg
-value=2.500
+value=2.839
 rarity=C
 type=Enchantment
 subtype=Aura

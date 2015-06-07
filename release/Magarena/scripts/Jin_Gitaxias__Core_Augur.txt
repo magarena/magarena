@@ -1,6 +1,6 @@
 name=Jin-Gitaxias, Core Augur
 image=http://magiccards.info/scans/en/nph/37.jpg
-value=2.500
+value=4.205
 rarity=M
 type=Legendary,Creature
 subtype=Praetor

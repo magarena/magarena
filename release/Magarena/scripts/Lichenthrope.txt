@@ -1,6 +1,6 @@
 name=Lichenthrope
 image=http://magiccards.info/scans/en/vi/62.jpg
-value=2.500
+value=2.543
 rarity=R
 type=Creature
 subtype=Plant,Fungus

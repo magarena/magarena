@@ -1,6 +1,6 @@
 name=Spitting Slug
 image=http://magiccards.info/scans/en/tsts/85.jpg
-value=2.500
+value=3.310
 rarity=U
 type=Creature
 subtype=Slug

@@ -1,6 +1,6 @@
 name=Gnat Miser
 image=http://magiccards.info/scans/en/sok/70.jpg
-value=2.500
+value=3.617
 rarity=C
 type=Creature
 subtype=Rat,Shaman

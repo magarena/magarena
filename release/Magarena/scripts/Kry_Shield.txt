@@ -1,6 +1,6 @@
 name=Kry Shield
 image=http://magiccards.info/scans/en/lg/227.jpg
-value=2.500
+value=2.222
 rarity=U
 type=Artifact
 cost={2}

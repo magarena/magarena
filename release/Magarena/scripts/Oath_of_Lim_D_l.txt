@@ -1,6 +1,6 @@
 name=Oath of Lim-Dûl
 image=http://magiccards.info/scans/en/ia/44.jpg
-value=2.500
+value=2.973
 rarity=R
 type=Enchantment
 cost={3}{B}

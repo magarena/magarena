@@ -1,6 +1,6 @@
 name=Soldevi Heretic
 image=http://magiccards.info/scans/en/ai/49.jpg
-value=2.500
+value=1.587
 rarity=C
 type=Creature
 subtype=Human,Cleric

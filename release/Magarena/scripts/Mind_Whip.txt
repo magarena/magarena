@@ -1,6 +1,6 @@
 name=Mind Whip
 image=http://magiccards.info/scans/en/ia/37.jpg
-value=2.500
+value=2.919
 rarity=R
 type=Enchantment
 subtype=Aura

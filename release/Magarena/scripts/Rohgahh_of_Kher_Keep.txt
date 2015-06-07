@@ -1,6 +1,6 @@
 name=Rohgahh of Kher Keep
 image=http://magiccards.info/scans/en/me3/172.jpg
-value=2.500
+value=3.090
 rarity=R
 type=Legendary,Creature
 subtype=Kobold

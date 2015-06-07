@@ -1,6 +1,6 @@
 name=Giant Caterpillar
 image=http://magiccards.info/scans/en/mm/249.jpg
-value=2.500
+value=2.744
 rarity=C
 type=Creature
 subtype=Insect

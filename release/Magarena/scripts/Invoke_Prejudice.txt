@@ -1,6 +1,6 @@
 name=Invoke Prejudice
 image=http://magiccards.info/scans/en/lg/62.jpg
-value=2.500
+value=4.408
 rarity=R
 type=Enchantment
 cost={U}{U}{U}{U}

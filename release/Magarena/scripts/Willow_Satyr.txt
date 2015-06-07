@@ -1,6 +1,6 @@
 name=Willow Satyr
 image=http://magiccards.info/scans/en/me3/139.jpg
-value=2.500
+value=3.857
 rarity=R
 type=Creature
 subtype=Satyr

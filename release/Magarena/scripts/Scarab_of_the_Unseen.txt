@@ -1,6 +1,6 @@
 name=Scarab of the Unseen
 image=http://magiccards.info/scans/en/ai/171.jpg
-value=2.500
+value=2.212
 rarity=U
 type=Artifact
 cost={2}

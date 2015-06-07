@@ -1,6 +1,6 @@
 name=Curse Artifact
 image=http://magiccards.info/scans/en/dk/5.jpg
-value=2.500
+value=2.658
 rarity=U
 type=Enchantment
 subtype=Aura

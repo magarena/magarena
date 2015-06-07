@@ -1,6 +1,6 @@
 name=Cloak of Confusion
 image=http://magiccards.info/scans/en/me2/82.jpg
-value=2.500
+value=3.241
 rarity=C
 type=Enchantment
 subtype=Aura

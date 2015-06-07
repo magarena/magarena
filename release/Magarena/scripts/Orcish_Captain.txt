@@ -1,6 +1,6 @@
 name=Orcish Captain
 image=http://magiccards.info/scans/en/me2/139.jpg
-value=2.500
+value=2.726
 rarity=U
 type=Creature
 subtype=Orc,Warrior

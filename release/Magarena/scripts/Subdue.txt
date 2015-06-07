@@ -1,6 +1,6 @@
 name=Subdue
 image=http://magiccards.info/scans/en/lg/120.jpg
-value=2.500
+value=2.196
 rarity=C
 type=Instant
 cost={G}

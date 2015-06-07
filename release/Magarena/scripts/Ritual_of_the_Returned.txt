@@ -1,6 +1,6 @@
 name=Ritual of the Returned
 image=http://magiccards.info/scans/en/jou/80.jpg
-value=2.500
+value=3.522
 rarity=U
 type=Instant
 cost={3}{B}

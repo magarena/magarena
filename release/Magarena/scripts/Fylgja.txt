@@ -1,6 +1,6 @@
 name=Fylgja
 image=http://magiccards.info/scans/en/ia/250.jpg
-value=2.500
+value=2.729
 rarity=C
 type=Enchantment
 subtype=Aura

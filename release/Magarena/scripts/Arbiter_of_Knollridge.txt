@@ -1,6 +1,6 @@
 name=Arbiter of Knollridge
 image=http://magiccards.info/scans/en/cmd/6.jpg
-value=2.500
+value=2.984
 rarity=R
 type=Creature
 subtype=Giant,Wizard

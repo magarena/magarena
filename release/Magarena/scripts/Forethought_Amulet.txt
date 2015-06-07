@@ -1,6 +1,6 @@
 name=Forethought Amulet
 image=http://magiccards.info/scans/en/lg/221.jpg
-value=2.500
+value=2.276
 rarity=R
 type=Artifact
 cost={5}
