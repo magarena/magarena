@@ -5,8 +5,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={1}{U}
-ability=Enchant creature;\
-        Enchanted creature has flying.;\
+ability=Enchanted creature has flying.;\
         Sacrifice SN: Return enchanted creature to its owner's hand.
 timing=aura
+enchant=flying,pos creature
 oracle=Enchant creature\nEnchanted creature has flying.\nSacrifice Phantom Wings: Return enchanted creature to its owner's hand.
