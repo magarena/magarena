@@ -5,8 +5,8 @@ rarity=U
 type=Enchantment
 subtype=Aura
 cost={4}{G}{W}
-ability=Enchant creature;\
-        Enchanted creature has flying.;\
-        Whenever enchanted creature deals combat damage to a player, put that many 1/1 green Saproling creature tokens onto the battlefield.
+ability=Enchanted creature has flying.
 timing=aura
+enchant=flying,pos creature
+requires_groovy_code
 oracle=Enchant creature\nEnchanted creature has flying.\nWhenever enchanted creature deals combat damage to a player, put that many 1/1 green Saproling creature tokens onto the battlefield.
