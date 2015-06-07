@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Wizard
 cost={3}{R}
 pt=1/2
-ability={T}: SN deals 1 damage to target creature and each other creature that shares a color with it.
 timing=main
+requires_groovy_code
 oracle=Radiance — {T}: Wojek Embermage deals 1 damage to target creature and each other creature that shares a color with it.
