@@ -4,6 +4,6 @@ value=0.875
 rarity=U
 type=Artifact
 cost={2}
-ability={3}, {T}: Tap target creature, then return SN to its owner's hand.
+ability={3}, {T}: Tap target creature.~Return SN to its owner's hand.
 timing=artifact
 oracle={3}, {T}: Tap target creature, then return Cyclopean Snare to its owner's hand.
