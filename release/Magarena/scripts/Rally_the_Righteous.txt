@@ -4,6 +4,6 @@ value=3.420
 rarity=C
 type=Instant
 cost={1}{R}{W}
-effect=Untap target creature and each other creature that shares a color with it. Those creatures get +2/+0 until end of turn.
-timing=removal
+timing=attack
+requires_groovy_code
 oracle=Radiance — Untap target creature and each other creature that shares a color with it. Those creatures get +2/+0 until end of turn.
