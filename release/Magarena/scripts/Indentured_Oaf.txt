@@ -6,6 +6,6 @@ type=Creature
 subtype=Ogre,Warrior
 cost={3}{R}
 pt=4/3
-ability=Prevent all damage that SN would deal to red creatures.
 timing=main
+requires_groovy_code
 oracle=Prevent all damage that Indentured Oaf would deal to red creatures.
