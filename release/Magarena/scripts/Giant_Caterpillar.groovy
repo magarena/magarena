@@ -4,7 +4,7 @@ def trigger = new MagicAtEndOfTurnTrigger() {
             return new MagicEvent(
                 permanent,
                 this,
-                "PN puts a 1/1 green Insect creature token with flying named Butterfly onto the battlefield"
+                "PN puts a 1/1 green Insect creature token with flying named Butterfly onto the battlefield."
             );
         }
         @Override
