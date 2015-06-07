@@ -6,6 +6,6 @@ type=Legendary,Creature
 subtype=Demon,Spirit
 cost={2}{B}{B}
 pt=5/5
-ability=When SN leaves the battlefield, sacrifice all non-Ogre creatures you control.
 timing=main
+requires_groovy_code
 oracle=When Yukora, the Prisoner leaves the battlefield, sacrifice all non-Ogre creatures you control.
