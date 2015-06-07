@@ -4,6 +4,6 @@ value=2.596
 rarity=C
 type=Sorcery
 cost={2}{R}
-effect=Until end of turn, target creature and each other creature that shares a color with it gain "This creature can't block."
-timing=main
+timing=fmain
+requires_groovy_code
 oracle=Radiance — Until end of turn, target creature and each other creature that shares a color with it gain "This creature can't block."
