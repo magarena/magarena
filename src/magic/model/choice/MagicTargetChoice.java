@@ -179,9 +179,6 @@ public class MagicTargetChoice extends MagicChoice {
     public static final MagicTargetChoice POS_TARGET_CREATURE = 
         MagicTargetChoice.Positive("target creature");
     
-    public static final MagicTargetChoice POS_TARGET_1_1_CREATURE = 
-        MagicTargetChoice.Positive("target 1/1 creature");
-    
     public static final MagicTargetChoice TARGET_NONCREATURE = 
         new MagicTargetChoice("target noncreature");
 
@@ -220,9 +217,6 @@ public class MagicTargetChoice extends MagicChoice {
     
     public static final MagicTargetChoice POS_TARGET_ATTACKING_CREATURE = 
         MagicTargetChoice.Positive("target attacking creature");
-    
-    public static final MagicTargetChoice POS_TARGET_NONATTACKING_CREATURE = 
-        MagicTargetChoice.Positive("target nonattacking creature");
     
     public static final MagicTargetChoice NEG_TARGET_ATTACKING_OR_BLOCKING_CREATURE = 
         MagicTargetChoice.Negative("target attacking or blocking creature");
