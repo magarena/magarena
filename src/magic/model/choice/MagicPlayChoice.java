@@ -140,6 +140,8 @@ public class MagicPlayChoice extends MagicChoice {
             } else {
                 return PASS_CHOICE_RESULTS;
             }
+        } else {
+            game.clearSkipTurnTill();
         }
 
         if (validChoices.isEmpty()) {
