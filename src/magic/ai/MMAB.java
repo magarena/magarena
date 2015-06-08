@@ -79,9 +79,9 @@ public class MMAB implements MagicAI {
             workerGame.setFastTarget(true);
             workerGame.setFastBlocker(true);
             
-            executor.execute(new Runnable() {
+            executor.execute(new Task() {
                 @Override
-                public void run() {
+                public void execute() {
                     final MMABWorker worker=new MMABWorker(
                         Thread.currentThread().getId(),
                         workerGame,
