@@ -244,8 +244,8 @@ public class PreferencesDialog
         alwaysPassCheckBox.setFocusable(false);
         alwaysPassCheckBox.addMouseListener(this);
 
-        smartTargetCheckBox=new JCheckBox("Allow only sensible choices", config.getSmartTarget());
-        smartTargetCheckBox.setToolTipText("Prevents you from choosing your own permanents for negative effects (eg. \"Destroy target creature\") or alternatively choosing an opponent's permanent for positive effects (eg. Giant Growth).");
+        smartTargetCheckBox=new JCheckBox("Limit options for human player to those available to the AI", config.getSmartTarget());
+        smartTargetCheckBox.setToolTipText("Positive effects (pump, gain ability) can only be applied to your own permanents. Negative effects (destroy, exile) can only be applied to opponent's permanents.");
         smartTargetCheckBox.setFocusable(false);
         smartTargetCheckBox.addMouseListener(this);
 

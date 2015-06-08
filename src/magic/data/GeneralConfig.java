@@ -83,7 +83,7 @@ public class GeneralConfig {
     private static final boolean DEFAULT_TEXT_VIEW = false;
     private static final boolean DEFAULT_SINGLE=true;
     private static final boolean DEFAULT_PASS=true;
-    private static final boolean DEFAULT_TARGET=true;
+    private static final boolean DEFAULT_TARGET=false;
     private static final int DEFAULT_POPUP_DELAY=300;
     private static final int DEFAULT_MESSAGE_DELAY = 2000;
     private static final int DEFAULT_STRENGTH_DIFFICULTY=2;
