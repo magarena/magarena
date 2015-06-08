@@ -104,7 +104,7 @@ public class MagicPlayChoice extends MagicChoice {
         //skip if phase is combat damage, not supposed to be able to do
         //anything but resolve triggers
         if (game.isPhase(MagicPhaseType.CombatDamage)) {
-            if (!game.getStack().isEmpty()) {
+            if (game.getStack().hasItem()) {
                 controller.pause(GeneralConfig.getInstance().getMessageDelay());
             }
             return PASS_CHOICE_RESULTS;
@@ -125,7 +125,7 @@ public class MagicPlayChoice extends MagicChoice {
 
             if (skip) {
                 //pause if there is an item on the stack
-                if (!game.getStack().isEmpty()) {
+                if (game.getStack().hasItem()) {
                     controller.pause(GeneralConfig.getInstance().getMessageDelay());
                 }
                 return PASS_CHOICE_RESULTS;
