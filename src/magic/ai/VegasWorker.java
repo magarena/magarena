@@ -3,7 +3,7 @@ package magic.ai;
 import magic.model.MagicGame;
 import magic.model.event.MagicEvent;
 
-public class VegasWorker implements Runnable {
+public class VegasWorker extends Task {
 
     private static final int MAIN_PHASES=6;
 
@@ -31,7 +31,7 @@ public class VegasWorker implements Runnable {
     }
 
     @Override
-    public void run() {
+    public void execute() {
         final long endTime = System.nanoTime() + slice;
         while (System.nanoTime() < endTime) {
             final MagicGame game = new MagicGame(sourceGame, sourceGame.getScorePlayer());
