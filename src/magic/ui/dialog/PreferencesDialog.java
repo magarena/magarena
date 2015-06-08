@@ -245,7 +245,7 @@ public class PreferencesDialog
         alwaysPassCheckBox.addMouseListener(this);
 
         smartTargetCheckBox=new JCheckBox("Limit options for human player to those available to the AI", config.getSmartTarget());
-        smartTargetCheckBox.setToolTipText("Positive effects (pump, gain ability) can only be applied to your own permanents. Negative effects (destroy, exile) can only be applied to opponent's permanents.");
+        smartTargetCheckBox.setToolTipText("Positive effects, such as pump and untap, can only be applied to your own permanents. Negative effects, such as destroy and exile, can only be applied to opponent's permanents.");
         smartTargetCheckBox.setFocusable(false);
         smartTargetCheckBox.addMouseListener(this);
 
