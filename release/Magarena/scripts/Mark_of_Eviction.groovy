@@ -16,10 +16,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPermanent enchanted = event.getRefPermanent();
-            final Set<MagicPermanent> auras = enchanted.getAuraPermanents();
-            for (final MagicPermanent aura : auras) {
-                game.doAction(new RemoveFromPlayAction(aura, MagicLocationType.OwnersHand));
-            }
+            game.doAction(new RemoveAllFromPlayAction(enchanted.getAuraPermanents(), MagicLocationType.OwnersHand));
             game.doAction(new RemoveFromPlayAction(enchanted, MagicLocationType.OwnersHand));
         }
     }
