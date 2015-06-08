@@ -4,6 +4,6 @@ value=3.862
 rarity=R
 type=Enchantment
 cost={2}{B}{G}
-ability=Whenever a player casts a creature spell, each player returns all cards with the same name as that spell from his or her graveyard to the battlefield.
 timing=enchantment
+requires_groovy_code
 oracle=Whenever a player casts a creature spell, each player returns all cards with the same name as that spell from his or her graveyard to the battlefield.
