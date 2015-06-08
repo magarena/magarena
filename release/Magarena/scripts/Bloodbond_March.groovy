@@ -13,7 +13,7 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final String name = event.getRefCard().getName();
+            final String name = event.getRefCardOnStack().getName();
             for (final MagicPlayer player : game.getAPNAP()) {
                 final List<MagicCard> graveyard = cardName(name).from(MagicTargetType.Graveyard).filter(player);
                 for (final MagicCard card : graveyard) {
