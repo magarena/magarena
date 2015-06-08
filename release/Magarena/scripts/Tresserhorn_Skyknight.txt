@@ -6,7 +6,7 @@ type=Creature
 subtype=Zombie,Knight
 cost={5}{B}{B}
 pt=5/3
-ability=Flying;\
-        Prevent all damage that would be dealt to SN by creatures with first strike.
+ability=Flying
 timing=main
+requires_groovy_code
 oracle=Flying\nPrevent all damage that would be dealt to Tresserhorn Skyknight by creatures with first strike.
