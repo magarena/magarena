@@ -2,6 +2,7 @@ package magic.data;
 
 public enum MagicSets {
 
+    ORI("Magic Origins"), // 2015-7-17
     MM2("Modern Masters 2015 Edition"), // 2015-5-22
     TPR("Tempest Remastered"), // 2015-5-6
     DTK("Dragons of Tarkir"), // 2015-3-27
