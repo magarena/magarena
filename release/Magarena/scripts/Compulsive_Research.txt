@@ -4,6 +4,6 @@ value=2.500
 rarity=C
 type=Sorcery
 cost={2}{U}
-effect=Target player draws three cards. Then that player discards two cards unless he or she discards a land card.
 timing=main
+requires_groovy_code
 oracle=Target player draws three cards. Then that player discards two cards unless he or she discards a land card.
