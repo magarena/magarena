@@ -4,6 +4,6 @@ value=4.554
 rarity=U
 type=Instant
 cost={2}{U}
-effect=Draw three cards. Then discard two cards unless you discard an artifact card.
-timing=removal
+timing=draw
+requires_groovy_code
 oracle=Draw three cards. Then discard two cards unless you discard an artifact card.
