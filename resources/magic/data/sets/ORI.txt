@@ -1,8 +1,9 @@
 Act of Treason
 Aegis Angel
 Akroan Jailer
-Boggart Brute
+Avaricious Dragon
 Bellows Lizard
+Boggart Brute
 Catacomb Slug
 Chandra's Fury
 Claustrophobia
@@ -33,9 +34,9 @@ Jayemdae Tome
 Jhessian Thief
 Joraga Invocation
 Leaf Gilder
-Liliana, Heretical Healer
-Liliana, Defiant Necromancer
 Lightning Javelin
+Liliana, Defiant Necromancer
+Liliana, Heretical Healer
 Mahamoti Djinn
 Malakir Cullblade
 Mantle of Webs
