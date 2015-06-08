@@ -6,7 +6,8 @@ public abstract class Task implements Runnable {
         try {
             execute();
         } catch (final Throwable ex) {
-            Thread.getDefaultUncaughtExceptionHandler().uncaughtException(Thread.currentThread(), ex);
+            final Thread t = Thread.currentThread();
+            t.getUncaughtExceptionHandler().uncaughtException(t, ex);
         }
     }
     
