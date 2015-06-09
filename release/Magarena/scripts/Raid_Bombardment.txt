@@ -4,6 +4,6 @@ value=4.145
 rarity=C
 type=Enchantment
 cost={2}{R}
+ability=Whenever a creature you control with power 2 or less attacks, SN deals 1 damage to defending player.
 timing=enchantment
-requires_groovy_code
 oracle=Whenever a creature you control with power 2 or less attacks, Raid Bombardment deals 1 damage to defending player.

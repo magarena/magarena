@@ -6,7 +6,7 @@ type=Creature
 subtype=Specter
 cost={5}{B}
 pt=2/2
-ability=Flying
+ability=Flying;\
+        Whenever SN attacks, defending player discards a card.
 timing=main
-requires_groovy_code
 oracle=Flying\nWhenever Shrieking Specter attacks, defending player discards a card.

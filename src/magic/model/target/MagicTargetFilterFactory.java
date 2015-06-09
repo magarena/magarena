@@ -2334,11 +2334,13 @@ public class MagicTargetFilterFactory {
         single.put("attacking creature you control", ATTACKING_CREATURE_YOU_CONTROL);
         single.put("blocking creature you control", BLOCKING_CREATURE_YOU_CONTROL);
         single.put("nontoken creature you control", NONTOKEN_CREATURE_YOU_CONTROL);
+        single.put("creature with power 2 or less you control", CREATURE_POWER_2_OR_LESS_YOU_CONTROL);
         single.put("creature with power 3 or greater you control", CREATURE_POWER_3_OR_MORE_YOU_CONTROL);
         single.put("creature with power 4 or greater you control", CREATURE_POWER_4_OR_MORE_YOU_CONTROL);
-        single.put("creature you control with power 4 or greater", CREATURE_POWER_4_OR_MORE_YOU_CONTROL);
         single.put("creature with power 5 or greater you control", CREATURE_POWER_5_OR_MORE_YOU_CONTROL);
-        single.put("creature with power 2 or less you control", CREATURE_POWER_2_OR_LESS_YOU_CONTROL);
+        single.put("creature you control with power 2 or less", CREATURE_POWER_2_OR_LESS_YOU_CONTROL);
+        single.put("creature you control with power 3 or greater", CREATURE_POWER_3_OR_MORE_YOU_CONTROL);
+        single.put("creature you control with power 4 or greater", CREATURE_POWER_4_OR_MORE_YOU_CONTROL);
         single.put("creature you control with power 5 or greater", CREATURE_POWER_5_OR_MORE_YOU_CONTROL);
         single.put("creature you control with toughness 4 or greater", CREATURE_TOUGHNESS_4_OR_GREATER_YOU_CONTROL);
         single.put("creature with modular you control", MODULAR_CREATURE_YOU_CONTROL);

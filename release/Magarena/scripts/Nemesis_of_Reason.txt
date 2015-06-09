@@ -6,6 +6,6 @@ type=Creature
 subtype=Leviathan,Horror
 cost={3}{U}{B}
 pt=3/7
-timing=smain
-requires_groovy_code
+ability=Whenever SN attacks, defending player puts the top ten cards of his or her library into his or her graveyard.
+timing=main
 oracle=Whenever Nemesis of Reason attacks, defending player puts the top ten cards of his or her library into his or her graveyard.
