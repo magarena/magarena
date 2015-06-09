@@ -6,6 +6,6 @@ type=Creature
 subtype=Beast
 cost={3}{G}{G}
 pt=4/4
+ability=Whenever SN becomes blocked, defending player sacrifices a land.
 timing=main
-requires_groovy_code
 oracle=Whenever Thresher Beast becomes blocked, defending player sacrifices a land.
