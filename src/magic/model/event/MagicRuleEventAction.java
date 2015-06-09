@@ -703,49 +703,6 @@ public enum MagicRuleEventAction {
             };
         }
     },
-    EachDraw(
-        "Each (?<group>[^\\.]*) draw(s)? (?<amount>[a-z]+) card(s)?\\.",
-        MagicTiming.Draw,
-        "Draw"
-    ) {
-        @Override
-        public MagicEventAction getAction(final Matcher matcher) {
-            final int amount = EnglishToInt.convert(matcher.group("amount"));
-            final MagicTargetFilter<MagicPlayer> filter = MagicTargetFilterFactory.Player(matcher.group("group"));
-            return new MagicEventAction() {
-                @Override
-                public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    for (final MagicPlayer player : filter.filter(event)) {
-                        game.doAction(new DrawAction(player, amount));
-                    }
-                }
-            };
-        }
-    },
-    EachDiscard(
-        "Each (?<group>[^\\.]*) discard(s)? (?<amount>[a-z]+) card(s)?(?<random> at random)?\\.",
-        MagicTiming.Draw,
-        "Discard"
-    ) {
-        @Override
-        public MagicEventAction getAction(final Matcher matcher) {
-            final int amount = EnglishToInt.convert(matcher.group("amount"));
-            final boolean isRandom = matcher.group("random") != null;
-            final MagicTargetFilter<MagicPlayer> filter = MagicTargetFilterFactory.Player(matcher.group("group"));
-            return new MagicEventAction() {
-                @Override
-                public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    for (final MagicPlayer player : filter.filter(event)) {
-                        if (isRandom) {
-                            game.addEvent(MagicDiscardEvent.Random(event.getSource(), player, amount));
-                        } else {
-                            game.addEvent(new MagicDiscardEvent(event.getSource(), player, amount));
-                        }
-                    }
-                }
-            };
-        }
-    },
     DrawUpkeep(
         "(pn )?draw(s)? a card at the beginning of the next turn's upkeep\\.",
         MagicTiming.Draw,
@@ -783,6 +740,25 @@ public enum MagicRuleEventAction {
                             game.doAction(new DrawAction(player,amount));
                         }
                     });
+                }
+            };
+        }
+    },
+    EachDraw(
+        "(?<group>[^\\.]*) draw(s)? (?<amount>[a-z]+) card(s)?\\.",
+        MagicTiming.Draw,
+        "Draw"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            final int amount = EnglishToInt.convert(matcher.group("amount"));
+            final MagicTargetFilter<MagicPlayer> filter = MagicTargetFilterFactory.Player(matcher.group("group"));
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    for (final MagicPlayer player : filter.filter(event)) {
+                        game.doAction(new DrawAction(player, amount));
+                    }
                 }
             };
         }
@@ -875,6 +851,30 @@ public enum MagicRuleEventAction {
                             }
                         }
                     });
+                }
+            };
+        }
+    },
+    EachDiscard(
+        "(?<group>[^\\.]*) discard(s)? (?<amount>[a-z]+) card(s)?(?<random> at random)?\\.",
+        MagicTiming.Draw,
+        "Discard"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            final int amount = EnglishToInt.convert(matcher.group("amount"));
+            final boolean isRandom = matcher.group("random") != null;
+            final MagicTargetFilter<MagicPlayer> filter = MagicTargetFilterFactory.Player(matcher.group("group"));
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    for (final MagicPlayer player : filter.filter(event)) {
+                        if (isRandom) {
+                            game.addEvent(MagicDiscardEvent.Random(event.getSource(), player, amount));
+                        } else {
+                            game.addEvent(new MagicDiscardEvent(event.getSource(), player, amount));
+                        }
+                    }
                 }
             };
         }
@@ -978,25 +978,6 @@ public enum MagicRuleEventAction {
             };
         }
     },
-    EachLoseLife(
-        "Each (?<group>[^\\.]*) loses (?<amount>[0-9]+) life\\.",
-        MagicTiming.Removal,
-        "-Life"
-    ) {
-        @Override
-        public MagicEventAction getAction(final Matcher matcher) {
-            final int amount = Integer.parseInt(matcher.group("amount"));
-            final MagicTargetFilter<MagicPlayer> filter = MagicTargetFilterFactory.Player(matcher.group("group"));
-            return new MagicEventAction() {
-                @Override
-                public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    for (final MagicPlayer player : filter.filter(event)) {
-                        game.doAction(new ChangeLifeAction(player, -amount));
-                    }
-                }
-            };
-        }
-    },
     LoseLifeChosen(
         ARG.CHOICE + " lose(s)? (?<amount>[0-9]+) life\\.",
         MagicTargetHint.Negative,
@@ -1014,6 +995,25 @@ public enum MagicRuleEventAction {
                             game.doAction(new ChangeLifeAction(player,-amount));
                         }
                     });
+                }
+            };
+        }
+    },
+    EachLoseLife(
+        "(?<group>[^\\.]*) loses (?<amount>[0-9]+) life\\.",
+        MagicTiming.Removal,
+        "-Life"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            final int amount = Integer.parseInt(matcher.group("amount"));
+            final MagicTargetFilter<MagicPlayer> filter = MagicTargetFilterFactory.Player(matcher.group("group"));
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    for (final MagicPlayer player : filter.filter(event)) {
+                        game.doAction(new ChangeLifeAction(player, -amount));
+                    }
                 }
             };
         }
@@ -2329,25 +2329,6 @@ public enum MagicRuleEventAction {
             };
         }
     },
-    MillEach(
-        "Each (?<group>[^\\.]*) put(s)? the top (?<amount>[a-z]+)?( )?card(s)? of his or her library into his or her graveyard\\.",
-        MagicTiming.Draw,
-        "Mill"
-    ) {
-        @Override
-        public MagicEventAction getAction(final Matcher matcher) {
-            final int amount = EnglishToInt.convert(matcher.group("amount"));
-            final MagicTargetFilter<MagicPlayer> filter = MagicTargetFilterFactory.Player(matcher.group("group"));
-            return new MagicEventAction() {
-                @Override
-                public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    for (final MagicPlayer player : filter.filter(event)) {
-                        game.doAction(new MillLibraryAction(player, amount));
-                    }
-                }
-            };
-        }
-    },
     MillChosen(
         ARG.CHOICE + " put(s)? the top (?<amount>[a-z]+)?( )?card(s)? of his or her library into his or her graveyard\\.",
         MagicTiming.Draw,
@@ -2364,6 +2345,25 @@ public enum MagicRuleEventAction {
                             game.doAction(new MillLibraryAction(player,amount));
                         }
                     });
+                }
+            };
+        }
+    },
+    MillEach(
+        "(?<group>[^\\.]*) put(s)? the top (?<amount>[a-z]+)?( )?card(s)? of his or her library into his or her graveyard\\.",
+        MagicTiming.Draw,
+        "Mill"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            final int amount = EnglishToInt.convert(matcher.group("amount"));
+            final MagicTargetFilter<MagicPlayer> filter = MagicTargetFilterFactory.Player(matcher.group("group"));
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    for (final MagicPlayer player : filter.filter(event)) {
+                        game.doAction(new MillLibraryAction(player, amount));
+                    }
                 }
             };
         }
@@ -2452,25 +2452,6 @@ public enum MagicRuleEventAction {
             };
         }
     },
-    EachSacrificeChosen(
-        "Each (?<group>[^\\.]*) sacrifices (?<permanent>[^\\.]*)\\.",
-        MagicTiming.Removal,
-        "Sacrifice"
-    ) {
-        @Override
-        public MagicEventAction getAction(final Matcher matcher) {
-            final MagicTargetChoice choice = new MagicTargetChoice(getHint(matcher), matcher.group("permanent")+" you control");
-            final MagicTargetFilter<MagicPlayer> filter = MagicTargetFilterFactory.Player(matcher.group("group"));
-            return new MagicEventAction() {
-                @Override
-                public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    for (final MagicPlayer player : filter.filter(event)) {
-                        game.addEvent(new MagicSacrificePermanentEvent(event.getSource(), player, choice));
-                    }
-                }
-            };
-        }
-    },
     TargetSacrificeChosen(
         ARG.CHOICE + " sacrifices (?<permanent>[^\\.]*)\\.",
         MagicTargetHint.Negative,
@@ -2488,6 +2469,25 @@ public enum MagicRuleEventAction {
                             game.addEvent(new MagicSacrificePermanentEvent(event.getSource(), player, choice));
                         }
                     });
+                }
+            };
+        }
+    },
+    EachSacrificeChosen(
+        "(?<group>[^\\.]*) sacrifices (?<permanent>[^\\.]*)\\.",
+        MagicTiming.Removal,
+        "Sacrifice"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            final MagicTargetChoice choice = new MagicTargetChoice(getHint(matcher), matcher.group("permanent")+" you control");
+            final MagicTargetFilter<MagicPlayer> filter = MagicTargetFilterFactory.Player(matcher.group("group"));
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    for (final MagicPlayer player : filter.filter(event)) {
+                        game.addEvent(new MagicSacrificePermanentEvent(event.getSource(), player, choice));
+                    }
                 }
             };
         }
