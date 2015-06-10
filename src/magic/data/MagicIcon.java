@@ -180,6 +180,7 @@ public enum MagicIcon {
     SCREAMCOUNTER("scream-counter.png"),
     DEVOTIONCOUNTER("devotion-counter.png"),
     DIVINITYCOUNTER("divinity-counter.png"),
+    DEATHCOUNTER("death-counter.png"),
 
     MANA_ANY("anymana.gif"),
 

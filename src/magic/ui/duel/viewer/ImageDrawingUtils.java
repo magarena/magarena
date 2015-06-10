@@ -386,32 +386,36 @@ public class ImageDrawingUtils {
                     g.drawImage(IconImages.getIcon(MagicIcon.GROWTHCOUNTER).getImage(),ax,ay,observer);
                     if (amount > 1){drawStringWithOutline(g, str, ax+6, ay+14, observer);}
                     ax+=inc;
-                }  else if (counterType == MagicCounterType.Wage) {
+                } else if (counterType == MagicCounterType.Wage) {
                     g.drawImage(IconImages.getIcon(MagicIcon.BRIBECOUNTER).getImage(),ax,ay,observer);
                     if (amount > 1){drawStringWithOutline(g, str, ax+6, ay+14, observer);}
                     ax+=inc;
-                }  else if (counterType == MagicCounterType.Plague) {
+                } else if (counterType == MagicCounterType.Plague) {
                     g.drawImage(IconImages.getIcon(MagicIcon.PLAGUECOUNTER).getImage(),ax,ay,observer);
                     if (amount > 1){drawStringWithOutline(g, str, ax+6, ay+14, observer);}
                     ax+=inc;
-                }  else if (counterType == MagicCounterType.Pin) {
+                } else if (counterType == MagicCounterType.Pin) {
                     g.drawImage(IconImages.getIcon(MagicIcon.PINCOUNTER).getImage(),ax,ay,observer);
                     if (amount > 1){drawStringWithOutline(g, str, ax+6, ay+14, observer);}
                     ax+=inc;
-                }  else if (counterType == MagicCounterType.Healing) {
+                } else if (counterType == MagicCounterType.Healing) {
                     g.drawImage(IconImages.getIcon(MagicIcon.HEALINGCOUNTER).getImage(),ax,ay,observer);
                     if (amount > 1){drawStringWithOutline(g, str, ax+6, ay+14, observer);}
                     ax+=inc;
-                }  else if (counterType == MagicCounterType.Scream) {
+                } else if (counterType == MagicCounterType.Scream) {
                     g.drawImage(IconImages.getIcon(MagicIcon.SCREAMCOUNTER).getImage(),ax,ay,observer);
                     if (amount > 1){drawStringWithOutline(g, str, ax+6, ay+14, observer);}
                     ax+=inc;
-                }  else if (counterType == MagicCounterType.Devotion) {
+                } else if (counterType == MagicCounterType.Devotion) {
                     g.drawImage(IconImages.getIcon(MagicIcon.DEVOTIONCOUNTER).getImage(),ax,ay,observer);
                     if (amount > 1){drawStringWithOutline(g, str, ax+6, ay+14, observer);}
                     ax+=inc;
-                }   else if (counterType == MagicCounterType.Divinity) {
+                } else if (counterType == MagicCounterType.Divinity) {
                     g.drawImage(IconImages.getIcon(MagicIcon.DIVINITYCOUNTER).getImage(),ax,ay,observer);
+                    if (amount > 1){drawStringWithOutline(g, str, ax+6, ay+14, observer);}
+                    ax+=inc;
+                } else if (counterType == MagicCounterType.Death) {
+                    g.drawImage(IconImages.getIcon(MagicIcon.DEATHCOUNTER).getImage(),ax,ay,observer);
                     if (amount > 1){drawStringWithOutline(g, str, ax+6, ay+14, observer);}
                     ax+=inc;
                 }
