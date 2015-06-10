@@ -53,8 +53,8 @@ public class MagicPlayer extends MagicObjectImpl implements MagicSource, MagicTa
     private final DuelPlayerConfig playerDefinition;
     private final int index;
 
-    private int life;
     private int stateFlags;
+    private int life;
     private int lifeLossThisTurn;
     private int lifeGainThisTurn;
     private int poison;

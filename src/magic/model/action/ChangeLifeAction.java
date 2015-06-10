@@ -12,6 +12,8 @@ public class ChangeLifeAction extends MagicAction {
     private final MagicPlayer player;
     private int lifeChange;
     private int oldLife;
+    private int oldLifeGain;
+    private int oldLifeLoss;
 
     public ChangeLifeAction(final MagicPlayer aPlayer,final int aLifeChange) {
         player = aPlayer;
@@ -33,6 +35,8 @@ public class ChangeLifeAction extends MagicAction {
     @Override
     public void doAction(final MagicGame game) {
         oldLife = player.getLife();
+        oldLifeGain = player.getLifeGainThisTurn();
+        oldLifeLoss = player.getLifeLossThisTurn();
 
         game.executeTrigger(MagicTriggerType.IfLifeWouldChange, this);
 
@@ -55,6 +59,8 @@ public class ChangeLifeAction extends MagicAction {
     @Override
     public void undoAction(final MagicGame game) {
         player.setLife(oldLife);
+        player.setLifeGainThisTurn(oldLifeGain);
+        player.setLifeLossThisTurn(oldLifeLoss);
     }
 
     @Override
