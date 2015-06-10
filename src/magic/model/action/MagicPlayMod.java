@@ -96,6 +96,11 @@ public enum MagicPlayMod implements MagicPermanentAction {
             perm.changeCounters(MagicCounterType.PlusOne,1);
         }
     },
+    DEATH_COUNTER() {
+        protected void doAction(final MagicGame game, final MagicPermanent perm) {
+            perm.changeCounters(MagicCounterType.Death,1);
+        }
+    },
     ZOMBIE() {
         protected void doAction(final MagicGame game, final MagicPermanent perm) {
             game.doAction(new AddStaticAction(perm, MagicStatic.Zombie));
@@ -126,7 +131,7 @@ public enum MagicPlayMod implements MagicPermanentAction {
                 final List<MagicMatchedCostEvent> cost = new LinkedList<>();
                 cost.add(new MagicMatchedCostEvent() {
                     public MagicEvent getEvent(final MagicSource source) {
-                        return new MagicPayManaCostEvent(source, manaCost); 
+                        return new MagicPayManaCostEvent(source, manaCost);
                     }
                     public boolean isIndependent() {
                         return true;
@@ -174,7 +179,7 @@ public enum MagicPlayMod implements MagicPermanentAction {
     }
 
     abstract protected void doAction(final MagicGame game, final MagicPermanent perm);
-    
+
     public static MagicPlayMod getPlayMod(final String name) {
         for (final MagicPlayMod mod : values()) {
             if (mod.pattern.matcher(name).matches()) {
@@ -183,7 +188,7 @@ public enum MagicPlayMod implements MagicPermanentAction {
         }
         throw new RuntimeException("unknown play mod \"" + name + "\"");
     }
-    
+
     public static List<MagicPlayMod> build(final String text) {
         final String[] tokens = text != null ? text.split("\\. ") : new String[0];
         final List<MagicPlayMod> mods = new LinkedList<>();
