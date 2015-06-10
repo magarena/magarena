@@ -76,7 +76,7 @@ public class MagicCard
     private final MagicPlayer owner;
     private final long id;
     private final int imageIndex;
-    private Map<MagicCounterType, Integer> counters;
+    private final Map<MagicCounterType, Integer> counters;
     private final boolean token;
     private boolean aiKnown = true;
     private boolean gameKnown = false;
@@ -107,7 +107,7 @@ public class MagicCard
         copyMap.put(sourceCard, this);
 
         cardDefinition = sourceCard.cardDefinition;
-        counters = sourceCard.counters;
+        counters = new EnumMap<MagicCounterType,Integer>(sourceCard.counters);
         owner = copyMap.copy(sourceCard.owner);
         id = sourceCard.id;
         imageIndex = sourceCard.imageIndex;
@@ -148,7 +148,7 @@ public class MagicCard
     }
 
     public long getStateId() {
-        return getCardDefinition().getIndex() * 10L + (aiKnown ? 1 : 0) + (gameKnown ? 2 : 0) + (token ? 4 : 0);
+        return (getCardDefinition().getIndex() * 10L + (aiKnown ? 1 : 0) + (gameKnown ? 2 : 0) + (token ? 4 : 0)) ^ counters.hashCode();
     }
 
     public int getImageIndex() {
@@ -266,10 +266,7 @@ public class MagicCard
     }
 
     public boolean isSuspended() {
-        if (isInExile() && hasAbility(MagicAbility.Suspend) && hasCounters(MagicCounterType.Time)) {
-            return true;
-        }
-        return false;
+        return isInExile() && hasAbility(MagicAbility.Suspend) && hasCounters(MagicCounterType.Time);
     }
 
     public MagicLocationType getLocation() {
@@ -426,7 +423,10 @@ public class MagicCard
 
     @Override
     public boolean hasCounters(MagicCounterType counterType) {
-        // Some cards can have counters in different zones
+        return getCounters(counterType) > 0; 
+    }
+
+    public boolean hasCounters() {
         return counters.size() > 0;
     }
 
@@ -448,9 +448,4 @@ public class MagicCard
         final Integer cnt = counters.get(counterType);
         return cnt != null ? cnt : 0;
     }
-
-    public boolean hasCounters() {
-        return counters.size() > 0;
-    }
-
 }
