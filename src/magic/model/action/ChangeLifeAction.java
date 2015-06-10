@@ -7,11 +7,11 @@ import magic.model.MagicPlayerState;
 import magic.model.trigger.MagicLifeChangeTriggerData;
 import magic.model.trigger.MagicTriggerType;
 
-/** Keeping the player life is done in the marker action. */
 public class ChangeLifeAction extends MagicAction {
 
     private final MagicPlayer player;
     private int lifeChange;
+    private int oldLife;
 
     public ChangeLifeAction(final MagicPlayer aPlayer,final int aLifeChange) {
         player = aPlayer;
@@ -32,7 +32,7 @@ public class ChangeLifeAction extends MagicAction {
 
     @Override
     public void doAction(final MagicGame game) {
-        final int oldLife = player.getLife();
+        oldLife = player.getLife();
 
         game.executeTrigger(MagicTriggerType.IfLifeWouldChange, this);
 
@@ -54,7 +54,7 @@ public class ChangeLifeAction extends MagicAction {
 
     @Override
     public void undoAction(final MagicGame game) {
-
+        player.setLife(oldLife);
     }
 
     @Override
