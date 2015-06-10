@@ -185,6 +185,16 @@ public abstract class MagicItemOnStack extends MagicObjectImpl implements MagicT
     public boolean hasCounters(MagicCounterType counterType) {
         return false;
     }
+    
+    @Override
+    public int getCounters(final MagicCounterType counterType) {
+        return 0;
+    }
+
+    @Override
+    public void changeCounters(final MagicCounterType counterType,final int amount) {
+        throw new RuntimeException(counterType + " cannot be modified on item on stack");
+    }
 
     @Override
     public boolean isLegalTarget(final MagicPlayer player, final MagicTargetFilter<? extends MagicTarget> targetFilter) {

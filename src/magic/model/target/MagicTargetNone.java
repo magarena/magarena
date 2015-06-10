@@ -120,4 +120,14 @@ public class MagicTargetNone extends MagicObjectImpl implements MagicTarget, Mag
     public boolean hasCounters(MagicCounterType counterType) {
         return false;
     }
+    
+    @Override
+    public int getCounters(final MagicCounterType counterType) {
+        return 0;
+    }
+
+    @Override
+    public void changeCounters(final MagicCounterType counterType,final int amount) {
+        throw new RuntimeException(counterType + " cannot be modified on item on stack");
+    }
 }

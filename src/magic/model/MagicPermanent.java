@@ -543,7 +543,19 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
     public boolean hasColor(final MagicColor color) {
         return color.hasColor(getColorFlags());
     }
+    
+    @Override
+    public boolean hasCounters(final MagicCounterType counterType) {
+        return getCounters(counterType) > 0; 
+    }
 
+    @Override
+    public int getCounters(final MagicCounterType counterType) {
+        final Integer cnt = counters.get(counterType);
+        return cnt != null ? cnt : 0;
+    }
+    
+    @Override
     public void changeCounters(final MagicCounterType counterType,final int amount) {
         final int oldAmt = getCounters(counterType);
         final int newAmt = oldAmt + amount;
@@ -558,17 +570,8 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
         return counters.keySet();
     }
 
-    public int getCounters(final MagicCounterType counterType) {
-        final Integer cnt = counters.get(counterType);
-        return cnt != null ? cnt : 0;
-    }
-
     public boolean hasCounters() {
         return counters.size() > 0; 
-    }
-    
-    public boolean hasCounters(final MagicCounterType counterType) {
-        return getCounters(counterType) > 0; 
     }
 
     public boolean hasSubType(final MagicSubType subType) {

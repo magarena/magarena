@@ -804,6 +804,20 @@ public class MagicPlayer extends MagicObjectImpl implements MagicSource, MagicTa
     public boolean hasCounters(MagicCounterType counterType) {
         return (counterType == MagicCounterType.Poison && getPoison()>0) ? true:false;
     }
+    
+    @Override
+    public int getCounters(final MagicCounterType counterType) {
+        return (counterType == MagicCounterType.Poison) ? getPoison() : 0;
+    }
+
+    @Override
+    public void changeCounters(final MagicCounterType counterType,final int amount) {
+        if (counterType == MagicCounterType.Poison) {
+            poison = poison + amount;
+        } else {
+            throw new RuntimeException(counterType + " cannot be modified on player");
+        }
+    }
 
     public boolean isHuman() {
         return playerDefinition.getProfile().isHuman();
