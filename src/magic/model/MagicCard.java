@@ -420,16 +420,18 @@ public class MagicCard
 
         return false;
     }
-
-    @Override
-    public boolean hasCounters(MagicCounterType counterType) {
-        return getCounters(counterType) > 0; 
-    }
-
+    
     public boolean hasCounters() {
         return counters.size() > 0;
     }
+    
+    @Override
+    public int getCounters(final MagicCounterType counterType) {
+        final Integer cnt = counters.get(counterType);
+        return cnt != null ? cnt : 0;
+    }
 
+    @Override
     public void changeCounters(final MagicCounterType counterType,final int amount) {
         final int oldAmt = getCounters(counterType);
         final int newAmt = oldAmt + amount;
@@ -442,10 +444,5 @@ public class MagicCard
 
     public Collection<MagicCounterType> getCounterTypes() {
         return counters.keySet();
-    }
-
-    public int getCounters(final MagicCounterType counterType) {
-        final Integer cnt = counters.get(counterType);
-        return cnt != null ? cnt : 0;
     }
 }

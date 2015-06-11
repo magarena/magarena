@@ -45,6 +45,11 @@ public abstract class MagicObjectImpl implements MagicObject {
     public boolean isToken() {
         return isPermanent() && ((MagicPermanent)this).isToken();
     }
+    
+    @Override
+    public boolean hasCounters(final MagicCounterType counterType) {
+        return getCounters(counterType) > 0; 
+    }
 
     public static long getStateId(final Object obj) {
         if (obj == null) {

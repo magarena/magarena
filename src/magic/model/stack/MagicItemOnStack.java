@@ -182,11 +182,6 @@ public abstract class MagicItemOnStack extends MagicObjectImpl implements MagicT
     }
     
     @Override
-    public boolean hasCounters(MagicCounterType counterType) {
-        return false;
-    }
-    
-    @Override
     public int getCounters(final MagicCounterType counterType) {
         return 0;
     }

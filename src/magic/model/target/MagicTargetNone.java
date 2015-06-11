@@ -115,11 +115,6 @@ public class MagicTargetNone extends MagicObjectImpl implements MagicTarget, Mag
     public long getStateId() {
         return hashCode();
     }
-
-    @Override
-    public boolean hasCounters(MagicCounterType counterType) {
-        return false;
-    }
     
     @Override
     public int getCounters(final MagicCounterType counterType) {

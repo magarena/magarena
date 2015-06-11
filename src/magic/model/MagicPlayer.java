@@ -801,11 +801,6 @@ public class MagicPlayer extends MagicObjectImpl implements MagicSource, MagicTa
     }
 
     @Override
-    public boolean hasCounters(MagicCounterType counterType) {
-        return (counterType == MagicCounterType.Poison && getPoison()>0) ? true:false;
-    }
-    
-    @Override
     public int getCounters(final MagicCounterType counterType) {
         return (counterType == MagicCounterType.Poison) ? getPoison() : 0;
     }

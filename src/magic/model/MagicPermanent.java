@@ -545,11 +545,6 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
     }
     
     @Override
-    public boolean hasCounters(final MagicCounterType counterType) {
-        return getCounters(counterType) > 0; 
-    }
-
-    @Override
     public int getCounters(final MagicCounterType counterType) {
         final Integer cnt = counters.get(counterType);
         return cnt != null ? cnt : 0;
