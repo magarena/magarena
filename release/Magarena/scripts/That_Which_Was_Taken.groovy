@@ -52,7 +52,7 @@ def TARGET_PERMANENT_EXCEPT = {
         }
         @Override
         public boolean condition(final MagicGame game, final MagicPermanent source, final MagicPermanent target) {
-            return target.getCounters(MagicCounterType.Divinity) > 0;
+            return target.hasCounters(MagicCounterType.Divinity);
         }
     },
 ]

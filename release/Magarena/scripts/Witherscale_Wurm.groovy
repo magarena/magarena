@@ -4,7 +4,7 @@
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicDamage damage) {
             return (permanent == damage.getSource() &&
                     permanent.isOpponent(damage.getTarget()) &&
-                    permanent.getCounters(MagicCounterType.MinusOne) > 0) ?
+                    permanent.hasCounters(MagicCounterType.MinusOne)) ?
                 new MagicEvent(
                     permanent,
                     this,

@@ -2,8 +2,7 @@
     new MagicWhenOtherDiesTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
-            return (otherPermanent.isCreature() &&
-                    otherPermanent.getCounters(MagicCounterType.MinusOne) > 0) ?
+            return otherPermanent.isCreature() && otherPermanent.hasCounters(MagicCounterType.MinusOne) ?
                 new MagicEvent(
                     permanent,
                     TARGET_CREATURE,

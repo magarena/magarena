@@ -16,14 +16,18 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
-                game.doAction(new ChangeCountersAction(event.getPermanent(),MagicCounterType.PlusOne,event.getRefInt()));
+                game.doAction(new ChangeCountersAction(
+                    event.getPermanent(),
+                    MagicCounterType.PlusOne,
+                    event.getRefInt()
+                ));
             }
         }
     },
     new MagicAtEndOfTurnTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer eotPlayer) {
-            return (permanent.getCounters(MagicCounterType.PlusOne)>0 && permanent.isController(eotPlayer)) ?
+            return permanent.hasCounters(MagicCounterType.PlusOne) && permanent.isController(eotPlayer) ?
                 new MagicEvent(
                     permanent,
                     this,
@@ -33,7 +37,11 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new ChangeCountersAction(event.getPermanent(),MagicCounterType.PlusOne,-event.getPermanent().getCounters(MagicCounterType.PlusOne)));
+            game.doAction(new ChangeCountersAction(
+                event.getPermanent(),
+                MagicCounterType.PlusOne,
+                -event.getPermanent().getCounters(MagicCounterType.PlusOne)
+            ));
         }
     }
 ]

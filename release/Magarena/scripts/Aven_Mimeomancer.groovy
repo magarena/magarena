@@ -5,7 +5,7 @@ def PT = new MagicStatic(MagicLayer.SetPT) {
     }
     @Override
     public boolean condition(final MagicGame game, final MagicPermanent source, final MagicPermanent target) {
-        return target.getCounters(MagicCounterType.Feather) > 0;
+        return target.hasCounters(MagicCounterType.Feather);
     }
 };
 
@@ -16,7 +16,7 @@ def AB = new MagicStatic(MagicLayer.Ability) {
     }
     @Override
     public boolean condition(final MagicGame game, final MagicPermanent source, final MagicPermanent target) {
-        return target.getCounters(MagicCounterType.Feather) > 0;
+        return target.hasCounters(MagicCounterType.Feather);
     }
 };
 

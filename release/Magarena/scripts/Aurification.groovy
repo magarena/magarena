@@ -6,7 +6,7 @@
         }
         @Override
         public boolean condition(final MagicGame game, final MagicPermanent source, final MagicPermanent target) {
-            return target.getCounters(MagicCounterType.Gold) > 0;
+            return target.hasCounters(MagicCounterType.Gold);
         }
     },
 
@@ -17,7 +17,7 @@
         }
         @Override
         public boolean condition(final MagicGame game, final MagicPermanent source, final MagicPermanent target) {
-            return target.getCounters(MagicCounterType.Gold) > 0;
+            return target.hasCounters(MagicCounterType.Gold);
         }
     },
 

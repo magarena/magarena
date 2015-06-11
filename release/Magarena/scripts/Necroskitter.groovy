@@ -4,7 +4,7 @@
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
             return (otherPermanent.isEnemy(permanent) &&
                     otherPermanent.isCreature() &&
-                    otherPermanent.getCounters(MagicCounterType.MinusOne) > 0) ?
+                    otherPermanent.hasCounters(MagicCounterType.MinusOne)) ?
                 new MagicEvent(
                     permanent,
                     new MagicMayChoice(),

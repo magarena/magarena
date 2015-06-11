@@ -22,7 +22,7 @@
     new MagicWhenDiesTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPermanent died) {
-            return permanent.getCounters(MagicCounterType.Death) > 0 ?
+            return permanent.hasCounters(MagicCounterType.Death) ?
                 new MagicEvent(
                     permanent,
                     this,

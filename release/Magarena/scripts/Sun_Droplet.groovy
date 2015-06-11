@@ -19,7 +19,7 @@
     new MagicAtUpkeepTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
-            return (permanent.getCounters(MagicCounterType.Charge)>0) ?
+            return permanent.hasCounters(MagicCounterType.Charge) ?
                 new MagicEvent(
                     permanent,
                     new MagicSimpleMayChoice(),
