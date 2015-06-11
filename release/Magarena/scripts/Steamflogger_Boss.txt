@@ -6,7 +6,6 @@ type=Creature
 subtype=Goblin,Rigger
 cost={3}{R}
 pt=3/3
-ability=Other Rigger creatures you control get +1/+0 and have haste.;\
-        If a Rigger you control would assemble a Contraption, it assembles two Contraptions instead.
+ability=Other Rigger creatures you control get +1/+0 and have haste.
 timing=main
 oracle=Other Rigger creatures you control get +1/+0 and have haste.\nIf a Rigger you control would assemble a Contraption, it assembles two Contraptions instead.
