@@ -7,7 +7,7 @@ type=Creature
 subtype=Elf,Warrior
 cost={3}{G}
 pt=5/5
-ability=Champion Elf;\
+ability=Champion an Elf;\
         Each Wolf you control has deathtouch;\
         {2}{G}: Put a 2/2 green Wolf creature token onto the battlefield.
 timing=main

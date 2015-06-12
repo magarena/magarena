@@ -7,7 +7,7 @@ type=Creature
 subtype=Merfolk,Wizard
 cost={4}{U}{U}
 pt=4/4
-ability=champion Merfolk
+ability=Champion a Merfolk
 timing=main
 requires_groovy_code
 oracle=Champion a Merfolk\nWhenever Wanderwine Prophets deals combat damage to a player, you may sacrifice a Merfolk. If you do, take an extra turn after this one.

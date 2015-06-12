@@ -7,6 +7,7 @@ type=Creature
 subtype=Shapeshifter
 cost={4}{G}
 pt=7/7
-ability=changeling;champion creature
+ability=Changeling;\
+        Champion a creature
 timing=main
 oracle=Changeling\nChampion a creature

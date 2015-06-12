@@ -7,7 +7,7 @@ type=Creature
 subtype=Goblin,Warrior
 cost={3}{B}
 pt=5/5
-ability=champion Goblin;\
+ability=Champion a Goblin;\
         Whenever a Goblin you control deals combat damage to a player, you may put a 1/1 black Goblin Rogue creature token onto the battlefield.
 timing=main
 oracle=Champion a Goblin\nWhenever a Goblin you control deals combat damage to a player, you may put a 1/1 black Goblin Rogue creature token onto the battlefield.

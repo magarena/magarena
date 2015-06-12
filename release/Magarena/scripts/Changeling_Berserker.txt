@@ -7,6 +7,8 @@ type=Creature
 subtype=Shapeshifter
 cost={3}{R}
 pt=5/3
-ability=changeling;haste;champion creature
+ability=Changeling;\
+        Haste;\
+        Champion a creature
 timing=main
 oracle=Changeling\nHaste\nChampion a creature

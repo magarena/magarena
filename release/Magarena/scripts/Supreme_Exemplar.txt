@@ -7,6 +7,7 @@ type=Creature
 subtype=Elemental
 cost={6}{U}
 pt=10/10
-ability=flying;champion Elemental
+ability=Flying;\
+        Champion an Elemental
 timing=main
 oracle=Flying\nChampion an Elemental
