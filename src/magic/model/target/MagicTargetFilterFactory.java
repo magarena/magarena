@@ -262,7 +262,7 @@ public class MagicTargetFilterFactory {
             return true;
         }
     };
-    
+
     public static final MagicPlayerFilterImpl DEFENDING_PLAYER=new MagicPlayerFilterImpl() {
         public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPlayer target) {
             return target.getGame().getDefendingPlayer() == target;
@@ -808,7 +808,11 @@ public class MagicTargetFilterFactory {
 
     public static final MagicPermanentFilterImpl GOBLIN_CREATURE = MagicTargetFilterFactory.permanentAnd(MagicType.Creature, MagicSubType.Goblin, Control.Any);
 
+    public static final MagicPermanentFilterImpl GOBLIN_OR_SHAMAN = MagicTargetFilterFactory.permanentOr(MagicSubType.Goblin, MagicSubType.Shaman, Control.Any);
+
     public static final MagicPermanentFilterImpl DJINN_OR_EFREET = MagicTargetFilterFactory.permanentOr(MagicSubType.Djinn, MagicSubType.Efreet, Control.Any);
+
+    public static final MagicPermanentFilterImpl TREEFOLK_OR_WARRIOR =MagicTargetFilterFactory.permanentOr(MagicSubType.Treefolk, MagicSubType.Warrior, Control.Any);
 
     public static final MagicPermanentFilterImpl CLERIC_OR_WIZARD_CREATURE = MagicTargetFilterFactory.creatureOr(MagicSubType.Cleric, MagicSubType.Wizard, Control.Any);
 
@@ -2551,6 +2555,8 @@ public class MagicTargetFilterFactory {
         single.put("permanent that is enchanted", PERMANENT_ENCHANTED);
         single.put("enchantment or enchanted permanent", ENCHANTMENT_OR_ENCHANTED_PERMANENT);
         single.put("nonartifact permanent", NONARTIFACT_PERMANENT);
+        single.put("Goblin or Shaman", GOBLIN_OR_SHAMAN);
+        single.put("Treefolk or Warrior", TREEFOLK_OR_WARRIOR);
 
         // <color|type|subtype>
         single.put("creature you own", CREATURE_YOU_OWN);

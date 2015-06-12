@@ -197,10 +197,15 @@ public enum MagicAbility {
             card.add(new MagicRampageTrigger(n));
         }
     },
-    Champion("champion " + ARG.ANY,-10) {
+    Champion("champion (a |an )?" + ARG.ANY,-10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(new MagicChampionTrigger(ARG.any(arg)));
             card.add(MagicLeavesReturnExileTrigger.create());
+            final String castString = "with AI only if you control a "+ ARG.any(arg);
+            for (final MagicMatchedCostEvent mce : MagicConditionParser.buildCost(castString)) {
+                card.add(MagicAdditionalCost.create(mce));
+            }
+
         }
     },
     Echo("echo( |—)" + ARG.COST,-20) {
@@ -1287,7 +1292,7 @@ public enum MagicAbility {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final int n = ARG.number(arg);
             final MagicManaCost manaCost = MagicManaCost.create(ARG.manacost(arg));
-            //card.add(new MagicSuspendActivation(n, manaCost));
+            card.add(new MagicSuspendActivation(n, manaCost));
         }
     },
     ;
