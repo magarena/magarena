@@ -1292,7 +1292,7 @@ public enum MagicAbility {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final int n = ARG.number(arg);
             final MagicManaCost manaCost = MagicManaCost.create(ARG.manacost(arg));
-            card.add(new MagicSuspendActivation(n, manaCost));
+            //card.add(new MagicSuspendActivation(n, manaCost));
         }
     },
     ;
