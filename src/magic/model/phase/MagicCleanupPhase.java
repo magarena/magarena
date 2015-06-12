@@ -37,6 +37,7 @@ public class MagicCleanupPhase extends MagicPhase {
             game.doAction(new CleanupPlayerAction(player));
         }
         game.doAction(new CleanupTurnStaticsAction());
+        game.update();
         game.checkStatePutTriggers();
     }
 
@@ -58,10 +59,10 @@ public class MagicCleanupPhase extends MagicPhase {
         game.resetMaxLands();
         game.setCreatureDiedThisTurn(false);
         game.clearSkipTurnTill();
-        turnPlayer.setSpellsCastLastTurn(turnPlayer.getSpellsCast());
-        opponentPlayer.setSpellsCastLastTurn(opponentPlayer.getSpellsCast());
-        turnPlayer.setSpellsCast(0);
-        opponentPlayer.setSpellsCast(0);
+        for (final MagicPlayer player : game.getPlayers()) {
+            player.setSpellsCastLastTurn(player.getSpellsCast());
+            player.setSpellsCast(0);
+        }
     }
 
     @Override
