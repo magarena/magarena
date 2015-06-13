@@ -75,7 +75,7 @@ def ACTION = {
                         new MagicPayManaCostChoice(MagicManaCost.create("{2}{G}{G}"))
                     ),
                     ACTION,
-                    "PN may\$ sacrifice SN and pay {2}{G}{G}."+
+                    "PN may\$ sacrifice SN and pay {2}{G}{G}. "+
                     "If PN does, PN puts one of those cards into his or her hand. If PN doesn't, PN puts one of "+
                     "those cards on the bottom of his or her library."
                 ));
