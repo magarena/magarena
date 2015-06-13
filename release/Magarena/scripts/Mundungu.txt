@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Wizard
 cost={1}{U}{B}
 pt=1/1
-ability={T}: Counter target spell unless its controller pays {1} and 1 life.
 timing=main
+requires_groovy_code
 oracle={T}: Counter target spell unless its controller pays {1} and 1 life.
