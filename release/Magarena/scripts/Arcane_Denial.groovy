@@ -3,7 +3,8 @@ def DrawTwo = {
     return new MagicAtUpkeepTrigger() {
         @Override
         public boolean accept(final MagicPermanent permanent, final MagicPlayer upkeepPlayer) {
-            return stalePlayer.getId() == upkeepPlayer.getId();
+            final MagicPlayer spellcaster = staleSource.getController()
+            return spellcaster.getId() == upkeepPlayer.getId();
         }
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPlayer upkeepPlayer) {
