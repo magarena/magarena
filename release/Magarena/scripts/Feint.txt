@@ -4,6 +4,6 @@ value=2.750
 rarity=C
 type=Instant
 cost={R}
-effect=Tap all creatures blocking target attacking creature. Prevent all combat damage that would be dealt this turn by that creature and each creature blocking it.
-timing=removal
+timing=block
+requires_groovy_code
 oracle=Tap all creatures blocking target attacking creature. Prevent all combat damage that would be dealt this turn by that creature and each creature blocking it.
