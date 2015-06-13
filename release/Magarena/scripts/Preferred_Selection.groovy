@@ -60,9 +60,7 @@ def ACTION = {
             return new MagicEvent(
                 permanent,
                 this,
-                "PN looks at the top two cards of his or her library. PN may sacrifice SN and pay {2}{G}{G}. "+
-                "If PN does, PN puts one of those cards into his or her hand. If PN doesn't, PN puts one of "+
-                "those cards on the bottom of his or her library."
+                "PN looks at the top two cards of his or her library."
             );
         }
         @Override
@@ -73,11 +71,13 @@ def ACTION = {
             game.addEvent(new MagicEvent(
                     event.getPermanent(),
                     new MagicMayChoice(
-                        "Pay {2}{G}{G} and sacrifice SN?",
+                        "Sacrifice SN and Pay {2}{G}{G}?",
                         new MagicPayManaCostChoice(MagicManaCost.create("{2}{G}{G}"))
                     ),
                     ACTION,
-                    "PN may\$ pay {2}{G}{G} and sacrifice SN"
+                    "PN may\$ sacrifice SN and pay {2}{G}{G}."+
+                    "If PN does, PN puts one of those cards into his or her hand. If PN doesn't, PN puts one of "+
+                    "those cards on the bottom of his or her library."
                 ));
         }
     }
