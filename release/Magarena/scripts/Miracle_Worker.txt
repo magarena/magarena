@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Cleric
 cost={W}
 pt=1/1
-ability={T}: Destroy target Aura attached to a creature you control.
 timing=main
+requires_groovy_code
 oracle={T}: Destroy target Aura attached to a creature you control.
