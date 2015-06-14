@@ -65,7 +65,7 @@ public enum MagicAbility {
     Infect("infect(\\.)?",35),
     Horsemanship("horsemanship(\\.)?",60),
     Soulbond("soulbond",30),
-    SplitSecond("split second\\.",10),
+    SplitSecond("split second(\\.)?",10),
     CantActivateAbilities("can't activate abilities(\\.)?|its activated abilities can't be activated(\\.)?",-20),
     ProtectionFromBlack("(protection )?from black(\\.)?",20),
     ProtectionFromBlue("(protection )?from blue(\\.)?",20),
