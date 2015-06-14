@@ -4,6 +4,7 @@ value=1.348
 rarity=C
 type=Instant
 cost={3}{U}
+ability=Cast SN with AI only if you control a creature.
 effect=Creatures you control gain shroud until end of turn.
 timing=pump
 oracle=Creatures you control gain shroud until end of turn.

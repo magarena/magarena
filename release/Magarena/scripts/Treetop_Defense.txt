@@ -4,7 +4,8 @@ value=2.000
 rarity=R
 type=Instant
 cost={1}{G}
-ability=Cast SN only during the declare attackers step and only if you've been attacked this step.
+ability=Cast SN only during the declare attackers step and only if you've been attacked this step.;\
+        Cast SN with AI only if you control a creature.
 effect=Creatures you control gain reach until end of turn.
 timing=attack
 oracle=Cast Treetop Defense only during the declare attackers step and only if you've been attacked this step.\nCreatures you control gain reach until end of turn.

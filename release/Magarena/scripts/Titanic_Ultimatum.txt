@@ -4,6 +4,7 @@ value=3.190
 rarity=R
 type=Sorcery
 cost={R}{R}{G}{G}{G}{W}{W}
+ability=Cast SN with AI only if you control a creature.
 effect=Creatures you control get +5/+5 and gain first strike, lifelink, trample until end of turn.
 timing=pump
 oracle=Until end of turn, creatures you control get +5/+5 and gain first strike, lifelink, and trample.

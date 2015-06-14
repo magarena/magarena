@@ -5,6 +5,7 @@ removal=1
 rarity=R
 type=Instant
 cost={3}{U}{U}
+ability=Cast SN with AI only if there is a creature on the battlefield.
 effect=Return all creatures to their owners' hands.
 timing=removal
 oracle=Return all creatures to their owners' hands.

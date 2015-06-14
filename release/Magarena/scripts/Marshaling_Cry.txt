@@ -6,6 +6,7 @@ type=Sorcery
 cost={1}{W}{W}
 effect=Creatures you control get +1/+1 and gain vigilance until end of turn.
 ability=Cycling {2};\
-        Flashback {3}{W}
+        Flashback {3}{W};\
+        Cast SN with AI only if you control a creature.
 timing=main
 oracle=Creatures you control get +1/+1 and gain vigilance until end of turn.\nCycling {2}\nFlashback {3}{W}

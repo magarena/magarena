@@ -4,6 +4,7 @@ value=3.330
 rarity=R
 type=Sorcery
 cost={3}{U}{U}{U}
+ability=Cast SN with AI only if there is a nonblue creature on the battlefield.
 effect=Return all nonblue creatures to their owners' hands.
 timing=main
 oracle=Return all nonblue creatures to their owners' hands.

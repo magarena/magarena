@@ -4,6 +4,7 @@ value=3.295
 rarity=R
 type=Sorcery
 cost={2}{B}
+ability=Cast SN with AI only if an opponent controls a white creature.
 timing=main
 requires_groovy_code
 oracle=Jovial Evil deals X damage to target opponent, where X is twice the number of white creatures that player controls.

@@ -4,6 +4,7 @@ value=3.786
 rarity=U
 type=Instant
 cost={2}{U}
+ability=Cast SN with AI only if there is a green permanent on the battlefield.
 effect=Return all green permanents to their owners' hands.
 timing=removal
 oracle=Return all green permanents to their owners' hands.

@@ -4,6 +4,7 @@ value=3.365
 rarity=U
 type=Instant
 cost={3}{R}
+ability=Cast SN with AI only if you control a creature.
 effect=Until end of turn, creatures you control gain "{T}: This creature deals 1 damage to target creature or player."
 timing=removal
 oracle=Until end of turn, creatures you control gain "{T}: This creature deals 1 damage to target creature or player."

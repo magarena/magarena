@@ -4,6 +4,7 @@ value=2.196
 rarity=C
 type=Sorcery
 cost={R}
+ability=Cast SN with AI only if you control a creature.
 effect=Creatures you control gain haste until end of turn.
 timing=fmain
 oracle=Creatures you control gain haste until end of turn.

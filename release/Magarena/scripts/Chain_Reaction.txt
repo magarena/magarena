@@ -5,6 +5,7 @@ removal=2
 rarity=R
 type=Sorcery
 cost={2}{R}{R}
+ability=Cast SN with AI only if an opponent controls a creature.
 timing=removal
 requires_groovy_code
 oracle=Chain Reaction deals X damage to each creature, where X is the number of creatures on the battlefield.

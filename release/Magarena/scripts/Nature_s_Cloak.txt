@@ -4,6 +4,7 @@ value=1.969
 rarity=R
 type=Sorcery
 cost={2}{G}
+ability=Cast SN with AI only if you control a green creature.
 effect=Green creatures you control gain forestwalk until end of turn.
 timing=main
 oracle=Green creatures you control gain forestwalk until end of turn.

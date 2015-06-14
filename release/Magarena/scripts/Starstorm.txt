@@ -4,7 +4,8 @@ value=4.000
 rarity=R
 type=Instant
 cost={X}{R}{R}
-ability=cycling {3}
+ability=cycling {3};\
+        Cast SN with AI only if an opponent controls a creature.
 timing=removal
 requires_groovy_code
 oracle=Starstorm deals X damage to each creature.\nCycling {3}

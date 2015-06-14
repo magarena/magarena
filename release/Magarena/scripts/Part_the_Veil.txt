@@ -5,6 +5,7 @@ rarity=R
 type=Instant
 subtype=Arcane
 cost={3}{U}
+ability=Cast SN with AI only if you control a creature.
 effect=Return all creatures you control to their owner's hand.
 timing=removal
 oracle=Return all creatures you control to their owner's hand.

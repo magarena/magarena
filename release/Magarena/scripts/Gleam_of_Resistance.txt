@@ -4,7 +4,8 @@ value=2.147
 rarity=C
 type=Instant
 cost={4}{W}
-ability=Basic landcycling {1}{W}
+ability=Basic landcycling {1}{W};\
+        Cast SN with AI only if you control a creature.
 effect=Creatures you control get +1/+2 until end of turn.~Untap all creatures you control.
 timing=pump
 oracle=Creatures you control get +1/+2 until end of turn. Untap those creatures.\nBasic landcycling {1}{W}
