@@ -73,13 +73,13 @@ def ACTION = {
             final List<MagicCard> topCards = player.getLibrary().getCardsFromTop(2);
             game.doAction(new LookAction(topCards, player, "top two cards of your library"));
             game.addEvent(new MagicEvent(
-                    event.getPermanent(),
-                    new MagicMayChoice("Sacrifice "+event.getPermanent().getName()+" and Pay {2}{G}{G}?"),
-                    ACTION,
-                    "PN may sacrifice SN and pay {2}{G}{G}. "+
-                    "If PN does, PN puts one of those cards into his or her hand. If PN doesn't, PN puts one of "+
-                    "those cards on the bottom of his or her library."
-                ));
+                event.getPermanent(),
+                new MagicMayChoice("Sacrifice "+event.getPermanent().getName()+" and Pay {2}{G}{G}?"),
+                ACTION,
+                "PN may sacrifice SN and pay {2}{G}{G}. "+
+                "If PN does, PN puts one of those cards into his or her hand. If PN doesn't, PN puts one of "+
+                "those cards on the bottom of his or her library."
+            ));
         }
     }
 ]
