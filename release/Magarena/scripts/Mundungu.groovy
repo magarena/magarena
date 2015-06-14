@@ -2,7 +2,7 @@ def action = {
     final MagicGame game, final MagicEvent event ->
     final MagicPlayer player = event.getPlayer();
     final MagicEvent payLife = new MagicPayLifeEvent(event.getSource(), player, 1);
-    final MagicEvent payMana = new MagicPayManaCostEvent(event.getSource(), "{1}");
+    final MagicEvent payMana = new MagicPayManaCostEvent(event.getSource(), player, "{1}");
     if (event.isYes() && payMana.isSatisfied() && payLife.isSatisfied()) {
         game.logAppendMessage(player,"(Yes)")
         game.addEvent(payMana);
