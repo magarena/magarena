@@ -1,9 +1,0 @@
-name=Sudden Spoiling
-image=http://magiccards.info/scans/en/c14/164.jpg
-value=2.500
-rarity=R
-type=Instant
-cost={1}{B}{B}
-effect=Split second~Until end of turn, creatures target player controls lose all abilities and have base power and toughness 0/2.
-timing=removal
-oracle=Split second\nUntil end of turn, creatures target player controls lose all abilities and have base power and toughness 0/2.
