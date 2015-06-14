@@ -6,6 +6,6 @@ type=Creature
 subtype=Vampire,Warrior
 cost={B}
 pt=2/2
-ability=At the beginning of your upkeep, you lose 1 life unless an opponent has 10 or less life.
 timing=main
+requires_groovy_code
 oracle=At the beginning of your upkeep, you lose 1 life unless an opponent has 10 or less life.
