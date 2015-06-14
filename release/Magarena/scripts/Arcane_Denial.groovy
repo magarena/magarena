@@ -10,15 +10,15 @@ def DrawTwo = {
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPlayer upkeepPlayer) {
             game.addDelayedAction(new RemoveTriggerAction(this));
             return new MagicEvent(
-                    game.createDelayedSource(staleSource, stalePlayer),
-                    new MagicSimpleMayChoice(
-                        MagicSimpleMayChoice.DRAW_CARDS,
-                        2,
-                        MagicSimpleMayChoice.DEFAULT_NONE
-                    ),
-                    this,
-                    "PN may\$ draw two cards."
-                );
+                game.createDelayedSource(staleSource, stalePlayer),
+                new MagicSimpleMayChoice(
+                    MagicSimpleMayChoice.DRAW_CARDS,
+                    2,
+                    MagicSimpleMayChoice.DEFAULT_NONE
+                ),
+                this,
+                "PN may\$ draw two cards."
+            );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
