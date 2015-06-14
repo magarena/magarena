@@ -4,6 +4,7 @@ value=4.139
 rarity=R
 type=Sorcery
 cost={3}{G}
+ability=Cast SN with AI only if you control a creature.
 timing=token
 requires_groovy_code
 oracle=You may cast Saproling Symbiosis any time you could cast an instant if you pay {2} more to cast it. Put a 1/1 green Saproling creature token onto the battlefield for each creature you control.

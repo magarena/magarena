@@ -4,6 +4,7 @@ value=3.477
 rarity=R
 type=Sorcery
 cost={4}{B}{B}
+ability=Cast SN with AI only if an opponent controls a creature.
 timing=main
 requires_groovy_code
 oracle=Destroy all creatures target opponent controls. You lose 2 life for each creature destroyed this way.

@@ -5,7 +5,8 @@ rarity=U
 type=Sorcery
 cost={4}{R}{R}
 ability=Cycling {2}{R};\
-        When you cycle SN, you may have SN deal 1 damage to each creature.
+        When you cycle SN, you may have SN deal 1 damage to each creature.;\
+        Cast SN with AI only if an opponent controls a creature.
 effect=SN deals 4 damage to each creature.
 timing=main
 oracle=Slice and Dice deals 4 damage to each creature. Cycling {2}{R}. When you cycle Slice and Dice, you may have it deal 1 damage to each creature.

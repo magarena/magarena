@@ -4,7 +4,8 @@ value=2.759
 rarity=C
 type=Instant
 cost={2}{G}
-ability=Flashback {1}{W}
+ability=Flashback {1}{W};\
+        Cast SN with AI only if you control a creature.
 timing=pump
 requires_groovy_code
 oracle=You gain 1 life for each creature you control. Flashback {1}{W}

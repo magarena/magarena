@@ -4,6 +4,7 @@ value=3.591
 rarity=C
 type=Sorcery
 cost={W}
+ability=Cast SN with AI only if you control a creature.
 timing=main
 requires_groovy_code=Festival of Trokin
 oracle=You gain 2 life for each creature you control.

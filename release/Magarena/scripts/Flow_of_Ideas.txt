@@ -4,6 +4,7 @@ value=2.912
 rarity=U
 type=Sorcery
 cost={5}{U}
+ability=Cast SN with AI only if you control an Island.
 timing=main
 requires_groovy_code
 oracle=Draw a card for each Island you control.

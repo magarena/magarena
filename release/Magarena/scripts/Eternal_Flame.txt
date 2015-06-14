@@ -4,6 +4,7 @@ value=2.736
 rarity=R
 type=Sorcery
 cost={2}{R}{R}
+ability=Cast SN with AI only if you control a Mountain.
 timing=main
 requires_groovy_code
 oracle=Eternal Flame deals X damage to target opponent, where X is the number of Mountains you control. It deals half X damage, rounded up, to you.

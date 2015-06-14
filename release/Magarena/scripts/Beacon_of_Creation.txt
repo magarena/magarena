@@ -4,6 +4,7 @@ value=4.446
 rarity=R
 type=Sorcery
 cost={3}{G}
+ability=Cast SN with AI only if you control a Forest.
 timing=main
 requires_groovy_code
 oracle=Put a 1/1 green Insect creature token onto the battlefield for each Forest you control. Shuffle Beacon of Creation into its owner's library.

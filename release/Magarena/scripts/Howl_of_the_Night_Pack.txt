@@ -4,6 +4,7 @@ value=3.070
 rarity=U
 type=Sorcery
 cost={6}{G}
+ability=Cast SN with AI only if you control a Forest.
 timing=main
 requires_groovy_code
 oracle=Put a 2/2 green Wolf creature token onto the battlefield for each Forest you control.

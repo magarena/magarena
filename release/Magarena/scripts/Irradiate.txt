@@ -4,6 +4,7 @@ value=2.714
 rarity=C
 type=Instant
 cost={3}{B}
+ability=Cast SN with AI only if you control an artifact.
 timing=removal
 requires_groovy_code
 oracle=Target creature gets -1/-1 until end of turn for each artifact you control.

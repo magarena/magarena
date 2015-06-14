@@ -4,6 +4,7 @@ value=3.531
 rarity=C
 type=Instant
 cost={1}{R}
+ability=Cast SN with AI only if you control a Vampire.
 timing=pump
 requires_groovy_code
 oracle=Vampire creatures you control get +2/+0 and gain first strike until end of turn.

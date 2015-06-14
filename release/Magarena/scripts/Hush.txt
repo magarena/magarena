@@ -4,6 +4,7 @@ value=3.450
 rarity=C
 type=Sorcery
 cost={3}{G}
+ability=Cast SN with AI only if an opponent controls an enchantment.
 effect=Destroy all enchantments.
 removal=2
 timing=removal

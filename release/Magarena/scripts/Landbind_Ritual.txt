@@ -4,6 +4,7 @@ value=2.864
 rarity=U
 type=Sorcery
 cost={3}{W}{W}
+ability=Cast SN with AI only if you control a Plains.
 timing=main
 requires_groovy_code
 oracle=You gain 2 life for each Plains you control.

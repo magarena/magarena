@@ -4,6 +4,7 @@ value=2.965
 rarity=U
 type=Instant
 cost={1}{B}{R}
+ability=Cast SN with AI only if you control a creature.
 effect=Until end of turn, creatures you control gain "When SN dies, SN deals 2 damage to target creature an opponent controls."
 timing=removal
 oracle=Until end of turn, creatures you control gain "When this creature dies, it deals 2 damage to target creature an opponent controls."

@@ -4,6 +4,7 @@ value=2.938
 rarity=C
 type=Instant
 cost={2}{U}
+ability=Cast SN with AI only if you control an artifact.
 timing=counter
 requires_groovy_code
 oracle=Counter target spell unless its controller pays {1} for each artifact you control.

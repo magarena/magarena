@@ -4,6 +4,7 @@ value=2.562
 rarity=U
 type=Instant
 cost={1}{G}
+ability=Cast SN with AI only if you control a creature.
 effect=Until end of turn, creatures you control gain "{1}: Regenerate SN."
 timing=pump
 oracle=Until end of turn, creatures you control gain "{1}: Regenerate this creature."

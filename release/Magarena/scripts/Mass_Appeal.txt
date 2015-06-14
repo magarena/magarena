@@ -4,6 +4,7 @@ value=3.489
 rarity=U
 type=Sorcery
 cost={2}{U}
+ability=Cast SN with AI only if you control a Human.
 timing=draw
 requires_groovy_code
 oracle=Draw a card for each Human you control.

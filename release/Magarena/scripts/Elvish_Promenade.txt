@@ -5,6 +5,7 @@ rarity=U
 type=Tribal,Sorcery
 subtype=Elf
 cost={3}{G}
+ability=Cast SN with AI only if you control an Elf.
 timing=main
 requires_groovy_code
 oracle=Put a 1/1 green Elf Warrior creature token onto the battlefield for each Elf you control.
