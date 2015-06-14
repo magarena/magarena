@@ -13,44 +13,30 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicPlayer player = event.getPlayer();
-            final MagicPlayer opponent = event.getPlayer().getOpponent();
-            if (player.getNrOfPermanents(MagicType.Land) >= 6) {    
-                final int n1 = player.getNrOfPermanents(MagicType.Land) - 5;
-                n1.times {
-                    game.addEvent(new MagicSacrificePermanentEvent(event.getSource(),player,SACRIFICE_LAND));
-                }
-            } else if (player.getNrOfPermanents(MagicType.Land) <= 4) {
-                final int n2 = 5 - player.getNrOfPermanents(MagicType.Land);
-                n2.times {
+            for (final MagicPlayer player : game.getAPNAP()) {
+                final int lands = player.getNrOfPermanents(MagicType.Land); 
+                if (lands >= 6) {    
+                    final int amount = player.getNrOfPermanents(MagicType.Land) - 5;
+                    game.addEvent(new MagicRepeatedPermanentsEvent(
+                        event.getSource(), 
+                        SACRIFICE_LAND,
+                        amount, 
+                        MagicChainEventFactory.Sac
+                    ));
+                } else if (lands <= 4) {
+                    final int amount = 5 - player.getNrOfPermanents(MagicType.Land);
                     game.addEvent(new MagicSearchOntoBattlefieldEvent(
                         event.getSource(),
                         player,
-                        new MagicMayChoice(
-                            "Search for basic land card?",
-                            A_BASIC_LAND_CARD_FROM_LIBRARY
+                        new MagicFromCardFilterChoice(
+                            BASIC_LAND_CARD_FROM_LIBRARY,
+                            amount,
+                            true,
+                            "to put onto the battlefield"
                         )
                     ));
                 }
-            };
-            if (opponent.getNrOfPermanents(MagicType.Land) >= 6) {    
-                final int n3 = opponent.getNrOfPermanents(MagicType.Land) - 5;
-                n3.times {
-                    game.addEvent(new MagicSacrificePermanentEvent(event.getSource(),opponent,SACRIFICE_LAND));
-                }
-            } else if (opponent.getNrOfPermanents(MagicType.Land) <= 4) {
-                final int n4 = 5 - opponent.getNrOfPermanents(MagicType.Land);
-                n4.times {
-                    game.addEvent(new MagicSearchOntoBattlefieldEvent(
-                        event.getSource(),
-                        opponent,
-                        new MagicMayChoice(
-                            "Search for basic land card?",
-                            A_BASIC_LAND_CARD_FROM_LIBRARY
-                        )
-                    ));
-                }
-            };
+            }
         }
     }
 ]

@@ -4,7 +4,7 @@ value=2.500
 rarity=R
 type=Instant
 cost={1}{B}{B}
-ability=Split second.
+ability=Split second
 timing=removal
 requires_groovy_code
 oracle=Split second\nUntil end of turn, creatures target player controls lose all abilities and have base power and toughness 0/2.

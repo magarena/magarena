@@ -4,12 +4,14 @@ def PT = new MagicStatic(MagicLayer.SetPT, MagicStatic.UntilEOT) {
         pt.set(0,2);
     }
 };
+
 def AB = new MagicStatic(MagicLayer.Ability, MagicStatic.UntilEOT) {
     @Override
     public void modAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final Set<MagicAbility> flags) {
         permanent.loseAllAbilities();
     }
 };
+
 [
     new MagicSpellCardEvent() {
         @Override
@@ -25,9 +27,7 @@ def AB = new MagicStatic(MagicLayer.Ability, MagicStatic.UntilEOT) {
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
                 CREATURE_YOU_CONTROL.filter(it) each {
-                    final MagicPermanent creature ->
-
-                    game.doAction(new BecomesCreatureAction(creature,PT,AB));
+                    game.doAction(new BecomesCreatureAction(it,PT,AB));
                 }
             });
         }
