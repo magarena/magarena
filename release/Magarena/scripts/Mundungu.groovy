@@ -1,11 +1,14 @@
 def action = {
     final MagicGame game, final MagicEvent event ->
-    final MagicEvent payLife = new MagicPayLifeEvent(event.getSource(), event.getPlayer(), 1)
-    final MagicEvent payMana = new MagicPayManaCostEvent(event.getSource(),"{1}")
+    final MagicPlayer player = event.getPlayer();
+    final MagicEvent payLife = new MagicPayLifeEvent(event.getSource(), player, 1);
+    final MagicEvent payMana = new MagicPayManaCostEvent(event.getSource(), "{1}");
     if (event.isYes() && payMana.isSatisfied() && payLife.isSatisfied()) {
+        game.logAppendMessage(player,"(Yes)")
         game.addEvent(payMana);
         game.addEvent(payLife);
     } else {
+        game.logAppendMessage(player,"(No)");
         game.doAction(new CounterItemOnStackAction(event.getRefCardOnStack()));
     }
 }
@@ -41,7 +44,7 @@ def action = {
                     new MagicMayChoice("Pay {1} and 1 life?"),
                     card,
                     action,
-                    "PN may\$ pay {1} and 1 life."
+                    "PN may pay {1} and 1 life."
                 ));
             });
         }
