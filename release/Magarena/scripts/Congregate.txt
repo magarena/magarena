@@ -4,6 +4,7 @@ value=2.800
 rarity=U
 type=Instant
 cost={3}{W}
+ability=Cast SN with AI only if there is a creature on the battlefield.
 timing=pump
 requires_groovy_code
 oracle=Target player gains 2 life for each creature on the battlefield.
