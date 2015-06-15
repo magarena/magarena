@@ -4,6 +4,7 @@ value=3.771
 rarity=C
 type=Sorcery
 cost={G}
+ability=Cast SN with AI only if there is a Forest on the battlefield.
 effect=You gain 1 life for each Forest on the battlefield.
 timing=main
 oracle=You gain 1 life for each Forest on the battlefield.

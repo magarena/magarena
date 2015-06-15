@@ -4,6 +4,7 @@ value=3.762
 rarity=U
 type=Sorcery
 cost={2}{U}
+ability=Cast SN with AI only if an opponent controls a tapped creature.
 timing=draw
 requires_groovy_code
 oracle=Draw a card for each tapped creature target opponent controls.

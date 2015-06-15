@@ -4,6 +4,7 @@ value=2.905
 rarity=C
 type=Sorcery
 cost={3}{U}
+ability=Cast SN with AI only if there is a Bird on the battlefield.
 effect=Draw a card for each Bird on the battlefield.
 timing=main
 oracle=Draw a card for each Bird on the battlefield.
