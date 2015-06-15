@@ -1,7 +1,7 @@
 [
     new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Draw),
-        "Look"
+        "Reveal"
     ) {
         @Override
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
