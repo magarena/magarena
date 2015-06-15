@@ -4,6 +4,6 @@ value=2.671
 rarity=U
 type=Instant
 cost={2}{G}
-effect=Destroy target artifact or enchantment. If that permanent was blue or black, draw a card.
 timing=removal
+requires_groovy_code
 oracle=Destroy target artifact or enchantment. If that permanent was blue or black, draw a card.
