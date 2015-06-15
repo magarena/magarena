@@ -4,6 +4,6 @@ value=4.245
 rarity=R
 type=Enchantment
 cost={3}{W}{W}
-ability=Whenever a creature you control deals combat damage, you gain that much life.
 timing=enchantment
+requires_groovy_code
 oracle=Whenever a creature you control deals combat damage, you gain that much life.
