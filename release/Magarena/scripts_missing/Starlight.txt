@@ -4,6 +4,7 @@ value=2.500
 rarity=U
 type=Sorcery
 cost={1}{W}
+ability=Cast SN with AI only if an opponent controls a black creature.
 effect=You gain 3 life for each black creature target opponent controls.
 timing=main
 oracle=You gain 3 life for each black creature target opponent controls.
