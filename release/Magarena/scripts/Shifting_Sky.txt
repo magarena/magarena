@@ -4,7 +4,6 @@ value=4.141
 rarity=R
 type=Enchantment
 cost={2}{U}
-ability=As SN enters the battlefield, choose a color.;\
-        All nonland permanents are the chosen color.
 timing=enchantment
+requires_groovy_code
 oracle=As Shifting Sky enters the battlefield, choose a color.\nAll nonland permanents are the chosen color.
