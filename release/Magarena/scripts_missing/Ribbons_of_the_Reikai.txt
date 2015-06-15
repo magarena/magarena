@@ -5,6 +5,7 @@ rarity=C
 type=Sorcery
 subtype=Arcane
 cost={4}{U}
+ability=Cast SN with AI only if you control a Spirit.
 effect=Draw a card for each Spirit you control.
 timing=main
 oracle=Draw a card for each Spirit you control.
