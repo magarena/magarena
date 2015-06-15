@@ -6,7 +6,7 @@ type=Creature
 subtype=Spirit
 cost={4}{B}
 pt=3/3
-ability=Flying;\
-        Whenever SN deals damage to a creature, SN deals 3 damage to that creature's controller and 3 damage to you.
+ability=Flying
 timing=main
+requires_groovy_code
 oracle=Flying\nWhenever Bellowing Fiend deals damage to a creature, Bellowing Fiend deals 3 damage to that creature's controller and 3 damage to you.
