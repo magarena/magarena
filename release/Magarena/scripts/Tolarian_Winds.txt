@@ -4,6 +4,7 @@ value=4.282
 rarity=C
 type=Instant
 cost={1}{U}
-effect=Discard all the cards in your hand, then draw that many cards.
-timing=removal
+ability=Cast SN with AI only if you have one or more cards in hand.
+timing=draw
+requires_groovy_code
 oracle=Discard all the cards in your hand, then draw that many cards.
