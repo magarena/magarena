@@ -6,7 +6,7 @@ type=Creature
 subtype=Spider
 cost={3}{G}{G}
 pt=2/7
-ability=Reach;\
-        {X}{G}{G}: SN deals X damage to each creature with flying.
+ability=Reach
 timing=main
+requires_groovy_code
 oracle=Reach\n{X}{G}{G}: Silklash Spider deals X damage to each creature with flying.
