@@ -4,6 +4,6 @@ value=2.625
 rarity=R
 type=Enchantment
 cost={B}{B}{B}
-ability={B}{B}, Pay half your life, rounded up: Destroy target nonblack creature. It can't be regenerated.
 timing=enchantment
+requires_groovy_code
 oracle={B}{B}, Pay half your life, rounded up: Destroy target nonblack creature. It can't be regenerated.
