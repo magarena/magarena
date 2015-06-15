@@ -4,6 +4,6 @@ value=3.731
 rarity=R
 type=Enchantment
 cost={2}{B}
-ability=Whenever a permanent is returned to a player's hand, that player discards a card.
 timing=enchantment
+requires_groovy_code
 oracle=Whenever a permanent is returned to a player's hand, that player discards a card.
