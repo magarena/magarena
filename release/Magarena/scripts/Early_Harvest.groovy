@@ -4,7 +4,7 @@
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                TARGET_PLAYER,
+                POS_TARGET_PLAYER,
                 this,
                 "Target player\$ untaps all basic lands he or she controls."
             );
