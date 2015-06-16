@@ -6,6 +6,9 @@ Bellows Lizard
 Boggart Brute
 Catacomb Slug
 Chandra's Fury
+Chandra's Ignition
+Chandra, Fire of Kaladesh
+Chandra, Roaring Flame
 Charging Griffin
 Claustrophobia
 Cobblebrute
@@ -13,6 +16,7 @@ Conclave Naturalists
 Cruel Revival
 Deadbridge Shaman
 Disperse
+Displacement Wave
 Divine Verdict
 Eagle of the Watch
 Elvish Visionary
@@ -31,6 +35,8 @@ Hydrolash
 Infernal Scarring
 Into the Void
 Island
+Jace, Telepath Unbound
+Jace, Vryn's Prodigy
 Jayemdae Tome
 Jhessian Thief
 Joraga Invocation
@@ -45,12 +51,16 @@ Maritime Guard
 Meteorite
 Mighty Leap
 Mind Rot
+Mizzium Meddler
 Mountain
 Nightmare
+Nissa, Sage Animist
+Nissa, Vastwood Seer
 Plains
 Plummet
 Prized Unicorn
 Rabid Bloodsucker
+Ravaging Blaze
 Reave Soul
 Ringwarden Owl
 Runed Servitor
