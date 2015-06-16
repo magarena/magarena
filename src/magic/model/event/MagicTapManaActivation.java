@@ -22,4 +22,5 @@ public class MagicTapManaActivation extends MagicManaActivation {
     public static final MagicManaActivation Black = new MagicTapManaActivation(MagicManaType.getList("{B}"));
     public static final MagicManaActivation Red   = new MagicTapManaActivation(MagicManaType.getList("{R}"));
     public static final MagicManaActivation Green = new MagicTapManaActivation(MagicManaType.getList("{G}"));
+    public static final MagicManaActivation Snow  = new MagicTapManaActivation(MagicManaType.getList("{S}"));
 }

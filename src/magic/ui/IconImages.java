@@ -16,7 +16,7 @@ import magic.ui.theme.PlayerAvatar;
 import magic.utility.MagicResources;
 
 public final class IconImages {
-    
+
     private static final Map<Integer, ImageIcon> manaIcons = new HashMap<>();
     private static final Map<MagicIcon, ImageIcon> icons = new HashMap<>();
     private static final Map<String, PlayerAvatar> avatarsMap = new HashMap<>();
@@ -115,7 +115,7 @@ public final class IconImages {
             return getIcon(perm.getCardDefinition());
         }
     }
-    
+
     public static ImageIcon getIcon(final MagicCardDefinition cdef) {
         if (cdef.isLand()) {
             return getIcon(MagicIcon.LAND);
@@ -138,6 +138,8 @@ public final class IconImages {
         switch (mtype) {
             case Colorless:
                 return getSmallManaIcon(MagicIcon.MANA_1);
+            case Snow:
+                return getSmallManaIcon(MagicIcon.MANA_SNOW);
             case Black:
                 return getSmallManaIcon(MagicIcon.MANA_BLACK);
             case Blue:
@@ -154,7 +156,7 @@ public final class IconImages {
 
     public static ImageIcon getIconSize1(final DuelPlayerConfig playerDef) {
         return getSizedAvatarImageIcon(playerDef, 1);
-    }    
+    }
 
     public static ImageIcon getIconSize2(final DuelPlayerConfig playerDef) {
         return getSizedAvatarImageIcon(playerDef, 2);
@@ -191,7 +193,7 @@ public final class IconImages {
         } else {
             return null;
         }
-    }    
+    }
 
     public static void getClearAvatarsCache() {
         avatarsMap.clear();

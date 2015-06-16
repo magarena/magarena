@@ -7,18 +7,19 @@ import java.util.List;
 public enum MagicManaType {
 
     Colorless("colorless","{1}"),
+    Snow("snow","{S}"),
     Black("black","{B}"),
     Blue("blue","{U}"),
     Green("green","{G}"),
     Red("red","{R}"),
     White("white","{W}"),
-    NONE("none","{N}"),
+    NONE("none","{N}")
     ;
 
     public static final List<MagicManaType> ALL_COLORS = Collections.unmodifiableList(Arrays.asList(
         Black,Blue,Green,Red,White));
     public static final List<MagicManaType> ALL_TYPES = Collections.unmodifiableList(Arrays.asList(
-        Colorless,Black,Blue,Green,Red,White)); // Colorless must be in front.
+        Colorless,Snow,Black,Blue,Green,Red,White)); // Colorless must be in front.
 
     public static final int NR_OF_TYPES = ALL_TYPES.size();
 
@@ -54,6 +55,9 @@ public enum MagicManaType {
     public static List<MagicManaType> getList(final String name) {
         if ("{1}".equals(name)) {
             return Arrays.asList(Colorless);
+        }
+        if ("{S}".equals(name)) {
+            return Arrays.asList(Snow);
         }
         if ("one mana of any color".equals(name)) {
             return ALL_TYPES;

@@ -9,6 +9,7 @@ public enum MagicCostManaType {
     // Ordered from least restrictive to most restrictive.
     // Same order as in mana cost
     Colorless("colorless","{1}",MagicManaType.ALL_TYPES),
+    Snow("snow","{S}",Arrays.asList(MagicManaType.Snow)),
     WhiteBlue("white/blue","{W/U}",Arrays.asList(MagicManaType.White,MagicManaType.Blue)),
     WhiteBlack("white/black","{W/B}",Arrays.asList(MagicManaType.White,MagicManaType.Black)),
     BlueBlack("blue/black","{U/B}",Arrays.asList(MagicManaType.Blue,MagicManaType.Black)),
