@@ -21,7 +21,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
-            final MagicCard card = player.getLibrary().getCardAtTop();
+            final MagicCard card = player.getLibrary().getCardsFromTop(1);
             game.doAction(new RevealAction(card));
             if (card.hasType(MagicType.Land)) {
                 game.doAction(new RemoveCardAction(card, MagicLocationType.OwnersLibrary));
