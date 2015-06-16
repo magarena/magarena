@@ -192,6 +192,7 @@ public enum MagicIcon {
     MANA_BLACK(26),
     MANA_RED(27),
     MANA_GREEN(28),
+    MANA_SNOW(29),
     MANA_HYBRID_WHITE(40),
     MANA_HYBRID_BLUE(41),
     MANA_HYBRID_BLACK(42),
