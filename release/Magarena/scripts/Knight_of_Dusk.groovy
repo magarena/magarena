@@ -1,19 +1,7 @@
-def CREATURE_BLOCKING_SN = {
-    final MagicPermanent permanent ->
-    return new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
-            return target.getBlockedCreature() == permanent;
-        }
+def CREATURE_BLOCKING_SN = new MagicPermanentFilterImpl() {
+    public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+        return target.getBlockedCreature() == source;
     }
-}
-
-def TARGET_CREATURE_BLOCKING_SN = {
-    final MagicPermanent permanent ->
-    return new MagicTargetChoice(
-        CREATURE_BLOCKING_SN(permanent),
-        MagicTargetHint.Negative,
-        "target creature blocking ${permanent.getName()}"
-    );
 }
 
 [
@@ -30,7 +18,11 @@ def TARGET_CREATURE_BLOCKING_SN = {
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                TARGET_CREATURE_BLOCKING_SN(source),
+                new MagicTargetChoice(
+                    CREATURE_BLOCKING_SN,
+                    MagicTargetHint.Negative,
+                    "target creature blocking ${source}"
+                ),
                 this,
                 "Destroy target creature blocking SN.\$"
             );
