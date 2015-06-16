@@ -365,6 +365,14 @@ public class MagicTargetFilterFactory {
         }
     };
 
+    public static final MagicPermanentFilterImpl TAPPED_BASIC_LAND=new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+            return target.isLand() &&
+                    target.hasType(MagicType.Basic) &&
+                    target.isTapped();
+        }
+    };
+
     public static final MagicPermanentFilterImpl BASIC_LAND = MagicTargetFilterFactory.permanentAnd(MagicType.Land, MagicType.Basic, Control.Any);
 
     public static final MagicPermanentFilterImpl SNOW_LAND = MagicTargetFilterFactory.permanentAnd(MagicType.Land, MagicType.Snow, Control.Any);
@@ -2588,6 +2596,7 @@ public class MagicTargetFilterFactory {
         single.put("nontoken Elf", NONTOKEN_ELF);
         single.put("legendary Samurai", LEGENDARY_SAMURAI);
         single.put("creature with three or more level counters on it", CREATURE_AT_LEAST_3_LEVEL_COUNTERS);
+        single.put("tapped basic land", TAPPED_BASIC_LAND);
         single.put("untapped land", UNTAPPED_LAND);
         single.put("untapped artifact, creature, or land you control", UNTAPPED_ARTIFACT_CREATURE_OR_LAND_YOU_CONTROL);
         single.put("non-Aura enchantment", NON_AURA_ENCHANTMENT);
