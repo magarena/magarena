@@ -56,7 +56,7 @@ public class ImageDrawingUtils {
                 if (manaType == MagicManaType.Snow) {
                     snowMana = true;
                 }
-                if (manaType != MagicManaType.Colorless || manaType != MagicManaType.Snow) {
+                if (manaType != MagicManaType.Colorless && manaType != MagicManaType.Snow) {
                     types.add(manaType);
                 }
             }
@@ -64,6 +64,9 @@ public class ImageDrawingUtils {
         final List<ImageIcon> icons = new ArrayList<ImageIcon>();
         if (types.size()==MagicColor.NR_COLORS) {
             icons.add(IconImages.getIcon(MagicIcon.MANA_ANY));
+            if (snowMana) {
+                icons.add(IconImages.getIcon(MagicIcon.MANA_SNOW));
+            }
         } else if (types.isEmpty() && !acts.isEmpty()) {
             icons.add(IconImages.getIcon(MagicIcon.MANA_1));
             if (snowMana) {
