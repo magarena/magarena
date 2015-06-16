@@ -50,9 +50,13 @@ public class ImageDrawingUtils {
         final int ay
     ) {
         final Set<MagicManaType> types = new HashSet<MagicManaType>();
+        boolean snowMana = false;
         for (final MagicManaActivation manaAct : acts) {
             for (final MagicManaType manaType : manaAct.getManaTypes()) {
-                if (manaType != MagicManaType.Colorless) {
+                if (manaType == MagicManaType.Snow) {
+                    snowMana = true;
+                }
+                if (manaType != MagicManaType.Colorless || manaType != MagicManaType.Snow) {
                     types.add(manaType);
                 }
             }
@@ -62,11 +66,17 @@ public class ImageDrawingUtils {
             icons.add(IconImages.getIcon(MagicIcon.MANA_ANY));
         } else if (types.isEmpty() && !acts.isEmpty()) {
             icons.add(IconImages.getIcon(MagicIcon.MANA_1));
+            if (snowMana) {
+                icons.add(IconImages.getIcon(MagicIcon.MANA_SNOW));
+            }
         } else {
             for (final MagicColor color : MagicColor.values()) {
                 if (types.contains(color.getManaType())) {
                     icons.add(IconImages.getIcon(color.getManaType()));
                 }
+            }
+            if (snowMana) {
+                icons.add(IconImages.getIcon(MagicIcon.MANA_SNOW));
             }
         }
         for (final ImageIcon icon : icons) {
