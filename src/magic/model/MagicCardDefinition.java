@@ -67,13 +67,13 @@ public class MagicCardDefinition implements MagicAbilityStore {
             setIndex(1000001);
         }
     };
-    
+
     // name displayed in UI, may be repeated in tokens
     private String name;
 
     // name used for mapping and persistence, must be unique
     private String distinctName;
-    
+
     private boolean isValid = true;
 
     private String imageURL;
@@ -116,7 +116,7 @@ public class MagicCardDefinition implements MagicAbilityStore {
     private final Collection<MagicWhenPutIntoGraveyardTrigger> putIntoGraveyardTriggers = new ArrayList<MagicWhenPutIntoGraveyardTrigger>();
     private final Collection<MagicManaActivation> manaActivations=new ArrayList<MagicManaActivation>();
     private final Collection<MagicEventSource> costEventSources=new ArrayList<MagicEventSource>();
-    
+
     private MagicCardDefinition flipCardDefinition;
     private MagicCardDefinition transformCardDefinition;
 
@@ -129,7 +129,7 @@ public class MagicCardDefinition implements MagicAbilityStore {
     public MagicCardDefinition() {
         initialize();
     }
-    
+
     public static MagicCardDefinition create(final MagicCardDefinitionInit init) {
         final MagicCardDefinition cdef = new MagicCardDefinition();
         init.initialize(cdef);
@@ -146,23 +146,23 @@ public class MagicCardDefinition implements MagicAbilityStore {
     public void setRequiresGroovy(final String value) {
         requiresGroovy = value;
     }
-    
+
     public void setEffectProperty(final String value) {
         effectProperty = value;
     }
-    
+
     public void setFlipCardName(final String value) {
         flipCardName = value;
     }
-    
+
     public void setTransformCardName(final String value) {
         transformCardName = value;
     }
-    
+
     public void setHidden() {
         hidden = true;
     }
-    
+
     public boolean isHidden() {
         return hidden;
     }
@@ -191,11 +191,11 @@ public class MagicCardDefinition implements MagicAbilityStore {
     public boolean isValid() {
         return isValid;
     }
-    
+
     public boolean isInvalid() {
         return isValid == false;
     }
-    
+
     public void setInvalid() {
         isValid = false;
     }
@@ -247,7 +247,7 @@ public class MagicCardDefinition implements MagicAbilityStore {
     public String getAsciiName() {
         return CardDefinitions.getASCII(distinctName);
     }
-    
+
     /**
      * Returns the name of the script/groovy file without extension
      */
@@ -280,7 +280,7 @@ public class MagicCardDefinition implements MagicAbilityStore {
     public void setImageURL(final String imageURL) {
         this.imageURL = imageURL;
     }
-    
+
     public String getImageURL() {
         return imageURL;
     }
@@ -353,7 +353,7 @@ public class MagicCardDefinition implements MagicAbilityStore {
     public boolean isToken() {
         return token;
     }
-    
+
     int getTypeFlags() {
         return typeFlags;
     }
@@ -378,7 +378,7 @@ public class MagicCardDefinition implements MagicAbilityStore {
     public boolean hasType(final MagicType type) {
         return (typeFlags&type.getMask())!=0;
     }
-    
+
     public MagicCardDefinition getFlippedDefinition() {
         if (flipCardDefinition == null) {
             flipCardDefinition = isFlipCard() ?
@@ -396,7 +396,7 @@ public class MagicCardDefinition implements MagicAbilityStore {
         }
         return transformCardDefinition;
     }
-    
+
     public boolean isBasic() {
         return hasType(MagicType.Basic);
     }
@@ -429,13 +429,13 @@ public class MagicCardDefinition implements MagicAbilityStore {
         return hasType(MagicType.Legendary);
     }
 
-    public boolean isTribal() {
-        return hasType(MagicType.Tribal);
-    }
+    public boolean isTribal() { return hasType(MagicType.Tribal); }
 
-    public boolean isAura() {
-        return isEnchantment() && hasSubType(MagicSubType.Aura);
-    }
+    public boolean isSnow() { return hasType(MagicType.Snow); }
+
+    public boolean isWorld() { return hasType(MagicType.World); }
+
+    public boolean isAura() { return isEnchantment() && hasSubType(MagicSubType.Aura); }
 
     public boolean isInstant() {
         return hasType(MagicType.Instant);
@@ -452,11 +452,11 @@ public class MagicCardDefinition implements MagicAbilityStore {
     public boolean isPermanent() {
         return isSpell() == false;
     }
-    
+
     public boolean isFlipCard() {
         return flipCardName != null;
     }
-    
+
     public boolean isDoubleFaced() {
         return transformCardName != null;
     }
@@ -467,14 +467,27 @@ public class MagicCardDefinition implements MagicAbilityStore {
 
     public String getLongTypeString() {
         if (isBasic()) {
-            return "Basic " + getTypeString();
+            if (isSnow()) {
+                return "Basic Snow " + getTypeString();
+            } else {
+                return "Basic " + getTypeString();
+            }
         }
         if (isLegendary()) {
-            return "Legendary " + getTypeString();
+            if (isSnow()) {
+                return "Legendary Snow " + getTypeString();
+            } else {
+                return "Legendary " + getTypeString();
+            }
         }
-
         if (isTribal()) {
             return "Tribal " + getTypeString();
+        }
+        if (isSnow()) {
+            return "Snow " + getTypeString();
+        }
+        if (isWorld()) {
+            return "World " + getTypeString();
         }
         return getTypeString();
     }
@@ -716,7 +729,7 @@ public class MagicCardDefinition implements MagicAbilityStore {
     public String getText() {
         return this.text;
     }
-    
+
     public String getFlattenedText() {
         return this.text.replace("\n", " ");
     }
@@ -779,7 +792,7 @@ public class MagicCardDefinition implements MagicAbilityStore {
     public void addTrigger(final MagicWhenSpellIsCastTrigger trigger) {
         spellIsCastTriggers.add(trigger);
     }
-    
+
     public void addTrigger(final MagicWhenCycleTrigger trigger) {
         cycleTriggers.add(trigger);
     }
@@ -819,7 +832,7 @@ public class MagicCardDefinition implements MagicAbilityStore {
     public Collection<MagicWhenSpellIsCastTrigger> getSpellIsCastTriggers() {
         return spellIsCastTriggers;
     }
-    
+
     public Collection<MagicWhenCycleTrigger> getCycleTriggers() {
         return cycleTriggers;
     }
@@ -839,7 +852,7 @@ public class MagicCardDefinition implements MagicAbilityStore {
     public void addAct(final MagicPermanentActivation activation) {
         permActivations.add(activation);
     }
-    
+
     public void addMorphAct(final MagicPermanentActivation activation) {
         morphActivations.add(activation);
     }
@@ -861,7 +874,7 @@ public class MagicCardDefinition implements MagicAbilityStore {
     public Collection<MagicActivation<MagicPermanent>> getActivations() {
         return permActivations;
     }
-    
+
     public Collection<MagicActivation<MagicPermanent>> getMorphActivations() {
         return morphActivations;
     }
