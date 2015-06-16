@@ -43,10 +43,10 @@ public class MagicPermanentStatic implements Comparable<MagicPermanentStatic> {
         }
     );
 
-    public static final MagicPermanentStatic BasicLandEffect = new MagicPermanentStatic(
+    public static final MagicPermanentStatic ManaEffect = new MagicPermanentStatic(
         0,
         MagicPermanent.NONE,
-        new MagicStatic(MagicLayer.Ability, MagicTargetFilterFactory.LAND) {
+        new MagicStatic(MagicLayer.Ability, MagicTargetFilterFactory.PERMANENT) {
             @Override
             public void modAbilityFlags(final MagicPermanent source, final MagicPermanent permanent, final Set<MagicAbility> flags) {
                 if (permanent.hasSubType(MagicSubType.Plains)) {
@@ -63,6 +63,9 @@ public class MagicPermanentStatic implements Comparable<MagicPermanentStatic> {
                 }
                 if (permanent.hasSubType(MagicSubType.Forest)) {
                     permanent.addAbility(MagicTapManaActivation.Green);
+                }
+                if (permanent.hasType(MagicType.Snow) && permanent.producesMana()) {
+                    permanent.addAbility(MagicTapManaActivation.Snow);
                 }
             }
         }
