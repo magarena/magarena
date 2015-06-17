@@ -4,6 +4,7 @@ value=3.375
 rarity=R
 type=Instant
 cost={8}{G}
+ability=Cast SN with AI only if you control a creature.
 effect=Creatures you control get +7/+7 until end of turn.
 timing=pump
 oracle=Creatures you control get +7/+7 until end of turn.
