@@ -143,7 +143,7 @@ public class PermanentViewerInfo {
         if (permanent.isTapped()) {
             textBuffer.append(MagicPermanentState.Tapped.getText());
         } else if (!permanent.canTap()) {
-            textBuffer.append("{S}");
+            textBuffer.append("{SS}");
         }
         if (permanent.hasState(MagicPermanentState.DoesNotUntapDuringNext)) {
             textBuffer.append(MagicPermanentState.DoesNotUntapDuringNext.getText());
