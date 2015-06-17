@@ -5,6 +5,7 @@ rarity=C
 type=Instant
 subtype=Arcane
 cost={2}{R}
+ability=Cast SN with AI only if you control a creature.
 effect=Creatures you control get +2/+0 until end of turn.
 timing=pump
 oracle=Creatures you control get +2/+0 until end of turn.
