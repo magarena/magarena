@@ -4,6 +4,7 @@ value=3.051
 rarity=C
 type=Instant
 cost={2}{R}
+ability=Cast SN with AI only if you control a creature.
 effect=Green creatures you control get +1/+1 until end of turn.~Nongreen creatures you control get +1/+0 until end of turn.
 timing=pump
 oracle=Green creatures you control get +1/+1 until end of turn.\nNongreen creatures you control get +1/+0 until end of turn.

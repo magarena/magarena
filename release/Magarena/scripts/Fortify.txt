@@ -4,6 +4,7 @@ value=3.185
 rarity=C
 type=Instant
 cost={2}{W}
+ability=Cast SN with AI only if you control a creature.
 effect=Choose one — (1) Creatures you control get +2/+0 until end of turn. (2) Creatures you control get +0/+2 until end of turn.
 timing=pump
 oracle=Choose one —\n• Creatures you control get +2/+0 until end of turn.\n• Creatures you control get +0/+2 until end of turn.
