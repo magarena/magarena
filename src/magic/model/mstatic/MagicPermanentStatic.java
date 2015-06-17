@@ -2,6 +2,7 @@ package magic.model.mstatic;
 
 import magic.model.MagicCopyMap;
 import magic.model.MagicCounterType;
+import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPowerToughness;
 import magic.model.MagicType;
@@ -43,10 +44,10 @@ public class MagicPermanentStatic implements Comparable<MagicPermanentStatic> {
         }
     );
 
-    public static final MagicPermanentStatic ManaEffect = new MagicPermanentStatic(
+    public static final MagicPermanentStatic BasicLandEffect = new MagicPermanentStatic(
         0,
         MagicPermanent.NONE,
-        new MagicStatic(MagicLayer.Ability, MagicTargetFilterFactory.PERMANENT) {
+        new MagicStatic(MagicLayer.Ability, MagicTargetFilterFactory.LAND) {
             @Override
             public void modAbilityFlags(final MagicPermanent source, final MagicPermanent permanent, final Set<MagicAbility> flags) {
                 if (permanent.hasSubType(MagicSubType.Plains)) {
@@ -64,9 +65,6 @@ public class MagicPermanentStatic implements Comparable<MagicPermanentStatic> {
                 if (permanent.hasSubType(MagicSubType.Forest)) {
                     permanent.addAbility(MagicTapManaActivation.Green);
                 }
-                if (permanent.hasType(MagicType.Snow) && permanent.producesMana()) {
-                    permanent.addAbility(MagicTapManaActivation.Snow);
-                }
             }
         }
     );
@@ -74,11 +72,13 @@ public class MagicPermanentStatic implements Comparable<MagicPermanentStatic> {
     public static final MagicPermanentStatic SnowManaEffect = new MagicPermanentStatic(
         0,
         MagicPermanent.NONE,
-        new MagicStatic(MagicLayer.Ability, MagicTargetFilterFactory.PERMANENT) {
+        new MagicStatic(MagicLayer.Game, MagicTargetFilterFactory.PERMANENT) {
             @Override
-            public void modAbilityFlags(final MagicPermanent source, final MagicPermanent permanent, final Set<MagicAbility> flags) {
-                if (permanent.hasType(MagicType.Snow) && permanent.producesMana()) {
-                    permanent.addAbility(MagicTapManaActivation.Snow);
+            public void modGame(final MagicPermanent source, final MagicGame game) {
+                for (final MagicPermanent permanent : MagicTargetFilterFactory.PERMANENT.filter(source)) {
+                    if (permanent.hasType(MagicType.Snow) && permanent.producesMana()) {
+                        permanent.addAbility(MagicTapManaActivation.Snow);
+                    }
                 }
             }
         }

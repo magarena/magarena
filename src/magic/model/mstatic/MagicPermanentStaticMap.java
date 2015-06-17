@@ -23,8 +23,11 @@ public class MagicPermanentStaticMap {
         //changes to power and toughness due to +1/+1 and -1/-1 counters
         add(MagicPermanentStatic.CountersEffect);
 
-        //Handles card-defined mana abilities.
-        add(MagicPermanentStatic.ManaEffect);
+        //Handles Basic Land mana abilities.
+        add(MagicPermanentStatic.BasicLandEffect);
+
+        //Handles Snow mana abilties.
+        add(MagicPermanentStatic.SnowManaEffect);
 
     }
 
