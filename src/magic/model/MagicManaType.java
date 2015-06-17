@@ -18,12 +18,12 @@ public enum MagicManaType {
     ;
 
     public static final List<MagicManaType> ALL_COLORS = Collections.unmodifiableList(
-        Arrays.asList(White,Blue,Black,Red,Green)
+        Arrays.asList(Colorless,White,Blue,Black,Red,Green)
     );
     
     // Colorless must be in front.
     public static final List<MagicManaType> ALL_TYPES = Collections.unmodifiableList(
-        Arrays.asList(Colorless,White,Blue,Black,Red,Green)
+        Arrays.asList(Colorless,White,Blue,Black,Red,Green,Snow)
     ); 
 
     public static final int NR_OF_TYPES = ALL_TYPES.size();
@@ -65,7 +65,7 @@ public enum MagicManaType {
             return Arrays.asList(Snow);
         }
         if ("one mana of any color".equals(name)) {
-            return ALL_TYPES;
+            return ALL_COLORS;
         }
         final String[] tokens = name.split(" or ");
         final MagicManaType[] types = new MagicManaType[tokens.length + 1];
