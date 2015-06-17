@@ -372,6 +372,12 @@ public class MagicTargetFilterFactory {
                     target.isTapped();
         }
     };
+    
+    public static final MagicPermanentFilterImpl SNOW_MANA_PERMANENT = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+            return target.hasType(MagicType.Snow) && target.producesMana();
+        }
+    };
 
     public static final MagicPermanentFilterImpl BASIC_LAND = MagicTargetFilterFactory.permanentAnd(MagicType.Land, MagicType.Basic, Control.Any);
 
