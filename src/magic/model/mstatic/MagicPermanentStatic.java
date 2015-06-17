@@ -46,7 +46,7 @@ public class MagicPermanentStatic implements Comparable<MagicPermanentStatic> {
     public static final MagicPermanentStatic ManaEffect = new MagicPermanentStatic(
         0,
         MagicPermanent.NONE,
-        new MagicStatic(MagicLayer.Game, MagicTargetFilterFactory.PERMANENT) {
+        new MagicStatic(MagicLayer.Ability, MagicTargetFilterFactory.PERMANENT) {
             @Override
             public void modAbilityFlags(final MagicPermanent source, final MagicPermanent permanent, final Set<MagicAbility> flags) {
                 if (permanent.hasSubType(MagicSubType.Plains)) {
