@@ -17,7 +17,7 @@ public enum MagicManaType {
     NONE("none","{N}")
     ;
 
-    public static final List<MagicManaType> ALL_COLORS = Collections.unmodifiableList(
+    private static final List<MagicManaType> ALL_COLORS = Collections.unmodifiableList(
         Arrays.asList(Colorless,White,Blue,Black,Red,Green)
     );
     
