@@ -5,6 +5,7 @@ removal=3
 rarity=C
 type=Sorcery
 cost={1}{R}
+ability=Cast SN with AI only if you control a creature.
 effect=SN deals damage to target player equal to the number of creatures you control.
 timing=removal
 oracle=Mob Justice deals damage to target player equal to the number of creatures you control.
