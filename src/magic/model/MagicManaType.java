@@ -16,9 +16,9 @@ public enum MagicManaType {
     Snow("snow","{S}"),
     NONE("none","{N}")
     ;
-
-    public static final List<MagicManaType> ALL_COLORS = Collections.unmodifiableList(
-        Arrays.asList(Colorless,White,Blue,Black,Red,Green)
+    
+    private static final List<MagicManaType> ALL_COLORS = Collections.unmodifiableList(
+        Arrays.asList(White,Blue,Black,Red,Green)
     );
     
     // Colorless must be in front.
@@ -68,10 +68,9 @@ public enum MagicManaType {
             return ALL_COLORS;
         }
         final String[] tokens = name.split(" or ");
-        final MagicManaType[] types = new MagicManaType[tokens.length + 1];
-        types[0] = Colorless;
+        final MagicManaType[] types = new MagicManaType[tokens.length];
         for (int i = 0; i < tokens.length; i++) {
-            types[i + 1] = get(tokens[i]);
+            types[i] = get(tokens[i]);
         }
         return Arrays.asList(types);
     }
