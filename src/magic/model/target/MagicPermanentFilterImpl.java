@@ -22,7 +22,7 @@ public abstract class MagicPermanentFilterImpl implements MagicTargetFilter<Magi
         return filter(event.getSource(), event.getPlayer(), MagicTargetHint.None);
     }
     
-    public List<MagicPermanent> filter(final MagicSource source, MagicPlayer player, final MagicTargetHint targetHint) {
+    public List<MagicPermanent> filter(final MagicSource source, final MagicPlayer player, final MagicTargetHint targetHint) {
         final MagicGame game = player.getGame();
         final List<MagicPermanent> targets=new ArrayList<MagicPermanent>();
         if (acceptType(MagicTargetType.Permanent)) {
