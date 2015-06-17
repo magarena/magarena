@@ -3,6 +3,7 @@ package magic.ui.duel.viewer;
 import magic.data.GeneralConfig;
 import magic.ui.CachedImagesProvider;
 import magic.ui.IconImages;
+import magic.model.MagicType;
 import magic.model.MagicAbility;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
@@ -297,7 +298,14 @@ public class ImagePermanentViewer extends JPanel {
 
                 // Mana symbols
                 if (linkedInfo.permanent.getManaActivations().size() > 0) {
-                    ax = ImageDrawingUtils.drawManaInfo(g, this, linkedInfo.permanent.getManaActivations(), ax, ay);
+                    ax = ImageDrawingUtils.drawManaInfo(
+                        g, 
+                        this, 
+                        linkedInfo.permanent.getManaActivations(), 
+                        linkedInfo.permanent.hasType(MagicType.Snow),
+                        ax, 
+                        ay
+                    );
                 }
 
                 // Power, toughness, damage

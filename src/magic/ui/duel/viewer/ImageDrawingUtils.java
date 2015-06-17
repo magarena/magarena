@@ -46,17 +46,14 @@ public class ImageDrawingUtils {
         final Graphics g,
         final ImageObserver observer,
         final Collection<MagicManaActivation> acts,
+        final boolean isSnow,
         int ax,
         final int ay
     ) {
         final Set<MagicManaType> types = new HashSet<MagicManaType>();
-        boolean snowMana = false;
         for (final MagicManaActivation manaAct : acts) {
             for (final MagicManaType manaType : manaAct.getManaTypes()) {
-                if (manaType == MagicManaType.Snow) {
-                    snowMana = true;
-                }
-                if (manaType != MagicManaType.Colorless && manaType != MagicManaType.Snow) {
+                if (manaType != MagicManaType.Colorless) {
                     types.add(manaType);
                 }
             }
@@ -64,23 +61,17 @@ public class ImageDrawingUtils {
         final List<ImageIcon> icons = new ArrayList<ImageIcon>();
         if (types.size()==MagicColor.NR_COLORS) {
             icons.add(IconImages.getIcon(MagicIcon.MANA_ANY));
-            if (snowMana) {
-                icons.add(IconImages.getIcon(MagicIcon.MANA_SNOW));
-            }
         } else if (types.isEmpty() && !acts.isEmpty()) {
             icons.add(IconImages.getIcon(MagicIcon.MANA_1));
-            if (snowMana) {
-                icons.add(IconImages.getIcon(MagicIcon.MANA_SNOW));
-            }
         } else {
             for (final MagicColor color : MagicColor.values()) {
                 if (types.contains(color.getManaType())) {
                     icons.add(IconImages.getIcon(color.getManaType()));
                 }
             }
-            if (snowMana) {
-                icons.add(IconImages.getIcon(MagicIcon.MANA_SNOW));
-            }
+        }
+        if (isSnow && !icons.isEmpty()) {
+            icons.add(IconImages.getIcon(MagicIcon.MANA_SNOW));
         }
         for (final ImageIcon icon : icons) {
             g.drawImage(icon.getImage(),ax,ay,observer);

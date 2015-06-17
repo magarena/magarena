@@ -26,6 +26,7 @@ import javax.swing.SwingUtilities;
 import magic.ui.CachedImagesProvider;
 import magic.ui.CardImagesProvider;
 import magic.data.GeneralConfig;
+import magic.model.MagicType;
 import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicCardList;
@@ -243,7 +244,14 @@ public class ImageCardListViewer extends JPanel implements ChoiceViewer {
             //draw the overlay icons
             if (showInfo) {
                 if (cardDefinition.isLand()) {
-                    ImageDrawingUtils.drawManaInfo(g,this,cardDefinition.getManaActivations(),x1+1,y2-17);
+                    ImageDrawingUtils.drawManaInfo(
+                        g,
+                        this,
+                        cardDefinition.getManaActivations(),
+                        card.hasType(MagicType.Snow),
+                        x1+1,
+                        y2-17
+                    );
                 } else {
                     ImageDrawingUtils.drawCostInfo(g,this,card.getCost(),x1,x2-1,y1+2);
                 }
