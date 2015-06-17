@@ -25,10 +25,6 @@ public class MagicPermanentStaticMap {
 
         //Handles Basic Land mana abilities.
         add(MagicPermanentStatic.BasicLandEffect);
-
-        //Handles Snow mana abilties.
-        add(MagicPermanentStatic.SnowManaEffect);
-
     }
 
     public MagicPermanentStaticMap(final MagicCopyMap copyMap, final MagicPermanentStaticMap sourceMap) {

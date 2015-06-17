@@ -69,19 +69,6 @@ public class MagicPermanentStatic implements Comparable<MagicPermanentStatic> {
         }
     );
 
-    public static final MagicPermanentStatic SnowManaEffect = new MagicPermanentStatic(
-        0,
-        MagicPermanent.NONE,
-        new MagicStatic(MagicLayer.Game) {
-            @Override
-            public void modGame(final MagicPermanent source, final MagicGame game) {
-                for (final MagicPermanent permanent : MagicTargetFilterFactory.SNOW_MANA_PERMANENT.filter(game.getTurnPlayer())) {
-                    permanent.addAbility(MagicTapManaActivation.Snow);
-                }
-            }
-        }
-    );
-
     private final long id;
     private final MagicPermanent permanent;
     private final MagicStatic mstatic;
