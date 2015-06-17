@@ -5,8 +5,8 @@ rarity=C
 type=Snow,Enchantment
 subtype=Aura
 cost={W}
-ability=Enchant creature;\
-        Enchanted creature can't block, and its activated abilities can't be activated.;\
+ability=Enchanted creature can't block, and its activated abilities can't be activated.;\
         {S}: Enchanted creature gains defender until end of turn.
 timing=aura
+enchant=can't attack or block,neg creature
 oracle=Enchant creature\nEnchanted creature can't block, and its activated abilities can't be activated.\n{S}: Enchanted creature gains defender until end of turn.
