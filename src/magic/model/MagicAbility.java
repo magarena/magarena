@@ -1288,13 +1288,15 @@ public enum MagicAbility {
             card.add(MagicStatic.genABGameStatic(filter, abList));
         }
     },
+    /*
     Suspend("suspend " + ARG.NUMBER + "( |—)" + ARG.MANACOST, 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final int n = ARG.number(arg);
             final MagicManaCost manaCost = MagicManaCost.create(ARG.manacost(arg));
-            //card.add(new MagicSuspendActivation(n, manaCost));
+            card.add(new MagicSuspendActivation(n, manaCost));
         }
     },
+    */
     ;
 
     public static final Set<MagicAbility> PROTECTION_FLAGS = EnumSet.range(ProtectionFromBlack, ProtectionFromEverything);
