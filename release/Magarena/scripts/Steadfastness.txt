@@ -4,6 +4,7 @@ value=1.250
 rarity=C
 type=Sorcery
 cost={1}{W}
+ability=Cast SN with AI only if you control a creature.
 effect=Creatures you control get +0/+3 until end of turn.
 timing=main
 oracle=Creatures you control get +0/+3 until end of turn.
