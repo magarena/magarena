@@ -9,6 +9,7 @@ import javax.swing.JPanel;
 import javax.swing.JTable;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
+import magic.ui.ScreenController;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
@@ -97,12 +98,14 @@ class MainViewsPanel extends JPanel implements IDeckEditorListener {
                 setView(recallPanel);
             }
         });
-        toggleButtonsPanel.addToggleButton("Legality", new AbstractAction() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                setView(legalityPanel);
-            }
-        });
+        if (ScreenController.isDuelActive() == false) {
+            toggleButtonsPanel.addToggleButton("Legality", new AbstractAction() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    setView(legalityPanel);
+                }
+            });
+        }
 
         toggleButtonsPanel.setSelectedToggleButton("Deck");
         toggleButtonsPanel.refreshLayout();
