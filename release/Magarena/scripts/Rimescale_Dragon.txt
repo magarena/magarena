@@ -7,7 +7,7 @@ subtype=Dragon
 cost={5}{R}{R}
 pt=5/5
 ability=Flying;\
-        {2}{S}: Tap target creature and put an ice counter on it.;\
-        Creatures with ice counters on them don't untap during their controllers' untap steps.
+        {2}{S}: Tap target creature.~Put an ice counter on *it*.
 timing=main
+requires_groovy_code
 oracle=Flying\n{2}{S}: Tap target creature and put an ice counter on it.\nCreatures with ice counters on them don't untap during their controllers' untap steps.
