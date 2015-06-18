@@ -36,15 +36,7 @@ public class DeckViewScreen
     }
 
     private void setupScreen(final MagicDeck deck, final MagicCardDefinition selectedCard) {
-        this.screenContent = new DeckViewPanel(deck, selectedCard); // new DeckEditorPanel(deck);
-//        screenContent.addPropertyChangeListener(
-//                DeckEditorPanel.CP_DECKLIST,
-//                new PropertyChangeListener() {
-//                    @Override
-//                    public void propertyChange(PropertyChangeEvent evt) {
-//                        deckStatusPanel.setDeck(screenContent.getDeck(), false);
-//                    }
-//                });
+        this.screenContent = new DeckViewPanel(deck, selectedCard);
         setDeck(deck);
         setContent(this.screenContent);
     }

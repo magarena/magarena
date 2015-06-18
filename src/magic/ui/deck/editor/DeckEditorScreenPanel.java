@@ -1,8 +1,6 @@
 package magic.ui.deck.editor;
 
 import java.awt.Dimension;
-import java.beans.PropertyChangeEvent;
-import java.beans.PropertyChangeListener;
 import javax.swing.JPanel;
 import magic.data.GeneralConfig;
 import magic.model.MagicCardDefinition;
@@ -14,51 +12,26 @@ import magic.utility.MagicSystem;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-public class DeckEditorPanel extends JPanel {
-
-    // fired when contents of deck list are updated.
-    public static final String CP_DECKLIST= DeckEditorTabbedPanel.CP_DECKLIST;
-        // fired when deck is cleared.
-    public static final String CP_DECK_CLEARED = DeckEditorTabbedPanel.CP_DECK_CLEARED;
+public class DeckEditorScreenPanel extends JPanel implements IDeckEditorListener {
 
     private static final GeneralConfig CONFIG = GeneralConfig.getInstance();
 
     private final MigLayout migLayout = new MigLayout();
     private final DeckEditorSideBarPanel sideBarPanel; // LHS
-    private final DeckEditorTabbedPanel tabbedPanel; // RHS
+    private final MainViewsPanel viewsPanel; // RHS
+    private final IDeckEditorListener listener;
+    private boolean isStandalone = true;
 
-    public DeckEditorPanel(final MagicDeck deck) {
+    public DeckEditorScreenPanel(final MagicDeck deck, final IDeckEditorListener aListener) {
         
         MagicSystem.waitForAllCards();
+
+        this.listener = aListener;
 
         // lhs
         sideBarPanel = new DeckEditorSideBarPanel();
         // rhs
-        tabbedPanel = new DeckEditorTabbedPanel(deck);
-        tabbedPanel.addPropertyChangeListener(
-                DeckEditorTabbedPanel.CP_DECK_CLEARED,
-                new PropertyChangeListener() {
-                    @Override
-                    public void propertyChange(PropertyChangeEvent evt) {
-                        firePropertyChange(CP_DECK_CLEARED, false, true);
-                    }
-                });
-        tabbedPanel.addPropertyChangeListener(
-                DeckEditorTabbedPanel.CP_CARD_SELECTED,
-                new PropertyChangeListener() {
-                    @Override
-                    public void propertyChange(PropertyChangeEvent evt) {
-                        setSelectedCard();
-                    }
-                });
-        tabbedPanel.addPropertyChangeListener(
-                DeckEditorTabbedPanel.CP_DECKLIST,
-                new PropertyChangeListener() {
-                    @Override
-                    public void propertyChange(PropertyChangeEvent evt) {
-                        firePropertyChange(CP_DECKLIST, false, true);
-                    }
-                });
+        viewsPanel = new MainViewsPanel(deck, this);
         setSelectedCard();
         //
         setLookAndFeel();
@@ -77,38 +50,38 @@ public class DeckEditorPanel extends JPanel {
         if (CONFIG.isHighQuality()) {
             migLayout.setColumnConstraints("[][grow]");
             add(sideBarPanel, "h 100%, w 0:" + imageSize.width + ":" + imageSize.width);
-            add(tabbedPanel, "h 100%, growx");
+            add(viewsPanel, "h 100%, growx");
         } else {
             migLayout.setColumnConstraints("[" + imageSize.width + "!][100%]");
             add(sideBarPanel, "h 100%");
-            add(tabbedPanel, "w 100%, h 100%");
+            add(viewsPanel, "w 100%, h 100%");
         }
     }
 
     public void setCard(final MagicCardDefinition card) {
-        final int cardCount = tabbedPanel.getDeck().getCardCount(card);
+        final int cardCount = viewsPanel.getDeck().getCardCount(card);
         sideBarPanel.setCard(card);
         sideBarPanel.setCardCount(cardCount);
     }
 
     private void setSelectedCard() {
-        setCard(tabbedPanel.getSelectedCard());
-        sideBarPanel.getStatsViewer().setDeck(tabbedPanel.getDeck());
+        setCard(viewsPanel.getSelectedCard());
+        sideBarPanel.getStatsViewer().setDeck(viewsPanel.getDeck());
     }
 
     public void setDeck(final MagicDeck deck) {
-        tabbedPanel.setDeck(deck);
+        viewsPanel.setDeck(deck);
     }
 
     public MagicDeck getDeck() {
-        return tabbedPanel.getDeck();
+        return viewsPanel.getDeck();
     }
 
     public boolean applyDeckUpdates() {
         boolean updatesApplied = true;
         if (isUpdatingExistingDeck()) {
             if (validateDeck(false)) {
-                tabbedPanel.updateOriginalDeck();
+                viewsPanel.updateOriginalDeck();
             } else {
                 updatesApplied = false;
             }
@@ -125,7 +98,7 @@ public class DeckEditorPanel extends JPanel {
     }
 
     public boolean validateDeck(final boolean notifyUser) {
-        final String brokenRules = getBrokenRules(tabbedPanel.getDeck());
+        final String brokenRules = getBrokenRules(viewsPanel.getDeck());
         if (brokenRules.length() > 0) {
             if (notifyUser) {
                 notifyUser(brokenRules);
@@ -140,7 +113,31 @@ public class DeckEditorPanel extends JPanel {
     }
 
     private boolean isUpdatingExistingDeck() {
-        return tabbedPanel.isUpdatingExistingDeck();
+        return viewsPanel.isUpdatingExistingDeck();
+    }
+
+    public void setIsStandalone(final boolean b) {
+        this.isStandalone = b;
+    }
+
+    @Override
+    public void deckUpdated(MagicDeck deck) {
+        if (deck.isEmpty() && isStandalone) {
+            CONFIG.setMostRecentDeckFilename("");
+            CONFIG.save();
+        }
+        listener.deckUpdated(deck);
+    }
+
+    @Override
+    public void cardSelected(MagicCardDefinition card) {
+        setCard(card);
+        sideBarPanel.getStatsViewer().setDeck(getDeck());
+    }
+
+    @Override
+    public void addCardToRecall(MagicCardDefinition card) {
+        throw new UnsupportedOperationException("Not supported yet.");
     }
 
 }

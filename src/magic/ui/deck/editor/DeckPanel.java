@@ -4,64 +4,61 @@ import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
+import java.util.ArrayList;
+import java.util.List;
 import javax.swing.AbstractAction;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
+import javax.swing.JTable;
 import magic.data.MagicIcon;
 import magic.ui.IconImages;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
 import magic.ui.ScreenController;
 import magic.ui.cardtable.CardTablePanel;
+import magic.ui.cardtable.DeckTablePanel;
 import magic.ui.screen.widget.ActionBarButton;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-class DeckTabPanel extends JPanel {
+class DeckPanel extends JPanel implements IDeckEditorView {
 
-    // fired when contents of deck list are updated.
-    public static final String CP_DECKLIST= "DeckList";
     // fired when card selection changes
     public static final String CP_CARD_SELECTED = CardTablePanel.CP_CARD_SELECTED;
     // fired on add card to deck action.
     public static final String CP_ADD_TO_DECK = "addCardToDeck";
     // fired on remove card from deck action.
     public static final String CP_REMOVE_FROM_DECK = "removeCardFromDeck";
-    // fired when deck is cleared.
-    public static final String CP_DECK_CLEARED = "deckCleared";
    
     // UI components
-    private final DeckCardPoolActionBar actionBar;
-    private final DeckListOptionBar optionBar;
-    private final CardTablePanel deckTable;
-    //
+    private final CardQuantityActionPanel quantityPanel;
+    private final DeckTablePanel deckTablePanel;
     private final MigLayout miglayout = new MigLayout();
-    
     private MagicDeck deck;
     private final MagicDeck originalDeck;
+    private final IDeckEditorListener listener;
+    private final List<ActionBarButton> actionButtons = new ArrayList<>();
 
-    public DeckTabPanel(final MagicDeck originalDeck) {
+    DeckPanel(final MagicDeck originalDeck, final IDeckEditorListener aListener, final CardQuantityActionPanel aPanel) {
+        
+        this.quantityPanel = aPanel;
+        this.listener = aListener;
         this.originalDeck = originalDeck;
         this.deck = getDeckCopy(originalDeck);
-        //
-        optionBar = new DeckListOptionBar();
-        optionBar.setVisible(false);
-        setOptionBarActions();
-        //
-        actionBar = new DeckCardPoolActionBar(getPlusButtonAction(), getMinusButtonAction());
-        setActionBarPropChangeListener();
-        //
-        deckTable = new CardTablePanel(this.deck, getDeckTitle(this.deck));
-        deckTable.setDeckEditorSelectionMode();
-        deckTable.setHeaderVisible(false);
-        deckTable.showCardCount(true);
+
+        actionButtons.add(getClearDeckActionButton());
+
+        deckTablePanel = new DeckTablePanel(this.deck, getDeckTitle(this.deck));
+        deckTablePanel.setDeckEditorSelectionMode();
+        deckTablePanel.setHeaderVisible(false);
+        deckTablePanel.showCardCount(true);
         setDeckTablePropChangeListeners();
-        //
+
         setLookAndFeel();
         refreshLayout();
-        //
+
         if (this.deck.size() > 0) {
-            deckTable.selectFirstRow();
+            deckTablePanel.selectFirstRow();
         }
     }
 
@@ -75,35 +72,22 @@ class DeckTabPanel extends JPanel {
         }
         return deckCopy;
     }
-
-    private void setActionBarPropChangeListener() {
-        actionBar.addPropertyChangeListener(
-                DeckCardPoolActionBar.CP_OPTIONBAR,
-                new PropertyChangeListener() {
+   
+    private ActionBarButton getClearDeckActionButton() {
+        return new ActionBarButton(
+                IconImages.getIcon(MagicIcon.CLEAR_ICON),
+                "Clear deck",
+                "Remove all cards from deck. Confirmation required.",
+                new AbstractAction() {
                     @Override
-                    public void propertyChange(PropertyChangeEvent evt) {
-                        optionBar.setVisible(!optionBar.isVisible());
-                        refreshLayout();
+                    public void actionPerformed(ActionEvent e) {
+                        doClearDeck();
                     }
                 });
     }
-    
-    private void setOptionBarActions() {
-        optionBar.addActionButton(
-                new ActionBarButton(
-                        IconImages.getIcon(MagicIcon.CLEAR_ICON),
-                        "Clear deck",
-                        "Remove all cards from deck. Confirmation required.",
-                        new AbstractAction() {
-                            @Override
-                            public void actionPerformed(ActionEvent e) {
-                                doClearDeck();
-                            }
-                        }, true));
-    }
 
     private void setDeckTablePropChangeListeners() {
-        deckTable.addPropertyChangeListener(
+        deckTablePanel.addPropertyChangeListener(
                 CardTablePanel.CP_CARD_SELECTED,
                 new PropertyChangeListener() {
                     @Override
@@ -111,7 +95,7 @@ class DeckTabPanel extends JPanel {
                         firePropertyChange(CP_CARD_SELECTED, false, true);
                     }
                 });
-        deckTable.addPropertyChangeListener(
+        deckTablePanel.addPropertyChangeListener(
                 CardTablePanel.CP_CARD_LCLICKED,
                 new PropertyChangeListener() {
                     @Override
@@ -119,7 +103,7 @@ class DeckTabPanel extends JPanel {
                         addSelectedCardToDeck();
                     }
                 });
-        deckTable.addPropertyChangeListener(
+        deckTablePanel.addPropertyChangeListener(
                 CardTablePanel.CP_CARD_RCLICKED,
                 new PropertyChangeListener() {
                     @Override
@@ -141,9 +125,7 @@ class DeckTabPanel extends JPanel {
     private void refreshLayout() {
         removeAll();
         miglayout.setLayoutConstraints("insets 0, gap 0, wrap 2, flowy");
-        add(actionBar, "w 40!, h 100%, spany 2");
-        add(optionBar, "w 100%, h 36!, hidemode 3");
-        add(deckTable, "w 100%, h 100%");
+        add(deckTablePanel, "w 100%, h 100%");
         revalidate();
     }
 
@@ -159,65 +141,47 @@ class DeckTabPanel extends JPanel {
                     new String[] {"Yes", "No"}, "No");
             if (userResponse == JOptionPane.YES_OPTION) {
                 setDeck(null);
-                firePropertyChange(CP_DECKLIST, false, true);
-                firePropertyChange(CP_DECK_CLEARED, false, true);
+                listener.deckUpdated(getDeck());
             }
         } else {
             Toolkit.getDefaultToolkit().beep();
         }
     }
 
-    public void setDeck(final MagicDeck newDeck) {
+    void setDeck(final MagicDeck newDeck) {
         if (newDeck == null) {
             deck = new MagicDeck();
         } else {
             deck = getDeckCopy(newDeck);
         }
-        deckTable.setTitle(getDeckTitle(deck));
-        deckTable.setCards(deck);
-        deckTable.selectFirstRow();
-        firePropertyChange(CP_DECKLIST, false, true);
+        deckTablePanel.setTitle(getDeckTitle(deck));
+        deckTablePanel.setCards(deck);
+        deckTablePanel.selectFirstRow();
+        listener.deckUpdated(getDeck());
     }
 
-    public MagicDeck getDeck() {
+    MagicDeck getDeck() {
         return deck;
     }
 
+    @Override
     public MagicCardDefinition getSelectedCard() {
-        if (deckTable.getSelectedCards().size() > 0) {
-            return deckTable.getSelectedCards().get(0);
+        if (deckTablePanel.getSelectedCards().size() > 0) {
+            return deckTablePanel.getSelectedCards().get(0);
         } else {
             return MagicCardDefinition.UNKNOWN;
         }
     }
 
-    private AbstractAction getPlusButtonAction() {
-        return new AbstractAction() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                addSelectedCardToDeck();
-            }
-        };
-    }
-
-    private AbstractAction getMinusButtonAction() {
-        return new AbstractAction() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                removeSelectedCardFromDeck(false);
-            }
-        };
-    }
-
     private void addSelectedCardToDeck() {
-        for (int i = 0; i < actionBar.getQuantity(); i++) {
+        for (int i = 0; i < quantityPanel.getQuantity(); i++) {
             firePropertyChange(CP_ADD_TO_DECK, false, true);
         }
     }
 
     private void removeSelectedCardFromDeck(final boolean isMouseClick) {
         final int cardCount = deck.getCardCount(getSelectedCard());
-        int quantity = Math.min(cardCount, actionBar.getQuantity());
+        int quantity = Math.min(cardCount, quantityPanel.getQuantity());
         if (cardCount - quantity < 1 && isMouseClick) {
             quantity = cardCount - 1;
             Toolkit.getDefaultToolkit().beep();
@@ -227,24 +191,24 @@ class DeckTabPanel extends JPanel {
         }
     }
 
-    public void addCardToDeck(final MagicCardDefinition card) {
+    void addCardToDeck(final MagicCardDefinition card) {
         deck.add(card);
-        deckTable.setCards(deck);
-        deckTable.setSelectedCard(card);
-        firePropertyChange(CP_DECKLIST, false, true);
+        deckTablePanel.setCards(deck);
+        deckTablePanel.setSelectedCard(card);
+        listener.deckUpdated(getDeck());
     }
 
     void removeCardFromDeck(MagicCardDefinition card) {
         deck.remove(card);
-        deckTable.setCards(deck);
-        deckTable.setSelectedCard(card);
-        firePropertyChange(CP_DECKLIST, false, true);
+        deckTablePanel.setCards(deck);
+        deckTablePanel.setSelectedCard(card);
+        listener.deckUpdated(getDeck());
     }
 
     @Override
     public boolean requestFocusInWindow() {
-        if (deckTable.getSelectedCards().isEmpty()) {
-            deckTable.selectFirstRow();
+        if (deckTablePanel.getSelectedCards().isEmpty()) {
+            deckTablePanel.selectFirstRow();
         }
         return super.requestFocusInWindow();
     }
@@ -258,7 +222,30 @@ class DeckTabPanel extends JPanel {
     }
 
     void setSelectedCard(MagicCardDefinition selectedCard) {
-        deckTable.setSelectedCard(selectedCard);
+        deckTablePanel.setSelectedCard(selectedCard);
+    }
+
+    JTable getDeckTable() {
+        return deckTablePanel.getDeckTable();
+    }
+
+    void setDeckTable(final JTable aDeckTable) {
+        deckTablePanel.setDeckTable(aDeckTable);
+    }
+
+    @Override
+    public void doPlusButtonAction() {
+        addSelectedCardToDeck();
+    }
+
+    @Override
+    public void doMinusButtonAction() {
+        removeSelectedCardFromDeck(false);        
+    }
+
+    @Override
+    public List<ActionBarButton> getActionButtons() {
+        return actionButtons;
     }
 
 }

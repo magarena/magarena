@@ -5,6 +5,7 @@ import java.beans.PropertyChangeListener;
 import java.text.NumberFormat;
 import java.util.List;
 import javax.swing.JPanel;
+import javax.swing.JTable;
 import magic.model.MagicCardDefinition;
 import magic.ui.CardFilterPanel;
 import magic.ui.ICardFilterPanelListener;
@@ -12,32 +13,34 @@ import magic.ui.cardtable.CardTablePanel;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-class DeckEditorCardPoolPanel extends JPanel implements ICardFilterPanelListener {
+class FilteredCardPoolPanel extends JPanel implements ICardFilterPanelListener {
 
-    public static final String CP_CARD_RCLICKED = CardTablePanel.CP_CARD_RCLICKED;
-
-    // fired when contents of cardPoolTable are updated.
-    public static final String CP_CARDPOOL = "cardPoolContent";
     // fired when card selection changes
     public static final String CP_CARD_SELECTED = CardTablePanel.CP_CARD_SELECTED;
-    //
     public static final String CP_CARD_LCLICKED = CardTablePanel.CP_CARD_LCLICKED;
+    public static final String CP_CARD_RCLICKED = CardTablePanel.CP_CARD_RCLICKED;
 
     private static final int FILTERS_PANEL_HEIGHT = 88; // pixels
 
-    // ui components.
     private final CardFilterPanel filterPanel;
     private final CardTablePanel cardPoolTable;
-    // fields
     private final MigLayout miglayout = new MigLayout();
     private List<MagicCardDefinition> cardPool;
-    private boolean isFilterVisible = true;
 
-    public DeckEditorCardPoolPanel() {
+    FilteredCardPoolPanel() {
 
         filterPanel = new CardFilterPanel(this);
         cardPool = filterPanel.getCardDefinitions(true);
         cardPoolTable = new CardTablePanel(cardPool, getCardPoolTitle());
+
+        setLookAndFeel();
+        refreshLayout();
+        
+        setPropertyChangeListeners();
+
+    }
+
+    private void setPropertyChangeListeners() {
 
         cardPoolTable.addPropertyChangeListener(CardTablePanel.CP_CARD_SELECTED,
                 new PropertyChangeListener() {
@@ -46,6 +49,7 @@ class DeckEditorCardPoolPanel extends JPanel implements ICardFilterPanelListener
                         firePropertyChange(CP_CARD_SELECTED, false, true);
                     }
                 });
+
         cardPoolTable.addPropertyChangeListener(
                 CardTablePanel.CP_CARD_LCLICKED,
                 new PropertyChangeListener() {
@@ -55,9 +59,6 @@ class DeckEditorCardPoolPanel extends JPanel implements ICardFilterPanelListener
                     }
                 });
 
-        //
-        setLookAndFeel();
-        refreshLayout();
         cardPoolTable.addPropertyChangeListener(
                 CardTablePanel.CP_CARD_RCLICKED,
                 new PropertyChangeListener() {
@@ -77,34 +78,26 @@ class DeckEditorCardPoolPanel extends JPanel implements ICardFilterPanelListener
 
     private void refreshLayout() {
         removeAll();
-        add(filterPanel, "w 100%, h " + (isFilterVisible ? FILTERS_PANEL_HEIGHT : 0) + "!");
-        add(cardPoolTable.getTitleBar(), "w 100%, h " + (isDeckEditor() ? 0 : 26) + "!");
+        add(filterPanel, "w 100%, h " + FILTERS_PANEL_HEIGHT + "!");
+        add(cardPoolTable.getTitleBar(), "w 100%, h 26!");
         add(cardPoolTable, "w 100%, h 100%");
         revalidate();
     }
 
-   public void refreshContent() {
+   void refreshContent() {
         cardPool = filterPanel.getCardDefinitions(isDeckEditor());
         cardPoolTable.setCards(cardPool);
         cardPoolTable.setTitle(getCardPoolTitle());
-        firePropertyChange(CP_CARDPOOL, false, true);
     }
 
-    public List<MagicCardDefinition> getCardPool() {
+    List<MagicCardDefinition> getCardPool() {
         return cardPool;
     }
 
-    public void setFilterVisible(final boolean b) {
-        isFilterVisible = b;
-        refreshLayout();
-    }
-
-    public MagicCardDefinition getSelectedCard() {
-        if (cardPoolTable.getSelectedCards().size() > 0) {
-            return cardPoolTable.getSelectedCards().get(0);
-        } else {
-            return MagicCardDefinition.UNKNOWN;
-        }
+    MagicCardDefinition getSelectedCard() {
+        return cardPoolTable.getSelectedCards().size() > 0
+                ? cardPoolTable.getSelectedCards().get(0)
+                : null;
     }
 
     private String getCardPoolTitle() {
@@ -130,6 +123,18 @@ class DeckEditorCardPoolPanel extends JPanel implements ICardFilterPanelListener
     @Override
     public void refreshTable() {
         refreshContent();
+    }
+
+    void clearSelection() {
+        cardPoolTable.clearSelection();
+    }
+
+    void setSelectedCard(MagicCardDefinition aCard) {
+        cardPoolTable.setSelectedCard(aCard);
+    }
+
+    JTable getTable() {
+        return cardPoolTable.getTable();
     }
 
 }

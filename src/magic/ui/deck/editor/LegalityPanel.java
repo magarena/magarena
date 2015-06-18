@@ -4,6 +4,8 @@ import java.awt.Color;
 import java.awt.Dimension;
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
+import java.util.ArrayList;
+import java.util.List;
 import javax.swing.BorderFactory;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
@@ -12,11 +14,12 @@ import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
 import magic.ui.IconImages;
 import magic.ui.cardtable.CardTablePanel;
+import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.widget.TexturedPanel;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-class DeckLegalityTabPanel extends JPanel {
+class LegalityPanel extends JPanel implements IDeckEditorView {
 
     // fired when card selection changes
     public static final String CP_CARD_SELECTED = CardTablePanel.CP_CARD_SELECTED;
@@ -28,7 +31,7 @@ class DeckLegalityTabPanel extends JPanel {
     private final MigLayout miglayout = new MigLayout();    
     private MagicDeck deck = new MagicDeck();
 
-    public DeckLegalityTabPanel() {
+    LegalityPanel() {
 
         formatsLegalityPanel = new FormatsLegalityPanel();
         cardsLegalityPanel = new CardsLegalityPanel();
@@ -80,6 +83,7 @@ class DeckLegalityTabPanel extends JPanel {
         revalidate();
     }
 
+    @Override
     public MagicCardDefinition getSelectedCard() {
         return cardsLegalityPanel.getSelectedCard();
     }
@@ -87,6 +91,21 @@ class DeckLegalityTabPanel extends JPanel {
     void setDeck(final MagicDeck aDeck) {
         this.deck = aDeck;
         formatsLegalityPanel.setDeck(aDeck);
+    }
+
+    @Override
+    public void doPlusButtonAction() {
+        throw new UnsupportedOperationException("doPlusButtonAction() not implemented.");
+    }
+
+    @Override
+    public void doMinusButtonAction() {
+        throw new UnsupportedOperationException("doMinusButtonAction() not implemented.");
+    }
+
+    @Override
+    public List<ActionBarButton> getActionButtons() {
+        return new ArrayList<>();
     }
 
     private static class LegalityLegendPanel extends TexturedPanel {

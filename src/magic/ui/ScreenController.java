@@ -24,7 +24,7 @@ import magic.ui.screen.CardExplorerScreen;
 import magic.ui.screen.CardScriptScreen;
 import magic.ui.screen.CardZoneScreen;
 import magic.ui.screen.DeckEditorSplitScreen;
-import magic.ui.screen.DeckEditorTabbedScreen;
+import magic.ui.screen.DeckEditorScreen;
 import magic.ui.screen.DeckTiledCardsScreen;
 import magic.ui.screen.DeckViewScreen;
 import magic.ui.screen.DecksScreen;
@@ -92,7 +92,7 @@ public final class ScreenController {
         if (GeneralConfig.getInstance().isSplitViewDeckEditor()) {
             showScreen(new DeckEditorSplitScreen(deck));
         } else {
-            showScreen(new DeckEditorTabbedScreen(deck));
+            showScreen(new DeckEditorScreen(deck));
         }
     }
 
@@ -100,7 +100,7 @@ public final class ScreenController {
         if (GeneralConfig.getInstance().isSplitViewDeckEditor()) {
             showScreen(new DeckEditorSplitScreen());
         } else {
-            showScreen(new DeckEditorTabbedScreen());
+            showScreen(new DeckEditorScreen());
         }
     }
 

@@ -30,7 +30,7 @@ import magic.ui.widget.TitleBar;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-public class CardTablePanel extends TexturedPanel {
+public class DeckTablePanel extends TexturedPanel {
 
     // fired when selection changes.
     public static final String CP_CARD_SELECTED = "cardTableSelection";
@@ -48,7 +48,7 @@ public class CardTablePanel extends TexturedPanel {
 
     private final MigLayout migLayout = new MigLayout();
     private final JScrollPane scrollpane = new JScrollPane();
-    private final CardTableModel tableModel;
+    private final DeckTableModel tableModel;
     private JTable table;
     private final ListSelectionModel selectionModel;
 
@@ -57,15 +57,15 @@ public class CardTablePanel extends TexturedPanel {
     private boolean isAdjusting = false;
     private int lastSelectedRow = -1;
 
-    public CardTablePanel(final List<MagicCardDefinition> defs) {
+    public DeckTablePanel(final List<MagicCardDefinition> defs) {
         this(defs, "");
     }
 
-    public CardTablePanel(final List<MagicCardDefinition> defs, final String title) {
+    public DeckTablePanel(final List<MagicCardDefinition> defs, final String title) {
 
         setBackground(FontsAndBorders.TRANSLUCENT_WHITE_STRONG);
 
-        this.tableModel = new CardTableModel(defs);
+        this.tableModel = new DeckTableModel(defs);
 
         this.table = new JTable(tableModel) {
             private final Color defaultForeColor = getForeground();
@@ -90,7 +90,8 @@ public class CardTablePanel extends TexturedPanel {
         table.setAutoResizeMode(JTable.AUTO_RESIZE_OFF); // otherwise horizontal scrollbar won't work
         table.setRowHeight(ROW_HEIGHT);
         table.setGridColor(GRID_COLOR);
-        
+        table.setFillsViewportHeight(true);
+
         final TableColumnModel model = table.getColumnModel();
         setColumnWidths(model);
 
@@ -103,7 +104,7 @@ public class CardTablePanel extends TexturedPanel {
         ((DefaultTableCellRenderer)table.getTableHeader().getDefaultRenderer()).setHorizontalAlignment(SwingConstants.CENTER);
 
         // special renderer for mana symbols
-        model.getColumn(CardTableModel.COST_COLUMN_INDEX).setCellRenderer(new ManaCostCellRenderer());
+        model.getColumn(DeckTableModel.COST_COLUMN_INDEX).setCellRenderer(new ManaCostCellRenderer());
 
 
         // listener to sort on column header click
@@ -178,8 +179,8 @@ public class CardTablePanel extends TexturedPanel {
 
     private void setColumnWidths(final TableColumnModel model) {
         for (int i = 0; i < model.getColumnCount(); i++) {
-            model.getColumn(i).setMinWidth(CardTableModel.COLUMN_MIN_WIDTHS[i]);
-            model.getColumn(i).setPreferredWidth(CardTableModel.COLUMN_MIN_WIDTHS[i]);
+            model.getColumn(i).setMinWidth(DeckTableModel.COLUMN_MIN_WIDTHS[i]);
+            model.getColumn(i).setPreferredWidth(DeckTableModel.COLUMN_MIN_WIDTHS[i]);
         }
     }
 
@@ -223,13 +224,12 @@ public class CardTablePanel extends TexturedPanel {
     }
 
     public void setCards(final List<MagicCardDefinition> defs) {
-        final boolean isRowSelected = table.getSelectedRow() != -1;
         tableModel.setCards(defs);
         table.tableChanged(new TableModelEvent(tableModel));
         table.repaint();
-        if (isRowSelected) {
-            reselectLastCards();
-        }
+
+        reselectLastCards();
+
     }
 
     public void setTitle(final String title) {
@@ -252,10 +252,6 @@ public class CardTablePanel extends TexturedPanel {
     public void setDeckTable(JTable aDeckTable) {
         this.table = aDeckTable;
         scrollpane.setViewportView(table);
-    }
-
-    public JTable getTable() {
-        return table;
     }
 
     private class ColumnListener extends MouseAdapter {
@@ -297,7 +293,7 @@ public class CardTablePanel extends TexturedPanel {
         @Override
         public Component getTableCellRendererComponent(final JTable table, final Object value, final boolean isSelected, final boolean hasFocus, final int row, final int col) {
 
-            final MagicCardDefinition card = ((CardTableModel)table.getModel()).getCardDef(row);
+            final MagicCardDefinition card = ((DeckTableModel)table.getModel()).getCardDef(row);
             final CostPanel myRender = new CostPanel(card.isLand() || !card.isValid() ? null : (MagicManaCost)value);
 
             // match border and background formatting with default
@@ -342,9 +338,9 @@ public class CardTablePanel extends TexturedPanel {
         }
     }
 
-    public void setSelectedCard(MagicCardDefinition aCard) {
-        final int index = tableModel.findCardIndex(aCard);
-        if (index != -1 && getSelectedCards().contains(aCard) == false) {
+    public void setSelectedCard(MagicCardDefinition card) {
+        final int index = tableModel.findCardIndex(card);
+        if (index != -1) {
             table.getSelectionModel().addSelectionInterval(index, index);
         } else if (tableModel.getRowCount() > 0) {
             table.getSelectionModel().addSelectionInterval(0, 0);

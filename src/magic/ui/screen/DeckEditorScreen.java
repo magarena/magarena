@@ -1,8 +1,6 @@
 package magic.ui.screen;
 
 import java.awt.event.ActionEvent;
-import java.beans.PropertyChangeEvent;
-import java.beans.PropertyChangeListener;
 import java.io.File;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -19,13 +17,15 @@ import magic.data.MagicIcon;
 import magic.ui.IconImages;
 import magic.data.MagicSetDefinitions;
 import magic.exception.InvalidDeckException;
+import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
 import magic.ui.MagicFileChoosers;
 import magic.ui.MagicFrame;
 import magic.ui.ScreenController;
 import magic.ui.ScreenOptionsOverlay;
 import magic.ui.dialog.DownloadImagesDialog;
-import magic.ui.deck.editor.DeckEditorPanel;
+import magic.ui.deck.editor.DeckEditorScreenPanel;
+import magic.ui.deck.editor.IDeckEditorListener;
 import magic.ui.screen.interfaces.IActionBar;
 import magic.ui.screen.interfaces.IDeckConsumer;
 import magic.ui.screen.interfaces.IOptionsMenu;
@@ -37,50 +37,30 @@ import magic.ui.screen.widget.MenuPanel;
 import magic.ui.widget.deck.DeckStatusPanel;
 
 @SuppressWarnings("serial")
-public class DeckEditorTabbedScreen
+public class DeckEditorScreen
     extends AbstractScreen
-    implements IStatusBar, IActionBar, IOptionsMenu, IWikiPage, IDeckConsumer {
+    implements IStatusBar, IActionBar, IOptionsMenu, IWikiPage, IDeckConsumer, IDeckEditorListener {
 
-    private static final GeneralConfig CONFIG = GeneralConfig.getInstance();
-
-    private DeckEditorPanel screenContent;
+    private DeckEditorScreenPanel screenContent;
     private final boolean isStandalone;
     private final DeckStatusPanel deckStatusPanel = new DeckStatusPanel();
 
     // CTR : opens Deck Editor ready to update passed in deck.
-    public DeckEditorTabbedScreen(final MagicDeck deck) {
+    public DeckEditorScreen(final MagicDeck deck) {
         isStandalone = false;
-        setupScreen(deck);
+        setScreenContent(deck);
     }
     // CTR : open Deck Editor in standalone mode starting with an empty deck.
-    public DeckEditorTabbedScreen() {
+    public DeckEditorScreen() {
         isStandalone = true;
-        setupScreen(getMostRecentEditedDeck());
+        setScreenContent(getMostRecentEditedDeck());
     }
 
-    private void setupScreen(final MagicDeck deck) {
-        this.screenContent = new DeckEditorPanel(deck);
-        screenContent.addPropertyChangeListener(
-                DeckEditorPanel.CP_DECK_CLEARED,
-                new PropertyChangeListener() {
-                    @Override
-                    public void propertyChange(PropertyChangeEvent evt) {
-                        if (isStandalone) {
-                            CONFIG.setMostRecentDeckFilename("");
-                            CONFIG.save();
-                        }
-                    }
-                });
-        screenContent.addPropertyChangeListener(
-                DeckEditorPanel.CP_DECKLIST,
-                new PropertyChangeListener() {
-                    @Override
-                    public void propertyChange(PropertyChangeEvent evt) {
-                        deckStatusPanel.setDeck(screenContent.getDeck(), false);
-                    }
-                });
+    private void setScreenContent(final MagicDeck deck) {
+        screenContent = new DeckEditorScreenPanel(deck, this);
+        screenContent.setIsStandalone(isStandalone);
         setDeck(deck);
-        setContent(this.screenContent);
+        setContent(screenContent);
     }
 
     private static MagicDeck getMostRecentEditedDeck() {
@@ -103,18 +83,12 @@ public class DeckEditorTabbedScreen
         }
     }
 
-    /* (non-Javadoc)
-     * @see magic.ui.IMagActionBar#getLeftAction()
-     */
     @Override
     public MenuButton getLeftAction() {
         final String caption = (!isStandalone ? "Cancel" : "Close");
         return MenuButton.getCloseScreenButton(caption);
     }
 
-    /* (non-Javadoc)
-     * @see magic.ui.IMagActionBar#getRightAction()
-     */
     @Override
     public MenuButton getRightAction() {
         if (!isStandalone) {
@@ -131,9 +105,6 @@ public class DeckEditorTabbedScreen
         }
     }
 
-    /* (non-Javadoc)
-     * @see magic.ui.IMagActionBar#getMiddleActions()
-     */
     @Override
     public List<MenuButton> getMiddleActions() {
         final List<MenuButton> buttons = new ArrayList<>();
@@ -197,17 +168,11 @@ public class DeckEditorTabbedScreen
         ScreenController.showWarningMessage(message);
     }
 
-    /* (non-Javadoc)
-     * @see magic.ui.IMagStatusBar#getScreenCaption()
-     */
     @Override
     public String getScreenCaption() {
         return "Deck Editor";
     }
 
-    /* (non-Javadoc)
-     * @see magic.ui.IMagScreenOptionsMenu#showOptionsMenuOverlay()
-     */
     @Override
     public void showOptionsMenuOverlay() {
         new ScreenOptions(getFrame());
@@ -282,11 +247,6 @@ public class DeckEditorTabbedScreen
         }
     }
 
-    /*
-     * (non-Javadoc)
-     *
-     * @see magic.ui.MagScreen#canScreenClose()
-     */
     @Override
     public boolean isScreenReadyToClose(final AbstractScreen nextScreen) {
         if (!screenContent.isStandaloneDeckEditor() && nextScreen instanceof DuelDecksScreen) {
@@ -302,7 +262,8 @@ public class DeckEditorTabbedScreen
         return "UIDeckEditor";
     }
 
-    private void setDeck(final MagicDeck deck) {
+    @Override
+    public void setDeck(final MagicDeck deck) {
         screenContent.setDeck(deck);
         deckStatusPanel.setDeck(deck, false);
     }
@@ -316,15 +277,27 @@ public class DeckEditorTabbedScreen
     @Override
     public void setDeck(String deckName, DeckType deckType) { }
 
+    @Override
+    public void deckUpdated(MagicDeck deck) {
+        deckStatusPanel.setDeck(deck, false);
+    }
+
+    @Override
+    public void cardSelected(MagicCardDefinition card) {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    @Override
+    public void addCardToRecall(MagicCardDefinition card) {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
     private class ScreenOptions extends ScreenOptionsOverlay {
 
         public ScreenOptions(final MagicFrame frame) {
             super(frame);
         }
 
-        /* (non-Javadoc)
-         * @see magic.ui.ScreenOptionsOverlay#getScreenMenu()
-         */
         @Override
         protected MenuPanel getScreenMenu() {
             return null;
@@ -332,9 +305,6 @@ public class DeckEditorTabbedScreen
 
     }
 
-    /* (non-Javadoc)
-     * @see magic.ui.screen.interfaces.IStatusBar#getStatusPanel()
-     */
     @Override
     public JPanel getStatusPanel() {
         return deckStatusPanel;
