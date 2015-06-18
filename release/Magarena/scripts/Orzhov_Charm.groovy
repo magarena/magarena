@@ -32,9 +32,7 @@ def choice = new MagicTargetChoice(filter, "a creature card with converted mana 
             if (event.isMode(1)) {
                 event.processTargetPermanent(game, {
                     final MagicPermanent creature ->
-                    for (final MagicPermanent aura : creature.getAuraPermanents()) {
-                        game.doAction(new RemoveFromPlayAction(aura, MagicLocationType.OwnersHand));
-                    }
+                    game.doAction(new RemoveAllFromPlayAction(creature.getAuraPermanents(), MagicLocationType.OwnersHand));
                     game.doAction(new RemoveFromPlayAction(creature, MagicLocationType.OwnersHand));
                 });
             } else if (event.isMode(2)) {
