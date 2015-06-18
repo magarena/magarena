@@ -6,5 +6,5 @@ type=Instant
 cost={B}
 ability=Cast SN with AI only if you control a creature.
 effect=Creatures you control get +1/+0 until end of turn.
-timing=removal
+timing=pump
 oracle=Creatures you control get +1/+0 until end of turn.
