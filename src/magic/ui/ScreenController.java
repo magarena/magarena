@@ -243,4 +243,13 @@ public final class ScreenController {
         new DuelSidebarLayoutDialog(getMainFrame(), controller);
     }
 
+    public static boolean isDuelActive() {
+        for (AbstractScreen screen : screens) {
+            if (screen instanceof DuelDecksScreen) {
+                return true;
+            }
+        }
+        return false;
+    }
+
 }

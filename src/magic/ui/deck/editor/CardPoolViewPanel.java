@@ -187,9 +187,20 @@ class CardPoolViewPanel extends JPanel implements IDeckEditorView, FocusListener
                 }, true);
     }
 
+    private int getDefaultDeckSize() {
+        return deck.size() < MagicDeck.DEFAULT_SIZE
+                ? ScreenController.isDuelActive() == false
+                        ? 60
+                        : MagicDeck.DEFAULT_SIZE
+                : deck.size();
+    }
+
     private boolean generateRandomDeck() {
         final RandomDeckGeneratorDialog dialog = new RandomDeckGeneratorDialog(
-                ScreenController.getMainFrame(), getCardPoolSize());
+                ScreenController.getMainFrame(), 
+                getCardPoolSize(),
+                getDefaultDeckSize()
+        );
         dialog.setVisible(true);
         if (!dialog.isCancelled()) {
             final DeckGenerator deckGenerator = dialog.getDeckGenerator();
