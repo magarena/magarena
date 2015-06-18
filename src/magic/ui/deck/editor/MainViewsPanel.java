@@ -9,6 +9,7 @@ import javax.swing.JPanel;
 import javax.swing.JTable;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
+import magic.ui.MagicSound;
 import magic.ui.ScreenController;
 import net.miginfocom.swing.MigLayout;
 
@@ -170,6 +171,7 @@ class MainViewsPanel extends JPanel implements IDeckEditorListener {
             deckPanel.addCardToDeck(card);
             recallPanel.addCardToRecall(card);
             listener.cardSelected(getSelectedCard());
+            MagicSound.ADD_CARD.play();
         }
     }
 
@@ -178,6 +180,7 @@ class MainViewsPanel extends JPanel implements IDeckEditorListener {
             deckPanel.removeCardFromDeck(card);
             recallPanel.addCardToRecall(card);
             listener.cardSelected(getSelectedCard());
+            MagicSound.REMOVE_CARD.play();
         }
     }
     

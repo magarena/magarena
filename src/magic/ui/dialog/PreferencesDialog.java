@@ -24,6 +24,7 @@ import javax.swing.JFormattedTextField;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.JSlider;
 import javax.swing.JSpinner;
 import javax.swing.JTabbedPane;
 import javax.swing.JTextField;
@@ -41,6 +42,7 @@ import magic.ui.IconImages;
 import magic.ui.URLUtils;
 import magic.ui.CardImagesProvider;
 import magic.ui.MagicFrame;
+import magic.ui.MagicSound;
 import magic.ui.ScreenController;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
@@ -100,6 +102,7 @@ public class PreferencesDialog
     private JCheckBox pauseGamePopupCheckBox;
     private JCheckBox hideAIPromptCheckBox;
     private ColorButton rollOverColorButton;
+    private JSlider uiVolumeSlider;
 
     private final JLabel hintLabel = new JLabel();
     private boolean isProxyUpdated = false;
@@ -156,9 +159,46 @@ public class PreferencesDialog
         tabbedPane.addTab("General", getGeneralTabPanel());
         tabbedPane.addTab("Gameplay", getGameplaySettingsTabbedPane());
         tabbedPane.addTab("Look & Feel", getLookAndFeelSettingsPanel());
+        tabbedPane.addTab("Audio", getAudioSettingsPanel());
         tabbedPane.addTab("Network", getNetworkSettingsPanel());
         return tabbedPane;
     }
+
+     private JPanel getAudioSettingsPanel() {
+
+        uiVolumeSlider = new JSlider(0, 100, config.getUiSoundVolume());
+        uiVolumeSlider.setEnabled(config.isUiSound());
+        uiVolumeSlider.addChangeListener(new ChangeListener() {
+            @Override
+            public void stateChanged(ChangeEvent e) {
+                if (uiVolumeSlider.getValueIsAdjusting() == false) {
+                    MagicSound.ALERT.play(uiVolumeSlider.getValue());
+                }
+            }
+        });
+
+        uiSoundCheckBox = new JCheckBox("Enable UI sound", config.isUiSound());
+        uiSoundCheckBox.setToolTipText("Enables or disables sound effects used by the user interface in general. For example, this affects whether a sound is played when the missing images alert is displayed.");
+        uiSoundCheckBox.setFocusable(false);
+        uiSoundCheckBox.addMouseListener(this);
+        uiSoundCheckBox.addChangeListener(new ChangeListener() {
+            @Override
+            public void stateChanged(ChangeEvent e) {
+                uiVolumeSlider.setEnabled(uiSoundCheckBox.isSelected());
+            }
+        });
+
+        soundCheckBox = new JCheckBox("Enable game-play sound",config.isSound());
+        soundCheckBox.setToolTipText("Enables or disables sound effects during a game, such as end of turn, stack resolution, combat damage and win/lose sounds.");
+        soundCheckBox.setFocusable(false);
+        soundCheckBox.addMouseListener(this);
+
+        final JPanel panel = new JPanel(new MigLayout("flowy, gapy 14, insets 16"));
+        panel.add(uiSoundCheckBox, "w 100%");
+        panel.add(uiVolumeSlider, " w 100%");
+        panel.add(soundCheckBox);
+        return panel;
+     }
 
      private JPanel getNetworkSettingsPanel() {
         final Proxy proxy = config.getProxy();
@@ -226,11 +266,6 @@ public class PreferencesDialog
         gameLogCheckBox.setFocusable(false);
         gameLogCheckBox.addMouseListener(this);
 
-        soundCheckBox = new JCheckBox("Enable sound effects",config.isSound());
-        soundCheckBox.setToolTipText("Enables or disables sound effects during a game, such as end of turn, stack resolution, combat damage and win/lose sounds.");
-        soundCheckBox.setFocusable(false);
-        soundCheckBox.addMouseListener(this);
-
         touchscreenCheckBox = new JCheckBox("Double-click to cast or activate ability (for touchscreen)",config.isTouchscreen());
         touchscreenCheckBox.setFocusable(false);
         touchscreenCheckBox.addMouseListener(this);
@@ -258,7 +293,6 @@ public class PreferencesDialog
         mainPanel.add(hideAIPromptCheckBox);
         mainPanel.add(mulliganScreenCheckbox);
         mainPanel.add(gameLogCheckBox);
-        mainPanel.add(soundCheckBox);
         mainPanel.add(touchscreenCheckBox);
         mainPanel.add(skipSingleCheckBox);
         mainPanel.add(alwaysPassCheckBox);
@@ -341,6 +375,7 @@ public class PreferencesDialog
                 config.setIsGamePausedOnPopup(pauseGamePopupCheckBox.isSelected());
                 config.setHideAiActionPrompt(hideAIPromptCheckBox.isSelected());
                 config.setRolloverColor(rollOverColorButton.getColor());
+                config.setUiSoundVolume(uiVolumeSlider.getValue());
                 config.save();
                 CachedImagesProvider.getInstance().clearCache();
                 frame.refreshUI();
@@ -507,14 +542,7 @@ public class PreferencesDialog
 
 
     private JPanel getGeneralTabPanel() {
-
-        uiSoundCheckBox = new JCheckBox("Enable UI sound", config.isUiSound());
-        uiSoundCheckBox.setToolTipText("Enables or disables sound effects used by the user interface in general. For example, this affects whether a sound is played when the missing images alert is displayed. See also 'Enable sound effects' in the Gameplay -> General tab.");
-        uiSoundCheckBox.setFocusable(false);
-        uiSoundCheckBox.addMouseListener(this);
-
         final JPanel panel = new JPanel(new MigLayout("flowy, gapy 14, insets 16"));
-        panel.add(uiSoundCheckBox, "w 100%");
         panel.add(getCardExplorerEditorSettingsPanel(), "w 100%");
         panel.add(getDirectorySettingsPanel(), "w 100%");
         return panel;

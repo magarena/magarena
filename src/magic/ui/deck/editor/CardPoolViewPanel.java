@@ -16,6 +16,7 @@ import magic.data.MagicIcon;
 import magic.ui.IconImages;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
+import magic.ui.MagicSound;
 import magic.ui.ScreenController;
 import magic.ui.cardtable.BasicDeckTablePanel;
 import magic.ui.cardtable.CardTablePanel;
@@ -139,6 +140,8 @@ class CardPoolViewPanel extends JPanel implements IDeckEditorView, FocusListener
         deckPanel.getTable().repaint();
         deckPanel.setSelectedCard(card);
 
+        MagicSound.ADD_CARD.play();
+
     }
 
     private void removeSelectedCardFromDeck() {
@@ -150,6 +153,7 @@ class CardPoolViewPanel extends JPanel implements IDeckEditorView, FocusListener
         }
 
         if (deck.contains(card) == false) {
+            MagicSound.BEEP.play();
             return;
         }
 
@@ -171,6 +175,8 @@ class CardPoolViewPanel extends JPanel implements IDeckEditorView, FocusListener
         } if (cardPoolPanel.getSelectedCard() == null) {
             doDeckPanelSelectionAction();
         }
+
+        MagicSound.REMOVE_CARD.play();
 
     }
 

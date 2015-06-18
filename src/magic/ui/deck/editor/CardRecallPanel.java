@@ -10,6 +10,7 @@ import javax.swing.JPanel;
 import javax.swing.JTable;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
+import magic.ui.MagicSound;
 import magic.ui.cardtable.BasicDeckTablePanel;
 import magic.ui.cardtable.CardTablePanel;
 import magic.ui.screen.widget.ActionBarButton;
@@ -156,6 +157,8 @@ class CardRecallPanel extends JPanel implements IDeckEditorView, FocusListener {
         deckPanel.getTable().repaint();
         deckPanel.setSelectedCard(card);
 
+        MagicSound.ADD_CARD.play();
+
     }
 
     private void removeSelectedCardFromDeck() {
@@ -167,6 +170,7 @@ class CardRecallPanel extends JPanel implements IDeckEditorView, FocusListener {
         }
 
         if (deck.contains(card) == false) {
+            MagicSound.BEEP.play();
             return;
         }
 
@@ -187,6 +191,8 @@ class CardRecallPanel extends JPanel implements IDeckEditorView, FocusListener {
         } if (getRecallSelectedCard() == null) {
             doDeckPanelSelectionAction();
         }
+
+        MagicSound.REMOVE_CARD.play();
 
     }
 

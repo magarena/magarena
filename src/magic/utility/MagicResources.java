@@ -45,4 +45,8 @@ public final class MagicResources {
         return getJarResourceStream("/magic/data/AllCardNames.txt");
     }
 
+    public static URL getSoundUrl(final String filename) {
+        return instance.getClass().getResource("/soundfx/" + filename);
+    }
+
 }

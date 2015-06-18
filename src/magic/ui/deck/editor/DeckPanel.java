@@ -1,6 +1,5 @@
 package magic.ui.deck.editor;
 
-import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
@@ -14,6 +13,7 @@ import magic.data.MagicIcon;
 import magic.ui.IconImages;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
+import magic.ui.MagicSound;
 import magic.ui.ScreenController;
 import magic.ui.cardtable.CardTablePanel;
 import magic.ui.cardtable.DeckTablePanel;
@@ -144,7 +144,7 @@ class DeckPanel extends JPanel implements IDeckEditorView {
                 listener.deckUpdated(getDeck());
             }
         } else {
-            Toolkit.getDefaultToolkit().beep();
+            MagicSound.BEEP.play();
         }
     }
 
@@ -184,7 +184,7 @@ class DeckPanel extends JPanel implements IDeckEditorView {
         int quantity = Math.min(cardCount, quantityPanel.getQuantity());
         if (cardCount - quantity < 1 && isMouseClick) {
             quantity = cardCount - 1;
-            Toolkit.getDefaultToolkit().beep();
+            MagicSound.BEEP.play();
         }
         for (int i = 0; i < quantity; i++) {
             firePropertyChange(CP_REMOVE_FROM_DECK, false, true);
