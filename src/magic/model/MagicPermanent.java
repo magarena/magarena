@@ -75,11 +75,11 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
     // remember order among blockers (blockedName + id + block order)
     private String blockedName;
     private long stateId;
-    
+
     public MagicPermanent(final long aId,final MagicCard aCard,final MagicPlayer aController) {
         this(aId, aCard, aCard.getCardDefinition(), aController);
     }
-    
+
     public MagicPermanent(final long aId, final MagicCard aCard, final MagicCardDefinition aCardDef, final MagicPlayer aController) {
         id = aId;
         card = aCard;
@@ -91,7 +91,7 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
         auraPermanents = new MagicPermanentSet();
         blockingCreatures = new MagicPermanentList();
         exiledCards = new MagicCardList();
-        
+
         cachedController = firstController;
         cachedTypeFlags = getCardDefinition().getTypeFlags();
         cachedSubTypeFlags = getCardDefinition().genSubTypeFlags();
@@ -215,14 +215,14 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
     public int getManaId() {
         // Creatures or lands that can be animated are unique
         // Enchanted/equipped permanents are unique
-        // 'Summoned' permanents are unique 
+        // 'Summoned' permanents are unique
         if (hasExcludeManaOrCombat() || isEnchanted() || isEquipped() || hasState(MagicPermanentState.Summoned) ) {
             return (int)id;
         }
         // Uniqueness is determined by card definition and number of charge counters.
         return -((cardDefinition.getIndex()<<16)+getCounters(MagicCounterType.Charge));
     }
-    
+
     public boolean hasExcludeManaOrCombat() {
         return getCardDefinition().hasExcludeManaOrCombat() || (producesMana() && isCreature());
     }
@@ -238,11 +238,11 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
     public boolean isNonToken() {
         return !card.isToken();
     }
-    
+
     public boolean isDoubleFaced() {
         return card.isDoubleFaced();
     }
-    
+
     public boolean isFlipCard() {
         return card.isFlipCard();
     }
@@ -291,7 +291,7 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
         ability.addAbility(abilityList);
         abilityList.giveAbility(this, flags);
     }
-    
+
     public void addAbility(final MagicAbility ability) {
         final MagicAbilityList abilityList = new MagicAbilityList();
         ability.addAbility(abilityList);
@@ -301,7 +301,7 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
     public void addAbility(final MagicActivation<MagicPermanent> act) {
         cachedActivations.add(act);
     }
-    
+
     public void addAbility(final MagicTrigger<?> trig) {
         if (trig instanceof MagicWhenComesIntoPlayTrigger) {
             etbTriggers.add((MagicWhenComesIntoPlayTrigger)trig);
@@ -309,11 +309,11 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
             cachedTriggers.add(trig);
         }
     }
-    
+
     public void addAbility(final MagicManaActivation act) {
         cachedManaActivations.add(act);
     }
-    
+
     public Collection<MagicActivation<MagicPermanent>> getActivations() {
         return cachedActivations;
     }
@@ -337,7 +337,7 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
     public int getConvertedCost() {
         return getCardDefinition().getConvertedCost();
     }
-    
+
     public int getDevotion(final MagicColor... colors) {
         int devotion = 0;
         for (final MagicCostManaType mt : getCardDefinition().getCost().getCostManaTypes(0)) {
@@ -416,7 +416,7 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
         MagicPermanent.updateProperties(game);
         MagicPermanent.updateScoreFixController(game);
     }
-    
+
     private static void updateScoreFixController(final MagicGame game) {
         for (final MagicPlayer player : game.getPlayers()) {
         for (final MagicPermanent perm : player.getPermanents()) {
@@ -543,13 +543,13 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
     public boolean hasColor(final MagicColor color) {
         return color.hasColor(getColorFlags());
     }
-    
+
     @Override
     public int getCounters(final MagicCounterType counterType) {
         final Integer cnt = counters.get(counterType);
         return cnt != null ? cnt : 0;
     }
-    
+
     @Override
     public void changeCounters(final MagicCounterType counterType,final int amount) {
         final int oldAmt = getCounters(counterType);
@@ -566,7 +566,11 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
     }
 
     public boolean hasCounters() {
-        return counters.size() > 0; 
+        return counters.size() > 0;
+    }
+
+    public boolean hasCounters(final MagicCounterType counterType) {
+        return getCounters(counterType) > 0;
     }
 
     public boolean hasSubType(final MagicSubType subType) {
@@ -584,7 +588,7 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
     public int getPower() {
         return getPowerToughness().getPositivePower();
     }
-    
+
     public int getPowerValue() {
         return getPowerToughness().power();
     }
@@ -592,11 +596,11 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
     public int getToughness() {
         return getPowerToughness().getPositiveToughness();
     }
-    
+
     public int getToughnessValue() {
         return getPowerToughness().toughness();
     }
-    
+
     public Set<MagicAbility> getAbilityFlags() {
         return cachedAbilityFlags;
     }
@@ -619,7 +623,7 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
     public int getStaticScore() {
         return cardDefinition.getStaticType().getScore(this);
     }
-    
+
     public int getCountersScore() {
         int amount = 0;
         for (final Map.Entry<MagicCounterType, Integer> entry : counters.entrySet()) {
@@ -747,7 +751,7 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
     public MagicCardList getExiledCards() {
         return exiledCards;
     }
-    
+
     public MagicCard getExiledCard() {
         return exiledCards.getCardAtTop();
     }
@@ -798,7 +802,7 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
             String reason = "";
             if (isCreature()) {
                 reason = "it is a creature.";
-            } else if (enchantedPermanent.isValid() == false 
+            } else if (enchantedPermanent.isValid() == false
                     || game.isLegalTarget(getController(),this,tchoice,enchantedPermanent) == false) {
                 reason = "it no longer enchants a valid permanent.";
             } else if (enchantedPermanent.hasProtectionFrom(this)) {
@@ -806,7 +810,7 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
             }
 
             if (reason.isEmpty() == false) {
-                // 702.102e If an Aura with bestow is attached to an illegal object or player, it becomes unattached. 
+                // 702.102e If an Aura with bestow is attached to an illegal object or player, it becomes unattached.
                 // This is an exception to rule 704.5n.
                 if (hasAbility(MagicAbility.Bestow)) {
                     game.logAppendMessage(getController(), getName() + " becomes unattached as " + reason);
@@ -883,7 +887,7 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
         }
 
         final MagicPermanent permanent = (MagicPermanent)source;
-        
+
         for (MagicTrigger<?> trigger: cachedTriggers) {
             if (trigger.getType() == MagicTriggerType.Protection) {
                 @SuppressWarnings("unchecked")
@@ -962,7 +966,7 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
         } else if (hasAbility(MagicAbility.Shadow)) {
             return false;
         }
-        
+
         if (!attacker.hasAbility(MagicAbility.Flying) &&
             hasAbility(MagicAbility.CannotBlockWithoutFlying)) {
             return false;
@@ -980,7 +984,7 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
             !hasAbility(MagicAbility.Horsemanship)) {
             return false;
         }
-       
+
         //cannot be blocked by ...
         for (MagicTrigger<?> trigger: attacker.getTriggers()) {
             if (trigger.getType() == MagicTriggerType.CannotBeBlocked) {
@@ -991,7 +995,7 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
                 }
             }
         }
-        
+
         //can't block ...
         for (MagicTrigger<?> trigger: getTriggers()) {
             if (trigger.getType() == MagicTriggerType.CantBlock) {
@@ -1106,11 +1110,11 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
     public boolean isFaceDown() {
         return hasState(MagicPermanentState.FaceDown);
     }
-    
+
     public boolean isFlipped() {
         return hasState(MagicPermanentState.Flipped);
     }
-    
+
     public boolean isTransformed() {
         return hasState(MagicPermanentState.Transformed);
     }
@@ -1162,14 +1166,14 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
         if (hasAbility(MagicAbility.CannotBeTheTarget1) && source.getController().getIndex() == 1) {
             return false;
         }
-    
+
         // Can't be the target of nongreen spells or abilities from nongreen sources
         if (hasAbility(MagicAbility.CannotBeTheTargetOfNonGreen) && source.hasColor(MagicColor.Green) == false) {
             return false;
         }
-        
+
         // Can't be the target of black or red spell your opponent control
-        if (hasAbility(MagicAbility.CannotBeTheTargetOfBlackOrRedOpponentSpell) && 
+        if (hasAbility(MagicAbility.CannotBeTheTargetOfBlackOrRedOpponentSpell) &&
             (source.hasColor(MagicColor.Black) || source.hasColor(MagicColor.Red)) &&
             source.isSpell() && isEnemy(source)) {
             return false;
