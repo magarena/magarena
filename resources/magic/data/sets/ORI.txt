@@ -18,14 +18,17 @@ Deadbridge Shaman
 Disperse
 Displacement Wave
 Divine Verdict
+Dwynen, Gilt-Leaf Daen
 Eagle of the Watch
 Elvish Visionary
+Elemental Bond
 Enthralling Victor
 Eyeblight Assassin
 Fiery Conclusion
 Fiery Hellhound
 Flesh to Dust
 Forest
+Gideon, Battle-Forged
 Gold-Forged Sentinel
 Grasp of the Hieromancer
 Heavy Infantry
@@ -40,6 +43,7 @@ Jace, Vryn's Prodigy
 Jayemdae Tome
 Jhessian Thief
 Joraga Invocation
+Kytheon, Hero of Akros
 Leaf Gilder
 Lightning Javelin
 Liliana, Defiant Necromancer
@@ -56,6 +60,7 @@ Mountain
 Nightmare
 Nissa, Sage Animist
 Nissa, Vastwood Seer
+Pia and Kiran Nalaar
 Plains
 Plummet
 Prized Unicorn
