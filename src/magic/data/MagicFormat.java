@@ -36,4 +36,21 @@ public abstract class MagicFormat {
         }
         return true;
     }
+
+    public static final MagicFormat ALL = new MagicFormat() {
+        @Override
+        public String getName() {
+            return "all";
+        }
+        
+        @Override
+        public CardLegality getCardLegality(MagicCardDefinition card, int cardCount) {
+            return CardLegality.Legal;
+        }
+        
+        @Override
+        public int getMinimumDeckSize() {
+            return 40;
+        }
+    };
 }
