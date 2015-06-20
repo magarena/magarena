@@ -1,5 +1,6 @@
 package magic.data;
 
+import java.util.Collections;
 import java.util.Arrays;
 import java.util.ArrayList;
 import java.util.List;
@@ -40,7 +41,7 @@ public class MagicPredefinedFormat extends MagicFormat {
     public static final MagicPredefinedFormat THEROS_BLOCK = new MagicPredefinedFormat("Theros block", "theros_block");
     public static final MagicPredefinedFormat KHANS_OF_TARKIR_BLOCK = new MagicPredefinedFormat("Khans of Tarkir block", "khans_of_tarkir_block");
 
-    private static final List<MagicPredefinedFormat> values = Arrays.asList(
+    private static final List<MagicPredefinedFormat> values = Collections.unmodifiableList(Arrays.asList(
         STANDARD,
         MODERN,
         LEGACY,
@@ -65,7 +66,7 @@ public class MagicPredefinedFormat extends MagicFormat {
         RETURN_TO_RAVNICA_BLOCK,
         THEROS_BLOCK,
         KHANS_OF_TARKIR_BLOCK
-    );
+    ));
 
     public static List<MagicPredefinedFormat> values() {
         return values;
