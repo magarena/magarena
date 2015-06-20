@@ -35,11 +35,11 @@ public class MagicSetDefinitions {
         return values.toArray(new String[0]);
     }
 
-    public static boolean isCardInSet(MagicCardDefinition card, MagicSets magicSet) {
+    public static boolean isCardInSet(final MagicCardDefinition card, final MagicSets magicSet) {
         if (!loadedSets.containsKey(magicSet)) {
             loadedSets.put(magicSet, loadMagicSet(magicSet));
         }
-        return loadedSets.get(magicSet).contains(card.getName());
+        return loadedSets.get(magicSet).containsCard(card);
     }
 
     public static void clearLoadedSets() {
