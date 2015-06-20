@@ -17,6 +17,7 @@ import javax.swing.SwingConstants;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 import magic.data.MagicFormat;
+import magic.data.MagicPredefinedFormat;
 import magic.data.MagicIcon;
 import magic.model.MagicDeck;
 import magic.ui.IconImages;
@@ -95,7 +96,7 @@ public class FormatsLegalityPanel extends JPanel {
 
     private DeckLegalityInfo[] getDeckFormatsLegality(final MagicDeck aDeck) {
         final List<DeckLegalityInfo> lst = new ArrayList<>();
-        for (MagicFormat aFormat : MagicFormat.values()) {
+        for (MagicPredefinedFormat aFormat : MagicPredefinedFormat.values()) {
             final DeckLegalityInfo deckLegality = new DeckLegalityInfo(aFormat);
             deckLegality.setIsLegal(aFormat.isDeckLegal(aDeck));
             lst.add(deckLegality);
