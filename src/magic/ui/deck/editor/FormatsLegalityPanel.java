@@ -101,7 +101,7 @@ public class FormatsLegalityPanel extends JPanel {
             deckLegality.setIsLegal(aFormat.isDeckLegal(aDeck));
             lst.add(deckLegality);
         }
-        return lst.toArray(new DeckLegalityInfo[lst.size()]);
+        return lst.toArray(new DeckLegalityInfo[0]);
     }
 
     private class FormatsListCellRenderer extends DefaultListCellRenderer {

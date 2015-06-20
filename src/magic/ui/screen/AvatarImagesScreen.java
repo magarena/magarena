@@ -231,7 +231,7 @@ public class AvatarImagesScreen
 
     private AvatarImageSet[] getAvatarImageSetsArray() {
         final List<AvatarImageSet> imageSetsList = getAvatarImageSetsList();
-        return imageSetsList.toArray(new AvatarImageSet[imageSetsList.size()]);
+        return imageSetsList.toArray(new AvatarImageSet[0]);
     }
 
     private List<AvatarImageSet> getAvatarImageSetsList() {

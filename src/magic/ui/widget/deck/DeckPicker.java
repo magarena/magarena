@@ -138,7 +138,7 @@ public class DeckPicker extends JPanel {
 
     final public void refreshContent() {
         // deck types combo
-        final DeckType deckTypes[] = DeckType.PREDEFINED_DECKS.toArray(new DeckType[DeckType.PREDEFINED_DECKS.size()]);
+        final DeckType deckTypes[] = DeckType.PREDEFINED_DECKS.toArray(new DeckType[0]);
         deckTypeJCombo.setModel(new DefaultComboBoxModel<>(deckTypes));
         deckTypeJCombo.setSelectedIndex(0);
         refreshDecksList();
@@ -178,7 +178,7 @@ public class DeckPicker extends JPanel {
         try (DirectoryStream<Path> ds = Files.newDirectoryStream(decksPath, "*.{dec}")) {
             final List<MagicDeck> decks = loadDecks(ds);
             sortDecksByFilename(decks);
-            return decks.toArray(new MagicDeck[decks.size()]);
+            return decks.toArray(new MagicDeck[0]);
         } catch (IOException e) {
            throw new RuntimeException(e);
         }        

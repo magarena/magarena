@@ -35,7 +35,7 @@ public class SelectAiPlayerScreen
 
     private AiProfile[] getPlayerProfilesArray() {
         final List<PlayerProfile> sortedPlayersList = getSortedPlayersList();
-        return sortedPlayersList.toArray(new AiProfile[sortedPlayersList.size()]);
+        return sortedPlayersList.toArray(new AiProfile[0]);
     }
 
     /* (non-Javadoc)

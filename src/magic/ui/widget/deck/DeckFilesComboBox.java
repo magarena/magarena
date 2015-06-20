@@ -30,7 +30,7 @@ public abstract class DeckFilesComboBox extends JComboBox<String> {
       } catch (IOException e) {
           e.printStackTrace();
       }
-      return deckNamesList.toArray(new String[deckNamesList.size()]);
+      return deckNamesList.toArray(new String[0]);
     }
 
 }

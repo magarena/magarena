@@ -119,7 +119,7 @@ class CardDecksPanel extends JPanel {
             protected File[] doInBackground() throws Exception {
                 final List<File> deckFiles = getDecksContainingCard(card);
                 sortDecksByFilename(deckFiles);
-                return deckFiles.toArray(new File[deckFiles.size()]);
+                return deckFiles.toArray(new File[0]);
             }
 
             @Override

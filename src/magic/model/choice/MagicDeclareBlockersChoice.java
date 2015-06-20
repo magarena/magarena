@@ -146,7 +146,7 @@ public class MagicDeclareBlockersChoice extends MagicChoice {
 
         final Set<MagicPermanent> blockers = builder.getCandidateBlockers();
         for (final MagicPermanent blocker : blockers) {
-            final MagicPermanent[] attackers = builder.getBlockableAttackers(blocker).toArray(new MagicPermanent[]{});
+            final MagicPermanent[] attackers = builder.getBlockableAttackers(blocker).toArray(new MagicPermanent[0]);
             //choose one of the attackers or don't block
             final int idx = MagicRandom.nextRNGInt(attackers.length + 1);
             if (idx < attackers.length) {

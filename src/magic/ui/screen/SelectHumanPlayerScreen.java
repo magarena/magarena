@@ -30,7 +30,7 @@ public class SelectHumanPlayerScreen
 
     private HumanProfile[] getPlayerProfilesArray() {
         final List<PlayerProfile> sortedPlayersList = getSortedPlayersList();
-        return sortedPlayersList.toArray(new HumanProfile[sortedPlayersList.size()]);
+        return sortedPlayersList.toArray(new HumanProfile[0]);
     }
 
     /* (non-Javadoc)

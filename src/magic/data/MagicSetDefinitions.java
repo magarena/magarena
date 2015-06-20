@@ -32,7 +32,7 @@ public class MagicSetDefinitions {
         for (MagicSets magicSet : MagicSets.values()) {
             values.add(magicSet.toString().replace("_", "") + " " + magicSet.getSetName());
         }
-        return values.toArray(new String[values.size()]);
+        return values.toArray(new String[0]);
     }
 
     public static boolean isCardInSet(MagicCardDefinition card, MagicSets magicSet) {
