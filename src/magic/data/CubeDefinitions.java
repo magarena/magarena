@@ -85,9 +85,9 @@ public class CubeDefinitions {
         }
     }
 
-    public static boolean isCardInCube(MagicCardDefinition card, String cubeName) {
+    public static boolean isCardInCube(final MagicCardDefinition card, final String cubeName) {
         final MagicCubeDefinition cube = getCube(cubeName);
-        return cube.contains(card.getName());
+        return cube.isCardLegal(card);
     }
 
     public static MagicCubeDefinition getCube(final String cubeLabel) {

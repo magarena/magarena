@@ -40,7 +40,7 @@ public class RandomDeckGenerator {
         spellCards.clear();
         for (int rarity =  getMinRarity(); rarity <= getMaxRarity(); rarity++) {
             for (final MagicCardDefinition card : CardDefinitions.getSpellCards()) {
-                if (card.getRarity() >= getMinRarity() && card.getRarity() <= rarity && cubeDefinition.containsCard(card)) {
+                if (card.getRarity() >= getMinRarity() && card.getRarity() <= rarity && cubeDefinition.isCardLegal(card)) {
                     if (acceptPossibleSpellCard(card)) {
                         spellCards.add(card);
                     }
@@ -68,7 +68,7 @@ public class RandomDeckGenerator {
 
         landCards.clear();
         for (final MagicCardDefinition card : CardDefinitions.getLandCards()) {
-            if (cubeDefinition.containsCard(card)) {
+            if (cubeDefinition.isCardLegal(card)) {
                 for (int count = 4; count > 0; count--) {
                     if (acceptPossibleLandCard(card)) {
                         landCards.add(card);
