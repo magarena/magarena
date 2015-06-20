@@ -27,7 +27,7 @@ public class DuelConfig {
     private int startLife = 20;
     private int handSize = 7;
     private int games = 7;
-    private MagicCustomFormat cube = MagicCustomFormat.DEFAULT_CUBE;
+    private MagicFormat cube = MagicFormat.ALL;
     private DuelPlayerConfig[] players = new DuelPlayerConfig[MAX_PLAYERS];
 
     // CTR
@@ -68,10 +68,10 @@ public class DuelConfig {
         return games;
     }
 
-    public MagicCustomFormat getCube() {
+    public MagicFormat getCube() {
         return cube;
     }
-    public void setCube(final MagicCustomFormat aCube) {
+    public void setCube(final MagicFormat aCube) {
         this.cube = aCube;
     }
 

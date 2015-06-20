@@ -81,14 +81,14 @@ public class MagicPredefinedFormat extends MagicFormat {
     private final List<String> restrictedCardNames = new ArrayList<>();
     private final List<MagicSets> magicSets = new ArrayList<>();
 
-    private MagicPredefinedFormat(String name, String filename, int minDeckSize, int maxCardCopies) {
+    private MagicPredefinedFormat(final String name, final String filename, int minDeckSize, int maxCardCopies) {
         this.name = name;
         this.filename = filename;
         this.minimumDeckSize = minDeckSize;
         this.maximumCardCopies = maxCardCopies;
     }
     
-    private MagicPredefinedFormat(String name, String filename) {
+    private MagicPredefinedFormat(final String name, final String filename) {
         this(name, filename, 60, 4);
     }
 

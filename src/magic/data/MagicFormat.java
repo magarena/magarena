@@ -1,7 +1,7 @@
 package magic.data;
 
-import java.util.ArrayList;
 import java.util.List;
+import java.util.ArrayList;
 import java.util.Scanner;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
@@ -24,6 +24,10 @@ public abstract class MagicFormat {
         return isCardLegal(card, 1);
     }
     
+    public String getLabel() {
+        return getName();
+    }
+    
     public boolean isDeckLegal(final MagicDeck aDeck) {
         if (aDeck.size() < getMinimumDeckSize()) {
             return false;
@@ -40,7 +44,7 @@ public abstract class MagicFormat {
     public static final MagicFormat ALL = new MagicFormat() {
         @Override
         public String getName() {
-            return "all";
+            return "All";
         }
         
         @Override
@@ -53,4 +57,22 @@ public abstract class MagicFormat {
             return 40;
         }
     };
+
+    protected static List<MagicFormat> duelFormats = new ArrayList<>();
+
+    public static List<MagicFormat> getDuelFormats() {
+        return duelFormats;
+    }
+    
+    public static MagicFormat[] getDuelFormatsArray() {
+        return duelFormats.toArray(new MagicFormat[0]);
+    }
+    
+    public static String[] getDuelLabels() {
+        final List<String> values = new ArrayList<>();
+        for (final MagicFormat cube : duelFormats) {
+            values.add(cube.getLabel());
+        }
+        return values.toArray(new String[0]);
+    }
 }

@@ -10,7 +10,7 @@ import javax.swing.JPanel;
 import magic.data.DeckType;
 import magic.utility.DeckUtils;
 import magic.data.DuelConfig;
-import magic.data.MagicCustomFormat;
+import magic.data.MagicFormat;
 import magic.exception.InvalidDeckException;
 import magic.model.MagicDeck;
 import magic.model.player.IPlayerProfileListener;
@@ -203,7 +203,7 @@ public class NewDuelSettingsScreen
             }
         }
 
-        public MagicCustomFormat getCube() {
+        public MagicFormat getCube() {
             return duelSettingsPanel.getCube();
         }
 

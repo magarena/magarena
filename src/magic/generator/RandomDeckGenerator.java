@@ -1,7 +1,7 @@
 package magic.generator;
 
 import magic.data.CardDefinitions;
-import magic.data.MagicCustomFormat;
+import magic.data.MagicFormat;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicCondensedDeck;
 import magic.model.MagicDeck;
@@ -10,7 +10,6 @@ import magic.model.MagicRandom;
 
 import java.util.ArrayList;
 import java.util.List;
-import magic.data.MagicCustomFormat;
 import magic.data.DeckGenerator;
 
 public class RandomDeckGenerator {
@@ -18,17 +17,17 @@ public class RandomDeckGenerator {
     private final List<MagicCardDefinition> spellCards = new ArrayList<>();
     private final List<MagicCardDefinition> landCards = new ArrayList<>();
 
-    private MagicCustomFormat cubeDefinition;
+    private MagicFormat cubeDefinition;
 
-    public RandomDeckGenerator(final MagicCustomFormat cubeDefinition) {
+    public RandomDeckGenerator(final MagicFormat cubeDefinition) {
         this.cubeDefinition = cubeDefinition;
     }
 
     public RandomDeckGenerator() {
-        this(MagicCustomFormat.DEFAULT_CUBE);
+        this(MagicFormat.ALL);
     }
 
-    public void setCubeDefinition(final MagicCustomFormat cube) {
+    public void setCubeDefinition(final MagicFormat cube) {
         cubeDefinition = cube;
     }
 

@@ -19,7 +19,6 @@ import javax.swing.JRadioButton;
 import javax.swing.JScrollPane;
 import magic.data.CardDefinitions;
 import magic.data.MagicFormat;
-import magic.data.MagicCustomFormat;
 import magic.data.MagicPredefinedFormat;
 import magic.data.MagicSetDefinitions;
 import magic.data.MagicSets;
@@ -162,9 +161,9 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
 
     private void addCubeFilter() {
         cubePopup = addFilterPopupPanel("Cube");
-        cubeCheckBoxes = new JCheckBox[MagicCustomFormat.values().size()];
+        cubeCheckBoxes = new JCheckBox[MagicFormat.getDuelFormats().size()];
         cubeFilterChoices = new JRadioButton[FILTER_CHOICES.length];
-        final String[] filterValues = MagicCustomFormat.getFilterValues();
+        final String[] filterValues = MagicFormat.getDuelLabels();
         populateCheckboxPopup(cubePopup, filterValues, cubeCheckBoxes, cubeFilterChoices, false);
     }
 
@@ -302,7 +301,7 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
             new CardChecker() {
                 @Override
                 public boolean checkCard(final MagicCardDefinition card, final int i) {
-                    final MagicFormat fmt = MagicCustomFormat.values().get(i);
+                    final MagicFormat fmt = MagicFormat.getDuelFormats().get(i);
                     return fmt.isCardLegal(card);
                 }
             })) {

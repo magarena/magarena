@@ -116,7 +116,7 @@ public class DeckGenerators {
     private static void setRandomColorDeck(final DuelPlayerConfig player) {
         final MagicDeckProfile deckProfile = player.getDeckProfile();
         final MagicDeck deck = player.getDeck();
-        final MagicCustomFormat cubeDefinition = DuelConfig.getInstance().getCube();
+        final MagicFormat cubeDefinition = DuelConfig.getInstance().getCube();
         final RandomDeckGenerator defaultGenerator = new RandomDeckGenerator(cubeDefinition);
         final RandomDeckGenerator customGenerator = DeckGenerators.getDeckGenerator(deckProfile);
         if (customGenerator == null) {

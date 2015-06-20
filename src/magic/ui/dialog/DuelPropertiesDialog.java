@@ -1,7 +1,7 @@
 package magic.ui.dialog;
 
 import magic.utility.MagicSystem;
-import magic.data.MagicCustomFormat;
+import magic.data.MagicFormat;
 import magic.ui.MagicFrame;
 import magic.ui.widget.SliderPanel;
 import net.miginfocom.swing.MigLayout;
@@ -16,6 +16,9 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JRootPane;
 import javax.swing.KeyStroke;
+import javax.swing.DefaultListCellRenderer;
+import javax.swing.JList;
+import java.awt.Component;
 import java.awt.event.ActionEvent;
 
 @SuppressWarnings("serial")
@@ -24,7 +27,7 @@ public class DuelPropertiesDialog extends JDialog {
     private final SliderPanel handSizeSliderPanel;
     private final SliderPanel lifeSliderPanel;
     private final SliderPanel winsSliderPanel;
-    private final JComboBox<MagicCustomFormat> cubeComboBox;
+    private final JComboBox<MagicFormat> cubeComboBox;
     private boolean isCancelled = false;
 
     // CTR : edit an existing profile.
@@ -33,7 +36,7 @@ public class DuelPropertiesDialog extends JDialog {
         final int handSize,
         final int initialLife,
         final int maxGames,
-        final MagicCustomFormat cube
+        final MagicFormat cube
     ) {
 
         super(frame, true);
@@ -47,10 +50,18 @@ public class DuelPropertiesDialog extends JDialog {
         handSizeSliderPanel = new SliderPanel("Hand size:", null, 6, 8, 1, handSize);
         winsSliderPanel = new SliderPanel("Max. games:", null, 1, 11, 2, maxGames);
 
-        cubeComboBox = new JComboBox<>(MagicCustomFormat.valuesArray());
+        cubeComboBox = new JComboBox<>(MagicFormat.getDuelFormatsArray());
         cubeComboBox.setLightWeightPopupEnabled(false);
         cubeComboBox.setFocusable(false);
         cubeComboBox.setSelectedItem(cube);
+        cubeComboBox.setRenderer(new DefaultListCellRenderer() {
+            @Override
+            public Component getListCellRendererComponent(JList list, Object value, int index, boolean isSelected, boolean cellHasFocus) {
+                MagicFormat fmt = (MagicFormat)value;
+                value = fmt.getLabel();
+                return super.getListCellRendererComponent(list, value, index, isSelected, cellHasFocus);
+            }
+        });
 
         getContentPane().setLayout(new MigLayout("flowy", "", "[][45!]"));
         getContentPane().add(lifeSliderPanel, "w 100%");
@@ -128,7 +139,7 @@ public class DuelPropertiesDialog extends JDialog {
         return winsSliderPanel.getValue();
     }
 
-    public MagicCustomFormat getCube() {
+    public MagicFormat getCube() {
         return cubeComboBox.getItemAt(cubeComboBox.getSelectedIndex());
     }
 

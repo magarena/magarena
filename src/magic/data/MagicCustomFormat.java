@@ -44,15 +44,11 @@ public class MagicCustomFormat extends MagicFormat {
         return 40;
     }
 
+    @Override
     public String getLabel() {
         return name + " (" + legal.size() + " cards)";
     }
 
-    @Override
-    public String toString() {
-        return getLabel();
-    }
-    
     // static members
     
     private static final String CUBE_FILE_EXTENSION = "_cube.txt";
@@ -62,27 +58,8 @@ public class MagicCustomFormat extends MagicFormat {
             return file.isFile() && file.getName().endsWith(CUBE_FILE_EXTENSION);
         }
     };
-
-    public static final MagicCustomFormat DEFAULT_CUBE = new MagicCustomFormat("all");
-    private static List<MagicCustomFormat> values = Collections.emptyList();
     
-    public static List<MagicCustomFormat> values() {
-        return values;
-    }
-    
-    public static MagicCustomFormat[] valuesArray() {
-        return values.toArray(new MagicCustomFormat[0]);
-    }
-    
-    public static String[] getFilterValues() {
-        final List<String> values = new ArrayList<>();
-        for (final MagicCustomFormat cube : values()) {
-            values.add(cube.getLabel());
-        }
-        return values.toArray(new String[0]);
-    }
-    
-    private static void loadCustomFormat(final String name, final File file, final List<MagicCustomFormat> fmts) {
+    private static void loadCustomFormat(final String name, final File file, final List<MagicFormat> fmts) {
         List<String> content = Collections.emptyList();
         try { //load cube
             content = FileIO.toStrList(file);
@@ -103,8 +80,11 @@ public class MagicCustomFormat extends MagicFormat {
     }
     
     public static void loadCustomFormats() {
-        final List<MagicCustomFormat> fmts = new ArrayList<>();
-        fmts.add(DEFAULT_CUBE);
+        final List<MagicFormat> fmts = new ArrayList<>();
+        fmts.add(MagicFormat.ALL);
+        fmts.add(MagicPredefinedFormat.STANDARD);
+        fmts.add(MagicPredefinedFormat.MODERN);
+        fmts.add(MagicPredefinedFormat.LEGACY);
 
         final File[] cubeFiles = MagicFileSystem.getDataPath(DataPath.MODS).toFile().listFiles(CUBE_FILE_FILTER);
         if (cubeFiles!=null) {
@@ -117,12 +97,12 @@ public class MagicCustomFormat extends MagicFormat {
 
         if (MagicSystem.showStartupStats()) {
             System.err.println(fmts.size()+" cube definitions");
-            for (final MagicCustomFormat cubeDefinition : fmts) {
+            for (final MagicFormat cubeDefinition : fmts) {
                 System.err.println("Cube " + cubeDefinition);
             }
         }
-
-        values = Collections.unmodifiableList(fmts);
+        
+        MagicFormat.duelFormats = Collections.unmodifiableList(fmts); 
     }
     
     private static String getNameWithoutSize(final String cube) {
@@ -134,20 +114,20 @@ public class MagicCustomFormat extends MagicFormat {
         }
     }
     
-    public static MagicCustomFormat get(final String cubeLabel) {
+    public static MagicFormat get(final String cubeLabel) {
 
         // prior to 1.62 the cube label including card count was saved to the duel
         // config file so for backwards compatibility during import need to check
         // for and remove card count if it exists to isolate just the cube name.
         final String cubeName = getNameWithoutSize(cubeLabel);
         
-        for (final MagicCustomFormat cube : values) {
+        for (final MagicFormat cube : MagicFormat.getDuelFormats()) {
             if (cube.getName().equals(cubeName)) {
                 return cube;
             }
         }
         
-        return DEFAULT_CUBE;
+        return MagicFormat.ALL;
     }
     
     public static MagicCustomFormat create(final Collection<MagicCardDefinition> cardPool) {
