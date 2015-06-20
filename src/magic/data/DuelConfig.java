@@ -27,7 +27,7 @@ public class DuelConfig {
     private int startLife = 20;
     private int handSize = 7;
     private int games = 7;
-    private MagicCustomFormat cube = CustomFormats.DEFAULT_CUBE;
+    private MagicCustomFormat cube = MagicCustomFormat.DEFAULT_CUBE;
     private DuelPlayerConfig[] players = new DuelPlayerConfig[MAX_PLAYERS];
 
     // CTR
@@ -94,7 +94,7 @@ public class DuelConfig {
         startLife = Integer.parseInt(properties.getProperty(START_LIFE, Integer.toString(startLife)));
         handSize = Integer.parseInt(properties.getProperty(HAND_SIZE, Integer.toString(handSize)));
         games = Integer.parseInt(properties.getProperty(GAMES, Integer.toString(games)));
-        cube = CustomFormats.getCube(properties.getProperty(CUBE, cube.getName()));
+        cube = MagicCustomFormat.get(properties.getProperty(CUBE, cube.getName()));
         loadPlayerConfigs(properties, loadPlayerDecks);
     }
 

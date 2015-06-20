@@ -215,7 +215,7 @@ public class CardDefinitions {
         reporter.setMessage("Loading cards...100%");
         
         // update card lists
-        final MagicCustomFormat cube = CustomFormats.DEFAULT_CUBE;
+        final MagicCustomFormat cube = MagicCustomFormat.DEFAULT_CUBE;
         for (final MagicCardDefinition cardDefinition : allPlayableCardDefs.values()) {
             if (cardDefinition.isToken() == false && cardDefinition.isHidden() == false) {
                 defaultPlayableCardDefs.add(cardDefinition);

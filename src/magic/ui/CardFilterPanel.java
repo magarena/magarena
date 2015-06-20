@@ -18,7 +18,8 @@ import javax.swing.JPanel;
 import javax.swing.JRadioButton;
 import javax.swing.JScrollPane;
 import magic.data.CardDefinitions;
-import magic.data.CustomFormats;
+import magic.data.MagicFormat;
+import magic.data.MagicCustomFormat;
 import magic.data.MagicPredefinedFormat;
 import magic.data.MagicSetDefinitions;
 import magic.data.MagicSets;
@@ -135,14 +136,6 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
         add(btn);
     }
 
-    private void addFormatsFilter() {
-        formatsPopup = addFilterPopupPanel("Format");
-        formatsCheckBoxes = new JCheckBox[MagicPredefinedFormat.values().size()];
-        formatsFilterChoices = new JRadioButton[FILTER_CHOICES.length];
-        final String[] filterValues = MagicPredefinedFormat.getFilterValues();
-        populateCheckboxPopup(formatsPopup, filterValues, formatsCheckBoxes, formatsFilterChoices, false);
-    }
-
     private void addStatusFilter() {
         final String[] filterValues = getStatusFilterValues();
         statusPopup = addFilterPopupPanel("Status");
@@ -169,10 +162,18 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
 
     private void addCubeFilter() {
         cubePopup = addFilterPopupPanel("Cube");
-        final String[] filterValues = CustomFormats.getFilterValues();
-        cubeCheckBoxes = new JCheckBox[filterValues.length];
+        cubeCheckBoxes = new JCheckBox[MagicCustomFormat.values().size()];
         cubeFilterChoices = new JRadioButton[FILTER_CHOICES.length];
+        final String[] filterValues = MagicCustomFormat.getFilterValues();
         populateCheckboxPopup(cubePopup, filterValues, cubeCheckBoxes, cubeFilterChoices, false);
+    }
+
+    private void addFormatsFilter() {
+        formatsPopup = addFilterPopupPanel("Format");
+        formatsCheckBoxes = new JCheckBox[MagicPredefinedFormat.values().size()];
+        formatsFilterChoices = new JRadioButton[FILTER_CHOICES.length];
+        final String[] filterValues = MagicPredefinedFormat.getFilterValues();
+        populateCheckboxPopup(formatsPopup, filterValues, formatsCheckBoxes, formatsFilterChoices, false);
     }
 
     private ButtonControlledPopup addFilterPopupPanel(final String title, final String tooltip) {
@@ -301,8 +302,8 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
             new CardChecker() {
                 @Override
                 public boolean checkCard(final MagicCardDefinition card, final int i) {
-                    final String cubeName = cubeCheckBoxes[i].getText();
-                    return CustomFormats.isCardInCube(card, cubeName);
+                    final MagicFormat fmt = MagicCustomFormat.values().get(i);
+                    return fmt.isCardLegal(card);
                 }
             })) {
             return false;
@@ -313,8 +314,8 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
             new CardChecker() {
                 @Override
                 public boolean checkCard(final MagicCardDefinition card, final int i) {
-                    final MagicPredefinedFormat magicFormat = MagicPredefinedFormat.values().get(i);
-                    return magicFormat.isCardLegal(card);
+                    final MagicFormat fmt = MagicPredefinedFormat.values().get(i);
+                    return fmt.isCardLegal(card);
                 }
             })) {
             return false;

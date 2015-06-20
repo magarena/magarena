@@ -103,10 +103,10 @@ public class MagicPredefinedFormat extends MagicFormat {
 
     public static String[] getFilterValues() {
         final List<String> values = new ArrayList<>();
-        for (MagicPredefinedFormat f : MagicPredefinedFormat.values()) {
+        for (final MagicPredefinedFormat f : values()) {
             values.add(f.getName());
         }
-        return values.toArray(new String[values.size()]);
+        return values.toArray(new String[0]);
     }
 
     private void loadMagicFormatFile() {
@@ -193,5 +193,4 @@ public class MagicPredefinedFormat extends MagicFormat {
         }
         return false;
     }
-
 }

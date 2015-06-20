@@ -1,7 +1,6 @@
 package magic.ui.dialog;
 
 import magic.utility.MagicSystem;
-import magic.data.CustomFormats;
 import magic.data.MagicCustomFormat;
 import magic.ui.MagicFrame;
 import magic.ui.widget.SliderPanel;
@@ -48,7 +47,7 @@ public class DuelPropertiesDialog extends JDialog {
         handSizeSliderPanel = new SliderPanel("Hand size:", null, 6, 8, 1, handSize);
         winsSliderPanel = new SliderPanel("Max. games:", null, 1, 11, 2, maxGames);
 
-        cubeComboBox = new JComboBox<>(CustomFormats.getCubesArray());
+        cubeComboBox = new JComboBox<>(MagicCustomFormat.valuesArray());
         cubeComboBox.setLightWeightPopupEnabled(false);
         cubeComboBox.setFocusable(false);
         cubeComboBox.setSelectedItem(cube);

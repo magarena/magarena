@@ -10,7 +10,7 @@ import magic.model.MagicRandom;
 
 import java.util.ArrayList;
 import java.util.List;
-import magic.data.CustomFormats;
+import magic.data.MagicCustomFormat;
 import magic.data.DeckGenerator;
 
 public class RandomDeckGenerator {
@@ -25,7 +25,7 @@ public class RandomDeckGenerator {
     }
 
     public RandomDeckGenerator() {
-        this(CustomFormats.DEFAULT_CUBE);
+        this(MagicCustomFormat.DEFAULT_CUBE);
     }
 
     public void setCubeDefinition(final MagicCustomFormat cube) {

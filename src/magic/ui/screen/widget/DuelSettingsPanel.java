@@ -7,7 +7,6 @@ import java.awt.event.MouseEvent;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 import javax.swing.SwingConstants;
-import magic.data.CustomFormats;
 import magic.data.DuelConfig;
 import magic.data.MagicIcon;
 import magic.data.MagicCustomFormat;
@@ -30,7 +29,7 @@ public class DuelSettingsPanel extends TexturedPanel implements IThemeStyle {
     private int startLife;
     private int handSize;
     private int maxGames = 7;
-    private MagicCustomFormat cube = CustomFormats.DEFAULT_CUBE;
+    private MagicCustomFormat cube = MagicCustomFormat.DEFAULT_CUBE;
     private final MouseAdapter mouseAdapter = getMouseAdapter();
 
     public DuelSettingsPanel(final MagicFrame frame, final DuelConfig config) {
