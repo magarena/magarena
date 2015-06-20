@@ -3,7 +3,6 @@ package magic.data;
 import magic.utility.DeckUtils;
 import magic.utility.FileIO;
 import magic.generator.RandomDeckGenerator;
-import magic.model.MagicCubeDefinition;
 
 import magic.model.DuelPlayerConfig;
 import java.io.IOException;
@@ -117,7 +116,7 @@ public class DeckGenerators {
     private static void setRandomColorDeck(final DuelPlayerConfig player) {
         final MagicDeckProfile deckProfile = player.getDeckProfile();
         final MagicDeck deck = player.getDeck();
-        final MagicCubeDefinition cubeDefinition = DuelConfig.getInstance().getCube();
+        final MagicCustomFormat cubeDefinition = DuelConfig.getInstance().getCube();
         final RandomDeckGenerator defaultGenerator = new RandomDeckGenerator(cubeDefinition);
         final RandomDeckGenerator customGenerator = DeckGenerators.getDeckGenerator(deckProfile);
         if (customGenerator == null) {

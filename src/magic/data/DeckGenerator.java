@@ -4,7 +4,6 @@ import java.util.Collection;
 import magic.generator.RandomDeckGenerator;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicColor;
-import magic.model.MagicCubeDefinition;
 import magic.model.MagicDeck;
 import magic.model.MagicDeckProfile;
 
@@ -48,7 +47,7 @@ public class DeckGenerator {
     }
 
     public MagicDeck getRandomDeck(final Collection<MagicCardDefinition> cardPool) {
-        final MagicCubeDefinition cubeDefinition = CubeDefinitions.createCube(cardPool);
+        final MagicCustomFormat cubeDefinition = CustomFormats.createCube(cardPool);
         final RandomDeckGenerator generator = new RandomDeckGenerator(cubeDefinition);
         deck = new MagicDeck();
         deckProfile = MagicDeckProfile.getDeckProfile(getColorText());

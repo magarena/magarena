@@ -10,11 +10,10 @@ import java.util.Collections;
 import java.util.List;
 import magic.utility.MagicSystem;
 import magic.model.MagicCardDefinition;
-import magic.model.MagicCubeDefinition;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicFileSystem.DataPath;
 
-public class CubeDefinitions {
+public class CustomFormats {
 
     private static final String CUBE_FILE_EXTENSION = "_cube.txt";
     private static final FileFilter CUBE_FILE_FILTER = new FileFilter() {
@@ -24,22 +23,22 @@ public class CubeDefinitions {
         }
     };
 
-    public static final MagicCubeDefinition DEFAULT_CUBE = new MagicCubeDefinition("all");
+    public static final MagicCustomFormat DEFAULT_CUBE = new MagicCustomFormat("all");
 
-    private static final List<MagicCubeDefinition> cubeDefinitions = new ArrayList<>();
-    private static MagicCubeDefinition currentCube;
+    private static final List<MagicCustomFormat> cubeDefinitions = new ArrayList<>();
+    private static MagicCustomFormat currentCube;
     static {
         cubeDefinitions.add(DEFAULT_CUBE);
         currentCube = DEFAULT_CUBE;
     }
 
-    public static MagicCubeDefinition[] getCubesArray() {
-        return cubeDefinitions.toArray(new MagicCubeDefinition[cubeDefinitions.size()]);
+    public static MagicCustomFormat[] getCubesArray() {
+        return cubeDefinitions.toArray(new MagicCustomFormat[cubeDefinitions.size()]);
     }
 
     public static String[] getFilterValues() {
         final List<String> values = new ArrayList<>();
-        for (MagicCubeDefinition cube : cubeDefinitions) {
+        for (MagicCustomFormat cube : cubeDefinitions) {
             if (cube != DEFAULT_CUBE) {
                 values.add(cube.getLabel());
             }
@@ -57,7 +56,7 @@ public class CubeDefinitions {
             ex.printStackTrace();
             return;
         }
-        final MagicCubeDefinition cubeDefinition = new MagicCubeDefinition(name);
+        final MagicCustomFormat cubeDefinition = new MagicCustomFormat(name);
         for (final String line: content) {
             final String cardName = line.trim();
             if (!cardName.isEmpty()) {
@@ -79,18 +78,18 @@ public class CubeDefinitions {
 
         if (MagicSystem.showStartupStats()) {
             System.err.println(cubeDefinitions.size()+" cube definitions");
-            for (final MagicCubeDefinition cubeDefinition : cubeDefinitions) {
+            for (final MagicCustomFormat cubeDefinition : cubeDefinitions) {
                 System.err.println("Cube " + cubeDefinition);
             }
         }
     }
 
     public static boolean isCardInCube(final MagicCardDefinition card, final String cubeName) {
-        final MagicCubeDefinition cube = getCube(cubeName);
+        final MagicCustomFormat cube = getCube(cubeName);
         return cube.isCardLegal(card);
     }
 
-    public static MagicCubeDefinition getCube(final String cubeLabel) {
+    public static MagicCustomFormat getCube(final String cubeLabel) {
 
         // prior to 1.62 the cube label including card count was saved to the duel
         // config file so for backwards compatibility during import need to check
@@ -98,7 +97,7 @@ public class CubeDefinitions {
         final String cubeName = getCubeNameWithoutSize(cubeLabel);
         
         if (!currentCube.getName().equals(cubeName)) {
-            for (MagicCubeDefinition cube : cubeDefinitions) {
+            for (MagicCustomFormat cube : cubeDefinitions) {
                 if (cube.getName().equals(cubeName)) {
                     currentCube = cube;
                     break;
@@ -109,8 +108,8 @@ public class CubeDefinitions {
         
     }
 
-    public static MagicCubeDefinition createCube(Collection<MagicCardDefinition> cardPool) {
-        final MagicCubeDefinition cubeDefinition = new MagicCubeDefinition("random");
+    public static MagicCustomFormat createCube(Collection<MagicCardDefinition> cardPool) {
+        final MagicCustomFormat cubeDefinition = new MagicCustomFormat("random");
         for (MagicCardDefinition card : cardPool) {
             cubeDefinition.add(card.getName());
         }

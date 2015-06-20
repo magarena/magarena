@@ -2,7 +2,7 @@ package magic.utility;
 
 import magic.data.DeckGenerators;
 import magic.data.KeywordDefinitions;
-import magic.data.CubeDefinitions;
+import magic.data.CustomFormats;
 import magic.data.CardDefinitions;
 import magic.data.UnimplementedParser;
 import magic.data.GeneralConfig;
@@ -172,7 +172,7 @@ final public class MagicSystem {
         }
 
         reporter.setMessage("Loading cube definitions...");
-        CubeDefinitions.loadCubeDefinitions();
+        CustomFormats.loadCubeDefinitions();
         reporter.setMessage("Loading deck generators...");
         DeckGenerators.getInstance().loadDeckGenerators();
         reporter.setMessage("Loading keyword definitions...");

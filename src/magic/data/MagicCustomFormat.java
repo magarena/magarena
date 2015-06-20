@@ -1,17 +1,16 @@
-package magic.model;
+package magic.data;
 
 import java.util.Set;
 import java.util.HashSet;
 
-import magic.data.MagicFormat;
-import magic.data.CardLegality;
+import magic.model.MagicCardDefinition;
 
-public class MagicCubeDefinition extends MagicFormat {
+public class MagicCustomFormat extends MagicFormat {
 
     private final Set<String> legal = new HashSet<>();
     private final String name;
 
-    public MagicCubeDefinition(final String name) {
+    public MagicCustomFormat(final String name) {
         this.name=name;
     }
 
@@ -20,7 +19,7 @@ public class MagicCubeDefinition extends MagicFormat {
     }
 
     @Override
-    public CardLegality getCardLegality(MagicCardDefinition card, int cardCount) {
+    public CardLegality getCardLegality(final MagicCardDefinition card, final int cardCount) {
         return (legal.contains(card.getName())) ? CardLegality.Legal : CardLegality.Illegal;
     }
 
