@@ -79,6 +79,11 @@ public enum CardProperty {
             card.setAbilityProperty(value);
         }
     },
+    LOYALTY() {
+        public void setProperty(final MagicCardDefinition card, final String value) {
+            card.setStartingLoyalty(Integer.parseInt(value));
+        }
+    },
     LOAD_ABILITY_COMMA() {
         public void setProperty(final MagicCardDefinition card, final String value) {
             final String[] names=value.split(COMMA);

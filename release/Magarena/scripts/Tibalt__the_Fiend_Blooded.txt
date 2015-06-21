@@ -5,7 +5,7 @@ rarity=M
 type=Planeswalker
 subtype=Tibalt
 cost={R}{R}
-ability=loyalty 2
+loyalty=2
 timing=main
 requires_groovy_code
 oracle=+1: Draw a card, then discard a card at random.\n−4: Tibalt, the Fiend-Blooded deals damage equal to the number of cards in target player's hand to that player.\n−6: Gain control of all creatures until end of turn. Untap them. They gain haste until end of turn.

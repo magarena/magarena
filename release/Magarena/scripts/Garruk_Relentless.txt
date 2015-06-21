@@ -5,8 +5,8 @@ rarity=M
 type=Planeswalker
 subtype=Garruk
 cost={3}{G}
-ability=loyalty 3;\
-        When SN has two or fewer loyalty counters on him, transform SN.
+loyalty=3
+ability=When SN has two or fewer loyalty counters on him, transform SN.
 transform=Garruk, the Veil-Cursed
 timing=main
 requires_groovy_code

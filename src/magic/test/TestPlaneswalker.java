@@ -17,7 +17,8 @@ class TestPlaneswalker extends TestGameBuilder {
 
         P.setLife(20);
         addToLibrary(P, "Plains", 10);
-        createPermanent(P,"Rupture Spire",false,10);
+        createPermanent(P,"Forest",false,10);
+        createPermanent(P,"Chromatic Lantern",false,1);
         createPermanent(P,"Grizzly Bears",false,1);
         addToHand(P, "Ajani, Caller of the Pride", 1);
         addToHand(P, "Sarkhan Vol", 1);

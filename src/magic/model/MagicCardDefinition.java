@@ -18,6 +18,7 @@ import magic.model.mstatic.MagicCDA;
 import magic.model.mstatic.MagicStatic;
 import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
+import magic.model.trigger.MagicComesIntoPlayWithCounterTrigger;
 import magic.model.trigger.MagicWhenDrawnTrigger;
 import magic.model.trigger.MagicWhenPutIntoGraveyardTrigger;
 import magic.model.trigger.MagicWhenSpellIsCastTrigger;
@@ -168,6 +169,12 @@ public class MagicCardDefinition implements MagicAbilityStore {
     }
 
     public void loadAbilities() {
+        if (startingLoyalty > 0 && comeIntoPlayTriggers.isEmpty()) {
+            add(new MagicComesIntoPlayWithCounterTrigger(
+                MagicCounterType.Loyalty,
+                startingLoyalty
+            ));
+        }
         if (requiresGroovy != null) {
             CardProperty.LOAD_GROOVY_CODE.setProperty(this, requiresGroovy);
             requiresGroovy = null;
