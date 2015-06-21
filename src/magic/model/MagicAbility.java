@@ -340,6 +340,8 @@ public enum MagicAbility {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final int n = ARG.number(arg);
             card.add(new MagicComesIntoPlayWithCounterTrigger(MagicCounterType.Loyalty,n));
+            final MagicCardDefinition cardDef = (MagicCardDefinition)card;
+            cardDef.setStartingLoyalty(n);
         }
     },
     Retrace("retrace",10) {

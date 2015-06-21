@@ -97,6 +97,7 @@ public class MagicCardDefinition implements MagicAbilityStore {
     private final int[] manaSource=new int[MagicColor.NR_COLORS];
     private int power;
     private int toughness;
+    private int startingLoyalty;
     private String text = "";
     private MagicStaticType staticType=MagicStaticType.None;
     private MagicTiming timing=MagicTiming.None;
@@ -673,6 +674,14 @@ public class MagicCardDefinition implements MagicAbilityStore {
 
     public int getManaSource(final MagicColor color) {
         return manaSource[color.ordinal()];
+    }
+    
+    public void setStartingLoyalty(final int aLoyalty) {
+        startingLoyalty = aLoyalty;
+    }
+
+    public int getStartingLoyalty() {
+        return startingLoyalty;
     }
 
     public void setPowerToughness(final int aPower, final int aToughness) {
