@@ -17,13 +17,6 @@ all: tags $(MAG) $(EXE)
 zips:
 	make M`grep Release release/README.txt | head -1 | cut -d' ' -f2`
 
-cubes: \
-	cards/standard_all.txt \
-	cards/modern_all.txt \
-	release/Magarena/mods/legacy_cube.txt \
-	release/Magarena/mods/standard_cube.txt \
-	release/Magarena/mods/modern_cube.txt
-
 cards_diff: $(MAG)
 	for i in `hg stat -q src/magic/card release/Magarena/scripts | cut -d' ' -f2 | sort -t'/' -k4`; do hg diff $$i; done | flip -u - > $@
 
@@ -40,15 +33,6 @@ findbugs_warnings.txt: $(MAG)
 
 build_warnings.txt:
 	make clean all > $@
-
-cards/legacy_banned.txt:
-	curl http://archive.wizards.com/Magic/magazine/article.aspx?x=judge/resources/sfrlegacy | grep nodec | grep -o ">[^<]*</a" | sed 's/>//g;s/<\/a//;' > $@
-
-release/Magarena/mods/legacy_cube.txt: cards/existing_master.txt cards/legacy_banned.txt
-	join -v1 -t"|" <(sort $(word 1,$^)) <(sort $(word 2,$^)) > $@
-
-release/Magarena/mods/%_cube.txt: cards/existing_master.txt cards/%_all.txt
-	join -t"|" <(sort $(word 1,$^)) <(sort $(word 2,$^)) > $@
 
 FILTER_DECKBOX := grep deckbox.org/mtg | grep -o ">[A-Z].*<" | sed 's/^>//;s/<$$//'
 
