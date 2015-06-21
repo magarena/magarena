@@ -132,7 +132,7 @@ cards/unimplementable.tsv.add: cards/candidates_full.txt
 release/Magarena/mods/felt_theme.zip:
 	wget https://github.com/magarena/magarena-themes/releases/download/1.0/felt_theme.zip -O $@
 
-M1.%: clean $(EXE) cubes release/Magarena/mods/felt_theme.zip
+M1.%: clean $(EXE) release/Magarena/mods/felt_theme.zip
 	grep "VERSION.*1.$*" -Ir src/
 	grep "Release.*1.$*" release/README.txt
 	grep 1.$* -Ir Magarena.app/
