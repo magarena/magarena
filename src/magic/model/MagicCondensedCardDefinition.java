@@ -37,7 +37,7 @@ public class MagicCondensedCardDefinition {
     public static final Comparator<MagicCondensedCardDefinition> RATING_COMPARATOR_DESC=new Comparator<MagicCondensedCardDefinition>() {
         @Override
         public int compare(final MagicCondensedCardDefinition cardDefinition1,final MagicCondensedCardDefinition cardDefinition2) {
-            return cardDefinition1.getCard().getGathererRating() - cardDefinition2.getCard().getGathererRating();
+            return Double.compare(cardDefinition1.getCard().getValue(), cardDefinition2.getCard().getValue());
         }
     };
 

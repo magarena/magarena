@@ -81,7 +81,6 @@ public class MagicCardDefinition implements MagicAbilityStore {
     private Date imageUpdated;
     private int index=-1;
     private double value;
-    private int gathererRating;
     private int removal;
     private int score=-1; // not initialized
     private MagicRarity rarity;
@@ -289,23 +288,12 @@ public class MagicCardDefinition implements MagicAbilityStore {
         return getImageName();
     }
 
-    public void setValue(final double value) {
-        this.value = value;
-        this.gathererRating = (int)(value * 1000);
+    public void setValue(final double aValue) {
+        value = aValue;
     }
 
     public double getValue() {
         return value;
-    }
-
-    /**
-     * Returns the "value" * 1000 which is used to sort cards in the card explorer.
-     * <p>
-     * The "value" property actually represents the members rating from the Gatherer
-     * website but as a double value it cannot be used with a comparator.
-     */
-    public int getGathererRating() {
-        return gathererRating;
     }
 
     public void setRemoval(final int removal) {
