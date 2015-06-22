@@ -47,7 +47,7 @@ public class DeckGenerator {
     }
 
     public MagicDeck getRandomDeck(final Collection<MagicCardDefinition> cardPool) {
-        final MagicCustomFormat cubeDefinition = MagicCustomFormat.create(cardPool);
+        final MagicFormat cubeDefinition = MagicCustomFormat.create(cardPool);
         final RandomDeckGenerator generator = new RandomDeckGenerator(cubeDefinition);
         deck = new MagicDeck();
         deckProfile = MagicDeckProfile.getDeckProfile(getColorText());

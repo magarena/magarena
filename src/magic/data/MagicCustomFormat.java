@@ -126,8 +126,8 @@ public class MagicCustomFormat extends MagicFormat {
         
         return MagicFormat.ALL;
     }
-    
-    public static MagicCustomFormat create(final Collection<MagicCardDefinition> cardPool) {
+
+    public static MagicFormat create(final Collection<MagicCardDefinition> cardPool) {
         final MagicCustomFormat cubeDefinition = new MagicCustomFormat("random");
         for (MagicCardDefinition card : cardPool) {
             cubeDefinition.add(card.getName());

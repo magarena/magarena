@@ -16,32 +16,32 @@ public class MagicPredefinedFormat extends MagicFormat {
     // @name: display name in UI.
     // @filename: case-sensitive name of file (without extension) in magic/data/formats.
 
-    public static final MagicPredefinedFormat STANDARD = new MagicPredefinedFormat("Standard", "standard");
-    public static final MagicPredefinedFormat MODERN = new MagicPredefinedFormat("Modern", "modern");
-    public static final MagicPredefinedFormat LEGACY = new MagicPredefinedFormat("Legacy", "legacy");
-    public static final MagicPredefinedFormat VINTAGE = new MagicPredefinedFormat("Vintage", "vintage");
-    public static final MagicPredefinedFormat ICE_AGE_BLOCK = new MagicPredefinedFormat("Ice Age Block", "ice_age_block");
-    public static final MagicPredefinedFormat MIRAGE_BLOCK = new MagicPredefinedFormat("Mirage block", "mirage_block");
-    public static final MagicPredefinedFormat TEMPEST_BLOCK = new MagicPredefinedFormat("Tempest block", "tempest_block");
-    public static final MagicPredefinedFormat URZA_BLOCK = new MagicPredefinedFormat("Urza block", "urza_block");
-    public static final MagicPredefinedFormat MASQUES_BLOCK = new MagicPredefinedFormat("Masques block", "masques_block");
-    public static final MagicPredefinedFormat INVASION_BLOCK = new MagicPredefinedFormat("Invasion block", "invasion_block");
-    public static final MagicPredefinedFormat ODYSSEY_BLOCK = new MagicPredefinedFormat("Odyssey block", "odyssey_block");
-    public static final MagicPredefinedFormat ONSLAUGHT_BLOCK = new MagicPredefinedFormat("Onslaught block", "onslaught_block");
-    public static final MagicPredefinedFormat MIRRODIN_BLOCK = new MagicPredefinedFormat("Mirrodin block", "mirrodin_block");
-    public static final MagicPredefinedFormat KAMIGAWA_BLOCK = new MagicPredefinedFormat("Kamigawa block", "kamigawa_block");
-    public static final MagicPredefinedFormat RAVNICA_BLOCK = new MagicPredefinedFormat("Ravnica block", "ravnica_block");
-    public static final MagicPredefinedFormat TIME_SPIRAL_BLOCK = new MagicPredefinedFormat("Time Spiral block", "time_spiral_block");
-    public static final MagicPredefinedFormat LORWYN_SHADOWMOOR_BLOCK = new MagicPredefinedFormat("Lorwyn-Shadowmoor block", "lorwyn_shadowmoor_block");
-    public static final MagicPredefinedFormat SHARDS_OF_ALARA_BLOCK = new MagicPredefinedFormat("Shards of Alara block", "shards_of_alara_block");
-    public static final MagicPredefinedFormat ZENDIKAR_RISE_OF_THE_ELDRAZI_BLOCK = new MagicPredefinedFormat("Zendikar-Rise of the Eldrazi block", "zendikar_rise_of_the_eldrazi_block");
-    public static final MagicPredefinedFormat SCARS_OF_MIRRODIN_BLOCK = new MagicPredefinedFormat("Scars of Mirrodin block", "scars_of_mirrodin_block");
-    public static final MagicPredefinedFormat INNISTRAD_AVACYN_RESTORED_BLOCK = new MagicPredefinedFormat("Innistrad-Avacyn Restored block", "innistrad_avacyn_restored_block");
-    public static final MagicPredefinedFormat RETURN_TO_RAVNICA_BLOCK = new MagicPredefinedFormat("Return to Ravnica block", "return_to_ravnica_block");
-    public static final MagicPredefinedFormat THEROS_BLOCK = new MagicPredefinedFormat("Theros block", "theros_block");
-    public static final MagicPredefinedFormat KHANS_OF_TARKIR_BLOCK = new MagicPredefinedFormat("Khans of Tarkir block", "khans_of_tarkir_block");
+    public static final MagicFormat STANDARD = new MagicPredefinedFormat("Standard", "standard");
+    public static final MagicFormat MODERN = new MagicPredefinedFormat("Modern", "modern");
+    public static final MagicFormat LEGACY = new MagicPredefinedFormat("Legacy", "legacy");
+    public static final MagicFormat VINTAGE = new MagicPredefinedFormat("Vintage", "vintage");
+    public static final MagicFormat ICE_AGE_BLOCK = new MagicPredefinedFormat("Ice Age Block", "ice_age_block");
+    public static final MagicFormat MIRAGE_BLOCK = new MagicPredefinedFormat("Mirage block", "mirage_block");
+    public static final MagicFormat TEMPEST_BLOCK = new MagicPredefinedFormat("Tempest block", "tempest_block");
+    public static final MagicFormat URZA_BLOCK = new MagicPredefinedFormat("Urza block", "urza_block");
+    public static final MagicFormat MASQUES_BLOCK = new MagicPredefinedFormat("Masques block", "masques_block");
+    public static final MagicFormat INVASION_BLOCK = new MagicPredefinedFormat("Invasion block", "invasion_block");
+    public static final MagicFormat ODYSSEY_BLOCK = new MagicPredefinedFormat("Odyssey block", "odyssey_block");
+    public static final MagicFormat ONSLAUGHT_BLOCK = new MagicPredefinedFormat("Onslaught block", "onslaught_block");
+    public static final MagicFormat MIRRODIN_BLOCK = new MagicPredefinedFormat("Mirrodin block", "mirrodin_block");
+    public static final MagicFormat KAMIGAWA_BLOCK = new MagicPredefinedFormat("Kamigawa block", "kamigawa_block");
+    public static final MagicFormat RAVNICA_BLOCK = new MagicPredefinedFormat("Ravnica block", "ravnica_block");
+    public static final MagicFormat TIME_SPIRAL_BLOCK = new MagicPredefinedFormat("Time Spiral block", "time_spiral_block");
+    public static final MagicFormat LORWYN_SHADOWMOOR_BLOCK = new MagicPredefinedFormat("Lorwyn-Shadowmoor block", "lorwyn_shadowmoor_block");
+    public static final MagicFormat SHARDS_OF_ALARA_BLOCK = new MagicPredefinedFormat("Shards of Alara block", "shards_of_alara_block");
+    public static final MagicFormat ZENDIKAR_RISE_OF_THE_ELDRAZI_BLOCK = new MagicPredefinedFormat("Zendikar-Rise of the Eldrazi block", "zendikar_rise_of_the_eldrazi_block");
+    public static final MagicFormat SCARS_OF_MIRRODIN_BLOCK = new MagicPredefinedFormat("Scars of Mirrodin block", "scars_of_mirrodin_block");
+    public static final MagicFormat INNISTRAD_AVACYN_RESTORED_BLOCK = new MagicPredefinedFormat("Innistrad-Avacyn Restored block", "innistrad_avacyn_restored_block");
+    public static final MagicFormat RETURN_TO_RAVNICA_BLOCK = new MagicPredefinedFormat("Return to Ravnica block", "return_to_ravnica_block");
+    public static final MagicFormat THEROS_BLOCK = new MagicPredefinedFormat("Theros block", "theros_block");
+    public static final MagicFormat KHANS_OF_TARKIR_BLOCK = new MagicPredefinedFormat("Khans of Tarkir block", "khans_of_tarkir_block");
 
-    private static final List<MagicPredefinedFormat> values = Collections.unmodifiableList(Arrays.asList(
+    private static final List<MagicFormat> values = Collections.unmodifiableList(Arrays.asList(
         STANDARD,
         MODERN,
         LEGACY,
@@ -68,7 +68,7 @@ public class MagicPredefinedFormat extends MagicFormat {
         KHANS_OF_TARKIR_BLOCK
     ));
 
-    public static List<MagicPredefinedFormat> values() {
+    public static List<MagicFormat> values() {
         return values;
     }
 
@@ -103,7 +103,7 @@ public class MagicPredefinedFormat extends MagicFormat {
 
     public static String[] getFilterValues() {
         final List<String> values = new ArrayList<>();
-        for (final MagicPredefinedFormat f : values()) {
+        for (final MagicFormat f : values()) {
             values.add(f.getName());
         }
         return values.toArray(new String[0]);

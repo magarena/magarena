@@ -96,7 +96,7 @@ public class FormatsLegalityPanel extends JPanel {
 
     private DeckLegalityInfo[] getDeckFormatsLegality(final MagicDeck aDeck) {
         final List<DeckLegalityInfo> lst = new ArrayList<>();
-        for (MagicPredefinedFormat aFormat : MagicPredefinedFormat.values()) {
+        for (MagicFormat aFormat : MagicPredefinedFormat.values()) {
             final DeckLegalityInfo deckLegality = new DeckLegalityInfo(aFormat);
             deckLegality.setIsLegal(aFormat.isDeckLegal(aDeck));
             lst.add(deckLegality);
