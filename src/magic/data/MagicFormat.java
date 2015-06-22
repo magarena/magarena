@@ -2,11 +2,9 @@ package magic.data;
 
 import java.util.List;
 import java.util.ArrayList;
-import java.util.Scanner;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
 import magic.utility.DeckUtils;
-import magic.utility.MagicResources;
 
 public abstract class MagicFormat {
     
