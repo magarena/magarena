@@ -1,8 +1,10 @@
 Act of Treason
 Aegis Angel
 Akroan Jailer
+Alhammarret, High Arbiter
 Avaricious Dragon
 Bellows Lizard
+Blazing Hellhound
 Boggart Brute
 Catacomb Slug
 Chandra's Fury
@@ -20,12 +22,14 @@ Displacement Wave
 Divine Verdict
 Dwynen, Gilt-Leaf Daen
 Eagle of the Watch
-Elvish Visionary
 Elemental Bond
+Elvish Visionary
+Enshrouding Mist
 Enthralling Victor
 Eyeblight Assassin
 Fiery Conclusion
 Fiery Hellhound
+Fiery Impulse
 Flesh to Dust
 Forest
 Gideon, Battle-Forged
@@ -43,7 +47,10 @@ Jace, Vryn's Prodigy
 Jayemdae Tome
 Jhessian Thief
 Joraga Invocation
+Knight of the Pilgrim's Road
+Kothophed, Soul Hoarder
 Kytheon, Hero of Akros
+Languish
 Leaf Gilder
 Lightning Javelin
 Liliana, Defiant Necromancer
@@ -60,6 +67,7 @@ Mountain
 Nightmare
 Nissa, Sage Animist
 Nissa, Vastwood Seer
+Patron of the Valiant
 Pia and Kiran Nalaar
 Plains
 Plummet
@@ -67,16 +75,19 @@ Prized Unicorn
 Rabid Bloodsucker
 Ravaging Blaze
 Reave Soul
+Rhox Maulers
 Ringwarden Owl
 Runed Servitor
 Scrapskin Drake
 Seismic Elemental
+Send to Sleep
 Sengir Vampire
 Sentinel of the Eternal Watch
 Separatist Voidmage
 Serra Angel
 Shambling Ghoul
 Shivan Dragon
+Sphinx's Tutelage
 Subterranean Scout
 Swamp
 Terra Stomper
@@ -91,3 +102,4 @@ Weave Fate
 Weight of the Underworld
 Yeva's Forcemage
 Yoked Ox
+Zendikar Incarnate
