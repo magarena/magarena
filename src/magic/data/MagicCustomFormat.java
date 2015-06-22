@@ -13,7 +13,6 @@ import java.io.IOException;
 import magic.utility.FileIO;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicFileSystem.DataPath;
-import magic.utility.MagicSystem;
 import magic.model.MagicCardDefinition;
 
 public class MagicCustomFormat extends MagicFormat {
@@ -49,7 +48,9 @@ public class MagicCustomFormat extends MagicFormat {
         return name + " (" + legal.size() + " cards)";
     }
 
+    //
     // static members
+    //
     
     private static final String CUBE_FILE_EXTENSION = "_cube.txt";
     private static final FileFilter CUBE_FILE_FILTER = new FileFilter() {
@@ -58,6 +59,8 @@ public class MagicCustomFormat extends MagicFormat {
             return file.isFile() && file.getName().endsWith(CUBE_FILE_EXTENSION);
         }
     };
+
+    private static List<MagicFormat> customFormats;
     
     private static void loadCustomFormat(final String name, final File file, final List<MagicFormat> fmts) {
         List<String> content = Collections.emptyList();
@@ -79,13 +82,8 @@ public class MagicCustomFormat extends MagicFormat {
         fmts.add(cubeDefinition);
     }
     
-    public static void loadCustomFormats() {
+    private static void loadCustomFormats() {
         final List<MagicFormat> fmts = new ArrayList<>();
-        fmts.add(MagicFormat.ALL);
-        fmts.add(MagicPredefinedFormat.STANDARD);
-        fmts.add(MagicPredefinedFormat.MODERN);
-        fmts.add(MagicPredefinedFormat.LEGACY);
-
         final File[] cubeFiles = MagicFileSystem.getDataPath(DataPath.MODS).toFile().listFiles(CUBE_FILE_FILTER);
         if (cubeFiles!=null) {
             for (final File file : cubeFiles) {
@@ -94,15 +92,14 @@ public class MagicCustomFormat extends MagicFormat {
                 loadCustomFormat(name.substring(0,index),file,fmts);
             }
         }
+        customFormats = Collections.unmodifiableList(fmts);
+    }
 
-        if (MagicSystem.showStartupStats()) {
-            System.err.println(fmts.size()+" cube definitions");
-            for (final MagicFormat cubeDefinition : fmts) {
-                System.err.println("Cube " + cubeDefinition);
-            }
+    static List<MagicFormat> values() {
+        if (customFormats == null) {
+            loadCustomFormats();
         }
-        
-        MagicFormat.duelFormats = Collections.unmodifiableList(fmts); 
+        return customFormats;
     }
     
     private static String getNameWithoutSize(final String cube) {

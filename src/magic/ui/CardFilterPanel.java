@@ -161,9 +161,9 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
 
     private void addCubeFilter() {
         cubePopup = addFilterPopupPanel("Cube");
-        cubeCheckBoxes = new JCheckBox[MagicFormat.getDuelFormats().size()];
+        cubeCheckBoxes = new JCheckBox[MagicFormat.getCubeFilterFormats().size()];
         cubeFilterChoices = new JRadioButton[FILTER_CHOICES.length];
-        final String[] filterValues = MagicFormat.getDuelLabels();
+        final String[] filterValues = MagicFormat.getCubeFilterLabels();
         populateCheckboxPopup(cubePopup, filterValues, cubeCheckBoxes, cubeFilterChoices, false);
     }
 
@@ -301,7 +301,7 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
             new CardChecker() {
                 @Override
                 public boolean checkCard(final MagicCardDefinition card, final int i) {
-                    final MagicFormat fmt = MagicFormat.getDuelFormats().get(i);
+                    final MagicFormat fmt = MagicFormat.getCubeFilterFormats().get(i);
                     return fmt.isCardLegal(card);
                 }
             })) {

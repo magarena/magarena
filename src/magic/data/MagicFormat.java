@@ -39,6 +39,10 @@ public abstract class MagicFormat {
         return true;
     }
 
+    //
+    // static members
+    //
+
     public static final MagicFormat ALL = new MagicFormat() {
         @Override
         public String getName() {
@@ -56,21 +60,37 @@ public abstract class MagicFormat {
         }
     };
 
-    protected static List<MagicFormat> duelFormats = new ArrayList<>();
+    private static List<String> getFormatLabels(final List<MagicFormat> formats) {
+        final List<String> fmts = new ArrayList<>();
+        for (final MagicFormat fmt : formats) {
+            fmts.add(fmt.getLabel());
+        }
+        return fmts;
+    }
 
     public static List<MagicFormat> getDuelFormats() {
-        return duelFormats;
+        final List<MagicFormat> fmts = new ArrayList<>();
+        fmts.add(MagicFormat.ALL);
+        fmts.add(MagicPredefinedFormat.STANDARD);
+        fmts.add(MagicPredefinedFormat.MODERN);
+        fmts.add(MagicPredefinedFormat.LEGACY);
+        fmts.addAll(MagicCustomFormat.values());
+        return fmts;
+    }
+
+    public static List<MagicFormat> getCubeFilterFormats() {
+        return MagicCustomFormat.values();
     }
     
     public static MagicFormat[] getDuelFormatsArray() {
-        return duelFormats.toArray(new MagicFormat[0]);
+        return getDuelFormats().toArray(new MagicFormat[0]);
     }
     
     public static String[] getDuelLabels() {
-        final List<String> values = new ArrayList<>();
-        for (final MagicFormat cube : duelFormats) {
-            values.add(cube.getLabel());
-        }
-        return values.toArray(new String[0]);
+        return getFormatLabels(getDuelFormats()).toArray(new String[0]);
+    }
+
+    public static String[] getCubeFilterLabels() {
+        return getFormatLabels(getCubeFilterFormats()).toArray(new String[0]);
     }
 }
