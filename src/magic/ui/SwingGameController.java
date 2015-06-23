@@ -166,7 +166,6 @@ public class SwingGameController implements IUIGameController, ILogBookListener 
         }
     }
 
-
     private static void invokeAndWait(final Runnable task) {
         try { //invoke and wait
             SwingUtilities.invokeAndWait(task);
@@ -175,9 +174,20 @@ public class SwingGameController implements IUIGameController, ILogBookListener 
         }
     }
 
+    private void waitForUIUpdates() {
+        invokeAndWait(new Runnable() {
+            @Override
+            public void run() {
+                //do nothing, ensure that event dispatch queue is cleared
+            }
+        });
+    }
+
     /** Returns true when undo was clicked. */
     private boolean waitForInputOrUndo() {
         try {
+            waitForUIUpdates();
+            input.clear();
             return input.take();
         } catch (final InterruptedException ex) {
             throw new RuntimeException(ex);
@@ -189,6 +199,29 @@ public class SwingGameController implements IUIGameController, ILogBookListener 
         final boolean undoClicked = waitForInputOrUndo();
         if (undoClicked) {
             throw new UndoClickedException();
+        }
+    }
+    
+    private <E extends JComponent> E waitForInput(final Callable<E> func) throws UndoClickedException {
+        final AtomicReference<E> ref = new AtomicReference<>();
+        final AtomicReference<Exception> except = new AtomicReference<>();
+        SwingUtilities.invokeLater(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    final E content = func.call();
+                    ref.set(content);
+                    userActionPanel.setContentPanel(content);
+                } catch (Exception ex) {
+                    except.set(ex);
+                }
+            }
+        });
+        waitForInput();
+        if (except.get() != null) {
+            throw new RuntimeException(except.get());
+        } else {
+            return ref.get();
         }
     }
 
@@ -543,29 +576,6 @@ public class SwingGameController implements IUIGameController, ILogBookListener 
         });
     }
 
-    private <E extends JComponent> E waitForInput(final Callable<E> func) throws UndoClickedException {
-        final AtomicReference<E> ref = new AtomicReference<>();
-        final AtomicReference<Exception> except = new AtomicReference<>();
-        invokeAndWait(new Runnable() {
-            @Override
-            public void run() {
-                try {
-                    final E content = func.call();
-                    ref.set(content);
-                    userActionPanel.setContentPanel(content);
-                } catch (Exception ex) {
-                    except.set(ex);
-                }
-            }
-        });
-        waitForInput();
-        if (except.get() != null) {
-            throw new RuntimeException(except.get());
-        } else {
-            return ref.get();
-        }
-    }
-
     private Object[] getArtificialNextEventChoiceResults(final MagicEvent event) {
         disableActionButton(true);
         if (CONFIG.getHideAiActionPrompt()) {
@@ -573,12 +583,7 @@ public class SwingGameController implements IUIGameController, ILogBookListener 
         } else {
             showMessage(event.getSource(),event.getChoiceDescription());
         }
-        SwingGameController.invokeAndWait(new Runnable() {
-            @Override
-            public void run() {
-                //do nothing, ensure that event dispatch queue is cleared
-            }
-        });
+        waitForUIUpdates();
 
         //dynamically get the AI based on the player's index
         final MagicPlayer player = event.getPlayer();
