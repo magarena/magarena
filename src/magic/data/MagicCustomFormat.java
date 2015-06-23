@@ -19,17 +19,26 @@ public class MagicCustomFormat extends MagicFormat {
     
     private final Set<String> legal = new HashSet<>();
     private final String name;
-
-    public MagicCustomFormat(final String name) {
-        this.name=name;
+    private final File file;
+    
+    public MagicCustomFormat(final String aName) {
+        this(aName, null);
     }
 
-    public void add(final String name) {
+    public MagicCustomFormat(final String aName, final File aFile) {
+        name = aName;
+        file = aFile;
+    }
+
+    private void add(final String name) {
         legal.add(name);
     }
 
     @Override
     public CardLegality getCardLegality(final MagicCardDefinition card, final int cardCount) {
+        if (legal.isEmpty()) {
+            load();
+        }
         return (legal.contains(card.getName())) ? CardLegality.Legal : CardLegality.Illegal;
     }
 
@@ -45,7 +54,25 @@ public class MagicCustomFormat extends MagicFormat {
 
     @Override
     public String getLabel() {
-        return name + " (" + legal.size() + " cards)";
+        return name;
+    }
+    
+    private void load() {
+        List<String> content = Collections.emptyList();
+        try { //load cube
+            content = FileIO.toStrList(file);
+        } catch (final IOException ex) {
+            System.err.println("ERROR! Unable to load " + name);
+            System.err.println(ex.getMessage());
+            ex.printStackTrace();
+            return;
+        }
+        for (final String line: content) {
+            final String cardName = line.trim();
+            if (!cardName.isEmpty()) {
+                legal.add(cardName);
+            }
+        }
     }
 
     //
@@ -62,43 +89,20 @@ public class MagicCustomFormat extends MagicFormat {
 
     private static List<MagicFormat> customFormats;
     
-    private static void loadCustomFormat(final String name, final File file, final List<MagicFormat> fmts) {
-        List<String> content = Collections.emptyList();
-        try { //load cube
-            content = FileIO.toStrList(file);
-        } catch (final IOException ex) {
-            System.err.println("ERROR! Unable to load " + name);
-            System.err.println(ex.getMessage());
-            ex.printStackTrace();
-            return;
-        }
-        final MagicCustomFormat cubeDefinition = new MagicCustomFormat(name);
-        for (final String line: content) {
-            final String cardName = line.trim();
-            if (!cardName.isEmpty()) {
-                cubeDefinition.add(cardName);
-            }
-        }
-        fmts.add(cubeDefinition);
-    }
-    
-    private static void loadCustomFormats() {
+    public static void loadCustomFormats() {
         final List<MagicFormat> fmts = new ArrayList<>();
         final File[] cubeFiles = MagicFileSystem.getDataPath(DataPath.MODS).toFile().listFiles(CUBE_FILE_FILTER);
         if (cubeFiles!=null) {
             for (final File file : cubeFiles) {
                 final String name = file.getName();
                 final int index = name.indexOf(CUBE_FILE_EXTENSION);
-                loadCustomFormat(name.substring(0,index),file,fmts);
+                fmts.add(new MagicCustomFormat(name.substring(0,index),file));
             }
         }
         customFormats = Collections.unmodifiableList(fmts);
     }
 
     static List<MagicFormat> values() {
-        if (customFormats == null) {
-            loadCustomFormats();
-        }
         return customFormats;
     }
     
