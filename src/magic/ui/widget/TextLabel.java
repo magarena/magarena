@@ -76,12 +76,12 @@ public class TextLabel extends JPanel {
             return null;
         }
         final TComponent component;
-        if (textPart.charAt(0)=='{') {
+        if (textPart.charAt(0)=='{' && TextImages.contains(textPart)) {
             component = new IconComponent(IconImages.getIcon(TextImages.getIcon(textPart)));
         } else if (info) {
-            component=new TextComponent(textPart,this,FontsAndBorders.FONT0,isBlueInfo);
+            component = new TextComponent(textPart,this,FontsAndBorders.FONT0,isBlueInfo);
         } else {
-            component=new TextComponent(textPart,this,FontsAndBorders.FONT1,false);
+            component = new TextComponent(textPart,this,FontsAndBorders.FONT1,false);
         }
         return component;
     }

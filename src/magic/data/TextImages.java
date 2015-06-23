@@ -82,9 +82,13 @@ public class TextImages {
     }
 
     public static MagicIcon getIcon(final String text) {
-        if (!TEXT_ICONS.containsKey(text)) {
+        if (TEXT_ICONS.containsKey(text) == false) {
             throw new RuntimeException("No corresponding icon for " + text);
         }
         return TEXT_ICONS.get(text);
+    }
+    
+    public static boolean contains(final String text) {
+        return TEXT_ICONS.containsKey(text);
     }
 }
