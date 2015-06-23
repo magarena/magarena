@@ -26,6 +26,10 @@ public class TextImages {
         TEXT_ICONS.put("{14}", MagicIcon.MANA_14);
         TEXT_ICONS.put("{15}", MagicIcon.MANA_15);
         TEXT_ICONS.put("{16}", MagicIcon.MANA_16);
+        TEXT_ICONS.put("{17}", MagicIcon.MANA_17);
+        TEXT_ICONS.put("{18}", MagicIcon.MANA_18);
+        TEXT_ICONS.put("{19}", MagicIcon.MANA_19);
+        TEXT_ICONS.put("{20}", MagicIcon.MANA_20);
         TEXT_ICONS.put("{X}", MagicIcon.MANA_X);
         TEXT_ICONS.put("{S}", MagicIcon.MANA_SNOW);
 

@@ -230,6 +230,10 @@ public enum MagicIcon {
     MANA_14(14),
     MANA_15(15),
     MANA_16(16),
+    MANA_17(17),
+    MANA_18(18),
+    MANA_19(19),
+    MANA_20(20),
     MANA_X(21);
 
     public static final String MANA_ICON_SHEET = "Mana.png";
