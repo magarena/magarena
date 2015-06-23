@@ -830,9 +830,9 @@ public class SwingGameController implements IUIGameController, ILogBookListener 
             @Override
             public MayChoicePanel call() {
                 return new MayChoicePanel(
-                        SwingGameController.this,
-                        source,
-                        "You may pay the buyback " + costText + '.'
+                    SwingGameController.this,
+                    source,
+                    "You may pay the buyback " + costText + '.'
                 );
             }
         });
