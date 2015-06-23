@@ -5,17 +5,21 @@ Alhammarret, High Arbiter
 Avaricious Dragon
 Bellows Lizard
 Blazing Hellhound
+Blessed Spirits
 Boggart Brute
+Bounding Krasis
 Catacomb Slug
 Chandra's Fury
 Chandra's Ignition
 Chandra, Fire of Kaladesh
 Chandra, Roaring Flame
 Charging Griffin
+Clash of Wills
 Claustrophobia
 Cobblebrute
 Conclave Naturalists
 Cruel Revival
+Dark Petition
 Deadbridge Shaman
 Disperse
 Displacement Wave
@@ -30,6 +34,7 @@ Eyeblight Assassin
 Fiery Conclusion
 Fiery Hellhound
 Fiery Impulse
+Flameshadow Conjuring
 Flesh to Dust
 Forest
 Gideon, Battle-Forged
@@ -38,6 +43,7 @@ Grasp of the Hieromancer
 Heavy Infantry
 Hitchclaw Recluse
 Hixus, Prison Warden
+Honored Hierarch
 Hydrolash
 Infernal Scarring
 Into the Void
@@ -65,6 +71,7 @@ Mind Rot
 Mizzium Meddler
 Mountain
 Nightmare
+Nissa's Pilgrimage
 Nissa, Sage Animist
 Nissa, Vastwood Seer
 Patron of the Valiant
@@ -75,6 +82,7 @@ Prized Unicorn
 Rabid Bloodsucker
 Ravaging Blaze
 Reave Soul
+Relic Hunter
 Rhox Maulers
 Ringwarden Owl
 Runed Servitor
@@ -88,8 +96,10 @@ Serra Angel
 Shambling Ghoul
 Shivan Dragon
 Sphinx's Tutelage
+Starfield of Nyx
 Subterranean Scout
 Swamp
+Tainted Remedy
 Terra Stomper
 Titan's Strength
 Titanic Growth
