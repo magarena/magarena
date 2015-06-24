@@ -16,10 +16,12 @@ Chandra, Roaring Flame
 Charging Griffin
 Clash of Wills
 Claustrophobia
+Cleric of the Forward Order
 Cobblebrute
 Conclave Naturalists
 Cruel Revival
 Dark Petition
+Day's Undoing
 Deadbridge Shaman
 Disperse
 Displacement Wave
@@ -31,6 +33,7 @@ Elvish Visionary
 Enshrouding Mist
 Enthralling Victor
 Eyeblight Assassin
+Faerie Miscreant
 Fiery Conclusion
 Fiery Hellhound
 Fiery Impulse
@@ -45,9 +48,11 @@ Hitchclaw Recluse
 Hixus, Prison Warden
 Honored Hierarch
 Hydrolash
+Infectious Bloodlust
 Infernal Scarring
 Into the Void
 Island
+Jace's Sanctum
 Jace, Telepath Unbound
 Jace, Vryn's Prodigy
 Jayemdae Tome
@@ -55,6 +60,7 @@ Jhessian Thief
 Joraga Invocation
 Knight of the Pilgrim's Road
 Kothophed, Soul Hoarder
+Kytheon's Irregulars
 Kytheon, Hero of Akros
 Languish
 Leaf Gilder
@@ -63,6 +69,7 @@ Liliana, Defiant Necromancer
 Liliana, Heretical Healer
 Mahamoti Djinn
 Malakir Cullblade
+Managorger Hydra
 Mantle of Webs
 Maritime Guard
 Meteorite
@@ -82,7 +89,7 @@ Prized Unicorn
 Rabid Bloodsucker
 Ravaging Blaze
 Reave Soul
-Relic Hunter
+Relic Seeker
 Rhox Maulers
 Ringwarden Owl
 Runed Servitor
@@ -101,9 +108,12 @@ Subterranean Scout
 Swamp
 Tainted Remedy
 Terra Stomper
+Timberpack Wolf
 Titan's Strength
 Titanic Growth
+Topan Freeblade
 Tower Geist
+Undead Servant
 Valor in Akros
 Vastwood Gorger
 Veteran's Sidearm
