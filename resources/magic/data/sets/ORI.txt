@@ -1,19 +1,24 @@
 Act of Treason
 Aegis Angel
 Akroan Jailer
+Alhammarret's Archive
 Alhammarret, High Arbiter
+Archangel of Tithes
 Avaricious Dragon
+Battlefield Forge
 Bellows Lizard
 Blazing Hellhound
 Blessed Spirits
 Boggart Brute
 Bounding Krasis
 Catacomb Slug
+Caves of Koilos
 Chandra's Fury
 Chandra's Ignition
 Chandra, Fire of Kaladesh
 Chandra, Roaring Flame
 Charging Griffin
+Citadel Castellan
 Clash of Wills
 Claustrophobia
 Cleric of the Forward Order
@@ -32,6 +37,7 @@ Elemental Bond
 Elvish Visionary
 Enshrouding Mist
 Enthralling Victor
+Exquisite Firecraft
 Eyeblight Assassin
 Faerie Miscreant
 Fiery Conclusion
@@ -67,6 +73,7 @@ Leaf Gilder
 Lightning Javelin
 Liliana, Defiant Necromancer
 Liliana, Heretical Healer
+Llanowar Wastes
 Mahamoti Djinn
 Malakir Cullblade
 Managorger Hydra
@@ -102,6 +109,7 @@ Separatist Voidmage
 Serra Angel
 Shambling Ghoul
 Shivan Dragon
+Shivan Reef
 Sphinx's Tutelage
 Starfield of Nyx
 Subterranean Scout
@@ -114,12 +122,16 @@ Titanic Growth
 Topan Freeblade
 Tower Geist
 Undead Servant
+Unholy Hunger
+Valeron Wardens
 Valor in Akros
 Vastwood Gorger
 Veteran's Sidearm
 Volcanic Rambler
 Weave Fate
 Weight of the Underworld
+Woodland Bellower
+Yavimaya Coast
 Yeva's Forcemage
 Yoked Ox
 Zendikar Incarnate
