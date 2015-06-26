@@ -28,9 +28,11 @@ Cruel Revival
 Dark Petition
 Day's Undoing
 Deadbridge Shaman
+Demonic Pact
 Disperse
 Displacement Wave
 Divine Verdict
+Dwynen's Elite
 Dwynen, Gilt-Leaf Daen
 Eagle of the Watch
 Elemental Bond
@@ -47,6 +49,8 @@ Flameshadow Conjuring
 Flesh to Dust
 Forest
 Gideon, Battle-Forged
+Gnarlroot Trapper
+Goblin Piledriver
 Gold-Forged Sentinel
 Grasp of the Hieromancer
 Heavy Infantry
@@ -65,6 +69,7 @@ Jayemdae Tome
 Jhessian Thief
 Joraga Invocation
 Knight of the Pilgrim's Road
+Knight of the White Orchid
 Kothophed, Soul Hoarder
 Kytheon's Irregulars
 Kytheon, Hero of Akros
@@ -107,13 +112,16 @@ Sengir Vampire
 Sentinel of the Eternal Watch
 Separatist Voidmage
 Serra Angel
+Shaman of the Pack
 Shambling Ghoul
 Shivan Dragon
 Shivan Reef
+Soulblade Djinn
 Sphinx's Tutelage
 Starfield of Nyx
 Subterranean Scout
 Swamp
+Sylvan Messenger
 Tainted Remedy
 Terra Stomper
 Timberpack Wolf
@@ -128,6 +136,7 @@ Valor in Akros
 Vastwood Gorger
 Veteran's Sidearm
 Volcanic Rambler
+Vryn Wingmare
 Weave Fate
 Weight of the Underworld
 Woodland Bellower
