@@ -643,7 +643,7 @@ public class MagicCardDefinition implements MagicAbilityStore {
         return cost;
     }
 
-    public Iterable<? extends MagicEvent> getCostEvent(final MagicCard source) {
+    public List<MagicEvent> getCostEvent(final MagicCard source) {
         final List<MagicEvent> costEvent = new ArrayList<MagicEvent>();
         if (cost != MagicManaCost.ZERO) {
             costEvent.add(new MagicPayManaCostEvent(
@@ -651,6 +651,12 @@ public class MagicCardDefinition implements MagicAbilityStore {
                 cost
             ));
         }
+        costEvent.addAll(getAdditionalCostEvent(source));
+        return costEvent;
+    }
+        
+    public List<MagicEvent> getAdditionalCostEvent(final MagicCard source) {
+        final List<MagicEvent> costEvent = new ArrayList<MagicEvent>();
         for (final MagicEventSource eventSource : costEventSources) {
             costEvent.add(eventSource.getEvent(source));
         }

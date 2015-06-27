@@ -19,7 +19,7 @@ class TestFreeSpells extends TestGameBuilder {
         addToLibrary(P, "Plains", 10);
         createPermanent(P,"Plains",false,10);
         createPermanent(P,"Chromatic Lantern");
-        createPermanent(P,"Maelstrom Archangel");
+        //createPermanent(P,"Maelstrom Archangel");
         addToHand(P,"Isochron Scepter",1);
         addToHand(P,"Spellbinder",1);
         addToHand(P,"Altar's Reap",1);

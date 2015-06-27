@@ -206,8 +206,12 @@ public class MagicCard
         return getCardDefinition().getCost();
     }
 
-    public Iterable<? extends MagicEvent> getCostEvent() {
+    public Iterable<MagicEvent> getCostEvent() {
         return getCardDefinition().getCostEvent(this);
+    }
+    
+    public Iterable<MagicEvent> getAdditionalCostEvent() {
+        return getCardDefinition().getAdditionalCostEvent(this);
     }
 
     public boolean isGameKnown() {
