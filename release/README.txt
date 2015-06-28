@@ -69,6 +69,108 @@ Thank you for your support and have fun!
 
 Release 1.63 (June 28, 2015)
 ============
+lodici
+melvin
+PalladiaMors
+ShawnieBoy
+    
+    Add first pass of Snow Mana impementation see #367
+    
+    Update default deck size in random deck generator based on deck editor mode and size of current deck.
+    
+    Usability and style updates to Deck Editor :-
+    
+    1. replace ugly tabs with more minimal style consistent with rest of UI.
+    2. abbreviated deck is now always shown for immediate feedback when adding/removing cards.
+    3. view action icons shown on vertical action bar instead of hidden by default on separate panel.
+    
+    Only display custom formats in the cube filter in CardFilterPanel.
+    
+    Audio update :-
+    
+    - Add TinySound (https://github.com/finnkuusisto/TinySound) classes for simple api.
+    - Add new deck edit wavs from http://soundbible.com.
+    - New feedback sound when adding or removing a card from deck.
+    - New bong sound for alerts and clunk sound for invalid action.
+    - New Audio tab in preferences dialog for all audio settings.
+    - Volume of UI sounds can now be adjusted.
+    
+- fixed the following bugs:
+    fix #343 : Set "allow only sensible choices" to off by default & rename?
+    Added Legality tab to deck editor which shows deck legality status (see issue #136).
+    add 'Cast with AI' casting restriction
+    include additional costs when using CastFreeAction, fixes issue #231
+    Include colorless Mana Icons up to 20
+    render a TextComponent if textPart has no corresponding icon, fixes #383
+    wait for UI to be fully updated then accept next click, fixes #374
+    cancel skip till EOT when opponent declares attackers
+    cancel skip if any attackers are declared during declared attackers phase, fixes issue #334
+    clear skip when reached EOT, fixes issue #350
+    use the correct layer for MagicStatic, fixes issue #331
+    fix #329 : java.lang.RuntimeException: Missing default AI player profile! (after importing).
+    fix: count not set to zero after download complete. It was still including images updated via the "image_updated" property because the download date had not yet been saved to general.config.
+    re-order triggers for Momir Vig fixes #328
+    fix bug where event generated from MagicArtificialCondition use the condition without wrapper, fixes issue #341
+    fix image for Snake Basket
+    correct image for mystic compass
+    fix Bogardan Phoenix reanimation
+    add Cast SN with AI to Champion abilities fix #27
+    perform update before calling check state, fixes issue #50
+    fix Orzhov Charm bounce method (concurrent modification)
+    fix timing hint for Scare Tactics
+    Set sorcery speed pump spells to fmain for AI
+    fix trigger for Grim Feast - 'creature put into opponent's graveyard' not 'creature an opponent controls dies'
+    include Artifact in Chimeric Mass becomesAction. May not be an artifact when activated
+
+- added the following cards:
+Adarkar Windform, Alchor's Tomb, Ana Sanctuary, Apathy,
+Arbiter of Knollridge, Arcane Denial, Ashnod's Cylix, Aura Barbs,
+Aura of Dominion, Banshee, Battle Cry, Bellowing Fiend, Blizzard,
+Bloodbond March, Bloodthirsty Ogre, Boreal Centaur, Boreal Griffin,
+Branded Brawlers, Browse, Call for Blood, Call of the Wild, Calming Verse,
+Cerulean Sphinx, Ceta Sanctuary, Champion's Helm, Chilling Shade,
+Chimeric Coils, Cleansing Beam, Cloak of Confusion, Compulsive Research,
+Cover of Winter, Cromat, Crovax the Cursed, Curse Artifact, Cursed Rack,
+Cyclopean Snare, Dark Maze, Dark Temper, Dega Sanctuary, Diamond Faerie,
+Disorder, Distorting Lens, Dosan the Falling Leaf, Dwarven Armory,
+Early Harvest, Earth Surge, Elephant Resurgence, Enchanted Being,
+Ethereal Haze, Excise, Eye of Singularity, Farrel's Mantle, Feint,
+Filigree Fracture, First Volley, Flint Golem, Forbidden Alchemy,
+Forethought Amulet, Frost Raptor, Fylgja, Gaea's Balance,
+Gangrenous Zombies, Gaseous Form, Gelid Shackles, Ghosts of the Innocent,
+Giant Caterpillar, Glacial Plating, Glimpse the Future, Gnat Miser,
+Goblin Cadets, Goblin Rimerunner, Goblin Sappers, Goblin Ski Patrol,
+Goblin Snowman, Granulate, Gravecrawler, Haunted Angel, Heart of Light,
+Hokori, Dust Drinker, Imperial Mask, Incite Hysteria, Indentured Oaf,
+Insurrection, Invoke Prejudice, Jin-Gitaxias, Core Augur,
+Kitsune Palliator, Knight of Dusk, Knight of Valor, Kry Shield,
+Kyoki, Sanity's Eclipse, Leave No Trace, Lichenthrope, Lifespinner,
+Light of Sanction, Locust Miser, Manacles of Decay, Mana Short,
+Mana Vortex, Mark of Eviction, Martyrs of Korlis, Minamo Scrollkeeper,
+Mind Whip, Miracle Worker, Mistfolk, Monsoon, Mouth of Ronom,
+Mundungu, Murderous Betrayal, Natural Balance, Necra Sanctuary,
+Necropolis, Nivix Cyclops, Noble Purpose, Oath of Lim-Dûl,
+Ohran Yeti, Orb of Dreams, Orcish Captain, Orcish Squatters,
+Orcish Veteran, Pallid Mycoderm, Phantom Wings, Phyrexian Ironfoot,
+Phyrexian Snowcrusher, Phytohydra, Pillar Tombs of Aku, Plague Boiler,
+Pollenbright Wings, Preferred Selection, Primordial Ooze, Rakalite,
+Raka Sanctuary, Rally the Righteous, Razormane Masticore, Relic Bind,
+Rimebound Dead, Rimefeather Owl, Rimescale Dragon, Ring of Immortals,
+Ritual of the Returned, Roar of Reclamation, Rocket Launcher,
+Rohgahh of Kher Keep, Rolling Stones, Rubinia Soulsinger, Savaen Elves,
+Scarab of the Unseen, Scarwood Bandits, Scourge of Fleets,
+Scrying Sheets, Seasinger, Serpent Generator, Sheltered Valley,
+Shifting Sky, Shrieking Specter, Silklash Spider, Skyward Eye Prophets,
+Slate Street Ruffian, Sleeper Agent, Slumbering Tora, Snow Devil,
+Snow Fortress, Soldevi Heretic, Spell Crumple, Spitting Slug, Spore Cloud,
+Starfall, Stasis Cocoon, Steamflogger Boss, Strategic Planning, Subdue,
+Sudden Spoiling, Sultai Soothsayer, Surge of Zeal, Surrakar Spellblade,
+Tainted Æther, That Which Was Taken, Thirst for Knowledge,
+Thought Devourer, Thought Eater, Thought Nibbler, Thundercloud Shaman,
+Tolarian Winds, Tower Geist, Transluminant, Tresserhorn Skyknight,
+Trusted Advisor, Vampire Lacerator, Vedalken Shackles, Volrath the Fallen,
+Voodoo Doll, Warped Devotion, Willow Satyr, Wojek Apothecary,
+Wojek Embermage, Wojek Siren, Wrench Mind, Yukora, the Prisoner
 
 Release 1.62 (May 31, 2015)
 ============
