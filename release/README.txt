@@ -60,6 +60,8 @@ Thanks to
   http://mtgjson.com for card script data
   http://mtgimage.com for card images
   http://game-icons.net for UI icons
+  TinySound (https://github.com/finnkuusisto/TinySound)
+  http://soundbible.com for sound effects.
   everyone on the CCGHQ forum, http://slightlymagic.net/forum/
 
 Thank you for your support and have fun!
@@ -76,28 +78,18 @@ ShawnieBoy
     
     Add first pass of Snow Mana impementation see #367
     
-    Update default deck size in random deck generator based on deck editor mode and size of current deck.
-    
-    Usability and style updates to Deck Editor :-
-    
-    1. replace ugly tabs with more minimal style consistent with rest of UI.
-    2. abbreviated deck is now always shown for immediate feedback when adding/removing cards.
-    3. view action icons shown on vertical action bar instead of hidden by default on separate panel.
-    
-    Only display custom formats in the cube filter in CardFilterPanel.
-    
-    Audio update :-
-    
-    - Add TinySound (https://github.com/finnkuusisto/TinySound) classes for simple api.
-    - Add new deck edit wavs from http://soundbible.com.
-    - New feedback sound when adding or removing a card from deck.
-    - New bong sound for alerts and clunk sound for invalid action.
-    - New Audio tab in preferences dialog for all audio settings.
-    - Volume of UI sounds can now be adjusted.
+- Default deck size in random deck generator based on deck editor mode and size of current deck.    
+- layout and style updates to Deck Editor including persistent abbreviated deck view.
+- New Legality tab which shows deck legality status (see issue #136).
+- Only display custom formats in the cube filter.
+- New Audio tab in preferences dialog for all audio settings.
+- Volume of UI sounds can now be adjusted.
+- New feedback sound when adding or removing a card from deck.
+- New bong sound for alerts and clunk sound for invalid action.
+
     
 - fixed the following bugs:
     fix #343 : Set "allow only sensible choices" to off by default & rename?
-    Added Legality tab to deck editor which shows deck legality status (see issue #136).
     add 'Cast with AI' casting restriction
     include additional costs when using CastFreeAction, fixes issue #231
     Include colorless Mana Icons up to 20
