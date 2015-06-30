@@ -1,11 +1,10 @@
 package magic.ui.screen;
 
 import java.awt.event.ActionEvent;
-
 import javax.swing.AbstractAction;
 import javax.swing.JPanel;
+import magic.ui.UiString;
 import magic.ui.ScreenController;
-
 import magic.ui.dialog.DownloadImagesDialog;
 import magic.ui.dialog.FiremindWorkerDialog;
 import magic.ui.screen.widget.MenuPanel;
@@ -13,6 +12,17 @@ import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
 public class SettingsMenuScreen extends AbstractScreen {
+
+    // translatable strings.
+    public static final String _S1 = "Settings Menu";
+    public static final String _S2 = "Preferences";
+    public static final String _S3 = "Import";
+    public static final String _S4 = "Migrate data from an existing installation of Magarena.";
+    public static final String _S5 = "Download card images";
+    public static final String _S6 = "Run Firemind Worker";
+    public static final String _S7 = "Toggle full-screen";
+    public static final String _S8 = "Shortcut key: F11";
+    public static final String _S9 = "Close menu";
 
     private static DownloadImagesDialog downloadDialog;
     private static FiremindWorkerDialog firemindWorkerDialog;
@@ -27,23 +37,23 @@ public class SettingsMenuScreen extends AbstractScreen {
         content.setOpaque(false);
         content.setLayout(new MigLayout("insets 0, gap 0, center, center"));
 
-        final MenuPanel menu = new MenuPanel("Settings Menu");
+        final MenuPanel menu = new MenuPanel(UiString.get(_S1));
 
-        menu.addMenuItem("Preferences", new AbstractAction() {
+        menu.addMenuItem(UiString.get(_S2), new AbstractAction() {
             @Override
             public void actionPerformed(final ActionEvent e) {
                 ScreenController.showPreferencesDialog();
             }
         });
 
-        menu.addMenuItem("Import", new AbstractAction() {
+        menu.addMenuItem(UiString.get(_S3), new AbstractAction() {
             @Override
             public void actionPerformed(final ActionEvent e) {
                 ScreenController.showImportDialog();
             }
-        }, "Migrate data from an existing installation of Magarena.");
+        }, UiString.get(_S4));
 
-        menu.addMenuItem("Download card images", new AbstractAction() {
+        menu.addMenuItem(UiString.get(_S5), new AbstractAction() {
             @Override
             public void actionPerformed(final ActionEvent e) {
                 if (downloadDialog == null || !downloadDialog.isDisplayable()) {
@@ -54,7 +64,7 @@ public class SettingsMenuScreen extends AbstractScreen {
             }
         });
         
-        menu.addMenuItem("Run Firemind Worker", new AbstractAction() {
+        menu.addMenuItem(UiString.get(_S6), new AbstractAction() {
             @Override
             public void actionPerformed(final ActionEvent e) {
                 if (firemindWorkerDialog == null || !firemindWorkerDialog.isDisplayable()) {
@@ -65,14 +75,15 @@ public class SettingsMenuScreen extends AbstractScreen {
             }
         });
         
-        menu.addMenuItem("Toggle full-screen", new AbstractAction() {
+        menu.addMenuItem(UiString.get(_S7), new AbstractAction() {
             @Override
             public void actionPerformed(final ActionEvent e) {
                 getFrame().toggleFullScreenMode();
             }
-        }, "Shortcut key: F11");
+        }, UiString.get(_S8));
+
         menu.addBlankItem();
-        menu.addMenuItem("Close menu", new AbstractAction() {
+        menu.addMenuItem(UiString.get(_S9), new AbstractAction() {
             @Override
             public void actionPerformed(final ActionEvent e) {
                 ScreenController.closeActiveScreen(false);
@@ -85,9 +96,6 @@ public class SettingsMenuScreen extends AbstractScreen {
 
     }
 
-    /* (non-Javadoc)
-     * @see magic.ui.MagScreen#isScreenReadyToClose(magic.ui.MagScreen)
-     */
     @Override
     public boolean isScreenReadyToClose(final AbstractScreen nextScreen) {
         return true;
