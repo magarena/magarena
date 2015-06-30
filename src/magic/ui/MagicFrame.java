@@ -20,7 +20,6 @@ import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.KeyStroke;
-import javax.swing.SwingUtilities;
 import javax.swing.ToolTipManager;
 import magic.data.CardDefinitions;
 import magic.data.DuelConfig;
@@ -357,13 +356,8 @@ public class MagicFrame extends JFrame implements IImageDragDropListener {
     public void refreshUI() {
         config.setIsMissingFiles(false);
         CardDefinitions.checkForMissingFiles();
-        SwingUtilities.invokeLater(new Runnable() {
-            @Override
-            public void run() {
-                ThemeFactory.getInstance().loadThemes();
-                refreshLookAndFeel();
-            }
-        });
+        ThemeFactory.getInstance().loadThemes();
+        refreshLookAndFeel();
     }
 
 }
