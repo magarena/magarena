@@ -169,10 +169,15 @@ class LanguagePanel extends JPanel {
         final String lang = (String) languageCombo.getSelectedItem();
         final File langFile = MagicFileSystem.getDataPath(MagicFileSystem.DataPath.TRANSLATIONS).resolve(lang + ".txt").toFile();
         if (langFile.exists()) {
-            if (JOptionPane.showConfirmDialog(null,
+            if (JOptionPane.showOptionDialog(
+                    ScreenController.getMainFrame(),
                     UiString.get(_S2, lang),
                     UiString.get(_S3),
-                    JOptionPane.YES_NO_OPTION) == JOptionPane.YES_OPTION) {
+                    JOptionPane.YES_NO_OPTION,
+                    JOptionPane.QUESTION_MESSAGE,
+                    null,
+                    new String[] {"Yes", "No"}, "No"
+            ) == JOptionPane.YES_OPTION) {
                 langFile.delete();
                 refreshLanguageCombo();
             }
