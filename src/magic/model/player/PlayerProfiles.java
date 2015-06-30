@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.nio.file.DirectoryStream;
 import java.nio.file.DirectoryStream.Filter;
 import java.nio.file.Files;
+import java.nio.file.NoSuchFileException;
 import java.nio.file.Path;
 import java.nio.file.StandardCopyOption;
 import java.util.ArrayList;
@@ -114,8 +115,10 @@ public final class PlayerProfiles {
         final Path targetPath = profile.getProfilePath().resolve("player.avatar");
         try {
             Files.copy(avatarPath, targetPath, StandardCopyOption.REPLACE_EXISTING);
-        } catch (IOException e) {
-            throw new RuntimeException(e);
+        } catch (NoSuchFileException ex) {
+            System.err.println(ex);
+        } catch (IOException ex) {
+            throw new RuntimeException(ex);
         }
     }
 
