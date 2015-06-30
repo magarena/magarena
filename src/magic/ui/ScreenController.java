@@ -4,6 +4,7 @@ import magic.ui.utility.MagicStyle;
 import java.util.Stack;
 import javax.swing.JComponent;
 import javax.swing.JOptionPane;
+import javax.swing.SwingUtilities;
 import magic.data.GeneralConfig;
 import magic.model.IUIGameController;
 import magic.model.MagicCardDefinition;
@@ -43,6 +44,7 @@ import magic.ui.screen.SelectHumanPlayerScreen;
 import magic.ui.screen.SettingsMenuScreen;
 import magic.ui.screen.interfaces.IAvatarImageConsumer;
 import magic.ui.screen.interfaces.IDeckConsumer;
+import magic.utility.MagicSystem;
 
 public final class ScreenController {
 
@@ -177,7 +179,24 @@ public final class ScreenController {
     }
 
     public static void showPreferencesDialog() {
-        new PreferencesDialog(getMainFrame());
+        final PreferencesDialog dialog = new PreferencesDialog(getMainFrame());
+        if (dialog.isRestartRequired()) {
+            SwingUtilities.invokeLater(new Runnable() {
+                @Override
+                public void run() {
+                    if (confirmRestart()) {
+                        MagicSystem.restart(null);
+                    }
+                }
+            });
+        }
+    }
+
+    private static boolean confirmRestart() {
+        if (JOptionPane.showConfirmDialog(mainFrame, "This will require a restart to take full effect. Restart now?") == JOptionPane.YES_OPTION) {
+            return true;
+        }
+        return false;
     }
 
     private static void closeActiveScreen() {

@@ -73,7 +73,9 @@ public final class MagicFileSystem {
         PLAYERS("players"),
         AVATARS("avatars"),
         FIREMIND("firemind"),
-        SAVED_GAMES("saved_games");
+        SAVED_GAMES("saved_games"),
+        TRANSLATIONS("translations")
+        ;
 
         private final Path directoryPath;
 

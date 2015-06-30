@@ -1,5 +1,6 @@
 package magic.ui.prefs;
 
+import java.awt.Cursor;
 import java.awt.Dimension;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
@@ -9,6 +10,7 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.awt.event.WindowEvent;
 import java.awt.event.WindowListener;
+import java.io.FileNotFoundException;
 import java.net.InetSocketAddress;
 import java.net.Proxy;
 import java.text.ParseException;
@@ -44,6 +46,7 @@ import magic.ui.CardImagesProvider;
 import magic.ui.MagicFrame;
 import magic.ui.MagicSound;
 import magic.ui.ScreenController;
+import magic.ui.UiString;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.DirectoryChooser;
@@ -103,9 +106,11 @@ public class PreferencesDialog
     private JCheckBox hideAIPromptCheckBox;
     private ColorButton rollOverColorButton;
     private JSlider uiVolumeSlider;
+    private final LanguagePanel langPanel = new LanguagePanel();
 
     private final JLabel hintLabel = new JLabel();
     private boolean isProxyUpdated = false;
+    private boolean isRestartRequired = false;
 
     public PreferencesDialog(final MagicFrame frame) {
 
@@ -341,51 +346,76 @@ public class PreferencesDialog
 
     }
 
+    private void saveSettings() {
+        config.setTheme(themeComboBox.getItemAt(themeComboBox.getSelectedIndex()));
+        config.setHighlight(highlightComboBox.getItemAt(highlightComboBox.getSelectedIndex()));
+        config.setSound(soundCheckBox.isSelected());
+        config.setTouchscreen(touchscreenCheckBox.isSelected());
+        config.setHighQuality(highQualityCheckBox.isSelected());
+        config.setSkipSingle(skipSingleCheckBox.isSelected());
+        config.setAlwaysPass(alwaysPassCheckBox.isSelected());
+        config.setSmartTarget(smartTargetCheckBox.isSelected());
+        config.setMouseWheelPopup(mouseWheelPopupCheckBox.isSelected());
+        config.setPopupDelay(popupDelaySlider.getValue());
+        config.setMessageDelay(messageDelaySlider.getValue());
+        config.setPreviewCardOnSelect(previewCardOnSelectCheckBox.isSelected());
+        config.setLogMessagesVisible(gameLogCheckBox.isSelected());
+        config.setMulliganScreenActive(mulliganScreenCheckbox.isSelected());
+        config.setCustomBackground(customBackgroundCheckBox.isSelected());
+        config.setShowMissingCardData(missingCardDataCheckbox.isSelected());
+        config.setCardImagesPath(imagesFolderChooser.getPath());
+        config.setAnimateGameplay(animateGameplayCheckBox.isSelected());
+        config.setProxy(getNewProxy());
+        config.setNewTurnAlertDuration((int) newTurnAlertSpinner.getValue());
+        config.setLandPreviewDuration((int) landAnimationSpinner.getValue());
+        config.setNonLandPreviewDuration((int) nonLandAnimationSpinner.getValue());
+        config.setIsSplitViewDeckEditor(splitViewDeckEditorCheckBox.isSelected());
+        config.setIsCardPopupScaledToScreen(popupScaleContextCheckbox.isSelected());
+        config.setCardPopupScale(popupScaleSlider.getValue() / 100d);
+        config.setIsUiSound(uiSoundCheckBox.isSelected());
+        config.setIsGamePausedOnPopup(pauseGamePopupCheckBox.isSelected());
+        config.setHideAiActionPrompt(hideAIPromptCheckBox.isSelected());
+        config.setRolloverColor(rollOverColorButton.getColor());
+        config.setUiSoundVolume(uiVolumeSlider.getValue());
+        config.setTranslation(langPanel.getSelectedLanguage());
+        config.save();
+    }
+
+    private void doOkButtonAction() {
+
+        final boolean isNewTranslation = !config.getTranslation().equals(langPanel.getSelectedLanguage());
+
+        saveSettings();
+
+        if (isNewTranslation) {
+            try {
+                UiString.loadTranslationFile();
+                isRestartRequired = true;
+            } catch (FileNotFoundException ex) {
+                throw new RuntimeException(ex);
+            }
+        }
+
+        CachedImagesProvider.getInstance().clearCache();
+        frame.refreshUI();
+
+    }
+
     @Override
     public void actionPerformed(final ActionEvent event) {
-        final Object source=event.getSource();
-        if (source==okButton) {
+        setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+        final Object source = event.getSource();
+        if (source == okButton) {
             if (validateSettings()) {
-                config.setTheme(themeComboBox.getItemAt(themeComboBox.getSelectedIndex()));
-                config.setHighlight(highlightComboBox.getItemAt(highlightComboBox.getSelectedIndex()));
-                config.setSound(soundCheckBox.isSelected());
-                config.setTouchscreen(touchscreenCheckBox.isSelected());
-                config.setHighQuality(highQualityCheckBox.isSelected());
-                config.setSkipSingle(skipSingleCheckBox.isSelected());
-                config.setAlwaysPass(alwaysPassCheckBox.isSelected());
-                config.setSmartTarget(smartTargetCheckBox.isSelected());
-                config.setMouseWheelPopup(mouseWheelPopupCheckBox.isSelected());
-                config.setPopupDelay(popupDelaySlider.getValue());
-                config.setMessageDelay(messageDelaySlider.getValue());
-                config.setPreviewCardOnSelect(previewCardOnSelectCheckBox.isSelected());
-                config.setLogMessagesVisible(gameLogCheckBox.isSelected());
-                config.setMulliganScreenActive(mulliganScreenCheckbox.isSelected());
-                config.setCustomBackground(customBackgroundCheckBox.isSelected());
-                config.setShowMissingCardData(missingCardDataCheckbox.isSelected());
-                config.setCardImagesPath(imagesFolderChooser.getPath());
-                config.setAnimateGameplay(animateGameplayCheckBox.isSelected());
-                config.setProxy(getNewProxy());
-                config.setNewTurnAlertDuration((int)newTurnAlertSpinner.getValue());
-                config.setLandPreviewDuration((int)landAnimationSpinner.getValue());
-                config.setNonLandPreviewDuration((int)nonLandAnimationSpinner.getValue());
-                config.setIsSplitViewDeckEditor(splitViewDeckEditorCheckBox.isSelected());
-                config.setIsCardPopupScaledToScreen(popupScaleContextCheckbox.isSelected());
-                config.setCardPopupScale(popupScaleSlider.getValue() / 100d);
-                config.setIsUiSound(uiSoundCheckBox.isSelected());
-                config.setIsGamePausedOnPopup(pauseGamePopupCheckBox.isSelected());
-                config.setHideAiActionPrompt(hideAIPromptCheckBox.isSelected());
-                config.setRolloverColor(rollOverColorButton.getColor());
-                config.setUiSoundVolume(uiVolumeSlider.getValue());
-                config.save();
-                CachedImagesProvider.getInstance().clearCache();
-                frame.refreshUI();
+                doOkButtonAction();
                 dispose();
             }
-        } else if (source==cancelButton) {
+        } else if (source == cancelButton) {
             dispose();
-        } else if (source==proxyComboBox) {
+        } else if (source == proxyComboBox) {
             updateProxy();
         }
+        setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
     }
 
     private boolean validateSettings() {
@@ -550,6 +580,10 @@ public class PreferencesDialog
 
     private JPanel getCardExplorerEditorSettingsPanel() {
 
+        langPanel.setToolTipText("Restart required. Only applies to the general UI, it does not affect card data. Right click to open the translations folder in file explorer (useful if New or Edit fail to open file in default text editor).");
+        langPanel.setFocusable(false);
+        langPanel.addMouseListener(this);
+
       splitViewDeckEditorCheckBox = new JCheckBox("Deck Editor split view.", config.isSplitViewDeckEditor());
       splitViewDeckEditorCheckBox.setToolTipText("Use the old style split view in the Deck Editor instead of the new tabbed view. This option is provided for convenience, any new features will only be added to the tabbed view.");
       splitViewDeckEditorCheckBox.setFocusable(false);
@@ -567,6 +601,8 @@ public class PreferencesDialog
 
       // Layout UI components.
       final JPanel panel = new JPanel(new MigLayout("flowy, insets 0"));
+      panel.add(getCaptionLabel("User Interface"));
+      panel.add(langPanel, "w 100%");
       panel.add(getCaptionLabel("Card Explorer & Deck Editor"));
       panel.add(splitViewDeckEditorCheckBox);
       panel.add(previewCardOnSelectCheckBox);
@@ -676,6 +712,8 @@ public class PreferencesDialog
         return panel;
     }
 
-
+    public boolean isRestartRequired() {
+        return isRestartRequired;
+    }
 
 }

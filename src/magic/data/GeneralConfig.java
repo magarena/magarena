@@ -72,6 +72,7 @@ public class GeneralConfig {
     private static final String HIDE_AI_ACTION_PROMPT ="hideAiActionPrompt";
     private static final String ROLLOVER_COLOR ="rolloverColor";
     private static final String UI_SOUND_VOLUME = "uiSoundVolume";
+    private static final String TRANSLATION = "translation";
 
     private static final int DEFAULT_LEFT=-1;
     private static final int DEFAULT_TOP=0;
@@ -113,6 +114,7 @@ public class GeneralConfig {
     private static final boolean DEFAULT_HIDE_AI_ACTION_PROMPT = false;
     private static final int DEFAULT_ROLLOVER_COLOR = Color.YELLOW.getRGB();
     private static final int DEFAULT_SOUND_VOLUME = 50;
+    private static final String DEFAULT_TRANSLATION = "";
 
     private int left=DEFAULT_LEFT;
     private int top=DEFAULT_TOP;
@@ -165,6 +167,7 @@ public class GeneralConfig {
     private boolean hideAiActionPrompt = DEFAULT_HIDE_AI_ACTION_PROMPT;
     private Color rolloverColor = new Color(DEFAULT_ROLLOVER_COLOR);
     private int uiSoundVolume = DEFAULT_SOUND_VOLUME;
+    private String translation = DEFAULT_TRANSLATION;
 
     private GeneralConfig() { }
 
@@ -601,6 +604,13 @@ public class GeneralConfig {
         uiSoundVolume = aInt;
     }
 
+    public String getTranslation() {
+        return translation;
+    }
+    public void setTranslation(final String aString) {
+        translation = aString;
+    }
+
     private void load(final Properties properties) {
         left=Integer.parseInt(properties.getProperty(LEFT,""+DEFAULT_LEFT));
         top=Integer.parseInt(properties.getProperty(TOP,""+DEFAULT_TOP));
@@ -650,6 +660,7 @@ public class GeneralConfig {
         hideAiActionPrompt = Boolean.parseBoolean(properties.getProperty(HIDE_AI_ACTION_PROMPT, "" + DEFAULT_HIDE_AI_ACTION_PROMPT));
         rolloverColor = new Color(Integer.parseInt(properties.getProperty(ROLLOVER_COLOR, "" + DEFAULT_ROLLOVER_COLOR)));
         uiSoundVolume = Integer.parseInt(properties.getProperty(UI_SOUND_VOLUME, "" + DEFAULT_SOUND_VOLUME));
+        translation = properties.getProperty(TRANSLATION, DEFAULT_TRANSLATION);
     }
 
     public void load() {
@@ -703,6 +714,7 @@ public class GeneralConfig {
         properties.setProperty(HIDE_AI_ACTION_PROMPT, String.valueOf(hideAiActionPrompt));
         properties.setProperty(ROLLOVER_COLOR, String.valueOf(rolloverColor.getRGB()));
         properties.setProperty(UI_SOUND_VOLUME, String.valueOf(uiSoundVolume));
+        properties.setProperty(TRANSLATION, translation);
     }
 
     public void save() {
