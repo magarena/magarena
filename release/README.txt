@@ -60,7 +60,6 @@ Thanks to
   http://mtgjson.com for card script data
   http://mtgimage.com for card images
   http://game-icons.net for UI icons
-  TinySound (https://github.com/finnkuusisto/TinySound)
   http://soundbible.com for sound effects.
   everyone on the CCGHQ forum, http://slightlymagic.net/forum/
 
@@ -69,44 +68,40 @@ Thank you for your support and have fun!
 
 
 
-Release 1.63 (June 28, 2015)
+Release 1.63 (June 30, 2015)
 ============
 lodici
 melvin
 PalladiaMors
 ShawnieBoy
     
-    Add first pass of Snow Mana impementation see #367
-    
-- Default deck size in random deck generator based on deck editor mode and size of current deck.    
-- layout and style updates to Deck Editor including persistent abbreviated deck view.
-- New Legality tab which shows deck legality status (see issue #136).
-- Only display custom formats in the cube filter.
-- New Audio tab in preferences dialog for all audio settings.
-- Volume of UI sounds can now be adjusted.
-- New feedback sound when adding or removing a card from deck.
-- New bong sound for alerts and clunk sound for invalid action.
+- support costs with the snow mana symbol {S}
 
+- layout and style updates to Deck Editor including persistent abbreviated deck view
+
+- add a Legality tab in Deck editor to show deck legality status
+
+- add an Audio tab in Preferences dialog for all audio settings, volume of UI sounds can now be adjusted
+
+- new feedback sounds when adding or removing a card from deck, bong sound for alerts, and clunk sound for invalid action
+    
+- rename preference "Allow only sensible choices" to "Limit options for human player to those available to the AI", 
+  change to off by default
+    
+- improve AI's use of specific cards by adding AI specific casting restrictions
     
 - fixed the following bugs:
-    fix #343 : Set "allow only sensible choices" to off by default & rename?
-    add 'Cast with AI' casting restriction
-    include additional costs when using CastFreeAction, fixes issue #231
-    Include colorless Mana Icons up to 20
-    render a TextComponent if textPart has no corresponding icon, fixes #383
-    wait for UI to be fully updated then accept next click, fixes #374
-    cancel skip till EOT when opponent declares attackers
-    cancel skip if any attackers are declared during declared attackers phase, fixes issue #334
-    clear skip when reached EOT, fixes issue #350
-    use the correct layer for MagicStatic, fixes issue #331
-    fix #329 : java.lang.RuntimeException: Missing default AI player profile! (after importing).
-    fix: count not set to zero after download complete. It was still including images updated via the "image_updated" property because the download date had not yet been saved to general.config.
+  * crash when mana cost exceeds {16}
+  * crash when double clicking on card in hand (issue #374)
+  * crash when importing AI player profile due to missing default profile (issue #329)
+  * additional costs not required when casting imprinted spell
+  * "skip till end of turn" not cleared at end of turn (issue #350)
+  * static ability generated from ability property applied at the wrong layer (issue #331)
+  * image count not set to zero after image download completed
+  * wrong image for Snake Basket, Mystic Compass
+  * Bogardan Phoenix did not get a death counter when it returns to the battlefield
     re-order triggers for Momir Vig fixes #328
     fix bug where event generated from MagicArtificialCondition use the condition without wrapper, fixes issue #341
-    fix image for Snake Basket
-    correct image for mystic compass
-    fix Bogardan Phoenix reanimation
-    add Cast SN with AI to Champion abilities fix #27
     perform update before calling check state, fixes issue #50
     fix Orzhov Charm bounce method (concurrent modification)
     fix timing hint for Scare Tactics
@@ -171,13 +166,13 @@ melvin
 PalladiaMors
 ShawnieBoy
 
-- Display decks containing selected card in Card Explorer, double-click deck name to view list of cards in deck
+- display decks containing selected card in Card Explorer, double-click deck name to view list of cards in deck
 
-- Display tokens in Card Explorer
+- display tokens in Card Explorer
 
-- Highlight icons in action and status bar on mouse over
+- highlight icons in action and status bar on mouse over
 
-- Add reason in log for unattaching aura/equipment
+- add reason in log for unattaching aura/equipment
 
 - added the following to the card script:
   * Allow rider effect to reference target by putting reference word between asterisks
