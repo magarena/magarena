@@ -52,6 +52,7 @@ public final class ScreenController {
     public static final String _S1 = "This will require a restart to take full effect. Restart now?";
     public static final String _S2 = "Information";
     public static final String _S3 = "Warning";
+    public static final String _S4 = "Restart Magarena?";
 
     private static MagicFrame mainFrame = null;
     private static final Stack<AbstractScreen> screens = new Stack<>();
@@ -199,7 +200,12 @@ public final class ScreenController {
     }
 
     private static boolean confirmRestart() {
-        if (JOptionPane.showConfirmDialog(mainFrame, UiString.get(_S1)) == JOptionPane.YES_OPTION) {
+        if (JOptionPane.showConfirmDialog(
+                mainFrame,
+                UiString.get(_S1),
+                UiString.get(_S4),
+                JOptionPane.YES_NO_OPTION,
+                JOptionPane.QUESTION_MESSAGE) == JOptionPane.YES_OPTION) {
             return true;
         }
         return false;
