@@ -36,7 +36,7 @@ import net.miginfocom.swing.MigLayout;
 import org.apache.commons.io.FilenameUtils;
 
 @SuppressWarnings("serial")
-class LanguagePanel extends JPanel {
+class TranslationPanel extends JPanel {
 
     // translatable strings.
     public static final String _S1 = "Edit";
@@ -58,7 +58,7 @@ class LanguagePanel extends JPanel {
     private final JButton editButton = new JButton();
     private final JButton deleteButton = new JButton();
 
-    LanguagePanel() {
+    TranslationPanel() {
 
         setupNewButton();
         setupEditButton();

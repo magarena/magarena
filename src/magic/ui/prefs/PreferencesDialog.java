@@ -185,7 +185,7 @@ public class PreferencesDialog
     private JCheckBox hideAIPromptCheckBox;
     private ColorButton rollOverColorButton;
     private JSlider uiVolumeSlider;
-    private final LanguagePanel langPanel = new LanguagePanel();
+    private final TranslationPanel langPanel = new TranslationPanel();
 
     private final JLabel hintLabel = new JLabel();
     private boolean isProxyUpdated = false;
