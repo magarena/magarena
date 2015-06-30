@@ -1,26 +1,25 @@
 package magic.utility;
 
-import magic.data.DeckGenerators;
-import magic.data.KeywordDefinitions;
-import magic.data.CardDefinitions;
-import magic.data.UnimplementedParser;
-import magic.data.GeneralConfig;
-import magic.data.MagicCustomFormat;
-import magic.model.MagicGameLog;
-import magic.utility.MagicFileSystem.DataPath;
-
+import java.io.File;
+import java.io.IOException;
+import java.lang.management.ManagementFactory;
+import java.lang.management.RuntimeMXBean;
+import java.net.URISyntaxException;
+import java.security.CodeSource;
+import java.util.List;
+import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.FutureTask;
-import java.util.concurrent.ExecutionException;
-import java.lang.management.ManagementFactory;
-import java.lang.management.RuntimeMXBean;
-import java.util.List;
-import java.io.File;
-import java.io.IOException;
-import java.net.URISyntaxException;
-import java.security.CodeSource;
 import magic.MagicMain;
+import magic.data.CardDefinitions;
+import magic.data.DeckGenerators;
+import magic.data.GeneralConfig;
+import magic.data.KeywordDefinitions;
+import magic.data.MagicCustomFormat;
+import magic.data.UnimplementedParser;
+import magic.model.MagicGameLog;
+import magic.utility.MagicFileSystem.DataPath;
 
 final public class MagicSystem {
     private MagicSystem() {}
@@ -159,6 +158,7 @@ final public class MagicSystem {
         final ExecutorService background = Executors.newSingleThreadExecutor();
         background.execute(loadCards);
         background.execute(new Runnable() {
+            @Override
             public void run() {
                 CardDefinitions.postCardDefinitions();
             }
