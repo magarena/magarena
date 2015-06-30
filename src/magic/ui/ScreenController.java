@@ -16,7 +16,7 @@ import magic.model.player.PlayerProfile;
 import magic.ui.dialog.AboutDialog;
 import magic.ui.dialog.DuelSidebarLayoutDialog;
 import magic.ui.dialog.ImportDialog;
-import magic.ui.dialog.PreferencesDialog;
+import magic.ui.prefs.PreferencesDialog;
 import magic.ui.duel.choice.MulliganChoicePanel;
 import magic.ui.screen.AbstractScreen;
 import magic.ui.screen.AvatarImagesScreen;

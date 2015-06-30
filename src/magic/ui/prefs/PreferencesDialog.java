@@ -1,4 +1,4 @@
-package magic.ui.dialog;
+package magic.ui.prefs;
 
 import java.awt.Dimension;
 import java.awt.Font;
