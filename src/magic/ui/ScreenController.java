@@ -48,6 +48,11 @@ import magic.utility.MagicSystem;
 
 public final class ScreenController {
 
+    // translatable strings.
+    public static final String _S1 = "This will require a restart to take full effect. Restart now?";
+    public static final String _S2 = "Information";
+    public static final String _S3 = "Warning";
+
     private static MagicFrame mainFrame = null;
     private static final Stack<AbstractScreen> screens = new Stack<>();
 
@@ -73,7 +78,7 @@ public final class ScreenController {
     public static void showReadMeScreen() {
         showScreen(new ReadmeScreen());
     }
-    
+
     public static void showKeywordsScreen() {
         showScreen(new KeywordsScreen());
     }
@@ -124,7 +129,7 @@ public final class ScreenController {
 
     public static void showMulliganScreen(final MulliganChoicePanel choicePanel, final MagicCardList hand) {
         if (screens.peek() instanceof MulliganScreen) {
-            final MulliganScreen screen = (MulliganScreen)screens.peek();
+            final MulliganScreen screen = (MulliganScreen) screens.peek();
             screen.dealNewHand(choicePanel, hand);
         } else {
             showScreen(new MulliganScreen(choicePanel, hand));
@@ -166,6 +171,7 @@ public final class ScreenController {
     public static void showDuelGameScreen(final MagicGame game) {
         showScreen(new DuelGameScreen(game));
     }
+
     public static void showDuelGameScreen(final MagicDuel duel) {
         showScreen(new DuelGameScreen(duel));
     }
@@ -193,7 +199,7 @@ public final class ScreenController {
     }
 
     private static boolean confirmRestart() {
-        if (JOptionPane.showConfirmDialog(mainFrame, "This will require a restart to take full effect. Restart now?") == JOptionPane.YES_OPTION) {
+        if (JOptionPane.showConfirmDialog(mainFrame, UiString.get(_S1)) == JOptionPane.YES_OPTION) {
             return true;
         }
         return false;
@@ -220,7 +226,7 @@ public final class ScreenController {
         } else {
             closeActiveScreen();
         }
-    }    
+    }
 
     private static void showScreen(final AbstractScreen screen) {
         setMainFrameScreen(screen);
@@ -247,15 +253,15 @@ public final class ScreenController {
     public static void refreshStyle() {
         for (AbstractScreen screen : screens) {
             MagicStyle.refreshComponentStyle(screen);
-        }        
+        }
     }
 
     public static void showInfoMessage(final String message) {
-        JOptionPane.showMessageDialog(getMainFrame(), message, "Information", JOptionPane.INFORMATION_MESSAGE);
+        JOptionPane.showMessageDialog(getMainFrame(), message, UiString.get(_S2), JOptionPane.INFORMATION_MESSAGE);
     }
 
     public static void showWarningMessage(final String message) {
-        JOptionPane.showMessageDialog(getMainFrame(), message, "Warning", JOptionPane.WARNING_MESSAGE);
+        JOptionPane.showMessageDialog(getMainFrame(), message, UiString.get(_S3), JOptionPane.WARNING_MESSAGE);
     }
 
     public static void showDuelSidebarDialog(final IUIGameController controller) {
