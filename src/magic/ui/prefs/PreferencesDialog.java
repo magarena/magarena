@@ -39,6 +39,7 @@ import javax.swing.event.ChangeListener;
 import javax.swing.text.NumberFormatter;
 import magic.data.GeneralConfig;
 import magic.data.MagicIcon;
+import magic.ui.UiString;
 import magic.ui.CachedImagesProvider;
 import magic.ui.IconImages;
 import magic.ui.URLUtils;
@@ -46,7 +47,6 @@ import magic.ui.CardImagesProvider;
 import magic.ui.MagicFrame;
 import magic.ui.MagicSound;
 import magic.ui.ScreenController;
-import magic.ui.UiString;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.DirectoryChooser;
@@ -59,8 +59,87 @@ import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
 public class PreferencesDialog
-    extends JDialog
-    implements ActionListener, MouseListener, WindowListener {
+        extends JDialog
+        implements ActionListener, MouseListener, WindowListener {
+
+    // translatable strings.
+    public static final String _S1 = "Scale popup to screen size";
+    public static final String _S2 = "If enabled then the popup size is scaled against the current screen size otherwise it is scaled against the maximum card size. The popup size will not exceed the screen or maximum card size, whichever is smaller. The maximum card size is (W=%d, H=%d).";
+    public static final String _S3 = "General";
+    public static final String _S4 = "Gameplay";
+    public static final String _S5 = "Look & Feel";
+    public static final String _S6 = "Audio";
+    public static final String _S7 = "Network";
+    public static final String _S8 = "Enable UI sound";
+    public static final String _S9 = "Enables or disables sound effects used by the user interface in general. For example, this affects whether a sound is played when the missing images alert is displayed.";
+    public static final String _S10 = "Enable game-play sound";
+    public static final String _S11 = "Enables or disables sound effects during a game, such as end of turn, stack resolution, combat damage and win/lose sounds.";
+    public static final String _S12 = "Proxy:";
+    public static final String _S13 = "URL:";
+    public static final String _S14 = "Port:";
+    public static final String _S15 = "[Experimental] Suppress AI action prompts";
+    public static final String _S16 = "If enabled, hides AI prompts in the user action panel. Only prompts that require you to make a decision will be shown.";
+    public static final String _S17 = "Use Mulligan screen";
+    public static final String _S18 = "Show game log messages.";
+    public static final String _S19 = "Clear this option if you would prefer the game log messages to be hidden by default. You can still toggle visibility during a game by clicking on the log titlebar.";
+    public static final String _S20 = "Double-click to cast or activate ability (for touchscreen)";
+    public static final String _S21 = "Automatically pass priority";
+    public static final String _S22 = "When the only option is to pass don't prompt player, just pass immediately.";
+    public static final String _S23 = "Always pass during draw and begin of combat step";
+    public static final String _S24 = "Limit options for human player to those available to the AI";
+    public static final String _S25 = "Positive effects, such as pump and untap, can only be applied to your own permanents. Negative effects, such as destroy and exile, can only be applied to opponent's permanents.";
+    public static final String _S26 = "Message";
+    public static final String _S27 = "The duration in milliseconds (1000 = 1 second) that the game pauses when an item is added to the stack. This has no effect unless the 'Automatically pass priority' option is enabled.";
+    public static final String _S28 = "Popup card image using mouse wheel.";
+    public static final String _S29 = "Manually display the card image popup by moving the mouse wheel forwards. Overrides the Auto-Popup delay.";
+    public static final String _S30 = "Popup Delay";
+    public static final String _S31 = "Automatically displays the card popup image after the specified number of milliseconds that the mouse cursor hovers over a card.";
+    public static final String _S32 = "Popup Scale";
+    public static final String _S33 = "Sets the size of the card popup image as a percentage of the screen size or maximum card size based on the \"Scale popup to screen size\" setting.";
+    public static final String _S34 = "Pause game on popup.";
+    public static final String _S35 = "Pauses the game while the popup is open.";
+    public static final String _S36 = "The path for the images directory is invalid!";
+    public static final String _S37 = "Proxy settings are invalid!";
+    public static final String _S38 = "One or more spinner values are invalid - %s";
+    public static final String _S39 = "Cancel";
+    public static final String _S40 = "Save";
+    public static final String _S41 = "Highlight";
+    public static final String _S42 = "none";
+    public static final String _S43 = "overlay";
+    public static final String _S44 = "border";
+    public static final String _S45 = "theme";
+    public static final String _S46 = "Determines the style in which cards are highlighted during a game.";
+    public static final String _S47 = "Overrides the default theme background with a custom image which is set by dragging an image file onto the Magarena window.";
+    public static final String _S48 = "Enable this option if you want to view card images at the optimum size for larger screens.";
+    public static final String _S49 = "Custom background";
+    public static final String _S50 = "Large card images";
+    public static final String _S51 = "Roll-over color";
+    public static final String _S52 = "Theme";
+    public static final String _S53 = "Additional themes can be downloaded from the Magarena forum using the link below.";
+    public static final String _S54 = "more themes online...";
+    public static final String _S56 = "Restart required. Only applies to the general UI, it does not affect card data. Right click to open the translations folder in file explorer (useful if New or Edit fail to open file in default text editor).";
+    public static final String _S57 = "Deck Editor split view.";
+    public static final String _S58 = "Use the old style split view in the Deck Editor instead of the new tabbed view. This option is provided for convenience, any new features will only be added to the tabbed view.";
+    public static final String _S59 = "Preview card on select only.";
+    public static final String _S60 = "By default, as you move the mouse cursor over a card entry it will display the image. If you find this a bit too sensitive then this setting will only change the image when the card entry is selected.";
+    public static final String _S61 = "Show missing card data.";
+    public static final String _S62 = "If set then the Card Explorer will display extra data for each missing card otherwise it will only show the card name. This setting can affect the time it takes the Card Explorer screen to open the first time it is accessed.";
+    public static final String _S63 = "User Interface";
+    public static final String _S64 = "Card Explorer & Deck Editor";
+    public static final String _S65 = "Location of the \"cards\" and \"tokens\" directories which contain downloaded card and token images respectively. Right click to open in file explorer.";
+    public static final String _S66 = "Card Images Directory";
+    public static final String _S68 = "Images";
+    public static final String _S69 = "Visual Cues";
+    public static final String _S70 = "Play animations";
+    public static final String _S71 = "Turn off animations to speed up gameplay but it will make it harder to follow the action. Left-click, Spacebar or Enter cancels the card preview animation.";
+    public static final String _S72 = "Display new Turn announcement for";
+    public static final String _S73 = "msecs";
+    public static final String _S74 = "Pauses the game for the specified duration at the start of each turn. Set to zero to disable (1000 millisecs = 1 second).";
+    public static final String _S75 = "Preview land card for";
+    public static final String _S76 = "When the AI plays a land card, this setting determines how long it should be displayed at full size (1000 millisecs = 1 second).";
+    public static final String _S77 = "Preview non-land card for";
+    public static final String _S78 = "When the AI plays a non-land card, this setting determines how long it should be displayed at full size (1000 millisecs = 1 second).";
+    public static final String _S79 = "Preferences";
 
     private final static GeneralConfig config = GeneralConfig.getInstance();
 
@@ -114,16 +193,16 @@ public class PreferencesDialog
 
     public PreferencesDialog(final MagicFrame frame) {
 
-        super(frame,true);
-        this.setTitle("Preferences");
-        this.setSize(440,500);
+        super(frame, true);
+        this.setTitle(UiString.get(_S79));
+        this.setSize(440, 500);
         this.setLocationRelativeTo(frame);
         this.setResizable(false);
         this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setUndecorated(true);
-        ((JComponent)getContentPane()).setBorder(BorderFactory.createMatteBorder(0, 8, 8, 8, MagicStyle.getTheme().getColor(Theme.COLOR_TITLE_BACKGROUND)));
+        ((JComponent) getContentPane()).setBorder(BorderFactory.createMatteBorder(0, 8, 8, 8, MagicStyle.getTheme().getColor(Theme.COLOR_TITLE_BACKGROUND)));
 
-        this.frame=frame;
+        this.frame = frame;
 
         hintLabel.setVerticalAlignment(SwingConstants.TOP);
         hintLabel.setFont(new Font("SansSerif", Font.ITALIC, 12));
@@ -161,15 +240,15 @@ public class PreferencesDialog
 
     private JTabbedPane getTabbedSettingsPane() {
         final JTabbedPane tabbedPane = new JTabbedPane();
-        tabbedPane.addTab("General", getGeneralTabPanel());
-        tabbedPane.addTab("Gameplay", getGameplaySettingsTabbedPane());
-        tabbedPane.addTab("Look & Feel", getLookAndFeelSettingsPanel());
-        tabbedPane.addTab("Audio", getAudioSettingsPanel());
-        tabbedPane.addTab("Network", getNetworkSettingsPanel());
+        tabbedPane.addTab(UiString.get(_S3), getGeneralTabPanel());
+        tabbedPane.addTab(UiString.get(_S4), getGameplaySettingsTabbedPane());
+        tabbedPane.addTab(UiString.get(_S5), getLookAndFeelSettingsPanel());
+        tabbedPane.addTab(UiString.get(_S6), getAudioSettingsPanel());
+        tabbedPane.addTab(UiString.get(_S7), getNetworkSettingsPanel());
         return tabbedPane;
     }
 
-     private JPanel getAudioSettingsPanel() {
+    private JPanel getAudioSettingsPanel() {
 
         uiVolumeSlider = new JSlider(0, 100, config.getUiSoundVolume());
         uiVolumeSlider.setEnabled(config.isUiSound());
@@ -182,8 +261,8 @@ public class PreferencesDialog
             }
         });
 
-        uiSoundCheckBox = new JCheckBox("Enable UI sound", config.isUiSound());
-        uiSoundCheckBox.setToolTipText("Enables or disables sound effects used by the user interface in general. For example, this affects whether a sound is played when the missing images alert is displayed.");
+        uiSoundCheckBox = new JCheckBox(UiString.get(_S8), config.isUiSound());
+        uiSoundCheckBox.setToolTipText(UiString.get(_S9));
         uiSoundCheckBox.setFocusable(false);
         uiSoundCheckBox.addMouseListener(this);
         uiSoundCheckBox.addChangeListener(new ChangeListener() {
@@ -193,8 +272,8 @@ public class PreferencesDialog
             }
         });
 
-        soundCheckBox = new JCheckBox("Enable game-play sound",config.isSound());
-        soundCheckBox.setToolTipText("Enables or disables sound effects during a game, such as end of turn, stack resolution, combat damage and win/lose sounds.");
+        soundCheckBox = new JCheckBox(UiString.get(_S10), config.isSound());
+        soundCheckBox.setToolTipText(UiString.get(_S11));
         soundCheckBox.setFocusable(false);
         soundCheckBox.addMouseListener(this);
 
@@ -203,9 +282,9 @@ public class PreferencesDialog
         panel.add(uiVolumeSlider, " w 100%");
         panel.add(soundCheckBox);
         return panel;
-     }
+    }
 
-     private JPanel getNetworkSettingsPanel() {
+    private JPanel getNetworkSettingsPanel() {
         final Proxy proxy = config.getProxy();
         //
         proxyComboBox.setModel(new DefaultComboBoxModel<>(Proxy.Type.values()));
@@ -216,28 +295,28 @@ public class PreferencesDialog
         // allow only numeric characters to be recognised.
         proxyPortSpinner.setEditor(new JSpinner.NumberEditor(proxyPortSpinner, "#"));
         final JFormattedTextField txt1 = ((JSpinner.NumberEditor) proxyPortSpinner.getEditor()).getTextField();
-        ((NumberFormatter)txt1.getFormatter()).setAllowsInvalid(false);
+        ((NumberFormatter) txt1.getFormatter()).setAllowsInvalid(false);
         //
         if (proxy != Proxy.NO_PROXY) {
             proxyAddressTextField.setText(proxy.address().toString());
-            proxyPortSpinner.setValue(((InetSocketAddress)proxy.address()).getPort());
+            proxyPortSpinner.setValue(((InetSocketAddress) proxy.address()).getPort());
         }
         // layout components
         final JPanel panel = new JPanel(new MigLayout("flowx, wrap 2, insets 16, gapy 4"));
-        panel.add(getCaptionLabel("Proxy:"));
+        panel.add(getCaptionLabel(UiString.get(_S12)));
         panel.add(proxyComboBox, "w 140!");
-        panel.add(getCaptionLabel("URL:"));
+        panel.add(getCaptionLabel(UiString.get(_S13)));
         panel.add(proxyAddressTextField, "w 100%");
-        panel.add(getCaptionLabel("Port:"));
+        panel.add(getCaptionLabel(UiString.get(_S14)));
         panel.add(proxyPortSpinner, "w 60!");
         return panel;
-     }
+    }
 
     private Proxy getNewProxy() {
         if (proxyComboBox.getSelectedItem() == Proxy.Type.DIRECT) {
             return Proxy.NO_PROXY;
         } else {
-            final Proxy.Type proxyType = (Proxy.Type)proxyComboBox.getSelectedItem();
+            final Proxy.Type proxyType = (Proxy.Type) proxyComboBox.getSelectedItem();
             final String urlAddress = proxyAddressTextField.getText().trim();
             final String portString = proxyPortSpinner.getValue().toString();
             final int portNumber = portString.isEmpty() ? 0 : Integer.parseInt(portString);
@@ -257,40 +336,40 @@ public class PreferencesDialog
 
     private JPanel getGameplaySettingsPanel1() {
 
-        hideAIPromptCheckBox = new JCheckBox("[Experimental] Suppress AI action prompts", config.getHideAiActionPrompt());
-        hideAIPromptCheckBox.setToolTipText("If enabled, hides AI prompts in the user action panel. Only prompts that require you to make a decision will be shown.");
+        hideAIPromptCheckBox = new JCheckBox(UiString.get(_S15), config.getHideAiActionPrompt());
+        hideAIPromptCheckBox.setToolTipText(UiString.get(_S16));
         hideAIPromptCheckBox.setFocusable(false);
         hideAIPromptCheckBox.addMouseListener(this);
 
-        mulliganScreenCheckbox = new JCheckBox("Use Mulligan screen", config.getMulliganScreenActive());
+        mulliganScreenCheckbox = new JCheckBox(UiString.get(_S17), config.getMulliganScreenActive());
         mulliganScreenCheckbox.setFocusable(false);
         mulliganScreenCheckbox.addMouseListener(this);
 
-        gameLogCheckBox = new JCheckBox("Show game log messages.", config.isLogMessagesVisible());
-        gameLogCheckBox.setToolTipText("Clear this option if you would prefer the game log messages to be hidden by default. You can still toggle visibility during a game by clicking on the log titlebar.");
+        gameLogCheckBox = new JCheckBox(UiString.get(_S18), config.isLogMessagesVisible());
+        gameLogCheckBox.setToolTipText(UiString.get(_S19));
         gameLogCheckBox.setFocusable(false);
         gameLogCheckBox.addMouseListener(this);
 
-        touchscreenCheckBox = new JCheckBox("Double-click to cast or activate ability (for touchscreen)",config.isTouchscreen());
+        touchscreenCheckBox = new JCheckBox(UiString.get(_S20), config.isTouchscreen());
         touchscreenCheckBox.setFocusable(false);
         touchscreenCheckBox.addMouseListener(this);
 
-        skipSingleCheckBox = new JCheckBox("Automatically pass priority", config.getSkipSingle());
-        skipSingleCheckBox.setToolTipText("When the only option is to pass don't prompt player, just pass immediately.");
+        skipSingleCheckBox = new JCheckBox(UiString.get(_S21), config.getSkipSingle());
+        skipSingleCheckBox.setToolTipText(UiString.get(_S22));
         skipSingleCheckBox.setFocusable(false);
         skipSingleCheckBox.addMouseListener(this);
 
-        alwaysPassCheckBox = new JCheckBox("Always pass during draw and begin of combat step", config.getAlwaysPass());
+        alwaysPassCheckBox = new JCheckBox(UiString.get(_S23), config.getAlwaysPass());
         alwaysPassCheckBox.setFocusable(false);
         alwaysPassCheckBox.addMouseListener(this);
 
-        smartTargetCheckBox=new JCheckBox("Limit options for human player to those available to the AI", config.getSmartTarget());
-        smartTargetCheckBox.setToolTipText("Positive effects, such as pump and untap, can only be applied to your own permanents. Negative effects, such as destroy and exile, can only be applied to opponent's permanents.");
+        smartTargetCheckBox = new JCheckBox(UiString.get(_S24), config.getSmartTarget());
+        smartTargetCheckBox.setToolTipText(UiString.get(_S25));
         smartTargetCheckBox.setFocusable(false);
         smartTargetCheckBox.addMouseListener(this);
 
-        messageDelaySlider = new SliderPanel("Message", IconImages.getIcon(MagicIcon.DELAY), 0, 3000, 500, config.getMessageDelay());
-        messageDelaySlider.setToolTipText("The duration in milliseconds (1000 = 1 second) that the game pauses when an item is added to the stack. This has no effect unless the 'Automatically pass priority' option is enabled.");
+        messageDelaySlider = new SliderPanel(UiString.get(_S26), IconImages.getIcon(MagicIcon.DELAY), 0, 3000, 500, config.getMessageDelay());
+        messageDelaySlider.setToolTipText(UiString.get(_S27));
         messageDelaySlider.addMouseListener(this);
 
         // layout components
@@ -309,30 +388,29 @@ public class PreferencesDialog
 
     private JPanel getGameplaySettingsPanel2() {
 
-
-        mouseWheelPopupCheckBox = new JCheckBox("Popup card image using mouse wheel.", config.isMouseWheelPopup());
+        mouseWheelPopupCheckBox = new JCheckBox(UiString.get(_S28), config.isMouseWheelPopup());
         mouseWheelPopupCheckBox.setFocusable(false);
-        mouseWheelPopupCheckBox.setToolTipText("Manually display the card image popup by moving the mouse wheel forwards. Overrides the Auto-Popup delay.");
+        mouseWheelPopupCheckBox.setToolTipText(UiString.get(_S29));
         mouseWheelPopupCheckBox.addMouseListener(this);
 
-        popupDelaySlider=new SliderPanel("Popup Delay", null, 0, 2000, 50, config.getPopupDelay());
-        popupDelaySlider.setToolTipText("Automatically displays the card popup image after the specified number of milliseconds that the mouse cursor hovers over a card.");
+        popupDelaySlider = new SliderPanel(UiString.get(_S30), null, 0, 2000, 50, config.getPopupDelay());
+        popupDelaySlider.setToolTipText(UiString.get(_S31));
         popupDelaySlider.addMouseListener(this);
 
         final Dimension maxCardSize = CardImagesProvider.MAXIMUM_CARD_SIZE;
 
-        popupScaleContextCheckbox = new JCheckBox("Scale popup to screen size", config.isCardPopupScaledToScreen());
-        popupScaleContextCheckbox.setToolTipText("If enabled then the popup size is scaled against the current screen size otherwise it is scaled against the maximum card size. The popup size will not exceed the screen or maximum card size, whichever is smaller. The maximum card size is (W=" + maxCardSize.width + ", H=" + maxCardSize.height + ").");
+        popupScaleContextCheckbox = new JCheckBox(UiString.get(_S1), config.isCardPopupScaledToScreen());
+        popupScaleContextCheckbox.setToolTipText(UiString.get(_S2, maxCardSize.width, maxCardSize.height));
         popupScaleContextCheckbox.addMouseListener(this);
 
-        final int popupScale = (int)(config.getCardPopupScale() * 100);
-        popupScaleSlider = new SliderPanel("Popup Scale", null, 60, 100, 1, popupScale);
-        popupScaleSlider.setToolTipText("Sets the size of the card popup image as a percentage of the screen size or maximum card size based on the \"Scale popup to screen size\" setting.");
+        final int popupScale = (int) (config.getCardPopupScale() * 100);
+        popupScaleSlider = new SliderPanel(UiString.get(_S32), null, 60, 100, 1, popupScale);
+        popupScaleSlider.setToolTipText(UiString.get(_S33));
         popupScaleSlider.addMouseListener(this);
 
-        pauseGamePopupCheckBox = new JCheckBox("Pause game on popup.", config.isGamePausedOnPopup());
+        pauseGamePopupCheckBox = new JCheckBox(UiString.get(_S34), config.isGamePausedOnPopup());
         pauseGamePopupCheckBox.setFocusable(false);
-        pauseGamePopupCheckBox.setToolTipText("Pauses the game while the popup is open.");
+        pauseGamePopupCheckBox.setToolTipText(UiString.get(_S35));
         pauseGamePopupCheckBox.addMouseListener(this);
 
         // layout components
@@ -420,11 +498,11 @@ public class PreferencesDialog
 
     private boolean validateSettings() {
         if (!imagesFolderChooser.isValidDirectory()) {
-            ScreenController.showWarningMessage("The path for the images directory is invalid!");
+            ScreenController.showWarningMessage(UiString.get(_S36));
             return false;
         }
         if (isProxyUpdated && !isProxyValid()) {
-            ScreenController.showWarningMessage("Proxy settings are invalid!");
+            ScreenController.showWarningMessage(UiString.get(_S37));
             return false;
         }
         try {
@@ -432,7 +510,7 @@ public class PreferencesDialog
             landAnimationSpinner.commitEdit();
             nonLandAnimationSpinner.commitEdit();
         } catch (ParseException ex) {
-            ScreenController.showWarningMessage("One of more spinner values are invalid - " + ex.getMessage());
+            ScreenController.showWarningMessage(String.format(UiString.get(_S38), ex.getMessage()));
             return false;
         }
         return true;
@@ -451,13 +529,13 @@ public class PreferencesDialog
     private JPanel getActionButtonsPanel() {
         final JPanel buttonPanel = new JPanel(new MigLayout("insets 5, gapx 5, flowx"));
         // Cancel button
-        cancelButton=new JButton("Cancel");
+        cancelButton = new JButton(UiString.get(_S39));
         cancelButton.setFocusable(false);
         cancelButton.setIcon(IconImages.getIcon(MagicIcon.CANCEL));
         cancelButton.addActionListener(this);
         buttonPanel.add(cancelButton, "w 100!, alignx right, pushx");
         // Save button
-        okButton=new JButton("Save");
+        okButton = new JButton(UiString.get(_S40));
         okButton.setFocusable(false);
         okButton.setIcon(IconImages.getIcon(MagicIcon.OK));
         okButton.addActionListener(this);
@@ -466,70 +544,94 @@ public class PreferencesDialog
     }
 
     /*
-    * MouseListener overrides
-    */
+     * MouseListener overrides
+     */
     @Override
-    public void mouseClicked(MouseEvent e) {}
+    public void mouseClicked(MouseEvent e) {
+    }
+
     @Override
     public void mouseEntered(MouseEvent e) {
         if (e.getSource() instanceof JComponent) {
-            final JComponent c = (JComponent)e.getSource();
+            final JComponent c = (JComponent) e.getSource();
             String caption = "";
             if (c instanceof AbstractButton) {
-                caption = ((AbstractButton)c).getText();
+                caption = ((AbstractButton) c).getText();
             }
             hintLabel.setText("<html>" + (c.getToolTipText() == null ? caption : c.getToolTipText()) + "</html>");
         }
     }
+
     @Override
     public void mouseExited(MouseEvent e) {
         if (e.getSource() instanceof JComponent) {
             hintLabel.setText("");
         }
     }
+
     @Override
-    public void mousePressed(MouseEvent e) {}
+    public void mousePressed(MouseEvent e) {
+    }
+
     @Override
-    public void mouseReleased(MouseEvent e) {}
+    public void mouseReleased(MouseEvent e) {
+    }
 
     /*
      * WindowListener overrides
      */
     @Override
-    public void windowActivated(WindowEvent e) {}
+    public void windowActivated(WindowEvent e) {
+    }
+
     @Override
     public void windowClosed(WindowEvent e) {
         ToolTipManager.sharedInstance().setEnabled(true);
     }
+
     @Override
-    public void windowClosing(WindowEvent e) {}
+    public void windowClosing(WindowEvent e) {
+    }
+
     @Override
-    public void windowDeactivated(WindowEvent e) {}
+    public void windowDeactivated(WindowEvent e) {
+    }
+
     @Override
-    public void windowDeiconified(WindowEvent e) {}
+    public void windowDeiconified(WindowEvent e) {
+    }
+
     @Override
-    public void windowIconified(WindowEvent e) {}
+    public void windowIconified(WindowEvent e) {
+    }
+
     @Override
-    public void windowOpened(WindowEvent e) {}
+    public void windowOpened(WindowEvent e) {
+    }
 
     private JPanel getLookAndFeelSettingsPanel() {
 
         // Card highlight setting.
-        final JLabel highlightLabel = new JLabel("Highlight");
-        final String[] Highlightchoices = { "none", "overlay", "border", "theme" };
+        final JLabel highlightLabel = new JLabel(UiString.get(_S41));
+        final String[] Highlightchoices = {
+            UiString.get(_S42),
+            UiString.get(_S43),
+            UiString.get(_S44),
+            UiString.get(_S45)
+        };
         highlightComboBox = new JComboBox<>(Highlightchoices);
         highlightComboBox.setSelectedItem(config.getHighlight());
-        highlightComboBox.setToolTipText("Determines the style in which cards are highlighted during a game.");
+        highlightComboBox.setToolTipText(UiString.get(_S46));
         highlightComboBox.setFocusable(false);
         highlightComboBox.addMouseListener(this);
 
         customBackgroundCheckBox = new JCheckBox("", config.isCustomBackground());
-        customBackgroundCheckBox.setToolTipText("Overrides the default theme background with a custom image which is set by dragging an image file onto the Magarena window.");
+        customBackgroundCheckBox.setToolTipText(UiString.get(_S47));
         customBackgroundCheckBox.setFocusable(false);
         customBackgroundCheckBox.addMouseListener(this);
 
         highQualityCheckBox = new JCheckBox("", config.isHighQuality());
-        highQualityCheckBox.setToolTipText("Enable this option if you want to view card images at the optimum size for larger screens.");
+        highQualityCheckBox.setToolTipText(UiString.get(_S48));
         highQualityCheckBox.setFocusable(false);
         highQualityCheckBox.addMouseListener(this);
 
@@ -541,11 +643,11 @@ public class PreferencesDialog
         panel.add(getThemeSettingPanel(), "spanx 2, w 100%");
         panel.add(highlightLabel, "alignx right");
         panel.add(highlightComboBox, "alignx left");
-        panel.add(new JLabel("Custom background"), "alignx right");
+        panel.add(new JLabel(UiString.get(_S49)), "alignx right");
         panel.add(customBackgroundCheckBox);
-        panel.add(new JLabel("Large card images"), "alignx right");
+        panel.add(new JLabel(UiString.get(_S50)), "alignx right");
         panel.add(highQualityCheckBox);
-        panel.add(new JLabel("Roll-over color"), "alignx right");
+        panel.add(new JLabel(UiString.get(_S51)), "alignx right");
         panel.add(rollOverColorButton);
 
         return panel;
@@ -553,23 +655,22 @@ public class PreferencesDialog
 
     private JPanel getThemeSettingPanel() {
         // Theme setting
-        final JLabel themeLabel=new JLabel("Theme");
-        themeComboBox=new JComboBox<>(ThemeFactory.getInstance().getThemeNames());
-        themeComboBox.setToolTipText("Additional themes can be downloaded from the Magarena forum using the link below.");
+        final JLabel themeLabel = new JLabel(UiString.get(_S52));
+        themeComboBox = new JComboBox<>(ThemeFactory.getInstance().getThemeNames());
+        themeComboBox.setToolTipText(UiString.get(_S53));
         themeComboBox.addMouseListener(this);
         themeComboBox.setFocusable(false);
         themeComboBox.setSelectedItem(config.getTheme());
         // link to more themes online
-        final JLabel linkLabel = new LinkLabel("more themes online...", URLUtils.URL_THEMES);
+        final JLabel linkLabel = new LinkLabel(UiString.get(_S54), URLUtils.URL_THEMES);
         // layout
         final JPanel panel = new JPanel(new MigLayout("flowx, wrap 2, insets 0, gapy 0", "[140!][]"));
         panel.add(themeLabel, "alignx right");
         panel.add(themeComboBox, "alignx left");
-        panel.add(new JLabel(),"alignx right");
+        panel.add(new JLabel(), "alignx right");
         panel.add(linkLabel, "alignx left");
         return panel;
     }
-
 
     private JPanel getGeneralTabPanel() {
         final JPanel panel = new JPanel(new MigLayout("flowy, gapy 14, insets 16"));
@@ -580,46 +681,46 @@ public class PreferencesDialog
 
     private JPanel getCardExplorerEditorSettingsPanel() {
 
-        langPanel.setToolTipText("Restart required. Only applies to the general UI, it does not affect card data. Right click to open the translations folder in file explorer (useful if New or Edit fail to open file in default text editor).");
+        langPanel.setToolTipText(UiString.get(_S56));
         langPanel.setFocusable(false);
         langPanel.addMouseListener(this);
 
-      splitViewDeckEditorCheckBox = new JCheckBox("Deck Editor split view.", config.isSplitViewDeckEditor());
-      splitViewDeckEditorCheckBox.setToolTipText("Use the old style split view in the Deck Editor instead of the new tabbed view. This option is provided for convenience, any new features will only be added to the tabbed view.");
-      splitViewDeckEditorCheckBox.setFocusable(false);
-      splitViewDeckEditorCheckBox.addMouseListener(this);
+        splitViewDeckEditorCheckBox = new JCheckBox(UiString.get(_S57), config.isSplitViewDeckEditor());
+        splitViewDeckEditorCheckBox.setToolTipText(UiString.get(_S58));
+        splitViewDeckEditorCheckBox.setFocusable(false);
+        splitViewDeckEditorCheckBox.addMouseListener(this);
 
-      previewCardOnSelectCheckBox = new JCheckBox("Preview card on select only.", config.isPreviewCardOnSelect());
-      previewCardOnSelectCheckBox.setToolTipText("By default, as you move the mouse cursor over a card entry it will display the image. If you find this a bit too sensitive then this setting will only change the image when the card entry is selected.");
-      previewCardOnSelectCheckBox.setFocusable(false);
-      previewCardOnSelectCheckBox.addMouseListener(this);
+        previewCardOnSelectCheckBox = new JCheckBox(UiString.get(_S59), config.isPreviewCardOnSelect());
+        previewCardOnSelectCheckBox.setToolTipText(UiString.get(_S60));
+        previewCardOnSelectCheckBox.setFocusable(false);
+        previewCardOnSelectCheckBox.addMouseListener(this);
 
-      missingCardDataCheckbox = new JCheckBox("Show missing card data.", config.showMissingCardData());
-      missingCardDataCheckbox.setToolTipText("If set then the Card Explorer will display extra data for each missing card otherwise it will only show the card name. This setting can affect the time it takes the Card Explorer screen to open the first time it is accessed.");
-      missingCardDataCheckbox.addMouseListener(this);
-      previewCardOnSelectCheckBox.setFocusable(false);
+        missingCardDataCheckbox = new JCheckBox(UiString.get(_S61), config.showMissingCardData());
+        missingCardDataCheckbox.setToolTipText(UiString.get(_S62));
+        missingCardDataCheckbox.addMouseListener(this);
+        previewCardOnSelectCheckBox.setFocusable(false);
 
-      // Layout UI components.
-      final JPanel panel = new JPanel(new MigLayout("flowy, insets 0"));
-      panel.add(getCaptionLabel("User Interface"));
-      panel.add(langPanel, "w 100%");
-      panel.add(getCaptionLabel("Card Explorer & Deck Editor"));
-      panel.add(splitViewDeckEditorCheckBox);
-      panel.add(previewCardOnSelectCheckBox);
-      panel.add(missingCardDataCheckbox);
+        // Layout UI components.
+        final JPanel panel = new JPanel(new MigLayout("flowy, insets 0"));
+        panel.add(getCaptionLabel(UiString.get(_S63)));
+        panel.add(langPanel, "w 100%");
+        panel.add(getCaptionLabel(UiString.get(_S64)), "gaptop 6");
+        panel.add(splitViewDeckEditorCheckBox);
+        panel.add(previewCardOnSelectCheckBox);
+        panel.add(missingCardDataCheckbox);
 
-      return panel;
+        return panel;
 
-  }
+    }
 
     private JPanel getDirectorySettingsPanel() {
 
         imagesFolderChooser = new DirectoryChooser(config.getCardImagesPath());
-        imagesFolderChooser.setToolTipText("Location of the \"cards\" and \"tokens\" directories which contain downloaded card and token images respectively. Right click to open in file explorer.");
+        imagesFolderChooser.setToolTipText(UiString.get(_S65));
         imagesFolderChooser.addMouseListener(this);
 
         final JPanel panel = new JPanel(new MigLayout("flowy, insets 0"));
-        panel.add(getCaptionLabel("Card Images Directory"));
+        panel.add(getCaptionLabel(UiString.get(_S66)));
         panel.add(imagesFolderChooser, "w 100%");
 
         return panel;
@@ -634,16 +735,16 @@ public class PreferencesDialog
 
     private JTabbedPane getGameplaySettingsTabbedPane() {
         final JTabbedPane tabbedPane = new JTabbedPane();
-        tabbedPane.addTab("General", getGameplaySettingsPanel1());
-        tabbedPane.addTab("Images", getGameplaySettingsPanel2());
-        tabbedPane.addTab("Visual Cues", getVisualCueSettings());
+        tabbedPane.addTab(UiString.get(_S3), getGameplaySettingsPanel1());
+        tabbedPane.addTab(UiString.get(_S68), getGameplaySettingsPanel2());
+        tabbedPane.addTab(UiString.get(_S69), getVisualCueSettings());
         return tabbedPane;
     }
 
     private JPanel getVisualCueSettings() {
 
-        animateGameplayCheckBox = new JCheckBox("Play animations", config.getAnimateGameplay());
-        animateGameplayCheckBox.setToolTipText("Turn off animations to speed up gameplay but it will make it harder to follow the action. Left-click, Spacebar or Enter cancels the card preview animation.");
+        animateGameplayCheckBox = new JCheckBox(UiString.get(_S70), config.getAnimateGameplay());
+        animateGameplayCheckBox.setToolTipText(UiString.get(_S71));
         animateGameplayCheckBox.setFocusable(false);
         animateGameplayCheckBox.addMouseListener(this);
         animateGameplayCheckBox.addChangeListener(new ChangeListener() {
@@ -667,15 +768,15 @@ public class PreferencesDialog
     private JPanel getnewTurnAlertPanel() {
         newTurnAlertSpinner = new JSpinner(new SpinnerNumberModel(config.getNewTurnAlertDuration(), 0, 10000, 100));
         // allow only numeric characters to be recognised.
-        newTurnAlertSpinner.setEditor(new JSpinner.NumberEditor(newTurnAlertSpinner,"#"));
+        newTurnAlertSpinner.setEditor(new JSpinner.NumberEditor(newTurnAlertSpinner, "#"));
         final JFormattedTextField txt1 = ((JSpinner.NumberEditor) newTurnAlertSpinner.getEditor()).getTextField();
-        ((NumberFormatter)txt1.getFormatter()).setAllowsInvalid(false);
+        ((NumberFormatter) txt1.getFormatter()).setAllowsInvalid(false);
         //
         final JPanel panel = new JPanel(new MigLayout("insets 0"));
-        panel.add(new JLabel("Display new Turn announcement for"));
+        panel.add(new JLabel(UiString.get(_S72)));
         panel.add(newTurnAlertSpinner, "w 70!");
-        panel.add(new JLabel("msecs"));
-        panel.setToolTipText("Pauses the game for the specified duration at the start of each turn. Set to zero to disable (1000 millisecs = 1 second).");
+        panel.add(new JLabel(UiString.get(_S73)));
+        panel.setToolTipText(UiString.get(_S74));
         panel.addMouseListener(this);
         return panel;
     }
@@ -683,15 +784,15 @@ public class PreferencesDialog
     private JPanel getLandAnimationPanel() {
         landAnimationSpinner = new JSpinner(new SpinnerNumberModel(config.getLandPreviewDuration(), 500, 20000, 100));
         // allow only numeric characters to be recognised.
-        landAnimationSpinner.setEditor(new JSpinner.NumberEditor(landAnimationSpinner,"#"));
+        landAnimationSpinner.setEditor(new JSpinner.NumberEditor(landAnimationSpinner, "#"));
         final JFormattedTextField txt1 = ((JSpinner.NumberEditor) landAnimationSpinner.getEditor()).getTextField();
-        ((NumberFormatter)txt1.getFormatter()).setAllowsInvalid(false);
+        ((NumberFormatter) txt1.getFormatter()).setAllowsInvalid(false);
         //
         final JPanel panel = new JPanel(new MigLayout("insets 0"));
-        panel.add(new JLabel("Preview land card for"));
+        panel.add(new JLabel(UiString.get(_S75)));
         panel.add(landAnimationSpinner, "w 70!");
-        panel.add(new JLabel("msecs"));
-        panel.setToolTipText("When the AI plays a land card, this setting determines how long it should be displayed at full size (1000 millisecs = 1 second).");
+        panel.add(new JLabel(UiString.get(_S73)));
+        panel.setToolTipText(UiString.get(_S76));
         panel.addMouseListener(this);
         return panel;
     }
@@ -699,15 +800,15 @@ public class PreferencesDialog
     private JPanel getNonLandAnimationPanel() {
         nonLandAnimationSpinner = new JSpinner(new SpinnerNumberModel(config.getNonLandPreviewDuration(), 1000, 20000, 100));
         // allow only numeric characters to be recognised.
-        nonLandAnimationSpinner.setEditor(new JSpinner.NumberEditor(nonLandAnimationSpinner,"#"));
+        nonLandAnimationSpinner.setEditor(new JSpinner.NumberEditor(nonLandAnimationSpinner, "#"));
         final JFormattedTextField txt1 = ((JSpinner.NumberEditor) nonLandAnimationSpinner.getEditor()).getTextField();
-        ((NumberFormatter)txt1.getFormatter()).setAllowsInvalid(false);
+        ((NumberFormatter) txt1.getFormatter()).setAllowsInvalid(false);
         //
         final JPanel panel = new JPanel(new MigLayout("insets 0"));
-        panel.add(new JLabel("Preview non-land card for"));
+        panel.add(new JLabel(UiString.get(_S77)));
         panel.add(nonLandAnimationSpinner, "w 70!");
-        panel.add(new JLabel("msecs"));
-        panel.setToolTipText("When the AI plays a non-land card, this setting determines how long it should be displayed at full size (1000 millisecs = 1 second).");
+        panel.add(new JLabel(UiString.get(_S73)));
+        panel.setToolTipText(UiString.get(_S78));
         panel.addMouseListener(this);
         return panel;
     }
