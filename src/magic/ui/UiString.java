@@ -116,6 +116,10 @@ public final class UiString {
 
         final List<String> classes = new ArrayList<>();
 
+        if (jarFile == null || !jarFile.exists() || !jarFile.isFile()) {
+            throw new IOException("Unable to locate JAR file!\n\nTo manually specify the location please use the '-DjarFile' VM option.");
+        }
+
         try (JarInputStream jarStream = new JarInputStream(new FileInputStream(jarFile))) {
             packageName = packageName.replaceAll("\\.", "/");
             while (true) {
