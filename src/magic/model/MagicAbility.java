@@ -201,11 +201,6 @@ public enum MagicAbility {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(new MagicChampionTrigger(ARG.any(arg)));
             card.add(MagicLeavesReturnExileTrigger.create());
-            final String castString = "with AI only if you control a "+ ARG.any(arg);
-            for (final MagicMatchedCostEvent mce : MagicConditionParser.buildCost(castString)) {
-                card.add(MagicAdditionalCost.create(mce));
-            }
-
         }
     },
     Echo("echo( |—)" + ARG.COST,-20) {

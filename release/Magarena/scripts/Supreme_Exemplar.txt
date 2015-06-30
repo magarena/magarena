@@ -8,6 +8,7 @@ subtype=Elemental
 cost={6}{U}
 pt=10/10
 ability=Flying;\
-        Champion an Elemental
+        Champion an Elemental;\
+        Cast SN with AI only if you control an Elemental
 timing=main
 oracle=Flying\nChampion an Elemental

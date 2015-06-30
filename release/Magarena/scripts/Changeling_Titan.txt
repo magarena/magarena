@@ -8,6 +8,7 @@ subtype=Shapeshifter
 cost={4}{G}
 pt=7/7
 ability=Changeling;\
-        Champion a creature
+        Champion a creature;\
+        Cast SN with AI only if you control a creature
 timing=main
 oracle=Changeling\nChampion a creature

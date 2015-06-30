@@ -9,6 +9,7 @@ cost={4}{W}
 pt=4/4
 ability=Changeling;\
         Champion a creature;\
-        Lifelink
+        Lifelink;\
+        Cast SN with AI only if you control a creature
 timing=main
 oracle=Changeling\nChampion a creature\nLifelink

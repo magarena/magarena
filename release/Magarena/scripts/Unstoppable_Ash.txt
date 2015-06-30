@@ -8,7 +8,8 @@ subtype=Treefolk,Warrior
 cost={3}{G}
 pt=5/5
 ability=Trample;\
-        Champion a Treefolk or Warrior
+        Champion a Treefolk or Warrior;\
+        Cast SN with AI only if you control a Treefolk or Warrior
 timing=main
 requires_groovy_code
 oracle=Trample\nChampion a Treefolk or Warrior\nWhenever a creature you control becomes blocked, it gets +0/+5 until end of turn.

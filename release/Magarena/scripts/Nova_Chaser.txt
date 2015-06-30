@@ -8,6 +8,7 @@ subtype=Elemental,Warrior
 cost={3}{R}
 pt=10/2
 ability=Trample;\
-        Champion an Elemental
+        Champion an Elemental;\
+        Cast SN with AI only if you control an Elemental
 timing=main
 oracle=Trample\nChampion an Elemental

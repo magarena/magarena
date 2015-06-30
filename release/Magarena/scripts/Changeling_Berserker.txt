@@ -9,6 +9,7 @@ cost={3}{R}
 pt=5/3
 ability=Changeling;\
         Haste;\
-        Champion a creature
+        Champion a creature;\
+        Cast SN with AI only if you control a creature
 timing=main
 oracle=Changeling\nHaste\nChampion a creature
