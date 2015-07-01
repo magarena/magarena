@@ -51,6 +51,7 @@ import magic.ui.theme.PlayerAvatar;
 import magic.ui.theme.Theme;
 import magic.ui.utility.GraphicsUtils;
 import magic.ui.ImageFileIO;
+import magic.ui.UiString;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TexturedPanel;
 import magic.utility.MagicFileSystem;
@@ -59,9 +60,15 @@ import magic.ui.utility.MagicStyle;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-public class AvatarImagesScreen
-    extends AbstractScreen
-    implements IStatusBar, IActionBar {
+public class AvatarImagesScreen extends AbstractScreen implements IStatusBar, IActionBar {
+
+    // translatable strings.
+    public static final String _S1 = "Select Avatar";
+    public static final String _S2 = "Click to select this avatar image.";
+    public static final String _S3 = "Avatars";
+    public static final String _S4 = "Cancel";
+    public static final String _S5 = "Avatars online...";
+    public static final String _S6 = "Get more avatars from the Magarena forum.";
 
     private JPanel viewer;
     private MenuButton rightActionButton = null;
@@ -154,7 +161,7 @@ public class AvatarImagesScreen
         g.dispose();
         rightActionButton = new ActionBarButton(
             new ImageIcon(GraphicsUtils.scale(bi, 46, 46)),
-            "Select Avatar", "Click to select this avatar image.",
+            UiString.get(_S1), UiString.get(_S2),
             new AbstractAction() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
@@ -276,9 +283,6 @@ public class AvatarImagesScreen
             setOpaque(false);
         }
 
-        /* (non-Javadoc)
-         * @see javax.swing.ListCellRenderer#getListCellRendererComponent(javax.swing.JList, java.lang.Object, int, boolean, boolean)
-         */
         @Override
         public Component getListCellRendererComponent(
             JList<? extends AvatarImageSet> list, 
@@ -313,56 +317,38 @@ public class AvatarImagesScreen
 
     }
 
-    /* (non-Javadoc)
-     * @see magic.ui.IMagStatusBar#getScreenCaption()
-     */
     @Override
     public String getScreenCaption() {
-        return "Avatars";
+        return UiString.get(_S3);
     }
 
-    /* (non-Javadoc)
-     * @see magic.ui.IMagActionBar#getLeftAction()
-     */
     @Override
     public MenuButton getLeftAction() {
-        return MenuButton.getCloseScreenButton("Cancel");
+        return MenuButton.getCloseScreenButton(UiString.get(_S4));
     }
 
-    /* (non-Javadoc)
-     * @see magic.ui.IMagActionBar#getRightAction()
-     */
     @Override
     public MenuButton getRightAction() {
         return rightActionButton;
     }
 
-    /* (non-Javadoc)
-     * @see magic.ui.IMagActionBar#getMiddleActions()
-     */
     @Override
     public List<MenuButton> getMiddleActions() {
-        final List<MenuButton> buttons = new ArrayList<MenuButton>();
-        buttons.add(new MenuButton("Avatars online...", new AbstractAction() {
+        final List<MenuButton> buttons = new ArrayList<>();
+        buttons.add(new MenuButton(UiString.get(_S5), new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 URLUtils.openURL(URLUtils.URL_AVATARS);
             }
-        }, "Get more avatars from the Magarena forum."));
+        }, UiString.get(_S6)));
         return buttons;
     }
 
-    /* (non-Javadoc)
-     * @see magic.ui.MagScreen#canScreenClose()
-     */
     @Override
     public boolean isScreenReadyToClose(final AbstractScreen nextScreen) {
         return true;
     }
 
-    /* (non-Javadoc)
-     * @see magic.ui.interfaces.IStatusBar#getStatusPanel()
-     */
     @Override
     public JPanel getStatusPanel() {
         return null;
