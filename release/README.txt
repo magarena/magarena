@@ -99,15 +99,15 @@ ShawnieBoy
   * static ability generated from ability property applied at the wrong layer (issue #331)
   * image count not set to zero after image download completed
   * wrong image for Snake Basket, Mystic Compass
+  * sorcery speed pump spells timing hint incorrect
+  * AI casting restriction applied to player (issue #341)
+  * Rancor stays attached to Treetop Village even when no longer a creature (issue #50)
+  * Momir Vig's triggers did not synergize (issue #328)
   * Bogardan Phoenix did not get a death counter when it returns to the battlefield
-    re-order triggers for Momir Vig fixes #328
-    fix bug where event generated from MagicArtificialCondition use the condition without wrapper, fixes issue #341
-    perform update before calling check state, fixes issue #50
-    fix Orzhov Charm bounce method (concurrent modification)
-    fix timing hint for Scare Tactics
-    Set sorcery speed pump spells to fmain for AI
-    fix trigger for Grim Feast - 'creature put into opponent's graveyard' not 'creature an opponent controls dies'
-    include Artifact in Chimeric Mass becomesAction. May not be an artifact when activated
+  * Orzhov Charm's bounce implementation could cause concurrent modification exception
+  * Scare Tactics' timing hint incorrect
+  * Grim Feast's trigger checks for when a creature an opponent controls dies
+  * Chimeric Mass's ability did not give it the Artifiact card type
 
 - added the following cards:
 Adarkar Windform, Alchor's Tomb, Ana Sanctuary, Apathy,
