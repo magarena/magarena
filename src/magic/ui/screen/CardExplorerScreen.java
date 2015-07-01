@@ -18,6 +18,7 @@ import magic.data.MagicSetDefinitions;
 import magic.ui.explorer.ExplorerPanel;
 import magic.ui.MagicFrame;
 import magic.ui.ScreenOptionsOverlay;
+import magic.ui.UiString;
 import magic.ui.dialog.DownloadImagesDialog;
 import magic.ui.screen.interfaces.IActionBar;
 import magic.ui.screen.interfaces.IOptionsMenu;
@@ -34,6 +35,12 @@ public class CardExplorerScreen
     extends AbstractScreen
     implements IStatusBar, IActionBar, IOptionsMenu, IWikiPage {
 
+    // translatable strings
+    public static final String _S1 = "Card Explorer";
+    public static final String _S2 = "Close";
+    public static final String _S3 = "View Script";
+    public static final String _S4 = "View the script and groovy files for the selected card.<br>(or double-click row)";
+
     private final ExplorerPanel content;
 
     public CardExplorerScreen() {
@@ -43,12 +50,12 @@ public class CardExplorerScreen
 
     @Override
     public String getScreenCaption() {
-        return "Card Explorer";
+        return UiString.get(_S1);
     }
 
     @Override
     public MenuButton getLeftAction() {
-        return MenuButton.getCloseScreenButton("Close");
+        return MenuButton.getCloseScreenButton(UiString.get(_S2));
     }
 
     @Override
@@ -62,7 +69,7 @@ public class CardExplorerScreen
         buttons.add(
                 new ActionBarButton(
                         IconImages.getIcon(MagicIcon.EDIT_ICON),
-                        "View Script", "View the script and groovy files for the selected card.<br>(or double-click row)",
+                        UiString.get(_S3), UiString.get(_S4),
                         new AbstractAction() {
                             @Override
                             public void actionPerformed(final ActionEvent e) {
