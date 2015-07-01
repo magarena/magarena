@@ -189,7 +189,7 @@ final public class MagicSystem {
         CodeSource codeSource = MagicMain.class.getProtectionDomain().getCodeSource();
         File jarFile = new File(codeSource.getLocation().toURI());
 
-        if (jarFile.isFile() && jarFile.exists() && jarFile.getName().endsWith(".jar")) {
+        if (jarFile.isFile() && jarFile.exists()) {
             return jarFile;
         } else if (System.getProperty("jarFile") != null) {
             jarFile = new File(System.getProperty("jarFile"));
