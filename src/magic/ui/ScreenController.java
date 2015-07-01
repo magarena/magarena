@@ -1,5 +1,7 @@
 package magic.ui;
 
+import java.io.IOException;
+import java.net.URISyntaxException;
 import magic.ui.utility.MagicStyle;
 import java.util.Stack;
 import javax.swing.JComponent;
@@ -192,7 +194,13 @@ public final class ScreenController {
                 @Override
                 public void run() {
                     if (confirmRestart()) {
-                        MagicSystem.restart(null);
+                        try {
+                            MagicSystem.restart();
+                        } catch (URISyntaxException | IOException ex) {
+                            System.err.println(ex);
+                        } catch (Exception ex) {
+                            System.err.println(ex);
+                        }
                     }
                 }
             });
