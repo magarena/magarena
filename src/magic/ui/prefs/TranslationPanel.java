@@ -222,7 +222,7 @@ class TranslationPanel extends JPanel {
         popupMenu.add(deleteMenuItem);
     }
 
-    private void doAddNewLangFile() {
+    private void doAddNewTranslationFile() {
         try {
             final String text = JOptionPane.showInputDialog(null, UiString.get(_S5), UiString.get(_S6), JOptionPane.QUESTION_MESSAGE);
             if (text != null) {
@@ -260,7 +260,7 @@ class TranslationPanel extends JPanel {
             @Override
             public void actionPerformed(ActionEvent e) {
                 getParent().setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
-                doAddNewLangFile();
+                doAddNewTranslationFile();
                 getParent().setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
             }
         });
