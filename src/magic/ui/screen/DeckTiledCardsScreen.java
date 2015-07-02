@@ -27,11 +27,26 @@ import java.util.List;
 import java.util.Set;
 import magic.data.MagicIcon;
 import magic.ui.CardImagesProvider;
+import magic.ui.UiString;
 
 @SuppressWarnings("serial")
 public class DeckTiledCardsScreen
     extends AbstractScreen
     implements IStatusBar, IActionBar {
+
+    // translatable strings
+    private static final String _S1 = "Deck View";
+    private static final String _S2 = "Close";
+    private static final String _S3 = "All";
+    private static final String _S4 = "Display all cards in deck.";
+    private static final String _S5 = "Creatures";
+    private static final String _S6 = "Display only creature cards.";
+    private static final String _S7 = "Lands";
+    private static final String _S8 = "Display only land cards.";
+    private static final String _S9 = "Other Spells";
+    private static final String _S10 = "Display any other card that is not a creature or land.";
+    private static final String _S11 = "%s (%d cards, %d%%)";
+    private static final String _S12 = "%s (%d cards)";
 
     private enum CardTypeFilter {
         ALL("All cards"),
@@ -102,12 +117,12 @@ public class DeckTiledCardsScreen
     
     @Override
     public String getScreenCaption() {
-        return "Deck View";
+        return UiString.get(_S1);
     }
 
     @Override
     public MenuButton getLeftAction() {
-        return MenuButton.getCloseScreenButton("Close");
+        return MenuButton.getCloseScreenButton(UiString.get(_S2));
     }
 
     @Override
@@ -120,24 +135,24 @@ public class DeckTiledCardsScreen
         final List<MenuButton> buttons = new ArrayList<>();
         buttons.add(
                 new ActionBarButton(
-                        "All", "Display all cards in deck.",
+                        UiString.get(_S3), UiString.get(_S4),
                         new ShowCardsAction(CardTypeFilter.ALL), false));
         buttons.add(
                 new ActionBarButton(
                         IconImages.getIcon(MagicIcon.CREATURES_ICON),
-                        "Creatures", "Display only creature cards.",
+                        UiString.get(_S5), UiString.get(_S6),
                         new ShowCardsAction(CardTypeFilter.CREATURES), false)
                 );
         buttons.add(
                 new ActionBarButton(
                         IconImages.getIcon(MagicIcon.LANDS_ICON),
-                        "Lands", "Display only land cards.",
+                        UiString.get(_S7), UiString.get(_S8),
                         new ShowCardsAction(CardTypeFilter.LANDS), false)
                 );
         buttons.add(
                 new ActionBarButton(
                         IconImages.getIcon(MagicIcon.SPELLS_ICON),
-                        "Other Spells", "Display any other card that is not a creature or land.",
+                        UiString.get(_S9), UiString.get(_S10),
                         new ShowCardsAction(CardTypeFilter.OTHER), true)
                 );
         buttons.add(SampleHandActionButton.createInstance(deck, getFrame()));
@@ -178,9 +193,9 @@ public class DeckTiledCardsScreen
     private String getCardTypeCaption(final CardTypeFilter cardType, final int cardCount) {
         if (cardType != CardTypeFilter.ALL) {
             final int percentage = (int)((cardCount / (double)deck.size()) * 100);
-            return cardType + " (" + cardCount + " cards, " + percentage + "%)";
+            return UiString.get(_S11, cardType, cardCount, percentage);
         } else {
-            return cardType + " (" + cardCount + " cards)";
+            return UiString.get(_S12, cardType, cardCount);
         }
     }
 
