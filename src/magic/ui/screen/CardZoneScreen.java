@@ -21,7 +21,7 @@ public class CardZoneScreen
         implements IStatusBar, IActionBar {
 
     // translatable strings
-    public static final String _S1 = "Close";
+    private static final String _S1 = "Close";
 
     private final static Dimension cardSize = CardImagesProvider.PREFERRED_CARD_SIZE;
 

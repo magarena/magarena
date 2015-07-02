@@ -40,20 +40,20 @@ import org.apache.commons.io.FilenameUtils;
 class TranslationPanel extends JPanel {
 
     // translatable strings.
-    public static final String _S1 = "Edit";
-    public static final String _S2 = "<html>Delete the <b>%s</b> translation file?</html>";
-    public static final String _S3 = "Delete translation file";
-    public static final String _S4 = "Delete";
-    public static final String _S5 = "eg. français, español, Deutsch, etc.";
-    public static final String _S6 = "New Translation File";
-    public static final String _S7 = "A translation file with this name already exists.";
-    public static final String _S8 = "Invalid filename!";
-    public static final String _S9 = "Failed to create translation file.\n%s";
-    public static final String _S10 = "Could not open translation file.\n%s";
-    public static final String _S11 = "Could not locate JAR.\n%s";
-    public static final String _S12 = "New translation";
-    public static final String _S13 = "Could not open file in default 'txt' editor.\n%s";
-    public static final String _S14 = "File Explorer";
+    private static final String _S1 = "Edit";
+    private static final String _S2 = "<html>Delete the <b>%s</b> translation file?</html>";
+    private static final String _S3 = "Delete translation file";
+    private static final String _S4 = "Delete";
+    private static final String _S5 = "eg. français, español, Deutsch, etc.";
+    private static final String _S6 = "New Translation File";
+    private static final String _S7 = "A translation file with this name already exists.";
+    private static final String _S8 = "Invalid filename!";
+    private static final String _S9 = "Failed to create translation file.\n%s";
+    private static final String _S10 = "Could not open translation file.\n%s";
+    private static final String _S11 = "Could not locate JAR.\n%s";
+    private static final String _S12 = "New translation";
+    private static final String _S13 = "Could not open file in default 'txt' editor.\n%s";
+    private static final String _S14 = "File Explorer";
 
     private final JComboBox<String> languageCombo = new JComboBox<>();
     private final JButton menuButton = new JButton();

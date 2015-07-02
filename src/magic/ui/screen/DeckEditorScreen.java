@@ -43,26 +43,26 @@ public class DeckEditorScreen
     implements IStatusBar, IActionBar, IOptionsMenu, IWikiPage, IDeckConsumer, IDeckEditorListener {
 
     // translatable strings
-    public static final String _S1 = "Cancel";
-    public static final String _S2 = "Close";
-    public static final String _S3 = "Use this deck";
-    public static final String _S4 = "Select Deck";
-    public static final String _S5 = "Select an existing prebuilt or player deck.";
-    public static final String _S6 = "Save Deck";
-    public static final String _S7 = "Save deck to file.";
-    public static final String _S8 = "Sample Hand";
-    public static final String _S9 = "See what kind of Hand you might be dealt from this deck.";
-    public static final String _S10 = "A deck with a minimum of 7 cards is required first.";
-    public static final String _S11 = "Deck View";
-    public static final String _S12 = "Shows complete deck using tiled card images.";
-    public static final String _S13 = "Deck is empty! Nothing to show.";
-    public static final String _S14 = "Deck Editor";
-    public static final String _S15 = "Deck is empty! Nothing to save.";
-    public static final String _S16 = "This directory is reserved for prebuilt decks.\nPlease choose a different directory.";
-    public static final String _S17 = "Overwrite existing deck file?";
-    public static final String _S18 = "Overwrite file";
-    public static final String _S19 = "Save deck";
-    public static final String _S20 = "There was a problem saving the deck file!";
+    private static final String _S1 = "Cancel";
+    private static final String _S2 = "Close";
+    private static final String _S3 = "Use this deck";
+    private static final String _S4 = "Select Deck";
+    private static final String _S5 = "Select an existing prebuilt or player deck.";
+    private static final String _S6 = "Save Deck";
+    private static final String _S7 = "Save deck to file.";
+    private static final String _S8 = "Sample Hand";
+    private static final String _S9 = "See what kind of Hand you might be dealt from this deck.";
+    private static final String _S10 = "A deck with a minimum of 7 cards is required first.";
+    private static final String _S11 = "Deck View";
+    private static final String _S12 = "Shows complete deck using tiled card images.";
+    private static final String _S13 = "Deck is empty! Nothing to show.";
+    private static final String _S14 = "Deck Editor";
+    private static final String _S15 = "Deck is empty! Nothing to save.";
+    private static final String _S16 = "This directory is reserved for prebuilt decks.\nPlease choose a different directory.";
+    private static final String _S17 = "Overwrite existing deck file?";
+    private static final String _S18 = "Overwrite file";
+    private static final String _S19 = "Save deck";
+    private static final String _S20 = "There was a problem saving the deck file!";
 
     private DeckEditorScreenPanel screenContent;
     private final boolean isStandalone;

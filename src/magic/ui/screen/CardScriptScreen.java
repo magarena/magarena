@@ -42,13 +42,13 @@ public class CardScriptScreen
     implements IStatusBar, IActionBar, IWikiPage {
 
     // translatable strings
-    public static final String _S1 = "Card Script";
-    public static final String _S2 = "Close";
-    public static final String _S3 = "Reload";
-    public static final String _S4 = "Reload script/groovy files.";
-    public static final String _S5 = "Firemind";
-    public static final String _S6 = "Opens the Project Firemind scrips submission page in your browser.";
-    public static final String _S7 = "Unable to open file :\n%s\n\n%s";
+    private static final String _S1 = "Card Script";
+    private static final String _S2 = "Close";
+    private static final String _S3 = "Reload";
+    private static final String _S4 = "Reload script/groovy files.";
+    private static final String _S5 = "Firemind";
+    private static final String _S6 = "Opens the Project Firemind scrips submission page in your browser.";
+    private static final String _S7 = "Unable to open file :\n%s\n\n%s";
 
     private final ScreenContent content;
 

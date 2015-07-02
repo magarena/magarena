@@ -14,15 +14,15 @@ import net.miginfocom.swing.MigLayout;
 public class SettingsMenuScreen extends AbstractScreen {
 
     // translatable strings.
-    public static final String _S1 = "Settings Menu";
-    public static final String _S2 = "Preferences";
-    public static final String _S3 = "Import";
-    public static final String _S4 = "Migrate data from an existing installation of Magarena.";
-    public static final String _S5 = "Download card images";
-    public static final String _S6 = "Run Firemind Worker";
-    public static final String _S7 = "Toggle full-screen";
-    public static final String _S8 = "Shortcut key: F11";
-    public static final String _S9 = "Close menu";
+    private static final String _S1 = "Settings Menu";
+    private static final String _S2 = "Preferences";
+    private static final String _S3 = "Import";
+    private static final String _S4 = "Migrate data from an existing installation of Magarena.";
+    private static final String _S5 = "Download card images";
+    private static final String _S6 = "Run Firemind Worker";
+    private static final String _S7 = "Toggle full-screen";
+    private static final String _S8 = "Shortcut key: F11";
+    private static final String _S9 = "Close menu";
 
     private static DownloadImagesDialog downloadDialog;
     private static FiremindWorkerDialog firemindWorkerDialog;

@@ -63,12 +63,12 @@ import net.miginfocom.swing.MigLayout;
 public class AvatarImagesScreen extends AbstractScreen implements IStatusBar, IActionBar {
 
     // translatable strings.
-    public static final String _S1 = "Select Avatar";
-    public static final String _S2 = "Click to select this avatar image.";
-    public static final String _S3 = "Avatars";
-    public static final String _S4 = "Cancel";
-    public static final String _S5 = "Avatars online...";
-    public static final String _S6 = "Get more avatars from the Magarena forum.";
+    private static final String _S1 = "Select Avatar";
+    private static final String _S2 = "Click to select this avatar image.";
+    private static final String _S3 = "Avatars";
+    private static final String _S4 = "Cancel";
+    private static final String _S5 = "Avatars online...";
+    private static final String _S6 = "Get more avatars from the Magarena forum.";
 
     private JPanel viewer;
     private MenuButton rightActionButton = null;

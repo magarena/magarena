@@ -36,10 +36,10 @@ public class CardExplorerScreen
     implements IStatusBar, IActionBar, IOptionsMenu, IWikiPage {
 
     // translatable strings
-    public static final String _S1 = "Card Explorer";
-    public static final String _S2 = "Close";
-    public static final String _S3 = "View Script";
-    public static final String _S4 = "View the script and groovy files for the selected card.<br>(or double-click row)";
+    private static final String _S1 = "Card Explorer";
+    private static final String _S2 = "Close";
+    private static final String _S3 = "View Script";
+    private static final String _S4 = "View the script and groovy files for the selected card.<br>(or double-click row)";
 
     private final ExplorerPanel content;
 

@@ -51,10 +51,10 @@ import magic.utility.MagicSystem;
 public final class ScreenController {
 
     // translatable strings.
-    public static final String _S1 = "This will require a restart to take full effect. Restart now?";
-    public static final String _S2 = "Information";
-    public static final String _S3 = "Warning";
-    public static final String _S4 = "Restart Magarena?";
+    private static final String _S1 = "This will require a restart to take full effect. Restart now?";
+    private static final String _S2 = "Information";
+    private static final String _S3 = "Warning";
+    private static final String _S4 = "Restart Magarena?";
 
     private static MagicFrame mainFrame = null;
     private static final Stack<AbstractScreen> screens = new Stack<>();

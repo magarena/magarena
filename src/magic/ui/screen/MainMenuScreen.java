@@ -35,14 +35,14 @@ import magic.ui.utility.MagicStyle;
 public class MainMenuScreen extends AbstractScreen implements IWikiPage {
 
     // translatable strings.
-    public static final String _S1 = "Main Menu";
-    public static final String _S2 = "New duel";
-    public static final String _S3 = "Resume duel";
-    public static final String _S4 = "Card explorer";
-    public static final String _S5 = "Deck editor";
-    public static final String _S6 = "Settings";
-    public static final String _S7 = "Help";
-    public static final String _S8 = "Quit to desktop";
+    private static final String _S1 = "Main Menu";
+    private static final String _S2 = "New duel";
+    private static final String _S3 = "Resume duel";
+    private static final String _S4 = "Card explorer";
+    private static final String _S5 = "Deck editor";
+    private static final String _S6 = "Settings";
+    private static final String _S7 = "Help";
+    private static final String _S8 = "Quit to desktop";
 
     private static final GeneralConfig CONFIG = GeneralConfig.getInstance();
     private static final AlertPanel alertPanel = new AlertPanel();
