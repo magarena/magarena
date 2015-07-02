@@ -24,6 +24,7 @@ import magic.exception.DesktopNotSupportedException;
 import magic.model.MagicCardDefinition;
 import magic.ui.utility.DesktopUtils;
 import magic.ui.ScreenController;
+import magic.ui.UiString;
 import magic.ui.screen.interfaces.IActionBar;
 import magic.ui.screen.interfaces.IStatusBar;
 import magic.ui.screen.interfaces.IWikiPage;
@@ -40,6 +41,15 @@ public class CardScriptScreen
     extends AbstractScreen
     implements IStatusBar, IActionBar, IWikiPage {
 
+    // translatable strings
+    public static final String _S1 = "Card Script";
+    public static final String _S2 = "Close";
+    public static final String _S3 = "Reload";
+    public static final String _S4 = "Reload script/groovy files.";
+    public static final String _S5 = "Firemind";
+    public static final String _S6 = "Opens the Project Firemind scrips submission page in your browser.";
+    public static final String _S7 = "Unable to open file :\n%s\n\n%s";
+
     private final ScreenContent content;
 
     public CardScriptScreen(final MagicCardDefinition card) {
@@ -49,7 +59,7 @@ public class CardScriptScreen
 
     @Override
     public String getScreenCaption() {
-        return "Card Script";
+        return UiString.get(_S1);
     }
 
     @Override
@@ -57,33 +67,21 @@ public class CardScriptScreen
         return null;
     }
 
-    /* (non-Javadoc)
-     * @see magic.ui.screen.AbstractScreen#isScreenReadyToClose(magic.ui.screen.AbstractScreen)
-     */
     @Override
     public boolean isScreenReadyToClose(AbstractScreen nextScreen) {
         return true;
     }
 
-    /* (non-Javadoc)
-     * @see magic.ui.screen.interfaces.IActionBar#getLeftAction()
-     */
     @Override
     public MenuButton getLeftAction() {
-        return MenuButton.getCloseScreenButton("Close");
+        return MenuButton.getCloseScreenButton(UiString.get(_S2));
     }
 
-    /* (non-Javadoc)
-     * @see magic.ui.screen.interfaces.IActionBar#getRightAction()
-     */
     @Override
     public MenuButton getRightAction() {
         return null;
     }
 
-    /* (non-Javadoc)
-     * @see magic.ui.screen.interfaces.IActionBar#getMiddleActions()
-     */
     @Override
     public List<MenuButton> getMiddleActions() {
         final List<MenuButton> buttons = new ArrayList<>();
@@ -91,7 +89,7 @@ public class CardScriptScreen
             buttons.add(
                     new ActionBarButton(
                             IconImages.getIcon(MagicIcon.REFRESH_ICON),
-                            "Reload", "Reload script/groovy files.",
+                            UiString.get(_S3), UiString.get(_S4),
                             new AbstractAction() {
                                 @Override
                                 public void actionPerformed(final ActionEvent e) {
@@ -104,7 +102,7 @@ public class CardScriptScreen
         }
         buttons.add(
                 new ActionBarButton(
-                        "Firemind", "Opens the Project Firemind scrips submission page in your browser.",
+                        UiString.get(_S5), UiString.get(_S6),
                         new AbstractAction() {
                             @Override
                             public void actionPerformed(final ActionEvent e) {
@@ -236,7 +234,7 @@ public class CardScriptScreen
                     try {
                         DesktopUtils.openFileInDefaultOsEditor(textFile);
                     } catch (IOException | DesktopNotSupportedException ex) {
-                        ScreenController.showWarningMessage("Unable to open file :\n" + textFile + "\n\n" + ex.getMessage());
+                        ScreenController.showWarningMessage(UiString.get(_S7, textFile, ex.getMessage()));
                     }
                 }
                 @Override
