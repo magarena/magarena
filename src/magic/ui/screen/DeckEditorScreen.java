@@ -23,6 +23,7 @@ import magic.ui.MagicFileChoosers;
 import magic.ui.MagicFrame;
 import magic.ui.ScreenController;
 import magic.ui.ScreenOptionsOverlay;
+import magic.ui.UiString;
 import magic.ui.dialog.DownloadImagesDialog;
 import magic.ui.deck.editor.DeckEditorScreenPanel;
 import magic.ui.deck.editor.IDeckEditorListener;
@@ -40,6 +41,28 @@ import magic.ui.widget.deck.DeckStatusPanel;
 public class DeckEditorScreen
     extends AbstractScreen
     implements IStatusBar, IActionBar, IOptionsMenu, IWikiPage, IDeckConsumer, IDeckEditorListener {
+
+    // translatable strings
+    public static final String _S1 = "Cancel";
+    public static final String _S2 = "Close";
+    public static final String _S3 = "Use this deck";
+    public static final String _S4 = "Select Deck";
+    public static final String _S5 = "Select an existing prebuilt or player deck.";
+    public static final String _S6 = "Save Deck";
+    public static final String _S7 = "Save deck to file.";
+    public static final String _S8 = "Sample Hand";
+    public static final String _S9 = "See what kind of Hand you might be dealt from this deck.";
+    public static final String _S10 = "A deck with a minimum of 7 cards is required first.";
+    public static final String _S11 = "Deck View";
+    public static final String _S12 = "Shows complete deck using tiled card images.";
+    public static final String _S13 = "Deck is empty! Nothing to show.";
+    public static final String _S14 = "Deck Editor";
+    public static final String _S15 = "Deck is empty! Nothing to save.";
+    public static final String _S16 = "This directory is reserved for prebuilt decks.\nPlease choose a different directory.";
+    public static final String _S17 = "Overwrite existing deck file?";
+    public static final String _S18 = "Overwrite file";
+    public static final String _S19 = "Save deck";
+    public static final String _S20 = "There was a problem saving the deck file!";
 
     private DeckEditorScreenPanel screenContent;
     private final boolean isStandalone;
@@ -85,14 +108,14 @@ public class DeckEditorScreen
 
     @Override
     public MenuButton getLeftAction() {
-        final String caption = (!isStandalone ? "Cancel" : "Close");
+        final String caption = (!isStandalone ? UiString.get(_S1) : UiString.get(_S2));
         return MenuButton.getCloseScreenButton(caption);
     }
 
     @Override
     public MenuButton getRightAction() {
         if (!isStandalone) {
-            return new MenuButton("Use this deck", new AbstractAction() {
+            return new MenuButton(UiString.get(_S3), new AbstractAction() {
                 @Override
                 public void actionPerformed(final ActionEvent e) {
                     if (screenContent.validateDeck(true) && screenContent.applyDeckUpdates()) {
@@ -111,7 +134,7 @@ public class DeckEditorScreen
         buttons.add(
                 new ActionBarButton(
                         IconImages.getIcon(MagicIcon.OPEN_ICON),
-                        "Select Deck", "Select an existing prebuilt or player deck.",
+                        UiString.get(_S4), UiString.get(_S5),
                         new AbstractAction() {
                             @Override
                             public void actionPerformed(final ActionEvent e) {
@@ -122,7 +145,7 @@ public class DeckEditorScreen
         buttons.add(
                 new ActionBarButton(
                         IconImages.getIcon(MagicIcon.SAVE_ICON),
-                        "Save Deck", "Save deck to file.",
+                        UiString.get(_S6), UiString.get(_S7),
                         new AbstractAction() {
                             @Override
                             public void actionPerformed(final ActionEvent e) {
@@ -133,14 +156,14 @@ public class DeckEditorScreen
         buttons.add(
                 new ActionBarButton(
                         IconImages.getIcon(MagicIcon.HAND_ICON),
-                        "Sample Hand", "See what kind of Hand you might be dealt from this deck.",
+                        UiString.get(_S8), UiString.get(_S9),
                         new AbstractAction() {
                             @Override
                             public void actionPerformed(final ActionEvent e) {
                                 if (screenContent.getDeck().size() >= 7) {
                                     ScreenController.showSampleHandScreen(screenContent.getDeck());
                                 } else {
-                                    showInvalidActionMessage("A deck with a minimum of 7 cards is required first.");
+                                    showInvalidActionMessage(UiString.get(_S10));
                                 }
                             }
                         })
@@ -148,14 +171,14 @@ public class DeckEditorScreen
         buttons.add(
                 new ActionBarButton(
                         IconImages.getIcon(MagicIcon.TILED_ICON),
-                        "Deck View", "Shows complete deck using tiled card images.",
+                        UiString.get(_S11), UiString.get(_S12),
                         new AbstractAction() {
                             @Override
                             public void actionPerformed(final ActionEvent e) {
                                 if (screenContent.getDeck().size() > 0) {
                                     ScreenController.showDeckView(screenContent.getDeck());
                                 } else {
-                                    showInvalidActionMessage("Deck is empty! Nothing to show.");
+                                    showInvalidActionMessage(UiString.get(_S13));
                                 }
                             }
                         })
@@ -170,7 +193,7 @@ public class DeckEditorScreen
 
     @Override
     public String getScreenCaption() {
-        return "Deck Editor";
+        return UiString.get(_S14);
     }
 
     @Override
@@ -189,7 +212,7 @@ public class DeckEditorScreen
     public void saveDeck() {
 
         if (screenContent.getDeck().size() == 0) {
-            showInvalidActionMessage("Deck is empty! Nothing to save.");
+            showInvalidActionMessage(UiString.get(_S15));
             return;
         }
 
@@ -204,12 +227,12 @@ public class DeckEditorScreen
                 final Path prebuiltDecksFolder = DeckUtils.getPrebuiltDecksFolder();
                 final Path saveFolder = getSelectedFile().toPath().getParent();
                 if (saveFolder.equals(prebuiltDecksFolder)) {
-                    ScreenController.showWarningMessage("This directory is reserved for prebuilt decks.\nPlease choose a different directory.");
+                    ScreenController.showWarningMessage(UiString.get(_S16));
                 } else if (Files.exists(getSelectedFile().toPath())) {
                     int response = JOptionPane.showConfirmDialog(
                             getFrame(),
-                            "Overwrite existing deck file?",
-                            "Overwrite file",
+                            UiString.get(_S17),
+                            UiString.get(_S18),
                             JOptionPane.YES_NO_OPTION);
                     if (response == JOptionPane.YES_OPTION) {
                         super.approveSelection();
@@ -220,7 +243,7 @@ public class DeckEditorScreen
             }
         };
         final MagicDeck deck = screenContent.getDeck();
-        fileChooser.setDialogTitle("Save deck");
+        fileChooser.setDialogTitle(UiString.get(_S19));
         fileChooser.setFileFilter(MagicFileChoosers.DECK_FILEFILTER);
         fileChooser.setAcceptAllFileFilterUsed(false);
         if (deck != null) {
@@ -235,7 +258,7 @@ public class DeckEditorScreen
                 setDeck(screenContent.getDeck());
                 setMostRecentDeck(filename);
             } else {
-                ScreenController.showWarningMessage("There was a problem saving the deck file!");
+                ScreenController.showWarningMessage(UiString.get(_S20));
             }
         }
     }
