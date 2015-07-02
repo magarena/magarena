@@ -510,7 +510,7 @@ public class PreferencesDialog
             landAnimationSpinner.commitEdit();
             nonLandAnimationSpinner.commitEdit();
         } catch (ParseException ex) {
-            ScreenController.showWarningMessage(String.format(UiString.get(_S38), ex.getMessage()));
+            ScreenController.showWarningMessage(UiString.get(_S38, ex.getMessage()));
             return false;
         }
         return true;
