@@ -117,7 +117,7 @@ public class PreferencesDialog
     public static final String _S52 = "Theme";
     public static final String _S53 = "Additional themes can be downloaded from the Magarena forum using the link below.";
     public static final String _S54 = "more themes online...";
-    public static final String _S56 = "Restart required. Only applies to the general UI, it does not affect card data. Right click to open the translations folder in file explorer (useful if New or Edit fail to open file in default text editor).";
+    public static final String _S56 = "Restart required. Only applies to the general UI, it does not affect card data.";
     public static final String _S57 = "Deck Editor split view.";
     public static final String _S58 = "Use the old style split view in the Deck Editor instead of the new tabbed view. This option is provided for convenience, any new features will only be added to the tabbed view.";
     public static final String _S59 = "Preview card on select only.";
