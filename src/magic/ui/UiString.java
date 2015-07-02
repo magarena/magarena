@@ -151,12 +151,15 @@ public final class UiString {
         final String UTF_PREFIX = "\u25AB"; // small white square ▫
 
         final Map<Long, String> stringsMap = new LinkedHashMap<>();
+        
+        final List<String> packageClasses = getClassNamesInPackage(MagicSystem.getJarFile(), "magic");
+//        System.out.println("classes = " + packageClasses.size());
 
-        for (final String c : getClassNamesInPackage(MagicSystem.getJarFile(), "magic")) {
+        for (final String c : packageClasses) {
             final String className = c.substring(0, c.length() - ".class".length());
             try {
-                for (final Field f : Class.forName(className).getFields()) {
-                    if (f.getName().startsWith("_S") && f.isEnumConstant() == false) {
+                for (final Field f : Class.forName(className).getDeclaredFields()) {
+                    if (f.getType() == String.class && f.getName().startsWith("_S")) {
                         f.setAccessible(true);
                         try {
                             final Long stringId = getStringId((String) f.get(null));
