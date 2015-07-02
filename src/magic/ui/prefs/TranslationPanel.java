@@ -1,11 +1,10 @@
 package magic.ui.prefs;
 
 import java.awt.Cursor;
+import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -23,8 +22,10 @@ import javax.swing.AbstractAction;
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.JButton;
 import javax.swing.JComboBox;
+import javax.swing.JMenuItem;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
+import javax.swing.JPopupMenu;
 import javax.swing.SwingUtilities;
 import magic.data.GeneralConfig;
 import magic.ui.UiString;
@@ -42,7 +43,7 @@ class TranslationPanel extends JPanel {
     public static final String _S1 = "Edit";
     public static final String _S2 = "<html>Delete the <b>%s</b> translation file?</html>";
     public static final String _S3 = "Delete translation file";
-    public static final String _S4 = "Del";
+    public static final String _S4 = "Delete";
     public static final String _S5 = "eg. français, español, Deutsch, etc.";
     public static final String _S6 = "New Translation File";
     public static final String _S7 = "A translation file with this name already exists.";
@@ -50,27 +51,65 @@ class TranslationPanel extends JPanel {
     public static final String _S9 = "Failed to create translation file.\n%s";
     public static final String _S10 = "Could not open translation file.\n%s";
     public static final String _S11 = "Could not locate JAR.\n%s";
-    public static final String _S12 = "New";
+    public static final String _S12 = "New translation";
     public static final String _S13 = "Could not open file in default 'txt' editor.\n%s";
+    public static final String _S14 = "File Explorer";
 
     private final JComboBox<String> languageCombo = new JComboBox<>();
-    private final JButton newButton = new JButton();
-    private final JButton editButton = new JButton();
-    private final JButton deleteButton = new JButton();
+    private final JButton menuButton = new JButton();
+    private final JPopupMenu popupMenu = new JPopupMenu();
+    private final JMenuItem newMenuItem = new JMenuItem();
+    private final JMenuItem editMenuItem = new JMenuItem();
+    private final JMenuItem deleteMenuItem = new JMenuItem();
 
     TranslationPanel() {
 
-        setupNewButton();
-        setupEditButton();
-        setupDeleteButton();
+        setupMenuButton();
+        setupNewMenuItem();
+        setupEditMenuItem();
+        setupDeleteMenuItem();
+        popupMenu.addSeparator();
+        setupExplorerMenuItem();
+
         setupComboBox();
 
-        setLayout(new MigLayout("insets 0"));
-        add(languageCombo, "w 50:100%");
-        add(newButton);
-        add(editButton);
-        add(deleteButton);
+        setLayout(new MigLayout("insets 0, gap 0"));
+        add(languageCombo, "w 200!");
+        add(menuButton, "w 26!, h 26!");
 
+    }
+
+    private void setupExplorerMenuItem() {
+        final JMenuItem itemReload = new JMenuItem(new AbstractAction(UiString.get(_S14)) {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                try {
+                    getParent().setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+                    doOpenTranslationsFolder();
+                } catch (IOException ex) {
+                    ScreenController.showWarningMessage(ex.getMessage());
+                } finally {
+                    getParent().setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
+                }
+            }
+        });
+        popupMenu.add(itemReload);
+    }
+
+    private void showPopupMenu() {
+        popupMenu.show(this, menuButton.getX(), menuButton.getY() + menuButton.getHeight());
+    }
+
+    private void setupMenuButton() {
+        menuButton.setText("...");
+        menuButton.setFont(menuButton.getFont().deriveFont(Font.BOLD));
+        menuButton.setFocusable(false);
+        menuButton.addActionListener(new AbstractAction() {
+            @Override
+            public void actionPerformed(final ActionEvent e) {
+                showPopupMenu();
+            }
+        });
     }
 
     private void setupComboBox() {
@@ -81,28 +120,14 @@ class TranslationPanel extends JPanel {
                 setStateOfActionButtons();
             }
         });
-        languageCombo.addMouseListener(new MouseAdapter() {
-            @Override
-            public void mousePressed(MouseEvent e) {
-                if (SwingUtilities.isRightMouseButton(e)) {
-                    try {
-                        doOpenTranslationsFolder();
-                    } catch (IOException ex) {
-                        ScreenController.showWarningMessage(ex.getMessage());
-                    }
-                } else {
-                    super.mousePressed(e);
-                }
-            }
-        });        
         languageCombo.setFocusable(false);
     }
 
     private void setStateOfActionButtons() {
         final boolean isEnglish = languageCombo.getSelectedIndex() == 0;
         final boolean isActive = getSelectedLanguage().equals(GeneralConfig.getInstance().getTranslation());
-        editButton.setEnabled(!isEnglish);
-        deleteButton.setEnabled(!isEnglish && !isActive);
+        editMenuItem.setEnabled(!isEnglish);
+        deleteMenuItem.setEnabled(!isEnglish && !isActive);
     }
 
     private void doEditTranslationFile() throws URISyntaxException, UnsupportedEncodingException, IOException {
@@ -147,22 +172,22 @@ class TranslationPanel extends JPanel {
         DesktopUtils.openDirectory(folder.toString());
     }
 
-    private void setupEditButton() {
-        editButton.setText(UiString.get(_S1));
-        editButton.addActionListener(new AbstractAction() {
+    private void setupEditMenuItem() {
+        editMenuItem.setAction(new AbstractAction(UiString.get(_S1)) {
             @Override
             public void actionPerformed(ActionEvent e) {
-                editButton.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+                getParent().setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
                 try {
                     doEditTranslationFile();
                 } catch (URISyntaxException | IOException ex) {
                     ScreenController.showWarningMessage(ex.getMessage());
                 } finally {
-                    editButton.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
+                    getParent().setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
                 }
             }
         });
-        editButton.setEnabled(false);
+        editMenuItem.setEnabled(false);
+        popupMenu.add(editMenuItem);
     }
 
     private void doDeleteTranslationFile() {
@@ -176,7 +201,7 @@ class TranslationPanel extends JPanel {
                     JOptionPane.YES_NO_OPTION,
                     JOptionPane.QUESTION_MESSAGE,
                     null,
-                    new String[] {"Yes", "No"}, "No"
+                    new String[]{"Yes", "No"}, "No"
             ) == JOptionPane.YES_OPTION) {
                 langFile.delete();
                 refreshLanguageCombo();
@@ -184,15 +209,17 @@ class TranslationPanel extends JPanel {
         }
     }
 
-    private void setupDeleteButton() {
-        deleteButton.setText(UiString.get(_S4));
-        deleteButton.addActionListener(new AbstractAction() {
+    private void setupDeleteMenuItem() {
+        deleteMenuItem.setAction(new AbstractAction(UiString.get(_S4)) {
             @Override
             public void actionPerformed(ActionEvent e) {
+                getParent().setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
                 doDeleteTranslationFile();
+                getParent().setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
             }
         });
-        deleteButton.setEnabled(false);
+        deleteMenuItem.setEnabled(false);
+        popupMenu.add(deleteMenuItem);
     }
 
     private void doAddNewLangFile() {
@@ -228,16 +255,16 @@ class TranslationPanel extends JPanel {
         }
     }
 
-    private void setupNewButton() {
-        newButton.setText(UiString.get(_S12));
-        newButton.addActionListener(new AbstractAction() {
+    private void setupNewMenuItem() {
+        newMenuItem.setAction(new AbstractAction(UiString.get(_S12)) {
             @Override
             public void actionPerformed(ActionEvent e) {
-                newButton.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+                getParent().setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
                 doAddNewLangFile();
-                newButton.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
+                getParent().setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
             }
         });
+        popupMenu.add(newMenuItem);
     }
 
     private List<String> getLangFilenames() {
@@ -273,7 +300,7 @@ class TranslationPanel extends JPanel {
     }
 
     String getSelectedLanguage() {
-        return languageCombo.getSelectedIndex() == 0 ? "" : (String)languageCombo.getSelectedItem();
+        return languageCombo.getSelectedIndex() == 0 ? "" : (String) languageCombo.getSelectedItem();
     }
 
 }
