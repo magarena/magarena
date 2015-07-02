@@ -152,10 +152,7 @@ public final class UiString {
 
         final Map<Long, String> stringsMap = new LinkedHashMap<>();
         
-        final List<String> packageClasses = getClassNamesInPackage(MagicSystem.getJarFile(), "magic");
-//        System.out.println("classes = " + packageClasses.size());
-
-        for (final String c : packageClasses) {
+        for (final String c : getClassNamesInPackage(MagicSystem.getJarFile(), "magic")) {
             final String className = c.substring(0, c.length() - ".class".length());
             try {
                 for (final Field f : Class.forName(className).getDeclaredFields()) {
