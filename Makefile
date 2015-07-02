@@ -128,6 +128,7 @@ M1.%: clean $(EXE) release/Magarena/mods/felt_theme.zip
 	mkdir -p Magarena-1.$*/Magarena/mods
 	cp -r \
 			release/gpl-3.0.html \
+			release/Magarena.jar \
 			release/Magarena.exe \
 			release/Magarena.sh \
 			release/Magarena.command \

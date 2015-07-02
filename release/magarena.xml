@@ -1,5 +1,5 @@
 <launch4jConfig>
-  <dontWrapJar>false</dontWrapJar>
+  <dontWrapJar>true</dontWrapJar>
   <headerType>gui</headerType>
   <jar>Magarena.jar</jar>
   <outfile>Magarena.exe</outfile>
