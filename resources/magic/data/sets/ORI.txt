@@ -1,23 +1,34 @@
+Abbot of Keral Keep
 Act of Treason
 Aegis Angel
 Akroan Jailer
 Alhammarret's Archive
 Alhammarret, High Arbiter
+Animist's Awakening
+Anointer of Champions
 Archangel of Tithes
+Artificer's Epiphany
+Aspiring Aeronaut
+Auramancer
 Avaricious Dragon
 Battlefield Forge
 Bellows Lizard
 Blazing Hellhound
 Blessed Spirits
+Blightcaster
+Blood-Cursed Knight
 Boggart Brute
+Bonded Construct
 Bounding Krasis
 Catacomb Slug
 Caves of Koilos
+Celestial Flare
 Chandra's Fury
 Chandra's Ignition
 Chandra, Fire of Kaladesh
 Chandra, Roaring Flame
 Charging Griffin
+Chief of the Foundry
 Citadel Castellan
 Clash of Wills
 Claustrophobia
@@ -29,6 +40,7 @@ Dark Petition
 Day's Undoing
 Deadbridge Shaman
 Demonic Pact
+Despoiler of Souls
 Disperse
 Displacement Wave
 Divine Verdict
@@ -37,8 +49,10 @@ Dwynen, Gilt-Leaf Daen
 Eagle of the Watch
 Elemental Bond
 Elvish Visionary
+Embermaw Hellion
 Enshrouding Mist
 Enthralling Victor
+Erebos's Titan
 Exquisite Firecraft
 Eyeblight Assassin
 Faerie Miscreant
@@ -47,19 +61,34 @@ Fiery Hellhound
 Fiery Impulse
 Flameshadow Conjuring
 Flesh to Dust
+Fleshbag Marauder
 Forest
+Foundry of the Consuls
+Funeral-Blade Predator
+Gaea's Revenge
+Ghirapur Gearcrafter
+Gideon's Phalanx
 Gideon, Battle-Forged
+Gilt-Leaf Winnower
 Gnarlroot Trapper
+Goblin Glory Chaser
 Goblin Piledriver
 Gold-Forged Sentinel
 Grasp of the Hieromancer
+Graveblade Marauder
+Hallowed Moonlight
+Hangarback Walker
+Harbinger of the Tides
 Heavy Infantry
+Helm of the Gods
+Herald of the Pantheon
 Hitchclaw Recluse
 Hixus, Prison Warden
 Honored Hierarch
 Hydrolash
 Infectious Bloodlust
 Infernal Scarring
+Infinite Obliteration
 Into the Void
 Island
 Jace's Sanctum
@@ -79,32 +108,45 @@ Lightning Javelin
 Liliana, Defiant Necromancer
 Liliana, Heretical Healer
 Llanowar Wastes
+Mage-Ring Responder
+Magmatic Insight
 Mahamoti Djinn
 Malakir Cullblade
 Managorger Hydra
 Mantle of Webs
 Maritime Guard
 Meteorite
+Might of the Masses
 Mighty Leap
 Mind Rot
 Mizzium Meddler
+Molten Vortex
 Mountain
+Nantuko Husk
+Necromantic Summons
+Negate
 Nightmare
 Nissa's Pilgrimage
+Nissa's Revelation
 Nissa, Sage Animist
 Nissa, Vastwood Seer
+Outland Colossus
 Patron of the Valiant
 Pia and Kiran Nalaar
 Plains
 Plummet
+Priest of the Blood Rite
 Prized Unicorn
+Pyromancer's Goggles
 Rabid Bloodsucker
 Ravaging Blaze
 Reave Soul
+Reclusive Artificer
 Relic Seeker
 Rhox Maulers
 Ringwarden Owl
 Runed Servitor
+Scab-Clan Berserker
 Scrapskin Drake
 Seismic Elemental
 Send to Sleep
@@ -116,19 +158,28 @@ Shaman of the Pack
 Shambling Ghoul
 Shivan Dragon
 Shivan Reef
+Sigil of the Empty Throne
+Skysnare Spider
+Smash to Smithereens
+Somberwald Alpha
 Soulblade Djinn
 Sphinx's Tutelage
+Stalwart Aven
 Starfield of Nyx
 Subterranean Scout
 Swamp
 Sylvan Messenger
 Tainted Remedy
+Talent of the Telepath
 Terra Stomper
+The Great Aurora
+Thopter Spy Network
 Timberpack Wolf
 Titan's Strength
 Titanic Growth
 Topan Freeblade
 Tower Geist
+Tragic Arrogance
 Undead Servant
 Unholy Hunger
 Valeron Wardens
@@ -139,8 +190,11 @@ Volcanic Rambler
 Vryn Wingmare
 Weave Fate
 Weight of the Underworld
+Whirler Rogue
+Willbreaker
 Woodland Bellower
 Yavimaya Coast
 Yeva's Forcemage
 Yoked Ox
 Zendikar Incarnate
+Zendikar's Roil
