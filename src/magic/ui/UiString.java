@@ -191,7 +191,7 @@ public final class UiString {
         }
     }
 
-    public static void createLangFile(File txtFile) throws URISyntaxException, IOException {
+    public static void createTranslationFIle(File txtFile) throws URISyntaxException, IOException {
         createTranslationFile(txtFile, getUiStringsMap());
     }
 

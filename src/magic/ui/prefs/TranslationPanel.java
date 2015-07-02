@@ -233,7 +233,7 @@ class TranslationPanel extends JPanel {
                         ScreenController.showWarningMessage(UiString.get(_S7));
                         return;
                     }
-                    UiString.createLangFile(langFile);
+                    UiString.createTranslationFIle(langFile);
                     DesktopUtils.openFileInDefaultOsEditor(langFile);
                     SwingUtilities.invokeLater(new Runnable() {
                         @Override
