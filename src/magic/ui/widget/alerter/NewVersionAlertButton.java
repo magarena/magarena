@@ -8,9 +8,18 @@ import magic.data.GeneralConfig;
 import magic.ui.URLUtils;
 import magic.data.json.NewVersionJsonParser;
 import magic.ui.ScreenController;
+import magic.ui.UiString;
 
 @SuppressWarnings("serial")
 public class NewVersionAlertButton extends AlertButton {
+
+    // translatable strings
+    private static final String _S1 = "Version %s has been released.";
+    private static final String _S2 = "Open download page";
+    private static final String _S3 = "Don't remind me again";
+    private static final String _S4 = "Cancel";
+    private static final String _S5 = "New version alert";
+    private static final String _S6 = "New version released (%s)";
 
     private String newVersion = "";
     private static boolean hasChecked = false;
@@ -21,12 +30,11 @@ public class NewVersionAlertButton extends AlertButton {
             @Override
             public void actionPerformed(ActionEvent e) {
                 setVisible(false);
-                final String caption = "Version " + newVersion + " has been released.";
-                String[] buttons = {"Open download page", "Don't remind me again", "Cancel"};
+                String[] buttons = {UiString.get(_S2), UiString.get(_S3), UiString.get(_S4)};
                 int rc = JOptionPane.showOptionDialog(
                         ScreenController.getMainFrame(),
-                        caption,
-                        "New version alert",
+                        UiString.get(_S1, newVersion),
+                        UiString.get(_S5),
                         0,
                         JOptionPane.INFORMATION_MESSAGE,
                         null,
@@ -59,7 +67,7 @@ public class NewVersionAlertButton extends AlertButton {
             hasChecked = true;
         }
         if (isNewVersionAvailable()) {
-            return "New version released (" + newVersion + ")";
+            return UiString.get(_S6, newVersion);
         } else {
             return "";
         }
