@@ -11,6 +11,7 @@ import magic.model.MagicGame;
 import magic.ui.MagicFrame;
 import magic.ui.ScreenController;
 import magic.ui.ScreenOptionsOverlay;
+import magic.ui.UiString;
 import magic.ui.duel.DuelLayeredPane;
 import magic.ui.duel.DuelPanel;
 import magic.ui.screen.interfaces.IOptionsMenu;
@@ -20,6 +21,16 @@ import magic.utility.MagicSystem;
 
 @SuppressWarnings("serial")
 public class DuelGameScreen extends AbstractScreen implements IOptionsMenu {
+
+    // translatable strings
+    private static final String _S1 = "Game Options";
+    private static final String _S2 = "Concede game";
+    private static final String _S3 = "Restart game";
+    private static final String _S4 = "Image mode";
+    private static final String _S5 = "Text mode";
+    private static final String _S6 = "Game Log";
+    private static final String _S7 = "Sidebar Layout";
+    private static final String _S8 = "Resume game";
 
     private final static GeneralConfig config = GeneralConfig.getInstance();
 
@@ -68,9 +79,6 @@ public class DuelGameScreen extends AbstractScreen implements IOptionsMenu {
         return gamePane;
     }
 
-    /* (non-Javadoc)
-     * @see magic.ui.IMagScreenOptionsMenu#showOptionsMenuOverlay()
-     */
     @Override
     public void showOptionsMenuOverlay() {
         if (gamePanel.getDialogPanel().isVisible()) {
@@ -94,17 +102,11 @@ public class DuelGameScreen extends AbstractScreen implements IOptionsMenu {
         gamePanel.getController().resetGame();
     }
 
-    /* (non-Javadoc)
-     * @see magic.ui.MagScreen#isScreenReadyToClose(magic.ui.MagScreen)
-     */
     @Override
     public boolean isScreenReadyToClose(final AbstractScreen nextScreen) {
         return true;
     }
 
-    /* (non-Javadoc)
-     * @see javax.swing.JComponent#requestFocus()
-     */
     @Override
     public void requestFocus() {
         if (gamePanel != null) {
@@ -121,22 +123,19 @@ public class DuelGameScreen extends AbstractScreen implements IOptionsMenu {
             this.screen = screen0;
         }
 
-        /* (non-Javadoc)
-         * @see magic.ui.ScreenOptionsOverlay#getScreenMenu()
-         */
         @Override
         protected MenuPanel getScreenMenu() {
 
-            final MenuPanel menu = new MenuPanel("Game Options");
+            final MenuPanel menu = new MenuPanel(UiString.get(_S1));
 
-            menu.addMenuItem("Concede game", new AbstractAction() {
+            menu.addMenuItem(UiString.get(_S2), new AbstractAction() {
                 @Override
                 public void actionPerformed(final ActionEvent e) {
                     screen.concedeGame();
                     setVisible(false);
                 }
             });
-            menu.addMenuItem("Restart game", new AbstractAction() {
+            menu.addMenuItem(UiString.get(_S3), new AbstractAction() {
                 @Override
                 public void actionPerformed(final ActionEvent e) {
                     screen.resetGame();
@@ -144,7 +143,7 @@ public class DuelGameScreen extends AbstractScreen implements IOptionsMenu {
                 }
             });
             final boolean isTextMode = config.getTextView();
-            menu.addMenuItem(isTextMode ? "Image mode" : "Text mode", new AbstractAction() {
+            menu.addMenuItem(isTextMode ? UiString.get(_S4) : UiString.get(_S5), new AbstractAction() {
                 @Override
                 public void actionPerformed(final ActionEvent e) {
                     config.setTextView(!isTextMode);
@@ -152,13 +151,13 @@ public class DuelGameScreen extends AbstractScreen implements IOptionsMenu {
                     setVisible(false);
                 }
             });
-            menu.addMenuItem("Game Log", new AbstractAction() {
+            menu.addMenuItem(UiString.get(_S6), new AbstractAction() {
                 @Override
                 public void actionPerformed(final ActionEvent e) {
                     ScreenController.showGameLogScreen();
                 }
             });
-            menu.addMenuItem("Sidebar Layout", new AbstractAction() {
+            menu.addMenuItem(UiString.get(_S7), new AbstractAction() {
                 @Override
                 public void actionPerformed(final ActionEvent e) {
                     hideOverlay();
@@ -166,7 +165,7 @@ public class DuelGameScreen extends AbstractScreen implements IOptionsMenu {
                 }
             });
             menu.addBlankItem();
-            menu.addMenuItem("Resume game", new AbstractAction() {
+            menu.addMenuItem(UiString.get(_S8), new AbstractAction() {
                 @Override
                 public void actionPerformed(final ActionEvent e) {
                     hideOverlay();
