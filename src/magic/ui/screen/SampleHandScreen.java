@@ -1,34 +1,39 @@
 package magic.ui.screen;
 
-import magic.ui.IconImages;
+import java.awt.Dimension;
+import java.awt.event.ActionEvent;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import javax.swing.AbstractAction;
+import javax.swing.JPanel;
+import magic.data.MagicIcon;
 import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicCardList;
 import magic.model.MagicDeck;
 import magic.model.MagicRandom;
-import magic.ui.canvas.cards.CardsCanvas;
+import magic.ui.CardImagesProvider;
+import magic.ui.IconImages;
+import magic.ui.UiString;
 import magic.ui.canvas.cards.CardsCanvas.LayoutMode;
+import magic.ui.canvas.cards.CardsCanvas;
 import magic.ui.screen.interfaces.IActionBar;
 import magic.ui.screen.interfaces.IStatusBar;
 import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.screen.widget.MenuButton;
 import magic.ui.widget.deck.DeckStatusPanel;
 
-import javax.swing.AbstractAction;
-import javax.swing.JPanel;
-
-import java.awt.Dimension;
-import java.awt.event.ActionEvent;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import magic.data.MagicIcon;
-import magic.ui.CardImagesProvider;
-
 @SuppressWarnings("serial")
 public class SampleHandScreen
     extends AbstractScreen
     implements IStatusBar, IActionBar {
+
+    // translatable strings
+    private static final String _S1 = "Sample Hand";
+    private static final String _S2 = "Close";
+    private static final String _S3 = "Refresh";
+    private static final String _S4 = "Deal a new sample hand.";
 
     private final static Dimension cardSize = CardImagesProvider.PREFERRED_CARD_SIZE;
 
@@ -62,12 +67,12 @@ public class SampleHandScreen
 
     @Override
     public String getScreenCaption() {
-        return "Sample Hand";
+        return UiString.get(_S1);
     }
 
     @Override
     public MenuButton getLeftAction() {
-        return MenuButton.getCloseScreenButton("Close");
+        return MenuButton.getCloseScreenButton(UiString.get(_S2));
     }
 
     @Override
@@ -81,7 +86,7 @@ public class SampleHandScreen
         buttons.add(
                 new ActionBarButton(
                         IconImages.getIcon(MagicIcon.REFRESH_ICON),
-                        "Refresh", "Deal a new sample hand.",
+                        UiString.get(_S3), UiString.get(_S4),
                         new AbstractAction() {
                             @Override
                             public void actionPerformed(final ActionEvent e) {
