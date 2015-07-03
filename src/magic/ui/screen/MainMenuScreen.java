@@ -11,25 +11,25 @@ import javax.swing.JFileChooser;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.filechooser.FileFilter;
-import magic.utility.MagicSystem;
 import magic.data.GeneralConfig;
 import magic.data.MagicIcon;
 import magic.exception.InvalidDeckException;
-import magic.ui.IconImages;
 import magic.game.state.GameLoader;
 import magic.game.state.GameStateFileReader;
-import magic.ui.UiString;
+import magic.ui.IconImages;
 import magic.ui.ScreenController;
+import magic.ui.UiString;
 import magic.ui.screen.interfaces.IThemeStyle;
+import magic.ui.screen.interfaces.IWikiPage;
 import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.screen.widget.MenuPanel;
 import magic.ui.theme.Theme;
+import magic.ui.utility.MagicStyle;
 import magic.ui.widget.TexturedPanel;
-import net.miginfocom.swing.MigLayout;
-import magic.ui.screen.interfaces.IWikiPage;
 import magic.ui.widget.alerter.AlertPanel;
 import magic.utility.MagicFileSystem;
-import magic.ui.utility.MagicStyle;
+import magic.utility.MagicSystem;
+import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
 public class MainMenuScreen extends AbstractScreen implements IWikiPage {
@@ -183,9 +183,6 @@ public class MainMenuScreen extends AbstractScreen implements IWikiPage {
 
     }
 
-    /* (non-Javadoc)
-     * @see magic.ui.MagScreen#isScreenReadyToClose(magic.ui.MagScreen)
-     */
     @Override
     public boolean isScreenReadyToClose(final AbstractScreen nextScreen) {
         return true;
