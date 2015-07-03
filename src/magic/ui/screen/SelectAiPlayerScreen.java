@@ -1,32 +1,28 @@
 package magic.ui.screen;
 
-import magic.ai.MagicAIImpl;
-import magic.model.player.AiProfile;
-import magic.model.player.IPlayerProfileListener;
-import magic.model.player.PlayerProfile;
-import magic.model.player.PlayerProfiles;
-import magic.ui.dialog.AiPropertiesDialog;
-import magic.ui.screen.interfaces.IStatusBar;
-import magic.ui.player.AiPlayerJList;
-
-import javax.swing.AbstractAction;
-import javax.swing.JPanel;
-
 import java.awt.event.ActionEvent;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;
+import javax.swing.AbstractAction;
+import javax.swing.JPanel;
+import magic.model.player.AiProfile;
+import magic.model.player.IPlayerProfileListener;
+import magic.model.player.PlayerProfile;
+import magic.model.player.PlayerProfiles;
+import magic.ui.UiString;
+import magic.ui.dialog.AiPropertiesDialog;
+import magic.ui.player.AiPlayerJList;
+import magic.ui.screen.interfaces.IStatusBar;
 
-/**
- * @author SPR
- *
- */
 @SuppressWarnings("serial")
 public class SelectAiPlayerScreen
     extends SelectPlayerScreen
     implements IStatusBar {
 
-    // CTR
+    // translatable strings
+    private static final String _S1 =  "Select AI Player";
+
     public SelectAiPlayerScreen(final IPlayerProfileListener listener, final PlayerProfile playerProfile) {
         super(new AiPlayerJList());
         addListener(listener);
@@ -38,41 +34,26 @@ public class SelectAiPlayerScreen
         return sortedPlayersList.toArray(new AiProfile[0]);
     }
 
-    /* (non-Javadoc)
-     * @see magic.ui.screen.SelectPlayerAbstractScreen#createDefaultPlayerProfiles()
-     */
     @Override
     protected void createDefaultPlayerProfiles() throws IOException {
         PlayerProfiles.createDefaultAiPlayerProfiles();
     }
 
-    /* (non-Javadoc)
-     * @see magic.ui.IMagStatusBar#getScreenCaption()
-     */
     @Override
     public String getScreenCaption() {
-        return "Select AI Player";
+        return UiString.get(_S1);
     }
 
-    /* (non-Javadoc)
-     * @see magic.ui.MagScreen#canScreenClose()
-     */
     @Override
     public boolean isScreenReadyToClose(final AbstractScreen nextScreen) {
         return true;
     }
 
-    /* (non-Javadoc)
-     * @see magic.ui.screen.interfaces.IStatusBar#getStatusPanel()
-     */
     @Override
     public JPanel getStatusPanel() {
         return null;
     }
 
-    /* (non-Javadoc)
-     * @see magic.ui.screen.SelectPlayerAbstractScreen#getPreferredWidth()
-     */
     @Override
     protected int getPreferredWidth() {
         return 540;
@@ -121,17 +102,11 @@ public class SelectAiPlayerScreen
         return PlayerProfiles.getAiPlayerProfiles();
     }
 
-    /* (non-Javadoc)
-     * @see magic.ui.screen.SelectPlayerScreen#getNewPlayerAction()
-     */
     @Override
     protected AbstractAction getNewPlayerAction() {
         return new NewPlayerAction();
     }
 
-    /* (non-Javadoc)
-     * @see magic.ui.screen.SelectPlayerScreen#getEditPlayerAction()
-     */
     @Override
     protected AbstractAction getEditPlayerAction() {
         return new EditPlayerAction();
