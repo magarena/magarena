@@ -42,11 +42,6 @@ public class SelectHumanPlayerScreen
         PlayerProfiles.createDefaultHumanPlayerProfiles();
     }
 
-    private String getDefaultPlayerProfileName() {
-        final String systemUserName = System.getProperty("user.name");
-        return systemUserName == null ? "Player" : systemUserName;
-    }
-
     @Override
     public String getScreenCaption() {
         return UiString.get(_S1);
