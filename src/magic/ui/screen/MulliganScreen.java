@@ -1,11 +1,27 @@
 package magic.ui.screen;
 
-import magic.ui.IconImages;
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.Font;
+import java.awt.event.ActionEvent;
+import java.util.ArrayList;
+import java.util.List;
+import javax.swing.AbstractAction;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.KeyStroke;
+import javax.swing.SwingConstants;
+import javax.swing.SwingUtilities;
+import magic.data.MagicIcon;
 import magic.model.MagicCardList;
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
-import magic.ui.canvas.cards.CardsCanvas;
+import magic.ui.CardImagesProvider;
+import magic.ui.IconImages;
+import magic.ui.ScreenController;
+import magic.ui.UiString;
 import magic.ui.canvas.cards.CardsCanvas.LayoutMode;
+import magic.ui.canvas.cards.CardsCanvas;
 import magic.ui.duel.choice.MulliganChoicePanel;
 import magic.ui.screen.interfaces.IActionBar;
 import magic.ui.screen.interfaces.IStatusBar;
@@ -13,27 +29,20 @@ import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.screen.widget.MenuButton;
 import net.miginfocom.swing.MigLayout;
 
-import javax.swing.AbstractAction;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-import javax.swing.KeyStroke;
-import javax.swing.SwingConstants;
-import javax.swing.SwingUtilities;
-
-import java.awt.Color;
-import java.awt.Dimension;
-import java.awt.Font;
-import java.awt.event.ActionEvent;
-import java.util.ArrayList;
-import java.util.List;
-import magic.data.MagicIcon;
-import magic.ui.CardImagesProvider;
-import magic.ui.ScreenController;
-
 @SuppressWarnings("serial")
 public class MulliganScreen
     extends AbstractScreen
     implements IStatusBar, IActionBar {
+
+    // translatable string
+    private static final String _S1 = "Mulligan?";
+    private static final String _S2 = "Close";
+    private static final String _S3 = "Play this hand";
+    private static final String _S4 = "Mulligan";
+    private static final String _S5 = "Draw a new hand with one less card.";
+    private static final String _S6 = "You play %s";
+    private static final String _S7 = "first.";
+    private static final String _S8 = "second.";
 
     private final static Dimension cardSize = CardImagesProvider.PREFERRED_CARD_SIZE;
 
@@ -100,20 +109,14 @@ public class MulliganScreen
         });
     }
 
-    /* (non-Javadoc)
-     * @see magic.ui.IMagStatusBar#getScreenCaption()
-     */
     @Override
     public String getScreenCaption() {
-        return "Mulligan?";
+        return UiString.get(_S1);
     }
 
-    /* (non-Javadoc)
-     * @see magic.ui.IMagActionBar#getLeftAction()
-     */
     @Override
     public MenuButton getLeftAction() {
-        return new MenuButton("Close", new AbstractAction() {
+        return new MenuButton(UiString.get(_S2), new AbstractAction() {
             @Override
             public void actionPerformed(final ActionEvent e) {
                 if (!cardsCanvas.isBusy()) {
@@ -124,12 +127,9 @@ public class MulliganScreen
         });
     }
 
-    /* (non-Javadoc)
-     * @see magic.ui.IMagActionBar#getRightAction()
-     */
     @Override
     public MenuButton getRightAction() {
-        return new MenuButton("Play this hand", new AbstractAction() {
+        return new MenuButton(UiString.get(_S3), new AbstractAction() {
             @Override
             public void actionPerformed(final ActionEvent e) {
                 if (!cardsCanvas.isBusy()) {
@@ -141,24 +141,18 @@ public class MulliganScreen
         });
     }
 
-    /* (non-Javadoc)
-     * @see magic.ui.IMagActionBar#getMiddleActions()
-     */
     @Override
     public List<MenuButton> getMiddleActions() {
         final List<MenuButton> buttons = new ArrayList<>();
         buttons.add(
                 new ActionBarButton(
                         IconImages.getIcon(MagicIcon.MULLIGAN_ICON),
-                        "Mulligan", "Draw a new hand with one less card.",
+                        UiString.get(_S4), UiString.get(_S5),
                         takeMulliganAction)
                 );
         return buttons;
     }
 
-    /* (non-Javadoc)
-     * @see magic.ui.MagScreen#canScreenClose()
-     */
     @Override
     public boolean isScreenReadyToClose(final AbstractScreen nextScreen) {
         return true;
@@ -177,9 +171,6 @@ public class MulliganScreen
         }
     }
 
-    /* (non-Javadoc)
-     * @see magic.ui.screen.interfaces.IStatusBar#getStatusPanel()
-     */
     @Override
     public JPanel getStatusPanel() {
         return statusPanel;
@@ -214,7 +205,10 @@ public class MulliganScreen
         private void setContent(final MagicGame game) {
             final MagicPlayer turnPlayer = game.getTurnPlayer();
             final MagicPlayer humanPlayer = game.getPlayer(0);
-            playingFirstLabel.setText("You play " + (turnPlayer == humanPlayer ? "first." : "second."));
+            playingFirstLabel.setText(UiString.get(_S6,
+                    turnPlayer == humanPlayer
+                            ? UiString.get(_S7)
+                            : UiString.get(_S8)));
             refreshLayout();
         }
 
