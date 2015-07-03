@@ -28,6 +28,7 @@ import magic.model.player.PlayerProfile;
 import magic.model.player.PlayerProfiles;
 import magic.ui.IconImages;
 import magic.ui.ScreenController;
+import magic.ui.UiString;
 import magic.ui.screen.interfaces.IActionBar;
 import magic.ui.screen.interfaces.IAvatarImageConsumer;
 import magic.ui.screen.interfaces.IThemeStyle;
@@ -43,6 +44,21 @@ import net.miginfocom.swing.MigLayout;
 public abstract class SelectPlayerScreen
     extends AbstractScreen
     implements IAvatarImageConsumer, IActionBar {
+
+    // translatable strings
+    private static final String _S1 = "Avatar";
+    private static final String _S2 = "Choose an avatar image for the selected player profile.";
+    private static final String _S3 = "There must be at least one player defined.";
+    private static final String _S4 = "<html>This will delete the <b>%s</b> player profile.<br>All associated information such as player stats will also be removed.<br><br><b>This action cannot be undone!</b></html>";
+    private static final String _S5 = "Delete Player?";
+    private static final String _S6 = "Delete";
+    private static final String _S7 = "Cancel";
+    private static final String _S9 = "Select";
+    private static final String _S10 = "Settings";
+    private static final String _S11 = "Update player profile settings.";
+    private static final String _S12 = "New";
+    private static final String _S13 = "Create a new player profile.";
+    private static final String _S15 = "Delete selected player profile (confirmation required).";
 
     private final List<IPlayerProfileListener> listeners = new ArrayList<>();
     private final JList<? extends PlayerProfile> playersJList;
@@ -132,8 +148,7 @@ public abstract class SelectPlayerScreen
 
     protected class SelectAvatarActionButton extends ActionBarButton {
         public SelectAvatarActionButton() {
-            super("Avatar", "Choose an avatar image for the selected player profile.",
-                    new SelectAvatarAction());
+            super(UiString.get(_S1), UiString.get(_S2), new SelectAvatarAction());
         }
     }
 
@@ -160,21 +175,19 @@ public abstract class SelectPlayerScreen
                     notifyPlayerDeleted(condemnedPlayer);
                 }
             } else {
-                ScreenController.showWarningMessage("There must be at least one player defined.");
+                ScreenController.showWarningMessage(UiString.get(_S3));
             }
         }
 
         private boolean isDeletePlayerConfirmedByUser(final PlayerProfile profile) {
             final int action = JOptionPane.showOptionDialog(
                     ScreenController.getMainFrame(),
-                    "<html>This will delete the <b>" + profile.getPlayerName() + "</b> player profile.<br>" +
-                    "All associated information such as player stats will also be removed.<br><br>" +
-                    "<b>This action cannot be undone!</b></html>",
-                    "Delete Player?",
+                    UiString.get(_S4, profile.getPlayerName()),
+                    UiString.get(_S5),
                     JOptionPane.YES_NO_OPTION,
                     JOptionPane.QUESTION_MESSAGE,
                     null,
-                    new String[] {"Delete", "Cancel"}, "Cancel");
+                    new String[] {UiString.get(_S6), UiString.get(_S7)}, UiString.get(_S7));
             return (action == JOptionPane.YES_OPTION);
         }
 
@@ -262,20 +275,14 @@ public abstract class SelectPlayerScreen
         return playersJList;
     }
 
-    /* (non-Javadoc)
-     * @see magic.ui.screen.interfaces.IActionBar#getLeftAction()
-     */
     @Override
     public MenuButton getLeftAction() {
-        return MenuButton.getCloseScreenButton("Cancel");
+        return MenuButton.getCloseScreenButton(UiString.get(_S7));
     }
 
-    /* (non-Javadoc)
-     * @see magic.ui.screen.interfaces.IActionBar#getRightAction()
-     */
     @Override
     public MenuButton getRightAction() {
-        return new MenuButton("Select", new AbstractAction() {
+        return new MenuButton(UiString.get(_S9), new AbstractAction() {
           @Override
           public void actionPerformed(final ActionEvent e) {
               setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
@@ -285,26 +292,13 @@ public abstract class SelectPlayerScreen
       });
     }
 
-    /* (non-Javadoc)
-     * @see magic.ui.screen.interfaces.IActionBar#getMiddleActions()
-     */
     @Override
     public List<MenuButton> getMiddleActions() {
         final List<MenuButton> buttons = new ArrayList<>();
-        buttons.add(
-                new ActionBarButton(
-                        "Settings", "Update player profile settings.",
-                        getEditPlayerAction()));
-        buttons.add(
-                new ActionBarButton(
-                        "New", "Create a new player profile.",
-                        getNewPlayerAction()));
-        buttons.add(
-                new ActionBarButton(
-                        "Delete", "Delete selected player profile (confirmation required).",
-                        new DeletePlayerAction()));
-        buttons.add(
-                new SelectAvatarActionButton());
+        buttons.add(new ActionBarButton(UiString.get(_S10), UiString.get(_S11), getEditPlayerAction()));
+        buttons.add(new ActionBarButton(UiString.get(_S12), UiString.get(_S13), getNewPlayerAction()));
+        buttons.add(new ActionBarButton(UiString.get(_S6), UiString.get(_S15), new DeletePlayerAction()));
+        buttons.add(new SelectAvatarActionButton());
         return buttons;
     }
 
