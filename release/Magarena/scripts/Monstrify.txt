@@ -6,5 +6,5 @@ type=Sorcery
 cost={3}{G}
 ability=Retrace
 effect=Target creature gets +4/+4 until end of turn.
-timing=pump
+timing=fmain
 oracle=Target creature gets +4/+4 until end of turn.\nRetrace
