@@ -56,7 +56,7 @@ public class DuelDecksScreen
         this.screenContent = new DuelDecksPanel(duel);
         setContent(this.screenContent);
         if (duel.getGamesPlayed() > 0) {
-            saveDuel(false);
+            saveDuel();
         }
     }
 
@@ -94,7 +94,7 @@ public class DuelDecksScreen
 
                     if (isLegalDeckAndShowErrors(players[0].getDeck(), players[0].getName()) &&
                        isLegalDeckAndShowErrors(players[1].getDeck(), players[1].getName())) {
-                        saveDuel(false);
+                        saveDuel();
                         getFrame().nextGame();
                     }
                 }
@@ -216,11 +216,8 @@ public class DuelDecksScreen
         return screenContent.getDuel().getGamesPlayed();
     }
 
-    public void saveDuel(final boolean confirmSave) {
+    private void saveDuel() {
         screenContent.getDuel().save(MagicDuel.getLatestDuelFile());
-        if (confirmSave) {
-            ScreenController.showInfoMessage("<html><b>Duel saved.</b><br><br>Please use Resume Duel option in Main Menu to restore.");
-        }
     }
 
     @Override
