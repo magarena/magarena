@@ -19,6 +19,7 @@ import magic.model.player.PlayerProfiles;
 import magic.ui.utility.GraphicsUtils;
 import magic.ui.MagicFrame;
 import magic.ui.ScreenController;
+import magic.ui.UiString;
 import magic.ui.screen.interfaces.IActionBar;
 import magic.ui.screen.interfaces.IStatusBar;
 import magic.ui.screen.interfaces.IWikiPage;
@@ -34,6 +35,14 @@ public class NewDuelSettingsScreen
     extends AbstractScreen
     implements IStatusBar, IActionBar, IWikiPage {
 
+    // translatable strings
+    private static final String _S1 = "New Duel Settings";
+    private static final String _S2 = "Cancel";
+    private static final String _S3 = "Next";
+    private static final String _S4 = "Invalid Deck\n%s";
+    private static final String _S5 = "%s's deck is invalid.";
+    private static final String _S6 = "The following player decks are invalid :-\n\n";
+
     private static final DuelConfig duelConfig = DuelConfig.getInstance();
 
     private final ScreenContent content;
@@ -44,28 +53,19 @@ public class NewDuelSettingsScreen
         setContent(content);
     }
 
-    /* (non-Javadoc)
-     * @see magic.ui.IMagStatusBar#getScreenCaption()
-     */
     @Override
     public String getScreenCaption() {
-        return "New Duel Settings";
+        return UiString.get(_S1);
     }
 
-    /* (non-Javadoc)
-     * @see magic.ui.IMagActionBar#getLeftAction()
-     */
     @Override
     public MenuButton getLeftAction() {
-        return MenuButton.getCloseScreenButton("Cancel");
+        return MenuButton.getCloseScreenButton(UiString.get(_S2));
     }
 
-    /* (non-Javadoc)
-     * @see magic.ui.IMagActionBar#getRightAction()
-     */
     @Override
     public MenuButton getRightAction() {
-        return new MenuButton("Next", new AbstractAction() {
+        return new MenuButton(UiString.get(_S3), new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 if (isEachPlayerDeckValid(true)) {
@@ -74,7 +74,7 @@ public class NewDuelSettingsScreen
                     try {
                         getFrame().newDuel(duelConfig);
                     } catch (InvalidDeckException ex) {
-                        ScreenController.showWarningMessage("Invalid Deck\n" + ex.getMessage());
+                        ScreenController.showWarningMessage(UiString.get(_S4, ex.getMessage()));
                     }
                 }
             }
@@ -85,15 +85,15 @@ public class NewDuelSettingsScreen
         boolean isEachDeckValid = true;
         final StringBuffer sb = new StringBuffer();
         if (!content.isDeckValid(0)) {
-            sb.append(content.getPlayerProfile(0).getPlayerName()).append("'s deck is invalid.").append("\n");
+            sb.append(UiString.get(_S5, content.getPlayerProfile(0).getPlayerName())).append("\n");
             isEachDeckValid = false;
         }
         if (!content.isDeckValid(1)) {
-            sb.append(content.getPlayerProfile(1).getPlayerName()).append("'s deck is invalid.");
+            sb.append(UiString.get(_S5, content.getPlayerProfile(1).getPlayerName()));
             isEachDeckValid = false;
         }
         if (!isEachDeckValid && showErrorDialog) {
-            sb.insert(0, "The following player decks are invalid :-\n\n");
+            sb.insert(0, UiString.get(_S6));
             ScreenController.showWarningMessage(sb.toString());
         }
         return isEachDeckValid;
@@ -110,17 +110,11 @@ public class NewDuelSettingsScreen
         duelConfig.setPlayerDeckProfile(1, content.getDeckType(1), content.getDeckValue(1));
     }
 
-    /* (non-Javadoc)
-     * @see magic.ui.IMagActionBar#getMiddleActions()
-     */
     @Override
     public List<MenuButton> getMiddleActions() {
         return null;
     }
 
-    /* (non-Javadoc)
-     * @see magic.ui.MagScreen#canScreenClose()
-     */
     @Override
     public boolean isScreenReadyToClose(final AbstractScreen nextScreen) {
         if (isEachPlayerDeckValid(false)) {
@@ -234,17 +228,11 @@ public class NewDuelSettingsScreen
             return playerPanels[player.isHuman() ? 0 : 1];
         }
 
-        /* (non-Javadoc)
-         * @see magic.model.player.IPlayerProfileListener#PlayerProfileUpdated(magic.model.player.PlayerProfile)
-         */
         @Override
         public void PlayerProfileUpdated(PlayerProfile player) {
             getDuelPlayerPanel(player).setPlayer(player);
         }
 
-        /* (non-Javadoc)
-         * @see magic.model.player.IPlayerProfileListener#PlayerProfileDeleted(magic.model.player.PlayerProfile)
-         */
         @Override
         public void PlayerProfileDeleted(PlayerProfile deletedPlayer) {
             if (deletedPlayer.isHuman()) {
@@ -258,9 +246,6 @@ public class NewDuelSettingsScreen
             }
         }
 
-        /* (non-Javadoc)
-         * @see magic.model.player.IPlayerProfileListener#PlayerProfileSelected(magic.model.player.PlayerProfile)
-         */
         @Override
         public void PlayerProfileSelected(PlayerProfile player) {
             getDuelPlayerPanel(player).setPlayer(player);
@@ -288,9 +273,6 @@ public class NewDuelSettingsScreen
 
     }
 
-    /* (non-Javadoc)
-     * @see magic.ui.interfaces.IStatusBar#getStatusPanel()
-     */
     @Override
     public JPanel getStatusPanel() {
         return null;
