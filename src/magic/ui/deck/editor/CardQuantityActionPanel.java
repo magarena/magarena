@@ -20,11 +20,12 @@ class CardQuantityActionPanel extends JPanel {
     private static final String _S1 = "Add card";
     private static final String _S2 = "Add selected card to deck (or left click row).";
     private static final String _S3 = "Remove card";
-    private static final String _S4 = "Remove selected card from deck (or right click row).<br>Must use this button to remove last instance of a card.";
+    private static final String _S4 = "Remove selected card from deck (or right click row).";
     private static final String _S5 = "Increment";
     private static final String _S6 = "Increase the quantity by one. Maximum is ten.";
     private static final String _S7 = "Decrement";
     private static final String _S8 = "Decrease the quantity by one. Minium is one.";
+    private static final String _S9 = "Must use this button to remove last instance of a card.";
 
     // UI components
     private final ActionBarButton addButton;
@@ -50,7 +51,7 @@ class CardQuantityActionPanel extends JPanel {
         minusButton = new ActionBarButton(
                 IconImages.getIcon(MagicIcon.MINUS_ICON),
                 UiString.get(_S3),
-                UiString.get(_S4),
+                UiString.get(String.format("%s<br>%s", UiString.get(_S4), UiString.get(_S9))),
                 minusButtonAction);
 
         incrementButton = new ActionBarButton(
