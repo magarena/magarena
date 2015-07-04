@@ -11,12 +11,14 @@ import magic.ui.CardFilterPanel;
 import magic.ui.ICardFilterPanelListener;
 import magic.ui.UiString;
 import magic.ui.cardtable.CardTablePanel;
+import magic.ui.translation.StringContext;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
 class FilteredCardPoolPanel extends JPanel implements ICardFilterPanelListener {
 
     // translatable strings
+    @StringContext(eg="Cards: 290")
     private static final String _S1 = "Cards: %s";
 
     // fired when card selection changes
