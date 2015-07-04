@@ -8,12 +8,23 @@ import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 import magic.data.MagicIcon;
 import magic.ui.IconImages;
+import magic.ui.UiString;
 import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.widget.FontsAndBorders;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
 class CardQuantityActionPanel extends JPanel {
+
+    // translatable strings
+    private static final String _S1 = "Add card";
+    private static final String _S2 = "Add selected card to deck (or left click row).";
+    private static final String _S3 = "Remove card";
+    private static final String _S4 = "Remove selected card from deck (or right click row).<br>Must use this button to remove last instance of a card.";
+    private static final String _S5 = "Increment";
+    private static final String _S6 = "Increase the quantity by one. Maximum is ten.";
+    private static final String _S7 = "Decrement";
+    private static final String _S8 = "Decrease the quantity by one. Minium is one.";
 
     // UI components
     private final ActionBarButton addButton;
@@ -32,18 +43,20 @@ class CardQuantityActionPanel extends JPanel {
 
         addButton = new ActionBarButton(
                 IconImages.getIcon(MagicIcon.PLUS_ICON),
-                "Add card", "Add selected card to deck (or left click row).",
+                UiString.get(_S1),
+                UiString.get(_S2),
                 plusButtonAction);
 
         minusButton = new ActionBarButton(
                 IconImages.getIcon(MagicIcon.MINUS_ICON),
-                "Remove card", "Remove selected card from deck (or right click row).<br>Must use this button to remove last instance of a card.",
+                UiString.get(_S3),
+                UiString.get(_S4),
                 minusButtonAction);
 
         incrementButton = new ActionBarButton(
                 IconImages.getIcon(MagicIcon.ARROWUP_ICON),
-                "Increment",
-                "Increase the quantity by one. Maximum is ten.",
+                UiString.get(_S5),
+                UiString.get(_S6),
                 new AbstractAction() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
@@ -56,8 +69,8 @@ class CardQuantityActionPanel extends JPanel {
                 });
         decrementButton = new ActionBarButton(
                 IconImages.getIcon(MagicIcon.ARROWDOWN_ICON),
-                "Decrement",
-                "Decrease the quantity by one. Minium is one.",
+                UiString.get(_S7),
+                UiString.get(_S8),
                 new AbstractAction() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
