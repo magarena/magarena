@@ -11,10 +11,17 @@ import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
 import magic.ui.MagicSound;
 import magic.ui.ScreenController;
+import magic.ui.UiString;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
 class MainViewsPanel extends JPanel implements IDeckEditorListener {
+
+    // translatable strings
+    private static final String _S1 = "Deck";
+    private static final String _S2 = "Card Pool";
+    private static final String _S3 = "Card Recall";
+    private static final String _S4 = "Legality";
 
     public static final int DECK_ACTION_PANEL_WIDTH = 40;
 
@@ -78,21 +85,21 @@ class MainViewsPanel extends JPanel implements IDeckEditorListener {
 
     private void addToggleButtons() {
 
-        toggleButtonsPanel.addToggleButton("Deck", new AbstractAction() {
+        toggleButtonsPanel.addToggleButton(UiString.get(_S1), new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 deckPanel.setDeckTable(deckTable);
                 setView(deckPanel);
             }
         });
-        toggleButtonsPanel.addToggleButton("Card Pool", new AbstractAction() {
+        toggleButtonsPanel.addToggleButton(UiString.get(_S2), new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 cardPoolPanel.setDeckTable(deckTable);
                 setView(cardPoolPanel);
             }
         });
-        toggleButtonsPanel.addToggleButton("Card Recall", new AbstractAction() {
+        toggleButtonsPanel.addToggleButton(UiString.get(_S3), new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 recallPanel.setDeckTable(deckTable);
@@ -100,7 +107,7 @@ class MainViewsPanel extends JPanel implements IDeckEditorListener {
             }
         });
         if (ScreenController.isDuelActive() == false) {
-            toggleButtonsPanel.addToggleButton("Legality", new AbstractAction() {
+            toggleButtonsPanel.addToggleButton(UiString.get(_S4), new AbstractAction() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
                     setView(legalityPanel);
@@ -108,7 +115,7 @@ class MainViewsPanel extends JPanel implements IDeckEditorListener {
             });
         }
 
-        toggleButtonsPanel.setSelectedToggleButton("Deck");
+        toggleButtonsPanel.setSelectedToggleButton(UiString.get(_S1));
         toggleButtonsPanel.refreshLayout();
     }
 
