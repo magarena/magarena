@@ -28,7 +28,7 @@ import java.util.Set;
 import magic.data.MagicIcon;
 import magic.ui.CardImagesProvider;
 import magic.ui.UiString;
-import magic.ui.translation.StringContext;
+import magic.ui.StringContext;
 
 @SuppressWarnings("serial")
 public class DeckTiledCardsScreen

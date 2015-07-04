@@ -1,4 +1,4 @@
-package magic.ui.translation;
+package magic.ui;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

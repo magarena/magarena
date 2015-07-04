@@ -11,7 +11,7 @@ import magic.ui.CardFilterPanel;
 import magic.ui.ICardFilterPanelListener;
 import magic.ui.UiString;
 import magic.ui.cardtable.CardTablePanel;
-import magic.ui.translation.StringContext;
+import magic.ui.StringContext;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")

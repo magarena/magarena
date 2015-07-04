@@ -21,7 +21,6 @@ import java.util.jar.JarEntry;
 import java.util.jar.JarInputStream;
 import java.util.zip.CRC32;
 import magic.data.GeneralConfig;
-import magic.ui.translation.StringContext;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicSystem;
 
