@@ -18,6 +18,7 @@ import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
 import magic.ui.MagicSound;
 import magic.ui.ScreenController;
+import magic.ui.UiString;
 import magic.ui.cardtable.BasicDeckTablePanel;
 import magic.ui.cardtable.CardTablePanel;
 import magic.ui.dialog.RandomDeckGeneratorDialog;
@@ -27,6 +28,10 @@ import net.miginfocom.swing.MigLayout;
 @SuppressWarnings("serial")
 class CardPoolViewPanel extends JPanel implements IDeckEditorView, FocusListener {
 
+    // translatable strings
+    private static final String _S1 = "Random Deck";
+    private static final String _S2 = "Generate a random deck using current set of cards in card pool.";
+    
     // fired when card selection changes
     public static final String CP_CARD_SELECTED = FilteredCardPoolPanel.CP_CARD_SELECTED;
 
@@ -183,8 +188,8 @@ class CardPoolViewPanel extends JPanel implements IDeckEditorView, FocusListener
     private ActionBarButton getRandomDeckActionButton() {
         return new ActionBarButton(
                 IconImages.getIcon(MagicIcon.RANDOM_ICON),
-                "Random Deck",
-                "Generate a random deck using current set of cards in card pool.",
+                UiString.get(_S1),
+                UiString.get(_S2),
                 new AbstractAction() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
