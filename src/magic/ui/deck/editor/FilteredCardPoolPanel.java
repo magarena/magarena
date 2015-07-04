@@ -9,11 +9,15 @@ import javax.swing.JTable;
 import magic.model.MagicCardDefinition;
 import magic.ui.CardFilterPanel;
 import magic.ui.ICardFilterPanelListener;
+import magic.ui.UiString;
 import magic.ui.cardtable.CardTablePanel;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
 class FilteredCardPoolPanel extends JPanel implements ICardFilterPanelListener {
+
+    // translatable strings
+    private static final String _S1 = "Cards: %s";
 
     // fired when card selection changes
     public static final String CP_CARD_SELECTED = CardTablePanel.CP_CARD_SELECTED;
@@ -101,10 +105,7 @@ class FilteredCardPoolPanel extends JPanel implements ICardFilterPanelListener {
     }
 
     private String getCardPoolTitle() {
-        final StringBuffer sb = new StringBuffer();
-        final int total = cardPool.size();
-        sb.append("Cards: ").append(NumberFormat.getInstance().format(total));
-        return sb.toString();
+        return UiString.get(_S1, NumberFormat.getInstance().format(cardPool.size()));
     }
 
     @Override
