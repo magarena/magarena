@@ -13,6 +13,7 @@ import magic.data.MagicIcon;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
 import magic.ui.IconImages;
+import magic.ui.UiString;
 import magic.ui.cardtable.CardTablePanel;
 import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.widget.TexturedPanel;
@@ -21,6 +22,15 @@ import net.miginfocom.swing.MigLayout;
 @SuppressWarnings("serial")
 class LegalityPanel extends JPanel implements IDeckEditorView {
 
+    // translatable strings
+    private static final String _S1 = "Legal";
+    private static final String _S2 = "Illegal";
+    private static final String _S3 = "Banned";
+    private static final String _S4 = "Restricted";
+    private static final String _S5 = "Only one copy of a card allowed in the deck.";
+    private static final String _S6 = "Too many copies";
+    private static final String _S7 = "<html><b>Too many copies of a card in deck</b><br>Does not apply to basic lands,<br><i>Relentless Rats</i> or <i>Shadowborn Apostle</i>.</html>";
+    
     // fired when card selection changes
     public static final String CP_CARD_SELECTED = CardTablePanel.CP_CARD_SELECTED;
 
@@ -117,11 +127,11 @@ class LegalityPanel extends JPanel implements IDeckEditorView {
 
             setLayout(new MigLayout("gapx 20, aligny center"));
 
-            add(getIconLabel(MagicIcon.LEGAL_ICON, "Legal"));
-            add(getIconLabel(MagicIcon.ILLEGAL_ICON, "Illegal"));
-            add(getIconLabel(MagicIcon.BANNED_ICON, "Banned"));
-            add(getIconLabel(MagicIcon.RESTRICTED_ICON, "Restricted", "Only one copy of a card allowed in the deck."));
-            add(getIconLabel(MagicIcon.RESTRICTED_ICON, "Too many copies", "<html><b>Too many copies of a card in deck</b><br>Does not apply to basic lands,<br><i>Relentless Rats</i> or <i>Shadowborn Apostle</i>.</html>"));
+            add(getIconLabel(MagicIcon.LEGAL_ICON, UiString.get(_S1)));
+            add(getIconLabel(MagicIcon.ILLEGAL_ICON, UiString.get(_S2)));
+            add(getIconLabel(MagicIcon.BANNED_ICON, UiString.get(_S3)));
+            add(getIconLabel(MagicIcon.RESTRICTED_ICON, UiString.get(_S4), UiString.get(_S5)));
+            add(getIconLabel(MagicIcon.RESTRICTED_ICON, UiString.get(_S6), UiString.get(_S7)));
         }
 
         private JLabel getIconLabel(MagicIcon magicIcon, String text, String tooltip) {
