@@ -21,6 +21,7 @@ import java.util.jar.JarEntry;
 import java.util.jar.JarInputStream;
 import java.util.zip.CRC32;
 import magic.data.GeneralConfig;
+import magic.ui.translation.StringContext;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicSystem;
 
@@ -31,6 +32,7 @@ public final class UiString {
     
     private static final CRC32 crc = new CRC32();
     private static final Map<Long, String> translationsMap = new HashMap<>();
+    private static final Map<Long, String> annotations = new HashMap<>();
 
     static {
         try {
@@ -152,6 +154,7 @@ public final class UiString {
         final String UTF_PREFIX = "\u25AB"; // small white square ▫
 
         final Map<Long, String> stringsMap = new LinkedHashMap<>();
+        annotations.clear();
         
         for (final String c : getClassNamesInPackage(MagicSystem.getJarFile(), "magic")) {
             final String className = c.substring(0, c.length() - ".class".length());
@@ -170,6 +173,9 @@ public final class UiString {
                             final String stringValue = UTF_PREFIX + StringEscapeUtils.escapeJava((String) f.get(null));
                             if (stringsMap.containsKey(stringId) == false) {
                                 stringsMap.put(stringId, stringValue);
+                                if (f.getAnnotation(StringContext.class) != null) {
+                                    annotations.put(stringId, f.getAnnotation(StringContext.class).eg());
+                                }
                             } else if (stringValue.equals(stringsMap.get(stringId)) == false) {
                                 throw new RuntimeException(
                                         "Failed to generate translation file because the following strings have the same CRC32 value:-\n" +
@@ -191,9 +197,12 @@ public final class UiString {
     public static void createTranslationFile(File txtFile, Map<Long, String> stringsMap) throws FileNotFoundException, UnsupportedEncodingException {
         try (final PrintWriter writer = new PrintWriter(txtFile, UTF_CHAR_SET)) {
             for (Map.Entry<Long, String> entry : stringsMap.entrySet()) {
+                final Long key = entry.getKey();
+                if (annotations.containsKey(key)) {
+                    writer.println(String.format("# %d eg. %s", key, annotations.get(key)));
+                }
                 // CRC32 function returns 32 bit long = max 10 numerals. Pad if smaller.
-                final String id = String.format("%010d", entry.getKey());
-                writer.println(id + " = " + entry.getValue());
+                writer.println(String.format("%010d = %s", key, entry.getValue()));
             }
         }
     }
