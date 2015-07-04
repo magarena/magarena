@@ -7,12 +7,16 @@ import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
 import magic.model.MagicDeckConstructionRule;
 import magic.ui.ScreenController;
+import magic.ui.UiString;
 import magic.ui.utility.GraphicsUtils;
 import magic.utility.MagicSystem;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
 public class DeckEditorScreenPanel extends JPanel implements IDeckEditorListener {
+
+    // translatable strings
+    private static final String _S1 = "This deck is illegal.\n\n%s";
 
     private static final GeneralConfig CONFIG = GeneralConfig.getInstance();
 
@@ -94,7 +98,7 @@ public class DeckEditorScreenPanel extends JPanel implements IDeckEditorListener
     }
 
     private void notifyUser(final String brokenRules) {
-        ScreenController.showWarningMessage("This deck is illegal.\n\n" + brokenRules);
+        ScreenController.showWarningMessage(UiString.get(_S1, brokenRules));
     }
 
     public boolean validateDeck(final boolean notifyUser) {
