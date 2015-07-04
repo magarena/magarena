@@ -20,7 +20,7 @@ public class MagicArtificialCondition extends MagicCondition {
     
     @Override
     public MagicEvent getEvent(final MagicSource source) {
-        return new MagicConditionEvent(source, this);
+        return new MagicConditionEvent(source, this, cond.getEventAction());
     }
 
     @Override
