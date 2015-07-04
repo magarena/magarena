@@ -28,6 +28,7 @@ import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
 import magic.ui.IconImages;
 import magic.ui.UiString;
+import magic.ui.translation.StringContext;
 import magic.ui.widget.FontsAndBorders;
 import net.miginfocom.swing.MigLayout;
 
@@ -36,7 +37,9 @@ public class CardsLegalityPanel extends JPanel {
 
     // translatable strings
     private static final String _S1 = "Deck";
+    @StringContext(eg="Memnite is illegal in Standard.")
     private static final String _S2 ="<html>%s <b>%s</b> in %s.</html>";
+    @StringContext(eg="Illegal deck size for Vintage.")
     private static final String _S3 = "Illegal deck size for %s.";
     private static final String _S4 = "A minimum of %d cards is required.";
 
