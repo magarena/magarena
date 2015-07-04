@@ -15,6 +15,7 @@ import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
 import magic.ui.MagicSound;
 import magic.ui.ScreenController;
+import magic.ui.UiString;
 import magic.ui.cardtable.CardTablePanel;
 import magic.ui.cardtable.DeckTablePanel;
 import magic.ui.screen.widget.ActionBarButton;
@@ -22,6 +23,15 @@ import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
 class DeckPanel extends JPanel implements IDeckEditorView {
+
+    // translatable string
+    private static final String _S1 = "Clear deck";
+    private static final String _S2 = "Remove all cards from deck. Confirmation required.";
+    private static final String _S3 = "Remove all cards from deck?";
+    private static final String _S4 = "This action cannot be undone.";
+    private static final String _S5 = "Clear Deck?";
+    private static final String _S6 = "Yes";
+    private static final String _S7 = "No";
 
     // fired when card selection changes
     public static final String CP_CARD_SELECTED = CardTablePanel.CP_CARD_SELECTED;
@@ -76,8 +86,8 @@ class DeckPanel extends JPanel implements IDeckEditorView {
     private ActionBarButton getClearDeckActionButton() {
         return new ActionBarButton(
                 IconImages.getIcon(MagicIcon.CLEAR_ICON),
-                "Clear deck",
-                "Remove all cards from deck. Confirmation required.",
+                UiString.get(_S1),
+                UiString.get(_S2),
                 new AbstractAction() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
@@ -114,7 +124,7 @@ class DeckPanel extends JPanel implements IDeckEditorView {
     }
 
     private String getDeckTitle(final MagicDeck deck) {
-        return "  " + deck.getName();
+        return String.format("   %s", deck.getName());
     }
 
     private void setLookAndFeel() {
@@ -133,12 +143,12 @@ class DeckPanel extends JPanel implements IDeckEditorView {
         if (deck.size() > 0) {
             final int userResponse = JOptionPane.showOptionDialog(
                     ScreenController.getMainFrame(),
-                    "<html>Remove all cards from deck?<br><br><b>This action cannot be undone</b>.</html>",
-                    "Clear Deck?",
+                    String.format("<html>%s<br><br><b>%s</b></html>", UiString.get(_S3), UiString.get(_S4)),
+                    UiString.get(_S5),
                     JOptionPane.YES_NO_OPTION,
                     JOptionPane.QUESTION_MESSAGE,
                     null,
-                    new String[] {"Yes", "No"}, "No");
+                    new String[] {UiString.get(_S6), UiString.get(_S7)}, UiString.get(_S7));
             if (userResponse == JOptionPane.YES_OPTION) {
                 setDeck(null);
                 listener.deckUpdated(getDeck());
