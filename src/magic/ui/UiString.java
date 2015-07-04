@@ -8,6 +8,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.UnsupportedEncodingException;
 import java.lang.reflect.Field;
+import java.lang.reflect.Modifier;
 import java.net.URISyntaxException;
 import java.nio.file.Path;
 import java.util.ArrayList;
@@ -156,7 +157,13 @@ public final class UiString {
             final String className = c.substring(0, c.length() - ".class".length());
             try {
                 for (final Field f : Class.forName(className).getDeclaredFields()) {
-                    if (f.getType() == String.class && f.getName().startsWith("_S")) {
+
+                    final boolean isFieldValid =
+                            f.getType() == String.class
+                            && f.getName().startsWith("_S")
+                            && Modifier.isStatic(f.getModifiers());   // prevents a UnsafeObjectFieldAccessorImpl error.
+
+                    if (isFieldValid) {
                         f.setAccessible(true);
                         try {
                             final Long stringId = getStringId((String) f.get(null));
