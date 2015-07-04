@@ -28,6 +28,7 @@ import java.util.Set;
 import magic.data.MagicIcon;
 import magic.ui.CardImagesProvider;
 import magic.ui.UiString;
+import magic.ui.translation.StringContext;
 
 @SuppressWarnings("serial")
 public class DeckTiledCardsScreen
@@ -45,7 +46,9 @@ public class DeckTiledCardsScreen
     private static final String _S8 = "Display only land cards.";
     private static final String _S9 = "Other Spells";
     private static final String _S10 = "Display any other card that is not a creature or land.";
+    @StringContext(eg = "Creatures (28 cards, 46%)")
     private static final String _S11 = "%s (%d cards, %d%%)";
+    @StringContext(eg = "All cards (60 cards)")
     private static final String _S12 = "%s (%d cards)";
 
     private enum CardTypeFilter {
