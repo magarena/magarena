@@ -59,7 +59,6 @@ public class DeckEditorSideBarPanel extends TexturedPanel {
         return statsViewer;
     }
 
-//    @Override
     public final void setCard(final MagicCardDefinition card) {
         cardViewer.setCard(card);
     }
