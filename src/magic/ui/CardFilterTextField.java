@@ -1,6 +1,5 @@
 package magic.ui;
 
-import magic.ui.widget.*;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
@@ -9,16 +8,18 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
 import javax.swing.JTextField;
 import javax.swing.Timer;
 import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
-
+import magic.ui.widget.*;
 import magic.ui.widget.TextPrompt.Show;
 
 @SuppressWarnings("serial")
 public class CardFilterTextField extends JTextField implements DocumentListener {
+
+    // translatable strings
+    private static final String _S1 = "Search text...";
 
     private static final int SEARCH_TIMER_DELAY = 500; //msecs
 
@@ -41,7 +42,7 @@ public class CardFilterTextField extends JTextField implements DocumentListener 
     }
 
     private void setLookAndFeel() {
-        final TextPrompt promptField = new TextPrompt("Search text...", this);
+        final TextPrompt promptField = new TextPrompt(UiString.get(_S1), this);
         promptField.setShow(Show.FOCUS_LOST);
         promptField.changeStyle(Font.ITALIC);
         promptField.setForeground(Color.GRAY);
