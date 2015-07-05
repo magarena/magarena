@@ -48,6 +48,13 @@ public class DownloadImagesDialog
     extends JDialog
     implements ActionListener, PropertyChangeListener, IImageDownloadListener {
 
+    // translatable strings
+    private static final String _S1 = "Download Card Images";
+    private static final String _S2 = "Cancel";
+    private static final String _S3 = "Run in background...";
+    private static final String _S4 = "Copy to clipboard";
+    private static final String _S5 = "Error details have been copied to the clipboard.";
+
     private final ErrorLogPanel errorPanel = new ErrorLogPanel();
     private final JButton cancelButton = new JButton();
     private final JButton backgroundButton = new JButton();
@@ -103,7 +110,7 @@ public class DownloadImagesDialog
     }
 
     private void setLookAndFeel() {
-        setTitle("Download Card Images");
+        setTitle(UiString.get(_S1));
         setResizable(false);
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setSize(360, 460);
@@ -150,11 +157,11 @@ public class DownloadImagesDialog
 
     private JPanel getButtonPanel() {
         // cancel button
-        cancelButton.setText("Cancel");
+        cancelButton.setText(UiString.get(_S2));
         cancelButton.setFocusable(false);
         cancelButton.addActionListener(this);
         // background button
-        backgroundButton.setText("Run in background...");
+        backgroundButton.setText(UiString.get(_S3));
         backgroundButton.setFocusable(false);
         backgroundButton.addActionListener(this);
         // layout
@@ -253,14 +260,14 @@ public class DownloadImagesDialog
             scrollPane.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED);
             scrollPane.setBorder(FontsAndBorders.BLACK_BORDER);
 
-            final JButton copyButton = new JButton("Copy to clipboard");
+            final JButton copyButton = new JButton(UiString.get(_S4));
             copyButton.addActionListener(new AbstractAction() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
                     final Clipboard clip = Toolkit.getDefaultToolkit().getSystemClipboard();
                     final StringSelection textSelection = new StringSelection(textArea.getText());
                     clip.setContents(textSelection, null);
-                    ScreenController.showInfoMessage("Error details have been copied to the clipboard.");
+                    ScreenController.showInfoMessage(UiString.get(_S5));
                 }
             });
 
