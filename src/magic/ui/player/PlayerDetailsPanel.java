@@ -1,15 +1,12 @@
 package magic.ui.player;
 
-import magic.model.player.AiProfile;
-import magic.model.player.PlayerProfile;
-import magic.ui.widget.FontsAndBorders;
-import net.miginfocom.swing.MigLayout;
-
+import java.awt.Color;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
-
-import java.awt.Color;
+import magic.model.player.PlayerProfile;
+import magic.ui.widget.FontsAndBorders;
+import net.miginfocom.swing.MigLayout;
 
 /**
  * Composite JPanel which displays player name and if applicable,
