@@ -1,21 +1,19 @@
 package magic.ui.screen.widget;
 
-import magic.ui.widget.FontsAndBorders;
-
-import magic.ui.utility.MagicStyle;
-import javax.swing.AbstractAction;
-import javax.swing.JButton;
-import javax.swing.SwingConstants;
-
 import java.awt.Color;
 import java.awt.Cursor;
 import java.awt.event.ActionEvent;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import javax.swing.AbstractAction;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
-import magic.ui.utility.GraphicsUtils;
+import javax.swing.JButton;
+import javax.swing.SwingConstants;
 import magic.ui.ScreenController;
+import magic.ui.utility.GraphicsUtils;
+import magic.ui.utility.MagicStyle;
+import magic.ui.widget.FontsAndBorders;
 
 @SuppressWarnings("serial")
 public class MenuButton extends JButton {
