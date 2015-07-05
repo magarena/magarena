@@ -94,21 +94,22 @@ public class DuelPlayerDeckPanel extends TexturedPanel implements IThemeStyle {
 
     private String getFormattedDeckValue() {
         if (deckType == DeckType.Random) {
-            if (deckValue.equals(MagicDeckProfile.ANY_THREE)) {
-                return UiString.get(_S2);
-            } else if (deckValue.equals(MagicDeckProfile.ANY_TWO)) {
-                return UiString.get(_S3);
-            } else if (deckValue.equals(MagicDeckProfile.ANY_ONE)) {
-                return UiString.get(_S4);
-            } else if (deckValue.equals(MagicDeckProfile.ANY_DECK)) {
-                return UiString.get(_S5);
-            } else {
-                if (deckValue.length() <= 3) {
-                    return getVerboseColors(deckValue);
-                } else {
-                    // random theme deck.
-                    return deckValue;
-                }
+            switch (deckValue) {
+                case MagicDeckProfile.ANY_THREE:
+                    return UiString.get(_S2);
+                case MagicDeckProfile.ANY_TWO:
+                    return UiString.get(_S3);
+                case MagicDeckProfile.ANY_ONE:
+                    return UiString.get(_S4);
+                case MagicDeckProfile.ANY_DECK:
+                    return UiString.get(_S5);
+                default:
+                    if (deckValue.length() <= 3) {
+                        return getVerboseColors(deckValue);
+                    } else {
+                        // random theme deck.
+                        return deckValue;
+                    }
             }
         } else {
             return deckValue;
