@@ -4,12 +4,17 @@ import java.awt.Desktop;
 import java.io.File;
 import java.io.IOException;
 import magic.exception.DesktopNotSupportedException;
+import magic.ui.UiString;
 import magic.utility.MagicFileSystem;
 import static magic.utility.MagicFileSystem.getDataPath;
 import magic.utility.MagicSystem;
 
 
 public final class DesktopUtils {
+
+    // translatable strings
+    private static final String _S1 = "Sorry, opening this file with the default application is not supported on this operating system.";
+
     private DesktopUtils() {}
 
     public static void openMagicDirectory(final MagicFileSystem.DataPath directory) throws IOException {
@@ -44,7 +49,7 @@ public final class DesktopUtils {
                 Desktop.getDesktop().open(file);
             }
         } else {
-            throw new DesktopNotSupportedException("Sorry, opening this file with the default application is not supported on this operating system.");
+            throw new DesktopNotSupportedException(UiString.get(_S1));
         }
     }
 
