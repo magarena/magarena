@@ -14,6 +14,7 @@ import javax.swing.SwingUtilities;
 import magic.data.DeckType;
 import magic.firemind.FiremindJsonReader;
 import magic.ui.ScreenController;
+import magic.ui.UiString;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.deck.CustomDecksComboxBox;
 import magic.ui.widget.deck.FiremindDecksComboxBox;
@@ -24,15 +25,20 @@ import net.miginfocom.swing.MigLayout;
 @SuppressWarnings("serial")
 public class DeckChooserDialog extends MagicDialog {
 
+    // translatable strings
+    private static final String _S1 = "Save";
+    private static final String _S2 = "Select Deck";
+    private static final String _S3 = "Cancel";
+
     private final JComboBox<DeckType> deckTypeCombo;
     private JComboBox<String> deckNameCombo;
     private final DecksPanel decksPanel;
     private boolean isCancelled = false;
-    private final JButton saveButton = new JButton("Save");
+    private final JButton saveButton = new JButton(UiString.get(_S1));
 
     public DeckChooserDialog(final DeckType aDeckType, final String aDeckName) {
 
-        super(ScreenController.getMainFrame(), "Select Deck", new Dimension(300, 180));
+        super(ScreenController.getMainFrame(), UiString.get(_S2), new Dimension(300, 180));
         
         deckTypeCombo = getDeckTypeComboBox();
         deckTypeCombo.setSelectedItem(aDeckType);
@@ -105,7 +111,7 @@ public class DeckChooserDialog extends MagicDialog {
     }
 
     private JButton getCancelButton() {
-        final JButton btn = new JButton("Cancel");
+        final JButton btn = new JButton(UiString.get(_S3));
         btn.addActionListener(getCancelAction());
         return btn;
     }
