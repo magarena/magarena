@@ -5,7 +5,6 @@ import java.awt.Dimension;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.util.Map;
-import magic.data.GeneralConfig;
 import magic.model.MagicCardDefinition;
 import magic.utility.MagicFileSystem;
 
@@ -16,7 +15,6 @@ import magic.utility.MagicFileSystem;
 public class CachedImagesProvider implements CardImagesProvider {
 
     private static final CardImagesProvider INSTANCE=new CachedImagesProvider();
-    private static final GeneralConfig CONFIG = GeneralConfig.getInstance();
 
     private static final int MAX_IMAGES=100;
     private final Map<String,BufferedImage> scaledImages = new magic.data.LRUCache<>(MAX_IMAGES);
