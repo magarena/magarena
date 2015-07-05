@@ -3,6 +3,7 @@ package magic.ui.widget;
 import java.awt.Color;
 import java.awt.Dimension;
 import javax.swing.JLabel;
+import magic.ui.UiString;
 import magic.ui.screen.interfaces.IThemeStyle;
 import magic.ui.theme.Theme;
 import magic.ui.utility.MagicStyle;
@@ -10,6 +11,13 @@ import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
 public class KeysStripPanel extends TexturedPanel implements IThemeStyle {
+
+    // translatable strings
+    private static final String _S1 = "F1: Help";
+    private static final String _S2 = "F10: Screenshot";
+    private static final String _S3 = "F11: Fullscreen";
+    private static final String _S4 = "F12: Background";
+    private static final String _S5 = "ESC: Options / Close";
 
     private final MigLayout layout = new MigLayout();
 
@@ -23,11 +31,11 @@ public class KeysStripPanel extends TexturedPanel implements IThemeStyle {
     private void refreshLayout() {
         removeAll();
         layout.setLayoutConstraints("gap 14, insets 2 6 2 6, center");
-        add(getLabel("F1: Help"));
-        add(getLabel("F10: Screenshot"));
-        add(getLabel("F11: Fullscreen"));
-        add(getLabel("F12: Background"));
-        add(getLabel("ESC: Options / Close"));
+        add(getLabel(UiString.get(_S1)));
+        add(getLabel(UiString.get(_S2)));
+        add(getLabel(UiString.get(_S3)));
+        add(getLabel(UiString.get(_S4)));
+        add(getLabel(UiString.get(_S5)));
     }
 
     @Override
