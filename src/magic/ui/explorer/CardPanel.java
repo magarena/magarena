@@ -12,6 +12,7 @@ import javax.swing.ScrollPaneConstants;
 import magic.data.GeneralConfig;
 import magic.model.MagicCardDefinition;
 import magic.ui.CardImagesProvider;
+import magic.ui.UiString;
 import magic.ui.duel.viewer.CardViewer;
 import magic.ui.utility.GraphicsUtils;
 import net.miginfocom.swing.MigLayout;
@@ -19,11 +20,17 @@ import net.miginfocom.swing.MigLayout;
 @SuppressWarnings("serial")
 public class CardPanel extends JPanel {
 
+    // translatable strings
+    private static final String _S1 = "decks: %d";
+    private static final String _S2 = "List of decks containing this card";
+    private static final String _S3 = "Double-click deck name to view complete deck.";
+    private static final String _S4 = "searching...";
+
     private final MigLayout layout = new MigLayout();
     private final CardViewer cardViewer = new CardViewer();
     private final JScrollPane cardScrollPane = new JScrollPane();
     private final CardDecksPanel decksPanel = new CardDecksPanel();
-    private final SplitterButton decksButton = new SplitterButton("decks: 0");
+    private final SplitterButton decksButton = new SplitterButton(UiString.get(_S1, 0));
     private boolean isImageVisible = true;
 
     public CardPanel() {
@@ -52,13 +59,17 @@ public class CardPanel extends JPanel {
                     @Override
                     public void propertyChange(PropertyChangeEvent evt) {
                         final int deckCount = (int) evt.getNewValue();
-                        decksButton.setText("decks: " + deckCount);
+                        decksButton.setText(UiString.get(_S1, deckCount));
                         decksButton.setForeground(deckCount > 0 ? Color.WHITE : Color.GRAY);
                     }
                 }
         );
 
-        decksButton.setToolTipText("<html><b>List of decks containing this card</b><br>Double-click deck name to view complete deck.</html>");
+        decksButton.setToolTipText(
+                String.format("<html><b>%s</b><br>%s</html>",
+                        UiString.get(_S2),
+                        UiString.get(_S3)));
+
         decksButton.addActionListener(new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -91,7 +102,7 @@ public class CardPanel extends JPanel {
         }
 
         decksButton.setForeground(Color.GRAY);
-        decksButton.setText("searching...");
+        decksButton.setText(UiString.get(_S4));
         
         cardViewer.setCard(aCardDef);
         decksPanel.setCard(aCardDef);
