@@ -1,28 +1,37 @@
 package magic.ui.dialog;
 
-import magic.utility.MagicSystem;
-import magic.data.MagicFormat;
-import magic.ui.MagicFrame;
-import magic.ui.widget.SliderPanel;
-import net.miginfocom.swing.MigLayout;
-
+import java.awt.Component;
+import java.awt.event.ActionEvent;
 import javax.swing.AbstractAction;
+import javax.swing.DefaultListCellRenderer;
 import javax.swing.JButton;
 import javax.swing.JComboBox;
 import javax.swing.JComponent;
 import javax.swing.JDialog;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JList;
 import javax.swing.JPanel;
 import javax.swing.JRootPane;
 import javax.swing.KeyStroke;
-import javax.swing.DefaultListCellRenderer;
-import javax.swing.JList;
-import java.awt.Component;
-import java.awt.event.ActionEvent;
+import magic.data.MagicFormat;
+import magic.ui.MagicFrame;
+import magic.ui.UiString;
+import magic.ui.widget.SliderPanel;
+import magic.utility.MagicSystem;
+import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
 public class DuelPropertiesDialog extends JDialog {
+
+    // translatable strings
+    private static final String _S1 = "Duel Properties";
+    private static final String _S2 = "Initial life:";
+    private static final String _S3 = "Hand size:";
+    private static final String _S4 = "Max. games:";
+    private static final String _S5 = "Cube:";
+    private static final String _S6 = "Cancel";
+    private static final String _S7 = "Save";
 
     private final SliderPanel handSizeSliderPanel;
     private final SliderPanel lifeSliderPanel;
@@ -40,15 +49,15 @@ public class DuelPropertiesDialog extends JDialog {
     ) {
 
         super(frame, true);
-        this.setTitle("Duel Properties");
+        this.setTitle(UiString.get(_S1));
         this.setSize(300, 280);
         this.setLocationRelativeTo(frame);
         this.setResizable(false);
         this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 
-        lifeSliderPanel = new SliderPanel("Initial life:", null, (MagicSystem.isDevMode() ? 1 : 10), 30, 5, initialLife, false);
-        handSizeSliderPanel = new SliderPanel("Hand size:", null, 6, 8, 1, handSize);
-        winsSliderPanel = new SliderPanel("Max. games:", null, 1, 11, 2, maxGames);
+        lifeSliderPanel = new SliderPanel(UiString.get(_S2), null, (MagicSystem.isDevMode() ? 1 : 10), 30, 5, initialLife, false);
+        handSizeSliderPanel = new SliderPanel(UiString.get(_S3), null, 6, 8, 1, handSize);
+        winsSliderPanel = new SliderPanel(UiString.get(_S4), null, 1, 11, 2, maxGames);
 
         cubeComboBox = new JComboBox<>(MagicFormat.getDuelFormatsArray());
         cubeComboBox.setLightWeightPopupEnabled(false);
@@ -77,7 +86,7 @@ public class DuelPropertiesDialog extends JDialog {
 
     private JPanel getCubePanel() {
         final JPanel panel = new JPanel(new MigLayout());
-        panel.add(new JLabel("Cube:"));
+        panel.add(new JLabel(UiString.get(_S5)));
         panel.add(cubeComboBox, "w 100%");
         return panel;
     }
@@ -101,7 +110,7 @@ public class DuelPropertiesDialog extends JDialog {
     }
 
     private JButton getCancelButton() {
-        final JButton btn = new JButton("Cancel");
+        final JButton btn = new JButton(UiString.get(_S6));
         btn.addActionListener(new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -113,7 +122,7 @@ public class DuelPropertiesDialog extends JDialog {
     }
 
     private JButton getSaveButton() {
-        final JButton btn = new JButton("Save");
+        final JButton btn = new JButton(UiString.get(_S7));
         btn.addActionListener(new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
