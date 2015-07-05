@@ -58,6 +58,9 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
     private static final String _S14 = "Rarity";
     private static final String _S15 = "Reset";
     private static final String _S16 = "Clears all filters";
+    private static final String _S17 = "New cards";
+    private static final String _S18 = "Playable";
+    private static final String _S19 = "Unimplemented";
 
     public static final String[] COST_VALUES = new String[MagicManaCost.MAXIMUM_MANA_COST + 1];
     static {
@@ -169,9 +172,9 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
 
     private String[] getStatusFilterValues() {
         if (!listener.isDeckEditor()) {
-            return new String[] {"New cards", "Playable", "Unimplemented"};
+            return new String[] {UiString.get(_S17), UiString.get(_S18), UiString.get(_S19)};
         } else {
-            return new String[] {"New cards"};
+            return new String[] {UiString.get(_S17)};
         }
     }
 
@@ -427,15 +430,14 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
                     @Override
                     public boolean checkCard(final MagicCardDefinition card, final int i) {
                         final String status = statusCheckBoxes[i].getText();
-                        switch (status) {
-                            case "New cards":
-                                return DownloadImagesDialog.isCardInDownloadsLog(card);
-                            case "Playable":
-                                return CardDefinitions.isCardPlayable(card);
-                            case "Unimplemented":
-                                return CardDefinitions.isCardMissing(card);
-                            default:
-                                return true;
+                        if (status.equals(UiString.get(_S17))) {
+                            return DownloadImagesDialog.isCardInDownloadsLog(card);
+                        } else if (status.equals(UiString.get(_S18))) {
+                            return CardDefinitions.isCardPlayable(card);
+                        } else if (status.equals(UiString.get(_S19))) {
+                            return CardDefinitions.isCardMissing(card);
+                        } else {
+                            return true;
                         }
                     }
                 })) {
