@@ -1,19 +1,5 @@
 package magic.ui.duel.viewer;
 
-import magic.data.GeneralConfig;
-import magic.model.MagicLogBook;
-import magic.model.MagicMessage;
-import magic.ui.widget.FontsAndBorders;
-import magic.ui.widget.MessagePanel;
-import magic.ui.widget.TitleBar;
-
-import javax.swing.BorderFactory;
-import javax.swing.BoxLayout;
-import javax.swing.JPanel;
-import javax.swing.JScrollBar;
-import javax.swing.JScrollPane;
-import javax.swing.border.CompoundBorder;
-
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Cursor;
@@ -23,11 +9,28 @@ import java.awt.event.ComponentEvent;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.util.ListIterator;
+import javax.swing.BorderFactory;
+import javax.swing.BoxLayout;
+import javax.swing.JPanel;
+import javax.swing.JScrollBar;
+import javax.swing.JScrollPane;
+import javax.swing.border.CompoundBorder;
+import magic.data.GeneralConfig;
+import magic.model.MagicLogBook;
+import magic.model.MagicMessage;
 import magic.ui.ScreenController;
+import magic.ui.UiString;
+import magic.ui.widget.FontsAndBorders;
+import magic.ui.widget.MessagePanel;
+import magic.ui.widget.TitleBar;
 
+@SuppressWarnings("serial")
 public class LogBookViewer extends JPanel {
 
-    private static final long serialVersionUID = 1L;
+    // translatable strings
+    private static final String _S1 = "Log";
+    private static final String _S2 = "OFF";
+    private static final String _S3 = "[ LMB: On/Off   RMB: Full Log File ]";
 
     private static final CompoundBorder SEPARATOR_BORDER=BorderFactory.createCompoundBorder(
         BorderFactory.createMatteBorder(0,0,1,0,Color.GRAY),
@@ -58,7 +61,7 @@ public class LogBookViewer extends JPanel {
 
         setLayout(new BorderLayout());
 
-        tb = new TitleBar("Log");
+        tb = new TitleBar(UiString.get(_S1));
         tb.setBorder(BorderFactory.createMatteBorder(0, 0, 1, 0, Color.BLACK));
         tb.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
         tb.addMouseListener(mouseDispatcher);
@@ -126,7 +129,12 @@ public class LogBookViewer extends JPanel {
 
     private void updateTitlebarCaption(final boolean showHelpHints) {
         final boolean isHidden = !scrollPane.isVisible();
-        tb.setText("Log " + (isHidden ? " OFF" : "") + (showHelpHints ? "   [ LMB: On/Off   RMB: Full Log File ]" : ""));
+        tb.setText(String.format("%s %s%s",
+                UiString.get(_S1),
+                isHidden ? " " + UiString.get(_S2) : "",
+                showHelpHints ? "   " + UiString.get(_S3) : "")
+        );
+
     }
 
     public void update() {
