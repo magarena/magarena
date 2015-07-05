@@ -1,28 +1,29 @@
 package magic.ui.duel.choice;
 
-import magic.model.MagicSource;
-import magic.ui.SwingGameController;
-import magic.ui.duel.viewer.UserActionPanel;
-import magic.ui.widget.FontsAndBorders;
-import magic.ui.widget.TextLabel;
-
-import javax.swing.BorderFactory;
-import javax.swing.JButton;
-import javax.swing.JPanel;
-
 import java.awt.BorderLayout;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.List;
+import javax.swing.BorderFactory;
+import javax.swing.JButton;
+import javax.swing.JPanel;
 import magic.model.IGameController;
+import magic.model.MagicSource;
+import magic.ui.SwingGameController;
+import magic.ui.UiString;
+import magic.ui.duel.viewer.UserActionPanel;
+import magic.ui.widget.FontsAndBorders;
+import magic.ui.widget.TextLabel;
 
+@SuppressWarnings("serial")
 public class ModeChoicePanel extends JPanel implements ActionListener {
 
-    private static final long serialVersionUID = 1L;
+    // translatable strings
+    private static final String _S1 = "Choose the mode.";
 
-    private static final String MESSAGE="Choose the mode.";
+    private static final String MESSAGE = UiString.get(_S1);
     private static final Dimension BUTTON_DIMENSION=new Dimension(70,25);
 
     private final SwingGameController controller;
