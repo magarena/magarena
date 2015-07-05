@@ -19,6 +19,7 @@ import magic.ui.CardFilterPanel;
 import magic.ui.utility.GraphicsUtils;
 import magic.ui.ICardFilterPanelListener;
 import magic.ui.ScreenController;
+import magic.ui.UiString;
 import magic.ui.cardtable.CardTable;
 import magic.ui.cardtable.ICardSelectionListener;
 import magic.utility.MagicSystem;
@@ -26,6 +27,11 @@ import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
 public class ExplorerPanel extends JPanel implements ICardSelectionListener, ICardFilterPanelListener {
+
+    // translatable strings
+    private static final String _S1 = "Cards:";
+    private static final String _S2 = "Playable:";
+    private static final String _S3 = "Unimplemented:";
 
     private static final int FILTERS_PANEL_HEIGHT = 88; // pixels
     private static final GeneralConfig CONFIG = GeneralConfig.getInstance();
@@ -95,12 +101,14 @@ public class ExplorerPanel extends JPanel implements ICardSelectionListener, ICa
     }
 
     private String generatePoolTitle() {
-        final StringBuffer sb = new StringBuffer();
         final int total = filterPanel.getTotalCardCount();
-        sb.append("Cards: ").append(NumberFormat.getInstance().format(total));
-        sb.append("      Playable: ").append(getCountCaption(total, filterPanel.getPlayableCardCount()));
-        sb.append("      Unimplemented: ").append(getCountCaption(total, filterPanel.getMissingCardCount()));
-        return sb.toString();
+        return String.format("%s %s      %s %s      %s %s",
+                UiString.get(_S1),
+                NumberFormat.getInstance().format(total),
+                UiString.get(_S2),
+                getCountCaption(total, filterPanel.getPlayableCardCount()),
+                UiString.get(_S3),
+                getCountCaption(total, filterPanel.getMissingCardCount()));
     }
 
     private String getCountCaption(final int total, final int value) {
