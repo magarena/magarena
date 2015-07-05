@@ -1,25 +1,27 @@
 package magic.ui.player;
 
-import magic.model.player.HumanProfile;
-import magic.ui.widget.FontsAndBorders;
-import magic.ui.utility.MagicStyle;
-import net.miginfocom.swing.MigLayout;
-
+import java.awt.Color;
+import java.awt.Component;
+import java.awt.Dimension;
 import javax.swing.BorderFactory;
 import javax.swing.JLabel;
 import javax.swing.JList;
 import javax.swing.JPanel;
 import javax.swing.ListCellRenderer;
 import javax.swing.SwingConstants;
-
-import java.awt.Color;
-import java.awt.Component;
-import java.awt.Dimension;
+import magic.model.player.HumanProfile;
 import magic.ui.IconImages;
+import magic.ui.UiString;
+import magic.ui.utility.MagicStyle;
+import magic.ui.widget.FontsAndBorders;
+import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
 public class HumanPlayerJList
     extends JList<HumanProfile> {
+
+    // translatable strings
+    private static final String _S1 = "Last played: %s";
 
     public HumanPlayerJList() {
         setOpaque(false);
@@ -74,7 +76,7 @@ public class HumanPlayerJList
         }
 
         private JLabel getTimestampLabel() {
-            final JLabel lbl = new JLabel("Last played: " + profile.getStats().getLastPlayed());
+            final JLabel lbl = new JLabel(UiString.get(_S1, profile.getStats().getLastPlayed()));
             lbl.setForeground(foreColor);
             return lbl;
         }
