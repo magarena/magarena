@@ -2,8 +2,17 @@ package magic.model.player;
 
 import java.util.Properties;
 import magic.ai.MagicAIImpl;
+import magic.ui.StringContext;
+import magic.ui.UiString;
 
 public class AiProfile extends PlayerProfile {
+
+    // translatable strings
+    @StringContext(eg = "AI: minimax")
+    private static final String _S1 = "AI : %s";
+    private static final String _S2 = "Level: %d  Extra Life: %d";
+    @StringContext(eg = "Mini Max, level 6 AI (MMAB)")
+    private static final String _S3 = "%s, level %d AI (%s)";
 
     private static final String PLAYER_TYPE = "ai";
 
@@ -85,16 +94,16 @@ public class AiProfile extends PlayerProfile {
 
     @Override
     public String getPlayerTypeLabel() {
-        return "AI : " + getAiType();
+        return UiString.get(_S1, getAiType());
     }
     
     @Override
     public String getPlayerAttributeLabel() {
-        return "Level: " + getAiLevel() + "  Extra Life: " + getExtraLife();
+        return UiString.get(_S2, getAiLevel(), getExtraLife());
     }
     
     @Override
     public String getPlayerLabel() {
-        return getPlayerName() + ", level " + getAiLevel() + " AI (" + getAiType().name() + ")";
+        return UiString.get(_S3, getPlayerName(), getAiLevel(), getAiType().name());
     }
 }
