@@ -27,6 +27,7 @@ import magic.utility.DeckUtils;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
 import magic.ui.ScreenController;
+import magic.ui.UiString;
 import net.miginfocom.swing.MigLayout;
 import static magic.utility.DeckUtils.DECK_EXTENSION;
 import static magic.utility.DeckUtils.getDeckFolder;
@@ -35,6 +36,9 @@ import magic.utility.MagicSystem;
 
 @SuppressWarnings("serial")
 class CardDecksPanel extends JPanel {
+
+    // translatable strings
+    private static final String _S1 =  "Invalid Deck!";
 
     public static final String CP_DECKS_UPDATED = "DecksUpdated";
     private static final int TIMER_DELAY_MSECS = 500;
@@ -74,7 +78,10 @@ class CardDecksPanel extends JPanel {
                     if (deck.isValid()) {
                         ScreenController.showDeckViewScreen(deck, card);
                     } else {
-                        ScreenController.showWarningMessage("<html><b>Invalid Deck!</b><br>" + deck.getDescription());
+                        ScreenController.showWarningMessage(
+                                String.format("<html><b>%s</b><br>%s</html>",
+                                        UiString.get(_S1),
+                                        deck.getDescription()));
                     }
                 }
             }
