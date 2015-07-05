@@ -76,6 +76,10 @@ public class SwingGameController implements IUIGameController, ILogBookListener 
     private static final String _S2 = "lost";
     @StringContext(eg = "Player1 conceded/lost the game.")
     private static final String _S3 = "%s %s the game.";
+    private static final String _S4 = "You may pay the buyback %s.";
+    @StringContext(eg = "get single kicker count choice")
+    private static final String _S5 = "You may pay the %s %s.";
+    private static final String _S6 = "You may take a mulligan.";
 
     private static final GeneralConfig CONFIG = GeneralConfig.getInstance();
 
@@ -840,7 +844,7 @@ public class SwingGameController implements IUIGameController, ILogBookListener 
                 return new MayChoicePanel(
                     SwingGameController.this,
                     source,
-                    "You may pay the buyback " + costText + '.'
+                    UiString.get(_S4, costText)
                 );
             }
         });
@@ -874,7 +878,10 @@ public class SwingGameController implements IUIGameController, ILogBookListener 
         final MayChoicePanel kickerPanel = waitForInput(new Callable<MayChoicePanel>() {
             @Override
             public MayChoicePanel call() {
-                return new MayChoicePanel(SwingGameController.this, source, "You may pay the " + name + ' ' + cost.getText() + '.');
+                return new MayChoicePanel(
+                        SwingGameController.this,
+                        source,
+                        UiString.get(_S5, name, cost.getText()));
             }
         });
         return kickerPanel.isYesClicked() ? 1 : 0;
@@ -901,9 +908,9 @@ public class SwingGameController implements IUIGameController, ILogBookListener 
                         (player.getHandSize() == DuelConfig.getInstance().getHandSize() &&
                          GeneralConfig.getInstance().showMulliganScreen());
                 if (showMulliganScreen) {
-                    return new MulliganChoicePanel(SwingGameController.this, source, "You may take a mulligan.", player.getPrivateHand());
+                    return new MulliganChoicePanel(SwingGameController.this, source, UiString.get(_S6), player.getPrivateHand());
                 } else {
-                    return new MayChoicePanel(SwingGameController.this, source, "You may take a mulligan.");
+                    return new MayChoicePanel(SwingGameController.this, source, UiString.get(_S6));
                 }
             }
         });
