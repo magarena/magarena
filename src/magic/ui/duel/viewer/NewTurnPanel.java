@@ -6,12 +6,16 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import magic.model.MagicGame;
 import magic.ui.IconImages;
+import magic.ui.UiString;
 import magic.ui.utility.MagicStyle;
 import magic.ui.theme.Theme;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
 class NewTurnPanel extends JPanel {
+
+    // translatable strings
+    private static final String _S1 = "Turn %d";
 
     private final MigLayout migLayout = new MigLayout("insets 0 2 0 0, gapx 10");
     private final JLabel iconLabel = new JLabel();
@@ -38,7 +42,7 @@ class NewTurnPanel extends JPanel {
 
     public void refreshData(final MagicGame game) {
         iconLabel.setIcon(IconImages.getIconSize4(game.getTurnPlayer().getPlayerDefinition()));
-        turnLabel.setText("Turn " + game.getTurn());
+        turnLabel.setText(UiString.get(_S1, game.getTurn()));
     }
 
 }
