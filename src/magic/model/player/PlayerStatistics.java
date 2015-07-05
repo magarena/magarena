@@ -1,21 +1,33 @@
 package magic.model.player;
 
-import magic.utility.FileIO;
-import magic.model.MagicCardDefinition;
-import magic.model.MagicColor;
-import magic.model.MagicDeck;
-import magic.model.MagicGame;
-import magic.model.MagicPlayer;
-
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Path;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Properties;
+import magic.model.MagicCardDefinition;
+import magic.model.MagicColor;
+import magic.model.MagicDeck;
+import magic.model.MagicGame;
+import magic.model.MagicPlayer;
+import magic.ui.UiString;
+import magic.utility.FileIO;
 
 public class PlayerStatistics {
 
+    // translatable strings
+    private static final String _S1 = "Last played:";
+    private static final String _S2 = "Duels completed:";
+    private static final String _S3 = "Duels won / lost:";
+    private static final String _S4 = "Games played:";
+    private static final String _S5 = "Games won / lost:";
+    private static final String _S6 = "Games conceded:";
+    private static final String _S7 = "Turns played:";
+    private static final String _S8 = "Average turns per game:";
+    private static final String _S9 = "Most used color:";
+
+    // properties
     private static final String TIMESTAMP = "timestamp";
     private static final String GAMES_PLAYED = "gamesPlayed";
     private static final String GAMES_WON = "gamesWon";
@@ -196,15 +208,15 @@ public class PlayerStatistics {
         final boolean showStatValues = (gamesPlayed > 0);
         final StatsFormatter f = new StatsFormatter(showStatValues);
         final StringBuilder sb = new StringBuilder();
-        sb.append(f.getStatLine("Last played:\t", f.getTimestampString(millisecTimestamp)));
-        sb.append(f.getStatLine("\nDuels completed:\t", duelsPlayed));
-        sb.append(f.getStatLine("\nDuels won / lost:\t", duelsWon, " / ", duelsLost, " (", duelsWinPercentage, "%)"));
-        sb.append(f.getStatLine("\nGames played:\t", gamesPlayed));
-        sb.append(f.getStatLine("\nGames won / lost\t", gamesWon, " / ", gamesLost, " (", gamesWinPercentage, "%)"));
-        sb.append(f.getStatLine("\nGames conceded:\t", isHuman ? gamesConceded : StatsFormatter.NO_VALUE));
-        sb.append(f.getStatLine("\nTurns played:\t", turnsPlayed));
-        sb.append(f.getStatLine("\nAverage turns per game:\t", averageTurns));
-        sb.append(f.getStatLine("\nMost used color:\t", mostColor.getName()));
+        sb.append(f.getStatLine(String.format("%s\t%s", UiString.get(_S1), f.getTimestampString(millisecTimestamp))));
+        sb.append(f.getStatLine(String.format("\n%s\t%s", UiString.get(_S2), duelsPlayed)));
+        sb.append(f.getStatLine(String.format("\n%s\t%d / %d (%d%%)", UiString.get(_S3), duelsWon, duelsLost, duelsWinPercentage)));
+        sb.append(f.getStatLine(String.format("\n%s\t%d", UiString.get(_S4), gamesPlayed)));
+        sb.append(f.getStatLine(String.format("\n%s\t%d / %d (%d%%)", UiString.get(_S5), gamesWon, gamesLost, gamesWinPercentage)));
+        sb.append(f.getStatLine(String.format("\n%s\t%s", UiString.get(_S6), isHuman ? gamesConceded : StatsFormatter.NO_VALUE)));
+        sb.append(f.getStatLine(String.format("\n%s\t%d", UiString.get(_S7), turnsPlayed)));
+        sb.append(f.getStatLine(String.format("\n%s\t%d", UiString.get(_S8), averageTurns)));
+        sb.append(f.getStatLine(String.format("\n%s\t%s", UiString.get(_S9), mostColor.getName())));
 
         return sb.toString();
 
