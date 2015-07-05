@@ -7,19 +7,24 @@ import java.io.IOException;
 import java.nio.file.InvalidPathException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-
 import javax.swing.AbstractAction;
 import javax.swing.JButton;
 import javax.swing.JFileChooser;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
-
-import magic.ui.utility.DesktopUtils;
 import magic.ui.ScreenController;
+import magic.ui.UiString;
+import magic.ui.utility.DesktopUtils;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
 public class DirectoryChooser extends JPanel implements MouseListener {
+
+    // translatable strings
+    private static final String _S1 = "Choose directory...";
+    private static final String _S3 = "Not enough free space!";
+    private static final String _S2 = "Select images directory";
+    private static final String _S4 = "A complete set of images requires at least 1.5 GB of free space.";
 
     private static final long MIN_FREE_SPACE = 1610612736; // bytes = 1.5 GB
 
@@ -63,7 +68,7 @@ public class DirectoryChooser extends JPanel implements MouseListener {
         // JButton
         selectButton.setText("...");
         selectButton.setFont(FontsAndBorders.FONT1);
-        selectButton.setToolTipText("Choose directory...");
+        selectButton.setToolTipText(UiString.get(_S1));
         selectButton.addMouseListener(this);
     }
 
@@ -77,7 +82,7 @@ public class DirectoryChooser extends JPanel implements MouseListener {
     private static class ImagesDirectoryChooser extends JFileChooser {
         public ImagesDirectoryChooser(String currentDirectoryPath) {
             super(currentDirectoryPath);
-            setDialogTitle("Select images directory");
+            setDialogTitle(UiString.get(_S2));
             setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
             setAcceptAllFileFilterUsed(false);
         }
@@ -87,7 +92,11 @@ public class DirectoryChooser extends JPanel implements MouseListener {
             if (directoryPath.toFile().getFreeSpace() > MIN_FREE_SPACE) {
                 super.approveSelection();
             } else {
-                ScreenController.showWarningMessage("<html><b>Not enough free space!</b><br>A complete set of images requires at least 1.5 GB of free space.");
+                ScreenController.showWarningMessage(
+                        String.format("<html><b>%s</b><br>%s<html>",
+                                UiString.get(_S3),
+                                UiString.get(_S4))
+                );
             }
         }
     }
