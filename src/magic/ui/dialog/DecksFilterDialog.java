@@ -26,6 +26,7 @@ import javax.swing.SwingConstants;
 import javax.swing.SwingUtilities;
 import javax.swing.text.NumberFormatter;
 import magic.ui.MagicFrame;
+import magic.ui.UiString;
 import magic.ui.theme.Theme;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.deck.DeckFilter;
@@ -35,6 +36,16 @@ import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
 public class DecksFilterDialog extends JDialog {
+
+    // translatable strings
+    private static final String _S1 = "Apply";
+    private static final String _S2 = "Reset";
+    private static final String _S3 = "Filter Decks";
+    private static final String _S4 = "Deck Size:";
+    private static final String _S5 = "Deck Name:";
+    private static final String _S6 = "Description:";
+    private static final String _S7 = "Card Name:";
+    private static final String _S8 = "Cancel";
 
     private static final List<DeckFilter> filterHistory = new ArrayList<>();
     private static int historyIndex = 0;
@@ -46,8 +57,8 @@ public class DecksFilterDialog extends JDialog {
     private final JTextField cardNameFilterText = new JTextField();
     private final JTextField deckNameFilterText = new JTextField();
     private final JTextField deckDescFilterText = new JTextField();
-    private final JButton saveButton = new JButton("Apply");
-    private final JButton resetButton = new JButton("Reset");
+    private final JButton saveButton = new JButton(UiString.get(_S1));
+    private final JButton resetButton = new JButton(UiString.get(_S2));
 
     // CTR
     public DecksFilterDialog(final MagicFrame frame) {
@@ -84,7 +95,7 @@ public class DecksFilterDialog extends JDialog {
         final JComponent content = (JComponent)getContentPane();
         content.setLayout(migLayout);
         //
-        this.setTitle("Filter Decks");
+        this.setTitle(UiString.get(_S3));
         this.setSize(400, 300);
         this.setLocationRelativeTo(getOwner());
         this.setResizable(false);
@@ -133,13 +144,13 @@ public class DecksFilterDialog extends JDialog {
 
     private JPanel getContentPanel() {
         final JPanel panel = new JPanel(new MigLayout("flowx, wrap 2"));
-        panel.add(getFilterCaptionLabel("Deck Size:"), "alignx right");
+        panel.add(getFilterCaptionLabel(UiString.get(_S4)), "alignx right");
         panel.add(deckSizeFilterPanel, "w 100%");
-        panel.add(getFilterCaptionLabel("Deck Name:"), "alignx right");
+        panel.add(getFilterCaptionLabel(UiString.get(_S5)), "alignx right");
         panel.add(deckNameFilterText, "w 100%");
-        panel.add(getFilterCaptionLabel("Description:"), "alignx right");
+        panel.add(getFilterCaptionLabel(UiString.get(_S6)), "alignx right");
         panel.add(deckDescFilterText, "w 100%");
-        panel.add(getFilterCaptionLabel("Card Name:"), "alignx right");
+        panel.add(getFilterCaptionLabel(UiString.get(_S7)), "alignx right");
         panel.add(cardNameFilterText, "w 100%");
         panel.add(getButtonPanel(), "w 100%, h 40!, pushy, aligny bottom, spanx");
         return panel;
@@ -182,7 +193,7 @@ public class DecksFilterDialog extends JDialog {
     }
 
     private JButton getCancelButton() {
-        final JButton btn = new JButton("Cancel");
+        final JButton btn = new JButton(UiString.get(_S8));
         btn.addActionListener(new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
