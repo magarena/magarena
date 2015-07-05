@@ -1,18 +1,16 @@
 package magic.ui.player;
 
-import magic.model.player.PlayerProfile;
-import magic.ui.widget.TexturedPanel;
-import net.miginfocom.swing.MigLayout;
-
-import javax.swing.BorderFactory;
-import javax.swing.JTextArea;
-
 import java.awt.Color;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import javax.swing.BorderFactory;
+import javax.swing.JTextArea;
+import magic.model.player.PlayerProfile;
 import magic.ui.screen.interfaces.IThemeStyle;
 import magic.ui.theme.Theme;
 import magic.ui.utility.MagicStyle;
+import magic.ui.widget.TexturedPanel;
+import net.miginfocom.swing.MigLayout;
 
 /**
  * Displays player avatar, details and statistics.
