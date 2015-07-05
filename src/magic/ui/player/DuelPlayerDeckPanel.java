@@ -11,6 +11,8 @@ import javax.swing.SwingConstants;
 import magic.data.DeckType;
 import magic.model.MagicColor;
 import magic.model.MagicDeckProfile;
+import magic.ui.StringContext;
+import magic.ui.UiString;
 import magic.ui.utility.GraphicsUtils;
 import magic.ui.dialog.DeckChooserDialog;
 import magic.ui.screen.interfaces.IThemeStyle;
@@ -26,6 +28,14 @@ import net.miginfocom.swing.MigLayout;
  */
 @SuppressWarnings("serial")
 public class DuelPlayerDeckPanel extends TexturedPanel implements IThemeStyle {
+
+    // translatable strings
+    @StringContext(eg = "'Prebuilt deck' or 'Random deck'")
+    private static final String _S1 = "%s deck";
+    private static final String _S2 = "Any three colors";
+    private static final String _S3 = "Any two colors";
+    private static final String _S4 = "Any single color";
+    private static final String _S5 = "Preconstructed";
 
     // ui
     private final MigLayout migLayout = new MigLayout();
@@ -67,7 +77,7 @@ public class DuelPlayerDeckPanel extends TexturedPanel implements IThemeStyle {
 
     private void setDeckType(final DeckType value) {
         deckType = value;
-        deckTypeLabel.setText(deckType + " deck");
+        deckTypeLabel.setText(UiString.get(_S1, deckType));
         deckValueLabel.setText(getFormattedDeckValue());
     }
     public DeckType getDeckType() {
@@ -85,13 +95,13 @@ public class DuelPlayerDeckPanel extends TexturedPanel implements IThemeStyle {
     private String getFormattedDeckValue() {
         if (deckType == DeckType.Random) {
             if (deckValue.equals(MagicDeckProfile.ANY_THREE)) {
-                return "Any three colors";
+                return UiString.get(_S2);
             } else if (deckValue.equals(MagicDeckProfile.ANY_TWO)) {
-                return "Any two colors";
+                return UiString.get(_S3);
             } else if (deckValue.equals(MagicDeckProfile.ANY_ONE)) {
-                return "Any single color";
+                return UiString.get(_S4);
             } else if (deckValue.equals(MagicDeckProfile.ANY_DECK)) {
-                return "Preconstructed";
+                return UiString.get(_S5);
             } else {
                 if (deckValue.length() <= 3) {
                     return getVerboseColors(deckValue);
