@@ -21,6 +21,11 @@ import javax.activation.MimetypesFileTypeMap;
  */
 public class ImageDropTargetListener implements DropTargetListener {
 
+    // translatable strings
+    private static final String _S1 = "Sorry, this did not work.";
+    private static final String _S2 = "Try downloading the image first and then dragging the file into Magarena.";
+    private static final String _S3 = "Invalid image!";
+
     private final IImageDragDropListener listener;
 
     public ImageDropTargetListener(final IImageDragDropListener listener) {
@@ -69,8 +74,7 @@ public class ImageDropTargetListener implements DropTargetListener {
                     // linux workaround - no need to crash out.
                     if (files == null || files.isEmpty()) {
                         ScreenController.showWarningMessage(
-                                "Sorry, this did not work.\n"
-                                + "Try downloading the image first and then dragging the file into Magarena.");
+                                String.format("%s\n%s", UiString.get(_S1), UiString.get(_S2)));
                         break;
                     }
 
@@ -79,7 +83,7 @@ public class ImageDropTargetListener implements DropTargetListener {
                     if (isValidImageFile(imageFile)) {
                         listener.setDroppedImageFile(imageFile);
                     } else {
-                        ScreenController.showWarningMessage("Invalid image!");
+                        ScreenController.showWarningMessage(UiString.get(_S3));
                     }
                     break;
                 }
