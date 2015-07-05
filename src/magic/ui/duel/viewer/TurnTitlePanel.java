@@ -16,8 +16,10 @@ import javax.swing.SwingUtilities;
 import magic.data.MagicIcon;
 import magic.model.MagicGame;
 import magic.ui.IconImages;
+import magic.ui.StringContext;
 import magic.ui.utility.MagicStyle;
 import magic.ui.SwingGameController;
+import magic.ui.UiString;
 import magic.ui.screen.interfaces.IOptionsMenu;
 import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.theme.Theme;
@@ -26,6 +28,14 @@ import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
 public class TurnTitlePanel extends JPanel {
+
+    // translatable strings
+    private static final String _S1 = "Options Menu [ESC]";
+    private static final String _S2 = "Displays menu of common and screen specific options.";
+    private static final String _S3 = "First player to %d wins the duel.";
+    @StringContext(eg = "as in 'Game 2 of 3'")
+    private static final String _S4 = "Game %d / %d";
+    private static final String _S5 = "Turn %d"; 
 
     private final MigLayout miglayout = new MigLayout();
     private final JLabel scoreLabel = new JLabel();
@@ -60,8 +70,8 @@ public class TurnTitlePanel extends JPanel {
 
         final JButton btn = new ActionBarButton(
                 IconImages.getIcon(MagicIcon.OPTIONS_ICON),
-                "Options Menu [ESC]",
-                "Displays menu of common and screen specific options.",
+                UiString.get(_S1),
+                UiString.get(_S2),
                 new AbstractAction() {
                     @Override
                     public void actionPerformed(final ActionEvent e) {
@@ -101,13 +111,12 @@ public class TurnTitlePanel extends JPanel {
 
     public void refresh(final MagicGame game) {
         scoreLabel.setText(getScoreString());
-        scoreLabel.setToolTipText(String.format("First player to %d wins the duel.",
+        scoreLabel.setToolTipText(UiString.get(_S3,
                 game.getDuel().getConfiguration().getGamesRequiredToWinDuel())
         );
-        gameLabel.setText(String.format("Game %d / %d  •  Turn %d  •  %s",
-                game.getDuel().getGameNr(),
-                game.getDuel().getGamesTotal(),
-                game.getTurn(),
+        gameLabel.setText(String.format("%s  •  %s  •  %s",
+                UiString.get(_S4, game.getDuel().getGameNr(), game.getDuel().getGamesTotal()),
+                UiString.get(_S5, game.getTurn()),
                 game.getTurnPlayer().getName())
         );
     }
