@@ -33,6 +33,7 @@ import magic.exception.InvalidDeckException;
 import magic.firemind.FiremindJsonReader;
 import magic.model.MagicDeck;
 import magic.ui.ScreenController;
+import magic.ui.UiString;
 import magic.ui.dialog.DecksFilterDialog;
 import magic.ui.screen.interfaces.IDeckConsumer;
 import magic.ui.theme.Theme;
@@ -42,6 +43,10 @@ import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
 public class DeckPicker extends JPanel {
+
+    // translatable strings
+    private static final String _S1 = "All Decks (%d)";
+    private static final String _S2 = "Filtered Decks (%d)";
 
     private static final Color HIGHLIGHT_BACK = MagicStyle.getTheme().getColor(Theme.COLOR_TITLE_BACKGROUND);
     private static final Color HIGHLIGHT_FORE = MagicStyle.getTheme().getColor(Theme.COLOR_TITLE_FOREGROUND);
@@ -312,11 +317,7 @@ public class DeckPicker extends JPanel {
         }
 
         public void setDecksCount(final int deckCount) {
-            if (deckFilter == null) {
-                filterButton.setText("All Decks (" + deckCount + ")");
-            } else {
-                filterButton.setText("Filtered Decks (" + deckCount + ")");
-            }
+            filterButton.setText(UiString.get(deckFilter == null ? _S1 : _S2, deckCount));
         }
 
     }
