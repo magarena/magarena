@@ -6,11 +6,16 @@ import java.util.List;
 import javax.swing.SwingUtilities;
 import magic.data.CardDefinitions;
 import magic.model.MagicCardDefinition;
+import magic.ui.UiString;
 import magic.ui.dialog.IImageDownloadListener;
 import magic.utility.MagicFileSystem;
 
 @SuppressWarnings("serial")
 public class UnimplementedDownloadPanel extends MissingImagesDownloadPanel {
+
+    // translatable strings
+    private static final String _S1 = "Unimplemented cards, missing images = ";
+    private static final String _S2 = "Download new images";
 
     public UnimplementedDownloadPanel(IImageDownloadListener listener) {
         super(listener);
@@ -18,7 +23,7 @@ public class UnimplementedDownloadPanel extends MissingImagesDownloadPanel {
 
     @Override
     protected String getProgressCaption() {
-        return "Unimplemented cards, missing images = ";
+        return UiString.get(_S1);
     }
 
     @Override
@@ -42,7 +47,7 @@ public class UnimplementedDownloadPanel extends MissingImagesDownloadPanel {
 
     @Override
     protected String getDownloadButtonCaption() {
-        return "Download new images";
+        return UiString.get(_S2);
     }
 
     @Override
