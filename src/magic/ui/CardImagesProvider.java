@@ -1,9 +1,8 @@
 package magic.ui;
 
 import java.awt.Dimension;
-import magic.model.MagicCardDefinition;
-
 import java.awt.image.BufferedImage;
+import magic.model.MagicCardDefinition;
 
 /**
  * Interface for getting image of a card
