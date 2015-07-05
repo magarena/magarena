@@ -13,12 +13,20 @@ import javax.swing.ListSelectionModel;
 import magic.data.GeneralConfig;
 import magic.model.IUIGameController;
 import magic.ui.MagicFrame;
+import magic.ui.UiString;
 import magic.ui.theme.Theme;
 import magic.ui.utility.MagicStyle;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
 public class DuelSidebarLayoutDialog extends MagicDialog {
+
+    // translatable strings
+    private static final String _S1 = "Sidebar Layout";
+    private static final String _S2 = "Save";
+    private static final String _S3 = "Cancel";
+    private static final String _S4 = "Move Up";
+    private static final String _S5 = "Move Down";
 
     private static final Color HIGHLIGHT_BACK = MagicStyle.getTheme().getColor(Theme.COLOR_TITLE_BACKGROUND);
     private static final Color HIGHLIGHT_FORE = MagicStyle.getTheme().getColor(Theme.COLOR_TITLE_FOREGROUND);
@@ -31,7 +39,7 @@ public class DuelSidebarLayoutDialog extends MagicDialog {
 
     // CTR
     public DuelSidebarLayoutDialog(final MagicFrame frame, final IUIGameController controller) {
-        super(frame, "Sidebar Layout", new Dimension(280, 260));
+        super(frame, UiString.get(_S1), new Dimension(280, 260));
         this.controller = controller;
         currentLayout = GeneralConfig.getInstance().getDuelSidebarLayout();
         setLookAndFeel();
@@ -82,13 +90,13 @@ public class DuelSidebarLayoutDialog extends MagicDialog {
     }
 
     private JButton getSaveButton() {
-        final JButton btn = new JButton("Save");
+        final JButton btn = new JButton(UiString.get(_S2));
         btn.addActionListener(getSaveAction());
         return btn;
     }
 
     private JButton getCancelButton() {
-        final JButton btn = new JButton("Cancel");
+        final JButton btn = new JButton(UiString.get(_S3));
         btn.addActionListener(getCancelAction());
         return btn;
     }
@@ -109,7 +117,7 @@ public class DuelSidebarLayoutDialog extends MagicDialog {
     }
 
     private JButton getMoveUpButton() {
-        final JButton btn = new JButton("Move Up");
+        final JButton btn = new JButton(UiString.get(_S4));
         btn.addActionListener(new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -126,7 +134,7 @@ public class DuelSidebarLayoutDialog extends MagicDialog {
     }
 
     private JButton getMoveDownButton() {
-        final JButton btn = new JButton("Move Down");
+        final JButton btn = new JButton(UiString.get(_S5));
         btn.addActionListener(new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
