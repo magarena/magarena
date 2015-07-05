@@ -1,20 +1,5 @@
 package magic.ui.duel.viewer;
 
-import magic.ui.SwingGameController;
-import magic.ui.theme.ThemeFactory;
-import magic.ui.widget.FontsAndBorders;
-import magic.ui.widget.PanelButton;
-import magic.ui.widget.TextLabel;
-import magic.ui.widget.TitleBar;
-import net.miginfocom.swing.MigLayout;
-
-import javax.swing.BorderFactory;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-import javax.swing.JScrollPane;
-import javax.swing.ScrollPaneConstants;
-import javax.swing.Scrollable;
-
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Component;
@@ -25,17 +10,34 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 import java.util.Set;
+import javax.swing.BorderFactory;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.ScrollPaneConstants;
+import javax.swing.Scrollable;
 import javax.swing.SwingUtilities;
+import magic.ui.SwingGameController;
+import magic.ui.UiString;
+import magic.ui.theme.ThemeFactory;
+import magic.ui.widget.FontsAndBorders;
+import magic.ui.widget.PanelButton;
+import magic.ui.widget.TextLabel;
+import magic.ui.widget.TitleBar;
+import net.miginfocom.swing.MigLayout;
 
+@SuppressWarnings("serial")
 public class StackViewer extends JPanel implements ChoiceViewer {
 
-    private static final long serialVersionUID = 1L;
-    private static final String TITLE_CAPTION = "Stack";
+    // translatable strings
+    private static final String _S1 = "Stack";
+
+    private static final String TITLE_CAPTION = UiString.get(_S1);
 
     private final SwingGameController controller;
     private final boolean isImageMode;
     private final Collection<StackButton> buttons;
-    private List<IStackViewerListener> _listeners = new ArrayList<>();
+    private final List<IStackViewerListener> _listeners = new ArrayList<>();
     private JScrollPane stackScrollPane;
     private ScrollablePanel stackScrollablePanel;
     private TitleBar stackTitleBar;
@@ -46,7 +48,7 @@ public class StackViewer extends JPanel implements ChoiceViewer {
         this.isImageMode=isImageMode0;
 
         controller.registerChoiceViewer(this);
-        buttons=new ArrayList<StackButton>();
+        buttons=new ArrayList<>();
 
         refreshLayout();
     }
@@ -112,9 +114,7 @@ public class StackViewer extends JPanel implements ChoiceViewer {
 
     @Override
     public void showValidChoices(final Set<?> validChoices) {
-
         for (final StackButton button : buttons) {
-
             button.showValidChoices(validChoices);
         }
     }
@@ -205,23 +205,28 @@ public class StackViewer extends JPanel implements ChoiceViewer {
     @SuppressWarnings("serial")
     private final class ScrollablePanel extends JPanel implements Scrollable {
 
+        @Override
         public Dimension getPreferredScrollableViewportSize() {
             return getPreferredSize();
         }
 
+        @Override
         public int getScrollableUnitIncrement(Rectangle visibleRect, int orientation, int direction) {
             return getFont().getSize();
         }
 
+        @Override
         public int getScrollableBlockIncrement(Rectangle visibleRect, int orientation, int direction) {
             return getFont().getSize();
         }
 
+        @Override
         public boolean getScrollableTracksViewportWidth() {
             return true;
         }
 
         // we don't want to track the height, because we want to scroll vertically.
+        @Override
         public boolean getScrollableTracksViewportHeight() {
             return false;
         }
