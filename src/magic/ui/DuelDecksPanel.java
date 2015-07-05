@@ -1,21 +1,11 @@
 package magic.ui;
 
-import magic.ui.utility.GraphicsUtils;
-import magic.ui.cardtable.CardTable;
-import magic.data.DuelConfig;
-import magic.model.MagicCardDefinition;
-import magic.model.MagicDeck;
-import magic.model.MagicDuel;
-import magic.model.DuelPlayerConfig;
-import magic.model.player.PlayerProfile;
-import magic.ui.duel.viewer.CardViewer;
-import magic.ui.duel.viewer.DeckDescriptionViewer;
-import magic.ui.duel.viewer.DeckStatisticsViewer;
-import magic.ui.widget.FontsAndBorders;
-import magic.ui.widget.TexturedPanel;
-import magic.ui.player.PlayerDetailsPanel;
-import net.miginfocom.swing.MigLayout;
-
+import java.awt.Color;
+import java.awt.Component;
+import java.awt.Dimension;
+import java.awt.Font;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import javax.swing.Box;
 import javax.swing.BoxLayout;
 import javax.swing.JButton;
@@ -26,20 +16,27 @@ import javax.swing.JTabbedPane;
 import javax.swing.ScrollPaneConstants;
 import javax.swing.SpringLayout;
 import javax.swing.SwingConstants;
-
-import java.awt.Color;
-import java.awt.Component;
-import java.awt.Dimension;
-import java.awt.Font;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import magic.data.DeckType;
+import magic.data.DuelConfig;
 import magic.data.GeneralConfig;
 import magic.exception.InvalidDeckException;
+import magic.model.DuelPlayerConfig;
+import magic.model.MagicCardDefinition;
+import magic.model.MagicDeck;
+import magic.model.MagicDuel;
+import magic.model.player.PlayerProfile;
+import magic.ui.cardtable.CardTable;
+import magic.ui.duel.viewer.CardViewer;
+import magic.ui.duel.viewer.DeckDescriptionViewer;
+import magic.ui.duel.viewer.DeckStatisticsViewer;
+import magic.ui.player.PlayerDetailsPanel;
+import magic.ui.utility.GraphicsUtils;
+import magic.ui.widget.FontsAndBorders;
+import magic.ui.widget.TexturedPanel;
+import net.miginfocom.swing.MigLayout;
 
+@SuppressWarnings("serial")
 public class DuelDecksPanel extends TexturedPanel {
-
-    private static final long serialVersionUID = 1L;
 
     private static final int SPACING = 10;
     private static final String GENERATE_BUTTON_TEXT = "Generate Deck";
