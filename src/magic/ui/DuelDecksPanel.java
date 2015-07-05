@@ -38,8 +38,12 @@ import net.miginfocom.swing.MigLayout;
 @SuppressWarnings("serial")
 public class DuelDecksPanel extends TexturedPanel {
 
+    // translatable strings
+    private static final String _S1 = "Generate Deck";
+    private static final String _S2 = "Deck (%s) - %d cards";
+
     private static final int SPACING = 10;
-    private static final String GENERATE_BUTTON_TEXT = "Generate Deck";
+    private static final String GENERATE_BUTTON_TEXT = UiString.get(_S1);
     private static final GeneralConfig CONFIG = GeneralConfig.getInstance();
 
     private final MigLayout migLayout = new MigLayout();
@@ -212,7 +216,7 @@ public class DuelDecksPanel extends TexturedPanel {
     }
 
     String generateTitle(final MagicDeck deck) {
-        return "Deck (" + deck.getName() + ") - " + deck.size() + " cards";
+        return UiString.get(_S2, deck.getName(), deck.size());
     }
 
     public MagicDuel getDuel() {
