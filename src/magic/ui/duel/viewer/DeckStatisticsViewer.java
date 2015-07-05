@@ -1,21 +1,5 @@
 package magic.ui.duel.viewer;
 
-import magic.data.CardStatistics;
-import magic.ui.IconImages;
-import magic.model.MagicColor;
-import magic.model.MagicDeck;
-import magic.model.DuelPlayerConfig;
-import magic.ui.theme.ThemeFactory;
-import magic.ui.widget.FontsAndBorders;
-import magic.ui.widget.TexturedPanel;
-import magic.ui.widget.TitleBar;
-import net.miginfocom.swing.MigLayout;
-
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-import javax.swing.event.ChangeEvent;
-import javax.swing.event.ChangeListener;
-
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Dimension;
@@ -23,11 +7,31 @@ import java.awt.FlowLayout;
 import java.awt.GridLayout;
 import java.util.ArrayList;
 import java.util.List;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.event.ChangeEvent;
+import javax.swing.event.ChangeListener;
+import magic.data.CardStatistics;
 import magic.data.MagicIcon;
+import magic.model.DuelPlayerConfig;
+import magic.model.MagicColor;
+import magic.model.MagicDeck;
+import magic.ui.IconImages;
+import magic.ui.UiString;
+import magic.ui.theme.ThemeFactory;
+import magic.ui.widget.FontsAndBorders;
+import magic.ui.widget.TexturedPanel;
+import magic.ui.widget.TitleBar;
+import net.miginfocom.swing.MigLayout;
 
+@SuppressWarnings("serial")
 public class DeckStatisticsViewer extends TexturedPanel implements ChangeListener {
 
-    private static final long serialVersionUID = 1L;
+    // translatable strings
+    private static final String _S1 = "Deck Statistics";
+    private static final String _S2 = "Deck Statistics : %d cards";
+    private static final String _S3 = "Mono : %d  Multi : %d  Colorless : %d";
+    private static final String _S4 = "Cards : %d  Monocolor : %d  Lands : %d";
 
     public static final Dimension PREFERRED_SIZE = new Dimension(300, 190);
 
@@ -48,7 +52,7 @@ public class DeckStatisticsViewer extends TexturedPanel implements ChangeListene
 
         setLayout(new BorderLayout());
 
-        titleBar=new TitleBar("Deck Statistics");
+        titleBar=new TitleBar(UiString.get(_S1));
         add(titleBar,BorderLayout.NORTH);
 
         final JPanel mainPanel = new JPanel();
@@ -97,7 +101,7 @@ public class DeckStatisticsViewer extends TexturedPanel implements ChangeListene
             curveBottomPanel.add(curveLabels[index]);
         }
 
-        lines=new ArrayList<JLabel>();
+        lines=new ArrayList<>();
     }
 
     private void refreshCardTypeTotals(final CardStatistics statistics) {
@@ -123,15 +127,17 @@ public class DeckStatisticsViewer extends TexturedPanel implements ChangeListene
     public void setDeck(final MagicDeck deck) {
 
         final CardStatistics statistics = new CardStatistics(deck);
-        titleBar.setText("Deck Statistics : " + statistics.totalCards + " cards");
+        titleBar.setText(UiString.get(_S2, statistics.totalCards));
 
         refreshCardTypeTotals(statistics);
 
         lines.clear();
-        final JLabel allLabel=new JLabel(
-                "Mono : " + statistics.monoColor +
-                "  Multi : " + statistics.multiColor +
-                "  Colorless : "+statistics.colorless);
+        final JLabel allLabel = new JLabel(UiString.get(_S3,
+                statistics.monoColor,
+                statistics.multiColor,
+                statistics.colorless)
+        );
+
         allLabel.setForeground(textColor);
         lines.add(allLabel);
 
@@ -142,9 +148,11 @@ public class DeckStatisticsViewer extends TexturedPanel implements ChangeListene
                 label.setForeground(textColor);
                 label.setHorizontalAlignment(JLabel.LEFT);
                 label.setIconTextGap(5);
-                label.setText("Cards : "+statistics.colorCount[i]+
-                              "  Monocolor : "+statistics.colorMono[i]+
-                              "  Lands : "+statistics.colorLands[i]);
+                label.setText(UiString.get(_S4,
+                        statistics.colorCount[i],
+                        statistics.colorMono[i],
+                        statistics.colorLands[i])
+                );
                 lines.add(label);
             }
         }
