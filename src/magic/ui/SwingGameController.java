@@ -751,10 +751,9 @@ public class SwingGameController implements IUIGameController, ILogBookListener 
             });
         }
         showMessage(MagicSource.NONE,
-                "{L} " +
-                game.getLosingPlayer() + " " +
-                (gameConceded.get() ? "conceded" : "lost" ) +
-                " the game.");
+                String.format("{L} %s %s the game.",
+                        game.getLosingPlayer(),
+                        gameConceded.get() ? "conceded" : "lost"));
     }
 
     private void playEndGameSoundEffect() {
@@ -787,6 +786,9 @@ public class SwingGameController implements IUIGameController, ILogBookListener 
         }
     }
 
+    /**
+     * devMode only currently.
+     */
     public void doSaveGame() {
         if (isValidSaveState()) {
             final File saveGameFile = MagicFileChoosers.getSaveGameFile(gamePanel);
