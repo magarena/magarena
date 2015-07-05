@@ -7,7 +7,6 @@ import java.io.PrintWriter;
 import java.net.Proxy;
 import java.nio.file.Path;
 import java.util.List;
-
 import javax.swing.AbstractAction;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
@@ -17,18 +16,26 @@ import javax.swing.JTextField;
 import javax.swing.SwingConstants;
 import javax.swing.SwingUtilities;
 import javax.swing.SwingWorker;
-
-import magic.firemind.FiremindClient;
 import magic.FiremindQueueWorker;
 import magic.data.GeneralConfig;
 import magic.data.MagicIcon;
+import magic.firemind.FiremindClient;
 import magic.ui.IconImages;
-import magic.utility.MagicFileSystem;
+import magic.ui.UiString;
 import magic.utility.MagicFileSystem.DataPath;
+import magic.utility.MagicFileSystem;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
 public class FiremindWorkerPanel extends JPanel {
+
+    // translatable strings
+    private static final String _S1 = "Cancel";
+    private static final String _S2 = "Running";
+    private static final String _S3 = "Not running";
+    private static final String _S4 = "Start Firemind Worker";
+    private static final String _S5 = "Version is outdated. Please update Magarena.";
+    private static final String _S6 = "Access Key";
 
     protected final GeneralConfig CONFIG = GeneralConfig.getInstance();
 
@@ -38,30 +45,29 @@ public class FiremindWorkerPanel extends JPanel {
     private final MigLayout migLayout = new MigLayout();
     protected final JLabel captionLabel = getCaptionLabel(getProgressCaption());
     private final JButton runButton = new JButton();
-    private final JButton cancelButton = new JButton("Cancel");
-
-    
+    private final JButton cancelButton = new JButton(UiString.get(_S1));
+   
     private SwingWorker<String, Void> firemindWorker;
-    private boolean isRunning = false;
+    private boolean isRunning = false;    
+
     protected SwingWorker<String, Void> getFiremindWorker(final Proxy proxy) {
         return new FiremindWorkerRunner(); //TODO (downloadList, CONFIG.getProxy());
     }
     protected String getProgressCaption(){
         if(isRunning){
-            return "Running";
+            return UiString.get(_S2);
         }else{
-            return "Not running";
+            return UiString.get(_S3);
         }
         
     }
     
-
     protected String getLogFilename() {
         return "fireindWorker.log";
     }
     
     protected String getStartButtonCaption() {
-        return "Start Firemind Worker";
+        return UiString.get(_S4);
     }
 
     public FiremindWorkerPanel() {
@@ -101,7 +107,7 @@ public class FiremindWorkerPanel extends JPanel {
                     firemindWorker = getFiremindWorker(CONFIG.getProxy());
                     firemindWorker.execute();
                 }else{
-                    statusTextField.setText("Version is outdated. Please update Magarena.");
+                    statusTextField.setText(UiString.get(_S5));
                 }
             }
         });
@@ -156,7 +162,7 @@ public class FiremindWorkerPanel extends JPanel {
     
     private JLabel getAccessKeyLabel() {
         final JLabel lbl = new JLabel();
-        lbl.setText("Access Key");
+        lbl.setText(UiString.get(_S6));
 //        lbl.setHorizontalAlignment(SwingConstants.LEFT);
 //        lbl.setHorizontalTextPosition(SwingConstants.LEADING);
         lbl.setOpaque(false);
