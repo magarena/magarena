@@ -1,13 +1,11 @@
 package magic.ui.player;
 
-import magic.model.player.PlayerProfile;
-import net.miginfocom.swing.MigLayout;
-
+import java.awt.Dimension;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
-
-import java.awt.Dimension;
+import magic.model.player.PlayerProfile;
 import magic.ui.IconImages;
+import net.miginfocom.swing.MigLayout;
 
 /**
  * Composite JPanel displays player avatar and player details.
