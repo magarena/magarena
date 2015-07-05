@@ -27,6 +27,7 @@ import magic.data.GeneralConfig;
 import magic.data.MagicIcon;
 import magic.ui.IconImages;
 import magic.model.MagicCardDefinition;
+import magic.ui.UiString;
 import magic.ui.dialog.IImageDownloadListener;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicFileSystem.DataPath;
@@ -35,6 +36,10 @@ import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
 public abstract class ImageDownloadPanel extends JPanel {
+
+    // translatable strings
+    private static final String _S1 = "Cancel";
+    private static final String _S2 = "!!! ERROR - See console for details !!!";
 
     public enum DownloaderState {
         STOPPED,
@@ -47,7 +52,7 @@ public abstract class ImageDownloadPanel extends JPanel {
     private final MigLayout migLayout = new MigLayout();
     protected final JLabel captionLabel = getCaptionLabel(getProgressCaption());
     protected final JButton downloadButton = new JButton();
-    private final JButton cancelButton = new JButton("Cancel");
+    private final JButton cancelButton = new JButton(UiString.get(_S1));
     protected final JProgressBar progressBar = new JProgressBar();
     protected volatile boolean isException = false;
 
@@ -270,7 +275,7 @@ public abstract class ImageDownloadPanel extends JPanel {
             resetProgressBar();
             doCustomActionAfterDownload(errorCount);
             if (isException) {
-                captionLabel.setText("!!! ERROR - See console for details !!!");
+                captionLabel.setText(UiString.get(_S2));
                 captionLabel.setHorizontalAlignment(SwingConstants.CENTER);
                 captionLabel.setIcon(null);
                 downloadButton.setEnabled(false);
