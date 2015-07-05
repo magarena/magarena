@@ -9,9 +9,13 @@ import java.awt.event.MouseEvent;
 import javax.swing.AbstractAction;
 import javax.swing.JButton;
 import javax.swing.JColorChooser;
+import magic.ui.UiString;
 
 @SuppressWarnings("serial")
 public class ColorButton extends JButton {
+
+    // translatable strings
+    private static final String _S1 = "Choose Color";
 
     public ColorButton(final Color defaultColor) {
         setBackground(defaultColor);
@@ -19,7 +23,7 @@ public class ColorButton extends JButton {
 
             @Override
             public void actionPerformed(ActionEvent e) {
-                final Color newColor = JColorChooser.showDialog(null, "Choose Color", getBackground());
+                final Color newColor = JColorChooser.showDialog(null, UiString.get(_S1), getBackground());
                 if (newColor != null) {
                     setBackground(newColor);
                 }
