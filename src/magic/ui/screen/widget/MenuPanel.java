@@ -1,19 +1,17 @@
 package magic.ui.screen.widget;
 
-import magic.ui.widget.FontsAndBorders;
-import magic.ui.widget.TexturedPanel;
-import net.miginfocom.swing.MigLayout;
-
-import javax.swing.AbstractAction;
-import javax.swing.BorderFactory;
-
 import java.awt.Color;
 import java.awt.Dimension;
 import java.util.ArrayList;
 import java.util.List;
+import javax.swing.AbstractAction;
+import javax.swing.BorderFactory;
 import magic.ui.screen.interfaces.IThemeStyle;
 import magic.ui.theme.Theme;
 import magic.ui.utility.MagicStyle;
+import magic.ui.widget.FontsAndBorders;
+import magic.ui.widget.TexturedPanel;
+import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
 public class MenuPanel extends TexturedPanel implements IThemeStyle {
