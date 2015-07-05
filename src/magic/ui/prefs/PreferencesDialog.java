@@ -28,7 +28,6 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JSlider;
 import javax.swing.JSpinner;
-import javax.swing.JSpinner.DefaultEditor;
 import javax.swing.JTabbedPane;
 import javax.swing.JTextField;
 import javax.swing.KeyStroke;
@@ -559,7 +558,8 @@ public class PreferencesDialog
             if (c instanceof AbstractButton) {
                 caption = ((AbstractButton) c).getText();
             }
-            hintLabel.setText("<html>" + (c.getToolTipText() == null ? caption : c.getToolTipText()) + "</html>");
+            hintLabel.setText(String.format("<html>%s</html>",
+                    c.getToolTipText() == null ? caption : c.getToolTipText()));
         }
     }
 
