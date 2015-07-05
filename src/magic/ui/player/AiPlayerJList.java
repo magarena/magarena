@@ -16,10 +16,17 @@ import java.awt.Color;
 import java.awt.Component;
 import java.awt.Dimension;
 import magic.ui.IconImages;
+import magic.ui.UiString;
 
 @SuppressWarnings("serial")
 public class AiPlayerJList
     extends JList<AiProfile> {
+
+    // translatable string
+    private static final String _S1 = "AI: %s";
+    private static final String _S2 = "Level: %d / 8";
+    private static final String _S3 = "Extra Life: %d";
+    private static final String _S4 = "Last played: %s";
 
     public AiPlayerJList() {
         setOpaque(false);
@@ -66,9 +73,9 @@ public class AiPlayerJList
         private JPanel getDefaultDuelSettingsPanel() {
             final JPanel panel = new JPanel(new MigLayout("insets 0 20 0 0, flowy"));
             panel.setOpaque(false);
-            panel.add(getLabel("AI: " + profile.getAiType().name()), "w 100%");
-            panel.add(getLabel("Level: " + profile.getAiLevel() + " / 8"), "w 100%");
-            panel.add(getLabel("Extra Life: " + profile.getExtraLife()), "w 100%");
+            panel.add(getLabel(UiString.get(_S1, profile.getAiType().name())), "w 100%");
+            panel.add(getLabel(UiString.get(_S2, profile.getAiLevel())), "w 100%");
+            panel.add(getLabel(UiString.get(_S3, profile.getExtraLife())), "w 100%");
             return panel;
         }
 
@@ -92,7 +99,7 @@ public class AiPlayerJList
         }
 
         private JLabel getTimestampLabel() {
-            final JLabel lbl = new JLabel("Last played: " + profile.getStats().getLastPlayed());
+            final JLabel lbl = new JLabel(UiString.get(_S4, profile.getStats().getLastPlayed()));
             lbl.setForeground(foreColor);
             return lbl;
         }
