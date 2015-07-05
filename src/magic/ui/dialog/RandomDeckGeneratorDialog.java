@@ -16,6 +16,7 @@ import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 import magic.data.DeckGenerator;
 import magic.ui.MagicFrame;
+import magic.ui.UiString;
 import magic.ui.theme.Theme;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.SliderPanel;
@@ -24,10 +25,26 @@ import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
 public class RandomDeckGeneratorDialog extends JDialog implements ChangeListener {
+    
+    // translatable strings
+    private static final String _S1 = "Create Deck";
+    private static final String _S2 = "Percentage of deck size allocated to non-land cards.";
+    private static final String _S3 = "Maximum percentage of spells allocated to creature cards.";
+    private static final String _S4 = "Maximum number of colors to use in deck.";
+    private static final String _S5 = "Random Deck Generator";
+    private static final String _S6 = "Card Pool:";
+    private static final String _S7 = "Deck size:";
+    private static final String _S8 = "Spells (%):";
+    private static final String _S9 = "Max. Creatures (%):";
+    private static final String _S10 = "Max. Colors:";
+    private static final String _S11 = "Spells:";
+    private static final String _S12 = "Max Creatures:";
+    private static final String _S13 = "Lands:";
+    private static final String _S14 = "Cancel";
 
     private final MigLayout migLayout = new MigLayout();
     private boolean isCancelled = false;
-    private final JButton saveButton = new JButton("Create Deck");
+    private final JButton saveButton = new JButton(UiString.get(_S1));
     private final int cardPoolSize;
     private DeckGenerator deckGenerator = new DeckGenerator();
 
@@ -55,17 +72,17 @@ public class RandomDeckGeneratorDialog extends JDialog implements ChangeListener
         deckSizeSlider.addChangeListener(this);
 
         spellsSlider = new SliderPanel("", null, 0, 100, 1, 60, false);
-        spellsSlider.setToolTipText("Percentage of deck size allocated to non-land cards.");
+        spellsSlider.setToolTipText(UiString.get(_S2));
         spellsSlider.setPaintTicks(false);
         spellsSlider.addChangeListener(this);
 
         creaturesSlider = new SliderPanel("", null, 0, 100, 1, 66, false);
-        creaturesSlider.setToolTipText("Maximum percentage of spells allocated to creature cards.");
+        creaturesSlider.setToolTipText(UiString.get(_S3));
         creaturesSlider.setPaintTicks(false);
         creaturesSlider.addChangeListener(this);
 
         maxColorsSlider = new SliderPanel("", null, 1, 3, 1, 2, true);
-        maxColorsSlider.setToolTipText("Maximum number of colors to use in deck.");
+        maxColorsSlider.setToolTipText(UiString.get(_S4));
         maxColorsSlider.setPaintTicks(false);
         maxColorsSlider.addChangeListener(this);
 
@@ -97,7 +114,7 @@ public class RandomDeckGeneratorDialog extends JDialog implements ChangeListener
         final JComponent content = (JComponent)getContentPane();
         content.setLayout(migLayout);
         //
-        this.setTitle("Random Deck Generator");
+        this.setTitle(UiString.get(_S5));
         this.setSize(500, 400);
         this.setLocationRelativeTo(getOwner());
         this.setResizable(false);
@@ -127,22 +144,26 @@ public class RandomDeckGeneratorDialog extends JDialog implements ChangeListener
     private JPanel getContentPanel() {
         final JPanel panel = new JPanel(new MigLayout("flowx, wrap 2"));
         //
-        panel.add(getFilterCaptionLabel("Card Pool:"), "alignx right");
+        panel.add(getFilterCaptionLabel(UiString.get(_S6)), "alignx right");
         panel.add(new JLabel(Integer.toString(cardPoolSize)), "w 100%");
-        panel.add(getFilterCaptionLabel("Deck size:"), "alignx right");
+        
+        panel.add(getFilterCaptionLabel(UiString.get(_S7)), "alignx right");
         panel.add(deckSizeSlider, "w 100%");
-        panel.add(getFilterCaptionLabel("Spells (%):"), "alignx right");
+        
+        panel.add(getFilterCaptionLabel(UiString.get(_S8)), "alignx right");
         panel.add(spellsSlider, "w 100%");
-        panel.add(getFilterCaptionLabel("Max. Creatures (%):"), "alignx right");
+        
+        panel.add(getFilterCaptionLabel(UiString.get(_S9)), "alignx right");
         panel.add(creaturesSlider, "w 100%");
-        panel.add(getFilterCaptionLabel("Max. Colors:"), "alignx right");
+        
+        panel.add(getFilterCaptionLabel(UiString.get(_S10)), "alignx right");
         panel.add(maxColorsSlider, "w 100%");
         //
-        panel.add(getFilterCaptionLabel("Spells:"), "alignx right, gaptop 10");
+        panel.add(getFilterCaptionLabel(UiString.get(_S11)), "alignx right, gaptop 10");
         panel.add(spellsLabel, "w 100%");
-        panel.add(getFilterCaptionLabel("Max Creatures:"), "alignx right");
+        panel.add(getFilterCaptionLabel(UiString.get(_S12)), "alignx right");
         panel.add(creaturesLabel, "w 100%");
-        panel.add(getFilterCaptionLabel("Lands:"), "alignx right");
+        panel.add(getFilterCaptionLabel(UiString.get(_S13)), "alignx right");
         panel.add(landsLabel, "w 100%");
         //
         panel.add(getButtonPanel(), "w 100%, h 40!, pushy, aligny bottom, spanx");
@@ -185,7 +206,7 @@ public class RandomDeckGeneratorDialog extends JDialog implements ChangeListener
     }
 
     private JButton getCancelButton() {
-        final JButton btn = new JButton("Cancel");
+        final JButton btn = new JButton(UiString.get(_S14));
         btn.addActionListener(new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
