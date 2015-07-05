@@ -5,7 +5,6 @@ import javax.swing.AbstractAction;
 import magic.data.MagicIcon;
 import magic.model.MagicDeck;
 import magic.ui.IconImages;
-import magic.ui.MagicFrame;
 import magic.ui.ScreenController;
 import magic.ui.UiString;
 
@@ -19,21 +18,19 @@ public final class SampleHandActionButton extends ActionBarButton {
 
     private SampleHandActionButton() {}
 
-    public static ActionBarButton createInstance(final MagicDeck deck, final MagicFrame frame) {
+    public static ActionBarButton createInstance(final MagicDeck deck) {
         return new ActionBarButton(
                 IconImages.getIcon(MagicIcon.HAND_ICON),
                 UiString.get(_S1), UiString.get(_S2),
-                new SampleHandAction(deck, frame));
+                new SampleHandAction(deck));
     }
 
     private static class SampleHandAction extends AbstractAction {
 
         private final MagicDeck deck;
-        private final MagicFrame frame;
 
-        public SampleHandAction(final MagicDeck deck, final MagicFrame frame) {
+        public SampleHandAction(final MagicDeck deck) {
             this.deck = deck;
-            this.frame = frame;
         }
 
         @Override

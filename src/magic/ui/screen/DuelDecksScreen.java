@@ -147,7 +147,7 @@ public class DuelDecksScreen
                                 }
                             })
                     );
-            buttons.add(SampleHandActionButton.createInstance(getActiveDeck(), getFrame()));
+            buttons.add(SampleHandActionButton.createInstance(getActiveDeck()));
         } else {
             if (screenContent.getDuel().isFinished()) {
                 final MagicDuel duel = screenContent.getDuel();

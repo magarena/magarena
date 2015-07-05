@@ -158,7 +158,7 @@ public class DeckTiledCardsScreen
                         UiString.get(_S9), UiString.get(_S10),
                         new ShowCardsAction(CardTypeFilter.OTHER), true)
                 );
-        buttons.add(SampleHandActionButton.createInstance(deck, getFrame()));
+        buttons.add(SampleHandActionButton.createInstance(deck));
         return buttons;
     }
 
