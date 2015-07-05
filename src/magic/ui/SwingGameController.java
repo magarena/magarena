@@ -71,6 +71,12 @@ import magic.utility.MagicSystem;
 
 public class SwingGameController implements IUIGameController, ILogBookListener {
 
+    // translatable strings
+    private static final String _S1 = "conceded";
+    private static final String _S2 = "lost";
+    @StringContext(eg = "Player1 conceded/lost the game.")
+    private static final String _S3 = "%s %s the game.";
+
     private static final GeneralConfig CONFIG = GeneralConfig.getInstance();
 
     private final DuelPanel gamePanel;
@@ -751,9 +757,10 @@ public class SwingGameController implements IUIGameController, ILogBookListener 
             });
         }
         showMessage(MagicSource.NONE,
-                String.format("{L} %s %s the game.",
-                        game.getLosingPlayer(),
-                        gameConceded.get() ? "conceded" : "lost"));
+                String.format("{L} %s", 
+                        UiString.get(_S3,
+                                game.getLosingPlayer(),
+                                gameConceded.get() ? UiString.get(_S1) : UiString.get(_S2))));
     }
 
     private void playEndGameSoundEffect() {
