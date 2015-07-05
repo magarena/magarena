@@ -39,6 +39,26 @@ import net.miginfocom.swing.MigLayout;
 @SuppressWarnings("serial")
 public class CardFilterPanel extends TexturedPanel implements ActionListener {
 
+    // translatable strings
+    private static final String _S1 = "Match any selected";
+    private static final String _S2 = "Match all selected";
+    private static final String _S3 = "Exclude selected";
+    private static final String _S4 = "Status";
+    @StringContext(eg = "Set filter in Cards Explorer")
+    private static final String _S5 = "Set";
+    private static final String _S6 = "Cube";
+    private static final String _S7 = "Format";
+    @StringContext(eg = "Type filter in cards explorer")
+    private static final String _S8 = "Type";
+    private static final String _S9 = "Search";
+    private static final String _S10 = "Searches name, type, subtype and oracle text.";
+    private static final String _S11 = "Color";
+    private static final String _S12 = "Cost";
+    private static final String _S13 = "Subtype";
+    private static final String _S14 = "Rarity";
+    private static final String _S15 = "Reset";
+    private static final String _S16 = "Clears all filters";
+
     public static final String[] COST_VALUES = new String[MagicManaCost.MAXIMUM_MANA_COST + 1];
     static {
         for (int i = 0; i <= MagicManaCost.MAXIMUM_MANA_COST; i++) {
@@ -46,7 +66,11 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
         }
     }
 
-    public static final String[] FILTER_CHOICES = {"Match any selected", "Match all selected", "Exclude selected"};
+    public static final String[] FILTER_CHOICES = {
+        UiString.get(_S1),
+        UiString.get(_S2),
+        UiString.get(_S3)
+    };
     public static final Color TEXT_COLOR = ThemeFactory.getInstance().getCurrentTheme().getTextColor();
     public static final Dimension POPUP_CHECKBOXES_SIZE = new Dimension(200, 150);
     public static final Dimension FILTER_BUTTON_PREFERRED_SIZE = new Dimension(90, 36);
@@ -137,7 +161,7 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
 
     private void addStatusFilter() {
         final String[] filterValues = getStatusFilterValues();
-        statusPopup = addFilterPopupPanel("Status");
+        statusPopup = addFilterPopupPanel(UiString.get(_S4));
         statusCheckBoxes = new JCheckBox[filterValues.length];
         statusFilterChoices = new JRadioButton[FILTER_CHOICES.length];
         populateCheckboxPopup(statusPopup, filterValues, statusCheckBoxes, statusFilterChoices, false);
@@ -152,7 +176,7 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
     }
 
     private void addSetsFilter() {
-        setsPopup = addFilterPopupPanel("Set");
+        setsPopup = addFilterPopupPanel(UiString.get(_S5));
         setsCheckBoxes = new JCheckBox[MagicSets.values().length];
         setsFilterChoices = new JRadioButton[FILTER_CHOICES.length];
         final String[] filterValues = MagicSetDefinitions.getFilterValues();
@@ -160,7 +184,7 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
     }
 
     private void addCubeFilter() {
-        cubePopup = addFilterPopupPanel("Cube");
+        cubePopup = addFilterPopupPanel(UiString.get(_S6));
         cubeCheckBoxes = new JCheckBox[MagicFormat.getCubeFilterFormats().size()];
         cubeFilterChoices = new JRadioButton[FILTER_CHOICES.length];
         final String[] filterValues = MagicFormat.getCubeFilterLabels();
@@ -168,7 +192,7 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
     }
 
     private void addFormatsFilter() {
-        formatsPopup = addFilterPopupPanel("Format");
+        formatsPopup = addFilterPopupPanel(UiString.get(_S7));
         formatsCheckBoxes = new JCheckBox[MagicPredefinedFormat.values().size()];
         formatsFilterChoices = new JRadioButton[FILTER_CHOICES.length];
         final String[] filterValues = MagicPredefinedFormat.getFilterValues();
@@ -542,7 +566,7 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
     }
 
     private void addCardTypeFilter() {
-        typePopup = addFilterPopupPanel("Type");
+        typePopup = addFilterPopupPanel(UiString.get(_S8));
         final Object[] types = getTypeFilterValues();
         typeCheckBoxes = new JCheckBox[types.length];
         typeFilterChoices = new JRadioButton[FILTER_CHOICES.length];
@@ -566,14 +590,14 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
     }
 
     private void addOracleFilter() {
-        oraclePopup = addFilterPopupPanel("Search", "Searches name, type, subtype and oracle text.");
+        oraclePopup = addFilterPopupPanel(UiString.get(_S9), UiString.get(_S10));
         oraclePopup.setPopupSize(260, 38);
         nameTextField = new CardFilterTextField(listener);
         oraclePopup.add(nameTextField);
     }
 
     private void addCardColorFilter() {
-        colorPopup = addFilterPopupPanel("Color");
+        colorPopup = addFilterPopupPanel(UiString.get(_S11));
         colorCheckBoxes=new JCheckBox[MagicColor.NR_COLORS];
         final JPanel colorsPanel=new JPanel();
         colorsPanel.setLayout(new BoxLayout(colorsPanel, BoxLayout.X_AXIS));
@@ -615,29 +639,29 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
     }
 
     private void addManaCostFilter() {
-        costPopup = addFilterPopupPanel("Cost");
+        costPopup = addFilterPopupPanel(UiString.get(_S12));
         costCheckBoxes = new JCheckBox[COST_VALUES.length];
         costFilterChoices = new JRadioButton[FILTER_CHOICES.length];
         populateCheckboxPopup("flowx, wrap 5, insets 2, gap 8", costPopup, COST_VALUES, costCheckBoxes, costFilterChoices, true);
     }
 
     private void addCardSubtypeFilter() {
-        subtypePopup = addFilterPopupPanel("Subtype");
+        subtypePopup = addFilterPopupPanel(UiString.get(_S13));
         subtypeCheckBoxes = new JCheckBox[MagicSubType.values().length];
         subtypeFilterChoices = new JRadioButton[FILTER_CHOICES.length];
         populateCheckboxPopup(subtypePopup, MagicSubType.values(), subtypeCheckBoxes, subtypeFilterChoices, false);
     }
 
     private void addCardRarityFilter() {
-        rarityPopup = addFilterPopupPanel("Rarity");
+        rarityPopup = addFilterPopupPanel(UiString.get(_S14));
         rarityCheckBoxes = new JCheckBox[MagicRarity.values().length];
         rarityFilterChoices = new JRadioButton[FILTER_CHOICES.length];
         populateCheckboxPopup(rarityPopup, MagicRarity.values(), rarityCheckBoxes, rarityFilterChoices, true);
     }
 
     private void addResetButton() {
-        resetButton = new JButton("Reset");
-        resetButton.setToolTipText("Clears all filters");
+        resetButton = new JButton(UiString.get(_S15));
+        resetButton.setToolTipText(UiString.get(_S16));
         resetButton.setFont(new Font("dialog", Font.BOLD, 12));
         resetButton.setForeground(new Color(127, 23 ,23));
         resetButton.addActionListener(this);
