@@ -61,6 +61,10 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
     private static final String _S17 = "New cards";
     private static final String _S18 = "Playable";
     private static final String _S19 = "Unimplemented";
+    private static final String _S20 = "Token";
+    private static final String _S21 = "Transform";
+    private static final String _S22 = "Flip";
+    private static final String _S23 = "Hidden";
 
     public static final String[] COST_VALUES = new String[MagicManaCost.MAXIMUM_MANA_COST + 1];
     static {
@@ -364,13 +368,13 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
             new CardChecker() {
                 @Override
                 public boolean checkCard(final MagicCardDefinition card, final int i) {
-                    if (typeCheckBoxes[i].getText().equals("Token")) {
+                    if (typeCheckBoxes[i].getText().equals(UiString.get(_S20))) {
                         return card.isToken();
-                    } else if (typeCheckBoxes[i].getText().equals("Transform")) {
+                    } else if (typeCheckBoxes[i].getText().equals(UiString.get(_S21))) {
                         return card.isDoubleFaced();
-                    } else if (typeCheckBoxes[i].getText().equals("Flip")) {
+                    } else if (typeCheckBoxes[i].getText().equals(UiString.get(_S22))) {
                         return card.isFlipCard();
-                    } else if (typeCheckBoxes[i].getText().equals("Hidden")) {
+                    } else if (typeCheckBoxes[i].getText().equals(UiString.get(_S23))) {
                         return card.isHidden();
                     } else {
                         return card.hasType(MagicType.FILTER_TYPES.toArray(new MagicType[0])[i]);
@@ -581,11 +585,11 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
             types.add(type);
         }
         if (!listener.isDeckEditor()) {
-            types.add("Token");
-            types.add("Transform");
-            types.add("Flip");
+            types.add(UiString.get(_S20));
+            types.add(UiString.get(_S21));
+            types.add(UiString.get(_S22));
             if (MagicSystem.isDevMode()) {
-                types.add("Hidden");
+                types.add(UiString.get(_S23));
             }
         }
         return types.toArray();
