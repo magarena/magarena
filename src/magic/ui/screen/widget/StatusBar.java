@@ -9,6 +9,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import magic.data.MagicIcon;
 import magic.ui.IconImages;
+import magic.ui.UiString;
 import magic.ui.screen.AbstractScreen;
 import magic.ui.screen.interfaces.IOptionsMenu;
 import magic.ui.screen.interfaces.IStatusBar;
@@ -20,6 +21,12 @@ import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
 public class StatusBar extends TexturedPanel implements IThemeStyle {
+
+    // translatable strings
+    private static final String _S1 = "Wiki Help [F1]";
+    private static final String _S2 = "Opens the wiki help page for this screen in your browser.";
+    private static final String _S3 = "Options Menu [ESC]";
+    private static final String _S4 = "Displays menu of common and screen specific options.";
 
     public final static int PANEL_HEIGHT = 50;
 
@@ -68,8 +75,8 @@ public class StatusBar extends TexturedPanel implements IThemeStyle {
             if (magScreen.hasWikiPage()) {
                 wikiButton = new ActionBarButton(
                         IconImages.getIcon(MagicIcon.HELP_ICON),
-                        "Wiki Help [F1]",
-                        "Opens the wiki help page for this screen in your browser.",
+                        UiString.get(_S1),
+                        UiString.get(_S2),
                         new AbstractAction() {
                             @Override
                             public void actionPerformed(final ActionEvent e) {
@@ -82,8 +89,8 @@ public class StatusBar extends TexturedPanel implements IThemeStyle {
             if (magScreen.hasOptionsMenu()) {
                 optionsButton = new ActionBarButton(
                         IconImages.getIcon(MagicIcon.OPTIONS_ICON),
-                        "Options Menu [ESC]",
-                        "Displays menu of common and screen specific options.",
+                        UiString.get(_S3),
+                        UiString.get(_S4),
                         new AbstractAction() {
                             @Override
                             public void actionPerformed(final ActionEvent e) {
