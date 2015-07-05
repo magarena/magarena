@@ -41,6 +41,8 @@ public class PlayerStatistics {
     private static final String COLOR_RED = "colorRed";
     private static final String COLOR_WHITE = "colorWhite";
 
+    private static final String NO_VALUE = "---";
+
     private long millisecTimestamp;
     private final Path statsFilePath;
     private final boolean isHuman;
@@ -206,67 +208,51 @@ public class PlayerStatistics {
         }
 
         final boolean showStatValues = (gamesPlayed > 0);
-        final StatsFormatter f = new StatsFormatter(showStatValues);
         final StringBuilder sb = new StringBuilder();
-        sb.append(f.getStatLine(String.format("%s\t%s", UiString.get(_S1), f.getTimestampString(millisecTimestamp))));
-        sb.append(f.getStatLine(String.format("\n%s\t%s", UiString.get(_S2), duelsPlayed)));
-        sb.append(f.getStatLine(String.format("\n%s\t%d / %d (%d%%)", UiString.get(_S3), duelsWon, duelsLost, duelsWinPercentage)));
-        sb.append(f.getStatLine(String.format("\n%s\t%d", UiString.get(_S4), gamesPlayed)));
-        sb.append(f.getStatLine(String.format("\n%s\t%d / %d (%d%%)", UiString.get(_S5), gamesWon, gamesLost, gamesWinPercentage)));
-        sb.append(f.getStatLine(String.format("\n%s\t%s", UiString.get(_S6), isHuman ? gamesConceded : StatsFormatter.NO_VALUE)));
-        sb.append(f.getStatLine(String.format("\n%s\t%d", UiString.get(_S7), turnsPlayed)));
-        sb.append(f.getStatLine(String.format("\n%s\t%d", UiString.get(_S8), averageTurns)));
-        sb.append(f.getStatLine(String.format("\n%s\t%s", UiString.get(_S9), mostColor.getName())));
-
+        if (showStatValues) {
+            sb.append(String.format("%s\t%s", UiString.get(_S1), getTimestampString(millisecTimestamp)));
+            sb.append(String.format("\n%s\t%d", UiString.get(_S2), duelsPlayed));
+            sb.append(String.format("\n%s\t%d / %d (%d%%)", UiString.get(_S3), duelsWon, duelsLost, duelsWinPercentage));
+            sb.append(String.format("\n%s\t%d", UiString.get(_S4), gamesPlayed));
+            sb.append(String.format("\n%s\t%d / %d (%d%%)", UiString.get(_S5), gamesWon, gamesLost, gamesWinPercentage));
+            sb.append(String.format("\n%s\t%s", UiString.get(_S6), isHuman ? gamesConceded : NO_VALUE));
+            sb.append(String.format("\n%s\t%d", UiString.get(_S7), turnsPlayed));
+            sb.append(String.format("\n%s\t%d", UiString.get(_S8), averageTurns));
+            sb.append(String.format("\n%s\t%s", UiString.get(_S9), mostColor.getName()));
+        } else {
+            sb.append(String.format("%s\t%s", UiString.get(_S1), NO_VALUE));
+            sb.append(String.format("\n%s\t%s", UiString.get(_S2), NO_VALUE));
+            sb.append(String.format("\n%s\t%s", UiString.get(_S3), NO_VALUE));
+            sb.append(String.format("\n%s\t%s", UiString.get(_S4), NO_VALUE));
+            sb.append(String.format("\n%s\t%s", UiString.get(_S5), NO_VALUE));
+            sb.append(String.format("\n%s\t%s", UiString.get(_S6), NO_VALUE));
+            sb.append(String.format("\n%s\t%s", UiString.get(_S7), NO_VALUE));
+            sb.append(String.format("\n%s\t%s", UiString.get(_S8), NO_VALUE));
+            sb.append(String.format("\n%s\t%s", UiString.get(_S9), NO_VALUE));
+        }
         return sb.toString();
-
     }
 
-    private static final int getPercentage(final int value, final int total) {
+    private static int getPercentage(final int value, final int total) {
         return total>0 ? (value*100)/total : 0;
     }
 
     public String getLastPlayed() {
-        final StatsFormatter f = new StatsFormatter(gamesPlayed > 0);
-        return f.getTimestampString(millisecTimestamp);
+        return gamesPlayed > 0 ? getTimestampString(millisecTimestamp) : NO_VALUE;
     }
 
-    private class StatsFormatter {
-
-        public static final String NO_VALUE = "---";
-
-        private final boolean showValues;
-
-        public StatsFormatter(final boolean showValues) {
-            this.showValues = showValues;
-        }
-
-        public String getStatLine(final String stat, final Object...values) {
-            final StringBuilder sb = new StringBuilder(stat);
-            if (showValues) {
-                for (Object obj : values) {
-                    sb.append(obj);
-                }
-            } else {
-                sb.append(NO_VALUE);
+    private String getTimestampString(final long millisecs) {
+        if (millisecs > 0) {
+            final Date timestampDate = new Date(millisecTimestamp);
+            String timestampString = new SimpleDateFormat("yyyy-MM-dd").format(timestampDate);
+            final String currentString = new SimpleDateFormat("yyyy-MM-dd").format(System.currentTimeMillis());
+            if (timestampString.equals(currentString)) {
+                timestampString = new SimpleDateFormat("HH:mm").format(timestampDate);
             }
-            return sb.toString();
+            return timestampString;
+        } else {
+            return NO_VALUE;
         }
-
-        public String getTimestampString(final long millisecs) {
-            if (millisecs > 0) {
-                final Date timestampDate = new Date(millisecTimestamp);
-                String timestampString = new SimpleDateFormat("yyyy-MM-dd").format(timestampDate);
-                final String currentString = new SimpleDateFormat("yyyy-MM-dd").format(System.currentTimeMillis());
-                if (timestampString.equals(currentString)) {
-                    timestampString = new SimpleDateFormat("HH:mm").format(timestampDate);
-                }
-                return timestampString;
-            } else {
-                return NO_VALUE;
-            }
-        }
-
     }
 
 }
