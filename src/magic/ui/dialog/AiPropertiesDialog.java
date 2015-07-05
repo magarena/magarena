@@ -17,11 +17,21 @@ import magic.ai.MagicAIImpl;
 import magic.model.player.AiProfile;
 import magic.model.player.PlayerProfile;
 import magic.ui.MagicFrame;
+import magic.ui.UiString;
 import magic.ui.widget.SliderPanel;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
 public class AiPropertiesDialog extends JDialog {
+
+    // translatable strings
+    private static final String _S1 = "AI Profile";
+    private static final String _S2 = "Extra Life";
+    private static final String _S3 = "AI Level";
+    private static final String _S4 = "Cancel";
+    private static final String _S5 = "Save";
+    private static final String _S6 = "AI Type:";
+    private static final String _S7 = "AI Name:";
 
     private AiProfile playerProfile;
     private final JTextField playerNameTextField;
@@ -32,7 +42,7 @@ public class AiPropertiesDialog extends JDialog {
     public AiPropertiesDialog(final MagicFrame frame, final AiProfile profile) {
 
         super(frame, true);
-        this.setTitle("AI Profile");
+        this.setTitle(UiString.get(_S1));
         this.setSize(300, 260);
         this.setLocationRelativeTo(frame);
         this.setResizable(false);
@@ -40,8 +50,8 @@ public class AiPropertiesDialog extends JDialog {
 
         this.playerProfile = profile == null ? new AiProfile() : profile;
         playerNameTextField = new JTextField(playerProfile.getPlayerName());
-        lifeSliderPanel = new SliderPanel("Extra Life", null, 0, 10, 1, playerProfile.getExtraLife());
-        aiLevelSliderPanel = new SliderPanel("AI Level", null, 1, 8, 1, playerProfile.getAiLevel());
+        lifeSliderPanel = new SliderPanel(UiString.get(_S2), null, 0, 10, 1, playerProfile.getExtraLife());
+        aiLevelSliderPanel = new SliderPanel(UiString.get(_S3), null, 1, 8, 1, playerProfile.getAiLevel());
 
         aiComboBox = new JComboBox<>();
         aiComboBox.setModel(new DefaultComboBoxModel<>(MagicAIImpl.SUPPORTED_AIS));
@@ -87,7 +97,7 @@ public class AiPropertiesDialog extends JDialog {
     }
 
     private JButton getCancelButton() {
-        final JButton btn = new JButton("Cancel");
+        final JButton btn = new JButton(UiString.get(_S4));
         btn.addActionListener(new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -99,7 +109,7 @@ public class AiPropertiesDialog extends JDialog {
     }
 
     private JButton getSaveButton() {
-        final JButton btn = new JButton("Save");
+        final JButton btn = new JButton(UiString.get(_S5));
         btn.addActionListener(new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -139,14 +149,14 @@ public class AiPropertiesDialog extends JDialog {
 
     private JPanel getAiTypePanel() {
         final JPanel panel = new JPanel(new MigLayout("insets 0"));
-        panel.add(new JLabel("AI Type:"));
+        panel.add(new JLabel(UiString.get(_S6)));
         panel.add(aiComboBox, "w 100%, left");
         return panel;
     }
 
     private JPanel getPlayerNamePanel() {
         final JPanel panel = new JPanel(new MigLayout("insets 0"));
-        panel.add(new JLabel("AI Name:"));
+        panel.add(new JLabel(UiString.get(_S7)));
         panel.add(playerNameTextField, "w 100%, left");
         return panel;
     }
