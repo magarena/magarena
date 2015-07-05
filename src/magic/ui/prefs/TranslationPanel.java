@@ -54,6 +54,8 @@ class TranslationPanel extends JPanel {
     private static final String _S12 = "New translation";
     private static final String _S13 = "Could not open file in default 'txt' editor.\n%s";
     private static final String _S14 = "File Explorer";
+    private static final String _S15 = "Yes";
+    private static final String _S16 = "No";
 
     private final JComboBox<String> languageCombo = new JComboBox<>();
     private final JButton menuButton = new JButton();
@@ -201,7 +203,8 @@ class TranslationPanel extends JPanel {
                     JOptionPane.YES_NO_OPTION,
                     JOptionPane.QUESTION_MESSAGE,
                     null,
-                    new String[]{"Yes", "No"}, "No"
+                    new String[]{UiString.get(_S15), UiString.get(_S16)},
+                    UiString.get(_S16)
             ) == JOptionPane.YES_OPTION) {
                 langFile.delete();
                 refreshLanguageCombo();
