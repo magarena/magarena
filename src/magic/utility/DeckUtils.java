@@ -1,6 +1,5 @@
 package magic.utility;
 
-import magic.utility.FileIO;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
@@ -26,10 +25,19 @@ import magic.model.MagicDeck;
 import magic.model.MagicDeckProfile;
 import magic.model.DuelPlayerConfig;
 import magic.model.MagicRandom;
-import magic.utility.MagicFileSystem;
+import magic.ui.UiString;
 import magic.utility.MagicFileSystem.DataPath;
 
 public class DeckUtils {
+
+    // translatable strings
+    private static final String _S1 = "Deck file is empty.";
+    private static final String _S2 = "Lines in file exceeds %d.";
+    private static final String _S3 = "...more...";
+    private static final String _S4 = "line %d: line length exceeds %d characters.";
+    private static final String _S5 = "line %d: invalid line format.";
+    private static final String _S6 = "Expected: <quantity><space><card name>";
+    private static final String _S7 = "line %d: invalid card (%s).";
 
     public static final String DECK_EXTENSION=".dec";
     private static final int DECK_FILE_MAX_LINES = GeneralConfig.getInstance().getDeckFileMaxLines();
@@ -137,12 +145,12 @@ public class DeckUtils {
         final MagicDeck deck = new MagicDeck();
 
         if (content.isEmpty()) {
-            deck.setInvalidDeck("Deck file is empty.");
+            deck.setInvalidDeck(UiString.get(_S1));
             return deck;
         }
         
         if (content.size() > DECK_FILE_MAX_LINES) {
-            deck.setInvalidDeck("Lines in file exceeds " + DECK_FILE_MAX_LINES + ".");
+            deck.setInvalidDeck(UiString.get(_S2, DECK_FILE_MAX_LINES));
             return deck;
         }
 
@@ -155,7 +163,7 @@ public class DeckUtils {
 
             if (lineErrors.size() > MAX_LINE_ERRORS) {
                 lineErrors.remove(lineErrors.size()-1);
-                lineErrors.add("...more...");
+                lineErrors.add(UiString.get(_S3));
                 deck.clear();
                 break;
             }
@@ -169,14 +177,14 @@ public class DeckUtils {
 
                     // check line length
                     if (line.length() > MAX_LINE_LENGTH) {
-                        lineErrors.add("line " + lineNumber +": line length exceeds " + MAX_LINE_LENGTH + " characters.");
+                        lineErrors.add(UiString.get(_S4, lineNumber, MAX_LINE_LENGTH));
                         continue;
                     }
 
                     // check for space delimiter
                     final int index = line.indexOf(' ');
                     if (index == -1) {
-                        lineErrors.add("line " + lineNumber +": invalid line format.\nExpected: <quantity><space><card name>");
+                        lineErrors.add(String.format("%s\n%s", UiString.get(_S5, lineNumber), UiString.get(_S6)));
                         continue;
                     }
 
@@ -185,7 +193,7 @@ public class DeckUtils {
                     try {
                         cardQuantity = Integer.parseInt(line.substring(0,index));
                     } catch (NumberFormatException e) {
-                        lineErrors.add("line " + lineNumber +": invalid line format.\nExpected: <quantity><space><card name>");
+                        lineErrors.add(String.format("%s\n%s", UiString.get(_S5, lineNumber), UiString.get(_S6)));
                         continue;
                     }
 
@@ -198,7 +206,7 @@ public class DeckUtils {
                     }
 
                     if (!cardDefinition.isValid() || cardDefinition.isHidden()) {
-                        lineErrors.add("line " + lineNumber +": invalid card (" + cardDefinition.getName() +").");
+                        lineErrors.add(UiString.get(_S7, lineNumber, cardDefinition.getName()));
                     }
 
                 }
