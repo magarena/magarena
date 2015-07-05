@@ -13,6 +13,7 @@ import magic.data.MagicFormat;
 import magic.ui.utility.GraphicsUtils;
 import magic.ui.IconImages;
 import magic.ui.MagicFrame;
+import magic.ui.UiString;
 import magic.ui.dialog.DuelPropertiesDialog;
 import magic.ui.screen.interfaces.IThemeStyle;
 import magic.ui.theme.Theme;
@@ -23,6 +24,13 @@ import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
 public class DuelSettingsPanel extends TexturedPanel implements IThemeStyle {
+
+    // translatable strings
+    private static final String _S1 = "Duel Settings";
+    private static final String _S2 = "Initial Player life: %d";
+    private static final String _S3 = "Initial Hand size: %d";
+    private static final String _S4 = "Maximum games: %d (first to %d)";
+    private static final String _S5 = "Cube: %s";
 
     private final MagicFrame frame;
     private final DuelConfig config;
@@ -59,13 +67,13 @@ public class DuelSettingsPanel extends TexturedPanel implements IThemeStyle {
         } else {
             setBorder(null);
             setBackground(FontsAndBorders.TEXTAREA_TRANSPARENT_COLOR_HACK);
-            final StringBuilder sb = new StringBuilder();
-            sb.append("<html><b>Duel Settings</b><br>");
-            sb.append("Initial Player life: ").append(startLife).append("<br>");
-            sb.append("Initial Hand size: ").append(handSize).append("<br>");
-            sb.append("Maximum games: ").append(maxGames).append(" (first to ").append(getGamesRequiredToWinDuel()).append(")<br>");
-            sb.append("Cube: ").append(cube.getLabel()).append("</html>");
-            setToolTipText(sb.toString());
+            setToolTipText(String.format("<html><b>%s</b><br>%s<br>%s<br>%s<br>%s</html>",
+                    UiString.get(_S1),
+                    UiString.get(_S2, startLife),
+                    UiString.get(_S3, handSize),
+                    UiString.get(_S4, maxGames, getGamesRequiredToWinDuel()),
+                    UiString.get(_S5, cube.getLabel())
+            ));
         }
     }
 
