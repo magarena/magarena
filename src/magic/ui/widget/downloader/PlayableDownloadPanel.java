@@ -8,11 +8,16 @@ import javax.swing.SwingUtilities;
 import magic.data.CardDefinitions;
 import magic.data.GeneralConfig;
 import magic.model.MagicCardDefinition;
+import magic.ui.UiString;
 import magic.ui.dialog.IImageDownloadListener;
 import magic.utility.MagicFileSystem;
 
 @SuppressWarnings("serial")
 public class PlayableDownloadPanel extends MissingImagesDownloadPanel {
+
+    // translatable strings
+    private static final String _S1 = "Playable cards, missing images = ";
+    private static final String _S2 = "Download new images";
 
     public PlayableDownloadPanel(IImageDownloadListener listener) {
         super(listener);
@@ -20,7 +25,7 @@ public class PlayableDownloadPanel extends MissingImagesDownloadPanel {
     
     @Override
     protected String getProgressCaption() {
-        return "Playable cards, missing images = ";
+        return UiString.get(_S1);
     }
 
     @Override
@@ -46,7 +51,7 @@ public class PlayableDownloadPanel extends MissingImagesDownloadPanel {
 
     @Override
     protected String getDownloadButtonCaption() {
-        return "Download new images";
+        return UiString.get(_S2);
     }
 
     @Override
