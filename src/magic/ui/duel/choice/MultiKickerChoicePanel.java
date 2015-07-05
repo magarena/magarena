@@ -1,27 +1,28 @@
 package magic.ui.duel.choice;
 
-import magic.ui.IconImages;
-import magic.model.MagicManaCost;
-import magic.model.MagicSource;
-import magic.ui.SwingGameController;
-import magic.ui.duel.viewer.UserActionPanel;
-import magic.ui.widget.FontsAndBorders;
-import magic.ui.widget.TextLabel;
-
-import javax.swing.JButton;
-import javax.swing.JPanel;
-
 import java.awt.BorderLayout;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import javax.swing.JButton;
+import javax.swing.JPanel;
 import magic.data.MagicIcon;
 import magic.model.IGameController;
+import magic.model.MagicManaCost;
+import magic.model.MagicSource;
+import magic.ui.IconImages;
+import magic.ui.SwingGameController;
+import magic.ui.UiString;
+import magic.ui.duel.viewer.UserActionPanel;
+import magic.ui.widget.FontsAndBorders;
+import magic.ui.widget.TextLabel;
 
+@SuppressWarnings("serial")
 public class MultiKickerChoicePanel extends JPanel implements ActionListener {
 
-    private static final long serialVersionUID = 1L;
+    // translatable strings
+    private static final String _S1 = "Choose how many times to pay the %s cost of %s.";
 
     private static final Dimension BUTTON_DIMENSION=new Dimension(50,35);
 
@@ -41,7 +42,7 @@ public class MultiKickerChoicePanel extends JPanel implements ActionListener {
         setLayout(new BorderLayout());
         setOpaque(false);
 
-        final String message = "Choose how many times to pay the " + name + " cost of " + cost.getText() + ".";
+        final String message = UiString.get(_S1, name, cost.getText());
         final TextLabel textLabel=new TextLabel(SwingGameController.getMessageWithSource(source,message),UserActionPanel.TEXT_WIDTH,true);
         add(textLabel,BorderLayout.CENTER);
 
