@@ -49,7 +49,6 @@ import magic.model.choice.MagicPlayChoiceResult;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicEventAction;
 import magic.model.event.MagicPriorityEvent;
-import magic.model.phase.MagicMainPhase;
 import magic.model.phase.MagicPhaseType;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetNone;
