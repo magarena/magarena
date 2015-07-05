@@ -30,9 +30,6 @@ public class ActionBar extends TexturedPanel implements IThemeStyle {
         setMagActionBarLayout();
     }
 
-    /**
-     *
-     */
     private void setMagActionBarLayout() {
         removeAll();
         setLayout(new MigLayout("insets 0, gap 10, flowx, aligny 50%", "[200][center,grow][200,right]"));
