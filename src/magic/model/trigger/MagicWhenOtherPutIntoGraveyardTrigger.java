@@ -17,6 +17,6 @@ public abstract class MagicWhenOtherPutIntoGraveyardTrigger extends MagicTrigger
     
     @Override
     public boolean accept(final MagicPermanent permanent, final MoveCardAction act) {
-        return act.getToLocation() == MagicLocationType.Graveyard;
+        return act.to(MagicLocationType.Graveyard);
     }
 }

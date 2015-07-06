@@ -41,8 +41,8 @@ public class RemoveFromPlayAction extends MagicAction {
         return permanent;
     }
 
-    public MagicLocationType getToLocation() {
-        return toLocation;
+    public boolean to(final MagicLocationType loc) {
+        return toLocation == loc;
     }
 
     public void setToLocation(final MagicLocationType aToLocation) {

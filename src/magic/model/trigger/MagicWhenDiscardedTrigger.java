@@ -36,7 +36,7 @@ public abstract class MagicWhenDiscardedTrigger extends MagicWhenOtherPutIntoGra
         return new MagicWhenDiscardedTrigger() {
             @Override
             public boolean accept(final MagicPermanent permanent, final MoveCardAction act) {
-                return super.accept(permanent, act) && permanent.isEnemy(act.getCard());
+                return super.accept(permanent, act) && permanent.isEnemy(act.card);
             }
         
             @Override

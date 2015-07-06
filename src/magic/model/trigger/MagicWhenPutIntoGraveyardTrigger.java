@@ -27,7 +27,7 @@ public abstract class MagicWhenPutIntoGraveyardTrigger extends MagicTrigger<Move
     
     @Override
     public boolean accept(final MagicPermanent permanent, final MoveCardAction act) {
-        return act.getToLocation() == MagicLocationType.Graveyard;
+        return act.to(MagicLocationType.Graveyard);
     }
     
     @Override
@@ -38,7 +38,7 @@ public abstract class MagicWhenPutIntoGraveyardTrigger extends MagicTrigger<Move
     public static final MagicWhenPutIntoGraveyardTrigger LibraryInsteadOfGraveyard = new MagicWhenPutIntoGraveyardTrigger(MagicTrigger.REPLACEMENT) {
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MoveCardAction act) {
-            game.doAction(new RevealAction(act.getCard()));
+            game.doAction(new RevealAction(act.card));
             act.setToLocation(MagicLocationType.OwnersLibrary);
             return MagicEvent.NONE;
         }

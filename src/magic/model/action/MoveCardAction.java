@@ -44,14 +44,6 @@ public class MoveCardAction extends MagicAction {
     public boolean to(MagicLocationType loc) {
         return toLocation == loc;
     }
-    
-    public MagicLocationType getToLocation() {
-        return toLocation;
-    }
-
-    public MagicCard getCard() {
-        return card;
-    }
 
     public void setToLocation(final MagicLocationType aToLocation) {
         toLocation = aToLocation;

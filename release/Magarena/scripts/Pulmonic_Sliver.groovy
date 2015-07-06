@@ -1,7 +1,7 @@
 def PulmonicTrigger = new MagicWouldBeMovedTrigger() {
     @Override
     public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MoveCardAction act) {
-        if (permanent == act.permanent && act.getToLocation() == MagicLocationType.Graveyard) {
+        if (permanent == act.permanent && act.to(MagicLocationType.Graveyard)) {
             //disable the current move action
             act.setToLocation(MagicLocationType.Play);
 
