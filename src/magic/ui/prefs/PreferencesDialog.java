@@ -198,7 +198,7 @@ public class PreferencesDialog
 
         super(frame, true);
         this.setTitle(UiString.get(_S79));
-        this.setSize(440, 500);
+        this.setSize(560, 500);
         this.setLocationRelativeTo(frame);
         this.setResizable(false);
         this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
