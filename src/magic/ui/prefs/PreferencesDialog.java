@@ -33,6 +33,7 @@ import javax.swing.JTextField;
 import javax.swing.KeyStroke;
 import javax.swing.SpinnerNumberModel;
 import javax.swing.SwingConstants;
+import javax.swing.SwingUtilities;
 import javax.swing.ToolTipManager;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
@@ -140,6 +141,8 @@ public class PreferencesDialog
     private static final String _S77 = "Preview non-land card for";
     private static final String _S78 = "When the AI plays a non-land card, this setting determines how long it should be displayed at full size (1000 millisecs = 1 second).";
     private static final String _S79 = "Preferences";
+    private static final String _S80 = "There is a problem reading the translation file.";
+    private static final String _S81 = "Please ensure the file is encoded as 'UTF-8 without BOM'.";
 
     private final static GeneralConfig config = GeneralConfig.getInstance();
 
@@ -466,17 +469,43 @@ public class PreferencesDialog
         saveSettings();
 
         if (isNewTranslation) {
-            try {
-                UiString.loadTranslationFile();
-                isRestartRequired = true;
-            } catch (FileNotFoundException ex) {
-                throw new RuntimeException(ex);
+            if (!setNewTranslation()) {
+                return;
             }
         }
 
         CachedImagesProvider.getInstance().clearCache();
         frame.refreshUI();
 
+        dispose();
+
+    }
+
+    private boolean setNewTranslation() {
+        try {
+            UiString.loadTranslationFile();
+            isRestartRequired = true;
+            return true;
+
+        } catch (NumberFormatException ex) {
+            UiString.disableTranslations();
+            System.err.println(ex);
+            ScreenController.showWarningMessage(String.format("%s\n%s\n\n%s",
+                    UiString.get(_S80), UiString.get(_S81), ex)
+            );
+            SwingUtilities.invokeLater(new Runnable() {
+                @Override
+                public void run() {
+                    config.setTranslation(GeneralConfig.DEFAULT_TRANSLATION);
+                    config.save();
+                    langPanel.refreshLanguageCombo();
+                }
+            });
+            return false;
+
+        } catch (FileNotFoundException ex) {
+            throw new RuntimeException(ex);
+        }
     }
 
     @Override
@@ -486,7 +515,6 @@ public class PreferencesDialog
         if (source == okButton) {
             if (validateSettings()) {
                 doOkButtonAction();
-                dispose();
             }
         } else if (source == cancelButton) {
             dispose();

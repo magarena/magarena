@@ -114,7 +114,7 @@ public class GeneralConfig {
     private static final boolean DEFAULT_HIDE_AI_ACTION_PROMPT = false;
     private static final int DEFAULT_ROLLOVER_COLOR = Color.YELLOW.getRGB();
     private static final int DEFAULT_SOUND_VOLUME = 50;
-    private static final String DEFAULT_TRANSLATION = "";
+    public static final String DEFAULT_TRANSLATION = "";
 
     private int left=DEFAULT_LEFT;
     private int top=DEFAULT_TOP;

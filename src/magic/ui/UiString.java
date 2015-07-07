@@ -210,4 +210,8 @@ public final class UiString {
         createTranslationFile(txtFile, getUiStringsMap());
     }
 
+    public static void disableTranslations() {
+        translationsMap.clear();
+    }
+
 }

@@ -283,7 +283,7 @@ class TranslationPanel extends JPanel {
         return filenames;
     }
 
-    private void refreshLanguageCombo() {
+    public void refreshLanguageCombo() {
         final List<String> languages = getLangFilenames();
         languages.add(0, "English");
         languageCombo.setModel(new DefaultComboBoxModel<>(languages.toArray(new String[0])));
