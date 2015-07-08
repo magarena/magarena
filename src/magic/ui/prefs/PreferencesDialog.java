@@ -390,7 +390,7 @@ public class PreferencesDialog
         panel.add(skipSingleCheckBox);
         panel.add(alwaysPassCheckBox);
         panel.add(smartTargetCheckBox);
-        panel.add(messageDelaySlider);
+        panel.add(messageDelaySlider, "w 100%");
 
         final JScrollPane scroller = new JScrollPane(panel);
         scroller.getVerticalScrollBar().setUnitIncrement(18);
@@ -431,9 +431,9 @@ public class PreferencesDialog
         // layout components
         final JPanel panel = new JPanel(new MigLayout("flowy, insets 16, gapy 10"));
         panel.add(mouseWheelPopupCheckBox);
-        panel.add(popupDelaySlider);
+        panel.add(popupDelaySlider, "w 100%");
         panel.add(popupScaleContextCheckbox);
-        panel.add(popupScaleSlider);
+        panel.add(popupScaleSlider, "w 100%");
         panel.add(pauseGamePopupCheckBox);
         return panel;
 
