@@ -680,7 +680,7 @@ public class PreferencesDialog
         rollOverColorButton.setFocusable(false);
 
         // Layout UI components.
-        final JPanel panel = new JPanel(new MigLayout("flowx, wrap 2, insets 16, gapy 8", "[140!][]"));
+        final JPanel panel = new JPanel(new MigLayout("flowx, wrap 2, insets 16, gapy 8", "[46%][54%]"));
         panel.add(getThemeSettingPanel(), "spanx 2, w 100%");
         panel.add(highlightLabel, "alignx right");
         panel.add(highlightComboBox, "alignx left");
@@ -705,7 +705,7 @@ public class PreferencesDialog
         // link to more themes online
         final JLabel linkLabel = new LinkLabel(UiString.get(_S54), URLUtils.URL_THEMES);
         // layout
-        final JPanel panel = new JPanel(new MigLayout("flowx, wrap 2, insets 0, gapy 0", "[140!][]"));
+        final JPanel panel = new JPanel(new MigLayout("flowx, wrap 2, insets 0, gapy 0", "[46%][54%]"));
         panel.add(themeLabel, "alignx right");
         panel.add(themeComboBox, "alignx left");
         panel.add(new JLabel(), "alignx right");
