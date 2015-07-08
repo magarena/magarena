@@ -26,11 +26,13 @@ import javax.swing.JFormattedTextField;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.JScrollPane;
 import javax.swing.JSlider;
 import javax.swing.JSpinner;
 import javax.swing.JTabbedPane;
 import javax.swing.JTextField;
 import javax.swing.KeyStroke;
+import javax.swing.ScrollPaneConstants;
 import javax.swing.SpinnerNumberModel;
 import javax.swing.SwingConstants;
 import javax.swing.SwingUtilities;
@@ -198,8 +200,8 @@ public class PreferencesDialog
 
         super(frame, true);
         this.setTitle(UiString.get(_S79));
-        this.setSize(560, 500);
-        this.setLocationRelativeTo(frame);
+        this.setSize(460, 530);
+        this.setLocationRelativeTo(ScreenController.getMainFrame());
         this.setResizable(false);
         this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setUndecorated(true);
@@ -337,55 +339,65 @@ public class PreferencesDialog
         isProxyUpdated = true;
     }
 
-    private JPanel getGameplaySettingsPanel1() {
+    private String getAsHtml(String text) {
+        return String.format("<html>%s</html>", text);
+    }
 
-        hideAIPromptCheckBox = new JCheckBox(UiString.get(_S15), config.getHideAiActionPrompt());
+    private void setButtonPropertyDefaults(final AbstractButton btn) {
+        btn.setFocusable(false);
+        btn.setVerticalTextPosition(SwingConstants.TOP);
+        btn.addMouseListener(this);
+    }
+
+    private JScrollPane getGameplaySettingsPanel1() {
+
+        hideAIPromptCheckBox = new JCheckBox(getAsHtml(UiString.get(_S15)), config.getHideAiActionPrompt());
         hideAIPromptCheckBox.setToolTipText(UiString.get(_S16));
-        hideAIPromptCheckBox.setFocusable(false);
-        hideAIPromptCheckBox.addMouseListener(this);
+        setButtonPropertyDefaults(hideAIPromptCheckBox);
 
-        mulliganScreenCheckbox = new JCheckBox(UiString.get(_S17), config.getMulliganScreenActive());
-        mulliganScreenCheckbox.setFocusable(false);
-        mulliganScreenCheckbox.addMouseListener(this);
+        mulliganScreenCheckbox = new JCheckBox(getAsHtml(UiString.get(_S17)), config.getMulliganScreenActive());
+        setButtonPropertyDefaults(mulliganScreenCheckbox);
 
-        gameLogCheckBox = new JCheckBox(UiString.get(_S18), config.isLogMessagesVisible());
+        gameLogCheckBox = new JCheckBox(getAsHtml(UiString.get(_S18)), config.isLogMessagesVisible());
         gameLogCheckBox.setToolTipText(UiString.get(_S19));
-        gameLogCheckBox.setFocusable(false);
-        gameLogCheckBox.addMouseListener(this);
+        setButtonPropertyDefaults(gameLogCheckBox);
 
-        touchscreenCheckBox = new JCheckBox(UiString.get(_S20), config.isTouchscreen());
-        touchscreenCheckBox.setFocusable(false);
-        touchscreenCheckBox.addMouseListener(this);
+        touchscreenCheckBox = new JCheckBox(getAsHtml(UiString.get(_S20)), config.isTouchscreen());
+        setButtonPropertyDefaults(touchscreenCheckBox);
 
-        skipSingleCheckBox = new JCheckBox(UiString.get(_S21), config.getSkipSingle());
+        skipSingleCheckBox = new JCheckBox(getAsHtml(UiString.get(_S21)), config.getSkipSingle());
         skipSingleCheckBox.setToolTipText(UiString.get(_S22));
-        skipSingleCheckBox.setFocusable(false);
-        skipSingleCheckBox.addMouseListener(this);
+        setButtonPropertyDefaults(skipSingleCheckBox);
 
-        alwaysPassCheckBox = new JCheckBox(UiString.get(_S23), config.getAlwaysPass());
-        alwaysPassCheckBox.setFocusable(false);
-        alwaysPassCheckBox.addMouseListener(this);
+        alwaysPassCheckBox = new JCheckBox(getAsHtml(UiString.get(_S23)), config.getAlwaysPass());
+        setButtonPropertyDefaults(alwaysPassCheckBox);
 
-        smartTargetCheckBox = new JCheckBox(UiString.get(_S24), config.getSmartTarget());
+        smartTargetCheckBox = new JCheckBox(getAsHtml(UiString.get(_S24)), config.getSmartTarget());
         smartTargetCheckBox.setToolTipText(UiString.get(_S25));
-        smartTargetCheckBox.setFocusable(false);
-        smartTargetCheckBox.addMouseListener(this);
+        setButtonPropertyDefaults(smartTargetCheckBox);
 
-        messageDelaySlider = new SliderPanel(UiString.get(_S26), IconImages.getIcon(MagicIcon.DELAY), 0, 3000, 500, config.getMessageDelay());
+        messageDelaySlider = new SliderPanel(getAsHtml(UiString.get(_S26)), IconImages.getIcon(MagicIcon.DELAY), 0, 3000, 500, config.getMessageDelay());
         messageDelaySlider.setToolTipText(UiString.get(_S27));
         messageDelaySlider.addMouseListener(this);
 
-        // layout components
-        final JPanel mainPanel = new JPanel(new MigLayout("flowy, insets 16, gapy 10"));
-        mainPanel.add(hideAIPromptCheckBox);
-        mainPanel.add(mulliganScreenCheckbox);
-        mainPanel.add(gameLogCheckBox);
-        mainPanel.add(touchscreenCheckBox);
-        mainPanel.add(skipSingleCheckBox);
-        mainPanel.add(alwaysPassCheckBox);
-        mainPanel.add(smartTargetCheckBox);
-        mainPanel.add(messageDelaySlider);
-        return mainPanel;
+        final ScrollablePanel panel = new ScrollablePanel(new MigLayout("flowy, insets 16, gapy 10"));
+        panel.setScrollableWidth(ScrollablePanel.ScrollableSizeHint.FIT);
+
+        panel.add(hideAIPromptCheckBox);
+        panel.add(mulliganScreenCheckbox);
+        panel.add(gameLogCheckBox);
+        panel.add(touchscreenCheckBox);
+        panel.add(skipSingleCheckBox);
+        panel.add(alwaysPassCheckBox);
+        panel.add(smartTargetCheckBox);
+        panel.add(messageDelaySlider);
+
+        final JScrollPane scroller = new JScrollPane(panel);
+        scroller.getVerticalScrollBar().setUnitIncrement(18);
+        scroller.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_AS_NEEDED);
+        scroller.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+
+        return scroller;
 
     }
 
