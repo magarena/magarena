@@ -91,7 +91,7 @@ public class PreferencesDialog
     private static final String _S23 = "Always pass during draw and begin of combat step";
     private static final String _S24 = "Limit options for human player to those available to the AI";
     private static final String _S25 = "Positive effects, such as pump and untap, can only be applied to your own permanents. Negative effects, such as destroy and exile, can only be applied to opponent's permanents.";
-    private static final String _S26 = "Message";
+    private static final String _S26 = "Message:";
     private static final String _S27 = "The duration in milliseconds (1000 = 1 second) that the game pauses when an item is added to the stack. This has no effect unless the 'Automatically pass priority' option is enabled.";
     private static final String _S28 = "Popup card image using mouse wheel.";
     private static final String _S29 = "Manually display the card image popup by moving the mouse wheel forwards. Overrides the Auto-Popup delay.";
