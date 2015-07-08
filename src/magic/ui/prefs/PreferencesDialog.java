@@ -571,15 +571,15 @@ public class PreferencesDialog
         // Cancel button
         cancelButton = new JButton(UiString.get(_S39));
         cancelButton.setFocusable(false);
-        cancelButton.setIcon(IconImages.getIcon(MagicIcon.CANCEL));
+        cancelButton.setIcon(IconImages.getIcon(MagicIcon.BANNED_ICON));
         cancelButton.addActionListener(this);
-        buttonPanel.add(cancelButton, "w 100!, alignx right, pushx");
+        buttonPanel.add(cancelButton, "w 120!, h 36!, alignx right, pushx");
         // Save button
         okButton = new JButton(UiString.get(_S40));
         okButton.setFocusable(false);
-        okButton.setIcon(IconImages.getIcon(MagicIcon.OK));
+        okButton.setIcon(IconImages.getIcon(MagicIcon.LEGAL_ICON));
         okButton.addActionListener(this);
-        buttonPanel.add(okButton, "w 100!");
+        buttonPanel.add(okButton, "w 120!, h 36!");
         return buttonPanel;
     }
 
