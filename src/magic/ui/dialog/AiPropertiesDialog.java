@@ -50,8 +50,8 @@ public class AiPropertiesDialog extends JDialog {
 
         this.playerProfile = profile == null ? new AiProfile() : profile;
         playerNameTextField = new JTextField(playerProfile.getPlayerName());
-        lifeSliderPanel = new SliderPanel(UiString.get(_S2), null, 0, 10, 1, playerProfile.getExtraLife());
-        aiLevelSliderPanel = new SliderPanel(UiString.get(_S3), null, 1, 8, 1, playerProfile.getAiLevel());
+        lifeSliderPanel = new SliderPanel(UiString.get(_S2), 0, 10, 1, playerProfile.getExtraLife());
+        aiLevelSliderPanel = new SliderPanel(UiString.get(_S3), 1, 8, 1, playerProfile.getAiLevel());
 
         aiComboBox = new JComboBox<>();
         aiComboBox.setModel(new DefaultComboBoxModel<>(MagicAIImpl.SUPPORTED_AIS));

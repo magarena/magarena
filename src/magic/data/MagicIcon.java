@@ -99,7 +99,6 @@ public enum MagicIcon {
     TARGET("target.gif"),
     VALID("valid.gif"),
     STRENGTH("strength.png"),
-    DELAY("delay.png"),
     PICTURE("picture.png"),
 
     // ability icons

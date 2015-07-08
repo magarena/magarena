@@ -3,7 +3,6 @@ package magic.ui.widget;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Font;
-import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JSlider;
@@ -18,7 +17,7 @@ public class SliderPanel extends JPanel implements ChangeListener {
     private final JLabel titleLabel;
     private final JLabel valueLabel;
 
-    public SliderPanel(final String title,final ImageIcon icon,final int min,final int max,final int spacing,final int value,final boolean snapToTick) {
+    public SliderPanel(final String title, final int min,final int max,final int spacing,final int value,final boolean snapToTick) {
         
         titleLabel=new JLabel(title);
         titleLabel.setPreferredSize(new Dimension(title.isEmpty() ? 0 : 90, 0));
@@ -45,8 +44,8 @@ public class SliderPanel extends JPanel implements ChangeListener {
 
     }
 
-    public SliderPanel(final String title,final ImageIcon icon,final int min,final int max,final int spacing,final int value) {
-        this(title, icon, min, max, spacing, value, true);
+    public SliderPanel(final String title ,final int min,final int max,final int spacing,final int value) {
+        this(title, min, max, spacing, value, true);
     }
 
     public void setTextColor(final Color color) {
@@ -67,7 +66,4 @@ public class SliderPanel extends JPanel implements ChangeListener {
         valueLabel.setText(Integer.toString(slider.getValue()));
     }
 
-    public void setPaintTicks(final boolean b) {
-        slider.setPaintTicks(b);
-    } 
 }

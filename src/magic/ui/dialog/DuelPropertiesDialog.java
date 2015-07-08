@@ -55,9 +55,9 @@ public class DuelPropertiesDialog extends JDialog {
         this.setResizable(false);
         this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 
-        lifeSliderPanel = new SliderPanel(UiString.get(_S2), null, (MagicSystem.isDevMode() ? 1 : 10), 30, 5, initialLife, false);
-        handSizeSliderPanel = new SliderPanel(UiString.get(_S3), null, 6, 8, 1, handSize);
-        winsSliderPanel = new SliderPanel(UiString.get(_S4), null, 1, 11, 2, maxGames);
+        lifeSliderPanel = new SliderPanel(UiString.get(_S2), (MagicSystem.isDevMode() ? 1 : 10), 30, 5, initialLife, false);
+        handSizeSliderPanel = new SliderPanel(UiString.get(_S3), 6, 8, 1, handSize);
+        winsSliderPanel = new SliderPanel(UiString.get(_S4), 1, 11, 2, maxGames);
 
         cubeComboBox = new JComboBox<>(MagicFormat.getDuelFormatsArray());
         cubeComboBox.setLightWeightPopupEnabled(false);

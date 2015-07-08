@@ -67,23 +67,19 @@ public class RandomDeckGeneratorDialog extends JDialog implements ChangeListener
 
         this.cardPoolSize = cardPoolSize;
 
-        deckSizeSlider = new SliderPanel("", null, 40, 100, 10, defaultDeckSize, false);
-        deckSizeSlider.setPaintTicks(false);
+        deckSizeSlider = new SliderPanel("", 40, 100, 10, defaultDeckSize, false);
         deckSizeSlider.addChangeListener(this);
 
-        spellsSlider = new SliderPanel("", null, 0, 100, 1, 60, false);
+        spellsSlider = new SliderPanel("", 0, 100, 1, 60, false);
         spellsSlider.setToolTipText(UiString.get(_S2));
-        spellsSlider.setPaintTicks(false);
         spellsSlider.addChangeListener(this);
 
-        creaturesSlider = new SliderPanel("", null, 0, 100, 1, 66, false);
+        creaturesSlider = new SliderPanel("", 0, 100, 1, 66, false);
         creaturesSlider.setToolTipText(UiString.get(_S3));
-        creaturesSlider.setPaintTicks(false);
         creaturesSlider.addChangeListener(this);
 
-        maxColorsSlider = new SliderPanel("", null, 1, 3, 1, 2, true);
+        maxColorsSlider = new SliderPanel("", 1, 3, 1, 2, true);
         maxColorsSlider.setToolTipText(UiString.get(_S4));
-        maxColorsSlider.setPaintTicks(false);
         maxColorsSlider.addChangeListener(this);
 
         setLookAndFeel();

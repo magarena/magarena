@@ -376,7 +376,7 @@ public class PreferencesDialog
         smartTargetCheckBox.setToolTipText(UiString.get(_S25));
         setButtonPropertyDefaults(smartTargetCheckBox);
 
-        messageDelaySlider = new SliderPanel(getAsHtml(UiString.get(_S26)), IconImages.getIcon(MagicIcon.DELAY), 0, 3000, 500, config.getMessageDelay());
+        messageDelaySlider = new SliderPanel(getAsHtml(UiString.get(_S26)), 0, 3000, 500, config.getMessageDelay());
         messageDelaySlider.setToolTipText(UiString.get(_S27));
         messageDelaySlider.addMouseListener(this);
 
@@ -408,7 +408,7 @@ public class PreferencesDialog
         mouseWheelPopupCheckBox.setToolTipText(UiString.get(_S29));
         mouseWheelPopupCheckBox.addMouseListener(this);
 
-        popupDelaySlider = new SliderPanel(UiString.get(_S30), null, 0, 2000, 50, config.getPopupDelay());
+        popupDelaySlider = new SliderPanel(UiString.get(_S30), 0, 2000, 50, config.getPopupDelay());
         popupDelaySlider.setToolTipText(UiString.get(_S31));
         popupDelaySlider.addMouseListener(this);
 
@@ -419,7 +419,7 @@ public class PreferencesDialog
         popupScaleContextCheckbox.addMouseListener(this);
 
         final int popupScale = (int) (config.getCardPopupScale() * 100);
-        popupScaleSlider = new SliderPanel(UiString.get(_S32), null, 60, 100, 1, popupScale);
+        popupScaleSlider = new SliderPanel(UiString.get(_S32), 60, 100, 1, popupScale);
         popupScaleSlider.setToolTipText(UiString.get(_S33));
         popupScaleSlider.addMouseListener(this);
 
