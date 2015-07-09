@@ -204,7 +204,12 @@ public class ImportDialog extends JDialog implements PropertyChangeListener {
      * so it would display the previous version all ready to select & import.
      */
     private static Path getDefaultImportDirectory() {
-        return MagicFileSystem.getDataPath().getParent().getParent();
+        final Path p = MagicFileSystem.getDataPath().getParent().getParent();
+        if (p == null) {
+            // triggered if using a single relative path for -Dmagarena.dir.
+            return MagicFileSystem.getDataPath().getParent();
+        }
+        return p;
     }
 
     private class ImportCardDataWorker extends SwingWorker<Void, Void> {
