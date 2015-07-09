@@ -141,6 +141,7 @@ M1.%: clean $(EXE) release/Magarena/mods/felt_theme.zip
 			release/Magarena/sounds \
 			release/Magarena/scripts \
 			release/Magarena/scripts_missing \
+			release/Magarena/translations \
 			Magarena-1.$*/Magarena
 	cp \
 			release/Magarena/mods/felt_theme.zip \
