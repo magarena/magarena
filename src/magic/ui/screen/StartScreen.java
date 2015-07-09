@@ -1,9 +1,11 @@
 package magic.ui.screen;
 
 import java.awt.event.ActionEvent;
+import java.io.FileNotFoundException;
 import javax.swing.AbstractAction;
 import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
+import magic.data.GeneralConfig;
 import magic.ui.ScreenController;
 import magic.ui.UiString;
 import magic.ui.screen.widget.MenuPanel;
@@ -39,34 +41,44 @@ public class StartScreen extends AbstractScreen {
 
         }
 
+        private void setLanguage(String aLanguage) throws FileNotFoundException {
+            GeneralConfig.getInstance().setTranslation(aLanguage);
+            GeneralConfig.getInstance().save();
+            UiString.loadTranslationFile();
+        }
+
         private void showLanguageMenu() {
 
-            final MenuPanel menuPanel = new MenuPanel("Language?");
+            final MenuPanel menuPanel = new MenuPanel("Language");
 
             menuPanel.addMenuItem(UiString.get("English"), new AbstractAction() {
                 @Override
-                public void actionPerformed(final ActionEvent e) {
-                    showMainMenuScreen();
+                public void actionPerformed(final ActionEvent ev) {
+                    try {
+                        setLanguage(GeneralConfig.DEFAULT_TRANSLATION);
+                        showMainMenuScreen();                        
+                    } catch (FileNotFoundException ex) {
+                        throw new RuntimeException(ex);
+                    }
                 }
             });
 
             menuPanel.addMenuItem(UiString.get("Português"), new AbstractAction() {
                 @Override
                 public void actionPerformed(final ActionEvent e) {
-                    showMainMenuScreen();
+                    try {
+                        setLanguage("Português");
+                        showMainMenuScreen();
+                    } catch (FileNotFoundException ex) {
+                        ScreenController.showWarningMessage("There is a problem with the translation file : " + ex);
+                    }
                 }
             });
 
             menuPanel.refreshLayout();
 
-//            final JPanel content = new JPanel();
-//            content.setOpaque(false);
-
-              migLayout.setLayoutConstraints("alignx center, aligny center");
-//            migLayout.setLayoutConstraints("insets 0, gap 0, flowy");
-//            migLayout.setRowConstraints("[30!][100%, center][30!]");
-//            add(new JLabel(), "w 100%, h 100%");
-            add(menuPanel); //, "w 100%, h 400!");
+            migLayout.setLayoutConstraints("alignx center, aligny center");
+            add(menuPanel);
 
         }
 
