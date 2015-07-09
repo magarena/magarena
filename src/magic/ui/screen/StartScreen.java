@@ -9,23 +9,18 @@ import magic.data.GeneralConfig;
 import magic.ui.ScreenController;
 import magic.ui.UiString;
 import magic.ui.screen.widget.MenuPanel;
+import magic.utility.MagicSystem;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
 public class StartScreen extends AbstractScreen {
 
     public StartScreen() {
-
-        if (isPostInstallStartup() == false) {
+        if (MagicSystem.isNewInstall() == false) {
             showMainMenuScreen();
+        } else {
+            setContent(new ScreenContent());
         }
-
-        setContent(new ScreenContent());
-
-    }
-
-    private boolean isPostInstallStartup() {
-        return true;
     }
 
     private class ScreenContent extends JPanel {

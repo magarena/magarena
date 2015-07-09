@@ -4,7 +4,6 @@ import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import java.io.File;
-import java.nio.file.Files;
 import javax.swing.AbstractAction;
 import javax.swing.BorderFactory;
 import javax.swing.JFileChooser;
@@ -54,7 +53,7 @@ public class MainMenuScreen extends AbstractScreen implements IWikiPage {
     }
 
     private void showImportDialogOnNewInstall() {
-        if (!Files.exists(MagicFileSystem.getDataPath().resolve(GeneralConfig.CONFIG_FILENAME))) {
+        if (MagicSystem.isNewInstall()) {
             ScreenController.showImportDialog();
         }
     }

@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.lang.management.ManagementFactory;
 import java.lang.management.RuntimeMXBean;
 import java.net.URISyntaxException;
+import java.nio.file.Files;
 import java.security.CodeSource;
 import java.util.ArrayList;
 import java.util.List;
@@ -250,6 +251,10 @@ final public class MagicSystem {
 
         System.exit(0);
         
+    }
+
+    public static boolean isNewInstall() {
+        return Files.exists(MagicFileSystem.getDataPath().resolve(GeneralConfig.CONFIG_FILENAME)) == false;
     }
 
 }
