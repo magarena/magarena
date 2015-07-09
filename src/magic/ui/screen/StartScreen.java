@@ -2,12 +2,14 @@ package magic.ui.screen;
 
 import java.awt.event.ActionEvent;
 import java.io.FileNotFoundException;
+import java.util.List;
 import javax.swing.AbstractAction;
 import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
 import magic.data.GeneralConfig;
 import magic.ui.ScreenController;
 import magic.ui.UiString;
+import magic.ui.prefs.TranslationPanel;
 import magic.ui.screen.widget.MenuPanel;
 import magic.utility.MagicSystem;
 import net.miginfocom.swing.MigLayout;
@@ -15,11 +17,22 @@ import net.miginfocom.swing.MigLayout;
 @SuppressWarnings("serial")
 public class StartScreen extends AbstractScreen {
 
+    // translatable strings
+    private static final String _S1 = "Language";
+    private static final String _S2 = "Invalid translation file.";
+
+    private List<String> translations;
+
     public StartScreen() {
-        if (MagicSystem.isNewInstall() == false) {
+        if (MagicSystem.isNewInstall() == false) { // && MagicSystem.isDevMode() == false) {
             showMainMenuScreen();
         } else {
-            setContent(new ScreenContent());
+            translations = TranslationPanel.getLangFilenames();
+            if (translations.isEmpty()) {
+                showMainMenuScreen();
+            } else {
+                setContent(new ScreenContent());
+            }
         }
     }
 
@@ -28,23 +41,20 @@ public class StartScreen extends AbstractScreen {
         private final MigLayout migLayout = new MigLayout();
 
         public ScreenContent() {
-
             setOpaque(false);
             setLayout(migLayout);
-
             showLanguageMenu();
-
         }
 
         private void setLanguage(String aLanguage) throws FileNotFoundException {
             GeneralConfig.getInstance().setTranslation(aLanguage);
-            GeneralConfig.getInstance().save();
             UiString.loadTranslationFile();
+            GeneralConfig.getInstance().save();
         }
 
         private void showLanguageMenu() {
 
-            final MenuPanel menuPanel = new MenuPanel("Language");
+            final MenuPanel menuPanel = new MenuPanel(UiString.get(_S1));
 
             menuPanel.addMenuItem(UiString.get("English"), new AbstractAction() {
                 @Override
@@ -58,17 +68,22 @@ public class StartScreen extends AbstractScreen {
                 }
             });
 
-            menuPanel.addMenuItem(UiString.get("Português"), new AbstractAction() {
-                @Override
-                public void actionPerformed(final ActionEvent e) {
-                    try {
-                        setLanguage("Português");
-                        showMainMenuScreen();
-                    } catch (FileNotFoundException ex) {
-                        ScreenController.showWarningMessage("There is a problem with the translation file : " + ex);
+            for (final String translation : translations) {
+                menuPanel.addMenuItem(translation, new AbstractAction() {
+                    @Override
+                    public void actionPerformed(final ActionEvent e) {
+                        try {
+                            setLanguage(translation);
+                            showMainMenuScreen();
+                        } catch (FileNotFoundException | NumberFormatException ex) {
+                            System.err.println(ex);
+                            ScreenController.showWarningMessage(
+                                    String.format("%s\n\n%s", UiString.get(_S2), ex)
+                            );
+                        }
                     }
-                }
-            });
+                });
+            }
 
             menuPanel.refreshLayout();
 

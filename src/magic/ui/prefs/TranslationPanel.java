@@ -37,7 +37,7 @@ import net.miginfocom.swing.MigLayout;
 import org.apache.commons.io.FilenameUtils;
 
 @SuppressWarnings("serial")
-class TranslationPanel extends JPanel {
+public class TranslationPanel extends JPanel {
 
     // translatable strings.
     private static final String _S1 = "Edit";
@@ -270,7 +270,7 @@ class TranslationPanel extends JPanel {
         popupMenu.add(newMenuItem);
     }
 
-    private List<String> getLangFilenames() {
+    public static List<String> getLangFilenames() {
         final List<String> filenames = new ArrayList<>();
         final Path langPath = MagicFileSystem.getDataPath(MagicFileSystem.DataPath.TRANSLATIONS);
         try (DirectoryStream<Path> ds = Files.newDirectoryStream(langPath, "*.txt")) {
