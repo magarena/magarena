@@ -101,7 +101,7 @@ public class MagicMain {
     }
 
     private static void startUI() {
-        ScreenController.showMainMenuScreen();
+        ScreenController.showStartScreen();
         // Add "-DtestGame=X" VM argument to start a TestGameBuilder game
         // where X is one of the classes (without the .java) in "magic.test".
         final String testGame = System.getProperty("testGame");

@@ -44,6 +44,7 @@ import magic.ui.screen.SampleHandScreen;
 import magic.ui.screen.SelectAiPlayerScreen;
 import magic.ui.screen.SelectHumanPlayerScreen;
 import magic.ui.screen.SettingsMenuScreen;
+import magic.ui.screen.StartScreen;
 import magic.ui.screen.interfaces.IAvatarImageConsumer;
 import magic.ui.screen.interfaces.IDeckConsumer;
 import magic.utility.MagicSystem;
@@ -177,6 +178,10 @@ public final class ScreenController {
 
     public static void showDuelGameScreen(final MagicDuel duel) {
         showScreen(new DuelGameScreen(duel));
+    }
+
+    public static void showStartScreen() {
+        showScreen(new StartScreen());
     }
 
     public static void showAboutDialog() {
