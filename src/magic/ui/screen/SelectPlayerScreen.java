@@ -49,7 +49,7 @@ public abstract class SelectPlayerScreen
     private static final String _S1 = "Avatar";
     private static final String _S2 = "Choose an avatar image for the selected player profile.";
     private static final String _S3 = "There must be at least one player defined.";
-    private static final String _S4 = "<html>This will delete the <b>%s</b> player profile.<br>All associated information such as player stats will also be removed.<br><br><b>This action cannot be undone!</b></html>";
+    private static final String _S4 = "This will delete the <b>%s</b> player profile.";
     private static final String _S5 = "Delete Player?";
     private static final String _S6 = "Delete";
     private static final String _S7 = "Cancel";
@@ -59,6 +59,8 @@ public abstract class SelectPlayerScreen
     private static final String _S12 = "New";
     private static final String _S13 = "Create a new player profile.";
     private static final String _S15 = "Delete selected player profile (confirmation required).";
+    private static final String _S16 = "All associated information such as player stats will also be removed.";
+    private static final String _S17 = "This action cannot be undone!";
 
     private final List<IPlayerProfileListener> listeners = new ArrayList<>();
     private final JList<? extends PlayerProfile> playersJList;
@@ -182,7 +184,10 @@ public abstract class SelectPlayerScreen
         private boolean isDeletePlayerConfirmedByUser(final PlayerProfile profile) {
             final int action = JOptionPane.showOptionDialog(
                     ScreenController.getMainFrame(),
-                    UiString.get(_S4, profile.getPlayerName()),
+                    String.format("<html>%s<br>%s<br><br><b>%s</b></html>",
+                            UiString.get(_S4, profile.getPlayerName()),
+                            UiString.get(_S16),
+                            UiString.get(_S17)),
                     UiString.get(_S5),
                     JOptionPane.YES_NO_OPTION,
                     JOptionPane.QUESTION_MESSAGE,

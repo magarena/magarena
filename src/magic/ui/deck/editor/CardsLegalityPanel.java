@@ -37,8 +37,8 @@ public class CardsLegalityPanel extends JPanel {
 
     // translatable strings
     private static final String _S1 = "Deck";
-    @StringContext(eg="Memnite is illegal in Standard.")
-    private static final String _S2 ="<html>%s <b>%s</b> in %s.</html>";
+    @StringContext(eg="Memnite <b>is illegal/banned/restricted</b> in Standard.")
+    private static final String _S2 ="%s <b>%s</b> in %s.";
     @StringContext(eg="Illegal deck size for Vintage.")
     private static final String _S3 = "Illegal deck size for %s.";
     private static final String _S4 = "A minimum of %d cards is required.";
@@ -226,10 +226,12 @@ public class CardsLegalityPanel extends JPanel {
             final CardLegalityInfo cardLegality = tableModel.getCardLegality(row);
             
             final JLabel lbl = getLegalityIcon(cardLegality);
-            lbl.setToolTipText(UiString.get(_S2,
+
+            lbl.setToolTipText(String.format("<html>%s</html>",
+                    UiString.get(_S2,
                             cardLegality.getCardName(),
                             cardLegality.getLegality().getDescription(),
-                            cardLegality.getFormat().getName())
+                            cardLegality.getFormat().getName()))
             );
 
             // match border and background formatting with default

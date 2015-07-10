@@ -29,7 +29,9 @@ class LegalityPanel extends JPanel implements IDeckEditorView {
     private static final String _S4 = "Restricted";
     private static final String _S5 = "Only one copy of a card allowed in the deck.";
     private static final String _S6 = "Too many copies";
-    private static final String _S7 = "<html><b>Too many copies of a card in deck</b><br>Does not apply to basic lands,<br><i>Relentless Rats</i> or <i>Shadowborn Apostle</i>.</html>";
+    private static final String _S7 = "Too many copies of a card in deck.";
+    private static final String _S8 = "Does not apply to basic lands,";
+    private static final String _S9 = "or";
     
     // fired when card selection changes
     public static final String CP_CARD_SELECTED = CardTablePanel.CP_CARD_SELECTED;
@@ -131,7 +133,12 @@ class LegalityPanel extends JPanel implements IDeckEditorView {
             add(getIconLabel(MagicIcon.ILLEGAL_ICON, UiString.get(_S2)));
             add(getIconLabel(MagicIcon.BANNED_ICON, UiString.get(_S3)));
             add(getIconLabel(MagicIcon.RESTRICTED_ICON, UiString.get(_S4), UiString.get(_S5)));
-            add(getIconLabel(MagicIcon.RESTRICTED_ICON, UiString.get(_S6), UiString.get(_S7)));
+            add(getIconLabel(MagicIcon.RESTRICTED_ICON, UiString.get(_S6), 
+                    String.format("<html><b>%s</b><br>%s<br><i>Relentless Rats</i> %s <i>Shadowborn Apostle</i>.</html>",
+                            UiString.get(_S7),
+                            UiString.get(_S8),
+                            UiString.get(_S9))
+            ));
         }
 
         private JLabel getIconLabel(MagicIcon magicIcon, String text, String tooltip) {

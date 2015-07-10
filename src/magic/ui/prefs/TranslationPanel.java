@@ -38,7 +38,7 @@ class TranslationPanel extends JPanel {
 
     // translatable strings.
     private static final String _S1 = "Edit";
-    private static final String _S2 = "<html>Delete the <b>%s</b> translation file?</html>";
+    private static final String _S2 = "Delete the <b>%s</b> translation file?";
     private static final String _S3 = "Delete translation file";
     private static final String _S4 = "Delete";
     private static final String _S5 = "eg. français, español, Deutsch, etc.";
@@ -208,7 +208,7 @@ class TranslationPanel extends JPanel {
         if (langFile.exists()) {
             if (JOptionPane.showOptionDialog(
                     ScreenController.getMainFrame(),
-                    UiString.get(_S2, lang),
+                    String.format("<html>%s</html>", UiString.get(_S2, lang)),
                     UiString.get(_S3),
                     JOptionPane.YES_NO_OPTION,
                     JOptionPane.QUESTION_MESSAGE,
