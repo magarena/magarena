@@ -28,6 +28,7 @@ import magic.data.GeneralConfig;
 import magic.ui.UiString;
 import magic.exception.DesktopNotSupportedException;
 import magic.ui.ScreenController;
+import magic.ui.URLUtils;
 import magic.ui.utility.DesktopUtils;
 import magic.utility.MagicFileSystem;
 import net.miginfocom.swing.MigLayout;
@@ -52,6 +53,7 @@ class TranslationPanel extends JPanel {
     private static final String _S14 = "File Explorer";
     private static final String _S15 = "Yes";
     private static final String _S16 = "No";
+    private static final String _S17 = "Help";
 
     private final JComboBox<String> languageCombo = new JComboBox<>();
     private final JButton menuButton = new JButton();
@@ -68,6 +70,8 @@ class TranslationPanel extends JPanel {
         setupDeleteMenuItem();
         popupMenu.addSeparator();
         setupExplorerMenuItem();
+        popupMenu.addSeparator();
+        setupHelpMenuItem();
 
         setupComboBox();
 
@@ -75,6 +79,16 @@ class TranslationPanel extends JPanel {
         add(languageCombo, "w 200!");
         add(menuButton, "w 26!, h 26!");
 
+    }
+
+    private void setupHelpMenuItem() {
+        final JMenuItem menu = new JMenuItem(new AbstractAction(UiString.get(UiString.get(_S17))) {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                URLUtils.openURL(URLUtils.URL_WIKI + "Translating-Magarena");
+            }
+        });
+        popupMenu.add(menu);
     }
 
     private void setupExplorerMenuItem() {
