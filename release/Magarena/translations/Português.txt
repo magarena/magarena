@@ -6,7 +6,7 @@
 0762611188 = Mensagem:
 0404279630 = Apagar o <b>%s</b> arquivo de tradução?
 1093372432 = Isto apagará <b>%s</b> o perfil de jogador.
-1036861715 = Todas as ações associadas a isso, como estatísticas do jogador, também serão removidas.
+1036861715 = Todas as informações associadas a ele, como estatísticas do jogador, também serão removidas.
 0611214660 = Esta ação não pode ser desfeita!
 0766317539 = Língua
 3297432705 = O arquivo de tradução não é válido.
