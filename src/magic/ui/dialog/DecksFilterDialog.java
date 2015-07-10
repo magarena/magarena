@@ -258,7 +258,7 @@ public class DecksFilterDialog extends JDialog {
         private void refreshLayout() {
             removeAll();
             migLayout.setLayoutConstraints("insets 0, aligny center");
-            add(numericFilterCombo, "w 150!");
+            add(numericFilterCombo, "w 150");
             if (sizeSpinner1 != null) { add(sizeSpinner1, "w 60!"); }
             if (sizeSpinner2 != null) { add(sizeSpinner2, "w 60!"); }
             revalidate();
