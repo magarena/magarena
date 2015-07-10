@@ -1,12 +1,24 @@
+# 281107096 eg. Memnite <b>is illegal/banned/restricted</b> in Standard.
+0281107096 = %s <b>%s</b> em %s.
+3854633552 = Cópias em excesso de uma carta no deck.
+3675803412 = Não se aplica a terrenos básicos,
+0498562439 = ou
+0762611188 = Mensagem:
+0404279630 = Apagar o <b>%s</b> arquivo de tradução?
+1093372432 = Isto apagará <b>%s</b> o perfil de jogador.
+1036861715 = Todas as ações associadas a isso, como estatísticas do jogador, também serão removidas.
+0611214660 = Esta ação não pode ser desfeita!
+0766317539 = Língua
+3297432705 = O arquivo de tradução não é válido.
 1441438772 = é legal
 3128437712 = é ilegal
 3508543659 = é banida
 1998365398 = é restrita
 3534594353 = tem cópias em excesso
-# 279083863 ex: adversário: minimax
+# 279083863 eg. AI: minimax
 0279083863 = adversário : %s
 1547688846 = Nível: %d  Vida Extra: %d
-# 2291111045 ex: Mini Max, adversário nível 6 (MMAB)
+# 2291111045 eg. Mini Max, level 6 AI (MMAB)
 2291111045 = %s, nível %d adversário (%s)
 1041984457 = Jogou pela última vez:
 0937697655 = Duelos completados:
@@ -21,11 +33,11 @@
 3540567119 = Mostrar só cartas compatíveis com todos os filtros selecionados
 0032276963 = Excluir cartas compatíveis com os filtros selecionados
 2091671594 = Status
-# 3730400060 ex: filtrar por Expansão no Visualizador de Cartas
+# 3730400060 eg. Set filter in Cards Explorer
 3730400060 = Expansão
 2429296262 = Cubo
 3642128361 = Formato
-# 753727511 ex: filtro de Tipos no Visualizador de Cartas
+# 753727511 eg. Type filter in cards explorer
 0753727511 = Tipo
 3009207953 = Buscar
 3428553851 = Procura por nome, tipo, subtipo e texto do Oráculo.
@@ -62,16 +74,16 @@
 2643469720 = Fechar Menu
 3148315108 = abandonou
 1078297770 = perdeu
-# 3176561557 ex: Jogador1 abandonou/perdeu o jogo.
+# 3176561557 eg. Player1 conceded/lost the game.
 3176561557 = %s %s o jogo.
 3119321525 = Você pode pagar o buyback %s.
-# 71929689 ex: receba a escolha de quantas vezes pagar um kicker único
+# 71929689 eg. get single kicker count choice
 0071929689 = Você pode pagar o %s %s.
 0363507403 = Você pode pedir mulligan.
 3419764797 = Erro Fatal
 0951726381 = Um erro inesperado ocorreu e o Magarena terá que ser fechado.
 1539499086 = Por favor, considere a possibilidade de enviar um relatório sobre o erro para que os desenvolvedores possam investigá-lo.
-2659210019 = Gostaria de abrir o diretório de relatórios de erros no seu visualizador de arquivos?
+2659210019 = Gostaria de abrir o diretório de registros de erros no seu visualizador de arquivos?
 1946093481 = Deck aleatório
 2374612521 = Cria aleatoriamente um deck usando as cartas atualmente disponíveis.
 2585284715 = Acrescentar carta
@@ -83,9 +95,7 @@
 2069643244 = Diminuir
 0391863698 = Diminui a quantidade em um. O mínimo é um.
 1083993486 = É preciso usar este botão para remover a última cópia de uma carta.
-# 107393066 ex: Memnite é ilegal em Standard.
-0107393066 = ▫<html>%s <b>%s</b> em %s.</html>
-# 3799012839 ex: Tamanho ilegal de deck para Vintage.
+# 3799012839 eg. Illegal deck size for Vintage.
 3799012839 = Tamanho ilegal de deck para %s.
 3663052221 = Um mínimo de %d cartas são necessárias.
 1544943228 = Este deck é ilegal.\n\n%s
@@ -96,7 +106,7 @@
 1114478998 = Limpar Deck?
 1303016265 = Sim
 4063104189 = Não
-# 3448976220 ex: Cartas: 290
+# 3448976220 eg. Cards: 290
 3448976220 = Cartas: %s
 3254879136 = Formatos
 0581168980 = Legal
@@ -105,7 +115,6 @@
 2291237783 = Restrita
 1703216590 = Apenas uma cópia de cada carta é permitida no deck.
 0487998117 = Cópias em excesso
-1753640278 = <html><b>Cópias em excesso de uma mesma carta no deck</b><br>Não se aplica a terrenos básicos,<br><i>Relentless Rats</i> ou <i>Shadowborn Apostle</i>.</html>
 0451146151 = Cartas disponíveis
 2719972385 = Já usadas
 0658622440 = Legalidade
@@ -156,9 +165,9 @@
 2362534816 = Estatísticas do Deck : %d cartas
 2098223452 = Monocromáticas : %d  Multicoloridas : %d  Incolores : %d
 1403074998 = Cartas : %d  Monocromáticas : %d  Terrenos : %d
-3077713445 = Relatório
+3077713445 = Registro
 3172671433 = DESLIGADO
-2701219539 = [ Bot. esq.: Liga/Desliga   Bot. Dir.: Relatório Completo ]
+2701219539 = [ Bot. esq.: Liga/Desliga   Bot. Dir.: Registro Completo ]
 3549662833 = Turno %d
 2389230816 = Fase Inicial : Etapa de desvirar
 2088353625 = Fase Inicial : Etapa de manutenção
@@ -166,13 +175,13 @@
 2373208578 = Primeira Fase Principal
 0746516839 = Fase de Combate : Etapa de início de combate
 0181251654 = Fase de Combate : Etapa de declaração de atacantes
-1054775710 = Fase de Combate : Etapa de declaração de bloquadores
+1054775710 = Fase de Combate : Etapa de declaração de bloqueadores
 3551388829 = Fase de Combate : Etapa de dano de combate
 3902199727 = Fase de Combate : Etapa de fim de combate
 3324936721 = Segunda Fase Principal
 1015450405 = Fase final : Etapa final
 1754937449 = Fase final : Etapa de limpeza
-# 412686884 ex: como em "Outra" zona de jogo
+# 412686884 eg. as in 'Other' player zone
 0412686884 = Outra
 4210774852 = Outra : %s
 3934956419 = %s Mão
@@ -182,7 +191,7 @@
 3372400317 = Menu de opções [ESC]
 3348485373 = Exibe o menu de opções gerais.
 1845760512 = Primeiro jogador a %d vence o duelo.
-# 3372089544 ex: como em "Jogo 2 de 3"
+# 3372089544 eg. as in 'Game 2 of 3'
 3372089544 = Jogo %d / %d
 4032896826 = Deck não é válido!
 0476410532 = decks: %d
@@ -196,17 +205,17 @@
 3447345408 = Nível: %d / 8
 0588518027 = Vida extra: %d
 1960950242 = Jogou pela última vez: %s
-# 578187269 ex: "Deck pré-construído" ou "Deck aleatório"
+# 578187269 eg. 'Prebuilt deck' or 'Random deck'
 0578187269 = Deck %s
 0964616095 = Três cores aleatórias
 0403566421 = Duas cores aleatórias
 1121204539 = Uma cor aleatória
 2223806083 = Pré-construído
-# 3110715001 ex: tabela com estatísticas básicas do jogador representando número [T]otal de jogos e duelos
+# 3110715001 eg. player mini-stats heading representing games and duels [P]layed
 3110715001 = T
-# 655174618 ex: tabela com estatísticas básicas do jogador representando [V]itórias em jogos e duelos
+# 655174618 eg. player mini-stats heading representing games and duels [W]on
 0655174618 = V
-# 2909332022 ex: tabela com estatísticas básicas do jogador representando [D]errotas em jogos e duelos
+# 2909332022 eg. player mini-stats heading representing games and duels [L]ost
 2909332022 = D
 2045269212 = Duelos
 1054999605 = Jogos
@@ -232,15 +241,15 @@
 0244087712 = Recomeçar o jogo
 1362090491 = Modo imagem
 1774701603 = Modo texto
-1711468412 = Relatório de Jogo
+1711468412 = Registro de Jogo
 0552798337 = Continuar jogo
-1196618401 = Diretório de relatórios
-0202086223 = Abre o diretório de relatórios de jogo contendo o arquivo 'game.log' no visualizador de arquivos padrão.
+1196618401 = Diretório de registros
+0202086223 = Abre o diretório de registros de jogo contendo o arquivo "game.log" no visualizador de arquivos padrão.
 2109440060 = Não foi possível abrir o diretório "logs" : %s
 1040595989 = Visualização Básica
-0045540177 = Filtra o arquivo de relatório de jogo, removendo os diagnósticos do adversário virtual.
+0045540177 = Filtra o arquivo de registro de jogo, removendo os diagnósticos do adversário virtual.
 0826978357 = Visualização Detalhada
-2010178142 = Arquivo de relatório de jogo completo, incluindo diagnósticos do adversário virtual.
+2010178142 = Arquivo de registro de jogo completo, incluindo diagnósticos do adversário virtual.
 1640912267 = Menu de Ajuda
 2874748309 = Sobre o Magarena
 0790035322 = Glossário
@@ -266,13 +275,12 @@
 0299595545 = Avatar
 2634931871 = Escolha um avatar para o perfil selecionado.
 0263083353 = É preciso haver ao menos um jogador definido.
-0456684240 = <html>Isto apagará o <b>%s</b> perfil de jogador.<br>Todas as informações associadas, como estatísticas do jogador, também serão removidas.<br><br><b>Esta ação não pode ser desfeita!</b></html>
 2373736499 = Apagar Jogador?
 0729279581 = Atualizar configurações do perfil de jogador.
 1403912869 = Novo
 2837671177 = Criar um novo perfil de jogador.
 3943467524 = Apagar o perfil de jogador selecionado (requer confirmação).
-# 1442040356 ex. mostrar a caixa de diálogo "Sobre o Magarena".
+# 1442040356 eg. show Magarena About dialog.
 1442040356 = Sobre...
 3742435974 = Configurações do duelo
 1902254623 = Vida inicial do jogador: %d
@@ -293,7 +301,7 @@
 0657116729 = F11: Tela inteira
 0101965706 = F12: Tela de fundo
 0219843941 = ESC: Opções / Fechar
-3315650188 = Baixar imagens remanescentes
+3315650188 = Baixar imagens
 3669534127 = Versão %s foi lançada.
 0459283561 = Abrir página de downloads
 1963795050 = Não lembrar novamente
@@ -308,9 +316,9 @@
 1043774029 = Decks filtrados (%d)
 1845588347 = %d cartas
 0975172991 = !!! ERRO - Veja o console para detalhes !!!
-3750143259 = Cartas jogáveis, imagens faltando = 
+3750143259 = Cartas jogáveis, imagens faltando =
 1882836958 = Baixar novas imagens
-0865663204 = Cartas não implementadas, imagens faltando = 
+0865663204 = Cartas não implementadas, imagens faltando =
 3768365299 = Ativo
 0690059878 = Inativo
 1147269330 = Sediar duelos do Firemind
@@ -326,7 +334,7 @@
 1299868798 = Requer a reinicialização do Magarena. Aplica-se apenas à interface de usuário em geral, sem afetar dados das cartas.
 1035893169 = Apagar
 4168995852 = Nova tradução
-0868026068 = Visualizador de arquivos
+0868026068 = Ver arquivo
 3022729711 = Usar este deck
 3133106476 = Selecionar deck
 3389550120 = Escolha um de seus decks ou um deck pré-construído.
@@ -353,9 +361,9 @@
 1496316516 = Exibe apenas os terrenos.
 3161213775 = Outras Mágicas
 1273724313 = Exibe todas as outras cartas.
-# 256104689 ex: Criaturas (28 cartas, 46%)
+# 256104689 eg. Creatures (28 cards, 46%)
 0256104689 = %s (%d cartas, %d%%)
-# 2582113049 ex: Todas as cartas (60 cartas)
+# 2582113049 eg. All cards (60 cards)
 2582113049 = %s (%d cartas)
 4020148489 = Deck
 0890925982 = Para funcionar, isto requer a reinicialização do Magarena. Reiniciar agora?
@@ -387,7 +395,6 @@
 2999666700 = Sempre passar a prioridade durante as etapas de compra e início de combate
 3211592766 = Limitar as opções do jogador humano às mesmas disponíveis para o adversário
 3988450823 = Efeitos benéficos, como aumentar poder e resistência de criaturas ou desvirar permanentes, só podem ter as permanentes que você controla como alvos. Efeitos negativos, como destruir ou exilar, só podem ser usados contra as do adversário.
-2030045667 = Mensagem
 1296221841 = Período de tempo, em milisegundos (1000 = 1 segundo), pelo qual o jogo pausa quando algo entra no stack. Só funciona se a opção "Sempre passar a prioridade" estiver ativada.
 2873516643 = Exibir os popups das cartas usando a rodinha do mouse.
 2016399172 = Permite mostrar o popup das cartas movendo a rodinha do mouse para a frente. Desativa o intervalo de exibição do popup das cartas.
@@ -438,8 +445,7 @@
 0098730174 = Exibir demais cartas por
 1142061998 = Define por quanto tempo serão exibidas, em tamanho grande, cartas que não sejam de terreno jogadas pelo computador (1000 milisegundos = 1 segundo).
 1873619234 = Preferências
-0554135844 = Configurar
-1742056297 = <html>Apagar o <b>%s</b> arquivo da tradução?</html>
+0554135844 = Editar
 2758934940 = Apagar arquivo de tradução
 1551995101 = ex: Francês, Espanhol, Alemão, etc.
 4055873071 = Novo arquivo de tradução
@@ -457,7 +463,7 @@
 1004292042 = Visualizador de Cartas
 3535843008 = Fechar
 0055431008 = Ver script
-3040047565 = Veja o script e o arquivo groovy da carta selecionada.<br>(ou clique duplo sobre a linha respectiva)
+3040047565 = Veja o script e o arquivo groovy da carta selecionada.<br>(ou clique duplo na linha)
 4121886317 = Script da carta
 2769603427 = Recarregar
 4212717061 = Recarregar arquivos script/groovy.
