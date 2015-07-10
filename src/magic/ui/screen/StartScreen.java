@@ -9,8 +9,8 @@ import javax.swing.SwingUtilities;
 import magic.data.GeneralConfig;
 import magic.ui.ScreenController;
 import magic.ui.UiString;
-import magic.ui.prefs.TranslationPanel;
 import magic.ui.screen.widget.MenuPanel;
+import magic.utility.MagicFileSystem;
 import magic.utility.MagicSystem;
 import net.miginfocom.swing.MigLayout;
 
@@ -27,7 +27,7 @@ public class StartScreen extends AbstractScreen {
         if (MagicSystem.isNewInstall() == false) { // && MagicSystem.isDevMode() == false) {
             showMainMenuScreen();
         } else {
-            translations = TranslationPanel.getLangFilenames();
+            translations = MagicFileSystem.getTranslationFilenames();
             if (translations.isEmpty()) {
                 showMainMenuScreen();
             } else {

@@ -7,16 +7,20 @@ import java.io.FilenameFilter;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
+import java.nio.file.DirectoryStream;
 import java.nio.file.FileVisitResult;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.SimpleFileVisitor;
 import java.nio.file.attribute.BasicFileAttributes;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 import magic.data.GeneralConfig;
 import magic.model.MagicCardDefinition;
+import org.apache.commons.io.FilenameUtils;
 
 /**
  * Utility class for useful or common file-system related tasks.
@@ -198,6 +202,20 @@ public final class MagicFileSystem {
         });
         Arrays.sort(files);
         return files;
+    }
+
+    public static List<String> getTranslationFilenames() {
+        final List<String> filenames = new ArrayList<>();
+        final Path langPath = getDataPath(DataPath.TRANSLATIONS);
+        try (DirectoryStream<Path> ds = Files.newDirectoryStream(langPath, "*.txt")) {
+            for (Path p : ds) {
+                filenames.add(FilenameUtils.getBaseName(p.getFileName().toString()));
+            }
+            Collections.sort(filenames);
+        } catch (IOException ex) {
+            System.err.println(ex);
+        }
+        return filenames;
     }
     
 }

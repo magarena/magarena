@@ -11,10 +11,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.net.URISyntaxException;
-import java.nio.file.DirectoryStream;
-import java.nio.file.Files;
 import java.nio.file.Path;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
@@ -34,10 +31,9 @@ import magic.ui.ScreenController;
 import magic.ui.utility.DesktopUtils;
 import magic.utility.MagicFileSystem;
 import net.miginfocom.swing.MigLayout;
-import org.apache.commons.io.FilenameUtils;
 
 @SuppressWarnings("serial")
-public class TranslationPanel extends JPanel {
+class TranslationPanel extends JPanel {
 
     // translatable strings.
     private static final String _S1 = "Edit";
@@ -270,21 +266,8 @@ public class TranslationPanel extends JPanel {
         popupMenu.add(newMenuItem);
     }
 
-    public static List<String> getLangFilenames() {
-        final List<String> filenames = new ArrayList<>();
-        final Path langPath = MagicFileSystem.getDataPath(MagicFileSystem.DataPath.TRANSLATIONS);
-        try (DirectoryStream<Path> ds = Files.newDirectoryStream(langPath, "*.txt")) {
-            for (Path p : ds) {
-                filenames.add(FilenameUtils.getBaseName(p.getFileName().toString()));
-            }
-        } catch (IOException ex) {
-            System.err.println(ex);
-        }
-        return filenames;
-    }
-
     public void refreshLanguageCombo() {
-        final List<String> languages = getLangFilenames();
+        final List<String> languages = MagicFileSystem.getTranslationFilenames();
         languages.add(0, "English");
         languageCombo.setModel(new DefaultComboBoxModel<>(languages.toArray(new String[0])));
         languageCombo.setSelectedItem(GeneralConfig.getInstance().getTranslation());
