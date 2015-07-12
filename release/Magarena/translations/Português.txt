@@ -19,7 +19,7 @@
 0279083863 = adversário : %s
 1547688846 = Nível: %d  Vida Extra: %d
 # 2291111045 eg. Mini Max, level 6 AI (MMAB)
-2291111045 = %s, nível %d adversário (%s)
+2291111045 = %s, nível %d (%s)
 1041984457 = Jogou pela última vez:
 0937697655 = Duelos completados:
 3390329257 = Duelos vencidos / perdidos:
@@ -167,7 +167,7 @@
 1403074998 = Cartas : %d  Monocromáticas : %d  Terrenos : %d
 3077713445 = Registro
 3172671433 = DESLIGADO
-2701219539 = [ Bot. esq.: Liga/Desliga   Bot. Dir.: Registro Completo ]
+2701219539 = Bot.Esq: Liga/Desl. Bot.Dir: Reg.Comp.
 3549662833 = Turno %d
 2389230816 = Fase Inicial : Etapa de desvirar
 2088353625 = Fase Inicial : Etapa de manutenção
@@ -316,9 +316,9 @@
 1043774029 = Decks filtrados (%d)
 1845588347 = %d cartas
 0975172991 = !!! ERRO - Veja o console para detalhes !!!
-3750143259 = Cartas jogáveis, imagens faltando =
+3750143259 = Imagens de cartas implementadas em falta =
 1882836958 = Baixar novas imagens
-0865663204 = Cartas não implementadas, imagens faltando =
+0865663204 = Imagens de cartas não implementadas em falta =
 3768365299 = Ativo
 0690059878 = Inativo
 1147269330 = Sediar duelos do Firemind
