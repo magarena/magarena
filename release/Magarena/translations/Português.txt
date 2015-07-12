@@ -5,8 +5,8 @@
 0498562439 = ou
 0762611188 = Mensagem:
 0404279630 = Apagar o <b>%s</b> arquivo de tradução?
-1093372432 = Isto apagará <b>%s</b> o perfil de jogador.
-1036861715 = Todas as informações associadas a ele, como estatísticas do jogador, também serão removidas.
+1093372432 = Isso apagará o perfil de <b>%s</b>.
+1036861715 = Todas as informações associadas ao perfil, como estatísticas do jogador, também serão removidas.
 0611214660 = Esta ação não pode ser desfeita!
 0766317539 = Língua
 3297432705 = O arquivo de tradução não é válido.
@@ -254,7 +254,7 @@
 2874748309 = Sobre o Magarena
 0790035322 = Glossário
 0681219647 = Mulligan?
-3775034151 = Jogue com essa mão
+3775034151 = Jogar com essa mão
 2537869601 = Mulligan
 0136160354 = Compre uma nova mão com uma carta a menos.
 0861139228 = Você joga %s
@@ -274,7 +274,7 @@
 0893194890 = Atualizar Jogador
 0299595545 = Avatar
 2634931871 = Escolha um avatar para o perfil selecionado.
-0263083353 = É preciso haver ao menos um jogador definido.
+0263083353 = É preciso haver ao menos um perfil de jogador.
 2373736499 = Apagar Jogador?
 0729279581 = Atualizar configurações do perfil de jogador.
 1403912869 = Novo
