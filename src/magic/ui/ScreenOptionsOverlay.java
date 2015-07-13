@@ -34,6 +34,9 @@ public abstract class ScreenOptionsOverlay extends TexturedPanel implements IThe
     private final MenuPanel screenMenu;
     private MenuPanel menu = null;
 
+    protected abstract MenuPanel getScreenMenu();
+    protected abstract boolean showPreferencesOption();
+
     public ScreenOptionsOverlay(final MagicFrame frame) {
 
         refreshStyle();
@@ -90,16 +93,17 @@ public abstract class ScreenOptionsOverlay extends TexturedPanel implements IThe
         });
         menu.addBlankItem();
 
-        // System stuff.
-        menu.addMenuItem(UiString.get(_S5), new AbstractAction() {
-            @Override
-            public void actionPerformed(final ActionEvent e) {
-                hideAllMenuPanels();
-                ScreenController.showPreferencesDialog();
-                hideOverlay();
-            }
-        });
-        menu.addBlankItem();
+        if (showPreferencesOption()) {
+            menu.addMenuItem(UiString.get(_S5), new AbstractAction() {
+                @Override
+                public void actionPerformed(final ActionEvent e) {
+                    hideAllMenuPanels();
+                    ScreenController.showPreferencesDialog();
+                    hideOverlay();
+                }
+            });
+            menu.addBlankItem();
+        }
 
         menu.addMenuItem(UiString.get(_S6), new AbstractAction() {
             @Override
@@ -140,7 +144,6 @@ public abstract class ScreenOptionsOverlay extends TexturedPanel implements IThe
         return screenMenu == null;
     }
 
-    protected abstract MenuPanel getScreenMenu();
 
     public void hideOverlay() {
         setVisible(false);

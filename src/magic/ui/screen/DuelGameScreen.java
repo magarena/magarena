@@ -177,6 +177,11 @@ public class DuelGameScreen extends AbstractScreen implements IOptionsMenu {
 
         }
 
+        @Override
+        protected boolean showPreferencesOption() {
+            return true;
+        }
+
     }
 
     /**

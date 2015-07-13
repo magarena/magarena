@@ -292,12 +292,14 @@ public class DeckEditorSplitScreen
             super(frame);
         }
 
-        /* (non-Javadoc)
-         * @see magic.ui.ScreenOptionsOverlay#getScreenMenu()
-         */
         @Override
         protected MenuPanel getScreenMenu() {
             return null;
+        }
+
+        @Override
+        protected boolean showPreferencesOption() {
+            return false;
         }
 
     }

@@ -137,6 +137,11 @@ public class CardExplorerScreen
             return null;
         }
 
+        @Override
+        protected boolean showPreferencesOption() {
+            return false;
+        }
+
     }
 
     @Override

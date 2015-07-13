@@ -236,6 +236,11 @@ public class DuelDecksScreen
             return null;
         }
 
+        @Override
+        protected boolean showPreferencesOption() {
+            return false;
+        }
+
     }
 
     private boolean isLegalDeckAndShowErrors(final MagicDeck deck, final String playerName) {

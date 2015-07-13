@@ -326,6 +326,11 @@ public class DeckEditorScreen
             return null;
         }
 
+        @Override
+        protected boolean showPreferencesOption() {
+            return false;
+        }
+
     }
 
     @Override
