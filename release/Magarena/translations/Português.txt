@@ -29,9 +29,9 @@
 2334949133 = Turnos jogados:
 1199506248 = Média de turnos por jogo:
 1255418600 = Cores mais usadas:
-1256404770 = Mostrar cartas compatíveis com qualquer filtro selecionado
-3540567119 = Mostrar só cartas compatíveis com todos os filtros selecionados
-0032276963 = Excluir cartas compatíveis com os filtros selecionados
+1256404770 = Preencher qualquer critério
+3540567119 = Preencher todos os critérios
+0032276963 = Não preencher nenhum critério
 2091671594 = Status
 # 3730400060 eg. Set filter in Cards Explorer
 3730400060 = Expansão
