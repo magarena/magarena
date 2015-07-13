@@ -101,13 +101,15 @@ public class MagicMain {
     }
 
     private static void startUI() {
-        ScreenController.showStartScreen();
-        // Add "-DtestGame=X" VM argument to start a TestGameBuilder game
-        // where X is one of the classes (without the .java) in "magic.test".
+
+        // -DtestGame=X, where X is one of the classes (without the .java) in "magic.test".
         final String testGame = System.getProperty("testGame");
         if (testGame != null) {
             ScreenController.showDuelGameScreen(TestGameBuilder.buildGame(testGame));
+            return;
         }
+
+        // -DselfMode=true
         if (MagicSystem.isAiVersusAi()) {
             final DuelConfig config = DuelConfig.getInstance();
             config.load();
@@ -117,7 +119,12 @@ public class MagicMain {
             config.setPlayerProfile(1, PlayerProfiles.getDefaultAiPlayer());
 
             ScreenController.getMainFrame().newDuel(config);
+            return;
         }
+
+        // normal UI startup.
+        ScreenController.showStartScreen();
+        
     }
 
     private static void parseCommandline(final String[] args) {

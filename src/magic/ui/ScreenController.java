@@ -68,7 +68,7 @@ public final class ScreenController {
     }
 
     public static void showDuelDecksScreen(final MagicDuel duel) {
-        if (screens.peek() instanceof DuelDecksScreen) {
+        if (!screens.isEmpty() && screens.peek() instanceof DuelDecksScreen) {
             screens.pop();
         }
         showScreen(new DuelDecksScreen(duel));
