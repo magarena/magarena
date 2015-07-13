@@ -193,7 +193,7 @@ public final class ScreenController {
     }
 
     public static void showPreferencesDialog() {
-        final PreferencesDialog dialog = new PreferencesDialog(getMainFrame());
+        final PreferencesDialog dialog = new PreferencesDialog(getMainFrame(), isDuelActive());
         if (dialog.isRestartRequired()) {
             SwingUtilities.invokeLater(new Runnable() {
                 @Override
@@ -289,7 +289,7 @@ public final class ScreenController {
 
     public static boolean isDuelActive() {
         for (AbstractScreen screen : screens) {
-            if (screen instanceof DuelDecksScreen) {
+            if (screen instanceof DuelDecksScreen || screen instanceof DuelGameScreen) {
                 return true;
             }
         }

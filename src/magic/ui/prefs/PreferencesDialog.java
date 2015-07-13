@@ -195,10 +195,13 @@ public class PreferencesDialog
     private final JLabel hintLabel = new JLabel();
     private boolean isProxyUpdated = false;
     private boolean isRestartRequired = false;
+    private final boolean isGamePlayMode;
 
-    public PreferencesDialog(final MagicFrame frame) {
+    public PreferencesDialog(final MagicFrame frame, final boolean isGamePlayMode) {
 
         super(frame, true);
+        this.isGamePlayMode = isGamePlayMode;
+
         this.setTitle(UiString.get(_S79));
         this.setSize(460, 530);
         this.setLocationRelativeTo(ScreenController.getMainFrame());
@@ -245,11 +248,17 @@ public class PreferencesDialog
 
     private JTabbedPane getTabbedSettingsPane() {
         final JTabbedPane tabbedPane = new JTabbedPane();
-        tabbedPane.addTab(UiString.get(_S3), getGeneralTabPanel());
-        tabbedPane.addTab(UiString.get(_S4), getGameplaySettingsTabbedPane());
-        tabbedPane.addTab(UiString.get(_S5), getLookAndFeelSettingsPanel());
-        tabbedPane.addTab(UiString.get(_S6), getAudioSettingsPanel());
-        tabbedPane.addTab(UiString.get(_S7), getNetworkSettingsPanel());
+        if (isGamePlayMode) {
+            tabbedPane.addTab(UiString.get(_S4), getGameplaySettingsTabbedPane());
+            tabbedPane.addTab(UiString.get(_S5), getLookAndFeelSettingsPanel());
+            tabbedPane.addTab(UiString.get(_S6), getAudioSettingsPanel());
+        } else {
+            tabbedPane.addTab(UiString.get(_S3), getGeneralTabPanel());
+            tabbedPane.addTab(UiString.get(_S4), getGameplaySettingsTabbedPane());
+            tabbedPane.addTab(UiString.get(_S5), getLookAndFeelSettingsPanel());
+            tabbedPane.addTab(UiString.get(_S6), getAudioSettingsPanel());
+            tabbedPane.addTab(UiString.get(_S7), getNetworkSettingsPanel());
+        }
         return tabbedPane;
     }
 
@@ -451,18 +460,13 @@ public class PreferencesDialog
         config.setMouseWheelPopup(mouseWheelPopupCheckBox.isSelected());
         config.setPopupDelay(popupDelaySlider.getValue());
         config.setMessageDelay(messageDelaySlider.getValue());
-        config.setPreviewCardOnSelect(previewCardOnSelectCheckBox.isSelected());
         config.setLogMessagesVisible(gameLogCheckBox.isSelected());
         config.setMulliganScreenActive(mulliganScreenCheckbox.isSelected());
         config.setCustomBackground(customBackgroundCheckBox.isSelected());
-        config.setShowMissingCardData(missingCardDataCheckbox.isSelected());
-        config.setCardImagesPath(imagesFolderChooser.getPath());
         config.setAnimateGameplay(animateGameplayCheckBox.isSelected());
-        config.setProxy(getNewProxy());
         config.setNewTurnAlertDuration((int) newTurnAlertSpinner.getValue());
         config.setLandPreviewDuration((int) landAnimationSpinner.getValue());
         config.setNonLandPreviewDuration((int) nonLandAnimationSpinner.getValue());
-        config.setIsSplitViewDeckEditor(splitViewDeckEditorCheckBox.isSelected());
         config.setIsCardPopupScaledToScreen(popupScaleContextCheckbox.isSelected());
         config.setCardPopupScale(popupScaleSlider.getValue() / 100d);
         config.setIsUiSound(uiSoundCheckBox.isSelected());
@@ -470,7 +474,18 @@ public class PreferencesDialog
         config.setHideAiActionPrompt(hideAIPromptCheckBox.isSelected());
         config.setRolloverColor(rollOverColorButton.getColor());
         config.setUiSoundVolume(uiVolumeSlider.getValue());
-        config.setTranslation(langPanel.getSelectedLanguage());
+
+        if (isGamePlayMode == false) {
+            // General
+            config.setCardImagesPath(imagesFolderChooser.getPath());
+            config.setPreviewCardOnSelect(previewCardOnSelectCheckBox.isSelected());
+            config.setShowMissingCardData(missingCardDataCheckbox.isSelected());
+            config.setIsSplitViewDeckEditor(splitViewDeckEditorCheckBox.isSelected());
+            config.setTranslation(langPanel.getSelectedLanguage());
+            // Network
+            config.setProxy(getNewProxy());
+        }
+
         config.save();
     }
 
@@ -537,13 +552,15 @@ public class PreferencesDialog
     }
 
     private boolean validateSettings() {
-        if (!imagesFolderChooser.isValidDirectory()) {
-            ScreenController.showWarningMessage(UiString.get(_S36));
-            return false;
-        }
-        if (isProxyUpdated && !isProxyValid()) {
-            ScreenController.showWarningMessage(UiString.get(_S37));
-            return false;
+        if (isGamePlayMode == false) {
+            if (!imagesFolderChooser.isValidDirectory()) {
+                ScreenController.showWarningMessage(UiString.get(_S36));
+                return false;
+            }
+            if (isProxyUpdated && !isProxyValid()) {
+                ScreenController.showWarningMessage(UiString.get(_S37));
+                return false;
+            }
         }
         try {
             newTurnAlertSpinner.commitEdit();
@@ -739,7 +756,7 @@ public class PreferencesDialog
         missingCardDataCheckbox = new JCheckBox(UiString.get(_S61), config.showMissingCardData());
         missingCardDataCheckbox.setToolTipText(UiString.get(_S62));
         missingCardDataCheckbox.addMouseListener(this);
-        previewCardOnSelectCheckBox.setFocusable(false);
+        missingCardDataCheckbox.setFocusable(false);
 
         // Layout UI components.
         final JPanel panel = new JPanel(new MigLayout("flowy, insets 0"));
