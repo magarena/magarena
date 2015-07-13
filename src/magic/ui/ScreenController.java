@@ -1,7 +1,5 @@
 package magic.ui;
 
-import java.io.IOException;
-import java.net.URISyntaxException;
 import magic.ui.utility.MagicStyle;
 import java.util.Stack;
 import javax.swing.JComponent;
@@ -47,15 +45,12 @@ import magic.ui.screen.SettingsMenuScreen;
 import magic.ui.screen.StartScreen;
 import magic.ui.screen.interfaces.IAvatarImageConsumer;
 import magic.ui.screen.interfaces.IDeckConsumer;
-import magic.utility.MagicSystem;
 
 public final class ScreenController {
 
     // translatable strings.
-    private static final String _S1 = "This will require a restart to take full effect. Restart now?";
     private static final String _S2 = "Information";
     private static final String _S3 = "Warning";
-    private static final String _S4 = "Restart Magarena?";
 
     private static MagicFrame mainFrame = null;
     private static final Stack<AbstractScreen> screens = new Stack<>();
@@ -198,30 +193,10 @@ public final class ScreenController {
             SwingUtilities.invokeLater(new Runnable() {
                 @Override
                 public void run() {
-                    if (confirmRestart()) {
-                        try {
-                            MagicSystem.restart();
-                        } catch (URISyntaxException | IOException ex) {
-                            System.err.println(ex);
-                        } catch (Exception ex) {
-                            System.err.println(ex);
-                        }
-                    }
+                    showMainMenuScreen();
                 }
             });
         }
-    }
-
-    private static boolean confirmRestart() {
-        if (JOptionPane.showConfirmDialog(
-                mainFrame,
-                UiString.get(_S1),
-                UiString.get(_S4),
-                JOptionPane.YES_NO_OPTION,
-                JOptionPane.QUESTION_MESSAGE) == JOptionPane.YES_OPTION) {
-            return true;
-        }
-        return false;
     }
 
     private static void closeActiveScreen() {
