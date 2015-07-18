@@ -24,15 +24,10 @@ public class StartScreen extends AbstractScreen {
     private List<String> translations;
 
     public StartScreen() {
-        if (MagicSystem.isNewInstall() == false) { // && MagicSystem.isDevMode() == false) {
+        if (MagicSystem.isNewInstall() == false) {
             showMainMenuScreen();
         } else {
-            translations = MagicFileSystem.getTranslationFilenames();
-            if (translations.isEmpty()) {
-                showMainMenuScreen();
-            } else {
-                setContent(new ScreenContent());
-            }
+            setContent(new ScreenContent());
         }
     }
 
@@ -41,9 +36,22 @@ public class StartScreen extends AbstractScreen {
         private final MigLayout migLayout = new MigLayout();
 
         public ScreenContent() {
+
             setOpaque(false);
             setLayout(migLayout);
-            showLanguageMenu();
+            
+            translations = MagicFileSystem.getTranslationFilenames();
+            if (translations.isEmpty()) {
+                SwingUtilities.invokeLater(new Runnable() {
+                    @Override
+                    public void run() {
+                        ScreenController.showImportScreen();
+                    }
+                });
+            } else {
+                showLanguageMenu();
+            }
+
         }
 
         private void setLanguage(String aLanguage) throws FileNotFoundException {
@@ -61,7 +69,7 @@ public class StartScreen extends AbstractScreen {
                 public void actionPerformed(final ActionEvent ev) {
                     try {
                         setLanguage(GeneralConfig.DEFAULT_TRANSLATION);
-                        showMainMenuScreen();                        
+                        ScreenController.showImportScreen();
                     } catch (FileNotFoundException ex) {
                         throw new RuntimeException(ex);
                     }
@@ -74,7 +82,7 @@ public class StartScreen extends AbstractScreen {
                     public void actionPerformed(final ActionEvent e) {
                         try {
                             setLanguage(translation);
-                            showMainMenuScreen();
+                            ScreenController.showImportScreen();
                         } catch (FileNotFoundException | NumberFormatException ex) {
                             System.err.println(ex);
                             ScreenController.showWarningMessage(

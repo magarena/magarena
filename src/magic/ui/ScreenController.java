@@ -16,7 +16,6 @@ import magic.model.player.IPlayerProfileListener;
 import magic.model.player.PlayerProfile;
 import magic.ui.dialog.AboutDialog;
 import magic.ui.dialog.DuelSidebarLayoutDialog;
-import magic.ui.dialog.ImportDialog;
 import magic.ui.prefs.PreferencesDialog;
 import magic.ui.duel.choice.MulliganChoicePanel;
 import magic.ui.screen.AbstractScreen;
@@ -33,6 +32,7 @@ import magic.ui.screen.DuelDecksScreen;
 import magic.ui.screen.DuelGameScreen;
 import magic.ui.screen.GameLogScreen;
 import magic.ui.screen.HelpMenuScreen;
+import magic.ui.screen.ImportScreen;
 import magic.ui.screen.KeywordsScreen;
 import magic.ui.screen.MainMenuScreen;
 import magic.ui.screen.MulliganScreen;
@@ -176,15 +176,17 @@ public final class ScreenController {
     }
 
     public static void showStartScreen() {
+        screens.clear();
         showScreen(new StartScreen());
     }
 
+    public static void showImportScreen() {
+        screens.clear();
+        showScreen(new ImportScreen());
+    }
+    
     public static void showAboutDialog() {
         new AboutDialog(getMainFrame());
-    }
-
-    public static void showImportDialog() {
-        new ImportDialog(getMainFrame());
     }
 
     public static void showPreferencesDialog() {

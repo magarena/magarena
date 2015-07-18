@@ -735,4 +735,8 @@ public class GeneralConfig {
         return INSTANCE;
     }
 
+    public boolean isCustomCardImagesPath() {
+        return cardImagesPath.isEmpty() == false;
+    }
+
 }

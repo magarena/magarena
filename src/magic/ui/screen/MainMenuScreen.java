@@ -48,14 +48,7 @@ public class MainMenuScreen extends AbstractScreen implements IWikiPage {
 
     public MainMenuScreen() {
         setContent(getScreenContent());
-        showImportDialogOnNewInstall();
         alertPanel.refreshAlerts();
-    }
-
-    private void showImportDialogOnNewInstall() {
-        if (MagicSystem.isNewInstall()) {
-            ScreenController.showImportDialog();
-        }
     }
 
     private JPanel getScreenContent() {

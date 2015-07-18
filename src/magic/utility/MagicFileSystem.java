@@ -217,5 +217,25 @@ public final class MagicFileSystem {
         }
         return filenames;
     }
-    
+
+    public static void deleteGeneralConfigFile() {
+        getDataPath().resolve(GeneralConfig.CONFIG_FILENAME).toFile().delete();
+    }
+
+    /**
+     * Should return the directory containing the current installation of Magarena.
+     * <p>
+     * The idea being that a new version of Magarena would most likely be
+     * installed to a new directory at the same level as the previous version,
+     * so it would display the previous version all ready to select & import.
+     */
+    public static Path getDefaultImportDirectory() {
+        final Path p = getDataPath().getParent().getParent();
+        if (p == null) {
+            // triggered if using a single relative path for -Dmagarena.dir.
+            return getDataPath().getParent();
+        }
+        return p;
+    }
+
 }
