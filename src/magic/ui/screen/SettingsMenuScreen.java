@@ -2,6 +2,7 @@ package magic.ui.screen;
 
 import java.awt.event.ActionEvent;
 import javax.swing.AbstractAction;
+import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
@@ -12,6 +13,7 @@ import magic.ui.dialog.DownloadImagesDialog;
 import magic.ui.dialog.FiremindWorkerDialog;
 import magic.ui.screen.widget.MenuPanel;
 import magic.ui.theme.ThemeFactory;
+import magic.ui.widget.KeysStripPanel;
 import magic.utility.MagicFileSystem;
 import net.miginfocom.swing.MigLayout;
 
@@ -44,7 +46,6 @@ public class SettingsMenuScreen extends AbstractScreen {
 
         final JPanel content = new JPanel();
         content.setOpaque(false);
-        content.setLayout(new MigLayout("insets 0, gap 0, center, center"));
 
         final MenuPanel menu = new MenuPanel(UiString.get(_S1));
 
@@ -100,7 +101,16 @@ public class SettingsMenuScreen extends AbstractScreen {
         });
 
         menu.refreshLayout();
-        content.add(menu);
+        
+        final MigLayout layout = new MigLayout();
+        layout.setLayoutConstraints("insets 0, gap 0, flowy");
+        layout.setRowConstraints("[30!][100%, center][30!, bottom]");
+
+        content.setLayout(layout);
+        content.add(new JLabel(), "w 100%, h 100%");
+        content.add(menu, "w 100%, alignx center");
+        content.add(new KeysStripPanel(), "w 100%");
+
         return content;
 
     }
