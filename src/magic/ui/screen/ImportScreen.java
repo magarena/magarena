@@ -14,7 +14,6 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 import javax.swing.SwingUtilities;
-import magic.data.GeneralConfig;
 import magic.ui.ImportWorker;
 import magic.ui.MagarenaDirectoryChooser;
 import magic.ui.ScreenController;
@@ -187,7 +186,7 @@ public class ImportScreen extends AbstractScreen {
                         SwingUtilities.invokeLater(new Runnable() {
                             @Override
                             public void run() {
-                                ThemeFactory.getInstance().setCurrentTheme(GeneralConfig.getInstance().getTheme());
+                                ThemeFactory.getInstance().loadThemes();
                                 ScreenController.showMainMenuScreen();
                             }
                         });
