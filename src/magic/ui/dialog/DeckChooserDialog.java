@@ -18,6 +18,7 @@ import magic.firemind.FiremindJsonReader;
 import magic.ui.ScreenController;
 import magic.ui.UiString;
 import magic.ui.dialog.button.CancelButton;
+import magic.ui.dialog.button.SaveButton;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.deck.CustomDecksComboxBox;
 import magic.ui.widget.deck.FiremindDecksComboxBox;
@@ -29,14 +30,13 @@ import net.miginfocom.swing.MigLayout;
 public class DeckChooserDialog extends MagicDialog {
 
     // translatable strings
-    private static final String _S1 = "Save";
     private static final String _S2 = "Select Deck";
 
     private final JComboBox<DeckType> deckTypeCombo;
     private JComboBox<String> deckNameCombo;
     private final DecksPanel decksPanel;
     private boolean isCancelled = false;
-    private final JButton saveButton = new JButton(UiString.get(_S1));
+    private final JButton saveButton = new SaveButton();
 
     public DeckChooserDialog(final DeckType aDeckType, final String aDeckName) {
 
@@ -108,8 +108,8 @@ public class DeckChooserDialog extends MagicDialog {
 
     private JPanel getButtonPanel() {
         final JPanel buttonPanel = new JPanel(new MigLayout("insets 0, alignx right"));
-        buttonPanel.add(saveButton);
         buttonPanel.add(getCancelButton());
+        buttonPanel.add(saveButton);
         return buttonPanel;
     }
 
