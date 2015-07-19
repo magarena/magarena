@@ -17,6 +17,7 @@ import magic.ui.MagicFrame;
 import magic.ui.ScreenController;
 import magic.ui.UiString;
 import magic.ui.dialog.button.CancelButton;
+import magic.ui.dialog.button.SaveButton;
 import magic.ui.widget.SliderPanel;
 import magic.utility.MagicSystem;
 import net.miginfocom.swing.MigLayout;
@@ -30,7 +31,6 @@ public class DuelPropertiesDialog extends MagicDialog {
     private static final String _S3 = "Hand size:";
     private static final String _S4 = "Max. games:";
     private static final String _S5 = "Cube:";
-    private static final String _S7 = "Save";
 
     private final SliderPanel handSizeSliderPanel;
     private final SliderPanel lifeSliderPanel;
@@ -93,8 +93,8 @@ public class DuelPropertiesDialog extends MagicDialog {
 
     private JPanel getButtonPanel() {
         final JPanel buttonPanel = new JPanel(new MigLayout("insets 0, alignx right"));
-        buttonPanel.add(getSaveButton());
         buttonPanel.add(getCancelButton());
+        buttonPanel.add(getSaveButton());
         return buttonPanel;
     }
 
@@ -105,13 +105,8 @@ public class DuelPropertiesDialog extends MagicDialog {
     }
 
     private JButton getSaveButton() {
-        final JButton btn = new JButton(UiString.get(_S7));
-        btn.addActionListener(new AbstractAction() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                dispose();
-            }
-        });
+        final JButton btn = new SaveButton();
+        btn.addActionListener(getSaveAction());
         return btn;
     }
 
@@ -141,6 +136,15 @@ public class DuelPropertiesDialog extends MagicDialog {
             @Override
             public void actionPerformed(ActionEvent e) {
                 isCancelled = true;
+                dispose();
+            }
+        };
+    }
+
+    private AbstractAction getSaveAction() {
+        return new AbstractAction() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
                 dispose();
             }
         };
