@@ -17,6 +17,7 @@ import magic.ui.MagicFrame;
 import magic.ui.ScreenController;
 import magic.ui.UiString;
 import magic.ui.dialog.button.CancelButton;
+import magic.ui.dialog.button.SaveButton;
 import magic.ui.widget.SliderPanel;
 import net.miginfocom.swing.MigLayout;
 
@@ -79,8 +80,8 @@ public class AiPropertiesDialog extends MagicDialog {
 
     private JPanel getButtonPanel() {
         final JPanel buttonPanel = new JPanel(new MigLayout("insets 0, alignx right"));
-        buttonPanel.add(getSaveButton());
         buttonPanel.add(getCancelButton());
+        buttonPanel.add(getSaveButton());
         return buttonPanel;
     }
 
@@ -91,16 +92,8 @@ public class AiPropertiesDialog extends MagicDialog {
     }
 
     private JButton getSaveButton() {
-        final JButton btn = new JButton(UiString.get(_S5));
-        btn.addActionListener(new AbstractAction() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                if (isPlayerNameValid()) {
-                    savePlayerProfile();
-                    dispose();
-                }
-            }
-        });
+        final JButton btn = new SaveButton();
+        btn.addActionListener(getSaveAction());
         return btn;
     }
 
@@ -150,6 +143,18 @@ public class AiPropertiesDialog extends MagicDialog {
             public void actionPerformed(ActionEvent e) {
                 playerProfile = null;
                 dispose();
+            }
+        };
+    }
+
+    private AbstractAction getSaveAction() {
+        return new AbstractAction() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if (isPlayerNameValid()) {
+                    savePlayerProfile();
+                    dispose();
+                }
             }
         };
     }
