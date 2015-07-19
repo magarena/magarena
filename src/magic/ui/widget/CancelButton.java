@@ -18,6 +18,7 @@ public class CancelButton extends JButton {
         super(UiString.get(_S1));
         setIcon(IconImages.getIcon(MagicIcon.BANNED_ICON));
         setPreferredSize(PREFERRED_SIZE);
+        setMinimumSize(PREFERRED_SIZE);
     }
 
 }
