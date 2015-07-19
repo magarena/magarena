@@ -66,22 +66,23 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
     private static final String _S22 = "Flip";
     private static final String _S23 = "Hidden";
 
-    public static final String[] COST_VALUES = new String[MagicManaCost.MAXIMUM_MANA_COST + 1];
+    private static final String[] COST_VALUES = new String[MagicManaCost.MAXIMUM_MANA_COST + 1];
     static {
         for (int i = 0; i <= MagicManaCost.MAXIMUM_MANA_COST; i++) {
             COST_VALUES[i] = Integer.toString(i);
         }
     }
 
+    private static final Color TEXT_COLOR = ThemeFactory.getInstance().getCurrentTheme().getTextColor();
+    private static final Dimension POPUP_CHECKBOXES_SIZE = new Dimension(200, 150);
+    private static final Dimension FILTER_BUTTON_PREFERRED_SIZE = new Dimension(90, 36);
+    private static final Dimension FILTER_BUTTON_MINIMUM_SIZE = new Dimension(66, 36);
+
     private final String[] FILTER_CHOICES = {
         UiString.get(_S1),
         UiString.get(_S2),
         UiString.get(_S3)
     };
-    public static final Color TEXT_COLOR = ThemeFactory.getInstance().getCurrentTheme().getTextColor();
-    public static final Dimension POPUP_CHECKBOXES_SIZE = new Dimension(200, 150);
-    public static final Dimension FILTER_BUTTON_PREFERRED_SIZE = new Dimension(90, 36);
-    public static final Dimension FILTER_BUTTON_MINIMUM_SIZE = new Dimension(66, 36);
 
     private final MigLayout layout = new MigLayout();
     private final ICardFilterPanelListener listener;
