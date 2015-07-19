@@ -27,6 +27,7 @@ import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.deck.DeckFilter;
 import magic.ui.widget.deck.DeckFilter.NumericFilter;
 import magic.ui.dialog.button.CancelButton;
+import magic.ui.dialog.button.SaveButton;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
@@ -50,7 +51,7 @@ public class DecksFilterDialog extends MagicDialog {
     private final JTextField cardNameFilterText = new JTextField();
     private final JTextField deckNameFilterText = new JTextField();
     private final JTextField deckDescFilterText = new JTextField();
-    private final JButton saveButton = new JButton(UiString.get(_S1));
+    private final JButton saveButton = new SaveButton(UiString.get(_S1));
     private final JButton resetButton = new JButton(UiString.get(_S2));
 
     // CTR
@@ -136,10 +137,10 @@ public class DecksFilterDialog extends MagicDialog {
     }
 
     private JPanel getButtonPanel() {
-        final JPanel buttonPanel = new JPanel(new MigLayout(""));
+        final JPanel buttonPanel = new JPanel(new MigLayout("insets 0, aligny bottom"));
         buttonPanel.add(resetButton, "w 80!, alignx left");
-        buttonPanel.add(saveButton, "w 80!, alignx right, pushx");
-        buttonPanel.add(getCancelButton(), "alignx right");
+        buttonPanel.add(getCancelButton(), "alignx right, pushx");
+        buttonPanel.add(saveButton, "alignx right");
         return buttonPanel;
     }
 
