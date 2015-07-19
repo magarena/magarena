@@ -59,6 +59,7 @@ import magic.ui.widget.SliderPanel;
 import magic.ui.utility.MagicStyle;
 import magic.ui.widget.CancelButton;
 import magic.ui.widget.ColorButton;
+import magic.ui.widget.SaveButton;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
@@ -105,7 +106,6 @@ public class PreferencesDialog
     private static final String _S36 = "The path for the images directory is invalid!";
     private static final String _S37 = "Proxy settings are invalid!";
     private static final String _S38 = "One or more spinner values are invalid - %s";
-    private static final String _S40 = "Save";
     private static final String _S41 = "Highlight";
     private static final String _S42 = "none";
     private static final String _S43 = "overlay";
@@ -170,7 +170,7 @@ public class PreferencesDialog
     private JCheckBox mouseWheelPopupCheckBox;
     private SliderPanel popupDelaySlider;
     private SliderPanel messageDelaySlider;
-    private JButton okButton;
+    private JButton saveButton;
     private JButton cancelButton;
     private JCheckBox previewCardOnSelectCheckBox;
     private JCheckBox gameLogCheckBox;
@@ -489,7 +489,7 @@ public class PreferencesDialog
         config.save();
     }
 
-    private void doOkButtonAction() {
+    private void doSaveButtonAction() {
 
         final boolean isNewTranslation = !config.getTranslation().equals(langPanel.getSelectedLanguage());
 
@@ -539,9 +539,9 @@ public class PreferencesDialog
     public void actionPerformed(final ActionEvent event) {
         setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
         final Object source = event.getSource();
-        if (source == okButton) {
+        if (source == saveButton) {
             if (validateSettings()) {
-                doOkButtonAction();
+                doSaveButtonAction();
             }
         } else if (source == cancelButton) {
             dispose();
@@ -583,19 +583,24 @@ public class PreferencesDialog
         }
     }
 
-    private JPanel getActionButtonsPanel() {
-        final JPanel buttonPanel = new JPanel(new MigLayout("insets 5, gapx 5, flowx"));
-        // Cancel button
+    private JButton getCancelButton() {
         cancelButton = new CancelButton();
         cancelButton.setFocusable(false);
         cancelButton.addActionListener(this);
-        buttonPanel.add(cancelButton, "w 120!, h 36!, alignx right, pushx");
-        // Save button
-        okButton = new JButton(UiString.get(_S40));
-        okButton.setFocusable(false);
-        okButton.setIcon(IconImages.getIcon(MagicIcon.LEGAL_ICON));
-        okButton.addActionListener(this);
-        buttonPanel.add(okButton, "w 120!, h 36!");
+        return cancelButton;
+    }
+
+    private JButton getSaveButton() {
+        saveButton = new SaveButton();
+        saveButton.setFocusable(false);
+        saveButton.addActionListener(this);
+        return saveButton;
+    }
+
+    private JPanel getActionButtonsPanel() {
+        final JPanel buttonPanel = new JPanel(new MigLayout("insets 5, gapx 5, flowx"));
+        buttonPanel.add(getCancelButton(), "alignx right, pushx");
+        buttonPanel.add(getSaveButton());
         return buttonPanel;
     }
 
