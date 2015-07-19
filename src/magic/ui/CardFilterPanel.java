@@ -73,7 +73,7 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
         }
     }
 
-    public static final String[] FILTER_CHOICES = {
+    private final String[] FILTER_CHOICES = {
         UiString.get(_S1),
         UiString.get(_S2),
         UiString.get(_S3)
