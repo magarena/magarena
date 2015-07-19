@@ -12,12 +12,12 @@ import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import magic.data.GeneralConfig;
-import magic.data.MagicIcon;
 import magic.ui.IconImages;
 import magic.ui.URLUtils;
 import magic.ui.MagicFrame;
 import magic.ui.ScreenController;
 import magic.ui.UiString;
+import magic.ui.dialog.button.SaveButton;
 import magic.ui.widget.LinkLabel;
 import magic.utility.MagicSystem;
 
@@ -85,9 +85,8 @@ public class AboutDialog extends MagicDialog implements ActionListener {
         gnuLabel.setOpaque(false);
         aboutPanel.add(gnuLabel);
 
-        okButton = new JButton("OK");
+        okButton = new SaveButton("OK");
         okButton.setFocusable(false);
-        okButton.setIcon(IconImages.getIcon(MagicIcon.OK));
         okButton.addActionListener(this);
 
         final JPanel buttonPanel = new JPanel();
