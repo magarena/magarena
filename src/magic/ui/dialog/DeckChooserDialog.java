@@ -9,12 +9,15 @@ import javax.swing.AbstractAction;
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.JButton;
 import javax.swing.JComboBox;
+import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.SwingConstants;
 import javax.swing.SwingUtilities;
 import magic.data.DeckType;
 import magic.firemind.FiremindJsonReader;
 import magic.ui.ScreenController;
 import magic.ui.UiString;
+import magic.ui.widget.CancelButton;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.deck.CustomDecksComboxBox;
 import magic.ui.widget.deck.FiremindDecksComboxBox;
@@ -28,7 +31,6 @@ public class DeckChooserDialog extends MagicDialog {
     // translatable strings
     private static final String _S1 = "Save";
     private static final String _S2 = "Select Deck";
-    private static final String _S3 = "Cancel";
 
     private final JComboBox<DeckType> deckTypeCombo;
     private JComboBox<String> deckNameCombo;
@@ -60,9 +62,9 @@ public class DeckChooserDialog extends MagicDialog {
     private void refreshLayout() {
         final JPanel panel = getDialogContentPanel();
         panel.setLayout(new MigLayout("flowy, gap 0"));
-        panel.add(deckTypeCombo);
+        panel.add(deckTypeCombo, "w 100%");
         panel.add(decksPanel, "w 100%");
-        panel.add(getButtonPanel(), "w 100%, h 40!, pushy, aligny bottom");
+        panel.add(getButtonPanel(), "w 100%, h 30!, pushy, aligny bottom");
     }
 
     private JComboBox<DeckType> getDeckTypeComboBox() {
@@ -71,6 +73,7 @@ public class DeckChooserDialog extends MagicDialog {
         cbo.setLightWeightPopupEnabled(false);
         cbo.setFocusable(false);
         cbo.setFont(FontsAndBorders.FONT2);
+        ((JLabel)cbo.getRenderer()).setHorizontalAlignment(SwingConstants.CENTER);
         return cbo;
     }
 
@@ -104,14 +107,14 @@ public class DeckChooserDialog extends MagicDialog {
     }
 
     private JPanel getButtonPanel() {
-        final JPanel buttonPanel = new JPanel(new MigLayout("alignx right"));
-        buttonPanel.add(saveButton, "w 80!");
-        buttonPanel.add(getCancelButton(), "w 80!");
+        final JPanel buttonPanel = new JPanel(new MigLayout("insets 0, alignx right"));
+        buttonPanel.add(saveButton);
+        buttonPanel.add(getCancelButton());
         return buttonPanel;
     }
 
     private JButton getCancelButton() {
-        final JButton btn = new JButton(UiString.get(_S3));
+        final JButton btn = new CancelButton();
         btn.addActionListener(getCancelAction());
         return btn;
     }
@@ -142,7 +145,10 @@ public class DeckChooserDialog extends MagicDialog {
 
         public void setDeckType(final DeckType deckType) {
             removeAll();
-            add(getDecksCombo(deckType), deckType == DeckType.Random ? "w 170!" : "w 10:100%");
+            // NB! "w 100%" works more like "w 100%!" when applied to
+            // a JComboBox hence the need for the min value so that it
+            // fits to the container width instead of exceeding it.
+            add(getDecksCombo(deckType), "w 10:100%");
             revalidate();
             repaint();
         }

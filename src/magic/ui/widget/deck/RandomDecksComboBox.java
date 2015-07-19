@@ -20,6 +20,7 @@ import java.awt.event.ActionEvent;
 import java.util.Vector;
 import magic.data.MagicIcon;
 import magic.model.MagicDeckProfile;
+import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
 public class RandomDecksComboBox extends JComboBox<String> implements ListCellRenderer<String> {
@@ -92,6 +93,7 @@ public class RandomDecksComboBox extends JComboBox<String> implements ListCellRe
     ) {
         if (selectedVal.equals(SEPARATOR)) {
             return new javax.swing.JSeparator(javax.swing.JSeparator.HORIZONTAL);
+
         } else if (DeckGenerators.getInstance().getGeneratorNames().contains(selectedVal)) {
             final JPanel panel=new JPanel(new GridLayout(1,1));
             panel.setBorder(FontsAndBorders.EMPTY_BORDER);
@@ -104,27 +106,34 @@ public class RandomDecksComboBox extends JComboBox<String> implements ListCellRe
             panel.add(label);
 
             return panel;
-        } else {
-            final JPanel panel=new JPanel(new GridLayout(1,3));
-            for (int i=0;i<selectedVal.length();i++) {
 
-                final char ch = selectedVal.charAt(i);
-                final ImageIcon icon;
-                switch (ch) {
-                    case '*': icon=IconImages.getIcon(MagicIcon.ANY); break;
-                    case '@': icon=IconImages.getIcon(MagicIcon.FOLDER); break;
-                    default:  icon=IconImages.getIcon(MagicColor.getColor(ch)); break;
-                }
-                panel.add(new JLabel(icon));
-            }
+        } else {
+            final JPanel panel = new JPanel(new MigLayout("insets 0, gapx 20, alignx center"));
             panel.setBorder(FontsAndBorders.EMPTY_BORDER);
             if (isSelected) {
                 panel.setBackground(Color.LIGHT_GRAY);
             }
+            for (int i = 0; i < selectedVal.length(); i++) {
+                panel.add(new JLabel(getRandomDeckComboIcon(selectedVal.charAt(i))));
+            }
             return panel;
+
         }
     }
 
+    private ImageIcon getRandomDeckComboIcon(final char ch) {
+        switch (ch) {
+            case '*':
+                return IconImages.getIcon(MagicIcon.ANY);
+            case '@':
+                return IconImages.getIcon(MagicIcon.FOLDER);
+            default:
+                return IconImages.getIcon(MagicColor.getColor(ch));
+        }
+
+    }
+
+    @Override
     public void actionPerformed(final ActionEvent e) {
         final String tempItem = getSelectedItem();
 
