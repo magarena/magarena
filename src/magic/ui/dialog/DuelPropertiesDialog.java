@@ -1,28 +1,28 @@
 package magic.ui.dialog;
 
 import java.awt.Component;
+import java.awt.Cursor;
+import java.awt.Dimension;
+import java.awt.Font;
 import java.awt.event.ActionEvent;
 import javax.swing.AbstractAction;
 import javax.swing.DefaultListCellRenderer;
 import javax.swing.JButton;
 import javax.swing.JComboBox;
-import javax.swing.JComponent;
-import javax.swing.JDialog;
-import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JList;
 import javax.swing.JPanel;
-import javax.swing.JRootPane;
-import javax.swing.KeyStroke;
 import magic.data.MagicFormat;
 import magic.ui.MagicFrame;
+import magic.ui.ScreenController;
 import magic.ui.UiString;
+import magic.ui.widget.CancelButton;
 import magic.ui.widget.SliderPanel;
 import magic.utility.MagicSystem;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-public class DuelPropertiesDialog extends JDialog {
+public class DuelPropertiesDialog extends MagicDialog {
 
     // translatable strings
     private static final String _S1 = "Duel Properties";
@@ -30,7 +30,6 @@ public class DuelPropertiesDialog extends JDialog {
     private static final String _S3 = "Hand size:";
     private static final String _S4 = "Max. games:";
     private static final String _S5 = "Cube:";
-    private static final String _S6 = "Cancel";
     private static final String _S7 = "Save";
 
     private final SliderPanel handSizeSliderPanel;
@@ -48,12 +47,7 @@ public class DuelPropertiesDialog extends JDialog {
         final MagicFormat cube
     ) {
 
-        super(frame, true);
-        this.setTitle(UiString.get(_S1));
-        this.setSize(300, 280);
-        this.setLocationRelativeTo(frame);
-        this.setResizable(false);
-        this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        super(ScreenController.getMainFrame(), UiString.get(_S1), new Dimension(380, 260));
 
         lifeSliderPanel = new SliderPanel(UiString.get(_S2), (MagicSystem.isDevMode() ? 1 : 10), 30, 5, initialLife, false);
         handSizeSliderPanel = new SliderPanel(UiString.get(_S3), 6, 8, 1, handSize);
@@ -72,52 +66,41 @@ public class DuelPropertiesDialog extends JDialog {
             }
         });
 
-        getContentPane().setLayout(new MigLayout("flowy", "", "[][45!]"));
-        getContentPane().add(lifeSliderPanel, "w 100%");
-        getContentPane().add(handSizeSliderPanel, "w 100%");
-        getContentPane().add(winsSliderPanel, "w 100%");
-        getContentPane().add(getCubePanel(), "w 100%");
-        getContentPane().add(getButtonPanel(), "w 100%, h 40!");
-
-        setEscapeKeyAction();
+        refreshLayout();
+        setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
 
         setVisible(true);
     }
 
+    private void refreshLayout() {
+        final JPanel panel = getDialogContentPanel();
+        panel.setLayout(new MigLayout("flowy, gap 0 10"));
+        panel.add(lifeSliderPanel, "w 100%");
+        panel.add(handSizeSliderPanel, "w 100%");
+        panel.add(winsSliderPanel, "w 100%");
+        panel.add(getCubePanel(), "w 100%");
+        panel.add(getButtonPanel(), "w 100%, h 30!, pushy, aligny bottom");
+    }
+
     private JPanel getCubePanel() {
         final JPanel panel = new JPanel(new MigLayout());
-        panel.add(new JLabel(UiString.get(_S5)));
+        final JLabel lbl = new JLabel(UiString.get(_S5));
+        lbl.setFont(lbl.getFont().deriveFont(Font.BOLD));
+        panel.add(lbl);
         panel.add(cubeComboBox, "w 100%");
         return panel;
     }
 
-    private void setEscapeKeyAction() {
-        JRootPane root = getRootPane();
-        root.getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW).put(KeyStroke.getKeyStroke("ESCAPE"), "closeDialog");
-        root.getActionMap().put("closeDialog", new AbstractAction() {
-            @Override
-            public void actionPerformed(final ActionEvent e) {
-                dispose();
-            }
-        });
-    }
-
     private JPanel getButtonPanel() {
-        final JPanel buttonPanel = new JPanel(new MigLayout("alignx right"));
-        buttonPanel.add(getSaveButton(), "w 80!");
-        buttonPanel.add(getCancelButton(), "w 80!");
+        final JPanel buttonPanel = new JPanel(new MigLayout("insets 0, alignx right"));
+        buttonPanel.add(getSaveButton());
+        buttonPanel.add(getCancelButton());
         return buttonPanel;
     }
 
     private JButton getCancelButton() {
-        final JButton btn = new JButton(UiString.get(_S6));
-        btn.addActionListener(new AbstractAction() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                isCancelled = true;
-                dispose();
-            }
-        });
+        final JButton btn = new CancelButton();
+        btn.addActionListener(getCancelAction());
         return btn;
     }
 
@@ -150,6 +133,17 @@ public class DuelPropertiesDialog extends JDialog {
 
     public MagicFormat getCube() {
         return cubeComboBox.getItemAt(cubeComboBox.getSelectedIndex());
+    }
+
+    @Override
+    protected AbstractAction getCancelAction() {
+        return new AbstractAction() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                isCancelled = true;
+                dispose();
+            }
+        };
     }
 
 }
