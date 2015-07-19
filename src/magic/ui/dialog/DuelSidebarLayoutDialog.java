@@ -17,6 +17,7 @@ import magic.ui.UiString;
 import magic.ui.theme.Theme;
 import magic.ui.utility.MagicStyle;
 import magic.ui.dialog.button.CancelButton;
+import magic.ui.dialog.button.SaveButton;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
@@ -24,7 +25,6 @@ public class DuelSidebarLayoutDialog extends MagicDialog {
 
     // translatable strings
     private static final String _S1 = "Sidebar Layout";
-    private static final String _S2 = "Save";
     private static final String _S4 = "Move Up";
     private static final String _S5 = "Move Down";
 
@@ -85,12 +85,12 @@ public class DuelSidebarLayoutDialog extends MagicDialog {
     private JPanel getDialogButtonPanel() {
         final JPanel buttonPanel = new JPanel(new MigLayout("insets 0, alignx right"));
         buttonPanel.add(getCancelButton());
-        buttonPanel.add(getSaveButton(), "w 100!");
+        buttonPanel.add(getSaveButton());
         return buttonPanel;
     }
 
     private JButton getSaveButton() {
-        final JButton btn = new JButton(UiString.get(_S2));
+        final JButton btn = new SaveButton();
         btn.addActionListener(getSaveAction());
         return btn;
     }
