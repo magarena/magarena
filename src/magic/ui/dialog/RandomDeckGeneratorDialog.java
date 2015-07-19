@@ -15,6 +15,7 @@ import magic.ui.MagicFrame;
 import magic.ui.ScreenController;
 import magic.ui.UiString;
 import magic.ui.dialog.button.CancelButton;
+import magic.ui.dialog.button.SaveButton;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.SliderPanel;
 import net.miginfocom.swing.MigLayout;
@@ -38,7 +39,7 @@ public class RandomDeckGeneratorDialog extends MagicDialog implements ChangeList
     private static final String _S13 = "Lands:";
 
     private boolean isCancelled = false;
-    private final JButton saveButton = new JButton(UiString.get(_S1));
+    private final JButton saveButton = new SaveButton(UiString.get(_S1));
     private final int cardPoolSize;
     private DeckGenerator deckGenerator = new DeckGenerator();
 
@@ -149,8 +150,8 @@ public class RandomDeckGeneratorDialog extends MagicDialog implements ChangeList
 
     private JPanel getButtonPanel() {
         final JPanel buttonPanel = new JPanel(new MigLayout("insets 0, alignx right, aligny bottom"));
-        buttonPanel.add(getCancelButton());
-        buttonPanel.add(saveButton, "w 100!");
+        buttonPanel.add(getCancelButton(), "w 120");
+        buttonPanel.add(saveButton, "w 120");
         return buttonPanel;
     }
 
