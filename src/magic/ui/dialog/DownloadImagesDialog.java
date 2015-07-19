@@ -40,6 +40,7 @@ import magic.ui.widget.downloader.UnimplementedDownloadPanel;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicFileSystem.DataPath;
 import magic.ui.utility.MagicStyle;
+import magic.ui.widget.CancelButton;
 import magic.utility.MagicSystem;
 import net.miginfocom.swing.MigLayout;
 
@@ -50,13 +51,12 @@ public class DownloadImagesDialog
 
     // translatable strings
     private static final String _S1 = "Download Card Images";
-    private static final String _S2 = "Cancel";
     private static final String _S3 = "Run in background...";
     private static final String _S4 = "Copy to clipboard";
     private static final String _S5 = "Error details have been copied to the clipboard.";
 
     private final ErrorLogPanel errorPanel = new ErrorLogPanel();
-    private final JButton cancelButton = new JButton();
+    private final JButton cancelButton = new CancelButton();
     private final JButton backgroundButton = new JButton();
     private static List<String> newCards = null;
     private final List<ImageDownloadPanel> downloadPanels = new ArrayList<>();
@@ -157,7 +157,6 @@ public class DownloadImagesDialog
 
     private JPanel getButtonPanel() {
         // cancel button
-        cancelButton.setText(UiString.get(_S2));
         cancelButton.setFocusable(false);
         cancelButton.addActionListener(this);
         // background button

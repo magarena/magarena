@@ -57,6 +57,7 @@ import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.LinkLabel;
 import magic.ui.widget.SliderPanel;
 import magic.ui.utility.MagicStyle;
+import magic.ui.widget.CancelButton;
 import magic.ui.widget.ColorButton;
 import net.miginfocom.swing.MigLayout;
 
@@ -104,7 +105,6 @@ public class PreferencesDialog
     private static final String _S36 = "The path for the images directory is invalid!";
     private static final String _S37 = "Proxy settings are invalid!";
     private static final String _S38 = "One or more spinner values are invalid - %s";
-    private static final String _S39 = "Cancel";
     private static final String _S40 = "Save";
     private static final String _S41 = "Highlight";
     private static final String _S42 = "none";
@@ -586,9 +586,8 @@ public class PreferencesDialog
     private JPanel getActionButtonsPanel() {
         final JPanel buttonPanel = new JPanel(new MigLayout("insets 5, gapx 5, flowx"));
         // Cancel button
-        cancelButton = new JButton(UiString.get(_S39));
+        cancelButton = new CancelButton();
         cancelButton.setFocusable(false);
-        cancelButton.setIcon(IconImages.getIcon(MagicIcon.BANNED_ICON));
         cancelButton.addActionListener(this);
         buttonPanel.add(cancelButton, "w 120!, h 36!, alignx right, pushx");
         // Save button
