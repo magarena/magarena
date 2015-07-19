@@ -28,7 +28,6 @@ public class AiPropertiesDialog extends MagicDialog {
     private static final String _S1 = "AI Profile";
     private static final String _S2 = "Extra Life";
     private static final String _S3 = "AI Level";
-    private static final String _S5 = "Save";
     private static final String _S6 = "AI Type:";
     private static final String _S7 = "AI Name:";
 
