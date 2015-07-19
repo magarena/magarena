@@ -16,6 +16,7 @@ import magic.ui.MagicFrame;
 import magic.ui.UiString;
 import magic.ui.theme.Theme;
 import magic.ui.utility.MagicStyle;
+import magic.ui.widget.CancelButton;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
@@ -24,7 +25,6 @@ public class DuelSidebarLayoutDialog extends MagicDialog {
     // translatable strings
     private static final String _S1 = "Sidebar Layout";
     private static final String _S2 = "Save";
-    private static final String _S3 = "Cancel";
     private static final String _S4 = "Move Up";
     private static final String _S5 = "Move Down";
 
@@ -71,8 +71,8 @@ public class DuelSidebarLayoutDialog extends MagicDialog {
         final JPanel panel = getDialogContentPanel();
         panel.setLayout(new MigLayout("flowy, gap 0"));
         panel.add(getListButtonPanel(), "w 100%, h 30!");
-        panel.add(jlist, "w 100%, h 100%, aligny top");
-        panel.add(getDialogButtonPanel(), "w 100%, h 40!, pushy, aligny bottom, spanx");
+        panel.add(jlist, "w 100%, h 100%, aligny top, gapbottom 6");
+        panel.add(getDialogButtonPanel(), "w 100%, h 30!, pushy, aligny bottom");
     }
     
     private JPanel getListButtonPanel() {
@@ -83,9 +83,9 @@ public class DuelSidebarLayoutDialog extends MagicDialog {
     }
 
     private JPanel getDialogButtonPanel() {
-        final JPanel buttonPanel = new JPanel(new MigLayout(""));
-        buttonPanel.add(getCancelButton(), "w 100!, alignx right, pushx");
-        buttonPanel.add(getSaveButton(), "w 100!, alignx right");
+        final JPanel buttonPanel = new JPanel(new MigLayout("insets 0, alignx right"));
+        buttonPanel.add(getCancelButton());
+        buttonPanel.add(getSaveButton(), "w 100!");
         return buttonPanel;
     }
 
@@ -96,7 +96,7 @@ public class DuelSidebarLayoutDialog extends MagicDialog {
     }
 
     private JButton getCancelButton() {
-        final JButton btn = new JButton(UiString.get(_S3));
+        final JButton btn = new CancelButton();
         btn.addActionListener(getCancelAction());
         return btn;
     }
