@@ -40,12 +40,10 @@ public class DecksFilterDialog extends MagicDialog {
     private static final String _S5 = "Deck Name:";
     private static final String _S6 = "Description:";
     private static final String _S7 = "Card Name:";
-    private static final String _S8 = "Cancel";
 
     private static final List<DeckFilter> filterHistory = new ArrayList<>();
     private static int historyIndex = 0;
 
-    private final MigLayout migLayout = new MigLayout();
     private boolean isCancelled = false;
     private DeckFilter deckFilter = null;
     private final DeckSizeFilterPanel deckSizeFilterPanel;
