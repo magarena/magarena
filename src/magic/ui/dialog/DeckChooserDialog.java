@@ -17,7 +17,7 @@ import magic.data.DeckType;
 import magic.firemind.FiremindJsonReader;
 import magic.ui.ScreenController;
 import magic.ui.UiString;
-import magic.ui.widget.CancelButton;
+import magic.ui.dialog.button.CancelButton;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.deck.CustomDecksComboxBox;
 import magic.ui.widget.deck.FiremindDecksComboxBox;

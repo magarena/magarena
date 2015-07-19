@@ -1,4 +1,4 @@
-package magic.ui.widget;
+package magic.ui.dialog.button;
 
 import java.awt.Dimension;
 import javax.swing.JButton;

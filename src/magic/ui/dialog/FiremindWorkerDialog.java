@@ -18,7 +18,7 @@ import javax.swing.SwingConstants;
 import magic.ui.*;
 import magic.ui.theme.Theme;
 import magic.ui.utility.MagicStyle;
-import magic.ui.widget.CancelButton;
+import magic.ui.dialog.button.CancelButton;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.firemind.FiremindWorkerPanel;
 import net.miginfocom.swing.MigLayout;

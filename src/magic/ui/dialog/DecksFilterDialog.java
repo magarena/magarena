@@ -26,7 +26,7 @@ import magic.ui.UiString;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.deck.DeckFilter;
 import magic.ui.widget.deck.DeckFilter.NumericFilter;
-import magic.ui.widget.CancelButton;
+import magic.ui.dialog.button.CancelButton;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")

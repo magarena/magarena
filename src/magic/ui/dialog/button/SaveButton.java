@@ -1,4 +1,4 @@
-package magic.ui.widget;
+package magic.ui.dialog.button;
 
 import magic.data.MagicIcon;
 import magic.ui.IconImages;

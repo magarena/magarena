@@ -16,7 +16,7 @@ import magic.data.MagicFormat;
 import magic.ui.MagicFrame;
 import magic.ui.ScreenController;
 import magic.ui.UiString;
-import magic.ui.widget.CancelButton;
+import magic.ui.dialog.button.CancelButton;
 import magic.ui.widget.SliderPanel;
 import magic.utility.MagicSystem;
 import net.miginfocom.swing.MigLayout;

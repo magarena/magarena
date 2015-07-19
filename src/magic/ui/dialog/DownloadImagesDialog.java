@@ -40,7 +40,7 @@ import magic.ui.widget.downloader.UnimplementedDownloadPanel;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicFileSystem.DataPath;
 import magic.ui.utility.MagicStyle;
-import magic.ui.widget.CancelButton;
+import magic.ui.dialog.button.CancelButton;
 import magic.utility.MagicSystem;
 import net.miginfocom.swing.MigLayout;
 

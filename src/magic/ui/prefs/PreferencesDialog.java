@@ -57,9 +57,9 @@ import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.LinkLabel;
 import magic.ui.widget.SliderPanel;
 import magic.ui.utility.MagicStyle;
-import magic.ui.widget.CancelButton;
+import magic.ui.dialog.button.CancelButton;
 import magic.ui.widget.ColorButton;
-import magic.ui.widget.SaveButton;
+import magic.ui.dialog.button.SaveButton;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
