@@ -1,30 +1,26 @@
 package magic.ui.dialog;
 
+import java.awt.Cursor;
+import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import javax.swing.AbstractAction;
-import javax.swing.BorderFactory;
 import javax.swing.JButton;
-import javax.swing.JComponent;
-import javax.swing.JDialog;
-import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
-import javax.swing.JRootPane;
-import javax.swing.KeyStroke;
 import javax.swing.SwingConstants;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 import magic.data.DeckGenerator;
 import magic.ui.MagicFrame;
+import magic.ui.ScreenController;
 import magic.ui.UiString;
-import magic.ui.theme.Theme;
+import magic.ui.widget.CancelButton;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.SliderPanel;
-import magic.ui.utility.MagicStyle;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-public class RandomDeckGeneratorDialog extends JDialog implements ChangeListener {
+public class RandomDeckGeneratorDialog extends MagicDialog implements ChangeListener {
     
     // translatable strings
     private static final String _S1 = "Create Deck";
@@ -40,9 +36,7 @@ public class RandomDeckGeneratorDialog extends JDialog implements ChangeListener
     private static final String _S11 = "Spells:";
     private static final String _S12 = "Max Creatures:";
     private static final String _S13 = "Lands:";
-    private static final String _S14 = "Cancel";
 
-    private final MigLayout migLayout = new MigLayout();
     private boolean isCancelled = false;
     private final JButton saveButton = new JButton(UiString.get(_S1));
     private final int cardPoolSize;
@@ -63,7 +57,7 @@ public class RandomDeckGeneratorDialog extends JDialog implements ChangeListener
     // CTR
     public RandomDeckGeneratorDialog(final MagicFrame frame, final int cardPoolSize, final int defaultDeckSize) {
 
-        super(frame, true);
+        super(ScreenController.getMainFrame(), UiString.get(_S5), new Dimension(460, 340));
 
         this.cardPoolSize = cardPoolSize;
 
@@ -82,12 +76,11 @@ public class RandomDeckGeneratorDialog extends JDialog implements ChangeListener
         maxColorsSlider.setToolTipText(UiString.get(_S4));
         maxColorsSlider.addChangeListener(this);
 
-        setLookAndFeel();
         refreshLayout();
-        setEscapeKeyAction();
         setListeners();
 
         recalculate();
+        setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
     }
 
     private void setDeckGenerator() {
@@ -104,20 +97,6 @@ public class RandomDeckGeneratorDialog extends JDialog implements ChangeListener
         creaturesLabel.setText(Integer.toString(deckGenerator.getMaxCreaturesCount()));
         landsLabel.setText(Integer.toString(deckGenerator.getLandsCount()));
     }
-
-    private void setLookAndFeel() {
-        migLayout.setLayoutConstraints("flowy, insets 0");
-        final JComponent content = (JComponent)getContentPane();
-        content.setLayout(migLayout);
-        //
-        this.setTitle(UiString.get(_S5));
-        this.setSize(500, 400);
-        this.setLocationRelativeTo(getOwner());
-        this.setResizable(false);
-        this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-        setUndecorated(true);
-        content.setBorder(BorderFactory.createMatteBorder(0, 8, 8, 8, MagicStyle.getTheme().getColor(Theme.COLOR_TITLE_BACKGROUND)));
-    }
     
     private void setListeners() {
         // save button
@@ -131,49 +110,34 @@ public class RandomDeckGeneratorDialog extends JDialog implements ChangeListener
     }
 
     private void refreshLayout() {
-        final JComponent content = (JComponent)getContentPane();
-        content.removeAll();
-        content.add(getDialogCaptionLabel(), "w 100%, h 26!");
-        content.add(getContentPanel(), "w 100%, h 100%");
-    }
-    
-    private JPanel getContentPanel() {
-        final JPanel panel = new JPanel(new MigLayout("flowx, wrap 2"));
-        //
+
+        final JPanel panel = getDialogContentPanel();
+        panel.setLayout(new MigLayout("flowx, wrap 2"));
+
         panel.add(getFilterCaptionLabel(UiString.get(_S6)), "alignx right");
         panel.add(new JLabel(Integer.toString(cardPoolSize)), "w 100%");
-        
+
         panel.add(getFilterCaptionLabel(UiString.get(_S7)), "alignx right");
         panel.add(deckSizeSlider, "w 100%");
-        
+
         panel.add(getFilterCaptionLabel(UiString.get(_S8)), "alignx right");
         panel.add(spellsSlider, "w 100%");
-        
+
         panel.add(getFilterCaptionLabel(UiString.get(_S9)), "alignx right");
         panel.add(creaturesSlider, "w 100%");
-        
+
         panel.add(getFilterCaptionLabel(UiString.get(_S10)), "alignx right");
         panel.add(maxColorsSlider, "w 100%");
-        //
+
         panel.add(getFilterCaptionLabel(UiString.get(_S11)), "alignx right, gaptop 10");
         panel.add(spellsLabel, "w 100%");
         panel.add(getFilterCaptionLabel(UiString.get(_S12)), "alignx right");
         panel.add(creaturesLabel, "w 100%");
         panel.add(getFilterCaptionLabel(UiString.get(_S13)), "alignx right");
         panel.add(landsLabel, "w 100%");
-        //
-        panel.add(getButtonPanel(), "w 100%, h 40!, pushy, aligny bottom, spanx");
-        return panel;
-    }
 
-    private JLabel getDialogCaptionLabel() {
-        final JLabel lbl = new JLabel(getTitle());
-        lbl.setOpaque(true);
-        lbl.setBackground(MagicStyle.getTheme().getColor(Theme.COLOR_TITLE_BACKGROUND));
-        lbl.setForeground(MagicStyle.getTheme().getColor(Theme.COLOR_TITLE_FOREGROUND));
-        lbl.setFont(FontsAndBorders.FONT1.deriveFont(14f));
-        lbl.setHorizontalAlignment(SwingConstants.CENTER);
-        return lbl;
+        panel.add(getButtonPanel(), "w 100%, h 30!, pushy, aligny bottom, spanx");
+
     }
 
     private JLabel getFilterCaptionLabel(final String text) {
@@ -183,33 +147,16 @@ public class RandomDeckGeneratorDialog extends JDialog implements ChangeListener
         return lbl;
     }
 
-    private void setEscapeKeyAction() {
-        JRootPane root = getRootPane();
-        root.getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW).put(KeyStroke.getKeyStroke("ESCAPE"), "closeDialog");
-        root.getActionMap().put("closeDialog", new AbstractAction() {
-            @Override
-            public void actionPerformed(final ActionEvent e) {
-                dispose();
-            }
-        });
-    }
-
     private JPanel getButtonPanel() {
-        final JPanel buttonPanel = new JPanel(new MigLayout(""));
-        buttonPanel.add(getCancelButton(), "w 100!, alignx right, pushx");
-        buttonPanel.add(saveButton, "w 100!, alignx right");
+        final JPanel buttonPanel = new JPanel(new MigLayout("insets 0, alignx right, aligny bottom"));
+        buttonPanel.add(getCancelButton());
+        buttonPanel.add(saveButton, "w 100!");
         return buttonPanel;
     }
 
     private JButton getCancelButton() {
-        final JButton btn = new JButton(UiString.get(_S14));
-        btn.addActionListener(new AbstractAction() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                isCancelled = true;
-                dispose();
-            }
-        });
+        final JButton btn = new CancelButton();
+        btn.addActionListener(getCancelAction());
         return btn;
     }
 
@@ -224,6 +171,17 @@ public class RandomDeckGeneratorDialog extends JDialog implements ChangeListener
 
     public DeckGenerator getDeckGenerator() {
         return deckGenerator;
+    }
+
+    @Override
+    protected AbstractAction getCancelAction() {
+        return new AbstractAction() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                isCancelled = true;
+                dispose();
+            }
+        };
     }
 
 }
