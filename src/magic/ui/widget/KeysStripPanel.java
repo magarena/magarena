@@ -22,7 +22,7 @@ public class KeysStripPanel extends TexturedPanel implements IThemeStyle {
     private final MigLayout layout = new MigLayout();
 
     public KeysStripPanel() {
-        setPreferredSize(new Dimension(0, 20));
+        setPreferredSize(new Dimension(0, 26));
         setLayout(layout);
         refreshStyle();
         refreshLayout();
@@ -30,7 +30,7 @@ public class KeysStripPanel extends TexturedPanel implements IThemeStyle {
 
     private void refreshLayout() {
         removeAll();
-        layout.setLayoutConstraints("gap 14, insets 2 6 2 6, center");
+        layout.setLayoutConstraints("gap 14, insets 1 0 0 0, center, center");
         add(getLabel(UiString.get(_S1)));
         add(getLabel(UiString.get(_S2)));
         add(getLabel(UiString.get(_S3)));
@@ -41,13 +41,13 @@ public class KeysStripPanel extends TexturedPanel implements IThemeStyle {
     @Override
     public final void refreshStyle() {
         final Color refBG = MagicStyle.getTheme().getColor(Theme.COLOR_TITLE_BACKGROUND);
-        final Color thisBG = MagicStyle.getTranslucentColor(refBG, 220);
+        final Color thisBG = MagicStyle.getTranslucentColor(refBG, 240);
         setBackground(thisBG);
     }
 
     private JLabel getLabel(final String text) {
         final JLabel lbl = new JLabel(text);
-        lbl.setForeground(Color.LIGHT_GRAY.darker());
+        lbl.setForeground(Color.LIGHT_GRAY);
         return lbl;
     }
 
