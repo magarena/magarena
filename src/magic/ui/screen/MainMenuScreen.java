@@ -1,13 +1,9 @@
 package magic.ui.screen;
 
-import java.awt.Color;
-import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import java.io.File;
 import javax.swing.AbstractAction;
-import javax.swing.BorderFactory;
 import javax.swing.JFileChooser;
-import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.filechooser.FileFilter;
 import magic.data.GeneralConfig;
@@ -18,13 +14,9 @@ import magic.game.state.GameStateFileReader;
 import magic.ui.IconImages;
 import magic.ui.ScreenController;
 import magic.ui.UiString;
-import magic.ui.screen.interfaces.IThemeStyle;
 import magic.ui.screen.interfaces.IWikiPage;
 import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.screen.widget.MenuPanel;
-import magic.ui.theme.Theme;
-import magic.ui.utility.MagicStyle;
-import magic.ui.widget.TexturedPanel;
 import magic.ui.widget.alerter.AlertPanel;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicSystem;
@@ -56,12 +48,8 @@ public class MainMenuScreen extends AbstractScreen implements IWikiPage {
         final MenuPanel menuPanel = getMenuPanel();
         menuPanel.refreshLayout();
 
-        final JPanel mainPanel = new JPanel();
-        mainPanel.setOpaque(false);
-        mainPanel.setLayout(new MigLayout("insets 0, gap 0, alignx center, flowy"));
-        mainPanel.add(menuPanel);
         if (MagicSystem.isDevMode()) {
-            mainPanel.add(new IconPanel());
+            menuPanel.add(new IconPanel(), "w 100%, aligny bottom, pushy");
         }
 
         final JPanel content = new JPanel();
@@ -70,10 +58,12 @@ public class MainMenuScreen extends AbstractScreen implements IWikiPage {
         final MigLayout layout = new MigLayout();
         layout.setLayoutConstraints("insets 0, gap 0, flowy");
         layout.setRowConstraints("[30!][100%, center][30!]");
+        layout.setColumnConstraints("[center]");
         content.setLayout(layout);
-        content.add(new JLabel(), "w 100%, h 100%");
-        content.add(mainPanel, "w 100%");
-        content.add(alertPanel, "w 100%, h 100%");
+
+        content.add(menuPanel, "cell 0 1");
+        content.add(alertPanel, "w 100%, h 100%, cell 0 2");
+
         return content;
 
     }
@@ -81,12 +71,6 @@ public class MainMenuScreen extends AbstractScreen implements IWikiPage {
     private MenuPanel getMenuPanel() {
 
         final MenuPanel menuPanel = new MenuPanel(UiString.get(_S1));
-
-        if (MagicSystem.isDevMode()) {
-            menuPanel.setBorder(BorderFactory.createMatteBorder(1, 1, 0, 1, Color.BLACK));
-            menuPanel.setPreferredSize(new Dimension(300, 340));
-            menuPanel.setMaximumSize(new Dimension(300, 340));
-        }
 
         menuPanel.addMenuItem(UiString.get(_S2), new AbstractAction() {
             @Override
@@ -138,15 +122,13 @@ public class MainMenuScreen extends AbstractScreen implements IWikiPage {
         return menuPanel;
     }
 
-    private class IconPanel extends TexturedPanel implements IThemeStyle {
+    private class IconPanel extends JPanel {
 
         private final MigLayout miglayout = new MigLayout();
 
         public IconPanel() {
+            setOpaque(false);
             setLayout(miglayout);
-            setPreferredSize(new Dimension(300, 40));
-            setMaximumSize(new Dimension(300, 40));
-            refreshStyle();
             refreshLayout();
         }
 
@@ -163,14 +145,6 @@ public class MainMenuScreen extends AbstractScreen implements IWikiPage {
                     }
             );
             add(btn);
-        }
-
-        @Override
-        public void refreshStyle() {
-            final Color refBG = MagicStyle.getTheme().getColor(Theme.COLOR_TITLE_BACKGROUND);
-            final Color thisBG = MagicStyle.getTranslucentColor(refBG, 200);
-            setBorder(BorderFactory.createMatteBorder(0, 1, 1, 1, Color.BLACK));
-            setBackground(thisBG);
         }
 
     }
