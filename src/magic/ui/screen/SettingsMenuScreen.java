@@ -2,7 +2,6 @@ package magic.ui.screen;
 
 import java.awt.event.ActionEvent;
 import javax.swing.AbstractAction;
-import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
@@ -43,19 +42,16 @@ public class SettingsMenuScreen extends AbstractScreen {
 
     private JPanel getScreenContent() {
 
-        final JPanel content = new JPanel();
-        content.setOpaque(false);
+        final MenuPanel menuPanel = new MenuPanel(UiString.get(_S1));
 
-        final MenuPanel menu = new MenuPanel(UiString.get(_S1));
-
-        menu.addMenuItem(UiString.get(_S2), new AbstractAction() {
+        menuPanel.addMenuItem(UiString.get(_S2), new AbstractAction() {
             @Override
             public void actionPerformed(final ActionEvent e) {
                 ScreenController.showPreferencesDialog();
             }
         });
 
-        menu.addMenuItem(UiString.get(_S5), new AbstractAction() {
+        menuPanel.addMenuItem(UiString.get(_S5), new AbstractAction() {
             @Override
             public void actionPerformed(final ActionEvent e) {
                 if (downloadDialog == null || !downloadDialog.isDisplayable()) {
@@ -66,7 +62,7 @@ public class SettingsMenuScreen extends AbstractScreen {
             }
         });
         
-        menu.addMenuItem(UiString.get(_S6), new AbstractAction() {
+        menuPanel.addMenuItem(UiString.get(_S6), new AbstractAction() {
             @Override
             public void actionPerformed(final ActionEvent e) {
                 if (firemindWorkerDialog == null || !firemindWorkerDialog.isDisplayable()) {
@@ -77,41 +73,43 @@ public class SettingsMenuScreen extends AbstractScreen {
             }
         });
         
-        menu.addMenuItem(UiString.get(_S7), new AbstractAction() {
+        menuPanel.addMenuItem(UiString.get(_S7), new AbstractAction() {
             @Override
             public void actionPerformed(final ActionEvent e) {
                 getFrame().toggleFullScreenMode();
             }
         });
 
-        menu.addMenuItem(UiString.get(_S10), new AbstractAction() {
+        menuPanel.addMenuItem(UiString.get(_S10), new AbstractAction() {
             @Override
             public void actionPerformed(final ActionEvent e) {
                 doReset();
             }
         });
 
-        menu.addBlankItem();
-        menu.addMenuItem(UiString.get(_S9), new AbstractAction() {
+        menuPanel.addBlankItem();
+        menuPanel.addMenuItem(UiString.get(_S9), new AbstractAction() {
             @Override
             public void actionPerformed(final ActionEvent e) {
                 ScreenController.closeActiveScreen(false);
             }
         });
 
-        menu.refreshLayout();
+        menuPanel.refreshLayout();
         
         final MigLayout layout = new MigLayout();
         layout.setLayoutConstraints("insets 0, gap 0, flowy");
         layout.setRowConstraints("[30!][100%, center][30!, bottom]");
+        layout.setColumnConstraints("[center]");
 
+        final JPanel content = new JPanel();
+        content.setOpaque(false);
         content.setLayout(layout);
-        content.add(new JLabel(), "w 100%, h 100%");
-        content.add(menu, "w 100%, alignx center");
-        content.add(new KeysStripPanel(), "w 100%");
+        content.add(menuPanel, "cell 0 1");
+        content.add(new KeysStripPanel(), "w 100%, cell 0 2");
 
         return content;
-
+        
     }
 
     private void doReset() {
