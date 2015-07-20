@@ -26,7 +26,6 @@ public class SettingsMenuScreen extends AbstractScreen {
     private static final String _S5 = "Download card images";
     private static final String _S6 = "Run Firemind Worker";
     private static final String _S7 = "Toggle full-screen";
-    private static final String _S8 = "Shortcut key: F11";
     private static final String _S9 = "Close menu";
     private static final String _S10 = "Reset & Restart";
     private static final String _S11 = "Reset settings to default and run startup wizard?";
@@ -83,7 +82,7 @@ public class SettingsMenuScreen extends AbstractScreen {
             public void actionPerformed(final ActionEvent e) {
                 getFrame().toggleFullScreenMode();
             }
-        }, UiString.get(_S8));
+        });
 
         menu.addMenuItem(UiString.get(_S10), new AbstractAction() {
             @Override
