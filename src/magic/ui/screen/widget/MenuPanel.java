@@ -62,7 +62,7 @@ public class MenuPanel extends TexturedPanel implements IThemeStyle {
         removeAll();
         setLayout(new MigLayout("insets 6, gap 0, flowy"));
         if (this.title != null) {
-            add(getMenuTitlePanel(), "w 100%, pad 0 0 10 0, gapbottom 15");
+            add(getMenuTitlePanel(), "w 100%, pad 0 0 10 0, gapbottom 20");
         }
         for (MenuButton menuItem : menuItems) {
             add(menuItem, "w 100%");
