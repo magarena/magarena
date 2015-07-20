@@ -30,7 +30,7 @@ public class KeysStripPanel extends TexturedPanel implements IThemeStyle {
 
     private void refreshLayout() {
         removeAll();
-        layout.setLayoutConstraints("gap 14, insets 1 0 0 0, center, center");
+        layout.setLayoutConstraints("gap 14, insets 0, center, center");
         add(getLabel(UiString.get(_S1)));
         add(getLabel(UiString.get(_S2)));
         add(getLabel(UiString.get(_S3)));
