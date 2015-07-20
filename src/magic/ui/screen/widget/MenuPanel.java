@@ -16,6 +16,8 @@ import net.miginfocom.swing.MigLayout;
 @SuppressWarnings("serial")
 public class MenuPanel extends TexturedPanel implements IThemeStyle {
 
+    private static final Dimension PREFERRED_SIZE = new Dimension(320, 405);
+
     private final String title;
     private final List<MenuButton> menuItems = new ArrayList<>();
 
@@ -27,8 +29,8 @@ public class MenuPanel extends TexturedPanel implements IThemeStyle {
 
         this.title = title0;
 
-        setPreferredSize(new Dimension(300, 380));
-        setMaximumSize(new Dimension(300, 380));
+        setPreferredSize(PREFERRED_SIZE);
+        setMaximumSize(PREFERRED_SIZE);
 
         refreshStyle();
 
