@@ -15,7 +15,7 @@ import magic.ui.widget.FontsAndBorders;
 @SuppressWarnings("serial")
 public class ViewToggleButton extends JToggleButton {
 
-    private final Dimension PREF_BUTTON_SIZE = new Dimension(130, 26);
+    private final Dimension PREF_BUTTON_SIZE = new Dimension(160, 26);
     private final Dimension MAX_BUTTON_SIZE = PREF_BUTTON_SIZE;
 
     public ViewToggleButton(String text) {
