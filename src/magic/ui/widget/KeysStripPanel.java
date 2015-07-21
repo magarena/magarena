@@ -22,7 +22,7 @@ public class KeysStripPanel extends TexturedPanel implements IThemeStyle {
     private final MigLayout layout = new MigLayout();
 
     public KeysStripPanel() {
-        setPreferredSize(new Dimension(0, 26));
+        setPreferredSize(new Dimension(0, 22));
         setLayout(layout);
         refreshStyle();
         refreshLayout();
