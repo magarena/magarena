@@ -1,6 +1,6 @@
 name=Skaab Goliath
-image=http://magiccards.info/scans/en/isd/76.jpg
-value=3.727
+image=http://magiccards.info/scans/en/ori/74.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Zombie,Giant

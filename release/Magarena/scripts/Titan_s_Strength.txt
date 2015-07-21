@@ -1,6 +1,6 @@
 name=Titan's Strength
-image=http://magiccards.info/scans/en/ths/145.jpg
-value=3.621
+image=http://magiccards.info/scans/en/ori/166.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={R}

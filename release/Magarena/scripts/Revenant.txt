@@ -1,12 +1,12 @@
 name=Revenant
-image=http://magiccards.info/scans/en/7e/160.jpg
-value=3.708
-rarity=R
+image=http://magiccards.info/scans/en/ori/117.jpg
+value=2.500
+rarity=U
 type=Creature
 subtype=Spirit
 cost={4}{B}
 pt=*/*
-ability=flying;\
+ability=Flying;\
         SN's power and toughness are each equal to the number of creature cards in your graveyard.
 timing=main
 oracle=Flying\nRevenant's power and toughness are each equal to the number of creature cards in your graveyard.

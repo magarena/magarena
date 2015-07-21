@@ -1,6 +1,6 @@
 name=Vastwood Gorger
-image=http://magiccards.info/scans/en/m13/196.jpg
-value=2.402
+image=http://magiccards.info/scans/en/ori/204.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Wurm

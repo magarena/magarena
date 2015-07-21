@@ -1,6 +1,6 @@
 name=Timberpack Wolf
-image=http://magiccards.info/scans/en/m13/194.jpg
-value=3.562
+image=http://magiccards.info/scans/en/ori/200.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Wolf

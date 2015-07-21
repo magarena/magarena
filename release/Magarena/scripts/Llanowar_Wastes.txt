@@ -1,6 +1,6 @@
 name=Llanowar Wastes
-image=http://magiccards.info/scans/en/m15/244.jpg
-value=4.111
+image=http://magiccards.info/scans/en/ori/248.jpg
+value=2.500
 rarity=R
 type=Land
 mana=b2g2

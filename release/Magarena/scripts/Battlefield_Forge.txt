@@ -1,6 +1,6 @@
 name=Battlefield Forge
-image=http://magiccards.info/scans/en/m15/240.jpg
-value=4.100
+image=http://magiccards.info/scans/en/ori/244.jpg
+value=2.500
 rarity=R
 type=Land
 mana=w2r2

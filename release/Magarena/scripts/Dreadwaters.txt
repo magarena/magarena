@@ -1,6 +1,6 @@
 name=Dreadwaters
-image=http://magiccards.info/scans/en/avr/49.jpg
-value=2.379
+image=http://magiccards.info/scans/en/ori/56.jpg
+value=2.500
 rarity=C
 type=Sorcery
 cost={3}{U}

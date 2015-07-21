@@ -1,7 +1,6 @@
 name=Claustrophobia
-image=http://magiccards.info/scans/en/ddm/27.jpg
-value=3.750
-removal=2
+image=http://magiccards.info/scans/en/ori/50.jpg
+value=2.500
 rarity=C
 type=Enchantment
 subtype=Aura

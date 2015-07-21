@@ -1,6 +1,6 @@
 name=Caves of Koilos
-image=http://magiccards.info/scans/en/m15/241.jpg
-value=4.062
+image=http://magiccards.info/scans/en/ori/245.jpg
+value=2.500
 rarity=R
 type=Land
 mana=w2b2

@@ -1,6 +1,6 @@
 name=Cobblebrute
-image=http://magiccards.info/scans/en/rtr/91.jpg
-value=2.125
+image=http://magiccards.info/scans/en/ori/138.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Elemental

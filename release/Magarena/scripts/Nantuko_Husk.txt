@@ -1,7 +1,7 @@
 name=Nantuko Husk
-image=http://magiccards.info/scans/en/cmd/90.jpg
-value=3.979
-rarity=U
+image=http://magiccards.info/scans/en/ori/109.jpg
+value=2.500
+rarity=C
 type=Creature
 subtype=Zombie,Insect
 cost={2}{B}

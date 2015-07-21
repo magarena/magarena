@@ -1,6 +1,6 @@
 name=Orchard Spirit
-image=http://magiccards.info/scans/en/isd/198.jpg
-value=2.886
+image=http://magiccards.info/scans/en/ori/192.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Spirit

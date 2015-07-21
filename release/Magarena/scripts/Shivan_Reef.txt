@@ -1,6 +1,6 @@
 name=Shivan Reef
-image=http://magiccards.info/scans/en/m15/246.jpg
-value=3.950
+image=http://magiccards.info/scans/en/ori/251.jpg
+value=2.500
 rarity=R
 type=Land
 mana=u2r2

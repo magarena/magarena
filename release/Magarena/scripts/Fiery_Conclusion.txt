@@ -1,7 +1,7 @@
 name=Fiery Conclusion
-image=http://magiccards.info/scans/en/pc2/42.jpg
-value=1.980
-rarity=C
+image=http://magiccards.info/scans/en/ori/144.jpg
+value=2.500
+rarity=U
 type=Instant
 cost={1}{R}
 ability=As an additional cost to cast SN, sacrifice a creature.

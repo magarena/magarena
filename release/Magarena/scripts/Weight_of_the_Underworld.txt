@@ -1,6 +1,6 @@
 name=Weight of the Underworld
-image=http://magiccards.info/scans/en/bng/86.jpg
-value=1.886
+image=http://magiccards.info/scans/en/ori/126.jpg
+value=2.500
 rarity=C
 type=Enchantment
 subtype=Aura

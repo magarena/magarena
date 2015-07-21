@@ -1,6 +1,6 @@
 name=Knight of the White Orchid
-image=http://magiccards.info/scans/en/ddg/6.jpg
-value=3.875
+image=http://magiccards.info/scans/en/ori/21.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Human,Knight

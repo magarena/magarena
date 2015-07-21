@@ -1,6 +1,6 @@
 name=Auramancer
-image=http://magiccards.info/scans/en/ddl/9.jpg
-value=4.159
+image=http://magiccards.info/scans/en/ori/5.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Human,Wizard

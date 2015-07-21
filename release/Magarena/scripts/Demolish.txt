@@ -1,8 +1,7 @@
 name=Demolish
-image=http://magiccards.info/scans/en/ths/118.jpg
-value=2.692
-removal=1
-rarity=U
+image=http://magiccards.info/scans/en/ori/139.jpg
+value=2.500
+rarity=C
 type=Sorcery
 cost={3}{R}
 timing=removal

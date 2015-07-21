@@ -1,6 +1,6 @@
 name=Brawler's Plate
-image=http://magiccards.info/scans/en/m15/213.jpg
-value=1.857
+image=http://magiccards.info/scans/en/ori/224.jpg
+value=2.500
 rarity=U
 type=Artifact
 subtype=Equipment

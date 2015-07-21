@@ -1,6 +1,6 @@
 name=Catacomb Slug
-image=http://magiccards.info/scans/en/rtr/58.jpg
-value=1.889
+image=http://magiccards.info/scans/en/ori/86.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Slug

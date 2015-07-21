@@ -1,6 +1,6 @@
 name=Yavimaya Coast
-image=http://magiccards.info/scans/en/m15/249.jpg
-value=4.200
+image=http://magiccards.info/scans/en/ori/252.jpg
+value=2.500
 rarity=R
 type=Land
 mana=b2g2

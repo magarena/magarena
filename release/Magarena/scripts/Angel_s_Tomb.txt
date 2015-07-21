@@ -1,6 +1,6 @@
 name=Angel's Tomb
-image=http://magiccards.info/scans/en/avr/211.jpg
-value=3.096
+image=http://magiccards.info/scans/en/ori/222.jpg
+value=2.500
 rarity=U
 type=Artifact
 cost={3}

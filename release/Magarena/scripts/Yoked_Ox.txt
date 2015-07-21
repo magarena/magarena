@@ -1,6 +1,6 @@
 name=Yoked Ox
-image=http://magiccards.info/scans/en/ths/37.jpg
-value=2.868
+image=http://magiccards.info/scans/en/ori/42.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Ox

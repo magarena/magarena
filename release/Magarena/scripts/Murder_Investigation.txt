@@ -1,6 +1,6 @@
 name=Murder Investigation
-image=http://magiccards.info/scans/en/gtc/21.jpg
-value=2.946
+image=http://magiccards.info/scans/en/ori/27.jpg
+value=2.500
 rarity=U
 type=Enchantment
 subtype=Aura
