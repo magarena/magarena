@@ -151,16 +151,14 @@ public class NewDuelSettingsScreen
         }
 
         private void refreshLayout() {
-            removeAll();
             migLayout.setLayoutConstraints("insets 0, center, center, wrap 2");
-            // duel settings
-            add(duelSettingsPanel, "w 548!, h 40!, span 2, gapbottom 4");
-            // players
-            add(playerPanels[0], "w 270!, h 270!, gapright 4");
-            add(playerPanels[1], "w 270!, h 270!, gapright 4");
-            // player decks
-            add(newPlayerDeckPanels[0], "w 270!, h 60!");
-            add(newPlayerDeckPanels[1], "w 270!, h 60!");
+            migLayout.setColumnConstraints("[290, fill]6[290, fill]");
+            migLayout.setRowConstraints("[40, fill]6[270, fill]4[60, fill]");
+            add(duelSettingsPanel, "spanx 2");
+            add(playerPanels[0]);
+            add(playerPanels[1]);
+            add(newPlayerDeckPanels[0]);
+            add(newPlayerDeckPanels[1]);
         }
 
         private DuelPlayerPanel getNewDuelPlayerPanel(final PlayerProfile player) {
