@@ -1,0 +1,12 @@
+name=Skysnare Spider
+image=http://magiccards.info/scans/en/ori/197.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Spider
+cost={4}{G}{G}
+pt=6/6
+ability=Vigilance;\
+        Reach
+timing=main
+oracle=Vigilance\nReach

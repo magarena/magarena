@@ -1,0 +1,11 @@
+name=Conclave Naturalists
+image=http://magiccards.info/scans/en/ori/171.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Dryad
+cost={4}{G}
+pt=4/4
+ability=When SN enters the battlefield, you may destroy target artifact or enchantment.
+timing=main
+oracle=When Conclave Naturalists enters the battlefield, you may destroy target artifact or enchantment.

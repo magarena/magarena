@@ -1,0 +1,12 @@
+name=Hixus, Prison Warden
+image=http://magiccards.info/scans/en/ori/19.jpg
+value=2.500
+rarity=R
+type=Legendary,Creature
+subtype=Human,Soldier
+cost={3}{W}{W}
+pt=4/4
+ability=Flash;\
+        Whenever a creature deals combat damage to you, if SN entered the battlefield this turn, exile that creature until Hixus leaves the battlefield.
+timing=main
+oracle=Flash\nWhenever a creature deals combat damage to you, if Hixus, Prison Warden entered the battlefield this turn, exile that creature until Hixus leaves the battlefield.

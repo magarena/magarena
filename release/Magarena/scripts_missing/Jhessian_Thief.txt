@@ -1,0 +1,12 @@
+name=Jhessian Thief
+image=http://magiccards.info/scans/en/ori/62.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Rogue
+cost={2}{U}
+pt=1/3
+ability=Prowess;\
+        Whenever SN deals combat damage to a player, draw a card.
+timing=main
+oracle=Prowess\nWhenever Jhessian Thief deals combat damage to a player, draw a card.

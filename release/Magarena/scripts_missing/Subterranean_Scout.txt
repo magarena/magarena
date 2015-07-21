@@ -1,0 +1,11 @@
+name=Subterranean Scout
+image=http://magiccards.info/scans/en/ori/164.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Goblin,Scout
+cost={1}{R}
+pt=2/1
+ability=When SN enters the battlefield, target creature with power 2 or less can't be blocked this turn.
+timing=main
+oracle=When Subterranean Scout enters the battlefield, target creature with power 2 or less can't be blocked this turn.

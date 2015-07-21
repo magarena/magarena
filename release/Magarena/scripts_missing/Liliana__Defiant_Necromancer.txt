@@ -1,0 +1,12 @@
+name=Liliana, Defiant Necromancer
+image=http://magiccards.info/scans/en/ori/106b.jpg
+value=2.500
+rarity=M
+type=Planeswalker
+subtype=Liliana
+color=b
+ability=+2: Each player discards a card.;\
+        −X: Return target nonlegendary creature card with converted mana cost X from your graveyard to the battlefield.;\
+        −8: You get an emblem with "Whenever a creature dies, return it to the battlefield under your control at the beginning of the next end step."
+timing=main
+oracle=+2: Each player discards a card.\n−X: Return target nonlegendary creature card with converted mana cost X from your graveyard to the battlefield.\n−8: You get an emblem with "Whenever a creature dies, return it to the battlefield under your control at the beginning of the next end step."

@@ -1,0 +1,9 @@
+name=Hallowed Moonlight
+image=http://magiccards.info/scans/en/ori/16.jpg
+value=2.500
+rarity=R
+type=Instant
+cost={1}{W}
+effect=Until end of turn, if a creature would enter the battlefield and it wasn't cast, exile it instead.~Draw a card.
+timing=removal
+oracle=Until end of turn, if a creature would enter the battlefield and it wasn't cast, exile it instead.\nDraw a card.

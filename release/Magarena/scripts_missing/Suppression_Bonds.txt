@@ -1,0 +1,11 @@
+name=Suppression Bonds
+image=http://magiccards.info/scans/en/ori/34.jpg
+value=2.500
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={3}{W}
+ability=Enchant nonland permanent;\
+        Enchanted permanent can't attack or block, and its activated abilities can't be activated.
+timing=aura
+oracle=Enchant nonland permanent\nEnchanted permanent can't attack or block, and its activated abilities can't be activated.

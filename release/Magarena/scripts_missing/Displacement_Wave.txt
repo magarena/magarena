@@ -1,0 +1,9 @@
+name=Displacement Wave
+image=http://magiccards.info/scans/en/ori/55.jpg
+value=2.500
+rarity=R
+type=Sorcery
+cost={X}{U}{U}
+effect=Return all nonland permanents with converted mana cost X or less to their owners' hands.
+timing=main
+oracle=Return all nonland permanents with converted mana cost X or less to their owners' hands.

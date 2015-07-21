@@ -1,0 +1,11 @@
+name=Volcanic Rambler
+image=http://magiccards.info/scans/en/ori/167.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Elemental
+cost={5}{R}
+pt=6/4
+ability={2}{R}: SN deals 1 damage to target player.
+timing=main
+oracle={2}{R}: Volcanic Rambler deals 1 damage to target player.

@@ -1,0 +1,9 @@
+name=Talent of the Telepath
+image=http://magiccards.info/scans/en/ori/78.jpg
+value=2.500
+rarity=R
+type=Sorcery
+cost={2}{U}{U}
+effect=Target opponent reveals the top seven cards of his or her library. You may cast an instant or sorcery card from among them without paying its mana cost. Then that player puts the rest into his or her graveyard.~If there are two or more instant and/or sorcery cards in your graveyard, you may cast up to two revealed instant and/or sorcery cards instead of one.
+timing=main
+oracle=Target opponent reveals the top seven cards of his or her library. You may cast an instant or sorcery card from among them without paying its mana cost. Then that player puts the rest into his or her graveyard.\nSpell mastery — If there are two or more instant and/or sorcery cards in your graveyard, you may cast up to two revealed instant and/or sorcery cards instead of one.

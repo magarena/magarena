@@ -1,0 +1,11 @@
+name=Heavy Infantry
+image=http://magiccards.info/scans/en/ori/18.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Soldier
+cost={4}{W}
+pt=3/4
+ability=When SN enters the battlefield, tap target creature an opponent controls.
+timing=main
+oracle=When Heavy Infantry enters the battlefield, tap target creature an opponent controls.

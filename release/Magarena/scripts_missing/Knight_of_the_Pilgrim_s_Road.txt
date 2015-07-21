@@ -1,0 +1,11 @@
+name=Knight of the Pilgrim's Road
+image=http://magiccards.info/scans/en/ori/20.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Knight
+cost={2}{W}
+pt=3/2
+ability=Renown 1
+timing=main
+oracle=Renown 1

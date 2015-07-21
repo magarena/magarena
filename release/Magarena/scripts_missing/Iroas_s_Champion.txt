@@ -1,0 +1,11 @@
+name=Iroas's Champion
+image=http://magiccards.info/scans/en/ori/214.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Soldier
+cost={1}{R}{W}
+pt=2/2
+ability=Double strike
+timing=main
+oracle=Double strike

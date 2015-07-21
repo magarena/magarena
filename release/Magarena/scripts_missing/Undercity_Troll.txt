@@ -1,0 +1,12 @@
+name=Undercity Troll
+image=http://magiccards.info/scans/en/ori/202.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Troll
+cost={1}{G}
+pt=2/2
+ability=Renown 1;\
+        {2}{G}: Regenerate SN.
+timing=main
+oracle=Renown 1\n{2}{G}: Regenerate Undercity Troll.

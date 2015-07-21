@@ -1,0 +1,12 @@
+name=Aspiring Aeronaut
+image=http://magiccards.info/scans/en/ori/46.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Artificer
+cost={3}{U}
+pt=1/2
+ability=Flying;\
+        When SN enters the battlefield, put a 1/1 colorless Thopter artifact creature token with flying onto the battlefield.
+timing=main
+oracle=Flying\nWhen Aspiring Aeronaut enters the battlefield, put a 1/1 colorless Thopter artifact creature token with flying onto the battlefield.

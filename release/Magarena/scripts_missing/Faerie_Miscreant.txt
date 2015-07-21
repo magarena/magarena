@@ -1,0 +1,12 @@
+name=Faerie Miscreant
+image=http://magiccards.info/scans/en/ori/57.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Faerie,Rogue
+cost={U}
+pt=1/1
+ability=Flying;\
+        When SN enters the battlefield, if you control another creature named SN, draw a card.
+timing=main
+oracle=Flying\nWhen Faerie Miscreant enters the battlefield, if you control another creature named Faerie Miscreant, draw a card.

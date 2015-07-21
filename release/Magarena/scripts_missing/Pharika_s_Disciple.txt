@@ -1,0 +1,12 @@
+name=Pharika's Disciple
+image=http://magiccards.info/scans/en/ori/194.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Centaur,Warrior
+cost={3}{G}
+pt=2/3
+ability=Deathtouch;\
+        Renown 1
+timing=main
+oracle=Deathtouch\nRenown 1

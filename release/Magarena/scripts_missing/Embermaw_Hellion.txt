@@ -1,0 +1,12 @@
+name=Embermaw Hellion
+image=http://magiccards.info/scans/en/ori/141.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Hellion
+cost={3}{R}{R}
+pt=4/5
+ability=Trample;\
+        If another red source you control would deal damage to a permanent or player, it deals that much damage plus 1 to that permanent or player instead.
+timing=main
+oracle=Trample\nIf another red source you control would deal damage to a permanent or player, it deals that much damage plus 1 to that permanent or player instead.

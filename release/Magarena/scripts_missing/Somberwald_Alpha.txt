@@ -1,0 +1,12 @@
+name=Somberwald Alpha
+image=http://magiccards.info/scans/en/ori/198.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Wolf
+cost={3}{G}
+pt=3/2
+ability=Whenever a creature you control becomes blocked, it gets +1/+1 until end of turn.;\
+        {1}{G}: Target creature you control gains trample until end of turn.
+timing=main
+oracle=Whenever a creature you control becomes blocked, it gets +1/+1 until end of turn.\n{1}{G}: Target creature you control gains trample until end of turn.

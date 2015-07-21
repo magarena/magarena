@@ -1,0 +1,9 @@
+name=Swift Reckoning
+image=http://magiccards.info/scans/en/ori/35.jpg
+value=2.500
+rarity=U
+type=Sorcery
+cost={1}{W}
+effect=If there are two or more instant and/or sorcery cards in your graveyard, you may cast SN as though it had flash.~Destroy target tapped creature.
+timing=main
+oracle=Spell mastery — If there are two or more instant and/or sorcery cards in your graveyard, you may cast Swift Reckoning as though it had flash.\nDestroy target tapped creature.

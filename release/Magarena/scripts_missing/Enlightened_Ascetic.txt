@@ -1,0 +1,11 @@
+name=Enlightened Ascetic
+image=http://magiccards.info/scans/en/ori/12.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Cat,Monk
+cost={1}{W}
+pt=1/1
+ability=When SN enters the battlefield, you may destroy target enchantment.
+timing=main
+oracle=When Enlightened Ascetic enters the battlefield, you may destroy target enchantment.

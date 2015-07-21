@@ -1,0 +1,9 @@
+name=Molten Vortex
+image=http://magiccards.info/scans/en/ori/156.jpg
+value=2.500
+rarity=R
+type=Enchantment
+cost={R}
+ability={R}, Discard a land card: SN deals 2 damage to target creature or player.
+timing=enchantment
+oracle={R}, Discard a land card: Molten Vortex deals 2 damage to target creature or player.

@@ -1,0 +1,9 @@
+name=Necromantic Summons
+image=http://magiccards.info/scans/en/ori/110.jpg
+value=2.500
+rarity=U
+type=Sorcery
+cost={4}{B}
+effect=Put target creature card from a graveyard onto the battlefield under your control.~If there are two or more instant and/or sorcery cards in your graveyard, that creature enters the battlefield with two additional +1/+1 counters on it.
+timing=main
+oracle=Put target creature card from a graveyard onto the battlefield under your control.\nSpell mastery — If there are two or more instant and/or sorcery cards in your graveyard, that creature enters the battlefield with two additional +1/+1 counters on it.

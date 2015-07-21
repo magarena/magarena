@@ -1,0 +1,11 @@
+name=Cleric of the Forward Order
+image=http://magiccards.info/scans/en/ori/10.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Cleric
+cost={1}{W}
+pt=2/2
+ability=When SN enters the battlefield, you gain 2 life for each creature you control named SN.
+timing=main
+oracle=When Cleric of the Forward Order enters the battlefield, you gain 2 life for each creature you control named Cleric of the Forward Order.

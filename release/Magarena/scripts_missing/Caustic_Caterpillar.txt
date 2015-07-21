@@ -1,0 +1,11 @@
+name=Caustic Caterpillar
+image=http://magiccards.info/scans/en/ori/170.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Insect
+cost={G}
+pt=1/1
+ability={1}{G}, Sacrifice SN: Destroy target artifact or enchantment.
+timing=main
+oracle={1}{G}, Sacrifice Caustic Caterpillar: Destroy target artifact or enchantment.

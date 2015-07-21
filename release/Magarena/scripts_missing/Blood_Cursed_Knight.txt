@@ -1,0 +1,11 @@
+name=Blood-Cursed Knight
+image=http://magiccards.info/scans/en/ori/211.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Vampire,Knight
+cost={1}{W}{B}
+pt=3/2
+ability=As long as you control an enchantment, SN gets +1/+1 and has lifelink.
+timing=main
+oracle=As long as you control an enchantment, Blood-Cursed Knight gets +1/+1 and has lifelink.

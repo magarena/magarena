@@ -1,0 +1,9 @@
+name=War Horn
+image=http://magiccards.info/scans/en/ori/243.jpg
+value=2.500
+rarity=U
+type=Artifact
+cost={3}
+ability=Attacking creatures you control get +1/+0.
+timing=artifact
+oracle=Attacking creatures you control get +1/+0.

@@ -1,0 +1,9 @@
+name=Vine Snare
+image=http://magiccards.info/scans/en/ori/205.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={2}{G}
+effect=Prevent all combat damage that would be dealt this turn by creatures with power 4 or less.
+timing=removal
+oracle=Prevent all combat damage that would be dealt this turn by creatures with power 4 or less.

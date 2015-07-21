@@ -1,0 +1,9 @@
+name=Joraga Invocation
+image=http://magiccards.info/scans/en/ori/183.jpg
+value=2.500
+rarity=U
+type=Sorcery
+cost={4}{G}{G}
+effect=Each creature you control gets +3/+3 until end of turn and must be blocked this turn if able.
+timing=main
+oracle=Each creature you control gets +3/+3 until end of turn and must be blocked this turn if able.

@@ -1,0 +1,9 @@
+name=Magmatic Insight
+image=http://magiccards.info/scans/en/ori/155.jpg
+value=2.500
+rarity=U
+type=Sorcery
+cost={R}
+effect=As an additional cost to cast SN, discard a land card.~Draw two cards.
+timing=main
+oracle=As an additional cost to cast Magmatic Insight, discard a land card.\nDraw two cards.

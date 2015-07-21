@@ -1,0 +1,9 @@
+name=Calculated Dismissal
+image=http://magiccards.info/scans/en/ori/48.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={2}{U}
+effect=Counter target spell unless its controller pays {3}.~If there are two or more instant and/or sorcery cards in your graveyard, scry 2.
+timing=removal
+oracle=Counter target spell unless its controller pays {3}.\nSpell mastery — If there are two or more instant and/or sorcery cards in your graveyard, scry 2.

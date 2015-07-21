@@ -1,0 +1,9 @@
+name=Gather the Pack
+image=http://magiccards.info/scans/en/ori/178.jpg
+value=2.500
+rarity=U
+type=Sorcery
+cost={1}{G}
+effect=Reveal the top five cards of your library. You may put a creature card from among them into your hand. Put the rest into your graveyard.~If there are two or more instant and/or sorcery cards in your graveyard, put up to two creature cards from among the revealed cards into your hand instead of one.
+timing=main
+oracle=Reveal the top five cards of your library. You may put a creature card from among them into your hand. Put the rest into your graveyard.\nSpell mastery — If there are two or more instant and/or sorcery cards in your graveyard, put up to two creature cards from among the revealed cards into your hand instead of one.

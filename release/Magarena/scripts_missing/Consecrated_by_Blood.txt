@@ -1,0 +1,11 @@
+name=Consecrated by Blood
+image=http://magiccards.info/scans/en/ori/87.jpg
+value=2.500
+rarity=U
+type=Enchantment
+subtype=Aura
+cost={2}{B}{B}
+ability=Enchant creature;\
+        Enchanted creature gets +2/+2 and has flying and "Sacrifice two other creatures: Regenerate this creature."
+timing=aura
+oracle=Enchant creature\nEnchanted creature gets +2/+2 and has flying and "Sacrifice two other creatures: Regenerate this creature."

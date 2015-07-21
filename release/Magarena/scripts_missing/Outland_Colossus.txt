@@ -1,0 +1,12 @@
+name=Outland Colossus
+image=http://magiccards.info/scans/en/ori/193.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Giant
+cost={3}{G}{G}
+pt=6/6
+ability=Renown 6;\
+        SN can't be blocked by more than one creature.
+timing=main
+oracle=Renown 6\nOutland Colossus can't be blocked by more than one creature.

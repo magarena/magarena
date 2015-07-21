@@ -1,0 +1,11 @@
+name=Deep-Sea Terror
+image=http://magiccards.info/scans/en/ori/52.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Serpent
+cost={4}{U}{U}
+pt=6/6
+ability=SN can't attack unless there are seven or more cards in your graveyard.
+timing=main
+oracle=Deep-Sea Terror can't attack unless there are seven or more cards in your graveyard.

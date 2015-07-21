@@ -1,0 +1,12 @@
+name=Stalwart Aven
+image=http://magiccards.info/scans/en/ori/32.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Bird,Soldier
+cost={2}{W}
+pt=1/3
+ability=Flying;\
+        Renown 1
+timing=main
+oracle=Flying\nRenown 1

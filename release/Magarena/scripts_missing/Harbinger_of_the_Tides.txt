@@ -1,0 +1,12 @@
+name=Harbinger of the Tides
+image=http://magiccards.info/scans/en/ori/58.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Merfolk,Wizard
+cost={U}{U}
+pt=2/2
+ability=You may cast SN as though it had flash if you pay {2} more to cast it.;\
+        When SN enters the battlefield, you may return target tapped creature an opponent controls to its owner's hand.
+timing=main
+oracle=You may cast Harbinger of the Tides as though it had flash if you pay {2} more to cast it.\nWhen Harbinger of the Tides enters the battlefield, you may return target tapped creature an opponent controls to its owner's hand.

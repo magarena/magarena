@@ -1,0 +1,10 @@
+name=Thopter Spy Network
+image=http://magiccards.info/scans/en/ori/79.jpg
+value=2.500
+rarity=R
+type=Enchantment
+cost={2}{U}{U}
+ability=At the beginning of your upkeep, if you control an artifact, put a 1/1 colorless Thopter artifact creature token with flying onto the battlefield.;\
+        Whenever one or more artifact creatures you control deal combat damage to a player, draw a card.
+timing=enchantment
+oracle=At the beginning of your upkeep, if you control an artifact, put a 1/1 colorless Thopter artifact creature token with flying onto the battlefield.\nWhenever one or more artifact creatures you control deal combat damage to a player, draw a card.

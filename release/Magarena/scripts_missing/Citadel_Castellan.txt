@@ -1,0 +1,12 @@
+name=Citadel Castellan
+image=http://magiccards.info/scans/en/ori/213.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Knight
+cost={1}{G}{W}
+pt=2/3
+ability=Vigilance;\
+        Renown 2
+timing=main
+oracle=Vigilance\nRenown 2

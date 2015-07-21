@@ -1,0 +1,11 @@
+name=Deadbridge Shaman
+image=http://magiccards.info/scans/en/ori/91.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Elf,Shaman
+cost={2}{B}
+pt=3/1
+ability=When SN dies, target opponent discards a card.
+timing=main
+oracle=When Deadbridge Shaman dies, target opponent discards a card.

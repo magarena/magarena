@@ -1,0 +1,11 @@
+name=Seismic Elemental
+image=http://magiccards.info/scans/en/ori/161.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Elemental
+cost={3}{R}{R}
+pt=4/4
+ability=When SN enters the battlefield, creatures without flying can't block this turn.
+timing=main
+oracle=When Seismic Elemental enters the battlefield, creatures without flying can't block this turn.

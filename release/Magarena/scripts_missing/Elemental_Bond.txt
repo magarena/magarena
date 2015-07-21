@@ -1,0 +1,9 @@
+name=Elemental Bond
+image=http://magiccards.info/scans/en/ori/174.jpg
+value=2.500
+rarity=U
+type=Enchantment
+cost={2}{G}
+ability=Whenever a creature with power 3 or greater enters the battlefield under your control, draw a card.
+timing=enchantment
+oracle=Whenever a creature with power 3 or greater enters the battlefield under your control, draw a card.

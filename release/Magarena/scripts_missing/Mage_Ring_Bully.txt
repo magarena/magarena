@@ -1,0 +1,12 @@
+name=Mage-Ring Bully
+image=http://magiccards.info/scans/en/ori/154.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Warrior
+cost={1}{R}
+pt=2/2
+ability=Prowess;\
+        SN attacks each turn if able.
+timing=main
+oracle=Prowess\nMage-Ring Bully attacks each turn if able.

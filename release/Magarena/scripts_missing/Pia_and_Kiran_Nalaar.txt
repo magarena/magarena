@@ -1,0 +1,12 @@
+name=Pia and Kiran Nalaar
+image=http://magiccards.info/scans/en/ori/157.jpg
+value=2.500
+rarity=R
+type=Legendary,Creature
+subtype=Human,Artificer
+cost={2}{R}{R}
+pt=2/2
+ability=When SN enters the battlefield, put two 1/1 colorless Thopter artifact creature tokens with flying onto the battlefield.;\
+        {2}{R}, Sacrifice an artifact: SN deals 2 damage to target creature or player.
+timing=main
+oracle=When Pia and Kiran Nalaar enters the battlefield, put two 1/1 colorless Thopter artifact creature tokens with flying onto the battlefield.\n{2}{R}, Sacrifice an artifact: Pia and Kiran Nalaar deals 2 damage to target creature or player.

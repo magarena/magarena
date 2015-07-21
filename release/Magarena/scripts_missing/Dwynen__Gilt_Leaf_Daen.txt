@@ -1,0 +1,13 @@
+name=Dwynen, Gilt-Leaf Daen
+image=http://magiccards.info/scans/en/ori/172.jpg
+value=2.500
+rarity=R
+type=Legendary,Creature
+subtype=Elf,Warrior
+cost={2}{G}{G}
+pt=3/4
+ability=Reach;\
+        Other Elf creatures you control get +1/+1.;\
+        Whenever SN attacks, you gain 1 life for each attacking Elf you control.
+timing=main
+oracle=Reach\nOther Elf creatures you control get +1/+1.\nWhenever Dwynen, Gilt-Leaf Daen attacks, you gain 1 life for each attacking Elf you control.

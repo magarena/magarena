@@ -1,0 +1,15 @@
+name=Disciple of the Ring
+image=http://magiccards.info/scans/en/ori/53.jpg
+value=2.500
+rarity=M
+type=Creature
+subtype=Human,Wizard
+cost={3}{U}{U}
+pt=3/4
+ability={1}, Exile an instant or sorcery card from your graveyard: Choose one — \
+        (1) Counter target noncreature spell unless its controller pays {2}. \
+        (2) SN gets +1/+1 until end of turn. \
+        (3) Tap target creature. \
+        (4) Untap target creature.
+timing=main
+oracle={1}, Exile an instant or sorcery card from your graveyard: Choose one —\n• Counter target noncreature spell unless its controller pays {2}.\n• Disciple of the Ring gets +1/+1 until end of turn.\n• Tap target creature.\n• Untap target creature.

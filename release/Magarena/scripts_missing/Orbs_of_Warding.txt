@@ -1,0 +1,10 @@
+name=Orbs of Warding
+image=http://magiccards.info/scans/en/ori/234.jpg
+value=2.500
+rarity=R
+type=Artifact
+cost={5}
+ability=You have hexproof.;\
+        If a creature would deal damage to you, prevent 1 of that damage.
+timing=artifact
+oracle=You have hexproof.\nIf a creature would deal damage to you, prevent 1 of that damage.

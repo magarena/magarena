@@ -1,0 +1,12 @@
+name=Topan Freeblade
+image=http://magiccards.info/scans/en/ori/36.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Soldier
+cost={1}{W}
+pt=2/2
+ability=Vigilance;\
+        Renown 1
+timing=main
+oracle=Vigilance\nRenown 1

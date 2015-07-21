@@ -1,0 +1,11 @@
+name=Boggart Brute
+image=http://magiccards.info/scans/en/ori/133.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Goblin,Warrior
+cost={2}{R}
+pt=3/2
+ability=Menace
+timing=main
+oracle=Menace

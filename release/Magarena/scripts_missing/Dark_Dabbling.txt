@@ -1,0 +1,9 @@
+name=Dark Dabbling
+image=http://magiccards.info/scans/en/ori/89.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={2}{B}
+effect=Regenerate target creature. Draw a card.~If there are two or more instant and/or sorcery cards in your graveyard, also regenerate each other creature you control.
+timing=removal
+oracle=Regenerate target creature. Draw a card.\nSpell mastery — If there are two or more instant and/or sorcery cards in your graveyard, also regenerate each other creature you control.

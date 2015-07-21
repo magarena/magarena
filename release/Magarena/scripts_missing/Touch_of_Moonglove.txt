@@ -1,0 +1,9 @@
+name=Touch of Moonglove
+image=http://magiccards.info/scans/en/ori/123.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={B}
+effect=Target creature you control gets +1/+0 and gains deathtouch until end of turn. Whenever a creature dealt damage by that creature dies this turn, its controller loses 2 life.
+timing=removal
+oracle=Target creature you control gets +1/+0 and gains deathtouch until end of turn. Whenever a creature dealt damage by that creature dies this turn, its controller loses 2 life.

@@ -1,0 +1,9 @@
+name=Zendikar's Roil
+image=http://magiccards.info/scans/en/ori/209.jpg
+value=2.500
+rarity=U
+type=Enchantment
+cost={3}{G}{G}
+ability=Whenever a land enters the battlefield under your control, put a 2/2 green Elemental creature token onto the battlefield.
+timing=enchantment
+oracle=Whenever a land enters the battlefield under your control, put a 2/2 green Elemental creature token onto the battlefield.

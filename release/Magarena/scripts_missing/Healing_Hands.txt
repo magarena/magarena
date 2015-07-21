@@ -1,0 +1,9 @@
+name=Healing Hands
+image=http://magiccards.info/scans/en/ori/17.jpg
+value=2.500
+rarity=C
+type=Sorcery
+cost={2}{W}
+effect=Target player gains 4 life.~Draw a card.
+timing=main
+oracle=Target player gains 4 life.\nDraw a card.

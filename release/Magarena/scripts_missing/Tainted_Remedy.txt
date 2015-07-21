@@ -1,0 +1,9 @@
+name=Tainted Remedy
+image=http://magiccards.info/scans/en/ori/120.jpg
+value=2.500
+rarity=R
+type=Enchantment
+cost={2}{B}
+ability=If an opponent would gain life, that player loses that much life instead.
+timing=enchantment
+oracle=If an opponent would gain life, that player loses that much life instead.

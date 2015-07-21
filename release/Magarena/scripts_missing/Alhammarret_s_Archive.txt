@@ -1,0 +1,10 @@
+name=Alhammarret's Archive
+image=http://magiccards.info/scans/en/ori/221.jpg
+value=2.500
+rarity=M
+type=Legendary,Artifact
+cost={5}
+ability=If you would gain life, you gain twice that much life instead.;\
+        If you would draw a card except the first one you draw in each of your draw steps, draw two cards instead.
+timing=artifact
+oracle=If you would gain life, you gain twice that much life instead.\nIf you would draw a card except the first one you draw in each of your draw steps, draw two cards instead.
