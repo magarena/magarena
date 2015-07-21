@@ -43,6 +43,7 @@ public class NewDuelSettingsScreen
     private static final String _S5 = "%s's deck is invalid.";
     private static final String _S6 = "The following player decks are invalid :-\n\n";
 
+    private static final int PLAYERS_COUNT = 2;
     private static final DuelConfig duelConfig = DuelConfig.getInstance();
 
     private final ScreenContent content;
@@ -104,10 +105,10 @@ public class NewDuelSettingsScreen
         duelConfig.setHandSize(content.getHandSize());
         duelConfig.setNrOfGames(content.getNrOfGames());
         duelConfig.setCube(content.getCube());
-        duelConfig.setPlayerProfile(0, content.getPlayerProfile(0));
-        duelConfig.setPlayerProfile(1, content.getPlayerProfile(1));
-        duelConfig.setPlayerDeckProfile(0, content.getDeckType(0), content.getDeckValue(0));
-        duelConfig.setPlayerDeckProfile(1, content.getDeckType(1), content.getDeckValue(1));
+        for (int i = 0; i < PLAYERS_COUNT; i++) {
+            duelConfig.setPlayerProfile(i, content.getPlayerProfile(i));
+            duelConfig.setPlayerDeckProfile(i, content.getDeckType(i), content.getDeckValue(i));
+        }
     }
 
     @Override
@@ -132,15 +133,15 @@ public class NewDuelSettingsScreen
 
         private final MigLayout migLayout = new MigLayout();
         private final DuelSettingsPanel duelSettingsPanel;
-        private final DuelPlayerPanel[] playerPanels = new DuelPlayerPanel[2];
-        private final DuelPlayerDeckPanel[] newPlayerDeckPanels = new DuelPlayerDeckPanel[2];
+        private final DuelPlayerPanel[] playerPanels = new DuelPlayerPanel[PLAYERS_COUNT];
+        private final DuelPlayerDeckPanel[] newPlayerDeckPanels = new DuelPlayerDeckPanel[PLAYERS_COUNT];
 
         public ScreenContent(final DuelConfig config, final MagicFrame frame) {
             this.duelSettingsPanel = new DuelSettingsPanel(frame, config);
-            this.playerPanels[0] = getNewDuelPlayerPanel(config.getPlayerProfile(0));
-            this.playerPanels[1] = getNewDuelPlayerPanel(config.getPlayerProfile(1));
-            this.newPlayerDeckPanels[0] = new DuelPlayerDeckPanel(config.getPlayerDeckProfile(0));
-            this.newPlayerDeckPanels[1] = new DuelPlayerDeckPanel(config.getPlayerDeckProfile(1));
+            for (int i = 0; i < PLAYERS_COUNT; i++) {
+                this.playerPanels[i] = getNewDuelPlayerPanel(config.getPlayerProfile(i));
+                this.newPlayerDeckPanels[i] = new DuelPlayerDeckPanel(config.getPlayerDeckProfile(i));
+            }
             setLookAndFeel();
             refreshLayout();
         }
