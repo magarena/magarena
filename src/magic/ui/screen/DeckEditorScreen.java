@@ -89,10 +89,12 @@ public class DeckEditorScreen
     private static MagicDeck getMostRecentEditedDeck() {
         final Path deckFilePath = GeneralConfig.getInstance().getMostRecentDeckFilePath();
         if (deckFilePath != null) {
-             return loadDeck(deckFilePath);
-        } else {
-            return null;
+            final MagicDeck deck = loadDeck(deckFilePath);
+            if (deck != null && deck.isValid()) {
+                return deck;
+            }
         }
+        return null;
     }
     
     private static MagicDeck loadDeck(final Path deckFilePath) {
