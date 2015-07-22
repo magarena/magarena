@@ -77,6 +77,9 @@ public enum MagicConditionParser {
             return MagicCondition.THRESHOLD_CONDITION;
         }
     },
+    SpellMastery("there are two or more instant and/or sorcery cards in your graveyard") {
+      public MagicCondition toCondition(final Matcher arg) { return MagicCondition.SPELL_MASTERY_CONDITION; }
+    },
     ExactlySeven("you have exactly seven cards in hand") {
         public MagicCondition toCondition(final Matcher arg) {
             return MagicCondition.EXACTLY_SEVEN_CARDS_IN_HAND_CONDITION;

@@ -790,6 +790,13 @@ public abstract class MagicCondition implements MagicMatchedCostEvent {
         }
     };
 
+    public static MagicCondition SPELL_MASTERY_CONDITION = new MagicCondition() {
+        public boolean accept(final MagicSource source) {
+            final MagicPlayer player = source.getController();
+            return MagicTargetFilterFactory.INSTANT_OR_SORCERY_CARD_FROM_GRAVEYARD.filter(player).size() >= 2;
+        }
+    };
+
     public static MagicCondition FORMIDABLE = new MagicCondition() {
         public boolean accept(final MagicSource source) {
             final List<MagicPermanent> creatures = MagicTargetFilterFactory.CREATURE_YOU_CONTROL.filter(source.getController());
