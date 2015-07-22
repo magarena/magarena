@@ -26,7 +26,7 @@ public class AiPlayerJList
     private static final String _S1 = "AI: %s";
     private static final String _S2 = "Level: %d / 8";
     private static final String _S3 = "Extra Life: %d";
-    private static final String _S4 = "Last played: %s";
+    private static final String _S4 = "Last played";
 
     public AiPlayerJList() {
         setOpaque(false);
@@ -54,16 +54,18 @@ public class AiPlayerJList
             this.profile = profile;
             foreColor = isSelected ? MagicStyle.getRolloverColor() : Color.WHITE;
 
-            final JPanel panel = new JPanel(new MigLayout("insets 0 0 0 6, gap 0"));
-            panel.setPreferredSize(new Dimension(0, 70));
+            final MigLayout migLayout = new MigLayout("insets 0, gap 0");
+            final JPanel panel = new JPanel(migLayout);
+            migLayout.setColumnConstraints("[66][]8[center][align right]4");
+
+            panel.setPreferredSize(new Dimension(getWidth(), 70));
             panel.setOpaque(false);
-            panel.setForeground(foreColor);
             panel.setBorder(isSelected ? BorderFactory.createLineBorder(MagicStyle.getRolloverColor(), 1) : null);
 
-            panel.add(getAvatarPortrait(), "w 70!, h 70!");
-            panel.add(getNamePanel(), "w 100%");
-            panel.add(getDefaultDuelSettingsPanel(), "w 100%");
-            panel.add(new PlayerMiniStatsPanel(profile.getStats(), foreColor));
+            panel.add(getAvatarPortrait(), "h 70!");
+            panel.add(getNamePanel(), "w 150!");
+            panel.add(getDefaultDuelSettingsPanel(), "w 150");
+            panel.add(new PlayerMiniStatsPanel(profile.getStats(), foreColor), "pushx");
 
             panel.setToolTipText(profile.getAiType().toString());
 
@@ -71,7 +73,7 @@ public class AiPlayerJList
         }
 
         private JPanel getDefaultDuelSettingsPanel() {
-            final JPanel panel = new JPanel(new MigLayout("insets 0 20 0 0, flowy"));
+            final JPanel panel = new JPanel(new MigLayout("insets 0, flowy"));
             panel.setOpaque(false);
             panel.add(getLabel(UiString.get(_S1, profile.getAiType().name())), "w 100%");
             panel.add(getLabel(UiString.get(_S2, profile.getAiLevel())), "w 100%");
@@ -82,6 +84,7 @@ public class AiPlayerJList
         private JLabel getLabel(final String caption) {
             final JLabel lbl = new JLabel(caption);
             lbl.setForeground(foreColor);
+            lbl.setFont(FontsAndBorders.FONT0);
             return lbl;
         }
 
@@ -93,14 +96,15 @@ public class AiPlayerJList
             final JPanel panel = new JPanel(new MigLayout("insets 0, gap 0, flowy"));
             panel.setOpaque(false);
             panel.setForeground(foreColor);
-            panel.add(getPlayerNameLabel(), "gapbottom 4");
+            panel.add(getPlayerNameLabel(), "gapbottom 2");
             panel.add(getTimestampLabel());
             return panel;
         }
 
         private JLabel getTimestampLabel() {
-            final JLabel lbl = new JLabel(UiString.get(_S4, profile.getStats().getLastPlayed()));
+            final JLabel lbl = new JLabel(String.format("<html>%s:<br>%s</html>", UiString.get(_S4), profile.getStats().getLastPlayed()));
             lbl.setForeground(foreColor);
+            lbl.setFont(FontsAndBorders.FONT0);
             return lbl;
         }
 

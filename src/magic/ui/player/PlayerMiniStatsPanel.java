@@ -51,7 +51,7 @@ public class PlayerMiniStatsPanel extends JPanel {
     private void refreshLayout() {
         removeAll();
         migLayout.setLayoutConstraints("insets 0, gap 0, wrap 4");
-        migLayout.setColumnConstraints("[][30!]");
+        migLayout.setColumnConstraints("[][40!]");
         // stats table
         add(new JLabel());
         add(getStatsLabel(UiString.get(_S1)), "w 100%");
