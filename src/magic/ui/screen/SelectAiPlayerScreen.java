@@ -56,7 +56,7 @@ public class SelectAiPlayerScreen
 
     @Override
     protected int getPreferredWidth() {
-        return 580;
+        return 450;
     }
 
     private class NewPlayerAction extends AbstractAction {
