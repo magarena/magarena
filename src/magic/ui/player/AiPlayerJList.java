@@ -23,7 +23,7 @@ import magic.ui.UiString;
 public class AiPlayerJList
     extends JList<AiProfile> {
 
-    // translatable string
+    // translatable strings
     @StringContext(eg="this is the AI level.")
     private static final String _S2 = "Level";
     private static final String _S3 = "Extra Life";
@@ -77,7 +77,7 @@ public class AiPlayerJList
             final JPanel panel = new JPanel(new MigLayout("insets 0, gap 0, flowy"));
             panel.setOpaque(false);
             panel.setForeground(foreColor);
-            panel.add(getPlayerNameLabel(), "gapbottom 0");
+            panel.add(getPlayerNameLabel());
             panel.add(getPlayerSettingsLabel());
             return panel;
         }
