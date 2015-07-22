@@ -402,7 +402,7 @@ public enum MagicAbility {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final int n = ARG.number(arg);
             final String effect  = ARG.effect(arg).replaceFirst("^effect ", "");
-            card.add(MagicTributeTrigger.create(n,  MagicRuleEventAction.create(effect)));
+            card.add(MagicTributeTrigger.create(n, MagicRuleEventAction.create(effect)));
         }
     },
     Bestow("bestow " + ARG.MANACOST, 10) {
@@ -1275,6 +1275,12 @@ public enum MagicAbility {
             final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.Permanent(ARG.wordrun(arg));
             final MagicAbilityList abList = MagicAbility.getAbilityList(ARG.any(arg));
             card.add(MagicStatic.genABGameStatic(filter, abList));
+        }
+    },
+    Renown("renown " + ARG.NUMBER,10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            final int n = ARG.number(arg);
+            card.add(MagicWhenDamageIsDealtTrigger.Renown(n));
         }
     },
     /*
