@@ -1,5 +1,5 @@
 name=Cruel Revival
-image=http://magiccards.info/scans/en/pch/23.jpg
+image=http://magiccards.info/scans/en/ori/88.jpg
 value=3.868
 rarity=C
 type=Instant

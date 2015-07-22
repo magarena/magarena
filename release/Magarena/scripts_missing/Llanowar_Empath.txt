@@ -1,5 +1,5 @@
 name=Llanowar Empath
-image=http://magiccards.info/scans/en/fut/130.jpg
+image=http://magiccards.info/scans/en/ori/185.jpg
 value=2.569
 rarity=C
 type=Creature

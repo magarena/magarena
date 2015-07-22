@@ -1,5 +1,5 @@
 name=Read the Bones
-image=http://magiccards.info/scans/en/c14/158.jpg
+image=http://magiccards.info/scans/en/ori/114.jpg
 value=2.500
 rarity=C
 type=Sorcery
