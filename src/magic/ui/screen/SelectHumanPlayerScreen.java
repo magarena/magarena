@@ -59,7 +59,7 @@ public class SelectHumanPlayerScreen
 
     @Override
     protected int getPreferredWidth() {
-        return 420;
+        return 450;
     }
 
     private class NewPlayerAction extends AbstractAction {

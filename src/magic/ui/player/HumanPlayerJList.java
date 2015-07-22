@@ -11,7 +11,6 @@ import javax.swing.ListCellRenderer;
 import javax.swing.SwingConstants;
 import magic.model.player.HumanProfile;
 import magic.ui.IconImages;
-import magic.ui.UiString;
 import magic.ui.utility.MagicStyle;
 import magic.ui.widget.FontsAndBorders;
 import net.miginfocom.swing.MigLayout;
@@ -19,9 +18,6 @@ import net.miginfocom.swing.MigLayout;
 @SuppressWarnings("serial")
 public class HumanPlayerJList
     extends JList<HumanProfile> {
-
-    // translatable strings
-    private static final String _S1 = "Last played: %s";
 
     public HumanPlayerJList() {
         setOpaque(false);
@@ -49,15 +45,17 @@ public class HumanPlayerJList
             this.profile = profile;
             foreColor = isSelected ? MagicStyle.getRolloverColor(): Color.WHITE;
 
-            final JPanel panel = new JPanel(new MigLayout("insets 0 0 0 6, gap 0"));
+            final MigLayout migLayout = new MigLayout("insets 0, gap 0");
+            final JPanel panel = new JPanel(migLayout);
+            migLayout.setColumnConstraints("4[66][][align right]4");
+
             panel.setPreferredSize(new Dimension(0, 70));
             panel.setOpaque(false);
-            panel.setForeground(foreColor);
             panel.setBorder(isSelected ? BorderFactory.createLineBorder(MagicStyle.getRolloverColor(), 1) : null);
 
-            panel.add(getAvatarPortrait(), "w 70!, h 70!");
-            panel.add(getNamePanel(), "w 100%");
-            panel.add(new PlayerMiniStatsPanel(profile.getStats(), foreColor));
+            panel.add(getAvatarPortrait(), "h 70!");
+            panel.add(getNamePanel(), "w 160!");
+            panel.add(new PlayerMiniStatsPanel(profile.getStats(), foreColor), "pushx");
 
             return panel;
         }
@@ -70,15 +68,8 @@ public class HumanPlayerJList
             final JPanel panel = new JPanel(new MigLayout("insets 0, gap 0, flowy"));
             panel.setOpaque(false);
             panel.setForeground(foreColor);
-            panel.add(getPlayerNameLabel(), "w 100%, gapbottom 4");
-            panel.add(getTimestampLabel());
+            panel.add(getPlayerNameLabel());
             return panel;
-        }
-
-        private JLabel getTimestampLabel() {
-            final JLabel lbl = new JLabel(UiString.get(_S1, profile.getStats().getLastPlayed()));
-            lbl.setForeground(foreColor);
-            return lbl;
         }
 
         private JLabel getPlayerNameLabel() {
