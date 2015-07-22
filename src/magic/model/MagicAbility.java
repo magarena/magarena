@@ -554,6 +554,14 @@ public enum MagicAbility {
             ));
         }
     },
+    WhenRenowned("When SN becomes renowned, " + ARG.EFFECT, 0) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            card.add(MagicWhenBecomesStateTrigger.createSelf(
+                MagicPermanentState.Renowned,
+                MagicRuleEventAction.create(ARG.effect(arg))
+            ));
+        }
+    },
     AlternateCost("alt cost " + ARG.ANY, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher matcher) {
             final String arg = matcher.group("any");

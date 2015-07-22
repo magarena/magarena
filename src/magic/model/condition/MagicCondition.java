@@ -27,7 +27,7 @@ import java.util.List;
 import java.util.LinkedList;
 
 public abstract class MagicCondition implements MagicMatchedCostEvent {
-    
+
     private static final MagicEventAction PLAY_ABILITY_ACTION = new MagicEventAction() {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
@@ -50,7 +50,7 @@ public abstract class MagicCondition implements MagicMatchedCostEvent {
     public MagicEvent getEvent(final MagicSource source) {
         return new MagicConditionEvent(source, this, getEventAction());
     }
-    
+
     public MagicEventAction getEventAction() {
         return MagicEventAction.NONE;
     }
@@ -521,6 +521,13 @@ public abstract class MagicCondition implements MagicMatchedCostEvent {
         public boolean accept(final MagicSource source) {
             final MagicPermanent permanent=(MagicPermanent)source;
             return permanent.hasState(MagicPermanentState.Monstrous) == true;
+        }
+    };
+
+    public static MagicCondition IS_RENOWNED_CONDITION = new MagicCondition() {
+        public boolean accept(final MagicSource source) {
+            final MagicPermanent permanent=(MagicPermanent)source;
+            return permanent.hasState(MagicPermanentState.Renowned) == true;
         }
     };
 

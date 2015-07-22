@@ -188,6 +188,9 @@ public enum MagicConditionParser {
             return MagicCondition.IS_MONSTROUS_CONDITION;
         }
     },
+    IsRenowned("(SN is|it's) renowned") {
+        public MagicCondition toCondition(final Matcher arg) { return MagicCondition.IS_RENOWNED_CONDITION; }
+    },
     IsBlocked("it's blocked") {
         public MagicCondition toCondition(final Matcher arg) {
             return MagicCondition.IS_BLOCKED_CONDITION;
