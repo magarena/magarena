@@ -16,6 +16,7 @@ import java.awt.Color;
 import java.awt.Component;
 import java.awt.Dimension;
 import magic.ui.IconImages;
+import magic.ui.StringContext;
 import magic.ui.UiString;
 
 @SuppressWarnings("serial")
@@ -23,8 +24,9 @@ public class AiPlayerJList
     extends JList<AiProfile> {
 
     // translatable string
-    private static final String _S2 = "Level: %d";
-    private static final String _S3 = "Extra Life: %d";
+    @StringContext(eg="this is the AI level.")
+    private static final String _S2 = "Level";
+    private static final String _S3 = "Extra Life";
 
     public AiPlayerJList() {
         setOpaque(false);
@@ -82,10 +84,10 @@ public class AiPlayerJList
 
         private JLabel getPlayerSettingsLabel() {
             final JLabel lbl = new JLabel(
-                    String.format("<html>%s<br>%s, %s</html>",
+                    String.format("<html>%s<br>%s: %d, %s: %d</html>",
                             profile.getAiType(),
-                            UiString.get(_S2, profile.getAiLevel()),
-                            UiString.get(_S3, profile.getExtraLife()))
+                            UiString.get(_S2), profile.getAiLevel(),
+                            UiString.get(_S3), profile.getExtraLife())
             );
             lbl.setForeground(foreColor);
             lbl.setFont(FontsAndBorders.FONT0);
