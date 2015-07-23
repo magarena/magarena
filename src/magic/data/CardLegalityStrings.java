@@ -1,7 +1,7 @@
 package magic.data;
 
-final class CardLegalityConstants {
-    private CardLegalityConstants() {}
+final class CardLegalityStrings {
+    private CardLegalityStrings() {}
 
     // translatable strings
     static final String _S1 = "is legal";
