@@ -17,19 +17,31 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 import magic.model.IUIGameController;
+import magic.ui.StringContext;
+import magic.ui.UiString;
 
 public class MagicPlayChoice extends MagicChoice {
 
-    private static final MagicChoice INSTANCE=new MagicPlayChoice();
+    // translatable strings
+    private static final String _S_PLAY_MESSAGE = "Play a card or ability.";
+    @StringContext(eg = "{f} will be replaced by an icon.")
+    private static final String _S_CONTINUE_MESSAGE = "Click {f} or Space to pass.";
+    @StringContext(eg = "| represents a new line. Position to fit text in user prompt.")
+    private static final String _S_SKIP_MESSAGE = "Right click {f} or Shift+Space to|skip till end of turn.";
+    
+    private static final String MESSAGE = String.format("%s|%s|[%s]",
+            UiString.get(_S_PLAY_MESSAGE),
+            UiString.get(_S_CONTINUE_MESSAGE),
+            UiString.get(_S_SKIP_MESSAGE)
+    );
 
-    private static final String CONTINUE_MESSAGE="Click {f} or Space to pass.";
-    private static final String MESSAGE="Play a card or ability.|" + CONTINUE_MESSAGE + "|[Right click {f} or Shift+Space to|skip till end of turn.]";
+    private static final MagicChoice INSTANCE=new MagicPlayChoice();
 
     private static final Collection<Object> PASS_OPTIONS=Collections.<Object>singleton(MagicPlayChoiceResult.SKIP);
     private static final Object[] PASS_CHOICE_RESULTS= {MagicPlayChoiceResult.SKIP};
 
     private MagicPlayChoice() {
-        super("Play a card or ability.");
+        super(UiString.get(_S_PLAY_MESSAGE));
     }
 
     @Override
@@ -145,7 +157,7 @@ public class MagicPlayChoice extends MagicChoice {
         }
 
         if (validChoices.isEmpty()) {
-            controller.showMessage(source,CONTINUE_MESSAGE);
+            controller.showMessage(source, UiString.get(_S_CONTINUE_MESSAGE));
         } else {
             controller.showMessage(source,MESSAGE);
             controller.setValidChoices(validChoices,false);
