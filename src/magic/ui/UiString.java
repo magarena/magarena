@@ -198,7 +198,7 @@ public final class UiString {
             for (Map.Entry<Long, String> entry : stringsMap.entrySet()) {
                 final Long key = entry.getKey();
                 if (annotations.containsKey(key)) {
-                    writer.println(String.format("# %d eg. %s", key, annotations.get(key)));
+                    writer.println(String.format("# %010d eg. %s", key, annotations.get(key)));
                 }
                 // CRC32 function returns 32 bit long = max 10 numerals. Pad if smaller.
                 writer.println(String.format("%010d = %s", key, entry.getValue()));
