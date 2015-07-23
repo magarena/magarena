@@ -1,12 +1,12 @@
 package magic.ui.dialog;
 
 import java.awt.Color;
+import java.awt.Dimension;
 import java.awt.Toolkit;
 import java.awt.datatransfer.Clipboard;
 import java.awt.datatransfer.StringSelection;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.event.KeyEvent;
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 import java.io.IOException;
@@ -16,21 +16,13 @@ import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
 import javax.swing.AbstractAction;
-import javax.swing.BorderFactory;
 import javax.swing.JButton;
-import javax.swing.JComponent;
-import javax.swing.JDialog;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
-import javax.swing.KeyStroke;
-import javax.swing.SwingConstants;
 import javax.swing.SwingUtilities;
 import magic.model.MagicCardDefinition;
 import magic.ui.*;
-import magic.ui.theme.Theme;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.downloader.HQImagesDownloadPanel;
 import magic.ui.widget.downloader.ImageDownloadPanel;
@@ -39,14 +31,13 @@ import magic.ui.widget.downloader.PlayableDownloadPanel;
 import magic.ui.widget.downloader.UnimplementedDownloadPanel;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicFileSystem.DataPath;
-import magic.ui.utility.MagicStyle;
 import magic.ui.dialog.button.CancelButton;
 import magic.utility.MagicSystem;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
 public class DownloadImagesDialog
-    extends JDialog
+    extends MagicDialog
     implements ActionListener, PropertyChangeListener, IImageDownloadListener {
 
     // translatable strings
@@ -56,18 +47,18 @@ public class DownloadImagesDialog
     private static final String _S5 = "Error details have been copied to the clipboard.";
 
     private final ErrorLogPanel errorPanel = new ErrorLogPanel();
-    private final JButton cancelButton = new CancelButton();
     private final JButton backgroundButton = new JButton();
     private static List<String> newCards = null;
     private final List<ImageDownloadPanel> downloadPanels = new ArrayList<>();
 
     public DownloadImagesDialog(final MagicFrame frame) {
-        super(frame, true);
+        
+        super(ScreenController.getMainFrame(), UiString.get(_S1), new Dimension(400, 460));
+
         setDownloadPanels();
         setLookAndFeel();
         refreshLayout();
-        setEscapeKeyAsCancelAction();
-        this.setLocationRelativeTo(frame);
+
         this.setVisible(true);
     }
 
@@ -79,49 +70,20 @@ public class DownloadImagesDialog
         }
     }
 
-    private void setEscapeKeyAsCancelAction() {
-        final KeyStroke stroke = KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0);
-        getRootPane().registerKeyboardAction(new AbstractAction() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                if (!backgroundButton.isEnabled()) {
-                    doCancelAndClose();
-                }
-            }
-        }, stroke, JComponent.WHEN_IN_FOCUSED_WINDOW);
-    }
-
     private void refreshLayout() {
-        setLayout(new MigLayout("flowy, gapy 0, insets 0"));
-        add(getDialogCaptionLabel(), "w 100%, h 26!");
-        add(getDownloadPanel(), "w 100%");
-        add(errorPanel, "w 100%, h 100%");
-        add(getButtonPanel(), "w 100%, aligny bottom, pushy");
-    }
-
-    private JLabel getDialogCaptionLabel() {
-        final JLabel lbl = new JLabel(getTitle());
-        lbl.setOpaque(true);
-        lbl.setBackground(MagicStyle.getTheme().getColor(Theme.COLOR_TITLE_BACKGROUND));
-        lbl.setForeground(MagicStyle.getTheme().getColor(Theme.COLOR_TITLE_FOREGROUND));
-        lbl.setFont(FontsAndBorders.FONT1.deriveFont(14f));
-        lbl.setHorizontalAlignment(SwingConstants.CENTER);
-        return lbl;
+        final JPanel panel = getDialogContentPanel();
+        panel.setLayout(new MigLayout("flowy, gap 0, insets 2 6 6 6"));
+        panel.add(getDownloadPanel(), "w 100%");
+        panel.add(errorPanel, "w 100%, h 100%");
+        panel.add(getButtonPanel(), "w 100%, h 30!, pushy, aligny bottom");
     }
 
     private void setLookAndFeel() {
-        setTitle(UiString.get(_S1));
-        setResizable(false);
-        setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-        setSize(360, 460);
-        setUndecorated(true);
-        ((JComponent)getContentPane()).setBorder(BorderFactory.createMatteBorder(0, 8, 8, 8, MagicStyle.getTheme().getColor(Theme.COLOR_TITLE_BACKGROUND)));
-        //
         backgroundButton.setEnabled(false);
     }
 
     private JPanel getDownloadPanel() {
-        final JPanel panel = new JPanel(new MigLayout("flowy, insets 8, gapy 10"));
+        final JPanel panel = new JPanel(new MigLayout("flowy, insets 0, gapy 10"));
         for (ImageDownloadPanel downloadPanel : downloadPanels) {
             panel.add(downloadPanel, "w 100%");
         }
@@ -155,27 +117,29 @@ public class DownloadImagesDialog
         backgroundButton.setEnabled(isBackgroundButtonEnabled);
     }
 
+    private JButton getCancelButton() {
+        final JButton btn = new CancelButton();
+        btn.setFocusable(false);
+        btn.addActionListener(getCancelAction());
+        return btn;
+    }
+
     private JPanel getButtonPanel() {
-        // cancel button
-        cancelButton.setFocusable(false);
-        cancelButton.addActionListener(this);
-        // background button
+
         backgroundButton.setText(UiString.get(_S3));
         backgroundButton.setFocusable(false);
         backgroundButton.addActionListener(this);
-        // layout
-        final JPanel panel = new JPanel(new MigLayout());
-        panel.add(backgroundButton, "w 100%, alignx left");
-        panel.add(cancelButton, "w 100!, alignx right, pushx");
+
+        final JPanel panel = new JPanel(new MigLayout("insets 0, alignx right, aligny bottom"));
+        panel.add(backgroundButton, "w 100%");
+        panel.add(getCancelButton());
         return panel;
     }
 
     @Override
     public void actionPerformed(final ActionEvent event) {
         final Object source=event.getSource();
-        if (source==cancelButton) {
-            doCancelAndClose();
-        } else if (source == backgroundButton) {
+        if (source == backgroundButton) {
             setVisible(false);
         }
     }
@@ -241,6 +205,18 @@ public class DownloadImagesDialog
                 }
             }
         });
+    }
+
+    @Override
+    protected AbstractAction getCancelAction() {
+        return new AbstractAction() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if (!backgroundButton.isEnabled()) {
+                    doCancelAndClose();
+                }
+            }
+        };
     }
 
     private class ErrorLogPanel extends JPanel {
