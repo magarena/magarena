@@ -16,7 +16,7 @@ import magic.utility.MagicFileSystem;
 public class PlayableDownloadPanel extends MissingImagesDownloadPanel {
 
     // translatable strings
-    private static final String _S1 = "Playable cards, missing images = ";
+    private static final String _S1 = "Playable cards, missing images";
     private static final String _S2 = "Download new images";
 
     public PlayableDownloadPanel(IImageDownloadListener listener) {

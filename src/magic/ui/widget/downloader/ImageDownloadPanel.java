@@ -215,7 +215,10 @@ public abstract class ImageDownloadPanel extends JPanel {
             if (!isCancelled) {
                 downloadButton.setEnabled(files.size() > 0);
                 captionLabel.setIcon(null);
-                captionLabel.setText(getProgressCaption() + files.size());
+                captionLabel.setText(String.format("%s = %d",
+                        getProgressCaption(),
+                        files.size())
+                );
             }
             notifyStatusChanged(DownloaderState.STOPPED);
         }
@@ -295,7 +298,10 @@ public abstract class ImageDownloadPanel extends JPanel {
             final int countInteger = chunks.get(chunks.size() - 1);
             if (!isCancelled()) {
                 progressBar.setValue(countInteger);
-                captionLabel.setText(getProgressCaption() + (downloadList.size() - getCustomCount(countInteger)));
+                captionLabel.setText(String.format("%s = %d",
+                        getProgressCaption(),
+                        downloadList.size() - getCustomCount(countInteger))
+                );
             }
         }
 
