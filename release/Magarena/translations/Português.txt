@@ -1,3 +1,7 @@
+# 1529602839 eg. this is the AI level.
+1529602839 = Nível
+0026555175 = Imagens de cartas implementadas em falta
+0557509002 = Imagens de cartas não implementadas em falta
 2964506365 = FALHA
 1205612304 = - visualizar novas cartas...
 3610695981 = OK
@@ -13,8 +17,8 @@
 0922408799 = Magarena não encontrado!
 0550609901 = Este diretório não contém uma versão válida do Magarena.
 1086464600 = Importar Configurações?
-4023198582 = Importar configurações de uma versão anterior so Magarena.
-2258392056 = Abre a respectiva página wiki no seu navegador.
+4023198582 = Importar configurações de uma versão anterior do Magarena.
+2258392056 = Abre a página wiki de ajuda no seu navegador.
 2224295428 = Importando...
 4067345257 = Resetar e Reiniciar
 2586492251 = Resetar para as configurações padrão e executar o auxiliar de inicialização?
@@ -111,9 +115,9 @@
 4184661482 = Remover carta
 0736696355 = Exclui a carta selecionada do deck (ou clique na linha com o botão direito).
 3615081709 = Aumentar
-4194509842 = Aumenta a quantidade por um. O máximo é dez.
-2069643244 = Diminuir
-0391863698 = Diminui a quantidade em um. O mínimo é um.
+4194509842 = Aumenta a quantidade em um. O máximo é dez.
+2069643244 = Reduzir
+0391863698 = Reduz a quantidade em um. O mínimo é um.
 1083993486 = É preciso usar este botão para remover a última cópia de uma carta.
 # 3799012839 eg. Illegal deck size for Vintage.
 3799012839 = Tamanho ilegal de deck para %s.
@@ -221,10 +225,6 @@
 3500834800 = Cartas:
 3099979285 = Implementadas:
 2234445177 = Não implementadas:
-2785143830 = Tipo do adversário: %s
-3447345408 = Nível: %d / 8
-0588518027 = Vida extra: %d
-1960950242 = Jogou pela última vez: %s
 # 578187269 eg. 'Prebuilt deck' or 'Random deck'
 0578187269 = Deck %s
 0964616095 = Três cores aleatórias
@@ -336,9 +336,7 @@
 1043774029 = Decks filtrados (%d)
 1845588347 = %d cartas
 0975172991 = !!! ERRO - Veja o console para detalhes !!!
-3750143259 = Imagens de cartas implementadas em falta =
-1882836958 = Baixar novas imagens
-0865663204 = Imagens de cartas não implementadas em falta =
+1882836958 = Baixar imagens remanescentes
 3768365299 = Ativo
 0690059878 = Inativo
 1147269330 = Sediar duelos do Firemind
@@ -386,10 +384,8 @@
 # 2582113049 eg. All cards (60 cards)
 2582113049 = %s (%d cartas)
 4020148489 = Deck
-0890925982 = Para funcionar, isto requer a reinicialização do Magarena. Reiniciar agora?
 2951059284 = Informação
 2415109466 = Aviso
-1401598070 = Reiniciar?
 0027421230 = Ajustar o popup de acordo com o tamanho da tela
 1434091730 = Quando ativado, o popup das cartas é ajustado de acordo com o tamanho da tela. Caso contrário, ele é ajustado de acordo com o tamanho máximo das cartas. O tamanho do popup não excederá, entre o tamanho da tela ou o máximo das cartas, aquele que for o menor. O tamanho máximo das cartas é (L=%d, A=%d).
 0026480598 = Geral
@@ -499,10 +495,7 @@
 2830496658 = Ajuda
 3083392996 = Sair para o desktop
 1898508145 = Menu de Configurações
-2598554411 = Importar
-4209253986 = Importar dados de uma instalação pré-existente do Magarena.
 3937389802 = Baixar imagens das cartas
 3365541470 = Sediar duelos do Firemind
 2823720574 = Tela inteira
-2150973105 = Atalho: F11
 1034062502 = Fechar menu
