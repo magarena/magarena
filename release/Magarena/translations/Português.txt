@@ -13,8 +13,8 @@
 0922408799 = Magarena não encontrado!
 0550609901 = Este diretório não contém uma versão válida do Magarena.
 1086464600 = Importar Configurações?
-4023198582 = Importar configurações de uma versão anterior so Magarena.
-2258392056 = Abre a respectiva página wiki no seu navegador.
+4023198582 = Importar configurações de uma versão anterior do Magarena.
+2258392056 = Abre a página wiki de ajuda no seu navegador.
 2224295428 = Importando...
 4067345257 = Resetar e Reiniciar
 2586492251 = Resetar para as configurações padrão e executar o auxiliar de inicialização?
