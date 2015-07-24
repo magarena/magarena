@@ -8,7 +8,7 @@ def choice = new MagicTargetChoice("an enchantment card from your library");
                 permanent,
                 new MagicMayChoice(),
                 this,
-                "PN may\$ exile SN. If PN does, PN search his or her library for an enchantment card, "+
+                "PN may\$ exile SN. If PN does, PN searches his or her library for an enchantment card, "+
                 "puts that card onto the battlefield, then shuffles his or her library."
             );
         }
