@@ -77,9 +77,35 @@ ShawnieBoy
 
 - translated UI (details to be added)
 
+- add Magic Origins
+
 - fixed the following bugs:
 
 - added the following cards:
+Akroan Jailer, Akroan Sergeant, Alchemist's Vial, Ampryn Tactician,
+Anafenza, the Foremost, Anointer of Champions, Aspiring Aeronaut,
+Avaricious Dragon, Aven Battle Priest, Blazing Hellhound,
+Blessed Spirits, Blood-Cursed Knight, Bounding Krasis,
+Caustic Caterpillar, Chief of the Foundry, Citadel Castellan,
+Clash of Wills, Conclave Naturalists, Consul's Lieutenant,
+Deadbridge Shaman, Dwynen's Elite, Elemental Bond, Enlightened Ascetic,
+Eyeblight Assassin, Eyeblight Massacre, Faerie Miscreant, Fetid Imp,
+Firefiend Elemental, Foundry of the Consuls, Ghirapur Æther Grid,
+Ghirapur Gearcrafter, Guardian Automaton, Hangarback Walker,
+Healing Hands, Heavy Infantry, Helm of the Gods, Hitchclaw Recluse,
+Honored Hierarch, Hydrolash, Iname as One, Iroas's Champion,
+Jhessian Thief, Knight of the Pilgrim's Road, Kytheon's Irregulars,
+Languish, Lightning Javelin, Mage-Ring Bully, Magmatic Insight,
+Malakir Cullblade, Managorger Hydra, Mantle of Webs, Molten Vortex,
+Nivix Barrier, Patron of the Valiant, Pharika's Disciple,
+Pia and Kiran Nalaar, Prickleboar, Priest of the Blood Rite,
+Rabid Bloodsucker, Ramroller, Reave Soul, Relic Seeker, Rhox Maulers,
+Ringwarden Owl, Seismic Elemental, Separatist Voidmage, Shambling Ghoul,
+Skyraker Giant, Skysnare Spider, Somberwald Alpha, Soulblade Djinn,
+Stalwart Aven, Subterranean Scout, Sword of the Animist, Thopter Engineer,
+Thunderclap Wyvern, Topan Freeblade, Undercity Troll, Valor in Akros,
+Veteran's Sidearm, Volcanic Rambler, War Horn, War Oracle, Whirler Rogue,
+Zendikar Incarnate, Zendikar's Roil
 
 Release 1.63 (June 30, 2015)
 ============
