@@ -1,3 +1,12 @@
+2270227889 = Mão
+1849532704 = Grimório
+0454249737 = Cemitério
+1261234564 = Exílio
+3689109508 = Usar uma carta ou habilidade.
+# 3864448769 eg. {f} will be replaced by an icon.
+3864448769 = Clique {f} ou Espaço para passar.
+# 2670693515 eg. | represents a new line. Position to fit text in user prompt.
+2670693515 = Clique {f} com o direito ou Shift+Espaço | para passar até o fim do turno.
 # 1529602839 eg. this is the AI level.
 1529602839 = Nível
 0026555175 = Imagens de cartas implementadas em falta
@@ -22,7 +31,7 @@
 2224295428 = Importando...
 4067345257 = Resetar e Reiniciar
 2586492251 = Resetar para as configurações padrão e executar o auxiliar de inicialização?
-# 281107096 eg. Memnite <b>is illegal/banned/restricted</b> in Standard.
+# 0281107096 eg. Memnite <b>is illegal/banned/restricted</b> in Standard.
 0281107096 = %s <b>%s</b> em %s.
 3854633552 = Cópias em excesso de uma carta no deck.
 3675803412 = Não se aplica a terrenos básicos,
@@ -39,7 +48,7 @@
 3508543659 = é banida
 1998365398 = é restrita
 3534594353 = tem cópias em excesso
-# 279083863 eg. AI: minimax
+# 0279083863 eg. AI: minimax
 0279083863 = adversário : %s
 1547688846 = Nível: %d  Vida Extra: %d
 # 2291111045 eg. Mini Max, level 6 AI (MMAB)
@@ -61,7 +70,7 @@
 3730400060 = Expansão
 2429296262 = Cubo
 3642128361 = Formato
-# 753727511 eg. Type filter in cards explorer
+# 0753727511 eg. Type filter in cards explorer
 0753727511 = Tipo
 3009207953 = Buscar
 3428553851 = Procura por nome, tipo, subtipo e texto do Oráculo.
@@ -101,7 +110,7 @@
 # 3176561557 eg. Player1 conceded/lost the game.
 3176561557 = %s %s o jogo.
 3119321525 = Você pode pagar o buyback %s.
-# 71929689 eg. get single kicker count choice
+# 0071929689 eg. get single kicker count choice
 0071929689 = Você pode pagar o %s %s.
 0363507403 = Você pode pedir mulligan.
 3419764797 = Erro Fatal
@@ -205,7 +214,7 @@
 3324936721 = Segunda Fase Principal
 1015450405 = Fase final : Etapa final
 1754937449 = Fase final : Etapa de limpeza
-# 412686884 eg. as in 'Other' player zone
+# 0412686884 eg. as in 'Other' player zone
 0412686884 = Outra
 4210774852 = Outra : %s
 3934956419 = %s Mão
@@ -225,7 +234,7 @@
 3500834800 = Cartas:
 3099979285 = Implementadas:
 2234445177 = Não implementadas:
-# 578187269 eg. 'Prebuilt deck' or 'Random deck'
+# 0578187269 eg. 'Prebuilt deck' or 'Random deck'
 0578187269 = Deck %s
 0964616095 = Três cores aleatórias
 0403566421 = Duas cores aleatórias
@@ -233,7 +242,7 @@
 2223806083 = Pré-construído
 # 3110715001 eg. player mini-stats heading representing games and duels [P]layed
 3110715001 = T
-# 655174618 eg. player mini-stats heading representing games and duels [W]on
+# 0655174618 eg. player mini-stats heading representing games and duels [W]on
 0655174618 = V
 # 2909332022 eg. player mini-stats heading representing games and duels [L]ost
 2909332022 = D
@@ -379,7 +388,7 @@
 1496316516 = Exibe apenas os terrenos.
 3161213775 = Outras Mágicas
 1273724313 = Exibe todas as outras cartas.
-# 256104689 eg. Creatures (28 cards, 46%)
+# 0256104689 eg. Creatures (28 cards, 46%)
 0256104689 = %s (%d cartas, %d%%)
 # 2582113049 eg. All cards (60 cards)
 2582113049 = %s (%d cartas)
