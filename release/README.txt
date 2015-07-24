@@ -62,6 +62,9 @@ Thanks to
   http://game-icons.net for UI icons
   http://soundbible.com for sound effects.
   everyone on the CCGHQ forum, http://slightlymagic.net/forum/
+  
+UI translations
+  Portuguese (PalladiaMors).
 
 Thank you for your support and have fun!
 
@@ -75,7 +78,9 @@ melvinzhang
 PalladiaMors
 ShawnieBoy
 
-- translated UI (details to be added)
+- translated UI. You can now select your preferred language for the UI at startup
+  or via a new setting in the preferences dialog. If you would like to submit a
+  translation please visit the wiki (https://github.com/magarena/magarena/wiki/Translating-Magarena).
 
 - add Magic Origins
 
