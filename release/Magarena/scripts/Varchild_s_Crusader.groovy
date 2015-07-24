@@ -2,13 +2,14 @@ def Unblockable = MagicAbility.getAbilityList("SN can't be blocked except by Wal
 
 [
     new MagicPermanentActivation(
-        new MagicActivationHints(MagicTiming.Pump, 1),
+        new MagicActivationHints(MagicTiming.Pump),
         "Unblockable"
     ) {
         @Override
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
-                new MagicPayManaCostEvent(source,"{0}")
+                new MagicPayManaCostEvent(source,"{0}"),
+                new MagicPlayAbilityEvent(source)
             ];
         }
         @Override
