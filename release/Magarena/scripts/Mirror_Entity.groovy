@@ -1,6 +1,6 @@
 [
     new MagicPermanentActivation(
-        new MagicActivationHints(MagicTiming.Pump,true,1),
+        new MagicActivationHints(MagicTiming.Pump, true),
         "X/X"
     ) {
         @Override

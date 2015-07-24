@@ -1,6 +1,6 @@
 [
     new MagicPermanentActivation(
-        new MagicActivationHints(MagicTiming.Removal,1),
+        new MagicActivationHints(MagicTiming.Removal),
         "Exile"
     ) {
         @Override

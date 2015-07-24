@@ -6,7 +6,6 @@ import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.action.AttachAction;
 import magic.model.action.MagicPermanentAction;
-import magic.model.action.PlayAbilityAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
 import magic.model.target.MagicEquipTargetPicker;
@@ -32,7 +31,7 @@ public class MagicEquipActivation extends MagicPermanentActivation {
                 MagicCondition.SORCERY_CONDITION,
                 MagicCondition.NOT_CREATURE_CONDITION,
             },
-            new MagicActivationHints(MagicTiming.Equipment,2),
+            new MagicActivationHints(MagicTiming.Equipment),
             description
         );
         costs = aCosts;
@@ -44,6 +43,7 @@ public class MagicEquipActivation extends MagicPermanentActivation {
         for (final MagicMatchedCostEvent matched : costs) {
             costEvents.add(matched.getEvent(source));
         }
+        costEvents.add(new MagicPlayAbilityEvent(source, MagicCondition.ABILITY_TWICE_CONDITION));
         return costEvents;
     }
 
@@ -70,7 +70,6 @@ public class MagicEquipActivation extends MagicPermanentActivation {
     public void executeEvent(final MagicGame game, final MagicEvent event) {
         event.processTargetPermanent(game,new MagicPermanentAction() {
             public void doAction(final MagicPermanent creature) {
-                game.doAction(new PlayAbilityAction(event.getPermanent()));
                 game.doAction(new AttachAction(event.getPermanent(),creature));
             }
         });

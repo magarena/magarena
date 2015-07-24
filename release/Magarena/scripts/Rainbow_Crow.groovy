@@ -1,12 +1,13 @@
 [
     new MagicPermanentActivation(
-        new MagicActivationHints(MagicTiming.Pump,1),
+        new MagicActivationHints(MagicTiming.Pump),
         "Color"
     ) {
         @Override
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
                 new MagicPayManaCostEvent(source,"{1}"),
+                new MagicPlayAbilityEvent(source)
             ];
         }
         @Override

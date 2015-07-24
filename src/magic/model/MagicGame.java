@@ -112,7 +112,6 @@ public class MagicGame {
     private boolean fastBlocker = false;
     private boolean hintTiming = true;
     private boolean hintPriority = true;
-    private boolean hintMaximum = true;
     private boolean hintTarget = true;
 
     public static MagicGame getInstance() {
@@ -212,7 +211,6 @@ public class MagicGame {
         //immediate
         //hintTiming
         //hintPriority
-        //hintMaximum
         //hintTarget
         //skipTurnTill
         //mainPhaseCount
@@ -409,14 +407,6 @@ public class MagicGame {
 
     public void setHintPriority(final boolean v) {
         hintPriority = v;
-    }
-    
-    public boolean getHintMaximum() {
-        return hintMaximum;
-    }
-
-    public void setHintMaximum(final boolean v) {
-        hintMaximum = v;
     }
     
     public boolean getHintTarget() {

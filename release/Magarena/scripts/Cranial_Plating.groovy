@@ -3,7 +3,7 @@ def equip = new MagicEquipActivation(MagicRegularCostEvent.build("{B}{B}"));
 [
     new MagicPermanentActivation(
         [MagicCondition.NOT_CREATURE_CONDITION],
-        new MagicActivationHints(MagicTiming.Equipment,2),
+        new MagicActivationHints(MagicTiming.Equipment),
         "Attach"
     ) {
         @Override
