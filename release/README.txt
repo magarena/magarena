@@ -64,7 +64,7 @@ Thanks to
   everyone on the CCGHQ forum, http://slightlymagic.net/forum/
   
 UI translations
-  Portuguese (PalladiaMors).
+  Portuguese by PalladiaMors.
 
 Thank you for your support and have fun!
 
