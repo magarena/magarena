@@ -162,7 +162,7 @@
 1216797019 = Nome do Deck:
 3730803834 = Descrição:
 2985284210 = Nome da Carta:
-1805600267 = Baixar imagens das cartas
+1805600267 = Baixar imagens
 3128744137 = Executar em segundo plano...
 1131213745 = Copiar para a área de armazenamento
 0489719719 = Detalhes sobre o erro foram copiados para a área de armazenamento.
