@@ -2,7 +2,7 @@ def choice = new MagicTargetChoice("a Spirit permanent card from your library");
 
 def SPIRIT_PERMANENT_FROM_GRAVEYARD = new MagicCardFilterImpl() {
     public boolean accept(final MagicSource source,final MagicPlayer player,final MagicCard target) {
-        return target.hasSubType(MagicSubType.Spirit) && target.isPermanent();
+        return target.hasSubType(MagicSubType.Spirit) && target.getCardDefinition().isPermanent();
     }
     public boolean acceptType(final MagicTargetType targetType) {
         return targetType == MagicTargetType.Graveyard;
@@ -12,7 +12,7 @@ def SPIRIT_PERMANENT_FROM_GRAVEYARD = new MagicCardFilterImpl() {
 def TARGET_SPIRIT_PERMANENT_FROM_GRAVEYARD = new MagicTargetChoice(
     SPIRIT_PERMANENT_FROM_GRAVEYARD,  
     MagicTargetHint.None,
-    "target spirit permanent card from your graveyard"
+    "target Spirit permanent card from your graveyard"
 );
 
 [
@@ -22,10 +22,10 @@ def TARGET_SPIRIT_PERMANENT_FROM_GRAVEYARD = new MagicTargetChoice(
             return permanent.hasState(MagicPermanentState.CastFromHand) ? 
                 new MagicEvent(
                     permanent,
-                    new MagicMayChoice("Search library?"),
+                    new MagicMayChoice(),
                     this,
-                    "PN may\$ search your library for a Spirit permanent card, " +
-                    "put it onto the battlefield, then shuffle your library."
+                    "PN may\$ search his or her library for a Spirit permanent card, " +
+                    "put it onto the battlefield, then shuffle his or her library."
                 ):
                 MagicEvent.NONE;
         }
@@ -55,7 +55,7 @@ def TARGET_SPIRIT_PERMANENT_FROM_GRAVEYARD = new MagicTargetChoice(
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()){
                 event.processTargetCard(game, {
-                final MagicCard card = event.getPermanent().getCard();
+                    final MagicCard card = event.getPermanent().getCard();
                     if (card.isInGraveyard()) {
                         game.doAction(new RemoveCardAction(card,MagicLocationType.Graveyard));
                         game.doAction(new MoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.Exile));
