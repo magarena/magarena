@@ -75,9 +75,11 @@ melvin
 PalladiaMors
 ShawnieBoy
 
-- multi language UI. You can now select your preferred language for the UI at
-  startup or via a new setting in the preferences dialog. If you would like to
-  submit a translation please see https://github.com/magarena/magarena/wiki/Translating-Magarena
+- refactor and update the UI to allow UI text to be translated to other languages
+  
+- add Portuguese UI translation, it can be selected at startup or via the preferences dialog
+
+- to help translate the UI, please read https://github.com/magarena/magarena/wiki/Translating-Magarena
 
 - include the "Magic Origins" set in formats
 
