@@ -1,6 +1,7 @@
 package magic.model.trigger;
 
 import magic.model.MagicGame;
+import magic.model.MagicCard;
 import magic.model.MagicLocationType;
 import magic.model.MagicManaCost;
 import magic.model.MagicPayedCost;
@@ -8,9 +9,11 @@ import magic.model.MagicPermanent;
 import magic.model.action.MoveCardAction;
 import magic.model.action.PutItemOnStackAction;
 import magic.model.action.RemoveCardAction;
+import magic.model.action.EnqueueTriggerAction;
 import magic.model.choice.MagicMayChoice;
 import magic.model.choice.MagicPayManaCostChoice;
 import magic.model.event.MagicEvent;
+import magic.model.event.MagicEventAction;
 import magic.model.stack.MagicCardOnStack;
 
 public class MagicMadnessTrigger extends MagicWhenPutIntoGraveyardTrigger {
@@ -29,28 +32,56 @@ public class MagicMadnessTrigger extends MagicWhenPutIntoGraveyardTrigger {
     
     @Override
     public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MoveCardAction act) {
-        game.executeTrigger(MagicTriggerType.WhenOtherPutIntoGraveyard, act); //Activate discard triggers
-        act.setToLocation(MagicLocationType.Exile); //Change discard location
+        //Activate discard triggers
+        game.executeTrigger(MagicTriggerType.WhenOtherPutIntoGraveyard, act);
+        
+        //Change discard location so that MoveCardAction does nothing
+        act.setToLocation(MagicLocationType.Play);
+        
         return new MagicEvent(
             act.card,
             new MagicMayChoice(
-                "Cast for its madness cost?",
-                new MagicPayManaCostChoice(cost)
+                "Exile " + act.card + " instead of putting into your graveyard? (Madness)"
             ),
             this,
-            "PN may$ cast SN for its madness cost instead of putting it into his or her graveyard."
+            "PN may$ exile SN instead of putting it into his or her graveyard."
         );
     }
-    
+
     @Override
     public void executeEvent(final MagicGame game, final MagicEvent event) {
-        game.doAction(new RemoveCardAction(event.getCard(),MagicLocationType.Exile));
+        final MagicCard card = event.getCard();
         if (event.isYes()) {
-            final MagicCardOnStack cardOnStack=new MagicCardOnStack(event.getCard(),event.getPlayer(),MagicPayedCost.NO_COST);
-            cardOnStack.setFromLocation(MagicLocationType.Exile);
-            game.doAction(new PutItemOnStackAction(cardOnStack));
+            game.doAction(new MoveCardAction(card,MagicLocationType.OwnersHand,MagicLocationType.Exile));
+            game.doAction(new EnqueueTriggerAction(new MagicEvent(
+                card,
+                new MagicMayChoice(
+                    "Cast " + card + " by paying " + cost + "? (Madness)",
+                    new MagicPayManaCostChoice(cost)
+                ),
+                EVENT_ACTION,
+                "PN may$ cast SN for its madness cost. If PN doesn't, put SN into into his or her graveyard."
+            )));
         } else {
-            game.doAction(new MoveCardAction(event.getCard(),MagicLocationType.Exile,MagicLocationType.Graveyard));
+            // cannot be from OwnersHand as it will trigger itself again, so we use from Play instead
+            game.doAction(new MoveCardAction(card,MagicLocationType.Play,MagicLocationType.Graveyard));
         }
     }
+    
+    private MagicEventAction EVENT_ACTION = new MagicEventAction() {
+        @Override
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
+            final MagicCard card = event.getCard();
+            if (card.isInExile()) {
+                game.doAction(new RemoveCardAction(card, MagicLocationType.Exile));
+                if (event.isYes()) {
+                    final MagicCardOnStack cardOnStack=new MagicCardOnStack(card,event.getPlayer(),MagicPayedCost.NO_COST);
+                    cardOnStack.setFromLocation(MagicLocationType.Exile);
+                    game.doAction(new PutItemOnStackAction(cardOnStack));
+                } else {
+                    game.doAction(new MoveCardAction(event.getCard(),MagicLocationType.Exile,MagicLocationType.Graveyard));
+                }
+            }
+        }
+    };
 }
