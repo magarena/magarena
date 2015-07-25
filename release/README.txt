@@ -57,17 +57,14 @@ Thanks to
   benedict balbuena, spartan vi, Braullynn, mecheng, pcastellazzi, rasdel,
   Tyrael, hong yie, ember hauler, Hector Marin, drooone, jericho.pumpkin,
   Mike, Guest, and ShawnieBoy for implementing new cards
+  PalladiaMors for the Portuguese UI translation
   http://mtgjson.com for card script data
   http://mtgimage.com for card images
   http://game-icons.net for UI icons
   http://soundbible.com for sound effects.
   everyone on the CCGHQ forum, http://slightlymagic.net/forum/
-  
-UI translations
-  Portuguese by PalladiaMors.
 
 Thank you for your support and have fun!
-
 
 
 
@@ -82,21 +79,23 @@ ShawnieBoy
   startup or via a new setting in the preferences dialog. If you would like to
   submit a translation please see https://github.com/magarena/magarena/wiki/Translating-Magarena
 
-- include "Magic Origins" in formats
+- include the "Magic Origins" set in formats
 
 - improve AI timing hints for sorcery speed pump spells
     
 - added the following to the card script:
-    add Renown ability
-    there are two or more instant and/or sorcery cards in your graveyard
+  * condition: there are two or more instant and/or sorcery cards in your graveyard
+  * ability: renown <n>
+  * ability: When SN becomes renowned, <effect>
 
 - fixed the following bugs:
-    fixes AI specific play limit by using event action of wrapped condition
-    fixes #403 : Crash when opening deckbuilder.
-    limit AI's maximum activation to prevent infinite loop
-    separate Madness into two triggers as per game rules, fixes issue #385
-    fixed: Diffusion Sliver did not check that spell/ability is controlled by opponent
-    ensure Platinum Angel replacement effect occurs before any other MagicIfPlayerWouldLoseTrigger by lowering its priority, fixes #404
+  * mechanism to prevent AI infinite play loop not working
+  * limit AI's maximum activation of specific abilities to prevent infinite play loop
+  * incorrect implementation of Madness could leads to a situation where
+    player is unable to complete payment of mana cost (issue #385)
+  * crash when opening deck builder with invalid deck (issue #403)
+  * Platinum Angel did not prevent "if you would lose" replacement effect from occuring (issue #404)
+  * Diffusion Sliver did not check that spell/ability is controlled by an opponent
 
 - added the following cards:
 Akroan Jailer, Akroan Sergeant, Alchemist's Vial, Ampryn Tactician,
