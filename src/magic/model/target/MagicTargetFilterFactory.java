@@ -1398,6 +1398,8 @@ public class MagicTargetFilterFactory {
         }
     };
 
+    public static final MagicPermanentFilterImpl ATTACKING_ELF_YOU_CONTROL=MagicTargetFilterFactory.creatureAnd(MagicPermanentState.Attacking, MagicSubType.Elf, Control.You);
+
     public static final MagicPermanentFilterImpl ATTACKING_GOBLIN=MagicTargetFilterFactory.creatureAnd(MagicPermanentState.Attacking, MagicSubType.Goblin, Control.Any);
 
     public static final MagicPermanentFilterImpl ATTACKING_HUMAN=MagicTargetFilterFactory.creatureAnd(MagicPermanentState.Attacking, MagicSubType.Human, Control.Any);
@@ -2415,6 +2417,7 @@ public class MagicTargetFilterFactory {
         single.put("artifact or creature", ARTIFACT_OR_CREATURE);
         single.put("unpaired Soulbond creature", UNPAIRED_SOULBOND_CREATURE);
         single.put("monocolored creature", MONOCOLORED_CREATURE);
+        single.put("attacking Elf you control", ATTACKING_ELF_YOU_CONTROL);
         single.put("attacking Aurochs", ATTACKING_AUROCHS);
         single.put("attacking Goblin", ATTACKING_GOBLIN);
         single.put("attacking Kavu", ATTACKING_KAVU);
