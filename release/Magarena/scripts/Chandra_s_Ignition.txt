@@ -4,6 +4,6 @@ value=2.500
 rarity=R
 type=Sorcery
 cost={3}{R}{R}
-effect=Target creature you control deals damage equal to its power to each other creature and each opponent.
-timing=main
+timing=removal
+requires_groovy_code
 oracle=Target creature you control deals damage equal to its power to each other creature and each opponent.
