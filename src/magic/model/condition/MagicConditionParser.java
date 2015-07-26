@@ -77,6 +77,12 @@ public enum MagicConditionParser {
             return MagicCondition.THRESHOLD_CONDITION;
         }
     },
+    YourGraveyardAtLeast("there are "+ ARG.AMOUNT + " or more cards in your graveyard") {
+        public MagicCondition toCondition(final Matcher arg) {
+            final int amount = ARG.amount(arg);
+            return MagicConditionFactory.GraveyardAtLeast(amount);
+        }
+    },
     SpellMastery("there are two or more instant and/or sorcery cards in your graveyard") {
       public MagicCondition toCondition(final Matcher arg) { return MagicCondition.SPELL_MASTERY_CONDITION; }
     },
