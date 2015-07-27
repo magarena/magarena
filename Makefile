@@ -193,6 +193,9 @@ buildhive:
 	touch cards/standard_all.txt cards/modern_all.txt
 	make zips
 
+test-self-play:
+	for i in `seq 1 10`; do tsp make games=100 ai1=MMABC ai2=MCTS flags=-ea `date +%N`.t; done
+
 games ?= 10000
 str1 ?= 1
 str2 ?= 1
