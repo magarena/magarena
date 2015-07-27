@@ -3,15 +3,6 @@ def A_PAYABLE_INSTANT_OR_SORCERY_CARD_FROM_YOUR_GRAVEYARD = new MagicTargetChoic
     "a instant or sorcery card from your graveyard"
 );
 
-def EVENT_ACTION = {
-    final MagicGame game, final MagicEvent event ->
-    game.doAction(new RemoveCardAction(event.getCard(),MagicLocationType.Graveyard));
-    final MagicCardOnStack cardOnStack=new MagicCardOnStack(event.getCard(),event.getPlayer(),game.getPayedCost());
-    cardOnStack.setFromLocation(MagicLocationType.Graveyard);
-    cardOnStack.setMoveLocation(MagicLocationType.Exile);
-    game.doAction(new PutItemOnStackAction(cardOnStack));
-};
-
 [
     new MagicWhenComesIntoPlayTrigger() {
         @Override
@@ -31,11 +22,22 @@ def EVENT_ACTION = {
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
                 event.processTargetCard(game, {
-                    game.addEvent(new MagicPayManaCostEvent(it,it.getCost()));
-                    game.addEvent(new MagicEvent(
-                        it,
-                        EVENT_ACTION,
-                        "Cast SN."
+                    final MagicPlayer player = event.getPlayer();
+                    for (final MagicEvent cevent : it.getAdditionalCostEvent()) {
+                        if (cevent.isSatisfied() == false) {
+                            game.logAppendMessage(player, "Casting failed as " + player + " is unable to pay additional casting costs.");
+                            return;
+                        }
+                    }
+                    for (final MagicEvent cevent : it.getCostEvent()) {
+                        game.addEvent(cevent);
+                    }
+                    game.doAction(new RemoveCardAction(it, MagicLocationType.Graveyard));
+                    game.addEvent(new MagicPutCardOnStackEvent(
+                        it, 
+                        player, 
+                        MagicLocationType.Graveyard, 
+                        MagicLocationType.Exile
                     ));
                 });
             }
