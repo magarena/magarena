@@ -8,11 +8,11 @@ import magic.model.stack.MagicCardOnStack;
 import magic.model.action.PutItemOnStackAction;
 
 public class MagicPutCardOnStackEvent extends MagicEvent {
-    public MagicPutCardOnStackEvent(final MagicCard source, final MagicPlayer player, final MagicLocationType fromLocation) {
+    public MagicPutCardOnStackEvent(final MagicCard source, final MagicPlayer player, final MagicLocationType fromLocation, final MagicLocationType toLocation) {
         super(
             source,
             player,
-            fromLocation.ordinal(),
+            fromLocation.ordinal() * 10 + toLocation.ordinal(),
             EVENT_ACTION,
             ""
         );
@@ -26,7 +26,11 @@ public class MagicPutCardOnStackEvent extends MagicEvent {
                 event.getPlayer(),
                 game.getPayedCost()
             );
-            cardOnStack.setFromLocation(MagicLocationType.values()[event.getRefInt()]);
+            final int locations = event.getRefInt();
+            final MagicLocationType from = MagicLocationType.values()[locations / 10];
+            final MagicLocationType to = MagicLocationType.values()[locations % 10];
+            cardOnStack.setFromLocation(from);
+            cardOnStack.setMoveLocation(to);
             game.doAction(new PutItemOnStackAction(cardOnStack));
         }
     };
