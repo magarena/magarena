@@ -45,6 +45,7 @@ public class MagicCardOnStack extends MagicItemOnStack implements MagicSource {
         cardEvent = aCardEvent;
         cardDef = obj.getCardDefinition();
         event = aCardEvent.getEvent(this, aPayedCost);
+        assert event != MagicEvent.NONE : "event is NONE for " + cardDef;
         modifications = aModifications;
     }
 
