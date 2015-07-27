@@ -37,13 +37,7 @@ public class CastFreeCopyAction extends MagicAction {
         for (final MagicEvent event : cdef.getAdditionalCostEvent(source)) {
             game.addEvent(event);
         }
-        final MagicCardOnStack cardOnStack = new MagicCardOnStack(
-            source,
-            player,
-            MagicPayedCost.NO_COST
-        );
-        cardOnStack.setFromLocation(MagicLocationType.Exile);
-        game.addEvent(new MagicPutCardOnStackEvent(cardOnStack));
+        game.addEvent(new MagicPutCardOnStackEvent(source, player, MagicLocationType.Exile));
     }
 
     @Override
