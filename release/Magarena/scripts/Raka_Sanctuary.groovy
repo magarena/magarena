@@ -21,7 +21,7 @@
                 final MagicPermanent permanent = event.getPermanent();
                 if (player.controlsPermanent(MagicColor.White) && player.controlsPermanent(MagicColor.Blue)) {
                     game.doAction(new DealDamageAction(permanent, it, 3));
-                } else if (player.controlsPermanent(MagicColor.Green) || player.controlsPermanent(MagicColor.White)) {
+                } else if (player.controlsPermanent(MagicColor.White) || player.controlsPermanent(MagicColor.Blue)) {
                     game.doAction(new DealDamageAction(permanent, it, 1));
                 }
             });
