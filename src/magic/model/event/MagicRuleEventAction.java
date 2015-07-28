@@ -1873,14 +1873,25 @@ public enum MagicRuleEventAction {
             };
         }
     },
-    SearchLibraryToHandAlt(
+    SearchLibraryToHandHidden(
         "search your library for (?<card>[^\\.]*)( and|,) put (it|that card) into your hand(.|,) (If you do, |(t|T)hen )shuffle your library\\.",
         MagicTiming.Draw,
         "Search"
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
-            return SearchLibraryToHand.getAction(matcher);
+            final MagicTargetChoice choice = new MagicTargetChoice(getHint(matcher), matcher.group("card")+" from your library");
+            return new MagicEventAction () {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    game.addEvent(new MagicSearchToLocationEvent(
+                        event,
+                        choice,
+                        MagicLocationType.OwnersHand,
+                        false
+                    ));
+                }
+            };
         }
     },
     SearchMultiLibraryToHand(

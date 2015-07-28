@@ -15,12 +15,22 @@ import magic.model.choice.MagicCardChoiceResult;
 import magic.model.target.MagicGraveyardTargetPicker;
 
 public class MagicSearchToLocationEvent extends MagicEvent {
-    
+
+    static boolean revealed = true;
+
     public MagicSearchToLocationEvent(final MagicEvent event, final MagicChoice choice, final MagicLocationType toLocation) {
-        this(event.getSource(), event.getPlayer(), choice, toLocation);
+        this(event.getSource(), event.getPlayer(), choice, toLocation, true);
+    }
+
+    public MagicSearchToLocationEvent(final MagicEvent event, final MagicChoice choice, final MagicLocationType toLocation, final boolean reveal) {
+        this(event.getSource(), event.getPlayer(), choice, toLocation, reveal);
     }
 
     public MagicSearchToLocationEvent(final MagicSource source, final MagicPlayer player, final MagicChoice choice, final MagicLocationType toLocation) {
+        this(source, player, choice, toLocation, true);
+    }
+
+    public MagicSearchToLocationEvent(final MagicSource source, final MagicPlayer player, final MagicChoice choice, final MagicLocationType toLocation, final boolean reveal) {
         super(
             source,
             player,
@@ -30,6 +40,7 @@ public class MagicSearchToLocationEvent extends MagicEvent {
             EventAction,
             ""
         );
+        revealed = reveal;
     }
 
     private static final MagicEventAction EventAction = new MagicEventAction() {
@@ -44,8 +55,10 @@ public class MagicSearchToLocationEvent extends MagicEvent {
                 game.doAction(new ShuffleLibraryAction(event.getPlayer()));
                 event.processChosenCards(game, new MagicCardAction() {
                     public void doAction(final MagicCard card) {
-                        game.logAppendMessage(event.getPlayer(), "Found (" + card + ").");
-                        game.doAction(new AIRevealAction(card));
+                        if (revealed) {
+                            game.logAppendMessage(event.getPlayer(), "Found (" + card + ").");
+                            game.doAction(new AIRevealAction(card));
+                        }
                         game.doAction(new RemoveCardAction(card,MagicLocationType.OwnersLibrary));
                         game.doAction(new MoveCardAction(card,MagicLocationType.OwnersLibrary, toLocation));
                     }
@@ -54,10 +67,12 @@ public class MagicSearchToLocationEvent extends MagicEvent {
                 game.doAction(new ShuffleLibraryAction(event.getPlayer()));
                 event.processTargetCard(game, new MagicCardAction() {
                     public void doAction(final MagicCard card) {
-                        game.logAppendMessage(event.getPlayer(), "Found (" + card + ").");
-                        game.doAction(new AIRevealAction(card));
-                        game.doAction(new RemoveCardAction(card,MagicLocationType.OwnersLibrary));
-                        game.doAction(new MoveCardAction(card,MagicLocationType.OwnersLibrary, toLocation));
+                        if (revealed) {
+                            game.logAppendMessage(event.getPlayer(), "Found (" + card + ").");
+                            game.doAction(new AIRevealAction(card));
+                        }
+                        game.doAction(new RemoveCardAction(card, MagicLocationType.OwnersLibrary));
+                        game.doAction(new MoveCardAction(card, MagicLocationType.OwnersLibrary, toLocation));
                     }
                 });
             }
