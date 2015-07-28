@@ -6,7 +6,9 @@ import magic.model.MagicDamage;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPermanentState;
-import magic.model.action.CastFreeCopyAction;
+import magic.model.MagicCard;
+import magic.model.MagicLocationType;
+import magic.model.action.CastCardAction;
 import magic.model.action.ChangeCountersAction;
 import magic.model.action.ChangePoisonAction;
 import magic.model.action.ChangeStateAction;
@@ -157,7 +159,12 @@ public abstract class MagicWhenDamageIsDealtTrigger extends MagicTrigger<MagicDa
             @Override
             public void executeEvent(final MagicGame game, final MagicEvent event) {
                 if (event.isYes()) {
-                    game.doAction(new CastFreeCopyAction(event.getPlayer(), cardDef));
+                    game.doAction(CastCardAction.WithoutManaCost(
+                        event.getPlayer(),
+                        MagicCard.createTokenCard(cardDef, event.getPlayer()),
+                        MagicLocationType.Exile,
+                        MagicLocationType.Graveyard
+                    ));
                 }
             }
         };
