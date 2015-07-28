@@ -26,9 +26,11 @@
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new CastFreeCopyAction(
-                event.getPlayer(), 
-                event.getRefCard()
+            game.doAction(CastCardAction.WithoutManaCost(
+                event.getPlayer(),
+                MagicCard.createTokenCard(event.getRefCard(), event.getPlayer()),
+                MagicLocationType.Exile,
+                MagicLocationType.Graveyard
             ));
         }
     }

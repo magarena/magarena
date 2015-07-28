@@ -29,21 +29,10 @@ def A_NONLAND_CARD_FROM_HAND = new MagicTargetChoice(
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
                 event.processTargetCard(game, {
-                    final MagicPlayer player = event.getPlayer();
-                    for (final MagicEvent cevent : it.getAdditionalCostEvent()) {
-                        if (cevent.isSatisfied() == false) {
-                            game.logAppendMessage(player, "Casting failed as " + player + " is unable to pay additional casting costs.");
-                            return;
-                        }
-                    }
-                    for (final MagicEvent cevent : it.getAdditionalCostEvent()) {
-                        game.addEvent(cevent);
-                    }
-                    game.doAction(new RemoveCardAction(it, MagicLocationType.OwnersHand));
-                    game.addEvent(new MagicPutCardOnStackEvent(
-                        it, 
-                        player, 
-                        MagicLocationType.OwnersHand, 
+                    game.doAction(CastCardAction.WithoutManaCost(
+                        event.getPlayer(),
+                        it,
+                        MagicLocationType.OwnersHand,
                         MagicLocationType.Graveyard
                     ));
                 });

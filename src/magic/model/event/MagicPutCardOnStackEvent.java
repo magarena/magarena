@@ -6,6 +6,7 @@ import magic.model.MagicPlayer;
 import magic.model.MagicLocationType;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.action.PutItemOnStackAction;
+import magic.model.action.RemoveCardAction;
 
 public class MagicPutCardOnStackEvent extends MagicEvent {
     public MagicPutCardOnStackEvent(final MagicCard source, final MagicPlayer player, final MagicLocationType fromLocation, final MagicLocationType toLocation) {
@@ -31,6 +32,10 @@ public class MagicPutCardOnStackEvent extends MagicEvent {
             final MagicLocationType to = MagicLocationType.values()[locations % 10];
             cardOnStack.setFromLocation(from);
             cardOnStack.setMoveLocation(to);
+            final MagicCard card = event.getCard();
+            if (card.isToken() == false) {
+                game.doAction(new RemoveCardAction(card, from));
+            }
             game.doAction(new PutItemOnStackAction(cardOnStack));
         }
     };

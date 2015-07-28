@@ -27,9 +27,11 @@ def INSTANT_FROM_HAND = new MagicCardFilterImpl() {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
-                game.doAction(new CastFreeCopyAction(
-                    event.getPlayer(), 
-                    event.getRefCard()
+                game.doAction(CastCardAction.WithoutManaCost(
+                    event.getPlayer(),
+                    MagicCard.createTokenCard(event.getRefCard(), event.getPlayer()),
+                    MagicLocationType.Exile,
+                    MagicLocationType.Graveyard
                 ));
             }
         }
