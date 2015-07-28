@@ -10,7 +10,6 @@ import magic.model.MagicPermanent;
 import magic.model.MagicSource;
 import magic.model.action.ChangeCountersAction;
 import magic.model.action.MoveCardAction;
-import magic.model.action.PutItemOnStackAction;
 import magic.model.action.RemoveCardAction;
 import magic.model.stack.MagicAbilityOnStack;
 import magic.model.trigger.MagicTrigger;

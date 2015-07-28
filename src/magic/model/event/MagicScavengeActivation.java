@@ -11,7 +11,6 @@ import magic.model.MagicPermanent;
 import magic.model.MagicSource;
 import magic.model.action.ChangeCountersAction;
 import magic.model.action.MagicPermanentAction;
-import magic.model.action.PutItemOnStackAction;
 import magic.model.choice.MagicChoice;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;

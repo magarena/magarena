@@ -8,7 +8,6 @@ import magic.model.MagicSource;
 import magic.model.MagicCardDefinition;
 import magic.model.action.MagicPlayMod;
 import magic.model.action.ReanimateAction;
-import magic.model.action.PutItemOnStackAction;
 import magic.model.choice.MagicChoice;
 import magic.model.condition.MagicCondition;
 import magic.model.stack.MagicAbilityOnStack;

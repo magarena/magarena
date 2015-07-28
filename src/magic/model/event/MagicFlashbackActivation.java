@@ -5,8 +5,7 @@ import magic.model.MagicCardDefinition;
 import magic.model.MagicGame;
 import magic.model.MagicLocationType;
 import magic.model.MagicSource;
-import magic.model.action.PutItemOnStackAction;
-import magic.model.action.RemoveCardAction;
+import magic.model.action.CastCardAction;
 import magic.model.stack.MagicCardOnStack;
 
 import java.util.LinkedList;
@@ -45,16 +44,11 @@ public class MagicFlashbackActivation extends MagicGraveyardCastActivation {
     
     @Override
     public void executeEvent(final MagicGame game, final MagicEvent event) {
-        final MagicCard card = event.getCard();
-        game.doAction(new RemoveCardAction(card, MagicLocationType.Graveyard)); 
-        
-        final MagicCardOnStack cardOnStack=new MagicCardOnStack(
-            card,
-            MagicFlashbackActivation.this,
-            game.getPayedCost()
-        );
-        cardOnStack.setFromLocation(MagicLocationType.Graveyard);
-        cardOnStack.setMoveLocation(MagicLocationType.Exile);
-        game.doAction(new PutItemOnStackAction(cardOnStack));
+        game.doAction(CastCardAction.WithoutManaCost(
+            event.getPlayer(),
+            event.getCard(),
+            MagicLocationType.Graveyard,
+            MagicLocationType.Exile
+        ));
     }
 }

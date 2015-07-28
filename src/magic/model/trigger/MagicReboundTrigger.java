@@ -11,7 +11,7 @@ import magic.model.choice.MagicMayChoice;
 import magic.model.event.MagicEvent;
 import magic.model.action.RemoveCardAction;
 import magic.model.action.RemoveTriggerAction;
-import magic.model.action.PutItemOnStackAction;
+import magic.model.action.CastCardAction;
 
 public class MagicReboundTrigger extends MagicAtUpkeepTrigger {
 
@@ -43,11 +43,12 @@ public class MagicReboundTrigger extends MagicAtUpkeepTrigger {
     @Override
     public void executeEvent(final MagicGame game, final MagicEvent event) {
         if (event.isYes() && event.getCard().isInExile()) {
-            final MagicCard card = event.getCard();
-            game.doAction(new RemoveCardAction(card,MagicLocationType.Exile));
-            final MagicCardOnStack cardOnStack=new MagicCardOnStack(card, event.getPlayer(), MagicPayedCost.NO_COST);
-            cardOnStack.setFromLocation(MagicLocationType.Exile);
-            game.doAction(new PutItemOnStackAction(cardOnStack));
+            game.doAction(CastCardAction.WithoutManaCost(
+                event.getPlayer(),
+                event.getCard(),
+                MagicLocationType.Exile,
+                MagicLocationType.Graveyard
+            ));
         }
     }
 }
