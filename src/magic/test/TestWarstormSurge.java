@@ -19,6 +19,7 @@ class TestWarstormSurge extends TestGameBuilder {
         P.setLife(20);
         addToLibrary(P, "Forest", 20);
         createPermanent(P, "Warstorm Surge");
+        createPermanent(P, "Stalking Vengeance");
         addToHand(P, "Seeker of Skybreak", 4);
         createPermanent(P,"Forest", 8);
 
