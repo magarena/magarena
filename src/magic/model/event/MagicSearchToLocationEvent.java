@@ -16,8 +16,6 @@ import magic.model.target.MagicGraveyardTargetPicker;
 
 public class MagicSearchToLocationEvent extends MagicEvent {
 
-    static boolean revealed = true;
-
     public MagicSearchToLocationEvent(final MagicEvent event, final MagicChoice choice, final MagicLocationType toLocation) {
         this(event.getSource(), event.getPlayer(), choice, toLocation, true);
     }
@@ -37,45 +35,49 @@ public class MagicSearchToLocationEvent extends MagicEvent {
             choice,
             MagicGraveyardTargetPicker.ReturnToHand,
             toLocation.ordinal(),
-            EventAction,
+            reveal ? ACTION_WITH_REVEAL : ACTION_WITHOUT_REVEAL,
             ""
         );
-        revealed = reveal;
     }
 
-    private static final MagicEventAction EventAction = new MagicEventAction() {
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicLocationType toLocation = MagicLocationType.values()[event.getRefInt()];
+    private static final MagicEventAction ACTION_WITH_REVEAL = genEventAction(true);
+    private static final MagicEventAction ACTION_WITHOUT_REVEAL = genEventAction(false);
 
-            // choice could be MagicMayChoice or MagicTargetChoice or MagicFromCardListChoice
-            if (event.isNo()) {
-                // do nothing
-            } else if (event.getChosen()[0] instanceof MagicCardChoiceResult) {
-                game.doAction(new ShuffleLibraryAction(event.getPlayer()));
-                event.processChosenCards(game, new MagicCardAction() {
-                    public void doAction(final MagicCard card) {
-                        if (revealed) {
-                            game.logAppendMessage(event.getPlayer(), "Found (" + card + ").");
-                            game.doAction(new AIRevealAction(card));
+    private static final MagicEventAction genEventAction(final boolean revealed) {
+        return new MagicEventAction() {
+            @Override
+            public void executeEvent(final MagicGame game, final MagicEvent event) {
+                final MagicLocationType toLocation = MagicLocationType.values()[event.getRefInt()];
+
+                // choice could be MagicMayChoice or MagicTargetChoice or MagicFromCardListChoice
+                if (event.isNo()) {
+                    // do nothing
+                } else if (event.getChosen()[0] instanceof MagicCardChoiceResult) {
+                    game.doAction(new ShuffleLibraryAction(event.getPlayer()));
+                    event.processChosenCards(game, new MagicCardAction() {
+                        public void doAction(final MagicCard card) {
+                            if (revealed) {
+                                game.logAppendMessage(event.getPlayer(), "Found (" + card + ").");
+                                game.doAction(new AIRevealAction(card));
+                            }
+                            game.doAction(new RemoveCardAction(card,MagicLocationType.OwnersLibrary));
+                            game.doAction(new MoveCardAction(card,MagicLocationType.OwnersLibrary, toLocation));
                         }
-                        game.doAction(new RemoveCardAction(card,MagicLocationType.OwnersLibrary));
-                        game.doAction(new MoveCardAction(card,MagicLocationType.OwnersLibrary, toLocation));
-                    }
-                });
-            } else {
-                game.doAction(new ShuffleLibraryAction(event.getPlayer()));
-                event.processTargetCard(game, new MagicCardAction() {
-                    public void doAction(final MagicCard card) {
-                        if (revealed) {
-                            game.logAppendMessage(event.getPlayer(), "Found (" + card + ").");
-                            game.doAction(new AIRevealAction(card));
+                    });
+                } else {
+                    game.doAction(new ShuffleLibraryAction(event.getPlayer()));
+                    event.processTargetCard(game, new MagicCardAction() {
+                        public void doAction(final MagicCard card) {
+                            if (revealed) {
+                                game.logAppendMessage(event.getPlayer(), "Found (" + card + ").");
+                                game.doAction(new AIRevealAction(card));
+                            }
+                            game.doAction(new RemoveCardAction(card, MagicLocationType.OwnersLibrary));
+                            game.doAction(new MoveCardAction(card, MagicLocationType.OwnersLibrary, toLocation));
                         }
-                        game.doAction(new RemoveCardAction(card, MagicLocationType.OwnersLibrary));
-                        game.doAction(new MoveCardAction(card, MagicLocationType.OwnersLibrary, toLocation));
-                    }
-                });
+                    });
+                }
             }
-        }
-    };
+        };
+    }
 }
