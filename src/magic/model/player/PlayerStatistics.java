@@ -11,21 +11,9 @@ import magic.model.MagicColor;
 import magic.model.MagicDeck;
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
-import magic.ui.UiString;
 import magic.utility.FileIO;
 
 public class PlayerStatistics {
-
-    // translatable strings
-    private static final String _S1 = "Last played:";
-    private static final String _S2 = "Duels completed:";
-    private static final String _S3 = "Duels won / lost:";
-    private static final String _S4 = "Games played:";
-    private static final String _S5 = "Games won / lost:";
-    private static final String _S6 = "Games conceded:";
-    private static final String _S7 = "Turns played:";
-    private static final String _S8 = "Average turns per game:";
-    private static final String _S9 = "Most used color:";
 
     // properties
     private static final String TIMESTAMP = "timestamp";
@@ -46,6 +34,7 @@ public class PlayerStatistics {
     private long millisecTimestamp;
     private final Path statsFilePath;
     private final boolean isHuman;
+
     public int gamesPlayed;
     public int gamesWon;
     public int gamesConceded;
@@ -57,6 +46,7 @@ public class PlayerStatistics {
     public int colorGreen;
     public int colorRed;
     public int colorWhite;
+    private MagicColor mostUsedColor = null;
 
     public PlayerStatistics(final PlayerProfile aPlayerProfile) {
         isHuman = aPlayerProfile.isHuman();
@@ -88,6 +78,14 @@ public class PlayerStatistics {
         return gamesPlayed - gamesWon;
     }
 
+    public Integer getTurnsPlayed() {
+        return turnsPlayed;
+    }
+
+    public MagicColor getMostUsedColor() {
+        return mostUsedColor;
+    }
+
     private void loadStats() {
         final File statsFile = new File(statsFilePath.toString());
         final Properties properties = statsFile.exists() ? FileIO.toProp(statsFile) : new Properties();
@@ -103,6 +101,7 @@ public class PlayerStatistics {
         colorRed = Integer.parseInt(properties.getProperty(COLOR_RED,"0"));
         colorWhite = Integer.parseInt(properties.getProperty(COLOR_WHITE,"0"));
         millisecTimestamp = Long.parseLong(properties.getProperty(TIMESTAMP, "0"));
+        setMostUsedColor();
     }
 
     public void save() {
@@ -127,6 +126,23 @@ public class PlayerStatistics {
         } catch (IOException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
+        }
+    }
+
+    private void setMostUsedColor() {
+        final int[] colorCount = new int[MagicColor.NR_COLORS];
+        colorCount[0] = colorWhite;
+        colorCount[1] = colorBlue;
+        colorCount[2] = colorBlack;
+        colorCount[3] = colorGreen;
+        colorCount[4] = colorRed;
+        int mostCount = Integer.MIN_VALUE;
+        for (final MagicColor color : MagicColor.values()) {
+            final int count = colorCount[color.ordinal()];
+            if (count > mostCount) {
+                mostCount = count;
+                mostUsedColor = color;
+            }
         }
     }
 
@@ -178,59 +194,29 @@ public class PlayerStatistics {
                 }
             }
         }
+        setMostUsedColor();
 
         save();
     }
+    
+    public int getDuelsWinPercentage() {
+        return getPercentage(duelsWon, duelsPlayed);
+    }
 
-    @Override
-    public String toString() {
+    public int getGamesWinPercentage() {
+        return getPercentage(gamesWon, gamesPlayed);
+    }
 
-        final int gamesLost = gamesPlayed - gamesWon;
-        final int gamesWinPercentage = getPercentage(gamesWon, gamesPlayed);
-        final int averageTurns = (gamesPlayed > 0) ? turnsPlayed / gamesPlayed : 0;
-        final int duelsLost = duelsPlayed - duelsWon;
-        final int duelsWinPercentage = getPercentage(duelsWon, duelsPlayed);
+    public boolean isHumanPlayer() {
+        return isHuman;
+    }
 
-        final int[] colorCount = new int[MagicColor.NR_COLORS];
-        colorCount[0] = colorWhite;
-        colorCount[1] = colorBlue;
-        colorCount[2] = colorBlack;
-        colorCount[3] = colorGreen;
-        colorCount[4] = colorRed;
-        int mostCount = Integer.MIN_VALUE;
-        MagicColor mostColor = null;
-        for (final MagicColor color : MagicColor.values()) {
-            final int count = colorCount[color.ordinal()];
-            if (count > mostCount) {
-                mostCount = count;
-                mostColor = color;
-            }
-        }
+    public int getGamesConceded() {
+        return  gamesConceded;
+    }
 
-        final boolean showStatValues = (gamesPlayed > 0);
-        final StringBuilder sb = new StringBuilder();
-        if (showStatValues) {
-            sb.append(String.format("%s\t%s", UiString.get(_S1), getTimestampString(millisecTimestamp)));
-            sb.append(String.format("\n%s\t%d", UiString.get(_S2), duelsPlayed));
-            sb.append(String.format("\n%s\t%d / %d (%d%%)", UiString.get(_S3), duelsWon, duelsLost, duelsWinPercentage));
-            sb.append(String.format("\n%s\t%d", UiString.get(_S4), gamesPlayed));
-            sb.append(String.format("\n%s\t%d / %d (%d%%)", UiString.get(_S5), gamesWon, gamesLost, gamesWinPercentage));
-            sb.append(String.format("\n%s\t%s", UiString.get(_S6), isHuman ? gamesConceded : NO_VALUE));
-            sb.append(String.format("\n%s\t%d", UiString.get(_S7), turnsPlayed));
-            sb.append(String.format("\n%s\t%d", UiString.get(_S8), averageTurns));
-            sb.append(String.format("\n%s\t%s", UiString.get(_S9), mostColor.getName()));
-        } else {
-            sb.append(String.format("%s\t%s", UiString.get(_S1), NO_VALUE));
-            sb.append(String.format("\n%s\t%s", UiString.get(_S2), NO_VALUE));
-            sb.append(String.format("\n%s\t%s", UiString.get(_S3), NO_VALUE));
-            sb.append(String.format("\n%s\t%s", UiString.get(_S4), NO_VALUE));
-            sb.append(String.format("\n%s\t%s", UiString.get(_S5), NO_VALUE));
-            sb.append(String.format("\n%s\t%s", UiString.get(_S6), NO_VALUE));
-            sb.append(String.format("\n%s\t%s", UiString.get(_S7), NO_VALUE));
-            sb.append(String.format("\n%s\t%s", UiString.get(_S8), NO_VALUE));
-            sb.append(String.format("\n%s\t%s", UiString.get(_S9), NO_VALUE));
-        }
-        return sb.toString();
+    public int getAverageTurnsPerGame() {
+        return (gamesPlayed > 0) ? turnsPlayed / gamesPlayed : 0;
     }
 
     private static int getPercentage(final int value, final int total) {

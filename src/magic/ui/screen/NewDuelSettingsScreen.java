@@ -153,7 +153,7 @@ public class NewDuelSettingsScreen
 
         private void refreshLayout() {
             migLayout.setLayoutConstraints("insets 0, center, center, wrap 2");
-            migLayout.setColumnConstraints("[290, fill]6[290, fill]");
+            migLayout.setColumnConstraints("[310, fill]6[310, fill]");
             migLayout.setRowConstraints("[40, fill]6[270, fill]4[60, fill]");
             add(duelSettingsPanel, "spanx 2");
             add(playerPanels[0]);
