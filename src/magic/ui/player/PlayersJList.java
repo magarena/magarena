@@ -54,7 +54,7 @@ abstract class PlayersJList extends JList<PlayerProfile> {
             panel.setBorder(isSelected ? BorderFactory.createLineBorder(MagicStyle.getRolloverColor(), 1) : null);
 
             panel.add(getAvatarPortrait(), "h 70!");
-            panel.add(getNamePanel(), "w 160!");
+            panel.add(getNamePanel(), "w 200!");
             panel.add(new PlayerMiniStatsPanel(profile.getStats(), foreColor), "pushx");
 
             return panel;
