@@ -1,16 +1,13 @@
 package magic.data;
 
-import magic.utility.FileIO;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+import magic.utility.MagicResources;
 
 public class KeywordDefinitions {
 
     private static final KeywordDefinitions INSTANCE=new KeywordDefinitions();
-
-    private static final String KEYWORDS_FILENAME="keywords/keywords.txt";
 
     private final List<KeywordDefinition> keywordDefinitions;
 
@@ -20,14 +17,7 @@ public class KeywordDefinitions {
 
     public void loadKeywordDefinitions() {
         keywordDefinitions.clear();
-        String content = null;
-        try {
-            content = FileIO.toStr(this.getClass().getResourceAsStream(KEYWORDS_FILENAME));
-        } catch (final IOException ex) {
-            System.err.println("ERROR! Unable to load " + KEYWORDS_FILENAME);
-            return;
-        }
-
+        final String content = MagicResources.getKeywordsFileContent();
         KeywordDefinition current = null;
         try (final Scanner sc = new Scanner(content)) {
             while (sc.hasNextLine()) {

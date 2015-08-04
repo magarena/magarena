@@ -12,6 +12,10 @@ public final class MagicResources {
     // Used as reference class for accessing JAR resources.
     private static final MagicResources instance = new MagicResources();
 
+    public static String getKeywordsFileContent() {
+        return getResourceFileContent("/magic/data/keywords/keywords.txt");
+    }
+
     public static String getFileContent(final MagicSets magicSet) {
         return getResourceFileContent("/magic/data/sets/" + magicSet.toString().replace("_", "") + ".txt");
     }
