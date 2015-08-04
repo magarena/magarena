@@ -7,12 +7,12 @@ import magic.utility.MagicResources;
 
 public class KeywordDefinitions {
 
-    private static final KeywordDefinitions INSTANCE=new KeywordDefinitions();
+    private static final KeywordDefinitions INSTANCE = new KeywordDefinitions();
 
     private final List<KeywordDefinition> keywordDefinitions;
 
     private KeywordDefinitions() {
-        keywordDefinitions=new ArrayList<KeywordDefinition>();
+        keywordDefinitions = new ArrayList<>();
     }
 
     public void loadKeywordDefinitions() {
@@ -21,16 +21,16 @@ public class KeywordDefinitions {
         KeywordDefinition current = null;
         try (final Scanner sc = new Scanner(content)) {
             while (sc.hasNextLine()) {
-                final String line=sc.nextLine();
+                final String line = sc.nextLine();
                 if (line.startsWith("*")) {
                     current = new KeywordDefinition();
-                    current.name=line.substring(1).trim();
+                    current.name = line.substring(1).trim();
                     keywordDefinitions.add(current);
                 } else {
                     if (current.description.length() > 0) {
-                        current.description=current.description+"<br>"+line.trim();
+                        current.description = current.description + "<br>" + line.trim();
                     } else {
-                        current.description=line.trim();
+                        current.description = line.trim();
                     }
                 }
             }
@@ -48,6 +48,6 @@ public class KeywordDefinitions {
 
     public static class KeywordDefinition {
         public String name;
-        public String description="";
+        public String description = "";
     }
 }
