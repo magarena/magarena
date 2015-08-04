@@ -19,7 +19,7 @@ public final class MagicResources {
                         GeneralConfig.getInstance().getTranslation())
         );
         return content.isEmpty()
-                ? getResourceFileContent("/magic/data/keywords/keywords.txt")
+                ? getResourceFileContent("/magic/data/keywords/English.txt")
                 : content;
     }
 
