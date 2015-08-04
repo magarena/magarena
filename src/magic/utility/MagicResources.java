@@ -3,6 +3,7 @@ package magic.utility;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
+import magic.data.GeneralConfig;
 import magic.data.MagicPredefinedFormat;
 import magic.data.MagicSets;
 
@@ -13,7 +14,13 @@ public final class MagicResources {
     private static final MagicResources instance = new MagicResources();
 
     public static String getKeywordsFileContent() {
-        return getResourceFileContent("/magic/data/keywords/keywords.txt");
+        final String content = getResourceFileContent(
+                String.format("/magic/data/keywords/%s.txt",
+                        GeneralConfig.getInstance().getTranslation())
+        );
+        return content.isEmpty()
+                ? getResourceFileContent("/magic/data/keywords/keywords.txt")
+                : content;
     }
 
     public static String getFileContent(final MagicSets magicSet) {
