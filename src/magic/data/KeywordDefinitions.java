@@ -7,16 +7,11 @@ import magic.utility.MagicResources;
 
 public class KeywordDefinitions {
 
-    private static final KeywordDefinitions INSTANCE = new KeywordDefinitions();
-
-    private final List<KeywordDefinition> keywordDefinitions;
-
     private KeywordDefinitions() {
-        keywordDefinitions = new ArrayList<>();
     }
 
-    public void loadKeywordDefinitions() {
-        keywordDefinitions.clear();
+    public static List<KeywordDefinition> getKeywordDefinitions() {
+        final List<KeywordDefinition> keywordDefinitions = new ArrayList<>();
         final String content = MagicResources.getKeywordsFileContent();
         KeywordDefinition current = null;
         try (final Scanner sc = new Scanner(content)) {
@@ -35,15 +30,7 @@ public class KeywordDefinitions {
                 }
             }
         }
-
-    }
-
-    public List<KeywordDefinition> getKeywordDefinitions() {
         return keywordDefinitions;
-    }
-
-    public static KeywordDefinitions getInstance() {
-        return INSTANCE;
     }
 
     public static class KeywordDefinition {

@@ -91,7 +91,7 @@ public class KeywordsScreen extends AbstractScreen implements IStatusBar, IActio
 
         scrollablePanel.removeAll();
 
-        for (final KeywordDefinition keywordDefinition : KeywordDefinitions.getInstance().getKeywordDefinitions()) {
+        for (final KeywordDefinition keywordDefinition : KeywordDefinitions.getKeywordDefinitions()) {
 
             final JPanel keywordPanel = new JPanel(new MigLayout("insets 0, gap 0, flowy"));
             keywordPanel.setOpaque(false);

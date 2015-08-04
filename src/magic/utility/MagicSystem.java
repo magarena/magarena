@@ -17,7 +17,6 @@ import magic.MagicMain;
 import magic.data.CardDefinitions;
 import magic.data.DeckGenerators;
 import magic.data.GeneralConfig;
-import magic.data.KeywordDefinitions;
 import magic.data.MagicCustomFormat;
 import magic.data.UnimplementedParser;
 import magic.model.MagicGameLog;
@@ -181,8 +180,7 @@ final public class MagicSystem {
         MagicCustomFormat.loadCustomFormats();
         reporter.setMessage("Loading deck generators...");
         DeckGenerators.getInstance().loadDeckGenerators();
-        reporter.setMessage("Loading keyword definitions...");
-        KeywordDefinitions.getInstance().loadKeywordDefinitions();
+
     }
 
     public static File getJarFile() throws URISyntaxException {
