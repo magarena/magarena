@@ -13,7 +13,6 @@ import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.FutureTask;
-import magic.MagicMain;
 import magic.data.CardDefinitions;
 import magic.data.DeckGenerators;
 import magic.data.GeneralConfig;
@@ -185,7 +184,7 @@ final public class MagicSystem {
 
     public static File getJarFile() throws URISyntaxException {
         
-        CodeSource codeSource = MagicMain.class.getProtectionDomain().getCodeSource();
+        CodeSource codeSource = MagicSystem.class.getProtectionDomain().getCodeSource();
         File jarFile = new File(codeSource.getLocation().toURI());
 
         if (jarFile.isFile() && jarFile.exists()) {
