@@ -1,5 +1,6 @@
-package magic.ui;
+package magic.translate;
 
+import magic.translate.StringContext;
 import groovy.json.StringEscapeUtils;
 import java.io.File;
 import java.io.FileInputStream;

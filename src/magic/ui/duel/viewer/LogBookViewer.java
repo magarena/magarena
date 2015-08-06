@@ -19,7 +19,7 @@ import magic.data.GeneralConfig;
 import magic.model.MagicLogBook;
 import magic.model.MagicMessage;
 import magic.ui.ScreenController;
-import magic.ui.UiString;
+import magic.translate.UiString;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.MessagePanel;
 import magic.ui.widget.TitleBar;

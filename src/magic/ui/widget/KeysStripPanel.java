@@ -3,7 +3,7 @@ package magic.ui.widget;
 import java.awt.Color;
 import java.awt.Dimension;
 import javax.swing.JLabel;
-import magic.ui.UiString;
+import magic.translate.UiString;
 import magic.ui.screen.interfaces.IThemeStyle;
 import magic.ui.theme.Theme;
 import magic.ui.utility.MagicStyle;

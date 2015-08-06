@@ -8,7 +8,7 @@ import magic.data.GeneralConfig;
 import magic.ui.URLUtils;
 import magic.data.json.NewVersionJsonParser;
 import magic.ui.ScreenController;
-import magic.ui.UiString;
+import magic.translate.UiString;
 
 @SuppressWarnings("serial")
 public class NewVersionAlertButton extends AlertButton {

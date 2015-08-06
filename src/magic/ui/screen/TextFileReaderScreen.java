@@ -6,7 +6,7 @@ import java.util.List;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.SwingUtilities;
-import magic.ui.UiString;
+import magic.translate.UiString;
 import magic.ui.screen.interfaces.IActionBar;
 import magic.ui.screen.widget.MenuButton;
 import magic.ui.widget.FontsAndBorders;

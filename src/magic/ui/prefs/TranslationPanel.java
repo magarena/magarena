@@ -25,7 +25,7 @@ import javax.swing.JPanel;
 import javax.swing.JPopupMenu;
 import javax.swing.SwingUtilities;
 import magic.data.GeneralConfig;
-import magic.ui.UiString;
+import magic.translate.UiString;
 import magic.exception.DesktopNotSupportedException;
 import magic.ui.ScreenController;
 import magic.ui.URLUtils;

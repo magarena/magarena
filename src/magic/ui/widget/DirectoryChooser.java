@@ -13,7 +13,7 @@ import javax.swing.JFileChooser;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 import magic.ui.ScreenController;
-import magic.ui.UiString;
+import magic.translate.UiString;
 import magic.ui.utility.DesktopUtils;
 import net.miginfocom.swing.MigLayout;
 

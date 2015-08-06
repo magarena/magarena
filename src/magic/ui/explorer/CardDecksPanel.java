@@ -27,7 +27,7 @@ import magic.utility.DeckUtils;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
 import magic.ui.ScreenController;
-import magic.ui.UiString;
+import magic.translate.UiString;
 import net.miginfocom.swing.MigLayout;
 import static magic.utility.DeckUtils.DECK_EXTENSION;
 import static magic.utility.DeckUtils.getDeckFolder;

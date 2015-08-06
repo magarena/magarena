@@ -10,7 +10,7 @@ import magic.model.player.AiProfile;
 import magic.model.player.IPlayerProfileListener;
 import magic.model.player.PlayerProfile;
 import magic.model.player.PlayerProfiles;
-import magic.ui.UiString;
+import magic.translate.UiString;
 import magic.ui.dialog.AiPropertiesDialog;
 import magic.ui.player.AiPlayerJList;
 import magic.ui.screen.interfaces.IStatusBar;

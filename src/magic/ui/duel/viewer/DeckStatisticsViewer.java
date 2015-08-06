@@ -17,7 +17,7 @@ import magic.model.DuelPlayerConfig;
 import magic.model.MagicColor;
 import magic.model.MagicDeck;
 import magic.ui.IconImages;
-import magic.ui.UiString;
+import magic.translate.UiString;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TexturedPanel;

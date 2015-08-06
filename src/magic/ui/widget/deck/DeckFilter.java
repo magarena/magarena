@@ -2,7 +2,7 @@ package magic.ui.widget.deck;
 
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
-import magic.ui.UiString;
+import magic.translate.UiString;
 
 public class DeckFilter {
 

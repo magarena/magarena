@@ -9,7 +9,7 @@ import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.ui.SwingGameController;
 import magic.ui.IconImages;
-import magic.ui.UiString;
+import magic.translate.UiString;
 import magic.ui.theme.Theme;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TexturedPanel;

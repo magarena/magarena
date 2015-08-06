@@ -9,9 +9,9 @@ import javax.swing.JTable;
 import magic.model.MagicCardDefinition;
 import magic.ui.CardFilterPanel;
 import magic.ui.ICardFilterPanelListener;
-import magic.ui.UiString;
+import magic.translate.UiString;
 import magic.ui.cardtable.CardTablePanel;
-import magic.ui.StringContext;
+import magic.translate.StringContext;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")

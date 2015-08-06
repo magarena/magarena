@@ -6,7 +6,7 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
 import magic.data.GeneralConfig;
-import magic.ui.UiString;
+import magic.translate.UiString;
 import magic.ui.ScreenController;
 import magic.ui.dialog.DownloadImagesDialog;
 import magic.ui.dialog.FiremindWorkerDialog;

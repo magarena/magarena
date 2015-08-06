@@ -33,7 +33,7 @@ import magic.exception.InvalidDeckException;
 import magic.firemind.FiremindJsonReader;
 import magic.model.MagicDeck;
 import magic.ui.ScreenController;
-import magic.ui.UiString;
+import magic.translate.UiString;
 import magic.ui.dialog.DecksFilterDialog;
 import magic.ui.screen.interfaces.IDeckConsumer;
 import magic.ui.theme.Theme;

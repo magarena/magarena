@@ -6,7 +6,7 @@ import magic.data.MagicIcon;
 import magic.model.MagicDeck;
 import magic.ui.IconImages;
 import magic.ui.ScreenController;
-import magic.ui.UiString;
+import magic.translate.UiString;
 
 @SuppressWarnings("serial")
 public final class SampleHandActionButton extends ActionBarButton {

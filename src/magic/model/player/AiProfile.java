@@ -2,8 +2,8 @@ package magic.model.player;
 
 import java.util.Properties;
 import magic.ai.MagicAIImpl;
-import magic.ui.StringContext;
-import magic.ui.UiString;
+import magic.translate.StringContext;
+import magic.translate.UiString;
 
 public class AiProfile extends PlayerProfile {
 

@@ -18,7 +18,7 @@ import javax.swing.ScrollPaneConstants;
 import javax.swing.Scrollable;
 import javax.swing.SwingUtilities;
 import magic.ui.SwingGameController;
-import magic.ui.UiString;
+import magic.translate.UiString;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.PanelButton;

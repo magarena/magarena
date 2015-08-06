@@ -22,7 +22,7 @@ import javax.swing.SwingUtilities;
 import javax.swing.text.NumberFormatter;
 import magic.ui.MagicFrame;
 import magic.ui.ScreenController;
-import magic.ui.UiString;
+import magic.translate.UiString;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.deck.DeckFilter;
 import magic.ui.widget.deck.DeckFilter.NumericFilter;

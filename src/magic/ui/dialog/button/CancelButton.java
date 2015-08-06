@@ -2,7 +2,7 @@ package magic.ui.dialog.button;
 
 import magic.data.MagicIcon;
 import magic.ui.IconImages;
-import magic.ui.UiString;
+import magic.translate.UiString;
 
 @SuppressWarnings("serial")
 public class CancelButton extends MagicDialogButton {

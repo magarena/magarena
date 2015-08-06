@@ -16,8 +16,8 @@ import java.awt.event.ActionEvent;
 import magic.data.GeneralConfig;
 import magic.data.MagicIcon;
 import magic.ui.ScreenController;
-import magic.ui.StringContext;
-import magic.ui.UiString;
+import magic.translate.StringContext;
+import magic.translate.UiString;
 
 @SuppressWarnings("serial")
 public class CaptionPanel extends JPanel {

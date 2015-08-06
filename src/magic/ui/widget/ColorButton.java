@@ -9,7 +9,7 @@ import java.awt.event.MouseEvent;
 import javax.swing.AbstractAction;
 import javax.swing.JButton;
 import javax.swing.JColorChooser;
-import magic.ui.UiString;
+import magic.translate.UiString;
 
 @SuppressWarnings("serial")
 public class ColorButton extends JButton {

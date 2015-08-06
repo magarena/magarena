@@ -13,7 +13,7 @@ import magic.model.IGameController;
 import magic.model.MagicSource;
 import magic.model.choice.MagicPlayChoiceResult;
 import magic.ui.SwingGameController;
-import magic.ui.UiString;
+import magic.translate.UiString;
 import magic.ui.duel.viewer.UserActionPanel;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TextLabel;

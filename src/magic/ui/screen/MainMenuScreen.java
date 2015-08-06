@@ -13,7 +13,7 @@ import magic.game.state.GameLoader;
 import magic.game.state.GameStateFileReader;
 import magic.ui.IconImages;
 import magic.ui.ScreenController;
-import magic.ui.UiString;
+import magic.translate.UiString;
 import magic.ui.screen.interfaces.IWikiPage;
 import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.screen.widget.MenuPanel;

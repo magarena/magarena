@@ -15,7 +15,7 @@ import magic.data.MagicIcon;
 import magic.ui.IconImages;
 import magic.model.MagicDeck;
 import magic.ui.ScreenController;
-import magic.ui.UiString;
+import magic.translate.UiString;
 import magic.ui.cardtable.CardTable;
 import magic.ui.dialog.DecksFilterDialog;
 import magic.ui.screen.interfaces.IActionBar;

@@ -6,7 +6,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 import magic.model.phase.MagicPhaseType;
-import magic.ui.UiString;
+import magic.translate.UiString;
 import magic.ui.utility.MagicStyle;
 import net.miginfocom.swing.MigLayout;
 

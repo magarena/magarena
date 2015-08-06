@@ -13,7 +13,7 @@ import magic.data.MagicFormat;
 import magic.ui.utility.GraphicsUtils;
 import magic.ui.IconImages;
 import magic.ui.MagicFrame;
-import magic.ui.UiString;
+import magic.translate.UiString;
 import magic.ui.dialog.DuelPropertiesDialog;
 import magic.ui.screen.interfaces.IThemeStyle;
 import magic.ui.theme.Theme;

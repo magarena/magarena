@@ -1,7 +1,7 @@
 package magic.model;
 
 import magic.data.MagicIcon;
-import magic.ui.UiString;
+import magic.translate.UiString;
 
 public enum MagicPlayerZone {
     

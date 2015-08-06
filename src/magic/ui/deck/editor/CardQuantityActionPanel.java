@@ -8,7 +8,7 @@ import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 import magic.data.MagicIcon;
 import magic.ui.IconImages;
-import magic.ui.UiString;
+import magic.translate.UiString;
 import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.widget.FontsAndBorders;
 import net.miginfocom.swing.MigLayout;

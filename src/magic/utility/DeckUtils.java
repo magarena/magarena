@@ -25,7 +25,7 @@ import magic.model.MagicDeck;
 import magic.model.MagicDeckProfile;
 import magic.model.DuelPlayerConfig;
 import magic.model.MagicRandom;
-import magic.ui.UiString;
+import magic.translate.UiString;
 import magic.utility.MagicFileSystem.DataPath;
 
 public class DeckUtils {

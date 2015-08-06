@@ -27,7 +27,7 @@ import magic.data.GeneralConfig;
 import magic.data.MagicIcon;
 import magic.ui.IconImages;
 import magic.model.MagicCardDefinition;
-import magic.ui.UiString;
+import magic.translate.UiString;
 import magic.ui.dialog.IImageDownloadListener;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicFileSystem.DataPath;

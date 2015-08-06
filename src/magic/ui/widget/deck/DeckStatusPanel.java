@@ -6,7 +6,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 import magic.model.MagicDeck;
-import magic.ui.UiString;
+import magic.translate.UiString;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")

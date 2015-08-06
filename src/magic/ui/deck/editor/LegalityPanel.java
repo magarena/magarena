@@ -13,7 +13,7 @@ import magic.data.MagicIcon;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
 import magic.ui.IconImages;
-import magic.ui.UiString;
+import magic.translate.UiString;
 import magic.ui.cardtable.CardTablePanel;
 import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.widget.TexturedPanel;

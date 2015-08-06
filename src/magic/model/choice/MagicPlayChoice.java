@@ -17,8 +17,8 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 import magic.model.IUIGameController;
-import magic.ui.StringContext;
-import magic.ui.UiString;
+import magic.translate.StringContext;
+import magic.translate.UiString;
 
 public class MagicPlayChoice extends MagicChoice {
 

@@ -12,7 +12,7 @@ import magic.model.MagicCardDefinition;
 import magic.ui.IconImages;
 import magic.model.MagicDeck;
 import magic.ui.ScreenController;
-import magic.ui.UiString;
+import magic.translate.UiString;
 import magic.ui.screen.interfaces.IActionBar;
 import magic.ui.screen.interfaces.IDeckConsumer;
 import magic.ui.screen.interfaces.IStatusBar;

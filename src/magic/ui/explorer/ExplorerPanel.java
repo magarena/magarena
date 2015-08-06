@@ -19,7 +19,7 @@ import magic.ui.CardFilterPanel;
 import magic.ui.utility.GraphicsUtils;
 import magic.ui.ICardFilterPanelListener;
 import magic.ui.ScreenController;
-import magic.ui.UiString;
+import magic.translate.UiString;
 import magic.ui.cardtable.CardTable;
 import magic.ui.cardtable.ICardSelectionListener;
 import magic.utility.MagicSystem;

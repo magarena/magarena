@@ -6,7 +6,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import magic.model.MagicGame;
 import magic.ui.IconImages;
-import magic.ui.UiString;
+import magic.translate.UiString;
 import magic.ui.utility.MagicStyle;
 import magic.ui.theme.Theme;
 import net.miginfocom.swing.MigLayout;

@@ -6,7 +6,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import magic.ui.ScreenController;
 import magic.ui.URLUtils;
-import magic.ui.UiString;
+import magic.translate.UiString;
 import magic.ui.screen.widget.MenuPanel;
 import magic.ui.widget.KeysStripPanel;
 import net.miginfocom.swing.MigLayout;

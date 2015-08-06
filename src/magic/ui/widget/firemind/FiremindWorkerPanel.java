@@ -21,7 +21,7 @@ import magic.data.GeneralConfig;
 import magic.data.MagicIcon;
 import magic.firemind.FiremindClient;
 import magic.ui.IconImages;
-import magic.ui.UiString;
+import magic.translate.UiString;
 import magic.utility.MagicFileSystem.DataPath;
 import magic.utility.MagicFileSystem;
 import net.miginfocom.swing.MigLayout;

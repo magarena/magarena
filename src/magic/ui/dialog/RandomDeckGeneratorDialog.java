@@ -13,7 +13,7 @@ import javax.swing.event.ChangeListener;
 import magic.data.DeckGenerator;
 import magic.ui.MagicFrame;
 import magic.ui.ScreenController;
-import magic.ui.UiString;
+import magic.translate.UiString;
 import magic.ui.dialog.button.CancelButton;
 import magic.ui.dialog.button.SaveButton;
 import magic.ui.widget.FontsAndBorders;

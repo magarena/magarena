@@ -8,7 +8,7 @@ import javax.swing.SwingUtilities;
 import magic.data.CardDefinitions;
 import magic.data.GeneralConfig;
 import magic.model.MagicCardDefinition;
-import magic.ui.UiString;
+import magic.translate.UiString;
 import magic.ui.dialog.IImageDownloadListener;
 import magic.utility.MagicFileSystem;
 

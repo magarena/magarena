@@ -18,7 +18,7 @@ import magic.data.MagicSetDefinitions;
 import magic.ui.explorer.ExplorerPanel;
 import magic.ui.MagicFrame;
 import magic.ui.ScreenOptionsOverlay;
-import magic.ui.UiString;
+import magic.translate.UiString;
 import magic.ui.dialog.DownloadImagesDialog;
 import magic.ui.screen.interfaces.IActionBar;
 import magic.ui.screen.interfaces.IOptionsMenu;

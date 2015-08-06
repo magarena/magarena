@@ -23,7 +23,7 @@ import magic.ui.MagicFileChoosers;
 import magic.ui.MagicFrame;
 import magic.ui.ScreenController;
 import magic.ui.ScreenOptionsOverlay;
-import magic.ui.UiString;
+import magic.translate.UiString;
 import magic.ui.dialog.DownloadImagesDialog;
 import magic.ui.deck.editor.DeckEditorScreenPanel;
 import magic.ui.deck.editor.IDeckEditorListener;

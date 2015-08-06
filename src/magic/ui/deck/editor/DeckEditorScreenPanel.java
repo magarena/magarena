@@ -7,7 +7,7 @@ import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
 import magic.model.MagicDeckConstructionRule;
 import magic.ui.ScreenController;
-import magic.ui.UiString;
+import magic.translate.UiString;
 import magic.ui.utility.GraphicsUtils;
 import magic.utility.MagicSystem;
 import net.miginfocom.swing.MigLayout;

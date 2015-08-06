@@ -13,7 +13,7 @@ import javax.swing.ListSelectionModel;
 import magic.data.GeneralConfig;
 import magic.model.IUIGameController;
 import magic.ui.MagicFrame;
-import magic.ui.UiString;
+import magic.translate.UiString;
 import magic.ui.theme.Theme;
 import magic.ui.utility.MagicStyle;
 import magic.ui.dialog.button.CancelButton;

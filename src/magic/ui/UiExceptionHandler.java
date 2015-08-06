@@ -1,5 +1,6 @@
 package magic.ui;
 
+import magic.translate.UiString;
 import magic.ui.utility.GraphicsUtils;
 import java.awt.Component;
 import java.awt.Desktop;

@@ -14,7 +14,7 @@ import javax.swing.Scrollable;
 import javax.swing.SwingUtilities;
 import magic.data.KeywordDefinitions.KeywordDefinition;
 import magic.data.KeywordDefinitions;
-import magic.ui.UiString;
+import magic.translate.UiString;
 import magic.ui.screen.interfaces.IActionBar;
 import magic.ui.screen.interfaces.IStatusBar;
 import magic.ui.screen.widget.MenuButton;

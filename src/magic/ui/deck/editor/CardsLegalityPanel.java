@@ -27,8 +27,8 @@ import magic.data.MagicIcon;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
 import magic.ui.IconImages;
-import magic.ui.UiString;
-import magic.ui.StringContext;
+import magic.translate.UiString;
+import magic.translate.StringContext;
 import magic.ui.widget.FontsAndBorders;
 import net.miginfocom.swing.MigLayout;
 

@@ -2,8 +2,8 @@ package magic.ui.player;
 
 import magic.model.player.AiProfile;
 import magic.model.player.PlayerProfile;
-import magic.ui.StringContext;
-import magic.ui.UiString;
+import magic.translate.StringContext;
+import magic.translate.UiString;
 
 @SuppressWarnings("serial")
 public class AiPlayerJList extends PlayersJList {

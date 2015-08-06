@@ -1,5 +1,6 @@
 package magic.ui;
 
+import magic.translate.UiString;
 import java.nio.file.Path;
 import javax.swing.JFileChooser;
 import magic.utility.MagicFileSystem;

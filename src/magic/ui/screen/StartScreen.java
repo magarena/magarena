@@ -8,7 +8,7 @@ import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
 import magic.data.GeneralConfig;
 import magic.ui.ScreenController;
-import magic.ui.UiString;
+import magic.translate.UiString;
 import magic.ui.screen.widget.MenuPanel;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicSystem;

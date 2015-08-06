@@ -42,7 +42,7 @@ import javax.swing.event.ChangeListener;
 import javax.swing.text.NumberFormatter;
 import magic.data.GeneralConfig;
 import magic.data.MagicIcon;
-import magic.ui.UiString;
+import magic.translate.UiString;
 import magic.ui.CachedImagesProvider;
 import magic.ui.IconImages;
 import magic.ui.URLUtils;

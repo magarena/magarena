@@ -24,7 +24,7 @@ import magic.exception.DesktopNotSupportedException;
 import magic.model.MagicCardDefinition;
 import magic.ui.utility.DesktopUtils;
 import magic.ui.ScreenController;
-import magic.ui.UiString;
+import magic.translate.UiString;
 import magic.ui.screen.interfaces.IActionBar;
 import magic.ui.screen.interfaces.IStatusBar;
 import magic.ui.screen.interfaces.IWikiPage;

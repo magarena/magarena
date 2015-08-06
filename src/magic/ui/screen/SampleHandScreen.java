@@ -15,7 +15,7 @@ import magic.model.MagicDeck;
 import magic.model.MagicRandom;
 import magic.ui.CardImagesProvider;
 import magic.ui.IconImages;
-import magic.ui.UiString;
+import magic.translate.UiString;
 import magic.ui.canvas.cards.CardsCanvas.LayoutMode;
 import magic.ui.canvas.cards.CardsCanvas;
 import magic.ui.screen.interfaces.IActionBar;

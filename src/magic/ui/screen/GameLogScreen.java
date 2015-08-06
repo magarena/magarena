@@ -11,7 +11,7 @@ import magic.data.MagicIcon;
 import magic.ui.utility.DesktopUtils;
 import magic.ui.IconImages;
 import magic.ui.ScreenController;
-import magic.ui.UiString;
+import magic.translate.UiString;
 import magic.ui.screen.interfaces.IStatusBar;
 import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.screen.widget.MenuButton;

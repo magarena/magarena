@@ -1,5 +1,7 @@
 package magic.ui;
 
+import magic.translate.UiString;
+import magic.translate.StringContext;
 import java.awt.Color;
 import java.awt.Component;
 import java.awt.Cursor;

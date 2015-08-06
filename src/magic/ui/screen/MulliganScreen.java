@@ -19,7 +19,7 @@ import magic.model.MagicPlayer;
 import magic.ui.CardImagesProvider;
 import magic.ui.IconImages;
 import magic.ui.ScreenController;
-import magic.ui.UiString;
+import magic.translate.UiString;
 import magic.ui.canvas.cards.CardsCanvas.LayoutMode;
 import magic.ui.canvas.cards.CardsCanvas;
 import magic.ui.duel.choice.MulliganChoicePanel;

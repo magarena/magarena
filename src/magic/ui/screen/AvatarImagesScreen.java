@@ -51,7 +51,7 @@ import magic.ui.theme.PlayerAvatar;
 import magic.ui.theme.Theme;
 import magic.ui.utility.GraphicsUtils;
 import magic.ui.ImageFileIO;
-import magic.ui.UiString;
+import magic.translate.UiString;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TexturedPanel;
 import magic.utility.MagicFileSystem;

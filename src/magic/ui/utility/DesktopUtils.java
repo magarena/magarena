@@ -4,7 +4,7 @@ import java.awt.Desktop;
 import java.io.File;
 import java.io.IOException;
 import magic.exception.DesktopNotSupportedException;
-import magic.ui.UiString;
+import magic.translate.UiString;
 import magic.utility.MagicFileSystem;
 import static magic.utility.MagicFileSystem.getDataPath;
 import magic.utility.MagicSystem;

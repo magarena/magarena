@@ -16,7 +16,7 @@ import magic.ui.IconImages;
 import magic.ui.URLUtils;
 import magic.ui.MagicFrame;
 import magic.ui.ScreenController;
-import magic.ui.UiString;
+import magic.translate.UiString;
 import magic.ui.dialog.button.SaveButton;
 import magic.ui.widget.LinkLabel;
 import magic.utility.MagicSystem;

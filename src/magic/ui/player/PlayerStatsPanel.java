@@ -4,7 +4,7 @@ import java.awt.Color;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import magic.model.player.PlayerStatistics;
-import magic.ui.UiString;
+import magic.translate.UiString;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")

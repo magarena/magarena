@@ -6,7 +6,7 @@ import javax.swing.SwingUtilities;
 import magic.data.CardDefinitions;
 import magic.data.GeneralConfig;
 import magic.ui.ScreenController;
-import magic.ui.UiString;
+import magic.translate.UiString;
 import magic.ui.dialog.DownloadImagesDialog;
 
 @SuppressWarnings("serial")

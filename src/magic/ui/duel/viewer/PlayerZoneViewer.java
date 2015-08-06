@@ -13,8 +13,8 @@ import javax.swing.event.ChangeListener;
 import java.awt.BorderLayout;
 import magic.model.MagicPlayerZone;
 import magic.ui.ScreenController;
-import magic.ui.StringContext;
-import magic.ui.UiString;
+import magic.translate.StringContext;
+import magic.translate.UiString;
 import magic.ui.utility.MagicStyle;
 
 @SuppressWarnings("serial")

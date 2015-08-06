@@ -1,5 +1,6 @@
 package magic.ui;
 
+import magic.translate.UiString;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.event.ActionEvent;

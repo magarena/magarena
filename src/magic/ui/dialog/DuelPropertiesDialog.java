@@ -15,7 +15,7 @@ import javax.swing.JPanel;
 import magic.data.MagicFormat;
 import magic.ui.MagicFrame;
 import magic.ui.ScreenController;
-import magic.ui.UiString;
+import magic.translate.UiString;
 import magic.ui.dialog.button.CancelButton;
 import magic.ui.dialog.button.SaveButton;
 import magic.ui.widget.SliderPanel;

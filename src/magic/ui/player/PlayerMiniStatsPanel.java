@@ -7,8 +7,8 @@ import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 import javax.swing.border.Border;
 import magic.model.player.PlayerStatistics;
-import magic.ui.StringContext;
-import magic.ui.UiString;
+import magic.translate.StringContext;
+import magic.translate.UiString;
 import magic.ui.widget.FontsAndBorders;
 import net.miginfocom.swing.MigLayout;
 

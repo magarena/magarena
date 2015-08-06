@@ -11,7 +11,7 @@ import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import magic.model.MagicDeck;
 import magic.model.DuelPlayerConfig;
-import magic.ui.UiString;
+import magic.translate.UiString;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TexturedPanel;

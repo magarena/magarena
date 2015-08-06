@@ -18,7 +18,7 @@ import magic.ui.ImportWorker;
 import magic.ui.MagarenaDirectoryChooser;
 import magic.ui.ScreenController;
 import magic.ui.URLUtils;
-import magic.ui.UiString;
+import magic.translate.UiString;
 import magic.ui.screen.widget.MenuButton;
 import magic.ui.screen.widget.MenuPanel;
 import magic.ui.theme.ThemeFactory;

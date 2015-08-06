@@ -1,6 +1,6 @@
 package magic.data;
 
-import magic.ui.UiString;
+import magic.translate.UiString;
 
 public enum CardLegality {
     Legal(CardLegalityStrings._S1),

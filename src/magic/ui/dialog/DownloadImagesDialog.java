@@ -24,7 +24,7 @@ import javax.swing.SwingUtilities;
 import magic.model.MagicCardDefinition;
 import magic.ui.MagicFrame;
 import magic.ui.ScreenController;
-import magic.ui.UiString;
+import magic.translate.UiString;
 import magic.ui.dialog.button.CancelButton;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.downloader.HQImagesDownloadPanel;

@@ -11,7 +11,7 @@ import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
 import magic.ui.MagicSound;
 import magic.ui.ScreenController;
-import magic.ui.UiString;
+import magic.translate.UiString;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")

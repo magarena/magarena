@@ -21,7 +21,7 @@ import magic.data.MagicPredefinedFormat;
 import magic.data.MagicIcon;
 import magic.model.MagicDeck;
 import magic.ui.IconImages;
-import magic.ui.UiString;
+import magic.translate.UiString;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")

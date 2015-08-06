@@ -12,7 +12,7 @@ import javax.swing.ScrollPaneConstants;
 import magic.data.GeneralConfig;
 import magic.model.MagicCardDefinition;
 import magic.ui.CardImagesProvider;
-import magic.ui.UiString;
+import magic.translate.UiString;
 import magic.ui.duel.viewer.CardViewer;
 import magic.ui.utility.GraphicsUtils;
 import net.miginfocom.swing.MigLayout;

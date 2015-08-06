@@ -18,7 +18,7 @@ import magic.ui.IconImages;
 import magic.ui.MagicFrame;
 import magic.ui.ScreenController;
 import magic.ui.ScreenOptionsOverlay;
-import magic.ui.UiString;
+import magic.translate.UiString;
 import magic.ui.screen.interfaces.IActionBar;
 import magic.ui.screen.interfaces.IOptionsMenu;
 import magic.ui.screen.interfaces.IStatusBar;
