@@ -12,11 +12,11 @@ public class ExileLinkAction extends MagicAction {
     private final MagicCard card;
     private final MagicLocationType location;
 
-    public ExileLinkAction(final MagicPermanent source,final MagicCard card,final MagicLocationType location) {
+    public ExileLinkAction(final MagicPermanent source,final MagicCard card,final MagicLocationType from) {
         this.source = source;
         this.permanent = MagicPermanent.NONE;
         this.card = card;
-        this.location = location;
+        this.location = from;
     }
 
     public ExileLinkAction(final MagicPermanent source,final MagicPermanent permanent) {
