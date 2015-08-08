@@ -1,14 +1,16 @@
 [
-    new MagicWhenOtherDiesTrigger() {
+    new MagicWhenOtherPutIntoGraveyardTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
-            return (otherPermanent.isFriend(permanent) &&
-                    otherPermanent.isCreature() && 
-                    otherPermanent.getToughness() >= 4) ?
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MoveCardAction act) {
+            final MagicCard card = act.card;
+            return (act.fromLocation == MagicLocationType.Play &&
+                    card.isFriend(permanent) &&
+                    card.hasType(MagicType.Creature) &&
+                    card.getToughness() >= 4) ?
                 new MagicEvent(
                     permanent,
                     new MagicMayChoice(),
-                    otherPermanent,
+                    card,
                     this,
                     "PN may\$ exile RN with SN."
                 ) :
@@ -19,7 +21,8 @@
             if (event.isYes()) {
                 game.doAction(new ExileLinkAction(
                     event.getPermanent(),
-                    event.getRefPermanent()
+                    event.getRefCard(),
+                    MagicLocationType.Graveyard
                 ));
             }
         }
