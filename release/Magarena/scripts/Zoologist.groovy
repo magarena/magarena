@@ -24,17 +24,17 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             for (final MagicCard card : event.getPlayer().getLibrary().getCardsFromTop(1)) {
                 game.doAction(new RevealAction(card));
-                game.doAction(new RemoveCardAction(
-                    card,
-                    MagicLocationType.OwnersLibrary
-                ));
                 if (card.hasType(MagicType.Creature)) {
+                    game.doAction(new RemoveCardAction(
+                        card,
+                        MagicLocationType.OwnersLibrary
+                    ));
                     game.doAction(new PlayCardAction(
                         card,
                         event.getPlayer()
                     ));
                 } else {
-                    game.doAction(new MoveCardAction(
+                    game.doAction(new ShiftCardAction(
                         card,
                         MagicLocationType.OwnersLibrary,
                         MagicLocationType.Graveyard

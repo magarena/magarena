@@ -22,8 +22,7 @@
             game.doAction(new ChangeLifeAction(event.getPlayer(),3));
             if (event.isYes()) {
                 event.processTargetCard(game, {
-                    game.doAction(new RemoveCardAction(it,MagicLocationType.Graveyard));
-                    game.doAction(new MoveCardAction(it,MagicLocationType.Graveyard,MagicLocationType.OwnersHand));
+                    game.doAction(new ShiftCardAction(it,MagicLocationType.Graveyard,MagicLocationType.OwnersHand));
                 });
             }
         }

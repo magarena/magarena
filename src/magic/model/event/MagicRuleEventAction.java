@@ -1572,12 +1572,11 @@ public enum MagicRuleEventAction {
         new MagicEventAction() {
             @Override
             public void executeEvent(final MagicGame game, final MagicEvent event) {
-                final MagicCard card = event.getCard();
-                final RemoveCardAction remove = new RemoveCardAction(card,MagicLocationType.Graveyard);
-                game.doAction(remove);
-                if (remove.isValid()) {
-                    game.doAction(new MoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.OwnersHand));
-                }
+                game.doAction(new ShiftCardAction(
+                    event.getCard(),
+                    MagicLocationType.Graveyard,
+                    MagicLocationType.OwnersHand
+                ));
             }
         }
     ),
@@ -1608,12 +1607,11 @@ public enum MagicRuleEventAction {
         new MagicEventAction() {
             @Override
             public void executeEvent(final MagicGame game, final MagicEvent event) {
-                final MagicCard card = event.getPermanent().getCard();
-                final RemoveCardAction remove = new RemoveCardAction(card,MagicLocationType.Graveyard);
-                game.doAction(remove);
-                if (remove.isValid()) {
-                    game.doAction(new MoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.OwnersHand));
-                }
+                game.doAction(new ShiftCardAction(
+                    event.getPermanent().getCard(),
+                    MagicLocationType.Graveyard,
+                    MagicLocationType.OwnersHand
+                ));
             }
         }
     ),
@@ -1629,8 +1627,7 @@ public enum MagicRuleEventAction {
                 event.processTargetCard(game,new MagicCardAction() {
                     public void doAction(final MagicCard it) {
                         final MagicLocationType from = it.getLocation();
-                        game.doAction(new RemoveCardAction(it, from));
-                        game.doAction(new MoveCardAction(it, from, MagicLocationType.OwnersHand));
+                        game.doAction(new ShiftCardAction(it, from, MagicLocationType.OwnersHand));
                     }
                 });
             }
@@ -1648,8 +1645,7 @@ public enum MagicRuleEventAction {
                 event.processTargetCard(game, new MagicCardAction() {
                     public void doAction(final MagicCard it) {
                         final MagicLocationType from = it.getLocation();
-                        game.doAction(new RemoveCardAction(it, from));
-                        game.doAction(new MoveCardAction(it, from, MagicLocationType.TopOfOwnersLibrary));
+                        game.doAction(new ShiftCardAction(it, from, MagicLocationType.TopOfOwnersLibrary));
                     }
                 });
             }
@@ -1667,8 +1663,7 @@ public enum MagicRuleEventAction {
                 event.processTargetCard(game, new MagicCardAction() {
                     public void doAction(final MagicCard it) {
                         final MagicLocationType from = it.getLocation();
-                        game.doAction(new RemoveCardAction(it, from));
-                        game.doAction(new MoveCardAction(it, from, MagicLocationType.BottomOfOwnersLibrary));
+                        game.doAction(new ShiftCardAction(it, from, MagicLocationType.BottomOfOwnersLibrary));
                     }
                 });
             }
@@ -1837,11 +1832,7 @@ public enum MagicRuleEventAction {
                     final List<MagicCard> topN = event.getPlayer().getLibrary().getCardsFromTop(n);
                     game.doAction(new RevealAction(topN));
                     for (final MagicCard it : topN) {
-                        game.doAction(new RemoveCardAction(
-                            it,
-                            MagicLocationType.OwnersLibrary
-                        ));
-                        game.doAction(new MoveCardAction(
+                        game.doAction(new ShiftCardAction(
                             it,
                             MagicLocationType.OwnersLibrary,
                             filter.accept(event.getSource(), event.getPlayer(), it) ?

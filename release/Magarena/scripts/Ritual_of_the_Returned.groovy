@@ -17,8 +17,7 @@
                 final MagicCard target ->
                 final int power = target.getPower();
                 final int toughness = target.getToughness();
-                game.doAction(new MoveCardAction(target, MagicLocationType.Graveyard, MagicLocationType.Exile));
-                game.doAction(new RemoveCardAction(target, MagicLocationType.Graveyard));
+                game.doAction(new ShiftCardAction(target, MagicLocationType.Graveyard, MagicLocationType.Exile));
                 game.doAction(new PlayTokenAction(event.getPlayer(), MagicCardDefinition.create({
                     it.setName("Zombie");
                     it.setDistinctName("black Zombie creature token");

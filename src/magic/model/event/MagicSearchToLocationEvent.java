@@ -6,8 +6,7 @@ import magic.model.MagicLocationType;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.action.MagicCardAction;
-import magic.model.action.MoveCardAction;
-import magic.model.action.RemoveCardAction;
+import magic.model.action.ShiftCardAction;
 import magic.model.action.ShuffleLibraryAction;
 import magic.model.action.AIRevealAction;
 import magic.model.choice.MagicChoice;
@@ -60,8 +59,7 @@ public class MagicSearchToLocationEvent extends MagicEvent {
                                 game.logAppendMessage(event.getPlayer(), "Found (" + card + ").");
                                 game.doAction(new AIRevealAction(card));
                             }
-                            game.doAction(new RemoveCardAction(card,MagicLocationType.OwnersLibrary));
-                            game.doAction(new MoveCardAction(card,MagicLocationType.OwnersLibrary, toLocation));
+                            game.doAction(new ShiftCardAction(card,MagicLocationType.OwnersLibrary, toLocation));
                         }
                     });
                 } else {
@@ -72,8 +70,7 @@ public class MagicSearchToLocationEvent extends MagicEvent {
                                 game.logAppendMessage(event.getPlayer(), "Found (" + card + ").");
                                 game.doAction(new AIRevealAction(card));
                             }
-                            game.doAction(new RemoveCardAction(card, MagicLocationType.OwnersLibrary));
-                            game.doAction(new MoveCardAction(card, MagicLocationType.OwnersLibrary, toLocation));
+                            game.doAction(new ShiftCardAction(card, MagicLocationType.OwnersLibrary, toLocation));
                         }
                     });
                 }

@@ -10,12 +10,17 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicCard card = event.getPermanent().getCard();
-            game.doAction(new RemoveCardAction(card, MagicLocationType.Graveyard));
-            game.doAction(new MoveCardAction(card, MagicLocationType.Graveyard, MagicLocationType.Exile));
+            game.doAction(new ShiftCardAction(
+                event.getPermanent().getCard(),
+                MagicLocationType.Graveyard,
+                MagicLocationType.Exile
+            ));
             CREATURE_CARD_FROM_GRAVEYARD.filter(event) each {
-                game.doAction(new RemoveCardAction(it, MagicLocationType.Graveyard));
-                game.doAction(new MoveCardAction(it, MagicLocationType.Graveyard, MagicLocationType.OwnersLibrary));
+                game.doAction(new ShiftCardAction(
+                    it, 
+                    MagicLocationType.Graveyard,
+                    MagicLocationType.OwnersLibrary
+                ));
             }
         }
     }

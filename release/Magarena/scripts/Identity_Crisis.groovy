@@ -13,12 +13,10 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
                 for (final MagicCard card : new MagicCardList(it.getHand())) {
-                    game.doAction(new RemoveCardAction(card, MagicLocationType.OwnersHand));
-                    game.doAction(new MoveCardAction(card, MagicLocationType.OwnersHand, MagicLocationType.Exile));
+                    game.doAction(new ShiftCardAction(card, MagicLocationType.OwnersHand, MagicLocationType.Exile));
                 }
                 for (final MagicCard card : new MagicCardList(it.getGraveyard())) {
-                    game.doAction(new RemoveCardAction(card, MagicLocationType.Graveyard));
-                    game.doAction(new MoveCardAction(card, MagicLocationType.Graveyard, MagicLocationType.Exile));
+                    game.doAction(new ShiftCardAction(card, MagicLocationType.Graveyard, MagicLocationType.Exile));
                 }
             });
         }

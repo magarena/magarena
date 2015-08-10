@@ -28,8 +28,7 @@
                     game.doAction(new RemoveCardAction(card, MagicLocationType.OwnersLibrary));
                     game.doAction(new PlayCardAction(card, player));
                 } else {
-                    game.doAction(new RemoveCardAction(card, MagicLocationType.OwnersLibrary));
-                    game.doAction(new MoveCardAction(card, MagicLocationType.OwnersLibrary, MagicLocationType.Graveyard));
+                    game.doAction(new ShiftCardAction(card, MagicLocationType.OwnersLibrary, MagicLocationType.Graveyard));
                     game.logAppendMessage(player, "${player.getName()} puts ${card.getName()} into the graveyard.")
                 }
             }

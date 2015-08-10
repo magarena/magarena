@@ -5,7 +5,7 @@ import magic.model.MagicGame;
 import magic.model.MagicLocationType;
 import magic.model.MagicPermanent;
 import magic.model.action.MoveCardAction;
-import magic.model.action.RemoveCardAction;
+import magic.model.action.ShiftCardAction;
 import magic.model.event.MagicEvent;
 
 public class MagicFromGraveyardToLibraryTrigger extends MagicWhenPutIntoGraveyardTrigger {
@@ -34,8 +34,7 @@ public class MagicFromGraveyardToLibraryTrigger extends MagicWhenPutIntoGraveyar
     public void executeEvent(final MagicGame game, final MagicEvent event) {
         final MagicCard card = event.getCard();
         if (card.isInGraveyard()) {
-            game.doAction(new RemoveCardAction(card,MagicLocationType.Graveyard));
-            game.doAction(new MoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.OwnersLibrary));
+            game.doAction(new ShiftCardAction(card,MagicLocationType.Graveyard,MagicLocationType.OwnersLibrary));
         }
     }
 }

@@ -13,8 +13,7 @@
             for (final MagicPlayer player : game.getAPNAP()) {
                 final MagicCardList graveyard = new MagicCardList(player.getGraveyard());
                 for (final MagicCard cardGraveyard : graveyard) {
-                    game.doAction(new RemoveCardAction(cardGraveyard,MagicLocationType.Graveyard));
-                    game.doAction(new MoveCardAction(cardGraveyard,MagicLocationType.Graveyard,MagicLocationType.OwnersLibrary));
+                    game.doAction(new ShiftCardAction(cardGraveyard,MagicLocationType.Graveyard,MagicLocationType.OwnersLibrary));
                 }
             }
         }

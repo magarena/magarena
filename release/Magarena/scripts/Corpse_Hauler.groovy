@@ -28,10 +28,12 @@
         
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicPlayer player = event.getPlayer();
             event.processTargetCard(game, {
-                game.doAction(new RemoveCardAction(it,MagicLocationType.Graveyard));
-                game.doAction(new MoveCardAction(it,MagicLocationType.Graveyard,MagicLocationType.OwnersHand));
+                game.doAction(new ShiftCardAction(
+                    it,
+                    MagicLocationType.Graveyard,
+                    MagicLocationType.OwnersHand
+                ));
             });
         }
     }

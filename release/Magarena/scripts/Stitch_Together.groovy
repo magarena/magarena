@@ -26,8 +26,7 @@
                         player
                     ));
                 } else {
-                    game.doAction(new RemoveCardAction(it,MagicLocationType.Graveyard));
-                    game.doAction(new MoveCardAction(it,MagicLocationType.Graveyard,MagicLocationType.OwnersHand));
+                    game.doAction(new ShiftCardAction(it,MagicLocationType.Graveyard,MagicLocationType.OwnersHand));
                 }
             });
         }

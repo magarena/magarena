@@ -14,11 +14,7 @@
             event.processTargetPlayer(game, {
                 final MagicCardList graveyard = new MagicCardList(it.getGraveyard());
                 for (final MagicCard card : graveyard) {
-                    game.doAction(new RemoveCardAction(
-                        card,
-                        MagicLocationType.Graveyard
-                    ));
-                    game.doAction(new MoveCardAction(
+                    game.doAction(new ShiftCardAction(
                         card,
                         MagicLocationType.Graveyard,
                         MagicLocationType.OwnersLibrary

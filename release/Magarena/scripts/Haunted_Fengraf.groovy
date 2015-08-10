@@ -25,8 +25,7 @@
             final MagicPlayer player = event.getPlayer();
             final MagicCardList cards = new MagicCardList(CREATURE_CARD_FROM_GRAVEYARD.filter(event));
             for (final MagicCard card : cards.getRandomCards(1)) {
-                game.doAction(new RemoveCardAction(card,MagicLocationType.Graveyard));
-                game.doAction(new MoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.OwnersHand));
+                game.doAction(new ShiftCardAction(card,MagicLocationType.Graveyard,MagicLocationType.OwnersHand));
                 game.logAppendMessage(player, "${player.getName()} returns (${card.getName()}) to his or her hand.");
             }
         }

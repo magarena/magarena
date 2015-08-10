@@ -11,8 +11,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             new MagicCardList(ZOMBIE_CARD_FROM_GRAVEYARD.filter(event)).getRandomCards(1) each {
-                game.doAction(new RemoveCardAction(it, MagicLocationType.Graveyard));
-                game.doAction(new MoveCardAction(it, MagicLocationType.Graveyard,MagicLocationType.OwnersHand));
+                game.doAction(new ShiftCardAction(it, MagicLocationType.Graveyard,MagicLocationType.OwnersHand));
             }
         }
     }

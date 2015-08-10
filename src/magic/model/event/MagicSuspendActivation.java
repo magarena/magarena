@@ -9,8 +9,7 @@ import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicSource;
 import magic.model.action.ChangeCountersAction;
-import magic.model.action.MoveCardAction;
-import magic.model.action.RemoveCardAction;
+import magic.model.action.ShiftCardAction;
 import magic.model.stack.MagicAbilityOnStack;
 import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicTriggerType;
@@ -64,8 +63,7 @@ public class MagicSuspendActivation extends MagicCardAbilityActivation {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
                     final MagicCard card = event.getCard();
-                    game.doAction(new MoveCardAction(card, MagicLocationType.OwnersHand, MagicLocationType.Exile));
-                    game.doAction(new RemoveCardAction(card,MagicLocationType.OwnersHand));
+                    game.doAction(new ShiftCardAction(card, MagicLocationType.OwnersHand, MagicLocationType.Exile));
                     game.doAction(new ChangeCountersAction(card, MagicCounterType.Time, amount));
                 }
             },

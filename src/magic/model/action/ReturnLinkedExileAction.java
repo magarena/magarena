@@ -44,15 +44,15 @@ public class ReturnLinkedExileAction extends MagicAction {
         exiledList = new MagicCardList(source.getExiledCards());
         for (final MagicCard card : cardList) {
             if (card.isInExile()) {
-                game.doAction(new RemoveCardAction(card,MagicLocationType.Exile));
                 if (location == MagicLocationType.Play) {
+                    game.doAction(new RemoveCardAction(card,MagicLocationType.Exile));
                     game.doAction(new PlayCardAction(
                         card,
                         controller.isValid() ? controller : card.getOwner(),
                         modifications
                     ));
                 } else {
-                    game.doAction(new MoveCardAction(card,MagicLocationType.Exile,location));
+                    game.doAction(new ShiftCardAction(card,MagicLocationType.Exile,location));
                 }
             }
         }

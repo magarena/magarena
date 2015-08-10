@@ -6,8 +6,7 @@ import magic.model.MagicGame;
 import magic.model.MagicLocationType;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
-import magic.model.action.MoveCardAction;
-import magic.model.action.RemoveCardAction;
+import magic.model.action.ShiftCardAction;
 import magic.model.condition.MagicCondition;
 import magic.model.condition.MagicConditionFactory;
 
@@ -35,8 +34,7 @@ public class MagicMillEvent extends MagicEvent{
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicCardList exile = new MagicCardList(event.getPlayer().getLibrary().getCardsFromTop(event.getRefInt()));
             for (final MagicCard card : exile) {
-                game.doAction(new RemoveCardAction(card,MagicLocationType.OwnersLibrary));
-                game.doAction(new MoveCardAction(card,MagicLocationType.OwnersLibrary,MagicLocationType.Graveyard));
+                game.doAction(new ShiftCardAction(card,MagicLocationType.OwnersLibrary,MagicLocationType.Graveyard));
             }
         }
     };

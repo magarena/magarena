@@ -12,8 +12,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             for (final MagicCard card : event.getRefPlayer().getLibrary().getCardsFromTop(10)) {
-                game.doAction(new RemoveCardAction(card, MagicLocationType.OwnersLibrary));
-                game.doAction(new MoveCardAction(card, MagicLocationType.OwnersLibrary, MagicLocationType.Exile));
+                game.doAction(new ShiftCardAction(card, MagicLocationType.OwnersLibrary, MagicLocationType.Exile));
             }
         }
     }

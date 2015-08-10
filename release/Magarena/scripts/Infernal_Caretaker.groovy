@@ -11,8 +11,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             ZOMBIE_CARD_FROM_ALL_GRAVEYARDS.filter(event) each {
-                game.doAction(new RemoveCardAction(it, MagicLocationType.Graveyard));
-                game.doAction(new MoveCardAction(it, MagicLocationType.Graveyard,MagicLocationType.OwnersHand));
+                game.doAction(new ShiftCardAction(it, MagicLocationType.Graveyard,MagicLocationType.OwnersHand));
             }
         }
     }

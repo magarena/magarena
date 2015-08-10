@@ -11,8 +11,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             CREATURE_CARD_FROM_GRAVEYARD.filter(event) each {
-                game.doAction(new RemoveCardAction(it, MagicLocationType.Graveyard));
-                game.doAction(new MoveCardAction(it, MagicLocationType.Graveyard, MagicLocationType.Exile));
+                game.doAction(new ShiftCardAction(it, MagicLocationType.Graveyard, MagicLocationType.Exile));
             }
         }
     }

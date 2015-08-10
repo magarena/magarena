@@ -18,8 +18,7 @@ def choice = new MagicTargetChoice("an enchantment card from your library");
             if (event.isYes()){
                 final MagicCard card = event.getPermanent().getCard();
                 if (card.isInGraveyard()) {
-                    game.doAction(new RemoveCardAction(card,MagicLocationType.Graveyard));
-                    game.doAction(new MoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.Exile));
+                    game.doAction(new ShiftCardAction(card,MagicLocationType.Graveyard,MagicLocationType.Exile));
                     game.addEvent(new MagicSearchOntoBattlefieldEvent(
                         event.getSource(),
                         event.getPlayer(),

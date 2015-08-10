@@ -22,8 +22,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processChosenCards(game, {
-                game.doAction(new RemoveCardAction(it,MagicLocationType.Graveyard));
-                game.doAction(new MoveCardAction(it,MagicLocationType.Graveyard,MagicLocationType.BottomOfOwnersLibrary));
+                game.doAction(new ShiftCardAction(it, MagicLocationType.Graveyard, MagicLocationType.BottomOfOwnersLibrary));
             }); 
         }
     }

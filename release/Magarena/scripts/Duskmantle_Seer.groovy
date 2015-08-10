@@ -16,8 +16,7 @@
                 for (final MagicCard card : player.getLibrary().getCardsFromTop(1)) {
                     game.doAction(new RevealAction(card));
                     game.doAction(new ChangeLifeAction(player, -card.getConvertedCost()));
-                    game.doAction(new RemoveCardAction(card, MagicLocationType.OwnersLibrary));
-                    game.doAction(new MoveCardAction(
+                    game.doAction(new ShiftCardAction(
                         card,
                         MagicLocationType.OwnersLibrary,
                         MagicLocationType.OwnersHand

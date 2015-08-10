@@ -57,8 +57,7 @@ def TARGET_SPIRIT_PERMANENT_FROM_GRAVEYARD = new MagicTargetChoice(
                 event.processTargetCard(game, {
                     final MagicCard card = event.getPermanent().getCard();
                     if (card.isInGraveyard()) {
-                        game.doAction(new RemoveCardAction(card,MagicLocationType.Graveyard));
-                        game.doAction(new MoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.Exile));
+                        game.doAction(new ShiftCardAction(card,MagicLocationType.Graveyard,MagicLocationType.Exile));
                         game.doAction(new ReanimateAction(
                             it,
                             event.getPlayer()

@@ -14,11 +14,7 @@
             final MagicCardList top2 = event.getPlayer().getLibrary().getCardsFromTop(2) ;
             game.doAction(new RevealAction(top2));
             for (final MagicCard top : top2) {
-                game.doAction(new RemoveCardAction(
-                    top,
-                    MagicLocationType.OwnersLibrary
-                ));
-                game.doAction(new MoveCardAction(
+                game.doAction(new ShiftCardAction(
                     top,
                     MagicLocationType.OwnersLibrary,
                     top.hasType(MagicType.Creature) || top.hasType(MagicType.Land) ?

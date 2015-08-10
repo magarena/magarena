@@ -14,8 +14,9 @@
             final MagicCardList top3 = event.getPlayer().getLibrary().getCardsFromTop(3) ;
             game.doAction(new RevealAction(top3));
             for (final MagicCard top : top3) {
-                game.doAction(new RemoveCardAction(top, MagicLocationType.OwnersLibrary));
-                game.doAction(new MoveCardAction(top, MagicLocationType.OwnersLibrary,
+                game.doAction(new ShiftCardAction(
+                    top, 
+                    MagicLocationType.OwnersLibrary,
                     top.hasType(MagicType.Creature) ?
                         MagicLocationType.OwnersHand :
                         MagicLocationType.Graveyard

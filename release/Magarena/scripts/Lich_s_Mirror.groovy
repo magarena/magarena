@@ -21,11 +21,7 @@
 
             final MagicCardList hand = new MagicCardList(player.getHand());
             for (final MagicCard card : hand) {
-                game.doAction(new RemoveCardAction(
-                    card,
-                    MagicLocationType.OwnersHand
-                ));
-                game.doAction(new MoveCardAction(
+                game.doAction(new ShiftCardAction(
                     card,
                     MagicLocationType.OwnersHand,
                     MagicLocationType.OwnersLibrary
@@ -34,11 +30,7 @@
             
             final MagicCardList graveyard = new MagicCardList(player.getGraveyard());
             for (final MagicCard card : graveyard) {
-                game.doAction(new RemoveCardAction(
-                    card,
-                    MagicLocationType.Graveyard
-                ));
-                game.doAction(new MoveCardAction(
+                game.doAction(new ShiftCardAction(
                     card,
                     MagicLocationType.Graveyard,
                     MagicLocationType.OwnersLibrary

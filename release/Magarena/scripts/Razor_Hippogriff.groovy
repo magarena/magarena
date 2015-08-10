@@ -17,8 +17,7 @@ def choice = new MagicTargetChoice("target artifact card from your graveyard");
             event.processTargetCard(game, {
                 final int amount = it.getConvertedCost();
                 game.logAppendValue(event.getPlayer(),amount);
-                game.doAction(new RemoveCardAction(it, MagicLocationType.Graveyard));
-                game.doAction(new MoveCardAction(it, MagicLocationType.Graveyard, MagicLocationType.OwnersHand));
+                game.doAction(new ShiftCardAction(it, MagicLocationType.Graveyard, MagicLocationType.OwnersHand));
                 game.doAction(new ChangeLifeAction(event.getPlayer(), amount));
             });
         }

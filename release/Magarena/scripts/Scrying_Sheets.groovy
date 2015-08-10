@@ -4,8 +4,7 @@ def action = {
         final MagicCard card = event.getRefCard();
         final MagicPlayer player = event.getPlayer();
         game.doAction(new RevealAction(card));
-        game.doAction(new MoveCardAction(card, MagicLocationType.OwnersLibrary, MagicLocationType.OwnersHand));
-        game.doAction(new RemoveCardAction(card, MagicLocationType.OwnersLibrary));
+        game.doAction(new ShiftCardAction(card, MagicLocationType.OwnersLibrary, MagicLocationType.OwnersHand));
         game.logAppendMessage(player, "${player} puts (${card}) into his or her hand.")
     }
 }

@@ -5,8 +5,11 @@
             if (damage.isTargetPlayer()) {
                 final int amount = damage.replace();
                 damage.getTargetPlayer().getLibrary().getCardsFromTop(amount) each {
-                    game.doAction(new RemoveCardAction(it,MagicLocationType.OwnersLibrary));
-                    game.doAction(new MoveCardAction(it,MagicLocationType.OwnersLibrary,MagicLocationType.Exile));
+                    game.doAction(new ShiftCardAction(
+                        it,
+                        MagicLocationType.OwnersLibrary,
+                        MagicLocationType.Exile
+                    ));
                 }
             }
             return MagicEvent.NONE;

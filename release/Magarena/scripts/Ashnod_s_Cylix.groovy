@@ -4,10 +4,8 @@ def TakeCard = {
         final MagicCard chosen ->
         final MagicCardList library = new MagicCardList(event.getPlayer().getLibrary().getCardsFromTop(3));
         for (final MagicCard card : library) {
-            if (card == chosen) {
-            } else {
-                game.doAction(new MoveCardAction(card, MagicLocationType.OwnersLibrary, MagicLocationType.Exile));
-                game.doAction(new RemoveCardAction(card, MagicLocationType.OwnersLibrary));
+            if (card != chosen) {
+                game.doAction(new ShiftCardAction(card, MagicLocationType.OwnersLibrary, MagicLocationType.Exile));
             }
         }
     });

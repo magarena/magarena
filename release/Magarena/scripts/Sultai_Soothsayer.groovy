@@ -5,11 +5,9 @@ def TakeCard = {
         final MagicCardList library = new MagicCardList(event.getPlayer().getLibrary().getCardsFromTop(4));
         for (final MagicCard card : library) {
             if (card == chosen) { // Not a draw action, card is 'put' into hand
-                game.doAction(new MoveCardAction(card, MagicLocationType.OwnersLibrary, MagicLocationType.OwnersHand));
-                game.doAction(new RemoveCardAction(card, MagicLocationType.OwnersLibrary));
+                game.doAction(new ShiftCardAction(card, MagicLocationType.OwnersLibrary, MagicLocationType.OwnersHand));
             } else { // Not a discard action, card is 'put' into graveyard
-                game.doAction(new MoveCardAction(card, MagicLocationType.OwnersLibrary, MagicLocationType.Graveyard));
-                game.doAction(new RemoveCardAction(card, MagicLocationType.OwnersLibrary));
+                game.doAction(new ShiftCardAction(card, MagicLocationType.OwnersLibrary, MagicLocationType.Graveyard));
             }
         }
     });

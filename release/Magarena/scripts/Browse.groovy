@@ -2,15 +2,15 @@ def TakeCard = {
     final MagicGame game, final MagicEvent event ->
     event.processChosenCards(game, {
         final MagicCard chosen ->
-        final MagicCardList library = new MagicCardList(event.getPlayer().getLibrary().getCardsFromTop(5));
-        for (final MagicCard card : library) {
-            if (card == chosen) { //Isn't a draw action, a card is 'put' into hand
-                game.doAction(new MoveCardAction(chosen, MagicLocationType.OwnersLibrary, MagicLocationType.OwnersHand));
-                game.doAction(new RemoveCardAction(chosen, MagicLocationType.OwnersLibrary));
-            } else {
-                game.doAction(new MoveCardAction(card, MagicLocationType.OwnersLibrary, MagicLocationType.Exile));
-                game.doAction(new RemoveCardAction(card, MagicLocationType.OwnersLibrary));
-            }
+        final MagicCardList top = new MagicCardList(event.getPlayer().getLibrary().getCardsFromTop(5));
+        for (final MagicCard card : top) {
+            game.doAction(new ShiftCardAction(
+                card, 
+                MagicLocationType.OwnersLibrary,
+                card == chosen ?
+                    MagicLocationType.OwnersHand :
+                    MagicLocationType.Exile
+            ));
         }
     });
 }

@@ -85,12 +85,10 @@ def FATESEAL = {
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
                 for (final MagicCard card : new MagicCardList(it.getLibrary())) {
-                    game.doAction(new RemoveCardAction(card, MagicLocationType.OwnersLibrary));
-                    game.doAction(new MoveCardAction(card, MagicLocationType.OwnersLibrary, MagicLocationType.Exile));
+                    game.doAction(new ShiftCardAction(card, MagicLocationType.OwnersLibrary, MagicLocationType.Exile));
                 }
                 for (final MagicCard hand : new MagicCardList(it.getHand())) {
-                    game.doAction(new RemoveCardAction(hand, MagicLocationType.OwnersHand));
-                    game.doAction(new MoveCardAction(hand, MagicLocationType.OwnersHand, MagicLocationType.OwnersLibrary));
+                    game.doAction(new ShiftCardAction(hand, MagicLocationType.OwnersHand, MagicLocationType.OwnersLibrary));
                 }
             });
         }

@@ -25,11 +25,7 @@ public class MillLibraryAction extends MagicAction {
         final MagicCardList topN = player.getLibrary().getCardsFromTop(amount);
         for (final MagicCard card : topN) {
             milledCards.add(card);
-            game.doAction(new RemoveCardAction(
-                card,
-                MagicLocationType.OwnersLibrary
-            ));
-            game.doAction(new MoveCardAction(
+            game.doAction(new ShiftCardAction(
                 card,
                 MagicLocationType.OwnersLibrary,
                 MagicLocationType.Graveyard

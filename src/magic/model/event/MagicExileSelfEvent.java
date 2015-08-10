@@ -3,8 +3,7 @@ package magic.model.event;
 import magic.model.MagicCard;
 import magic.model.MagicGame;
 import magic.model.MagicLocationType;
-import magic.model.action.MoveCardAction;
-import magic.model.action.RemoveCardAction;
+import magic.model.action.ShiftCardAction;
 
 public class MagicExileSelfEvent extends MagicEvent {
 
@@ -22,11 +21,7 @@ public class MagicExileSelfEvent extends MagicEvent {
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicCard card = event.getCard();
             final MagicLocationType fromLocation = MagicLocationType.values()[event.getRefInt()];
-            game.doAction(new RemoveCardAction(
-                card,
-                fromLocation
-            ));
-            game.doAction(new MoveCardAction(
+            game.doAction(new ShiftCardAction(
                 card,
                 fromLocation,
                 MagicLocationType.Exile

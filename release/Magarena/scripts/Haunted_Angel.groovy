@@ -11,9 +11,11 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicCard card = event.getPermanent().getCard();
-            game.doAction(new RemoveCardAction(card, MagicLocationType.Graveyard));
-            game.doAction(new MoveCardAction(card, MagicLocationType.Graveyard, MagicLocationType.Exile));
+            game.doAction(new ShiftCardAction(
+                event.getPermanent().getCard(),
+                MagicLocationType.Graveyard,
+                MagicLocationType.Exile
+            ));
             game.doAction(new PlayTokenAction(
                 event.getPlayer().getOpponent(),
                 CardDefinitions.getToken("3/3 black Angel creature token with flying")

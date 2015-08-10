@@ -7,7 +7,7 @@ import magic.model.MagicManaCost;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.action.MoveCardAction;
-import magic.model.action.RemoveCardAction;
+import magic.model.action.ShiftCardAction;
 import magic.model.action.CastCardAction;
 import magic.model.action.EnqueueTriggerAction;
 import magic.model.choice.MagicMayChoice;
@@ -81,8 +81,7 @@ public class MagicMadnessTrigger extends MagicWhenPutIntoGraveyardTrigger {
                         MagicLocationType.Graveyard
                     ));
                 } else {
-                    game.doAction(new RemoveCardAction(card, MagicLocationType.Exile));
-                    game.doAction(new MoveCardAction(event.getCard(),MagicLocationType.Exile,MagicLocationType.Graveyard));
+                    game.doAction(new ShiftCardAction(event.getCard(),MagicLocationType.Exile,MagicLocationType.Graveyard));
                 }
             }
         }

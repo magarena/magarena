@@ -7,8 +7,7 @@ import magic.model.MagicLocationType;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicType;
-import magic.model.action.MoveCardAction;
-import magic.model.action.RemoveCardAction;
+import magic.model.action.ShiftCardAction;
 import magic.model.action.CastCardAction;
 import magic.model.choice.MagicMayChoice;
 import magic.model.event.MagicEvent;
@@ -44,11 +43,7 @@ public class MagicCascadeTrigger extends MagicWhenSpellIsCastTrigger {
         // whose converted mana cost is less than this spell's converted mana cost. 
         while (nonland == MagicCard.NONE && library.isEmpty() == false) {
             final MagicCard top = library.getCardAtTop();
-            game.doAction(new RemoveCardAction(
-                top,
-                MagicLocationType.OwnersLibrary
-            ));
-            game.doAction(new MoveCardAction(
+            game.doAction(new ShiftCardAction(
                 top,
                 MagicLocationType.OwnersLibrary,
                 MagicLocationType.Exile
@@ -101,11 +96,7 @@ public class MagicCascadeTrigger extends MagicWhenSpellIsCastTrigger {
             cards.shuffle();
             for (final MagicCard card : cards) {
                 if (card.isInExile()) {
-                    game.doAction(new RemoveCardAction(
-                        card,
-                        MagicLocationType.Exile
-                    ));
-                    game.doAction(new MoveCardAction(
+                    game.doAction(new ShiftCardAction(
                         card,
                         MagicLocationType.Exile,
                         MagicLocationType.BottomOfOwnersLibrary

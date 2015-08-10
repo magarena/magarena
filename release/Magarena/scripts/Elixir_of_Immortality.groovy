@@ -25,16 +25,11 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
             game.doAction(new ChangeLifeAction(player, 5));
-
             game.doAction(new RemoveFromPlayAction(event.getPermanent(), MagicLocationType.OwnersLibrary));
             
             final MagicCardList graveyard = new MagicCardList(player.getGraveyard());
             for (final MagicCard card : graveyard) {
-                game.doAction(new RemoveCardAction(
-                    card,
-                    MagicLocationType.Graveyard
-                ));
-                game.doAction(new MoveCardAction(
+                game.doAction(new ShiftCardAction(
                     card,
                     MagicLocationType.Graveyard,
                     MagicLocationType.OwnersLibrary

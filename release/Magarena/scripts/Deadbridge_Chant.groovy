@@ -21,8 +21,11 @@
                         player
                     ));
                 } else {
-                    game.doAction(new RemoveCardAction(card,MagicLocationType.Graveyard));
-                    game.doAction(new MoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.OwnersHand));
+                    game.doAction(new ShiftCardAction(
+                        card,
+                        MagicLocationType.Graveyard,
+                        MagicLocationType.OwnersHand
+                    ));
                     game.logAppendMessage(player, "${player.getName()} returns (${card.getName()}) to his or her hand.");
                 }
             }
