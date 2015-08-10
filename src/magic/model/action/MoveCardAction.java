@@ -104,7 +104,6 @@ public class MoveCardAction extends MagicAction {
 
     @Override
     public void undoAction(final MagicGame game) {
-
         if (!card.isToken()) {
             final MagicPlayer owner=card.getOwner();
             switch (toLocation) {
