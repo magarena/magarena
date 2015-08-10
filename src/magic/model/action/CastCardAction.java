@@ -46,7 +46,7 @@ public class CastCardAction extends MagicAction {
         for (final MagicEvent event : withoutManaCost ? card.getAdditionalCostEvent() : card.getCostEvent()) {
             game.addEvent(event);
         }
-        game.addEvent(new MagicPutCardOnStackEvent(card, player, MagicLocationType.Exile, MagicLocationType.Graveyard));
+        game.addEvent(new MagicPutCardOnStackEvent(card, player, from, to));
     }
 
     @Override
