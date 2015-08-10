@@ -230,6 +230,31 @@ public class MagicCard
         aiKnown = bool;
     }
 
+    public boolean isIn(final MagicLocationType loc) {
+        switch (loc) {
+            case Stack:
+                return isOnStack();
+            case Play:
+                return isOnBattlefield();
+            case OwnersHand:
+                return isInHand();
+            case OwnersLibrary:
+                return isInLibrary();
+            case TopOfOwnersLibrary:
+                return getOwner().getLibrary().getCardAtTop() == this;
+            case BottomOfOwnersLibrary:
+                return getOwner().getLibrary().getCardAtBottom() == this;
+            case Graveyard:
+                return isInGraveyard();
+            case OpponentsGraveyard:
+                return false;
+            case Exile:
+                return isInExile();
+            default:
+                throw new RuntimeException("unknown location: \"" + loc + "\"");
+        }
+    }
+
     public boolean isInHand() {
         return getOwner().getHand().contains(this);
     }
