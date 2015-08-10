@@ -1,0 +1,36 @@
+
+package magic.test;
+
+import magic.model.MagicDuel;
+import magic.model.MagicGame;
+import magic.model.MagicPlayer;
+import magic.model.MagicDeckProfile;
+import magic.model.phase.*;
+import magic.ai.MagicAIImpl;
+
+class TestColfenorsUrn extends TestGameBuilder {
+    public MagicGame getGame() {
+        final MagicDuel duel=createDuel(MagicAIImpl.MCTS, 6);
+        final MagicGame game=duel.nextGame();
+        game.setPhase(MagicUpkeepPhase.getInstance());
+        final MagicPlayer player=game.getPlayer(0);
+        final MagicPlayer opponent=game.getPlayer(1);
+
+        MagicPlayer P = player;
+
+        P.setLife(1);
+        addToLibrary(P, "Plains", 20);
+        createPermanent(P, "Plains", false, 5);
+        createPermanent(P, "Megatog", false, 3);
+        createPermanent(P, "Colfenor's Urn", false, 1);
+        addToHand(P, "Wrath of God", 1);
+        
+        P = opponent;
+
+        P.setLife(2);
+        addToLibrary(P, "Plains", 20);
+        createPermanent(P, "Plains", false, 5);
+
+        return game;
+    }
+}
