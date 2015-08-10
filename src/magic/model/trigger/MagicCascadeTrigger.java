@@ -53,39 +53,49 @@ public class MagicCascadeTrigger extends MagicWhenSpellIsCastTrigger {
                 nonland = top;
             }
         }
-        // You may cast that card without paying its mana cost. But paying additional costs.
-        //FIXME: Needs to check that additional costs can be paid/casting conditions are met.
+        // You may cast that card without paying its mana cost.
+        // Then put all cards exiled this way that weren't cast on the bottom of your library in random order
         if (nonland.isInExile()) {
             game.addEvent(new MagicEvent(
                 event.getSource(),
                 event.getPlayer(),
                 new MagicMayChoice("Cast " + nonland + " without paying its mana cost?"),
-                nonland,
+                exiled,
                 CAST_ACTION,
-                "You may$ cast RN without paying its mana cost."
+                "PN may$ cast RN without paying its mana cost. " + 
+                "Then put all cards exiled this way that weren't cast on the bottom of PN's library in random order."
+            ));
+        } else {
+            game.addEvent(new MagicEvent(
+                event.getSource(),
+                event.getPlayer(),
+                exiled,
+                RESTORE_CARDS,
+                "Put all cards exiled this way that weren't cast on the bottom of PN's library in random order."
             ));
         }
-        // Then put all cards exiled this way that weren't cast on the bottom of your library in random order
-        game.addEvent(new MagicEvent(
-            event.getSource(),
-            event.getPlayer(),
-            exiled,
-            RESTORE_CARDS,
-            "Put all cards exiled this way that weren't cast on the bottom of PN's library in random order"
-        ));
     }
 
     private final MagicEventAction CAST_ACTION = new MagicEventAction() {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
+            final MagicCardList exiled = new MagicCardList(event.getRefCardList());
             if (event.isYes()) {
+                final MagicCard card = exiled.removeCardAtTop();
                 game.doAction(CastCardAction.WithoutManaCost(
                     event.getPlayer(),
-                    event.getRefCard(),
+                    card,
                     MagicLocationType.Exile,
                     MagicLocationType.Graveyard
                 ));
             }
+            game.addEvent(new MagicEvent(
+                event.getSource(),
+                event.getPlayer(),
+                exiled,
+                RESTORE_CARDS,
+                ""
+            ));
         }
     };
     
@@ -95,13 +105,11 @@ public class MagicCascadeTrigger extends MagicWhenSpellIsCastTrigger {
             final MagicCardList cards = event.getRefCardList();
             cards.shuffle();
             for (final MagicCard card : cards) {
-                if (card.isInExile()) {
-                    game.doAction(new ShiftCardAction(
-                        card,
-                        MagicLocationType.Exile,
-                        MagicLocationType.BottomOfOwnersLibrary
-                    ));
-                }
+                game.doAction(new ShiftCardAction(
+                    card,
+                    MagicLocationType.Exile,
+                    MagicLocationType.BottomOfOwnersLibrary
+                ));
             }
         }
     };

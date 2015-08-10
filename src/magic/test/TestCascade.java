@@ -16,8 +16,8 @@ class TestCascade extends TestGameBuilder {
         MagicPlayer P = player;
 
         P.setLife(13);
-        addToLibrary(P, "Lightning Bolt", 1);
         addToLibrary(P, "Fling", 1);
+        addToLibrary(P, "Lightning Bolt", 1);
         addToGraveyard(P, "Lightning Bolt", 1);
         createPermanent(P, "Mountain", false, 8);
         createPermanent(P, "Chromatic Lantern", false, 1);
@@ -28,9 +28,7 @@ class TestCascade extends TestGameBuilder {
         P.setLife(13);
         addToLibrary(P, "Forest", 20);
         addToLibrary(P, "Grizzly Bears", 1);
-        addToHand(P, "Brainbite", 1);
         createPermanent(P,"Forest",false,5);
-        createPermanent(P, "Glasses of Urza", false, 1);
         addToGraveyard(P, "Grizzly Bears", 1);
 
         return game;
