@@ -17,7 +17,7 @@ public class ReturnExiledAction extends MagicAction {
             exiledUntilEndOfTurn=new MagicCardList(gameExiledUntilEndOfTurn);
             for (final MagicCard card : gameExiledUntilEndOfTurn) {
                 final MagicPlayer owner=card.getOwner();
-                if (owner.getExile().contains(card)) {
+                if (card.isInExile()) {
                     game.doAction(new RemoveCardAction(card,MagicLocationType.Exile));
                     game.doAction(new PlayCardAction(card,owner));
                     game.logMessage(

@@ -65,10 +65,6 @@ public class RemoveCardAction extends MagicAction {
         }
     }
 
-    public boolean isValid() {
-        return index >= 0;
-    }
-
     @Override
     public String toString() {
         return getClass().getSimpleName()+" ("+card.getName()+")";

@@ -210,9 +210,8 @@ public enum MagicRuleEventAction {
                     it,
                     MagicLocationType.Exile
                 ));
-                final RemoveCardAction removeCard = new RemoveCardAction(it.getCard(), MagicLocationType.Exile);
-                game.doAction(removeCard);
-                if (removeCard.isValid()) {
+                if (it.getCard().isInExile()) {
+                    game.doAction(new RemoveCardAction(it.getCard(), MagicLocationType.Exile));
                     game.doAction(new PlayCardAction(
                         it.getCard(),
                         event.getPlayer()
@@ -236,9 +235,8 @@ public enum MagicRuleEventAction {
                             it,
                             MagicLocationType.Exile
                         ));
-                        final RemoveCardAction removeCard = new RemoveCardAction(it.getCard(), MagicLocationType.Exile);
-                        game.doAction(removeCard);
-                        if (removeCard.isValid()) {
+                        if (it.getCard().isInExile()) {
+                            game.doAction(new RemoveCardAction(it.getCard(), MagicLocationType.Exile));
                             game.doAction(new PlayCardAction(
                                 it.getCard(),
                                 event.getPlayer()
@@ -261,9 +259,8 @@ public enum MagicRuleEventAction {
                     it,
                     MagicLocationType.Exile
                 ));
-                final RemoveCardAction removeCard = new RemoveCardAction(it.getCard(), MagicLocationType.Exile);
-                game.doAction(removeCard);
-                if (removeCard.isValid()) {
+                if (it.getCard().isInExile()) {
+                    game.doAction(new RemoveCardAction(it.getCard(), MagicLocationType.Exile));
                     game.doAction(new PlayCardAction(
                         it.getCard(),
                         it.getOwner()
@@ -287,9 +284,8 @@ public enum MagicRuleEventAction {
                             it,
                             MagicLocationType.Exile
                         ));
-                        final RemoveCardAction removeCard = new RemoveCardAction(it.getCard(), MagicLocationType.Exile);
-                        game.doAction(removeCard);
-                        if (removeCard.isValid()) {
+                        if (it.getCard().isInExile()) {
+                            game.doAction(new RemoveCardAction(it.getCard(), MagicLocationType.Exile));
                             game.doAction(new PlayCardAction(
                                 it.getCard(),
                                 it.getOwner()
