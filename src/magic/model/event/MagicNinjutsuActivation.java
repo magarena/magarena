@@ -7,7 +7,7 @@ import magic.model.MagicManaCost;
 import magic.model.MagicPayedCost;
 import magic.model.action.PlayCardAction;
 import magic.model.action.MagicPlayMod;
-import magic.model.action.RemoveCardAction;
+import magic.model.action.ReturnCardAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
 
@@ -52,10 +52,9 @@ public class MagicNinjutsuActivation extends MagicCardAbilityActivation {
                 
     @Override
     public void executeEvent(final MagicGame game, final MagicEvent event) {
-        final MagicCard card = event.getCard();
-        game.doAction(new RemoveCardAction(card,MagicLocationType.OwnersHand));
-        game.doAction(new PlayCardAction(
-            card,
+        game.doAction(new ReturnCardAction(
+            MagicLocationType.OwnersHand,
+            event.getCard(),
             event.getPlayer(),
             MagicPlayMod.TAPPED, MagicPlayMod.ATTACKING
         ));

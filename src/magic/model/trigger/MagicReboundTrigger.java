@@ -9,7 +9,6 @@ import magic.model.MagicPayedCost;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.choice.MagicMayChoice;
 import magic.model.event.MagicEvent;
-import magic.model.action.RemoveCardAction;
 import magic.model.action.RemoveTriggerAction;
 import magic.model.action.CastCardAction;
 

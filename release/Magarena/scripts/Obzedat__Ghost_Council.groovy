@@ -21,17 +21,12 @@ def DelayedTrigger = {
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicCard card = event.getCard();
-            if (card.isInExile()) {
-                game.doAction(new RemoveCardAction(
-                    card,
-                    MagicLocationType.Exile
-                ));
-                game.doAction(new PlayCardAction(
-                    card,
-                    [MagicPlayMod.HASTE]
-                ));
-            }
+            game.doAction(new ReturnCardAction(
+                MagicLocationType.Exile,
+                event.getCard(),
+                event.getPlayer(),
+                [MagicPlayMod.HASTE]
+            ));
         }
     };
 }

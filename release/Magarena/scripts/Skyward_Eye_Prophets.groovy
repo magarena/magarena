@@ -25,8 +25,7 @@
             for (final MagicCard card : cards) {
                 game.doAction(new RevealAction(card));
                 if (card.hasType(MagicType.Land)) {
-                    game.doAction(new RemoveCardAction(card, MagicLocationType.OwnersLibrary));
-                    game.doAction(new PlayCardAction(card, player));
+                    game.doAction(new ReturnCardAction(MagicLocationType.OwnersLibrary, card, player));
                 } else {
                     game.doAction(new ShiftCardAction(card, MagicLocationType.OwnersLibrary, MagicLocationType.OwnersHand));
                 }

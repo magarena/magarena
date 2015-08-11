@@ -210,13 +210,11 @@ public enum MagicRuleEventAction {
                     it,
                     MagicLocationType.Exile
                 ));
-                if (it.getCard().isInExile()) {
-                    game.doAction(new RemoveCardAction(it.getCard(), MagicLocationType.Exile));
-                    game.doAction(new PlayCardAction(
-                        it.getCard(),
-                        event.getPlayer()
-                    ));
-                }
+                game.doAction(new ReturnCardAction(
+                    MagicLocationType.Exile,
+                    it.getCard(),
+                    event.getPlayer()
+                ));
             }
         }
     ),
@@ -235,13 +233,11 @@ public enum MagicRuleEventAction {
                             it,
                             MagicLocationType.Exile
                         ));
-                        if (it.getCard().isInExile()) {
-                            game.doAction(new RemoveCardAction(it.getCard(), MagicLocationType.Exile));
-                            game.doAction(new PlayCardAction(
-                                it.getCard(),
-                                event.getPlayer()
-                            ));
-                        }
+                        game.doAction(new ReturnCardAction(
+                            MagicLocationType.Exile,
+                            it.getCard(),
+                            event.getPlayer()
+                        ));
                     }
                 });
             }
@@ -259,13 +255,11 @@ public enum MagicRuleEventAction {
                     it,
                     MagicLocationType.Exile
                 ));
-                if (it.getCard().isInExile()) {
-                    game.doAction(new RemoveCardAction(it.getCard(), MagicLocationType.Exile));
-                    game.doAction(new PlayCardAction(
-                        it.getCard(),
-                        it.getOwner()
-                    ));
-                }
+                game.doAction(new ReturnCardAction(
+                    MagicLocationType.Exile,
+                    it.getCard(),
+                    it.getOwner()
+                ));
             }
         }
     ),
@@ -284,13 +278,11 @@ public enum MagicRuleEventAction {
                             it,
                             MagicLocationType.Exile
                         ));
-                        if (it.getCard().isInExile()) {
-                            game.doAction(new RemoveCardAction(it.getCard(), MagicLocationType.Exile));
-                            game.doAction(new PlayCardAction(
-                                it.getCard(),
-                                it.getOwner()
-                            ));
-                        }
+                        game.doAction(new ReturnCardAction(
+                            MagicLocationType.Exile,
+                            it.getCard(),
+                            it.getOwner()
+                        ));
                     }
                 });
             }

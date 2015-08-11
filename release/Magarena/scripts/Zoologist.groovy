@@ -25,11 +25,8 @@
             for (final MagicCard card : event.getPlayer().getLibrary().getCardsFromTop(1)) {
                 game.doAction(new RevealAction(card));
                 if (card.hasType(MagicType.Creature)) {
-                    game.doAction(new RemoveCardAction(
-                        card,
-                        MagicLocationType.OwnersLibrary
-                    ));
-                    game.doAction(new PlayCardAction(
+                    game.doAction(new ReturnCardAction(
+                        MagicLocationType.OwnersLibrary,
                         card,
                         event.getPlayer()
                     ));
