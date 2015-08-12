@@ -91,7 +91,9 @@ public enum MagicCostEvent {
     DiscardChosen("Discard " + ARG.ANY) {
         public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
             final String chosen = ARG.any(arg) + " from your hand";
-            return new MagicDiscardChosenEvent(source, new MagicTargetChoice(chosen));
+            final MagicTargetFilter<MagicCard> regular = MagicTargetFilterFactory.Card(chosen);
+            final MagicTargetFilter<MagicCard> filter = (source instanceof MagicCard) ? new MagicOtherCardTargetFilter(regular, (MagicCard)source) : regular;
+            return new MagicDiscardChosenEvent(source, new MagicTargetChoice(filter, chosen));
         }
     },
     ExileSelf("Exile SN") {
