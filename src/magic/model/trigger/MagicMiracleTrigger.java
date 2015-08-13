@@ -4,11 +4,13 @@ import magic.model.MagicCard;
 import magic.model.MagicGame;
 import magic.model.MagicManaCost;
 import magic.model.MagicPermanent;
+import magic.model.MagicLocationType;
 import magic.model.choice.MagicMayChoice;
 import magic.model.choice.MagicPayManaCostChoice;
 import magic.model.event.MagicActivation;
 import magic.model.event.MagicEvent;
 import magic.model.action.AIRevealAction;
+import magic.model.action.CastCardAction;
 
 public class MagicMiracleTrigger extends MagicWhenDrawnTrigger {
 
@@ -34,11 +36,15 @@ public class MagicMiracleTrigger extends MagicWhenDrawnTrigger {
     }
     @Override
     public void executeEvent(final MagicGame game, final MagicEvent event) {
-        if (event.isYes()) {
-            final MagicCard card = event.getCard();
+        final MagicCard card = event.getCard();
+        if (event.isYes() && card.isInHand()) {
             game.doAction(new AIRevealAction(card));
-            final MagicActivation<MagicCard> act = card.getCardDefinition().getCastActivation();
-            game.addEvent(act.getEvent(card));
+            game.doAction(CastCardAction.WithoutManaCost(
+                event.getPlayer(),
+                card,
+                MagicLocationType.OwnersHand,
+                MagicLocationType.Graveyard
+            ));
         }
     }
 }
