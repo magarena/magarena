@@ -103,7 +103,7 @@ public class MagicCardList extends ArrayList<MagicCard> implements MagicCopyable
         if (index >= 0) {
             remove(index);
         } else {
-            System.err.println("WARNING. Card " + card.getName() + " not found.");
+            throw new RuntimeException("Card " + card.getName() + " not found.");
         }
         return index;
     }
