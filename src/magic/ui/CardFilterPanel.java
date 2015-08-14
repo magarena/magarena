@@ -77,7 +77,7 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
 
     private static final Color TEXT_COLOR = ThemeFactory.getInstance().getCurrentTheme().getTextColor();
     private static final Dimension POPUP_CHECKBOXES_SIZE = new Dimension(200, 150);
-    private static final Dimension FILTER_BUTTON_PREFERRED_SIZE = new Dimension(90, 36);
+    private static final Dimension FILTER_BUTTON_PREFERRED_SIZE = new Dimension(100, 36);
     private static final Dimension FILTER_BUTTON_MINIMUM_SIZE = new Dimension(66, 36);
 
     private final String[] FILTER_CHOICES = {
