@@ -20,7 +20,7 @@ public class TransformAction extends MagicAction {
 
     @Override
     public void doAction(final MagicGame game) {
-        if (permanent.isDoubleFaced()) {
+        if (permanent.isValid() && permanent.isDoubleFaced()) {
             oldStatics = permanent.getStatics();
             
             if (permanent.isTransformed()) {
