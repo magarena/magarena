@@ -8,7 +8,6 @@ import java.awt.event.ComponentAdapter;
 import java.awt.event.ComponentEvent;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-import java.util.ListIterator;
 import javax.swing.BorderFactory;
 import javax.swing.BoxLayout;
 import javax.swing.JPanel;
@@ -43,7 +42,6 @@ public class LogBookViewer extends JPanel {
     private final JPanel messagePanel;
     private final JScrollPane scrollPane;
     private boolean isScrollbarVisible;
-    private boolean isNewMessageAddedToTop;
     private final TitleBar tb;
 
     private final MouseAdapter mouseDispatcher = new MouseAdapter() {
@@ -117,9 +115,7 @@ public class LogBookViewer extends JPanel {
         addComponentListener(new ComponentAdapter() {
             @Override
             public void componentResized(final ComponentEvent arg0) {
-                if (!isNewMessageAddedToTop) {
-                    forceVerticalScrollbarToMax();
-                }
+                forceVerticalScrollbarToMax();
             }
         });
 
@@ -140,32 +136,16 @@ public class LogBookViewer extends JPanel {
     public void update() {
         messagePanel.removeAll();
         synchronized (logBook) {
-            if (!isNewMessageAddedToTop) {
-                // use the default order of messages in logBook list.
-                for (final MagicMessage msg : logBook) {
-                    messagePanel.add(getNewMessagePanel(msg));
-                }
-                forceVerticalScrollbarToMax();
-            } else {
-                // display messages in reverse order.
-                final ListIterator<MagicMessage> listIterator = logBook.listIterator(logBook.size());
-                while(listIterator.hasPrevious()){
-                    messagePanel.add(getNewMessagePanel(listIterator.previous()));
-                }
-                validate();
-                scrollPane.getVerticalScrollBar().setValue(0);
+            for (final MagicMessage msg : logBook) {
+                messagePanel.add(getNewMessagePanel(msg));
             }
+            forceVerticalScrollbarToMax();
         }
     }
 
     public void addMagicMessage(final MagicMessage magicMessage) {
-        if (isNewMessageAddedToTop) {
-            messagePanel.add(getNewMessagePanel(magicMessage), 0);
-            scrollPane.getVerticalScrollBar().setValue(0);
-        } else {
-            messagePanel.add(getNewMessagePanel(magicMessage));
-            forceVerticalScrollbarToMax();
-        }
+        messagePanel.add(getNewMessagePanel(magicMessage));
+        forceVerticalScrollbarToMax();
     }
 
     private MessagePanel getNewMessagePanel(final MagicMessage message) {
