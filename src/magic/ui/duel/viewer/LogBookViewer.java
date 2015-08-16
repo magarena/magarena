@@ -136,15 +136,20 @@ public class LogBookViewer extends JPanel {
     }
 
     public void update() {
+        messagePanels.removeAll();
+        messagesHeight = 0;
         synchronized (logBook) {
-            messagePanels.removeAll();
-            messagesHeight = 0;
             final ListIterator<MagicMessage> itr = getUndoIterator();
             while (itr.hasNext()) {
                 addMessagePanel(getNewMessagePanel(itr.next()));
             }
-            forceVerticalScrollbarToMax();
         }
+        forceVerticalScrollbarToMax();
+    }
+
+    public void addMagicMessage(final MagicMessage magicMessage) {
+        addMessagePanel(getNewMessagePanel(magicMessage));
+        forceVerticalScrollbarToMax();
     }
 
     /**
@@ -176,11 +181,6 @@ public class LogBookViewer extends JPanel {
             messagePanels.remove(0);
         }
         messagesHeight += aPanel.getPreferredSize().height;
-    }
-
-    public void addMagicMessage(final MagicMessage magicMessage) {
-        addMessagePanel(getNewMessagePanel(magicMessage));
-        forceVerticalScrollbarToMax();
     }
 
     private MessagePanel getNewMessagePanel(final MagicMessage message) {
