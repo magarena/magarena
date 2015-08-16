@@ -39,7 +39,7 @@ public class LogBookViewer extends JPanel {
     private static final int INCREMENT=108;
 
     private final MagicLogBook logBook;
-    private final JPanel messagePanel;
+    private final JPanel messagePanels;
     private final JScrollPane scrollPane;
     private boolean isScrollbarVisible;
     private final TitleBar tb;
@@ -70,10 +70,10 @@ public class LogBookViewer extends JPanel {
         centerPanel.setLayout(new BorderLayout());
         add(centerPanel,BorderLayout.CENTER);
 
-        messagePanel=new JPanel();
-        messagePanel.setOpaque(false);
-        messagePanel.setLayout(new BoxLayout(messagePanel,BoxLayout.Y_AXIS));
-        centerPanel.add(messagePanel,BorderLayout.NORTH);
+        messagePanels=new JPanel();
+        messagePanels.setOpaque(false);
+        messagePanels.setLayout(new BoxLayout(messagePanels,BoxLayout.Y_AXIS));
+        centerPanel.add(messagePanels,BorderLayout.NORTH);
 
         scrollPane=new JScrollPane();
         scrollPane.setVisible(GeneralConfig.getInstance().isLogMessagesVisible());
@@ -134,17 +134,17 @@ public class LogBookViewer extends JPanel {
     }
 
     public void update() {
-        messagePanel.removeAll();
+        messagePanels.removeAll();
         synchronized (logBook) {
             for (final MagicMessage msg : logBook) {
-                messagePanel.add(getNewMessagePanel(msg));
+                messagePanels.add(getNewMessagePanel(msg));
             }
             forceVerticalScrollbarToMax();
         }
     }
 
     public void addMagicMessage(final MagicMessage magicMessage) {
-        messagePanel.add(getNewMessagePanel(magicMessage));
+        messagePanels.add(getNewMessagePanel(magicMessage));
         forceVerticalScrollbarToMax();
     }
 
