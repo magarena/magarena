@@ -43,6 +43,7 @@ public class LogBookViewer extends JPanel {
     private final JScrollPane scrollPane;
     private boolean isScrollbarVisible;
     private final TitleBar tb;
+    private int messagesHeight = 0;
 
     private final MouseAdapter mouseDispatcher = new MouseAdapter() {
         @Override
@@ -135,16 +136,26 @@ public class LogBookViewer extends JPanel {
 
     public void update() {
         messagePanels.removeAll();
+        messagesHeight = 0;
         synchronized (logBook) {
             for (final MagicMessage msg : logBook) {
-                messagePanels.add(getNewMessagePanel(msg));
+                addMessagePanel(getNewMessagePanel(msg));
             }
             forceVerticalScrollbarToMax();
         }
     }
 
+    private void addMessagePanel(final MessagePanel aPanel) {
+        messagePanels.add(aPanel);
+        if (messagesHeight > scrollPane.getViewport().getHeight()) {
+            messagesHeight -= messagePanels.getComponent(0).getHeight();
+            messagePanels.remove(0);
+        }
+        messagesHeight += aPanel.getPreferredSize().height;
+    }
+
     public void addMagicMessage(final MagicMessage magicMessage) {
-        messagePanels.add(getNewMessagePanel(magicMessage));
+        addMessagePanel(getNewMessagePanel(magicMessage));
         forceVerticalScrollbarToMax();
     }
 
