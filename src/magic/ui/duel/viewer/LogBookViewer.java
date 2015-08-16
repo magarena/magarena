@@ -8,6 +8,7 @@ import java.awt.event.ComponentAdapter;
 import java.awt.event.ComponentEvent;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.util.ListIterator;
 import javax.swing.BorderFactory;
 import javax.swing.BoxLayout;
 import javax.swing.JPanel;
@@ -135,16 +136,39 @@ public class LogBookViewer extends JPanel {
     }
 
     public void update() {
-        messagePanels.removeAll();
-        messagesHeight = 0;
         synchronized (logBook) {
-            for (final MagicMessage msg : logBook) {
-                addMessagePanel(getNewMessagePanel(msg));
+            messagePanels.removeAll();
+            messagesHeight = 0;
+            final ListIterator<MagicMessage> itr = getUndoIterator();
+            while (itr.hasNext()) {
+                addMessagePanel(getNewMessagePanel(itr.next()));
             }
             forceVerticalScrollbarToMax();
         }
     }
 
+    /**
+     * returns iterator pointing to first visible most recent message.
+     * <p>
+     * only need to create MessagePanels for last X messages that will be visible in the log viewer.
+     */
+    private ListIterator<MagicMessage> getUndoIterator() {
+        final ListIterator<MagicMessage> listIterator = logBook.listIterator(logBook.size());
+        int totalHeight = 0;
+        while (listIterator.hasPrevious()) {
+            final MessagePanel aPanel = getNewMessagePanel(listIterator.previous());
+            if (totalHeight > scrollPane.getViewport().getHeight()) {
+                break;
+            }
+            totalHeight += aPanel.getPreferredSize().height;
+        }
+        return listIterator;
+    }
+
+    /**
+     * adds new MessagePanel displaying the latest log message to end of log viewer
+     * and removes first panel if it is pushed out of view by the new message.
+     */
     private void addMessagePanel(final MessagePanel aPanel) {
         messagePanels.add(aPanel);
         if (messagesHeight > scrollPane.getViewport().getHeight()) {
