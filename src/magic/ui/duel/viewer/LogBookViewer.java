@@ -160,11 +160,8 @@ public class LogBookViewer extends JPanel {
     private ListIterator<MagicMessage> getUndoIterator() {
         final ListIterator<MagicMessage> listIterator = logBook.listIterator(logBook.size());
         int totalHeight = 0;
-        while (listIterator.hasPrevious()) {
+        while (listIterator.hasPrevious() && totalHeight <= scrollPane.getViewport().getHeight()) {
             final MessagePanel aPanel = getNewMessagePanel(listIterator.previous());
-            if (totalHeight > scrollPane.getViewport().getHeight()) {
-                break;
-            }
             totalHeight += aPanel.getPreferredSize().height;
         }
         return listIterator;
