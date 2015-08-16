@@ -202,7 +202,7 @@ public class LogBookViewer extends JPanel {
                     JScrollPane.VERTICAL_SCROLLBAR_NEVER;
     }
 
-    public void forceVerticalScrollbarToMax() {
+    private void forceVerticalScrollbarToMax() {
         scrollPane.validate();
         final JScrollBar scrollbar = scrollPane.getVerticalScrollBar();
         scrollbar.setValue(scrollbar.getMaximum());

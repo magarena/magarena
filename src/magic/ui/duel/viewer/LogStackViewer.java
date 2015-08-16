@@ -24,7 +24,6 @@ public class LogStackViewer extends TexturedPanel implements IStackViewerListene
     public void stackViewerUpdated() {
         setLogStackLayout();
         revalidate();
-        logBookViewer.forceVerticalScrollbarToMax();
     }
 
     /**
