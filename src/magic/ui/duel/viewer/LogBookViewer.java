@@ -20,7 +20,6 @@ import javax.swing.SwingUtilities;
 import magic.data.GeneralConfig;
 import magic.model.MagicLogBook;
 import magic.model.MagicMessage;
-import magic.model.ILogBookListener;
 import magic.model.MagicLogBookEvent;
 import magic.ui.ScreenController;
 import magic.ui.SwingGameController;
