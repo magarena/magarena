@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.Iterator;
 import java.util.ListIterator;
 
-public class MagicLogBook implements Iterable<MagicMessage> {
+public class MagicLogBook {
 
     private List<MagicMessage> messages = new ArrayList<>();
 
@@ -31,11 +31,6 @@ public class MagicLogBook implements Iterable<MagicMessage> {
 
     public int size() {
         return messages.size();
-    }
-
-    @Override
-    public Iterator<MagicMessage> iterator() {
-        return messages.iterator();
     }
 
     public ListIterator<MagicMessage> listIterator(int idx) {
