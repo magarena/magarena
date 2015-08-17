@@ -34,13 +34,11 @@ import magic.exception.UndoClickedException;
 import magic.game.state.GameState;
 import magic.game.state.GameStateFileWriter;
 import magic.game.state.GameStateSnapshot;
-import magic.model.ILogBookListener;
 import magic.model.IUIGameController;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicCardList;
 import magic.model.MagicColor;
 import magic.model.MagicGame;
-import magic.model.MagicLogBookEvent;
 import magic.model.MagicManaCost;
 import magic.model.MagicObject;
 import magic.model.MagicPlayer;
@@ -71,7 +69,7 @@ import magic.ui.duel.viewer.ViewerInfo;
 import magic.ui.screen.MulliganScreen;
 import magic.utility.MagicSystem;
 
-public class SwingGameController implements IUIGameController, ILogBookListener {
+public class SwingGameController implements IUIGameController {
 
     // translatable strings
     private static final String _S1 = "conceded";
@@ -118,9 +116,6 @@ public class SwingGameController implements IUIGameController, ILogBookListener 
         gamePanel = aGamePanel;
         game = aGame;
         clearValidChoices();
-        if (!CONFIG.isLogViewerDisabled()) {
-            game.getLogBook().addListener(this);
-        }
         viewerInfo = new ViewerInfo(game);
 
         setControlKeyMonitor();
@@ -775,20 +770,6 @@ public class SwingGameController implements IUIGameController, ILogBookListener 
         } else {
             SoundEffects.playGameSound(game, SoundEffects.WIN_SOUND);
         }
-    }
-
-    @Override
-    public void messageLogged(final MagicLogBookEvent ev) {
-        SwingUtilities.invokeLater(new Runnable() {
-            @Override
-            public void run() {
-                if (ev.getMagicMessage() == null) {
-                    gamePanel.getLogBookViewer().update();
-                } else {
-                    gamePanel.getLogBookViewer().addMagicMessage(ev.getMagicMessage());
-                }
-            }
-        });
     }
 
     public void showChoiceCardPopup() {

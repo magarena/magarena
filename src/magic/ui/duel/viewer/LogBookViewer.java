@@ -17,9 +17,12 @@ import javax.swing.JPanel;
 import javax.swing.JScrollBar;
 import javax.swing.JScrollPane;
 import javax.swing.border.CompoundBorder;
+import javax.swing.SwingUtilities;
 import magic.data.GeneralConfig;
 import magic.model.MagicLogBook;
 import magic.model.MagicMessage;
+import magic.model.ILogBookListener;
+import magic.model.MagicLogBookEvent;
 import magic.ui.ScreenController;
 import magic.translate.UiString;
 import magic.ui.widget.FontsAndBorders;
@@ -27,7 +30,7 @@ import magic.ui.widget.MessagePanel;
 import magic.ui.widget.TitleBar;
 
 @SuppressWarnings("serial")
-public class LogBookViewer extends JPanel {
+public class LogBookViewer extends JPanel implements ILogBookListener {
 
     // translatable strings
     private static final String _S1 = "Log";
@@ -122,6 +125,21 @@ public class LogBookViewer extends JPanel {
         });
 
         updateTitlebarCaption(false);
+    }
+   
+    // not on EDT, called by MagicLogBook
+    @Override
+    public void messageLogged(final MagicLogBookEvent ev) {
+        SwingUtilities.invokeLater(new Runnable() {
+            @Override
+            public void run() {
+                if (ev.getMagicMessage() == null) {
+                    update();
+                } else {
+                    addMagicMessage(ev.getMagicMessage());
+                }
+            }
+        });
     }
 
     private void updateTitlebarCaption(final boolean showHelpHints) {
