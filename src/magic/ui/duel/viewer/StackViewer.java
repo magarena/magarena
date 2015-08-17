@@ -60,7 +60,6 @@ public class StackViewer extends JPanel implements ChoiceViewer {
         // Title bar
         stackTitleBar = new TitleBar(TITLE_CAPTION);
         add(stackTitleBar, "w 100%");
-        stackTitleBar.setBorder(BorderFactory.createMatteBorder(1, 0, 0, 0, Color.BLACK));
         //
         // Stack scroll pane
         stackScrollablePanel = new ScrollablePanel();
@@ -70,7 +69,7 @@ public class StackViewer extends JPanel implements ChoiceViewer {
         stackScrollPane.setMinimumSize(new Dimension(0, 0));
         stackScrollPane.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_AS_NEEDED);
         stackScrollPane.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
-        stackScrollPane.setBorder(BorderFactory.createMatteBorder(1, 0, 0, 0, Color.BLACK));
+        stackScrollPane.setBorder(null);
     }
 
     public static String getTitle() {
@@ -92,14 +91,12 @@ public class StackViewer extends JPanel implements ChoiceViewer {
             stackScrollablePanel.add(btn, "w 100%");
         }
         stackTitleBar.setText(TITLE_CAPTION + (stack.size() > 0 ? ": " + stack.size() : ""));
+        stackTitleBar.setBorder(BorderFactory.createMatteBorder(1, 0, (stack.size() > 0 ? 1 : 0), 0, Color.BLACK));
 
         // set preferred size for layout manager.
         int preferredHeight =
                 stackTitleBar.getPreferredSize().height +
                 stackScrollablePanel.getPreferredSize().height;
-        if (!isEmpty()) {
-            preferredHeight += 2;
-        }
         setPreferredSize(new Dimension(getWidth(), preferredHeight));
 
         notifyStackViewerUpdated();
