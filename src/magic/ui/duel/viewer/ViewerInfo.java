@@ -13,24 +13,23 @@ public class ViewerInfo {
 
     private final PlayerViewerInfo playerInfo;
     private final PlayerViewerInfo opponentInfo;
-    private final List<StackViewerInfo> stack;
-    private final List<MagicMessage> log;
+    private final List<StackViewerInfo> stack = new ArrayList<>();
+    private final List<MagicMessage> log = new ArrayList<>(MAX_LOG);
+        
+    private static final int MAX_LOG = 50;
 
     public ViewerInfo(final MagicGame game) {
         final MagicPlayer player=game.getVisiblePlayer();
         playerInfo=new PlayerViewerInfo(game,player);
         opponentInfo=new PlayerViewerInfo(game,player.getOpponent());
 
-        stack=new ArrayList<>();
         for (final MagicItemOnStack itemOnStack : game.getStack()) {
             stack.add(new StackViewerInfo(game,itemOnStack));
         }
         
         // get the last maxMsg messages
-        final int maxMsg = 50;
-        log=new ArrayList<>(maxMsg);
         int n = game.getLogBook().size();
-        final Iterator<MagicMessage> iter = game.getLogBook().listIterator(Math.max(0, n - maxMsg));
+        final Iterator<MagicMessage> iter = game.getLogBook().listIterator(Math.max(0, n - MAX_LOG));
         while (iter.hasNext()) {
             log.add(iter.next());
         }
