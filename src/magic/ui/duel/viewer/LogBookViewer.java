@@ -169,11 +169,12 @@ public class LogBookViewer extends JPanel {
      */
     private void addMessagePanel(final MessagePanel aPanel) {
         messagePanels.add(aPanel);
-        if (messagesHeight > scrollPane.getViewport().getHeight()) {
-            messagesHeight -= messagePanels.getComponent(0).getHeight();
-            messagePanels.remove(0);
-        }
         messagesHeight += aPanel.getPreferredSize().height;
+        int firstH = messagePanels.getComponent(0).getPreferredSize().height;
+        if (messagesHeight - scrollPane.getViewport().getHeight() > firstH) {
+            messagePanels.remove(0);
+            messagesHeight -= firstH;
+        }
     }
 
     private MessagePanel getNewMessagePanel(final MagicMessage message) {
