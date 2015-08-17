@@ -28,6 +28,7 @@ import magic.ui.screen.widget.DuelSettingsPanel;
 import magic.ui.screen.widget.MenuButton;
 import magic.ui.screen.widget.MenuPanel;
 import magic.ui.screen.widget.SampleHandActionButton;
+import magic.utility.MagicSystem;
 
 @SuppressWarnings("serial")
 public class DuelDecksScreen
@@ -55,7 +56,7 @@ public class DuelDecksScreen
     public DuelDecksScreen(final MagicDuel duel) {
         this.screenContent = new DuelDecksPanel(duel);
         setContent(this.screenContent);
-        if (duel.getGamesPlayed() > 0) {
+        if (duel.getGamesPlayed() > 0 && MagicSystem.isAiVersusAi() == false) {
             saveDuel();
         }
     }
