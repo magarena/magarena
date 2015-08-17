@@ -8,6 +8,8 @@ import java.awt.event.ComponentAdapter;
 import java.awt.event.ComponentEvent;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.awt.event.AdjustmentListener;
+import java.awt.event.AdjustmentEvent;
 import java.util.ListIterator;
 import javax.swing.BorderFactory;
 import javax.swing.BoxLayout;
@@ -42,7 +44,6 @@ public class LogBookViewer extends JPanel {
     private final MagicLogBook logBook;
     private final JPanel messagePanels;
     private final JScrollPane scrollPane;
-    private boolean isScrollbarVisible;
     private final TitleBar tb;
     private int messagesHeight = 0;
 
@@ -82,9 +83,15 @@ public class LogBookViewer extends JPanel {
         scrollPane.getViewport().setView(centerPanel);
         scrollPane.getViewport().setOpaque(false);
         scrollPane.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
-        setVerticalScrollbarPolicy();
-        scrollPane.getVerticalScrollBar().setUnitIncrement(INCREMENT);
-        scrollPane.getVerticalScrollBar().setBlockIncrement(INCREMENT);
+        scrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_NEVER);
+        final JScrollBar vscroll = scrollPane.getVerticalScrollBar();
+        vscroll.setUnitIncrement(INCREMENT);
+        vscroll.setBlockIncrement(INCREMENT);
+        vscroll.addAdjustmentListener(new AdjustmentListener() {  
+            public void adjustmentValueChanged(AdjustmentEvent e) {  
+                e.getAdjustable().setValue(e.getAdjustable().getMaximum());  
+            }
+        });
         scrollPane.setBorder(BorderFactory.createEmptyBorder());
         scrollPane.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
         scrollPane.addMouseListener(mouseDispatcher);
@@ -114,15 +121,7 @@ public class LogBookViewer extends JPanel {
             }
         });
 
-        addComponentListener(new ComponentAdapter() {
-            @Override
-            public void componentResized(final ComponentEvent arg0) {
-                forceVerticalScrollbarToMax();
-            }
-        });
-
         updateTitlebarCaption(false);
-
     }
 
     private void updateTitlebarCaption(final boolean showHelpHints) {
@@ -132,7 +131,6 @@ public class LogBookViewer extends JPanel {
                 isHidden ? " " + UiString.get(_S2) : "",
                 showHelpHints ? "   " + UiString.get(_S3) : "")
         );
-
     }
 
     public void update() {
@@ -144,12 +142,10 @@ public class LogBookViewer extends JPanel {
                 addMessagePanel(getNewMessagePanel(itr.next()));
             }
         }
-        forceVerticalScrollbarToMax();
     }
 
     public void addMagicMessage(final MagicMessage magicMessage) {
         addMessagePanel(getNewMessagePanel(magicMessage));
-        forceVerticalScrollbarToMax();
     }
 
     /**
@@ -188,21 +184,4 @@ public class LogBookViewer extends JPanel {
         panel.setBorder(SEPARATOR_BORDER);
         return panel;
     }
-
-    private void setVerticalScrollbarPolicy() {
-        scrollPane.setVerticalScrollBarPolicy(getVerticalScrollbarPolicy());
-    }
-
-    private int getVerticalScrollbarPolicy() {
-        return isScrollbarVisible ?
-                JScrollPane.VERTICAL_SCROLLBAR_ALWAYS :
-                    JScrollPane.VERTICAL_SCROLLBAR_NEVER;
-    }
-
-    public void forceVerticalScrollbarToMax() {
-        scrollPane.validate();
-        final JScrollBar scrollbar = scrollPane.getVerticalScrollBar();
-        scrollbar.setValue(scrollbar.getMaximum());
-    }
-
 }
