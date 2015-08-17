@@ -99,7 +99,7 @@ public class SwingGameController implements IUIGameController {
     private MagicCardDefinition sourceCardDefinition = MagicCardDefinition.UNKNOWN;
     private final BlockingQueue<Boolean> input = new SynchronousQueue<>();
     private int gameTurn = 0;
-    private final ViewerInfo viewerInfo;
+    private ViewerInfo viewerInfo;
     private PlayerZoneViewer playerZoneViewer;
     private final List<IPlayerZoneListener> playerZoneListeners = new ArrayList<>();
     
@@ -551,7 +551,7 @@ public class SwingGameController implements IUIGameController {
         gamePanel.runAnimation();
 
         // update game view DTO to reflect new model state.
-        viewerInfo.update(game);
+        viewerInfo = new ViewerInfo(game);
 
         SwingUtilities.invokeLater(new Runnable() {
             @Override

@@ -9,6 +9,7 @@ import java.awt.event.MouseEvent;
 import java.awt.event.AdjustmentListener;
 import java.awt.event.AdjustmentEvent;
 import java.util.ListIterator;
+import java.util.List;
 import javax.swing.BorderFactory;
 import javax.swing.BoxLayout;
 import javax.swing.JPanel;
@@ -22,13 +23,14 @@ import magic.model.MagicMessage;
 import magic.model.ILogBookListener;
 import magic.model.MagicLogBookEvent;
 import magic.ui.ScreenController;
+import magic.ui.SwingGameController;
 import magic.translate.UiString;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.MessagePanel;
 import magic.ui.widget.TitleBar;
 
 @SuppressWarnings("serial")
-public class LogBookViewer extends JPanel implements ILogBookListener {
+public class LogBookViewer extends JPanel {
 
     // translatable strings
     private static final String _S1 = "Log";
@@ -42,11 +44,10 @@ public class LogBookViewer extends JPanel implements ILogBookListener {
 
     private static final int INCREMENT=108;
 
-    private final MagicLogBook logBook;
+    private final SwingGameController controller;
     private final JPanel messagePanels;
     private final JScrollPane scrollPane;
     private final TitleBar tb;
-    private int messagesHeight = 0;
 
     private final MouseAdapter mouseDispatcher = new MouseAdapter() {
         @Override
@@ -57,9 +58,8 @@ public class LogBookViewer extends JPanel implements ILogBookListener {
         public void mouseExited(MouseEvent e) { dispatchEvent(e); }
     };
 
-    public LogBookViewer(final MagicLogBook logBook) {
-
-        this.logBook=logBook;
+    public LogBookViewer(final SwingGameController aController) {
+        controller = aController;
 
         setLayout(new BorderLayout());
 
@@ -125,21 +125,6 @@ public class LogBookViewer extends JPanel implements ILogBookListener {
         updateTitlebarCaption(false);
     }
    
-    // not on EDT, called by MagicLogBook
-    @Override
-    public void messageLogged(final MagicLogBookEvent ev) {
-        SwingUtilities.invokeLater(new Runnable() {
-            @Override
-            public void run() {
-                if (ev.getMagicMessage() == null) {
-                    update();
-                } else {
-                    addMagicMessage(ev.getMagicMessage());
-                }
-            }
-        });
-    }
-
     private void updateTitlebarCaption(final boolean showHelpHints) {
         final boolean isHidden = !scrollPane.isVisible();
         tb.setText(String.format("%s %s%s",
@@ -151,47 +136,8 @@ public class LogBookViewer extends JPanel implements ILogBookListener {
 
     public void update() {
         messagePanels.removeAll();
-        messagesHeight = 0;
-        // In MagicLogBook, methods that add/remove messages from the log are also synchronized
-        // so this lock prevents the log book being modified while iterating over the messages.
-        synchronized (logBook) {
-            final ListIterator<MagicMessage> itr = getUndoIterator();
-            while (itr.hasNext()) {
-                addMessagePanel(getNewMessagePanel(itr.next()));
-            }
-        }
-    }
-
-    public void addMagicMessage(final MagicMessage magicMessage) {
-        addMessagePanel(getNewMessagePanel(magicMessage));
-    }
-
-    /**
-     * returns iterator pointing to first visible most recent message.
-     * <p>
-     * only need to create MessagePanels for last X messages that will be visible in the log viewer.
-     */
-    private ListIterator<MagicMessage> getUndoIterator() {
-        final ListIterator<MagicMessage> listIterator = logBook.listIterator(logBook.size());
-        int totalHeight = 0;
-        while (listIterator.hasPrevious() && totalHeight <= scrollPane.getViewport().getHeight()) {
-            final MessagePanel aPanel = getNewMessagePanel(listIterator.previous());
-            totalHeight += aPanel.getPreferredSize().height;
-        }
-        return listIterator;
-    }
-
-    /**
-     * adds new MessagePanel displaying the latest log message to end of log viewer
-     * and removes first panel if it is pushed out of view by the new message.
-     */
-    private void addMessagePanel(final MessagePanel aPanel) {
-        messagePanels.add(aPanel);
-        messagesHeight += aPanel.getPreferredSize().height;
-        int firstH = messagePanels.getComponent(0).getPreferredSize().height;
-        if (messagesHeight - scrollPane.getViewport().getHeight() > firstH) {
-            messagePanels.remove(0);
-            messagesHeight -= firstH;
+        for (final MagicMessage msg : controller.getViewerInfo().getLog()) {
+            messagePanels.add(getNewMessagePanel(msg));
         }
     }
 

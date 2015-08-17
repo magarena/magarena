@@ -51,7 +51,7 @@ public class DuelSideBarPanel extends JPanel implements IPlayerZoneListener {
 
         this.controller = controller;
 
-        logBookViewer = new LogBookViewer(controller.getGame().getLogBook());
+        logBookViewer = new LogBookViewer(controller);
         logBookViewer.setVisible(!CONFIG.isLogViewerDisabled());
 
         logStackViewer = new LogStackViewer(logBookViewer, imageStackViewer);
@@ -124,6 +124,7 @@ public class DuelSideBarPanel extends JPanel implements IPlayerZoneListener {
         playerCompositePanels[0].getPlayerPanel().updateDisplay(controller.getViewerInfo().getPlayerInfo(false));
         playerCompositePanels[1].getPlayerPanel().updateDisplay(controller.getViewerInfo().getPlayerInfo(true));
         gameStatusPanel.update();
+        logBookViewer.update();
     }
 
     @Override

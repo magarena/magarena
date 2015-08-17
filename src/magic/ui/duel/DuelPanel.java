@@ -81,8 +81,6 @@ public final class DuelPanel extends JPanel {
         battlefieldPanel = isTextView() ? textView : imageView;
 
         sidebarPanel = new DuelSideBarPanel(controller, battlefieldPanel.getStackViewer());
-        
-        game.getLogBook().addListener(sidebarPanel.getLogBookViewer());
 
         // TODO: should not have to run this, but required while sidebarPanel is created after battlefieldPanel.
         controller.notifyPlayerZoneChanged(controller.getViewerInfo().getPlayerInfo(false), MagicPlayerZone.HAND);
