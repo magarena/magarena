@@ -4,8 +4,6 @@ import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Cursor;
 import java.awt.Insets;
-import java.awt.event.ComponentAdapter;
-import java.awt.event.ComponentEvent;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.event.AdjustmentListener;
@@ -154,6 +152,8 @@ public class LogBookViewer extends JPanel implements ILogBookListener {
     public void update() {
         messagePanels.removeAll();
         messagesHeight = 0;
+        // In MagicLogBook, methods that add/remove messages from the log are also synchronized
+        // so this lock prevents the log book being modified while iterating over the messages.
         synchronized (logBook) {
             final ListIterator<MagicMessage> itr = getUndoIterator();
             while (itr.hasNext()) {
