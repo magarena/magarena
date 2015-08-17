@@ -37,7 +37,6 @@ public class StackViewer extends JPanel implements ChoiceViewer {
     private final SwingGameController controller;
     private final boolean isImageMode;
     private final Collection<StackButton> buttons;
-    private final List<IStackViewerListener> _listeners = new ArrayList<>();
     private JScrollPane stackScrollPane;
     private ScrollablePanel stackScrollablePanel;
     private TitleBar stackTitleBar;
@@ -98,8 +97,6 @@ public class StackViewer extends JPanel implements ChoiceViewer {
                 stackTitleBar.getPreferredSize().height +
                 stackScrollablePanel.getPreferredSize().height;
         setPreferredSize(new Dimension(getWidth(), preferredHeight));
-
-        notifyStackViewerUpdated();
 
         showValidChoices(controller.getValidChoices());
 
@@ -178,20 +175,6 @@ public class StackViewer extends JPanel implements ChoiceViewer {
         @Override
         public Color getValidColor() {
             return ThemeFactory.getInstance().getCurrentTheme().getChoiceColor();
-        }
-    }
-
-    public synchronized void addListener(IStackViewerListener obj) {
-        _listeners.add(obj);
-    }
-
-    public synchronized void removeListener(IStackViewerListener obj) {
-        _listeners.remove(obj);
-    }
-
-    private synchronized void notifyStackViewerUpdated() {
-        for (final IStackViewerListener listener : _listeners) {
-            listener.stackViewerUpdated();
         }
     }
 
