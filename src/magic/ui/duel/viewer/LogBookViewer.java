@@ -134,9 +134,21 @@ public class LogBookViewer extends JPanel {
     }
 
     public void update() {
-        messagePanels.removeAll();
-        for (final MagicMessage msg : controller.getViewerInfo().getLog()) {
-            messagePanels.add(getNewMessagePanel(msg));
+        final List<MagicMessage> msgs = controller.getViewerInfo().getLog();
+        final int n = msgs.size();
+        int i = 0;
+        for (int c = 0; c < messagePanels.getComponentCount();) {
+            final MessagePanel mp = (MessagePanel)messagePanels.getComponent(c);
+            final MagicMessage msg = i < n ? msgs.get(i) : null;
+            if (mp.getMessage() == msg) {
+                i++;
+                c++;
+            } else {
+                messagePanels.remove(c);
+            }
+        }
+        for (;i < n; i++) {
+            messagePanels.add(getNewMessagePanel(msgs.get(i)));
         }
     }
 

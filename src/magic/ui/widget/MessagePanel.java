@@ -25,6 +25,10 @@ public class MessagePanel extends JPanel {
         setMessagePanelLayout(containerWidth);
     }
 
+    public MagicMessage getMessage() {
+        return message;
+    }
+
     private void setMessagePanelLayout(final int containerWidth) {
 
         int gap = 8; // pixels
