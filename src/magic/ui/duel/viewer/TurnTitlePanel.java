@@ -58,12 +58,12 @@ public class TurnTitlePanel extends JPanel {
     }
 
     private void refreshLayout() {
-        miglayout.setLayoutConstraints("insets 0 3 0 4, gap 0 2, flowy, wrap 2");
+        miglayout.setLayoutConstraints("insets 0 3 0 4, gap 0, flowy, wrap 2");
         miglayout.setColumnConstraints("[fill]push[]");
         removeAll();
         add(scoreLabel);
         add(gameLabel);
-        add(getOptionsIconButton(), "spany 2, aligny bottom");
+        add(getOptionsIconButton(), "spany 2, aligny bottom, gaptop 2");
     }
 
     private JButton getOptionsIconButton() {

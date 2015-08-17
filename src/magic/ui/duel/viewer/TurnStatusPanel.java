@@ -33,11 +33,11 @@ public class TurnStatusPanel extends JPanel {
     }
 
     private void refreshLayout() {
-        miglayout.setLayoutConstraints("insets 0 0 2 0, gap 0 3, flowy");
+        miglayout.setLayoutConstraints("insets 3 2 2 2, gap 0, flowy");
         miglayout.setColumnConstraints("fill");
         removeAll();
         add(turnTitlePanel);
-        add(phaseStepViewer);
+        add(phaseStepViewer, "aligny bottom, pushy");
     }
 
     public void refresh(final MagicGame game, final MagicPhaseType phaseStep) {
