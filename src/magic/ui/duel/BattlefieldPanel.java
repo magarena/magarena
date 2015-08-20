@@ -5,7 +5,7 @@ import magic.model.MagicCardList;
 import magic.model.event.MagicEvent;
 import magic.ui.duel.animation.PlayCardAnimation;
 import magic.ui.duel.resolution.ResolutionProfileResult;
-import magic.ui.duel.viewer.StackViewer;
+import magic.ui.duel.sidebar.StackViewer;
 
 @SuppressWarnings("serial")
 public abstract class BattlefieldPanel extends JPanel {

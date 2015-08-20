@@ -1,4 +1,4 @@
-package magic.ui.duel.viewer;
+package magic.ui.duel.sidebar;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -19,6 +19,8 @@ import javax.swing.Scrollable;
 import javax.swing.SwingUtilities;
 import magic.ui.SwingGameController;
 import magic.translate.UiString;
+import magic.ui.duel.viewer.ChoiceViewer;
+import magic.ui.duel.viewer.StackViewerInfo;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.PanelButton;

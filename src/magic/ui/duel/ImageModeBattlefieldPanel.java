@@ -20,7 +20,7 @@ import magic.ui.duel.viewer.ImageBattlefieldViewer;
 import magic.ui.duel.viewer.ImageCardListViewer;
 import magic.ui.duel.viewer.ImageCombatViewer;
 import magic.ui.duel.viewer.PlayerZoneViewer;
-import magic.ui.duel.viewer.StackViewer;
+import magic.ui.duel.sidebar.StackViewer;
 
 @SuppressWarnings("serial")
 public class ImageModeBattlefieldPanel extends BattlefieldPanel {
