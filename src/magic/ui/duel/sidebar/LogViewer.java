@@ -2,6 +2,7 @@ package magic.ui.duel.sidebar;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
+import java.awt.Component;
 import java.awt.Cursor;
 import java.awt.event.AdjustmentEvent;
 import java.awt.event.AdjustmentListener;
@@ -36,8 +37,6 @@ class LogViewer extends JPanel {
         FontsAndBorders.EMPTY_BORDER
     );
 
-    private static final int INCREMENT=108;
-
     private final SwingGameController controller;
     private final JPanel messagePanels;
     private final JScrollPane scrollPane;
@@ -64,24 +63,8 @@ class LogViewer extends JPanel {
         messagePanels.setOpaque(false);
         messagePanels.setLayout(new MigLayout("insets 0, gap 0, flowy"));
 
-        scrollPane=new JScrollPane();
+        scrollPane = new LogScrollPane(messagePanels);
         scrollPane.setVisible(GeneralConfig.getInstance().isLogMessagesVisible());
-        scrollPane.getViewport().setView(messagePanels);
-        scrollPane.getViewport().setOpaque(false);
-        scrollPane.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
-        scrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_NEVER);
-        final JScrollBar vscroll = scrollPane.getVerticalScrollBar();
-        vscroll.setUnitIncrement(INCREMENT);
-        vscroll.setBlockIncrement(INCREMENT);
-        vscroll.addAdjustmentListener(new AdjustmentListener() {  
-            @Override
-            public void adjustmentValueChanged(AdjustmentEvent e) {  
-                e.getAdjustable().setValue(e.getAdjustable().getMaximum());  
-            }
-        });
-        scrollPane.setBorder(BorderFactory.createEmptyBorder());
-        scrollPane.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
-        scrollPane.addMouseListener(mouseDispatcher);
 
         setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
         addMouseListener(new MouseAdapter() {
@@ -152,5 +135,36 @@ class LogViewer extends JPanel {
         panel.setOpaque(false);
         panel.setBorder(SEPARATOR_BORDER);
         return panel;
+    }
+
+    private class LogScrollPane extends JScrollPane {
+
+        private static final int INCREMENT = 108;
+
+        public LogScrollPane(Component aView) {
+
+            super(aView);
+
+            final JScrollBar vscroll = getVerticalScrollBar();
+            vscroll.setUnitIncrement(INCREMENT);
+            vscroll.setBlockIncrement(INCREMENT);
+            vscroll.addAdjustmentListener(new AdjustmentListener() {
+                @Override
+                public void adjustmentValueChanged(AdjustmentEvent e) {
+                    e.getAdjustable().setValue(e.getAdjustable().getMaximum());
+                }
+            });
+
+            addMouseListener(mouseDispatcher);
+
+            setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
+            setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_NEVER);
+
+            setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
+            setBorder(BorderFactory.createEmptyBorder());
+            getViewport().setOpaque(false);
+
+        }
+
     }
 }
