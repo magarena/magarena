@@ -101,6 +101,16 @@ public enum MagicColor {
         throw new RuntimeException("No corresponding MagicColor for " + symbol);
     }
 
+    public static MagicColor getColor(final String string) {
+        final String colorName = string.toLowerCase().trim();
+        for (final MagicColor color : values()) {
+            if (color.name==colorName) {
+                return color;
+            }
+        }
+        throw new RuntimeException("No corresponding MagicColor for " + string);
+    }
+
     public static EnumSet<MagicColor> prefixColors(final List<String> tokens) {
         final EnumSet<MagicColor> colors = EnumSet.noneOf(MagicColor.class);
         boolean matched = true;
@@ -118,7 +128,7 @@ public enum MagicColor {
         }
         return colors;
     }
-    
+
     public static String getRandomColors(final int count) {
         final List<MagicColor> colors = new ArrayList<MagicColor>(Arrays.asList(values()));
         final StringBuilder colorText=new StringBuilder();
