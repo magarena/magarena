@@ -3,14 +3,12 @@ package magic.ui.duel.sidebar;
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Cursor;
-import java.awt.Insets;
 import java.awt.event.AdjustmentEvent;
 import java.awt.event.AdjustmentListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.util.List;
 import javax.swing.BorderFactory;
-import javax.swing.BoxLayout;
 import javax.swing.JPanel;
 import javax.swing.JScrollBar;
 import javax.swing.JScrollPane;
@@ -23,6 +21,7 @@ import magic.ui.SwingGameController;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.MessagePanel;
 import magic.ui.widget.TitleBar;
+import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
 class LogViewer extends JPanel {
@@ -56,27 +55,18 @@ class LogViewer extends JPanel {
     LogViewer(final SwingGameController aController) {
         controller = aController;
 
-        setLayout(new BorderLayout());
-
         tb = new TitleBar(UiString.get(_S1));
         tb.setBorder(BorderFactory.createMatteBorder(0, 0, 1, 0, Color.BLACK));
         tb.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
         tb.addMouseListener(mouseDispatcher);
-        add(tb, BorderLayout.NORTH);
 
-        final JPanel centerPanel=new JPanel();
-        centerPanel.setOpaque(false);
-        centerPanel.setLayout(new BorderLayout());
-        add(centerPanel,BorderLayout.CENTER);
-
-        messagePanels=new JPanel();
+        messagePanels = new JPanel();
         messagePanels.setOpaque(false);
-        messagePanels.setLayout(new BoxLayout(messagePanels,BoxLayout.Y_AXIS));
-        centerPanel.add(messagePanels,BorderLayout.NORTH);
+        messagePanels.setLayout(new MigLayout("insets 0, gap 0, flowy"));
 
         scrollPane=new JScrollPane();
         scrollPane.setVisible(GeneralConfig.getInstance().isLogMessagesVisible());
-        scrollPane.getViewport().setView(centerPanel);
+        scrollPane.getViewport().setView(messagePanels);
         scrollPane.getViewport().setOpaque(false);
         scrollPane.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
         scrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_NEVER);
@@ -92,7 +82,6 @@ class LogViewer extends JPanel {
         scrollPane.setBorder(BorderFactory.createEmptyBorder());
         scrollPane.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
         scrollPane.addMouseListener(mouseDispatcher);
-        add(scrollPane,BorderLayout.CENTER);
 
         setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
         addMouseListener(new MouseAdapter() {
@@ -119,6 +108,15 @@ class LogViewer extends JPanel {
         });
 
         updateTitlebarCaption(false);
+        
+        doUpdateLayout();
+
+    }
+
+    private void doUpdateLayout() {
+        setLayout(new BorderLayout());
+        add(tb, BorderLayout.NORTH);
+        add(scrollPane,BorderLayout.CENTER);
     }
    
     private void updateTitlebarCaption(final boolean showHelpHints) {
@@ -145,14 +143,12 @@ class LogViewer extends JPanel {
             }
         }
         for (;i < n; i++) {
-            messagePanels.add(getNewMessagePanel(msgs.get(i)));
+            messagePanels.add(getNewMessagePanel(msgs.get(i)), "w 100%");
         }
     }
 
     private MessagePanel getNewMessagePanel(final MagicMessage message) {
-        final Insets s = SEPARATOR_BORDER.getInsideBorder().getBorderInsets(null);
-        final int maxWidth = getWidth() - s.left - s.right;
-        final MessagePanel panel = new MessagePanel(message, maxWidth);
+        final MessagePanel panel = new MessagePanel(message, getWidth());
         panel.setOpaque(false);
         panel.setBorder(SEPARATOR_BORDER);
         return panel;
