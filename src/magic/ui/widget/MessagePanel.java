@@ -1,19 +1,16 @@
 package magic.ui.widget;
 
-import magic.ui.IconImages;
-import magic.model.MagicMessage;
-import net.miginfocom.swing.MigLayout;
-
+import java.awt.Color;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
-
-import java.awt.Color;
 import magic.data.MagicIcon;
+import magic.model.MagicMessage;
+import magic.ui.IconImages;
+import net.miginfocom.swing.MigLayout;
 
+@SuppressWarnings("serial")
 public class MessagePanel extends JPanel {
-
-    private static final long serialVersionUID = 1L;
 
     private static int lastTurn = 0;
     private static int textLabelWidth = 0;
