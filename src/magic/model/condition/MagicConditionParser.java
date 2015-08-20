@@ -1,6 +1,7 @@
 package magic.model.condition;
 
 import magic.model.ARG;
+import magic.model.MagicColor;
 import magic.model.MagicCounterType;
 import magic.model.MagicAbility;
 import magic.model.target.MagicTargetFilterFactory;
@@ -77,10 +78,24 @@ public enum MagicConditionParser {
             return MagicCondition.THRESHOLD_CONDITION;
         }
     },
-    YourGraveyardAtLeast("there are "+ ARG.AMOUNT + " or more cards in your graveyard") {
+    YourGraveyardAtLeast("there are " + ARG.AMOUNT + " or more cards in your graveyard") {
         public MagicCondition toCondition(final Matcher arg) {
             final int amount = ARG.amount(arg);
             return MagicConditionFactory.GraveyardAtLeast(amount);
+        }
+    },
+    YourDevotionAtLeast("you have at least " + ARG.NUMBER + " devotion to "+ ARG.COLOR) {
+        public MagicCondition toCondition(final Matcher arg) {
+            final int amount = ARG.amount(arg);
+            final MagicColor color = MagicColor.valueOf(ARG.color(arg));
+            return MagicConditionFactory.DevotionAtLeast(color, amount);
+        }
+    },
+    YourDevotion("you have devotion to " + ARG.COLOR) {
+        public MagicCondition toCondition(final Matcher arg) {
+            final int amount = 1;
+            final MagicColor color = MagicColor.getColor(ARG.color(arg));
+            return MagicConditionFactory.DevotionAtLeast(color, amount);
         }
     },
     SpellMastery("there are two or more instant and/or sorcery cards in your graveyard") {
