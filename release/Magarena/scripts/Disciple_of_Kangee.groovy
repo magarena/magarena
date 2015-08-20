@@ -13,7 +13,7 @@ def BLUE = new MagicStatic(MagicLayer.Color,MagicStatic.UntilEOT) {
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
                 new MagicTapEvent(source),
-                new MagicPayManaCostEvent(source,"{2}"),
+                new MagicPayManaCostEvent(source,"{U}"),
             ];
         }
         @Override
