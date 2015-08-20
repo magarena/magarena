@@ -58,18 +58,18 @@ public class TurnTitlePanel extends JPanel {
     }
 
     private void refreshLayout() {
-        miglayout.setLayoutConstraints("insets 0 3 0 4, gap 0, flowy, wrap 2");
+        miglayout.setLayoutConstraints("insets 0 3 0 2, gap 0, flowy, wrap 2");
         miglayout.setColumnConstraints("[fill]push[]");
         removeAll();
         add(scoreLabel);
         add(gameLabel);
-        add(getOptionsIconButton(), "spany 2, aligny bottom, gaptop 2");
+        add(getOptionsIconButton(), "spany 2, aligny top");
     }
 
     private JButton getOptionsIconButton() {
 
         final JButton btn = new ActionBarButton(
-                IconImages.getIcon(MagicIcon.OPTIONS_ICON),
+                IconImages.getIcon(MagicIcon.MENU_ICON),
                 UiString.get(_S1),
                 UiString.get(_S2),
                 new AbstractAction() {
@@ -79,7 +79,7 @@ public class TurnTitlePanel extends JPanel {
                     }
                 }
         );
-        btn.setMaximumSize(new Dimension(30, 30));
+        btn.setMaximumSize(new Dimension(18, 18));
 
         if (MagicSystem.isDevMode()) {
             btn.addMouseListener(new MouseAdapter() {
