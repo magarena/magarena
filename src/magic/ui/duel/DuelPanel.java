@@ -30,7 +30,6 @@ import magic.ui.duel.animation.GamePlayAnimator;
 import magic.ui.duel.resolution.DefaultResolutionProfile;
 import magic.ui.duel.resolution.ResolutionProfileResult;
 import magic.ui.duel.resolution.ResolutionProfiles;
-import magic.ui.duel.sidebar.LogBookViewer;
 import magic.ui.widget.ZoneBackgroundLabel;
 import net.miginfocom.swing.MigLayout;
 
@@ -193,10 +192,6 @@ public final class DuelPanel extends JPanel {
 
     public AnnotatedCardPanel getImageCardViewer() {
         return imageCardViewer;
-    }
-
-    public LogBookViewer getLogBookViewer() {
-        return sidebarPanel.getLogBookViewer();
     }
 
     public void focusViewers(final int handGraveyard) {
