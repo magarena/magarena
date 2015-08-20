@@ -8,12 +8,12 @@ import magic.ui.widget.TexturedPanel;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-public class LogStackViewer extends TexturedPanel {
+class LogStackViewer extends TexturedPanel {
 
     private final LogBookViewer logBookViewer;
     private final StackViewer stackViewer;
 
-    public LogStackViewer(LogBookViewer logBookViewer0, StackViewer stackViewer0) {
+    LogStackViewer(LogBookViewer logBookViewer0, StackViewer stackViewer0) {
         logBookViewer = logBookViewer0;
         logBookViewer.setOpaque(false);
         stackViewer = stackViewer0;
@@ -24,7 +24,7 @@ public class LogStackViewer extends TexturedPanel {
         add(stackViewer, "w 100%");
     }
 
-    public Rectangle getStackViewerRectangle(Component canvas) {
+    Rectangle getStackViewerRectangle(Component canvas) {
         return stackViewer.getStackViewerRectangle(canvas);
     }
 }
