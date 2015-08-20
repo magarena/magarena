@@ -9,10 +9,10 @@ import net.miginfocom.swing.MigLayout;
 @SuppressWarnings("serial")
 class LogStackViewer extends TexturedPanel {
 
-    private final LogBookViewer logBookViewer;
+    private final LogViewer logBookViewer;
     private final StackViewer stackViewer;
 
-    LogStackViewer(LogBookViewer logBookViewer0, StackViewer stackViewer0) {
+    LogStackViewer(LogViewer logBookViewer0, StackViewer stackViewer0) {
         logBookViewer = logBookViewer0;
         logBookViewer.setOpaque(false);
         stackViewer = stackViewer0;
