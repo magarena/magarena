@@ -23,11 +23,12 @@ import magic.ui.SwingGameController;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.MenuedTitleBar;
 import magic.ui.widget.MessagePanel;
+import magic.ui.widget.TexturedPanel;
 import magic.ui.widget.TitleBar;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-class LogViewer extends JPanel {
+class LogViewer extends TexturedPanel {
 
     // translatable strings
     private static final String _S1 = "Log";
@@ -69,6 +70,7 @@ class LogViewer extends JPanel {
         tb.setText(isVisible ? UiString.get(_S1) :UiString.get(_S2));
         scrollPane.setVisible(isVisible);
         setOpaque(isVisible);
+        setBackground(isVisible ? FontsAndBorders.TRANSLUCENT_WHITE_STRONG : new Color(0,0,0,1));
         GeneralConfig.getInstance().setLogMessagesVisible(isVisible);
     }
 

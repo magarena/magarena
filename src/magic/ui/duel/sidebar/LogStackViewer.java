@@ -14,10 +14,11 @@ class LogStackViewer extends TexturedPanel {
 
     LogStackViewer(LogViewer logBookViewer0, StackViewer stackViewer0) {
         logBookViewer = logBookViewer0;
-        logBookViewer.setOpaque(false);
         stackViewer = stackViewer0;
         
         setBorder(FontsAndBorders.BLACK_BORDER);
+        setOpaque(false);
+        
         setLayout(new MigLayout("insets 0, gap 0, flowy", "", "[shrinkprio 200][]"));
         add(logBookViewer, "w 100%, h 80:100%");
         add(stackViewer, "w 100%");
