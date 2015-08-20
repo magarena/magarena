@@ -84,6 +84,7 @@ class LogViewer extends JPanel {
         vscroll.setUnitIncrement(INCREMENT);
         vscroll.setBlockIncrement(INCREMENT);
         vscroll.addAdjustmentListener(new AdjustmentListener() {  
+            @Override
             public void adjustmentValueChanged(AdjustmentEvent e) {  
                 e.getAdjustable().setValue(e.getAdjustable().getMaximum());  
             }
