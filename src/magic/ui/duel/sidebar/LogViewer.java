@@ -3,14 +3,15 @@ package magic.ui.duel.sidebar;
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Component;
-import java.awt.Cursor;
+import java.awt.event.ActionEvent;
 import java.awt.event.AdjustmentEvent;
 import java.awt.event.AdjustmentListener;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
 import java.util.List;
+import javax.swing.AbstractAction;
 import javax.swing.BorderFactory;
+import javax.swing.JMenuItem;
 import javax.swing.JPanel;
+import javax.swing.JPopupMenu;
 import javax.swing.JScrollBar;
 import javax.swing.JScrollPane;
 import javax.swing.border.CompoundBorder;
@@ -20,6 +21,7 @@ import magic.translate.UiString;
 import magic.ui.ScreenController;
 import magic.ui.SwingGameController;
 import magic.ui.widget.FontsAndBorders;
+import magic.ui.widget.MenuedTitleBar;
 import magic.ui.widget.MessagePanel;
 import magic.ui.widget.TitleBar;
 import net.miginfocom.swing.MigLayout;
@@ -29,8 +31,9 @@ class LogViewer extends JPanel {
 
     // translatable strings
     private static final String _S1 = "Log";
-    private static final String _S2 = "OFF";
-    private static final String _S3 = "[ LMB: On/Off   RMB: Full Log File ]";
+    private static final String _S2 = "Log Off";
+    private static final String _S3 = "Log On";
+    private static final String _S4 = "View log file";
 
     private static final CompoundBorder SEPARATOR_BORDER=BorderFactory.createCompoundBorder(
         BorderFactory.createMatteBorder(0,0,1,0,Color.GRAY),
@@ -41,59 +44,58 @@ class LogViewer extends JPanel {
     private final JPanel messagePanels;
     private final JScrollPane scrollPane;
     private final TitleBar tb;
-
-    private final MouseAdapter mouseDispatcher = new MouseAdapter() {
-        @Override
-        public void mouseClicked(MouseEvent e) { dispatchEvent(e); }
-        @Override
-        public void mouseEntered(MouseEvent e) { dispatchEvent(e); }
-        @Override
-        public void mouseExited(MouseEvent e) { dispatchEvent(e); }
-    };
+    private final JMenuItem visibilityMenu = new JMenuItem();
 
     LogViewer(final SwingGameController aController) {
         controller = aController;
 
-        tb = new TitleBar(UiString.get(_S1));
+        tb = new MenuedTitleBar(UiString.get(_S1), getLogPopupMenu());
         tb.setBorder(BorderFactory.createMatteBorder(0, 0, 1, 0, Color.BLACK));
-        tb.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
-        tb.addMouseListener(mouseDispatcher);
 
         messagePanels = new JPanel();
         messagePanels.setOpaque(false);
         messagePanels.setLayout(new MigLayout("insets 0, gap 0, flowy"));
 
         scrollPane = new LogScrollPane(messagePanels);
-        scrollPane.setVisible(GeneralConfig.getInstance().isLogMessagesVisible());
 
-        setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
-        addMouseListener(new MouseAdapter() {
-            @Override
-            public void mouseClicked(MouseEvent e) {
-                if (e.getClickCount() == 1) {
-                    if (e.getButton() == MouseEvent.BUTTON3) {
-                        ScreenController.showGameLogScreen();
-                        updateTitlebarCaption(false);
-                    } else if (e.getButton() == MouseEvent.BUTTON1) {
-                        scrollPane.setVisible(!scrollPane.isVisible());
-                        updateTitlebarCaption(true);
-                    }
-                }
-            }
-            @Override
-            public void mouseExited(MouseEvent e) {
-                updateTitlebarCaption(false);
-            }
-            @Override
-            public void mouseEntered(MouseEvent e) {
-                updateTitlebarCaption(true);
-            }
-        });
+        setLogVisibility(GeneralConfig.getInstance().isLogMessagesVisible());
 
-        updateTitlebarCaption(false);
-        
         doUpdateLayout();
 
+    }
+
+    private void setLogVisibility(final boolean isVisible) {
+        visibilityMenu.setText(isVisible ? UiString.get(_S2) : UiString.get(_S3));
+        tb.setText(isVisible ? UiString.get(_S1) :UiString.get(_S2));
+        scrollPane.setVisible(isVisible);
+        setOpaque(isVisible);
+        GeneralConfig.getInstance().setLogMessagesVisible(isVisible);
+    }
+
+    private JPopupMenu getLogPopupMenu() {
+        visibilityMenu.setAction(new AbstractAction() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                final boolean isVisible = !scrollPane.isVisible();
+                setLogVisibility(isVisible);
+                if (isVisible) {
+                    update();
+                    revalidate();
+                }
+            }
+        });
+        // View log file
+        final JMenuItem menu2 = new JMenuItem(new AbstractAction(UiString.get(_S4)) {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                ScreenController.showGameLogScreen();
+            }
+        });
+        final JPopupMenu popupMenu = new JPopupMenu();
+        popupMenu.add(visibilityMenu);
+        popupMenu.addSeparator();
+        popupMenu.add(menu2);
+        return popupMenu;
     }
 
     private void doUpdateLayout() {
@@ -102,15 +104,6 @@ class LogViewer extends JPanel {
         add(scrollPane,BorderLayout.CENTER);
     }
    
-    private void updateTitlebarCaption(final boolean showHelpHints) {
-        final boolean isHidden = !scrollPane.isVisible();
-        tb.setText(String.format("%s %s%s",
-                UiString.get(_S1),
-                isHidden ? " " + UiString.get(_S2) : "",
-                showHelpHints ? "   " + UiString.get(_S3) : "")
-        );
-    }
-
     void update() {
         final List<MagicMessage> msgs = controller.getViewerInfo().getLog();
         final int n = msgs.size();
@@ -155,12 +148,9 @@ class LogViewer extends JPanel {
                 }
             });
 
-            addMouseListener(mouseDispatcher);
-
             setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
             setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_NEVER);
 
-            setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
             setBorder(BorderFactory.createEmptyBorder());
             getViewport().setOpaque(false);
 
