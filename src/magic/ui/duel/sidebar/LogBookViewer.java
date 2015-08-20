@@ -25,7 +25,7 @@ import magic.ui.widget.MessagePanel;
 import magic.ui.widget.TitleBar;
 
 @SuppressWarnings("serial")
-public class LogBookViewer extends JPanel {
+class LogBookViewer extends JPanel {
 
     // translatable strings
     private static final String _S1 = "Log";
@@ -53,7 +53,7 @@ public class LogBookViewer extends JPanel {
         public void mouseExited(MouseEvent e) { dispatchEvent(e); }
     };
 
-    public LogBookViewer(final SwingGameController aController) {
+    LogBookViewer(final SwingGameController aController) {
         controller = aController;
 
         setLayout(new BorderLayout());
@@ -129,7 +129,7 @@ public class LogBookViewer extends JPanel {
         );
     }
 
-    public void update() {
+    void update() {
         final List<MagicMessage> msgs = controller.getViewerInfo().getLog();
         final int n = msgs.size();
         int i = 0;
