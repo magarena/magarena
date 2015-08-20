@@ -73,10 +73,6 @@ public class StackViewer extends JPanel implements ChoiceViewer {
         stackScrollPane.setBorder(null);
     }
 
-    public static String getTitle() {
-        return TITLE_CAPTION;
-    }
-
     public void update() {
 
         final int maxWidth=getWidth()-40;
@@ -102,10 +98,6 @@ public class StackViewer extends JPanel implements ChoiceViewer {
 
         showValidChoices(controller.getValidChoices());
 
-    }
-
-    public boolean isEmpty() {
-        return buttons.isEmpty();
     }
 
     @Override
