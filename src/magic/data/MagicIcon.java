@@ -7,6 +7,7 @@ public enum MagicIcon {
     BANNED_ICON("card_banned.png"),
     RESTRICTED_ICON("card_restricted.png"),
 
+    MENU_ICON("w_menu5@18.png"),
     HEADER_ICON("headerIcon.png"),
     OPTIONS_ICON("w_book.png"),
     OPTIONBAR_ICON("w_book24.png"),
