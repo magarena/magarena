@@ -1,4 +1,4 @@
-package magic.ui.duel.viewer;
+package magic.ui.duel.sidebar;
 
 import java.awt.BorderLayout;
 import java.awt.Color;

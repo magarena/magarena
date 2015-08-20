@@ -2,7 +2,6 @@ package magic.ui.duel.sidebar;
 
 import java.awt.Component;
 import java.awt.Rectangle;
-import magic.ui.duel.viewer.LogBookViewer;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TexturedPanel;
 import net.miginfocom.swing.MigLayout;

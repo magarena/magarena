@@ -17,7 +17,6 @@ import magic.ui.duel.player.GamePlayerPanel;
 import magic.ui.duel.player.PlayerZoneButtonsPanel;
 import magic.ui.duel.resolution.DefaultResolutionProfile;
 import magic.ui.duel.viewer.GameStatusPanel;
-import magic.ui.duel.viewer.LogBookViewer;
 import magic.ui.duel.viewer.PlayerViewerInfo;
 import magic.ui.duel.viewer.UserActionPanel;
 import magic.ui.widget.FontsAndBorders;
