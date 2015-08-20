@@ -1,5 +1,6 @@
 package magic.ui.duel;
 
+import magic.ui.duel.sidebar.DuelSideBarPanel;
 import java.awt.Component;
 import magic.ui.duel.dialog.DuelDialogPanel;
 import magic.ui.duel.animation.PlayCardAnimation;

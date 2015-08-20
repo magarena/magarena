@@ -1,4 +1,4 @@
-package magic.ui.duel;
+package magic.ui.duel.sidebar;
 
 import java.awt.Color;
 import java.awt.Component;
@@ -47,7 +47,7 @@ public class DuelSideBarPanel extends JPanel implements IPlayerZoneListener {
     private final SwingGameController controller;
     private final List<LayoutSlot> layoutSlots = new ArrayList<>();
 
-    DuelSideBarPanel(final SwingGameController controller, final StackViewer imageStackViewer) {
+    public DuelSideBarPanel(final SwingGameController controller, final StackViewer imageStackViewer) {
 
         this.controller = controller;
 
@@ -91,15 +91,15 @@ public class DuelSideBarPanel extends JPanel implements IPlayerZoneListener {
 
     }
 
-    GameStatusPanel getGameStatusPanel() {
+    public GameStatusPanel getGameStatusPanel() {
         return gameStatusPanel;
     }
 
-    LogBookViewer getLogBookViewer() {
+    public LogBookViewer getLogBookViewer() {
         return logBookViewer;
     }
 
-    void doSetLayout() {
+    public void doSetLayout() {
 
         final int insets = 6;
         final int maxWidth = DefaultResolutionProfile.getPanelWidthLHS() - (insets * 2);
@@ -120,7 +120,7 @@ public class DuelSideBarPanel extends JPanel implements IPlayerZoneListener {
 
     }
 
-    void doUpdate() {
+    public void doUpdate() {
         playerCompositePanels[0].getPlayerPanel().updateDisplay(controller.getViewerInfo().getPlayerInfo(false));
         playerCompositePanels[1].getPlayerPanel().updateDisplay(controller.getViewerInfo().getPlayerInfo(true));
         gameStatusPanel.update();
@@ -155,21 +155,21 @@ public class DuelSideBarPanel extends JPanel implements IPlayerZoneListener {
         }
     }
 
-    void refreshLayout() {
+    public void refreshLayout() {
         setLayoutSlots();
         doSetLayout();
     }
 
-    void doFlashPlayerHandZoneButton() {
+    public void doFlashPlayerHandZoneButton() {
         final GamePlayerPanel playerPanel = playerCompositePanels[1].getPlayerPanel();
         playerPanel.doFlashPlayerHandZoneButton();
     }
 
-    Rectangle getStackViewerRectangle(Component canvas) {
+    public Rectangle getStackViewerRectangle(Component canvas) {
         return logStackViewer.getStackViewerRectangle(canvas);
     }
 
-    Rectangle getPlayerZoneButtonRectangle(MagicPlayer player, MagicPlayerZone zone, Component canvas) {
+    public Rectangle getPlayerZoneButtonRectangle(MagicPlayer player, MagicPlayerZone zone, Component canvas) {
         return getPlayerPanel(player).getZoneButtonRectangle(zone, canvas);
     }
 
