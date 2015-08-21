@@ -8,6 +8,7 @@ import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 import javax.swing.JPopupMenu;
+import javax.swing.SwingUtilities;
 import magic.data.MagicIcon;
 import magic.ui.IconImages;
 import magic.ui.utility.GraphicsUtils;
@@ -41,20 +42,23 @@ public class MenuIconLabel extends JLabel {
 
             @Override
             public void mousePressed(MouseEvent e) {
-                isMenuVisible = menu.isVisible();
-                setIcon(PRESSED_ICON);
+                if (SwingUtilities.isLeftMouseButton(e)) {
+                    isMenuVisible = menu.isVisible();
+                    setIcon(PRESSED_ICON);
+                }
             }
 
             @Override
             public void mouseReleased(MouseEvent e) {
-                super.mouseReleased(e);
-                setIcon(HILITE_ICON);
-                if (isMenuVisible == false) {
-                    final Rectangle rect = getBounds();
-                    menu.show(MenuIconLabel.this.getParent(), rect.x, rect.y + rect.height + 2);
-                    isMenuVisible = true;
-                } else {
-                    isMenuVisible = false;
+                if (SwingUtilities.isLeftMouseButton(e)) {
+                    setIcon(HILITE_ICON);
+                    if (isMenuVisible == false) {
+                        final Rectangle rect = getBounds();
+                        menu.show(MenuIconLabel.this.getParent(), rect.x, rect.y + rect.height + 2);
+                        isMenuVisible = true;
+                    } else {
+                        isMenuVisible = false;
+                    }
                 }
             }
 
