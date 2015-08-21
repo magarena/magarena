@@ -1,4 +1,4 @@
-def DEMON_CONDITION = MagicConditionFactory.YouControl(MagicTargetFilterFactory.creature(MagicSubType.Demon, Control.You));
+def DEMON_CONDITION = MagicConditionFactory.YouControl(MagicTargetFilterFactory.permanent(MagicSubType.Demon, Control.You));
 [
     new MagicPermanentActivation(
         [DEMON_CONDITION, new MagicArtificialCondition(MagicConditionFactory.CounterAtLeast(MagicCounterType.Devotion,1))],
