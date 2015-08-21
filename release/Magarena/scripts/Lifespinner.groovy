@@ -20,8 +20,11 @@ def A_LEGENDARY_SPIRIT_PERMANENT_FROM_LIBRARY = new MagicTargetChoice(
     
 def SACRIFICE_SPIRIT = new MagicTargetChoice("a Spirit creature to sacrifice");
 
+def THREE_SPIRIT_CONDITION = MagicConditionFactory.YouControlAtLeast(MagicTargetFilterFactory.permanent(MagicSubType.Spirit, Control.You),3);
+
 [
     new MagicPermanentActivation(
+        [THREE_SPIRIT_CONDITION],
         new MagicActivationHints(MagicTiming.Token),
         "Search"
     ) {
