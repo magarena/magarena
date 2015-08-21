@@ -1,40 +1,24 @@
 package magic.ui.duel.sidebar;
 
-import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Component;
-import java.awt.event.ActionEvent;
 import java.awt.event.AdjustmentEvent;
 import java.awt.event.AdjustmentListener;
 import java.util.List;
-import javax.swing.AbstractAction;
 import javax.swing.BorderFactory;
-import javax.swing.JMenuItem;
 import javax.swing.JPanel;
-import javax.swing.JPopupMenu;
 import javax.swing.JScrollBar;
 import javax.swing.JScrollPane;
 import javax.swing.border.CompoundBorder;
-import magic.data.GeneralConfig;
 import magic.model.MagicMessage;
-import magic.translate.UiString;
-import magic.ui.ScreenController;
 import magic.ui.SwingGameController;
 import magic.ui.widget.FontsAndBorders;
-import magic.ui.widget.MenuedTitleBar;
 import magic.ui.widget.MessagePanel;
 import magic.ui.widget.TexturedPanel;
-import magic.ui.widget.TitleBar;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
 class LogViewer extends TexturedPanel {
-
-    // translatable strings
-    private static final String _S1 = "Log";
-    private static final String _S2 = "Log Off";
-    private static final String _S3 = "Log On";
-    private static final String _S4 = "View log file";
 
     private static final CompoundBorder SEPARATOR_BORDER=BorderFactory.createCompoundBorder(
         BorderFactory.createMatteBorder(0,0,1,0,Color.GRAY),
@@ -44,14 +28,10 @@ class LogViewer extends TexturedPanel {
     private final SwingGameController controller;
     private final JPanel messagePanels;
     private final JScrollPane scrollPane;
-    private final TitleBar tb;
-    private final JMenuItem visibilityMenu = new JMenuItem();
 
     LogViewer(final SwingGameController aController) {
-        controller = aController;
-
-        tb = new MenuedTitleBar(UiString.get(_S1), getLogPopupMenu());
-        tb.setBorder(BorderFactory.createMatteBorder(0, 0, 1, 0, Color.BLACK));
+        
+        this.controller = aController;
 
         messagePanels = new JPanel();
         messagePanels.setOpaque(false);
@@ -59,53 +39,13 @@ class LogViewer extends TexturedPanel {
 
         scrollPane = new LogScrollPane(messagePanels);
 
-        setLogVisibility(GeneralConfig.getInstance().isLogMessagesVisible());
+        setLayout(new MigLayout("insets 0"));
+        add(scrollPane, "w 100%, h 100%");
 
-        doUpdateLayout();
+        setBackground(FontsAndBorders.TRANSLUCENT_WHITE_STRONG);
 
     }
 
-    private void setLogVisibility(final boolean isVisible) {
-        visibilityMenu.setText(isVisible ? UiString.get(_S2) : UiString.get(_S3));
-        tb.setText(isVisible ? UiString.get(_S1) :UiString.get(_S2));
-        scrollPane.setVisible(isVisible);
-        setOpaque(isVisible);
-        setBackground(isVisible ? FontsAndBorders.TRANSLUCENT_WHITE_STRONG : new Color(0,0,0,1));
-        GeneralConfig.getInstance().setLogMessagesVisible(isVisible);
-    }
-
-    private JPopupMenu getLogPopupMenu() {
-        visibilityMenu.setAction(new AbstractAction() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                final boolean isVisible = !scrollPane.isVisible();
-                setLogVisibility(isVisible);
-                if (isVisible) {
-                    update();
-                    revalidate();
-                }
-            }
-        });
-        // View log file
-        final JMenuItem menu2 = new JMenuItem(new AbstractAction(UiString.get(_S4)) {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                ScreenController.showGameLogScreen();
-            }
-        });
-        final JPopupMenu popupMenu = new JPopupMenu();
-        popupMenu.add(visibilityMenu);
-        popupMenu.addSeparator();
-        popupMenu.add(menu2);
-        return popupMenu;
-    }
-
-    private void doUpdateLayout() {
-        setLayout(new BorderLayout());
-        add(tb, BorderLayout.NORTH);
-        add(scrollPane,BorderLayout.CENTER);
-    }
-   
     void update() {
         final List<MagicMessage> msgs = controller.getViewerInfo().getLog();
         final int n = msgs.size();
@@ -159,4 +99,5 @@ class LogViewer extends TexturedPanel {
         }
 
     }
+
 }

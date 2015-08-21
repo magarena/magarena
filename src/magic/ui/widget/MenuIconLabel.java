@@ -20,7 +20,13 @@ public class MenuIconLabel extends JLabel {
     private static final Icon HILITE_ICON = GraphicsUtils.getRecoloredIcon(NORMAL_ICON, MagicStyle.getRolloverColor());
     private static final Icon PRESSED_ICON = GraphicsUtils.getRecoloredIcon(NORMAL_ICON, MagicStyle.getPressedColor());
 
-    private final JPopupMenu menu;
+    private JPopupMenu menu;
+
+    public MenuIconLabel() {
+        this.menu = null;
+        setIcon(null);
+        setMouseListener();
+    }
 
     public MenuIconLabel(final JPopupMenu aMenu) {
         this.menu = aMenu;
@@ -65,5 +71,10 @@ public class MenuIconLabel extends JLabel {
             }
 
         });
+    }
+
+    void setPopupMenu(JPopupMenu aMenu) {
+        this.menu = aMenu;
+        setIcon(aMenu != null ? NORMAL_ICON : null);
     }
 }

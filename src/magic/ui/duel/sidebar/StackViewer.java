@@ -2,46 +2,34 @@ package magic.ui.duel.sidebar;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
-import java.awt.Component;
 import java.awt.Dimension;
-import java.awt.Point;
 import java.awt.Rectangle;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 import java.util.Set;
-import javax.swing.BorderFactory;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.ScrollPaneConstants;
 import javax.swing.Scrollable;
-import javax.swing.SwingUtilities;
 import magic.ui.SwingGameController;
-import magic.translate.UiString;
 import magic.ui.duel.viewer.ChoiceViewer;
 import magic.ui.duel.viewer.StackViewerInfo;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.PanelButton;
 import magic.ui.widget.TextLabel;
-import magic.ui.widget.TitleBar;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
 public class StackViewer extends JPanel implements ChoiceViewer {
-
-    // translatable strings
-    private static final String _S1 = "Stack";
-
-    private static final String TITLE_CAPTION = UiString.get(_S1);
 
     private final SwingGameController controller;
     private final boolean isImageMode;
     private final Collection<StackButton> buttons;
     private JScrollPane stackScrollPane;
     private ScrollablePanel stackScrollablePanel;
-    private TitleBar stackTitleBar;
 
     public StackViewer(final SwingGameController controller, final boolean isImageMode0) {
 
@@ -55,22 +43,19 @@ public class StackViewer extends JPanel implements ChoiceViewer {
     }
 
     private void refreshLayout() {
-        removeAll();
-        setLayout(new MigLayout("insets 0, gap 0, flowy"));
-        //
-        // Title bar
-        stackTitleBar = new TitleBar(TITLE_CAPTION);
-        add(stackTitleBar, "w 100%");
-        //
-        // Stack scroll pane
+
         stackScrollablePanel = new ScrollablePanel();
         stackScrollablePanel.setLayout(new MigLayout("insets 0, gap 0, flowy"));
+
         stackScrollPane = new JScrollPane(stackScrollablePanel);
-        add(stackScrollPane, "w 100%");
         stackScrollPane.setMinimumSize(new Dimension(0, 0));
         stackScrollPane.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_AS_NEEDED);
         stackScrollPane.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         stackScrollPane.setBorder(null);
+
+        removeAll();
+        setLayout(new MigLayout("insets 0, gap 0, flowy"));
+        add(stackScrollPane, "w 100%");
     }
 
     public void update() {
@@ -87,12 +72,9 @@ public class StackViewer extends JPanel implements ChoiceViewer {
             buttons.add(btn);
             stackScrollablePanel.add(btn, "w 100%");
         }
-        stackTitleBar.setText(TITLE_CAPTION + (stack.size() > 0 ? ": " + stack.size() : ""));
-        stackTitleBar.setBorder(BorderFactory.createMatteBorder(1, 0, (stack.size() > 0 ? 1 : 0), 0, Color.BLACK));
 
         // set preferred size for layout manager.
         int preferredHeight =
-                stackTitleBar.getPreferredSize().height +
                 stackScrollablePanel.getPreferredSize().height;
         setPreferredSize(new Dimension(getWidth(), preferredHeight));
 
@@ -105,11 +87,6 @@ public class StackViewer extends JPanel implements ChoiceViewer {
         for (final StackButton button : buttons) {
             button.showValidChoices(validChoices);
         }
-    }
-
-    Rectangle getStackViewerRectangle(Component canvas) {
-        final Point pointOnCanvas = SwingUtilities.convertPoint(this, stackTitleBar.getLocation(), canvas);
-        return new Rectangle(pointOnCanvas.x, pointOnCanvas.y, stackTitleBar.getWidth(), stackTitleBar.getHeight());
     }
 
     private final class StackButton extends PanelButton implements ChoiceViewer {
