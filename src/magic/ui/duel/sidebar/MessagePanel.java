@@ -1,4 +1,4 @@
-package magic.ui.widget;
+package magic.ui.duel.sidebar;
 
 import java.awt.Color;
 import javax.swing.JLabel;
@@ -7,22 +7,24 @@ import javax.swing.SwingConstants;
 import magic.data.MagicIcon;
 import magic.model.MagicMessage;
 import magic.ui.IconImages;
+import magic.ui.widget.FontsAndBorders;
+import magic.ui.widget.TextLabel;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-public class MessagePanel extends JPanel {
+class MessagePanel extends JPanel {
 
     private static int lastTurn = 0;
     private static int textLabelWidth = 0;
 
     private final MagicMessage message;
 
-    public MessagePanel(final MagicMessage message0, final int containerWidth) {
+    MessagePanel(final MagicMessage message0, final int containerWidth) {
         message = message0;
         setMessagePanelLayout(containerWidth);
     }
 
-    public MagicMessage getMessage() {
+    MagicMessage getMessage() {
         return message;
     }
 

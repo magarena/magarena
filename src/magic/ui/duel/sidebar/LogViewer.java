@@ -13,7 +13,6 @@ import javax.swing.border.CompoundBorder;
 import magic.model.MagicMessage;
 import magic.ui.SwingGameController;
 import magic.ui.widget.FontsAndBorders;
-import magic.ui.widget.MessagePanel;
 import magic.ui.widget.TexturedPanel;
 import net.miginfocom.swing.MigLayout;
 
