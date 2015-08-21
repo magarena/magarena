@@ -71,12 +71,12 @@ public class FontsAndBorders {
 
     public static final Border UP_BORDER=BorderFactory.createCompoundBorder(
         BorderFactory.createRaisedBevelBorder(),
-        BorderFactory.createEmptyBorder(0,0,1,1)
+        BorderFactory.createEmptyBorder(0,0,0,0)
     );
 
     public static final Border DOWN_BORDER=BorderFactory.createCompoundBorder(
         BorderFactory.createLoweredBevelBorder(),
-        BorderFactory.createEmptyBorder(1,1,0,0)
+        BorderFactory.createEmptyBorder(0,0,0,0)
     );
 
     public static final Border SMALL_EMPTY_BORDER=BorderFactory.createEmptyBorder(1,1,1,1);
