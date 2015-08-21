@@ -16,15 +16,12 @@ def LEGENDARY_SPIRIT_PERMANENT_CARD_FROM_LIBRARY = new MagicCardFilterImpl() {
 def A_LEGENDARY_SPIRIT_PERMANENT_FROM_LIBRARY = new MagicTargetChoice(
     LEGENDARY_SPIRIT_PERMANENT_CARD_FROM_LIBRARY,
     "a Legendary Spirit permanent card"
-)
+);
     
 def SACRIFICE_SPIRIT = new MagicTargetChoice("a Spirit creature to sacrifice");
 
-def THREE_SPIRIT_CONDITION = MagicConditionFactory.YouControlAtLeast(MagicTargetFilterFactory.permanent(MagicSubType.Spirit, Control.You),3);
-
 [
     new MagicPermanentActivation(
-        [THREE_SPIRIT_CONDITION],
         new MagicActivationHints(MagicTiming.Token),
         "Search"
     ) {
@@ -33,9 +30,7 @@ def THREE_SPIRIT_CONDITION = MagicConditionFactory.YouControlAtLeast(MagicTarget
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
                 new MagicTapEvent(source),
-                new MagicSacrificePermanentEvent(source,SACRIFICE_SPIRIT),
-                new MagicSacrificePermanentEvent(source,SACRIFICE_SPIRIT),
-                new MagicSacrificePermanentEvent(source,SACRIFICE_SPIRIT),
+                new MagicRepeatedPermanentsEvent(source, SACRIFICE_SPIRIT, 3, MagicChainEventFactory.Sac)
             ];
         }
 
@@ -44,14 +39,14 @@ def THREE_SPIRIT_CONDITION = MagicConditionFactory.YouControlAtLeast(MagicTarget
             return new MagicEvent(
                 source,
                 this,
-                "PN searches his or her library for a legendary Spirit permanent card and put it onto the battlefield. "+
+                "PN searches his or her library for a legendary Spirit permanent card and puts it onto the battlefield. "+
                 "Then shuffles his or her library."
             );
         }
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.addEvent(new MagicPutOntoBattlefieldEvent(
+            game.addEvent(new MagicSearchOntoBattlefieldEvent(
                 event,
                 A_LEGENDARY_SPIRIT_PERMANENT_FROM_LIBRARY
             ));
