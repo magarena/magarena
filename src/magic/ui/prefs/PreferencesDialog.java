@@ -85,8 +85,6 @@ public class PreferencesDialog
     private static final String _S15 = "[Experimental] Suppress AI action prompts";
     private static final String _S16 = "If enabled, hides AI prompts in the user action panel. Only prompts that require you to make a decision will be shown.";
     private static final String _S17 = "Use Mulligan screen";
-    private static final String _S18 = "Show game log messages.";
-    private static final String _S19 = "Clear this option if you would prefer the game log messages to be hidden by default. You can still toggle visibility during a game by clicking on the log titlebar.";
     private static final String _S20 = "Double-click to cast or activate ability (for touchscreen)";
     private static final String _S21 = "Automatically pass priority";
     private static final String _S22 = "When the only option is to pass don't prompt player, just pass immediately.";
@@ -173,7 +171,6 @@ public class PreferencesDialog
     private JButton saveButton;
     private JButton cancelButton;
     private JCheckBox previewCardOnSelectCheckBox;
-    private JCheckBox gameLogCheckBox;
     private JCheckBox mulliganScreenCheckbox;
     private JCheckBox missingCardDataCheckbox;
     private DirectoryChooser imagesFolderChooser;
@@ -367,10 +364,6 @@ public class PreferencesDialog
         mulliganScreenCheckbox = new JCheckBox(getAsHtml(UiString.get(_S17)), config.getMulliganScreenActive());
         setButtonPropertyDefaults(mulliganScreenCheckbox);
 
-        gameLogCheckBox = new JCheckBox(getAsHtml(UiString.get(_S18)), config.isLogMessagesVisible());
-        gameLogCheckBox.setToolTipText(UiString.get(_S19));
-        setButtonPropertyDefaults(gameLogCheckBox);
-
         touchscreenCheckBox = new JCheckBox(getAsHtml(UiString.get(_S20)), config.isTouchscreen());
         setButtonPropertyDefaults(touchscreenCheckBox);
 
@@ -394,7 +387,6 @@ public class PreferencesDialog
 
         panel.add(hideAIPromptCheckBox);
         panel.add(mulliganScreenCheckbox);
-        panel.add(gameLogCheckBox);
         panel.add(touchscreenCheckBox);
         panel.add(skipSingleCheckBox);
         panel.add(alwaysPassCheckBox);
@@ -460,7 +452,6 @@ public class PreferencesDialog
         config.setMouseWheelPopup(mouseWheelPopupCheckBox.isSelected());
         config.setPopupDelay(popupDelaySlider.getValue());
         config.setMessageDelay(messageDelaySlider.getValue());
-        config.setLogMessagesVisible(gameLogCheckBox.isSelected());
         config.setMulliganScreenActive(mulliganScreenCheckbox.isSelected());
         config.setCustomBackground(customBackgroundCheckBox.isSelected());
         config.setAnimateGameplay(animateGameplayCheckBox.isSelected());

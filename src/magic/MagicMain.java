@@ -18,7 +18,6 @@ import magic.ui.UiExceptionHandler;
 import magic.utility.MagicSystem;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicFileSystem.DataPath;
-import magic.model.player.PlayerProfiles;
 
 public class MagicMain {
 
@@ -130,7 +129,7 @@ public class MagicMain {
         for (String arg : args) {
             switch (arg.toLowerCase()) {
             case "disablelogviewer":
-                GeneralConfig.getInstance().setLogViewerDisabled(true);
+                GeneralConfig.getInstance().setLogMessagesVisible(false);
                 break;
             }
         }

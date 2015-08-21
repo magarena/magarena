@@ -21,7 +21,7 @@ public class GeneralConfig {
     public static final String SOFTWARE_TITLE =
             "Magarena " + GeneralConfig.VERSION + (MagicSystem.isDevMode() ? " [DEV MODE]" : "");
 
-    private static final GeneralConfig INSTANCE=new GeneralConfig();
+    private static final GeneralConfig INSTANCE = new GeneralConfig();
 
     public static final String CONFIG_FILENAME="general.cfg";
     private static final String LEFT="left";
@@ -43,8 +43,6 @@ public class GeneralConfig {
     private static final String SOUND="sound";
     private static final String TOUCHSCREEN = "touchscreen";
     private static final String MOUSEWHEEL_POPUP = "mousewheel";
-    private static final String LOG_SCROLLBAR = "logScrollbar";
-    private static final String LOG_TOPINSERT = "logTopInsert";
     private static final String FULLSCREEN = "fullScreen";
     private static final String PREVIEW_CARD_ON_SELECT = "previewCardOnSelect";
     private static final String SHOW_LOG_MESSAGES = "showLogMessages";
@@ -94,8 +92,6 @@ public class GeneralConfig {
     private static final boolean DEFAULT_SOUND=true;
     private static final boolean DEFAULT_TOUCHSCREEN = false;
     private static final boolean DEFAULT_MOUSEWHEEL_POPUP = false;
-    private static final boolean DEFAULT_LOG_SCROLLBAR = true;
-    private static final boolean DEFAULT_LOG_TOPINSERT = false;
     private static final boolean DEFAULT_FULLSCREEN = false;
     private static final boolean DEFAULT_PREVIEW_CARD_ON_SELECT = true;
     private static final boolean DEFAULT_SHOW_LOG_MESSAGES = true;
@@ -136,13 +132,10 @@ public class GeneralConfig {
     private boolean sound=DEFAULT_SOUND;
     private boolean touchscreen = DEFAULT_TOUCHSCREEN;
     private boolean mouseWheelPopup = DEFAULT_MOUSEWHEEL_POPUP;
-    private boolean isLogScrollbarVisible = DEFAULT_LOG_SCROLLBAR;
-    private boolean isLogMessageAddedToTop = DEFAULT_LOG_TOPINSERT;
     private boolean fullScreen = DEFAULT_FULLSCREEN;
     private boolean previewCardOnSelect = DEFAULT_PREVIEW_CARD_ON_SELECT;
     private boolean showLogMessages = DEFAULT_SHOW_LOG_MESSAGES;
     private boolean isMulliganScreenActive = DEFAULT_MULLIGAN_SCREEN;
-    private boolean isLogViewerDisabled = false;
     private String mostRecentDeckFilename = "";
     private boolean isMissingFiles = false;
     private boolean isCustomBackground = DEFAULT_CUSTOM_BACKGROUND;
@@ -265,27 +258,6 @@ public class GeneralConfig {
     }
     public void setMostRecentDeckFilename(final String filename) {
         mostRecentDeckFilename = filename.trim();
-    }
-
-    public boolean isLogViewerDisabled() {
-        return isLogViewerDisabled;
-    }
-    public void setLogViewerDisabled(boolean isLogViewerDisabled) {
-        this.isLogViewerDisabled = isLogViewerDisabled;
-    }
-
-    public boolean isLogMessageAddedToTop() {
-        return this.isLogMessageAddedToTop;
-    }
-    public void setLogMessageAddedToTop(final boolean b) {
-        this.isLogMessageAddedToTop = b;
-    }
-
-    public boolean isLogScrollbarVisible() {
-        return this.isLogScrollbarVisible;
-    }
-    public void setLogScrollbarVisible(final boolean b) {
-        this.isLogScrollbarVisible = b;
     }
 
     public int getLeft() {
@@ -631,8 +603,6 @@ public class GeneralConfig {
         sound=Boolean.parseBoolean(properties.getProperty(SOUND,""+DEFAULT_SOUND));
         touchscreen = Boolean.parseBoolean(properties.getProperty(TOUCHSCREEN,""+DEFAULT_TOUCHSCREEN));
         mouseWheelPopup = Boolean.parseBoolean(properties.getProperty(MOUSEWHEEL_POPUP, "" + DEFAULT_MOUSEWHEEL_POPUP));
-        isLogScrollbarVisible = Boolean.parseBoolean(properties.getProperty(LOG_SCROLLBAR, "" + DEFAULT_LOG_SCROLLBAR));
-        isLogMessageAddedToTop = Boolean.parseBoolean(properties.getProperty(LOG_TOPINSERT, "" + DEFAULT_LOG_TOPINSERT));
         fullScreen = Boolean.parseBoolean(properties.getProperty(FULLSCREEN, "" + DEFAULT_FULLSCREEN));
         previewCardOnSelect = Boolean.parseBoolean(properties.getProperty(PREVIEW_CARD_ON_SELECT, "" + DEFAULT_PREVIEW_CARD_ON_SELECT));
         showLogMessages = Boolean.parseBoolean(properties.getProperty(SHOW_LOG_MESSAGES, "" + DEFAULT_SHOW_LOG_MESSAGES));
@@ -687,8 +657,6 @@ public class GeneralConfig {
         properties.setProperty(SOUND,String.valueOf(sound));
         properties.setProperty(TOUCHSCREEN,String.valueOf(touchscreen));
         properties.setProperty(MOUSEWHEEL_POPUP, String.valueOf(mouseWheelPopup));
-        properties.setProperty(LOG_SCROLLBAR, String.valueOf(isLogScrollbarVisible));
-        properties.setProperty(LOG_TOPINSERT, String.valueOf(isLogMessageAddedToTop));
         properties.setProperty(FULLSCREEN, String.valueOf(fullScreen));
         properties.setProperty(PREVIEW_CARD_ON_SELECT, String.valueOf(previewCardOnSelect));
         properties.setProperty(SHOW_LOG_MESSAGES, String.valueOf(showLogMessages));

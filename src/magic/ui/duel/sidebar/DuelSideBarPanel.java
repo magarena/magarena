@@ -49,8 +49,6 @@ public class DuelSideBarPanel extends JPanel implements IPlayerZoneListener {
         this.controller = controller;
 
         logBookViewer = new LogViewer(controller);
-        logBookViewer.setVisible(!CONFIG.isLogViewerDisabled());
-
         logStackViewer = new LogStackViewer(logBookViewer, imageStackViewer);
 
         gameStatusPanel= new GameStatusPanel(controller);

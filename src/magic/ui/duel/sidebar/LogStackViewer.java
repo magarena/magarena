@@ -10,6 +10,7 @@ import javax.swing.BorderFactory;
 import javax.swing.JMenuItem;
 import javax.swing.JPopupMenu;
 import javax.swing.SwingUtilities;
+import magic.data.GeneralConfig;
 import magic.translate.UiString;
 import magic.ui.ScreenController;
 import magic.ui.widget.MenuedTitleBar;
@@ -81,11 +82,14 @@ class LogStackViewer extends TexturedPanel {
     }
 
     private boolean isLogVisible() {
-        return logViewer.isVisible();
+        return GeneralConfig.getInstance().isLogMessagesVisible();
     }
 
     private void switchLogVisibility() {
-        setLogVisible(!isLogVisible());
+        final boolean isLogVisible = !isLogVisible();
+        GeneralConfig.getInstance().setLogMessagesVisible(isLogVisible);
+        setLogVisible(isLogVisible);
+        GeneralConfig.getInstance().save();        
     }
 
     private class LogPopupMenu extends JPopupMenu {
