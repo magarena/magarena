@@ -53,7 +53,7 @@ class LogStackViewer extends TexturedPanel {
     private void doUpdateLayout() {
         removeAll();
         add(logTitleBar, "hidemode 1");
-        add(logViewer, (isLogVisible() ? "h 80:100%" : "h 0:100%") + ", hidemode 0");
+        add(logViewer, (isLogVisible() ? "h 60:100%" : "h 0:100%") + ", hidemode 0");
         add(stackTitleBar);
         add(stackViewer);
         revalidate();
