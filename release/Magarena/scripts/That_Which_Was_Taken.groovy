@@ -17,7 +17,6 @@
             return new MagicEvent(
                 source,
                 MagicTargetChoice.PosOther("target permanent", source),
-                TARGET_PERMANENT_EXCEPT(source),
                 MagicIndestructibleTargetPicker.create(),
                 this,
                 "PN puts a divinity counter on target permanent other than SN.\$"
