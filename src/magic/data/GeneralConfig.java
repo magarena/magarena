@@ -37,8 +37,6 @@ public class GeneralConfig {
     private static final String SMART_TARGET="target";
     private static final String POPUP_DELAY="popup";
     private static final String MESSAGE_DELAY = "message";
-    private static final String STRENGTH_DIFFICULTY="strengthDifficulty";
-    private static final String STRENGTH_GAMES="strengthGames";
     private static final String HIGH_QUALITY="hq";
     private static final String SOUND="sound";
     private static final String TOUCHSCREEN = "touchscreen";
@@ -86,8 +84,6 @@ public class GeneralConfig {
     private static final boolean DEFAULT_TARGET=false;
     private static final int DEFAULT_POPUP_DELAY=300;
     private static final int DEFAULT_MESSAGE_DELAY = 2000;
-    private static final int DEFAULT_STRENGTH_DIFFICULTY=2;
-    private static final int DEFAULT_STRENGTH_GAMES=100;
     private static final boolean DEFAULT_HIGH_QUALITY=false;
     private static final boolean DEFAULT_SOUND=true;
     private static final boolean DEFAULT_TOUCHSCREEN = false;
@@ -126,8 +122,6 @@ public class GeneralConfig {
     private boolean smartTarget=DEFAULT_TARGET;
     private int popupDelay=DEFAULT_POPUP_DELAY;
     private int messageDelay = DEFAULT_MESSAGE_DELAY;
-    private int strengthDifficulty=DEFAULT_STRENGTH_DIFFICULTY;
-    private int strengthGames=DEFAULT_STRENGTH_GAMES;
     private boolean highQuality=DEFAULT_HIGH_QUALITY;
     private boolean sound=DEFAULT_SOUND;
     private boolean touchscreen = DEFAULT_TOUCHSCREEN;
@@ -388,22 +382,6 @@ public class GeneralConfig {
         this.messageDelay = messageDelay;
     }
 
-    public int getStrengthDifficulty() {
-        return strengthDifficulty;
-    }
-
-    public void setStrengthDifficulty(final int strengthDifficulty) {
-        this.strengthDifficulty=strengthDifficulty;
-    }
-
-    public int getStrengthGames() {
-        return strengthGames;
-    }
-
-    public void setStrengthGames(final int strengthGames) {
-        this.strengthGames=strengthGames;
-    }
-
     public boolean isHighQuality() {
         return highQuality;
     }
@@ -597,8 +575,6 @@ public class GeneralConfig {
         smartTarget=Boolean.parseBoolean(properties.getProperty(SMART_TARGET,""+DEFAULT_TARGET));
         popupDelay=Integer.parseInt(properties.getProperty(POPUP_DELAY,""+DEFAULT_POPUP_DELAY));
         messageDelay = Integer.parseInt(properties.getProperty(MESSAGE_DELAY,"" + DEFAULT_MESSAGE_DELAY));
-        strengthDifficulty=Integer.parseInt(properties.getProperty(STRENGTH_DIFFICULTY,""+DEFAULT_STRENGTH_DIFFICULTY));
-        strengthGames=Integer.parseInt(properties.getProperty(STRENGTH_GAMES,""+DEFAULT_STRENGTH_GAMES));
         highQuality=Boolean.parseBoolean(properties.getProperty(HIGH_QUALITY,""+DEFAULT_HIGH_QUALITY));
         sound=Boolean.parseBoolean(properties.getProperty(SOUND,""+DEFAULT_SOUND));
         touchscreen = Boolean.parseBoolean(properties.getProperty(TOUCHSCREEN,""+DEFAULT_TOUCHSCREEN));
@@ -651,8 +627,6 @@ public class GeneralConfig {
         properties.setProperty(SMART_TARGET,String.valueOf(smartTarget));
         properties.setProperty(POPUP_DELAY,String.valueOf(popupDelay));
         properties.setProperty(MESSAGE_DELAY,String.valueOf(messageDelay));
-        properties.setProperty(STRENGTH_DIFFICULTY,String.valueOf(strengthDifficulty));
-        properties.setProperty(STRENGTH_GAMES,String.valueOf(strengthGames));
         properties.setProperty(HIGH_QUALITY,String.valueOf(highQuality));
         properties.setProperty(SOUND,String.valueOf(sound));
         properties.setProperty(TOUCHSCREEN,String.valueOf(touchscreen));
