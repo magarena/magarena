@@ -158,7 +158,8 @@ public class ImportWorker extends SwingWorker<Void, Void> {
                 "fullScreen", 
                 "top", 
                 "height", 
-                "width"));
+                "width",
+                "translation"));
 
         // import settings...
         for (String setting : thisSettings) {
