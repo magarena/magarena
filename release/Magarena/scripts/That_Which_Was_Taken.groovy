@@ -1,17 +1,3 @@
-def EXCEPT_SELF = new MagicPermanentFilterImpl() {
-    public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
-        return target != source && target.isController(player);
-    }
-};
-
-def TARGET_PERMANENT_EXCEPT = {
-    final MagicSource source ->
-    return new MagicTargetChoice(
-        EXCEPT_SELF,
-        MagicTargetHint.Positive,
-        "a permanent except ${source.getName()}"
-    );
-};
 [
     new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Pump),
@@ -30,6 +16,7 @@ def TARGET_PERMANENT_EXCEPT = {
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
+                MagicTargetChoice.PosOther("target permanent", source),
                 TARGET_PERMANENT_EXCEPT(source),
                 MagicIndestructibleTargetPicker.create(),
                 this,
