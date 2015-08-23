@@ -1257,6 +1257,10 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
             return false;
         }
         @Override
+        public boolean canTap() {
+            return false;
+        }
+        @Override
         public void changeCounters(final MagicCounterType counterType,final int amount) {
             //do nothing
         }
