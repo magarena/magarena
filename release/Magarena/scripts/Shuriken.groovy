@@ -16,7 +16,7 @@
                 NEG_TARGET_CREATURE,
                 permanent.getEquippedCreature(),
                 this,
-                "Unattack SN. SN deals 2 damage to target creature\$."
+                "Unattach SN. SN deals 2 damage to target creature\$."
             );
         }
         @Override
