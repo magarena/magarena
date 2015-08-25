@@ -133,6 +133,11 @@ public enum MagicAbility {
             card.add(MagicCDA.Devoid);
         }
     },
+    Ingest("ingest",10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            card.add(MagicWhenSelfCombatDamagePlayerTrigger.Ingest);
+        }
+    },
     Exalted("exalted",10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicExaltedTrigger.create());
