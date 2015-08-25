@@ -717,7 +717,7 @@ public class SwingGameController implements IUIGameController {
      */
     private void setAnimationEvent(final MagicEvent event) {
         if (event.getPlayer().isArtificial() || MagicSystem.isAiVersusAi()) {
-            final MagicEventAction action = event.getMagicEventAction();
+            final MagicEventAction action = event.getEventAction();
             // action appears to be an instance of an anonymous inner class so "instanceof" does not work.
             // (see http://stackoverflow.com/questions/17048900/reflection-class-forname-finds-classes-classname1-and-classname2-what-a)
             final boolean isValidAction = action.getClass().getName().startsWith("magic.model.event.MagicHandCastActivation");

@@ -587,6 +587,12 @@ public enum MagicAbility {
             card.add(MagicHandCastActivation.create(cardDef, arg, "Alt"));
         }
     },
+    Awaken("awaken " + ARG.NUMBER + " " + ARG.COST, 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            final MagicCardDefinition cardDef = (MagicCardDefinition)card;
+            card.add(MagicHandCastActivation.awaken(cardDef, ARG.number(arg), ARG.cost(arg)));
+        }
+    },
     CastRestriction("Cast SN " + ARG.ANY, 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             for (final MagicMatchedCostEvent mce : MagicConditionParser.buildCost(ARG.any(arg))) {

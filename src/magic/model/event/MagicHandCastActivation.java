@@ -152,4 +152,42 @@ public class MagicHandCastActivation extends MagicActivation<MagicCard> implemen
             }
         };
     }
+    
+    public static final MagicHandCastActivation awaken(final MagicCardDefinition cardDef, final int n, final String costs) {
+        final List<MagicMatchedCostEvent> matchedCostEvents = MagicRegularCostEvent.build(costs);
+        assert matchedCostEvents.size() > 0;
+
+        return new MagicHandCastActivation(CARD_CONDITION, cardDef.getActivationHints(), "Awaken") {
+            @Override
+            public Iterable<MagicEvent> getCostEvent(final MagicCard source) {
+                final List<MagicEvent> costEvents = new LinkedList<MagicEvent>();
+                for (final MagicMatchedCostEvent matched : matchedCostEvents) {
+                    costEvents.add(matched.getEvent(source));
+                }
+                return costEvents;
+            }
+            @Override
+            public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
+                final MagicEvent ev = cardDef.getCardEvent().getEvent(cardOnStack, payedCost);
+                final MagicEventAction effect = ev.getEventAction();
+
+                final MagicEventAction awaken = new MagicEventAction() {
+                    @Override
+                    public void executeEvent(final MagicGame game, final MagicEvent event) {
+                        ev.getEventAction().executeEvent(game, event);
+                        game.addEvent(new MagicAwakenEvent(event.getSource(), event.getPlayer(), n));
+                    }
+                };
+                return new MagicEvent(
+                    ev.getSource(),
+                    ev.getPlayer(),
+                    ev.getChoice(),
+                    ev.getTargetPicker(),
+                    ev.getRef(),
+                    awaken,
+                    ev.getDescription() + " Awaken " + n + "."
+                );
+            }
+        };
+    }
 }

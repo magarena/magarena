@@ -696,7 +696,11 @@ public class MagicEvent implements MagicCopyable {
         });
     }
 
-    public MagicEventAction getMagicEventAction() {
+    public MagicEventAction getEventAction() {
         return action;
+    }
+    
+    public String getDescription() {
+        return description;
     }
 }
