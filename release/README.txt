@@ -70,6 +70,42 @@ Thank you for your support and have fun!
 
 Release 1.65 (August 30, 2015)
 ============
+lodici
+melvin
+ShawnieBoy
+
+    up to commit 3d56e5ed118e8c58b150d4cb9fc12e0c0388a3fa
+    add Russian UI translation, it can be selected at startup or via the preferences dialog
+    use translated keywords.txt file if available.
+    add new pack of decks from ubeefx.
+    set log options using a translation-friendly popup menu via a more intuitive icon on titlebar.
+ 
+- fixed the following bugs:
+    miracle: check that card is still in hand when trigger resolves before casting
+    prevent discarding card used to cast the spell as additional cost
+    add "Cast SN with AI only if you have devotion to green" to Skyreaping
+    fix: "translation" setting was being overwritten when importing. Should use language selected as part of startup.
+    casting without mana cost takes into account additional costs
+    correct colour check for Raka Sanctuary fixes #414
+    add option for revealed or hidden for MagicSearchToLocationEvent fixes #411
+    revert Warstorm Surge to use Groovy re #415
+    revert Stalking Vengeance re #415
+    add AI activation restriction to Echoes of the Kin Tree #399
+    fix Colfenor's Urn didn't return any cards to play after it was sacrificed
+    fixed so that cascade moves cards to bottom after casting instead of before
+    fix Garruk Relentless infinite transform, only perform transform action if permanent is valid (still on the battlefield)
+    incremental update from snapshot to solve slow log issue #419
+    correct Disciple of Kangee activation cost
+    Make log transparent when switched off (addresses issue #170).
+    Bloodthirsty Ogre requires a Demon permanent not Demon creature.
+    Lifespinner fix #425 -
+    Use MagicRepeatedPermanentsEvent for multiple sacrifice,
+    Use MagicSearchOntoBattlefieldEvent instead of MagicPutOntoBattlefield
+    fixed: Shallow Grave should reanimate the top creature card, not the top card
+    fixed: That Which Was Taken's target choice was not targetted fixes issue #424
+    fix Shuriken's throw ability to be on itself instead of the equipped creature
+
+- added the following cards:
 
 Release 1.64 (July 31, 2015)
 ============
