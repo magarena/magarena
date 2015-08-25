@@ -28,8 +28,16 @@ characteristics only if certain conditions are met.
 public abstract class MagicCDA implements MagicChangeCardDefinition {
 
     public static final MagicCDA Changeling = new MagicCDA() {
+        @Override
         public void getSubTypeFlags(final MagicGame game, final MagicPlayer player, final Set<MagicSubType> flags) {
             flags.addAll(MagicSubType.ALL_CREATURES);
+        }
+    };
+
+    public static final MagicCDA Devoid = new MagicCDA() {
+        @Override
+        public int getColorFlags(final MagicGame game, final MagicPlayer player,final int flags) {
+            return 0;
         }
     };
 

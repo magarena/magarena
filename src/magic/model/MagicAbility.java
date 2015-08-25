@@ -128,6 +128,11 @@ public enum MagicAbility {
             card.add(MagicCDA.Changeling);
         }
     },
+    Devoid("devoid",10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            card.add(MagicCDA.Devoid);
+        }
+    },
     Exalted("exalted",10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicExaltedTrigger.create());
