@@ -6,6 +6,7 @@ type=Creature
 subtype=Bird
 cost={1}{U}
 pt=1/1
-ability=When SN enters the battlefield, draw a card, then discards a card.
+ability=Flying;\
+        When SN enters the battlefield, draw a card, then discard a card.
 timing=main
 oracle=Flying\nWhen Owl Familiar enters the battlefield, draw a card, then discard a card.
