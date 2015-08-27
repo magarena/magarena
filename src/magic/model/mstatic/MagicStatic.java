@@ -54,7 +54,7 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
     }
 
     protected MagicStatic(final MagicLayer aLayer) {
-        this(aLayer, MagicTargetFilterFactory.NONE, false);
+        this(aLayer, MagicTargetFilterFactory.NONE, Forever);
     }
 
     @Override
