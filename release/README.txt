@@ -58,6 +58,7 @@ Thanks to
   Tyrael, hong yie, ember hauler, Hector Marin, drooone, jericho.pumpkin,
   Mike, Guest, and ShawnieBoy for implementing new cards
   PalladiaMors for the Portuguese UI translation
+  kannikkiy for the Russian UI translation
   http://mtgjson.com for card script data
   http://mtgimage.com for card images
   http://game-icons.net for UI icons
@@ -75,10 +76,12 @@ melvin
 ShawnieBoy
 
     up to commit 3d56e5ed118e8c58b150d4cb9fc12e0c0388a3fa
-    add Russian UI translation, it can be selected at startup or via the preferences dialog
-    use translated keywords.txt file if available.
-    add new pack of decks from ubeefx.
-    set log options using a translation-friendly popup menu via a more intuitive icon on titlebar.
+    
+- options for the on screen game log accessed via a new menu icon on the log titlebar.
+- if log is switched off it is now completely transparent (issue #170).
+- add new deck pack from ubeefx.
+- add Russian UI translation.
+- keywords help page (keywords.txt) can now be translated.
  
 - fixed the following bugs:
     miracle: check that card is still in hand when trigger resolves before casting
@@ -96,7 +99,6 @@ ShawnieBoy
     fix Garruk Relentless infinite transform, only perform transform action if permanent is valid (still on the battlefield)
     incremental update from snapshot to solve slow log issue #419
     correct Disciple of Kangee activation cost
-    Make log transparent when switched off (addresses issue #170).
     Bloodthirsty Ogre requires a Demon permanent not Demon creature.
     Lifespinner fix #425 -
     Use MagicRepeatedPermanentsEvent for multiple sacrifice,
