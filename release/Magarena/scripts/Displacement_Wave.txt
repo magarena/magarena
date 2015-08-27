@@ -4,6 +4,6 @@ value=2.500
 rarity=R
 type=Sorcery
 cost={X}{U}{U}
-effect=Return all nonland permanents with converted mana cost X or less to their owners' hands.
 timing=main
+requires_groovy_code
 oracle=Return all nonland permanents with converted mana cost X or less to their owners' hands.
