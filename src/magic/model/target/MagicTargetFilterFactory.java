@@ -1775,10 +1775,16 @@ public class MagicTargetFilterFactory {
             return MagicColor.isMulti(permanent);
         }
     };
+    
+    public static final MagicPermanentFilterImpl COLORLESS_CREATURE = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
+            return  target.isCreature() && MagicColor.isColorless(target);
+        }
+    };
 
     public static final MagicPermanentFilterImpl COLORLESS_CREATURE_YOU_CONTROL = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
-            return  target.isController(player) && target.isCreature() && MagicColor.isColorless(target);
+            return  target.isCreature() && MagicColor.isColorless(target) && target.isController(player);
         }
     };
 
@@ -2510,6 +2516,7 @@ public class MagicTargetFilterFactory {
         single.put("enchanted artifact", ENCHANTED_ARTIFACT);
         single.put("equipped creature", EQUIPPED_CREATURE);
         single.put("nonlegendary creature", NON_LEGENDARY_CREATURE);
+        single.put("colorless creature", COLORLESS_CREATURE);
 
         // <color|type|subtype> you control
         single.put("basic land you control", BASIC_LAND_YOU_CONTROL);
