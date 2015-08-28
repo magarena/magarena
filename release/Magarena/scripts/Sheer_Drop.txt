@@ -8,4 +8,4 @@ cost={2}{W}
 effect=Destroy target tapped creature.
 ability=Awaken 3—{5}{W}
 timing=main
-oracle=Destroy target tapped creature. Awaken 3—{5}{W}
+oracle=Destroy target tapped creature.\nAwaken 3—{5}{W}
