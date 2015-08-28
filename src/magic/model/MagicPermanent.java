@@ -465,6 +465,9 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
             case CDASubtype:
                 getCardDefinition().applyCDASubType(getGame(), getController(), cachedSubTypeFlags);
                 break;
+            case CDAColor:
+                cachedColorFlags = getCardDefinition().applyCDAColor(getGame(), getController(), cachedColorFlags);
+                break;
             case CDAPT:
                 getCardDefinition().applyCDAPowerToughness(getGame(), getController(), this, cachedPowerToughness);
                 break;

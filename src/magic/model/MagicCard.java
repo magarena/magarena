@@ -365,7 +365,7 @@ public class MagicCard
     }
 
     private int getColorFlags() {
-        return getCardDefinition().getColorFlags();
+        return getCardDefinition().genColorFlags();
     }
 
     @Override

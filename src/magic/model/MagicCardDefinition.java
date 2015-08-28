@@ -583,6 +583,18 @@ public class MagicCardDefinition implements MagicAbilityStore {
     public int getColorFlags() {
         return colorFlags;
     }
+    
+    public int genColorFlags() {
+        return applyCDAColor(null, null, colorFlags);
+    }
+    
+    public int applyCDAColor(final MagicGame game, final MagicPlayer player, final int initColor) {
+        int color = initColor;
+        for (final MagicCDA lv : CDAs) {
+            color =lv.getColorFlags(game, player, color);
+        }
+        return color;
+    }
 
     public int getConvertedCost() {
         return cost.getConvertedCost();
