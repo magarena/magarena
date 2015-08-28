@@ -6,7 +6,7 @@ type=Creature
 subtype=Zombie,Cat
 cost={5}{B}
 pt=3/4
-ability={R}: SN gets +1/+1 until end of turn.;\
+ability={R}: SN gets +1/-1 until end of turn.;\
         Unearth {2}{B}
 timing=main
 oracle={R}: Undead Leotau gets +1/-1 until end of turn.\nUnearth {2}{B}
