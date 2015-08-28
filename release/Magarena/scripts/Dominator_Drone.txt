@@ -1,0 +1,13 @@
+name=Dominator Drone
+image=http://mythicspoiler.com/bfz/cards/dominatordrone.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Eldrazi,Drone
+cost={2}{B}
+pt=3/2
+ability=Devoid;\
+        Ingest;\
+        When SN enters the battlefield, if you control another colorless creature, each opponent loses 2 life.
+timing=main
+oracle=Devoid\nIngest\nWhen Dominator Drone enters the battlefield, if you control another colorless creature, each opponent loses 2 life.
