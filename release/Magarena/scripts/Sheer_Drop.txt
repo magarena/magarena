@@ -1,0 +1,11 @@
+name=Sheer Drop
+image=http://mythicspoiler.com/bfz/cards/sheerdrop.jpg
+value=2.500
+removal=3
+rarity=C
+type=Sorcery
+cost={2}{W}
+effect=Destroy target tapped creature.
+ability=Awaken 3—{5}{W}
+timing=main
+oracle=Destroy target tapped creature. Awaken 3—{5}{W}
