@@ -584,10 +584,6 @@ public class MagicCardDefinition implements MagicAbilityStore {
         return colorFlags;
     }
     
-    public int genColorFlags() {
-        return applyCDAColor(null, null, colorFlags);
-    }
-    
     public int applyCDAColor(final MagicGame game, final MagicPlayer player, final int initColor) {
         int color = initColor;
         for (final MagicCDA lv : CDAs) {

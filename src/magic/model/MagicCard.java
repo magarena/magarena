@@ -365,7 +365,8 @@ public class MagicCard
     }
 
     private int getColorFlags() {
-        return getCardDefinition().genColorFlags();
+        final int init = getCardDefinition().getColorFlags();
+        return getCardDefinition().applyCDAColor(getGame(), getOwner(), init);
     }
 
     @Override
